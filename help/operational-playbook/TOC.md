@@ -1,15 +1,15 @@
 ---
-user-guide-title: Manuel opérationnel du commerce
+user-guide-title: Manuel opérationnel
 user-guide-description: Découvrez comment préparer vos entreprises sur le plan opérationnel à l’exécution d’un site de commerce électronique réussi.
-source-git-commit: 6eeb6547d06d416c50fcf97cb07cbc94729ebcd0
+source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
 
 
-# Manuel opérationnel du commerce {#operational-playbook}
+# Manuel opérationnel {#operational-playbook}
 
 - [Présentation](overview.md)
 - Commerce {#intro}
