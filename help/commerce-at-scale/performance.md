@@ -1,15 +1,15 @@
 ---
-title: Optimisations des performances
+title: Optimisation des performances AEM
 description: Optimisez votre configuration Adobe Experience Manager par défaut pour prendre en charge les charges importantes sur Adobe Commerce.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# AEM des optimisations des performances sous chargement à partir des configurations par défaut ;
+# Optimisation des performances AEM
 
 Le Dispatcher AEM est un proxy inverse qui permet de fournir un environnement à la fois rapide et dynamique. Il fait partie d’un serveur HTML statique, tel que Apache HTTP Server, dans le but de stocker (ou de &quot;mettre en cache&quot;) la plus grande partie du contenu du site sous la forme de ressources statiques. Cette approche vise à minimiser la nécessité d’accéder autant que possible à la fonctionnalité de rendu de page d’AEM et au service GraphQL Adobe Commerce. Le fait de traiter la plupart des pages en tant que code HTML statique, CSS et JS offre des avantages en termes de performances aux utilisateurs et réduit les exigences d’infrastructure dans l’environnement. Toute page ou requête susceptible d’être répétée de manière identique d’un utilisateur à l’autre doit être prise en compte pour la mise en cache.
 
@@ -54,7 +54,7 @@ Chaque niveau de dossier aurait un &quot;niveau de départ&quot;, comme illustr�
 
 | content (docroot) | commerce électronique | us | en | products | product-page.tml |
 |-------------------|-----------|----|----|----------|------------------|
-| 0 | 1 | 2 | 1 | 4 | - |
+| 0 | 3 | 2 | 3 | 4 | - |
 
 Dans ce cas, si vous avez laissé la propriété statfilelevel définie sur &quot;0&quot; par défaut et que le modèle product-page.html est mis à jour et activé déclenchant une invalidation, tous les fichiers .stat de docroot jusqu’au niveau 4 seront touchés et les fichiers invalidés, ce qui provoquera une requête supplémentaire de la part des instances de publication AEM pour toutes les pages du site (y compris d’autres sites web, pays et langues) à partir de cette seule modification.
 

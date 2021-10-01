@@ -1,23 +1,19 @@
 ---
-title: Modifier les paramètres par défaut
+title: Optimisation des performances du commerce Adobe
 description: Préparez votre projet Adobe Commerce pour utiliser Adobe Experience Manager en tant que CMS en modifiant certains paramètres par défaut.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Modification des paramètres par défaut d’Adobe Commerce
+# Optimisation des performances d’Adobe Commerce
 
 ## Emplacement géographique de l’AEM et de l’infrastructure Commerce des Adobes
 
 Pour réduire la latence entre l’éditeur AEM et Adobe Commerce GraphQL lors de la création de pages, l’approvisionnement initial des deux infrastructures distinctes doit être hébergé dans la même région AWS (ou Azure). L’emplacement géographique choisi pour les deux clouds doit également être le plus proche de la majorité de votre base de clients, de sorte que les requêtes GraphQL côté client soient diffusées à partir d’un emplacement géographique proche de la majorité de vos clients.
-
-## AWS/Azure PrivateLink - liaison d’AEM et d’Adobe Commerce sur des PC cloud
-
-Afin d’améliorer les temps de réponse et de réduire davantage encore la latence pour les sites avec des attentes de charge extrême, une connexion de lien privé AWS (ou Azure) peut être envisagée entre le VPC d’AEM et le VPC d’Adobe sur le cloud. Cela aurait pour effet que tout le trafic réseau entre les éditeurs AEM et Adobe Commerce reste sur la colonne vertébrale globale d’AWS et n’ait pas besoin de parcourir l’Internet public.
 
 ## Mise en cache GraphQL dans Adobe Commerce
 
