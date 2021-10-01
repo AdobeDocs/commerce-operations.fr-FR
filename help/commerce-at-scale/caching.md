@@ -1,9 +1,9 @@
 ---
 title: Planification efficace du cache
 description: Pour garantir la réussite de votre site en cours de chargement, reportez-vous aux points de référence recommandés pour la mise en cache.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 41c0ba17b3d731a82ad6ecd8b16fac151a597e75
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Planification d’une mise en cache efficace pour le succès du commerce électronique en cours de chargement
 
-La diffusion d’une expérience d’achat en cours de chargement nécessite une stratégie de mise en cache planifiée à l’avance. Bien que, dans un premier temps, les parties prenantes de l’entreprise demandent peut-être de toujours présenter des données de produit en temps réel aux clients, il ne s’agit pas d’une utilisation optimale des ressources système, et l’impact des performances du site des utilisateurs finaux l’emporterait largement sur les avantages d’afficher systématiquement des informations en temps réel.
+La diffusion d’une expérience d’achat en cours de chargement nécessite une stratégie de mise en cache bien planifiée. Bien que, dans un premier temps, les parties prenantes de l’entreprise demandent peut-être de toujours présenter des données de produit en temps réel aux clients, il ne s’agit pas d’une utilisation optimale des ressources système, et l’impact des performances du site des utilisateurs finaux l’emporterait largement sur les avantages d’afficher systématiquement des informations en temps réel.
 
 L’étape initiale de la stratégie de mise en cache doit donc être de définir avec les parties concernées une matrice des délais de mise en cache acceptables pour les différentes zones du site, par exemple :
 
