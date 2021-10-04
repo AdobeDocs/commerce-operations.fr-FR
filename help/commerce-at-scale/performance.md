@@ -1,15 +1,15 @@
 ---
-title: Optimisations des performances AEM
+title: Optimisation des performances AEM
 description: Optimisez votre configuration Adobe Experience Manager par défaut pour prendre en charge les charges importantes sur Adobe Commerce.
-source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
+exl-id: 923a709f-9048-4e67-a5b0-ece831d2eb91
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-
-# AEM des optimisations des performances sous chargement à partir des configurations par défaut ;
+# Optimisation des performances AEM
 
 Le Dispatcher AEM est un proxy inverse qui permet de fournir un environnement à la fois rapide et dynamique. Il fait partie d’un serveur HTML statique, tel que Apache HTTP Server, dans le but de stocker (ou de &quot;mettre en cache&quot;) la plus grande partie du contenu du site sous la forme de ressources statiques. Cette approche vise à minimiser la nécessité d’accéder autant que possible à la fonctionnalité de rendu de page d’AEM et au service GraphQL Adobe Commerce. Le fait de traiter la plupart des pages en tant que code HTML statique, CSS et JS offre des avantages en termes de performances aux utilisateurs et réduit les exigences d’infrastructure dans l’environnement. Toute page ou requête susceptible d’être répétée de manière identique d’un utilisateur à l’autre doit être prise en compte pour la mise en cache.
 

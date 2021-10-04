@@ -1,13 +1,13 @@
 ---
 title: Alignement des infrastructures Adobe Commerce et Adobe Experience Manager
 description: Alignez votre infrastructure Adobe Commerce et Adobe Experience Manager pour définir des délais d’expiration et des limites de connexion acceptables.
-source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
+exl-id: f9cb818f-1461-4b23-b931-e7cee70912fd
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Alignement des infrastructures (délais et limites de connexion)
 

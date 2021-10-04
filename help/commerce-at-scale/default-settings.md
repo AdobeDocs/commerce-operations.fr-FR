@@ -1,13 +1,13 @@
 ---
-title: Optimisation des performances d’Adobe Commerce
+title: Optimisation des performances du commerce Adobe
 description: Préparez votre projet Adobe Commerce pour utiliser Adobe Experience Manager en tant que CMS en modifiant certains paramètres par défaut.
-source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
+exl-id: 55d77af7-508c-4ef7-888b-00911cc6e920
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
-
 
 # Optimisation des performances d’Adobe Commerce
 
