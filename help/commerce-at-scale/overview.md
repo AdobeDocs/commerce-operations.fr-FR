@@ -1,13 +1,13 @@
 ---
 title: Diffuser Des Expériences À L’Échelle
 description: Découvrez comment diffuser des expériences à grande échelle avec Adobe Commerce et Adobe Experience Manager.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+exl-id: e3166c46-fc9d-4ff4-a3a9-2cd740a95e9b
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Diffuser des expériences à grande échelle avec Adobe Commerce, Commerce Integration Framework et Adobe Experience Manager
 
@@ -30,6 +30,6 @@ Il est peu probable que les pages d’e-commerce telles que les pages de détail
 
 ## Rendu côté client
 
-Lorsque des attributs plus dynamiques tels que les niveaux/disponibilité ou le prix sont affichés, par exemple sur les pages Détails du produit (PDP), des composants côté client peuvent être utilisés. Bien que la page de modèle puisse être créée et mise en cache sur le Dispatcher à l’aide de l’approche de rendu côté serveur ci-dessus, il peut exister, dans la page statique elle-même, des composants web côté client dynamiques. Ces composants dynamiques peuvent récupérer des données directement dans le navigateur du client à partir d’Adobe Commerce via les API GraphQL pour vérifier, par exemple, le prix actuel ou le niveau de stock en temps réel sur le PDP. Cela garantit que le contenu généralement essentiel à afficher en temps réel est toujours récupéré au chargement de la page. Des exemples de ce type de comportement sont présentés dans les zones jaunes de l’exemple ci-dessus.
+Lorsque des attributs plus dynamiques tels que les niveaux/disponibilité ou le prix sont affichés, par exemple sur les pages Détails du produit (PDP), des composants côté client peuvent être utilisés. Bien que la page de modèle puisse être créée et mise en cache sur le Dispatcher à l’aide de l’approche de rendu côté serveur ci-dessus, il peut exister, dans la page statique elle-même, des composants web côté client dynamiques. Ces composants dynamiques peuvent récupérer des données directement dans le navigateur du client à partir d’Adobe Commerce via les API GraphQL pour vérifier, par exemple, le prix actuel ou le niveau de stock en temps réel sur le PDP. Cela garantit que le contenu généralement essentiel à afficher en temps réel est toujours récupéré au chargement de la page. Des exemples de ce type de comportement sont présentés dans les zones rouges de l’exemple ci-dessus.
 
 Une combinaison de modèles d’AEM et de rendu côté client peut également être utilisée pendant le processus de passage en caisse : les composants du panier côté client affichent le panier, le formulaire de passage en caisse et l’intégration au fournisseur de services de paiement. Cette approche hybride peut également être utilisée pour les fonctionnalités de gestion de compte d’Adobe Commerce, telles que la création de compte, la connexion au compte et l’oubli du mot de passe.
