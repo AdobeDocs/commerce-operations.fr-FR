@@ -1,9 +1,9 @@
 ---
 title: Alignement des infrastructures Adobe Commerce et Adobe Experience Manager
 description: Alignez votre infrastructure Adobe Commerce et Adobe Experience Manager pour définir des délais d’expiration et des limites de connexion acceptables.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ En supposant qu’il existe un équilibreur de charge de l’application AWS dan
 
 1. Les contrôles de l’intégrité de l’éditeur doivent être examinés afin d’empêcher les dispatchers de se retirer inutilement tôt du service des montées de charge. Les paramètres de délai d’expiration du contrôle de l’intégrité de l’équilibreur de charge doivent être alignés sur les paramètres de délai d’expiration de l’éditeur.
 
-   ![Capture d’écran montrant les contrôles de l’intégrité de l’équilibreur de charge AEM](../assets/commerce-at-scale/health-checks.svg)
+   ![Capture d’écran montrant les contrôles de l’intégrité de l’équilibreur de charge AEM](../assets/commerce-at-scale/health-checks.png)
 
 1. L’affinité du groupe cible du Dispatcher peut être désactivée et l’algorithme d’équilibrage de charge Tour à tour peut être utilisé. Cela suppose qu’il n’existe aucune fonctionnalité spécifique AEM ou qu’aucune AEM session utilisateur utilisée ne nécessite la définition de l’affinité de session. Cela suppose que la gestion de la connexion et des sessions de l’utilisateur se fait uniquement sur Adobe Commerce via GraphQL.
 
-   ![Capture d’écran montrant les attributs d’affinité de session AEM](../assets/commerce-at-scale/session-stickiness.svg)
+   ![Capture d’écran montrant les attributs d’affinité de session AEM](../assets/commerce-at-scale/session-stickiness.png)
 
 1. Notez que si vous n’activez pas l’affinité de session, cela peut empêcher la mise en cache des requêtes, car par défaut, Fastly ne met pas en cache les pages avec l’en-tête Set-Cookies . Adobe Commerce définit les cookies même sur les pages pouvant être mises en cache (TTL > 0), mais la valeur par défaut Fastly VCL retire ces cookies des pages pouvant être mises en cache afin que la mise en cache rapide fonctionne. Si les pages ne sont pas mises en cache, vérifiez les cookies personnalisés que vous utilisez, puis téléchargez le fichier Fastly VCL et vérifiez à nouveau le site.
 
@@ -49,8 +49,8 @@ Le délai de connexion http et le délai de socket http doivent être définis s
 
 L’image suivante montre l’usine de configuration du client CIF GraphQL Magento. Les paramètres présentés ici ne sont que des exemples et doivent être réglés au cas par cas :
 
-![Capture d’écran des paramètres de configuration de la structure d’intégration de Commerce](../assets/commerce-at-scale/cif-config.svg)
+![Capture d’écran des paramètres de configuration de la structure d’intégration de Commerce](../assets/commerce-at-scale/cif-config.png)
 
 Les illustrations suivantes présentent les configurations d’arrière-plan Fastly. Les paramètres présentés ici ne sont que des exemples et doivent être réglés au cas par cas :
 
-![Capture d’écran des paramètres de configuration de l’administrateur Commerce pour Fastly](../assets/commerce-at-scale/cif-config-advanced.svg)
+![Capture d’écran des paramètres de configuration de l’administrateur Commerce pour Fastly](../assets/commerce-at-scale/cif-config-advanced.png)
