@@ -1,21 +1,21 @@
 ---
 title: Manuel de mise en oeuvre
-description: Objective of the Commerce implementation playbook
-source-git-commit: bb7dbf2a9d7f2fca1ecc7714f8f1ea53e4fcf067
+description: Objectif du manuel de mise en oeuvre de Commerce
+exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-
 # Manuel de mise en oeuvre
 
-The purpose of this playbook is to provide the most holistic overview of a typical Adobe Commerce implementation.
+L’objectif de ce manuel est de fournir la présentation la plus holistique possible d’une mise en oeuvre standard d’Adobe Commerce.
 
-Depuis les premières étapes de l’établissement de la portée du projet jusqu’au développement et aux intégrations, puis au déploiement et à la prise en charge continue, vous devez tenir compte de nombreuses méthodologies et bonnes pratiques pour lancer un projet commercial.
+Depuis les premières étapes de la définition de la portée du projet, en passant par le développement, les intégrations et le déploiement, jusqu’à la prise en charge continue, vous devez tenir compte de nombreuses méthodologies et bonnes pratiques pour lancer un projet Adobe Commerce.
 
-Additionally, these processes and considerations apply to any kind of Adobe Commerce project:
+En outre, ces processus et considérations s’appliquent à tout type de projet Adobe Commerce :
 
 - Mises en oeuvre petites, moyennes ou volumineuses
 - Modèles d’entreprise B2C, B2B et B2B2C
@@ -26,23 +26,23 @@ Additionally, these processes and considerations apply to any kind of Adobe Comm
 Nous espérons que ce manuel fournira des insights et des conseils à divers intervenants qui seraient généralement impliqués dans une initiative de projet d’e-commerce, par exemple :
 
 - Les PDG et la direction générale, qui devraient avoir une idée solide de ce qu&#39;implique le déploiement du commerce électronique
-- CMOs and digital managers, who will be working with business users on the platform itself
+- CMO et gestionnaires numériques, qui collaboreront avec les utilisateurs de la plateforme elle-même
 - les CTO et les responsables techniques, qui seront fortement impliqués à toutes les étapes de la mise en oeuvre d’un projet technologique ;
 - Les chefs de projet et les chefs de projet qui dirigent une initiative de projet commercial doivent disposer de toutes les informations pertinentes.
 
 Bien que le succès d’un projet informatique repose en grande partie sur l’expérience et l’expertise de l’équipe (généralement un partenaire de solution) qui développe, personnalise, intègre et gère le code, nous pensons qu’il est pertinent pour toutes les parties prenantes de se familiariser avec les bonnes pratiques de mise en oeuvre d’Adobe Commerce.
 
-## About this playbook
+## À propos de ce manuel de lecture
 
-The structure of this playbook follows the typical lifecycle of an Adobe Commerce implementation project. Cela simplifie la navigation dans ce document, car les lecteurs peuvent immédiatement passer à la section correspondante d’un projet pour obtenir toutes les informations pertinentes.
+La structure de ce manuel de lecture suit le cycle de vie type d’un projet de mise en oeuvre de Commerce Adobe. Cela simplifie la navigation dans ce document, car les lecteurs peuvent immédiatement passer à la section correspondante d’un projet pour obtenir toutes les informations pertinentes.
 
-- **Project scoping**—A breakdown of the key stakeholders, processes, timelines, and requirements that are critical for brands to understand and complete for a successful implementation.
+- **Étendue du projet** : ventilation des principaux intervenants, processus, calendriers et exigences essentiels pour que les marques comprennent et se terminent pour une mise en oeuvre réussie.
 
 - **Développement et contrôle** de la qualité : un coup d’oeil aux outils, solutions, processus et méthodologies qui ont été testés et perfectionnés sur un certain nombre d’implémentations de Commerce d’Adobe, ainsi qu’à nos recommandations pour les solutions les mieux adaptées à des besoins et à des objectifs spécifiques de l’entreprise.
 
 - **Planification et gouvernance** : la création d’un plan de mise en oeuvre d’une solution à temps, à temps et selon les budgets, et qui réponde à vos besoins est essentielle au succès.
 
-- **Architecture and integrations**—The capabilities, architecture, and integrations that make Adobe Commerce one of the most trusted and reliable ecommerce platforms on the market.
+- **Architecture et intégrations** : fonctionnalités, architecture et intégrations qui font d’Adobe Commerce l’une des plateformes de commerce électronique les plus fiables et de confiance sur le marché.
 
 - **Infrastructure et déploiement** : en allant plus loin dans la plate-forme elle-même, nous mettons en évidence l’infrastructure et les environnements qui alimentent Adobe Commerce et les solutions logicielles qui en font une plate-forme si robuste.
 
