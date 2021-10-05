@@ -2,9 +2,9 @@
 title: Manuel de mise en oeuvre
 description: Objectif du manuel de mise en oeuvre de Commerce
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 7bad54402e4698545f3436d4195170adb7b48c15
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ En outre, ces processus et considérations s’appliquent à tout type de projet
 - Déploiements sur le marché unique ou sur plusieurs marchés
 - Intégrations extensives avec ou sans middleware
 
-Nous espérons que ce manuel fournira des insights et des conseils à divers intervenants qui seraient généralement impliqués dans une initiative de projet d’e-commerce, par exemple :
+Nous espérons que ce manuel fournira des informations et des conseils à divers intervenants qui seraient généralement impliqués dans une initiative de projet d’e-commerce, notamment :
 
 - Les PDG et la direction générale, qui devraient avoir une idée solide de ce qu&#39;implique le déploiement du commerce électronique
 - CMO et gestionnaires numériques, qui collaboreront avec les utilisateurs de la plateforme elle-même
