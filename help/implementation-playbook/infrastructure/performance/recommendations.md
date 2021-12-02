@@ -1,13 +1,13 @@
 ---
 title: Recommendations d’optimisation des performances
-description: Optimisez les performances de votre implémentation Commerce Adobe en suivant ces recommandations.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Optimisez les performances de votre implémentation Adobe Commerce en suivant ces recommandations.
+exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
+source-git-commit: a7ccb83cbcfc2f12882fa8d8a879118db2b20ede
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1289'
 ht-degree: 0%
 
 ---
-
 
 # Examen de l’optimisation des performances
 
@@ -41,7 +41,7 @@ Les configurations et optimisations des systèmes d’exploitation sont similair
 
 ### Unité centrale des noeuds web
 
-Un noyau de processeur peut traiter entre 2 et 4 demandes Commerce Adobe sans mise en cache efficace. Pour déterminer le nombre de noeuds/coeurs web nécessaires au traitement de toutes les requêtes entrantes sans les mettre en file d’attente, utilisez l’équation :
+Un noyau de processeur peut traiter entre 2 et 4 demandes Adobe Commerce sans mise en cache efficace. Pour déterminer le nombre de noeuds/coeurs web nécessaires au traitement de toutes les requêtes entrantes sans les mettre en file d’attente, utilisez l’équation :
 
 ```
 N[Cores] = (N [Expected Requests] / 2) + N [Expected Cron Processes])
@@ -51,11 +51,11 @@ N[Cores] = (N [Expected Requests] / 2) + N [Expected Cron Processes])
 
 L’optimisation de ces paramètres dépend des résultats des tests de performance pour différents projets.
 
-- **ByteCode** : pour tirer le meilleur parti d’Adobe Commerce sous PHP 7, vous devez activer le  `opcache` module et le configurer correctement.
+- **ByteCode**: pour tirer le meilleur parti d’Adobe Commerce avec PHP 7, vous devez activer la fonction `opcache` et configurez-le correctement.
 
-- **APCU** : nous vous recommandons d’activer l’extension APCu PHP et de configurer le compositeur afin d’optimiser les performances. Cette extension met en cache les emplacements de fichiers pour les fichiers ouverts, ce qui améliore les performances des appels au serveur Adobe Commerce, y compris les pages, les appels Ajax et les points de fin.
+- **APCU**: nous vous recommandons d’activer l’extension APCu PHP et de configurer le compositeur afin d’optimiser les performances. Cette extension met en cache les emplacements de fichiers pour les fichiers ouverts, ce qui augmente les performances des appels au serveur Adobe Commerce, y compris les pages, les appels Ajax et les points de fin.
 
-- **Realpath_cacheconfiguration** : l’optimisation  `realpath_cache` permet aux processus PHP de mettre en cache les chemins d’accès aux fichiers au lieu de les rechercher chaque fois qu’une page est chargée.
+- **Realpath_cacheconfiguration**—Optimisation `realpath_cache` permet aux processus PHP de mettre en cache les chemins d’accès aux fichiers au lieu de les rechercher chaque fois qu’une page est chargée.
 
 ### Serveur web
 
@@ -73,7 +73,7 @@ Ce document ne fournit pas d’instructions d’optimisation MySQL détaillées,
 
 La base de données Adobe Commerce (ainsi que toute autre base de données) est sensible à la quantité de mémoire disponible pour le stockage des données et des index. Pour utiliser efficacement l’indexation des données MySQL, la quantité de mémoire disponible doit être, au minimum, proche de la moitié de la taille des données stockées dans la base de données.
 
-Optimisez le paramètre `innodb_buffer_pool_instances` pour éviter les problèmes liés à plusieurs threads qui tentent d’accéder à la même instance. La valeur du paramètre `max_connections` doit correspondre au nombre total de threads PHP configurés dans le serveur applicatif. Utilisez la formule suivante pour calculer la meilleure valeur pour `innodb-thread-concurrency` :
+Optimisez les `innodb_buffer_pool_instances` pour éviter des problèmes liés à plusieurs threads tentant d’accéder à la même instance. La valeur de la variable `max_connections` doit correspondre au nombre total de threads PHP configurés dans le serveur d’applications. Utilisez la formule suivante pour calculer la meilleure valeur pour `innodb-thread-concurrency`:
 
 ```
 innodb-thread-concurrency = 2 * (NumCPUs+NumDisks)
@@ -87,7 +87,7 @@ La mémoire des redis doit être suffisante pour contenir tous les autres caches
 
 ### Mise en cache des pages
 
-Nous vous recommandons vivement d’utiliser le vernis pour le cache de page complet sur votre boutique Adobe Commerce. Le module `PageCache` est toujours présent dans le code base, mais il doit être utilisé à des fins de développement uniquement.
+Il est vivement recommandé d’utiliser le vernis pour le cache de page complet sur votre boutique Adobe Commerce. Le `PageCache` est toujours présent dans le code base, mais il doit être utilisé à des fins de développement uniquement.
 
 Installez Varnish sur un serveur distinct devant le niveau web. Il doit accepter toutes les requêtes entrantes et fournir des copies de page mises en cache. Pour permettre à Varnish de fonctionner efficacement avec les pages sécurisées, un proxy de terminaison SSL peut être placé devant Varnish. Nginx peut être utilisé à cet effet.
 
@@ -115,11 +115,11 @@ Outre les recommandations d’optimisation de l’infrastructure commune mention
 
 ### Architecture sans affichage
 
-Une section distincte est consacrée à la description de [headless](../../architecture/headless/adobe-commerce.md) et des différentes options. En résumé, il sépare la couche de storefront de la plate-forme elle-même. Il s’agit toujours du même serveur principal, mais Adobe Commerce ne traite plus directement les demandes et prend uniquement en charge les vitrines personnalisées via l’API GraphQL.
+Nous avons une section distincte consacrée à la description de ce qui [headless](../../architecture/headless/adobe-commerce.md) est et différentes options. En résumé, il sépare la couche de storefront de la plate-forme elle-même. Il s’agit toujours du même serveur principal, mais Adobe Commerce ne traite plus directement les requêtes et ne prend en charge que les storefronts personnalisés via l’API GraphQL.
 
 ### Conserver la mise à jour d’Adobe Commerce
 
-Adobe Commerce offre toujours de meilleures performances lors de l’exécution de la dernière version. Même s’il n’est pas possible de tenir Adobe Commerce à jour une fois chaque nouvelle version publiée, il est toujours recommandé de mettre à niveau lorsque Adobe Commerce introduit des optimisations de performances significatives.
+Adobe Commerce offre toujours de meilleures performances lors de l’exécution de la dernière version. Même s’il n’est pas possible de maintenir Adobe Commerce à jour après chaque nouvelle version, il est toujours recommandé de [upgrade](../../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf) lorsqu’Adobe Commerce introduit des optimisations de performances significatives.
 
 Par exemple, en 2020, Adobe a publié une optimisation de la couche Redis, corrigeant de nombreuses inefficacités, problèmes de connexion et transferts inutiles de données entre Redis et Adobe Commerce. Les performances globales entre la version 2.3 et la version 2.4 sont nuit et jour et nous avons constaté des améliorations significatives dans le panier, le passage en caisse et les utilisateurs simultanés, simplement en raison de l’optimisation de Redis.
 
@@ -131,7 +131,7 @@ Il semble correct que vous testiez quelques connexions, mais que vous voyiez en 
 
 Pour les attributs qui n’affectent pas la logique commerciale mais qui doivent toujours être présents sur le storefront, combinez-les en quelques attributs (par exemple, le format JSON).
 
-Pour optimiser les performances de la plateforme, si la logique commerciale n’est pas requise sur le storefront à partir de données ou d’attributs provenant d’un PIM ou d’un ERP, il n’est pas nécessaire d’ajouter cet attribut dans Adobe Commerce.
+Pour optimiser les performances de la plateforme, si aucune logique commerciale n’est requise sur le storefront à partir de données ou d’attributs provenant d’un PIM ou d’un ERP, il n’est pas nécessaire d’ajouter cet attribut dans Adobe Commerce.
 
 ### Conception pour l’évolutivité
 
