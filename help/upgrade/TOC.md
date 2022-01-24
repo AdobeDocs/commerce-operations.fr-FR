@@ -1,9 +1,9 @@
 ---
 user-guide-title: Guide de mise à niveau
 user-guide-description: Découvrez pourquoi la mise à niveau de votre application Adobe Commerce ou Magento Open Source est si importante et comment planifier et exécuter une mise à niveau avec succès.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '123'
+source-wordcount: '122'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 - Correctifs {#patches}
    - [Fonctionnement des correctifs](patches/overview.md)
    - [Appliquer les correctifs](patches/apply.md)
-- Outil de compatibilité de mise à niveau {#upgrade-compatibility-tool}
+- [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
    - [Présentation](upgrade-compatibility-tool/overview.md)
    - [Conditions préalables](upgrade-compatibility-tool/prerequisites.md)
    - [Installer](upgrade-compatibility-tool/install.md)
@@ -46,5 +46,5 @@ ht-degree: 0%
    - [Options du mode de maintenance pour la mise à niveau](troubleshooting/maintenance-mode-options.md)
 - Ressources {#resources}
    - [Lecture recommandée](resources/recommended-reading.md)
-   - [Chemins de mise à niveau recommandés pour 2022](resources/recommended-upgrade-paths-2022.md)
+   - [Modernisation de votre plateforme avec Adobe Commerce 2.4.4+](resources/recommended-upgrade-paths-2022.md)
    - [Liste de contrôle du plan de mise à niveau](https://support.magento.com/hc/en-us/articles/360057968951)

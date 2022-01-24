@@ -1,9 +1,9 @@
 ---
 title: Présentation du processus de mise à niveau
 description: Découvrez comment la mise à niveau de votre projet Adobe Commerce et Magento Open Source vous permet de maintenir votre vitrine sécurisée et de fonctionner efficacement.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 8f983e6791da852350fa061fd3119abcdaa03cbf
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -59,9 +59,16 @@ Le report ou le report des mises à niveau de la plate-forme se résume souvent 
 
 Cela peut sembler contre-intuitif, mais réaliser régulièrement des mises à jour de plateforme nécessite moins d&#39;effort global que d&#39;effectuer des mises à jour peu fréquentes en raison du montant de la dette technique accumulée résultant d&#39;un report. Nous avons récemment travaillé avec un partenaire qui a un commerçant de détail qui effectuait des upgrades peu fréquents et incohérents (annuellement ou plus). En transformant leur approche des mises à niveau et en suivant une procédure de mise à niveau régulière recommandée par l’Adobe sur une période de 12 mois, le partenaire a pu économiser au client quatre semaines de temps de développement cumulé, d’efforts et de coûts associés, qui ont tous été redirigés vers des initiatives qui stimulent la croissance de l’entreprise.
 
-![](../assets/upgrade-guide/waiting-is-not-a-winning-strategy.jpg)
-
 Lorsque des mises à jour sont effectuées régulièrement, les modifications sont incrémentielles et l’opération de mise à niveau correspondante le reflète. Lorsque les mises à jour de plateforme sont différées pendant une longue période, elles peuvent devenir un processus beaucoup plus impliqué. En outre, les extensions que vous utilisez à partir de la fonction [Marketplace](https://marketplace.magento.com/) et toute autre intégration tierce peut également être affectée. Enfin, le temps nécessaire pour enquêter, planifier et effectuer une mise à niveau différée est prolongé, ce qui ajoute des efforts et des coûts évitables.
+
+Voici quelques-uns des facteurs généraux qui affectent le niveau d’effort pour mettre à niveau votre projet :
+
+| Complexité technique | Planification et stratégie |
+|-----------------------------------------------------------|--------------------------------------------------------------|
+| Étendue des personnalisations | La clarté des exigences, les décisions hésitantes et l’élargissement de la portée |
+| Nombre d’extensions | Fréquence de mise à niveau |
+| Nombre d’intégrations avec des tiers (OMS, ERP) | Votre stratégie de test |
+| Codage vers les bonnes pratiques |  |
 
 La croissance continue de l&#39;espace du commerce numérique a exercé une pression accrue sur les entreprises pour qu&#39;elles évoluent plus rapidement, plus souvent et de manière imprévisible. L’incapacité à suivre et à anticiper le comportement d’achat des clients a uniformisé les règles du jeu pour les marques même les plus importantes et les plus établies. Vous devez être en mesure de fournir des expériences robustes et personnalisées sur tous les points de contact, sans perte de performance ni de temps de disponibilité. Vous devez être capable d&#39;innover plus rapidement, sans limites, pour rester en avance sur les concurrents mondiaux. En effectuant une mise à niveau, vous allez à l’avenir vérifier votre activité et vous préparer à mieux répondre aux besoins dynamiques des clients.
 
@@ -69,11 +76,11 @@ La croissance continue de l&#39;espace du commerce numérique a exercé une pres
 
 Adobe publie une [calendrier de publication](https://devdocs.magento.com/release/) chaque année pour faciliter le processus de planification des vendeurs et recommande de mettre à niveau chaque cycle de publication de correctifs. Pour rester conforme PCI, les marchands doivent se trouver sur le dernier correctif ou correctif de sécurité. La chronologie suivante présente les principaux événements de mise à jour et de fin de vie en 2022.
 
-![](../assets/upgrade-guide/2022-release-timeline.svg)
+![](../assets/upgrade-guide/2022-release-timeline.jpg)
 
 Les événements importants à noter sont les suivants :
 
-- La prise en charge de la version 2.3.x se termine après le 22 avril
-- La version 2.4.0 à 2.4.3 (basée sur PHP 7.4) arrive à la fin de la prise en charge de la qualité en novembre 2022, lorsque PHP 7.4 atteint la fin de vie (EOL).
-- Sur la base de ces deux événements ci-dessus, il est important d&#39;effectuer la mise à niveau vers la version 2.4.4 ou ultérieure d&#39;ici le 22 novembre.
-- En ligne avec Adobe Commerce [politique de cycle de vie](https://devdocs.magento.com/release/lifecycle-policy.html), les versions 2.4.4 et 2.4.5 sont prises en charge jusqu’au 24 novembre
+- La ligne 2.3.x atteint la fin de la prise en charge (EOS) en septembre 2022
+- La version 2.4.0 à 2.4.3 (basée sur PHP 7.4) atteint EOS en novembre 2022, lorsque PHP 7.4 atteint la fin de vie (EOL).
+- Sur la base de ces deux événements EOS, **il est important d’effectuer la mise à niveau vers la version 2.4.4 ou ultérieure d’ici novembre 2022.**
+- En ligne avec Adobe Commerce [politique de cycle de vie](https://devdocs.magento.com/release/lifecycle-policy.html), les versions 2.4.4 et 2.4.5 recevront des correctifs de sécurité et d’assistance de qualité jusqu’à novembre 2024.

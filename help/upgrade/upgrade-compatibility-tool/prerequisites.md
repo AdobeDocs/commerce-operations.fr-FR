@@ -1,19 +1,19 @@
 ---
-title: Conditions préalables pour l’outil de compatibilité de mise à niveau
-description: 'Vérifiez que votre système respecte la configuration requise pour exécuter l’outil de compatibilité de mise à niveau pour votre projet Adobe Commerce. '
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: '[!DNL Upgrade Compatibility Tool] Conditions préalables'
+description: 'Vérifiez que votre système respecte les exigences nécessaires à l’exécution de la variable [!DNL Upgrade Compatibility Tool] pour votre projet Adobe Commerce. '
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
 
 
-# Conditions préalables de l’outil de compatibilité de mise à niveau
+# [!DNL Upgrade Compatibility Tool] conditions préalables
 
-L’exécution de l’outil de compatibilité de mise à niveau vous permet d’identifier les actions à effectuer. **before** mise à niveau de votre version Adobe Commerce.
+L’exécution de la variable [!DNL Upgrade Compatibility Tool] vous aide à identifier ce que vous devez faire **before** mise à niveau de votre version Adobe Commerce.
 
-Les conditions minimales requises pour exécuter l’outil de compatibilité de mise à niveau sont les suivantes :
+Configuration minimale requise pour exécuter la variable [!DNL Upgrade Compatibility Tool] sont :
 
 | **Conditions** | **Contraintes** |
 |----------------|-----------------|
@@ -24,6 +24,6 @@ Les conditions minimales requises pour exécuter l’outil de compatibilité de 
 | Clés d’accès Adobe Commerce | none |
 | Adobe Commerce (Open Source ou Enterprise) | none |
 
-Vous pouvez exécuter l’outil de compatibilité de mise à niveau dans n’importe quel système d’exploitation. Il n’est pas nécessaire d’exécuter l’outil de compatibilité de mise à niveau où se trouve votre instance Adobe Commerce.
+Vous pouvez exécuter la variable [!DNL Upgrade Compatibility Tool] dans n’importe quel système d’exploitation. Il n’est pas nécessaire d’exécuter la variable [!DNL Upgrade Compatibility Tool] où se trouve votre instance Adobe Commerce.
 
-Il est nécessaire que l’outil de compatibilité de mise à niveau ait accès au code source de l’instance Adobe Commerce. Par exemple, vous pouvez l’installer sur un serveur et le pointer vers votre installation Adobe Commerce sur un autre serveur. Reportez-vous à la section [install](../upgrade-compatibility-tool/install.md) pour plus d’informations.
+Il est nécessaire que la fonction [!DNL Upgrade Compatibility Tool] pour accéder au code source de l’instance Adobe Commerce. Par exemple, vous pouvez l’installer sur un serveur et le pointer vers votre installation Adobe Commerce sur un autre serveur. Reportez-vous à la section [install](../upgrade-compatibility-tool/install.md) pour plus d’informations.

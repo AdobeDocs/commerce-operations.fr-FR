@@ -1,9 +1,9 @@
 ---
 title: Présentation de la portée de la mise à niveau
 description: Découvrez les modifications incompatibles en amont dans une version pouvant avoir un impact sur les modules personnalisés Adobe Commerce ou Magento Open Source ou les extensions tierces.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,13 @@ La nouvelle stratégie de compatibilité d’Adobe Commerce Marketplace garantit
 
 Tous les modules personnalisés doivent être comparés à la version cible vers laquelle vous souhaitez effectuer la mise à niveau. Il s’agit du processus de mise à niveau qui nécessite le plus de temps et de ressources. Lors de l’évaluation de vos modules personnalisés, vous devez rechercher des modifications incompatibles avec le passé et être conscient des nouvelles pratiques, telles que la décomposition du contrôleur. Pour en savoir plus à ce sujet, voir [notes de mise à jour](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Assurez-vous également que vous suivez [bonnes pratiques](https://devdocs.magento.com/guides/v2.4/ext-best-practices/extension-coding/common-programming-bp.html) pour le développement de modules.
 
-## Outil de compatibilité de mise à niveau
+## [!DNL Upgrade Compatibility Tool]
 
-L’outil de compatibilité de mise à niveau est un outil de ligne de commande qui analyse votre instance pour détecter d’éventuels problèmes de mise à niveau. Il recherche les problèmes entre la version actuelle que vous avez installée et la version vers laquelle vous essayez de mettre à niveau.
+Le [!DNL Upgrade Compatibility Tool] est un outil de ligne de commande qui analyse votre instance pour détecter d’éventuels problèmes de mise à niveau. Il recherche les problèmes entre la version actuelle que vous avez installée et la version vers laquelle vous essayez de mettre à niveau.
 
 L’utilisation de cet outil réduit les efforts requis de votre équipe pour comprendre la portée et l’impact d’une mise à niveau. Elle vous permet d’éviter les problèmes de code courants lors de la mise à niveau et fournit des instructions claires sur la manière de résoudre les problèmes identifiés. Il permet également de hiérarchiser les problèmes les plus critiques nécessaires pour assurer une mise à niveau réussie, ce qui permet de gagner du temps et de réduire les coûts lors de la mise à niveau.
 
-Consultez les sections suivantes pour commencer à utiliser l’outil de compatibilité de mise à niveau. Voir l’outil de compatibilité de mise à niveau [guide](../upgrade-compatibility-tool/overview.md) pour plus de détails techniques et des cas d’utilisation avancés.
+Consultez les sections suivantes pour commencer à utiliser la méthode [!DNL Upgrade Compatibility Tool]. Voir [!DNL Upgrade Compatibility Tool] [guide](../upgrade-compatibility-tool/overview.md) pour plus de détails techniques et des cas d’utilisation avancés.
 
 ### Téléchargement de l’outil
 
@@ -78,7 +78,7 @@ Voici d’autres options à utiliser avec cette commande :
 
 ### Analyse de la sortie
 
-L’outil de compatibilité de mise à niveau exporte un fichier JSON qui identifie le code ou les modules concernés, la gravité et une description du problème pour chaque problème rencontré. Il génère également un rapport récapitulatif avec un score de complexité, qui permet à votre équipe de comprendre approximativement ce qu’il faut pour effectuer la mise à niveau vers la dernière version. Plus le score de complexité est bas, plus il est facile d’effectuer la mise à niveau.
+Le [!DNL Upgrade Compatibility Tool] exporte un fichier JSON identifiant le code ou les modules concernés, la gravité et une description du problème pour chaque problème rencontré. Il génère également un rapport récapitulatif avec un score de complexité, qui permet à votre équipe de comprendre approximativement ce qu’il faut pour effectuer la mise à niveau vers la dernière version. Plus le score de complexité est bas, plus il est facile d’effectuer la mise à niveau.
 
 Le résultat suivant montre un exemple de rapport récapitulatif :
 
@@ -111,4 +111,4 @@ Nous vous recommandons d’enregistrer les résultats de chaque projet de mise �
 
 Nous vous recommandons également d’exécuter l’outil régulièrement lors de l’exécution de la mise à niveau afin de bénéficier d’une bonne visibilité sur votre progression. Le nombre de problèmes doit diminuer au fur et à mesure que vous les corrigez. Cela aide également votre équipe à choisir la meilleure approche pour distribuer le travail.
 
-Les prochaines versions de l’outil intégreront des tests de compatibilité et des correctifs automatiques PHP 8.1 pour vous aider à résoudre les problèmes aussi rapidement que possible.
+Le [!DNL Upgrade Compatibility Tool] continue d’être amélioré et les prochaines versions incluront des fonctionnalités telles que des correctifs automatiques pour vous aider à résoudre les problèmes aussi rapidement que possible. Les dernières améliorations apportées en janvier 2022 comprennent des tests de compatibilité PHP 8.1 et des fonctionnalités de visualisation de HTML qui vous aident à identifier rapidement les zones nécessitant plus d’efforts pour la mise à niveau.

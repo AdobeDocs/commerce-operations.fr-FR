@@ -1,9 +1,9 @@
 ---
 title: Bonnes pratiques
 description: Utilisez les bonnes pratiques recommandées par l’Adobe pour gérer le processus de mise à niveau de vos projets Adobe Commerce et Magento Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Les mises à niveau doivent être effectuées régulièrement et sous la forme d
 
 - Consultez la section [notes de mise à jour](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) pour comprendre la portée et l’impact de la nouvelle version.
 
-- Utilisez la variable [Outil de compatibilité de mise à niveau](../upgrade-compatibility-tool/overview.md) pour identifier les problèmes potentiels qui doivent être résolus dans votre code personnalisé avant de tenter une mise à niveau vers une version plus récente.
+- Utilisez la variable [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) pour identifier les problèmes potentiels qui doivent être résolus dans votre code personnalisé avant de tenter une mise à niveau vers une version plus récente.
 
 - Si vous utilisez des extensions tierces, validez leur compatibilité avec la version cible vers laquelle vous envisagez d’effectuer la mise à niveau.
 

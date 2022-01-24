@@ -1,9 +1,9 @@
 ---
 title: Mise à niveau
 description: Découvrez les différentes phases de mise en oeuvre de la mise à niveau pour les projets Adobe Commerce et Magento Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '877'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Vous trouverez ci-dessous des éléments que vous pouvez inclure dans une analys
 
 - **Portée de la version cible**—Documentation sur [Documents de développement Commerce](https://devdocs.magento.com) et les informations des webinaires de version des partenaires fournissent tous les détails que vous devez connaître sur votre mise à niveau vers target.
 
-- **Résultats de l’outil de compatibilité de mise à niveau**: cet outil facilite et accélère toute mise à niveau en comparant votre code actuel au code de la version cible et en produisant un rapport de tous les problèmes qui doivent être résolus. Voir [Outil de compatibilité de mise à niveau](../upgrade-compatibility-tool/overview.md). Voici les principaux détails du rapport :
+- **[!DNL Upgrade Compatibility Tool]résultats**: cet outil facilite et accélère toute mise à niveau en comparant votre code actuel au code de la version cible et en produisant un rapport de tous les problèmes qui doivent être résolus. Voir [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Voici les principaux détails du rapport :
 
    - Version installée actuelle
    - Mise à niveau de la version cible
