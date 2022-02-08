@@ -1,13 +1,13 @@
 ---
 title: Modèles de maintenance et d’assistance
-description: 'Utilisez ces modèles de maintenance et de prise en charge courants pour garantir le bon fonctionnement de votre mise en oeuvre Adobe Commerce. '
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Utilisez ces modèles de maintenance et de prise en charge courants pour garantir le bon fonctionnement de votre mise en oeuvre Adobe Commerce.
+exl-id: 44469b83-a10b-44c2-8721-9a7daa2733d3
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
 
 ---
-
 
 # Modèles de maintenance et de support
 
@@ -30,17 +30,17 @@ L’option des services gérés avec un engagement SLA et une capacité de maint
    - Ressources supplémentaires pour suivre le processus convenu de gestion du changement
 
 - **Prise en charge SLA pour les incidents critiques avec une capacité de diffusion dédiée**
-   - Optional 24*7 support with SLA for severity 1 incidents
+   - Prise en charge facultative 24*7 avec SLA pour les incidents de gravité 1
    - Ressources de diffusion fixes et support opérationnel illimité
-   - Additional delivery resources to follow agreed change management process
+   - Ressources de diffusion supplémentaires pour suivre le processus de gestion des changements convenu
    - Couvre tous les rôles (Dev/QA/SA/PM/RM) et le support opérationnel
 
 - **Prise en charge du service géré avec une capacité de maintenance fixe**
    - contrat de niveau de service pour tous les incidents d’assistance, y compris le temps de réponse 24h/24 et 7j/7
    - Correction des ressources de diffusion et prise en charge opérationnelle illimitée pour répondre au contrat SLA engagé
    - Fin des opérations de développement pour la prise en charge de HotFix
-   - Additional delivery resources to follow agreed change management process
-   - Covers all roles (Dev/QA/SA/PM/RM) and operational support
+   - Ressources de diffusion supplémentaires pour suivre le processus de gestion des changements convenu
+   - Couvre tous les rôles (Dev/QA/SA/PM/RM) et le support opérationnel
 
 ## Niveaux de service standard
 
@@ -57,17 +57,17 @@ Les opérations et les activités de dépannage peuvent être divisées en L1 (n
    - Gestion des modifications
    - Prise en charge des pics
 
-- **Enhancements**
-   - Backlog grooming + prioritization
+- **Améliorations**
+   - Arborescence des logs et priorisation
    - Sprint + calendrier des versions
-   - Design + development
-   - Functional sprint testing
+   - Conception + développement
+   - Tests sprint fonctionnels
    - Prise en charge des tests de performance et de sécurité
-   - Deployment planning
+   - Planification du déploiement
 
 - **Services facultatifs**
    - Audit et recommandation de l’architecture
-   - Performance and Security Testing
+   - Test de performance et de sécurité
    - Assistance opérationnelle
    - Production de contenu
    - Opérations de marchandisage
@@ -78,9 +78,9 @@ La gestion des prestations et des services fait également partie intégrante de
 
 - Supervision de la prestation et des services, gestion du plancher et du changement
 - Déclenchement des incidents et des problèmes
-- Stakeholder communication and management
-- Service reporting and governance
-- Continuous improvement
+- Communication et gestion des parties prenantes
+- Rapports et gouvernance des services
+- Amélioration continue
 - Audit de processus
 - Documentation et reporting
 - Mises à jour de la plateforme Adobe Commerce

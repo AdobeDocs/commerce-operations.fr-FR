@@ -2,7 +2,7 @@
 title: Recommendations d’optimisation des performances
 description: Optimisez les performances de votre implémentation Adobe Commerce en suivant ces recommandations.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 0%
@@ -23,7 +23,7 @@ La recherche DNS est le processus de recherche de l’adresse IP à laquelle app
 
 ### Réseau de diffusion de contenu (CDN)
 
-Utilisez un CDN pour optimiser les performances de téléchargement des ressources. Adobe Commerce utilise Fastly. Si vous disposez d’une mise en oeuvre sur site d’Adobe Commerce, vous devez également envisager d’ajouter une couche CDN.
+Utilisez un CDN pour optimiser les performances de téléchargement des ressources. Adobe Commerce utilise Fastly. Si vous disposez d’une mise en oeuvre sur site d’Adobe Commerce, vous devez également envisager d’ajouter un calque CDN.
 
 ### Latence web
 
@@ -115,7 +115,7 @@ Outre les recommandations d’optimisation de l’infrastructure commune mention
 
 ### Architecture sans affichage
 
-Nous avons une section distincte consacrée à la description de ce qui [headless](../../architecture/headless/adobe-commerce.md) est et différentes options. En résumé, il sépare la couche de storefront de la plate-forme elle-même. Il s’agit toujours du même serveur principal, mais Adobe Commerce ne traite plus directement les requêtes et ne prend en charge que les storefronts personnalisés via l’API GraphQL.
+Nous avons une section distincte dédiée à détailler ce qui [headless](../../architecture/headless/adobe-commerce.md) est et différentes options. En résumé, il sépare la couche de storefront de la plate-forme elle-même. Il s’agit toujours du même serveur principal, mais Adobe Commerce ne traite plus directement les requêtes et ne prend en charge que les storefronts personnalisés via l’API GraphQL.
 
 ### Conserver la mise à jour d’Adobe Commerce
 

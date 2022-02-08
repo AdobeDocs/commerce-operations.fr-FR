@@ -1,13 +1,13 @@
 ---
 title: Architecture de référence globale d’Adobe Commerce
-description: Tirez le meilleur parti de votre mise en oeuvre de Commerce Adobe en exploitant une architecture de référence globale.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Tirez le meilleur parti de votre implémentation Adobe Commerce en exploitant une architecture de référence globale.
+exl-id: a18529a3-da9b-4e1b-8048-0a906e65c740
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
 
 ---
-
 
 # Architecture de référence globale (GRA)
 
@@ -46,4 +46,3 @@ Impact de l’évaluation géographique :
 - Comment les nouveaux marchés sont activés
 
    - Simplifie le lancement de plusieurs canaux et marchés, qui autrement coûteraient beaucoup plus de temps et d&#39;argent.
-

@@ -1,8 +1,8 @@
 ---
 title: Microservices Adobe Commerce
-description: être capable de différencier les produits et les microservices en fonction de leur pertinence avec Adobe Commerce ;
+description: être capable de différencier les microservices sans interface utilisateur graphique des microservices liés à Adobe Commerce ;
 exl-id: 078e0e8e-7acc-4913-8b78-585a950f3f5e
-source-git-commit: 4e8f6ce05c14195433e7c46e6090a93a76b8b5f9
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%

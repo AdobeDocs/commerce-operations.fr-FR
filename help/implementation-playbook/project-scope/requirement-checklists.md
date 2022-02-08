@@ -1,15 +1,15 @@
 ---
 title: Listes de contrôle des exigences
-description: Utilisez cette liste de questions complètes pour vous aider à vous préparer à une mise en oeuvre Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Utilisez cette liste de questions complètes pour vous aider à vous préparer à une mise en oeuvre d’Adobe Commerce.
+exl-id: 9ac485c5-d491-4022-9366-5e3a382513b6
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
 
-
-# Requirement Checklists
+# Listes de contrôle des exigences
 
 Les questions suivantes peuvent servir de point de départ pour déterminer quelles informations doivent être documentées afin de confirmer la préparation de l&#39;organisation. Ils peuvent également vous aider lors du développement d’un appel d’offres.
 
@@ -29,7 +29,7 @@ Les questions suivantes peuvent servir de point de départ pour déterminer quel
 
 - Combien de vos analystes techniques seront affectés à ce projet ?
 
-- Combien de vos développeurs HTML seront affectés à ce projet ?
+- Combien de vos développeurs de HTML seront affectés à ce projet ?
 
 - Quelle documentation existe pour les processus d’entreprise actuels ?
 
@@ -45,7 +45,7 @@ Les questions suivantes peuvent servir de point de départ pour déterminer quel
 
 - Quelle formation sera terminée après la mise en service ?
 
-- Quelle prise en charge d’Adobe Commerce sera requise après la mise en service ?
+- Quelle sera la prise en charge d’Adobe Commerce après la mise en service ?
 
 - Ce projet dépend-il d’autres projets de développement de système ?
 
@@ -55,11 +55,11 @@ Les questions suivantes peuvent servir de point de départ pour déterminer quel
 
 - D&#39;où voyez-vous la croissance future dans votre entreprise ?
 
-- Quel rôle joue le commerce numérique dans votre stratégie commerciale ? Quels sont vos Principaux objectifs de configuration de cette plate-forme eCommerce ?
+- Quel rôle joue le commerce numérique dans votre stratégie commerciale ? Quels sont vos Principaux objectifs de configuration de cette plateforme de commerce électronique ?
 
 - Avez-vous des marques ou des entreprises que vous prenez comme référence sur la manière dont vous développez votre activité omnicanal ?
 
-- Quelles équipes ou individus pilotent la stratégie eCommerce ? Décrivez les positions correspondantes.
+- Quelles équipes ou individus pilotent la stratégie de commerce électronique ? Décrivez les positions correspondantes.
 
 ## Plateforme actuelle
 
@@ -75,15 +75,15 @@ Les questions suivantes peuvent servir de point de départ pour déterminer quel
 
 - Combien de serveurs web et de base de données se trouvent dans l’environnement de production ?
 
-- Is it a multi-server architecture with load balancing?
+- S’agit-il d’une architecture multi-serveur avec équilibrage de charge ?
 
-- Is it a high-availability system architecture?
+- S’agit-il d’une architecture système haute disponibilité ?
 
 - Quels problèmes rencontrez-vous avec vos sites web actuels ?
 
-- Current catalog size (number of SKUs)?
+- Taille actuelle du catalogue (nombre de SKU) ?
 
-- Average visitors per day?
+- Moyenne du nombre de visiteurs par jour ?
 
 - Sessions simultanées moyennes par heure ?
 
@@ -95,7 +95,7 @@ Les questions suivantes peuvent servir de point de départ pour déterminer quel
 
 - Quelle version d’Adobe Commerce utiliserez-vous ?
 
-- How will the future platform be hosted: Internal, hosting provider, private cloud servers, or hosted cloud servers?
+- Comment sera hébergée la future plateforme : Interne, fournisseur d’hébergement, serveurs cloud privés ou serveurs cloud hébergés ?
 
 - Quels environnements auront la plateforme future ? développement, contrôle qualité, pré-production, production ?
 
@@ -103,7 +103,7 @@ Les questions suivantes peuvent servir de point de départ pour déterminer quel
 
 - S&#39;agira-t-il d&#39;une architecture système haute disponibilité ?
 
-- Combien d’administrateurs Adobe Commerce comptez-vous avoir ?
+- Combien d’administrateurs Adobe Commerce aurez-vous ?
 
 - Taille prévue du catalogue (nombre de SKU) ?
 
@@ -111,7 +111,7 @@ Les questions suivantes peuvent servir de point de départ pour déterminer quel
 
 - Sessions simultanées moyennes attendues par heure ?
 
-- Expected average page views per day?
+- Moyenne de pages vues par jour attendue ?
 
 - Quelles données doivent être importées de l’ancien site vers le nouveau site ? (Exemple : produit, client, historique des commandes)
 
@@ -123,7 +123,7 @@ Les questions suivantes peuvent servir de point de départ pour déterminer quel
 
 - Combien de sites web internationaux seront mis en oeuvre ?
 
-- Which regions will the websites support?
+- Quelles régions les sites web soutiendront-ils ?
 
 - Quelles langues seront mises en oeuvre ?
 
@@ -139,7 +139,7 @@ Les questions suivantes peuvent servir de point de départ pour déterminer quel
 
 - S’agit-il principalement d’un site B2C ou B2B ? Y a-t-il un élément B2B2B ou B2B2C ?
 
-- Existe-t-il une conception adaptée, ou la plate-forme sera-t-elle entièrement conçue ?
+- Existe-t-il une conception adaptée ou la plateforme sera-t-elle entièrement conçue ?
 
 - Existe-t-il une exigence pour le commerce sans interface (couches frontales et principales distinctes) ?
 
@@ -149,7 +149,7 @@ Les questions suivantes peuvent servir de point de départ pour déterminer quel
 
 - Quels navigateurs spécifiques doivent être testés (sauf les navigateurs standard IE9+, Firefox, Chrome, Safari) ?
 
-- Quelle est la ou les langues de chaque front-end ? Is the translated content available or is support needed?
+- Quelle est la ou les langues de chaque front-end ? Le contenu traduit est-il disponible ou une assistance est-elle nécessaire ?
 
 - Y a-t-il plusieurs sites web ? Si c’est le cas, les clients peuvent-ils utiliser leurs informations d’identification sur tous les sites ?
 
@@ -165,7 +165,7 @@ Les questions suivantes peuvent servir de point de départ pour déterminer quel
 
 - Quel système CMS sera intégré à Adobe Commerce ? (Exemples : WordPress, Drupal, Concrete5)
 
-Are there existing APIs that can be used?
+Existe-t-il des API qui peuvent être utilisées ?
 
 - La gestion des erreurs système a-t-elle été conçue et développée pour cette intégration de système tiers ?
 
@@ -187,7 +187,7 @@ Are there existing APIs that can be used?
 
 - Fréquence des chargements de données de commande importés ?
 
-- Into which system willAdobe Commerceexport order data?
+- Dans quel système Adobe Commerce exportera-t-il les données de commande ?
 
 - Fréquence des chargements de données de commande exportés ?
 
@@ -197,7 +197,7 @@ Are there existing APIs that can be used?
 
 - Y a-t-il des programmes de récompenses ou de fidélité en place ? Existe-t-il une intégration avec les systèmes POS pour les récompenses ?
 
-- How are product returns handled? Le client doit-il enregistrer une demande de retour en ligne ?
+- Comment les retours de produits sont-ils gérés ? Le client doit-il enregistrer une demande de retour en ligne ?
 
 - Un outil de chat en ligne est-il nécessaire ? Un chatbot est-il nécessaire ?
 
@@ -249,7 +249,7 @@ Are there existing APIs that can be used?
 
 - Autoriser un client à visualiser les commandes passées et sélectionner les articles à échanger ?
 
-- Permettrez-vous à un client de lancer l&#39;annulation d&#39;une commande à partir du site web ?
+- Permettrez-vous à un client de lancer l’annulation d’une commande à partir du site web ?
 
 - Permettrez-vous à un client de lancer l’échange d’articles à partir du site web ?
 
@@ -257,7 +257,7 @@ Are there existing APIs that can be used?
 
 - Permettrez-vous à un client d’initier le renvoi d’éléments à partir du site web ?
 
-- Will Adobe Commerce issue a return RMA?
+- Adobe Commerce va-t-il émettre une RAM de retour ?
 
 - Capturer les informations de remboursement dans Adobe Commerce ?
 
@@ -285,7 +285,7 @@ Are there existing APIs that can be used?
 
 - Points de récompense
 
-- &quot;Me facturer plus tard&quot; - plus communément appelé &quot;Acheter maintenant, payer plus tard&quot; car il est immédiatement facturé mais pas encore payé.
+- &quot;Me facturer plus tard&quot; - plus connu sous le nom &quot;Acheter maintenant, payer plus tard&quot; car il est immédiatement facturé mais pas encore payé.
 
 - Le prix des produits sera-t-il différent sur différents sites web ?
 
@@ -307,9 +307,9 @@ Are there existing APIs that can be used?
 
 - Panier : Produits dans les paniers, arts abandonnés
 
-- Produits : Bestsellers, produits commandés, les plus consultés, les plus bas, téléchargements
+- Produits : Bestsellers, produits commandés, les plus consultés, faible stock, téléchargements
 
-- Clients : Nouveaux comptes, clients par commande total, clients par nombre de commandes, segments de clients, commentaires de clients
+- Clients : Nouveaux comptes, clients par total de commandes, clients par nombre de commandes, segments de clients, commentaires de clients
 
 - Études de produits
 
@@ -319,11 +319,11 @@ Are there existing APIs that can be used?
 
 - Invitations : Général, clients, taux de conversion de commande
 
-- Avez-vous besoin d’Adobe Commerce pour générer des rapports basés sur les données d’utilisation des coupons ?
+- Auriez-vous besoin d’Adobe Commerce pour générer des rapports basés sur les données d’utilisation des coupons ?
 
-- Avez-vous besoin d’Adobe Commerce pour générer des rapports basés sur les données de vente ?
+- Auriez-vous besoin d’Adobe Commerce pour générer des rapports basés sur les données de vente ?
 
-- Avez-vous besoin de ports commerciaux personnalisés pour les Adobes ?
+- Avez-vous besoin de rapports Adobe Commerce personnalisés ?
 
 - Quelle est votre stratégie actuelle d’optimisation pour les moteurs de recherche ?
 
@@ -335,7 +335,7 @@ Are there existing APIs that can be used?
 
 - Autoriser la livraison partielle ?
 
-- Les informations de suivi des envois doivent-elles être stockées dans Adobe Commerce ?
+- Les informations de tracking des envois doivent-elles être stockées dans Adobe Commerce ?
 
 - Avez-vous besoin de règles de calcul des impôts pour vos régions nationales ?
 

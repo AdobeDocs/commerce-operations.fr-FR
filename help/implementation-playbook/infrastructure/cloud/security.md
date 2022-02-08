@@ -1,13 +1,13 @@
 ---
 title: Sécurité des infrastructures dans le cloud
-description: 'Découvrez comment nous protégeons Adobe Commerce sur l’infrastructure cloud. '
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Découvrez comment sécuriser Adobe Commerce sur l’infrastructure cloud.
+exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '1639'
 ht-degree: 0%
 
 ---
-
 
 # Sécurité
 
@@ -31,13 +31,13 @@ Les règles WAF sont mises à jour par Adobe Commerce si de nouvelles vulnérabi
 
 L’environnement de production de plan Adobe Commerce Pro est configuré en tant que cloud privé virtuel (VPC) afin que les serveurs de production soient isolés et aient une capacité limitée à se connecter à l’environnement cloud et en sortir. Seules les connexions sécurisées aux serveurs cloud sont autorisées. Les protocoles sécurisés tels que SFTP ou rsync peuvent être utilisés pour les transferts de fichiers.
 
-Les clients peuvent utiliser des tunnels SSH pour sécuriser les communications avec l’application. L’accès à AWS PrivateLink peut être proposé avec des frais supplémentaires. Toutes les connexions à ces serveurs sont contrôlées à l’aide des groupes de sécurité AWS, un pare-feu virtuel qui limite les connexions à l’environnement. Les ressources techniques des clients peuvent accéder à ces serveurs à l’aide de SSH.
+Les clients peuvent utiliser des tunnels SSH pour sécuriser les communications avec l’application. L’accès à AWS PrivateLink peut entraîner des frais supplémentaires. Toutes les connexions à ces serveurs sont contrôlées à l’aide des groupes de sécurité AWS, un pare-feu virtuel qui limite les connexions à l’environnement. Les ressources techniques des clients peuvent accéder à ces serveurs à l’aide de SSH.
 
 ## Chiffrement
 
 Amazon Elastic Block Store (EBS) est utilisé pour le stockage. Tous les volumes EBS sont chiffrés à l’aide de l’algorithme AES-265. Cela signifie que les données seront cryptées au repos. Le système chiffre également les données en transit entre le CDN et l’origine, ainsi qu’entre les serveurs d’origine. Les mots de passe du client sont stockés sous la forme de hachages. Les informations d’identification sensibles, y compris celles de la passerelle de paiement, sont chiffrées à l’aide de l’algorithme SHA-256.
 
-L’application Adobe Commerce ne prend pas en charge le chiffrement ou le chiffrement au niveau des colonnes ou des lignes lorsque les données ne sont pas au repos ou ne sont pas en transit entre les serveurs. Le client peut gérer les clés de chiffrement dans l’application. Les clés utilisées par le système sont stockées dans le système de gestion des clés AWS et doivent être gérées par Managed Services afin de fournir des parties du service.
+L’application Adobe Commerce ne prend pas en charge le chiffrement ou le chiffrement au niveau des colonnes ou des lignes lorsque les données ne sont pas au repos ou ne sont pas en transit entre les serveurs. Le client peut gérer les clés de chiffrement dans l’application. Les clés utilisées par le système sont stockées dans AWS Key Management System et doivent être gérées par Managed Services afin de fournir des parties du service.
 
 ## Test de pénétration
 
@@ -47,7 +47,7 @@ Managed Services effectue des tests de pénétration réguliers du système clou
 
 Adobe Commerce nécessite des intégrations de passerelle de paiement où les données de carte de crédit sont transmises directement du navigateur du consommateur à la passerelle de paiement. Les données de carte ne sont jamais disponibles dans aucun des environnements Managed Services de plan Adobe Commerce Pro. Les actions sur les transactions effectuées par l’application de commerce électronique sont effectuées à l’aide d’une référence à la transaction à partir de la passerelle.
 
-## Adobe de l’application Commerce
+## application Adobe Commerce
 
 Adobe teste régulièrement le code de l’application principale à la recherche de failles de sécurité. Les correctifs relatifs aux défauts et aux problèmes de sécurité sont fournis aux clients. L’équipe de sécurité des produits valide les produits Adobe Commerce en respectant les directives de sécurité des applications OWASP. Plusieurs outils d’évaluation des vulnérabilités de la sécurité et fournisseurs externes sont utilisés pour tester et vérifier la conformité. Les outils de sécurité incluent :
 
@@ -58,15 +58,15 @@ Adobe teste régulièrement le code de l’application principale à la recherch
 - OWASPZAP
 - andSqlMap
 
-La base de code complète est analysée avec ces outils toutes les deux semaines. Les clients sont informés des correctifs de sécurité par des emails directs, des notifications dans l’application et dans le [Centre de sécurité](https://magento.com/security).
+La base de code complète est analysée avec ces outils toutes les deux semaines. Les clients sont informés des correctifs de sécurité par le biais d’emails directs, de notifications dans l’application et dans la variable [Centre de sécurité](https://magento.com/security).
 
-Les clients doivent s’assurer que ces correctifs sont appliqués à leur application personnalisée dans les 30 jours suivant la publication, conformément aux directives PCI. Adobe fournit également un [outil d’analyse de sécurité](https://docs.magento.com/user-guide/magento/security-scan.html) qui permet aux marchands de surveiller régulièrement leurs sites et de recevoir des mises à jour sur les risques de sécurité connus, les logiciels malveillants et les accès non autorisés. L’outil d’analyse de sécurité est un service gratuit qui peut être exécuté sur n’importe quelle version d’Adobe Commerce.
+Les clients doivent s’assurer que ces correctifs sont appliqués à leur application personnalisée dans les 30 jours suivant la publication, conformément aux directives PCI. Adobe fournit également un [Outil Analyse de sécurité](https://docs.magento.com/user-guide/magento/security-scan.html) qui permet aux commerçants de surveiller régulièrement leurs sites et de recevoir des mises à jour sur les risques de sécurité connus, les logiciels malveillants et les accès non autorisés. L’outil d’analyse de sécurité est un service gratuit qui peut être exécuté sur n’importe quelle version d’Adobe Commerce.
 
-Pour encourager les chercheurs en sécurité à identifier et à signaler des vulnérabilités, Adobe Commerce dispose d’un [programme de bugs-bounty](https://hackerone.com/magento) en plus des tests internes. De plus, le client reçoit le code source complet de la demande pour sa propre révision, le cas échéant.
+Pour encourager les chercheurs en sécurité à identifier et à signaler des vulnérabilités, Adobe Commerce dispose d’un [bug-bounty program](https://hackerone.com/magento) en plus des tests internes. De plus, le client reçoit le code source complet de la demande pour sa propre révision, le cas échéant.
 
 ## Système de fichiers en lecture seule
 
-Tout le code exécutable est déployé dans une image système de fichiers en lecture seule, ce qui réduit considérablement les surfaces disponibles pour attaque. Le processus de déploiement crée une image Squash-FS. Cette approche réduit considérablement les possibilités d’injecter du code PHP ou JavaScript dans le système ou de modifier les fichiers d’application Adobe Commerce.
+Tout le code exécutable est déployé dans une image système de fichiers en lecture seule, ce qui réduit considérablement les surfaces disponibles pour attaque. Le processus de déploiement crée une image Squash-FS. Cette approche réduit considérablement les possibilités d’injecter du code PHP ou JavaScript dans le système ou de modifier les fichiers de l’application Adobe Commerce.
 
 ## Déploiement à distance
 
@@ -74,17 +74,17 @@ Le seul moyen d’obtenir du code exécutable dans l’environnement de producti
 
 ## Journalisation
 
-Toutes les activités AWS sont consignées dans AWS CloudTrail. Les journaux Linux, de serveur d’applications et de base de données sont stockés sur les serveurs de production et dans des sauvegardes. Toutes les modifications du code source sont enregistrées dans un référentiel Git. L’historique de déploiement est disponible dans l’Adobe Commerce [Interface Web du projet](https://devdocs.magento.com/cloud/project/projects.html#login). Tous les accès à l’assistance sont consignés et les sessions d’assistance sont enregistrées.
+Toutes les activités AWS sont connectées à AWS CloudTrail. Les journaux Linux, de serveur d’applications et de base de données sont stockés sur les serveurs de production et dans des sauvegardes. Toutes les modifications du code source sont enregistrées dans un référentiel Git. L’historique de déploiement est disponible dans Adobe Commerce [Interface Web du projet](https://devdocs.magento.com/cloud/project/projects.html#login). Tous les accès à l’assistance sont consignés et les sessions d’assistance sont enregistrées.
 
 ## Données sensibles
 
-Les données sensibles peuvent couvrir les informations personnelles des consommateurs ou les données confidentielles des clients Managed Services. La protection des données sensibles sur les clients et les consommateurs est une obligation essentielle pour Adobe Commerce Managed Services. Managed Services et nos clients ont des obligations légales concernant les informations d’identification personnelle. Outre les fonctionnalités de sécurité de l’architecture, il existe d’autres contrôles pour limiter la distribution et l’accès aux données sensibles.
+Les données sensibles peuvent couvrir les informations personnelles des consommateurs ou les données confidentielles des clients Managed Services. La protection des données clients et clients sensibles est une obligation essentielle pour Adobe Commerce Managed Services. Managed Services et nos clients ont des obligations légales concernant les informations d’identification personnelle. Outre les fonctionnalités de sécurité de l’architecture, il existe d’autres contrôles pour limiter la distribution et l’accès aux données sensibles.
 
-Les clients détiennent leurs données et contrôlent l’emplacement de ces données. Le client spécifie l’emplacement où résident ses instances de production et de développement. Ils indiquent également l’emplacement qui sera utilisé pour l’environnement du Magento Business Intelligence (MBI) en association avec Commerce, et si cette application MBI a accès ou non à des informations d’identification personnelle. Les instances de production peuvent se trouver dans la plupart des régions AWS, tandis que les environnements de développement et d’IMS peuvent se trouver aux États-Unis ou dans l’Union européenne à l’heure actuelle.
+Les clients détiennent leurs données et contrôlent l’emplacement de ces données. Le client spécifie l’emplacement où résident ses instances de production et de développement. Ils indiquent également l’emplacement qui sera utilisé pour l’environnement du Magento Business Intelligence (MBI) en association avec Commerce, et si cette application MBI a accès ou non à des informations d’identification personnelle. Les instances de production peuvent se trouver dans la plupart des régions d’AWS, tandis que les environnements de développement et d’IMS peuvent se trouver aux États-Unis ou dans l’Union européenne à l’heure actuelle.
 
-Les données sensibles peuvent passer par le réseau de serveur CDN Fastly, mais ne sont pas stockées dans le réseau Fastly. Tous les partenaires inclus dans l’offre Adobe Commerce Managed Services ont des obligations contractuelles pour garantir la protection des données sensibles. Managed Services ne déplace pas les données sensibles du client ou du consommateur des emplacements spécifiés par le client.
+Les données sensibles peuvent passer par le réseau de serveur CDN Fastly, mais ne sont pas stockées dans le réseau Fastly. Tous les partenaires inclus dans l’offre Managed Services d’Adobe Commerce ont des obligations contractuelles pour assurer la protection des données sensibles. Managed Services ne déplace pas les données sensibles du client ou du consommateur des emplacements spécifiés par le client.
 
-Dans le cadre de la fourniture des services inclus dans l’offre Adobe Commerce Managed Services, le personnel de Managed Services doit accéder aux systèmes de production qui contiennent des données sensibles. Ces employés sont formés à leurs obligations de protection des données clients et clients sensibles. L’accès à ces systèmes est limité aux employés qui en ont besoin. Ces employés n&#39;ont accès qu&#39;au temps nécessaire pour fournir ces services.
+Dans le cadre de la prestation des services inclus dans l’offre Managed Services d’Adobe Commerce, le personnel de Managed Services a besoin d’un accès aux systèmes de production contenant des données sensibles. Ces employés sont formés à leurs obligations de protection des données clients et clients sensibles. L’accès à ces systèmes est limité aux employés qui en ont besoin. Ces employés n&#39;ont accès qu&#39;au temps nécessaire pour fournir ces services.
 
 ## Règlement général sur la protection des données (RGPD)
 
@@ -98,11 +98,11 @@ Le RGPD demande également que toute information d’identification personnelle 
 
 >[!NOTE]
 >
-> Cette page est simplement destinée à donner un aperçu général des éléments à prendre en compte pour le RGPD. Pour plus d’informations, veuillez consulter votre service juridique ou consulter le [texte officiel](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+> Cette page est simplement destinée à donner un aperçu général des éléments à prendre en compte pour le RGPD. Pour plus d’informations, veuillez consulter votre service juridique ou se référer au[texte officiel](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
 ## Sauvegardes
 
-Les sauvegardes sont effectuées toutes les heures pendant les dernières 24 heures de fonctionnement. Après la période de 24 heures, les sauvegardes sont conservées selon la planification suivante, à l’aide du service Snapshot AWS EBS :
+Les sauvegardes sont effectuées toutes les heures pendant les dernières 24 heures de fonctionnement. Après la période de 24 heures, les sauvegardes sont conservées selon la planification suivante, à l’aide du service d’instantané AWS EBS :
 
 | Période | Politique de conservation des données |
 |----------------|-------------------------|
@@ -114,4 +114,4 @@ Les sauvegardes sont effectuées toutes les heures pendant les dernières 24 heu
 
 Cela crée une sauvegarde indépendante sur le stockage redondant. Les volumes EBS étant cryptés, les sauvegardes sont également cryptées. En outre, Managed Services effectue des sauvegardes à la demande des clients.
 
-Votre approche de sauvegarde et de récupération d’Adobe Commerce Managed Services utilise une architecture haute disponibilité combinée à des sauvegardes système complètes. Chaque projet est répliqué (toutes les données, le code et les ressources) dans trois zones de disponibilité AWS distinctes. chaque zone avec un centre de données distinct.
+Votre approche de sauvegarde et de récupération d’Adobe Commerce Managed Services utilise une architecture haute disponibilité associée à des sauvegardes système complètes. Chaque projet est répliqué (toutes les données, le code et les ressources) dans trois zones de disponibilité AWS distinctes ; chaque zone avec un centre de données distinct.

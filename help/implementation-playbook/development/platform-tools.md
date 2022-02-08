@@ -1,19 +1,19 @@
 ---
 title: Outils Platform
-description: Choisissez les outils de plateforme recommandés pour votre implémentation Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Choisissez les outils de plateforme recommandés pour votre mise en oeuvre Adobe Commerce.
+exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%
 
 ---
 
-
 # Outils Platform
 
 Il ne manque pas d’aspects qui doivent être soigneusement étudiés et rigoureusement testés pour qu’un site de commerce électronique fonctionne sans interférence. Vous devez non seulement identifier les solutions appropriées pour aborder tous les aspects du site, depuis le stockage des données et la programmation jusqu’à la mise en cache et la sécurité, mais vous avez également besoin d’un processus approprié pour assurer la diffusion d’une plateforme qui s’exécute correctement et qui peut être créée et optimisée efficacement.
 
-Cette section présente non seulement les outils, solutions, processus et méthodologies qui ont été testés et perfectionnés sur un certain nombre d’implémentations de Commerce Adobe, mais également nos recommandations pour les solutions qui répondent le mieux aux besoins et aux objectifs spécifiques de l’entreprise.
+Cette section présente non seulement les outils, les solutions, les processus et les méthodologies qui ont été testés et perfectionnés sur un certain nombre d’implémentations d’Adobe Commerce, mais également nos recommandations pour les solutions qui répondent le mieux aux besoins et aux objectifs spécifiques de l’entreprise.
 
 Le tableau suivant comprend des solutions que nous recommandons et que vous pouvez utiliser dans Adobe Commerce pour améliorer les performances de la plateforme :
 
@@ -28,32 +28,32 @@ Le tableau suivant comprend des solutions que nous recommandons et que vous pouv
 | Services de la file d’attente des messages | RabbitMQ |
 | Outil d&#39;analyse de sécurité | SonarQube, ZAP |
 
-## Base de données
+## Base
 
-Nous utilisons trois outils différents en fonction des besoins de la marque. MySQL est une excellente solution de base comme base de données Adobe Commerce si vous ne vous attendez pas à ce que votre boutique traite des charges extrêmes.
+Nous utilisons trois outils différents en fonction des besoins de la marque. MySQL est une excellente solution de base de données comme la base de données Adobe Commerce si vous ne vous attendez pas à ce que votre boutique traite des charges extrêmes.
 
-MariaDB est davantage centrée sur la communauté et fonctionne mieux pour les utilisateurs qui se soucient plus des fonctionnalités que des performances pures. MariaDB prend en charge un large éventail de moteurs de base de données, de cryptage de disque, d’interconnectivité horizontale complexe et de fonctionnalités de mise à l’échelle, ce qui peut s’avérer intéressant pour les grandes boutiques Adobe Commerce.
+MariaDB est davantage centrée sur la communauté et fonctionne mieux pour les utilisateurs qui se soucient plus des fonctionnalités que des performances pures. MariaDB prend en charge un large éventail de moteurs de base de données, de cryptage de disque, d’interconnectivité horizontale complexe et de fonctionnalités de mise à l’échelle, ce qui peut être intéressant pour les grands magasins Adobe Commerce.
 
 Percona est un branchement de MySQL centré sur les performances et la gestion de charge maximale. Choisissez MariaDB si vous avez besoin de plus de qualité de vie et de fonctionnalités DevOps. Allez sur Percona si votre objectif est d’obtenir des performances de charge élevée dans les jeux de données à grande échelle.
 
 ## Langage de programmation
 
-Adobe Commerce est une application basée sur PHP et les nouvelles versions sont toujours compatibles avec la dernière version stable de PHP (par exemple, Adobe Commerce version 2.4 recommande d’utiliser PHP 7.4). Pour accroître la sécurité et les performances, vous devez tenir compte de plusieurs facteurs lors de la configuration de PHP afin d’obtenir une vitesse et une efficacité optimales lors du traitement des demandes. Le storefront web Adobe Commerce est créé avec du code HTML, JavaScript et le préprocesseur CSS LESS.
+Adobe Commerce est une application basée sur PHP et les nouvelles versions sont toujours compatibles avec la dernière version stable de PHP (par exemple, Adobe Commerce version 2.4 recommande d’utiliser PHP 7.4). Pour accroître la sécurité et les performances, vous devez tenir compte de plusieurs facteurs lors de la configuration de PHP afin d’obtenir une vitesse et une efficacité optimales lors du traitement des demandes. Le storefront web Adobe Commerce est créé avec HTML, JavaScript et le préprocesseur CSS LESS.
 
 ## Serveurs web
 
 Adobe Commerce prend entièrement en charge les serveurs web Nginx et Apache. Adobe Commerce fournit des exemples de fichiers de configuration recommandés pour les deux :
 
-- **Nginx** —`<magento_home>/nginx.conf.sample`
-- **Apache** —`<magento_home>.htaccess.sample`
+- **Nginx**—`<magento_home>/nginx.conf.sample`
+- **Apache**—`<magento_home>.htaccess.sample`
 
 L’exemple Nginx contient des paramètres pour de meilleures performances et est conçu de sorte qu’une petite reconfiguration soit requise.
 
 ## Mise en cache des services
 
-Adobe Commerce propose de nombreuses options pour stocker vos données de cache et de session, notamment Redis, Memcache, filesystem et database. Pour une configuration avec plusieurs noeuds web, Redis est la meilleure option.
+Adobe Commerce propose de nombreuses options pour stocker vos données de cache et de session, notamment Redis, Memcache, filessystem et database. Pour une configuration avec plusieurs noeuds web, Redis est la meilleure option.
 
-Nous vous recommandons vivement d’utiliser Varnish comme serveur de cache de page entière pour votre magasin. Adobe Commerce distribue un exemple de fichier de configuration pour Varnish qui contient tous les paramètres recommandés pour les performances.
+Nous vous recommandons vivement d’utiliser Varnish comme serveur de cache de page entière pour votre magasin. Adobe Commerce distribue un exemple de fichier de configuration pour le vernis qui contient tous les paramètres recommandés pour les performances.
 
 ## Services de recherche
 
@@ -65,7 +65,7 @@ Les files d’attente de message fournissent un mécanisme de communication asyn
 
 ## Outils de sécurité
 
-L’[outil d’analyse de sécurité Adobe Commerce](https://docs.magento.com/user-guide/magento/security-scan.html) vous permet de surveiller régulièrement vos sites web de magasin et de recevoir des mises à jour pour les risques de sécurité connus, les logiciels malveillants et les logiciels obsolètes. En règle générale, vous commencez à utiliser cet outil lorsque vous commencez les tests d’acceptation par l’utilisateur (UAT). Outre l’outil d’analyse de sécurité Adobe Commerce, disponible gratuitement pour toutes les mises en oeuvre et versions d’Adobe Commerce, d’autres options peuvent être utilisées pendant le processus CI/CD et avant chaque mise à jour.
+Le [Outil d’analyse de sécurité Adobe Commerce](https://docs.magento.com/user-guide/magento/security-scan.html) vous permet de surveiller régulièrement les sites web de votre boutique et de recevoir des mises à jour concernant les risques de sécurité connus, les logiciels malveillants et les logiciels obsolètes. En règle générale, vous commencez à utiliser cet outil lorsque vous commencez les tests d’acceptation par l’utilisateur (UAT). Outre l’outil d’analyse de sécurité d’Adobe Commerce, qui est gratuit et disponible pour toutes les mises en oeuvre et versions d’Adobe Commerce, d’autres options peuvent être utilisées pendant le processus CI/CD et avant chaque mise à jour.
 
 SonarQube est une plateforme de gestion de la qualité Open Source, conçue pour analyser et mesurer la qualité technique de votre code. SonarQube fournit non seulement un rapport complet des bogues de code, des erreurs de syntaxe et des vulnérabilités, mais il fournit également des suggestions et des exemples pour résoudre votre code. SonarQube est idéal à utiliser dans un environnement CI/CD en tant qu’outil capable d’analyser le code avant son déploiement.
 
