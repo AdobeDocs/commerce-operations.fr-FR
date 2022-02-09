@@ -2,9 +2,9 @@
 title: Stratégie d’intégration Adobe Commerce
 description: Consultez les stratégies et options d’intégration pour votre mise en oeuvre Adobe Commerce.
 exl-id: af7cc59a-3ee2-461a-8489-a35fe0288277
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 1e545d8d5554e73f522469e526ed098395db9075
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Une approche d’intégration globale pour les systèmes front-end et back-end e
 
 L’API Adobe Commerce GraphQL offre une couverture de storefront complète que vous pouvez utiliser pour intégrer à d’autres storefronts, notamment :
 
-- Plateformes d’expérience numérique (DXP) telles que Adobe Experience Manager et Bloomreach
+- Plateformes d’expérience numérique (DXP) comme Adobe Experience Manager et Bloomreach
 - Systèmes de gestion de contenu (CMS) tels que Drupal et WordPress
 - Application storefront personnalisée moderne telle qu’Adobe Commerce, PWA Studio et Vue Storefront
 
