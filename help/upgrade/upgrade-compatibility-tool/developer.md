@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Informations sur les développeurs"'
 description: Personnalisez le [!DNL Upgrade Compatibility Tool] à l’aide de l’intégration de l’index d’API.
-source-git-commit: 97295df89fda393c8cf8675f8f4be92ac6f38a6a
+source-git-commit: 317a044e66fe796ff66b9d8cf7b308f741eb82c1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,11 @@ ht-degree: 0%
 
 # [!DNL Upgrade Compatibility Tool] informations sur les développeurs
 
-Cette rubrique contient des informations destinées aux développeurs qui travaillent en étroite collaboration avec le code Adobe Commerce et souhaitent en savoir plus sur les [!DNL Upgrade Compatibility Tool]. You can use this knowledge to customize the tool&#39;s components.
+{{commerce-only}}
 
-## Adobe Commerce API index integration
+Cette rubrique contient des informations destinées aux développeurs qui travaillent en étroite collaboration avec le code Adobe Commerce et souhaitent en savoir plus sur les [!DNL Upgrade Compatibility Tool]. Vous pouvez utiliser ces connaissances pour personnaliser les composants de l’outil.
+
+## Intégration de l’index d’API Adobe Commerce
 
 L’intégration de l’index d’API Adobe Commerce est une solution d’intégration interne qui comprend un ensemble d’outils permettant d’explorer les extensions Adobe Commerce développées par Adobe, les partenaires Adobe Commerce et les fournisseurs tiers sur la base d’une analyse de code statique.
 
@@ -21,7 +23,7 @@ L’intégration à l’index de l’API Adobe Commerce se fait par :
 
 `sut\Domain\MRay\MRayInterface`
 
-It is implemented through the `config/services.yaml` file. Sa valeur détermine où la réponse des méthodes `api()` et `modules()` vient de .
+Elle est mise en oeuvre par le biais de la variable `config/services.yaml` fichier . Sa valeur détermine où la réponse des méthodes `api()` et `modules()` vient de .
 
 Modifiez ce fichier pour personnaliser la réponse en fonction de votre installation. Remplacer la valeur affectée à `sut\Domain\MRay\MRayInterface`:
 
@@ -40,13 +42,13 @@ Dans l’exemple précédent, la variable [!DNL Upgrade Compatibility Tool] uses
 
 ## Test unitaire
 
-To run the unit tests, execute one of the following commands:
+Pour exécuter les tests unitaires, exécutez l’une des commandes suivantes :
 
 - `vendor/bin/phpunit tests/unit`
 - `vendor/bin/phpunit -c tests/unit/phpunit.xml.dist tests/unit`
 - `vendor/bin/phpunit -c tests/unit/phpunit.xml.dist --testsuite=unit-tests`
 
-## Integration testing
+## Test d’intégration
 
 Pour exécuter les tests d’intégration, exécutez l’une des commandes suivantes :
 
@@ -55,8 +57,8 @@ Pour exécuter les tests d’intégration, exécutez l’une des commandes suiva
 
 ## Test d’acceptation
 
-1. Before executing acceptance tests, you must set the Adobe Commerce URL in the `phpunit` configuration file.
-1. Copy the default `tests/acceptance/phpunit.xml` file (without the .dist suffix).
+1. Avant d’exécuter des tests d’acceptation, vous devez définir l’URL Adobe Commerce dans la variable `phpunit` fichier de configuration.
+1. Copier la valeur par défaut `tests/acceptance/phpunit.xml` (sans le suffixe .dist).
 1. Modifiez la variable `TESTS_BASE_URL` pour pointer vers l’URL Adobe Commerce que vous souhaitez tester.
 1. Pour exécuter les tests d’acceptation, exécutez l’une des commandes suivantes :
 
@@ -73,7 +75,7 @@ Pour exécuter les tests d’intégration, exécutez l’une des commandes suiva
 
 Les instructions suivantes concernent les systèmes MacOS :
 
-1. Open a terminal and navigate to the root directory of the project.
+1. Ouvrez un terminal et accédez au répertoire racine du projet.
 1. Installer les dépendances de projet :
 
    ```bash
@@ -94,11 +96,11 @@ Exécution de tests unitaires ; `jest` comme suit :
 ./node_modules/.bin/jest --verbose --rootDir=dev/tests/Js/
 ```
 
-### ESLint code analysis
+### Analyse du code ESLint
 
 [ESLint](https://eslint.org/docs/user-guide/getting-started) est un outil d’analyse de code statique permettant d’identifier les schémas problématiques trouvés dans le code JavaScript, dans le but de rendre le code plus cohérent et d’éviter les bogues.
 
-Run `eslint` code analysis as follows:
+Exécuter `eslint` analyse du code comme suit :
 
 ```bash
 ./node_modules/.bin/eslint -c dev/tests/Static/.eslintrc --rulesdir vendor/magento/magento-coding-standard/eslint/rules path/to/analyse
@@ -110,11 +112,11 @@ Le **score de complexité** est une figure qui indique la difficulté d’une mi
 
 >[!NOTE]
 >
->Complexity scores range between 0 and ∞.
+>Les scores de complexité sont compris entre 0 et ∞.
 
 Ce score est basé sur les résultats extraits de l&#39;analyse :
 
-- Number of issues identified
+- Nombre de problèmes identifiés
 - Gravité des problèmes identifiés
 
 Le [!DNL Upgrade Compatibility Tool] calcule ce score en fonction de la formule de score de complexité ci-dessous.

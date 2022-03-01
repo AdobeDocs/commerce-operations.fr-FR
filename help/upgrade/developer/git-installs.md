@@ -1,9 +1,9 @@
 ---
 title: Mise à niveau d’une installation basée sur Git
 description: Mettez à niveau une installation Adobe Commerce ou Magento Open Source que vous avez clonée à partir d’un référentiel git.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 7bcfbc4483f4b6d4c1a5e852adbd1cd81bc136b7
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '126'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,7 @@ Cette rubrique explique comment un développeur contributeur peut mettre à jour
 
 Pour effectuer une mise à niveau si vous êtes un développeur contributeur :
 
-1. Connectez-vous à votre serveur .
-
-1. Basculez vers le [propriétaire du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-
-1. Accédez au répertoire dans lequel vous avez cloné l’application. Par exemple :
-
-   ```bash
-   cd /var/www/magento2
-   ```
+{{$include /help/_includes/server-login.md}
 
 1. Enregistrez les modifications apportées au `composer.json` car les étapes suivantes l’écrasent.
 
