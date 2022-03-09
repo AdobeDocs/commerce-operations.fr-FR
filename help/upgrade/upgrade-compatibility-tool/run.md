@@ -1,9 +1,9 @@
 ---
 title: Exécutez la variable [!DNL Upgrade Compatibility Tool]
 description: Procédez comme suit pour exécuter la fonction [!DNL Upgrade Compatibility Tool] sur votre projet Adobe Commerce.
-source-git-commit: bcb8fced43c5d9972291f15a5039dbbc2a692a59
+source-git-commit: ee80753da5327ebf593e007e3b4316e2b01c5a61
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -73,11 +73,11 @@ Disponible `--help` options de la variable `upgrade:check` command :
 
 - `-m, --module-path[=MODULE-PATH]`: Chemin des modules à analyser
 - `-a, --current-version[=CURRENT-VERSION]`: La version actuelle d’Adobe Commerce, la version de l’installation d’Adobe Commerce, sera utilisée si elle est omise.
-- `-c, --coming-version[=COMING-VERSION]`: La version d’Adobe Commerce de Target, la version de l’installation d’Adobe Commerce, sera utilisée si elle est omise.
+- `-c, --coming-version[=COMING-VERSION]`: La version d’Adobe Commerce de Target, la dernière version d’Adobe Commerce publiée sera utilisée si vous l’omettez.
 - `--json-output-path[=JSON-OUTPUT-PATH]`: Chemin du fichier dans lequel la sortie sera exportée au format json.
 - `--html-output-path[=HTML-OUTPUT-PATH]`: Chemin du fichier dans lequel la sortie sera exportée au format HTML.
 - `--min-issue-level`: Niveau de problème minimal à afficher dans le rapport. La valeur par défaut est [AVERTISSEMENT].
-- `--ignore-current-version-compatibility-issues`: Utilisez cette option lorsque vous ne souhaitez pas inclure les problèmes critiques connus, les erreurs et les avertissements dans votre [!DNL Upgrade Compatibility Tool] rapport.
+- `-i, --ignore-current-version-compatibility-issues`: Utilisez cette option lorsque vous ne souhaitez pas inclure les problèmes critiques connus, les erreurs et les avertissements dans votre [!DNL Upgrade Compatibility Tool] rapport.
 - `--context=CONTEXT`: Contexte d&#39;exécution. Cette option est destinée à des fins d’intégration et n’affecte pas le résultat de l’exécution.
 - `-h, --help`: Affichez l’aide pour cette commande spécifique. Si aucune commande n’est fournie, `list` est le résultat par défaut.
 - `-q, --quiet`: Ne sortez aucun message lors de l’exécution de la commande.
