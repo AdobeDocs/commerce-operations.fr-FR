@@ -1,7 +1,7 @@
 ---
 title: Présentation du processus de mise à niveau
 description: Découvrez comment la mise à niveau de votre projet Adobe Commerce et Magento Open Source vous permet de maintenir votre vitrine sécurisée et de fonctionner efficacement.
-source-git-commit: 8f983e6791da852350fa061fd3119abcdaa03cbf
+source-git-commit: 18f5e9c96377e0299fdc776a69393f2ceef3618b
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 0%
@@ -76,7 +76,7 @@ La croissance continue de l&#39;espace du commerce numérique a exercé une pres
 
 Adobe publie une [calendrier de publication](https://devdocs.magento.com/release/) chaque année pour faciliter le processus de planification des vendeurs et recommande de mettre à niveau chaque cycle de publication de correctifs. Pour rester conforme PCI, les marchands doivent se trouver sur le dernier correctif ou correctif de sécurité. La chronologie suivante présente les principaux événements de mise à jour et de fin de vie en 2022.
 
-![](../assets/upgrade-guide/2022-release-timeline.jpg)
+![](../assets/upgrade-guide/2022-release-timeline.png)
 
 Les événements importants à noter sont les suivants :
 
