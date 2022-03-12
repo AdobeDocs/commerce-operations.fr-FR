@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;accueil;rubriques les plus consultées
 title: Accueil
 description: Parcourez un index de la documentation du produit opérationnel Adobe Commerce.
-source-git-commit: 3637e81bf3951d0130941613d88488405073e7e1
+source-git-commit: 63ceb5bad64a7ed5bce3ad2af76966eb6883d62e
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
@@ -12,18 +12,7 @@ ht-degree: 0%
 
 # Guides opérationnels Adobe Commerce
 
-Cette page fournit des liens vers tous les guides opérationnels pour Adobe Commerce et Magento Open Source.
-
-## Nouveautés
-
-Le tableau suivant comprend des modifications récentes que nous pensons que vous souhaitez connaître, telles que de nouveaux sujets et des mises à jour importantes des sujets existants :
-
-| Description | Type |
-|------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Ajout [informations](../upgrade/upgrade-compatibility-tool/overview.md) sur la manière dont les règles sont définies pour l’outil de compatibilité de mise à niveau. | Mise à jour majeure |
-| Suppression de l’outil de compatibilité de mise à niveau obsolète [codes d’erreur](../upgrade/upgrade-compatibility-tool/error-messages.md). | Technique |
-
-## Guides
+Obtenez des informations pratiques sur les concepts, les processus, les outils et les bonnes pratiques pour développer, déployer et gérer des projets commerciaux déployés sur des plateformes Adobe Commerce et Magento Open Source.
 
 <table>
 <tr>
@@ -63,7 +52,7 @@ Le tableau suivant comprend des modifications récentes que nous pensons que vou
 <tr>
   <td valign="top">
     <a href="../upgrade/overview.md">
-      <img alt="Mettre à niveau" src="../assets/icons/download-cloud.svg" width="40" height="40"/>
+      <img alt="Mettre à niveau" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
     </a>
     <div>
       <a href="../upgrade/overview.md"><strong>Mettre à niveau</strong></a>
@@ -129,3 +118,12 @@ Le tableau suivant comprend des modifications récentes que nous pensons que vou
   </td>
 </tr>
 </table>
+
+## Nouveautés
+
+Découvrez la nouvelle documentation et les mises à jour importantes de la documentation existante.
+
+| Modifier | Type |
+|----------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Ajout [informations](../upgrade/upgrade-compatibility-tool/overview.md) sur la manière dont les règles sont définies pour l’outil de compatibilité de mise à niveau. | Mise à jour majeure |
+| Suppression de l’outil de compatibilité de mise à niveau obsolète [codes d’erreur](../upgrade/upgrade-compatibility-tool/error-messages.md). | Technique |
