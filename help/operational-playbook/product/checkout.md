@@ -1,13 +1,13 @@
 ---
 title: Flux et processus d’extraction
 description: Augmentez les taux de conversion en offrant à vos clients une expérience de passage en caisse transparente.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
 
 ---
-
 
 # Flux de passage en caisse et processus
 
@@ -47,7 +47,7 @@ Posséder des boutons CTA propres et audacieux avec une conception de page simpl
 
 Les clients qui font des achats en ligne sont toujours préoccupés par la sécurité. Pour fournir une assurance aux clients, affichez les éléments suivants sur le site :
 
-- Les certifications de crédibilité telles que Norton sont sécurisées, MacAfee sécurisées et Google Trusted Store
+- Autorisations de crédibilité telles que Norton sécurisé, MacAfee sécurisé et Google Trusted Store
 - Certificats SSL
 - Logs des modes de paiement
 - Évaluations et révisions
@@ -68,7 +68,7 @@ Ne forcez pas un type d’option sur l’utilisateur.
 
 Les détaillants doivent fournir différentes méthodes d’expédition pour répondre aux besoins de différents clients.
 
-Outre les options de paiement, les détaillants peuvent également fournir des options telles que [cliquer et collecter](click-collect.md).
+Outre les options de paiement, les détaillants peuvent également proposer des options comme [cliquer et collecter](click-collect.md).
 
 ## Détails du paiement
 

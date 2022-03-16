@@ -1,10 +1,10 @@
 ---
-title: Alignement des infrastructures Adobe Commerce et Adobe Experience Manager
-description: Alignez votre infrastructure Adobe Commerce et Adobe Experience Manager pour définir des délais d’expiration et des limites de connexion acceptables.
+title: Alignement de l’infrastructure Adobe Commerce et Adobe Experience Manager
+description: Alignez votre infrastructure Adobe Commerce et Adobe Experience Manager pour définir des délais d’attente et des limites de connexion acceptables.
 exl-id: f9cb818f-1461-4b23-b931-e7cee70912fd
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Il existe des paramètres avec AEM et Adobe Commerce et l’infrastructure environnante, tels que les équilibreurs de charge qui doivent être alignés, qui sont liés aux limites de connexion et aux paramètres de délai d’expiration.
 
-Un décalage entre ces limites signifierait que les connexions pourraient être limitées du côté AEM, tandis qu&#39;Adobe Commerce est capable de gérer plus de connexions. De même, pour les paramètres de délai d’expiration, un mauvais alignement peut entraîner des erreurs de délai d’expiration du côté AEM, tandis qu’Adobe Commerce traite toujours une demande.
+Un décalage entre ces limites signifierait que les connexions pourraient être limitées du côté AEM, tandis qu&#39;Adobe Commerce est capable de gérer plus de connexions. De même, pour les paramètres de délai d’expiration, un mauvais alignement peut entraîner des erreurs de délai d’expiration du côté AEM, alors qu’Adobe Commerce traite toujours une requête.
 
 Pour les paramètres de délai d’expiration, les paramètres doivent être passés en revue et alignés afin d’éviter que les erreurs de délai d’expiration 503 ne s’affichent en cas de chargement. Il existe plusieurs paramètres d’infrastructure et de délai d’expiration d’application à vérifier :
 
@@ -27,7 +27,7 @@ En supposant qu’il existe un équilibreur de charge de l’application AWS dan
 
    ![Capture d’écran montrant les contrôles de l’intégrité de l’équilibreur de charge AEM](../assets/commerce-at-scale/health-checks.png)
 
-1. L’affinité du groupe cible du Dispatcher peut être désactivée et l’algorithme d’équilibrage de charge Tour à tour peut être utilisé. Cela suppose qu’il n’existe aucune fonctionnalité spécifique AEM ou qu’aucune AEM session utilisateur utilisée ne nécessite la définition de l’affinité de session. Cela suppose que la gestion de la connexion et des sessions de l’utilisateur se fait uniquement sur Adobe Commerce via GraphQL.
+1. L’affinité du groupe cible du Dispatcher peut être désactivée et l’algorithme d’équilibrage de charge Tour à tour peut être utilisé. Cela suppose qu’il n’existe aucune fonctionnalité spécifique AEM ou qu’aucune AEM session utilisateur utilisée ne nécessite la définition de l’affinité de session. Cela suppose que la connexion de l’utilisateur et la gestion de session se font uniquement sur Adobe Commerce via GraphQL.
 
    ![Capture d’écran montrant les attributs d’affinité de session AEM](../assets/commerce-at-scale/session-stickiness.png)
 
@@ -41,9 +41,9 @@ S’il n’existe aucun équilibreur de charge dans l’infrastructure, les para
 
 ## Éditeurs
 
-Limites et délais de connexion de Publisher GraphQL : Initialement, les paramètres OSGI de configuration du client CIF GraphQL Max HTTP connections dans Adobe Commerce doivent être définis sur la limite de connexions maximale Fastly par défaut, actuellement définie sur 200. Même s’il existe plusieurs éditeurs dans la ferme de AEM, la limite doit être définie de la même manière pour chaque éditeur, en respectant le paramètre Fastly . Cela s’explique par le fait que, dans certains cas, un éditeur peut gérer plus de trafic que les autres éditeurs, si un dispatcher associé est exclu de la ferme par exemple. Cela signifie que tout le trafic sera acheminé par le seul dispatcher et les éditeurs restants, dans ce cas l’éditeur unique peut alors avoir besoin de toutes les connexions HTTP.
+Limites et délais de connexion de Publisher GraphQL : Au départ, les paramètres OSGI de la fabrique de configuration du client Adobe Commerce CIF GraphQL Max HTTP connections doivent être définis sur la limite de connexions maximale par défaut, qui est actuellement définie sur 200. Même s’il existe plusieurs éditeurs dans la ferme de AEM, la limite doit être définie de la même manière pour chaque éditeur, en respectant le paramètre Fastly . Cela s’explique par le fait que, dans certains cas, un éditeur peut gérer plus de trafic que les autres éditeurs, si un dispatcher associé est exclu de la ferme par exemple. Cela signifie que tout le trafic sera acheminé par le seul dispatcher et les éditeurs restants, dans ce cas l’éditeur unique peut alors avoir besoin de toutes les connexions HTTP.
 
-La &quot;méthode HTTP par défaut&quot; doit être définie de POST à GET. Seules les requêtes de GET sont mises en cache dans le cache GraphQL Adobe Commerce. Par conséquent, la méthode par défaut doit toujours être définie sur GET.
+La &quot;méthode HTTP par défaut&quot; doit être définie de POST à GET. Seules les requêtes de GET sont mises en cache dans le cache Adobe Commerce GraphQL. Par conséquent, la méthode par défaut doit toujours être définie sur GET.
 
 Le délai de connexion http et le délai de socket http doivent être définis sur une valeur correspondant au délai de connexion Fastly.
 

@@ -1,13 +1,13 @@
 ---
 title: Livraison et exécution
 description: Déterminez les méthodes de livraison et les coûts avant de terminer votre projet de commerce électronique.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 07d303ab-f229-4b6a-b35a-b6d2a3be89b3
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 0%
 
 ---
-
 
 # Livraison et exécution
 
@@ -19,29 +19,29 @@ De nombreux efforts sont faits pour offrir aux clients la meilleure expérience 
 
 L&#39;expédition et l&#39;exécution ont certains facteurs de base qui constituent la base, notamment :
 
-- **Méthodes d’expédition et coût** : les entreprises doivent analyser et diviser l’ensemble des coûts d’expédition et déterminer s’il faut absorber les coûts d’expédition, transmettre les coûts aux clients ou partager les coûts ? Comment l’entreprise fournira-t-elle des offres d’expédition ou de livraison gratuites ? Comment les produits seront-ils expédiés ? Y aura-t-il plus d&#39;une méthode de livraison et des frais d&#39;expédition ?
+- **Modes de livraison et coût**— Les entreprises doivent analyser et diviser l&#39;ensemble des coûts d&#39;expédition et déterminer si elles doivent absorber les coûts d&#39;expédition, les transmettre aux clients ou partager les coûts ? Comment l’entreprise fournira-t-elle des offres d’expédition ou de livraison gratuites ? Comment les produits seront-ils expédiés ? Y aura-t-il plus d&#39;une méthode de livraison et des frais d&#39;expédition ?
 
-- **Produit** : chaque produit est différent en termes de nombre d’articles, de poids, de destination et de durabilité. Les entreprises doivent analyser ces détails pour comprendre le coût total de l’expédition, car différents produits ont des frais d’expédition différents.
+- **Produit**: chaque produit est différent en termes de nombre d’articles, de poids, de destination et de durabilité. Les entreprises doivent analyser ces détails pour comprendre le coût total de l’expédition, car différents produits ont des frais d’expédition différents.
 
-- **Packaging** : les packages jouent également un rôle important dans la compréhension du mode d’expédition et des coûts. Par exemple, le produit est-il fragile ou est-il emballé comme cadeau ?
+- **Modules**—L’assemblage joue également un rôle important dans la compréhension du mode de livraison et des coûts. Par exemple, le produit est-il fragile ou est-il emballé comme cadeau ?
 
-- **Saison** : changements à apporter en période de pointe, comme la frénésie des clics et les festivals.
+- **Saison**- Les changements à apporter en période de pointe, comme la frénésie des clics et les festivals.
 
-- **Opérateurs** : quelle société de transport tiers convient le mieux à l’entreprise ? Quels sont les services fournis par les compagnies maritimes ? Quel est le coût ?
+- **Opérateurs**—Quelle société de livraison tierce convient le mieux à l’entreprise ? Quels sont les services fournis par les compagnies maritimes ? Quel est le coût ?
 
 ## Méthodes de livraison
 
 Avant qu’une entreprise ne livre son produit, elle doit décider des méthodes et des coûts d’expédition. Il existe différentes options de méthodes d’expédition, notamment :
 
-- **Livraison** gratuite : fournir une livraison gratuite aux clients peut être la meilleure expérience client, mais peut ne pas convenir à l’entreprise.
+- **Envoi gratuit**: fournir des frais d’expédition gratuits aux clients peut être la meilleure expérience client, mais peut ne pas convenir à l’entreprise.
 
-- **Taux** en temps réel : la collaboration avec des fournisseurs tiers d’expédition permet aux détaillants de publier la méthode d’expédition et les coûts actuellement facturés par l’entreprise. Cela permet aux clients de choisir leur méthode d’expédition préférée.
+- **Taux en temps réel**: la collaboration avec des fournisseurs tiers de navigation permet aux détaillants de publier le mode d’expédition et les coûts actuellement facturés par l’entreprise. Cela permet aux clients de choisir leur méthode d’expédition préférée.
 
-- **Taux** plat : l’une des options d’expédition les plus populaires. L’astuce ici est de s’assurer que les détaillants ne surchargent pas ou ne sous-facturent pas les clients. Cela fonctionne également si les détaillants disposent d’un produit standard, mais peut devenir compliqué si les détaillants disposent d’une variété de produits.
+- **Taux d&#39;aplatissement**: l’une des options d’expédition les plus populaires. L’astuce ici est de s’assurer que les détaillants ne surchargent pas ou ne sous-facturent pas les clients. Cela fonctionne également si les détaillants disposent d’un produit standard, mais peut devenir compliqué si les détaillants disposent d’une variété de produits.
 
-- **Expédition gratuite sur un montant** : les détaillants peuvent fournir une livraison gratuite lorsque le client achète au-dessus d’un certain montant. Les détaillants doivent calculer ce montant pour fournir ce service.
+- **Envoi gratuit sur une valeur**: les détaillants peuvent fournir des frais d’expédition gratuits lorsque le client achète au-dessus d’un certain montant. Les détaillants doivent calculer ce montant pour fournir ce service.
 
-L&#39;expédition et l&#39;accomplissement des tâches exigeaient une coordination de l&#39;équipe tant à l&#39;intérieur qu&#39;à l&#39;extérieur. Une stratégie de livraison et d’exécution doit être partagée avec l’ensemble de l’organisation afin qu’elle soit alignée. Par exemple, si l’équipe marketing souhaite envoyer une promotion qui inclut la livraison gratuite, elle doit l’aligner sur la stratégie d’expédition et d’exécution et l’équipe afin d’éliminer toute expérience client négative.
+L&#39;expédition et l&#39;accomplissement des tâches exigeaient une coordination de l&#39;équipe tant à l&#39;intérieur qu&#39;à l&#39;extérieur. Une stratégie d’expédition et d’exécution doit être partagée avec l’ensemble de l’organisation afin qu’elles soient alignées. Par exemple, si l’équipe marketing souhaite envoyer une promotion qui inclut la livraison gratuite, elle doit l’aligner sur la stratégie d’expédition et d’exécution et l’équipe afin d’éliminer toute expérience client négative.
 
 ## Bonnes pratiques
 

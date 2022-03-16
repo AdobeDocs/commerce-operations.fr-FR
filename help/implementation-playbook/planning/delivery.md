@@ -1,13 +1,13 @@
 ---
 title: Approche de livraison et de planification
 description: Utilisez l’approche recommandée pour planifier et mettre en oeuvre Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: ee2918d6-0d97-4f02-8e8f-b88bc999cd22
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
 
 ---
-
 
 # Approche de livraison et de planification
 
@@ -31,9 +31,9 @@ Cette approche comprend les étapes suivantes :
 
 Le modèle hybride vous permet de tirer parti de la puissance de la méthodologie Agile, en restant fidèle à la cible en termes de calendrier, de coût et de qualité. L’ensemble du plan est divisé en deux phases distinctes, suivies des activités de lancement, d’optimisation et de maintenance.
 
-- **Obtention de la bonne idée** : il s’agit d’une phase préalable à la mise en oeuvre afin de s’assurer que les exigences, la conception et la solution technologique sont stratégiques, documentées et collaborées entre les parties prenantes. Le journal de mise en oeuvre est préparé et créé, des sprints de développement sont planifiés et une stratégie séquentielle de création du produit est finalisée.
+- **Obtenir la bonne idée**: il s’agit d’une phase de prémise en oeuvre permettant de s’assurer que les exigences, la conception et la solution technologique sont configurées, documentées et collaborées entre les parties prenantes. Le journal de mise en oeuvre est préparé et créé, des sprints de développement sont planifiés et une stratégie séquentielle de création du produit est finalisée.
 
-- **Obtention de l’idée** adéquate : il s’agit de la phase de mise en oeuvre permettant de créer le produit de manière itérative, de le tester minutieusement et de le publier de manière appropriée. La première étape consiste à développer le code par le biais de plusieurs sprints ; chaque sprint contient des tests et des développements internes au sprint, suivis par des tests d’intégration du système, des tests de performance et de sécurité, des tests d’acceptation utilisateur et des activités de mise à jour.
+- **Obtention de l’idée appropriée**: il s’agit de la phase de mise en oeuvre pour créer le produit de manière itérative, le tester minutieusement et le publier de manière appropriée. La première étape consiste à développer le code par le biais de plusieurs sprints ; chaque sprint contient des tests et des développements internes au sprint, suivis par des tests d’intégration du système, des tests de performance et de sécurité, des tests d’acceptation utilisateur et des activités de mise à jour.
 
 La planification de projet est une activité essentielle. Il guide les parties prenantes, les équipes, les sponsors et les responsables de projet sur la manière de surveiller, gérer et contrôler les phases du projet. Elle permet également d’identifier les objectifs, d’éviter les échéances manquantes, de hiérarchiser les tâches essentielles, de réduire les risques et d’obtenir les résultats souhaités.
 

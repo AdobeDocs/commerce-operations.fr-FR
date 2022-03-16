@@ -1,13 +1,13 @@
 ---
 title: Optimisation des performances
-description: Découvrez l’optimisation des performances et les étapes à suivre pour passer en revue les performances de votre implémentation Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Découvrez l’optimisation des performances et les étapes à suivre pour passer en revue les performances de votre mise en oeuvre Adobe Commerce.
+exl-id: 506ef2cc-c6fd-4401-afa5-a71e7b9871e6
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
 
 ---
-
 
 # Optimisation des performances
 
@@ -56,4 +56,4 @@ Il existe également des facteurs clés qui déterminent l’échelle du commerc
 
 Pour les architectures en couches et pouvant être mises en cache conçues pour l’échelle, vous pouvez utiliser ce graphique comme référence.
 
-![Diagramme montrant comment utiliser l’API GraphQL Adobe Commerce dans une architecture pouvant être mise en cache](../../../assets/playbooks/cacheable-architecture.svg)
+![Diagramme montrant comment utiliser l’API Adobe Commerce GraphQL dans une architecture pouvant être mise en cache](../../../assets/playbooks/cacheable-architecture.svg)

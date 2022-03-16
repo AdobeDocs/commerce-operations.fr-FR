@@ -1,13 +1,13 @@
 ---
 title: Gestion de projet
 description: Appliquez des structures connues pour gérer votre projet de commerce électronique.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 514e2317-f409-4079-bdee-1596f6635467
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
 
 ---
-
 
 # Gestion de projet
 
@@ -36,17 +36,17 @@ Scrum permet de gérer les modifications au cours du projet, d’afficher rapide
 
 Voici un plan de gestion de projet de commerce électronique de base :
 
-- **Analyse** : à l’étape initiale d’un projet, l’entreprise doit effectuer une analyse, y compris une analyse commerciale du marché et des concurrents, afin de comprendre les forces et les faiblesses de l’organisation.
+- **Analyse**—Dans la phase initiale d’un projet, l’entreprise doit procéder à une analyse, y compris une analyse des marchés et des concurrents, afin de comprendre les forces et les faiblesses de l’organisation.
 
-- **Conditions requises** : définissez les exigences détaillées de ce que l’organisation souhaite à la fin du projet en termes d’amélioration des compétences existantes et/ou de mise en oeuvre de nouvelles fonctionnalités et/ou intégrations.
+- **Conditions**: définissez les exigences détaillées de ce que l’organisation souhaite à la fin du projet en termes d’amélioration des compétences existantes et/ou de mise en oeuvre de nouvelles fonctionnalités et/ou intégrations.
 
-- **Fournisseurs** tiers : à cette étape, mappez les intégrations tierces requises (par exemple, paiement, livraison, évaluations et révisions).
+- **Fournisseurs tiers**: à ce stade, mappez les intégrations tierces requises (par exemple, paiement, livraison, évaluations et révisions).
 
-- **Conception** : répondez aux exigences de conception spécifiques des modèles et du livre de marque de l’entreprise.
+- **Conception**—Renseignez-vous sur les exigences spécifiques à la conception pour les modèles et le livre de marque de l’entreprise.
 
-- **Migration** : planifiez les étapes de migration de contenu et de données.
+- **Migration**: planifiez les étapes de migration du contenu et des données.
 
-- **Plateforme** d’e-commerce : analysez et finalisez la plate-forme requise pour que l’entreprise réponde aux exigences.
+- **Plateforme eCommerce**: analysez et finalisez la plateforme requise pour que l’entreprise puisse répondre aux exigences.
 
 ## Bonnes pratiques
 

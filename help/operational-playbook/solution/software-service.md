@@ -1,13 +1,13 @@
 ---
 title: Services logiciels de commerce
 description: Découvrez les principales différences entre les applications SaaS et d’autres options d’e-commerce Open Source auto-hébergées (sur site).
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 9be70e1e-76d5-4696-862e-f2b71eb1abb0
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
 
 ---
-
 
 # Software-as-a-service (SaaS)
 
@@ -33,7 +33,7 @@ Les plateformes de commerce électronique SaaS sont des solutions prêtes à l�
 
 ### Maintenance
 
-L’un des principaux avantages d’une plate-forme de commerce électronique SaaS est la maintenance. Le fournisseur est chargé d’héberger et de gérer le logiciel, le temps de disponibilité, les performances, les mises à jour et les correctifs. En retour, les équipes d’e-commerce ou informatiques peuvent se concentrer sur le développement de la base de code de la boutique en ligne, tandis que le fournisseur SaaS (Adobe Commerce) peut améliorer l’infrastructure.
+L’un des principaux avantages d’une plate-forme de commerce électronique SaaS est la maintenance. Le fournisseur est chargé d’héberger et de gérer le logiciel, le temps de disponibilité, les performances, les mises à jour et les correctifs. En retour, les équipes eCommerce ou IT peuvent se concentrer sur le développement de la base de code de la boutique en ligne, tandis que le fournisseur SaaS (Adobe Commerce) peut améliorer l’infrastructure.
 
 ### Sécurité et conformité PCI
 
@@ -49,5 +49,4 @@ Bien que les plateformes de commerce électronique soient au coeur de la plupart
 
 Nous recommandons aux détaillants d’utiliser les meilleurs systèmes de reproduction, ce qui signifie qu’ils utilisent le meilleur système pour chaque partie de leur entreprise. La plupart du temps, choisir une plateforme pour exécuter tous les aspects et fonctions de votre entreprise ne répond pas à vos attentes.
 
-Au lieu de cela, les entreprises devraient être en mesure d’utiliser n’importe quel nombre de systèmes pour
-leurs systèmes ERP, POS, 3PL et e-commerce et intègrent ces systèmes pour synchroniser les stocks, les commandes, les clients, les articles et les données d’expédition/de suivi automatisent vos processus d’entreprise. Les plateformes SaaS basées sur le cloud s’adaptent souvent à ces besoins professionnels avec souplesse et facilité.
+Au lieu de cela, les entreprises doivent pouvoir utiliser un certain nombre de systèmes pour leurs systèmes ERP, POS, 3PL et e-commerce et intégrer ces systèmes afin de synchroniser les inventaires, les commandes, les clients, les articles et les données d’expédition/de suivi automatisent vos processus d’entreprise. Les plateformes SaaS basées sur le cloud s’adaptent souvent à ces besoins professionnels avec souplesse et facilité.

@@ -25,7 +25,7 @@ Les plans d’Adobe Commerce Pro reposent sur un modèle de sécurité de la res
 
 Adobe Managed Services est responsable de la sécurité et de la disponibilité de l’environnement cloud Adobe Commerce Pro, du code de l’application Adobe Commerce Pro principal et des systèmes commerciaux internes. Cela inclut, sans s’y limiter :
 
-- Server-level patching
+- Application de correctifs au niveau du serveur
 - Exploitation des services nécessaires pour la diffusion des forfaits Adobe Commerce Pro
 - Test de vulnérabilité
 - Journalisation et surveillance des événements de sécurité
@@ -53,7 +53,7 @@ Amazon dispose d’un programme de conformité étendu, qui comprend des certifi
 
 ### Responsabilités du partenaire/client de la solution
 
-Le client est principalement responsable de la sécurité de sa mise en oeuvre personnalisée de l’application Adobe Commerce s’exécutant dans l’environnement cloud de planification Adobe Commerce Pro. This includes:
+Le client est principalement responsable de la sécurité de sa mise en oeuvre personnalisée de l’application Adobe Commerce s’exécutant dans l’environnement cloud de planification Adobe Commerce Pro. Cela inclut :
 
 - Assurer une configuration et un codage sécurisés des activités de surveillance de l’application et de la sécurité, y compris des tests de pénétration et des analyses régulières des vulnérabilités.
 

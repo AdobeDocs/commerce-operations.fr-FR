@@ -44,7 +44,7 @@ L’erreur se produit si la valeur renvoyée est `mysql` ou `elasticsearch`.
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->Où `<version>` est la version du Magento que vous utilisiez. **before** la mise à niveau. Par exemple : `2.3.5`.
+>Où `<version>` est la version du Magento que vous utilisiez. **before** la mise à niveau. Par exemple, `2.3.5`.
 
 Suivez les instructions décrites dans les sections suivantes pour récupérer à partir d’un état incohérent.
 

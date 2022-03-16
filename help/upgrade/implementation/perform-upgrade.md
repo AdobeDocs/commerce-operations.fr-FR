@@ -86,7 +86,7 @@ Vous devez renseigner la variable [conditions préalables à la mise à niveau](
 
    - `<product>` —(Obligatoire) Package à mettre à niveau. Pour les installations sur site, cette valeur doit être : `product-community-edition` ou `product-enterprise-edition`.
 
-   - `<version>` —(Obligatoire) Version d’Adobe Commerce ou de Magento Open Source vers laquelle vous effectuez une mise à niveau. Par exemple : `2.4.3`.
+   - `<version>` —(Obligatoire) Version d’Adobe Commerce ou de Magento Open Source vers laquelle vous effectuez une mise à niveau. Par exemple, `2.4.3`.
 
    - `--no-update` —(Obligatoire) Désactive la mise à jour automatique des dépendances.
 

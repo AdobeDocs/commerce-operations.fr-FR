@@ -1,17 +1,17 @@
 ---
 title: Manuel opérationnel
 description: Objectif du manuel opérationnel Commerce
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: f072f6ca-3654-4bd2-a32e-000358bb67b3
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
-
 # Manuel opérationnel
 
-L’objectif de ce manuel est de préparer vos entreprises sur le plan opérationnel à l’exécution d’un site de commerce électronique réussi. Cela vous aide, ainsi qu’à votre entreprise, en tant qu’utilisateurs, à tirer le meilleur parti de vos investissements technologiques. Bien que de nombreux sites Web aient réussi, d’autres ont échoué en raison d’un manque d’investissement interne dans les entreprises pour s’assurer qu’elles sont prêtes sur le plan opérationnel à gérer un site de commerce électronique avec succès.
+L’objectif de ce manuel est de préparer vos entreprises sur le plan opérationnel à l’exécution d’un site de commerce électronique réussi. Cela vous aide, ainsi qu’à votre entreprise, en tant qu’utilisateurs, à tirer le meilleur parti de vos investissements technologiques. Bien que de nombreux sites web aient réussi, d&#39;autres ont échoué en raison d&#39;un manque d&#39;investissement interne dans les entreprises pour s&#39;assurer qu&#39;elles sont prêtes sur le plan opérationnel à gérer un site de commerce électronique avec succès.
 
 Nous avons créé ce manuel pour tous les secteurs et clients (B2C et B2B) à utiliser dans le cadre de leurs opérations d’e-commerce quotidiennes et de la gestion réussie de leur plateforme d’e-commerce.
 
@@ -30,19 +30,19 @@ Le public cible de ce manuel de lecture comprend :
 
 ## À propos de ce manuel de lecture
 
-Ce document suit une structure conçue pour vous aider à comprendre les principaux domaines d’intérêt afin de tirer le meilleur parti de votre investissement dans Adobe Commerce. Cette structure est basée sur la structure de gouvernance du commerce Deloitte et Adobe, qui crée l’environnement commercial approprié pour que les opérations et les transformations numériques réussissent. Il comprend :
+Ce document suit une structure conçue pour vous aider à comprendre les principaux domaines d’intérêt afin de tirer le meilleur parti de votre investissement dans Adobe Commerce. Cette structure est basée sur Deloitte et Adobe Commerce Governance Framework, qui crée l’environnement commercial approprié pour que les opérations et transformations numériques réussissent. Il comprend :
 
-- **Leadership** : ralliement et soutien de la direction pour la gestion réussie d’une plateforme de commerce électronique.
+- **Leadership**: ralliement de la direction et prise en charge d’une gestion réussie d’une plateforme de commerce électronique.
 
-- **Stratégie** : clarté et alignement autour des principaux objectifs commerciaux pour l’évaluation des performances numériques et des opérations de commerce électronique.
+- **Stratégie**: clarté et alignement autour des principaux objectifs commerciaux pour l’évaluation des performances numériques et des opérations de commerce électronique.
 
-- **Solution** : évaluation de l’hébergement et de l’infrastructure pour divers besoins commerciaux et de commerce électronique.
+- **Solution**: évaluation de l’hébergement et de l’infrastructure pour divers besoins commerciaux et de commerce électronique.
 
-- **Personnes** : ressources, expertise et structure d’équipe appropriée pour exécuter efficacement les opérations de commerce électronique.
+- **Personnes**: ressources, expertise et structure d’équipe appropriée pour exécuter efficacement les opérations de commerce électronique.
 
-- **Processus** : procédures, gestion de projet et processus de gestion efficace d’un site de commerce électronique.
+- **Processus**: procédures, gestion de projet et processus pour gérer efficacement un site de commerce électronique.
 
-- **Produit** : solutions d’e-commerce générales, intégrations courantes et automatisations.
+- **Produit**: solutions d’e-commerce générales, intégrations courantes et automatisations.
 
 >[!NOTE]
 >

@@ -1,13 +1,13 @@
 ---
 title: Systèmes de gestion des commandes
 description: Complétez votre projet d’e-commerce avec un système de conditionnement, d’expédition et de retour.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 2a5f19fa-e8fe-452b-9ab6-65428dda691d
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
 
 ---
-
 
 # Système de gestion des commandes (OMS)
 
@@ -19,13 +19,13 @@ Un système d’exploitation fournit l’intégration et l’automatisation par 
 
 Un système OMS est important pour un site de commerce électronique, car il permet aux marques de croître. Les clients ont des attentes élevées, ce qui ne laisse aucune place à l’erreur. Voici quelques-unes des raisons pour lesquelles un OMS est essentiel :
 
-- **Livraison** plus rapide : à l’âge de la livraison le jour suivant ou de 2 jours, les entreprises doivent rechercher des moyens d’envoyer leurs commandes plus rapidement, à mesure que la fenêtre d’exécution des commandes se rétrécit. Un système d’exploitation est immédiatement informé lorsqu’une commande est passée et le système d’exploitation peut choisir l’entrepôt le plus proche de la destination de la commande pour accélérer la livraison. Le système d’exploitation envoie des informations de commande automatisées à l’équipe de l’entrepôt afin de préparer et d’emballer la commande à expédier à l’aide d’une méthode d’expédition rentable.
+- **Une diffusion plus rapide**—À l’ère de la livraison le jour suivant ou de 2 jours, les entreprises doivent rechercher des moyens de faire passer leurs commandes plus rapidement, car la fenêtre d’exécution des commandes est de plus en plus étroite. Un système d’exploitation est immédiatement informé lorsqu’une commande est passée et le système d’exploitation peut choisir l’entrepôt le plus proche de la destination de la commande pour accélérer la livraison. Le système d’exploitation envoie des informations de commande automatisées à l’équipe de l’entrepôt afin de préparer et d’emballer la commande à expédier à l’aide d’une méthode d’expédition rentable.
 
-- **Erreurs** limitées : Un système OMS permet de réduire les erreurs humaines. Ces erreurs peuvent être longues et coûteuses. Un système d’exploitation avertit l’équipe lorsqu’un stock est faible, lorsqu’un produit n’est pas vendu ou quel produit a le taux de rendement le plus élevé. Cela permet à l’entreprise de corriger les erreurs d’expédition et d’analyser la raison des retours.
+- **Erreurs limitées**: Un système OMS permet de réduire les erreurs humaines. Ces erreurs peuvent être longues et coûteuses. Un système d’exploitation avertit l’équipe lorsqu’un stock est faible, lorsqu’un produit n’est pas vendu ou quel produit a le taux de rendement le plus élevé. Cela permet à l’entreprise de corriger les erreurs d’expédition et d’analyser la raison des retours.
 
-- **Augmentation de l’évolutivité** : un système OMS s’adapte en fonction des besoins de l’entreprise, contrairement aux systèmes manuels plus anciens. Le logiciel OMS permet aux entreprises de s&#39;adapter au marché.
+- **Augmentation de l’évolutivité**— Un système d&#39;exploitation se met à l&#39;échelle en fonction des besoins de l&#39;entreprise, contrairement aux systèmes manuels plus anciens. Le logiciel OMS permet aux entreprises de s&#39;adapter au marché.
 
-- **Plus de possibilités** multicanaux : à une époque de ventes multicanales sur plusieurs sites web, marchés ou partenariats (Facebook et Instagram), le suivi des commandes peut s’avérer complexe, car elles sont expédiées à plusieurs emplacements à l’aide d’une ou de plusieurs méthodes de livraison. Un système OMS les rassemble et améliore l’expérience client.
+- **Plus de possibilités multicanales**: à une époque de ventes multicanaux sur plusieurs sites web, marchés ou partenariats (Facebook et Instagram), le suivi des commandes peut être complexe, car elles sont expédiées à plusieurs emplacements à l’aide d’une ou de plusieurs méthodes de livraison. Un système OMS les rassemble et améliore l’expérience client.
 
 ## Fonctionnalités clés
 

@@ -1,10 +1,10 @@
 ---
 user-guide-title: Guide de mise à niveau
-user-guide-description: Découvrez pourquoi la mise à niveau de votre application Adobe Commerce ou Magento Open Source est si importante et comment planifier et exécuter une mise à niveau avec succès.
+user-guide-description: Découvrez pourquoi la mise à niveau de votre application Adobe Commerce ou Magento Open Source est si importante et comment planifier et exécuter une mise à niveau avec succès.
 source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
 source-wordcount: '122'
-ht-degree: 0%
+ht-degree: 22%
 
 ---
 

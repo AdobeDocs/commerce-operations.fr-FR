@@ -4,7 +4,7 @@ description: Découvrez comment définir des indicateurs de performance clés po
 exl-id: 4b0d9c4f-e611-452d-a80f-27f82705935d
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
@@ -29,12 +29,12 @@ La définition des indicateurs de performance clés doit être la première éta
 
 ## Instructions Jeter
 
-Les instructions de niveau supérieur Jeter suivantes doivent être prises en compte lors du développement de vos tests de charge AEM/CIF/Adobe Commerce :
+Les instructions de haut niveau Jeter suivantes doivent être prises en compte lors du développement de vos tests de charge AEM/CIF/Adobe Commerce :
 
 - Divisez votre script en scénarios configurables, qui doivent couvrir, par exemple :
    - Ouvrir la page d’accueil
    - Ouvrir la page de catégorie (PLP)
-   - Afficher les produits simples (PDP) - 2 boucles dans chaque itération
+   - Afficher les produits simples (PDP) : 2 boucles dans chaque itération
    - Afficher les produits configurables - 2 boucles au sein de chaque itération
       - Par exemple, définissez les étapes ci-dessus sur 60 % du trafic.
    - Recherche de produit
@@ -44,16 +44,13 @@ Les instructions de niveau supérieur Jeter suivantes doivent être prises en co
       - Comme le flux de passage en caisse n’est pas mis en cache et qu’il s’agit généralement d’une opération gourmande en ressources, la définition d’un chiffre irréaliste pour le nombre de personnes qui exécutent des commandes par rapport au nombre de navigateurs du site donne un résultat peu fiable pour le volume de trafic que votre site peut traiter.
 - Nettoyez tous les caches avant chaque exécution de test :
    - Le cache du Dispatcher AEM doit être entièrement nettoyé.
-   - Le cache Fastly et interne d’Adobe Commerce doit être entièrement vidé et nettoyé : cela peut être effectué via le contrôle du cache dans l’administrateur Adobe Commerce.
+   - Le cache rapide et interne d’Adobe Commerce doit être entièrement vidé et nettoyé. Cela peut être effectué via le contrôle du cache dans l’administration Adobe Commerce.
 - Inclure une période de progression dans le test Jeter : Aucune période de progression n’est définie, ce qui signifie qu’il n’y a aucune progression progressive du trafic et aucune chance pour le site de mettre en cache les pages et composants fréquemment consultés de la page. Dans la vie réelle, il serait inhabituel que tout le trafic de pointe arrive sur un site entièrement non mis en cache exactement au même moment. Par conséquent, une période de progression doit être incluse dans les scripts de test Jeter pour permettre au cache de se développer comme ce serait le cas sur un site de commerce électronique réel.
-- Un &quot;temps d’attente&quot; entre chaque étape d’une itération doit être utilisé ; en réalité, un utilisateur ne le ferait pas.
-saut immédiatement à la page suivante du site pendant leur parcours : il y aurait un temps d’attente pendant que l’utilisateur lisait la page et décidait de sa prochaine action.
+- Un &quot;temps d’attente&quot; entre chaque étape d’une itération doit être utilisé. En réalité, un utilisateur ne sauterait pas immédiatement sur la page suivante du site pendant son parcours, un temps d’attente s’écoulerait pendant que l’utilisateur lisait la page et décidait de sa prochaine action.
 - Si vous définissez les groupes de threads sur une boucle infinie, mais pour une durée définie de x (par exemple, 60 minutes), vous obtiendrez un test répétable, avec des temps de réponse médians comparables aux exécutions de test précédentes. Cela signifie qu’après la période de montée en charge de la configuration, le nombre cible d’utilisateurs virtuels s’exécute simultanément, ce qui se poursuit pendant la durée de la boucle définie.
-- Le temps médian doit être utilisé pour améliorer/diminuer le temps de réponse moyen, et non pas la moyenne. If
-il existe plusieurs résultats de périphérie qui prennent beaucoup plus de temps que les autres résultats, alors cela ferait biaiser ce résultat moyen, mais ce qui nous intéresse dans le temps de réponse de l’utilisateur final pour la majorité des utilisateurs, qui est plus adapté à la mesure médiane.
+- Le temps médian doit être utilisé pour améliorer/diminuer le temps de réponse moyen, et non pas la moyenne. S’il y a plusieurs résultats de périphérie qui prennent beaucoup plus de temps que les autres résultats, cela va biaiser ce résultat moyen, mais ce qui nous intéresse dans le temps de réponse de l’utilisateur final pour la majorité des utilisateurs, qui est plus adapté à la mesure médiane.
 - Les ressources incorporées ne sont pas collectées par défaut dans jmètre (par exemple, JS, CSS et d’autres ressources téléchargées lorsqu’un utilisateur réel visite la page). Cela peut être activé, mais uniquement pour le domaine que vous testez - les appels de ressources externes doivent toujours être exclus (par exemple, nous ne voulons pas inclure de temps de réponse provenant de services hébergés en externe, par exemple. code google analytics, car nous n’avons aucun contrôle sur eux).
-- HTTP Cache Manager doit être activé, ce qui permet à Jeter de mettre en cache les éléments de page pendant un parcours comme
-un véritable parcours de l’utilisateur lors de sa navigation sur le site web dans son propre navigateur. Pendant leur parcours sur le site, le navigateur de l’utilisateur téléchargerait la ressource incorporée associée une seule fois, puis celles-ci seraient mises en cache par le navigateur de l’utilisateur. En outre, si le même utilisateur revient sur le site un certain temps après sa visite initiale, il se peut que ce soit toujours le cache dans lequel ces ressources sont mises en cache.
+- HTTP Cache Manager doit être activé, ce qui permet à Jeter de mettre en cache les éléments de page pendant un parcours comme le parcours d’un utilisateur réel le ferait lors de sa navigation sur le site web dans son propre navigateur. Pendant leur parcours sur le site, le navigateur de l’utilisateur téléchargerait la ressource incorporée associée une seule fois, puis celles-ci seraient mises en cache par le navigateur de l’utilisateur. En outre, si le même utilisateur revient sur le site un certain temps après sa visite initiale, il se peut que ce soit toujours le cache dans lequel ces ressources sont mises en cache.
 - Les écouteurs doivent être maintenus dans les exécutions de test de charge réelles (par exemple, &quot;Afficher l’arborescence des résultats&quot; et &quot;Rapport d’agrégation&quot;). L’inclusion de cela dans l’exécution de test de charge réel autre qu’une interface utilisateur graphique peut avoir un impact sur les résultats de performances signalés par Jeter, car les ressources sont utilisées lors de l’exécution de test réelle pour générer les rapports. Ces écouteurs ont été supprimés du script de test pour être remplacés par un fichier de résultats JTL, qui peut ensuite être traité à l’aide de la fonctionnalité Tableau de bord des rapports de Jeter.
 - Délai de réponse cible pour l’évaluation de sorte que le &quot;score Apdex&quot; du rapport de tableau de bord puisse être utilisé rapidement pour mesurer l’effet des modifications sur les performances entre les exécutions de test. Le score Apdex est basé sur un certain nombre de personnes qui peuvent accéder au site en un temps tolérable . Si le temps de réponse est supérieur à une certaine quantité &quot;frustrante&quot;, cela réduit le score. Les heures peuvent être définies à l’aide des paramètres &quot;apdex_content_seuil&quot; et &quot;apdex_tolerated_seuil&quot;.
 - Définissez une mesure &quot;Commandes par heure&quot; cible à présenter aux utilisateurs professionnels, et non à un nombre d’utilisateurs virtuels. &quot;Utilisateurs virtuels&quot; peut être un sujet complexe pour comprendre ce que le test mesure dans la vie réelle. En calculant le taux de conversion du site, les commandes par heure, le temps moyen passé par un utilisateur sur le site et le temps d’analyse entre chaque chargement de page, vous pouvez utiliser les calculs standard du secteur pour présenter différents scénarios de test de charge en fonction des commandes par heure à réaliser.

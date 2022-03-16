@@ -1,13 +1,13 @@
 ---
 title: Contrats de niveau de service
 description: Découvrez les contrats de niveau de service et comment les utiliser pour prendre en charge votre mise en oeuvre Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 5da42dfa-e165-4142-a863-6f3ce7689478
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 1%
 
 ---
-
 
 # Contrats de niveau de service (SLA)
 
@@ -34,8 +34,8 @@ Le tableau suivant décrit une ventilation de mesure SLA type avec plusieurs niv
   </tr>
   <tr>
     <td>P1</td>
-    <td>Critical Impact</td>
-    <td>Service down or unusable</td>
+    <td>Impact critique</td>
+    <td>Service vers le bas ou inutilisable</td>
     <td>1 heure / 4 heures</td>
     <td>1 heure / 4 heures</td>
   </tr>
@@ -100,6 +100,6 @@ Le tableau suivant décrit une ventilation de mesure SLA type avec plusieurs niv
 
 ## Options de couverture
 
-The coverage options for committed SLAs varies with different types of offering. En règle générale, la portée des services d’assistance Gold et Platinum ressemble à ce qui suit :
+Les options de couverture pour les contrats de niveau de service (SLA) validés varient selon les types d’offres. En règle générale, la portée des services d’assistance Gold et Platinum ressemble à ce qui suit :
 
 ![Infos montrant les options de couverture SLA](../../assets/playbooks/sla-coverage-options.svg)

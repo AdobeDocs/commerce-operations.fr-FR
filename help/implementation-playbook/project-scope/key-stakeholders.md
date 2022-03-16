@@ -1,17 +1,17 @@
 ---
 title: Principales parties prenantes
-description: Examinez les principales parties prenantes impliquées dans une implémentation d’Adobe Commerce et qui possède différents aspects du projet.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Examinez les principaux intervenants impliqués dans une mise en oeuvre d’Adobe Commerce et qui possède différents aspects du projet.
+exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
-
 # Principaux intervenants
 
-En 2021, de nombreuses entreprises ont réalisé que le fait de devenir &quot;à l’épreuve d’une pandémie&quot; est directement lié à la puissance numérique d’une organisation. Sur la base des données de Forrester, [McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)a constaté que le commerce électronique a connu une croissance de 10 ans en seulement 3 mois, dont la croissance est motivée par la nécessité de se connecter numériquement avec les clients pendant que les portes en brique et mortier étaient fermées.
+En 2021, de nombreuses entreprises ont réalisé que le fait de devenir &quot;à l’épreuve d’une pandémie&quot; est directement lié à la puissance numérique d’une organisation. Selon les données de Forrester,[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)Il a constaté que le commerce électronique a connu une croissance de 10 ans en seulement 3 mois, avec une croissance motivée par la nécessité de se connecter numériquement avec les clients pendant que les portes étaient fermées à clé.
 
 Lorsque la décision est prise d’investir dans une transformation commerciale, l’une des étapes les plus importantes est de déterminer qui de l’organisation est impliqué dans le processus. Pour les petites entreprises, parfois l&#39;équipe du commerce électronique ou numérique n&#39;est qu&#39;une poignée de personnes, donc l&#39;équipe entière s&#39;occupe de la tâche. Toutefois, pour les grandes entreprises, une méthode consiste à les diviser en trois secteurs différents, notamment :
 
@@ -38,6 +38,6 @@ La plupart des mises en oeuvre de commerce nécessitent plusieurs plateformes di
 
 ## Qui est le sponsor exécutif ?
 
-Digital Commerce 360 a indiqué que la raison numéro un pour laquelle les entreprises n’ont pas encore investi dans une nouvelle transformation commerciale est qu’elles n’ont pas le soutien d’un leader. La mesure dans laquelle l’équipe de direction est impliquée est essentielle au succès d’une marque. La prise en charge complète des rôles suivants, y compris des réunions récurrentes de points de contrôle tout au long de la durée d’une mise en oeuvre commerciale, est recommandée :
+Digital Commerce 360 a indiqué que la raison numéro un pour laquelle les entreprises n’ont pas encore investi dans une nouvelle transformation commerciale est qu’elles n’ont pas le soutien d’un leader. La mesure dans laquelle l’équipe de direction est impliquée est essentielle au succès d’une marque. La prise en charge complète des rôles suivants, y compris des réunions de points de contrôle récurrents tout au long de la durée d’une mise en oeuvre commerciale, est recommandée :
 
 - La suite C entière

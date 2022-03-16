@@ -1,17 +1,17 @@
 ---
 title: Outils de gestion de projet
-description: Choisissez les outils de gestion de projet recommandés pour votre implémentation d’Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Choisissez les outils de gestion de projet recommandés pour votre mise en oeuvre Adobe Commerce.
+exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-
 # Outils de gestion de projet
 
-Les outils et solutions qui rendent la collaboration et l’ensemble du processus de développement aussi aisés que possible sont en train de se libérer de l’environnement Adobe Commerce réel, mais tout aussi importants.
+Les outils et solutions qui rendent la collaboration et l’ensemble du processus de développement aussi aisés que possible sont tout aussi importants pour sortir de l’environnement Adobe Commerce réel.
 
 Le tableau suivant comprend des outils de gestion de projet recommandés :
 

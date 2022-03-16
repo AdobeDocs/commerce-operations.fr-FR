@@ -1,13 +1,13 @@
 ---
 title: Contrôle de la qualité
 description: Découvrez les processus de contrôle qualité d’Adobe Commerce liés aux projets d’implémentation.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 0eb62b24-21f6-4cec-8ef9-eeaa1ee6ae52
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
 
 ---
-
 
 # Processus et outils de contrôle de la qualité
 
@@ -142,12 +142,12 @@ Le processus de contrôle qualité dans le diagramme précédent peut être déc
 </tbody>
 </table>
 
-Tout comme les [outils](project-management-tools.md) que nous avons identifiés pour le processus de développement, nous avons sélectionné une poignée de solutions et de plateformes de choix que nous utilisons souvent pour les tests de contrôle de la qualité.
+Semblable au [outils](project-management-tools.md) nous avons identifié pour le processus de développement, nous avons sélectionné une poignée de solutions et de plateformes de choix que nous utilisons souvent pour les tests de contrôle de la qualité.
 
 | Objectif | Outil |
 |---------------------------|---------------------------------------------------|
 | Index de performance du site web | Google PageSpeed, Webpagetest, JMeter |
-| Sécurité | Adobe Commerce Security Scan Tool, SonarQube, ZAP |
+| Sécurité | Outil d’analyse de sécurité Adobe Commerce, SonarQube, ZAP |
 | Système de gestion des problèmes | JIRA |
 | Tests de l’interface utilisateur | Pixel parfait, BrowserStack |
 | Test d’API | Postman, SoapUI |
@@ -172,7 +172,7 @@ OWASPZAP (Zed Attack Proxy) est destiné à être utilisé par les personnes qui
 
 ## Tests de l’interface utilisateur
 
-Perfect Pixel permet aux développeurs et aux concepteurs de balises de placer une superposition d’image semi-transparente au-dessus du code HTML développé et d’effectuer une comparaison parfaite en pixels entre eux.
+Perfect Pixel permet aux développeurs et aux concepteurs de balises de placer une superposition d’image semi-transparente au-dessus du HTML développé et d’effectuer une comparaison parfaite en pixels entre eux.
 
 BrowserStack est une plateforme de test web et mobile cloud qui permet aux développeurs de tester leurs sites web et leurs applications mobiles sur des navigateurs, des systèmes d’exploitation et des appareils mobiles réels à la demande.
 

@@ -4,7 +4,7 @@ user-guide-description: Découvrez les aspects opérationnels de la maintenance 
 source-git-commit: ee7867a6d428643ca1ee57b0f3d782b2a78efa2e
 workflow-type: tm+mt
 source-wordcount: '118'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -21,6 +21,6 @@ ht-degree: 0%
 - [Bonnes pratiques en matière de performances](https://devdocs.magento.com/guides/v2.4/performance-best-practices/introduction.html)
 - [Outils](https://devdocs.magento.com/quality-patches/tool.html)
 - [Outils de ligne de commande](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html)
-- [Manuel de mise en oeuvre](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html?lang=en)
+- [Manuel d’implémentation](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html?lang=en)
 - [Manuel opérationnel](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html?lang=en)
 - [Commerce à grande échelle](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html?lang=en)

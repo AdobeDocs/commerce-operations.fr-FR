@@ -1,13 +1,13 @@
 ---
 title: Marketing
 description: Promouvoir vos produits et attirer vos clients par le biais de campagnes de marketing en ligne.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: a6b38975-ff85-4cc1-86e3-9792562369ab
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
 
 ---
-
 
 # Marketing par e-mail
 
@@ -43,7 +43,7 @@ Les clients peuvent facilement ignorer les emails, mais si les emails sont envoy
 
 ## Courrier électronique de référence
 
-Le bouche à oreille est l&#39;une des meilleures stratégies marketing. Par exemple, envoyer un email de référence à un client existant. Par exemple, &quot;Parlez à un ami et recevez 10 $ !&quot; L’e-mail de référence motive les clients à diffuser le mot de manière organique, ce qui vous aide à gagner plus de clients.
+Le bouche à oreille est l&#39;une des meilleures stratégies marketing. Par exemple, envoyer un email de référence à un client existant. Par exemple, &quot;Référez-vous à un ami et recevez 10 $ !&quot; L’e-mail de référence motive les clients à diffuser le mot de manière organique, ce qui vous aide à gagner plus de clients.
 
 ![Exemple d’email marketing de référence](../../assets/playbooks/marketing-email-referral.png)
 

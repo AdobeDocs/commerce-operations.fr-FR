@@ -1,10 +1,10 @@
 ---
 user-guide-title: Manuel opérationnel
-user-guide-description: Découvrez comment préparer vos entreprises sur le plan opérationnel à l’exécution d’un site de commerce électronique réussi.
+user-guide-description: Découvrez comment préparer vos entreprises sur le plan opérationnel à l’exécution d’un site d’e-commerce réussi.
 source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
 workflow-type: tm+mt
 source-wordcount: '132'
-ht-degree: 0%
+ht-degree: 13%
 
 ---
 

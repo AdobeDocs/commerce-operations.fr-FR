@@ -1,17 +1,17 @@
 ---
 title: Qu'est-ce que le commerce électronique ?
 description: Description du commerce électronique
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: b418d36b-7dc6-49c7-95a8-03a55c69cb6f
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
 
 ---
 
-
 # Qu&#39;est-ce que le commerce électronique ?
 
-Dans les mondes du commerce électronique qui se chevauchent (vente sur les réseaux sociaux et marchés numériques), l’expérience client donne aux consommateurs le choix de s’engager dans le canal qu’ils préfèrent, de sorte que faire le bon choix sur la manière dont vous interagissez et vendez en ligne n’a jamais été plus important. L&#39;e-commerce et les achats en ligne sont souvent interchangeables, mais au coeur de son commerce électronique est beaucoup plus vaste que cela. Il incarne un concept pour faire des affaires en ligne, incorporant une multitude de services différents.
+Dans les mondes du commerce électronique qui se chevauchent (vente sur les réseaux sociaux et marchés numériques), l’expérience client donne aux consommateurs le choix de s’engager dans le canal qu’ils préfèrent, de sorte que faire le bon choix sur la manière dont vous interagissez et vendez en ligne n’a jamais été plus important. L&#39;e-commerce et les achats en ligne sont souvent interchangeables, mais au coeur de son commerce électronique est beaucoup plus vaste que cela. Il incarne un concept d&#39;entreprise en ligne, intégrant une multitude de services différents.
 
 Le commerce électronique connaît une croissance monumentale. Elle est passée d&#39;une industrie de 1,3 billions de dollars en 2014 à une industrie de 3,5 billions de dollars en 2019. Les experts prévoient que d&#39;ici 2023, il atteindra plus de 6,5 mille milliards de milliards, ce qui signifie qu&#39;il y a une formidable opportunité pour les marques de commerce électronique de capitaliser sur l&#39;optimisation des conversions. La puissance du commerce électronique ne doit pas être sous-estimée, car elle continue à imprégner la vie quotidienne et à offrir des opportunités importantes aux petites, moyennes et grandes entreprises et aux investisseurs en ligne.
 

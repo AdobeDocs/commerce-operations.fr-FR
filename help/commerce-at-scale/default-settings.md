@@ -1,6 +1,6 @@
 ---
-title: Optimisation des performances du commerce Adobe
-description: Préparez votre projet Adobe Commerce pour utiliser Adobe Experience Manager en tant que CMS en modifiant certains paramètres par défaut.
+title: Optimisation des performances d’Adobe Commerce
+description: Préparez votre projet Adobe Commerce à utiliser Adobe Experience Manager en tant que CMS en modifiant certains paramètres par défaut.
 exl-id: 55d77af7-508c-4ef7-888b-00911cc6e920
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -11,52 +11,51 @@ ht-degree: 0%
 
 # Optimisation des performances d’Adobe Commerce
 
-## Emplacement géographique de l’AEM et de l’infrastructure Commerce des Adobes
+## Emplacement géographique de l’AEM et de l’infrastructure Adobe Commerce
 
 Pour réduire la latence entre l’éditeur AEM et Adobe Commerce GraphQL lors de la création de pages, l’approvisionnement initial des deux infrastructures distinctes doit être hébergé dans la même région AWS (ou Azure). L’emplacement géographique choisi pour les deux clouds doit également être le plus proche de la majorité de votre base de clients, de sorte que les requêtes GraphQL côté client soient diffusées à partir d’un emplacement géographique proche de la majorité de vos clients.
 
 ## Mise en cache GraphQL dans Adobe Commerce
 
-Lorsque le navigateur de l’utilisateur ou l’AEM de l’éditeur appelle Adobe’s GraphQL de Commerce, certains appels sont mis en cache.
-en mode Fastly. Les requêtes mises en cache sont généralement celles qui contiennent des données non personnelles et qui sont peu susceptibles de changer fréquemment. Par exemple : catégories, categoryList et produits. Ceux qui ne sont pas explicitement mis en cache sont ceux qui changent régulièrement et si la mise en cache peut présenter des risques pour les données personnelles et les opérations sur le site, comme les requêtes de panier et de customerpaymentTokens.
+Lorsque le navigateur de l’utilisateur ou l’éditeur AEM appelle GraphQL d’Adobe Commerce, certains appels sont mis en cache en mode Fastly. Les requêtes mises en cache sont généralement celles qui contiennent des données non personnelles et qui sont peu susceptibles de changer fréquemment. Par exemple : catégories, categoryList et produits. Ceux qui ne sont pas explicitement mis en cache sont ceux qui changent régulièrement et si la mise en cache peut présenter des risques pour les données personnelles et les opérations sur le site, comme les requêtes de panier et de customerpaymentTokens.
 
-GraphQL vous permet d’effectuer plusieurs requêtes dans un seul appel. Il est important de noter que si vous spécifiez une seule requête que Adobe Commerce ne met pas en cache avec de nombreuses autres requêtes qui ne peuvent pas être mises en cache, Adobe Commerce contournera le cache de toutes les requêtes de l’appel . Cela doit être pris en compte par les développeurs lors de la combinaison de plusieurs requêtes afin de s’assurer que les requêtes pouvant être mises en cache ne sont pas involontairement contournées.
+GraphQL vous permet d’effectuer plusieurs requêtes dans un seul appel. Il est important de noter que si vous spécifiez une seule requête qu’Adobe Commerce ne met pas en cache avec de nombreuses autres requêtes qui ne peuvent pas être mises en cache, Adobe Commerce contournera le cache de toutes les requêtes de l’appel . Cela doit être pris en compte par les développeurs lors de la combinaison de plusieurs requêtes afin de s’assurer que les requêtes pouvant être mises en cache ne sont pas involontairement contournées.
 
 >[!NOTE]
 >
-> Pour plus d’informations sur les requêtes pouvant être mises en cache et non mises en cache, consultez la [documentation destinée aux développeurs sur Adobe Commerce](https://devdocs.magento.com/guides/v2.4/graphql/caching.html).
+> Pour plus d’informations sur les requêtes pouvant être mises en cache et non mises en cache, voir Adobe Commerce [documentation destinée aux développeurs](https://devdocs.magento.com/guides/v2.4/graphql/caching.html).
 
 ## Tableau plat du catalogue
 
-L’utilisation de tableaux plats pour les produits et les catégories n’est pas recommandée. L’utilisation de cette fonction obsolète peut entraîner des dégradations de performances et des problèmes d’indexation. Par conséquent, les catalogues plats doivent être désactivés via l’administrateur Adobe Commerce, dans la section storefront. Certains modules et personnalisations tiers ne nécessitent pas de tableaux plats pour fonctionner correctement. Il est recommandé d’effectuer une évaluation afin de comprendre les impacts et les risques liés à l’utilisation de tableaux plats lorsque vous choisissez d’utiliser ces extensions ou personnalisations.
+L’utilisation de tableaux plats pour les produits et les catégories n’est pas recommandée. L’utilisation de cette fonctionnalité obsolète peut entraîner des dégradations de performances et des problèmes d’indexation. Par conséquent, les catalogues plats doivent être désactivés via l’administrateur Adobe Commerce, dans la section storefront. Certains modules et personnalisations tiers ne nécessitent pas de tableaux plats pour fonctionner correctement. Il est recommandé d’effectuer une évaluation afin de comprendre les impacts et les risques liés à l’utilisation de tableaux plats lorsque vous choisissez d’utiliser ces extensions ou personnalisations.
 
 ## Protection d&#39;origine très rapide
 
-Par défaut, la protection d’origine Fastly n’est pas activée. L’objectif de l’protection d’origine de Fastly est de réduire directement le trafic vers l’origine Commerce de l’Adobe : lorsqu’une demande est reçue, un emplacement de périphérie rapide (ou &quot;point de présence&quot;/POP) vérifie le contenu mis en cache et le fournit. S’il n’est pas mis en cache, il continue à vérifier si le contenu y est mis en cache (si le contenu a déjà été demandé à partir d’un autre POP global, il sera mis en cache). Enfin, s’il n’est pas mis en cache sur le Protocole POP du Bouclier, il se dirigera uniquement vers le serveur d’origine.
+Par défaut, la protection d’origine Fastly n’est pas activée. L’objectif de l’protection d’origine de Fastly est de réduire directement le trafic vers l’origine Adobe Commerce : lorsqu’une demande est reçue, un emplacement de périphérie rapide (ou &quot;point de présence&quot;/POP) vérifie le contenu mis en cache et le fournit. S’il n’est pas mis en cache, il continue à vérifier si le contenu y est mis en cache (si le contenu a déjà été demandé à partir d’un autre POP global, il sera mis en cache). Enfin, s’il n’est pas mis en cache sur le Protocole POP du Bouclier, il se dirigera uniquement vers le serveur d’origine.
 
-Un protection d’origine rapide peut être activé dans les paramètres du serveur principal de configuration de configuration Fastly de votre administrateur Adobe Commerce. Vous devez choisir un emplacement de protection le plus proche de votre centre de données d’origine Commerce Adobe pour des performances optimales.
+Un protection d’origine rapide peut être activé dans les paramètres du serveur principal de configuration Fastly de votre administrateur Adobe Commerce. Pour des performances optimales, vous devez choisir un emplacement de protection le plus proche de votre centre de données d’origine Adobe Commerce.
 
 ## Optimisation rapide des images
 
-Une fois l’protection d’origine Fastly activée, vous pouvez également activer Fastly Image Optimizer. Lorsque les images des catalogues de produits sont stockées sur Adobe Commerce, ce service permet de décharger rapidement et hors de l’origine Adobe Commerce tout le traitement des images des catalogues de produits gourmands en ressources. Les temps de réponse des utilisateurs finaux sont également améliorés pour les temps de chargement des pages, car les images sont transformées à l’emplacement de périphérie, ce qui élimine la latence en réduisant le nombre de demandes à l’origine Commerce de l’Adobe.
+Une fois l’protection d’origine Fastly activée, vous pouvez également activer Fastly Image Optimizer. Lorsque les images des catalogues de produits sont stockées sur Adobe Commerce, ce service permet de décharger rapidement et hors d’Adobe Commerce toutes les transformations d’images de catalogues de produits gourmands en ressources. Les temps de réponse des utilisateurs finaux sont également améliorés pour les temps de chargement des pages, car les images sont transformées à l’emplacement de périphérie, ce qui élimine la latence en réduisant le nombre de requêtes à l’origine Adobe Commerce.
 
-L’optimisation rapide des images peut être activée en &quot;activant l’optimisation des images profondes&quot; dans la configuration Fastly dans l’administration, bien que seulement après l’activation de votre protection d’origine. Pour plus d’informations sur les configurations de l’optimisation des images Fastly, consultez la [documentation destinée aux développeurs sur Adobe Commerce](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html).
+L’optimisation rapide des images peut être activée en &quot;activant l’optimisation des images profondes&quot; dans la configuration Fastly dans l’administration, bien que seulement après l’activation de votre protection d’origine. Vous trouverez plus d’informations sur les configurations pour l’optimisation rapide des images dans Adobe Commerce. [documentation destinée aux développeurs](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html).
 
-![Capture d’écran des paramètres d’optimisation des images Fastly dans Adobe Commerce Admin](../assets/commerce-at-scale/image-optimization.svg)
+![Capture d’écran des paramètres d’optimisation des images Fastly dans l’administrateur Adobe Commerce](../assets/commerce-at-scale/image-optimization.svg)
 
 ## Désactiver les modules inutilisés
 
-Si vous exécutez Adobe Commerce sans interface utilisateur, si vous diffusez uniquement des requêtes par le biais du point d’entrée GraphQL et qu’aucune page de magasin front-end n’est diffusée directement à partir d’Adobe Commerce, de nombreux modules deviennent redondants et ne sont pas utilisés. En désactivant les modules inutilisés, votre base de code Commerce d’Adobe devient plus petite, moins complexe et pourrait donc offrir des améliorations de performances. La désactivation des modules sur Adobe Commerce peut être gérée à l’aide du compositeur. Les modules pouvant être désactivés dépendent des exigences de votre site. Aucune liste recommandée ne peut donc être fournie, car elle serait spécifique à l’implémentation d’Adobe Commerce par chaque client.
+Si vous exécutez Adobe Commerce sans interface utilisateur, si vous ne diffusez que des requêtes via le point d’entrée GraphQL et qu’aucune page de magasin front-end n’est diffusée directement à partir d’Adobe Commerce, de nombreux modules deviennent redondants et non utilisés. En désactivant les modules inutilisés, votre base de code Adobe Commerce devient plus petite, moins complexe et pourrait donc offrir des améliorations de performances. La désactivation des modules sur Adobe Commerce peut être gérée à l’aide du compositeur. Les modules pouvant être désactivés dépendent des exigences de votre site. Aucune liste recommandée ne peut donc être fournie, car elle serait spécifique à l’implémentation d’Adobe Commerce par chaque client.
 
 ## Activation de la connexion MySQL et Redis
 
-Par défaut, les connexions de Secondaire MySQL et Redis ne sont pas activées dans Adobe Commerce sur le cloud. Cela est dû au fait que ces paramètres ne conviennent qu’aux clients qui attendent une charge très élevée. La latence des zones de disponibilité croisée (Cross-AZ Zones) est plus élevée lorsque les connexions de Secondaire sont activées. Ce paramètre réduit donc les performances d’un Adobe Commerce sur l’instance cloud dans le cas où l’instance ne reçoit que des niveaux de charge réguliers.
+Par défaut, les connexions MySQL et Redis Secondaire ne sont pas activées dans Adobe Commerce sur le cloud. Cela est dû au fait que ces paramètres ne conviennent qu’aux clients qui attendent une charge très élevée. La latence des zones interactives (Cross-Available Zones) est plus élevée lorsque les connexions de Secondaire sont activées. Ce paramètre réduit donc les performances d’Adobe Commerce sur l’instance cloud dans le cas où l’instance ne reçoit que des niveaux de charge réguliers.
 
-Si l’instance Adobe Commerce s’attend à une charge extrême, l’activation du Secondaire maître pour MySQL et Redis permettra d’améliorer les performances en répartissant la charge sur la base de données MySQL ou les réinitialisations sur différents noeuds.
+Si l’instance Adobe Commerce attend une charge extrême, l’activation du Secondaire maître pour MySQL et Redis permet d’améliorer les performances en répartissant la charge sur la base de données MySQL ou les redis sur différents noeuds.
 
 À titre de guide, dans les environnements à charge normale, l’activation de la connexion à Secondaire ralentit les performances de 10 à 15 %. Mais sur les clusters avec une charge et un trafic élevés, les performances augmentent de 10 à 15 %. Par conséquent, il est important de charger le test de votre environnement avec les niveaux de trafic prévus afin d’évaluer si ce paramètre serait bénéfique pour les temps de performance en cours de chargement.
 
-Pour activer/désactiver les connexions de Secondaire pour mysql et redis, vous devez modifier votre fichier `.magento.env.yaml` afin d’inclure les éléments suivants :
+Pour activer/désactiver les connexions de Secondaire pour mysql et redis, vous devez modifier votre `.magento.env.yaml` pour inclure les éléments suivants :
 
 ```
 stage:
@@ -67,7 +66,7 @@ stage:
 
 Pour l’architecture mise à l’échelle (architecture fractionnée - voir ci-dessous), les connexions au Secondaire Redis ne doivent pas être activées, car des erreurs s’affichent. Dans le cas d’une architecture partagée, il est recommandé de mettre en oeuvre la mise en cache L2 pour Redis.
 
-## Déplacement vers un Adobe Commerce sur une architecture mise à l’échelle (fractionnée) dans le cloud
+## Passage à une Adobe Commerce sur une architecture mise à l’échelle (fractionnée) dans le cloud
 
 Si, après toutes les configurations ci-dessus, les résultats de test de charge ou l’analyse des performances de l’infrastructure active indiquent toujours que les niveaux de charge vers Adobe Commerce sont d’un niveau qui atteint systématiquement le maximum des ressources du processeur et d’autres ressources système, alors un passage à une architecture mise à l’échelle (fractionnée) doit être pris en compte.
 

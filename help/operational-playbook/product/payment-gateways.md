@@ -1,13 +1,13 @@
 ---
 title: Passerelles de paiement
 description: Choisissez un fournisseur de passerelle de paiement pour votre projet de commerce électronique en fonction des besoins de votre entreprise.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: eab50191-0744-41da-99ba-2e06ea61da27
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
 
 ---
-
 
 # Points de contrôle des paiements
 
@@ -42,8 +42,7 @@ Lorsqu’une entreprise décide d’intégrer une passerelle de paiement à sa p
 
 Les entreprises B2B et B2C ont des systèmes de paiement similaires, mais les entreprises B2B ont plus de règles, de réglementations et de processus. Les entreprises B2B ont tendance à traiter des volumes plus importants par rapport aux entreprises B2C.
 
-Les clients B2C achètent des produits ou des services à usage individuel. Les clients paient généralement le même prix que les autres clients et il n’y a pas de négociation en cause. Les clients B2B incluent divers
-les parties prenantes, ce qui rend l’approbation plus complexe et plus coûteuse.
+Les clients B2C achètent des produits ou des services à usage individuel. Les clients paient généralement le même prix que les autres clients et il n’y a pas de négociation en cause. Les clients B2B incluent divers intervenants, ce qui rend l’approbation plus complexe et plus coûteuse.
 
 Les clients B2B ont des commandes et des exigences différentes, qui doivent être traitées et approuvées par le représentant commercial ou un représentant commercial doit être impliqué lorsqu’un client achète en ligne à l’aide d’une demande de proposition (RFP) ou d’un bon de commande (PO).
 

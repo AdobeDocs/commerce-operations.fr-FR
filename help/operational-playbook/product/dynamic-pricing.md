@@ -1,13 +1,13 @@
 ---
 title: Dynamic Tarifs Management
 description: Obtenez un avantage concurrentiel en créant une stratégie pour modifier dynamiquement les prix des produits en fonction des conditions du marché.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 913dba96-d939-4e9a-b382-f22c6669fed1
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 0%
 
 ---
-
 
 # Gestion dynamique des prix
 
@@ -15,11 +15,11 @@ La tarification dynamique est une stratégie de tarification réactive dans laqu
 
 Trois facteurs influencent la tarification dynamique, notamment :
 
-- **Secteur** : les détaillants doivent vérifier le prix le plus élémentaire d’un produit parmi d’autres marques.
+- **Secteur industriel**—Les vendeurs doivent vérifier le prix le plus élémentaire d’un produit parmi d’autres marques.
 
-- **Marché** - Quelle est l’offre et la demande actuelles ? Quelle est l&#39;offre et la demande prévues ?
+- **Marché**- Quelle est l&#39;offre et la demande actuelles ? Quelle est l&#39;offre et la demande prévues ?
 
-- **Clients** : quel est le comportement d’achat des clients ? Quel est le prix que le client est prêt à payer pour un produit ?
+- **Clients**— Quel est le comportement d’achat des clients ? Quel est le prix que le client est prêt à payer pour un produit ?
 
 Vous devez tenir compte de tous les aspects lorsque vous élaborez une stratégie de tarification dynamique.
 

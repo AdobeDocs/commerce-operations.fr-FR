@@ -1,13 +1,13 @@
 ---
 title: Portée du projet
 description: Spécifiez les exigences du projet et définissez les rôles et les responsabilités dans le plan de votre projet.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 57a68f7b-adef-4b87-b9f3-3e184d8accf4
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
 
 ---
-
 
 # Portée du projet
 

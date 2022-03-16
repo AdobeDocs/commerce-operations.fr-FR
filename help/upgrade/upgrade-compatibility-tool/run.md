@@ -3,7 +3,7 @@ title: Exécutez la variable [!DNL Upgrade Compatibility Tool]
 description: Procédez comme suit pour exécuter la fonction [!DNL Upgrade Compatibility Tool] sur votre projet Adobe Commerce.
 source-git-commit: ee80753da5327ebf593e007e3b4316e2b01c5a61
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1864'
 ht-degree: 0%
 
 ---

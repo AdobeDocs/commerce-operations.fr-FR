@@ -1,19 +1,19 @@
 ---
 title: Maturité
 description: Évaluez l’état de votre entreprise en fonction de ce modèle de maturité.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 5cf9f080-0ac4-4426-837f-3c245d10e504
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 0%
 
 ---
 
-
 # Modèle de maturité
 
 Un modèle de maturité est une formule que les entreprises peuvent utiliser pour déterminer à quel stade elles évoluent avec un domaine fonctionnel ou une stratégie donnée. Un modèle de maturité utile et précis permet aux entreprises de comprendre comment passer d&#39;une étape à l&#39;autre à travers leur feuille de route du commerce électronique.
 
-Considérez un modèle de maturité comme un rapport robuste qui vous aide à déterminer comment améliorer une zone de la plateforme et qui sert de feuille de route pour la progression.
+Considérez un modèle de maturité comme un rapport robuste qui vous aide à déterminer comment améliorer une zone de la plateforme et qui sert de feuille de route pour le progrès.
 
 Le diagramme suivant résume les différents besoins entre les niveaux de maturité :
 
@@ -27,7 +27,7 @@ Le tableau suivant résume les différents niveaux de maturité :
 -----------|----------|
 | Analyse | Le niveau d’entrée pour la maturité du commerce électronique inclut les tâches les plus faciles à accomplir par un seul marketeur. L’entreprise progresse normalement jusqu’à s’appuyer sur les principes de base pour améliorer davantage l’expérience client. |
 | Walk | À ce niveau, les entreprises commencent à exploiter les données antérieures sur les clients provenant de sources multiples, ce qui nécessite une collaboration interministérielle.  Les organisations de ce niveau peuvent exploiter tout le potentiel des campagnes gérées par des personnes et disposent d’un ensemble mature de bonnes pratiques, de processus et de flux de développement. |
-| Exécuter | Le niveau de maturité le plus élevé permet des campagnes optimisées par l’IA sur divers canaux et utilise la gestion prédictive des stocks pour empêcher la perte de clientèle et les outils de gestion de l’information sur les produits pour enrichir les produits. Elle est mieux réalisée par des organisations dotées d&#39;une culture évoluée des données, de compétences en développement et de processus en interne et à l&#39;étranger. |
+| Exécuter | Le niveau de maturité le plus élevé permet des campagnes optimisées par l’IA sur divers canaux et utilise la gestion prédictive des stocks pour empêcher la perte de clientèle et les outils de gestion de l’information sur les produits pour enrichir les produits. Elle est mieux réalisée par des organisations dotées d&#39;une culture des données évoluée, de compétences en développement et de processus en interne et à l&#39;étranger. |
 
 {style=&quot;table-layout:auto&quot;}
 

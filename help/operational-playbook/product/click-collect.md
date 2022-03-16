@@ -1,13 +1,13 @@
 ---
 title: Clic et collecte
 description: Suivez ces dix conseils pour offrir un clic agréable et collecter de l’expérience pour vos clients.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 5f5743ac-75a5-41f1-8819-2de088f56387
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 0%
 
 ---
-
 
 # Clic et collecte
 
@@ -34,13 +34,13 @@ Les entreprises doivent suivre ces dix conseils pour fournir un bon clic et coll
 
 Lorsque vous décidez de mettre en oeuvre les clics et les collectes, les entreprises doivent tenir compte de la manière dont elles prévoient de diffuser les clics et les collectes aux clients, comme les types de services :
 
-- **Paiement en ligne et collecte en magasin** : l’utilisateur paie le produit en ligne et, une fois le paiement confirmé, le magasin le informe lorsque le produit est prêt à être collecté en fonction de la sélection de la boutique des clients. La collecte des premiers paiements aide à réserver le produit.
+- **Paiement en ligne et collecte en magasin**: l’utilisateur paie le produit en ligne et, une fois le paiement confirmé, le magasin le informe lorsque le produit est prêt à être collecté en fonction de la sélection de la boutique des clients. La collecte des premiers paiements aide à réserver le produit.
 
-- **Réserver le produit en ligne, le paiement et la collection en magasin** : dans ce type de service, le client ne paie pas en ligne lors de la réservation d’un produit. Dans ce type de service, le client peut changer d’avis et peut ne pas acheter le produit.
+- **Réserver les produits en ligne, les paiements et la collection en magasin**: dans ce type de service, le client ne paie pas en ligne lors de la réservation d’un produit. Dans ce type de service, le client peut changer d’avis et peut ne pas acheter le produit.
 
-- **Intégration** : une fois le type de diffusion sélectionné, les entreprises doivent choisir la structure d’intégration (où les commandes sont envoyées, où les commandes sont exécutées). Les stocks peuvent être réalisés à partir d’un entrepôt central ou directement à partir de magasins individuels.
+- **Intégration**: une fois le type de diffusion sélectionné, les entreprises doivent choisir la structure d’intégration (où les commandes sont envoyées, où les commandes sont réalisées). Les stocks peuvent être réalisés à partir d’un entrepôt central ou directement à partir de magasins individuels.
 
-- **Renvoie** : les retours peuvent être complexes. Les entreprises doivent disposer d’une stratégie claire pour gérer les retours sur les produits livrés et les produits commandés à l’aide de clics et de collectes. Les entreprises doivent permettre aux clients de renvoyer les produits qu’ils commandent par clic et collectent afin de fournir un service client de bout en bout.
+- **Renvoie**: les retours peuvent être complexes. Les entreprises doivent disposer d’une stratégie claire pour gérer les retours sur les produits livrés et les produits commandés à l’aide de clics et de collectes. Les entreprises doivent permettre aux clients de renvoyer les produits qu’ils commandent par clic et collectent afin de fournir un service client de bout en bout.
 
 ## Promotion
 
@@ -78,4 +78,4 @@ Certaines marques facturent un coût de service supplémentaire si la commande e
 
 Que l’entreprise soit B2B ou B2C, elle doit fournir le meilleur service à la clientèle. Il est essentiel de fournir des informations en magasin aux clients, comme l’emplacement du point de collection dans la boutique. Désignez une section dans le magasin à des fins de clic et de collecte. Assurez-vous que les clients n’ont pas à attendre longtemps pour collecter leur commande. Certaines marques fournissent également des clics et des collectes de stationnement, où l’utilisateur saisit les détails pour cliquer et collecter le stationnement et où les employés du magasin leur rapportent leur commande.
 
-Ce ne sont que quelques exemples de personnalisation. Il existe d&#39;innombrables autres caractéristiques et capacités qui peuvent être explorées en fonction des besoins de l&#39;entreprise. Il peut s’avérer difficile de suivre les tendances du marché en constante évolution, mais cela contribue à améliorer l’expérience globale des clients.
+Ce ne sont que quelques exemples de personnalisation. Il existe d&#39;innombrables autres caractéristiques et capacités qui peuvent être explorées en fonction des besoins de l&#39;entreprise. Il peut être difficile de suivre les tendances du marché en constante évolution, mais cela contribue à améliorer l’expérience globale des clients.

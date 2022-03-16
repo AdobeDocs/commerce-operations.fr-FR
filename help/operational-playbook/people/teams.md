@@ -1,13 +1,13 @@
 ---
 title: Équipes
 description: Découvrez les différents types d’équipes qui permettent la réussite des projets de commerce électronique.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: b1a007b2-49ff-475f-9ad7-5fa100cdfa3b
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '1224'
 ht-degree: 0%
 
 ---
-
 
 # Équipes
 
@@ -71,7 +71,7 @@ Prenons l’exemple d’une entreprise qui crée et teste un site web, mais qui 
 
 ## Niveau C
 
-Les cadres de niveau C veulent toujours que leurs entreprises réalisent leurs performances au niveau optimal et augmentent le taux de conversion pour obtenir des rendements sur les investissements. Pour ce faire, des équipes de l’ensemble de l’organisation doivent être impliquées et collaborer. Il est également essentiel que les cadres de direction et les cadres supérieurs soient plus impliqués et comprennent mieux le processus d&#39;établissement des objectifs.
+Les cadres de niveau C veulent toujours que leurs entreprises réalisent les meilleures performances et augmentent le taux de conversion afin d’optimiser les retours sur investissement. Pour ce faire, des équipes de l’ensemble de l’organisation doivent être impliquées et collaborer. Il est également essentiel que les cadres de direction et les cadres supérieurs soient plus impliqués et comprennent mieux le processus d&#39;établissement des objectifs.
 
 Le niveau C et d&#39;autres appuis exécutifs de niveau supérieur sont essentiels au succès d&#39;un grand projet d&#39;e-commerce. Cela nécessite un engagement direct ainsi qu&#39;une communication adéquate entre toutes les équipes.
 
@@ -87,8 +87,8 @@ Lorsque vous démarrez un projet d’e-commerce, gardez à l’esprit les niveau
 
 D’autres équipes font partie d’une équipe existante ou sont autonomes, notamment :
 
-- **Équipe** de contenu : ils doivent être harmonisés avec toutes les équipes pour créer du contenu efficace. Le contenu du site nécessite des mises à jour régulières. L’équipe Contenu est chargée de configurer le contenu sur la page du produit, les pages de catégorie, le blog et le pied de page, ce qui attire le trafic du site et augmente votre taux de conversion.
+- **Équipe de contenu**: ils doivent être harmonisés avec toutes les équipes pour créer du contenu efficace. Le contenu du site nécessite des mises à jour régulières. L’équipe Contenu est chargée de configurer le contenu sur la page du produit, les pages de catégorie, le blog et le pied de page, ce qui attire le trafic du site et augmente votre taux de conversion.
 
-- **Équipe** de données : les sites d’e-commerce génèrent de nombreuses données que vous pouvez rassembler et analyser, notamment des informations sur les clients, des habitudes de consommation, des produits populaires et le temps que le site génère le plus de trafic. L’équipe de données traite toutes ces informations pour vous donner des informations sur le fonctionnement du site et sur les endroits où le site doit être amélioré davantage. L’équipe de données peut recommander les tendances à venir et les domaines dans lesquels l’entreprise doit se concentrer.
+- **Équipe de données**: les sites d’e-commerce génèrent de nombreuses données que vous pouvez rassembler et analyser, notamment des informations sur les clients, les habitudes de consommation, les produits populaires et le temps où le site génère le plus de trafic. L’équipe de données traite toutes ces informations pour vous donner des informations sur le fonctionnement du site et sur les endroits où le site doit être amélioré davantage. L’équipe de données peut recommander les tendances à venir et les domaines dans lesquels l’entreprise doit se concentrer.
 
-- **Équipe** financière et comptable : certaines entreprises disposent d’une petite équipe financière et comptable, qui peut être interne ou externe. Ils se concentrent sur la planification, la prévision et la gestion de l’aspect financier de la mise en place et de l’exécution d’un site de commerce électronique.
+- **Équipe financière et comptable**— Certaines entreprises ont une petite équipe financière et comptable, qui peut être interne ou externe. Ils se concentrent sur la planification, la prévision et la gestion de l’aspect financier de la mise en place et de l’exécution d’un site de commerce électronique.

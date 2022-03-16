@@ -1,15 +1,15 @@
 ---
-user-guide-title: Diffuser des expériences commerciales à l’échelle
-user-guide-description: Découvrez comment diffuser des expériences à grande échelle à l’aide d’Adobe Commerce avec Adobe Experience Manager.
+user-guide-title: Diffuser des expériences Commerce à grande échelle
+user-guide-description: Découvrez comment diffuser des expériences à grande échelle à l’aide d’Adobe Commerce avec Adobe Experience Manager.
 source-git-commit: b4a42bc51d283d75f4dcb7780db326f54416ee8e
 workflow-type: tm+mt
 source-wordcount: '41'
-ht-degree: 0%
+ht-degree: 58%
 
 ---
 
 
-# Diffuser des expériences commerciales à l’échelle {#deliver-commerce-at-scale}
+# Diffuser des expériences Commerce à grande échelle {#deliver-commerce-at-scale}
 
 - [Présentation](overview.md)
 - [Planification de la mise en cache efficace](caching.md)

@@ -1,13 +1,13 @@
 ---
 title: Mesures d’assistance
 description: Surveillez les efforts d’assistance et de maintenance pour votre mise en oeuvre Adobe Commerce à l’aide de mesures courantes.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: a8171a08-3583-4c6a-bb18-158161be42d1
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
 
 ---
-
 
 # Mesures d’assistance
 
@@ -24,6 +24,6 @@ La mesure et la création de rapports des services L2 (améliorations et service
 | Densité descendante | Nombre | Graphique (rapport, effectue le suivi de la fin du travail tout au long du sprint) |
 | Qualité du code | Nombres, pourcentage | Complexité, LoC, violations, couverture du code pour le sprint |
 | La volatilité des exigences | Nombre | Nombre d’exigences de changement/nombre total d’exigences pour le sprint |
-| Densité des défauts | Pourcentage | [Non. of valid Defects found/Total No .of Test case execution]*100 for the sprint |
+| Densité des défauts | Pourcentage | [Non. of valid Defenders found/Total nombre de cas de test exécutés]*100 pour le sprint |
 | Efficacité des tests | Pourcentage | [Défauts valides levés/(Défauts valides surmontés + défauts rejetés)]*100 pour le sprint |
 | Productivité | Nombre (tendance) | Points d’article délivrés par sprint/capacité |

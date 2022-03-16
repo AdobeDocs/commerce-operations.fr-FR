@@ -1,13 +1,13 @@
 ---
 title: Objectifs commerciaux
 description: Définissez des objectifs à court et à long terme afin d’aider votre équipe à s’aligner sur les objectifs stratégiques et à accroître l’efficacité organisationnelle.
-source-git-commit: 225ead587fb9f8fbb31442db6cc7ce1826ebb3e8
+exl-id: 749f6a9a-c06f-4f51-a19c-9e4181e002f7
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
 
 ---
-
 
 # Objectifs
 

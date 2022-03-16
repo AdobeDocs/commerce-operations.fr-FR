@@ -5,7 +5,7 @@ description: Parcourez un index de la documentation du produit opérationnel Ado
 source-git-commit: 63ceb5bad64a7ed5bce3ad2af76966eb6883d62e
 workflow-type: tm+mt
 source-wordcount: '205'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -97,7 +97,7 @@ Obtenez des informations pratiques sur les concepts, les processus, les outils e
       <img alt="Implémentation" src="../assets/icons/play.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong>Manuel de mise en oeuvre</strong></a>
+      <a href="../implementation-playbook/overview.md"><strong>Manuel d’implémentation</strong></a>
     </div>
   </td>
   <td valign="top">

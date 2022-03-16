@@ -1,17 +1,17 @@
 ---
 title: Deliverables
-description: Découvrez les différents livrables associés à une implémentation d’Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Découvrez les différents livrables associés à une mise en oeuvre Adobe Commerce.
+exl-id: 6f5e603b-bbe5-411d-ad72-696cb4eae246
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
 
 ---
 
-
 # Deliverables
 
-Le processus de découverte identifie des livrables de mise en oeuvre de Commerce d’Adobe spécifiques. Pour en savoir plus, consultez les sections suivantes.
+Le processus de découverte identifie des livrables de mise en oeuvre Adobe Commerce spécifiques. Pour en savoir plus, consultez les sections suivantes.
 
 ## Exigences commerciales
 
@@ -27,11 +27,11 @@ Ce document définit l’approche de mise en oeuvre technique et les détails ap
 
 ## Mappage des données
 
-Un document de mappage de données couvre les catégories, les produits, les recommandations, les données de tarification et l’inventaire, et inclut les attributs nécessaires pour mapper les produits et les catégories actuels à votre catalogue de produits Commerce Adobe.
+Un document de mappage de données couvre les catégories, les produits, les recommandations, les données de tarification et l’inventaire, et inclut les attributs nécessaires pour mapper les produits et les catégories actuels à votre catalogue de produits Adobe Commerce.
 
 ## Diagramme de flux
 
-Affiche les flux d’utilisateurs pour les processus critiques et/ou uniques, en particulier lorsqu’ils sont personnalisés à partir du comportement standard d’Adobe Commerce.
+Affiche les flux d’utilisateurs pour les processus critiques et/ou uniques, en particulier lorsqu’ils sont personnalisés à partir du comportement Adobe Commerce standard.
 
 ## Portée et fournisseurs
 
@@ -43,4 +43,4 @@ Une révision des produits, des prix et des données d’inventaire existants d�
 
 ## Plan du projet
 
-Un plan de projet décrit les tâches de haut niveau et les calendriers associés à l’initiative de mise en oeuvre, y compris les intégrations qui se chevauchent et les dépendances tierces. Le plan peut aussi comporter un tableau des responsabilités, ou [RACI](../planning/ownership.md), qui indique qui est responsable, responsable, consulté et informé.
+Un plan de projet décrit les tâches de haut niveau et les calendriers associés à l’initiative de mise en oeuvre, y compris les intégrations qui se chevauchent et les dépendances tierces. le plan peut aussi comporter un tableau des responsabilités; [RACI](../planning/ownership.md), graphique qui indique qui est responsable, responsable, consulté et informé.

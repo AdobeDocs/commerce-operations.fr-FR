@@ -1,29 +1,29 @@
 ---
 title: Gouvernance du projet
-description: Apply our project governance recommendations to your Adobe Commerce implementation.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Appliquez les recommandations de gouvernance de projet à votre mise en oeuvre Adobe Commerce.
+exl-id: adf53a2a-1673-441a-84d3-4cdda47d6aa5
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
 
 ---
 
-
-# Project governance
+# Gouvernance des projets
 
 La gouvernance du projet est une fonction de surveillance alignée sur la structure de gouvernance de l’organisation et qui englobe le cycle de vie du projet. Il fournit au chef de projet et à l’équipe la structure, les processus, les modèles de prise de décision et les outils pour gérer et contrôler le projet, tout en assurant la réussite de la livraison du projet. La gouvernance de projet est un élément essentiel, en particulier pour les projets complexes et stratégiques.
 
 Le modèle de gouvernance définit, documente et communique des pratiques personnalisées et efficaces afin de fournir une méthode complète de contrôle du projet et de fournir une visibilité périodique à tous les niveaux pour garantir la réussite. Il contient un cadre pour la prise de décisions; définit les rôles, les responsabilités et les responsabilités pour la réalisation du projet; et détermine l&#39;efficacité. La structure de gouvernance s’étend de l’équipe d’exécution jusqu’à la direction, en définissant les activités, le reporting, la réaffectation et le flux d’informations.
 
-![Project governance infographic](../../assets/playbooks/project-governance.svg)
+![Infographie de gouvernance du projet](../../assets/playbooks/project-governance.svg)
 
-À différents niveaux, les équipes examinent des mesures sprint et de projet spécifiques pour comprendre les progrès et prendre des mesures correctives si nécessaire. These sprint-level metrics can include the velocity and burndown of each sprint.
+À différents niveaux, les équipes examinent des mesures sprint et de projet spécifiques pour comprendre les progrès et prendre des mesures correctives si nécessaire. Ces mesures au niveau du sprint peuvent inclure la vitesse et la charge de chaque sprint.
 
 ## Détails réguliers de la réunion
 
 - Examen trimestriel des activités
 
-   - Discuss growth escalation strategies
+   - Discuter des stratégies d&#39;escalade de la croissance
 
    - Mettre en évidence les succès et les objectifs actuels
 
@@ -39,9 +39,9 @@ Le modèle de gouvernance définit, documente et communique des pratiques person
 
 - Comité de projet hebdomadaire
 
-   - Decide on objectives, plan, organization for the week
+   - Choix des objectifs, du plan et de l’organisation pour la semaine
 
-   - Make architecture decisions as needed
+   - Prendre des décisions d’architecture en fonction des besoins
 
    - Réviser et agir sur les rapports d’état du projet
 
@@ -55,17 +55,17 @@ Le modèle de gouvernance définit, documente et communique des pratiques person
 
    - Suivi de la progression du projet
 
-## Performance KPIs
+## IPC de performance
 
 Outre les mesures sprint, il est également essentiel de mesurer les indicateurs clés de performance de projet et de qualité. Cela permet non seulement d&#39;assurer le niveau de qualité tout au long du plan, mais cela maintient l&#39;équipe sur la bonne voie et empêche le projet de se retirer des rails.
 
-## Storyboard and velocity
+## Storyboard et vélocité
 
 ![Exemple de panorama Kanban](../../assets/playbooks/kanban-board-chart.svg)
 
-## Sprint and release burndown
+## Déploiement Sprint et release
 
-![Example sprint and release burndown chart](../../assets/playbooks/sprint-release-burndown.svg)
+![Exemple de graphique de condensation de sprint et de version](../../assets/playbooks/sprint-release-burndown.svg)
 
 Des défis ou des changements se produisent tout au long de la durée d’un projet. Donner aux personnes appropriées de votre organisation la possibilité de suivre, de mesurer et de pivoter lorsqu’un défi est relevé va augmenter la probabilité que vous sortiez du projet ayant atteint vos objectifs et que vous soyez satisfait du résultat.
 
@@ -74,14 +74,14 @@ Des défis ou des changements se produisent tout au long de la durée d’un pro
   <tr>
     <th>Mesure des performances clés</th>
     <th>Unité de mesure</th>
-    <th>Reported Metrics</th>
+    <th>Mesures rapportées</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>Test Coverage</td>
+    <td>Couverture du test</td>
     <td>%</td>
-    <td># of testable requirements covered by test cases VS Total of baselined testable requirements</td>
+    <td>Nombre d’exigences vérifiables couvertes par les cas de test VS Total des exigences vérifiables en base</td>
   </tr>
   <tr>
     <td>Densité des défauts</td>
@@ -91,7 +91,7 @@ Des défis ou des changements se produisent tout au long de la durée d’un pro
   <tr>
     <td>Défaut de fuite vers SIT/ UAT / Production</td>
     <td>%</td>
-    <td>Defects reported in Production VS Defects reported in Production + Defects reported by QA+UAT</td>
+    <td>Défauts signalés dans Production VS Défauts signalés dans Production + Défauts signalés par AQ+UAT</td>
   </tr>
   <tr>
     <td>Efficacité des tests</td>

@@ -1,13 +1,13 @@
 ---
 title: Rapports et tableaux de bord
-description: 'Surveillez les indicateurs de performance clés, effectuez le suivi des ventes et mesurez le succès de votre site de commerce électronique à l’aide de rapports et de tableaux de bord. '
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+description: Surveillez les indicateurs de performance clés, effectuez le suivi des ventes et mesurez le succès de votre site de commerce électronique à l’aide de rapports et de tableaux de bord.
+exl-id: 7b57c11b-ff32-440f-85bd-6b6d09c522b7
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 0%
 
 ---
-
 
 # Reporting et tableaux de bord
 
@@ -37,16 +37,16 @@ Il y a tellement de choses qui se passent dans le commerce électronique qu&#39;
 
 Les quatre premiers rapports et tableaux de bord utilisés par les entreprises B2B sont les suivants :
 
-- **Profil de l’entreprise** : les entreprises B2B doivent suivre les profils de leur société cliente pour comprendre leur historique d’achats, les détails de paiement et le canal qu’elles ont utilisé pour acheter. Ce tableau de bord peut vous aider à identifier les risques et problèmes potentiels.
+- **Profil d’entreprise**—Les entreprises B2B doivent suivre les profils de leurs sociétés clientes pour comprendre leur historique d’achats, les détails de paiement et le canal qu’elles ont utilisé pour acheter. Ce tableau de bord peut vous aider à identifier les risques et problèmes potentiels.
 
-- **Catalogue** : un tableau de bord et un rapport de catalogue aident les entreprises B2B à visualiser les performances de chaque produit dans le catalogue, les promotions et les niveaux d’inventaire, ce qui permet d’identifier le type de promotion qui fonctionne le mieux et les produits qui sont demandés. Cela aide les entreprises à accumuler des stocks et à obtenir un avantage concurrentiel.
+- **Catalogue**: un rapport de catalogue et un tableau de bord aident les entreprises B2B à visualiser les performances de chaque produit dans le catalogue, les promotions et les niveaux d’inventaire, ce qui permet d’identifier le type de promotion qui fonctionne le mieux et les produits qui sont demandés. Cela aide les entreprises à accumuler des stocks et à obtenir un avantage concurrentiel.
 
-- **Guillemets** : le modèle commercial B2B fonctionne sur les prix et les prix. Les entreprises B2B doivent passer par un processus où elles analysent un devis afin de pouvoir l&#39;approuver ou essayer de négocier. Un rapport de devis et un tableau de bord permettent d’améliorer le taux de conversion des devis en suivant le taux de succès, les taux de concurrence, les performances et la fidélisation client globale.
+- **Guillemets**— Le modèle commercial B2B fonctionne sur les prix et les prix. Les entreprises B2B doivent passer par un processus où elles analysent un devis afin de pouvoir l&#39;approuver ou essayer de négocier. Un rapport de devis et un tableau de bord permettent d’améliorer le taux de conversion des devis en suivant le taux de succès, les taux de concurrence, les performances et la fidélisation client globale.
 
-- **Ventes** : même si les entreprises B2B peuvent fonctionner en ligne, un représentant commercial est toujours nécessaire pour faire avancer les choses en termes d’identification des devis qui doivent être négociés, de suivi des devis qui arrivent à expiration, de suivi des contrats en cours de renouvellement, de suivi des performances de l’équipe et de rationalisation des activités commerciales quotidiennes.
+- **Ventes**— Même si les entreprises B2B peuvent fonctionner en ligne, un représentant commercial est toujours nécessaire pour faire avancer les choses en termes d’identification des citations à négocier, de suivi des citations qui se rapprochent de l’expiration, de suivi des contrats en cours de renouvellement, de suivi des performances de l’équipe et de rationalisation des activités commerciales quotidiennes.
 
 ## Mieux vaut travailler ensemble
 
-Les vendeurs qui recherchent un moyen de mettre en relation les données comportementales avec les données d’e-commerce transactionnelles peuvent utiliser les rapports et Adobe Analytics de commerce Adobe pour mieux comprendre l’impact des activités marketing sur les mesures d’e-commerce de base.
+Les vendeurs qui recherchent un moyen de mettre en relation les données comportementales avec les données d’e-commerce transactionnelles peuvent utiliser les rapports Adobe Commerce et Adobe Analytics pour mieux comprendre l’impact des activités marketing sur les mesures d’e-commerce de base.
 
 ![Diagramme de reporting](../../assets/playbooks/reporting-diagram.png)

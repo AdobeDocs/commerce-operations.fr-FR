@@ -1,35 +1,35 @@
 ---
 title: Technologies de l’infrastructure cloud
-description: Regardez de plus près la collection de technologies que nous utilisons pour Adobe Commerce sur l’infrastructure cloud.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Observez de plus près la collection de technologies que nous utilisons pour Adobe Commerce sur l’infrastructure cloud.
+exl-id: de1b3a64-d32b-455f-bdb0-ad883dedd6d4
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 0%
 
 ---
 
-
 # Technologies
 
-Comme nous l’avons mentionné, Adobe Commerce tire parti de plusieurs solutions logicielles pour prendre en charge la plateforme. Plus précisément, en ce qui concerne la production, nous avons ventilé certaines des solutions et fonctionnalités techniques incluses dans Adobe Commerce sur l’infrastructure cloud qui permettent de tirer le meilleur parti de votre environnement de production.
+Comme nous l’avons mentionné, Adobe Commerce utilise plusieurs solutions logicielles pour prendre en charge la plateforme. Plus précisément, en ce qui concerne la production, nous avons ventilé certaines des solutions et fonctionnalités techniques incluses dans Adobe Commerce sur l’infrastructure cloud qui permettent de tirer le meilleur parti de votre environnement de production.
 
-![Diagramme présentant l’Adobe Commerce sur la technologie de l’infrastructure cloud](../../../assets/playbooks/infrastructure-technology.svg)
+![Diagramme présentant Adobe Commerce sur la technologie de l’infrastructure cloud](../../../assets/playbooks/infrastructure-technology.svg)
 
 ## Solutions logicielles
 
-- **Nginx** : serveur Web utilisant PHP-FPM. Il existe une instance avec plusieurs programmes de travail.
+- **Nginx**—Serveur web utilisant PHP-FPM. Il existe une instance avec plusieurs programmes de travail.
 
-- **GlusterFS** : serveur de fichiers pour gérer tous les déploiements de fichiers statiques et la synchronisation avec quatre montages de répertoires :
+- **GlusterFS**—Serveur de fichiers pour la gestion de tous les déploiements de fichiers statiques et la synchronisation avec quatre montages de répertoires :
    - `var`
    - `pub/media`
    - `pub/static`
    - `app/etc`
 
-- **Redis** : un serveur par VM avec une seule principale et les deux autres comme répliques.
+- **Redis**— Un serveur par VM avec une seule principale et les deux autres comme répliques.
 
-- **Elasticsearch** : recherchez Adobe Commerce version 2.2.x et ultérieure.
+- **Elasticsearch**: recherchez Adobe Commerce version 2.2.x et ultérieure.
 
-- **Galera** : grappe de base de données avec une base de données MariaDB MySQL par noeud avec un paramètre d’incrémentation automatique de trois pour les identifiants uniques de chaque base de données.
+- **Galera**: grappe de base de données avec une base de données MariaDB MySQL par noeud avec un paramètre d’incrémentation automatique de trois pour les identifiants uniques de chaque base de données.
 
 ## Fonctionnalités et avantages
 

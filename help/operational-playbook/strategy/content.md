@@ -1,13 +1,13 @@
 ---
 title: Stratégie de contenu
 description: Tirez parti de votre contenu pour créer des campagnes attrayantes qui impliquent vos clients.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: fabfed9e-63ff-4be3-8bb7-192ccdb9dde6
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
 
 ---
-
 
 # Stratégie de contenu
 
@@ -37,10 +37,10 @@ Que vous gériez du contenu web de base ou du contenu à diffuser sur les résea
 
 Adobe Experience Manager combine plusieurs fonctions au niveau de l’infrastructure et de l’application dans un package intégré unique. L&#39;offre s&#39;adresse :
 
-- **Sites** : créez et diffusez rapidement des sites web et des applications mobiles pertinents, puis mettez à jour le contenu à tout moment sans charger votre service informatique.
-- **Ressources** : gérez facilement des images, des vidéos et d’autres ressources sur chaque canal numérique pour offrir des expériences client personnalisées.
-- **Communautés** : créez des communautés prospères et des conversations attrayantes sur toutes vos propriétés sociales afin que vous puissiez inspirer de nouveaux niveaux d’apprentissage et de fidélisation des clients.
-- **Forms** : intégrez des formulaires d’entreprise à vos sites web et expériences mobiles et simplifiez la création de formulaires et la réalisation de transactions.
-- **Applications** : créez et diffusez des applications mobiles avec une solution qui réduit l’écart entre les marketeurs et le service informatique afin que les marketeurs puissent facilement mettre à jour le contenu (même après le lancement).
+- **Sites**: créez et diffusez rapidement des sites web et des applications mobiles pertinents, puis mettez à jour le contenu à tout moment sans charger votre service informatique.
+- **Ressources**: gérez facilement des images, des vidéos et d’autres ressources sur chaque canal numérique pour offrir des expériences client personnalisées.
+- **Communautés**: construisez des communautés prospères et des conversations attrayantes sur toutes vos propriétés sociales afin que vous puissiez inspirer de nouveaux niveaux d’apprentissage et de fidélisation des clients.
+- **Forms**: intégrez des formulaires d’entreprise dans vos sites web et expériences mobiles et simplifiez la création de formulaires et la réalisation de transactions.
+- **Applications**: créez et diffusez des applications mobiles avec une solution qui réduit l’écart entre les marketeurs et l’informatique afin que les marketeurs puissent facilement mettre à jour le contenu (même après le lancement).
 
 ![Diagramme de structure de la stratégie de contenu](../../assets/playbooks/content-strategy-framework2.png)

@@ -1,13 +1,13 @@
 ---
 title: Méthodologie de scrum agile
 description: Découvrez comment la combinaison des méthodologies Agile et Scrum peut accélérer votre projet d’e-commerce.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 2c46acad-bff9-4a9f-acfb-622ffbf97288
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
 
 ---
-
 
 # Méthodologie du crum agile
 
@@ -19,12 +19,12 @@ Scrum encourage les équipes auto-organisées et interfonctionnelles à résoudr
 
 Dans la méthodologie Scrum, plusieurs réunions sont utilisées pour favoriser la transparence et le progrès d&#39;un projet de commerce électronique :
 
-- **Planification** des plans : réunion de planification au cours de laquelle les membres de l’équipe se réunissent pour décider de la quantité de travail à effectuer dans un sprint.
+- **Planification Sprint**: réunion de planification au cours de laquelle les membres de l’équipe se réunissent pour décider de la quantité de travail à effectuer dans un sprint.
 
-- **Écran quotidien** : réunion de 15 minutes à laquelle participaient les membres de l’équipe pour partager des mises à jour sur leurs activités.
+- **Dégradé quotidien**— Une réunion de 15 minutes permettant de partager des mises à jour sur les travaux de chaque membre de l’équipe.
 
-- **Révision** d’impression : réunion utilisée pour démontrer la progression à partir du sprint.
+- **Révision Sprint**— Une réunion utilisée pour démontrer les progrès du sprint.
 
-- **Rétrospective** des empreintes : réunion utilisée pour réfléchir au sprint précédent et identifier les opportunités d’amélioration.
+- **Rétrospective Sprint**— Une réunion pour réfléchir au sprint précédent et identifier les opportunités d’amélioration.
 
 À la fin de chaque sprint, un incrément de valeur (par exemple, de nouvelles fonctionnalités, des correctifs de bogues, des mises à niveau ou des mises à jour de code général) doit être fourni et disponible pour les clients.

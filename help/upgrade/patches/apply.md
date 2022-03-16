@@ -37,7 +37,7 @@ Pour appliquer un correctif personnalisé à l’aide du compositeur :
    - **Titre :** *\&quot;MAGETTwo-56934 : La page de paiement se bloque lors de la commande avec Authorize.net avec une carte de crédit non valide\&quot;*
    - **Chemin d’accès au correctif :** *\&quot;patches/composer/github-issue-6474.diff\&quot;*
 
-   Par exemple :
+   Par exemple :
 
    ```json
    "extra": {

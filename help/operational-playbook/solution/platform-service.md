@@ -1,13 +1,13 @@
 ---
 title: Services de plateforme de commerce
 description: Passez en revue les avantages et les inconvénients de l’utilisation des solutions PaaS pour votre infrastructure d’hébergement afin de déterminer ce qui convient à votre projet d’e-commerce.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 071e6e9b-6874-4d08-90b4-036d6cdca4c2
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
 
 ---
-
 
 # Plateforme en tant que service (PaaS)
 
@@ -17,9 +17,9 @@ PaaS est fourni en tant que service hébergé sur l&#39;infrastructure du fourni
 
 PaaS fonctionne sur des nuages privés, publics et hybrides :
 
-- **Cloud** privé : PaaS est diffusé dans le pare-feu du client pour des raisons de sécurité, où les données sont stockées sur site.
-- **Cloud** public : le client contrôle les déploiements et le fournisseur est responsable de tous les autres composants, tels que le réseau et le système d’exploitation.
-- **Cloud** hybride : mélange les fonctions privée et publique afin que le client puisse disposer d’une certaine flexibilité.
+- **Cloud privé**: PaaS est diffusé dans le pare-feu du client pour des raisons de sécurité, où les données sont stockées sur site.
+- **Cloud public**: le client contrôle les déploiements et le fournisseur est responsable de tous les autres composants tels que le réseau et le système d’exploitation.
+- **Cloud hybride**—Hybrid mélange les fonctions privées et publiques afin que le client puisse avoir de la flexibilité.
 
 ## Avantages
 
@@ -39,8 +39,7 @@ PaaS fonctionne sur des nuages privés, publics et hybrides :
 
 - Peut entraîner une menace de sécurité, car tout est stocké dans le cloud
 - Dépend du fournisseur de services
-- Si le fournisseur rencontre un temps d’arrêt, ce serait un problème pour la variable
-client
+- Si le fournisseur rencontre un temps d’arrêt, ce serait un problème pour le client.
 - Permet des mises à jour simples et rapides
 
 Lorsque le client utilise PaaS dans le commerce électronique, il n’a pas besoin de gérer le système et le logiciel d’exploitation. Le client dispose d’une plateforme pour configurer son site de commerce électronique où il crée et configure du contenu, des données de code et des produits. qui est distinct du côté administration des éléments liés à PaaS.

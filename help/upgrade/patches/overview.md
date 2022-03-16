@@ -3,7 +3,7 @@ title: Fonctionnement des correctifs
 description: Découvrez les différents types de correctifs pour Adobe Commerce et Magento Open Source et leur fonctionnement.
 source-git-commit: 06ac3169a5e3813e4f50246f54f91998e14b5985
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Pour créer un correctif personnalisé :
 1. Créez un `patches/composer` dans votre projet local.
 1. Identifiez la validation ou la requête d’extraction GitHub à utiliser pour le correctif. Cet exemple utilise la méthode [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) commit, lié au problème GitHub [#6474](https://github.com/magento/magento2/issues/6474).
 1. Ajoutez la variable `.patch` ou le `.diff` extensions à l’URL de validation. Utilisation `.diff` pour une taille de fichier plus petite. Par exemple : [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
-1. Enregistrez la page en tant que fichier dans le `patches/composer` répertoire . Par exemple : `github-issue-6474.diff`.
+1. Enregistrez la page en tant que fichier dans le `patches/composer` répertoire . Par exemple, `github-issue-6474.diff`.
 1. Modifier le fichier et supprimer `app/code/<VENDOR>/<PACKAGE>` de tous les chemins afin qu’ils soient relatifs à la variable `vendor/<VENDOR>/<PACKAGE>` répertoire .
 
    >[!NOTE]

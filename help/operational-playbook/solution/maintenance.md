@@ -1,13 +1,13 @@
 ---
 title: Maintenance du projet Commerce
 description: Fixer des normes de qualité et mettre en place des mécanismes pour maintenir ces normes au fil du temps.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 8f394ae0-02c4-4efc-a313-40b8c48aecbb
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 0%
 
 ---
-
 
 # Mises à niveau, sauvegardes et maintenance
 
@@ -29,18 +29,17 @@ En effectuant une mise à niveau, vous optimisez votre entreprise par l’avenir
 
 Voici une liste rapide des questions que vous devez poser lorsque vous planifiez votre mise à niveau :
 
-- **Nettoyage** du site : que puis-je conserver et que puis-je changer ? Quelles sont les nouveautés que je souhaite implémenter ? Par exemple, quelles modifications dois-je apporter à la taxonomie et à la structure du produit ou au contenu ?
+- **Nettoyage du site**— Que puis-je garder et que puis-je changer ? Quelles sont les nouveautés que je souhaite implémenter ? Par exemple, quelles modifications dois-je apporter à la taxonomie et à la structure du produit ou au contenu ?
 
-- **Vérification** Analytics : quels sont mes indicateurs clés de performance actuels ? Que me disent mes données sur la manière dont mon site pourrait être amélioré ? Y a-t-il de nouveaux indicateurs clés de performance que je souhaite mettre en oeuvre pour mon nouveau site ?
+- **Vérification Analytics**— Quels sont mes indicateurs clés de performance actuels ? Que me disent mes données sur la manière dont mon site pourrait être amélioré ? Y a-t-il de nouveaux indicateurs clés de performance que je souhaite mettre en oeuvre pour mon nouveau site ?
 
-- **Extensions** : ai-je toujours besoin d’elles ? Quelles extensions tierces répondent à mes besoins ?
+- **Extensions**- Ai-je encore besoin d&#39;eux ? Quelles extensions tierces répondent à mes besoins ?
 
-- **Intégrations** : avec quels systèmes tiers, tels que l’ERP et la comptabilité, dois-je intégrer ? Disposent-ils de connecteurs spécifiques ou les intégrations personnalisées sont-elles nécessaires ?
+- **Intégrations**— Avec quels systèmes tiers, tels que l’ERP et la comptabilité, dois-je m’intégrer ? Disposent-ils de connecteurs spécifiques ou les intégrations personnalisées sont-elles nécessaires ?
 
-- **Formation** : l’équipe de mise à niveau dispose-t-elle des connaissances et de la formation appropriées ? What&#39;s
-mon plan pour former les utilisateurs finaux à l’utilisation du nouvel administrateur avant qu’il ne soit mis en ligne ?
+- **Formation**—L&#39;équipe de mise à niveau a-t-elle les connaissances et la formation adéquates ? Quel est mon plan pour former les utilisateurs finaux à l’utilisation du nouvel administrateur avant qu’il ne soit mis en ligne ?
 
-- **Équipe** de mise à niveau : qui est dédié au projet de mise à niveau (experts internes et externes) ? Ont-ils le soutien nécessaire de la part des dirigeants et d&#39;autres équipes internes ?
+- **Équipe de mise à niveau**—Qui est dédié au projet de mise à niveau (experts internes et externes) ? Ont-ils le soutien nécessaire de la part des dirigeants et d&#39;autres équipes internes ?
 
 ## Questions courantes relatives à la mise à niveau
 
@@ -55,7 +54,7 @@ A : Encore une fois, cela dépend de votre situation actuelle et de vos besoins 
 
 Q : Les versions Adobe Commerce 2 de mes extensions Adobe Commerce 1 sont-elles disponibles ?
 
-A : Presque tous les besoins essentiels à l’entreprise sont couverts. Du contenu et des personnalisations, de l’expédition et de l’exécution à l’optimisation du site, nous avons constaté une augmentation spectaculaire du nombre et de la diversité des extensions dans le Commerce Marketplace, à mesure que l’adoption par le commerce et la familiarité avec les partenaires d’Adobe Commerce ont augmenté.
+A : Presque tous les besoins essentiels à l’entreprise sont couverts. Du contenu et des personnalisations, de l’expédition et de l’exécution à l’optimisation du site, nous avons constaté une augmentation spectaculaire du nombre, et de la diversité, des extensions dans le Commerce Marketplace, à mesure que l’adoption commerciale d’Adobe Commerce et la familiarité avec ce dernier ont augmenté.
 
 Voici quelques exemples de grandes entreprises technologiques mondiales ayant créé des extensions :
 

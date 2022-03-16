@@ -1,6 +1,6 @@
 ---
 title: Architecture Adobe Commerce sans tête
-description: Learn about what makes Adobe Commerce's headless architecture approach unique.
+description: Découvrez ce qui rend l’approche d’architecture sans interface d’Adobe Commerce unique.
 exl-id: eac9d5b1-4917-4d2a-a8af-7f85c825fa0d
 source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 L’avantage de l’architecture d’Adobe Commerce est qu’elle n’est pas une proposition de tout ou rien et qu’un marchand peut trouver le bon mélange de solutions pour son activité. Ils peuvent créer un PWA optimisé par les PWA Studio pour leur Principale expérience sur site ou utiliser Adobe Experience Manager comme calque dans les parcours clients complexes, tout en créant un front de face personnalisé pour tester de nouveaux points de contact. Aucune autre plateforme ne peut égaler le temps nécessaire aux avantages du marché et la flexibilité qu’offre Adobe Commerce avec son architecture sans interface.
 
-![Diagram showing a headless Adobe Commerce storefront architecture](../../../assets/playbooks/headless-storefront-architecture.svg)
+![Diagramme présentant une architecture sans interface Adobe Commerce storefront](../../../assets/playbooks/headless-storefront-architecture.svg)
 
 Chaque approche n&#39;est pas mutuellement exclusive. Les clients peuvent créer leur propre front-end (head), utiliser PWA Studio pour les expériences web/mobiles et/ou utiliser Adobe Experience Manager pour la vitrine (dans un déploiement complet ou hybride).
 
@@ -27,7 +27,7 @@ Maintenant, regardons les différentes options sans tête.
 
 ## PWA Studio
 
-Le premier est une application web progressive créée avec PWA Studio. Une partie de cela est rendue possible par le fait qu’un PWA est une vitrine sans interface découplée du serveur principal du commerce. Grâce à PWA Studio, les marchands peuvent créer des PWA hautement performants, fiables et économiques en plus d’Adobe Commerce pour offrir des expériences web haut de gamme, à la fois sur mobile et sur ordinateur de bureau. Au fil du temps, cette option remplacera le storefront couplé comme option par défaut.
+Le premier est une application web progressive créée avec PWA Studio. Une partie de cela est rendue possible par le fait qu’un PWA est une vitrine sans interface découplée du serveur principal du commerce. Grâce à PWA Studio, les commerçants peuvent créer des PWA performants, fiables et économiques sur Adobe Commerce pour offrir des expériences web haut de gamme, à la fois sur mobile et sur ordinateur de bureau. Au fil du temps, cette option remplacera le storefront couplé comme option par défaut.
 
 La plupart des commerçants comprennent la direction que prend l&#39;industrie en ce qui concerne les PWA et de nombreux bloqueurs potentiels sont rapidement éliminés.
 
@@ -39,14 +39,14 @@ Afin de rendre les PWA plus accessibles et plus faciles à gérer pour nos comme
 
 ## Adobe Experience Manager
 
-A powerhouse combination for your content and digital asset management needs, Adobe Experience Manager helps merchants get personalized, content-led experiences into market faster, combining digital asset management with the power of machine learning, Adobe Sensei-powered content, and customer journey management.
+Combinaison puissante pour vos besoins en matière de contenu et de gestion des ressources numériques, Adobe Experience Manager permet aux vendeurs d’obtenir plus rapidement sur le marché des expériences personnalisées basées sur le contenu, en combinant la gestion des ressources numériques à la puissance de l’apprentissage automatique, du contenu optimisé par Adobe Sensei et de la gestion des parcours client.
 
-Adobe Commerce plus Adobe Experience Manager is a powerful story in that the commerce engine allows businesses to enable commerce though customer interfaces that are powered by Adobe Experience Manager.
+Adobe Commerce plus Adobe Experience Manager est une puissante histoire dans la mesure où le moteur de commerce permet aux entreprises d’activer le commerce par le biais d’interfaces clients optimisées par Adobe Experience Manager.
 
 ## Têtes personnalisées
 
-La dernière option à discuter ici est l&#39;option de construire une façade personnalisée. Cette option est destinée aux entreprises qui disposent d’une expertise existante et aux développeurs internes qualifiés dans une pile frontale particulière, comme React. If they don’t have skills in Adobe Commerce’s traditional frontend development, they can decide that it&#39;s more cost effective to build their own custom React frontend.
+La dernière option à discuter ici est l&#39;option de construire une façade personnalisée. Cette option est destinée aux entreprises qui disposent d’une expertise existante et aux développeurs internes qualifiés dans une pile frontale particulière, comme React. S’ils n’ont pas de compétences dans le développement front-end traditionnel d’Adobe Commerce, ils peuvent décider qu’il est plus rentable de créer leur propre front-end React personnalisé.
 
 Naturellement, ce modèle nécessite des compétences et des ressources de développement front-end d’intégration des clients ou des systèmes solides, et vous ne bénéficiez pas de la compatibilité native avec des éléments comme le Créateur de pages que vous obtenez avec PWA Studio. Chaque fois qu&#39;un commerçant construit quelque chose de complètement personnalisé, il peut perdre des avantages de temps à la mise sur le marché.
 
-Les interfaces personnalisées permettent également d’innover et d’expérimenter. There’s a lot of talk about AR/VR or voice commerce, and an architecture like Adobe Commerce’s allows merchants to explore these options without impacting their existing webstores.
+Les interfaces personnalisées permettent également d’innover et d’expérimenter. Il y a beaucoup de discussions à propos de l’AR/VR ou du commerce vocal, et une architecture comme celle d’Adobe Commerce permet aux marchands d’explorer ces options sans affecter leurs webstores existants.

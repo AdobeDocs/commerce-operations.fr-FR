@@ -1,18 +1,17 @@
 ---
 title: Hébergement commercial sur site
 description: Les solutions d’hébergement basées sur le cloud sont très populaires, mais l’hébergement sur site peut avoir un sens pour votre projet d’e-commerce.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: e505c216-2d6c-4ca4-a4ec-4853cd9347fe
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
 
 ---
 
-
 # Hébergement sur site
 
-Les solutions d’hébergement basées sur le cloud sont extrêmement populaires et elles servent certainement une
-Dans de nombreuses organisations, cependant, l&#39;infrastructure sur site est toujours une option adéquate pour certaines organisations et commerçants.
+Les solutions d’hébergement basées sur le cloud sont extrêmement populaires et jouent certainement un rôle important dans de nombreuses organisations. Toutefois, l’infrastructure sur site reste une option adéquate pour certaines organisations et commerçants.
 
 Vous devez tenir compte de plusieurs facteurs avant de choisir l’hébergement sur site, y compris des coûts irrécupérables importants, un bassin d’expertise informatique compétente/rentable et le fait que les applications sur site peuvent souvent être plus facilement adaptées et adaptées aux besoins d’une entreprise.
 

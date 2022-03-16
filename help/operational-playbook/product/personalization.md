@@ -1,13 +1,13 @@
 ---
 title: Personnalisation
 description: Découvrez le type d’expérience que la personnalisation doit fournir à vos clients.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: ea829c53-1f98-4e23-90ee-5424a4ef0324
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
 
 ---
-
 
 # Personnalisation
 
@@ -25,21 +25,21 @@ La personnalisation doit inclure :
 
 Voici quelques exemples de personnalisation :
 
-- **Intérêt** du client : modification de la page d’accueil et de la navigation en fonction du profil du client. Par exemple, si un utilisateur a déjà visité le site et a exploré la section réservée aux femmes, la prochaine fois qu’il saisit l’URL, il accède à la page d’accueil des femmes.
+- **Intérêt du client**: modification de la page d’accueil et de la navigation en fonction du profil du client. Par exemple, si un utilisateur a déjà visité le site et a exploré la section réservée aux femmes, la prochaine fois qu’il saisit l’URL, il accède à la page d’accueil des femmes.
 
-- **Produits** recommandés : recommander des produits en fonction du comportement de navigation des clients.
+- **Produits recommandés**: recommander des produits en fonction du comportement de navigation des clients.
 
-- **Rechercher** : affiche les résultats de recherche personnalisés en fonction du comportement de recherche précédent d’un client.
+- **Rechercher**: affiche des résultats de recherche personnalisés en fonction du comportement de recherche précédent d’un client.
 
-- **Courrier électronique** : envoyez des courriers électroniques personnalisés sur les produits si un client a quitté l’article dans son panier ou si le produit était en rupture de stock, envoyez une notification lorsqu’il est de nouveau en stock.
+- **Email**: envoyez des emails personnalisés sur les produits si un client a quitté l’article dans son panier ou si le produit était en rupture de stock, envoyez une notification lorsqu’il est de nouveau en stock.
 
-- **Géolocalisation** : affichage de plusieurs emplacements géographiques pour le site. Par exemple, un client visite le site de l’UA, mais l’option du site des États-Unis s’affiche également pour donner au client le choix.
+- **Géolocalisation**: affichage de plusieurs emplacements géographiques pour le site. Par exemple, un client visite le site de l’UA, mais l’option du site des États-Unis s’affiche également pour donner au client le choix.
 
-- **Code** de remise : affiche des codes de remise de catégorie spécifiques pour promouvoir des produits d’une catégorie particulière.
+- **Code remise**: affiche des codes de remise de catégorie spécifiques pour promouvoir des produits d’une catégorie particulière.
 
-- **Produits** complémentaires : affiche les produits complémentaires lorsque le client visite un produit. Par exemple, un client consulte une robe et peut afficher des produits complémentaires tels que des chaussures, des sacs et des accessoires qui vont avec la robe.
+- **Produits complémentaires**: affiche les produits complémentaires lorsque le client visite un produit. Par exemple, un client consulte une robe et peut afficher des produits complémentaires tels que des chaussures, des sacs et des accessoires qui vont avec la robe.
 
-- **Page d’accueil** personnalisée : affiche une page d’accueil personnalisée pour qu’un utilisateur enregistré se sente spécial.
+- **Page d’accueil personnalisée**: affiche une page d’accueil personnalisée pour un utilisateur enregistré afin qu’il se sente spécial.
 
 ![Exemple de produits personnalisés](../../assets/playbooks/personalization-example.png)
 
