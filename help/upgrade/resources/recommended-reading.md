@@ -1,9 +1,9 @@
 ---
 title: Lecture recommandée pour les mises à niveau
 description: Consultez la lecture recommandée pour planifier la mise à niveau d’Adobe Commerce ou de Magento Open Source.
-source-git-commit: 01ece828514da11459010f2633e370dd53e4e82e
+source-git-commit: 9700c0066d2f765ff22419f6b61beda4cf1e61bc
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ Continuez à découvrir les mises à niveau d’Adobe Commerce et de Magento Ope
             <li><a href="https://helpx.adobe.com/security/products/magento/apsb22-12.html">Bulletin de sécurité Adobe</a></li>
             <li><a href="https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog">Devblog</a></li>
             <li><a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">Notes de mise à jour</a></li>
-            <li><a href="https://solutionpartners.adobe.com/solution-partners.html">Portail Partenaires en solutions</a> (pour les partenaires disposant d’un identifiant valide)</li>
+            <li><a href="https://solutionpartners.adobe.com/solution-partners.html">Portail Partenaires en solutions</a></li>
           </ul>
         </td>
       <td><strong>Outils</strong>
         <ul>
             <li><a href="https://magento.com/tech-resources/downloads">Téléchargement des versions d’Adobe Commerce</li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">Utilisation de l’outil de compatibilité de mise à niveau avec le module externe PHPStorm</a> (vidéo)</li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">Module externe PhpStorm de l’outil de compatibilité de mise à niveau</a> (vidéo)</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en">Outil de compatibilité de mise à niveau</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool canal Slack</a></li>
             <li><a href="https://devdocs.magento.com/quality-patches/usage.html">Outil Correctifs de qualité</a></li>
@@ -60,7 +60,7 @@ Continuez à découvrir les mises à niveau d’Adobe Commerce et de Magento Ope
       <td><strong>Ressources de mise à niveau</strong>
         <ul>
              <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-upgrade-paths-2022.html?lang=en">2022 Chemins de mise à niveau recommandés</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html">2.4 Guide de mise à niveau</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf">2.4 Guide de mise à niveau</a> (PDF)</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 Enregistrement de l’atelier de mise à niveau technique</a></li>
             <li><a href="https://support.magento.com/hc/en-us/articles/360034120932">Accès aux versions préliminaires</a></li>
             <li><a href="https://devdocs.magento.com/release/beta-program.html">Présentation du programme bêta</a></li>
