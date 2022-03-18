@@ -1,11 +1,11 @@
 ---
 mini-toc-levels: 2
-git-repo: https://git.corp.adobe.com/AdobeDocs/commerce-operations.fr-FR
+git-repo: https://github.com/AdobeDocs/commerce-operations.fr-FR
 index: true
-solution: Adobe Commerce
+solution: Commerce,Adobe Commerce
 product: magento
 type: Documentation
-source-git-commit: 78ae8bb7dfa35fd268e226c4c3181ed5fb781138
+source-git-commit: 4130362ef8fa34b5f7de98fb7823ee533a8f925a
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Métadonnées à usage interne
 
-Le fichier `metadata.md` comprend des métadonnées au niveau du référentiel qui sont transmises aux fichiers `TOC.md` du guide de l’utilisateur dans le référentiel. Si vous souhaitez modifier le contenu metadata.md pour n’importe quel guide de l’utilisateur, faites-le dans n’importe quel fichier `TOC.md`.
+Le `metadata.md` comprend des métadonnées au niveau du référentiel qui sont transmises au guide de l’utilisateur. `TOC.md` dans le référentiel. Si vous souhaitez modifier le contenu metadata.md pour n’importe quel guide de l’utilisateur, faites-le dans n’importe quel `TOC.md` fichier .
 
 | metadata | ce qu’il fait |
 |--- |--- |
