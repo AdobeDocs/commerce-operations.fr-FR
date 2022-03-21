@@ -1,7 +1,7 @@
 ---
 title: Présentation du processus de mise à niveau
 description: Découvrez comment la mise à niveau de votre projet Adobe Commerce et Magento Open Source vous permet de maintenir votre vitrine sécurisée et de fonctionner efficacement.
-source-git-commit: 18f5e9c96377e0299fdc776a69393f2ceef3618b
+source-git-commit: 517e38aa5b0f413503fdb7ba00be8c605cceb570
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 0%
@@ -84,3 +84,4 @@ Les événements importants à noter sont les suivants :
 - La version 2.4.0 à 2.4.3 (basée sur PHP 7.4) atteint EOS en novembre 2022, lorsque PHP 7.4 atteint la fin de vie (EOL).
 - Sur la base de ces deux événements EOS, **il est important d’effectuer la mise à niveau vers la version 2.4.4 ou ultérieure d’ici novembre 2022.**
 - En ligne avec Adobe Commerce [politique de cycle de vie](https://devdocs.magento.com/release/lifecycle-policy.html), les versions 2.4.4 et 2.4.5 recevront des correctifs de sécurité et d’assistance de qualité jusqu’à novembre 2024.
+
