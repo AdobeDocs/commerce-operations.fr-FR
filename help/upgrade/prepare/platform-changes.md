@@ -1,7 +1,7 @@
 ---
 title: Vérifier les modifications de la plateforme
 description: Familiarisez-vous avec les principaux changements de plateforme dans une version lorsque vous vous préparez à mettre à niveau votre projet Adobe Commerce ou Magento Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 2b6410781d4ebb4815ff81c9719612692d176fff
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Vérifier les modifications de la plateforme avant la mise à niveau
 
-Adobe Commerce 2.4.4 sera disponible en général le 8 mars 2022 et le code bêta est désormais disponible pour que les partenaires puissent commencer la préparation. La version 2.4.4 est unique, car elle comprend de nombreuses mises à jour de plateforme. Il est optimisé par PHP 8.1 avec plusieurs mises à niveau de framework clés, notamment :
+Adobe Commerce 2.4.4 sera disponible en général le 12 avril 2022. Les clients et partenaires d’Adobe Commerce auront accès aux versions préliminaires à partir du 29 mars. La version 2.4.4 est unique, car elle comprend de nombreuses mises à jour de plateforme. Il est optimisé par PHP 8.1 avec plusieurs mises à niveau de framework clés, notamment :
 
 - Suppression de la prise en charge de PHP 7.3
 - Prise en charge d’OpenSearch en tant qu’alternative à Elasticsearch
