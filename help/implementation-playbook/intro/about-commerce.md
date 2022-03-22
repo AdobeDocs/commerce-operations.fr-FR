@@ -2,10 +2,10 @@
 title: À propos d’Adobe Commerce
 description: Description d’Adobe Commerce
 exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 219cbe839e40afa19b3754a9d5929074ed238920
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ Associant du contenu au commerce pour répondre aux demandes des clients en term
 
 ## Réaliser des achats homogènes partout
 
-La croissance du commerce est alimentée par la satisfaction des besoins de vos clients, où qu’ils se trouvent. Développez votre portée et développez de nouveaux canaux, géographies et vendez-les en ligne à la fois aux entreprises et aux consommateurs dans une seule plateforme. Amenez le commerce à vos clients où, quand et quand ils préfèrent faire leurs achats.
+La croissance du commerce est alimentée par la satisfaction des besoins de vos clients. Développez votre portée et développez de nouveaux canaux, géographies et vendez-les en ligne à la fois aux entreprises et aux consommateurs dans une seule plateforme. Amenez le commerce à vos clients où, quand et quand ils préfèrent faire leurs achats.
 
 - Commerce mobile
 - Commerce électronique B2B
@@ -42,7 +42,7 @@ L’efficacité, l’automatisation et l’accès aux données sont nécessaires
 
 - Business Intelligence
 - Expédition
-- Gestion du stock
+- Inventory management
 - Gestion des commandes et service client
 
 ## Fonctionnement en toute confiance
