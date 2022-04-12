@@ -1,9 +1,9 @@
 ---
 title: Modules et extensions de mise à niveau
 description: Utilisez l’interface de ligne de commande et le compositeur pour mettre à niveau les modules et extensions Adobe Commerce et Magento Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 70f1bda91023526fbc0024b6a6fef93c7633ecc2
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -44,3 +44,9 @@ Pour mettre à jour ou mettre à niveau un module ou une extension :
    ```bash
    bin/magento cache:clean
    ```
+
+## Extensions groupées de fournisseurs (VBE)
+
+Adobe supprimé [VBE](https://devdocs.magento.com/extensions/vendor/) dans la version 2.4.4. Les fournisseurs continuent de prendre en charge ces extensions sur Adobe Commerce Marketplace.
+
+Si vous souhaitez continuer à utiliser ces extensions avec Adobe Commerce et Magento Open Source 2.4.4 et versions ultérieures, vous devez mettre à jour les dépendances de package correspondantes dans votre `composer.json` fichier _before_ mise à niveau vers la version 2.4.4. Contactez le fournisseur pour connaître le nom et la version du module à utiliser.
