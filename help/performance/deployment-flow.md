@@ -1,0 +1,119 @@
+---
+title: Flux de déploiement
+description: 'Découvrez les étapes nécessaires au déploiement d’Adobe Commerce ou de Magento Open Source dans un environnement de production. '
+source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+workflow-type: tm+mt
+source-wordcount: '482'
+ht-degree: 0%
+
+---
+
+
+# Flux de déploiement
+
+Le [!DNL Commerce] le flux de déploiement de production permet à un magasin d’atteindre des performances maximales.
+
+## Installer les dépendances
+
+Le `composer.json` et `composer.lock` gestion des fichiers [!DNL Commerce] dépendances et installez la version appropriée pour chaque module. Vous devez installer les dépendances avant [instructions d’injection de dépendance de prétraitement](#preprocess-dependency-injection-instructions) si vous prévoyez de mettre à jour la variable [autoloader](#update-the-autoloader).
+
+Pour installer [!DNL Commerce] dependencies :
+
+```bash
+composer install --no-dev
+```
+
+## Instructions d’injection de dépendance de prétraitement
+
+Lorsque vous prétraitez et compilez des instructions d’injection de dépendance (DI), Magento :
+
+* Lecture et traitement de toutes les configurations présentes
+* Analyse les dépendances entre les classes
+* Crée des fichiers générés automatiquement (y compris des proxies, des usines, etc.)
+* Stocke les données compilées et la configuration dans un cache qui permet d’économiser jusqu’à 25 % du temps sur le traitement des demandes.
+
+Pour prétraiter et compiler les instructions d’ID :
+
+```bash
+bin/magento setup:di:compile
+```
+
+## Mise à jour du chargeur automatique
+
+Une fois la compilation terminée, vérifiez que [APCu est activé](https://devdocs.magento.com/guides/v2.4/performance-best-practices/software.html#php-settings) et mettez à jour l’outil de chargement automatique :
+
+Pour mettre à jour l’outil de chargement automatique :
+
+>[!INFO]
+>
+>Le `-o` L’option convertit le chargement automatique PSR-0/4 en classmap pour obtenir un chargeur automatique plus rapide. Le `--apcu` L’option utilise APCu pour mettre en cache les classes trouvées/introuvables.
+
+```bash
+composer dump-autoload -o --apcu
+```
+
+Si vous prévoyez de mettre à jour l’outil de chargement automatique, vous devez exécuter les commandes suivantes dans l’ordre :
+
+```bash
+composer install --no-dev
+```
+
+```bash
+bin/magento setup:di:compile
+```
+
+```bash
+composer dump-autoload -o
+```
+
+```bash
+bin/magento setup:static-content:deploy
+```
+
+## Déploiement de contenu statique
+
+Déploiement de causes de contenu statique [!DNL Commerce] pour effectuer les actions suivantes :
+
+* Analyse de toutes les ressources statiques
+* Réaliser la fusion, la minimisation et le regroupement de contenu
+* Lecture et traitement des données de thème
+* Analyse de la reprise du thème
+* Stocker tout le contenu traité et matérialisé dans un dossier spécifique pour une utilisation ultérieure
+
+Si votre contenu statique n’est pas déployé, [!DNL Commerce] effectue toutes les opérations répertoriées à la volée, ce qui entraîne une augmentation significative du temps de réponse.
+
+Vous pouvez utiliser diverses options pour personnaliser les opérations de déploiement en fonction de la taille de magasin et des besoins d’exécution. La stratégie de déploiement compacte est la plus courante. Voir [Stratégies de déploiement des fichiers statiques](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-static-deploy-strategies.html)
+
+Pour déployer du contenu statique :
+
+```bash
+bin/magento setup:static-content:deploy
+```
+
+Cette commande permet au compositeur de recréer le mappage sur les fichiers de projet afin qu’ils se chargent plus rapidement.
+
+## Définir le mode de production
+
+>[!INFO]
+>
+>La définition du mode de production s’exécute automatiquement. `setup:di:compile` et `setup:static-content:deploy`.
+
+Enfin, vous devez placer votre magasin en mode Production. Le mode de production est spécifiquement optimisé pour des performances maximales de votre magasin. Elle désactive également toutes les fonctionnalités spécifiques aux développeurs. Vous pouvez le faire dans votre `.htaccess` ou `nginx.conf` fichier :
+
+`SetEnv MAGE_MODE production`
+
+Vous pouvez également déployer du contenu statique, compiler le contenu et définir le mode dans une seule commande d’interface de ligne de commande :
+
+```bash
+bin/magento deploy:mode:set production
+```
+
+La commande s’exécute en arrière-plan et ne permet pas de définir des options supplémentaires pour chaque étape spécifique.
+
+## Autres actions de prélancement
+
+Ces étapes sont recommandées, mais ne sont pas obligatoires. Vous pouvez les exécuter immédiatement avant de lancer votre boutique en mode de production. La liste comprend :
+
+* Réindexez les données pour éviter toute incohérence des données de vos index.
+* Videz le cache pour vous assurer qu’aucune donnée ancienne ou incorrecte n’est conservée dans le cache.
+* Réchauffez le cache, qui appelle les pages de magasin les plus populaires ou les plus critiques à l’avance, afin que le cache soit généré et stocké. Cette opération peut être effectuée avec n’importe quel moteur de recherche Internet ou manuellement, si vous disposez d’une petite boutique.

@@ -2,10 +2,10 @@
 keywords: Adobe Commerce;accueil;rubriques les plus consultées
 title: Accueil
 description: Parcourez un index de la documentation du produit opérationnel Adobe Commerce.
-source-git-commit: d3eac6db56f658ead240e8244858d0bd80a43908
+source-git-commit: 29b8d64cd700531f04166ad20694fa342ea0e186
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 1%
+source-wordcount: '197'
+ht-degree: 2%
 
 ---
 
@@ -67,11 +67,11 @@ Obtenez des informations pratiques sur les concepts, les processus, les outils e
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/performance-best-practices/introduction.html">
+    <a href="../performance/overview.md">
        <img alt="Performances" src="../assets/icons/gauge.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/performance-best-practices/introduction.html"><strong>Bonnes pratiques en matière de performances</strong></a>
+      <a href="../performance/overview.md"><strong>Bonnes pratiques en matière de performances</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -79,7 +79,7 @@ Obtenez des informations pratiques sur les concepts, les processus, les outils e
        <img alt="Outils" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.corp.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>Outils</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>Outils</strong></a>
     </div>
   </td>
 </tr>
