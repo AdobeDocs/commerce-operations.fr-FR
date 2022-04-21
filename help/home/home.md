@@ -2,10 +2,10 @@
 keywords: Adobe Commerce;accueil;rubriques les plus consultées
 title: Accueil
 description: Parcourez un index de la documentation du produit opérationnel Adobe Commerce.
-source-git-commit: 29b8d64cd700531f04166ad20694fa342ea0e186
+source-git-commit: bca5208cb5a53ac839c666cb42f2124de5d96be2
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 2%
+source-wordcount: '212'
+ht-degree: 1%
 
 ---
 
@@ -127,3 +127,4 @@ Découvrez la nouvelle documentation et les mises à jour importantes de la docu
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
 | Ajout [informations](../upgrade/upgrade-compatibility-tool/overview.md) sur la manière dont les règles sont définies pour l’outil de compatibilité de mise à niveau. | Mise à jour majeure |
 | Suppression de l’outil de compatibilité de mise à niveau obsolète [codes d’erreur](../upgrade/upgrade-compatibility-tool/error-messages.md). | Technique |
+| Déplacé [Guide de l’outil d’analyse à l’échelle du site](../tools/site-wide-analysis-tool/intro.md) de [devdocs.magento.com](https://devdocs.magento.com/tools/site-wide-analysis.html) à Experience League. | Nouveau |
