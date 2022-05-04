@@ -1,9 +1,9 @@
 ---
 title: Traitement des commandes à haut débit
 description: Optimisez l’emplacement des commandes et l’expérience de passage en caisse pour votre déploiement Adobe Commerce ou Magento Open Source.
-source-git-commit: 0a902d7fe967bbcee5019fea83e5be66ce2aefd0
+source-git-commit: c4c52baa9e04a4e935ccc29fcce2ac2745a454ee
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,10 @@ ht-degree: 0%
 Vous pouvez optimiser le placement des commandes et l’expérience de passage en caisse en configurant l’ensemble de modules suivant pour **traitement des commandes à haut débit**:
 
 - [AsyncOrder](#asynchronous-order-placement): traite les commandes de manière asynchrone à l’aide d’une file d’attente.
-- [NégociableQuoteAsyncOrder](#negotiable-quote-asyn-order)—Traite de manière asynchrone les éléments de commande d’enregistrement de la commande de commande négociableQuote.
-- [DeferredTotalCalcul](#deferred-total-calculation): renverse les calculs pour les totaux de commande jusqu’au début du passage en caisse.
+- [Calcul total différé](#deferred-total-calculation): renverse les calculs pour les totaux de commande jusqu’au début du passage en caisse.
+- [Contrôle de l’inventaire lors du chargement des citations](#disable-inventory-check): choisissez d’ignorer la validation de l’inventaire des articles du panier.
 
-Toutes les fonctions fonctionnent indépendamment. Vous pouvez utiliser toutes les fonctionnalités simultanément ou activer et désactiver les fonctionnalités dans n’importe quelle combinaison.
-
-Utilisez l’interface de ligne de commande pour activer ces fonctionnalités ou modifiez la variable `app/etc/env.php` en fonction des fichiers LISEZMOI correspondants définis dans la variable [_Guide de référence du module_][mrg].
+Toutes les fonctionnalités (commande asynchrone, calcul total différé et vérification de l’inventaire) fonctionnent indépendamment. Vous pouvez utiliser les trois fonctions simultanément ou activer et désactiver les fonctions dans n’importe quelle combinaison.
 
 ## Placement de l’ordre asynchrone
 
@@ -30,7 +28,9 @@ Par exemple, un client ajoute un produit à son panier et sélectionne **[!UICON
 - **Produit disponible**: l’état de la commande passe à _En attente_, la quantité du produit est ajustée, un e-mail contenant les détails de la commande est envoyé au client et les détails de la commande réussie peuvent être affichés dans la variable **Commandes et retours** liste avec des options exploitables, telles que réorganiser.
 - **Produit en rupture de stock ou faible approvisionnement**: l’état de la commande passe à _Rejetés_, la quantité de produit n’est pas ajustée, un e-mail contenant des détails sur la commande est envoyé au client et les détails de la commande rejetée sont disponibles dans la variable **Commandes et retours** liste sans options exploitables.
 
-Pour activer AsyncOrder :
+Utilisez l’interface de ligne de commande pour activer ces fonctionnalités ou modifiez la variable `app/etc/env.php` en fonction des fichiers LISEZMOI correspondants définis dans la variable [_Guide de référence du module_][mrg].
+
+**Pour activer AsyncOrder**:
 
 Vous pouvez activer AsyncOrder à l’aide de l’interface de ligne de commande :
 
@@ -49,7 +49,7 @@ Le `set` La commande écrit ce qui suit dans la fonction `app/etc/env.php` fichi
 
 Voir [AsyncOrder] dans le _Guide de référence du module_.
 
-Pour désactiver AsyncOrder :
+**Pour désactiver AsyncOrder**:
 
 >[!WARNING]
 >
@@ -109,7 +109,7 @@ Lorsque le module AsyncOrder est activé, les points de terminaison REST suivant
 
 Les développeurs peuvent exclure explicitement certaines méthodes de paiement de l’emplacement de commande asynchrone en les ajoutant à la variable `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` tableau. Les commandes qui utilisent des méthodes de paiement exclues sont traitées de manière synchrone.
 
-## Ordre asynchrone des citations négociables
+### Ordre asynchrone des citations négociables
 
 Le _Ordre asynchrone des citations négociables_ Le module B2B vous permet d’enregistrer les éléments de commande de manière asynchrone pour le `NegotiableQuote` . AsyncOrder et NégociableQuote doivent être activés.
 
@@ -117,9 +117,9 @@ Le _Ordre asynchrone des citations négociables_ Le module B2B vous permet d’e
 
 Le _Calcul total différé_ optimise le processus de passage en caisse en différant le calcul total jusqu’à ce qu’il soit demandé pour le panier ou lors des étapes finales de passage en caisse. Lorsqu’il est activé, seul le sous-total est calculé lorsqu’un client ajoute des produits au panier.
 
-DeferredTotalCalcul **disabled** par défaut.
+DeferredTotalCalcul **disabled** par défaut. Utilisez l’interface de ligne de commande pour activer ces fonctionnalités ou modifiez la variable `app/etc/env.php` en fonction des fichiers LISEZMOI correspondants définis dans la variable [_Guide de référence du module_][mrg].
 
-Pour activer DeferredTotalCalcul :
+**Pour activer DeferredTotalCalcul**:
 
 Vous pouvez activer DeferredTotalCalcul à l’aide de l’interface de ligne de commande :
 
@@ -136,7 +136,7 @@ Le `set` La commande écrit ce qui suit dans la fonction `app/etc/env.php` fichi
    ]
 ```
 
-Pour désactiver DeferredTotalCalcul :
+**Pour désactiver DeferredTotalCalcul**:
 
 Vous pouvez désactiver DeferredTotalCalcul à l’aide de l’interface de ligne de commande :
 
@@ -165,9 +165,7 @@ Le _Activation de l’inventaire au chargement du panier_ paramètre global dét
 
 Lorsque cette option est désactivée, la vérification de stock ne se produit pas lors de l’ajout d’un produit au panier. Si cette vérification de stock est ignorée, certains scénarios en rupture de stock peuvent générer d’autres types d’erreurs. Vérification de stock _always_ se produit à l’étape d’emplacement de la commande, même lorsqu’elle est désactivée.
 
-Activer l’inventaire au chargement du panier **enabled** par défaut.
-
-Pour désactiver la vérification de stock lors du chargement du panier, définissez **[!UICONTROL Enable Inventory Check On Cart Load]** to `No` dans l’interface utilisateur d’administration. Voir [Configuration des options globales][global] et [Inventaire du catalogue][inventory] dans le _Guide de l’utilisateur_.
+**Activer Contrôle De L’Inventaire Lors Du Chargement Du Panier** est activée (définie sur Oui) par défaut. Pour désactiver la vérification de stock lors du chargement du panier, définissez **[!UICONTROL Enable Inventory Check On Cart Load]** to `No` dans l’interface utilisateur d’administration **Magasins** > **Configuration** > **Catalogue** > **Inventaire** > **Options Stock** . Voir [Configuration des options globales][global] et [Inventaire du catalogue][inventory] dans le _Guide de l’utilisateur_.
 
 <!-- link definitions -->
 
