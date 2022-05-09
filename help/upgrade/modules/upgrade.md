@@ -1,7 +1,7 @@
 ---
 title: Modules et extensions de mise à niveau
 description: Utilisez l’interface de ligne de commande et le compositeur pour mettre à niveau les modules et extensions Adobe Commerce et Magento Open Source.
-source-git-commit: 28ce8cca3bb1780ee1466cc2c1b2143e923fe768
+source-git-commit: c619bff9785d22298bc49e2ac9874480ff7a320b
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
