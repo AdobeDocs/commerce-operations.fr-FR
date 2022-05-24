@@ -1,9 +1,9 @@
 ---
 title: Exécutez la variable [!DNL Upgrade Compatibility Tool]
 description: Procédez comme suit pour exécuter la fonction [!DNL Upgrade Compatibility Tool] sur votre projet Adobe Commerce.
-source-git-commit: d5811225d695c44cc8f67ae01cf688fe6382dc23
+source-git-commit: 64b061f3b2f93827bfdb904a6faddbd21f4da5e6
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2057'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Cette commande recherche les modifications de code principal pour cette instance
 
 Vous pouvez exécuter la variable `core:code:changes` pour analyser uniquement les modifications de code principal pour cette instance Adobe Commerce spécifique. Voir [Modifications du code principal](../upgrade-compatibility-tool/run.md#use-the-core:code:changes-command) .
 
-Lorsque vous pouvez utiliser la variable `graphql:compare` pour comparer deux schémas GraphQL afin de rechercher les modifications entre eux. Voir [Vérification de la compatibilité des schémas GraphQL](../upgrade-compatibility-tool/run.md#graphql-schema-compatibility-verification) .
+Vous pouvez utiliser la variable `graphql:compare` pour comparer deux schémas GraphQL afin de rechercher les modifications entre eux. Voir [Vérification de la compatibilité des schémas GraphQL](../upgrade-compatibility-tool/run.md#graphql-schema-compatibility-verification) .
 
 ### Recommendations pour utiliser la variable `upgrade:check` command
 
@@ -317,6 +317,10 @@ Exécutez :
 bin/uct refactor <dir>
 ```
 
+Où les arguments sont les suivants :
+
+- `<dir>`: Répertoire d’installation d’Adobe Commerce.
+
 ## Vérification de la compatibilité des schémas GraphQL
 
 Le [!DNL Upgrade Compatibility Tool] fournit également la possibilité d’analyser deux points d’entrée GraphQL et de comparer leurs schémas à la recherche de modifications risquées et de rupture entre eux :
@@ -350,9 +354,10 @@ Disponible `--help` options de la variable `graphql:compare` command :
  *   [WARNING] OPTIONAL_INPUT_FIELD_ADDED: An optional field sku on input type ProductAttributeSortInput was added.
 ```
 
-Voir [Informations sur les développeurs](../upgrade-compatibility-tool/developer.md) pour plus d’informations.
-
 Vous pouvez exécuter la variable [!DNL Upgrade Compatibility Tool] avec une configuration d’exécution via le module externe PhpStorm. Voir [[!DNL Upgrade Compatibility Tool] Exécuter la configuration](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) pour plus d’informations.
+
+Voir [tutoriel vidéo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) (06:30) pour savoir comment utiliser la variable [!DNL Upgrade Compatibility Tool] avec le module externe PHPStorm Magento.
+
 
 ## Actions recommandées
 
