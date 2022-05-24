@@ -1,9 +1,9 @@
 ---
 title: Guide d’installation
 description: Utilisation de ce guide pour l’installation [!DNL Site-Wide Analysis Tool] pour votre site web
-source-git-commit: de2fb829def2cf94c452a06a219d7f29885c8f9f
+source-git-commit: a694de861fcc681d864ffb2c405b2366b32bba41
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ Nous avons créé une [script shell](https://github.com/magento-swat/install-age
 1. Vérifiez l’installation.
 
    ```bash
-   scheduler -v
+   ./scheduler -v
    ```
 
    ```bash
@@ -253,7 +253,7 @@ Nous vous recommandons de configurer l’agent pour qu’il s’exécute en tant
 
 ### Service {#service}
 
-1. Création d’un fichier d’unité systemd `(/etc/systemd/system/scheduler.service)` avec la configuration suivante (remplacez `<filesystemowner>` avec l’utilisateur Unix propriétaire du répertoire dans lequel l’agent est installé).
+1. Création d’un fichier d’unité systemd `(/etc/systemd/system/scheduler.service)` avec la configuration suivante (remplacez `<filesystemowner>` avec l’utilisateur Unix propriétaire du répertoire dans lequel l’agent et le logiciel Adobe Commerce sont installés). Si vous avez téléchargé l’agent en tant qu’utilisateur root, modifiez le répertoire et le propriétaire des fichiers imbriqués.
 
    ```config
    [Unit]
