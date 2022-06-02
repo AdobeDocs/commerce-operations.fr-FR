@@ -1,10 +1,10 @@
 ---
 user-guide-title: Guide de mise à niveau
 user-guide-description: Découvrez pourquoi la mise à niveau de votre application Adobe Commerce ou Magento Open Source est si importante et comment planifier et exécuter une mise à niveau avec succès.
-source-git-commit: 84c24627c00ecea97e29bf0cb023ddf2dc285aeb
+source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 20%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,13 +32,16 @@ ht-degree: 20%
    - [Fonctionnement des correctifs](patches/overview.md)
    - [Appliquer les correctifs](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
-   - [[!DNL Upgrade Compatibility Tool] Présentation](upgrade-compatibility-tool/overview.md)
+   - [Présentation](upgrade-compatibility-tool/overview.md)
    - [Conditions préalables](upgrade-compatibility-tool/prerequisites.md)
-   - [Installer](upgrade-compatibility-tool/install.md)
-   - [Exécution de l’outil](upgrade-compatibility-tool/run.md)
+   - Utilisez la variable [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
+      - [Exécution de l’outil dans une interface de ligne de commande](upgrade-compatibility-tool/run.md)
+      - [Intégrez à la variable [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
+      - [Exécution de l’outil dans le module externe PHPStorm du Magento](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
+   - Reporting {#reporting}
+      - [Rapports](upgrade-compatibility-tool/reports.md)
+      - [Messages d’erreur](upgrade-compatibility-tool/error-messages.md)
    - [Outils connexes](upgrade-compatibility-tool/related-tools.md)
-   - [Intégrez la variable [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
-   - [Messages d’erreur](upgrade-compatibility-tool/error-messages.md)
 - Développeurs contributeurs {#developer}
    - [Mettre à niveau une installation basée sur Git](developer/git-installs.md)
    - [Gestion des modules](developer/manage-modules.md)

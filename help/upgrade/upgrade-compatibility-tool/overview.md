@@ -1,9 +1,9 @@
 ---
-title: Présentation de la variable [!DNL Upgrade Compatibility Tool]
+title: '"Présentation de la variable [!DNL Upgrade Compatibility Tool]"'
 description: En savoir plus sur les [!DNL Upgrade Compatibility Tool] et comment cela peut vous aider dans votre projet Adobe Commerce.
-source-git-commit: 5ff08d231269ea0bcb69f8c80aa546b171a5e4a0
+source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -11,46 +11,27 @@ ht-degree: 0%
 
 # Présentation du guide
 
+{{commerce-only}}
+
 Ce guide est destiné aux administrateurs et aux ingénieurs logiciels d’Adobe Commerce. Il contient des informations détaillées sur l’installation de la variable [!DNL Upgrade Compatibility Tool], ainsi que sa configuration et sa gestion. Elle requiert une compréhension de base de la configuration et des fonctionnalités de base de Commerce.
 
 ## Présentation de la variable [!DNL Upgrade Compatibility Tool]
 
-{{commerce-only}}
+Le [!DNL Upgrade Compatibility Tool] est un outil qui vérifie une instance personnalisée Adobe Commerce par rapport à une version spécifique en analysant tous les modules et le code principal qui y sont installés. Elle renvoie une liste des problèmes, erreurs et avertissements critiques qui doivent être résolus avant la mise à niveau vers une version plus récente d’Adobe Commerce.
 
-Le [!DNL Upgrade Compatibility Tool] est un outil de ligne de commande qui vérifie une instance personnalisée d’Adobe Commerce par rapport à une version spécifique en analysant tous les modules et le code principal qui y sont installés. Elle renvoie une liste des problèmes, erreurs et avertissements critiques qui doivent être résolus avant la mise à niveau vers une version plus récente d’Adobe Commerce.
+## Utilisez la variable [!DNL Upgrade Compatibility Tool]
 
-Voir [Exécution de l’outil](../upgrade-compatibility-tool/run.md) pour plus d’informations.
+Vous pouvez utiliser la variable [!DNL Upgrade Compatibility Tool] via :
 
-Voir [Installer](../upgrade-compatibility-tool/install.md) pour les premières étapes avec la méthode [!DNL Upgrade Compatibility Tool].
-
-Voir [tutoriel vidéo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en) (06:02) pour en savoir plus sur le [!DNL Upgrade Compatibility Tool].
+- En tant qu’autonome [interface de ligne de commande](../upgrade-compatibility-tool/run.md) outil.
+- Intégration de la variable [!DNL Upgrade Compatibility Tool] avec le [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md).
+- Une configuration d’exécution dans la fonction [Module externe PHPStorm Magento](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
 
 ### Workflow
 
 Le diagramme suivant montre les workflows possibles lors de l’exécution de la variable [!DNL Upgrade Compatibility Tool]:
 
 ![[!DNL Upgrade Compatibility Tool] Diagramme](../../assets/upgrade-guide/uct-diagram-v5.png)
-
-### Le [!DNL Upgrade Compatibility Tool] cas pratique
-
-Le cas d’utilisation suivant décrit le processus type de mise à niveau de l’instance d’un client par un partenaire Adobe Commerce :
-
-1. Téléchargez la [!DNL Upgrade Compatibility Tool] du référentiel Adobe Commerce (`https://repo.magento.com/`). Voir [Téléchargez la [!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/install.md#download-the-upgrade-compatibility-tool) pour plus d’informations.
-1. Exécutez le [!DNL Upgrade Compatibility Tool] pendant la [bêta](https://devdocs.magento.com/release/beta-program.html) phase la plus récente [Version d’Adobe Commerce](https://devdocs.magento.com/release/).
-1. Générez une instance Vanilla pour la version spécifique d’Adobe Commerce actuellement installée. Voir [Guide du contributeur](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) pour plus d’informations sur l’utilisation de la variable `instance` pour générer une installation Vanilla.
-
-   >[!NOTE]
-   >
-   >Une instance Vanilla est une installation propre d’une balise ou d’une branche de version spécifiée pour une version spécifique.
-
-1. Le [!DNL Upgrade Compatibility Tool] Identifie les problèmes de mise à niveau qui aideront les ingénieurs logiciels à comprendre la complexité et à estimer l’effort de mise à niveau.
-1. Ces informations sont partagées avec les parties prenantes.
-1. Un budget et une chronologie seront définis pour l&#39;upgrade.
-1. Les ingénieurs logiciels peuvent alors travailler sur les modifications de code requises pour corriger les modules endommagés.
-1. Le [!DNL Upgrade Compatibility Tool] peut être exécuté pour suivre la progression de la mise à niveau.
-1. Les contrôles et l’ingénierie peuvent désormais pousser le code vers un environnement d’évaluation où les tests de régression confirment que tous les tests sont en vert, ce qui leur permet de publier la dernière version d’Adobe Commerce en production le jour même où la version préliminaire d’Adobe Commerce est publiée.
-
-   ![[!DNL Upgrade Compatibility Tool] audience](../../assets/upgrade-guide/audience-uct-v3.png)
 
 ### Améliorez les [!DNL Upgrade Compatibility Tool]
 
@@ -60,13 +41,13 @@ Pour vous connecter au [!DNL Upgrade Compatibility Tool] équipe, contactez-nous
 
 Le [!DNL Upgrade Compatibility Tool] utilise des règles définies dans notre [Normes de codage](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html) pour vous assurer que votre projet suit les bonnes pratiques d’Adobe Commerce et pour vous aider à améliorer et à étendre la variable [!DNL Upgrade Compatibility Tool].
 
-Reportez-vous à la section [Contribution](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html)  rubrique pour plus d’informations sur l’apport de normes de codage.
+Reportez-vous à la section [Contribution](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html) rubrique pour plus d’informations sur l’apport de normes de codage.
 
 ### Ressources
 
-Nous avons développé les ressources suivantes pour vous aider à comprendre les mises à niveau d’Adobe Commerce :
+Consultez les ressources suivantes pour vous aider à comprendre les mises à niveau d’Adobe Commerce :
 
-- [Guide de mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
-- [Versions à venir](https://devdocs.magento.com/release/)
-- [Ressources de la communauté](https://devdocs.magento.com/community/resources/resources.html) pour plus d’informations.
-- [Outils connexes](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/related-tools.html)
+- Le [guide de mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html) fournit un aperçu du parcours de mise à niveau standard d’Adobe Commerce ou de Magento Open Source et des bonnes pratiques à suivre le long de ce parcours.
+- Le [versions à venir](https://devdocs.magento.com/release/) indique les dates des versions planifiées et à venir.
+- Le [ressources communautaires](https://developer.adobe.com/commerce/contributor/community/) pour commencer des discussions ou pour trouver plus d’informations.
+- Vérifiez les [outils connexes](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/related-tools.html) pour des outils utiles dans votre parcours de mise à niveau classique.

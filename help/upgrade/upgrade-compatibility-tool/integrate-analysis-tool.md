@@ -1,9 +1,9 @@
 ---
 title: '"Intégrez la variable [!DNL Site-Wide Analysis Tool]"'
 description: Procédez comme suit pour récupérer la variable [!DNL Upgrade Compatibility Tool] du rapport [!DNL Site-Wide Analysis Tool] tableau de bord de votre projet Adobe Commerce.
-source-git-commit: 5ff08d231269ea0bcb69f8c80aa546b171a5e4a0
+source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Intégrez la variable [!DNL Site-Wide Analysis Tool]
 
-Le [!DNL Site-Wide Analysis Tool] fournit 24/7 surveillance des performances, rapports et recommandations en temps réel afin d’assurer la sécurité et la maniabilité des installations d’Adobe Commerce.
+Le [!DNL Site-Wide Analysis Tool] fournit 24/7 surveillance des performances, rapports et recommandations en temps réel afin d’assurer la sécurité et la maniabilité des instances Adobe Commerce.
 
-Le [!DNL Upgrade Compatibility Tool] est désormais intégré à la fonction [!DNL Site-Wide Analysis Tool] afin que les personnes non techniques puissent exécuter la variable [!DNL Upgrade Compatibility Tool] et obtenez une [Rapport HTML](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/run.html?lang=en#output) contenant une liste des problèmes pour chaque fichier spécifiant sa gravité, son code d&#39;erreur et sa description de l&#39;erreur.
+Le [!DNL Upgrade Compatibility Tool] est désormais intégré à la fonction [!DNL Site-Wide Analysis Tool] afin que les personnes non techniques puissent exécuter la variable [!DNL Upgrade Compatibility Tool] et obtenez une [rapport](../upgrade-compatibility-tool/reports.md) contenant une liste de problèmes pour chaque fichier.
 
 Voir [[!DNL Site-Wide Analysis Tool] guide de l’utilisateur](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) pour plus d’informations.
 

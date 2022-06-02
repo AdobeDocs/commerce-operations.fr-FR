@@ -1,21 +1,50 @@
 ---
-title: Exécutez la variable [!DNL Upgrade Compatibility Tool]
+title: '"Exécutez la variable [!DNL Upgrade Compatibility Tool]"'
 description: Procédez comme suit pour exécuter la fonction [!DNL Upgrade Compatibility Tool] sur votre projet Adobe Commerce.
-source-git-commit: 64b061f3b2f93827bfdb904a6faddbd21f4da5e6
+source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Exécutez la variable [!DNL Upgrade Compatibility Tool]
+# Téléchargez la [!DNL Upgrade Compatibility Tool]
 
 {{commerce-only}}
 
-Le [!DNL Upgrade Compatibility Tool] est un outil de ligne de commande qui vérifie une instance personnalisée d’Adobe Commerce par rapport à une version spécifique en analysant tous les modules qui y sont installés. Elle renvoie une liste des problèmes, erreurs et avertissements critiques qui doivent être résolus avant la mise à niveau vers la dernière version d’Adobe Commerce.
+Pour commencer à utiliser la méthode [!DNL Upgrade Compatibility Tool] dans une interface de ligne de commande, téléchargez-la en exécutant la commande suivante :
+
+```bash
+composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
+```
+
+>[!NOTE]
+>
+> Voir [conditions préalables](../upgrade-compatibility-tool/prerequisites.md) pour plus d’informations sur la configuration minimale requise pour utiliser l’outil.
+
+## Exécutez la variable [!DNL Upgrade Compatibility Tool]
+
+Le [!DNL Upgrade Compatibility Tool] est un outil qui vérifie une instance personnalisée Adobe Commerce par rapport à une version spécifique en analysant tous les modules qui y sont installés. Elle renvoie une liste des problèmes, erreurs et avertissements critiques qui doivent être résolus avant la mise à niveau vers la dernière version d’Adobe Commerce.
 
 Le [!DNL Upgrade Compatibility Tool] identifie les problèmes potentiels qui doivent être résolus dans votre code avant de tenter une mise à niveau vers une version plus récente d’Adobe Commerce.
+
+Voir [tutoriel vidéo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en) (06:02) pour en savoir plus sur le [!DNL Upgrade Compatibility Tool].
+
+## Actions recommandées
+
+### Optimiser vos résultats
+
+Le [!DNL Upgrade Compatibility Tool] fournit un rapport contenant les résultats avec tous les problèmes identifiés par défaut sur votre projet. Vous pouvez optimiser les résultats pour vous concentrer sur les problèmes que vous devez corriger pour terminer la mise à niveau :
+
+- Utiliser l’option `--ignore-current-version-compatibility-issues`, qui supprime tous les problèmes critiques, erreurs et avertissements connus par rapport à votre version actuelle d’Adobe Commerce. Il ne fournit des erreurs que par rapport à la version vers laquelle vous essayez de mettre à niveau.
+- Ajoutez la variable `--min-issue-level` , ce paramètre permet de définir le niveau de problème minimum afin de n’établir la priorité que sur les problèmes les plus importants de votre mise à niveau.
+- Si vous souhaitez analyser uniquement un certain fournisseur, module ou même répertoire, vous pouvez également spécifier le chemin d’accès comme option. Exécutez la variable `bin` avec l’option ajoutée `-m`. Cela permet à la variable [!DNL Upgrade Compatibility Tool] pour analyser indépendamment un module spécifique et aide à résoudre les problèmes de mémoire qui peuvent se produire lors de l’exécution de la variable [!DNL Upgrade Compatibility Tool].
+
+### Suivre les bonnes pratiques d’Adobe Commerce
+
+- Évitez d’avoir deux modules portant le même nom.
+- Suivez Adobe Commerce [normes de codage](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html).
 
 ## Utilisez la variable `upgrade:check` command
 
@@ -85,130 +114,6 @@ Disponible `--help` options de la variable `upgrade:check` command :
 - `--ansi, --no-ansi`: Activez la sortie ANSI.
 - `-n, --no-interaction`: Ne posez aucune question interactive lors de l’exécution de la commande.
 - `-v, --vv, --vvv, --verbose`: Augmenter la verbalisation des communications de sortie. 1 pour la sortie normale, 2 pour la sortie en mode verbeux et 3 pour la sortie DEBUG.
-
-### Sortie
-
-Suite à l’analyse effectuée, la variable [!DNL Upgrade Compatibility Tool] exporte un rapport contenant une liste de problèmes pour chaque fichier spécifiant sa gravité, son code d’erreur et sa description de l’erreur.
-
-Voir l’exemple ci-dessous :
-
-```terminal
-File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
-------------------------------------------------------------------
- * [WARNING][1131] Line 23: Extending from class 'Magento\Framework\App\Action\Action' that is @deprecated on version '2.4.2'
- * [ERROR][1429] Line 103: Call method 'Magento\Framework\Api\SearchCriteriaBuilder::addFilters' that is non API on version '2.4.2'
- * [CRITICAL][1110] Line 60: Instantiating class/interface 'Magento\Catalog\Model\ProductRepository' that does not exist on version '2.4.2'
-```
-
-Vérifiez les [Référence des messages d’erreur](error-messages.md) pour plus d’informations.
-
-Le rapport contient également un résumé détaillé qui indique :
-
-- *Version actuelle*: la version actuellement installée.
-- *Version cible*: la version vers laquelle vous souhaitez effectuer la mise à niveau.
-- *Heure d’exécution*: le temps nécessaire à l&#39;analyse pour construire le rapport (mm:ss).
-- *Modules nécessitant une mise à jour*: le pourcentage de modules qui contiennent des problèmes de compatibilité et nécessitent une mise à jour.
-- *Fichiers nécessitant une mise à jour*: le pourcentage de fichiers qui contiennent des problèmes de compatibilité et nécessitent une mise à jour.
-- *Nombre total d’erreurs critiques*: le nombre d’erreurs critiques détectées.
-- *Erreurs totales*: le nombre d’erreurs détectées.
-- *Avertissements totaux*: le nombre d’avertissements trouvés.
-
-Voir l’exemple ci-dessous :
-
-```terminal
- ----------------------------- ------------------
-  Current version               2.4.2
-  Target version                2.4.3
-  Execution time                1m:10s
-  Modules that require update   78.33% (47/60)
-  Files that require update     21.62% (115/532)
-  Total critical issues         35
-  Total errors                  201
-  Total warnings                103
- ----------------------------- ------------------
-```
-
->[!NOTE]
->
->Par défaut, la variable [!DNL Upgrade Compatibility Tool] exporte le rapport dans 2 formats différents : `json` et `html`.
-
-#### JSON
-
-Le fichier JSON contient exactement les mêmes informations que celles affichées en sortie :
-
-- Liste des problèmes identifiés.
-- Résumé de l&#39;analyse.
-
-Pour chaque problème rencontré, le rapport fournit des informations détaillées telles que la gravité et la description du problème.
-
->[!NOTE]
->
->Le chemin par défaut du dossier de sortie est `var/output/[TIME]-results.json`.
-
-Pour exporter ce rapport dans un dossier de sortie différent, exécutez :
-
-```bash
-bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
-```
-
-Où les arguments sont les suivants :
-
-- `<dir>`: Répertoire d’installation d’Adobe Commerce.
-- `[=JSON-OUTPUT-PATH]`: Répertoire de chemin d’accès pour l’exportation `.json` fichier de sortie.
-
->[!NOTE]
->
->Le chemin par défaut du dossier de sortie est `var/output/[TIME]-results.json`.
-
-#### HTML
-
-Le fichier de HTML contient également le résumé de l’analyse et la liste des problèmes identifiés.
-
-![Rapport HTML - Résumé](../../assets/upgrade-guide/uct-html-summary.png)
-
-Vous pouvez facilement parcourir les problèmes identifiés au cours de la [!DNL Upgrade Compatibility Tool] analyse :
-
-![Rapport HTML - Détails](../../assets/upgrade-guide/uct-html-details.png)
-
-Le rapport HTML comprend également quatre graphiques différents :
-
-- **Modules par gravité des problèmes**: Affiche la répartition de la gravité par modules.
-- **Fichiers par gravité des problèmes**: Affiche la répartition de la gravité par fichiers.
-- **Modules classés par nombre total de problèmes**: Affiche les 10 modules les plus compromis en prenant en compte les avertissements, les erreurs et les erreurs critiques.
-- **Modules avec des tailles et des problèmes relatifs**: Plus un module contient de fichiers, plus son cercle est volumineux. Plus un module a de problèmes, plus son cercle rouge apparaît.
-
-Ces graphiques vous permettent d’identifier (en un coup d’oeil) les parties les plus compromises et celles qui nécessitent davantage de travail pour effectuer une mise à niveau.
-
-![Rapport HTML - Diagrammes](../../assets/upgrade-guide/uct-html-diagrams.png)
-
-Vous pourrez filtrer les problèmes affichés sur le rapport en fonction du niveau de problème minimum (par défaut, [AVERTISSEMENT]).
-
-Une liste déroulante dans le coin supérieur droit vous permet de sélectionner une autre option en fonction de vos besoins. La liste des problèmes identifiés sera filtrée en conséquence.
-
-![Rapport HTML - Utilisation de la liste déroulante](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
-
-Veuillez noter que les problèmes avec un niveau de problème inférieur sont supprimés mais que vous recevez une notification afin que vous soyez toujours conscient des problèmes identifiés par module.
-
-Les diagrammes sont également mis à jour en conséquence, à l’exception du `Modules with relative sizes and issues`, qui est généré avec l’événement `min-issue-level` configuration initiale.
-
-Si vous souhaitez afficher des résultats différents, vous devrez exécuter à nouveau la commande en fournissant une autre valeur pour la variable `--min-issue-level` .
-
-![Rapport de HTML - Diagramme de graphique à bulles](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
-
-Pour exporter ce rapport dans un dossier de sortie différent, exécutez :
-
-```bash
-bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
-```
-
-Où les arguments sont les suivants :
-
-- `<dir>`: Répertoire d’installation de {{site.data.var.ee}}.
-- `[=HTML-OUTPUT-PATH]`: Répertoire de chemin d’accès pour l’exportation `.html` fichier de sortie.
-
->[!NOTE]
->
->Le chemin par défaut du dossier de sortie est `var/output/[TIME]-results.html`.
 
 ### Utilisez la variable `--ignore-current-version-compatibility-issues` option
 
@@ -353,26 +258,6 @@ Disponible `--help` options de la variable `graphql:compare` command :
  *   [WARNING] FIELD_CHANGED_KIND: ConfigurableProduct.gender changed type from Int to String.
  *   [WARNING] OPTIONAL_INPUT_FIELD_ADDED: An optional field sku on input type ProductAttributeSortInput was added.
 ```
-
-Vous pouvez exécuter la variable [!DNL Upgrade Compatibility Tool] avec une configuration d’exécution via le module externe PhpStorm. Voir [[!DNL Upgrade Compatibility Tool] Exécuter la configuration](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) pour plus d’informations.
-
-Voir [tutoriel vidéo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) (06:30) pour savoir comment utiliser la variable [!DNL Upgrade Compatibility Tool] avec le module externe PHPStorm Magento.
-
-
-## Actions recommandées
-
-### Optimiser vos résultats
-
-Le [!DNL Upgrade Compatibility Tool] fournit un rapport contenant les résultats avec tous les problèmes identifiés par défaut sur votre projet. Vous pouvez optimiser les résultats pour vous concentrer sur les problèmes que vous devez corriger pour terminer la mise à niveau :
-
-- Utiliser l’option `--ignore-current-version-compatibility-issues`, qui supprime tous les problèmes critiques, erreurs et avertissements connus par rapport à votre version actuelle d’Adobe Commerce. Il ne fournit des erreurs que par rapport à la version vers laquelle vous essayez de mettre à niveau.
-- Ajoutez la variable `--min-issue-level` , ce paramètre permet de définir le niveau de problème minimum afin de n’établir la priorité que sur les problèmes les plus importants de votre mise à niveau.
-- Si vous souhaitez analyser uniquement un certain fournisseur, module ou même répertoire, vous pouvez également spécifier le chemin d’accès comme option. Exécutez la variable `bin` avec l’option ajoutée `-m`. Cela permet à la variable [!DNL Upgrade Compatibility Tool] pour analyser indépendamment un module spécifique et aide à résoudre les problèmes de mémoire qui peuvent se produire lors de l’exécution de la variable [!DNL Upgrade Compatibility Tool].
-
-### Suivre les bonnes pratiques d’Adobe Commerce
-
-- Évitez d’avoir deux modules portant le même nom.
-- Suivez Adobe Commerce [normes de codage](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html).
 
 ## Dépannage
 
