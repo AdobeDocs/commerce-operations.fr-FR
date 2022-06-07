@@ -1,10 +1,10 @@
 ---
 user-guide-title: Guide de mise à niveau
 user-guide-description: Découvrez pourquoi la mise à niveau de votre application Adobe Commerce ou Magento Open Source est si importante et comment planifier et exécuter une mise à niveau avec succès.
-source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
+source-git-commit: fd624a97d74c7f6a9e29223227dae425bb6fa68c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '146'
+ht-degree: 19%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 0%
    - [Appliquer les correctifs](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
    - [Présentation](upgrade-compatibility-tool/overview.md)
-   - [Conditions préalables](upgrade-compatibility-tool/prerequisites.md)
+   - [Configuration requise](upgrade-compatibility-tool/prerequisites.md)
    - Utilisez la variable [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
       - [Exécution de l’outil dans une interface de ligne de commande](upgrade-compatibility-tool/run.md)
       - [Intégrez à la variable [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)

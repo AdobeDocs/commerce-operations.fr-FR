@@ -1,7 +1,7 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] reports"'
 description: Procédez comme suit pour exécuter la fonction [!DNL Upgrade Compatibility Tool] sur votre projet Adobe Commerce.
-source-git-commit: e539824b336978debd6e6adc538cd8bad367eff1
+source-git-commit: 7ec999f9122eb0707ac6c37b7b49f9c423945318
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -13,21 +13,23 @@ ht-degree: 0%
 
 {{commerce-only}}
 
-L&#39;analyse a permis de déterminer si la variable [!DNL Upgrade Compatibility Tool] exporte un rapport contenant une liste de problèmes pour chaque fichier spécifiant sa gravité, son code d’erreur et sa description de l’erreur.
+L&#39;analyse a permis de déterminer si la variable [!DNL Upgrade Compatibility Tool] Vous pouvez exporter un rapport contenant une liste de problèmes pour chaque fichier spécifiant sa gravité, son code d’erreur et sa description des erreurs. Le [!DNL Upgrade Compatibility Tool] exporte le rapport dans deux formats différents :
 
-Voir l’exemple ci-dessous :
+- A [Fichier JSON](reports.md#json-file).
+- Un [Rapport HTML](reports.md#html-report).
+
+Consultez l’exemple d’interface de ligne de commande suivant d’un rapport :
 
 ```terminal
 File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 ------------------------------------------------------------------
- * [WARNING][1131] Line 23: Extending from class 'Magento\Framework\App\Action\Action' that is @deprecated on version '2.4.2'
- * [ERROR][1429] Line 103: Call method 'Magento\Framework\Api\SearchCriteriaBuilder::addFilters' that is non API on version '2.4.2'
- * [CRITICAL][1110] Line 60: Instantiating class/interface 'Magento\Catalog\Model\ProductRepository' that does not exist on version '2.4.2'
+ * [WARNING][1131] Line 10: Extending from class 'Magento\Framework\App\Action\Action' that is @deprecated on version '2.4.4'
+ * [ERROR][1328] Line 10: Implemented interface 'Magento\Framework\App\Action\HttpGetActionInterface' that is non API on version '2.4.4'
 ```
 
-Vérifiez les [Référence des messages d’erreur](../upgrade-compatibility-tool/error-messages.md) pour plus d’informations.
+Vérifiez les [Référence des messages d’erreur](../upgrade-compatibility-tool/error-messages.md) rubrique pour plus d’informations sur les différentes erreurs que ce rapport peut générer.
 
-Le rapport contient également un résumé détaillé qui indique :
+Ce rapport contient également un résumé détaillé qui indique :
 
 - *Version actuelle*: la version actuellement installée.
 - *Version cible*: la version vers laquelle vous souhaitez effectuer la mise à niveau.
@@ -38,35 +40,32 @@ Le rapport contient également un résumé détaillé qui indique :
 - *Erreurs totales*: le nombre d’erreurs détectées.
 - *Avertissements totaux*: le nombre d’avertissements trouvés.
 
-Voir l’exemple ci-dessous :
+Voir l’exemple d’interface de ligne de commande suivant :
 
 ```terminal
- ----------------------------- ------------------
-  Current version               2.4.2
-  Target version                2.4.3
-  Execution time                1m:10s
-  Modules that require update   78.33% (47/60)
-  Files that require update     21.62% (115/532)
-  Total critical issues         35
-  Total errors                  201
-  Total warnings                103
- ----------------------------- ------------------
+ ----------------------------- ----------------- 
+  Current version               2.4.1            
+  Target version                2.4.4            
+  Execution time                1m:8s            
+  Modules that require update   71.67% (43/60)   
+  Files that require update     18.05% (96/532)  
+  Total critical issues         24               
+  Total errors                  159              
+  Total warnings                53               
+  Memory peak usage             902.00 MB        
+ ----------------------------- ----------------- 
 ```
-
->[!NOTE]
->
->Par défaut, la variable [!DNL Upgrade Compatibility Tool] exporte le rapport dans 2 formats différents : `json` et `html`.
 
 ## Fichier JSON
 
-Le fichier JSON contient exactement les mêmes informations que celles affichées en sortie :
+Vous pouvez obtenir la sortie du fichier JSON lors de l’exécution de la variable [!DNL Upgrade Compatibility Tool] sur une interface de ligne de commande. Le `JSON` contient exactement les mêmes informations que celles affichées dans la variable [!DNL Upgrade Compatibility Tool] output :
 
 - Liste des problèmes identifiés.
-- Résumé de l&#39;analyse.
+- Résumé de l’analyse.
 
 Pour chaque problème rencontré, le rapport fournit des informations détaillées telles que la gravité et la description du problème.
 
-Pour exporter ce rapport dans un dossier de sortie différent, exécutez :
+Pour exporter ceci `JSON` dans un autre dossier de sortie :
 
 ```bash
 bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
@@ -75,21 +74,32 @@ bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
 Où les arguments sont les suivants :
 
 - `<dir>`: Répertoire d’installation d’Adobe Commerce.
-- `[=JSON-OUTPUT-PATH]`: Répertoire de chemin d’accès pour l’exportation `.json` fichier de sortie.
+- `[=JSON-OUTPUT-PATH]`: Répertoire de chemin d’accès pour l’exportation `JSON` fichier de sortie.
 
 >[!NOTE]
 >
->Le chemin par défaut du dossier de sortie est `var/output/[TIME]-results.json`.
+> Le chemin par défaut du dossier de sortie est `var/output/[TIME]-results.json`.
 
 ## Rapport HTML
 
-Le fichier de HTML contient également le résumé de l’analyse et la liste des problèmes identifiés. Vous pouvez obtenir le rapport HTML lors de l’exécution de l’outil sur une interface de ligne de commande ou via le [!DNL Site-Wide Analysis Tool].
+Vous pouvez obtenir le rapport HTML lors de l’exécution de l’outil sur une interface de ligne de commande ou via le [!DNL Site-Wide Analysis Tool]. Le rapport HTML contient également :
+
+- Liste des problèmes identifiés.
+- Résumé de l’analyse.
 
 ![Rapport HTML - Résumé](../../assets/upgrade-guide/uct-html-summary.png)
 
-Vous pouvez facilement parcourir les problèmes identifiés au cours de la [!DNL Upgrade Compatibility Tool] analyse :
+Vous pouvez facilement parcourir les problèmes identifiés au cours de la [!DNL Upgrade Compatibility Tool] analyse.
 
-![Rapport HTML - Détails](../../assets/upgrade-guide/uct-html-details.png)
+Vous pouvez filtrer les problèmes affichés sur le rapport en fonction du niveau de problème minimum (la valeur par défaut est `WARNING`).
+
+Une liste déroulante dans le coin supérieur droit permet de sélectionner un autre niveau. La liste des problèmes identifiés est filtrée en conséquence.
+
+![Rapport HTML - Utilisation de la liste déroulante](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
+
+>[!NOTE]
+>
+> Les problèmes avec un niveau de problème plus faible sont supprimés, mais vous recevez une notification pour que vous soyez toujours conscient des problèmes identifiés par module.
 
 Le rapport HTML comprend également quatre graphiques différents :
 
@@ -98,25 +108,17 @@ Le rapport HTML comprend également quatre graphiques différents :
 - **Modules classés par nombre total de problèmes**: Affiche les 10 modules les plus compromis en prenant en compte les avertissements, les erreurs et les erreurs critiques.
 - **Modules avec des tailles et des problèmes relatifs**: Plus un module contient de fichiers, plus son cercle est volumineux. Plus un module a de problèmes, plus son cercle rouge apparaît.
 
-Ces graphiques vous permettent d’identifier (en un coup d’oeil) les parties les plus compromises et celles qui nécessitent davantage de travail pour effectuer une mise à niveau.
+Ces graphiques vous permettent d’identifier les modules les plus compromis et ceux qui nécessitent davantage de travail pour effectuer une mise à niveau.
 
 ![Rapport HTML - Diagrammes](../../assets/upgrade-guide/uct-html-diagrams.png)
 
-Vous pouvez filtrer les problèmes affichés sur le rapport en fonction du niveau de problème minimum. La valeur par défaut est `WARNING`.
+Les diagrammes des rapports de HTML sont également mis à jour en conséquence, à l’exception du `Modules with relative sizes and issues`, qui est généré avec l’événement `min-issue-level` qui a été initialement mis en place.
 
-Une liste déroulante dans le coin supérieur droit vous permet de sélectionner une autre option en fonction de vos besoins. La liste des problèmes identifiés sera filtrée en conséquence.
-
-![Rapport HTML - Utilisation de la liste déroulante](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
-
-Veuillez noter que les problèmes avec un niveau de problème inférieur sont supprimés mais que vous recevez une notification afin que vous soyez toujours conscient des problèmes identifiés par module.
-
-Les diagrammes sont également mis à jour en conséquence, à l’exception du `Modules with relative sizes and issues`, qui est généré avec l’événement `min-issue-level` configuration initiale.
-
-Si vous souhaitez afficher des résultats différents, vous devrez exécuter à nouveau la commande en fournissant une autre valeur pour la variable `--min-issue-level` .
+Si vous souhaitez afficher des résultats différents pour la variable `Modules with relative sizes and issues` diagramme, vous devez exécuter à nouveau la commande en fournissant une autre valeur pour la variable `--min-issue-level` .
 
 ![Rapport de HTML - Diagramme de graphique à bulles](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
 
-Pour exporter ce rapport dans un dossier de sortie différent, exécutez :
+Pour exporter ce rapport de HTML dans un dossier de sortie différent :
 
 ```bash
 bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]

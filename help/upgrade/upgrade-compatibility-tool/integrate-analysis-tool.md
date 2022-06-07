@@ -1,7 +1,7 @@
 ---
 title: '"Intégrez la variable [!DNL Site-Wide Analysis Tool]"'
 description: Procédez comme suit pour récupérer la variable [!DNL Upgrade Compatibility Tool] du rapport [!DNL Site-Wide Analysis Tool] tableau de bord de votre projet Adobe Commerce.
-source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
+source-git-commit: c70e431035f0e0b2c495715563faf6be46aa514e
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -31,4 +31,4 @@ Une fois l’analyse terminée, les résultats de haut niveau s’affichent dans
 
 ![Widget UCT SWAT - Résultats](../../assets/upgrade-guide/uct-swat-results.png)
 
-Cliquez sur **[!UICONTROL Download Report]** pour récupérer la variable [!DNL Upgrade Compatibility Tool] HTML de rapports et consulter les détails.
+Cliquez sur **[!UICONTROL Download Report]** pour récupérer la variable [!DNL Upgrade Compatibility Tool] [Rapport HTML](../upgrade-compatibility-tool/reports.md#html-report) et passez en revue les détails.
