@@ -1,9 +1,9 @@
 ---
 title: '"Intégrez la variable [!DNL Site-Wide Analysis Tool]"'
 description: Procédez comme suit pour récupérer la variable [!DNL Upgrade Compatibility Tool] du rapport [!DNL Site-Wide Analysis Tool] tableau de bord de votre projet Adobe Commerce.
-source-git-commit: c70e431035f0e0b2c495715563faf6be46aa514e
+source-git-commit: 0d4ccc8c2e1a470b5fb3a7d59e81230e8986c257
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '171'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Le [!DNL Upgrade Compatibility Tool] est désormais intégré à la fonction [!D
 
 Voir [[!DNL Site-Wide Analysis Tool] guide de l’utilisateur](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) pour plus d’informations.
 
-## Exécutez la variable [!DNL Upgrade Compatibility Tool] de SWAT
+## Exécutez la variable [!DNL Upgrade Compatibility Tool] de la [!DNL Site-Wide Analysis Tool]
 
 Accédez au [!DNL Site-Wide Analysis Tool] tableau de bord de votre projet et recherchez la variable [!DNL Upgrade Compatibility Tool] widget.
 
@@ -32,3 +32,5 @@ Une fois l’analyse terminée, les résultats de haut niveau s’affichent dans
 ![Widget UCT SWAT - Résultats](../../assets/upgrade-guide/uct-swat-results.png)
 
 Cliquez sur **[!UICONTROL Download Report]** pour récupérer la variable [!DNL Upgrade Compatibility Tool] [Rapport HTML](../upgrade-compatibility-tool/reports.md#html-report) et passez en revue les détails.
+
+Lors de l’exécution de la variable [!DNL Upgrade Compatibility Tool] via la [!DNL Site-Wide Analysis Tool] le rapport présente les résultats en comparant la version de votre projet à la version la plus récente publiée.
