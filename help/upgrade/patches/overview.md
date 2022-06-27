@@ -1,9 +1,9 @@
 ---
 title: Fonctionnement des correctifs
 description: Découvrez les différents types de correctifs pour Adobe Commerce et Magento Open Source et leur fonctionnement.
-source-git-commit: 06ac3169a5e3813e4f50246f54f91998e14b5985
+source-git-commit: 45a44d98f149b4b9a1fbb4ac0bcea3eb372f49a8
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Les fichiers de correctif (ou diff) sont des fichiers texte qui font remarquer :
 - Numéro de la ligne à modifier et nombre de lignes à modifier.
 - Le nouveau code à échanger.
 
-Lorsque la variable [correctif](https://en.wikipedia.org/wiki/Patch_(Unix)) est exécuté, ce fichier est lu et les modifications spécifiées sont apportées au(x) fichier(s).
+Lorsque le programme de correctifs est exécuté, ce fichier est lu et les modifications spécifiées sont apportées au ou aux fichiers.
 
 Il existe trois types de correctifs :
 
