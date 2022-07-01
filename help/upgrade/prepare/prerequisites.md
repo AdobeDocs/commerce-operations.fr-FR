@@ -1,7 +1,7 @@
 ---
 title: Conditions préalables complètes
 description: Préparez votre projet Adobe Commerce ou Magento Open Source à une mise à niveau en suivant les étapes préalables requises.
-source-git-commit: ea5de44ab40b873fa30393359dd714534bd789e3
+source-git-commit: 0729e84adabcded6d50cf28a7525b97fd50d45f5
 workflow-type: tm+mt
 source-wordcount: '1477'
 ht-degree: 0%
@@ -176,7 +176,7 @@ Pour définir la variable d’environnement :
 1. Définissez la variable :
 
    ```bash
-   export DATA_CONVERTER_BATCH_SIZE 100000
+   export DATA_CONVERTER_BATCH_SIZE=100000
    ```
 
    >[!NOTE]
