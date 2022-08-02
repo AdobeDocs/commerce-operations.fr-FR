@@ -1,0 +1,30 @@
+---
+title: Présentation des files de messages
+description: Découvrez la structure de la file d’attente des messages et son fonctionnement avec l’application Adobe Commerce et Magento Open Source.
+source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 0%
+
+---
+
+
+# Présentation des files d’attente de messages
+
+Le framework de file d’attente des messages (MQF) est un système qui permet d’utiliser une [module](https://glossary.magento.com/module) pour publier des messages dans les files d’attente. Il définit également les consommateurs qui recevront les messages de manière asynchrone. Le MQF utilise [RabbitMQ](http://www.rabbitmq.com) en tant que courtier de messagerie, qui fournit une plateforme évolutive pour l’envoi et la réception de messages. Il comprend également un mécanisme de stockage des messages non diffusés. RabbitMQ est basé sur la spécification AMQP (Advanced Message Queuing Protocol) 0.9.1.
+
+Le diagramme suivant illustre la structure de la file d’attente des messages :
+
+![Structure de la file d’attente des messages](../../assets/configuration/mq-framework.png)
+
+- A [publisher](https://glossary.magento.com/publisher-subscriber-pattern) est un composant qui envoie des messages à un échange. Il connaît l’échange vers lequel publier et le format des messages qu’il envoie.
+
+- Un échange reçoit les messages des éditeurs et les envoie aux files d’attente. Bien que RabbitMQ prenne en charge plusieurs types d’échanges, Commerce n’utilise que les échanges de rubrique. Une rubrique comprend une clé de routage, qui contient des chaînes de texte séparées par des points. Le format du nom d’une rubrique est le suivant : `string1.string2`: par exemple, `customer.created` ou `customer.sent.email`.
+
+   Le courtier vous permet d’utiliser des caractères génériques lors de la définition de règles pour le transfert de messages. Vous pouvez utiliser un astérisque (`*`) à remplacer. _one_ Chaîne ou signe dièse (`#`) pour remplacer 0 ou plusieurs chaînes. Par exemple : `customer.*` filtre sur `customer.create` et `customer.delete`, mais pas `customer.sent.email`. Cependant `customer.#` filtre sur `customer.create`,  `customer.delete`, et `customer.sent.email`.
+
+- Une file d’attente est une mémoire tampon qui stocke les messages.
+
+- Un consommateur reçoit des messages. Il sait quelle file d&#39;attente utiliser. Il peut mapper les processeurs du message à une file d’attente spécifique.
+
+Un système de file d’attente de messages de base peut également être configuré sans utiliser RabbitMQ. Dans ce système, un MySQL [adapter](https://glossary.magento.com/adapter) stocke les messages dans la base de données. Trois tables de base de données (`queue`, `queue_message`, et `queue_message_status`) gérer la charge de travail de la file d’attente des messages. Les tâches Cron permettent aux consommateurs de recevoir des messages. Cette solution n’est pas très évolutive. RabbitMQ doit être utilisé dans la mesure du possible.

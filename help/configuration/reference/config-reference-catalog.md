@@ -1,0 +1,216 @@
+---
+title: Référence sur les chemins de configuration du catalogue
+description: Consultez la liste des valeurs de configuration du catalogue.
+source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 0%
+
+---
+
+
+# Référence sur les chemins de configuration du catalogue
+
+Cette section répertorie les noms de variable et les chemins de configuration disponibles pour les options dans l’Admin sous **Magasins** > Paramètres > **Configuration** > **Catalogue**.
+
+Le [`magento app:config:dump` command](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle de code source. Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables). Cette rubrique fonctionne _not_ list [valeurs sensibles et spécifiques au système](config-reference-sens.md).
+
+## Chemins du catalogue
+
+Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Catalogue**.
+
+| Nom | Chemin de configuration | Commerce uniquement ? |
+|--------------|--------------|--------------|
+| Masque pour le SKU | `catalog/fields_masks/sku` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Masque pour le métamodèle | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Masque pour les mots-clés de métadonnées | `catalog/fields_masks/meta_keyword` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Masque pour la description des métadonnées | `catalog/fields_masks/meta_description` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Mode Liste | `catalog/frontend/list_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Produits par page sur les valeurs autorisées de la grille | `catalog/frontend/grid_per_page_values` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Produits par page sur la valeur par défaut de la grille | `catalog/frontend/grid_per_page` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Produits par page sur la liste des valeurs autorisées | `catalog/frontend/list_per_page_values` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Produits par page sur la valeur par défaut de la liste | `catalog/frontend/list_per_page` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Tri par liste de produits | `catalog/frontend/default_sort_by` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Autoriser tous les produits par page | `catalog/frontend/list_allow_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Utiliser la catégorie Catalogue plat | `catalog/frontend/flat_catalog_category` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Utiliser le produit Catalogue plat | `catalog/frontend/flat_catalog_product` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Nuancier par produit | `catalog/frontend/swatches_per_product` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Autoriser les invités à écrire des révisions | `catalog/review/allow_guest` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Autoriser les alertes lors des changements de prix des produits | `catalog/productalert/allow_price` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Modèle de courrier électronique d’alerte de prix | `catalog/productalert/email_price_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Autoriser les alertes lorsque le produit revient en stock | `catalog/productalert/allow_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Modèle d’email d’alerte Stock | `catalog/productalert/email_stock_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Envoyer un email d&#39;alerte | `catalog/productalert/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Fréquence | `catalog/productalert_cron/frequency` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Heure de début | `catalog/productalert_cron/time` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Error Email Sender | `catalog/productalert_cron/error_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Modèle de courrier électronique d’erreur | `catalog/productalert_cron/error_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Afficher pour actuel | `catalog/recently_products/scope` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Nombre de produits récemment consultés par défaut | `catalog/recently_products/viewed_count` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Nombre de produits récemment comparés par défaut | `catalog/recently_products/compared_count` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Vidéo de démarrage automatique | `catalog/product_video/play_if_base` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Afficher la vidéo associée | `catalog/product_video/show_related` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Redémarrage automatique de la vidéo | `catalog/product_video/video_auto_restart` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Portée du prix du catalogue | `catalog/price/scope` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Prix de produit par défaut | `catalog/price/default_product_price` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Afficher le nombre de produits | `catalog/layered_navigation/display_product_count` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Calcul de l’étape de navigation par prix | `catalog/layered_navigation/price_range_calculation` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Étape de navigation par défaut des prix | `catalog/layered_navigation/price_range_step` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Afficher l&#39;intervalle de prix comme un prix | `catalog/layered_navigation/one_price_interval` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Nombre maximal d’intervalles de prix | `catalog/layered_navigation/price_range_max_intervals` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Limite de la division d&#39;intervalle | `catalog/layered_navigation/interval_division_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Profondeur maximale | `catalog/navigation/max_depth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Longueur minimale de requête | `catalog/search/min_query_length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Longueur maximale de la requête | `catalog/search/max_query_length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Moteur de recherche | `catalog/search/engine` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Délai d’expiration du serveur Solr | `catalog/search/solr_server_timeout` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Mode d’indexation | `catalog/search/engine_commit_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Activation des suggestions de recherche | `catalog/search/search_suggestion_enabled` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Nombre de suggestions de recherche | `catalog/search/search_suggestion_count` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Afficher le nombre de résultats pour chaque suggestion | `catalog/search/search_suggestion_count_results_enabled` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activer Search Recommendations | `catalog/search/search_recommendations_enabled` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Décompte Recommendations de recherche | `catalog/search/search_recommendations_count` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Afficher le nombre de résultats pour chaque recommandation | `catalog/search/search_recommendations_count_results_enabled` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Termes minimum à faire correspondre | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Termes de recherche populaires | `catalog/seo/search_terms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Suffixe d’URL de produit | `catalog/seo/product_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Suffixe d’URL de catégorie | `catalog/seo/category_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Utilisation du chemin d’accès aux catégories pour les URL de produit | `catalog/seo/product_use_categories` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Créer une redirection permanente pour les URL si la clé d’URL est modifiée | `catalog/seo/save_rewrites_history` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Séparateur de titre de page | `catalog/seo/title_separator` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Utilisation D’Une Métadonnées De Lien Canonique Pour Les Catégories | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Utilisation D’Une Métadonnées De Lien Canonique Pour Les Produits | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Activer | `catalog/magento_catalogpermissions/enabled` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Autoriser la catégorie de navigation | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Groupes de clients | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Page d’entrée | `catalog/magento_catalogpermissions/restricted_landing_page` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Afficher les prix des produits | `catalog/magento_catalogpermissions/grant_catalog_product_price` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Groupes de clients | `catalog/magento_catalogpermissions/grant_catalog_product_price_groups` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Autoriser l’ajout au panier | `catalog/magento_catalogpermissions/grant_checkout_items` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Groupes de clients | `catalog/magento_catalogpermissions/grant_checkout_items_groups` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Interdire la recherche catalogue par | `catalog/magento_catalogpermissions/deny_catalog_search` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| État de l’élément de commande pour activer les téléchargements | `catalog/downloadable/order_item_status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Nombre maximal de téléchargements par défaut | `catalog/downloadable/downloads_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Partager | `catalog/downloadable/shareable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Exemple de titre par défaut | `catalog/downloadable/samples_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Titre du lien par défaut | `catalog/downloadable/links_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Ouvrir les liens dans une nouvelle fenêtre | `catalog/downloadable/links_target_new_window` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Utiliser la disposition du contenu | `catalog/downloadable/content_disposition` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Désactiver le passage en caisse des invités si le panier contient des éléments téléchargeables | `catalog/downloadable/disable_guest_checkout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Utilisation du calendrier JavaScript | `catalog/custom_options/use_calendar` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Ordre des champs de date | `catalog/custom_options/date_fields_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Format d’heure | `catalog/custom_options/time_format` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Période | `catalog/custom_options/year_range` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Activation de la fonctionnalité d’événements de catalogue | `catalog/magento_catalogevent/enabled` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activation du widget d’événement de catalogue sur Storefront | `catalog/magento_catalogevent/lister_output` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Nombre d’événements à afficher dans le widget du curseur d’événement | `catalog/magento_catalogevent/lister_widget_limit` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Événements à faire défiler par clic dans le widget du curseur d’événement | `catalog/magento_catalogevent/lister_widget_scroll` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Nombre maximal de produits dans la liste de produits associés | `catalog/magento_targetrule/related_position_limit` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Afficher les produits associés | `catalog/magento_targetrule/related_position_behavior` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Mode de rotation pour les produits dans la liste de produits associés | `catalog/magento_targetrule/related_rotation_mode` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Nombre maximal de produits dans la liste de produits en vente croisée | `catalog/magento_targetrule/crosssell_position_limit` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Afficher les produits en vente croisée | `catalog/magento_targetrule/crosssell_position_behavior` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Mode de rotation des produits dans la liste de produits en vente croisée | `catalog/magento_targetrule/crosssell_rotation_mode` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Nombre maximal de produits dans la liste de produits de vente incitative | `catalog/magento_targetrule/upsell_position_limit` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Afficher les produits de mise à niveau | `catalog/magento_targetrule/upsell_position_behavior` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Mode de rotation des produits dans la liste de produits de vente incitative | `catalog/magento_targetrule/upsell_rotation_mode` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+
+{style=&quot;table-layout:auto&quot;}
+
+## Chemins d’accès du stock
+
+Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Inventaire**.
+
+| Nom | Chemin de configuration | Commerce uniquement ? |
+|--------------|--------------|--------------|
+| Diminuer le stock lorsque la commande est passée | `cataloginventory/options/can_subtract` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Définir l’état des éléments sur En stock lorsque la commande est annulée | `cataloginventory/options/can_back_in_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Afficher les produits en rupture de stock | `cataloginventory/options/show_out_of_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Seuil gauche seulement X | `cataloginventory/options/stock_threshold_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Afficher la disponibilité des produits en stock sur Storefront | `cataloginventory/options/display_product_stock_status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Synchronisation avec le catalogue | `cataloginventory/options/synchronize_with_catalog` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Gérer Stock | `cataloginventory/item_options/manage_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Arrière-plan | `cataloginventory/item_options/backorders` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Utiliser la mise à jour différée des stocks | `cataloginventory/item_options/use_deferred_stock_update` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Quantité maximale autorisée dans le panier | `cataloginventory/item_options/max_sale_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Seuil hors stock | `cataloginventory/item_options/min_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Quantité minimale autorisée dans le panier | `cataloginventory/item_options/min_sale_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Inclure la notification pour la quantité ci-dessous | `cataloginventory/item_options/notify_stock_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Activer les incréments de qualité | `cataloginventory/item_options/enable_qty_increments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Incréments de qualité | `cataloginventory/item_options/qty_increments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Renvoyer automatiquement l’article de la note de crédit à Stock | `cataloginventory/item_options/auto_return` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Exécution asynchrone | `cataloginventory/bulk_operations/async` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Taille de lot asynchrone | `cataloginventory/bulk_operations/batch_size` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Fournisseur | `cataloginventory/source_selection_distance_based/provider` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Mode de calcul | `cataloginventory/source_selection_distance_based_google/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Valeur | `cataloginventory/source_selection_distance_based_google/value` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+
+{style=&quot;table-layout:auto&quot;}
+
+## Chemins de marchandisage visuel
+
+Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Marchandisage visuel**.
+
+| Nom | Chemin de configuration | Commerce uniquement ? |
+|--------------|--------------|--------------|
+| Attributs visibles pour les règles de catégorie | `visualmerchandiser/options/smart_attributes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Seuil minimum de stock | `visualmerchandiser/options/minimum_stock_threshold` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Code d’attribut de couleur | `visualmerchandiser/options/color_attribute_code` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Ordre des couleurs | `visualmerchandiser/options/color_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+
+{style=&quot;table-layout:auto&quot;}
+
+## Chemins du plan de site XML
+
+Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Plan du site XML**.
+
+| Nom | Chemin de configuration | Commerce uniquement ? |
+|--------------|--------------|--------------|
+| Fréquence | `sitemap/category/changefreq` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Priorité | `sitemap/category/priority` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Fréquence | `sitemap/product/changefreq` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Priorité | `sitemap/product/priority` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Ajout d’images dans le plan du site | `sitemap/product/image_include` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Fréquence | `sitemap/page/changefreq` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Priorité | `sitemap/page/priority` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Activé | `sitemap/generate/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Heure de début | `sitemap/generate/time` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Fréquence | `sitemap/generate/frequency` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Error Email Sender | `sitemap/generate/error_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Modèle de courrier électronique d’erreur | `sitemap/generate/error_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Nombre maximal d’URL par fichier | `sitemap/limit/max_lines` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Taille maximale du fichier | `sitemap/limit/max_file_size` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Activation de l’envoi à Robots.txt | `sitemap/search_engines/submission_robots` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+
+{style=&quot;table-layout:auto&quot;}
+
+## Chemins des flux RSS
+
+Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Flux RSS**.
+
+| Nom | Chemin de configuration | Commerce uniquement ? |
+|--------------|--------------|--------------|
+| Activer RSS | `rss/config/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Activer RSS | `rss/wishlist/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Nouveaux produits | `rss/catalog/new` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Produits spéciaux | `rss/catalog/special` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Coupons/Remises | `rss/catalog/discounts` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Catégorie de niveau supérieur | `rss/catalog/category` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Notification d’état de la commande client | `rss/order/status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+
+{style=&quot;table-layout:auto&quot;}
+
+## Envoyer un courrier électronique à des chemins d’ami
+
+Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Envoyer un email à un ami**.
+
+| Nom | Chemin de configuration | Commerce uniquement ? |
+|--------------|--------------|--------------|
+| Activé | `sendfriend/email/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Sélectionner un modèle de courrier électronique | `sendfriend/email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Autoriser les invités | `sendfriend/email/allow_guest` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Nombre max. de destinataires | `sendfriend/email/max_recipients` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Nombre maximal de produits envoyés en 1 heure | `sendfriend/email/max_per_hour` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Limiter l’envoi par | `sendfriend/email/check_by` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+
+{style=&quot;table-layout:auto&quot;}
