@@ -15,7 +15,7 @@ Cette rubrique explique comment un développeur contributeur peut mettre à jour
 
 Pour effectuer une mise à niveau si vous êtes un développeur contributeur :
 
-{{$include /help/_includes/server-login.md}
+{{$include /help/_includes/server-login.md}}
 
 1. Enregistrez les modifications apportées au `composer.json` car les étapes suivantes l’écrasent.
 

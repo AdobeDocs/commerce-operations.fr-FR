@@ -3,8 +3,8 @@ title: Gestion des modules et des extensions (développeur)
 description: Gérez les modules et extensions Adobe Commerce et Magento Open Source à l’aide de l’interface de ligne de commande et du gestionnaire de modules du compositeur.
 source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ Contribution des développeurs à la mise à niveau des modules et extensions en
 
 Vous pouvez ajouter une `require` à la section `composer.json` ou vous pouvez utiliser la variable `composer require` comme suit :
 
-{{$include /help/_includes/server-login.md}
+{{$include /help/_includes/server-login.md}}
 
 Vous disposez des options suivantes :
 
