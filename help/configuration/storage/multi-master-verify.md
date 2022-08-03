@@ -1,7 +1,7 @@
 ---
 title: Vérifier la base de données partagée
 description: Découvrez comment vérifier qu’une configuration de base de données de partage Commerce fonctionne correctement.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Vérifier la base de données partagée
 
-{#ee-only}
+{{ee-only}}
 
 {{deprecate-split-db}}
 
