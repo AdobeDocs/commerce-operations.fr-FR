@@ -3,7 +3,7 @@ title: '"[!DNL Upgrade Compatibility Tool] conditions requises"'
 description: 'Vérifiez que votre système respecte la configuration requise pour exécuter la variable [!DNL Upgrade Compatibility Tool] dans une interface de ligne de commande pour votre projet Adobe Commerce. '
 source-git-commit: 7ec999f9122eb0707ac6c37b7b49f9c423945318
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

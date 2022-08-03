@@ -3,7 +3,7 @@ title: '"[!DNL Upgrade Compatibility Tool] Outils connexes"'
 description: En savoir plus sur les outils associés à la variable [!DNL Upgrade Compatibility Tool] sur votre projet Adobe Commerce.
 source-git-commit: 5ff08d231269ea0bcb69f8c80aa546b171a5e4a0
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
