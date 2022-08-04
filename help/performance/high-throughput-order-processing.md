@@ -1,9 +1,9 @@
 ---
 title: Traitement des commandes à haut débit
 description: Optimisez l’emplacement des commandes et l’expérience de passage en caisse pour votre déploiement Adobe Commerce ou Magento Open Source.
-source-git-commit: c4c52baa9e04a4e935ccc29fcce2ac2745a454ee
+source-git-commit: 4ce6f01ab6c3e0bb408657727b65bcb2f84dd954
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -175,7 +175,7 @@ Lorsque cette option est désactivée, la vérification de stock ne se produit p
 [Install extensions]: https://devdocs.magento.com/extensions/install/
 [cloud-extensions]: https://devdocs.magento.com/cloud/howtos/install-components.html
 
-[mrg]: https://devdocs.magento.com/guides/v2.4//mrg/intro.html
+[mrg]: https://developer.adobe.com/commerce/php/module-reference/
 [AsyncOrder]: https://devdocs.magento.com/guides/v2.4/mrg/module-async-order.html
 [DeferredTotalCalculating]: https://devdocs.magento.com/guides/v2.4/mrg/module-deferred-total-calculating.html
 [NegotiableQuoteAsyncOrder]: https://devdocs.magento.com/guides/v2.4/mrg/module-negotiable-quote-async-order.html
