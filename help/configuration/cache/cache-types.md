@@ -1,9 +1,9 @@
 ---
 title: Types de cache
 description: Associez les frondes du cache aux types de cache.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -67,10 +67,11 @@ Vous pouvez spécifier les options de configuration du cache front-end et backen
 
 where
 
-- `<frontend_type>` est le type de cache frontal de bas niveau. Spécifiez le nom d’une classe compatible avec [Zend\Cache\Core](https://framework.zend.com/apidoc/1.7/Zend_Cache/Zend_Cache_Core.html).
-
-   Si vous omettez `<frontend_type>`, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) est utilisée.
+- `<frontend_type>` est le type de cache frontal de bas niveau. Spécifiez le nom d’une classe compatible avec `Zend\Cache\Core`.
+Si vous omettez `<frontend_type>`, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) est utilisée.
 
 - `<frontend_option>`, `<frontend_option_value>` sont le nom et la valeur des options que la structure de commerce transmet en tant que tableau associatif au cache frontal lors de sa création.
-- `<backend_type>` est le type de cache principal de bas niveau. Spécifiez le nom d’une classe compatible avec [Zend_Cache_Backend](https://framework.zend.com/apidoc/1.7/Zend_Cache/Zend_Cache_Backend/Zend_Cache_Backend.html) et qui mettent en oeuvre [Zend_Cache_Backend_Interface](https://framework.zend.com/apidoc/1.6/Zend_Cache/Zend_Cache_Backend/Zend_Cache_Backend_Interface.html).
+- `<backend_type>` est le type de cache principal de bas niveau. Spécifiez le nom d’une classe compatible avec `Zend_Cache_Backend` et qui mettent en oeuvre `Zend_Cache_Backend_Interface`.
 - `<backend_option>` et `<backend_option_value>` sont le nom et la valeur des options que la structure de commerce transmet en tant que tableau associatif pour mettre en cache le serveur principal lors de sa création.
+
+Voir [Documentation de Laminas](https://docs.laminas.dev/) pour obtenir les informations les plus récentes sur Zend.

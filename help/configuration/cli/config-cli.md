@@ -1,9 +1,9 @@
 ---
 title: Outil de ligne de commande
 description: Utilisez l’outil de ligne de commande Commerce pour exécuter les tâches d’installation et de configuration.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Autres avantages :
 - L’interface en ligne de commande est extensible, de sorte que les développeurs tiers puissent y &quot;se connecter&quot;. Cela permet également d’éliminer la courbe d’apprentissage des utilisateurs.
 - Les commandes des modules désactivés ne s’affichent pas.
 
-Cette rubrique aborde la configuration des logiciels Adobe Commerce et Magento Open Source à l’aide de l’interface de ligne de commande. Pour plus d’informations sur l’installation de Commerce, voir [Présentation de l’installation](https://devdocs.magento.com/guides/2.4/install-gde/bk-install-guide.html) dans le _Guide d’installation_.
+Cette rubrique aborde la configuration des logiciels Adobe Commerce et Magento Open Source à l’aide de l’interface de ligne de commande. Pour plus d’informations sur l’installation de Commerce, voir [Flux d’installation](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) dans le _Guide d’installation_.
 
 ## Conditions préalables
 

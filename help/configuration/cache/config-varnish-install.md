@@ -1,9 +1,9 @@
 ---
 title: Installer le vernis
 description: Consultez les conseils sur l’installation de vernis.
-source-git-commit: 688db9fcc9cd196d1560e49719b03ef32d13870d
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 L&#39;installation du logiciel Varnish ne relève pas du présent guide. Pour plus d’informations sur l’installation de vernis, voir :
 
-- [wiki d&#39;installation](http://wiki.mikejung.biz/Varnish)
+- [guide d’installation](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
 - [Guides d’installation en pointillés](https://www.varnish-cache.org/docs)
-- [Comment installer Varnish (Tecmint)](http://www.tecmint.com/install-varnish-cache-web-accelerator)
+- [Comment installer Varnish (Tecmint)](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
 
 >[!INFO]
 >
