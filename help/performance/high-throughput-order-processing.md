@@ -1,9 +1,9 @@
 ---
 title: Traitement des commandes à haut débit
 description: Optimisez l’emplacement des commandes et l’expérience de passage en caisse pour votre déploiement Adobe Commerce ou Magento Open Source.
-source-git-commit: 4ce6f01ab6c3e0bb408657727b65bcb2f84dd954
+source-git-commit: 6afdb941ce3753af02bde3dddd4e66414f488957
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
@@ -166,6 +166,21 @@ Le _Activation de l’inventaire au chargement du panier_ paramètre global dét
 Lorsque cette option est désactivée, la vérification de stock ne se produit pas lors de l’ajout d’un produit au panier. Si cette vérification de stock est ignorée, certains scénarios en rupture de stock peuvent générer d’autres types d’erreurs. Vérification de stock _always_ se produit à l’étape d’emplacement de la commande, même lorsqu’elle est désactivée.
 
 **Activer Contrôle De L’Inventaire Lors Du Chargement Du Panier** est activée (définie sur Oui) par défaut. Pour désactiver la vérification de stock lors du chargement du panier, définissez **[!UICONTROL Enable Inventory Check On Cart Load]** to `No` dans l’interface utilisateur d’administration **Magasins** > **Configuration** > **Catalogue** > **Inventaire** > **Options Stock** . Voir [Configuration des options globales][global] et [Inventaire du catalogue][inventory] dans le _Guide de l’utilisateur_.
+
+## Equilibrage de la charge
+
+Vous pouvez équilibrer la charge entre les différents noeuds en activant les connexions secondaires pour la base de données MySQL et l’instance Redis.
+
+Adobe Commerce peut lire plusieurs bases de données ou instances Redis de manière asynchrone. Si vous utilisez Commerce sur l’infrastructure cloud, vous pouvez configurer les connexions secondaires en modifiant la variable [MYSQL_USE_SECONDAIRE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) et [REDIS_USE_SECONDAIRE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) dans la variable `.magento.env.yaml` fichier . Un seul noeud doit gérer le trafic de lecture-écriture. Par conséquent, la définition des variables sur `true` entraîne la création d’une connexion secondaire pour le trafic en lecture seule. Définissez les valeurs sur `false` pour supprimer tout tableau de connexion en lecture seule existant du `env.php` fichier .
+
+Exemple de `.magento.env.yaml` fichier :
+
+```yaml
+stage:
+  deploy:
+    MYSQL_USE_SLAVE_CONNECTION: true
+    REDIS_USE_SLAVE_CONNECTION: true
+```
 
 <!-- link definitions -->
 
