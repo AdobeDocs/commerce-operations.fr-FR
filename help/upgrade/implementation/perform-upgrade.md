@@ -1,9 +1,9 @@
 ---
 title: Effectuer une mise à niveau
 description: Pour mettre à niveau un projet Adobe Commerce ou Magento Open Source, procédez comme suit.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3c3966a904b0568e0255020d8880d348c357ea95
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,28 @@ Vous devez renseigner la variable [conditions préalables à la mise à niveau](
    ```
 
    Voir [Activation ou désactivation du mode de maintenance](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) pour d’autres options. Vous pouvez éventuellement créer une [page du mode de maintenance personnalisé](https://devdocs.magento.com/guides/v2.4/comp-mgr/trouble/cman/maint-mode.html).
+
+1. Le démarrage du processus de mise à niveau pendant l’exécution de processus asynchrones, tels que les consommateurs de file d’attente de messages, peut entraîner une corruption des données. Pour empêcher la corruption des données, désactivez toutes les tâches cron.
+
+   _Adobe Commerce sur l’infrastructure cloud :_
+
+   ```bash
+   ./vendor/bin/ece-tools cron:disable
+   ```
+
+   _Magento Open Source :_
+
+   ```bash
+   bin/magento cron:remove
+   ```
+
+1. Démarrez manuellement tous les consommateurs de la file d’attente de messages pour vous assurer que tous les messages sont consommés.
+
+   ```bash
+   bin/magento cron:run --group=consumers
+   ```
+
+   Attendez que la tâche cron soit terminée. Vous pouvez surveiller l’état de la tâche à l’aide d’une visionneuse de processus ou en exécutant la fonction `ps aux | grep 'bin/magento queue'` plusieurs fois jusqu’à ce que tous les processus soient terminés.
 
 1. Créez une sauvegarde de la variable `composer.json` fichier .
 
