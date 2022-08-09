@@ -1,9 +1,9 @@
 ---
 title: Gestion des indexeurs
 description: Consultez des exemples d’affichage et de gestion des indexeurs de commerce.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: dd84039be22b6bd25d57912615d64bad91970926
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,6 @@ bin/magento indexer:status [indexer]
 ```
 
 Où `[indexer]` est une liste d’indexeurs séparés par des espaces. Omit `[indexer]` pour afficher l’état de tous les indexeurs.
-
 
 Exemple de résultat :
 
@@ -120,8 +119,9 @@ Vous pouvez exécuter les index suivants en mode parallèle :
 - `Catalog Search Fulltext` peut être mis en parallèle par les vues des magasins.
 - `Category Product` peut être mis en parallèle par les vues des magasins.
 - `Catalog Price` peut être mis en parallèle par le site web et les groupes de clients.
+- `Catalog Permissions` peut être mis en parallèle par des groupes de clients.
 
-Si vous souhaitez utiliser la mise en parallèle, vous devez définir l’un des modes de dimensions disponibles pour l’indexeur de prix de produit :
+Pour utiliser la mise en parallèle, définissez l’un des modes de dimensions disponibles pour l’indexeur de prix de produit :
 
 - `none` (par défaut)
 - `website`
@@ -133,6 +133,11 @@ Par exemple, pour définir le mode par site web :
 ```bash
 bin/magento indexer:set-dimensions-mode catalog_product_price website
 ```
+
+Pour utiliser la mise en parallèle pour les autorisations de catalogue, définissez l’un des modes de dimensions disponibles pour l’indexeur d’autorisations de catalogue :
+
+- `none` (par défaut)
+- `customer_group`
 
 Ou pour vérifier le mode actuel :
 

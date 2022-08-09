@@ -1,9 +1,9 @@
 ---
 title: référence env.php
 description: Consultez la liste des valeurs du fichier env.php.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 7ecd54b40690ec046e9a3d46a6ef9ad44ffaf4ab
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,7 @@ Le `env.php` contient les sections suivantes :
 | `cron` | Activation ou désactivation des tâches cron |
 | `crypt` | Clé de chiffrement des fonctions cryptographiques |
 | `db` | Paramètres de connexion à la base de données |
+| `default_connection` | Connexion par défaut des files de messages |
 | `directories` | Paramètres de mappage des répertoires de commerce |
 | `downloadable_domains` | Liste des domaines téléchargeables |
 | `install` | La date d&#39;installation |
@@ -168,6 +169,19 @@ Toutes les configurations de base de données sont disponibles dans ce noeud.
   ]
 ]
 ```
+
+## default_connection
+
+Définit la connexion par défaut pour les files d’attente de messages. La valeur peut être `db`, `amqp`, ou un système de file d’attente personnalisé comme `redismq`. Si vous spécifiez une valeur autre que `db`, le logiciel de la file d’attente des messages doit d’abord être installé et configuré. Sinon, les messages ne seront pas traités correctement.
+
+```conf
+'queue' => [
+    'default_connection' => 'amqp'
+]
+```
+
+If `queue/default_connection` est spécifié dans le système. `env.php` , cette connexion est utilisée pour toutes les files d’attente de messages à travers le système, sauf si une connexion spécifique est définie dans un `queue_topology.xml`, `queue_publisher.xml` ou `queue_consumer.xml` fichier .
+Par exemple, si `queue/default_connection` is `amqp` in `env.php` mais un `db` La connexion est spécifiée dans la configuration de la file d’attente des fichiers XML d’un module. Le module utilisera MySQL comme courtier de messages.
 
 ## répertoires
 
