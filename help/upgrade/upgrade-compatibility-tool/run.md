@@ -1,9 +1,9 @@
 ---
 title: '"Exécutez la variable [!DNL Upgrade Compatibility Tool]"'
 description: Procédez comme suit pour exécuter la fonction [!DNL Upgrade Compatibility Tool] dans une interface de ligne de commande pour votre projet Adobe Commerce.
-source-git-commit: a0bb188eea38688c5bfe68e8c6bb7b3d040f5e0a
+source-git-commit: 038cb256cb19c253ae9c0375258a555601428847
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1145'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,7 @@ Commandes disponibles pour la fonction [!DNL Upgrade Compatibility Tool] dans un
 | **Commande** | **Description** |
 |----------------|-----------------|
 | `upgrade:check` | Cette commande exécute la fonction [!DNL Upgrade Compatibility Tool] en analysant tous les modules qui y sont installés. |
+| `dbschema:diff` | Cette commande affiche toutes les différences de schéma de base de données entre deux versions Adobe Commerce spécifiées. |
 | `core:code:changes` | Cette commande compare votre installation actuelle d’Adobe Commerce à une installation Vanilla propre. |
 | `refactor` | Cette commande corrige automatiquement un ensemble réduit de problèmes. |
 | `graphql:compare` | Cette commande permet d’analyser deux points d’entrée GraphQL et de comparer leurs schémas. |
@@ -88,6 +89,41 @@ Certaines limites s’appliquent lors de l’exécution de la variable `--coming
 - Il s&#39;agit d&#39;une obligation explicite; fournir uniquement la valeur de ne fonctionne pas.
 - Fournissez la version de la balise sans guillemets (ni simples ni doubles) : ~~&#39;2.4.1-develop&#39;~~.
 - Vous ne devez PAS fournir d’anciennes versions que celle que vous avez installée actuellement, ni plus de 2.3, qui est la plus ancienne version prise en charge actuellement.
+
+## Utilisez la variable `dbschema:diff` command
+
+Vous pouvez récupérer la différence entre le schéma de base de données de deux versions d’Adobe Commerce.
+
+```bash
+bin/uct dbschema:diff <current-version> <target-version>
+```
+
+Où les arguments sont les suivants :
+
+- `<current-version>`: toute version d’Adobe Commerce à des fins de comparaison.
+- `<target-version>`: également toute version d’Adobe Commerce à des fins de comparaison.
+
+Exemple d&#39;exécution :
+
+```bash
+bin/uct dbschema:diff 2.4.3 2.4.3-p3
+
+DB schema differences between versions 2.4.3 and 2.4.3-p3:
+
+Table klarna_payments_quote constraint QUOTE_ID_KLARNA_PAYMENTS_QUOTE_QUOTE_ID_QUOTE_ENTITY_ID is present only in version 2.4.3-p3
+Table klarna_payments_quote index KLARNA_PAYMENTS_QUOTE_SESSION_ID is present only in version 2.4.3-p3
+Table customer_entity column session_cutoff is present only in version 2.4.3-p3
+Table customer_visitor column session_id length value is different. 2.4.3: "64", 2.4.3-p3: "1"
+Table customer_visitor column session_id comment value is different. 2.4.3: "Session ID", 2.4.3-p3: "Deprecated: Session ID value no longer used"
+Table customer_visitor column created_at is present only in version 2.4.3-p3
+Table oauth_consumer column secret length value is different. 2.4.3: "32", 2.4.3-p3: "128"
+Table oauth_token column secret length value is different. 2.4.3: "32", 2.4.3-p3: "128"
+Table admin_user_session column session_id nullable value is different. 2.4.3: "false", 2.4.3-p3: "true"
+Table admin_user_session column session_id length value is different. 2.4.3: "128", 2.4.3-p3: "1"
+Table admin_user_session column session_id comment value is different. 2.4.3: "Session ID value", 2.4.3-p3: "Deprecated: Session ID value no longer used"
+
+Total detected differences between version 2.4.3 and 2.4.3-p3: 11
+```
 
 ## Utilisez la variable `core:code:changes` command
 

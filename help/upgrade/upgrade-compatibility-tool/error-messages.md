@@ -1,10 +1,10 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Messages d’erreur"'
 description: En savoir plus sur les messages d’erreur que vous rencontrez lors de l’utilisation de la variable [!DNL Upgrade Compatibility Tool] sur votre projet Adobe Commerce.
-source-git-commit: a13b0ea5aa109ce2f5d33e0966b194d64bad5d0c
+source-git-commit: 038cb256cb19c253ae9c0375258a555601428847
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4140'
+ht-degree: 4%
 
 ---
 
@@ -64,6 +64,17 @@ Des erreurs critiques sont générées lorsque le code personnalisé fait réfé
 | 5072 | Violation de conception du Magento 2 possible. Détection d’une construction Magento 1.x classique | Mettre à jour la construction vers les normes Magento 2. |
 | 5076 | Impossible d’utiliser dans l’espace de noms, car il est réservé depuis PHP 7 | Remplacez le mot réservé dans l’espace de noms par un mot-clé non réservé. |
 | 5077 | Ne peut pas utiliser comme nom de classe, car il est réservé depuis PHP 7 | Remplacez le nom de classe réservé par un nom non réservé. |
+
+{style=&quot;table-layout:auto&quot;}
+
+### Schéma DB
+
+Les problèmes critiques liés au schéma de base de données sont signalés si les tables ou colonnes principales supprimées sont référencées par des contraintes personnalisées.
+
+| Code d’erreur | Description de l’erreur | Action suggérée |
+| --- | --- | --- |
+| 7009 | La contrainte personnalisée fait référence à une table principale qui a été supprimée de la version cible. | Suppression des attributs de contrainte ou de mise à jour referenceTable et referenceColumn |
+| 7010 | La contrainte personnalisée fait référence à une colonne principale qui a été supprimée de la version cible. | Suppression de la contrainte ou mise à jour de l’attribut referenceColumn |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -199,6 +210,23 @@ Des erreurs de code personnalisé sont générées lorsque le code personnalisé
 | 6009 | `jQuery.isArray()` est obsolète | Utilisez plutôt la méthode native Array.isArray . |
 | 6009 | `jQuery.parseJSON()` est obsolète | Pour analyser les chaînes JSON, utilisez plutôt la méthode native JSON.parse . |
 | 6010 | (`jQuery.expr[":"]`, `jQuery.expr.filters`) est obsolète. | Utilisez jQuery.expr.pseudos à la place. |
+
+{style=&quot;table-layout:auto&quot;}
+
+### Schéma DB
+
+Les erreurs de schéma de base de données sont générées si les tables de base de données, colonnes, index ou contraintes, ajoutées ou supprimées dans la version cible d’Adobe Commerce, peuvent entraîner des conflits avec le schéma de base de données personnalisé.
+
+| Code d’erreur | Description de l’erreur | Action suggérée |
+| --- | --- | --- |
+| 7001 | La version principale cible introduit un tableau portant le même nom qu’un tableau déclaré par un module personnalisé. | Utilisez la nouvelle table principale (le cas échéant) ou renommez la table personnalisée. |
+| 7002 | Le tableau principal étendu par un module personnalisé a été supprimé dans la version cible. | Toutes les références de tableau principal supprimées doivent être supprimées du code base. |
+| 7003 | La version de base de la cible introduit une colonne portant le même nom qu’une colonne déclarée par un module personnalisé. | Utilisez la nouvelle colonne principale (le cas échéant) ou renommez la colonne personnalisée. |
+| 7004 | La colonne core qui est étendue par un module personnalisé a été supprimée dans la version cible. | Toutes les références de colonne principales supprimées doivent être supprimées du code base. |
+| 7005 | La version principale cible introduit un index avec le même referenceId qu’un index déclaré par un module personnalisé. | Supprimez (en cas de duplication à l’index principal introduit) ou renommez l’index personnalisé. |
+| 7006 | L’index principal étendu par un module personnalisé a été supprimé dans la version cible. | Toutes les références d’index principal supprimées doivent être supprimées du code base. |
+| 7007 | La version de base de la cible introduit une contrainte portant le même nom qu’une contrainte déclarée par un module personnalisé. | Supprimer (en cas de duplication à la contrainte principale introduite) ou renommer la contrainte personnalisée |
+| 7008 | La contrainte principale étendue par un module personnalisé a été supprimée de la version cible. | Utilisez la nouvelle contrainte principale (le cas échéant) ou renommez la contrainte personnalisée. |
 
 {style=&quot;table-layout:auto&quot;}
 
