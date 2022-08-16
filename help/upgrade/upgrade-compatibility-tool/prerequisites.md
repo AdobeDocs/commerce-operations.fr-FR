@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] conditions requises"'
 description: 'Vérifiez que votre système respecte la configuration requise pour exécuter la variable [!DNL Upgrade Compatibility Tool] dans une interface de ligne de commande pour votre projet Adobe Commerce. '
-source-git-commit: 7ec999f9122eb0707ac6c37b7b49f9c423945318
+source-git-commit: 167e0e7554e912aeef276a34daeaff29d7762009
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,31 @@ Conditions minimales requises pour utiliser la variable [!DNL Upgrade Compatibil
 | Compositeur | aucune exigence connue. |
 | Node.js | Versions de Node.js `^12.22.0`, `^14.17.0`ou `>=16.0.0` (voir [Installation de Node.js](https://nodejs.dev/learn/how-to-install-nodejs)) |
 | Limites de mémoire | Au moins 2 Go de mémoire vive. |
+
+[!DNL Upgrade Compatibility Tool] require [PCNTL](https://www.php.net/manual/en/book.pcntl.php) et d’autres extensions PHP pour l’exécution. Vérifiez les extensions PHP requises à l’aide de `composer check-platform-reqs` command :
+
+```bash
+# Example output of `composer check-platform-reqs` command for UCT 2.2.6 and PHP 7.4:
+
+$ composer check-platform-reqs
+Checking platform requirements for packages in the vendor dir
+ext-ctype     *         success provided by symfony/polyfill-ctype
+ext-dom       20031129  success
+ext-filter    7.4.30    success
+ext-json      7.4.30    success
+ext-libxml    7.4.30    success
+ext-mbstring  *         success provided by symfony/polyfill-mbstring
+ext-openssl   7.4.30    success
+ext-pcntl     7.4.30    success
+ext-pcre      7.4.30    success
+ext-phar      7.4.30    success
+ext-simplexml 7.4.30    success
+ext-tokenizer 7.4.30    success
+ext-xml       7.4.30    success
+ext-xmlwriter 7.4.30    success
+ext-zip       1.15.6    success
+php           7.4.30    success
+```
 
 Adobe Commerce est uniquement pris en charge sur les systèmes d’exploitation Linux. Vous pouvez exécuter la variable [!DNL Upgrade Compatibility Tool] sous Linux OS. Vous n’avez pas à exécuter la variable [!DNL Upgrade Compatibility Tool] où se trouve votre instance Adobe Commerce.
 
