@@ -1,9 +1,9 @@
 ---
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leurs utilisations, le processus d’installation et comment y accéder.
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: 1b9f57460f5b336c4ccacef01709c696acbc8316
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,7 @@ ht-degree: 0%
    - [Onglet RabbitMQ](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [Onglet Cron](observation-for-adobe-commerce/cron-tab.md)
    - [Onglet Indexation](observation-for-adobe-commerce/indexing-tab.md)
+   - [Onglet Aperçu rapide](observation-for-adobe-commerce/oac-quickview-tab.md)
    - [Onglet Sécurité](observation-for-adobe-commerce/security-tab.md)
+   - [Onglet infrarouge](observation-for-adobe-commerce/oac-infra.md)
    - [Utilisation de l’observation pour Adobe Commerce](observation-for-adobe-commerce/how-to-use.md)
-
