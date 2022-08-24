@@ -1,7 +1,7 @@
 ---
 title: '"Présentation de la variable [!DNL Upgrade Compatibility Tool]"'
 description: En savoir plus sur les [!DNL Upgrade Compatibility Tool] et comment cela peut vous aider dans votre projet Adobe Commerce.
-source-git-commit: 9b0f97d36092d2a1057cdc905671cda8540881c9
+source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -32,6 +32,12 @@ Vous pouvez utiliser la variable [!DNL Upgrade Compatibility Tool] via :
 Le diagramme suivant montre les workflows possibles lors de l’exécution de la variable [!DNL Upgrade Compatibility Tool]:
 
 ![[!DNL Upgrade Compatibility Tool] Diagramme](../../assets/upgrade-guide/uct-diagram-v5.png)
+
+## [!DNL Upgrade Compatibility Tool] demo
+
+Regardez cette vidéo pour en savoir plus sur les [!DNL Upgrade Compatibility Tool]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/341245?quality=12)
 
 ## Améliorez les [!DNL Upgrade Compatibility Tool]
 
