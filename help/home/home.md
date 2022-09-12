@@ -2,10 +2,10 @@
 keywords: Adobe Commerce;accueil;rubriques les plus consultées
 title: Accueil
 description: Parcourez un index de la documentation du produit opérationnel Adobe Commerce.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 64e697a357e10005d02abeca13bd09c8a823bc00
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -42,10 +42,10 @@ Obtenez des informations pratiques sur les concepts, les processus, les outils e
   </td>
   <td valign="top">
     <a href="../tools/data-migration-tool/how-migration-works.md">
-      <img alt="Migration" src="../assets/icons/move-to.svg" width="40" height="40"/>
+      <img alt="Migration des données" src="../assets/icons/move-to.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Migration</strong></a>
+      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Migration des données</strong></a>
     </div>
   </td>
 </tr>
@@ -117,6 +117,5 @@ Découvrez la nouvelle documentation et les mises à jour importantes de la docu
 
 | Modifier | Type |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Ajout [informations](../upgrade/upgrade-compatibility-tool/overview.md) sur la manière dont les règles sont définies pour l’outil de compatibilité de mise à niveau. | Mise à jour majeure |
-| Suppression de l’outil de compatibilité de mise à niveau obsolète [codes d’erreur](../upgrade/upgrade-compatibility-tool/error-messages.md). | Technique |
-| Déplacé [Guide de l’outil d’analyse à l’échelle du site](../tools/site-wide-analysis-tool/intro.md) de [devdocs.magento.com](https://devdocs.magento.com/tools/site-wide-analysis.html) à Experience League. | Nouveau |
+| Déplacement de la variable [Guide d’installation sur site](../installation/overview.md) de [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) à Experience League. | Nouveau |
+| Déplacement de la variable [Guide de migration des données](../tools/data-migration-tool/how-migration-works.md) de [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html) à Experience League. | Nouveau |
