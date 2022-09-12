@@ -1,10 +1,10 @@
 ---
 title: Configuration automatique des bases de données principales
 description: Consultez les conseils sur la configuration automatique de la solution de base de données partagée.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '358'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ Cette rubrique explique comment commencer à utiliser la solution de base de don
 
 ## Installation du logiciel Adobe Commerce
 
-Vous pouvez activer à tout moment la division de bases de données après l’installation du logiciel Adobe Commerce ; en d’autres termes, vous pouvez ajouter des bases de données fractionnées à un système Adobe Commerce qui contient déjà des données de passage en caisse et de commande. Suivez les instructions de la section Adobe Commerce README ou [guide d’installation](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html) pour installer le logiciel Adobe Commerce à l’aide d’une seule base de données principale.
+Vous pouvez activer à tout moment la division de bases de données après l’installation du logiciel Adobe Commerce ; en d’autres termes, vous pouvez ajouter des bases de données fractionnées à un système Adobe Commerce qui contient déjà des données de passage en caisse et de commande. Suivez les instructions de la section Adobe Commerce README ou [guide d’installation](../../installation/overview.md) pour installer le logiciel Adobe Commerce à l’aide d’une seule base de données principale.
 
 ## Configurer des bases de données principales supplémentaires
 

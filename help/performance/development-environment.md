@@ -1,9 +1,9 @@
 ---
 title: Recommendations d’environnement de développement
 description: Découvrez les recommandations de performances pour configurer votre environnement de développement Adobe Commerce ou Magento Open Source local.
-source-git-commit: 87b353b408ecd7f55cea5b4775a0c8523952abc0
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -47,5 +47,5 @@ Si vous développez sur une machine virtuelle et que le chargement d’une page 
 
 <!-- Link definitions -->
 
-[nettoyage des caches]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean
-[Désactivation des caches]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-en
+[nettoyage des caches]: ../configuration/cli/manage-cache.md#clean-and-flush-cache-types
+[Désactivation des caches]: ../configuration/cli/manage-cache.md#enable-or-disable-cache-types

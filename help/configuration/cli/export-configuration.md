@@ -1,7 +1,7 @@
 ---
 title: Exportation des paramètres de configuration
 description: Exportez les paramètres de configuration Adobe Commerce vers les fichiers de configuration, également appelés fichier de sauvegarde de configuration.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
@@ -47,6 +47,6 @@ Il contient des paramètres sensibles et spécifiques au système pour des envir
 
 Pour définir les paramètres sensibles écrits sur `env.php`, utilisez le [`bin/magento config:sensitive:set`](set-configuration-values.md#set-values) .
 
-Les valeurs de configuration sont spécifiées comme sensibles ou spécifiques au système en référençant [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) dans le de [`di.xml`](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/configuration/sensitive-and-environment-settings.html#how-to-specify-values-as-sensitive-or-system-specific) fichier .
+Les valeurs de configuration sont spécifiées comme sensibles ou spécifiques au système en référençant [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) dans le de [`di.xml`](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific) fichier .
 
 Pour exporter des paramètres système supplémentaires lors de l’utilisation de `config_types`, pensez à utiliser la variable [`bin/magento config:set`](set-configuration-values.md#set-values) .

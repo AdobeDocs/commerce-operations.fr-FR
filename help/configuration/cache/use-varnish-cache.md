@@ -1,9 +1,9 @@
 ---
 title: Nettoyage du cache avec vernis
 description: Découvrez comment l’effacement de la mémoire cache fonctionne avec le vernis et comment l’utiliser comme accélérateur de mise en cache web pour l’application Adobe Commerce.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -57,4 +57,4 @@ Vous pouvez ensuite purger les hôtes ternes lorsque vous actualisez le cache Co
 
 Pour actualiser le cache à l’aide de l’administrateur, cliquez sur **[!UICONTROL SYSTEM]** > Outils > **Gestion du cache**, puis cliquez sur **Vider le cache du Magento** en haut de la page. (Vous pouvez également actualiser des types de cache individuels.)
 
-Pour actualiser le cache à l’aide de la ligne de commande, vous utilisez généralement la méthode [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) comme la commande [propriétaire du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+Pour actualiser le cache à l’aide de la ligne de commande, vous utilisez généralement la méthode [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) comme la commande [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).

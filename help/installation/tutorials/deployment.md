@@ -1,0 +1,66 @@
+---
+title: Création ou mise à jour de la configuration du déploiement
+description: Pour gérer votre configuration de déploiement Adobe Commerce ou Magento Open Source, procédez comme suit.
+source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 0%
+
+---
+
+
+# Création ou mise à jour de la configuration du déploiement
+
+L’utilisation de cette commande ne nécessite aucune condition préalable.
+
+## Création ou mise à jour de la configuration du déploiement
+
+[Configuration du déploiement](../../configuration/reference/deployment-files.md) fournit les informations que l’application doit initialiser et démarrer.
+
+Vous pouvez utiliser cette commande si :
+
+* Vous avez précédemment installé l’application et souhaitez modifier la configuration de déploiement.
+* Vous souhaitez créer uniquement la configuration de déploiement et poursuivre l’installation d’une autre manière.
+* Pour mettre à jour la configuration du déploiement sans affecter quoi que ce soit d’autre
+
+Options de commande :
+
+```bash
+bin/magento setup:config:set [--<parameter>=<value>, ...]
+```
+
+Le tableau suivant décrit la signification des paramètres et valeurs d’installation.
+
+| Paramètre | Valeur | Obligatoire ? |
+|--- |--- |--- |
+| `--backend-frontname` | Identifiant de ressource unique ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)) pour accéder à l’administrateur.<br><br>Pour éviter les exploits, nous vous recommandons de ne pas utiliser un mot commun tel que admin, backend. L’URI d’administration peut contenir des valeurs alphanumériques et un caractère de soulignement (`_`) uniquement. | Non |
+| `--db-host` | Utilisez l’une des méthodes suivantes :<br><br>- Nom d’hôte ou adresse IP complet du serveur de base de données.<br><br>- `localhost` (par défaut) ou `127.0.0.1` si votre serveur de base de données se trouve sur le même hôte que votre serveur web. localhost signifie que la bibliothèque cliente MySQL utilise des sockets UNIX pour se connecter à la base de données. `127.0.0.1` entraîne l’utilisation du protocole TCP par la bibliothèque cliente. Pour plus d’informations sur les sockets, voir [Documentation PHP PDO_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Remarque :** Vous pouvez éventuellement spécifier le port du serveur de base de données dans son nom d’hôte comme `www.example.com:9000` | Non |
+| `--db-name` | Nom de l&#39;instance de base de données dans laquelle vous souhaitez installer les tables de base de données.<br><br>La valeur par défaut est `magento2`. | Non |
+| `--db-user` | Nom d’utilisateur du propriétaire de l’instance de base de données.<br><br>La valeur par défaut est `root`. | Non |
+| `--db-password` | Mot de passe du propriétaire de l’instance de base de données. | Non |
+| `--db-prefix` | À utiliser uniquement si vous installez les tables de base de données dans une instance de base de données qui contient déjà des tables Adobe Commerce et Magento Open Source.<br><br>Dans ce cas, utilisez un préfixe pour identifier les tables pour cette installation. Certains clients disposent de plusieurs instances Adobe Commerce ou Magento Open Source s’exécutant sur un serveur avec toutes les tables dans la même base de données.<br><br>Le préfixe peut contenir, au maximum, cinq caractères. Il doit commencer par une lettre et ne peut contenir que des lettres, des chiffres et des caractères de soulignement.<br><br>Cette option permet à ces clients de partager le serveur de base de données avec plusieurs installations Adobe Commerce ou Magento Open Source. | Non |
+| `--session-save` | Utilisez l’une des méthodes suivantes :<br><br>- `db` pour stocker des données de session dans le [base](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). Choisissez un stockage en base si vous disposez d&#39;une base en grappe ; sinon, le stockage basé sur les fichiers pourrait ne pas être très avantageux.<br><br>- `files` pour stocker les données de session dans le système de fichiers. Le stockage des sessions basées sur des fichiers est approprié, sauf si l’accès au système de fichiers est lent, si vous disposez d’une base de données en grappe ou si vous souhaitez stocker des données de session dans Redis.<br><br>- `redis` pour stocker des données de session dans [Utilisation de Redis pour le stockage de session](../../configuration/cache/config-redis.md). Si vous utilisez Redis pour la mise en cache des pages ou par défaut, Redis doit être déjà installé. | Non |
+| `--key` | Si vous en avez un, spécifiez une clé à chiffrer. [données sensibles](#sensitive-data) dans la base de données. Si vous n’en avez pas, l’application en génère une pour vous. | Non |
+| `--db-init-statements` | Paramètre de configuration MySQL avancé. Utilise les instructions d’initialisation de base de données à exécuter lors de la connexion à la base de données MySQL.<br><br>La valeur par défaut est `SET NAMES utf8;`.<br><br>Consultez une référence similaire à [celui-ci](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) avant de définir des valeurs. | Non |
+| `--http-cache-hosts` | Liste séparée par des virgules des hôtes de la passerelle de cache HTTP vers lesquels envoyer les demandes de purge. (Par exemple, les serveurs vernis.) Utilisez ce paramètre pour spécifier l’hôte ou les hôtes à purger dans la même requête. (Peu importe que vous n’ayez qu’un seul hôte ou plusieurs hôtes.)<br><br>Le format doit être `<hostname or ip>:<listen port>`, où vous pouvez omettre `<listen port>` si c&#39;est le port 80. Par exemple, `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. Ne séparez pas les hôtes avec un espace. | Non |
+
+## Importation des données de configuration
+
+Lors de la configuration d’un système de production, il est recommandé d’importer les paramètres de configuration depuis `config.php` et `env.php` dans la base de données.
+Ces paramètres comprennent les chemins et valeurs de configuration, les sites web, les magasins, les vues de magasin et les thèmes.
+
+Après avoir importé des sites web, des magasins, des vues de magasin et des thèmes, vous pouvez créer des attributs de produit et les appliquer aux sites web, aux magasins et aux vues de magasin, sur le système de production.
+
+Sur le système de production, exécutez la commande suivante pour importer les données des fichiers de configuration (`config.php` et `env.php`) vers la base de données :
+
+```bash
+bin/magento app:config:import [-n, --no-interaction]
+```
+
+Le paramètre facultatif `[-n, --no-interaction]` L’indicateur permet à la commande de s’exécuter sans confirmation supplémentaire.
+
+Pour plus d’informations, veuillez consulter la section [Importation de données à partir de fichiers de configuration](../../configuration/cli/import-configuration.md)
+
+### Données sensibles
+
+{{$include /help/_includes/sensitive-data.md}}

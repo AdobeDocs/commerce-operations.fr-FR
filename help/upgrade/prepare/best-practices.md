@@ -1,9 +1,9 @@
 ---
 title: Bonnes pratiques
 description: Utilisez les bonnes pratiques recommandées par l’Adobe pour gérer le processus de mise à niveau de vos projets Adobe Commerce et Magento Open Source.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ Si votre projet est actif, nous vous suggérons d’exécuter un audit afin de d
 
 Dès que vous commencez à travailler sur un projet, vous devez examiner l’impact de vos travaux actuels sur les futures mises à niveau. Suivez toujours les bonnes pratiques de développement d’Adobe Commerce comme décrit ici :
 
-- [Bonnes pratiques de développement](https://devdocs.magento.com/guides/v2.4/ext-best-practices/bk-ext-best-practices.html)
-- [Normes de codage](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html)
+- [Bonnes pratiques de développement](https://developer.adobe.com/commerce/php/best-practices/)
+- [Normes de codage](https://developer.adobe.com/commerce/php/coding-standards/)
 
 Commencez à adopter la plateforme d’extensibilité d’Adobe Commerce, si ce n’est pas déjà fait. La plate-forme vous permet de personnaliser efficacement les processus, d’intégrer les systèmes et de déployer de nouvelles fonctionnalités tout en maintenant une mise à niveau similaire à SaaS. Ses fonctionnalités sont les suivantes :
 
@@ -80,7 +80,7 @@ Les mises à niveau doivent être effectuées régulièrement et sous la forme d
 
 ### Test après la mise à niveau
 
-Le test est la phase de mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. Vous pouvez bénéficier de l’utilisation des outils de test de base. Le [Guide de test d’application](https://devdocs.magento.com/guides/v2.4/test/testing.html) fournit des détails.
+Le test est la phase de mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. Vous pouvez bénéficier de l’utilisation des outils de test de base. Le [Guide de test d’application](https://developer.adobe.com/commerce/testing/guide/) fournit des détails.
 
 Utilisez un environnement d’évaluation pour tester et valider votre mise à niveau avant de passer en production.
 

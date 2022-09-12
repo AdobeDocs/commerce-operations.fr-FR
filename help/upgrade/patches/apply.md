@@ -1,9 +1,9 @@
 ---
 title: Appliquer les correctifs
 description: Découvrez les méthodes d’application de correctifs à un projet Adobe Commerce ou Magento Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Pour appliquer un correctif personnalisé à l’aide du compositeur :
 Pour appliquer des correctifs à partir de la ligne de commande :
 
 1. Téléchargez le fichier local dans le `<Magento_root>` sur le serveur à l’aide de FTP, SFTP, SSH ou de votre méthode de transport normale.
-1. Connectez-vous au serveur en tant que [utilisateur administrateur](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli.html#config-install-cli-first) et vérifiez que le fichier se trouve dans le répertoire approprié.
+1. Connectez-vous au serveur en tant que [utilisateur administrateur](../../configuration/cli/config-cli.md#prerequisites) et vérifiez que le fichier se trouve dans le répertoire approprié.
 1. Dans l&#39;interface de ligne de commande, exécutez les commandes suivantes en fonction de l&#39;extension de correctif :
 
    ```bash

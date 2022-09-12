@@ -1,9 +1,9 @@
 ---
 title: Mise à niveau
 description: Découvrez les différentes phases de mise en oeuvre de la mise à niveau pour les projets Adobe Commerce et Magento Open Source.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '870'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,13 @@ Vous trouverez ci-dessous des éléments que vous pouvez inclure dans une analys
 
 - **Portée de la version cible**—Documentation sur [Documents de développement Commerce](https://devdocs.magento.com) et les informations des webinaires de version des partenaires fournissent tous les détails que vous devez connaître sur votre mise à niveau vers target.
 
-- **[!DNL Upgrade Compatibility Tool]résultats**: cet outil facilite et accélère toute mise à niveau en comparant votre code actuel au code de la version cible et en produisant un rapport de tous les problèmes qui doivent être résolus. Voir [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Voici les principaux détails du rapport :
+- **[!DNL Upgrade Compatibility Tool]résultats**—Cet outil facilite toute mise à niveau en comparant votre code actuel au code de la version cible et en produisant un rapport de tous les problèmes qui doivent être résolus. Voir [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Voici les principaux détails du rapport :
 
    - Version installée actuelle
    - Mise à niveau de la version cible
    - Nombre et détails des erreurs critiques détectées
 
-- Mise à niveau des services pour la prise en charge de la version cible. Utilisez le modèle de tableau suivant pour déterminer les services à mettre à niveau. Utilisez la variable [configuration requise](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) pour déterminer les éléments à ajouter à la variable _Mettre à niveau vers_ colonne .
+- Mise à niveau des services pour la prise en charge de la version cible. Utilisez le modèle de tableau suivant pour déterminer les services à mettre à niveau. Utilisez la variable [configuration requise](../../installation/system-requirements.md) pour déterminer les éléments à ajouter à la variable _Mettre à niveau vers_ colonne .
 
 
    | Service | Version actuelle | Mettre à niveau vers | Remarques |
@@ -64,7 +64,7 @@ En outre, les partenaires peuvent participer au [Programme Adobe Commerce bêta]
 
 ## Développement et assurance qualité
 
-Le test est la phase de mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. Le _[Guide de test d’application](https://devdocs.magento.com/guides/v2.4/test/testing.html)_ fournit des détails sur la configuration et l’utilisation des outils de test de plateforme et système pour une AQ plus rapide. Utilisez un environnement d’évaluation pour tester et valider votre mise à niveau avant de passer en production.
+Le test est la phase de mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. Le _[Guide de test d’application](https://developer.adobe.com/commerce/testing/guide/)_ fournit des détails sur la configuration et l’utilisation des outils de test de plateforme et système pour une AQ plus rapide. Utilisez un environnement d’évaluation pour tester et valider votre mise à niveau avant de passer en production.
 
 ## UAT et préparation du lancement
 

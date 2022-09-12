@@ -1,9 +1,9 @@
 ---
 title: Configuration des mots-clés de recherche
 description: Découvrez comment gérer les mots-arrêts pour Adobe Commerce à l’aide de fichiers CSV.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Durée de vie par défaut du fichier stopwords [cache](https://glossary.magento.
 
 **Pour modifier des mots-clés**:
 
-1. Connectez-vous à votre serveur Commerce ou passez à l’ [propriétaire du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Connectez-vous à votre serveur Commerce ou passez à l’ [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
 1. Utilisation d’un éditeur de texte pour ouvrir un fichier de mots-clés dans la variable `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` répertoire .
 
    Les fichiers CSV utilisent la convention d’affectation des noms `stopwords_<locale_code>.csv`. Par exemple, le fichier du mot-clé allemand est nommé `stopwords_de_DE.csv`.
@@ -60,7 +60,7 @@ Durée de vie par défaut du fichier stopwords [cache](https://glossary.magento.
 
 **Pour ajouter des mots de fin pour un paramètre régional**:
 
-1. Connectez-vous à votre serveur Commerce ou passez à l’ [propriétaire du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Connectez-vous à votre serveur Commerce ou passez à l’ [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
 
 1. Utilisez un éditeur de texte pour créer un fichier de mots-clés nommés `stopwords_<locale_code>.csv` dans le `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` répertoire .
 
@@ -125,7 +125,7 @@ L’emplacement dépend de la manière dont vous avez installé le logiciel Comm
 
 ## Pour modifier le répertoire à partir de votre module
 
-1. [Création d’un module](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/module-file-structure.html)
+1. [Création d’un module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
 1. Dans votre module `etc/di.xml` ajouter des instructions :
 
    ```xml

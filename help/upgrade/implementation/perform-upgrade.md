@@ -1,9 +1,9 @@
 ---
 title: Effectuer une mise à niveau
 description: Pour mettre à niveau un projet Adobe Commerce ou Magento Open Source, procédez comme suit.
-source-git-commit: 3c3966a904b0568e0255020d8880d348c357ea95
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Vous pouvez mettre à niveau votre application Adobe Commerce ou Magento Open So
 >
 >N’utilisez pas cette méthode pour effectuer la mise à niveau si vous avez cloné le référentiel GitHub. Voir [Mettre à niveau une installation basée sur Git](../developer/git-installs.md) pour obtenir des instructions de mise à niveau.
 
-Les instructions suivantes vous montrent comment mettre à niveau à l’aide du compositeur. Adobe Commerce 2.4.2 a introduit la prise en charge du compositeur 2. Si vous tentez de mettre à niveau à partir de &lt;2.4.1, vous devez d’abord effectuer une mise à niveau vers une version compatible avec le compositeur 2 (par exemple, 2.4.2) à l’aide du compositeur 1. _before_ mise à niveau vers Composer 2 pour les mises à niveau ultérieures à la version 2.4.2. En outre, vous devez exécuter une [version prise en charge](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) de PHP.
+Les instructions suivantes vous montrent comment mettre à niveau à l’aide du compositeur. Adobe Commerce 2.4.2 a introduit la prise en charge du compositeur 2. Si vous tentez de mettre à niveau à partir de &lt;2.4.1, vous devez d’abord effectuer une mise à niveau vers une version compatible avec le compositeur 2 (par exemple, 2.4.2) à l’aide du compositeur 1. _before_ mise à niveau vers Composer 2 pour les mises à niveau ultérieures à la version 2.4.2. En outre, vous devez exécuter une [version prise en charge](../../installation/system-requirements.md) de PHP.
 
 >[!WARNING]
 >
@@ -42,7 +42,7 @@ Vous devez renseigner la variable [conditions préalables à la mise à niveau](
    bin/magento maintenance:enable
    ```
 
-   Voir [Activation ou désactivation du mode de maintenance](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) pour d’autres options. Vous pouvez éventuellement créer une [page du mode de maintenance personnalisé](https://devdocs.magento.com/guides/v2.4/comp-mgr/trouble/cman/maint-mode.html).
+   Voir [Activation ou désactivation du mode de maintenance](../../installation/tutorials/maintenance-mode.md) pour d’autres options. Vous pouvez éventuellement créer une [page du mode de maintenance personnalisé](../troubleshooting/maintenance-mode-options.md).
 
 1. Le démarrage du processus de mise à niveau pendant l’exécution de processus asynchrones, tels que les consommateurs de file d’attente de messages, peut entraîner une corruption des données. Pour empêcher la corruption des données, désactivez toutes les tâches cron.
 
@@ -253,7 +253,7 @@ Ouvrez l’URL de storefront dans un navigateur web pour vérifier si la mise à
 
 Si l’application échoue avec une  `We're sorry, an error has occurred while generating this email.` error:
 
-1. Réinitialiser [propriétaire et autorisations du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html) en tant qu’utilisateur avec `root` des privilèges.
+1. Réinitialiser [propriétaire et autorisations du système de fichiers](../../installation/prerequisites/file-system/configure-permissions.md) en tant qu’utilisateur avec `root` des privilèges.
 1. Effacez les répertoires suivants :
    - `var/cache/`
    - `var/page_cache/`

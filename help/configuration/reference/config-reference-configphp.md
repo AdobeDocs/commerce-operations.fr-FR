@@ -1,9 +1,9 @@
 ---
 title: Référence config.php
 description: Voir une liste de valeurs dans le fichier config.php.
-source-git-commit: 96fe0c5eeaa029347c829c39547ee5e473c8d04d
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
@@ -124,6 +124,6 @@ En savoir plus sur [Thèmes].
 
 <!-- link definitions -->
 
-[Modules]: https://devdocs.magento.com/videos/fundamentals/create-a-new-module/
-[scopes]: https://docs.magento.com/user-guide/configuration/scope.html
-[Thèmes]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-create.html
+[Modules]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html
+[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings
+[Thèmes]: https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/

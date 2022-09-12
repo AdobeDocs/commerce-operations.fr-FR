@@ -1,9 +1,9 @@
 ---
 title: Définir le mode de fonctionnement
 description: Découvrez comment définir les modes de fonctionnement d’Adobe Commerce.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Exceptions :
 
 ## Afficher le mode actuel
 
-Pour ce faire, la méthode la plus simple consiste à exécuter cette commande en tant que [propriétaire du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html). Si vous avez partagé l’hébergement, il s’agit de l’utilisateur que votre fournisseur vous donne pour vous connecter au serveur. Si vous disposez d’un serveur privé, il s’agit généralement d’un compte d’utilisateur local sur le serveur Commerce.
+Pour ce faire, la méthode la plus simple consiste à exécuter cette commande en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md). Si vous avez partagé l’hébergement, il s’agit de l’utilisateur que votre fournisseur vous donne pour vous connecter au serveur. Si vous disposez d’un serveur privé, il s’agit généralement d’un compte d’utilisateur local sur le serveur Commerce.
 
 Utilisation des commandes :
 

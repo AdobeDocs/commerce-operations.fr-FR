@@ -1,9 +1,9 @@
 ---
 title: Autorisations d’accès aux systèmes de fichiers
 description: Découvrez comment configurer le propriétaire ou les propriétaires du système de fichiers de l’application Commerce pour un système de développement et de production.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Autorisations d’accès aux systèmes de fichiers
 
-Cette section explique comment configurer le propriétaire ou les propriétaires du système de fichiers Commerce pour un système de développement et de production. Avant de poursuivre, passez en revue les concepts abordés dans la section [Présentation de la propriété et des autorisations du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+Cette section explique comment configurer le propriétaire ou les propriétaires du système de fichiers Commerce pour un système de développement et de production. Avant de poursuivre, passez en revue les concepts abordés dans la section [Présentation de la propriété et des autorisations du système de fichiers](../../installation/prerequisites/file-system/overview.md).
 
-Cette rubrique porte sur le développement commercial et les systèmes de production. Si vous installez Commerce, reportez-vous à la section [Définition de la propriété et des autorisations de pré-installation](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+Cette rubrique porte sur le développement commercial et les systèmes de production. Si vous installez Commerce, reportez-vous à la section [Définition de la propriété et des autorisations de pré-installation](../../installation/prerequisites/file-system/configure-permissions.md).
 
 Les sections suivantes abordent les exigences relatives à un ou deux propriétaires de système de fichiers. Cela signifie :
 
@@ -103,7 +103,7 @@ Pour rendre les fichiers et répertoires accessibles en écriture afin de pouvoi
 
 ### Facultatif `magento_umask`
 
-Voir [Éventuellement, définissez un masque](https://devdocs.magento.com/guides/v2.4/install-gde/install/post-install-umask.html) dans le _Guide d’installation_.
+Voir [Éventuellement, définissez un masque](../../installation/next-steps/set-umask.md) dans le _Guide d’installation_.
 
 ## Propriété du système de fichiers de production pour l’hébergement privé (deux utilisateurs)
 
@@ -121,7 +121,7 @@ Si vous utilisez votre propre serveur (y compris la configuration du serveur pri
    >
    >L’utilisateur de ligne de commande est également appelé _propriétaire du système de fichiers_.
 
-Comme ces utilisateurs ont besoin d’un accès aux mêmes fichiers, nous vous recommandons de créer une [groupe partagé](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html#mage-owner-about-group) à laquelle ils appartiennent tous deux. Les procédures suivantes supposent que vous avez déjà fait cela.
+Comme ces utilisateurs ont besoin d’un accès aux mêmes fichiers, nous vous recommandons de créer une [groupe partagé](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) à laquelle ils appartiennent tous deux. Les procédures suivantes supposent que vous avez déjà fait cela.
 
 Consultez l’une des sections suivantes :
 

@@ -1,9 +1,9 @@
 ---
 title: Outil de ligne de commande
 description: Utilisez l’outil de ligne de commande Commerce pour exécuter les tâches d’installation et de configuration.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,15 @@ Autres avantages :
 - L’interface en ligne de commande est extensible, de sorte que les développeurs tiers puissent y &quot;se connecter&quot;. Cela permet également d’éliminer la courbe d’apprentissage des utilisateurs.
 - Les commandes des modules désactivés ne s’affichent pas.
 
-Cette rubrique aborde la configuration des logiciels Adobe Commerce et Magento Open Source à l’aide de l’interface de ligne de commande. Pour plus d’informations sur l’installation de Commerce, voir [Flux d’installation](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) dans le _Guide d’installation_.
+Cette rubrique aborde la configuration des logiciels Adobe Commerce et Magento Open Source à l’aide de l’interface de ligne de commande. Pour plus d’informations sur l’installation de Commerce, voir [Flux d’installation](../../installation/overview.md) dans le _Guide d’installation_.
 
 ## Conditions préalables
 
 Avant de commencer à utiliser l’interface en ligne de commande, assurez-vous que :
 
-1. Votre système répond aux exigences décrites dans la section [Configuration requise](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) dans le _Guide d’installation_.
-1. Vous avez effectué toutes les tâches prérequises décrites dans la section [Conditions préalables](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/prereq-overview.html) dans le _Guide d’installation_.
-1. Une fois que vous êtes connecté au serveur Commerce, basculez vers un utilisateur disposant des droits d’écriture sur le système de fichiers Commerce. Voir [passer au propriétaire du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html) dans le _Guide d’installation_.
+1. Votre système répond aux exigences décrites dans la section [Configuration requise](../../installation/system-requirements.md) dans le _Guide d’installation_.
+1. Vous avez effectué toutes les tâches prérequises décrites dans la section [Conditions préalables](../../installation/prerequisites/overview.md) dans le _Guide d’installation_.
+1. Une fois que vous êtes connecté au serveur Commerce, basculez vers un utilisateur disposant des droits d’écriture sur le système de fichiers Commerce. Voir [passer au propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md) dans le _Guide d’installation_.
 
 ## Exécution des commandes
 

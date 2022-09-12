@@ -1,9 +1,9 @@
 ---
 title: Déploiement de fichiers d’affichage statique
 description: Découvrez comment écrire des fichiers statiques dans le système de fichiers Commerce en mode de production.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ Vous devez écrire manuellement des fichiers d’affichage statiques dans le sys
 
 >[!WARNING]
 >
->_Mode Développeur uniquement_: Lorsque vous installez ou activez un nouveau module, il peut charger du nouveau code JavaScript, CSS, mises en page, etc. Pour éviter des problèmes avec les fichiers statiques, vous devez nettoyer les anciens fichiers pour vous assurer d’obtenir toutes les modifications pour le nouveau module. Vous pouvez nettoyer les fichiers d’affichage statique générés de plusieurs façons. Voir [Rubrique Nettoyage du cache des fichiers statiques pour plus de détails](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/cache_for_frontdevs.html#clean_static_cache) pour plus d’informations.
+>_Mode Développeur uniquement_: Lorsque vous installez ou activez un nouveau module, il peut charger du nouveau code JavaScript, CSS, mises en page, etc. Pour éviter des problèmes avec les fichiers statiques, vous devez nettoyer les anciens fichiers pour vous assurer d’obtenir toutes les modifications pour le nouveau module. Vous pouvez nettoyer les fichiers d’affichage statique générés de plusieurs façons. Voir [Rubrique Nettoyage du cache des fichiers statiques pour plus de détails](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) pour plus d’informations.
 
 **Pour déployer des fichiers d’affichage statique**:
 
-1. Connectez-vous au serveur Commerce en tant que ou [passer au propriétaire du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Connectez-vous au serveur Commerce en tant que ou [passer au propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
 1. Supprimer le contenu de `<magento_root>/pub/static`, à l’exception de la fonction `.htaccess` fichier . Ne supprimez pas ce fichier.
 1. Exécution de l’outil de déploiement des fichiers d’affichage statique `<magento_root>/bin/magento setup:static-content:deploy`.
 
@@ -158,7 +158,7 @@ Pour ce faire, procédez comme suit :
 
 ## Dépannage de l’outil de déploiement des fichiers d’affichage statique
 
-[Installez d’abord le logiciel Commerce.](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html); sinon, vous ne pouvez pas exécuter l’outil de déploiement des fichiers d’affichage statique.
+[Installez d’abord le logiciel Commerce.](../../installation/overview.md); sinon, vous ne pouvez pas exécuter l’outil de déploiement des fichiers d’affichage statique.
 
 **Symptôme**: L’erreur suivante s’affiche lorsque vous exécutez l’outil de déploiement des fichiers d’affichage statique :
 
@@ -170,9 +170,9 @@ ERROR: You need to install the Commerce application before running this utility.
 
 Procédez comme suit :
 
-1. Installez le logiciel Commerce à l’aide de la méthode [ligne de commande](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli.html).
-1. Connectez-vous au serveur Commerce en tant que ou [passer à](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html), propriétaire du système de fichiers.
-1. Supprimer le contenu de `<magento_root>/pub/static` , à l’exception du répertoire `.htaccess` fichier . Ne supprimez pas ce fichier.
+1. Installez le logiciel Commerce à l’aide de la méthode [ligne de commande](../../installation/composer.md).
+1. Connectez-vous au serveur d’applications en tant que ou [passer à](../../installation/prerequisites/file-system/overview.md), propriétaire du système de fichiers.
+1. Supprimer le contenu de `<app_root>/pub/static` , à l’exception du répertoire `.htaccess` fichier . Ne supprimez pas ce fichier.
 1. Déployer des fichiers d’affichage statique : `bin/magento setup:static-content:deploy`
 
 ## Conseil à l’intention des développeurs sur la personnalisation de l’outil de déploiement de contenu statique

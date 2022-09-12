@@ -1,9 +1,9 @@
 ---
 title: Nettoyage du cache avec plusieurs instances de vernis
 description: Découvrez comment l’effacement du cache fonctionne avec plusieurs instances de vernis.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '179'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Cette rubrique présente les principes de base de la configuration de plusieurs 
 
 ## Configuration pour purger plusieurs instances de vernis
 
-Commerce purge les hôtes ternes après avoir configuré les hôtes ternes à l’aide de la fonction [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-deployment.html) .
+Commerce purge les hôtes ternes après avoir configuré les hôtes ternes à l’aide de la fonction [`magento setup:config:set`](../../installation/tutorials/deployment.md) .
 
 Vous devez utiliser la variable `--http-cache-hosts` pour spécifier une liste séparée par des virgules d’hôtes et de ports d’écoute Varnish. (Ne séparez pas les hôtes avec un espace.)
 
@@ -33,4 +33,4 @@ Vous pouvez ensuite purger tous les hôtes de marque lors de l’actualisation d
 
 Pour actualiser le cache à l’aide de l’administrateur, cliquez sur **SYSTÈME** > Outils > **Gestion du cache**, puis cliquez sur **Vider le cache du Magento** en haut de la page. (Vous pouvez également actualiser des types de cache individuels.)
 
-Pour actualiser le cache de plusieurs instances de vernis à partir de l’interface de ligne de commande, utilisez la fonction [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) comme la commande [propriétaire du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+Pour actualiser le cache de plusieurs instances de vernis à partir de l’interface de ligne de commande, utilisez la fonction [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) comme la commande [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).

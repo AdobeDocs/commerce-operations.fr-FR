@@ -1,9 +1,9 @@
 ---
 title: Présentation de la portée de la mise à niveau
 description: Découvrez les modifications incompatibles en amont dans une version pouvant avoir un impact sur les modules personnalisés Adobe Commerce ou Magento Open Source ou les extensions tierces.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ La nouvelle stratégie de compatibilité d’Adobe Commerce Marketplace garantit
 
 ## Modules personnalisés
 
-Tous les modules personnalisés doivent être comparés à la version cible vers laquelle vous souhaitez effectuer la mise à niveau. Il s’agit du processus de mise à niveau qui nécessite le plus de temps et de ressources. Lors de l’évaluation de vos modules personnalisés, vous devez rechercher des modifications incompatibles avec le passé et être conscient des nouvelles pratiques, telles que la décomposition du contrôleur. Pour en savoir plus à ce sujet, voir [notes de mise à jour](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Assurez-vous également que vous suivez [bonnes pratiques](https://devdocs.magento.com/guides/v2.4/ext-best-practices/extension-coding/common-programming-bp.html) pour le développement de modules.
+Tous les modules personnalisés doivent être comparés à la version cible vers laquelle vous souhaitez effectuer la mise à niveau. Il s’agit du processus de mise à niveau qui nécessite le plus de temps et de ressources. Lors de l’évaluation de vos modules personnalisés, vous devez rechercher des modifications incompatibles avec le passé et être conscient des nouvelles pratiques, telles que la décomposition du contrôleur. Pour en savoir plus à ce sujet, voir [notes de mise à jour](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Assurez-vous également que vous suivez [bonnes pratiques](https://developer.adobe.com/commerce/php/best-practices/extensions/) pour le développement de modules.
 
 ## [!DNL Upgrade Compatibility Tool]
 

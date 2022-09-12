@@ -1,9 +1,9 @@
 ---
 title: Gestion du cache
 description: Gérez les types de cache et affichez l’état du cache.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Commerce 2 possède les types de cache suivants :
 | Réflexion | reflet | Supprime une dépendance entre le module Webapi et le module Client. |
 | Traductions | translate | Après la fusion des traductions de tous les modules, le cache de fusion sera nettoyé. |
 | Configuration de l’intégration | config_integration | Intégrations compilées. Nettoyez ou videz ce cache après avoir modifié ou ajouté des intégrations. |
-| Configuration de l’API d’intégration | config_integration_api | Configuration des API d’intégration compilée des intégrations du magasin. |
+| Configuration de l’API d’intégration | config_integration_api | Configuration compilée des API d’intégration des intégrations du magasin. |
 | Configuration des services web | config_webservice | Mise en cache de la structure de l’API Web. |
 | Notification client | customer_notification | Notifications temporaires qui apparaissent dans l’interface utilisateur. |
 
@@ -71,7 +71,7 @@ Cette commande permet d’activer ou de désactiver tous les types de cache ou u
 
 >[!INFO]
 >
->À partir de la version 2.2, vous pouvez uniquement activer ou désactiver les types de cache à l’aide de la ligne de commande lors de l’exécution de Commerce en mode de production. Si vous exécutez Commerce en mode Développeur, vous pouvez activer ou désactiver les types de cache à l’aide de la ligne de commande ou manuellement. Avant cela, vous devez effectuer manuellement les opérations suivantes : `<magento_root>/app/etc/env.php` modifiable par la fonction [propriétaire du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+>À partir de la version 2.2, vous pouvez uniquement activer ou désactiver les types de cache à l’aide de la ligne de commande lors de l’exécution de Commerce en mode de production. Si vous exécutez Commerce en mode Développeur, vous pouvez activer ou désactiver les types de cache à l’aide de la ligne de commande ou manuellement. Avant cela, vous devez effectuer manuellement les opérations suivantes : `<magento_root>/app/etc/env.php` modifiable par la fonction [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
 
 Vous pouvez effectuer un nettoyage (également appelé _purge_ ou _actualiser_) les types de cache à l’aide de la ligne de commande ou de l’administrateur.
 

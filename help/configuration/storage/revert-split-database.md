@@ -1,9 +1,9 @@
 ---
 title: Rétablir la base de données partagée
 description: Rétablissement d’une implémentation de base de données partagée obsolète vers une implémentation de base de données unique.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Dans cet exemple, nous nous connectons aux trois bases de données qui sont inst
 
 ## Vérifier votre travail
 
-Pour vérifier que l’implémentation de votre base de données unique fonctionne correctement, effectuez les tâches suivantes et vérifiez que les données sont ajoutées à la variable `magento_main` des tables de base de données à l’aide d’un outil de base de données tel que [phpMyAdmin](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/optional.html#install-optional-phpmyadmin):
+Pour vérifier que l’implémentation de votre base de données unique fonctionne correctement, effectuez les tâches suivantes et vérifiez que les données sont ajoutées à la variable `magento_main` des tables de base de données à l’aide d’un outil de base de données tel que [phpMyAdmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 1. Vérifiez que les clés étrangères ont été restaurées. Par exemple, la variable `QUOTE_STORE_ID_STORE_STORE_ID` dans la `quote` table de base de données.
 1. Vérifiez que les clients peuvent passer des commandes à partir du storefront.

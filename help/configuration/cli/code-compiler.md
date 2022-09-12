@@ -1,9 +1,9 @@
 ---
 title: Compilateur de code
 description: Découvrez comment exécuter le compilateur de code à partir de la ligne de commande.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Dans certains cas, vous souhaiterez peut-être compiler le code avant d’instal
 
    Utilisez la variable `[-c|--clear-static-content]` option d’effacement [contenu statique](https://glossary.magento.com/static-content). Cela est nécessaire si vous avez précédemment activé ou désactivé les modules et que vous devez effacer le contenu statique généré précédemment pour ceux-ci.
 
-   Voir [Activation des modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+   Voir [Activation des modules](../../installation/tutorials/manage-modules.md).
 
 1. Compilez le code.
 

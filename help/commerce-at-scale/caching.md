@@ -2,9 +2,9 @@
 title: Planification efficace du cache
 description: Pour garantir la réussite de votre site en cours de chargement, reportez-vous aux points de référence recommandés pour la mise en cache.
 exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
-source-git-commit: 87e379aff4ec57f15ce914a13b4e9bc2769e6d1c
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -31,4 +31,4 @@ L’étape initiale de la stratégie de mise en cache doit donc être de défini
 
 Une fois cette planification initiale terminée, la configuration technique peut commencer à être mise en place pour configurer les caches en fonction de ces exigences.
 
-Même si le contenu est mis à jour et doit être mis en ligne dans le délai de mise en cache, il est, dans la plupart des cas, possible d’effacer manuellement les caches de la variable [AEM dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en) et [Adobe Commerce](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean) mettre en cache sélectivement ce contenu, ce qui signifie que les modifications urgentes seront immédiatement répercutées. Le processus relatif à l’effacement manuel du cache doit également être planifié et testé à l’avance afin que, s’il est nécessaire de forcer manuellement une mise à jour d’un contenu, il soit documenté dans un runbook d’exploitation de site et indique comment et qui doit être impliqué dans cette action.
+Même si le contenu est mis à jour et doit être mis en ligne dans le délai de mise en cache, il est, dans la plupart des cas, possible d’effacer manuellement les caches de la variable [AEM dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en) et [Adobe Commerce](../configuration//cli/manage-cache.md#clean-and-flush-cache-types) mettre en cache sélectivement ce contenu, ce qui signifie que les modifications urgentes seront immédiatement répercutées. Le processus relatif à l’effacement manuel du cache doit également être planifié et testé à l’avance afin que, s’il est nécessaire de forcer manuellement une mise à jour d’un contenu, il soit documenté dans un runbook d’exploitation de site et indique comment et qui doit être impliqué dans cette action.

@@ -1,9 +1,9 @@
 ---
 title: Configuration d’une tâche cron personnalisée et d’un groupe cron (tutoriel)
 description: Utilisez ce tutoriel détaillé pour créer une tâche cron personnalisée.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Dans ce tutoriel, nous supposons que :
 
 - L’application Commerce est installée dans `/var/www/html/magento2`
 - Votre nom d’utilisateur et votre mot de passe de la base de données Commerce sont tous deux `magento`
-- Vous effectuez toutes les actions en tant que [propriétaire du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html)
+- Vous effectuez toutes les actions en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md)
 
 ## Étape 1 : Obtention d’un exemple de module
 
@@ -31,7 +31,7 @@ Si vous disposez déjà d’un exemple de module, vous pouvez l’utiliser ; ign
 
 **Pour obtenir un exemple de module**:
 
-1. Connectez-vous à votre serveur Commerce en tant que [propriétaire du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Connectez-vous à votre serveur Commerce en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
 1. Accédez à un répertoire qui ne se trouve pas dans la racine de votre application Commerce (par exemple, votre répertoire racine).
 1. Cloner le [`magento2-samples` référentiel][samples].
 

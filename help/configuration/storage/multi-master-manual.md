@@ -1,9 +1,9 @@
 ---
 title: Configuration manuelle des bases de données principales
 description: Consultez les conseils sur la configuration manuelle de la solution de base de données partagée.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1388'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Adobe vous recommande vivement de sauvegarder votre base de données et votre sy
 
 **Sauvegarde du système**:
 
-1. Connectez-vous à votre serveur Commerce en tant que [propriétaire du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Connectez-vous à votre serveur Commerce en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
 1. Saisissez les commandes suivantes :
 
    ```bash
@@ -476,7 +476,7 @@ La dernière étape du fractionnement manuel des bases de données consiste à a
 
 Pour mettre à jour la configuration du déploiement :
 
-1. Connectez-vous à votre serveur Commerce en tant que [propriétaire du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Connectez-vous à votre serveur Commerce en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
 1. Sauvegardez votre configuration de déploiement :
 
    ```bash

@@ -1,9 +1,9 @@
 ---
 title: Fonctionnement des correctifs
 description: Découvrez les différents types de correctifs pour Adobe Commerce et Magento Open Source et leur fonctionnement.
-source-git-commit: 45a44d98f149b4b9a1fbb4ac0bcea3eb372f49a8
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Nous vous recommandons vivement de tester tous les correctifs dans un environnement d’évaluation ou de développement avant de les déployer en production. Nous vous recommandons également vivement de sauvegarder vos données avant d’appliquer un correctif. Voir [Sauvegarde et restauration du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>Nous vous recommandons vivement de tester tous les correctifs dans un environnement d’évaluation ou de développement avant de les déployer en production. Nous vous recommandons également vivement de sauvegarder vos données avant d’appliquer un correctif. Voir [Sauvegarde et restauration du système de fichiers](../../installation/tutorials/backup.md).
 
 Les fichiers de correctif (ou diff) sont des fichiers texte qui font remarquer :
 

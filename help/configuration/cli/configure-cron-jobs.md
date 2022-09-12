@@ -1,9 +1,9 @@
 ---
 title: Configuration et exécution de tâches cron
 description: Découvrez comment gérer les tâches cron.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ L’application Commerce utilise des tâches cron qui peuvent s’exécuter avec
 
 >[!WARNING]
 >
->- Pour éviter tout problème lors de l’installation et de la mise à niveau, nous vous recommandons vivement d’appliquer les mêmes paramètres PHP à la configuration de la ligne de commande PHP et à la configuration du plug-in du serveur web PHP. Pour plus d’informations, voir [Paramètres PHP requis](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+>- Pour éviter tout problème lors de l’installation et de la mise à niveau, nous vous recommandons vivement d’appliquer les mêmes paramètres PHP à la configuration de la ligne de commande PHP et à la configuration du plug-in du serveur web PHP. Pour plus d’informations, voir [Paramètres PHP requis](../../installation/prerequisites/php-settings.md).
 >- Dans un système à plusieurs noeuds, crontab ne peut s’exécuter que sur un seul noeud. Cela s’applique uniquement si vous configurez plusieurs noeuds web pour des raisons de performances ou d’évolutivité.
 
 
@@ -58,7 +58,7 @@ Le sous-onglet Commerce se trouve à l’intérieur de `#~ MAGENTO START` et `#~
 
 Pour créer le sous-onglet Commerce :
 
-1. Connectez-vous en tant que [propriétaire du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Connectez-vous en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
 1. Modifiez le répertoire d’installation de Commerce.
 1. Saisissez la commande suivante :
 
@@ -100,7 +100,7 @@ Vous ne devez supprimer le crontab Commerce que avant de désinstaller l’appli
 
 Pour supprimer l’onglet Commerce crontab :
 
-1. Connectez-vous en tant que ou basculez vers le [propriétaire du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Connectez-vous en tant que ou basculez vers le [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
 1. Accédez au répertoire d’installation de Commerce.
 1. Saisissez la commande suivante :
 

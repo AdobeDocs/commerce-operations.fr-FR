@@ -1,7 +1,7 @@
 ---
 title: Conversion de fichiers de mise en page
 description: Convertir les fichiers de mise en page XML.
-source-git-commit: 02f02393878d04b4a0fcdae256ac1ac5dd13b7f6
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 Utilisez cette commande pour mettre à jour vos fichiers XML de mise en page si vous mettez à jour la feuille de style XSLT (Extensible Stylesheet Language Transformations) correspondante.
 
-- [Instructions de mise en page](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/xml-instructions.html)
-- [Types de fichiers de mise en page](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-types.html)
+- [Instructions de mise en page](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
+- [Types de fichiers de mise en page](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
 
 Options de commande :
 

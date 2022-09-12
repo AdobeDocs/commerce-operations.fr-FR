@@ -1,9 +1,9 @@
 ---
 title: Fichiers de configuration pour le déploiement
 description: Découvrez comment les fichiers de configuration fonctionnent pour l’installation de l’application Commerce.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -52,9 +52,9 @@ Le `config.php` contient une liste des modules installés. Adobe Commerce fourni
 
 Exemples :
 
-- Désinstallation des composants : [`bin/magento setup:uninstall`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall.html)
+- Désinstallation des composants : [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
 - Vérifiez l’état des composants : [`bin/magento module:status`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#modulestatus)
-- Activation ou désactivation de composants : [`bin/magento module:disable`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html#instgde-cli-subcommands-enable-disable), [`bin/magento module:enable`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html#instgde-cli-subcommands-enable-disable).
+- Activation ou désactivation de composants : [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md), [`bin/magento module:enable`](../../installation/tutorials/manage-modules.md).
 
 > _config.php_
 

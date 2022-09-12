@@ -1,9 +1,9 @@
 ---
-title: '"Le [!UICONTROL Summary] tab"'
+title: "Le [!UICONTROL Summary] tab"
 description: En savoir plus sur les [!UICONTROL Summary] de [!DNL Observation for Adobe Commerce].
-source-git-commit: 22df5b80262fbc98f3dd929ec8fdf6f697734c9b
+source-git-commit: 5bcb834bc563c52cd5b169b9f4f20dab31d404cd
 workflow-type: tm+mt
-source-wordcount: '2650'
+source-wordcount: '2637'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ Le **[!UICONTROL Deployment State]** frame facette des expressions de déploieme
 
 **Phrases du journal de déploiement :**
 
-* &quot;%Démarrage de la génération de la commande%&quot;) en tant que &quot;start_gen&quot;
+* &quot;%Démarrage de la génération de la commande%&quot;) comme &quot;start_gen&quot;
 * &quot;%git apply /app/vendor/magento/ece-tools/Correctifs%&quot;) as &#39;apply_Correctifs&#39;
 * &#39;%Set flag : .static_content_deploy%) comme &quot;SCD&quot;
 * &#39;%REMARQUE : Générer la commande completed%) en tant que &#39;gen_compl&#39;
@@ -122,7 +122,7 @@ Le **[!UICONTROL Deployment State]** frame facette des expressions de déploieme
 
 ![Fréquence des adresses IP](../../assets/tools/ip-frequency.jpg)
 
-Le **[!UICONTROL IP Frequency]** frame comptabilise les états (‘MISS’ et ‘PASS’) pour chaque IP de la variable [!DNL Fastly] journaux. Les requêtes Web avec ces états atteignent le serveur d’origine et ajoutent de la charge au serveur. Il affiche les vingt premières adresses en fréquence. Ce cadre peut être utilisé pour détecter les attaques IP ou les sources de charge importante sur un site web.
+Le **[!UICONTROL IP Frequency]** frame comptabilise les états (&#39;MISS&#39; et &#39;PASS&#39;) pour chaque IP de la variable [!DNL Fastly] journaux. Les requêtes Web avec ces états atteignent le serveur d’origine et ajoutent de la charge au serveur. Il affiche les vingt premières adresses en fréquence. Ce cadre peut être utilisé pour détecter les attaques IP ou les sources de charge importante sur un site web.
 
 ## [!UICONTROL IP Response – top 20 URLs in duration]
 
@@ -152,7 +152,7 @@ Il est parfois difficile de déterminer l’adresse IP qui a le plus de requête
 
 ![bots potentiels](../../assets/tools/potential-bots.jpg)
 
-Le **[!UICONTROL Potential Bots]** frame examine les requêtes avec un nom request_user_agent tel que NULL ou ‘%bot%’. En règle générale, request_user_agent &quot;%bot%&quot; suit la configuration de la stratégie dans `robots.txt` fichier .
+Le **[!UICONTROL Potential Bots]** frame examine les requêtes avec un nom request_user_agent tel que NULL ou &#39;%bot%&#39;. En règle générale, request_user_agent &quot;%bot%&quot; suit la configuration de la stratégie dans `robots.txt` fichier .
 
 ## [!UICONTROL Transaction Errors]
 
@@ -181,7 +181,7 @@ Le **[!UICONTROL Nginx access by node]** frame examine les décomptes des `acces
 * &quot;%self-leave%&quot;) sous la forme &quot;usp_node&quot;
 * &#39;%members = 3/3 (joint/total)%&#39;) comme &#39;3of3&#39;
 * &#39;%members = 2/3 (joint/total)%&#39;) comme &#39;2of3&#39;
-* &#39;%members = 2/2%&#39;) en tant que &#39;2of2&#39; ・ &#39;%members = 1/2%&#39;) en tant que &#39;1of2&#39; ・ ’%members = 1/3%&#39;) en tant que &#39;1of3&#39;
+* ’%members = 2/2%’) as ’2of2’ * ’%members = 1/2%’) as ’1of2’ * ’%members = 1/3%’) as ’1of3’
 * &#39;%members = 1/1%) as &#39;1of1&#39;
 * &#39;%\[Remarque\] /usr/sbin/mysqld (mysqld 10.%&#39;) comme &quot;sql_restart&quot;
 * &#39;%Quorum : Aucun noeud avec l’état complet :%) comme &quot;no_node_count&quot;
@@ -190,7 +190,7 @@ Le **[!UICONTROL Nginx access by node]** frame examine les décomptes des `acces
 * &#39;%WSREP: Member 2%) as &#39;mem2&#39;
 * &#39;%WSREP: Synchronisé avec le groupe, prêt pour les connexions %) comme &quot;prêt&quot;
 * &#39;%/usr/sbin/mysqld, Version:%&#39;) comme &#39;mysql_restart_mysql.ralenti&#39;
-* &quot;%\[Remarque\] WSREP : Nouvelle vue de grappe : état global :%) comme &quot;galera_cluster_view_chng&quot;
+* &#39;%\[Remarque\] WSREP : Nouvelle vue de grappe : état global :%) comme &quot;galera_cluster_view_chng&quot;
 
 Ces signaux peuvent indiquer des problèmes de stockage, de mémoire ou de requête si l’état change fréquemment.
 
@@ -228,7 +228,7 @@ Ces signaux peuvent indiquer des problèmes de stockage, de mémoire ou de requ�
 * &#39;%1062 \[\ERROR\] InnoDB:%&#39;) en tant que &#39;sql_1062_e&#39;
 * &#39;%\[Remarque\] WSREP : Purge de la carte mémoire sur le disque...%) comme &quot;mem_map_flush&quot;
 * Code d’erreur ‘%Internal MariaDB : 1146%) en tant que &#39;sql_1146&#39;
-* Code d’erreur ‘%Internal MariaDB : 1062%) en tant que &quot;sql_1062&quot; ・ &quot;%1062 \[Avertissement\] InnoDB:%&quot;) en tant que &quot;sql_1062_w&quot;
+* Code d’erreur ‘%Internal MariaDB : 1062%) comme &quot;sql_1062&quot; * ’%1062 \[Avertissement\] InnoDB:%&#39;) comme &quot;sql_1062_w&quot;
 * Code d’erreur ‘%Internal MariaDB : 1064%) comme &quot;sql_1064&quot;
 * ’%InnoDB: Échec de l’affirmation dans le fichier%) en tant que &quot;assertion_err&quot;
 * ’%mysqld_safe Nombre de processus en cours d’exécution : 0%) comme &quot;mysql_oom&quot;
@@ -236,7 +236,7 @@ Ces signaux peuvent indiquer des problèmes de stockage, de mémoire ou de requ�
 * &quot;%1452 Impossible d’ajouter%&quot;) en tant que &quot;sql_1452&quot;
 * &#39;%ERROR 1698%&#39;) en tant que &#39;sql_1698&#39;
 * &#39;%SQLSTATE\[HY000\] : Erreur générale : 3 %) comme &quot;cnt_write_tmp&quot;
-* &#39;%General error: 1 %&quot;) comme &quot;sql_syntaxe&quot;
+* &#39;%General error: 1 %&#39;) comme &#39;sql_syntaxe&#39;
 * &#39;%42S22%&#39;) en tant que &#39;sql_42S22&#39;
 * ’%InnoDB: Erreur (clé en double)%) en tant que &#39;innodb_dup_key&#39;
 
@@ -289,7 +289,7 @@ Le comportement des processus PHP dépend de [configuration](https://www.php.net
 
 ![erreurs php](../../assets/tools/php-errors.jpg)
 
-Le **[!UICONTROL PHP errors]** frame affiche le nombre d’erreurs PHP avec les programmes de travail pendant la période sélectionnée. Pour plus d’informations, reportez-vous à la section [Paramètres PHP d’Adobe Commerce](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+Le **[!UICONTROL PHP errors]** frame affiche le nombre d’erreurs PHP avec les programmes de travail pendant la période sélectionnée. Pour plus d’informations, reportez-vous à la section [Paramètres PHP d’Adobe Commerce](../../installation/prerequisites/php-settings.md).
 
 **erreurs et messages PHP**
 
@@ -309,7 +309,7 @@ Le **[!UICONTROL PHP errors]** frame affiche le nombre d’erreurs PHP avec les 
 
 ![processus php](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/), un [!UICONTROL FastCGI Process Manager] utilisé par [!DNL Nginx]. Pour en savoir plus sur la configuration requise, reportez-vous à la section [Exigences de version PHP mappées aux versions Adobe Commerce](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html). Le **[!UICONTROL PHP processes]** frame affiche le nombre de processus PHP exécutés à une heure donnée dans la chronologie sélectionnée.
+[PHP-FPM](https://php-fpm.org/), un [!UICONTROL FastCGI Process Manager] utilisé par [!DNL Nginx]. Pour en savoir plus sur la configuration requise, reportez-vous à la section [Exigences de version PHP mappées aux versions Adobe Commerce](../../installation/system-requirements.md). Le **[!UICONTROL PHP processes]** frame affiche le nombre de processus PHP exécutés à une heure donnée dans la chronologie sélectionnée.
 
 ## [!UICONTROL Secondary processes]
 
@@ -321,7 +321,7 @@ Les processus Secondaires peuvent avoir un impact sur la réponse du site. Le **
 
 ![trafic par rapport à la semaine précédente](../../assets/tools/traffic-vs-week-ago.jpg)
 
-Le **[!UICONTROL Traffic vs Week Ago]** frame examine le trafic du site web (requêtes) provenant de la variable [!DNL Fastly] les journaux avec les états de cache (&#39;MISS&#39;, &#39;PASS&#39;). Ces requêtes ajoutent de la charge aux serveurs d’origine. Ce cadre affiche le volume des requêtes web par rapport à il y a une semaine pendant la même période.
+Le **[!UICONTROL Traffic vs Week Ago]** frame examine le trafic du site web (requêtes) provenant de la variable [!DNL Fastly] journaux avec les états de cache (&#39;MISS&#39;, &#39;PASS&#39;). Ces requêtes ajoutent de la charge aux serveurs d’origine. Ce cadre affiche le volume des requêtes web par rapport à il y a une semaine pendant la même période.
 
 ## [!UICONTROL Fastly Cache]
 
@@ -402,7 +402,7 @@ Le **[!UICONTROL Cron view]** frame examine le journal cron pour trouver l’éq
 * &#39;%Impossible d’acquérir le verrouillage pour la tâche cron%&#39; en tant que &#39;cron_lock&#39;
 * &#39;%General error: 2006 Le serveur MySQL a disparu%&#39; comme &#39;mysql_has_gone_away&#39;
 * &#39;%error%&#39; comme &#39;erreur&#39;
-* &#39;%General error: 1205 Délai d’attente de verrouillage supérieur à%&#39; en tant que sql_1205_cron
+* &#39;%General error: 1205 Délai d’attente de verrouillage dépassé%&#39; en tant que sql_1205_cron
 
 ## [!UICONTROL cron_schedule table updates]
 

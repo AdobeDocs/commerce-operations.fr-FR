@@ -1,9 +1,9 @@
 ---
 title: Configuration du système de production
 description: Découvrez comment configurer un système de production pour l’application Commerce.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Pour configurer une machine de production :
 
    Créer `auth.json` dans ce répertoire.
 
-   `auth.json` doit contenir votre [clés d’authentification](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+   `auth.json` doit contenir votre [clés d’authentification](../../installation/prerequisites/authentication-keys.md).
 
    Voici un exemple :
 

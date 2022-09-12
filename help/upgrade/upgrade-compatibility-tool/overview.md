@@ -1,9 +1,9 @@
 ---
-title: '"Présentation de la variable [!DNL Upgrade Compatibility Tool]"'
+title: "Présentation de la variable [!DNL Upgrade Compatibility Tool]"
 description: En savoir plus sur les [!DNL Upgrade Compatibility Tool] et comment cela peut vous aider dans votre projet Adobe Commerce.
-source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -45,15 +45,15 @@ Si vous avez besoin d’informations ou si vous avez des questions qui ne sont p
 
 Pour vous connecter au [!DNL Upgrade Compatibility Tool] équipe, contactez-nous sur le canal Slack d’ingénierie [#upgrade-compatibility-tool](https://magentocommeng.slack.com/archives/C019Y143U9F). Nous voulons entendre vos commentaires, vos problèmes et vos suggestions pour nous aider à améliorer l’outil.
 
-Le [!DNL Upgrade Compatibility Tool] utilise des règles définies dans notre [Normes de codage](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html) pour vous assurer que votre projet suit les bonnes pratiques d’Adobe Commerce et pour vous aider à améliorer et à étendre la variable [!DNL Upgrade Compatibility Tool].
+Le [!DNL Upgrade Compatibility Tool] utilise des règles définies dans notre [Normes de codage](https://developer.adobe.com/commerce/php/coding-standards/) pour vous assurer que votre projet suit les bonnes pratiques d’Adobe Commerce et pour vous aider à améliorer et à étendre la variable [!DNL Upgrade Compatibility Tool].
 
-Reportez-vous à la section [Contribution](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html) rubrique pour plus d’informations sur l’apport de normes de codage.
+Reportez-vous à la section [Contribution](https://developer.adobe.com/commerce/php/coding-standards/contributing/) rubrique pour plus d’informations sur l’apport de normes de codage.
 
 ## Ressources
 
 Consultez les ressources suivantes pour vous aider à comprendre les mises à niveau d’Adobe Commerce :
 
-- Le [guide de mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html) fournit un aperçu du parcours de mise à niveau standard d’Adobe Commerce ou de Magento Open Source et des bonnes pratiques à suivre le long de ce parcours.
+- Le [guide de mise à niveau](../overview.md) fournit un aperçu du parcours de mise à niveau standard d’Adobe Commerce ou de Magento Open Source et des bonnes pratiques à suivre le long de ce parcours.
 - Le [versions à venir](https://devdocs.magento.com/release/) indique les dates des versions planifiées et à venir.
 - Le [ressources communautaires](https://developer.adobe.com/commerce/contributor/community/) pour commencer des discussions ou pour trouver plus d’informations.
 - Vérifiez les [outils connexes](../upgrade-compatibility-tool/related-tools.md) pour des outils utiles dans votre parcours de mise à niveau classique.

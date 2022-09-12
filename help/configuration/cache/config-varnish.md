@@ -1,7 +1,7 @@
 ---
 title: Configurer et utiliser le vernis
 description: Découvrez comment Varnish stocke les fichiers et améliore le trafic HTTP.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 0%
@@ -144,7 +144,7 @@ Si le contenu change sur le serveur, le client télécharge la ressource statiqu
 
 <!-- Link Definitions -->
 
-[base]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/cache/partial-caching/database-caching.html
+[base]: https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/
 [L&#39;image du grand vernis]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
 [Cache Varnish]: https://varnish-cache.org
 [Options de démarrage en pointillés]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options

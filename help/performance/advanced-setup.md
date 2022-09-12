@@ -1,9 +1,9 @@
 ---
 title: Configuration avancée
 description: Examinez les bonnes pratiques et les recommandations relatives aux systèmes d’entreprise de grande taille conçus pour traiter de grands volumes de données.
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Par exemple, si vous exécutez un profil similaire à B2B Medium, vous pouvez re
 
 Un grand nombre de SKU de produit, de sites web, de groupes de clients ou de catalogues partagés aura un impact sur le temps d’exécution des indexeurs de règles de catalogue et de prix des produits. En effet, par défaut, tous les sites web sont affectés à tous les groupes de clients (catalogues partagés).
 
-Pour diminuer le temps d’indexation, vous pouvez : [exclure certains sites web des groupes de clients (catalogues partagés)](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexer-optimization.html#customer-group-limitations-by-websites).
+Pour diminuer le temps d’indexation, vous pouvez : [exclure certains sites web des groupes de clients (catalogues partagés)](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
 
 ## Configuration de Redis
 
@@ -56,7 +56,7 @@ Magento Open Source et Adobe [!DNL Commerce] prendre en charge les files de mess
 
 >[!WARNING]
 >
->La fonctionnalité de base de données partagée était [obsolète](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) dans la version 2.4.2 d’Adobe Commerce. Voir [Rétablissement d’une base de données partagée en une seule base de données](https://devdocs.magento.com/guides/v2.4/config-guide/revert-split-database.html).
+>La fonctionnalité de base de données partagée était [obsolète](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) dans la version 2.4.2 d’Adobe Commerce. Voir [Rétablissement d’une base de données partagée en une seule base de données](../configuration/storage/revert-split-database.md).
 
 Adobe Commerce vous permet de configurer un stockage de base de données évolutif pour répondre aux besoins d’une entreprise en pleine croissance. Vous pouvez configurer trois bases de données maîtres distinctes qui diffusent des domaines spécifiques :
 
@@ -95,7 +95,7 @@ Cette commande effectue des modifications de configuration, mais ne configure pa
 Après avoir divisé votre base de données principale et défini les bases de Secondaires, [!DNL Commerce] régule automatiquement les connexions à une base de données spécifique, prenant des décisions en fonction du type de demande (POST, PUT, GET, etc.) et de la ressource de données. If [!DNL Commerce] Pour que ses extensions effectuent des opérations d’écriture sur une demande de GET, le système change automatiquement la connexion de Secondaire à la base de données principale. Il fonctionne de la même manière avec les bases de données maîtres : dès que vous utilisez une table liée au passage en caisse, le système redirige toutes les requêtes vers une base de données spécifique. Pendant ce temps, toutes les requêtes liées au catalogue seront envoyées à la base de données principale.
 
 Pour plus d’informations sur la configuration et les avantages de la configuration de plusieurs gabarits/Secondaires, voir
-[Solution de performance de la base de données de partage](https://devdocs.magento.com/guides/v2.4/config-guide/multi-master/multi-master.html).
+[Solution de performance de la base de données de partage](../configuration/storage/multi-master.md).
 
 ## Diffusion de contenu multimédia
 

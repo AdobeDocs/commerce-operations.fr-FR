@@ -1,9 +1,9 @@
 ---
-title: '"[!DNL Site-Wide Analysis Tool]"'
+title: "[!DNL Site-Wide Analysis Tool]"
 description: En savoir plus sur les [!DNL Site-Wide Analysis] Outil, ses utilisations, le processus d’installation et comment y accéder
-source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Affichez toutes les informations importantes sur votre site à un seul endroit. 
 
 - [**[!DNL Security Scan Tool]**](https://docs.magento.com/user-guide/magento/security-scan.html) - Fournit aux clients Adobe Commerce et Magento Open Source des informations en temps réel sur l’état de sécurité de leur boutique en détectant de manière proactive les logiciels malveillants et en leur indiquant si leur boutique est compromise.
 
-- [**[!DNL Upgrade Compatability Tool]**](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en) : exécute l’instance personnalisée Adobe Commerce par rapport à la version de mise à niveau cible et renvoie un résumé des problèmes critiques, des erreurs et des avertissements qui doivent être résolus, ce qui rend le processus d’analyse de mise à niveau plus facile, plus rapide et moins coûteux.
+- [**[!DNL Upgrade Compatability Tool]**](../../upgrade/upgrade-compatibility-tool/overview.md) : exécute l’instance personnalisée Adobe Commerce par rapport à la version de mise à niveau cible et renvoie un résumé des problèmes critiques, des erreurs et des avertissements qui doivent être résolus, ce qui rend le processus d’analyse de mise à niveau plus facile, plus rapide et moins coûteux.
 
 - [**[!DNL Managed Alerts]**](https://support.magento.com/hc/en-us/sections/360010758472-Managed-alerts-for-Adobe-Commerce) - Surveillez plusieurs mesures afin de suivre de manière proactive les performances de la plateforme et fournissez des instructions spécifiques sur la manière de résoudre les problèmes, de sorte que les vendeurs puissent éviter les temps d’arrêt critiques et rester informés sur le processeur, les performances de l’application, le disque, la mémoire et la base de données.
 

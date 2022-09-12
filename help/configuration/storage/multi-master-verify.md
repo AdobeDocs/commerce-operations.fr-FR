@@ -1,9 +1,9 @@
 ---
 title: Vérifier la base de données partagée
 description: Découvrez comment vérifier qu’une configuration de base de données de partage Commerce fonctionne correctement.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Après la configuration, les bases de données maîtres sont configurées comme 
 - Commerce [guillemet](https://glossary.magento.com/quote) base de données : 11 tables
 - Base de données commerciale des ventes : 55 tables
 
-Pour vérifier que vos bases de données partagées fonctionnent correctement, effectuez les tâches suivantes et vérifiez que les données sont ajoutées aux tables de base de données à l’aide d’un outil de base de données tel que [phpmyadmin](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/optional.html#install-optional-phpmyadmin):
+Pour vérifier que vos bases de données partagées fonctionnent correctement, effectuez les tâches suivantes et vérifiez que les données sont ajoutées aux tables de base de données à l’aide d’un outil de base de données tel que [phpmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 | Eléments à vérifier | Comment vérifier |
 | -------------- | ------------- |
@@ -30,4 +30,4 @@ Pour vérifier que vos bases de données partagées fonctionnent correctement, e
 
 >[!WARNING]
 >
->Vous devez sauvegarder manuellement les deux instances de base de données supplémentaires. Commerce sauvegarde uniquement l’instance de base de données principale. Le [`magento setup:backup --db`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html) Les options Commande et Admin ne sauvegardent pas les tables additionnelles.
+>Vous devez sauvegarder manuellement les deux instances de base de données supplémentaires. Commerce sauvegarde uniquement l’instance de base de données principale. Le [`magento setup:backup --db`](../../installation/tutorials/backup.md) Les options Commande et Admin ne sauvegardent pas les tables additionnelles.

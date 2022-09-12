@@ -1,9 +1,9 @@
 ---
 title: Flux de déploiement
-description: 'Découvrez les étapes nécessaires au déploiement d’Adobe Commerce ou de Magento Open Source dans un environnement de production. '
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+description: Découvrez les étapes nécessaires au déploiement d’Adobe Commerce ou de Magento Open Source dans un environnement de production.
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ bin/magento setup:di:compile
 
 ## Mise à jour du chargeur automatique
 
-Une fois la compilation terminée, vérifiez que [APCu est activé](https://devdocs.magento.com/guides/v2.4/performance-best-practices/software.html#php-settings) et mettez à jour l’outil de chargement automatique :
+Une fois la compilation terminée, vérifiez que [APCu est activé](../performance/software.md#php-settings) et mettez à jour l’outil de chargement automatique :
 
 Pour mettre à jour l’outil de chargement automatique :
 
@@ -82,7 +82,7 @@ Déploiement de causes de contenu statique [!DNL Commerce] pour effectuer les ac
 
 Si votre contenu statique n’est pas déployé, [!DNL Commerce] effectue toutes les opérations répertoriées à la volée, ce qui entraîne une augmentation significative du temps de réponse.
 
-Vous pouvez utiliser diverses options pour personnaliser les opérations de déploiement en fonction de la taille de magasin et des besoins d’exécution. La stratégie de déploiement compacte est la plus courante. Voir [Stratégies de déploiement des fichiers statiques](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-static-deploy-strategies.html)
+Vous pouvez utiliser diverses options pour personnaliser les opérations de déploiement en fonction de la taille de magasin et des besoins d’exécution. La stratégie de déploiement compacte est la plus courante. Voir [Stratégies de déploiement des fichiers statiques](../configuration/cli/static-view-file-strategy.md)
 
 Pour déployer du contenu statique :
 
