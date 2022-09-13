@@ -1,16 +1,16 @@
 ---
 title: Utilisation
 description: Découvrez comment utiliser le [!DNL Quality Patches Tool].
-source-git-commit: 356ee307e0199d70c0e391e0d903e8f2e1600e63
+source-git-commit: 83fa1c77dd6105f4c97f697fd6636773d94fb5ee
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
 
 # Utilisation
 
-Le [Outil Correctifs de qualité](https://github.com/magento/quality-patches) fournit des correctifs individuels développés par Adobe et la communauté Magento Open Source. Il vous permet d’appliquer, de rétablir et d’afficher des informations générales sur tous les correctifs individuels disponibles pour la version installée d’Adobe Commerce ou de Magento Open Source. Vous pouvez appliquer des correctifs aux projets Adobe Commerce et Magento Open Source, quel que soit le développeur du correctif. Par exemple, vous pouvez appliquer un correctif développé par la communauté aux projets Adobe Commerce.
+Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fournit des correctifs individuels développés par Adobe et la communauté Magento Open Source. Il vous permet d’appliquer, de rétablir et d’afficher des informations générales sur tous les correctifs individuels disponibles pour la version installée d’Adobe Commerce ou de Magento Open Source. Vous pouvez appliquer des correctifs aux projets Adobe Commerce et Magento Open Source, quel que soit le développeur du correctif. Par exemple, vous pouvez appliquer un correctif développé par la communauté aux projets Adobe Commerce.
 
 
 >[!INFO]
@@ -25,7 +25,7 @@ Le [Outil Correctifs de qualité](https://github.com/magento/quality-patches) fo
 
 >[!INFO]
 > 
->S’il n’est pas déjà installé, vous devez l’installer. [Git](https://github.com/git-guides/install-git) ou [Correctif](https://man7.org/linux/man-pages/man1/patch.1.html) avant d’installer le [!DNL Quality Patches Tool]. Ajoutez la variable `magento/quality-patches` Module de compositeur `composer.json` fichier :
+>S’il n’est pas déjà installé, vous devez l’installer. [[!DNL Git]](https://github.com/git-guides/install-git) ou [Correctif](https://man7.org/linux/man-pages/man1/patch.1.html) avant d’installer le [!DNL Quality Patches Tool]. Ajoutez la variable `magento/quality-patches` Module de compositeur `composer.json` fichier :
 
 ```bash
 composer require magento/quality-patches
