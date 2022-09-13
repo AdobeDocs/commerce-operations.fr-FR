@@ -1,8 +1,8 @@
 ---
-source-git-commit: 34c7fca1ee676f1eb96256c55121771370702410
+source-git-commit: ec60f7f2baecbdfe40971d17abe61aa52e30d1bd
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 65%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 # Configuration requise
@@ -644,4 +644,4 @@ ht-degree: 65%
 
 >[!NOTE]
 >
->La prise en charge et la compatibilité des versions Elasticsearch pour Adobe Commerce sur l’infrastructure cloud sont déterminées par les versions de service déployées sur l’infrastructure cloud et, dans de rares cas, peuvent différer des versions prises en charge par les déploiements sur site d’Adobe Commerce.
+>La prise en charge de la version du service et de la compatibilité pour Adobe Commerce sur l’infrastructure cloud est déterminée par les versions déployées sur l’infrastructure cloud et diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Pour plus d’informations sur les logiciels et services pris en charge déployés sur Adobe Commerce sur l’infrastructure cloud, voir [Logiciels et services pris en charge](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-arch-software).
