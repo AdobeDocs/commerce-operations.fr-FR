@@ -1,8 +1,8 @@
 ---
-source-git-commit: ec60f7f2baecbdfe40971d17abe61aa52e30d1bd
+source-git-commit: b86cd1ee5a46917e383d79c6b5fa4194691dd6d2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '236'
+ht-degree: 63%
 
 ---
 # Configuration requise
@@ -642,6 +642,6 @@ ht-degree: 0%
   </tbody>
 </table>
 
->[!NOTE]
+>[!IMPORTANT]
 >
->La prise en charge de la version du service et de la compatibilité pour Adobe Commerce sur l’infrastructure cloud est déterminée par les versions déployées sur l’infrastructure cloud et diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Pour plus d’informations sur les logiciels et services pris en charge déployés sur Adobe Commerce sur l’infrastructure cloud, voir [Logiciels et services pris en charge](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-arch-software).
+>La prise en charge de la version du service et de la compatibilité pour Adobe Commerce sur l’infrastructure cloud est déterminée par les versions déployées sur l’infrastructure cloud et diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Voir [Logiciels et services pris en charge](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-arch-software) dans le _Guide Cloud_.
