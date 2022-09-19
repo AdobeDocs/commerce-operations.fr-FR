@@ -1,9 +1,9 @@
 ---
 title: Conditions préalables complètes
 description: Préparez votre projet Adobe Commerce ou Magento Open Source à une mise à niveau en suivant les étapes préalables requises.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: c2d0c1d46a5f111a245b34ed6bc706dcd52be31c
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -97,12 +97,8 @@ Pour définir ulimit à partir de la ligne de commande :
 1. Définissez la ulimit sur `65536`.
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
-
-   >[!NOTE]
-   >
-   > La syntaxe de la ulimit des fichiers ouverts dépend du shell UNIX que vous utilisez. Le paramètre précédent doit fonctionner avec CentOS et Ubuntu avec le conteneur Bash. Toutefois, pour Mac OS, le paramètre correct est ulimit -S 65532. Pour plus d’informations, consultez la page de gestion ou la référence du système d’exploitation.
 
 Pour définir la valeur dans votre shell Bash :
 
@@ -111,7 +107,7 @@ Pour définir la valeur dans votre shell Bash :
 1. Ajoutez la ligne suivante :
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
 
 1. Enregistrez vos modifications dans le `.bashrc` et quittez l’éditeur de texte.
