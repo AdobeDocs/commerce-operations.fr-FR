@@ -2,10 +2,10 @@
 keywords: Adobe Commerce;accueil;rubriques les plus consultées
 title: Accueil
 description: Parcourez un index de la documentation du produit opérationnel Adobe Commerce.
-source-git-commit: 64e697a357e10005d02abeca13bd09c8a823bc00
+source-git-commit: 8605fa5c791a48c112efa997b14d7bffe5f3028c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '162'
+ht-degree: 2%
 
 ---
 
@@ -59,11 +59,11 @@ Obtenez des informations pratiques sur les concepts, les processus, les outils e
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html">
        <img alt="Référence des outils de ligne de commande" src="../assets/icons/page-rule.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html"><strong>Référence des outils de ligne de commande</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>Référence des outils de ligne de commande</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -117,5 +117,6 @@ Découvrez la nouvelle documentation et les mises à jour importantes de la docu
 
 | Modifier | Type |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Déplacement de la variable [Guide d’installation sur site](../installation/overview.md) de [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) à Experience League. | Nouveau |
-| Déplacement de la variable [Guide de migration des données](../tools/data-migration-tool/how-migration-works.md) de [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html) à Experience League. | Nouveau |
+| Déplacement de la variable [Référence des outils de ligne de commande](../reference/commerce.md) de [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html). | Nouveau |
+| Déplacement de la variable [Guide d’installation sur site](../installation/overview.md) de [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html). | Nouveau |
+| Déplacement de la variable [Guide de migration des données](../tools/data-migration-tool/how-migration-works.md) de [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html). | Nouveau |
