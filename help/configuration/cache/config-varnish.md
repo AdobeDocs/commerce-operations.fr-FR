@@ -1,7 +1,7 @@
 ---
 title: Configurer et utiliser le vernis
 description: Découvrez comment Varnish stocke les fichiers et améliore le trafic HTTP.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 0%
@@ -90,7 +90,7 @@ La mise en cache de vernis fonctionne avec Commerce en utilisant :
 
 - [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) à partir du référentiel GitHub de Magento 2
 - `.htaccess` fichier de configuration distribué pour Apache fourni avec Commerce
-- `default.vcl` la configuration de vernis générée à l’aide de la fonction [Administration](../cache/config-varnish-magento.md)
+- `default.vcl` la configuration de vernis générée à l’aide de la fonction [Administration](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
 Cette rubrique couvre uniquement les options par défaut de la liste précédente. Il existe de nombreuses autres façons de configurer la mise en cache dans des scénarios complexes (par exemple, en utilisant un réseau de diffusion de contenu) ; ces méthodes vont au-delà de la portée de ce guide.

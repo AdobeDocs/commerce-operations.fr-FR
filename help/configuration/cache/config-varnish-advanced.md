@@ -1,7 +1,7 @@
 ---
 title: Configuration du vernis avancé
 description: Configurez les fonctions Varnish avancées, notamment les modes Contrôle de l’intégrité, Grace et saint.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Le `vcl_hit` subroutine définit la manière dont Varnish répond à une demande
 
 ### Lorsque le serveur principal Commerce est sain
 
-Lorsque les contrôles de l’intégrité déterminent que le serveur principal Commerce est sain, Varnish vérifie si le temps reste dans la période de grâce. La période de grâce par défaut est de 300 secondes, mais un commerçant peut définir la valeur de la variable [Administration](https://glossary.magento.com/admin) comme décrit dans [Configuration de Commerce pour l’utilisation du vernis](config-varnish-magento.md). Si la période de grâce n’a pas expiré, Varnish diffuse le contenu obsolète et actualise de manière asynchrone l’objet à partir du serveur Commerce. Si la période de grâce a expiré, Varnish diffuse le contenu obsolète et actualise de manière synchrone l’objet à partir du serveur principal Commerce.
+Lorsque les contrôles de l’intégrité déterminent que le serveur principal Commerce est sain, Varnish vérifie si le temps reste dans la période de grâce. La période de grâce par défaut est de 300 secondes, mais un commerçant peut définir la valeur de la variable [Administration](https://glossary.magento.com/admin) comme décrit dans [Configuration de Commerce pour l’utilisation du vernis](configure-varnish-commerce.md). Si la période de grâce n’a pas expiré, Varnish diffuse le contenu obsolète et actualise de manière asynchrone l’objet à partir du serveur Commerce. Si la période de grâce a expiré, Varnish diffuse le contenu obsolète et actualise de manière synchrone l’objet à partir du serveur principal Commerce.
 
 La durée maximale pendant laquelle Varnish diffuse un objet obsolète est la somme de la période de grâce (300 secondes par défaut) et de la valeur TTL (86 400 secondes par défaut).
 
