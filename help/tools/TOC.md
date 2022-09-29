@@ -1,9 +1,9 @@
 ---
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leurs utilisations, le processus d’installation et comment y accéder.
-source-git-commit: 5b623d713d8950b362a9fa66ad97e444811d23fa
+source-git-commit: 5edd2839a611fc20b1978b01923a692b21a8dd55
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,7 @@ ht-degree: 0%
    - [Correctifs](site-wide-analysis-tool/patches.md)
 - Outil Correctifs de qualité {#quality-patches-tool}
    - [Utilisation](quality-patches-tool/usage.md)
+   - [Notes de mise à jour](quality-patches-tool/release-notes.md)
 - Observation pour Adobe Commerce {#observation-for-adobe-commerce}
    - [Introduction](observation-for-adobe-commerce/intro.md)
    - [Accès](observation-for-adobe-commerce/access.md)
@@ -40,7 +41,6 @@ ht-degree: 0%
    - [Onglet Déploiement](observation-for-adobe-commerce/deploy-tab.md)
    - [Onglet Alertes](observation-for-adobe-commerce/alerts-tab.md)
    - [Onglet WAF](observation-for-adobe-commerce/waf-tab.md)
-   - [Onglet Robots](observation-for-adobe-commerce/bots.md)
    - [Onglet CDN](observation-for-adobe-commerce/cdn-tab.md)
    - [Onglet RabbitMQ](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [Onglet Cron](observation-for-adobe-commerce/cron-tab.md)
