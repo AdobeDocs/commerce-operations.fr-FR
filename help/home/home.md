@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;accueil;rubriques les plus consultées
 title: Accueil
 description: Parcourez un index de la documentation du produit opérationnel Adobe Commerce.
-source-git-commit: 8605fa5c791a48c112efa997b14d7bffe5f3028c
+source-git-commit: e247b0bd2765e425da033f32ab99f79cfe6cc0b2
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '174'
 ht-degree: 2%
 
 ---
@@ -17,11 +17,11 @@ Obtenez des informations pratiques sur les concepts, les processus, les outils e
 <table>
 <tr>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">
       <img alt="Informations sur la version" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html"><strong>Informations sur la version</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>Informations sur la version</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -117,6 +117,7 @@ Découvrez la nouvelle documentation et les mises à jour importantes de la docu
 
 | Modifier | Type |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Déplacement de la variable [Guide d’informations sur la version](../release/roadmap.md) de [devdocs.magento.com](https://devdocs.magento.com/release/versions.html). | Nouveau |
 | Déplacement de la variable [Référence des outils de ligne de commande](../reference/commerce.md) de [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html). | Nouveau |
 | Déplacement de la variable [Guide d’installation sur site](../installation/overview.md) de [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html). | Nouveau |
 | Déplacement de la variable [Guide de migration des données](../tools/data-migration-tool/how-migration-works.md) de [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html). | Nouveau |
