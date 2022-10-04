@@ -1,7 +1,7 @@
 ---
 title: Utilisation
 description: Découvrez comment utiliser le [!DNL Quality Patches Tool].
-source-git-commit: 83fa1c77dd6105f4c97f697fd6636773d94fb5ee
+source-git-commit: 7ce26f10b92632c077d37ae03d68594ba2444098
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 0%
@@ -14,8 +14,8 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 
 >[!INFO]
-> 
->Voir [Application de correctifs individuels](#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce ou Magento Open Source. Voir [Correctifs disponibles](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) pour consulter la liste complète des correctifs publiés.
+>
+>Voir [Application de correctifs individuels](#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce ou Magento Open Source. Voir [Correctifs disponibles](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) pour consulter la liste complète des correctifs publiés.
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 ## Installer
 
 >[!INFO]
-> 
+>
 >S’il n’est pas déjà installé, vous devez l’installer. [[!DNL Git]](https://github.com/git-guides/install-git) ou [Correctif](https://man7.org/linux/man-pages/man1/patch.1.html) avant d’installer le [!DNL Quality Patches Tool]. Ajoutez la variable `magento/quality-patches` Module de compositeur `composer.json` fichier :
 
 ```bash
@@ -72,7 +72,7 @@ Le tableau d’état comprend :
    - `Recommended replacement` — Correctif recommandé pour remplacer un correctif obsolète.
 
 >[!INFO]
-> 
+>
 >Après la mise à niveau vers une nouvelle version d’Adobe Commerce ou de Magento Open Source, vous devez réappliquer les correctifs si ceux-ci ne sont pas inclus dans la nouvelle version. Voir [Réappliquer des correctifs après une mise à niveau](#re-apply-patches-after-an-upgrade).
 
 ## Application de correctifs individuels {#apply-individual-patches}

@@ -1,7 +1,7 @@
 ---
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
-source-git-commit: ead062ac2f5dbf07293aef2a5a5d9f1f21255402
+source-git-commit: ea89232bba442add673a0024753f7a5dfdc8d1f8
 workflow-type: tm+mt
 source-wordcount: '9233'
 ht-degree: 0%
@@ -14,7 +14,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 >[!INFO]
 >
->Voir [Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce ou Magento Open Source. Voir [Correctifs disponibles](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) dans le Guide de mise à jour du logiciel pour consulter la liste complète des correctifs publiés.
+>Voir [Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce ou Magento Open Source. Voir [Correctifs disponibles](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le Guide de mise à jour du logiciel pour consulter la liste complète des correctifs publiés.
 
 >[!INFO]
 >
@@ -542,4 +542,3 @@ Correctifs mineurs pour les versions de correctif
 * **MDVA-30052** (*pour Adobe Commerce >=2.3.2-p2 &lt;2.3.5*) - Correction d’un problème en raison duquel le contenu privé (stockage local) n’était pas renseigné correctement, ce qui entraînait des problèmes de performances.
 * **MDVA-30131** (*pour Adobe Commerce >=2.3.4 &lt;2.3.6 || 2.4.0*) - Correction du problème de navigation par couches, où la variable *Non* La valeur des attributs de produit de type booléen n’était pas incluse dans la navigation par couche si [!DNL Elasticsearch] a été utilisé comme moteur de recherche.
 * **MDVA-35514** (*pour Adobe Commerce >=2.4.0 &lt;2.4.1*) - Correction du problème lié à la création d’un libellé d’expédition et à l’ajout de produits commandés à un package dans la fenêtre modale Créer des packages .
-
