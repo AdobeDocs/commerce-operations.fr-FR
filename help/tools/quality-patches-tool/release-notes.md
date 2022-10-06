@@ -1,9 +1,9 @@
 ---
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
-source-git-commit: ea89232bba442add673a0024753f7a5dfdc8d1f8
+source-git-commit: bb1cb17b75a799409336068967c9d0facefeaf41
 workflow-type: tm+mt
-source-wordcount: '9233'
+source-wordcount: '9467'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,21 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour les Magento Open Sources, voir la section [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.21 {#v1-1-21}
+
+* **ACSD-46809** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.6) - Correction du problème qui entraînait l’erreur d’un utilisateur lors de l’attribution d’un grand nombre de sources de produits.
+* **ACSD-46856** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Améliore les prix des niveaux de mise à jour des performances via Système > Configuration > Import > Advanced Tarification.
+* **ACSD-46541** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.4) - Correction du problème qui empêchait un utilisateur administrateur de créer une note de crédit si un article de commande était supprimé.
+* **ACSD-46581** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Correction du problème en raison duquel le total de la taxe estimé n’est pas mis à jour après la sélection d’un pays dans le panier.
+* **ACSD-46618** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Correction du problème en raison duquel le widget de liste de produits affichait des prix en cache incorrects pour un client connecté.
+* **ACSD-46674** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Correction du problème d’affichage des options personnalisées d’un type d’image en tant que HTML dans les emails des clients.
+* **ACSD-46988** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Correction du problème en raison duquel la requête d’API &quot;devise&quot; GraphQL renvoie des valeurs NULL pour une devise personnalisée.
+* **ACSD-47076** (pour Adobe Commerce et Magento Open Source >=2.4.1 &lt;2.4.5) - Correction du problème de lecture des vidéos Vimeo sur le storefront.
+* **ACSD-45071** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.4) - Correction du problème d’ajout de la source par défaut au produit lors de l’importation.
+* **AC-3023** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Mettez à jour le schéma DHL vers la dernière version 10.0.
+* Correctifs mis à jour : MDVA-42584.
+* Correctifs remplacés : MDVA-36572, ACSD-45241.
 
 ## v1.1.20 {#v1-1-20}
 
