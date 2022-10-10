@@ -1,9 +1,9 @@
 ---
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leurs utilisations, le processus d’installation et comment y accéder.
-source-git-commit: 3914a9bb185a18fa80497630f8a6e09b58bdec22
+source-git-commit: 5e8e2730a0cc30997365bd70c4409e0eb8923dfb
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 0%
    - [Onglet Redis](observation-for-adobe-commerce/redis-tab.md)
    - [Onglet MySQL](observation-for-adobe-commerce/mysql-tab.md)
    - [Onglet PHP](observation-for-adobe-commerce/php-tab.md)
+   - [Onglet Robots](observation-for-adobe-commerce/bots.md)
    - [Onglet Déploiement](observation-for-adobe-commerce/deploy-tab.md)
    - [Onglet Alertes](observation-for-adobe-commerce/alerts-tab.md)
    - [Onglet WAF](observation-for-adobe-commerce/waf-tab.md)
