@@ -1,24 +1,28 @@
 ---
 title: Configuration du redimensionnement des images pour le stockage à distance
 description: Optimisez les ressources disque en configurant le redimensionnement des images côté serveur.
-source-git-commit: 96fe0c5eeaa029347c829c39547ee5e473c8d04d
+source-git-commit: 7fc5d561baa3c2a4aab160a35a1c8a302a62a3b1
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '247'
 ht-degree: 1%
 
 ---
 
 # Configuration du redimensionnement des images pour le stockage à distance
 
-Par défaut, [!DNL Commerce] prend en charge le redimensionnement d’image du côté de l’application. Cependant, en activant le module de stockage distant, vous pouvez utiliser Nginx pour décharger le redimensionnement des images côté serveur, où vous pouvez économiser des ressources de disque et optimiser l’utilisation du disque.
+Par défaut, Adobe Commerce prend en charge le redimensionnement des images du côté de l’application. Cependant, en activant le module de stockage distant, vous pouvez utiliser Nginx pour décharger le redimensionnement des images côté serveur, où vous pouvez économiser des ressources de disque et optimiser l’utilisation du disque.
 
 Le diagramme suivant montre comment Nginx récupère, redimensionne et stocke les images dans le cache. Le redimensionnement est déterminé par les paramètres inclus dans l’URL, tels que la hauteur et la largeur.
 
 ![redimensionnement d’image](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
-## Configuration du format d’URL dans [!DNL Commerce]
+>[!TIP]
+>
+>Pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Configuration du stockage à distance pour l’infrastructure Commerce on Cloud](cloud-support.md)
 
-Pour redimensionner les images côté serveur, vous devez configurer Commerce afin de fournir des arguments pour la hauteur, la largeur et l’emplacement (URL) de l’image.
+## Configuration du format d’URL dans Adobe Commerce
+
+Pour redimensionner les images côté serveur, vous devez configurer Adobe Commerce afin de fournir des arguments pour la hauteur, la largeur et l’emplacement (URL) de l’image.
 
 **Pour configurer Commerce pour le redimensionnement d’image côté serveur**:
 
