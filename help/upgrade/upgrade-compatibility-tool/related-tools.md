@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Upgrade Compatibility Tool] Outils connexes"
 description: En savoir plus sur les outils associés à la variable [!DNL Upgrade Compatibility Tool] sur votre projet Adobe Commerce.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: e2ddb30da8dd86236e1dcf33a3f911b67384a6d7
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -25,4 +25,4 @@ Il existe des outils liés à la fonction [!DNL Upgrade Compatibility Tool], qui
    >
    >[!DNL AmpersandHQ] n’est pas un outil officiel Adobe.
 
-- **[!DNL Quality Patches Tool]**: Outil de ligne de commande qui fournit des correctifs de qualité pour Adobe Commerce et Magento Open Source. Voir [[!DNL Quality patches tool] guide de l’utilisateur](https://devdocs.magento.com/quality-patches/tool.html) pour plus d’informations.
+- **[!DNL Quality Patches Tool]**: Outil de ligne de commande qui fournit des correctifs de qualité pour Adobe Commerce et Magento Open Source. Voir [[!DNL Quality patches tool] guide de l’utilisateur](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;} pour plus d’informations.

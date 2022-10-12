@@ -1,7 +1,7 @@
 ---
 title: Fonctionnement des correctifs
 description: Découvrez les différents types de correctifs pour Adobe Commerce et Magento Open Source et leur fonctionnement.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 1a18a445cb104420dd9b853b7c4d42ce3bddf2ac
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Vous trouverez des correctifs dans la section [Centre de sécurité](https://mag
 
 Les correctifs individuels contiennent des correctifs de qualité à faible impact pour un problème spécifique. Ces correctifs sont appliqués à la dernière version mineure prise en charge (par exemple, 2.4.x), mais peuvent ne pas figurer dans la version mineure prise en charge précédente (par exemple, 2.3.x). Adobe publie les correctifs individuels si nécessaire.
 
-Utilisez la variable [Outil Correctifs de qualité](https://devdocs.magento.com/quality-patches/tool.html) pour appliquer des correctifs individuels.
+Utilisez la variable [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;} pour appliquer des correctifs individuels.
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ index c8a6fef58d31..7d01c195791e 100644
              clearTimeout: function () {
                  clearTimeout(this.timeoutId);
 +                this.fail();
- 
+
                  return this;
              },
 ```
@@ -90,7 +90,7 @@ index c8a6fef58d31..7d01c195791e 100644
 
 Vous pouvez appliquer des correctifs à l’aide de l’une des méthodes suivantes :
 
-- [Outil Correctifs de qualité](https://devdocs.magento.com/quality-patches/tool.html)
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
 - [Ligne de commande](/help/upgrade/patches/apply.md#command-line)
 - [Compositeur](/help/upgrade/patches/apply.md#composer)
 

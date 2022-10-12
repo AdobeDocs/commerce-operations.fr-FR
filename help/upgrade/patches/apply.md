@@ -1,7 +1,7 @@
 ---
 title: Appliquer les correctifs
 description: Découvrez les méthodes d’application de correctifs à un projet Adobe Commerce ou Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: e2ddb30da8dd86236e1dcf33a3f911b67384a6d7
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Vous pouvez appliquer des correctifs à l’aide de l’une des méthodes suivantes :
 
-- [Outil Correctifs de qualité](https://devdocs.magento.com/quality-patches/tool.html)
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
 - [Ligne de commande](../patches/apply.md#command-line)
 - [Compositeur](../patches/apply.md#composer)
 
@@ -21,7 +21,7 @@ Vous pouvez appliquer des correctifs à l’aide de l’une des méthodes suivan
 
 >[!IMPORTANT]
 >
->Pour appliquer des correctifs de qualité officiels, utilisez la méthode [Outil Correctifs de qualité](https://devdocs.magento.com/quality-patches/tool.html). Effectuez toujours des tests complets avant de déployer un correctif personnalisé.
+>Pour appliquer des correctifs de qualité officiels, utilisez la méthode [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}. Effectuez toujours des tests complets avant de déployer un correctif personnalisé.
 
 Pour appliquer un correctif personnalisé à l’aide du compositeur :
 
