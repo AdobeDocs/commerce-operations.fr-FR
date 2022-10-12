@@ -1,7 +1,7 @@
 ---
-source-git-commit: 5b04a064f51426d29fb8adf8659e266aa5f453ec
+source-git-commit: a2747c1d62c4a22179c1177e7c4e76e028f66cea
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '953'
 ht-degree: 9%
 
 ---
@@ -20,9 +20,21 @@ La prise en charge de la version 2.4.4-2.4.6 se termine le 25 novembre 2024.
   </thead>
   <tbody>
     <tr>
+        <td>2.4.5-p1</td>
+        <td>11 octobre 2022</td>
+          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-5-p1.html">Notes de mise à jour</a><br>
+          </td>
+    </tr>
+    <tr>
         <td>2.4.5</td>
         <td>9 août 2022</td>
           <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-5.html">Notes de mise à jour d’Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-5.html">Notes de mise à jour de Magento Open Source</a><br>
+          </td>
+    </tr>
+    <tr>
+        <td>2.4.4-p2</td>
+        <td>11 octobre 2022</td>
+          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-4-p2.html">Notes de mise à jour</a><br>
           </td>
     </tr>
     <tr>
