@@ -1,9 +1,9 @@
 ---
 title: Calendrier des versions
 description: Découvrez quand des versions spécifiques d’Adobe Commerce sont planifiées pour la version bêta, la version préliminaire et la disponibilité générale.
-source-git-commit: 1c302d312eeeb7512d8b91063f06f8e7c9bf98bd
+source-git-commit: c0609aef52f6c8c24a6ccb036b9d44bed9b3c597
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,8 +24,6 @@ Le tableau suivant indique les dates des versions planifiées (les dates peuvent
 | Juin 2022<br>Mise à jour des fonctionnalités | \-\- | \-\- | \-\- | 21 juin 2022 |
 | Août 2022<br>Fonctionnalité + version de correctif + version de correctif de sécurité | 2.4.5<br>2.4.4-p1<br>2.4.3-p3<br>2.3.7-p4<sup>1</sup> | \-\- | 26 juillet 2022 | 9 août 2022 |
 | Octobre 2022<br>Fonctionnalité + version de correctif de sécurité | 2.4.5-p1<sup>2</sup><br>2.4.4-p2 | \-\- | 27 septembre 2022 | 11 octobre 2022 |
-| Janvier 2023<br>Mise à jour des fonctionnalités | \-\- | \-\- | \-\- | 17 janvier 2023 |
-| Mars 2023<br>Fonctionnalité + version de correctif + version de correctif de sécurité | 2.4.6<br>2.4.5-p2<br>2.4.4-p3 | Janvier 2023 | 28 février 2023 | 14 mars 2023 |
 
 <sup>\-\- Indique les éléments qui ne sont pas applicables à cette version.</sup><br>
 <sup>1 Il s’agit de la dernière version de correctif pour la ligne de mise à jour 2.3.x. La version 2.3.x atteint la fin de la prise en charge (EOS) en septembre 2022.</sup><br>
