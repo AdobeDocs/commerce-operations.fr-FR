@@ -1,9 +1,9 @@
 ---
 title: Référence des informations personnelles du client (version 1.x)
 description: Découvrez les mappages des flux de données et des entités de base de données pour les informations personnelles des clients dans Magento 1.x.
-source-git-commit: 0640b59cc529123911537475bbfc179c917ac258
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Il s’agit d’une de ces rubriques destinées à aider Adobe Commerce et les marchands et développeurs Magento Open Sources à se préparer à la conformité aux réglementations de confidentialité. Consultez votre service juridique pour déterminer si et comment votre entreprise doit se conformer à des obligations légales.
 
-Utilisez les diagrammes de flux de données et les mappages d’entités de base de données suivants à des fins de référence lors du développement de programmes de conformité aux réglementations de confidentialité, telles que :
+Utilisez les diagrammes de flux de données suivants et les mappages d’entités de base de données à titre de référence lors du développement de programmes de conformité aux réglementations de confidentialité, comme :
 
 - [RGPD](gdpr.md)
 - [CCPA](ccpa.md)
