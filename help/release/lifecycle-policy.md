@@ -1,7 +1,7 @@
 ---
 title: Stratégie de cycle de vie du logiciel
 description: Découvrez les dates clés de fin de la prise en charge logicielle des versions d’Adobe Commerce.
-source-git-commit: 79f36e3728e6bc436e8093bd4051143a48e681d6
+source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 Pour Adobe Commerce 2.4 et les versions ultérieures :
 
-- Pour rationaliser davantage notre stratégie de cycle de vie, Adobe fournit des correctifs de qualité à la ligne de mise à jour 2.4 jusqu’à la date de fin de prise en charge de la version PHP sur laquelle elle est basée. Un client peut accéder à des correctifs de qualité en contactant [Prise en charge d’Adobe Commerce](https://developer.adobe.com/commerce/contributor/community/support/) ou par le libre-service [Outil Correctifs de qualité](https://devdocs.magento.com/quality-patches/tool.html) si leur version est toujours éligible à la prise en charge de la qualité. Reportez-vous au tableau ci-dessous pour connaître les dates de fin de prise en charge des logiciels pour les lignes de mise à jour d’Adobe Commerce.
+- Pour rationaliser davantage notre stratégie de cycle de vie, Adobe fournit des correctifs de qualité à la ligne de mise à jour 2.4 jusqu’à la date de fin de prise en charge de la version PHP sur laquelle elle est basée. Un client peut accéder à des correctifs de qualité en contactant [Prise en charge d’Adobe Commerce](https://developer.adobe.com/commerce/contributor/community/support/) ou par le libre-service [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;} si leur version est toujours éligible à la prise en charge de la qualité. Reportez-vous au tableau ci-dessous pour connaître les dates de fin de prise en charge des logiciels pour les lignes de mise à jour d’Adobe Commerce.
 
 - Adobe ne fournit des correctifs de sécurité que par le biais du dernier correctif ou de la dernière version de correctif de sécurité, même si la version d’un client est toujours éligible à la prise en charge de la qualité. Contrairement aux correctifs de qualité, les correctifs de sécurité ne peuvent pas être rétroportés aux versions mineures précédentes ni aux versions de correctif antérieures dans les versions mineures prises en charge.
 
