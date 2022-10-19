@@ -1,9 +1,9 @@
 ---
 title: Calendrier des versions
 description: Découvrez quand des versions spécifiques d’Adobe Commerce sont planifiées pour la version bêta, la version préliminaire et la disponibilité générale.
-source-git-commit: c0609aef52f6c8c24a6ccb036b9d44bed9b3c597
+source-git-commit: 77ef9c276306700a9ff62795d05075e8731f5d5a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,8 @@ Le tableau suivant indique les dates des versions planifiées (les dates peuvent
 | Juin 2022<br>Mise à jour des fonctionnalités | \-\- | \-\- | \-\- | 21 juin 2022 |
 | Août 2022<br>Fonctionnalité + version de correctif + version de correctif de sécurité | 2.4.5<br>2.4.4-p1<br>2.4.3-p3<br>2.3.7-p4<sup>1</sup> | \-\- | 26 juillet 2022 | 9 août 2022 |
 | Octobre 2022<br>Fonctionnalité + version de correctif de sécurité | 2.4.5-p1<sup>2</sup><br>2.4.4-p2 | \-\- | 27 septembre 2022 | 11 octobre 2022 |
+| Janvier 2023<br>Mise à jour des fonctionnalités | \-\- | \-\- | \-\- | 17 janvier 2023 |
+| Mars 2023<br>Fonctionnalité + version de correctif + version de correctif de sécurité | 2.4.6<br>2.4.5-p2<br>2.4.4-p3 | Janvier 2023 | 28 février 2023 | 14 mars 2023 |
 
 <sup>\-\- Indique les éléments qui ne sont pas applicables à cette version.</sup><br>
 <sup>1 Il s’agit de la dernière version de correctif pour la ligne de mise à jour 2.3.x. La version 2.3.x atteint la fin de la prise en charge (EOS) en septembre 2022.</sup><br>
@@ -32,10 +34,6 @@ Le tableau suivant indique les dates des versions planifiées (les dates peuvent
 >[!TIP]
 >
 >Les mises à jour de correctif et de correctif de sécurité offrent la possibilité de mettre à niveau le code principal afin de garantir la sécurité, la fiabilité et les performances de votre plateforme. Les mises à jour de fonctionnalités ont lieu tous les deux mois. Les versions de fonctionnalités sont indépendantes du code base et sont disponibles par le biais d’un module externe ou d’une extension. Toutes les mises à jour des fonctionnalités indépendantes existantes sont publiées pendant les périodes de publication des fonctionnalités et ne se produisent pas automatiquement si la fonctionnalité est déjà mise en oeuvre.
-
->[!NOTE]
->
->Nous avons introduit une [nouvelle stratégie](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) qui s’applique à nos lignes de version prises en charge. Pour en savoir plus sur la nouvelle stratégie sous-jacente à notre calendrier des versions 2022 et à notre politique de cycle de vie, consultez notre [blog](https://business.adobe.com/blog/how-to/accelerating-innovation-through-simplified-release-strategy).
 
 ## Accès anticipé
 
