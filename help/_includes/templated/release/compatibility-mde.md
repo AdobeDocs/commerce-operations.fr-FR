@@ -1,17 +1,22 @@
 ---
-source-git-commit: d1f1f08a6c42f9d1900d37b5cdeb11fbccd2b92e
+source-git-commit: 27779307682b7fb4f4abd597772a25700f6bf132
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1907'
 ht-degree: 0%
 
 ---
 # Compatibilité
 
+<!--This include content is automatically generated using the compatibility-mde.html
+template and the "_data/release/mde.yml" data file. To update the content,
+add new information to the data file. Follow the instructions in the README instructions to generate
+the updated content: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates-->
+
 **Pris en charge** - version entièrement testée par Adobe et prise en charge.
 
-**Compatible** - version confirmée comme compatible avec ou , mais non prise en charge.
+**Compatible** - version confirmée comme compatible avec Adobe Commerce ou Magento Open Source, mais non prise en charge.
 
-**Non pris en charge** - version non compatible avec une version de Commerce ou de Magento.
+**Non pris en charge** - version non compatible avec une version d’Adobe Commerce ou de Magento Open Source.
 
 <table style="table-layout:auto">
   <thead>
