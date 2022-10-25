@@ -1,9 +1,9 @@
 ---
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
-source-git-commit: bb1cb17b75a799409336068967c9d0facefeaf41
+source-git-commit: e9ba2d0ad8568c40335e8643ef0070d9e2bb9b3f
 workflow-type: tm+mt
-source-wordcount: '9467'
+source-wordcount: '9581'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,14 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour les Magento Open Sources, voir la section [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.22 {#v1-1-22}
+
+* **ACSD-47444** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.3) - Correction de la variable _Tentative d’accès au décalage du tableau sur la valeur de type bool_ lors de l’accès à certains chemins de catégorie non existants pour les produits connus sous PHP 7.4.
+* **ACSD-47332** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Correction du problème d’échec de cron avec une erreur qui n’est signalée que lors de l’exécution entre 00:00 et 00:59 UTC.
+* **ACSD-47280** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Correction du problème en raison duquel la désactivation de la fonction de catalogue partagé sur une plage spécifique ne fonctionnait pas correctement.
+* **ACSD-47106** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Correction du problème qui empêchait l’enregistrement d’une valeur dans un nouvel attribut personnalisé sur la page de création d’une entreprise.
+* Mise à jour du correctif : ACSD-45143.
 
 ## v1.1.21 {#v1-1-21}
 
