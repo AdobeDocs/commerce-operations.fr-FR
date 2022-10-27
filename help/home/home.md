@@ -2,7 +2,7 @@
 keywords: Adobe Commerce;accueil;rubriques les plus consultées
 title: Accueil
 description: Parcourez un index de la documentation du produit opérationnel Adobe Commerce.
-source-git-commit: 441bbcf15901b9ca547780eb6f3a20efc8025d91
+source-git-commit: 80163ec1c40a19ea4eb138c3753b08daa231dc41
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 2%
@@ -126,4 +126,4 @@ Découvrez la nouvelle documentation et les mises à jour importantes de la docu
 | Modifier | Type |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
 | Déplacement de la variable [Guide de sécurité et de conformité](../security-and-compliance/overview.md) de [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html). | Nouveau |
-| Déplacement de la variable [Guide d’informations sur la version](../release/roadmap.md) de [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | Nouveau |
+| Déplacement de la variable [Guide d’informations sur la version](../release/release-notes/overview.md) de [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | Nouveau |

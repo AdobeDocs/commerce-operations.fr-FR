@@ -1,7 +1,7 @@
 ---
 title: Calendrier des versions
 description: Découvrez quand des versions spécifiques d’Adobe Commerce sont planifiées pour la version bêta, la version préliminaire et la disponibilité générale.
-source-git-commit: 77ef9c276306700a9ff62795d05075e8731f5d5a
+source-git-commit: 261aecd7d217e5c2e22f1a6c97242baa2923af60
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Calendrier des versions
 
-Adobe s’efforce continuellement de trouver le bon équilibre entre rendre les mises à niveau de produits simples et prévisibles et fournir des améliorations et de nouvelles fonctionnalités aux utilisateurs plus rapides. Au cours de l&#39;année dernière, nous avons affiné la manière dont nous fournissons des logiciels pour soutenir cet équilibre. Pour plus d’informations, reportez-vous à la section [stratégie de publication](policy.md).
+Adobe s’efforce continuellement de trouver le bon équilibre entre rendre les mises à niveau de produits simples et prévisibles et fournir des améliorations et de nouvelles fonctionnalités aux utilisateurs plus rapides. Au cours de l&#39;année dernière, nous avons affiné la manière dont nous fournissons des logiciels pour soutenir cet équilibre. Pour plus d’informations, reportez-vous à la section [stratégie de contrôle de version](versioning-policy.md).
 
 Adobe publie des correctifs fonctionnels et de sécurité pour chaque ligne de mise à jour prise en charge d’Adobe Commerce et de Magento Open Source.
 
