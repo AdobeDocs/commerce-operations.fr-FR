@@ -1,9 +1,9 @@
 ---
 title: Configuration du cache L2
 description: Découvrez comment configurer le cache L2.
-source-git-commit: e5e4cf0b3979a457e706823dd16c88508ec4abd8
+source-git-commit: 2ef8b48fab84221c8e6423f41126bbee37706809
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Commerce stocke la version des données hachées dans Redis, avec le suffixe &qu
 
 >[!INFO]
 >
->Pour Adobe Commerce sur l’infrastructure cloud, tenez compte des bonnes pratiques de la section [Mise en oeuvre étendue du cache Redis](https://support.magento.com/hc/en-us/articles/360049292532) article du support.
+>Pour Adobe Commerce sur l’infrastructure cloud, vous pouvez utiliser [variables de déploiement](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_backend) pour la configuration du cache L2.
 
 ## Exemple de configuration
 
