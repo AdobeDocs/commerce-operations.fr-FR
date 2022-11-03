@@ -1,15 +1,16 @@
 ---
-title: Processus et chronologie
+title: Processus de mise en oeuvre et calendrier
 description: Consultez des exemples d’activités de chronologie et de chronologie de mise en oeuvre standard d’Adobe Commerce.
 exl-id: 73e38098-db2b-4ad3-9f2d-ac8a377f2525
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 6e07f8c958adedd2a98d3fe0d174865a3b9ebead
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
 
-# Processus standard et chronologie
+
+# Processus de mise en oeuvre standard et chronologie
 
 De nombreuses organisations se préparent à une transformation commerciale en créant une demande de proposition (RFP). Cela inclut des exigences détaillées, les systèmes d’enregistrement actuels, une analyse de cas et des objectifs spécifiques (par exemple, les recettes, la conversion, la valeur de commande moyenne) pour définir la réussite. La marque s’approche ensuite de deux à trois intégrateurs de systèmes commerciaux ou d’agences numériques différents pour évaluer, examiner les estimations et les propositions, sélectionner une entreprise et commencer à travailler à la planification du lancement.
 
