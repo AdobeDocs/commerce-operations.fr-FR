@@ -1,9 +1,9 @@
 ---
 title: Clonage des exemples de référentiels Git de données
 description: Suivez ces étapes pour installer des exemples de données Adobe Commerce et Magento Open Source en clonant des référentiels Git.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -73,12 +73,10 @@ Pour cloner le référentiel GitHub de données d’exemple à l’aide du proto
 
    Si vous avez utilisé la variable `2.4-develop` branche du référentiel GitHub du Magento Open Source, la branche Sample Data doit être `2.4-develop`.
 
-   Si vous avez utilisé la variable `2.4.3` branche du référentiel GitHub du Magento Open Source, la branche Sample Data doit être `2.4.3`.
-
-   Pour extraire la branche appropriée, exécutez la commande suivante à partir du répertoire racine du référentiel de données d’exemple (en supposant que vous ayez besoin de la fonction `2.4.3` branche) :
+   Pour extraire la branche appropriée, exécutez la commande suivante à partir du répertoire racine du référentiel de données d’exemple (en supposant que vous ayez besoin de la fonction `2.4-develop` branche) :
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. Remplacer par `<app_root>`.
@@ -129,12 +127,10 @@ Pour cloner le référentiel GitHub de données d’exemple à l’aide du proto
 
    Si vous avez utilisé la variable `2.4-develop` branche du référentiel GitHub du Magento Open Source, la branche Sample Data doit être `2.4-develop`.
 
-   Si vous avez utilisé la variable `2.4.3` branche du référentiel GitHub du Magento Open Source, la branche Sample Data doit être `2.4.3`.
-
-   Pour extraire la branche appropriée, exécutez la commande suivante à partir du répertoire racine du référentiel de données d’exemple (en supposant que vous ayez besoin de la fonction `2.4.3` branche) :
+   Pour extraire la branche appropriée, exécutez la commande suivante à partir du répertoire racine du référentiel de données d’exemple (en supposant que vous ayez besoin de la fonction `2.4-develop` branche) :
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. Remplacer par `<magento_root>`.

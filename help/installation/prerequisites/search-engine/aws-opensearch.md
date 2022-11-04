@@ -1,7 +1,7 @@
 ---
 title: AWS OpenSearch
 description: Pour configurer le service Web OpenSearch AWS pour les installations sur site d’Adobe Commerce et de Magento Open Source, procédez comme suit.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # AWS OpenSearch
 
-Adobe Commerce et Magento Open Source 2.4.3 prennent en charge l’utilisation des grappes de services OpenSearch d’Amazon. Ce service succède à Amazon Elasticsearch Service. Cette rubrique décrit comment configurer Commerce pour utiliser AWS OpenSearch et comment migrer les données d’un Elasticsearch local ou d’une instance OpenSearch vers une grappe AWS OpenSearch.
+Adobe Commerce et Magento Open Source 2.4.5 prennent en charge l’utilisation des grappes de services OpenSearch d’Amazon. Ce service succède à Amazon Elasticsearch Service. Cette rubrique décrit comment configurer Commerce pour utiliser AWS OpenSearch et comment migrer les données d’un Elasticsearch local ou d’une instance OpenSearch vers une grappe AWS OpenSearch.
 
 ## Création d’un domaine de service OpenSearch AWS
 

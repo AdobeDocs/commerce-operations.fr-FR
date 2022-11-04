@@ -1,9 +1,9 @@
 ---
 title: Démarrage rapide de l’installation sur site
 description: Pour installer Adobe Commerce ou Magento Open Source sur une infrastructure que vous détenez, procédez comme suit.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -95,32 +95,32 @@ Pour obtenir le métappackage Adobe Commerce ou Magento Open Source :
 
    >[!NOTE]
    >
-   >Les clients Adobe Commerce peuvent accéder aux correctifs 2.4.x et 2.3.x deux semaines avant la date de disponibilité générale (GA). Les packages de version préliminaire sont disponibles uniquement via le compositeur . Vous ne pouvez pas accéder aux versions préliminaires sur Developer Portal ou GitHub avant GA. Si vous ne trouvez pas ces modules dans le compositeur, contactez l’assistance Adobe Commerce.
+   >Les clients Adobe Commerce peuvent accéder aux correctifs deux semaines avant la date de disponibilité générale (GA). Les packages de version préliminaire sont disponibles uniquement via le compositeur . Vous ne pouvez pas accéder aux versions préliminaires sur Developer Portal ou GitHub avant GA. Si vous ne trouvez pas ces modules dans le compositeur, contactez l’assistance Adobe Commerce.
 
 ### Exemple - Version mineure
 
-Les versions mineures contiennent de nouvelles fonctionnalités, des correctifs de qualité et des correctifs de sécurité. Utilisez le compositeur pour spécifier une version mineure. Par exemple, pour spécifier le métappackage Adobe Commerce 2.4.3 :
+Les versions mineures contiennent de nouvelles fonctionnalités, des correctifs de qualité et des correctifs de sécurité. Utilisez le compositeur pour spécifier une version mineure. Par exemple, pour spécifier le métappackage Adobe Commerce 2.4.5 :
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
 ```
 
 ### Exemple - Correctif de qualité
 
-Les correctifs de qualité contiennent principalement des fonctions fonctionnelles. _et_ correctifs de sécurité. Cependant, elles peuvent également parfois contenir de nouvelles fonctionnalités rétrocompatibles. Utilisez le compositeur pour télécharger un correctif de qualité. Par exemple, pour spécifier le métappackage Adobe Commerce 2.4.3 :
+Les correctifs de qualité contiennent principalement des fonctions fonctionnelles. _et_ correctifs de sécurité. Cependant, elles peuvent également parfois contenir de nouvelles fonctionnalités rétrocompatibles. Utilisez le compositeur pour télécharger un correctif de qualité. Par exemple, pour spécifier le métappackage Adobe Commerce 2.4.5 :
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
 ```
 
 ### Exemple - Correctif de sécurité
 
 Les correctifs de sécurité contiennent uniquement des correctifs de sécurité. Ils sont conçus pour faciliter et accélérer le processus de mise à niveau.
 
-Les correctifs de sécurité utilisent la convention de dénomination du compositeur `2.4.3-px`. Utilisez le compositeur pour spécifier un correctif. Par exemple, pour télécharger le métappackage Adobe Commerce 2.4.3-p1 :
+Les correctifs de sécurité utilisent la convention de dénomination du compositeur `2.4.5-px`. Utilisez le compositeur pour spécifier un correctif. Par exemple, pour télécharger le métappackage Adobe Commerce 2.4.5-p1 :
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3-p1 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5-p1 <install-directory-name>
 ```
 
 ## Définition des autorisations de fichier

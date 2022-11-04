@@ -1,9 +1,9 @@
 ---
 title: Configuration requise
 description: Utilisez cette référence pour identifier les dépendances logicielles requises qui ont été testées avec Adobe Commerce et les versions Magento Open Source.
-source-git-commit: df8240b71efe992bc1c0655aa30c32778297a3c6
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Ce tableau présente les versions des dépendances logicielles tierces que Adobe a testées avec des versions Adobe Commerce et Magento Open Source spécifiques. Adobe ne prend en charge que la combinaison de la configuration requise décrite dans le tableau suivant.
 
-Par exemple, la version 2.4.3 est entièrement testée avec MariaDB 10.4. Adobe vous recommande de mettre à niveau vers MariaDB 10.4 avant de passer à la version 2.4.3.
+Par exemple, la version 2.4.5 est entièrement testée avec MariaDB 10.4. Adobe vous recommande de mettre à niveau vers MariaDB 10.4 avant de passer à la version 2.4.5.
 
 {{$include /help/_includes/templated/system-requirements-table.md}}
 
