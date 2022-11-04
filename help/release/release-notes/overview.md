@@ -1,9 +1,9 @@
 ---
 title: Notes de mise à jour d’Adobe Commerce et de Magento Open Source
 description: Découvrez où trouver des informations pour des versions spécifiques d’Adobe Commerce et de Magento Open Source.
-source-git-commit: 3096f6820589fc7830d6439b4a76228ee47cd9d3
+source-git-commit: d63d1dd03cbf166f6fbce1df7113d1e861363f28
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '400'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ Utilisez le tableau suivant pour trouver des notes de mise à jour et des inform
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Services de paiement</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Recommendations de produit</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html?lang=en">Passage en caisse rapide</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html">Connecteur Services</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html">Connecteur Services</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html?lang=en">Exécution de la boutique</a></li>
           </ul>
         </td>
