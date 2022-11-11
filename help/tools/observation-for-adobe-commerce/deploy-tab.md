@@ -1,7 +1,7 @@
 ---
-title: '"Le [!UICONTROL Deploy] tab"'
+title: "Le [!UICONTROL Deploy] tab"
 description: En savoir plus sur les [!UICONTROL Deploy] de [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: b95a35ee64cd8e844a51a9ff699eceb9c3a9266c
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Le **[!UICONTROL Deploy State]** cadre affiche les événements de déploiement 
 
 Le **[!UICONTROL Deploy Log Detail]** cadre affiche les détails du résumé du message du journal de déploiement qui se sont produits au cours de la période sélectionnée. Le cadre analyse les chaînes suivantes dans les journaux de déploiement :
 
-* ‘%REMARQUE : Démarrage du déploiement.%&#39;) comme &quot;start_ply&quot;
+* &#39;%REMARQUE : Démarrage du déploiement.%&#39;) comme &quot;start_ply&quot;
 * &#39;%INFO : Scénarios de démarrage : scenario/deploy.xml%) comme &quot;start_scénario&quot;
 * &#39;%REMARQUE : Démarrage de pre-deploy%) en tant que &quot;start_predply&quot;
 * &#39;% INFO : Restauration du fichier journal des correctifs (%) en tant que &quot;rstr_ptch_log&quot;
@@ -134,7 +134,7 @@ Le **[!UICONTROL Cloud Log Detail]** image affiche les détails du journal cloud
 * ’%DEBUG: Étape &quot;apply-patches terminé%&quot;) comme &quot;apply_patches_complete&quot;
 * &quot;%Deploy using quick strategy%&quot;) en tant que &quot;quick_strategy_deploy&quot;
 * &#39;% AVIS : Exécution de la compilation ID%) comme &quot;di_compliation_start&quot;
-* &#39;%REMARQUE : Fin de l’exécution de la compilation d’ID%) en tant que &quot;di_compliation_finished&quot;
+* &#39;%REMARQUE : Fin de l’exécution de la compilation ID%) en tant que &quot;di_compliation_finished&quot;
 * &#39;%REMARQUE : Générer du contenu statique neuf %) en tant que &quot;gen_frsh_static_content&quot;
 * Configuration de ’%magento:static-content:deploy%) comme &quot;scd_execution&quot;
 * &#39;%REMARQUE : Fin de la génération du contenu statique neuf %) en tant que &quot;gen_frsh_static_cont_finished&quot;

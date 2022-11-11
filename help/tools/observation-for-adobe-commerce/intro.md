@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Observation for Adobe Commerce]"
 description: En savoir plus sur [!DNL Observation for Adobe Commerce], ses utilisations, le moment d’utilisation et comment y accéder.
-source-git-commit: 6523372cd5fe3219dc582123471cc85f3c47f37d
+source-git-commit: c40d78d37dc37b5ce38f61b46bcfb4d439a51ac2
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Ce guide donne un aperçu holistique de la [!DNL Observation for Adobe Commerce]
 
 Lorsque des problèmes surviennent, il peut s’avérer fastidieux de déterminer où le problème est enraciné et d’avoir les connaissances nécessaires pour le résoudre. L&#39;organisation de support Adobe a accumulé des connaissances tribales sur la base d&#39;années d&#39;analyse des logs et des sorties de ligne de commande, tout en traitant les problèmes de dépannage. L’outil tire parti de ces connaissances pour identifier des signaux importants par rapport à un calendrier commun. La chronologie peut être développée ou conventionnelle, ce qui vous permet de visualiser vos données de journal pour faciliter la gestion des performances et la résolution des problèmes.
 
-Utilisation [!DNL Observation], vous pouvez analyser les problèmes complexes rencontrés par l’assistance pour identifier les causes premières. Au lieu de suivre des données disparates, vous pouvez passer votre temps à mettre en corrélation des événements et des erreurs afin d’obtenir des informations détaillées sur les causes des goulets d’étranglement en termes de performances. L’outil est conçu pour donner une vue plus claire de certains des problèmes rencontrés par les sites pour vous aider à identifier les causes potentielles des problèmes et maintenir les performances optimales des sites. Cela inclut l’identification de et de [!DNL bots] provoquent des problèmes sur le site.
+Utilisation [!DNL Observation for Adobe Commerce], vous pouvez analyser les problèmes complexes rencontrés par l’assistance pour identifier les causes premières. Au lieu de suivre des données disparates, vous pouvez passer votre temps à mettre en corrélation des événements et des erreurs afin d’obtenir des informations détaillées sur les causes des goulets d’étranglement en termes de performances. L’outil est conçu pour vous donner une vue plus claire de certains des problèmes rencontrés par les sites pour vous aider à identifier les causes possibles des problèmes et à optimiser les performances de vos sites. Cela inclut l’identification de et de [!DNL bots] provoquent des problèmes sur le site.
 
 ## Pour qui est ce guide ?
 

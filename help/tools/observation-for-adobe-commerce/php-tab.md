@@ -1,9 +1,9 @@
 ---
-title: '"Le [!UICONTROL PHP] tab"'
-description: En savoir plus sur les [!UICONTROL PHP] Onglet [!Observation DNS pour Adobe Commerce].
-source-git-commit: f71fc3b2a66a4cc0b0d7865138184135e4a874e0
+title: "Le [!UICONTROL PHP] tab"
+description: En savoir plus sur les [!UICONTROL PHP] de [!DNL Observation for Adobe Commerce].
+source-git-commit: 28055eb09235912c66c637990e2081a70e1c7808
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Le [!UICONTROL PHP] tab
 
-Le **PHP** L’onglet affiche les problèmes de processus PHP pour fournir une analyse plus approfondie des problèmes PHP.
+Le **PHP** L’onglet présente les problèmes de processus PHP pour fournir une analyse plus approfondie des problèmes PHP.
 
 ## [!UICONTROL PHP active process details]
 
@@ -23,7 +23,7 @@ Le **[!UICONTROL PHP active process details]** frame affiche les processus PHP, 
 
 ![chargement de processus PHP](../../assets/tools/php-process-load.jpg)
 
-Cette image montre la charge du processeur des processus PHP-FPM pendant la période sélectionnée.
+Le **[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** image affiche la charge du processeur des processus PHP-FPM pendant la période sélectionnée.
 
 ## [!UICONTROL PHP Memory detail]
 
@@ -106,7 +106,7 @@ Le **[!UICONTROL Database Errors]** cadre affiche les erreurs de la base de donn
 * &#39;%1062 \[ERROR\] InnoDB:%&#39;) en tant que &#39;sql_1062_e&#39;
 * &#39;%[Remarque] WSREP : Purge de la carte mémoire sur le disque...%) comme &quot;mem_map_flush&quot;
 * Code d’erreur ‘%Internal MariaDB : 1146%) en tant que &#39;sql_1146&#39;
-* Code d’erreur ‘%Internal MariaDB : 1062%) comme &quot;sql_1062&quot; ・ ’%1062 [Avertissement] InnoDB:%) en tant que &#39;sql_1062_w&#39;
+* Code d’erreur ‘%Internal MariaDB : 1062%) comme &quot;sql_1062&quot; * ’%1062 [Avertissement] InnoDB:%) en tant que &#39;sql_1062_w&#39;
 * Code d’erreur ‘%Internal MariaDB : 1064%) comme &quot;sql_1064&quot;
 * ’%InnoDB: Échec de l’affirmation dans le fichier%) en tant que &quot;assertion_err&quot;
 * ’%mysqld_safe Nombre de processus en cours d’exécution : 0%) comme &quot;mysql_oom&quot;

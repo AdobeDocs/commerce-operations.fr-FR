@@ -1,7 +1,7 @@
 ---
-title: '"Le [!UICONTROL MySQL] tab"'
+title: "Le [!UICONTROL MySQL] tab"
 description: En savoir plus sur les [!UICONTROL MySQL] de [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: 8c9753fe5b9038978859cc101d53f897267ecfe9
 workflow-type: tm+mt
 source-wordcount: '2030'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ![Stockage gratuit de MySQL% par noeud](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)
 
-De nombreux problèmes sont causés par le manque de stockage de MySQL dans le stockage affecté à MySQL (`datadir` Paramètre de configuration MySQL, la valeur par défaut est `/data/mysql`) ou le `tmpdir` manque d&#39;espace. La valeur par défaut `tmpdir` (paramètre MySQL) est `/tmp`. Ce cadre examine la variable `/, /tmp` (s’il est défini comme un montage distinct) et la variable `/data/mysql` % de stockage gratuit. À partir de la version 5.7 de MySQL (MariaDB version 10.2), les tables tmp non compressées sont écrites dans un tablespace tmp dans la variable `/data/mysql` dans le fichier (ibtmp1). Par défaut, ce fichier se développe automatiquement sans limite. Comme il s’agit d’un tablespace, sa taille ne diminue pas et il est réinitialisé à 12 Mo au redémarrage de MySQL.
+De nombreux problèmes sont causés par le manque de stockage de MySQL dans le stockage affecté à MySQL (`datadir` Paramètre de configuration MySQL, la valeur par défaut est `/data/mysql`) ou le `tmpdir` manque d&#39;espace. La valeur par défaut `tmpdir` (paramètre MySQL) est `/tmp`. Le **[!UICONTROL MySQL% free storage by node]** regarde la `/, /tmp` (s’il est défini comme un montage distinct) et la variable `/data/mysql` pourcentage de stockage gratuit. À partir de la version 5.7 de MySQL (MariaDB version 10.2), sans compression `tmp` Les tableaux sont écrits dans une `tmp` tablespace dans le `/data/mysql` dans le fichier (ibtmp1). Par défaut, ce fichier se développe automatiquement sans limite. Comme il s’agit d’un tablespace, sa taille ne diminue pas et il est réinitialisé à 12 Mo au redémarrage de MySQL.
 
 ## [!UICONTROL MySQL Connections by Node]
 
@@ -38,7 +38,7 @@ Le **[!UICONTROL Galera Number of Nodes in cluster]** frame affiche les informat
 
 ![MySQL ferme et démarre](../../assets/tools/observation-for-adobe-commerce/mysql-tab-5.jpg)
 
-Le **[!UICONTROL MySQL shutdowns and starts]** frame détecte lorsqu’un noeud est arrêté. [!DNL Galera] Les noeuds seront expulsés et seront expulsés de la propriété [!DNL Galera] noeud . Cela entraîne généralement un redémarrage du service MySQL.
+Le **[!UICONTROL MySQL shutdowns and starts]** frame détecte lorsqu’un noeud est arrêté. Le [!DNL Galera] Les noeuds seront expulsés et seront expulsés de la propriété [!DNL Galera] noeud . Cela entraîne généralement un redémarrage du service MySQL.
 
 ## [!UICONTROL Galera log]
 
@@ -55,8 +55,8 @@ Le **[!UICONTROL Galera log]** frame affiche le nombre de signaux spécifiques p
 * &#39;%members = 2/3 (joint/total)%&#39;) as&#39;2of3&#39;
 * &#39;%members = 2/2%) comme &quot;2of2&quot;
 * &#39;%members = 1/2%&#39;) comme &quot;1of2&quot;
-* ‘%members = 1/3%) as &#39;1of3&#39;
-* ‘%members = 1/1%) as &#39;1of1&#39;
+* &#39;%members = 1/3%&#39;) comme &quot;1of3&quot;
+* &#39;%members = 1/1%) as &#39;1of1&#39;
 * &#39;%\[Remarque\] /usr/sbin/mysqld (mysqld 10.%&#39;) as&#39;sql_restart&#39;
 * &#39;%Quorum : Aucun noeud avec l’état complet :%) comme &quot;no_node_count&quot;
 * &#39;%WSREP: Member 0%) as &#39;mem_0&#39;
@@ -102,7 +102,7 @@ Le **[!UICONTROL Cron_schedule table updates]** frame affiche la durée maximale
 
 ![Traces de requête lentes](../../assets/tools/observation-for-adobe-commerce/mysql-tab-11.jpg)
 
-Le **[!UICONTROL Slow Query Traces]** frame affiche le tableau et le type de requête où il existe des traces de requête lentes. Une trace de requête lente est créée pour les transactions de requête qui prennent plus de 5 secondes. Les requêtes de mise à jour sont importantes pour ce cadre. Si un tableau est mis à jour par `UPDATE`, `DELETE`, et `INSERT` , ils peuvent verrouiller des tables pendant une période donnée.
+Le **[!UICONTROL Slow Query Traces]** frame affiche le tableau et le type de requête où il existe des traces de requête lentes. Une trace de requête lente est créée pour les transactions de requête qui prennent plus de cinq secondes. Les requêtes de mise à jour sont importantes pour ce cadre. Si un tableau est mis à jour par `UPDATE`, `DELETE`, et `INSERT` , ils peuvent verrouiller des tables pendant une période donnée.
 
 Même `SELECT` Les instructions peuvent verrouiller des lignes si elles sont utilisées avec FOR UPDATE.
 
@@ -114,13 +114,13 @@ Même `SELECT` Les instructions peuvent verrouiller des lignes si elles sont uti
 
 ![Modification de tableau Cron](../../assets/tools/observation-for-adobe-commerce/mysql-tab-13.jpg)
 
-Le **[!UICONTROL Cron table change]** frame recherche des messages d’erreur &quot;impossible d’acquérir lock for cron job:&quot;, ainsi qu’une erreur de mémoire PHP spécifique et des verrous impliquant la tâche cron. `cron_schedule` table. Si la variable `cron_schedule` est verrouillée (par exemple, par un `DELETE` s’exécutant contre), elle bloquera l’exécution d’autres crons.
+Le **[!UICONTROL Cron table change]** frame recherche les messages d’erreur &quot;impossible d’acquérir lock for cron job:&quot;, ainsi qu’une erreur de mémoire PHP spécifique et des verrous impliquant la tâche cron. `cron_schedule` table. Si la variable `cron_schedule` est verrouillée (par exemple, par un `DELETE` s’exécutant contre), elle bloquera l’exécution d’autres crons.
 
 ## [!UICONTROL Deadlocks]
 
 ![Deadlocks](../../assets/tools/observation-for-adobe-commerce/mysql-tab-14.jpg)
 
-Le **[!UICONTROL Deadlocks]** frame examine les chaînes suivantes analysées à partir des journaux MySQL.
+Le **[!UICONTROL Deadlocks]** frame examine les chaînes suivantes analysées à partir des journaux MySQL :
 
 * &#39;%PHP Erreur fatale : Taille de mémoire autorisée de %&#39;) en tant que php_mem_error
 * &#39;%get lock; essayer de redémarrer la transaction, la requête était : DELETE DE \`cron_schedule%&#39;) en tant que cron_sched_lock_del
@@ -198,7 +198,7 @@ Le **[!UICONTROL DB Statistics]** frame affiche des suppressions, écritures, li
 
 ![Erreurs de base de données](../../assets/tools/observation-for-adobe-commerce/mysql-tab-17.jpg)
 
-Le **[!UICONTROL Database Errors]** cadre affiche une grande variété de base de données [avertissements et erreurs](https://mariadb.com/kb/en/mariadb-error-codes/).
+Le **[!UICONTROL Database Errors]** cadre affiche une grande variété de base de données [avertissements et erreurs](https://mariadb.com/kb/en/mariadb-error-codes/):
 
 * La taille de mémoire allouée à la table temporaire est de plus de 20 % de innodb_buffer_pool_size% en tant que &#39;temp_tbl_buff_pool&#39;
 * &#39;%\[ERROR\] WSREP: rbr write fail%) as &#39;rbr_write_fail&#39;
@@ -225,9 +225,9 @@ Le **[!UICONTROL Database Errors]** cadre affiche une grande variété de base d
 * &#39;%SQLSTATE[HY000]: Erreur générale : 2014%) en tant que &quot;sql_2014&quot;
 * &quot;%1927 La connexion a été tuée%&quot;) en tant que &quot;sql_1927&quot;
 * &#39;%1062 \[ERROR\] InnoDB:%&#39;) en tant que &#39;sql_1062_e&#39;
-* ‘&#39;%[Remarque] WSREP : Purge de la carte mémoire sur le disque...%) comme &quot;mem_map_flush&quot;
+* &#39;&#39;%[Remarque] WSREP : Purge de la carte mémoire sur le disque...%) comme &quot;mem_map_flush&quot;
 * Code d’erreur ‘%Internal MariaDB : 1146%) en tant que &#39;sql_1146&#39;
-* Code d’erreur ‘%Internal MariaDB : 1062%) comme &quot;sql_1062&quot; ・ ’%1062 [Avertissement] InnoDB:%) en tant que &#39;sql_1062_w&#39;
+* Code d’erreur ‘%Internal MariaDB : 1062%) comme &quot;sql_1062&quot; * ’%1062 [Avertissement] InnoDB:%) en tant que &#39;sql_1062_w&#39;
 * Code d’erreur ‘%Internal MariaDB : 1064%) comme &quot;sql_1064&quot;
 * ’%InnoDB: Échec de l’affirmation dans le fichier%) en tant que &quot;assertion_err&quot;
 * ’%mysqld_safe Nombre de processus en cours d’exécution : 0%) comme &quot;mysql_oom&quot;
