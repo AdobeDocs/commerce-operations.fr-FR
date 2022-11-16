@@ -4,9 +4,9 @@ description: Découvrez les bonnes pratiques de mise en oeuvre pour la phase de 
 role: Developer, Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: 78308f9cb3d2ebe8af41c42f9bb146409367ab6c
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -67,13 +67,14 @@ Les rubriques suivantes décrivent les bonnes pratiques d’optimisation des per
 
 ## **Ventes et marketing**
 
-- [Bonnes pratiques relatives à la limite du panier de produits &#x200B;](product-cart.md)
+- [Bonnes pratiques relatives à la limite du panier de produits](product-cart.md)
 - [Bonnes pratiques relatives à la configuration des promotions](product-cart-promotions.md)
 
 ## **Portée du projet**
 
 - [Réaffectations de partenaire](partner-escalation.md)
+- [Traitement du stockage des paiements](payment-processing-storage.md)
 
 ## **Extensions d’achat**
 
-- [Bonnes pratiques relatives à l’utilisation d’extensions tierces dans Adobe Commerce &#x200B;](extensions.md)
+- [Bonnes pratiques relatives à l’utilisation d’extensions tierces dans Adobe Commerce](extensions.md)

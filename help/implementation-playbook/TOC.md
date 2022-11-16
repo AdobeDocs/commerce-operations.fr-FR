@@ -2,9 +2,9 @@
 user-guide-title: Manuel d’implémentation
 user-guide-description: Découvrez les stratégies de planification et d’implémentation d’un site Adobe Commerce performant.
 mini-toc-levels: 3
-source-git-commit: 8c86688cd0c7127b6b39c0c605c668288dbe09dc
+source-git-commit: 86149bbe268a573f94e8bdb34974403459e46909
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '244'
 ht-degree: 6%
 
 ---
@@ -88,6 +88,7 @@ ht-degree: 6%
       - [Promotions](best-practices/planning/product-cart-promotions.md)
       - [Extensions](best-practices/planning/extensions.md)
       - [Réaffectations de partenaire](best-practices/planning/partner-escalation.md)
+      - [Traitement du stockage des paiements](best-practices/planning/payment-processing-storage.md)
    - Développement {#development}
       - [Présentation](best-practices/development/overview.md)
       - [Optimisation des images](best-practices/development/image-optimization.md)
