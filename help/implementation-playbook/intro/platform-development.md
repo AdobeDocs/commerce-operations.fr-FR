@@ -2,9 +2,9 @@
 title: Principes de développement des plateformes
 description: Découvrez les principes fondamentaux du développement de plateformes lorsque vous utilisez Adobe Commerce.
 exl-id: 3d822a8c-0e81-4a80-a820-46cf2702e0bf
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,6 @@ Adobe Commerce sur l’infrastructure cloud est une plateforme d’hébergement 
 
 ![Infographie des composants Adobe Commerce](../../assets/playbooks/commerce-cloud.svg)
 
-Adobe Commerce sur l’infrastructure cloud fournit une infrastructure préconfigurée qui comprend les technologies PHP, MySQL, Redis, RabbitMQ et Elasticsearch ; un workflow basé sur Git avec des opérations de création et de déploiement automatiques pour un développement rapide et un déploiement continu efficaces chaque fois que des modifications de code sont transmises dans un environnement Platform as a Service (PaaS) ; des fichiers et des outils de configuration d’environnement hautement personnalisables ; et l’hébergement AWS qui offre un environnement évolutif et sécurisé pour les ventes en ligne et la vente au détail.
+Adobe Commerce sur l’infrastructure cloud fournit une infrastructure préconfigurée qui inclut PHP, MySQL, Redis, [!DNL RabbitMQ]et les technologies Elasticsearch; un workflow basé sur Git avec des opérations de création et de déploiement automatiques pour un développement rapide et un déploiement continu efficaces chaque fois que des modifications de code sont transmises dans un environnement Platform as a Service (PaaS) ; des fichiers et des outils de configuration d’environnement hautement personnalisables ; et l’hébergement AWS qui offre un environnement évolutif et sécurisé pour les ventes en ligne et la vente au détail.
 
 ![Infographie des composants Adobe Commerce](../../assets/playbooks/cloud-tech-stack.svg)

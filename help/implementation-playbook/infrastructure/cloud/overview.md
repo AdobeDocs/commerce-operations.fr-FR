@@ -2,9 +2,9 @@
 title: Présentation de l’infrastructure cloud
 description: Découvrez Adobe Commerce sur l’infrastructure cloud.
 exl-id: 94cf1505-0853-4e01-ba55-befc1117fbdb
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,6 @@ Examinons également le logiciel qui fait des avantages d’Adobe Commerce une r
 
 - Git est votre code dans les référentiels. Il permet l’embranchement local, des zones d’évaluation pratiques et plusieurs workflows avec création et déploiement automatiques pour un développement rapide et un déploiement continu efficaces.
 
-- Platform-as-a-Service (PaaS) fournit une infrastructure préconfigurée qui comprend des technologies PHP, MySQL, Redis, RabbitMQ et Elasticsearch.
+- Platform-as-a-Service (PaaS) fournit une infrastructure préconfigurée qui inclut PHP, MySQL, Redis, [!DNL RabbitMQ]et les technologies Elasticsearch.
 
 - L’hébergement cloud d’AWS ou d’Azure alimente l’infrastructure en tant que service (IaaS) sous-jacente, qui offre un environnement évolutif et sécurisé pour les ventes en ligne et la vente au détail.

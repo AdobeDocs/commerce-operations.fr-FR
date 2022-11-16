@@ -2,9 +2,9 @@
 title: Outils Platform
 description: Choisissez les outils de plateforme recommandés pour votre mise en oeuvre Adobe Commerce.
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Le tableau suivant comprend des solutions que nous recommandons et que vous pouv
 | Serveur web | Nginx, Apache |
 | Mise en cache des services | Redis, Varnish |
 | Services de recherche | Elasticsearch |
-| Services de la file d’attente des messages | RabbitMQ |
+| Services de la file d’attente des messages | [!DNL RabbitMQ] |
 | Outil d&#39;analyse de sécurité | SonarQube, ZAP |
 
 ## Base
@@ -61,7 +61,7 @@ Pour Adobe Commerce version 2.4 et ultérieure, toutes les installations doivent
 
 ## Services de la file d’attente des messages
 
-Les files d’attente de message fournissent un mécanisme de communication asynchrone dans lequel l’expéditeur et le destinataire d’un message ne se contactent pas. RabbitMQ est un courtier de messages Open Source qui offre un système de messagerie fiable, hautement disponible, évolutif et portable.
+Les files d’attente de message fournissent un mécanisme de communication asynchrone dans lequel l’expéditeur et le destinataire d’un message ne se contactent pas. [!DNL RabbitMQ] est un courtier de messages open source qui offre un système de messagerie fiable, hautement disponible, évolutif et portable.
 
 ## Outils de sécurité
 

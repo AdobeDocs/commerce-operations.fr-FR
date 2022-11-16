@@ -2,9 +2,9 @@
 title: Recommendations d’optimisation des performances
 description: Optimisez les performances de votre implémentation Adobe Commerce en suivant ces recommandations.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Bien que l’invalidation de la mémoire cache de la page entière de vernis soi
 
 ### Files d&#39;attente des messages
 
-Le Message Queue Framework (MQF) est un système qui permet à un module de publier des messages dans les files d’attente. Il définit également les consommateurs qui reçoivent les messages de manière asynchrone. Adobe Commerce prend en charge RabbitMQ en tant que courtier de messagerie, qui fournit une plateforme évolutive pour l’envoi et la réception de messages.
+Le Message Queue Framework (MQF) est un système qui permet à un module de publier des messages dans les files d’attente. Il définit également les consommateurs qui reçoivent les messages de manière asynchrone. Adobe Commerce prend en charge [!DNL RabbitMQ] en tant que courtier de messagerie, qui fournit une plateforme évolutive pour l’envoi et la réception de messages.
 
 ### Test et surveillance des performances
 

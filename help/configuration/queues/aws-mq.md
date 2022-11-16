@@ -1,9 +1,9 @@
 ---
 title: Configuration de la file d’attente des messages Amazon
 description: Découvrez comment configurer Commerce pour utiliser le service AWS MQ.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -65,20 +65,20 @@ async.V1.inventory.bulk-product-source-unassign.POST
 async.V1.inventory.bulk-product-source-transfer.POST
 ```
 
-La configuration par défaut pour `InventoryCatalog` ne publie pas de messages sur RabbitMQ ; le comportement par défaut consiste à exécuter l’action dans le même thread d’utilisateur. À dire `InventoryCatalog` pour publier des messages, activez `cataloginventory/bulk_operations/async`. Depuis l’administrateur, accédez à **Magasins** > Configuration > **Catalogue** > **Inventaire** > Opérations en bloc d’administration et définition  `Run asynchronously`to **Oui**.
+La configuration par défaut pour `InventoryCatalog` ne publie pas de messages sur [!DNL RabbitMQ]; le comportement par défaut consiste à exécuter l’action dans le même thread d’utilisateur. À dire `InventoryCatalog` pour publier des messages, activez `cataloginventory/bulk_operations/async`. Depuis l’administrateur, accédez à **Magasins** > Configuration > **Catalogue** > **Inventaire** > Opérations en bloc d’administration et définition  `Run asynchronously`to **Oui**.
 
 ## Test de la file d’attente des messages
 
-Pour tester l’envoi de messages de Commerce à RabbitMQ :
+Pour tester l’envoi de messages de Commerce vers [!DNL RabbitMQ]:
 
-1. Connectez-vous à la console web RabbitMQ dans AWS pour surveiller les files d’attente.
+1. Connectez-vous au [!DNL RabbitMQ] console web dans AWS pour surveiller les files d’attente.
 1. Dans l’Admin, créez un produit.
 1. Créez une source d’inventaire.
 1. Activer **Magasins** > Configuration > **Catalogue** > **Inventaire** > Opérations en bloc d’administration > Exécuter de manière asynchrone.
 1. Accédez à **Catalogue** > Produits. Dans la grille, sélectionnez le produit créé ci-dessus et cliquez sur **Attribuer la source du stock**.
 1. Cliquez sur **Enregistrer et fermer** pour terminer le processus.
 
-   Vous devriez maintenant voir les messages s’afficher dans la console web RabbitMQ.
+   Vous devriez maintenant voir les messages apparaître dans la variable [!DNL RabbitMQ] console web.
 
 1. Démarrez le `async.operations.all` client de la file d’attente des messages.
 
@@ -86,5 +86,5 @@ Pour tester l’envoi de messages de Commerce à RabbitMQ :
    bin/magento queue:consumers:start async.operations.all
    ```
 
-Le message en file d’attente devrait maintenant être traité dans la console web RabbitMQ.
+Vous devriez maintenant voir le message en file d’attente être traité dans la variable [!DNL RabbitMQ] console web.
 Vérifiez que les sources d’inventaire ont changé sur le produit dans Admin.

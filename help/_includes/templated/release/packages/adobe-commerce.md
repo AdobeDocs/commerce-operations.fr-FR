@@ -1,7 +1,7 @@
 ---
-source-git-commit: a3fa25993f365a85307db45ef16f68eeb12604bb
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '2193'
+source-wordcount: '2192'
 ht-degree: 0%
 
 ---
@@ -605,7 +605,7 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/php-amqplib/php-amqplib.git">php-amqplib/php-amqplib</a>
     </td>
     <td>bibliothèque</td>
-    <td>Anciennement videlalvaro/php-amqplib.  Cette bibliothèque est une implémentation PHP pure du protocole AMQP. Il a été testé contre RabbitMQ.</td>
+    <td>Anciennement videlalvaro/php-amqplib.  Cette bibliothèque est une implémentation PHP pure du protocole AMQP. Il a été testé contre [!DNL RabbitMQ].</td>
   </tr>
   </tbody>
 </table>

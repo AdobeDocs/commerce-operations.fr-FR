@@ -1,9 +1,9 @@
 ---
 title: Mise à niveau
 description: Découvrez les différentes phases de mise en oeuvre de la mise à niveau pour les projets Adobe Commerce et Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '869'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Vous trouverez ci-dessous des éléments que vous pouvez inclure dans une analys
    |-----------------|-----------------|------------|----------------------------------------------------------|
    | PHP | 7.2.33 | 8.1 |  |
    | Redis | 5,05 | 6.0 |  |
-   | RabbitMQ | 3,7 | 3,8 | Non utilisé actuellement, mais nous devrions envisager de l’utiliser |
+   | [!DNL RabbitMQ] | 3,7 | 3,8 | Non utilisé actuellement, mais nous devrions envisager de l’utiliser |
    | MariaDB (Cloud) | 10.2.33 | 10.4 |  |
    | MySQL | 8,0 |  |  |
    | Compositeur | 1.9.2 | 2,0 |  |

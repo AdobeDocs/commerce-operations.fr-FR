@@ -1,9 +1,9 @@
 ---
 title: Configuration de l’application
 description: Découvrez la configuration post-installation requise pour les déploiements sur site d’Adobe Commerce et de Magento Open Source.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Elasticsearch ou OpenSearch est requis pour toutes les installations à partir d
 
 Depuis la version 2.3.0, Adobe Commerce et Magento Open Source incluent la fonctionnalité de file d’attente des messages. Dans les versions antérieures, il est disponible uniquement pour Adobe Commerce.
 
-* [RabbitMQ](../../configuration/queues/message-queue-framework.md)
+* [[!DNL RabbitMQ]](../../configuration/queues/message-queue-framework.md)
 
 ## Paramètres pour Adobe Commerce uniquement
 
