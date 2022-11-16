@@ -1,9 +1,9 @@
 ---
 title: Activation ou désactivation du mode de maintenance
 description: Suivez ces étapes pour personnaliser ce que voient les clients lorsque votre déploiement Adobe Commerce ou Magento Open Source est arrêté pour maintenance.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: bc025217ed7bc2195c0a2d919139abe13d184259
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -81,9 +81,10 @@ Le `--none` efface la liste.
 
 ## Configurations multi-magasin
 
-Pour configurer plusieurs magasins, chacun avec une disposition et un contenu localisés différents, créez un habillage pour chacun d’eux et insérez-le dans `pub/errors/{name}` where `{name}` est le code du magasin. Pour faire la distinction entre les magasins et les sites web ayant la même instance, utilisez `pub/errors/{type}-{name}` where `{type}` est `store` ou `website` et correspond à la variable `MAGE_RUN_TYPE` dans la configuration de votre serveur.
+<!-- To set up multiple stores, each with a different layout and localized content, create a skin for each and put it into `pub/errors/{name}` where `{name}` is the store code. To distinguish between stores and websites with the same instance, use `pub/errors/{type}-{name}` where `{type}` is either `store` or `website` and matches the `MAGE_RUN_TYPE` in your server configuration. Another option is to pass the `$_GET['skin']` parameter to the intended processor. This method requires a specific configuration on your server. -->
+<!-- Replace the line below with the commented text after https://github.com/magento/magento2/pull/35095 is merged. -->
 
-Une autre option consiste à transmettre la variable `$_GET['skin']` au processeur prévu. Cette méthode nécessite une configuration spécifique sur votre serveur.
+Si vous souhaitez configurer plusieurs magasins, chacun avec une disposition différente et un contenu localisé, transmettez la variable `$_GET['skin']` au processeur prévu.
 
 Dans l’exemple suivant, nous utilisons une `503` type fichier de modèle d’erreur, qui nécessite du contenu localisé.
 
