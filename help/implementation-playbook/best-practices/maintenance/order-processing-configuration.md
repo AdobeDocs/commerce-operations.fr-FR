@@ -4,9 +4,9 @@ description: Découvrez les bonnes pratiques de configuration afin d’améliore
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: fbeaa486d32d77135ab97f4819ef4df9e64c6471
+source-git-commit: fb30b18c9b9f6a9f538189eeafda9ee7a29d436c
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 - **[!UICONTROL Asynchronous indexing]**: activez cette option pour empêcher les verrous de base de données et le traitement ralenti qui peuvent se produire lorsque de grands nombres de commandes sont placés simultanément.
 - **[!UICONTROL Asynchronous email notifications]**: activez cette option pour accélérer les performances de passage en caisse en envoyant des notifications par courrier électronique de passage en caisse et de traitement des commandes à des intervalles désignés au lieu de les envoyer immédiatement.
-- **[!UICONTROL Enable Archiving]**: activez cette option pour améliorer les performances des grilles Commandes, Factures, Expéditions et AEM et garder votre espace de travail à l’abri des informations superflues afin que vous puissiez vous concentrer sur l’activité actuelle. Voir [Activer l’archivage](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
+- **[!UICONTROL Enable Archiving]**: activez cette option pour améliorer les performances des commandes, des factures, des envois et des notes de crédit, et garder votre espace de travail à l’abri des informations superflues afin que vous puissiez vous concentrer sur l’activité actuelle. Voir [Activer l’archivage](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
 
 ## Produits et versions concernés
 
