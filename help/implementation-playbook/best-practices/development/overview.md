@@ -1,9 +1,9 @@
 ---
 title: Phase de développement de mise en oeuvre
 description: Découvrez les bonnes pratiques de mise en oeuvre pour la phase de développement des projets Adobe Commerce.
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: c717d45525c7893fa2c38183326534e0fa4ee0c6
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -70,3 +70,4 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
 - [Optimisation des fichiers CSS et JS](optimize-css-js-files.md)
 - [Optimiser les images pour un site plus réactif](image-optimization.md)
 - [Résolution des problèmes liés aux bonnes pratiques pour Adobe Commerce sur les &#x200B; d’infrastructure cloud](troubleshooting.md)
+- [Découvrez quand et comment modifier des tables de base de données &#x200B;](modifying-core-and-third-party-tables.md)
