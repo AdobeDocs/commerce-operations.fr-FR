@@ -4,7 +4,7 @@ description: Découvrez les bonnes pratiques de configuration des unités de ges
 role: Admin
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: 3a187ae8c066e56df0d7f4981d26ffb934f64576
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -14,9 +14,11 @@ ht-degree: 0%
 
 # Bonnes pratiques relatives à la configuration du SKU du produit
 
-Pour optimiser les performances, la valeur maximale recommandée pour les unités de gestion du stockage des produits (SKU) efficaces est de 10 millions. Ce produit maximum effectif est calculé comme suit :
+Pour optimiser les performances, le maximum recommandé pour les unités de gestion du stockage des produits (SKU) efficaces est de 242 millions. Ce produit maximum effectif est calculé comme suit :
 
-`Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups`
+```text
+Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups
+```
 
 Le fait d’avoir plus que le nombre maximal de SKU efficaces ralentit la récupération des données de produit et augmente le délai d’exécution des opérations d’administration.
 
