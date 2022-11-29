@@ -1,9 +1,9 @@
 ---
 title: En-tête X-Frame-Options
 description: Utilisez X-Frame-Options pour contrôler les rendus de page.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: db696b8ca501d128db655c5ebb161c654c6378a7
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,13 @@ Le `X-Frame-Options` L’en-tête vous permet de spécifier si un navigateur doi
 
 ## Mise en oeuvre `X-Frame-Options`
 
-Définir une valeur pour `X-Frame-Options` in `<magento_root>/app/etc/env.php`. Voici la valeur par défaut :
+Définir une valeur pour `X-Frame-Options` in `<project-root>/app/etc/env.php`. La valeur par défaut est définie comme suit :
 
 ```php
 'x-frame-options' => 'SAMEORIGIN',
 ```
+
+Redéployez pour toute modification apportée à la fonction `env.php` pour qu’il prenne effet.
 
 >[!TIP]
 >
@@ -44,10 +46,8 @@ Pour vérifier votre paramètre, affichez les en-têtes HTTP sur n’importe que
 
 L’exemple suivant utilise curl, que vous pouvez exécuter à partir de n’importe quel ordinateur pouvant se connecter à votre serveur Commerce via le protocole HTTP.
 
-Utilisez la commande suivante :
-
 ```bash
-curl -I -v --location-trusted '<your storefront URL>'
+curl -I -v --location-trusted '<storefront-URL>'
 ```
 
 Recherchez le `X-Frame-Options` dans les en-têtes.
