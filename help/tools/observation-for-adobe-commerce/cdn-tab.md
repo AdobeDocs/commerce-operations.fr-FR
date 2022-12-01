@@ -1,9 +1,9 @@
 ---
-title: '"Le [!UICONTROL CDN] tab"'
+title: "Le [!UICONTROL CDN] tab"
 description: En savoir plus sur les [!UICONTROL CDN] de [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: 424c832ba7580e5d766dea33e3b776eaca7a0d77
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '699'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Le **[!UICONTROL Error Percentage]** affiche la valeur du pourcentage ERROR des 
 
 ![Réponse moyenne de mise en cache rapide pour la période sélectionnée en secondes](../../assets/tools/observation-for-adobe-commerce/cdn-tab-9.png)
 
-Ce cadre affiche la durée en secondes des requêtes pouvant être mises en cache, ce qui signifie que si un événement `cache_response` est une MISS, elle affiche la moyenne des réponses mises en cache qui ont été manquées pendant la période sélectionnée.
+Ce cadre affiche la durée en secondes des requêtes pouvant être mises en cache, ce qui signifie que si un événement `cache_response` est un [!UICONTROL MISS], il affiche la moyenne des réponses mises en cache manquées pour le temps sélectionné.
 
 ## [!UICONTROL Fastly Cache Average Response for selected time period in seconds, faceted by POP]
 
@@ -70,7 +70,7 @@ Ce cadre affiche la durée en secondes des requêtes pouvant être mises en cach
 
 ![Demandes : depuis la période sélectionnée par rapport à la semaine précédente.](../../assets/tools/observation-for-adobe-commerce/cdn-tab-12.png)
 
-Ce cadre est similaire à la zone de résumé du nombre total de requêtes en haut, mais affiche le nombre de requêtes des semaines précédentes. Il s’agit de toutes les requêtes, et pas seulement des requêtes pouvant être mises en cache (où `is_cacheable` est vrai).
+Ce cadre est similaire à la zone de résumé pour [!UICONTROL Total Requests] dans la partie supérieure, mais affiche le nombre de requêtes des semaines précédentes. Il s’agit de toutes les requêtes, et pas seulement des requêtes pouvant être mises en cache (où `is_cacheable` est vrai).
 
 ## [!UICONTROL Response Count]
 
@@ -126,4 +126,4 @@ Le **[!UICONTROL Duration by Response status, top 25 client IP, non 200 status]*
 
 ![Fréquence des adresses IP](../../assets/tools/observation-for-adobe-commerce/cdn-tab-22.jpeg)
 
-Le **[!UICONTROL IP Frequency]** frame comptabilise les états (‘MISS’ et ‘PASS’) pour chaque IP de la variable [!DNL Fastly] journaux. Les requêtes Web avec ces états atteignent le serveur d’origine et ajoutent de la charge au serveur. Il affiche les vingt premières adresses en fréquence. Ce cadre peut être utilisé pour détecter les attaques IP ou les sources de charge importante sur un site web. Ce graphique est également présent dans l’onglet Résumé et est placé ici pour faciliter la comparaison avec plus de détails sur la variable [!DNL Fastly] les informations du journal affichées sur cet onglet.
+Le **[!UICONTROL IP Frequency]** frame comptabilise les états (&#39;MISS&#39; et &#39;PASS&#39;) pour chaque IP de la variable [!DNL Fastly] journaux. Les requêtes Web avec ces états atteignent le serveur d’origine et ajoutent de la charge au serveur. Il affiche les vingt premières adresses en fréquence. Ce cadre peut être utilisé pour détecter les attaques IP ou les sources de charge importante sur un site web. Ce graphique est également présent dans l’onglet Résumé et est placé ici pour faciliter la comparaison avec plus de détails sur la variable [!DNL Fastly] les informations du journal affichées sur cet onglet.
