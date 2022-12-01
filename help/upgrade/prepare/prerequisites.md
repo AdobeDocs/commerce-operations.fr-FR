@@ -1,9 +1,9 @@
 ---
 title: Conditions préalables complètes
 description: Préparez votre projet Adobe Commerce ou Magento Open Source à une mise à niveau en suivant les étapes préalables requises.
-source-git-commit: c2d0c1d46a5f111a245b34ed6bc706dcd52be31c
+source-git-commit: 6782498985d4fd6540b0481e2567499f74d04d97
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1401'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,7 @@ Après avoir examiné la configuration requise, vous devez remplir les condition
 
 - Mettre à jour tous les logiciels
 - Vérification de l’installation d’un moteur de recherche pris en charge
+- Conversion du format de tableau de la base de données
 - Définition de la limite des fichiers ouverts
 - Vérification de l’exécution des tâches cron
 - Définir `DATA_CONVERTER_BATCH_SIZE`
@@ -29,6 +30,10 @@ Après avoir examiné la configuration requise, vous devez remplir les condition
 Le [configuration requise](../../installation/system-requirements.md) décrire exactement les versions de logiciels tiers qui ont été testées avec Adobe Commerce et les versions de Magento Open Source.
 
 Veillez à mettre à jour toutes les exigences et dépendances système de votre environnement. Voir PHP [7,4](https://www.php.net/manual/en/migration74.php), PHP [8,0](https://www.php.net/manual/en/migration80.php), PHP [8.1](https://www.php.net/manual/en/migration81.php), et [paramètres PHP requis](../../installation/prerequisites/php-settings.md#php-settings).
+
+>[!NOTE]
+>
+>Pour Adobe Commerce sur les projets d’infrastructure cloud Pro, vous devez créer une [Assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour installer ou mettre à jour des services dans les environnements d’évaluation et de production. Indiquez les modifications de service nécessaires et incluez vos mises à jour `.magento.app.yaml` et `services.yaml` fichiers et version PHP dans le ticket. La mise à jour de votre projet peut prendre jusqu’à 48 heures pour que l’équipe chargée de l’infrastructure du cloud. Voir [Logiciels et services pris en charge](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
 
 ## Vérification de l’installation d’un moteur de recherche pris en charge
 
@@ -63,7 +68,7 @@ Vous devez installer et configurer Elasticsearch 7.6 ou version ultérieure ou O
 
 Voir [Mise à niveau d’Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) pour obtenir des instructions complètes sur la sauvegarde de vos données, la détection des problèmes de migration potentiels et le test des mises à niveau avant le déploiement en production. Selon votre version actuelle d’Elasticsearch, un redémarrage complet de la grappe peut être nécessaire ou non.
 
-Elasticsearch requiert JDK 1.8 ou version ultérieure. Voir [Installation de Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) pour vérifier quelle version de JDK est installée.
+Elasticsearch requiert Java Development Kit (JDK) 1.8 ou version ultérieure. Voir [Installation de Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) pour vérifier quelle version de JDK est installée.
 
 [Configurer l’Elasticsearch](../../configuration/search/configure-search-engine.md) décrit les tâches que vous devez effectuer après la mise à jour d’Elasticsearch 2 vers une version prise en charge.
 
@@ -79,11 +84,15 @@ Vous pouvez [migrer de l’Elasticsearch vers OpenSearch](opensearch-migration.m
 
 OpenSearch requiert JDK 1.8 ou version ultérieure. Voir [Installation de Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) pour vérifier quelle version de JDK est installée.
 
-[Configuration d’un Magento pour l’utilisation de l’Elasticsearch](../../configuration/search/configure-search-engine.md) décrit les tâches que vous devez effectuer après avoir modifié les moteurs de recherche.
+[Configuration du moteur de recherche](../../configuration/search/configure-search-engine.md) décrit les tâches que vous devez effectuer après avoir modifié les moteurs de recherche.
 
 ### Extensions tierces
 
 Nous vous recommandons de contacter le fournisseur de votre moteur de recherche pour déterminer si votre extension est entièrement compatible avec la version 2.4.
+
+## Conversion du format de tableau de la base de données
+
+Vous devez convertir le format de toutes les tables de base de données à partir de `COMPACT` to `DYNAMIC`. Vous devez également convertir le type de moteur de stockage à partir de `MyISAM` to `InnoDB`. Voir [bonnes pratiques](../../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md).
 
 ## Définition de la limite des fichiers ouverts
 
@@ -116,9 +125,9 @@ Pour définir la valeur dans votre shell Bash :
 >
 >Il est recommandé d’éviter de définir une valeur pour la variable `pcre.recursion_limit` dans la propriété `php.ini` car cela peut entraîner des restaurations incomplètes sans préavis d’échec.
 
-## Vérifier que les tâches cron sont en cours d’exécution
+## Vérification de l’exécution des tâches cron
 
-Planificateur de tâches UNIX `cron` est essentiel pour les opérations Adobe Commerce et Magento Open Source quotidiennes. Il planifie des choses comme la réindexation, les newsletters, les e-mails, les plans de site, etc. Plusieurs fonctionnalités nécessitent au moins une tâche cron s’exécutant en tant que propriétaire du système de fichiers.
+Planificateur de tâches UNIX `cron` est essentiel pour les opérations Adobe Commerce et Magento Open Source quotidiennes. Il planifie des choses comme la réindexation, les newsletters, les emails et les plans de site. Plusieurs fonctionnalités nécessitent au moins une tâche cron s’exécutant en tant que propriétaire du système de fichiers.
 
 Pour vérifier que votre tâche cron est configurée correctement, vérifiez crontab en saisissant la commande suivante en tant que propriétaire du système de fichiers :
 
