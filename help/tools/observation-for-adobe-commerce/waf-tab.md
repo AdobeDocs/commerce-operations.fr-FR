@@ -1,55 +1,55 @@
 ---
-title: '"Le [!UICONTROL WAF] tab"'
-description: En savoir plus sur les [!UICONTROL WAF] de [!DNL Observation for Adobe Commerce].
-source-git-commit: 431bc7c06e76b061a94026aa380d8be88d227099
+title: "Le [!DNL WAF] tab"
+description: En savoir plus sur les [!DNL WAF] de [!DNL Observation for Adobe Commerce].
+source-git-commit: d3d178c333e6f1436a96993611930cb12cd66a71
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Le [!UICONTROL WAF] tab
+# Le [!DNL WAF] tab
 
-Le **[!UICONTROL WAF]** affiche le trafic transmis et bloqué par le pare-feu.
+Le **[!DNL WAF]** affiche le trafic transmis et bloqué par la variable [!DNL firewall].
 
-## [!UICONTROL WAF traffic summary]
+## [!DNL WAF traffic summary]
 
 ![Synthèse du trafic WAF](../../assets/tools/observation-for-adobe-commerce/waf-1.png)
 
-Le **[!UICONTROL WAF traffic summary]** image affiche le nombre de trafic transmis, consignés, bloqués et échoués par le pare-feu.
+Le **[!DNL WAF traffic summary]** L’image affiche un nombre de trafic transmis, consigné, bloqué et en échec par la variable [!DNL firewall].
 
-## [!UICONTROL WAF Top 10 blocked IP Addresses]
+## [!DNL WAF Top 10 blocked IP Addresses]
 
 ![10 premières adresses IP bloquées par WAF](../../assets/tools/observation-for-adobe-commerce/waf-2.png)
 
-Le **[!UICONTROL WAF Top 10 blocked IP Addresses]** frame affiche les 10 adresses IP les plus bloquées par le pare-feu.
+Le **[!DNL WAF Top 10 blocked IP Addresses]** Le cadre affiche les 10 adresses IP les plus bloquées par la variable [!DNL firewall].
 
-## [!UICONTROL WAF Top 10 countries for blocked requests]
+## [!DNL WAF Top 10 countries for blocked requests]
 
 ![Les 10 premiers pays du WAF pour les demandes bloquées](../../assets/tools/observation-for-adobe-commerce/waf-3.jpg)
 
-Le **[!UICONTROL WAF Top 10 countries for blocked requests]** frame affiche un nombre de demandes bloquées pour les pays dans les 10 premiers pour les demandes bloquées par le pare-feu.
+Le **[!DNL WAF Top 10 countries for blocked requests]** Le cadre affiche un nombre de demandes bloquées pour les pays figurant dans les 10 premiers pour les demandes bloquées par la variable [!DNL firewall].
 
-## [!UICONTROL WAF Top 10 logged IP Addresses]
+## [!DNL WAF Top 10 logged IP Addresses]
 
 ![10 premières adresses IP enregistrées WAF](../../assets/tools/observation-for-adobe-commerce/waf-4.jpg)
 
-Le **[!UICONTROL WAF Top 10 logged IP Addresses]** frame affiche les adresses IP dans les 10 premières adresses IP enregistrées par le pare-feu.
+Le **[!DNL WAF Top 10 logged IP Addresses]** L’image affiche les adresses IP dans les 10 premières adresses IP enregistrées par le [!DNL firewall].
 
-## [!UICONTROL Top 10 WAF Rules Executed and Logged by IP address]
+## [!DNL Top 10 WAF Rules Executed and Logged by IP address]
 
 ![Les 10 premières règles WAF exécutées et consignées par adresse IP](../../assets/tools/observation-for-adobe-commerce/waf-5.jpg)
 
-Le **[!UICONTROL Top 10 WAF Rules Executed and Logged by IP address]** frame affiche les adresses IP qui se trouvent dans les 10 premières règles de pare-feu correspondant le plus souvent.
+Le **[!DNL Top 10 WAF Rules Executed and Logged by IP address]** frame affiche les adresses IP qui se trouvent dans les 10 premières correspondances [!DNL firewall] règles.
 
-## [!UICONTROL WAF Logged Details]
+## [!DNL WAF Logged Details]
 
 ![Détails consignés WAF](../../assets/tools/observation-for-adobe-commerce/waf-6.jpg)
 
-Le **[!UICONTROL WAF Logged Details]** frame affiche les requêtes enregistrées par le pare-feu, y compris des détails tels que l’horodatage, la ville, la région et le centre de données.
+Le **[!DNL WAF Logged Details]** Le cadre affiche les requêtes enregistrées par la fonction [!DNL firewall], y compris des détails tels que l’horodatage, la ville, la région et le centre de données.
 
-## [!UICONTROL WAF Blocked Details]
+## [!DNL WAF Blocked Details]
 
 ![Informations bloquées par le WAF](../../assets/tools/observation-for-adobe-commerce/waf-7.jpg)
 
-Le **[!UICONTROL WAF Blocked Details]** frame affiche les requêtes bloquées par le pare-feu, y compris des détails tels que l’horodatage, la ville, la région et le centre de données.
+Le **[!DNL WAF Blocked Details]** Le cadre affiche les requêtes bloquées par la fonction [!DNL firewall], y compris des détails tels que l’horodatage, la ville, la région et le centre de données.
