@@ -1,9 +1,9 @@
 ---
 title: Utiliser des redis pour le cache par défaut
 description: Découvrez comment configurer Redis comme cache par défaut pour Adobe Commerce et Magento Open Source.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: 47d513e7ca51ad7dbc149d0f1e076f673452918c
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Utiliser des redis pour le cache par défaut
 
-Commerce fournit des options de ligne de commande pour configurer la page Redis et la mise en cache par défaut. Bien que vous puissiez configurer la mise en cache en modifiant le `<Commerce install dir>app/etc/env.php` , il est recommandé d’utiliser la ligne de commande, en particulier pour les configurations initiales. La ligne de commande fournit la validation, en s’assurant que la configuration est syntaxiquement correcte.
+Commerce fournit des options de ligne de commande pour configurer la page Redis et la mise en cache par défaut. Bien que vous puissiez configurer la mise en cache en modifiant le `<Commerce-install-dir>app/etc/env.php` , il est recommandé d’utiliser la ligne de commande, en particulier pour les configurations initiales. La ligne de commande fournit la validation, en s’assurant que la configuration est syntaxiquement correcte.
 
 Vous devez [install Redis](config-redis.md#install-redis) avant de continuer.
 
@@ -20,25 +20,25 @@ Vous devez [install Redis](config-redis.md#install-redis) avant de continuer.
 Exécutez la variable `setup:config:set` et spécifiez des paramètres spécifiques à la mise en cache par défaut Redis.
 
 ```bash
-bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parameter_name>=<parameter_value>...
+bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parameter>=<value>...
 ```
 
-where
+Avec les paramètres suivants :
 
-`--cache-backend=redis` active la mise en cache par défaut Redis. Si cette fonctionnalité a déjà été activée, omettez ce paramètre.
+- `--cache-backend=redis` active la mise en cache par défaut Redis. Si cette fonctionnalité a déjà été activée, omettez ce paramètre.
 
-`--cache-backend-redis-<parameter_name>=<parameter_value>` est une liste de paires clé-valeur qui configurent la mise en cache par défaut :
+- `--cache-backend-redis-<parameter>=<value>` est une liste de paires clé-valeur qui configurent la mise en cache par défaut :
 
-| Paramètre de ligne de commande | Paramètre | Signification | Valeur par défaut |
-|--- |--- |--- |--- |
-| cache-backend-redis-server | server | Nom d’hôte complet, adresse IP ou chemin absolu vers un socket UNIX. La valeur par défaut 127.0.0.1 indique que Redis est installé sur le serveur Commerce. | 127.0.0.1 |
-| cache-backend-redis-port | port | Port d’écoute du serveur Redis | 6379 |
-| cache-backend-redis-db | base | Obligatoire si vous utilisez Redis pour le cache par défaut et de page entière. Vous devez indiquer le numéro de la base de données d’un des caches ; l’autre cache utilise 0 par défaut.<br><br>Important : Si vous utilisez Redis pour plusieurs types de mise en cache, les numéros de la base de données doivent être différents. Il est recommandé d’attribuer le numéro de base de données de mise en cache par défaut à 0, le numéro de base de données de mise en cache de page à 1 et le numéro de base de données de stockage de session à 2. | 0 |
-| cache-backend-redis-password | password | La configuration d’un mot de passe Redis active l’une de ses fonctionnalités de sécurité intégrées : la valeur `auth` , ce qui nécessite que les clients s’authentifient pour accéder à la base de données. Le mot de passe est directement configuré dans le fichier de configuration de Redis, `/etc/redis/redis.conf`. |  |
+| Paramètre de ligne de commande | Valeur | Signification | Valeur par défaut |
+| ------------------------------ | --------- | ------- | ------------- |
+| `cache-backend-redis-server` | server | Nom d’hôte complet, adresse IP ou chemin absolu vers un socket UNIX. La valeur par défaut 127.0.0.1 indique que Redis est installé sur le serveur Commerce. | `127.0.0.1` |
+| `cache-backend-redis-port` | port | Port d’écoute du serveur Redis | `6379` |
+| `cache-backend-redis-db` | base | Obligatoire si vous utilisez Redis pour le cache par défaut et de page entière. Vous devez indiquer le numéro de la base de données d’un des caches ; l’autre cache utilise 0 par défaut.<br><br>**Important**: Si vous utilisez Redis pour plusieurs types de mise en cache, les numéros de la base de données doivent être différents. Il est recommandé d’attribuer le numéro de base de données de mise en cache par défaut à 0, le numéro de base de données de mise en cache de page à 1 et le numéro de base de données de stockage de session à 2. | `0` |
+| `cache-backend-redis-password` | password | La configuration d’un mot de passe Redis active l’une de ses fonctionnalités de sécurité intégrées : la valeur `auth` , ce qui nécessite que les clients s’authentifient pour accéder à la base de données. Le mot de passe est directement configuré dans le fichier de configuration de Redis : `/etc/redis/redis.conf` |  |
 
 ### Exemple, commande
 
-L’exemple suivant active la mise en cache par défaut de Redis, définit l’hôte sur `127.0.0.1` et attribue le numéro de la base de données à 0. Redis utilise les valeurs par défaut de tous les autres paramètres.
+L’exemple suivant active la mise en cache par défaut de Redis, définit l’hôte sur `127.0.0.1`et attribue le numéro de la base de données à 0. Redis utilise les valeurs par défaut de tous les autres paramètres.
 
 ```bash
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
@@ -49,25 +49,25 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=
 Pour configurer la mise en cache de la page Redis dans Commerce, exécutez le `setup:config:set` avec des paramètres supplémentaires.
 
 ```bash
-bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter_name>=<parameter_value>...
+bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
 ```
 
-where
+Avec les paramètres suivants :
 
-`--page-cache=redis` active la mise en cache de la page Redis. Si cette fonctionnalité a déjà été activée, omettez ce paramètre.
+- `--page-cache=redis` active la mise en cache de la page Redis. Si cette fonctionnalité a déjà été activée, omettez ce paramètre.
 
-`--page-cache-redis-<parameter_name>=<parameter_value>` est une liste de paires paramètre/valeur qui configurent la mise en cache de page :
+- `--page-cache-redis-<parameter>=<value>` est une liste de paires clé-valeur qui configurent la mise en cache de page :
 
-| Paramètre de ligne de commande | Paramètre | Signification | Valeur par défaut |
-|--- |--- |--- |--- |
-| page-cache-redis-server | server | Nom d’hôte complet, adresse IP ou chemin absolu vers un socket UNIX. La valeur par défaut 127.0.0.1 indique que Redis est installé sur le serveur Commerce. | 127.0.0.1 |
-| page-cache-redis-port | port | Port d’écoute du serveur Redis | 6379 |
-| page-cache-redis-db | base | Obligatoire si vous utilisez Redis pour le cache de page par défaut et complet. Vous devez indiquer le numéro de la base de données d’un des caches ; l’autre cache utilise 0 par défaut.<br/>Important : Si vous utilisez Redis pour plusieurs types de mise en cache, les numéros de la base de données doivent être différents. Il est recommandé d’attribuer le numéro de base de données de mise en cache par défaut à 0, le numéro de base de données de mise en cache de page à 1 et le numéro de base de données de stockage de session à 2. | 0 |
-| page-cache-redis-password | password | La configuration d’un mot de passe Redis active l’une de ses fonctionnalités de sécurité intégrées : la valeur `auth` , ce qui nécessite que les clients s’authentifient pour accéder à la base de données. Configurez le mot de passe dans le fichier de configuration Redis, /etc/redis/redis.conf. |  |
+| Paramètre de ligne de commande | Valeur | Signification | Valeur par défaut |
+| ------------------------------ | --------- | ------- | ------------- |
+| `page-cache-redis-server` | server | Nom d’hôte complet, adresse IP ou chemin absolu vers un socket UNIX. La valeur par défaut 127.0.0.1 indique que Redis est installé sur le serveur Commerce. | `127.0.0.1` |
+| `page-cache-redis-port` | port | Port d’écoute du serveur Redis | `6379` |
+| `page-cache-redis-db` | base | Obligatoire si vous utilisez Redis pour le cache de page par défaut et complet. Vous devez indiquer le numéro de la base de données d’un des caches ; l’autre cache utilise 0 par défaut.<br/>**Important**: Si vous utilisez Redis pour plusieurs types de mise en cache, les numéros de la base de données doivent être différents. Il est recommandé d’attribuer le numéro de base de données de mise en cache par défaut à 0, le numéro de base de données de mise en cache de page à 1 et le numéro de base de données de stockage de session à 2. | `0` |
+| `page-cache-redis-password` | password | La configuration d’un mot de passe Redis active l’une de ses fonctionnalités de sécurité intégrées : la valeur `auth` , ce qui nécessite que les clients s’authentifient pour accéder à la base de données. Configurez le mot de passe dans le fichier de configuration Redis : `/etc/redis/redis.conf` |  |
 
 ### Exemple, commande
 
-L’exemple suivant active la mise en cache de la page Redis, définit l’hôte sur `127.0.0.1` et attribue le numéro de la base de données à 1. Tous les autres paramètres sont définis sur la valeur par défaut.
+L’exemple suivant active la mise en cache de la page Redis, définit l’hôte sur `127.0.0.1`et attribue le numéro de la base de données à 1. Tous les autres paramètres sont définis sur la valeur par défaut.
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-redis-db=1
@@ -75,7 +75,7 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.
 
 ## Résultats
 
-Suite aux deux exemples de commandes, Commerce ajoute des lignes similaires à ce qui suit : `<Commerce install dir>app/etc/env.php`:
+Suite aux deux exemples de commandes, Commerce ajoute des lignes similaires à ce qui suit : `<Commerce-install-dir>app/etc/env.php`:
 
 ```php
 'cache' => [
@@ -133,23 +133,23 @@ Après [configuration d’une grappe Redis sur AWS](https://aws.amazon.com/getti
 
 ### Configuration de Commerce pour l’utilisation de la grappe
 
-Commerce prend en charge plusieurs types de configurations de mise en cache. En règle générale, les configurations de mise en cache sont fractionnées entre front-end et backend. La mise en cache frontale est classée comme &quot;par défaut&quot;, utilisée pour tout type de cache. Vous pouvez personnaliser ou diviser en caches de niveau inférieur pour obtenir de meilleures performances. Une configuration Redis courante consiste à séparer le cache par défaut et le cache de page dans leur propre base de données Redis (RDB).
+Commerce prend en charge plusieurs types de configurations de mise en cache. En règle générale, les configurations de mise en cache sont fractionnées entre front-end et backend. La mise en cache frontale est classée comme `default`, utilisé pour tout type de cache. Vous pouvez personnaliser ou diviser en caches de niveau inférieur pour obtenir de meilleures performances. Une configuration Redis courante consiste à séparer le cache par défaut et le cache de page dans leur propre base de données Redis (RDB).
 
 Exécuter `setup` pour spécifier les points d’entrée Redis.
 
-Configuration de Commerce pour Redis en tant que mise en cache par défaut :
+Pour configurer Commerce for Redis en tant que mise en cache par défaut :
 
 ```bash
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=<ElastiCache Primary Endpoint host> --cache-backend-redis-port=<ElastiCache Primary Endpoint port> --cache-backend-redis-db=0
 ```
 
-Configurez la mise en cache de la page Commerce for Redis :
+Pour configurer la mise en cache de la page Commerce for Redis :
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=<ElastiCache Primary Endpoint host> --page-cache-redis-port=<ElastiCache Primary Endpoint port> --page-cache-redis-db=1
 ```
 
-Configurez Commerce pour utiliser Redis pour le stockage de session :
+Pour configurer Commerce afin d’utiliser Redis pour le stockage de session :
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=<ElastiCache Primary Endpoint host> --session-save-redis-port=<ElastiCache Primary Endpoint port> --session-save-redis-log-level=4 --session-save-redis-db=2
@@ -157,13 +157,13 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
 
 ### Vérification de la connectivité
 
-Pour vérifier que Commerce parle à ElasiCache :
+**Vérification de la communication de Commerce avec ElastiCache**:
 
 1. Ouvrez une connexion SSH à l’instance Commerce EC2.
 1. Démarrez le moniteur Redis.
 
    ```bash
-   redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port> monitor
+   redis-cli -h <ElastiCache-Primary-Endpoint-host> -p <ElastiCache-Primary-Endpoint-port> monitor
    ```
 
 1. Ouvrez une page dans l’interface utilisateur de Commerce.
@@ -189,10 +189,9 @@ Pour vérifier que Commerce parle à ElasiCache :
 
 ## Fonction de préchargement Redis
 
-Comme Commerce stocke de nombreuses données de configuration dans le cache Redis, nous pouvons précharger des données réutilisées entre les pages.
-Pour trouver les clés qui doivent être préchargées, vous devez analyser les données transférées de Redis vers Commerce. Nous suggérons de précharger les données chargées sur chaque page, les exemples les plus courants sont les suivants : `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
-Redis utilise la variable `pipeline` afin de combiner des requêtes de chargement.
-Veuillez noter que les clés doivent inclure le préfixe de base de données, par exemple si le préfixe de base de données est `061_`, la clé de préchargement ressemble à `061_SYSTEM_DEFAULT`.
+Comme Commerce stocke les données de configuration dans le cache Redis, nous pouvons précharger les données réutilisées entre les pages. Pour rechercher des clés qui doivent être préchargées, analysez les données transférées de Redis vers Commerce. Nous suggérons de précharger les données chargées sur chaque page, telles que `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
+
+Redis utilise la variable `pipeline` afin de combiner des requêtes de chargement. Les clés doivent inclure le préfixe de la base de données ; par exemple, si le préfixe de base de données est `061_`, la clé de préchargement se présente comme suit : `061_SYSTEM_DEFAULT`
 
 ```php
 'cache' => [
@@ -222,7 +221,7 @@ Veuillez noter que les clés doivent inclure le préfixe de base de données, pa
 ]
 ```
 
-Si vous utilisez la fonctionnalité de préchargement avec le cache L2, n&#39;oubliez pas d&#39;ajouter le suffixe &#39;:hash&#39; à vos clés, puisque le cache L2 ne transfère que le hachage des données, et non les données elles-mêmes :
+Si vous utilisez la fonction de préchargement avec le cache L2, n’oubliez pas d’ajouter la variable `:hash` suffixe à vos clés, puisque le cache L2 ne transfère que le hachage des données, et non les données elles-mêmes :
 
 ```php
 'preload_keys' => [
@@ -310,7 +309,7 @@ Exemple de sortie de mise en cache de page :
 redis-cli ping
 ```
 
-`PONG` doit être la réponse.
+La réponse attendue est la suivante : `PONG`
 
 Si les deux commandes ont réussi, Redis est configuré correctement.
 

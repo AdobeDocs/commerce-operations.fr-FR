@@ -1,9 +1,9 @@
 ---
 title: Gestion des files d’attente de messages
 description: Découvrez comment gérer les files d’attente de messages à partir de la ligne de commande d’Adobe Commerce.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Vous pouvez également utiliser un gestionnaire de processus tel que [Superviseu
 
 >[!INFO]
 >
->Si votre boutique Adobe Commerce est hébergée sur la plateforme Cloud, utilisez la variable [`CRON_CONSUMERS_RUNNER`](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner) pour configurer la variable `consumers_runner` tâche cron.
+>Si votre boutique Adobe Commerce est hébergée sur la plateforme Cloud, utilisez la variable [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) pour configurer la variable `consumers_runner` tâche cron.
 
 ### Configuration spécifique
 
@@ -82,6 +82,6 @@ Modifiez la variable `/app/etc/env.php` fichier pour configurer la tâche cron `
 
    >[!INFO]
    >
-   >Si votre boutique Adobe Commerce est hébergée sur la plateforme Cloud, utilisez la variable [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://devdocs.magento.com/cloud/env/variables-deploy.html#consumers_wait_for_max_messages) pour configurer la manière dont les consommateurs traitent les messages de la file d’attente des messages.
+   >Si votre boutique Adobe Commerce est hébergée sur la plateforme Cloud, utilisez la variable [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) pour configurer la manière dont les consommateurs traitent les messages de la file d’attente des messages.
 
 Voir [Démarrage des consommateurs de la file de messages](../cli/start-message-queues.md).

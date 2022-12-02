@@ -1,9 +1,9 @@
 ---
 title: Modes d’application
 description: L’application Commerce peut fonctionner dans différents modes selon vos besoins. Affichez la liste détaillée des modes d’application disponibles.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Vous pouvez exécuter l’application Commerce dans l’une des méthodes suivan
 
 >[!INFO]
 >
->[Adobe Commerce sur l’infrastructure cloud](https://devdocs.magento.com/cloud/bk-cloud.html) ne prend en charge que les modes de production et de maintenance.
+>[Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) ne prend en charge que les modes de production et de maintenance.
 
 ## Mode par défaut
 
@@ -71,4 +71,4 @@ Exécutez l’application Commerce en mode de maintenance pour mettre votre site
 
 Vous pouvez créer un [page de maintenance personnalisée](../../upgrade/troubleshooting/maintenance-mode-options.md), activez et désactivez manuellement le mode de maintenance et configurez le mode de maintenance pour permettre aux visiteurs provenant d’adresses IP autorisées de visualiser normalement le magasin. Voir [activation et désactivation du mode de maintenance](../../installation/tutorials/maintenance-mode.md).
 
-Si vous utilisez Commerce sur l’infrastructure cloud, l’application Commerce s’exécute en mode de maintenance pendant la phase de déploiement. Une fois le déploiement terminé, l’application Commerce revient en mode de production. Voir [Hooks de déploiement](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-hook) dans le _Guide Commerce Cloud_.
+Si vous utilisez Commerce sur l’infrastructure cloud, l’application Commerce s’exécute en mode de maintenance pendant la phase de déploiement. Une fois le déploiement terminé, l’application Commerce revient en mode de production. Voir [Hooks de déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks) dans le _Guide sur l’infrastructure de Commerce on Cloud_.

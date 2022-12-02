@@ -1,9 +1,9 @@
 ---
 title: Remplacement des paramètres de configuration
 description: Découvrez comment utiliser les variables d’environnement pour remplacer les paramètres de configuration.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Vous pouvez remplacer la valeur de _any_ configuration à l’aide des variables
 
 >[!TIP]
 >
->Consultez la section [Configuration des environnements](https://devdocs.magento.com/cloud/env/variables-intro.html) dans la _Guide Commerce Cloud_ pour plus d’informations sur l’utilisation des variables dans Adobe Commerce sur l’infrastructure cloud.
+>Consultez la section [Configuration des environnements](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) dans la _Guide sur l’infrastructure de Commerce on Cloud_.
 
 ## Variables d’environnement
 
@@ -253,6 +253,6 @@ Un exemple détaillé est présenté dans la section [Définition de valeurs de 
 >
 >- Pour utiliser les valeurs définies dans la variable `$_ENV` tableau, vous devez définir `variables_order = "EGPCS"`(Environnement, Obtenir, Publier, Cookie et Serveur) dans votre `php.ini` fichier . Pour plus d’informations, voir [documentation PHP](https://www.php.net/manual/en/ini.core.php).
 >
->- Pour Adobe Commerce sur l’infrastructure cloud, si vous tentez de remplacer les paramètres de configuration à l’aide de la variable [Interface Web du projet](https://devdocs.magento.com/cloud/project/project-webint-basic.html#project-conf-env-var), vous devez ajouter en préfixe le nom de la variable `env:`. Par exemple :
+>- Pour Adobe Commerce sur l’infrastructure cloud, si vous tentez de remplacer les paramètres de configuration à l’aide de la variable [Interface Web du projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), vous devez ajouter en préfixe le nom de la variable `env:`. Par exemple :
 >
->![Exemple de variable d’environnement](https://devdocs.magento.com/common/images/cloud/cloud_env_var_example.png)
+>![Exemple de variable d’environnement](../../assets/configuration/cloud-console-envvariable.png)

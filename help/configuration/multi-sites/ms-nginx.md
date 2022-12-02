@@ -1,9 +1,9 @@
 ---
 title: Configuration de plusieurs sites web avec Nginx
 description: Suivez ce tutoriel pour configurer plusieurs sites web avec Nginx.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Nous supposons que :
 
    Des tâches supplémentaires peuvent être nécessaires pour déployer plusieurs sites web dans un environnement hébergé ; contactez votre fournisseur d’hébergement pour plus d’informations.
 
-   Des tâches supplémentaires sont requises pour configurer Adobe Commerce sur l’infrastructure cloud. Une fois les tâches abordées dans cette rubrique terminées, reportez-vous à la section [Configuration de plusieurs sites web ou magasins](https://devdocs.magento.com/cloud/project/project-multi-sites.html) dans le _Guide Commerce Cloud_.
+   Des tâches supplémentaires sont requises pour configurer Adobe Commerce sur l’infrastructure cloud. Une fois les tâches abordées dans cette rubrique terminées, reportez-vous à la section [Configuration de plusieurs sites web ou magasins](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) dans le _Guide sur l’infrastructure de Commerce on Cloud_.
 
 - Vous acceptez plusieurs domaines dans un fichier d’hôte virtuel ou utilisez un hôte virtuel par site Web ; les fichiers de configuration de l’hôte virtuel se trouvent dans `/etc/nginx/sites-available`.
 - Vous utilisez le `nginx.conf.sample` fourni par Commerce avec uniquement les modifications abordées dans ce tutoriel.
@@ -265,8 +265,8 @@ bin/magento cache:clean config full_page
 1. Ajoutez l’itinéraire statique au format :
 
    ```conf
-   <ip address> french.mysite.mg
-   <ip address> german.mysite.mg
+   <ip-address> french.mysite.mg
+   <ip-address> german.mysite.mg
    ```
 
 1. Accédez à l’une des URL suivantes dans votre navigateur :
@@ -280,7 +280,7 @@ bin/magento cache:clean config full_page
 >[!INFO]
 >
 >- Des tâches supplémentaires peuvent être nécessaires pour déployer plusieurs sites web dans un environnement hébergé ; contactez votre fournisseur d’hébergement pour plus d’informations.
->- Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud ; see [Configuration de plusieurs sites Web ou magasins Cloud](https://devdocs.magento.com/cloud/project/project-multi-sites.html) dans le _Guide Commerce Cloud_.
+>- Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud ; see [Configuration de plusieurs sites Web ou magasins Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) dans le _Guide sur l’infrastructure de Commerce on Cloud_.
 
 
 ### Dépannage

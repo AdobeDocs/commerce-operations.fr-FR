@@ -1,9 +1,9 @@
 ---
 title: Gestion des indexeurs
 description: Consultez des exemples d’affichage et de gestion des indexeurs de commerce.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -220,7 +220,7 @@ Catalog Search:                                    Update on Save
 
 >[!INFO]
 >
->Avant de basculer entre les modes indexeur, il est conseillé de placer votre site web sur [maintenance](../../installation/tutorials/maintenance-mode.md) mode et [Désactivation des tâches cron](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs). Cela vous évite de subir les verrous de base de données.
+>Avant de basculer entre les modes indexeur, il est conseillé de placer votre site web sur [maintenance](../../installation/tutorials/maintenance-mode.md) mode et [Désactivation des tâches cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Cela vous évite de subir les verrous de base de données.
 
 Pour spécifier la configuration de l’indexeur :
 
