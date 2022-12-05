@@ -1,7 +1,7 @@
 ---
 title: Définition des valeurs de configuration
 description: Découvrez comment définir des valeurs de configuration et modifier des valeurs verrouillées dans Admin.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: cb8edb8de8f8419e9992b180ea927ba55cbd839b
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -133,8 +133,8 @@ Le tableau suivant décrit la variable `set` paramètres de commande :
 | --- | --- |
 | `--scope` | Portée de la configuration. Les valeurs possibles sont les suivantes : `default`, `website`ou `store`. La valeur par défaut est `default`. |
 | `--scope-code` | Le code d’étendue de la configuration (code du site web ou code d’affichage de magasin) |
-| `-le or --lock-env` | Verrouille la valeur afin qu’elle ne puisse pas être modifiée dans l’administrateur ou modifie un paramètre déjà verrouillé dans l’administrateur. La commande écrit la valeur dans la variable `<Commerce base dir>/app/etc/env.php` fichier . |
-| `-lc or --lock-config` | Verrouille la valeur afin qu’elle ne puisse pas être modifiée dans l’administrateur ou modifie un paramètre déjà verrouillé dans l’administrateur. La commande écrit la valeur dans la variable `<Commerce base dir>/app/etc/config.php` fichier . Le `--lock-config` option remplace `--lock-env` si vous spécifiez les deux options. |
+| `-e or --lock-env` | Verrouille la valeur afin qu’elle ne puisse pas être modifiée dans l’administrateur ou modifie un paramètre déjà verrouillé dans l’administrateur. La commande écrit la valeur dans la variable `<Commerce base dir>/app/etc/env.php` fichier . |
+| `-c or --lock-config` | Verrouille la valeur afin qu’elle ne puisse pas être modifiée dans l’administrateur ou modifie un paramètre déjà verrouillé dans l’administrateur. La commande écrit la valeur dans la variable `<Commerce base dir>/app/etc/config.php` fichier . Le `--lock-config` option remplace `--lock-env` si vous spécifiez les deux options. |
 | `path` | _Obligatoire_. Chemin de configuration |
 | `value` | _Obligatoire_. La valeur de la configuration |
 
