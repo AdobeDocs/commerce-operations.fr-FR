@@ -1,9 +1,9 @@
 ---
 title: Obtention des clés d’authentification
 description: Suivez ces étapes pour récupérer les informations d’identification afin d’accéder aux packages Adobe Commerce et Magento Open Source Composer sur repo.magento.com.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: d209d3f7fde55f7495488f2cbeeebf21024875ed
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,15 @@ ht-degree: 0%
 
 Le `repo.magento.com` est l’emplacement où les modules Adobe Commerce, Magento Open Source et tiers Composer sont stockés et nécessitent une authentification. Utilisez votre compte de Commerce Marketplace pour générer une paire de 32 caractères. *clés d’authentification* pour accéder au référentiel.
 
->[!NOTE]
+Pour pouvoir accéder aux packages Adobe Commerce et Magento Open Source, vous devez utiliser les clés associées à un MAGEID auquel l’accès à ces packages a été accordé. Le MAGEID est généralement le contact Principal sur le compte Adobe Commerce et peut ne pas toujours être le propriétaire du projet Adobe Commerce sur le projet d’infrastructure cloud.
+
+>[!TIP]
 >
->Pour pouvoir accéder aux packages Adobe Commerce et Magento Open Source, vous devez utiliser les clés associées à un MAGEID auquel l’accès à ces packages a été accordé. Le MAGEID correspond généralement à la variable **Contact de facturation** sur le compte Adobe Commerce et ne peut pas toujours être le **Propriétaire du projet** du projet d’infrastructure cloud Adobe Commerce. Si vous rencontrez [errors](https://support.magento.com/hc/en-us/articles/360040296392), vous ne disposez peut-être pas d’une autorisation d’accès au kit ou le droit d’accès a expiré en raison d’une facture en souffrance sur le compte. Contact [Prise en charge d’Adobe Commerce](https://support.magento.com/hc/en-us) pour obtenir de l’aide sur votre MAGEID.
+>Si vous rencontrez [errors](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), vous ne disposez peut-être pas d’une autorisation d’accès au kit ou le droit d’accès a expiré en raison d’une facture en souffrance sur votre compte.
+>
+>* Si vous êtes la personne Principale de contact sur le compte, vérifiez qu&#39;il n&#39;y a pas de facture en suspens répertoriée sur le compte.
+>* Si les clés fournies par le contact Principal ne fonctionnent pas et qu&#39;il n&#39;y a aucune facture en suspens sur le compte, contactez [Prise en charge d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour obtenir de l’aide à l’aide du MAGEID du contact Principal.
+
 
 Pour créer des clés d’authentification :
 
