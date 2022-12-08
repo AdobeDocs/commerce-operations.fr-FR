@@ -1,17 +1,17 @@
 ---
-title: '"Le [!UICONTROL Infra] tab"'
-description: Le [!UICONTROL Infra] isole les problèmes et les causes des problèmes d’infrastructure.
-source-git-commit: b0d80d97f60b24bc801063dc484f3a495cf0a036
+title: "Le [!DNL Infra] tab"
+description: Le [!DNL Infra] isole les problèmes et les causes des problèmes d’infrastructure.
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
 
 
-# Le [!UICONTROL Infra] tab
+# Le [!DNL Infra] tab
 
-Le **[!UICONTROL Infra]** isole les problèmes et les causes des problèmes d’infrastructure. Vous trouverez plus loin la description des cadres que vous pouvez voir dans l’onglet .
+Le **[!DNL Infra]** isole les problèmes et les causes des problèmes d’infrastructure. Vous trouverez plus loin la description des cadres que vous pouvez voir dans l’onglet .
 
 ## [!UICONTROL Service Alerts – Infrastructure Alerts by Application name]
 
@@ -23,7 +23,7 @@ Le **[!UICONTROL Service Alerts – Infrastructure Alerts by Application name]**
 
 ![Utilisation des noeuds par montage](../../assets/tools/observation-for-adobe-commerce/inode-usage-mount.jpg)
 
-Le **[!UICONTROL Inode usage by mount]** image affiche l’utilisation du code par montage pendant la période sélectionnée. Même s’il y a beaucoup de stockage gratuit, si un noeud manque d’inodes, cela indiquera un manque de stockage disponible. La suppression de fichiers (en particulier les petits fichiers) libère de l’espace et rend les informations disponibles.
+Le **[!UICONTROL Inode usage by mount]** affichage des images [!DNL inode] utilisation par montage pendant la période sélectionnée. Même s’il peut y avoir beaucoup de stockage gratuit, si un noeud est à court de [!DNL inodes], cela indique un manque de stockage disponible. La suppression des fichiers (en particulier les petits fichiers) libère de l’espace et crée des [!DNL inodes] disponible.
 
 ## [!UICONTROL vCPU tier view over timeline GREATER 2 weeks]
 

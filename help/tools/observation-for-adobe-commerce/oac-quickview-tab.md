@@ -1,15 +1,15 @@
 ---
-title: '"Le [!UICONTROL QuickView] tab"'
-description: L’onglet QuickView explique les différents types d’alerte que vous pouvez voir, y compris ceux dont l’espace disque est faible et l’utilisation du serveur.
-source-git-commit: 4d700c04be5cd1ec2dc1c43c627feeed93f0fbee
+title: "Le [!DNL QuickView] tab"
+description: Le [!DNL QuickView] Cet onglet décrit les différents types d’alerte que vous pouvez voir, y compris ceux qui ont un faible espace disque et une utilisation du serveur.
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
 
-# Le [!UICONTROL QuickView] tab
+# Le [!DNL QuickView] tab
 
 Le **[!UICONTROL QuickView]** Cet onglet décrit les différents types d’alerte que vous pouvez voir, y compris ceux qui ont un faible espace disque et une utilisation du serveur. De plus, les cadres de l’onglet sont décrits.
 
