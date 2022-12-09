@@ -1,9 +1,9 @@
 ---
 title: Guide d’installation
 description: "Utilisation de ce guide pour l’installation [!DNL Site-Wide Analysis Tool] pour votre site web"
-source-git-commit: 5603d0feee6ec9dd5e8b534a0e64df274d7ab84d
+source-git-commit: 696f1624fe43fdd637b374b880667d35daca04de
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Votre infrastructure sur site doit répondre aux exigences suivantes avant d’i
 L’agent requiert la variable [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) l’extension à installer sur votre système et [configuré](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) avec les clés API. Pour vérifier que l’extension est installée, exécutez la commande suivante :
 
 ```bash
-bin/magento module:status Magento_ServicesConnector
+bin/magento module:status Magento_ServicesId
 ```
 
 Si vous avez installé l’extension et l’avez configurée à l’aide d’une clé d’API existante pour un autre service, vous **DOIT régénérer la clé API** et mettez-le à jour dans l’administrateur Adobe Commerce de l’agent.
@@ -102,19 +102,25 @@ Si l’extension n’est pas installée, procédez comme suit pour l’installer
 1. Ajoutez l’extension à votre `composer.json` et installez-le.
 
    ```bash
-   composer require magento/services-connector:1.*
+   composer require magento/services-id
    ```
 
 1. Activez l’extension .
 
    ```bash
-   bin/magento module:enable Magento_ServicesConnector
+   bin/magento module:enable Magento_ServicesId
    ```
 
 1. Mettez à jour le schéma de la base de données.
 
    ```bash
    bin/magento setup:upgrade
+   ```
+
+1. Effacez le cache.
+
+   ```bash
+   bin/magento cache:clean
    ```
 
 1. [Configuration des clés d’API](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) pour connecter l’extension à votre système.
