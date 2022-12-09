@@ -1,9 +1,9 @@
 ---
-title: '"Le [!UICONTROL Security] tab"'
+title: "Le [!UICONTROL Security] tab"
 description: En savoir plus sur les [!UICONTROL Security] de [!DNL Observation for Adobe Commerce].
-source-git-commit: 5e4babd14bb918db7f894b7ca6a0344a4652704c
+source-git-commit: 297c3fed4c0f7ad1a3cb40addef1d33fa8d41525
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -33,19 +33,19 @@ Le **[!UICONTROL Create Account access]** Le cadre indique le nombre de nouvelle
 
 ## [!UICONTROL POST activities]
 
-Le **[!UICONTROL POST activities]** Le cadre affiche les activités du POST pour le site, facettées sur client_ip depuis la propriété [!DNL Fastly] journaux. Il indique également l’URL à laquelle l’adresse IP a accès.
+Le **[!UICONTROL POST activities]** affiche la `POST` activités du site, facettées sur `client_ip` de la [!DNL Fastly] journaux. Il indique également l’URL à laquelle l’adresse IP a accès.
 
 ![POST-activities](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
 
 ## [!UICONTROL POST activities summary table]
 
-Le **Tableau récapitulatif des activités du POST** Le cadre affiche les activités du POST résumées pour le site, facettées sur client_ip depuis la propriété [!DNL Fastly] journaux. Il indique également le nombre d’adresses URL auxquelles l’adresse IP accède. Le décompte correspond à la période sélectionnée.
+Le **[!UICONTROL POST activities summary table]** Le cadre affiche le résumé `POST` activités du site, facettées sur `client_ip` de la [!DNL Fastly] journaux. Il indique également le nombre d’adresses URL auxquelles l’adresse IP accède. Le décompte correspond à la période sélectionnée.
 
 ![POST-activities-summary](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
 
 ## [!UICONTROL POST activities details table]
 
-Le **[!UICONTROL POST activities details table]** Le cadre affiche les activités du POST pour le site à partir du [!DNL Fastly] journaux. Il affiche également tous les détails de la variable [!DNL Fastly] journal de ces requêtes. Elle est limitée aux 2000 dernières demandes.
+Le **[!UICONTROL POST activities details table]** affiche la `POST` activités pour le site à partir de la fonction [!DNL Fastly] journaux. Il affiche également tous les détails de la variable [!DNL Fastly] journal de ces requêtes. Elle est limitée aux 2000 dernières demandes.
 ![POST-activities-details](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
 
 ## [!UICONTROL Guest Carts activities]
