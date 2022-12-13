@@ -1,9 +1,9 @@
 ---
 title: Configuration du compartiment AWS S3 pour le stockage à distance
 description: Configurez votre projet Commerce pour utiliser le service de stockage AWS S3 pour le stockage à distance.
-source-git-commit: 9a5993c9a65ad210f1a9682734730f235bbc3d44
+source-git-commit: 31078c836fb088a10712c8c4cf4430a38d1962f2
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,12 @@ Le [Amazon Simple Storage Service (Amazon S3)][AWS S3] est un service de stockag
 
    ```bash
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
+   ```
+
+1. Synchronisez les fichiers multimédias avec l’enregistrement à distance.
+
+   ```bash
+   bin/magento remote-storage:sync
    ```
 
 ## Configuration de Nginx

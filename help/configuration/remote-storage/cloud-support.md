@@ -1,9 +1,9 @@
 ---
 title: Stockage à distance pour Commerce sur l’infrastructure cloud
 description: Consultez des conseils sur la configuration du stockage à distance pour Adobe Commerce sur l’infrastructure cloud.
-source-git-commit: 0653d90d92e264b62fcc648f2b1307c013e9be54
+source-git-commit: 2080950852e3c4e6da556733e56f68e0e8005530
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Définissez la variable `REMOTE_STORAGE` en tant que [variable au niveau de l’
 magento-cloud variable:create --level environment --name REMOTE_STORAGE --json true --inheritable false --value '{"driver":"aws-s3","prefix":"uat","config":{"bucket":"aws-bucket-id","region":"eu-west-1","key":"optional-key","secret":"optional-secret"}}'
 ```
 
-Cela crée une `REMOTE_STORAGE` avec la configuration JSON spécifiée. Le `REMOTE_STORAGE` utilise une chaîne JSON pour configurer le stockage à distance. Vous trouverez ci-dessous un exemple de configuration JSON.
+Cela crée une `REMOTE_STORAGE` avec la configuration JSON spécifiée. Le `REMOTE_STORAGE` utilise une chaîne JSON pour configurer le stockage à distance. Voici un exemple de configuration JSON :
 
 ```json
 {
