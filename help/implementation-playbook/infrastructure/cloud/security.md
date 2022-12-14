@@ -2,9 +2,9 @@
 title: Sécurité des infrastructures dans le cloud
 description: Découvrez comment sécuriser Adobe Commerce sur l’infrastructure cloud.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 50882bebb4712e6cf095a81297684f37e15b1a6b
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1644'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Toutes les activités AWS sont connectées à AWS CloudTrail. Les journaux Linux
 
 Les données sensibles peuvent couvrir les informations personnelles des consommateurs ou les données confidentielles des clients Managed Services. La protection des données clients et clients sensibles est une obligation essentielle pour Adobe Commerce Managed Services. Managed Services et nos clients ont des obligations légales concernant les informations d’identification personnelle. Outre les fonctionnalités de sécurité de l’architecture, il existe d’autres contrôles pour limiter la distribution et l’accès aux données sensibles.
 
-Les clients détiennent leurs données et contrôlent l’emplacement de ces données. Le client spécifie l’emplacement où résident ses instances de production et de développement. Ils indiquent également l’emplacement qui sera utilisé pour l’environnement du Magento Business Intelligence (MBI) en association avec Commerce, et si cette application MBI a accès ou non à des informations d’identification personnelle. Les instances de production peuvent se trouver dans la plupart des régions d’AWS, tandis que les environnements de développement et d’IMS peuvent se trouver aux États-Unis ou dans l’Union européenne à l’heure actuelle.
+Les clients détiennent leurs données et contrôlent l’emplacement de ces données. Le client spécifie l’emplacement où résident ses instances de production et de développement. Ils spécifient également l’emplacement qui sera utilisé pour l’environnement de création de rapports Adobe Commerce conjointement avec Commerce, et si cette application de création de rapports Adobe Commerce a accès ou non à des informations d’identification personnelle. Les instances de production se trouvent dans la plupart des régions d’AWS, tandis que les environnements de développement et de reporting d’Adobe Commerce se trouvent actuellement aux États-Unis ou dans l’Union européenne.
 
 Les données sensibles peuvent passer par le réseau de serveur CDN Fastly, mais ne sont pas stockées dans le réseau Fastly. Tous les partenaires inclus dans l’offre Managed Services d’Adobe Commerce ont des obligations contractuelles pour assurer la protection des données sensibles. Managed Services ne déplace pas les données sensibles du client ou du consommateur des emplacements spécifiés par le client.
 
