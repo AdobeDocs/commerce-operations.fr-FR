@@ -1,7 +1,7 @@
 ---
 title: Démarrage des consommateurs de la file de messages
 description: Découvrez comment démarrer un consommateur de file d’attente de messages.
-source-git-commit: 02f02393878d04b4a0fcdae256ac1ac5dd13b7f6
+source-git-commit: 3e3dac0c75622b210cf1168639b8804003f3c538
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Vous devez démarrer un consommateur de file de messages pour activer les opérations asynchrones telles que les actions de masse Inventory management et les points de terminaison en masse REST et asynchrones. Pour activer la fonctionnalité B2B, vous devez démarrer plusieurs consommateurs. Les modules tiers peuvent également nécessiter le démarrage d’un consommateur personnalisé.
+Vous devez commencer une [client de la file d&#39;attente de messages](../queues/consumers.md) pour activer les opérations asynchrones telles que les actions de masse Inventory management et les points de terminaison REST en masse et asynchrones. Pour activer la fonctionnalité B2B, vous devez démarrer plusieurs consommateurs. Les modules tiers peuvent également nécessiter le démarrage d’un consommateur personnalisé.
 
 Pour afficher la liste de tous les consommateurs :
 

@@ -1,9 +1,9 @@
 ---
 user-guide-title: Guide de configuration
 user-guide-description: Configurez les fonctionnalités et services de votre application Adobe Commerce ou Magento Open Source.
-source-git-commit: b872a61f74818990833ba6b48e061fa1ca69b7cb
+source-git-commit: 31f9ff21a848e248d2c3da7cfb3cfc8bfd5785be
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,7 @@ ht-degree: 0%
    + [Structure de la file d&#39;attente des messages](queues/message-queue-framework.md)
    + [Gestion des files d’attente de messages](queues/manage-message-queues.md)
    + [Configuration d’Amazon MQ](queues/aws-mq.md)
+   + [Consommateurs](queues/consumers.md)
 + Plusieurs sites {#multi-sites}
    + [Plusieurs sites et vues](multi-sites/ms-overview.md)
    + [Identifiant d’incrémentation de l’entité de base de données](multi-sites/change-increment-id.md)

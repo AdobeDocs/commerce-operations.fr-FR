@@ -1,7 +1,7 @@
 ---
 title: Présentation des files de messages
 description: Découvrez la structure de la file d’attente des messages et son fonctionnement avec l’application Adobe Commerce et Magento Open Source.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 78ad565f051f254229424ddcdb8ce633d3a78ec6
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Présentation des files d’attente de messages
 
-Le framework de file d’attente des messages (MQF) est un système qui permet d’utiliser une [module](https://glossary.magento.com/module) pour publier des messages dans les files d’attente. Il définit également les consommateurs qui recevront les messages de manière asynchrone. Le MQF utilise [[!DNL RabbitMQ]](https://www.rabbitmq.com) en tant que courtier de messagerie, qui fournit une plateforme évolutive pour l’envoi et la réception de messages. Il comprend également un mécanisme de stockage des messages non diffusés. [!DNL RabbitMQ] est basé sur la spécification AMQP 0.9.1 du protocole Advanced Message Queuing Protocol (AMQP).
+Le framework de file d’attente des messages (MQF) est un système qui permet d’utiliser une [module](https://glossary.magento.com/module) pour publier des messages dans les files d’attente. Il définit également la variable [consommateurs](consumers.md) qui recevront les messages de manière asynchrone. Le MQF utilise [[!DNL RabbitMQ]](https://www.rabbitmq.com) en tant que courtier de messagerie, qui fournit une plateforme évolutive pour l’envoi et la réception de messages. Il comprend également un mécanisme de stockage des messages non diffusés. [!DNL RabbitMQ] est basé sur la spécification AMQP 0.9.1 du protocole Advanced Message Queuing Protocol (AMQP).
 
 Le diagramme suivant illustre la structure de la file d’attente des messages :
 
