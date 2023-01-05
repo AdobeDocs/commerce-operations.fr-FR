@@ -4,9 +4,9 @@ description: Maintenez et optimisez les performances du site en suivant les bonn
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ Pour optimiser les performances du site, suivez les bonnes pratiques d’indexat
 - Examinez la configuration de l’index.
 - Définissez les indexeurs sur _[!UICONTROL Update on Schedule]_pour les sites volumineux, les sites avec des mises à jour fréquentes et un trafic important. Voir [Gestion des index](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
 - Suivez [bonnes pratiques en matière de performances](../../../performance/configuration.md) pour la gestion des index.
+
+>[!IMPORTANT]
+>
+>Le [!DNL Customer Grid] ne peut être réindexé qu’à l’aide de la fonction [!UICONTROL Update on Save] . Cet index ne prend pas en charge la variable `Update by Schedule` .
 
 ## Informations supplémentaires
 

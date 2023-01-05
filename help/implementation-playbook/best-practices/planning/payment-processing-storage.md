@@ -4,9 +4,9 @@ description: Découvrez comment traiter et stocker en toute sécurité les infor
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 124eaf6e7b465b320d3d7e6a3694130edb93f187
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Bonnes pratiques en matière de traitement et de stockage des paiements
 
-L&#39;un des principes clés du maintien de la paix [Conformité PCI](https://nam04.safelinks.protection.outlook.com/GetUrlReputation) dispose d’une stratégie pour traiter et stocker correctement les paiements par carte de crédit.
+L&#39;un des principes clés du maintien de la paix [Conformité PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) dispose d’une stratégie pour traiter et stocker correctement les paiements par carte de crédit.
 
 Le stockage des données des titulaires de carte dans Adobe Commerce est **strictement interdit** et cela pourrait être une violation de vos obligations en tant que commerçant en vertu de la norme de sécurité des données du secteur des cartes de paiement (PCI-DSS). Vous trouverez plus d’informations sur notre modèle de responsabilité partagée et sur les directives relatives aux obligations des commerçants dans notre [guide de responsabilité partagée pour Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) sur le Centre de gestion de l’Adobe.
 
@@ -31,7 +31,7 @@ Nous vous recommandons de suivre les bonnes pratiques ci-dessous pour vous assur
 
 Si le stockage des données du détenteur de carte est nécessaire, les données du détenteur de carte doivent être stockées en dehors d’Adobe Commerce avec des protections de stockage. La mise en place de protections de stockage pour les détails de paiement, comme les données des titulaires de carte de crédit, contribue à prévenir la fraude et d&#39;autres problèmes de sécurité potentiels. En accord avec d&#39;autres normes PCI, la première ligne de défense consiste à avoir des protections en place. Certaines méthodes préférées pour améliorer la protection des données stockées incluent le cryptage, la troncation, la segmentation en unités lexicales, le hachage à sens unique et le masquage.
 
-La protection des clés cryptographiques est essentielle aux stratégies de protection des données. Il est essentiel d’avoir des gardiens compétents et fiables qui surveillent ces clés.
+La protection des clés cryptographiques est essentielle aux stratégies de protection des données. Il est essentiel d&#39;avoir des gardiens compétents et fiables qui surveillent ces clés.
 
 Enfin, un Principal numéro de compte (PAN) doit être illisible pendant le stockage (par exemple, masqué tel que XXX). Cela inclut le stockage portable et les supports de sauvegarde tels que les lecteurs Flash, les disques durs USB et externes, et même les journaux de contrôle.
 

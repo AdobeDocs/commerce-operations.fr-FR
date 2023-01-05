@@ -4,7 +4,7 @@ description: Découvrez comment transmettre des instructions sur votre site Adob
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
@@ -107,11 +107,11 @@ Pour les étapes de modification du `robots.txt` et supprimez toutes les entrée
 
 >[!TIP]
 >
->Si vous avez besoin d’aide, [envoyer un ticket d’assistance Adobe Commerce ;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.md#submit-ticket).
+>Si vous avez besoin d’aide, [envoyer un ticket d’assistance Adobe Commerce ;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Informations supplémentaires
 
 - [Présentation des sites web, des magasins et des vues de magasin](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
 - [Ajouter des sites web](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
 - [Utilisez Fastly pour bloquer le trafic malveillant de vos sites Adobe Commerce.](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
-- [robots.txt renvoie une erreur 404 dans Adobe Commerce sur l’infrastructure cloud 2.3.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.md)
+- [robots.txt renvoie une erreur 404 dans Adobe Commerce sur l’infrastructure cloud 2.3.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)

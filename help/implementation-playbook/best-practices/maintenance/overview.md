@@ -1,9 +1,9 @@
 ---
 title: Phase de maintenance de la mise en oeuvre
 description: Découvrez les bonnes pratiques de mise en oeuvre pour la phase de maintenance des projets Adobe Commerce.
-source-git-commit: 46c06a74f221877391196894abc1f5f217c5b073
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,7 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
 - [Performances du serveur frontal d’audit](frontend-performance.md)
 - [Prêt, prêt, maintenance](https://business.adobe.com/blog/basics/ready-set-maintain)
 - [Utiliser l’outil SWAT pour garantir la sécurité et la maniabilité d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) - Pile CTAG
-- Nouvelle relique
-- Journaux
-- Espace disque
+- [Utilisez les notifications New Relic et Health pour surveiller les performances, l’espace disque et les journaux des sites Adobe Commerce déployés sur l’infrastructure cloud.](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html)
 
 ## Gestion des bases de données
 
@@ -53,14 +51,15 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
 - [Comment réindexer](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
 - [Bonnes pratiques de configuration pour les &#x200B; indexeurs](indexer-configuration.md)
 - [Bonnes pratiques de configuration pour le traitement des commandes](order-processing-configuration.md)
-- Pile CTAG
-- Planifiez la mise à niveau pour les augmentations de trafic prévues pendant les promotions ou les vacances - Contenu du paquet de balises
+
+<!-- Asset not yet integrated from CTAG deck:
+- Plan upsizing for planned traffic increases during promotions or holidays -->
 
 ## Configuration
 
 - [Planification des mises à jour de l’administrateur sur les sites de production](scheduling-admin-updates-in-production.md)
 
-- Planification de la haute saison et des périodes promotionnelles (redimensionnement) - Contenu du paquet de balises
+<!-- Asset not yet integrated from CTAG deck: Planning for peak season and promotional periods (upsizing)-->
 
 ## Correctifs
 

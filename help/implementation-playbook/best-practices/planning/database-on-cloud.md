@@ -4,9 +4,9 @@ description: Découvrez comment configurer les paramètres de la base de donnée
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,6 @@ Voir [Activer l’archivage](https://experienceleague.adobe.com/docs/commerce-ad
 
 ## Informations supplémentaires
 
-- [Quelles sont les principales différences entre InnoDB et MYISAM ?](http://www.expertphp.in/article/what-are-the-main-differences-between-innodb-and-myisam)
+- [Moteurs de stockage MySQL](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
 - [Conditions préalables à la mise à niveau d’Adobe Commerce 2.3.5 pour MariaDB](../maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [Bonnes pratiques pour résoudre les problèmes de performances de la base de données](../maintenance/resolve-database-performance-issues.md)
