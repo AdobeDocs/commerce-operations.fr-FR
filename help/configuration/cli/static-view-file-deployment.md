@@ -1,9 +1,9 @@
 ---
 title: Déploiement de fichiers d’affichage statique
 description: Découvrez comment écrire des fichiers statiques dans le système de fichiers Commerce en mode de production.
-source-git-commit: 4fe6d6a76a5d4849d4f96b61b95a9a3dae7fc76a
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Le tableau suivant explique les paramètres et les valeurs de cette commande.
 
 | Option | Description | Obligatoire ? |
 | ------ | ----------- | --------- |
-| `<languages>` | Liste séparée par des espaces de [ISO-639](http://www.loc.gov/standards/iso639-2/php/code_list.php) codes de langue pour lesquels générer des fichiers d’affichage statique. (La valeur par défaut est `en_US`.)<br>Recherchez la liste en exécutant : `bin/magento info:language:list` | Non |
+| `<languages>` | Liste séparée par des espaces de [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) codes de langue pour lesquels générer des fichiers d’affichage statique. (La valeur par défaut est `en_US`.)<br>Recherchez la liste en exécutant : `bin/magento info:language:list` | Non |
 | `--language (-l)` | Générez des fichiers uniquement pour les langues spécifiées. La valeur par défaut, sans option spécifiée, est de générer des fichiers pour tous les codes de langue ISO-639. Vous pouvez spécifier le nom d’un code de langue à la fois. La valeur par défaut est **all**.<br>Par exemple: `--language en_US --language es_ES` | Non |
 | `--exclude-language` | Générez des fichiers pour les codes de langue spécifiés. La valeur par défaut, sans option spécifiée, est de n’exclure rien. Vous pouvez spécifier le nom d’un code de langue ou d’une liste de codes de langue séparés par des virgules. La valeur par défaut est **none**. | Non |
 | `--theme <theme>` | Thèmes pour lesquels déployer du contenu statique. La valeur par défaut est **all**.<br>Par exemple: `--theme Magento/blank --theme Magento/luma` | Non |

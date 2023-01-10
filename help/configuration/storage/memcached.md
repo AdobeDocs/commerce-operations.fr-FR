@@ -1,9 +1,9 @@
 ---
 title: Utiliser la mémoire mise en cache pour le stockage de session
 description: Découvrez comment utiliser la mémoire mise en cache pour le stockage de session dans Commerce.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Memcached est un système de mise en cache de mémoire distribuée d’usage général. Il est souvent utilisé pour accélérer les sites web dynamiques pilotés par la base de données en mettant en cache des données et des objets dans la mémoire RAM afin de réduire le nombre de fois où une source de données externe (telle qu’une base de données ou une API) doit être lue.
 
-Memcached fournit une grande table de hachage qui peut être distribuée sur plusieurs machines. Lorsque le tableau est plein, les insertions suivantes provoquent la purge des données plus anciennes dans l’ordre des données les moins récemment utilisées (LRU). La taille de cette table de hachage est souvent très grande. (Source : [memcached.org](http://memcached.org/))
+Memcached fournit une grande table de hachage qui peut être distribuée sur plusieurs machines. Lorsque le tableau est plein, les insertions suivantes provoquent la purge des données plus anciennes dans l’ordre des données les moins récemment utilisées (LRU). La taille de cette table de hachage est souvent très grande. (Source : [memcached.org](https://www.memcached.org/))
 
 Commerce utilise la mémoire mise en cache pour le stockage de session, mais pas pour la mise en cache de page. Pour la mise en cache des pages, nous vous recommandons de [Redis](../cache/redis-pg-cache.md) ou [Varnish](../cache/config-varnish.md).
 
@@ -39,7 +39,7 @@ Commerce utilise la mémoire mise en cache pour le stockage de session, mais pas
    ),
    ```
 
-   memmis en cache comporte des paramètres de démarrage facultatifs qui vont au-delà de la portée de ce guide. Vous trouverez plus d’informations à leur sujet dans la section [memcached](https://php.net/manual/en/memcached.sessions.php) documentation, code source et journaux de modification.
+   memmis en cache comporte des paramètres de démarrage facultatifs qui vont au-delà de la portée de ce guide. Vous trouverez plus d’informations à leur sujet dans la section [memcached](https://www.php.net/manual/en/memcached.sessions.php) documentation, code source et journaux de modification.
 
 1. Passez à la section suivante.
 
@@ -80,5 +80,5 @@ Commerce utilise la mémoire mise en cache pour le stockage de session, mais pas
    STAT items:3:outofmemory 0
    STAT items:3:tailrepairs 0
    
-   [Look at the keys in more detail](http://www.darkcoding.net/software/memcached-list-all-keys/)
+   [Look at the keys in more detail](https://darkcoding.net/software/memcached-list-all-keys/)
    ```

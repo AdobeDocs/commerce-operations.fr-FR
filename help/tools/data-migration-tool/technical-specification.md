@@ -1,7 +1,7 @@
 ---
 title: "[!DNL Data Migration Tool] spécification technique"
 description: "En savoir plus sur les détails de mise en oeuvre de la variable [!DNL Data Migration Tool] et comment étendre lors du transfert de données entre Magento 1 et Magento 2."
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: c56cc6d97f69770aa718333c02514ab3cfce774c
 workflow-type: tm+mt
 source-wordcount: '2085'
 ht-degree: 0%
@@ -264,7 +264,7 @@ class StageClass implements StageInterface
 
 Si l’étape de données prend en charge la restauration, elle doit mettre en oeuvre la variable `RollbackInterface` .
 
-La visualisation de l’étape en cours d’exécution est fournie par le composant ProgressBar de Symfony (voir [Barre de progression](http://symfony.com/doc/current/components/console/helpers/progressbar.html)). Accédez à ce composant dans une étape en tant que LogLevelProcessor.
+La visualisation de l’étape en cours d’exécution est fournie par le composant ProgressBar de Symfony (voir [Barre de progression](https://symfony.com/doc/current/components/console/helpers/progressbar.html)). Accédez à ce composant dans une étape en tant que LogLevelProcessor.
 
 Les principales méthodes d’utilisation sont les suivantes :
 

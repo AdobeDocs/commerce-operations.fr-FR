@@ -1,9 +1,9 @@
 ---
 title: Configuration de Redis
 description: Obtenez un aperçu des fonctionnalités Redis et démarrez votre configuration Redis.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Vous pouvez également activer simultanément les options RDB et AOF. Pour plus 
 
 Pour l’instance de cache, configurez l’instance de sorte qu’elle soit suffisamment grande pour stocker l’intégralité du cache Commerce. Les exigences de taille dépendent de différents facteurs tels que le nombre de produits et de consultations en magasin. Pour commencer, vous pouvez utiliser la taille du dossier de cache sur votre système de fichiers. Par exemple, si la variable `var/cache` sur votre système de fichiers est de 5 Go, configurez votre instance Redis avec au moins 5 Go pour démarrer. La persistance n’est pas requise pour l’instance de cache, car le cache Commerce peut être restauré. Voir [Guide de mise en cache de Redis](https://redis.io/docs/manual/eviction/).
 
-Pour optimiser les performances, vous pouvez également activer les paramètres suivants pour la suppression asynchrone. Ces paramètres ne modifient pas le comportement de Redis. Voir aussi [redis news](http://antirez.com/news/93) pour plus d’informations sur la suppression asynchrone.
+Pour optimiser les performances, vous pouvez activer les paramètres suivants pour la suppression asynchrone. Ces paramètres ne modifient pas le comportement de Redis.
 
 ```ini
 lazyfree-lazy-eviction yes

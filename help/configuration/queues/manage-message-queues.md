@@ -1,9 +1,9 @@
 ---
 title: Gestion des files d’attente de messages
 description: Découvrez comment gérer les files d’attente de messages à partir de la ligne de commande d’Adobe Commerce.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ L’exemple suivant illustre la variable `crontab` configuration pour les consom
 
 >[!INFO]
 >
->La fréquence à laquelle vous vérifiez les files d’attente des messages dépend de la logique métier et des ressources système disponibles. En règle générale, vous pouvez rechercher de nouveaux clients et envoyer plus souvent des emails de bienvenue qu’un processus plus gourmand en ressources, tel que la mise à jour de votre catalogue. Vous devez définir `cron` planifications en fonction des besoins de votre entreprise.
+>La fréquence à laquelle vous vérifiez les files d’attente des messages peut dépendre de la logique métier et des ressources système disponibles. En règle générale, vous pouvez rechercher de nouveaux clients et envoyer plus souvent des emails de bienvenue qu’un processus plus gourmand en ressources, tel que la mise à jour de votre catalogue. Vous devez définir `cron` planifications en fonction des besoins de votre entreprise.
 >
 >Il peut être configuré dans les options de configuration Admin Magasins > Paramètres > Configuration > Avancé > Système > Cron pour le groupe : consommateurs.
 >
