@@ -1,10 +1,10 @@
 ---
 title: Stratégie de cycle de vie du logiciel
-description: Découvrez les dates clés de fin de la prise en charge logicielle des versions d’Adobe Commerce.
+description: Découvrez les dates clés de fin de prise en charge logicielle des versions d’Adobe Commerce.
 source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
 source-wordcount: '368'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
@@ -63,7 +63,7 @@ Pour Adobe Commerce 2.4 et les versions ultérieures :
   </tr>
   <tr>
     <td>2.4.0 - 2.4.3</td>
-    <td style="text-align:center">7,4</td>
+    <td style="text-align:center">7.4</td>
     <td colspan="3" style="background-color:#67ac68;"></td>
     <td style="background-color:#cd3c3c;">Nov</td>
     <td colspan="8" ></td>
