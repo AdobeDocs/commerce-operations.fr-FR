@@ -4,7 +4,7 @@ description: Découvrez comment configurer la connexion au Secondaire MySQL pour
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 0866272e02a7a223d35e14842bfb42a827e0468d
+source-git-commit: a5a6e25e3fd303e07a07110b85aa1d460f53cd54
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -14,8 +14,9 @@ ht-degree: 0%
 
 # Bonne pratique pour configurer la connexion au Secondaire MySQL
 
->!![NOTE]
-Nous sommes conscients que cet article contient toujours des termes logiciels standard que certains peuvent trouver racistes, sexistes ou oppressifs et qui peuvent faire que le lecteur se sent blessé, traumatisé ou mal accueilli. Adobe s’efforce de supprimer ces termes de notre code, de notre documentation et de nos expériences utilisateur.
+>[!NOTE]
+>
+>Nous sommes conscients que cet article contient toujours des termes logiciels standard que certains peuvent trouver racistes, sexistes ou oppressifs et qui peuvent faire que le lecteur se sent blessé, traumatisé ou mal accueilli. Adobe s’efforce de supprimer ces termes de notre code, de notre documentation et de nos expériences utilisateur.
 
 Pour les sites Adobe Commerce déployés sur l’infrastructure cloud Pro, Adobe recommande d’activer par défaut la connexion au Secondaire MYSQL pour la base de données.
 
