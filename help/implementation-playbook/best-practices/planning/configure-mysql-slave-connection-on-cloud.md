@@ -4,15 +4,18 @@ description: Découvrez comment configurer la connexion au Secondaire MySQL pour
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: 0866272e02a7a223d35e14842bfb42a827e0468d
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 
 # Bonne pratique pour configurer la connexion au Secondaire MySQL
+
+>!![NOTE]
+Nous sommes conscients que cet article contient toujours des termes logiciels standard que certains peuvent trouver racistes, sexistes ou oppressifs et qui peuvent faire que le lecteur se sent blessé, traumatisé ou mal accueilli. Adobe s’efforce de supprimer ces termes de notre code, de notre documentation et de nos expériences utilisateur.
 
 Pour les sites Adobe Commerce déployés sur l’infrastructure cloud Pro, Adobe recommande d’activer par défaut la connexion au Secondaire MYSQL pour la base de données.
 
@@ -24,7 +27,7 @@ Adobe Commerce sur l’infrastructure cloud, architecture Pro
 
 ## Configuration de la connexion au Secondaire MySQL
 
-La configuration de la connexion au Secondaire MYSQL est définie par la variable [MYSQL_SECONDAIRE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) déployer la variable dans Adobe Commerce sur le fichier de configuration de l’environnement de l’infrastructure cloud, `.magento.env.yaml`. Définissez cette variable sur `true` pour activer la connexion.
+La configuration de la connexion au Secondaire MYSQL est définie par la variable [MYSQL_USE_SECONDAIRE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) déployer la variable dans Adobe Commerce sur le fichier de configuration de l’environnement de l’infrastructure cloud, `.magento.env.yaml`. Définissez cette variable sur `true` pour activer la connexion.
 
 Pour activer la connexion au Secondaire MySQL :
 
@@ -45,6 +48,3 @@ Pour activer la connexion au Secondaire MySQL :
 - [Variables d’environnement](https://devdocs.magento.com/cloud/env/variables-intro.html)
 - [Goulot d’étranglement de charge élevée MySQL dans Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.html?lang=en)
 - [Bonnes pratiques relatives aux bases de données pour Adobe Commerce sur l’infrastructure cloud](database-on-cloud.md)
-
->!![NOTE]
-Nous sommes conscients que cet article peut encore contenir des termes logiciels standard que certains peuvent trouver racistes, sexistes ou oppressifs et qui peuvent faire que le lecteur se sent blessé, traumatisé ou mal accueilli. Adobe s’efforce de supprimer ces termes de notre code, de notre documentation et de nos expériences utilisateur.
