@@ -4,7 +4,7 @@ description: Découvrez comment préparer la mise à niveau de votre base de don
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 071e88c6a07df0f74b6d4b09cce858710c9332cc
+source-git-commit: 35efea20181b112e97bfae803c8d0168cfc88dfc
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Vous pouvez convertir des tableaux sur un noeud de la grappe. Les modifications 
 1. Identifiez les tableaux à convertir au format compact ou dynamique.
 
    ```mysql
-   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
+   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
    ```
 
 1. Déterminez les tailles de tableau afin de planifier le travail de conversion.
