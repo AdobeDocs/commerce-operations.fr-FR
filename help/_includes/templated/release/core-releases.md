@@ -1,5 +1,5 @@
 ---
-source-git-commit: a2747c1d62c4a22179c1177e7c4e76e028f66cea
+source-git-commit: 4391091cce32618dc02b0bddb62ff9d16dd12f10
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 9%
@@ -54,7 +54,7 @@ La prise en charge de la version 2.4.4-2.4.6 se termine le 25 novembre 2024.
 
 ## 2.4.0-2.4.3
 
-La prise en charge de la version 2.4.0-2.4.3 se termine le 28 novembre 2022.
+La prise en charge de la version 2.4.0-2.4.3 s’est terminée le 28 novembre 2022.
 
 <table>
   <thead>
@@ -133,7 +133,7 @@ La prise en charge de la version 2.4.0-2.4.3 se termine le 28 novembre 2022.
   </tbody>
 </table>
 
-## 2,3
+## 2.3
 
 La prise en charge de la version 2.3 s’est terminée le 8 septembre 2022.
 
@@ -256,7 +256,7 @@ La prise en charge de la version 2.3 s’est terminée le 8 septembre 2022.
   </tbody>
 </table>
 
-## 2,2
+## 2.2
 
 La prise en charge de la version 2.2 s’est terminée le 1er décembre 2019.
 
@@ -293,7 +293,7 @@ La prise en charge de la version 2.2 s’est terminée le 1er décembre 2019.
           </td>
     </tr>
     <tr>
-        <td>2,2.7</td>
+        <td>2.2.7</td>
         <td>28 novembre 2018</td>
           <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.7EE.html">Notes de mise à jour d’Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.7CE.html">Notes de mise à jour de Magento Open Source</a><br>
           </td>
@@ -305,7 +305,7 @@ La prise en charge de la version 2.2 s’est terminée le 1er décembre 2019.
           </td>
     </tr>
     <tr>
-        <td>2,2.5</td>
+        <td>2.2.5</td>
         <td>27 juin 2018</td>
           <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.5EE.html">Notes de mise à jour d’Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.5CE.html">Notes de mise à jour de Magento Open Source</a><br>
           </td>
@@ -343,7 +343,7 @@ La prise en charge de la version 2.2 s’est terminée le 1er décembre 2019.
   </tbody>
 </table>
 
-## 2,1
+## 2.1
 
 La prise en charge de la version 2.1 s’est terminée le 30 juin 2019.
 
@@ -434,7 +434,7 @@ La prise en charge de la version 2.1 s’est terminée le 30 juin 2019.
   </tbody>
 </table>
 
-## 2,0
+## 2.0
 
 La prise en charge de la version 2.0 s’est terminée le 31 mars 2018.
 
