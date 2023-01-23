@@ -4,9 +4,9 @@ description: Découvrez comment fusionner et minifier des fichiers CSS et JavaSc
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 052aa61e2bb59ae11b90b5401ce6426dec9c6046
+source-git-commit: e6e8a2d7ef059265dbcbfcd6be117828a639f6d6
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -93,3 +93,5 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 - [Paramètres d’optimisation côté client](../../../performance/configuration.md#client-side-optimization-settings)
 - [Guide de l’utilisateur : Optimisation des fichiers de ressources](https://docs.magento.com/user-guide/system/file-optimization.html)
 - [Guide du développeur de Frontend : Fusion, minification et performances du site CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- [Lots JavaScript avancés](../../../performance/advanced-js-bundling.md)
+
