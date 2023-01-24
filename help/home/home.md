@@ -2,10 +2,10 @@
 keywords: Adobe Commerce;accueil;rubriques les plus consultées
 title: Accueil
 description: Parcourez un index de la documentation du produit opérationnel Adobe Commerce.
-source-git-commit: f66183c3dc01e0f8c049edf767cd6c74aae1a1cf
+source-git-commit: a1e74edb232b818dea9a2723bf506fac49acbd9f
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 2%
+source-wordcount: '109'
+ht-degree: 3%
 
 ---
 
@@ -119,12 +119,4 @@ Obtenez des informations pratiques sur les concepts, les processus, les outils e
 </tr>
 </table>
 
-## Nouveautés
-
-Découvrez la nouvelle documentation et les mises à jour importantes de la documentation existante.
-
-| Modifier | Type |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
-| Ajout d’une nouvelle rubrique décrivant tous les [consommateurs de la file d&#39;attente de messages](../configuration/queues/consumers.md). | Nouveau |
-| Ajout [instructions](../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md) pour convertir le format de stockage de table de base de données pour Adobe Commerce sur les projets cloud infrastructure Pro. | Mise à jour |
-| Ajout [instructions](../configuration/remote-storage/cloud-support.md) pour activer le stockage à distance pour Adobe Commerce sur les projets d’infrastructure cloud. | Mise à jour |
+{{$include /help/_includes/templated/whats-new.md}}
