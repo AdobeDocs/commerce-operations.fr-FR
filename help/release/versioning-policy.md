@@ -1,9 +1,9 @@
 ---
 title: Stratégie de publication
 description: Découvrez les différents types de versions d’Adobe Commerce, notamment les versions mineures, les correctifs, les correctifs de sécurité, les fonctionnalités, les correctifs, les correctifs individuels et les correctifs personnalisés.
-source-git-commit: f9bbfb86d2197ee7252602edba455ebcae5a2b18
+source-git-commit: 1705e930b7ab0176722c4f911dd06f448f992373
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,11 @@ Utilisation d’Adobe Commerce et de Magento Open Source [contrôle de version s
 
 - **Version MAJOR**—2
 - **Version mineure**—2.4
-- **Version du PATCH**—2.4.1
-   - **Version de correctif de sécurité**—2.4.1-p1
+- **Version du PATCH**—2.4.5
+   - **Version de correctif de sécurité**—2.4.5-p1
       - Correctif de bogue de sécurité
       - Amélioration de la sécurité
+- **Version de correctif BÊTA**—2.4.7-beta1
 - **Mise à jour des fonctionnalités**
 - **Correctif**
 - **Correctif individuel**
@@ -43,43 +44,23 @@ Les directives suivantes s’appliquent aux versions de correctif :
 - Les modifications susceptibles de rompre les extensions ou la compatibilité du code sont évitées. Par exemple, le code écrit pour la version 2.2.0 doit toujours fonctionner sur la version 2.2.7.
 - Sur une base exceptionnelle, des modifications de rupture ou des correctifs ou correctifs supplémentaires peuvent être publiés pour résoudre les problèmes de sécurité ou de conformité et de qualité à fort impact. Au niveau du module, il s’agit principalement de modifications au niveau du PATCH ; parfois des changements de niveau mineur.
 
-## Version de correctif de sécurité
+### Version de correctif de sécurité
 
 **Correctif du bogue de sécurité**: Un changement de code logiciel qui résout un problème de sécurité identifié et fournit les résultats attendus dans une zone de produit affectée. Ces correctifs sont généralement rétrocompatibles.
 
 **Amélioration de la sécurité**: Amélioration ou modification de configuration d’un logiciel afin d’améliorer de manière proactive la sécurité au sein de l’application. Ces améliorations de sécurité permettent de résoudre les risques de sécurité qui affectent la position de sécurité de l’application Adobe Commerce, mais qui peuvent être rétrocompatibles.
 
-Avec les mises à jour de correctifs de sécurité, vous pouvez maintenir votre site plus sécurisé sans appliquer d’autres correctifs de qualité et améliorations contenus dans une version trimestrielle complète de correctifs. Les mises à jour des correctifs de sécurité sont ajoutées avec &quot;-pN&quot;, où N est la version incrémentielle des correctifs commençant par 1 (par exemple, 2.3.5-p1). Les mises à jour des correctifs de sécurité peuvent également inclure les correctifs nécessaires pour résoudre les problèmes critiques qui affectent l’application Adobe Commerce.
+Avec les versions de correctifs de sécurité, vous pouvez maintenir votre site plus sécurisé sans appliquer d’autres correctifs de qualité et améliorations contenus dans une version complète de correctif. Les mises à jour des correctifs de sécurité sont ajoutées avec &quot;-pN&quot;, où N est la version incrémentielle des correctifs commençant par 1 (par exemple, 2.3.5-p1). Les mises à jour des correctifs de sécurité peuvent également inclure les correctifs nécessaires pour résoudre les problèmes critiques qui affectent l’application Adobe Commerce.
 
 Chaque version de correctif de sécurité est basée sur la version de correctif complète précédente. Il contient des correctifs de qualité et de sécurité issus d’une version de correctif précédente et des correctifs de sécurité créés entre la version de correctif complète précédente et la version de correctif de sécurité.
 
-Avec l’annonce de notre [nouvelle stratégie de mise à jour et stratégie de cycle de vie mise à jour](https://business.adobe.com/blog/how-to/accelerating-innovation-through-simplified-release-strategy) (9/16/2021), nos mises à jour de correctifs de sécurité sont différenciées selon qu’elles s’appliquent à la dernière version mineure prise en charge ou qu’elles font partie d’une ligne de mise à jour mineure précédente encore prise en charge :
+Pour plus d’informations sur le téléchargement et l’application de correctifs de sécurité, voir [Installation de démarrage rapide](../installation/composer.md#example---security-patch).
 
-- **Versions des correctifs de sécurité pour la dernière version mineure prise en charge**:
+## Version de correctif BÊTA
 
-   - La version de correctif de sécurité de la dernière version mineure prise en charge (actuellement Adobe Commerce 2.4) comprend :
+Les versions de disponibilité prégénérales des fonctionnalités d’Adobe Commerce sont mises à la disposition de tous les clients et partenaires d’Adobe d’Adobe Commerce. Il permet de disposer de davantage de temps avant la disponibilité générale pour examiner le code et les composants affectés.
 
-      - Correctifs de bogues de sécurité créés depuis la version précédente complète du correctif.
-
-      - Ces mises à jour de correctifs de sécurité peuvent également inclure des correctifs nécessaires pour résoudre les problèmes critiques qui peuvent affecter l’application Adobe Commerce.
-   - La version de correctif de sécurité de la dernière version mineure prise en charge (actuellement Adobe Commerce 2.4) n’inclut généralement pas d’améliorations de sécurité. Elles sont incluses dans la version complète du correctif pour la dernière version mineure prise en charge.
-
-
-- **Versions de correctifs de sécurité pour les versions mineures antérieures prises en charge**:
-
-   - La version de correctif de sécurité d’une version mineure précédente qui est toujours prise en charge (actuellement Adobe Commerce 2.3) comprend :
-
-      - Correctifs de bogues de sécurité créés depuis la version précédente du correctif ou du correctif de sécurité, ainsi que de nouvelles améliorations de sécurité.
-
-      - Ces mises à jour de correctifs de sécurité peuvent également inclure les correctifs nécessaires pour résoudre les problèmes critiques qui affectent l’application Adobe Commerce.
-
-      |  | Bogue de sécurité | Amélioration de la sécurité |
-      |--------------------------------------------------------------------------------|--------------|----------------------|
-      | Versions de correctifs de sécurité pour la dernière version mineure prise en charge (actuellement 2.4) | X |  |
-      | Versions de correctifs de sécurité pour les versions mineures antérieures prises en charge (actuellement 2.3) | X | X |
-
-
-Pour obtenir des informations générales sur les versions de sécurité, voir [Présentation de la nouvelle version du correctif uniquement pour la sécurité](https://community.magento.com:443/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287). Pour plus d’informations sur le téléchargement et l’application de correctifs de sécurité, voir [Installation de démarrage rapide](../installation/composer.md).
+Les versions bêta peuvent contenir des défauts et sont fournies &quot;EN L’ÉTAT&quot; sans aucune garantie de quelque type que ce soit. Adobe n’aura aucune obligation de gérer, corriger, mettre à jour, modifier, modifier ou d’autre manière prendre en charge (via les services d’assistance d’Adobe ou d’une autre manière) les versions bêta. Il est conseillé aux clients de faire preuve de prudence et de ne pas s’appuyer d’aucune manière sur le bon fonctionnement ou les performances des versions bêta et/ou de la documentation ou des documents associés. Par conséquent, toute utilisation des versions bêta est entièrement à la charge du client.
 
 ## Mise à jour des fonctionnalités
 
@@ -107,7 +88,6 @@ Créé par le personnel non-Adobe pour résoudre un problème ou modifier le cod
 
 ## Rubriques connexes
 
-- [Planification et budget pour les cycles de mise à niveau de commerce](https://magento.com/sites/default/files8/2019-08/Magento-Release-Cycle-Infosheet_Aug_2019.pdf)
 - [Contrôle de version](https://developer.adobe.com/commerce/php/development/versioning/)
 - [Versions à venir](schedule.md)
 - [Stratégie de cycle de vie logicielle](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
