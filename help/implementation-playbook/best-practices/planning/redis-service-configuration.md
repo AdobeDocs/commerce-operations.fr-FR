@@ -4,9 +4,9 @@ description: Découvrez comment améliorer les performances de mise en cache à 
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: 12de523cc7ea1486c894d54efe6944d92d87ded0
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,11 @@ Pour plus d’informations, voir [Déployer des variables > `REDIS_BACKEND`](htt
 >[!NOTE]
 >
 > Vérifiez la version des outils de l’environnement cloud local à partir de la ligne de commande à l’aide de la fonction `composer show magento/ece-tools` . Si nécessaire, [mettre à jour la version de cee-tools](https://devdocs.magento.com/cloud/project/ece-tools-update.html).
+
+>[!WARNING]
+>
+>Do _not_ configurer une connexion Redis Secondaire pour les projets d’infrastructure cloud avec une [architecture mise à l’échelle](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Cela entraîne des erreurs de connexion Redis. Voir [les instructions de configuration Redis ;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) dans le _Commerce sur l’infrastructure cloud_ guide.
+
 
 ### Configuration pour les déploiements sur site
 
