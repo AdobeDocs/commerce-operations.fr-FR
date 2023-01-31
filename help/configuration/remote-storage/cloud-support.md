@@ -1,7 +1,7 @@
 ---
 title: Stockage à distance pour Commerce sur l’infrastructure cloud
 description: Consultez des conseils sur la configuration du stockage à distance pour Adobe Commerce sur l’infrastructure cloud.
-source-git-commit: 2080950852e3c4e6da556733e56f68e0e8005530
+source-git-commit: 4c89ef65ffb559ad4ad3f3fc45bd73079fbacd1b
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Vous pouvez également utiliser l’interface web du projet pour ajouter la vari
 
 1. Cliquez sur **Ajouter une variable**.
 
-1. Dans le _Nom_ champ, entrer `env:REMOTE_STORAGE`
+1. Dans le _Nom_ champ, entrer `REMOTE_STORAGE`
 
 1. Dans le _Valeur_ , ajoutez la configuration JSON.
 
