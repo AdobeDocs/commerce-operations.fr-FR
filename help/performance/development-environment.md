@@ -1,9 +1,9 @@
 ---
 title: Recommendations d’environnement de développement
 description: Découvrez les recommandations de performances pour configurer votre environnement de développement Adobe Commerce ou Magento Open Source local.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ Cette page fournit des recommandations pour les environnements de développement
 
 ## Nettoyer les caches au lieu de désactiver
 
-De nombreux développeurs ont tendance à désactiver tous les caches sur leurs instances de développeur. Il est recommandé de ne nettoyer que les caches, sans désactiver tous les caches. [!DNL Commerce] s’exécute plus efficacement lorsque vous [nettoyage des caches] au lieu de les désactiver complètement. La plupart des types de cache sont rarement invalidés lors du développement.
+De nombreux développeurs ont tendance à désactiver tous les caches sur leurs instances de développeur. Il est recommandé de ne nettoyer que les caches, sans désactiver tous les caches. [!DNL Commerce] s’exécute plus efficacement lorsque vous [nettoyage des caches](../configuration/cli/manage-cache.md#clean-and-flush-cache-types) au lieu de les désactiver complètement. La plupart des types de cache sont rarement invalidés lors du développement.
 
-Si vous [Désactivation des caches], nous vous recommandons de ne désactiver que les caches de page et de bloc dans les instances de développement. N’oubliez pas d’activer tous les caches pendant le test.
+Si vous [Désactivation des caches](../configuration/cli/manage-cache.md#enable-or-disable-cache-types), nous vous recommandons de ne désactiver que les caches de page et de bloc dans les instances de développement. N’oubliez pas d’activer tous les caches pendant le test.
 
 ## Commandes à éviter en mode de développement
 
@@ -44,8 +44,3 @@ En mode de développement, n’exécutez pas de commandes pour la compilation, l
 ## Durée normale de chargement des pages sur une machine virtuelle
 
 Si vous développez sur une machine virtuelle et que le chargement d’une page de Magento prend plus de 2 secondes, vérifiez les paramètres de votre environnement.
-
-<!-- Link definitions -->
-
-[nettoyage des caches]: ../configuration/cli/manage-cache.md#clean-and-flush-cache-types
-[Désactivation des caches]: ../configuration/cli/manage-cache.md#enable-or-disable-cache-types

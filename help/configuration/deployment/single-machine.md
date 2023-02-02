@@ -1,10 +1,10 @@
 ---
 title: Déploiement mono-machine
 description: Découvrez comment déployer des mises à jour sur Commerce sur un serveur de production à l’aide de la ligne de commande.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +14,7 @@ Cette rubrique fournit des instructions pour le déploiement de mises à jour de
 
 ## Hypothèses
 
-- Vous avez installé Commerce à l’aide de [Compositeur].
+- Vous avez installé Commerce à l’aide de [Compositeur](../../installation/composer.md).
 - Vous appliquez directement des mises à jour au serveur.
 
 >[!WARNING]
@@ -24,7 +24,7 @@ Cette rubrique fournit des instructions pour le déploiement de mises à jour de
 
 ## Etapes de déploiement
 
-1. Connectez-vous à votre serveur de production en tant que [propriétaire du système de fichiers][file-owner].
+1. Connectez-vous à votre serveur de production en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
 
 1. Remplacez le répertoire par le répertoire de base de Commerce :
 
@@ -46,7 +46,7 @@ Cette rubrique fournit des instructions pour le déploiement de mises à jour de
 
    **package**: Le nom du package que vous souhaitez mettre à jour.
 
-   Par exemple :
+   Par exemple :
 
    - `magento/product-community-edition`
    - `magento/product-enterprise-edition`
@@ -92,5 +92,3 @@ Cette rubrique fournit des instructions pour le déploiement de mises à jour de
 <!-- link definitions -->
 
 [install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/
-[composer]: ../../installation/composer.md
-[file-owner]: ../../installation/prerequisites/file-system/overview.md
