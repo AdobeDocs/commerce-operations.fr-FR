@@ -1,7 +1,7 @@
 ---
 title: Phases de mise en oeuvre
 description: Découvrez les bonnes pratiques pour les phases de mise en oeuvre des projets Adobe Commerce.
-source-git-commit: 2aa9511c4bf7c3feb6cae5e7879502b4f7cb028b
+source-git-commit: bb49e4f239d49393b5b8c82deabe15f6f53c26f7
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
@@ -59,3 +59,5 @@ Ces bonnes pratiques sont organisées par phase de mise en oeuvre afin que vous 
   </td>
 </tr>
 </table>
+
+{{$include /help/_includes/templated/whats-new-bp.md}}
