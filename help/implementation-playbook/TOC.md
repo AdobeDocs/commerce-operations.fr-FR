@@ -1,16 +1,16 @@
 ---
-user-guide-title: Manuel d’implémentation
-user-guide-description: Découvrez les stratégies de planification et d’implémentation d’un site Adobe Commerce performant.
+user-guide-title: Manuel de mise en oeuvre
+user-guide-description: Découvrez les stratégies de planification et de mise en oeuvre d’un site Adobe Commerce performant.
 mini-toc-levels: 3
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+source-git-commit: 5559d412ab58d392098cfff7a4cabb473c38cb0d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
 
 
-# Manuel d’implémentation {#implementation-playbook}
+# Manuel de mise en oeuvre {#implementation-playbook}
 
 - [Présentation](overview.md)
 - Commerce {#intro}
@@ -110,6 +110,6 @@ ht-degree: 0%
       - [Planification des mises à jour de l’administrateur sur les sites de production](best-practices/maintenance/scheduling-admin-updates-in-production.md)
       - [Mise à jour des services](best-practices/maintenance/update-services.md)
       - [Liste de contrôle de mise à niveau](best-practices/maintenance/upgrade-checklist.md)
-      - [Résolution des problèmes de performances de la base de données &#x200B;](best-practices/maintenance/resolve-database-performance-issues.md)
-      - [Conditions préalables à la mise à niveau d’Adobe Commerce 2.3.5 pour MariaDB &#x200B;](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
+      - [Résolution des problèmes de performances de la base de données](best-practices/maintenance/resolve-database-performance-issues.md)
+      - [Conditions préalables à la mise à niveau pour MariaDB](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [Revenir aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
