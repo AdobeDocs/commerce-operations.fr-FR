@@ -1,7 +1,7 @@
 ---
 title: Architecture de référence
 description: Examinez les diagrammes de l’architecture de référence recommandée pour les déploiements Adobe Commerce et Magento Open Source.
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+source-git-commit: 065c56f20ba5b1eef8c331c5c2f5649902f1442b
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Les sections suivantes contiennent des recommandations et des considérations po
 * Envisagez d’utiliser une base de données Secondaire pour permettre une récupération rapide et des sauvegardes de données.
 * Les sites à faible trafic peuvent stocker des images dans la base de données
 
-### Rechercher
+### Rechercher {#search-heading}
 
 * Réglage du nombre d’instances en fonction du trafic de recherche
 
