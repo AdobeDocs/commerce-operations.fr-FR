@@ -1,10 +1,10 @@
 ---
 title: Stratégie de cycle de vie du logiciel
-description: Découvrez les dates clés de fin de prise en charge logicielle des versions d’Adobe Commerce.
+description: Découvrez les dates clés de fin de la prise en charge logicielle des versions d’Adobe Commerce.
 source-git-commit: 2612405bed470c4b0e0d501ab36bcfb09ac50e92
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 14%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

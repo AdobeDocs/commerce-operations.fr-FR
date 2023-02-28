@@ -1,10 +1,10 @@
 ---
 title: Lecture recommandée pour les mises à niveau
-description: Consultez la lecture recommandée pour planifier la mise à niveau d’Adobe Commerce ou de Magento Open Source.
+description: Consultez la lecture recommandée pour planifier la mise à niveau d’Adobe Commerce ou de Magento Open Source.
 source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
 source-wordcount: '423'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 

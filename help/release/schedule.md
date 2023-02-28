@@ -1,10 +1,10 @@
 ---
 title: Calendrier des versions
-description: Découvrez quand des versions spécifiques d’Adobe Commerce sont planifiées pour la version bêta, la version préliminaire et la disponibilité générale.
+description: Découvrez quand des versions spécifiques d’Adobe Commerce sont planifiées pour la version bêta, la version préliminaire et la disponibilité générale.
 source-git-commit: 18338316c78e9c2ef87614044e65517b1f11b16d
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
