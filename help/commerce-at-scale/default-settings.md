@@ -2,7 +2,7 @@
 title: Optimisation des performances d’Adobe Commerce
 description: Préparez votre projet Adobe Commerce à utiliser Adobe Experience Manager en tant que CMS en modifiant certains paramètres par défaut.
 exl-id: 55d77af7-508c-4ef7-888b-00911cc6e920
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: a11f3ef0519a4a6c08ea1d4e520ce0462e88885d
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 ## Emplacement géographique de l’AEM et de l’infrastructure Adobe Commerce
 
-Pour réduire la latence entre l’éditeur AEM et Adobe Commerce GraphQL lors de la création de pages, l’approvisionnement initial des deux infrastructures distinctes doit être hébergé dans la même région AWS (ou Azure). L’emplacement géographique choisi pour les deux clouds doit également être le plus proche de la majorité de votre base de clients, de sorte que les requêtes GraphQL côté client soient diffusées à partir d’un emplacement géographique proche de la majorité de vos clients.
+Pour réduire la latence entre l’éditeur AEM et Adobe Commerce GraphQL lors de la création de pages, la configuration initiale des deux infrastructures distinctes doit être hébergée dans la même région d’AWS (ou Azure). L’emplacement géographique choisi pour les deux clouds doit également être le plus proche de la majorité de votre base de clients, de sorte que les demandes GraphQL côté client soient diffusées à partir d’un emplacement géographique proche de la majorité de vos clients.
 
-## Mise en cache GraphQL dans Adobe Commerce
+## Mise en cache de GraphQL dans Adobe Commerce
 
-Lorsque le navigateur de l’utilisateur ou l’éditeur AEM appelle GraphQL d’Adobe Commerce, certains appels sont mis en cache en mode Fastly. Les requêtes mises en cache sont généralement celles qui contiennent des données non personnelles et qui sont peu susceptibles de changer fréquemment. Par exemple : catégories, categoryList et produits. Ceux qui ne sont pas explicitement mis en cache sont ceux qui changent régulièrement et si la mise en cache peut présenter des risques pour les données personnelles et les opérations sur le site, comme les requêtes de panier et de customerpaymentTokens.
+Lorsque le navigateur de l’utilisateur ou l’éditeur AEM appelle Adobe Commerce GraphQL, certains appels sont mis en cache en mode Fastly. Les requêtes mises en cache sont généralement celles qui contiennent des données non personnelles et qui sont peu susceptibles de changer fréquemment. Par exemple : catégories, categoryList et produits. Ceux qui ne sont pas explicitement mis en cache sont ceux qui changent régulièrement et si la mise en cache peut présenter des risques pour les données personnelles et les opérations sur le site, comme les requêtes de panier et de customerpaymentTokens.
 
 GraphQL vous permet d’effectuer plusieurs requêtes dans un seul appel. Il est important de noter que si vous spécifiez une seule requête qu’Adobe Commerce ne met pas en cache avec de nombreuses autres requêtes qui ne peuvent pas être mises en cache, Adobe Commerce contournera le cache de toutes les requêtes de l’appel . Cela doit être pris en compte par les développeurs lors de la combinaison de plusieurs requêtes afin de s’assurer que les requêtes pouvant être mises en cache ne sont pas involontairement contournées.
 
@@ -45,7 +45,7 @@ L’optimisation rapide des images peut être activée en &quot;activant l’opt
 
 ## Désactiver les modules inutilisés
 
-Si vous exécutez Adobe Commerce sans interface utilisateur, si vous ne diffusez que des requêtes via le point d’entrée GraphQL et qu’aucune page de magasin front-end n’est diffusée directement à partir d’Adobe Commerce, de nombreux modules deviennent redondants et non utilisés. En désactivant les modules inutilisés, votre base de code Adobe Commerce devient plus petite, moins complexe et pourrait donc offrir des améliorations de performances. La désactivation des modules sur Adobe Commerce peut être gérée à l’aide du compositeur. Les modules pouvant être désactivés dépendent des exigences de votre site. Aucune liste recommandée ne peut donc être fournie, car elle serait spécifique à l’implémentation d’Adobe Commerce par chaque client.
+Si vous exécutez Adobe Commerce sans interface utilisateur, si vous ne diffusez que des requêtes par le biais du point de terminaison GraphQL et qu’aucune page de magasin front-end n’est diffusée directement à partir d’Adobe Commerce, de nombreux modules deviennent redondants et ne sont pas utilisés. En désactivant les modules inutilisés, votre base de code Adobe Commerce devient plus petite, moins complexe et pourrait donc offrir des améliorations de performances. La désactivation des modules sur Adobe Commerce peut être gérée à l’aide du compositeur. Les modules pouvant être désactivés dépendent des exigences de votre site. Aucune liste recommandée ne peut donc être fournie, car elle serait spécifique à l’implémentation d’Adobe Commerce par chaque client.
 
 ## Activation de la connexion MySQL et Redis
 
@@ -72,4 +72,4 @@ Si, après toutes les configurations ci-dessus, les résultats de test de charge
 
 Avec une architecture Pro standard, il existe 3 noeuds, chacun contenant une pile technique complète. En effectuant une conversion vers une architecture de niveau partagé, vous obtenez au moins 6 noeuds : 3 d&#39;entre eux contiennent Elasticsearch, MariaDB, Redis et d&#39;autres services principaux ; les 3 autres pour le traitement du trafic web contiennent phpfpm et NGINX. Il existe de plus grandes possibilités de mise à l’échelle avec un niveau partagé : les noeuds principaux contenant des bases de données peuvent être mis à l’échelle verticalement ; les noeuds web peuvent être mis à l’échelle horizontalement et verticalement, ce qui offre une grande flexibilité pour développer l’infrastructure à la demande pour une période définie d’activité de charge élevée et sur les noeuds où les ressources supplémentaires sont nécessaires.
 
-Si une décision a été prise de passer à une architecture à plusieurs niveaux en raison des fortes attentes en matière de charge sur votre site, une discussion doit être engagée avec votre responsable du succès client sur les étapes à suivre pour activer cette fonctionnalité.
+Si une décision a été prise de passer à une architecture à plusieurs niveaux en raison des fortes attentes en matière de charge sur votre site, une discussion doit être engagée avec votre équipe de compte d’Adobe sur les étapes à suivre pour activer cette fonctionnalité.
