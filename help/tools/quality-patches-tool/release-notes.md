@@ -1,9 +1,9 @@
 ---
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
-source-git-commit: 76ff1bbcc3a1ca8f73dfdd2ba4f516a201986f62
+source-git-commit: f1c6c816695e01fc30d0ab0a7a9c43122a130cb5
 workflow-type: tm+mt
-source-wordcount: '10848'
+source-wordcount: '11145'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,22 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour les Magento Open Sources, voir la section [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.28 {#v1-1-28}
+
+* **ACSD-48204** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.3) - Correction du problème en raison duquel une règle de prix de catalogue créée à partir de l’attribut Oui/Non ne prenait pas en compte la portée sélectionnée.
+* **ACSD-47704** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel le produit regroupé affichait le prix de dans les produits en stock uniquement.
+* **ACSD-49370** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel la variable *Heure de date* l’attribut de produit comporte une *FilterMatchTypeInput* dans le schéma GraphQL.
+* **ACSD-48807** (pour Adobe Commerce et Magento Open Source >=2.4.1 &lt;2.4.7) - Correction du problème en raison duquel les révisions des produits du client ne sont pas filtrées par l’aperçu de magasin via GraphQL.
+* **ACSD-49433** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction du problème en raison duquel le montant par défaut s’affichait comme sous-total dans le panier pour la carte cadeau avec un montant ouvert.
+* **ACSD-48866** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction du problème qui se produit lorsqu’une erreur se produit lors de la demande d’un flux RSS pour des catégories.
+* **ACSD-48784** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction d’un problème en raison duquel les prix des segments de clients étaient incorrectement mis en cache entre les groupes de clients.
+* **ACSD-48857** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction du problème qui empêchait un utilisateur d’enregistrer les modifications après les avoir modifiées dans le créateur de pages.
+* **ACSD-49065** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel les éléments de guillemet ne sont pas visibles dans l’administrateur si seulement ils sont affectés au stock personnalisé.
+* **ACSD-49179** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème en raison duquel le rapport Commandes affichait des montants incorrects en cas de devises différentes pour différents magasins.
+* **ACSD-49286** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction du problème en raison duquel un produit était ajouté deux fois à un panier lorsque plusieurs widgets de produit étaient présents sur la page.
+* **ACSD-49574** (pour Adobe Commerce >=2.4.4 &lt;2.4.7) - Ajoute une fonctionnalité permettant de prendre en charge les mises à jour de produit Carte cadeau dans un panier via GraphQL.
+* Mise à jour du correctif : ACSD-48694.
 
 ## v1.1.27 {#v1-1-27}
 
