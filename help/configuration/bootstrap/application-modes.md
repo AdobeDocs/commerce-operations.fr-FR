@@ -1,9 +1,9 @@
 ---
 title: Modes d’application
 description: L’application Commerce peut fonctionner dans différents modes selon vos besoins. Affichez la liste détaillée des modes d’application disponibles.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: e7c325aef90d4135218b984cc57df2c8d1d921d2
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -13,62 +13,68 @@ ht-degree: 0%
 
 Vous pouvez exécuter l’application Commerce dans l’une des méthodes suivantes : _modes_:
 
-| Nom du module | Description |
-| ----------- | ----------- |
-| default | Permet de déployer l’application Commerce sur un seul serveur sans modifier les paramètres. Cependant, le mode par défaut n’est pas optimisé pour la production.<br>Pour déployer l’application Commerce sur plusieurs serveurs ou l’optimiser pour la production, définissez l’un des autres modes.<ul><li>La mise en cache des fichiers d’affichage statique est activée.</li><li>Les exceptions ne s’affichent pas pour l’utilisateur. à la place, les exceptions sont écrites dans des fichiers journaux.</li><li>Masque les `X-Magento-*` En-têtes de requête et de réponse HTTP</li></ul> |
-| développeur | Destiné uniquement au développement, ce mode :<ul><li>Désactive la mise en cache des fichiers de vue statique</li><li>Permet la journalisation en mode verbeux</li><li>Active [compilation automatique de code](../cli/code-compiler.md)</li><li>Active le débogage amélioré</li><li>Affiche les `X-Magento-*` En-têtes de requête et de réponse HTTP</li><li>Les performances sont alors les plus lentes.</li><li>Affiche les erreurs sur le front-end</li></ul> |
-| production | Destiné au déploiement sur un système de production, ce mode est le suivant :<ul><li>N’affiche pas d’exceptions pour l’utilisateur (les exceptions sont écrites dans les journaux uniquement).</li><li>Sert les fichiers d’affichage statique à partir du cache uniquement.</li><li>Empêche la compilation automatique des fichiers de code. Les fichiers nouveaux ou mis à jour ne sont pas écrits dans le système de fichiers.</li><li>**Ne vous permet pas d’activer ou de désactiver les types de cache dans l’administrateur.** Voir [activation et désactivation du cache](../cli/manage-cache.md#enable-or-disable-cache-types).</li><li>Certains champs, tels que les sections Advanced et Developer system configuration dans Admin, ne sont pas disponibles en mode de production.</li></ul> |
-| maintenance | Ce mode est destiné à empêcher l&#39;accès à un site lorsqu&#39;il est mis à jour ou reconfiguré :<ul><li>Redirige les visiteurs du site vers une valeur par défaut `Service Temporarily Unavailable` page.</li><li>Lorsque le site est en mode de maintenance, la variable `var/` contient le répertoire `.maintenance.flag` fichier .</li><li>Vous pouvez configurer le mode de maintenance pour autoriser l’accès des visiteurs à partir d’une liste d’adresses IP spécifiée.</li></ul> |
+| Nom du mode | Description | Prise en charge du cloud |
+| ------------------------ | ------------------- | ------------- |
+| [default](#default-mode) | Déployez et exécutez l’application Commerce sur un seul serveur sans modifier les paramètres. _Not_ optimisé pour la production. | non |
+| [développeur](#developer-mode) | Idéal pour le développement lors de l’extension ou de la personnalisation de l’application Commerce. | non |
+| [production](#production-mode) | Déployez et exécutez l’application Commerce sur un système de production. | Oui |
+| [maintenance](#maintenance-mode) | Empêcher l’accès à un site lors de l’exécution des mises à jour et des configurations. | Oui |
 
->[!INFO]
->
->[Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) ne prend en charge que les modes de production et de maintenance.
+Voir [Définir le mode de fonctionnement](../cli/set-mode.md) pour savoir comment modifier manuellement les modes d’opération Adobe Commerce.
+
+## Prise en charge du cloud
+
+Il n’est pas nécessaire de gérer les modes d’application pour un projet d’infrastructure cloud. En raison du système de fichiers en lecture seule, vous ne pouvez pas modifier les modes dans les environnements cloud distants. Adobe Commerce sur l’infrastructure cloud exécute automatiquement l’application dans _maintenance_ pendant un déploiement, ce qui permet à votre site d’être déconnecté jusqu’à ce que le déploiement soit terminé. Sinon, l’application reste dans _production_ mode . Voir [Processus de déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) dans le _Guide sur l’infrastructure de Commerce on Cloud_.
+
+Si vous utilisez Cloud Docker pour Commerce en tant qu’outil de développement, vous pouvez déployer votre projet d’infrastructure cloud dans un environnement Docker dans _développeur_ , mais les performances sont plus lentes en raison d’opérations de synchronisation de fichiers supplémentaires. Voir [Déploiement de l’environnement Docker](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) dans le _Guide de Cloud Docker pour Commerce_.
 
 ## Mode par défaut
 
-Comme son nom l’indique, le mode par défaut est le mode de fonctionnement de Commerce si aucun autre mode n’est spécifié. Le mode par défaut permet de déployer l’application Commerce sur un seul serveur sans modifier les paramètres. Cependant, le mode par défaut n’est pas aussi optimisé pour la production que le mode de production.
-
-Pour déployer l’application Commerce sur plusieurs serveurs ou l’optimiser pour la production, définissez l’un des autres modes.
+Le _default_ Le mode permet de déployer l’application Commerce sur un seul serveur sans modifier les paramètres. Cependant, le mode par défaut n’est pas optimisé pour la production en raison de l’impact négatif sur les performances des fichiers statiques. La création de fichiers statiques et leur mise en cache ont un impact sur les performances plus important que leur génération à l’aide de l’outil de création de fichiers statiques.
 
 En mode par défaut :
 
-- Les erreurs sont consignées dans les rapports de fichiers sur le serveur et ne sont jamais affichées pour un utilisateur.
+- Les exceptions sont écrites dans des fichiers journaux au lieu d’être affichées.
 - Les fichiers d’affichage statique sont mis en cache.
-- Le mode par défaut n’est pas optimisé pour un environnement de production, principalement en raison de l’impact négatif sur les performances de [fichiers statiques](https://glossary.magento.com/static-files) générés dynamiquement plutôt que matérialisés. En d’autres termes, la création de fichiers statiques et leur mise en cache ont un impact sur les performances plus important que leur génération à l’aide de l’outil de création de fichiers statiques.
+- Masque les `X-Magento-*` En-têtes de requête et de réponse HTTP
 
-Voir [Définir le mode de fonctionnement](../cli/set-mode.md).
+Commerce fonctionne en mode par défaut si aucun autre mode n’est spécifié.
 
 ## Mode Développeur
 
-Exécutez l’application Commerce en mode Développeur lorsque vous l’étendez ou la personnalisez.
+Le _développeur_ est recommandé pour étendre et personnaliser l’application Commerce. Les fichiers d’affichage statiques ne sont pas mis en cache, mais écrits dans le `pub/static` répertoire à la demande.
 
 En mode Développeur :
 
-- Les fichiers d’affichage statique ne sont pas mis en cache ; ils sont écrits dans la variable `pub/static` à chaque appel
+- Active [compilation automatique de code](../cli/code-compiler.md) et débogage amélioré
 - Les exceptions non interceptées s’affichent dans le navigateur.
 - Connexion système `var/report` is verbose
-- Un [exception](https://glossary.magento.com/exception) est généré dans le gestionnaire d’erreurs, plutôt que d’être consigné.
-- Une exception est générée lorsqu’une [event](https://glossary.magento.com/event) abonné ne peut pas être appelé
-
-Voir [Définir le mode de fonctionnement](../cli/set-mode.md).
+- Une exception est générée dans le gestionnaire d’erreurs, plutôt que d’être consignée.
+- Une exception est générée lorsqu’un abonné à un événement ne peut pas être appelé.
+- Affiche les `X-Magento-*` En-têtes de requête et de réponse HTTP
 
 ## Mode de production
 
-Exécutez Commerce en mode de production lorsqu’il est déployé sur un serveur de production. Après avoir optimisé l’environnement du serveur, tel que la base de données et le serveur web, vous devez exécuter la variable [outil de déploiement des fichiers d’affichage statique](../cli/static-view-file-deployment.md) pour écrire des fichiers d’affichage statiques dans le `pub/static` répertoire .
+Le _production_ est idéal pour déployer l’application Commerce sur un système de production. Après avoir optimisé l’environnement du serveur, tel que la base de données et le serveur web, vous devez exécuter la variable [outil de déploiement des fichiers d’affichage statique](../cli/static-view-file-deployment.md) pour écrire des fichiers d’affichage statiques dans le `pub/static` répertoire . Cela améliore les performances en fournissant tous les fichiers statiques nécessaires au déploiement au lieu de forcer l’application Commerce à localiser et à copier dynamiquement (matérialiser) les fichiers statiques à la demande au cours de l’exécution.
 
-Cela améliore les performances en fournissant tous les fichiers statiques nécessaires au déploiement au lieu de forcer Commerce à localiser et à copier dynamiquement (matérialiser) les fichiers statiques à la demande au moment de l’exécution.
+Certains champs, tels que les sections Advanced et Developer system configuration dans Admin, ne sont pas disponibles en mode de production. Par exemple, vous _cannot_ activez ou désactivez les types de cache à l’aide de l’administrateur. Vous pouvez activer et désactiver les types de cache. _only_ en utilisant la variable [ligne de commande](../cli/manage-cache.md#config-cli-subcommands-cache-en).
 
 En mode de production :
 
-- Les fichiers d’affichage statique ne sont pas matérialisés et les URL pour eux sont composées à la volée. Les fichiers d’affichage statique sont diffusés à partir de la fonction [cache](https://glossary.magento.com/cache) uniquement.
-- Les erreurs sont consignées dans le système de fichiers et ne s’affichent jamais pour l’utilisateur.
-- Vous pouvez activer et désactiver les types de cache. _only_ en utilisant la variable [ligne de commande](../cli/manage-cache.md#config-cli-subcommands-cache-en).
-- You _cannot_ activez ou désactivez les types de cache à l’aide de l’administrateur.
+- Les fichiers d’affichage statique sont diffusés à partir du cache uniquement.
+- Les erreurs et les exceptions sont consignées dans le système de fichiers et ne sont jamais affichées pour l’utilisateur.
+- Certains champs de configuration de l’administrateur ne sont pas disponibles.
 
 ## Mode de maintenance
 
-Exécutez l’application Commerce en mode de maintenance pour mettre votre site hors ligne pendant que vous effectuez des tâches de maintenance, de mise à niveau ou de configuration. En mode de maintenance, le site redirige les visiteurs vers un `Service Temporarily Unavailable` page.
+Le _maintenance_ limite ou empêche l’accès à un site pendant les améliorations, les mises à jour et les tâches de configuration. Par défaut, le site redirige les visiteurs vers une `Service Temporarily Unavailable` page.
 
-Vous pouvez créer un [page de maintenance personnalisée](../../upgrade/troubleshooting/maintenance-mode-options.md), activez et désactivez manuellement le mode de maintenance et configurez le mode de maintenance pour permettre aux visiteurs provenant d’adresses IP autorisées de visualiser normalement le magasin. Voir [activation et désactivation du mode de maintenance](../../installation/tutorials/maintenance-mode.md).
+Vous pouvez créer un [page de maintenance personnalisée](../../upgrade/troubleshooting/maintenance-mode-options.md), activez et désactivez manuellement le mode de maintenance et configurez le mode de maintenance pour permettre aux visiteurs provenant d’adresses IP autorisées de visualiser normalement le magasin. Voir [activation et désactivation du mode de maintenance](../../installation/tutorials/maintenance-mode.md) dans le _Guide d’installation_.
 
 Si vous utilisez Commerce sur l’infrastructure cloud, l’application Commerce s’exécute en mode de maintenance pendant la phase de déploiement. Une fois le déploiement terminé, l’application Commerce revient en mode de production. Voir [Hooks de déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks) dans le _Guide sur l’infrastructure de Commerce on Cloud_.
+
+En mode de maintenance :
+
+- Les visiteurs du site sont redirigés vers une `Service Temporarily Unavailable` page
+- Le `var/` contient le répertoire `.maintenance.flag` fichier
+- Vous pouvez limiter l’accès des visiteurs en fonction des adresses IP.
