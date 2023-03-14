@@ -1,8 +1,8 @@
 ---
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 1%
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
 # Vérifier que la communication est sécurisée
@@ -49,7 +49,7 @@ Essayez maintenant la commande suivante :
 curl -i -u <username>:<password> http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 ```
 
-Par exemple :
+Par exemple :
 
 ```bash
 curl -i -u magento_elasticsearch:mypassword http://localhost:8080/_cluster/health
@@ -68,8 +68,8 @@ Connection: keep-alive
 
 ## Configuration de l’authentification HTTP de base dans Admin
 
-Effectuez les mêmes tâches que celles décrites dans la section [Configuration du moteur de recherche](../configuration/search/configure-search-engine.md) *Sauf* click **[!UICONTROL Yes]** de la **[!UICONTROL Enable Elasticsearch HTTP Auth]** listez et saisissez votre nom d’utilisateur et votre mot de passe dans les champs fournis.
+Effectuez les mêmes tâches que celles décrites dans la section [Configuration du moteur de recherche](../configuration/search/configure-search-engine.md) *Sauf* click **[!UICONTROL Yes]** de la **[!UICONTROL Enable HTTP Auth]** listez et saisissez votre nom d’utilisateur et votre mot de passe dans les champs fournis.
 
 Cliquez sur **[!UICONTROL Test Connection]** pour vous assurer qu’il fonctionne, puis cliquez sur **[!UICONTROL Save Config]**.
 
-Vous devez vider le cache du Magento et le réindexer avant de continuer.
+Vous devez vider le cache et réindexer avant de continuer.

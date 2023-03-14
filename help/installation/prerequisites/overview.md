@@ -1,10 +1,10 @@
 ---
 title: Conditions préalables à l’installation sur site
 description: En savoir plus sur les dépendances logicielles requises pour les installations sur site d’Adobe Commerce et de Magento Open Source.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 1%
+source-wordcount: '334'
+ht-degree: 0%
 
 ---
 
@@ -74,7 +74,7 @@ Voir [configuration requise](../system-requirements.md) pour les versions prises
 mysql -u <database root user or database owner name> -p
 ```
 
-Par exemple :
+Par exemple :
 
 ```bash
 mysql -u magento -p
@@ -100,13 +100,21 @@ Entrée `exit` à l’adresse `mysql>` pour quitter.
 
 Pour installer ou mettre à niveau MySQL, voir [MySQL](database/mysql.md).
 
-### Elasticsearch ou OpenSearch
+### Moteur de recherche
+
+Pour vérifier votre installation OpenSearch :
+
+```bash
+curl -XGET '<opensearch-hostname>:<opensearch-port>'
+```
+
+Pour vérifier l’installation de votre Elasticsearch :
 
 ```bash
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'
 ```
 
-Par exemple :
+Par exemple :
 
 ```bash
 curl -XGET 'localhost:9200'

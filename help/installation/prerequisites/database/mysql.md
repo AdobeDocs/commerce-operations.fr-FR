@@ -1,9 +1,9 @@
 ---
 title: Instructions MySQL
 description: Pour installer et configurer MySQL et MariaDB pour les installations sur site d’Adobe Commerce et de Magento Open Source, procédez comme suit.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: c65217cd277be5226681ef239d6a3cf34c251a9f
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Adobe _fortement_ recommande de respecter les normes suivantes lors de la config
 
 >[!WARNING]
 >
->Adobe Commerce et Magento Open Source utilisent actuellement `CREATE TEMPORARY TABLE` des instructions dans les transactions, qui sont [incompatible](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) avec les mises en oeuvre de base de données, utilisez la réplication basée sur GTID, telle que [Instances de deuxième génération Google Cloud SQL](https://cloud.google.com/sql/docs/features#differences). Considérez MySQL pour Cloud SQL 8.0 comme une alternative.
+>Adobe Commerce utilise actuellement `CREATE TEMPORARY TABLE` des instructions dans les transactions, qui sont [incompatible](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) avec les mises en oeuvre de base de données, utilisez la réplication basée sur GTID, telle que [Instances de deuxième génération Google Cloud SQL](https://cloud.google.com/sql/docs/features#differences). Considérez MySQL pour Cloud SQL 8.0 comme une alternative.
 
 >[!NOTE]
 >
@@ -198,7 +198,4 @@ Pour configurer une instance de base de données MySQL :
 >
 >Pour Adobe Commerce sur les projets d’infrastructure cloud, la variable `explicit_defaults_for_timestamp` pour MySQL (MariaDB), le paramètre par défaut est _OFF_.
 
-La réindexation sur MariaDB 10.4 prend plus de temps que les autres versions de MariaDB ou de MySQL. Pour accélérer la réindexation, nous vous recommandons de définir les paramètres de configuration MariaDB suivants :
-
-* optimizer_switch=&#39;rowid_filter=off&#39;
-* optimizer_use_condition_sélectivity = 1
+{{$include /help/_includes/maria-db-config.md}}

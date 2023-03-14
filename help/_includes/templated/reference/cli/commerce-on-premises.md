@@ -1,7 +1,7 @@
 ---
-source-git-commit: 23d55385046de18b238c90f6a99be692f1ce7561
+source-git-commit: 177f301802e1ab1d0560ee98594b8128440efa7c
 workflow-type: tm+mt
-source-wordcount: '15643'
+source-wordcount: '19444'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Version**: 2.4.5
+**Version**: 2.4.6-beta2
 
-Cette référence contient 118 commandes disponibles via le `bin/magento` outil de ligne de commande.
+Cette référence contient 130 commandes disponibles via le `bin/magento` outil de ligne de commande.
 La liste initiale est générée automatiquement à l’aide de la fonction `bin/magento list` à l’édition.
 Utilisez la variable [&quot;Ajout de commandes d’interface de ligne de commande&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) pour ajouter une commande d’interface de ligne de commande personnalisée.
 
@@ -24,6 +24,158 @@ Utilisez la variable [&quot;Ajout de commandes d’interface de ligne de command
 >[!NOTE]
 >
 >Cette référence est générée à partir du code base de l’application. Pour modifier le contenu, vous pouvez mettre à jour le code source de l’implémentation de la commande correspondante dans le [codebase](https://github.com/magento) et envoyer vos modifications pour révision. Une autre méthode consiste à _Donnez-nous vos commentaires_ (trouvez le lien en haut à droite). Pour obtenir des instructions sur les contributions, voir [Contributions au code](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+
+## `_complete`
+
+Commande interne permettant de fournir des suggestions d’achèvement du shell
+
+```bash
+bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-S|--symfony SYMFONY]
+```
+
+### `--shell`, `-s`
+
+Le type de shell (&quot;bash&quot;)
+
+- Nécessite une valeur
+
+### `--input`, `-i`
+
+Un tableau de jetons d’entrée (par exemple, &quot;C.C._WORDS&quot; ou &quot;argv&quot;)
+
+- Valeur par défaut : `[]`
+- Nécessite une valeur
+
+### `--current`, `-c`
+
+Index de la table &quot;input&quot; dans laquelle se trouve le curseur (par exemple, Throne_CWORD)
+
+- Nécessite une valeur
+
+### `--symfony`, `-S`
+
+Version du script d’achèvement
+
+- Nécessite une valeur
+
+### `--help`, `-h`
+
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--quiet`, `-q`
+
+Ne sortez aucun message
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--version`, `-V`
+
+Afficher cette version de l’application
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--ansi`
+
+Forcer (ou désactiver —no-ansi) la sortie ANSI
+
+- N’accepte pas de valeur
+
+### `--no-ansi`
+
+Négociez l’option &quot;—ansi&quot;
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--no-interaction`, `-n`
+
+Ne posez aucune question interactive
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+
+## `completion`
+
+Saut du script d’achèvement du shell
+
+```bash
+bin/magento completion [--debug] [--] [<shell>]
+```
+
+
+### `shell`
+
+Le type de conteneur (par ex. &quot;bash&quot;), la valeur de la variable env &quot;$SHELL&quot; sera utilisée si elle n’est pas indiquée.
+
+
+### `--debug`
+
+Suivi du journal de débogage de fin
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--help`, `-h`
+
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--quiet`, `-q`
+
+Ne sortez aucun message
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--version`, `-V`
+
+Afficher cette version de l’application
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--ansi`
+
+Forcer (ou désactiver —no-ansi) la sortie ANSI
+
+- N’accepte pas de valeur
+
+### `--no-ansi`
+
+Négociez l’option &quot;—ansi&quot;
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--no-interaction`, `-n`
+
+Ne posez aucune question interactive
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
 
 ## `help`
 
@@ -57,7 +209,7 @@ Pour générer l’aide de la commande brute
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -85,14 +237,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -110,7 +261,7 @@ Ne posez aucune question interactive
 Commandes de liste
 
 ```bash
-bin/magento list [--raw] [--format FORMAT] [--] [<namespace>]
+bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 ```
 
 
@@ -133,18 +284,16 @@ Format de sortie (txt, xml, json ou md)
 - Valeur par défaut : `txt`
 - Nécessite une valeur
 
+### `--short`
 
-## `admin:adobe-ims:disable`
+Pour ignorer les arguments de description des commandes
 
-Désactivation du module Adobe IMS
-
-```bash
-bin/magento admin:adobe-ims:disable
-```
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -172,14 +321,70 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--no-interaction`, `-n`
+
+Ne posez aucune question interactive
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+
+## `admin:adobe-ims:disable`
+
+Désactivation du module Adobe IMS
+
+```bash
+bin/magento admin:adobe-ims:disable
+```
+
+### `--help`, `-h`
+
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--quiet`, `-q`
+
+Ne sortez aucun message
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--version`, `-V`
+
+Afficher cette version de l’application
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--ansi`
+
+Forcer (ou désactiver —no-ansi) la sortie ANSI
+
+- N’accepte pas de valeur
+
+### `--no-ansi`
+
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -226,7 +431,7 @@ Vérifiez si 2FA est activé pour l’organisation dans Adobe Admin Console. Obl
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -254,14 +459,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -284,7 +488,7 @@ bin/magento admin:adobe-ims:info
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -312,14 +516,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -342,7 +545,7 @@ bin/magento admin:adobe-ims:status
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -370,14 +573,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -436,7 +638,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -464,14 +666,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -501,7 +702,7 @@ Nom d’utilisateur administrateur à déverrouiller
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -529,14 +730,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -560,7 +760,7 @@ bin/magento app:config:dump [<config-types>...]
 
 ### `config-types`
 
-Liste de types de configuration séparés par des espaces, ou omettez de vider tous les [portées, thèmes, système, i18n]
+Liste de types de configuration séparés par des espaces, ou omettez de vider tous les [portées, système, thèmes, i18n]
 
 - Valeur par défaut : `[]`
 
@@ -568,7 +768,7 @@ Liste de types de configuration séparés par des espaces, ou omettez de vider t
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -596,14 +796,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -626,7 +825,7 @@ bin/magento app:config:import
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -654,14 +853,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -684,7 +882,7 @@ bin/magento app:config:status
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -712,14 +910,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -766,7 +963,7 @@ Mot de passe
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -794,14 +991,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -839,7 +1035,7 @@ ajouter ou remplacer les paramètres de l’amorçage
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -867,14 +1063,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -912,7 +1107,7 @@ ajouter ou remplacer les paramètres de l’amorçage
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -940,14 +1135,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -985,7 +1179,7 @@ ajouter ou remplacer les paramètres de l’amorçage
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1013,14 +1207,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1058,7 +1251,7 @@ ajouter ou remplacer les paramètres de l’amorçage
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1086,14 +1279,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1122,7 +1314,7 @@ ajouter ou remplacer les paramètres de l’amorçage
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1150,14 +1342,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1194,7 +1385,7 @@ Ne pas traiter les images marquées comme masquées dans la page du produit
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1222,14 +1413,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1252,7 +1442,7 @@ bin/magento catalog:product:attributes:cleanup
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1280,14 +1470,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1317,7 +1506,7 @@ y\n
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1345,14 +1534,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1407,7 +1595,7 @@ Code d’étendue pour la configuration, chaîne vide par défaut
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1435,14 +1623,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1512,7 +1699,7 @@ Obsolète, utilisez plutôt l’option —lock-env .
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1540,14 +1727,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1590,7 +1776,7 @@ Code d’étendue (requis uniquement si la portée n’est pas `default`)
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1618,14 +1804,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1662,7 +1847,7 @@ Installer uniquement les tâches non facultatives (par défaut)
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1690,14 +1875,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1720,7 +1904,7 @@ bin/magento cron:remove
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1748,14 +1932,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1790,7 +1973,7 @@ Ajout ou remplacement des paramètres de l’amorçage
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1818,14 +2001,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1848,7 +2030,7 @@ bin/magento customer:hash:upgrade
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1876,14 +2058,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1920,7 +2101,7 @@ Ignore l’effacement et la régénération du contenu statique (code généré,
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1948,14 +2129,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1978,7 +2158,7 @@ bin/magento deploy:mode:show
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2006,14 +2186,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2043,7 +2222,7 @@ Nom de la classe
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2071,14 +2250,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2101,7 +2279,7 @@ bin/magento dev:email:newsletter-compatibility-check
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2129,14 +2307,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2159,7 +2336,7 @@ bin/magento dev:email:override-compatibility-check
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2187,14 +2364,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2217,7 +2393,7 @@ bin/magento dev:profiler:disable
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2245,14 +2421,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2281,7 +2456,7 @@ Type de profil
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2309,14 +2484,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2339,7 +2513,7 @@ bin/magento dev:query-log:disable
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2367,14 +2541,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2418,7 +2591,7 @@ Inclure la pile d’appels. [true\|false]
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2446,14 +2619,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2513,7 +2685,7 @@ Thème : [Fournisseur/thème]
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2541,14 +2713,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2571,7 +2742,7 @@ bin/magento dev:template-hints:disable
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2599,14 +2770,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2629,7 +2799,7 @@ bin/magento dev:template-hints:enable
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2657,14 +2827,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2687,7 +2856,7 @@ bin/magento dev:template-hints:status
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2715,14 +2884,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2760,7 +2928,7 @@ Arguments supplémentaires pour PHPUnit. Exemple : &quot;-c&#39;—filter=MyTest
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2788,14 +2956,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2832,7 +2999,7 @@ Format dans lequel le catalogue sera généré. Pris en charge : [phpstorm, vsco
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2860,14 +3027,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2910,7 +3076,7 @@ Remplacer le fichier XML
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2938,14 +3104,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2977,7 +3142,7 @@ Nom des domaines
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3005,14 +3170,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3044,7 +3208,7 @@ Noms de domaine
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3072,14 +3236,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3102,7 +3265,7 @@ bin/magento downloadable:domains:show
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3130,14 +3293,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3160,7 +3322,7 @@ bin/magento encryption:payment-data:update
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3188,14 +3350,612 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--no-interaction`, `-n`
+
+Ne posez aucune question interactive
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+
+## `events:create-event-provider`
+
+Créez un fournisseur d’événements personnalisés dans les événements d’Adobe I/O pour cette instance. Si vous ne spécifiez pas les options de libellé et de description, elles doivent être définies dans le fichier système app/etc/event-types.json .
+
+```bash
+bin/magento events:create-event-provider [--label [LABEL]] [--description [DESCRIPTION]]
+```
+
+
+```bash
+bin/magento events:provider:create 
+```
+
+### `--label`
+
+Libellé permettant de définir votre fournisseur personnalisé.
+
+- Accepte une valeur
+
+### `--description`
+
+Une description de votre fournisseur.
+
+- Accepte une valeur
+
+### `--help`, `-h`
+
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--quiet`, `-q`
+
+Ne sortez aucun message
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--version`, `-V`
+
+Afficher cette version de l’application
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--ansi`
+
+Forcer (ou désactiver —no-ansi) la sortie ANSI
+
+- N’accepte pas de valeur
+
+### `--no-ansi`
+
+Négociez l’option &quot;—ansi&quot;
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--no-interaction`, `-n`
+
+Ne posez aucune question interactive
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+
+## `events:generate:module`
+
+Générer un module basé sur une liste de modules externes
+
+```bash
+bin/magento events:generate:module
+```
+
+### `--help`, `-h`
+
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--quiet`, `-q`
+
+Ne sortez aucun message
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--version`, `-V`
+
+Afficher cette version de l’application
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--ansi`
+
+Forcer (ou désactiver —no-ansi) la sortie ANSI
+
+- N’accepte pas de valeur
+
+### `--no-ansi`
+
+Négociez l’option &quot;—ansi&quot;
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--no-interaction`, `-n`
+
+Ne posez aucune question interactive
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+
+## `events:info`
+
+Renvoie la charge utile de l’événement spécifié.
+
+```bash
+bin/magento events:info [--depth [DEPTH]] [--] <event-code>
+```
+
+
+### `event-code`
+
+Code d’événement
+
+- Obligatoire
+
+### `--depth`
+
+Le nombre de niveaux dans la payload de l’événement à renvoyer.
+
+- Valeur par défaut : `2`
+- Accepte une valeur
+
+### `--help`, `-h`
+
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--quiet`, `-q`
+
+Ne sortez aucun message
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--version`, `-V`
+
+Afficher cette version de l’application
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--ansi`
+
+Forcer (ou désactiver —no-ansi) la sortie ANSI
+
+- N’accepte pas de valeur
+
+### `--no-ansi`
+
+Négociez l’option &quot;—ansi&quot;
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--no-interaction`, `-n`
+
+Ne posez aucune question interactive
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+
+## `events:list`
+
+Affiche la liste des événements abonnés.
+
+```bash
+bin/magento events:list
+```
+
+### `--help`, `-h`
+
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--quiet`, `-q`
+
+Ne sortez aucun message
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--version`, `-V`
+
+Afficher cette version de l’application
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--ansi`
+
+Forcer (ou désactiver —no-ansi) la sortie ANSI
+
+- N’accepte pas de valeur
+
+### `--no-ansi`
+
+Négociez l’option &quot;—ansi&quot;
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--no-interaction`, `-n`
+
+Ne posez aucune question interactive
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+
+## `events:list:all`
+
+Renvoie une liste d’événements abonnées définis dans le module spécifié
+
+```bash
+bin/magento events:list:all <module_name>
+```
+
+
+### `module_name`
+
+Nom du module
+
+- Obligatoire
+
+### `--help`, `-h`
+
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--quiet`, `-q`
+
+Ne sortez aucun message
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--version`, `-V`
+
+Afficher cette version de l’application
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--ansi`
+
+Forcer (ou désactiver —no-ansi) la sortie ANSI
+
+- N’accepte pas de valeur
+
+### `--no-ansi`
+
+Négociez l’option &quot;—ansi&quot;
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--no-interaction`, `-n`
+
+Ne posez aucune question interactive
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+
+## `events:metadata:populate`
+
+Crée des métadonnées dans Adobe I/O à partir de la liste de configuration (configurations XML et application).
+
+```bash
+bin/magento events:metadata:populate
+```
+
+### `--help`, `-h`
+
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--quiet`, `-q`
+
+Ne sortez aucun message
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--version`, `-V`
+
+Afficher cette version de l’application
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--ansi`
+
+Forcer (ou désactiver —no-ansi) la sortie ANSI
+
+- N’accepte pas de valeur
+
+### `--no-ansi`
+
+Négociez l’option &quot;—ansi&quot;
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--no-interaction`, `-n`
+
+Ne posez aucune question interactive
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+
+## `events:subscribe`
+
+S’abonne à l’événement
+
+```bash
+bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [--] <event-code>
+```
+
+
+### `event-code`
+
+Code d’événement
+
+- Obligatoire
+
+### `--force`, `-f`
+
+Force l’abonnement à l’événement spécifié, même s’il n’a pas été défini localement.
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--fields`
+
+Liste des champs de la payload des données d’événement.
+
+- Valeur par défaut : `[]`
+- Nécessite une valeur
+
+### `--parent`
+
+Code d’événement parent pour un abonnement à un événement avec des règles.
+
+- Nécessite une valeur
+
+### `--rules`
+
+La liste des règles de l’abonnement à l’événement, où chaque règle est formatée sous la forme &quot;champ\|opérateur\|valeur&quot;.
+
+- Valeur par défaut : `[]`
+- Nécessite une valeur
+
+### `--help`, `-h`
+
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--quiet`, `-q`
+
+Ne sortez aucun message
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--version`, `-V`
+
+Afficher cette version de l’application
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--ansi`
+
+Forcer (ou désactiver —no-ansi) la sortie ANSI
+
+- N’accepte pas de valeur
+
+### `--no-ansi`
+
+Négociez l’option &quot;—ansi&quot;
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--no-interaction`, `-n`
+
+Ne posez aucune question interactive
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+
+## `events:sync-events-metadata`
+
+Synchroniser les métadonnées d’événement pour cette instance
+
+```bash
+bin/magento events:sync-events-metadata [-d|--delete]
+```
+
+### `--delete`, `-d`
+
+Suppression des métadonnées d’événements devenues inutiles
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--help`, `-h`
+
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--quiet`, `-q`
+
+Ne sortez aucun message
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--version`, `-V`
+
+Afficher cette version de l’application
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--ansi`
+
+Forcer (ou désactiver —no-ansi) la sortie ANSI
+
+- N’accepte pas de valeur
+
+### `--no-ansi`
+
+Négociez l’option &quot;—ansi&quot;
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--no-interaction`, `-n`
+
+Ne posez aucune question interactive
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+
+## `events:unsubscribe`
+
+Supprime l’abonnement à l’événement fourni.
+
+```bash
+bin/magento events:unsubscribe <event-code>
+```
+
+
+### `event-code`
+
+Code d’événement à désabonner de
+
+- Obligatoire
+
+### `--help`, `-h`
+
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--quiet`, `-q`
+
+Ne sortez aucun message
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--version`, `-V`
+
+Afficher cette version de l’application
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--ansi`
+
+Forcer (ou désactiver —no-ansi) la sortie ANSI
+
+- N’accepte pas de valeur
+
+### `--no-ansi`
+
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3237,7 +3997,7 @@ Utilisez le paramètre —magento pour analyser le code base du Magento actuel. 
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3265,14 +4025,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3322,7 +4081,7 @@ Utilisez le paramètre —allow-duplicates pour enregistrer les doublons de trad
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3350,14 +4109,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3397,7 +4155,7 @@ Sauvegardez le code et les fichiers de configuration (à l’exclusion des fichi
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3425,14 +4183,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3455,7 +4212,7 @@ bin/magento indexer:info
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3483,14 +4240,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3522,7 +4278,7 @@ Liste de types d’index séparés par des espaces ou omettre de les appliquer �
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3550,14 +4306,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3589,7 +4344,7 @@ Liste de types d’index séparés par des espaces ou omettre de les appliquer �
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3617,14 +4372,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3658,7 +4412,7 @@ Modes de dimension de l’indexeur catalog_product_price none,website,customer_g
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3686,14 +4440,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3730,7 +4483,7 @@ Liste de types d’index séparés par des espaces ou omettre de les appliquer �
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3758,14 +4511,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3797,7 +4549,7 @@ Liste de types d’index séparés par des espaces ou omit à appliquer à tous 
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3825,14 +4577,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3864,7 +4615,7 @@ Liste de types d’index séparés par des espaces ou omettre de les appliquer �
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3892,14 +4643,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3931,7 +4681,7 @@ Liste de types d’index séparés par des espaces ou omettre de les appliquer �
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3959,14 +4709,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3989,7 +4738,7 @@ bin/magento info:adminuri
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4017,14 +4766,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4047,7 +4795,7 @@ bin/magento info:backups:list
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4075,14 +4823,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4105,7 +4852,7 @@ bin/magento info:currency:list
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4133,14 +4880,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4170,7 +4916,7 @@ Nom de fichier du rapport
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4198,14 +4944,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4235,7 +4980,7 @@ Nom de fichier du rapport
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4263,14 +5008,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4300,7 +5044,7 @@ Nom de fichier du rapport
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4328,14 +5072,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4358,7 +5101,7 @@ bin/magento info:language:list
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4386,14 +5129,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4416,7 +5158,7 @@ bin/magento info:timezone:list
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4444,14 +5186,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4490,7 +5231,7 @@ Sortie brute
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4518,14 +5259,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4576,7 +5316,7 @@ Sortie brute
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4604,14 +5344,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4644,7 +5383,7 @@ Liste des codes pays à importer
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4672,14 +5411,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4731,7 +5469,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4759,14 +5497,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4802,7 +5539,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4830,14 +5567,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4873,7 +5609,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4901,14 +5637,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4937,7 +5672,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4965,14 +5700,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4995,7 +5729,7 @@ bin/magento media-content:sync
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5023,14 +5757,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5053,7 +5786,7 @@ bin/magento media-gallery:sync
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5081,14 +5814,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5111,7 +5843,7 @@ bin/magento module:config:status
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5139,14 +5871,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5205,7 +5936,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5233,14 +5964,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5299,7 +6029,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5327,14 +6057,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5386,7 +6115,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5414,14 +6143,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5502,7 +6230,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5530,14 +6258,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5583,7 +6310,7 @@ Révision
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5611,14 +6338,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5641,7 +6367,7 @@ bin/magento queue:consumers:list
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5669,14 +6395,70 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--no-interaction`, `-n`
+
+Ne posez aucune question interactive
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+
+## `queue:consumers:restart`
+
+Redémarrer les consommateurs MessageQueue
+
+```bash
+bin/magento queue:consumers:restart
+```
+
+### `--help`, `-h`
+
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--quiet`, `-q`
+
+Ne sortez aucun message
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--version`, `-V`
+
+Afficher cette version de l’application
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--ansi`
+
+Forcer (ou désactiver —no-ansi) la sortie ANSI
+
+- N’accepte pas de valeur
+
+### `--no-ansi`
+
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5743,7 +6525,7 @@ Le chemin d’accès au fichier pour l’enregistrement du PID (cette option est
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5771,14 +6553,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5801,7 +6582,7 @@ bin/magento remote-storage:sync
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5829,14 +6610,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5866,7 +6646,7 @@ Mettre à jour le compositeur.json sans exécuter la mise à jour du compositeur
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5894,14 +6674,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5931,7 +6710,7 @@ Mettre à jour le compositeur.json sans exécuter la mise à jour du compositeur
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5959,14 +6738,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5989,7 +6767,7 @@ bin/magento sampledata:reset
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6017,14 +6795,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6047,7 +6824,7 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6075,14 +6852,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6105,7 +6881,7 @@ bin/magento security:recaptcha:disable-for-user-login
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6133,14 +6909,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6176,7 +6951,7 @@ Secret
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6204,14 +6979,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6234,7 +7008,7 @@ bin/magento security:tfa:providers
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6262,14 +7036,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6305,7 +7078,7 @@ Code du fournisseur
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6333,14 +7106,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6390,7 +7162,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6418,14 +7190,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6443,7 +7214,7 @@ Ne posez aucune question interactive
 Crée ou modifie la configuration du déploiement
 
 ```bash
-bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
 ### `--backend-frontname`
@@ -6461,6 +7232,12 @@ Activation de la journalisation du débogage
 ### `--enable-syslog-logging`
 
 Activation de la journalisation du journal de syslog
+
+- Nécessite une valeur
+
+### `--id_salt`
+
+GraphQl Salt
 
 - Nécessite une valeur
 
@@ -6969,7 +7746,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6997,14 +7774,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7033,7 +7809,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7061,14 +7837,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7118,7 +7893,7 @@ Découvrez le type de correctif à générer. Valeurs disponibles : `data`, `sch
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7146,14 +7921,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7183,7 +7957,7 @@ Nom du module dans lequel la liste autorisée sera générée
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7211,14 +7985,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7294,7 +8067,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7322,14 +8095,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7396,7 +8168,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7424,14 +8196,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7498,7 +8269,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7526,14 +8297,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7569,7 +8339,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7597,14 +8367,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7633,7 +8402,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7661,14 +8430,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7691,7 +8459,7 @@ bin/magento setup:di:compile
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7719,14 +8487,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7744,7 +8511,7 @@ Ne posez aucune question interactive
 Installation de l’application de Magento
 
 ```bash
-bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
 ### `--backend-frontname`
@@ -7762,6 +8529,12 @@ Activation de la journalisation du débogage
 ### `--enable-syslog-logging`
 
 Activation de la journalisation du journal de syslog
+
+- Nécessite une valeur
+
+### `--id_salt`
+
+GraphQl Salt
 
 - Nécessite une valeur
 
@@ -8348,7 +9121,7 @@ Nom de l’administrateur
 
 ### `--search-engine`
 
-Moteur de recherche. Valeurs : élasticsearch5, élasticsearch6, élasticsearch7
+Moteur de recherche. Valeurs : élasticsearch5, élasticsearch7, élasticsearch8, opensearch
 
 - Nécessite une valeur
 
@@ -8391,6 +9164,48 @@ Préfixe d’index Elasticsearch.
 ### `--elasticsearch-timeout`
 
 Délai d’expiration du serveur Elasticsearch.
+
+- Nécessite une valeur
+
+### `--opensearch-host`
+
+Hôte du serveur OpenSearch.
+
+- Nécessite une valeur
+
+### `--opensearch-port`
+
+Port du serveur OpenSearch.
+
+- Nécessite une valeur
+
+### `--opensearch-enable-auth`
+
+Définissez cette variable sur 1 pour activer l’authentification. (la valeur par défaut est 0, désactivée)
+
+- Nécessite une valeur
+
+### `--opensearch-username`
+
+Nom d’utilisateur OpenSearch. Applicable uniquement si l’authentification HTTP est activée
+
+- Nécessite une valeur
+
+### `--opensearch-password`
+
+Mot de passe OpenSearch. Applicable uniquement si l’authentification HTTP est activée
+
+- Nécessite une valeur
+
+### `--opensearch-index-prefix`
+
+Préfixe d’index OpenSearch.
+
+- Nécessite une valeur
+
+### `--opensearch-timeout`
+
+Délai d’expiration du serveur OpenSearch.
 
 - Nécessite une valeur
 
@@ -8467,7 +9282,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8495,14 +9310,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8539,7 +9353,7 @@ Ignorer la réindexation
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8567,14 +9381,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8621,7 +9434,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8649,14 +9462,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8848,7 +9660,7 @@ Ne compilez pas de thèmes parents. Pris en charge uniquement dans les stratégi
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8876,14 +9688,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8966,7 +9777,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8994,14 +9805,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9030,7 +9840,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9058,14 +9868,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9127,7 +9936,7 @@ Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’in
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9155,14 +9964,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9185,7 +9993,7 @@ bin/magento store:list
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9213,14 +10021,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9243,7 +10050,7 @@ bin/magento store:website:list
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9271,14 +10078,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9320,7 +10126,7 @@ Inclure les journaux
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9348,14 +10154,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9404,7 +10209,7 @@ Ignorer l’assainissement
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9432,14 +10237,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9469,7 +10273,7 @@ Vérifiez uniquement les utilitaires de console requis
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9497,14 +10301,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9534,7 +10337,7 @@ Force
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9562,14 +10365,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9616,7 +10418,7 @@ Effacez les fichiers d’affichage statique générés.
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9644,14 +10446,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9715,7 +10516,7 @@ Chemin d’accès au fichier pour l’écriture de vcl
 
 ### `--help`, `-h`
 
-Afficher ce message d’aide
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9743,14 +10544,13 @@ Afficher cette version de l’application
 
 ### `--ansi`
 
-Forcer la sortie ANSI
+Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
 
-Désactiver la sortie ANSI
+Négociez l’option &quot;—ansi&quot;
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur

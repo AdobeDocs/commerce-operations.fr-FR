@@ -1,9 +1,9 @@
 ---
 title: Calendrier des versions
 description: Découvrez quand des versions spécifiques d’Adobe Commerce sont planifiées pour la version bêta, la version préliminaire et la disponibilité générale.
-source-git-commit: 18338316c78e9c2ef87614044e65517b1f11b16d
+source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Le tableau suivant indique les dates des versions planifiées (les dates peuvent
 | Août 2023 Fonctionnalité + version de correctif de sécurité | 2.4.6-p2<br>2.4.5-p4<br>2.4.4-p5 | 25 juillet 2023 | 8 août 2023 |
 | Octobre 2023 Fonctionnalité + version de correctif bêta + version de correctif de sécurité | 2.4.7-beta2<br>2.4.6-p3<br>2.4.5-p5<br>2.4.4-p6 | 26 septembre 2023 | 10 octobre 2023 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 <sup>\-\- Indique les éléments qui ne sont pas applicables à cette version.</sup><br>
 <sup>1 version bêta prévue pour janvier 2023</sup><br>
@@ -39,7 +39,7 @@ Le tableau suivant indique les dates des versions planifiées (les dates peuvent
 
 Une version préliminaire est un code de disponibilité générale disponible pour les marchands Adobe Commerce et tous les partenaires deux semaines avant la disponibilité générale. Cela permet un déploiement plus rapide du code avant la disponibilité générale.
 
-Pour plus d’informations, reportez-vous à la section [Programme bêta](beta-program.md).
+Pour plus d’informations, reportez-vous à la section [versions bêta](beta.md).
 
 ## Types de versions
 

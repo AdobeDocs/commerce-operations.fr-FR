@@ -1,9 +1,9 @@
 ---
 title: Présentation de la portée de la mise à niveau
 description: Découvrez les modifications incompatibles en amont dans une version pouvant avoir un impact sur les modules personnalisés Adobe Commerce ou Magento Open Source ou les extensions tierces.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Consultez les sections suivantes pour commencer à utiliser la méthode [!DNL Up
 
 ### Téléchargement de l’outil
 
-Utilisez le compositeur pour télécharger l’outil. Elle requiert PHP 7.3 ou version ultérieure, au moins 2 Go de mémoire vive, Node.js (si vous vérifiez la compatibilité GraphQL) et une licence Adobe Commerce.
+Utilisez le compositeur pour télécharger l’outil. Il requiert PHP 7.3 ou une version ultérieure, au moins 2 Go de mémoire vive, Node.js (si vous vérifiez la compatibilité avec GraphQL) et une licence Adobe Commerce.
 
 ```bash
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
@@ -54,7 +54,7 @@ bin/uct upgrade:check <dir> -c <coming version>
 
 >[!NOTE]
 >
-> Le `<dir>` est le répertoire dans lequel votre base de code est stockée. Le `-c` compare votre base de code à la version spécifiée (par exemple, 2.4.4).
+> Le `<dir>` est le répertoire dans lequel votre base de code est stockée. Le `-c` compare votre base de code à la version spécifiée.
 
 Pour identifier les problèmes les plus critiques à résoudre par votre équipe :
 

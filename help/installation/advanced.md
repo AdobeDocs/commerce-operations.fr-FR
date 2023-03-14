@@ -1,9 +1,9 @@
 ---
 title: Installation sur site avancée
 description: Découvrez les scénarios d’installation avancés d’Adobe Commerce ou de Magento Open Source sur l’infrastructure que vous détenez.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '2327'
+source-wordcount: '2406'
 ht-degree: 0%
 
 ---
@@ -127,7 +127,7 @@ Les tableaux suivants contiennent de nombreux paramètres d’installation dispo
 | `--admin-lastname` | Nom de l’utilisateur administrateur. | Oui |
 | `--admin-email` | Adresse électronique de l’utilisateur administrateur. | Oui |
 | `--admin-user` | Nom d’utilisateur de l’administrateur. | Oui |
-| `--admin-password` | Mot de passe de l’administrateur. Le mot de passe doit contenir au moins 7 caractères et au moins un caractère alphabétique et au moins un caractère numérique. Nous vous recommandons un mot de passe plus long et plus complexe. Entourez l’intégralité de la chaîne du mot de passe de guillemets simples. Par exemple, `--admin-password='A0b9%t3g'` | Oui |
+| `--admin-password` | Mot de passe de l’administrateur. Le mot de passe doit contenir au moins 7 caractères et au moins un caractère alphabétique et au moins un caractère numérique. Nous vous recommandons un mot de passe plus long et plus complexe. Entourez l’intégralité de la chaîne du mot de passe de guillemets simples. Par exemple : `--admin-password='A0b9%t3g'` | Oui |
 
 **Options de configuration du site et de la base de données :**
 
@@ -161,14 +161,21 @@ Les tableaux suivants contiennent de nombreux paramètres d’installation dispo
 
 | Nom | Valeur | Obligatoire ? |
 |--- |--- |--- |
-| `--search-engine` | Version d’Elasticsearch ou d’OpenSearch à utiliser comme moteur de recherche. Les valeurs possibles sont `elasticsearch7`, `elasticsearch6`, et `elasticsearch5`. La valeur par défaut est `elasticsearch7`. Pour utiliser OpenSearch, spécifiez `elasticsearch7`. Elasticsearch 5 a été abandonné et n’est pas recommandé. | Non |
-| `--elasticsearch-host` | Nom d’hôte ou adresse IP où le moteur de recherche est en cours d’exécution. La valeur par défaut est `localhost`. | Non |
-| `--elasticsearch-port` | Port des requêtes HTTP entrantes. La valeur par défaut est `9200`. | Non |
-| `--elasticsearch-index-prefix` | Préfixe qui identifie l’index du moteur de recherche. La valeur par défaut est `magento2`. | Non |
+| `--search-engine` | Version d’Elasticsearch ou d’OpenSearch à utiliser comme moteur de recherche. La valeur par défaut est `elasticsearch7`. Elasticsearch 5 a été abandonné et n’est pas recommandé. | Non |
+| `--elasticsearch-host` | Nom d’hôte ou adresse IP de l’Elasticsearch en cours d’exécution. La valeur par défaut est `localhost`. | Non |
+| `--elasticsearch-port` | Port Elasticsearch pour les requêtes HTTP entrantes. La valeur par défaut est `9200`. | Non |
+| `--elasticsearch-index-prefix` | Préfixe qui identifie l’index de recherche Elasticsearch. La valeur par défaut est `magento2`. | Non |
 | `--elasticsearch-timeout` | Nombre de secondes avant que le système ne s’arrête. La valeur par défaut est `15`. | Non |
-| `--elasticsearch-enable-auth` | Active l’authentification sur le serveur du moteur de recherche. La valeur par défaut est `false`. | Non |
-| `--elasticsearch-username` | ID utilisateur pour authentifier le moteur de recherche | Non, sauf si l’authentification est activée |
-| `--elasticsearch-password` | Mot de passe pour authentifier le moteur de recherche | Non, sauf si l’authentification est activée |
+| `--elasticsearch-enable-auth` | Active l’authentification sur le serveur Elasticsearch. La valeur par défaut est `false`. | Non |
+| `--elasticsearch-username` | ID utilisateur à authentifier sur le serveur Elasticsearch. | Non, sauf si l’authentification est activée |
+| `--elasticsearch-password` | Mot de passe pour l’authentification auprès du serveur Elasticsearchserver. | Non, sauf si l’authentification est activée |
+| `--opensearch-host` | Nom d’hôte ou adresse IP où OpenSearch est en cours d’exécution. La valeur par défaut est `localhost`. | Non |
+| `--opensearch-port` | Port OpenSearch pour les requêtes HTTP entrantes. La valeur par défaut est `9200`. | Non |
+| `--opensearch-index-prefix` | Préfixe qui identifie l’index de recherche OpenSearch. La valeur par défaut est `magento2`. | Non |
+| `--opensearch-timeout` | Nombre de secondes avant que le système ne s’arrête. La valeur par défaut est `15`. | Non |
+| `--opensearch-enable-auth` | Active l’authentification sur le serveur OpenSearch. La valeur par défaut est `false`. | Non |
+| `--opensearch-username` | ID utilisateur à authentifier sur le serveur OpenSearch. | Non, sauf si l’authentification est activée |
+| `--opensearch-password` | Mot de passe pour l’authentification auprès du serveur OpenSearch. | Non, sauf si l’authentification est activée |
 
 **[!DNL RabbitMQ]options de configuration :**
 
@@ -188,7 +195,7 @@ Les tableaux suivants contiennent de nombreux paramètres d’installation dispo
 |--- |--- |--- |
 | `--lock-provider` | Verrouillez le nom du fournisseur.<br><br>Opérateurs de verrouillage disponibles : `db`, `zookeeper`, `file`.<br><br>Le fournisseur de verrouillage par défaut : `db` | Non |
 | `--lock-db-prefix` | Préfixe db spécifique pour éviter les conflits de verrouillage lors de l’utilisation de `db` fournisseur de verrouillage.<br><br>La valeur par défaut : `NULL` | Non |
-| `--lock-zookeeper-host` | Hôte et port pour vous connecter à la grappe Zookeeper lorsque vous utilisez `zookeeper` fournisseur de verrouillage.<br><br>Par exemple: `127.0.0.1:2181` | Oui, si vous définissez `--lock-provider=zookeeper` |
+| `--lock-zookeeper-host` | Hôte et port pour vous connecter à la grappe Zookeeper lorsque vous utilisez `zookeeper` fournisseur de verrouillage.<br><br>Par exemple : `127.0.0.1:2181` | Oui, si vous définissez `--lock-provider=zookeeper` |
 | `--lock-zookeeper-path` | Chemin d’accès où le gardien de page enregistre les verrous.<br><br>Le chemin par défaut est le suivant : `/magento/locks` | Non |
 | `--lock-file-path` | Chemin d’accès où les verrous de fichier sont enregistrés. | Oui, si vous définissez `--lock-provider=file` |
 
@@ -231,7 +238,7 @@ L’exemple suivant installe Adobe Commerce ou Magento Open Source avec les opti
 * La langue par défaut est `en_US` (Anglais américain)
 * La devise par défaut est le dollar américain
 * Le fuseau horaire par défaut est centré aux États-Unis (Amérique/Chicago)
-* OpenSearch 1.2 est installé sur `es-host.example.com` et se connecte sur le port 9200
+* OpenSearch 1.2 est installé sur `os-host.example.com` et se connecte sur le port 9200
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -239,8 +246,8 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --admin-firstname=Magento --admin-lastname=User --admin-email=user@example.com \
 --admin-user=admin --admin-password=admin123 --language=en_US \
 --currency=USD --timezone=America/Chicago --use-rewrites=1 \
---search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
---elasticsearch-port=9200
+--search-engine=opensearch --opensearch-host=os-host.example.com \
+--opensearch-port=9200
 ```
 
 Messages similaires à l’affichage suivant pour indiquer une installation réussie :
@@ -261,8 +268,8 @@ Vous pouvez installer Adobe Commerce ou Magento Open Source sans créer d’util
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=1 \
---search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
---elasticsearch-port=9200
+--search-engine=opensearch --opensearch-host=os-host.example.com \
+--opensearch-port=9200
 ```
 
 Les messages comme celui-ci s’affichent si l’installation est réussie :
@@ -303,7 +310,7 @@ L’exemple suivant installe Adobe Commerce ou Magento Open Source avec les opti
 * Vous pouvez utiliser le préfixe d’incrément de commande client. `ORD$` (car il contient un caractère spécial) [`$`], la valeur doit être entre guillemets doubles)
 * Les données de session sont enregistrées dans la base de données.
 * Utilise les réécritures du serveur
-* Elasticsearch 7 est installé sur `es-host.example.com` et se connecte sur le port 9200
+* OpenSearch est installé sur `os-host.example.com` et se connecte sur le port 9200
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -312,8 +319,8 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --admin-user=admin --admin-password=admin123 --language=en_US \
 --currency=USD --timezone=America/Chicago --cleanup-database \
 --sales-order-increment-prefix="ORD$" --session-save=db --use-rewrites=1 \
---search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
---elasticsearch-port=9200
+--search-engine=opensearch --opensearch-host=os-host.example.com \
+--opensearch-port=9200
 ```
 
 >[!NOTE]

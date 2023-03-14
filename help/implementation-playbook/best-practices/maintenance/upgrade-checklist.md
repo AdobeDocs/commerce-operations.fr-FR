@@ -4,7 +4,7 @@ description: Découvrez comment créer et utiliser une liste de contrôle de mis
 role: Leader
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 644970b350c7591896f7c00d4c94661c76495c73
+source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Utilisez cette liste de contrôle lors de vos conversations annuelles et trimest
 
 ▢ Activités d’accès anticipé
 
-- Le partenaire participe [Beta](../../../release/beta-program.md)
+- Le partenaire participe [Beta](../../../release/beta.md)
 - Révision des notes de mise à jour bêta.
 
 ▢ Convenir du budget, du calendrier, de la portée.

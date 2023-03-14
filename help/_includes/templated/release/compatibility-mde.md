@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2bb3c8545e271cbc7ba16f7f8bdf027fad4da936
+source-git-commit: dbfb4dadf5033eb580d3d47e9b2055ddeb316461
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   <thead>
     <tr>
       <th> </th>
+      <th>Version 2.4.6</th>
       <th>Version 2.4.5</th>
       <th>Version 2.4.4</th>
       <th>Version 2.4.3</th>
@@ -29,18 +30,30 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th>Version 2.4.1</th>
       <th>Version 2.4.0</th>
       <th>Version 2.3.7</th>
-      <th>Version 2.3.6</th>
-      <th>Version 2.3.5-p1</th>
-      <th>Version 2.3.4</th>
-      <th>Version 2.3.3</th>
-      <th>Version 2.3.2</th>
-      <th>Version 2.3.1</th>
-      <th>Version 2.3.0</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th colspan="15">Amazon Sales Channel</th>
+      <th colspan="9">Amazon Sales Channel</th>
+    </tr>
+    <tr>
+      <td>Amazon Sales Channel 4.4.4</td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
     </tr>
     <tr>
       <td>Amazon Sales Channel 4.4.3</td>
@@ -54,19 +67,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -85,19 +86,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -116,19 +105,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -147,19 +124,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -178,19 +143,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -199,14 +152,6 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Amazon Sales Channel 4.2.0</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
       <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
@@ -217,11 +162,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -230,37 +171,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Amazon Sales Channel 4.1.0</td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
       <td>Pris en charge</span>
       </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Amazon Sales Channel 4.0.0</td>
       <td>Non pris en charge</span>
       </td>
       <td>Non pris en charge</span>
@@ -272,113 +184,6 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Non pris en charge</span>
       </td>
       <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Amazon Sales Channel 3.0.1</td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Amazon Sales Channel 3.0.0</td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Amazon Sales Channel 2.0.0</td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -386,10 +191,10 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">B2B</th>
+      <th colspan="9">B2B</th>
     </tr>
     <tr>
-      <td>B2B 1.3.4</td>
+      <td>B2B 1.3.5</td>
       <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
@@ -405,6 +210,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
+      </td>
+    </tr>
+    <tr>
+      <td>B2B 1.3.4</td>
+      <td>Compatible</span>
+      </td>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -423,21 +235,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>B2B 1.3.3</td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -456,21 +256,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -489,21 +277,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -522,21 +298,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -555,21 +319,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -588,235 +340,6 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>B2B 1.1.6</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>B2B 1.1.5</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>B2B 1.1.4</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>B2B 1.1.3</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>B2B 1.1.2</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>B2B 1.1.1</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>B2B 1.1.0</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
       <td>Compatible</span>
       </td>
       <td>Pris en charge</span>
@@ -825,7 +348,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">Service de catalogue</th>
+      <th colspan="9">Service de catalogue</th>
     </tr>
     <tr>
       <td>Catalog Service 1.4</td>
@@ -833,7 +356,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -841,19 +364,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -864,7 +375,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -872,19 +383,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -895,7 +394,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -903,19 +402,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -926,7 +413,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -934,19 +421,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -954,10 +429,31 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">Gestionnaire de canaux</th>
+      <th colspan="9">Gestionnaire de canaux</th>
+    </tr>
+    <tr>
+      <td>Gestionnaire de canaux 1.4.0</td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Non pris en charge</span>
+      </td>
     </tr>
     <tr>
       <td>Gestionnaire de canaux 1.1.0</td>
+      <td>Non pris en charge</span>
+      </td>
       <td>Pris en charge</span>
       </td>
       <td>Pris en charge</span>
@@ -969,20 +465,6 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Pris en charge</span>
       </td>
       <td>Pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -1001,19 +483,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Pris en charge</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -1021,10 +491,10 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">Inventory management</th>
+      <th colspan="9">Inventory management</th>
     </tr>
     <tr>
-      <td>Inventory management 1.2.5</td>
+      <td>Inventory management 1.2.6</td>
       <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
@@ -1040,6 +510,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Inventory management 1.2.5</td>
+      <td>Compatible</span>
+      </td>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1058,21 +535,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Inventory management 1.2.4</td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1091,21 +556,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1124,21 +577,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1157,21 +598,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1190,21 +619,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1223,235 +640,6 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Inventory management 1.1.6</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Inventory management 1.1.5</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Inventory management 1.1.4</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Inventory management 1.1.3</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Inventory management 1.1.2</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Inventory management 1.1.1</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Inventory management 1.1.0</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
       <td>Compatible</span>
       </td>
       <td>Pris en charge</span>
@@ -1460,7 +648,26 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">Recherche en direct</th>
+      <th colspan="9">Recherche en direct</th>
+    </tr>
+    <tr>
+      <td>Live Search 3.0.1</td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Non pris en charge</span>
+      </td>
     </tr>
     <tr>
       <td>Live Search 2.0.5</td>
@@ -1468,7 +675,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1476,19 +683,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -1499,7 +694,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1507,19 +702,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -1530,7 +713,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1538,19 +721,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -1561,7 +732,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1569,19 +740,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -1600,19 +759,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -1631,19 +778,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -1662,19 +797,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -1682,10 +805,10 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">Page Builder</th>
+      <th colspan="9">Page Builder</th>
     </tr>
     <tr>
-      <td>Page Builder 1.7.2</td>
+      <td>Page Builder 1.7.3</td>
       <td>Pris en charge</span>
       </td>
       <td>Non pris en charge</span>
@@ -1701,6 +824,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Non pris en charge</span>
       </td>
       <td>Non pris en charge</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Page Builder 1.7.2</td>
+      <td>Non pris en charge</span>
+      </td>
+      <td>Pris en charge</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -1719,21 +849,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Page Builder 1.7.1</td>
       <td>Non pris en charge</span>
       </td>
+      <td>Non pris en charge</span>
+      </td>
       <td>Pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -1752,21 +870,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Non pris en charge</span>
       </td>
+      <td>Non pris en charge</span>
+      </td>
       <td>Pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -1785,21 +891,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Non pris en charge</span>
       </td>
+      <td>Non pris en charge</span>
+      </td>
       <td>Pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -1818,21 +912,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Non pris en charge</span>
       </td>
+      <td>Non pris en charge</span>
+      </td>
       <td>Pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -1851,21 +933,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Non pris en charge</span>
       </td>
+      <td>Non pris en charge</span>
+      </td>
       <td>Pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -1886,214 +956,37 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Non pris en charge</span>
       </td>
-      <td>Pris en charge</span>
-      </td>
       <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Page Builder 1.3.4</td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Page Builder 1.3.1</td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Page Builder 1.2.0</td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Page Builder 1.1.0</td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Page Builder 1.0.1</td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Page Builder 1.0.0</td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
       </td>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">Services de paiement</th>
+      <th colspan="9">Services de paiement</th>
+    </tr>
+    <tr>
+      <td>Services de paiement 2.0.0</td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Pris en charge</span>
+      </td>
+      <td>Non compatible</span>
+      </td>
+      <td>Non compatible</span>
+      </td>
+      <td>Non compatible</span>
+      </td>
+      <td>Non compatible</span>
+      </td>
+      <td></span>
+      </td>
     </tr>
     <tr>
       <td>Services de paiement 1.6.0</td>
+      <td>Non pris en charge</span>
+      </td>
       <td>Pris en charge</span>
       </td>
       <td>Pris en charge</span>
@@ -2105,20 +998,6 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -2129,7 +1008,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2137,19 +1016,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -2160,7 +1027,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2168,19 +1035,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -2191,7 +1046,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2199,19 +1054,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -2222,7 +1065,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2230,19 +1073,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -2253,7 +1084,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2261,19 +1092,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -2284,7 +1103,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2292,19 +1111,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -2315,35 +1122,6 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Services de paiement 1.3.1</td>
-      <td>Pris en charge</span>
-      </td>
       <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
@@ -2353,144 +1131,6 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Services de paiement 1.3.0</td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Services de paiement 1.2.0</td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Services de paiement 1.1.0</td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Services de paiement 1.0.0</td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -2498,7 +1138,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">Passage en caisse rapide</th>
+      <th colspan="9">Passage en caisse rapide</th>
     </tr>
     <tr>
       <td>Achat rapide version 1.7.0</td>
@@ -2506,7 +1146,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2514,19 +1154,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -2537,7 +1165,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2545,19 +1173,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -2568,7 +1184,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2576,19 +1192,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -2599,7 +1203,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2607,19 +1211,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -2630,7 +1222,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2638,19 +1230,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -2661,7 +1241,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Compatible</span>
+      <td>Pris en charge</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2669,25 +1249,15 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
     </tr>
     <tr>
       <td>Achat rapide version 1.1.0</td>
+      <td>Pris en charge</span>
+      </td>
       <td>Compatible</span>
       </td>
       <td>Pris en charge</span>
@@ -2697,20 +1267,6 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Pris en charge</span>
       </td>
       <td>Pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -2719,6 +1275,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Achat rapide version 1.0.0</td>
+      <td>Pris en charge</span>
+      </td>
       <td>Compatible</span>
       </td>
       <td>Pris en charge</span>
@@ -2728,20 +1286,6 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Pris en charge</span>
       </td>
       <td>Pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -2751,7 +1295,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">Connecteur Experience Platform</th>
+      <th colspan="9">Connecteur Experience Platform</th>
     </tr>
     <tr>
       <td>Connecteur Experience Platform 1.0.0</td>
@@ -2761,19 +1305,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Pris en charge</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Pris en charge</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -2787,7 +1319,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">Recommendations de produit</th>
+      <th colspan="9">Recommendations de produit</th>
     </tr>
     <tr>
       <td>Product Recommendations 4.0.1</td>
@@ -2803,19 +1335,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
@@ -2834,37 +1354,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
+      <td>Compatible</span>
       </td>
       <td>Non pris en charge</span>
       </td>
     </tr>
     <tr>
       <td>Product Recommendations 3.3.7</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
@@ -2900,33 +1396,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
     </tr>
     <tr>
       <td>Product Recommendations 3.3.5</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
@@ -2962,33 +1434,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
     </tr>
     <tr>
       <td>Product Recommendations 3.3.2</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
@@ -3023,545 +1471,6 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.3.0</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.2.6</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.2.5</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.2.4</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.2.3</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.2.2</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Recommendations 3.10.0 de produit</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.0.8</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.0.6</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.0.5</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.0.4</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.0.3</td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.0.2</td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.0.1</td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.0.0</td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 2.0.0</td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 1.x.x</td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
-      </td>
-      <td>Non pris en charge</span>
       </td>
     </tr>
   </tbody>

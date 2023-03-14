@@ -1,10 +1,10 @@
 ---
 user-guide-title: Guide de mise à niveau
-user-guide-description: Découvrez pourquoi la mise à niveau de votre application Adobe Commerce ou Magento Open Source est si importante et comment planifier et exécuter une mise à niveau avec succès.
-source-git-commit: f5fadcae219dce9d3aa19cb916d08a104377f22e
+user-guide-description: Découvrez pourquoi la mise à niveau de votre application Adobe Commerce est si importante et comment planifier et exécuter une mise à niveau avec succès.
+source-git-commit: 6965e8213a7293f55c9b51e3e556715ccdad9daf
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 18%
+source-wordcount: '144'
+ht-degree: 0%
 
 ---
 
@@ -51,5 +51,5 @@ ht-degree: 18%
    - [Options du mode de maintenance pour la mise à niveau](troubleshooting/maintenance-mode-options.md)
 - Ressources {#resources}
    - [Lecture recommandée](resources/recommended-reading.md)
-   - [Modernisation de votre plateforme avec Adobe Commerce 2.4.4+](resources/recommended-upgrade-paths-2022.md)
+   - [Modernisation de votre plateforme avec Adobe Commerce](resources/recommended-upgrade-paths.md)
 - [Revenir aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

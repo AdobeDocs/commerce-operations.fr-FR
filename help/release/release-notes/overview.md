@@ -1,9 +1,9 @@
 ---
 title: Notes de mise à jour d’Adobe Commerce et de Magento Open Source
 description: Découvrez où trouver des informations pour des versions spécifiques d’Adobe Commerce et de Magento Open Source.
-source-git-commit: d63d1dd03cbf166f6fbce1df7113d1e861363f28
+source-git-commit: da6741586d0fb8e029ee5a9342e1299176df298e
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ Utilisez le tableau suivant pour trouver des notes de mise à jour et des inform
         <p>Découvrez les dernières améliorations apportées aux outils conçus pour vous aider à trouver et à utiliser plus facilement les logiciels Adobe Commerce et Magento Open Source.</p>
           <ul>
             <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Maillage d’API pour le développeur du créateur d’applications Adobe</a></li>
+            <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Événements d’Adobe I/O pour Adobe Commerce</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">Outil Correctifs de qualité</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">Outil d’analyse à l’échelle du site</a></li>
             <li><a href="../../upgrade/upgrade-compatibility-tool/overview.md">Outil de compatibilité de mise à niveau</a></li>

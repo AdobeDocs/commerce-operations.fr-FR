@@ -1,9 +1,9 @@
 ---
 title: Lecture recommandée pour les mises à niveau
-description: Consultez la lecture recommandée pour planifier la mise à niveau d’Adobe Commerce ou de Magento Open Source.
-source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
+description: Consultez la lecture recommandée pour planifier la mise à niveau d’Adobe Commerce.
+source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -20,21 +20,20 @@ Continuez à découvrir les mises à niveau d’Adobe Commerce et de Magento Ope
         <p>Découvrez les derniers développements dans Adobe Commerce et Magento Open Source, notamment la stratégie du produit, la sécurité, les correctifs de bogues et les problèmes connus.</p>
           <ul>
             <li><a href="https://blog.adobe.com/">Adobe Blog</a></li>
-            <li><a href="https://support.magento.com/hc/en-us">Adobe Help Center</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe Help Center</a></li>
             <li><a href="https://helpx.adobe.com/security/products/magento/apsb22-12.html">Bulletin de sécurité Adobe</a></li>
             <li><a href="https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog">Devblog</a></li>
-            <li><a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">Notes de mise à jour</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Notes de mise à jour</a></li>
             <li><a href="https://solutionpartners.adobe.com/solution-partners.html">Portail Partenaires en solutions</a></li>
           </ul>
         </td>
       <td><strong>Outils</strong>
         <p>Parcourez les outils conçus pour faciliter la recherche et l’utilisation des logiciels Adobe Commerce et Magento Open Source.</p>
           <ul>
-            <li><a href="https://magento.com/tech-resources/downloads">Téléchargement des versions d’Adobe Commerce</li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">Module externe PhpStorm de l’outil de compatibilité de mise à niveau</a> (vidéo)</li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">Module externe PhpStorm de l’outil de compatibilité de mise à niveau</a> (vidéo)</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">Outil de compatibilité de mise à niveau</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool canal Slack</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html">Outil Correctifs de qualité</a></li>
+            <li><a href="../../tools/quality-patches-tool/usage.md">Outil Correctifs de qualité</a></li>
           </ul>
       </td>
     </tr>
@@ -42,12 +41,12 @@ Continuez à découvrir les mises à niveau d’Adobe Commerce et de Magento Ope
       <td><strong>Calendriers et stratégie</strong>
         <p>Consultez les détails sur les versions et stratégies d’Adobe Commerce et de Magento Open Source.</p>
           <ul>
-            <li><a href="https://support.magento.com/hc/en-us/articles/4965909814797-Adobe-Commerce-Software-End-of-Support-FAQ">FAQ sur la fin de la prise en charge des logiciels Adobe Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">FAQ sur la fin de la prise en charge des logiciels Adobe Commerce</a></li>
             <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">Stratégie de Commerce Marketplace</a></li>
-            <li><a href="https://support.magento.com/hc/en-us/articles/4409421516301-FAQ-for-New-Adobe-Commerce-Release-Strategy-and-Updated-Lifecycle-Policy">FAQ sur la nouvelle stratégie de mise à jour d’Adobe Commerce, la mise à jour de la stratégie de cycle de vie et la prise en charge étendue</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html">FAQ sur la nouvelle stratégie de mise à jour d’Adobe Commerce, la mise à jour de la stratégie de cycle de vie et la prise en charge étendue</a></li>
             <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">Stratégie de cycle de vie</a></li>
-            <li><a href="https://devdocs.magento.com/release/">Calendrier des versions</a></li>
-            <li><a href="https://devdocs.magento.com/release/policy/">Types de versions</a></li>
+            <li><a href="../../release/schedule.md">Calendrier des versions</a></li>
+            <li><a href="../../release/versioning-policy.md">Types de versions</a></li>
           </ul>
         </td>
       <td><strong>Fonctionnalités et services indépendants</strong>
@@ -64,16 +63,15 @@ Continuez à découvrir les mises à niveau d’Adobe Commerce et de Magento Ope
       <td><strong>Ressources de mise à niveau</strong>
         <p>Gardez votre vitrine sécurisée et opérationnelle efficacement. Préparez-vous à la mise à niveau d’Adobe Commerce ou de Magento Open Source en consultant la documentation technique exhaustive de l’Adobe.</p>
           <ul>
-            <li><a href="recommended-upgrade-paths-2022.md">2022 Chemins de mise à niveau recommandés</a></li>
-            <li><a href="../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf">2.4 Guide de mise à niveau</a> (PDF)</li>
+            <li><a href="recommended-upgrade-paths.md">Chemins de mise à niveau recommandés</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 Enregistrement de l’atelier de mise à niveau technique</a></li>
-            <li><a href="https://support.magento.com/hc/en-us/articles/360034120932">Accès aux versions préliminaires</a></li>
-            <li><a href="https://devdocs.magento.com/release/beta-program.html">Présentation du programme bêta</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html">Accès aux versions préliminaires</a></li>
+            <li><a href="../../release/beta.md">Présentation des versions bêta</a></li>
             <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/">Développement incompatible avec le passé</a></li>
-            <li><a href="https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html">Modifications incompatibles en amont</a></li>
-            <li><a href="https://support.magento.com/hc/en-us/articles/360057968951-Upgrade-plan-checklist-for-Adobe-Commerce">Liste de contrôle du plan de mise à niveau</a></li>
+            <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/">Modifications incompatibles en amont</a></li>
+            <li><a href="../../implementation-playbook/best-practices/maintenance/upgrade-checklist.md">Liste de contrôle du plan de mise à niveau</a></li>
             <li><a href="../prepare/best-practices.md">Meilleures pratiques de mise à niveau</a></li>
-            <li><a href="https://devdocs.magento.com/release/availability.html">Disponibilité logicielle</a></li>
+            <li><a href="../../release/product-availability.md">Disponibilité logicielle</a></li>
           </ul>
       </td>
       <td><strong>Expérience Storefront</strong>

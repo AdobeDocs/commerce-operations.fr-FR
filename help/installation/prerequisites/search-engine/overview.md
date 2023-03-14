@@ -1,9 +1,9 @@
 ---
 title: Prérequis du moteur de recherche
 description: Pour installer et configurer les logiciels de moteur de recherche pris en charge pour les installations sur site d’Adobe Commerce et de Magento Open Source, procédez comme suit.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: d3cfd97450164d38fd340b538099739601573d64
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Depuis Adobe Commerce et Magento Open Source 2.4, toutes les installations doive
 
 ## Versions prises en charge
 
-Vous devez installer et configurer Elasticsearch ou OpenSearch avant d’installer Adobe Commerce ou Magento Open Source 2.4.4.
+Vous devez installer et configurer Elasticsearch ou OpenSearch avant d’installer Adobe Commerce 2.4.4 et versions ultérieures.
 
 Reportez-vous à la section [Configuration requise](../../system-requirements.md) pour des informations de version spécifiques.
 
@@ -164,4 +164,4 @@ Elasticsearch requiert JDK 1.8 ou version ultérieure. Voir [Installation du Jav
 
 ## Ressources supplémentaires
 
-Pour plus d’informations, voir [Documentation Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html).
+Voir [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) ou [OpenSearch](https://opensearch.org/docs/latest/) documentation.

@@ -1,9 +1,9 @@
 ---
 title: Moteur de recherche actuel non pris en charge
 description: Dépannez votre mise à niveau Adobe Commerce ou Magento Open Source après avoir rencontré une erreur au sujet d’un moteur de recherche non pris en charge.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Utilisez la commande suivante pour vérifier le moteur de recherche actuel :
 bin/magento config:show catalog/search/engine
 ```
 
-L’erreur se produit si la valeur renvoyée est `mysql` ou `elasticsearch`.
+L’erreur se produit si la valeur renvoyée est `mysql`, `elasticsearch`ou `elasticsearch6`.
 
 >[!WARNING]
 >
@@ -44,7 +44,7 @@ L’erreur se produit si la valeur renvoyée est `mysql` ou `elasticsearch`.
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->Où `<version>` est la version du Magento que vous utilisiez. **before** la mise à niveau. Par exemple, `2.3.5`.
+>Où `<version>` est la version du Magento que vous utilisiez. **before** la mise à niveau. Par exemple : `2.3.5`.
 
 Suivez les instructions décrites dans les sections suivantes pour récupérer à partir d’un état incohérent.
 
@@ -54,14 +54,14 @@ Avant la version 2.4, MySQL était le moteur de recherche catalogue par défaut,
 
 Utilisez les ressources suivantes pour vous aider à accomplir ce processus :
 
-- [Installation et configuration de l’Elasticsearch](../../configuration/search/overview-search.md)
-- [Installation de l’Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- Configuration d’un Elasticsearch avec lequel travailler [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) ou [Apache](../../installation/prerequisites/search-engine/configure-apache.md)
-- [Configurer l’Elasticsearch](../../configuration/search/configure-search-engine.md)
+- [Installation et configuration du moteur de recherche](../../configuration/search/overview-search.md)
+- [Configuration du moteur de recherche](../../configuration/search/configure-search-engine.md)
 
 Après avoir configuré le moteur de recherche et réindexé, vous êtes prêt à effectuer la mise à niveau vers la version 2.4.
 
 ## Si votre moteur de recherche est `elasticsearch`
+
+Elasticsearch 6 et versions antérieures ne sont plus prises en charge.
 
 Une valeur de `elasticsearch` indique que votre version de bas niveau d’Adobe Commerce ou de Magento Open Source est configurée pour utiliser Elasticsearch 2.x. Cette version d’Elasticsearch n’est plus prise en charge.
 

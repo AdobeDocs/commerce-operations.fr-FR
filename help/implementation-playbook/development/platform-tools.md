@@ -2,9 +2,9 @@
 title: Outils Platform
 description: Choisissez les outils de plateforme recommandés pour votre mise en oeuvre Adobe Commerce.
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: ea912c48176fb060e48654d05ae6b533436a2432
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Nous vous recommandons vivement d’utiliser Varnish comme serveur de cache de p
 
 ## Services de recherche
 
-Pour Adobe Commerce version 2.4 et ultérieure, toutes les installations doivent être configurées pour utiliser Elasticsearch en tant que solution de recherche de catalogue. Elasticsearch fournit des recherches rapides et avancées sur les produits du catalogue. Elasticsearch est facultatif pour les versions antérieures à la version 2.4, mais il est recommandé.
+Pour Adobe Commerce version 2.4 et ultérieure, toutes les installations doivent être configurées pour utiliser Elasticsearch ou OpenSearch en tant que solution de recherche de catalogue. Elasticsearch fournit des recherches rapides et avancées sur les produits du catalogue. Elasticsearch est facultatif pour les versions antérieures à la version 2.4, mais il est recommandé.
 
 ## Services de la file d’attente des messages
 

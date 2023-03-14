@@ -2,9 +2,9 @@
 title: Technologies de l’infrastructure cloud
 description: Observez de plus près la collection de technologies que nous utilisons pour Adobe Commerce sur l’infrastructure cloud.
 exl-id: de1b3a64-d32b-455f-bdb0-ad883dedd6d4
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 683ce0a72aca0319ade2e4ccfd7a8e541a228156
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,8 @@ Comme nous l’avons mentionné, Adobe Commerce utilise plusieurs solutions logi
 - **Redis**— Un serveur par VM avec une seule principale et les deux autres comme répliques.
 
 - **Elasticsearch**: recherchez Adobe Commerce version 2.2.x et ultérieure.
+
+- **OpenSearch**: recherchez Adobe Commerce version 2.4.6 et ultérieure.
 
 - **Galera**: grappe de base de données avec une base de données MariaDB MySQL par noeud avec un paramètre d’incrémentation automatique de trois pour les identifiants uniques de chaque base de données.
 

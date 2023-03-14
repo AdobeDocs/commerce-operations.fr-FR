@@ -1,9 +1,9 @@
 ---
 title: Mise à niveau
-description: Découvrez les différentes phases de mise en oeuvre de la mise à niveau pour les projets Adobe Commerce et Magento Open Source.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+description: Découvrez les différentes phases de mise en oeuvre de la mise à niveau pour les projets Adobe Commerce.
+source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '824'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ L’analyse est sans doute la partie la plus importante du processus de mise à 
 
 Vous trouverez ci-dessous des éléments que vous pouvez inclure dans une analyse approfondie :
 
-- **Portée de la version cible**—Documentation sur [Documents de développement Commerce](https://devdocs.magento.com) et les informations des webinaires de version des partenaires fournissent tous les détails que vous devez connaître sur votre mise à niveau vers target.
+- **Portée de la version cible**—Documentation sur [Experience League](../../release/release-notes/overview.md) et les informations des webinaires de version des partenaires fournissent tous les détails que vous devez connaître sur votre mise à niveau vers target.
 
 - **[!DNL Upgrade Compatibility Tool]résultats**—Cet outil facilite toute mise à niveau en comparant votre code actuel au code de la version cible et en produisant un rapport de tous les problèmes qui doivent être résolus. Voir [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Voici les principaux détails du rapport :
 
@@ -38,13 +38,13 @@ Vous trouverez ci-dessous des éléments que vous pouvez inclure dans une analys
 
    | Service | Version actuelle | Mettre à niveau vers | Remarques |
    |-----------------|-----------------|------------|----------------------------------------------------------|
-   | PHP | 7.2.33 | 8.1 |  |
-   | Redis | 5,05 | 6.0 |  |
-   | [!DNL RabbitMQ] | 3,7 | 3,8 | Non utilisé actuellement, mais nous devrions envisager de l’utiliser |
-   | MariaDB (Cloud) | 10.2.33 | 10.4 |  |
-   | MySQL | 8,0 |  |  |
-   | Compositeur | 1.9.2 | 2,0 |  |
-   | Elasticsearch | 7,7 | 7,10 |  |
+   | PHP | 7.4 | 8.1 |  |
+   | Redis | 6.0 | 6.2 |  |
+   | [!DNL RabbitMQ] | 3.8 | 3.9 | Non utilisé actuellement, mais nous devrions envisager de l’utiliser |
+   | MariaDB (Cloud) | 10.4 | 10.6 |  |
+   | MySQL | 8.0 | -/-/ |  |
+   | Compositeur | 1.9.2 | 2.2 |  |
+   | Elasticsearch | 7.10 | 7.17 |  |
 
 - **Extensions et modules tiers**: utilisez ce modèle de tableau pour vous aider à comprendre l’état de vos extensions et personnalisations afin que vous puissiez prendre des décisions stratégiques et définir des actions. Il s’agit d’une opportunité de remplacer toutes les extensions qui peuvent être natives d’Adobe Commerce ou de Magento Open Source afin de minimiser la complexité de votre projet. Utilisez la variable `bin/magento module:status` pour afficher une liste de modules et d’extensions.
 
@@ -60,7 +60,7 @@ Vous trouverez ci-dessous des éléments que vous pouvez inclure dans une analys
 
 - **Modules compositeur et dépendances dans le fichier compositeur.json qui nécessitent une mise à jour.**
 
-En outre, les partenaires peuvent participer au [Programme Adobe Commerce bêta](https://devdocs.magento.com/release/beta-program.html) et utiliser les opportunités de préversion pour obtenir un accès anticipé au code pour une prochaine version. L’accès anticipé au code aide les développeurs à se préparer avec suffisamment de temps pour terminer la mise à niveau d’ici la date de disponibilité générale (GA). Le code bêta est généralement publié cinq semaines avant la date de disponibilité générale et les versions préliminaires sont publiées deux semaines à l’avance. Pour la version 2.4.4, Adobe a commencé à publier le code bêta cinq mois avant la date de disponibilité générale (8 mars 2022), de sorte que les partenaires puissent commencer à préparer cette mise à niveau dès maintenant. [inscription au programme](https://community.magento.com/t5/Magento-DevBlog/BREAKING-NEWS-2-4-4-beta-releases-are-coming-soon/ba-p/484310).
+En outre, les partenaires peuvent participer aux [Versions bêta d’Adobe Commerce](../../release/beta.md) et utiliser les opportunités de préversion pour obtenir un accès anticipé au code pour une prochaine version. L’accès anticipé au code aide les développeurs à se préparer avec suffisamment de temps pour terminer la mise à niveau d’ici la date de disponibilité générale (GA). Le code bêta est généralement publié cinq semaines avant la date de disponibilité générale et les versions préliminaires sont publiées deux semaines à l’avance.
 
 ## Développement et assurance qualité
 
@@ -84,4 +84,4 @@ Enfin, faites-le part à votre équipe afin de déterminer les leçons à tirer 
 
 Une fois votre site lancé, vérifiez vos données d’analyse, la console de recherche Google et d’autres ressources afin de vous assurer qu’il n’y a aucun problème inattendu et que tout fonctionne comme prévu.
 
-Il est toujours préférable de garder un oeil sur les performances grâce à des outils de surveillance bien conçus. Il existe de nombreux outils et moyens pour surveiller les performances de votre site. Vous devez donc veiller à en choisir un qui corresponde bien à votre entreprise. Nous recommandons aux clients Adobe Commerce qui utilisent notre système de gestion de l’infrastructure cloud de profiter de services tels que [Nouvelle relique](https://devdocs.magento.com/cloud/project/new-relic.html) pour surveiller les performances du site.
+Il est toujours préférable de garder un oeil sur les performances grâce à des outils de surveillance bien conçus. Il existe de nombreux outils et moyens pour surveiller les performances de votre site. Vous devez donc veiller à en choisir un qui corresponde bien à votre entreprise. Nous recommandons aux clients Adobe Commerce qui utilisent notre système de gestion de l’infrastructure cloud de profiter de services tels que [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) pour surveiller les performances du site.

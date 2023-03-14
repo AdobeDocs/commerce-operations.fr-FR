@@ -1,7 +1,7 @@
 ---
 title: Démarrage rapide de l’installation sur site
 description: Pour installer Adobe Commerce ou Magento Open Source sur une infrastructure que vous détenez, procédez comme suit.
-source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 0%
@@ -157,11 +157,11 @@ bin/magento setup:install \
 --currency=USD \
 --timezone=America/Chicago \
 --use-rewrites=1 \
---search-engine=elasticsearch7 \
---elasticsearch-host=es-host.example.com \
---elasticsearch-port=9200 \
---elasticsearch-index-prefix=magento2 \
---elasticsearch-timeout=15
+--search-engine=opensearch \
+--opensearch-host=os-host.example.com \
+--opensearch-port=9200 \
+--opensearch-index-prefix=magento2 \
+--opensearch-timeout=15
 ```
 
 >[!TIP]
@@ -186,7 +186,7 @@ Pour obtenir de l’aide sur une commande spécifique, saisissez :
 bin/magento help <command>
 ```
 
-Par exemple :
+Par exemple :
 
 ```bash
 bin/magento help setup:install
