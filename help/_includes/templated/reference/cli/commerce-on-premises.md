@@ -1,7 +1,7 @@
 ---
-source-git-commit: 177f301802e1ab1d0560ee98594b8128440efa7c
+source-git-commit: a1f99f839f11ab42356b87a69398999bb03cd544
 workflow-type: tm+mt
-source-wordcount: '19444'
+source-wordcount: '19443'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Version**: 2.4.6-beta2
+**Version**: 2.4.6
 
 Cette référence contient 130 commandes disponibles via le `bin/magento` outil de ligne de commande.
 La liste initiale est générée automatiquement à l’aide de la fonction `bin/magento list` à l’édition.
