@@ -1,7 +1,7 @@
 ---
 title: Conditions préalables complètes
 description: Préparez votre projet Adobe Commerce pour une mise à niveau en suivant les étapes préalables requises.
-source-git-commit: 45c544a5ec9a17ad631fce55e322e2949ecdd3c2
+source-git-commit: 5f86717d79569cac3f95a4c10a55b48f92858466
 workflow-type: tm+mt
 source-wordcount: '1639'
 ht-degree: 0%
@@ -111,7 +111,7 @@ La prise en charge d’Elasticsearch 8.x a été introduite dans Adobe Commerce 
 1. Dans le répertoire racine de votre projet Adobe Commerce, mettez à jour les dépendances du compositeur afin de supprimer la variable `Magento_Elasticsearch7` et installez le module `Magento_Elasticsearch8` module .
 
    ```bash
-   composer update magento/module-elasticsearch-8 --update-with-all-dependencies
+   composer require magento/module-elasticsearch-8 --update-with-all-dependencies
    ```
 
 1. Mettez à jour les composants de votre projet.
