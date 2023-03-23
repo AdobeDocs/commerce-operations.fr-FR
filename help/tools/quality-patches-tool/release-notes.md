@@ -1,9 +1,9 @@
 ---
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
-source-git-commit: f1c6c816695e01fc30d0ab0a7a9c43122a130cb5
+source-git-commit: b71819d123856d03dab872a1652b325ffe7178a6
 workflow-type: tm+mt
-source-wordcount: '11145'
+source-wordcount: '11561'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,27 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour les Magento Open Sources, voir la section [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.29 {#v1-1-29}
+
+* **ACSD-49389** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Correction du problème d’envoi d’un email prêt à l’emploi par l’API lorsque la commande n’est pas prête pour la récupération.
+* **ACSD-49822** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel les mises à jour dans [!UICONTROL Requisition List] ne sont pas répercutées sur la page [!UICONTROL Print Requisition List].
+* **ACSD-48771** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème lié à la mise à niveau du type de contenu de bloc de colonnes à partir d’un contenu plus ancien. [!DNL Page Builder] versions.
+* **ACSD-49464** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel les factures, les envois et les notes de crédit ne sont pas déplacés de l’archive lorsque orderId est différent.
+* **ACSD-49773** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.6) - Correction du problème d’échec de l’exportation de produits lorsque AWS S3 est utilisé comme stockage distant.
+* **ACSD-49748** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Correction du problème qui empêchait l’envoi des invitations.
+* **ACSD-49502** (pour Adobe Commerce >=2.4.3 &lt;2.4.7) - Correction du problème en raison duquel le lien téléchargeable n’était pas mis à jour correctement après l’application d’une mise à jour intermédiaire au produit téléchargeable.
+* **ACSD-49527** (pour Adobe Commerce >=2.4.2 &lt;2.4.7) - Correction du problème en raison duquel les rôles de l’entreprise GraphQL n’affichent pas correctement la pagination.
+* **ACSD-49706** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction du problème d’enregistrement de la valeur par défaut pour un attribut d’échantillon visuel lorsqu’aucune valeur n’est sélectionnée.
+* **ACSD-49835** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel la valeur de la case à cocher Utiliser par défaut n’était pas enregistrée correctement au niveau du magasin pour un attribut à sélection multiple.
+* **ACSD-49898** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Correction du problème où la grille de produits renvoie une exception lorsqu’un produit regroupé a un prix spécial qui dépasse 1 000.
+* **ACSD-50234** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.5) - Correction du problème lié au mauvais nom de client dans l’email de confirmation lors du placement d’une commande avec [!DNL PayPal].
+* **ACSD-49960** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel le filtrage par date ne fonctionnait pas pour la grille de commande du client.
+* **ACSD-49849** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.6) - Correction du problème de remplacement de l’adresse électronique du client par [!DNL PayPal] e-mail lors du placement d’une commande avec [!DNL PayPal Express] via GraphQL.
+* **ACSD-49839** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel la structure et les tarifs du catalogue partagé généraient une erreur dans Admin lorsque les produits contenaient des guillemets simples ou doubles dans le SKU.
+* **ACSD-49970** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction d’une gestion incorrecte des erreurs GraphQL lors de la [!DNL New Relic] la création de rapports est activée.
+* **ACSD-50260** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel les résultats de recherche de produits GraphQL étaient limités à 10 000 résultats uniquement.
+* **ACSD-48813** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction du problème en raison duquel la recherche n’affichait pas de résultats pertinents en fonction du poids de la recherche des attributs.
 
 ## v1.1.28 {#v1-1-28}
 
