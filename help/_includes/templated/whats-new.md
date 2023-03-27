@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9f9dc61a7cf10b3b1890878dc774e95a0adff27a
+source-git-commit: e1c40ccea2524704abd4d6b0f0a627f8809f6fa8
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,66 @@ ht-degree: 0%
 ## Nouveautés
 
 Découvrez la nouvelle documentation et les mises à jour importantes de la documentation existante.
+
+### 23 mars 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Publié <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">notes de mise à jour</a> pour la version 1.1.29 du package de l’outil de correctifs de qualité (QPT).</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c720c867eecfce0ba584da55aefd8f09ccb3b9f6">c720c8</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 17 mars 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout d’informations sur les nouvelles <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html#known-issue">problème connu</a> pour Adobe Commerce 2.4.6.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2cf389ad5aaa198cdffb0a32adab3774a613bdc1">2cf389</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 16 mars 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Mise à jour <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html&lt;br/&gt;">Versions publiées</a>.</p>
+</td>
+      <td>technique</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07e0a497aec1f4fc5d0ce7226b4406ef756e8359">07e0a4</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 14 mars 2023
 
