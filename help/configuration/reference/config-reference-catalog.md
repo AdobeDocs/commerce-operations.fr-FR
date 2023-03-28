@@ -1,9 +1,9 @@
 ---
 title: Référence sur les chemins de configuration du catalogue
 description: Consultez la liste des valeurs de configuration du catalogue.
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+source-git-commit: e4b7ea70b96143629b245409537459ad259393e0
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Décompte Recommendations de recherche | `catalog/search/search_recommendations_count` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Afficher le nombre de résultats pour chaque recommandation | `catalog/search/search_recommendations_count_results_enabled` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Termes minimum à faire correspondre | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Générer des réécritures d’URL &quot;catégorie/produit&quot; | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Termes de recherche populaires | `catalog/seo/search_terms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Suffixe d’URL de produit | `catalog/seo/product_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Suffixe d’URL de catégorie | `catalog/seo/category_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -115,7 +116,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Afficher les produits de mise à niveau | `catalog/magento_targetrule/upsell_position_behavior` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Mode de rotation des produits dans la liste de produits de vente incitative | `catalog/magento_targetrule/upsell_rotation_mode` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins d’accès du stock
 
@@ -145,7 +146,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Mode de calcul | `cataloginventory/source_selection_distance_based_google/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Valeur | `cataloginventory/source_selection_distance_based_google/value` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins de marchandisage visuel
 
@@ -158,7 +159,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Code d’attribut de couleur | `visualmerchandiser/options/color_attribute_code` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Ordre des couleurs | `visualmerchandiser/options/color_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins du plan de site XML
 
@@ -182,7 +183,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Taille maximale du fichier | `sitemap/limit/max_file_size` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Activation de l’envoi à Robots.txt | `sitemap/search_engines/submission_robots` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins des flux RSS
 
@@ -198,7 +199,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Catégorie de niveau supérieur | `rss/catalog/category` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Notification d’état de la commande client | `rss/order/status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Envoyer un courrier électronique à des chemins d’ami
 
@@ -213,4 +214,4 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Nombre maximal de produits envoyés en 1 heure | `sendfriend/email/max_per_hour` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Limiter l’envoi par | `sendfriend/email/check_by` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
