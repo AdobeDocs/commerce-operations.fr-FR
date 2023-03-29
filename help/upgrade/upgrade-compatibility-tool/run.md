@@ -1,9 +1,9 @@
 ---
 title: "Exécutez la variable [!DNL Upgrade Compatibility Tool]"
 description: Procédez comme suit pour exécuter la fonction [!DNL Upgrade Compatibility Tool] dans une interface de ligne de commande pour votre projet Adobe Commerce.
-source-git-commit: e704748a7ceaa58a5a8d7004c81ac766dec4e7f1
+source-git-commit: 653d755023f96c0a6acc312f74fd4a0292f13a73
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Commandes disponibles pour la fonction [!DNL Upgrade Compatibility Tool] dans un
 | `dbschema:diff` | Cette commande affiche toutes les différences de schéma de base de données entre deux versions Adobe Commerce spécifiées. |
 | `core:code:changes` | Cette commande compare votre installation actuelle d’Adobe Commerce à une installation Vanilla propre. |
 | `refactor` | Cette commande corrige automatiquement un ensemble réduit de problèmes. |
-| `graphql:compare` | Cette commande permet d’analyser deux points d’entrée GraphQL et de comparer leurs schémas. |
+| `graphql:compare` | Cette commande permet d’analyser deux points de terminaison GraphQL et de comparer leurs schémas. |
 | `list` | Cette commande renvoie une liste de tous les [!DNL Upgrade Compatibility Tool] commandes disponibles. |
 | `help` | Cette commande renvoie tous les éléments disponibles `help`options de la variable [!DNL Upgrade Compatibility Tool]. Cette commande peut être exécutée ainsi qu&#39;une option avec les commandes précédentes. |
 
@@ -182,7 +182,7 @@ Options disponibles pour la variable `refactor` command :
 
 ## Utilisez la variable `graphql:compare` command
 
-Cette commande permet d’accéder au [!DNL Upgrade Compatibility Tool] pour analyser deux points d’entrée GraphQL et comparer leurs schémas en recherchant des modifications de rupture et dangereuses entre eux :
+Cette commande permet d’accéder au [!DNL Upgrade Compatibility Tool] pour examiner deux points de terminaison GraphQL et comparer leurs schémas afin de rechercher des modifications dangereuses et de rupture entre eux :
 
 ```bash
 bin/uct graphql:compare <schema1> <schema2>
@@ -207,7 +207,7 @@ Pour renvoyer une liste de la variable [!DNL Upgrade Compatibility Tool] command
 bin/uct list
 ```
 
-## Utilisez la variable `--help` command
+## Utilisez la variable `help` command
 
 Pour afficher la variable [!DNL Upgrade Compatibility Tool] options générales de la commande et aide, exécutez :
 
@@ -260,6 +260,7 @@ Cela renvoie des options spécifiques qui peuvent être exécutées pour la vari
 - Évitez d’avoir deux modules portant le même nom.
 - Suivez Adobe Commerce [normes de codage](https://developer.adobe.com/commerce/php/coding-standards/).
 - Adobe Commerce 2.4 [Guide de mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) bonnes pratiques.
+- Exécutez la variable [!DNL Upgrade Compatibility Tool] de la [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) pour [Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} projets.
 
 ## Optimiser vos résultats
 
