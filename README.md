@@ -1,17 +1,17 @@
 ---
-source-git-commit: d17847a7151c5e88f763b334e1ee659ca3ca6bcf
+source-git-commit: 4b767014f325bef7e07cea11d01089206bf44caf
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 5%
+source-wordcount: '475'
+ht-degree: 0%
 
 ---
-# Documentation utilisateur d’Adobe Commerce
+# Documentation technique d’Adobe Commerce
 
 Nous acceptons les contributions de notre communauté ainsi que des employés d’Adobe qui ne font pas partie des équipes de documentation.
 
 ## Adobe de code de conduite Open Source
 
-Ce projet respecte le [Code de conduite d’Adobe Open Source](code-of-conduct.md) ou le [Code de conduite .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Pour plus d’informations, consultez l’article [Contribution](contributing.md).
+Ce projet a adopté la méthode [Adobe de code de conduite Open Source](code-of-conduct.md) ou le [Code de conduite .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Pour plus d’informations, voir [Contribution](contributing.md) article.
 
 ## À propos de vos contributions pour Adobe du contenu
 
@@ -51,13 +51,6 @@ Tous les articles de ce référentiel utilisent GitHub Flavored Markdown. Si vou
 
 * [Concepts de base de Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [Markdown cheatsheet imprimable](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-## Étiquettes
-
-Dans le référentiel public, des étiquettes automatisées sont attribuées aux demandes d’extraction afin de nous aider à gérer le workflow de demande d’extraction et de vous aider à savoir ce qui se passe avec votre demande d’extraction :
-
-* **Modification envoyée à l’auteur**: L’auteur a été informé de la demande d’extraction en attente.
-* **ready-to-merge**: Prêt à être examiné par notre équipe d’examen des demandes d’extraction.
 
 ## Modèles
 
