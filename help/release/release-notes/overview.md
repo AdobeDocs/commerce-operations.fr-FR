@@ -1,9 +1,9 @@
 ---
 title: Notes de mise à jour d’Adobe Commerce et de Magento Open Source
 description: Découvrez où trouver des informations pour des versions spécifiques d’Adobe Commerce et de Magento Open Source.
-source-git-commit: da6741586d0fb8e029ee5a9342e1299176df298e
+source-git-commit: 14724592f7dbc116b0fa71b755d7f4f711d94fb2
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ Utilisez le tableau suivant pour trouver des notes de mise à jour et des inform
         <p>Découvrez les dernières améliorations apportées à Adobe Commerce et Magento Open Source, notamment les améliorations, la sécurité, les correctifs de bogues et les problèmes connus.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Modifications incompatibles avec l’arrière</a></li>
-            <li><a href="commerce/2-4-5.md">Adobe Commerce</a></li>
-            <li><a href="open-source/2-4-5.md">Magento Open Source</a></li>
-            <li><a href="security/2-4-5-p1.md">Correctifs de sécurité</a></li>
+            <li><a href="commerce/2-4-6.md">Adobe Commerce</a></li>
+            <li><a href="open-source/2-4-6.md">Magento Open Source</a></li>
+            <li><a href="security/2-4-5-p2.md">Correctifs de sécurité</a></li>
             <li><a href="https://helpx.adobe.com/security/products/magento.html">Bulletin de sécurité Adobe</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B pour Adobe Commerce</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/release-notes.html">Inventory management</a></li>
