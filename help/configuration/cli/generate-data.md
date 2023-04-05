@@ -1,10 +1,10 @@
 ---
 title: Génération de données pour les tests de performance
 description: Découvrez comment générer une grande quantité de données à utiliser pour les tests de performance.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 9%
+source-wordcount: '749'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ Pour utiliser la variable [Outils de performance](https://github.com/magento/mag
 
 Vous pouvez ajuster la quantité de données que vous créez à l’aide de _profils_ (petit, moyen, grand et très grand). Les profils se trouvent dans la variable `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` répertoire .
 
-Par exemple, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
+Par exemple : `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
 La figure suivante montre comment un produit est affiché dans le storefront à l’aide de la variable _small_ profile:
 
@@ -32,18 +32,18 @@ Le tableau suivant fournit des détails sur les profils du générateur de donn�
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
 | `store_views` | 1 | 3 | 50 | 5 | 5 |
-| `simple_products` | 800 | 24 000 | 4 000 | 300 000 | 600 000 |
+| `simple_products` | 800 | 24,000 | 4,000 | 300,000 | 600,000 |
 | `configurable_products` | 16 avec 24 options | 640 avec 24 options | 800 avec 24 options et 79 avec 200 options | 8 000 avec 24 options | 16 000 avec 24 options |
 | `product_images` | 100 images / 3 images par produit | 1 000 images / 3 images par produit | 1 000 images / 3 images par produit | 2 000 images / 3 images par produit | 2 000 images / 3 images par produit |
-| `categories` | 30 | 300 | 100 | 3 000 | 6 000 |
+| `categories` | 30 | 300 | 100 | 3,000 | 6,000 |
 | `categories_nesting_level` | 3 | 3 | 3 | 5 | 5 |
 | `catalog_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `catalog_target_rules` | 5 | 5 | 5 | 5 | 5 |
 | `cart_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `cart_price_rules_floor` | 2 | 2 | 2 | 2 | 2 |
-| `customers` | 200 | 2 000 | 2 000 | 5 000 | 10 000 |
-| `tax rates` | 130 | 40 000 | 40 000 | 40 000 | 40 000 |
-| `orders` | 80 | 50 000 | 50 000 | 100 000 | 150 000 |
+| `customers` | 200 | 2,000 | 2,000 | 5,000 | 10,000 |
+| `tax rates` | 130 | 40,000 | 40,000 | 40,000 | 40,000 |
+| `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
 
 ### Exécution du générateur de données
 
@@ -61,7 +61,7 @@ bin/magento setup:perf:generate-fixtures <path-to-profile>
 
 Où `<path-to-profile>` spécifie le chemin d’accès absolu au système de fichiers et le nom d’un profil.
 
-Par exemple,
+Par exemple :
 
 ```bash
 bin/magento setup:perf:generate-fixtures /var/www/html/magento2/setup/performance-toolkit/profiles/ce/small.xml
@@ -100,7 +100,7 @@ Generating simple products...  done in <time>
 
 ### Utilisateurs administrateurs
 
-Génère [admin](https://glossary.magento.com/admin) utilisateurs. [XML](https://glossary.magento.com/xml) noeud de profil :
+Génère les utilisateurs administrateurs. Noeud de profil XML :
 
 ```xml
 <!-- Number of admin users -->
@@ -124,7 +124,7 @@ Génère des jeux d’attributs avec la configuration spécifiée. Noeud de prof
 
 ### Lot de produits
 
-Génère des produits en bundle. Les sélections de lots générées ne s’affichent pas individuellement dans la variable [catalogue](https://glossary.magento.com/catalog). Les produits sont répartis uniformément par catégories et par sites web. If  `assign_entities_to_all_websites` du profil est défini sur `1`. Les produits sont attribués à tous les sites web.
+Génère des produits en bundle. Les sélections de lots générées ne s’affichent pas individuellement dans le catalogue. Les produits sont répartis uniformément par catégories et par sites web. If  `assign_entities_to_all_websites` du profil est défini sur `1`. Les produits sont attribués à tous les sites web.
 
 Noeud de profil XML :
 
@@ -162,7 +162,7 @@ Génère des règles de prix de catalogue. Noeud de profil XML :
 
 ### Catégories
 
-Génère des catégories. If `assign_entities_to_all_websites` est défini sur `0`, toutes les catégories sont réparties uniformément par catégories racine ; dans le cas contraire, toutes les catégories sont affectées à une seule racine. [category](https://glossary.magento.com/category).
+Génère des catégories. If `assign_entities_to_all_websites` est défini sur `0`, toutes les catégories sont réparties uniformément par catégories racine ; dans le cas contraire, toutes les catégories sont affectées à une catégorie racine.
 
 Noeud de profil XML :
 
@@ -231,7 +231,7 @@ Les formats de noeud XML suivants sont pris en charge :
    </configurable_products>
    ```
 
-- Générer des produits à partir d’une création dynamique [jeu d’attributs](https://glossary.magento.com/attribute-set) avec un nombre spécifié d’attributs et d’options :
+- Générer des produits à partir d’un jeu d’attributs créé dynamiquement avec un nombre spécifié d’attributs et d’options :
 
    ```xml
    <configurable_products>

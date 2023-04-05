@@ -1,9 +1,9 @@
 ---
 title: Plusieurs sites web ou magasins
 description: Découvrez comment lancer plusieurs sites web ou implémenter des vues de magasin avec différentes options, domaines et contenus.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Une seule instance du logiciel Adobe Commerce vous permet de démarrer plusieurs
 - Produits
 - Devises
 
-Cette solution flexible active une base de code Commerce et [Administration](https://glossary.magento.com/magento-admin) pour administrer et afficher différents magasins. Vous configurez les sites web, les magasins et les vues de magasin dans l’administrateur. Utilisez certaines variables dans les hôtes virtuels pour démarrer l’application Commerce à l’aide de ces sites web ou vues de magasin.
+Cette solution flexible permet à un seul code Commerce et à un seul administrateur d’administrer et d’afficher différents magasins. Vous configurez les sites web, les magasins et les vues de magasin dans l’administrateur. Utilisez certaines variables dans les hôtes virtuels pour démarrer l’application Commerce à l’aide de ces sites web ou vues de magasin.
 
 Une utilisation type consiste à configurer des magasins avec différentes options dans différents domaines. Par exemple, vous pouvez avoir un ensemble de catégories et de produits sur un domaine et un autre ensemble de catégories et de produits sur un domaine distinct dans une autre langue.
 
-Vous configurez les sites web, les magasins et les vues de magasin dans Commerce. [Administration](https://glossary.magento.com/admin). Utilisez la variable `MAGE_RUN_TYPE` et `MAGE_RUN_CODE` dans les hôtes virtuels pour démarrer l’application Commerce à l’aide de ces sites web ou vues de magasin.
+Vous configurez les sites web, les magasins et les vues de magasin dans l’administrateur Commerce. Utilisez la variable `MAGE_RUN_TYPE` et `MAGE_RUN_CODE` dans les hôtes virtuels pour démarrer l’application Commerce à l’aide de ces sites web ou vues de magasin.
 
 Tenez compte des termes suivants :
 

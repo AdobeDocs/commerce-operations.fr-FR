@@ -1,9 +1,9 @@
 ---
 title: Configuration du vernis avancé
 description: Configurez les fonctions Varnish avancées, notamment les modes Contrôle de l’intégrité, Grace et saint.
-source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Commerce définit le contrôle de l’intégrité par défaut suivant :
     }
 ```
 
-Toutes les 5 secondes, ce contrôle de l’intégrité appelle la variable `pub/health_check.php` script. Ce script vérifie la disponibilité du serveur, de chaque base de données et de Redis (s’il est installé). Le script doit renvoyer une réponse dans les 2 secondes. Si le script détermine que l’une de ces ressources est hors service, il renvoie un code d’erreur HTTP 500. Si ce code d’erreur est reçu dans six tentatives sur dix, la variable [backend](https://glossary.magento.com/backend) est considérée comme malsaine.
+Toutes les 5 secondes, ce contrôle de l’intégrité appelle la variable `pub/health_check.php` script. Ce script vérifie la disponibilité du serveur, de chaque base de données et de Redis (s’il est installé). Le script doit renvoyer une réponse dans les 2 secondes. Si le script détermine que l’une de ces ressources est hors service, il renvoie un code d’erreur HTTP 500. Si ce code d’erreur est reçu dans six tentatives sur dix, le serveur principal est considéré comme malsain.
 
 Le `health_check.php` se trouve dans la variable `pub` répertoire . Si votre répertoire racine Commerce est `pub`, puis assurez-vous de modifier le chemin d’accès dans la variable `url` du paramètre `/pub/health_check.php` to `health_check.php`.
 
@@ -39,7 +39,7 @@ Pour plus d’informations, voir [Contrôles de l’intégrité vernis](https://
 
 ## Mode de grâce
 
-Le mode Grace permet à Varnish de conserver un objet dans [cache](https://glossary.magento.com/cache) au-delà de sa valeur TTL. Le vernis peut ensuite diffuser le contenu obsolète (obsolète) lorsqu’il récupère une nouvelle version. Cela améliore le flux du trafic et réduit les temps de chargement. Il est utilisé dans les situations suivantes :
+Le mode Grace permet à Varnish de garder un objet en cache au-delà de sa valeur TTL. Le vernis peut ensuite diffuser le contenu obsolète (obsolète) lorsqu’il récupère une nouvelle version. Cela améliore le flux du trafic et réduit les temps de chargement. Il est utilisé dans les situations suivantes :
 
 - Lorsque le serveur principal Commerce est sain, mais qu’une requête prend plus de temps que la normale
 - Lorsque le serveur principal Commerce n’est pas sain.
@@ -48,7 +48,7 @@ Le `vcl_hit` subroutine définit la manière dont Varnish répond à une demande
 
 ### Lorsque le serveur principal Commerce est sain
 
-Lorsque les contrôles de l’intégrité déterminent que le serveur principal Commerce est sain, Varnish vérifie si le temps reste dans la période de grâce. La période de grâce par défaut est de 300 secondes, mais un commerçant peut définir la valeur de la variable [Administration](https://glossary.magento.com/admin) comme décrit dans [Configuration de Commerce pour l’utilisation du vernis](configure-varnish-commerce.md). Si la période de grâce n’a pas expiré, Varnish diffuse le contenu obsolète et actualise de manière asynchrone l’objet à partir du serveur Commerce. Si la période de grâce a expiré, Varnish diffuse le contenu obsolète et actualise de manière synchrone l’objet à partir du serveur principal Commerce.
+Lorsque les contrôles de l’intégrité déterminent que le serveur principal Commerce est sain, Varnish vérifie si le temps reste dans la période de grâce. La période de grâce par défaut est de 300 secondes, mais un commerçant peut définir la valeur de l’administrateur comme décrit dans la section [Configuration de Commerce pour l’utilisation du vernis](configure-varnish-commerce.md). Si la période de grâce n’a pas expiré, Varnish diffuse le contenu obsolète et actualise de manière asynchrone l’objet à partir du serveur Commerce. Si la période de grâce a expiré, Varnish diffuse le contenu obsolète et actualise de manière synchrone l’objet à partir du serveur principal Commerce.
 
 La durée maximale pendant laquelle Varnish diffuse un objet obsolète est la somme de la période de grâce (300 secondes par défaut) et de la valeur TTL (86 400 secondes par défaut).
 
@@ -74,7 +74,7 @@ Désignez une machine comme Principale installation. Sur cette machine, installe
 
 Sur tous les autres ordinateurs, l’instance Commerce doit avoir accès à la base de données mySQL de l’ordinateur Principal. Les machines secondaires doivent également avoir accès aux fichiers de l’instance Principale Commerce.
 
-Vous pouvez également : [fichiers statiques](https://glossary.magento.com/static-files) le contrôle de version peut être désactivé sur toutes les machines. Vous pouvez y accéder à partir de la section Admin sous **Magasins** > Paramètres > **Configuration** > **Avancé** > **Développeur** > **Paramètres des fichiers statiques** > **Signature de fichiers statiques** = **Non**.
+Vous pouvez également désactiver le contrôle de version des fichiers statiques sur tous les ordinateurs. Vous pouvez y accéder à partir de la section Admin sous **Magasins** > Paramètres > **Configuration** > **Avancé** > **Développeur** > **Paramètres des fichiers statiques** > **Signature de fichiers statiques** = **Non**.
 
 Enfin, toutes les instances de Commerce doivent être en mode de production. Avant le démarrage de Varnish, effacez le cache de chaque instance. Dans Admin, accédez à **Système** > Outils > **Gestion du cache** et cliquez sur **Vider le cache du Magento**. Vous pouvez également exécuter la commande suivante pour effacer le cache :
 
@@ -89,7 +89,7 @@ Le mode Saint ne fait pas partie du package vernis principal. Il s’agit d’un
 - [Installation de Varnish 6.4](https://varnish-cache.org/docs/6.4/installation/install.html)
 - [Installation de Varnish 6.0](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)
 
-Après avoir recompilé, vous pouvez installer le mode Saint. [module](https://glossary.magento.com/module). En général, procédez comme suit :
+Après avoir recompilé, vous pouvez installer le module de mode Saint. En général, procédez comme suit :
 
 1. Obtention du code source à partir de [Modules vernis](https://github.com/varnish/varnish-modules). Cloner la version Git (version maître), car les versions 0.9.x contiennent une erreur de code source.
 1. Créez le code source avec des outils automatiques :

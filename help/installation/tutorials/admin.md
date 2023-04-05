@@ -1,9 +1,9 @@
 ---
 title: Création, modification ou déverrouillage d’un compte administrateur
 description: Pour gérer le compte administrateur de votre application Adobe Commerce ou Magento Open Source Admin, procédez comme suit.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Avant de pouvoir utiliser cette commande, vous devez effectuer les opérations s
 
 - [Création de la configuration de déploiement](deployment.md)
 - [Activez au minimum les modules Magento_Authorization et Magento_User .](manage-modules.md)
-- Créez le [schéma de base de données](https://glossary.magento.com/database-schema)
+- Création du schéma de la base de données
 
 >[!NOTE]
 >

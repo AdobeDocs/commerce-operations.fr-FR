@@ -1,9 +1,9 @@
 ---
 title: Modification de docroot pour améliorer la sécurité
 description: Empêchez les navigateurs non autorisés d’accéder à Adobe Commerce ou au système de fichiers Magento Open Source sur site.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -165,9 +165,9 @@ Le basculement entre les modes est une étape importante pour vérifier que la c
 
 ## 5. Vérification du storefront
 
-Accédez au [storefront](https://glossary.magento.com/storefront) dans un navigateur web pour vérifier que tout fonctionne.
+Accédez au storefront dans un navigateur web pour vérifier que tout fonctionne.
 
-1. Ouvrez un navigateur web et saisissez le nom d’hôte ou l’adresse IP de votre serveur dans la barre d’adresse. Par exemple, `http://192.168.33.10`.
+1. Ouvrez un navigateur web et saisissez le nom d’hôte ou l’adresse IP de votre serveur dans la barre d’adresse. Par exemple : `http://192.168.33.10`.
 
    La figure suivante présente un exemple de page de storefront. S’il s’affiche comme suit, votre installation a réussi !
 

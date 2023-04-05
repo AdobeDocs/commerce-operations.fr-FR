@@ -1,9 +1,9 @@
 ---
 title: Importation de données à partir de fichiers de configuration
 description: Importez les paramètres de configuration Adobe Commerce à partir des fichiers de configuration.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Les sections suivantes abordent en détail les données que nous importons.
 
 Commerce utilise directement les valeurs de la variable `system` du tableau `config.php` ou `env.php` au lieu de les importer dans la base de données, car ils nécessitent des actions de prétraitement et de post-traitement.
 
-Par exemple, la valeur du chemin de configuration `web/secure/base_url` doit être validé avec [backend](https://glossary.magento.com/backend) modèles.
+Par exemple, la valeur du chemin de configuration `web/secure/base_url` doit être validé avec des modèles d’arrière-plan.
 
 #### Modèles principaux
 
@@ -94,7 +94,7 @@ Les paramétrages précédents peuvent être importés dans les modes suivants :
 
 >[!INFO]
 >
->Nous n’importons pas la racine [category](https://glossary.magento.com/category) associée aux magasins. Vous devez associer une catégorie racine à un magasin à l’aide de Commerce. [Administration](https://glossary.magento.com/admin).
+>Nous n’importons pas la catégorie racine associée aux magasins. Vous devez associer une catégorie racine à un magasin à l’aide de l’administrateur Commerce.
 
 ### Configuration du thème
 
@@ -104,8 +104,8 @@ La configuration de thème comprend tous les thèmes enregistrés dans votre sys
 
 La clé du tableau est le chemin d’accès complet au thème : `area` + `theme path`
 
-Par exemple, `frontend/Magento/luma`.
-`frontend` est une zone et `Magento/luma` is [thème](https://glossary.magento.com/theme) chemin d’accès.
+Par exemple : `frontend/Magento/luma`.
+`frontend` est une zone et `Magento/luma` est le chemin du thème.
 
 La valeur du tableau est data about theme : code, titre, chemin, identifiant parent
 

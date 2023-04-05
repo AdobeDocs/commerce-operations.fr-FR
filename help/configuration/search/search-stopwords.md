@@ -1,9 +1,9 @@
 ---
 title: Configuration des mots-clés de recherche
 description: Découvrez comment gérer les mots-arrêts pour Adobe Commerce à l’aide de fichiers CSV.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Pour plus d’informations sur la façon dont Elasticsearch et OpenSearch utilis
 
 Les mots-clés situés dans la variable `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` répertoire . Adobe Commerce et Magento Open Source sont livrés avec un fichier CSV contenant les mots-clés pour les paramètres régionaux par défaut et un fichier supplémentaire, `stopwords.csv`, qui contient des mots de fin pour les paramètres régionaux qui ne sont pas représentés par un autre fichier CSV.
 
-Durée de vie par défaut du fichier stopwords [cache](https://glossary.magento.com/cache) est de 15 minutes.
+La durée de vie par défaut du cache de fichiers des mots-clés est de 15 minutes.
 
 ### Modification des mots-clés d’un paramètre régional existant
 
@@ -54,7 +54,7 @@ Durée de vie par défaut du fichier stopwords [cache](https://glossary.magento.
       php <magento_root>/bin/magento cache:clean config
       ```
 
-1. Vérifiez les résultats en recherchant les termes de votre [storefront](https://glossary.magento.com/storefront).
+1. Vérifiez les résultats en recherchant les termes sur votre vitrine.
 
 ### Créer des mots-clés pour un nouveau paramètre régional
 

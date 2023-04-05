@@ -1,9 +1,9 @@
 ---
 title: Types de configuration
 description: Créez ou étendez des types de configuration.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Étendre les types de configuration
 
-Pour étendre un type de configuration existant, il vous suffit de créer un fichier de configuration dans votre [module](https://glossary.magento.com/module).
+Pour étendre un type de configuration existant, il vous suffit de créer un fichier de configuration dans votre module.
 
 Par exemple, pour ajouter un observateur d’événement, vous créez `app/code/{VendorName}/{ModuleName}/etc/events.xml` et déclarer un nouvel observateur.
 
@@ -29,11 +29,11 @@ Pour créer un type de configuration, vous devez ajouter au minimum :
 - Schéma de validation XSD
 - Fichiers de configuration XML
 
-Par exemple, pour introduire un [adapter](https://glossary.magento.com/adapter) pour un nouveau serveur de recherche qui permet aux extensions de configurer la manière dont ses entités sont indexées sur ce serveur, créez :
+Par exemple, pour introduire un adaptateur pour un nouveau serveur de recherche qui permet aux extensions de configurer la manière dont ses entités sont indexées sur ce serveur, créez :
 
 - Un chargeur
 - Un fichier de schéma XSD
-- Un fichier de configuration correctement nommé. Par exemple, `search.xml`. Ce fichier est lu et validé par rapport à votre schéma.
+- Un fichier de configuration correctement nommé. Par exemple : `search.xml`. Ce fichier est lu et validé par rapport à votre schéma.
 - Toute autre classe requise pour votre travail.
 
 >[!INFO]
@@ -132,7 +132,7 @@ Les nouveaux fichiers de configuration doivent être accompagnés de schémas de
 
 Si vous devez utiliser deux fichiers XSD pour un seul fichier XML, les noms des schémas doivent être reconnaissables et associés au fichier XML.
 Si vous avez une `events.xml` et un premier fichier `events.xsd` fichier, les fichiers XSD pour la fusion `events.xml` peut être nommé `events_merged.xsd`.
-Pour garantir la validation d’un fichier XML par le fichier XSD approprié, vous devez ajouter l’URL (Uniform Resource Name) au fichier XSD dans le fichier XML. Par exemple :
+Pour garantir la validation d’un fichier XML par le fichier XSD approprié, vous devez ajouter l’URL (Uniform Resource Name) au fichier XSD dans le fichier XML. Par exemple :
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager:etc/config.xsd">

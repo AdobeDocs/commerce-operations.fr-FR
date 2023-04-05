@@ -1,9 +1,9 @@
 ---
 title: Déploiement de fichiers d’affichage statique
 description: Découvrez comment écrire des fichiers statiques dans le système de fichiers Commerce en mode de production.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-La commande de déploiement des fichiers d’affichage statique permet d’écrire. [fichiers statiques](https://glossary.magento.com/static-files) dans le système de fichiers Commerce lorsque le logiciel Commerce est défini pour [mode de production](../bootstrap/application-modes.md#production-mode).
+La commande de déploiement des fichiers d’affichage statique vous permet d’écrire des fichiers statiques dans le système de fichiers Commerce lorsque le logiciel Commerce est défini pour [mode de production](../bootstrap/application-modes.md#production-mode).
 
 Le terme _fichier d’affichage statique_ fait référence à ce qui suit :
 
@@ -54,11 +54,11 @@ Le tableau suivant explique les paramètres et les valeurs de cette commande.
 | Option | Description | Obligatoire ? |
 | ------ | ----------- | --------- |
 | `<languages>` | Liste séparée par des espaces de [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) codes de langue pour lesquels générer des fichiers d’affichage statique. (La valeur par défaut est `en_US`.)<br>Recherchez la liste en exécutant : `bin/magento info:language:list` | Non |
-| `--language (-l)` | Générez des fichiers uniquement pour les langues spécifiées. La valeur par défaut, sans option spécifiée, est de générer des fichiers pour tous les codes de langue ISO-639. Vous pouvez spécifier le nom d’un code de langue à la fois. La valeur par défaut est **all**.<br>Par exemple: `--language en_US --language es_ES` | Non |
+| `--language (-l)` | Générez des fichiers uniquement pour les langues spécifiées. La valeur par défaut, sans option spécifiée, est de générer des fichiers pour tous les codes de langue ISO-639. Vous pouvez spécifier le nom d’un code de langue à la fois. La valeur par défaut est **all**.<br>Par exemple : `--language en_US --language es_ES` | Non |
 | `--exclude-language` | Générez des fichiers pour les codes de langue spécifiés. La valeur par défaut, sans option spécifiée, est de n’exclure rien. Vous pouvez spécifier le nom d’un code de langue ou d’une liste de codes de langue séparés par des virgules. La valeur par défaut est **none**. | Non |
-| `--theme <theme>` | Thèmes pour lesquels déployer du contenu statique. La valeur par défaut est **all**.<br>Par exemple: `--theme Magento/blank --theme Magento/luma` | Non |
-| `--exclude-theme <theme>` | Thèmes à exclure lors du déploiement de contenu statique. La valeur par défaut est **none**.<br>Par exemple, `--exclude-theme Magento/blank` | Non |
-| `--area (-a)` | Générez des fichiers uniquement pour les zones spécifiées. La valeur par défaut, sans option spécifiée, est de générer des fichiers pour toutes les zones. Les valeurs valides sont `adminhtml` et `frontend`. La valeur par défaut est **all**.<br>Par exemple: `--area adminhtml` | Non |
+| `--theme <theme>` | Thèmes pour lesquels déployer du contenu statique. La valeur par défaut est **all**.<br>Par exemple : `--theme Magento/blank --theme Magento/luma` | Non |
+| `--exclude-theme <theme>` | Thèmes à exclure lors du déploiement de contenu statique. La valeur par défaut est **none**.<br>Par exemple : `--exclude-theme Magento/blank` | Non |
+| `--area (-a)` | Générez des fichiers uniquement pour les zones spécifiées. La valeur par défaut, sans option spécifiée, est de générer des fichiers pour toutes les zones. Les valeurs valides sont `adminhtml` et `frontend`. La valeur par défaut est **all**.<br>Par exemple : `--area adminhtml` | Non |
 | `--exclude-area` | Ne générez pas de fichiers pour les zones spécifiées. La valeur par défaut, sans option spécifiée, est de n’exclure rien. La valeur par défaut est **none**. | Non |
 | `--jobs (-j)` | Activez le traitement parallèle à l’aide du nombre spécifié de tâches. La valeur par défaut est 0 (ne pas exécuter dans les processus parallèles). La valeur par défaut est **0**. | Non |
 | `--symlink-locale` | Créez des liens symboliques pour les fichiers de ces paramètres régionaux, qui sont transmis pour le déploiement, mais sans personnalisation. | Non |

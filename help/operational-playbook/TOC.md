@@ -1,9 +1,9 @@
 ---
 user-guide-title: Manuel opérationnel
-user-guide-description: Découvrez comment préparer vos entreprises sur le plan opérationnel à l’exécution d’un site d’e-commerce réussi.
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+user-guide-description: Découvrez comment préparer vos entreprises sur le plan opérationnel à l’exécution d’un site de commerce électronique réussi.
+source-git-commit: ed6b9cb5acd35ce8213fafddcd00be1c32127a86
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '143'
 ht-degree: 0%
 
 ---
@@ -72,4 +72,5 @@ ht-degree: 0%
    - [Clic et collecte](product/click-collect.md)
    - [PWA](product/progressive-web-app.md)
 - [Listes de contrôle et modèles](checklists-templates/home.md)
+- [Glossaire](glossary.md)
 - [Revenir aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

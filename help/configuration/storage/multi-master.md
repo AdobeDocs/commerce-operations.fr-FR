@@ -1,9 +1,9 @@
 ---
 title: Solution de performance de la base de données de partage
 description: Découvrez la solution de base de données partagée pour Adobe Commerce et Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Adobe Commerce utilise trois bases de données maîtres et un nombre configurabl
 En raison de la conception de la solution de performances de la base de données partagée, votre code personnalisé et les composants installés _cannot_ effectuez l’une des opérations suivantes :
 
 - Ecrire directement dans la base de données (vous devez utiliser l&#39;interface de la base de données Adobe Commerce)
-- Utiliser des JOINS qui affectent les ventes ou [guillemet](https://glossary.magento.com/quote) bases de données
+- Utiliser des JOIN qui affectent les bases de données de ventes ou de devis
 - Utiliser des clés étrangères pour les tables dans les bases de données principales, de ventes ou de passage en caisse
 
 >[!WARNING]
@@ -76,7 +76,7 @@ Cela signifie également que vous pouvez effectuer l’une des opérations suiva
 
 La base de données partagée requiert que vous configuriez trois bases de données principales MySQL sur n’importe quel hôte (les trois sur le serveur Commerce, chaque base de données sur un serveur distinct, etc.). Voici les _master_ et elles sont utilisées comme suit :
 
-- Une base de données principale pour [passage en caisse](https://glossary.magento.com/checkout) tables
+- Une base de données principale pour les tables de passage en caisse
 - Une base de données principale pour les tables de ventes (également appelées _Système de gestion des commandes_ ou _OMS_, tableaux)
 - Une base de données principale pour le reste des tables de l’application Commerce 2
 

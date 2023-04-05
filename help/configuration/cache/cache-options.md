@@ -1,16 +1,16 @@
 ---
 title: Options de cache
 description: Configurez l’accès au stockage du cache de bas niveau.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
 
 # Options de cache de bas niveau
 
-L’application Commerce utilise un niveau inférieur. [cache](https://glossary.magento.com/cache) [frontend](https://glossary.magento.com/frontend) et [backend](https://glossary.magento.com/backend) pour fournir l’accès au stockage du cache.
+L’application Commerce utilise un serveur frontal et un serveur principal de cache de bas niveau pour fournir l’accès au stockage du cache.
 
 ## Cache frontal de bas niveau
 

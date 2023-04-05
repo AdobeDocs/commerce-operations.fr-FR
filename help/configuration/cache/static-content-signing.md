@@ -1,9 +1,9 @@
 ---
 title: Cache de contenu statique
 description: Apprenez à signer du contenu statique et à activer ou désactiver cette fonctionnalité.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ La définition de la variable `Expires` sur une ressource statique, l’en-tête
 Ceci est courant [bonne pratique](https://developer.yahoo.com/performance/rules.html#expires=) pour la mise en cache de ressources statiques.
 
 Lorsque le navigateur met en cache une ressource statique et que cette ressource change sur le serveur, vous devez effacer le cache du navigateur afin qu’il puisse télécharger la nouvelle version.
-L’effacement manuel du cache du navigateur fonctionne si vous êtes un [site web](https://glossary.magento.com/website) , mais il ne s’agit pas d’une requête appropriée à envoyer à vos utilisateurs lorsque vous souhaitez qu’ils téléchargent de nouvelles versions d’une ressource statique.
+L’effacement manuel du cache du navigateur fonctionne si vous êtes administrateur d’un site web, mais il ne s’agit pas d’une requête appropriée à l’attention de vos utilisateurs lorsque vous souhaitez qu’ils téléchargent de nouvelles versions d’une ressource statique.
 
 ## Signature de contenu statique
 
-[Contenu statique](https://glossary.magento.com/static-content) La signature est une fonction Commerce qui vous permet d’invalider le cache du navigateur pour les ressources statiques.
-Pour ce faire, Commerce ajoute une version de déploiement à l’URL de [fichiers statiques](https://glossary.magento.com/static-files).
+La signature de contenu statique est une fonction Commerce qui vous permet d’invalider le cache du navigateur pour les ressources statiques.
+Pour ce faire, Commerce ajoute une version de déploiement à l’URL des fichiers statiques.
 
 Voici un exemple d’URL signée avec une version :
 

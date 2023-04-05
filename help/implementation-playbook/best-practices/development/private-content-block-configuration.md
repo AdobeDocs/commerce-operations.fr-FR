@@ -4,9 +4,9 @@ description: Découvrez les bonnes pratiques pour configurer des blocs de conten
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Lorsqu’un bloc de contenu privé contient la variable `_isScopePrivate` , le bloc ne peut pas être mis en cache. Comme le bloc privé n’est pas mis en cache, Adobe Commerce doit récupérer les mêmes données pour chaque demande client, ce qui augmente la charge serveur.
 
-Au lieu d’utiliser la variable `_isScopePrivate` pour le contenu privé, créez un bloc et un modèle afin d’afficher les données indépendantes de l’utilisateur. Ces données sont remplacées par des données spécifiques à l’utilisateur par Adobe Commerce. [Composant d’interface utilisateur](https://glossary.magento.com/ui-component/), qui gère plus efficacement les données de prérendu. Pour obtenir des instructions, voir [Contenu privé](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) dans le _[!DNL Commerce PHP Extensions Guide]_.
+Au lieu d’utiliser la variable `_isScopePrivate` pour le contenu privé, créez un bloc et un modèle afin d’afficher les données indépendantes de l’utilisateur. Ces données sont remplacées par des données spécifiques à l’utilisateur par le composant d’interface utilisateur d’Adobe Commerce, qui gère plus efficacement les données de prérendu. Pour obtenir des instructions, voir [Contenu privé](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) dans le _[!DNL Commerce PHP Extensions Guide]_.
 
 ## Produits et versions concernés
 

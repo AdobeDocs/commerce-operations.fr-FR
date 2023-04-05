@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Data Migration Tool] spécification technique"
 description: "En savoir plus sur les détails de mise en oeuvre de la variable [!DNL Data Migration Tool] et comment étendre lors du transfert de données entre Magento 1 et Magento 2."
-source-git-commit: c56cc6d97f69770aa718333c02514ab3cfce774c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2079'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Le diagramme suivant représente la structure de répertoires de [!DNL Data Migr
 │       │   ├── Data.php
 │       │   ├── Delta.php
 │       │   └── Settings.php
-│       ├── ResourceModel                   --- contains [adapter](https://glossary.magento.com/adapter) for connection to data storage and classes to work with structured data
+│       ├── ResourceModel                   --- contains adapter for connection to data storage and classes to work with structured data
 │       │   ├── Adapter
 │       │   │   └── Mysql.php
 │       │   ├── AbstractCollection.php
@@ -75,7 +75,7 @@ Le diagramme suivant représente la structure de répertoires de [!DNL Data Migr
 │       │   ├── Source.php
 │       │   └── Structure.php
 │       ├── Config.php
-│       ├── [Exception](https://glossary.magento.com/exception).php
+│       ├── Exception.php
 │       └── Step                            --- functionality for migrating specific data
 │           ├── Eav
 │           │   ├── Data.php
@@ -209,7 +209,7 @@ Vous pouvez également vous connecter à une base de données à l’aide du pro
 * `ssl_cert`
 * `ssl_key`
 
-Par exemple :
+Par exemple :
 
 ```xml
 <source>
@@ -342,7 +342,7 @@ Dans ce mode, la plupart des données sont migrées. Avant la migration des donn
 
 #### Étape de mappage
 
-L’étape de carte est chargée de transférer la plupart des données du Magento 1 vers le Magento 2. Cette étape lit les instructions à partir du fichier map.xml (situé dans `etc/` ). Le fichier décrit les différences entre les structures de données de la source (Magento 1) et de la destination (Magento 2). Si le Magento 1 contient des tableaux ou des champs qui appartiennent à certains [extension](https://glossary.magento.com/extension) qui n’existe pas dans le Magento 2, ces entités peuvent être placées ici pour les ignorer par l’étape de carte. Sinon, un message d’erreur s’affiche.
+L’étape de carte est chargée de transférer la plupart des données du Magento 1 vers le Magento 2. Cette étape lit les instructions à partir du fichier map.xml (situé dans `etc/` ). Le fichier décrit les différences entre les structures de données de la source (Magento 1) et de la destination (Magento 2). Si le Magento 1 contient des tables ou des champs appartenant à une extension qui n’existe pas dans le Magento 2, ces entités peuvent être placées ici pour les ignorer par l’étape de carte. Sinon, un message d’erreur s’affiche.
 
 Le fichier de carte a le format suivant :
 
@@ -464,7 +464,7 @@ Voici un diagramme de classe de ces classes :
 
 ## Journalisation
 
-Pour mettre en oeuvre la sortie du processus de migration et contrôler tous les niveaux possibles, le journal PSR, utilisé en Magento, est appliqué. `\Migration\Logger\Logger` a été mise en oeuvre pour fournir des fonctionnalités de journalisation. Pour utiliser l’enregistreur, vous devez l’injecter via le constructeur [injection de dépendance](https://glossary.magento.com/dependency-injection).
+Pour mettre en oeuvre la sortie du processus de migration et contrôler tous les niveaux possibles, le journal PSR, utilisé en Magento, est appliqué. `\Migration\Logger\Logger` a été mise en oeuvre pour fournir des fonctionnalités de journalisation. Pour utiliser l’enregistreur, vous devez l’injecter par injection de dépendance de constructeur.
 
 ```php
 class SomeClass
@@ -532,7 +532,7 @@ Il existe trois types de tests dans la variable [!DNL Data Migration Tool]:
 * Unité
 * Intégration
 
-Ils se trouvent dans le `tests/` , qui est identique au type de test (les tests unitaires se trouvent dans la variable `tests/unit` ). Pour lancer le test, phpunit doit être installé. Remplacez le répertoire actuel par le répertoire test et lancez phpunit. Par exemple :
+Ils se trouvent dans le `tests/` , qui est identique au type de test (les tests unitaires se trouvent dans la variable `tests/unit` ). Pour lancer le test, phpunit doit être installé. Remplacez le répertoire actuel par le répertoire test et lancez phpunit. Par exemple :
 
 ```bash
 [10:32 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool]-[git master]

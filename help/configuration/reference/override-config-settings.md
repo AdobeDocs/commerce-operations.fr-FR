@@ -1,9 +1,9 @@
 ---
 title: Remplacement des paramètres de configuration
 description: Découvrez comment utiliser les variables d’environnement pour remplacer les paramètres de configuration.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1225'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ Par exemple, pour trouver un site web ou stocker la valeur de portée de vue dan
 
 Pour obtenir ces valeurs de la base de données :
 
-1. Connectez-vous à votre système de développement en tant que [propriétaire du système de fichiers](https://glossary.magento.com/magento-file-system-owner) si vous ne l&#39;avez pas déjà fait.
+1. Connectez-vous à votre système de développement en tant que propriétaire du système de fichiers si vous ne l’avez pas déjà fait.
 1. Saisissez la commande suivante :
 
    ```bash
@@ -253,6 +253,6 @@ Un exemple détaillé est présenté dans la section [Définition de valeurs de 
 >
 >- Pour utiliser les valeurs définies dans la variable `$_ENV` tableau, vous devez définir `variables_order = "EGPCS"`(Environnement, Obtenir, Publier, Cookie et Serveur) dans votre `php.ini` fichier . Pour plus d’informations, voir [documentation PHP](https://www.php.net/manual/en/ini.core.php).
 >
->- Pour Adobe Commerce sur l’infrastructure cloud, si vous tentez de remplacer les paramètres de configuration à l’aide de la variable [Interface Web du projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), vous devez ajouter en préfixe le nom de la variable `env:`. Par exemple :
+>- Pour Adobe Commerce sur l’infrastructure cloud, si vous tentez de remplacer les paramètres de configuration à l’aide de la variable [Interface Web du projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), vous devez ajouter en préfixe le nom de la variable `env:`. Par exemple :
 >
 >![Exemple de variable d’environnement](../../assets/configuration/cloud-console-envvariable.png)

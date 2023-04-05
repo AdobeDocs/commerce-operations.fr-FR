@@ -1,9 +1,9 @@
 ---
 title: Prérequis du moteur de recherche
 description: Pour installer et configurer les logiciels de moteur de recherche pris en charge pour les installations sur site d’Adobe Commerce et de Magento Open Source, procédez comme suit.
-source-git-commit: d3cfd97450164d38fd340b538099739601573d64
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '786'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Prérequis du moteur de recherche
 
-Depuis Adobe Commerce et Magento Open Source 2.4, toutes les installations doivent être configurées pour utiliser [Elasticsearch](https://www.elastic.co) ou [OpenSearch](https://opensearch.org/) comme la propriété [catalogue](https://glossary.magento.com/catalog) solution de recherche.
+Depuis Adobe Commerce et Magento Open Source 2.4, toutes les installations doivent être configurées pour utiliser [Elasticsearch](https://www.elastic.co) ou [OpenSearch](https://opensearch.org/) comme solution de recherche catalogue.
 
 >[!NOTE]
 >

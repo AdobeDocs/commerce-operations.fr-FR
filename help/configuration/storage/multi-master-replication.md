@@ -1,9 +1,9 @@
 ---
 title: Réplication des bases de données
 description: Découvrez les avantages de la configuration de la réplication de base de données.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ Les éléments suivants sont plus avancés et ne sont fournis que pour vos infor
 
 ## Amélioration des performances
 
-Pour améliorer les performances de la réplication du Secondaire maître, vous pouvez filtrer certains tableaux sur des instances de Secondaire. Nous vous recommandons de filtrer toutes les tables temporaires avec un modèle de nom. `search\_tmp\_%` qui sont utilisés pour [catalogue](https://glossary.magento.com/catalog) rechercher.
+Pour améliorer les performances de la réplication du Secondaire maître, vous pouvez filtrer certains tableaux sur des instances de Secondaire. Nous vous recommandons de filtrer toutes les tables temporaires avec un modèle de nom. `search\_tmp\_%` qui sont utilisés pour la recherche catalogue.
 
 Pour ce faire, ajoutez la ligne suivante à votre `my.cnf` sur vos instances de Secondaire :
 

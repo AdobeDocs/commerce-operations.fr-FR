@@ -1,9 +1,9 @@
 ---
 title: Configuration de plusieurs sites web avec Nginx
 description: Suivez ce tutoriel pour configurer plusieurs sites web avec Nginx.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Voir [Configuration de plusieurs sites web, magasins et vues de magasin dans l�
 
 ## Étape 2 : Création d’hôtes virtuels nginx
 
-Cette étape explique comment charger des sites web sur le [storefront](https://glossary.magento.com/storefront). Vous pouvez utiliser des sites web ou des vues de magasin ; si vous utilisez des vues de magasin, vous devez ajuster les valeurs de paramètre en conséquence. Vous devez effectuer les tâches de cette section en tant qu’utilisateur avec `sudo` des privilèges.
+Cette étape explique comment charger des sites web sur le storefront. Vous pouvez utiliser des sites web ou des vues de magasin ; si vous utilisez des vues de magasin, vous devez ajuster les valeurs de paramètre en conséquence. Vous devez effectuer les tâches de cette section en tant qu’utilisateur avec `sudo` des privilèges.
 
 En utilisant un seul [fichier d’hôte virtuel nginx](#step-2-create-nginx-virtual-hosts), vous pouvez garder simple et propre votre configuration de ingx. En utilisant plusieurs fichiers d’hôtes virtuels, vous pouvez personnaliser chaque magasin (pour utiliser un emplacement personnalisé pour `french.mysite.mg` par exemple).
 

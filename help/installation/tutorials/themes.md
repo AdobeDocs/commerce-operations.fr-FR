@@ -1,9 +1,9 @@
 ---
 title: Désinstaller les thèmes
 description: Pour désinstaller un thème Adobe Commerce ou Magento Open Source, procédez comme suit.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Désinstaller les thèmes
 
-Avant d’utiliser cette commande, vous devez connaître le chemin d’accès relatif à votre thème. Les thèmes se trouvent dans un sous-répertoire de `<magento_root>/app/design/<area name>`. Vous devez spécifier le chemin d’accès au thème commençant par la zone, qui est : `frontend` (pour les thèmes de vitrine) ou `adminhtml` (pour [Administration](https://glossary.magento.com/magento-admin) thèmes).
+Avant d’utiliser cette commande, vous devez connaître le chemin d’accès relatif à votre thème. Les thèmes se trouvent dans un sous-répertoire de `<magento_root>/app/design/<area name>`. Vous devez spécifier le chemin d’accès au thème commençant par la zone, qui est : `frontend` (pour les thèmes de vitrine) ou `adminhtml` (pour les thèmes d’administration).
 
-Par exemple, le chemin d’accès au Luma [thème](https://glossary.magento.com/theme) fourni avec Adobe Commerce et Magento Open Source est `frontend/Magento/luma`.
+Par exemple, le chemin d’accès au thème Luma fourni avec Adobe Commerce et Magento Open Source est : `frontend/Magento/luma`.
 
 Pour plus d’informations sur les thèmes, voir [structure du thème](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
@@ -21,7 +21,7 @@ Pour plus d’informations sur les thèmes, voir [structure du thème](https://d
 
 Cette section explique comment désinstaller un ou plusieurs thèmes, incluant éventuellement le code des thèmes du système de fichiers. Vous pouvez d’abord créer des sauvegardes afin de pouvoir restaurer les données ultérieurement.
 
-Cette commande désinstalle *only* les thèmes spécifiés dans `composer.json`; en d’autres termes, les thèmes fournis comme [Compositeur](https://glossary.magento.com/composer) modules. Si votre thème n’est pas un module de compositeur, vous devez le désinstaller manuellement en :
+Cette commande désinstalle *only* les thèmes spécifiés dans `composer.json`; en d’autres termes, les thèmes fournis en tant que modules du compositeur. Si votre thème n’est pas un module de compositeur, vous devez le désinstaller manuellement en :
 
 * Mise à jour de la `parent` informations sur les noeuds dans `theme.xml` pour supprimer les références au thème.
 * Suppression du code de thème du système de fichiers.
@@ -61,7 +61,7 @@ La commande effectue les tâches suivantes :
 
 1. Supprime les thèmes de la `theme` table de base de données.
 1. Supprimez les thèmes de la base de code à l’aide de `composer remove`.
-1. Nettoie la variable [cache](https://glossary.magento.com/cache).
+1. Nettoie le cache.
 1. Nettoie les classes générées
 1. If `--clear-static-content` est spécifié, cleans [fichiers d’affichage statique générés](../../configuration/cli/static-view-file-deployment.md).
 
@@ -102,4 +102,4 @@ Disabling maintenance mode
 
 >[!NOTE]
 >
->Pour désinstaller un [Administration](https://glossary.magento.com/admin) thème, vous devez également le supprimer de la propriété [injection de dépendance](https://glossary.magento.com/dependency-injection) configuration, `<component root directory>/etc/di.xml`.
+>Pour désinstaller un thème d’administration, vous devez également le supprimer de la configuration d’injection de dépendance de votre composant, `<component root directory>/etc/di.xml`.

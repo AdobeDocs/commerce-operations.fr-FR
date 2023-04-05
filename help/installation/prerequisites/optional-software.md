@@ -1,9 +1,9 @@
 ---
 title: Logiciels facultatifs
 description: Découvrez les logiciels facultatifs que vous pouvez installer pour prendre en charge les installations sur site d’Adobe Commerce et de Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Pour installer et configurer NTP :
    yum search ntp
    ```
 
-1. Sélectionnez un package à installer. Par exemple, `ntp.x86_64`.
+1. Sélectionnez un package à installer. Par exemple : `ntp.x86_64`.
 
 1. Installez le package.
 
@@ -99,7 +99,7 @@ C’est à vous de choisir les serveurs de pool. Si vous utilisez des serveurs d
 
 ## Créer phpinfo.php
 
-Le [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) affiche une grande quantité d’informations sur [PHP](https://glossary.magento.com/php) et ses extensions.
+Le [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) affiche une grande quantité d’informations sur PHP et ses extensions.
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ phpinfo();
 
 Pour plus d’informations, voir [page manuelle phpinfo](https://www.php.net/manual/en/function.phpinfo.php).
 
-Pour consulter les résultats, saisissez ce qui suit : [URL](https://glossary.magento.com/url) dans le champ de l’emplacement ou de l’adresse de votre navigateur :
+Pour afficher les résultats, saisissez l’URL suivante dans le champ de l’emplacement ou de l’adresse de votre navigateur :
 
 ```http
 http://<web server host or IP>/phpinfo.php

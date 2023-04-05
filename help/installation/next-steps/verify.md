@@ -1,9 +1,9 @@
 ---
 title: Vérification de l’installation
 description: Suivez ces étapes pour confirmer que votre installation Adobe Commerce ou Magento Open Source sur site a réussi.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Vérification de l’installation
 
-Accédez au [storefront](https://glossary.magento.com/storefront) dans un navigateur web. Par exemple, si votre base d’installation [URL](https://glossary.magento.com/url) is `http://www.example.com`, saisissez-le dans la barre d’adresse ou d’emplacement de votre navigateur.
+Accédez au storefront dans un navigateur web. Par exemple, si l’URL de base de l’installation est `http://www.example.com`, saisissez-le dans la barre d’adresse ou d’emplacement de votre navigateur.
 
 La figure suivante présente un exemple de page de storefront. S’il s’affiche comme suit, votre installation a réussi !
 
@@ -29,9 +29,9 @@ Si la page affiche une `404 (Not Found)` ou n’affiche pas de styles, voir [dé
 
 ## Vérification de l’administrateur
 
-Accédez au [Administration](https://glossary.magento.com/magento-admin) dans un navigateur web. Par exemple, si l’URL de base de l’installation est `http://www.example.com`, et l’URI d’administration est `admin_au1nT`, saisissez `http://www.example.com/admin_au1nT` dans la barre d’adresse ou d’emplacement de votre navigateur.
+Accédez à l’ administrateur dans un navigateur web. Par exemple, si l’URL de base de l’installation est `http://www.example.com`, et l’URI d’administration est `admin_au1nT`, saisissez `http://www.example.com/admin_au1nT` dans la barre d’adresse ou d’emplacement de votre navigateur.
 
-(La variable [Administration](https://glossary.magento.com/admin) L’URI est spécifié par la valeur de la variable `backend-frontname` paramètre d’installation.)
+(L’URI d’administration est spécifié par la valeur de la variable `backend-frontname` paramètre d’installation.)
 
 Lorsque vous y êtes invité, connectez-vous en tant qu’administrateur.
 

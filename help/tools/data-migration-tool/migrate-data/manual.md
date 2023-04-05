@@ -1,9 +1,9 @@
 ---
 title: Données nécessitant une migration manuelle
-description: 'Découvrez les données qui doivent être migrées manuellement au cours d’une migration de données Magento 1 vers Magento 2 et comment procéder. '
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+description: Découvrez les données qui doivent être migrées manuellement au cours d’une migration de données Magento 1 vers Magento 2 et comment procéder.
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ Il existe quatre types de données qui doivent être migrées manuellement :
 
 * Média
 
-* [Storefront](https://glossary.magento.com/storefront) design
+* Conception Storefront
 
-* [Administration](https://glossary.magento.com/admin) comptes utilisateur
+* Comptes d’utilisateurs administrateurs
 
 * Listes de contrôle d’accès (ACL)
 
@@ -40,7 +40,7 @@ Cette section vous concerne *only* si vous stockez des fichiers multimédias dan
 
 1. Dans le volet de droite, faites défiler l’écran jusqu’à **Configuration de stockage pour Media**.
 
-1. Dans la **Sélectionner la base de données multimédia** , cliquez sur le nom de votre [stockage multimédia](https://glossary.magento.com/media-storage) base de données.
+1. Dans la **Sélectionner la base de données multimédia** cliquez sur le nom de votre base de données de stockage de médias.
 
 1. Cliquez sur **Synchroniser**.
 
@@ -48,15 +48,15 @@ Répétez ensuite les mêmes étapes dans le panneau d’administration de Magen
 
 ### Fichiers multimédias dans le système de fichiers
 
-Tous les fichiers multimédias (images pour les produits, les catégories, la variable [WYSIWYG](https://glossary.magento.com/wysiwyg) , etc.) doit être copié manuellement à partir de `<your Magento 1 install dir>/media` to `<your Magento 2 install dir>/pub/media`.
+Tous les fichiers multimédias (images pour les produits, les catégories, l’éditeur WYSIWYG, etc.) doivent être copiés manuellement à partir de `<your Magento 1 install dir>/media` to `<your Magento 2 install dir>/pub/media`.
 
 Toutefois, la méthode *not* Copiez le `.htaccess` fichiers situés dans le Magento 1 `media` dossier. Le Magento 2 a sa propre `.htaccess` qui doivent être préservées.
 
 ## Conception Storefront
 
-* Conception dans des fichiers (CSS, JS, modèles, [XML](https://glossary.magento.com/xml) dispositions) a modifié son emplacement et son format.
+* La conception dans les fichiers (CSS, JS, modèles, mises en page XML) a modifié son emplacement et son format.
 
-* [Disposition](https://glossary.magento.com/layout) Mises à jour stockées dans la base de données. Transmis par l’administrateur Magento 1 dans [CMS](https://glossary.magento.com/cms) Pages, widgets CMS, [Catégorie](https://glossary.magento.com/category) Pages et pages de produits
+* Mise en page Mises à jour stockées dans la base de données. Transmis par l’administrateur Magento 1 dans les pages CMS, les widgets CMS, les pages de catégorie et les pages de produit
 
 ## Listes de contrôle d’accès (ACL)
 

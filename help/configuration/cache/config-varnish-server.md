@@ -1,9 +1,9 @@
 ---
 title: Configuration du serveur web
 description: Découvrez comment configurer votre serveur web pour qu’il fonctionne avec le vernis.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -196,7 +196,7 @@ backend default {
 
 ## Vérification des en-têtes de réponse HTTP
 
-Vous pouvez maintenant vérifier que le vernis diffuse les pages en regardant [HTML](https://glossary.magento.com/html) en-têtes de réponse renvoyés depuis n’importe quelle page.
+Vous pouvez maintenant vérifier que Varnish diffuse les pages en examinant les en-têtes de réponse de HTML renvoyés depuis n’importe quelle page.
 
 Avant de pouvoir consulter les en-têtes, vous devez définir Commerce pour le mode Développeur. Il existe plusieurs façons de le faire, dont la plus simple consiste à modifier `.htaccess` dans la racine de l’application Commerce. Vous pouvez également utiliser la variable [`magento deploy:mode:set`](../cli/set-mode.md) .
 
@@ -235,7 +235,7 @@ Si des en-têtes comme ceux-ci font _not_ affichez, arrêtez Varnish, vérifiez 
 
 ### Vérification des en-têtes de réponse de HTML
 
-Il existe plusieurs façons d’afficher les en-têtes de réponse, y compris l’utilisation d’un navigateur. [plug-in](https://glossary.magento.com/plug-in) ou un inspecteur de navigateur.
+Il existe plusieurs façons d’examiner les en-têtes de réponse, notamment l’utilisation d’un module externe de navigateur ou d’un inspecteur de navigateur.
 
 L’exemple suivant utilise `curl`. Vous pouvez saisir cette commande depuis n’importe quel ordinateur qui peut accéder au serveur Commerce à l’aide de HTTP.
 
@@ -243,7 +243,7 @@ L’exemple suivant utilise `curl`. Vous pouvez saisir cette commande depuis n�
 curl -I -v --location-trusted '<your Commerce base URL>'
 ```
 
-Par exemple,
+Par exemple :
 
 ```bash
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'

@@ -1,9 +1,9 @@
 ---
 title: Activation ou désactivation des modules
 description: Pour gérer les modules Adobe Commerce ou Magento Open Source, procédez comme suit.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Où
 
 * `--enabled` répertorie tous les modules activés.
 * `--disabled` répertorie tous les modules désactivés.
-* `<module-list>` est une liste de modules délimités par des espaces pour vérifier l’état. Si [module](https://glossary.magento.com/module) Le nom contient des caractères spéciaux, encadrez le nom entre guillemets simples ou doubles.
+* `<module-list>` est une liste de modules délimités par des espaces pour vérifier l’état. Si un nom de module contient des caractères spéciaux, placez le nom entre guillemets simples ou doubles.
 
 ## Activation et désactivation des modules
 
@@ -41,7 +41,7 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 
 Où
 
-* `<module-list>` est une liste de modules délimitée par des espaces à activer ou désactiver. Si [module](https://glossary.magento.com/module) Le nom contient des caractères spéciaux, encadrez le nom entre guillemets simples ou doubles.
+* `<module-list>` est une liste de modules délimitée par des espaces à activer ou désactiver. Si un nom de module contient des caractères spéciaux, placez le nom entre guillemets simples ou doubles.
 * `--all` pour activer ou désactiver tous les modules en même temps.
 * `-f` ou `--force` pour forcer l’activation ou la désactivation d’un module malgré les dépendances. Avant d’utiliser cette option, voir [A propos de l&#39;activation et de la désactivation des modules](#about-enabling-and-disabling-modules).
 * `-c` ou `--clear-static-content` cleans [fichiers d’affichage statique générés](../../configuration/cli/static-view-file-deployment.md).

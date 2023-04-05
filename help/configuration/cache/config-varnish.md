@@ -1,9 +1,9 @@
 ---
 title: Configurer et utiliser le vernis
 description: Découvrez comment Varnish stocke les fichiers et améliore le trafic HTTP.
-source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Dans la figure précédente, les requêtes HTTP des utilisateurs sur Internet g�
 
 Lorsque le serveur web renvoie des ressources, les ressources pouvant être mises en cache sont stockées en vernis. Toutes les demandes suivantes pour ces ressources sont satisfaites par Varnish (ce qui signifie que les demandes n’atteignent pas le serveur web). Le vernis renvoie extrêmement rapidement le contenu mis en cache. Les résultats se traduisent par des temps de réponse plus rapides pour renvoyer le contenu aux utilisateurs et un nombre réduit de demandes qui doivent être satisfaites par Commerce.
 
-Les ressources mises en cache par Varnish expirent à un intervalle configurable ou sont remplacées par de nouvelles versions des mêmes ressources. Vous pouvez également effacer le cache manuellement à l’aide de la méthode [Administration](https://glossary.magento.com/magento-admin) ou le [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) .
+Les ressources mises en cache par Varnish expirent à un intervalle configurable ou sont remplacées par de nouvelles versions des mêmes ressources. Vous pouvez également effacer le cache manuellement à l’aide de l’option Admin ou de la fonction [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) .
 
 ## Présentation des processus
 
@@ -97,7 +97,7 @@ Cette rubrique couvre uniquement les options par défaut de la liste précédent
 
 Lors de la première demande de navigateur, les ressources pouvant être mises en cache sont diffusées à partir du navigateur client à partir de Varnish et mises en cache sur le navigateur.
 
-De plus, le vernis utilise une [Entité](https://glossary.magento.com/entity) Balise (ETag) pour les ressources statiques. L’ETag permet de déterminer quand [fichiers statiques](https://glossary.magento.com/static-files) Modifiez sur le serveur. Par conséquent, les ressources statiques sont envoyées au client lorsqu’il change sur le serveur, soit à une nouvelle demande d’un navigateur, soit lorsque le client actualise le cache du navigateur, généralement en appuyant sur F5 ou Ctrl+F5.
+En outre, Varnish utilise une balise d’entité (ETag) pour les ressources statiques. L’ETag permet de déterminer le moment où les fichiers statiques changent sur le serveur. Par conséquent, les ressources statiques sont envoyées au client lorsqu’il change sur le serveur, soit à une nouvelle demande d’un navigateur, soit lorsque le client actualise le cache du navigateur, généralement en appuyant sur F5 ou Ctrl+F5.
 
 Vous trouverez plus de détails dans les sections suivantes.
 

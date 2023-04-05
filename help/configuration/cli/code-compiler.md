@@ -1,9 +1,9 @@
 ---
 title: Compilateur de code
 description: Découvrez comment exécuter le compilateur de code à partir de la ligne de commande.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 La compilation de code comprend les éléments suivants (sans ordre particulier) :
 
 - Génération de code d’application (usines, proxies)
-- Agrégation de la configuration de zone (optimisée) [injection de dépendance](https://glossary.magento.com/dependency-injection) configurations par zone)
+- Agrégation de la configuration de zone (configurations d’injection de dépendance optimisées par zone)
 - Génération d’intercepteurs (génération de code optimisée d’intercepteurs)
 - Génération du cache d’interception
 - Génération de code de référentiels (code généré pour les API)
-- Génération d’attributs de données de service (générée) [extension](https://glossary.magento.com/extension) classes pour les objets de données)
+- Génération d’attributs de données de service (classes d’extension générées pour les objets de données)
 
 Vous trouverez les classes de compilation de code dans la variable [\Magento\Setup\Module\Di\App\Task\Operation][operation] espace de noms.
 
@@ -44,7 +44,7 @@ Dans certains cas, vous souhaiterez peut-être compiler le code avant d’instal
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
-   Utilisez la variable `[-c|--clear-static-content]` option d’effacement [contenu statique](https://glossary.magento.com/static-content). Cela est nécessaire si vous avez précédemment activé ou désactivé les modules et que vous devez effacer le contenu statique généré précédemment pour ceux-ci.
+   Utilisez la variable `[-c|--clear-static-content]` pour effacer le contenu statique. Cela est nécessaire si vous avez précédemment activé ou désactivé les modules et que vous devez effacer le contenu statique généré précédemment pour ceux-ci.
 
    Voir [Activation des modules](../../installation/tutorials/manage-modules.md).
 

@@ -1,9 +1,9 @@
 ---
 title: Empoisonnement du cache
 description: Découvrez comment empêcher l’empoisonnement du cache de page pour votre vitrine Commerce.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Empoisonnement du cache
 
-Cette rubrique explique comment empêcher [cache](https://glossary.magento.com/cache) empoisonnement si vous utilisez le serveur web Microsoft Internet Information Server (IIS). _Empoisonnement du cache_ est une méthode permettant de modifier le contenu du cache afin d’inclure différentes pages du même site. Par exemple, il est possible d’injecter une page d’erreur HTTP 404 (Introuvable) à la place d’une page bénigne (par exemple, la variable [storefront](https://glossary.magento.com/storefront) page d’accueil), qui peut entraîner un déni de service (DoS) potentiel. Les URL de page malveillantes sont mises en cache par Varnish ou Redis, d’où le nom _empoisonnement du cache de page_.
+Cette rubrique explique comment empêcher l’empoisonnement du cache si vous utilisez le serveur web Microsoft Internet Information Server (IIS). _Empoisonnement du cache_ est une méthode permettant de modifier le contenu du cache afin d’inclure différentes pages du même site. Par exemple, il est possible d’injecter une page d’erreur HTTP 404 (Introuvable) au lieu d’une page bénigne (par exemple, la page d’accueil storefront), ce qui peut entraîner un déni de service (DoS) potentiel. Les URL de page malveillantes sont mises en cache par Varnish ou Redis, d’où le nom _empoisonnement du cache de page_.
 
 Ces types d’attaques peuvent être difficiles à détecter, car ils ne génèrent pas d’erreurs dans les journaux du serveur web.
 

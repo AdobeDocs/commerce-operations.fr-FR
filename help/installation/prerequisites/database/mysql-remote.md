@@ -1,9 +1,9 @@
 ---
 title: Configuration d’une connexion de base de données MySQL distante
 description: Pour configurer une connexion à base de données distante pour les installations sur site d’Adobe Commerce et de Magento Open Source, procédez comme suit.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Pour accorder l’accès à un utilisateur de la base de données :
    GRANT ALL ON <local database name>.* TO <remote web node username>@<remote web node server ip address> IDENTIFIED BY '<database user password>';
    ```
 
-   Par exemple,
+   Par exemple :
 
    ```shell
    GRANT ALL ON magento_remote.* TO dbuser@192.0.2.50 IDENTIFIED BY 'dbuserpassword';
@@ -154,7 +154,7 @@ Si votre serveur web est en grappe, saisissez la commande sur chaque hôte de se
 
 Lorsque vous installez Adobe Commerce ou Magento Open Source, vous devez indiquer les informations suivantes :
 
-* La base [URL](https://glossary.magento.com/url) (également appelé *adresse du magasin*) indique le nom d’hôte ou l’adresse IP du *noeud web*
+* L’URL de base (également appelée *adresse du magasin*) indique le nom d’hôte ou l’adresse IP du *noeud web*
 * L’hôte de base de données est *serveur de base de données distant* Adresse IP (ou équilibreur de charge si le serveur de base de données est en cluster)
 * Le nom d’utilisateur de la base de données est *noeud web local* utilisateur de base de données auquel vous avez donné accès
 * Mot de passe de la base de données est le mot de passe de l’utilisateur du noeud web local.

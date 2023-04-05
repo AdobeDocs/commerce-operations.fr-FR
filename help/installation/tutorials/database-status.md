@@ -1,9 +1,9 @@
 ---
 title: Vérification du statut de la base de données
 description: Pour vérifier l’état de votre base de données Adobe Commerce ou Magento Open Source, procédez comme suit.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '108'
 ht-degree: 2%
 
 ---
@@ -35,4 +35,4 @@ La commande renvoie l’un des codes de sortie suivants :
 |--------------|--------------|---------------|
 | 0 | Normal | Aucun |
 | 1 | Certains modules utilisent des versions de code plus récentes ou plus anciennes que la base de données. | Exécuter [`magento setup:upgrade`](database-upgrade.md) pour mettre à jour le schéma de la base de données et exécuter `composer update` à partir du répertoire racine de l’application pour mettre à jour les dépendances des composants. |
-| 2 | `magento setup:upgrade` est requis | [`magento setup:upgrade`](database-upgrade.md) pour mettre à jour la variable [schéma de base de données](https://glossary.magento.com/database-schema) |
+| 2 | `magento setup:upgrade` est requis | [`magento setup:upgrade`](database-upgrade.md) mise à jour du schéma de base de données |

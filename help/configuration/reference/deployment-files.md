@@ -1,9 +1,9 @@
 ---
 title: Fichiers de configuration pour le déploiement
 description: Découvrez comment les fichiers de configuration fonctionnent pour l’installation de l’application Commerce.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Au niveau supérieur de ce tableau, vous trouverez _segments de configuration_. 
 
 [Magento\Framework\App\DeploymentConfig](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) donne simplement accès à ces sections, mais ne vous permet pas de les étendre.
 
-Au niveau de la hiérarchie suivante, les éléments de chaque segment sont triés en fonction de la variable [module](https://glossary.magento.com/module) définition de séquence, obtenue en fusionnant les fichiers de configuration de tous les modules, à l’exception des modules désactivés.
+Au niveau de la hiérarchie suivante, les éléments de chaque segment sont triés en fonction de la définition de séquence de module, qui est obtenue en fusionnant les fichiers de configuration de tous les modules, à l’exception des modules désactivés.
 
 Les sections suivantes abordent la structure et le contenu de la configuration du déploiement :
 
@@ -78,6 +78,6 @@ return array (
 
 La valeur `1` ou `0` indique si un module est activé ou désactivé.
 
-Les modules désactivés ne sont pas reconnus par l’application Commerce ; en d’autres termes, ils ne participent pas à la configuration de fusion, à l’injection de dépendances, aux événements, aux modules externes, etc. Les modules désactivés ne modifient pas la variable [storefront](https://glossary.magento.com/storefront) ou [Administration](https://glossary.magento.com/admin) et n’affectent pas le routage.
+Les modules désactivés ne sont pas reconnus par l’application Commerce ; en d’autres termes, ils ne participent pas à la configuration de fusion, à l’injection de dépendances, aux événements, aux modules externes, etc. Les modules désactivés ne modifient pas le storefront ou l’administrateur et n’affectent pas le routage.
 
 La seule différence pratique d’un module désactivé et d’un module absent de la base de code est qu’un module désactivé est trouvé par l’outil de chargement automatique, et ses classes et constantes sont disponibles pour réutilisation dans d’autres codes.

@@ -1,9 +1,9 @@
 ---
 title: paramètres PHP
 description: Suivez ces étapes pour installer les extensions PHP requises et configurer les paramètres PHP requis pour les installations sur site d’Adobe Commerce et de Magento Open Source.
-source-git-commit: df8240b71efe992bc1c0655aa30c32778297a3c6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # paramètres PHP
 
-Cette rubrique explique comment définir les [PHP](https://glossary.magento.com/php) options.
+Cette rubrique explique comment définir les options PHP requises.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ La plupart des versions de Linux ont installé PHP par défaut. Cette rubrique s
 php -v
 ```
 
-If [PHP](https://glossary.magento.com/php) est installé, un message similaire à ce qui suit s’affiche :
+Si PHP est installé, un message similaire à celui-ci s’affiche :
 
 ```terminal
 PHP 7.4.0 (cli) (built: Aug 14 2019 16:42:46) ( NTS )
@@ -156,7 +156,7 @@ Pour définir les options PHP :
 
 1. Modifier la valeur de `memory_limit` à l’une des valeurs recommandées au début de cette section.
 
-   Par exemple,
+   Par exemple :
 
    ```conf
    memory_limit=2G

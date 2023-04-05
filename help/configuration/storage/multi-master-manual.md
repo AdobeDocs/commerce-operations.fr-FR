@@ -1,9 +1,9 @@
 ---
 title: Configuration manuelle des bases de données principales
 description: Consultez les conseils sur la configuration manuelle de la solution de base de données partagée.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Si l’application Commerce est déjà en production ou si vous avez déjà inst
 
 Le fractionnement manuel de bases de données implique :
 
-- Créez le [passage en caisse](https://glossary.magento.com/checkout) et bases de données du système de gestion des commandes (OMS)
+- Créer des bases de données du système de gestion des commandes et des passages en caisse (OMS)
 - Exécutez une série de scripts SQL qui :
 
    - Déposer les clés étrangères
@@ -62,7 +62,7 @@ Adobe vous recommande vivement de sauvegarder votre base de données et votre sy
 
 ## Configurer des bases de données principales supplémentaires
 
-Cette section explique comment créer des instances de base de données pour les ventes et [guillemet](https://glossary.magento.com/quote) des tables.
+Cette section explique comment créer des instances de base de données pour les tableaux de ventes et de devis.
 
 **Pour créer des bases de données de devis OMS et de ventes**:
 
@@ -211,7 +211,7 @@ Exécutez le script précédent :
    source <path>/<script>.sql
    ```
 
-   Par exemple,
+   Par exemple :
 
    ```shell
    source /root/sql-scripts/1_foreign-sales.sql
@@ -336,7 +336,7 @@ Exécutez le script comme suit :
 1. Dans le `mysql >` exécutez le script comme suit :
    `source <path>/<script>.sql`
 
-   Par exemple,
+   Par exemple :
 
    ```shell
    source /root/sql-scripts/2_foreign-key-quote.sql
@@ -462,7 +462,7 @@ Exécutez le script comme suit :
    source <path>/<script>.sql
    ```
 
-   Par exemple,
+   Par exemple :
 
    ```shell
    source /root/sql-scripts/3_drop-tables.sql
@@ -549,7 +549,7 @@ Localisez le bloc commençant par `'resource'` et ajouter `'checkout'` et `'sale
 
 ## Scripts de référence
 
-Cette section fournit des scripts que vous pouvez exécuter pour imprimer une liste complète des tables affectées sans effectuer d’actions sur celles-ci. Vous pouvez les utiliser pour identifier les tables affectées avant de fractionner manuellement les bases de données, ce qui peut s’avérer utile si vous utilisez des extensions qui personnalisent la variable [schéma de base de données](https://glossary.magento.com/database-schema).
+Cette section fournit des scripts que vous pouvez exécuter pour imprimer une liste complète des tables affectées sans effectuer d’actions sur celles-ci. Vous pouvez les utiliser pour identifier les tables affectées avant de fractionner manuellement les bases de données, ce qui peut s’avérer utile si vous utilisez des extensions qui personnalisent le schéma de base de données.
 
 Pour utiliser ces scripts :
 

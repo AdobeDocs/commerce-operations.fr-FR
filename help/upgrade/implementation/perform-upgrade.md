@@ -1,9 +1,9 @@
 ---
 title: Effectuer une mise à niveau
 description: Pour mettre à niveau un projet Adobe Commerce ou Magento Open Source, procédez comme suit.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Vous pouvez mettre à niveau votre application Adobe Commerce ou Magento Open Source à partir de la ligne de commande si vous avez installé le logiciel en procédant comme suit :
 
-- Téléchargement de la [métapackage](https://glossary.magento.com/metapackage) en utilisant la variable `composer create-project` .
+- Téléchargement du module externe à l’aide du `composer create-project` .
 - Installation de l’archive compressée.
 
 >[!NOTE]
@@ -108,7 +108,7 @@ Vous devez renseigner la variable [conditions préalables à la mise à niveau](
 
    - `<product>` —(Obligatoire) Package à mettre à niveau. Pour les installations sur site, cette valeur doit être : `product-community-edition` ou `product-enterprise-edition`.
 
-   - `<version>` —(Obligatoire) Version d’Adobe Commerce ou de Magento Open Source vers laquelle vous effectuez une mise à niveau. Par exemple, `2.4.3`.
+   - `<version>` —(Obligatoire) Version d’Adobe Commerce ou de Magento Open Source vers laquelle vous effectuez une mise à niveau. Par exemple : `2.4.3`.
 
    - `--no-update` —(Obligatoire) Désactive la mise à jour automatique des dépendances.
 

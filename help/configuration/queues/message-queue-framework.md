@@ -1,9 +1,9 @@
 ---
 title: Présentation des files de messages
 description: Découvrez la structure de la file d’attente des messages et son fonctionnement avec l’application Adobe Commerce et Magento Open Source.
-source-git-commit: 78ad565f051f254229424ddcdb8ce633d3a78ec6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # Présentation des files d’attente de messages
 
-Le framework de file d’attente des messages (MQF) est un système qui permet d’utiliser une [module](https://glossary.magento.com/module) pour publier des messages dans les files d’attente. Il définit également la variable [consommateurs](consumers.md) qui recevront les messages de manière asynchrone. Le MQF utilise [[!DNL RabbitMQ]](https://www.rabbitmq.com) en tant que courtier de messagerie, qui fournit une plateforme évolutive pour l’envoi et la réception de messages. Il comprend également un mécanisme de stockage des messages non diffusés. [!DNL RabbitMQ] est basé sur la spécification AMQP 0.9.1 du protocole Advanced Message Queuing Protocol (AMQP).
+Le Message Queue Framework (MQF) est un système qui permet à un module de publier des messages dans les files d’attente. Il définit également la variable [consommateurs](consumers.md) qui recevront les messages de manière asynchrone. Le MQF utilise [[!DNL RabbitMQ]](https://www.rabbitmq.com) en tant que courtier de messagerie, qui fournit une plateforme évolutive pour l’envoi et la réception de messages. Il comprend également un mécanisme de stockage des messages non diffusés. [!DNL RabbitMQ] est basé sur la spécification AMQP 0.9.1 du protocole Advanced Message Queuing Protocol (AMQP).
 
 Le diagramme suivant illustre la structure de la file d’attente des messages :
 
 ![Structure de la file d’attente des messages](../../assets/configuration/mq-framework.png)
 
-- A [publisher](https://glossary.magento.com/publisher-subscriber-pattern) est un composant qui envoie des messages à un échange. Il connaît l’échange vers lequel publier et le format des messages qu’il envoie.
+- Un éditeur est un composant qui envoie des messages à un échange. Il connaît l’échange vers lequel publier et le format des messages qu’il envoie.
 
 - Un échange reçoit les messages des éditeurs et les envoie aux files d’attente. Bien que [!DNL RabbitMQ] prend en charge plusieurs types d’échanges, Commerce utilise uniquement les échanges de rubrique. Une rubrique comprend une clé de routage, qui contient des chaînes de texte séparées par des points. Le format du nom d’une rubrique est le suivant : `string1.string2`: par exemple, `customer.created` ou `customer.sent.email`.
 
@@ -27,4 +27,4 @@ Le diagramme suivant illustre la structure de la file d’attente des messages :
 
 - Un consommateur reçoit des messages. Il sait quelle file d&#39;attente utiliser. Il peut mapper les processeurs du message à une file d’attente spécifique.
 
-Un système de file d’attente de messages de base peut également être configuré sans utiliser [!DNL RabbitMQ]. Dans ce système, un MySQL [adapter](https://glossary.magento.com/adapter) stocke les messages dans la base de données. Trois tables de base de données (`queue`, `queue_message`, et `queue_message_status`) gérer la charge de travail de la file d’attente des messages. Les tâches Cron permettent aux consommateurs de recevoir des messages. Cette solution n’est pas très évolutive. [!DNL RabbitMQ] doit être utilisé dans la mesure du possible.
+Un système de file d’attente de messages de base peut également être configuré sans utiliser [!DNL RabbitMQ]. Dans ce système, un adaptateur MySQL stocke les messages dans la base de données. Trois tables de base de données (`queue`, `queue_message`, et `queue_message_status`) gérer la charge de travail de la file d’attente des messages. Les tâches Cron permettent aux consommateurs de recevoir des messages. Cette solution n’est pas très évolutive. [!DNL RabbitMQ] doit être utilisé dans la mesure du possible.

@@ -1,9 +1,9 @@
 ---
 title: Vérifier la base de données partagée
 description: Découvrez comment vérifier qu’une configuration de base de données de partage Commerce fonctionne correctement.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 Après la configuration, les bases de données maîtres sont configurées comme suit :
 
 - Base de données Commerce principale : 369 tables
-- Commerce [guillemet](https://glossary.magento.com/quote) base de données : 11 tables
+- Base de données des devis commerciaux : 11 tables
 - Base de données commerciale des ventes : 55 tables
 
 Pour vérifier que vos bases de données partagées fonctionnent correctement, effectuez les tâches suivantes et vérifiez que les données sont ajoutées aux tables de base de données à l’aide d’un outil de base de données tel que [phpmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin):

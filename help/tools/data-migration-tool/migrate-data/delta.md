@@ -1,9 +1,9 @@
 ---
 title: Migrer les modifications
 description: Découvrez comment migrer uniquement les données qui ont changé depuis votre dernière migration de données de Magento 1 avec le [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 L’outil de migration incrémentale installe les tables de déploiement (avec préfixe). `m2_cl_*`) et déclencheurs (pour le suivi des modifications) dans la base de données Magento 1 au cours de la [migration des données](data.md). Ces tables de déploiement et déclencheurs sont essentiels pour vous assurer que vous migrez uniquement les modifications apportées dans Magento 1 depuis la dernière migration des données. Ces modifications sont les suivantes :
 
-* Données ajoutées par les clients via [storefront](https://glossary.magento.com/storefront) (création de commandes, de révisions et de modifications dans les profils client)
+* Données que les clients ont ajoutées via storefront (commandes, révisions et modifications créées dans les profils client)
 
-* Toutes les opérations avec des commandes, des produits et des catégories dans la variable [Administration](https://glossary.magento.com/magento-admin) panel
+* Toutes les opérations avec commandes, produits et catégories dans le panneau d’administration
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Où :
 
 Dans le `Delta` , [!DNL Data Migration Tool] migre les données créées uniquement par les modules du Magento lui-même et n’est pas responsable du code ni des extensions effectuées par des développeurs tiers. Si ces extensions ont créé des données dans la base de données storefront et que le commerçant souhaite que ces données soient dans le Magento 2 — fichiers de configuration de la variable [!DNL Data Migration Tool] doivent être créés et modifiés en conséquence.
 
-Si [extension](https://glossary.magento.com/extension) possède ses propres tables. Vous devez suivre leurs modifications pour la migration delta. Procédez comme suit :
+Si une extension possède ses propres tables et que vous devez suivre leurs modifications pour la migration delta, procédez comme suit :
 
 1. Ajoutez les tables à tracker dans le `deltalog.xml` fichier
 1. Créez une classe delta supplémentaire qui étend la variable `Migration\App\Step\AbstractDelta`

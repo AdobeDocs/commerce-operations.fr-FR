@@ -1,9 +1,9 @@
 ---
 title: Configuration de l’application
 description: Découvrez la configuration post-installation requise pour les déploiements sur site d’Adobe Commerce et de Magento Open Source.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Si vous utilisez le serveur web Apache, vous devez activer les réécritures du 
 
 Si vous avez plusieurs noeuds web, vous pouvez : *cannot* utilisez la mise en cache de fichier par défaut de l’application, car il n’existe aucune synchronisation entre les noeuds web. En d’autres termes, l’activité sur un noeud web n’est écrite que dans le système de fichiers de ce noeud web. L’activité suivante, si elle est exécutée sur un autre noeud web, peut entraîner l’écriture de fichiers inutiles ou entraîner des erreurs.
 
-À la place, utilisez [Redis](../../configuration/cache/config-redis.md) pour les deux valeurs par défaut [cache](https://glossary.magento.com/cache) et le cache de la page.
+À la place, utilisez [Redis](../../configuration/cache/config-redis.md) pour le cache par défaut et le cache de page.
 
 ## Paramètres du serveur
 

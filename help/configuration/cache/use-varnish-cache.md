@@ -1,9 +1,9 @@
 ---
 title: Nettoyage du cache avec vernis
 description: Découvrez comment l’effacement de la mémoire cache fonctionne avec le vernis et comment l’utiliser comme accélérateur de mise en cache web pour l’application Adobe Commerce.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ Cette rubrique aborde les principes de base de l’utilisation du vernis comme a
 
 ## Purge de vernis
 
-Selon [Documentation en pointillé](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *purge* est ce qui se passe lorsque vous sélectionnez un objet dans la variable [cache](https://glossary.magento.com/cache) et le jetez avec ses variantes.&quot; Une purge de vernis est similaire à une commande de nettoyage du cache (ou en cliquant sur **Vider le cache du Magento** dans Admin).
+Selon [Documentation en pointillé](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *purge* c’est ce qui se passe lorsque vous sélectionnez un objet du cache et le jetez avec ses variantes.&quot; Une purge de vernis est similaire à une commande de nettoyage du cache (ou en cliquant sur **Vider le cache du Magento** dans Admin).
 
 En fait, lorsque vous nettoyez, videz ou actualisez le cache Commerce, Varnish purge également.
 
 Une fois que vous avez installé et configuré Varnish pour qu’il fonctionne avec Commerce, les actions suivantes peuvent entraîner une purge de vernis :
 
-- Maintien d’un [site web](https://glossary.magento.com/website).
+- Maintenance d’un site web.
 
    Par exemple, tout ce que vous faites dans l’Admin de :
 
@@ -47,7 +47,7 @@ Vous pouvez utiliser le paramètre facultatif. `--http-cache-hosts` pour spécif
 
 Le format du paramètre doit être `<hostname or ip>:<listen port>`, où vous pouvez omettre `<listen port>` s’il s’agit du port 80.
 
-Par exemple,
+Par exemple :
 
 ```bash
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081

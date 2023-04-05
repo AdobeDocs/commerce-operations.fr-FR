@@ -1,9 +1,9 @@
 ---
 title: Conditions préalables au déploiement
 description: Consultez la liste des conditions préalables au déploiement de Commerce dans un système de développement, de création ou de production.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Les autorisations et la propriété des fichiers doivent être cohérentes entre
 
 - Tous les éléments suivants :
 
-   - Configurez la même [propriétaire du système de fichiers](https://glossary.magento.com/magento-file-system-owner) nom d’utilisateur sur tous les systèmes
+   - Configuration du même nom d’utilisateur du propriétaire du système de fichiers sur tous les systèmes
    - Assurez-vous que le serveur web s’exécute comme le même utilisateur sur tous les systèmes.
    - Assurez-vous que le propriétaire du système de fichiers se trouve dans le groupe de serveurs Web sur tous les systèmes.
 

@@ -1,9 +1,9 @@
 ---
 title: Vérification finale
 description: Vérifiez que la configuration de vernis est configurée correctement pour fonctionner avec l’application Adobe Commerce.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Utilisation `curl` ou un autre utilitaire permettant d’afficher des en-têtes 
 
 Tout d’abord, assurez-vous que vous utilisez [mode développeur](../cli/set-mode.md#change-to-developer-mode); sinon, les en-têtes ne s’affichent pas.
 
-Par exemple,
+Par exemple :
 
 ```bash
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
@@ -39,7 +39,7 @@ X-Magento-Cache-Debug: MISS
 
 ## Vérifier les temps de chargement des pages
 
-Si Varnish fonctionne, toute page Commerce avec des blocs pouvant être mis en cache doit se charger en moins de 150 ms. Par exemple, la porte d’entrée et [storefront](https://glossary.magento.com/storefront) [category](https://glossary.magento.com/category) pages.
+Si Varnish fonctionne, toute page Commerce avec des blocs pouvant être mis en cache doit se charger en moins de 150 ms. Les pages de catégorie de la porte d’entrée et du storefront sont des exemples de ces pages.
 
 Utilisez un inspecteur de navigateur pour mesurer le temps de chargement des pages.
 
@@ -66,7 +66,7 @@ Par exemple, pour utiliser l’Inspecteur Chrome :
 
 Assurez-vous que la variable `<magento_root>/var/page_cache` Le répertoire est vide :
 
-1. Connectez-vous à votre serveur Commerce ou passez à l’ [propriétaire du système de fichiers](https://glossary.magento.com/magento-file-system-owner).
+1. Connectez-vous à votre serveur Commerce ou passez au propriétaire du système de fichiers.
 1. Saisissez la commande suivante :
 
    ```bash

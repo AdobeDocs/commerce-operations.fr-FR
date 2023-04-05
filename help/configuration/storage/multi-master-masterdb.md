@@ -1,9 +1,9 @@
 ---
 title: Configuration automatique des bases de données principales
 description: Consultez les conseils sur la configuration automatique de la solution de base de données partagée.
-source-git-commit: d029d1ac66bff2ac34b22b2d3b8aafbfc062e082
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 Cette rubrique explique comment commencer à utiliser la solution de base de données partagée en procédant comme suit :
 
 1. Installation d’Adobe Commerce avec une seule base de données maître (nommée `magento`)
-1. Création de deux bases de données principales supplémentaires pour [passage en caisse](https://glossary.magento.com/checkout) et OMS (nommé `magento_quote` et `magento_sales`)
+1. Création de deux bases de données principales supplémentaires pour le passage en caisse et les OMS (nommés `magento_quote` et `magento_sales`)
 1. Configuration d’Adobe Commerce pour l’utilisation des bases de données de paiement et de vente
 
 >[!INFO]

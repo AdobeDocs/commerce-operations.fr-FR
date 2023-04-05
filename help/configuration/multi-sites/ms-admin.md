@@ -1,9 +1,9 @@
 ---
 title: Configuration de plusieurs sites web, magasins et vues de magasin dans l’administrateur
 description: Configurez d’autres sites web, magasins et vues de magasin dans l’administrateur Commerce.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Cette tâche nécessite de créer une catégorie racine (et d’autres catégori
 
 ## Étape 1 : Création de catégories racine
 
-La création d’une catégorie racine est facultative, mais nous vous montrons comment le faire dans ce tutoriel de la section [event](https://glossary.magento.com/event) vous souhaitez que chaque site web ait une catégorie racine unique. Vous pouvez créer d’autres catégories si vous le souhaitez.
+La création d’une catégorie racine est facultative, mais nous vous montrons comment le faire dans ce tutoriel lorsque vous souhaitez que chaque site web ait une catégorie racine unique. Vous pouvez créer d’autres catégories si vous le souhaitez.
 
 Pour créer une catégorie racine :
 

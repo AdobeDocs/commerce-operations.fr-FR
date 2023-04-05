@@ -1,9 +1,9 @@
 ---
 title: Paramètres de migration des données
 description: Découvrez comment commencer la migration des paramètres de Magento 1 vers Magento 2 avec le [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Où :
 
 >[!NOTE]
 >
->Cette commande ne migre pas tous les paramètres de configuration. Vérification de tous les paramètres du Magento 2 [Administration](https://glossary.magento.com/admin) avant de poursuivre.
+>Cette commande ne migre pas tous les paramètres de configuration. Vérifiez tous les paramètres de l’administrateur Magento 2 avant de continuer.
 
 
 Le `Migration completed` s’affiche une fois les paramètres transférés.

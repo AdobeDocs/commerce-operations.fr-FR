@@ -1,9 +1,9 @@
 ---
 title: Initialisation de l’application et amorçage
 description: Découvrez la logique d’initialisation et d’amorçage de l’application Commerce.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '863'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Lorsque la requête est redirigée vers le point d’entrée, l’application Co
 
 ### Point d’entrée de la ressource multimédia
 
-[Magento\MediaStorage\App\Media][media] récupère les ressources multimédias (c’est-à-dire tout fichier téléchargé dans le stockage multimédia) de la base de données. Il est utilisé chaque fois que la base de données est configurée comme [stockage multimédia](https://glossary.magento.com/media-storage).
+[Magento\MediaStorage\App\Media][media] récupère les ressources multimédias (c’est-à-dire tout fichier téléchargé dans le stockage multimédia) de la base de données. Il est utilisé chaque fois que la base de données est configurée comme un stockage multimédia.
 
 `\Magento\Core\App\Media` tente de trouver le fichier multimédia dans le stockage de base de données configuré et de l’écrire dans le `pub/static` , puis renvoyer son contenu. En cas d’erreur, il renvoie un code d’état HTTP 404 (Not Found) dans l’en-tête sans contenu.
 

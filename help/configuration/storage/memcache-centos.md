@@ -1,9 +1,9 @@
 ---
 title: Configuration de la mémoire mise en cache sur CentOS
 description: Installez et configurez memmis en cache sur CentOS.
-source-git-commit: 65060d067bbbfe139736df3800688ce897cb17be
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Pour installer le memcached sur CentOS, effectuez les tâches suivantes en tant 
 1. Modification du paramètre de configuration de la mémoire mise en cache pour `CACHESIZE` et `OPTIONS`:
 
    1. Ouvrir `/etc/sysconfig/memcached` dans un éditeur de texte.
-   1. Recherchez la valeur pour `CACHESIZE` et définissez-le sur au moins 1 Go. Par exemple :
+   1. Recherchez la valeur pour `CACHESIZE` et définissez-le sur au moins 1 Go. Par exemple :
 
       ```config
       CACHESIZE="1GB"
@@ -101,7 +101,7 @@ Pour vérifier que la mémoire mise en cache est reconnue par le serveur web :
 
 1. Accédez à cette page dans votre navigateur web.
 
-   Par exemple, `http://192.0.2.1/phpinfo.php`
+   Par exemple : `http://192.0.2.1/phpinfo.php`
 
 1. Assurez-vous que memcache s’affiche comme suit :
 
@@ -113,7 +113,7 @@ Si memcache ne s’affiche pas, redémarrez le serveur web et actualisez la page
 
 ### Créez un test memcache constitué d’une base de données MySQL et d’un script PHP.
 
-Le test utilise une base de données, un tableau et des données MySQL pour vérifier que vous pouvez récupérer les données de la base de données et les stocker dans le cache mémoire. Un script PHP recherche d’abord la variable [cache](https://glossary.magento.com/cache). Si le résultat n’existe pas, le script interroge la base de données. Une fois la requête remplie par la base de données d’origine, le script stocke le résultat dans memcache, à l’aide de la fonction `set` .
+Le test utilise une base de données, un tableau et des données MySQL pour vérifier que vous pouvez récupérer les données de la base de données et les stocker dans le cache mémoire. Un script PHP recherche d’abord le cache. Si le résultat n’existe pas, le script interroge la base de données. Une fois la requête remplie par la base de données d’origine, le script stocke le résultat dans memcache, à l’aide de la fonction `set` .
 
 [Plus d’informations sur ce test](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
 

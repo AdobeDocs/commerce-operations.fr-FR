@@ -1,9 +1,9 @@
 ---
 title: Configuration de Nginx pour votre moteur de recherche
 description: Pour configurer un moteur de recherche avec le serveur web Nginx pour les installations sur site d’Adobe Commerce et de Magento Open Source, procédez comme suit.
-source-git-commit: d3cfd97450164d38fd340b538099739601573d64
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ include /etc/nginx/conf.d/*.conf;
 
 ### Configuration de nginx en tant que proxy
 
-Cette section explique comment spécifier qui peut accéder au [nginx](https://glossary.magento.com/nginx) serveur.
+Cette section explique comment spécifier qui peut accéder au serveur nginx.
 
 1. Utilisation d’un éditeur de texte pour créer un fichier `/etc/nginx/conf.d/magento_es_auth.conf` avec les contenus suivants :
 

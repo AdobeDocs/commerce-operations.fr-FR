@@ -1,9 +1,9 @@
 ---
 title: Présentation de la migration
 description: Découvrez comment commencer la migration des données de Magento 1 vers Magento 2 avec le [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Lors du processus de migration, suivez les règles générales suivantes pour r�
 
 1. **Ne pas** Apportez des modifications à l’administrateur Magento 1, à l’exception de la gestion des commandes (expédition, création de factures et d’annotations de crédit).
 1. **Ne pas** modifier n’importe quel code ;
-1. **Ne pas** Apportez des modifications à l’administrateur Magento 2 et [storefront](https://glossary.magento.com/storefront)
+1. **Ne pas** Apportez des modifications à l’administrateur et au storefront de Magento 2.
 
 >[!TIP]
 >

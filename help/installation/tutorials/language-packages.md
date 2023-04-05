@@ -1,9 +1,9 @@
 ---
 title: Désinstallation des packages de langue
 description: Pour désinstaller un package de langue Adobe Commerce ou Magento Open Source, procédez comme suit.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Cette section explique comment désinstaller un ou plusieurs packages de langue, y compris le code des packages de langue du système de fichiers. Vous pouvez d’abord créer des sauvegardes afin de pouvoir restaurer les données ultérieurement.
 
-Cette commande désinstalle *only* modules de langue spécifiés dans `composer.json`; en d’autres termes, les modules de langue fournis comme [Compositeur](https://glossary.magento.com/composer) modules. Si votre [package de langue](https://glossary.magento.com/language-package) n’est pas un module de compositeur, vous devez le désinstaller manuellement en supprimant le code de module de langue du système de fichiers.
+Cette commande désinstalle *only* modules de langue spécifiés dans `composer.json`; en d’autres termes, les modules de langue fournis en tant que modules du compositeur. Si votre module de langue n’est pas un module du compositeur, vous devez le désinstaller manuellement en supprimant le code du module de langue du système de fichiers.
 
 Vous pouvez restaurer des sauvegardes à tout moment à l’aide de la variable [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) .
 
@@ -31,7 +31,7 @@ La commande de désinstallation du module de langue effectue les tâches suivant
 
 1. If `--backup code` est spécifié, sauvegardez le système de fichiers (à l’exception de `var` et `pub/static` répertoires) vers `var/backups/<timestamp>_filesystem.tgz`
 1. Supprime les fichiers de modules de langue du code base à l’aide de `composer remove`.
-1. Nettoie la variable [cache](https://glossary.magento.com/cache).
+1. Nettoie le cache.
 
 Par exemple, si vous tentez de désinstaller un module de langue dont dépend un autre module de langue, le message suivant s’affiche :
 

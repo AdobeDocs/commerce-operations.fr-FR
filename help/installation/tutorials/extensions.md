@@ -1,9 +1,9 @@
 ---
 title: Installer une extension
 description: Pour installer une extension Adobe Commerce ou Magento Open Source, procédez comme suit.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -16,12 +16,12 @@ Le code qui étend ou personnalise le comportement d’Adobe Commerce et de Mage
 Les extensions incluent :
 
 - Modules (extension des fonctionnalités Adobe Commerce et Magento Open Source)
-- Thèmes (changer l’aspect de vos [storefront](https://glossary.magento.com/storefront) et Admin)
+- Thèmes (modifiez l’aspect de votre storefront et de votre administrateur)
 - Packages de langue (localisez le storefront et l’administrateur)
 
 >[!TIP]
 >
->Cette rubrique explique comment utiliser la ligne de commande pour installer les extensions que vous achetez sur le Commerce Marketplace. Vous pouvez utiliser la même procédure pour installer _any_ extension; tout ce dont vous avez besoin est le [Compositeur](https://glossary.magento.com/composer) nom et version. Pour le trouver, ouvrez le fichier `composer.json` et notez les valeurs de `"name"` et `"version"`.
+>Cette rubrique explique comment utiliser la ligne de commande pour installer les extensions que vous achetez sur le Commerce Marketplace. Vous pouvez utiliser la même procédure pour installer _any_ extension; tout ce dont vous avez besoin est le nom et la version du compositeur de l’extension. Pour le trouver, ouvrez le fichier `composer.json` et notez les valeurs de `"name"` et `"version"`.
 
 Avant l’installation, vous pouvez :
 
@@ -85,7 +85,7 @@ Ajoutez le nom et la version de l’extension à votre `composer.json` fichier :
    composer require <component-name>:<version>
    ```
 
-   Par exemple,
+   Par exemple :
 
    ```bash
    composer require j2t/module-payplug:2.0.2

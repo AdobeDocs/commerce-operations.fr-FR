@@ -1,9 +1,9 @@
 ---
 title: Définition des valeurs de configuration
 description: Découvrez comment définir des valeurs de configuration et modifier des valeurs verrouillées dans Admin.
-source-git-commit: cb8edb8de8f8419e9992b180ea927ba55cbd839b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Vous pouvez définir des valeurs aux moments suivants :
 
 - Avant d’installer Commerce, vous pouvez définir des valeurs de configuration pour la portée par défaut uniquement, car il s’agit de la seule portée valide.
 
-- Après avoir installé Commerce, vous pouvez définir des valeurs de configuration pour n’importe quel site web ou [vue de magasin](https://glossary.magento.com/store-view) portée.
+- Après avoir installé Commerce, vous pouvez définir des valeurs de configuration pour n’importe quel site web ou stocker la portée de la vue.
 
 Utilisez les commandes suivantes :
 

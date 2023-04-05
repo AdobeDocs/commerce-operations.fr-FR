@@ -1,9 +1,9 @@
 ---
 title: Configuration de la mémoire mise en cache sur Ubuntu
 description: Installez et configurez memcached sur Ubuntu.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Pour vérifier que memcached est reconnu par le serveur web :
    phpinfo();
    ```
 
-1. Accédez à cette page dans votre navigateur web. Par exemple :
+1. Accédez à cette page dans votre navigateur web. Par exemple :
 
    ```http
    http://192.0.2.1/phpinfo.php
@@ -94,7 +94,7 @@ Pour vérifier que memcached est reconnu par le serveur web :
 
 ### Vérifier que les données mises en cache peuvent être mises en cache
 
-Ce test utilise un script PHP pour vérifier que la mémoire mise en cache peut être stockée et récupérée. [cache](https://glossary.magento.com/cache) data.
+Ce test utilise un script PHP pour vérifier que la mémoire mise en cache peut stocker et récupérer les données du cache.
 
 Pour plus d’informations sur ce test, voir [Tutoriel sur l’installation et l’utilisation de Memcache sur Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
 

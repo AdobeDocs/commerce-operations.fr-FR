@@ -1,9 +1,9 @@
 ---
 title: Dictionnaires de traduction et packages de langue
 description: Découvrez comment générer des dictionnaires de traduction et créer des packages de langue.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1503'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Voir [Présentation des traductions].
 
 ## Générer un dictionnaire de traduction
 
-Vous pouvez générer une [dictionnaire de traduction] pour personnaliser des chaînes existantes, traduire des mots et des expressions dans un module personnalisé, localiser un thème ou créer [packages de langue](https://glossary.magento.com/language-package).
+Vous pouvez générer une [dictionnaire de traduction] pour personnaliser des chaînes existantes, traduire des mots et des expressions dans un module personnalisé, localiser un thème ou créer des modules de langue.
 
 Pour commencer la traduction, utilisez une commande pour générer un fichier CSV de dictionnaire avec une liste collectée de tous les mots et expressions existants.
 
@@ -63,7 +63,7 @@ Suivez les instructions ci-dessous pour traduire des mots et des expressions :
 - Lors de la création de dictionnaires pour les paramètres régionaux, utilisez les chaînes Commerce par défaut.
 - Lors de la traduction, prêtez attention aux espaces réservés : `%1`, `%2`
 
-Commerce utilise des espaces réservés pour insérer des valeurs contextuelles ; they are _not_ utilisé pour les traductions. Par exemple :
+Commerce utilise des espaces réservés pour insérer des valeurs contextuelles ; they are _not_ utilisé pour les traductions. Par exemple :
 
 ```text
 Product '%1' has been added to shopping cart.
@@ -92,7 +92,7 @@ Cette section explique comment créer un module de langue, qui écrit des fichie
 1. [Collecte et traduction de mots et d’expressions](#generate-a-translation-dictionary). (La variable `--magento` est obligatoire.)
 1. [Exécution de la commande du module de langue](#run-the-language-package-command).
 1. [Création de répertoires et de fichiers](#create-directories-and-files).
-1. (Facultatif.) [Configuration de plusieurs packages pour une langue](#configure-multiple-packages-for-a-language).
+1. (Facultatif) [Configuration de plusieurs packages pour une langue](#configure-multiple-packages-for-a-language).
 
 ### Exécution de la commande du module de langue
 
@@ -139,7 +139,7 @@ Pour créer ces fichiers :
 
 Lors de la déclaration d’un module de langue dans la variable `language.xml` fichier de configuration, vous devez spécifier la séquence d’héritage de langue pour ce module.
 
-L’héritage de langue vous permet de créer une traduction appelée _child_ sur la base d’une traduction existante appelée _parent_. Les traductions enfants remplacent le parent. Cependant, si la traduction enfant ne parvient pas à charger ou à afficher ou si une expression ou un mot manque, Commerce utilise le parent [locale](https://glossary.magento.com/locale). [Exemples d’héritage de package de langue](#example-of-language-inheritance).
+L’héritage de langue vous permet de créer une traduction appelée _child_ sur la base d’une traduction existante appelée _parent_. Les traductions enfants remplacent le parent. Cependant, si le téléchargement ou l’affichage de la traduction enfant échoue ou si une expression ou un mot manque, Commerce utilise le paramètre régional parent. [Exemples d’héritage de package de langue](#example-of-language-inheritance).
 
 Pour déclarer un package, indiquez les informations suivantes :
 
@@ -247,7 +247,7 @@ Comme dans l’exemple précédent, générez un fichier CSV, mais au lieu de sp
 
 1. Créez un répertoire pour le module de langue.
 
-   Par exemple, `/var/www/html/magento2/app/i18n/ExampleCorp/xx_yy`
+   Par exemple : `/var/www/html/magento2/app/i18n/ExampleCorp/xx_yy`
 
 1. Dans ce répertoire, ajoutez tous les éléments suivants :
 

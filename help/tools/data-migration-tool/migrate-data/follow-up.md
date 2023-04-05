@@ -1,9 +1,9 @@
 ---
 title: Suivi de la migration des données
 description: Découvrez comment vérifier que la migration des données de votre Magento 1 vers Magento 2 a réussi et que toutes les fonctionnalités fonctionnent comme prévu.
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Les numéros de référence des commandes, factures, envois, notes de crédit et
 
 ### Réenregistrement des segments client [Adobe Commerce uniquement]
 
-Après la migration, les segments du client doivent être récupérés dans la variable [Administration](https://glossary.magento.com/admin) Panneau pour les mettre en service.
+Après la migration, les segments client doivent être récupérés à partir du panneau d’administration pour qu’ils soient opérationnels.
 
 ### Configuration du fuseau horaire
 

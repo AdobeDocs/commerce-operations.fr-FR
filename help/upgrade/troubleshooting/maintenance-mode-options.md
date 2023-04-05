@@ -1,9 +1,9 @@
 ---
 title: Options du mode de maintenance pour la mise à niveau
-description: 'Créez une page de mode de maintenance personnalisée que vos clients voient sur votre vitrine Adobe Commerce ou Magento Open Source pendant l’exécution d’une mise à niveau. '
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+description: Créez une page de mode de maintenance personnalisée que vos clients voient sur votre vitrine Adobe Commerce ou Magento Open Source pendant l’exécution d’une mise à niveau.
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Cette section explique comment créer une page de maintenance personnalisée et 
 
 Pour rediriger le trafic vers une page de maintenance personnalisée :
 
-1. Utilisez un éditeur de texte pour ouvrir la [nginx](https://glossary.magento.com/nginx) fichier de configuration contenant votre bloc de serveur.
+1. Utilisez un éditeur de texte pour ouvrir le fichier de configuration nginx contenant votre bloc de serveur.
 1. Ajoutez ce qui suit au bloc de serveur (`server` s’affiche pour plus de clarté uniquement ; n’ajoutez pas de deuxième bloc de serveur).
 
    Les listes autorisées suivantes  les adresses IP 192.0.2.110 et 192.0.2.115 sur un système sur lequel Magento est installé dans `/var/www/html/magento2`:
