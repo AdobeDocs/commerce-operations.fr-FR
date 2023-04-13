@@ -1,9 +1,9 @@
 ---
 title: Gestion des indexeurs
 description: Consultez des exemples d’affichage et de gestion des indexeurs de commerce.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: a7ead687c681914d90e9ed2680c8f7494eba74d4
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -120,6 +120,10 @@ Vous pouvez exécuter les index suivants en mode parallèle :
 - `Category Product` peut être mis en parallèle par les vues des magasins.
 - `Catalog Price` peut être mis en parallèle par le site web et les groupes de clients.
 - `Catalog Permissions` peut être mis en parallèle par des groupes de clients.
+
+>[!INFO]
+>
+>La mise en parallèle pour la recherche catalogue, le texte intégral et le produit de catégorie est activée par défaut.
 
 Pour utiliser la mise en parallèle, définissez l’un des modes de dimensions disponibles pour l’indexeur de prix de produit :
 
