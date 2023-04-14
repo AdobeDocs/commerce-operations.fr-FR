@@ -2,9 +2,9 @@
 title: Régions de l’infrastructure cloud
 description: Examinez les diagrammes qui affichent les régions AWS et Azure disponibles pour Adobe Commerce.
 exl-id: d8f59845-8281-4c9f-8101-51f9c35a0455
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: d387ca9f3c7ce3b0c8ce254cc1c056e5b244ed34
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '72'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Les sections suivantes fournissent des détails sur les différentes régions AW
 
 ## Régions AWS
 
-![Diagramme affichant les régions AWS](../../../assets/playbooks/aws-regions.svg)
+![Diagramme affichant les régions AWS](../../../assets/playbooks/aws-regions.png)
 
 >[!NOTE]
 >
@@ -23,8 +23,8 @@ Les sections suivantes fournissent des détails sur les différentes régions AW
 
 ## Régions Azure
 
-![Diagramme présentant les régions Azure](../../../assets/playbooks/azure-regions.svg)
+![Diagramme présentant les régions Azure](../../../assets/playbooks/azure-regions.png)
 
 >[!NOTE]
 >
-> Seulement sur place en Chine et en Russie.
+> Seulement sur place en Chine et en Russie. Tous les commerçants qui nécessitent des environnements d’intégration doivent utiliser les régions américaines.
