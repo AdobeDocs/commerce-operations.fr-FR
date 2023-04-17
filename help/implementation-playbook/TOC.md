@@ -2,9 +2,9 @@
 user-guide-title: Manuel de mise en oeuvre
 user-guide-description: Découvrez les stratégies de planification et de mise en oeuvre d’un site Adobe Commerce performant.
 mini-toc-levels: 3
-source-git-commit: 5559d412ab58d392098cfff7a4cabb473c38cb0d
+source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,13 @@ ht-degree: 0%
       - [Architecture sans affichage](architecture/headless/adobe-commerce.md)
 - Infrastructure et déploiement {#infrastructure}
    - [Présentation](infrastructure/overview.md)
-   - [Infrastructure sur site](infrastructure/on-premises.md)
+   - Auto-hébergement {#self-hosting}
+      - [Présentation](infrastructure/self-hosting/overview.md)
+      - [Infrastructure sur site](infrastructure/self-hosting/on-premises.md)
+      - [Concepts de sécurité](infrastructure/self-hosting/security-concepts.md)
+      - [Surveillance de la télémétrie et des outils](infrastructure/self-hosting/monitoring-tools.md)
+      - [Idées de reprise sur sinistre](infrastructure/self-hosting/disaster-recovery-ideas.md)
+      - [Conseils sur les performances](infrastructure/self-hosting/performance-tips.md)
    - infrastructure cloud {#cloud}
       - [Présentation](infrastructure/cloud/overview.md)
       - [Régions](infrastructure/cloud/regions.md)
