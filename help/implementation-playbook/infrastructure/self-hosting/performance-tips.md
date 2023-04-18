@@ -7,9 +7,9 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 66abe9f234aa44f7e07cc024607eeb6591a99d07
+source-git-commit: ab099b2a8a353c2462424831cf8100e7e281b1be
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Avant de désactiver les modules inutilisés, assurez-vous de ne pas avoir de te
 
 ## Exiger que les normes de codage Adobe Commerce et PHP soient respectées pour chaque requête de tirage
 
-Adobe Commerce comporte un ensemble de [Normes de codage](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. Elles permettent de s’assurer qu’un modèle, un style et une conception similaires sont suivis quel que soit le type de développement logiciel. S’il s’agit d’une obligation d’absence, c’est lors de la contribution au code base d’Adobe Commerce. Cependant, le fait de suivre cette méthodologie pour le développement personnalisé constitue également une pierre angulaire solide à laquelle tous les développeurs peuvent s’attendre, actuels et futurs. Lorsque vous demandez à toutes les demandes d’extraction de transmettre une norme de code, assurez-vous que tout le monde peut comprendre et s’attendre aux mêmes modèles de développement cohérents.
+Adobe Commerce comporte un ensemble de [Normes de codage](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. Elles permettent de s’assurer qu’un modèle, un style et une conception similaires sont suivis quel que soit le type de développement logiciel. Lorsque vous contribuez au code base Adobe Commerce, il s’agit d’une exigence. Cependant, si vous choisissez de suivre cette méthodologie pour le développement personnalisé, vous devez établir une pierre angulaire solide pour tous les développeurs, actuels et futurs. Lorsque vous demandez à toutes les demandes d’extraction de transmettre une norme de code, assurez-vous que tout le monde peut comprendre et s’attendre aux mêmes modèles de développement cohérents.
 
 Pour accompagner les normes de codage Adobe Commerce, l’autre base utilisée est les normes de codage de base PHP. Elle doit être clairement définie dans votre développeur afin de déterminer les normes que vous devez respecter et tout écart acceptable. Cependant, une solution de secours doit être apportée au guide géré publiquement qui se trouve à l’adresse [PHP-FIG](https://www.php-fig.org){target="_blank"}.
 
