@@ -1,9 +1,9 @@
 ---
 title: "Le [!UICONTROL Summary] tab"
 description: En savoir plus sur les [!UICONTROL Summary] de [!DNL Observation for Adobe Commerce].
-source-git-commit: 61d0de370cbfa02f5fcc7d20ad283c54357294a3
+source-git-commit: 1d4e6ee745b656f0bc291a479e1d5bac5c8504e3
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Le **[!UICONTROL Swap memory free in bytes]** frame affiche, par noeud, la quant
 
 ![Pourcentage du processeur par hôte](../../assets/tools/cpu-percent-by-host.jpg)
 
-L’agrégat de tous les environnements et noeuds s’affiche dans la variable **[!UICONTROL CPU % by host]** cadre. Vous devez désélectionner les environnements hors production. Notez également toutes les instances où tous les noeuds de l’environnement de production ne sont pas présents. Pour plus d’informations sur l’utilisation élevée du processeur, reportez-vous à la section [Dépannage des performances à l’aide de la nouvelle version sur Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
+L’agrégat de tous les environnements et noeuds s’affiche dans la variable **[!UICONTROL CPU % by host]** cadre. Vous devez désélectionner les environnements hors production. Notez également toutes les instances où tous les noeuds de l’environnement de production ne sont pas présents. Pour plus d’informations sur l’utilisation élevée du processeur, reportez-vous à la section [Dépannage des performances à l’aide de New Relic sur Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -363,7 +363,7 @@ Le **[!UICONTROL Order transactions (default?)]** frame recherche les transactio
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![informations d’index de recherche flexible](../../assets/tools/elasticsearch-index-information.jpg)
+![informations d’index de recherche flexible](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
 **[Statuts des Elasticsearch :](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
 
