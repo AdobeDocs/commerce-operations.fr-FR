@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Site-Wide Analysis Tool]"
 description: En savoir plus sur les [!DNL Site-Wide Analysis] Outil, ses utilisations, le processus d’installation et comment y accéder
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 3801cb9cf8cdf00d450347e8fd023a18ec60bf54
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,14 @@ Voir [vidéo d’introduction](https://www.youtube.com/watch?v=KW2R8ki_RG4) pour
 
 ## Présentation de l’outil
 
-- **Tableau de bord** - Affiche l’intégrité globale de votre système avec des notifications des problèmes détectés et des recommandations spécifiques par priorité. Il comprend également un graphique historique pour suivre l’évolution de l’intégrité de votre site web au fil du temps.
+- **Tableau de bord**
+   - Affiche l’intégrité globale de votre système avec des notifications des problèmes détectés et des recommandations spécifiques par priorité.<br>
+Il comprend également un graphique historique pour suivre l’évolution de l’intégrité de votre site web au fil du temps.
+   - Affiche la variable **[!UICONTROL Security Center Widget]** qui permet d&#39;accéder :
+      - [Tech [!DNL Stack] Conformité aux versions avec [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+      - [Bulletin de sécurité Adobe](https://helpx.adobe.com/security/security-bulletin.html)
+      - [Recommendations à partir de [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html)
+      - [[!DNL Site-Wide Analysis Tool] Recommendations de sécurité des bonnes pratiques](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html)
 
 - **Informations** - Fournit les coordonnées du client et un résumé des tickets en cours, avec des informations détaillées sur chaque produit Adobe Commerce installé.
 
@@ -34,9 +41,11 @@ Voir [vidéo d’introduction](https://www.youtube.com/watch?v=KW2R8ki_RG4) pour
 
 ## Intégrations à d’autres outils de support Adobe Commerce
 
-Affichez toutes les informations importantes sur votre site à un seul endroit. [!DNL Site-Wide Analysis Tool] vous permet d’obtenir un accès direct aux informations et depuis la [!DNL Security Scan Tool], [!DNL Upgrade Compatability Tool], et [!DNL Managed Alerts].
+Affichez toutes les informations importantes sur votre site à un seul endroit. [!DNL Site-Wide Analysis Tool] vous permet d’obtenir un accès direct aux informations et depuis la [!UICONTROL Security Center Widget], [!DNL Upgrade Compatability Tool], et [!DNL Managed Alerts].
 
-- [**[!DNL Security Scan Tool]**](https://docs.magento.com/user-guide/magento/security-scan.html) - Fournit aux clients Adobe Commerce et Magento Open Source des informations en temps réel sur l’état de sécurité de leur boutique en détectant de manière proactive les logiciels malveillants et en leur indiquant si leur boutique est compromise.
+- [**[!UICONTROL Security Center Widget]**] - Affiche des informations de sécurité pour votre site.<br>
+Les informations de sécurité affichées sont les suivantes : [Tech [!DNL Stack] Conformité aux versions avec [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html), [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html), and [[!DNL Site-Wide Analysis Tool] Recommendations de sécurité des bonnes pratiques](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html).<br>
+Le [[!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) fournit aux clients Adobe Commerce et Magento Open Source des informations en temps réel sur l’état de sécurité de leur boutique en détectant de manière proactive les logiciels malveillants et en leur indiquant si leur boutique est compromise.
 
 - [**[!DNL Upgrade Compatability Tool]**](../../upgrade/upgrade-compatibility-tool/overview.md) : exécute l’instance personnalisée Adobe Commerce par rapport à la version de mise à niveau cible et renvoie un résumé des problèmes critiques, des erreurs et des avertissements qui doivent être résolus, ce qui rend le processus d’analyse de mise à niveau plus facile, plus rapide et moins coûteux.
 
