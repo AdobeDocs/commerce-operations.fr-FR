@@ -1,9 +1,9 @@
 ---
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
-source-git-commit: ef501b34947f24f8028bd5876bd4a167551e03ec
+source-git-commit: ab9d80140833e2d21feffe04a73fcd8ac5f1e980
 workflow-type: tm+mt
-source-wordcount: '11914'
+source-wordcount: '11946'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACSD-50276** (pour Adobe Commerce >=2.4.0 &lt;2.4.7) - Correction du problème en raison duquel le formulaire d’enregistrement du client ne fonctionnait pas sur le storefront si un attribut de client à sélection multiple était créé.
 * **ACSD-50527** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) : corrige l’erreur qui se produit lors de l’enregistrement d’une page avec un bloc dynamique vide.
 * **ACSD-49973** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.5) - Améliore les performances de récupération des produits regroupés via GraphQL.
+* **ACSD-51114** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction du problème en raison duquel un produit aléatoire disparaissait des catalogues volumineux lorsque l’indexation asynchrone était activée. Améliore les performances de la réindexation asynchrone pour les catalogues volumineux.
 * **BB2B-2598** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Ajout de la fonctionnalité de mise en cache à la variable [!UICONTROL availableStores], [!UICONTROL countries], [!UICONTROL country], [!UICONTROL currency], et [!UICONTROL storeConfig] Requêtes GraphQL.
 * Ajout de nouvelles versions pour MDVA-42806, ACSD-48627, ACSD-46815.
 * Mise à jour des métadonnées de correctifs pour ACSD-49773, ACSD-47179, ACSD-48300.
