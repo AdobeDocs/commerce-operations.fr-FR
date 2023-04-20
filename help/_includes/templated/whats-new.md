@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7dca677d6bde3f2700de5dc527a0f581e06032ad
+source-git-commit: 8bf5cb032671bbb1cd6ff05d4a26c699592d33db
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '1058'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 0%
 ## Nouveautés
 
 Découvrez la nouvelle documentation et les mises à jour importantes de la documentation existante.
+
+### 19 avril 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout d’informations sur un nouveau correctif publié pour un problème connu de la version 2.4.6. Voir <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Notes de mise à jour d’Adobe Commerce et de Magento Open Source</a>.</p>
+</td>
+      <td>technique</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fdbb0959b615689eba3068bc93c4c9876c7a7972">fdbb09</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Ajout d’informations à propos du <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard.html">Widget du centre de sécurité</a> dans le tableau de bord de l’outil d’évaluation à l’échelle du site.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1e84ee6db07ec9080971de22a24fe8a7d8705916">1e84ee</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 17 avril 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout d’une <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/self-hosting/overview.html">nouvelle section</a> à propos des concepts d’auto-hébergement, notamment les performances, la sécurité, la surveillance et la reprise sur sinistre.</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/699c512de9c6d28ba354f02b4db76975eb5410a9">699c51</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 12 avril 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Publié <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">notes de mise à jour</a> pour la version 1.1.30 du package de l’outil de correctifs de qualité (QPT).</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/84ed7dd2c24eef437d6719d9758da43423347eeb">84ed7d</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 5 avril 2023
 
