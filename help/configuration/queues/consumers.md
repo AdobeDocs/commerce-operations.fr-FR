@@ -1,9 +1,9 @@
 ---
 title: Consommateurs de files d'attente de messages
 description: Découvrez les clients de la file d’attente des messages d’Adobe Commerce et de Magento Open Source, notamment les fonctionnalités et les paramètres de configuration système qui leur sont associés.
-source-git-commit: 1006a5761849b1d455469c6dfcb79a66cb90ec40
+source-git-commit: f9db986510a3ec8e62b9d628da40fdfd9741479f
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '972'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,8 @@ Le tableau suivant identifie tous les consommateurs de la file d’attente de me
 | Crée des messages pour chaque tâche d’une [opération en bloc](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/), comme l’importation ou l’exportation d’articles, la modification des prix à grande échelle et l’affectation de produits à un entrepôt. Obligatoire lorsque la variable [**[!UICONTROL Admin bulk operations]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html?#admin-bulk-operations) est définie sur **[!UICONTROL Run asynchronously]**dans les paramètres de configuration du système d’administration. |  |  |  |
 | `codegeneratorProcessor` | + | + | + |
 | Génère de manière asynchrone des coupons en arrière-plan. Requis pour utiliser la variable [génération de bons par lots](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html#method-2%3A-generate-a-batch-of-coupons) fonction . |  |  |  |
+| `commerce.eventing.event.publish` | + | + |  |
+| Vérifie les événements qui ont été enregistrés en priorité dans [Événements d’Adobe I/O pour Adobe Commerce](https://developer.adobe.com/commerce/events/get-started/). |
 | `exportProcessor` | + | + | + |
 | Empêche les délais de connexion pendant la [export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-export.html) de jeux de données volumineux (par exemple, 200 000 produits). |  |  |  |
 | `inventoryQtyCounter` | + | + |  |
