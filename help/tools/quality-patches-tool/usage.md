@@ -1,9 +1,10 @@
 ---
 title: Utilisation
 description: Découvrez comment utiliser le [!DNL Quality Patches Tool].
-source-git-commit: e35469adb1b3278cf787416e1bc829fae9979efc
+exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
+source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -17,7 +18,7 @@ Regardez ceci : [video technique](https://experienceleague.adobe.com/docs/commer
 
 >[!INFO]
 >
->Voir [Application de correctifs individuels](#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce ou Magento Open Source. Voir [Correctifs disponibles](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) pour consulter la liste complète des correctifs publiés.
+>Voir [Application de correctifs individuels](#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce ou Magento Open Source. Voir [[!DNL Quality Patches Tool]: Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) pour consulter la liste complète des correctifs publiés.
 
 >[!WARNING]
 >
@@ -60,7 +61,7 @@ Adobe Commerce 2.3.5.
 Le tableau d’état comprend :
 
 - **Type**:
-   - `Optional` — Tous les correctifs de l’événement [!DNL Quality Patches Tool] et le [Correctifs du cloud](https://devdocs.magento.com/cloud/project/project-patch.html) Les packages sont facultatifs pour les installations Adobe Commerce et Magento Open Source.
+   - `Optional` — Tous les correctifs de l’événement [!DNL Quality Patches Tool] et le [Guide d’infrastructure de Commerce on Cloud > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) Les packages sont facultatifs pour les installations Adobe Commerce et Magento Open Source.
    - `Deprecated` — Adobe a abandonné le correctif individuel. Si vous avez appliqué le correctif, nous vous recommandons de le rétablir. L’opération de rétablissement supprime également le correctif de la table des statuts.
 
 - **État**:
@@ -81,7 +82,7 @@ Le tableau d’état comprend :
 
 >[!WARNING]
 >
->Il est recommandé de tester tous les correctifs dans un environnement d’évaluation ou de développement avant de les déployer en production. Il est également recommandé de sauvegarder vos données avant d’appliquer un correctif. Voir [Sauvegarde et restauration du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>Il est recommandé de tester tous les correctifs dans un environnement d’évaluation ou de développement avant de les déployer en production. Il est également recommandé de sauvegarder vos données avant d’appliquer un correctif. Voir [Sauvegarde et restauration du système de fichiers, du média et de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Pour appliquer un seul correctif, exécutez la commande suivante lorsque `MAGETWO-XXXX` est l’identifiant du correctif spécifié dans le tableau d’état :
 
@@ -109,7 +110,7 @@ Vous devez nettoyer le cache après avoir appliqué des correctifs pour voir les
 
 >[!WARNING]
 >
->Il est recommandé de tester tous les correctifs dans un environnement d’évaluation ou de développement avant de les déployer en production. Il est également recommandé de sauvegarder vos données avant d’appliquer un correctif. Voir [Sauvegarde et restauration du système de fichiers](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>Il est recommandé de tester tous les correctifs dans un environnement d’évaluation ou de développement avant de les déployer en production. Il est également recommandé de sauvegarder vos données avant d’appliquer un correctif. Voir [Sauvegarde et restauration du système de fichiers, du média et de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Pour rétablir un seul correctif, exécutez la commande suivante où `MAGETWO-XXXX` est l’identifiant du correctif spécifié dans le tableau d’état :
 
