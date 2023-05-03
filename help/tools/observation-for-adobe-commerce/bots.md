@@ -1,9 +1,10 @@
 ---
-title: "Le [!UICONTROL bots] tab"
+title: Le [!UICONTROL bots] tab
 description: En savoir plus sur les [!UICONTROL bots] de [!DNL Observation for Adobe Commerce].
-source-git-commit: e135b8ab8b4f13de614299dd3c41c0cab52fefb2
+exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
+source-git-commit: 043389dc6d86228e459ac2c3592f391e85aa8f68
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1862'
 ht-degree: 0%
 
 ---
@@ -150,3 +151,11 @@ Cet onglet contient des informations qui expliquent comment identifier si et quo
 ![La latence des pages vues s’affiche sous la forme de pics sur ce graphique :](../../assets/tools/observation-for-adobe-commerce/pageview-latency.png)
 
 * Le **[!UICONTROL Pageview Latency will show as spikes on this graph:]** Le cadre affiche la latence du chargement de la page/de la réponse de l’API qui peut être conforme à la variable [!DNL bot] trafic.
+
+## [!UICONTROL Experimental Potential Malicious Bots] frame
+
+![Cadre de robots malveillants potentiels expérimentaux](../../assets/tools/observation-for-adobe-commerce/experimental-potential-malicious-bots-frame.jpg)
+
+Le **[!UICONTROL Experimental Potential Malicious Bots]** frame exécute dix requêtes distinctes et complexes. Il détecte les signatures de requête IP malveillantes, puis agrège les résultats, les additionne et les trie par nombre dans l’ordre décroissant. Les requêtes contiennent une multitude de signatures de données d’exploits CVE et d’autres requêtes malveillantes. Même lorsque les exploits sont bloqués par des correctifs ou correctifs de sécurité et ne constituent pas une menace pour le site, la demande doit toujours être traitée par le site web. Le volume de demandes peut devenir très important en peu de temps. Ce cadre n’indique pas le nombre total de demandes provenant de l’adresse IP, mais plutôt les demandes qui comportent des signaux indiquant que les demandes avaient des intentions suspectes.
+
+Veillez à vérifier que le trafic est suspect et que le trafic ne provient pas d’une adresse CDN (Content Distributed Network) qui peut également diffuser des demandes valides. Si les demandes sont déterminées comme provenant d&#39;une adresse IP du réseau CDN, veuillez contacter ce fournisseur de services pour aider à bloquer le trafic suspect via leur réseau. Si vous devez bloquer l’adresse ou l’URL de demande, reportez-vous à la section [Bloquer le trafic malveillant pour Adobe Commerce sur [!DNL Fastly] level](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html) dans la base de connaissances de prise en charge d’Adobe Commerce.
