@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
+source-git-commit: 205a0b67fab14a313d28355eed668d60ce477e64
 workflow-type: tm+mt
-source-wordcount: '11947'
+source-wordcount: '12066'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour les Magento Open Sources, voir la section [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.31 {#v1-1-31}
+
+* **ACSD-50345** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.4 || >=2.4.4-p1 &lt;2.4.6) - Correction du problème en raison duquel Recaptcha v2 ne se rechargeait pas après l’envoi d’un paiement en échec.
+* **ACSD-50817** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Optimise la tâche Cron `sales_clean_quotes` pour exécuter plus rapidement.
+* **ACSD-49392** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.0 || >= 2.4.1 &lt;2.4.7) - Correction du problème en raison duquel l’état de la commande était fermé après un remboursement partiel pour un produit regroupé.
+* **ACSD-51036** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.5) - Correction du problème en raison duquel les conditions de concurrence lors d’appels d’API REST simultanés entraînaient le remplacement des informations d’état de livraison dans la variable [!UICONTROL Items Ordered] table.
+* **ACSD-50858** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Améliore les performances de chargement du contenu des bannières.
+* Ajout de nouvelles versions pour MDVA-39305-v2, ACSD-45169.
+* Mise à jour des correctifs ACSD-50260-v2.
 
 ## v1.1.30 {#v1-1-30}
 
