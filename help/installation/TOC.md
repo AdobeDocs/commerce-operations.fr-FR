@@ -1,7 +1,8 @@
 ---
 user-guide-title: Guide d’installation
 user-guide-description: Découvrez comment installer Adobe Commerce et Magento Open Source pour les déploiements sur site.
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+feature: Install
+source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
