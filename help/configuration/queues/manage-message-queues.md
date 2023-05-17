@@ -1,13 +1,13 @@
 ---
 title: Gestion des files d’attente de messages
 description: Découvrez comment gérer les files d’attente de messages à partir de la ligne de commande d’Adobe Commerce.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
+source-git-commit: caca8df48c498977f830082ef27d9afb6220ae92
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
-
 
 # Gestion des files d’attente de messages
 
@@ -74,7 +74,7 @@ Modifiez la variable `/app/etc/env.php` fichier pour configurer la tâche cron `
 - `cron_run` - Une valeur booléenne qui active ou désactive la variable `consumers_runner` tâche cron (par défaut = `true`).
 - `max_messages` - Nombre maximum de messages que chaque consommateur doit traiter avant de s’arrêter (valeur par défaut = `10000`). Bien que nous ne le recommandions pas, vous pouvez utiliser 0 pour empêcher le consommateur de s’arrêter. Voir [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) pour configurer la manière dont les consommateurs traitent les messages de la file d’attente des messages.
 - `consumers` - Un tableau de chaînes spécifiant les consommateurs à exécuter. Un tableau vide s’exécute. *all* consommateurs.
-- `multiple_processes` - Un tableau de paires clé-valeur spécifiant le consommateur à exécuter dans le nombre de processus.
+- `multiple_processes` - Un tableau de paires clé-valeur spécifiant le consommateur à exécuter dans le nombre de processus. Pris en charge dans Commerce 2.4.4 ou version ultérieure.
 
    >[!INFO]
    >
