@@ -2,9 +2,9 @@
 title: Évaluations de performances
 description: Examinez les résultats des tests de performance pour les implémentations Adobe Commerce hébergées sur l’infrastructure cloud d’Adobe.
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
-source-git-commit: 09a42dc68836b34eab2c9d90879b897729cd1b09
+source-git-commit: eeb7146a8051e8692ebf974d65db75a4999cf2e6
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,7 @@ Pour la référence de performances, Adobe Commerce 2.4.5 a été déployé sur 
    - vCPU 216 (72 x 3 noeuds)
    - Mémoire 432 GiB (144 x 3 noeuds)
    - Bande passante réseau 768 Gbit/s (256 x 3 noeuds)
+   - Bande passante EBS 57 000 Mbit/s (19 000 x 3 noeuds)
    - Stockage mis en service 100 Go
 
 - **Spécifications du noeud de service**
