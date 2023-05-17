@@ -1,13 +1,13 @@
 ---
 title: Fichiers de configuration pour le déploiement
 description: Découvrez comment les fichiers de configuration fonctionnent pour l’installation de l’application Commerce.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
+source-git-commit: dd990800551dd2ba35ebc7d2bc04edeb1b183d6f
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Fichiers de configuration pour le déploiement
 
@@ -17,9 +17,6 @@ Adobe Commerce fournit des fichiers de configuration qui vous permettent de pers
 Ce fichier contient la liste des modules, thèmes et modules linguistiques installés ; et les paramètres de configuration partagés.
 
    Archivez ce fichier pour le contrôle de code source et utilisez-le dans vos systèmes de développement, d’évaluation et de production.
-
-   À compter de la version 2.2, la variable `app/etc/config.php` n’est plus une entrée dans `.gitignore` fichier .
-Cela a été fait pour faciliter [déploiement du pipeline](../deployment/technical-details.md).
 
 - `app/etc/env.php` contient des paramètres spécifiques à l’environnement d’installation.
 
