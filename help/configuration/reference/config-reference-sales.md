@@ -1,13 +1,14 @@
 ---
 title: Référence sur les chemins de configuration des ventes
 description: Consultez la liste des valeurs de configuration des ventes.
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+feature: Configuration, Checkout, Gift, Shipping/Delivery, Taxes
+exl-id: 7981f78a-5e5f-422c-9bff-54022e1fb9f3
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1473'
 ht-degree: 0%
 
 ---
-
 
 # Référence sur les chemins de configuration des ventes
 
@@ -66,7 +67,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Activation de la RAM au niveau du produit | `sales/magento_rma/enabled_on_product` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Utiliser l’adresse du magasin | `sales/magento_rma/use_store_address` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins des emails de vente
 
@@ -139,7 +140,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Afficher l’identifiant de l’ordre dans l’en-tête | `sales_pdf/shipment/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Afficher l’identifiant de l’ordre dans l’en-tête | `sales_pdf/creditmemo/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins des taxes
 
@@ -188,7 +189,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Appliquer la taxe à FPT | `tax/weee/apply_vat` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Inclure le FPT dans le sous-total | `tax/weee/include_in_subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins de passage en caisse
 
@@ -213,7 +214,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Modèle de paiement en échec | `checkout/payment_failed/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Envoyer le mode de copie de courrier électronique en échec du paiement | `checkout/payment_failed/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins d’accès des paramètres d’expédition
 
@@ -224,7 +225,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Appliquer une politique d’expédition personnalisée | `shipping/shipping_policy/enable_shipping_policy` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Politique d&#39;expédition | `shipping/shipping_policy/shipping_policy_content` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins des paramètres de multidiffusion
 
@@ -235,7 +236,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Autorisation de l’expédition vers plusieurs adresses | `multishipping/options/checkout_multiple` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Limite maximale autorisée pour l’expédition vers plusieurs adresses | `multishipping/options/checkout_multiple_maximum_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins des méthodes de diffusion
 
@@ -381,7 +382,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Afficher la méthode si cela n’est pas applicable | `carriers/dhl/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ordre de tri | `carriers/dhl/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins de l’API Google
 
@@ -407,7 +408,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Type de valeur de conversion | `google/adwords/conversion_value_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Valeur de conversion | `google/adwords/conversion_value` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins des cartes cadeau
 
@@ -432,4 +433,4 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Nouvelle taille du pool | `giftcard/giftcardaccount_general/pool_size` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Seuil du pool de code faible | `giftcard/giftcardaccount_general/pool_threshold` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

@@ -1,13 +1,14 @@
 ---
 title: Configuration du vernis pour Commerce
 description: Découvrez comment mettre à jour et gérer votre fichier de configuration de vernis pour l’application Commerce.
-source-git-commit: d451ea025a6f4fc8a4a9f15ca83896a63058a3a0
+feature: Configuration, Cache, SCD
+exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
 
 ---
-
 
 # Configuration de l’application Commerce pour l’utilisation du vernis
 
@@ -62,7 +63,7 @@ Pour exporter un fichier de configuration de vernis depuis l’administrateur :
 
 1. Adobe vous recommande d’ouvrir `default.vcl` et modifiez la valeur de `acl purge` à l’adresse IP de l’hôte Varnish. (Vous pouvez spécifier plusieurs hôtes sur des lignes distinctes ou utiliser également la notation CIDR.)
 
-   Par exemple,
+   Par exemple :
 
    ```conf
     acl purge {

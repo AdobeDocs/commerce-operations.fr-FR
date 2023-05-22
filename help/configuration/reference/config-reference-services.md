@@ -1,13 +1,14 @@
 ---
 title: Référence sur les chemins de configuration des services
 description: Consultez la liste des valeurs de configuration des services.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+feature: Configuration, Services
+exl-id: 77818c54-21ae-4a66-81bf-468bd7d09cda
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '156'
 ht-degree: 0%
 
 ---
-
 
 # Référence sur les chemins de configuration des services
 
@@ -24,7 +25,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Charset de réponse par défaut | `webapi/soap/charset` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Autoriser l’accès des invités anonymes | `webapi/webapisecurity/allow_insecure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins OAuth
 
@@ -40,4 +41,4 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Informations d’identification de l’utilisateur OAuth sur les maxredirections HTTP Post | `oauth/consumer/post_maxredirects` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Délai d’expiration HTTP Post des informations d’identification du client OAuth | `oauth/consumer/post_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

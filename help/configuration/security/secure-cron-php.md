@@ -1,13 +1,14 @@
 ---
 title: Secure cron PHP
 description: Restreindre qui peut exécuter le fichier cron.php dans un navigateur.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+feature: Configuration, Security
+exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
+source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # Secure cron PHP
 
@@ -180,7 +181,7 @@ La méthode la plus simple pour vérifier que `pub/cron.php` est sécurisé afin
 
 1. Connectez-vous à la base de données en tant qu’utilisateur de base de données Commerce ou en tant que `root`.
 
-   Par exemple,
+   Par exemple :
 
    ```bash
    mysql -u magento -p
@@ -192,7 +193,7 @@ La méthode la plus simple pour vérifier que `pub/cron.php` est sécurisé afin
    use <database-name>;
    ```
 
-   Par exemple,
+   Par exemple :
 
    ```shell
    use magento;
@@ -210,7 +211,7 @@ La méthode la plus simple pour vérifier que `pub/cron.php` est sécurisé afin
    http[s]://<Commerce hostname or ip>/cron.php?group=default
    ```
 
-   Par exemple :
+   Par exemple :
 
    ```shell
    http://magento.example.com/cron.php?group=default
@@ -275,7 +276,7 @@ Si vous utilisez un serveur web Apache, vous devez supprimer la restriction de l
      </Files>
    ```
 
-   Par exemple,
+   Par exemple :
 
    ```conf
    ## Deny access to cron.php
@@ -302,7 +303,7 @@ Où :
 
 - `<group name>` est un nom de groupe cron valide (facultatif).
 
-Par exemple,
+Par exemple :
 
 ```http
 https://magento.example.com/magento2/pub/cron.php?group=index

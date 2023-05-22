@@ -1,13 +1,14 @@
 ---
 title: Nettoyage du cache avec vernis
 description: Découvrez comment l’effacement de la mémoire cache fonctionne avec le vernis et comment l’utiliser comme accélérateur de mise en cache web pour l’application Adobe Commerce.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Configuration, Cache
+exl-id: 866da415-c428-4092-a045-c3079493cdc4
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
 
 ---
-
 
 # Nettoyage du cache avec vernis
 

@@ -1,13 +1,14 @@
 ---
 title: Configuration des mots-clés de recherche
 description: Découvrez comment gérer les mots-arrêts pour Adobe Commerce à l’aide de fichiers CSV.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Configuration, Search
+exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
+source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
 
 ---
-
 
 # Configuration des mots-clés de recherche
 

@@ -1,13 +1,14 @@
 ---
 title: Référence générale sur les chemins de configuration
 description: Consultez la liste des valeurs de configuration générales et avancées.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+feature: Configuration, Observability, Roles/Permissions, System
+exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '965'
 ht-degree: 0%
 
 ---
-
 
 # Référence sur les chemins de configuration généraux et avancés
 
@@ -54,7 +55,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Numéro TVA | `general/store_information/merchant_vat_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
 | Activation du mode Boutique unique | `general/single_store_mode/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Chemins Web
 
@@ -86,7 +87,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Afficher l’avis si JavaScript est désactivé | `web/browser_capabilities/javascript` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Afficher l’avis si le stockage local est désactivé | `web/browser_capabilities/local_storage` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Chemins de configuration des devises
 
@@ -111,7 +112,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Error Email Sender | `currency/import/error_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modèle de courrier électronique d’erreur | `currency/import/error_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Chemins des contacts
 
@@ -124,7 +125,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Expéditeur des emails | `contact/email/sender_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modèle de courrier électronique | `contact/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Chemins des rapports
 
@@ -135,7 +136,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Démarrages d’année à date | `reports/dashboard/ytd_start` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Démarrages du mois en cours | `reports/dashboard/mtd_start` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Chemins de gestion de contenu
 
@@ -149,19 +150,19 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Activation des métadonnées de hiérarchie | `cms/hierarchy/metadata_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Disposition par défaut du menu Hiérarchie | `cms/hierarchy/menu_layout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-### Nouveaux chemins de création de rapports relatifs
+### Chemins de création de rapports New Relic
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Général** > **Nouveau rapport relatif**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Général** > **Rapports New Relic**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
-| Activation de la nouvelle intégration Relative | `newrelicreporting/general/enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Nouveau nom de l’application de relation | `newrelicreporting/general/app_name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Activation de l’intégration New Relic | `newrelicreporting/general/enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Nom de l’application New Relic | `newrelicreporting/general/app_name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Activer Cron | `newrelicreporting/cron/enable_cron` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Catégorie avancée
 
@@ -203,7 +204,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Respect de la casse | `admin/captcha/case_sensitive` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Actions activées | `admin/magento_logging/actions` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Chemins système
 
@@ -271,7 +272,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Fréquence | `system/magento_scheduled_import_export_log/frequency` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modèle de courrier électronique d’erreur | `system/magento_scheduled_import_export_log/error_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Chemins de développement
 
@@ -301,4 +302,4 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Indexation asynchrone | `dev/grid/async_indexing` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Attributs définis par l’utilisateur du cache | `dev/caching/cache_user_defined_attributes` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

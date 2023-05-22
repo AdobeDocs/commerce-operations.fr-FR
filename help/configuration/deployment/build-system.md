@@ -1,13 +1,14 @@
 ---
 title: Configuration du système de création
 description: Découvrez comment déployer Commerce dans un système de génération.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+feature: Configuration, Build, Deploy
+exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
+source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
 
 ---
-
 
 # Configuration du système de création
 
@@ -98,7 +99,7 @@ Pour configurer le système de génération :
    chown -R <Commerce file system owner name>:<web server username> .
    ```
 
-   Par exemple,
+   Par exemple :
 
    ```bash
    chown -R commerce-username:apache .

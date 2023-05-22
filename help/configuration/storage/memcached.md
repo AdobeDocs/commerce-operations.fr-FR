@@ -1,13 +1,14 @@
 ---
 title: Utiliser la mémoire mise en cache pour le stockage de session
 description: Découvrez comment utiliser la mémoire mise en cache pour le stockage de session dans Commerce.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+feature: Configuration, Cache, Storage
+exl-id: 24077929-e732-4579-8d7d-717a4902fc64
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
-
 
 # Utiliser la mémoire mise en cache pour le stockage de session
 
@@ -59,7 +60,7 @@ Commerce utilise la mémoire mise en cache pour le stockage de session, mais pas
 
    Si des erreurs s’affichent (par exemple, un HTTP 500 (Erreur interne du serveur)), activez le mode Développeur et diagnostiquez le problème. Assurez-vous que la mémoire mise en cache est en cours d’exécution, configurée correctement et que `env.php` ne contient aucune erreur de syntaxe.
 
-1. (Facultatif.) Utilisez Telnet pour examiner le stockage en mémoire cache.
+1. (Facultatif) Utilisez Telnet pour examiner le stockage en mémoire cache.
 
    ```bash
    telnet <memcached host or ip> <memcached port>

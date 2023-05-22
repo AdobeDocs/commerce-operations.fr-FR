@@ -1,13 +1,14 @@
 ---
 title: Conditions préalables au déploiement
 description: Consultez la liste des conditions préalables au déploiement de Commerce dans un système de développement, de création ou de production.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Configuration, Deploy
+exl-id: 9ea0eeff-e0f8-4532-887c-5d7f07d89ddd
+source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
 
 ---
-
 
 # Conditions préalables pour les systèmes de développement, de génération et de production
 

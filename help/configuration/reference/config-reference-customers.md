@@ -1,13 +1,14 @@
 ---
 title: Référence des chemins de configuration des clients
 description: Afficher la liste des valeurs de configuration des clients.
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+feature: Configuration, Customers
+exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---
-
 
 # Référence des chemins de configuration des clients
 
@@ -30,7 +31,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Désabonnement de l’expéditeur d’emails | `newsletter/subscription/un_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modèle de courrier électronique de désabonnement | `newsletter/subscription/un_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins de configuration des clients
 
@@ -100,7 +101,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Symboles utilisés dans CAPTCHA | `customer/captcha/symbols` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Respect de la casse | `customer/captcha/case_sensitive` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins des listes de souhaits
 
@@ -117,7 +118,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Limite de longueur du texte d’email | `wishlist/email/text_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Afficher le résumé des listes de souhaits | `wishlist/wishlist_link/use_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins d’accès des invitations
 
@@ -134,7 +135,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Expéditeur du courrier électronique d’invitation du client | `magento_invitation/email/identity` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Modèle de courrier électronique d’invitation du client | `magento_invitation/email/template` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins de récompense
 
@@ -168,7 +169,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Email d’avertissement d’expiration des points de récompense | `magento_reward/notification/expiry_warning_template` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Avertissement d’expiration avant (jours) | `magento_reward/notification/expiry_day_before` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins de promotion
 
@@ -190,7 +191,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Suffixe de code | `promo/auto_generated_coupon_codes/suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Tiret Toutes Les X Caractères | `promo/auto_generated_coupon_codes/dash` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins du registre des cadeaux
 
@@ -208,7 +209,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Modèle de courrier électronique | `magento_giftregistry/update_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Expéditeur des emails | `magento_giftregistry/update_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins du panier persistants
 
@@ -229,4 +230,4 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Persister Les Produits Récemment Consultés | `persistent/options/recently_viewed` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Persistance de l’appartenance et de la segmentation du groupe client | `persistent/options/customer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

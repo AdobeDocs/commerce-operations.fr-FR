@@ -1,13 +1,14 @@
 ---
 title: Référence sur les chemins de configuration de l’extension B2B
 description: Consultez la liste des valeurs de configuration liées à B2B.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+feature: Configuration, B2B, Companies, Payments, Quotes
+exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
-
 
 # Référence sur les chemins de configuration de l’extension B2B
 
@@ -44,7 +45,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **[!UICONTROL S
 | Méthodes de paiement applicables | `btob/default_b2b_payment_methods/applicable_payment_methods` |  |  |  |
 | Méthodes de paiement | `btob/default_b2b_payment_methods/available_payment_methods` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Catégorie de clients
 
@@ -88,7 +89,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **[!UICONTROL S
 | Modèle de courrier électronique remboursé | `company/email/credit_refunded_email_template` |  |  |  |
 | Modèle de courrier électronique rétabli | `company/email/credit_reverted_email_template` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Chemins des listes de demandes
 
@@ -98,7 +99,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | -------------- | -------------- | -------------- | -------------- | -------------- |
 | Nombre de listes de demandes d’approvisionnement | `requisitionlist/general/number_requisition_lists` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Catégorie de ventes
 
@@ -121,7 +122,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Envoyer une copie de devis à | `sales_email/quote/copy_to` |  |  | ![Sensibilité](/help/assets/configuration/cloud-sens.png) |
 | Méthode Envoyer une copie de courrier électronique entre guillemets | `sales_email/quote/copy_method` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Chemins des citations
 
@@ -140,7 +141,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Formats de fichier à charger | `quote/attached_files/file_formats` |  |  |  |
 | Taille maximale du fichier | `quote/attached_files/maximum_file_size` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Chemins des méthodes de paiement
 
@@ -257,4 +258,4 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Total de la commande maximale | `payment/it/companycredit/max_order_total` |  |  |  |
 | Ordre de tri | `payment/it/companycredit/sort_order` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

@@ -1,10 +1,12 @@
 ---
 title: Configuration du redimensionnement des images pour le stockage à distance
 description: Optimisez les ressources disque en configurant le redimensionnement des images côté serveur.
-source-git-commit: 7fc5d561baa3c2a4aab160a35a1c8a302a62a3b1
+feature: Configuration, Storage
+exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -50,7 +52,7 @@ Pour continuer à configurer le redimensionnement des images côté serveur, vou
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
    ```
 
-1. Créez un `nginx.conf` fichier basé sur le modèle inclus `nginx.conf.sample` fichier . Par exemple :
+1. Créez un `nginx.conf` fichier basé sur le modèle inclus `nginx.conf.sample` fichier . Par exemple :
 
    ```conf
    location ~* \.(jpg|jpeg|png|gif|webp)$ {

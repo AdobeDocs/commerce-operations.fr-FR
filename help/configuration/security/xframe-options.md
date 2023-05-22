@@ -1,13 +1,14 @@
 ---
 title: En-tête X-Frame-Options
 description: Utilisez X-Frame-Options pour contrôler les rendus de page.
-source-git-commit: db696b8ca501d128db655c5ebb161c654c6378a7
+feature: Configuration, Security
+exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
+source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 0%
 
 ---
-
 
 # En-tête X-Frame-Options
 

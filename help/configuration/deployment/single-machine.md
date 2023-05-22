@@ -1,9 +1,11 @@
 ---
 title: Déploiement mono-machine
 description: Découvrez comment déployer des mises à jour sur Commerce sur un serveur de production à l’aide de la ligne de commande.
-source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
+feature: Configuration, Deploy
+exl-id: ca73309c-7584-4506-99de-dd933651eeb6
+source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---

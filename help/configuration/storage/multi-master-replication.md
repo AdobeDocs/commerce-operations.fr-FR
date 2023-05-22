@@ -1,13 +1,14 @@
 ---
 title: Réplication des bases de données
 description: Découvrez les avantages de la configuration de la réplication de base de données.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+recommendations: noCatalog
+exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
 
 ---
-
 
 # Réplication des bases de données
 

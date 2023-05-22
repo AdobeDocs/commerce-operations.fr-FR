@@ -1,14 +1,15 @@
 ---
 title: Configuration du profileur de base de données
 description: Consultez un exemple de configuration de la sortie pour le profileur de base de données.
+feature: Configuration, Storage
 badge: label="Contribué par Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Goswami écossais"
-source-git-commit: bcb995ea417423b0cbc59c035ba5fdedbce3310e
+exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
 
 ---
-
 
 # Configuration du profileur de base de données
 

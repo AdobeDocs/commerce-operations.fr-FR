@@ -1,13 +1,14 @@
 ---
 title: Configuration automatique des bases de données principales
 description: Consultez les conseils sur la configuration automatique de la solution de base de données partagée.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+recommendations: noCatalog
+exl-id: a27ad097-de60-4cdd-81f9-eb1ae84587e4
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%
 
 ---
-
 
 # Configuration automatique des bases de données principales
 

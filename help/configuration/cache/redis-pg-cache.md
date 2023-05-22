@@ -1,13 +1,14 @@
 ---
 title: Utiliser des redis pour le cache par défaut
 description: Découvrez comment configurer Redis comme cache par défaut pour Adobe Commerce et Magento Open Source.
-source-git-commit: 47d513e7ca51ad7dbc149d0f1e076f673452918c
+feature: Configuration, Cache
+exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
 
 ---
-
 
 # Utiliser des redis pour le cache par défaut
 

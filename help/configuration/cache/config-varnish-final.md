@@ -1,13 +1,14 @@
 ---
 title: Vérification finale
 description: Vérifiez que la configuration de vernis est configurée correctement pour fonctionner avec l’application Adobe Commerce.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Configuration, Cache
+exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
-
 
 # Vérification finale de la configuration de vernis
 
@@ -82,4 +83,4 @@ Assurez-vous que la variable `<magento_root>/var/page_cache` Le répertoire est 
 
 >[!TIP]
 >
->Si vous rencontrez des erreurs 503 (échec de la récupération du serveur principal), reportez-vous à la section [Résolution des problèmes 503 (Service indisponible)](https://support.magento.com/hc/en-us/articles/360034631211) dans le _Centre d’aide Adobe Commerce_.
+>Si vous rencontrez des erreurs 503 (échec de la récupération du serveur principal), reportez-vous à la section [Résolution des problèmes 503 (Service indisponible)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) dans le _Centre d’aide Adobe Commerce_.

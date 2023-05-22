@@ -1,13 +1,14 @@
 ---
 title: Solution de performance de la base de données de partage
 description: Découvrez la solution de base de données partagée pour Adobe Commerce et Magento Open Source.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+recommendations: noCatalog
+exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 0%
 
 ---
-
 
 # Présentation de la solution de base de données partagée
 

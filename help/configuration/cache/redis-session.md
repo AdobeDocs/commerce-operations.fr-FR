@@ -1,13 +1,14 @@
 ---
 title: Utilisation de Redis pour le stockage de session
 description: Découvrez comment configurer Redis pour le stockage de session.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+feature: Configuration, Cache
+exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 1%
 
 ---
-
 
 # Utilisation de Redis pour le stockage de session
 
@@ -35,7 +36,7 @@ where
 | session-save-redis-host | hôte | Nom d’hôte complet, adresse IP ou chemin d’accès absolu si vous utilisez des sockets UNIX. | localhost |
 | session-save-redis-port | port | Port d’écoute du serveur Redis. | 6379 |
 | session-save-redis-password | password | Indique un mot de passe si votre serveur Redis doit être authentifié. | empty |
-| session-save-redis-timeout | timeout | Timeout de connexion, en secondes. | 2,5 |
+| session-save-redis-timeout | timeout | Timeout de connexion, en secondes. | 2.5 |
 | session-save-redis-persistent-id | persistent_identifier | Chaîne unique permettant d’activer les connexions persistantes (par exemple, sess-db0).<br>[Problèmes connus avec phpredis et php-fpm](https://github.com/phpredis/phpredis/issues/70). |
 | session-save-redis-db | base | Numéro de base de données Redis unique, recommandé pour éviter toute perte de données.<br><br>**Important**: Si vous utilisez Redis pour plusieurs types de mise en cache, les numéros de la base de données doivent être différents. Il est recommandé d’attribuer le numéro de base de données de mise en cache par défaut à 0, le numéro de base de données de mise en cache de page à 1 et le numéro de base de données de stockage de session à 2. | 0 |
 | session-save-redis-compression-threshold | compression_threshold | Définissez cette variable sur 0 pour désactiver la compression (recommandé lorsque `suhosin.session.encrypt = On`).<br>[Problème connu avec des chaînes de plus de 64 Ko](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
@@ -133,4 +134,3 @@ Si les deux commandes ont réussi, Redis est configuré correctement.
 ### Inspection des données compressées
 
 Pour examiner les données de session compressées et le cache de page, la variable [RESP.app](https://flathub.org/apps/details/app.resp.RESP) prend en charge la décompression automatique du cache de session et de page Commerce 2 et affiche les données de session PHP sous une forme lisible.
-

@@ -1,13 +1,14 @@
 ---
 title: Stockage à distance pour Commerce sur l’infrastructure cloud
 description: Consultez des conseils sur la configuration du stockage à distance pour Adobe Commerce sur l’infrastructure cloud.
-source-git-commit: 4c89ef65ffb559ad4ad3f3fc45bd73079fbacd1b
+feature: Configuration, Cloud, Storage
+exl-id: da352466-13f2-42e4-a589-3b0a89728467
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
 
 ---
-
 
 # Configuration du stockage à distance pour l’infrastructure Commerce on Cloud
 

@@ -1,13 +1,14 @@
 ---
 title: Rétablir la base de données partagée
 description: Rétablissement d’une implémentation de base de données partagée obsolète vers une implémentation de base de données unique.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+feature: Configuration, Storage
+exl-id: 2ece24e0-1f85-445a-8e22-fb10611403ff
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
 
 ---
-
 
 # Rétablir à partir de la base de données partagée
 

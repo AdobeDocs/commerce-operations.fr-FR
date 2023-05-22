@@ -1,13 +1,14 @@
 ---
 title: Emplacement de stockage de session
 description: Découvrez où les fichiers de session sont stockés.
-source-git-commit: 27c3914540a0574fa4ff58df50d5cd2c71fb6670
+feature: Configuration, Storage
+exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
 
 ---
-
 
 # Emplacement de stockage de session
 
