@@ -1,11 +1,19 @@
 ---
-source-git-commit: 20ebf9dc6c7a1aac1d183ed31b1a80a674d633f1
+source-git-commit: 45b3f12d3ea333624a0a8a872b1eb412a98fda6d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '289'
+ht-degree: 66%
 
 ---
 # Configuration requise
+
+>[!IMPORTANT]
+>
+>La prise en charge de la version du service et de la compatibilité pour Adobe Commerce sur l’infrastructure cloud est déterminée par les versions déployées sur l’infrastructure cloud et diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Voir [Logiciels et services pris en charge](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) dans le _Guide Cloud_. Par exemple, Elasticsearch 7.17 est pris en charge sur 2.4.4 pour les déploiements on-premise, mais Open Search 1.2 est pris en charge sur l’infrastructure cloud.
+
+>[!NOTE]
+>
+><sup>*</sup>Adobe Commerce 2.4.5 et versions antérieures prennent uniquement en charge MySQL 8.0.28 et versions antérieures.
 
 <table style="table-layout:auto">
   <thead>
@@ -797,11 +805,3 @@ ht-degree: 0%
     </tr>
   </tbody>
 </table>
-
->[!IMPORTANT]
->
->La prise en charge de la version du service et de la compatibilité pour Adobe Commerce sur l’infrastructure cloud est déterminée par les versions déployées sur l’infrastructure cloud et diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Voir [Logiciels et services pris en charge](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) dans le _Guide Cloud_.
-
->[!NOTE]
->
-><sup>*</sup>Adobe Commerce 2.4.5 et versions antérieures prennent uniquement en charge MySQL 8.0.28 et versions antérieures.
