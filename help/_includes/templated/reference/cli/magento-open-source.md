@@ -1,7 +1,7 @@
 ---
-source-git-commit: a1f99f839f11ab42356b87a69398999bb03cd544
+source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
 workflow-type: tm+mt
-source-wordcount: '17238'
+source-wordcount: '17239'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 **Version**: 2.4.6
 
 Cette référence contient 114 commandes disponibles via le `bin/magento` outil de ligne de commande.
-La liste initiale est générée automatiquement à l’aide de la fonction `bin/magento list` à l’édition.
+La liste initiale est générée automatiquement à l’aide de la fonction `bin/magento list` à Magento Open Source.
 Utilisez la variable [&quot;Ajout de commandes d’interface de ligne de commande&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) pour ajouter une commande d’interface de ligne de commande personnalisée.
 
 >[!NOTE]

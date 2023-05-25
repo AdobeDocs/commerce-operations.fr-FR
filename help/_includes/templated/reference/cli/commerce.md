@@ -1,7 +1,7 @@
 ---
-source-git-commit: 27e7a262fd1d8092045f5ebe2f88caaec37a6b0d
+source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
 workflow-type: tm+mt
-source-wordcount: '29783'
+source-wordcount: '29786'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 **Version**: 1.42.0
 
 Cette référence contient 134 commandes disponibles via le `magento-cloud` outil de ligne de commande.
-La liste initiale est générée automatiquement à l’aide de la fonction `magento-cloud list` à l’édition.
+La liste initiale est générée automatiquement à l’aide de la fonction `magento-cloud list` sur Adobe Commerce sur l’infrastructure cloud.
 
 >[!NOTE]
 >
@@ -9306,9 +9306,9 @@ Désactiver la sortie ANSI
 
 ### `--no`, `-n`
 
-Répondez « non » aux questions de confirmation ; acceptez la valeur par défaut pour d’autres questions ; désactiver l’interaction
+répondre &quot;non&quot; aux questions de confirmation ; accepter la valeur par défaut pour d’autres questions ; désactiver l&#39;interaction
 
-- Par défaut: `false`
+- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--quiet`, `-q`
@@ -9349,14 +9349,14 @@ Afficher ce message d’aide
 
 Augmenter la verbalisation des messages
 
-- Par défaut: `false`
+- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--version`, `-V`
 
 Afficher cette version de l’application
 
-- Par défaut: `false`
+- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--yes`, `-y`
@@ -10769,20 +10769,20 @@ Numéro de page. Cela active la pagination, malgré la configuration ou —count
 
 ### `--count`, `-c`
 
-Nombre de projets à afficher par page. Utilisez 0 pour désactiver la pagination. Ignoré si la page est spécifiée.
+Nombre de projets à afficher par page. Utilisez 0 pour désactiver la pagination. Ignoré si —page est spécifié.
 
 - Nécessite une valeur
 
 ### `--format`
 
-Format de sortie : table, CSV, TSV ou plain
+Le format de sortie : table, csv, tsv ou plain
 
-- Par défaut: `table`
+- Valeur par défaut : `table`
 - Nécessite une valeur
 
 ### `--columns`
 
-Colonnes à afficher. Colonnes disponibles : id*, titre*, région*, created_at, endpoint, organization_id, organization_label, organization_name, region_label, status, ui_url (* = colonnes par défaut). Le caractère « + » peut être utilisé comme espace réservé pour les colonnes par défaut. Si une liste est définie comme une valeur unique (par exemple, &quot;a, b, c&quot;) sera divisé par des virgules et/ou un espace blanc.
+Colonnes à afficher. Colonnes disponibles : id*, titre*, région*, created_at, endpoint, organization_id, organization_label, organization_name, region_label, status, ui_url (* = colonnes par défaut). Le caractère &quot;+&quot; peut être utilisé comme espace réservé pour les colonnes par défaut. Si une liste est définie comme une valeur unique (par exemple, &quot;a, b, c&quot;) sera divisé par des virgules et/ou un espace blanc.
 
 - Valeur par défaut : `[]`
 - Nécessite une valeur
@@ -11866,14 +11866,14 @@ ID d’environnement
 
 Afficher ce message d’aide
 
-- Par défaut: `false`
+- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter le niveau de détail des messages
+Augmenter la verbalisation des messages
 
-- Par défaut: `false`
+- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--version`, `-V`
@@ -11894,14 +11894,14 @@ répondre &quot;oui&quot; aux questions de confirmation ; accepter la valeur par
 
 Ne posez aucune question interactive ; acceptez les valeurs par défaut. Équivalent à l’utilisation de la variable d’environnement : &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- Par défaut: `false`
+- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--ansi`
 
 Forcer la sortie ANSI
 
-- Par défaut: `false`
+- Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--no-ansi`
