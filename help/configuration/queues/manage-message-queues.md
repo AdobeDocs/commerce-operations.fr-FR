@@ -2,9 +2,9 @@
 title: Gestion des files d’attente de messages
 description: Découvrez comment gérer les files d’attente de messages à partir de la ligne de commande d’Adobe Commerce.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: caca8df48c498977f830082ef27d9afb6220ae92
+source-git-commit: 8dce1f1e961ec02d7783a7423a51a7d4567dce79
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ L’exemple suivant illustre la variable `crontab` configuration pour les consom
 >
 >Voir [Configuration et exécution de cron](../cli/configure-cron-jobs.md) pour plus d’informations sur l’utilisation de `cron` avec Commerce.
 
-Vous pouvez également utiliser un gestionnaire de processus tel que [Superviseur](http://supervisord.org/index.html) pour surveiller l’état des processus. Le gestionnaire peut utiliser la ligne de commande pour redémarrer les processus selon les besoins.
+Vous pouvez également utiliser un gestionnaire de processus tel que [Superviseur](https://supervisord.readthedocs.io/en/latest/) pour surveiller l’état des processus. Le gestionnaire peut utiliser la ligne de commande pour redémarrer les processus selon les besoins.
 
 ## Configuration
 
@@ -76,12 +76,12 @@ Modifiez la variable `/app/etc/env.php` fichier pour configurer la tâche cron `
 - `consumers` - Un tableau de chaînes spécifiant les consommateurs à exécuter. Un tableau vide s’exécute. *all* consommateurs.
 - `multiple_processes` - Un tableau de paires clé-valeur spécifiant le consommateur à exécuter dans le nombre de processus. Pris en charge dans Commerce 2.4.4 ou version ultérieure.
 
-   >[!INFO]
-   >
-   >Il n’est pas recommandé d’exécuter plusieurs consommateurs sur une file d’attente gérée par MySQL. Voir [Remplacer la file d’attente des messages de MySQL par AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) pour plus d’informations.
+  >[!INFO]
+  >
+  >Il n’est pas recommandé d’exécuter plusieurs consommateurs sur une file d’attente gérée par MySQL. Voir [Remplacer la file d’attente des messages de MySQL par AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) pour plus d’informations.
 
-   >[!INFO]
-   >
-   >Si votre boutique Adobe Commerce est hébergée sur la plateforme Cloud, utilisez la variable [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) pour configurer la manière dont les consommateurs traitent les messages de la file d’attente des messages.
+  >[!INFO]
+  >
+  >Si votre boutique Adobe Commerce est hébergée sur la plateforme Cloud, utilisez la variable [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) pour configurer la manière dont les consommateurs traitent les messages de la file d’attente des messages.
 
 Voir [Démarrage des consommateurs de la file de messages](../cli/start-message-queues.md).
