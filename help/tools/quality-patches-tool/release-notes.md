@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 205a0b67fab14a313d28355eed668d60ce477e64
+source-git-commit: 86f95d8fff53ab0857a3a276ba785ad26eb71241
 workflow-type: tm+mt
-source-wordcount: '12066'
+source-wordcount: '12426'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,25 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour les Magento Open Sources, voir la section [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.32 {#v1-1-32}
+
+* **ACSD-49628** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème en raison duquel la variable [!UICONTROL Page Builder's] plusieurs erreurs empêchent l’administrateur d’enregistrer un produit sans autorisations de contenu.
+* **ACSD-51305** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel les produits enfants configurables en rupture de stock ne sont pas disponibles dans la réponse GraphQL.
+* **ACSD-50621** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel [!UICONTROL Tier Prices] pour les différents sites web du catalogue partagé ne sont pas visibles lors de la tentative de modification dans un environnement multisite.
+* **ACSD-51041** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.0 || >=2.4.1 &lt;2.4.6) - Améliore les performances de l’indexeur de prix.
+* **ACSD-51379** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel les modifications apportées au contenu du texte de la page via [!UICONTROL Page Builder] ne sont pas enregistrées.
+* **ACSD-49480** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Correction du problème en raison duquel une seule règle de prix de panier était appliquée au panier.
+* **ACSD-51230** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Correction du problème de suppression du compte de carte-cadeau lorsqu’un remboursement partiel d’un produit simple est traité à partir d’une commande.
+* **ACSD-51238** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction du problème de suppression de la source d’inventaire lors de la mise à jour des produits configurables et de la modification du prix.
+* **ACSD-50794** (pour Adobe Commerce >=2.4.1 &lt;2.4.7) - Correction du problème en raison duquel les détails du message cadeau ou de l’emballage cadeau ne sont pas mis à jour dans la base de données lors de sa suppression via GraphQL.
+* **ACSD-51528** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel la variable *x_transfer_for* La colonne contient des valeurs &quot;null&quot; *sales_order* table.
+* **ACSD-50849** (pour Adobe Commerce >=2.4.4 &lt;2.4.6) - Correction du problème en raison duquel l’ajout d’un nouveau produit à la catégorie après l’effacement du cache entraînait une incohérence des positions et des sélections des produits existants.
+* **ACSD-51294** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel le prix GTM/GA, la quantité, la taxe, l’expédition et les recettes sont envoyés sous forme de chaîne à [!DNL Google Analytics] et GTM.
+* **ACSD-51204** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction du problème en raison duquel un produit entièrement vendu ne revenait pas en stock après la création d’une note de crédit.
+* **ACSD-51291** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.4-p4 || >=2.4.5 &lt;2.4.5-p3) - Correction du problème en raison duquel un administrateur restreint ayant accès à un site web pouvait ajouter des images/vidéos au produit affecté à plusieurs sites web.
+* Ajout de nouvelles versions pour ACSD-50336.
+* Correctifs remplacés ACSD-49970.
 
 ## v1.1.31 {#v1-1-31}
 
