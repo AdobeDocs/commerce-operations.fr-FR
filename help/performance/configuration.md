@@ -1,13 +1,13 @@
 ---
 title: Bonnes pratiques de configuration
 description: Optimisez le temps de réponse de votre déploiement Adobe Commerce ou Magento Open Source à l’aide de ces bonnes pratiques.
-source-git-commit: 5b455cb1285ce764a0517008fb8b692f3899066d
+exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
+source-git-commit: 1d7f5f58f8c21013c2ab0d68ab93a125ba0f3764
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1448'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques de configuration
 
@@ -40,6 +40,31 @@ Il peut arriver que des ventes intensives sur un storefront se produisent en mê
 >[!WARNING]
 >
 >Le **[!UICONTROL Developer]** Les options et les onglets ne sont disponibles que dans [Mode Développeur](../configuration/cli/set-mode.md). [Adobe Commerce sur l’infrastructure cloud](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) ne prend pas en charge `Developer` mode .
+
+## Enregistrement de la configuration asynchrone [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponible dans la version 2.4.7-beta1 uniquement"}
+
+Pour les projets avec un grand nombre de configurations au niveau du magasin, l’enregistrement d’une configuration de magasin peut prendre un temps démesuré ou entraîner un délai d’expiration. Le _Configuration asynchrone_ Le module active les enregistrements de configuration asynchrones en exécutant une tâche cron qui utilise un consommateur pour traiter l’enregistrement dans une file d’attente de messages. AsyncConfig est **disabled** par défaut.
+
+Vous pouvez activer AsyncConfig à l’aide de l’interface de ligne de commande :
+
+```bash
+bin/magento setup:config:set --config-async 1
+```
+
+Le `set` La commande écrit ce qui suit dans la fonction `app/etc/env.php` fichier :
+
+```conf
+...
+   'config' => [
+       'async' => 1
+   ]
+```
+
+Démarrez le client suivant pour commencer à traiter les messages de la file d’attente en fonction du premier entré dans la file d’attente :
+
+```bash
+bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
+```
 
 ## Mise à jour différée du stock
 
@@ -122,4 +147,3 @@ Vous pouvez limiter les collections de grille de produits aux pages suivantes un
 * Page de création de commande de l’administrateur
 
 Si vous ne souhaitez pas que votre grille de produits soit limitée, nous vous encourageons à utiliser des filtres plus précis pour que la collection de résultats ait moins d’éléments que **[!UICONTROL Records Limit]**.
-

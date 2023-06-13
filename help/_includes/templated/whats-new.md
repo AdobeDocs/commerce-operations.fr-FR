@@ -1,7 +1,7 @@
 ---
-source-git-commit: f7302ddd61b354eec4da8c9a1596ca18f38ba7b3
+source-git-commit: 36ebf825705e3ffb26d595d39df8339ab1ca3c6f
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,102 @@ ht-degree: 0%
 ## Nouveautés
 
 Découvrez la nouvelle documentation et les mises à jour importantes de la documentation existante.
+
+### 13 juin 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout des documents suivants pour la version bêta :<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html">Interface de ligne de commande d’Adobe Commerce (sur site, bêta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html">Interface de ligne de commande du Magento Open Source (bêta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html">Packages Adobe Commerce (bêta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/cloud-beta.html">Packages Cloud pour Adobe Commerce (bêta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html">Modules Magento Open Sources (bêta)</a></p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/165a7f99fa173b17e436c07dc1fbcf9323478762">165a7f</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Ajout d’informations de configuration de base pour la version bêta de la fonction <a href="https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html">Serveur d’applications pour les API GraphQL</a>.</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6fe8d69933b7b2260a33b55bb2b12609addd3c90">6fe8d6</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html">table de disponibilité et de compatibilité des produits</a> et <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">présentation des notes de mise à jour</a> pour la version de juin 2023.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/95032071bca59ad1466aed16033a871d820c40b3">950320</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Notes de mise à jour publiées pour les correctifs suivants :<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2.4.7-beta1</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p1.html">2.4.6-p1</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p3.html">2.4.5-p3</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p4.html">2.4.4-p4</a></p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/14ab6c2495ffb2ddd6321cd0fbb317df6fd866b3">14ab6c</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">configuration requise</a> pour les correctifs publiés en juin 2023.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/84a82a6806e43a928be7e6743457d8fc9288338e">84a82a</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Ajout d’informations sur la nouvelle <code class="language-plaintext highlighter-rouge">saveConfigProcessor</code> <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html">client</a> qui a été ajouté à la prise en charge de la variable <a href="https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#asynchronous-configuration-save"><code class="language-plaintext highlighter-rouge">AsyncConfig</code></a> module .</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/702b7f73d1bd315528c332418ed3a5f2666c3efc">702b7f</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Ajout d’informations sur la manière dont la nouvelle <a href="https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#asynchronous-configuration-save">Module AsyncConfig</a> peut vous aider à améliorer les performances.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/146231fb1b559e6043b8610da02c2015b2f77d6c">146231</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 12 juin 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Publié <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">notes de mise à jour</a> pour la version 1.1.32 du package de l’outil de correctifs de qualité (QPT).</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/96f6107732880601f3788ae73bebef3039aa85c3">96f610</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 7 juin 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout d’une <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/access.html">instructions</a> pour accéder à l’outil d’analyse à l’échelle du site à partir du domaine de l’outil (<code class="language-plaintext highlighter-rouge">https://supportinsights.adobe.com/commerce</code>).</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/051fe7707cef593027bcff93ae39adfc5cf1af3c">051fe7</a> (commit)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 25 mai 2023
 
@@ -67,112 +163,6 @@ Découvrez la nouvelle documentation et les mises à jour importantes de la docu
 </td>
       <td>major-update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7f30857b612d027dfce26fac1f947006f28ecfa6">7f3085</a> (commit)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 20 avril 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout de la fonction <code class="language-plaintext highlighter-rouge">commerce.eventing.event.publish</code> consommateur de la file d’attente de messages au <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html">table de référence</a>.</p>
-</td>
-      <td>technique</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2f9bfcf9a8232cbe659062a9b1bc88eda3d9158c">2f9bfc</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 19 avril 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout d’informations sur un nouveau correctif publié pour un problème connu de la version 2.4.6. Voir <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Notes de mise à jour d’Adobe Commerce et de Magento Open Source</a>.</p>
-</td>
-      <td>technique</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fdbb0959b615689eba3068bc93c4c9876c7a7972">fdbb09</a> (commit)</td>
-    </tr>
-    <tr>
-      <td><p>Ajout d’informations à propos du <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard.html">Widget du centre de sécurité</a> dans le tableau de bord de l’outil d’évaluation à l’échelle du site.</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1e84ee6db07ec9080971de22a24fe8a7d8705916">1e84ee</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 17 avril 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout d’une <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/self-hosting/overview.html">nouvelle section</a> à propos des concepts d’auto-hébergement, notamment les performances, la sécurité, la surveillance et la reprise sur sinistre.</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/699c512de9c6d28ba354f02b4db76975eb5410a9">699c51</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 12 avril 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Publié <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">notes de mise à jour</a> pour la version 1.1.30 du package de l’outil de correctifs de qualité (QPT).</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/84ed7dd2c24eef437d6719d9758da43423347eeb">84ed7d</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 5 avril 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout <a href="https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/glossary.html">Glossaire</a>. Migration depuis https://glossary.magento.com.</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d9b7659e5d4c3770956f0c2a96e5c97a3dc2af19">d9b765</a> (commit)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->

@@ -1,17 +1,17 @@
 ---
 title: Nginx
 description: Pour installer et configurer le serveur web Nginx pour les installations sur site d’Adobe Commerce et de Magento Open Source, procédez comme suit.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
+source-git-commit: 9ebf10bd3296495e33c91d930be023ea0124ff62
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
 
-
 # Nginx
 
-Adobe Commerce prend en charge la version 1.18 (ou la version [dernière version de mainline](https://nginx.org/en/linux_packages.html#mainline)). Vous devez également installer la dernière version de `php-fpm`.
+Adobe Commerce prend en charge la version 1.x (ou la version [dernière version de mainline](https://nginx.org/en/linux_packages.html#mainline)). Vous devez également installer la dernière version de `php-fpm`.
 
 Les instructions d’installation varient en fonction du système d’exploitation utilisé. Voir [PHP](../php-settings.md) pour plus d’informations.
 

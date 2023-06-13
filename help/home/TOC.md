@@ -1,7 +1,7 @@
 ---
 user-guide-title: Guides opérationnels
 user-guide-description: Découvrez les aspects opérationnels de la maintenance de votre application Adobe Commerce ou Magento Open Source.
-source-git-commit: 6291b6c9e062509e9bb2069050d455783fb06c7a
+source-git-commit: dbd13fd60ae20576e4499ad2a17d5490cf8c7bc3
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 - [Mettre à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
 - [Bonnes pratiques en matière de performances](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/overview.html)
 - [Outils](https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html)
-- [Outils de ligne de commande](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html)
+- [Outils de ligne de commande](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
 - [Manuel de mise en oeuvre](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html)
 - [Manuel opérationnel](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
 - [Commerce à grande échelle](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/overview.html)
