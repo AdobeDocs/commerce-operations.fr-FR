@@ -1,13 +1,14 @@
 ---
 title: Gestion des modules et des extensions (développeur)
 description: Gérez les modules et extensions Adobe Commerce et Magento Open Source à l’aide de l’interface de ligne de commande et du gestionnaire de modules du compositeur.
-source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
+feature: Upgrade, Extensions
+exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '139'
 ht-degree: 0%
 
 ---
-
 
 # Gestion des modules et des extensions
 
@@ -27,7 +28,7 @@ Utilisation des commandes :
 composer show --all <vendor>/<name>
 ```
 
-Par exemple :
+Par exemple :
 
 ```bash
 composer show --all example/module
@@ -41,7 +42,7 @@ Utilisation des commandes :
 composer require <vendor>/<name>:<version>
 ```
 
-Par exemple :
+Par exemple :
 
 ```bash
 composer require example/module:1.0.0

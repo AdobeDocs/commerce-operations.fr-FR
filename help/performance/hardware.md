@@ -1,13 +1,14 @@
 ---
 title: Recommendations matériel
 description: Consultez la liste du matériel recommandé pour optimiser les performances des déploiements Adobe Commerce et Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+feature: Best Practices, Install
+exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%
 
 ---
-
 
 # Recommandations matérielles
 

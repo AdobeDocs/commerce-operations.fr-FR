@@ -1,13 +1,14 @@
 ---
 title: Moteur de recherche actuel non pris en charge
 description: Dépannez votre mise à niveau Adobe Commerce ou Magento Open Source après avoir rencontré une erreur au sujet d’un moteur de recherche non pris en charge.
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+feature: Upgrade, Search
+exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
 
 ---
-
 
 # Moteur de recherche actuel non pris en charge
 
@@ -34,13 +35,11 @@ L’erreur se produit si la valeur renvoyée est `mysql`, `elasticsearch`ou `ela
 >
 >Si vous avez reçu cette erreur, votre installation est dans un état incohérent et vous ne pouvez pas accéder à l’administrateur. Nous vous recommandons de revenir à votre version précédente pendant que vous résolvez cette erreur. Pour cela, exécutez l’une des commandes suivantes :
 >
->
-```bash
+>```bash
 >composer require-commerce magento/product-enterprise-edition=<version>
 >```
 >
->
-```bash
+>```bash
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >

@@ -1,7 +1,8 @@
 ---
 user-guide-title: Bonnes pratiques en matière de performances
 user-guide-description: Optimisez les performances de votre déploiement en production Adobe Commerce ou Magento Open Source à l’aide de nos recommandations.
-source-git-commit: c61f33a7159424e5f9018ebf37b9d17072246536
+feature: Best Practices
+source-git-commit: 62a37d5f83b4cc6efef8bddba16e44151e91a8d0
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 0%

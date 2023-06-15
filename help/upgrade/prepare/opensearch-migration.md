@@ -1,13 +1,14 @@
 ---
 title: Migration de l’Elasticsearch vers OpenSearch
 description: Découvrez comment remplacer le moteur de recherche utilisé pour les installations sur site d’Adobe Commerce et de Magento Open Source.
-source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
+feature: Upgrade, Search
+exl-id: 56f1e609-83d2-4705-99d8-b395bb511411
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
 
 ---
-
 
 # Migration vers OpenSearch
 

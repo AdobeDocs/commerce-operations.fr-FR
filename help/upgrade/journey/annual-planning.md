@@ -1,13 +1,13 @@
 ---
 title: Planification annuelle des mises à niveau
 description: Consultez les conseils pour créer un plan de mise à niveau annuel pour votre projet Adobe Commerce ou Magento Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
+source-git-commit: d81283491447dcad5f38ddf55acea7d94889ef35
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
 
 ---
-
 
 # Planification annuelle des mises à niveau
 
