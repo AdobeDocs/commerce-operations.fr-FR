@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 86f95d8fff53ab0857a3a276ba785ad26eb71241
+source-git-commit: 28358ee2ebadfcbf12c67e667cbbd27599a28a80
 workflow-type: tm+mt
-source-wordcount: '12426'
+source-wordcount: '12912'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,29 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour les Magento Open Sources, voir la section [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.33 {#v1-1-33}
+
+* **ACSD-50478** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.5) - Correction de la commande de restauration de la base de données pour un cas où le fichier de vidage DB contient des déclencheurs et une balise *délimiteur* Commande SQL.
+* **ACSD-50512** (pour Adobe Commerce >=2.4.5 &lt;2.4.7) - Correction de la variable *Erreur : Le lien téléchargeable n’est pas lié au produit. Vérifiez le lien et réessayez.* erreur qui se produit lors de la mise à jour de la date de début d’une mise à jour intermédiaire de produit téléchargeable.
+* **ACSD-50949** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème en raison duquel le filtre de prix dans la recherche avancée ne renvoyait pas de résultats appropriés lorsqu’il était utilisé avec le filtre SKU.
+* **ACSD-51645** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction de l’erreur générée lors de l’enregistrement d’une nouvelle règle de prix du panier si l’extension `Magento_OfflineShipping` est désactivée.
+* **ACSD-50895** (pour Adobe Commerce >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel [!DNL Google Analytics] Les balises GTM 3 ne sont pas déclenchées si [!DNL Google Analytics] 4 GTM n’est pas configuré.
+* **ACSD-51102** (pour Adobe Commerce >=2.4.2 &lt;2.4.7) - Correction du problème en raison duquel une règle de catalogue appliquée à un grand nombre de produits n’est pas correctement indexée lorsque la règle est activée par une mise à jour planifiée.
+* **ACSD-50368** (pour Adobe Commerce et Magento Open Source >= 2.4.3 &lt;2.4.5) - Correction du problème en raison duquel la variable `group_id` est ignoré lorsqu’un client est créé par le biais de l’API REST asynchrone ou de l’API REST en bloc asynchrone.
+* **ACSD-51497** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.0 || >= 2.4.1 &lt;2.4.7) - Correction du problème qui empêchait un client de trier une page de catalogue par attribut personnalisé du type de liste déroulante.
+* **ACSD-51408** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt; 2.4.7) - Correction du problème en raison duquel l’état de l’élément de commande était incorrectement défini sur *[!UICONTROL Backordered]*.
+* **ACSD-51735** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.5) - Correction du problème en raison duquel l’état de l’élément de commande était incorrectement défini sur *[!UICONTROL Ordered]* lorsque le stock de produit est *0*.
+* **ACSD-51792** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.6) - Correction du problème en raison duquel une page ne comporte pas l’événement d’impression lors de la [!DNL Google Tag Manager] 4 est activé.
+* **ACSD-51471** (pour Adobe Commerce >=2.4.3 &lt;2.4.7) - Correction du problème qui empêchait un utilisateur administrateur d’enregistrer une mise à jour planifiée pour un produit groupé qui utilise un produit simple dont la mise à jour est planifiée.
+* **ACSD-51700** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction de l’erreur qui se produit lors du changement d’affichage de magasin sur une page de modification de produit téléchargeable dans l’administrateur.
+* **ACSD-51120** (pour Adobe Commerce >=2.3.7 &lt;2.4.3) - Correction du problème en raison duquel le cache des demandes de GET GraphQL n’est pas effacé pour les pages CMS contenant des blocs CMS mis à jour par le biais d’une mise à jour intermédiaire.
+* **ACSD-51240** (pour Adobe Commerce >=2.4.4 &lt;2.4.6) - Correction du problème d’absence du fichier téléchargé si l’enregistrement est effectué via le formulaire d’enregistrement de l’entreprise.
+* **ACSD-51907** (pour Adobe Commerce >=2.4.2 &lt;2.4.3) - Correction du problème qui empêchait un utilisateur administrateur restreint de créer une note de crédit avec un remboursement hors ligne.
+* **ACSD-52148** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.4) - Correction du problème en raison duquel la variable [!DNL Google V3 reCAPTCHA] La connexion de l’administrateur échoue parfois.
+* **ACSD-51431** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction du problème d’état d’un indexeur *working* même s’il n’y a pas de nouvelles entrées dans le fichier de modification.
+* **ACSD-51892** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction du problème de performances où les fichiers de configuration se chargent plusieurs fois pendant le déploiement.
+* ACSD-51114 obsolète.
 
 ## v1.1.32 {#v1-1-32}
 
@@ -544,7 +567,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 ## v1.0.17 {#v1-0-17}
 
-* **MDVA-34012** (*pour Adobe Commerce >=2.3.1 &lt;2.4.3*) - Correction du problème en raison duquel la variable *Utiliser la valeur par défaut* est effacée une fois les modifications planifiées appliquées. Le problème apparaît une fois que les modifications planifiées ne sont plus en vigueur.
+* **MDVA-34012** (*pour Adobe Commerce >=2.3.1 &lt;2.4.3*) - Correction du problème en raison duquel la variable *Utiliser la valeur par défaut* est effacée une fois les modifications planifiées appliquées. Le problème s’affiche une fois que les modifications planifiées ne sont plus en vigueur.
 * **MDVA-35064** (*pour Adobe Commerce >=2.3.3 &lt;2.4.3*) - Correction du problème en raison duquel les réécritures d’URL ne sont pas générées pour les produits configurables créés via l’API.
 * **MDVA-34943** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2*) : correction d’un problème en raison duquel l’ordre rapide mettait en cache les SKU précédemment saisis.
 * **MDVA-35197** (*pour Adobe Commerce >=2.3.5 &lt;2.4.0*) - Correction d’un problème qui entraînait une erreur lors de l’ajout au panier à l’aide de GraphQL si des produits précédemment ajoutés devenaient en rupture de stock.
