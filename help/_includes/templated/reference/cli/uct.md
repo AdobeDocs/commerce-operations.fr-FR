@@ -1,5 +1,5 @@
 ---
-source-git-commit: adb585771fb1353614ea600117f18ba8b55b65f0
+source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Version du script d’achèvement
 
 ### `--help`, `-h`
 
-Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage pour le \&lt;info>list\&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -126,7 +126,7 @@ Suivi du journal de débogage de fin
 
 ### `--help`, `-h`
 
-Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage pour le \&lt;info>list\&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -205,7 +205,7 @@ Pour générer l’aide de la commande brute
 
 ### `--help`, `-h`
 
-Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage pour le \&lt;info>list\&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -289,7 +289,7 @@ Pour ignorer les arguments de description des commandes
 
 ### `--help`, `-h`
 
-Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage pour le \&lt;info>list\&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -353,7 +353,7 @@ Chemin de résolution des problèmes dans .
 
 ### `--help`, `-h`
 
-Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage pour le \&lt;info>list\&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -428,7 +428,7 @@ Chemin du fichier vers lequel la sortie sera exportée (format Json)
 
 ### `--help`, `-h`
 
-Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage pour le \&lt;info>list\&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -499,7 +499,7 @@ version cible (par exemple, 2.4.5).
 
 ### `--help`, `-h`
 
-Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage pour le \&lt;info>list\&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -575,7 +575,7 @@ Chemin du fichier vers lequel la sortie sera exportée (format JSON)
 
 ### `--help`, `-h`
 
-Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage pour le \&lt;info>list\&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -683,7 +683,7 @@ Contexte d&#39;exécution. Cette option est destinée à des fins d’intégrati
 
 ### `--help`, `-h`
 
-Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage de la variable &lt;info>list&lt;/info> command
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage pour le \&lt;info>list\&lt;/info> command
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
