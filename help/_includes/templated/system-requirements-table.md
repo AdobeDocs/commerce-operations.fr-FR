@@ -1,15 +1,11 @@
 ---
-source-git-commit: 0167c2dc9862c88cc26acf820058e7ed300d6582
+source-git-commit: e790327231f6d6ad97a03460f361e5fb63b27a37
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 70%
+source-wordcount: '287'
+ht-degree: 86%
 
 ---
 # Configuration requise
-
->[!IMPORTANT]
->
->La prise en charge de la version du service et de la compatibilité pour Adobe Commerce sur l’infrastructure cloud est déterminée par les versions déployées sur l’infrastructure cloud et diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Voir [Logiciels et services pris en charge](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) dans le _Guide Cloud_. Par exemple, Elasticsearch 7.17 est pris en charge sur 2.4.4 pour les déploiements on-premise, mais Open Search 1.2 est pris en charge sur l’infrastructure cloud.
 
 >[!NOTE]
 >
