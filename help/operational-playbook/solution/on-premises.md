@@ -2,7 +2,8 @@
 title: Hébergement commercial sur site
 description: Les solutions d’hébergement basées sur le cloud sont très populaires, mais l’hébergement sur site peut avoir un sens pour votre projet d’e-commerce.
 exl-id: e505c216-2d6c-4ca4-a4ec-4853cd9347fe
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Install
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%

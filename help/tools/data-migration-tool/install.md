@@ -1,13 +1,15 @@
 ---
 title: Installez le [!DNL Data Migration Tool]
 description: Découvrez comment installer le [!DNL Data Migration Tool] pour transférer des données entre le Magento 1 et le Magento 2.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
+topic: Commerce, Migration
+feature: Configuration, Install
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
 
 ---
-
 
 # Installez le [!DNL Data Migration Tool]
 

@@ -1,13 +1,14 @@
 ---
 title: Personnalisez le [!DNL Data Migration Tool]
 description: Découvrez comment personnaliser le [!DNL Data Migration Tool] pour transférer des données créées par des extensions entre Magento 1 et Magento 2.
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 0%
 
 ---
-
 
 # Configurez la variable [!DNL Data Migration Tool]
 
@@ -132,7 +133,7 @@ Magento 2 `greatblog_post` le tableau se présente désormais comme suit :
 | author_id | SMALLINT |
 ```
 
-Pour migrer toutes les données de l’ancienne structure de tableaux vers une nouvelle, vous pouvez créer une étape personnalisée dans le `config.xml` fichier . Par exemple :
+Pour migrer toutes les données de l’ancienne structure de tableaux vers une nouvelle, vous pouvez créer une étape personnalisée dans le `config.xml` fichier . Par exemple :
 
 ```xml
 <steps mode="data">

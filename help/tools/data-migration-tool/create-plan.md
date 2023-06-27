@@ -1,13 +1,14 @@
 ---
 title: Création d’un plan de migration des données
 description: Suivez ces étapes pour créer un plan de migration de données afin de garantir la réussite de la mise à niveau de Magento 1 vers Magento 2.
-source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
+exl-id: a14237f3-c5fe-4f5f-86eb-ed4c39507bff
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 0%
 
 ---
-
 
 # Création d’un plan de migration des données
 

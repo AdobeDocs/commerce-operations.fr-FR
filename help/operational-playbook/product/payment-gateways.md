@@ -2,7 +2,8 @@
 title: Passerelles de paiement
 description: Choisissez un fournisseur de passerelle de paiement pour votre projet de commerce électronique en fonction des besoins de votre entreprise.
 exl-id: eab50191-0744-41da-99ba-2e06ea61da27
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Payments
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
@@ -15,7 +16,7 @@ Il fut un temps où l&#39;argent liquide était la principale source de transact
 
 ![Logs du fournisseur de passerelle de paiement](../../assets/playbooks/payment-gateways.png)
 
-Une passerelle de paiement est un fournisseur de services qui connecte et traite les paiements pour les sites web de commerce électronique. Ils jouent un rôle essentiel dans les taux d’expérience d’achat et de conversion des clients. Les systèmes de paiement compliqués ont tendance à pousser les clients à abandonner leur panier. Il est important de fournir aux clients un système de paiement facile et convivial où, même si un mode de paiement échoue, ils disposent d’une autre méthode pour les motiver à effectuer l’achat.
+Une passerelle de paiement est un fournisseur de services qui connecte et traite les paiements pour les sites web de commerce électronique. Ils jouent un rôle essentiel dans les taux d’expérience d’achat et de conversion des clients. Les systèmes de paiement compliqués ont tendance à pousser les clients à abandonner leur panier. Il est important de fournir aux clients un système de paiement facile et convivial où même si un mode de paiement échoue, ils disposent d’une autre méthode pour les motiver à effectuer l’achat.
 
 ## Exigences de révision
 

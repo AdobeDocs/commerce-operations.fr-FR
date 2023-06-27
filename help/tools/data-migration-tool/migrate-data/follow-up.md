@@ -1,13 +1,14 @@
 ---
 title: Suivi de la migration des données
 description: Découvrez comment vérifier que la migration des données de votre Magento 1 vers Magento 2 a réussi et que toutes les fonctionnalités fonctionnent comme prévu.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: a55f357b-6c95-49d6-b2f1-c2e403a8c85f
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%
 
 ---
-
 
 # Suivi de la migration des données
 

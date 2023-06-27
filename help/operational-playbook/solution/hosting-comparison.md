@@ -2,7 +2,8 @@
 title: Comparaison de l’hébergement dans Commerce
 description: Prenez la meilleure décision concernant l’hébergement de votre projet de commerce électronique en consultant ce tableau de comparaison.
 exl-id: 8d1f0b85-2874-4a4b-9fae-1fb367a7f85e
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Cloud, Paas
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%
@@ -106,7 +107,7 @@ Le tableau suivant présente les avantages et les inconvénients des solutions c
         <tr>
             <td>Assistance informatique</td>
             <td>L’infrastructure et l’expertise en application sont facilement disponibles.</td>
-            <td>Une équipe informatique dédiée est nécessaire, en particulier lorsque les applications sont adaptées aux besoins spécifiques d’une entreprise.</td>
+            <td>Une équipe informatique dédiée est nécessaire, en particulier lorsque les applications sont conçues pour répondre aux besoins uniques d’une entreprise.</td>
             <td>En raison de la grande prudence inhérente aux déploiements dans le cloud, l’assistance informatique peut gérer plus avec moins de temps et d’efforts.</td>
             <td>La courbe d'apprentissage du cloud est importante et le personnel formé de manière adéquate coûte cher.</td>
         </tr>

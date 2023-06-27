@@ -1,13 +1,14 @@
 ---
 title: Présentation de la migration
 description: Découvrez comment commencer la migration des données de Magento 1 vers Magento 2 avec le [!DNL Data Migration Tool].
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
 
 ---
-
 
 # Présentation de la migration
 

@@ -2,7 +2,8 @@
 title: Guide d’installation
 description: Utilisation de ce guide pour l’installation [!DNL Site-Wide Analysis Tool] pour votre site web
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
-source-git-commit: 4210746509be99bb3c943906c99f70ea420ba74a
+feature: Configuration, Install
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '1168'
 ht-degree: 0%
@@ -46,9 +47,10 @@ Votre infrastructure sur site doit répondre aux exigences suivantes avant d’i
 - Systèmes d’exploitation
 
    - [!DNL Linux x86-64] les distributions, telles que [!DNL Red Hat® Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian], et similaires
-   >[!IMPORTANT]
-   >
-   >Adobe Commerce n’est pas pris en charge sur [!DNL Microsoft Windows] ou [!DNL macOS].
+
+  >[!IMPORTANT]
+  >
+  >Adobe Commerce n’est pas pris en charge sur [!DNL Microsoft Windows] ou [!DNL macOS].
 
 - Adobe Commerce 2.4.1 ou version ultérieure
 
@@ -192,6 +194,7 @@ Si vous ne souhaitez pas utiliser notre [script shell](https://github.com/magent
       ```bash
       tar -xf launcher.linux-amd64.tar.gz
       ```
+
    Pour le **ARM64** architecture :
 
    1. Téléchargez l’archive du lanceur.
@@ -205,7 +208,6 @@ Si vous ne souhaitez pas utiliser notre [script shell](https://github.com/magent
       ```bash
       tar -xf launcher.linux-arm64.tar.gz
       ```
-
 
 1. *(Facultatif)* Vérifiez la signature du fichier de somme de contrôle.
 

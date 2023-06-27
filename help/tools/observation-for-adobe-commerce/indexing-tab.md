@@ -1,9 +1,11 @@
 ---
-title: "Le [!UICONTROL Indexing] tab"
+title: Le [!UICONTROL Indexing] tab
 description: En savoir plus sur les [!UICONTROL Indexing] de [!DNL Observation for Adobe Commerce].
-source-git-commit: e6038d6f0add9d01d650914b35a1daba885fa7f8
+exl-id: c7e123b7-2d0c-49d4-9f76-128939dc02a8
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---

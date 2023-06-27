@@ -1,13 +1,14 @@
 ---
-title: "Le [!DNL QuickView] tab"
+title: Le [!DNL QuickView] tab
 description: Le [!DNL QuickView] Cet onglet décrit les différents types d’alerte que vous pouvez voir, y compris ceux qui ont un faible espace disque et une utilisation du serveur.
-source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
+exl-id: 34405f9b-30de-4fab-acca-64a8e308ca90
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%
 
 ---
-
 
 # Le [!DNL QuickView] tab
 

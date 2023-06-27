@@ -1,9 +1,11 @@
 ---
-title: "Comment utiliser la variable [!DNL Observation for Adobe Commerce] nerdlet"
+title: Comment utiliser la variable [!DNL Observation for Adobe Commerce] nerdlet
 description: Découvrez comment utiliser le [!DNL Observation for Adobe Commerce] le petit oiseau.
-source-git-commit: e6038d6f0add9d01d650914b35a1daba885fa7f8
+exl-id: 3c368814-0786-4e8f-ac81-9a77cec94677
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---

@@ -1,13 +1,14 @@
 ---
-title: "[!DNL Data Migration Tool] spécification technique"
-description: "En savoir plus sur les détails de mise en oeuvre de la variable [!DNL Data Migration Tool] et comment étendre lors du transfert de données entre Magento 1 et Magento 2."
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: '[!DNL Data Migration Tool] spécification technique'
+description: En savoir plus sur les détails de mise en oeuvre de la variable [!DNL Data Migration Tool] et comment étendre lors du transfert de données entre Magento 1 et Magento 2.
+exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '2079'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Data Migration Tool] spécification technique
 

@@ -1,13 +1,15 @@
 ---
 title: Bonnes pratiques relatives à la migration des données
 description: Suivez ces bonnes pratiques de migration de données pour assurer une mise à niveau réussie de Magento 1 vers Magento 2.
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+exl-id: 0cd51987-a514-434d-b21e-2739ada2ce85
+feature: Best Practices, Configuration
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques relatives à la migration des données
 
@@ -23,9 +25,9 @@ Ces données peuvent inclure des logs, des devis de commande, des produits réce
 
 * Pour améliorer les performances, **activez la variable `direct_document_copy` option** dans votre `config.xml` fichier :
 
-   ```xml
-   <direct_document_copy>1</direct_document_copy>
-   ```
+  ```xml
+  <direct_document_copy>1</direct_document_copy>
+  ```
 
 >[!NOTE]
 >

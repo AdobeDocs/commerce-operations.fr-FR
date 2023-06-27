@@ -2,7 +2,8 @@
 title: Conseils sur les tests de performance
 description: Découvrez comment définir des indicateurs de performance clés pour lancer votre solution Adobe Commerce et Adobe Experience Manager.
 exl-id: 4b0d9c4f-e611-452d-a80f-27f82705935d
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+topic: Commerce, Performance
+source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 Pour évaluer l’efficacité de toutes les modifications ci-dessus, des tests de performance approfondis doivent être exécutés avant la mise en service et avant tout déploiement important futur dans vos environnements de production. Lors de la planification de vos tests de charge, il est important de simuler autant que possible le trafic réel des consommateurs.
 
-Les zones les plus gourmandes en ressources du site AEM/CIF/Adobe Commerce sont celles qui ne peuvent pas être mises en cache, comme le processus de passage en caisse et la recherche de site. La navigation statique des pages, et donc pouvant être mise en cache, comme pour les pages de détails des produits (PDP) et les pages de liste de produits (PLP), constitue la majorité du trafic vers un site d’e-commerce en général. Les scripts et les scénarios du test doivent donc refléter cela pour mesurer les limites de la plateforme.
+Les zones les plus gourmandes en ressources du site AEM/CIF/Adobe Commerce sont celles qui ne peuvent pas être mises en cache, comme le processus de passage en caisse et la recherche de site. La navigation statique des pages, et donc pouvant être mise en cache, comme pour les pages de détails des produits (PDP) et les pages de liste de produits (PLP), constitue la majeure partie du trafic vers un site d’e-commerce en général. Les scripts et les scénarios du test doivent donc refléter cela pour mesurer les limites de la plateforme.
 
 Le fait qu’un seul script s’exécute pour votre test de chargement navigue sur le site sans temps d’attente entre les étapes, et termine toujours le processus de passage en caisse chaque fois ne donne pas une indication fiable des limites de la plateforme, car ce n’est pas ce que serait un scénario réel.
 
@@ -44,7 +45,7 @@ Les instructions de haut niveau Jeter suivantes doivent être prises en compte l
       - Comme le flux de passage en caisse n’est pas mis en cache et qu’il s’agit généralement d’une opération gourmande en ressources, la définition d’un chiffre irréaliste pour le nombre de personnes qui exécutent des commandes par rapport au nombre de navigateurs du site donne un résultat peu fiable pour le volume de trafic que votre site peut traiter.
 - Nettoyez tous les caches avant chaque exécution de test :
    - Le cache du Dispatcher AEM doit être entièrement nettoyé.
-   - Le cache rapide et interne d’Adobe Commerce doit être entièrement vidé et nettoyé. Cela peut être effectué via le contrôle du cache dans l’administration Adobe Commerce.
+   - Adobe Commerce Le cache rapide et interne doit être complètement vidé et nettoyé. Pour ce faire, vous pouvez utiliser le contrôle du cache dans l’administration Adobe Commerce.
 - Inclure une période de progression dans le test Jeter : Aucune période de progression n’est définie, ce qui signifie qu’il n’y a aucune progression progressive du trafic et aucune chance pour le site de mettre en cache les pages et composants fréquemment consultés de la page. Dans la vie réelle, il serait inhabituel que tout le trafic de pointe arrive sur un site entièrement non mis en cache exactement au même moment. Par conséquent, une période de progression doit être incluse dans les scripts de test Jeter pour permettre au cache de se développer comme ce serait le cas sur un site de commerce électronique réel.
 - Un &quot;temps d’attente&quot; entre chaque étape d’une itération doit être utilisé. En réalité, un utilisateur ne sauterait pas immédiatement sur la page suivante du site pendant son parcours, un temps d’attente s’écoulerait pendant que l’utilisateur lisait la page et décidait de sa prochaine action.
 - Si vous définissez les groupes de threads sur une boucle infinie, mais pour une durée définie de x (par exemple, 60 minutes), vous obtiendrez un test répétable, avec des temps de réponse médians comparables aux exécutions de test précédentes. Cela signifie qu’après la période de montée en charge de la configuration, le nombre cible d’utilisateurs virtuels s’exécute simultanément, ce qui se poursuit pendant la durée de la boucle définie.
