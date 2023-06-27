@@ -1,13 +1,14 @@
 ---
 title: Création ou mise à jour de la configuration du déploiement
 description: Pour gérer votre configuration de déploiement Adobe Commerce ou Magento Open Source, procédez comme suit.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+feature: Install, Deploy, Configuration
+exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 0%
 
 ---
-
 
 # Création ou mise à jour de la configuration du déploiement
 
@@ -42,7 +43,7 @@ Le tableau suivant décrit la signification des paramètres et valeurs d’insta
 | `--session-save` | Utilisez l’une des méthodes suivantes :<br><br>- `db` pour stocker des données de session dans le [base](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). Choisissez un stockage en base si vous disposez d&#39;une base en grappe ; sinon, le stockage basé sur les fichiers pourrait ne pas être très avantageux.<br><br>- `files` pour stocker les données de session dans le système de fichiers. Le stockage des sessions basées sur des fichiers est approprié, sauf si l’accès au système de fichiers est lent, si vous disposez d’une base de données en grappe ou si vous souhaitez stocker des données de session dans Redis.<br><br>- `redis` pour stocker des données de session dans [Utilisation de Redis pour le stockage de session](../../configuration/cache/config-redis.md). Si vous utilisez Redis pour la mise en cache des pages ou par défaut, Redis doit être déjà installé. | Non |
 | `--key` | Si vous en avez un, spécifiez une clé à chiffrer. [données sensibles](#sensitive-data) dans la base de données. Si vous n’en avez pas, l’application en génère une pour vous. | Non |
 | `--db-init-statements` | Paramètre de configuration MySQL avancé. Utilise les instructions d’initialisation de base de données à exécuter lors de la connexion à la base de données MySQL.<br><br>La valeur par défaut est `SET NAMES utf8;`.<br><br>Consultez une référence similaire à [celui-ci](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) avant de définir des valeurs. | Non |
-| `--http-cache-hosts` | Liste séparée par des virgules des hôtes de la passerelle de cache HTTP vers lesquels envoyer les demandes de purge. (Par exemple, les serveurs vernis.) Utilisez ce paramètre pour spécifier l’hôte ou les hôtes à purger dans la même requête. (Peu importe que vous n’ayez qu’un seul hôte ou plusieurs hôtes.)<br><br>Le format doit être `<hostname or ip>:<listen port>`, où vous pouvez omettre `<listen port>` si c&#39;est le port 80. Par exemple, `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. Ne séparez pas les hôtes avec un espace. | Non |
+| `--http-cache-hosts` | Liste séparée par des virgules des hôtes de la passerelle de cache HTTP vers lesquels envoyer les demandes de purge. (Par exemple, les serveurs vernis.) Utilisez ce paramètre pour spécifier l’hôte ou les hôtes à purger dans la même requête. (Peu importe que vous n’ayez qu’un seul hôte ou plusieurs hôtes.)<br><br>Le format doit être `<hostname or ip>:<listen port>`, où vous pouvez omettre `<listen port>` si c&#39;est le port 80. Par exemple : `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. Ne séparez pas les hôtes avec un espace. | Non |
 
 ## Importation des données de configuration
 

@@ -1,13 +1,14 @@
 ---
 title: Prérequis du moteur de recherche
 description: Pour installer et configurer les logiciels de moteur de recherche pris en charge pour les installations sur site d’Adobe Commerce et de Magento Open Source, procédez comme suit.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Install, Search
+exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 0%
 
 ---
-
 
 # Prérequis du moteur de recherche
 
@@ -40,15 +41,15 @@ Le diagramme qui précède affiche :
 
 * L’application Commerce et le moteur de recherche sont installés sur différents hôtes.
 
-   L’exécution sur des hôtes distincts nécessite un proxy pour fonctionner. (La mise en grappe du moteur de recherche va au-delà de ce guide, mais vous trouverez plus d’informations dans la section [Documentation sur la mise en grappe des Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
+  L’exécution sur des hôtes distincts nécessite un proxy pour fonctionner. (La mise en grappe du moteur de recherche va au-delà de ce guide, mais vous trouverez plus d’informations dans la section [Documentation sur la mise en grappe des Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
 * Chaque hôte possède son propre serveur web ; les serveurs web ne doivent pas nécessairement être identiques.
 
-   Par exemple, l’application Commerce peut exécuter Apache et le moteur de recherche peut exécuter nginx.
+  Par exemple, l’application Commerce peut exécuter Apache et le moteur de recherche peut exécuter nginx.
 
 * Les deux serveurs web utilisent TLS (Transport Layer Security).
 
-   La configuration de TLS dépasse la portée de notre documentation.
+  La configuration de TLS dépasse la portée de notre documentation.
 
 Les requêtes de recherche sont traitées comme suit :
 

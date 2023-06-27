@@ -1,13 +1,14 @@
 ---
 title: Télécharger des exemples de modules du compositeur de données
 description: Suivez ces étapes pour installer des exemples de données Adobe Commerce et Magento Open Source à l’aide du gestionnaire de modules PHP du compositeur.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+feature: Install, Deploy
+exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
 
 ---
-
 
 # Télécharger des exemples de modules du compositeur de données
 
@@ -15,7 +16,7 @@ Cette section explique comment installer des exemples de données si vous dispos
 
 * Téléchargement d’une archive compressée à partir de `https://magento.com/tech-resources/download`.
 
-   Si vous avez téléchargé une archive à partir de GitHub, cette méthode ne fonctionne pas car la variable `composer.json` ne contient pas le fichier `repo.magento.com` URL.
+  Si vous avez téléchargé une archive à partir de GitHub, cette méthode ne fonctionne pas car la variable `composer.json` ne contient pas le fichier `repo.magento.com` URL.
 
 * Utilisé `composer create-project`
 

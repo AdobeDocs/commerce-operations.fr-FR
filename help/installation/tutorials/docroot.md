@@ -1,13 +1,14 @@
 ---
 title: Modification de docroot pour améliorer la sécurité
 description: Empêchez les navigateurs non autorisés d’accéder à Adobe Commerce ou au système de fichiers Magento Open Source sur site.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Install, Security
+exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 0%
 
 ---
-
 
 # Modification de docroot pour améliorer la sécurité
 

@@ -1,13 +1,14 @@
 ---
 title: Configuration d’Apache pour votre moteur de recherche
 description: Pour configurer un moteur de recherche avec le serveur web Apache pour les installations sur site d’Adobe Commerce et de Magento Open Source, procédez comme suit.
-source-git-commit: d3cfd97450164d38fd340b538099739601573d64
+feature: Install, Search
+exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
 
 ---
-
 
 # Configuration d’Apache pour votre moteur de recherche
 
@@ -131,10 +132,9 @@ Où
 
    * Configuration de cron : l’utilisateur du serveur web ou un autre utilisateur.
 
-   Dans cet exemple, nous utilisons l’utilisateur du serveur web, mais c’est à vous de choisir l’utilisateur.
+  Dans cet exemple, nous utilisons l’utilisateur du serveur web, mais c’est à vous de choisir l’utilisateur.
 
    * Configuration de l’Elasticsearch : l’utilisateur est nommé `magento_elasticsearch` dans cet exemple
-
 
 * `<password file name>` doit être un fichier masqué (commence par `.`) et doit refléter le nom de l’utilisateur. Consultez les exemples plus loin dans cette section pour plus d’informations.
 

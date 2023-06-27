@@ -1,13 +1,14 @@
 ---
 title: Configuration de Nginx pour votre moteur de recherche
 description: Pour configurer un moteur de recherche avec le serveur web Nginx pour les installations sur site d’Adobe Commerce et de Magento Open Source, procédez comme suit.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Install, Search
+exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 0%
 
 ---
-
 
 # Configuration de Nginx pour votre moteur de recherche
 
