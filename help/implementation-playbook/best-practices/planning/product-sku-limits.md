@@ -2,15 +2,14 @@
 title: Bonnes pratiques relatives aux limites de produit
 description: Découvrez les bonnes pratiques de configuration des unités de gestion des stocks de produits (SKU) afin d’optimiser les performances du site.
 role: Admin
-feature: Best Practices
-feature-set: Commerce
-source-git-commit: e259f9b999566447469200c93db3bc4ba06434c0
+feature: Best Practices, Catalogs
+exl-id: 37af7b92-05ac-4a4f-9009-11e8d9f95c2f
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques relatives à la configuration du SKU du produit
 

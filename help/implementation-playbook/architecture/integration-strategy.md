@@ -2,7 +2,8 @@
 title: Stratégie d’intégration Adobe Commerce
 description: Consultez les stratégies et options d’intégration pour votre mise en oeuvre Adobe Commerce.
 exl-id: af7cc59a-3ee2-461a-8489-a35fe0288277
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+feature: Integration
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 0%
@@ -15,7 +16,7 @@ La possibilité d’intégrer votre plateforme est &quot;non négociable&quot;. 
 
 Une approche d’intégration globale pour les systèmes front-end et back-end est prise en charge par les API GraphQL performantes, les API REST complètes et l’importation de fichiers par lots entre Adobe Commerce et d’autres systèmes ou services.
 
-L’API Adobe Commerce GraphQL offre une couverture de storefront complète que vous pouvez utiliser pour intégrer à d’autres storefronts, notamment :
+L’API GraphQL d’Adobe Commerce offre une couverture de storefront complète que vous pouvez utiliser pour intégrer à d’autres storefronts, notamment :
 
 - Plateformes d’expérience numérique (DXP) comme Adobe Experience Manager et Bloomreach
 - Systèmes de gestion de contenu (CMS) tels que Drupal et WordPress

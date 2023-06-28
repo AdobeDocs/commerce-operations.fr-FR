@@ -2,15 +2,14 @@
 title: Bonne pratique pour configurer la connexion au Secondaire MySQL
 description: Découvrez comment configurer la connexion au Secondaire MySQL pour les sites Adobe Commerce déployés sur l’infrastructure cloud.
 role: Developer
-feature-set: Commerce
 feature: Best Practices
-source-git-commit: cb86772e9ceabc580ec32ad6ae1206a71ea03946
+exl-id: d65bc80a-c4ec-4ea4-aff1-110592838201
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
-
 
 # Bonne pratique pour configurer la connexion au Secondaire MySQL
 

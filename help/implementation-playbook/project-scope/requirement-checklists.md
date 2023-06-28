@@ -2,7 +2,8 @@
 title: Listes de contrôle des exigences
 description: Utilisez cette liste de questions complètes pour vous aider à vous préparer à une mise en oeuvre d’Adobe Commerce.
 exl-id: 9ac485c5-d491-4022-9366-5e3a382513b6
-source-git-commit: d18be812626723e203d2308be8c3f9783a19b43b
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%

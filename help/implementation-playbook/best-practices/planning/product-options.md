@@ -2,15 +2,14 @@
 title: Bonnes pratiques de configuration des options de produit
 description: Optimisez les performances d’Adobe Commerce en limitant le nombre d’options de produit.
 role: Admin
-feature: Best Practices
-feature-set: Commerce
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+feature: Best Practices, Catalogs
+exl-id: 7571a163-798a-40be-b26f-4a184bceb809
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques relatives aux options de produit
 
@@ -51,4 +50,3 @@ Les augmentations répertoriées ci-dessus peuvent affecter les performances du 
 - [Journal des actions en bloc](https://docs.magento.com/user-guide/system/action-log-bulk-actions.html)
 - [API d’actions en masse d’inventaire](https://developer.adobe.com/commerce/webapi/rest/inventory/bulk-inventory/)
 - [Formation : Gestion des catalogues et des produits à l’aide d’Adobe Commerce](https://learning.adobe.com/catalog/adobe_commerce/cours000000000098643.html)
-

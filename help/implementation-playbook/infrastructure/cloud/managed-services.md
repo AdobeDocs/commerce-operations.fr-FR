@@ -2,7 +2,8 @@
 title: Managed Services
 description: Examinez les responsabilités d’Adobe Managed Services, des clients et des fournisseurs de services cloud pour votre Adobe Commerce concernant la mise en oeuvre de l’infrastructure cloud.
 exl-id: b1442e31-06f4-4aa6-b24a-b6cda630d52f
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+feature: Cloud, Services
+source-git-commit: 7c2e2bdabf47e1367ffb6761230d3d43f0f9d0cf
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
@@ -65,4 +66,4 @@ Le client est principalement responsable de la sécurité de sa mise en oeuvre p
 
 - Le client doit effectuer des tests de pénétration de son application personnalisée. Ces responsabilités peuvent être gérées par des ressources techniques fournies par le client, les partenaires de mise en oeuvre ou les services professionnels d’Adobe Commerce.
 
-- Les clients sont responsables des exigences PCI de leur application personnalisée et de leurs propres processus. La conformité PCI du client s’appuie sur les certifications PCI d’AWS et d’Adobe Commerce afin de minimiser les domaines à examiner.
+- Les clients sont responsables des exigences PCI de leur application personnalisée et de leurs propres processus. La conformité PCI du client s’appuie sur les certifications PCI d’AWS et d’Adobe Commerce afin de minimiser les domaines à vérifier.

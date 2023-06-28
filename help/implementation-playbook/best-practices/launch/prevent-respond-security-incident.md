@@ -2,15 +2,14 @@
 title: Prévention et réponse à un incident de sécurité
 description: Découvrez les bonnes pratiques pour éviter et répondre aux incidents de sécurité dans votre projet d’infrastructure cloud Adobe Commerce.
 role: Admin, Developer, Leader, User
-feature-set: Commerce
 feature: Best Practices
-source-git-commit: bb9b8cc9993a70ea50667f08c8260759ab0f91dc
+exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques pour aider à prévenir un incident de sécurité et à y répondre
 
@@ -62,10 +61,10 @@ Le rapport Journaux d’actions affiche un enregistrement détaillé de toutes l
 - Analysez les événements à l’aide de la méthode [Observation pour l’outil Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=en).
 L’outil Observation pour Adobe Commerce vous permet d’analyser des problèmes complexes afin d’identifier les causes profondes. Au lieu de suivre des données disparates, vous pouvez passer votre temps à mettre en corrélation des événements et des erreurs afin d’obtenir des informations plus approfondies sur les causes des goulets d’étranglement en termes de performances.
 L’outil est conçu pour vous donner une vue d’ensemble claire de certains problèmes potentiels liés au site, afin de vous aider à identifier la cause première et à optimiser les performances des sites. Cliquez sur le lien vers la documentation de l’outil Observation pour Adobe Commerce ci-dessus pour accéder à la documentation de l’outil. Il existe une section dans la documentation qui détaille toutes les informations qui se trouvent sur le **Sécurité** .
-- Analyse des journaux avec [Nouveaux journaux de recomposition](https://devdocs.magento.com/cloud/project/new-relic.html#new-relic-logs). Les projets Adobe Commerce sur l’infrastructure cloud Pro incluent [Nouveaux journaux de recomposition](https://docs.newrelic.com/docs/logs/new-relic-logs/get-started/introduction-new-relic-logs) service. Le service est préconfiguré pour agréger toutes les données de journal de vos environnements d’évaluation et de production afin de les afficher dans un tableau de bord de gestion des journaux centralisé.
+- Analyse des journaux avec [Journaux New Relic](https://devdocs.magento.com/cloud/project/new-relic.html#new-relic-logs). Les projets Adobe Commerce sur l’infrastructure cloud Pro incluent [Journaux New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/get-started/introduction-new-relic-logs) service. Le service est préconfiguré pour agréger toutes les données de journal de vos environnements d’évaluation et de production afin de les afficher dans un tableau de bord de gestion des journaux centralisé.
 Vous pouvez utiliser le service New Relic Logs pour effectuer les tâches suivantes :
-   - Utilisation [Nouvelles requêtes relatives](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) pour rechercher des données de journal agrégées.
-   - Visualisez les données de journal à l’aide de l’application New Relic Logs (Nouveaux journaux de redirection).
+   - Utilisation [Requêtes New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) pour rechercher des données de journal agrégées.
+   - Visualisez les données de journal à l’aide de l’application New Relic Logs.
 
 ## Informations supplémentaires
 

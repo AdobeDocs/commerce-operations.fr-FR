@@ -3,11 +3,11 @@ title: Bonnes pratiques relatives à la modification des tables de base de donn�
 description: Découvrez comment et à quel moment modifier des tables de base de données tierces et Adobe Commerce.
 role: Developer, Architect
 feature: Best Practices
-feature-set: Commerce
 last-substantial-update: 2022-11-15T00:00:00Z
-source-git-commit: 570fa4877f578f636736f0404169ed215fd06b24
+exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Migration depuis [!DNL Magento 1] et d’autres plateformes de commerce électro
 
 La Principale raison pour laquelle vous ne pouvez pas modifier les tables principales est qu’Adobe Commerce inclut une logique sous-jacente contenant des requêtes SQL brutes. Les modifications apportées à la structure du tableau peuvent entraîner des effets secondaires inattendus, difficiles à résoudre. La modification peut également affecter les opérations DDL (Data Definition Language), ce qui a un impact inattendu et imprévisible sur les performances.
 
-Une autre raison d’éviter de modifier la structure de la table de base de données est que vos modifications peuvent entraîner des problèmes si l’équipe de développement principale ou les développeurs tiers modifient la structure de leurs tables de base de données. Par exemple, il existe quelques tables de base de données de base de données de base de données de base qui ont une colonne appelée `additional_data`. Cela a toujours été une `text` type de colonne. Toutefois, pour des raisons de performances, l’équipe principale peut remplacer la colonne par `longtext`. Ce type de colonne est un alias pour JSON. La conversion de ce type de colonne permet d’ajouter à cette colonne des gains de performances et des recherches, qui n’existent pas en tant que `text` type. Pour en savoir plus sur ce sujet, voir [Type de données JSON](https://mariadb.com/kb/en/json-data-type/){target=&quot;_blank&quot;}.
+Une autre raison d’éviter de modifier la structure de la table de base de données est que vos modifications peuvent entraîner des problèmes si l’équipe de développement principale ou les développeurs tiers modifient la structure de leurs tables de base de données. Par exemple, il existe quelques tables de base de données de base de données de base de données de base qui ont une colonne appelée `additional_data`. Cela a toujours été une `text` type de colonne. Toutefois, pour des raisons de performances, l’équipe principale peut remplacer la colonne par `longtext`. Ce type de colonne est un alias pour JSON. La conversion de ce type de colonne permet d’ajouter à cette colonne des gains de performances et des recherches, qui n’existent pas en tant que `text` type. Pour en savoir plus sur ce sujet, voir [Type de données JSON](https://mariadb.com/kb/en/json-data-type/){target="_blank"}.
 
 ## Savoir quand enregistrer ou supprimer des données
 
@@ -34,15 +34,15 @@ Si votre projet contient des données héritées, telles que d’anciennes comma
 
 Dans ce cas, la base de données doit être migrée vers un serveur, offrant soit une interface web pour lire les données, soit une formation à l’utilisation de MySQL Workbench ou d’outils similaires. L’exclusion de ces données de la nouvelle base de données accélère la migration en permettant à l’équipe de développement de se concentrer sur le nouveau site plutôt que de résoudre les problèmes de migration des données.
 
-Une autre option connexe permettant de conserver les données à l’extérieur du commerce, mais vous permettant de les utiliser en temps réel, consiste à utiliser d’autres outils, tels que l’impression GraphQL. Cette option combine différentes sources de données et les renvoie sous la forme d’une seule réponse.
+Une autre option connexe permettant de conserver les données à l’extérieur du commerce, mais vous permettant de les utiliser en temps réel, consiste à utiliser d’autres outils, tels que GraphQL mesh. Cette option combine différentes sources de données et les renvoie sous la forme d’une seule réponse.
 
 Par exemple, vous pouvez `stitch` ensemble d’anciennes commandes provenant d’une base de données externe, par exemple l’ancien site Magento 1 qui est mis hors service. Ensuite, à l’aide de l’impression GraphQL, affichez-les dans l’historique des commandes des clients. Ces anciennes commandes peuvent être combinées avec les commandes de votre [!DNL Adobe Commerce] environnement.
 
-Pour plus d’informations sur l’utilisation de l’impression d’API avec GraphQL, voir [Qu’est-ce que le maillage API ?](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target=&quot;_blank&quot;}) et [Passerelle de maillage GraphQL](https://developer.adobe.com/graphql-mesh-gateway/){target=&quot;_blank&quot;}.
+Pour plus d’informations sur l’utilisation de l’intégration d’API à GraphQL, voir [Qu’est-ce que le maillage API ?](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) and [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
 ## Migration des données héritées avec des attributs d’extension
 
-Si vous déterminez que les données héritées nécessitent une migration ou que de nouvelles données doivent être enregistrées dans [!DNL Adobe Commerce], Adobe recommande d’utiliser [attributs d’extension](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target=&quot;_blank&quot;}. L’utilisation d’attributs d’extension pour enregistrer des données supplémentaires présente les avantages suivants :
+Si vous déterminez que les données héritées nécessitent une migration ou que de nouvelles données doivent être enregistrées dans [!DNL Adobe Commerce], Adobe recommande d’utiliser [attributs d’extension](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. L’utilisation d’attributs d’extension pour enregistrer des données supplémentaires présente les avantages suivants :
 
 - Vous pouvez contrôler les données conservées et la structure de la base de données, ce qui garantit que les données sont enregistrées avec le type de colonne correct et les index adéquats.
 - La plupart des entités dans [!DNL Adobe Commerce] et [!DNL Magento Open Source] prennent en charge l’utilisation d’attributs d’extension.
@@ -52,9 +52,9 @@ Deux exemples d’emplacements de stockage sont des tables de base de données e
 
 ### Considérer d&#39;autres alternatives
 
-En tant que développeur, il est essentiel de toujours envisager d’utiliser des outils en dehors de vos [!DNL Adobe Commerce] environnement, tel que GraphQL mesh et Adobe App Builder. Ces outils peuvent vous aider à conserver l’accès aux données, mais n’ont aucun impact sur l’application commerciale principale ou ses tables de base de données sous-jacentes. Grâce à cette approche, vous exposez vos données par le biais d’une API. Ensuite, vous ajoutez une source de données à votre configuration App Builder. Avec GraphQL Mesh, vous pouvez combiner ces sources de données et produire une seule réponse, comme indiqué dans la section [données héritées](#legacy-data).
+En tant que développeur, il est essentiel de toujours envisager d’utiliser des outils en dehors de vos [!DNL Adobe Commerce] , comme GraphQL mesh et Adobe App Builder. Ces outils peuvent vous aider à conserver l’accès aux données, mais n’ont aucun impact sur l’application commerciale principale ou ses tables de base de données sous-jacentes. Grâce à cette approche, vous exposez vos données par le biais d’une API. Ensuite, vous ajoutez une source de données à votre configuration App Builder. Avec GraphQL Mesh, vous pouvez combiner ces sources de données et produire une seule réponse, comme indiqué dans la section [données héritées](#legacy-data).
 
-Pour plus d’informations sur l’impression GraphQL, voir [Passerelle de maillage GraphQL](https://developer.adobe.com/graphql-mesh-gateway/){target=&quot;_blank&quot;}. Pour plus d’informations sur Adobe App Builder, voir [Présentation d’App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target=&quot;_blank&quot;}.
+Pour plus d’informations sur l’impression GraphQL, voir [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. For information about the Adobe App Builder,  see [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
 
 ## Modification d’un tableau principal ou d’un tableau tiers
 
@@ -71,13 +71,13 @@ Adobe recommande de procéder comme suit lorsque vous ajoutez une colonne à un 
 
 1. Créez un module avec un nom dans votre espace de noms qui représente ce que vous mettez à jour.
 
-   Par exemple: `app/code/YourCompany/Customer`
+   Par exemple : `app/code/YourCompany/Customer`
 
-1. Créez les fichiers appropriés pour activer le module (voir [Création d’un module](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target=&quot;_blank&quot;}.
+1. Créez les fichiers appropriés pour activer le module (voir [Création d’un module](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 
 1. Créez un fichier appelé `db_schema.xml` dans le `etc` et apportez les modifications appropriées.
 
-   Le cas échéant, générez une `db_schema_whitelist.json` fichier . Voir [Schéma déclaratif](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target=&quot;_blank&quot;} pour plus d’informations.
+   Le cas échéant, générez une `db_schema_whitelist.json` fichier . Voir [Schéma déclaratif](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"} pour plus d’informations.
 
 ### Effets potentiels
 

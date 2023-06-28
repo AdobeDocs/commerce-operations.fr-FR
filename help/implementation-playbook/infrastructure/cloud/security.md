@@ -2,7 +2,8 @@
 title: Sécurité des infrastructures dans le cloud
 description: Découvrez comment sécuriser Adobe Commerce sur l’infrastructure cloud.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
-source-git-commit: 50882bebb4712e6cf095a81297684f37e15b1a6b
+feature: Cloud, Security
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1644'
 ht-degree: 0%
@@ -92,7 +93,7 @@ Le RGPD est un cadre juridique qui définit des lignes directrices pour la colle
 
 Essentiellement, les visiteurs doivent être informés des données que le site leur collecte et donner leur consentement explicite à la collecte d’informations. Les sites doivent informer les visiteurs si les données personnelles détenues par le site sont violées.
 
-Le commerçant ou la société qui gère le site doit également disposer d’un délégué à la protection des données dédié qui supervise la sécurité des données du site. Cette personne (ou l’équipe de gestion de site web) doit être disponible en cas de demande d’effacement de ses données par un visiteur.
+Le commerçant ou la société qui gère le site doit également disposer d’un délégué à la protection des données dédié qui supervise la sécurité des données du site. Cette personne (ou l’équipe de gestion de site web) doit être disponible en contact si un visiteur demande que ses données soient effacées.
 
 Le RGPD demande également que toute information d’identification personnelle (comme les noms, la race et la date de naissance) collectée soit rendue anonyme, soit rendue anonyme.
 

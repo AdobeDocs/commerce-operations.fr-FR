@@ -3,14 +3,13 @@ title: Bonnes pratiques de configuration pour les indexeurs
 description: Maintenez et optimisez les performances du site en suivant les bonnes pratiques de configuration de l’indexeur.
 role: Admin, User
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
+exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques relatives à la configuration de l’indexeur
 

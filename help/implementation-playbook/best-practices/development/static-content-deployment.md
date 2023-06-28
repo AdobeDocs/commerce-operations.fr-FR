@@ -3,14 +3,13 @@ title: Bonnes pratiques de déploiement de contenu statique
 description: Découvrez comment éviter les problèmes liés au contenu statique qui n’apparaît pas sur votre vitrine Adobe Commerce ou Magento Open Source.
 role: Developer
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+exl-id: 9f521963-6fe4-4844-b2d1-fd457b706900
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques de déploiement de contenu statique
 
@@ -54,4 +53,3 @@ Dans notre documentation destinée aux développeurs :
 * [Flux de déploiement](../../../performance/deployment-flow.md)
 * [Déploiement sans interruption](https://devdocs.magento.com/cloud/deploy/reduce-downtime.html)
 * [Optimisation du déploiement dans le cloud](https://devdocs.magento.com/cloud/deploy/optimize-cloud-deployment.html)
-

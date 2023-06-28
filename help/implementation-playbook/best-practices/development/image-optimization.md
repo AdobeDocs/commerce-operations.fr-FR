@@ -3,14 +3,13 @@ title: Optimiser les images pour un site plus réactif
 description: Découvrez les étapes d’optimisation des images et d’optimisation rapide des images pour optimiser le temps de réponse sur vos sites Adobe Commerce.
 role: Developer, Admin
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: e156fcafc5792036b37d9b199b870f1888c3f1ff
+exl-id: ada8b987-97ed-4232-9e1b-7e0a791a0807
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
 
 ---
-
 
 # Optimiser les images pour un site plus réactif
 

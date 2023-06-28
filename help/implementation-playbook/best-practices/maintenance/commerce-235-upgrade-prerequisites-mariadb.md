@@ -2,10 +2,9 @@
 title: Conditions préalables à la mise à niveau d’Adobe Commerce pour MariaDB
 description: Découvrez comment préparer votre base de données Adobe Commerce pour mettre à niveau MariaDB à partir d’une version précédente.
 role: Developer
-feature-set: Commerce
 feature: Best Practices
 exl-id: b86e471f-e81f-416b-a321-7aa1ac73d27c
-source-git-commit: 73663659dd1b3305bf8c9a167852b24dc1016e7d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -88,15 +87,15 @@ Le processus de conversion du format de stockage diffère pour les projets Adobe
 
    - Renommez la table existante pour éviter tout conflit de nom.
 
-      ```mysql
-      RENAME TABLE <existing_table> <table_old>;
-      ```
+     ```mysql
+     RENAME TABLE <existing_table> <table_old>;
+     ```
 
    - Créer un tableau qui utilise `InnoDB` stockage à partir des données de la table existante.
 
-      ```mysql
-      CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
-      ```
+     ```mysql
+     CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
+     ```
 
    - Vérifiez que le nouveau tableau contient toutes les données requises.
 

@@ -2,7 +2,8 @@
 title: Évaluations de performances
 description: Examinez les résultats des tests de performance pour les implémentations Adobe Commerce hébergées sur l’infrastructure cloud d’Adobe.
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
-source-git-commit: eeb7146a8051e8692ebf974d65db75a4999cf2e6
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 0%
@@ -49,13 +50,13 @@ Les mesures de performances sont basées sur des activités de magasin quotidien
    - 3 000 utilisateurs simultanés sur storefront
    - Défini sur 30 % du taux d’accès au cache du réseau CDN
 
-      L’utilisation efficace de la couche de cache augmente le nombre de pages vues par heure.
+     L’utilisation efficace de la couche de cache augmente le nombre de pages vues par heure.
 
 - **API GraphQL**
    - 250 threads simultanés
    - Définir sur 0 % le taux d’accès au cache du réseau CDN
 
-      Les temps de réponse s’améliorent considérablement avec une couche de mise en cache devant GraphQL.
+     Les temps de réponse s’améliorent considérablement avec une couche de mise en cache devant GraphQL.
 
 - **Admin Web**
    - 500 utilisateurs simultanés

@@ -2,9 +2,10 @@
 title: À propos d’Adobe Commerce
 description: Description d’Adobe Commerce
 exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
-source-git-commit: 219cbe839e40afa19b3754a9d5929074ed238920
+feature: Cloud, Integration, Inventory, Orders, Security, Staging, Shipping/Delivery
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ Adobe Commerce permet aux commerçants de créer des expériences d’achat uniq
 
 ## Diffuser des expériences commerciales significatives
 
-Associant du contenu au commerce pour répondre aux demandes des clients en termes d’interactions de marque sans défauts, les fonctionnalités d’Adobe Commerce évoluent toujours en fonction du consommateur. Adobe Commerce permet aux marques d’acquérir l’expérience client, d’élaborer du contenu personnalisé et des promotions et de proposer un parcours fluide d’achat grâce aux fonctionnalités suivantes :
+En associant le contenu au commerce pour répondre aux demandes des clients en ce qui concerne les interactions de marque sans défauts, les fonctionnalités d’Adobe Commerce évoluent toujours en fonction du consommateur. Adobe Commerce permet aux marques d’acquérir l’expérience client, d’élaborer du contenu personnalisé et des promotions et de proposer un parcours fluide d’achat grâce aux fonctionnalités suivantes :
 
 - Page Builder
 - Recommendations de produit
@@ -28,7 +29,7 @@ Associant du contenu au commerce pour répondre aux demandes des clients en term
 
 La croissance du commerce est alimentée par la satisfaction des besoins de vos clients. Développez votre portée et développez de nouveaux canaux, géographies et vendez-les en ligne à la fois aux entreprises et aux consommateurs dans une seule plateforme. Amenez le commerce à vos clients où, quand et quand ils préfèrent faire leurs achats.
 
-- Commerce mobile
+- Mobile commerce
 - Commerce électronique B2B
 - PWA Studio
 - Développement mondial

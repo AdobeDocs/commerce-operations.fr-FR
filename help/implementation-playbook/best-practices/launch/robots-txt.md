@@ -2,15 +2,14 @@
 title: Bonnes pratiques relatives à la configuration des fichiers `robots.txt` et `sitemap.xml`
 description: Découvrez comment transmettre des instructions sur votre site Adobe Commerce aux moteurs de recherche web.
 role: Developer
-feature-set: Commerce
 feature: Best Practices
-source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
+exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques relatives à la configuration `robots.txt` et `sitemap.xml` files
 
@@ -38,27 +37,27 @@ Suivez ces bonnes pratiques lors de la configuration de la variable `robots.txt`
 - Assurez-vous que votre projet utilise [`ece-tools`](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) version 2002.0.12 ou ultérieure.
 - Utilisez l’application d’administration pour ajouter du contenu au `robots.txt` fichier .
 
-   >[!TIP]
-   >
-   >Afficher le rapport généré automatiquement `robots.txt` fichier pour votre boutique à l’adresse `<domain.your.project>/robots.txt`.
+  >[!TIP]
+  >
+  >Afficher le rapport généré automatiquement `robots.txt` fichier pour votre boutique à l’adresse `<domain.your.project>/robots.txt`.
 
 - Utilisez l’application d’administration pour générer un `sitemap.xml` fichier .
 
-   >[!IMPORTANT]
-   >
-   >En raison du système de fichiers en lecture seule sur Adobe Commerce sur les projets d’infrastructure cloud, vous devez spécifier la variable `pub/media` chemin d’accès avant de générer le fichier.
+  >[!IMPORTANT]
+  >
+  >En raison du système de fichiers en lecture seule sur Adobe Commerce sur les projets d’infrastructure cloud, vous devez spécifier la variable `pub/media` chemin d’accès avant de générer le fichier.
 
 - Utilisez un extrait de code VCL Fastly personnalisé pour rediriger la racine de votre site vers le `pub/media/` emplacement des deux fichiers :
 
-   ```vcl
-   {
-     "name": "sitemaprobots_rewrite",
-     "dynamic": "0",
-     "type": "recv",
-     "priority": "90",
-     "content": "if ( req.url.path ~ \"^/?sitemap.xml$\" ) { set req.url = \"pub/media/sitemap.xml\"; } else if (req.url.path ~ \"^/?robots.txt$\") { set req.url = \"pub/media/robots.txt\";}"
-   }
-   ```
+  ```vcl
+  {
+    "name": "sitemaprobots_rewrite",
+    "dynamic": "0",
+    "type": "recv",
+    "priority": "90",
+    "content": "if ( req.url.path ~ \"^/?sitemap.xml$\" ) { set req.url = \"pub/media/sitemap.xml\"; } else if (req.url.path ~ \"^/?robots.txt$\") { set req.url = \"pub/media/robots.txt\";}"
+  }
+  ```
 
 - Testez la redirection en affichant les fichiers dans un navigateur web. Par exemple : `<domain.your.project>/robots.txt` et `<domain.your.project>/sitemap.xml`. Assurez-vous d’utiliser le chemin racine pour lequel vous avez configuré la redirection et non un autre chemin.
 
@@ -73,7 +72,7 @@ Vous pouvez configurer et exécuter plusieurs magasins avec une seule mise en oe
 
 Les mêmes bonnes pratiques pour configurer la variable `robots.txt` et `sitemap.xml` fichiers pour [vitrines à site unique](#single-site-storefronts) s’applique aux storefronts multi-sites avec deux différences importantes :
 
-- Assurez-vous que la variable `robots.txt` et `sitemap.xml` Les noms de fichier contiennent les noms des sites correspondants. Par exemple :
+- Assurez-vous que la variable `robots.txt` et `sitemap.xml` Les noms de fichier contiennent les noms des sites correspondants. Par exemple :
    - `domaineone_robots.txt`
    - `domaintwo_robots.txt`
    - `domainone_sitemap.xml`
@@ -81,15 +80,15 @@ Les mêmes bonnes pratiques pour configurer la variable `robots.txt` et `sitemap
 
 - Utilisez un extrait de code VCL personnalisé légèrement modifié pour rediriger la racine de vos sites vers la fonction `pub/media` emplacement des deux fichiers sur vos sites :
 
-   ```vcl
-   {
-     "name": "sitemaprobots_rewrite",
-     "dynamic": "0",
-     "type": "recv",
-     "priority": "90",
-     "content": "if ( req.url.path == \"/robots.txt\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) { set req.url = \"pub/media/\" re.group.1 \"_robots.txt\"; }} else if ( req.url.path == \"/sitemap.xml\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) {  set req.url = \"pub/media/\" re.group.1 \"_sitemap.xml\"; }}"
-   }
-   ```
+  ```vcl
+  {
+    "name": "sitemaprobots_rewrite",
+    "dynamic": "0",
+    "type": "recv",
+    "priority": "90",
+    "content": "if ( req.url.path == \"/robots.txt\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) { set req.url = \"pub/media/\" re.group.1 \"_robots.txt\"; }} else if ( req.url.path == \"/sitemap.xml\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) {  set req.url = \"pub/media/\" re.group.1 \"_sitemap.xml\"; }}"
+  }
+  ```
 
 ## Adobe Commerce sur site
 

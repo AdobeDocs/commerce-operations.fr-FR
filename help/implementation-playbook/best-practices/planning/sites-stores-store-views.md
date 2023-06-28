@@ -3,14 +3,13 @@ title: Bonnes pratiques relatives à la configuration des sites, des magasins et
 description: Découvrez les bonnes pratiques de configuration des sites, des magasins et des vues de magasin afin d’optimiser les performances du site.
 role: Admin
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
 
 ---
-
 
 # Bonne pratique pour configurer les sites, les magasins et l’affichage en magasin
 
@@ -48,4 +47,3 @@ Les sites web et les magasins sont des multiplicateurs pour les données de cata
 
 - [Présentation des sites web, des magasins et des vues de magasin](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
 - [Configuration de plusieurs sites web ou magasins](https://devdocs.magento.com/cloud/project/project-multi-sites.html)
-

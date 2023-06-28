@@ -2,7 +2,8 @@
 title: Approche de livraison et de planification
 description: Utilisez l’approche recommandée pour planifier et mettre en oeuvre Adobe Commerce.
 exl-id: ee2918d6-0d97-4f02-8e8f-b88bc999cd22
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 Il est tout aussi essentiel de comprendre la portée complète d’un projet avant de commencer la mise en oeuvre que de disposer d’un plan pour fournir une solution à temps, sur le budget et qui réponde à vos besoins. Cela nécessite à la fois d’identifier un plan directeur infaillible pour la conception et la mise en oeuvre de la solution et d’exécuter ce plan directeur tout en mesurant le succès.
 
-Il s’agit d’un engagement de l’équipe entière qui commence à l’idéation initiale et ne se termine qu’après le lancement. Et bien que ce soit un aspect détaillé et parfois fastidieux du processus, le travail que vous mettez dans le plan et la gouvernance rend les obstacles beaucoup plus faciles à parcourir et à surmonter.
+Il s’agit d’un engagement de toute l’équipe qui commence à l’idéation initiale et ne se termine qu’après le lancement. Et bien que ce soit un aspect détaillé et parfois fastidieux du processus, le travail que vous mettez dans le plan et la gouvernance rend les obstacles beaucoup plus faciles à parcourir et à surmonter.
 
 Les projets commerciaux stratégiques peuvent être réalisés selon plusieurs approches et différentes méthodologies de gestion de projet. Cependant, nous recommandons une approche Agile hybride pour une diffusion réussie et une exécution optimale.
 

@@ -2,15 +2,14 @@
 title: Taille du cache du chemin d’accès réel
 description: Découvrez comment optimiser les performances d’Adobe Commerce en mettant à jour la configuration du cache du chemin de navigation PHP pour utiliser les paramètres recommandés.
 role: Developer
-feature: Best Practices
-feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+feature: Best Practices, Cache
+exl-id: 1cd48155-5d60-48b2-b07b-9b5784b81681
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques relatives à la configuration du cache du chemin d’accès réel
 
@@ -39,4 +38,3 @@ Si les valeurs de configuration du cache du chemin d’accès réel sont trop fa
    - [Bonnes pratiques relatives aux bases de données](database-on-cloud.md)
    - [Problèmes de base de données les plus courants dans Magento Commerce Cloud](../maintenance/resolve-database-performance-issues.md)
 - [Les indexeurs &quot;Mettre à jour selon le calendrier&quot; optimisent les performances du Magento.](../maintenance/indexer-configuration.md)
-

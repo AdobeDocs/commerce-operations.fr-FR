@@ -3,14 +3,13 @@ title: Phase de planification de la mise en oeuvre
 description: Découvrez les bonnes pratiques de mise en oeuvre pour la phase de planification des projets Adobe Commerce.
 role: Developer, Admin, User
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: 78308f9cb3d2ebe8af41c42f9bb146409367ab6c
+exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
 
 ---
-
 
 # Phase de planification
 
@@ -43,7 +42,7 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
 
 - **Configuration des services**
    - [Configuration rapide](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
-   - [Nouvelle relique - Configuration des canaux de notification](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels)
+   - [New Relic - Configuration des canaux de notification](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels)
    - [Bonnes pratiques relatives à la configuration du service Redis &#x200B;](redis-service-configuration.md)
    - [Meilleure pratique concernant la taille du cache du chemin d’accès réel](realpath-cache-size.md)
 

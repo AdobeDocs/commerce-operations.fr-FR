@@ -2,15 +2,14 @@
 title: Bonnes pratiques relatives à la configuration du service Redis
 description: Découvrez comment améliorer les performances de mise en cache à l’aide de la mise en oeuvre étendue du cache Redis pour Adobe Commerce.
 role: Developer, Admin
-feature-set: Commerce
-feature: Best Practices
-source-git-commit: 92faa85b51a1fd5314a5906e8650b03723118ce1
+feature: Best Practices, Cache
+exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques relatives à la configuration du service Redis
 
@@ -98,6 +97,7 @@ La séparation du cache Redis de la session Redis vous permet de gérer le cache
 
    >[!NOTE]
    >`disable_locking` doit être défini sur `1`.
+   >   
 
    ```yaml
    SESSION_CONFIGURATION:

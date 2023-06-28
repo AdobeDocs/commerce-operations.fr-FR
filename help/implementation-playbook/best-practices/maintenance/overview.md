@@ -1,13 +1,14 @@
 ---
 title: Phase de maintenance de la mise en oeuvre
 description: Découvrez les bonnes pratiques de mise en oeuvre pour la phase de maintenance des projets Adobe Commerce.
-source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
+exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
 
 ---
-
 
 # Phase de maintenance
 
@@ -51,7 +52,6 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
 - [Comment réindexer](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
 - [Bonnes pratiques de configuration pour les &#x200B; indexeurs](indexer-configuration.md)
 - [Bonnes pratiques de configuration pour le traitement des commandes](order-processing-configuration.md)
-
 <!-- Asset not yet integrated from CTAG deck:
 - Plan upsizing for planned traffic increases during promotions or holidays -->
 

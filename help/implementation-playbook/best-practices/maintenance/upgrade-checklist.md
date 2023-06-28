@@ -3,14 +3,13 @@ title: Bonnes pratiques relatives à la liste de contrôle de mise à niveau
 description: Découvrez comment créer et utiliser une liste de contrôle de mise à niveau pour planifier votre stratégie de mise à niveau Adobe Commerce et Magento Open Source.
 role: Leader
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
+exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques relatives à la liste de contrôle de mise à niveau
 

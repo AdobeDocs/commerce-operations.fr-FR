@@ -3,14 +3,13 @@ title: Planification des mises à jour de l’administrateur sur les sites de pr
 description: Découvrez les bonnes pratiques pour planifier des mises à jour critiques d’Adobe Commerce afin d’éviter des performances et des pannes lentes.
 role: Admin, User
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques pour la planification des mises à jour de l’administrateur sur les sites de production
 
@@ -36,4 +35,3 @@ Les actions critiques entraînent l’invalidation du cache et la réindexation,
 - [Contenu privé : Invalider le contenu privé](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [Recommandations matérielles : Caches](../../../performance/hardware.md#caches)
 - [Configuration avancée : Configuration de Redis](../../../performance/advanced-setup.md#set-up-redis)
-

@@ -2,7 +2,8 @@
 user-guide-title: Guide de mise à niveau
 user-guide-description: Découvrez pourquoi la mise à niveau de votre application Adobe Commerce est si importante et comment planifier et exécuter une mise à niveau avec succès.
 feature: Upgrade
-source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
+topic: Administration, Commerce, Development, Upgrade
+source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 0%

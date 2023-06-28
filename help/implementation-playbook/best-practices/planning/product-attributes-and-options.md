@@ -2,15 +2,14 @@
 title: Bonnes pratiques de configuration des attributs de produit
 description: Découvrez comment optimiser les performances d’Adobe Commerce en limitant le nombre d’attributs de produit, d’options d’attribut et de jeux d’attributs.
 role: User, Admin
-feature: Best Practices
-feature-set: Commerce
-source-git-commit: e156fcafc5792036b37d9b199b870f1888c3f1ff
+feature: Best Practices, Catalogs
+exl-id: 81783a4c-bc82-4733-bee3-0154cf03079a
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques relatives à la configuration des attributs de produit
 
@@ -21,7 +20,6 @@ ht-degree: 0%
    - Pour Adobe Commerce version 2.4.2 et ultérieure, configurez jusqu’à 1 500 attributs de produit.
 - **Options d’attribut de produit**-Configurer jusqu’à 100 options d’attribut pour chaque attribut
 - **Jeux d’attributs de produit**-Configurer un maximum de 1 000 ensembles d’attributs _
-
 >[!NOTE]
 >
 >Les attributs de produit spécifient les fonctionnalités qui s’appliquent globalement à tous les produits. Les options d’attribut de produit sont des personnalisations pour spécifier les fonctionnalités qui s’appliquent à des produits spécifiques.
@@ -96,4 +94,3 @@ Configuration de plusieurs **options d’attribut** peut affecter les performanc
 - [Jeux d’attributs](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-sets.html)
 - [Création d’un produit](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html)
 - [Tutoriels de personnalisation > Personnaliser le formulaire de création de produits](https://developer.adobe.com/commerce/php/tutorials/admin/custom-product-creation-form/)
-

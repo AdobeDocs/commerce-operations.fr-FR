@@ -1,13 +1,14 @@
 ---
 title: Phase de développement de mise en oeuvre
 description: Découvrez les bonnes pratiques de mise en oeuvre pour la phase de développement des projets Adobe Commerce.
-source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
+exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%
 
 ---
-
 
 # Phase de développement
 

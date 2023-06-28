@@ -2,15 +2,14 @@
 title: Bonnes pratiques pour résoudre les problèmes de performances de la base de données
 description: Découvrez comment résoudre les problèmes de base de données qui ralentissent les performances des sites Adobe Commerce déployés sur l’infrastructure cloud.
 role: Developer, Admin
-feature-set: Commerce
 feature: Best Practices
-source-git-commit: 1abe86197de68336e10c50cab7ad38eebb098aeb
+exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%
 
 ---
-
 
 <!--Consider moving this topic to the Maintenance section-->
 
@@ -96,4 +95,3 @@ DROP INDEX
 ## Informations supplémentaires
 
 [Bonnes pratiques de configuration de base de données pour les déploiements cloud](../planning/database-on-cloud.md)
-

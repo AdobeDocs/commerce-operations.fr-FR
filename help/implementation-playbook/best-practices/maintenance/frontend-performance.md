@@ -3,14 +3,13 @@ title: Performances du serveur frontal d’audit
 description: Identifiez et résolvez les problèmes qui ont un impact négatif sur les performances du site à l’aide des outils de performance web pour contrôler les opérations du storefront Adobe Commerce.
 role: Admin, User, Developer
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: e156fcafc5792036b37d9b199b870f1888c3f1ff
+exl-id: bafae565-9d09-4cc0-8507-e89a11dbd915
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques relatives aux performances frontales
 
@@ -40,5 +39,3 @@ Pour vérifier les performances front-end de la banque de votre site web :
 - [Gestion des index pour les utilisateurs administrateurs](../../../configuration/cli/manage-indexers.md#configure-indexers)
 - [Gestion des index à l’aide de l’interface en ligne de commande](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [Présentation de l’indexation pour les développeurs](https://developer.adobe.com/commerce/php/development/components/indexing/)
-
-
