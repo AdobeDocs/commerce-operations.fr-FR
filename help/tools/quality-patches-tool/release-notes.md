@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 28358ee2ebadfcbf12c67e667cbbd27599a28a80
+source-git-commit: 6299aa825c04a5afd31728e763269cee46cfe513
 workflow-type: tm+mt
-source-wordcount: '12912'
+source-wordcount: '13230'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,22 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour les Magento Open Sources, voir la section [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.34 {#v1-1-34}
+
+* **ACSD-52277** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Correction du problème en raison duquel un utilisateur administrateur n’était pas redirigé correctement après avoir sélectionné une vue de magasin lors de la création d’une commande dans Admin.
+* **ACSD-50813** (pour Adobe Commerce >=2.4.5 &lt;2.4.7) - Correction du problème qui empêchait l’administrateur d’ajouter des produits groupés contenant une barre oblique dans le SKU avec la variable [!UICONTROL Add Products by SKU] à l’ordre d’administration.
+* **ACSD-51630** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction du problème en raison duquel un grand nombre de messages système ralentissait le téléchargement des pages d’administration.
+* **ACSD-51853** (pour Adobe Commerce et Magento Open Source >=2.4.1 &lt;2.4.7) - Correction du problème en raison duquel les styles de texte copiés ne sont pas appliqués lors de l’utilisation de la fonction [!UICONTROL Page Builder].
+* **ACSD-52160** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction du problème en raison duquel le résultat de la validation du produit par rapport à la règle de prix du panier n’était pas correctement évalué en fonction de la condition de la règle &quot;Si un article est TROUVÉ/INTROUVABLE dans le panier avec toutes/toutes ces conditions vraies&quot;.
+* **ACSD-51636** (pour Adobe Commerce >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel l’administrateur de l’entreprise ne pouvait pas ajouter de nouveaux utilisateurs à partir de la section du compte client, même s’il disposait de tous les rôles et autorisations nécessaires.
+* **ACSD-51739** (pour Adobe Commerce >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel une erreur était renvoyée lorsque la variable `structure_id` est demandé dans une requête GraphQL CompanyTeam .
+* **ACSD-51857** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Correction du problème de lenteur des performances de la variable `aggregate_sales_report_bestsellers_data` rapport cron sur les commandes volumineuses et `sales_order_item` les tables de base de données étaient dues à la manière dont la requête de données principale était écrite.
+* **ACSD-48448** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Résout le problème en raison duquel un problème de condition de concurrence se produit lors des annulations de commande, ce qui entraîne une entrée dupliquée dans la variable `inventory_reservation` table.
+* **ACSD-52689** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.6) - Correction du problème qui empêchait le téléchargement des images vers le stockage Amazon S3 à l’aide de l’API REST.
+* **B2B-2674** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Ajoutez la fonctionnalité de mise en cache à la requête GraphQL 1customAttributeMetadata1 .
+* Ajout de nouvelles versions pour ACSD-44938.
+* Ajout des exigences pour ACSD-46988.
 
 ## v1.1.33 {#v1-1-33}
 
