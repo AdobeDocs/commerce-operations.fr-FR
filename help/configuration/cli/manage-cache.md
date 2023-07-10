@@ -1,13 +1,13 @@
 ---
 title: Gestion du cache
 description: Gérez les types de cache et affichez l’état du cache.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
+source-git-commit: 5c316ade0619603eafa7ece8a7cd8c1595dee713
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
-
 
 # Gestion du cache
 
@@ -119,15 +119,19 @@ Exemple de résultat :
 
 ## Nettoyer et vider les types de cache
 
+>[!NOTE]
+>
+>Le cache de plusieurs pages peut être invalidé simultanément et automatiquement. **_without_** ces entités sont en édition. Par exemple, lorsqu’un produit du catalogue est affecté à une catégorie, ou lorsqu’une catégorie [!UICONTROL related product rule] est modifié.
+
 Pour purger les éléments obsolètes du cache, vous pouvez _clean_ ou _purge_ types de cache :
 
 - Le nettoyage d’un type de cache supprime uniquement tous les éléments des types de cache Commerce activés. En d’autres termes, cette option n’affecte pas les autres processus ou applications, car elle nettoie uniquement le cache utilisé par Commerce.
 
-   Les types de cache désactivés ne sont pas nettoyés.
+  Les types de cache désactivés ne sont pas nettoyés.
 
-   >[!TIP]
-   >
-   >Nettoyez toujours le cache après la mise à niveau des versions de Magento Open Source ou Adobe Commerce, la mise à niveau de Magento Open Source vers Adobe Commerce ou l’installation B2B pour Adobe Commerce ou tout autre module.
+  >[!TIP]
+  >
+  >Nettoyez toujours le cache après la mise à niveau des versions de Magento Open Source ou Adobe Commerce, la mise à niveau de Magento Open Source vers Adobe Commerce ou l’installation B2B pour Adobe Commerce ou tout autre module.
 
 - Le vidage d’un type de cache purge le stockage du cache, ce qui peut affecter d’autres processus et applications qui utilisent le même stockage.
 
