@@ -1,13 +1,13 @@
 ---
 title: Configuration de plusieurs sites web, magasins et vues de magasin dans l’administrateur
 description: Configurez d’autres sites web, magasins et vues de magasin dans l’administrateur Commerce.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
+source-git-commit: 5860f5327003372909c425c13c6d03166288d903
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
-
 
 # Configuration de plusieurs vues dans l’administrateur
 
@@ -172,3 +172,8 @@ Pour modifier l’URL de base de la vue de magasin par défaut :
    >Si vous configurez une URL de base pour Adobe Commerce sur l’infrastructure cloud, vous devez remplacer la première période par trois tirets. Par exemple, si votre URL de base est `french.branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`, saisissez `http://french---branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`
 
 1. Cliquez sur **Enregistrer la configuration**.
+
+
+>[!INFO]
+>
+>Le code d’affichage du site web, du magasin et du magasin peut inclure des lettres (a-z ou A-Z), des chiffres (0-9) et des traits de soulignement (_) uniquement. En outre, le premier caractère doit être une lettre. Si des majuscules ou des minuscules sont utilisées, la correspondance n’est pas sensible à la casse en interne afin de permettre le remplacement des paramètres de configuration par le biais de variables d’environnement. Voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).
