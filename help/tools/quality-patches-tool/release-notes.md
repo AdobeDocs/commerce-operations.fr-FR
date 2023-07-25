@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6299aa825c04a5afd31728e763269cee46cfe513
+source-git-commit: 7649f4ffb0a04053d9a674aae7c29eb09ed02006
 workflow-type: tm+mt
-source-wordcount: '13230'
+source-wordcount: '13737'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,32 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour les Magento Open Sources, voir la section [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.35 {#v1-1-35}
+
+* **ACSD-51899** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Correction du problème en raison duquel l’adresse de livraison par défaut à l’étape de livraison du passage en caisse était automatiquement renseignée avec une adresse de récupération en magasin précédemment sélectionnée.
+* **ACSD-52041** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction du problème où le message d’erreur : *[ERROR] [!DNL Page Builder] était rendu pendant 5 secondes sans déverrouiller.* s’affiche dans le navigateur Chrome lors de l’enregistrement de contenu modifié avec [!DNL Page Builder].
+* **ACSD-52095** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.6) - Correction du problème en raison duquel la variable `manage_stock` était incorrectement définie sur 0 dans le fichier CSV après l’exportation du produit.
+* **ACSD-51358** (pour Adobe Commerce >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel la suppression d’une mise à jour planifiée sans date de fin entraînait la suppression d’autres mises à jour planifiées pour la même entité.
+* **ACSD-48070** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel la modification d’une mise à jour planifiée déclenche une exception.
+* **ACSD-51890** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Correction du problème en raison duquel la variable [!UICONTROL Submit review] peut faire l’objet de plusieurs clics sans [!DNL Google reCAPTCHA] validation v3.
+* **ACSD-51984** (pour Adobe Commerce >=2.4.5 &lt;2.4.7) - Correction du problème si non coché. *[!UICONTROL Use Default Value]* et *[!UICONTROL non-default product field]* ne sont pas enregistrées pour le deuxième affichage de site web, de magasin et de magasin.
+* **ACSD-52398** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Correction de l’erreur *La quantité demandée n’est pas disponible* qui se produit lors de la tentative de mise à jour de la quantité d’un produit regroupé dans le panier sur le storefront.
+* **ACSD-52786** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.6) - Correction du problème d’une condition de règle de catalogue *SKU est* s’applique à tous les produits commençant par le SKU donné.
+* **ACSD-52921** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème d’erreur interne qui se produisait lors de la demande de détails de panier auprès de GraphQL lorsqu’un produit configurable en rupture de stock se trouvait dans le panier.
+* **ACSD-51683** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel une option personnalisable ne pouvait pas être ajoutée au panier à l’aide de GraphQL.
+* **ACSD-52133** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction du problème qui empêchait l’enregistrement d’un compte client après une mise à niveau.
+* **ACSD-52202** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction du problème en raison duquel la quantité vendable du stock par défaut passe incorrectement à 0 lorsqu’un stock autre que le stock par défaut est remplacé par 0 sur l’exécution de la commande.
+* **ACSD-51265** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème avec `catalog_product_price` réindexation des performances lorsqu’il y a trop de produits regroupés dans le système.
+* **ACSD-52831** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Correction du problème qui empêchait les clients d’envoyer des commandes de devis négociables lorsque [!DNL Google reCAPTCHA v3 Invisible] est activée.
+* **ACSD-51845** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction du problème en raison duquel les produits suivants avec des prix de niveau et différents ensembles d’attributs ne pouvaient pas être mis à jour via l’API REST en bloc asynchrone.
+* **ACSD-52815** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel l’entrée pour le champ de quantité d’une source autre que la source par défaut ne prend en charge que 6 chiffres au maximum, contrairement à 8 pour un stock par défaut.
+* **ACSD-51149** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel ImportExport planifié avec les autorisations de catalogue activées invalide les indexeurs, puis vident le cache par cron.
+* **ACSD-50815** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.6) - Correction du problème en raison duquel la quantité décimale pour un produit simple ne peut pas être utilisée pour une nouvelle option Produit groupé .
+* Mise à jour des versions pour ACSD-47803.
+* Titre mis à jour pour ACSD-51892.
+* Mise à jour de ACSD-51379.
+* Mise à jour de ACSD-49970-v2.
 
 ## v1.1.34 {#v1-1-34}
 
