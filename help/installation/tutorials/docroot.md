@@ -3,9 +3,9 @@ title: Modification de docroot pour améliorer la sécurité
 description: Empêchez les navigateurs non autorisés d’accéder à Adobe Commerce ou au système de fichiers Magento Open Source sur site.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 32dd5005422b98923ce1bdf6c3fb3f55c2ec15bd
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Dans une installation standard avec un serveur web Apache, Adobe Commerce et Magento Open Source sont installés à la racine web par défaut : `/var/www/html/magento2`.
 
-Le `magento2/` contient les éléments suivants :
+La variable `magento2/` contient les éléments suivants :
 
 - `pub/`
 - `setup/`
@@ -27,7 +27,7 @@ Cette rubrique décrit comment modifier le docroot Apache sur une instance exist
 
 ## Remarque concernant nginx
 
-Si vous utilisez [nginx](../prerequisites/web-server/nginx.md) et le [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) fichier inclus dans le répertoire d’installation, vous diffusez probablement déjà des fichiers du répertoire `pub/` répertoire .
+Si vous utilisez [nginx](../prerequisites/web-server/nginx.md) et la variable [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) fichier inclus dans le répertoire d’installation, vous diffusez probablement déjà des fichiers du répertoire `pub/` répertoire .
 
 Lorsqu’elle est utilisée dans le bloc de votre serveur qui définit votre site, la variable `nginx.conf.sample` la configuration remplace les paramètres docroot de votre serveur pour diffuser des fichiers à partir de la fonction `pub/` répertoire . Voir par exemple la dernière ligne dans la configuration suivante :
 
@@ -49,7 +49,7 @@ server {
 
 ## Avant de commencer
 
-Pour suivre ce tutoriel, vous devez accéder à une installation opérationnelle s’exécutant sur un [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) stack :
+Pour terminer ce tutoriel, vous devez accéder à une installation opérationnelle s’exécutant sur une pile LAMP :
 
 - Linux
 - Apache (2.4+)
@@ -60,7 +60,7 @@ Pour suivre ce tutoriel, vous devez accéder à une installation opérationnelle
 
 >[!NOTE]
 >
->Voir [Conditions préalables](../prerequisites/overview.md) et le [Guide d’installation](../overview.md) pour plus d’informations.
+>Voir [Conditions préalables](../prerequisites/overview.md) et la variable [Guide d’installation](../overview.md) pour plus d’informations.
 
 ## 1. Modifiez la configuration de votre serveur
 
@@ -132,7 +132,7 @@ Ajoutez le noeud suivant au noeud `env.php` fichier .
 ]
 ```
 
-Reportez-vous à la section [référence env.php](../../configuration/reference/config-reference-envphp.md) pour plus d’informations.
+Voir [référence env.php](../../configuration/reference/config-reference-envphp.md) pour plus d’informations.
 
 ## 4. Changement de mode
 
@@ -174,7 +174,7 @@ Accédez au storefront dans un navigateur web pour vérifier que tout fonctionne
 
    ![Storefront qui vérifie une installation réussie](../../assets/installation/install-success_store.png)
 
-   Reportez-vous à la section [section de dépannage](https://support.magento.com/hc/en-us/articles/360032994352) si la page affiche une valeur 404 (Introuvable) ou si elle ne parvient pas à charger d’autres ressources telles que des images, des fichiers CSS et des fichiers JS.
+   Voir [section de dépannage](https://support.magento.com/hc/en-us/articles/360032994352) si la page affiche une valeur 404 (Introuvable) ou si elle ne parvient pas à charger d’autres ressources telles que des images, des fichiers CSS et des fichiers JS.
 
 1. Essayez d’accéder à un répertoire d’application à partir d’un navigateur. Ajoutez le nom du répertoire au nom d’hôte ou à l’adresse IP de votre serveur dans la barre d’adresse :
 
