@@ -4,9 +4,9 @@ description: Découvrez comment configurer la connexion au Secondaire MySQL pour
 role: Developer
 feature: Best Practices
 exl-id: d65bc80a-c4ec-4ea4-aff1-110592838201
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3532480e2172c39ceb4ec55c9819d5271fd1fcdb
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -15,25 +15,25 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Cet article contient des termes logiciels standard que certains peuvent trouver racistes, sexistes ou oppressifs et qui peuvent faire que le lecteur se sent blessé, traumatisé ou mal accueilli. Adobe s’efforce de supprimer ces termes de notre code, de notre documentation et de nos expériences utilisateur.
+>Cet article contient des termes logiciels standard que certains peuvent trouver racistes, sexistes ou oppressifs et qui peuvent faire que le lecteur se sent blessé, traumatisé ou mal accueilli. Adobe s’efforce de supprimer ces termes du code, de la documentation et des expériences utilisateur.
 
-Pour les sites Adobe Commerce déployés sur l’infrastructure cloud Pro, Adobe recommande d’activer par défaut la connexion au Secondaire MYSQL pour la base de données.
+Adobe Commerce peut lire plusieurs bases de données de manière asynchrone. Si vous attendez une charge élevée pour la base de données MySQL d’un site Commerce déployé sur l’architecture de Cloud Infrastructure Pro, Adobe recommande d’activer la connexion au Secondaire MYSQL.
 
-Adobe Commerce peut lire plusieurs bases de données de manière asynchrone. Lorsque vous activez la connexion au Secondaire MYSQL, Adobe Commerce utilise une connexion en lecture seule à la base de données pour recevoir le trafic en lecture seule sur un noeud non maître. Les performances s’améliorent grâce à l’équilibrage de charge lorsqu’un seul noeud gère le trafic lecture-écriture.
+Lorsque vous activez la connexion au Secondaire MYSQL, Adobe Commerce utilise une connexion en lecture seule à la base de données pour recevoir le trafic en lecture seule sur un noeud non maître. Les performances s’améliorent grâce à l’équilibrage de charge lorsqu’un seul noeud gère le trafic lecture-écriture.
 
 ## Versions affectées
 
-Adobe Commerce sur l’infrastructure cloud, architecture Pro
+Adobe Commerce sur l’infrastructure cloud, architecture Pro uniquement
 
 ## Configuration de la connexion au Secondaire MySQL
 
-Dans Adobe Commerce sur l’infrastructure cloud, vous pouvez remplacer la configuration par défaut de la connexion au Secondaire MYSQL en définissant la variable [MYSQL_USE_SECONDAIRE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) . Définissez cette variable sur true pour utiliser automatiquement une connexion en lecture seule à la base de données.
+Dans Adobe Commerce sur l’infrastructure cloud, vous pouvez remplacer la configuration par défaut de la connexion au Secondaire MYSQL en définissant la variable [MYSQL_USE_SECONDAIRE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) Variable . Définissez cette variable sur `true` pour utiliser automatiquement une connexion en lecture seule à la base.
 
 **Pour activer la connexion au Secondaire MySQL**:
 
 1. Sur votre poste de travail local, modifiez le répertoire de votre projet.
 
-1. Dans le `.magento.env.yaml` , définissez la variable `MYSQL_USE_SLAVE_CONNECTION` sur true.
+1. Dans le `.magento.env.yaml` , définissez `MYSQL_USE_SLAVE_CONNECTION` sur true.
 
    ```
    stage:
@@ -45,9 +45,8 @@ Dans Adobe Commerce sur l’infrastructure cloud, vous pouvez remplacer la confi
 
    Une fois le déploiement terminé, la connexion au Secondaire MySQL est activée pour l’environnement cloud.
 
-En savoir plus sur la personnalisation de l’environnement cloud en remplaçant votre configuration Commerce existante par [Variables d’environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html#environment-variables) dans le _Guide sur l’infrastructure cloud d’Adobe Commerce_.
-
 ## Informations supplémentaires
 
-- [Goulot d’étranglement de charge élevée MySQL dans Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.html?lang=en)
-- [Bonnes pratiques relatives aux bases de données pour Adobe Commerce sur l’infrastructure cloud](database-on-cloud.md)
+En savoir plus sur la personnalisation de l’environnement cloud en remplaçant votre configuration Commerce existante par [Variables d’environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html#environment-variables) dans le _Guide sur l’infrastructure cloud d’Adobe Commerce_.
+
+Voir [Goulot d’étranglement de charge élevée MySQL dans Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.html) dans l’ _Base de connaissances d’assistance_.
