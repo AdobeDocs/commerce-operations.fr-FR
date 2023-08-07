@@ -3,9 +3,9 @@ title: Sécurité des infrastructures dans le cloud
 description: Découvrez comment sécuriser Adobe Commerce sur l’infrastructure cloud.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: d05629ef21608a017cfbbfcf05e9507375689fa2
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1689'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ Les clients peuvent utiliser des tunnels SSH pour sécuriser les communications 
 Amazon Elastic Block Store (EBS) est utilisé pour le stockage. Tous les volumes EBS sont chiffrés à l’aide de l’algorithme AES-265. Cela signifie que les données seront cryptées au repos. Le système chiffre également les données en transit entre le CDN et l’origine, ainsi qu’entre les serveurs d’origine. Les mots de passe du client sont stockés sous la forme de hachages. Les informations d’identification sensibles, y compris celles de la passerelle de paiement, sont chiffrées à l’aide de l’algorithme SHA-256.
 
 L’application Adobe Commerce ne prend pas en charge le chiffrement ou le chiffrement au niveau des colonnes ou des lignes lorsque les données ne sont pas au repos ou ne sont pas en transit entre les serveurs. Le client peut gérer les clés de chiffrement dans l’application. Les clés utilisées par le système sont stockées dans AWS Key Management System et doivent être gérées par Managed Services afin de fournir des parties du service.
+
+## Détection des points de fin et réponse
+
+[!DNL CrowdStrike Falcon], un agent de détection et de réponse de point d’entrée de nouvelle génération léger installé sur tous les points d’entrée (y compris les serveurs) dans Adobe, protège nos données et nos systèmes grâce à une surveillance et une collecte continues en temps réel qui nous permettent d’identifier rapidement les menaces et de les répondre.
 
 ## Test de pénétration
 
@@ -115,4 +119,4 @@ Les sauvegardes sont effectuées toutes les heures pendant les dernières 24 heu
 
 Cela crée une sauvegarde indépendante sur le stockage redondant. Les volumes EBS étant cryptés, les sauvegardes sont également cryptées. En outre, Managed Services effectue des sauvegardes à la demande des clients.
 
-Votre approche de sauvegarde et de récupération d’Adobe Commerce Managed Services utilise une architecture haute disponibilité associée à des sauvegardes système complètes. Chaque projet est répliqué (toutes les données, le code et les ressources) dans trois zones de disponibilité AWS distinctes ; chaque zone avec un centre de données distinct.
+Votre approche de sauvegarde et de récupération d’Adobe Commerce Managed Services utilise une architecture haute disponibilité associée à des sauvegardes système complètes. Chaque projet est répliqué (toutes les données, le code et les ressources) dans trois zones de disponibilité AWS distinctes ; chaque zone dispose d’un centre de données distinct.
