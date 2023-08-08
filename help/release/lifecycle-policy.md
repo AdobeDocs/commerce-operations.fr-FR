@@ -2,7 +2,7 @@
 title: Stratégie de cycle de vie du logiciel
 description: Découvrez les dates clés de fin de la prise en charge logicielle des versions d’Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
+source-git-commit: c1f490d98dd74bd5f33f35c5ff7bedeeb0e6f7e4
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 12%
@@ -23,7 +23,7 @@ Pour Adobe Commerce 2.4.4 et les versions ultérieures :
 
 | Version | Disponibilité générale | Fin de la prise en charge des logiciels<sup>1</sup> | Version de PHP dépendante |
 |----------------------|----------------------|-------------------------------------|-----------------------|
-| Adobe Commerce 2.4.7 | 19 avril 2024 | 19 avril 2027 | 8.2 et 8.3 |
+| Adobe Commerce 2.4.7 | 9 avril 2024 | 9 avril 2027 | 8.2 et 8.3 |
 | Adobe Commerce 2.4.6 | 14 mars 2023 | 14 mars 2026 | 8.1 et 8.2 |
 | Adobe Commerce 2.4.5 | 9 août 2022 | 9 août 2025 | 8.1 |
 | Adobe Commerce 2.4.4 | 12 avril 2022 | 24 avril 2025 | 8.1 |
