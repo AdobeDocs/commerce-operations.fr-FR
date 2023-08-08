@@ -2,14 +2,14 @@
 title: Notes de mise à jour d’Adobe Commerce et de Magento Open Source
 description: Découvrez où trouver des informations pour des versions spécifiques d’Adobe Commerce et de Magento Open Source.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 073eec9ce841febf7653c82543eac57068576d03
+source-git-commit: c371ee59e4f1efcc947d0bbd189a892d8f32a5b7
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
 
 ---
 
-# Notes de mise à jour d’Adobe Commerce et de Magento Open Source
+# Notes de mise à jour pour Adobe Commerce et Magento Open Source
 
 Utilisez le tableau suivant pour trouver des notes de mise à jour et des informations importantes relatives à des versions spécifiques de tous les produits, services et outils Adobe Commerce.
 
@@ -24,9 +24,9 @@ Utilisez le tableau suivant pour trouver des notes de mise à jour et des inform
         <p>Découvrez les dernières améliorations apportées à Adobe Commerce et Magento Open Source, notamment les améliorations, la sécurité, les correctifs de bogues et les problèmes connus.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Modifications incompatibles avec l’arrière</a></li>
-            <li><a href="commerce/2-4-7.md">Adobe Commerce</a></li>
-            <li><a href="open-source/2-4-7.md">Magento Open Source</a></li>
-            <li><a href="security/2-4-6-p1.md">Correctifs de sécurité</a></li>
+            <li><a href="commerce/overview.md">Adobe Commerce</a></li>
+            <li><a href="open-source/overview.md">Magento Open Source</a></li>
+            <li><a href="security/overview.md">Correctifs de sécurité</a></li>
             <li><a href="https://helpx.adobe.com/security/products/magento.html">Bulletin de sécurité Adobe</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B pour Adobe Commerce</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/release-notes.html">Inventory management</a></li>
@@ -55,7 +55,7 @@ Utilisez le tableau suivant pour trouver des notes de mise à jour et des inform
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Recherche en direct</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Services de paiement</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Recommendations de produit</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html?lang=en">Passage en caisse rapide</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html?lang=en">Achat rapide</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html">Connecteur Services</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html?lang=en">Exécution de la boutique</a></li>
           </ul>

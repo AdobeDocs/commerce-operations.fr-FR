@@ -1,31 +1,31 @@
 ---
 title: Stratégie de publication
 description: Découvrez les différents types de versions d’Adobe Commerce, notamment les versions mineures, les correctifs, les correctifs de sécurité, les fonctionnalités, les correctifs, les correctifs individuels et les correctifs personnalisés.
-source-git-commit: 1705e930b7ab0176722c4f911dd06f448f992373
+exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
+source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
 
-
 # Stratégie de mise à jour Adobe Commerce
 
-Utilisation d’Adobe Commerce et de Magento Open Source [contrôle de version sémantique](https://semver.org/) au niveau du module individuel (par exemple `magento/framework 101.1.1`), mais pas pour le numéro de version marketing. Par exemple :
+Utilisation d’Adobe Commerce et de Magento Open Source [contrôle de version sémantique](https://semver.org/) au niveau du module individuel (par exemple `magento/framework 101.1.1`), mais pas pour le numéro de version marketing. Par exemple :
 
 - **Version MAJOR**—2
-- **Version mineure**—2.4
+- **Version MINEURE**—2.4
 - **Version du PATCH**—2.4.5
    - **Version de correctif de sécurité**—2.4.5-p1
       - Correctif de bogue de sécurité
       - Amélioration de la sécurité
 - **Version de correctif BÊTA**—2.4.7-beta1
-- **Mise à jour des fonctionnalités**
+- **Extension, infrastructure et version des services**
 - **Correctif**
 - **Correctif individuel**
 - **Correctif personnalisé**
 
-## Version mineure
+## Version MINEURE
 
 Les directives suivantes s’appliquent aux versions mineures :
 
@@ -42,13 +42,13 @@ Les directives suivantes s’appliquent aux versions de correctif :
 
 - La dernière version mineure prise en charge contient des correctifs de qualité fonctionnelle complets et des améliorations.
 - Les modifications susceptibles de rompre les extensions ou la compatibilité du code sont évitées. Par exemple, le code écrit pour la version 2.2.0 doit toujours fonctionner sur la version 2.2.7.
-- Sur une base exceptionnelle, des modifications de rupture ou des correctifs ou correctifs supplémentaires peuvent être publiés pour résoudre les problèmes de sécurité ou de conformité et de qualité à fort impact. Au niveau du module, il s’agit principalement de modifications au niveau du PATCH ; parfois des changements de niveau mineur.
+- Sur une base exceptionnelle, des modifications de rupture ou des correctifs ou correctifs supplémentaires peuvent être publiés pour résoudre les problèmes de sécurité ou de conformité et de qualité à fort impact. Au niveau du module, il s’agit principalement de modifications au niveau du PATCH ; parfois de modifications de niveau mineur.
 
 ### Version de correctif de sécurité
 
-**Correctif du bogue de sécurité**: Un changement de code logiciel qui résout un problème de sécurité identifié et fournit les résultats attendus dans une zone de produit affectée. Ces correctifs sont généralement rétrocompatibles.
+**Correctif du bogue de sécurité**: un changement de code logiciel qui résout un problème de sécurité identifié et fournit les résultats attendus dans une zone de produit affectée. Ces correctifs sont généralement rétrocompatibles.
 
-**Amélioration de la sécurité**: Amélioration ou modification de configuration d’un logiciel afin d’améliorer de manière proactive la sécurité au sein de l’application. Ces améliorations de sécurité permettent de résoudre les risques de sécurité qui affectent la position de sécurité de l’application Adobe Commerce, mais qui peuvent être rétrocompatibles.
+**Sécurité améliorée**: amélioration logicielle ou modification de configuration pour améliorer de manière proactive la sécurité dans l’application. Ces améliorations de sécurité permettent de résoudre les risques de sécurité qui affectent la position de sécurité de l’application Adobe Commerce, mais qui peuvent être rétrocompatibles.
 
 Avec les versions de correctifs de sécurité, vous pouvez maintenir votre site plus sécurisé sans appliquer d’autres correctifs de qualité et améliorations contenus dans une version complète de correctif. Les mises à jour des correctifs de sécurité sont ajoutées avec &quot;-pN&quot;, où N est la version incrémentielle des correctifs commençant par 1 (par exemple, 2.3.5-p1). Les mises à jour des correctifs de sécurité peuvent également inclure les correctifs nécessaires pour résoudre les problèmes critiques qui affectent l’application Adobe Commerce.
 
@@ -62,9 +62,9 @@ Les versions de disponibilité prégénérales des fonctionnalités d’Adobe Co
 
 Les versions bêta peuvent contenir des défauts et sont fournies &quot;EN L’ÉTAT&quot; sans aucune garantie de quelque type que ce soit. Adobe n’aura aucune obligation de gérer, corriger, mettre à jour, modifier, modifier ou d’autre manière prendre en charge (via les services d’assistance d’Adobe ou d’une autre manière) les versions bêta. Il est conseillé aux clients de faire preuve de prudence et de ne pas s’appuyer d’aucune manière sur le bon fonctionnement ou les performances des versions bêta et/ou de la documentation ou des documents associés. Par conséquent, toute utilisation des versions bêta est entièrement à la charge du client.
 
-## Mise à jour des fonctionnalités
+## Extension, infrastructure et version des services
 
-Les mises à jour de fonctionnalités contiennent de nouvelles fonctionnalités et des mises à jour de fonctionnalités qui sont diffusées en tant que services indépendants, indépendamment des mises à jour de correctifs. Par exemple, les services tels que Recommendations de produit et Live Search, les modules indépendants tels que PWA Studio et Inventory management (MSI) et les mises à jour de nos services cloud et de notre infrastructure.
+Description des nouvelles fonctionnalités qui contiennent de nouvelles fonctionnalités et des mises à jour de fonctionnalités diffusées en tant que services indépendants, indépendamment des mises à jour de correctifs. Parmi les exemples, citons les technologies d’extensibilité telles que le Mesh et l’Eventing de l’API, les produits SaaS tels que Recommendations de produit et Live Search, les modules indépendants tels que B2B et PWA Studio, ainsi que les mises à jour de nos services d’hébergement de cloud et de notre infrastructure.
 
 ## Correctif
 
