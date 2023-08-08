@@ -1,13 +1,13 @@
 ---
 title: Fonctionnement des correctifs
-description: Découvrez les différents types de correctifs pour Adobe Commerce et Magento Open Source et leur fonctionnement.
-source-git-commit: 1a18a445cb104420dd9b853b7c4d42ce3bddf2ac
+description: Découvrez les différents types de correctifs pour Adobe Commerce et Magento Open Source et comment ils fonctionnent.
+exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
+source-git-commit: 915cac8c8d436105c4ae25f95bcaefbe19cc50c1
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
-
 
 # Fonctionnement des correctifs
 
@@ -43,7 +43,7 @@ Vous trouverez des correctifs dans la section [Centre de sécurité](https://mag
 
 Les correctifs individuels contiennent des correctifs de qualité à faible impact pour un problème spécifique. Ces correctifs sont appliqués à la dernière version mineure prise en charge (par exemple, 2.4.x), mais peuvent ne pas figurer dans la version mineure prise en charge précédente (par exemple, 2.3.x). Adobe publie les correctifs individuels si nécessaire.
 
-Utilisez la variable [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;} pour appliquer des correctifs individuels.
+Utilisez la variable [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} pour appliquer des correctifs individuels.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Utilisez la variable [[!DNL Quality Patches Tool]](https://experienceleague.adob
 
 Parfois, il faut un certain temps à l’équipe d’ingénierie d’Adobe pour inclure un correctif de bogue créé sur GitHub dans une version d’Adobe Commerce ou du compositeur de Magento Open Source. En attendant, vous pouvez créer un correctif à partir de GitHub et utiliser la variable [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) pour l’appliquer à votre installation basée sur le compositeur.
 
-Utilisez la variable [ligne de commande] ou [Compositeur] pour appliquer des correctifs personnalisés.
+Utilisez la variable [ligne de commande](apply.md#command-line) ou [Compositeur](apply.md#composer) pour appliquer des correctifs personnalisés.
 
 Il existe de nombreuses façons de créer des fichiers correctifs personnalisés. L’exemple suivant se concentre sur la création d’un correctif à partir d’une validation Git connue.
 
@@ -62,7 +62,7 @@ Pour créer un correctif personnalisé :
 1. Créez un `patches/composer` dans votre projet local.
 1. Identifiez la validation ou la requête d’extraction GitHub à utiliser pour le correctif. Cet exemple utilise la méthode [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) commit, lié au problème GitHub [#6474](https://github.com/magento/magento2/issues/6474).
 1. Ajoutez la variable `.patch` ou le `.diff` extensions à l’URL de validation. Utilisation `.diff` pour une taille de fichier plus petite. Par exemple : [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
-1. Enregistrez la page en tant que fichier dans le `patches/composer` répertoire . Par exemple, `github-issue-6474.diff`.
+1. Enregistrez la page en tant que fichier dans le `patches/composer` répertoire . Par exemple : `github-issue-6474.diff`.
 1. Modifier le fichier et supprimer `app/code/<VENDOR>/<PACKAGE>` de tous les chemins afin qu’ils soient relatifs à la variable `vendor/<VENDOR>/<PACKAGE>` répertoire .
 
    >[!NOTE]
@@ -90,10 +90,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 Vous pouvez appliquer des correctifs à l’aide de l’une des méthodes suivantes :
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Ligne de commande](/help/upgrade/patches/apply.md#command-line)
 - [Compositeur](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->Pour appliquer un correctif à un projet d’infrastructure cloud Adobe Commerce, reportez-vous à la section [Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans le _Guide Cloud_.
+>Pour appliquer un correctif à un projet d’infrastructure cloud Adobe Commerce, voir [Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le _Guide Commerce on Cloud_.
