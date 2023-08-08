@@ -1,15 +1,15 @@
 ---
-source-git-commit: 14f4346f4b0bfd1fa0fa44bd62c7d3611a7ffdea
+source-git-commit: 0ef5d741cf718a36f11850e3dd8a81e1f09f5bc2
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 13%
+source-wordcount: '590'
+ht-degree: 12%
 
 ---
 # Versions publiées
 
 ## 2.4.7
 
-La date de fin de la prise en charge de la ligne de mise à jour 2.4.7 n’a pas encore été définie.
+La prise en charge de la version 2.4.7 se termine le 19 avril 2027.
 
 <table>
   <thead>
@@ -42,6 +42,12 @@ La prise en charge de la version 2.4.6 se termine le 14 mars 2026.
   <tbody>
     <tr>
         <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p2.html">2.4.6-p2</a>
+        </td>
+        <td>8 août 2023</td>
+    </tr>
+    <tr>
+        <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p1.html">2.4.6-p1</a>
         </td>
         <td>13 juin 2023</td>
@@ -67,6 +73,12 @@ La prise en charge de la version 2.4.5 se termine le 9 août 2025.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p4.html">2.4.5-p4</a>
+        </td>
+        <td>8 août 2023</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p3.html">2.4.5-p3</a>
@@ -106,6 +118,12 @@ La prise en charge de la version 2.4.4 se termine le 12 avril 2025.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p5.html">2.4.4-p5</a>
+        </td>
+        <td>8 août 2023</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p4.html">2.4.4-p4</a>
