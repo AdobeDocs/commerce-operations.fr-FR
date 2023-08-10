@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: aa52895b45363ca0fb3585f603bfe66a73803427
+source-git-commit: da0c85a9f1b0ac0a3176ca5f6ef5904834e8d37e
 workflow-type: tm+mt
-source-wordcount: '13735'
+source-wordcount: '13965'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,19 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour Magento Open Source, voir la section [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.36 {#v1-1-36}
+
+* **ACSD-53239** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt; 2.4.6) - Correction du problème en raison duquel l’indexeur d’inventaire nettoie tous les caches en mode Mise à jour lors de la planification.
+* **ACSD-50887** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Correction du problème de propriété de l’attribut de produit *[!UICONTROL Use in Search Results Layered Navigation]* peut être défini sur *Oui* sans le *[!UICONTROL Use in search]* option définie sur *Oui*.
+* **ACSD-51846** (pour Adobe Commerce et Magento Open Source >=2.4.3-p2 &lt;2.4.6) - Correction de la variable *Erreur interne* problème qui se produit car tous les niveaux de charge utile de l’API REST ne sont pas validés.
+* **ACSD-52906** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Correction du problème de définition incorrecte du cookie X-Magento-Vary pour les clients connectés qui appartiennent au même segment de client, ce qui entraîne une mise en cache incorrecte de certaines pages.
+* **ACSD-52736** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.6) - Correction du problème en raison duquel une *Règle de prix du panier* qui inclut les exigences relatives à la quantité configurable de produits ne fonctionne pas comme prévu.
+* **ACSD-47875** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel les utilisateurs administrateurs ne pouvaient pas ajouter de produit au panier d’un client à partir de l’administrateur pour une portée de vue de magasin spécifique avec gestion de l’inventaire.
+* **ACSD-53176** (pour Adobe Commerce >=2.3.7 &lt;2.4.5) - Correction du problème en raison duquel *Règle de produit connexe* avec *est l’un des* La condition ne correspond pas aux produits.
+* **ACSD-51666** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction de l’erreur *La session a expiré, veuillez vous reconnecter.* cela se produit lorsqu’un client tente de se connecter.
+* Ajout de nouvelles versions pour MDVA-39305-v2.
+* Mise à jour des exigences pour ACSD-19640.
 
 ## v1.1.35 {#v1-1-35}
 
