@@ -1,13 +1,13 @@
 ---
 title: Démarrage des consommateurs de la file de messages
 description: Découvrez comment démarrer un consommateur de file d’attente de messages.
-source-git-commit: 3e3dac0c75622b210cf1168639b8804003f3c538
+exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
-
 
 # Démarrage des consommateurs de la file de messages
 
@@ -37,4 +37,4 @@ Voir [queue:consumers:start](https://devdocs.magento.com/guides/v2.4/reference/c
 
 >[!INFO]
 >
->Le `--multi-process` est présente dans la variable `queue:consumers:start` mais pour exécuter des consommateurs avec des processus parallèles, configurez la variable [`multiple_processes`](../queues/manage-message-queues.md#configuration) dans `/app/etc/env.php`. Sinon, si `queue:consumers:start` est appelé avec la fonction `--multi-process` , il ne fonctionne que sur un seul thread.
+>La variable `--multi-process` est présente dans la variable `queue:consumers:start` mais pour exécuter des consommateurs avec des processus parallèles, configurez la variable [`multiple_processes`](../queues/manage-message-queues.md#configuration) dans `/app/etc/env.php`. Sinon, si `queue:consumers:start` est appelé avec la fonction `--multi-process` , il ne fonctionne que sur un seul thread.

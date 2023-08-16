@@ -24,21 +24,21 @@ Une fois que vous avez installé et configuré Varnish pour qu’il fonctionne a
 
 - Maintenance d’un site web.
 
-   Par exemple, tout ce que vous faites dans l’Admin de :
+  Par exemple, tout ce que vous faites dans l’Admin de :
 
    - **MAGASINS** > **Paramètres** > **Configuration** > GÉNÉRAL > **Général**
    - **MAGASINS** > **Paramètres** > **Configuration** > GÉNÉRAL > **Configuration de devise**
    - **MAGASINS** > **Paramètres** > **Configuration** > GÉNÉRAL > **Stocker les adresses électroniques**
 
-   Lorsque Commerce détecte une telle modification, un message s’affiche vous informant de l’actualisation du cache.
+  Lorsque Commerce détecte une telle modification, un message s’affiche vous informant de l’actualisation du cache.
 
 - Maintenance d’un magasin (par exemple, ajout ou modification de catégories, de prix, de produits et de règles de tarification promotionnelle).
 
-   Le vernis est purgé automatiquement lorsque vous effectuez l’une de ces tâches.
+  Le vernis est purgé automatiquement lorsque vous effectuez l’une de ces tâches.
 
 - Maintenance du code source.
 
-   Vous devez actualiser le cache et supprimer régulièrement tout ce qui se trouve dans la variable `generated/code` et `generated/metadata` répertoires. Pour plus d’informations sur l’actualisation du cache, voir la section suivante.
+  Vous devez actualiser le cache et supprimer régulièrement tout le contenu de la `generated/code` et `generated/metadata` répertoires. Pour plus d’informations sur l’actualisation du cache, voir la section suivante.
 
 ## Configuration de Commerce pour purger le vernis
 
@@ -48,7 +48,7 @@ Vous pouvez utiliser le paramètre facultatif. `--http-cache-hosts` pour spécif
 
 Le format du paramètre doit être `<hostname or ip>:<listen port>`, où vous pouvez omettre `<listen port>` s’il s’agit du port 80.
 
-Par exemple :
+Par exemple,
 
 ```bash
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081

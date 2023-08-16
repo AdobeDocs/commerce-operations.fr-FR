@@ -6,7 +6,7 @@ feature: Cloud, Integration, Inventory, Orders, Security, Staging, Shipping/Deli
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -51,8 +51,8 @@ L’efficacité, l’automatisation et l’accès aux données sont nécessaires
 Les acheteurs attendent beaucoup des marques avec lesquelles ils s’engagent, depuis les performances élevées et la sécurité jusqu’aux interactions innovantes. Exécutez vos opérations commerciales avec la certitude que vous serez en mesure de répondre à ces attentes et de les dépasser.
 
 - Ouvert et personnalisable
-- Déploiement dans le cloud
+- Déploiement cloud
 - Sécurité et confiance
 - Performances et échelle
 - API
-- Marketplace
+- Marché

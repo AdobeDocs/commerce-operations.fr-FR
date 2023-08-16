@@ -21,13 +21,13 @@ Cette section fournit des instructions pour installer memcached sur Ubuntu.
 Comme PHP ne prend pas en charge le memcache, vous devez installer une extension pour que PHP l’utilise. Deux extensions PHP sont disponibles et il est important de décoder laquelle utiliser :
 
 - `memcache` (_no d_) : extension plus ancienne mais populaire qui n’est pas gérée régulièrement.
-Le `memcache` extension actuellement _ne fait pas_ fonctionne avec PHP 7. Voir [documentation PHP pour memcache](https://www.php.net/manual/en/book.memcache.php).
+La variable `memcache` extension actuellement _ne fait pas_ fonctionne avec PHP 7. Voir [documentation PHP pour memcache](https://www.php.net/manual/en/book.memcache.php).
 
-   Le nom exact est : `php5-memcache` pour Ubuntu.
+  Le nom exact est : `php5-memcache` pour Ubuntu.
 
 - `memcached` (_avec un`d`_) : extension plus récente et plus gérée compatible avec PHP 7. Voir [documentation PHP pour memcached](https://www.php.net/manual/en/book.memcached.php).
 
-   Le nom exact est : `php5-memcached` pour Ubuntu.
+  Le nom exact est : `php5-memcached` pour Ubuntu.
 
 ## Installation et configuration de la mémoire mise en cache sur Ubuntu
 
@@ -43,7 +43,7 @@ Le `memcache` extension actuellement _ne fait pas_ fonctionne avec PHP 7. Voir [
    apt-get -y install php5-memcached memcached
    ```
 
-1. Modification du paramètre de configuration de la mémoire mise en cache pour `CACHESIZE` et `-l`:
+1. Modification du paramètre de configuration de la mémoire cache pour `CACHESIZE` et `-l`:
 
    1. Ouvrir `/etc/memcached.conf` dans un éditeur de texte.
    1. Recherchez la variable `-m` .
@@ -79,7 +79,7 @@ Pour vérifier que memcached est reconnu par le serveur web :
    phpinfo();
    ```
 
-1. Accédez à cette page dans votre navigateur web. Par exemple :
+1. Accédez à cette page dans votre navigateur web. Par exemple :
 
    ```http
    http://192.0.2.1/phpinfo.php
@@ -116,7 +116,7 @@ if ($result) {
 }
 ```
 
-Où `<memcached hostname or ip>` est `localhost`, `127.0.0.1`ou le nom d’hôte ou l’adresse IP du memcache. Le `<memcached port>` est le port d’écoute ; par défaut, `11211`.
+Où `<memcached hostname or ip>` est soit `localhost`, `127.0.0.1`ou le nom d’hôte ou l’adresse IP du memcache. La variable `<memcached port>` est le port d’écoute ; par défaut, `11211`.
 
 Accédez à cette page dans un navigateur web. Par exemple
 
@@ -126,7 +126,7 @@ http://192.0.2.1/cache-test.php
 
 La première fois que vous accédez à la page, les éléments suivants s’affichent : `No matching key found. Refresh the browser to add it!`
 
-Actualisez le navigateur. Le message se transforme en `Successfully retrieved the data!`
+Actualisez le navigateur. Le message passe à `Successfully retrieved the data!`
 
 Enfin, vous pouvez afficher les clés memcache à l’aide de Telnet :
 

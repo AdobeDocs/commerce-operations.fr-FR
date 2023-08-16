@@ -32,13 +32,13 @@ Dans cet exemple, nous nous connectons aux trois bases de données qui sont inst
    mysqldump -h "magento2-mysql" -u root -p magento_sales > ./sales.sql
    ```
 
-1. Chargez la variable `magento_quote` dans la `magento_main` base de données :
+1. Chargez la variable `magento_quote` dans la base de données `magento_main` base de données :
 
    ```bash
    mysql -h "magento2-mysql" -u root -p magento_main < ./quote.sql
    ```
 
-1. Chargez la variable `magento_sales` dans la `magento_main` base de données :
+1. Chargez la variable `magento_sales` dans la base de données `magento_main` base de données :
 
    ```bash
    mysql -h "magento2-mysql" -u root -p magento_main < ./sales.sql

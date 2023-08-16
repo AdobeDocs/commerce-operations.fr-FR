@@ -1,5 +1,5 @@
 ---
-title: Le [!UICONTROL Indexing] tab
+title: La variable [!UICONTROL Indexing] tab
 description: En savoir plus sur les [!UICONTROL Indexing] de [!DNL Observation for Adobe Commerce].
 exl-id: c7e123b7-2d0c-49d4-9f76-128939dc02a8
 feature: Configuration, Observability
@@ -10,15 +10,15 @@ ht-degree: 0%
 
 ---
 
-# Le [!UICONTROL Indexing] tab
+# La variable [!UICONTROL Indexing] tab
 
-Le **[!UICONTROL Indexing]** tente d’expliquer les problèmes liés à l’indexation et d’identifier les causes potentielles.
+La variable **[!UICONTROL Indexing]** tente d’expliquer les problèmes liés à l’indexation et d’identifier les causes potentielles.
 
 ## [!UICONTROL Core index invalidated]
 
 ![Index principal invalidé](../../assets/tools/observation-for-adobe-commerce/indexing-tab-1.jpg)
 
-Le **[!UICONTROL Core index invalidated]** frame examine l’invalidation de l’indexation sur une période sélectionnée. Si l’indexation se produit en même temps que d’autres ressources intensives [!DNL crons], il place une charge importante sur les ressources du site.
+La variable **[!UICONTROL Core index invalidated]** frame examine l’invalidation de l’indexation sur une période sélectionnée. Si l’indexation se produit en même temps que d’autres ressources intensives [!DNL crons], il place une charge importante sur les ressources du site.
 
 * `%Catalog Product Rule indexer has been invalidated%`) as `catalog_product_rule_idx_reset`
 * `%Catalog Rule Product indexer has been invalidated%`) as `catalog_rule_product_idx_reset`
@@ -38,7 +38,7 @@ Le **[!UICONTROL Core index invalidated]** frame examine l’invalidation de l�
 
 ![Recréations de l’index principal](../../assets/tools/observation-for-adobe-commerce/indexing-tab-2.jpg)
 
-Le **[!UICONTROL Core index rebuilds]** frame s’intéresse aux recompilations d’index principal au cours d’une période sélectionnée. Voici les chaînes analysées à partir des journaux pour indiquer la fin de la reconstruction de l’index.
+La variable **[!UICONTROL Core index rebuilds]** frame s’intéresse aux recompilations d’index principal au cours d’une période sélectionnée. Voici les chaînes analysées à partir des journaux pour indiquer la fin de la reconstruction de l’index.
 
 * `%Catalog Product Rule index has been rebuilt%`) as `catalog_product_rule_idx`
 * `%Catalog Rule Product index has been rebuilt%`) as `catalog_rule_product_idx`
@@ -59,10 +59,10 @@ Le **[!UICONTROL Core index rebuilds]** frame s’intéresse aux recompilations 
 
 ![table(s) d’index catalogsearch](../../assets/tools/observation-for-adobe-commerce/indexing-tab-3.jpg)
 
-Le **[!UICONTROL catalogsearch index table(s)]** frame examine les tables d’index de recherche de catalogues sur une période sélectionnée. Cette requête examine la durée des opérations de banque de données par rapport aux tables comportant des `%catalogsearch%` dans le nom de la table.
+La variable **[!UICONTROL catalogsearch index table(s)]** frame examine les tables d’index de recherche de catalogues sur une période sélectionnée. Cette requête examine la durée des opérations de banque de données par rapport aux tables comportant des `%catalogsearch%` dans le nom de la table.
 
 ## [!UICONTROL product index table(s)]
 
 ![table(s) d’index de produit](../../assets/tools/observation-for-adobe-commerce/indexing-tab-4.jpg)
 
-Le **[!UICONTROL product index table(s)]** frame examine les tables d’index de produit sur une période sélectionnée. Cette requête examine la durée des opérations de banque de données par rapport aux tables comportant des `%product%` dans le nom de la table.
+La variable **[!UICONTROL product index table(s)]** frame examine les tables d’index de produit sur une période sélectionnée. Cette requête examine la durée des opérations de banque de données par rapport aux tables comportant des `%product%` dans le nom de la table.

@@ -19,7 +19,7 @@ Chaque entreprise a des exigences de création de rapports différentes. Si vous
 
 ## Fonctionnalités
 
-Autres fonctionnalités des rapports et tableaux de bord :
+Autres fonctionnalités des rapports et des tableaux de bord :
 
 - Effectue le suivi du retour sur investissement, qui aide les détaillants à prendre des décisions et à surveiller les progrès
 

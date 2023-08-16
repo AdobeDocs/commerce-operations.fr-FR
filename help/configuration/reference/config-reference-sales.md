@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Cette section répertorie les noms de variable et les chemins de configuration disponibles pour les options dans l’Admin sous **Magasins** > Paramètres > **Configuration** > **Ventes**.
 
-Le [`magento app:config:dump` command](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle de code source. Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables). Cette rubrique fonctionne _not_ list [valeurs sensibles et spécifiques au système](config-reference-sens.md).
+La variable [`magento app:config:dump` command](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle source. Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables). Cette rubrique fonctionne _not_ list [valeurs sensibles et spécifiques au système](config-reference-sens.md).
 
 ## Chemins de vente
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Ventes** > **Ventes**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Ventes** > **Ventes**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -44,11 +44,11 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Message de description à plusieurs adresses | `sales/minimum_order/multi_address_description` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Erreur à plusieurs adresses à afficher dans le panier | `sales/minimum_order/multi_address_error_message` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Utiliser des données agrégées | `sales/dashboard/use_aggregated_data` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Durée de vie de la commande en attente (minutes) | `sales/orders/delete_pending_after` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Durée de vie des commandes de paiement en attente (minutes) | `sales/orders/delete_pending_after` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Autoriser les messages cadeau au niveau de la commande | `sales/gift_options/allow_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Autorisation des messages de cadeau pour les articles de commande | `sales/gift_options/allow_items` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Autoriser l’encapsulage des cadeaux au niveau de la commande | `sales/gift_options/wrapping_allow_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Autoriser le encapsulage des cadeaux pour les éléments de commande | `sales/gift_options/wrapping_allow_items` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Autoriser l’encapsulage des cadeaux pour les éléments de commande | `sales/gift_options/wrapping_allow_items` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Autoriser la réception de cadeau | `sales/gift_options/allow_gift_receipt` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Autoriser la carte imprimée | `sales/gift_options/allow_printed_card` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Prix par défaut pour la carte imprimée | `sales/gift_options/printed_card_price` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
@@ -71,7 +71,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Chemins des emails de vente
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Ventes** > **Courriers électroniques de vente**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Ventes** > **Courriers électroniques de vente**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -114,13 +114,13 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Activé | `sales_email/creditmemo_comment/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Commentaire de la note de crédit Expéditeur du courrier électronique | `sales_email/creditmemo_comment/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modèle d’e-mail de commentaire de note de crédit | `sales_email/creditmemo_comment/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Modèle d’e-mail de commentaire de note de crédit pour l’invité | `sales_email/creditmemo_comment/guest_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Modèle de message de commentaire de note de crédit pour l’invité | `sales_email/creditmemo_comment/guest_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Envoyer des commentaires de note de crédit Méthode de copie de courrier électronique | `sales_email/creditmemo_comment/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Activé | `sales_email/magento_rma/enabled` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | RMA Email Sender | `sales_email/magento_rma/identity` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Modèle de courrier électronique RMA | `sales_email/magento_rma/template` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Modèle de courrier électronique RMA pour l’invité | `sales_email/magento_rma/guest_template` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Méthode d’envoi d’une copie de courrier électronique RMA | `sales_email/magento_rma/copy_method` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Méthode d’envoi de copie de courrier électronique RMA | `sales_email/magento_rma/copy_method` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Activé | `sales_email/magento_rma_auth/enabled` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Expéditeur d’email d’autorisation RMA | `sales_email/magento_rma_auth/identity` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Modèle de courrier électronique d’autorisation RMA | `sales_email/magento_rma_auth/template` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
@@ -130,12 +130,12 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | RMA Comment Email Sender | `sales_email/magento_rma_comment/identity` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Modèle d’e-mail de commentaire RMA | `sales_email/magento_rma_comment/template` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Modèle d’e-mail de commentaire RMA pour l’invité | `sales_email/magento_rma_comment/guest_template` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Méthode d’envoi d’une copie de courrier électronique RMA | `sales_email/magento_rma_comment/copy_method` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Méthode d’envoi de copie de courrier électronique RMA | `sales_email/magento_rma_comment/copy_method` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Activé | `sales_email/magento_rma_customer_comment/enabled` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | RMA Comment Email Sender | `sales_email/magento_rma_customer_comment/identity` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Destinataire de l’e-mail de commentaire RMA | `sales_email/magento_rma_customer_comment/recipient` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Modèle d’e-mail de commentaire RMA | `sales_email/magento_rma_customer_comment/template` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Méthode d’envoi d’une copie de courrier électronique RMA | `sales_email/magento_rma_customer_comment/copy_method` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Méthode d’envoi de copie de courrier électronique RMA | `sales_email/magento_rma_customer_comment/copy_method` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Afficher l’identifiant de l’ordre dans l’en-tête | `sales_pdf/invoice/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Afficher l’identifiant de l’ordre dans l’en-tête | `sales_pdf/shipment/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Afficher l’identifiant de l’ordre dans l’en-tête | `sales_pdf/creditmemo/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -144,7 +144,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Chemins des taxes
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Ventes** > **Taxe**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Ventes** > **Taxe**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -193,7 +193,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Chemins de passage en caisse
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Ventes** > **Passage en caisse**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Ventes** > **Passage en caisse**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -216,9 +216,9 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 {style="table-layout:auto"}
 
-## Chemins d’accès des paramètres d’expédition
+## Chemins d’accès des paramètres de livraison
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Ventes** > **Paramètres d’expédition**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Ventes** > **Paramètres d’expédition**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -229,7 +229,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Chemins des paramètres de multidiffusion
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Ventes** > **Paramètres de multidiffusion**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Ventes** > **Paramètres de multidiffusion**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -240,7 +240,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Chemins des méthodes de diffusion
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Ventes** > **Méthodes de diffusion**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Ventes** > **Méthodes de diffusion**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -292,14 +292,14 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Unité de poids | `carriers/ups/unit_of_measure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Type de destination | `carriers/ups/dest_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Poids maximal du package (veuillez consulter votre opérateur de transport pour connaître le poids maximal de livraison pris en charge) | `carriers/ups/max_package_weight` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Méthode de ramassage | `carriers/ups/pickup` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Méthode de récupération | `carriers/ups/pickup` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Poids minimum du package (veuillez consulter votre opérateur de livraison pour obtenir un poids minimum de livraison pris en charge) | `carriers/ups/min_package_weight` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Frais de gestion des calculs | `carriers/ups/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gestion appliquée | `carriers/ups/handling_action` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gestion des frais | `carriers/ups/handling_fee` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Méthodes autorisées | `carriers/ups/allowed_methods` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Méthode libre | `carriers/ups/free_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activer le seuil de livraison gratuit | `carriers/ups/free_shipping_enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Activer le seuil d’expédition gratuit | `carriers/ups/free_shipping_enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Seuil du montant de la livraison gratuite | `carriers/ups/free_shipping_subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Message d’erreur affiché | `carriers/ups/specificerrmsg` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Expédier aux pays applicables | `carriers/ups/sallowspecific` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -323,7 +323,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Gestion des frais | `carriers/usps/handling_fee` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Méthodes autorisées | `carriers/usps/allowed_methods` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Méthode libre | `carriers/usps/free_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activer le seuil de livraison gratuit | `carriers/usps/free_shipping_enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Activer le seuil d’expédition gratuit | `carriers/usps/free_shipping_enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Seuil du montant de la livraison gratuite | `carriers/usps/free_shipping_subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Message d’erreur affiché | `carriers/usps/specificerrmsg` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Expédier aux pays applicables | `carriers/usps/sallowspecific` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -348,7 +348,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Méthodes autorisées | `carriers/fedex/allowed_methods` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ID de Hub | `carriers/fedex/smartpost_hubid` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Méthode libre | `carriers/fedex/free_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activer le seuil de livraison gratuit | `carriers/fedex/free_shipping_enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Activer le seuil d’expédition gratuit | `carriers/fedex/free_shipping_enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Seuil du montant de la livraison gratuite | `carriers/fedex/free_shipping_subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Message d’erreur affiché | `carriers/fedex/specificerrmsg` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Expédier aux pays applicables | `carriers/fedex/sallowspecific` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -367,7 +367,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Unité de poids | `carriers/dhl/unit_of_measure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Taille | `carriers/dhl/size` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Hauteur | `carriers/dhl/height` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Profondeur | `carriers/dhl/depth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Détails | `carriers/dhl/depth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Largeur | `carriers/dhl/width` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Méthodes autorisées | `carriers/dhl/doc_methods` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Méthodes autorisées | `carriers/dhl/nondoc_methods` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -375,7 +375,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Message d’erreur affiché | `carriers/dhl/specificerrmsg` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Méthode libre | `carriers/dhl/free_method_doc` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Méthode libre | `carriers/dhl/free_method_nondoc` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activer le seuil de livraison gratuit | `carriers/dhl/free_shipping_enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Activer le seuil d’expédition gratuit | `carriers/dhl/free_shipping_enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Seuil du montant de la livraison gratuite | `carriers/dhl/free_shipping_subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Expédier aux pays applicables | `carriers/dhl/sallowspecific` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ship to Specific Countries | `carriers/dhl/specificcountry` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -386,7 +386,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Chemins de l’API Google
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Ventes** > **API Google**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Ventes** > **API GOOGLE**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -412,7 +412,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Chemins des cartes cadeau
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Ventes** > **Fiches d’assistance**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Ventes** > **Fiches d’assistance**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|

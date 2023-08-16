@@ -1,17 +1,17 @@
 ---
 title: référence env.php
 description: Consultez la liste des valeurs du fichier env.php.
-source-git-commit: fe5e16d44213d1864a62230029e9e206eecd1717
+exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
 
 ---
 
-
 # référence env.php
 
-Le `env.php` contient les sections suivantes :
+La variable `env.php` contient les sections suivantes :
 
 | Nom | Description |
 |-------------------------------|-----------------------------------------------------------------|
@@ -27,7 +27,7 @@ Le `env.php` contient les sections suivantes :
 | `downloadable_domains` | Liste des domaines téléchargeables |
 | `install` | La date d&#39;installation |
 | `lock` | Verrouillage des paramètres du fournisseur |
-| `MAGE_MODE` | Le [mode applicatif](../bootstrap/application-modes.md) |
+| `MAGE_MODE` | La variable [mode applicatif](../bootstrap/application-modes.md) |
 | `queue` | [Files d&#39;attente des messages](../queues/manage-message-queues.md) paramètres |
 | `resource` | Mappage du nom de la ressource à une connexion |
 | `session` | Données de stockage de session |
@@ -114,11 +114,11 @@ Les options disponibles sont les suivantes :
 
 - `1`: les consommateurs continuent à traiter les messages de la file d’attente des messages jusqu’à atteindre le `max_messages` spécifiée dans la variable `env.php` avant de fermer la connexion TCP et d’interrompre le processus client. Si la file d’attente se vide avant d’atteindre la variable `max_messages` , le consommateur attend que d’autres messages arrivent.
 
-   Nous vous recommandons ce paramètre pour les grands vendeurs, car un flux de messages constant est attendu et les retards de traitement ne sont pas souhaitables.
+  Nous vous recommandons ce paramètre pour les grands vendeurs, car un flux de messages constant est attendu et les retards de traitement ne sont pas souhaitables.
 
 - `0`: les consommateurs traitent les messages disponibles dans la file d’attente, ferment la connexion TCP et s’arrêtent. Les consommateurs n’attendent pas que des messages supplémentaires entrent dans la file d’attente, même si le nombre de messages traités est inférieur à la valeur `max_messages` spécifiée dans la variable `env.php` fichier . Cela peut aider à éviter les problèmes liés aux tâches cron causés par de longs délais dans le traitement de la file d’attente des messages.
 
-   Nous vous recommandons ce paramètre pour les petits commerçants qui ne s’attendent pas à un flux de messages constant et qui préfèrent conserver les ressources informatiques en échange de retards de traitement mineurs alors qu’il ne pouvait pas y avoir de messages pendant des jours.
+  Nous vous recommandons ce paramètre pour les petits commerçants qui ne s’attendent pas à un flux de messages constant et qui préfèrent conserver les ressources informatiques en échange de retards de traitement mineurs alors qu’il ne pouvait pas y avoir de messages pendant des jours.
 
 ## cron
 
@@ -282,7 +282,7 @@ En savoir plus sur [x-frame-options](../security/xframe-options.md).
 
 ## system
 
-À l’aide de ce noeud, Commerce verrouille les valeurs de configuration dans la variable `env.php` puis désactive le champ dans l’administrateur.
+À l’aide de ce noeud, Commerce verrouille les valeurs de configuration dans le `env.php` puis désactive le champ dans l’administrateur.
 
 ```conf
 'system' => [

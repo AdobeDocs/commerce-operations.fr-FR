@@ -1,13 +1,13 @@
 ---
 title: Vérification de l’installation
 description: Suivez ces étapes pour confirmer que votre installation Adobe Commerce ou Magento Open Source sur site a réussi.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 0bd7ec01-c616-4384-ae26-db2ce3668caf
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 0%
 
 ---
-
 
 # Vérification de l’installation
 
@@ -39,8 +39,8 @@ La figure suivante illustre un exemple de page d’administration. S’il s’af
 
 ![Administrateur qui vérifie une installation réussie](../../assets/installation/install_success_admin.png)
 
-Si la page n’affiche pas de styles, reportez-vous à la section [dépannage](https://support.magento.com/hc/en-us/articles/360032994352).
+Si la page n’affiche pas de styles, voir [dépannage](https://support.magento.com/hc/en-us/articles/360032994352).
 
-Si vous obtenez une erreur 404 (Introuvable) similaire à ce qui suit, reportez-vous à la section [Erreur de version PHP ou 404 lors de l’accès à Adobe Commerce dans le navigateur](https://support.magento.com/hc/en-us/articles/360033117152).
+Si vous obtenez une erreur 404 (Introuvable) similaire à ce qui suit, voir [Erreur de version PHP ou 404 lors de l’accès à Adobe Commerce dans le navigateur](https://support.magento.com/hc/en-us/articles/360033117152).
 
 `The requested URL /magento2index.php/admin/admin/dashboard/index/key/0c81957145a968b697c32a846598dc2e/ was not found on this server.`

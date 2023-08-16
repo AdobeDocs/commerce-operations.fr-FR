@@ -37,11 +37,11 @@ Pour configurer votre système afin d’utiliser Elasticsearch ou OpenSearch :
 
    | Option | Description |
    |--- |--- |
-   | **[!UICONTROL Server Hostname]** | Saisissez le nom d’hôte complet ou l’adresse IP de l’ordinateur exécutant l’Elasticsearch ou OpenSearch.<br>Adobe Commerce sur l’infrastructure cloud : Obtenez cette valeur à partir de votre système d’intégration. |
-   | **[!UICONTROL Server Port]** | Saisissez le port proxy du serveur web. La valeur par défaut est 9200<br>Adobe Commerce sur l’infrastructure cloud : Obtenez cette valeur à partir de votre système d’intégration. |
+   | **[!UICONTROL Server Hostname]** | Saisissez le nom d’hôte complet ou l’adresse IP de l’ordinateur exécutant l’Elasticsearch ou OpenSearch.<br>Adobe Commerce sur l’infrastructure cloud : tirez cette valeur de votre système d’intégration. |
+   | **[!UICONTROL Server Port]** | Saisissez le port proxy du serveur web. La valeur par défaut est 9200<br>Adobe Commerce sur l’infrastructure cloud : tirez cette valeur de votre système d’intégration. |
    | **[!UICONTROL Index Prefix]** | Saisissez le préfixe d’index du moteur de recherche. Si vous utilisez une instance unique pour plusieurs installations Commerce (environnements d’évaluation et de production), vous devez spécifier un préfixe unique pour chaque installation. Sinon, vous pouvez utiliser le préfixe magento2 par défaut. |
    | **[!UICONTROL Enable HTTP Auth]** | Cliquez sur **[!UICONTROL Yes]** uniquement si vous avez activé l’authentification pour votre serveur de moteur de recherche. Si tel est le cas, indiquez un nom d’utilisateur et un mot de passe dans les champs fournis. |
-   | **[!UICONTROL Server Timeout]** | Saisissez le temps (en secondes) d’attente lors de la tentative d’établissement d’une connexion au serveur Elasticsearch ou OpenSearch. |
+   | **[!UICONTROL Server Timeout]** | Saisissez le temps d’attente (en secondes) lors de la tentative d’établissement d’une connexion au serveur Elasticsearch ou OpenSearch. |
 
 1. Cliquez sur **[!UICONTROL Test Connection]**.
 
@@ -60,26 +60,26 @@ Pour configurer votre système afin d’utiliser Elasticsearch ou OpenSearch :
 
 Si tel est le cas, essayez les méthodes suivantes :
 
-- Assurez-vous que le serveur du moteur de recherche est en cours d’exécution.
+- Vérifiez que le serveur du moteur de recherche est en cours d’exécution.
 - Si le serveur se trouve sur un autre hôte que Commerce, connectez-vous au serveur Commerce et envoyez un ping à l’hôte du moteur de recherche. Résolvez les problèmes de connectivité réseau et testez à nouveau la connexion.
 - Examinez la fenêtre de commande dans laquelle vous avez démarré Elasticsearch ou OpenSearch pour rechercher des arborescences et des arborescences de pile. Vous devez résoudre ceux-là avant de continuer. En particulier, assurez-vous que vous avez démarré votre moteur de recherche en tant qu’utilisateur avec `root` des privilèges.
 - Assurez-vous que [pare-feu UNIX et SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) sont désactivés ou configurez des règles pour permettre à votre moteur de recherche et à Commerce de communiquer entre eux.
-- Vérifiez la valeur de la variable **[!UICONTROL Server Hostname]** champ . Assurez-vous que le serveur est disponible. Vous pouvez essayer plutôt l’adresse IP du serveur.
+- Vérifiez la valeur de la variable **[!UICONTROL Server Hostname]** champ . Vérifiez que le serveur est disponible. Vous pouvez essayer plutôt l’adresse IP du serveur.
 - Utilisez la variable `netstat -an | grep <listen-port>` pour vérifier que le port spécifié dans la variable **[!UICONTROL Server Port]** n’est pas utilisé par un autre processus.
 
-   Par exemple, pour voir si votre moteur de recherche s’exécute sur son port par défaut, utilisez la commande suivante :
+  Par exemple, pour voir si votre moteur de recherche s’exécute sur son port par défaut, utilisez la commande suivante :
 
-   ```bash
-   netstat -an | grep 9200
-   ```
+  ```bash
+  netstat -an | grep 9200
+  ```
 
-   S’il s’exécute sur le port 9200, il s’affiche comme suit :
+  S’il s’exécute sur le port 9200, il s’affiche comme suit :
 
-   ```terminal
-   `tcp        0      0 :::9200            :::-         LISTEN`
-   ```
+  ```terminal
+  `tcp        0      0 :::9200            :::-         LISTEN`
+  ```
 
-## Réindexez la recherche de catalogue et actualisez le cache de la page entière.
+## Réindexer la recherche de catalogue et actualiser le cache de la page entière
 
 Après avoir modifié la configuration du moteur de recherche, vous devez réindexer l’index de recherche du catalogue et actualiser le cache de page complet à l’aide de la ligne de commande ou de l’administrateur.
 

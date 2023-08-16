@@ -25,8 +25,8 @@ L’outil de migration incrémentale installe les tables de déploiement (avec p
 
 Avant de commencer, procédez comme suit pour préparer :
 
-1. Connectez-vous au serveur d’applications en tant que [le propriétaire du système de fichiers ;](../../../installation/prerequisites/file-system/overview.md).
-1. Changement de la variable `/bin` ou assurez-vous qu’il est ajouté à votre système. `PATH`.
+1. Connectez-vous au serveur d’applications en tant que [le propriétaire du système de fichiers](../../../installation/prerequisites/file-system/overview.md).
+1. Changement de la `/bin` ou assurez-vous qu’il est ajouté à votre système. `PATH`.
 
 Voir [premières étapes](overview.md#first-steps) pour plus d’informations.
 
@@ -48,10 +48,10 @@ Où :
 
 >[!NOTE]
 >
->La migration incrémentale est un processus continu ; il redémarre automatiquement toutes les 5 secondes. Utilisez CTRL-C pour abandonner le processus de migration.
+>La migration incrémentielle est un processus continu qui redémarre automatiquement toutes les 5 secondes. Utilisez CTRL-C pour abandonner le processus de migration.
 
 
-## Migration de données créées par des extensions tierces
+## Migration des données créées par des extensions tierces
 
 Dans le `Delta` , [!DNL Data Migration Tool] migre les données créées uniquement par les modules du Magento lui-même et n’est pas responsable du code ni des extensions effectuées par des développeurs tiers. Si ces extensions ont créé des données dans la base de données storefront et que le commerçant souhaite que ces données soient dans le Magento 2 — fichiers de configuration de la variable [!DNL Data Migration Tool] doivent être créés et modifiés en conséquence.
 

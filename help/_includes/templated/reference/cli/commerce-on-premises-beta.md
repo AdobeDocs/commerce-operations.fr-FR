@@ -37,26 +37,26 @@ bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURREN
 
 Le type de shell (&quot;bash&quot;)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--input`, `-i`
 
 Un tableau de jetons d’entrée (par exemple, &quot;C.C._WORDS&quot; ou &quot;argv&quot;)
 
 - Valeur par défaut : `[]`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--current`, `-c`
 
 Index de la table &quot;input&quot; dans laquelle se trouve le curseur (par exemple, Throne_CWORD)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--symfony`, `-S`
 
 Version du script d’achèvement
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -74,7 +74,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -118,7 +118,7 @@ bin/magento completion [--debug] [--] [<shell>]
 
 ### `shell`
 
-Le type de conteneur (par ex. &quot;bash&quot;), la valeur de la variable env &quot;$SHELL&quot; sera utilisée si elle n’est pas indiquée.
+Le type de shell (par exemple &quot;bash&quot;), la valeur de la variable d’environnement &quot;$SHELL&quot; sera utilisée si ce n’est pas le cas.
 
 
 ### `--debug`
@@ -144,7 +144,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -198,7 +198,7 @@ Nom de la commande
 Format de sortie (txt, xml, json ou md)
 
 - Valeur par défaut : `txt`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--raw`
 
@@ -223,7 +223,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -282,7 +282,7 @@ Pour générer la liste de commandes brute
 Format de sortie (txt, xml, json ou md)
 
 - Valeur par défaut : `txt`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--short`
 
@@ -307,7 +307,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -364,7 +364,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -445,7 +445,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -502,7 +502,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -559,7 +559,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -604,37 +604,37 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 (Obligatoire) Utilisateur administrateur
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--admin-password`
 
-(Obligatoire) Mot de passe de l’administrateur
+(Obligatoire) Mot de passe administrateur
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--admin-email`
 
 (Obligatoire) Adresse électronique de l’administrateur
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--admin-firstname`
 
 (Obligatoire) Prénom de l’administrateur
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--admin-lastname`
 
-(Obligatoire) Nom de famille de l’administrateur
+(Obligatoire) Nom de l’administrateur
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -652,7 +652,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -716,7 +716,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -782,7 +782,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -839,7 +839,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -896,7 +896,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -941,25 +941,25 @@ bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNA
 
 Nom d’hôte/adresse IP. Le port est facultatif
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--dbname`
 
-Nom de la base de données
+Nom de la base
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--username`
 
-Nom d’utilisateur de la base de données. Doit disposer d’un accès en lecture
+Nom d’utilisateur de la base de données. Doit avoir un accès en lecture
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--password`
 
 Mot de passe
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -977,7 +977,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1012,7 +1012,7 @@ Ne posez aucune question interactive
 
 ## `cache:clean`
 
-Nettoie le ou les types de cache
+Nettoie le ou les types de cache.
 
 ```bash
 bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
@@ -1031,7 +1031,7 @@ Liste de types de cache séparés par des espaces, ou omettez de les appliquer �
 
 ajouter ou remplacer les paramètres de l’amorçage
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -1049,7 +1049,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1103,7 +1103,7 @@ Liste de types de cache séparés par des espaces, ou omettez de les appliquer �
 
 ajouter ou remplacer les paramètres de l’amorçage
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -1121,7 +1121,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1175,7 +1175,7 @@ Liste de types de cache séparés par des espaces, ou omettez de les appliquer �
 
 ajouter ou remplacer les paramètres de l’amorçage
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -1193,7 +1193,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1228,7 +1228,7 @@ Ne posez aucune question interactive
 
 ## `cache:flush`
 
-Efface le stockage du cache utilisé par le ou les types de cache.
+Efface le stockage du cache utilisé par les types de cache.
 
 ```bash
 bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
@@ -1247,7 +1247,7 @@ Liste de types de cache séparés par des espaces, ou omettez de les appliquer �
 
 ajouter ou remplacer les paramètres de l’amorçage
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -1265,7 +1265,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1310,7 +1310,7 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 
 ajouter ou remplacer les paramètres de l’amorçage
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -1328,7 +1328,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1399,7 +1399,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1456,7 +1456,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1520,7 +1520,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1590,7 +1590,7 @@ Portée de la configuration, si elle n’est pas définie, utilisez &quot;defaul
 
 Code d’étendue pour la configuration, chaîne vide par défaut
 
-- Valeur par défaut : &quot;
+- Par défaut : &quot;
 - Accepte une valeur
 
 ### `--help`, `-h`
@@ -1609,7 +1609,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1668,13 +1668,13 @@ Valeur de configuration
 Étendue de configuration (par défaut, site web ou magasin)
 
 - Valeur par défaut : `default`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--scope-code`
 
 Code d’étendue (requis uniquement si la portée n’est pas &quot;par défaut&quot;)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--lock-env`, `-e`
 
@@ -1685,7 +1685,7 @@ Verrouiller la valeur qui empêche la modification dans l’administrateur (sera
 
 ### `--lock-config`, `-c`
 
-Verrouillez et partagez la valeur avec d’autres installations, empêche la modification dans l’Admin (sera enregistrée dans app/etc/config.php).
+Verrouiller et partager la valeur avec d’autres installations empêche la modification dans l’Admin (sera enregistrée dans app/etc/config.php).
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1713,7 +1713,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1771,7 +1771,7 @@ Portée de la configuration, si elle n’est pas spécifiée, la portée &quot;p
 
 Code d’étendue (requis uniquement si la portée n’est pas `default`)
 
-- Valeur par défaut : &quot;
+- Par défaut : &quot;
 - Accepte une valeur
 
 ### `--help`, `-h`
@@ -1790,7 +1790,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1861,7 +1861,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1918,7 +1918,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -1963,7 +1963,7 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 
 Exécuter des tâches uniquement à partir d’un groupe spécifié
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--exclude-group`
 
@@ -1976,7 +1976,7 @@ Exclure les tâches du groupe spécifié
 
 Ajout ou remplacement des paramètres de l’amorçage
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -1994,7 +1994,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2051,7 +2051,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2122,7 +2122,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2179,7 +2179,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2243,7 +2243,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2300,7 +2300,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2357,7 +2357,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2414,7 +2414,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2477,7 +2477,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2534,7 +2534,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2612,7 +2612,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2667,28 +2667,28 @@ Fichiers à prétraiter (le fichier doit être spécifié sans extension)
 Type de fichier source : [less]
 
 - Valeur par défaut : `less`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--locale`
 
 Paramètres régionaux : [en_US]
 
 - Valeur par défaut : `en_US`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--area`
 
 Zone : [frontend\|adminhtml]
 
 - Valeur par défaut : `frontend`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--theme`
 
 Thème : [Fournisseur/thème]
 
 - Valeur par défaut : `Magento/luma`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -2706,7 +2706,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2763,7 +2763,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2820,7 +2820,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2877,7 +2877,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -2930,8 +2930,8 @@ Type de test à exécuter. Types disponibles : all, unit, integration, integrati
 
 Arguments supplémentaires pour PHPUnit. Exemple : &quot;-c&#39;—filter=MyTest&#39;&quot; (aucun espace)
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -2949,7 +2949,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3002,7 +3002,7 @@ Chemin d’accès au fichier pour générer le catalogue. Pour PhpStorm, utilise
 Format dans lequel le catalogue sera généré. Pris en charge : [phpstorm, vscode]
 
 - Valeur par défaut : `phpstorm`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -3020,7 +3020,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3064,13 +3064,13 @@ bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 
 ### `xml-file`
 
-Chemin d’accès au fichier XML qui va être transformé.
+Chemin d’accès au fichier XML qui va être transformé
 
 - Obligatoire
 
 ### `processor`
 
-Chemin d’accès à la feuille de style XSL qui sera appliquée au fichier XML
+Chemin vers la feuille de style XSL qui sera appliquée au fichier XML
 
 - Obligatoire
 
@@ -3097,7 +3097,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3132,7 +3132,7 @@ Ne posez aucune question interactive
 
 ## `downloadable:domains:add`
 
-Ajout de domaines à la liste autorisée de domaines téléchargeables
+Ajout de domaines à la liste blanche des domaines téléchargeables
 
 ```bash
 bin/magento downloadable:domains:add [<domains>...]
@@ -3163,7 +3163,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3198,7 +3198,7 @@ Ne posez aucune question interactive
 
 ## `downloadable:domains:remove`
 
-Suppression de domaines de la liste autorisée de domaines téléchargeables
+Suppression de domaines de la liste blanche des domaines téléchargeables
 
 ```bash
 bin/magento downloadable:domains:remove [<domains>...]
@@ -3229,7 +3229,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3264,7 +3264,7 @@ Ne posez aucune question interactive
 
 ## `downloadable:domains:show`
 
-Afficher la liste autorisée des domaines téléchargeables
+Afficher la liste blanche des domaines téléchargeables
 
 ```bash
 bin/magento downloadable:domains:show
@@ -3286,7 +3286,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3343,7 +3343,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3391,7 +3391,7 @@ bin/magento events:provider:create
 
 ### `--label`
 
-Libellé permettant de définir votre fournisseur personnalisé.
+Un libellé pour définir votre fournisseur personnalisé.
 
 - Accepte une valeur
 
@@ -3417,7 +3417,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3474,7 +3474,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3545,7 +3545,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3602,7 +3602,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3666,7 +3666,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3723,7 +3723,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3758,7 +3758,7 @@ Ne posez aucune question interactive
 
 ## `events:subscribe`
 
-S’abonne à l’événement
+Abonne à l&#39;événement
 
 ```bash
 bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [--] <event-code>
@@ -3783,20 +3783,20 @@ Force l’abonnement à l’événement spécifié, même s’il n’a pas été
 Liste des champs de la payload des données d’événement.
 
 - Valeur par défaut : `[]`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--parent`
 
 Code d’événement parent pour un abonnement à un événement avec des règles.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--rules`
 
 La liste des règles de l’abonnement à l’événement, où chaque règle est formatée sous la forme &quot;champ\|opérateur\|valeur&quot;.
 
 - Valeur par défaut : `[]`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--priority`, `-p`
 
@@ -3821,7 +3821,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3885,7 +3885,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -3949,7 +3949,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4000,7 +4000,7 @@ Chemin du répertoire à analyser. Non nécessaire si l’indicateur —magento 
 
 Chemin (y compris le nom du fichier) vers un fichier de sortie. Si aucun fichier n’est spécifié, la valeur par défaut est stdout.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--magento`, `-m`
 
@@ -4025,7 +4025,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4084,7 +4084,7 @@ Paramètre régional cible du dictionnaire, par exemple &quot;de_DE&quot;
 Mode d’enregistrement pour le dictionnaire - &quot;replace&quot; - replace language pack par new - &quot;merge&quot; - merge des modules de langue, par défaut &quot;replace&quot;
 
 - Valeur par défaut : `replace`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--allow-duplicates`, `-d`
 
@@ -4109,7 +4109,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4162,7 +4162,7 @@ Nom du package de langue
 
 ### `--backup-code`, `-b`
 
-Sauvegardez le code et les fichiers de configuration (à l’exclusion des fichiers temporaires).
+Sauvegarder le code et les fichiers de configuration (à l’exclusion des fichiers temporaires)
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4183,7 +4183,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4240,7 +4240,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4284,7 +4284,7 @@ bin/magento indexer:reindex [<index>...]
 
 ### `index`
 
-Liste de types d’index séparés par des espaces ou omettre de les appliquer à tous les index.
+Liste de types d’index séparés par des espaces ou omettre de s’appliquer à tous les index.
 
 - Valeur par défaut : `[]`
 
@@ -4306,7 +4306,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4350,7 +4350,7 @@ bin/magento indexer:reset [<index>...]
 
 ### `index`
 
-Liste de types d’index séparés par des espaces ou omettre de les appliquer à tous les index.
+Liste de types d’index séparés par des espaces ou omettre de s’appliquer à tous les index.
 
 - Valeur par défaut : `[]`
 
@@ -4372,7 +4372,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4416,7 +4416,7 @@ bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 
 ### `indexer`
 
-Nom de l’indexeur [catalog_product_price|catalogpermissions_category]
+Indexer name [catalog_product_price|catalogpermissions_category]
 
 
 ### `mode`
@@ -4440,7 +4440,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4489,7 +4489,7 @@ Type de mode Indexer [temps réel|planning]
 
 ### `index`
 
-Liste de types d’index séparés par des espaces ou omettre de les appliquer à tous les index.
+Liste de types d’index séparés par des espaces ou omettre de s’appliquer à tous les index.
 
 - Valeur par défaut : `[]`
 
@@ -4511,7 +4511,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4577,7 +4577,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4621,7 +4621,7 @@ bin/magento indexer:show-mode [<index>...]
 
 ### `index`
 
-Liste de types d’index séparés par des espaces ou omettre de les appliquer à tous les index.
+Liste de types d’index séparés par des espaces ou omettre de s’appliquer à tous les index.
 
 - Valeur par défaut : `[]`
 
@@ -4643,7 +4643,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4687,7 +4687,7 @@ bin/magento indexer:status [<index>...]
 
 ### `index`
 
-Liste de types d’index séparés par des espaces ou omettre de les appliquer à tous les index.
+Liste de types d’index séparés par des espaces ou omettre de s’appliquer à tous les index.
 
 - Valeur par défaut : `[]`
 
@@ -4709,7 +4709,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4766,7 +4766,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4801,7 +4801,7 @@ Ne posez aucune question interactive
 
 ## `info:backups:list`
 
-Imprime la liste des fichiers de sauvegarde disponibles
+Imprime la liste des fichiers de sauvegarde disponibles.
 
 ```bash
 bin/magento info:backups:list
@@ -4823,7 +4823,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4880,7 +4880,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4926,7 +4926,7 @@ bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 Nom de fichier du rapport
 
 - Valeur par défaut : `framework-dependencies.csv`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -4944,7 +4944,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -4990,7 +4990,7 @@ bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 Nom de fichier du rapport
 
 - Valeur par défaut : `modules-dependencies.csv`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -5008,7 +5008,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5043,7 +5043,7 @@ Ne posez aucune question interactive
 
 ## `info:dependencies:show-modules-circular`
 
-Affiche le nombre de dépendances circulaires entre les modules
+Affiche le nombre de dépendances circulaires entre les modules.
 
 ```bash
 bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
@@ -5054,7 +5054,7 @@ bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 Nom de fichier du rapport
 
 - Valeur par défaut : `modules-circular-dependencies.csv`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -5072,7 +5072,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5129,7 +5129,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5186,7 +5186,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5259,7 +5259,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5344,7 +5344,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5411,7 +5411,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5477,9 +5477,9 @@ Ajouter l’adresse IP à la liste existante
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -5497,7 +5497,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5543,13 +5543,13 @@ bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PA
 Adresses IP autorisées (utilisez &quot;none&quot; pour effacer la liste IP autorisée)
 
 - Valeur par défaut : `[]`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -5567,7 +5567,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5613,13 +5613,13 @@ bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PAR
 Adresses IP autorisées (utilisez &quot;none&quot; pour effacer la liste IP autorisée)
 
 - Valeur par défaut : `[]`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -5637,7 +5637,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5680,9 +5680,9 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -5700,7 +5700,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5757,7 +5757,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5814,7 +5814,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5871,7 +5871,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5923,7 +5923,7 @@ Nom du module
 
 ### `--force`, `-f`
 
-Contournement de la vérification des dépendances
+Vérification des dépendances de contournement
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -5944,9 +5944,9 @@ Effacez les fichiers d’affichage statique générés. Nécessaire, si le ou le
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -5964,7 +5964,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6016,7 +6016,7 @@ Nom du module
 
 ### `--force`, `-f`
 
-Contournement de la vérification des dépendances
+Vérification des dépendances de contournement
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6037,9 +6037,9 @@ Effacez les fichiers d’affichage statique générés. Nécessaire, si le ou le
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -6057,7 +6057,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6123,9 +6123,9 @@ Imprimer uniquement les modules désactivés
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -6143,7 +6143,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6203,7 +6203,7 @@ Suppression des données installées par le ou les modules
 
 ### `--backup-code`
 
-Sauvegardez le code et les fichiers de configuration (à l’exclusion des fichiers temporaires).
+Sauvegarder le code et les fichiers de configuration (à l’exclusion des fichiers temporaires)
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6217,7 +6217,7 @@ Effectuer une sauvegarde multimédia
 
 ### `--backup-db`
 
-Sauvegarde complète de la base de données
+Sauvegarder la base de données complète
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6238,9 +6238,9 @@ Effacez les fichiers d’affichage statique générés. Nécessaire, si le ou le
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -6258,7 +6258,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6338,7 +6338,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6395,7 +6395,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6452,7 +6452,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6504,19 +6504,19 @@ Nom du consommateur à démarrer.
 
 Nombre de messages à traiter par le consommateur avant la fin du traitement. Si non spécifié, arrêtez-le après avoir traité tous les messages en file d&#39;attente.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--batch-size`
 
 Nombre de messages par lot. Applicable au consommateur par lot uniquement.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--area-code`
 
 La valeur par défaut de la zone préférée (global, adminhtml, etc..) est globale.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--single-thread`
 
@@ -6535,7 +6535,7 @@ Nombre de processus par consommateur.
 
 Le chemin d’accès au fichier pour l’enregistrement du PID (cette option est obsolète, utilisez plutôt —single-thread).
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -6553,7 +6553,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6610,7 +6610,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6662,7 +6662,7 @@ Exécutez le renvoi des données de flux vers le service SaaS uniquement. Ne ré
 
 Nom du flux pour effectuer une synchronisation complète avec le service SaaS. Flux disponibles :
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--cleanup-feed`
 
@@ -6687,7 +6687,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6751,7 +6751,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6815,7 +6815,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6872,7 +6872,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6929,7 +6929,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -6986,7 +6986,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7056,7 +7056,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7113,7 +7113,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7183,7 +7183,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7249,7 +7249,7 @@ zone du serveur d’applications
 
 magento bootstrap init params
 
-- Valeur par défaut : &quot;
+- Par défaut : &quot;
 - Accepte une valeur
 
 ### `--help`, `-h`
@@ -7268,7 +7268,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7311,7 +7311,7 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 
 ### `--code`
 
-Sauvegardez le code et les fichiers de configuration (à l’exclusion des fichiers temporaires).
+Sauvegarder le code et les fichiers de configuration (à l’exclusion des fichiers temporaires)
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7325,16 +7325,16 @@ Effectuer une sauvegarde multimédia
 
 ### `--db`
 
-Sauvegarde complète de la base de données
+Sauvegarder la base de données complète
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -7352,7 +7352,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -7397,210 +7397,210 @@ bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-d
 
 Nom frontal du serveur principal (il sera généré automatiquement s’il manque)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--enable-debug-logging`
 
 Activation de la journalisation du débogage
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--enable-syslog-logging`
 
 Activation de la journalisation du journal de syslog
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--remote-storage-driver`
 
 Pilote de stockage distant
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--remote-storage-prefix`
 
 Préfixe de stockage distant
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--remote-storage-endpoint`
 
 Point d’entrée de stockage distant
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--remote-storage-bucket`
 
 Boucle de stockage à distance
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--remote-storage-region`
 
 Région de stockage distant
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--remote-storage-key`
 
 Clé d&#39;accès au stockage distant
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--remote-storage-secret`
 
 Clé secrète de stockage à distance
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--remote-storage-path-style`
 
 Style de chemin de stockage distant
 
 - Valeur par défaut : `0`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--id_salt`
 
 GraphQl Salt
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--checkout-async`
 
 Activer le traitement asynchrone des commandes ? 1 - Oui, 0 - Non
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--amqp-host`
 
 Hôte du serveur Amqp
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--amqp-port`
 
 Port du serveur Amqp
 
 - Valeur par défaut : `5672`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--amqp-user`
 
 Nom d’utilisateur du serveur Amqp
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--amqp-password`
 
 Mot de passe du serveur Amqp
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--amqp-virtualhost`
 
 virtualhost Amqp
 
 - Valeur par défaut : `/`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--amqp-ssl`
 
 Amqp SSL
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--amqp-ssl-options`
 
 Options SSL Amqp (JSON)
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--config-async`
 
 Activer l’enregistrement de configuration d’administrateur asynchrone ? 1 - Oui, 0 - Non
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--consumers-wait-for-messages`
 
 Les consommateurs doivent-ils attendre un message de la file d’attente ? 1 - Oui, 0 - Non
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--queue-default-connection`
 
 La connexion par défaut des files de messages est mise en file d’attente. Peut être &#39;db&#39;, &#39;amqp&#39; ou un système de file d&#39;attente personnalisé. Le système de file d&#39;attente doit être installé et configuré, sinon les messages ne seront pas traités correctement.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--deferred-total-calculating`
 
 Activer le calcul du total différé ? 1 - Oui, 0 - Non
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--key`
 
 Clé de chiffrement
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-host`
 
 Hôte du serveur de base de données
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-name`
 
-Nom de la base de données
+Nom de la base
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-user`
 
-Nom d’utilisateur du serveur de base de données
+Database server username
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-engine`
 
 Moteur de serveur de base de données
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-password`
 
 Mot de passe du serveur de base de données
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-prefix`
 
 Préfixe de table de base de données
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-model`
 
 Type de base de données
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-init-statements`
 
 Jeu initial de commandes de la base de données
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--skip-db-validation`, `-s`
 
@@ -7613,28 +7613,28 @@ Si spécifié, la validation de la connexion à la base de données est ignorée
 
 http Cache hosts
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-ssl-key`
 
 Chemin complet du fichier de clé client pour établir la connexion de la base de données via SSL
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--db-ssl-cert`
 
 Chemin complet du fichier de certificat client pour établir la connexion de la base de données via SSL
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--db-ssl-ca`
 
 Chemin complet du fichier de certificat du serveur pour établir la connexion de la base de données via SSL
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--db-ssl-verify`
 
@@ -7647,187 +7647,187 @@ Vérification de la certification du serveur
 
 Gestionnaire d’enregistrement de session
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-host`
 
 Nom d’hôte complet, adresse IP ou chemin absolu en cas d’utilisation de sockets UNIX
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-port`
 
 Port d’écoute du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-password`
 
 Mot de passe du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-timeout`
 
 Timeout de connexion, en secondes
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-persistent-id`
 
-Chaîne unique permettant d’activer les connexions persistantes
+Chaîne unique pour activer les connexions persistantes
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-db`
 
 Redis database number
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-compression-threshold`
 
 Seuil de compression des redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-compression-lib`
 
 Redis la bibliothèque de compression. Valeurs : gzip (par défaut), lzf, lz4, snappy
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-log-level`
 
-Redis le niveau de journalisation. Valeurs : 0 (le moins du verbose) à 7 (le plus du verbose)
+Redis le niveau de journalisation. Valeurs : 0 (minimum verbose) à 7 (plus verbose)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-max-concurrency`
 
 Nombre maximal de processus pouvant attendre un verrouillage sur une session
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-break-after-frontend`
 
 Nombre de secondes à patienter avant de tenter de rompre un verrouillage pour la session frontale
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-break-after-adminhtml`
 
 Nombre de secondes à attendre avant de tenter de rompre un verrouillage pour la session d’administration
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-first-lifetime`
 
 Durée de vie, en secondes, de la session pour les non-robots lors de la première écriture (utilisez 0 pour désactiver).
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-bot-first-lifetime`
 
 Durée de vie, en secondes, de la session pour les robots lors de la première écriture (utiliser 0 pour désactiver)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-bot-lifetime`
 
 Durée de vie de la session pour les robots lors des écritures suivantes (utilisez 0 pour désactiver)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-disable-locking`
 
-Redis la désactivation du verrouillage. Valeurs : false (par défaut), true
+Redis désactiver le verrouillage. Valeurs : false (par défaut), true
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-min-lifetime`
 
 Durée de vie de la session min., en secondes
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-max-lifetime`
 
 Durée de vie maximale de la session, exprimée en secondes
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-sentinel-master`
 
 Redis Sentinel maître
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-sentinel-servers`
 
 Serveurs Redis Sentinel, séparés par des virgules
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-sentinel-verify-master`
 
 Redis Sentinel vérifie maître. Valeurs : false (par défaut), true
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-sentinel-connect-retries`
 
 Redis Sentinel connecte les nouvelles tentatives.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--cache-backend`
 
 Gestionnaire de cache par défaut
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--cache-backend-redis-server`
 
 Serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--cache-backend-redis-db`
 
 Numéro de base de données du cache
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--cache-backend-redis-port`
 
 Port d’écoute du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--cache-backend-redis-password`
 
 Mot de passe du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--cache-backend-redis-compress-data`
 
 Défini sur 0 pour désactiver la compression (la valeur par défaut est 1, activée).
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--cache-backend-redis-compression-lib`
 
 Bibliothèque de compression à utiliser [snappy,lzf,l4z,zstd,gzip] (laissez vide pour déterminer automatiquement)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--cache-id-prefix`
 
 Préfixe d’ID pour les clés de cache
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--allow-parallel-generation`
 
@@ -7840,145 +7840,145 @@ Autoriser la génération du cache de manière non bloquante
 
 Gestionnaire de cache par défaut
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--page-cache-redis-server`
 
 Serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--page-cache-redis-db`
 
 Numéro de base de données du cache
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--page-cache-redis-port`
 
 Port d’écoute du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--page-cache-redis-password`
 
 Mot de passe du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--page-cache-redis-compress-data`
 
 Définissez cette variable sur 1 pour compresser le cache de la page entière (utilisez 0 pour désactiver).
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--page-cache-redis-compression-lib`
 
 Bibliothèque de compression à utiliser [snappy,lzf,l4z,zstd,gzip] (laissez vide pour déterminer automatiquement)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--page-cache-id-prefix`
 
 Préfixe d’ID pour les clés de cache
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--lock-provider`
 
 Verrouillage du nom du fournisseur
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--lock-db-prefix`
 
 Préfixe de verrouillage spécifique à l&#39;installation pour éviter les conflits de verrouillage
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--lock-zookeeper-host`
 
 Hôte et port pour se connecter à la grappe Zookeeper. Par exemple : 127.0.0.1:2181
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--lock-zookeeper-path`
 
-Chemin d’accès où le gardien de page enregistre les verrous. Le chemin par défaut est le suivant : /magento/locks
+Chemin d’accès où le gardien de page enregistre les verrous. Le chemin par défaut est : /magento/locks
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--lock-file-path`
 
 Chemin d’accès où les verrous de fichier seront enregistrés.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--document-root-is-pub`
 
 Indicateur indiquant que Pub est à la racine, peut être vrai ou faux uniquement
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backpressure-logger`
 
 Gestionnaire des enregistreurs de rétropression
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backpressure-logger-redis-server`
 
 Serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backpressure-logger-redis-port`
 
 Port d’écoute du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backpressure-logger-redis-timeout`
 
 Délai d’expiration du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backpressure-logger-redis-persistent`
 
 Redis persistante
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backpressure-logger-redis-db`
 
 Redis db number
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backpressure-logger-redis-password`
 
 Mot de passe du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backpressure-logger-redis-user`
 
 Utilisateur du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backpressure-logger-id-prefix`
 
 Préfixe d’ID pour les clés
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -7996,7 +7996,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8039,9 +8039,9 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -8059,7 +8059,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8143,7 +8143,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8178,7 +8178,7 @@ Ne posez aucune question interactive
 
 ## `setup:db-declaration:generate-whitelist`
 
-Générer la liste autorisée des tables et des colonnes qui peuvent être éditées par le programme d&#39;installation de la déclaration
+Générer la liste blanche des tables et colonnes qui peuvent être éditées par le programme d&#39;installation de la déclaration
 
 ```bash
 bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]]
@@ -8186,7 +8186,7 @@ bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]
 
 ### `--module-name`
 
-Nom du module dans lequel la liste autorisée sera générée
+Nom du module dans lequel la liste blanche sera générée
 
 - Valeur par défaut : `all`
 - Accepte une valeur
@@ -8207,7 +8207,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8250,56 +8250,56 @@ bin/magento setup:db-schema:add-slave [--host HOST] [--dbname DBNAME] [--usernam
 
 ### `--host`
 
-Hôte du serveur Secondaire DB
+Hôte du serveur de base de données esclave
 
 - Valeur par défaut : `localhost`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--dbname`
 
-Nom de la base de données du Secondaire
+Nom de la base de données esclave
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--username`
 
-Nom d’utilisateur de Secondaire DB
+Nom d’utilisateur de la base de données esclave
 
 - Valeur par défaut : `root`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--password`
 
-Mot de passe utilisateur de Secondaire DB
+Mot de passe utilisateur de la base de données esclave
 
 - Accepte une valeur
 
 ### `--connection`
 
-Nom de la connexion au Secondaire
+Nom de la connexion esclave
 
 - Valeur par défaut : `default`
 - Accepte une valeur
 
 ### `--resource`
 
-Secondaire Resource name
+Nom de la ressource esclave
 
 - Valeur par défaut : `default`
 - Accepte une valeur
 
 ### `--maxAllowedLag`
 
-Connexion maximale par Secondaire de charge autorisée (en secondes)
+Connexion maximale autorisée à l’esclave de la traîne (en secondes)
 
-- Valeur par défaut : &quot;
+- Par défaut : &quot;
 - Accepte une valeur
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -8317,7 +8317,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8362,19 +8362,19 @@ bin/magento setup:db-schema:split-quote [--host HOST] [--dbname DBNAME] [--usern
 
 Extraction de l’hôte du serveur DB
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--dbname`
 
 Checout Database Name
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--username`
 
 Extraction du nom d’utilisateur DB
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--password`
 
@@ -8398,9 +8398,9 @@ Nom de la ressource d’extraction
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -8418,7 +8418,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8463,23 +8463,23 @@ bin/magento setup:db-schema:split-sales [--host HOST] [--dbname DBNAME] [--usern
 
 Hôte de serveur de base de données des ventes
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--dbname`
 
-Nom de la base de données commerciale
+Nom de la base de données de ventes
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--username`
 
 Nom d’utilisateur de la base de données des ventes
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--password`
 
-Mot de passe de l’utilisateur de la base de données des ventes
+Mot de passe utilisateur de la base de données des ventes
 
 - Accepte une valeur
 
@@ -8499,9 +8499,9 @@ Nom de la ressource commerciale
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -8519,7 +8519,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8569,9 +8569,9 @@ Permet de convertir les anciens scripts (InstallSchema, UpgradeSchema) au format
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -8589,7 +8589,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8632,9 +8632,9 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -8652,7 +8652,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8709,7 +8709,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -8754,210 +8754,210 @@ bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debu
 
 Nom frontal du serveur principal (il sera généré automatiquement s’il manque)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--enable-debug-logging`
 
 Activation de la journalisation du débogage
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--enable-syslog-logging`
 
 Activation de la journalisation du journal de syslog
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--remote-storage-driver`
 
 Pilote de stockage distant
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--remote-storage-prefix`
 
 Préfixe de stockage distant
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--remote-storage-endpoint`
 
 Point d’entrée de stockage distant
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--remote-storage-bucket`
 
 Boucle de stockage à distance
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--remote-storage-region`
 
 Région de stockage distant
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--remote-storage-key`
 
 Clé d&#39;accès au stockage distant
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--remote-storage-secret`
 
 Clé secrète de stockage à distance
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--remote-storage-path-style`
 
 Style de chemin de stockage distant
 
 - Valeur par défaut : `0`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--id_salt`
 
 GraphQl Salt
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--checkout-async`
 
 Activer le traitement asynchrone des commandes ? 1 - Oui, 0 - Non
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--amqp-host`
 
 Hôte du serveur Amqp
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--amqp-port`
 
 Port du serveur Amqp
 
 - Valeur par défaut : `5672`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--amqp-user`
 
 Nom d’utilisateur du serveur Amqp
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--amqp-password`
 
 Mot de passe du serveur Amqp
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--amqp-virtualhost`
 
 virtualhost Amqp
 
 - Valeur par défaut : `/`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--amqp-ssl`
 
 Amqp SSL
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--amqp-ssl-options`
 
 Options SSL Amqp (JSON)
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--config-async`
 
 Activer l’enregistrement de configuration d’administrateur asynchrone ? 1 - Oui, 0 - Non
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--consumers-wait-for-messages`
 
 Les consommateurs doivent-ils attendre un message de la file d’attente ? 1 - Oui, 0 - Non
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--queue-default-connection`
 
 La connexion par défaut des files de messages est mise en file d’attente. Peut être &#39;db&#39;, &#39;amqp&#39; ou un système de file d&#39;attente personnalisé. Le système de file d&#39;attente doit être installé et configuré, sinon les messages ne seront pas traités correctement.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--deferred-total-calculating`
 
 Activer le calcul du total différé ? 1 - Oui, 0 - Non
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--key`
 
 Clé de chiffrement
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-host`
 
 Hôte du serveur de base de données
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-name`
 
-Nom de la base de données
+Nom de la base
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-user`
 
-Nom d’utilisateur du serveur de base de données
+Database server username
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-engine`
 
 Moteur de serveur de base de données
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-password`
 
 Mot de passe du serveur de base de données
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-prefix`
 
 Préfixe de table de base de données
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-model`
 
 Type de base de données
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-init-statements`
 
 Jeu initial de commandes de la base de données
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--skip-db-validation`, `-s`
 
@@ -8970,28 +8970,28 @@ Si spécifié, la validation de la connexion à la base de données est ignorée
 
 http Cache hosts
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-ssl-key`
 
 Chemin complet du fichier de clé client pour établir la connexion de la base de données via SSL
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--db-ssl-cert`
 
 Chemin complet du fichier de certificat client pour établir la connexion de la base de données via SSL
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--db-ssl-ca`
 
 Chemin complet du fichier de certificat du serveur pour établir la connexion de la base de données via SSL
 
-- Valeur par défaut : &quot;
-- Nécessite une valeur
+- Par défaut : &quot;
+- Requiert une valeur
 
 ### `--db-ssl-verify`
 
@@ -9004,187 +9004,187 @@ Vérification de la certification du serveur
 
 Gestionnaire d’enregistrement de session
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-host`
 
 Nom d’hôte complet, adresse IP ou chemin absolu en cas d’utilisation de sockets UNIX
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-port`
 
 Port d’écoute du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-password`
 
 Mot de passe du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-timeout`
 
 Timeout de connexion, en secondes
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-persistent-id`
 
-Chaîne unique permettant d’activer les connexions persistantes
+Chaîne unique pour activer les connexions persistantes
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-db`
 
 Redis database number
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-compression-threshold`
 
 Seuil de compression des redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-compression-lib`
 
 Redis la bibliothèque de compression. Valeurs : gzip (par défaut), lzf, lz4, snappy
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-log-level`
 
-Redis le niveau de journalisation. Valeurs : 0 (le moins du verbose) à 7 (le plus du verbose)
+Redis le niveau de journalisation. Valeurs : 0 (minimum verbose) à 7 (plus verbose)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-max-concurrency`
 
 Nombre maximal de processus pouvant attendre un verrouillage sur une session
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-break-after-frontend`
 
 Nombre de secondes à patienter avant de tenter de rompre un verrouillage pour la session frontale
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-break-after-adminhtml`
 
 Nombre de secondes à attendre avant de tenter de rompre un verrouillage pour la session d’administration
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-first-lifetime`
 
 Durée de vie, en secondes, de la session pour les non-robots lors de la première écriture (utilisez 0 pour désactiver).
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-bot-first-lifetime`
 
 Durée de vie, en secondes, de la session pour les robots lors de la première écriture (utiliser 0 pour désactiver)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-bot-lifetime`
 
 Durée de vie de la session pour les robots lors des écritures suivantes (utilisez 0 pour désactiver)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-disable-locking`
 
-Redis la désactivation du verrouillage. Valeurs : false (par défaut), true
+Redis désactiver le verrouillage. Valeurs : false (par défaut), true
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-min-lifetime`
 
 Durée de vie de la session min., en secondes
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-max-lifetime`
 
 Durée de vie maximale de la session, exprimée en secondes
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-sentinel-master`
 
 Redis Sentinel maître
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-sentinel-servers`
 
 Serveurs Redis Sentinel, séparés par des virgules
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-sentinel-verify-master`
 
 Redis Sentinel vérifie maître. Valeurs : false (par défaut), true
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--session-save-redis-sentinel-connect-retries`
 
 Redis Sentinel connecte les nouvelles tentatives.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--cache-backend`
 
 Gestionnaire de cache par défaut
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--cache-backend-redis-server`
 
 Serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--cache-backend-redis-db`
 
 Numéro de base de données du cache
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--cache-backend-redis-port`
 
 Port d’écoute du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--cache-backend-redis-password`
 
 Mot de passe du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--cache-backend-redis-compress-data`
 
 Défini sur 0 pour désactiver la compression (la valeur par défaut est 1, activée).
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--cache-backend-redis-compression-lib`
 
 Bibliothèque de compression à utiliser [snappy,lzf,l4z,zstd,gzip] (laissez vide pour déterminer automatiquement)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--cache-id-prefix`
 
 Préfixe d’ID pour les clés de cache
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--allow-parallel-generation`
 
@@ -9197,193 +9197,193 @@ Autoriser la génération du cache de manière non bloquante
 
 Gestionnaire de cache par défaut
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--page-cache-redis-server`
 
 Serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--page-cache-redis-db`
 
 Numéro de base de données du cache
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--page-cache-redis-port`
 
 Port d’écoute du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--page-cache-redis-password`
 
 Mot de passe du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--page-cache-redis-compress-data`
 
 Définissez cette variable sur 1 pour compresser le cache de la page entière (utilisez 0 pour désactiver).
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--page-cache-redis-compression-lib`
 
 Bibliothèque de compression à utiliser [snappy,lzf,l4z,zstd,gzip] (laissez vide pour déterminer automatiquement)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--page-cache-id-prefix`
 
 Préfixe d’ID pour les clés de cache
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--lock-provider`
 
 Verrouillage du nom du fournisseur
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--lock-db-prefix`
 
 Préfixe de verrouillage spécifique à l&#39;installation pour éviter les conflits de verrouillage
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--lock-zookeeper-host`
 
 Hôte et port pour se connecter à la grappe Zookeeper. Par exemple : 127.0.0.1:2181
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--lock-zookeeper-path`
 
-Chemin d’accès où le gardien de page enregistre les verrous. Le chemin par défaut est le suivant : /magento/locks
+Chemin d’accès où le gardien de page enregistre les verrous. Le chemin par défaut est : /magento/locks
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--lock-file-path`
 
 Chemin d’accès où les verrous de fichier seront enregistrés.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--document-root-is-pub`
 
 Indicateur indiquant que Pub est à la racine, peut être vrai ou faux uniquement
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backpressure-logger`
 
 Gestionnaire des enregistreurs de rétropression
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backpressure-logger-redis-server`
 
 Serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backpressure-logger-redis-port`
 
 Port d’écoute du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backpressure-logger-redis-timeout`
 
 Délai d’expiration du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backpressure-logger-redis-persistent`
 
 Redis persistante
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backpressure-logger-redis-db`
 
 Redis db number
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backpressure-logger-redis-password`
 
 Mot de passe du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backpressure-logger-redis-user`
 
 Utilisateur du serveur Redis
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backpressure-logger-id-prefix`
 
 Préfixe d’ID pour les clés
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--base-url`
 
 URL à laquelle le magasin est censé être disponible. Obsolète, utilisez config:set avec le chemin web/unsecure/base_url
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--language`
 
 Code de langue par défaut. Obsolète, utilisez config:set avec le chemin d’accès général/locale/code
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--timezone`
 
-Code de fuseau horaire par défaut. Obsolète, utilisez config:set avec le chemin d’accès général/locale/timezone
+Code de fuseau horaire par défaut. Obsolète, utilisez config:set avec le chemin général/locale/timezone
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--currency`
 
 Code de devise par défaut. Obsolète, utilisez config:set avec le chemin currency/options/base, currency/options/default et currency/options/allow
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--use-rewrites`
 
 Utilisez les réécritures. Obsolète, utilisez config:set avec le chemin web/seo/use_rewrites
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--use-secure`
 
 Utilisez des URL sécurisées. Activez cette option uniquement si SSL est disponible. Obsolète, utilisez config:set avec le chemin web/secure/use_in_frontend
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--base-url-secure`
 
 URL de base de la connexion SSL. Obsolète, utilisez config:set avec le chemin web/secure/base_url
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--use-secure-admin`
 
 Exécutez l’interface d’administration avec SSL. Obsolète, utilisez config:set avec le chemin web/secure/use_in_adminhtml
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--admin-use-security-key`
 
 Utilisation ou non d’une fonctionnalité &quot;clé de sécurité&quot; dans les URL et les formulaires d’administration du Magento. Obsolète, utilisez config:set avec le chemin admin/security/use_form_key
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--admin-user`
 
@@ -9419,91 +9419,91 @@ Nom de l’administrateur
 
 Moteur de recherche. Valeurs : élasticsearch5, élasticsearch7, élasticsearch8, opensearch
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--elasticsearch-host`
 
 Hôte du serveur Elasticsearch.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--elasticsearch-port`
 
 Port du serveur Elasticsearch.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--elasticsearch-enable-auth`
 
-Définissez cette variable sur 1 pour activer l’authentification. (la valeur par défaut est 0, désactivée)
+Définissez cette variable sur 1 pour activer l’authentification. (la valeur par défaut est 0, désactivé)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--elasticsearch-username`
 
 Nom d’utilisateur Elasticsearch. Applicable uniquement si l’authentification HTTP est activée
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--elasticsearch-password`
 
 Mot de passe de l’Elasticsearch. Applicable uniquement si l’authentification HTTP est activée
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--elasticsearch-index-prefix`
 
 Préfixe d’index Elasticsearch.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--elasticsearch-timeout`
 
 Délai d’expiration du serveur Elasticsearch.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--opensearch-host`
 
 Hôte du serveur OpenSearch.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--opensearch-port`
 
 Port du serveur OpenSearch.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--opensearch-enable-auth`
 
-Définissez cette variable sur 1 pour activer l’authentification. (la valeur par défaut est 0, désactivée)
+Définissez cette variable sur 1 pour activer l’authentification. (la valeur par défaut est 0, désactivé)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--opensearch-username`
 
 Nom d’utilisateur OpenSearch. Applicable uniquement si l’authentification HTTP est activée
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--opensearch-password`
 
 Mot de passe OpenSearch. Applicable uniquement si l’authentification HTTP est activée
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--opensearch-index-prefix`
 
 Préfixe d’index OpenSearch.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--opensearch-timeout`
 
 Délai d’expiration du serveur OpenSearch.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--cleanup-database`
 
@@ -9516,7 +9516,7 @@ Nettoyage de la base de données avant installation
 
 Préfixe du numéro de commande commerciale
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--use-sample-data`
 
@@ -9572,9 +9572,9 @@ L&#39;installation du Magento sera exécutée en mode Exécution sec
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -9592,7 +9592,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9663,7 +9663,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9708,25 +9708,25 @@ bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FIL
 
 Nom de base du fichier de sauvegarde de code dans var/backup
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--media-file`, `-m`
 
 Nom de base du fichier de sauvegarde multimédia dans var/backup
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--db-file`, `-d`
 
-Nom de base du fichier de sauvegarde de la base dans var/backup
+Nom de base du fichier de sauvegarde db dans var/backup
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -9744,7 +9744,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -9875,7 +9875,7 @@ Créez des liens symboliques pour les fichiers de ces paramètres régionaux, qu
 
 La version personnalisée du contenu statique peut être utilisée si vous exécutez le déploiement sur plusieurs noeuds afin de vous assurer que la version du contenu statique est identique et que la mise en cache fonctionne correctement.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--refresh-content-version-only`
 
@@ -9970,7 +9970,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -10015,61 +10015,61 @@ bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [
 
 URL à laquelle le magasin est censé être disponible. Obsolète, utilisez config:set avec le chemin web/unsecure/base_url
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--language`
 
 Code de langue par défaut. Obsolète, utilisez config:set avec le chemin d’accès général/locale/code
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--timezone`
 
-Code de fuseau horaire par défaut. Obsolète, utilisez config:set avec le chemin d’accès général/locale/timezone
+Code de fuseau horaire par défaut. Obsolète, utilisez config:set avec le chemin général/locale/timezone
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--currency`
 
 Code de devise par défaut. Obsolète, utilisez config:set avec le chemin currency/options/base, currency/options/default et currency/options/allow
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--use-rewrites`
 
 Utilisez les réécritures. Obsolète, utilisez config:set avec le chemin web/seo/use_rewrites
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--use-secure`
 
 Utilisez des URL sécurisées. Activez cette option uniquement si SSL est disponible. Obsolète, utilisez config:set avec le chemin web/secure/use_in_frontend
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--base-url-secure`
 
 URL de base de la connexion SSL. Obsolète, utilisez config:set avec le chemin web/secure/base_url
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--use-secure-admin`
 
 Exécutez l’interface d’administration avec SSL. Obsolète, utilisez config:set avec le chemin web/secure/use_in_adminhtml
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--admin-use-security-key`
 
 Utilisation ou non d’une fonctionnalité &quot;clé de sécurité&quot; dans les URL et les formulaires d’administration du Magento. Obsolète, utilisez config:set avec le chemin admin/security/use_form_key
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -10087,7 +10087,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -10130,9 +10130,9 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -10150,7 +10150,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -10226,9 +10226,9 @@ L&#39;installation du Magento sera exécutée en mode Exécution sec
 
 ### `--magento-init-params`
 
-Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation du Magento. Par exemple : &quot;MAGE_MODE=developer&amp;MAGE_DIRS&quot;[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -10246,7 +10246,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -10303,7 +10303,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -10360,7 +10360,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -10436,7 +10436,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -10519,7 +10519,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -10583,7 +10583,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -10618,7 +10618,7 @@ Ne posez aucune question interactive
 
 ## `support:utility:paths`
 
-Création d’une liste de chemins d’accès aux utilitaires
+Créer une liste de chemins d’accès aux utilitaires
 
 ```bash
 bin/magento support:utility:paths [-f|--force]
@@ -10647,7 +10647,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -10691,7 +10691,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 ### `theme`
 
-Chemin du thème. Le chemin d’accès au thème doit être spécifié sous la forme d’un chemin d’accès complet qui est zone/fournisseur/nom. Par exemple, frontal/Magento/vide
+Chemin du thème. Le chemin d’accès au thème doit être spécifié sous la forme d’un chemin d’accès complet, qui est zone/fournisseur/nom. Par exemple, frontal/Magento/vide
 
 - Valeur par défaut : `[]`
 
@@ -10728,7 +10728,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -10774,41 +10774,41 @@ bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BAC
 Liste d’accès aux adresses IP pouvant purger le vernis
 
 - Valeur par défaut : `localhost`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backend-host`
 
 Hôte du serveur principal web
 
 - Valeur par défaut : `localhost`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--backend-port`
 
 Port du serveur principal web
 
 - Valeur par défaut : `8080`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--export-version`
 
 Version du fichier vernis
 
 - Valeur par défaut : `4`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--grace-period`
 
 Période de grâce en secondes
 
 - Valeur par défaut : `300`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--output-file`
 
 Chemin d’accès au fichier pour l’écriture de vcl
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -10826,7 +10826,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur

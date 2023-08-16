@@ -24,7 +24,7 @@ L&#39;expédition et l&#39;exécution ont certains facteurs de base qui constitu
 
 - **Produit**: chaque produit est différent en termes de nombre d’articles, de poids, de destination et de durabilité. Les entreprises doivent analyser ces détails pour comprendre le coût total de l’expédition, car différents produits ont des frais d’expédition différents.
 
-- **Modules**—L’assemblage joue également un rôle important dans la compréhension du mode de livraison et des coûts. Par exemple, le produit est-il fragile ou est-il emballé comme cadeau ?
+- **Modules**—L’assemblage joue également un rôle important dans la compréhension du mode d’expédition et des coûts. Par exemple, le produit est-il fragile ou est-il emballé comme cadeau ?
 
 - **Saison**- Les changements à apporter en période de pointe, comme la frénésie des clics et les festivals.
 
@@ -38,7 +38,7 @@ Avant qu’une entreprise ne livre son produit, elle doit décider des méthodes
 
 - **Taux en temps réel**: la collaboration avec des fournisseurs tiers de navigation permet aux détaillants de publier le mode d’expédition et les coûts actuellement facturés par l’entreprise. Cela permet aux clients de choisir leur méthode d’expédition préférée.
 
-- **Taux d&#39;aplatissement**: l’une des options d’expédition les plus populaires. L’astuce ici est de s’assurer que les détaillants ne surchargent pas ou ne sous-facturent pas les clients. Cela fonctionne également si les détaillants disposent d’un produit standard, mais peut devenir compliqué si les détaillants disposent d’une variété de produits.
+- **Taux d&#39;aplati**: l’une des options d’expédition les plus populaires. L’astuce consiste à s’assurer que les détaillants ne surchargent pas ou ne sous-facturent pas les clients. Cela fonctionne également si les détaillants disposent d’un produit standard, mais peut devenir compliqué si les détaillants disposent d’une variété de produits.
 
 - **Envoi gratuit sur une valeur**: les détaillants peuvent fournir des frais d’expédition gratuits lorsque le client achète au-dessus d’un certain montant. Les détaillants doivent calculer ce montant pour fournir ce service.
 
@@ -51,7 +51,7 @@ Lors du choix d’une stratégie d’expédition et d’exécution, appliquez le
 - Assembler la bonne équipe avec les bonnes personnes ayant les bonnes compétences
 - Définition d’objectifs pour que les équipes suivent
 - Sélectionner la stratégie d’expédition appropriée qui répond le mieux aux besoins de l’entreprise
-- Examen de la stratégie et réitération de celle-ci, le cas échéant
+- Examen de la stratégie et réitération de la stratégie si nécessaire
 
 ## B2B et B2C
 

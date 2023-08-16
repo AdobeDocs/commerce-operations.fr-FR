@@ -1,13 +1,13 @@
 ---
 title: Définir le mode de fonctionnement
 description: Découvrez comment définir les modes de fonctionnement d’Adobe Commerce.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
 
 ---
-
 
 # Définir le mode de fonctionnement
 
@@ -36,7 +36,7 @@ pub/static
 Exceptions :
 
 - `.htaccess` Les fichiers ne sont pas supprimés
-- `pub/static` contient un fichier qui spécifie la version du contenu statique ; ce fichier n’est pas supprimé
+- `pub/static` contient un fichier qui spécifie la version du contenu statique ; ce fichier n’est pas supprimé.
 
 >[!INFO]
 >
@@ -44,7 +44,7 @@ Exceptions :
 
 ## Afficher le mode actuel
 
-Pour ce faire, la méthode la plus simple consiste à exécuter cette commande en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md). Si vous avez partagé l’hébergement, il s’agit de l’utilisateur que votre fournisseur vous donne pour vous connecter au serveur. Si vous disposez d’un serveur privé, il s’agit généralement d’un compte d’utilisateur local sur le serveur Commerce.
+La méthode la plus simple consiste à exécuter cette commande en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md). Si vous avez partagé l’hébergement, il s’agit de l’utilisateur que votre fournisseur vous donne pour vous connecter au serveur. Si vous disposez d’un serveur privé, il s’agit généralement d’un compte d’utilisateur local sur le serveur Commerce.
 
 Utilisation des commandes :
 
@@ -52,7 +52,7 @@ Utilisation des commandes :
 bin/magento deploy:mode:show
 ```
 
-Un message similaire au suivant s’affiche :
+Un message similaire à celui-ci s’affiche :
 
 ```terminal
 Current application mode: {mode}. (Note: Environment variables may override this value.)
@@ -60,7 +60,7 @@ Current application mode: {mode}. (Note: Environment variables may override this
 
 où :
 
-- **`{mode}`** peut être `default`, `developer`ou `production`
+- **`{mode}`** peut être `default`, `developer`, ou `production`
 
 ## Modifier les modes
 
@@ -72,7 +72,7 @@ bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 
 où :
 
-- **`{mode}`** est requis ; peut être soit `developer` ou `production`
+- **`{mode}`** est requis ; il peut être `developer` ou `production`
 
 - **`--skip-compilation`** est un paramètre facultatif que vous pouvez utiliser pour ignorer [compilation de code](../cli/code-compiler.md) lorsque vous passez en mode de production.
 

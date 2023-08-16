@@ -5,7 +5,7 @@ feature: Install
 source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
 source-wordcount: '178'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 0%
       - [Présentation](prerequisites/search-engine/overview.md)
       - [AWS OpenSearch](prerequisites/search-engine/aws-opensearch.md)
       - [Configuration de Nginx](prerequisites/search-engine/configure-nginx.md)
-      - [Configuration d’Apache](prerequisites/search-engine/configure-apache.md)
+      - [Configurer Apache](prerequisites/search-engine/configure-apache.md)
    - [PHP](prerequisites/php-settings.md)
    - [courtier de messages](prerequisites/rabbitmq.md)
    - [Sécurité](prerequisites/security.md)
@@ -47,7 +47,7 @@ ht-degree: 0%
       - [Télécharger les modules du compositeur](sample-data/composer-packages.md)
       - [Clonage des référentiels Git](sample-data/git-repositories.md)
       - [Suppression ou mise à jour de modules](sample-data/remove-or-update.md)
-- Tutorials {#tutorials}
+- Tutoriels {#tutorials}
    - [Sauvegarde et restauration du système de fichiers, du média et de la base de données](tutorials/backup.md)
    - [Vérification du statut de la base de données](tutorials/database-status.md)
    - [Configuration du comportement des consommateurs de messages](tutorials/message-consumers.md)
@@ -57,7 +57,7 @@ ht-degree: 0%
    - [Création ou mise à jour de la configuration du déploiement](tutorials/deployment.md)
    - [Création du schéma de la base de données](tutorials/database.md)
    - [Affichage ou modification de l’URI d’administration](tutorials/admin-uri.md)
-   - [Activation ou désactivation du mode de maintenance](tutorials/maintenance-mode.md)
+   - [Activer ou désactiver le mode de maintenance](tutorials/maintenance-mode.md)
    - [Activation ou désactivation des modules](tutorials/manage-modules.md)
    - [Installer une extension](tutorials/extensions.md)
    - [Installer Commerce](tutorials/install.md)

@@ -1,13 +1,13 @@
 ---
 title: Exemple d’utilisation de variables d’environnement
 description: Consultez un exemple de la manière de définir des valeurs partagées, spécifiques au système et sensibles dans votre système de développement à l’aide de variables d’environnement.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 0%
 
 ---
-
 
 # Exemple d’utilisation de variables d’environnement
 
@@ -27,7 +27,7 @@ Vous pouvez suivre la même procédure pour configurer les paramètres des réf�
 - [Référence des chemins de configuration sensibles et spécifiques au système](../reference/config-reference-sens.md)
 - [Référence des chemins de configuration des paiements](../reference/config-reference-payment.md)
 - [Référence générale sur les chemins de configuration](../reference/config-reference-general.md)
-- [Référence des chemins de configuration de l’extension B2B de Commerce Enterprise](../reference/config-reference-b2b.md)
+- [Référence sur les chemins de configuration de l’extension B2B de Commerce Enterprise](../reference/config-reference-b2b.md)
 
 ## Avant de commencer
 
@@ -43,7 +43,7 @@ Pour les besoins de cet exemple, nous supposons que :
 - Le système de développement est disponible dans un référentiel distant Git nommé `mconfig`
 - Votre branche de travail Git est nommée `m2.2_deploy`
 
-## Étape 1 : Définir la configuration dans le système de développement
+## Étape 1 : définir la configuration dans le système de développement
 
 Pour définir les paramètres régionaux et les unités de poids par défaut dans votre système de développement :
 
@@ -51,10 +51,10 @@ Pour définir les paramètres régionaux et les unités de poids par défaut dan
 1. Cliquez sur **Magasins** > Paramètres > **Configuration** > Général > **Général**.
 1. Si plusieurs sites web sont disponibles, utilisez la variable **Affichage en magasin** dans le coin supérieur gauche pour passer à un autre site web, comme le montre la figure suivante.
 
-   ![Changer de site web](../../assets/configuration/split-deploy-switch-website.png)
+   ![Basculer vers des sites web](../../assets/configuration/split-deploy-switch-website.png)
 
 1. Dans le volet de droite, développez **Informations sur le magasin**.
-1. Si nécessaire, effacez le **Utiliser la valeur par défaut** en regard de la case **Numéro TVA** champ .
+1. Si nécessaire, effacez le **Utiliser la valeur par défaut** en regard de la case **Numéro de TVA** champ .
 1. Saisissez un nombre dans le champ (par exemple, `12345`).
 1. Dans le **Nom de la boutique** , saisissez une valeur (comme `My Store`).
 1. Cliquez sur **Enregistrer la configuration**.
@@ -62,7 +62,7 @@ Pour définir les paramètres régionaux et les unités de poids par défaut dan
 
    ![Basculer vers la configuration par défaut](../../assets/configuration/split-deploy-default-config.png)
 
-1. Dans le volet de navigation de gauche, sous Général, cliquez sur **Contacts**.
+1. Dans la navigation de gauche, sous Général, cliquez sur **Contacts**.
 1. Effacez la variable **Utiliser la valeur par défaut** en regard de la case **Envoyer des emails à** champ .
 1. Entrez une adresse électronique dans le champ .
 1. Cliquez sur **Enregistrer la configuration**.
@@ -73,7 +73,7 @@ Pour définir les paramètres régionaux et les unités de poids par défaut dan
 1. Cliquez sur **Enregistrer la configuration**.
 1. Si vous y êtes invité, videz le cache.
 
-## Étape 2 : Mise à jour de la configuration
+## Etape 2 : mise à jour de la configuration
 
 Maintenant que vous avez modifié la configuration dans l’administrateur, écrivez la configuration partagée dans un fichier comme décrit dans cette section.
 
@@ -87,7 +87,7 @@ Maintenant que vous avez validé vos modifications dans la configuration partag�
 
 {{$include /help/_includes/config-update-build-system.md}}
 
-## Étape 4 : Mettre à jour le système de production
+## Étape 4 : mise à jour du système de production
 
 La dernière étape du processus consiste à mettre à jour votre système de production. Vous devez le faire en deux parties :
 
@@ -100,20 +100,20 @@ Pour définir les paramètres sensibles et spécifiques au système à l’aide 
 
 - Portée de chaque paramètre
 
-   Si vous avez suivi les instructions de l’étape 1, la portée de l’option Envoyer les emails à est globale (c’est-à-dire, la portée de la configuration par défaut) et la portée du domaine de courriel par défaut est le site web.
+  Si vous avez suivi les instructions de l’étape 1, la portée de l’option Envoyer les emails à est globale (c’est-à-dire, la portée de la configuration par défaut) et la portée du domaine de courriel par défaut est le site web.
 
-   Vous devez connaître le code du site web pour définir la valeur de configuration Domaine de messagerie par défaut. Voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables) pour plus d’informations sur sa recherche.
+  Vous devez connaître le code du site web pour définir la valeur de configuration Domaine de messagerie par défaut. Voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables) pour plus d’informations sur sa recherche.
 
 - Chemin de configuration de chaque paramètre
 
-   Les chemins de configuration utilisés dans cet exemple sont les suivants :
+  Les chemins de configuration utilisés dans cet exemple sont les suivants :
 
-   | Nom du paramètre | Chemin de configuration |
-   |--------------|--------------|
-   | Envoyer des emails à | `contact/email/recipient_email` |
-   | Domaine de messagerie par défaut | `customer/create_account/email_domain` |
+  | Nom du paramètre | Chemin de configuration |
+  |--------------|--------------|
+  | Envoyer des emails à | `contact/email/recipient_email` |
+  | Domaine de messagerie par défaut | `customer/create_account/email_domain` |
 
-   Vous trouverez tous les chemins de configuration sensibles et spécifiques au système dans [Référence des chemins de configuration sensibles et spécifiques au système](../reference/config-reference-sens.md).
+  Vous trouverez tous les chemins de configuration sensibles et spécifiques au système dans [Référence des chemins de configuration sensibles et spécifiques au système](../reference/config-reference-sens.md).
 
 #### Conversion des chemins de configuration en noms de variables
 
@@ -140,7 +140,7 @@ Les noms de variable sont les suivants :
 
 #### Définition des variables à l’aide de variables d’environnement
 
-Vous pouvez définir les valeurs de variable dans la variable `index.php` au format suivant :
+Vous pouvez définir les valeurs de variable dans la variable `index.php` selon le format suivant :
 
 ```php
 $_ENV['VARIABLE'] = 'value';
@@ -166,7 +166,7 @@ Cette section explique comment extraire toutes les modifications que vous avez a
 
 {{$include /help/_includes/config-update-prod-system.md}}
 
-### Vérification des paramètres de configuration dans l’Admin
+### Vérification des paramètres de configuration dans Admin
 
 Cette section explique comment vérifier les paramètres de configuration dans l’administrateur de votre système de production.
 
@@ -182,12 +182,12 @@ Cette section explique comment vérifier les paramètres de configuration dans l
 
    >[!INFO]
    >
-   >Le **Nom de la boutique** est modifiable dans la portée du site web, mais si vous passez à la portée Configuration par défaut, elle n’est pas modifiable. C’est le résultat de la définition des options dans le système de développement. La valeur de **Numéro TVA** n’est pas modifiable dans la portée du site web.
+   >La variable **Nom de la boutique** est modifiable dans la portée du site web, mais si vous passez à la portée Configuration par défaut, elle n’est pas modifiable. C’est le résultat de la définition des options dans le système de développement. La valeur de **Numéro de TVA** n’est pas modifiable dans la portée du site web.
 
 1. Si vous ne l’avez pas déjà fait, passez à la portée de la configuration par défaut.
-1. Dans le volet de navigation de gauche, sous Général, cliquez sur **Contacts**.
+1. Dans la navigation de gauche, sous Général, cliquez sur **Contacts**.
 
-   Le **Envoyer des emails à** n’est pas modifiable, comme le montre la figure suivante. Il s’agit d’un paramètre sensible.
+   La variable **Envoyer des emails à** n’est pas modifiable, comme le montre la figure suivante. Il s’agit d’un paramètre sensible.
 
    ![Vérifier les paramètres dans le système de production](../../assets/configuration/split-deploy-verify-contacts.png)
 

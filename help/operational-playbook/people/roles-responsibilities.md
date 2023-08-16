@@ -98,11 +98,11 @@ Bien que toute l&#39;expérience ait lieu en ligne, il existe encore un monde ph
 
 Le responsable de la logistique doit s’assurer que les commandes qui arrivent sont conditionnées correctement et acheminées en toute sécurité vers le client. Le responsable de la logistique doit aussi gérer l&#39;équipe et la flotte, qu&#39;il s&#39;agisse d&#39;une équipe interne ou externe.
 
-La Principale responsabilité du gestionnaire de logistique est de s’assurer que le produit est expédié de la bonne manière, à la bonne adresse et au bon moment.
+Le responsable de la logistique a pour principale responsabilité de s&#39;assurer que le produit est expédié de la bonne manière, à la bonne adresse et au bon moment.
 
 ### Gestionnaire d’inventaire
 
-Le gestionnaire de l’inventaire doit superviser l’inventaire dans un ou plusieurs entrepôts afin de s’assurer que les produits commandés par les clients correspondent aux produits en cours d’expédition. Ils sont chargés de superviser l’emballage correct des produits. Aucune entreprise ne souhaite que ses clients reçoivent des produits dans des conditions insatisfaisantes ; la présentation est essentielle.
+Le gestionnaire de l’inventaire doit superviser l’inventaire dans un ou plusieurs entrepôts afin de s’assurer que les produits commandés par les clients correspondent aux produits en cours d’expédition. Ils sont chargés de superviser l’emballage correct des produits. Aucune entreprise ne veut que ses clients reçoivent des produits dans des conditions insatisfaisantes ; la présentation est essentielle.
 
 ## Équipe du service client
 

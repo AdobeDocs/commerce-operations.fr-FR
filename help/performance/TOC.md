@@ -6,7 +6,7 @@ topic: Administration, Commerce, Development, Performance
 source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
 workflow-type: tm+mt
 source-wordcount: '61'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -23,6 +23,6 @@ ht-degree: 0%
 - [Traitement des commandes à haut débit](high-throughput-order-processing.md)
 - Concepts avancés {#performance-best-practices}
    - [Configuration avancée](advanced-setup.md)
-   - [Avancé [!DNL JavaScript] regroupement](advanced-js-bundling.md)
+   - [Avancé [!DNL JavaScript] bundling](advanced-js-bundling.md)
    - [Serveur d’applications pour les API GraphQL](application-server.md)
 - [Revenir aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

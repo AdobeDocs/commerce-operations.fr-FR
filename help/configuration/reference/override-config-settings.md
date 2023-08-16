@@ -1,23 +1,23 @@
 ---
 title: Remplacement des paramètres de configuration
 description: Découvrez comment utiliser les variables d’environnement pour remplacer les paramètres de configuration.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1225'
 ht-degree: 0%
 
 ---
 
-
 # Remplacement des paramètres de configuration
 
 Cette rubrique explique comment dériver un nom de variable d’environnement connaissant un chemin de configuration. Vous pouvez remplacer les paramètres de configuration Adobe Commerce à l’aide de variables d’environnement. Par exemple, vous pouvez remplacer la valeur de l’URL active d’un processeur de paiement sur votre système de production.
 
-Vous pouvez remplacer la valeur de _any_ configuration à l’aide des variables d’environnement ; Adobe vous recommande toutefois de conserver des paramètres cohérents à l’aide du fichier de configuration partagé, `config.php`et le fichier de configuration spécifique au système, `env.php`, comme décrit dans [Présentation générale du déploiement](../deployment/overview.md).
+Vous pouvez remplacer la valeur de _any_ configuration utilisant des variables d’environnement. Toutefois, Adobe vous recommande de conserver des paramètres cohérents à l’aide du fichier de configuration partagé, `config.php`et le fichier de configuration spécifique au système, `env.php`, comme décrit dans [Présentation générale du déploiement](../deployment/overview.md).
 
 >[!TIP]
 >
->Consultez la section [Configuration des environnements](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) dans la _Guide sur l’infrastructure de Commerce on Cloud_.
+>Consultez la section [Configuration des environnements](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) dans la section _Guide de Commerce sur l’infrastructure cloud_.
 
 ## Variables d’environnement
 
@@ -29,7 +29,7 @@ Vous pouvez utiliser des variables pour l’une des opérations suivantes :
 - Les valeurs propres au système doivent être définies à l’aide des éléments suivants :
 
    - Variables d’environnement
-   - Le [`magento config:set`](../cli/set-configuration-values.md) command
+   - La variable [`magento config:set`](../cli/set-configuration-values.md) command
    - L’administrateur suivi de la fonction [`magento app:config:dump` command](../cli/export-configuration.md)
 
 Les chemins de configuration se trouvent dans :
@@ -49,23 +49,23 @@ Le format général des noms de variable des paramètres système suit :
 
 - Portée globale (c’est-à-dire le paramètre global pour _all_ portées)
 
-   Les variables de portée globale ont le format suivant :
+  Les variables de portée globale ont le format suivant :
 
-   `CONFIG__DEFAULT__<SYSTEM__VARIABLE__NAME>`
+  `CONFIG__DEFAULT__<SYSTEM__VARIABLE__NAME>`
 
 - Portée spécifique (c’est-à-dire que le paramètre affecte uniquement une vue de magasin ou un site web spécifique)
 
-   Les variables de portée de vue de magasin, par exemple, ont le format suivant :
+  Les variables de portée de vue de magasin, par exemple, ont le format suivant :
 
-   `CONFIG__STORES__ <STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>`
+  `CONFIG__STORES__ <STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>`
 
-   Pour plus d’informations sur les portées, voir :
+  Pour plus d’informations sur les portées, voir :
 
-   - [Étape 1 : Recherche de la valeur de portée du site web ou de la vue de magasin](#step-1-find-the-website-or-store-view-scope-value)
+   - [Étape 1 : recherche de la valeur de portée du site web ou de la vue de magasin](#step-1-find-the-website-or-store-view-scope-value)
    - [Rubrique du Guide de l’utilisateur de Commerce sur la portée](https://docs.magento.com/user-guide/configuration/scope.html)
    - [Référence rapide sur la portée](https://docs.magento.com/user-guide/stores/store-scope-reference.html)
 
-`<SYSTEM__VARIABLE__NAME>` est le chemin de configuration avec des caractères de soulignement doubles remplacés par `/`. Pour plus d’informations, voir [Étape 2 : Définition des variables système](#step-2-set-global-website-or-store-view-variables).
+`<SYSTEM__VARIABLE__NAME>` est le chemin de configuration avec des caractères de soulignement doubles remplacés par `/`. Pour plus d’informations, voir [Étape 2 : définition des variables système](#step-2-set-global-website-or-store-view-variables).
 
 ### Format de variable
 
@@ -79,17 +79,17 @@ Vous trouverez une liste complète des chemins de configuration dans :
 
 - [Référence des chemins de configuration sensibles et spécifiques au système](config-reference-sens.md)
 - [Référence des chemins de configuration des paiements](config-reference-payment.md)
-- [Référence des chemins de configuration de l’extension B2B de Commerce Enterprise](config-reference-b2b.md)
+- [Référence sur les chemins de configuration de l’extension B2B de Commerce Enterprise](config-reference-b2b.md)
 - [Autres références de chemins de configuration](config-reference-general.md)
 
-## Étape 1 : Recherche de la valeur de portée du site web ou de la vue de magasin
+## Étape 1 : recherche de la valeur de portée du site web ou de la vue de magasin
 
-Cette section explique comment rechercher et définir des valeurs de configuration système par _scope_ (vue de magasin ou site web). Pour définir des variables de portée globale, voir [Étape 2 : Définir des variables d’affichage globales, de site web ou de magasin](#step-2-set-global-website-or-store-view-variables).
+Cette section explique comment rechercher et définir des valeurs de configuration système par _scope_ (vue de magasin ou site web). Pour définir des variables de portée globale, voir [Étape 2 : définition de variables d’affichage globales, de site web ou de magasin](#step-2-set-global-website-or-store-view-variables).
 
 Les valeurs de portée proviennent de la variable `store`, `store_group`, et `store_website` des tables.
 
-- Le `store` spécifie les noms et codes des vues de magasin
-- Le `store_website` spécifie les noms et codes de site web
+- La variable `store` spécifie les noms et codes des vues de magasin
+- La variable `store_website` spécifie les noms et codes de site web
 
 Vous pouvez également trouver les valeurs de code à l’aide de l’Admin.
 
@@ -97,18 +97,18 @@ Comment lire le tableau :
 
 - `Path in Admin` column
 
-   Les valeurs situées avant la virgule sont des chemins d’accès dans la navigation Admin. Les valeurs après la virgule sont des options dans le volet de droite.
+  Les valeurs situées avant la virgule sont des chemins d’accès dans la navigation Admin. Les valeurs après la virgule sont des options dans le volet de droite.
 
 - `Variable name` est le nom de la variable d’environnement correspondante.
 
-   Vous avez la possibilité de spécifier les valeurs système de ces paramètres de configuration en tant que variables d’environnement si vous le souhaitez.
+  Vous avez la possibilité de spécifier les valeurs système de ces paramètres de configuration en tant que variables d’environnement si vous le souhaitez.
 
    - Le nom complet de la variable est toujours ALL CAPS
    - Commencer un nom de variable par `CONFIG__` (notez deux caractères de soulignement)
-   - Vous trouverez la variable `<STORE_VIEW_CODE>` ou `<WEBSITE_CODE>` d’un nom de variable dans la base de données Admin ou Commerce, comme indiqué dans les sections suivantes.
-   - Vous pouvez trouver `<SYSTEM__VARIABLE__NAME>` comme décrit dans [Étape 2 : Définir des variables d’affichage globales, de site web ou de magasin](#step-2-set-global-website-or-store-view-variables).
+   - Vous pouvez trouver la variable `<STORE_VIEW_CODE>` ou `<WEBSITE_CODE>` d’un nom de variable dans la base de données Admin ou Commerce, comme indiqué dans les sections suivantes.
+   - Vous pouvez trouver `<SYSTEM__VARIABLE__NAME>` comme décrit dans [Étape 2 : définition de variables d’affichage globales, de site web ou de magasin](#step-2-set-global-website-or-store-view-variables).
 
-### Recherche d’un site web ou d’une portée d’affichage de magasin dans l’Admin
+### Recherche d’un site web ou stockage d’une portée d’affichage dans l’administrateur
 
 Le tableau suivant résume la manière de trouver la valeur d’affichage de site web ou de magasin dans l’administrateur.
 
@@ -128,7 +128,7 @@ Par exemple, pour trouver un site web ou stocker la valeur de portée de vue dan
    ![Recherche d’un code de site web](../../assets/configuration/website-code.png)
 
 1. Le nom de la portée s’affiche dans la variable **[!UICONTROL Code]** champ .
-1. Passez à la [Étape 2 : Définir des variables d’affichage globales, de site web ou de magasin](#step-2-set-global-website-or-store-view-variables).
+1. Passez à la [Étape 2 : définition de variables d’affichage globales, de site web ou de magasin](#step-2-set-global-website-or-store-view-variables).
 
 ### Recherche d’une portée d’affichage de site web ou de magasin dans la base de données
 
@@ -141,7 +141,7 @@ Pour obtenir ces valeurs de la base de données :
    mysql -u <database-username> -p
    ```
 
-1. Dans le `mysql>` saisissez les commandes suivantes dans l’ordre indiqué :
+1. À l’emplacement `mysql>` saisissez les commandes suivantes dans l’ordre indiqué :
 
    ```shell
    use <database-name>;
@@ -177,13 +177,13 @@ Pour obtenir ces valeurs de la base de données :
 
    where `<SYSTEM__VARIABLE__NAME>` provient de la section suivante.
 
-## Étape 2 : Définir des variables d’affichage globales, de site web ou de magasin
+## Étape 2 : définition de variables d’affichage globales, de site web ou de magasin
 
 Cette section explique comment définir des variables système.
 
 - Pour définir des valeurs pour la portée globale (c’est-à-dire tous les sites web, magasins et vues de magasin), commencez le nom de variable par `CONFIG__DEFAULT__`.
 
-- Pour définir une valeur pour une vue de magasin ou un site web spécifique, démarrez le nom de variable comme décrit dans la section [Étape 1 : Rechercher la valeur de portée](#step-1-find-the-website-or-store-view-scope-value):
+- Pour définir une valeur pour une vue de magasin ou un site web spécifique, démarrez le nom de variable comme décrit dans la section [Étape 1 : Recherche de la valeur de portée](#step-1-find-the-website-or-store-view-scope-value):
 
    - `CONFIG__WEBSITES`
    - `CONFIG__STORES`
@@ -212,11 +212,11 @@ Pour rechercher le nom de variable pour la minification de HTML globale :
 
 1. Déterminez la portée.
 
-   Il s’agit de la portée globale, de sorte que le nom de variable commence par `CONFIG__DEFAULT__`
+   Il s’agit de la portée globale, donc le nom de variable commence par `CONFIG__DEFAULT__`
 
 1. Le reste du nom de la variable est `CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME`.
 
-   **Résultat**: Le nom de la variable est `CONFIG__DEFAULT__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME`
+   **Résultat**: le nom de la variable est `CONFIG__DEFAULT__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME`
 
 ### Origine du pays d&#39;expédition
 
@@ -224,13 +224,13 @@ Pour rechercher le nom de variable pour l’origine du pays d’expédition :
 
 1. Déterminez la portée.
 
-   Recherchez l’étendue dans le [base](#find-a-website-or-store-view-scope-in-the-database) comme indiqué à l’étape 1 : Recherchez la valeur de portée du site web ou de la vue de magasin. (Vous pouvez également trouver la valeur dans l’Admin comme indiqué dans la section [tableau de l’étape 2 : Définir des variables d’affichage globales, de site web ou de magasin](#step-2-set-global-website-or-store-view-variables.
+   Recherchez l’étendue dans le [base](#find-a-website-or-store-view-scope-in-the-database) comme expliqué à l’étape 1 : recherchez la valeur de portée de la vue de magasin ou de site web. (Vous pouvez également trouver la valeur dans l’Admin comme indiqué dans la section [tableau de l’étape 2 : définition de variables d’affichage globales, de site web ou de magasin](#step-2-set-global-website-or-store-view-variables.
 
    Par exemple, la portée peut être `CONFIG__WEBSITES__DEFAULT`.
 
 1. Le reste du nom de la variable est `SHIPPING__ORIGIN__COUNTRY_ID`.
 
-   **Résultat**: Le nom de la variable est `CONFIG__WEBSITES__DEFAULT__SHIPPING__ORIGIN__COUNTRY_ID`
+   **Résultat**: le nom de la variable est `CONFIG__WEBSITES__DEFAULT__SHIPPING__ORIGIN__COUNTRY_ID`
 
 ## Utilisation des variables d’environnement
 
@@ -253,6 +253,6 @@ Un exemple détaillé est présenté dans la section [Définition de valeurs de 
 >
 >- Pour utiliser les valeurs définies dans la variable `$_ENV` tableau, vous devez définir `variables_order = "EGPCS"`(Environnement, Obtenir, Publier, Cookie et Serveur) dans votre `php.ini` fichier . Pour plus d’informations, voir [documentation PHP](https://www.php.net/manual/en/ini.core.php).
 >
->- Pour Adobe Commerce sur l’infrastructure cloud, si vous tentez de remplacer les paramètres de configuration à l’aide de la variable [Interface Web du projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), vous devez ajouter en préfixe le nom de la variable `env:`. Par exemple :
+>- Pour Adobe Commerce sur l’infrastructure cloud, si vous tentez de remplacer les paramètres de configuration à l’aide de la variable [Interface Web du projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), vous devez ajouter en préfixe le nom de la variable `env:`. Par exemple :
 >
 >![Exemple de variable d’environnement](../../assets/configuration/cloud-console-envvariable.png)

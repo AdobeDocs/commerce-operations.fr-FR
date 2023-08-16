@@ -1,9 +1,10 @@
 ---
-title: "[!DNL Site-Wide Analysis Tool]"
+title: '[!DNL Site-Wide Analysis Tool]'
 description: En savoir plus sur les [!DNL Site-Wide Analysis] Outil, ses utilisations, le processus d’installation et comment y accéder
-source-git-commit: 3801cb9cf8cdf00d450347e8fd023a18ec60bf54
+exl-id: 32774040-d322-43d6-9c26-c340a0ab58a9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ Ce guide donne un aperçu holistique de la [!DNL Site-Wide Analysis Tool]. Il d�
 
 ## Présentation [!DNL Site-Wide Analysis Tool]?
 
-Le [!DNL Site-Wide Analysis Tool] est un outil en libre-service proactif et un référentiel central qui comprend des informations détaillées sur le système et des recommandations pour garantir la sécurité et la maniabilité de votre installation Adobe Commerce. Il fournit 24/7 surveillance des performances, rapports et conseils en temps réel afin d’identifier les problèmes potentiels et d’améliorer la visibilité sur l’intégrité, la sécurité et les configurations d’application du site. Cela permet de réduire le temps de résolution et d’améliorer la stabilité et les performances du site.
+La variable [!DNL Site-Wide Analysis Tool] est un outil en libre-service proactif et un référentiel central qui comprend des informations détaillées sur le système et des recommandations pour garantir la sécurité et la maniabilité de votre installation Adobe Commerce. Il fournit 24/7 surveillance des performances, rapports et conseils en temps réel afin d’identifier les problèmes potentiels et d’améliorer la visibilité sur l’intégrité, la sécurité et les configurations d’application du site. Cela permet de réduire le temps de résolution et d’améliorer la stabilité et les performances du site.
 
 Voir [vidéo d’introduction](https://www.youtube.com/watch?v=KW2R8ki_RG4) pour en savoir plus.
 
@@ -45,15 +46,15 @@ Affichez toutes les informations importantes sur votre site à un seul endroit. 
 
 - [**[!UICONTROL Security Center Widget]**] - Affiche des informations de sécurité pour votre site.<br>
 Les informations de sécurité affichées sont les suivantes : [Tech [!DNL Stack] Conformité aux versions avec [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html), [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html), and [[!DNL Site-Wide Analysis Tool] Recommendations de sécurité des bonnes pratiques](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html).<br>
-Le [[!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) fournit aux clients Adobe Commerce et Magento Open Source des informations en temps réel sur l’état de sécurité de leur boutique en détectant de manière proactive les logiciels malveillants et en leur indiquant si leur boutique est compromise.
+La variable [[!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) fournit aux clients Adobe Commerce et Magento Open Source des informations en temps réel sur l’état de sécurité de leur boutique en détectant de manière proactive les logiciels malveillants et en leur indiquant si leur boutique est compromise.
 
 - [**[!DNL Upgrade Compatability Tool]**](../../upgrade/upgrade-compatibility-tool/overview.md) : exécute l’instance personnalisée Adobe Commerce par rapport à la version de mise à niveau cible et renvoie un résumé des problèmes critiques, des erreurs et des avertissements qui doivent être résolus, ce qui rend le processus d’analyse de mise à niveau plus facile, plus rapide et moins coûteux.
 
-- [**[!DNL Managed Alerts]**](https://support.magento.com/hc/en-us/sections/360010758472-Managed-alerts-for-Adobe-Commerce) - Surveillez plusieurs mesures afin de suivre de manière proactive les performances de la plateforme et fournissez des instructions spécifiques sur la manière de résoudre les problèmes, de sorte que les vendeurs puissent éviter les temps d’arrêt critiques et rester informés sur le processeur, les performances de l’application, le disque, la mémoire et la base de données.
+- [**[!DNL Managed Alerts]**](https://support.magento.com/hc/en-us/sections/360010758472-Managed-alerts-for-Adobe-Commerce) - Surveillez plusieurs mesures afin de suivre de manière proactive les performances de la plateforme et fournissez des instructions spécifiques sur la manière de résoudre les problèmes afin que les vendeurs puissent éviter les temps d’arrêt critiques et rester informés sur leur processeur, leurs performances de l’application, leur disque, leur mémoire et leur base de données.
 
 ## Pour qui est ce guide ?
 
-Marchands et partenaires qui souhaitent bénéficier d’une meilleure visibilité sur leurs sites web Adobe Commerce. Il permet aux commerçants d’améliorer l’expérience de leurs clients et de mieux s’aligner sur les recommandations de bonnes pratiques et les problèmes fondamentaux.
+Marchands et partenaires qui souhaitent bénéficier d’une meilleure visibilité sur leurs sites web Adobe Commerce. Il permet aux commerçants d’améliorer l’expérience de leurs clients et de mieux s’aligner sur les recommandations de bonnes pratiques et sur les problèmes fondamentaux.
 
 ## [!DNL Site-Wide Analysis Tool] demo
 

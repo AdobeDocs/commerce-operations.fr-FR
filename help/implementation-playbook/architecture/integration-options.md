@@ -30,7 +30,7 @@ La seule différence entre l’approche monolithique et l’approche sans tête 
 
 ## Systèmes tiers
 
-Certains services populaires disposent déjà de super extensions pour prendre en charge Adobe Commerce ou les solutions de storefront populaires, telles que PWA Studio, Adobe Experience Manager et Vue Storefront, qui se trouvent sur leur marketplace d’extension ou à partir de sites web tiers associés. Même s’il n’existe aucune extension, les efforts pour mettre en oeuvre l’intégration entre Adobe Commerce et d’autres storefronts sans interface sont similaires. Tous les services tiers ont généralement des documents expliquant comment s’intégrer avec eux. Ces services ne sont que quelques exemples; différents pays et marchés peuvent avoir des choix différents.
+Certains services populaires disposent déjà de super extensions pour prendre en charge Adobe Commerce ou les solutions de storefront populaires, telles que PWA Studio, Adobe Experience Manager et Vue Storefront, qui peuvent être trouvées sur leur marketplace d’extension ou à partir de sites web tiers associés. Même s’il n’existe aucune extension, les efforts pour mettre en oeuvre l’intégration entre Adobe Commerce et d’autres storefronts sans interface sont similaires. Tous les services tiers ont généralement des documents expliquant comment s’intégrer avec eux. Ces services ne sont que quelques exemples ; différents pays et marchés peuvent avoir des choix différents.
 
 ## Intégrations d’entreprise
 

@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Présentation
 
-L’une des options d’hébergement géré les plus populaires pour Adobe Commerce sur AWS est proposée par Adobe Commerce lui-même. Adobe Commerce sur l’infrastructure cloud est une plateforme d’hébergement automatisée entièrement gérée pour le logiciel Adobe Commerce.
+L’une des options d’hébergement géré les plus populaires pour Adobe Commerce sur AWS est proposée par Adobe Commerce. Adobe Commerce sur l’infrastructure cloud est une plateforme d’hébergement automatisée entièrement gérée pour le logiciel Adobe Commerce.
 
 Adobe Commerce sur l’infrastructure cloud est une plateforme en tant que service (PaaS) qui permet le déploiement rapide de storefronts web entièrement personnalisables, sécurisés et évolutifs, associée à une infrastructure d’hébergement et de services gérés de pointe. Il propose deux plans avec des infrastructures différentes. Adobe Commerce Starter convient mieux aux petits magasins moins complexes et aux catalogues plus petits. Adobe Commerce Pro est conçu pour les grands magasins plus complexes, les catalogues de produits plus volumineux ou les pics de trafic. Adobe Commerce détermine l’architecture appropriée avec l’apport des partenaires.
 
 Adobe Commerce est prêt pour le cloud avec une infrastructure d’hébergement multi-cloud entièrement redondante qui offre des performances optimisées, une résilience et une évolutivité élastique. Vous pouvez exécuter efficacement votre plateforme commerciale sur le réseau de diffusion de contenu (CDN) de Fastly. Avec New Relic pour la surveillance et la gestion, vous pouvez préserver le bon fonctionnement de votre environnement de magasin.
 
-Adobe Commerce offre tous les avantages de l’informatique cloud moderne les plus souvent associés aux solutions SaaS : évolutivité élastique, haute résilience et disponibilité, conformité PCI, disponibilité globale et correction automatisée, tout en maintenant une flexibilité en matière de personnalisation logicielle requise par nos commerçants.
+Adobe Commerce offre tous les avantages de l’informatique cloud moderne qui sont le plus souvent associés aux solutions SaaS : évolutivité élastique, haute résilience et disponibilité, conformité PCI, disponibilité globale et correction automatisée, tout en conservant la flexibilité de personnalisation logicielle requise par nos commerçants.
 
 ![Diagramme présentant les éléments architecturaux d’Adobe Commerce sur l’infrastructure cloud](../../../assets/playbooks/adobe-commerce-cloud-infrastructure.svg)
 
@@ -42,7 +42,7 @@ Examinons également le logiciel qui rend les avantages d’Adobe Commerce réel
 
 ![Diagramme présentant Adobe Commerce sur la pile de technologie de l’infrastructure cloud](../../../assets/playbooks/cloud-tech-stack.svg)
 
-- Réseau de diffusion de contenu Fastly : À mesure que les clients accèdent à votre site et stockent, les demandes atteignent Fastly afin de charger plus rapidement les pages mises en cache. Fastly WAF fournit également un service de protection DDoS.
+- Réseau de diffusion de contenu rapide : à mesure que les clients accèdent à votre site et stockent, les demandes atteignent Fastly afin de charger plus rapidement les pages mises en cache. Fastly WAF fournit également un service de protection DDoS.
 
 - New Relic vous donne une vue d’ensemble complète de vos applications et de votre environnement d’exploitation. Il vous permet de combiner les mesures clés des applications mobiles et des navigateurs avec les services de prise en charge, les entrepôts de données et les hôtes afin que vous puissiez optimiser les performances de manière holistique et assurer le succès de chaque initiative.
 

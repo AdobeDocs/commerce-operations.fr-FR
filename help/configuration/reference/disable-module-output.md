@@ -1,13 +1,13 @@
 ---
 title: Désactiver la sortie du module
 description: Découvrez comment désactiver la sortie du module.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
 
 ---
-
 
 # Désactiver la sortie du module
 
@@ -33,12 +33,12 @@ La désactivation de la sortie est effectuée dans les classes suivantes :
 Pour désactiver la sortie du module dans le déploiement du pipeline ou tout autre déploiement, avec plusieurs instances de l’application Commerce :
 
 1. Modifiez la variable `Backend` du module `config.xml` fichier .
-1. Exportez les modifications apportées à la configuration.
+1. Exportez les modifications de configuration.
 
 ### Modifiez la variable `Backend` module `config.xml` fichier
 
 1. Archivage de l’original `config.xml` fichier .
-1. Ajoutez des lignes similaires à ce qui suit au `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml` , directement sous le `<default>` element:
+1. Ajoutez des lignes similaires à ce qui suit au `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml` , directement sous la propriété `<default>` element:
 
    ```xml
    <advanced>
@@ -56,7 +56,7 @@ Pour désactiver la sortie du module dans le déploiement du pipeline ou tout au
 
 À titre d’exemple, les clients ne peuvent plus s’inscrire pour recevoir des newsletters.
 
-### Exporter les modifications apportées à la configuration
+### Exporter les modifications de configuration
 
 Exécutez la commande suivante pour exporter les modifications de configuration :
 

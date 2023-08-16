@@ -19,7 +19,7 @@ La majeure partie de la population ayant recours aux achats en ligne, les détai
 - Promotion
 - Placer
 - Personnes
-- Traitements
+- Processus
 
 Chacun des six P est également important, mais pour les produits commercialisés, les détaillants doivent utiliser les promotions comme une tactique pour augmenter le trafic sur le site et générer des taux de conversion plus élevés. Les promotions aident à commercialiser les produits et services proposés par la marque. Il existe différents niveaux promotionnels, tels que la livraison, le produit et la commande.
 
@@ -33,7 +33,7 @@ Chacun de ces niveaux de promotion comporte différents types de promotions, not
 - ventes Flash
 - Exemples gratuits
 - Acheter X pour le total
-- Acheter 1 obtenir 1 gratuitement
+- Buy 1 get 1 gratuit
 - Produits bonus
 - Multi-achat
 - Vente croisée

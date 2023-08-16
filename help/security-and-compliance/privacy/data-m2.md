@@ -1,13 +1,13 @@
 ---
 title: Référence des informations personnelles du client (version 2.x)
 description: Découvrez les diagrammes de flux de données et les mappages d’entités de base de données pour les informations personnelles des clients dans Adobe Commerce et Magento Open Source 2.x.
-source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
+exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
 
 ---
-
 
 # Référence des informations personnelles du client (version 2.x)
 
@@ -134,7 +134,7 @@ Adobe Commerce et Magento Open Source stockent les attributs client suivants :
 - Etat/Province
 - ID état/province
 - Adresse postale
-- Numéro TVA
+- Numéro de TVA
 - Code postal
 
 #### `customer_address_entity` et `customer_address_entity` références
@@ -170,7 +170,7 @@ Ces tables font référence à `customer_address_entity` et peut contenir des at
 
 ### Données de commande
 
-Le `sales_order` Les tableaux connexes et contiennent le nom du client, les adresses de facturation et d’expédition, ainsi que les données associées.
+La variable `sales_order` Les tableaux connexes et contiennent le nom du client, les adresses de facturation et d’expédition, ainsi que les données associées.
 
 #### `sales_order` table
 
@@ -195,7 +195,7 @@ Les colonnes suivantes du `sales_order` Le tableau contient les informations sur
 
 #### `sales_order_address` table
 
-Le `sales_order_address` contient l’adresse du client.
+La variable `sales_order_address` contient l’adresse du client.
 
 | Colonne | Type de données |
 | --------------------- | ------------ |
@@ -277,7 +277,7 @@ Les colonnes suivantes du `quote_address` Le tableau contient les informations s
 
 ### Données de paiement
 
-Le `sales_order_payment` comprend des informations de carte de crédit et d’autres informations transactionnelles.
+La variable `sales_order_payment` comprend des informations de carte de crédit et d’autres informations transactionnelles.
 
 | Colonne | Type de données |
 | ------------------------ | ------------ |
@@ -299,7 +299,7 @@ Adobe Commerce et Magento Open Source peuvent être configurés de sorte que les
 
 #### `magento_invitation` table
 
-Le `magento_invitation` contient l’ID de client, l’adresse électronique et l’ID de référence.
+La variable `magento_invitation` contient l’ID de client, l’adresse électronique et l’ID de référence.
 
 | Colonne | Type de données |
 | ------------- | ------------ |
@@ -309,7 +309,7 @@ Le `magento_invitation` contient l’ID de client, l’adresse électronique et 
 
 #### `magento_invitation_track` table
 
-Le `magento_invitation_track` contient également des informations sur les clients.
+La variable `magento_invitation_track` contient également des informations sur les clients.
 
 | Colonne | Type de données |
 | ------------- | --------- |

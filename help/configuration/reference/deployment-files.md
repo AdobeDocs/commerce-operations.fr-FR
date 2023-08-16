@@ -15,9 +15,9 @@ ht-degree: 0%
 Adobe Commerce fournit des fichiers de configuration qui vous permettent de personnaliser facilement un composant et de créer des types de configuration pour étendre les fonctionnalités par défaut. Le processus de configuration du déploiement comprend la configuration partagée et spécifique au système pour votre installation. La configuration de déploiement de Commerce est divisée entre [`app/etc/config.php`](../reference/config-reference-configphp.md) et [`app/etc/env.php`](../reference/config-reference-envphp.md).
 
 - `app/etc/config.php` est la valeur _shared_ fichier de configuration.
-Ce fichier contient la liste des modules, thèmes et modules linguistiques installés ; et les paramètres de configuration partagés.
+Ce fichier contient la liste des modules, thèmes et modules de langue installés, ainsi que les paramètres de configuration partagés.
 
-   Archivez ce fichier pour le contrôle de code source et utilisez-le dans vos systèmes de développement, d’évaluation et de production.
+  Archivez ce fichier pour contrôler la source et utilisez-le dans vos systèmes de développement, d’évaluation et de production.
 
 - `app/etc/env.php` contient des paramètres spécifiques à l’environnement d’installation.
 
@@ -25,7 +25,7 @@ Ensemble, `config.php` et `env.php` sont appelées Commerce. _configuration du d
 
 >[!INFO]
 >
->Le [!DNL Commerce 2] la configuration de déploiement remplace `local.xml` in [!DNL Magento 1.x].
+>La variable [!DNL Commerce 2] la configuration de déploiement remplace `local.xml` in [!DNL Magento 1.x].
 
 Contrairement à d’autres [fichiers de configuration de module](../reference/module-files.md), la configuration du déploiement Commerce est chargée en mémoire lors de l’initialisation. Elle n’est fusionnée avec aucun autre fichier et ne peut pas être étendue. (`config.php` et `env.php` sont fusionnés entre eux, toutefois.)
 
@@ -46,7 +46,7 @@ Les sections suivantes abordent la structure et le contenu de la configuration d
 
 ## Gestion des modules installés
 
-Le `config.php` contient une liste des modules installés. Adobe Commerce fournit des utilitaires de ligne de commande et web pour gérer les modules (installation, désinstallation, activation, désactivation ou mise à niveau).
+La variable `config.php` contient une liste des modules installés. Adobe Commerce fournit des utilitaires de ligne de commande et web pour gérer les modules (installation, désinstallation, activation, désactivation ou mise à niveau).
 
 Exemples :
 

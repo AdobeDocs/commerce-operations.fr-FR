@@ -18,15 +18,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->La prise en charge d’OpenSearch a été ajoutée dans la version 2.4.4. OpenSearch est un double compatible avec les Elasticsearch. Voir [Migration de l’Elasticsearch vers OpenSearch](../../../upgrade/prepare/opensearch-migration.md) pour plus d’informations.
+>La prise en charge d’OpenSearch a été ajoutée à la version 2.4.4. OpenSearch est un double compatible d’Elasticsearch. Voir [Migration de l’Elasticsearch vers OpenSearch](../../../upgrade/prepare/opensearch-migration.md) pour plus d’informations.
 
-Cette section explique comment configurer Apache en tant que *unsecure* pour qu’Adobe Commerce puisse utiliser un moteur de recherche s’exécutant sur ce serveur. Cette section ne traite pas de la configuration de l’authentification HTTP de base ; qui sont abordés dans [Communication sécurisée avec Apache](#secure-communication-with-apache).
+Cette section explique comment configurer Apache en tant que *unsecure* pour qu’Adobe Commerce puisse utiliser un moteur de recherche s’exécutant sur ce serveur. Cette section ne traite pas de la configuration de l’authentification HTTP de base. C’est ce qui est décrit dans la section [Communication sécurisée avec Apache](#secure-communication-with-apache).
 
 >[!NOTE]
 >
 >La raison pour laquelle le proxy n’est pas sécurisé dans cet exemple est qu’il est plus facile de configurer et de vérifier. Vous pouvez utiliser TLS avec ce proxy. Si vous le souhaitez, veillez à ajouter les informations de proxy à votre configuration d’hôte virtuel sécurisée.
 
-### Configuration d’un proxy pour Apache 2.4
+### Configurer un proxy pour Apache 2.4
 
 Cette section explique comment configurer un proxy à l’aide d’un hôte virtuel.
 
@@ -36,7 +36,7 @@ Cette section explique comment configurer un proxy à l’aide d’un hôte virt
    a2enmod proxy_http
    ```
 
-1. Utilisation d’un éditeur de texte pour l’ouverture `/etc/apache2/sites-available/000-default.conf`
+1. Utilisez un éditeur de texte pour ouvrir `/etc/apache2/sites-available/000-default.conf`
 1. Ajoutez la directive suivante en haut du fichier :
 
    ```conf
@@ -90,10 +90,10 @@ Cette section explique comment sécuriser la communication entre Apache et le mo
 
 Consultez l’une des sections suivantes :
 
-* [Création d’un fichier de mot de passe](#create-a-password)
+* [Créer un fichier de mot de passe](#create-a-password)
 * [Configuration de votre hôte virtuel sécurisé](#secure-communication-with-apache)
 
-### Création d’un mot de passe
+### Créer un mot de passe
 
 Pour des raisons de sécurité, vous pouvez localiser le fichier de mot de passe n’importe où, à l’exception de la docroot de votre serveur web. Dans cet exemple, nous montrons comment stocker le fichier de mot de passe dans un nouveau répertoire.
 
@@ -107,14 +107,14 @@ Tout d’abord, voir si vous disposez de l’Apache `htpasswd` L’utilitaire es
    which htpasswd
    ```
 
-   Si un chemin s’affiche, il est installé ; si la commande ne renvoie aucune sortie, `htpasswd` n’est pas installé.
+   Si un chemin d’accès s’affiche, il est installé ; si la commande ne renvoie aucune sortie, `htpasswd` n’est pas installé.
 
 1. Si nécessaire, installez . `htpasswd`:
 
    * Ubuntu : `apt-get -y install apache2-utils`
    * CentOS : `yum -y install httpd-tools`
 
-#### Création d’un fichier de mot de passe
+#### Créer un fichier de mot de passe
 
 Saisissez les commandes suivantes en tant qu’utilisateur avec `root` privilèges :
 
@@ -130,7 +130,7 @@ Où
 
 * `<username>` peut être :
 
-   * Configuration de cron : l’utilisateur du serveur web ou un autre utilisateur.
+   * Configuration de cron : utilisateur du serveur web ou autre utilisateur.
 
   Dans cet exemple, nous utilisons l’utilisateur du serveur web, mais c’est à vous de choisir l’utilisateur.
 
@@ -154,7 +154,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd apache
 ```
 
 **Exemple 2 : Elasticsearch**
-Vous devez configurer l’authentification pour deux utilisateurs : une avec accès à nginx et une avec accès à Elasticsearch. Pour créer des fichiers de mot de passe pour ces utilisateurs, saisissez les commandes suivantes :
+Vous devez configurer l’authentification de deux utilisateurs : un avec accès à nginx et un autre avec accès à Elasticsearch. Pour créer des fichiers de mot de passe pour ces utilisateurs, saisissez les commandes suivantes :
 
 ```bash
 mkdir -p /usr/local/apache/password
@@ -200,7 +200,7 @@ Cette section explique comment spécifier qui peut accéder au serveur Apache.
    </Proxy>
    ```
 
-1. Si vous avez ajouté le précédent à votre hôte virtuel sécurisé, supprimez `Listen 8080` et le `<VirtualHost *:8080>` directives que vous avez ajoutées précédemment à votre hôte virtuel non sécurisé.
+1. Si vous avez ajouté le précédent à votre hôte virtuel sécurisé, supprimez `Listen 8080` et la variable `<VirtualHost *:8080>` directives que vous avez ajoutées précédemment à votre hôte virtuel non sécurisé.
 
 1. Enregistrez vos modifications, quittez l’éditeur de texte, puis redémarrez Apache :
 

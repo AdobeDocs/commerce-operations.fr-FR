@@ -10,6 +10,6 @@ ht-degree: 0%
 
 ---
 
-# parcours Adobe Commerce sans affichage
+# Parcours Adobe Commerce en mode sans affichage
 
 ![Chronologie du parcours Adobe Commerce sur une architecture sans tête](../../../assets/playbooks/journey-to-headless.svg)

@@ -1,13 +1,13 @@
 ---
 title: Exemple d'utilisation d'une configuration partagée
 description: Consultez un exemple de modification des paramètres dans un système de développement avec un fichier de configuration partagé.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 0%
 
 ---
-
 
 # Exemple d&#39;utilisation d&#39;une configuration partagée
 
@@ -22,7 +22,7 @@ Vous pouvez suivre la même procédure pour configurer des paramètres qui ne so
 
 - [Autres références de chemins de configuration](../reference/config-reference-general.md)
 - [Référence des chemins de configuration des paiements](../reference/config-reference-payment.md)
-- [Référence des chemins de configuration de l’extension B2B de Commerce Enterprise](../reference/config-reference-b2b.md)
+- [Référence sur les chemins de configuration de l’extension B2B de Commerce Enterprise](../reference/config-reference-b2b.md)
 
 ## Avant de commencer
 
@@ -38,7 +38,7 @@ Pour les besoins de cet exemple, nous supposons que :
 - Le système de développement est disponible dans un référentiel distant Git nommé `mconfig`
 - Votre branche de travail Git est nommée `m2.2_deploy`
 
-## Étape 1 : Définir la configuration dans le système de développement
+## Étape 1 : définir la configuration dans le système de développement
 
 Pour définir le fuseau horaire et les unités de poids dans votre système de développement :
 
@@ -56,7 +56,7 @@ Pour définir le fuseau horaire et les unités de poids dans votre système de d
 1. Cliquez sur **Enregistrer la configuration**.
 1. Si vous y êtes invité, videz le cache.
 
-## Étape 2 : Mettre à jour la configuration partagée
+## Étape 2 : mise à jour de la configuration partagée
 
 Générer le fichier de configuration partagé, `app/etc/config.php`, dans votre système de développement et transférez-le à l’aide du contrôle de code source vers votre système de génération, comme indiqué dans cette section.
 
@@ -68,9 +68,9 @@ Maintenant que vous avez validé vos modifications dans la configuration partag�
 
 {{$include /help/_includes/config-update-build-system.md}}
 
-## Étape 4 : Mettre à jour le système de production
+## Étape 4 : mise à jour du système de production
 
-La dernière étape du processus consiste à mettre à jour votre système de production à partir du contrôle de code source. Cela récupère toutes les modifications que vous avez apportées à vos systèmes de développement et de création, ce qui signifie que votre système de production est entièrement à jour.
+La dernière étape du processus consiste à mettre à jour votre système de production à partir du contrôle source. Cela récupère toutes les modifications que vous avez apportées à vos systèmes de développement et de création, ce qui signifie que votre système de production est entièrement à jour.
 
 {{$include /help/_includes/config-update-prod-system.md}}
 

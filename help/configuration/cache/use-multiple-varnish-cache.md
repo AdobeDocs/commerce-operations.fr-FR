@@ -6,7 +6,7 @@ exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Vous devez utiliser la variable `--http-cache-hosts` pour spécifier une liste s
 
 Le format du paramètre doit être `<hostname or ip>:<listen port>`, où vous pouvez omettre `<listen port>` s’il s’agit du port 80.
 
-Par exemple :
+Par exemple,
 
 ```bash
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080

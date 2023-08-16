@@ -50,7 +50,7 @@ ht-degree: 0%
    + [Nettoyage du cache](cache/use-varnish-cache.md)
    + [Nettoyage du cache de plusieurs instances Varnish](cache/use-multiple-varnish-cache.md)
    + [Vérification de la configuration du vernis](cache/config-varnish-final.md)
-   + [Bloc ESI de marque](cache/use-varnish-esi.md)
+   + [Bloc ESI en pointillé](cache/use-varnish-esi.md)
    + [Cache de contenu statique](cache/static-content-signing.md)
 + Ligne de commande {#cli}
    + [Outil de ligne de commande](cli/config-cli.md)
@@ -60,7 +60,7 @@ ht-degree: 0%
    + [Gestion des indexeurs](cli/manage-indexers.md)
    + [Configuration des tâches cron](cli/configure-cron-jobs.md)
    + [Compiler le code](cli/code-compiler.md)
-   + [Mode de fonctionnement](cli/set-mode.md)
+   + [Mode d&#39;exploitation](cli/set-mode.md)
    + [Démarrage des consommateurs de la file de messages](cli/start-message-queues.md)
    + [Surligneur URN](cli/urn-highlighter.md)
    + [Rapports de dépendance](cli/dependency-reports.md)
@@ -140,7 +140,7 @@ ht-degree: 0%
       + [memcached sur CentOS](storage/memcache-centos.md)
       + [memcached sur Ubuntu](storage/memcache-ubuntu.md)
    + Diviser la base de données {#split-db}
-      + [Présentation de la base de données partagée](storage/multi-master.md)
+      + [Présentation de la base de données de partage](storage/multi-master.md)
       + [Configuration automatique](storage/multi-master-masterdb.md)
       + [Configuration manuelle](storage/multi-master-manual.md)
       + [Vérifier la base de données partagée](storage/multi-master-verify.md)

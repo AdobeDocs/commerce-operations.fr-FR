@@ -42,6 +42,6 @@ Adobe a testé la migration des données sur le système suivant :
 
 ## Résultats des performances
 
-* Temps de migration des paramètres : ~10 minutes
-* Temps de migration des données : ~9 heures (toutes les données sauf les réécritures d’URL, ~85 % du total des données)
+* Temps de migration des paramètres : ~ 10 minutes
+* Temps de migration des données : ~9 heures (toutes les données, à l’exception des réécritures d’URL, ~85 % du total des données)
 * Estimation du temps d’arrêt du site : quelques minutes pour réindexer et modifier les paramètres DNS. Temps supplémentaire nécessaire pour réchauffer le cache de la page.

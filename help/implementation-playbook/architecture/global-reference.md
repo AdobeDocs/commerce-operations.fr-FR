@@ -29,7 +29,7 @@ L’évaluation géographique est la suivante :
 L’évaluation géographique n’est pas :
 
 - Une &quot;fonctionnalité&quot; de produit
-- Unique à toute plateforme commerciale
+- Unique à n’importe quelle plateforme commerciale
 - Uniquement pour les cas d’utilisation métier globaux
 
 Impact de l’évaluation géographique :
@@ -38,7 +38,7 @@ Impact de l’évaluation géographique :
 
    - Conçus à partir de référentiels de code spécifiques à des fins, qui offrent différentes expériences.
 
-- Intégration des systèmes d’entreprise
+- Comment les systèmes d’entreprise sont intégrés
 
    - Consolidation des connexions aux systèmes d’entreprise par marque et/ou région.
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Concepts de sécurité
 
-La sécurité doit toujours être une considération forte pour tout ce qui a trait à un projet de commerce électronique. En l&#39;absence d&#39;une forte sécurité, la surface pouvant être attaquée est exponentiellement plus grande. Les concepts et les idées présentés fournissent des méthodes qui ont fait leurs preuves pour réduire les vulnérabilités communes généralement exploitées.
+La sécurité doit toujours être une considération forte pour tout ce qui a trait à un projet d’e-commerce. En l&#39;absence d&#39;une forte sécurité, la surface pouvant être attaquée est exponentiellement plus grande. Les concepts et les idées présentés fournissent des méthodes qui ont fait leurs preuves pour réduire les vulnérabilités communes généralement exploitées.
 
 Les concepts suivants ne sont pas dans un ordre particulier. Ils sont censés fournir quelques idées et concepts à prendre en compte. La plupart d’entre eux sont gratuits ou nécessitent une configuration et une configuration minimales ainsi qu’une surveillance ultérieure. Consultez ces rubriques en dehors de ce tutoriel pour vous assurer d’avoir une compréhension suffisante des concepts présentés ici.
 
@@ -36,7 +36,7 @@ Les analyses de programmes malveillants sont généralement trouvées auprès d�
 
 ## Outil d’analyse à l’échelle du site pour Commerce
 
-Le [Outil d’analyse à l’échelle du site](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html){target="_blank"} est un outil en libre-service proactif et un référentiel central qui comprend des informations détaillées sur le système et des recommandations pour garantir la sécurité et la maniabilité de votre installation Adobe Commerce. Il fournit 24/7 surveillance des performances, rapports et conseils en temps réel afin d’identifier les problèmes potentiels et d’améliorer la visibilité sur l’intégrité, la sécurité et les configurations d’application du site. Cela permet de réduire le temps de résolution et d’améliorer la stabilité et les performances du site.
+La variable [Outil d’analyse à l’échelle du site](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html){target="_blank"} est un outil en libre-service proactif et un référentiel central qui comprend des informations détaillées sur le système et des recommandations pour garantir la sécurité et la maniabilité de votre installation Adobe Commerce. Il fournit 24/7 surveillance des performances, rapports et conseils en temps réel afin d’identifier les problèmes potentiels et d’améliorer la visibilité sur l’intégrité, la sécurité et les configurations d’application du site. Cela permet de réduire le temps de résolution et d’améliorer la stabilité et les performances du site.
 
 ## Activation et vérification des paramètres pour la journalisation des actions d’administration
 
@@ -218,7 +218,7 @@ Vous pouvez en savoir plus sur ce sujet dans Experience League [Variables d’en
 
 ## Outils d’analyse des vulnérabilités des logiciels
 
-Le pipeline CI/CD peut être un outil puissant qui permet d’automatiser certaines tâches. En particulier, la possibilité pour un développeur de valider un code qui peut être exploitable est toujours une possibilité réelle. Les examens de code par les pairs capturent normalement de tels éléments, mais comme c&#39;est un être humain, des erreurs se produisent. L’analyse automatisée du code permet de réduire les risques de vulnérabilités inattendues au sein d’une nouvelle fonctionnalité introduite. Ces outils peuvent même être en place pour bloquer la fusion du code dans le code base en direct. Il existe de nombreuses façons et outils d’offrir la sécurité du code automatisée et des analyses de qualité. Il peut exister des outils développés personnalisés robustes, mais ils nécessitent des mises à jour et des ajustements constants. Une alternative consiste à appliquer des outils mis à jour de manière proactive tels que synk.io et l’Inspecteur de code Amazon.
+Le pipeline CI/CD peut être un outil puissant qui permet d’automatiser certaines tâches. En particulier, la possibilité pour un développeur de valider un code qui peut être exploitable est toujours une possibilité réelle. Les examens de code par les pairs capturent normalement de tels éléments, mais comme c&#39;est un être humain, des erreurs se produisent. L’analyse automatisée du code permet de réduire les risques de vulnérabilités inattendues dans une nouvelle fonctionnalité introduite. Ces outils peuvent même être en place pour bloquer la fusion du code dans le code base en direct. Il existe de nombreuses façons et outils d’offrir la sécurité du code automatisée et des analyses de qualité. Il peut exister des outils développés personnalisés robustes, mais ils nécessitent des mises à jour et des ajustements constants. Une alternative consiste à appliquer des outils mis à jour de manière proactive tels que synk.io et l’Inspecteur de code Amazon.
 
 ## Pare-feu d’applications web
 
@@ -232,6 +232,6 @@ Le WAF examine le trafic Web et administratif pour identifier toute activité su
 
 En tant que service basé sur le cloud, le WAF ne nécessite aucun matériel ou logiciel à installer ou à gérer. Rapidement, un partenaire technologique existant, fournit le logiciel et l&#39;expertise. Leur haute performance, le WAF toujours actif, réside dans chaque noeud de cache sur le réseau de diffusion global de Fastly.
 
-Pour plus d’informations sur la méthode WAF sur Adobe Commerce sur le cloud fourni par Fastly, consultez la [FAQ sur la base de connaissances Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"}.
+Pour plus d’informations sur la méthode WAF sur Adobe Commerce sur le cloud fourni par Fastly, consultez la section [FAQ sur la base de connaissances Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"}.
 
 {{$include /help/_includes/hosting-related-links.md}}

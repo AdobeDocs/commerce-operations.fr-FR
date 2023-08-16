@@ -1,13 +1,13 @@
 ---
 title: Démarrage rapide de l’installation sur site
 description: Pour installer Adobe Commerce ou Magento Open Source sur une infrastructure que vous détenez, procédez comme suit.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 0%
 
 ---
-
 
 # Démarrage rapide de l’installation sur site
 
@@ -53,7 +53,7 @@ Pour passer au propriétaire du système de fichiers :
 
 1. Pour exécuter des commandes d’interface de ligne de commande depuis n’importe quel répertoire, ajoutez `<app_root>/bin` sur votre système `PATH`.
 
-   Les shells ayant une syntaxe différente, consultez une référence comme [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   Comme les shells ont une syntaxe différente, consultez une référence comme [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
    Exemple de shell bash pour CentOS :
 
@@ -89,7 +89,7 @@ Pour obtenir le métappackage Adobe Commerce ou Magento Open Source :
 
    Lorsque vous y êtes invité, saisissez vos clés d’authentification. Les clés publique et privée sont créées et configurées dans votre [Commerce Marketplace](https://marketplace.magento.com/customer/account/login/).
 
-   Si vous rencontrez des erreurs, telles que `Could not find package...` ou `...no matching package found`, assurez-vous qu’il n’y a pas de fautes de frappe dans votre commande. Si vous rencontrez toujours des erreurs, il se peut que vous ne soyez pas autorisé à télécharger Adobe Commerce. Contact [Prise en charge d’Adobe Commerce](https://support.magento.com/hc/en-us) pour obtenir de l’aide.
+   Si vous rencontrez des erreurs, telles que `Could not find package...` ou `...no matching package found`, assurez-vous qu’il n’y a pas de fautes de frappe dans votre commande. Si vous rencontrez toujours des erreurs, il se peut que vous ne soyez pas autorisé à télécharger Adobe Commerce. Contact [Assistance Adobe Commerce](https://support.magento.com/hc/en-us) pour obtenir de l’aide.
 
    Voir [Dépannage](https://support.magento.com/hc/en-us/articles/360033818091) pour obtenir de l’aide sur d’autres erreurs.
 
@@ -186,7 +186,7 @@ Pour obtenir de l’aide sur une commande spécifique, saisissez :
 bin/magento help <command>
 ```
 
-Par exemple :
+Par exemple :
 
 ```bash
 bin/magento help setup:install
@@ -208,7 +208,7 @@ Le tableau suivant résume les commandes disponibles. Les commandes sont présen
 | `magento module:{enable/disable}` | Activez ou désactivez les modules. | Aucun |
 | `magento setup:store-config:set` | Définit les options liées au storefront, telles que l’URL de base, la langue, le fuseau horaire. | Configuration du déploiement |
 | `magento setup:db-schema:upgrade` | Met à jour le schéma de la base de données. | Configuration du déploiement |
-| `magento setup:db-data:upgrade` | Met à jour les données de la base de données. | Configuration du déploiement |
+| `magento setup:db-data:upgrade` | Met à jour les données de la base. | Configuration du déploiement |
 | `magento setup:db:status` | Vérifie si la base de données est à jour avec le code. | Configuration du déploiement |
 | `magento admin:user:create` | Crée un utilisateur administrateur. | Vous pouvez créer des utilisateurs pour les éléments suivants :<br><br>Configuration du déploiement<br><br>Activez au minimum la variable `Magento_User` et `Magento_Authorization` modules<br><br>Base de données (la méthode la plus simple consiste à utiliser `bin/magento setup:upgrade`) |
 | `magento list` | Répertorie toutes les commandes disponibles. | Aucun |
@@ -223,11 +223,11 @@ Les arguments suivants sont communs à toutes les commandes. Ces commandes peuve
 | `--help` | `-h` | Obtenez de l’aide pour n’importe quelle commande. Par exemple : `./magento help setup:install` ou `./magento help setup:config:set`. |
 | `--quiet` | `-q` | Mode silencieux ; pas de sortie. |
 | `--no-interaction` | `-n` | Aucune question interactive. |
-| `--verbose=1,2,3` | `-v, -vv, -vvv` | Niveau de verbosité. Par exemple : `--verbose=3` ou `-vvv` affiche la verbosité de débogage, qui est la sortie la plus détaillée. La valeur par défaut est `--verbose=1` ou `-v`. |
+| `--verbose=1,2,3` | `-v, -vv, -vvv` | Niveau de verbosité. Par exemple : `--verbose=3` ou `-vvv` affiche la verbosité de débogage, qui est la sortie la plus détaillée. Par défaut : `--verbose=1` ou `-v`. |
 | `--version` | `-V` | Afficher cette version de l’application |
 | `--ansi` | n/a | Forcer la sortie ANSI |
 | `--no-ansi` | n/a | Désactiver la sortie ANSI |
 
 >[!NOTE]
 >
->Félicitations ! Vous avez terminé l’installation rapide. Besoin d’aide plus avancée ? Consultez notre [Installation avancée](advanced.md) guide.
+>Félicitations ! Vous avez terminé l’installation rapide. Besoin d’aide plus avancée ? Consultez notre [Installation avancée](advanced.md) guide.

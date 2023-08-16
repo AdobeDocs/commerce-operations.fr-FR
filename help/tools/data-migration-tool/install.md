@@ -18,7 +18,7 @@ ht-degree: 0%
 >Versions du Magento et [!DNL Data Migration Tool] doit correspondre.
 
 
-Assurez-vous que vous utilisez *la même version publiée ;* du Magento 2 et de la variable [!DNL Data Migration Tool]. Par exemple, pour la version 2.2.0 de Magento, vous devez également utiliser la variable [!DNL Data Migration Tool] version 2.2.0.
+Assurez-vous que vous utilisez *la même version publiée* du Magento 2 et de la variable [!DNL Data Migration Tool]. Par exemple, pour la version 2.2.0 de Magento, vous devez également utiliser la variable [!DNL Data Migration Tool] version 2.2.0.
 
 ## Vérifier votre version
 
@@ -49,12 +49,12 @@ git branch
 
 Si vous êtes actuellement dans la variable `develop` vous devez passer à une [branche publiée](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) avant de continuer.
 
-Si vous n’avez pas encore installé le logiciel Adobe Commerce ou Magento Open Source, [l’installer maintenant](../../installation/prerequisites/commerce.md).
+Si vous n’avez pas encore installé le logiciel Adobe Commerce ou Magento Open Source, [installer maintenant](../../installation/prerequisites/commerce.md).
 Si vous clonez le référentiel GitHub, veillez à extraire une balise de version comme décrit dans [(Contributeur) Cloner le référentiel GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
 
 ## Recherche des versions publiées de [!DNL Data Migration Tool]
 
-Accédez au [Versions](https://github.com/magento/data-migration-tool/releases) de la [!DNL Data Migration Tool] Référentiel GitHub pour rechercher les versions publiées disponibles.
+Accédez au [Versions](https://github.com/magento/data-migration-tool/releases) de la page [!DNL Data Migration Tool] Référentiel GitHub pour rechercher les versions publiées disponibles.
 
 ## Installez le [!DNL Data Migration Tool]
 
@@ -132,4 +132,4 @@ Si vous avez cloné le référentiel GitHub, procédez comme suit pour installer
 
 1. Ouvrir [`composer.json`](https://github.com/magento/data-migration-tool/blob/2.4/composer.json) dans un éditeur de texte.
 
-1. Le `version` l’entrée dans ce fichier est la version de la variable [!DNL Data Migration Tool].
+1. La variable `version` l’entrée dans ce fichier est la version de la variable [!DNL Data Migration Tool].

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Présentation de la journalisation personnalisée
 
-Les journaux offrent une visibilité sur les processus système ; par exemple, des informations de débogage qui vous aident à comprendre quand une erreur s’est produite ou ce qui a conduit à l’erreur.
+Les journaux offrent une visibilité sur les processus système, par exemple les informations de débogage qui vous aident à comprendre quand une erreur s’est produite ou ce qui a conduit à l’erreur.
 
 Cette rubrique porte sur la journalisation basée sur les fichiers, bien que Commerce offre la possibilité de stocker également les journaux dans la base de données.
 
@@ -20,15 +20,15 @@ Adobe recommande d’utiliser la journalisation centralisée des applications po
 
 - Il permet le stockage des journaux sur un serveur autre que le serveur d’applications et réduit les opérations d’E/S de disque, ce qui simplifie la prise en charge du serveur d’applications.
 
-- Cela rend le traitement des données de journaux plus efficace à l’aide d’outils spéciaux, tels que [Logstash], [Logplex]ou [fluentd]: sans impact sur un serveur de production.
+- Cela rend le traitement des données de journaux plus efficace à l’aide d’outils spéciaux, tels que [Logstash], [Logplex], ou [fluentd]: sans impact sur un serveur de production.
 
-   >[!INFO]
-   >
-   >Adobe ne recommande ni n’approuve aucune solution de journalisation particulière.
+  >[!INFO]
+  >
+  >Adobe ne recommande ni n’approuve aucune solution de journalisation particulière.
 
 ## Conformité PSR-3
 
-Le [PSR-3 standard][laminas] définit une interface PHP courante pour les bibliothèques de journalisation. L’objectif principal de PSR-3 est de permettre aux bibliothèques de recevoir une `Psr\Log\LoggerInterface` et écrivez-y des journaux d’une manière simple et universelle.
+La variable [PSR-3 standard][laminas] définit une interface PHP courante pour les bibliothèques de journalisation. L’objectif principal de PSR-3 est de permettre aux bibliothèques de recevoir une `Psr\Log\LoggerInterface` et écrivez-y des journaux d’une manière simple et universelle.
 
 Cela permet à l’implémentation d’être facilement remplacée sans craindre qu’un tel remplacement puisse endommager le code de l’application. Il garantit également qu’un composant personnalisé fonctionnera même si l’implémentation du journal est modifiée dans une version ultérieure du système.
 
@@ -42,7 +42,7 @@ Un monolog _logger_ est un canal qui possède son propre jeu de _gestionnaires_.
 
 - Connexion aux fichiers et au fichier syslog
 - Envoyer des alertes et des emails
-- Journalisation des serveurs spécifiques et de la journalisation en réseau
+- Journalisation de serveurs spécifiques et connexion en réseau
 - Connexion au développement (intégration avec FireBug et Chrome Logger, entre autres)
 - Connexion à la base de données
 

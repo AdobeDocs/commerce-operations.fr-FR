@@ -24,7 +24,7 @@ Le personnel de l’assistance d’Adobe Commerce travaille avec vous tout au lo
 
 - Test complet en production
    - Vérification de toutes les fonctions du site web
-   - Vérification du cache CDN
+   - Vérification du cache du réseau CDN
    - Vérification de tous les services tiers intégrés
    - Vérification de tous les systèmes tiers
 

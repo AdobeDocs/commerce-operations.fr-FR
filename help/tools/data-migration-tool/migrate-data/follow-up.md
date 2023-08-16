@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Suivi de la migration des données
 
-Le comportement et la logique du Magento 1 ont été implémentés différemment dans le Magento 2. Le [!DNL Data Migration Tool] s&#39;en occupe. Il existe des aspects de migration que vous devez connaître et, parfois, vous devez prendre des mesures mineures pour que certaines fonctionnalités fonctionnent correctement après la migration.
+Le comportement et la logique du Magento 1 ont été implémentés différemment dans le Magento 2. La variable [!DNL Data Migration Tool] s&#39;en occupe. Il existe des aspects de migration que vous devez connaître et, parfois, vous devez prendre des mesures mineures pour que certaines fonctionnalités fonctionnent correctement après la migration.
 
 ## Informations
 
 ### Partage de la base de données non pris en charge
 
-Le [!DNL Data Migration Tool] ne prend pas en charge les bases de données partagées.
+La variable [!DNL Data Migration Tool] ne prend pas en charge les bases de données partagées.
 
 ### Prix de groupe convertis en prix de niveau
 
@@ -42,7 +42,7 @@ Par défaut, Magento stocke les données horaires dans la zone UTC-0 de la base 
 
 Dans l&#39;exemple suivant, le Magento 1 a incorrectement gagné du temps dans la zone UTC-7 de la base de données (par exemple, en raison d&#39;une extension tierce défectueuse). Pour convertir correctement l’heure de création du compte client en fuseau UTC-0 lors de la migration, procédez comme suit :
 
-1. Copiez le `map-customer.xml.dist` fichier de configuration à partir du répertoire approprié du fichier [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`) dans le `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` fichier .
+1. Copiez le `map-customer.xml.dist` fichier de configuration à partir du répertoire approprié du fichier [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`) dans la variable `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` fichier .
 
 1. Mettez à jour le `<customer_map_file>` noeud dans `config.xml` et supprimez la variable `.dist` de `map-customer.xml.dist`
 

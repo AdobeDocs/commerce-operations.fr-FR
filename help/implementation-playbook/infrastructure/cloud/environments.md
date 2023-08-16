@@ -14,7 +14,7 @@ ht-degree: 0%
 
 L’architecture d’Adobe Commerce sur l’infrastructure cloud Pro prend en charge les environnements que vous pouvez utiliser pour développer, tester et lancer votre boutique. Chaque environnement contient une base de données et un serveur web. Les quatre environnements utilisés par Adobe Commerce sont les suivants :
 
-- **Intégration**: fournit une branche d’environnement unique et vous pouvez créer jusqu’à quatre branches d’environnement supplémentaires. Cela permet de déployer au maximum cinq branches principales vers des conteneurs Platform as a Service (PaaS).
+- **Intégration**: fournit une branche d’environnement unique et vous pouvez créer jusqu’à quatre branches d’environnement supplémentaires. Cela permet de déployer au maximum cinq branches actives sur des conteneurs Platform as a Service (PaaS).
 
 - **Évaluation**: fournit une branche d’environnement unique déployée sur des conteneurs IaaS dédiés.
 

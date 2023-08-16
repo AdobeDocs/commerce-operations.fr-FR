@@ -1,16 +1,16 @@
 ---
-user-guide-title: Manuel de mise en oeuvre
-user-guide-description: Découvrez les stratégies de planification et de mise en oeuvre d’un site Adobe Commerce performant.
+user-guide-title: Manuel d’implémentation
+user-guide-description: Découvrez les stratégies de planification et d’implémentation d’un site Adobe Commerce performant.
 mini-toc-levels: 3
 source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
-# Manuel de mise en oeuvre {#implementation-playbook}
+# Manuel d’implémentation {#implementation-playbook}
 
 - [Présentation](overview.md)
 - Commerce {#intro}
@@ -26,7 +26,7 @@ ht-degree: 0%
    - [Outils Platform](development/platform-tools.md)
    - [Outils de gestion de projet](development/project-management-tools.md)
    - [Méthodologie de mise en oeuvre du projet](development/delivery.md)
-   - [Contrôle de la qualité](development/quality-control.md)
+   - [Contrôle qualité](development/quality-control.md)
 - Planification et gouvernance {#planning}
    - [Approche de livraison et de planification](planning/delivery.md)
    - [Responsabilité et propriété](planning/ownership.md)
@@ -79,7 +79,7 @@ ht-degree: 0%
       - [Configuration de la vue Sites, magasins et magasin](best-practices/planning/sites-stores-store-views.md)
       - [Configuration des rapports](best-practices/planning/reporting-configuration.md)
       - [Configuration de la base de données pour les déploiements dans le cloud &#x200B;](best-practices/planning/database-on-cloud.md)
-      - [Configuration de la connexion au Secondaire MySQL &#x200B;](best-practices/planning/configure-mysql-slave-connection-on-cloud.md)
+      - [Configuration de la connexion esclave MySQL &#x200B;](best-practices/planning/configure-mysql-slave-connection-on-cloud.md)
       - [Utilisation des déclencheurs MySQL](best-practices/planning/mysql-triggers-usage.md)
       - [Configuration du service Redis](best-practices/planning/redis-service-configuration.md)
       - [Taille de la mémoire OPcache](best-practices/planning/opcache-memory-size.md)

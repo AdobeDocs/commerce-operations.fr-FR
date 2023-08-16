@@ -1,13 +1,13 @@
 ---
 title: Configuration et exécution de tâches cron
 description: Découvrez comment gérer les tâches cron.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 8ba2b2f9-5200-4e96-9799-1b00d7d23ce1
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 0%
 
 ---
-
 
 # Configuration des tâches cron
 
@@ -30,7 +30,7 @@ Plusieurs fonctionnalités de Commerce nécessitent au moins une tâche cron, qu
 
 >[!INFO]
 >
->Le commerce dépend d’une configuration de tâche cron appropriée pour de nombreuses fonctions système importantes, y compris l’indexation. Si vous ne le configurez pas correctement, Commerce ne fonctionnera pas comme prévu.
+>Le commerce dépend d’une configuration correcte des tâches cron pour de nombreuses fonctions système importantes, y compris l’indexation. Si vous ne le configurez pas correctement, Commerce ne fonctionnera pas comme prévu.
 
 Les systèmes UNIX planifient les tâches à effectuer par des utilisateurs particuliers à l’aide d’une _crontab_, qui est un fichier contenant des instructions au démon cron qui indiquent au démon en vigueur d’&quot;exécuter cette commande à cette date&quot;. Chaque utilisateur possède son propre crontab et les commandes de n’importe quel crontab donné sont exécutées en tant qu’utilisateur propriétaire.
 
@@ -40,21 +40,20 @@ Pour exécuter cron dans un navigateur web, voir [Sécurisation de cron.php pour
 
 Cette section explique comment créer ou supprimer votre crontab Commerce (c’est-à-dire la configuration des tâches Commerce cron).
 
-Le _crontab_ est la configuration utilisée pour exécuter les tâches cron.
+La variable _crontab_ est la configuration utilisée pour exécuter les tâches cron.
 
-L’application Commerce utilise des tâches cron qui peuvent s’exécuter avec différentes configurations. La configuration de ligne de commande PHP contrôle la tâche cron générale qui reindexe les indexeurs, génère des emails, génère le plan de site, etc.
+L’application Commerce utilise des tâches cron qui peuvent s’exécuter avec différentes configurations. La configuration de ligne de commande PHP contrôle la tâche cron générale qui reindexe les indexeurs, génère des courriers électroniques, génère le plan du site, etc.
 
 >[!WARNING]
 >
 >- Pour éviter tout problème lors de l’installation et de la mise à niveau, nous vous recommandons vivement d’appliquer les mêmes paramètres PHP à la configuration de la ligne de commande PHP et à la configuration du plug-in du serveur web PHP. Pour plus d’informations, voir [Paramètres PHP requis](../../installation/prerequisites/php-settings.md).
 >- Dans un système à plusieurs noeuds, crontab ne peut s’exécuter que sur un seul noeud. Cela s’applique uniquement si vous configurez plusieurs noeuds web pour des raisons de performances ou d’évolutivité.
 
-
 ### Création de l’onglet de compte Commerce
 
 À partir de la version 2.2, Commerce crée un crontab pour vous. Nous ajoutons le crontab Commerce à n’importe quel crontab configuré pour le propriétaire du système de fichiers Commerce. En d’autres termes, si vous avez déjà configuré des onglets pour d’autres extensions ou applications, nous lui ajoutons l’onglet Commerce.
 
-Le sous-onglet Commerce se trouve à l’intérieur de `#~ MAGENTO START` et `#~ MAGENTO END` commentaires dans votre onglet crontab.
+Le sous-onglet Commerce se trouve dans `#~ MAGENTO START` et `#~ MAGENTO END` commentaires dans votre onglet crontab.
 
 Pour créer le sous-onglet Commerce :
 
@@ -73,7 +72,6 @@ Utilisation `--force` pour réécrire un crontab existant.
 >- `magento cron:install` ne réécrit pas un onglet crontab existant dans `#~ MAGENTO START` et `#~ MAGENTO END` commentaires dans votre onglet crontab.
 >- `magento cron:install --force` n’a aucun effet sur les tâches cron en dehors des commentaires Commerce.
 
-
 Pour afficher crontab, saisissez la commande suivante en tant que propriétaire du système de fichiers :
 
 ```bash
@@ -90,7 +88,7 @@ Voici un exemple :
 
 >[!INFO]
 >
->Le `update/cron.php` a été supprimé dans Commerce 2.4.0. Si ce fichier existe dans votre installation, il peut être supprimé en toute sécurité.
+>La variable `update/cron.php` a été supprimé dans Commerce 2.4.0. Si ce fichier existe dans votre installation, il peut être supprimé en toute sécurité.
 >
 >Toute référence à `update/cron.php` et `bin/magento setup:cron:run` doit également être supprimé de crontab&#39;
 
@@ -112,7 +110,7 @@ Pour supprimer l’onglet Commerce crontab :
 >
 >Cette commande n’a aucun effet sur les tâches cron en dehors de la fonction `#~ MAGENTO START` et `#~ MAGENTO END` commentaires dans votre onglet crontab.
 
-## Exécutez cron à partir de la ligne de commande
+## Exécutez cron depuis la ligne de commande
 
 Options de commande :
 

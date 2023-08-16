@@ -1,13 +1,13 @@
 ---
 title: Conversion de fichiers de mise en page
 description: Convertir les fichiers de mise en page XML.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 9852b735-9b4b-43ce-887f-5c37d398bbf7
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
 
 ---
-
 
 # Conversion de fichiers de disposition XML
 
@@ -26,6 +26,6 @@ bin/magento dev:xml:convert [-o|--overwrite] {xml file} {xslt stylesheet}
 
 Où :
 
-- `{xml file}`: chemin d’accès complet et nom de fichier d’un fichier XML de mise en page à convertir (obligatoire).
+- `{xml file}`: chemin d’accès complet et nom de fichier d’un fichier XML de disposition à convertir (obligatoire).
 - `{xslt stylesheet}`: chemin d’accès complet et nom de fichier d’un fichier de feuille de style XSLT à utiliser pour la conversion (obligatoire).
-- `-o|--overwrite`: incluez cette option pour remplacer le fichier XML existant.
+- `-o|--overwrite`—inclure cette option pour remplacer le fichier XML existant

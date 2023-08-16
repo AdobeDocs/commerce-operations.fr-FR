@@ -32,7 +32,7 @@ Avant de charger des images sur vos sites Commerce, optimisez-les et compressez-
 
 ## Activation et configuration de l’optimisation d’images Fastly
 
-Une fois que vous avez configuré le service Fastly pour votre projet Adobe Commerce Cloud, reportez-vous à la section [Optimisation rapide des images](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) pour obtenir des instructions sur l’activation et la configuration de l’optimisation des images.
+Une fois que vous avez configuré le service Fastly pour votre projet Adobe Commerce Cloud, voir [Optimisation rapide des images](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) pour obtenir des instructions sur l’activation et la configuration de l’optimisation des images.
 
 ## Informations supplémentaires
 

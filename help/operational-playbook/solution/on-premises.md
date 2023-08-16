@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Hébergement sur site
+# Hébergement local
 
 Les solutions d’hébergement basées sur le cloud sont extrêmement populaires et jouent certainement un rôle important dans de nombreuses organisations. Toutefois, l’infrastructure sur site reste une option adéquate pour certaines organisations et commerçants.
 

@@ -16,7 +16,7 @@ Avant de commencer la migration, arrêtez toutes les tâches Magento 1 cron.
 
 Lors du processus de migration, suivez les règles générales suivantes pour réussir la migration :
 
-1. **Ne pas** Apportez des modifications à l’administrateur Magento 1, à l’exception de la gestion des commandes (expédition, création de factures et d’annotations de crédit).
+1. **Ne pas** Apportez des modifications à l’administrateur Magento 1, à l’exception de la gestion des commandes (expédition, création de factures et d’annotations de crédit)
 1. **Ne pas** modifier n’importe quel code ;
 1. **Ne pas** Apportez des modifications à l’administrateur et au storefront de Magento 2.
 
@@ -46,7 +46,7 @@ Cette section explique comment exécuter la variable [!DNL Data Migration Tool] 
 
 1. Pour exécuter des commandes de Magento depuis n’importe quel répertoire, ajoutez `<magento_root>/bin` sur votre système `PATH`.
 
-   Les shells ayant une syntaxe différente, consultez une référence comme [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   Comme les shells ont une syntaxe différente, consultez une référence comme [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
    Exemple de shell bash pour CentOS :
 
@@ -60,7 +60,7 @@ Cette section explique comment exécuter la variable [!DNL Data Migration Tool] 
    - `<magento_root>/bin/magento <command name>`
    - `<magento_root>` est un sous-répertoire de votre serveur web docroot.
 
-### Syntaxe de commande
+### Syntaxe de la commande
 
 Voici un exemple de commande type :
 
@@ -70,7 +70,7 @@ bin/magento migrate:<mode> [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 Où :
 
-- `<mode>` peut être : [`settings`](settings.md), [`data`](data.md)ou [`delta`](delta.md)
+- `<mode>` peut être : [`settings`](settings.md), [`data`](data.md), ou [`delta`](delta.md)
 - `[-r|--reset]` est un argument facultatif qui lance la migration à partir du début. Vous pouvez utiliser cet argument pour tester la migration.
 - `[-a|--auto]` est un argument facultatif qui empêche l’arrêt de la migration lorsqu’elle rencontre des erreurs de vérification d’intégrité.
 - `{<path to config.xml>}` est le chemin d’accès absolu au système de fichiers vers `config.xml`; cet argument est obligatoire.

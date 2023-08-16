@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Cette section répertorie les noms de variable et les chemins de configuration disponibles pour les options dans l’Admin sous **Magasins** > Paramètres > **Configuration** > **Services**.
 
-Le [`magento app:config:dump` command](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle de code source. Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables). Cette rubrique fonctionne _not_ list [valeurs sensibles et spécifiques au système](config-reference-sens.md).
+La variable [`magento app:config:dump` command](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle source. Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables). Cette rubrique fonctionne _not_ list [valeurs sensibles et spécifiques au système](config-reference-sens.md).
 
 ## Chemins des API Web Commerce
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Services** > **API Web**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Services** > **API Web**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -29,7 +29,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Chemins OAuth
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Services** > **OAuth**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Services** > **OAuth**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|

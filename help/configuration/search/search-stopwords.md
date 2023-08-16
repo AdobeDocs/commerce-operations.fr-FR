@@ -20,7 +20,7 @@ Vous devez gérer vos mots-clés à l’aide des fichiers CSV situés dans la va
 
 Pour plus d’informations sur la façon dont Elasticsearch et OpenSearch utilisent les mots-clés, consultez les ressources suivantes :
 
-- [Stopwords : Performances et précision](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
+- [Stopwords : Performance contre précision](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
 - [Avantages et inconvénients des mots-clés](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
 - [Utilisation de mots-clés](https://www.elastic.co/guide/en/elasticsearch/guide/current/using-stopwords.html)
 - [Mots-clés et performances](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords-performance.html)
@@ -47,15 +47,15 @@ La durée de vie par défaut du cache de fichiers des mots-clés est de 15 minut
 1. Enregistrez vos modifications et quittez l’éditeur de texte.
 1. Nettoyez le cache de configuration.
 
-   - Administrateur : **Système** > Outils > **Gestion du cache**. Sélectionnez la **Configuration** et, dans la liste ci-dessus, cliquez sur **Actualiser**. Cliquez sur **Envoyer** pour terminer l’action.
+   - Admin : **Système** > Outils > **Gestion du cache**. Sélectionnez la variable **Configuration** et, dans la liste ci-dessus, cliquez sur **Actualiser**. Cliquez sur **Envoyer** pour terminer l’action.
 
-   - Ligne de commande : En tant que propriétaire du système de fichiers, saisissez la commande suivante :
+   - Ligne de commande : en tant que propriétaire du système de fichiers, saisissez la commande suivante :
 
-      ```bash
-      php <magento_root>/bin/magento cache:clean config
-      ```
+     ```bash
+     php <magento_root>/bin/magento cache:clean config
+     ```
 
-1. Vérifiez les résultats en recherchant les termes sur votre vitrine.
+1. Vérifiez les résultats en recherchant les termes sur votre storefront.
 
 ### Créer des mots-clés pour un nouveau paramètre régional
 
@@ -65,7 +65,7 @@ La durée de vie par défaut du cache de fichiers des mots-clés est de 15 minut
 
 1. Utilisez un éditeur de texte pour créer un fichier de mots-clés nommés `stopwords_<locale_code>.csv` dans le `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` répertoire .
 
-   Par exemple, pour créer des mots de fin pour le paramètre régional Italien, nommez le fichier . `stopwords_it_IT.csv`.
+   Par exemple, pour créer des mots de fin pour la langue italienne, nommez le fichier . `stopwords_it_IT.csv`.
 
 1. Dans votre fichier de mot d’arrêt, assurez-vous que chaque mot d’arrêt se trouve sur une ligne distincte.
 1. Enregistrez vos modifications et quittez l’éditeur de texte.
@@ -85,15 +85,15 @@ La durée de vie par défaut du cache de fichiers des mots-clés est de 15 minut
 1. Enregistrez les modifications dans `esconfig.xml` et quittez l’éditeur de texte.
 1. Nettoyez le cache de configuration.
 
-   - Administrateur : **Système** > Outils > **Gestion du cache**. Sélectionnez la **Configuration** et, dans la liste ci-dessus, cliquez sur **Actualiser**. Cliquez sur **Envoyer** pour terminer l’action.
+   - Admin : **Système** > Outils > **Gestion du cache**. Sélectionnez la variable **Configuration** et, dans la liste ci-dessus, cliquez sur **Actualiser**. Cliquez sur **Envoyer** pour terminer l’action.
 
-   - Ligne de commande : En tant que propriétaire du système de fichiers, saisissez la commande suivante :
+   - Ligne de commande : en tant que propriétaire du système de fichiers, saisissez la commande suivante :
 
-      ```bash
-      php <magento_root>/bin/magento magento cache:clean config
-      ```
+     ```bash
+     php <magento_root>/bin/magento magento cache:clean config
+     ```
 
-1. Vérifiez les résultats en recherchant les termes sur votre vitrine.
+1. Vérifiez les résultats en recherchant les termes sur votre storefront.
 
 ## Modification du répertoire des mots-clés
 
@@ -102,7 +102,7 @@ Cette section explique comment modifier le répertoire de mots-clés par défaut
 - `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`
 - `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/`
 
-L’emplacement dépend de la manière dont vous avez installé le logiciel Commerce. Si vous avez cloné le référentiel GitHub de Magento 2, le chemin d’accès se trouve sous `app/code`. Si vous avez installé une archive compressée ou un métapaquet, le chemin d’accès se trouve sous `vendor`.
+L’emplacement dépend de la manière dont vous avez installé le logiciel Commerce. Si vous avez cloné le référentiel GitHub de Magento 2, le chemin d’accès se trouve sous `app/code`. Si vous avez installé une archive compressée ou un métapaquet, le chemin d’accès est sous `vendor`.
 
 **Pour modifier le répertoire**:
 

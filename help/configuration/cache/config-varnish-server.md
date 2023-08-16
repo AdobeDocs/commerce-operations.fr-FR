@@ -16,10 +16,10 @@ Configurez votre serveur web pour qu’il écoute sur un port autre que le port 
 
 Les sections suivantes utilisent le port 8080 comme exemple.
 
-**Pour modifier le port d’écoute d’Apache 2.4**:
+**Modification du port d’écoute Apache 2.4**:
 
 1. Ouvrir `/etc/httpd/conf/httpd.conf` dans un éditeur de texte.
-1. Recherchez la variable `Listen` .
+1. Recherchez la variable `Listen` de .
 1. Modifiez la valeur du port d’écoute en `8080`. (Vous pouvez utiliser n’importe quel port d’écoute disponible.)
 1. Enregistrez vos modifications dans `httpd.conf` et quittez l’éditeur de texte.
 
@@ -74,7 +74,7 @@ Pour configurer minimalement le vernis :
    }
    ```
 
-1. Remplacer la valeur de `.host` avec le nom d’hôte complet ou l’adresse IP et le port d’écoute du vernis _backend_ ou _serveur d’origine_; en d’autres termes, le serveur fournissant le contenu vernis va accélérer.
+1. Remplacer la valeur de `.host` avec le nom d’hôte complet ou l’adresse IP et le port d’écoute du vernis _backend_ ou _serveur d’origine_ En d’autres termes, le serveur fournissant le contenu vernis va accélérer.
 
    En règle générale, il s’agit de votre serveur web. Voir [Serveurs principaux](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) dans le _Guide en vernis_.
 
@@ -120,10 +120,10 @@ Les sections suivantes expliquent comment vérifier que le vernis fonctionne, ma
 
 Effectuez les tâches décrites dans les sections suivantes dans l’ordre indiqué :
 
-- [Start Varnish](#start-varnish)
+- [Démarrage du vernis](#start-varnish)
 - [`netstat`](#netstat)
 
-### Start Varnish
+### Démarrage du vernis
 
 Entrée : `service varnish start`
 
@@ -185,7 +185,7 @@ XID: 303394517
 Varnish cache server
 ```
 
-Si vous rencontrez cette erreur, modifiez `default.vcl` et ajoutez un délai d’expiration à la variable `backend` stanza comme suit :
+Si vous rencontrez cette erreur, modifiez `default.vcl` et ajoutez un délai d’expiration à la variable `backend` stanza :
 
 ```conf
 backend default {
@@ -244,7 +244,7 @@ L’exemple suivant utilise `curl`. Vous pouvez saisir cette commande depuis n�
 curl -I -v --location-trusted '<your Commerce base URL>'
 ```
 
-Par exemple :
+Par exemple,
 
 ```bash
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'

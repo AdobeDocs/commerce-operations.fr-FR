@@ -22,12 +22,12 @@ Toutes les fonctionnalités (commande asynchrone, calcul total différé et vér
 
 ## Placement de l’ordre asynchrone
 
-Le _Ordre asynchrone_ Le module active le placement de commande asynchrone, qui marque l’ordre comme `received`, place la commande dans une file d’attente et traite les commandes de la file d’attente de la façon &quot;premier entré&quot;. AsyncOrder est **disabled** par défaut.
+La variable _Ordre asynchrone_ Le module active le placement de commande asynchrone, qui marque l’ordre comme `received`, place la commande dans une file d’attente et traite les commandes de la file d’attente de la façon &quot;premier entré&quot;. AsyncOrder est **disabled** par défaut.
 
 Par exemple, un client ajoute un produit à son panier et sélectionne **[!UICONTROL Proceed to Checkout]**. Ils remplissent les **[!UICONTROL Shipping Address]** formulaire, sélectionnez leurs préférences **[!UICONTROL Shipping Method]**, sélectionnez un mode de paiement et passez la commande. Le panier est effacé, la commande est marquée comme **[!UICONTROL Received]**, mais la quantité du produit n’est pas encore ajustée, pas plus qu’un email de vente n’est envoyé au client. La commande est reçue, mais les détails de la commande ne sont pas encore disponibles, car elle n’a pas été entièrement traitée. Il reste dans la file d’attente jusqu’à ce que la fonction `placeOrderProcess` Le consommateur commence, vérifie la commande avec la variable [vérification de stock](#disable-inventory-check) (activée par défaut) et met à jour l’ordre comme suit :
 
-- **Produit disponible**: l’état de la commande passe à _En attente_, la quantité du produit est ajustée, un e-mail contenant les détails de la commande est envoyé au client et les détails de la commande réussie peuvent être affichés dans la variable **Commandes et retours** liste avec des options exploitables, telles que réorganiser.
-- **Produit en rupture de stock ou faible approvisionnement**: l’état de la commande passe à _Rejetés_, la quantité de produit n’est pas ajustée, un e-mail contenant des détails sur la commande est envoyé au client et les détails de la commande rejetée sont disponibles dans la variable **Commandes et retours** liste sans options exploitables.
+- **Produit disponible**: l’état de la commande passe à _En attente_, la quantité du produit est ajustée, un e-mail contenant les détails de la commande est envoyé au client et les détails de la commande réussie peuvent être affichés dans la variable **Commandes et renvoie** liste avec des options exploitables, telles que réorganiser.
+- **Produit en rupture de stock ou faible approvisionnement**: l’état de la commande passe à _Rejetés_, la quantité de produit n’est pas ajustée, un e-mail contenant des détails sur la commande est envoyé au client et les détails de la commande rejetée sont disponibles dans la variable **Commandes et renvoie** liste sans options exploitables.
 
 Utilisez l’interface de ligne de commande pour activer ces fonctionnalités ou modifiez la variable `app/etc/env.php` en fonction des fichiers LISEZMOI correspondants définis dans la variable [_Guide de référence du module_][mrg].
 
@@ -39,7 +39,7 @@ Vous pouvez activer AsyncOrder à l’aide de l’interface de ligne de commande
 bin/magento setup:config:set --checkout-async 1
 ```
 
-Le `set` La commande écrit ce qui suit dans la fonction `app/etc/env.php` fichier :
+La variable `set` La commande écrit ce qui suit dans la fonction `app/etc/env.php` fichier :
 
 ```conf
 ...
@@ -62,7 +62,7 @@ Vous pouvez désactiver AsyncOrder à l’aide de l’interface de ligne de comm
 bin/magento setup:config:set --checkout-async 0
 ```
 
-Le `set` La commande écrit ce qui suit dans la fonction `app/etc/env.php` fichier :
+La variable `set` La commande écrit ce qui suit dans la fonction `app/etc/env.php` fichier :
 
 ```conf
 ...
@@ -77,7 +77,7 @@ AsyncOrder prend en charge un ensemble limité de [!DNL Commerce] fonctions.
 
 | Catégorie | Fonctionnalité prise en charge |
 |------------------|--------------------------------------------------------------------------|
-| Types de passage en caisse | Passage en caisse sur une seule page<br>Passage en caisse standard<br>Devis négociable B2B |
+| Types de passage en caisse | Extraction sur une page<br>Passage en caisse standard<br>Devis négociable B2B |
 | Modes de paiement | Commande d’archivage/d’argent<br>Espèces à la livraison<br>Braintree<br>PayPal PayFlow Pro |
 | Méthodes de livraison | Toutes les méthodes de livraison sont prises en charge. |
 
@@ -97,7 +97,7 @@ Lorsque le module AsyncOrder est activé, les points de terminaison REST suivant
 - `POST /V1/guest-carts/:cartId/payment-information`
 - `POST /V1/negotiable-carts/:cartId/payment-information`
 
-**GraphQL :**
+**GRAPHQL :**
 
 - [`placeOrder`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/place-order.html)
 - [`setPaymentMethodAndPlaceOrder`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/set-payment-place-order.html)
@@ -112,11 +112,11 @@ Les développeurs peuvent exclure explicitement certaines méthodes de paiement 
 
 ### Ordre asynchrone des citations négociables
 
-Le _Ordre asynchrone des citations négociables_ Le module B2B vous permet d’enregistrer les éléments de commande de manière asynchrone pour le `NegotiableQuote` . AsyncOrder et NégociableQuote doivent être activés.
+La variable _Ordre asynchrone des citations négociables_ Le module B2B vous permet d’enregistrer les éléments de commande de manière asynchrone pour le `NegotiableQuote` . AsyncOrder et NégociableQuote doivent être activés.
 
 ## Calcul total différé
 
-Le _Calcul total différé_ optimise le processus de passage en caisse en différant le calcul total jusqu’à ce qu’il soit demandé pour le panier ou lors des étapes finales de passage en caisse. Lorsqu’il est activé, seul le sous-total est calculé lorsqu’un client ajoute des produits au panier.
+La variable _Calcul total différé_ optimise le processus de passage en caisse en différant le calcul total jusqu’à ce qu’il soit demandé pour le panier ou lors des étapes finales de passage en caisse. Lorsqu’il est activé, seul le sous-total est calculé lorsqu’un client ajoute des produits au panier.
 
 DeferredTotalCalcul **disabled** par défaut. Utilisez l’interface de ligne de commande pour activer ces fonctionnalités ou modifiez la variable `app/etc/env.php` en fonction des fichiers LISEZMOI correspondants définis dans la variable [_Guide de référence du module_][mrg].
 
@@ -128,7 +128,7 @@ Vous pouvez activer DeferredTotalCalcul à l’aide de l’interface de ligne de
 bin/magento setup:config:set --deferred-total-calculating 1
 ```
 
-Le `set` La commande écrit ce qui suit dans la fonction `app/etc/env.php` fichier :
+La variable `set` La commande écrit ce qui suit dans la fonction `app/etc/env.php` fichier :
 
 ```conf
 ...
@@ -145,7 +145,7 @@ Vous pouvez désactiver DeferredTotalCalcul à l’aide de l’interface de lign
 bin/magento setup:config:set --deferred-total-calculating 0
 ```
 
-Le `set` La commande écrit ce qui suit dans la fonction `app/etc/env.php` fichier :
+La variable `set` La commande écrit ce qui suit dans la fonction `app/etc/env.php` fichier :
 
 ```conf
 ...
@@ -162,7 +162,7 @@ Lorsque DeferredTotalCalcul est activé, la taxe sur les produits fixes (FPT) n�
 
 ## Désactiver la vérification du stock
 
-Le _Activation de l’inventaire au chargement du panier_ paramètre global détermine s’il faut effectuer une vérification de stock lors du chargement d’un produit dans le panier. La désactivation du processus de vérification des stocks améliore les performances de toutes les étapes de passage en caisse, en particulier lorsque vous traitez des produits en vrac dans le panier.
+La variable _Activation de l’inventaire au chargement du panier_ paramètre global détermine s’il faut effectuer une vérification de stock lors du chargement d’un produit dans le panier. La désactivation du processus de vérification des stocks améliore les performances de toutes les étapes de passage en caisse, en particulier lorsque vous traitez des produits en vrac dans le panier.
 
 Lorsque cette option est désactivée, la vérification de stock ne se produit pas lors de l’ajout d’un produit au panier. Si cette vérification de stock est ignorée, certains scénarios en rupture de stock peuvent générer d’autres types d’erreurs. Vérification de stock _always_ se produit à l’étape d’emplacement de la commande, même lorsqu’elle est désactivée.
 
@@ -172,7 +172,7 @@ Lorsque cette option est désactivée, la vérification de stock ne se produit p
 
 Vous pouvez équilibrer la charge entre les différents noeuds en activant les connexions secondaires pour la base de données MySQL et l’instance Redis.
 
-Adobe Commerce peut lire plusieurs bases de données ou instances Redis de manière asynchrone. Si vous utilisez Commerce sur l’infrastructure cloud, vous pouvez configurer les connexions secondaires en modifiant la variable [MYSQL_USE_SECONDAIRE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) et [REDIS_USE_SECONDAIRE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) dans la variable `.magento.env.yaml` fichier . Un seul noeud doit gérer le trafic de lecture-écriture. Par conséquent, la définition des variables sur `true` entraîne la création d’une connexion secondaire pour le trafic en lecture seule. Définissez les valeurs sur `false` pour supprimer tout tableau de connexion en lecture seule existant du `env.php` fichier .
+Adobe Commerce peut lire plusieurs bases de données ou instances Redis de manière asynchrone. Si vous utilisez Commerce sur l’infrastructure cloud, vous pouvez configurer les connexions secondaires en modifiant la variable [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) et [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) dans la variable `.magento.env.yaml` fichier . Un seul noeud doit gérer le trafic de lecture-écriture. Par conséquent, la définition des variables sur `true` crée une connexion secondaire pour le trafic en lecture seule. Définissez les valeurs sur `false` pour supprimer tout tableau de connexion en lecture seule existant du `env.php` fichier .
 
 Exemple de `.magento.env.yaml` fichier :
 

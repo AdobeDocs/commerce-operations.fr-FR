@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Optimisation du moteur de recherche (SEO)
 
-L’optimisation du moteur de recherche (SEO) est un outil qui vous permet d’optimiser votre site web en fonction de mots-clés spécifiques afin que le site soit classé plus haut dans les résultats de recherche Google. Google classe les sites web selon que la marque a répondu à toutes les questions de recherche posées par les clients. Lorsque les clients effectuent des recherches dans Google, ils trouvent différents types de résultats. Les sections suivantes décrivent ces résultats.
+L’optimisation du moteur de recherche (SEO) est un outil qui vous permet d’optimiser votre site web en fonction de mots-clés spécifiques afin que le site soit classé plus haut dans les résultats de recherche Google. Google classe les sites web en fonction de la réponse de la marque à toutes les questions de recherche posées par les clients. Lorsque les clients effectuent des recherches dans Google, ils trouvent différents types de résultats. Les sections suivantes décrivent ces résultats.
 
 ## Non payé
 
@@ -38,9 +38,9 @@ La stratégie d’optimisation pour les moteurs de recherche comprend :
 
 - **Architecture du site**: la recherche est effectuée sur les mots-clés.
 
-- **SEO (technique)**: veiller à ce que l’optimisation du référencement analyse le site ;
+- **SEO (technique)**: assurer que l’optimisation du référencement analyse le site
 
-- **SEO sur la page**: les balises META et le contenu sont utilisés pour attirer les clients.
+- **SEO sur la page**: les balises META et le contenu sont utilisés pour attirer les clients
 
 - **Analytics**: les outils, tels que les Google Analytics, sont utilisés pour effectuer le suivi de l’optimisation pour les moteurs de recherche.
 

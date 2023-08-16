@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bonne pratique pour la taille de mémoire OPcache dans Adobe Commerce
 
-Pour Adobe Commerce sur l’infrastructure cloud Pro, il est recommandé de définir la variable `opcache.memory_consumption` à au moins 2 Go pour éviter une dégradation des performances.
+Pour Adobe Commerce sur l’infrastructure cloud Architecture 2.3.x de plan Pro, il est recommandé de définir `opcache.memory_consumption` à au moins 2 Go pour éviter une dégradation des performances.
 
 ## Produits et versions concernés
 
@@ -30,4 +30,4 @@ Allouer au moins **2 Go** de la mémoire pour le [Module PHP OPcache](https://ww
 * [Configuration des options PHP](https://devdocs.magento.com/cloud/project/project-conf-files_magento-app.html#customize-phpini-settings)
 * [Bonnes pratiques relatives aux bases de données pour Adobe Commerce sur l’infrastructure cloud](database-on-cloud.md)
 * [Problèmes de base de données les plus courants dans Adobe Commerce sur l’infrastructure cloud](../maintenance/resolve-database-performance-issues.md)
-* [Les indexeurs &quot;Mettre à jour selon le calendrier&quot; optimisent les performances d’Adobe Commerce](../maintenance/indexer-configuration.md)
+* [Les indexeurs &quot;Mise à jour selon le calendrier&quot; optimisent les performances d’Adobe Commerce](../maintenance/indexer-configuration.md)

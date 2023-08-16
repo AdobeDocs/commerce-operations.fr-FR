@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Contributions de la communauté
 
-| Membre de la communauté contribuant | Requêtes de tirage | Problèmes GitHub connexes |
+| Contribuer aux membres de la communauté | Requêtes de tirage | Problèmes GitHub connexes |
 | ------- | ------- | ------- |
 | hostep | [magento/magento2#30640](https://github.com/magento/magento2/pull/30640) | [magento/magento2#30607](https://github.com/magento/magento2/issues/30607) |
 | nuzil | [magento/magento2#31944](https://github.com/magento/magento2/pull/31944) | [magento/magento2#31947](https://github.com/magento/magento2/issues/31947) |

@@ -7,7 +7,7 @@ ht-degree: 12%
 ---
 # Contributions de la communauté
 
-| Membre de la communauté contribuant | Requêtes de tirage | Problèmes GitHub connexes |
+| Contribuer aux membres de la communauté | Requêtes de tirage | Problèmes GitHub connexes |
 | ------- | ------- | ------- |
 | Eden Duong | [#25905](https://github.com/magento/magento2/pull/25905) | N/A |
 | Ajith | [#25808](https://github.com/magento/magento2/pull/25808) | N/A |
@@ -256,7 +256,7 @@ ht-degree: 12%
 | Edouard Chitoraga | [#26496](https://github.com/magento/magento2/pull/26496) | N/A |
 | Alexander Taranovski | [#26476](https://github.com/magento/magento2/pull/26476) | N/A |
 | Erfan Shamabadi | [#26462](https://github.com/magento/magento2/pull/26462) | N/A |
-| Michele Fantetti | [#26451](https://github.com/magento/magento2/pull/26451) | N/A |
+| Michael Fantetti | [#26451](https://github.com/magento/magento2/pull/26451) | N/A |
 | Karyna Tsymbal | [#26430](https://github.com/magento/magento2/pull/26430) | N/A |
 | Karyna Tsymbal | [#26399](https://github.com/magento/magento2/pull/26399) | [26332](https://github.com/magento/magento2/issues/26332) |
 | Paavo Pokkinen | [#26213](https://github.com/magento/magento2/pull/26213) | N/A |
@@ -292,7 +292,7 @@ ht-degree: 12%
 | toxix | [#25488](https://github.com/magento/magento2/pull/25488) | [25487](https://github.com/magento/magento2/issues/25487) |
 | Nikita Sarychev | [#25249](https://github.com/magento/magento2/pull/25249) | N/A |
 | vishal-webkul | [#25246](https://github.com/magento/magento2/pull/25246) | [25245](https://github.com/magento/magento2/issues/25245) |
-| adrian-martinez-interactive4 | [#24843](https://github.com/magento/magento2/pull/24843) | [24842](https://github.com/magento/magento2/issues/24842) |
+| adrian-martinez-interactiv4 | [#24843](https://github.com/magento/magento2/pull/24843) | [24842](https://github.com/magento/magento2/issues/24842) |
 | Sathish Subramanian | [#26820](https://github.com/magento/magento2/pull/26820) | N/A |
 | Karyna Tsymbal | [#26816](https://github.com/magento/magento2/pull/26816) | N/A |
 | Ajith | [#26771](https://github.com/magento/magento2/pull/26771) | N/A |
@@ -447,7 +447,7 @@ ht-degree: 12%
 | Lukasz Bajsarowicz | [#27292](https://github.com/magento/magento2/pull/27292) | N/A |
 | Vasilii Burlacu | [#27263](https://github.com/magento/magento2/pull/27263) | [26708](https://github.com/magento/magento2/issues/26708) |
 | Lukasz Bajsarowicz | [#27214](https://github.com/magento/magento2/pull/27214) | N/A |
-| Michele Fantetti | [#27116](https://github.com/magento/magento2/pull/27116) | N/A |
+| Michael Fantetti | [#27116](https://github.com/magento/magento2/pull/27116) | N/A |
 | Antonino Bonumore | [#26748](https://github.com/magento/magento2/pull/26748) | [26745](https://github.com/magento/magento2/issues/26745) |
 | Bartłomiej Szubert | [#26923](https://github.com/magento/magento2/pull/26923) | [186](https://github.com/magento/magento2/issues/186) |
 | Andrii Beziazychnyi | [#27390](https://github.com/magento/magento2/pull/27390) | N/A |
@@ -460,7 +460,7 @@ ht-degree: 12%
 | Lukasz Bajsarowicz | [#27000](https://github.com/magento/magento2/pull/27000) | N/A |
 | Tjitse | [#26538](https://github.com/magento/magento2/pull/26538) | N/A |
 | Pavel Bystritski | [#25664](https://github.com/magento/magento2/pull/25664) | [25540](https://github.com/magento/magento2/issues/25540) |
-| Alexander Taranovski | [#22011](https://github.com/magento/magento2/pull/22011) | [2010](https://github.com/magento/magento2/issues/22010) |
+| Alexander Taranovski | [#22011](https://github.com/magento/magento2/pull/22011) | [22010](https://github.com/magento/magento2/issues/22010) |
 | Lukasz Bajsarowicz | [#27378](https://github.com/magento/magento2/pull/27378) | N/A |
 | Nirav Patel | [#26055](https://github.com/magento/magento2/pull/26055) | [22363](https://github.com/magento/magento2/issues/22363) |
 | Sérieusement Vasiutynskyi | [#27412](https://github.com/magento/magento2/pull/27412) | [13689](https://github.com/magento/magento2/issues/13689) |

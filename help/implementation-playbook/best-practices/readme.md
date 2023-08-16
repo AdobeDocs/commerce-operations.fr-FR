@@ -5,15 +5,15 @@ source-wordcount: '639'
 ht-degree: 0%
 
 ---
-# Bonnes pratiques : Workflow de création de contenu
+# Bonnes pratiques : workflow de création de contenu
 
-Ce document décrit le processus utilisateur pour demander des modifications ou des ajouts au *[Bonnes pratiques](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html)* dans le *Manuel de mise en oeuvre Adobe Commerce*.
+Ce document décrit le processus utilisateur pour demander des modifications ou des ajouts au *[Bonnes pratiques](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html* dans le *Manuel de mise en oeuvre Adobe Commerce*.
 
 ## Qui peut créer une requête ?
 
 Adobe accepte les demandes des parties prenantes internes et externes, y compris, mais sans s’y limiter, des personnes des groupes suivants :
 
-- Partenaires Adobe
+- Partenaires en Adobe
 - Adobe CTAG (Groupe consultatif technique client), service clientèle, succès client, équipes d’ingénierie
 
 ## Comment créer une requête ?
@@ -45,6 +45,6 @@ Une fois un article approuvé, la requête de tirage peut être fusionnée avec 
 
 ## Arborescence et panorama Kanban
 
-Pour éviter la duplication, les requêtes créées et classées par priorité seront visibles dans le journal Jira du projet COMDOX et [Projet Problèmes GitHub](https://github.com/orgs/AdobeDocs/projects/6/views/1). Les parties prenantes internes sont encouragées à s&#39;engager avec le système électoral de Jira pour voter les demandes qu&#39;elles jugent nécessaires ou pertinentes. Le vote permet également à l’équipe de projet Bonnes pratiques de comprendre le type de contenu auquel les parties prenantes s’attendent et dont ils apprécient le contenu. Les demandes en attente de hiérarchisation et de révision sont affichées dans le journal des travaux en souffrance jusqu’à ce qu’elles soient déplacées sur les principales voies du panorama Kanban.
+Pour éviter la duplication, les requêtes créées et classées par priorité seront visibles dans le journal Jira du projet COMDOX et [Projet Problèmes GitHub](https://github.com/orgs/AdobeDocs/projects/6/views/1). Les parties prenantes internes sont encouragées à s&#39;engager avec le système électoral de Jira pour voter les demandes qu&#39;elles jugent nécessaires ou pertinentes. Le vote permet également à l’équipe de projet Bonnes pratiques de comprendre le type de contenu auquel les parties prenantes s’attendent et dont ils apprécient le contenu. Les requêtes en attente de hiérarchisation et de révision sont affichées dans le journal des travaux en souffrance jusqu’à ce qu’elles soient déplacées vers les voies actives dans le panorama Kanban.
 
-Le panorama Kanban est accessible par les utilisateurs internes pour voir (et/ou surveiller) quel contenu est en cours de traitement et quelle est la progression. Seules les demandes principales s’affichent sur ce panorama.
+Le panorama Kanban est accessible par les utilisateurs internes pour voir (et/ou surveiller) quel contenu est en cours de traitement et quelle est la progression. Seules les requêtes actives s’affichent sur ce panorama.

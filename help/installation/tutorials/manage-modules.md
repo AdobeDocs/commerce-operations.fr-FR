@@ -1,13 +1,13 @@
 ---
 title: Activation ou désactivation des modules
 description: Pour gérer les modules Adobe Commerce ou Magento Open Source, procédez comme suit.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 0%
 
 ---
-
 
 # Activation ou désactivation des modules
 
@@ -42,13 +42,13 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 Où
 
 * `<module-list>` est une liste de modules délimitée par des espaces à activer ou désactiver. Si un nom de module contient des caractères spéciaux, placez le nom entre guillemets simples ou doubles.
-* `--all` pour activer ou désactiver tous les modules en même temps.
+* `--all` pour activer ou désactiver tous les modules simultanément.
 * `-f` ou `--force` pour forcer l’activation ou la désactivation d’un module malgré les dépendances. Avant d’utiliser cette option, voir [A propos de l&#39;activation et de la désactivation des modules](#about-enabling-and-disabling-modules).
 * `-c` ou `--clear-static-content` cleans [fichiers d’affichage statique générés](../../configuration/cli/static-view-file-deployment.md).
 
-   Si vous n’effacez pas les fichiers d’affichage statique, des problèmes peuvent se produire s’il existe plusieurs fichiers portant le même nom et que vous ne les effacez pas tous.
+  Si vous n’effacez pas les fichiers d’affichage statique, des problèmes peuvent se produire s’il existe plusieurs fichiers portant le même nom et que vous ne les effacez pas tous.
 
-   En d’autres termes, à cause de la variable [secours de fichier statique](../../configuration/cli/static-view-file-deployment.md) règles, si vous n’effacez pas les fichiers statiques et qu’il existe plusieurs fichiers nommés `logo.svg` qui sont différents, la solution de secours peut entraîner l’affichage d’un fichier incorrect.
+  En d’autres termes, à cause de la variable [secours de fichier statique](../../configuration/cli/static-view-file-deployment.md) règles, si vous n’effacez pas les fichiers statiques et qu’il existe plusieurs fichiers nommés `logo.svg` qui sont différents, la solution de secours peut entraîner l’affichage d’un fichier incorrect.
 
 Par exemple, pour désactiver la variable `Magento_Weee` module, saisissez :
 
@@ -74,11 +74,11 @@ bin/magento cache:clean
 
 ## A propos de l&#39;activation et de la désactivation des modules
 
-Adobe Commerce et Magento Open Source vous permettent d’activer ou de désactiver les modules actuellement disponibles. en d’autres termes, tout module fourni par l’Adobe ou tout module tiers actuellement disponible.
+Adobe Commerce et Magento Open Source vous permettent d’activer ou de désactiver les modules actuellement disponibles, c’est-à-dire tout module fourni par l’Adobe ou tout module tiers actuellement disponible.
 
 Certains modules ont des dépendances sur d’autres modules, auquel cas vous ne pourrez pas activer ou désactiver un module car il a des dépendances sur d’autres modules.
 
-En outre, il peut y avoir *conflit* modules qui ne peuvent pas être activés simultanément.
+En outre, il peut y avoir *conflit* modules qui ne peuvent pas être activés en même temps.
 
 Exemples :
 

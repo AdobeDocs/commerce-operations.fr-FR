@@ -7,7 +7,7 @@ ht-degree: 12%
 ---
 # Contributions de la communauté
 
-| Membre de la communauté contribuant | Requêtes de tirage | Problèmes GitHub connexes |
+| Contribuer aux membres de la communauté | Requêtes de tirage | Problèmes GitHub connexes |
 | ------- | ------- | ------- |
 | [dhaecker](https://github.com/dhaecker) | [#31045](https://github.com/magento/magento2/pull/31045) |  |
 | [sagar1dahiwala](https://github.com/sagar1dahiwala) | [#31101](https://github.com/magento/magento2/pull/31101) | [501](https://github.com/magento/magento2/issues/501) |

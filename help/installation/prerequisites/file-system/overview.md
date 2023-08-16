@@ -1,13 +1,13 @@
 ---
 title: Propriété de fichier et autorisations
 description: Découvrez l’importance des autorisations du système de fichiers lors de l’utilisation d’installations sur site d’Adobe Commerce et de Magento Open Source.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
 
 ---
-
 
 # Propriété de fichier et autorisations
 
@@ -21,16 +21,17 @@ Il existe deux types de propriétaires de système de fichiers :
 
 - **Hébergement partagé avec un seul utilisateur**
 
-   Les fournisseurs d’hébergement partagés vous permettent de vous connecter au serveur d’applications en tant qu’utilisateur unique. En tant qu’utilisateur unique, vous pouvez vous connecter, transférer des fichiers par FTP et exécuter le serveur web. Vous avez la possibilité de définir une [`umask`](#restrict-access-with-a-umask) afin de restreindre davantage l&#39;accès, notamment dans un environnement de production.
+  Les fournisseurs d’hébergement partagés vous permettent de vous connecter au serveur d’applications en tant qu’utilisateur unique. En tant qu’utilisateur unique, vous pouvez vous connecter, transférer des fichiers par FTP et exécuter le serveur web. Vous avez la possibilité de définir une [`umask`](#restrict-access-with-a-umask) afin de restreindre davantage l&#39;accès, notamment dans un environnement de production.
 
 - **Hébergement privé avec deux utilisateurs**
 
-   L’hébergement privé est utile si vous gérez un serveur d’applications. Chaque utilisateur a une responsabilité spécifique :
+  L’hébergement privé est utile si vous gérez un serveur d’applications. Chaque utilisateur a une responsabilité spécifique :
 
-   - Le _utilisateur du serveur web_ exécute l’administrateur et le storefront.
+   - La variable _utilisateur du serveur web_ exécute l’administrateur et le storefront.
 
-   - Le _utilisateur de ligne de commande_ exécute les tâches cron et les utilitaires de ligne de commande.
-   Les deux utilisateurs requièrent les mêmes autorisations pour le système de fichiers. Il est donc préférable d’utiliser une [groupe partagé](configure-permissions.md#set-ownership-and-permissions-for-two-users) et définissez une [`umask`](#restrict-access-with-a-umask).
+   - La variable _utilisateur de ligne de commande_ exécute les tâches cron et les utilitaires de ligne de commande.
+
+  Les deux utilisateurs requièrent les mêmes autorisations pour le système de fichiers. Il est donc préférable d’utiliser une [groupe partagé](configure-permissions.md#set-ownership-and-permissions-for-two-users) et définissez une [`umask`](#restrict-access-with-a-umask).
 
 ### Limitation de l’accès avec un masque
 

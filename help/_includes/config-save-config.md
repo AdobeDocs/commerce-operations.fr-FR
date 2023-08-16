@@ -43,7 +43,7 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >Do _not_ d’envoyer les modifications au `generated`, `pub/media`ou `pub/static` répertoires vers le contrôle source. Vous générez ces fichiers sur votre système de génération. Le système de développement comporte probablement du code, des thèmes, etc., qui ne sont pas prêts à être utilisés dans le système de production.
+   >Do _not_ d’envoyer les modifications au `generated`, `pub/media`, ou `pub/static` répertoires vers le contrôle source. Vous générez ces fichiers sur votre système de génération. Le système de développement comporte probablement du code, des thèmes, etc., qui ne sont pas prêts à être utilisés dans le système de production.
 
 1. Archivez vos modifications dans `app/etc/config.php` uniquement au contrôle de code source.
 

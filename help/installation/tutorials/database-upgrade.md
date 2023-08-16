@@ -1,13 +1,13 @@
 ---
 title: Mise à niveau du schéma et des données de la base de données
 description: Procédez comme suit pour mettre à niveau votre schéma de base de données Adobe Commerce ou Magento Open Source.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: bef04561-6c6b-4636-a8ab-a1ade44f5a8f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
 
 ---
-
 
 # Mise à niveau du schéma et des données de la base de données
 
@@ -23,7 +23,7 @@ Chaque fois que vous effectuez une action qui entraîne la modification du sché
 
 >[!NOTE]
 >
->A *component* peut être un module, un thème ou un module de langue ; peu importe que le composant provienne ou non du Commerce Marketplace.
+>A *component* peut être un module, un thème ou un module de langue ; peu importe que le composant vienne du Commerce Marketplace ou non.
 
 1. Démarrez la mise à niveau :
 

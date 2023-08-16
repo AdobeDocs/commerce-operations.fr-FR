@@ -15,7 +15,7 @@ ht-degree: 0%
 Vous pouvez disposer d’un système de génération qui répond aux exigences suivantes :
 
 - L’ensemble du code Commerce est contrôlé par la source dans le même référentiel que les systèmes de développement et de production.
-- Assurez-vous que tous les éléments suivants sont : _included_ dans le contrôle de code source :
+- Assurez-vous que tous les éléments suivants sont _included_ dans le contrôle de code source :
 
    - `app/etc/config.php`
    - `generated` répertoire (et sous-répertoires)
@@ -30,7 +30,7 @@ Vous pouvez disposer d’un système de génération qui répond aux exigences s
 
 >[!WARNING]
 >
->La connexion à la base de données n’est pas requise si elle est déjà contenue dans `config.php`; see [Exporter la configuration](../cli/export-configuration.md). Sinon, la connexion à la base de données est requise.
+>La connexion à la base de données n’est pas requise si elle est déjà contenue dans `config.php`; voir [Exporter la configuration](../cli/export-configuration.md). Sinon, la connexion à la base de données est requise.
 
 >[!INFO]
 >
@@ -67,7 +67,7 @@ Pour installer le compositeur :
    mv composer.phar /usr/local/bin/composer
    ```
 
-Pour connaître les autres options d’installation, voir [Documentation d’installation du compositeur][composer].
+Pour connaître les autres options d’installation, voir [Documentation sur l’installation du compositeur][composer].
 
 ### Installer PHP
 
@@ -99,7 +99,7 @@ Pour configurer le système de génération :
    chown -R <Commerce file system owner name>:<web server username> .
    ```
 
-   Par exemple :
+   Par exemple,
 
    ```bash
    chown -R commerce-username:apache .

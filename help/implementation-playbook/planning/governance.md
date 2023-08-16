@@ -14,7 +14,7 @@ ht-degree: 0%
 
 La gouvernance du projet est une fonction de surveillance alignée sur la structure de gouvernance de l’organisation et qui englobe le cycle de vie du projet. Il fournit au chef de projet et à l’équipe la structure, les processus, les modèles de prise de décision et les outils pour gérer et contrôler le projet, tout en assurant la réussite de la livraison du projet. La gouvernance de projet est un élément essentiel, en particulier pour les projets complexes et stratégiques.
 
-Le modèle de gouvernance définit, documente et communique des pratiques personnalisées et efficaces afin de fournir une méthode complète de contrôle du projet et de fournir une visibilité périodique à tous les niveaux pour garantir la réussite. Il contient un cadre pour la prise de décisions; définit les rôles, les responsabilités et les responsabilités pour la réalisation du projet; et détermine l&#39;efficacité. La structure de gouvernance s’étend de l’équipe d’exécution jusqu’à la direction, en définissant les activités, le reporting, la réaffectation et le flux d’informations.
+Le modèle de gouvernance définit, documente et communique des pratiques personnalisées et efficaces afin de fournir une méthode complète de contrôle du projet et de fournir une visibilité périodique à tous les niveaux pour garantir la réussite. Il contient un cadre pour prendre des décisions, définit les rôles, les responsabilités et les responsabilités pour la réalisation du projet et détermine l&#39;efficacité. La structure de gouvernance s’étend de l’équipe d’exécution jusqu’à la direction, en définissant les activités, le reporting, la réaffectation et le flux d’informations.
 
 ![Infographie de gouvernance du projet](../../assets/playbooks/project-governance.svg)
 
@@ -36,7 +36,7 @@ Le modèle de gouvernance définit, documente et communique des pratiques person
 
    - Prise de décision sur les principaux éléments d’impact (le cas échéant)
 
-   - Il permet de s’assurer que la satisfaction et les préoccupations des clients sont enregistrées et prises en compte.
+   - Elles veillent à ce que la satisfaction et les préoccupations des clients soient consignées et prises en compte
 
 - Comité de projet hebdomadaire
 
@@ -97,7 +97,7 @@ Des défis ou des changements se produisent tout au long de la durée d’un pro
   <tr>
     <td>Efficacité des tests</td>
     <td>%</td>
-    <td>Défauts valides surmontés/défauts valides surmontés</td>
+    <td>Défauts valides surmontés/Défauts valides surlignés défauts rejetés</td>
   </tr>
   <tr>
     <td>Qualité du code</td>

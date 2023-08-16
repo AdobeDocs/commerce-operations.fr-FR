@@ -14,14 +14,14 @@ ht-degree: 0%
 
 Pour éviter [détournement de clic](https://owasp.org/www-community/attacks/Clickjacking) exploits, nous avons ajouté une option pour utiliser la variable [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) En-tête de requête HTTP dans les requêtes à votre storefront.
 
-Le `X-Frame-Options` L’en-tête vous permet de spécifier si un navigateur doit être autorisé à effectuer le rendu d’une page dans une `<frame>`, `<iframe>`ou `<object>` comme suit :
+La variable `X-Frame-Options` L’en-tête vous permet de spécifier si un navigateur doit être autorisé à effectuer le rendu d’une page dans une `<frame>`, `<iframe>`, ou `<object>` comme suit :
 
-- `DENY`: La page ne peut pas être affichée dans un cadre.
-- `SAMEORIGIN`: (par défaut) La page ne peut être affichée que dans un cadre de la même origine que la page elle-même.
+- `DENY`: la page ne peut pas être affichée dans un cadre.
+- `SAMEORIGIN`: (par défaut) la page ne peut être affichée que dans un cadre de la même origine que la page elle-même.
 
 >[!WARNING]
 >
->Le `ALLOW-FROM <uri>` Cette option a été abandonnée, car les navigateurs pris en charge par Commerce ne la prennent plus en charge. Voir [Compatibilité du navigateur](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options#browser_compatibility).
+>La variable `ALLOW-FROM <uri>` Cette option a été abandonnée, car les navigateurs pris en charge par Commerce ne la prennent plus en charge. Voir [Compatibilité du navigateur](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options#browser_compatibility).
 
 >[!WARNING]
 >
@@ -39,7 +39,7 @@ Redéployez pour toute modification apportée à la fonction `env.php` pour qu�
 
 >[!TIP]
 >
->Il est plus sécurisé de modifier la variable `env.php` plutôt que de définir une valeur dans Admin.
+>La modification de la variable `env.php` plutôt que de définir une valeur dans Admin.
 
 ## Vérifiez votre paramètre pour `X-Frame-Options`
 

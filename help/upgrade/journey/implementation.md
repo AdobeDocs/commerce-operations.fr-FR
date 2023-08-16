@@ -1,13 +1,13 @@
 ---
 title: Mise à niveau
 description: Découvrez les différentes phases de mise en oeuvre de la mise à niveau pour les projets Adobe Commerce.
-source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
+exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 1%
 
 ---
-
 
 # Mise à niveau
 
@@ -27,36 +27,36 @@ Vous trouverez ci-dessous des éléments que vous pouvez inclure dans une analys
 
 - **Portée de la version cible**—Documentation sur [Experience League](../../release/release-notes/overview.md) et les informations des webinaires de version des partenaires fournissent tous les détails que vous devez connaître sur votre mise à niveau vers target.
 
-- **[!DNL Upgrade Compatibility Tool]résultats**—Cet outil facilite toute mise à niveau en comparant votre code actuel au code de la version cible et en produisant un rapport de tous les problèmes qui doivent être résolus. Voir [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Voici les principaux détails du rapport :
+- **[!DNL Upgrade Compatibility Tool]résultats**—Cet outil facilite toute mise à niveau en comparant votre code actuel au code de la version cible et en produisant un rapport de tous les problèmes qui doivent être résolus. Voir [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Les détails clés du rapport sont les suivants :
 
    - Version installée actuelle
    - Mise à niveau de la version cible
    - Nombre et détails des erreurs critiques détectées
 
-- Mise à niveau des services pour la prise en charge de la version cible. Utilisez le modèle de tableau suivant pour déterminer les services à mettre à niveau. Utilisez la variable [configuration requise](../../installation/system-requirements.md) pour déterminer les éléments à ajouter à la variable _Mettre à niveau vers_ colonne .
+- Mise à niveau des services pour prendre en charge la version cible. Utilisez le modèle de tableau suivant pour déterminer les services à mettre à niveau. Utilisez la variable [configuration requise](../../installation/system-requirements.md) pour déterminer les éléments à ajouter à la variable _Mettre à niveau vers_ colonne .
 
 
-   | Service | Version actuelle | Mettre à niveau vers | Remarques |
-   |-----------------|-----------------|------------|----------------------------------------------------------|
-   | PHP | 7.4 | 8.1 |  |
-   | Redis | 6.0 | 6.2 |  |
-   | [!DNL RabbitMQ] | 3.8 | 3.9 | Non utilisé actuellement, mais nous devrions envisager de l’utiliser |
-   | MariaDB (Cloud) | 10.4 | 10.6 |  |
-   | MySQL | 8.0 | -/-/ |  |
-   | Compositeur | 1.9.2 | 2.2 |  |
-   | Elasticsearch | 7.10 | 7.17 |  |
+  | Service | Version actuelle | Mettre à niveau vers | Remarques |
+  |-----------------|-----------------|------------|----------------------------------------------------------|
+  | PHP | 7.4 | 8.1 |                                                          |
+  | Redis | 6.0 | 6.2 |                                                          |
+  | [!DNL RabbitMQ] | 3.8 | 3.9 | Non utilisé actuellement, mais nous devrions envisager de l’utiliser |
+  | MariaDB (Cloud) | 10.4 | 10.6 |                                                          |
+  | MySQL | 8.0 | -/-/ |                                                          |
+  | Compositeur | 1.9.2 | 2.2 |                                                          |
+  | Elasticsearch | 7.10 | 7.17 |                                                          |
 
 - **Extensions et modules tiers**: utilisez ce modèle de tableau pour vous aider à comprendre l’état de vos extensions et personnalisations afin que vous puissiez prendre des décisions stratégiques et définir des actions. Il s’agit d’une opportunité de remplacer toutes les extensions qui peuvent être natives d’Adobe Commerce ou de Magento Open Source afin de minimiser la complexité de votre projet. Utilisez la variable `bin/magento module:status` pour afficher une liste de modules et d’extensions.
 
-   | # | Extension/<br>nom du module | Module de compositeur | Fournisseur | Version actuelle | Fonctionnalité | Compatible avec la dernière version<br>Version commerciale ? | Problèmes | Natif de Commerce ? | Action | Remarques |
-   |---|-----------------------------|------------------------------------|-------------|-------------------|-----------------------|---------------------------------------------|--------------------------------------------------|---------------------|-------------------------|-------|
-   | 1 | Nom et lien de l’extension | extension/<br>extensionx-magento-2 | Nom du fournisseur | Version installée | Exigences commerciales | Oui/Non | Liste des problèmes identifiés rencontrés avec cette extension | Oui/Non | Conserver/Remplacer<br>Supprimer |  |
+  | # | Extension/<br>nom du module | Module de compositeur | Fournisseur | Version actuelle | Fonctionnalité | Compatible avec la dernière version<br>Version commerciale ? | Problèmes | Natif de Commerce ? | Action | Remarques |
+  |---|-----------------------------|------------------------------------|-------------|-------------------|-----------------------|---------------------------------------------|--------------------------------------------------|---------------------|-------------------------|-------|
+  | 1 | Nom et lien de l’extension | extension/<br>extensionx-magento-2 | Nom du fournisseur | Version installée | Exigences commerciales | Oui/Non | Liste des problèmes identifiés rencontrés avec cette extension | Oui/Non | Conserver/Remplacer<br>Supprimer |       |
 
 - **Modules personnalisés**: à l’instar du tableau des modules tiers, ce modèle vous permet de suivre et de comprendre l’état et les actions requis pour la mise à niveau des modules personnalisés.
 
-   | # | Nom du module | Fonctionnalité | Obligatoire ? | Natif de Commerce ? | Action | Remarques |
-   |---|--------------|-----------------------|-----------|---------------------|---------------------|-------|
-   | 1 | Nom du module | Exigences commerciales | Oui/Non | Oui/Non | Conserver/Remplacer/Supprimer |  |
+  | # | Nom du module | Fonctionnalité | Obligatoire ? | Natif de Commerce ? | Action | Remarques |
+  |---|--------------|-----------------------|-----------|---------------------|---------------------|-------|
+  | 1 | Nom du module | Exigences commerciales | Oui/Non | Oui/Non | Conserver/Remplacer/Supprimer |       |
 
 - **Modules compositeur et dépendances dans le fichier compositeur.json qui nécessitent une mise à jour.**
 
@@ -64,7 +64,7 @@ En outre, les partenaires peuvent participer aux [Versions bêta d’Adobe Comme
 
 ## Développement et assurance qualité
 
-Le test est la phase de mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. Le _[Guide de test d’application](https://developer.adobe.com/commerce/testing/guide/)_ fournit des détails sur la configuration et l’utilisation des outils de test de plateforme et système pour une AQ plus rapide. Utilisez un environnement d’évaluation pour tester et valider votre mise à niveau avant de passer en production.
+Le test est la phase de mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. La variable _[Guide de test d’application](https://developer.adobe.com/commerce/testing/guide/)_ fournit des détails sur la configuration et l’utilisation des outils de test de plateforme et système pour une AQ plus rapide. Utilisez un environnement d’évaluation pour tester et valider votre mise à niveau avant de passer en production.
 
 ## UAT et préparation du lancement
 

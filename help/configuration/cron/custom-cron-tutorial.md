@@ -1,13 +1,13 @@
 ---
 title: Configuration d’une tâche cron personnalisée et d’un groupe cron (tutoriel)
 description: Utilisez ce tutoriel détaillé pour créer une tâche cron personnalisée.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 0%
 
 ---
-
 
 # Configuration d’une tâche cron personnalisée
 
@@ -27,7 +27,7 @@ Dans ce tutoriel, nous supposons que :
 
 Pour configurer une tâche cron personnalisée, vous avez besoin d’un exemple de module. Nous suggérons le `magento-module-minimal` module .
 
-Si vous disposez déjà d’un exemple de module, vous pouvez l’utiliser ; ignorez cette étape et l’étape suivante, puis passez à l’étape 3 : Créez une classe pour exécuter cron.
+Si vous disposez déjà d’un exemple de module, vous pouvez l’utiliser. Ignorez cette étape et l’étape suivante et passez à l’étape 3 : Création d’une classe pour exécuter cron.
 
 **Pour obtenir un exemple de module**:
 
@@ -39,7 +39,7 @@ Si vous disposez déjà d’un exemple de module, vous pouvez l’utiliser ; ign
    git clone git@github.com:magento/magento2-samples.git
    ```
 
-   Si la commande échoue avec l’erreur `Permission denied (publickey).`, vous devez [Ajoutez votre clé publique SSH à GitHub.com][git-ssh].
+   Si la commande échoue avec l’erreur `Permission denied (publickey).`, vous devez [ajoutez votre clé publique SSH à GitHub.com][git-ssh].
 
 1. Créez un répertoire dans lequel copier l’exemple de code :
 
@@ -85,7 +85,7 @@ Si vous disposez déjà d’un exemple de module, vous pouvez l’utiliser ; ign
    bin/magento cache:clean
    ```
 
-## Étape 2 : Vérification de l’exemple de module
+## Etape 2 : vérification de l&#39;exemple de module
 
 Avant de poursuivre, vérifiez que l’exemple de module est enregistré et activé.
 
@@ -103,11 +103,11 @@ Avant de poursuivre, vérifiez que l’exemple de module est enregistré et acti
 
 >[!TIP]
 >
->Si la sortie indique que la variable `Module does not exist`, revoir [Étape 1](#step-1-get-a-sample-module) soigneusement. Assurez-vous que votre code se trouve dans le répertoire approprié. L&#39;orthographe et la casse sont importantes; si quelque chose est différent, le module ne se charge pas. N’oubliez pas également de vous exécuter. `magento setup:upgrade`.
+>Si la sortie indique que la variable `Module does not exist`, revoir [Étape 1](#step-1-get-a-sample-module) soigneusement. Assurez-vous que votre code se trouve dans le répertoire approprié. L’orthographe et la casse sont importantes ; en cas de différence, le module ne se charge pas. N’oubliez pas également de vous exécuter. `magento setup:upgrade`.
 
 ## Étape 3 : Création d’une classe pour exécuter cron
 
-Cette étape affiche une classe simple pour créer une tâche cron. La classe n’écrit qu’une ligne dans la variable `cron_schedule` qui confirme qu’il est configuré correctement.
+Cette étape affiche une classe simple pour créer une tâche cron. La classe n’écrit qu’une ligne dans la variable `cron_schedule` qui confirme qu’il a été configuré avec succès.
 
 Pour créer une classe :
 
@@ -145,7 +145,7 @@ Pour créer une classe :
 
 ## Étape 4 : Créer `crontab.xml`
 
-Le `crontab.xml` définit un planning pour exécuter votre code cron personnalisé.
+La variable `crontab.xml` définit un planning pour exécuter votre code cron personnalisé.
 
 Créer `crontab.xml` comme suit dans la variable `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc` directory:
 
@@ -177,21 +177,21 @@ Pour que le planning cron puisse être configuré à partir de l’administrateu
 
 Où, `system/config/path` est un chemin de configuration système défini dans `etc/adminhtml/system.xml` d’un module.
 
-## Étape 5 : Nettoyage de la compilation et du cache
+## Étape 5 : Compilation et nettoyage du cache
 
-Compilez le code à l’aide de la commande suivante :
+Compilez le code à l’aide de cette commande :
 
 ```bash
 bin/magento setup:di:compile
 ```
 
-Et effacez le cache avec cette commande :
+Et effacez le cache à l’aide de cette commande :
 
 ```bash
 bin/magento cache:clean
 ```
 
-## Étape 6 : Vérification de la tâche cron
+## Étape 6 : vérification de la tâche cron
 
 Cette étape montre comment vérifier la tâche cron personnalisée en utilisant une requête SQL sur la `cron_schedule` table de base de données.
 
@@ -205,12 +205,12 @@ Pour vérifier cron :
 
 1. Saisissez le `magento cron:run` deux ou trois fois.
 
-   La première fois que vous saisissez la commande, elle met les tâches en file d’attente. par la suite, les tâches cron sont exécutées. Vous devez saisir la commande _au moins_ deux fois.
+   La première fois que vous tapez la commande, les tâches cron sont exécutées. Vous devez saisir la commande _au moins_ deux fois.
 
 1. Exécution de la requête SQL `SELECT * from cron_schedule WHERE job_code like '%custom%'` comme suit :
 
    1. Entrée `mysql -u magento -p`
-   1. Dans le `mysql>` invite, entrée `use magento;`
+   1. À l’emplacement `mysql>` invite, entrée `use magento;`
    1. Entrée `SELECT * from cron_schedule WHERE job_code like '%custom%';`
 
       Le résultat doit être similaire à ce qui suit :
@@ -238,7 +238,7 @@ Pour vérifier cron :
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 
-   Ces messages proviennent du `execute` dans `Test.php`:
+   Ces messages proviennent de la `execute` dans `Test.php`:
 
    ```php
    public function execute() {
@@ -247,7 +247,7 @@ Pour vérifier cron :
 
 Si la commande SQL et le journal du système ne contiennent aucune entrée, exécutez le `magento cron:run` Commandez quelques autres fois et attendez. La mise à jour de la base de données peut prendre un certain temps.
 
-## Étape 7 (facultative) : Configuration d’un groupe cron personnalisé
+## Étape 7 (facultative) : configuration d’un groupe cron personnalisé
 
 Cette étape indique comment configurer éventuellement un groupe cron personnalisé. Vous devez configurer un groupe cron personnalisé si vous souhaitez que votre tâche cron personnalisée s’exécute selon un planning différent de celui des autres tâches cron (généralement une fois par minute) ou si vous souhaitez que plusieurs tâches cron personnalisées s’exécutent avec des paramètres différents.
 
@@ -275,7 +275,7 @@ Pour configurer un groupe cron personnalisé :
 
 Pour une description de la signification des options, voir [Personnalisation de la référence des crons](custom-cron-reference.md).
 
-## Étape 8 : Vérification du groupe cron personnalisé
+## Étape 8 : Vérification de votre groupe cron personnalisé
 
 Ceci _facultatif_ L’étape indique comment vérifier votre groupe cron personnalisé à l’aide de l’administrateur.
 

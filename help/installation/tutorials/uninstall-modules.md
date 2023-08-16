@@ -1,13 +1,13 @@
 ---
 title: Désinstallation des modules
 description: Pour désinstaller un module Adobe Commerce ou Magento Open Source, procédez comme suit.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 0%
 
 ---
-
 
 # Désinstallation des modules
 
@@ -58,7 +58,7 @@ La commande de désinstallation du module effectue les tâches suivantes :
 
    >[!NOTE]
    >
-   >Désinstallation d’un module _always_ exécutions `composer remove`. Le `--remove-data` supprime les données de la base et le schéma définis par le module `Uninstall` classe .
+   >Désinstallation d’un module _always_ exécutions `composer remove`. La variable `--remove-data` supprime les données de la base et le schéma définis par le module `Uninstall` classe .
 
 1. Nettoie le cache.
 1. Met à jour les classes générées.
@@ -144,13 +144,13 @@ Cette commande effectue les tâches suivantes :
 
    a. Vérifie que les emplacements de destination de restauration sont modifiables (notez que la variable `pub/static` et `var` Les dossiers sont ignorés).
 
-   b. Supprime tous les fichiers et répertoires situés sous le répertoire d’installation de votre application.
+   b. Supprime tous les fichiers et répertoires sous le répertoire d’installation de votre application.
 
    c. Extrait le fichier d’archive vers les emplacements de destination.
 
 1. Si vous spécifiez un fichier de restauration de base de données :
 
-   a. Laisse tomber la base de données entière.
+   a. Permet de déposer l&#39;intégralité de la base de données.
 
    b. Restaure la base de données à l’aide de la sauvegarde de la base de données.
 
@@ -168,26 +168,26 @@ Par exemple, pour restaurer une sauvegarde de code (système de fichiers), saisi
 
 * Afficher une liste de sauvegardes :
 
-   ```bash
-   magento info:backups:list
-   ```
+  ```bash
+  magento info:backups:list
+  ```
 
 * Restaurer une sauvegarde de fichier nommée `1433876616_filesystem.tgz`:
 
-   ```bash
-   magento setup:rollback --code-file="1433876616_filesystem.tgz"
-   ```
+  ```bash
+  magento setup:rollback --code-file="1433876616_filesystem.tgz"
+  ```
 
-   Messages similaires à l’affichage suivant :
+  Messages similaires à l’affichage suivant :
 
-   ```terminal
-   Enabling maintenance mode
-   Code rollback is starting ...
-   Code rollback filename: 1433876616_filesystem.tgz
-   Code rollback file path: /var/www/html/magento2/var/backups/1433876616_filesystem.tgz
-   [SUCCESS]: Code rollback has completed successfully.
-   Disabling maintenance mode
-   ```
+  ```terminal
+  Enabling maintenance mode
+  Code rollback is starting ...
+  Code rollback filename: 1433876616_filesystem.tgz
+  Code rollback file path: /var/www/html/magento2/var/backups/1433876616_filesystem.tgz
+  [SUCCESS]: Code rollback has completed successfully.
+  Disabling maintenance mode
+  ```
 
 >[!NOTE]
 >

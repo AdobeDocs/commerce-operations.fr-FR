@@ -87,7 +87,7 @@ Pour obtenir des instructions, voir [Configuration des indexeurs](https://experi
 
 ## N’exécutez pas d’instructions DDL dans Production
 
-Évitez d’exécuter des instructions DDL dans l’environnement de production afin d’éviter les conflits (comme les modifications et les créations de tableau). Le `setup:upgrade` process est une exception.
+Évitez d’exécuter des instructions DDL dans l’environnement de production pour éviter les conflits (comme les modifications et les créations de tableau). La variable `setup:upgrade` process est une exception.
 
 Si vous devez exécuter une instruction DDL, mettez le site web en mode de maintenance et désactivez cron (voir les instructions pour changer d’index en toute sécurité dans la section précédente).
 

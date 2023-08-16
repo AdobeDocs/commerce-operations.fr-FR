@@ -6,7 +6,7 @@ exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
 source-git-commit: 2b1fa24471cda7cc01ef5fdafeedbec0315d68c7
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 0%
+ht-degree: 18%
 
 ---
 
@@ -97,8 +97,8 @@ Obtenez des informations pratiques sur les concepts, les processus, les outils e
       <img alt="Implémentation" src="../assets/icons/play.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong>Manuel de mise en oeuvre</strong></a>
-      <p>Découvrez les stratégies de planification et de mise en oeuvre d’un site Adobe Commerce performant.</p>
+      <a href="../implementation-playbook/overview.md"><strong>Manuel d’implémentation</strong></a>
+      <p>Découvrez les stratégies de planification et d’implémentation d’un site Adobe Commerce performant.</p>
     </div>
   </td>
   <td valign="top">
@@ -107,7 +107,7 @@ Obtenez des informations pratiques sur les concepts, les processus, les outils e
     </a>
     <div>
       <a href="../operational-playbook/overview.md"><strong>Manuel opérationnel</strong></a>
-      <p>Découvrez comment préparer vos entreprises sur le plan opérationnel à l’exécution d’un site de commerce électronique réussi.</p>
+      <p>Découvrez comment préparer vos entreprises sur le plan opérationnel à l’exécution d’un site d’e-commerce réussi.</p>
     </div>
   </td>
   <td valign="top">
@@ -116,7 +116,7 @@ Obtenez des informations pratiques sur les concepts, les processus, les outils e
     </a>
     <div>
       <a href="../commerce-at-scale/overview.md"><strong>Commerce à grande échelle</strong></a>
-      <p>Découvrez comment diffuser des expériences à grande échelle à l’aide d’Adobe Commerce avec Adobe Experience Manager.</p>
+      <p>Découvrez comment diffuser des expériences à grande échelle à l’aide d’Adobe Commerce avec Adobe Experience Manager.</p>
     </div>
   </td>
   <td valign="top">

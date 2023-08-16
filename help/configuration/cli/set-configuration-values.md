@@ -24,7 +24,7 @@ Vous pouvez utiliser ces commandes pour définir la configuration de Commerce ma
 - [Référence des chemins de configuration sensibles et spécifiques au système](../reference/config-reference-sens.md)
 - [Référence des chemins de configuration des paiements](../reference/config-reference-payment.md)
 - [Référence générale sur les chemins de configuration](../reference/config-reference-general.md)
-- [Référence des chemins de configuration de l’extension B2B de Commerce Enterprise](../reference/config-reference-b2b.md)
+- [Référence sur les chemins de configuration de l’extension B2B de Commerce Enterprise](../reference/config-reference-b2b.md)
 
 Vous pouvez définir des valeurs aux moments suivants :
 
@@ -36,7 +36,7 @@ Utilisez les commandes suivantes :
 
 - `bin/magento config:set` définit toute valeur de configuration non sensible en fonction de son chemin de configuration ;
 - `bin/magento config:sensitive:set` définit toute valeur de configuration sensible en fonction de son chemin de configuration ;
-- `bin/magento config:show` affiche les valeurs de configuration enregistrées ; les valeurs des paramètres cryptés s’affichent sous la forme d’astérisques.
+- `bin/magento config:show` affiche les valeurs de configuration enregistrées ; les valeurs des paramètres chiffrés sont affichées sous la forme d’astérisques.
 
 ## Conditions préalables
 
@@ -54,7 +54,7 @@ Voir les références suivantes :
 - [Référence des chemins de configuration sensibles et spécifiques au système](../reference/config-reference-sens.md)
 - [Référence des chemins de configuration des paiements](../reference/config-reference-payment.md)
 - [Autres références de chemins de configuration](../reference/config-reference-general.md)
-- [Référence des chemins de configuration de l’extension B2B de Commerce Enterprise](../reference/config-reference-b2b.md)
+- [Référence sur les chemins de configuration de l’extension B2B de Commerce Enterprise](../reference/config-reference-b2b.md)
 
 ### Recherche du code d’étendue
 
@@ -131,10 +131,10 @@ Le tableau suivant décrit la variable `set` paramètres de commande :
 
 | Paramètre | Description |
 | --- | --- |
-| `--scope` | Portée de la configuration. Les valeurs possibles sont les suivantes : `default`, `website`ou `store`. La valeur par défaut est `default`. |
+| `--scope` | Portée de la configuration. Les valeurs possibles sont : `default`, `website`, ou `store`. La valeur par défaut est `default`. |
 | `--scope-code` | Le code d’étendue de la configuration (code du site web ou code d’affichage de magasin) |
 | `-e or --lock-env` | Verrouille la valeur afin qu’elle ne puisse pas être modifiée dans l’administrateur ou modifie un paramètre déjà verrouillé dans l’administrateur. La commande écrit la valeur dans la variable `<Commerce base dir>/app/etc/env.php` fichier . |
-| `-c or --lock-config` | Verrouille la valeur afin qu’elle ne puisse pas être modifiée dans l’administrateur ou modifie un paramètre déjà verrouillé dans l’administrateur. La commande écrit la valeur dans la variable `<Commerce base dir>/app/etc/config.php` fichier . Le `--lock-config` option remplace `--lock-env` si vous spécifiez les deux options. |
+| `-c or --lock-config` | Verrouille la valeur afin qu’elle ne puisse pas être modifiée dans l’administrateur ou modifie un paramètre déjà verrouillé dans l’administrateur. La commande écrit la valeur dans la variable `<Commerce base dir>/app/etc/config.php` fichier . La variable `--lock-config` option remplace `--lock-env` si vous spécifiez les deux options. |
 | `path` | _Obligatoire_. Chemin de configuration |
 | `value` | _Obligatoire_. La valeur de la configuration |
 
@@ -191,7 +191,7 @@ Vous pouvez utiliser la variable `--lock-env` pour définir les valeurs de confi
 
 >[!INFO]
 >
->Le `env.php` est spécifique au système. Vous ne devez pas le transférer vers un autre système. Vous pouvez l’utiliser pour remplacer les valeurs de configuration de la base de données. Par exemple, vous pouvez extraire un vidage de base de données d’un autre système et remplacer le `base_url` et d’autres valeurs afin que vous n’ayez pas à modifier la base de données.
+>La variable `env.php` est spécifique au système. Vous ne devez pas le transférer vers un autre système. Vous pouvez l’utiliser pour remplacer les valeurs de configuration de la base de données. Par exemple, vous pouvez extraire un vidage de base de données d’un autre système et remplacer le `base_url` et d’autres valeurs afin que vous n’ayez pas à modifier la base de données.
 
 Si vous utilisez la variable `--lock-config` comme suit, la valeur de configuration est enregistrée dans `<Commerce base dir>/app/etc/config.php`. Le champ permettant de modifier cette valeur dans Admin est désactivé.
 
@@ -221,7 +221,7 @@ where
 
 >[!INFO]
 >
->Le `bin/magento config:show` affiche les valeurs de n’importe quelle [valeurs cryptées](../reference/config-reference-sens.md) comme une série d’astérisques : `******`.
+>La variable `bin/magento config:show` affiche les valeurs des [valeurs cryptées](../reference/config-reference-sens.md) sous la forme d’une série d’astérisques : `******`.
 
 ### Exemples
 

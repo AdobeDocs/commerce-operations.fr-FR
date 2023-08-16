@@ -1,13 +1,13 @@
 ---
 title: Clonage des exemples de référentiels Git de données
 description: Suivez ces étapes pour installer des exemples de données Adobe Commerce et Magento Open Source en clonant des référentiels Git.
-source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
+exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 0%
 
 ---
-
 
 # Clonage des exemples de référentiels Git de données
 
@@ -22,7 +22,7 @@ Les développeurs contributeurs peuvent utiliser cette méthode pour installer d
 
 >[!WARNING]
 >
->Vous pouvez utiliser des exemples de données avec l’une des méthodes suivantes : `develop` branche (plus actuelle) ou branche publiée (telle que `2.4` (plus stable)). Nous vous recommandons d’utiliser une branche publiée, car elle est plus stable. Si vous contribuez au code du référentiel et que vous avez besoin du code le plus récent, utilisez la variable `develop` branche. Quelle que soit la branche choisie, vous devez [clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) branche correspondante du référentiel GitHub du Magento Open Source. Par exemple, des exemples de données pour la variable `develop` branche peut être utilisée *only* avec le Magento Open Source `develop` branche.
+>Vous pouvez utiliser des exemples de données avec l’une des méthodes suivantes : `develop` branche (plus actuelle) ou branche publiée (telle que `2.4` (plus stable)). Nous vous recommandons d’utiliser une branche publiée, car elle est plus stable. Si vous contribuez au code du référentiel et que vous avez besoin du code le plus récent, utilisez la variable `develop` branche. Quelle que soit la branche choisie, vous devez [clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) branche correspondante du référentiel GitHub du Magento Open Source. Par exemple, des exemples de données pour la variable `develop` La branche peut être utilisée *only* avec le Magento Open Source `develop` branche.
 
 ## Clonage du référentiel de données d’exemple
 
@@ -45,7 +45,7 @@ Pour cloner le référentiel GitHub de données d’exemple à l’aide du proto
 
 1. Modifiez le répertoire docroot de votre serveur web.
 
-   Généralement, pour Ubuntu, c&#39;est `/var/www` et pour CentOS, il s’agit de `/var/www/html`.
+   Généralement, pour Ubuntu, c&#39;est `/var/www` et pour CentOS, c’est `/var/www/html`.
 
 1. Entrée `git clone` et collez la valeur obtenue précédemment.
 
@@ -110,7 +110,7 @@ Pour cloner le référentiel GitHub de données d’exemple à l’aide du proto
 
 1. Modifiez le répertoire docroot de votre serveur web.
 
-   Généralement, pour Ubuntu, c&#39;est `/var/www` et pour CentOS, il s’agit de `/var/www/html`.
+   Généralement, pour Ubuntu, c&#39;est `/var/www` et pour CentOS, c’est `/var/www/html`.
 
 1. Entrée `git clone` et collez la valeur obtenue précédemment.
 
@@ -153,8 +153,7 @@ Pour cloner le référentiel GitHub de données d’exemple à l’aide du proto
 >
 >Si vous installez des exemples de données *after* pour installer Adobe Commerce ou Magento Open Source, vous devez également exécuter la commande suivante pour mettre à jour la base de données et le schéma :
 >
->
-```bash
+>```bash
 ><magento_root>/bin/magento setup:upgrade
 >```
 

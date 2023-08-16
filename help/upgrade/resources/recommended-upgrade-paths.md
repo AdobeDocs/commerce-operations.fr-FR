@@ -1,13 +1,13 @@
 ---
 title: Modernisation de votre plateforme avec Adobe Commerce
 description: Consultez les recommandations pour planifier la mise à niveau d’Adobe Commerce.
-source-git-commit: 4a78c2d2a215d1b58b2f07b7a961849321f82318
+exl-id: f776b000-0085-4b77-860f-623837c3c902
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
 
 ---
-
 
 # Chemins de mise à niveau recommandés
 
@@ -24,7 +24,7 @@ Pour offrir plus de flexibilité à nos commerçants lors de la planification de
 
 Vous trouverez ci-dessous les chemins de mise à niveau recommandés par Adobe Commerce pour préserver la sécurité et les performances de votre site tout en effectuant une mise à niveau vers l’une des dernières versions.
 
-## Mise à niveau à partir de la version 2.3.7
+## Mise à niveau de la version 2.3.7
 
 ![Chemin de mise à niveau de la version 2.3.7](../../assets/upgrade-guide/2.3.7.png)
 

@@ -2,7 +2,7 @@
 source-git-commit: 8b82081057af7d134528988d3f9f7cf53f4d7525
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 # Documentation technique d’Adobe Commerce
@@ -11,7 +11,7 @@ Nous acceptons les contributions de notre communauté ainsi que des employés d�
 
 ## Adobe de code de conduite Open Source
 
-Ce projet a adopté la méthode [Adobe de code de conduite Open Source](code-of-conduct.md) ou le [Code de conduite .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Pour plus d’informations, voir [Contribution](contributing.md) article.
+Ce projet respecte le [Code de conduite d’Adobe Open Source](code-of-conduct.md) ou le [Code de conduite .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Pour plus d’informations, consultez l’article [Contribution](contributing.md).
 
 ## À propos de vos contributions pour Adobe du contenu
 
@@ -54,9 +54,9 @@ Tous les articles de ce référentiel utilisent GitHub Flavored Markdown. Si vou
 
 ## Modèles
 
-Le `_jekyll` contient des rubriques sous forme de modèles et les ressources requises.
-Les modèles qui utilisent le langage de modèle Liquid résident dans la variable `_jekyll/templated` comme fichiers HTML.
-Le `_jekyll/_data` contient des fichiers contenant les données utilisées pour le rendu des modèles.
+La variable `_jekyll` contient des rubriques sous forme de modèles et les ressources requises.
+Les modèles qui utilisent le langage de modèle Liquid résident dans la variable `_jekyll/templated` sous la forme de fichiers HTML.
+La variable `_jekyll/_data` contient des fichiers contenant les données utilisées pour le rendu des modèles.
 
 Pour effectuer le rendu de tous les modèles :
 
@@ -73,6 +73,6 @@ _scripts/render
 > **REMARQUE :** Vous devez exécuter le script à partir de la fonction `_jekyll` répertoire .
 > **REMARQUE :** Ruby doit être installé pour exécuter ce script.
 
-Le script exécute le rendu et écrit les modèles rendus dans le `help/_includes/templated` répertoire .
+Le script exécute le rendu et écrit les modèles rendus dans la variable `help/_includes/templated` répertoire .
 
 Pour plus d’informations sur la documentation Jekyll [Fichiers de données](https://jekyllrb.com/docs/datafiles), [Filtres liquides](https://jekyllrb.com/docs/liquid/filters/), ainsi que d’autres fonctionnalités.

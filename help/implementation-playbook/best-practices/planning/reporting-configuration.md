@@ -22,7 +22,7 @@ Si votre entreprise ne nécessite pas de fonctionnalités de création de rappor
 - Adobe Commerce sur l’infrastructure cloud
 - Adobe Commerce sur site
 
-## Désactivation des rapports
+## Désactivation de la création de rapports
 
 Si vous n’utilisez pas les segments Rapports ou clients dynamiques, désactivez la fonctionnalité Rapports .
 

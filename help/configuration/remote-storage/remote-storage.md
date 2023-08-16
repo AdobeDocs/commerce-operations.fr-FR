@@ -16,7 +16,7 @@ Le module Stockage distant offre la possibilité de stocker des fichiers multim�
 
 >[!INFO]
 >
->Le stockage à distance est disponible uniquement pour Commerce version 2.4.2 et ultérieure. Voir [Notes de mise à jour de la version 2.4.2](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
+>Le stockage à distance est disponible uniquement pour Commerce version 2.4.2 et ultérieure. Voir [Notes de mise à jour 2.4.2](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
 
 >[!INFO]
 >
@@ -26,17 +26,17 @@ Le module Stockage distant offre la possibilité de stocker des fichiers multim�
 
 ## Options de stockage distant
 
-Vous pouvez configurer le stockage à distance à l’aide de la fonction `remote-storage` avec l’option [`setup` Commande CLI](../../installation/tutorials/deployment.md). Le `remote-storage` utilise la syntaxe suivante :
+Vous pouvez configurer le stockage à distance à l’aide de la fonction `remote-storage` avec l’option [`setup` Commande CLI](../../installation/tutorials/deployment.md). La variable `remote-storage` utilise la syntaxe suivante :
 
 ```text
 --remote-storage-<parameter-name>="<parameter-value>"
 ```
 
-Le `parameter-name` fait référence au nom du paramètre de stockage distant spécifique. Le tableau suivant répertorie les paramètres disponibles pour la configuration du stockage à distance :
+La variable `parameter-name` fait référence au nom du paramètre de stockage distant spécifique. Le tableau suivant répertorie les paramètres disponibles pour la configuration du stockage à distance :
 
 | Paramètre de ligne de commande | Nom du paramètre | Description | Valeur par défaut |
 |--- |--- |--- |--- |
-| `remote-storage-driver` | conducteur | Nom de l’adaptateur<br>Valeurs possibles :<br>**fichier**: Désactive le stockage distant et utilise le système de fichiers local <br>**aws-s3**: Utilisez la variable [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md) | none |
+| `remote-storage-driver` | conducteur | Nom de l’adaptateur<br>Valeurs possibles :<br>**fichier**: désactive le stockage distant et utilise le système de fichiers local.<br>**aws-s3**: utilisez la variable [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md) | none |
 | `remote-storage-bucket` | compartiment | Stockage d’objet ou nom du conteneur | none |
 | `remote-storage-prefix` | préfixe | Préfixe facultatif (emplacement dans le stockage d’objets) | empty |
 | `remote-storage-region` | region | Nom de la région | none |
@@ -51,19 +51,19 @@ L’emplacement de stockage par défaut se trouve dans le système de fichiers l
 
 ## Activer le stockage à distance
 
-Vous pouvez installer un stockage distant lors d’une installation Adobe Commerce ou ajouter un stockage distant à une instance Commerce existante. Les exemples suivants montrent chaque méthode à l’aide d’un ensemble de `remote-storage` paramètres avec Commerce `setup` Commandes de l’interface de ligne de commande. Au minimum, vous devez fournir l&#39;espace de stockage `driver`, `bucket`, et `region`.
+Vous pouvez installer un stockage distant lors d’une installation Adobe Commerce ou ajouter un stockage distant à une instance Commerce existante. Les exemples suivants montrent chaque méthode utilisant un ensemble de `remote-storage` paramètres avec Commerce `setup` Commandes de l’interface de ligne de commande. Au minimum, vous devez fournir le stockage `driver`, `bucket`, et `region`.
 
-- Exemple : Installation de Commerce avec stockage à distance
+- Exemple : installation de Commerce avec stockage à distance
 
-   ```bash
-   bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
-   ```
+  ```bash
+  bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
+  ```
 
-- Exemple : Activer le stockage distant sur Commerce existant
+- Exemple : activer le stockage à distance sur le commerce existant
 
-   ```bash
-   bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
-   ```
+  ```bash
+  bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
+  ```
 
 >[!TIP]
 >

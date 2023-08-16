@@ -1,13 +1,13 @@
 ---
 title: Options du mode de maintenance pour la mise à niveau
 description: Créez une page de mode de maintenance personnalisée que vos clients voient sur votre vitrine Adobe Commerce ou Magento Open Source pendant l’exécution d’une mise à niveau.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
 
 ---
-
 
 # Options du mode de maintenance pour la mise à niveau
 

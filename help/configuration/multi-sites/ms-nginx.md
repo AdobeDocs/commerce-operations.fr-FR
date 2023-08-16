@@ -1,13 +1,13 @@
 ---
 title: Configuration de plusieurs sites web avec Nginx
 description: Suivez ce tutoriel pour configurer plusieurs sites web avec Nginx.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
 
 ---
-
 
 # Configuration de plusieurs sites web avec Nginx
 
@@ -15,12 +15,12 @@ Nous supposons que :
 
 - Vous travaillez sur une machine de développement (ordinateur portable, machine virtuelle ou autre).
 
-   Des tâches supplémentaires peuvent être nécessaires pour déployer plusieurs sites web dans un environnement hébergé ; contactez votre fournisseur d’hébergement pour plus d’informations.
+  Des tâches supplémentaires peuvent être nécessaires pour déployer plusieurs sites web dans un environnement hébergé. Pour plus d’informations, contactez votre fournisseur d’hébergement.
 
-   Des tâches supplémentaires sont requises pour configurer Adobe Commerce sur l’infrastructure cloud. Une fois les tâches abordées dans cette rubrique terminées, reportez-vous à la section [Configuration de plusieurs sites web ou magasins](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) dans le _Guide sur l’infrastructure de Commerce on Cloud_.
+  Des tâches supplémentaires sont requises pour configurer Adobe Commerce sur l’infrastructure cloud. Une fois les tâches abordées dans cette rubrique terminées, reportez-vous à la section [Configuration de plusieurs sites web ou magasins](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) dans le _Guide de Commerce sur l’infrastructure cloud_.
 
-- Vous acceptez plusieurs domaines dans un fichier d’hôte virtuel ou utilisez un hôte virtuel par site Web ; les fichiers de configuration de l’hôte virtuel se trouvent dans `/etc/nginx/sites-available`.
-- Vous utilisez le `nginx.conf.sample` fourni par Commerce avec uniquement les modifications abordées dans ce tutoriel.
+- Vous acceptez plusieurs domaines dans un fichier d’hôte virtuel ou utilisez un hôte virtuel par site web ; les fichiers de configuration de l’hôte virtuel se trouvent dans `/etc/nginx/sites-available`.
+- Vous utilisez la variable `nginx.conf.sample` fourni par Commerce avec uniquement les modifications abordées dans ce tutoriel.
 - Le logiciel Commerce est installé dans `/var/www/html/magento2`.
 - Vous avez deux sites web autres que le site par défaut :
 
@@ -42,16 +42,16 @@ Voici une feuille de route pour la configuration de plusieurs sites web avec ngi
 
       - Utilisation `website` pour charger votre site web dans votre storefront.
       - Utilisation `store` pour charger n’importe quelle vue de magasin dans votre storefront.
-   - `$MAGE_RUN_CODE` est le code d’affichage unique du site web ou du magasin qui correspond à `$MAGE_RUN_TYPE`.
 
+   - `$MAGE_RUN_CODE` est le code d’affichage unique du site web ou du magasin qui correspond à `$MAGE_RUN_TYPE`.
 
 1. Mettez à jour la configuration de l’URL de base sur l’administrateur Commerce.
 
-## Étape 1 : Créer des sites web, des magasins et des vues de magasin dans l’administrateur
+## Étape 1 : Création de sites web, magasins et magasins d’affichages dans l’administration
 
 Voir [Configuration de plusieurs sites web, magasins et vues de magasin dans l’administrateur](ms-admin.md).
 
-## Étape 2 : Création d’hôtes virtuels nginx
+## Étape 2 : création d’hôtes virtuels nginx
 
 Cette étape explique comment charger des sites web sur le storefront. Vous pouvez utiliser des sites web ou des vues de magasin ; si vous utilisez des vues de magasin, vous devez ajuster les valeurs de paramètre en conséquence. Vous devez effectuer les tâches de cette section en tant qu’utilisateur avec `sudo` des privilèges.
 
@@ -167,11 +167,11 @@ Pour plus d’informations sur la directive map, voir [Documentation de nginx su
    ln -s /etc/nginx/sites-available/german.mysite.mg german.mysite.mg
    ```
 
-## Étape 3 : Modifier nginx.conf.sample
+## Étape 3 : Modification de nginx.conf.sample
 
 >[!TIP]
 >
->Ne modifiez pas la variable `nginx.conf.sample` fichier; il s’agit d’un fichier Commerce de base qui peut être mis à jour avec chaque nouvelle version. Copiez plutôt la variable `nginx.conf.sample` , renommez-le, puis modifiez le fichier copié.
+>Ne modifiez pas la variable `nginx.conf.sample` ; il s’agit d’un fichier Commerce principal qui peut être mis à jour avec chaque nouvelle version. Copiez plutôt la variable `nginx.conf.sample` , renommez-le, puis modifiez le fichier copié.
 
 **Pour modifier le point d’entrée PHP de l’application principale**:
 
@@ -229,14 +229,14 @@ location ~ (index|get|static|report|404|503|health_check)\.php$ {
 }
 ```
 
-## Étape 4 : Mise à jour de la configuration de l’URL de base
+## Étape 4 : mise à jour de la configuration de l’URL de base
 
-Vous devez mettre à jour l’URL de base de la variable `french` et le `german` sites web dans l’administrateur Commerce.
+Vous devez mettre à jour l’URL de base de la variable `french` et la variable `german` sites web dans l’administrateur Commerce.
 
 ### Mettre à jour l’URL de base du site web français
 
 1. Connectez-vous à l’administrateur Commerce et accédez à **Magasins** > **Paramètres** > **Configuration** > **Général** > **Web**.
-1. Modifiez la variable _portée de configuration_ au `french` site web.
+1. Modifiez la variable _portée de configuration_ à la fonction `french` site web.
 1. Développer **URL de base** et mettre à jour la section **URL de base** et **URL du lien de base** valeur à `http://french.magento24.com/`.
 1. Développer **URL de base (sécurisées)** et mettre à jour la section **URL de base sécurisée** et **URL du lien de base sécurisé** valeur à `https://french.magento24.com/`.
 1. Cliquez sur **Enregistrer la configuration** et enregistrez les modifications de configuration.
@@ -244,7 +244,7 @@ Vous devez mettre à jour l’URL de base de la variable `french` et le `german`
 ### Mettre à jour l’URL de base du site web allemand
 
 1. Connectez-vous à l’administrateur Commerce et accédez à **Magasins** > **Paramètres** > **Configuration** > **Général** > **Web**.
-1. Modifiez la variable _portée de configuration_ au `german` site web.
+1. Modifiez la variable _portée de configuration_ à la fonction `german` site web.
 1. Développer **URL de base** et mettre à jour la section **URL de base** et **URL du lien de base** valeur à `http://german.magento24.com/`.
 1. Développer **URL de base (sécurisées)** et mettre à jour la section **URL de base sécurisée** et **URL du lien de base sécurisé** valeur à `https://german.magento24.com/`.
 1. Cliquez sur **Enregistrer la configuration** et enregistrez les modifications de configuration.
@@ -279,12 +279,11 @@ bin/magento cache:clean config full_page
 
 >[!INFO]
 >
->- Des tâches supplémentaires peuvent être nécessaires pour déployer plusieurs sites web dans un environnement hébergé ; contactez votre fournisseur d’hébergement pour plus d’informations.
->- Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud ; see [Configuration de plusieurs sites Web ou magasins Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) dans le _Guide sur l’infrastructure de Commerce on Cloud_.
-
+>- Des tâches supplémentaires peuvent être nécessaires pour déployer plusieurs sites web dans un environnement hébergé. Pour plus d’informations, contactez votre fournisseur d’hébergement.
+>- Des tâches supplémentaires sont requises pour configurer Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de plusieurs sites Web ou magasins Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) dans le _Guide de Commerce sur l’infrastructure cloud_.
 
 ### Dépannage
 
-- Si vos sites français et allemand renvoient 404 s mais que votre administrateur charge, assurez-vous que vous avez terminé [Étape 6 : Ajouter le code de magasin à l’URL de base](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- Si vos sites français et allemand renvoient 404 s mais que votre administrateur charge, assurez-vous que vous avez terminé [Étape 6 : Ajout du code de magasin à l’URL de base](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
 - Si toutes les URL renvoient 404, veillez à redémarrer votre serveur web.
 - Si l’administrateur ne fonctionne pas correctement, assurez-vous de configurer correctement vos hôtes virtuels.

@@ -30,7 +30,7 @@ Avant que l’équipe d’assistance Adobe Commerce ne commence le processus de 
 
 Tenez compte des points suivants lorsque vous planifiez et planifiez la conversion :
 
-- Conversion à partir de `COMPACT` to `DYNAMIC` Les tables peuvent prendre plusieurs heures avec une base de données volumineuse.
+- Conversion de `COMPACT` to `DYNAMIC` Les tables peuvent prendre plusieurs heures avec une base de données volumineuse.
 
 - Pour éviter la corruption des données, ne terminez pas le travail de conversion sur un site actif.
 
@@ -70,7 +70,7 @@ Vous pouvez convertir des tableaux sur un noeud de la grappe. Les modifications 
 
 Vous pouvez convertir des tableaux sur un noeud de la grappe. Les modifications se répliquent automatiquement sur les autres noeuds de service.
 
-Le processus de conversion du format de stockage diffère pour les projets Adobe Commerce Starter et Adobe Commerce Pro.
+Le processus de conversion du format de stockage est différent pour les projets Adobe Commerce Starter et Adobe Commerce Pro.
 
 - Pour l’architecture de démarrage, utilisez MySQL. `ALTER` pour convertir le format.
 - Sur l’architecture Pro, utilisez MySQL. `CREATE` et `SELECT` commandes pour créer une table de base de données avec `InnoDB` stockez et copiez les données de la table existante dans la nouvelle table. Cette méthode garantit que les modifications sont répliquées sur tous les noeuds de la grappe.
@@ -110,7 +110,7 @@ Le processus de conversion du format de stockage diffère pour les projets Adobe
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
    ```
 
-1. Conversion de tableaux utilisant `MyISAM` stockage vers `InnoDB` stockage.
+1. Conversion de tableaux qui utilisent `MyISAM` stockage vers `InnoDB` stockage.
 
    ```mysql
    ALTER TABLE [ table name here ] ENGINE=InnoDB;
@@ -118,7 +118,7 @@ Le processus de conversion du format de stockage diffère pour les projets Adobe
 
 ### Vérifier la conversion de la base de données
 
-La veille de la mise à niveau programmée vers MariaDB version 10.3, 10.4 ou 10.6, vérifiez que tous les tableaux ont le format de ligne et le moteur de stockage appropriés. La vérification est requise, car les déploiements de code effectués après la conversion peuvent entraîner le rétablissement de la configuration d’origine de certains tableaux.
+La veille de la mise à niveau programmée vers la version 10.3, 10.4 ou 10.6 de MariaDB, vérifiez que tous les tableaux ont le format de ligne et le moteur de stockage appropriés. La vérification est requise, car les déploiements de code effectués après la conversion peuvent entraîner le rétablissement de la configuration d’origine de certains tableaux.
 
 1. Connectez-vous à votre base de données.
 

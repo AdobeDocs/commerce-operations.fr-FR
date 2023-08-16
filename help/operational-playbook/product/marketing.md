@@ -18,7 +18,7 @@ Pourquoi envisagez-vous le marketing par e-mail :
 
 - Permet de créer une relation avec les clients actuels et futurs
 
-- Permet de stimuler les ventes et d’augmenter le taux de conversion
+- Permet d’augmenter les ventes et le taux de conversion
 
 - Permet d’accélérer la croissance des entreprises
 

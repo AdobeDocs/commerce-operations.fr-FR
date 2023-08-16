@@ -4,7 +4,7 @@ description: Consultez des exemples d’affichage et de gestion des indexeurs de
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
 source-git-commit: 795d4e9d1910d0ad826eb6c82ac451ac58e43063
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '663'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ salesrule_rule                           Sales Rule
 >[!NOTE]
 > Les marchands Adobe Commerce utilisant la recherche en direct, le service de catalogue ou le Recommendations de produits ont la possibilité d’utiliser [Indexation des prix basée sur SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html).
 
-## Affichage de l’état de l’indexeur
+## Afficher le statut de l’indexeur
 
 Utilisez cette commande pour afficher l’état de tous les indexeurs ou des indexeurs spécifiques. Par exemple, découvrez si un indexeur doit être réindexé.
 
@@ -192,8 +192,8 @@ Catalog Search indexer has been invalidated.
 
 Utilisez cette commande pour définir les options d’indexeur suivantes :
 
-- **Mise à jour lors de l’enregistrement (`realtime`)**: Les données indexées sont mises à jour lorsqu’une modification est apportée à l’administrateur. (Par exemple, l’index des produits de catégorie est réindexé une fois les produits ajoutés à une catégorie dans l’administrateur.) Il s’agit de la valeur par défaut.
-- **Mise à jour par planification (`schedule`)**: Les données sont indexées selon le planning défini par votre tâche cron.
+- **Mise à jour lors de l’enregistrement (`realtime`)**: les données indexées sont mises à jour lorsqu’une modification est apportée dans l’administrateur. (Par exemple, l’index des produits de catégorie est réindexé une fois les produits ajoutés à une catégorie dans l’administrateur.) Il s’agit du paramètre par défaut.
+- **Mise à jour par planification (`schedule`)**: les données sont indexées selon le planning défini par votre tâche cron.
 
 [En savoir plus sur l’indexation](https://developer.adobe.com/commerce/php/development/components/indexing/).
 

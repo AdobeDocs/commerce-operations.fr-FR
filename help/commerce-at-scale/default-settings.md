@@ -33,13 +33,13 @@ L’utilisation de tableaux plats pour les produits et les catégories n’est p
 
 ## Protection d&#39;origine très rapide
 
-Par défaut, la protection d’origine Fastly n’est pas activée. L’objectif de l’protection d’origine de Fastly est de réduire directement le trafic vers l’origine Adobe Commerce : lorsqu’une demande est reçue, un emplacement de périphérie rapide (ou &quot;point de présence&quot;/POP) vérifie le contenu mis en cache et le fournit. S’il n’est pas mis en cache, il continue à vérifier si le contenu y est mis en cache (si le contenu a déjà été demandé à partir d’un autre POP global, il sera mis en cache). Enfin, s’il n’est pas mis en cache sur le Protocole POP du Bouclier, il se dirigera uniquement vers le serveur d’origine.
+Par défaut, la protection d’origine Fastly n’est pas activée. L’objectif de l’protection d’origine de Fastly est de réduire directement le trafic vers l’origine Adobe Commerce : lorsqu’une demande est reçue, un emplacement de périphérie Fastly (ou &quot;point de présence&quot; / POP) recherche le contenu mis en cache et le fournit. S’il n’est pas mis en cache, il continue à vérifier si le contenu y est mis en cache (si le contenu a déjà été demandé à partir d’un autre POP global, il sera mis en cache). Enfin, s’il n’est pas mis en cache sur le Protocole POP du Bouclier, il se dirigera uniquement vers le serveur d’origine.
 
 Un protection d’origine rapide peut être activé dans les paramètres du serveur principal de configuration Fastly de votre administrateur Adobe Commerce. Pour des performances optimales, vous devez choisir un emplacement de protection le plus proche de votre centre de données d’origine Adobe Commerce.
 
 ## Optimisation rapide des images
 
-Une fois l’protection d’origine Fastly activée, vous pouvez également activer Fastly Image Optimizer. Lorsque les images des catalogues de produits sont stockées sur Adobe Commerce, ce service permet de décharger rapidement et hors d’Adobe Commerce toutes les transformations d’images de catalogues de produits gourmands en ressources. Les temps de réponse des utilisateurs finaux sont également améliorés pour les temps de chargement des pages, car les images sont transformées à l’emplacement de périphérie, ce qui élimine la latence en réduisant le nombre de requêtes à l’origine Adobe Commerce.
+Une fois que l’option de protection d’origine Fastly est activée, vous pouvez également activer Fastly Image Optimizer. Lorsque les images des catalogues de produits sont stockées sur Adobe Commerce, ce service permet de décharger rapidement et hors d’Adobe Commerce toutes les transformations d’images de catalogues de produits gourmands en ressources. Les temps de réponse des utilisateurs finaux sont également améliorés pour les temps de chargement des pages, car les images sont transformées à l’emplacement de périphérie, ce qui élimine la latence en réduisant le nombre de requêtes à l’origine Adobe Commerce.
 
 L’optimisation rapide des images peut être activée en &quot;activant l’optimisation des images profondes&quot; dans la configuration Fastly dans l’administration, bien que seulement après l’activation de votre protection d’origine. Vous trouverez plus d’informations sur les configurations pour l’optimisation rapide des images dans Adobe Commerce. [documentation destinée aux développeurs](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html).
 
@@ -51,13 +51,13 @@ Si vous exécutez Adobe Commerce sans interface utilisateur, si vous ne diffusez
 
 ## Activation de la connexion MySQL et Redis
 
-Par défaut, les connexions MySQL et Redis Secondaire ne sont pas activées dans Adobe Commerce sur le cloud. Cela est dû au fait que ces paramètres ne conviennent qu’aux clients qui attendent une charge très élevée. La latence des zones interactives (Cross-Available Zones) est plus élevée lorsque les connexions de Secondaire sont activées. Ce paramètre réduit donc les performances d’Adobe Commerce sur l’instance cloud dans le cas où l’instance ne reçoit que des niveaux de charge réguliers.
+Par défaut, les connexions MySQL et Redis Slave ne sont pas activées dans Adobe Commerce sur le cloud. Cela est dû au fait que ces paramètres ne conviennent qu’aux clients qui attendent une charge très élevée. La latence Cross-AZ (Cross-Available Zones) est plus élevée avec des connexions esclaves activées. Ce paramètre réduit donc les performances d’une instance Adobe Commerce sur l’instance cloud dans le cas où l’instance ne reçoit que des niveaux de charge réguliers.
 
-Si l’instance Adobe Commerce attend une charge extrême, l’activation du Secondaire maître pour MySQL et Redis permet d’améliorer les performances en répartissant la charge sur la base de données MySQL ou les redis sur différents noeuds.
+Si l’instance Adobe Commerce attend une charge extrême, l’activation de master-slave pour MySQL et Redis permet d’optimiser les performances en répartissant la charge sur la base de données MySQL ou les redis sur différents noeuds.
 
-À titre de guide, dans les environnements à charge normale, l’activation de la connexion à Secondaire ralentit les performances de 10 à 15 %. Mais sur les clusters avec une charge et un trafic élevés, les performances augmentent de 10 à 15 %. Par conséquent, il est important de charger le test de votre environnement avec les niveaux de trafic prévus afin d’évaluer si ce paramètre serait bénéfique pour les temps de performance en cours de chargement.
+À titre de guide, dans les environnements à charge normale, l’activation de la connexion esclave ralentit les performances de 10 à 15 %. Mais sur les clusters avec une charge et un trafic élevés, il y a une amélioration des performances d&#39;environ 10 à 15 %. Par conséquent, il est important de charger le test de votre environnement avec les niveaux de trafic prévus afin d’évaluer si ce paramètre serait bénéfique pour les temps de performance en cours de chargement.
 
-Pour activer/désactiver les connexions de Secondaire pour mysql et redis, vous devez modifier votre `.magento.env.yaml` pour inclure les éléments suivants :
+Pour activer/désactiver les connexions esclaves pour mysql et redis, vous devez modifier votre `.magento.env.yaml` afin d’inclure les éléments suivants :
 
 ```
 stage:
@@ -66,12 +66,12 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-Pour l’architecture mise à l’échelle (architecture fractionnée - voir ci-dessous), les connexions au Secondaire Redis ne doivent pas être activées, car des erreurs s’affichent. Dans le cas d’une architecture partagée, il est recommandé de mettre en oeuvre la mise en cache L2 pour Redis.
+Pour l’architecture mise à l’échelle (architecture fractionnée - voir ci-dessous), les connexions esclaves Redis ne doivent pas être activées, car des erreurs s’affichent. Dans le cas d’une architecture partagée, il est recommandé de mettre en oeuvre la mise en cache L2 pour Redis.
 
 ## Passage à une Adobe Commerce sur une architecture mise à l’échelle (fractionnée) dans le cloud
 
-Si, après toutes les configurations ci-dessus, les résultats de test de charge ou l’analyse des performances de l’infrastructure active indiquent toujours que les niveaux de charge vers Adobe Commerce sont d’un niveau qui atteint systématiquement le maximum des ressources du processeur et d’autres ressources système, alors un passage à une architecture mise à l’échelle (fractionnée) doit être pris en compte.
+Si, après toutes les configurations ci-dessus, les résultats du test de charge ou l’analyse des performances de l’infrastructure active indiquent toujours que les niveaux de charge vers Adobe Commerce sont d’un niveau qui atteint systématiquement le maximum des ressources du processeur et d’autres ressources système, alors un passage à une architecture mise à l’échelle (fractionnée) doit être pris en compte.
 
-Avec une architecture Pro standard, il existe 3 noeuds, chacun contenant une pile technique complète. En effectuant une conversion vers une architecture de niveau partagé, vous obtenez au moins 6 noeuds : 3 d&#39;entre eux contiennent Elasticsearch, MariaDB, Redis et d&#39;autres services principaux ; les 3 autres pour le traitement du trafic web contiennent phpfpm et NGINX. Il existe de plus grandes possibilités de mise à l’échelle avec un niveau partagé : les noeuds principaux contenant des bases de données peuvent être mis à l’échelle verticalement ; les noeuds web peuvent être mis à l’échelle horizontalement et verticalement, ce qui offre une grande flexibilité pour développer l’infrastructure à la demande pour une période définie d’activité de charge élevée et sur les noeuds où les ressources supplémentaires sont nécessaires.
+Avec une architecture Pro standard, il existe 3 noeuds, chacun contenant une pile technique complète. En effectuant une conversion vers une architecture à plusieurs niveaux, cela se transforme en 6 noeuds au minimum : 3 d’entre eux contiennent Elasticsearch, MariaDB, Redis et d’autres services principaux ; les 3 autres pour le traitement du trafic web contiennent phpfpm et NGINX. Il existe des possibilités de mise à l’échelle plus importantes avec un niveau partagé : les noeuds principaux contenant des bases de données peuvent être mis à l’échelle verticalement ; les noeuds web peuvent être mis à l’échelle horizontalement et verticalement, offrant ainsi une grande flexibilité pour développer l’infrastructure à la demande pendant la période définie d’activité à charge élevée et sur les noeuds où les ressources supplémentaires sont nécessaires.
 
 Si une décision a été prise de passer à une architecture à plusieurs niveaux en raison des fortes attentes en matière de charge sur votre site, une discussion doit être engagée avec votre équipe de compte d’Adobe sur les étapes à suivre pour activer cette fonctionnalité.

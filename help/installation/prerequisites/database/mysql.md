@@ -1,13 +1,13 @@
 ---
 title: Instructions MySQL
 description: Pour installer et configurer MySQL et MariaDB pour les installations sur site d’Adobe Commerce et de Magento Open Source, procédez comme suit.
-source-git-commit: c65217cd277be5226681ef239d6a3cf34c251a9f
+exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1142'
 ht-degree: 0%
 
 ---
-
 
 # Directives générales pour MySQL
 
@@ -16,13 +16,13 @@ Voir [Configuration requise](../../system-requirements.md) pour les versions pri
 Adobe _fortement_ recommande de respecter les normes suivantes lors de la configuration de votre base de données :
 
 * Utilisation d’Adobe Commerce et de Magento Open Source [Déclencheurs de base de données MySQL](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) pour améliorer l&#39;accès à la base de données lors de la réindexation. Ils sont créés lorsque le mode indexeur est défini sur [planning](../../../configuration/cli/manage-indexers.md#configure-indexers). L’application ne prend pas en charge les déclencheurs personnalisés dans la base de données, car les déclencheurs personnalisés peuvent introduire des incompatibilités avec les versions futures d’Adobe Commerce et de Magento Open Source.
-* Familiarisez-vous avec [ces limites potentielles de déclenchement MySQL ;](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) avant de continuer.
+* Se familiariser avec [ces limites potentielles de déclenchement MySQL ;](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) avant de continuer.
 * Pour améliorer la sécurité de votre base de données, activez l’option [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) le mode SQL pour empêcher le stockage de valeurs de données non valides, ce qui peut entraîner des interactions de base de données indésirables.
 * Adobe Commerce et Magento Open Source font _not_ prennent en charge la réplication basée sur des instructions MySQL. Assurez-vous que vous utilisez _only_ [réplication basée sur les lignes](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
 
 >[!WARNING]
 >
->Adobe Commerce utilise actuellement `CREATE TEMPORARY TABLE` des instructions dans les transactions, qui sont [incompatible](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) avec les mises en oeuvre de base de données, utilisez la réplication basée sur GTID, telle que [Instances de deuxième génération Google Cloud SQL](https://cloud.google.com/sql/docs/features#differences). Considérez MySQL pour Cloud SQL 8.0 comme une alternative.
+>Adobe Commerce utilise actuellement `CREATE TEMPORARY TABLE` des instructions au sein des transactions, qui sont [incompatible](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) avec les mises en oeuvre de base de données, utilisez la réplication basée sur GTID, telle que [Instances de deuxième génération Google Cloud SQL](https://cloud.google.com/sql/docs/features#differences). Considérez MySQL pour Cloud SQL 8.0 comme une alternative.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Si vous prévoyez d’importer un grand nombre de produits, vous pouvez augmente
 
 >[!NOTE]
 >
->La valeur par défaut s’applique à Adobe Commerce sur l’infrastructure cloud. _et_ des projets sur site. Les clients Adobe Commerce sur l’infrastructure cloud Pro doivent ouvrir un ticket d’assistance pour augmenter le `max_allowed_packet` . Les clients Adobe Commerce on Cloud Infrastructure Starter peuvent augmenter la valeur en mettant à jour la configuration dans la variable `/etc/mysql/mysql.cnf` fichier .
+>La valeur par défaut s’applique à Adobe Commerce sur l’infrastructure cloud. _et_ des projets sur site. Les clients d’Adobe Commerce sur l’infrastructure cloud Pro doivent ouvrir un ticket d’assistance pour augmenter le `max_allowed_packet` . Les clients Adobe Commerce on Cloud Infrastructure Starter peuvent augmenter la valeur en mettant à jour la configuration dans la variable `/etc/mysql/mysql.cnf` fichier .
 
 Pour augmenter la valeur, ouvrez la variable `/etc/mysql/mysql.cnf` dans un éditeur de texte et recherchez la valeur de `max_allowed_packet`. Enregistrez vos modifications dans le `mysql.cnf` fermez l’éditeur de texte, puis redémarrez MySQL (`service mysql restart`).
 
@@ -67,15 +67,15 @@ Description de admin_user sur mysql 8.19
 | Champ | Type | Null | Clé | Par défaut | Plus |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | user\_id | `int unsigned` | NON | PRI | `NULL` | `auto_increment` |
-| `firstname` | `varchar(32)` | OUI |  | `NULL` |  |
-| `lastname` | `varchar(32`) | OUI |  | `NULL` |  |
-| `email` | `varchar(128)` | OUI |  | `NULL` |  |
-| `username` | `varchar(40)` | OUI | UNI | `NULL` |  |
-| `password` | `varchar(255)` | NON |  | `NULL` |  |
-| `created` | `timestamp` | NON |  | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` |
-| `modified` | `timestamp` | NON |  | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` à mettre à jour `CURRENT_TIMESTAMP` |
-| `logdate` | `timestamp` | OUI |  | `NULL` |  |
-| `lognum` | `smallint unsigned` | NON |  | `0` |  |
+| `firstname` | `varchar(32)` | OUI | | `NULL` | |
+| `lastname` | `varchar(32`) | OUI | | `NULL` | |
+| `email` | `varchar(128)` | OUI | | `NULL` | |
+| `username` | `varchar(40)` | OUI | UNI | `NULL` | |
+| `password` | `varchar(255)` | NON | | `NULL` | |
+| `created` | `timestamp` | NON | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` |
+| `modified` | `timestamp` | NON | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` à mettre à jour `CURRENT_TIMESTAMP` |
+| `logdate` | `timestamp` | OUI | | `NULL` | |
+| `lognum` | `smallint unsigned` | NON | | `0` | |
 
 Sauf que _TINYINT(1)_, la marge intérieure des entiers (TINYINT > 1, SMALLINT, MEDIUMINT, INT, BIGINT) doit être supprimée de la variable `db_schema.xml` fichier .
 
@@ -92,7 +92,7 @@ Spécifiez toujours un ordre de tri si votre code dépend d’un tri spécifique
 
 ## Commerce et MySQL 8
 
-Des modifications ont été apportées à Adobe Commerce et Magento Open Source pour prendre correctement en charge MySQL 8.
+Des modifications ont été apportées à Adobe Commerce et à Magento Open Source pour prendre correctement en charge MySQL 8.
 
 ### Comportement de requête et d’insertion
 
@@ -175,7 +175,7 @@ Pour configurer une instance de base de données MySQL :
 
    Nous vous recommandons de configurer votre instance de base de données en fonction de vos besoins. Lors de la configuration de votre base de données, veuillez tenir compte des points suivants :
 
-   * Les indexeurs nécessitent des valeurs plus élevées `tmp_table_size` et `max_heap_table_size` (par exemple, 64 M). Si vous configurez la variable `batch_size` , vous pouvez ajuster cette valeur avec les paramètres de taille de tableau pour améliorer les performances de l’indexeur. Reportez-vous à la section [Guide d’optimisation](../../../performance/configuration.md) pour plus d’informations.
+   * Les indexeurs nécessitent des valeurs plus élevées `tmp_table_size` et `max_heap_table_size` (par exemple, 64 M). Si vous configurez la variable `batch_size` , vous pouvez ajuster cette valeur avec les paramètres de taille de tableau pour améliorer les performances de l’indexeur. Voir [Guide d’optimisation](../../../performance/configuration.md) pour plus d’informations.
 
    * Pour des performances optimales, assurez-vous que toutes les tables d’index MySQL et Adobe Commerce ou Magento Open Source peuvent être conservées en mémoire (par exemple, configurez la fonction `innodb_buffer_pool_size`).
 
@@ -192,7 +192,7 @@ Pour configurer une instance de base de données MySQL :
 
 >[!NOTE]
 >
->Le `explicit_defaults_for_timestamp` est obsolète. Ce paramètre contrôle les comportements TIMESTAMP obsolètes qui seront supprimés dans une prochaine version de MySQL. Lorsque ces comportements sont supprimés, la variable `explicit_defaults_for_timestamp` est également supprimé.
+>La variable `explicit_defaults_for_timestamp` est obsolète. Ce paramètre contrôle les comportements TIMESTAMP obsolètes qui seront supprimés dans une prochaine version de MySQL. Lorsque ces comportements sont supprimés, la variable `explicit_defaults_for_timestamp` est également supprimé.
 
 >[!WARNING]
 >

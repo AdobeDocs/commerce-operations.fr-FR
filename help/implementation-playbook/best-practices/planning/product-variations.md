@@ -1,5 +1,5 @@
 ---
-title: Bonnes pratiques de configuration des variations de produit
+title: Bonnes pratiques relatives à la configuration des variations de produit
 description: Découvrez comment optimiser les performances d’Adobe Commerce en limitant le nombre de variations de produit configurées.
 role: Admin
 feature: Best Practices, Catalogs

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Configuration du compartiment AWS S3 pour le stockage à distance
 
-Le [Amazon Simple Storage Service (Amazon S3)][AWS S3] est un service de stockage d’objets qui offre une évolutivité de pointe, une disponibilité des données, une sécurité et des performances. Le service AWS S3 utilise des compartiments, ou conteneurs, pour le stockage des données. Cette configuration nécessite la création d’un _private_ du compartiment. Pour Adobe Commerce sur l’infrastructure cloud, voir [Configuration du stockage à distance pour l’infrastructure Commerce on Cloud](cloud-support.md).
+La variable [Amazon Simple Storage Service (Amazon S3)][AWS S3] est un service de stockage d’objets qui offre une évolutivité de pointe, une disponibilité des données, une sécurité et des performances. Le service AWS S3 utilise des compartiments, ou conteneurs, pour le stockage des données. Cette configuration nécessite la création d’un _private_ du compartiment. Pour Adobe Commerce sur l’infrastructure cloud, voir [Configuration du stockage à distance pour l’infrastructure Commerce on Cloud](cloud-support.md).
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ Le [Amazon Simple Storage Service (Amazon S3)][AWS S3] est un service de stockag
 
 1. Configuration [AWS IAM] rôles. Vous pouvez également générer des clés d’accès et secrètes.
 
-1. Désactivez le stockage par défaut dans la base de données.
+1. Désactivez le stockage de la base par défaut.
 
    ```bash
    bin/magento config:set system/media_storage_configuration/media_database 0
@@ -44,7 +44,7 @@ Le [Amazon Simple Storage Service (Amazon S3)][AWS S3] est un service de stockag
 
 ## Configuration de Nginx
 
-Nginx nécessite une configuration supplémentaire pour effectuer l’authentification avec la fonction `proxy_pass` . Ajoutez les informations de proxy suivantes au `nginx.conf` fichier :
+Nginx nécessite une configuration supplémentaire pour effectuer l’authentification avec la fonction `proxy_pass` de . Ajoutez les informations de proxy suivantes au `nginx.conf` fichier :
 
 >nginx.conf
 
@@ -75,7 +75,7 @@ L’intégration S3 repose sur la possibilité de générer et de stocker des im
 
 ### Opérations de fichier
 
-Il est vivement recommandé d’utiliser [!DNL Commerce] méthodes d’adaptateur de fichier dans votre codage ou développement d’extension, quel que soit le type de stockage de fichier. Lors de l’utilisation de S3 pour le stockage, n’utilisez pas d’opérations d’E/S de fichier PHP natif, telles que `copy`, `rename`ou `file_put_contents`, car les fichiers S3 ne se trouvent pas dans le système de fichiers. Voir [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) pour des exemples de code.
+Il est vivement recommandé d’utiliser [!DNL Commerce] méthodes d’adaptateur de fichier dans votre codage ou développement d’extension, quel que soit le type de stockage de fichier. Lorsque vous utilisez S3 pour le stockage, n’utilisez pas d’opérations d’E/S de fichier PHP natif, telles que `copy`, `rename`, ou `file_put_contents`, car les fichiers S3 ne se trouvent pas dans le système de fichiers. Voir [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) pour des exemples de code.
 
 <!-- link definitions -->
 

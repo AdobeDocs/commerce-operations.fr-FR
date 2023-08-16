@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Configurer le vernis
 
-[Cache Varnish] est un accélérateur d’applications web open source (également appelé _accélérateur HTTP_ ou _mise en cache du proxy inverse HTTP_). Le vernis stocke (ou met en cache) des fichiers ou des fragments de fichiers en mémoire, ce qui permet à Varnish de réduire le temps de réponse et la consommation de bande passante du réseau lors de futures demandes équivalentes. Contrairement aux serveurs web tels qu&#39;Apache et nginx, Varnish a été conçu pour être utilisé exclusivement avec le protocole HTTP.
+[Cache de vernis] est un accélérateur d’applications web open source (également appelé _accélérateur HTTP_ ou _mise en cache du proxy inverse HTTP_). Le vernis stocke (ou met en cache) des fichiers ou des fragments de fichiers en mémoire, ce qui permet à Varnish de réduire le temps de réponse et la consommation de bande passante du réseau lors de futures demandes équivalentes. Contrairement aux serveurs web tels qu&#39;Apache et nginx, Varnish a été conçu pour être utilisé exclusivement avec le protocole HTTP.
 
-Commerce 2.4.2 est testé avec Varnish 6.4. Commerce 2.4.x est compatible avec Varnish 6.x.
+Commerce 2.4.2 est testé avec Varnish 6.4. Commerce 2.4.x est compatible avec Varnish 6.x
 
 >[!WARNING]
 >
@@ -52,9 +52,10 @@ Le processus peut être résumé comme suit :
    S’il n’y a rien dans votre `<magento_root>/var/page_cache` , vous avez correctement configuré le vernis avec Commerce !
 
 >[!NOTE]
+>
 - Sauf indication contraire, vous devez saisir toutes les commandes abordées dans cette rubrique en tant qu’utilisateur avec `root` des privilèges.
-- Cette rubrique est écrite pour le vernis sur CentOS et Apache 2.4. Si vous configurez le vernis dans un autre environnement, certaines commandes peuvent être différentes. Pour plus d’informations, consultez la documentation de vernis .
-
+>
+- Cette rubrique est écrite pour le vernis sur CentOS et Apache 2.4. Si vous définissez le vernis dans un autre environnement, certaines commandes peuvent être différentes. Pour plus d’informations, consultez la documentation de vernis .
 
 ## Problèmes connus
 
@@ -62,28 +63,28 @@ Nous connaissons les problèmes suivants avec le vernis :
 
 - [Le vernis ne prend pas en charge SSL]
 
-   Vous pouvez également utiliser la terminaison SSL ou un proxy de terminaison SSL.
+  Vous pouvez également utiliser la terminaison SSL ou un proxy de terminaison SSL.
 
 - Si vous supprimez manuellement le contenu de la variable `<magento_root>/var/cache` , vous devez redémarrer Varnish.
 
 - Erreur possible lors de l’installation de Commerce :
 
-   ```terminal
-   Error 503 Service Unavailable
-   Service Unavailable
-   XID: 303394517
-   Varnish cache server
-   ```
+  ```terminal
+  Error 503 Service Unavailable
+  Service Unavailable
+  XID: 303394517
+  Varnish cache server
+  ```
 
-   Si vous rencontrez cette erreur, modifiez `default.vcl` et ajoutez un délai d’expiration à la variable `backend` stanza comme suit :
+  Si vous rencontrez cette erreur, modifiez `default.vcl` et ajoutez un délai d’expiration à la variable `backend` stanza :
 
-   ```conf
-   backend default {
-       .host = "127.0.0.1";
-       .port = "8080";
-       .first_byte_timeout = 600s;
-   }
-   ```
+  ```conf
+  backend default {
+      .host = "127.0.0.1";
+      .port = "8080";
+      .first_byte_timeout = 600s;
+  }
+  ```
 
 ## Présentation de la mise en cache de vernis
 
@@ -94,7 +95,8 @@ La mise en cache de vernis fonctionne avec Commerce en utilisant :
 - `default.vcl` la configuration de vernis générée à l’aide de la fonction [Administration](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
-Cette rubrique couvre uniquement les options par défaut de la liste précédente. Il existe de nombreuses autres façons de configurer la mise en cache dans des scénarios complexes (par exemple, en utilisant un réseau de diffusion de contenu) ; ces méthodes vont au-delà de la portée de ce guide.
+>
+Cette rubrique couvre uniquement les options par défaut de la liste précédente. Il existe de nombreuses autres façons de configurer la mise en cache dans des scénarios complexes (par exemple, l’utilisation d’un réseau de diffusion de contenu). Ces méthodes vont au-delà de la portée de ce guide.
 
 Lors de la première demande de navigateur, les ressources pouvant être mises en cache sont diffusées à partir du navigateur client à partir de Varnish et mises en cache sur le navigateur.
 
@@ -117,6 +119,7 @@ La figure suivante illustre un exemple d’utilisation d’un inspecteur de navi
 L’exemple précédent illustre une requête pour la page principale storefront (`m2_ce_my`). Les ressources CSS et JavaScript sont mises en cache dans le navigateur client.
 
 >[!NOTE]
+>
 La plupart des ressources statiques comportent un code d’état HTTP 200 (OK), indiquant que la ressource a été récupérée à partir du serveur.
 
 ### Deuxième requête de navigateur
@@ -139,7 +142,7 @@ En outre, les ressources statiques sont renvoyées avec un code d’état HTTP 3
 
 ![Le code de réponse HTTP 304 (non modifié) indique que la ressource statique dans le cache local est la même que sur le serveur.](../../assets/configuration/varnish-304.png)
 
-Le code d’état 304 se produit car l’utilisateur a invalidé son cache local et le contenu sur le serveur n’a pas changé. En raison du code d’état 304, la ressource statique _content_ n’est pas transféré; seuls les en-têtes HTTP sont téléchargés dans le navigateur.
+Le code d’état 304 se produit car l’utilisateur a invalidé son cache local et le contenu sur le serveur n’a pas changé. En raison du code d’état 304, la ressource statique _content_ n’est pas transféré ; seuls les en-têtes HTTP sont téléchargés vers le navigateur.
 
 Si le contenu change sur le serveur, le client télécharge la ressource statique avec un code d’état HTTP 200 (OK) et un nouveau ETag.
 
@@ -147,7 +150,7 @@ Si le contenu change sur le serveur, le client télécharge la ressource statiqu
 
 [base]: https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/
 [L&#39;image du grand vernis]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
-[Cache Varnish]: https://varnish-cache.org
+[Cache de vernis]: https://varnish-cache.org
 [Options de démarrage en pointillés]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options
 [Performances et performances du site web]: https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance
 [Le vernis ne prend pas en charge SSL]: https://www.varnish-cache.org/docs/3.0/phk/ssl.html

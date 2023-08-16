@@ -53,7 +53,7 @@ La liste suivante répertorie les façons dont JIRA peut être utilisé au sein 
 - Gestion des tâches
 - Gestion des ressources
 - Planification des ressources
-- Rapports avancés
+- Création de rapports avancés
 - Panneaux JIRA personnalisables
 - Panneaux Kanban et Scrum prêts à l&#39;emploi
 - Sécurité et administration avancées
@@ -93,11 +93,11 @@ L’utilisation de sauvegardes au sein de toute équipe de commerce électroniqu
 
 ## Communication d’équipe
 
-Les compétences en communication d&#39;équipe sont enseignées dans de nombreux contextes différents, mais la culture d&#39;entreprise donne le ton.
+Les compétences en communication d&#39;équipe sont enseignées dans de nombreux contextes différents, mais la culture de l&#39;entreprise donne le ton.
 
 Voici quelques conseils pour améliorer la communication :
 
 - Gardez vos messages clairs, utilisez un langage simple et évitez le jargon. Bien que vos équipes soient susceptibles de connaître la terminologie du commerce électronique, le jargon peut encore empêcher toute compréhension.
-- Rencontrez votre équipe là où ils se sentent à l&#39;aise, que ce soit par le biais de messages écrits traditionnels ou vidéo envoyés par email.
+- Rencontrez votre équipe là où ils se sentent à l&#39;aise, que ce soit par des messages écrits ou vidéo traditionnels envoyés par email.
 - Utilisation de JIRA et de Confluence pour la gestion de projet, la planification et la documentation
-- Restez à l’affût et impactez l’ensemble de l’équipe
+- Restez à l’affût et impactez toute l’équipe

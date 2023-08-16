@@ -38,11 +38,11 @@ Pour plus d’informations, voir [`REDIS_BACKEND`](https://experienceleague.adob
 
 >[!NOTE]
 >
-> Vérifiez les `ece-tools` version installée dans votre environnement local à partir de la ligne de commande à l’aide de la fonction `composer show magento/ece-tools` . Si nécessaire, [mettre à jour vers la dernière version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html).
+> Vérifiez les `ece-tools` version installée dans votre environnement local à partir de la ligne de commande à l’aide du `composer show magento/ece-tools` . Si nécessaire, [mettre à jour vers la dernière version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html).
 
 >[!WARNING]
 >
->Do _not_ configurer une connexion Redis Secondaire pour les projets d’infrastructure cloud avec une [architecture mise à l’échelle](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Cela entraîne des erreurs de connexion Redis. Voir [les instructions de configuration Redis ;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) dans le _Commerce sur l’infrastructure cloud_ guide.
+>Do _not_ configurer une connexion esclave Redis pour les projets d’infrastructure cloud avec une [architecture mise à l’échelle](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Cela entraîne des erreurs de connexion Redis. Voir [les instructions de configuration Redis ;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) dans le _Commerce sur l’infrastructure cloud_ guide.
 
 ### Configuration des déploiements sur site
 
@@ -112,13 +112,13 @@ La séparation du cache Redis de la session Redis vous permet de gérer le cache
        min_lifetime: 60
    ```
 
-1. Supprimer des sessions du [base de données par défaut](../../../configuration/cache/redis-pg-cache.md) (`db 0`) sur l’instance de cache Redis.
+1. Supprimer des sessions du [base par défaut](../../../configuration/cache/redis-pg-cache.md) (`db 0`) sur l’instance de cache Redis.
 
    ```bash
    redis-cli -h 127.0.0.1 -p 6374 -n 0 FLUSHDB
    ```
 
-Au cours du déploiement, les lignes suivantes doivent s’afficher dans le [journal de création et de déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
+Au cours du déploiement, les lignes suivantes doivent s’afficher dans la variable [journal de création et de déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
 
 ```terminal
 W:   - Downloading colinmollenhour/credis (1.11.1)
@@ -134,7 +134,7 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 
 ## Compression du cache
 
-Utilisez la compression du cache, mais sachez qu’il existe un compromis avec les performances côté client. Si vous disposez de spare CPU, activez-le. Voir [Utilisation de Redis pour le stockage de session](../../../configuration/cache/redis-session.md).
+Utilisez la compression du cache, mais sachez qu’il existe un compromis avec les performances côté client. Si vous avez des unités centrales de secours, activez-le. Voir [Utilisation de Redis pour le stockage de session](../../../configuration/cache/redis-session.md).
 
 ```yaml
 stage:

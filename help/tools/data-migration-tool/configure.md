@@ -1,6 +1,6 @@
 ---
 title: Configurez la variable [!DNL Data Migration Tool]
-description: En savoir plus sur les deux méthodes de configuration de [!DNL Data Migration Tool] pour transférer des données entre le Magento 1 et le Magento 2.
+description: En savoir plus sur les deux méthodes de configuration de la variable [!DNL Data Migration Tool] pour transférer des données entre le Magento 1 et le Magento 2.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -14,12 +14,12 @@ ht-degree: 0%
 
 Après avoir installé la variable [!DNL Data Migration Tool], le répertoire suivant contient les fichiers de mappage et de configuration :
 
-* Magento Open Source :
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: Configuration et scripts pour la migration de Magento Open Source 1 vers Magento Open Source 2
+* MAGENTO OPEN SOURCE :
+   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: configuration et scripts pour la migration de Magento Open Source 1 vers Magento Open Source 2
 
-* Adobe Commerce :
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: Configuration et scripts pour la migration de Magento Open Source 1 vers Adobe Commerce 2
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`: Configuration et scripts pour la migration d’Adobe Commerce 1 vers Adobe Commerce 2
+* ADOBE COMMERCE :
+   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: configuration et scripts pour la migration de Magento Open Source 1 vers Adobe Commerce 2
+   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`: configuration et scripts pour la migration d’Adobe Commerce 1 vers Adobe Commerce 2
 
 Les répertoires précédents contiennent des sous-répertoires pour chaque version prise en charge.
 
@@ -92,7 +92,7 @@ Avant de migrer des données, vous devez créer un module Magento 2.
    </config>
    ```
 
-1. Copiez le `config.xml.dist` fichier de configuration à partir du répertoire approprié du fichier [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>`) dans le `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/config.xml` fichier .
+1. Copiez le `config.xml.dist` fichier de configuration à partir du répertoire approprié du fichier [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>`) dans la variable `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/config.xml` fichier .
 
    Par exemple, si vous migrez `Magento 1.9.3.6 Community Edition` to `Magento 2 Open Source`:
 
@@ -144,7 +144,7 @@ Pour configurer la variable [!DNL Data Migration Tool] pour la migration :
    </options>
    ```
 
-   Le &lt;crypt_key> La balise doit contenir une valeur . Vous pouvez le trouver dans la variable `<key>` qui se trouve dans le fichier app/etc/local.xml de votre instance Magento 1.
+   La variable &lt;crypt_key> La balise doit contenir une valeur . Vous pouvez le trouver dans la variable `<key>` qui se trouve dans le fichier app/etc/local.xml de votre instance Magento 1.
 
    Paramètres facultatifs :
 
@@ -177,7 +177,7 @@ Vous pouvez également vous connecter à une base de données à l’aide du pro
 * `ssl_cert`
 * `ssl_key`
 
-Par exemple :
+Par exemple :
 
 ```xml
 <source>
@@ -190,7 +190,7 @@ Par exemple :
 
 ## Utilisation des fichiers de configuration et de mappage
 
-Le [!DNL Data Migration Tool] uses *mapping des fichiers* pour vous permettre d’effectuer un mapping de base de données personnalisé entre vos bases de données Magento 1 et Magento 2, notamment :
+La variable [!DNL Data Migration Tool] uses *mapping des fichiers* pour vous permettre d’effectuer un mapping de base de données personnalisé entre vos bases de données Magento 1 et Magento 2, notamment :
 
 * Modification des noms de table
 
@@ -204,15 +204,15 @@ Les fichiers de mappage pour les versions de Magento prises en charge se trouven
 
 Pour utiliser les fichiers de mappage :
 
-1. Copiez-les à partir de `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/` to `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/` et supprimez la variable `.dist` extension .
+1. Copiez-les depuis `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/` to `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/` et supprimez la variable `.dist` extension .
 
 1. Mettez à jour le chemin d’accès au fichier nouvellement copié dans le `<options>` noeud de `config.xml`. Le chemin d’accès mis à jour doit être l’un des suivants :
 
-   1. Chemin d’accès absolu au fichier, par exemple. g. `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. Chemin d’accès absolu au fichier, par exemple `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. chemin relatif du fichier du module magento/data-migration-tool : `etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. Chemin du fichier relatif à la racine du Magento : `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
 
-Le `<Magento 2 dir>/vendor/magento/data-migration-tool/etc` et `<Magento 2 dir>/vendor/magento/data-migration-tool/etc/<ce version>` Les répertoires contiennent les fichiers de configuration suivants :
+La variable `<Magento 2 dir>/vendor/magento/data-migration-tool/etc` et `<Magento 2 dir>/vendor/magento/data-migration-tool/etc/<ce version>` Les répertoires contiennent les fichiers de configuration suivants :
 
 Même si vous travaillez avec la variable `map.xml.dist` la plupart du temps, le tableau suivant traite de chaque mappage et d’autres fichiers.
 
@@ -235,7 +235,7 @@ Même si vous travaillez avec la variable `map.xml.dist` la plupart du temps, le
 | `customer-document-groups.xml.dist` | Contient la liste des tableaux utilisés dans l’étape Attributs du client. |
 | `map-customer.xml.dist` | Fichier de mappage utilisé dans l’étape Attributs du client. |
 | `order-grids-document-groups.xml.dist` | Contient la liste des tables utilisées dans l’étape OrderGrids. |
-| `map-document-groups.xml.dist` | Définit les champs qui sont mis à jour lorsque des doublons se produisent lors de l’insertion de données. |
+| `map-document-groups.xml.dist` | Définit les champs qui sont mis à jour lors des doublons lors de l’insertion de données. |
 | `map-stores.xml.dist` | Fichier de mappage utilisé dans l’étape Magasins. |
 | `map-tier-price.xml.dist` | Fichier de mappage utilisé dans l’étape de prix de niveau. |
 | *Adobe Commerce uniquement*. `visual_merchandiser_map.xml.dist` | Fichier de mappage utilisé dans l’étape VisualMerchandiser. |

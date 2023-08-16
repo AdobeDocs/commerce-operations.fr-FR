@@ -14,15 +14,15 @@ ht-degree: 0%
 
 Cette section explique comment configurer le propriétaire ou les propriétaires du système de fichiers Commerce pour un système de développement et de production. Avant de poursuivre, passez en revue les concepts abordés dans la section [Présentation de la propriété et des autorisations du système de fichiers](../../installation/prerequisites/file-system/overview.md).
 
-Cette rubrique porte sur le développement commercial et les systèmes de production. Si vous installez Commerce, reportez-vous à la section [Définition de la propriété et des autorisations de pré-installation](../../installation/prerequisites/file-system/configure-permissions.md).
+Cette rubrique porte sur le développement commercial et les systèmes de production. Si vous installez Commerce, voir [Définition de la propriété et des autorisations de pré-installation](../../installation/prerequisites/file-system/configure-permissions.md).
 
 Les sections suivantes abordent les exigences relatives à un ou deux propriétaires de système de fichiers. Cela signifie :
 
 - **Un utilisateur**: généralement nécessaire sur les fournisseurs d’hébergement partagés, qui vous permettent d’accéder à un seul utilisateur sur le serveur. Cet utilisateur peut se connecter, transférer des fichiers par FTP et exécuter également le serveur web.
 
-- **Deux utilisateurs**—Nous recommandons deux utilisateurs si vous exécutez votre propre serveur Commerce : une pour transférer des fichiers et exécuter des utilitaires de ligne de commande, ainsi qu’un utilisateur distinct pour le logiciel du serveur web. Dans la mesure du possible, cette option est préférable, car elle est plus sécurisée.
+- **Deux utilisateurs**: nous recommandons deux utilisateurs si vous exécutez votre propre serveur Commerce : un pour transférer des fichiers et exécuter des utilitaires de ligne de commande, ainsi qu’un utilisateur distinct pour le logiciel du serveur Web. Dans la mesure du possible, cette option est préférable, car elle est plus sécurisée.
 
-   Vous avez plutôt des utilisateurs distincts :
+  Vous disposez à la place d’utilisateurs distincts :
 
    - Utilisateur du serveur web, qui exécute l’administrateur et le storefront.
 
@@ -49,7 +49,7 @@ En mode développeur ou par défaut, les répertoires suivants doivent pouvoir �
 
 Vous pouvez définir ces autorisations à l’aide de la ligne de commande ou d’une application de gestionnaire de fichiers fournie par votre fournisseur d’hébergement partagé.
 
-### Configuration d’un propriétaire pour le mode de production
+### Configurer un propriétaire pour le mode de production
 
 Lorsque vous êtes prêt à déployer votre site en production, vous devez supprimer l’accès en écriture des fichiers dans les répertoires suivants afin d’améliorer la sécurité :
 
@@ -64,7 +64,7 @@ Lorsque vous êtes prêt à déployer votre site en production, vous devez suppr
 
 Pour mettre à jour des composants, installer de nouveaux composants ou mettre à niveau le logiciel Commerce, tous les répertoires précédents doivent être en lecture-écriture.
 
-#### Rendre les fichiers de code et les répertoires en lecture seule
+#### Lecture seule des fichiers et répertoires de code
 
 Pour supprimer les autorisations d’écriture sur les fichiers et répertoires du groupe d’utilisateurs du serveur web :
 
@@ -110,19 +110,19 @@ Voir [Éventuellement, définissez un masque](../../installation/next-steps/set-
 
 Si vous utilisez votre propre serveur (y compris la configuration du serveur privé d’un fournisseur d’hébergement), il y a deux utilisateurs :
 
-- Le **utilisateur du serveur web**, qui exécute l’administrateur et le storefront.
+- La variable **utilisateur du serveur web**, qui exécute l’administrateur et le storefront.
 
-   Les systèmes Linux ne fournissent généralement pas de shell à cet utilisateur ; vous ne pouvez pas vous connecter au serveur Commerce en tant qu’utilisateur du serveur web ni le changer.
+  Les systèmes Linux ne fournissent généralement pas d’interpréteur de commandes à cet utilisateur ; vous ne pouvez pas vous connecter au serveur Commerce en tant qu’utilisateur du serveur Web, ni le changer.
 
-- Le **utilisateur de ligne de commande**, que vous vous connectez à votre serveur Commerce sous ou vers lequel vous basculez.
+- La variable **utilisateur de ligne de commande**, que vous vous connectez à votre serveur Commerce sous ou vers lequel vous basculez.
 
-   Commerce utilise cet utilisateur pour exécuter les commandes de l’interface de ligne de commande et cron.
+  Commerce utilise cet utilisateur pour exécuter les commandes de l’interface de ligne de commande et cron.
 
-   >[!INFO]
-   >
-   >L’utilisateur de ligne de commande est également appelé _propriétaire du système de fichiers_.
+  >[!INFO]
+  >
+  >L’utilisateur de ligne de commande est également appelé _propriétaire du système de fichiers_.
 
-Comme ces utilisateurs ont besoin d’un accès aux mêmes fichiers, nous vous recommandons de créer une [groupe partagé](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) à laquelle ils appartiennent tous deux. Les procédures suivantes supposent que vous avez déjà fait cela.
+Comme ces utilisateurs ont besoin d’un accès aux mêmes fichiers, nous vous recommandons de créer une [groupe partagé](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) à laquelle ils appartiennent tous les deux. Les procédures suivantes supposent que vous avez déjà fait cela.
 
 Consultez l’une des sections suivantes :
 
@@ -149,7 +149,7 @@ En outre, les répertoires doivent pouvoir être écrits par le groupe de serveu
 
 #### Définir les autorisations et `setgid`
 
-Pour définir `setgid` et autorisations pour le mode développeur :
+Pour définir `setgid` et les autorisations pour le mode développeur :
 
 1. Connectez-vous à votre serveur Commerce en tant que propriétaire du système de fichiers ou passez à .
 1. Saisissez les commandes suivantes dans l’ordre indiqué :
@@ -180,7 +180,7 @@ Lorsque vous êtes prêt à déployer votre site en production, vous devez suppr
 - `generated/metadata`
 - `var/view_preprocessed`
 
-#### Rendre les fichiers de code et les répertoires en lecture seule
+#### Lecture seule des fichiers et répertoires de code
 
 Pour supprimer les autorisations d’écriture sur les fichiers et répertoires du groupe d’utilisateurs du serveur web :
 

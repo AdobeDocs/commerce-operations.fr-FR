@@ -25,7 +25,7 @@ Mettez à niveau les services et les composants utilisés par Adobe Commerce ava
 
 Les clients utilisant des plans de démarrage peuvent se servir eux-mêmes lors des mises à niveau de services. Voir [Modification de la version du service](https://devdocs.magento.com/cloud/project/services.html#change-service-version) pour plus d’informations sur la manière de procéder.
 
-Les clients des forfaits Pro ne peuvent être en libre-service que lors des mises à niveau de services dans leurs [Environnement d’intégration](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Pour les mises à niveau de services en production, vous devez [envoi d’un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) demande de mise à niveau.
+Les clients des forfaits Pro ne peuvent être en libre-service que lors des mises à niveau de services dans leurs [Environnement d’intégration](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Pour les mises à niveau de services en production, vous devez [envoyer un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) demande de mise à niveau.
 
 >[!WARNING]
 >

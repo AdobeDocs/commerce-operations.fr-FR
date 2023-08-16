@@ -1,19 +1,19 @@
 ---
 title: Logiciels facultatifs
 description: Découvrez les logiciels facultatifs que vous pouvez installer pour prendre en charge les installations sur site d’Adobe Commerce et de Magento Open Source.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 0%
 
 ---
 
-
 # Logiciels facultatifs
 
 Nous vous recommandons vivement d’installer NTP pour vous assurer que les tâches liées à cron fonctionnent correctement. (Les dates du serveur peuvent être passées ou futures, par exemple.)
 
-Les autres utilitaires facultatifs abordés dans cette rubrique peuvent vous aider à effectuer votre installation ; toutefois, ils ne sont pas nécessaires pour installer ou utiliser Adobe Commerce ou Magento Open Source.
+Les autres utilitaires facultatifs abordés dans cette rubrique peuvent vous aider à effectuer votre installation. Toutefois, ils ne sont pas nécessaires pour installer ou utiliser Adobe Commerce ou Magento Open Source.
 
 ## Installation et configuration du protocole NTP (Network Time Protocol)
 
@@ -41,7 +41,7 @@ Pour installer et configurer NTP :
    yum search ntp
    ```
 
-1. Sélectionnez un package à installer. Par exemple : `ntp.x86_64`.
+1. Sélectionnez un package à installer. Par exemple, `ntp.x86_64`.
 
 1. Installez le package.
 
@@ -59,7 +59,7 @@ Pour installer et configurer NTP :
 
 ### Utiliser les serveurs de pool NTP
 
-C’est à vous de choisir les serveurs de pool. Si vous utilisez des serveurs de pool NTP, ntp.org vous recommande d’utiliser [serveurs de pool](https://www.ntppool.org/en/) qui sont proches du fuseau horaire de vos serveurs, comme indiqué dans la section [Page de projet de pool NTP](https://www.ntppool.org/en/use.html). Si vous disposez d’un serveur NTP privé disponible pour tous les hôtes de votre déploiement, vous pouvez utiliser ce serveur à la place.
+C’est à vous de choisir les serveurs de pool. Si vous utilisez des serveurs de pool NTP, ntp.org vous recommande d&#39;utiliser [serveurs de pool](https://www.ntppool.org/en/) qui sont proches du fuseau horaire de vos serveurs, comme indiqué dans la section [Page de projet de pool NTP](https://www.ntppool.org/en/use.html). Si votre déploiement comprend un serveur NTP privé disponible pour tous les hôtes, vous pouvez utiliser ce serveur à la place.
 
 1. Ouvrir `/etc/ntp.conf` dans un éditeur de texte.
 
@@ -99,7 +99,7 @@ C’est à vous de choisir les serveurs de pool. Si vous utilisez des serveurs d
 
 ## Créer phpinfo.php
 
-Le [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) affiche une grande quantité d’informations sur PHP et ses extensions.
+La variable [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) affiche une grande quantité d’informations sur PHP et ses extensions.
 
 >[!NOTE]
 >
@@ -126,9 +126,9 @@ Si une erreur 404 (Introuvable) s’affiche, vérifiez les points suivants :
 * Démarrez le serveur web si nécessaire.
 * Assurez-vous que votre pare-feu autorise le trafic sur le port 80.
 
-   [Aide pour Ubuntu](https://help.ubuntu.com/community/UFW)
+  [Aide pour Ubuntu](https://help.ubuntu.com/community/UFW)
 
-   [Aide de CentOS](https://wiki.centos.org/HowTos/Network/IPTables)
+  [Aide de CentOS](https://wiki.centos.org/HowTos/Network/IPTables)
 
 ## phpMyAdmin
 

@@ -39,7 +39,7 @@ Cette section vous concerne *only* si vous stockez des fichiers multimédias dan
 
 1. Cliquez sur **Système** > **Configuration** > AVANCÉ > **Système**.
 
-1. Dans le volet de droite, faites défiler l’écran jusqu’à **Configuration de stockage pour Media**.
+1. Dans le volet de droite, faites défiler jusqu’à **Configuration de stockage pour Media**.
 
 1. Dans la **Sélectionner la base de données multimédia** cliquez sur le nom de votre base de données de stockage de médias.
 
@@ -49,7 +49,7 @@ Répétez ensuite les mêmes étapes dans le panneau d’administration de Magen
 
 ### Fichiers multimédias dans le système de fichiers
 
-Tous les fichiers multimédias (images pour les produits, les catégories, l’éditeur WYSIWYG, etc.) doivent être copiés manuellement à partir de `<your Magento 1 install dir>/media` to `<your Magento 2 install dir>/pub/media`.
+Tous les fichiers multimédias (images pour les produits, les catégories, l’éditeur WYSIWYG, etc.) doivent être copiés manuellement depuis `<your Magento 1 install dir>/media` to `<your Magento 2 install dir>/pub/media`.
 
 Toutefois, la méthode *not* Copiez le `.htaccess` fichiers situés dans le Magento 1 `media` dossier. Le Magento 2 a sa propre `.htaccess` qui doivent être préservées.
 
@@ -57,7 +57,7 @@ Toutefois, la méthode *not* Copiez le `.htaccess` fichiers situés dans le Mage
 
 * La conception dans les fichiers (CSS, JS, modèles, mises en page XML) a modifié son emplacement et son format.
 
-* Mise en page Mises à jour stockées dans la base de données. Transmis par l’administrateur Magento 1 dans les pages CMS, les widgets CMS, les pages de catégorie et les pages de produit
+* Mise en page Mises à jour stockées dans la base de données. Transmis par l’administrateur Magento 1 dans les pages CMS, widgets CMS, pages de catégorie et pages de produit
 
 ## Listes de contrôle d’accès (ACL)
 

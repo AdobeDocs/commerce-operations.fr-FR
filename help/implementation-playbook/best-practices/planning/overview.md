@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Phase de planification
+# Planification
 
 La phase de planification comprend les activités suivantes :
 
@@ -37,7 +37,7 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
 
 - **Configuration de la base de données**
    - [Bonnes pratiques relatives à la configuration des bases de données pour les déploiements dans le cloud &#x200B;](database-on-cloud.md)
-   - [Configuration de la connexion au Secondaire MySQL &#x200B;](configure-mysql-slave-connection-on-cloud.md)
+   - [Configuration de la connexion esclave MySQL &#x200B;](configure-mysql-slave-connection-on-cloud.md)
    - [Utilisation des déclencheurs MySQL](mysql-triggers-usage.md)
 
 - **Configuration des services**

@@ -1,13 +1,13 @@
 ---
 title: Rapports de dépendance
 description: Créez des rapports qui affichent les totaux pour les dépendances de module, circulaire et de structure.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
 
 ---
-
 
 # Rapports de dépendance
 
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Vous pouvez exécuter les types de rapports suivants :
 
-- **Dépendances des modules**: Affiche le nombre total de dépendances entre les modules et indique si les dépendances sont hard ou soft.
-- **Dépendances circulaires**: Affiche le nombre total de chaînes de dépendances ainsi que le nombre et la liste des dépendances circulaires pour chaque module.
-- **Dépendances des structures**: Affiche le nombre total de dépendances sur la structure de commerce par module (y compris le nombre total d’entrées de structure pour chaque bibliothèque).
+- **Dépendances des modules**: indique le nombre total de dépendances entre les modules et si les dépendances sont hard ou soft.
+- **Dépendances circulaires**: affiche le nombre total de chaînes de dépendances et le nombre et la liste des dépendances circulaires pour chaque module.
+- **Dépendances des structures**: affiche le nombre total de dépendances sur la structure de commerce par module (y compris le nombre total d’entrées de structure pour chaque bibliothèque).
 
 Une dépendance dans un commentaire est également une dépendance.
 
@@ -39,7 +39,7 @@ Le tableau suivant explique les options, paramètres et valeurs de cette command
 | `-d --directory` | Chemin d’accès au répertoire de base pour commencer la recherche des données de rapport. | Non |
 | `-o --output` | Indique le chemin d’accès au système de fichiers absolu et le nom de fichier du fichier de sortie csv (valeurs séparées par des virgules) pour le rapport. | Non |
 
-Si aucun répertoire ou nom de fichier n’est transmis en tant qu’argument, la racine de l’application suivante est utilisée comme répertoire par défaut et les noms de fichier par défaut suivants sont utilisés :
+Si aucun répertoire ou nom de fichier n’est transmis comme argument, la racine de l’application suivante est utilisée comme répertoire par défaut et les noms de fichier par défaut suivants sont utilisés :
 
 | Commande | Nom du fichier |
 | ----------------------------------------------------- | ----------------------------------- |

@@ -1,5 +1,5 @@
 ---
-title: Le [!UICONTROL [!DNL RabbitMQ]Onglet ]
+title: La variable [!UICONTROL [!DNL RabbitMQ]Onglet ]
 description: En savoir plus sur les [!UICONTROL [!DNL RabbitMQ]] onglet de [!DNL Observation for Adobe Commerce].
 exl-id: c5370c30-fed8-4f45-89c3-ef0d6ad41a89
 feature: Configuration, Observability
@@ -10,15 +10,15 @@ ht-degree: 0%
 
 ---
 
-# Le [!UICONTROL [!DNL RabbitMQ]] tab
+# La variable [!UICONTROL [!DNL RabbitMQ]] tab
 
-Le **[!UICONTROL [!DNL RabbitMQ]]** contient des informations ciblées sur [!DNL RabbitMQ] signaux.
+La variable **[!UICONTROL [!DNL RabbitMQ]]** contient des informations ciblées sur [!DNL RabbitMQ] les signaux.
 
 ## [!UICONTROL [!DNL RabbitMQ] Infrastructure events]
 
 ![[!DNL RabbitMQ] Événements d’infrastructure](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
 
-Le **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** Le cadre affiche les événements d’infrastructure qui impliquent [!DNL RabbitMQ] qui s’est produit au cours de la période sélectionnée :
+La variable **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** Le cadre affiche les événements d’infrastructure qui impliquent [!DNL RabbitMQ] qui s’est produit pendant la période sélectionnée :
 
 * `%Response [error] for node [rabbit@host1]: unexpected http response from%`) as `unexpected_resp_node1`
 * `%Response [error] for node [rabbit@host2]: unexpected http response from%`) as `unexpected_resp_node2`
@@ -41,7 +41,7 @@ Le **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** Le cadre affiche les �
 
 ## [!UICONTROL [!DNL RabbitMQ] service start/stop signals]
 
-![[!DNL RabbitMQ] signaux de démarrage/arrêt du service](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
+![[!DNL RabbitMQ] signaux de démarrage et d’arrêt du service](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
 
 Ce cadre affiche : [!DNL RabbitMQ] signaux de démarrage/arrêt du service qui se sont produits pendant la période sélectionnée :
 
@@ -75,7 +75,7 @@ Ce cadre affiche : [!DNL RabbitMQ] erreurs qui se sont produites au cours de la 
 
 ![[!DNL RabbitMQ] État du résumé de haut niveau du message par file d’attente](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)
 
-Le **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** Le graphique affiche le nombre de messages publiés par la variable [!DNL RabbitMQ] file d’attente pour la période sélectionnée.
+La variable **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** Le graphique affiche le nombre de messages publiés par la variable [!DNL RabbitMQ] file d’attente pour la période sélectionnée.
 
 ## [!UICONTROL [!DNL RabbitMQ] Message Detail Summary]
 
@@ -90,28 +90,28 @@ Le **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** L
 
 ![[!DNL RabbitMQ] Mo de consommation de la file d’attente](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
 
-Le **[!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]** Le graphique indique le nombre d’octets consommés par chaque [!DNL RabbitMQ] placer la file d’attente sur la période sélectionnée.
+La variable **[!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]** Le graphique indique le nombre d’octets consommés par chaque [!DNL RabbitMQ] placer la file d’attente sur la période sélectionnée.
 
 ## [!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]
 
 ![[!DNL RabbitMQ] Messages publiés par file d’attente](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
 
-Le **[!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]** Le graphique indique le nombre d’octets consommés par chaque [!DNL RabbitMQ] placer la file d’attente sur la période sélectionnée.
+La variable **[!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]** Le graphique indique le nombre d’octets consommés par chaque [!DNL RabbitMQ] placer la file d’attente sur la période sélectionnée.
 
 ## [!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]
 
 ![[!DNL RabbitMQ] Débit des messages publiés par file d’attente](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
 
-Le **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** Le graphique indique le nombre moyen de messages publiés par seconde pour chaque [!DNL RabbitMQ] placer la file d’attente sur la période sélectionnée.
+La variable **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** Le graphique indique le nombre moyen de messages publiés par seconde pour chaque [!DNL RabbitMQ] placer la file d’attente sur la période sélectionnée.
 
 ## [!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]
 
 ![[!DNL RabbitMQ] Débit total des messages par file d’attente](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
 
-Le **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** Le graphique indique le nombre total moyen de messages par seconde pour chaque [!DNL RabbitMQ] placer la file d’attente sur la période sélectionnée.
+La variable **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** Le graphique indique le nombre total moyen de messages par seconde pour chaque [!DNL RabbitMQ] placer la file d’attente sur la période sélectionnée.
 
 ## [!UICONTROL [!DNL RabbitMQ] Consumers by Queue]
 
 ![[!DNL RabbitMQ] Consommateurs par file d’attente](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
 
-Le **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** Le graphique montre le nombre total moyen de consommateurs par chaque [!DNL RabbitMQ] placer la file d’attente sur la période sélectionnée.
+La variable **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** Le graphique montre le nombre total moyen de consommateurs par chaque [!DNL RabbitMQ] placer la file d’attente sur la période sélectionnée.

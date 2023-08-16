@@ -19,7 +19,7 @@ Il existe plusieurs façons de mettre à niveau efficacement un site de commerce
 >
 >Sauvegardez toujours les fichiers avant d’exécuter une mise à niveau.
 
-## Pourquoi la mise à niveau est-elle logique ?
+## Pourquoi la mise à niveau a du sens
 
 Comme le changement et l&#39;adaptation aux nouveaux comportements des clients sont la norme, le fait d&#39;être sur une plateforme plus ancienne rend plus coûteux et chronophage l&#39;adaptation ou l&#39;imitation de nouvelles technologies et comportements, ou tout simplement impossible. En outre, à mesure que de plus en plus de développeurs se concentrent sur les nouvelles technologies, la planification et le coût des projets de rénovation peuvent être prohibitifs.
 
@@ -45,16 +45,16 @@ Voici une liste rapide des questions que vous devez poser lorsque vous planifiez
 
 Q : Combien de temps dure une mise à niveau type ?
 
-A : Cela dépend de la plateforme et de l’architecture. Il y a beaucoup de variables, et si vous effectuez également une reconception, cela prend plus de temps. Une fois le processus de découverte terminé, votre équipe de mise en oeuvre peut vous donner un délai plus précis pour votre projet.
+R : Cela dépend de la plateforme et de l’architecture. Il y a beaucoup de variables, et si vous effectuez également une reconception, cela prend plus de temps. Une fois le processus de découverte terminé, votre équipe de mise en oeuvre peut vous donner un délai plus précis pour votre projet.
 
 
-Q : Combien coûte l&#39;upgrade ?
+Q : Combien coûte l’upgrade ?
 
-A : Encore une fois, cela dépend de votre situation actuelle et de vos besoins pour votre nouveau site. La bonne nouvelle, c’est que, généralement, à mesure que les partenaires et les développeurs se familiarisent et s’habituent à votre plate-forme Commerce, les coûts de mise à niveau et la durée des projets diminuent. Nous vous recommandons de consulter votre Solution Partner pour obtenir une estimation.
+R : Encore une fois, cela dépend de votre situation actuelle et de vos besoins pour votre nouveau site. La bonne nouvelle, c’est que, généralement, à mesure que les partenaires et les développeurs se familiarisent et s’habituent à votre plate-forme Commerce, les coûts de mise à niveau et la durée des projets diminuent. Nous vous recommandons de consulter votre Solution Partner pour obtenir une estimation.
 
 Q : Les versions Adobe Commerce 2 de mes extensions Adobe Commerce 1 sont-elles disponibles ?
 
-A : Presque tous les besoins essentiels à l’entreprise sont couverts. Du contenu et des personnalisations, de l’expédition et de l’exécution à l’optimisation du site, nous avons constaté une augmentation spectaculaire du nombre, et de la diversité, des extensions dans le Commerce Marketplace, à mesure que l’adoption commerciale d’Adobe Commerce et la familiarité avec ce dernier ont augmenté.
+R : Pratiquement tous les besoins essentiels de l’entreprise sont couverts. Du contenu et des personnalisations, de l’expédition et de l’exécution à l’optimisation du site, nous avons constaté une augmentation spectaculaire du nombre, et de la diversité, des extensions dans le Commerce Marketplace, à mesure que l’adoption commerciale d’Adobe Commerce et la familiarité avec ce dernier ont augmenté.
 
 Voici quelques exemples de grandes entreprises technologiques mondiales ayant créé des extensions :
 
@@ -73,14 +73,14 @@ En outre, les contrôles d’assurance qualité implémentés pour toutes les ex
 
 De nombreux commerçants ont constaté que les fonctionnalités natives d’Adobe Commerce ont réduit leurs besoins et leur dépendance aux extensions, simplifiant les opérations de développement et de maintenance et améliorant les performances globales. Si ce n’est déjà fait, nous vous recommandons d’effectuer une mise à niveau approfondie afin de découvrir ce type d’opportunités.
 
-Q : Que faire si mes extensions et intégrations ne sont pas compatibles avec la plateforme ?
+Q : Que se passe-t-il si mes extensions et intégrations ne sont pas compatibles avec la plateforme ?
 
-A : Selon la flexibilité de la plateforme et la solution d’hébergement, différentes options de personnalisation peuvent être une option pour la plupart des logiciels et des systèmes. Ces personnalisations peuvent être développées au cours du processus de mise à niveau.
+R : Selon la flexibilité de la plateforme et la solution d’hébergement, différentes options de personnalisation peuvent être une option pour la plupart des logiciels et des systèmes. Ces personnalisations peuvent être développées au cours du processus de mise à niveau.
 
 
-Q : Comment mon optimisation du moteur de recherche sera-t-elle affectée ?
+Q : Comment mon optimisation pour les moteurs de recherche sera-t-elle affectée ?
 
-A : Avec une planification adéquate, votre optimisation du référencement doit être améliorée. Notre partenaire Corra recommande :
+R : Avec une planification adéquate, votre optimisation pour les moteurs de recherche doit être améliorée. Notre partenaire Corra recommande :
 
 - Créer un plan de redirection 301 succinct
 - Construire une stratégie autour de la taxonomie des URL

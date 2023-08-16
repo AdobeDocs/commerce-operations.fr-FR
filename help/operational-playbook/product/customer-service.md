@@ -16,7 +16,7 @@ L’e-commerce est basé sur le numérique et la seule équipe qui interagit ave
 
 ![Graphique à barres du service client](../../assets/playbooks/customer-service-chart.png)
 
-Les détaillants doivent être pro-principaux en termes de service à la clientèle, car non seulement le nom de la marque est en jeu, mais surtout la loyauté du client. Pour que les détaillants réussissent à offrir la meilleure expérience client, ils peuvent suivre certaines bonnes pratiques :
+Les détaillants doivent être proactifs en termes de service à la clientèle, car non seulement le nom de la marque est en jeu, mais surtout la loyauté du client. Pour que les détaillants réussissent à offrir la meilleure expérience client, ils peuvent suivre certaines bonnes pratiques :
 
 - **Canal multi-support**- Fournir du service par courriel ou par téléphone ne suffit pas à l&#39;ère actuelle. Le service client doit être fourni sur divers canaux, tels que les tchats en direct, les emails, les appels téléphoniques, les médias sociaux et les SMS. Chacun de ces éléments a ses propres avantages et inconvénients que les détaillants doivent analyser.
 

@@ -15,7 +15,7 @@ Dans les mondes du commerce électronique qui se chevauchent (vente sur les rés
 
 Le commerce électronique connaît une croissance monumentale. Elle est passée d&#39;une industrie de 1,3 billions de dollars en 2014 à une industrie de 3,5 billions de dollars en 2019. Les experts prévoient que d&#39;ici 2023, il atteindra plus de 6,5 mille milliards de milliards, ce qui signifie qu&#39;il y a une formidable opportunité pour les marques de commerce électronique de capitaliser sur l&#39;optimisation des conversions. La puissance du commerce électronique ne doit pas être sous-estimée, car elle continue à imprégner la vie quotidienne et à offrir des opportunités importantes aux petites, moyennes et grandes entreprises et aux investisseurs en ligne.
 
-Que vous veniez de lancer votre commerce électronique ou que vous soyez dans le secteur depuis un certain temps, vous savez probablement que c&#39;est difficile d&#39;y réussir, c&#39;est pourquoi nous avons compilé ce guide sur la façon de mener à bien une entreprise de commerce électronique.
+Que vous veniez de démarrer votre commerce électronique ou que vous y travailliez depuis un certain temps, vous savez probablement que c&#39;est difficile d&#39;y réussir, c&#39;est pourquoi nous avons compilé ce guide sur la manière de gérer une entreprise de commerce électronique réussie.
 
 Voici un résumé rapide des types d&#39;entreprises de commerce électronique disponibles selon chaque catégorie :
 
@@ -33,7 +33,7 @@ Voici les différents modèles de recettes du commerce électronique :
 - Étiquetage privé et fabrication
 - Libellé blanc
 - La vente en gros
-- Prêt
+- Prêt et prêt
 
 Voici les différents types de sites web de commerce électronique :
 
@@ -56,7 +56,7 @@ L&#39;e-commerce permet aux gens d&#39;ouvrir les portes de leurs propres magasi
 ### Inconvénients
 
 - La concurrence en ligne est féroce
-- La livraison peut être imprévisible
+- L&#39;expédition peut être imprévisible
 
 Les avantages l&#39;emportent sur les inconvénients, c&#39;est pourquoi le marché, les détaillants et les revenus du commerce augmentent rapidement.
 

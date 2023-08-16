@@ -15,7 +15,7 @@ ht-degree: 0%
 
 À mesure que le volume des commandes augmente sur vos sites de commerce, vous pouvez optimiser les performances de passage en caisse et le traitement des commandes en activant les options de configuration de magasin suivantes :
 
-- **[!UICONTROL Asynchronous indexing]**: activez cette option pour empêcher les verrous de base de données et le traitement ralenti qui peuvent se produire lorsque de grands nombres de commandes sont placés simultanément.
+- **[!UICONTROL Asynchronous indexing]**: activez cette option pour empêcher les verrous de base de données et le ralentissement du traitement qui peuvent se produire lorsque de grands nombres de commandes sont placés simultanément.
 - **[!UICONTROL Asynchronous email notifications]**: activez cette option pour accélérer les performances de passage en caisse en envoyant des notifications par courrier électronique de passage en caisse et de traitement des commandes à des intervalles désignés au lieu de les envoyer immédiatement.
 - **[!UICONTROL Enable Archiving]**: activez cette option pour améliorer les performances des commandes, des factures, des envois et des notes de crédit, et garder votre espace de travail à l’abri des informations superflues afin que vous puissiez vous concentrer sur l’activité actuelle. Voir [Activer l’archivage](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
 

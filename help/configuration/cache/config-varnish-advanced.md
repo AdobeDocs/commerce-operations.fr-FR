@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Varnish fournit plusieurs fonctionnalités qui empêchent les clients de subir de longs délais et délais d’expiration lorsque le serveur Commerce ne fonctionne pas correctement. Ces fonctionnalités peuvent être configurées dans la variable `default.vcl` fichier . Cette rubrique décrit les ajouts que Commerce fournit dans le fichier VCL (Varnish Configuration Language) que vous téléchargez depuis l’administrateur.
 
-Voir [Manuel de référence des pointes](https://varnish-cache.org/docs/6.3/reference/index.html) pour plus d’informations sur l’utilisation du langage de configuration vernis.
+Voir [Manuel de référence des pointillés](https://varnish-cache.org/docs/6.3/reference/index.html) pour plus d’informations sur l’utilisation du langage de configuration vernis.
 
 ## Contrôle de l’intégrité
 
@@ -34,9 +34,9 @@ Commerce définit le contrôle de l’intégrité par défaut suivant :
 
 Toutes les 5 secondes, ce contrôle de l’intégrité appelle la variable `pub/health_check.php` script. Ce script vérifie la disponibilité du serveur, de chaque base de données et de Redis (s’il est installé). Le script doit renvoyer une réponse dans les 2 secondes. Si le script détermine que l’une de ces ressources est hors service, il renvoie un code d’erreur HTTP 500. Si ce code d’erreur est reçu dans six tentatives sur dix, le serveur principal est considéré comme malsain.
 
-Le `health_check.php` se trouve dans la variable `pub` répertoire . Si votre répertoire racine Commerce est `pub`, puis assurez-vous de modifier le chemin d’accès dans la variable `url` du paramètre `/pub/health_check.php` to `health_check.php`.
+La variable `health_check.php` se trouve dans la variable `pub` répertoire . Si votre répertoire racine Commerce est `pub`, puis assurez-vous de modifier le chemin dans la variable `url` du paramètre `/pub/health_check.php` to `health_check.php`.
 
-Pour plus d’informations, voir [Contrôles de l’intégrité vernis](https://varnish-cache.org/docs/6.3/users-guide/vcl-backends.html?highlight=health%20check#health-checks) documentation.
+Pour plus d’informations, voir [Contrôles de l’intégrité vernis](https://varnish-cache.org/docs/6.3/users-guide/vcl-backends.html?highlight=health%20check#health-checks) la documentation.
 
 ## Mode de grâce
 
@@ -45,7 +45,7 @@ Le mode Grace permet à Varnish de garder un objet en cache au-delà de sa valeu
 - Lorsque le serveur principal Commerce est sain, mais qu’une requête prend plus de temps que la normale
 - Lorsque le serveur principal Commerce n’est pas sain.
 
-Le `vcl_hit` subroutine définit la manière dont Varnish répond à une demande d’objets qui ont été mis en cache.
+La variable `vcl_hit` subroutine définit la manière dont Varnish répond à une demande d’objets qui ont été mis en cache.
 
 ### Lorsque le serveur principal Commerce est sain
 
@@ -61,7 +61,7 @@ if (obj.ttl + 300s > 0s) {
 
 ### Lorsque le serveur principal Commerce n’est pas sain
 
-Si le serveur principal Commerce n’est pas réactif, Varnish diffuse du contenu obsolète du cache pendant trois jours (ou tel que défini dans `beresp.grace`) plus la durée de vie restante (qui est par défaut d’un jour), sauf si le contenu mis en cache est purgé manuellement.
+Si le serveur principal Commerce ne répond pas, Varnish diffuse du contenu obsolète du cache pendant trois jours (ou tel que défini dans `beresp.grace`) plus la durée de vie restante (qui est par défaut d’un jour), sauf si le contenu mis en cache est purgé manuellement.
 
 ## Mode Saint
 
@@ -71,9 +71,9 @@ Le mode Saint peut également être utilisé lorsque les instances de Commerce s
 
 ### Prérequis du mode Saint
 
-Désignez une machine comme Principale installation. Sur cette machine, installez l’instance principale de Commerce, de la base de données mySQL et de Varnish.
+Désignez une machine comme installation principale. Sur cette machine, installez l’instance principale de Commerce, de la base de données mySQL et de Varnish.
 
-Sur tous les autres ordinateurs, l’instance Commerce doit avoir accès à la base de données mySQL de l’ordinateur Principal. Les machines secondaires doivent également avoir accès aux fichiers de l’instance Principale Commerce.
+Sur tous les autres ordinateurs, l’instance Commerce doit avoir accès à la base de données mySQL de l’ordinateur principal. Les machines secondaires doivent également avoir accès aux fichiers de l’instance Commerce principale.
 
 Vous pouvez également désactiver le contrôle de version des fichiers statiques sur tous les ordinateurs. Vous pouvez y accéder à partir de la section Admin sous **Magasins** > Paramètres > **Configuration** > **Avancé** > **Développeur** > **Paramètres des fichiers statiques** > **Signature de fichiers statiques** = **Non**.
 

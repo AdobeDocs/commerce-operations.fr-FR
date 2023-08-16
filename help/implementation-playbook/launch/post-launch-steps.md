@@ -21,6 +21,6 @@ Une fois le site web actif, ces activités sont exécutées le plus tôt possibl
    - Balisez la grappe en tant que niveau SLA élevé pour le client Adobe Commerce et créez un ticket de support pour l’activer.
    - Activation des vérifications Pingdom pour les noms de domaine
    - Vérifiez l’état de surveillance et assurez-vous que tous les éléments sont en vert.
-   - Tenez les parties prenantes informées de la durée de la garantie et des paramètres par e-mail au jour de l’activation.
+   - Tenez les parties prenantes informées de la durée de la garantie et des paramètres par e-mail dès la mise en service.
 
 ![Diagramme présentant la phase 4 du processus de lancement](../../assets/playbooks/launch-steps-4.svg)

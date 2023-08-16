@@ -20,7 +20,7 @@ ht-degree: 0%
    bin/magento maintenance:enable
    ```
 
-   Pour connaître d’autres options, telles que la possibilité de définir une liste autorisée d’adresses IP, voir [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
+   Pour d’autres options, telles que la possibilité de définir une liste blanche d’adresses IP, voir [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
 
 1. Arrêtez tous les programmes de traitement des files d’attente en cours d’exécution en définissant `cron_run` to `false` in `app/etc/env.php` comme suit :
 
@@ -36,7 +36,7 @@ ht-degree: 0%
    bin/magento app:config:import
    ```
 
-1. Enfin, `kill` tout processus client principal.
+1. Enfin, `kill` tout processus client actif.
 
    ```bash
    kill <PID>

@@ -1,5 +1,5 @@
 ---
-title: Le [!UICONTROL Elasticsearch] tab
+title: La variable [!UICONTROL Elasticsearch] tab
 description: En savoir plus sur les [!UICONTROL Elasticsearch] de [!DNL Observation for Adobe Commerce].
 exl-id: e98d351d-b3b1-47bc-bc0d-f96ba9ec2b80
 feature: Configuration, Observability
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Le [!UICONTROL Elasticsearch] tab
+# La variable [!UICONTROL Elasticsearch] tab
 
 ## [!UICONTROL Cluster Status Summary]:
 
@@ -20,21 +20,21 @@ Au cours de la période sélectionnée, la variable **[!UICONTROL Cluster Status
 
 ## [!UICONTROL Active Primary Shards]
 
-![Principaux Principal Shards](../../assets/tools/active-primary-shards.jpg)
+![Partages de Principal actifs](../../assets/tools/active-primary-shards.jpg)
 
-Le **[!UICONTROL Active Primary Shards]** Le cadre affiche les différents nombres en fonction du nombre de principaux et Principaux éclats pour le compte sélectionné. [!DNL Elasticsearch] service.
+La variable **[!UICONTROL Active Primary Shards]** Le cadre affiche les différents nombres en fonction du nombre de partitions primaires actives pour le compte sélectionné. [!DNL Elasticsearch] service.
 
 De [!DNL Elasticsearch]: Guide définitif [2.x]:
 
 &quot;Dans [Indices pouvant être mis à jour dynamiquement](https://www.elastic.co/guide/en/elasticsearch/guide/2.x/dynamic-indices.html), nous avons expliqué qu’une partition est un index Lucene et qu’une [!DNL Elasticsearch] index est une collection de shards. Votre application parle à un index, et [!DNL Elasticsearch] achemine vos requêtes vers les éclats appropriés. Un éclat est l&#39;unité d&#39;échelle. Le plus petit index que vous pouvez avoir est un avec une seule partition. Cela peut être plus que suffisant pour vos besoins — un seul partage peut contenir beaucoup de données — mais cela limite votre capacité à évoluer.&quot;
 
-Lorsqu’un index est créé, plusieurs shards sont créés avec cet index. Par défaut, cinq Principaux éclats sont attribués à chaque nouvel index, ce qui signifie qu’un index peut être réparti sur cinq noeuds (un partage par noeud). Il existe également des éclats de répliques. Il s’agit principalement du basculement. Les Secondaires peuvent servir des requêtes de lecture.
+Lorsqu’un index est créé, plusieurs shards sont créés avec cet index. Par défaut, cinq éclats principaux sont attribués à chaque nouvel index, ce qui signifie qu’un index peut être réparti sur cinq noeuds (un partage par noeud). Il existe également des éclats de répliques. Il s’agit principalement du basculement. Les shards de Secondaire peuvent servir des requêtes de lecture.
 
 ## [!UICONTROL Active Shards in Cluster]
 
-![Principal Shards en grappe](../../assets/tools/active-shards-in-cluster.jpg)
+![Partages actifs en grappe](../../assets/tools/active-shards-in-cluster.jpg)
 
-Le **[!UICONTROL Active Shards in Cluster]** L’image affiche le nombre total de éclats Principal et de réplication dans une [!DNL Elasticsearch] grappe.
+La variable **[!UICONTROL Active Shards in Cluster]** L’image affiche le nombre total de partitions principales et de réplications dans une [!DNL Elasticsearch] grappe.
 
 ## [!UICONTROL Index health - this will show the index name and color status]
 
@@ -46,19 +46,19 @@ Cette image affiche le nom de l’index et le nombre d’états de la couleur de
 
 ![Statut de l’Elasticsearch](../../assets/tools/elasticsearch-status-by-node.jpg)
 
-Le **[!UICONTROL Elasticsearch Status by node information]** affiche la [!DNL Elasticsearch] état de la grappe par couleur et par noeud. Cela permet d’indiquer le noeud dans la variable [!DNL Elasticsearch] la grappe renvoie l’état au cours de la période sélectionnée.
+La variable **[!UICONTROL Elasticsearch Status by node information]** Le cadre affiche la [!DNL Elasticsearch] état de la grappe par couleur et par noeud. Cela permet d’indiquer le noeud dans la variable [!DNL Elasticsearch] la grappe renvoie l’état au cours de la période sélectionnée.
 
 ## [!UICONTROL Elasticsearch index information]
 
 ![Informations sur l’index Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
-Le **[!UICONTROL Elasticsearch index information]** Le tableau indique le nom de l’index, le noeud sur lequel il se trouve, le nombre de documents indexés, l’intégrité de l’index et la taille de l’index en Mo à un moment donné.
+La variable **[!UICONTROL Elasticsearch index information]** Le tableau indique le nom de l’index, le noeud sur lequel il se trouve, le nombre de documents indexés, l’intégrité de l’index et la taille de l’index en Mo à un moment donné.
 
 ## [!UICONTROL Elasticsearch process CPU %]
 
 ![Processeur Elasticsearch](../../assets/tools/elasticsearch-process-cpu.jpg)
 
-Le **[!UICONTROL Elasticsearch process CPU %]** Le cadre affiche le pourcentage du processeur de processus par le [!DNL Elasticsearch] traiter sur la période sélectionnée.
+La variable **[!UICONTROL Elasticsearch process CPU %]** Le cadre affiche le pourcentage du processeur de processus par le [!DNL Elasticsearch] traiter sur la période sélectionnée.
 
 ## [!UICONTROL Elasticsearch Memory garbage collection]
 
@@ -76,13 +76,13 @@ Le **[!UICONTROL Elasticsearch process CPU %]** Le cadre affiche le pourcentage 
 
 ![Taille de l’index Elasticsearch](../../assets/tools/elasticsearch-index-size.jpg)
 
-Le **[!UICONTROL Elasticsearch Index Size]** frame indique le nom et la taille de l’index pendant la période sélectionnée. Cela peut indiquer des problèmes liés à l’indexation d’un site.
+La variable **[!UICONTROL Elasticsearch Index Size]** frame indique le nom et la taille de l’index pendant la période sélectionnée. Cela peut indiquer des problèmes liés à l’indexation d’un site.
 
 ## [!UICONTROL Elasticsearch Errors]
 
 ![Erreurs Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
 
-Le **[!UICONTROL Elasticsearch Errors]** frame affiche des erreurs avec [!DNL Elasticsearch] comme manquer d’espace, passer de l’état Jaune à l’état Rouge, lorsque tous les éclats échouent, en cas de problèmes de paramètres avec des recherches, des erreurs de version et lorsque tous les noeuds sont indisponibles.
+La variable **[!UICONTROL Elasticsearch Errors]** frame affiche des erreurs avec [!DNL Elasticsearch] comme manquer d’espace, passer de l’état Jaune à l’état Rouge, lorsque tous les éclats échouent, en cas de problèmes de paramètres avec des recherches, des erreurs de version et lorsque tous les noeuds sont indisponibles.
 
 ## [!UICONTROL Elasticsearch Unassigned Shards]:
 

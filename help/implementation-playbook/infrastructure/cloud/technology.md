@@ -26,7 +26,7 @@ Comme nous l’avons mentionné, Adobe Commerce utilise plusieurs solutions logi
    - `pub/static`
    - `app/etc`
 
-- **Redis**— Un serveur par VM avec une seule principale et les deux autres comme répliques.
+- **Redis**: un serveur par VM avec un seul actif et les deux autres comme réplicas.
 
 - **Elasticsearch**: recherchez Adobe Commerce version 2.2.x et ultérieure.
 

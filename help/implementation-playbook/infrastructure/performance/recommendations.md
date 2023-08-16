@@ -57,7 +57,7 @@ L’optimisation de ces paramètres dépend des résultats des tests de performa
 
 - **APCU**: nous vous recommandons d’activer l’extension APCu PHP et de configurer le compositeur afin d’optimiser les performances. Cette extension met en cache les emplacements de fichiers pour les fichiers ouverts, ce qui augmente les performances des appels au serveur Adobe Commerce, y compris les pages, les appels Ajax et les points de fin.
 
-- **Realpath_cacheconfiguration**—Optimisation `realpath_cache` permet aux processus PHP de mettre en cache les chemins d’accès aux fichiers au lieu de les rechercher chaque fois qu’une page est chargée.
+- **Realpath_cacheconfiguration**: optimisation `realpath_cache` permet aux processus PHP de mettre en cache les chemins d’accès aux fichiers au lieu de les rechercher chaque fois qu’une page est chargée.
 
 ### Serveur web
 
@@ -89,7 +89,7 @@ La mémoire des redis doit être suffisante pour contenir tous les autres caches
 
 ### Mise en cache des pages
 
-Il est vivement recommandé d’utiliser le vernis pour le cache de page complet sur votre boutique Adobe Commerce. Le `PageCache` est toujours présent dans le code base, mais il doit être utilisé à des fins de développement uniquement.
+Il est vivement recommandé d’utiliser le vernis pour le cache de page complet sur votre boutique Adobe Commerce. La variable `PageCache` est toujours présent dans le code base, mais il doit être utilisé à des fins de développement uniquement.
 
 Installez Varnish sur un serveur distinct devant le niveau web. Il doit accepter toutes les requêtes entrantes et fournir des copies de page mises en cache. Pour permettre à Varnish de fonctionner efficacement avec les pages sécurisées, un proxy de terminaison SSL peut être placé devant Varnish. Nginx peut être utilisé à cet effet.
 
@@ -119,7 +119,7 @@ Outre les recommandations d’optimisation de l’infrastructure commune mention
 
 Nous avons une section distincte dédiée à détailler ce qui [headless](../../architecture/headless/adobe-commerce.md) est et différentes options. En résumé, il sépare la couche de storefront de la plate-forme elle-même. Il s’agit toujours du même serveur principal, mais Adobe Commerce ne traite plus directement les requêtes et ne prend en charge que les storefronts personnalisés via l’API GraphQL.
 
-### Conserver la mise à jour d’Adobe Commerce
+### Conserver Adobe Commerce mise à jour
 
 Adobe Commerce offre toujours de meilleures performances lors de l’exécution de la dernière version. Même s’il n’est pas possible de maintenir Adobe Commerce à jour après chaque nouvelle version, il est toujours recommandé de [upgrade](../../../upgrade/overview.md) lorsqu’Adobe Commerce introduit des optimisations de performances significatives.
 

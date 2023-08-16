@@ -1,13 +1,13 @@
 ---
 title: California Consumer Privacy Act (CCPA)
 description: Découvrez le California Consumer Privacy Act (CCPA), qui étend les droits des consommateurs en Californie pour déterminer comment leurs informations personnelles sont collectées, stockées et utilisées.
-source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
+exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
 
 ---
-
 
 # California Consumer Privacy Act (CCPA)
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Il s’agit d’une rubrique parmi d’autres pour aider Adobe Commerce et les marchands et développeurs Magento Open Sources à comprendre les implications de la California Consumer Privacy Act (CCPA). Les informations sont destinées à titre informatif uniquement et ne doivent pas être interprétées comme des conseils juridiques. Consultez votre service juridique pour déterminer si et comment votre entreprise doit se conformer à des obligations légales.
 
-Le [CCPA](https://oag.ca.gov/privacy/ccpa) élargit les droits des consommateurs en Californie pour déterminer comment leurs informations personnelles sont collectées, stockées et utilisées, en mettant l&#39;accent sur la protection des consommateurs contre la vente, l&#39;échange non autorisé ou leurs informations personnelles. La CCPA a été adoptée en 2018 et entrera en vigueur le 1er janvier 2020.
+La variable [CCPA](https://oag.ca.gov/privacy/ccpa) élargit les droits des consommateurs en Californie pour déterminer comment leurs informations personnelles sont collectées, stockées et utilisées, en mettant l&#39;accent sur la protection des consommateurs contre la vente, l&#39;échange non autorisé ou leurs informations personnelles. La CCPA a été adoptée en 2018 et entrera en vigueur le 1er janvier 2020.
 
 Le CCPA accorde aux consommateurs les nouveaux droits suivants :
 

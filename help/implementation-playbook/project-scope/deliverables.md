@@ -16,9 +16,9 @@ Le processus de découverte identifie des livrables de mise en oeuvre Adobe Comm
 
 ## Exigences commerciales
 
-Ce document décrit les approbations des exigences de l’entreprise pour les spécifications fonctionnelles et la convivialité de l’expérience client. Il est utilisé pour améliorer l’expérience utilisateur, la conception visuelle et des plans de test détaillés.
+Ce document présente les approbations des exigences de l’entreprise pour les spécifications fonctionnelles et la convivialité de l’expérience client. Il est utilisé pour améliorer l’expérience utilisateur, la conception visuelle et des plans de test détaillés.
 
-## Schéma du système
+## Diagramme de système
 
 Un diagramme de système doit afficher les données (par exemple, les commandes, les produits, les intégrations tierces) circulant vers et depuis les différents systèmes impliqués (Adobe Commerce, OMS, ESP, fournisseurs de paiement).
 

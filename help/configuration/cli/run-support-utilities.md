@@ -1,13 +1,13 @@
 ---
 title: Exécution des utilitaires de support
 description: Résolution des problèmes liés à votre projet Commerce à l’aide de l’utilitaire de prise en charge intégré.
-source-git-commit: 2c12c6ea6e7b6ffeb07bbda17ded34e39de6656a
+exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
 
 ---
-
 
 # Exécution des utilitaires de support
 
@@ -19,7 +19,7 @@ Les utilitaires de prise en charge d’Adobe Commerce, également appelés [Coll
 
 Adobe Commerce utilise ces sauvegardes, également appelées _vidages_, pour analyser les problèmes qui nécessitent l’accès à votre code. Voici un scénario type :
 
-1. Vous rencontrez un problème avec votre boutique de commerce et vous contactez l’assistance Adobe Commerce.
+1. Vous rencontrez un problème avec votre boutique de commerce et vous contactez l’assistance d’Adobe Commerce.
 1. L’assistance détermine qu’ils doivent voir votre code ou votre base de données pour reproduire le problème.
 1. Vous sauvegardez le code dans une `.tar.gz` fichier .
 
@@ -112,7 +112,7 @@ Exécutez les commandes suivantes dans l’ordre indiqué pour afficher les chem
 
    >[!INFO]
    >
-   >Les commandes s’exécutent correctement. _only_ dans le répertoire d’installation.
+   >Les commandes s’exécutent correctement _only_ à partir du répertoire d’installation.
 
 1. `bin/magento support:utility:paths` crée `<magento_root>/var/support/Paths.php`, qui répertorie les chemins d’accès à toutes les applications utilisées par l’utilitaire.
 1. `bin/magento support:utility:check` affiche les chemins d’accès au système de fichiers.

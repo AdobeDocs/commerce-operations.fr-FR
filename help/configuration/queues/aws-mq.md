@@ -1,13 +1,13 @@
 ---
 title: Configuration de la file d’attente des messages Amazon
 description: Découvrez comment configurer Commerce pour utiliser le service AWS MQ.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+exl-id: 463e513f-e8d4-4450-845e-312cbf00d843
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
 
 ---
-
 
 # Configuration de la file d’attente des messages Amazon
 
@@ -37,8 +37,8 @@ La file d’attente des messages AWS requiert une connexion SSL/TLS.
 
 Où :
 
-- `host`: URL du point d’entrée AMQP ; disponible en cliquant sur le nom du courtier dans AWS (supprimez &quot;https://&quot; et le numéro de port de fin)
-- `user`: valeur du nom d’utilisateur saisie lors de la création du courtier AWS MQ
+- `host`: URL du point de terminaison AMQP ; disponible en cliquant sur le nom du courtier dans AWS (supprimez &quot;https://&quot; et le numéro de port de fin).
+- `user`: valeur du nom d’utilisateur saisie lors de la création du courtier AWS MQ.
 - `password`: valeur du mot de passe saisie lors de la création du courtier AWS MQ
 
 >[!INFO]
@@ -53,7 +53,7 @@ bin/magento setup:upgrade
 
 ## Utilisation du service AWS MQ par Commerce
 
-Le `async.operations.all` le consommateur de la file d’attente des messages utilise la connexion AMQP.
+La variable `async.operations.all` le consommateur de la file d’attente des messages utilise la connexion AMQP.
 
 Ce consommateur achemine tout nom de rubrique précédé du préfixe `async` via la connexion AWS MQ.
 
@@ -65,7 +65,7 @@ async.V1.inventory.bulk-product-source-unassign.POST
 async.V1.inventory.bulk-product-source-transfer.POST
 ```
 
-La configuration par défaut pour `InventoryCatalog` ne publie pas de messages sur [!DNL RabbitMQ]; le comportement par défaut consiste à exécuter l’action dans le même thread d’utilisateur. À dire `InventoryCatalog` pour publier des messages, activez `cataloginventory/bulk_operations/async`. Depuis l’administrateur, accédez à **Magasins** > Configuration > **Catalogue** > **Inventaire** > Opérations en bloc d’administration et définition  `Run asynchronously`to **Oui**.
+La configuration par défaut pour `InventoryCatalog` ne publie pas de messages sur [!DNL RabbitMQ]; le comportement par défaut est d’effectuer l’action dans le même thread d’utilisateur. À dire `InventoryCatalog` pour publier des messages, activez `cataloginventory/bulk_operations/async`. Depuis l’administrateur, accédez à **Magasins** > Configuration > **Catalogue** > **Inventaire** > Opérations en bloc d’administration et définition  `Run asynchronously`to **Oui**.
 
 ## Test de la file d’attente des messages
 

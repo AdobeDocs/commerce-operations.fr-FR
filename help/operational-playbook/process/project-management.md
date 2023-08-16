@@ -17,7 +17,7 @@ Le diagramme suivant décrit les cinq phases de la gestion de projet et du cycle
 
 ![Diagramme de cycle de vie de la gestion de projet](../../assets/playbooks/project-management-lifecycle.png)
 
-Le cycle de vie de la gestion de projet permet un processus d&#39;exécution opportun et contrôlé qui bénéficie à une personne : parties prenantes du projet. La gestion de projet est la première étape de la diffusion d’un projet d’e-commerce réussi. L’approche et la méthodologie appropriées sont nécessaires pour permettre à l’équipe de mener à bien le projet de manière efficace.
+Le cycle de vie de la gestion de projet offre un processus de livraison opportun et contrôlé qui profite à un projet. La gestion de projet est la première étape de la diffusion d’un projet d’e-commerce réussi. L’approche et la méthodologie appropriées sont nécessaires pour permettre à l’équipe de mener à bien le projet de manière efficace.
 
 
 Certaines équipes choisissent la méthodologie de gestion de projet Scrum pour leurs projets de commerce électronique. Les fonctions Scrum mentionnées ci-dessous aident à faciliter et à gérer le projet :
@@ -52,7 +52,7 @@ Voici un plan de gestion de projet de commerce électronique de base :
 
 Voici quelques bonnes pratiques auxquelles les entreprises peuvent se référer pour la gestion de projet :
 
-- Définition d’objectifs clairs, précis et pouvant faire l’objet d’un suivi
+- Définition d’objectifs clairs, précis et pouvant être suivis
 - Surveillance du temps passé sur les tâches et les ressources pour éviter les gaspillages
 - Sélection des outils de commerce électronique appropriés requis par l’équipe, tels que la plateforme de commerce électronique et les outils de communication
 - Les tests et les itérations doivent être effectués en permanence.

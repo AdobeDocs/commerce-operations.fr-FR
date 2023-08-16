@@ -1,13 +1,13 @@
 ---
 title: Obtention du logiciel Adobe Commerce
 description: Découvrez comment télécharger le logiciel Adobe Commerce et Magento Open Source.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%
 
 ---
-
 
 # Obtention du logiciel Adobe Commerce
 
@@ -32,7 +32,7 @@ Consultez le tableau suivant pour commencer à installer Adobe Commerce ou Magen
         <td><p>Souhaite un contrôle total sur tous les composants installés, a accès au serveur d’applications, hautement technique, peut recompresser le Magento Open Source avec d’autres composants.</p>
         </td>
         <td><ol><li>Création d’un compositeur <em>project</em> qui contient la liste des composants à utiliser.</li>
-            <li>utilise le compositeur pour mettre à jour les dépendances de packages ; uses <code>composer create-project</code> pour obtenir le métaphorage du compositeur.</li>
+            <li>Utilise le compositeur pour mettre à jour les dépendances de packages ; utilise <code>composer create-project</code> pour obtenir le métaphorage du compositeur.</li>
             <li>Installe l’application à l’aide de la fonction <a href="../advanced.md">ligne de commande</a>.</li>
         <li>Met à niveau l’application et les extensions à l’aide de la fonction  <a href="../../upgrade/implementation/perform-upgrade.md">ligne de commande</a>.</li></ol></td>
         <td><p><a href="../composer.md">Obtention du métappackage</a></p></td>
@@ -45,7 +45,7 @@ Consultez le tableau suivant pour commencer à installer Adobe Commerce ou Magen
         <td><ol><li>Cloner le référentiel GitHub.</li>
             <li>Utilise le compositeur pour mettre à jour les dépendances des packages.</li>
             <li>installation de l’application à l’aide de <a href="../advanced.md">ligne de commande</a>.</li>
-            <li>Mises à niveau de l’application à l’aide de <a href="../../upgrade/developer/git-installs.md">Commandes du compositeur et Git</a>.</li>
+            <li>Met à niveau l’application à l’aide de <a href="../../upgrade/developer/git-installs.md">Commandes du compositeur et Git</a>.</li>
             <li>Personnalise le code sous le <code>app/code</code> répertoire .</li></ol></td>
         <td><p><a href="https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/">Clonage du référentiel GitHub</a></p></td>
     </tr>
@@ -60,6 +60,6 @@ Utilisez les liens situés à gauche de la page pour parcourir les rubriques de 
 
 Les systèmes UNIX requis `root` des privilèges pour installer et configurer des logiciels tels qu’un serveur web, PHP. Si vous devez installer ce logiciel, assurez-vous que vous avez `root` accès.
 
-Do *not* installez l’application dans le répertoire docroot du serveur web en tant que `root` car le serveur web peut ne pas pouvoir interagir avec ces fichiers.
+Do *not* installez l’application dans le serveur web docroot en tant que `root` car le serveur web peut ne pas pouvoir interagir avec ces fichiers.
 
-Vous avez besoin de `root` droits de création [propriétaire du système de fichiers](file-system/overview.md) et ajoutez ce propriétaire au groupe du serveur web. Vous utilisez le propriétaire du système de fichiers pour exécuter `bin/magento` à partir de la ligne de commande et pour configurer les tâches cron, qui planifient les tâches pour vous.
+Vous avez besoin `root` droits de création [propriétaire du système de fichiers](file-system/overview.md) et ajoutez ce propriétaire au groupe du serveur web. Vous utilisez le propriétaire du système de fichiers à exécuter. `bin/magento` à partir de la ligne de commande et pour configurer les tâches cron, qui planifient les tâches pour vous.

@@ -2,18 +2,18 @@
 title: Écriture dans le fichier journal personnalisé
 description: Découvrez comment configurer des fichiers journaux personnalisés.
 feature: Configuration, Logs
-badge: label="Contribué par Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
+badge: label="Contribution d’Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
 source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
 # Écriture dans un fichier journal personnalisé
 
-Le `Magento\Framework\Logger` module contient les classes de gestionnaire suivantes :
+La variable `Magento\Framework\Logger` module contient les classes de gestionnaire suivantes :
 
 | Classe | Fichier journal |
 | ----- | -------- |
@@ -44,7 +44,7 @@ Cet exemple montre comment utiliser [types virtuels](https://developer.adobe.com
    </virtualType>
    ```
 
-   Le `name` valeur de `Magento\Payment\Model\Method\MyCustomDebug` doit être unique.
+   La variable `name` valeur de `Magento\Payment\Model\Method\MyCustomDebug` doit être unique.
 
 1. Définir le gestionnaire dans un autre [type virtuel](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) avec un `name`:
 
@@ -68,7 +68,7 @@ Cet exemple montre comment utiliser [types virtuels](https://developer.adobe.com
    </type>
    ```
 
-1. Classe virtuelle `Magento\Payment\Model\Method\MyCustomDebug` est injecté dans la variable `debug` du gestionnaire `$logger` dans la propriété `Magento\Payment\Model\Method\Logger` classe .
+1. La classe virtuelle `Magento\Payment\Model\Method\MyCustomDebug` est injecté dans la variable `debug` du gestionnaire `$logger` dans la propriété `Magento\Payment\Model\Method\Logger` classe .
 
    ```xml
    ...

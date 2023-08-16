@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Avant de commencer, procédez comme suit pour préparer :
 
-1. Connectez-vous à votre serveur d’applications en tant que [le propriétaire du système de fichiers ;](../../../installation/prerequisites/file-system/overview.md).
+1. Connectez-vous à votre serveur d’applications en tant que [le propriétaire du système de fichiers](../../../installation/prerequisites/file-system/overview.md).
 1. Modifiez le répertoire d’installation de l’application ou assurez-vous qu’il est ajouté à votre système. `PATH`.
 
 Voir [premières étapes](overview.md#first-steps) pour plus d’informations.
@@ -33,7 +33,7 @@ Où :
 
 * `[-r|--reset]` est un argument facultatif qui lance la migration à partir du début. Vous pouvez utiliser cet argument pour tester la migration.
 
-* `{<path to config.xml>}` est le chemin d’accès absolu au système de fichiers vers `config.xml`; cet argument est obligatoire
+* `{<path to config.xml>}` est le chemin d’accès absolu au système de fichiers vers `config.xml`; cet argument est obligatoire.
 
 Au cours de cette étape, la variable [!DNL Data Migration Tool] crée des tables et des triggers supplémentaires pour les tables de migration dans la base de données Magento 1. Ils sont utilisés dans la variable [incrémentiel/delta](delta.md) étape de migration. Les tableaux supplémentaires contiennent des informations sur les enregistrements modifiés après l’exécution finale de la migration. Les déclencheurs de base de données sont utilisés pour remplir ces tables supplémentaires. Ainsi, si une nouvelle opération est effectuée sur la table particulière (un enregistrement est ajouté/modifié/supprimé), cette base de données déclenche l’enregistrement des informations sur cette opération dans la table supplémentaire. Lorsque nous exécutons un processus de migration delta, la variable [!DNL Data Migration Tool] vérifie les enregistrements non traités dans ces tables et migre le contenu nécessaire dans la base de données Magento 2.
 
@@ -85,7 +85,7 @@ Par exemple, pour la variable `sales_flat_order` la valeur [!DNL Data Migration 
 
 >[!NOTE]
 >
->Le [!DNL Data Migration Tool] enregistre sa progression actuelle au fur et à mesure de son exécution. Si des erreurs ou une intervention de l’utilisateur l’empêchent d’exécuter, l’outil reprend la progression au dernier état correct connu. Pour forcer la variable [!DNL Data Migration Tool] pour exécuter à partir du début, utilisez la méthode `--reset` argument . Dans ce cas, nous vous recommandons de restaurer le vidage de la base de données Magento 2 afin d’éviter la duplication des données migrées précédemment.
+>La variable [!DNL Data Migration Tool] enregistre sa progression actuelle au fur et à mesure de son exécution. Si des erreurs ou une intervention de l’utilisateur l’empêchent d’exécuter, l’outil reprend la progression au dernier état correct connu. Pour forcer la variable [!DNL Data Migration Tool] pour exécuter à partir du début, utilisez la méthode `--reset` argument . Dans ce cas, nous vous recommandons de restaurer le vidage de la base de données Magento 2 afin d’éviter la duplication des données migrées précédemment.
 
 
 ## Erreurs de cohérence possibles

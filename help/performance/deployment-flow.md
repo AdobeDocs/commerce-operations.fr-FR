@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Flux de déploiement
 
-Le [!DNL Commerce] le flux de déploiement de production permet à un magasin d’atteindre des performances maximales.
+La variable [!DNL Commerce] le flux de déploiement de production permet à un magasin d’atteindre des performances maximales.
 
 ## Installer les dépendances
 
-Le `composer.json` et `composer.lock` gestion des fichiers [!DNL Commerce] dépendances et installez la version appropriée pour chaque module. Vous devez installer les dépendances avant [instructions d’injection de dépendance de prétraitement](#preprocess-dependency-injection-instructions) si vous prévoyez de mettre à jour la variable [autoloader](#update-the-autoloader).
+La variable `composer.json` et `composer.lock` gestion des fichiers [!DNL Commerce] dépendances et installez la version appropriée pour chaque module. Vous devez installer les dépendances avant [instructions d’injection de dépendance de prétraitement](#preprocess-dependency-injection-instructions) si vous prévoyez de mettre à jour la variable [autoloader](#update-the-autoloader).
 
 Pour installer [!DNL Commerce] dependencies :
 
@@ -47,7 +47,7 @@ Pour mettre à jour l’outil de chargement automatique :
 
 >[!INFO]
 >
->Le `-o` L’option convertit le chargement automatique PSR-0/4 en classmap pour obtenir un chargeur automatique plus rapide. Le `--apcu` L’option utilise APCu pour mettre en cache les classes trouvées/introuvables.
+>La variable `-o` L’option convertit le chargement automatique PSR-0/4 en classmap pour obtenir un chargeur automatique plus rapide. La variable `--apcu` L’option utilise APCu pour mettre en cache les classes trouvées/introuvables.
 
 ```bash
 composer dump-autoload -o --apcu
@@ -78,7 +78,7 @@ Déploiement de causes de contenu statique [!DNL Commerce] pour effectuer les ac
 * Analyse de toutes les ressources statiques
 * Réaliser la fusion, la minimisation et le regroupement de contenu
 * Lecture et traitement des données de thème
-* Analyse de la reprise du thème
+* Analyse de la version de secours des thèmes
 * Stocker tout le contenu traité et matérialisé dans un dossier spécifique pour une utilisation ultérieure
 
 Si votre contenu statique n’est pas déployé, [!DNL Commerce] effectue toutes les opérations répertoriées à la volée, ce qui entraîne une augmentation significative du temps de réponse.
@@ -117,4 +117,4 @@ Ces étapes sont recommandées, mais ne sont pas obligatoires. Vous pouvez les e
 
 * Réindexez les données pour éviter toute incohérence des données de vos index.
 * Videz le cache pour vous assurer qu’aucune donnée ancienne ou incorrecte n’est conservée dans le cache.
-* Réchauffez le cache, qui appelle les pages de magasin les plus populaires ou les plus critiques à l’avance, afin que le cache soit généré et stocké. Cette opération peut être effectuée avec n’importe quel moteur de recherche Internet ou manuellement, si vous disposez d’une petite boutique.
+* Réchauffez le cache, qui appelle les pages de magasin les plus populaires ou les plus critiques à l’avance, de sorte que le cache pour elles est généré et stocké. Cette opération peut être effectuée avec n’importe quel moteur de recherche Internet ou manuellement, si vous disposez d’une petite boutique.

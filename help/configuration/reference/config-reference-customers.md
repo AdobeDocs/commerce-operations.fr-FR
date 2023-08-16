@@ -1,5 +1,5 @@
 ---
-title: Référence des chemins de configuration des clients
+title: Référence sur les chemins de configuration des clients
 description: Afficher la liste des valeurs de configuration des clients.
 feature: Configuration, Customers
 exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
@@ -10,15 +10,15 @@ ht-degree: 0%
 
 ---
 
-# Référence des chemins de configuration des clients
+# Référence sur les chemins de configuration des clients
 
 Cette section répertorie les noms de variable et les chemins de configuration disponibles pour les options dans l’Admin sous **Magasins** > Paramètres > **Configuration** > **Clients**.
 
-Le [`magento app:config:dump` command](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle de code source. Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables). Cette rubrique fonctionne _not_ list [valeurs sensibles et spécifiques au système](config-reference-sens.md).
+La variable [`magento app:config:dump` command](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle source. Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables). Cette rubrique fonctionne _not_ list [valeurs sensibles et spécifiques au système](config-reference-sens.md).
 
 ## Chemins de newsletter
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Clients** > **Newsletter**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Clients** > **Newsletter**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -35,7 +35,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Chemins de configuration des clients
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Clients** > **Configuration client**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Clients** > **Configuration client**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -52,9 +52,9 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Valeur par défaut pour désactiver les modifications automatiques de groupe en fonction de l’ID de TVA | `customer/create_account/viv_disable_auto_group_assign_default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Afficher le numéro de TVA sur Storefront | `customer/create_account/vat_frontend_visibility` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-mail de bienvenue par défaut | `customer/create_account/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| E-mail de bienvenue par défaut sans mot de passe | `customer/create_account/email_no_password_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Courriel de bienvenue par défaut sans mot de passe | `customer/create_account/email_no_password_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Expéditeur des emails | `customer/create_account/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Confirmation de l’exigence d’un courrier électronique | `customer/create_account/confirm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Confirmation de l’exigence des emails | `customer/create_account/confirm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Adresse électronique du lien de confirmation | `customer/create_account/email_confirmation_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Courriel de bienvenue | `customer/create_account/email_confirmed_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Générer un ID de client compatible avec les humains | `customer/create_account/generate_human_friendly_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -68,7 +68,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Période d’expiration du lien de récupération (heures) | `customer/password/reset_link_expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Activer la saisie automatique dans les formulaires de connexion/mot de passe oublié | `customer/password/autocomplete_on_storefront` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Nombre de classes de caractères obligatoires | `customer/password/required_character_classes_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Nombre maximal d’échecs de connexion pour verrouiller le compte | `customer/password/lockout_failures` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Échecs de connexion max. pour verrouiller le compte | `customer/password/lockout_failures` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Longueur minimale du mot de passe | `customer/password/minimum_password_length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Durée du verrouillage (minutes) | `customer/password/lockout_threshold` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Nombre de lignes d’une adresse de rue | `customer/address/street_lines` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -105,7 +105,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Chemins des listes de souhaits
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Clients** > **Liste de souhaits**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Clients** > **Liste de souhaits**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -115,14 +115,14 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Expéditeur des emails | `wishlist/email/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modèle de courrier électronique | `wishlist/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Nombre maximal de courriers électroniques autorisés à être envoyés | `wishlist/email/number_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Limite de longueur du texte d’email | `wishlist/email/text_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Limite de longueur du texte d’un email | `wishlist/email/text_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Afficher le résumé des listes de souhaits | `wishlist/wishlist_link/use_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}
 
 ## Chemins d’accès des invitations
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Clients** > **Invitations**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Clients** > **Invitations**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -139,11 +139,11 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Chemins de récompense
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Clients** > **Points de récompense**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Clients** > **Points de récompense**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
-| Activer la fonctionnalité de points de récompense | `magento_reward/general/is_enabled` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activation de la fonctionnalité de points de récompense | `magento_reward/general/is_enabled` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Activation de la fonctionnalité Reward Points sur Storefront | `magento_reward/general/is_enabled_on_front` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Les Clients Peuvent Voir L’Historique Des Points De Remise | `magento_reward/general/publish_history` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Seuil de rétribution du solde des points de récompense | `magento_reward/general/min_points_balance` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
@@ -173,7 +173,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Chemins de promotion
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Clients** > **Promotions**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Clients** > **Promotions**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -195,7 +195,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Chemins du registre des cadeaux
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Clients** > **Registre des cadeaux**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Clients** > **Registre des cadeaux**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -213,13 +213,13 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Chemins du panier persistants
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Clients** > **Panier persistant**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Clients** > **Panier persistant**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
 | Activer la persistance | `persistent/options/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Durée de vie de la persistance (secondes) | `persistent/options/lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activez l’option &quot;Mémoriser moi&quot;. | `persistent/options/remember_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Activez &quot;Mémoriser moi&quot;. | `persistent/options/remember_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Valeur par défaut &quot;Mémoriser&quot; | `persistent/options/remember_default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Effacer la persistance lors de la déconnexion | `persistent/options/logout_clear` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Persister le panier | `persistent/options/shopping_cart` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

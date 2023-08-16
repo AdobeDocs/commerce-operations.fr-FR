@@ -1,21 +1,21 @@
 ---
 title: Sauvegarde et restauration du système de fichiers, du média et de la base de données
 description: Pour sauvegarder et restaurer votre application Adobe Commerce ou Magento Open Source, procédez comme suit.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 0%
 
 ---
 
-
 # Sauvegarde et restauration du système de fichiers, du média et de la base de données
 
 Cette commande permet de sauvegarder :
 
 * Le système de fichiers (à l’exclusion de `var` et `pub/static` répertoires)
-* Le `pub/media` directory
-* La base de données
+* La variable `pub/media` directory
+* La base
 
 Les sauvegardes sont stockées dans la variable `var/backups` et peut être restauré à tout moment à l’aide de la variable [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) .
 
@@ -23,7 +23,7 @@ Après la sauvegarde, vous pouvez [restauration](#rollback) plus tard.
 
 >[!TIP]
 >
->Pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Instantanés et gestion des sauvegardes](https://devdocs.magento.com/cloud/project/project-webint-snap.html) dans le _Guide Cloud_.
+>Pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Instantanés et gestion des sauvegardes](https://devdocs.magento.com/cloud/project/project-webint-snap.html) dans le _Guide de Cloud_.
 
 ## Activation des sauvegardes
 
@@ -36,7 +36,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**Avis d’obsolescence :**
->La fonctionnalité de sauvegarde est obsolète à compter des versions 2.1.16, 2.2.7 et 2.3.0. Nous vous recommandons de rechercher des technologies de sauvegarde supplémentaires et des outils de sauvegarde binaires (tels que Percona XtraBackup).
+>La fonctionnalité de sauvegarde est obsolète depuis les versions 2.1.16, 2.2.7 et 2.3.0. Nous vous recommandons d’étudier des technologies de sauvegarde supplémentaires et des outils de sauvegarde binaires (tels que Percona XtraBackup).
 
 ## Définition de la limite des fichiers ouverts
 
@@ -62,7 +62,7 @@ Si nécessaire, vous pouvez définir cette valeur sur une valeur plus élevée.
 
 >[!NOTE]
 >
->Syntaxe des fichiers ouverts `ulimit` dépend du shell UNIX que vous utilisez. Le paramètre précédent doit fonctionner avec CentOS et Ubuntu avec le conteneur Bash. Toutefois, pour macOS, le paramètre correct est `ulimit -S 65532`. Pour plus d’informations, consultez la page de gestion ou la référence du système d’exploitation.
+>Syntaxe des fichiers ouverts `ulimit` dépend du shell UNIX utilisé. Le paramètre précédent doit fonctionner avec CentOS et Ubuntu avec le conteneur Bash. Toutefois, pour macOS, le paramètre correct est `ulimit -S 65532`. Pour plus d’informations, consultez la page de gestion ou la référence du système d’exploitation.
 
 Pour définir éventuellement la valeur dans le conteneur Bash de l’utilisateur :
 
@@ -97,7 +97,7 @@ La commande effectue les tâches suivantes :
    |--- |--- |--- |
    | `--code` | Sauvegarde le système de fichiers (à l’exception des répertoires var et pub/static). | `var/backups/<timestamp>/_filesystem.tgz` |
    | `--media` | Sauvegardez le répertoire pub/média. | `var/backups/<timestamp>/_filesystem_media.tgz` |
-   | `--db` | Sauvegardez la base de données. | `var/backups/<timestamp>/_db.sql` |
+   | `--db` | Sauvegardez la base. | `var/backups/<timestamp>/_db.sql` |
 
 1. Supprime le magasin hors mode de maintenance.
 

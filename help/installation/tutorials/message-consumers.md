@@ -1,17 +1,17 @@
 ---
 title: Configuration des consommateurs de messages
 description: Suivez ces étapes pour configurer le comportement des clients de la file d’attente des messages d’Adobe Commerce ou de Magento Open Source.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+exl-id: df292301-f4bd-49df-a241-7467c35bf1d8
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 0%
 
 ---
 
-
 # Configuration des consommateurs de messages
 
-Avant d’exécuter cette commande, vous devez effectuer les opérations suivantes : *ou* vous devez [installation de l’application](../advanced.md):
+Avant d’exécuter cette commande, procédez comme suit : *ou* vous devez [installation de l’application](../advanced.md):
 
 * [Création ou mise à jour de la configuration du déploiement](deployment.md)
 * [Création du schéma de la base de données](database.md)

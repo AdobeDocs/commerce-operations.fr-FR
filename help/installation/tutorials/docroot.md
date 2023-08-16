@@ -168,7 +168,7 @@ Le basculement entre les modes est une étape importante pour vérifier que la c
 
 Accédez au storefront dans un navigateur web pour vérifier que tout fonctionne.
 
-1. Ouvrez un navigateur web et saisissez le nom d’hôte ou l’adresse IP de votre serveur dans la barre d’adresse. Par exemple : `http://192.168.33.10`.
+1. Ouvrez un navigateur web et saisissez le nom d’hôte ou l’adresse IP de votre serveur dans la barre d’adresse. Par exemple, `http://192.168.33.10`.
 
    La figure suivante présente un exemple de page de storefront. S’il s’affiche comme suit, votre installation a réussi !
 

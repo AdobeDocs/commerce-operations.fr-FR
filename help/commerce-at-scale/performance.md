@@ -29,7 +29,7 @@ S’il est activé, le Dispatcher évalue les en-têtes de réponse du serveur p
 
 L’approche TTL du dispatcher ci-dessus réduira considérablement les requêtes et le chargement sur l’éditeur. Toutefois, certaines ressources sont très improbables à modifier. Par conséquent, même les requêtes envoyées au dispatcher peuvent être réduites en mettant en cache les fichiers pertinents localement sur le navigateur d’un utilisateur. Par exemple, le logo du site, qui s’affiche sur chaque page du site dans le modèle de site, n’a pas besoin d’être demandé à chaque fois au Dispatcher. Cela peut être stocké dans le cache du navigateur de l’utilisateur. La réduction des exigences de bande passante pour chaque chargement de page aurait un impact important sur la réactivité du site et les temps de chargement des pages.
 
-La mise en cache au niveau du navigateur est généralement effectuée via le &quot;Cache-Control: max-age=&quot; en-tête de réponse. Le paramètre maxage indique au navigateur combien de secondes il doit mettre en cache le fichier avant de tenter de le &quot;revalider&quot; ou de le demander de nouveau sur le site. Ce concept d’âge maximal du cache est généralement appelé &quot;expiration du cache&quot; ou TTL (&quot;durée de vie&quot;). Diffusion d’expériences commerciales à grande échelle - Avec Adobe Experience Manager, Commerce Integration Framework, Adobe Commerce 7
+La mise en cache au niveau du navigateur est généralement effectuée via l’en-tête de réponse &quot;Cache-Control: max-age=&quot;. Le paramètre maxage indique au navigateur combien de secondes il doit mettre en cache le fichier avant de tenter de le &quot;revalider&quot; ou de le demander de nouveau sur le site. Ce concept d’âge maximal du cache est généralement appelé &quot;expiration du cache&quot; ou TTL (&quot;durée de vie&quot;). Diffusion d’expériences commerciales à grande échelle - Avec Adobe Experience Manager, Commerce Integration Framework, Adobe Commerce 7
 
 Voici quelques zones d’un site AEM/CIF/Adobe Commerce pouvant être définies pour être mises en cache dans le navigateur du client :
 
@@ -68,7 +68,7 @@ Un autre paramètre de Dispatcher à optimiser lors de la configuration du nivea
 
 >[!NOTE]
 >
-> Pour plus d’informations sur ce sujet, reportez-vous à la section [aem-dispatcher-expériences](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/gracePeriod) Référentiel GitHub.
+> Pour plus d’informations sur ce sujet, reportez-vous au [aem-dispatcher-expériences](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/gracePeriod) Référentiel GitHub.
 
 ## CIF - Mise en cache GraphQL via des composants
 
@@ -100,7 +100,7 @@ Les options de mise en cache ci-dessus peuvent être définies à l’aide de la
 
 ## Mise en cache hybride : demandes GraphQL côté client dans les pages Dispatcher mises en cache
 
-Il est également possible d’utiliser une approche hybride de la mise en cache des pages : il est possible qu’une page CIF contienne des composants qui demanderaient toujours les dernières informations d’Adobe Commerce directement depuis le navigateur du client. Cela peut s’avérer utile pour des zones spécifiques de la page dans un modèle qui sont importantes pour être à jour avec des informations en temps réel : Prix des produits au sein d’un PDP, par exemple. Lorsque les prix changent fréquemment en raison de la correspondance dynamique des prix, ces informations peuvent être configurées pour ne pas être mises en cache sur le Dispatcher. Au contraire, les prix peuvent être récupérés côté client dans le navigateur du client à partir d’Adobe Commerce directement via les API GraphQL avec des composants web CIF AEM.
+Il est également possible d’adopter une approche hybride de la mise en cache des pages : il est possible qu’une page CIF contienne des composants qui demanderaient toujours les dernières informations d’Adobe Commerce directement depuis le navigateur du client. Cela peut s’avérer utile pour des zones spécifiques de la page dans un modèle qui sont importantes pour être à jour avec des informations en temps réel : les prix des produits dans un PDP, par exemple. Lorsque les prix changent fréquemment en raison de la correspondance dynamique des prix, ces informations peuvent être configurées pour ne pas être mises en cache sur le Dispatcher. Au contraire, les prix peuvent être récupérés côté client dans le navigateur du client à partir d’Adobe Commerce directement via les API GraphQL avec des composants web CIF AEM.
 
 Cela peut être configuré via les paramètres des composants d’AEM : pour les informations de prix sur les pages de liste de produits, il peut être configuré dans le modèle de liste de produits, en sélectionnant le composant de liste de produits dans les paramètres de la page et en cochant l’option &quot;Charger les prix&quot;. La même approche pourrait fonctionner pour le niveau des stocks.
 
@@ -132,8 +132,8 @@ Lors d’un événement de montée en puissance, cela peut même entraîner une 
 
 Il doit donc être configuré pour ignorer tous les paramètres par défaut dans &quot;ignoreUrlParams&quot;, sauf lorsqu’un paramètre de GET est utilisé pour modifier la structure de HTML d’une page. Par exemple, une page de recherche dans laquelle le terme de recherche figure dans l’URL en tant que paramètre de GET serait utilisée. Dans ce cas, vous devez ensuite configurer manuellement ignoreUrlParams pour ignorer les paramètres tels que gclid, fbclid et tout autre paramètre de suivi utilisé par vos canaux publicitaires, sans affecter les paramètres de GET requis pour les opérations normales du site.
 
-## Limites des agents MPM sur les dispatchers
+## Limites des travailleurs MPM sur les dispatchers
 
 Les paramètres de traitement MPM sont une configuration de serveur Apache HTTP avancée qui nécessite des tests approfondis pour optimiser en fonction du processeur et de la mémoire vive de votre Dispatcher. Cependant, dans la portée de ce livre blanc, nous suggérons que ServerLimit et MaxRequestWorkers, soient augmentés à un niveau que le processeur et la mémoire RAM disponibles du serveur prennent en charge, puis que les MinSpareThreads et MaxSpareThreads soient tous deux augmentés à un niveau correspondant à MaxRequestWorkers.
 
-Cette configuration laisse Apache HTTP sur un &quot;paramètre de préparation complet&quot; qui est une configuration haute performance pour les serveurs avec une RAM importante et plusieurs coeurs de processeur. Cette configuration produira les meilleurs temps de réponse possibles à partir d’Apache HTTP en maintenant des connexions ouvertes persistantes prêtes à servir les requêtes et supprimera tout délai dans la frai de nouveaux processus en réponse à des soudaines augmentations de trafic, comme lors des ventes Flash.
+Cette configuration laisserait Apache HTTP sur un &quot;paramètre de préparation complet&quot; qui est une configuration haute performance pour les serveurs avec une RAM importante et plusieurs coeurs de processeur. Cette configuration produira les meilleurs temps de réponse possibles à partir d’Apache HTTP en maintenant des connexions ouvertes persistantes prêtes à servir les requêtes et supprimera tout délai dans la frai de nouveaux processus en réponse à des soudaines augmentations de trafic, comme lors des ventes Flash.

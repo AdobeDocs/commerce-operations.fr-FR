@@ -39,7 +39,7 @@ La page d’accueil de B2C doit inclure :
 
 - Affichage de promotions
 - Carrousel de produit
-- Passage en caisse simple
+- Simple checkout
 
 Service client pour B2B :
 

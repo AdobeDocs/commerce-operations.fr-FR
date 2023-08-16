@@ -21,7 +21,7 @@ Vous pouvez structurer les équipes dans un format mixte, notamment :
 - Distant
 - Prestataires tiers
 
-Une équipe qui réussit peut utiliser n’importe quel format, mais il doit être clairement défini et flexible pour minimiser les coûts et optimiser l’efficacité et la productivité.
+Une équipe qui réussit peut utiliser n’importe quel format, mais il doit être clairement défini et flexible afin de minimiser les coûts et d’optimiser l’efficacité et la productivité.
 
 ## Marketing
 
@@ -47,7 +47,7 @@ Par exemple, une organisation avait pour la première fois l’équipe du servic
 
 Il est important de s’assurer que l’équipe du service client est impliquée et fournit constamment des commentaires à l’équipe d’e-commerce. Les commentaires susceptibles d’impacter les transactions ou d’augmenter le comportement du panier peuvent être rapidement pris en compte dans la feuille de route.
 
-## Commerce électronique
+## eCommerce
 
 Idéalement, la plupart des entreprises disposent d’une équipe dédiée au commerce électronique qui gère les opérations, les décisions, la stratégie, les objectifs, la maintenance et tout ce qui a trait au succès de la plateforme en ligne.
 

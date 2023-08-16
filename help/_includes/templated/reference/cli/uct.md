@@ -33,26 +33,26 @@ bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [
 
 Le type de shell (&quot;bash&quot;)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--input`, `-i`
 
 Un tableau de jetons d’entrée (par exemple, &quot;C.C._WORDS&quot; ou &quot;argv&quot;)
 
 - Valeur par défaut : `[]`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--current`, `-c`
 
 Index de la table &quot;input&quot; dans laquelle se trouve le curseur (par exemple, Throne_CWORD)
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--symfony`, `-S`
 
 Version du script d’achèvement
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -70,7 +70,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -114,7 +114,7 @@ bin/uct completion [--debug] [--] [<shell>]
 
 ### `shell`
 
-Le type de conteneur (par ex. &quot;bash&quot;), la valeur de la variable env &quot;$SHELL&quot; sera utilisée si elle n’est pas indiquée.
+Le type de shell (par exemple &quot;bash&quot;), la valeur de la variable d’environnement &quot;$SHELL&quot; sera utilisée si ce n’est pas le cas.
 
 
 ### `--debug`
@@ -140,7 +140,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -194,7 +194,7 @@ Nom de la commande
 Format de sortie (txt, xml, json ou md)
 
 - Valeur par défaut : `txt`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--raw`
 
@@ -219,7 +219,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -278,7 +278,7 @@ Pour générer la liste de commandes brute
 Format de sortie (txt, xml, json ou md)
 
 - Valeur par défaut : `txt`
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--short`
 
@@ -303,7 +303,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -367,7 +367,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -411,7 +411,7 @@ bin/uct core:code:changes [-o|--output [OUTPUT]] [--] <dir> [<vanilla-dir>]
 
 ### `dir`
 
-Répertoire d’installation d’Adobe Commerce.
+Répertoire d’installation Adobe Commerce.
 
 - Obligatoire
 
@@ -442,7 +442,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -513,7 +513,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -589,7 +589,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur
@@ -633,7 +633,7 @@ bin/uct upgrade:check [-a|--current-version [CURRENT-VERSION]] [-c|--coming-vers
 
 ### `dir`
 
-Répertoire d’installation d’Adobe Commerce.
+Répertoire d’installation Adobe Commerce.
 
 - Obligatoire
 
@@ -645,7 +645,7 @@ La version actuelle d’Adobe Commerce, la version de l’installation d’Adobe
 
 ### `--coming-version`, `-c`
 
-La version d’Adobe Commerce de Target, la dernière version d’Adobe Commerce publiée sera utilisée si vous l’omettez. Versions Adobe Commerce disponibles : 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3-p1 \| 2.3.4 \| 2.3-p1 \| 2.3.4-p1 \| 2.3.4-p2 \| 2.3.5 \| 2.3.5-p1 \| \| 2.3.6 \| 2.3.6-p1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-p2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-p1 \| 2.4.3-p2 \| 2.4.3-p3 \| 2.4.4 \| 2.4-p1 \| 2.4.5 \| 2.4-p2 \| 4.5-p1 \| 2.4.4-p3 \| 2.4.5-p2 \| 2.4.6
+La version d’Adobe Commerce de Target, la dernière version d’Adobe Commerce publiée sera utilisée si elle est omise. Versions Adobe Commerce disponibles : 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3-p1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-p2 \| 2.3.5 \| 2.3-p1 \| 2.3 5-p2 \| 2.3.6 \| 2.3.6-p1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-p2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4 -p1 \| 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-p1 \| 2.4.3-p2 \| 2.4.3-p3 \| 2.4.4 \| 2.4-p1 \| 2.4.5 \| 2.4-p2 \| 2.4.5-p1 \| 2.4.4-p3 \| 2.4.5-p2 \| 2.4.6
 
 - Accepte une valeur
 
@@ -679,7 +679,7 @@ Ignorer les problèmes courants pour la version actuelle et à venir
 
 Contexte d&#39;exécution. Cette option est destinée à des fins d’intégration et n’affecte pas le résultat de l’exécution.
 
-- Nécessite une valeur
+- Requiert une valeur
 
 ### `--help`, `-h`
 
@@ -697,7 +697,7 @@ Ne sortez aucun message
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbosité des messages : 1 pour la sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
 
 - Valeur par défaut : `false`
 - N’accepte pas de valeur

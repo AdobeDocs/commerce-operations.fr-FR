@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Gestion dynamique des prix
 
-La tarification dynamique est une stratégie de tarification réactive dans laquelle les prix changent en temps réel en fonction de la demande, de l’offre, des tendances et de la concurrence. Ce concept n&#39;est pas nouveau; elle existe depuis un certain temps maintenant, mais elle prend certainement le contrôle du commerce électronique. Les prix dynamiques donnent aux détaillants l&#39;avantage de modifier les prix pour qu&#39;ils disposent d&#39;un avantage concurrentiel. Par exemple, vous pouvez essayer de réduire le prix d’un produit qui ne se vend pas bien pour essayer d’augmenter les ventes.
+La tarification dynamique est une stratégie de tarification réactive dans laquelle les prix changent en temps réel en fonction de la demande, de l’offre, des tendances et de la concurrence. Ce n&#39;est pas un nouveau concept ; il existe depuis un certain temps déjà, mais il prend certainement le contrôle du commerce électronique. Les prix dynamiques donnent aux détaillants l&#39;avantage de modifier les prix pour qu&#39;ils disposent d&#39;un avantage concurrentiel. Par exemple, vous pouvez essayer de réduire le prix d’un produit qui ne se vend pas bien pour essayer d’augmenter les ventes.
 
 Trois facteurs influencent la tarification dynamique, notamment :
 

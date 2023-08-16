@@ -1,11 +1,11 @@
 ---
 title: Notes de mise à jour d’Adobe Commerce et de Magento Open Source
-description: Découvrez où trouver des informations pour des versions spécifiques d’Adobe Commerce et de Magento Open Source.
+description: Découvrez où trouver des informations pour des versions spécifiques d’Adobe Commerce et de Magento Open Source.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
 source-git-commit: c371ee59e4f1efcc947d0bbd189a892d8f32a5b7
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -44,7 +44,7 @@ Utilisez le tableau suivant pour trouver des notes de mise à jour et des inform
       </td>
     </tr>
     <tr>
-      <td><strong>Services pour Adobe Commerce</strong>
+      <td><strong>Services pour Adobe Commerce</strong>
         <p>Découvrez les dernières améliorations apportées aux services Commerce innovants disponibles sous la forme d’Adobe Commerce et d’extensions Magento Open Source.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>

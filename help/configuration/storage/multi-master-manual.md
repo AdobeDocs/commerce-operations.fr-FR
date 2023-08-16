@@ -16,7 +16,7 @@ ht-degree: 0%
 
 {{deprecate-split-db}}
 
-Si l’application Commerce est déjà en production ou si vous avez déjà installé du code personnalisé ou des composants, vous devrez peut-être configurer manuellement des bases de données fractionnées. Avant de poursuivre, contactez le support Adobe Commerce pour voir si cela est nécessaire dans votre cas.
+Si l’application Commerce est déjà en production ou si vous avez déjà installé du code personnalisé ou des composants, vous devrez peut-être configurer manuellement des bases de données fractionnées. Avant de poursuivre, contactez l’assistance Adobe Commerce pour voir si cela est nécessaire dans votre cas.
 
 Le fractionnement manuel de bases de données implique :
 
@@ -33,14 +33,14 @@ Le fractionnement manuel de bases de données implique :
 
 Cette rubrique utilise les conventions de dénomination suivantes :
 
-- Le nom principal de la base de données est `magento` et son nom d’utilisateur et son mot de passe sont tous deux `magento`
-- Le nom de la base de données de guillemets est `magento_quote` et son nom d’utilisateur et son mot de passe sont tous deux `magento_quote`
+- Le nom de la base principale est `magento` et son nom d’utilisateur et son mot de passe sont tous deux `magento`
+- Le nom de la base de données de devis est `magento_quote` et son nom d’utilisateur et son mot de passe sont tous deux `magento_quote`
 
-   La base de données des guillemets est également appelée _passage en caisse_ base de données.
+  La base de données des guillemets est également appelée _passage en caisse_ base de données.
 
 - Le nom de la base de données de ventes est `magento_sales` et son nom d’utilisateur et son mot de passe sont tous deux `magento_sales`
 
-   La base de données des ventes est également appelée base de données OMS.
+  La base de données des ventes est également appelée base de données OMS.
 
 >[!INFO]
 >
@@ -126,7 +126,7 @@ Les noms des tables de la base de données des ventes commencent par :
 - `salesrule_`
 - `sales_`
 - `magento_sales_`
-- Le `magento_customercustomattributes_sales_flat_order` le tableau est également affecté.
+- La variable `magento_customercustomattributes_sales_flat_order` est également affecté.
 
 >[!INFO]
 >
@@ -206,13 +206,13 @@ Exécutez le script précédent :
    mysql -u root -p
    ```
 
-1. Dans le `mysql>` exécutez le script comme suit :
+1. À l’emplacement `mysql>` exécutez le script comme suit :
 
    ```shell
    source <path>/<script>.sql
    ```
 
-   Par exemple :
+   Par exemple,
 
    ```shell
    source /root/sql-scripts/1_foreign-sales.sql
@@ -226,7 +226,7 @@ Cette section explique comment sauvegarder les tables de ventes de la base de do
 
 Si vous utilisez actuellement la variable `mysql>` invite, entrée `exit` pour revenir au shell de commande.
 
-Exécutez les opérations suivantes `mysqldump` commandes, une par une, du shell de commande. Dans chacun d’eux, remplacez les éléments suivants :
+Exécutez la commande suivante : `mysqldump` commandes, une par une, du shell de commande. Dans chacun d’eux, remplacez les éléments suivants :
 
 - `<your database root username>` avec le nom de l’utilisateur racine de base de données
 - `<your database root user password>` avec le mot de passe de l’utilisateur
@@ -297,7 +297,7 @@ Où
 
 - `<your sales DB name>` avec le nom de votre base de données de ventes.
 
-   Dans cette rubrique, le nom de l’exemple de base de données est `magento_sales`.
+  Dans cette rubrique, le nom de l’exemple de base de données est `magento_sales`.
 
 - `<root username>` avec votre nom d’utilisateur racine MySQL
 - `<root user password>` avec le mot de passe de l’utilisateur
@@ -311,7 +311,7 @@ Cette section décrit les tâches requises pour déposer des clés étrangères 
 >
 >Cette section contient des scripts avec des noms de table de base de données spécifiques. Si vous avez exécuté des personnalisations ou si vous souhaitez obtenir la liste complète des tableaux avant d’effectuer des actions, reportez-vous à la section [Scripts de référence](#reference-scripts).
 
-Les noms des tables de la base de données entre guillemets et `quote`. Le `magento_customercustomattributes_sales_flat_quote` et `magento_customercustomattributes_sales_flat_quote_address` les tableaux sont également affectés.
+Les noms des tables de la base de données citées commencent par `quote`. La variable `magento_customercustomattributes_sales_flat_quote` et `magento_customercustomattributes_sales_flat_quote_address` les tableaux sont également affectés.
 
 ### Déposer des clés étrangères des tables de guillemets
 
@@ -334,10 +334,10 @@ Exécutez le script comme suit :
    mysql -u root -p
    ```
 
-1. Dans le `mysql >` exécutez le script comme suit :
+1. À l’emplacement `mysql >` exécutez le script comme suit :
    `source <path>/<script>.sql`
 
-   Par exemple :
+   Par exemple,
 
    ```shell
    source /root/sql-scripts/2_foreign-key-quote.sql
@@ -457,13 +457,13 @@ Exécutez le script comme suit :
    mysql -u root -p
    ```
 
-1. Dans le `mysql>` exécutez le script comme suit :
+1. À l’emplacement `mysql>` exécutez le script comme suit :
 
    ```shell
    source <path>/<script>.sql
    ```
 
-   Par exemple :
+   Par exemple,
 
    ```shell
    source /root/sql-scripts/3_drop-tables.sql

@@ -1,5 +1,5 @@
 ---
-title: Le [!UICONTROL Deploy] tab
+title: La variable [!UICONTROL Deploy] tab
 description: En savoir plus sur les [!UICONTROL Deploy] de [!DNL Observation for Adobe Commerce].
 exl-id: 3e33f7b0-7a40-4598-ae2e-436118e8d99a
 feature: Configuration, Observability
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Le [!UICONTROL Deploy] tab
+# La variable [!UICONTROL Deploy] tab
 
 Cet onglet permet d’isoler rapidement les problèmes et les causes des problèmes de déploiement.
 
@@ -18,13 +18,13 @@ Cet onglet permet d’isoler rapidement les problèmes et les causes des problè
 
 ![Déployer l’outil de dépannage du déploiement des journaux](../../assets/tools/observation-for-adobe-commerce/deploy-tab-1.jpg)
 
-Le **[!UICONTROL Deploy log Deployment Troubleshooter]** affiche le nombre d’événements de journal de déploiement qui se sont produits au cours de la période sélectionnée. L’objectif est de fournir une vue d’ensemble de l’activité de déploiement et de déterminer la complexité du déploiement en fonction du nombre. Plus le nombre de messages consignés est élevé, plus le déploiement est complexe.
+La variable **[!UICONTROL Deploy log Deployment Troubleshooter]** affiche le nombre d’événements de journal de déploiement qui se sont produits au cours de la période sélectionnée. L’objectif est de fournir une vue d’ensemble de l’activité de déploiement et de déterminer la complexité du déploiement en fonction du nombre. Plus le nombre de messages consignés est élevé, plus le déploiement est complexe.
 
 ## [!UICONTROL Deploy State]
 
 ![État du déploiement](../../assets/tools/observation-for-adobe-commerce/deploy-tab-2.jpg)
 
-Le **[!UICONTROL Deploy State]** cadre affiche les événements de déploiement qui se sont produits au cours de la période sélectionnée. L’analyseur de ce cadre recherche ces signaux spécifiques :
+La variable **[!UICONTROL Deploy State]** cadre affiche les événements de déploiement qui se sont produits au cours de la période sélectionnée. L’analyseur de ce cadre recherche ces signaux spécifiques :
 
 * &#39;`%NOTICE: Starting generate command%`&#39;) en tant que &#39;`start_gen`&#39;
 * &#39;`%git apply /app/vendor/magento/ece-tools/patches%`&#39;) en tant que &#39;`apply_patches`&#39;
@@ -40,7 +40,7 @@ Le **[!UICONTROL Deploy State]** cadre affiche les événements de déploiement 
 
 ![Déployer les détails du journal](../../assets/tools/observation-for-adobe-commerce/deploy-tab-3.jpg)
 
-Le **[!UICONTROL Deploy Log Detail]** cadre affiche les détails du résumé du message du journal de déploiement qui se sont produits au cours de la période sélectionnée. Le cadre analyse les chaînes suivantes dans les journaux de déploiement :
+La variable **[!UICONTROL Deploy Log Detail]** cadre affiche les détails du résumé du message du journal de déploiement qui se sont produits au cours de la période sélectionnée. Le cadre analyse les chaînes suivantes dans les journaux de déploiement :
 
 * &#39;`%NOTICE: Starting deploy.%`&#39;) en tant que &#39;`start_dply`&#39;
 * &#39;`%INFO: Starting scenario(s): scenario/deploy.xml%`&#39;) en tant que &#39;`start_scenario`&#39;
@@ -81,7 +81,7 @@ Le **[!UICONTROL Deploy Log Detail]** cadre affiche les détails du résumé du 
 
 ![Détails du journal de déploiement des publications](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
 
-Le **[!UICONTROL Post Deploy Log Detail]** Le cadre affiche les détails du journal de post-déploiement qui se sont produits au cours de la période sélectionnée. Ce cadre est axé sur des messages de journal spécifiques qui contiennent les chaînes suivantes :
+La variable **[!UICONTROL Post Deploy Log Detail]** Le cadre affiche les détails du journal de post-déploiement qui se sont produits au cours de la période sélectionnée. Ce cadre est axé sur des messages de journal spécifiques qui contiennent les chaînes suivantes :
 
 * &#39;`%Disabled maintenance mode%`&#39;) en tant que &#39;`disabled_maint_mode`&#39;
 * &#39;`%INFO: Starting scenario(s): scenario/post-deploy.xml%`&#39;) en tant que &#39;`start_pstdply_scenario`&#39;
@@ -99,7 +99,7 @@ Le **[!UICONTROL Post Deploy Log Detail]** Le cadre affiche les détails du jour
 
 ![Détails du journal cloud](../../assets/tools/observation-for-adobe-commerce/deploy-tab-5.jpg)
 
-Le **[!UICONTROL Cloud Log Detail]** image affiche les détails du journal cloud qui se sont produits au cours de la période sélectionnée. Les chaînes suivantes sont analysées et renvoyées avec l’étiquette &quot;AS&quot; ci-dessous :
+La variable **[!UICONTROL Cloud Log Detail]** image affiche les détails du journal cloud qui se sont produits au cours de la période sélectionnée. Les chaînes suivantes sont analysées et renvoyées avec l’étiquette &quot;AS&quot; ci-dessous :
 
 * &#39;`%DEBUG: /bin/bash -c "set -o pipefail; php ./bin/magento setup:upgrade%`&#39;) en tant que &#39;`start_update`&#39;
 * &#39;`%Schema creation/updates:%`&#39;) en tant que &#39;`schema_updates`&#39;
@@ -153,10 +153,10 @@ Le **[!UICONTROL Cloud Log Detail]** image affiche les détails du journal cloud
 
 ![Nombre de modules importés pendant le déploiement](../../assets/tools/observation-for-adobe-commerce/deploy-tab-6.jpg)
 
-Le **[!UICONTROL Count of modules imported during deploy]** cadre indique le nombre de modules importés au cours du déploiement sur la période sélectionnée.
+La variable **[!UICONTROL Count of modules imported during deploy]** cadre indique le nombre de modules importés au cours du déploiement sur la période sélectionnée.
 
 ## [!UICONTROL Deployed module list]
 
 ![Liste des modules déployés](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
 
-Le **[!UICONTROL Deployed module list]** cadre affiche les modules déployés pendant la période sélectionnée.
+La variable **[!UICONTROL Deployed module list]** cadre affiche les modules déployés pendant la période sélectionnée.

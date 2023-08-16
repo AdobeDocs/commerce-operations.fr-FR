@@ -16,7 +16,7 @@ Redis features :
 
 - Stockage des sessions PHP
 - Nettoyage du cache basé sur les balises sans `foreach` boucles
-- Enregistrement sur disque et réplication maître/Secondaire
+- Enregistrement sur disque et réplication maître/esclave
 
 ## Installer Redis
 
@@ -33,7 +33,7 @@ Selon votre installation, vous trouverez généralement votre configuration Redi
 
 Pour optimiser l’instance Redis en fonction de vos besoins, vous obtenez de meilleurs résultats en utilisant une instance dédiée pour chaque session, cache Commerce et FPC.
 
-Pour les sessions, Adobe vous recommande d’activer la persistance pour copier les données Redis sur le disque à l’aide de l’une des options de persistance suivantes : Instantanés Redis Database Backup (RDB) standard ou journaux de persistance Ajouter un fichier uniquement (AOF).
+Pour les sessions, Adobe vous recommande d’activer la persistance pour copier les données Redis sur le disque à l’aide de l’une des options de persistance suivantes : instantanés RDB (Redis Database Backup) standard ou journaux de persistance AOF (Append Only File).
 
 - **Sauvegarde de la base de données Redis** (RDB) les instantanés stockent la base de données complète dans un fichier de vidage après une période donnée, lorsqu’un nombre minimum de clés a changé depuis le dernier enregistrement. Utilisez la variable `save` dans le `redis.conf` pour configurer ce paramètre.
 

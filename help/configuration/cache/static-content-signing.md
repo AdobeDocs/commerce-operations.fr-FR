@@ -56,7 +56,7 @@ Où `<value>` est 1 (activé) ou 0 (désactivé).
 ## Signatures de version
 
 Commerce ajoute la signature de version en tant que composant de chemin juste après l’URL de base des fichiers d’affichage statique afin de préserver l’intégrité des URL relatives sur les ressources statiques.
-Cela oblige également le navigateur à résoudre une URL relative à la source signée correcte, tout en maintenant son contenu indépendant de la présence/absence de la valeur de signature.
+Cela oblige également le navigateur à résoudre une URL relative à la source signée correcte, tout en conservant son contenu indépendamment de la présence/absence de la valeur de signature.
 
 Lorsqu’un navigateur demande une source signée au serveur, le serveur utilise les réécritures d’URL pour supprimer le composant de signature de l’URL.
 

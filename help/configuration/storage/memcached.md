@@ -60,7 +60,7 @@ Commerce utilise la mémoire mise en cache pour le stockage de session, mais pas
 
    Si des erreurs s’affichent (par exemple, un HTTP 500 (Erreur interne du serveur)), activez le mode Développeur et diagnostiquez le problème. Assurez-vous que la mémoire mise en cache est en cours d’exécution, configurée correctement et que `env.php` ne contient aucune erreur de syntaxe.
 
-1. (Facultatif) Utilisez Telnet pour examiner le stockage en mémoire cache.
+1. (Facultatif.) Utilisez Telnet pour examiner le stockage en mémoire cache.
 
    ```bash
    telnet <memcached host or ip> <memcached port>

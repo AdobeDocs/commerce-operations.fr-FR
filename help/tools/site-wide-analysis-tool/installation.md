@@ -12,19 +12,19 @@ ht-degree: 0%
 
 # Guide d’installation
 
-Le [!DNL Site-Wide Analysis Tool] fournit 24/7 surveillance des performances, rapports et recommandations en temps réel pour garantir la sécurité et la maniabilité d’Adobe Commerce sur les installations d’infrastructure cloud. Il fournit également des informations détaillées sur les correctifs disponibles et installés, les extensions tierces et votre installation Adobe Commerce.
+La variable [!DNL Site-Wide Analysis Tool] fournit 24/7 surveillance des performances, rapports et recommandations en temps réel pour garantir la sécurité et la maniabilité d’Adobe Commerce sur les installations d’infrastructure cloud. Il fournit également des informations détaillées sur les correctifs disponibles et installés, les extensions tierces et votre installation Adobe Commerce.
 
 >[!INFO]
 >
->En savoir plus [procédure d’activation](../site-wide-analysis-tool/access.md) la valeur [!DNL Site-Wide Analysis Tool] et générer des rapports.
+>Formation [procédure d’activation](../site-wide-analysis-tool/access.md) la valeur [!DNL Site-Wide Analysis Tool] et générer des rapports.
 
 Si vous disposez d’une installation sur site d’Adobe Commerce, installez un agent sur votre infrastructure pour utiliser l’outil. Vous n’avez pas besoin d’installer l’agent sur Adobe Commerce sur les projets d’infrastructure cloud.
 
 ## Agent
 
-Le [!DNL Site-Wide Analysis Tool] L’agent vous permet d’utiliser la variable [!DNL Site-Wide Analysis Tool] pour les installations sur site d’Adobe Commerce.
+La variable [!DNL Site-Wide Analysis Tool] L’agent vous permet d’utiliser la variable [!DNL Site-Wide Analysis Tool] pour les installations sur site d’Adobe Commerce.
 
-Le [!DNL Site-Wide Analysis Tool] L’agent collecte les données de l’application et de l’entreprise, les analyse et fournit des informations supplémentaires sur l’intégrité de votre installation afin que vous puissiez améliorer l’expérience client. Il surveille votre application et vous aide à identifier les problèmes de performances, de sécurité, de disponibilité et d’application.
+La variable [!DNL Site-Wide Analysis Tool] L’agent collecte les données de l’application et de l’entreprise, les analyse et fournit des informations supplémentaires sur l’intégrité de votre installation afin que vous puissiez améliorer l’expérience client. Il surveille votre application et vous aide à identifier les problèmes de performances, de sécurité, de disponibilité et d’application.
 
 L’installation de l’agent nécessite les étapes suivantes :
 
@@ -38,7 +38,7 @@ L’installation de l’agent nécessite les étapes suivantes :
 
 >[!INFO]
 >
->L’agent prend en charge les installations Adobe Commerce à plusieurs noeuds. Installez et configurez l’agent sur chaque noeud.
+>L’agent prend en charge les installations Adobe Commerce à plusieurs noeuds. Installer et configurer l’agent sur chaque noeud.
 
 ## Configuration requise
 
@@ -80,9 +80,9 @@ L’agent requiert la variable [[!DNL Commerce Services Connector]](https://expe
 bin/magento module:status Magento_ServicesId
 ```
 
-Si vous avez installé l’extension et l’avez configurée à l’aide d’une clé d’API existante pour un autre service, vous **DOIT régénérer la clé API** et mettez-le à jour dans l’administrateur Adobe Commerce de l’agent.
+Si vous avez installé l’extension et l’avez configurée à l’aide d’une clé API existante pour un autre service, vous **DOIT régénérer la clé API** et mettez-le à jour dans l’administrateur Adobe Commerce de l’agent.
 
-1. Insérer votre site web dans [mode de maintenance](../../installation/tutorials/maintenance-mode.md).
+1. Placez votre site web dans [mode de maintenance](../../installation/tutorials/maintenance-mode.md).
 
 1. Se connecter [account.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
 
@@ -159,7 +159,7 @@ Nous avons créé une [script shell](https://github.com/magento-swat/install-age
    Success exit.
    ```
 
-1. Après avoir téléchargé et installé l’agent, [configurer son exécution](#run-the-agent) en utilisant l’une des méthodes suivantes :
+1. Après avoir téléchargé et installé l’agent, [configurer son exécution](#run-the-agent) à l’aide de l’une des méthodes suivantes :
 
    - [Service](#service) (recommandé si vous disposez de l’accès racine)
 
@@ -169,7 +169,7 @@ Nous avons créé une [script shell](https://github.com/magento-swat/install-age
 
 Si vous ne souhaitez pas utiliser notre [script shell](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) pour installer l’agent, vous devez l’installer manuellement en procédant comme suit :
 
-1. Créez un répertoire dans lequel vous souhaitez télécharger l’agent.
+1. Créez un répertoire dans lequel télécharger l’agent.
 
    >[!TIP]
    >
@@ -258,7 +258,7 @@ Si vous ne souhaitez pas utiliser notre [script shell](https://github.com/magent
    Success exit.
    ```
 
-1. Après avoir téléchargé et installé l’agent, vous devez [configurer son exécution](#run-the-agent) en utilisant l’une des méthodes suivantes :
+1. Après avoir téléchargé et installé l’agent, vous devez [configurer son exécution](#run-the-agent) à l’aide de l’une des méthodes suivantes :
 
    - [Service](#service) (recommandé si vous disposez de l’accès racine)
 
@@ -346,7 +346,7 @@ Exécutez les commandes suivantes pour désinstaller le service de votre systèm
    systemctl daemon-reload
    ```
 
-1. Réinitialiser les `systemd` d’un état en échec.
+1. Réinitialiser les `systemd` des unités d’un état en échec.
 
    ```bash
    systemctl reset-failed

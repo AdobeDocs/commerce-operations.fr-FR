@@ -57,7 +57,7 @@ Les équipes externes incluent des consultants, des passerelles de paiement, des
 
 - Les membres de l’équipe externe sont plus expérimentés. Les experts de Platform connaissent toutes les fonctionnalités de la plateforme et peuvent suggérer les bonnes pratiques que l’entreprise peut utiliser pour optimiser son utilisation de la plateforme.
 
-- Les sociétés de conseil mettent leurs ressources à jour en termes de technologie et d&#39;évolution de l&#39;industrie. Les consultants ont un style de travail flexible et beaucoup à offrir. non seulement en termes de connaissance et d&#39;expérience, mais aussi de culture.
+- Les sociétés de conseil mettent leurs ressources à jour en termes de technologie et d&#39;évolution de l&#39;industrie. Les consultants ont un style de travail flexible et beaucoup à offrir, non seulement en termes de connaissances et d&#39;expérience, mais aussi de culture.
 
 - Des tiers peuvent fournir aux personnes les moyens de travailler sur un projet à mesure que les besoins en ressources changent, ce qui permet à une équipe plus évolutive de travailler.
 

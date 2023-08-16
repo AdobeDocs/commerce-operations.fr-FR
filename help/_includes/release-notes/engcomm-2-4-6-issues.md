@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Contributions de la communauté
 
-| Membre de la communauté contribuant | Requêtes de tirage | Problèmes GitHub connexes |
+| Contribuer aux membres de la communauté | Requêtes de tirage | Problèmes GitHub connexes |
 | ------- | ------- | ------- |
 | amenk | [magento/magento2#36663](https://github.com/magento/magento2/pull/36663) | [magento/magento2#14495](https://github.com/magento/magento2/issues/14495) |
 | pratique | [magento/magento2#36529](https://github.com/magento/magento2/pull/36529) | [magento/magento2#36726](https://github.com/magento/magento2/issues/36726) [magento/magento2#35546](https://github.com/magento/magento2/issues/35546) |
@@ -24,7 +24,7 @@ ht-degree: 0%
 | texboy | [magento/magento2#36241](https://github.com/magento/magento2/pull/36241) | [magento/magento2#36349](https://github.com/magento/magento2/issues/36349) [magento/magento2#29448](https://github.com/magento/magento2/issues/29448) |
 | pratique | [magento/magento2#36224](https://github.com/magento/magento2/pull/36224) | [magento/magento2#36334](https://github.com/magento/magento2/issues/36334) |
 | fredden | [magento/magento2#36187](https://github.com/magento/magento2/pull/36187) | [magento/magento2#36554](https://github.com/magento/magento2/issues/36554) |
-| serbynskyi | [magento/magento2#36036](https://github.com/magento/magento2/pull/36036) | [magento/magento2#36337](https://github.com/magento/magento2/issues/36337) |
+| serbynski | [magento/magento2#36036](https://github.com/magento/magento2/pull/36036) | [magento/magento2#36337](https://github.com/magento/magento2/issues/36337) |
 | dshevtsov | [magento/magento2#35990](https://github.com/magento/magento2/pull/35990) | [magento/magento2#36230](https://github.com/magento/magento2/issues/36230) [magento/magento2#36651](https://github.com/magento/magento2/issues/36651) |
 | Bashev | [magento/magento2#35986](https://github.com/magento/magento2/pull/35986) | [magento/magento2#35899](https://github.com/magento/magento2/issues/35899) [magento/magento2#36055](https://github.com/magento/magento2/issues/36055) [magento/magento2#36312](https://github.com/magento/magento2/issues/36312) [Smile-SA/élasticsuite#2772](https://github.com/Smile-SA/elasticsuite/issues/2772) [plumrocket/module-layered-navigation-fix-magento-2.4.5#1](https://github.com/plumrocket/module-layered-navigation-fix-magento-2.4.5/issues/1) |
 | lbajsarowicz | [magento/magento2#35948](https://github.com/magento/magento2/pull/35948) | [magento/magento2#36539](https://github.com/magento/magento2/issues/36539) |

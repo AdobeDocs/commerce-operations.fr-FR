@@ -15,7 +15,7 @@ ht-degree: 0%
 L’exemple suivant montre comment consigner une activité de base de données à l’aide de la variable [`Magento\Framework\DB\LoggerInterface`][interface], qui comporte deux implémentations :
 
 - Ne consigne rien (par défaut) : [`Magento\Framework\DB\Logger\Quiet`][quiet]
-- Journaux de la `var/log` directory: [`Magento\Framework\DB\Logger\File`][file]
+- Journaux de la variable `var/log` directory: [`Magento\Framework\DB\Logger\File`][file]
 
 >[!TIP]
 >

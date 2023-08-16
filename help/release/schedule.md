@@ -1,11 +1,11 @@
 ---
 title: Calendrier des versions
-description: Découvrez quand Adobe prévoit d’annoncer la sortie de nouvelles fonctionnalités importantes pour Adobe Commerce.
+description: Découvrez quand Adobe prévoit d’annoncer la publication de nouvelles fonctionnalités importantes pour Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 source-git-commit: 12b4f619673414f18d9697450e867681c6cb3194
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -63,7 +63,7 @@ Le tableau suivant indique les dates des versions planifiées (les dates peuvent
   </tr>
   <tr>
     <td>19 mars 2024</td>
-    <td>--</td>
+    <td>—</td>
     <td><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Correctif bêta</a>: 2.4.7-beta3</td>
   </tr>
   <tr>

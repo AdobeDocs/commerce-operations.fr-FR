@@ -1,6 +1,6 @@
 ---
 title: Bonnes pratiques relatives aux limites de produit
-description: Découvrez les bonnes pratiques de configuration des unités de gestion des stocks de produits (SKU) afin d’optimiser les performances du site.
+description: Découvrez les bonnes pratiques de configuration des unités de gestion des stocks de produits (SKU) pour optimiser les performances du site.
 role: Admin
 feature: Best Practices, Catalogs
 exl-id: 37af7b92-05ac-4a4f-9009-11e8d9f95c2f
@@ -56,4 +56,4 @@ Utilisez les stratégies suivantes pour réduire le nombre de produits (SKU) :
 - [Utilisation de catalogues partagés](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)
 - infrastructure cloud : [Configuration de plusieurs sites web et magasins](https://devdocs.magento.com/cloud/project/project-multi-sites.html)
 - Sur site : [Plusieurs sites web ou magasins](../../../configuration/multi-sites/ms-overview.md)
-- [Adobe Commerce sur l’infrastructure cloud : Bonnes pratiques pour la configuration du magasin](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)
+- [Adobe Commerce sur l’infrastructure cloud : bonnes pratiques pour la configuration du magasin](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)

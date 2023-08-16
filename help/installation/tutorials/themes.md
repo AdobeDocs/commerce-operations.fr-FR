@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Avant d’utiliser cette commande, vous devez connaître le chemin d’accès relatif à votre thème. Les thèmes se trouvent dans un sous-répertoire de `<magento_root>/app/design/<area name>`. Vous devez spécifier le chemin d’accès au thème commençant par la zone, qui est : `frontend` (pour les thèmes de vitrine) ou `adminhtml` (pour les thèmes d’administration).
 
-Par exemple, le chemin d’accès au thème Luma fourni avec Adobe Commerce et Magento Open Source est : `frontend/Magento/luma`.
+Par exemple, le chemin d’accès au thème Luma fourni avec Adobe Commerce et Magento Open Source est `frontend/Magento/luma`.
 
 Pour plus d’informations sur les thèmes, voir [structure du thème](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
@@ -46,13 +46,13 @@ Où
 La commande effectue les tâches suivantes :
 
 1. Vérifie que les chemins de thème spécifiés existent ; dans le cas contraire, la commande s’arrête.
-1. Vérifie que le thème est un module Compositeur ; dans le cas contraire, la commande s’arrête.
+1. Vérifie que le thème est un module de compositeur ; dans le cas contraire, la commande s’arrête.
 1. Vérifie les dépendances et termine la commande s’il existe des dépendances non satisfaites.
 
    Pour contourner ce problème, vous pouvez soit désinstaller tous les thèmes en même temps, soit désinstaller le en fonction du thème en premier.
 
-1. Vérifie que le thème n’est pas utilisé ; si elle est utilisée, la commande s’arrête.
-1. Vérifie que le thème n’est pas la base du thème virtuel ; s’il s’agit de la base d’un thème virtuel, la commande s’arrête.
+1. Vérifie que le thème n’est pas utilisé ; si il est utilisé, la commande s’arrête.
+1. Vérifie que le thème n’est pas la base du thème virtuel ; si c’est la base d’un thème virtuel, la commande s’arrête.
 1. Met le magasin en mode de maintenance.
 1. If `--backup-code` est spécifié, sauvegardez le code base, à l’exception de la variable `pub/static`, `pub/media`, et `var` répertoires.
 

@@ -1,13 +1,13 @@
 ---
 title: Modules et extensions de mise à niveau
 description: Utilisez l’interface de ligne de commande et le compositeur pour mettre à niveau les modules et extensions Adobe Commerce et Magento Open Source.
-source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
+exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
 
 ---
-
 
 # Mise à niveau des modules et des extensions
 
@@ -47,9 +47,9 @@ Pour mettre à jour ou mettre à niveau un module ou une extension :
 
 ## Extensions groupées de fournisseurs (VBE)
 
-Adobe supprimé [VBE](https://devdocs.magento.com/extensions/vendor/) dans la version 2.4.4. Les fournisseurs continuent de prendre en charge ces extensions sur Adobe Commerce Marketplace.
+Adobe supprimé [VBE](https://devdocs.magento.com/extensions/vendor/) dans 2.4.4. Les fournisseurs continuent de prendre en charge ces extensions sur Adobe Commerce Marketplace.
 
-Si vous souhaitez continuer à utiliser ces extensions avec Adobe Commerce 2.4.4 et versions ultérieures, vous devez mettre à jour les dépendances de package correspondantes dans votre `composer.json` fichier _before_ mise à niveau vers la version 2.4.4. Contactez le fournisseur pour connaître le nom et la version du module à utiliser.
+Si vous souhaitez continuer à utiliser ces extensions avec Adobe Commerce 2.4.4 et versions ultérieures, vous devez mettre à jour les dépendances de package correspondantes dans votre `composer.json` fichier _before_ mise à niveau vers 2.4.4. Contactez le fournisseur pour connaître le nom et la version du module à utiliser.
 
 Pour plus d’informations, consultez les listes Adobe Commerce Marketplace suivantes :
 
@@ -58,4 +58,3 @@ Pour plus d’informations, consultez les listes Adobe Commerce Marketplace suiv
 - [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html)
 - [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
 - [Yotpo](https://marketplace.magento.com/yotpo-module-yotpo.html)
-

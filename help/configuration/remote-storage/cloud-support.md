@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Configuration du stockage à distance pour l’infrastructure Commerce on Cloud
 
-Commencer par le `ece-tools` package 2002.1.5, vous pouvez utiliser une variable d’environnement pour activer le module Stockage distant ; Toutefois, le module Remote Storage dispose de _limité_ prise en charge sur Adobe Commerce sur l’infrastructure cloud. Adobe ne peut pas résoudre entièrement les problèmes liés au service d’adaptateur de stockage tiers.
+Commencer par le `ece-tools` package 2002.1.5, vous pouvez utiliser une variable d’environnement pour activer le module de stockage distant ; cependant, le module de stockage distant dispose de la variable _limité_ prise en charge sur Adobe Commerce sur l’infrastructure cloud. Adobe ne peut pas résoudre entièrement les problèmes liés au service d’adaptateur de stockage tiers.
 
 ## Variable d’environnement
 
-Le `REMOTE_STORAGE` est utilisée pendant la variable [phase de déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html) d’un projet d’infrastructure cloud.
+La variable `REMOTE_STORAGE` est utilisée pendant la variable [phase de déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html) d’un projet d’infrastructure cloud.
 
 ### `REMOTE_STORAGE`
 
@@ -48,7 +48,7 @@ Définissez la variable `REMOTE_STORAGE` en tant que [variable au niveau de l’
 magento-cloud variable:create --level environment --name REMOTE_STORAGE --json true --inheritable false --value '{"driver":"aws-s3","prefix":"uat","config":{"bucket":"aws-bucket-id","region":"eu-west-1","key":"optional-key","secret":"optional-secret"}}'
 ```
 
-Cela crée une `REMOTE_STORAGE` avec la configuration JSON spécifiée. Le `REMOTE_STORAGE` utilise une chaîne JSON pour configurer le stockage à distance. Voici un exemple de configuration JSON :
+Cela crée une `REMOTE_STORAGE` avec la configuration JSON spécifiée. La variable `REMOTE_STORAGE` utilise une chaîne JSON pour configurer le stockage à distance. Voici un exemple de configuration JSON :
 
 ```json
 {
@@ -73,7 +73,7 @@ Vous pouvez également utiliser l’interface web du projet pour ajouter la vari
 
 1. Dans le _Interface Web du projet_, sélectionnez l’environnement dans la partie gauche.
 
-1. Cliquez sur le bouton **Configuration de l’environnement** icône .
+1. Cliquez sur le bouton **Configuration de l’environnement** Icône
 
 1. Dans le _Configuration de l’environnement_ , cliquez sur le bouton **Variables** .
 
@@ -89,7 +89,7 @@ Vous pouvez également utiliser l’interface web du projet pour ajouter la vari
 
 ### Utilisation de l’authentification facultative
 
-Le `key` et `secret` sont facultatives. Lorsque vous créez la variable, vous pouvez masquer la variable `key` et `secret` en sélectionnant l’option `sensitive` . Avec ce paramètre, les valeurs ne sont pas visibles dans l’interface web. Voir [Visibilité des variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility) dans le _Guide sur l’infrastructure de Commerce on Cloud_.
+La variable `key` et `secret` sont facultatives. Lorsque vous créez la variable, vous pouvez masquer la variable `key` et `secret` en sélectionnant le `sensitive` . Avec ce paramètre, les valeurs ne sont pas visibles dans l’interface web. Voir [Visibilité des variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility) dans le _Guide de Commerce sur l’infrastructure cloud_.
 
 Si vous souhaitez utiliser une autre méthode d’authentification, omettez la variable `key` et `secret` de la configuration JSON, Configurez la méthode d’authentification alternative et vérifiez que le serveur est autorisé à utiliser le compartiment S3.
 
@@ -117,6 +117,6 @@ Continuez à configurer l’espace de stockage distant pour les projets cloud av
 
 1. Configurez une [Intégration rapide du serveur principal](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-OTHER-CMS-INTEGRATION.md).
 
-1. Création d’une logique VCL pour [Authentification AWS S3](https://docs.fastly.com/en/guides/amazon-s3#using-an-amazon-s3-private-bucket).
+1. Créer une logique VCL pour [Authentification AWS S3](https://docs.fastly.com/en/guides/amazon-s3#using-an-amazon-s3-private-bucket).
 
-1. Création d’une logique VCL pour [Requêtes du serveur principal vers le compartiment AWS S3](https://developer.fastly.com/reference/vcl/variables/backend-connection/req-backend/).
+1. Créer une logique VCL pour [Requêtes du serveur principal vers le compartiment AWS S3](https://developer.fastly.com/reference/vcl/variables/backend-connection/req-backend/).

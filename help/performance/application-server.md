@@ -2,26 +2,27 @@
 title: Serveur d’applications pour les API GraphQL
 description: Suivez ces instructions pour activer le serveur d’applications pour les API GraphQL dans votre déploiement Adobe Commerce.
 badgeCoreBeta: label="2.4.7-beta1" type="informative"
-source-git-commit: 28bfc54e0f15ba4f4f941acc7d1fb4825702cdf3
+exl-id: 346cc722-131e-4ed0-bc8c-23c3a1e58258
+source-git-commit: f085c0a77fe59ff3b2d76abbd6965b6bc8ee69db
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
 
 # Serveur d’applications pour les API GraphQL
 
-Les API Commerce Application Server for GraphQL permettent à Adobe Commerce de conserver l’état entre les demandes d’API Commerce GraphQL et réduisent le délai d’amorçage de chaque demande. En partageant l’état de l’application entre les processus, les demandes d’API deviennent beaucoup plus efficaces.
+Les API Commerce Application Server for GraphQL permettent à Adobe Commerce de conserver l’état entre les demandes de l’API Commerce GraphQL et réduisent le délai d’amorçage de chaque demande. En partageant l’état de l’application entre les processus, les demandes d’API deviennent beaucoup plus efficaces.
 
 Cette version bêta du serveur d’applications est disponible pour les déploiements sur site exécutant PHP 8.1 ou 8.2 uniquement. Il ne prend pas en charge les déploiements basés sur le cloud. Il ne prend pas encore en charge la fonctionnalité de GraphQL B2B. Les requêtes GraphQL peuvent ne pas fonctionner comme prévu dans les déploiements sur site lorsque cette version du serveur d’applications PHP est configurée.
 
 ## Qui peut utiliser le serveur d’applications ?
 
-Le serveur d’applications est disponible uniquement pour les déploiements Commerce sur site.
+Application Server est disponible uniquement pour les déploiements Commerce sur site.
 
 ## Activation du serveur d’applications pour les API GraphQL
 
-Le `ApplicationServer` module (`Magento/ApplicationServer/`) active Application Server pour les API GraphQL.
+La variable `ApplicationServer` module (`Magento/ApplicationServer/`) active Application Server pour les API GraphQL.
 
 L’exécution d’Application Server nécessite l’installation de l’extension Open Swoole et une modification mineure du fichier de configuration Nginx de votre déploiement pour exécuter ce serveur d’applications localement.
 
@@ -35,7 +36,7 @@ Effectuez ces deux tâches avant d’activer la fonction `ApplicationServer` mod
 
 ### Configuration de Nginx
 
-Votre déploiement Commerce spécifique détermine comment configurer Nginx. En règle générale, le fichier de configuration Nginx est nommé par défaut `nginx.conf` et est placé dans l’un de ces répertoires : `/usr/local/nginx/conf`, `/etc/nginx`ou `/usr/local/etc/nginx`. Voir [Guide du débutant](http://nginx.org/en/docs/beginners_guide.html) pour plus d’informations sur la configuration de Nginx.
+Votre déploiement Commerce spécifique détermine comment configurer Nginx. En règle générale, le fichier de configuration Nginx est nommé par défaut `nginx.conf` et est placé dans l’un de ces répertoires : `/usr/local/nginx/conf`, `/etc/nginx`, ou `/usr/local/etc/nginx`. Voir [Guide du débutant](http://nginx.org/en/docs/beginners_guide.html) pour plus d’informations sur la configuration de Nginx.
 
 Exemple de configuration Nginx :
 
@@ -62,7 +63,7 @@ bin/magento server:run
 
 Cette commande démarre un port HTTP sur 9501. Une fois le serveur d’applications lancé, le port 9501 devient un serveur proxy HTTP pour toutes les requêtes GraphQL.
 
-## Exemple : Installer Open Swoole (OSX)
+## Exemple : installation d’Open Swoole (OSX)
 
 Cette procédure illustre comment installer l’extension Open Swoole sur PHP 8.2 pour les systèmes OSX. Il s’agit de l’une des différentes manières d’installer l’extension Open Swoole.
 
@@ -130,5 +131,4 @@ pecl install openswoole-22.0.0
 
 #### Résolution de problèmes liés à pcre2.h
 
-Pour résoudre les problèmes liés à `pcre2.h`, liez symboliquement la variable `pcre2.h` chemin d’accès au répertoire d’extension PHP installé. Votre version spécifique installée de PHP et `pcr2.h` détermine la version particulière de la commande que vous devez utiliser.
-
+Pour résoudre les problèmes liés à `pcre2.h`, symlink le `pcre2.h` chemin d’accès au répertoire d’extension PHP installé. Votre version spécifique installée de PHP et `pcr2.h` détermine la version particulière de la commande que vous devez utiliser.

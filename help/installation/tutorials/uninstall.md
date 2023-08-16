@@ -1,13 +1,13 @@
 ---
 title: Désinstallation ou réinstallation d’Adobe Commerce
 description: Pour désinstaller et réinstaller les installations sur site d’Adobe Commerce et de Magento Open Source, procédez comme suit.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
 
 ---
-
 
 # Désinstallation ou réinstallation d’Adobe Commerce
 
@@ -29,7 +29,7 @@ La manière dont vous réinstallez l’application à partir de la ligne de comm
 
 ## Désinstallation de l’application
 
-La désinstallation de l’application entraîne le dépôt et la restauration de la base de données, la suppression de la configuration de déploiement et l’effacement des répertoires sous `var`.
+La désinstallation de l’application entraîne le dépôt et la restauration de la base de données, la suppression de la configuration de déploiement et l’effacement des répertoires situés sous `var`.
 
 Pour désinstaller l’application, saisissez la commande suivante :
 
@@ -55,7 +55,7 @@ bin/magento setup:upgrade --keep-generated
 
 >[!WARNING]
 >
->Le paramètre facultatif `--keep-generated` doit être utilisée dans des circonstances limitées par des intégrateurs système expérimentés. *only*. Cette option doit *never* à utiliser dans un environnement de développement. Une utilisation incorrecte de ce paramètre facultatif peut entraîner des erreurs lors de l’exécution du code.
+>Le paramètre facultatif `--keep-generated` doit être utilisée dans des circonstances limitées par des intégrateurs système expérimentés. *only*. Cette option doit être *never* à utiliser dans un environnement de développement. Une utilisation incorrecte de ce paramètre facultatif peut entraîner des erreurs lors de l’exécution du code.
 
 ## Installation de l’application
 

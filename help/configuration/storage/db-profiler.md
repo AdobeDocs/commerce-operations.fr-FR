@@ -2,11 +2,11 @@
 title: Configuration du profileur de base de données
 description: Consultez un exemple de configuration de la sortie pour le profileur de base de données.
 feature: Configuration, Storage
-badge: label="Contribué par Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Goswami écossais"
+badge: label="Contribution de Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Goswami d&#39;Asie"
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Le profileur de base de données Commerce affiche toutes les requêtes implémentées sur une page, y compris l’heure de chaque requête et les paramètres appliqués.
 
-## Étape 1 : Modification de la configuration du déploiement
+## Étape 1 : modification de la configuration du déploiement
 
 Modifier `<magento_root>/app/etc/env.php` pour ajouter la référence suivante au [classe profileur de base de données](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
 
@@ -53,9 +53,9 @@ Voici un exemple :
   ),
 ```
 
-## Étape 2 : Configuration de la sortie
+## Etape 2 : paramétrer la sortie
 
-Configurez la sortie dans le fichier d’amorçage de votre application Commerce. ceci peut être `<magento_root>/pub/index.php` ou il peut se trouver dans une configuration d’hôte virtuel d’un serveur web.
+Configurez la sortie dans votre fichier d’amorçage de l’application Commerce. Il peut s’agir de `<magento_root>/pub/index.php` ou il peut se trouver dans une configuration d’hôte virtuel d’un serveur web.
 
 L’exemple suivant affiche les résultats dans un tableau à trois colonnes :
 
@@ -87,7 +87,7 @@ foreach ($profiler->getQueryProfiles() as $query) {
 echo "</table>";
 ```
 
-## Étape 3 : Affichage des résultats
+## Etape 3 : Visualiser les résultats
 
 Accédez à n’importe quelle page de votre storefront ou de votre administrateur pour afficher les résultats. Voici un exemple :
 

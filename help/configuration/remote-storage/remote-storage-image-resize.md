@@ -6,7 +6,7 @@ exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -34,7 +34,7 @@ Pour redimensionner les images côté serveur, vous devez configurer Adobe Comme
 
 1. Dans le _Format d’URL de média de catalogue_ , effacer **[!UICONTROL Use system value]**.
 
-1. Sélectionnez la `Image optimization based on query parameters` URL dans le **_Format d’URL de média de catalogue_** champ .
+1. Sélectionnez la variable `Image optimization based on query parameters` URL dans le **_Format d’URL de média de catalogue_** champ .
 
 1. Cliquez sur **[!UICONTROL Save Config]**.
 
@@ -42,7 +42,7 @@ Pour redimensionner les images côté serveur, vous devez configurer Adobe Comme
 
 ## Configuration de Nginx
 
-Pour continuer à configurer le redimensionnement des images côté serveur, vous devez préparer la `nginx.conf` et fournissez un `proxy_pass` pour l’adaptateur de votre choix.
+Pour continuer à configurer le redimensionnement des images côté serveur, vous devez préparer la `nginx.conf` et fournissez un `proxy_pass` pour l’adaptateur choisi.
 
 **Pour permettre à Nginx de redimensionner les images**:
 
@@ -52,7 +52,7 @@ Pour continuer à configurer le redimensionnement des images côté serveur, vou
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
    ```
 
-1. Créez un `nginx.conf` fichier basé sur le modèle inclus `nginx.conf.sample` fichier . Par exemple :
+1. Créez un `nginx.conf` fichier basé sur le modèle inclus `nginx.conf.sample` fichier . Par exemple :
 
    ```conf
    location ~* \.(jpg|jpeg|png|gif|webp)$ {

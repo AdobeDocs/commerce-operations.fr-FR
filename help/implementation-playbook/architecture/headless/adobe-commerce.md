@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Architecture Adobe Commerce sans tête
 
-L&#39;avantage de l&#39;architecture d&#39;Adobe Commerce est qu&#39;elle n&#39;est pas une proposition de tout ou rien et qu&#39;un marchand peut trouver le bon mélange de solutions pour son activité. Ils peuvent créer un PWA optimisé par les PWA Studio pour leur Principale expérience sur site ou utiliser Adobe Experience Manager comme calque dans les parcours clients complexes, tout en créant un front de face personnalisé pour tester de nouveaux points de contact. Aucune autre plateforme ne peut égaler le temps nécessaire aux avantages du marché et la flexibilité qu’offre Adobe Commerce avec son architecture sans interface.
+L&#39;avantage de l&#39;architecture d&#39;Adobe Commerce est qu&#39;elle n&#39;est pas une proposition de tout ou rien et qu&#39;un marchand peut trouver le bon mélange de solutions pour son activité. Ils peuvent créer un PWA optimisé par les PWA Studio pour leur expérience principale sur le site ou utiliser Adobe Experience Manager comme calque dans les parcours clients complexes, tout en créant un front de face personnalisé pour tester de nouveaux points de contact. Aucune autre plateforme ne peut égaler le temps nécessaire aux avantages du marché et la flexibilité qu’offre Adobe Commerce avec son architecture sans interface.
 
 ![Diagramme présentant une architecture sans interface Adobe Commerce storefront](../../../assets/playbooks/headless-storefront-architecture.svg)
 
@@ -46,7 +46,7 @@ Adobe Commerce plus Adobe Experience Manager est une puissante histoire dans la 
 
 ## Têtes personnalisées
 
-La dernière option à discuter ici est l&#39;option de construire une façade personnalisée. Cette option est destinée aux entreprises qui disposent d’une expertise existante et aux développeurs internes qualifiés dans une pile frontale particulière, comme React. S&#39;ils n&#39;ont pas de compétences dans Adobe Commerce pour  le développement front-end traditionnel, ils peuvent décider qu&#39;il est plus rentable de construire leur propre front-end React personnalisé.
+La dernière option à discuter ici est l&#39;option de construire une façade personnalisée. Cette option est destinée aux entreprises qui disposent d’une expertise existante et aux développeurs internes qualifiés dans une pile frontale particulière, comme React. S&#39;ils n&#39;ont pas de compétences dans Adobe Commerce pour  le développement frontal traditionnel, ils peuvent décider qu&#39;il est plus rentable de construire leur propre front front React personnalisé.
 
 Naturellement, ce modèle nécessite des compétences et des ressources de développement front-end d’intégration des clients ou des systèmes solides, et vous ne bénéficiez pas de la compatibilité native avec des éléments comme le Créateur de pages que vous obtenez avec PWA Studio. Chaque fois qu&#39;un commerçant construit quelque chose de complètement personnalisé, il peut perdre des avantages de temps à la mise sur le marché.
 

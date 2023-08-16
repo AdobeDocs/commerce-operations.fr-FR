@@ -1,5 +1,5 @@
 ---
-title: Bonnes pratiques relatives à la modification des tables de base de données
+title: Bonnes pratiques pour modifier les tables de base de données
 description: Découvrez comment et à quel moment modifier des tables de base de données tierces et Adobe Commerce.
 role: Developer, Architect
 feature: Best Practices
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# Bonnes pratiques relatives à la modification des tables de base de données
+# Bonnes pratiques pour modifier les tables de base de données
 
 Cet article fournit les bonnes pratiques pour modifier les tables de base de données créées par [!DNL Adobe Commerce] ou des modules tiers. Comprendre quand et comment modifier efficacement les tables permet d’assurer la viabilité et la stabilité à long terme de votre plateforme commerciale.
 
@@ -20,7 +20,7 @@ Migration depuis [!DNL Magento 1] et d’autres plateformes de commerce électro
 
 ## Pourquoi Adobe recommande d’éviter les modifications
 
-La Principale raison pour laquelle vous ne pouvez pas modifier les tables principales est qu’Adobe Commerce inclut une logique sous-jacente contenant des requêtes SQL brutes. Les modifications apportées à la structure du tableau peuvent entraîner des effets secondaires inattendus, difficiles à résoudre. La modification peut également affecter les opérations DDL (Data Definition Language), ce qui a un impact inattendu et imprévisible sur les performances.
+La principale raison pour laquelle vous ne pouvez pas modifier les tables principales est qu’Adobe Commerce inclut une logique sous-jacente contenant des requêtes SQL brutes. Les modifications apportées à la structure du tableau peuvent entraîner des effets secondaires inattendus, difficiles à résoudre. La modification peut également affecter les opérations DDL (Data Definition Language), ce qui a un impact inattendu et imprévisible sur les performances.
 
 Une autre raison d’éviter de modifier la structure de la table de base de données est que vos modifications peuvent entraîner des problèmes si l’équipe de développement principale ou les développeurs tiers modifient la structure de leurs tables de base de données. Par exemple, il existe quelques tables de base de données de base de données de base de données de base qui ont une colonne appelée `additional_data`. Cela a toujours été une `text` type de colonne. Toutefois, pour des raisons de performances, l’équipe principale peut remplacer la colonne par `longtext`. Ce type de colonne est un alias pour JSON. La conversion de ce type de colonne permet d’ajouter à cette colonne des gains de performances et des recherches, qui n’existent pas en tant que `text` type. Pour en savoir plus sur ce sujet, voir [Type de données JSON](https://mariadb.com/kb/en/json-data-type/){target="_blank"}.
 
@@ -46,7 +46,7 @@ Si vous déterminez que les données héritées nécessitent une migration ou qu
 
 - Vous pouvez contrôler les données conservées et la structure de la base de données, ce qui garantit que les données sont enregistrées avec le type de colonne correct et les index adéquats.
 - La plupart des entités dans [!DNL Adobe Commerce] et [!DNL Magento Open Source] prennent en charge l’utilisation d’attributs d’extension.
-- Les attributs d’extension sont un mécanisme indépendant du stockage qui offre la possibilité d’enregistrer les données à un emplacement optimal pour votre projet.
+- Les attributs d’extension sont un mécanisme indépendant du stockage qui offre la possibilité d’enregistrer les données à l’emplacement optimal de votre projet.
 
 Deux exemples d’emplacements de stockage sont des tables de base de données et [!DNL Redis]. Les éléments essentiels à prendre en compte lors du choix d’un emplacement sont les suivants : l’emplacement introduit une complexité supplémentaire ou affecte les performances.
 
@@ -54,7 +54,7 @@ Deux exemples d’emplacements de stockage sont des tables de base de données e
 
 En tant que développeur, il est essentiel de toujours envisager d’utiliser des outils en dehors de vos [!DNL Adobe Commerce] , comme GraphQL mesh et Adobe App Builder. Ces outils peuvent vous aider à conserver l’accès aux données, mais n’ont aucun impact sur l’application commerciale principale ou ses tables de base de données sous-jacentes. Grâce à cette approche, vous exposez vos données par le biais d’une API. Ensuite, vous ajoutez une source de données à votre configuration App Builder. Avec GraphQL Mesh, vous pouvez combiner ces sources de données et produire une seule réponse, comme indiqué dans la section [données héritées](#legacy-data).
 
-Pour plus d’informations sur l’impression GraphQL, voir [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. For information about the Adobe App Builder,  see [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
+Pour plus d’informations sur l’impression GraphQL, voir [Passerelle GraphQL Mesh](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. For information about the Adobe App Builder,  see [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
 
 ## Modification d’un tableau principal ou d’un tableau tiers
 
@@ -65,13 +65,13 @@ Si vous décidez de stocker des données en modifiant un noyau [!DNL Adobe Comme
 - Évitez d’ajouter des colonnes aux tables d’attributs de la VEC. Ces tables sont déjà surchargées de logique et de responsabilité.
 - Avant d’ajuster un tableau, déterminez sa taille. La modification de tables volumineuses a un impact sur le déploiement, ce qui peut entraîner des minutes ou des heures de retard lorsque des modifications sont appliquées.
 
-## Bonnes pratiques relatives à la modification d&#39;une table de base de données externe
+## Bonnes pratiques pour modifier une table de base externe
 
 Adobe recommande de procéder comme suit lorsque vous ajoutez une colonne à un tableau de base de données principal ou à un tableau tiers :
 
 1. Créez un module avec un nom dans votre espace de noms qui représente ce que vous mettez à jour.
 
-   Par exemple : `app/code/YourCompany/Customer`
+   Par exemple: `app/code/YourCompany/Customer`
 
 1. Créez les fichiers appropriés pour activer le module (voir [Création d’un module](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 
@@ -84,16 +84,16 @@ Adobe recommande de procéder comme suit lorsque vous ajoutez une colonne à un 
 L’ajout d’une colonne à une base de données externe peut avoir un impact sur votre projet Adobe Commerce de la manière suivante :
 
 - Les mises à niveau pourraient être plus complexes.
-- Les déploiements sont impactés si la table en cours de modification est volumineuse.
+- Les déploiements sont impactés si la table modifiée est volumineuse.
 - Les migrations vers une nouvelle plate-forme pourraient être plus complexes.
 
 ## Méthodes pour éviter de modifier les tableaux principaux
 
 Vous pouvez éviter de modifier des tables de base de données Adobe Commerce en utilisant [attributs d’extension](#migrate-legacy-data-with-extension-attributes). Une autre alternative consiste à utiliser une colonne spéciale (`additional_data`) trouvées sur quelques tableaux principaux pour stocker des données et les enregistrer au format codé JSON.
 
-### Enregistrement des données dans une colonne de données codée au format JSON
+### Enregistrement des données dans une colonne de données codée JSON
 
-Certains tableaux principaux comportent une variable `additional_data` qui contient des données codées JSON. Cette colonne offre une méthode native de mappage des données additionnelles dans un champ. L’utilisation de cette méthode permet d’éviter l’ajout d’un tableau pour les petits éléments de données simples qui stockent des informations pour la récupération des données sans avoir à effectuer de recherche. Le `additional_data` est généralement disponible uniquement au niveau de l’élément, et non pour le guillemet ou l’ordre entier.
+Certains tableaux principaux comportent une variable `additional_data` qui contient des données codées JSON. Cette colonne offre une méthode native de mappage des données additionnelles dans un champ. L’utilisation de cette méthode permet d’éviter l’ajout d’un tableau pour les petits éléments de données simples qui stockent des informations pour la récupération des données sans avoir à effectuer de recherche. La variable `additional_data` est généralement disponible uniquement au niveau de l’élément, et non pour le guillemet ou l’ordre entier.
 
 - Avantages de l’utilisation de la variable `additional_data` field
 
@@ -101,7 +101,7 @@ Certains tableaux principaux comportent une variable `additional_data` qui conti
 
 - Inconvénients
 
-   - Cette méthode est idéale uniquement pour stocker des données en lecture seule. Ce problème se produit car notre code doit être désérialisé pour modifier et créer l’objet afin d’ajouter des dépendances ou des relations de base de données.
+   - Cette méthode est idéale uniquement pour le stockage de données en lecture seule. Ce problème se produit car notre code doit être désérialisé pour modifier et créer l’objet afin d’ajouter des dépendances ou des relations de base de données.
 
    - Il est difficile d’utiliser les opérations de base de données pour rechercher ces champs. La recherche avec cette méthode est lente.
 
@@ -111,7 +111,7 @@ Certains tableaux principaux comportent une variable `additional_data` qui conti
 
    - D&#39;autres problèmes qui peuvent se produire peuvent être très difficiles à diagnostiquer. Par exemple, avec certaines fonctions PHP natives si vous n’utilisez pas [!DNL Adobe Commerce] les méthodes wrapper fournies par l’application principale ; le résultat final des données transformées peut être différent du format attendu. Utilisez toujours les fonctions wrapper pour assurer la cohérence et la prévisibilité des données en cours d’enregistrement ou de récupération.
 
-Voici des exemples de tableaux dont la colonne et la structure correspondent au `additional_data` colonne .
+Voici des exemples de tableaux dont la colonne et la structure correspondent à la variable `additional_data` colonne .
 
 ```mysql
 MariaDB [main]> DESCRIBE quote_item additional_data;

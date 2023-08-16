@@ -1,19 +1,19 @@
 ---
 title: Conditions préalables à l’installation sur site
 description: En savoir plus sur les dépendances logicielles requises pour les installations sur site d’Adobe Commerce et de Magento Open Source.
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+exl-id: dd4694e7-5437-440c-bb67-804ae36149de
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Conditions préalables à l’installation sur site
 
 Avant d’installer Adobe Commerce ou Magento Open Source, vous devez effectuer les opérations suivantes :
 
-* Configurez un ou plusieurs hôtes qui correspondent à la variable [configuration requise](../system-requirements.md).
+* Configurez un ou plusieurs hôtes qui répondent aux [configuration requise](../system-requirements.md).
 * Si vous configurez plusieurs noeuds web avec l’équilibrage de charge, configurez et testez cette partie de votre système. _before_ vous installez l’application.
 * Assurez-vous de pouvoir sauvegarder l’ensemble du système à différents moments pendant l’installation afin de pouvoir le restaurer en cas de problème.
 
@@ -27,23 +27,23 @@ Saisissez les commandes suivantes en tant qu’utilisateur avec `root` privilèg
 
 * Ubuntu
 
-   ```bash
-   apt-get update
-   ```
+  ```bash
+  apt-get update
+  ```
 
-   ```bash
-   apt-get upgrade
-   ```
+  ```bash
+  apt-get upgrade
+  ```
 
 * CentOS
 
-   ```bash
-   yum -y update
-   ```
+  ```bash
+  yum -y update
+  ```
 
-   ```bash
-   yum -y upgrade
-   ```
+  ```bash
+  yum -y upgrade
+  ```
 
 ## Vérification requise
 
@@ -74,7 +74,7 @@ Voir [configuration requise](../system-requirements.md) pour les versions prises
 mysql -u <database root user or database owner name> -p
 ```
 
-Par exemple :
+Par exemple :
 
 ```bash
 mysql -u magento -p
@@ -114,7 +114,7 @@ Pour vérifier l’installation de votre Elasticsearch :
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'
 ```
 
-Par exemple :
+Par exemple :
 
 ```bash
 curl -XGET 'localhost:9200'

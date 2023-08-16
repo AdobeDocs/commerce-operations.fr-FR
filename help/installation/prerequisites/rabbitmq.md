@@ -1,19 +1,19 @@
 ---
 title: courtier de messages
 description: Procédez comme suit pour installer et configurer les logiciels de messagerie requis (tels que [!DNL RabbitMQ]) pour les installations sur site d’Adobe Commerce et de Magento Open Source.
-source-git-commit: 1233d2e1d80a3228626be3e20f1bd826b1283523
+exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
 
 ---
 
-
 # courtier de messages
 
 Adobe Commerce utilise la variable [!DNL RabbitMQ] courtier de messages open source. Il offre un système de messagerie fiable, hautement disponible, évolutif et portable.
 
-Les files d’attente de message fournissent un mécanisme de communication asynchrone dans lequel l’expéditeur et le destinataire d’un message ne se contactent pas. Ils n’ont pas non plus besoin de communiquer simultanément avec la file d’attente des messages. Lorsqu&#39;un expéditeur place un message dans une file d&#39;attente, il est stocké jusqu&#39;à ce que le destinataire les reçoive.
+Les files d’attente de messages fournissent un mécanisme de communication asynchrone dans lequel l’expéditeur et le destinataire d’un message ne se contactent pas. Ils n’ont pas non plus besoin de communiquer simultanément avec la file d’attente des messages. Lorsqu&#39;un expéditeur place un message dans une file d&#39;attente, il est stocké jusqu&#39;à ce que le destinataire les reçoive.
 
 Le système de file d’attente des messages doit être établi avant l’installation d’Adobe Commerce ou de Magento Open Source. La séquence de base est la suivante :
 
@@ -22,7 +22,7 @@ Le système de file d’attente des messages doit être établi avant l’instal
 
 >[!NOTE]
 >
->Vous pouvez utiliser MySQL ou [!DNL RabbitMQ] pour le traitement de la file d’attente des messages. Pour plus d’informations sur la configuration du système de file d’attente des messages, voir [Présentation des files d’attente de messages](https://developer.adobe.com/commerce/php/development/components/message-queues/). Si vous utilisez l’API Bulk avec Adobe Commerce, la configuration du système de file d’attente des messages utilise par défaut l’option [!DNL RabbitMQ] comme courtier de messages. Voir [Démarrage des consommateurs de la file de messages](../../configuration/cli/start-message-queues.md) pour plus d’informations.
+>Vous pouvez utiliser MySQL ou [!DNL RabbitMQ] pour le traitement de la file d’attente des messages. Pour plus d’informations sur la configuration du système de file d’attente des messages, voir [Présentation des files d’attente de messages](https://developer.adobe.com/commerce/php/development/components/message-queues/). Si vous utilisez l’API Bulk avec Adobe Commerce, la configuration du système de file d’attente des messages utilise par défaut l’utilisation de la variable [!DNL RabbitMQ] comme courtier de messages. Voir [Démarrage des consommateurs de la file de messages](../../configuration/cli/start-message-queues.md) pour plus d’informations.
 
 ## Installer [!DNL RabbitMQ] sur Ubuntu
 
@@ -43,19 +43,19 @@ Voir [Installation sur Debian/Ubuntu](https://www.rabbitmq.com/install-debian.ht
 
 ## Installer [!DNL RabbitMQ] sous CentOS
 
-### Installer Erlang
+### Installation de l’erreur
 
 [!DNL RabbitMQ] a été écrit en utilisant le langage de programmation Erlang, qui doit être installé sur le même système que [!DNL RabbitMQ].
 
 Voir [Installation manuelle](https://www.erlang-solutions.com/downloads/) pour plus d’informations.
 
-Reportez-vous à la section [[!DNL RabbitMQ]Matrice de versions /Erlang](https://www.rabbitmq.com/which-erlang.html) pour installer la version correcte.
+Voir [[!DNL RabbitMQ]Matrice de versions /Erlang](https://www.rabbitmq.com/which-erlang.html) pour installer la version correcte.
 
 ### Installer [!DNL RabbitMQ]
 
-Le [!DNL RabbitMQ] est inclus sur CentOS, mais la version est souvent ancienne. [!DNL RabbitMQ] recommande d’installer le package sur son site web.
+La variable [!DNL RabbitMQ] est inclus sur CentOS, mais la version est souvent ancienne. [!DNL RabbitMQ] recommande d’installer le package sur son site web.
 
-Reportez-vous à la section [!DNL RabbitMQ] installez la page pour obtenir la dernière version prise en charge. Prise en charge d’Adobe Commerce et de Magento Open Source 2.3 et 2.4 [!DNL RabbitMQ] 3.8.x.
+Voir [!DNL RabbitMQ] installez la page pour obtenir la dernière version prise en charge. Prise en charge d’Adobe Commerce et de Magento Open Source 2.3 et 2.4 [!DNL RabbitMQ] 3.8.x.
 
 Voir [Installation sous Linux basé sur RPM](https://www.rabbitmq.com/install-rpm.html) pour plus d’informations.
 
@@ -69,7 +69,7 @@ Consulter le [!DNL RabbitMQ] documentation à configurer et gérer [!DNL RabbitM
 * Démarrage et arrêt du courtier
 * Limites du système
 
-## Installer avec [!DNL RabbitMQ] et connectez-vous
+## Installer avec [!DNL RabbitMQ] et se connecter
 
 Si vous installez Adobe Commerce ou Magento Open Source _after_ vous installez [!DNL RabbitMQ], ajoutez les paramètres de ligne de commande suivants lors de l’installation :
 
@@ -86,7 +86,7 @@ Où :
 | `--amqp-user` | Nom d’utilisateur pour la connexion à [!DNL RabbitMQ]. N’utilisez pas l’utilisateur par défaut `guest`. |
 | `--amqp-password` | Mot de passe de connexion à [!DNL RabbitMQ]. N’utilisez pas le mot de passe par défaut `guest`. |
 | `--amqp-virtualhost` | L’hôte virtuel pour la connexion à [!DNL RabbitMQ]. La valeur par défaut est `/`. |
-| `--amqp-ssl` | Indique s’il faut se connecter à [!DNL RabbitMQ]. La valeur par défaut est `false`. Si vous définissez la valeur sur true, voir Configuration de SSL pour plus d’informations. |
+| `--amqp-ssl` | Indique si la connexion à [!DNL RabbitMQ]. La valeur par défaut est `false`. Si vous définissez la valeur sur true, voir Configuration de SSL pour plus d’informations. |
 
 ## Connexion [!DNL RabbitMQ]
 
@@ -112,11 +112,11 @@ Vous pouvez également définir [!DNL RabbitMQ] valeurs de configuration à l’
 bin/magento setup:config:set --amqp-host="rabbitmq.example.com" --amqp-port="11213" --amqp-user="magento" --amqp-password="magento" --amqp-virtualhost="/"
 ```
 
-Après avoir exécuté la commande ou mis à jour la variable `<install_directory>/app/etc/env.php` fichier avec des valeurs de configuration AMQP, exécutez `bin/magento setup:upgrade` pour appliquer les modifications et créer les files d’attente et échanges requis dans [!DNL RabbitMQ].
+Après l’exécution de la commande ou la mise à jour de la variable `<install_directory>/app/etc/env.php` fichier avec des valeurs de configuration AMQP, exécutez `bin/magento setup:upgrade` pour appliquer les modifications et créer les files d’attente et échanges requis dans [!DNL RabbitMQ].
 
 ## Configurer SSL
 
-Pour configurer la prise en charge du protocole SSL, modifiez la variable `ssl` et `ssl_options` dans le `<install_directory>/app/etc/env.php` afin qu’ils soient similaires aux éléments suivants :
+Pour configurer la prise en charge du protocole SSL, modifiez la variable `ssl` et `ssl_options` dans la variable `<install_directory>/app/etc/env.php` afin qu’ils soient similaires aux éléments suivants :
 
 ```php
 'queue' =>
@@ -138,6 +138,6 @@ Pour configurer la prise en charge du protocole SSL, modifiez la variable `ssl` 
   ),
 ```
 
-## Démarrez les consommateurs de la file d’attente de messages
+## Démarrez les consommateurs de la file d’attente de messages.
 
 Après avoir connecté Adobe Commerce et [!DNL RabbitMQ], vous devez démarrer les consommateurs de la file d’attente des messages. Voir [Configuration des files de messages](../../configuration/cli/start-message-queues.md) pour plus d’informations.

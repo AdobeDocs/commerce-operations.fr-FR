@@ -6,7 +6,7 @@ exl-id: a27ad097-de60-4cdd-81f9-eb1ae84587e4
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ Cette rubrique explique comment commencer à utiliser la solution de base de don
 
 ## Installation du logiciel Adobe Commerce
 
-Vous pouvez activer à tout moment la division de bases de données après l’installation du logiciel Adobe Commerce ; en d’autres termes, vous pouvez ajouter des bases de données fractionnées à un système Adobe Commerce qui contient déjà des données de passage en caisse et de commande. Suivez les instructions de la section Adobe Commerce README ou [guide d’installation](../../installation/overview.md) pour installer le logiciel Adobe Commerce à l’aide d’une seule base de données principale.
+Vous pouvez activer la division des bases de données à tout moment après l’installation du logiciel Adobe Commerce ; en d’autres termes, vous pouvez ajouter des bases de données fractionnées à un système Adobe Commerce qui dispose déjà de données de passage en caisse et de commande. Suivez les instructions de la section Adobe Commerce README ou [guide d’installation](../../installation/overview.md) pour installer le logiciel Adobe Commerce à l’aide d’une seule base de données principale.
 
 ## Configurer des bases de données principales supplémentaires
 
@@ -94,7 +94,7 @@ Après avoir configuré un total de trois bases de données principales, utilise
 
 Voir [Exécution des commandes](../cli/config-cli.md#running-commands) pour se connecter et exécuter des commandes d’interface de ligne de commande.
 
-### Configuration de la base de données de passage en caisse
+### Configuration de la base de données de paiement
 
 Syntaxe de la commande :
 
@@ -102,7 +102,7 @@ Syntaxe de la commande :
 bin/magento setup:db-schema:split-quote --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
-Par exemple :
+Par exemple,
 
 ```bash
 bin/magento setup:db-schema:split-quote --host="localhost" --dbname="magento_quote" --username="magento_quote" --password="magento_quote"
@@ -122,7 +122,7 @@ Syntaxe de la commande :
 bin/magento setup:db-schema:split-sales --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
-Par exemple :
+Par exemple,
 
 ```bash
 bin/magento setup:db-schema:split-sales --host="localhost" --dbname="magento_sales" --username="magento_sales" --password="magento_sales"

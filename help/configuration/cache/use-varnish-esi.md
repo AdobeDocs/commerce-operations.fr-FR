@@ -1,17 +1,17 @@
 ---
-title: Bloc ESI de marque
+title: Bloc ESI en pointillé
 description: Découvrez Edge Side Includes et comment les utiliser pour incorporer des pages web.
 badge: label="Contribution de Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Constantin G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '130'
 ht-degree: 0%
 
 ---
 
-# Bloc ESI de marque
+# Bloc ESI en pointillé
 
 Edge Side Includes (ESI) sont des directives spéciales que vous pouvez utiliser pour inclure des pages web dans d’autres pages web.
 
@@ -23,7 +23,7 @@ Exemple :
 </div>
 ```
 
-Le vernis récupère le contenu à partir de `http://domain.com/index.php/page_cache/block/esi/blocks` et remplacez la fonction `<esi>` avec.
+Le vernis récupère le contenu de `http://domain.com/index.php/page_cache/block/esi/blocks` et remplacez la fonction `<esi>` avec.
 
 ## Commerce et vernissage de l’ESI
 

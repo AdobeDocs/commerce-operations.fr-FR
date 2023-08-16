@@ -30,7 +30,7 @@ Commerce 2 possède les types de cache suivants :
 | Réflexion | reflet | Supprime une dépendance entre le module Webapi et le module Client. |
 | Traductions | translate | Après la fusion des traductions de tous les modules, le cache de fusion sera nettoyé. |
 | Configuration de l’intégration | config_integration | Intégrations compilées. Nettoyez ou videz ce cache après avoir modifié ou ajouté des intégrations. |
-| Configuration de l’API d’intégration | config_integration_api | Configuration compilée des API d’intégration des intégrations du magasin. |
+| Configuration de l’API d’intégration | config_integration_api | Configuration des API d’intégration compilée des intégrations du magasin. |
 | Configuration des services web | config_webservice | Mise en cache de la structure de l’API Web. |
 | Notification client | customer_notification | Notifications temporaires qui apparaissent dans l’interface utilisateur. |
 
@@ -67,7 +67,7 @@ Current status:
 
 ## Activation ou désactivation des types de cache
 
-Cette commande permet d’activer ou de désactiver tous les types de cache ou uniquement ceux que vous spécifiez. La désactivation des types de cache est utile lors du développement, car vous voyez les résultats de vos modifications sans avoir à vider le cache. cependant, la désactivation des types de cache a un effet négatif sur les performances.
+Cette commande permet d’activer ou de désactiver tous les types de cache ou uniquement ceux que vous spécifiez. La désactivation des types de cache est utile lors du développement, car vous voyez les résultats de vos modifications sans avoir à vider le cache. Toutefois, la désactivation des types de cache a un effet négatif sur les performances.
 
 >[!INFO]
 >
@@ -85,7 +85,7 @@ bin/magento cache:enable [type] ... [type]
 bin/magento cache:disable [type] ... [type]
 ```
 
-Où omettre `[type]` active ou désactive tous les types de cache en même temps. Le `type` est une liste de types de cache séparés par des espaces.
+Où omettre `[type]` active ou désactive tous les types de cache en même temps. La variable `type` est une liste de types de cache séparés par des espaces.
 
 <!-- `--bootstrap=` is a URL-encoded associative array of Commerce [application bootstrap parameters](../bootstrap/set-parameters.md#bootstrap-parameters) and values. -->
 
@@ -121,7 +121,7 @@ Exemple de résultat :
 
 >[!NOTE]
 >
->Le cache de plusieurs pages peut être invalidé simultanément et automatiquement. **_without_** ces entités sont en édition. Par exemple, lorsqu’un produit du catalogue est affecté à une catégorie, ou lorsqu’une catégorie [!UICONTROL related product rule] est modifié.
+>Le cache de plusieurs pages peut être invalidé simultanément et automatiquement. **_without_** ces entités sont en train de les modifier. Par exemple, lorsqu’un produit du catalogue est affecté à une catégorie, ou lorsqu’une catégorie [!UICONTROL related product rule] est modifié.
 
 Pour purger les éléments obsolètes du cache, vous pouvez _clean_ ou _purge_ types de cache :
 

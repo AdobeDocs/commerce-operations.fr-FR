@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Magento Open Source utilise le compositeur pour gérer les packages PHP.
 
-Le `composer.json` déclare la liste des modules, tandis que la variable `composer.lock` stocke une liste complète des packages (une version complète de chaque package et ses dépendances) utilisés pour créer une installation d’Adobe Commerce ou de Magento Open Source.
+La variable `composer.json` déclare la liste des modules, tandis que la variable `composer.lock` stocke une liste complète des packages (une version complète de chaque package et ses dépendances) utilisés pour créer une installation d’Adobe Commerce ou de Magento Open Source.
 
 La documentation de référence suivante est générée à partir de la `composer.lock` et couvre les modules requis inclus dans Magento Open Source 2.4.7-beta1.
 
@@ -615,7 +615,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/laminas/laminas-math.git">laminas/laminas-math</a>
     </td>
     <td>bibliothèque</td>
-    <td>Créer des nombres pseudo-aléatoires sécurisés au niveau cryptographique et gérer de gros entiers</td>
+    <td>Créer des nombres pseudo-aléatoires sécurisés au niveau cryptographique et gérer des entiers volumineux</td>
   </tr>
   <tr>
     <td>
@@ -650,7 +650,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/laminas/laminas-permissions-acl.git">laminas/laminas-permissions-acl</a>
     </td>
     <td>bibliothèque</td>
-    <td>Fournit une mise en oeuvre légère et flexible de liste de contrôle d’accès (ACL) pour la gestion des privilèges.</td>
+    <td>Fournit une mise en oeuvre légère et flexible de liste de contrôle d’accès (ACL) pour la gestion des privilèges</td>
   </tr>
   <tr>
     <td>
@@ -804,7 +804,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/php-amqplib/php-amqplib.git">php-amqplib/php-amqplib</a>
     </td>
     <td>bibliothèque</td>
-    <td>Anciennement videlalvaro/php-amqplib.  Cette bibliothèque est une implémentation PHP pure du protocole AMQP. Il a été testé par rapport à RabbitMQ.</td>
+    <td>Anciennement videlalvaro/php-amqplib.  Cette bibliothèque est une implémentation PHP pure du protocole AMQP. Il a été testé contre RabbitMQ.</td>
   </tr>
   </tbody>
 </table>
@@ -843,7 +843,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/ChristianRiesen/base32.git">christian-riesen/base32</a>
+      <a href="https://github.com/ChristianRiesen/base32.git">chrétien-riesen/base32</a>
     </td>
     <td>bibliothèque</td>
     <td>Codeur/décodeur Base32 selon la norme RFC 4648</td>
@@ -885,7 +885,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/composer/pcre.git">compositeur/pcre</a>
+      <a href="https://github.com/composer/pcre.git">compositeur/opérateur</a>
     </td>
     <td>bibliothèque</td>
     <td>Bibliothèque d’encapsulage PCRE qui offre des remplacements preg_* sécurisés par type.</td>
@@ -1119,7 +1119,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/php-fig/log.git">psr/log</a>
     </td>
     <td>bibliothèque</td>
-    <td>Interface courante pour les bibliothèques de journalisation</td>
+    <td>Interface commune pour les bibliothèques de journalisation</td>
   </tr>
   <tr>
     <td>

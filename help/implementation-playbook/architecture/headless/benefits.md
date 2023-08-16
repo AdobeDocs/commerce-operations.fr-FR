@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Pourquoi ne pas avoir la tête ?
 
-Tout d&#39;abord, le commerce d&#39;entreprise hérité est coûteux et difficile à développer en raison de ses loyers ; les structures héritées sont renforcées par les limitations des plateformes ; et l&#39;innovation devient difficile.
+Tout d&#39;abord, le commerce d&#39;entreprise hérité est coûteux et difficile à développer en raison des silotis ; les structures héritées sont renforcées par des limitations de plates-formes ; et l&#39;innovation devient un défi.
 
 Les clients s’attendent à ce qu’une entreprise interagisse avec eux et interagisse avec eux sur tous les canaux. Les entreprises axées sur la clientèle cherchent à créer des plateformes à l’épreuve du temps qui peuvent s’adapter aux attentes changeantes des clients.
 

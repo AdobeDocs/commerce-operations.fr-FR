@@ -25,9 +25,9 @@ PaaS fonctionne sur des nuages privés, publics et hybrides :
 ## Avantages
 
 - Permet de créer et de déployer sans avoir à dépenser de l’argent et du temps pour construire des infrastructures telles que des serveurs.
-- Permet des déploiements et des diffusions plus rapides
+- Permet des déploiements et une diffusion plus rapides
 - Donne un avantage concurrentiel
-- Permet à l’utilisateur de nouvelles langues, technologies et systèmes
+- Permet aux utilisateurs de nouvelles langues, technologies et systèmes
 - Plus flexible
 - Accès au code du site web
 - Permet l’intégration à des systèmes ou logiciels tiers externes
@@ -43,6 +43,6 @@ PaaS fonctionne sur des nuages privés, publics et hybrides :
 - Si le fournisseur rencontre un temps d’arrêt, ce serait un problème pour le client.
 - Permet des mises à jour simples et rapides
 
-Lorsque le client utilise PaaS dans le commerce électronique, il n’a pas besoin de gérer le système et le logiciel d’exploitation. Le client dispose d’une plateforme pour configurer son site de commerce électronique où il crée et configure du contenu, des données de code et des produits. qui est distinct du côté administration des éléments liés à PaaS.
+Lorsque le client utilise PaaS dans le commerce électronique, il n’a pas besoin de gérer le système et le logiciel d’exploitation. Le client dispose d’une plateforme pour configurer son site d’e-commerce sur lequel il crée et configure du contenu, des données de code et des produits. qui est distinct du côté administration des éléments liés à PaaS.
 
 En raison de sa flexibilité, il est plus facile d’implémenter des modifications sur le site web sans avoir à mettre à jour l’ensemble du système. PaaS permet aux clients de créer et de tester un environnement de test de développement ou d’évaluation avant la mise en ligne, de sorte qu’il n’y ait aucun problème ou temps d’arrêt sur le site de production.

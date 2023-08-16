@@ -1,15 +1,15 @@
 ---
-title: Présentation de l’installation sur site
+title: Installation sur site - Aperçu
 description: Découvrez le processus d’installation pour les déploiements sur site d’Adobe Commerce et de Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 0%
 
 ---
 
-
-# Présentation de l’installation sur site
+# Installation sur site - Aperçu
 
 >[!NOTE]
 >
@@ -36,4 +36,3 @@ Le flux général d&#39;installation est le suivant :
    Si l’étape échoue car le logiciel prérequis n’est pas configuré correctement, consultez la section [conditions préalables](prerequisites/overview.md).
 
 1. [Vérifier](next-steps/verify.md) l’installation en affichant votre storefront et l’administrateur.
-

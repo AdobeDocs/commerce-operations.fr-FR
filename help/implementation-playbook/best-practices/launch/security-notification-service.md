@@ -15,7 +15,7 @@ ht-degree: 0%
 
 La sécurité est l’une de nos priorités les plus élevées et l’Adobe comprend que la sécurité est aussi importante pour nos clients.
 
-Le [!DNL Adobe Security Notification Service] est un service de notification électronique gratuit utilisé par Adobe pour envoyer des informations aux clients sur la sécurité des produits Adobe.
+La variable [!DNL Adobe Security Notification Service] est un service de notification électronique gratuit utilisé par Adobe pour envoyer des informations aux clients sur la sécurité des produits Adobe.
 
 N’importe qui peut s’abonner au service et vous pouvez vous désabonner à tout moment.
 
@@ -25,4 +25,4 @@ Tous
 
 ## Informations supplémentaires
 
-[S’abonner](https://www.adobe.com/subscription/adbeSecurityNotifications.html) au service de notification de sécurité Adobe.
+[Abonner](https://www.adobe.com/subscription/adbeSecurityNotifications.html) au service de notification de sécurité Adobe.

@@ -1,13 +1,13 @@
 ---
 title: Présentation de la portée de la mise à niveau
 description: Découvrez les modifications incompatibles en amont dans une version pouvant avoir un impact sur les modules personnalisés Adobe Commerce ou Magento Open Source ou les extensions tierces.
-source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
+exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 0%
 
 ---
-
 
 # Comprendre la portée de la mise à niveau
 
@@ -17,7 +17,7 @@ Consultez la section [notes de mise à jour](https://devdocs.magento.com/guides/
 
 Les versions d’Adobe Commerce et de Magento Open Source peuvent contenir des modifications incompatibles avec le passé. Consultez notre documentation sur les modifications incompatibles avec l’arrière-plan, voir ce qui suit :
 
-- **[Principales modifications](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)**: modifications qui ont un impact majeur et nécessitent des explications détaillées et des instructions spéciales pour garantir le bon fonctionnement des modules tiers.
+- **[Principales caractéristiques des changements](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)**: modifications qui ont un impact majeur et nécessitent des explications détaillées et des instructions spéciales pour garantir le bon fonctionnement des modules tiers.
 - **[Référence de modification mineure](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)**: documentation de référence générée à partir de la base de code qui décrit les modifications mineures apportées aux classes, à l’adhésion à l’API, à la base de données, à l’injection de dépendances, aux interfaces, aux mises en page, au système et au schéma XSD.
 
 ## Extensions tierces
@@ -30,11 +30,11 @@ Tous les modules personnalisés doivent être comparés à la version cible vers
 
 ## [!DNL Upgrade Compatibility Tool]
 
-Le [!DNL Upgrade Compatibility Tool] est un outil de ligne de commande qui analyse votre instance pour détecter d’éventuels problèmes de mise à niveau. Il recherche les problèmes entre la version actuelle que vous avez installée et la version vers laquelle vous essayez de mettre à niveau.
+La variable [!DNL Upgrade Compatibility Tool] est un outil de ligne de commande qui analyse votre instance pour détecter d’éventuels problèmes de mise à niveau. Il recherche les problèmes entre la version actuelle que vous avez installée et la version vers laquelle vous essayez de mettre à niveau.
 
 L’utilisation de cet outil réduit les efforts requis de votre équipe pour comprendre la portée et l’impact d’une mise à niveau. Elle vous permet d’éviter les problèmes de code courants lors de la mise à niveau et fournit des instructions claires sur la manière de résoudre les problèmes identifiés. Il permet également de hiérarchiser les problèmes les plus critiques nécessaires pour assurer une mise à niveau réussie, ce qui permet de gagner du temps et de réduire les coûts lors de la mise à niveau.
 
-Consultez les sections suivantes pour commencer à utiliser la méthode [!DNL Upgrade Compatibility Tool]. Voir [!DNL Upgrade Compatibility Tool] [guide](../upgrade-compatibility-tool/overview.md) pour plus de détails techniques et des cas d’utilisation avancés.
+Pour commencer à utiliser la méthode [!DNL Upgrade Compatibility Tool]. Voir [!DNL Upgrade Compatibility Tool] [guide](../upgrade-compatibility-tool/overview.md) pour plus de détails techniques et des cas d’utilisation avancés.
 
 ### Téléchargement de l’outil
 
@@ -54,7 +54,7 @@ bin/uct upgrade:check <dir> -c <coming version>
 
 >[!NOTE]
 >
-> Le `<dir>` est le répertoire dans lequel votre base de code est stockée. Le `-c` compare votre base de code à la version spécifiée.
+> La variable `<dir>` est le répertoire dans lequel votre base de code est stockée. La variable `-c` compare votre base de code à la version spécifiée.
 
 Pour identifier les problèmes les plus critiques à résoudre par votre équipe :
 
@@ -72,13 +72,13 @@ Voici d’autres options à utiliser avec cette commande :
 
 - `--vanilla-dir`: permet de vérifier le code principal pour toute mise en oeuvre non standard de fonctionnalités ou de personnalisations. Il est important de les nettoyer au préalable. Une instance Vanilla de votre version est automatiquement téléchargée à titre de référence.
 
-   >[!NOTE]
-   >
-   > Cela peut également être effectué avec l’événement `core:code:changes` dans l’outil).
+  >[!NOTE]
+  >
+  > Cela peut également être effectué avec l’événement `core:code:changes` dans l’outil).
 
 ### Analyse de la sortie
 
-Le [!DNL Upgrade Compatibility Tool] exporte un fichier JSON identifiant le code ou les modules concernés, la gravité et une description du problème pour chaque problème rencontré. Il génère également un rapport récapitulatif avec un score de complexité, qui permet à votre équipe de comprendre approximativement ce qu’il faut pour effectuer la mise à niveau vers la dernière version. Plus le score de complexité est bas, plus il est facile d’effectuer la mise à niveau.
+La variable [!DNL Upgrade Compatibility Tool] exporte un fichier JSON identifiant le code ou les modules concernés, la gravité et une description du problème pour chaque problème rencontré. Il génère également un rapport récapitulatif avec un score de complexité, qui permet à votre équipe de comprendre approximativement ce qu’il faut pour effectuer la mise à niveau vers la dernière version. Plus le score de complexité est bas, plus il est facile d’effectuer la mise à niveau.
 
 Le résultat suivant montre un exemple de rapport récapitulatif :
 
@@ -109,6 +109,6 @@ Utilisez le rapport pour estimer le temps nécessaire à la mise à jour de votr
 
 Nous vous recommandons d’enregistrer les résultats de chaque projet de mise à niveau afin de comparer les résultats futurs de la mise à niveau aux résultats précédents. Grâce à une utilisation continue, vous commencerez à développer une bonne idée du niveau d’effort nécessaire pour effectuer la mise à niveau vers la version suivante, juste à partir du rapport de synthèse fourni par l’outil.
 
-Nous vous recommandons également d’exécuter l’outil régulièrement lors de l’exécution de la mise à niveau afin de bénéficier d’une bonne visibilité sur votre progression. Le nombre de problèmes doit diminuer au fur et à mesure que vous les corrigez. Cela aide également votre équipe à choisir la meilleure approche pour distribuer le travail.
+Nous vous recommandons également d’exécuter l’outil régulièrement lors de l’exécution de la mise à niveau afin de bénéficier d’une bonne visibilité sur votre progression. Le nombre de problèmes doit diminuer au fur et à mesure que vous les corrigez. Cela permet également à votre équipe de décider de la meilleure approche pour distribuer le travail.
 
-Le [!DNL Upgrade Compatibility Tool] continue d’être amélioré et les prochaines versions incluront des fonctionnalités telles que des correctifs automatiques pour vous aider à résoudre les problèmes aussi rapidement que possible. Les dernières améliorations apportées en janvier 2022 comprennent des tests de compatibilité PHP 8.1 et des fonctionnalités de visualisation de HTML qui vous aident à identifier rapidement les zones nécessitant plus d’efforts pour la mise à niveau.
+La variable [!DNL Upgrade Compatibility Tool] continue d’être amélioré et les prochaines versions incluront des fonctionnalités telles que des correctifs automatiques pour vous aider à résoudre les problèmes aussi rapidement que possible. Les dernières améliorations apportées en janvier 2022 comprennent des tests de compatibilité PHP 8.1 et des fonctionnalités de visualisation de HTML qui vous aident à identifier rapidement les zones nécessitant plus d’efforts pour la mise à niveau.

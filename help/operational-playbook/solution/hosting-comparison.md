@@ -20,7 +20,7 @@ Le tableau suivant présente les avantages et les inconvénients des solutions c
     <thead>
         <tr>
             <th>Facteurs</th>
-            <th>Sur site</th>
+            <th>On-Premise</th>
             <th></th>
             <th>Cloud</th>
             <th></th>
@@ -78,9 +78,9 @@ Le tableau suivant présente les avantages et les inconvénients des solutions c
         </tr>
         <tr>
             <td>Mises à niveau</td>
-            <td>L’entreprise peut contrôler le moment où la mise à niveau a lieu et les fonctionnalités qui sont incluses/exclues dans la sortie.</td>
+            <td>L’entreprise peut contrôler le moment où la mise à niveau a lieu et les fonctionnalités incluses/exclues dans la sortie.</td>
             <td>Exercice long pouvant avoir un impact sur d’autres pipelines de travail</td>
-            <td>Exercice rapide et économique avec faible impact sur d'autres tâches</td>
+            <td>Exercice rapide et économique avec un faible impact sur d'autres tâches</td>
             <td>Le fournisseur SaaS gère la mise à niveau, et l’entreprise n’est pas toujours au courant de la sortie finale et de l’impact sur le site.</td>
         </tr>
         <tr>
@@ -101,7 +101,7 @@ Le tableau suivant présente les avantages et les inconvénients des solutions c
             <td>Déploiements</td>
             <td>La technologie peut être déployée en fonction des besoins uniques de l’infrastructure informatique et des applications.</td>
             <td>La complexité peut signifier des déploiements longs et difficiles.</td>
-            <td>SaaS est un environnement fiable et facile à exécuter pour les déploiements</td>
+            <td>SaaS est fiable et facile à exécuter pour les déploiements</td>
             <td>Normalement, SaaS est mis en oeuvre avec le plus petit dénominateur commun, ce qui peut parfois entraîner une limitation des fonctionnalités.</td>
         </tr>
         <tr>

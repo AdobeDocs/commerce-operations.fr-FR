@@ -22,18 +22,18 @@ La configuration de la réplication de base de données offre les avantages suiv
 - Active l’analyse des données sans affecter la base de données principale
 - Évolutivité
 
-Les bases de données MySQL se répliquent de manière asynchrone, ce qui signifie que les Secondaires n’ont pas besoin d’être connectés de manière permanente pour recevoir les mises à jour du maître.
+Les bases de données MySQL se répliquent de manière asynchrone, ce qui signifie que les esclaves n’ont pas besoin d’être connectés de manière permanente pour recevoir les mises à jour du maître.
 
 ## Configuration de la réplication de base de données
 
 Ce guide ne vise pas à approfondir la question de la réplication des bases de données. Pour le configurer, vous pouvez consulter une ressource du type :
 
 - [Documentation MySQL](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [Comment configurer la réplication de Secondaire par Principal dans MySQL (digitalsea)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [Comment configurer la réplication esclave par Principal dans MySQL (digitalsea)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
-Commerce fournit des exemples de configurations MySQL pour vos bases de données de Secondaire. Une configuration simple est fournie avec la variable `ResourceConnections` class `README.md`.
+Commerce fournit des exemples de configurations MySQL pour vos bases de données esclaves. Une configuration simple est fournie avec la variable `ResourceConnections` class `README.md`.
 
-Les éléments suivants sont plus avancés et ne sont fournis que pour vos informations :
+Les éléments suivants sont plus avancés et ne sont fournis qu’à titre d’information :
 
 ```php
    return array (
@@ -122,9 +122,9 @@ Les éléments suivants sont plus avancés et ne sont fournis que pour vos infor
 
 ## Amélioration des performances
 
-Pour améliorer les performances de la réplication du Secondaire maître, vous pouvez filtrer certains tableaux sur des instances de Secondaire. Nous vous recommandons de filtrer toutes les tables temporaires avec un modèle de nom. `search\_tmp\_%` qui sont utilisés pour la recherche catalogue.
+Pour améliorer les performances de la réplication maître-esclave, vous pouvez filtrer certaines tables sur des instances esclaves. Nous vous recommandons de filtrer toutes les tables temporaires avec un modèle de nom. `search\_tmp\_%` qui sont utilisés pour la recherche catalogue.
 
-Pour ce faire, ajoutez la ligne suivante à votre `my.cnf` sur vos instances de Secondaire :
+Pour ce faire, ajoutez la ligne suivante à votre `my.cnf` sur vos instances esclaves :
 
 ```conf
 replicate-wild-ignore-table=%.search\_tmp\_%

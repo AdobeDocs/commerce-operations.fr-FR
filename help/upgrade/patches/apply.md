@@ -1,19 +1,19 @@
 ---
 title: Appliquer les correctifs
 description: Découvrez les méthodes d’application de correctifs à un projet Adobe Commerce ou Magento Open Source.
-source-git-commit: e2ddb30da8dd86236e1dcf33a3f911b67384a6d7
+exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
-
 
 # Appliquer les correctifs
 
 Vous pouvez appliquer des correctifs à l’aide de l’une des méthodes suivantes :
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Ligne de commande](../patches/apply.md#command-line)
 - [Compositeur](../patches/apply.md#composer)
 
@@ -21,7 +21,7 @@ Vous pouvez appliquer des correctifs à l’aide de l’une des méthodes suivan
 
 >[!IMPORTANT]
 >
->Pour appliquer des correctifs de qualité officiels, utilisez la méthode [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}. Effectuez toujours des tests complets avant de déployer un correctif personnalisé.
+>Pour appliquer des correctifs de qualité officiels, utilisez la méthode [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Effectuez toujours des tests complets avant de déployer un correctif personnalisé.
 
 Pour appliquer un correctif personnalisé à l’aide du compositeur :
 
@@ -34,8 +34,8 @@ Pour appliquer un correctif personnalisé à l’aide du compositeur :
 
 1. Modifiez la variable `composer.json` et ajoutez la section suivante pour spécifier :
    - **Module :** *\&quot;magento/module-payment\&quot;*
-   - **Titre :** *\&quot;MAGETTwo-56934 : La page de paiement se bloque lors de la commande avec Authorize.net avec une carte de crédit non valide\&quot;*
-   - **Chemin d’accès au correctif :** *\&quot;patches/composer/github-issue-6474.diff\&quot;*
+   - **Titre :** *\&quot;MAGETTwo-56934 : La page de passage en caisse se bloque lors de la commande avec Authorize.net avec une carte de crédit non valide\&quot;*
+   - **Chemin d’accès au correctif :** *patches/composer/github-issue-6474.diff\&quot;*
 
    Par exemple :
 
@@ -69,7 +69,7 @@ Pour appliquer un correctif personnalisé à l’aide du compositeur :
 Pour appliquer des correctifs à partir de la ligne de commande :
 
 1. Téléchargez le fichier local dans le `<Magento_root>` sur le serveur à l’aide de FTP, SFTP, SSH ou de votre méthode de transport normale.
-1. Connectez-vous au serveur en tant que [utilisateur administrateur](../../configuration/cli/config-cli.md#prerequisites) et vérifiez que le fichier se trouve dans le répertoire approprié.
+1. Connectez-vous au serveur en tant que [utilisateur admin](../../configuration/cli/config-cli.md#prerequisites) et vérifiez que le fichier se trouve dans le répertoire approprié.
 1. Dans l&#39;interface de ligne de commande, exécutez les commandes suivantes en fonction de l&#39;extension de correctif :
 
    ```bash

@@ -16,7 +16,7 @@ Vous trouverez ci-dessous un ensemble de directives à suivre lorsque vous contr
 Ce projet respecte le [code de conduite](code-of-conduct.md) d’Adobe. En participant, vous convenez de respecter ce code. Veuillez signaler tout comportement inacceptable à
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
-## Documentation du guide du contributeur
+## Guide du contributeur
 
 Voir [Guide du contributeur](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 

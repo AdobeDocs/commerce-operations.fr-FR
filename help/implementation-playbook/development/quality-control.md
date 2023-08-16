@@ -1,5 +1,5 @@
 ---
-title: Contrôle de la qualité
+title: Contrôle qualité
 description: Découvrez les processus de contrôle qualité d’Adobe Commerce liés aux projets d’implémentation.
 exl-id: 0eb62b24-21f6-4cec-8ef9-eeaa1ee6ae52
 feature: Build
@@ -181,7 +181,7 @@ BrowserStack est une plateforme de test web et mobile cloud qui permet aux déve
 
 Postman est la plateforme de collaboration pour le développement d’API. Postman simplifie chaque étape de création d’une API et simplifie la collaboration afin que vous puissiez créer de meilleures API.
 
-SoapUI est une application de test de service Web Open Source pour Simple Object Access Protocol (SOAP) et les transferts d’état de représentation (REST). Ses fonctionnalités couvrent l’inspection du service Web. appel, développement, simulation et moquerie; les tests fonctionnels; test de charge et de conformité.
+SoapUI est une application de test de service Web Open Source pour Simple Object Access Protocol (SOAP) et les transferts d’état de représentation (REST). Ses fonctionnalités couvrent l’inspection des services Web, l’appel, le développement, la simulation et la simulation, les tests fonctionnels, la charge et les tests de conformité.
 
 ## Tests d’automatisation
 

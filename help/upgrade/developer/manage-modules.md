@@ -6,7 +6,7 @@ exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
 source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Contribution des développeurs à la mise à niveau des modules et extensions en spécifiant leurs versions dans Adobe Commerce ou Magento Open Source `composer.json` fichier . Si vous n’êtes pas un développeur contributeur, reportez-vous à la section [Effectuer une mise à niveau](../implementation/perform-upgrade.md).
 
-Vous pouvez ajouter une `require` à la section `composer.json` ou vous pouvez utiliser la variable `composer require` comme suit :
+Vous pouvez ajouter une `require` à la section `composer.json` ou vous pouvez utiliser la variable `composer require` de la façon suivante :
 
 {{$include /help/_includes/server-login.md}}
 
@@ -28,7 +28,7 @@ Utilisation des commandes :
 composer show --all <vendor>/<name>
 ```
 
-Par exemple :
+Par exemple :
 
 ```bash
 composer show --all example/module
@@ -42,7 +42,7 @@ Utilisation des commandes :
 composer require <vendor>/<name>:<version>
 ```
 
-Par exemple :
+Par exemple :
 
 ```bash
 composer require example/module:1.0.0

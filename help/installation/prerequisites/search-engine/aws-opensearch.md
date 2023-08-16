@@ -41,7 +41,7 @@ Les étapes de configuration d’OpenSearch sont décrites dans la section [Inst
 
 Pour vérifier que la nouvelle configuration fonctionne, testez directement le point de terminaison OpenSearch :
 
-1. Créez un produit dans Admin (par exemple : sku=&quot;testproduct1&quot;).
+1. Créez un produit dans l’Admin (par exemple : sku=&quot;testproduct1&quot;).
 1. Réindexez par l’intermédiaire de l’administrateur.
 1. Interrogez le point de terminaison OpenSearch (disponible dans l’interface utilisateur d’AWS) :
 

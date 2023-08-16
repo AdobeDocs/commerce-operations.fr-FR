@@ -1,13 +1,13 @@
 ---
 title: Présentation des exemples de données
 description: Découvrez comment utiliser des exemples de données pour les projets Adobe Commerce et Magento Open Source.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+exl-id: 828b009d-a6ff-4db2-aa1a-838f6f55a194
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
 
 ---
-
 
 # Présentation des exemples de données
 

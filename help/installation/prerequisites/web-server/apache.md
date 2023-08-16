@@ -1,13 +1,13 @@
 ---
 title: Apache
 description: Pour installer et configurer le serveur web Apache pour les installations sur site d’Adobe Commerce et de Magento Open Source, procédez comme suit.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 0%
 
 ---
-
 
 # Apache
 
@@ -28,11 +28,11 @@ Adobe Commerce prend en charge Apache 2.4.x.
 
 Cette rubrique explique comment activer les réécritures Apache 2.4 et comment spécifier un paramètre pour le [fichier de configuration distribué, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
 
-Réécritures du serveur d’utilisation d’Adobe Commerce et de Magento Open Source et `.htaccess` pour fournir des instructions au niveau du répertoire pour Apache. Les instructions suivantes sont également incluses dans toutes les autres sections de cette rubrique.
+Réécritures de serveur Adobe Commerce et Magento Open Source et `.htaccess` pour fournir des instructions au niveau du répertoire pour Apache. Les instructions suivantes sont également incluses dans toutes les autres sections de cette rubrique.
 
 Utilisez cette section pour activer les réécritures Apache 2.4 et spécifiez un paramètre pour le [fichier de configuration distribué, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
 
-Réécritures du serveur d’utilisation d’Adobe Commerce et de Magento Open Source et `.htaccess` pour fournir des instructions au niveau du répertoire pour Apache.
+Réécritures de serveur Adobe Commerce et Magento Open Source et `.htaccess` pour fournir des instructions au niveau du répertoire pour Apache.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Réécritures du serveur d’utilisation d’Adobe Commerce et de Magento Open S
    a2enmod rewrite
    ```
 
-1. Pour permettre à l’application d’utiliser la variable distribuée `.htaccess` fichier de configuration, reportez-vous aux instructions de la section [Documentation Apache 2.4](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
+1. Pour permettre à l’application d’utiliser la variable `.htaccess` fichier de configuration, reportez-vous aux instructions de la section [Documentation Apache 2.4](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
 
    >[!TIP]
    >
@@ -72,7 +72,6 @@ Réécritures du serveur d’utilisation d’Adobe Commerce et de Magento Open S
    >
    >- Si vous avez effectué une mise à niveau à partir d’une version antérieure d’Apache, recherchez d’abord `<Directory "/var/www/html">` ou `<Directory "/var/www">` in `000-default.conf`.
    >- Vous devez modifier la valeur de `AllowOverride` dans la directive correspondant au répertoire dans lequel vous prévoyez d’installer le logiciel Adobe Commerce ou Magento Open Source. Par exemple, pour installer dans le répertoire docroot du serveur web, modifiez la directive dans `<Directory /var/www>`.
-
 
 >[!NOTE]
 >
@@ -187,7 +186,7 @@ Pour effectuer la mise à niveau vers Apache 2.4 :
 
 Adobe Commerce et Magento Open Source nécessitent des réécritures de serveur d’utilisation Apache. Vous devez également spécifier le type de directives qui peut être utilisé dans `.htaccess`, que l’application utilise pour spécifier les règles de réécriture.
 
-L&#39;installation et la configuration d&#39;Apache sont essentiellement un processus en trois étapes : installez le logiciel, activez les réécritures et spécifiez `.htaccess` directives.
+L’installation et la configuration d’Apache sont essentiellement un processus en trois étapes : installation du logiciel, activation des réécritures et spécification `.htaccess` directives.
 
 ### Installation d’Apache
 

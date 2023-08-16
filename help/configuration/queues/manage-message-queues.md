@@ -15,7 +15,7 @@ Vous pouvez gérer les files d’attente de messages à partir de la ligne de co
 
 ## Gestion des processus
 
-Les tâches Cron sont le mécanisme par défaut pour redémarrer les consommateurs. Processus démarrés par `cron` consommez le nombre de messages spécifié, puis arrêtez-le. Relecture `cron` redémarre le consommateur.
+Les tâches Cron sont le mécanisme par défaut pour redémarrer les consommateurs. Processus démarrés par `cron` consommer le nombre de messages spécifié, puis arrêter. Relecture `cron` redémarre le consommateur.
 
 L’exemple suivant illustre la variable `crontab` configuration pour les consommateurs actifs :
 
@@ -45,7 +45,7 @@ Vous pouvez également utiliser un gestionnaire de processus tel que [Superviseu
 
 - Tâche Cron `consumers_runner` est activé
 - Tâche Cron `consumers_runner` exécute tous les consommateurs définis
-- Chaque consommateur traite 10 000 messages, puis s’arrête.
+- Chaque consommateur traite 10 000 messages, puis s’arrête
 
 >[!INFO]
 >
@@ -78,7 +78,7 @@ Modifiez la variable `/app/etc/env.php` fichier pour configurer la tâche cron `
 
   >[!INFO]
   >
-  >Il n’est pas recommandé d’exécuter plusieurs consommateurs sur une file d’attente gérée par MySQL. Voir [Remplacer la file d’attente des messages de MySQL par AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) pour plus d’informations.
+  >Il est déconseillé d’exécuter plusieurs consommateurs sur une file d’attente gérée par MySQL. Voir [Remplacer la file d’attente des messages de MySQL par AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) pour plus d’informations.
 
   >[!INFO]
   >

@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ---
 
-# Équipe de projet
+# Équipes de projet
 
 Chaque magasin de briques et de mortiers a besoin d&#39;une équipe et c&#39;est la même chose pour un magasin de commerce électronique en ligne. Il est important d&#39;avoir des personnes dans votre équipe qui correspondent au rôle avec les compétences requises. Pour le commerce électronique B2B et B2C, il est essentiel que chaque département de l’organisation soit impliqué dans le projet de commerce électronique.
 
@@ -23,7 +23,7 @@ La taille de votre équipe dépend de la complexité de votre projet.
 - Architecte technique
 - Indicateur fonctionnel
 - Analyste métier
-- Développeurs principaux
+- Développeurs du serveur principal
 - développeurs frontend
 - Designer
 - Content Manager

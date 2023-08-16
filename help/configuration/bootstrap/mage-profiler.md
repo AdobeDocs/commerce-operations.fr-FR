@@ -1,13 +1,13 @@
 ---
 title: Activation du profilage
 description: En savoir plus sur l’activation du profileur MAGE à utiliser avec vos outils d’analyse.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
 
 ---
-
 
 # Activation du profilage
 
@@ -15,13 +15,13 @@ Avec le profilage Commerce, vous pouvez :
 
 - Activez un profileur intégré.
 
-   Vous pouvez utiliser un profileur intégré avec Commerce pour exécuter des tâches telles que l’analyse des performances. La nature du profilage dépend des outils d’analyse que vous utilisez. Nous prenons en charge plusieurs formats, y compris le HTML. Lorsque vous activez le profileur, une `var/profiler.flag` génère un fichier indiquant que le profileur est activé et les configurations. Lorsque cette option est désactivée, ce fichier est supprimé.
+  Vous pouvez utiliser un profileur intégré avec Commerce pour exécuter des tâches telles que l’analyse des performances. La nature du profilage dépend des outils d’analyse que vous utilisez. Nous prenons en charge plusieurs formats, y compris le HTML. Lorsque vous activez le profileur, une `var/profiler.flag` génère un fichier indiquant que le profileur est activé et les configurations. Lorsque cette option est désactivée, ce fichier est supprimé.
 
 - Afficher des graphiques de dépendances sur une page Commerce.
 
-   A _graphique de dépendances_ est une liste de dépendances d’objets et de toutes leurs dépendances, et de toutes les dépendances de ces dépendances, etc.
+  A _graphique de dépendances_ est une liste de dépendances d’objets et de toutes leurs dépendances, et de toutes les dépendances de ces dépendances, etc.
 
-   La liste des _dépendances inutilisées_, qui sont des objets créés parce qu’ils ont été demandés dans un constructeur, mais n’ont jamais été utilisés (c’est-à-dire qu’aucune de leurs méthodes n’a été appelée). Par conséquent, le temps passé par le processeur et la mémoire pour créer ces dépendances est gaspillé.
+  Vous devriez être particulièrement intéressé par la liste des _dépendances inutilisées_, qui sont des objets créés parce qu’ils ont été demandés dans un constructeur, mais n’ont jamais été utilisés (c’est-à-dire qu’aucune de leurs méthodes n’a été appelée). Par conséquent, le temps passé par le processeur et la mémoire pour créer ces dépendances est gaspillé.
 
 Commerce fournit les fonctionnalités de base dans [`Magento\Framework\Profiler`][profiler].
 
@@ -35,16 +35,16 @@ Vous pouvez définir la valeur de `MAGE_PROFILER` de l’une des manières dont 
 
 - `1` pour activer la sortie d’un profileur spécifique.
 
-   Vous pouvez utiliser l’une des valeurs suivantes pour activer un profileur spécifique :
+  Vous pouvez utiliser l’une des valeurs suivantes pour activer un profileur spécifique :
 
    - `csvfile` qui utilise [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
    - Toute autre valeur (sauf `2`), y compris une valeur vide, qui utilise [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]
 
 - `2` pour activer les graphiques de dépendance.
 
-   Les graphiques de dépendance s’affichent généralement au bas d’une page. La figure suivante montre une partie de la sortie :
+  Les graphiques de dépendance s’affichent généralement au bas d’une page. La figure suivante montre une partie de la sortie :
 
-   ![Graphiques de dépendances](../../assets/configuration/depend-graphs.png)
+  ![Graphiques de dépendances](../../assets/configuration/depend-graphs.png)
 
 ## Commandes de ligne de commande
 
@@ -73,7 +73,7 @@ Pour activer les graphiques de dépendance, utilisez l’option de variable .
    bin/magento dev:profiler:enable csvfile
    ```
 
-   La sortie est enregistrée dans `<project-root>/var/log/profiler.csv`. Le `profiler.csv` est remplacé à chaque actualisation de page.
+   La sortie est enregistrée dans `<project-root>/var/log/profiler.csv`. La variable `profiler.csv` est remplacé à chaque actualisation de page.
 
    Pour désactiver le profileur et supprimer le fichier flagfile :
 

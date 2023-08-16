@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Pour migrer avec succès et éviter des problèmes, vous devez soigneusement planifier et tester votre migration.
 
-## Avant de commencer : Envisager une mise à niveau
+## Avant de commencer : envisagez la mise à niveau
 
 La migration est un moment idéal pour apporter des changements sérieux et préparer votre site au prochain niveau de croissance. Déterminez si votre nouveau site doit être conçu avec plus de matériel ou avec une topologie plus avancée avec de meilleurs niveaux de mise en cache.
 
-## Étape 1 : Vérifier les extensions sur votre site actuel
+## Étape 1 : vérification des extensions sur votre site actuel
 
 * Quelles extensions avez-vous installées ?
 
@@ -28,13 +28,13 @@ La migration est un moment idéal pour apporter des changements sérieux et pré
 
 * Quels ressources de base de données de vos extensions souhaitez-vous migrer ?
 
-## Étape 2 : Créer et préparer votre magasin pour la migration
+## Étape 2 : création et préparation de votre magasin en vue de la migration
 
 * Configuration d’un système matériel Magento 2 à l’aide d’une topologie et d’une conception correspondant au moins à votre système Magento 1 existant
 
 * Installez Magento 2.x (avec tous les modules de cette version) et le [!DNL Data Migration Tool] sur un système qui répond à la [configuration requise](../../installation/system-requirements.md)
 
-* Effectuez vos ajustements personnalisés dans la variable [!DNL Data Migration Tool] du code au cas où vous n’auriez pas besoin de migrer certaines données (comme les pages CMS, les règles de vente) ou de convertir la personnalisation de votre Magento lors de la migration. Lisez le [!DNL Data Migration Tool]&#39;s [Spécifications techniques](technical-specification.md) pour mieux comprendre le fonctionnement de la migration depuis l’intérieur
+* Effectuez vos ajustements personnalisés dans la variable [!DNL Data Migration Tool] du code au cas où vous n’auriez pas besoin de migrer certaines données (comme les pages CMS, les règles de vente) ou de convertir la personnalisation de votre Magento lors de la migration. Lisez la section [!DNL Data Migration Tool]&#39;s [Spécifications techniques](technical-specification.md) pour mieux comprendre le fonctionnement de la migration depuis l’intérieur
 
 ## Étape 3 : Exécution d’essai
 
@@ -44,11 +44,11 @@ Dans ces tests de migration, procédez comme suit :
 
 * Copie de la boutique Magento 1 sur un serveur d’évaluation
 
-* Migration complète de la boutique du Magento répliqué 1 vers le Magento 2
+* Migration complète de la boutique du Magento répliqué 1 vers Magento 2
 
 * Testez minutieusement votre nouvelle boutique.
 
-## Étape 4 : Commencer votre migration
+## Étape 4 : lancer la migration
 
 1. Assurez-vous que la variable [!DNL Data Migration Tool] dispose d’un accès réseau pour se connecter aux bases de données Magento 1 et Magento 2. Ouvrez les ports correspondants dans votre pare-feu.
 
@@ -82,13 +82,13 @@ Il peut arriver que vous souhaitiez disposer de votre magasin Magento 2 avec une
 
 Il est important de faire attention lorsque vous effectuez des modifications manuelles de données. Les erreurs créent des erreurs dans l’étape de migration incrémentielle des données qui suit.
 
-Par exemple, un produit supprimé du Magento 2 : celle qui a été achetée dans votre magasin Magento 1 et qui n’est plus disponible dans votre magasin Magento 2. Le transfert des données relatives à cet achat peut entraîner une erreur lors de l’exécution de la variable [!DNL Data Migration Tool] en mode Delta.
+Par exemple, un produit supprimé du Magento 2 : celui qui a été acheté dans votre boutique de Magento 1 active et qui n’est plus disponible dans votre boutique de Magento 2. Le transfert des données relatives à cet achat peut entraîner une erreur lors de l’exécution de la variable [!DNL Data Migration Tool] en mode Delta.
 
-## Étape 6 : Mise à jour des données incrémentielles
+## Étape 6 : mise à jour des données incrémentielles
 
 Après la migration des données, vous devez capturer par incréments les mises à jour de données qui ont été ajoutées dans le magasin Magento 1 (telles que les nouvelles commandes, les révisions et les modifications apportées aux profils client) et transférer ces mises à jour dans le magasin Magento 2 à l’aide du mode Delta.
 
-* Démarrer la migration incrémentielle ; les mises à jour s’exécutent en permanence. Vous pouvez arrêter de transférer des mises à jour à tout moment en appuyant sur `Ctrl+C`.
+* Démarrez la migration incrémentielle ; les mises à jour s’exécutent en permanence. Vous pouvez arrêter de transférer des mises à jour à tout moment en appuyant sur `Ctrl+C`.
 
 * Testez votre site Magento 2 pendant cette période afin de détecter les problèmes le plus rapidement possible. Si vous rencontrez des problèmes, appuyez sur `Ctrl+C` pour arrêter la migration incrémentielle et la redémarrer après avoir résolu les problèmes.
 
@@ -96,7 +96,7 @@ Après la migration des données, vous devez capturer par incréments les mises 
 >
 >Des avertissements relatifs à la vérification du volume peuvent s’afficher si vous testez votre site Magento 2 et exécutez le processus de migration en même temps. Cela se produit car dans Magento 2, vous créez des entités qui n’existent pas dans l’instance Magento 1.
 
-## Étape 7 : Go live
+## Étape 7 : Mise en ligne
 
 Maintenant que votre site Magento 2 est à jour avec Magento 1 et fonctionne normalement, procédez comme suit pour le transférer vers le nouveau site :
 

@@ -17,7 +17,7 @@ Scrum est un exemple de structure reposant sur Agile et est souvent utilisé par
 
 Scrum encourage les équipes auto-organisées et interfonctionnelles à résoudre les problèmes ensemble dans une période &quot;sprint&quot; en boîte à temps. L&#39;équipe de Scrum s&#39;auto-organise en ce qu&#39;elle n&#39;a pas de leader et qu&#39;elle est interfonctionnelle, de sorte que tout le monde a besoin de prendre une fonction d&#39;idée à mise en oeuvre.
 
-Dans la méthodologie Scrum, plusieurs réunions sont utilisées pour favoriser la transparence et le progrès d&#39;un projet de commerce électronique :
+Dans la méthodologie Scrum, plusieurs réunions sont utilisées pour favoriser la transparence et le progrès d&#39;un projet d&#39;e-commerce :
 
 - **Planification Sprint**: réunion de planification au cours de laquelle les membres de l’équipe se réunissent pour décider de la quantité de travail à effectuer dans un sprint.
 

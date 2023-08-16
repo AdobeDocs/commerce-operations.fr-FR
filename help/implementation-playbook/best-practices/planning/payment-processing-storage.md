@@ -15,7 +15,7 @@ ht-degree: 0%
 
 L&#39;un des principes clés du maintien de la paix [Conformité PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) dispose d’une stratégie pour traiter et stocker correctement les paiements par carte de crédit.
 
-Le stockage des données des titulaires de carte dans Adobe Commerce est **strictement interdit** et cela pourrait être une violation de vos obligations en tant que commerçant en vertu de la norme de sécurité des données du secteur des cartes de paiement (PCI-DSS). Vous trouverez plus d’informations sur notre modèle de responsabilité partagée et sur les directives relatives aux obligations des commerçants dans notre [guide de responsabilité partagée pour Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) sur le Centre de gestion de l’Adobe.
+Le stockage des données des titulaires de carte dans Adobe Commerce est **strictement interdit** et cela pourrait être une violation de vos obligations en tant que commerçant en vertu de la norme de sécurité des données du secteur des cartes de paiement (PCI-DSS). Vous trouverez plus d’informations sur notre modèle de responsabilité partagée et sur les directives relatives aux obligations du commerce dans notre section [guide de responsabilité partagée pour Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) sur le Centre de gestion de l’Adobe.
 
 Nous vous recommandons de suivre les bonnes pratiques ci-dessous pour vous assurer que vous traitez correctement les informations de paiement sur votre site eCommerce. Vous trouverez des conseils supplémentaires sur les bonnes pratiques générales de sécurité dans notre [guide des bonnes pratiques de sécurité pour Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) sur le Centre de gestion de l’Adobe
 
@@ -32,7 +32,7 @@ Si le stockage des données du détenteur de carte est nécessaire, les données
 
 La protection des clés cryptographiques est essentielle aux stratégies de protection des données. Il est essentiel d&#39;avoir des gardiens compétents et fiables qui surveillent ces clés.
 
-Enfin, un Principal numéro de compte (PAN) doit être illisible pendant le stockage (par exemple, masqué tel que XXX). Cela inclut le stockage portable et les supports de sauvegarde tels que les lecteurs Flash, les disques durs USB et externes, et même les journaux de contrôle.
+Enfin, un numéro de compte principal (PAN) doit être illisible pendant le stockage (par exemple, masqué tel que XXX). Cela inclut le stockage portable et les supports de sauvegarde tels que les lecteurs Flash, les disques durs USB et externes, et même les journaux d’audit.
 
 ## Chiffrer la transmission des données du détenteur de carte
 
@@ -45,11 +45,11 @@ Transmettez les données des titulaires de carte à l’aide de protocoles et de
 * Clés et certificats approuvés
 * Protocoles de transmission sécurisés tels que TLS, SSH ou VPN
 * Algorithmes asymétriques dans le cryptage
-* Tests de jeton, de masquage et de pénétration avec transmission et affichage des PAN
+* Tests de jeton, de masquage et de pénétration à l’aide de la transmission et de l’affichage des PAN
 * Limitation de l’accès aux données des titulaires de carte
 * L&#39;accès à des informations sensibles doit être restreint en fonction du besoin et ne doit être accordé qu&#39;aux personnes autorisées ayant des besoins commerciaux.
 
-La méthode recommandée pour gérer les données des titulaires de carte consiste à ne pas stocker le numéro de compte Principal (PAN), mais à segmenter en unités la carte avec un fournisseur de traitement des paiements spécifique, et à stocker le jeton, le type de carte et la date d’expiration chiffrée. Vous pouvez utiliser le jeton comme informations d’identification dans le fichier pour une utilisation ultérieure, car il est unique pour chaque commerçant uniquement. Comme le jeton est unique, en cas de problème de sécurité, le jeton invalidé permet d’éviter les activités frauduleuses.
+La méthode recommandée pour gérer les données des titulaires de carte consiste à ne pas stocker le numéro de compte principal (PAN), mais à segmenter en unités la carte avec un fournisseur de traitement des paiements spécifique, et à stocker le jeton, le type de carte et la date d’expiration chiffrée. Vous pouvez utiliser le jeton comme informations d’identification dans le fichier pour une utilisation ultérieure, car il est unique pour chaque commerçant uniquement. Comme le jeton est unique, en cas de problème de sécurité, le jeton invalidé permet d’éviter les activités frauduleuses.
 
 ## Informations supplémentaires
 

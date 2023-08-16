@@ -25,7 +25,7 @@ Les détaillants doivent sélectionner la meilleure passerelle de paiement qui r
 - Quels sont mes besoins professionnels ?
 - Est-ce dans mon budget ?
 - Quelle est la solidité de la sécurité sur la passerelle de paiement ?
-- Y aura-t-il un impact sur l’expérience utilisateur/l’interface utilisateur de mon storefront ?
+- Y aura-t-il un impact sur mon interface utilisateur/utilisateur storefront ?
 - Quelle est la performance de la passerelle de paiement ?
 - Comment le service d’assistance de la passerelle de paiement est-il effectué après l’achat ?
 - Quel fournisseur de passerelle de paiement me convient le mieux ?

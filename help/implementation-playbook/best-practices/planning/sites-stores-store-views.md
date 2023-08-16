@@ -1,6 +1,6 @@
 ---
 title: Bonnes pratiques relatives à la configuration des sites, des magasins et des vues des magasins
-description: Découvrez les bonnes pratiques de configuration des sites, des magasins et des vues de magasin afin d’optimiser les performances du site.
+description: Découvrez les bonnes pratiques de configuration des sites, des magasins et de la vue du magasin afin d’optimiser les performances du site.
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Bonne pratique pour configurer les sites, les magasins et l’affichage en magasin
+# Bonne pratique pour la configuration des sites, des magasins et de l’affichage en magasin
 
 Pour optimiser les performances du site, configurez un maximum de 50 sites, 50 magasins et 50 vues de magasin pour Adobe Commerce sur les projets d’infrastructure cloud.
 

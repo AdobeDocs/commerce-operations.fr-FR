@@ -1,13 +1,13 @@
 ---
 title: Présentation du processus de mise à niveau
 description: Découvrez comment la mise à niveau de votre projet Adobe Commerce permet de garantir la sécurité de votre vitrine et de garantir un fonctionnement efficace.
-source-git-commit: 015997bf9aab32c443dd2cc198f2ed41018d7a49
+exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 0%
 
 ---
-
 
 # Présentation du processus de mise à niveau
 
@@ -17,7 +17,7 @@ Ce guide présente un aperçu du parcours de mise à niveau standard d’Adobe C
 
 ## Pour qui est ce guide ?
 
-L’audience cible de ce guide comprend :
+L’audience cible de ce guide est la suivante :
 
 - **Chargés d&#39;e-commerce et directeurs techniques**: comprenez le parcours de mise à niveau, l’importance d’une mise à niveau régulière et la meilleure façon de planifier et de préparer une mise à niveau.
 - **Équipes des opérations et du développement**: découvrez les étapes techniques nécessaires à la mise à niveau vers la dernière version d’Adobe Commerce et les outils disponibles qui rendent le processus plus facile, plus rapide et plus abordable.
@@ -42,7 +42,7 @@ La mise à niveau permet à votre entreprise de rester agile dans le secteur du 
 La sécurité est l’une des principales raisons de la mise à niveau, car 83 % des incidents de sécurité se produisent sur des logiciels obsolètes. Selon [IBM](https://www.ibm.com/reports/data-breach)En outre, le coût moyen d’une violation de données s’élève à 3,86 millions $, soit bien plus que ce qu’il coûte pour atténuer ce risque grâce à la mise à niveau. Adobe offre deux façons de sécuriser votre boutique tout au long de l’année :
 
 - **Versions de correctifs**: incluez la sécurité, les performances, la qualité et des correctifs de bogues de priorité élevée.
-- **Versions de correctifs de sécurité**: incluez des correctifs et des améliorations afin de préserver la sécurité de votre site et de le mettre en oeuvre plus facilement.
+- **Versions de correctifs de sécurité**: incluez des correctifs et des améliorations pour préserver la sécurité de votre site et faciliter sa mise en oeuvre.
 
 ### Performances
 
@@ -63,6 +63,6 @@ Voici quelques-uns des facteurs généraux qui affectent le niveau d’effort po
 | Étendue des personnalisations | La clarté des exigences, les décisions hésitantes et l’élargissement de la portée |
 | Nombre d’extensions | Fréquence de mise à niveau |
 | Nombre d’intégrations avec des tiers (OMS, ERP) | Votre stratégie de test |
-| Codage vers les bonnes pratiques |  |
+| Codage vers les bonnes pratiques |                                                              |
 
 La croissance continue de l&#39;espace du commerce numérique a exercé une pression accrue sur les entreprises pour qu&#39;elles évoluent plus rapidement, plus souvent et de manière imprévisible. L’incapacité à suivre et à anticiper le comportement d’achat des clients a uniformisé les règles du jeu pour les marques même les plus importantes et les plus établies. Vous devez être en mesure de fournir des expériences robustes et personnalisées sur tous les points de contact, sans perte de performance ni de temps de disponibilité. Vous devez être capable d&#39;innover plus rapidement, sans limites, pour rester en avance sur les concurrents mondiaux. En effectuant une mise à niveau, vous allez à l’avenir vérifier votre activité et vous préparer à mieux répondre aux besoins dynamiques des clients.

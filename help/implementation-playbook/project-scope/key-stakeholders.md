@@ -26,7 +26,7 @@ Il s’agit de la personne ou de l’équipe de l’organisation qui connaît le
 
 - VP de la stratégie numérique
 - VP de l’e-commerce
-- Vice-président du marketing
+- VP marketing
 - Gestionnaire des services clients
 - Chef des ventes (principalement pour les applications B2B)
 

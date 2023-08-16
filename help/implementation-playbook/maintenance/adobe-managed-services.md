@@ -37,11 +37,11 @@ Adobe Managed Services offre des avantages clés par rapport aux implémentation
 
 Consultez l’infographie suivante pour une comparaison plus détaillée des principaux avantages de Managed Services :
 
-![Infographie montrant une comparaison entre Adobe Managed Services et d’autres options de mise en oeuvre d’Adobe Commerce](../../assets/playbooks/managed-services-compare.png)
+![Infographie montrant une comparaison entre Adobe Managed Services et d’autres options de mise en oeuvre Adobe Commerce](../../assets/playbooks/managed-services-compare.png)
 
 ## Rôles et responsabilités
 
-Adobe fournit un ensemble de services relatifs à la configuration, au développement, à l’évaluation et à la production d’Adobe Commerce sur les systèmes Managed Services. Pour que le développement et le déploiement de la solution se déroulent le plus efficacement possible, il est important que le client et le partenaire comprennent et remplissent leurs rôles, comme décrit ci-dessous :
+Adobe fournit un ensemble de services relatifs à la mise en service, au développement, à l’évaluation et à la production d’Adobe Commerce sur les systèmes Managed Services. Pour que le développement et le déploiement de la solution se déroulent le plus efficacement possible, il est important que le client et le partenaire comprennent et remplissent leurs rôles, comme décrit ci-dessous :
 
 <table>
     <thead>
@@ -57,7 +57,7 @@ Adobe fournit un ensemble de services relatifs à la configuration, au développ
             <td colspan="4" style="background:lightgray;"><strong>Mise en service</strong></td>
         </tr>
         <tr>
-            <td>Sélection de région du cloud</td>
+            <td>Sélection de la région du cloud</td>
             <td>Propriétaire</td>
             <td>Contributeur</td>
             <td>Conseiller</td>
@@ -198,7 +198,7 @@ Adobe fournit un ensemble de services relatifs à la configuration, au développ
             <td>Propriétaire</td>
         </tr>
         <tr>
-            <td>Salle de conférence pour les événements d’activation</td>
+            <td>Salle de conférence pour les événements de GoLive</td>
             <td>Contributeur</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
@@ -213,7 +213,7 @@ Adobe fournit un ensemble de services relatifs à la configuration, au développ
             <td colspan="4" style="background:lightgray;"><strong>Production</strong></td>
         </tr>
         <tr>
-            <td>Surveillance des infrastructures de production</td>
+            <td>Surveillance de l’infrastructure de production</td>
             <td></td>
             <td></td>
             <td>Propriétaire</td>
@@ -374,15 +374,15 @@ La pile de sécurité Adobe pour Managed Services intègre la sécurité à tous
 
 Les partenaires de plateforme, tels que Amazon Web Services et Microsoft Azure, assurent une couverture de sécurité maximale lors de l’application des personnalisations de plateforme, tandis que l’équipe Managed Services d’Adobe fournit des services de sécurité principaux, tels que la conformité, la journalisation, l’authentification, l’analyse et la surveillance, ainsi que la sécurité du serveur et la configuration sécurisée des applications. Voir [Sécurité Adobe Commerce](https://business.adobe.com/products/magento/secure-ecommerce.html) pour plus d’informations.
 
-Le diagramme suivant illustre la pile de la technologie de sécurité Adobe Managed Services :
+Le diagramme suivant illustre la pile de technologie de sécurité Managed Services Adobe :
 
-![Diagramme présentant la pile de sécurité Adobe Managed Services](../../assets/playbooks/managed-services-security-stack.svg)
+![Diagramme affichant la pile de sécurité Managed Services Adobe](../../assets/playbooks/managed-services-security-stack.svg)
 
 ## Assistance à la mise à niveau
 
-L’équipe Managed Services joue un rôle principal dans la planification et l’aide au processus de mise à niveau. L’ingénieur du service client travaille avec votre équipe de projet de mise à niveau, notamment les chefs de projet et les développeurs (experts en matière interne, partenaires certifiés Adobe ou professionnels du conseil d’Adobe) pour aider votre équipe à garantir une planification adéquate et le respect des bonnes pratiques lors de la mise à niveau.
+L’équipe Managed Services joue un rôle actif pour vous aider à planifier et à gérer la mise à niveau. L’ingénieur du service client travaille avec votre équipe de projet de mise à niveau, notamment les chefs de projet et les développeurs (experts en matière interne, partenaires certifiés Adobe ou professionnels du conseil d’Adobe) pour aider votre équipe à garantir une planification adéquate et le respect des bonnes pratiques lors de la mise à niveau.
 
-Les ingénieurs du service client Managed Services ont collaboré avec les clients Adobe Commerce pour exécuter les mises à niveau dans des environnements volumineux. Votre ingénieur du service client peut vous aider à tirer parti des connaissances d’experts pour optimiser le succès de la mise à niveau tout en réduisant les temps d’arrêt et en réduisant les risques globaux. En outre, les ingénieurs du service client de Managed Services fonctionnent avec votre environnement d’évaluation dédié pour la mise à niveau afin que les processus de production existants ne soient pas affectés lors de la validation de la mise à niveau.
+Les ingénieurs du service client Managed Services ont collaboré avec les clients Adobe Commerce pour exécuter les mises à niveau dans des environnements volumineux. Votre ingénieur du service client peut vous aider à tirer parti des connaissances d’experts pour optimiser le succès de la mise à niveau tout en réduisant les temps d’arrêt et en réduisant les risques globaux. En outre, les ingénieurs du service client de Managed Services fonctionnent avec votre environnement d’évaluation dédié pour la mise à niveau, de sorte que les processus de production existants ne soient pas affectés lors de la validation de la mise à niveau.
 
 Adobe fournit un ensemble de services relatifs à la mise en service, au développement, à l’évaluation et à la production de votre système Managed Services. Le tableau suivant présente un aperçu des rôles que chaque participant joue dans le processus de mise à niveau :
 
@@ -402,7 +402,7 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
     <td>Créer un plan de projet de mise à niveau</td>
     <td>Propriétaire</td>
     <td>Contributeur</td>
-    <td>Contributeur<br />L’ingénieur du service client fournit des exemples de modèles de mise à niveau et de plans de mise à niveau. propose des conseils et des bonnes pratiques.</td>
+    <td>Contributeur<br />L’ingénieur du service client fournit des exemples de modèles de mise à niveau et de plans de mise à niveau. Il fournit également des conseils et des bonnes pratiques.</td>
   </tr>
   <tr>
     <td>Déterminer les modifications d’infrastructure nécessaires</td>

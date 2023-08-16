@@ -14,17 +14,17 @@ ht-degree: 0%
 
 Cette section répertorie les noms de variable et les chemins de configuration disponibles pour les options dans l’Admin sous **Magasins** > Paramètres > **Configuration** > **Catalogue**.
 
-Le [`magento app:config:dump` command](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle de code source. Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables). Cette rubrique fonctionne _not_ list [valeurs sensibles et spécifiques au système](config-reference-sens.md).
+La variable [`magento app:config:dump` command](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle source. Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables). Cette rubrique fonctionne _not_ list [valeurs sensibles et spécifiques au système](config-reference-sens.md).
 
 ## Chemins du catalogue
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Catalogue**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Catalogue**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
 | Masque pour le SKU | `catalog/fields_masks/sku` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Masque pour le métamodèle | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Masque pour les mots-clés de métadonnées | `catalog/fields_masks/meta_keyword` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Masque pour les mots-clés Meta | `catalog/fields_masks/meta_keyword` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Masque pour la description des métadonnées | `catalog/fields_masks/meta_description` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mode Liste | `catalog/frontend/list_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Produits par page sur les valeurs autorisées de la grille | `catalog/frontend/grid_per_page_values` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -121,7 +121,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Chemins d’accès du stock
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Inventaire**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Inventaire**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -137,7 +137,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 | Quantité maximale autorisée dans le panier | `cataloginventory/item_options/max_sale_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Seuil hors stock | `cataloginventory/item_options/min_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Quantité minimale autorisée dans le panier | `cataloginventory/item_options/min_sale_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Inclure la notification pour la quantité ci-dessous | `cataloginventory/item_options/notify_stock_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Informer de la quantité ci-dessous | `cataloginventory/item_options/notify_stock_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Activer les incréments de qualité | `cataloginventory/item_options/enable_qty_increments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Incréments de qualité | `cataloginventory/item_options/qty_increments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Renvoyer automatiquement l’article de la note de crédit à Stock | `cataloginventory/item_options/auto_return` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -151,7 +151,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Chemins de marchandisage visuel
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Marchandisage visuel**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Marchandisage visuel**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -164,7 +164,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Chemins du plan de site XML
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Plan du site XML**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Plan du site XML**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -188,7 +188,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Chemins des flux RSS
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Flux RSS**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Flux RSS**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -204,7 +204,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > 
 
 ## Envoyer un courrier électronique à des chemins d’ami
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Envoyer un email à un ami**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Envoyer un email à un ami**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|

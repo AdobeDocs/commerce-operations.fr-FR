@@ -1,13 +1,13 @@
 ---
 title: Règlement général sur la protection des données (RGPD)
 description: Découvrez le Règlement général sur la protection des données (RGPD), qui est une législation qui réglemente la protection des données et la confidentialité pour tous les individus de l’Union européenne et de l’Espace économique européen.
-source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
+exl-id: 30e60601-f4f7-419e-b2dd-8c82c8a2ed33
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
 
 ---
-
 
 # Règlement général sur la protection des données (RGPD)
 

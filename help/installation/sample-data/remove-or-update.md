@@ -1,13 +1,13 @@
 ---
 title: Suppression ou mise à jour d’exemples de modules de données
 description: Suivez ces étapes pour gérer les exemples de modules de données Adobe Commerce et Magento Open Source.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+exl-id: d23f999f-18bf-449b-be23-bdf392dda539
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%
 
 ---
-
 
 # Suppression ou mise à jour d’exemples de modules de données
 
@@ -63,7 +63,7 @@ Adobe Commerce uniquement :
 
 Cette commande permet de mettre à jour des exemples de données avant de mettre à jour Adobe Commerce ou Magento Open Source.
 
-Pour préparer des exemples de données en vue de la mise à jour, saisissez la commande suivante :
+Pour préparer les exemples de données à mettre à jour, saisissez la commande suivante :
 
 ```bash
 bin/magento sampledata:reset

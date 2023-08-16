@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # Prérequis du moteur de recherche
 
-Depuis Adobe Commerce et Magento Open Source 2.4, toutes les installations doivent être configurées pour utiliser [Elasticsearch](https://www.elastic.co) ou [OpenSearch](https://opensearch.org/) comme solution de recherche catalogue.
+Depuis Adobe Commerce et Magento Open Source 2.4, toutes les installations doivent être configurées pour utiliser [Elasticsearch](https://www.elastic.co) ou [OpenSearch](https://opensearch.org/) en tant que solution de recherche catalogue.
 
 >[!NOTE]
 >
->La prise en charge d’OpenSearch a été ajoutée dans la version 2.4.4. OpenSearch est un double compatible avec les Elasticsearch. Toutes les instructions pour configurer Elasticsearch 7 s’appliquent à OpenSearch. [Migration de l’Elasticsearch vers OpenSearch](../../../upgrade/prepare/opensearch-migration.md) fournit des conseils sur le passage à OpenSearch.
+>La prise en charge d’OpenSearch a été ajoutée à la version 2.4.4. OpenSearch est un double compatible d’Elasticsearch. Toutes les instructions pour configurer Elasticsearch 7 s’appliquent à OpenSearch. [Migration de l’Elasticsearch vers OpenSearch](../../../upgrade/prepare/opensearch-migration.md) fournit des conseils sur le passage à OpenSearch.
 
 ## Versions prises en charge
 
 Vous devez installer et configurer Elasticsearch ou OpenSearch avant d’installer Adobe Commerce 2.4.4 et versions ultérieures.
 
-Reportez-vous à la section [Configuration requise](../../system-requirements.md) pour des informations de version spécifiques.
+Voir [Configuration requise](../../system-requirements.md) pour des informations de version spécifiques.
 
 ## Configuration recommandée
 
@@ -43,7 +43,7 @@ Le diagramme qui précède affiche :
 
   L’exécution sur des hôtes distincts nécessite un proxy pour fonctionner. (La mise en grappe du moteur de recherche va au-delà de ce guide, mais vous trouverez plus d’informations dans la section [Documentation sur la mise en grappe des Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
-* Chaque hôte possède son propre serveur web ; les serveurs web ne doivent pas nécessairement être identiques.
+* Chaque hôte possède son propre serveur web ; les serveurs web ne doivent pas nécessairement être les mêmes.
 
   Par exemple, l’application Commerce peut exécuter Apache et le moteur de recherche peut exécuter nginx.
 
@@ -84,7 +84,7 @@ Pour configurer des règles permettant la communication avec le pare-feu ou SELi
 
 * [procédure iptables](https://help.ubuntu.com/community/IptablesHowTo)
 * [Comment modifier les règles iptables (projet fedora)](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
-* [Présentation de SELinux (CentOS.org)](https://www.centos.org)
+* [Introduction à SELinux (CentOS.org)](https://www.centos.org)
 * [Wiki pratique SELinux (CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
 
 ### Installation du Java Software Development Kit
@@ -128,7 +128,7 @@ apt-get -y update
 apt-get install -y openjdk-8-jdk
 ```
 
-Pour connaître les autres options, voir [Documentation sur les Oracles](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
+Pour connaître les autres options, voir [Documentation Oracle](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
 
 ### Installation du moteur de recherche
 
@@ -165,4 +165,4 @@ Elasticsearch requiert JDK 1.8 ou version ultérieure. Voir [Installation du Jav
 
 ## Ressources supplémentaires
 
-Voir [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) ou [OpenSearch](https://opensearch.org/docs/latest/) documentation.
+Voir [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) ou [OpenSearch](https://opensearch.org/docs/latest/) la documentation.

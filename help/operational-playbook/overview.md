@@ -26,7 +26,7 @@ Le public cible de ce manuel de lecture comprend :
 - Responsable du contenu, responsable de l’expérience utilisateur, responsable de la production de contenu, stratège de contenu, producteurs de contenu, concepteur d’expérience utilisateur
 - Architecte de solution, responsable de la mise en oeuvre, développeur principal
 - Responsable de programme, chef de projet
-- Ecommerce Manager, Business Analytics
+- eCommerce Manager, Business Analytics
 
 ## À propos de ce manuel de lecture
 

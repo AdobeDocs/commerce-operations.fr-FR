@@ -52,7 +52,7 @@ Les mesures de performances sont basées sur des activités de magasin quotidien
 
      L’utilisation efficace de la couche de cache augmente le nombre de pages vues par heure.
 
-- **API GraphQL**
+- **API GRAPHQL**
    - 250 threads simultanés
    - Définir sur 0 % le taux d’accès au cache du réseau CDN
 
@@ -78,9 +78,9 @@ Pour la référence de performances, Adobe Commerce 2.4.5 a été déployé sur 
 
 - **Spécifications des noeuds web**
    - vCPU 216 (72 x 3 noeuds)
-   - Mémoire 432 GiB (144 x 3 noeuds)
+   - Mémoire 432 Go (144 x 3 noeuds)
    - Bande passante réseau 768 Gbit/s (256 x 3 noeuds)
-   - Bande passante EBS 57 000 Mbit/s (19 000 x 3 noeuds)
+   - Bande passante EBS 57 000 Mbit/s (1 900 x 3 noeuds)
    - Stockage mis en service 100 Go
 
 - **Spécifications du noeud de service**

@@ -22,4 +22,4 @@ Pour activer ou désactiver un module, voir [Activation ou désactivation des mo
 
 Pour désinstaller un module, voir [Désinstallation des modules](../../installation/tutorials/uninstall-modules.md).
 
-Pour désinstaller un thème, utilisez le [`theme:uninstall`](../../installation/tutorials/themes.md) .
+Pour désinstaller un thème, utilisez la méthode [`theme:uninstall`](../../installation/tutorials/themes.md) .

@@ -91,6 +91,6 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 ## Informations supplémentaires
 
 - [Paramètres d’optimisation côté client](../../../performance/configuration.md#client-side-optimization-settings)
-- [Guide de l’utilisateur : Optimisation des fichiers de ressources](https://docs.magento.com/user-guide/system/file-optimization.html)
-- [Guide du développeur de Frontend : Fusion, minification et performances du site CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- [Guide de l’utilisateur : optimisation des fichiers de ressources](https://docs.magento.com/user-guide/system/file-optimization.html)
+- [Guide du développeur Frontend : fusion, minimisation et performances du site CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Lots JavaScript avancés](../../../performance/advanced-js-bundling.md)

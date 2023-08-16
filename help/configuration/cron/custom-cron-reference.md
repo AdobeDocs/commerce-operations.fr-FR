@@ -1,13 +1,13 @@
 ---
 title: Tâche cron personnalisée et référence de groupe cron
 description: Découvrez comment personnaliser les crons à l’aide de groupes cron.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
 
 ---
-
 
 # Personnalisation de la référence des crons
 
@@ -23,7 +23,7 @@ Pour obtenir un aperçu des tâches cron, voir [Configuration des tâches cron](
 
 Cette section explique comment créer éventuellement un groupe cron pour un module personnalisé. Si vous n’avez pas besoin de le faire, passez à la section suivante.
 
-A _groupe cron_ est un groupe logique qui permet d’exécuter facilement cron pour plusieurs processus à la fois. La plupart des modules Commerce utilisent la variable `default` le groupe cron; certains modules utilisent la méthode `index` groupe.
+A _groupe cron_ est un groupe logique qui permet d’exécuter facilement cron pour plusieurs processus à la fois. La plupart des modules Commerce utilisent la variable `default` groupe cron ; certains modules utilisent la variable `index` groupe.
 
 Si vous implémentez cron pour un module personnalisé, vous pouvez choisir d’utiliser la variable `default` ou un autre groupe.
 
@@ -84,7 +84,7 @@ Le résultat `crontab.xml` avec deux groupes peut ressembler à ceci :
 
 À titre d’exemple, reportez-vous à la section [Magento_Customer crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml).
 
-### Définition des options du groupe Cron
+### Spécification des options de groupe Cron
 
 Vous pouvez déclarer un nouveau groupe et spécifier ses options de configuration (qui s’exécutent toutes dans la portée de la vue du magasin) via le `cron_groups.xml` fichier situé dans :
 
@@ -92,7 +92,7 @@ Vous pouvez déclarer un nouveau groupe et spécifier ses options de configurati
 <your component base dir>/<vendorname>/module-<name>/etc/cron_groups.xml
 ```
 
-Vous trouverez ci-dessous un exemple de la fonction `cron_groups.xml` fichier :
+Voici un exemple de la fonction `cron_groups.xml` fichier :
 
 ```xml
 <?xml version="1.0"?>

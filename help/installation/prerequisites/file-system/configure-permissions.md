@@ -1,13 +1,13 @@
 ---
 title: Configuration de la propriété et des autorisations de fichier
 description: Pour configurer les autorisations du système de fichiers pour les installations sur site d’Adobe Commerce et de Magento Open Source, procédez comme suit.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1005'
 ht-degree: 0%
 
 ---
-
 
 # Configuration de la propriété et des autorisations de fichier
 
@@ -64,7 +64,7 @@ Pour définir les autorisations avant d’installer l’application :
 
 >[!NOTE]
 >
->Pour restreindre davantage les autorisations après l’installation de l’application, vous pouvez : [configurer un masque](../../next-steps/set-umask.md).
+>Pour restreindre davantage les autorisations après l’installation de l’application, vous pouvez : [configuration d’un masque](../../next-steps/set-umask.md).
 
 ## Définir la propriété et les autorisations pour deux utilisateurs
 
@@ -85,7 +85,7 @@ Effectuez les tâches suivantes dans l’ordre indiqué :
 
 Pour permettre au serveur web d’écrire des fichiers et des répertoires dans le système de fichiers, mais aussi de gérer *propriétaire* par le propriétaire du système de fichiers, les deux utilisateurs doivent appartenir au même groupe. Cela est nécessaire afin que les deux utilisateurs puissent partager l’accès aux fichiers (y compris les fichiers créés à l’aide de l’administrateur ou d’autres utilitaires web).
 
-Cette section explique comment créer un propriétaire de système de fichiers et placer cet utilisateur dans le groupe du serveur web. Si vous le souhaitez, vous pouvez utiliser un compte d’utilisateur existant ; pour des raisons de sécurité, nous recommandons à l’utilisateur d’avoir un mot de passe fort.
+Cette section explique comment créer un propriétaire de système de fichiers et placer cet utilisateur dans le groupe du serveur web. Si vous le souhaitez, vous pouvez utiliser un compte utilisateur existant ; nous vous recommandons de disposer d’un mot de passe sécurisé.
 
 >[!NOTE]
 >
@@ -133,15 +133,15 @@ Pour trouver le groupe d’utilisateurs du serveur web :
 
 * CentOS :
 
-   ```bash
-   grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
-   ```
+  ```bash
+  grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
+  ```
 
-   ou
+  ou
 
-   ```bash
-   grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
-   ```
+  ```bash
+  grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
+  ```
 
 En règle générale, le nom de l’utilisateur et le nom du groupe sont tous deux `apache`.
 
@@ -151,16 +151,16 @@ En règle générale, le nom d’utilisateur et le nom du groupe sont tous deux 
 
 ### Placez le propriétaire du système de fichiers dans le groupe de serveurs web
 
-Pour placer le propriétaire du système de fichiers dans le groupe Principal du serveur web (en supposant que le nom type du groupe Apache pour CentOS et Ubuntu soit), saisissez la commande suivante en tant qu’utilisateur avec `root` privilèges :
+Pour placer le propriétaire du système de fichiers dans le groupe principal du serveur web (en supposant que le nom type du groupe Apache pour CentOS et Ubuntu soit), saisissez la commande suivante en tant qu’utilisateur avec `root` privilèges :
 
 * CentOS : `usermod -a -G apache <username>`
 * Ubuntu : `usermod -a -G www-data <username>`
 
 >[!NOTE]
 >
->Le `-a -G` options importantes, car elles ajoutent `apache` ou `www-data` as a *Secondaire* groupe au compte utilisateur, ce qui permet de conserver le *Principal* groupe. L’ajout d’un groupe secondaire à un compte d’utilisateur vous aide à [restreindre la propriété et les autorisations des fichiers ;](#set-ownership-and-permissions-for-two-users) pour s’assurer que les membres d’un groupe partagé n’ont accès qu’à certains fichiers.
+>La variable `-a -G` options importantes, car elles ajoutent `apache` ou `www-data` as a *Secondaire* groupe au compte utilisateur, ce qui permet de conserver le *primary* groupe. L’ajout d’un groupe secondaire à un compte d’utilisateur vous aide à [restreindre la propriété et les autorisations des fichiers ;](#set-ownership-and-permissions-for-two-users) pour s’assurer que les membres d’un groupe partagé n’ont accès qu’à certains fichiers.
 
-Par exemple, pour ajouter l’utilisateur `magento_user` au `apache` Principal groupe sur CentOS :
+Par exemple, pour ajouter l’utilisateur `magento_user` à la fonction `apache` groupe principal sur CentOS :
 
 ```bash
 sudo usermod -a -G apache magento_user
@@ -172,7 +172,7 @@ Pour confirmer que votre utilisateur fait partie du groupe de serveurs web, sais
 groups magento_user
 ```
 
-L’exemple de résultat suivant montre la Principale (`magento`) et secondaire (`apache`).
+L’exemple de résultat suivant montre l’instance principale de l’utilisateur (`magento`) et secondaire (`apache`).
 
 ```bash
 magento_user : magento_user apache
@@ -180,7 +180,7 @@ magento_user : magento_user apache
 
 >[!NOTE]
 >
->En règle générale, le nom d’utilisateur et le nom de groupe Principal sont identiques.
+>En règle générale, le nom d’utilisateur et le nom du groupe principal sont identiques.
 
 Pour terminer la tâche, redémarrez le serveur web :
 

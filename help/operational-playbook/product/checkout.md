@@ -1,5 +1,5 @@
 ---
-title: Flux et processus d’extraction
+title: Flux et processus de passage en caisse
 description: Augmentez les taux de conversion en offrant à vos clients une expérience de passage en caisse transparente.
 exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
 feature: Best Practices, Checkout
@@ -38,7 +38,7 @@ La mise en oeuvre d’un passage en caisse facile et pratique élimine le risque
 
 Affichez un flux de passage en caisse visuel où les acheteurs peuvent voir l’aperçu du nombre d’étapes nécessaires pour terminer l’achat.
 
-## Suppression des extras
+## Suppression d’extras
 
 Supprimez les informations supplémentaires, telles que le mini-sac, la recherche et/ou la barre de navigation. Cela permet au client de se concentrer sur le processus de passage en caisse plutôt que de naviguer vers une autre page.
 
@@ -61,7 +61,7 @@ Fournissez différentes options de passage en caisse, telles que :
 
 - Utilisateur invité
 - Utilisateur enregistré
-- Création d’un compte
+- Créer un compte
 
 Ne forcez pas un type d’option sur l’utilisateur.
 
@@ -69,7 +69,7 @@ Ne forcez pas un type d’option sur l’utilisateur.
 
 Les détaillants doivent fournir différentes méthodes d’expédition pour répondre aux besoins de différents clients.
 
-Outre les options de paiement, les détaillants peuvent également proposer des options comme [cliquer et collecter](click-collect.md).
+Outre les options de paiement, les détaillants peuvent également proposer des options telles que [cliquer et collecter](click-collect.md).
 
 ## Détails du paiement
 
@@ -103,17 +103,17 @@ Il existe une différence entre les flux et les processus de passage en caisse B
 
 - Possibilité de modifier la quantité
 - Possibilité de supprimer un produit du panier
-- Passage en caisse simple
-- Différentes options de paiement, telles que la carte de crédit et le porte-monnaie électronique
+- Simple checkout
+- Différentes options de paiement, telles que la carte de crédit et le portefeuille électronique
 - Possibilité d’ajouter du code de coupon au passage en caisse
 
-![Diagramme de passage en caisse B2C](../../assets/playbooks/checkout-b2c.png)
+![Diagramme de paiement B2C](../../assets/playbooks/checkout-b2c.png)
 
 ### B2B
 
 - Possibilité de modifier la quantité
 - Possibilité de supprimer un produit du panier
-- Passage en caisse simple
+- Simple checkout
 - Différentes options de paiement telles que le bon de commande, le transfert bancaire ou le contrôle
 - Processus simple de réorganisation
 

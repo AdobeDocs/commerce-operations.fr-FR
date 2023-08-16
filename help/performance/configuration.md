@@ -16,11 +16,11 @@ Commerce fournit de nombreux paramètres et outils que vous pouvez utiliser pour
 
 ## Tâches Cron
 
-Toutes les opérations asynchrones dans [!DNL Commerce] sont effectuées sous Linux `cron` . Voir [Configuration et exécution de cron](../configuration/cli/configure-cron-jobs.md) pour le configurer correctement.
+Toutes les opérations asynchrones dans [!DNL Commerce] sont effectuées sous Linux ; `cron` . Voir [Configuration et exécution de cron](../configuration/cli/configure-cron-jobs.md) pour le configurer correctement.
 
 ## Indexateurs
 
-Un indexeur peut s’exécuter dans l’un des **[!UICONTROL Update on Save]** ou **[!UICONTROL Update on Schedule]** mode . Le **[!UICONTROL Update on Save]** Le mode indexe immédiatement chaque fois que votre catalogue ou d’autres données changent. Ce mode suppose une faible intensité des opérations de mise à jour et de navigation dans votre magasin. Cela peut entraîner des retards importants et une indisponibilité des données lors de charges élevées. Nous vous recommandons d’utiliser **Mise à jour de la planification** en production, car il stocke des informations sur les mises à jour des données et effectue l’indexation par parties en arrière-plan via une tâche cron spécifique. Vous pouvez modifier le mode de chaque [!DNL Commerce] indexeur séparément sur le  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** page de configuration.
+Un indexeur peut s’exécuter dans **[!UICONTROL Update on Save]** ou **[!UICONTROL Update on Schedule]** mode . La variable **[!UICONTROL Update on Save]** Le mode indexe immédiatement chaque fois que votre catalogue ou d’autres données changent. Ce mode suppose une faible intensité des opérations de mise à jour et de navigation dans votre magasin. Cela peut entraîner des retards importants et une indisponibilité des données lors de charges élevées. Nous vous recommandons d’utiliser **Mise à jour de la planification** en production, car il stocke des informations sur les mises à jour des données et effectue l’indexation par parties en arrière-plan via une tâche cron spécifique. Vous pouvez modifier le mode de chaque [!DNL Commerce] indexeur séparément sur le  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** page de configuration.
 
 >[!TIP]
 >
@@ -40,11 +40,11 @@ Il peut arriver que des ventes intensives sur un storefront se produisent en mê
 
 >[!WARNING]
 >
->Le **[!UICONTROL Developer]** Les options et les onglets ne sont disponibles que dans [Mode Développeur](../configuration/cli/set-mode.md). [Adobe Commerce sur l’infrastructure cloud](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) ne prend pas en charge `Developer` mode .
+>La variable **[!UICONTROL Developer]** Les options et les onglets ne sont disponibles que dans [Mode Développeur](../configuration/cli/set-mode.md). [Adobe Commerce sur l’infrastructure cloud](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) ne prend pas en charge `Developer` mode .
 
 ## Enregistrement de la configuration asynchrone [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponible dans la version 2.4.7-beta1 uniquement"}
 
-Pour les projets avec un grand nombre de configurations au niveau du magasin, l’enregistrement d’une configuration de magasin peut prendre un temps démesuré ou entraîner un délai d’expiration. Le _Configuration asynchrone_ Le module active les enregistrements de configuration asynchrones en exécutant une tâche cron qui utilise un consommateur pour traiter l’enregistrement dans une file d’attente de messages. AsyncConfig est **disabled** par défaut.
+Pour les projets avec un grand nombre de configurations au niveau du magasin, l’enregistrement d’une configuration de magasin peut prendre un temps démesuré ou entraîner un délai d’expiration. La variable _Configuration asynchrone_ Le module active les enregistrements de configuration asynchrones en exécutant une tâche cron qui utilise un consommateur pour traiter l’enregistrement dans une file d’attente de messages. AsyncConfig est **disabled** par défaut.
 
 Vous pouvez activer AsyncConfig à l’aide de l’interface de ligne de commande :
 
@@ -52,7 +52,7 @@ Vous pouvez activer AsyncConfig à l’aide de l’interface de ligne de command
 bin/magento setup:config:set --config-async 1
 ```
 
-Le `set` La commande écrit ce qui suit dans la fonction `app/etc/env.php` fichier :
+La variable `set` La commande écrit ce qui suit dans la fonction `app/etc/env.php` fichier :
 
 ```conf
 ...
@@ -91,11 +91,11 @@ Pour améliorer la réactivité du storefront [!DNL Commerce] Accédez à Admin 
 | Paramètres CSS | Minimisation des fichiers CSS | Oui |
 | [!DNL JavaScript] Paramètres | Minify [!DNL JavaScript] Fichiers | Oui |
 | [!DNL JavaScript] Paramètres | Activer [!DNL JavaScript] Regroupement | Oui |
-| Paramètres des modèles | Minimiser le HTML | Oui |
+| Paramètres des modèles | Minifier le HTML | Oui |
 
 >[!INFO]
 >
->Le **[!UICONTROL Developer]** Les options et les onglets ne sont disponibles que dans [Mode Développeur](../configuration/cli/set-mode.md). [Adobe [!DNL Commerce] sur l’infrastructure cloud](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) ne prend pas en charge `Developer` mode .
+>La variable **[!UICONTROL Developer]** Les options et les onglets ne sont disponibles que dans [Mode Développeur](../configuration/cli/set-mode.md). [Adobe [!DNL Commerce] sur l’infrastructure cloud](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) ne prend pas en charge `Developer` mode .
 
 Lorsque vous activez la variable **[!UICONTROL Enable [!DNL JavaScript] Bundling]** vous autorisez Commerce à fusionner toutes les ressources JS en un ou un ensemble de lots chargés dans les pages de storefront. Le regroupement de JS entraîne une diminution du nombre de requêtes envoyées au serveur, ce qui améliore les performances des pages. Cela permet également de mettre en cache les ressources JS du navigateur lors du premier appel et de les réutiliser pour toute autre navigation. Cette option apporte également une évaluation différée, car tous les JS sont chargés en tant que texte. Elle n’effectue l’analyse et l’évaluation du code qu’après le déclenchement d’actions spécifiques sur la page. Cependant, ce paramètre n’est pas recommandé pour les magasins où le premier temps de chargement de page est extrêmement critique, car tout le contenu JS sera chargé lors du premier appel.
 
@@ -119,7 +119,7 @@ Pour éviter une dégradation des performances, vous pouvez définir la variable
 
 Pour activer cette optimisation, accédez à **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Customers] > [!UICONTROL Customer Configuration] > [!UICONTROL Customer Segments] >[!UICONTROL Real-time Check if Customer is Matched by Segment]**.
 
-Ce paramètre améliore les performances de la validation des segments de clients s’il existe de nombreux segments de clients dans le système. Cependant, il ne fonctionne pas avec [split base](../configuration/storage/multi-master.md) implémentations ou lorsqu’il n’y a aucun client enregistré.
+Ce paramètre améliore les performances de la validation des segments de clients s’il existe de nombreux segments de clients dans le système. Cependant, il ne fonctionne pas avec [base de données partagée](../configuration/storage/multi-master.md) implémentations ou lorsqu’il n’y a aucun client enregistré.
 
 ## Planning de maintenance de la base de données {#database}
 
@@ -136,13 +136,13 @@ Pour améliorer les performances de la grille de produits pour les catalogues vo
 Ce paramètre de configuration du système est désactivé par défaut. En l’activant, vous pouvez limiter le nombre de produits dans la grille à une valeur spécifique. **[!UICONTROL Records Limit]** est un paramètre personnalisable dont la valeur minimale par défaut est `20000`.
 Lorsque la variable **[!UICONTROL Limit Number of Products in Grid]** est activé et que le nombre de produits dans la grille est supérieur à la limite d’enregistrements, la collection limitée d’enregistrements est renvoyée. Lorsque la limite est atteinte, le nombre total d’enregistrements trouvés, le nombre d’enregistrements sélectionnés et les éléments de pagination sont masqués dans l’en-tête de la grille.
 
-Lorsque le nombre total de produits dans la grille est limité, cela n’affecte pas les actions de masse de la grille de produits. Elle affecte uniquement la couche de présentation de la grille de produit. Par exemple, il existe un nombre limité de `20000` produits dans la grille, l’utilisateur clique sur **[!UICONTROL Select All]**, sélectionne la variable **[!UICONTROL Update attributes]** action de masse et met à jour certains attributs. Par conséquent, tous les produits sont mis à jour, et non la collection limitée de `20000` enregistrements.
+Lorsque le nombre total de produits dans la grille est limité, cela n’affecte pas les actions de masse de la grille de produits. Elle affecte uniquement la couche de présentation de la grille de produit. Par exemple, un nombre limité de `20000` produits dans la grille, l’utilisateur clique sur **[!UICONTROL Select All]**, sélectionne la variable **[!UICONTROL Update attributes]** action de masse et met à jour certains attributs. Par conséquent, tous les produits sont mis à jour, et non la collection limitée de `20000` enregistrements.
 
 La limitation de la grille de produit affecte uniquement les collections de produits utilisées par les composants de l’interface utilisateur. Par conséquent, toutes les grilles de produits ne sont pas affectées par cette limitation. Uniquement ceux qui utilisent `Magento\Catalog\Ui\DataProvider\Product\ProductCollection`.
 Vous pouvez limiter les collections de grille de produits aux pages suivantes uniquement :
 
 * Grille de produits du catalogue
-* Ajout d’une grille de produits connexes/à ventes croisées/à ventes croisées
+* Ajouter une grille de produits connexes/à vente croisée/à vente croisée
 * Ajout de produits à un produit groupé
 * Ajout de produits au groupe
 * Page de création de commande de l’administrateur

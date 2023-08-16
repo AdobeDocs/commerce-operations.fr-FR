@@ -21,7 +21,7 @@ Utilisez cette liste de contrôle lors de vos conversations annuelles et trimest
 
 >[!NOTE]
 >
->Pour une description détaillée des étapes techniques de mise à niveau réussie, reportez-vous à la section [Conditions préalables à la mise à niveau](../../../upgrade/prepare/prerequisites.md) dans notre documentation utilisateur.
+>Pour une description détaillée des étapes techniques de mise à niveau réussie, voir [Conditions préalables à la mise à niveau](../../../upgrade/prepare/prerequisites.md) dans notre documentation utilisateur.
 
 ## Produits et versions concernés
 
@@ -42,13 +42,13 @@ Utilisez cette liste de contrôle lors de vos conversations annuelles et trimest
 
 ## Équipe
 
-▢ Assurez-vous d’avoir la bonne équipe en place avec les certifications et les compétences Adobe Commerce appropriées.
+▢ Assurez-vous d’avoir la bonne équipe en place avec les certifications et les ensembles de compétences Adobe Commerce appropriés.
 
 ## Budget et minutage
 
 ▢ Utilisation d’Adobe Commerce [calendrier de publication](../../../release/schedule.md) pour planifier votre prochaine mise à niveau et préparer l’avance.
 
-▢ Discutez de la version que vous pensez adopter (complète ou sécuritaire uniquement) en fonction des besoins anticipés.
+▢ Déterminez quelle version vous pensez adopter (complète ou sécuritaire uniquement) en fonction des besoins anticipés.
 
 ▢ Conserver un budget et une capacité d’équipe pour l’upgrade.
 
@@ -77,11 +77,11 @@ Utilisez cette liste de contrôle lors de vos conversations annuelles et trimest
 
 ▢ Planifiez la période de maintenance si des temps d’arrêt sont prévus.
 
-▢ Examiner et approuver la stratégie de test ; envisagez d’utiliser Adobe Commerce [framework de test](https://developer.adobe.com/commerce/testing/) ou une suite d’automatisation tierce.
+▢ Examinez et approuvez la stratégie de test ; envisagez d’utiliser Adobe Commerce [framework de test](https://developer.adobe.com/commerce/testing/) ou une suite d’automatisation tierce.
 
 ▢ Vérifiez que toutes les extensions et personnalisations sont compatibles.
 
-▢ revoir et mettre à jour le manuel de lecture après le lancement ; à utiliser en cas de problèmes détectés pendant ou après la mise à niveau.
+▢ Consultez et mettez à jour le manuel de lecture après le lancement ; à utiliser en cas de problèmes détectés pendant ou après la mise à niveau.
 
 ## Post-déploiement
 

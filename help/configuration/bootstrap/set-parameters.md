@@ -1,13 +1,13 @@
 ---
 title: Définir la valeur des paramètres de bootstrap
 description: Découvrez comment définir les paramètres de bootstrap pour l’application Commerce.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 1%
 
 ---
-
 
 # Paramètres du Bootstrap
 
@@ -25,7 +25,6 @@ Le tableau suivant décrit les paramètres de bootstrap que vous pouvez définir
 >- Tous les paramètres de bootstrap ne sont pas documentés.
 >- Vous définissez maintenant le mode de l’application (développeur, valeur par défaut, production) à l’aide de la fonction [`magento deploy:mode:set {mode}`](../cli/set-mode.md) .
 
-
 ## Définition de paramètres à l’aide d’une variable d’environnement
 
 Cette section explique comment définir les valeurs des paramètres de bootstrap à l’aide de variables d’environnement.
@@ -40,7 +39,7 @@ Par exemple, vous pouvez utiliser la variable `MAGE_PROFILER` Variable d’envir
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
-Définissez la variable à l’aide d’une commande spécifique au shell. Les shells ayant une syntaxe différente, consultez une référence comme [unix.stackexchange.com][unix-stackx].
+Définissez la variable à l’aide d’une commande spécifique au shell. Comme les shells ont une syntaxe différente, consultez une référence comme [unix.stackexchange.com][unix-stackx].
 
 Exemple de shell Bash pour CentOS :
 
@@ -62,7 +61,7 @@ Voir [Exemple de configuration Nginx] on _GitHub_.
 
 ### Paramètre Apache .htaccess
 
-Pour définir le mode de l’application, une méthode consiste à modifier les `.htaccess`. Ainsi, vous n’avez pas à modifier les paramètres Apache.
+Pour définir le mode de l’application, modifiez la méthode `.htaccess`. Ainsi, vous n’avez pas à modifier les paramètres Apache.
 
 Vous pouvez modifier `.htaccess` dans l’un des emplacements suivants, en fonction du point d’entrée de l’application Commerce :
 
@@ -73,7 +72,7 @@ Vous pouvez modifier `.htaccess` dans l’un des emplacements suivants, en fonct
 
 1. Ouvrez l’un des fichiers précédents dans un éditeur de texte et ajoutez ou annulez la mise en commentaire du paramètre souhaité.
 
-   Par exemple, pour spécifier une [mode](application-modes.md), supprimez les commentaires suivants :
+   Par exemple, pour spécifier une [mode](application-modes.md), annulez la mise en commentaire des éléments suivants :
 
    ```conf
    #   SetEnv MAGE_PROFILER firebug
@@ -95,7 +94,7 @@ Le serveur web Apache prend en charge la définition du mode de l’application 
 
 Apache `mod_env` est légèrement différente dans [Apache version 2.2] et [Apache version 2.4].
 
-Les procédures ci-dessous montrent comment définir le mode d’application dans un hôte virtuel Apache. Ce n’est pas la seule façon d’utiliser `mod_env` les directives; pour plus d’informations, consultez la documentation Apache .
+Les procédures ci-dessous montrent comment définir le mode d’application dans un hôte virtuel Apache. Ce n’est pas la seule façon d’utiliser `mod_env` ; consultez la documentation Apache pour plus d’informations.
 
 >[!TIP]
 >

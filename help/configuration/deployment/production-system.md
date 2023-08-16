@@ -1,20 +1,20 @@
 ---
 title: Configuration du système de production
 description: Découvrez comment configurer un système de production pour l’application Commerce.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
 
 ---
 
-
 # Configuration du système de production
 
 Vous pouvez avoir un seul système de production. Tous les éléments suivants doivent être vrais :
 
 - Tout le code Commerce est dans le contrôle de code source dans le même référentiel que les systèmes de développement et de création.
-- Assurez-vous que tous les éléments suivants sont : _included_ dans le contrôle de code source :
+- Assurez-vous que tous les éléments suivants sont _included_ dans le contrôle de code source :
 
    - `app/etc/config.php`
    - `generated` répertoire (et sous-répertoires)

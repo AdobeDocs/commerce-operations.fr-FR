@@ -1,13 +1,13 @@
 ---
 title: Configuration avancée
 description: Examinez les bonnes pratiques et les recommandations relatives aux systèmes d’entreprise de grande taille conçus pour traiter de grands volumes de données.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
 
 ---
-
 
 # Configuration avancée
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Calibrer les performances d’index
 
-Lorsque vous traitez de grandes quantités de données, la réindexation peut devenir une préoccupation. Le [!DNL Commerce] L’équipe a sélectionné les index les plus chargés et activé l’indexation par lots, ce qui vous permet de définir une partie des données à traiter à chaque itération. Ainsi, l’utilisateur peut ajuster la taille des lots en fonction du type et de la taille des données de la base de données.
+Lorsque vous traitez de grandes quantités de données, la réindexation peut devenir une préoccupation. La variable [!DNL Commerce] L’équipe a sélectionné les index les plus chargés et activé l’indexation par lots, ce qui vous permet de définir une partie des données à traiter à chaque itération. Ainsi, l’utilisateur peut ajuster la taille des lots en fonction du type et de la taille des données de la base de données.
 
 Pour gérer ce paramètre, modifiez la variable `batchRowsCount` du paramètre `di.xml` du module correspondant. Les index suivants prennent en charge cette fonctionnalité :
 
@@ -62,11 +62,11 @@ Adobe Commerce vous permet de configurer un stockage de base de données évolut
 
 * Base de données principale (catalogue)
 * Extraction de base de données
-* Base de données du système de gestion des commandes (OMS)
+* Base de données du système de gestion des commandes
 
 Pour paramétrer des bases de données additionnelles, vous devez créer une base vide et exécuter l&#39;une des commandes suivantes :
 
-Pour la base de données du Principal de passage en caisse
+Pour la base de données du Principal de paiement
 
 ```bash
 bin/magento setup:db-schema:split-quote
@@ -80,11 +80,11 @@ bin/magento setup:db-schema:split-sales
 
 Ces commandes migrent des tables de domaines spécifiques de la base principale vers une base de données de domaines. Ils modifient également la variable [!DNL Commerce] pour permettre le traitement de la connectivité et des contraintes correspondantes.
 
-En disposant de bases de données distinctes pour les opérations de passage en caisse et de gestion des commandes, vous pouvez répartir la charge entre les serveurs de base de données. Vous pouvez effectuer plus de passages en caisse et traiter plus de commandes par seconde sans affecter la disponibilité de votre catalogue et d’autres opérations. Nous vous recommandons de fractionner les bases de données pour les périodes de vente flash ou principale, ou de les utiliser de manière permanente pour des projets à charge naturellement élevée. La migration des données présentes entre les bases de données doit être exécutée sous la supervision de votre administrateur système.  Ne séparez pas les bases de données en mode Production.
+En disposant de bases de données distinctes pour les opérations de passage en caisse et de gestion des commandes, vous pouvez répartir la charge entre les serveurs de base de données. Vous pouvez effectuer plus de passages en caisse et traiter plus de commandes par seconde sans affecter la disponibilité de votre catalogue et d’autres opérations. Nous vous recommandons de fractionner les bases de données pour les périodes de ventes flash ou actives, ou de les utiliser de manière permanente pour des projets à charge naturellement élevée. La migration des données présentes entre les bases de données doit être exécutée sous la supervision de votre administrateur système.  Ne séparez pas les bases de données en mode Production.
 
-En plus des bases de données principales, [!DNL Commerce] permet de configurer plusieurs bases de données de Secondaire (une pour chaque ressource de données déclarée dans le système). Une base de données de Secondaire sert de réplique complète de votre base de données principale ou de l’une de vos bases de données maître de domaine. Il est émis pour les opérations de lecture sur une ressource spécifique.
+En plus des bases de données principales, [!DNL Commerce] permet de configurer un certain nombre de bases de données esclaves (une pour chaque ressource de données déclarée dans le système). Une base de données esclave sert de réplique complète de votre base de données principale ou de l’une de vos bases de données maître de domaine. Il est émis pour les opérations de lecture sur une ressource spécifique.
 
-Vous pouvez ajouter une base de données de Secondaire en exécutant la commande suivante :
+Vous pouvez ajouter une base de données esclave en exécutant la commande suivante :
 
 ```bash
 bin/magento setup:db-schema:add-slave
@@ -92,9 +92,9 @@ bin/magento setup:db-schema:add-slave
 
 Cette commande effectue des modifications de configuration, mais ne configure pas la réplication elle-même. Cela devrait être fait manuellement.
 
-Après avoir divisé votre base de données principale et défini les bases de Secondaires, [!DNL Commerce] régule automatiquement les connexions à une base de données spécifique, prenant des décisions en fonction du type de demande (POST, PUT, GET, etc.) et de la ressource de données. If [!DNL Commerce] Pour que ses extensions effectuent des opérations d’écriture sur une demande de GET, le système change automatiquement la connexion de Secondaire à la base de données principale. Il fonctionne de la même manière avec les bases de données maîtres : dès que vous utilisez une table liée au passage en caisse, le système redirige toutes les requêtes vers une base de données spécifique. Pendant ce temps, toutes les requêtes liées au catalogue seront envoyées à la base de données principale.
+Après avoir divisé votre base principale et défini des bases de données esclaves, [!DNL Commerce] régule automatiquement les connexions à une base de données spécifique, prenant des décisions en fonction du type de demande (POST, PUT, GET, etc.) et de la ressource de données. If [!DNL Commerce] Pour que ses extensions effectuent des opérations d’écriture sur une demande de GET, le système change automatiquement la connexion de l’esclave à la base de données principale. Il fonctionne de la même manière avec les bases de données maîtres : dès que vous utilisez une table liée au passage en caisse, le système redirige toutes les requêtes vers une base de données spécifique. Pendant ce temps, toutes les requêtes liées au catalogue seront envoyées à la base de données principale.
 
-Pour plus d’informations sur la configuration et les avantages de la configuration de plusieurs gabarits/Secondaires, voir
+Pour plus d’informations sur la configuration et les avantages de la configuration multi-maître/esclave, voir
 [Solution de performance de la base de données de partage](../configuration/storage/multi-master.md).
 
 ## Diffusion de contenu multimédia
@@ -103,7 +103,7 @@ Magento ne fournit aucune intégration spécifique pour diffuser et diffuser du 
 
 Le moyen le plus simple de diffuser du contenu multimédia est de le diffuser et de le mettre en cache sur une [!DNL Varnish] serveur. Cette approche suppose un système de fichiers partagé pour le stockage de contenu multimédia ou un serveur dédié pointant vers [!DNL Varnish].
 
-Pour les environnements à charge moyenne et élevée, il est recommandé d’utiliser les services CDN (Content Delivery Network) tels que Fastly, Akamai, etc. Lorsque vous utilisez ces services, [!DNL Commerce] utilise la méthode d’extraction classique pour les mises à jour de contenu. Vous devez configurer [!DNL Commerce] URL à utiliser avec le service CDN correspondant. En déplaçant le contenu multimédia vers un CDN, vous réduirez considérablement la charge sur vos instances.
+Pour les environnements à charge moyenne et élevée, il est recommandé d’utiliser les services CDN (Content Delivery Network) tels que Fastly, Akamai, etc. Lorsque vous utilisez ces services, [!DNL Commerce] utilise la méthode d’extraction classique pour les mises à jour de contenu. Vous devez configurer [!DNL Commerce] URL à utiliser avec le service CDN correspondant. En déplaçant le contenu multimédia vers un réseau de diffusion de contenu, vous réduirez considérablement la charge de vos instances.
 
 ## Configuration du stockage des journaux
 

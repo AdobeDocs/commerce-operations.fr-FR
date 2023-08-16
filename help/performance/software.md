@@ -23,7 +23,7 @@ Pour les déploiements multi-serveurs, ou pour les commerçants qui prévoient d
 
 * [[!DNL Varnish] cache](../configuration/cache/config-varnish.md)
 * [Redis](../configuration/cache/redis-session.md) pour les sessions (à partir de la version 2.0.6+)
-* Une instance Redis distincte en tant que [cache par défaut](../configuration/cache/redis-pg-cache.md) (n’utilisez pas cette instance pour le cache de page)
+* Une instance Redis distincte comme [cache par défaut](../configuration/cache/redis-pg-cache.md) (n’utilisez pas cette instance pour le cache de page)
 
 Voir [configuration requise](../installation/system-requirements.md) pour plus d’informations sur les versions prises en charge de chaque type de logiciel.
 
@@ -47,11 +47,11 @@ net.core.somaxconn = 1024
 
 ## PHP
 
-Magento prend entièrement en charge PHP 7.3 et 7.4. Il existe plusieurs facteurs à prendre en compte lors de la configuration de PHP afin d’obtenir une vitesse et une efficacité optimales pour le traitement des requêtes.
+Magento prend entièrement en charge PHP 7.3 et 7.4. Plusieurs facteurs doivent être pris en compte lors de la configuration de PHP pour obtenir une vitesse et une efficacité optimales lors du traitement des requêtes.
 
 ### Extensions PHP
 
-Nous vous recommandons de limiter la liste des extensions PHP principales à celles qui sont requises pour [!DNL Commerce] .
+Nous vous recommandons de limiter la liste des extensions PHP actives à celles requises pour [!DNL Commerce] .
 
 Magento Open Source et Adobe Commerce :
 
@@ -118,7 +118,7 @@ L’ajout d’autres extensions augmente les temps de chargement de bibliothèqu
 
 >[!INFO]
 >
->La présence d’extensions de profilage et de débogage peut avoir une incidence négative sur le temps de réponse de vos pages. Par exemple, un principal module xDebug sans session de débogage peut augmenter le temps de réponse de la page de 30 %.
+>La présence d’extensions de profilage et de débogage peut avoir une incidence négative sur le temps de réponse de vos pages. Par exemple, un module xDebug actif sans session de débogage peut augmenter le temps de réponse de la page de 30 %.
 
 ### Paramètres PHP
 
@@ -164,7 +164,7 @@ opcache.max_accelerated_files=60000
 
 Nous vous recommandons d’activer la variable [Extension APCu PHP](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) et [configuration `composer` pour la prendre en charge](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) pour optimiser les performances. Cette extension met en cache les emplacements des fichiers ouverts, ce qui augmente les performances pour [!DNL Commerce] les appels au serveur, y compris les pages, les appels Ajax et les points de terminaison.
 
-Modifiez votre `apcu.ini` pour inclure les éléments suivants :
+Modifiez votre `apcu.ini` afin d’inclure les éléments suivants :
 
 ```text
 extension=apcu.so
@@ -174,10 +174,10 @@ apc.enabled = 1
 
 ## Serveur web
 
-Magento prend entièrement en charge les serveurs web Nginx et Apache. [!DNL Commerce] fournit des exemples de fichiers de configuration recommandés dans la variable  `<magento_home>/nginx.conf.sample` (Nginx) et  `<magento_home>.htaccess.sample` (Apache).  L’exemple Nginx contient des paramètres pour de meilleures performances et est conçu de sorte qu’une petite reconfiguration soit requise. Voici quelques-unes des principales bonnes pratiques de configuration définies dans le fichier d’exemple :
+Magento prend entièrement en charge les serveurs web Nginx et Apache. [!DNL Commerce] fournit des exemples de fichiers de configuration recommandés dans la variable  `<magento_home>/nginx.conf.sample` (Nginx) et  `<magento_home>.htaccess.sample` fichiers (Apache).  L’exemple Nginx contient des paramètres pour de meilleures performances et est conçu de sorte qu’une petite reconfiguration soit requise. Voici quelques-unes des principales bonnes pratiques de configuration définies dans le fichier d’exemple :
 
 * Paramètres de mise en cache du contenu statique dans un navigateur
-* Paramètres de mémoire et d’exécution pour PHP
+* Paramètres de mémoire et d’heure d’exécution pour PHP
 * Paramètres de compression du contenu
 
 Vous devez également configurer le nombre de threads pour le traitement des requêtes d’entrée, comme indiqué ci-dessous :
@@ -207,11 +207,11 @@ Magento recommande vivement d’utiliser [!DNL Varnish] comme serveur de cache d
 
 Installer [!DNL Varnish] sur un serveur distinct devant le niveau web. Il doit accepter toutes les requêtes entrantes et fournir des copies de page mises en cache. Pour autoriser [!DNL Varnish] pour travailler efficacement avec des pages sécurisées, un proxy de terminaison SSL peut être placé devant [!DNL Varnish]. Nginx peut être utilisé à cet effet.
 
-[!DNL Commerce] distribue un exemple de fichier de configuration pour [!DNL Varnish] (versions 4 et 5) qui contient tous les paramètres recommandés pour les performances. Parmi celles-ci, les plus critiques en termes de performances sont :
+[!DNL Commerce] distribue un exemple de fichier de configuration pour [!DNL Varnish] (versions 4 et 5) qui contient tous les paramètres recommandés pour les performances. Parmi celles-ci, les plus critiques en termes de performances sont les suivantes :
 
 * **Contrôle d’intégrité du serveur principal** interroge la variable [!DNL Commerce] afin de déterminer s’il répond en temps opportun.
 * **Mode de grâce** vous permet d’indiquer à [!DNL Varnish] pour conserver un objet en cache au-delà de sa période de temps d’activation (TTL) et diffuser ce contenu obsolète si [!DNL Commerce] n’est pas sain ou si du contenu neuf n’a pas encore été récupéré.
-* **Mode Saint** listes bloquées malsaines [!DNL Commerce] pendant une durée configurable. Par conséquent, les arrière-plans malsains ne peuvent pas traiter le trafic lors de l’utilisation de [!DNL Varnish] comme équilibreur de charge.
+* **Mode Saint** blacklister les listes malsaines [!DNL Commerce] pendant une durée configurable. Par conséquent, les arrière-plans malsains ne peuvent pas traiter le trafic lors de l’utilisation de [!DNL Varnish] comme équilibreur de charge.
 
 Voir [Avancé [!DNL Varnish] configuration](../configuration/cache/config-varnish-advanced.md) pour plus d’informations sur l’implémentation de ces fonctionnalités.
 
@@ -219,11 +219,11 @@ Voir [Avancé [!DNL Varnish] configuration](../configuration/cache/config-varnis
 
 En général, nous vous recommandons de stocker vos ressources (images, JS, CSS, etc.) sur un réseau de diffusion de contenu pour des performances optimales.
 
-Si votre site ne nécessite pas de déploiement d’un grand nombre de paramètres régionaux et que vos serveurs se trouvent dans la même région que la majorité de vos clients, vous pouvez obtenir des gains de performances significatifs à moindre coût en stockant vos ressources dans [!DNL Varnish] au lieu d’utiliser un réseau de diffusion de contenu.
+Si votre site ne nécessite pas de déploiement d’un grand nombre de paramètres régionaux et que vos serveurs se trouvent dans la même région que la majorité de vos clients, vous pouvez obtenir des gains de performances significatifs à moindre coût en stockant vos ressources dans [!DNL Varnish] au lieu d’utiliser un CDN.
 
 Pour stocker vos ressources dans [!DNL Varnish], ajoutez les entrées VCL suivantes dans votre `default.vcl` fichier généré par [!DNL Commerce] pour [!DNL Varnish] 5.
 
-À la fin de la variable `if` instruction des requêtes PURGE dans la variable `vcl_recv` sous-routine, ajoutez :
+À la fin du `if` instruction des requêtes PURGE dans la variable `vcl_recv` sous-routine, ajoutez :
 
 ```javascript
 # static files are cacheable. remove SSL flag and cookie
@@ -258,7 +258,7 @@ Redémarrez le [!DNL Varnish] pour vider les ressources mises en cache chaque fo
 
 Magento propose plusieurs options pour stocker vos données de cache et de session, notamment Redis, Memcache, filesystem et database. Certaines de ces options sont décrites ci-dessous.
 
-### Configuration de noeud web unique
+### Configuration d’un noeud web unique
 
 Si vous prévoyez de diffuser tout votre trafic avec un seul noeud web, il n’est pas logique de placer votre cache sur un serveur Redis distant. Utilisez plutôt le système de fichiers ou un serveur Redis local. Si vous souhaitez utiliser le système de fichiers, placez vos dossiers de cache sur un volume monté sur un système de fichiers RAM. Si vous souhaitez utiliser un serveur Redis local, nous vous recommandons vivement de configurer Redis afin qu’il utilise des sockets pour les connexions directes, plutôt que d’échanger des données via HTTP.
 

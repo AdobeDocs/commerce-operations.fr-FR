@@ -49,7 +49,7 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
 <!-- Asset not yet integrated
 - [Reindexing - the safe way](https://wiki.corp.adobe.com/x/oj4ykw)(wiki)
 -->
-- [Comment réindexer](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
+- [Réindexation](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
 - [Bonnes pratiques de configuration pour les &#x200B; indexeurs](indexer-configuration.md)
 - [Bonnes pratiques de configuration pour le traitement des commandes](order-processing-configuration.md)
 <!-- Asset not yet integrated from CTAG deck:

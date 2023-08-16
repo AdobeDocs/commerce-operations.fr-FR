@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # Paramètres de migration des données
 
-Le `Settings` migre les magasins, les sites web et la configuration du système, comme les paramètres d’expédition, de paiement et de taxe. Selon notre migration de données [order](overview.md#migration-order), vous devez d’abord migrer les paramètres.
+La variable `Settings` migre les magasins, les sites web et la configuration du système, comme les paramètres d’expédition, de paiement et de taxe. Selon notre migration de données [order](overview.md#migration-order), vous devez d’abord migrer les paramètres.
 
 Avant de commencer, procédez comme suit pour préparer :
 
 1. Connectez-vous au serveur d’applications en tant que [propriétaire du système de fichiers](../../../installation/prerequisites/file-system/overview.md).
 
-1. Changement de la variable `/bin` ou assurez-vous qu’il est ajouté à votre système. `PATH`.
+1. Changement de la `/bin` ou assurez-vous qu’il est ajouté à votre système. `PATH`.
 
 >[!NOTE]
 >
->Assurez-vous que Magento 2 est déployé dans `default` mode . Le mode Développeur peut entraîner des erreurs de validation dans l’outil de migration.
+>Vérifiez que Magento 2 est déployé dans `default` mode . Le mode Développeur peut entraîner des erreurs de validation dans l’outil de migration.
 
 
 Voir [premières étapes](overview.md#first-steps) pour plus d’informations.
@@ -37,18 +37,18 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 Où :
 
-* `[-r|--reset]` est un argument facultatif qui lance la migration à partir du début. Vous pouvez utiliser cet argument pour tester la migration.
+* `[-r|--reset]` est un argument facultatif qui lance la migration à partir du début. Vous pouvez utiliser cet argument pour tester la migration
 
 * `[-a|--auto]` est un argument facultatif qui empêche l’arrêt de la migration lorsqu’elle rencontre des erreurs de vérification d’intégrité.
 
-* `{<path to config.xml>}` est le chemin d’accès absolu au système de fichiers de l’outil de migration. [`config.xml`](../configure.md#configure-migration-in-vendor-folder) fichier; cet argument est obligatoire.
+* `{<path to config.xml>}` est le chemin d’accès absolu au système de fichiers du [`config.xml`](../configure.md#configure-migration-in-vendor-folder) ; cet argument est obligatoire.
 
 >[!NOTE]
 >
 >Cette commande ne migre pas tous les paramètres de configuration. Vérifiez tous les paramètres de l’administrateur Magento 2 avant de continuer.
 
 
-Le `Migration completed` s’affiche une fois les paramètres transférés.
+La variable `Migration completed` s’affiche une fois les paramètres transférés.
 
 ## Configuration des règles de migration personnalisées
 

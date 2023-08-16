@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe ne recommande pas d’utiliser SELinux ; si vous le souhaitez, vous pouvez l’utiliser pour une sécurité renforcée. Si vous utilisez SELinux, vous devez le configurer correctement, sinon Adobe Commerce et Magento Open Source peuvent fonctionner de manière imprévisible. Si vous choisissez d’utiliser SELinux, consultez une ressource telle que la variable [Wiki de CentOS](https://wiki.centos.org/HowTos/SELinux) pour configurer des règles permettant d’activer la communication.
+>Adobe ne recommande pas d’utiliser SELinux ; vous pouvez l’utiliser pour une sécurité renforcée si vous le souhaitez. Si vous utilisez SELinux, vous devez le configurer correctement, sinon Adobe Commerce et Magento Open Source peuvent fonctionner de manière imprévisible. Si vous choisissez d’utiliser SELinux, consultez une ressource telle que la variable [Wiki de CentOS](https://wiki.centos.org/HowTos/SELinux) pour configurer des règles pour activer la communication.
 
 ## Suggestion d’installation avec Apache
 
@@ -65,7 +65,7 @@ Pour permettre à Apache d’initier une connexion à un autre hôte avec SELinu
 
 ## Ouverture de ports dans votre pare-feu
 
-Selon vos exigences de sécurité, vous devrez peut-être ouvrir le port 80 et d’autres ports dans votre pare-feu. En raison de la nature sensible de la sécurité du réseau, Adobe vous recommande vivement de consulter votre service informatique avant de poursuivre. Voici quelques suggestions :
+Selon vos exigences de sécurité, vous devrez peut-être ouvrir le port 80 et d’autres ports dans votre pare-feu. En raison de la nature sensible de la sécurité du réseau, Adobe vous recommande vivement de consulter votre service informatique avant de poursuivre. Voici quelques suggestions de références :
 
 * Ubuntu : [Page de documentation Ubuntu](https://help.ubuntu.com/community/IptablesHowTo)
 * CentOS : [Procédures relatives à CentOS](https://wiki.centos.org/HowTos/Network/IPTables).

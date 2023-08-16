@@ -15,7 +15,7 @@ ht-degree: 0%
 La performance est un grand sujet. Lorsqu’un site est lent ou ne répond pas aux utilisateurs, la conversion est affectée. Nous vous recommandons de suivre les étapes suivantes afin d’optimiser les performances de votre Adobe Commerce sur la mise en oeuvre de l’infrastructure cloud :
 
 - Évaluer le problème
-- Mesure des performances
+- Mesurer les performances
 - Identifier une partie du système essentielle à l’amélioration des performances
 - Modification d’une partie du système pour supprimer le goulot d’étranglement
 - Mesure des performances après modification

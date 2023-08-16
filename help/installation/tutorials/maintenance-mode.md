@@ -1,32 +1,32 @@
 ---
-title: Activation ou désactivation du mode de maintenance
+title: Activer ou désactiver le mode de maintenance
 description: Suivez ces étapes pour personnaliser ce que voient les clients lorsque votre déploiement Adobe Commerce ou Magento Open Source est arrêté pour maintenance.
-source-git-commit: bc025217ed7bc2195c0a2d919139abe13d184259
+exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 0%
 
 ---
 
+# Activer ou désactiver le mode de maintenance
 
-# Activation ou désactivation du mode de maintenance
+Le guide suivant fait référence à une page de mode de maintenance standard. Si vous devez utiliser une page de maintenance personnalisée, voir [Création d’une page de maintenance personnalisée](../../upgrade/troubleshooting/maintenance-mode-options.md) rubrique.
 
-Le guide suivant fait référence à une page de mode de maintenance standard. Si vous devez utiliser une page de maintenance personnalisée, reportez-vous à la section [Création d’une page de maintenance personnalisée](../../upgrade/troubleshooting/maintenance-mode-options.md) rubrique.
-
-Utilisation d’Adobe Commerce et de Magento Open Source [mode de maintenance](../../configuration/bootstrap/application-modes.md#maintenance-mode) pour désactiver l’amorçage. La désactivation de l’amorçage s’avère utile lorsque vous maintenez, mettez à niveau ou reconfigurez votre site.
+Utilisation d’Adobe Commerce et de Magento Open Source [mode de maintenance](../../configuration/bootstrap/application-modes.md#maintenance-mode) pour désactiver le démarrage. La désactivation de l’amorçage s’avère utile lorsque vous maintenez, mettez à niveau ou reconfigurez votre site.
 
 L&#39;application détecte le mode de maintenance comme suit :
 
 * If `var/.maintenance.flag` n’existe pas, le mode de maintenance est désactivé et l’application fonctionne normalement.
 * Sinon, le mode de maintenance est activé, sauf si `var/.maintenance.ip` existe.
 
-   `var/.maintenance.ip` peut contenir une liste d’adresses IP. Si un point d’entrée est accessible en HTTP et que l’adresse IP du client correspond à l’une des entrées de cette liste, le mode de maintenance est désactivé.
+  `var/.maintenance.ip` peut contenir une liste d’adresses IP. Si un point d’entrée est accessible en HTTP et que l’adresse IP du client correspond à l’une des entrées de cette liste, le mode de maintenance est désactivé.
 
 ## Installation de l’application
 
 Avant d’utiliser cette commande pour activer ou désactiver le mode de maintenance, vous devez : [installation de l’application](../advanced.md).
 
-## Activation ou désactivation du mode de maintenance
+## Activer ou désactiver le mode de maintenance
 
 Utilisez la variable `magento maintenance` Commande de l’interface de ligne de commande pour activer ou désactiver le mode de maintenance.
 
@@ -44,13 +44,13 @@ bin/magento maintenance:disable [--ip=<ip address> ... --ip=<ip address>] | [ip=
 bin/magento maintenance:status
 ```
 
-Le `--ip=<ip address>` est une adresse IP qui permet d’exempter le mode de maintenance (par exemple, les développeurs effectuant la maintenance). Pour exempter plusieurs adresses IP dans la même commande, utilisez l’option plusieurs fois.
+La variable `--ip=<ip address>` est une adresse IP qui permet d’exempter le mode de maintenance (par exemple, les développeurs effectuant la maintenance). Pour exempter plusieurs adresses IP dans la même commande, utilisez l’option plusieurs fois.
 
 >[!NOTE]
 >
 >Utilisation `--ip=<ip address>` avec `magento maintenance:disable` enregistre la liste des adresses IP en vue d’une utilisation ultérieure. Pour effacer la liste des adresses IP exemptées, utilisez `magento maintenance:enable --ip=none` ou voir [Maintenir la liste des adresses IP exemptées](#maintain-the-list-of-exempt-ip-addresses).
 
-Le `bin/magento maintenance:status` affiche l’état du mode de maintenance.
+La variable `bin/magento maintenance:status` affiche l’état du mode de maintenance.
 
 Par exemple, pour activer le mode de maintenance sans dispenses d’adresses IP :
 
@@ -75,9 +75,9 @@ Pour conserver la liste des adresses IP exemptées, vous pouvez utiliser la vari
 bin/magento maintenance:allow-ips <ip address> .. <ip address> [--none]
 ```
 
-Le `<ip address> .. <ip address>` La syntaxe est une liste facultative d’adresses IP à exempter délimitée par des espaces.
+La variable `<ip address> .. <ip address>` La syntaxe est une liste facultative d’adresses IP à exempter délimitée par des espaces.
 
-Le `--none` efface la liste.
+La variable `--none` efface la liste.
 
 ## Configurations multi-magasin
 
@@ -103,7 +103,7 @@ Vous pouvez également l’ajouter à une règle de réécriture dans la variabl
 Pour utiliser la variable `skin` parameter:
 
 1. Vérifiez si la variable `.maintenance.flag` existe.
-1. Notez l’adresse de l’hôte, qui fait référence au `HTTP_HOST`ou toute autre variable telle que les variables ENV.
+1. Notez l’adresse hôte, qui fait référence au `HTTP_HOST`ou toute autre variable telle que les variables ENV.
 1. Vérifiez si la variable `skin` existe.
 1. Définissez le paramètre à l’aide des règles de réécriture ci-dessous.
 
@@ -125,4 +125,4 @@ Pour utiliser la variable `skin` parameter:
 
 >[!NOTE]
 >
->Le [nginx](../../configuration/multi-sites/ms-nginx.md) doit être ajouté pour les configurations multi-magasin.
+>La variable [nginx](../../configuration/multi-sites/ms-nginx.md) doit être ajouté pour les configurations multi-magasin.

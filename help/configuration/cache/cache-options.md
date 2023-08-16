@@ -24,6 +24,6 @@ En règle générale, l’application Commerce fonctionne avec tout cache princi
 
 - [Redis](config-redis.md)
 - [Base](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
-- Système de fichiers (par défaut) : Aucune configuration n’est nécessaire pour utiliser la mise en cache du système de fichiers.
+- Système de fichiers (par défaut) : aucune configuration n’est nécessaire pour utiliser la mise en cache du système de fichiers.
 
 [Varnish](config-varnish.md) ne nécessite pas de configuration d’un serveur principal de cache de bas niveau.

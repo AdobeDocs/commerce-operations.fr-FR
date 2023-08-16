@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Définir un masque (facultatif)
 
-Le groupe de serveurs web doit disposer d’autorisations d’écriture sur certains répertoires du système de fichiers ; toutefois, vous pouvez vouloir une sécurité renforcée, en particulier en production. Nous vous offrons la possibilité de restreindre davantage ces autorisations à l’aide d’une [umask](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
+Le groupe de serveurs web doit disposer d’autorisations d’écriture sur certains répertoires du système de fichiers. Cependant, il se peut que vous souhaitiez renforcer la sécurité, en particulier en production. Nous vous offrons la possibilité de restreindre davantage ces autorisations à l’aide d’une [umask](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
 
 Notre solution consiste à vous permettre de créer éventuellement un fichier nommé `magento_umask` dans le répertoire racine de votre application, qui limite les autorisations du groupe de serveurs web et de tous les autres utilisateurs.
 
@@ -28,8 +28,8 @@ Masque par défaut (sans `magento_umask` specified) est `002`, ce qui signifie :
 
 Il est courant d’utiliser une valeur de `022` dans le `magento_umask` , ce qui signifie :
 
-* 755 pour les répertoires : contrôle total pour l’utilisateur et tous les autres utilisateurs peuvent parcourir les répertoires.
-* 644 pour les fichiers : autorisations de lecture-écriture pour l’utilisateur et de lecture seule pour tous les autres utilisateurs.
+* 755 pour les répertoires : contrôle total pour l’utilisateur, et tout le monde peut parcourir les répertoires.
+* 644 pour les fichiers : autorisations de lecture-écriture pour l’utilisateur et lecture seule pour tous les autres utilisateurs.
 
 Pour définir `magento_umask`:
 
@@ -40,7 +40,7 @@ Pour définir `magento_umask`:
    cd <Application install directory>
    ```
 
-1. Utilisez la commande suivante pour créer un fichier nommé `magento_umask` et écrivez le `umask` à lui.
+1. Utilisez la commande suivante pour créer un fichier nommé `magento_umask` et écrivez la variable `umask` à lui.
 
    ```bash
    echo <desired umask number> > magento_umask

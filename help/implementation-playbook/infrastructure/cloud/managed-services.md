@@ -12,28 +12,28 @@ ht-degree: 0%
 
 # Services gérés
 
-Les services gérés d’Adobe Commerce sur l’infrastructure cloud sont sécurisés par défaut.
+Adobe Commerce sur les services gérés d’infrastructure cloud sont sécurisés par défaut.
 
 ![Diagramme présentant les services gérés Adobe Commerce](../../../assets/playbooks/managed-services.svg)
 
 ## Responsabilité partagée
 
-Les plans d’Adobe Commerce Pro reposent sur un modèle de sécurité de la responsabilité partagée. Dans ce modèle, les différentes parties ont des responsabilités différentes pour maintenir la sécurité du système. Cette approche offre à la fois une flexibilité et l’utilisation des meilleures technologies cloud de marque.
+Les plans d’Adobe Commerce Pro reposent sur un modèle de sécurité de la responsabilité partagée. Dans ce modèle, les différentes parties ont des responsabilités différentes pour maintenir la sécurité du système. Cette approche offre à la fois une certaine flexibilité et l’utilisation des meilleures technologies cloud de marque.
 
 ![Diagramme présentant le modèle de responsabilité partagée Adobe Commerce](../../../assets/playbooks/shared-responsibility.svg)
 
-### Adobe Managed Services
+### Adobe des responsabilités Managed Services
 
-Adobe Managed Services est responsable de la sécurité et de la disponibilité de l’environnement cloud Adobe Commerce Pro, du code de l’application Adobe Commerce Pro principal et des systèmes commerciaux internes. Cela inclut, sans s’y limiter :
+Adobe Managed Services est responsable de la sécurité et de la disponibilité de l’environnement cloud Adobe Commerce Pro, du code de l’application Adobe Commerce Pro principal et des systèmes de commerce interne. Cela inclut, sans s’y limiter :
 
-- Application de correctifs au niveau du serveur
+- Correction au niveau du serveur
 - Exploitation des services nécessaires pour la diffusion des forfaits Adobe Commerce Pro
 - Test de vulnérabilité
 - Journalisation et surveillance des événements de sécurité
 - Gestion des incidents
 - Surveillance opérationnelle
 - Prise en charge 24/7
-- Assurer que l’infrastructure client est disponible conformément aux contrats de niveau de service
+- Garantir que l’infrastructure client est disponible conformément aux contrats de niveau de service
 
 Adobe Managed Services est également responsable de la gestion des configurations de pare-feu de serveur (iptables) et des configurations de pare-feu de périmètre (groupes de sécurité). Adobe peut également publier des mises à jour de sécurité de l’application principale de manière périodique. Il est de la responsabilité des clients d&#39;appliquer ces correctifs. Ces zones sont toutes couvertes par la certification PCI d’Adobe Commerce sur le système d’infrastructure cloud.
 

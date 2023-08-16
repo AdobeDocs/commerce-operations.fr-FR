@@ -1,5 +1,5 @@
 ---
-title: Atelier de projet
+title: Ateliers de projet
 description: Découvrez les différents types d’ateliers de gestion courants pour les projets de commerce électronique.
 exl-id: 72e465a0-b965-46a7-b0d0-0ed8a59a4bab
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
@@ -69,7 +69,7 @@ Du côté de l’équipe, le chef de projet, l’architecte fonctionnel et l’a
 
 ## Conception
 
-Le design et les exigences vont de pair. Lors de la construction d&#39;un système d&#39;e-commerce, l&#39;un des premiers ateliers clés est l&#39;atelier de conception. La conception du site est importante lorsqu’il s’agit d’attirer des clients et d’augmenter le trafic du site.
+Le design et les exigences vont de pair. Lors de la construction d&#39;un système d&#39;e-commerce, l&#39;un des premiers ateliers clés est l&#39;atelier de conception. La conception du site est importante lorsqu’il s’agit d’attirer des clients et d’augmenter le trafic sur le site.
 
 Les participants de cet atelier côté client incluent le fournisseur numérique, le propriétaire du produit, le responsable créatif et les parties prenantes de niveau C. Les participants côté équipe sont les suivants : chef de projet, responsable fonctionnel et concepteurs.
 

@@ -20,7 +20,7 @@ Après la configuration, les bases de données maîtres sont configurées comme 
 
 - Base de données Commerce principale : 369 tables
 - Base de données des devis commerciaux : 11 tables
-- Base de données commerciale des ventes : 55 tables
+- Base de données des ventes de commerce : 55 tables
 
 Pour vérifier que vos bases de données partagées fonctionnent correctement, effectuez les tâches suivantes et vérifiez que les données sont ajoutées aux tables de base de données à l’aide d’un outil de base de données tel que [phpmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
@@ -31,4 +31,4 @@ Pour vérifier que vos bases de données partagées fonctionnent correctement, e
 
 >[!WARNING]
 >
->Vous devez sauvegarder manuellement les deux instances de base de données supplémentaires. Commerce sauvegarde uniquement l’instance de base de données principale. Le [`magento setup:backup --db`](../../installation/tutorials/backup.md) Les options Commande et Admin ne sauvegardent pas les tables additionnelles.
+>Vous devez sauvegarder manuellement les deux instances de base de données supplémentaires. Commerce sauvegarde uniquement l’instance de base de données principale. La variable [`magento setup:backup --db`](../../installation/tutorials/backup.md) Les options Commande et Admin ne sauvegardent pas les tables additionnelles.

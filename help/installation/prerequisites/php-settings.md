@@ -47,7 +47,7 @@ Adobe Commerce et Magento Open Source nécessitent l’installation d’un ensem
 
 Pour vérifier les extensions installées :
 
-1. Répertorier les modules installés.
+1. Liste des modules installés.
 
    ```bash
    php -m
@@ -66,7 +66,7 @@ Pour vérifier les extensions installées :
 >
 >Si vous utilisez PHP 7.4.20, définissez `pcre.jit=0` dans votre `php.ini` fichier . Cela contourne le PHP [bug](https://bugs.php.net/bug.php?id=81101) qui empêche le chargement de CSS.
 
-- Définissez le fuseau horaire système pour PHP ; dans le cas contraire, des erreurs telles que l’affichage suivant lors de l’installation et des opérations liées au temps telles que cron peuvent ne pas fonctionner :
+- Définissez le fuseau horaire du système pour PHP. Dans le cas contraire, des erreurs telles que l’affichage suivant lors de l’installation et des opérations liées à l’heure telles que cron risquent de ne pas fonctionner :
 
 ```terminal
 PHP Warning:  date(): It is not safe to rely on the system's timezone settings. [more messages follow]
@@ -117,7 +117,7 @@ php --ini | grep "Loaded Configuration File"
 
 >[!NOTE]
 >
->Si vous n’en avez qu’une `php.ini` effectuez les modifications dans ce fichier. Si vous avez deux `php.ini` fichiers, apportez les modifications dans *all* fichiers . Si vous ne le faites pas, les performances risquent d’être imprévisibles.
+>Si vous en avez un seul `php.ini` effectuez les modifications dans ce fichier. Si vous avez deux `php.ini` fichiers, apportez les modifications dans *all* fichiers . Si vous ne le faites pas, les performances risquent d’être imprévisibles.
 
 ### Recherche des paramètres de configuration OPcache
 
@@ -157,13 +157,13 @@ Pour définir les options PHP :
 
 1. Modifier la valeur de `memory_limit` à l’une des valeurs recommandées au début de cette section.
 
-   Par exemple :
+   Par exemple,
 
    ```conf
    memory_limit=2G
    ```
 
-1. Ajoutez ou mettez à jour le `realpath_cache` pour correspondre aux valeurs suivantes :
+1. Ajoutez ou mettez à jour la variable `realpath_cache` configuration pour correspondre aux valeurs suivantes :
 
    ```conf
    ;

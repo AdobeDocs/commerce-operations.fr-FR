@@ -25,14 +25,14 @@ Pour exécuter l’application Commerce, les actions suivantes sont implémenté
 
 1. Initialise le gestionnaire d’erreurs.
 1. Crée la variable [gestionnaire d’objets][object] et les services partagés de base qui sont utilisés partout et qui sont affectés par l’environnement. Les paramètres d’environnement sont correctement injectés dans ces objets.
-1. Affirme que le mode de maintenance est _not_ activée; sinon, s’arrête.
-1. Affirme que l’application Commerce est installée ; sinon, s’arrête.
+1. Affirme que le mode de maintenance est _not_ activée ; dans le cas contraire, s’arrête.
+1. Affirme que l’application Commerce est installée ; dans le cas contraire, s’arrête.
 1. Démarre l’application Commerce.
 
    Toute exception non interceptée au lancement de l’application est automatiquement retransmise à Commerce dans la variable `catchException()` que vous pouvez utiliser pour gérer l’exception. Celui-ci doit renvoyer : `true` ou `false`:
 
    - If `true`: Commerce a géré l’exception avec succès. Pas besoin de faire quoi que ce soit d&#39;autre.
-   - If `false`: (ou tout autre résultat vide) Commerce ne gérait pas l’exception. L’objet bootstrap exécute la sous-routine de gestion des exceptions par défaut.
+   - If `false`: (ou tout autre résultat vide) Commerce n’a pas géré l’exception. L’objet bootstrap exécute la sous-routine de gestion des exceptions par défaut.
 
 1. Envoie la réponse fournie par l’objet d’application.
 
@@ -63,7 +63,7 @@ L’objet bootstrap indique comment l’application Commerce gère les exception
 
 - Dans [mode développeur](../bootstrap/application-modes.md#developer-mode), affiche l’exception en l’état.
 - Dans tout autre mode, tente de consigner une exception et d’afficher un message d’erreur générique.
-- Interrompt le commerce avec le code d’erreur `1`
+- Arrête Commerce avec le code d’erreur `1`
 
 ## Applications de point d’entrée
 
@@ -93,7 +93,7 @@ Nous disposons des applications de point d’entrée suivantes (c’est-à-dire 
 
 >[!INFO]
 >
->Le point d’entrée des fichiers d’affichage statique n’est pas utilisé dans [mode de production](application-modes.md#production-mode) pour éviter les exploits potentiels sur le serveur. En mode de production, l’application Commerce s’attend à ce que toutes les ressources nécessaires existent dans la variable `<your Commerce install dir>/pub/static` répertoire .
+>Le point d’entrée des fichiers d’affichage statique n’est pas utilisé dans [mode de production](application-modes.md#production-mode) pour éviter les exploits potentiels sur le serveur. En mode de production, l’application Commerce attend que toutes les ressources nécessaires existent dans la variable `<your Commerce install dir>/pub/static` répertoire .
 
 En mode par défaut ou développeur, une requête pour une ressource statique inexistante est redirigée vers le point d’entrée statique conformément aux règles de réécriture spécifiées par la `.htaccess`.
 Lorsque la requête est redirigée vers le point d’entrée, l’application Commerce analyse l’URL demandée en fonction des paramètres récupérés et recherche la ressource demandée.
@@ -101,7 +101,7 @@ Lorsque la requête est redirigée vers le point d’entrée, l’application Co
 - Dans [développeur](application-modes.md#developer-mode) , le contenu du fichier est renvoyé de sorte que chaque fois que la ressource est demandée, le contenu renvoyé est à jour.
 - Dans [default](application-modes.md#default-mode) , la ressource récupérée est publiée afin d’être accessible par l’URL précédemment demandée.
 
-   Toutes les futures demandes de ressources statiques sont traitées par le serveur de la même manière que les fichiers statiques ; c’est-à-dire sans impliquer le point d’entrée. S’il est nécessaire de synchroniser les fichiers publiés avec les fichiers d’origine, la variable `pub/static` Le répertoire doit être supprimé ; par conséquent, les fichiers sont automatiquement republiés avec la requête suivante.
+  Toutes les futures demandes de la ressource statique sont traitées par le serveur de la même manière que les fichiers statiques, c’est-à-dire sans impliquer le point d’entrée. S’il est nécessaire de synchroniser les fichiers publiés avec les fichiers d’origine, la variable `pub/static` doit être supprimé. Par conséquent, les fichiers sont automatiquement republiés avec la requête suivante.
 
 ### Point d’entrée de la ressource multimédia
 

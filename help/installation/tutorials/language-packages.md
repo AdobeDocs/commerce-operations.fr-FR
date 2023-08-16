@@ -1,13 +1,13 @@
 ---
 title: Désinstallation des packages de langue
 description: Pour désinstaller un package de langue Adobe Commerce ou Magento Open Source, procédez comme suit.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 9901aa0b-af1a-4ae9-968f-ac8421060f57
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
 
 ---
-
 
 # Désinstallation des packages de langue
 
@@ -25,7 +25,7 @@ bin/magento i18n:uninstall [-b|--backup-code] {language package name} ... {langu
 
 La commande de désinstallation du module de langue effectue les tâches suivantes :
 
-1. Vérifications des dépendances ; si tel est le cas, la commande s’arrête.
+1. Vérifie les dépendances ; si tel est le cas, la commande s’arrête.
 
    Pour contourner ce problème, vous pouvez soit désinstaller tous les modules de langue dépendants en même temps, soit désinstaller les modules de langue dépendants en premier.
 

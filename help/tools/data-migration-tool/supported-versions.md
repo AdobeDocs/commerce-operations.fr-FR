@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # Versions prises en charge pour la migration des données
 
-Le [!DNL Data Migration Tool] prend en charge la migration _de_ les versions suivantes :
+La variable [!DNL Data Migration Tool] prend en charge la migration _de_ les versions suivantes :
 
-* Adobe Commerce :
+* ADOBE COMMERCE :
    * 1.11.x
    * 1.12.x
    * 1.13.x
    * 1.14.x
-* Magento Open Source :
+* MAGENTO OPEN SOURCE :
    * 1.6.x
    * 1.7.x
    * 1.8.x
@@ -34,4 +34,4 @@ Si vous migrez de Magento Open Source vers Adobe Commerce, les versions suivante
 
 ## Migration vers la version
 
-Pour en savoir plus sur les versions prises en charge (celle vers laquelle vous migrez), voir [!DNL Data Migration Tool]&#39;s [Page de publication](https://github.com/magento/data-migration-tool/releases).
+Pour en savoir plus sur les versions prises en charge (celle vers laquelle vous migrez), voir [!DNL Data Migration Tool]&#39;s [Page de mise à jour](https://github.com/magento/data-migration-tool/releases).

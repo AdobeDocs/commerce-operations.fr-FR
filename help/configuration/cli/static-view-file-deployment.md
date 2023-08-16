@@ -1,13 +1,13 @@
 ---
 title: Déploiement de fichiers d’affichage statique
 description: Découvrez comment écrire des fichiers statiques dans le système de fichiers Commerce en mode de production.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 51954738-b999-4982-954b-70f7a70c5a17
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 0%
 
 ---
-
 
 # Déploiement de fichiers d’affichage statique
 
@@ -18,25 +18,25 @@ La commande de déploiement des fichiers d’affichage statique vous permet d’
 Le terme _fichier d’affichage statique_ fait référence à ce qui suit :
 
 - &quot;Statique&quot; signifie qu’il peut être mis en cache pour un site (c’est-à-dire que le fichier n’est pas généré dynamiquement). Par exemple, les images et les CSS générés à partir de LESS.
-- &quot;Vue&quot; fait référence à la couche de présentation (à partir de MVC).
+- &quot;Vue&quot; fait référence à la couche de présentation (mode MVC).
 
 Les fichiers d’affichage statique se trouvent dans la variable `<magento_root>/pub/static` et certains sont mis en cache dans le `<magento_root>/var/view_preprocessed` également.
 
 Le déploiement des fichiers d’affichage statique est affecté par les modes d’application comme suit :
 
-- [Par défaut](../bootstrap/application-modes.md#default-mode) et [développeur](../bootstrap/application-modes.md#developer-mode) modes : Le commerce les génère à la demande, mais les autres sont mis en cache dans un fichier pour accélérer l’accès.
-- [Production](../bootstrap/application-modes.md#production-mode) mode : Les fichiers statiques sont _not_ généré ou mis en cache.
+- [Par défaut](../bootstrap/application-modes.md#default-mode) et [développeur](../bootstrap/application-modes.md#developer-mode) modes : le commerce les génère à la demande, mais les autres sont mis en cache dans un fichier pour accélérer l’accès.
+- [Production](../bootstrap/application-modes.md#production-mode) mode : les fichiers statiques sont _not_ généré ou mis en cache.
 
-Vous devez écrire manuellement des fichiers d’affichage statiques dans le système de fichiers Commerce à l’aide de la commande présentée dans cette rubrique ; après cela, vous pouvez limiter les autorisations afin de limiter vos vulnérabilités et d’éviter l’écrasement accidentel ou malveillant de fichiers.
+Vous devez écrire manuellement des fichiers d’affichage statique dans le système de fichiers Commerce à l’aide de la commande décrite dans cette rubrique. Ensuite, vous pouvez restreindre les autorisations afin de limiter vos vulnérabilités et d’empêcher le remplacement accidentel ou malveillant de fichiers.
 
 >[!WARNING]
 >
->_Mode Développeur uniquement_: Lorsque vous installez ou activez un nouveau module, il peut charger du nouveau code JavaScript, CSS, mises en page, etc. Pour éviter des problèmes avec les fichiers statiques, vous devez nettoyer les anciens fichiers pour vous assurer d’obtenir toutes les modifications pour le nouveau module. Vous pouvez nettoyer les fichiers d’affichage statique générés de plusieurs façons. Voir [Rubrique Nettoyage du cache des fichiers statiques pour plus de détails](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) pour plus d’informations.
+>_Mode Développeur uniquement_: lorsque vous installez ou activez un nouveau module, il se peut qu’il charge du nouveau code JavaScript, CSS, mises en page, etc. Pour éviter des problèmes avec les fichiers statiques, vous devez nettoyer les anciens fichiers pour vous assurer d’obtenir toutes les modifications pour le nouveau module. Vous pouvez nettoyer les fichiers d’affichage statique générés de plusieurs façons. Voir [Rubrique Nettoyage du cache des fichiers statiques pour plus de détails](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) pour plus d’informations.
 
 **Pour déployer des fichiers d’affichage statique**:
 
 1. Connectez-vous au serveur Commerce en tant que ou [passer au propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
-1. Supprimer le contenu de `<magento_root>/pub/static`, à l’exception de la fonction `.htaccess` fichier . Ne supprimez pas ce fichier.
+1. Supprimer le contenu de `<magento_root>/pub/static`, à l’exception de `.htaccess` fichier . Ne supprimez pas ce fichier.
 1. Exécution de l’outil de déploiement des fichiers d’affichage statique `<magento_root>/bin/magento setup:static-content:deploy`.
 
    >[!INFO]
@@ -53,12 +53,12 @@ Le tableau suivant explique les paramètres et les valeurs de cette commande.
 
 | Option | Description | Obligatoire ? |
 | ------ | ----------- | --------- |
-| `<languages>` | Liste séparée par des espaces de [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) codes de langue pour lesquels générer des fichiers d’affichage statique. (La valeur par défaut est `en_US`.)<br>Recherchez la liste en exécutant : `bin/magento info:language:list` | Non |
-| `--language (-l)` | Générez des fichiers uniquement pour les langues spécifiées. La valeur par défaut, sans option spécifiée, est de générer des fichiers pour tous les codes de langue ISO-639. Vous pouvez spécifier le nom d’un code de langue à la fois. La valeur par défaut est **all**.<br>Par exemple : `--language en_US --language es_ES` | Non |
+| `<languages>` | Liste séparée par des espaces de [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) codes de langue pour lesquels générer des fichiers d’affichage statique. (Par défaut : `en_US`.)<br>Recherchez la liste en exécutant : `bin/magento info:language:list` | Non |
+| `--language (-l)` | Générez des fichiers uniquement pour les langues spécifiées. La valeur par défaut, sans option spécifiée, est de générer des fichiers pour tous les codes de langue ISO-639. Vous pouvez spécifier le nom d’un code de langue à la fois. La valeur par défaut est **all**.<br>Par exemple: `--language en_US --language es_ES` | Non |
 | `--exclude-language` | Générez des fichiers pour les codes de langue spécifiés. La valeur par défaut, sans option spécifiée, est de n’exclure rien. Vous pouvez spécifier le nom d’un code de langue ou d’une liste de codes de langue séparés par des virgules. La valeur par défaut est **none**. | Non |
-| `--theme <theme>` | Thèmes pour lesquels déployer du contenu statique. La valeur par défaut est **all**.<br>Par exemple : `--theme Magento/blank --theme Magento/luma` | Non |
-| `--exclude-theme <theme>` | Thèmes à exclure lors du déploiement de contenu statique. La valeur par défaut est **none**.<br>Par exemple : `--exclude-theme Magento/blank` | Non |
-| `--area (-a)` | Générez des fichiers uniquement pour les zones spécifiées. La valeur par défaut, sans option spécifiée, est de générer des fichiers pour toutes les zones. Les valeurs valides sont `adminhtml` et `frontend`. La valeur par défaut est **all**.<br>Par exemple : `--area adminhtml` | Non |
+| `--theme <theme>` | Thèmes pour lesquels déployer du contenu statique. La valeur par défaut est **all**.<br>Par exemple: `--theme Magento/blank --theme Magento/luma` | Non |
+| `--exclude-theme <theme>` | Thèmes à exclure lors du déploiement de contenu statique. La valeur par défaut est **none**.<br>Par exemple, `--exclude-theme Magento/blank` | Non |
+| `--area (-a)` | Générez des fichiers uniquement pour les zones spécifiées. La valeur par défaut, sans option spécifiée, est de générer des fichiers pour toutes les zones. Les valeurs valides sont `adminhtml` et `frontend`. La valeur par défaut est **all**.<br>Par exemple: `--area adminhtml` | Non |
 | `--exclude-area` | Ne générez pas de fichiers pour les zones spécifiées. La valeur par défaut, sans option spécifiée, est de n’exclure rien. La valeur par défaut est **none**. | Non |
 | `--jobs (-j)` | Activez le traitement parallèle à l’aide du nombre spécifié de tâches. La valeur par défaut est 0 (ne pas exécuter dans les processus parallèles). La valeur par défaut est **0**. | Non |
 | `--symlink-locale` | Créez des liens symboliques pour les fichiers de ces paramètres régionaux, qui sont transmis pour le déploiement, mais sans personnalisation. | Non |
@@ -77,7 +77,7 @@ Le tableau suivant explique les paramètres et les valeurs de cette commande.
 
 >[!INFO]
 >
->Si vous spécifiez des valeurs pour les deux `<languages>` et `--language`, `<languages>` est prioritaire.
+>Si vous spécifiez des valeurs pour les deux `<languages>` et `--language`, `<languages>` a la priorité .
 
 ## Exemples
 
@@ -152,15 +152,15 @@ Vous pouvez exécuter le processus de déploiement dans un environnement distinc
 
 Pour ce faire, procédez comme suit :
 
-1. Exécuter [`bin/magento app:config:dump`](../cli/export-configuration.md) pour exporter la configuration à partir de votre système de production.
+1. Exécuter [`bin/magento app:config:dump`](../cli/export-configuration.md) pour exporter la configuration de votre système de production.
 1. Copiez les fichiers exportés vers la base de code hors production.
 1. Déployer des fichiers d’affichage statique : `bin/magento setup:static-content:deploy`
 
 ## Dépannage de l’outil de déploiement des fichiers d’affichage statique
 
-[Installez d’abord le logiciel Commerce.](../../installation/overview.md); sinon, vous ne pouvez pas exécuter l’outil de déploiement des fichiers d’affichage statique.
+[Installez d’abord le logiciel Commerce.](../../installation/overview.md); dans le cas contraire, vous ne pouvez pas exécuter l’outil de déploiement des fichiers d’affichage statique.
 
-**Symptôme**: L’erreur suivante s’affiche lorsque vous exécutez l’outil de déploiement des fichiers d’affichage statique :
+**Symptôme**: l’erreur suivante s’affiche lorsque vous exécutez l’outil de déploiement des fichiers d’affichage statique :
 
 ```terminal
 ERROR: You need to install the Commerce application before running this utility.
@@ -172,7 +172,7 @@ Procédez comme suit :
 
 1. Installez le logiciel Commerce à l’aide de la méthode [ligne de commande](../../installation/composer.md).
 1. Connectez-vous au serveur d’applications en tant que ou [passer à](../../installation/prerequisites/file-system/overview.md), propriétaire du système de fichiers.
-1. Supprimer le contenu de `<app_root>/pub/static` , à l’exception du répertoire `.htaccess` fichier . Ne supprimez pas ce fichier.
+1. Supprimer le contenu de `<app_root>/pub/static` , à l’exception de `.htaccess` fichier . Ne supprimez pas ce fichier.
 1. Déployer des fichiers d’affichage statique : `bin/magento setup:static-content:deploy`
 
 ## Conseil à l’intention des développeurs sur la personnalisation de l’outil de déploiement de contenu statique

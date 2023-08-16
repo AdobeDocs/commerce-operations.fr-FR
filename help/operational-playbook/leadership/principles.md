@@ -16,11 +16,11 @@ Nous vous recommandons de suivre certains principes de leadership fondamentaux l
 ## Parrainage
 
 ![Coeur pliant les mains](../../assets/playbooks/sponsorship.png)
-Le fait d’avoir un sponsor en charge de l’exécution efficace aide le projet à atteindre son maximum de succès. Pour être vraiment efficace, ce parrain exécutif interne doit avoir suffisamment d&#39;ancienneté et d&#39;influence au sein de l&#39;entreprise pour avoir l&#39;accord d&#39;autres parties prenantes à l&#39;échelle de l&#39;organisation. Ils devraient aussi avoir un haut niveau d’intérêt personnel pour le succès de la boutique en ligne et une passion pour la transformation numérique et le commerce électronique ; Il est également essentiel de croire à la manière dont Adobe Commerce va transformer l’entreprise.
+Le fait d’avoir un sponsor en charge de l’exécution efficace aide le projet à atteindre son maximum de succès. Pour être vraiment efficace, ce parrain exécutif interne doit avoir suffisamment d&#39;ancienneté et d&#39;influence au sein de l&#39;entreprise pour avoir l&#39;accord d&#39;autres parties prenantes à l&#39;échelle de l&#39;organisation. Ils devraient aussi avoir un haut niveau d’intérêt personnel pour le succès de la boutique en ligne et une passion pour la transformation numérique et le commerce électronique ; croire sincèrement à la manière dont Adobe Commerce va transformer l’entreprise est également essentiel.
 
-Un sponsor exécutif efficace doit garantir que la gestion, la feuille de route et la croissance continue de la plateforme du commerce électronique restent conformes à la stratégie de l&#39;entreprise ; la protéger des initiatives conflictuelles ou de la politique intérieure et aider à résoudre tout facteur limitatif, comme la pénurie de ressources, de compétences ou les contraintes budgétaires.
+Un sponsor exécutif efficace doit garantir que la gestion, la feuille de route et la croissance continue de la plate-forme du commerce électronique restent en phase avec la stratégie de l&#39;entreprise ; la protéger contre les initiatives conflictuelles ou les politiques internes et aider à résoudre tous les facteurs limitatifs, tels que la pénurie de ressources, de compétences ou les contraintes budgétaires.
 
-## Buy-in
+## Acheter
 
 ![Billet sortant de la machine](../../assets/playbooks/buyin.png)
 Il est également essentiel d’obtenir l’accord de la direction dans l’ensemble de votre équipe de direction. Avoir plusieurs agents de changement pour stimuler la croissance vous aide à stimuler la croissance plus facilement et plus rapidement. La responsabilité de la gestion réussie d’Adobe Commerce doit être partagée par l’ensemble de l’équipe dirigeante. Il incombe alors au responsable exécutif de gagner l’équipe exécutive en partageant des exemples qui prouvent la valeur d’Adobe Commerce dans son ensemble. En règle générale, il s’agit de proposer une meilleure expérience client et des avantages ultérieurs à l’entreprise.
@@ -37,7 +37,7 @@ La direction d’un projet consiste à diriger une équipe vers l’atteinte d�
 ![Figure entourée d&#39;étoiles](../../assets/playbooks/c-level.png)
 Les cadres de niveau C jouent un rôle stratégique au sein d&#39;une organisation. Elles occupent des postes de direction et influencent les décisions à l’échelle de l’entreprise. C signifie &quot;Chef&quot;, de sorte qu&#39;un cadre de niveau C est souvent responsable de l&#39;ensemble d&#39;un département ou d&#39;une unité opérationnelle, comme les Finances, l&#39;informatique ou les Ventes. Comme ces personnes sont des parties prenantes importantes au sein de l’organisation, il est important de s’assurer qu’elles connaissent les avantages que le projet d’e-commerce apporte à l’organisation.
 
-Plus précisément, il peut s&#39;avérer utile d&#39;identifier les avantages spécifiques que le projet apporte à leur ministère, car cela peut être un facteur important de motivation. L’association de mesures tangibles à la livraison réussie du projet peut motiver et transformer vos parties prenantes de niveau C pour devenir de principaux soutiens du projet de transformation numérique.
+Plus précisément, il peut s&#39;avérer utile d&#39;identifier les avantages spécifiques que le projet apporte à leur ministère, car cela peut être un facteur important de motivation. L’association de mesures tangibles à la livraison réussie du projet peut motiver et transformer vos parties prenantes de niveau C pour devenir des soutiens actifs du projet de transformation numérique.
 
 Dans les petites organisations, les cadres de direction ont tendance à être fortement impliqués, ou du moins très proches du projet de transformation. Toutefois, à mesure que nous commençons à examiner les grands commerçants, il est naturel que la participation des cadres supérieurs diminue à mesure que la taille de l’entreprise augmente. Par conséquent, il est essentiel de maintenir ces parties prenantes impliquées et informées tout au long du projet pour s’assurer que l’adhésion et le soutien restent intacts.
 
@@ -64,7 +64,7 @@ Responsable des résultats du projet et responsable de l&#39;obtention de l&#39;
 - Vocal et champion visible
 - Légitime et donne de la crédibilité aux objectifs et aux objectifs stratégiques
 - est le point d’escalade des changements et des questions en dehors des tolérances convenues ;
-- Aide les parties prenantes à s’engager, le cas échéant
+- Aide les parties prenantes à s’engager si nécessaire
 
 #### Professionnels
 
@@ -81,7 +81,7 @@ Responsable de s’assurer que le projet est axé sur la réalisation de ses obj
 
 Représente les intérêts de tous ceux qui utilisent le produit (y compris les opérations et la maintenance), ceux pour qui le produit atteint un objectif, ou ceux qui utilisent le produit pour offrir les avantages et les facteurs de valeur.
 
-- Fournit les attentes en matière de qualité et définit les critères d’acceptation
+- Fournit les attentes de qualité et définit les critères d’acceptation
 - Vérifie que le résultat souhaité est spécifié
 - Garantit que les produits produisent les résultats souhaités et répondent aux besoins des utilisateurs
 - Garantit la réalisation des avantages attendus
@@ -99,7 +99,7 @@ Représente les intérêts de ceux qui conçoivent, développent, facilitent, ac
 
 #### Responsable du numérique
 
-Couvre les intérêts Principaux des parties prenantes de l&#39;entreprise, des techniques, des utilisateurs finaux et des fournisseurs.
+Couvre les intérêts principaux des parties prenantes de l’entreprise, des techniques, des utilisateurs finaux et des fournisseurs.
 
 - Garantit que les bonnes personnes sont impliquées dans l’inspection de la qualité aux bons moments dans le développement du produit.
 - Garantit que le personnel est correctement formé aux méthodes de qualité
@@ -115,14 +115,14 @@ Responsabilités d’assurance commerciale :
 
 - Aide à l’élaboration du plan de révision des analyses de cas et des avantages
 - Examiner l’analyse de performances pour la conformité aux normes de l’entreprise
-- Vérifie l’analyse de cas par rapport aux événements externes
+- Vérifie l’affaire commerciale contre les événements externes
 - Vérifie que l’analyse de performances est respectée tout au long du projet
 - Vérifie que le projet reste aligné sur la stratégie de l’entreprise et continue de fournir un bon rapport qualité-prix aux responsabilités d’assurance de l’utilisateur
 - Garantit que la spécification des besoins des utilisateurs est exacte, complète et sans ambiguïté
 - évalue si la solution répond aux besoins des utilisateurs et progresse vers cette cible ;
-- Conseils sur l’impact des changements potentiels du point de vue des utilisateurs
+- Conseille sur l’impact des changements potentiels du point de vue des utilisateurs
 - Garantit que les activités de qualité relatives aux produits à toutes les étapes disposent d’une représentation utilisateur appropriée
-- Veille à ce que les procédures de contrôle qualité soient utilisées correctement pour s’assurer que les produits répondent aux exigences de l’utilisateur.
+- Veille à ce que les procédures de contrôle qualité soient utilisées correctement pour s’assurer que les produits répondent aux exigences de l’utilisateur
 
 Responsabilités d’assurance du fournisseur :
 

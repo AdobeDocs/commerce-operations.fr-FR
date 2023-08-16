@@ -1,13 +1,13 @@
 ---
 title: Versions bêta
 description: Découvrez les versions bêta d’Adobe Commerce et comment y participer.
-source-git-commit: 1ce0ff87291c5c3f0fd130aa351bc975f42501e3
+exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
 
 ---
-
 
 # Versions bêta d’Adobe Commerce
 
@@ -47,7 +47,7 @@ Bien que les choses puissent changer, l’utilisation des versions bêta vous pe
 
 ## Accès aux versions bêta
 
-Les versions bêta d’Adobe Commerce sont distribuées de la même manière que toute autre version de correctif Adobe Commerce : comme métaphores du compositeur sur `https://repo.magento.com`. Le code source est disponible sur [GitHub](https://github.com/magento/magento2).
+Les versions bêta d’Adobe Commerce sont distribuées de la même manière que toute autre version de correctif d’Adobe Commerce : sous la forme de métaphores du compositeur sur `https://repo.magento.com`. Le code source est disponible sur [GitHub](https://github.com/magento/magento2).
 
 Voir [Démarrage rapide de l’installation du compositeur](../installation/composer.md) pour plus d’informations.
 
@@ -55,6 +55,6 @@ Voir [Démarrage rapide de l’installation du compositeur](../installation/comp
 
 Adobe ne fournit pas le service d’assistance Adobe standard pour les versions bêta.
 
-Pour envoyer des commentaires relatifs aux versions bêta, suivez notre [flux de rapports de problèmes standard](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) on [GitHub](https://github.com/magento/magento2).
+Pour envoyer des commentaires relatifs aux versions bêta, suivez notre [flux de création de rapports de problèmes standard](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) on [GitHub](https://github.com/magento/magento2).
 
 Nos équipes internes surveilleront tous les problèmes critiques signalés par rapport à la dernière version bêta et prioriseront leur résolution avant la date de publication de la version GA.

@@ -20,9 +20,9 @@ Cette tâche nécessite de créer une catégorie racine (et d’autres catégori
 
 >[!INFO]
 >
->Par exemple, nous utilisons un site web français avec le code du site web. `french` dans cette rubrique. Pour des tutoriels détaillés, voir [Tutoriel : Configuration de plusieurs sites web avec Apache](ms-apache.md) et [Tutoriel : Configuration de plusieurs sites web avec nginx](ms-nginx.md)
+>Par exemple, nous utilisons un site web français avec le code du site web. `french` dans cette rubrique. Pour des tutoriels détaillés, voir [Tutoriel : configuration de plusieurs sites web avec Apache](ms-apache.md) et [Tutoriel : configuration de plusieurs sites web avec nginx](ms-nginx.md)
 
-## Étape 1 : Création de catégories racine
+## Étape 1 : création de catégories racine
 
 La création d’une catégorie racine est facultative, mais nous vous montrons comment le faire dans ce tutoriel lorsque vous souhaitez que chaque site web ait une catégorie racine unique. Vous pouvez créer d’autres catégories si vous le souhaitez.
 
@@ -43,7 +43,7 @@ Pour créer une catégorie racine :
 1. Cliquez sur **Enregistrer**.
 1. Répétez ces tâches autant de fois que nécessaire pour créer des catégories racine pour vos magasins.
 
-## Étape 2 : Créer des sites web
+## Étape 2 : créer des sites web
 
 Pour créer un site web :
 
@@ -62,7 +62,7 @@ Pour créer un site web :
 1. Cliquez sur **Enregistrer le site Web**.
 1. Répétez ces tâches autant de fois que nécessaire pour créer vos sites web.
 
-## Étape 3 : Créer des magasins
+## Étape 3 : création de magasins
 
 Pour créer un magasin :
 
@@ -81,7 +81,7 @@ Pour créer un magasin :
 1. Cliquez sur **Enregistrer la boutique**.
 1. Répétez ces tâches autant de fois que nécessaire pour créer vos magasins.
 
-## Étape 4 : Créer des vues de magasin
+## Étape 4 : création de vues de magasin
 
 Pour créer une vue de magasin :
 
@@ -100,7 +100,7 @@ Pour créer une vue de magasin :
 1. Cliquez sur **Enregistrer la vue de magasin**.
 1. Répétez ces tâches autant de fois que nécessaire pour créer vos vues de magasin.
 
-## Étape 5 : Modification de l’URL de base du site web
+## Étape 5 : modifier l’URL de base du site web
 
 Pour accéder à un site web à l’aide d’une URL unique, comme `http://french.magento.mg`, vous devez modifier l’URL de base de chaque site dans l’administrateur.
 
@@ -113,7 +113,7 @@ Pour modifier l’URL de base du site web :
 
 1. Dans le volet de droite, développez **URL de base**.
 1. Dans le _URL de base_ , effacer **Utiliser la valeur système**.
-1. Saisissez le `http://french.magento.mg` URL dans le **URL de base** et **URL du lien de base** champs.
+1. Saisissez le `http://french.magento.mg` URL dans le **URL de base** et **URL du lien de base** des champs.
 
 1. Répétez l’étape précédente dans le _URL de base (sécurisées)_ .
 
@@ -125,7 +125,7 @@ Pour modifier l’URL de base du site web :
 
 1. Répétez ces tâches pour d’autres sites web.
 
-## Étape 6 : Ajouter le code de magasin à l’URL de base
+## Étape 6 : Ajout du code de magasin à l’URL de base
 
 Commerce vous offre la possibilité d’ajouter le code de magasin à l’URL de base du site, ce qui simplifie le processus de configuration de plusieurs magasins. Avec cette option, il n’est pas nécessaire de créer des répertoires sur le système de fichiers Commerce à stocker. `index.php` et `.htaccess`.
 
@@ -144,14 +144,14 @@ Pour ajouter le code de magasin à l’URL de base :
 1. Effacez la variable **Utiliser la valeur système** en regard de _Ajout de code de magasin aux URL_.
 1. Dans la _Ajout de code de magasin aux URL_ liste, cliquez sur **Oui**.
 
-   ![Ajoutez le code de magasin à l’URL de base du magasin.](../../assets/configuration/multi-site-add-store-url.png)
+   ![Ajouter le code de magasin à l’URL de base du magasin](../../assets/configuration/multi-site-add-store-url.png)
 
 1. Cliquez sur **Enregistrer la configuration**.
 1. Si vous y êtes invité, videz le cache. (**Système** > **Gestion du cache**).
 
-## Étape 7 : Modification de l’URL de base de la vue de magasin par défaut
+## Étape 7 : modification de l’URL de base de la vue de magasin par défaut
 
-Vous devez effectuer cette étape en dernier, car vous ne pourrez plus accéder à l’administrateur. votre accès renvoie une fois que vous avez configuré les hôtes virtuels comme décrit dans les rubriques spécifiques au serveur web.
+Vous devez effectuer cette étape en dernier lieu, car vous perdrez l’accès à l’administrateur ; votre accès est renvoyé une fois que vous avez configuré les hôtes virtuels comme expliqué dans les rubriques spécifiques au serveur web.
 
 Pour modifier l’URL de base de la vue de magasin par défaut :
 
@@ -163,7 +163,7 @@ Pour modifier l’URL de base de la vue de magasin par défaut :
 
 1. Dans le volet de droite, développez **URL de base**.
 1. Dans le _URL de base_ , effacer **Utiliser la valeur système**.
-1. Saisissez le `http://magento.mg` URL dans le **URL de base** et **URL du lien de base** champs.
+1. Saisissez le `http://magento.mg` URL dans le **URL de base** et **URL du lien de base** des champs.
 
 1. Répétez l’étape précédente dans le **URL de base (sécurisées)** .
 

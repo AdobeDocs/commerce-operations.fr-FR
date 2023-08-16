@@ -1,5 +1,5 @@
 ---
-title: Manuel de mise en oeuvre
+title: Manuel d’implémentation
 description: Objectif du manuel de mise en oeuvre de Commerce
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
 feature: Best Practices, Cloud, Integration

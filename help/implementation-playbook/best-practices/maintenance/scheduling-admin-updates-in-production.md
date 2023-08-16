@@ -32,6 +32,6 @@ Les actions critiques entraînent l’invalidation du cache et la réindexation,
 ## Informations supplémentaires
 
 - [Bonnes pratiques relatives à la mise en cache](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
-- [Contenu privé : Invalider le contenu privé](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
-- [Recommandations matérielles : Caches](../../../performance/hardware.md#caches)
-- [Configuration avancée : Configuration de Redis](../../../performance/advanced-setup.md#set-up-redis)
+- [Contenu privé : invalidation de contenu privé](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
+- [Recommandations matérielles : mises en cache](../../../performance/hardware.md#caches)
+- [Configuration avancée : configuration de Redis](../../../performance/advanced-setup.md#set-up-redis)

@@ -14,7 +14,7 @@ ht-degree: 0%
             Extensions par défaut
         </th>
         <th>
-            Extensions installées qui ne peuvent pas être désinstallées
+            Extensions installées non désinstallées
         </th>
         <th>
             Extensions qui peuvent être installées et désinstallées si nécessaire
@@ -93,8 +93,8 @@ ht-degree: 0%
                 ssh2<br>
                 tidy<br>
                 xdebug<br>
-                xmlrpc<br>
-                xsl<br>
+                xlrpc<br>
+                xs<br>
                 yaml<br>
             </td>
         </tr>

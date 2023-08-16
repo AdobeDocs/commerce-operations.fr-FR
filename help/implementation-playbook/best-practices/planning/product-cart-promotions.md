@@ -44,6 +44,6 @@ Le fait d’avoir plus que le nombre maximal recommandé de règles de prix de p
 
 - [Présentation des campagnes et promotions marketing](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#campaigns)
 - [Règles de prix du panier](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html)
-- [Tutoriel : Créer une règle de prix de panier](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/marketing/cart-price-rules.html)
-- [Codes coupon](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html)
-- [Adobe Commerce sur l’infrastructure cloud : Bonnes pratiques pour la configuration du magasin](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)
+- [Tutoriel : Création d’une règle de prix de panier](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/marketing/cart-price-rules.html)
+- [Codes de coupon](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html)
+- [Adobe Commerce sur l’infrastructure cloud : bonnes pratiques pour la configuration du magasin](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)

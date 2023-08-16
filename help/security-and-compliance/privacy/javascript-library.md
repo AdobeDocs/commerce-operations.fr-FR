@@ -1,13 +1,13 @@
 ---
 title: Bibliothèque JavaScript Privacy
 description: Découvrez comment utiliser des outils personnalisés pour accéder aux informations personnelles des clients et les supprimer collectées par Adobe Commerce et Magento Open Source.
-source-git-commit: 1a608e8a5986026d5a187dc8cbd358fed2db5d9e
+exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%
 
 ---
-
 
 <!-- TODO: Remove this topic and redirect to the adobe-privacy-javascript-library.md when the Adobe privacy library has been integrated with Commerce. -->
 
@@ -27,7 +27,7 @@ Cette bibliothèque fournit un ensemble de fonctions permettant de créer des de
 
 La bibliothèque JavaScript Privacy est disponible à l’emplacement suivant du réseau CDN : `commerce.adobe.net/magentoprivacy.js`
 
-Une fois que vous disposez du fichier, vous devez l’ajouter à un module ou à un thème personnalisé installé dans votre instance Adobe Commerce ou Magento Open Source. Suivez les instructions décrites dans la section [Utilisation d’un code JavaScript personnalisé](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) pour accomplir cette tâche.
+Une fois que vous disposez du fichier, vous devez l’ajouter à un module ou à un thème personnalisé installé dans votre instance Adobe Commerce ou Magento Open Source. Suivez les instructions décrites dans la section [Utilisation de JavaScript personnalisé](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) pour accomplir cette tâche.
 
 ### Initialisation
 
@@ -52,7 +52,7 @@ const magePriv = new window.MagentoPrivacy()
 La bibliothèque JS d’Adobe Privacy fournit diverses fonctions pour gérer les données d’identité stockées dans le navigateur.
 
 `retrieveIdentity()`
-: Renvoie une promesse JavaScript pour un objet d’identité d’un service dans le navigateur.
+: renvoie une promesse JavaScript pour un objet d’identité à partir d’un service dans le navigateur.
 
 ```js
 magePriv.retrieveIdentity().then((ids)=>console.log(ids))
@@ -60,7 +60,7 @@ magePriv.retrieveIdentity().then((ids)=>console.log(ids))
 ```
 
 `removeIdentity()`
-: Supprime les données d’identité d’un service dans le navigateur.
+: supprime les données d’identité d’un service dans le navigateur.
 Cette fonction renvoie une promesse JavaScript pour un objet d’identité avec une `isDeleted` propriété boolean pour indiquer si les données ont été supprimées.
 
 ```js

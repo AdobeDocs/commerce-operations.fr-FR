@@ -29,11 +29,11 @@ Utilisez la commande suivante pour vérifier le moteur de recherche actuel :
 bin/magento config:show catalog/search/engine
 ```
 
-L’erreur se produit si la valeur renvoyée est `mysql`, `elasticsearch`ou `elasticsearch6`.
+L’erreur se produit si la valeur renvoyée est `mysql`, `elasticsearch`, ou `elasticsearch6`.
 
 >[!WARNING]
 >
->Si vous avez reçu cette erreur, votre installation est dans un état incohérent et vous ne pouvez pas accéder à l’administrateur. Nous vous recommandons de revenir à votre version précédente pendant que vous résolvez cette erreur. Pour cela, exécutez l’une des commandes suivantes :
+>Si vous avez reçu cette erreur, votre installation est dans un état incohérent et vous ne pouvez pas accéder à l’administrateur. Nous vous recommandons de revenir à votre version précédente pendant que vous résolvez cette erreur. Pour ce faire, exécutez l’une des commandes suivantes :
 >
 >```bash
 >composer require-commerce magento/product-enterprise-edition=<version>
@@ -43,7 +43,7 @@ L’erreur se produit si la valeur renvoyée est `mysql`, `elasticsearch`ou `ela
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->Où `<version>` est la version du Magento que vous utilisiez. **before** la mise à niveau. Par exemple : `2.3.5`.
+>Où `<version>` est la version du Magento que vous utilisiez. **before** la mise à niveau. Par exemple, `2.3.5`.
 
 Suivez les instructions décrites dans les sections suivantes pour récupérer à partir d’un état incohérent.
 
@@ -62,7 +62,7 @@ Après avoir configuré le moteur de recherche et réindexé, vous êtes prêt �
 
 Elasticsearch 6 et versions antérieures ne sont plus prises en charge.
 
-Une valeur de `elasticsearch` indique que votre version de bas niveau d’Adobe Commerce ou de Magento Open Source est configurée pour utiliser Elasticsearch 2.x. Cette version d’Elasticsearch n’est plus prise en charge.
+Une valeur de `elasticsearch` indique que votre version inférieure d’Adobe Commerce ou de Magento Open Source est configurée pour utiliser Elasticsearch 2.x. Cette version d’Elasticsearch n’est plus prise en charge.
 
 Vous devez effectuer les tâches suivantes avant la mise à niveau vers la version 2.4 :
 

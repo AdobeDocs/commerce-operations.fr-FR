@@ -18,7 +18,7 @@ Les plans marketing de contenu d’e-commerce performants ne proviennent pas de 
 
 ![Diagramme de structure de la stratégie de contenu](../../assets/playbooks/content-strategy-framework.png)
 
-### Pré-production
+### Préproduction
 
 Cette étape consiste à commencer par votre utilisateur, à comprendre ses besoins, à développer des acteurs, ainsi qu’à passer en revue et à inventorier les ressources et la position existantes. La gestion, l&#39;approvisionnement et la planification du contenu sont conçus pour établir et maintenir des structures, une organisation et des ressources appropriées.
 
@@ -34,7 +34,7 @@ Enfin, le test, le ciblage et la stratégie vous donnent la possibilité d’ide
 
 ## Adobe Experience Manager
 
-Que vous gériez du contenu web de base ou du contenu à diffuser sur les réseaux sociaux, Adobe Experience Manager vous aide à diffuser des ressources créatives et d’autres contenus sur tous les canaux susceptibles d’intéresser un client. Grâce à AEM, vous pouvez exploiter le contenu géré dans AEM environnement de création pour créer des campagnes très attrayantes. Vous pouvez facilement publier des ressources marketing que vous concevez, gérez et validez dans Adobe Experience Manager sur différents canaux et plateformes.
+Que vous gériez du contenu web de base ou du contenu à diffuser sur les réseaux sociaux, Adobe Experience Manager vous aide à diffuser des ressources de création et d’autres contenus sur tous les canaux susceptibles d’intéresser un client. Grâce à AEM, vous pouvez exploiter le contenu géré dans AEM environnement de création pour créer des campagnes très attrayantes. Vous pouvez facilement publier des ressources marketing que vous concevez, gérez et validez dans Adobe Experience Manager sur différents canaux et plateformes.
 
 Adobe Experience Manager combine plusieurs fonctions au niveau de l’infrastructure et de l’application dans un package intégré unique. L&#39;offre s&#39;adresse :
 

@@ -1,13 +1,13 @@
 ---
 title: Effectuer une mise à niveau
 description: Pour mettre à niveau un projet Adobe Commerce ou Magento Open Source, procédez comme suit.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
 
 ---
-
 
 # Effectuer une mise à niveau
 
@@ -28,7 +28,7 @@ Les instructions suivantes vous montrent comment mettre à niveau à l’aide du
 
 ## Avant de commencer
 
-Vous devez renseigner la variable [conditions préalables à la mise à niveau](../prepare/prerequisites.md) pour préparer votre environnement avant de lancer le processus de mise à niveau.
+Vous devez renseigner la variable [conditions préalables à la mise à niveau](../prepare/prerequisites.md) pour préparer votre environnement avant de lancer la mise à niveau.
 
 ## Gestion des modules
 
@@ -42,7 +42,7 @@ Vous devez renseigner la variable [conditions préalables à la mise à niveau](
    bin/magento maintenance:enable
    ```
 
-   Voir [Activation ou désactivation du mode de maintenance](../../installation/tutorials/maintenance-mode.md) pour d’autres options. Vous pouvez éventuellement créer une [page du mode de maintenance personnalisé](../troubleshooting/maintenance-mode-options.md).
+   Voir [Activer ou désactiver le mode de maintenance](../../installation/tutorials/maintenance-mode.md) pour d’autres options. Vous pouvez éventuellement créer une [page du mode de maintenance personnalisé](../troubleshooting/maintenance-mode-options.md).
 
 1. Le démarrage du processus de mise à niveau pendant l’exécution de processus asynchrones, tels que les consommateurs de file d’attente de messages, peut entraîner une corruption des données. Pour empêcher la corruption des données, désactivez toutes les tâches cron.
 
@@ -52,7 +52,7 @@ Vous devez renseigner la variable [conditions préalables à la mise à niveau](
    ./vendor/bin/ece-tools cron:disable
    ```
 
-   _Magento Open Source :_
+   _MAGENTO OPEN SOURCE :_
 
    ```bash
    bin/magento cron:remove
@@ -86,17 +86,17 @@ Vous devez renseigner la variable [conditions préalables à la mise à niveau](
    composer require <sample data module-1>:<version> ... <sample data module-n>:<version> --no-update
    ```
 
-   - _Adobe Commerce :_
+   - _ADOBE COMMERCE :_
 
-      ```bash
-      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
-      ```
+     ```bash
+     composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
+     ```
 
-   - _Magento Open Source :_
+   - _MAGENTO OPEN SOURCE :_
 
-      ```bash
-      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
-      ```
+     ```bash
+     composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
+     ```
 
 1. Mettez à niveau votre instance à l’aide de ce qui suit : `composer require-commerce` syntaxe de commande :
 
@@ -108,7 +108,7 @@ Vous devez renseigner la variable [conditions préalables à la mise à niveau](
 
    - `<product>` —(Obligatoire) Package à mettre à niveau. Pour les installations sur site, cette valeur doit être : `product-community-edition` ou `product-enterprise-edition`.
 
-   - `<version>` —(Obligatoire) Version d’Adobe Commerce ou de Magento Open Source vers laquelle vous effectuez une mise à niveau. Par exemple : `2.4.3`.
+   - `<version>` —(Obligatoire) Version d’Adobe Commerce ou de Magento Open Source vers laquelle vous effectuez une mise à niveau. Par exemple, `2.4.3`.
 
    - `--no-update` —(Obligatoire) Désactive la mise à jour automatique des dépendances.
 
@@ -117,7 +117,8 @@ Vous devez renseigner la variable [conditions préalables à la mise à niveau](
    - `--force-root-updates` —(Facultatif) Remplace toutes les valeurs personnalisées en conflit par les valeurs de Magento attendues.
 
    - `--help` —(Facultatif) Fournit des détails d’utilisation du module externe.
-   Si aucun `--interactive-root-conflicts` nor `--force-root-updates` sont spécifiées, la commande conserve les valeurs existantes en conflit et affiche un message d’avertissement. Pour en savoir plus sur le module externe, reportez-vous à la section [Plug-Usage README](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
+
+   Si aucun `--interactive-root-conflicts` nor `--force-root-updates` sont spécifiées, la commande conserve les valeurs existantes en conflit et affiche un message d’avertissement. Pour en savoir plus sur le module externe, reportez-vous au [Plug-Usage README](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
 
 1. Mettez à jour les dépendances.
 
@@ -125,7 +126,7 @@ Vous devez renseigner la variable [conditions préalables à la mise à niveau](
    composer update
    ```
 
-### Exemple - Liste des versions disponibles
+### Exemple - répertorier les versions disponibles
 
 Pour afficher la liste complète des versions 2.4.x disponibles :
 
@@ -258,4 +259,4 @@ Si l’application échoue avec une  `We're sorry, an error has occurred while g
    - `var/cache/`
    - `var/page_cache/`
    - `generated/code/`
-1. Vérifiez à nouveau votre vitrine dans votre navigateur web.
+1. Vérifiez à nouveau votre storefront dans votre navigateur web.

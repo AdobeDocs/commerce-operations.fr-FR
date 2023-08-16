@@ -1,13 +1,13 @@
 ---
 title: Présentation des files de messages
 description: Découvrez la structure de la file d’attente des messages et son fonctionnement avec l’application Adobe Commerce et Magento Open Source.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 21e7bc3e-6265-4399-9d47-d3b9f03dfef6
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
 
 ---
-
 
 # Présentation des files d’attente de messages
 
@@ -21,7 +21,7 @@ Le diagramme suivant illustre la structure de la file d’attente des messages :
 
 - Un échange reçoit les messages des éditeurs et les envoie aux files d’attente. Bien que [!DNL RabbitMQ] prend en charge plusieurs types d’échanges, Commerce utilise uniquement les échanges de rubrique. Une rubrique comprend une clé de routage, qui contient des chaînes de texte séparées par des points. Le format du nom d’une rubrique est le suivant : `string1.string2`: par exemple, `customer.created` ou `customer.sent.email`.
 
-   Le courtier vous permet d’utiliser des caractères génériques lors de la définition de règles pour le transfert de messages. Vous pouvez utiliser un astérisque (`*`) à remplacer. _one_ Chaîne ou signe dièse (`#`) pour remplacer 0 ou plusieurs chaînes. Par exemple : `customer.*` filtre sur `customer.create` et `customer.delete`, mais pas `customer.sent.email`. Cependant `customer.#` filtre sur `customer.create`,  `customer.delete`, et `customer.sent.email`.
+  Le courtier vous permet d’utiliser des caractères génériques lors de la définition de règles pour le transfert de messages. Vous pouvez utiliser un astérisque (`*`) à remplacer. _one_ Chaîne ou signe dièse (`#`) pour remplacer 0 ou plusieurs chaînes. Par exemple : `customer.*` filtre sur `customer.create` et `customer.delete`, mais pas `customer.sent.email`. Cependant `customer.#` filtre sur `customer.create`,  `customer.delete`, et `customer.sent.email`.
 
 - Une file d’attente est une mémoire tampon qui stocke les messages.
 

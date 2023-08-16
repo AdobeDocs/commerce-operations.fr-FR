@@ -29,7 +29,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Vendeur - Assistance</td>
+      <td>Vendeur - Aidé Shopping</td>
       <td></td>
       <td></td>
       <td></td>
@@ -77,7 +77,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Fonctionnalités et API compatibles B2B (pour plus d’informations, consultez la feuille d’informations de B2B)</td>
+      <td>Fonctionnalités et API compatibles B2B (pour plus d’informations, consultez la feuille de calcul B2B)</td>
       <td></td>
       <td></td>
       <td>+</td>

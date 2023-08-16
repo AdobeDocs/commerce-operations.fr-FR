@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Upgrade Compatibility Tool] Messages d’erreur"'
-description: En savoir plus sur les messages d’erreur que vous rencontrez lors de l’utilisation de la variable [!DNL Upgrade Compatibility Tool] sur votre projet Adobe Commerce.
-source-git-commit: 038cb256cb19c253ae9c0375258a555601428847
+title: '''[!DNL Upgrade Compatibility Tool] Messages d’erreur'
+description: En savoir plus sur les messages d’erreur que vous rencontrez lors de l’utilisation de [!DNL Upgrade Compatibility Tool] sur votre projet Adobe Commerce.
+exl-id: fe4a17a9-a807-4315-b3cd-e35f34e39f6d
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '4140'
+source-wordcount: '4113'
 ht-degree: 4%
 
 ---
-
 
 # [!DNL Upgrade Compatibility Tool] messages d’erreur
 
@@ -17,9 +17,9 @@ Cette référence de message d’erreur fournit des informations sur les erreurs
 
 Les messages d’erreur sont classés par niveau (problèmes critiques, erreurs et avertissements) et par type (code principal, code personnalisé et schémas GraphQL). Chaque type contient les informations suivantes :
 
-- **Code d’erreur**: Identifiant attribué à Adobe Commerce pour le message d’erreur.
-- **Description de l’erreur**: Description qui résume la cause de l’erreur.
-- **Action suggérée par l’erreur**: Le cas échéant, fournit des conseils pour dépanner et résoudre l’erreur.
+- **Code d’erreur**: identifiant attribué par Adobe Commerce au message d’erreur.
+- **Description de l’erreur**: description qui résume la cause de l’erreur.
+- **Action suggérée par l’erreur**: le cas échéant, fournit des conseils pour dépanner et résoudre l’erreur.
 
 ## Problèmes critiques
 
@@ -34,7 +34,7 @@ Ces erreurs sont signalées lorsque certains fichiers principaux sont manquants 
 | 2003 | La dépendance du compositeur n’est pas installée | Une dépendance de compositeur manquante peut entraîner des problèmes. Restaurer la dépendance en exécutant `composer require package_name`. |
 | 2005 | Le dossier principal est introuvable | Exécutez la variable `composer install` à partir du répertoire racine du projet. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Code personnalisé
 
@@ -59,13 +59,13 @@ Des erreurs critiques sont générées lorsque le code personnalisé fait réfé
 | 1515 | Remplacement d’une propriété Adobe Commerce inexistante | Mettre à jour le code pour utiliser une classe marquée comme `@api`. |
 | 1516 | Attribution d’une propriété Adobe Commerce inexistante | Mettre à jour le code pour utiliser une classe marquée comme `@api`. Mettez à jour le niveau d’accès aux propriétés sur private s’il peut être utilisé dans une seule classe. |
 | 5002 | La balise PHP d’ouverture doit être le premier contenu du fichier . | Assurez-vous qu’il n’y a aucun contenu dans le fichier avant la balise d’ouverture PHP. |
-| 5003 | La fonction a été abandonnée. | Utilisez un remplacement suggéré dans le message d’erreur. Si le message ne suggère pas de remplacement, une révision approfondie est nécessaire pour sélectionner une autre fonction ou implémentation. |
+| 5003 | Fonction obsolète | Utilisez un remplacement suggéré dans le message d’erreur. Si le message ne suggère pas de remplacement, une révision approfondie est nécessaire pour sélectionner une autre fonction ou implémentation. |
 | 5005 | Erreur de syntaxe PHP | Le code doit être mis à jour pour être conforme aux normes de syntaxe PHP. |
 | 5072 | Violation de conception du Magento 2 possible. Détection d’une construction Magento 1.x classique | Mettre à jour la construction vers les normes Magento 2. |
 | 5076 | Impossible d’utiliser dans l’espace de noms, car il est réservé depuis PHP 7 | Remplacez le mot réservé dans l’espace de noms par un mot-clé non réservé. |
 | 5077 | Ne peut pas utiliser comme nom de classe, car il est réservé depuis PHP 7 | Remplacez le nom de classe réservé par un nom non réservé. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Schéma DB
 
@@ -74,9 +74,9 @@ Les problèmes critiques liés au schéma de base de données sont signalés si 
 | Code d’erreur | Description de l’erreur | Action suggérée |
 | --- | --- | --- |
 | 7009 | La contrainte personnalisée fait référence à une table principale qui a été supprimée de la version cible. | Suppression des attributs de contrainte ou de mise à jour referenceTable et referenceColumn |
-| 7010 | La contrainte personnalisée fait référence à une colonne principale qui a été supprimée de la version cible. | Suppression de la contrainte ou mise à jour de l’attribut referenceColumn |
+| 7010 | La contrainte personnalisée fait référence à une colonne principale supprimée de la version cible. | Supprimer la contrainte ou mettre à jour l’attribut referenceColumn |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Schéma GraphQL
 
@@ -84,11 +84,11 @@ Des problèmes critiques liés au schéma GraphQL sont soulevés si les élémen
 
 | Code d’erreur | Description de l’erreur | Action suggérée |
 | --- | --- | --- |
-| 3101 | Le type a été supprimé. | Liste de toutes les requêtes qui référencent ce champ. Vérifiez si ces requêtes sont utilisées par l’implémentation de personnalisation. Mettez à jour le code client pour gérer l’interface de requête modifiée. |
+| 3101 | Le type a été supprimé | Liste de toutes les requêtes qui référencent ce champ. Vérifiez si ces requêtes sont utilisées par l’implémentation de personnalisation. Mettez à jour le code client pour gérer l’interface de requête modifiée. |
 | 3102 | Type supprimé de l’union | Si le type d’union est utilisé dans l’implémentation de création de requête GraphQL ou de traitement de réponse, il peut être nécessaire de le mettre à jour. |
 | 3103 | Champ supprimé | Vérifiez si le champ est référencé dans le code base de personnalisation. Ajustez l’implémentation pour gérer correctement le nouveau type de champ. |
 | 3105 | Interface mise en oeuvre supprimée | Vérifiez si le type implémentant l’interface supprimée est utilisé dans la personnalisation. La mise en oeuvre doit peut-être être mise à jour si elle repose sur l’interface supprimée. |
-| 3106 | Valeur supprimée de l’énumération | Si la valeur d’énumération supprimée est utilisée dans la mise en oeuvre de la création de requêtes GraphQL ou du traitement de la réponse, elle peut nécessiter une mise à jour. |
+| 3106 | Valeur supprimée de l’énumération | Si la valeur d’énumération supprimée est utilisée dans l’implémentation de création de requête GraphQL ou de traitement de réponse, elle peut nécessiter une mise à jour. |
 | 3107 | Argument supprimé | Vérifiez si le champ est utilisé dans le code base de personnalisation. Supprimez l’argument de ce champ. |
 | 3109 | Directive supprimée | Vérifiez si la directive est utilisée dans le code base de personnalisation. Ajustez la mise en oeuvre pour supprimer la référence à la directive. |
 | 3110 | Argument de directive supprimé | Vérifiez si la directive est utilisée dans le code base de personnalisation. Supprimez l’argument de directive . |
@@ -101,7 +101,7 @@ Des problèmes critiques liés au schéma GraphQL sont soulevés si les élémen
 | 3307 | Argument obligatoire ajouté | Vérifiez si le champ est utilisé dans le code base de personnalisation. Le nouvel argument requis doit être spécifié lors de l’utilisation du champ . |
 | 3310 | Argument de directive requis ajouté | Vérifiez si la directive est utilisée dans le code base de personnalisation. Ajoutez l’argument de directive . |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Erreurs
 
@@ -111,25 +111,25 @@ Des erreurs de code personnalisé sont générées lorsque le code personnalisé
 
 | Code d’erreur | Description de l’erreur | Action suggérée |
 | --- | --- | --- |
-| 1104 | Utilisation d’une classe non API héritant de l’interface API | Classes qui ne sont pas marquées comme `@api` peut être modifiée. Envisagez de mettre à jour le code pour qu’il repose sur l’interface marquée comme `@api` au lieu de . Dans le cas contraire, les fonctionnalités reposant sur cette mise en oeuvre doivent être testées après la mise à niveau. |
+| 1104 | Utilisation d’une classe non API héritant de l’interface API | Classes non marquées comme `@api` peut être modifiée. Envisagez de mettre à jour le code pour qu’il repose sur l’interface marquée comme `@api` au lieu de . Dans le cas contraire, les fonctionnalités reposant sur cette mise en oeuvre doivent être testées après la mise à niveau. |
 | 1121 | Extension à partir de la classe API non Adobe Commerce | La classe étendue n’est plus présente dans le code base. L’héritage n’est pas la méthode recommandée pour étendre les fonctionnalités d’Adobe Commerce. Mettre à jour le code pour utiliser une classe marquée comme `@api`. |
 | 1122 | Importation d’une classe API non Adobe Commerce | La classe étendue n’est plus présente dans le code base. Mettre à jour le code pour utiliser une classe marquée comme `@api`. Dans le cas contraire, les fonctionnalités reposant sur cette mise en oeuvre doivent être testées après la mise à niveau. |
 | 1123 | Chargement de la classe API non Adobe Commerce | La classe étendue n’est plus présente dans le code base. Mettre à jour le code pour utiliser une classe marquée comme `@api`. Dans le cas contraire, les fonctionnalités reposant sur cette mise en oeuvre doivent être testées après la mise à niveau. |
 | 1124 | Utilisation d’une classe API non Adobe Commerce | La classe étendue n’est plus présente dans le code base. Mettre à jour le code pour utiliser une classe marquée comme `@api`. Dans le cas contraire, les fonctionnalités reposant sur cette mise en oeuvre doivent être testées après la mise à niveau. |
-| 1224 | Utilisation d’une constante API non Adobe Commerce | Constantes qui ne sont pas marquées comme `@api` peut être modifiée. Envisagez plutôt d’introduire et d’utiliser une constante privée de la valeur requise dans le code personnalisé. |
-| 1225 | Remplacement de la constante d’API non Adobe Commerce | Constantes qui ne sont pas marquées comme `@api` peut être modifiée. Envisagez plutôt d’introduire et d’utiliser une constante privée de la valeur requise dans le code personnalisé. |
-| 1226 | Assignation de la constante API non-Adobe Commerce | Constantes qui ne sont pas marquées comme `@api` peut être modifiée. Envisagez plutôt d’introduire et d’utiliser une constante privée de la valeur requise dans le code personnalisé. |
+| 1224 | Utilisation d’une constante API non Adobe Commerce | Constantes non marquées comme `@api` peut être modifiée. Envisagez plutôt d’introduire et d’utiliser une constante privée de la valeur requise dans le code personnalisé. |
+| 1225 | Remplacement de la constante d’API non Adobe Commerce | Constantes non marquées comme `@api` peut être modifiée. Envisagez plutôt d’introduire et d’utiliser une constante privée de la valeur requise dans le code personnalisé. |
+| 1226 | Assignation de la constante API non-Adobe Commerce | Constantes non marquées comme `@api` peut être modifiée. Envisagez plutôt d’introduire et d’utiliser une constante privée de la valeur requise dans le code personnalisé. |
 | 1322 | Interface API non Adobe Commerce importée | Interfaces non marquées comme `@api` peut être modifiée. Envisagez de supprimer cet héritage ou de le remplacer par un héritage de l’interface Adobe Commerce marquée comme `@api` ou une interface introduite dans la portée du code de personnalisation. |
 | 1324 | Interface API non Adobe Commerce utilisée | Interfaces non marquées comme `@api` peut être modifiée. Envisagez de supprimer cet héritage ou de le remplacer par un héritage de l’interface Adobe Commerce marquée comme `@api` ou une interface introduite dans la portée du code de personnalisation. |
-| 1327 | Interface API héritée non-Adobe Commerce | Constantes qui ne sont pas marquées comme `@api` peut être modifiée. Envisagez plutôt d’introduire et d’utiliser une constante privée de la valeur requise dans le code personnalisé. |
-| 1328 | Mise en oeuvre d’une interface API autre qu’Adobe Commerce | Interfaces non marquées comme `@api` peut être modifiée. Envisagez de supprimer cet héritage ou de le remplacer par un héritage de l’interface Adobe Commerce marquée comme `@api` ou une interface introduite dans la portée du code de personnalisation. |
-| 1420 | Instanciation de l’interface/classe d’API non Adobe Commerce | Classes qui ne sont pas marquées comme `@api` peut être modifiée. Envisagez de mettre à jour le code pour qu’il repose sur l’interface marquée comme `@api` au lieu de . Dans le cas contraire, les fonctionnalités reposant sur cette mise en oeuvre doivent être testées après la mise à niveau. En outre, la méthode recommandée pour récupérer une instance de la classe consiste à utiliser l’ID. Pensez à utiliser une fabrique si une nouvelle instance de la classe est requise. |
-| 1428 | Dépendance possible sur les détails de l’implémentation. | Classes qui ne sont pas marquées comme `@api` peut être modifiée. Envisagez de mettre à jour le code pour qu’il repose sur l’interface marquée comme `@api` au lieu de . Dans le cas contraire, les fonctionnalités reposant sur cette mise en oeuvre doivent être testées après la mise à niveau. |
-| 1429 | Appel de méthodes API autres qu’Adobe Commerce | Méthodes qui ne sont pas marquées comme `@api` ou ne sont pas déclarés dans la classe/l’interface d’API peut être modifié. Même si l’interface de la méthode n’est pas mise à jour dans la nouvelle version, son comportement ou sa sortie peuvent être différents. Envisagez de vous fier à une méthode d’interface. Dans le cas contraire, les fonctionnalités reposant sur cette mise en oeuvre doivent être testées après la mise à niveau. |
+| 1327 | Interface API héritée non-Adobe Commerce | Constantes non marquées comme `@api` peut être modifiée. Envisagez plutôt d’introduire et d’utiliser une constante privée de la valeur requise dans le code personnalisé. |
+| 1328 | Mise en oeuvre de l’interface API non Adobe Commerce | Interfaces non marquées comme `@api` peut être modifiée. Envisagez de supprimer cet héritage ou de le remplacer par un héritage de l’interface Adobe Commerce marquée comme `@api` ou une interface introduite dans la portée du code de personnalisation. |
+| 1420 | Instanciation de l’interface/classe d’API non Adobe Commerce | Classes non marquées comme `@api` peut être modifiée. Envisagez de mettre à jour le code pour qu’il repose sur l’interface marquée comme `@api` au lieu de . Dans le cas contraire, les fonctionnalités reposant sur cette mise en oeuvre doivent être testées après la mise à niveau. En outre, la méthode recommandée pour récupérer une instance de la classe consiste à utiliser l’ID. Pensez à utiliser une fabrique si une nouvelle instance de la classe est requise. |
+| 1428 | Dépendance possible sur les détails de l’implémentation. | Classes non marquées comme `@api` peut être modifiée. Envisagez de mettre à jour le code pour qu’il repose sur l’interface marquée comme `@api` au lieu de . Dans le cas contraire, les fonctionnalités reposant sur cette mise en oeuvre doivent être testées après la mise à niveau. |
+| 1429 | Appel de méthodes API autres qu’Adobe Commerce | Méthodes non marquées comme `@api` ou ne sont pas déclarés dans la classe/l’interface d’API peut être modifié. Même si l’interface de la méthode n’est pas mise à jour dans la nouvelle version, son comportement ou sa sortie peuvent être différents. Envisagez de vous fier à une méthode d’interface. Dans le cas contraire, les fonctionnalités reposant sur cette mise en oeuvre doivent être testées après la mise à niveau. |
 | 1449 | Appel à une méthode autre que l’interface (présente dans l’implémentation) | Les méthodes qui ne sont pas déclarées dans l’interface peuvent être modifiées. Envisagez de vous fier à une méthode d’interface. Dans le cas contraire, les fonctionnalités reposant sur cette mise en oeuvre doivent être testées après la mise à niveau. |
-| 1524 | Utilisation de la propriété API non Adobe Commerce | Valeurs des propriétés qui ne sont pas marquées comme `@api` peut être modifiée. Utilisez plutôt la méthode de l’interface API . |
-| 1525 | Remplacement de la propriété d’API non Adobe Commerce | Valeurs des propriétés qui ne sont pas marquées comme `@api` peut être modifiée. Utilisez plutôt la méthode de l’interface API . |
-| 1526 | Attribution de la propriété d’API non-Adobe Commerce | Valeurs des propriétés qui ne sont pas marquées comme `@api` peut être modifiée. Utilisez plutôt la méthode de l’interface API . |
+| 1524 | Utilisation de la propriété d’API non Adobe Commerce | Valeurs des propriétés non marquées comme `@api` peut être modifiée. Utilisez plutôt la méthode de l’interface API . |
+| 1525 | Remplacement de la propriété d’API non Adobe Commerce | Valeurs des propriétés non marquées comme `@api` peut être modifiée. Utilisez plutôt la méthode de l’interface API . |
+| 1526 | Attribution de la propriété d’API non Adobe Commerce | Valeurs des propriétés non marquées comme `@api` peut être modifiée. Utilisez plutôt la méthode de l’interface API . |
 | 5004 | La fonction sans argument a été abandonnée. | Transmettez l’entrée à valider comme premier argument de la fonction. |
 | 5007 | L&#39;utilisation de certaines fonctions est déconseillée. | Évitez d’utiliser ces fonctions. |
 | 5009 | Les directives de modèle ne peuvent pas appeler de méthodes. Seul l’accès aux tableaux scalaires est autorisé | Supprimez les appels de méthode du modèle. |
@@ -137,18 +137,18 @@ Des erreurs de code personnalisé sont générées lorsque le code personnalisé
 | 5011 | Modèle `@vars` le bloc de commentaire contient une étiquette non valide | Correction d’un libellé non valide. |
 | 5012 | Modèle `@vars` une variable utilisée dans le modèle est absente du bloc de commentaire. | Ajoutez la variable manquante au bloc de commentaire @vars. |
 | 5013 | Évitez d’utiliser une balise auto-fermante avec un élément html non vide | Utilisez plutôt la balise close . |
-| 5014 | Le `"active"` est obsolète | La liste des principaux modules est définie dans la configuration du déploiement. |
-| 5015 | Le `<param>` est obsolète | Utilisation `<argument name="..." xsi:type="...">` au lieu de . |
-| 5016 | Le `<instance>` est obsolète | Utilisation `<argument name="..." xsi:type="object">` au lieu de . |
-| 5017 | Le `<array>` est obsolète | Utilisation `<argument name="..." xsi:type="array">` au lieu de . |
-| 5018 | Le `<item key="...">` est obsolète | Utilisation `<item name="..." xsi:type="...">` au lieu de . |
-| 5019 | Le `<value>` est obsolète | Indiquez plutôt la valeur réelle sous la forme d’un littéral de texte. |
+| 5014 | La variable `"active"` est obsolète | La liste des modules actifs est définie dans la configuration du déploiement. |
+| 5015 | La variable `<param>` est obsolète | Utilisation `<argument name="..." xsi:type="...">` au lieu de . |
+| 5016 | La variable `<instance>` est obsolète | Utilisation `<argument name="..." xsi:type="object">` au lieu de . |
+| 5017 | La variable `<array>` est obsolète | Utilisation `<argument name="..." xsi:type="array">` au lieu de . |
+| 5018 | La variable `<item key="...">` est obsolète | Utilisation `<item name="..." xsi:type="...">` au lieu de . |
+| 5019 | La variable `<value>` est obsolète | Indiquez plutôt la valeur réelle sous la forme d’un littéral de texte. |
 | 5020 | Noeud obsolète : `<supported_blocks>` | À remplacer par `<supported_containers>`. |
 | 5021 | Noeud obsolète : `<block_name>` | À remplacer par `<container_name>`. |
 | 5022 | Nom d’usine détecté | Le type de widget ne doit pas commencer par /. |
-| 5023 | Structure de liste de contrôle d’accès obsolète détectée en ligne | Consultez lib/internal/Magento/Framework/Acl/etc/acl.xsd. |
-| 5024 | Structure de menu obsolète détectée en ligne | Consultez app/code/Magento/Backend/etc/menu.xsd. |
-| 5025 | Structure de configuration système obsolète détectée dans le fichier | Consultez app/code/Magento/Config/etc/system_file.xsd. |
+| 5023 | Structure ACL obsolète détectée en ligne | Consultez le site lib/internal/Magento/Framework/Acl/etc/acl.xsd. |
+| 5024 | Structure de menu obsolète détectée en ligne | Consultez le site app/code/Magento/Backend/etc/menu.xsd. |
+| 5025 | Structure de configuration système obsolète détectée dans le fichier | Consultez le site app/code/Magento/Config/etc/system_file.xsd. |
 | 5026 | Ne pas utiliser `"text/javascript"` attribut type | Utilisez uniquement les membres publics. |
 | 5028 | Accès aux membres protégés et privés de `Block` est obsolète dans les modèles phtml | Utilisez uniquement les membres publics. |
 | 5031 | Contient la méthode obsolète | Utilisation `getConnection()` à la place. |
@@ -157,11 +157,11 @@ Des erreurs de code personnalisé sont générées lorsque le code personnalisé
 | 5044 | Classe `Zend_Db_Select` est limitée | Remplacement suggéré : `\Magento\Framework\DB\Select`. |
 | 5045 | Classe `Zend_Db_Adapter_Pdo_Mysql` est limitée | Remplacement suggéré : `\Magento\Framework\DB\Adapter\Pdo\Mysql`. |
 | 5046 | Classe `Magento\Framework\Serialize\Serializer\Serialize` est limitée | Remplacement suggéré : `Magento\Framework\Serialize\SerializerInterface`. |
-| 5047 | Classe `ArrayObject` est limitée | Remplacement suggéré : Classe personnalisée, étendue à partir de `ArrayObject` avec des méthodes sérialize/unserialize remplacées. |
-| 5048 | Classe `Magento\Framework\View\Element\UiComponent\ArrayObjectFactory` est limitée | Remplacement suggéré : Fabrique qui crée une classe personnalisée, étendue à partir de `ArrayObject` avec des méthodes sérialize/unserialize remplacées. |
+| 5047 | Classe `ArrayObject` est limitée | Remplacement suggéré : classe personnalisée, étendue à partir de `ArrayObject` avec des méthodes sérialize/unserialize remplacées. |
+| 5048 | Classe `Magento\Framework\View\Element\UiComponent\ArrayObjectFactory` est limitée | Remplacement suggéré : usine qui crée une classe personnalisée, étendue à partir de `ArrayObject` avec des méthodes sérialize/unserialize remplacées. |
 | 5050 | Le bloc référencé est supprimé. | Supprimez la référence au bloc. |
 | 5051 | `output="toHtml"` est obsolète | Utilisation `output="1"`. |
-| 5052 | La classe `\Magento\Framework\View\Element\Text\ListText` n’est plus censé être utilisé dans la mise en page | Supprimer la classe `\Magento\Framework\View\Element\Text\ListText` de la mise en page. |
+| 5052 | La classe `\Magento\Framework\View\Element\Text\ListText` n’est plus censée être utilisée dans la mise en page | Supprimer la classe `\Magento\Framework\View\Element\Text\ListText` de la mise en page. |
 | 5053 | Appel de la méthode via l’instruction de mise en page `<action>` n’est pas autorisé | Évitez d’utiliser une méthode offensante dans `<action>`. |
 | 5054 | `helper` L’attribut contient `/` | Supprimer `/` à partir de l’attribut d’assistance. |
 | 5055 | `helper` L’attribut ne contient pas `::` | Ajouter `::` vers l’attribut helper. |
@@ -176,7 +176,7 @@ Des erreurs de code personnalisé sont générées lorsque le code personnalisé
 | 5064 | Les scripts récurrents sont obsolètes | Créez la classe Récurrente dans le dossier Setup du module\. |
 | 5065 | &#39;data&#39; se trouve dans un répertoire non valide | Créez un patch de données dans le dossier Setup/Patch/Data du module pour les mises à niveau de données ou utilisez l’approche de schéma déclaratif dans le fichier etc/db_schema.xml du module pour les modifications de schéma. |
 | 5066 | &#39;sql&#39; se trouve dans un répertoire non valide | Créez un patch de données dans le dossier Setup/Patch/Data du module pour les mises à niveau de données ou utilisez l’approche de schéma déclaratif dans le fichier etc/db_schema.xml du module pour les modifications de schéma. |
-| 5067 | Les noeuds identifiés par XPath sont obsolètes | Le XML obsolète souligné dans l’erreur doit être mis à jour. Suivez les suggestions du message d’erreur. |
+| 5067 | Les noeuds identifiés par XPath sont obsolètes. | Le XML obsolète souligné dans l’erreur doit être mis à jour. Suivez les suggestions du message d’erreur. |
 | 5068 | Directive `{{htmlescape}}` est obsolète | Utilisation `{{var}}` au lieu de . |
 | 5069 | Directive `{{escapehtml}}` est obsolète | Utilisation `{{var}}` au lieu de . |
 | 5070 | Le troisième paramètre n’est plus nécessaire pour `getChildHtml()` | Supprimer le troisième paramètre de l’appel à `getChildHtml()`. |
@@ -201,7 +201,7 @@ Des erreurs de code personnalisé sont générées lorsque le code personnalisé
 | 6003 | La méthode jQuery pour s’abonner à un événement est obsolète et ne doit pas être utilisée. | Utilisation `.on("event name", fn)` pour vous abonner à cet événement. |
 | 6003 | La méthode jQuery pour déclencher un événement est obsolète et ne doit pas être utilisée. | Utilisation `.trigger("event name")` pour déclencher cet événement. |
 | 6004 | jQuery `$.delegate` et `$.undelegate` sont obsolètes | Utilisation `$.on` et `$.off` au lieu de . |
-| 6005 | (`jQuery.load()` / `jQuery.unload()` / `jQuery.error()`) a été supprimé. | Utilisez (`.on("load", fn)` / `.on("unload", fn)` / `.on("error", fn)`) à la place. |
+| 6005 | (`jQuery.load()` / `jQuery.unload()` / `jQuery.error()`) supprimé | Utilisez (`.on("load", fn)` / `.on("unload", fn)` / `.on("error", fn)`) à la place. |
 | 6006 | `jQuery.size()` supprimé | Utilisation `jQuery.length`. |
 | 6007 | `jQuery.trim` est obsolète | Utilisation `String.prototype.trim`. |
 | 6008 | (`addButton`, `addContextToolbar`, `addMenuItem`, `addSidebar`, `file_browser_callback`, `insert_button_items`, thème &quot;inlite&quot;, thème &quot;mobile&quot;, thème &quot;moderne&quot;) supprimé | Mettre à jour le code pour qu’il soit compatible avec tinymce5. |
@@ -211,7 +211,7 @@ Des erreurs de code personnalisé sont générées lorsque le code personnalisé
 | 6009 | `jQuery.parseJSON()` est obsolète | Pour analyser les chaînes JSON, utilisez plutôt la méthode native JSON.parse . |
 | 6010 | (`jQuery.expr[":"]`, `jQuery.expr.filters`) est obsolète. | Utilisez jQuery.expr.pseudos à la place. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Schéma DB
 
@@ -221,14 +221,14 @@ Les erreurs de schéma de base de données sont générées si les tables de bas
 | --- | --- | --- |
 | 7001 | La version principale cible introduit un tableau portant le même nom qu’un tableau déclaré par un module personnalisé. | Utilisez la nouvelle table principale (le cas échéant) ou renommez la table personnalisée. |
 | 7002 | Le tableau principal étendu par un module personnalisé a été supprimé dans la version cible. | Toutes les références de tableau principal supprimées doivent être supprimées du code base. |
-| 7003 | La version de base de la cible introduit une colonne portant le même nom qu’une colonne déclarée par un module personnalisé. | Utilisez la nouvelle colonne principale (le cas échéant) ou renommez la colonne personnalisée. |
+| 7003 | La version de base cible introduit une colonne portant le même nom qu’une colonne déclarée par un module personnalisé. | Utilisez la nouvelle colonne principale (le cas échéant) ou renommez la colonne personnalisée. |
 | 7004 | La colonne core qui est étendue par un module personnalisé a été supprimée dans la version cible. | Toutes les références de colonne principales supprimées doivent être supprimées du code base. |
 | 7005 | La version principale cible introduit un index avec le même referenceId qu’un index déclaré par un module personnalisé. | Supprimez (en cas de duplication à l’index principal introduit) ou renommez l’index personnalisé. |
 | 7006 | L’index principal étendu par un module personnalisé a été supprimé dans la version cible. | Toutes les références d’index principal supprimées doivent être supprimées du code base. |
 | 7007 | La version de base de la cible introduit une contrainte portant le même nom qu’une contrainte déclarée par un module personnalisé. | Supprimer (en cas de duplication à la contrainte principale introduite) ou renommer la contrainte personnalisée |
 | 7008 | La contrainte principale étendue par un module personnalisé a été supprimée de la version cible. | Utilisez la nouvelle contrainte principale (le cas échéant) ou renommez la contrainte personnalisée. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Avertissements
 
@@ -240,7 +240,7 @@ Ces avertissements sont signalés lorsqu’il existe des incohérences mineures 
 | --- | --- | --- |
 | 2004 | Non-correspondance de version de dépendance du compositeur | Ce problème indique que la version de dépendance du compositeur en mode réel et le projet réel sont différents. Mettre à jour la dépendance en exécutant `composer update <package_name>`. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Code personnalisé
 
@@ -257,8 +257,8 @@ Des avertissements de code personnalisé sont générés lorsque les référence
 | 1236 | Assignation d’Adobe Commerce `@deprecated` constante | La constante obsolète sera supprimée dans les versions à venir. Envisagez d’utiliser une constante marquée comme `@api` ou une constante privée dans votre mise en oeuvre. |
 | 1332 | Adobe Commerce importée `@deprecated` interface | L’interface obsolète sera supprimée dans les versions à venir. Envisagez d’utiliser une interface ou une classe marquée comme `@api` au lieu de . |
 | 1334 | Utilisé Adobe Commerce `@deprecated` interface | L’interface obsolète sera supprimée dans les versions à venir. Envisagez d’utiliser une interface ou une classe marquée comme `@api` au lieu de . |
-| 1337 | Hérité d’Adobe Commerce `@deprecated` interface | L’interface obsolète sera supprimée dans les versions à venir. Envisagez de supprimer l’héritage de l’interface en utilisant une interface marquée comme `@api` ou une interface introduite dans votre implémentation. |
-| 1338 | Mise en oeuvre d’Adobe Commerce `@deprecated` interface | L’interface obsolète sera supprimée dans les versions à venir. Envisagez de supprimer l’héritage de l’interface en utilisant une interface marquée comme `@api` ou une interface introduite dans votre implémentation. |
+| 1337 | Hérité d’Adobe Commerce `@deprecated` interface | L’interface obsolète sera supprimée dans les versions à venir. Envisagez de supprimer l’héritage de l’interface en utilisant une interface marquée comme `@api` ou une interface introduite dans votre mise en oeuvre. |
+| 1338 | Mise en oeuvre d’Adobe Commerce `@deprecated` interface | L’interface obsolète sera supprimée dans les versions à venir. Envisagez de supprimer l’héritage de l’interface en utilisant une interface marquée comme `@api` ou une interface introduite dans votre mise en oeuvre. |
 | 1430 | Appel d’une méthode d’objet de données non déclarée | Les méthodes magiques non déclarées peuvent être modifiées. Utilisez plutôt des méthodes d’interface. |
 | 1439 | Appel d’Adobe Commerce `@deprecated` method | La méthode obsolète sera supprimée dans les versions à venir. Envisagez plutôt de vous fier aux méthodes déclarées dans les interfaces d’API. |
 | 1440 | Non-correspondance de la signature de méthode | Un appel ou un remplacement de la méthode principale est détecté avec des paramètres, des arguments ou un type de retour qui ne correspondent pas à la signature de la méthode. |
@@ -269,11 +269,11 @@ Des avertissements de code personnalisé sont générés lorsque les référence
 | 5074 | Utilisation d’une méthode obsolète `getResource()` aux données (enregistrement/chargement/suppression) détectées. | Utilisez un référentiel à la place. |
 | 5086 | La visibilité n&#39;est pas déclarée sur une constante | Déclarez la visibilité sur toutes les constantes. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Schéma GraphQL
 
-Des avertissements de schéma GraphQL sont générés lorsque des éléments supplémentaires sont ajoutés au schéma dans la nouvelle version. Il est recommandé de passer en revue la mise en oeuvre pour voir si elles doivent être utilisées pour les requêtes.
+Les avertissements de schéma GraphQL sont générés lorsque les éléments supplémentaires sont ajoutés au schéma dans la nouvelle version. Il est recommandé de passer en revue la mise en oeuvre pour voir si elles doivent être utilisées pour les requêtes.
 
 | Code d’erreur | Description de l’erreur | Action suggérée |
 | --- | --- | --- |
@@ -284,4 +284,4 @@ Des avertissements de schéma GraphQL sont générés lorsque des éléments sup
 | 3306 | Valeur ajoutée à l’énumération | Une valeur a été ajoutée à une énumération. Si les clients contiennent une instruction switch sur la valeur de l’énumération et n’incluent pas de casse par défaut, cette modification peut entraîner un comportement inattendu. |
 | 3308 | Argument facultatif ajouté | Si la requête utilise un nouvel argument dans la personnalisation, il peut être nécessaire de l’ajouter à la requête. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

@@ -45,7 +45,7 @@ Installation et configuration `php-fpm`:
    >
    >Cette commande installe la dernière version disponible de PHP 7.2.X. Voir [configuration requise](../../system-requirements.md) pour les versions PHP prises en charge.
 
-1. Ouvrez le `php.ini` dans un éditeur :
+1. Ouvrez le `php.ini` fichiers dans un éditeur :
 
    ```bash
    vim /etc/php/7.2/fpm/php.ini
@@ -117,7 +117,7 @@ Cet exemple présente une installation basée sur le compositeur à l’aide de 
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Lorsque vous y êtes invité, saisissez le [clés d’authentification](../authentication-keys.md). Votre _clé publique_ est votre nom d’utilisateur ; your _clé privée_ est votre mot de passe.
+   Lorsque vous y êtes invité, saisissez le [clés d’authentification](../authentication-keys.md). Votre _clé publique_ est votre nom d’utilisateur ; votre _clé privée_ est votre mot de passe.
 
 1. Définissez les autorisations de lecture-écriture pour le groupe de serveurs web avant d’installer l’application. Cela est nécessaire afin que la ligne de commande puisse écrire des fichiers dans le système de fichiers.
 
@@ -205,7 +205,7 @@ Ces instructions supposent que vous utilisez l’emplacement Ubuntu par défaut 
 
    >[!NOTE]
    >
-   >Le `include` doit pointer vers l’exemple de fichier de configuration nginx dans votre répertoire d’installation.
+   >La variable `include` doit pointer vers l’exemple de fichier de configuration nginx dans votre répertoire d’installation.
 
 1. Remplacer `www.magento-dev.com` par votre nom de domaine. Celui-ci doit correspondre à l’URL de base que vous avez spécifiée lors de l’installation d’Adobe Commerce ou de Magento Open Source.
 
@@ -261,7 +261,7 @@ Après avoir terminé les sections suivantes et installé l’application, nous 
 
 ### Installation et configuration de php-fpm
 
-Adobe Commerce et Magento Open Source nécessitent plusieurs [PHP](../php-settings.md) pour fonctionner correctement. Outre ces extensions, vous devez également installer et configurer la variable `php-fpm` si vous utilisez nginx.
+Adobe Commerce et Magento Open Source nécessitent plusieurs [PHP](../php-settings.md) des extensions pour fonctionner correctement. Outre ces extensions, vous devez également installer et configurer la variable `php-fpm` si vous utilisez nginx.
 
 1. Installer `php-fpm`:
 
@@ -318,7 +318,7 @@ Adobe Commerce et Magento Open Source nécessitent plusieurs [PHP](../php-settin
 
 1. Enregistrez l’éditeur, puis quittez-le.
 
-1. Créez un répertoire pour le chemin de session PHP et remplacez le propriétaire par le répertoire `apache` utilisateur et groupe :
+1. Créez un répertoire pour le chemin de session PHP et remplacez le propriétaire par le `apache` utilisateur et groupe :
 
    ```bash
    mkdir -p /var/lib/php/session/
@@ -328,7 +328,7 @@ Adobe Commerce et Magento Open Source nécessitent plusieurs [PHP](../php-settin
    chown -R apache:apache /var/lib/php/
    ```
 
-1. Créez un répertoire pour le chemin de session PHP et remplacez le propriétaire par le répertoire `apache` utilisateur et groupe :
+1. Créez un répertoire pour le chemin de session PHP et remplacez le propriétaire par le `apache` utilisateur et groupe :
 
    ```bash
    mkdir -p /run/php-fpm/
@@ -396,7 +396,7 @@ Cet exemple présente une installation basée sur le compositeur à l’aide de 
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Lorsque vous y êtes invité, saisissez le [clés d’authentification](../authentication-keys.md). Votre _clé publique_ est votre nom d’utilisateur ; your _clé privée_ est votre mot de passe.
+   Lorsque vous y êtes invité, saisissez le [clés d’authentification](../authentication-keys.md). Votre _clé publique_ est votre nom d’utilisateur ; votre _clé privée_ est votre mot de passe.
 
 1. Définissez les autorisations de lecture-écriture pour le groupe de serveurs web avant d’installer l’application. Cela est nécessaire afin que la ligne de commande puisse écrire des fichiers dans le système de fichiers.
 
@@ -481,7 +481,7 @@ Ces instructions supposent que vous utilisez l’emplacement par défaut de Cent
 
    >[!NOTE]
    >
-   >Le `include` doit pointer vers l’exemple de fichier de configuration nginx dans votre répertoire d’installation.
+   >La variable `include` doit pointer vers l’exemple de fichier de configuration nginx dans votre répertoire d’installation.
 
 1. Remplacer `www.magento-dev.com` par votre nom de domaine.
 

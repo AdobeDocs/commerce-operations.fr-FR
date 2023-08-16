@@ -1,6 +1,6 @@
 ---
 title: Configuration de l’application
-description: Découvrez la configuration post-installation requise pour les déploiements sur site d’Adobe Commerce et de Magento Open Source.
+description: Découvrez la configuration post-installation requise pour les déploiements Adobe Commerce et Magento Open Source sur site.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
 source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
@@ -16,7 +16,7 @@ Maintenant que vous avez fini d’installer Adobe Commerce ou Magento Open Sourc
 
 ## Configuration de cron
 
-Le planificateur de tâches UNIX, cron, est essentiel aux opérations quotidiennes de l’application. Il planifie des choses comme la réindexation, les newsletters, les emails et les plans de site. A *crontab* est une configuration cron.
+Le planificateur de tâches UNIX, cron, est essentiel aux opérations quotidiennes de l’application. Il planifie des choses comme la réindexation, les newsletters, les e-mails et les plans de site. A *crontab* est une configuration cron.
 
 Vous devez installer Adobe Commerce et les services Magento Open Source dans le *crontab* ou certaines fonctionnalités de base (et certaines extensions tierces) ne fonctionnent pas correctement.
 
@@ -43,11 +43,11 @@ Si vous utilisez le serveur web Apache, vous devez activer les réécritures du 
 
 Si vous avez plusieurs noeuds web, vous pouvez : *cannot* utilisez la mise en cache de fichier par défaut de l’application, car il n’existe aucune synchronisation entre les noeuds web. En d’autres termes, l’activité sur un noeud web n’est écrite que dans le système de fichiers de ce noeud web. L’activité suivante, si elle est exécutée sur un autre noeud web, peut entraîner l’écriture de fichiers inutiles ou entraîner des erreurs.
 
-À la place, utilisez [Redis](../../configuration/cache/config-redis.md) pour le cache par défaut et le cache de page.
+Utilisez plutôt [Redis](../../configuration/cache/config-redis.md) pour le cache par défaut et le cache de page.
 
 ## Paramètres du serveur
 
-Cette section décrit brièvement les paramètres que nous vous recommandons de prendre en compte pour le serveur sur lequel l’application s’exécute. Certains de ces paramètres ne sont pas directement liés à l’application ; elles sont fournies sous la forme de suggestions uniquement.
+Cette section décrit brièvement les paramètres que nous vous recommandons de prendre en compte pour le serveur sur lequel l’application s’exécute. Certains de ces paramètres ne sont pas directement liés à l’application ; ils sont fournis sous forme de suggestions uniquement.
 
 ### Rotation des logs
 
@@ -55,7 +55,7 @@ UNIX `logrotate` permet d’administrer des systèmes qui génèrent un grand no
 
 Pour plus d’informations, voir l’une des sections suivantes :
 
-* [HowTo: Tutoriel sur la commande de rotation de journal avec dix exemples](https://www.thegeekstuff.com/2010/07/logrotate-examples)
+* [HowTo : tutoriel sur la commande de rotation de journal avec dix exemples](https://www.thegeekstuff.com/2010/07/logrotate-examples)
 * [Stack Exchange](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
 * [`logrotate` page principale](https://linuxconfig.org/logrotate-8-manual-page)
 
@@ -70,7 +70,7 @@ En savoir plus :
 
 ### Règles Linux améliorées (SELinux) de sécurité
 
-Nous n’avons pas de recommandation pour l’utilisation de SELinux ; cependant, si vous l’utilisez, vous devez configurer les services pour qu’ils communiquent entre eux de la même manière que la configuration des iptables.
+Nous n’avons pas de recommandation pour savoir si vous utilisez SELinux ; toutefois, si vous l’utilisez, vous devez configurer les services pour communiquer les uns avec les autres comme pour configurer les iptables.
 
 En savoir plus :
 

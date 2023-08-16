@@ -1,7 +1,8 @@
 ---
-title: '"[!DNL Information]"'
+title: '[!DNL Information]'
 description: En savoir plus sur les [!UICONTROL Information] dans le [!DNL Site-Wide Analysis Tool], quand l’utiliser, ses avantages et ses bonnes pratiques.
-source-git-commit: 6cbb4b4fef5e1ccc06803b5a3af5dd9f4d0e7df8
+exl-id: 5f18b4c1-1812-4e9d-8b81-88cf6b9af860
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 0%
@@ -10,9 +11,9 @@ ht-degree: 0%
 
 # [!DNL Information]
 
-Le [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Information] affiche des informations de présentation sur votre site. Cette page affiche plus loin deux zones de produit dans le volet de navigation de gauche, **[!UICONTROL General Information]** et **Adobe Commerce**.
+La variable [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Information] affiche des informations de présentation sur votre site. Cette page affiche plus loin deux zones de produit dans le volet de navigation de gauche, **[!UICONTROL General Information]** et **Adobe Commerce**.
 
-Le [!UICONTROL General Information] affiche les données de la base du site commercial, le propriétaire du contact, [!DNL Jira] Problèmes (utilisation interne uniquement) et sections Billets de rapport .
+La variable [!UICONTROL General Information] affiche les données de la base du site commercial, le propriétaire du contact, [!DNL Jira] Problèmes (utilisation interne uniquement) et sections Billets de rapport .
 
 La zone Adobe Commerce s’affiche. [!UICONTROL Site Details], [!UICONTROL Products], [!UICONTROL Project] &amp; [!UICONTROL Integration links], [!UICONTROL Account], et [!UICONTROL Service and Components] sections.
 
@@ -28,4 +29,4 @@ Utilisez la variable [!UICONTROL Information] pour afficher tous les détails ci
 
 ## Bonnes pratiques
 
-Depuis la variable [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Information] Cette page répertorie les informations de présentation de votre site. Souvenez-vous de cette page pour accéder rapidement à vos informations en vue de la planification, de la maintenance ou de la prise en charge de votre magasin ou compte.
+Depuis la variable [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Information] Cette page répertorie les informations de présentation de votre site. Souvenez-vous de cette page pour accéder rapidement à vos informations en vue de la planification, de la maintenance ou de la prise en charge de votre boutique ou de votre compte.

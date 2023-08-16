@@ -20,7 +20,7 @@ Cette rubrique répertorie les actions que vous devez entreprendre pour gérer l
 
 ## Quel impact a une mise à niveau ?
 
-Il est important de comprendre les variables qui déterminent la complexité d’une mise à niveau. Vous devez tenir compte de ces variables au début de chaque projet, et pas seulement au moment de la mise à niveau. Le développement d’un projet est essentiel pour garantir que les futures mises à niveau se dérouleront sans problème et que vous pourrez contrôler les efforts nécessaires pour les terminer.
+Il est important de comprendre les variables qui déterminent la complexité d’une mise à niveau. Vous devez tenir compte de ces variables au début de chaque projet, et pas seulement au moment de la mise à niveau. Le développement d’un projet est essentiel pour garantir que les futures mises à niveau se dérouleront sans problème et pour que vous puissiez contrôler les efforts nécessaires pour les terminer.
 
 Le niveau d’effort nécessaire à la mise à niveau de votre instance Adobe Commerce dépend des facteurs suivants :
 
@@ -40,7 +40,7 @@ Si votre projet est actif, nous vous suggérons d’exécuter un audit afin de d
 
 ### Développement avec des mises à niveau à l’esprit
 
-Dès que vous commencez à travailler sur un projet, vous devez examiner l’impact de vos travaux actuels sur les futures mises à niveau. Suivez toujours les bonnes pratiques de développement d’Adobe Commerce comme décrit ici :
+Dès que vous commencez à travailler sur un projet, vous devez examiner l’impact de vos travaux actuels sur les futures mises à niveau. Suivez toujours les bonnes pratiques de développement d’Adobe Commerce, comme décrit ici :
 
 - [Bonnes pratiques de développement](https://developer.adobe.com/commerce/php/best-practices/)
 - [Normes de codage](https://developer.adobe.com/commerce/php/coding-standards/)
@@ -81,7 +81,7 @@ Les mises à niveau doivent être effectuées régulièrement et sous la forme d
 
 ### Test après la mise à niveau
 
-Le test est la phase de mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. Vous pouvez bénéficier de l’utilisation des outils de test de base. Le [Guide de test d’application](https://developer.adobe.com/commerce/testing/guide/) fournit des détails.
+Le test est la phase de mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. Vous pouvez bénéficier de l’utilisation des outils de test de base. La variable [Guide de test d’application](https://developer.adobe.com/commerce/testing/guide/) fournit des détails.
 
 Utilisez un environnement d’évaluation pour tester et valider votre mise à niveau avant de passer en production.
 

@@ -6,7 +6,7 @@ exl-id: ca73309c-7584-4506-99de-dd933651eeb6
 source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -16,7 +16,7 @@ Cette rubrique fournit des instructions pour le déploiement de mises à jour de
 
 ## Hypothèses
 
-- Vous avez installé Commerce à l’aide de [Compositeur](../../installation/composer.md).
+- Vous avez installé Commerce en utilisant [Compositeur](../../installation/composer.md).
 - Vous appliquez directement des mises à jour au serveur.
 
 >[!WARNING]
@@ -46,14 +46,14 @@ Cette rubrique fournit des instructions pour le déploiement de mises à jour de
    composer require-commerce <package> <version> --no-update
    ```
 
-   **package**: Le nom du package que vous souhaitez mettre à jour.
+   **package**: nom du package que vous souhaitez mettre à jour.
 
-   Par exemple :
+   Par exemple :
 
    - `magento/product-community-edition`
    - `magento/product-enterprise-edition`
 
-   **version**: La version cible du module que vous souhaitez mettre à jour.
+   **version**: la version cible du package que vous souhaitez mettre à jour.
 
 1. Mise à jour des composants avec le compositeur :
 

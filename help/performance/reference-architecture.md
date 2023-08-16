@@ -1,13 +1,13 @@
 ---
 title: Architecture de référence
 description: Examinez les diagrammes de l’architecture de référence recommandée pour les déploiements Adobe Commerce et Magento Open Source.
-source-git-commit: 065c56f20ba5b1eef8c331c5c2f5649902f1442b
+exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
 
 ---
-
 
 # Architecture de référence
 
@@ -17,7 +17,7 @@ Pour Adobe Commerce dans les environnements d’infrastructure cloud, voir [Arch
 
 ## [!DNL Commerce] Diagramme d’architecture de référence
 
-Le [!DNL Commerce] Le diagramme de l’architecture de référence représente l’approche recommandée pour la configuration d’une [!DNL Commerce] site.
+La variable [!DNL Commerce] Le diagramme de l’architecture de référence représente l’approche recommandée pour la configuration d’une [!DNL Commerce] site.
 
 La couleur de chaque élément du diagramme indique si l’élément fait partie de Magento Open Source ou d’Adobe Commerce et s’il est obligatoire.
 
@@ -49,8 +49,8 @@ Les sections suivantes contiennent des recommandations et des considérations po
 
 ### Base de données et files d’attente
 
-* Les sites à trafic élevé peuvent optimiser les performances de la base de données avec les bases de données de Secondaire et diviser les bases de données pour les commandes/paniers (dans Adobe Commerce).
-* Envisagez d’utiliser une base de données Secondaire pour permettre une récupération rapide et des sauvegardes de données.
+* Les sites à trafic élevé peuvent optimiser les performances de la base de données avec des bases de données esclaves et fractionner les bases de données pour les commandes/paniers (dans Adobe Commerce).
+* Envisagez d’utiliser une base de données esclave pour permettre une récupération rapide et des sauvegardes de données.
 * Les sites à faible trafic peuvent stocker des images dans la base de données
 
 ### Rechercher {#search-heading}

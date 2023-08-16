@@ -25,7 +25,7 @@ L’étape initiale de la stratégie de mise en cache doit donc être de défini
 | Catégories de produits | Infréquemment | Volume moyen | 1 jour |
 | Prix | Fréquemment | Élevée | Pas de cache |
 | Inventaire/stock | Fréquemment | Élevée | Pas de cache |
-| Recherche de site | La plupart des utilisateurs uniques | Volume moyen | Résultats du cache des 100 meilleures expressions de recherche pour 1 jour |
+| Recherche de site | La plupart des utilisateurs uniques | Volume moyen | Résultats de la mise en cache des 100 meilleures expressions de recherche pour 1 jour |
 | Passage en caisse | Chaque utilisateur unique | Très élevée | Pas de cache |
 | Panier | Chaque utilisateur unique | Très élevée | Pas de cache |
 | Pages de paiement | Chaque utilisateur unique | Très élevée | Pas de cache |

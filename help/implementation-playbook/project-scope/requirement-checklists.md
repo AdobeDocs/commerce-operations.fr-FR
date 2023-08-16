@@ -44,7 +44,7 @@ Les questions suivantes peuvent servir de point de départ pour déterminer quel
 
 - Quelle formation sera terminée avant la mise en service ?
 
-- Quelle formation sera terminée après la mise en service ?
+- Quelle formation sera complétée après la mise en service ?
 
 - Quelle sera la prise en charge d’Adobe Commerce après la mise en service ?
 
@@ -56,17 +56,17 @@ Les questions suivantes peuvent servir de point de départ pour déterminer quel
 
 - D&#39;où voyez-vous la croissance future dans votre entreprise ?
 
-- Quel rôle joue le commerce numérique dans votre stratégie commerciale ? Quels sont vos Principaux objectifs de configuration de cette plateforme de commerce électronique ?
+- Quel rôle joue le commerce numérique dans votre stratégie commerciale ? Quels sont vos principaux objectifs de configuration de cette plateforme de commerce électronique ?
 
 - Avez-vous des marques ou des entreprises que vous prenez comme référence sur la manière dont vous développez votre activité omnicanal ?
 
-- Quelles équipes ou individus pilotent la stratégie de commerce électronique ? Décrivez les positions correspondantes.
+- Quelles sont les équipes ou les personnes qui pilotent la stratégie du commerce électronique ? Décrivez les positions correspondantes.
 
 ## Plateforme actuelle
 
-- Comment la plateforme actuelle est-elle hébergée ? Interne, fournisseur d’hébergement, serveurs cloud privés ou serveurs cloud hébergés ?
+- Comment la plateforme actuelle est-elle hébergée : interne, fournisseur d’hébergement, serveurs cloud privés ou serveurs cloud hébergés ?
 
-- Quels environnements possède la plateforme actuelle ? développement, contrôle qualité, pré-production, production ?
+- Quels environnements possède la plateforme actuelle : développement, contrôle qualité, pré-production, production ?
 
 - Combien de serveurs web et de base de données se trouvent dans l’environnement de développement ?
 
@@ -96,9 +96,9 @@ Les questions suivantes peuvent servir de point de départ pour déterminer quel
 
 - Quelle version d’Adobe Commerce utiliserez-vous ?
 
-- Comment sera hébergée la future plateforme : Interne, fournisseur d’hébergement, serveurs cloud privés ou serveurs cloud hébergés ?
+- Comment la future plateforme sera-t-elle hébergée : interne, fournisseur d’hébergement, serveurs cloud privés ou serveurs cloud hébergés ?
 
-- Quels environnements auront la plateforme future ? développement, contrôle qualité, pré-production, production ?
+- Quels environnements la future plateforme aura-t-elle : développement, contrôle qualité, pré-production, production ?
 
 - Combien de serveurs web et de base de données seront présents dans l’environnement de développement ?
 
@@ -138,9 +138,9 @@ Les questions suivantes peuvent servir de point de départ pour déterminer quel
 
 - Avez-vous besoin d’un thème de site web international personnalisé ?
 
-- S’agit-il principalement d’un site B2C ou B2B ? Y a-t-il un élément B2B2B ou B2B2C ?
+- Est-ce principalement un site B2C ou B2B ? Y a-t-il un élément B2B2B ou B2B2C ?
 
-- Existe-t-il une conception adaptée ou la plateforme sera-t-elle entièrement conçue ?
+- Existe-t-il une conception adaptée ou la plate-forme sera-t-elle entièrement conçue ?
 
 - Existe-t-il une exigence pour le commerce sans interface (couches frontales et principales distinctes) ?
 
@@ -170,7 +170,7 @@ Existe-t-il des API qui peuvent être utilisées ?
 
 - La gestion des erreurs système a-t-elle été conçue et développée pour cette intégration de système tiers ?
 
-- Quel système ERP sera intégré à Adobe Commerce ? (Exemples : SAP, MS Dynamics NAV)
+- Quel système ERP sera intégré à Adobe Commerce ? Exemples : SAP, MS Dynamics NAV
 
 - Quel système de transport sera intégré à Adobe Commerce ?
 
@@ -304,21 +304,21 @@ Existe-t-il des API qui peuvent être utilisées ?
 
 - Permettrez-vous aux clients de recommander un produit ?
 
-- Ventes : Commandes, taxes, factures, expédition, remboursements, coupons, rapports de règlement PayPal
+- Ventes : commandes, taxes, factures, expédition, remboursements, coupons, rapports de règlement PayPal
 
-- Panier : Produits dans les paniers, arts abandonnés
+- Panier : produits en panier, arts abandonnés
 
 - Produits : Bestsellers, produits commandés, les plus consultés, faible stock, téléchargements
 
-- Clients : Nouveaux comptes, clients par total de commandes, clients par nombre de commandes, segments de clients, commentaires de clients
+- Clients : nouveaux comptes, clients par total de commandes, clients par nombre de commandes, segments de clients, commentaires de clients
 
 - Études de produits
 
-- Balises : Clients, produits, populaires
+- Balises : clients, produits, populaires
 
 - Termes de recherche
 
-- Invitations : Général, clients, taux de conversion de commande
+- Invitations : générales, clients, taux de conversion de commande
 
 - Auriez-vous besoin d’Adobe Commerce pour générer des rapports basés sur les données d’utilisation des coupons ?
 
@@ -330,7 +330,7 @@ Existe-t-il des API qui peuvent être utilisées ?
 
 - Quelle sera votre nouvelle stratégie d’optimisation pour les moteurs de recherche ?
 
-- Quelles sont vos exigences en matière de migration d’optimisation pour les moteurs de recherche ?
+- Quelles sont vos exigences en matière de migration SEO ?
 
 - Stocker les taux fixes dans Adobe Commerce ?
 

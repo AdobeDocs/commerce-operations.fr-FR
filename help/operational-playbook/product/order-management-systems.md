@@ -18,11 +18,11 @@ Un e-commerce OMS est le système principal responsable de la gestion des comman
 
 Un système d’exploitation fournit l’intégration et l’automatisation par le biais du parcours de commande client dans le serveur principal, ce qui permet aux détaillants de fournir des expériences client optimisées. Un système OMS aide les détaillants à traiter les commandes provenant de plusieurs canaux et à faciliter l’emballage et l’expédition vers différents emplacements, tout en fournissant aux clients des mises à jour en temps réel par le biais de différents supports.
 
-Un système OMS est important pour un site de commerce électronique, car il permet aux marques de croître. Les clients ont des attentes élevées, ce qui ne laisse aucune place à l’erreur. Voici quelques-unes des raisons pour lesquelles un OMS est essentiel :
+Un système d’exploitation est important pour un site de commerce électronique, car il permet aux marques de croître. Les clients ont des attentes élevées, ce qui ne laisse aucune place à l’erreur. Voici quelques-unes des raisons pour lesquelles un OMS est essentiel :
 
-- **Une diffusion plus rapide**—À l’ère de la livraison le jour suivant ou de 2 jours, les entreprises doivent rechercher des moyens de faire passer leurs commandes plus rapidement, car la fenêtre d’exécution des commandes est de plus en plus étroite. Un système d’exploitation est immédiatement informé lorsqu’une commande est passée et le système d’exploitation peut choisir l’entrepôt le plus proche de la destination de la commande pour accélérer la livraison. Le système d’exploitation envoie des informations de commande automatisées à l’équipe de l’entrepôt afin de préparer et d’emballer la commande à expédier à l’aide d’une méthode d’expédition rentable.
+- **Une diffusion plus rapide**—À l’ère de la livraison le jour suivant ou de 2 jours, les entreprises doivent rechercher des moyens de faire passer leurs commandes plus rapidement, car la fenêtre d’exécution des commandes devient plus étroite. Un système d’exploitation est immédiatement informé lorsqu’une commande est passée et le système d’exploitation peut choisir l’entrepôt le plus proche de la destination de la commande pour accélérer la livraison. Le système d’exploitation envoie des informations de commande automatisées à l’équipe de l’entrepôt afin de préparer et d’emballer la commande à expédier à l’aide d’une méthode d’expédition rentable.
 
-- **Erreurs limitées**: Un système OMS permet de réduire les erreurs humaines. Ces erreurs peuvent être longues et coûteuses. Un système d’exploitation avertit l’équipe lorsqu’un stock est faible, lorsqu’un produit n’est pas vendu ou quel produit a le taux de rendement le plus élevé. Cela permet à l’entreprise de corriger les erreurs d’expédition et d’analyser la raison des retours.
+- **Erreurs limitées**: un système OMS permet de réduire les erreurs humaines. Ces erreurs peuvent être longues et coûteuses. Un système d’exploitation avertit l’équipe lorsqu’un stock est faible, lorsqu’un produit n’est pas vendu ou quel produit a le taux de rendement le plus élevé. Cela permet à l’entreprise de corriger les erreurs d’expédition et d’analyser la raison des retours.
 
 - **Augmentation de l’évolutivité**— Un système d&#39;exploitation se met à l&#39;échelle en fonction des besoins de l&#39;entreprise, contrairement aux systèmes manuels plus anciens. Le logiciel OMS permet aux entreprises de s&#39;adapter au marché.
 
@@ -37,11 +37,11 @@ Un système OMS est important pour un site de commerce électronique, car il per
 
 Les entreprises et les détaillants doivent choisir le système d&#39;exploitation qui répond le mieux à leurs besoins. Les entreprises doivent commencer par les considérations suivantes :
 
-- Comprendre les commandes, les produits, le stock, l’expédition et l’emballage de leurs clients
+- Comprendre les commandes, les produits, l’inventaire, l’expédition et l’emballage de leurs clients
 
 - Déterminer comment et quand le système OMS communique avec les systèmes de l’entreprise au cours du processus de commande
 
-- Déterminez ce que le système d’exploitation doit faire lorsqu’une commande a été passée (par exemple, avec quels systèmes d’entreprise doit-il communiquer ?) et l’étape suivante à suivre après cette communication
+- Déterminez ce que le système d’exploitation doit faire lorsqu’une commande a été passée (par exemple, avec quels systèmes d’entreprise doit-il communiquer ?) et l’étape suivante après cette communication
 
 - Déterminez les tâches de l’entrepôt à automatiser, telles que le calcul des frais de livraison, l’allocation du mode de livraison, les bordereaux d’emballage et la mise à jour du stock.
 
@@ -53,7 +53,7 @@ Les entreprises et les détaillants doivent choisir le système d&#39;exploitati
 
 - Déterminer si l’entreprise peut se permettre un système d’exploitation à part entière (ou une partie de celui-ci)
 
-- Planifiez un projet pour mettre en oeuvre le système d’exploitation et former l’équipe à l’utiliser.
+- Planifiez un projet de mise en oeuvre du système d’exploitation et formez l’équipe à l’utiliser.
 
 ![Diagramme du système de gestion des commandes](../../assets/playbooks/order-management-system.png)
 
@@ -85,7 +85,7 @@ La gestion des commandes peut s’avérer efficace pour les entreprises B2B et B
 
 - Aide à la centralisation des informations à partir de plusieurs canaux
 
-- Réduit la complexité une fois qu’elle a été implémentée
+- Réduit la complexité une fois qu’elle a été mise en oeuvre
 
 - Aide au suivi des commandes
 

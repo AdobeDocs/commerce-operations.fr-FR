@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Lors du déploiement de fichiers d’affichage statiques, vous pouvez choisir l’une des trois stratégies disponibles. Chacune d’elles fournit des résultats de déploiement optimaux pour différents cas d’utilisation :
 
-- [Standard](#standard-strategy): le processus de déploiement régulier.
-- [Quick](#quick-strategy) (_default_) : réduit le temps nécessaire au déploiement des fichiers pour plusieurs paramètres régionaux.
-- [Compact](#compact-strategy): réduit l’espace occupé par les fichiers d’affichage publiés.
+- [Standard](#standard-strategy): processus de déploiement régulier.
+- [Rapide](#quick-strategy) (_default_) : réduit le temps nécessaire au déploiement lorsque des fichiers pour plusieurs paramètres régionaux sont déployés.
+- [Compact](#compact-strategy): réduit l’espace pris par les fichiers d’affichage publiés.
 
 Les sections suivantes décrivent les détails et les fonctionnalités de mise en oeuvre de chaque stratégie.
 
@@ -46,7 +46,7 @@ Cette approche réduit le temps de déploiement requis pour plusieurs paramètre
 
 La stratégie compacte évite la duplication des fichiers en stockant des fichiers similaires dans `base` sous-répertoires.
 
-Pour le résultat le plus optimisé, trois portées pour une similarité possible sont attribuées : zone, thème et paramètre régional. Le `base` les sous-répertoires sont créés pour toutes les combinaisons de ces portées.
+Pour le résultat le plus optimisé, trois portées d’une similarité possible sont attribuées : zone, thème et paramètre régional. La variable `base` les sous-répertoires sont créés pour toutes les combinaisons de ces portées.
 
 Les fichiers sont déployés dans ces sous-répertoires selon les modèles suivants.
 
@@ -66,9 +66,9 @@ L’approche de déploiement utilisée dans la stratégie compacte signifie que 
 - `map.php`
 - `requirejs-map.js`
 
-Le `map.php` est utilisé par [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) pour créer des URL correctes.
+La variable `map.php` est utilisé par [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) pour créer des URL correctes.
 
-Le `requirejs-map.js` est utilisé par la variable `baseUrlResolver` module externe pour RequireJS.
+La variable `requirejs-map.js` est utilisé par la variable `baseUrlResolver` pour RequireJS.
 
 Exemple d&#39;un `map.php`:
 

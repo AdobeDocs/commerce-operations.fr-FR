@@ -1,13 +1,13 @@
 ---
 title: Outil de ligne de commande
 description: Utilisez l’outil de ligne de commande Commerce pour exécuter les tâches d’installation et de configuration.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
 
 ---
-
 
 # Outil de ligne de commande
 
@@ -15,7 +15,7 @@ Commerce possède une interface de ligne de commande —`<magento_root>/bin/mage
 
 - L’installation de Commerce (et des tâches connexes telles que la mise à jour du schéma de base de données, créer une configuration de déploiement)
 - Effacement du cache
-- Gestion des index, y compris la réindexation
+- Gestion des index, notamment réindexation
 - Création de dictionnaires de traduction et de packages de traduction
 - Génération de classes inexistantes, telles que des usines et des intercepteurs pour les modules externes, générant la configuration d’injection de dépendance pour le gestionnaire d’objets
 - Déploiement de fichiers d’affichage statique

@@ -18,13 +18,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->La prise en charge d’OpenSearch a été ajoutée dans la version 2.4.4. OpenSearch est un double compatible avec les Elasticsearch. Voir [Migration de l’Elasticsearch vers OpenSearch](../../../upgrade/prepare/opensearch-migration.md) pour plus d’informations.
+>La prise en charge d’OpenSearch a été ajoutée à la version 2.4.4. OpenSearch est un double compatible d’Elasticsearch. Voir [Migration de l’Elasticsearch vers OpenSearch](../../../upgrade/prepare/opensearch-migration.md) pour plus d’informations.
 
-Cette section explique comment configurer nginx en tant que *unsecure* pour qu’Adobe Commerce puisse utiliser un moteur de recherche s’exécutant sur ce serveur. Cette section ne traite pas de la configuration de l’authentification HTTP de base ; qui sont abordés dans [Communication sécurisée avec nginx](#secure-communication-with-nginx).
+Cette section explique comment configurer nginx en tant que *unsecure* pour qu’Adobe Commerce puisse utiliser un moteur de recherche s’exécutant sur ce serveur. Cette section ne traite pas de la configuration de l’authentification HTTP de base. C’est ce qui est décrit dans la section [Communication sécurisée avec nginx](#secure-communication-with-nginx).
 
 >[!NOTE]
 >
->La raison pour laquelle le proxy n’est pas sécurisé dans cet exemple est qu’il est plus facile de configurer et de vérifier. Vous pouvez utiliser TLS avec ce proxy si vous le souhaitez ; pour ce faire, veillez à ajouter les informations proxy à votre configuration de bloc de serveur sécurisée.
+>La raison pour laquelle le proxy n’est pas sécurisé dans cet exemple est qu’il est plus facile de configurer et de vérifier. Si vous le souhaitez, vous pouvez utiliser TLS avec ce proxy. Pour ce faire, veillez à ajouter les informations du proxy à votre configuration de bloc de serveur sécurisée.
 
 ### Spécifier des fichiers de configuration supplémentaires dans votre configuration globale
 
@@ -95,12 +95,12 @@ Pour plus d’informations, reportez-vous aux sections suivantes :
 
 * [Créer des mots de passe](#create-a-password)
 * [Configurer l’accès à nginx](#set-up-access-to-nginx)
-* [Configuration d’un contexte restreint pour le moteur de recherche](#set-up-a-restricted-context-for-the-search-engine)
+* [Configurer un contexte restreint pour le moteur de recherche](#set-up-a-restricted-context-for-the-search-engine)
 * [Vérifier que la communication est sécurisée](#secure-communication-with-nginx)
 
-### Création d’un mot de passe
+### Créer un mot de passe
 
-Nous vous recommandons d’utiliser Apache `htpasswd` pour coder les mots de passe d’un utilisateur ayant accès à Elasticsearch ou OpenSearch (nommé `magento_elasticsearch` dans cet exemple).
+Nous vous recommandons d’utiliser Apache. `htpasswd` pour coder les mots de passe d’un utilisateur ayant accès à Elasticsearch ou OpenSearch (nommé `magento_elasticsearch` dans cet exemple).
 
 Pour créer un mot de passe :
 
@@ -110,7 +110,7 @@ Pour créer un mot de passe :
    which htpasswd
    ```
 
-   Si un chemin s’affiche, il est installé ; si la commande ne renvoie aucune sortie, `htpasswd` n’est pas installé.
+   Si un chemin d’accès s’affiche, il est installé ; si la commande ne renvoie aucune sortie, `htpasswd` n’est pas installé.
 
 1. Si nécessaire, installez . `htpasswd`:
 
@@ -129,7 +129,7 @@ Pour créer un mot de passe :
 
    >[!WARNING]
    >
-   >Pour des raisons de sécurité, `<filename>` doit être masqué ; c&#39;est-à-dire qu&#39;il doit commencer par un point.
+   >Pour des raisons de sécurité, `<filename>` doit être masqué, c&#39;est-à-dire qu&#39;il doit commencer par un point.
 
 1. *(Facultatif).* Pour ajouter un autre utilisateur à votre fichier de mot de passe, saisissez la même commande sans le champ `-c` Option (créer) :
 
@@ -182,7 +182,7 @@ server {
 >
 >Le port d’écoute du moteur de recherche illustré dans l’exemple précédent n’est que des exemples. Pour des raisons de sécurité, nous vous recommandons d’utiliser un port d’écoute autre que celui par défaut.
 
-### Configuration d’un contexte restreint pour le moteur de recherche
+### Configurer un contexte restreint pour le moteur de recherche
 
 Cette section explique comment spécifier qui peut accéder au serveur du moteur de recherche.
 

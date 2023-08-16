@@ -1,11 +1,11 @@
 ---
 user-guide-title: Manuel opérationnel
-user-guide-description: Découvrez comment préparer vos entreprises sur le plan opérationnel à l’exécution d’un site de commerce électronique réussi.
+user-guide-description: Découvrez comment préparer vos entreprises sur le plan opérationnel à l’exécution d’un site d’e-commerce réussi.
 feature: Best Practices
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 0%
+ht-degree: 13%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 - Solution {#solution}
    - [Software-as-a-service (SaaS)](solution/software-service.md)
    - [Plateforme en tant que service (PaaS)](solution/platform-service.md)
-   - [Hébergement sur site](solution/on-premises.md)
+   - [Hébergement local](solution/on-premises.md)
    - [Cloud et sur site](solution/hosting-comparison.md)
    - [Intégrations tierces](solution/integrations.md)
    - [Mises à niveau, sauvegardes et maintenance](solution/maintenance.md)
@@ -53,7 +53,7 @@ ht-degree: 0%
    - [Rôles et responsabilités](people/roles-responsibilities.md)
    - [Ressources](people/resources.md)
    - [Culture](people/culture.md)
-   - [Équipe de projet](people/project-teams.md)
+   - [Équipes de projet](people/project-teams.md)
 - Produit {#product}
    - [Systèmes de gestion des commandes](product/order-management-systems.md)
    - [Livraison et exécution](product/shipping-fulfillment.md)

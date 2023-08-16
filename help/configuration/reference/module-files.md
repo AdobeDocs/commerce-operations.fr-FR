@@ -1,13 +1,13 @@
 ---
 title: Fichiers de configuration de module
 description: Découvrez comment personnaliser un module à l’aide de types de configuration.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '2024'
 ht-degree: 0%
 
 ---
-
 
 # Présentation des fichiers de configuration de module
 
@@ -19,9 +19,9 @@ Plusieurs modules peuvent déclarer des fichiers de configuration qui affectent 
 
 Vous trouverez ci-dessous les termes courants utilisés dans cette rubrique :
 
-- **Objet de configuration**: bibliothèque de commerce ou classe responsable de la définition et de la validation du type de configuration. Par exemple, l’objet de configuration pour `config.xml` is [Magento\Framework\App\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config.php).
+- **Objet de configuration**: bibliothèque ou classe Commerce chargée de définir et de valider le type de configuration. Par exemple, l’objet de configuration pour `config.xml` is [Magento\Framework\App\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config.php).
 
-- **Etape de configuration**: les étapes sont définies comme _Principal_, _global_, et _area_. Chaque étape détermine le moment où le type de configuration est chargé et fusionné avec les types de configuration du même nom. Par exemple : `module.xml` Les fichiers sont fusionnés avec d’autres `module.xml` fichiers .
+- **Etape de configuration**: les étapes sont définies comme _primary_, _global_, et _area_. Chaque étape détermine le moment où le type de configuration est chargé et fusionné avec les types de configuration du même nom. Par exemple : `module.xml` Les fichiers sont fusionnés avec d’autres `module.xml` fichiers .
 
 - **Étendue de la configuration**—Complémentaire aux étapes de configuration, un périmètre définit le modèle de type de configuration. Par exemple : `adminhtml` est une portée de zone chargée avec à l’étape avec d’autres modules `adminhtml` configurations. Pour plus d’informations, voir [Modules et zones](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
 
@@ -33,7 +33,7 @@ Cette section explique comment les fichiers de configuration sont chargés et fu
 
 Commerce charge les fichiers de configuration dans l’ordre suivant (tous les chemins sont relatifs à votre répertoire d’installation Commerce) :
 
-- Configuration Principal ([app/etc/di.xml](https://github.com/magento/magento2/blob/2.4/app/etc/di.xml)). Ce fichier est utilisé pour démarrer Commerce.
+- Configuration du Principal ([app/etc/di.xml](https://github.com/magento/magento2/blob/2.4/app/etc/di.xml)). Ce fichier est utilisé pour démarrer Commerce.
 - Configurations globales à partir de modules (`<your component base dir>/<vendorname>/<component-type>-<component-name>/etc/*.xml`). Collecte certains fichiers de configuration de tous les modules et les fusionne.
 - Configuration spécifique à une zone à partir des modules (`<your component base dir>/<vendorname>/<component-type>-<component-name>/etc/<area>/*.xml`). Collecte des fichiers de configuration de tous les modules et les fusionne dans la configuration globale. Certaines configurations spécifiques à une zone peuvent remplacer ou étendre la configuration globale.
 
@@ -43,15 +43,15 @@ where
 - `<vendorname>` est le nom du fournisseur du composant ; par exemple, le nom du fournisseur de Commerce est `magento`.
 - `<component-type>` est l’un des suivants :
 
-   - `module-`: Une extension ou un module.
-   - `theme-`: Thème.
-   - `language-`: Package de langue.
+   - `module-`: une extension ou un module.
+   - `theme-`: thème.
+   - `language-`: package de langue.
 
 >[!INFO]
 >
 >Actuellement, les thèmes se trouvent sous `<magento_root>/app/design/frontend` ou `<magento_root>/app/design/adminhtml`.
 
-- `<component-name>`: Nom de votre composant tel que défini dans [compositeur.json](https://github.com/magento/magento2/blob/2.4/composer.json).
+- `<component-name>`: nom de votre composant tel que défini dans [compositeur.json](https://github.com/magento/magento2/blob/2.4/composer.json).
 
 ### Fusion du fichier de configuration
 
@@ -79,21 +79,21 @@ Le tableau suivant présente chaque type de configuration et l’objet de config
 
 | Fichier de configuration | Description | Évaluation | Objet de configuration |
 | --- | --- | --- | --- |
-| `address_formats.xml` | Déclaration du format d’adresse | Principale, globale | [\Magento\Customer\Model\Address\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Address/Config.php) |
+| `address_formats.xml` | Déclaration du format d’adresse | principal, global | [\Magento\Customer\Model\Address\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Address/Config.php) |
 | `acl.xml` | [Liste de contrôle d’accès](https://developer.adobe.com/commerce/webapi/get-started/authentication/#relationship-between-aclxml-and-webapixml) | global | [\Magento\Framework\Acl\AclResource\Provider](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Acl/AclResource/Provider.php) |
-| `analytics.xml` | [Rapports avancés](https://devdocs.magento.com/guides/v2.4/advanced-reporting/data-collection.html) | Principale, globale | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
-| `cache.xml` | Déclaration du type de cache | Principale, globale | [\Magento\Framework\Cache\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Config/Data.php) |
+| `analytics.xml` | [Création de rapports avancés](https://devdocs.magento.com/guides/v2.4/advanced-reporting/data-collection.html) | principal, global | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
+| `cache.xml` | Déclaration du type de cache | principal, global | [\Magento\Framework\Cache\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Config/Data.php) |
 | `catalog_attributes.xml` | Configuration des attributs du catalogue | global | [\Magento\Catalog\Model\Attribute\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Attribute/Config/Data.php) |
 | `config.php` et `env.php` | [Configuration du déploiement](../reference/deployment-files.md) | Ces fichiers sont lisibles/modifiables par le processeur de configuration interne. | Sans objet, ne peut pas être personnalisé |
-| `config.xml` | Configuration du système | Principale, globale | [\Magento\Framework\App\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config.php) |
-| `communication.xml` | [Définit les aspects du système de file d’attente des messages.](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#communicationxml) | global | [\Magento\WebapiAsync\Code\Generator\Config\RemoteServiceReader\Communication](https://github.com/magento/magento2/blob/2.4/app/code/Magento/WebapiAsync/Code/Generator/Config/RemoteServiceReader/Communication.php) |
+| `config.xml` | Configuration du système | principal, global | [\Magento\Framework\App\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config.php) |
+| `communication.xml` | [Définit les aspects du système de file de messages](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#communicationxml) | global | [\Magento\WebapiAsync\Code\Generator\Config\RemoteServiceReader\Communication](https://github.com/magento/magento2/blob/2.4/app/code/Magento/WebapiAsync/Code/Generator/Config/RemoteServiceReader/Communication.php) |
 | `crontab.xml` | [Configuration des groupes cron](../cron/custom-cron-reference.md#configure-cron-groups) | global | [\Magento\Cron\Model\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Cron/Model/Config/Data.php) |
 | `cron_groups.xml` | [Spécifie les options du groupe cron](../cron/custom-cron-reference.md) | global | [\Magento\Cron\Model\Groups\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Cron/Model/Groups/Config/Data.php) |
 | `db_schema.xml` | [Schéma déclaratif](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) | global | [Magento\Framework\Setup\Declaration\Schema](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/Declaration/Schema/SchemaConfig.php) |
-| `di.xml` | [Injection de dépendance](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) configuration | Principale, globale, zone | [\Magento\Framework\ObjectManager\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/ObjectManager/Config/Config.php) |
+| `di.xml` | [Injection de dépendance](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) configuration | principal, global, zone | [\Magento\Framework\ObjectManager\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/ObjectManager/Config/Config.php) |
 | `eav_attributes.xml` | Fournit la configuration des attributs d’expérience visuelle | global | [\Magento\Eav\Model\Entity\Attribute\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Eav/Model/Entity/Attribute/Config.php) |
 | `email_templates.xml` | Configuration des modèles d&#39;email | global | [\Magento\Email\Model\Template\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Email/Model/Template/Config/Data.php) |
-| `esconfig.xml` | [Configuration des mots-clés du paramètre régional du moteur de recherche](../search/search-stopwords.md#create-stopwords-for-a-new-locale) | global | [\Magento\Elasticsearch\Model\Adapter\Index\Config\EsConfig](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Elasticsearch/Model/Adapter/Index/Config/EsConfig.php) |
+| `esconfig.xml` | [Configuration des mots-arrêts du moteur de recherche](../search/search-stopwords.md#create-stopwords-for-a-new-locale) | global | [\Magento\Elasticsearch\Model\Adapter\Index\Config\EsConfig](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Elasticsearch/Model/Adapter/Index/Config/EsConfig.php) |
 | `events.xml` | Configuration des événements/observateurs | global, zone | [\Magento\Framework\Event](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Event.php) |
 | `export.xml` | Exporter la configuration des entités | global | [\Magento\ImportExport\Model\Export\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/ImportExport/Model/Export/Config.php) |
 | `extension_attributes.xml` | [Attributs d’extension](https://developer.adobe.com/commerce/php/development/components/attributes/#extension-attributes) | global | [\Magento\Framework\Api\ExtensionAttribute\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/ExtensionAttribute/Config.php) |
@@ -101,9 +101,9 @@ Le tableau suivant présente chaque type de configuration et l’objet de config
 | `indexer.xml` | [Déclarer les indexeurs](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer/) | global | [\Magento\Framework\Indexer\Config\Reader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Indexer/Config/Reader.php) |
 | `import.xml` | Déclarer les entités d’importation | global | [\Magento\ImportExport\Model\Import\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/ImportExport/Model/Import/Config.php) |
 | `menu.xml` | Définit les options de menu pour l’administrateur. | adminhtml | [\Magento\Backend\Model\Menu\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Backend/Model/Menu/Config/Reader.php) |
-| `module.xml` | Définit les données de configuration de module et la dépendance de type Soft. | Principale, globale | [\Magento\Framework\Module\ModuleList\Loader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Module/ModuleList/Loader.php) |
-| `mview.xml` | [Configuration du mode MV](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer/#mview-configuration) | Principale, globale | [\Magento\Framework\Mview\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Mview/Config/Data.php) |
-| `payment.xml` | Configuration du module de paiement | Principale, globale | [\Magento\Payment\Model\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Model/Config.php) |
+| `module.xml` | Définit les données de configuration de module et la dépendance de type Soft. | principal, global | [\Magento\Framework\Module\ModuleList\Loader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Module/ModuleList/Loader.php) |
+| `mview.xml` | [Configuration du mode MV](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer/#mview-configuration) | principal, global | [\Magento\Framework\Mview\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Mview/Config/Data.php) |
+| `payment.xml` | Configuration du module de paiement | principal, global | [\Magento\Payment\Model\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Model/Config.php) |
 | `persistent.xml` | [Magento_Persistent](https://developer.adobe.com/commerce/php/module-reference/module-persistent/) fichier de configuration | global | [\Magento\Persistent\Helper\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Persistent/Helper/Data.php) |
 | `pdf.xml` | Paramètres du PDF | global | [\Magento\Sales\Model\Order\Pdf\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config/Reader.php) |
 | `product_options.xml` | Configuration des options de produit | global | [\Magento\Catalog\Model\ProductOptions\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductOptions/Config.php) |

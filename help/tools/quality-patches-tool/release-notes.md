@@ -373,7 +373,7 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 
 ## v1.1.12 {#v1-1-12}
 
-* **MDVA-39713** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.3.6*) - Correction du problème en raison duquel l’utilisateur était en mesure de modifier l’heure de début d’une principale mise à jour planifiée.
+* **MDVA-39713** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.3.6*) - Correction du problème en raison duquel l’utilisateur était en mesure de modifier l’heure de début d’une mise à jour planifiée active.
 * **MDVA-42410** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.5*) : correction d’un problème en raison duquel les rapports de coupon n’affichaient que la devise de base par défaut.
 * **MDVA-41136** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.5*) - Correction du problème en raison duquel la date d’expiration de la variable `mage-cache-sessid` n’est pas étendue, ce qui entraîne un nettoyage des données client.
 * **MDVA-39993** (*pour Adobe Commerce et Magento Open Source >=2.3.5 &lt;=2.3.7-p2 || >=2.4.0 &lt;2.4.4*) - Correction du problème en raison duquel les modifications d’inventaire effectuées par le biais de l’API ne se répercutent pas sur la page du produit sur l’interface.
@@ -468,7 +468,7 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 * **MDVA-41046** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.4*) - Correction du problème en raison duquel des produits simples avec des options personnalisées étaient disponibles pour l’affectation à des produits configurables/regroupés.
 * **MDVA-40545** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.4*) - Correction du problème en raison duquel seul le premier noeud d’une page était récupéré même s’il existait plusieurs noeuds pour la même page.
 * **MDVA-41164** (*pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.3-p1*) - Correction du problème qui empêchait un utilisateur administrateur d’enregistrer ou de modifier une société avec un attribut client personnalisé de type fichier ou image.
-* **MDVA-39229** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.4*) - Correction du problème qui entraînait l’affichage de l’erreur suivante après la mise à jour de l’heure de début de mise à jour de la règle de catalogue intermédiaire : *Une erreur s’est produite lors de la mise à jour de la tâche Cron staging_synchronize_entities_period : la principale mise à jour ne peut pas être supprimée.*
+* **MDVA-39229** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.4*) - Correction du problème qui entraînait l’affichage de l’erreur suivante après la mise à jour de l’heure de début de mise à jour de la règle de catalogue intermédiaire : *Une erreur s’est produite lors de la mise à jour de Cron Job staging_synchronize_entities_period : la mise à jour active ne peut pas être supprimée.*
 * **MDVA-40619** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.4*) - Correction du problème qui entraînait une erreur 500 lors de la tentative de modification en ligne d’une page CMS suite à des modifications apportées à la hiérarchie de la page CMS.
 * **MDVA-41061** (*pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.3*) - Correction du problème de réinitialisation de l’état du stock sur vendable lorsqu’un produit est enregistré depuis l’administrateur.
 * **MDVA-31763** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.4*) - Correction du problème en raison duquel les règles de prix du catalogue étaient restaurées (ou non appliquées) jusqu’à la réindexation manuelle.
@@ -492,7 +492,7 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 
 * **MDVA-40262** (*pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.4*) - Correction du problème qui empêchait l’affichage des requêtes de recherche GraphQL dans les termes de recherche courants dans l’Admin.
 * **MDVA-40601** (*pour Adobe Commerce et Magento Open Source >=2.3.1 &lt;=2.4.2-p2*) - Correction du problème qui entraînait une erreur des utilisateurs lorsqu’ils tentaient d’obtenir des informations sur la catégorie modifiée par une mise à jour planifiée via GraphQL.
-* **MDVA-37234** (*pour Adobe Commerce et Magento Open Source >=2.3.5 &lt;2.4.0 || >=2.4.1 &lt;=2.4.2-p2*) : correction d’un problème en raison duquel l’ajout d’un élément au panier plusieurs fois (requête parallèle) pour le même SKU créait une ligne en double pour le même ID de panier.
+* **MDVA-37234** (*pour Adobe Commerce et Magento Open Source >=2.3.5 &lt;2.4.0 || >=2.4.1 &lt;=2.4.2-p2*) - Correction du problème en raison duquel l’ajout d’un élément au panier plusieurs fois (requête parallèle) pour le même SKU créait une ligne en double pour le même ID de panier.
 * **MDVA-33606** (*pour Adobe Commerce et Magento Open Source >=2.4.1 &lt;=2.4.2-p2*) - Correction du problème qui entraînait l’obtention d’un *Violation des contraintes uniques* lors de l’enregistrement d’une page CMS affectée à une hiérarchie.
 * **MDVA-31590** (*pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;=2.4.1-p1*) - Correction du problème qui empêchait les utilisateurs de mettre à jour les attributs en masse à l’aide des files d’attente asynchrones MySQL.
 * **MDVA-36309** (*pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;=2.4.2-p2*) - Correction du problème de lenteur de la recherche de produits par attributs dans les grilles d’administration.
@@ -609,7 +609,7 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 * **MDVA-35254** (*pour Adobe Commerce >=2.3.1 &lt;2.4.3*) - Correction des problèmes liés à CAPTCHA lors de l’extraction.
 * **MDVA-35569** (*pour Adobe Commerce >=2.3.4 &lt;2.4.2*) - Correction du problème en raison duquel la variable *taxes sur les produits fixes* n’est pas renseigné dans la réponse GraphQL lorsque l’état est spécifié.
 * **MDVA-35847** (*pour Adobe Commerce >=2.4.1 &lt;2.4.3*) - Correction du problème B2B qui se produisait lorsque le formulaire Utilisateurs de l’entreprise était rompu si un attribut client personnalisé était utilisé.
-* **MDVA-31307** (*pour Adobe Commerce >=2.4.0 &lt;2.4.2*) - Correction du problème en raison duquel *Mémoire insuffisante* des erreurs sur certaines catégories en raison de problèmes liés à l’liste autorisée dynamique CSP pour les blocs mis en cache.
+* **MDVA-31307** (*pour Adobe Commerce >=2.4.0 &lt;2.4.2*) - Correction du problème en raison duquel *Mémoire insuffisante* erreurs sur certaines catégories en raison de problèmes de mise en whiteliste dynamique CSP pour les blocs mis en cache.
 
 ## v1.0.18 {#v1-0-18}
 

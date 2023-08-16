@@ -35,11 +35,11 @@ Pour éviter qu’un problème lié au contenu statique ne soit pas disponible s
 1. Pour Adobe Commerce sur l’infrastructure cloud (toutes les versions), assurez-vous que le contenu statique est déployé pendant la phase de création plutôt que pendant la phase de déploiement. Voir : [Gestion des configurations des paramètres de magasin - Performances de déploiement de contenu statique](https://devdocs.magento.com/cloud/live/sens-data-over.html#cloud-confman-scd-over) dans notre documentation destinée aux développeurs.
 1. Assurez-vous de ne pas avoir de tâches cron longues et de supprimer tout processus cron long terme. Les tâches cron de longue durée peuvent prendre en charge les ressources du processeur et éventuellement augmenter considérablement le temps de déploiement.
 1. Pour Adobe Commerce On-Premise et Magento Open Source (toutes versions), vérifiez que la variable `php` Le processus dans l’interface de ligne de commande a accès à `pub/static` répertoire . Dans le cas contraire, vous pourriez rencontrer un problème en raison duquel un déploiement de contenu statique ne peut pas écrire de fichiers dans ce répertoire. Pour plus d’informations : [Autorisations d’accès aux systèmes de fichiers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html) dans notre documentation destinée aux développeurs.
-1. Assurez-vous que la variable `generated` Le répertoire n’est pas un répertoire partagé entre les versions ; dans le cas contraire, les versions peuvent échouer de manière aléatoire. Pour plus d’informations :
+1. Assurez-vous que la variable `generated` n’est pas un répertoire partagé entre les versions ; dans le cas contraire, les versions peuvent échouer de manière aléatoire. Pour plus d’informations :
    * Adobe Commerce On-Premise et Magento Open Source (toutes versions) : [Détails techniques](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) dans notre documentation destinée aux développeurs.
-   * Adobe Commerce sur l’infrastructure cloud (toutes versions) : [Processus de déploiement - Phase 2 : build](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-build) dans notre documentation destinée aux développeurs.
+   * Adobe Commerce sur l’infrastructure cloud (toutes versions) : [Processus de déploiement - Phase 2 : création](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-build) dans notre documentation destinée aux développeurs.
 
-1. Vérifiez votre stratégie SCD. Le *quick* stratégie est la valeur par défaut. Pour plus d’informations :
+1. Vérifiez votre stratégie SCD. La variable *quick* stratégie est la valeur par défaut. Pour plus d’informations :
    * Adobe Commerce On-Premise et Magento Open Source (toutes versions) : [Stratégies de déploiement des fichiers statiques](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) dans notre documentation destinée aux développeurs.
    * Adobe Commerce sur l’infrastructure cloud (toutes versions) : [Déployer des variables - SCD\_STRATEGY](https://devdocs.magento.com/cloud/env/variables-deploy.html#scd_strategy) dans notre documentation destinée aux développeurs.
 
@@ -52,4 +52,4 @@ Dans notre documentation destinée aux développeurs :
 * [Déployer des variables - STATIC\_CONTENT\_SYMLINK](https://devdocs.magento.com/cloud/env/variables-deploy.html#static_content_symlink)
 * [Flux de déploiement](../../../performance/deployment-flow.md)
 * [Déploiement sans interruption](https://devdocs.magento.com/cloud/deploy/reduce-downtime.html)
-* [Optimisation du déploiement dans le cloud](https://devdocs.magento.com/cloud/deploy/optimize-cloud-deployment.html)
+* [Optimisation du déploiement cloud](https://devdocs.magento.com/cloud/deploy/optimize-cloud-deployment.html)

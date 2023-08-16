@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Génération de pistes
 
-Dans l&#39;industrie du commerce électronique, un leader est celui qui manifeste de l&#39;intérêt pour la marque et ses produits. qu&#39;il clique sur le site web, qu&#39;il consulte une publicité sur les médias sociaux ou qu&#39;il explore des produits. La création d&#39;un leader dans le secteur du commerce électronique est un aspect essentiel de l&#39;entreprise, car un leader aujourd&#39;hui peut être un client demain. La génération de pistes est un long processus qui prend du temps et nécessite de la patience.
+Dans l&#39;industrie du commerce électronique, un leader est toute personne qui montre de l&#39;intérêt pour la marque et ses produits ; que ce soit en cliquant sur le site web, en consultant une publicité sur les médias sociaux ou en explorant des produits. La création d&#39;un leader dans le secteur du commerce électronique est un aspect essentiel de l&#39;entreprise, car un leader aujourd&#39;hui peut être un client demain. La génération de pistes est un long processus qui prend du temps et nécessite de la patience.
 
 Le diagramme suivant illustre un workflow simple que les détaillants peuvent utiliser pour la génération de pistes :
 

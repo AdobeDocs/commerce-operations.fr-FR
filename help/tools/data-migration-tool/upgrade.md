@@ -26,7 +26,7 @@ Avant de mettre à niveau la [!DNL Data Migration Tool], vous devez :
 
 ### Mettre à niveau votre logiciel Magento
 
-Si vous ne l’avez pas déjà fait, [mettre à niveau le logiciel Magento](../../upgrade/overview.md).
+Si vous ne l’avez pas déjà fait, [mettre à niveau le logiciel du Magento](../../upgrade/overview.md).
 
 ### Sauvegardez les `vendor/magento/data-migration-tool` directory
 
@@ -40,12 +40,12 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 >[!WARNING]
 >
->Le `vendor/magento/data-migration-tool` contient votre code personnalisé. Si vous ne le sauvegardez pas, vous risquez de perdre vos personnalisations lors de la mise à niveau.
+>La variable `vendor/magento/data-migration-tool` contient votre code personnalisé. Si vous ne le sauvegardez pas, vous risquez de perdre vos personnalisations lors de la mise à niveau.
 
 
-### Assurez-vous que les versions correspondent
+### Assurez-vous que les versions correspondent.
 
-Les versions de la variable [!DNL Data Migration Tool] et votre logiciel de Magento doit correspondre exactement. Par exemple, Magento 2.1.2 requiert la version 2.1.2 de la variable [!DNL Data Migration Tool].
+Les versions de [!DNL Data Migration Tool] et votre logiciel de Magento doit correspondre exactement. Par exemple, Magento 2.1.2 requiert la version 2.1.2 de la variable [!DNL Data Migration Tool].
 
 Voir [Installer [!DNL Data Migration Tool]](install.md) rubrique pour savoir comment :
 
@@ -57,7 +57,7 @@ Voir [Installer [!DNL Data Migration Tool]](install.md) rubrique pour savoir com
 
 ## Mettre à niveau [!DNL Data Migration Tool]
 
-1. Connectez-vous à votre serveur d’applications en tant que ou passez à [le propriétaire du système de fichiers ;](../../installation/prerequisites/file-system/overview.md).
+1. Connectez-vous à votre serveur d’applications en tant que ou passez à [le propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
 1. Modifiez le répertoire racine de l’application.
 1. Saisissez la commande suivante :
 

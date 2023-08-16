@@ -1,5 +1,5 @@
 ---
-title: Le [!UICONTROL CDN] tab
+title: La variable [!UICONTROL CDN] tab
 description: En savoir plus sur les [!UICONTROL CDN] de [!DNL Observation for Adobe Commerce].
 exl-id: db22bbca-2033-4e9a-8799-b47d84bdd720
 feature: Configuration, Observability
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Le [!UICONTROL CDN] tab
+# La variable [!UICONTROL CDN] tab
 
 Cet onglet contient des informations relatives à la variable [!DNL content delivery network (CDN)]. Dans le cas de Adobe Commerce Cloud, il s’agit de la variable [!DNL Fastly] service.
 
@@ -18,7 +18,7 @@ Cet onglet contient des informations relatives à la variable [!DNL content deli
 
 ![Taux d’accès](../../assets/tools/observation-for-adobe-commerce/cdn-tab-1.png)
 
-Le **[!UICONTROL HIT rate]** frame affiche le nombre de requêtes pouvant être mises en cache qui ont entraîné [!UICONTROL HITS] à la dernière minute. Cela indique une mise en cache réussie. La flèche vers la droite affiche le pourcentage au-dessus ou en dessous à la même heure il y a une semaine.
+La variable **[!UICONTROL HIT rate]** frame affiche le nombre de requêtes pouvant être mises en cache qui ont entraîné [!UICONTROL HITS] à la dernière minute. Cela indique une mise en cache réussie. La flèche vers la droite affiche le pourcentage au-dessus ou en dessous à la même heure il y a une semaine.
 
 ## [!UICONTROL HIT Processing]
 
@@ -44,7 +44,7 @@ Ceci **[!UICONTROL MISS rate]** indique le nombre d’échecs de requêtes pouva
 
 ![Pourcentage d’erreur](../../assets/tools/observation-for-adobe-commerce/cdn-tab-6.png)
 
-Le **[!UICONTROL Error Percentage]** affiche la valeur du pourcentage ERROR des requêtes et affiche l’augmentation/diminution relative par rapport à la même période une semaine auparavant.
+La variable **[!UICONTROL Error Percentage]** affiche la valeur du pourcentage ERROR des requêtes et affiche l’augmentation/diminution relative par rapport à la même période une semaine auparavant.
 
 ## [!UICONTROL Total Requests]
 
@@ -86,46 +86,46 @@ Ce cadre est similaire à la zone de résumé pour [!UICONTROL Total Requests] d
 
 ![5 premières URL (codes d’état 5xx ou 3xx)](../../assets/tools/observation-for-adobe-commerce/cdn-tab-15.gif)
 
-Le **[!UICONTROL Top 5 URLs]** affiche les 5 premières URL qui rencontrent des réponses d’erreur 5xx ou 3xx. En raison de la contrainte d’espace, vous devrez placer le pointeur de la souris sur l’URL pour afficher le code d’erreur spécifique associé à cette URL. (exemple dans la zone rouge de la figure ci-dessus).
+La variable **[!UICONTROL Top 5 URLs]** affiche les 5 premières URL qui rencontrent des réponses d’erreur 5xx ou 3xx. En raison de la contrainte d’espace, vous devrez placer le pointeur de la souris sur l’URL pour afficher le code d’erreur spécifique associé à cette URL. (exemple dans la zone rouge de la figure ci-dessus).
 
 ## [!UICONTROL Top 25 URLs (200 status)]
 
 ![25 premières URL (état 200)](../../assets/tools/observation-for-adobe-commerce/cdn-tab-16.gif)
 
-Le **[!UICONTROL Top 25 URLs]** Le cadre affiche les URL qui ont renvoyé un état 200 par nombre au cours de la période sélectionnée.
+La variable **[!UICONTROL Top 25 URLs]** Le cadre affiche les URL qui ont renvoyé un état 200 par nombre au cours de la période sélectionnée.
 
 ## [!UICONTROL Duration by Response Status]
 
 ![Durée par état de réponse](../../assets/tools/observation-for-adobe-commerce/cdn-tab-17.png)
 
-Le **[!UICONTROL Duration by Response Status]** Le graphique affiche les réponses d’erreur par nombre au cours de la période sélectionnée, facettées par le code d’état d’erreur.
+La variable **[!UICONTROL Duration by Response Status]** Le graphique affiche les réponses d’erreur par nombre au cours de la période sélectionnée, facettées par le code d’état d’erreur.
 
 ## [!UICONTROL Duration by Response Status, top 25 urls]
 
 ![Durée par état de réponse, 25 premières URL](../../assets/tools/observation-for-adobe-commerce/cdn-tab-18.gif)
 
-Le **[!UICONTROL Duration by Response Status, top 25 URLs]** Le graphique affiche les 25 premières URL selon la durée de la réponse en secondes. Il se peut que vous deviez placer le pointeur de la souris sur l’URL pour afficher l’intégralité du chemin. En outre, pour supprimer toutes les URL, sauf une, cliquez sur cette URL. Vous pouvez ensuite réajouter d’autres URL en cliquant dessus individuellement. Si vous souhaitez supprimer des URL individuelles, vous pouvez maintenir la touche enfoncée et cliquer sur chaque URL pour la supprimer du graphique.
+La variable **[!UICONTROL Duration by Response Status, top 25 URLs]** Le graphique affiche les 25 premières URL selon la durée de la réponse en secondes. Il se peut que vous deviez placer le pointeur de la souris sur l’URL pour afficher l’intégralité du chemin. En outre, pour supprimer toutes les URL, sauf une, cliquez sur cette URL. Vous pouvez ensuite réajouter d’autres URL en cliquant dessus individuellement. Si vous souhaitez supprimer des URL individuelles, vous pouvez maintenir la touche enfoncée et cliquer sur chaque URL pour la supprimer du graphique.
 
 ## [!UICONTROL Duration by Response Status, top 25 non-200 status]
 
 ![Durée par état de réponse, 25 premiers états non-200](../../assets/tools/observation-for-adobe-commerce/cdn-tab-19.gif)
 
-Le **[!UICONTROL Duration by Response Status, top 25 non-200 status]** Le graphique est similaire au dernier, sauf que l’accent est mis sur les codes d’état non-200 ou les codes d’état d’erreur. Il affiche le code d’erreur, puis l’URL. Il se peut que vous deviez placer le pointeur de la souris sur l’URL pour afficher l’intégralité du chemin. En outre, pour supprimer toutes les URL, sauf une, cliquez sur cette URL. Vous pouvez ensuite réajouter d’autres URL en cliquant dessus individuellement. Si vous souhaitez supprimer des URL individuelles, vous pouvez maintenir la touche enfoncée et cliquer sur chaque URL pour la supprimer du graphique.
+La variable **[!UICONTROL Duration by Response Status, top 25 non-200 status]** Le graphique est similaire au dernier, sauf que l’accent est mis sur les codes d’état non-200 ou les codes d’état d’erreur. Il affiche le code d’erreur, puis l’URL. Il se peut que vous deviez placer le pointeur de la souris sur l’URL pour afficher l’intégralité du chemin. En outre, pour supprimer toutes les URL, sauf une, cliquez sur cette URL. Vous pouvez ensuite réajouter d’autres URL en cliquant dessus individuellement. Si vous souhaitez supprimer des URL individuelles, vous pouvez maintenir la touche enfoncée et cliquer sur chaque URL pour la supprimer du graphique.
 
 ## [!UICONTROL Error Count by POP timeline]
 
 ![Nombre d’erreurs par journal POP](../../assets/tools/observation-for-adobe-commerce/cdn-tab-20.png)
 
-Le **[!UICONTROL Error Count by POP timeline]** Le graphique affiche le nombre d’états d’erreur le long de la chronologie sélectionnée, facettée par le code d’erreur.
+La variable **[!UICONTROL Error Count by POP timeline]** Le graphique affiche le nombre d’états d’erreur le long de la chronologie sélectionnée, facettée par le code d’erreur.
 
 ## [!UICONTROL Duration by Response status, top 25 client IP, non-200 status]
 
 ![Durée par état de réponse, 25 premières adresses IP du client, état non 200](../../assets/tools/observation-for-adobe-commerce/cdn-tab-21.gif)
 
-Le **[!UICONTROL Duration by Response status, top 25 client IP, non 200 status]** Le graphique présente les adresses IP selon la durée moyenne pendant la période sélectionnée, où il y a eu des codes d’erreur d’état.
+La variable **[!UICONTROL Duration by Response status, top 25 client IP, non 200 status]** Le graphique présente les adresses IP selon la durée moyenne pendant la période sélectionnée, où il y a eu des codes d’erreur d’état.
 
 ## [!UICONTROL IP Frequency]
 
 ![Fréquence des adresses IP](../../assets/tools/observation-for-adobe-commerce/cdn-tab-22.jpeg)
 
-Le **[!UICONTROL IP Frequency]** frame comptabilise les états (&#39;MISS&#39; et &#39;PASS&#39;) pour chaque IP de la variable [!DNL Fastly] journaux. Les requêtes Web avec ces états atteignent le serveur d’origine et ajoutent de la charge au serveur. Il affiche les vingt premières adresses en fréquence. Ce cadre peut être utilisé pour détecter les attaques IP ou les sources de charge importante sur un site web. Ce graphique est également présent dans l’onglet Résumé et est placé ici pour faciliter la comparaison avec plus de détails sur la variable [!DNL Fastly] les informations du journal affichées sur cet onglet.
+La variable **[!UICONTROL IP Frequency]** frame comptabilise les états (&#39;MISS&#39; et &#39;PASS&#39;) pour chaque IP de la variable [!DNL Fastly] journaux. Les requêtes Web avec ces états atteignent le serveur d’origine et ajoutent de la charge au serveur. Il affiche les vingt premières adresses en fréquence. Ce cadre peut être utilisé pour détecter les attaques IP ou les sources de charge importante sur un site web. Ce graphique est également présent dans l’onglet Résumé et est placé ici pour faciliter la comparaison avec plus de détails sur la variable [!DNL Fastly] les informations du journal affichées sur cet onglet.

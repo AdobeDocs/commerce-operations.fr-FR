@@ -40,7 +40,7 @@ Le tableau suivant identifie tous les consommateurs de la file d’attente de me
 | `inventory.indexer.stock` | + | + | + |
 | Réindexe le stock de manière asynchrone. Obligatoire lorsque la variable [**[!UICONTROL Stock/Source reindex strategy]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html#inventory-indexer-settings) est défini sur &quot;[!UICONTROL asynchronous]&quot; dans les paramètres de configuration du système d’administration. |                |                         |                     |
 | `matchCustomerSegmentProcessor` | + | + |                     |
-| Crée un tableau de base de données temporaire, déplace chaque [segment client](https://docs.magento.com/user-guide/marketing/customer-segments.html) dans , supprime tous les segments qui correspondent à l’ID de segment et les copie dans les segments client à l’aide de l’ID de segment comme indicateur. Tout cela est effectué dans une transaction de sorte que si quelque chose échoue, la transaction revient à ce qu’elle était avant son exécution. Après une transaction, le consommateur abandonne la table temporaire. |                |                         |                     |
+| Crée un tableau de base de données temporaire, déplace chaque [segment client](https://docs.magento.com/user-guide/marketing/customer-segments.html) dans , supprime tous les segments qui correspondent à l’ID de segment et les copie dans les segments client à l’aide de l’ID de segment comme indicateur. Tout cela est effectué dans une transaction de sorte que si quelque chose échoue, la transaction revient à ce qu’elle était avant qu’elle ne soit exécutée. Après une transaction, le consommateur abandonne la table temporaire. |                |                         |                     |
 | `media.content.synchronization` | + | + | + |
 | Vérifie que les liens vers les médias attribués pour les produits, les catégories, les blocs CMS et les pages CMS sont correctement affectés à la ressource. Supprime les anciennes ressources qui ne sont plus utilisées. |                |                         |                     |
 | `media.gallery.renditions.update` | + | + | + |
@@ -48,7 +48,7 @@ Le tableau suivant identifie tous les consommateurs de la file d’attente de me
 | `media.gallery.synchronization` | + | + | + |
 | Importe les fichiers image dans le `media_gallery_asset` table de base de données. |                |                         |                     |
 | `media.storage.catalog.image.resize` | + | + | + |
-| Asynchrone [redimensionne](https://developer.adobe.com/commerce/frontend-core/guide/themes/configure/#resize-catalog-images) catalogue des images. |                |                         |                     |
+| Asynchrone [redimensionne](https://developer.adobe.com/commerce/frontend-core/guide/themes/configure/#resize-catalog-images) catalogue d’images. |                |                         |                     |
 | `negotiableQuotePriceUpdate` |                | + |                     |
 | Met à jour les prix des devis négociables. Obligatoire lorsque la variable [**[!UICONTROL Quotes]**](https://docs.magento.com/user-guide/sales/quotes.html) est activée dans les paramètres de configuration du système d’administration. |                |                         |                     |
 | `placeOrderProcessor` | + | + |                     |
@@ -56,7 +56,7 @@ Le tableau suivant identifie tous les consommateurs de la file d’attente de me
 | `product_action_attribute.update` | + | + | + |
 | Après avoir utilisé l’option Admin pour écrire de manière asynchrone les modifications apportées aux attributs de produit dans la base de données [effectuer des mises à jour](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update.html). |                |                         |                     |
 | `product_action_attribute.website.update` | + | + | + |
-| Après avoir utilisé l’option Admin pour [effectuer des mises à jour](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update.html). |                |                         |                     |
+| Après avoir utilisé l’option Admin pour effectuer une modification asynchrone des attributs de produit pour une vue de magasin spécifique dans la base de données, [effectuer des mises à jour](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update.html). |                |                         |                     |
 | `product_alert` | + | + | + |
 | Envoie des e-mails de notification aux clients au sujet des changements de prix et d’inventaire des produits. Obligatoire lorsque la variable [**[!UICONTROL Product Alerts]**](https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/product-alerts/alert-setup.html) est activée dans les paramètres de configuration du système d’administration. |                |                         |                     |
 | `purchaseorder.toorder` |                | + |                     |
@@ -76,6 +76,6 @@ Le tableau suivant identifie tous les consommateurs de la file d’attente de me
 | `quoteItemCleaner` | + | + |                     |
 | Supprime les prix invalides ou inactifs lorsqu’un produit est supprimé du catalogue ou du panier. Obligatoire lorsque la variable [**[!UICONTROL Quotes]**](https://docs.magento.com/user-guide/sales/quotes.html) est activée dans les paramètres de configuration du système d’administration. |                |                         |                     |
 | `sales.rule.quote.trigger.recollect` | + | + | + |
-| Met à jour les principaux paniers pour prendre en compte les modifications apportées à la règle du prix du panier. Obligatoire lors de la mise à jour [**[!UICONTROL Catalog price rules]**](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog.html). |                |                         |                     |
+| Met à jour les paniers actifs pour prendre en compte les modifications de la règle de prix du panier. Obligatoire lors de la mise à jour [**[!UICONTROL Catalog price rules]**](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog.html). |                |                         |                     |
 
 {style="table-layout:auto"}

@@ -39,26 +39,26 @@ Si votre projet Adobe Commerce est déployé sur l’architecture Pro, vous pouv
 
 1. Exécutez la variable `pt-query-digest --type=slowlog` par rapport aux journaux de requête lents MySQL.
    * Pour connaître l’emplacement des journaux de requête lente, voir **[!UICONTROL Log locations > Service Logs]**(https://devdocs.magento.com/cloud/project/log-locations.html#service-logs) dans notre documentation destinée aux développeurs.
-   * Voir [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) documentation.
+   * Voir [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) la documentation.
 1. En fonction des problèmes détectés, suivez les étapes pour corriger la requête afin qu’elle s’exécute plus rapidement.
 
-## Vérifier que tous les tableaux comportent une clé Principale
+## Vérification de la présence d’une clé primaire pour toutes les tables
 
-La définition de Principales clés est une exigence pour une bonne conception de base de données et de tableau. Les touches Principal permettent d’identifier de manière unique une ligne d’un tableau.
+La définition de clés primaires est une exigence pour une bonne conception de base de données et de tableau. Les clés de Principal permettent d’identifier de manière unique une ligne d’un tableau.
 
-Si vous disposez de tables sans clé Principale, le moteur de base de données par défaut pour Adobe Commerce (InnoDB) utilise la clé Principale comme clé unique non nulle. Si aucune clé unique n’est disponible, InnoDB crée une clé Principale masquée (6 octets). Le problème avec une clé Principale définie implicitement est que vous n’en avez pas le contrôle. En outre, la valeur implicite est affectée globalement à toutes les tables sans clés Principales. Cette configuration peut entraîner des problèmes de conflit si vous effectuez des écritures simultanées sur ces tables. Cela peut entraîner des problèmes de performances, car les tables partagent également l’incrément d’index de clé Principale masqué global.
+Si vous disposez de tables sans clé primaire, le moteur de base de données par défaut pour Adobe Commerce (InnoDB) utilise la première clé non nulle unique comme clé primaire. Si aucune clé unique n’est disponible, InnoDB crée une clé primaire masquée (6 octets). Le problème avec une clé primaire implicitement définie est que vous n’en avez pas le contrôle. En outre, la valeur implicite est affectée globalement à toutes les tables sans clés primaires. Cette configuration peut entraîner des problèmes de conflit si vous effectuez des écritures simultanées sur ces tables. Cela peut entraîner des problèmes de performances, car les tables partagent également l’incrément d’index de clé primaire masqué global.
 
-Empêchez ces problèmes en définissant une clé Principale pour les tables qui n’en ont pas.
+Empêchez ces problèmes en définissant une clé primaire pour toutes les tables qui n’en ont pas.
 
-### Identifier et mettre à jour les tables sans clé Principale
+### Identifier et mettre à jour les tables sans clé primaire
 
-1. Identifiez les tables sans clé Principale à l’aide de la requête SQL suivante :
+1. Identifiez les tables sans clé primaire à l&#39;aide de la requête SQL suivante :
 
    ```sql
    SELECT table_catalog, table_schema, table_name, engine FROM information_schema.tables        WHERE (table_catalog, table_schema, table_name) NOT IN (SELECT table_catalog, table_schema, table_name FROM information_schema.table_constraints  WHERE constraint_type = 'PRIMARY KEY') AND table_schema NOT IN ('information_schema', 'pg_catalog');    
    ```
 
-1. Pour toute table ne comportant pas de clé Principale, ajoutez une clé Principale en mettant à jour la variable `db_schema.xml` (le schéma déclaratif) avec un noeud similaire à ce qui suit :
+1. Pour toute table ne comportant pas de clé primaire, ajoutez une clé primaire en mettant à jour la variable `db_schema.xml` (le schéma déclaratif) avec un noeud similaire à ce qui suit :
 
    ```html
    <constraint xsi:type="primary" referenceId="PRIMARY">         <column name="id_column"/>     </constraint>    
@@ -86,7 +86,7 @@ Les marchands d’architecture Pro peuvent également exécuter la vérification
 
 ### Suppression des index en double
 
-Utilisation du SQL [Instruction DROP INDEX](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html) pour supprimer les index en double.
+Utilisation du langage SQL [Instruction DROP INDEX](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html) pour supprimer les index en double.
 
 ```SQL
 DROP INDEX

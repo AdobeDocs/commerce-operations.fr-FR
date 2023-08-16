@@ -1,13 +1,13 @@
 ---
 title: Installer une extension
 description: Pour installer une extension Adobe Commerce ou Magento Open Source, procédez comme suit.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
 
 ---
-
 
 # Installer une extension
 
@@ -21,11 +21,11 @@ Les extensions incluent :
 
 >[!TIP]
 >
->Cette rubrique explique comment utiliser la ligne de commande pour installer les extensions que vous achetez sur le Commerce Marketplace. Vous pouvez utiliser la même procédure pour installer _any_ extension; tout ce dont vous avez besoin est le nom et la version du compositeur de l’extension. Pour le trouver, ouvrez le fichier `composer.json` et notez les valeurs de `"name"` et `"version"`.
+>Cette rubrique explique comment utiliser la ligne de commande pour installer les extensions que vous achetez sur le Commerce Marketplace. Vous pouvez utiliser la même procédure pour installer _any_ l’extension ; tout ce dont vous avez besoin est le nom et la version du compositeur de l’extension. Pour le trouver, ouvrez le fichier `composer.json` et notez les valeurs de `"name"` et `"version"`.
 
 Avant l’installation, vous pouvez :
 
-1. Sauvegardez votre base de données.
+1. Sauvegardez votre base.
 1. Activer le mode de maintenance :
 
    ```bash
@@ -57,7 +57,7 @@ Si vous connaissez déjà le nom et la version du compositeur de l’extension, 
 
 Pour obtenir le nom et la version du compositeur de l’extension à partir du Commerce Marketplace :
 
-1. Connectez-vous à [Commerce Marketplace](https://marketplace.magento.com) avec le nom d’utilisateur et le mot de passe que vous avez utilisés pour acheter l’extension.
+1. Connexion à [Commerce Marketplace](https://marketplace.magento.com) avec le nom d’utilisateur et le mot de passe que vous avez utilisés pour acheter l’extension.
 
 1. Dans le coin supérieur droit, cliquez sur **Votre nom** > **Mon profil**.
 
@@ -85,7 +85,7 @@ Ajoutez le nom et la version de l’extension à votre `composer.json` fichier :
    composer require <component-name>:<version>
    ```
 
-   Par exemple :
+   Par exemple,
 
    ```bash
    composer require j2t/module-payplug:2.0.2
@@ -153,7 +153,7 @@ Certaines extensions ne fonctionnent pas correctement, sauf si vous effacez d’
    bin/magento setup:upgrade
    ```
 
-1. Recompilez votre projet : En mode de production, vous pouvez recevoir un message indiquant &quot;Veuillez réexécuter la commande de compilation du Magento&quot;. L’application ne vous invite pas à exécuter la commande compile en mode Développeur.
+1. Recompiler votre projet : en mode de production, vous pouvez recevoir un message indiquant &quot;Veuillez réexécuter la commande de compilation du Magento&quot;. L’application ne vous invite pas à exécuter la commande compile en mode Développeur.
 
    ```bash
    bin/magento setup:di:compile

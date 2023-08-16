@@ -1,13 +1,13 @@
 ---
-title: "Exécutez la variable [!DNL Upgrade Compatibility Tool]"
+title: Exécutez la variable [!DNL Upgrade Compatibility Tool]
 description: Procédez comme suit pour exécuter la fonction [!DNL Upgrade Compatibility Tool] dans une interface de ligne de commande pour votre projet Adobe Commerce.
-source-git-commit: 653d755023f96c0a6acc312f74fd4a0292f13a73
+exl-id: ea467a74-18eb-476b-96e2-23f4fc257d73
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 0%
 
 ---
-
 
 # Téléchargez la [!DNL Upgrade Compatibility Tool]
 
@@ -25,9 +25,9 @@ Vous devrez peut-être accorder à l’outil des autorisations exécutables avec
 chmod +x ./uct/bin/uct
 ```
 
-## Le [!DNL Upgrade Compatibility Tool] dans une interface de ligne de commande
+## La variable [!DNL Upgrade Compatibility Tool] dans une interface de ligne de commande
 
-Le [!DNL Upgrade Compatibility Tool] est un outil qui vérifie une instance personnalisée Adobe Commerce par rapport à une version spécifique en analysant tous les modules qui y sont installés. Elle renvoie une liste des problèmes, erreurs et avertissements critiques qui doivent être résolus avant la mise à niveau vers la dernière version d’Adobe Commerce.
+La variable [!DNL Upgrade Compatibility Tool] est un outil qui vérifie une instance personnalisée Adobe Commerce par rapport à une version spécifique en analysant tous les modules qui y sont installés. Elle renvoie une liste des problèmes, erreurs et avertissements critiques qui doivent être résolus avant la mise à niveau vers la dernière version d’Adobe Commerce.
 
 Voir [tutoriel vidéo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en) (06:02) pour en savoir plus sur le [!DNL Upgrade Compatibility Tool].
 
@@ -45,9 +45,9 @@ Commandes disponibles pour la fonction [!DNL Upgrade Compatibility Tool] dans un
 
 ## Utilisez la variable `upgrade:check` command
 
-Le `upgrade:check` recherche les modifications de code principal pour cette instance Adobe Commerce spécifique et toutes les modifications de code personnalisé qui y sont installées.
+La variable `upgrade:check` recherche les modifications de code principal pour cette instance Adobe Commerce spécifique et toutes les modifications de code personnalisé qui y sont installées.
 
-Le `upgrade:check` est la commande principale pour exécuter l’outil :
+La variable `upgrade:check` est la commande principale pour exécuter l’outil :
 
 ```bash
 bin/uct upgrade:check <dir>
@@ -59,9 +59,9 @@ Options disponibles pour la variable `upgrade:check` command :
 
 | **Commande** | **Options disponibles** |
 |----------------|-----------------|
-| `upgrade:check` | <ul><li>—help: Renvoie toutes les options disponibles.</li><li>—current-version: Version actuelle d’Adobe Commerce. Ce paramètre est obligatoire et doit toujours être utilisé.</li><li>—min-issue-level : Vous pouvez filtrer les problèmes en fonction du niveau de problème minimum (la valeur par défaut est WARNING).</li><li>—ignore-current-version-compatibility-issues (ou -i) : Si vous ne souhaitez pas inclure dans votre rapport les problèmes critiques, les erreurs et les avertissements de la version actuelle.</li><li>—coming-version (ou -c) : Ciblez une version spécifique d’Adobe Commerce. La dernière version disponible sera utilisée si elle est omise.</li></ul> |
+| `upgrade:check` | <ul><li>—help : renvoie toutes les options disponibles.</li><li>—current-version : version Adobe Commerce actuelle. Ce paramètre est obligatoire et doit toujours être utilisé.</li><li>—min-issue-level : vous pouvez filtrer les problèmes en fonction du niveau de problème minimum (la valeur par défaut est WARNING).</li><li>—ignore-current-version-compatibility-issues (ou -i) : si vous ne souhaitez pas inclure de problèmes critiques, d’erreurs et d’avertissements de la version actuelle dans votre rapport.</li><li>—coming-version (ou -c) : ciblez une version spécifique d’Adobe Commerce. La dernière version disponible sera utilisée si elle est omise.</li></ul> |
 
-Le [!DNL Upgrade Compatibility Tool] vous permet d’exécuter la variable `upgrade:check` avec une commande `--ignore-current-version-compatibility-issues` . Utilisez cette option lorsque vous souhaitez uniquement obtenir de nouveaux problèmes introduits avec la mise à jour de votre version actuelle vers la version ciblée de votre [!DNL Upgrade Compatibility Tool] rapport :
+La variable [!DNL Upgrade Compatibility Tool] vous permet d’exécuter la variable `upgrade:check` avec une commande `--ignore-current-version-compatibility-issues` . Utilisez cette option lorsque vous souhaitez uniquement obtenir de nouveaux problèmes introduits avec la mise à jour de votre version actuelle vers la version ciblée de votre [!DNL Upgrade Compatibility Tool] rapport :
 
 ```bash
 bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
@@ -86,9 +86,9 @@ Où `-c, --coming-version[=COMING-VERSION]` fait référence à la version cibl�
 Certaines limites s’appliquent lors de l’exécution de la variable `--coming-version`:
 
 - Ce paramètre fait référence à toute balise qui identifie une version spécifique d’Adobe Commerce.
-- Il s&#39;agit d&#39;une obligation explicite; fournir uniquement la valeur de ne fonctionne pas.
+- Il est nécessaire de fournir explicitement celui-ci ; fournir uniquement la valeur de celui-ci ne fonctionne pas.
 - Fournissez la version de la balise sans guillemets (ni simples ni doubles) : ~~&#39;2.4.1-develop&#39;~~.
-- Vous ne devez PAS fournir d’anciennes versions que celle que vous avez installée actuellement, ni plus de 2.3, qui est la plus ancienne version prise en charge actuellement.
+- Vous ne devez PAS fournir d’anciennes versions que celle que vous avez installée actuellement, ni plus de 2.3, qui est la plus ancienne version prise en charge pour le moment.
 
 ## Utilisez la variable `dbschema:diff` command
 
@@ -100,7 +100,7 @@ bin/uct dbschema:diff <current-version> <target-version>
 
 Où les arguments sont les suivants :
 
-- `<current-version>`: toute version d’Adobe Commerce à des fins de comparaison.
+- `<current-version>`: toute version Adobe Commerce à des fins de comparaison.
 - `<target-version>`: également toute version d’Adobe Commerce à des fins de comparaison.
 
 Exemple d&#39;exécution :
@@ -135,14 +135,14 @@ bin/uct core:code:changes <dir> <vanilla dir>
 
 Où les arguments sont les suivants :
 
-- `<dir>`: Répertoire d’installation d’Adobe Commerce.
-- `<vanilla dir>`: Répertoire d’installation d’Adobe Commerce vanilla.
+- `<dir>`: répertoire d’installation Adobe Commerce.
+- `<vanilla dir>`: répertoire d’installation d’Adobe Commerce vanilla.
 
 Options disponibles pour la variable `core:code:changes` command :
 
 | **Commande** | **Options disponibles** |
 |----------------|-----------------|
-| `core:code:changes` | `--help`: Renvoie tous les éléments disponibles `--help` options. |
+| `core:code:changes` | `--help`: renvoie toutes les options disponibles `--help` options. |
 
 >[!NOTE]
 >
@@ -152,7 +152,7 @@ Options disponibles pour la variable `core:code:changes` command :
 
 A _vanille_ l’installation est une installation propre d’une balise ou d’une branche de version spécifiée pour une version spécifique.
 
-Le `bin/uct core:code:changes` vérifie si votre système contient une instance Vanilla. Si c’est la première fois que vous utilisez une installation Vanilla, une question de ligne de commande interactive vous invite à télécharger le projet Vanilla à partir du référentiel Adobe Commerce (`https://repo.magento.com/`).
+La variable `bin/uct core:code:changes` vérifie s’il existe une instance Vanilla dans votre système. Si c’est la première fois que vous utilisez une installation Vanilla, une question de ligne de commande interactive vous invite à télécharger le projet Vanilla à partir du référentiel Adobe Commerce (`https://repo.magento.com/`).
 
 Vous pouvez exécuter une [!DNL Upgrade Compatibility Tool] avec la commande `--vanilla-dir` pour spécifier le répertoire d’installation d’Adobe Commerce vanilla.
 
@@ -160,7 +160,7 @@ Voir [Déploiement de l’instance Vanilla](https://developer.adobe.com/commerce
 
 ## Utilisez la variable `refactor` command
 
-Le [!DNL Upgrade Compatibility Tool] permet de résoudre automatiquement un ensemble réduit de problèmes :
+La variable [!DNL Upgrade Compatibility Tool] permet de résoudre automatiquement un ensemble réduit de problèmes :
 
 - Fonctions qui étaient autorisées à être utilisées sans passer d’argument, mais avec une telle utilisation désormais obsolète.
 - Utilisation de `$this` dans les modèles de Magento.
@@ -178,7 +178,7 @@ Options disponibles pour la variable `refactor` command :
 
 | **Commande** | **Options disponibles** |
 |----------------|-----------------|
-| `refactor` | `--help`: Renvoie tous les éléments disponibles `--help` options. |
+| `refactor` | `--help`: renvoie toutes les options disponibles `--help` options. |
 
 ## Utilisez la variable `graphql:compare` command
 
@@ -191,13 +191,13 @@ bin/uct graphql:compare <schema1> <schema2>
 Où les arguments sont les suivants :
 
 - `<schema1>`: URL du point d’entrée pour l’installation existante.
-- `<schema2>`: URL du point d’entrée pour l’installation Vanilla.
+- `<schema2>`: URL de point d’entrée pour l’installation Vanilla.
 
 Options disponibles pour la variable `graphql:compare` command :
 
 | **Commande** | **Options disponibles** |
 |----------------|-----------------|
-| `graphql:compare` | `--help`: Renvoie tous les éléments disponibles `--help` options. |
+| `graphql:compare` | `--help`: renvoie toutes les options disponibles `--help` options. |
 
 ## Utilisez la variable `list` command
 
@@ -231,7 +231,7 @@ qui renvoie une liste avec tous les éléments disponibles ; `help` options de l
 
 Il est possible d’exécuter `--help` comme option lors de l’exécution d’une commande spécifique. Elle renvoie `--help` options de la commande spécifiée.
 
-Exemple de `upgrade:check` avec `--help` option :
+Exemple de `upgrade:check` Commande avec `--help` option :
 
 ```bash
 bin/uct upgrade:check --help
@@ -264,8 +264,8 @@ Cela renvoie des options spécifiques qui peuvent être exécutées pour la vari
 
 ## Optimiser vos résultats
 
-Le [!DNL Upgrade Compatibility Tool] fournit un rapport contenant les résultats avec tous les problèmes identifiés par défaut sur votre projet. Vous pouvez optimiser les résultats pour vous concentrer sur les problèmes que vous devez corriger pour terminer la mise à niveau :
+La variable [!DNL Upgrade Compatibility Tool] fournit un rapport contenant les résultats avec tous les problèmes identifiés par défaut sur votre projet. Vous pouvez optimiser les résultats pour vous concentrer sur les problèmes que vous devez corriger pour terminer la mise à niveau :
 
 - Utiliser l’option `--ignore-current-version-compatibility-issues` lorsque vous souhaitez uniquement obtenir de nouveaux problèmes qui sont introduits avec la mise à jour de votre version actuelle vers la version ciblée dans votre [!DNL Upgrade Compatibility Tool] rapport.
 - Ajouter le `--min-issue-level` , ce paramètre permet de définir le niveau de problème minimum afin de n’établir la priorité que sur les problèmes les plus importants de votre mise à niveau.
-- Le [!DNL Upgrade Compatibility Tool] nécessite au moins 2 Go de mémoire vive pour fonctionner. Ce paramètre est recommandé pour éviter les problèmes en raison d’une faible limitation de mémoire. Le [!DNL Upgrade Compatibility Tool] affiche une question si vous exécutez le `upgrade:check` avec une valeur faible `memory_limit` .
+- La variable [!DNL Upgrade Compatibility Tool] nécessite au moins 2 Go de mémoire vive pour fonctionner. Ce paramètre est recommandé pour éviter les problèmes en raison d’une faible limitation de mémoire. La variable [!DNL Upgrade Compatibility Tool] affiche une question si vous exécutez le `upgrade:check` avec une valeur faible `memory_limit` .

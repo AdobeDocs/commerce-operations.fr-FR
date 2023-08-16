@@ -1,15 +1,15 @@
 ---
 title: Avancé [!DNL JavaScript] Regroupement
 description: Découvrez comment le bundling JavaScript peut réduire la taille et la fréquence des requêtes de serveur.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '2137'
 ht-degree: 0%
 
 ---
 
-
-# Avancé [!DNL JavaScript] regroupement
+# Avancé [!DNL JavaScript] bundling
 
 Regroupement [!DNL JavaScript] Les modules pour de meilleures performances consistent à réduire deux éléments :
 
@@ -22,7 +22,7 @@ Dans une application modulaire, le nombre de requêtes de serveur peut atteindre
 
 ## Fusion et regroupement
 
-Prêt à l’emploi, [!DNL Commerce] propose deux manières de réduire le nombre de requêtes serveur : fusion et regroupement. Ces paramètres sont désactivés par défaut. Vous pouvez les activer dans l’interface utilisateur d’administration de **[!UICONTROL Stores]** > **Paramètres** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]** ou à partir de la ligne de commande.
+Prêt à l’emploi, [!DNL Commerce] propose deux manières de réduire le nombre de requêtes de serveur : la fusion et le regroupement. Ces paramètres sont désactivés par défaut. Vous pouvez les activer dans l’interface utilisateur d’administration de **[!UICONTROL Stores]** > **Paramètres** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]** ou à partir de la ligne de commande.
 
 ![Regroupement](../assets/performance/images/bundlingImage.png)
 
@@ -36,7 +36,7 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 
 Il s’agit d’un [!DNL Commerce] mécanisme qui combine toutes les ressources présentes dans le système et les distribue parmi des lots de même taille (bundle_0.js, bundle_1.js ... bundle_x.js) :
 
-![[!DNL Commerce] regroupement](../assets/performance/images/magentoBundling.png)
+![[!DNL Commerce] bundling](../assets/performance/images/magentoBundling.png)
 
 Mieux encore, mais le navigateur charge TOUTES les [!DNL JavaScript] des lots, pas seulement ceux dont ils ont besoin.
 
@@ -62,7 +62,7 @@ Pour tester et préparer votre déploiement storefront pour le monde réel, nous
 
 ![Regroupement dans le monde réel](../assets/performance/images/magentoBundlingRealWorld.png)
 
-Pour une connectivité 3G lente, le chargement de tous les lots prend environ 44 secondes pour la page d’accueil d’une page d’accueil propre. [!DNL Commerce] installation.
+Pour une connectivité 3G lente, le chargement de tous les lots prend environ 44 secondes pour la page d’accueil d’une page propre. [!DNL Commerce] installation.
 
 Il en va de même lors de la fusion des lots dans un seul fichier. Les utilisateurs pouvaient encore attendre environ 42 secondes le chargement initial de la page, comme illustré ici :
 
@@ -131,11 +131,11 @@ Ajoutez les noeuds de configuration de version RequireJS suivants, `deps`, `shim
 
 #### 3\. Agrégez les valeurs d’instance requirejs-config.js .
 
-Au cours de cette étape, vous devrez regrouper tous les `deps`, `shim`, `paths`, et `map` noeuds de configuration de votre magasin `requirejs-config.js` dans les noeuds correspondants de votre `build.js` fichier . Pour ce faire, vous pouvez ouvrir le **[!UICONTROL Network]** dans le panneau Outils de développement de votre navigateur, puis accédez à n’importe quelle page de votre magasin, telle que la page d’accueil. Dans l’onglet Réseau, l’instance de la boutique du `requirejs-config.js` fichier situé près du haut, en surbrillance ici :
+Au cours de cette étape, vous devrez regrouper tous les `deps`, `shim`, `paths`, et `map` noeuds de configuration de votre magasin `requirejs-config.js` dans les noeuds correspondants de votre `build.js` fichier . Pour ce faire, vous pouvez ouvrir le **[!UICONTROL Network]** dans le panneau Outils de développement de votre navigateur et accédez à n’importe quelle page de votre magasin, telle que la page d’accueil. Dans l’onglet Réseau, l’instance de la boutique du `requirejs-config.js` fichier situé près du haut, en surbrillance ici :
 
 ![Configuration RequireJS](../assets/performance/images/RequireJSConfig.png)
 
-Dans ce fichier, vous trouverez plusieurs entrées pour chacun des noeuds de configuration (`deps`, `shim`, `paths`, `map`). Vous devez regrouper ces valeurs de noeud multiples dans le noeud de configuration unique de votre fichier build.js. Par exemple, si la variable `requirejs-config.js` l’instance comporte des entrées pour 15 entrées distinctes. `map` , vous devez fusionner les entrées des 15 noeuds en une seule `map` dans votre `build.js` fichier . Il en sera de même pour la variable `deps`, `shim`, et `paths` noeuds. Sans un script pour automatiser ce processus, cela peut prendre du temps.
+Ce fichier contient plusieurs entrées pour chacun des noeuds de configuration (`deps`, `shim`, `paths`, `map`). Vous devez regrouper ces valeurs de noeud multiples dans le noeud de configuration unique de votre fichier build.js. Par exemple, si la variable `requirejs-config.js` instance comporte des entrées pour 15 entrées distinctes `map` , vous devez fusionner les entrées des 15 noeuds en une seule `map` dans votre `build.js` fichier . Il en sera de même pour la variable `deps`, `shim`, et `paths` noeuds. Sans un script pour automatiser ce processus, cela peut prendre du temps.
 
 Vous devez modifier le chemin. `mage/requirejs/text` to `requirejs/text` in `paths` noeud de configuration comme suit :
 
@@ -151,7 +151,7 @@ Vous devez modifier le chemin. `mage/requirejs/text` to `requirejs/text` in `pat
 
 #### 4\. Ajouter un noeud de modules
 
-À la fin de la variable `build.js` , ajouter les modules[] comme espace réservé pour les lots que vous définirez ultérieurement pour votre storefront.
+À la fin du `build.js` , ajouter les modules[] comme espace réservé pour les lots que vous définirez ultérieurement pour votre storefront.
 
 ```javascript
 ({
@@ -275,7 +275,7 @@ Cette commande fusionne et trie les dépendances trouvées dans la variable `bun
 ...
 ```
 
-Ce résultat indique que : `buildTools` est une dépendance dans un seul des fichiers bundle/*.txt . Le `jquery/jquery.metadata` La dépendance se trouve dans deux (2) fichiers et `es6-collections` se trouve dans trois (3) fichiers.
+Ce résultat indique que : `buildTools` est une dépendance dans un seul des fichiers bundle/*.txt . La variable `jquery/jquery.metadata` La dépendance se trouve dans deux (2) fichiers et `es6-collections` se trouve dans trois (3) fichiers.
 
 Notre sortie n’affiche que trois types de page (page d’accueil, catégorie et produit), ce qui nous indique :
 
@@ -285,7 +285,7 @@ Notre sortie n’affiche que trois types de page (page d’accueil, catégorie e
 
 Cela nous indique que nous pouvons probablement améliorer la vitesse de chargement des pages de notre magasin en divisant nos dépendances en différents lots, une fois que nous savons quels types de page ont besoin de quelles dépendances.
 
-#### 8\. Création d’un fichier de distribution des dépendances
+#### 8\. Créer un fichier de distribution des dépendances
 
 Pour identifier les types de page qui nécessitent les dépendances, créez un fichier dans le [!DNL Commerce] Répertoire racine appelé `deps-map.sh` et copiez dans le code ci-dessous :
 
@@ -390,7 +390,7 @@ php -f bin/magento setup:static-content:deploy -f -a frontend
 
 Cette commande génère des déploiements de magasin statiques pour chaque thème et paramètre régional que vous avez configuré. Par exemple, si vous utilisez le thème Luma et un thème personnalisé avec des paramètres régionaux en anglais et en français, vous générez quatre déploiements statiques :
 
-- ...luma/en_US
+- ...luma/fr_FR
 - ...luma/fr_FR
 - ...custom/en_US
 - ...custom/fr_FR
@@ -421,7 +421,7 @@ r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/stat
 
 Cette commande génère des lots dans une `bundles` sous-répertoire du répertoire cible, qui dans ce cas entraîne `pub/static/frontend/Magento/luma/en_US/bundles`.
 
-La liste du contenu du nouveau répertoire de lot peut se présenter comme suit :
+La liste du contenu du nouveau répertoire de bundle peut se présenter comme suit :
 
 ```bash
 ll pub/static/frontend/Magento/luma/en_US/bundles
@@ -507,7 +507,7 @@ Le temps de chargement d’une page d’accueil vide est désormais deux fois pl
 
 #### 7. Optimisation des lots
 
-Même en cas de gzip, la variable [!DNL JavaScript] Les fichiers sont toujours volumineux. Minifiez-les avec RequireJS, qui utilise uglifier pour la minification. [!DNL JavaScript] à un bon résultat.
+Même en cas de gzip, la variable [!DNL JavaScript] Les fichiers sont toujours volumineux. Minifiez-les avec RequireJS, qui utilise uglifier pour la minification [!DNL JavaScript] à un bon résultat.
 
 Pour activer l’optimiseur dans votre `build.js` fichier, ajouter `uglify2` comme valeur de la propriété optimize située en haut de l’objet `build.js` fichier :
 
@@ -521,4 +521,4 @@ Pour activer l’optimiseur dans votre `build.js` fichier, ajouter `uglify2` com
 Les résultats peuvent être significatifs :
 ![Trois fois plus rapide](../assets/performance/images/ThreeTimesFaster.png)
 
-Les temps de chargement sont désormais trois fois plus rapides qu’avec natif. [!DNL Commerce] regroupement.
+Les temps de chargement sont désormais trois fois plus rapides qu’avec natif [!DNL Commerce] regroupement.

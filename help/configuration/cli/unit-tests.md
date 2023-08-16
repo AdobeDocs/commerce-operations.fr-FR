@@ -1,13 +1,13 @@
 ---
 title: Exécution de tests unitaires
 description: Exécutez des tests unitaires définis dans la base de code Adobe Commerce.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
 
 ---
-
 
 # Exécution de tests unitaires
 
@@ -19,13 +19,13 @@ Cette commande exécute un ensemble de tests définis dans la base de code Comme
 
 Avant d’exécuter cette commande, procédez comme suit : _must_ être vrai :
 
-- Le `Magento_Developer` doit être activé. Vous pouvez l’activer comme suit :
+- La variable `Magento_Developer` doit être activé. Vous pouvez l’activer comme suit :
 
-   ```bash
-   bin/magento module:enable [--force] Magento_Developer
-   ```
+  ```bash
+  bin/magento module:enable [--force] Magento_Developer
+  ```
 
-   Utilisez la variable `--force` uniquement si nécessaire.
+  Utilisez la variable `--force` uniquement si nécessaire.
 
 - Votre système doit être configuré pour exécuter les tests souhaités.
 

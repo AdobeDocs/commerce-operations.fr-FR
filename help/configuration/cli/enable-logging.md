@@ -83,14 +83,14 @@ Par défaut, Commerce écrit : `cron` pour `<install-directory>/var/log/cron.log
 ## Journalisation Syslog
 
 Par défaut, Commerce écrit : _syslog_ se connecte au système d’exploitation `syslog` fichier .
-À compter de Commerce 2.3.1, vous devez utiliser la variable `magento` pour activer ou désactiver le syslog.
+Depuis Commerce 2.3.1, vous devez utiliser la variable `magento` pour activer ou désactiver le syslog.
 Le paramètre dans l’administrateur a été supprimé.
 
 ### Pour activer la journalisation du journal des syslogs
 
 Connexion à `syslog` est désactivé par défaut.
 
-1. Utilisez la variable `setup:config:set` pour modifier la variable `dev/syslog/syslog_logging` valeur de la base de données `true`.
+1. Utilisez la variable `setup:config:set` pour modifier la variable `dev/syslog/syslog_logging` valeur de la base de données vers `true`.
 
    ```bash
    bin/magento setup:config:set --enable-syslog-logging=true
@@ -104,7 +104,7 @@ Connexion à `syslog` est désactivé par défaut.
 
 ### Pour désactiver la journalisation du journal du système
 
-1. Utilisez la variable `setup:config:set` pour modifier la variable `dev/syslog/syslog_logging` valeur de la base de données `false`.
+1. Utilisez la variable `setup:config:set` pour modifier la variable `dev/syslog/syslog_logging` valeur de la base de données vers `false`.
 
    ```bash
    bin/magento setup:config:set --enable-syslog-logging=false

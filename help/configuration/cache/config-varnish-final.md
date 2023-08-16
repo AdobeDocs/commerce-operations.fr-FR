@@ -18,9 +18,9 @@ Maintenant que vous utilisez la variable `default.vcl` générés par Commerce, 
 
 Utilisation `curl` ou un autre utilitaire permettant d’afficher des en-têtes de réponse HTTP lorsque vous visitez une page Commerce dans un navigateur web.
 
-Tout d’abord, assurez-vous que vous utilisez [mode développeur](../cli/set-mode.md#change-to-developer-mode); sinon, les en-têtes ne s’affichent pas.
+Tout d’abord, assurez-vous que vous utilisez [mode développeur](../cli/set-mode.md#change-to-developer-mode); dans le cas contraire, vous ne verrez pas les en-têtes.
 
-Par exemple :
+Par exemple,
 
 ```bash
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
@@ -83,4 +83,4 @@ Assurez-vous que la variable `<magento_root>/var/page_cache` Le répertoire est 
 
 >[!TIP]
 >
->Si vous rencontrez des erreurs 503 (échec de la récupération du serveur principal), reportez-vous à la section [Résolution des problèmes 503 (Service indisponible)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) dans le _Centre d’aide Adobe Commerce_.
+>Si vous rencontrez des erreurs 503 (échec de la récupération du serveur principal), voir [Résolution des problèmes 503 (Service indisponible)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) dans le _Centre d’aide Adobe Commerce_.

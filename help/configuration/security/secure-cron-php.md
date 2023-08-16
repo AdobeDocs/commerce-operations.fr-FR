@@ -6,7 +6,7 @@ exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
 source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ Cette section explique comment sécuriser cron à l’aide de l’authentificati
 - [Tutoriel sur l’authentification et l’autorisation Apache 2.2](https://httpd.apache.org/docs/2.2/howto/auth.html)
 - [Tutoriel sur l’authentification et l’autorisation Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
-### Création d’un fichier de mot de passe
+### Créer un fichier de mot de passe
 
 Pour des raisons de sécurité, vous pouvez localiser le fichier de mot de passe n’importe où, à l’exception de la docroot de votre serveur web. Dans cet exemple, nous stockons le fichier de mot de passe dans un nouveau répertoire.
 
@@ -129,7 +129,7 @@ Cette section explique comment sécuriser cron à l’aide du serveur web Nginx.
 1. Configuration d’un fichier de mot de passe chiffré pour Nginx
 1. Modifiez la configuration nginx pour référencer le fichier de mot de passe lors de l’accès à `pub/cron.php`
 
-### Création d’un fichier de mot de passe
+### Créer un fichier de mot de passe
 
 Consultez l’une des ressources suivantes pour créer un fichier de mot de passe avant de poursuivre :
 
@@ -175,13 +175,13 @@ La méthode la plus simple pour vérifier que `pub/cron.php` est sécurisé afin
 
 >[!INFO]
 >
->Le `default` cron que vous exécutez dans cet exemple s’exécute selon le planning défini dans `crontab.xml`. Une tâche cron ne s’exécute qu’une seule fois par jour. La première fois que vous exécutez cron à partir du navigateur, l’événement `cron_schedule` Le tableau est mis à jour, mais sa mise à jour est ultérieure. `pub/cron.php` les requêtes s’exécutent selon le planning configuré.
+>La variable `default` cron que vous exécutez dans cet exemple s’exécute selon le planning défini dans `crontab.xml`. Une tâche cron ne s’exécute qu’une seule fois par jour. La première fois que vous exécutez cron à partir du navigateur, l’événement `cron_schedule` Le tableau est mis à jour, mais sa mise à jour suit `pub/cron.php` les requêtes s’exécutent selon le planning configuré.
 
 **Pour vérifier que cron est sécurisé**:
 
 1. Connectez-vous à la base de données en tant qu’utilisateur de base de données Commerce ou en tant que `root`.
 
-   Par exemple :
+   Par exemple,
 
    ```bash
    mysql -u magento -p
@@ -193,7 +193,7 @@ La méthode la plus simple pour vérifier que `pub/cron.php` est sécurisé afin
    use <database-name>;
    ```
 
-   Par exemple :
+   Par exemple,
 
    ```shell
    use magento;
@@ -211,7 +211,7 @@ La méthode la plus simple pour vérifier que `pub/cron.php` est sécurisé afin
    http[s]://<Commerce hostname or ip>/cron.php?group=default
    ```
 
-   Par exemple :
+   Par exemple :
 
    ```shell
    http://magento.example.com/cron.php?group=default
@@ -266,7 +266,7 @@ Si vous utilisez un serveur web Apache, vous devez supprimer la restriction de l
    <magento_root>/.htaccess
    ```
 
-1. Supprimez ou commentez les éléments suivants :
+1. Supprimez ou mettez en commentaire les éléments suivants :
 
    ```conf
    ## Deny access to cron.php
@@ -276,7 +276,7 @@ Si vous utilisez un serveur web Apache, vous devez supprimer la restriction de l
      </Files>
    ```
 
-   Par exemple :
+   Par exemple,
 
    ```conf
    ## Deny access to cron.php
@@ -299,11 +299,11 @@ Où :
 - `<your hostname or IP>` est le nom d’hôte ou l’adresse IP de votre installation Commerce ;
 - `<Commerce root>` est le répertoire relatif à la docroot du serveur web sur lequel vous avez installé le logiciel Commerce ;
 
-   L’URL exacte que vous utilisez pour exécuter l’application Commerce dépend de la manière dont vous avez configuré votre serveur web et votre hôte virtuel.
+  L’URL exacte que vous utilisez pour exécuter l’application Commerce dépend de la manière dont vous avez configuré votre serveur web et votre hôte virtuel.
 
 - `<group name>` est un nom de groupe cron valide (facultatif).
 
-Par exemple :
+Par exemple,
 
 ```http
 https://magento.example.com/magento2/pub/cron.php?group=index
@@ -311,4 +311,4 @@ https://magento.example.com/magento2/pub/cron.php?group=index
 
 >[!INFO]
 >
->Vous devez exécuter cron deux fois : découvrez d’abord les tâches à exécuter, puis à exécuter les tâches elles-mêmes. Voir [Configuration et exécution de cron](../cli/configure-cron-jobs.md) pour plus d’informations sur les groupes cron.
+>Vous devez exécuter cron deux fois : d’abord pour découvrir des tâches à exécuter, puis à nouveau pour exécuter les tâches elles-mêmes. Voir [Configuration et exécution de cron](../cli/configure-cron-jobs.md) pour plus d’informations sur les groupes cron.

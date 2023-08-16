@@ -15,11 +15,11 @@ L’objectif de ce guide est de vous fournir les outils nécessaires pour exécu
 
 ## Pour qui est ce guide ?
 
-Ce guide est destiné aux marchands, développeurs et intégrateurs afin de faciliter les performances optimales de leur boutique Adobe Commerce.
+Ce guide est conçu à l’intention des marchands, des développeurs et des intégrateurs afin de faciliter les performances optimales de leur boutique Adobe Commerce.
 
 ## Qu&#39;y a-t-il dans le guide ?
 
 * [[!DNL Site-Wide Analysis Tool]](../tools/site-wide-analysis-tool/intro.md)
-* [[!DNL Quality Patches Tool]: Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+* [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 * [[!DNL Observation for Adobe Commerce]](../tools/observation-for-adobe-commerce/intro.md)
 * [[!DNL Data Migration Tool]](data-migration-tool/how-migration-works.md)

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Stratégie de mise à jour Adobe Commerce
 
-Utilisation d’Adobe Commerce et de Magento Open Source [contrôle de version sémantique](https://semver.org/) au niveau du module individuel (par exemple `magento/framework 101.1.1`), mais pas pour le numéro de version marketing. Par exemple :
+Utilisation d’Adobe Commerce et de Magento Open Source [contrôle de version sémantique](https://semver.org/) au niveau du module individuel (par exemple `magento/framework 101.1.1`), mais pas pour le numéro de version marketing. Par exemple :
 
 - **Version MAJOR**—2
 - **Version MINEURE**—2.4

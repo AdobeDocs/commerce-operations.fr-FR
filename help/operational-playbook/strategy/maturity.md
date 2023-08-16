@@ -4,7 +4,7 @@ description: Évaluez l’état de votre entreprise en fonction de ce modèle de
 exl-id: 5cf9f080-0ac4-4426-837f-3c245d10e504
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Le tableau suivant résume les différents niveaux de maturité :
 | Walk | À ce niveau, les entreprises commencent à exploiter les données antérieures sur les clients provenant de sources multiples, ce qui nécessite une collaboration interministérielle.  Les organisations de ce niveau peuvent exploiter tout le potentiel des campagnes gérées par des personnes et disposent d’un ensemble mature de bonnes pratiques, de processus et de flux de développement. |
 | Exécuter | Le niveau de maturité le plus élevé permet des campagnes optimisées par l’IA sur divers canaux et utilise la gestion prédictive des stocks pour empêcher la perte de clientèle et les outils de gestion de l’information sur les produits pour enrichir les produits. Elle est mieux réalisée par des organisations dotées d&#39;une culture des données évoluée, de compétences en développement et de processus en interne et à l&#39;étranger. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Analyse
 
@@ -37,7 +37,7 @@ Il s’agit de la phase initiale de toute entreprise, le point de départ. Au co
 
 Si vous devez créer un système de tarification, vous devez comprendre les fournisseurs de passerelle de paiement sur le marché. Plus précisément, vous devez déterminer quel fournisseur correspond le mieux à vos besoins en fonction de l’expérience du secteur, des coûts, du service client et de la sécurité. Les passerelles de paiement traitent les paiements de transaction indépendamment du site web. Lorsque les équipes n’ont pas à se soucier de stocker les détails du paiement sur le site web, elles peuvent se concentrer sur la fonctionnalité du site.
 
-Une fois que vous avez choisi un fournisseur de passerelle de paiement, vous devez analyser les méthodes de paiement requises. Concentrez-vous sur les méthodes les plus utilisées par les clients. Étant donné que certaines entreprises sont nouvelles à la plateforme de commerce électronique, elles choisissent d’offrir des options de paiement limitées, car chaque option nécessite un investissement initial substantiel. Au minimum, les entreprises en phase d’analyse offrent des options de paiement par carte de crédit et de débit. Ils se dirigent vers des options telles que PayPal et Afterpay une fois qu’ils ont vu du trafic sur le site et que le trafic entraîne une augmentation des taux de conversion.
+Une fois que vous avez choisi un fournisseur de passerelle de paiement, vous devez analyser les méthodes de paiement requises. Concentrez-vous sur les méthodes les plus utilisées par les clients. Étant donné que certaines entreprises sont nouvelles à la plateforme de commerce électronique, elles choisissent d’offrir des options de mode de paiement limitées, car chaque option nécessite un investissement initial substantiel. Au minimum, les entreprises en phase d’analyse offrent des options de paiement par carte de crédit et de débit. Ils se dirigent vers des options telles que PayPal et Afterpay une fois qu’ils ont vu du trafic sur le site et que le trafic entraîne une augmentation des taux de conversion.
 
 Dans l&#39;ensemble, les entreprises en phase d&#39;analyse devraient développer un système de commerce électronique bien intégré pour le lancer et le lancer avant qu&#39;elles ne se développent pour ajouter d&#39;autres fonctionnalités.
 
@@ -81,7 +81,7 @@ Quelles données sont disponibles et à quel point elles sont interconnectées ?
 - Retours de produit mis à jour
 - Suivi avancé des sessions et du comportement des clients
 
-### Insights
+### Informations
 
 Analyses, tendances et alertes déclenchées par les données :
 
@@ -108,10 +108,10 @@ Ressources, taille d’équipe et processus :
 Avez-vous établi un soutien continu à l&#39;optimisation et au partage des connaissances ?
 
 - L’équipe marketing gère les campagnes avec l’aide de l’équipe eCommerce.
-- Les cas d’utilisation courants sont documentés
+- Les cas pratiques courants sont documentés
 - Programmes à l’échelle de l’entreprise pour la génération d’idées
 
-### Confidentialité
+### Privacy
 
 Gestion de la sécurité et de la confidentialité :
 

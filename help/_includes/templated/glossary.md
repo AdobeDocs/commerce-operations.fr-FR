@@ -21,13 +21,13 @@ L’utilisation de thèmes réactifs et de tests peut aider à trouver la bonne 
 
 _Attributs de terme :_
 
-* _Champ : design_
+* _Champ : conception_
 
-### principale branche
+### branche active
 
 _nom_
 
-Une branche ou un environnement principal est connecté à une instance déployée ou en cours d’exécution ayant accès aux services.
+Une branche ou un environnement actif est un environnement connecté à une instance déployée ou en cours d’exécution ayant accès aux services.
 Lorsque vous désactivez , la connexion aux services et à l’instance en cours d’exécution est supprimée, mais le code est conservé.
 Ça devient une branche git ordinaire.
 
@@ -60,7 +60,7 @@ _Attributs de terme :_
 
 * _Champ : logiciel de commerce_
 * _Synonymes : administrateur, super utilisateur_
-* _Termes connexes : administrateur de commerce_
+* _Termes connexes : administrateur du commerce_
 
 ### Zone d’administration
 
@@ -75,8 +75,8 @@ En savoir plus : [Guide de l’utilisateur d’Adobe Commerce](https://experienc
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce_
-* _Synonymes : Administration, panneau d’administration, serveur principal, interface d’administration, interface utilisateur d’administration_
-* _Termes connexes : admin_
+* _Synonymes : administrateur, panneau d’administration, serveur principal, interface d’administration, interface utilisateur d’administration_
+* _Termes associés : admin_
 
 ### Variables ADMIN
 
@@ -101,7 +101,7 @@ En savoir plus : [Guide de l’utilisateur d’Adobe Commerce](https://experienc
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce_
-* _Termes connexes : Zone, administrateur de commerce_
+* _Termes connexes : zone, administrateur de commerce_
 
 ### area
 
@@ -112,7 +112,7 @@ Les zones sont des composants logiques qui organisent le code pour un traitement
 Les zones réduisent les exigences de mémoire des objets de configuration accessibles à partir du storefront et elles rationalisent les appels de service Web en chargeant uniquement le code dépendant requis.
 Chaque zone peut contenir un code complètement différent pour traiter les URL et les requêtes.
 
-Les zones Adobe Commerce incluent :
+Les zones d’Adobe Commerce incluent :
 
 * Admin (adminhtml)
 * Storefront
@@ -121,7 +121,7 @@ Les zones Adobe Commerce incluent :
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce_
-* _Termes connexes : composant Commerce, storefront_
+* _Termes associés : composant Commerce, storefront_
 
 ### attribute
 
@@ -142,37 +142,37 @@ _Attributs de terme :_
 
 * _Champ : logiciel de commerce, produit_
 * _Synonymes : attribut de produit, attribut personnalisé_
-* _Termes connexes : attribut d’extension_
+* _Termes associés : attribut d’extension_
 
 ### groupe d’attributs
 
 _nom_
 
-Regroupement logique d’attributs au sein d’un jeu d’attributs.
+Regroupement logique d’attributs dans un jeu d’attributs.
 
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce_
-* _Termes connexes : attribute_
+* _Termes associés : attribut_
 
 ### jeu d’attributs
 
 _nom_
 
 Collection de groupes d’attributs, personnalisée pour un produit spécifique.
-Exemple : Un jeu d’attributs de T-shirt peut inclure la couleur, la taille, le sexe et la marque.
+Exemple : un jeu d’attributs de T-shirt peut inclure la couleur, la taille, le sexe et la marque.
 
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce, produit_
-* _Termes connexes : attribute_
+* _Termes associés : attribut_
 
 ### coût d&#39;inventaire moyen
 
 _nom_
 
 Prix du produit, moins les coupons ou les remises, plus le fret et les taxes applicables.
-La moyenne est déterminée en ajoutant le coût de début du stock chaque mois, plus le coût de fin du stock pour le dernier mois de la période.
+La moyenne est déterminée en ajoutant le coût initial de l’inventaire chaque mois, plus le coût final de l’inventaire pour le dernier mois de la période.
 
 _Attributs de terme :_
 
@@ -184,9 +184,9 @@ _Attributs de terme :_
 
 _nom_
 
-Devise Principale utilisée par vue de magasin pour tous les paiements en ligne.
+Devise principale utilisée par vue de magasin pour tous les paiements en ligne.
 Les magasins peuvent accepter des devises de plus de 200 pays dans le monde.
-L’interface de magasin fournit un sélecteur de devise pour plusieurs devises acceptées pour un pays ou un paramètre régional spécifique.
+L’interface de magasin fournit un sélecteur de devise pour plusieurs devises acceptées pour un pays ou des paramètres régionaux spécifiques.
 Les symboles de devise apparaissent dans les prix des produits et les documents de vente, tels que les commandes et les factures.
 Vous pouvez personnaliser les symboles de devise selon vos besoins et définir l’affichage du prix séparément pour chaque magasin ou affichage.
 
@@ -194,7 +194,7 @@ En savoir plus : [Devise](https://experienceleague.adobe.com/docs/commerce-admin
 
 _Attributs de terme :_
 
-* _Champ : tarif_
+* _Champ : tarification_
 
 ### traitement par lots
 
@@ -205,7 +205,7 @@ Pour effectuer une tâche ou modifier plusieurs éléments simultanément, sans 
 _Attributs de terme :_
 
 * _Champ : programmation_
-* _Synonymes : opérations en bloc_
+* _Synonymes : opérations en masse_
 
 ### block
 
@@ -223,8 +223,8 @@ Page Builder se développe sur l’interactivité et la création de [blocs](htt
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce_
-* _Synonymes : Blocs dynamiques_
-* _Termes connexes : bloc cms, bloc statique, conteneur, mise en page_
+* _Synonymes : blocs dynamiques_
+* _Termes associés : bloc cms, bloc statique, conteneur, mise en page_
 
 ### marque
 
@@ -240,7 +240,7 @@ Certaines extensions et intégrations peuvent utiliser ou nécessiter une marque
 
 _Attributs de terme :_
 
-* _Champ : commerce_
+* _Champ : métier_
 
 ### brique et mortier
 
@@ -252,7 +252,7 @@ Pour [Inventory management](https://experienceleague.adobe.com/docs/commerce-adm
 
 _Attributs de terme :_
 
-* _Champ : business, inventory_
+* _Champ : entreprise, inventaire_
 
 ### opérations en bloc
 
@@ -279,7 +279,7 @@ En savoir plus : [Produits configurables](https://experienceleague.adobe.com/doc
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce, produit_
-* _Termes connexes : produit simple, produit virtuel, types de produits_
+* _Termes associés : produit simple, produit virtuel, types de produits_
 
 ### extension groupée
 
@@ -292,7 +292,7 @@ _Attributs de terme :_
 
 * _Champ : extension groupée, extension_
 * _Synonymes : extension_
-* _Termes connexes : extension, extension groupée du fournisseur_
+* _Termes associés : extension, extension groupée fournisseur_
 
 ## C
 
@@ -307,7 +307,7 @@ Un cache de second niveau — par exemple, un système de fichiers ou un serveur
 _Attributs de terme :_
 
 * _Champ : programmation_
-* _Termes connexes : backend_
+* _Termes associés : backend_
 
 ### front de cache
 
@@ -318,7 +318,7 @@ Indique le type de données stocké dans le serveur principal du cache.
 _Attributs de terme :_
 
 * _Champ : programmation_
-* _Termes connexes : frontend_
+* _Termes associés : frontend_
 
 ### type de cache
 
@@ -341,7 +341,7 @@ Adobe Commerce comprend les types suivants :
 * Cache de page (le plus connu)
 * Configuration des services web
 * Traductions
-* Règle de ciblage
+* Règle Target
 * Cache de produit Google
 * Vertex
 
@@ -360,8 +360,8 @@ Les transactions ne peuvent pas être capturées tant qu’elles ne sont pas aut
 
 _Attributs de terme :_
 
-* _Champ : commerce_
-* _Termes connexes : autorisation, état de la commande_
+* _Champ : métier_
+* _Termes associés : autorisation, état de la commande_
 
 ### détenteur de carte
 
@@ -371,7 +371,7 @@ Personne qui est autorisée par une institution financière à effectuer des ach
 
 _Attributs de terme :_
 
-* _Champ : commerce, commande_
+* _Champ : professionnel, commande_
 
 ### règles de panier
 
@@ -383,7 +383,7 @@ Utilisé pour créer des promotions.
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce, tarification, produit_
-* _Termes connexes : règles de catalogue, panier_
+* _Termes associés : règles de catalogue, panier_
 
 ### catalogue
 
@@ -402,7 +402,7 @@ Vous pouvez créer autant de catégories racine que vous le souhaitez, mais une 
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce, tarification, produit_
-* _Termes connexes : catalogue partagé, règle de catalogue_
+* _Termes associés : catalogue partagé, règle de catalogue_
 
 ### règles de catalogue
 
@@ -414,7 +414,7 @@ Utilisé pour créer des promotions.
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce, tarification, produit_
-* _Termes connexes : règles de panier, catalogue_
+* _Termes associés : règles de panier, catalogue_
 
 ### category
 
@@ -440,7 +440,7 @@ En savoir plus : [Tutoriel sur le passage en caisse](https://developer.adobe.com
 
 _Attributs de terme :_
 
-* _Champ : commerce, conception, commande, produit, programmation_
+* _Champ : entreprise, conception, commande, produit, programmation_
 
 ### variables cloud
 
@@ -463,7 +463,7 @@ Une variante spéciale de [block](https://experienceleague.adobe.com/docs/commer
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce_
-* _Termes connexes : bloc, bloc statique_
+* _Termes associés : bloc, bloc statique_
 
 ### données complexes
 
@@ -484,8 +484,8 @@ Utilisé pour faire référence à un module, un thème ou un module de langue d
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce_
-* _Synonymes : component_
-* _Termes connexes : composant ui_
+* _Synonymes : composant_
+* _Termes associés : composant ui_
 
 ### produit configurable
 
@@ -506,7 +506,7 @@ Ensuite, toutes les variantes sont ajoutées à un produit configurable dans leq
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce, produit_
-* _Termes connexes : types de produits_
+* _Termes associés : types de produits_
 
 ### taux de conversion
 
@@ -516,7 +516,7 @@ Pourcentage de visiteurs convertis en acheteurs.
 
 _Attributs de terme :_
 
-* _Champ : commerce, commande_
+* _Champ : professionnel, commande_
 
 ### échelle de niveau principal
 
@@ -537,7 +537,7 @@ Le mémo récupère les fonds sur le compte du client.
 
 _Attributs de terme :_
 
-* _Champ : commerce, commande_
+* _Champ : professionnel, commande_
 
 ### commentaire de note de crédit
 
@@ -547,7 +547,7 @@ Explique pourquoi un montant de note de crédit a été crédité au client.
 
 _Attributs de terme :_
 
-* _Champ : commerce, commande_
+* _Champ : professionnel, commande_
 
 ### élément de note de crédit
 
@@ -557,7 +557,7 @@ Article facturé pour lequel un commerçant crée une note de crédit.
 
 _Attributs de terme :_
 
-* _Champ : commerce, commande_
+* _Champ : professionnel, commande_
 
 ### vente croisée
 
@@ -569,8 +569,8 @@ Elles sont similaires aux achats impulsifs, comme les magazines et les bonbons d
 
 _Attributs de terme :_
 
-* _Champ : commerce, produit_
-* _Termes connexes : upsell_
+* _Champ : entreprise, produit_
+* _Termes associés : vente incitative_
 
 ### CVM
 
@@ -581,8 +581,8 @@ Un moyen de vérifier l’identité du client en confirmant un code de sécurit�
 
 _Attributs de terme :_
 
-* _Champ : commerce, commande_
-* _Synonymes : Méthode de vérification du détenteur de carte_
+* _Champ : professionnel, commande_
+* _Synonymes : méthode de vérification du détenteur de carte_
 * _Termes connexes : code de sécurité_
 
 ## D
@@ -598,7 +598,7 @@ Un module peut contenir des fragments du schéma de base de données si ce modul
 _Attributs de terme :_
 
 * _Champ : programmation_
-* _Synonymes : schema_
+* _Synonymes : schéma_
 
 ### injection de dépendance
 
@@ -633,7 +633,7 @@ Processus de vérification des emails qui nécessite que les abonnés potentiels
 
 _Attributs de terme :_
 
-* _Champ : commerce_
+* _Champ : métier_
 
 ### produit téléchargeable
 
@@ -648,7 +648,7 @@ Les fichiers téléchargeables peuvent se trouver sur votre serveur ou être fou
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce, produit_
-* _Termes connexes : types de produits_
+* _Termes associés : types de produits_
 
 ### contenu dynamique
 
@@ -659,8 +659,8 @@ Une fois que le contenu dynamique est initialement rendu lorsqu’un utilisateur
 
 _Attributs de terme :_
 
-* _Champ : design_
-* _Termes connexes : php_
+* _Champ : conception_
+* _Termes associés : php_
 
 ### URL du média dynamique
 
@@ -678,7 +678,7 @@ Format de code : media url=&quot;path/to/image.jpg&quot;
 _Attributs de terme :_
 
 * _Champ : programmation_
-* _Termes connexes : réseau de diffusion de contenu, url_
+* _Termes associés : réseau de diffusion de contenu, url_
 
 ## E
 
@@ -686,13 +686,13 @@ _Attributs de terme :_
 
 _nom_
 
-Ensemble de scripts et d’outils conçus pour gérer et déployer l’application Commerce. Ce package simplifie de nombreux processus Adobe Commerce sur l’infrastructure cloud, notamment le déploiement dans un environnement Docker, la gestion des crons, la vérification de la configuration du projet et l’application de correctifs d’Adobe.
+Ensemble de scripts et d’outils conçus pour gérer et déployer l’application Commerce. Ce package simplifie de nombreux processus d’infrastructure cloud d’Adobe Commerce, notamment le déploiement dans un environnement Docker, la gestion des crons, la vérification de la configuration du projet et l’application de correctifs d’Adobe.
 
 En savoir plus : [Module ece-tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
 
 _Attributs de terme :_
 
-* _Champ : cli, cloud, déploiement_
+* _Champ : cli, cloud, deploy_
 
 ### entity
 
@@ -705,7 +705,7 @@ Par exemple, l’évaluation (où une mise à jour peut modifier des entités te
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce_
-* _Termes connexes : attribut, règles de panier, règles de catalogue_
+* _Termes associés : attribut, règles de panier, règles de catalogue_
 
 ### valeur d’attribut d’entité
 
@@ -731,20 +731,20 @@ Contenu ayant une longue durée de conservation ou contenu pouvant être réutil
 
 _Attributs de terme :_
 
-* _Champ : commerce_
+* _Champ : métier_
 
 ### extension
 
 _nom_
 
-Code qui étend ou personnalise le comportement d’Adobe Commerce.
+Code qui étend ou personnalise le comportement Adobe Commerce.
 Vous pouvez éventuellement regrouper et distribuer une extension sur Commerce Marketplace ou sur un autre système de distribution d’extension.
 Une extension Commerce peut inclure des modules, des thèmes et des modules de langue.
 
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce_
-* _Termes connexes : component, module, package_
+* _Termes associés : composant, module, module_
 
 ### attribut d’extension
 
@@ -757,7 +757,7 @@ En savoir plus : [Ajout d’attributs d’extension à l’entité](https://deve
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce_
-* _Termes connexes : attribut, valeur d’attribut d’entité_
+* _Termes associés : attribut, valeur d’attribut d’entité_
 
 ## F
 
@@ -770,26 +770,26 @@ L&#39;OFP peut être établi en fonction du lieu d&#39;origine ou de destination
 
 _Attributs de terme :_
 
-* _Champ : commerce, commande, prix_
+* _Champ : entreprise, commande, prix_
 * _Synonymes : fob_
 
 ### frontend
 
 _adjectif_
 
-Dans une application client-serveur, il existe le serveur principal et le serveur frontal.
+Dans une application client-serveur, il y a le serveur principal et le serveur frontal.
 Le composant front-end, ou client, est une interface qui permet aux utilisateurs de manipuler ou d’interagir avec le code principal sous-jacent.
 Le code principal s’exécute sur un serveur.
 Un utilisateur ne peut pas accéder directement au code principal.
 Un utilisateur interagit avec le storefront, qui à son tour utilise du code s’exécutant sur le serveur Commerce.
 
-Remarque : Dans le passé, le storefront était appelé &quot;front-end&quot; et l’administrateur était appelé &quot;backend&quot;. Cette utilisation n’est plus prise en charge.
+Remarque : Dans le passé, le storefront était appelé &quot;front-end&quot; et l’administrateur était appelé &quot;serveur principal&quot;. Cette utilisation n’est plus prise en charge.
 
 _Attributs de terme :_
 
 * _Champ : conception, programmation_
 * _Synonymes : côté client_
-* _Termes connexes : back-end, storefront, front de cache_
+* _Termes associés : serveur principal, storefront, front de cache_
 
 ### propriétés frontend
 
@@ -809,7 +809,7 @@ Processus de gestion des envois de clients.
 
 _Attributs de terme :_
 
-* _Champ : commerce_
+* _Champ : métier_
 
 ## G
 
@@ -830,12 +830,12 @@ Les cartes cadeau sont configurables, notamment les options d’éligibilité de
 Une carte-cadeau peut également être échangée par l’administrateur du magasin à la demande du client lorsque la commande est en cours de création dans le serveur principal.
 
 Les cartes cadeau aident également les promotions, car les administrateurs de magasins peuvent créer manuellement les comptes de carte-cadeau dans le serveur principal et envoyer les codes de carte-cadeau au segment client spécifique.
-Les cartes-cadeaux peuvent servir de programme de fidélité destiné aux clients les plus principaux qui effectuent de nombreux achats dans la boutique en ligne ou dans le cadre d’une campagne promotionnelle spécifique pendant les vacances.
+Les cartes-cadeaux peuvent servir de programme de fidélité destiné aux clients les plus actifs qui effectuent de nombreux achats sur la boutique en ligne ou dans le cadre d’une campagne promotionnelle spécifique pendant les vacances.
 
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce_
-* _Termes connexes : types de produits_
+* _Termes associés : types de produits_
 
 ### marge brute
 
@@ -845,7 +845,7 @@ La différence entre le coût et le prix d’un produit.
 
 _Attributs de terme :_
 
-* _Champ : commerce_
+* _Champ : métier_
 
 ### produit groupé
 
@@ -861,7 +861,7 @@ Les clients peuvent sélectionner les tailles de leur choix et les ajouter au pa
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce, produit_
-* _Termes connexes : produit simple, types de produits_
+* _Termes associés : produit simple, types de produits_
 
 ## h
 
@@ -869,10 +869,10 @@ _Attributs de terme :_
 
 _nom_
 
-En règle générale, une poignée permet de référencer un objet.
+En règle générale, une poignée est une manière de référencer un objet.
 Dans Adobe Commerce, les poignées sont utilisées à de nombreux endroits, le plus souvent pour identifier une page.
 Pour les gestionnaires de page, le nom d’utilisateur est dérivé de l’URL, puis utilisé pour localiser et charger les fichiers de mise en page de la page référencée.
-Par exemple, dans le module Client, il existe un fichier de mise en page appelé &quot;view/frontend/layout/checkout_cart_index.xml&quot;.
+Par exemple, dans le module Client, il existe un fichier de disposition appelé &quot;view/frontend/layout/checkout_cart_index.xml&quot;.
 Ici &quot;frontend&quot; est le nom de la zone et &quot;checkout_cart_index&quot; est le nom de la poignée, qui sont tous deux dérivés de l’URL.
 
 _Attributs de terme :_
@@ -905,7 +905,7 @@ Si plusieurs plug-ins sont définis sur la même fonction, la configuration d’
 _Attributs de terme :_
 
 * _Champ : programmation_
-* _Termes connexes : plug-in_
+* _Termes associés : plug-in_
 
 ## L
 
@@ -921,7 +921,7 @@ Les fichiers de mise en page assemblent ensuite du contenu (blocs) dans ces diff
 _Attributs de terme :_
 
 * _Champ : conception, logiciel de commerce_
-* _Termes connexes : instructions de mise en page, bloc_
+* _Termes associés : instructions de mise en page, bloc_
 
 ### instructions de mise en page
 
@@ -934,7 +934,7 @@ Les instructions de mise en page sont codées au format XML dans les fichiers de
 _Attributs de terme :_
 
 * _Champ : conception, programmation_
-* _Termes connexes : mise en page, bloc, conteneur, composant ui_
+* _Termes associés : mise en page, bloc, conteneur, composant ui_
 
 ### mise à jour des mises en page
 
@@ -956,7 +956,7 @@ Une fois qu’une entreprise a acheté une Adobe Commerce sur abonnement à l’
 
 _Attributs de terme :_
 
-* _Champ : commerce_
+* _Champ : métier_
 
 ## M
 
@@ -985,14 +985,14 @@ En outre, les balises de balisage sont des fragments de code qui ajoutent des fo
 
 _Attributs de terme :_
 
-* _Champ : commerce, programmation_
+* _Champ : business, programmation_
 * _Synonymes : Markdown_
 
 ### environnement maître
 
 _nom_
 
-Sur Adobe Commerce sur l’infrastructure cloud, les projets Pro utilisent un environnement principal Platform as a Service (PaaS) appelé master qui comprend une copie de la base de données et du serveur web de votre environnement de production.
+Sur Adobe Commerce sur l’infrastructure cloud, les projets Pro utilisent un environnement actif Platform as a Service (PaaS) appelé master qui comprend une copie de la base de données et du serveur web de votre environnement de production.
 
 _Attributs de terme :_
 
@@ -1006,7 +1006,7 @@ Compte auprès d’une banque ou d’une institution financière permettant d’
 
 _Attributs de terme :_
 
-* _Champ : commerce_
+* _Champ : métier_
 
 ### MFTF
 
@@ -1014,12 +1014,12 @@ _nom_
 
 MFTF est un [Structure des tests fonctionnels](https://developer.adobe.com/commerce/testing/functional-testing-framework/).
 Il fournit une structure de test pour les développeurs de commerce et les ingénieurs logiciels, tels que les spécialistes de l’assurance qualité, les développeurs PHP et les intégrateurs de système.
-Les développeurs et le contrôle qualité peuvent rédiger des tests pour tenter d’interagir avec les applications web, vérifier les fonctionnalités et automatiser les tests de régression.
+Les développeurs et l’assurance qualité peuvent rédiger des tests pour tenter d’interagir avec les applications web, vérifier les fonctionnalités et automatiser les tests de régression.
 
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce, programmation_
-* _Termes connexes : bloc cms, bloc statique, conteneur, mise en page_
+* _Termes associés : bloc cms, bloc statique, conteneur, mise en page_
 
 ### module
 
@@ -1033,12 +1033,12 @@ Chaque module est conçu pour fonctionner indépendamment, de sorte que l’incl
 Un module peut également implémenter des widgets, qui sont des éléments de page qui peuvent être personnalisés par les utilisateurs professionnels dans l’administrateur.
 
 Les modules peuvent être désactivés ou supprimés sans rompre la cohérence de l’application de Magento.
-Une exception : Lorsque le module dépend d’autres modules, ce qui nécessite la désactivation ou la suppression des modules dépendants.
+Une exception : lorsque le module dépend d’autres modules, ce qui nécessite la désactivation ou la suppression des modules dépendants.
 
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce_
-* _Termes connexes : php, xml, bloc_
+* _Termes associés : php, xml, block_
 
 ## O
 
@@ -1064,7 +1064,7 @@ _Attributs de terme :_
 
 * _Champ : fonctionnalité, logiciel de commerce, gestion des commandes_
 * _Synonymes : gestion des commandes, MOM, système de gestion des commandes, Magento Order Management_
-* _Termes connexes : gestion des commandes_
+* _Termes associés : gestion des commandes_
 
 ### cloaking d’origine
 
@@ -1077,7 +1077,7 @@ En savoir plus : [Fermeture à l&#39;origine](https://experienceleague.adobe.com
 _Attributs de terme :_
 
 * _Champ : sécurité_
-* _Termes connexes : pare-feu d&#39;application web_
+* _Termes associés : pare-feu d’application web_
 
 ## P
 
@@ -1095,8 +1095,8 @@ En savoir plus : [Guide de l’utilisateur de Page Builder](https://experiencele
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce, conception_
-* _Synonymes : Administration, panneau d’administration, serveur principal, interface d’administration, interface utilisateur d’administration_
-* _Termes connexes : admin_
+* _Synonymes : administrateur, panneau d’administration, serveur principal, interface d’administration, interface utilisateur d’administration_
+* _Termes associés : admin_
 
 ### passerelle de paiement
 
@@ -1106,7 +1106,7 @@ Une passerelle de paiement est un service tiers qui traite en toute transparence
 
 _Attributs de terme :_
 
-* _Champ : commerce, commande, programmation_
+* _Champ : métier, commande, programmation_
 
 ## R
 
@@ -1132,7 +1132,7 @@ Inclut des règles de panier et de catalogue, qui sont utilisées pour évaluer 
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce, produit_
-* _Termes connexes : règles de panier, règles de catalogue_
+* _Termes associés : règles de panier, règles de catalogue_
 
 ### scope
 
@@ -1163,7 +1163,7 @@ Les API Web peuvent être liées aux contrats de service via des fichiers de con
 _Attributs de terme :_
 
 * _Champ : programmation_
-* _Termes connexes : php, api web_
+* _Termes associés : php, web api_
 
 ### accord
 
@@ -1173,7 +1173,7 @@ Le règlement a lieu lorsque la banque qui procède à l&#39;acquisition et les 
 
 _Attributs de terme :_
 
-* _Champ : commerce_
+* _Champ : métier_
 
 ### Catalogue partagé
 
@@ -1193,7 +1193,7 @@ Par exemple, un commerçant B2B a trois clients qui ont négocié des tarifs sp�
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce, produit_
-* _Termes connexes : catalogue, b2b_
+* _Termes associés : catalog, b2b_
 
 ### envoi
 
@@ -1204,7 +1204,7 @@ Plusieurs envois peuvent être associés à une seule commande.
 
 _Attributs de terme :_
 
-* _Champ : commerce, commande_
+* _Champ : professionnel, commande_
 
 ### document d&#39;expédition
 
@@ -1214,7 +1214,7 @@ Document accompagnant une expédition. Le document répertorie les produits et l
 
 _Attributs de terme :_
 
-* _Champ : commerce, commande_
+* _Champ : professionnel, commande_
 
 ### opérateur de transport
 
@@ -1224,7 +1224,7 @@ Une entreprise qui transporte des packages. Les opérateurs courants sont UPS, F
 
 _Attributs de terme :_
 
-* _Champ : commerce, commande_
+* _Champ : professionnel, commande_
 
 ### panier
 
@@ -1235,9 +1235,9 @@ Fait également référence à une zone d’un site de commerce électronique o�
 
 _Attributs de terme :_
 
-* _Champ : commerce, conception, produit, programmation_
+* _Champ : entreprise, conception, produit, programmation_
 * _Synonymes : panier_
-* _Termes connexes : règles de panier_
+* _Termes associés : règles de panier_
 
 ### produit simple
 
@@ -1251,7 +1251,7 @@ Un produit simple avec des options personnalisées est parfois appelé produit c
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce, produit_
-* _Termes connexes : types de produits_
+* _Termes associés : types de produits_
 
 ### SKU
 
@@ -1262,18 +1262,18 @@ Numéro ou code attribué à un produit pour identifier le produit, les options,
 
 _Attributs de terme :_
 
-* _Champ : commerce, tarification, produit, programmation_
-* _Termes connexes : catalogue partagé_
+* _Champ : entreprise, tarification, produit, programmation_
+* _Termes associés : catalogue partagé_
 
 ### page de démarrage
 
 _nom_
 
-une page promotionnelle avec un produit ou une publicité ; s’affiche normalement avant la page d’accueil.
+Page promotionnelle avec un produit ou une publicité, normalement affichée avant la page d’accueil.
 
 _Attributs de terme :_
 
-* _Champ : design_
+* _Champ : conception_
 
 ### bloc statique
 
@@ -1286,7 +1286,7 @@ Des widgets peuvent être ajoutés aux blocs statiques pour fournir des fonction
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce_
-* _Termes connexes : bloc cms, bloc_
+* _Termes associés : bloc cms, bloc_
 
 ### contenu statique
 
@@ -1296,8 +1296,8 @@ Contenu généré par l’utilisateur (non généré par le code) qui ne change 
 
 _Attributs de terme :_
 
-* _Champ : design_
-* _Termes connexes : contenu dynamique_
+* _Champ : conception_
+* _Termes associés : contenu dynamique_
 
 ### fichiers statiques
 
@@ -1321,7 +1321,7 @@ Chaque magasin peut avoir plusieurs vues de magasin, qui sont généralement uti
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce, produit_
-* _Termes connexes : vue de magasin, site web_
+* _Termes associés : vue du magasin, site web_
 
 ### vue de magasin
 
@@ -1334,7 +1334,7 @@ Pour modifier les vues des magasins, utilisez le sélecteur de magasin dans l’
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce, produit_
-* _Termes connexes : boutique, site web_
+* _Termes associés : magasin, site web_
 
 ### storefront
 
@@ -1356,7 +1356,7 @@ Combinaison d’une classe de taxe sur les produits, d’une classe de taxe sur 
 
 _Attributs de terme :_
 
-* _Champ : commerce_
+* _Champ : métier_
 
 ### modèle
 
@@ -1370,7 +1370,7 @@ Dans l’Admin, les modèles d’email et de newsletter combinent du texte, des 
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce_
-* _Termes connexes : block_
+* _Termes associés : block_
 
 ### thème
 
@@ -1397,8 +1397,8 @@ Les objectifs du système de composants de l’interface utilisateur sont les su
 
 * Simplification de la gestion des fichiers XML par mise en page
 * Déplacement des éléments de l’interface utilisateur d’administration de HTML+JavaScript vers un système de widget personnalisé &quot;JavaScript pur&quot;
-* Activation de la création de composants d’IU plus complexes à partir de composants plus petits
-* Prérendu des données pour les composants de l’interface utilisateur au format JSON, liaison étroite aux objets de données d’arrière-plan
+* Activation de la création de composants d’interface utilisateur plus complexes à partir de composants plus petits
+* Prérendu des données pour les composants de l’interface utilisateur au format JSON, liaison étroite aux objets de données du serveur principal
 * Utilisation d’AJAX pour mettre à jour les données de composant
 * Présentation d’un nouveau DSL pour la création des éléments ci-dessus
 
@@ -1407,7 +1407,7 @@ En savoir plus : [Guide des composants de l’interface utilisateur](https://dev
 _Attributs de terme :_
 
 * _Champ : programmation_
-* _Termes connexes : JavaScript, mise en page, composant, créateur de pages_
+* _Termes associés : JavaScript, mise en page, composant, créateur de pages_
 
 ### UPWARD
 
@@ -1428,8 +1428,8 @@ Un projet de PWA peut inclure un fichier de définition UPWARD pour spécifier s
 _Attributs de terme :_
 
 * _Champ : conception, logiciel de commerce, programmation_
-* _Synonymes : Définition de réponse web progressive et PWA Studio_
-* _Termes connexes : pwa_
+* _Synonymes : définition de réponse web progressive et PWA Studio_
+* _Termes associés : pwa_
 
 ## V
 
@@ -1445,9 +1445,9 @@ En savoir plus dans la section [Rubrique Extension groupée du fournisseur](http
 
 _Attributs de terme :_
 
-* _Champ : extension de commerce, extension groupée fournisseur, extension, VBE_
+* _Champ : extension de commerce, extension groupée du fournisseur, extension, VBE_
 * _Synonymes : extension, VBE_
-* _Termes connexes : extension, extension groupée_
+* _Termes associés : extension, extension regroupée_
 
 ### mise à l’échelle verticale
 
@@ -1463,8 +1463,8 @@ _Attributs de terme :_
 
 _nom_
 
-Représente un produit non physique qui peut être vendu, comme une adhésion, un service, une garantie ou un abonnement.
-Les produits virtuels peuvent être vendus individuellement ou inclus dans les types de produits suivants : produit groupé et produit groupé.
+Représente un produit non physique qui peut être vendu, tel qu’un abonnement, un service, une garantie ou un abonnement.
+Les produits virtuels peuvent être vendus individuellement ou inclus dans les types de produits suivants : les produits regroupés et les produits regroupés.
 Ne nécessite pas d’expédition ou d’inventaire.
 
 Le processus de création d&#39;un produit virtuel et d&#39;un produit simple est presque le même.
@@ -1473,7 +1473,7 @@ Cependant, comme un produit virtuel n’est pas fourni, il n’existe pas de cha
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce, produit_
-* _Termes connexes : types de produits_
+* _Termes associés : types de produits_
 
 ### type virtuel
 
@@ -1486,7 +1486,7 @@ Ils ne peuvent pas être étendus et ne peuvent pas être des références en ta
 _Attributs de terme :_
 
 * _Champ : programmation_
-* _Termes connexes : php_
+* _Termes associés : php_
 
 ## W
 
@@ -1501,7 +1501,7 @@ Les sites web peuvent être configurés pour partager des données client ou pou
 _Attributs de terme :_
 
 * _Champ : logiciel de commerce, conception, produit_
-* _Termes connexes : magasin, vue magasin_
+* _Termes associés : magasin, vue de magasin_
 
 ### widget
 
@@ -1513,5 +1513,5 @@ Les widgets peuvent également être utilisés pour ajouter des éléments inter
 
 _Attributs de terme :_
 
-* _Champ : commerce, logiciel commercial, conception_
-* _Termes connexes : block_
+* _Domaine : entreprise, logiciel de commerce, conception_
+* _Termes associés : block_

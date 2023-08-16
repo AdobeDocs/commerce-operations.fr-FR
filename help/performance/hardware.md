@@ -20,7 +20,7 @@ ht-degree: 0%
 N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
 ```
 
-Si vous prévoyez une modification de la charge d’un magasin, vous pouvez augmenter manuellement le nombre de noeuds/coeurs web pendant une principale période de vente. Vous pouvez également utiliser un modèle de mise à l’échelle automatique pour étendre automatiquement les niveaux web.
+Si vous prévoyez une modification de la charge d’un magasin, vous pouvez augmenter manuellement le nombre de noeuds/coeurs web pour une période de vente active. Vous pouvez également utiliser un modèle de mise à l’échelle automatique pour étendre automatiquement les niveaux web.
 
 ## Mémoire
 
@@ -30,19 +30,19 @@ Magento a des exigences de mémoire PHP différentes, en fonction de la manière
 
 Scénarios et exigences de mémoire PHP attendues :
 
-* Webnode ne diffusant que les pages de storefront : 256 Mo
-* Webnode qui diffuse les pages d’administration avec un catalogue volumineux : 1 Go
-* [!DNL Commerce] l’indexation cron d’un site avec un catalogue volumineux : >256 Mo (voir [advanced-setup](../performance/advanced-setup.md) pour optimiser les performances.)
-* [!DNL Commerce] compiler et déployer des ressources statiques : 756 Mo
-* [!DNL Commerce] génération de profil de la boîte à outils de performance : >1 Go de RAM PHP, >16 Mo [!DNL MySQL] Paramètres TMP_TABLE_SIZE et MAX_HEAP_TABLE_SIZE
+* Noeud web ne diffusant que les pages de storefront : 256 Mo
+* Noeud web servant les pages d’administration avec un catalogue volumineux : 1 Go
+* [!DNL Commerce] indexation cron d’un site avec un catalogue volumineux : >256 Mo (voir [advanced-setup](../performance/advanced-setup.md) pour optimiser les performances.)
+* [!DNL Commerce] compilation et déploiement de ressources statiques : 756 Mo
+* [!DNL Commerce] génération de profils de boîte à outils de performance : >1 Go de RAM PHP, >16 Mo [!DNL MySQL] Paramètres TMP_TABLE_SIZE et MAX_HEAP_TABLE_SIZE
 
 ### [!DNL MySQL]
 
-Le [!DNL Commerce] La base de données (ainsi que toute autre base de données) est sensible à la quantité de mémoire disponible pour le stockage des données et des index. Pour tirer pleinement parti des [!DNL MySQL] indexation des données, la quantité de mémoire disponible doit être, au minimum, proche de la moitié de la taille des données stockées dans la base de données.
+La variable [!DNL Commerce] La base de données (ainsi que toute autre base de données) est sensible à la quantité de mémoire disponible pour le stockage des données et des index. Pour tirer pleinement parti des [!DNL MySQL] indexation des données, la quantité de mémoire disponible doit être, au minimum, proche de la moitié de la taille des données stockées dans la base de données.
 
 ### Caches
 
-Si vous déployez plusieurs [!DNL Commerce] et à l’aide de Redis ou [!DNL Varnish] pour vos caches, veuillez tenir compte des principes suivants :
+Si vous déployez plusieurs [!DNL Commerce] et en utilisant Redis ou [!DNL Varnish] pour vos caches, veuillez tenir compte des principes suivants :
 
 * [!DNL Varnish] l’invalidation de la mémoire cache de la page entière est effective, il est recommandé d’allouer suffisamment de mémoire [!DNL Varnish] pour conserver vos pages les plus populaires en mémoire
 * Le cache de session est un bon candidat à configurer pour une instance distincte de Redis.  La configuration de la mémoire pour ce type de cache doit tenir compte de la stratégie d’abandon de panier du site et de la durée pendant laquelle une session doit rester dans le cache.

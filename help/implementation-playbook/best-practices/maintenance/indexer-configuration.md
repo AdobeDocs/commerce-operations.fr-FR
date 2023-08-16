@@ -40,7 +40,7 @@ Pour optimiser les performances du site, suivez les bonnes pratiques d’indexat
 
 >[!IMPORTANT]
 >
->Le [!DNL Customer Grid] ne peut être réindexé qu’à l’aide de la fonction [!UICONTROL Update on Save] . Cet index ne prend pas en charge la variable `Update by Schedule` .
+>La variable [!DNL Customer Grid] ne peut être réindexé qu’à l’aide de la fonction [!UICONTROL Update on Save] . Cet index ne prend pas en charge la variable `Update by Schedule` .
 
 ## Informations supplémentaires
 

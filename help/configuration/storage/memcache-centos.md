@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Configuration de la mémoire mise en cache sur CentOS
 
-Cette section fournit des instructions pour l’installation de la mémoire mise en cache sur CentOS. Pour plus d’informations, consultez la [wiki mis en cache](https://github.com/memcached/old-wiki).
+Cette section fournit des instructions pour l’installation de la mémoire mise en cache sur CentOS. Pour plus d’informations, consultez la section [wiki mis en cache](https://github.com/memcached/old-wiki).
 
 >[!INFO]
 >
@@ -21,19 +21,19 @@ Cette section fournit des instructions pour l’installation de la mémoire mise
 Comme PHP ne prend pas en charge le memcache, vous devez installer une extension pour que PHP l’utilise. Deux extensions PHP sont disponibles et il est important de décoder laquelle utiliser :
 
 - `memcache` (_no d_) : extension plus ancienne mais populaire qui n’est pas gérée régulièrement.
-Le `memcache` extension actuellement _ne fait pas_ fonctionne avec PHP 7. Voir [documentation PHP pour memcache](https://www.php.net/manual/en/book.memcache.php).
+La variable `memcache` extension actuellement _ne fait pas_ fonctionne avec PHP 7. Voir [documentation PHP pour memcache](https://www.php.net/manual/en/book.memcache.php).
 
-   Le nom exact est : `php-pecl-memcache` pour CentOS.
+  Le nom exact est : `php-pecl-memcache` pour CentOS.
 
 - `memcached` (_avec un`d`_) : extension plus récente et plus gérée compatible avec PHP 7. Voir [documentation PHP pour memcached](https://www.php.net/manual/en/book.memcached.php).
 
-   Le nom exact est : `php-pecl-memcached` pour CentOS.
+  Le nom exact est : `php-pecl-memcached` pour CentOS.
 
 ## Installation et configuration des mèmes mis en cache sur CentOS
 
 Pour installer le memcached sur CentOS, effectuez les tâches suivantes en tant qu’utilisateur avec `root` privilèges :
 
-1. Installez le memmis en cache et ses dépendances :
+1. Installez les mèmes mis en cache et leurs dépendances :
 
    ```bash
    yum -y update
@@ -56,10 +56,10 @@ Pour installer le memcached sur CentOS, effectuez les tâches suivantes en tant 
    >La syntaxe des commandes précédentes peut dépendre des référentiels de package que vous utilisez. Par exemple, si vous utilisez webtatic et PHP 5.6, saisissez `yum install -y php56w-pecl-memcache`. Utilisation `yum search memcache|grep php` pour trouver le nom du module approprié.
 
 
-1. Modification du paramètre de configuration de la mémoire mise en cache pour `CACHESIZE` et `OPTIONS`:
+1. Modification du paramètre de configuration de la mémoire cache pour `CACHESIZE` et `OPTIONS`:
 
    1. Ouvrir `/etc/sysconfig/memcached` dans un éditeur de texte.
-   1. Recherchez la valeur pour `CACHESIZE` et définissez-le sur au moins 1 Go. Par exemple :
+   1. Recherchez la valeur pour `CACHESIZE` et définissez-le sur au moins 1 Go. Par exemple :
 
       ```config
       CACHESIZE="1GB"
@@ -102,7 +102,7 @@ Pour vérifier que la mémoire mise en cache est reconnue par le serveur web :
 
 1. Accédez à cette page dans votre navigateur web.
 
-   Par exemple : `http://192.0.2.1/phpinfo.php`
+   Par exemple, `http://192.0.2.1/phpinfo.php`
 
 1. Assurez-vous que memcache s’affiche comme suit :
 
@@ -124,7 +124,7 @@ Créez la base de données MySQL :
 mysql -u root -p
 ```
 
-Dans le `mysql` saisissez les commandes suivantes :
+À l’emplacement `mysql` saisissez les commandes suivantes :
 
 ```sql
 create database memcache_test;
@@ -163,9 +163,9 @@ print "got result from memcached\n";
 return 0;
 ```
 
-Où `<memcached hostname or ip>` est `localhost`, `127.0.0.1`ou le nom d’hôte ou l’adresse IP du memcache. Le `<memcached port>` est le port d’écoute ; par défaut, `11211`.
+Où `<memcached hostname or ip>` est soit `localhost`, `127.0.0.1`ou le nom d’hôte ou l’adresse IP du memcache. La variable `<memcached port>` est le port d’écoute ; par défaut, `11211`.
 
-Exécutez le script à partir de la ligne de commande.
+Exécutez le script depuis la ligne de commande.
 
 ```bash
 cd <web server docroot>

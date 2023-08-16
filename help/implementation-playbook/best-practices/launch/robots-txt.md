@@ -72,7 +72,7 @@ Vous pouvez configurer et exécuter plusieurs magasins avec une seule mise en oe
 
 Les mêmes bonnes pratiques pour configurer la variable `robots.txt` et `sitemap.xml` fichiers pour [vitrines à site unique](#single-site-storefronts) s’applique aux storefronts multi-sites avec deux différences importantes :
 
-- Assurez-vous que la variable `robots.txt` et `sitemap.xml` Les noms de fichier contiennent les noms des sites correspondants. Par exemple :
+- Assurez-vous que la variable `robots.txt` et `sitemap.xml` Les noms de fichier contiennent les noms des sites correspondants. Par exemple :
    - `domaineone_robots.txt`
    - `domaintwo_robots.txt`
    - `domainone_sitemap.xml`
@@ -102,7 +102,7 @@ Utilisez l’application d’administration pour configurer la variable `robots.
 
 N’exposez pas votre chemin d’accès administrateur dans votre `robots.txt` fichier . Le chemin d’accès administrateur est exposé à une vulnérabilité de piratage de site et de perte potentielle de données. Supprimez le chemin d’accès administrateur du `robots.txt` fichier .
 
-Pour les étapes de modification du `robots.txt` et supprimez toutes les entrées du chemin d’accès administrateur, voir [Guide de l’utilisateur marketing > SEO et recherche > Robots de moteur de recherche](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots).
+Pour les étapes de modification de la `robots.txt` et supprimez toutes les entrées du chemin d’accès administrateur, voir [Guide de l’utilisateur marketing > SEO et recherche > Robots de moteur de recherche](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots).
 
 >[!TIP]
 >

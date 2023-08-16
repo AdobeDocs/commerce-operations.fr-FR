@@ -30,5 +30,5 @@ Cliquez sur un lien pour télécharger un modèle :
 - [Document de stratégie commerciale](../../assets/playbooks/templates/commerce-strategy-document.pptx)
 - [Préparation opérationnelle du commerce électronique](../../assets/playbooks/templates/ecommerce-operational-readiness.pptx)
 - [Fonctionnalités de la plateforme eCommerce](../../assets/playbooks/templates/ecommerce-platform-features.pptx)
-- [Évaluation de l’site propre aux commerçants](../../assets/playbooks/templates/merchant-self-site-assessment.pptx)
+- [Évaluation de l’site propre au commerce](../../assets/playbooks/templates/merchant-self-site-assessment.pptx)
 - [Cas pratique](../../assets/playbooks/templates/use-case.pptx)

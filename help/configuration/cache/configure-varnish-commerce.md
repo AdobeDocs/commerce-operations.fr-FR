@@ -23,7 +23,7 @@ Pour configurer Commerce de manière à utiliser le vernis :
    | Champ | Description |
    | ----- | ----------- |
    | Liste d’accès | Saisissez le nom d’hôte qualifié complet, l’adresse IP ou [Routage interdomaines sans classe (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) plage d’adresses IP de notation pour laquelle invalider le contenu. Voir [Purge du cache en vernis](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
-   | Hôte principal | Saisissez le nom d’hôte complet ou l’adresse IP et le port d’écoute du vernis. _backend_ ou _serveur d’origine_; en d’autres termes, le serveur fournissant le contenu vernis accélère. En règle générale, il s’agit de votre serveur web. Voir [Serveur principal de cache de marque](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
+   | Hôte principal | Saisissez le nom d’hôte complet ou l’adresse IP et le port d’écoute du vernis. _backend_ ou _serveur d’origine_, c’est-à-dire que le serveur fournissant le contenu vernis accélère. En règle générale, il s’agit de votre serveur web. Voir [Serveur principal de cache de marque](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Port principal | Port d’écoute du serveur d’origine. |
    | Période de grâce | La période de grâce détermine la durée pendant laquelle Varnish diffuse du contenu obsolète si le serveur principal n’est pas réactif. La valeur par défaut est de 300 secondes. |
 
@@ -39,7 +39,7 @@ bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/cac
 
 Pour exporter un fichier de configuration de vernis depuis l’administrateur :
 
-1. Cliquez sur l’un des boutons d’exportation pour créer un `varnish.vcl` vous pouvez l&#39;utiliser avec du vernis.
+1. Cliquez sur l’un des boutons d’exportation pour créer un `varnish.vcl` vous pouvez utiliser avec du vernis.
 
    Si, par exemple, vous avez la valeur 4, cliquez sur **Export VCL pour le vernis 4**
 
@@ -63,7 +63,7 @@ Pour exporter un fichier de configuration de vernis depuis l’administrateur :
 
 1. Adobe vous recommande d’ouvrir `default.vcl` et modifiez la valeur de `acl purge` à l’adresse IP de l’hôte Varnish. (Vous pouvez spécifier plusieurs hôtes sur des lignes distinctes ou utiliser également la notation CIDR.)
 
-   Par exemple :
+   Par exemple,
 
    ```conf
     acl purge {
@@ -71,7 +71,7 @@ Pour exporter un fichier de configuration de vernis depuis l’administrateur :
     }
    ```
 
-1. Si vous souhaitez personnaliser les contrôles d’intégrité Vagrant, le mode de grâce ou la configuration du mode saint, reportez-vous à la section [Configuration du vernis avancé](config-varnish-advanced.md).
+1. Si vous souhaitez personnaliser les contrôles d’intégrité Vagrant, le mode de grâce ou la configuration du mode saint, voir [Configuration du vernis avancé](config-varnish-advanced.md).
 
 1. Redémarrez le vernis et votre serveur web :
 

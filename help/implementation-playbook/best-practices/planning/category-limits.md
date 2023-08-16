@@ -48,4 +48,4 @@ Le fait d’avoir plus de catégories que le nombre maximal recommandé peut aff
 - [Présentation des catégories](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/categories.html)
 - [Présentation de la navigation](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html)
 - [Affectations de produit](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html)
-- [Adobe Commerce sur l’infrastructure cloud : Bonnes pratiques pour la configuration du magasin](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)
+- [Adobe Commerce sur l’infrastructure cloud : bonnes pratiques pour la configuration du magasin](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)

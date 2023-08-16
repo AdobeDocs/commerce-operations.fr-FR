@@ -1,17 +1,17 @@
 ---
 title: Référence config.php
 description: Voir une liste de valeurs dans le fichier config.php.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
 # Référence config.php
 
-Le `config.php` contient les sections suivantes :
+La variable `config.php` contient les sections suivantes :
 
 | Nom | Description |
 | --------- | -------------------|

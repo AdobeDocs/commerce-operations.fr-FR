@@ -2,14 +2,14 @@
 source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 # Vérifier que la communication est sécurisée
 
 Cette section décrit deux manières de vérifier que l’authentification HTTP de base fonctionne :
 
-* Utilisation d’une `curl` pour vérifier que vous devez saisir un nom d’utilisateur et un mot de passe pour obtenir l’état du cluster.
+* Utilisation d’une `curl` pour vérifier que vous devez saisir un nom d’utilisateur et un mot de passe pour obtenir l’état du cluster
 * Configuration de l’authentification HTTP de base dans Admin
 
 ## Utilisez une `curl` commande pour vérifier l’état de la grappe
@@ -49,7 +49,7 @@ Essayez maintenant la commande suivante :
 curl -i -u <username>:<password> http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 ```
 
-Par exemple :
+Par exemple :
 
 ```bash
 curl -i -u magento_elasticsearch:mypassword http://localhost:8080/_cluster/health
@@ -70,6 +70,6 @@ Connection: keep-alive
 
 Effectuez les mêmes tâches que celles décrites dans la section [Configuration du moteur de recherche](../configuration/search/configure-search-engine.md) *Sauf* click **[!UICONTROL Yes]** de la **[!UICONTROL Enable HTTP Auth]** listez et saisissez votre nom d’utilisateur et votre mot de passe dans les champs fournis.
 
-Cliquez sur **[!UICONTROL Test Connection]** pour vous assurer qu’il fonctionne, puis cliquez sur **[!UICONTROL Save Config]**.
+Cliquez sur **[!UICONTROL Test Connection]** pour vérifier que cela fonctionne, puis cliquez sur **[!UICONTROL Save Config]**.
 
 Vous devez vider le cache et réindexer avant de continuer.

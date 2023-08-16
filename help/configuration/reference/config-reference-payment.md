@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Référence des chemins de configuration des paiements
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de **Magasins** > Paramètres > **Configuration** > **Ventes** > **Méthodes de paiement**.
+Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Ventes** > **Méthodes de paiement**.
 
-Le [`magento app:config:dump` command](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle de code source. Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables). Cette rubrique fonctionne _not_ list [valeurs sensibles et spécifiques au système](config-reference-sens.md).
+La variable [`magento app:config:dump` command](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle source. Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables). Cette rubrique fonctionne _not_ list [valeurs sensibles et spécifiques au système](config-reference-sens.md).
 
 Les paramètres sont organisés par mode de paiement.
 
@@ -61,14 +61,14 @@ Les paramètres sont organisés par mode de paiement.
 | Transférer les éléments du panier | `payment/paypal_billing_agreement/line_items_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Autoriser dans l’assistant de contrat de facturation | `payment/paypal_billing_agreement/allow_billing_agreement_wizard` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Activation de la récupération automatique | `paypal/fetch_reports/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Planification | `paypal/fetch_reports/schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Planning | `paypal/fetch_reports/schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Heure de la journée | `paypal/fetch_reports/time` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Logo du produit PayPal | `paypal/style/logo` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Style de page | `paypal/style/page_style` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | URL de l’image d’en-tête | `paypal/style/paypal_hdrimg` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Couleur d’arrière-plan de l’en-tête | `paypal/style/paypal_hdrbackcolor` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Couleur de bordure de l’en-tête | `paypal/style/paypal_hdrbordercolor` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Couleur d’arrière-plan de la page | `paypal/style/paypal_payflowcolor` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Couleur d’arrière-plan de page | `paypal/style/paypal_payflowcolor` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Activer cette solution | `payment/paypal_express/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Crédit PayPal des commandes de tri | `payment/paypal_express_bml/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Titre | `payment/paypal_express/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -193,7 +193,7 @@ Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [pa
 
 {style="table-layout:auto"}
 
-## Espèces sur les chemins de paiement des diffusions
+## Espèces sur les chemins de paiement de diffusion
 
 | Nom | Chemin de configuration | Commerce uniquement ? | Chiffré ? |
 |--------------|--------------|--------------|--------------|
@@ -1400,6 +1400,6 @@ Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [pa
 | Types de carte de crédit | `payment_us/eway/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Paiement par les pays applicables | `payment_us/eway/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
 | Paiement par pays spécifique | `payment_us/eway/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_us/eway/sort_order` |  |
+| Ordre de tri | `payment_us/eway/sort_order` | |
 
 {style="table-layout:auto"}

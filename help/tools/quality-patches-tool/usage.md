@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # Utilisation
 
-Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fournit des correctifs individuels développés par Adobe et la communauté Magento Open Source. Il vous permet d’appliquer, de rétablir et d’afficher des informations générales sur tous les correctifs individuels disponibles pour la version installée d’Adobe Commerce ou de Magento Open Source. Vous pouvez appliquer des correctifs aux projets Adobe Commerce et Magento Open Source, quel que soit le développeur du correctif. Par exemple, vous pouvez appliquer un correctif développé par la communauté aux projets Adobe Commerce.
+La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fournit des correctifs individuels développés par Adobe et la communauté Magento Open Source. Il vous permet d’appliquer, de rétablir et d’afficher des informations générales sur tous les correctifs individuels disponibles pour la version installée d’Adobe Commerce ou de Magento Open Source. Vous pouvez appliquer des correctifs aux projets Adobe Commerce et Magento Open Source, quel que soit le développeur du correctif. Par exemple, vous pouvez appliquer un correctif développé par la communauté aux projets Adobe Commerce.
 
 
 Regardez ceci : [video technique](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) et découvrez comment utiliser l’outil de correctifs de qualité pour Adobe Commerce et Magento Open Source.
 
 >[!INFO]
 >
->Voir [Application de correctifs individuels](#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce ou Magento Open Source. Voir [[!DNL Quality Patches Tool]: Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) pour consulter la liste complète des correctifs publiés.
+>Voir [Application de correctifs individuels](#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce ou Magento Open Source. Voir [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) pour consulter la liste complète des correctifs publiés.
 
 >[!WARNING]
 >
@@ -29,7 +29,7 @@ Regardez ceci : [video technique](https://experienceleague.adobe.com/docs/commer
 
 >[!INFO]
 >
->S’il n’est pas déjà installé, vous devez l’installer. [[!DNL Git]](https://github.com/git-guides/install-git) ou [Correctif](https://man7.org/linux/man-pages/man1/patch.1.html) avant d’installer le [!DNL Quality Patches Tool]. Ajoutez la variable `magento/quality-patches` Module de compositeur `composer.json` fichier :
+>S’il n’est pas déjà installé, vous devez installer [[!DNL Git]](https://github.com/git-guides/install-git) ou [Correctif](https://man7.org/linux/man-pages/man1/patch.1.html) avant d’installer le [!DNL Quality Patches Tool]. Ajoutez la variable `magento/quality-patches` Module de compositeur `composer.json` fichier :
 
 ```bash
 composer require magento/quality-patches
@@ -43,7 +43,7 @@ Pour afficher la liste des correctifs individuels disponibles pour votre version
 ./vendor/bin/magento-patches status
 ```
 
-La sortie s’affiche comme suit :
+Vous verrez une sortie similaire à celle-ci :
 
 | Id | Titre | Type | État | Détails |
 |--- |--- |--- |--- |--- |
@@ -62,7 +62,7 @@ Adobe Commerce 2.3.5.
 Le tableau d’état comprend :
 
 - **Type**:
-   - `Optional` — Tous les correctifs de l’événement [!DNL Quality Patches Tool] et le [Guide d’infrastructure de Commerce on Cloud > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) Les packages sont facultatifs pour les installations Adobe Commerce et Magento Open Source.
+   - `Optional` — Tous les correctifs de l’événement [!DNL Quality Patches Tool] et la variable [Guide d’infrastructure de Commerce on Cloud > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) Les packages sont facultatifs pour les installations Adobe Commerce et Magento Open Source.
    - `Deprecated` — Adobe a abandonné le correctif individuel. Si vous avez appliqué le correctif, nous vous recommandons de le rétablir. L’opération de rétablissement supprime également le correctif de la table des statuts.
 
 - **État**:
@@ -189,4 +189,4 @@ Pour réappliquer des correctifs :
 
 ## Journalisation
 
-Le [!DNL Quality Patches Tool] consigne toutes les opérations dans la variable `<Magento_root>/var/log/patch.log` fichier .
+La variable [!DNL Quality Patches Tool] consigne toutes les opérations dans la variable `<Magento_root>/var/log/patch.log` fichier .

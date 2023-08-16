@@ -18,7 +18,7 @@ Lors de la migration, la variable [Étape de mappage](technical-specification.md
 
 >[!NOTE]
 >
->Lisez le [Spécifications techniques](technical-specification.md) avant d’essayer d’étendre la variable [!DNL Data Migration Tool]. En outre, passez en revue les [Guide de migration](../overview.md) pour obtenir des informations générales sur l’utilisation de l’outil de migration.
+>Lisez la section [Spécifications techniques](technical-specification.md) avant d’essayer d’étendre la variable [!DNL Data Migration Tool]. En outre, passez en revue les [Guide de migration](../overview.md) pour obtenir des informations générales sur l’utilisation de l’outil de migration.
 
 
 ## Modifications mineures du format et de la structure des données
@@ -26,7 +26,7 @@ Lors de la migration, la variable [Étape de mappage](technical-specification.md
 Dans la plupart des cas, la variable [Étape de mappage](technical-specification.md#map-step) résout suffisamment les changements mineurs du format des données et de la structure à l’aide des méthodes suivantes dans la variable `map.xml` fichier :
 
 - Modification des noms de table ou de champ avec des règles de mappage
-- Transformation des formats de données à l’aide de gestionnaires existants ou d’un gestionnaire personnalisé
+- Transformer les formats de données avec des gestionnaires existants ou un gestionnaire personnalisé
 
 Vous trouverez ci-dessous un exemple d’utilisation des règles de mappage et d’un gestionnaire. Cet exemple utilise une extension de Magento 1 hypothétique appelée &quot;GreatBlog&quot; qui a été améliorée pour Magento 2.
 
@@ -71,18 +71,18 @@ Vous trouverez ci-dessous un exemple d’utilisation des règles de mappage et d
 </destination>
 ```
 
-- Ne migrez pas de données inutiles à partir du `great_blog_index` table d’index.
+- Ne migrez pas de données inutiles à partir de la variable `great_blog_index` table d’index.
 - La table `great_blog_publication` a été renommé en `great_blog_post` dans Magento 2, les données sont donc migrées vers le nouveau tableau.
-   - Le `summary` a été renommé `title`, les données sont donc migrées vers le nouveau champ.
-   - Le `priority` a été supprimé et n’existe plus dans Magento 2.
-   - Les données de la variable `body` a changé de format et doit être traité par le gestionnaire personnalisé : `\Migration\Handler\GreatBlog\NewFormat`.
+   - La variable `summary` a été renommé `title`, les données sont donc migrées vers le nouveau champ.
+   - La variable `priority` a été supprimé et n’existe plus dans Magento 2.
+   - Les données du `body` a changé de format et doit être traité par le gestionnaire personnalisé : `\Migration\Handler\GreatBlog\NewFormat`.
 - Une nouvelle fonctionnalité de notation a été développée pour l&#39;extension &quot;GreatBlog&quot; en Magento 2.
    - Une nouvelle `great_blog_rating` table a été créée.
    - Une nouvelle `great_blog_post.rating` a été créé.
 
 ### Étendre le mapping dans d’autres étapes
 
-D’autres étapes prennent en charge le mappage, telles que [Etape EAV](technical-specification.md#eav-step) et l’étape Attributs du client . Ces étapes migrent une liste prédéfinie de tables de Magento. Supposons, par exemple, que l’extension &quot;GreatBlog&quot; comporte un champ supplémentaire dans la variable `eav_attribute` et le nom a été modifié dans Magento 2. Puisque le tableau est traité par la variable [Etape EAV](technical-specification.md#eav-step), les règles de mappage doivent être écrites pour la variable `map-eav.xml` fichier . Le `map.xml` et `map-eav.xml` Les fichiers utilisent le même `map.xsd` schéma, de sorte que les règles de mappage restent identiques.
+D’autres étapes prennent en charge le mappage, telles que [Etape EAV](technical-specification.md#eav-step) et l’étape Attributs du client . Ces étapes migrent une liste prédéfinie de tables de Magento. Supposons, par exemple, que l’extension &quot;GreatBlog&quot; comporte un champ supplémentaire dans la variable `eav_attribute` et le nom a été modifié dans Magento 2. Puisque le tableau est traité par la variable [Etape EAV](technical-specification.md#eav-step), les règles de mappage doivent être écrites pour la variable `map-eav.xml` fichier . La variable `map.xml` et `map-eav.xml` Les fichiers utilisent le même `map.xsd` schéma, de sorte que les règles de mappage restent identiques.
 
 ## Modifications majeures du format et de la structure des données
 
@@ -92,7 +92,7 @@ Outre l’étape de mappage, d’autres étapes se trouvent dans la variable `co
 - Étape OrderGrids
 - [Etape EAV](technical-specification.md#eav-step)
 
-Contrairement au [Étape de mappage](technical-specification.md#map-step), ces étapes analysent une liste prédéfinie de tableaux au lieu de tous les tableaux.
+Contrairement à la variable [Étape de mappage](technical-specification.md#map-step), ces étapes analysent une liste prédéfinie de tableaux au lieu de tous les tableaux.
 
 Pour les modifications majeures du format et de la structure des données, créez une étape personnalisée.
 
@@ -122,7 +122,7 @@ Dans Magento 2, un nouveau tableau pour les balises `greatblog_post_tags` a ét�
 | sort_order | SMALLINT |
 ```
 
-Magento 2 `greatblog_post` le tableau se présente désormais comme suit :
+MAGENTO 2 `greatblog_post` le tableau se présente désormais comme suit :
 
 ```text
 | Field     | Type     |
@@ -133,7 +133,7 @@ Magento 2 `greatblog_post` le tableau se présente désormais comme suit :
 | author_id | SMALLINT |
 ```
 
-Pour migrer toutes les données de l’ancienne structure de tableaux vers une nouvelle, vous pouvez créer une étape personnalisée dans le `config.xml` fichier . Par exemple :
+Pour migrer toutes les données de l’ancienne structure de tableaux vers une nouvelle, vous pouvez créer une étape personnalisée dans le `config.xml` fichier . Par exemple :
 
 ```xml
 <steps mode="data">
@@ -153,7 +153,7 @@ Pour migrer toutes les données de l’ancienne structure de tableaux vers une n
 </steps>
 ```
 
-L’outil exécute les étapes en fonction de leur position dans la variable `config.xml` fichier; de haut en bas. Dans notre exemple, la variable `GreatBlog Step` s’exécute en dernier.
+L’outil exécute les étapes en fonction de leur position dans la variable `config.xml` de haut en bas. Dans notre exemple, la variable `GreatBlog Step` s’exécute en dernier.
 
 Les étapes peuvent inclure quatre types de classes :
 
@@ -167,7 +167,7 @@ Les étapes peuvent inclure quatre types de classes :
 >Voir [Configuration](technical-specification.md#configuration), [Étape interne](technical-specification.md#step-internals), [Phases](technical-specification.md#step-stages), et [Modes d’exécution](technical-specification.md#running-modes) pour plus d’informations.
 
 
-Des requêtes SQL complexes peuvent être assemblées dans ces classes pour récupérer et migrer des données. En outre, ces tableaux doivent être &quot;ignorés&quot; dans la variable [Étape de mappage](technical-specification.md#map-step) car il analyse toutes les tables existantes et tente de migrer les données, sauf si elles se trouvent dans la variable `<ignore>` de la balise `map.xml` fichier .
+Des requêtes SQL complexes peuvent être assemblées dans ces classes pour récupérer et migrer des données. Ces tableaux doivent également être &quot;ignorés&quot; dans la variable [Étape de mappage](technical-specification.md#map-step) car il analyse toutes les tables existantes et tente de migrer les données, sauf si elles se trouvent dans la variable `<ignore>` de la balise `map.xml` fichier .
 
 Pour la vérification de l’intégrité, définissez un fichier de mappage supplémentaire dans le `config.xml` pour vérifier que la structure des tables est conforme à nos attentes.
 
@@ -248,7 +248,7 @@ class Integrity extends \Migration\App\Step\AbstractIntegrity
 }
 ```
 
-Ensuite, vous devez créer une classe pour le traitement et l’enregistrement des données dans la base de données Magento 2. `Vendor\Migration\Step\GreatBlog\Data`:
+Ensuite, vous devez créer une classe pour traiter et enregistrer les données dans la base de données Magento 2. `Vendor\Migration\Step\GreatBlog\Data`:
 
 ```php
 class Data implements \Migration\App\Step\StageInterface

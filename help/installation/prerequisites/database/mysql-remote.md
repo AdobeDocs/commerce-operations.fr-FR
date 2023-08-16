@@ -1,13 +1,13 @@
 ---
 title: Configuration d’une connexion de base de données MySQL distante
 description: Pour configurer une connexion à base de données distante pour les installations sur site d’Adobe Commerce et de Magento Open Source, procédez comme suit.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
 
 ---
-
 
 # Configuration d’une connexion de base de données MySQL distante
 
@@ -21,13 +21,13 @@ Aurora est un serveur MySQL hautement performant et entièrement compatible héb
 
 L&#39;utilisation d&#39;Aurora comme base de données est aussi simple que la spécification de la base de données dans la configuration standard d&#39;Adobe Commerce et de Magento Open Source, à l&#39;aide du connecteur de base de données par défaut.
 
-En cours d’exécution `bin/magento setup:install`, utilisez les informations de l’Aurora dans la variable `db-` fields :
+En cours d’exécution `bin/magento setup:install`, utilisez les informations Aurora dans la variable `db-` fields :
 
 ```bash
 bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws.com' --db-name='magento2' --db-user='username' --db-password='password' ...
 ```
 
-Le `db-host` est l’URL de l’Aurora avec la variable `https://` et à la fin `:portnumber`  supprimé.
+La variable `db-host` est l’URL de l’Aurora avec la variable `https://` et à la fin `:portnumber`  supprimé.
 
 ## Configurer une connexion à une base de données distante
 
@@ -40,7 +40,7 @@ Le `db-host` est l’URL de l’Aurora avec la variable `https://` et à la fin 
 Avant de commencer, vous devez :
 
 * [Installation du serveur MySQL](mysql.md) sur le serveur de base de données.
-* [Création d’une instance de base de données](mysql.md#configuring-the-database-instance) sur le serveur de base de données.
+* [Créer une instance de base de données](mysql.md#configuring-the-database-instance) sur le serveur de base de données.
 * Installez le client MySQL sur votre noeud web Adobe Commerce ou Magento Open Source. Pour plus d’informations, consultez la documentation MySQL .
 
 ### Haute disponibilité
@@ -48,9 +48,9 @@ Avant de commencer, vous devez :
 Suivez les instructions suivantes pour configurer les connexions à une base de données distante si votre serveur web ou serveur de base de données est mis en grappe :
 
 * Vous devez configurer une connexion pour chaque noeud de serveur web.
-* En règle générale, vous configurez une connexion de base de données à l’équilibreur de charge de base de données. cependant, la mise en grappe de bases de données peut être complexe et la configuration dépend de vous. Adobe ne fait aucune recommandation spécifique pour la mise en grappe de la base de données.
+* En règle générale, vous configurez une connexion de base de données à l’équilibreur de charge de la base de données. Toutefois, la mise en grappe de la base de données peut être complexe et vous pouvez la configurer. Adobe ne fait aucune recommandation spécifique pour la mise en grappe de la base de données.
 
-   Pour plus d’informations, voir [Documentation MySQL](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  Pour plus d’informations, voir [Documentation MySQL](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 
 ### Résolution des problèmes de connexion
 
@@ -83,7 +83,7 @@ Pour créer une connexion distante :
 
    Si elle existe, modifiez la valeur comme suit.
 
-   S’il n’existe pas, ajoutez-le au `[mysqld]` .
+   S’il n’existe pas, ajoutez-le à la variable `[mysqld]` .
 
    ```conf
    bind-address = <ip address of your web node>
@@ -97,9 +97,10 @@ Pour créer une connexion distante :
    * CentOS : `service mysqld restart`
 
    * Ubuntu : `service mysql restart`
+
    >[!NOTE]
    >
-   >Si MySQL ne démarre pas, recherchez la source du problème dans syslog. Résolvez le problème en utilisant [Documentation MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) ou une autre source faisant autorité.
+   >Si MySQL ne démarre pas, recherchez la source du problème dans syslog. Résolvez le problème à l’aide de [Documentation MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) ou une autre source faisant autorité.
 
 ## Accorder l’accès à un utilisateur de base de données
 
@@ -117,7 +118,7 @@ Pour accorder l’accès à un utilisateur de la base de données :
    GRANT ALL ON <local database name>.* TO <remote web node username>@<remote web node server ip address> IDENTIFIED BY '<database user password>';
    ```
 
-   Par exemple :
+   Par exemple,
 
    ```shell
    GRANT ALL ON magento_remote.* TO dbuser@192.0.2.50 IDENTIFIED BY 'dbuserpassword';
