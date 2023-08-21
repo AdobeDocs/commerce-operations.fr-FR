@@ -2,9 +2,9 @@
 title: Bonnes pratiques relatives à la pagination pour les listes de produits
 description: Découvrez comment optimiser les performances d’Adobe Commerce en gérant le nombre de produits qui s’affichent sur chaque page du catalogue storefront.
 role: User, Admin
-feature: Best Practices, Catalogs
+feature: Best Practices, Catalog Management
 exl-id: 473f23a9-53fb-41a6-9b3a-af7bd1208be0
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%

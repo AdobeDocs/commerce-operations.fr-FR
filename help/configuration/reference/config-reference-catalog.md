@@ -1,9 +1,9 @@
 ---
 title: Référence sur les chemins de configuration du catalogue
 description: Consultez la liste des valeurs de configuration du catalogue.
-feature: Configuration, Catalogs
+feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 0%
