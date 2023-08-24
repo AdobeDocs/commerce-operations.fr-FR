@@ -2,9 +2,9 @@
 title: Appliquer les correctifs
 description: Découvrez les méthodes d’application de correctifs à un projet Adobe Commerce ou Magento Open Source.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 454f586737292341b3e6dd9a57cc92b3472c4b31
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,11 @@ Vous pouvez appliquer des correctifs à l’aide de l’une des méthodes suivan
 - [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Ligne de commande](../patches/apply.md#command-line)
 - [Compositeur](../patches/apply.md#composer)
+
+
+>[!TIP]
+>
+>Voir [bonnes pratiques](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md) pour plus d’informations sur l’application de correctifs centralisés pour Adobe Commerce à l’échelle de l’entreprise.
 
 ## Compositeur
 

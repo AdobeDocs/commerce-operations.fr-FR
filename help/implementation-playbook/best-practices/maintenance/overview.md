@@ -3,9 +3,9 @@ title: Phase de maintenance de la mise en oeuvre
 description: Découvrez les bonnes pratiques de mise en oeuvre pour la phase de maintenance des projets Adobe Commerce.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: d0cb3b81ee50ebd7cbf65a4dddbf5c58acf04f0d
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -73,5 +73,6 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
 
 ### Mises à niveau
 
+- [Application de correctifs à l’échelle](patching-at-scale.md)
 - [Mise à jour des services et des composants vers la dernière version &#x200B;](update-services.md)
 - [Liste de contrôle de mise à niveau pour Adobe Commerce &#x200B;](upgrade-checklist.md)
