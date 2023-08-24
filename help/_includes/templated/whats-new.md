@@ -1,7 +1,7 @@
 ---
-source-git-commit: 34a0a124aeacce6cc905f979cf3f18cb2405f76e
+source-git-commit: f67737451f12c17f3253582b44c2c504cbf98fb2
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '484'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 1%
 ## Nouveautés
 
 Découvrez la nouvelle documentation et les mises à jour importantes de la documentation existante.
+
+### 23 août 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout d’une <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale.html">nouvelle rubrique</a> à propos de la mise en oeuvre d’une stratégie de correction centralisée pour les projets Adobe Commerce.</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/03cb50be0cb18b6079c5c69aafc74c6099610fb0">03cb50</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 10 août 2023
 

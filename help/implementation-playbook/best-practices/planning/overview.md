@@ -4,9 +4,9 @@ description: Découvrez les bonnes pratiques de mise en oeuvre pour la phase de 
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,7 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
 
 - **Configuration de la base de données**
    - [Bonnes pratiques relatives à la configuration des bases de données pour les déploiements dans le cloud &#x200B;](database-on-cloud.md)
-   - [Configuration de la connexion esclave MySQL &#x200B;](configure-mysql-slave-connection-on-cloud.md)
-   - [Utilisation des déclencheurs MySQL](mysql-triggers-usage.md)
+   - [&#x200B; de configuration MySQL](mysql-configuration.md)
 
 - **Configuration des services**
    - [Configuration rapide](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
@@ -57,17 +56,17 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
 
 Les rubriques suivantes décrivent les bonnes pratiques d’optimisation des performances pour la configuration de votre catalogue Adobe Commerce, notamment les maximums recommandés pour le nombre de catégories, les SKU efficaces sur les produits, les variations de produit, les attributs et options de produit, etc.
 
-- [Configuration des catégories](category-limits.md)
-- [&#x200B; de configuration de produit](product-sku-limits.md)
-- [Configuration des variations de produit](product-variations.md)
-- [Configuration des options de produit](product-options.md)
-- [&#x200B; de configuration des attributs de produit](product-attributes-and-options.md)
-- [Configuration de pagination pour les listes de produits](product-listing-pagination.md)
+- [Configuration des catégories](catalog-management.md#category-limits)
+- [&#x200B; de configuration de produit](catalog-management.md#product-sku-limits)
+- [Configuration des variations de produit](catalog-management.md#product-variations)
+- [Configuration des options de produit](catalog-management.md#product-options)
+- [&#x200B; de configuration des attributs de produit](catalog-management.md#product-attributes)
+- [Configuration de pagination pour les listes de produits](catalog-management.md#product-listing-pagination)
 
 ## **Ventes et marketing**
 
-- [Bonnes pratiques relatives à la limite du panier de produits](product-cart.md)
-- [Bonnes pratiques relatives à la configuration des promotions](product-cart-promotions.md)
+- [Bonnes pratiques relatives à la limite du panier de produits](catalog-management.md#cart-limits)
+- [Bonnes pratiques relatives à la configuration des promotions](catalog-management.md#promotions)
 
 ## **Portée du projet**
 

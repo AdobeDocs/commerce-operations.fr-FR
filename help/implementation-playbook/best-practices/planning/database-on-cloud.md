@@ -4,9 +4,9 @@ description: Découvrez comment configurer les paramètres de la base de donnée
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Les déclencheurs sont utilisés pour consigner les modifications dans les table
 - Les déclencheurs sont interprétés comme du code et MySQL ne les précompile pas. En se connectant à l’espace de transaction de votre requête, ils ajoutent la surcharge à un analyseur et à un interprète pour chaque requête effectuée avec la table.
 - Les déclencheurs partagent le même espace de transaction que les requêtes d’origine, et tandis que ces requêtes se disputent les verrous sur la table, les déclencheurs se disputent indépendamment les verrous sur une autre table.
 
-Pour en savoir plus sur les alternatives à l’utilisation de déclencheurs personnalisés, voir [Utilisation efficace des triggers MySQL](mysql-triggers-usage.md) dans notre base de connaissances de soutien.
+Pour en savoir plus sur les alternatives à l’utilisation de déclencheurs personnalisés, voir [Déclencheurs MySQL](mysql-configuration.md#triggers).
 
 ## Mettre à niveau [!DNL ECE-Tools] vers la version 2002.0.21 ou ultérieure {#ece-tools-version}
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: a5d7167375328bebc6c9287731ff7bb9f74037a1
+source-git-commit: f67737451f12c17f3253582b44c2c504cbf98fb2
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '126'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 1%
 ## Nouveautés des bonnes pratiques de mise en oeuvre
 
 Cette page contient des modifications récentes que nous pensons que vous souhaitez voir. Nous excluons de cette liste toutes les mises à jour mineures, telles que la modification de copie.
+
+### 23 août 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout d’une <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale.html">nouvelle rubrique</a> à propos de la mise en oeuvre d’une stratégie de correction centralisée pour les projets Adobe Commerce.</p>
+</td>
+      <td>bonnes pratiques</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/03cb50be0cb18b6079c5c69aafc74c6099610fb0">03cb50</a> (commit)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 9 mars 2023
 
@@ -27,26 +47,6 @@ Cette page contient des modifications récentes que nous pensons que vous souhai
 </td>
       <td>bonnes pratiques</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f9d46893a25569b9cb00b45ab285758b3b74b410">f9d468</a> (commit)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 10 février 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Mise à jour de la description des exigences minimales pour effectuer une <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html">upgrade de base de données</a> et ajout d’une ressource connexe supplémentaire sur la mise à jour de MariaDB.</p>
-</td>
-      <td>bonnes pratiques</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0efeef6f3d5276f42e4a67fe55f6108a399f45fb">0efeef</a> (commit)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
