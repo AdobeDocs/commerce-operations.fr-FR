@@ -2,9 +2,9 @@
 user-guide-title: Manuel d’implémentation
 user-guide-description: Découvrez les stratégies de planification et d’implémentation d’un site Adobe Commerce performant.
 mini-toc-levels: 3
-source-git-commit: 7ab0342e3897e2804f5a43876197308c69ac1bb7
+source-git-commit: 42d027a3aedb8d395097d872a97998e76e547966
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '253'
 ht-degree: 11%
 
 ---
@@ -102,6 +102,7 @@ ht-degree: 11%
    - Maintenance {#maintenance}
       - [Présentation](best-practices/maintenance/overview.md)
       - [Performances du serveur frontal d’audit](best-practices/maintenance/frontend-performance.md)
+      - [Optimisation des performances du serveur principal](best-practices/maintenance/backend-performance.md)
       - [Configuration de l’indexeur](best-practices/maintenance/indexer-configuration.md)
       - [Application de correctifs à l’échelle](best-practices/maintenance/patching-at-scale.md)
       - [Traitement des commandes](best-practices/maintenance/order-processing-configuration.md)
