@@ -3,9 +3,9 @@ title: Phase de lancement de la mise en oeuvre
 description: Découvrez les bonnes pratiques de mise en oeuvre pour la phase de lancement des projets Adobe Commerce.
 exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 7ab0342e3897e2804f5a43876197308c69ac1bb7
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '109'
 ht-degree: 0%
 
 ---
@@ -24,12 +24,12 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
 
 ## Configuration de la sécurité
 
-- [&#x200B; du service de notification de sécurité Adobe](security-notification-service.md)
+- [&#x200B; du service de notification de sécurité Adobe](https://www.adobe.com/subscription/adbeSecurityNotifications.html)
 - [Prévention et intervention en cas d’incident de sécurité](prevent-respond-security-incident.md)
-- [Google reCAPTCHA](https://docs.magento.com/user-guide/stores/security-google-recaptcha.html)
+- [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html)
 - [Bonnes pratiques pour Adobe Commerce robots.txt &#x200B;](robots-txt.md)
 <!-- - [Install the latest security patches](https://helpx.adobe.com/security/products/magento/apsb22-12.html) - CTAG deck -->
-- [Vérification de la configuration de sécurité sur les projets d’infrastructure cloud](https://devdocs.magento.com/cloud/live/site-launch-checklist.html#security-configuration)
+- [Vérification de la configuration de sécurité sur les projets d’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html)
 
 ## Surveillance des performances
 
