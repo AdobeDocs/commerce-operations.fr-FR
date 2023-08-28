@@ -4,7 +4,7 @@ description: Découvrez comment l’application de correctifs centralisés pour 
 role: Developer
 feature: Best Practices
 badge: label="Contribution d&#39;Anton Evers, ingénieur en architecture technique, Adobe" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="Contribution d’Anton Evers"
-source-git-commit: d8ee656b4b1741b39f2eef1f5628a299377e774c
+source-git-commit: 9cda88a4aeb4cc58d8ec9c4417e3107885a6cdb8
 workflow-type: tm+mt
 source-wordcount: '1309'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Bonnes pratiques pour la distribution de correctifs Adobe Commerce à grande échelle
 
-Si vous gérez plusieurs installations Adobe Commerce, [correction](../../../upgrade/patches/apply.md) peut être un processus complexe. _Application de correctifs centralisée_ est une partie essentielle de [architecture de référence globale](../../architecture/global-reference.md) et une bonne pratique pour les entreprises. Il vous aide à appliquer les correctifs appropriés sur toutes vos installations Adobe Commerce. Cette rubrique explique comment obtenir une distribution de correctifs centralisée pour tous les types d’Adobe Commerce. [Correctifs](../../../upgrade/patches/overview.md).
+Si vous gérez plusieurs installations Adobe Commerce, [correction](../../../upgrade/patches/apply.md) peut être un processus complexe. _Application de correctifs centralisée_ est une partie essentielle de [architecture de référence globale](../../architecture/global-reference/overview.md) et une bonne pratique pour les entreprises. Il vous aide à appliquer les correctifs appropriés sur toutes vos installations Adobe Commerce. Cette rubrique explique comment obtenir une distribution de correctifs centralisée pour tous les types d’Adobe Commerce. [Correctifs](../../../upgrade/patches/overview.md).
 
 >[!NOTE]
 >
