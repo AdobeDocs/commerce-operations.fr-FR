@@ -3,9 +3,9 @@ title: Bonnes pratiques de gestion des catalogues
 description: Découvrez les recommandations relatives à la configuration des limites de panier et des attributs de produit, à la pagination des listes, aux options, aux promotions et aux variations.
 role: Developer
 feature: Best Practices, Catalog Management
-source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
+source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1420'
 ht-degree: 0%
 
 ---
@@ -25,16 +25,7 @@ Les bonnes pratiques de gestion des catalogues décrites ici couvrent un large �
 
 ## Limites du panier
 
-Pour de meilleures performances, suivez les instructions suivantes pour gérer les limites de panier pour Adobe Commerce et Magento Open Source :
-
-- Pour les versions 2.3.x à 2.4.2, autorisez un maximum de 100 produits dans un panier.
-- Pour les versions 2.4.3 et ultérieures, l’amélioration des fonctionnalités des règles de vente a augmenté le nombre maximum de paniers à 750.
-
-Pour les versions 2.3.x à 2.4.2, les performances attendues basées sur les limites des articles de panier sont les suivantes :
-
-- Jusqu’à **100** produits d’un panier : le produit fonctionne et atteint les objectifs de performances pour le temps de réponse.
-- Jusqu’à **300** produits d’un panier : le produit fonctionne, mais le temps de réponse augmente au-dessus des cibles.
-- Dessus **500** produits d’un panier : les flux de panier et de passage en caisse ne sont pas garantis
+Pour de meilleures performances, suivez les instructions ci-après pour gérer les limites de panier pour Adobe Commerce et Magento Open Source.
 
 ### Produits et versions concernés
 
@@ -50,20 +41,9 @@ Utilisez les stratégies suivantes pour gérer le nombre d’articles du panier 
 - Divisez les commandes en plusieurs commandes plus petites avec un plus petit nombre de lignes à l’aide de la fonction [!UICONTROL Add Item by SKU] fonction .
 - Ajoutez uniquement la logique personnalisée et la personnalisation du panier nécessaires au chargement d’une liste d’éléments.
 
-### Impact potentiel sur les performances
-
-Le fait d’avoir plus que le nombre maximal recommandé de produits dans le panier peut avoir une incidence sur les performances du site des manières suivantes :
-
-- Amélioration du temps de réponse pour les opérations de récupération des données, la validation des articles de panier, les contrôles pour l’application des règles de prix et les calculs des taxes et du total.
-- Amélioration du temps de réponse pour le rendu minicart, notamment le rendu des paniers, le flux de passage en caisse et l’exécution.
-- Augmentation du temps de chargement pour toutes les pages du site où le minicart est présent.
-
 ## Limites de catégorie
 
-Pour de meilleures performances, ne configurez pas plus de catégories que le nombre maximal recommandé de catégories pour les sites Adobe Commerce.
-
-- Pour Adobe Commerce version 2.4.2 et ultérieure, configurez un maximum de 6 000 catégories.
-- Pour Adobe Commerce versions 2.3.x et 2.4.0 à 2.4.1-p1, configurez un maximum de 3 000 catégories.
+La configuration d’un grand nombre de catégories peut affecter les performances.
 
 ### Produits et versions concernés
 
@@ -80,25 +60,9 @@ Utilisez les stratégies suivantes pour réduire le nombre de catégories :
 - Suppression des catégories inactives
 - Optimiser la profondeur de catalogue dans la navigation
 
-### Impact potentiel sur les performances
-
-Le fait d’avoir plus de catégories que le nombre maximal recommandé peut affecter les performances du site de la manière suivante :
-
-- Augmentation tangible du temps de réponse pour les pages de catalogue non mises en cache
-- Longue exécution et délais d’expiration lors de la gestion des catégories depuis l’administrateur
-- Augmentation de la taille des tables de base de données correspondantes
-- Les tables d’index plus volumineuses augmentent le temps nécessaire à la réalisation des opérations d’indexation pour la variable `[category/product relation index\]`
-- Amélioration du temps de traitement pour terminer les opérations de création d’arborescence de catégories, de récupération de menus et de gestion des règles de catégorie
-
 ## Attributs de produit
 
-- Pour de meilleures performances, ne configurez pas plus que le nombre maximal recommandé d’attributs de produit ou d’options d’attributs de produit.
-
-- **Attributs de produit**—
-   - Pour Adobe Commerce versions 2.3.x et 2.4.0 à 2.4.1-p1, ne configurez pas plus de 500 attributs.
-   - Pour Adobe Commerce version 2.4.2 et ultérieure, configurez jusqu’à 1 500 attributs de produit.
-- **Options d’attribut de produit**-Configurer jusqu’à 100 options d’attribut pour chaque attribut
-- **Jeux d’attributs de produit**- Configuration d’un maximum de 1 000 jeux d’attributs
+La configuration d’un trop grand nombre d’attributs de produit ou d’options d’attributs de produit peut affecter les performances.
 
 >[!NOTE]
 >
@@ -170,7 +134,7 @@ Configuration de plusieurs **options d’attribut** peut affecter les performanc
 
 ## Options de produit
 
-Pour de meilleures performances, configurez un maximum de 100 options de produit par produit.
+La configuration d’un trop grand nombre d’options de produit par produit peut affecter les performances.
 
 ### Produits et versions concernés
 
@@ -181,7 +145,7 @@ Pour de meilleures performances, configurez un maximum de 100 options de produit
 
 ### Réduction du nombre d’options
 
-Pour de meilleures performances du site, utilisez les stratégies suivantes afin de réduire le nombre d’options de produit :
+Utilisez les stratégies suivantes pour réduire le nombre d’options de produit par produit :
 
 - Configurez des produits complexes et des options personnalisées en tant que source de variations de produit.
 - Au lieu de créer des modèles de produits globaux et des conteneurs d’options qui s’appliquent à tous les produits, utilisez des ensembles d’attributs pour créer des modèles de produits spécifiques avec des attributs et des options ciblés.
@@ -202,9 +166,7 @@ Les augmentations répertoriées ci-dessus peuvent affecter les performances du 
 
 ## Pagination des listes de produits
 
-Pour de meilleures performances, affichez un maximum de 48 produits par page.
-
-Vous pouvez configurer Adobe Commerce pour permettre aux acheteurs d’afficher tous les produits de catégorie sur une seule page. Si le nombre de produits de catégorie dépasse de manière significative 48 produits, mettez à jour la configuration du catalogue pour les contrôles de pagination du storefront.
+L’affichage d’un trop grand nombre de produits par page peut affecter les performances.
 
 ### Produits et versions concernés
 
@@ -215,24 +177,13 @@ Vous pouvez configurer Adobe Commerce pour permettre aux acheteurs d’afficher 
 
 ### Mettre à jour la configuration de la liste de produits
 
-Si vous avez plus de 48 produits dans une catégorie, mettez à jour la configuration du catalogue storefront pour désactiver l’option sur **Autoriser tous les produits par page**.
+Si une catégorie contient trop de produits, mettez à jour la configuration du catalogue storefront pour désactiver l’option sur **Autoriser tous les produits par page**.
 
 Après avoir désactivé cette option, Adobe Commerce utilise les commandes de pagination storefront de la liste de produits pour gérer le nombre de produits qui s’affichent dans les composants storefront. Pour obtenir des instructions, voir [Configuration des contrôles de pagination](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
 ## Limites de SKU du produit
 
-Pour optimiser les performances, le maximum recommandé pour les unités de gestion du stockage des produits (SKU) efficaces est de 242 millions. Ce maximum de SKU du produit effectif est calculé comme suit :
-
-```text
-Effective SKU = N[SKUs] x N[Stores] x N[Customer groups]
-```
-
-Où :
-
-- N représente le nombre d’éléments pour cette catégorie.
-- Les groupes de clients incluent des catalogues partagés, car ils créent un groupe de clients supplémentaire.
-
-Le fait d’avoir plus que le nombre maximal de SKU efficaces ralentit la récupération des données de produit et augmente le temps nécessaire pour terminer les opérations ou les indexations du panneau d’administration.
+La configuration d’un trop grand nombre de SKU de produit peut affecter les performances en ralentissant la récupération des données de produit et en augmentant le temps nécessaire pour terminer les opérations d’administration ou les indexations.
 
 ### Produits et versions concernés
 
@@ -246,7 +197,7 @@ Le fait d’avoir plus que le nombre maximal de SKU efficaces ralentit la récup
 Utilisez les stratégies suivantes pour réduire le nombre de produits (SKU) :
 
 - Minimiser les multiplicateurs —
-   - La consolidation des sites web réduit le multiplicateur. Si vous disposez de 50 000 SKU, de dix sites web et de dix groupes de clients, le nombre effectif de SKU est de 5 millions. La suppression de cinq groupes clients réduit les SKU en vigueur à 2,5 millions.
+   - La consolidation des sites web réduit le multiplicateur.
    - Utilisez d’autres fonctionnalités de produit pour la tarification personnalisée afin de remplacer le catalogue partagé et les multiplicateurs de groupes de clients.
    - Les groupes de clients et le catalogue partagé fonctionnent tous deux comme des multiplicateurs pour le nombre de SKU efficaces dans un magasin.
 - Restructurer le catalogue —
@@ -259,7 +210,7 @@ Utilisez les stratégies suivantes pour réduire le nombre de produits (SKU) :
 
 ## Variations de produit
 
-Pour de meilleures performances, configurez un maximum de 50 variations par produit.
+La configuration d’un trop grand nombre de variations par produit peut affecter les performances.
 
 ### Produits et versions concernés
 
@@ -287,13 +238,12 @@ Le dépassement du nombre recommandé de variations de produit peut affecter les
 
 ## Promotions
 
-Pour de meilleures performances, suivez les bonnes pratiques suivantes pour configurer les ventes et les promotions pour les articles d’un panier :
+Suivez les bonnes pratiques suivantes pour configurer les ventes et les promotions pour les articles d’un panier :
 
-- **Règles de vente (règles de prix du panier)**- Ne configurer pas plus de 1 000 règles de prix de panier pour tous les sites web
+- **Règles de vente (règles de prix du panier)**
    - Gérez et supprimez les règles inutilisées.
    - Ajoutez des conditions de règle strictes (comme un filtre d’attribut ou de catégorie) pour une correspondance plus efficace.
-- **Coupons**—
-   - Vérifiez que le nombre total de coupons dans la base de données est inférieur à 250 000.
+- **Coupons**
    - Supprimez les bons inutilisés et expirés.
    - Générez uniquement le nombre de coupons nécessaires pour répondre aux besoins de l&#39;opération.
 
@@ -312,4 +262,4 @@ Le fait d’avoir plus que le nombre maximal recommandé de règles de prix de p
 - Amélioration du temps de chargement et du rendu du minicart.
 - Augmentation du temps pour le rendu de la page de panier.
 - Augmentation du temps pour le rendu de la variable **Totaux** sur la page Passage en caisse .
-- La demande de coupons peut prendre plus de 2 secondes.
+

@@ -4,20 +4,16 @@ description: Découvrez les bonnes pratiques de configuration des sites, des mag
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
 # Bonne pratique pour la configuration des sites, des magasins et de l’affichage en magasin
 
-Pour optimiser les performances du site, configurez un maximum de 50 sites, 50 magasins et 50 vues de magasin pour Adobe Commerce sur les projets d’infrastructure cloud.
-
->[!NOTE]
->
->Pour Adobe Commerce sur l’infrastructure cloud, les bonnes pratiques s’appliquent spécifiquement à l’environnement de production (et éventuellement à l’environnement d’évaluation sur l’architecture Pro, soumis à des contraintes de ressources) qui aurait plus de ressources que les environnements d’intégration et de développement. Pour les environnements d’intégration (Pro et Starter) et d’évaluation (Starter), réduisez le nombre d’affichages de magasin à moins de 5 ou 10 (soumis à une révision technique).
+Pour Adobe Commerce sur l’infrastructure cloud, les bonnes pratiques s’appliquent spécifiquement à l’environnement de production (et éventuellement à l’environnement d’évaluation sur l’architecture Pro, soumis à des contraintes de ressources) qui aurait plus de ressources que les environnements d’intégration et de développement.
 
 ## Produits et versions concernés
 
