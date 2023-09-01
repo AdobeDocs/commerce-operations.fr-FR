@@ -3,22 +3,28 @@ title: Présentation de l’infrastructure cloud
 description: Découvrez Adobe Commerce sur l’infrastructure cloud.
 exl-id: 94cf1505-0853-4e01-ba55-befc1117fbdb
 feature: Cloud
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: c737a8e902c960c933e54e2521107475bb1e5a22
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
+
 
 # Présentation
 
 L’une des options d’hébergement géré les plus populaires pour Adobe Commerce sur AWS est proposée par Adobe Commerce. Adobe Commerce sur l’infrastructure cloud est une plateforme d’hébergement automatisée entièrement gérée pour le logiciel Adobe Commerce.
 
-Adobe Commerce sur l’infrastructure cloud est une plateforme en tant que service (PaaS) qui permet le déploiement rapide de storefronts web entièrement personnalisables, sécurisés et évolutifs, associée à une infrastructure d’hébergement et de services gérés de pointe. Il propose deux plans avec des infrastructures différentes. Adobe Commerce Starter convient mieux aux petits magasins moins complexes et aux catalogues plus petits. Adobe Commerce Pro est conçu pour les grands magasins plus complexes, les catalogues de produits plus volumineux ou les pics de trafic. Adobe Commerce détermine l’architecture appropriée avec l’apport des partenaires.
+Adobe Commerce sur l’infrastructure cloud est une plateforme en tant que service (PaaS) qui permet le déploiement rapide de storefronts web entièrement personnalisables, sécurisés et évolutifs, associée à une infrastructure d’hébergement et de Managed Services de pointe. Il propose deux plans avec des infrastructures différentes. Adobe Commerce [Starter](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#starter-projects) Les plans sont mieux adaptés aux petits magasins moins complexes et aux catalogues plus petits. Adobe Commerce [Pro](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#pro-projects) Les plans sont conçus pour les grands magasins plus complexes, les catalogues de produits plus volumineux ou le trafic qui atteint des sommets. Adobe détermine l’architecture appropriée avec l’entrée des partenaires.
 
 Adobe Commerce est prêt pour le cloud avec une infrastructure d’hébergement multi-cloud entièrement redondante qui offre des performances optimisées, une résilience et une évolutivité élastique. Vous pouvez exécuter efficacement votre plateforme commerciale sur le réseau de diffusion de contenu (CDN) de Fastly. Avec New Relic pour la surveillance et la gestion, vous pouvez préserver le bon fonctionnement de votre environnement de magasin.
 
-Adobe Commerce offre tous les avantages de l’informatique cloud moderne qui sont le plus souvent associés aux solutions SaaS : évolutivité élastique, haute résilience et disponibilité, conformité PCI, disponibilité globale et correction automatisée, tout en conservant la flexibilité de personnalisation logicielle requise par nos commerçants.
+Adobe Commerce offre tous les avantages de l’informatique cloud moderne les plus couramment associés aux solutions SaaS tout en conservant une certaine flexibilité en matière de personnalisation logicielle :
+
+- Évolutivité élastique
+- Haute résilience et disponibilité
+- Conformité PCI
+- Disponibilité globale et correction automatisée
 
 ![Diagramme présentant les éléments architecturaux d’Adobe Commerce sur l’infrastructure cloud](../../../assets/playbooks/adobe-commerce-cloud-infrastructure.svg)
 
@@ -38,18 +44,16 @@ Les autres avantages d’Adobe Commerce sont les suivants :
 
 ## Services tiers
 
-Examinons également le logiciel qui rend les avantages d’Adobe Commerce réels.
+Cette section résume les services et outils tiers clés d’Adobe Commerce sur les projets d’infrastructure cloud. Voir [Pile de technologie](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/tech-stack.html) dans le _Guide de Cloud_ pour plus d’informations.
 
-![Diagramme présentant Adobe Commerce sur la pile de technologie de l’infrastructure cloud](../../../assets/playbooks/cloud-tech-stack.svg)
+- **Réseau de diffusion de contenu Fastly**: à mesure que les clients accèdent à votre site et stockent, les demandes atteignent Fastly afin de charger plus rapidement les pages mises en cache. Fastly WAF fournit également un service de protection DDoS.
 
-- Réseau de diffusion de contenu rapide : à mesure que les clients accèdent à votre site et stockent, les demandes atteignent Fastly afin de charger plus rapidement les pages mises en cache. Fastly WAF fournit également un service de protection DDoS.
+- **New Relic**: fournit une vue complète de vos applications et de votre environnement d’exploitation. New Relic vous permet de combiner les mesures clés des applications mobiles et de navigateur avec les services, les entrepôts de données et les hôtes de prise en charge afin d’optimiser les performances de manière holistique et d’assurer le succès de chaque initiative.
 
-- New Relic vous donne une vue d’ensemble complète de vos applications et de votre environnement d’exploitation. Il vous permet de combiner les mesures clés des applications mobiles et des navigateurs avec les services de prise en charge, les entrepôts de données et les hôtes afin que vous puissiez optimiser les performances de manière holistique et assurer le succès de chaque initiative.
+- **Compositeur**: gère les dépendances et les mises à niveau dans Adobe Commerce et fournit un contexte sur les modules inclus, sur leur fonctionnement et sur la manière dont ils s’assemblent.
 
-- Le compositeur gère les dépendances et les mises à niveau dans Adobe Commerce. Il fournit un contexte sur les modules inclus, sur leur fonctionnement et sur la manière dont ils s’assemblent.
+- **Git**: permet de gérer le code source. Git permet l’embranchement local, des zones d’évaluation pratiques et plusieurs workflows avec création et déploiement automatiques pour un développement rapide et un déploiement continu efficaces.
 
-- Git est votre code dans les référentiels. Il permet l’embranchement local, des zones d’évaluation pratiques et plusieurs workflows avec création et déploiement automatiques pour un développement rapide et un déploiement continu efficaces.
+- **Plateforme en tant que service (PaaS)**: fournit une infrastructure préconfigurée qui inclut PHP, MySQL, Redis, [!DNL RabbitMQ]et les technologies OpenSearch ou Elasticsearch.
 
-- Platform-as-a-Service (PaaS) fournit une infrastructure préconfigurée qui inclut PHP, MySQL, Redis, [!DNL RabbitMQ]et les technologies OpenSearch ou Elasticsearch.
-
-- L’hébergement cloud d’AWS ou d’Azure alimente l’infrastructure en tant que service (IaaS) sous-jacente, qui offre un environnement évolutif et sécurisé pour les ventes en ligne et la vente au détail.
+- **Hébergement cloud d’AWS ou Azure**: optimise l’infrastructure en tant que service (IaaS) sous-jacente, qui offre un environnement évolutif et sécurisé pour les ventes en ligne et la vente au détail.

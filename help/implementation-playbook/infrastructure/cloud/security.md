@@ -1,34 +1,39 @@
 ---
-title: Sécurité des infrastructures dans le cloud
-description: Découvrez comment sécuriser Adobe Commerce sur l’infrastructure cloud.
+title: Sécurité de l’infrastructure cloud
+description: Découvrez comment Adobe protège Adobe Commerce sur l’infrastructure cloud.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: d05629ef21608a017cfbbfcf05e9507375689fa2
+source-git-commit: afe70569796c056cd0ecab82898f0dec016e7a3f
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1739'
 ht-degree: 0%
 
 ---
 
+
 # Sécurité
 
-L’architecture du plan Adobe Commerce Pro est conçue pour fournir un environnement hautement sécurisé. Chaque client est déployé dans son propre environnement serveur isolé, séparé des autres clients. Les détails de sécurité de l’environnement de production sont décrits ci-dessous.
+Adobe Commerce [Architecture Pro Formule](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) est conçu pour offrir un environnement hautement sécurisé. Chaque client est déployé dans son propre environnement serveur isolé, séparé des autres clients. Les détails de sécurité de l’environnement de production sont décrits ci-dessous.
 
 ## Navigateurs Web
 
 La majeure partie du trafic entrant et sortant de l’environnement cloud provient des navigateurs web des clients. Le trafic client peut être sécurisé à l’aide du protocole HTTPS pour toutes les pages du site web (en utilisant soit une certification SSL partagée, soit le certificat SSL du client lui-même, moyennant des frais supplémentaires). Les pages de passage en caisse et de compte sont toujours servies à l’aide du protocole HTTPS. La bonne pratique consiste à diffuser toutes les pages sous HTTPS.
 
-## Réseau de diffusion de contenu (CDN)
+## Réseau de diffusion de contenu
 
-Fournit rapidement une protection CDN et par déni de service distribué (DDoS). Le CDN rapide permet d’isoler l’accès direct aux serveurs d’origine. Le DNS public pointe uniquement vers le réseau Fastly. La solution de DDoS rapide protège contre les attaques de couche 3 et 4 hautement perturbantes, ainsi que contre les attaques de couche 7 plus complexes. Les attaques de couche 7 peuvent être bloquées à l’aide de règles personnalisées basées sur l’ensemble des requêtes HTTP/HTTPS et selon les critères du client et de la requête, y compris les en-têtes, les cookies, le chemin d’accès à la requête et l’adresse IP du client, ou d’indicateurs tels que la géolocalisation.
+Fournit rapidement une protection CDN (Content Delivery Network, réseau de diffusion de contenu) et DDoS (déni de service distribué). Le CDN rapide permet d’isoler l’accès direct aux serveurs d’origine. Le DNS public pointe uniquement vers le réseau Fastly. La solution de DDoS rapide protège contre les attaques de couche 3 et 4 hautement perturbantes, ainsi que contre les attaques de couche 7 plus complexes. Les attaques de couche 7 peuvent être bloquées à l’aide de règles personnalisées basées sur l’ensemble des requêtes HTTP/HTTPS et selon les critères du client et de la requête, y compris les en-têtes, les cookies, le chemin d’accès à la requête et l’adresse IP du client, ou d’indicateurs tels que la géolocalisation.
 
-## pare-feu des applications web (WAF)
+Voir [Présentation des services rapides](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html) dans le _Guide de Cloud_.
 
-Le pare-feu d’applications web Fastly (WAF) est utilisé pour fournir une protection supplémentaire. Le mode WAF basé sur le cloud de Fastly utilise des règles tierces provenant de sources commerciales et open source telles que le jeu de règles principal OWASP. En outre, des règles spécifiques à Adobe Commerce sont utilisées. Les clients sont protégés contre les attaques de couche d’application clés, notamment les attaques par injection et les entrées malveillantes, les scripts intersites, l’exfiltration de données, les violations de protocole HTTP et d’autres menaces OWASP Top 10.
+## Pare-feu d’applications web
+
+Le pare-feu d’applications web Fastly (WAF) est utilisé pour fournir une protection supplémentaire. Le mode WAF basé sur le cloud de Fastly utilise des règles tierces provenant de sources commerciales et open source telles que le jeu de règles principal OWASP. En outre, des règles spécifiques à Adobe Commerce sont utilisées. Les clients sont protégés contre les attaques de couche d’application clés, notamment les attaques par injection et les entrées malveillantes, les scripts intersites, l’exfiltration de données, les violations de protocole HTTP et les dix autres menaces OWASP principales.
 
 Les règles WAF sont mises à jour par Adobe Commerce si de nouvelles vulnérabilités sont détectées, ce qui permet à Managed Services de &quot;corriger virtuellement&quot; les problèmes de sécurité avant les correctifs logiciels. La méthode Fastly ne fournit pas de services de limitation de vitesse ou de détection de robots. Si vous le souhaitez, les clients peuvent acquérir sous licence un service de détection de robots tiers compatible avec Fastly.
 
-## Cloud privé virtuel (VPC)
+Voir [Web Application Firewall (WAF)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html) dans le _Guide de Cloud_.
+
+## Cloud privé virtuel
 
 L’environnement de production de plan Adobe Commerce Pro est configuré en tant que cloud privé virtuel (VPC) afin que les serveurs de production soient isolés et aient une capacité limitée à se connecter à l’environnement cloud et en sortir. Seules les connexions sécurisées aux serveurs cloud sont autorisées. Les protocoles sécurisés tels que SFTP ou rsync peuvent être utilisés pour les transferts de fichiers.
 
@@ -36,13 +41,13 @@ Les clients peuvent utiliser des tunnels SSH pour sécuriser les communications 
 
 ## Chiffrement
 
-Amazon Elastic Block Store (EBS) est utilisé pour le stockage. Tous les volumes EBS sont chiffrés à l’aide de l’algorithme AES-265. Cela signifie que les données seront cryptées au repos. Le système chiffre également les données en transit entre le CDN et l’origine, ainsi qu’entre les serveurs d’origine. Les mots de passe du client sont stockés sous la forme de hachages. Les informations d’identification sensibles, y compris celles de la passerelle de paiement, sont chiffrées à l’aide de l’algorithme SHA-256.
+Amazon Elastic Block Store (EBS) est utilisé pour le stockage. Tous les volumes EBS sont cryptés à l’aide de l’algorithme AES-265, ce qui signifie que les données sont chiffrées au repos. Le système chiffre également les données en transit entre le CDN et l’origine, ainsi qu’entre les serveurs d’origine. Les mots de passe du client sont stockés sous la forme de hachages. Les informations d’identification sensibles, y compris les informations d’identification de la passerelle de paiement, sont chiffrées à l’aide de l’algorithme SHA-256.
 
-L’application Adobe Commerce ne prend pas en charge le chiffrement ou le chiffrement au niveau des colonnes ou des lignes lorsque les données ne sont pas au repos ou ne sont pas en transit entre les serveurs. Le client peut gérer les clés de chiffrement dans l’application. Les clés utilisées par le système sont stockées dans AWS Key Management System et doivent être gérées par Managed Services afin de fournir des parties du service.
+L’application Adobe Commerce ne prend pas en charge le chiffrement ou le chiffrement au niveau des colonnes ou des lignes lorsque les données ne sont pas au repos ou ne sont pas en transit entre les serveurs. Le client peut gérer les clés de chiffrement dans l’application. Les clés utilisées par le système sont stockées dans le système de gestion des clés AWS et doivent être gérées par Managed Services pour fournir des parties du service.
 
-## Détection des points de fin et réponse
+## Détection et réponse des points de fin
 
-[!DNL CrowdStrike Falcon], un agent de détection et de réponse de point d’entrée de nouvelle génération léger installé sur tous les points d’entrée (y compris les serveurs) dans Adobe, protège nos données et nos systèmes grâce à une surveillance et une collecte continues en temps réel qui nous permettent d’identifier rapidement les menaces et de les répondre.
+[!DNL CrowdStrike Falcon], un agent de détection et de réponse de point de terminaison de nouvelle génération légère est installé sur tous les points de terminaison (y compris les serveurs) d’Adobe. Les agents de RTE protègent les données et les systèmes d&#39;Adobe grâce à une surveillance et une collecte continues en temps réel, ce qui permet une identification et une réponse rapides aux menaces.
 
 ## Test de pénétration
 
@@ -63,7 +68,7 @@ Adobe teste régulièrement le code de l’application principale à la recherch
 - OWASPZAP
 - andSqlMap
 
-La base de code complète est analysée avec ces outils toutes les deux semaines. Les clients sont informés des correctifs de sécurité par le biais d’emails directs, de notifications dans l’application et dans la variable [Centre de sécurité](https://magento.com/security).
+La base de code complète est analysée avec ces outils toutes les deux semaines. Les clients sont informés des correctifs de sécurité par le biais d’emails directs, de notifications dans l’application et dans la variable [Centre de sécurité](https://helpx.adobe.com/security.html).
 
 Les clients doivent s’assurer que ces correctifs sont appliqués à leur application personnalisée dans les 30 jours suivant la publication, conformément aux directives PCI. Adobe fournit également un [Outil Analyse de sécurité](https://docs.magento.com/user-guide/magento/security-scan.html) qui permet aux commerçants de surveiller régulièrement leurs sites et de recevoir des mises à jour sur les risques de sécurité connus, les logiciels malveillants et les accès non autorisés. L’outil d’analyse de sécurité est un service gratuit qui peut être exécuté sur n’importe quelle version d’Adobe Commerce.
 
@@ -71,52 +76,48 @@ Pour encourager les chercheurs en sécurité à identifier et à signaler des vu
 
 ## Système de fichiers en lecture seule
 
-Tout le code exécutable est déployé dans une image système de fichiers en lecture seule, ce qui réduit considérablement les surfaces disponibles pour attaque. Le processus de déploiement crée une image Squash-FS. Cette approche réduit considérablement les possibilités d’injecter du code PHP ou JavaScript dans le système ou de modifier les fichiers de l’application Adobe Commerce.
+Tout le code exécutable est déployé dans une image système de fichiers en lecture seule, ce qui réduit considérablement les surfaces disponibles pour attaque. Le processus de déploiement crée une image Squash-FS afin de réduire les possibilités d’injection de code PHP ou JavaScript dans le système ou de modifier les fichiers d’application Adobe Commerce.
 
 ## Déploiement à distance
 
-Le seul moyen d’obtenir du code exécutable dans l’environnement de production Managed Services consiste à l’exécuter via un processus d’approvisionnement. Cela implique de transférer le code source de votre référentiel source vers un référentiel distant qui lance un processus de déploiement. L’accès à cette cible de déploiement est contrôlé. Vous contrôlez donc complètement qui peut accéder à la cible de déploiement. Tous les déploiements de code d’application dans l’environnement hors production sont contrôlés par le client.
+Le seul moyen d’obtenir du code exécutable dans l’environnement de production Managed Services consiste à l’exécuter via un processus d’approvisionnement. La mise en service consiste à transférer le code source de votre référentiel source vers un référentiel distant qui initie un processus de déploiement. L’accès à cette cible de déploiement est contrôlé. Vous contrôlez donc complètement qui peut accéder à la cible de déploiement. Tous les déploiements de code d’application dans l’environnement hors production sont contrôlés par le client.
 
 ## Journalisation
 
-Toutes les activités AWS sont connectées à AWS CloudTrail. Les journaux Linux, de serveur d’applications et de base de données sont stockés sur les serveurs de production et dans des sauvegardes. Toutes les modifications du code source sont enregistrées dans un référentiel Git. L’historique de déploiement est disponible dans Adobe Commerce [Interface Web du projet](https://devdocs.magento.com/cloud/project/projects.html#login). Tous les accès à l’assistance sont consignés et les sessions d’assistance sont enregistrées.
+Toutes les activités AWS sont connectées à AWS CloudTrail. Les journaux du système d’exploitation, du serveur d’applications et de la base de données sont stockés sur les serveurs de production et dans des sauvegardes. Toutes les modifications du code source sont enregistrées dans un référentiel Git. L’historique de déploiement est disponible dans Adobe Commerce [Interface Web du projet](https://devdocs.magento.com/cloud/project/projects.html#login). Tous les accès à l’assistance sont consignés et les sessions d’assistance sont enregistrées.
+
+Voir [Affichage et gestion des journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) dans le _Guide de Cloud_.
 
 ## Données sensibles
 
-Les données sensibles peuvent couvrir les informations personnelles des consommateurs ou les données confidentielles des clients Managed Services. La protection des données clients et clients sensibles est une obligation essentielle pour Adobe Commerce Managed Services. Managed Services et nos clients ont des obligations légales concernant les informations d’identification personnelle. Outre les fonctionnalités de sécurité de l’architecture, il existe d’autres contrôles pour limiter la distribution et l’accès aux données sensibles.
+Les données sensibles peuvent couvrir les informations personnelles des consommateurs ou les données confidentielles des clients Managed Services. La protection des données clients et clients sensibles est une obligation essentielle pour Adobe Commerce Managed Services. Les clients Managed Services et Adobe ont des obligations légales concernant les informations d’identification personnelle. Outre les fonctionnalités de sécurité de l’architecture, il existe d’autres contrôles pour limiter la distribution et l’accès aux données sensibles.
 
-Les clients détiennent leurs données et contrôlent l’emplacement de ces données. Le client spécifie l’emplacement où résident ses instances de production et de développement. Ils spécifient également l’emplacement qui sera utilisé pour l’environnement de création de rapports Adobe Commerce conjointement avec Commerce, et si cette application de création de rapports Adobe Commerce a accès ou non à des informations d’identification personnelle. Les instances de production se trouvent dans la plupart des régions d’AWS, tandis que les environnements de développement et de reporting d’Adobe Commerce se trouvent actuellement aux États-Unis ou dans l’Union européenne.
+Les clients détiennent leurs données et contrôlent l’emplacement de ces données. Le client spécifie l’emplacement où résident ses instances de production et de développement. Ils spécifient également l’emplacement utilisé pour l’environnement de création de rapports Adobe Commerce avec Commerce et si cette application de création de rapports Adobe Commerce a accès ou non à des informations d’identification personnelle. Les instances de production peuvent se trouver dans la plupart des régions d’AWS, tandis que les environnements de développement et de reporting d’Adobe Commerce se trouvent actuellement aux États-Unis ou dans l’Union européenne.
 
-Les données sensibles peuvent passer par le réseau de serveur CDN Fastly, mais ne sont pas stockées dans le réseau Fastly. Tous les partenaires inclus dans l’offre Managed Services d’Adobe Commerce ont des obligations contractuelles pour assurer la protection des données sensibles. Managed Services ne déplace pas les données sensibles du client ou du consommateur des emplacements spécifiés par le client.
+Les données sensibles peuvent passer par le réseau de serveur CDN Fastly, mais ne sont pas stockées dans le réseau Fastly. Tous les partenaires inclus dans l’offre Managed Services ont des obligations contractuelles pour assurer la protection des données sensibles. Managed Services ne déplace pas les données sensibles du client ou du consommateur des emplacements spécifiés par le client.
 
-Dans le cadre de la prestation des services inclus dans l’offre Managed Services d’Adobe Commerce, le personnel de Managed Services a besoin d’un accès aux systèmes de production contenant des données sensibles. Ces employés sont formés à leurs obligations de protection des données clients et clients sensibles. L’accès à ces systèmes est limité aux employés qui en ont besoin. Ces employés n&#39;ont accès qu&#39;au temps nécessaire pour fournir ces services.
+Dans le cadre de la prestation des services inclus dans l’offre Managed Services, le personnel de Managed Services a besoin d’un accès aux systèmes de production contenant des données sensibles. Ces employés sont formés à leurs obligations de protection des données clients et clients sensibles. L’accès à ces systèmes est limité aux employés qui en ont besoin. Ces employés n&#39;ont accès qu&#39;au temps nécessaire pour fournir ces services.
 
-## Règlement général sur la protection des données (RGPD)
+## Règlement général sur la protection des données
 
-Le RGPD est un cadre juridique qui définit des lignes directrices pour la collecte et le traitement des informations personnelles pour les individus dans l’Union européenne (UE). Ces réglementations s’appliquent quel que soit l’endroit où se trouve le site, et les visiteurs de l’UE y ont accès.
+Le Règlement général sur la protection des données (RGPD) est un cadre juridique qui définit des lignes directrices pour la collecte et le traitement des informations personnelles pour les individus dans l’Union européenne (UE). Ces réglementations s’appliquent quel que soit l’endroit où se trouve le site, et les visiteurs de l’UE y ont accès.
 
-Essentiellement, les visiteurs doivent être informés des données que le site leur collecte et donner leur consentement explicite à la collecte d’informations. Les sites doivent informer les visiteurs si les données personnelles détenues par le site sont violées.
+Les visiteurs doivent être informés des données qu’un site leur collecte et donner leur consentement explicite à la collecte d’informations. Les sites doivent informer les visiteurs si les données personnelles détenues par le site sont violées.
 
-Le commerçant ou la société qui gère le site doit également disposer d’un délégué à la protection des données dédié qui supervise la sécurité des données du site. Cette personne (ou l’équipe de gestion de site web) doit être disponible en contact si un visiteur demande que ses données soient effacées.
+Le commerçant ou la société qui gère le site doit disposer d’un délégué à la protection des données dédié qui supervise la sécurité des données du site. L’agent de confidentialité des données (ou l’équipe de gestion de site web) doit être disponible pour être contacté si un visiteur demande que ses données soient effacées.
 
-Le RGPD demande également que toute information d’identification personnelle (comme les noms, la race et la date de naissance) collectée soit rendue anonyme, soit rendue anonyme.
+Le RGPD exige que toutes les informations d’identification personnelle (telles que les noms, la race et la date de naissance) collectées soient rendues anonymes ou pseudonymes.
 
 >[!NOTE]
 >
-> Cette page est simplement destinée à donner un aperçu général des éléments à prendre en compte pour le RGPD. Pour plus d’informations, veuillez consulter votre service juridique ou se référer au[texte officiel](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+>Cette page donne un aperçu général des éléments à prendre en compte pour le RGPD. Voir _[Guide de sécurité et de conformité](../../../security-and-compliance/privacy/gdpr.md)_ pour plus d’informations sur la manière dont Adobe Commerce stocke les informations personnelles. Pour déterminer comment votre entreprise doit se conformer à toute obligation juridique, contactez votre conseiller juridique ou reportez-vous à la section [texte officiel](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
 ## Sauvegardes
 
-Les sauvegardes sont effectuées toutes les heures pendant les dernières 24 heures de fonctionnement. Après la période de 24 heures, les sauvegardes sont conservées selon la planification suivante, à l’aide du service d’instantané AWS EBS :
+Les sauvegardes sont effectuées toutes les heures pendant les dernières 24 heures de fonctionnement. Après la période de 24 heures, les sauvegardes sont conservées selon un calendrier utilisant le service d’instantané AWS EBS. Voir [Politique de rétention](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#retention-policy) dans le _Guide de Cloud_.
 
-| Période | Politique de conservation des données |
-|----------------|-------------------------|
-| Jours 1 à 3 | Chaque sauvegarde |
-| Jours 4 à 6 | Une sauvegarde par jour |
-| Semaines 2 à 6 | Une sauvegarde par semaine |
-| Semaines 8 à 12 | Sauvegarde bihebdomadaire |
-| Semaines 12 à 22 | Une sauvegarde par mois |
+Le service crée une sauvegarde indépendante sur le stockage redondant. Les volumes EBS étant cryptés, les sauvegardes sont également cryptées. En outre, Managed Services effectue des sauvegardes à la demande des clients.
 
-Cela crée une sauvegarde indépendante sur le stockage redondant. Les volumes EBS étant cryptés, les sauvegardes sont également cryptées. En outre, Managed Services effectue des sauvegardes à la demande des clients.
+Votre approche de sauvegarde et de récupération de Managed Services utilise une architecture haute disponibilité associée à des sauvegardes système complètes. Chaque projet est répliqué (toutes les données, le code et les ressources) dans trois zones de disponibilité AWS distinctes ; chaque zone dispose d’un centre de données distinct.
 
-Votre approche de sauvegarde et de récupération d’Adobe Commerce Managed Services utilise une architecture haute disponibilité associée à des sauvegardes système complètes. Chaque projet est répliqué (toutes les données, le code et les ressources) dans trois zones de disponibilité AWS distinctes ; chaque zone dispose d’un centre de données distinct.
+Voir [Instantanés et gestion des sauvegardes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html) dans le _Guide de Cloud_.
