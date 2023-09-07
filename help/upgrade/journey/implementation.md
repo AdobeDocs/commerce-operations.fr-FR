@@ -2,9 +2,9 @@
 title: Mise à niveau
 description: Découvrez les différentes phases de mise en oeuvre de la mise à niveau pour les projets Adobe Commerce.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
@@ -84,4 +84,4 @@ Enfin, faites-le part à votre équipe afin de déterminer les leçons à tirer 
 
 Une fois votre site lancé, vérifiez vos données d’analyse, la console de recherche Google et d’autres ressources afin de vous assurer qu’il n’y a aucun problème inattendu et que tout fonctionne comme prévu.
 
-Il est toujours préférable de garder un oeil sur les performances grâce à des outils de surveillance bien conçus. Il existe de nombreux outils et moyens pour surveiller les performances de votre site. Vous devez donc veiller à en choisir un qui corresponde bien à votre entreprise. Nous recommandons aux clients Adobe Commerce qui utilisent notre système de gestion de l’infrastructure cloud de profiter de services tels que [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) pour surveiller les performances du site.
+Il est toujours préférable de garder un oeil sur les performances grâce à des outils de surveillance bien conçus. Il existe de nombreux outils et moyens pour surveiller les performances de votre site. Vous devez donc veiller à en choisir un qui corresponde bien à votre entreprise. Nous recommandons aux clients Adobe Commerce qui utilisent notre système de gestion de l’infrastructure cloud de profiter de services tels que [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) pour surveiller les performances du site.

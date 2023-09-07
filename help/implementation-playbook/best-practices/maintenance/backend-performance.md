@@ -4,9 +4,9 @@ description: Découvrez l’optimisation des performances du serveur principal d
 badge: label="Contribution par objet" type="Informative" url="https://objectsource.co.uk/" tooltip="objectsource"
 role: Admin, User, Developer
 feature: Best Practices
-source-git-commit: 2416357d8cacb5627fd24f92b16c2d9839f91082
+source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ En savoir plus sur le test des projets Adobe Commerce :
 
 ### Identification et résolution des problèmes de performances
 
-Résolvez les problèmes de performances en utilisant divers outils tels que New Relic et Observation pour Adobe Commerce afin de détecter les goulets d’étranglement et d’optimiser efficacement les sites Commerce. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) est inclus dans Adobe Commerce sur l’infrastructure cloud ; et [Observation pour Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) est inclus pour les déploiements cloud et sur site.
+Résolvez les problèmes de performances en utilisant divers outils tels que New Relic et Observation pour Adobe Commerce afin de détecter les goulets d’étranglement et d’optimiser efficacement les sites Commerce. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) est inclus dans Adobe Commerce sur l’infrastructure cloud ; et [Observation pour Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) est inclus pour les déploiements cloud et sur site.
 
 Utilisez ces outils pour analyser les performances du site et identifier les problèmes de performances liés à :
 
