@@ -4,9 +4,9 @@ description: Découvrez comment le fichier XML système gère la configuration d
 feature: Configuration, System
 badge: label="Contribution de David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 37c23d7a410cdb664710880d3d89cb72efa164e9
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2669'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,6 @@ A `<tab>`-Tag peut avoir les attributs suivants :
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------|----------|----------|
 | `id` | Définit l’identifiant utilisé pour référencer la section. | `typeId` | required |
 | `translate` | Définit le champ à traduire. Fournir `label` pour rendre le libellé traduisible. | `string` | facultatif |
-| `type` | Définit le type d’entrée de l’élément de HTML rendu. Par défaut, la valeur `text`. | `string` | facultatif |
 | `sortOrder` | Définit l’ordre de tri de la section. Les nombres élevés poussent la section vers le bas de la page ; les nombres faibles poussent la section vers le haut. | `float` | facultatif |
 | `class` | Ajoute une classe CSS définie à l’élément de HTML de l’onglet rendu. | `string` | facultatif |
 
