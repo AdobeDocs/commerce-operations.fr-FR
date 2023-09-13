@@ -2,9 +2,9 @@
 title: Obtention des clés d’authentification
 description: Suivez ces étapes pour récupérer les informations d’identification afin d’accéder aux packages Adobe Commerce et Magento Open Source Composer sur repo.magento.com.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,8 @@ Pour pouvoir accéder aux packages Adobe Commerce et Magento Open Source, vous d
 
 Pour créer des clés d’authentification :
 
-1. Connectez-vous au [Commerce Marketplace](https://marketplace.magento.com). Si vous ne disposez pas d’un compte, cliquez sur **Enregistrer**.
+1. Connectez-vous au [Commerce Marketplace](https://commercemarketplace.adobe.com/). Si vous ne disposez pas d’un compte, cliquez sur **Enregistrer**.
+
 1. Cliquez sur le nom de votre compte en haut à droite de la page, puis sélectionnez **Mon profil**.
 
 1. Cliquez sur **Accéder aux clés** dans l’onglet Marketplace .
@@ -45,7 +46,7 @@ Vous pouvez également désactiver ou supprimer des clés d’authentification. 
 
 ### Gestion du jeton d’accès SSH
 
-Pour télécharger des versions Adobe Commerce à l’aide de SSH, vous devez générer un jeton d’accès aux téléchargements. Pour générer un jeton :
+Pour télécharger des versions Adobe Commerce et Magento Open Source à l’aide de SSH, vous devez générer un jeton d’accès aux téléchargements. Pour générer un jeton :
 
 1. Connectez-vous à [magento.com compte](https://account.magento.com/customer/account/login).
 1. Cliquez sur **Mon compte** en haut de la page.
