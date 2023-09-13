@@ -4,9 +4,9 @@ description: Découvrez comment le fichier XML système gère la configuration d
 feature: Configuration, System
 badge: label="Contribution de David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 37c23d7a410cdb664710880d3d89cb72efa164e9
+source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2663'
 ht-degree: 0%
 
 ---
@@ -296,7 +296,6 @@ A `<field>`-Tag peut avoir les enfants suivants :
 | `more_url` | Non extensible. Voir ci-dessous. | `typeUrl` |
 | `demo_url` | Non extensible. Voir ci-dessous. | `typeUrl` |
 | `hide_in_single_store_mode` | Si le groupe doit être visible en mode de magasin unique. `1` masque le groupe ; `0` affiche le groupe. | `int` |
-| `source_service` | Service utilisé pour renseigner les options sélectionnées. | `complexType` |
 | `options` | Inutilisée. Potentiellement obsolète. | `complexType` |
 | `depends` | Peut être utilisé pour déclarer des dépendances à d’autres champs. Utilisé uniquement pour afficher des champs/groupes spécifiques lorsqu’un champ donné a une valeur de `1`. Ce noeud attend une `section/group/field`-string. | `complexType` |
 | `attribute` | Les attributs personnalisés peuvent être utilisés par les modèles frontend. Généralement utilisé pour rendre un modèle front-end donné plus dynamique. | `complexType` |
