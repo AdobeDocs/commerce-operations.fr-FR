@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 19d41495f95ae707be1db8446ac77eb5ead6375e
+source-git-commit: 7e6e8f1ed15d88fc79e9a3ad5a4505b612564f71
 workflow-type: tm+mt
-source-wordcount: '14327'
+source-wordcount: '14539'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,17 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour Magento Open Source, voir la section [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.38 {#v1-1-38}
+
+* **ACSD-53098** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.4) - Correction du problème en raison duquel les produits affectés à un catalogue partagé n’apparaissent pas sur le storefront lors de l’exécution d’un index partiel.
+* **ACSD-54018** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.6) - Correction des problèmes de performances avec la variable [!UICONTROL Product List] widget qui utilise un attribut non global dans la condition du widget.
+* **ACSD-54111** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.6) - Correction du problème qui empêchait l’affichage des miniatures de produit sur le storefront lorsque le rapport d’aspect de l’image de filigrane ne correspond pas à l’image de produit.
+* **ACSD-47669** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.6) - Correctifs *Violation de contrainte d’intégrité : 1452 Impossible d’ajouter ou de mettre à jour une ligne enfant : une contrainte de clé étrangère échoue* lors de l’importation de produits au format CSV.
+* **ACSD-53347** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction du problème où l’indexeur de prix prend trop de temps à s’exécuter.
+* **ACSD-52287** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) : corrige le problème lié à un état de commande incorrect dans la grille d’ordre archivée lorsque l’indexation de grille asynchrone est activée.
+* **ACSD-52929** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction du problème lié aux demandes redondantes de réindexation des éléments source par défaut lorsque l’indexeur d’inventaire est configuré en mode asynchrone.
+* **ACSD-53824** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction du problème en raison duquel `UpdateMultiselectAttributesBackendTypes` le correctif de données de migration dépasse la limite de la taille des transactions de la base de données pendant la durée `setup:upgrade`.
 
 ## v1.1.37 {#v1-1-37}
 
