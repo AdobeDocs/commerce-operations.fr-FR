@@ -3,7 +3,7 @@ title: Sécurité de l’infrastructure cloud
 description: Découvrez comment Adobe protège Adobe Commerce sur l’infrastructure cloud.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: afe70569796c056cd0ecab82898f0dec016e7a3f
+source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Les clients peuvent utiliser des tunnels SSH pour sécuriser les communications 
 
 ## Chiffrement
 
-Amazon Elastic Block Store (EBS) est utilisé pour le stockage. Tous les volumes EBS sont cryptés à l’aide de l’algorithme AES-265, ce qui signifie que les données sont chiffrées au repos. Le système chiffre également les données en transit entre le CDN et l’origine, ainsi qu’entre les serveurs d’origine. Les mots de passe du client sont stockés sous la forme de hachages. Les informations d’identification sensibles, y compris les informations d’identification de la passerelle de paiement, sont chiffrées à l’aide de l’algorithme SHA-256.
+Amazon Elastic Block Store (EBS) est utilisé pour le stockage. Tous les volumes EBS sont cryptés à l’aide de l’algorithme AES-256, ce qui signifie que les données sont chiffrées au repos. Le système chiffre également les données en transit entre le CDN et l’origine, ainsi qu’entre les serveurs d’origine. Les mots de passe du client sont stockés sous la forme de hachages. Les informations d’identification sensibles, y compris les informations d’identification de la passerelle de paiement, sont chiffrées à l’aide de l’algorithme SHA-256.
 
 L’application Adobe Commerce ne prend pas en charge le chiffrement ou le chiffrement au niveau des colonnes ou des lignes lorsque les données ne sont pas au repos ou ne sont pas en transit entre les serveurs. Le client peut gérer les clés de chiffrement dans l’application. Les clés utilisées par le système sont stockées dans le système de gestion des clés AWS et doivent être gérées par Managed Services pour fournir des parties du service.
 
