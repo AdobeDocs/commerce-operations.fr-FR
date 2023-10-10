@@ -2,7 +2,7 @@
 title: Consommateurs de files d'attente de messages
 description: Découvrez les clients de la file d’attente des messages d’Adobe Commerce et de Magento Open Source, notamment les fonctionnalités et les paramètres de configuration système qui leur sont associés.
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: 1d7f5f58f8c21013c2ab0d68ab93a125ba0f3764
+source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Le tableau suivant identifie tous les consommateurs de la file d’attente de me
 | Envoie des courriers électroniques de bon de commande. Obligatoire lorsque la variable [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) est activée dans les paramètres de configuration du système d’administration. |                |                         |                     |
 | `purchaseorder.validation` |                | + |                     |
 | Valide le bon de commande par rapport à ce qui est pertinent [règles de validation](https://docs.magento.com/user-guide/customers/account-dashboard-approval-rules.html). Obligatoire lorsque la variable [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) est activée dans les paramètres de configuration du système d’administration. |                |                         |                     |
-| `saveConfigProcessor` [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponible dans la version 2.4.7-beta1 uniquement"} | + |                         | + |
+| `saveConfigProcessor` [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponible dans la version 2.4.7-bêta uniquement"} | + |                         | + |
 | enregistre de manière asynchrone les modifications apportées à la configuration du magasin en plaçant les tâches d’enregistrement dans une file d’attente de messages, ce qui peut améliorer les performances sur les déploiements qui contiennent un grand nombre de configurations au niveau du magasin. Requis pour utiliser la variable [`AsyncConfig`](../../performance/configuration.md#asynchronous-configuration-save) module . |                |                         |                     |
 | `sales.rule.update.coupon.usage` | + | + | + |
 | Empêche la variable [issue](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/coupon-code-used-more-than-once-adobe-commerce.html) où des bons à usage unique peuvent être utilisés plusieurs fois. |                |                         |                     |

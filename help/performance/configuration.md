@@ -3,7 +3,7 @@ title: Bonnes pratiques de configuration
 description: Optimisez le temps de réponse de votre déploiement Adobe Commerce ou Magento Open Source à l’aide de ces bonnes pratiques.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 62a37d5f83b4cc6efef8bddba16e44151e91a8d0
+source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
 workflow-type: tm+mt
 source-wordcount: '1448'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Il peut arriver que des ventes intensives sur un storefront se produisent en mê
 >
 >La variable **[!UICONTROL Developer]** Les options et les onglets ne sont disponibles que dans [Mode Développeur](../configuration/cli/set-mode.md). [Adobe Commerce sur l’infrastructure cloud](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) ne prend pas en charge `Developer` mode .
 
-## Enregistrement de la configuration asynchrone [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponible dans la version 2.4.7-beta1 uniquement"}
+## Enregistrement de la configuration asynchrone [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponible dans la version 2.4.7-bêta uniquement"}
 
 Pour les projets avec un grand nombre de configurations au niveau du magasin, l’enregistrement d’une configuration de magasin peut prendre un temps démesuré ou entraîner un délai d’expiration. La variable _Configuration asynchrone_ Le module active les enregistrements de configuration asynchrones en exécutant une tâche cron qui utilise un consommateur pour traiter l’enregistrement dans une file d’attente de messages. AsyncConfig est **disabled** par défaut.
 

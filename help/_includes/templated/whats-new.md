@@ -1,7 +1,7 @@
 ---
-source-git-commit: 578b3a7813151406d6e12e5ebed4761f5edb6b49
+source-git-commit: 1391904acf8e2f65a733c4c899f5a67561cd8810
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,70 @@ ht-degree: 1%
 ## Nouveautés
 
 Découvrez la nouvelle documentation et les mises à jour importantes de la documentation existante.
+
+### 10 octobre 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Mise à jour des rubriques suivantes pour la version 2.4.7-beta2 :<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html">Interface de ligne de commande d’Adobe Commerce (sur site, bêta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html">Interface de ligne de commande du Magento Open Source (bêta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html">Packages Adobe Commerce (bêta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html">Modules Magento Open Sources (bêta)</a></p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7a2e0f9fd2e74776107ac85de9b785aaf056413c">7a2e0f</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Notes de mise à jour publiées pour les correctifs Adobe Commerce d’octobre 2023 :<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2.4.7-beta2</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p3.html">2.4.6-p3</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p5.html">2.4.5-p5</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p6.html">2.4.4-p6</a></p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d1a37c01f56c12f4d4553bcd3ad883a321de9ac8">d1a37c</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">configuration requise</a> pour les correctifs publiés en octobre 2023.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/93381f57ab687521e1503144cf5c5442da856310">93381f</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Ajout d’une description de la nouvelle <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/configure-varnish-commerce.html">Gestion de la taille des paramètres</a> option de configuration du système pour la mise en cache de la page entière.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/372a37d8c75aec195951114fa9bc2786fc450bf8">372a37</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Clarification des exigences relatives à l’utilisation de la variable <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values.html">scope</a>, <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html">consultation du site web, du magasin et du magasin</a> codes.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21d8d1f26e44d48c84095c539e68b34066854fda">21d8d1</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 5 octobre 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Publié <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">notes de mise à jour</a> pour la version 1.1.39 du package de l’outil de correctifs de qualité (QPT).</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6df49bc9d097bf883936b66176022251f9bf3b38">6df49b</a> (commit)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 14 septembre 2023
 
@@ -67,150 +131,6 @@ Découvrez la nouvelle documentation et les mises à jour importantes de la docu
 </td>
       <td>major-update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3290e58436259a7af81ed81b691a3ad032c812a5">3290e5</a> (commit)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 28 août 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout des nouvelles rubriques suivantes :<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/catalog-image-resizing.html">Bonnes pratiques relatives au redimensionnement des images du catalogue</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/code-management.html">Bonnes pratiques relatives à la gestion du code</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/code-review.html">Bonnes pratiques relatives à l’examen du code</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/debugging.html">Bonnes pratiques relatives au débogage</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/exception-handling.html">Bonnes pratiques relatives à la gestion des exceptions</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/general.html">Bonnes pratiques générales de développement</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/git-branching.html">Bonnes pratiques relatives à l'embranchement Git</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/examples.html">Exemples d’architecture de référence globale (GRA)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/composer/overview.html">Développement de compositeur pour GRA</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/composer/project-structure.html">Structure de projet du compositeur pour GRA</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/composer/tips-and-tricks.html">Conseils et astuces du compositeur pour GRA</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd708ce4c1ab69f2d6e3a3b10dcd2387ae829368">fd708c</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 25 août 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout d’une <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/backend-performance.html">nouvelle rubrique</a> à propos de l’optimisation des performances principales des sites Adobe Commerce.</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ecbb71ad8745e4589856c6cbf283212ed61a3664">ecbb71</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 23 août 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout d’une <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale.html">nouvelle rubrique</a> à propos de la mise en oeuvre d’une stratégie de correction centralisée pour les projets Adobe Commerce.</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/03cb50be0cb18b6079c5c69aafc74c6099610fb0">03cb50</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 10 août 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Publié <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">notes de mise à jour</a> pour la version 1.1.36 du package de l’outil de correctifs de qualité (QPT).</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/778890d5840669df958e84381c2aade70a492454">778890</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 8 août 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Mis à jour <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">versions publiées</a> avec les correctifs de sécurité d’août 2023.</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c9abed3c6ca156cdc19e7231f97cf2a8bd8ab100">c9abed</a> (commit)</td>
-    </tr>
-    <tr>
-      <td><p>Ajout d’informations sur le correctif de sécurité d’Adobe Commerce du 8 août 2023 aux notes de mise à jour d’ Adobe Commerce 2.4.4-p4, 2.4.4-p5, 2.4.5-p3, 2.4.5-p4, 2.4.6-p1 et 2.4.6-p2.  Voir <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Notes de mise à jour pour Adobe Commerce et Magento Open Source</a>.</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/623ada901bad9f766451d9c9166e82f1cee85c0d">623ada</a> (commit)</td>
-    </tr>
-    <tr>
-      <td><p>Ajout de notes de mise à jour pour Adobe Commerce 2.4.6-p2, 2.4.5-p4 et 2.4.4-p5. Voir <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Notes de mise à jour pour Adobe Commerce et Magento Open Source</a>.</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ed1308771a799bcbaf71a8f82542c45d37f9c141">ed1308</a> (commit)</td>
-    </tr>
-    <tr>
-      <td><p>Ajout de dates 2024 à la variable <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html">calendrier de publication</a> et <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html">politique de cycle de vie du logiciel</a>.</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/19fbba535c047a8d877428afc071540d3fa12390">19fbba</a> (commit)</td>
-    </tr>
-    <tr>
-      <td><p>Ajout des correctifs de sécurité d’août 2023 (2.4.6-p2, 2.4.5-p4 et 2.4.4-p5) au <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">configuration requise</a> table</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7373980a0648be5e0f7dc4a307074d934f646b24">737398</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 7 août 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout d’informations sur <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/security.html">détection des points d’entrée et réponse</a> sur l’infrastructure cloud.</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd3b93aaa79e84d356217b6adfe7181895e84f07">fd3b93</a> (commit)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->

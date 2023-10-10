@@ -2,9 +2,9 @@
 title: Définition des valeurs de configuration
 description: Découvrez comment définir des valeurs de configuration et modifier des valeurs verrouillées dans Admin.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 78a7e99ecaba6a6f7982123f5bd67efc740ec2ef
+source-git-commit: 473ab09f83a4cfc1809adff854d52a11ad49d3af
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
@@ -289,3 +289,8 @@ Résultat :
 ```terminal
 web/unsecure/base_url - http://example-for-store.com/
 ```
+
+>[!INFO]
+>
+>Le code de portée peut inclure uniquement des lettres (a-z ou A-Z), des chiffres (0-9) et des traits de soulignement (_). En outre, le premier caractère doit être une lettre. Si des majuscules ou des majuscules sont utilisées lors de la création d’un site web ou d’une vue de magasin, la correspondance n’est pas sensible à la casse en interne afin de permettre le remplacement des paramètres de configuration par le biais de variables d’environnement. Voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).
+

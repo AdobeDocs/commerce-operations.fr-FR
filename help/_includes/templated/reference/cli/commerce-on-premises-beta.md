@@ -1,7 +1,7 @@
 ---
-source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
+source-git-commit: d720b64f315d1e4b6fb7868d911eb3af089e3fa4
 workflow-type: tm+mt
-source-wordcount: '19899'
+source-wordcount: '20131'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Version**: 2.4.7-beta1
+**Version**: 2.4.7-beta2
 
-Cette référence contient 132 commandes disponibles via le `bin/magento` outil de ligne de commande.
+Cette référence contient 134 commandes disponibles via le `bin/magento` outil de ligne de commande.
 La liste initiale est générée automatiquement à l’aide de la fonction `bin/magento list` dans Adobe Commerce.
 Utilisez la variable [&quot;Ajout de commandes d’interface de ligne de commande&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) pour ajouter une commande d’interface de ligne de commande personnalisée.
 
@@ -3756,6 +3756,120 @@ Ne posez aucune question interactive
 - N’accepte pas de valeur
 
 
+## `events:provider:info`
+
+Renvoie des détails sur le fournisseur d’événements configuré
+
+```bash
+bin/magento events:provider:info
+```
+
+### `--help`, `-h`
+
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage pour le \&lt;info>list\&lt;/info> command
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--quiet`, `-q`
+
+Ne sortez aucun message
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--version`, `-V`
+
+Afficher cette version de l’application
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--ansi`
+
+Forcer (ou désactiver —no-ansi) la sortie ANSI
+
+- N’accepte pas de valeur
+
+### `--no-ansi`
+
+Négociez l’option &quot;—ansi&quot;
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--no-interaction`, `-n`
+
+Ne posez aucune question interactive
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+
+## `events:registrations:list`
+
+Répertorie les enregistrements d’événement dans votre projet App Builder
+
+```bash
+bin/magento events:registrations:list
+```
+
+### `--help`, `-h`
+
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, l’aide d’affichage pour le \&lt;info>list\&lt;/info> command
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--quiet`, `-q`
+
+Ne sortez aucun message
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--version`, `-V`
+
+Afficher cette version de l’application
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--ansi`
+
+Forcer (ou désactiver —no-ansi) la sortie ANSI
+
+- N’accepte pas de valeur
+
+### `--no-ansi`
+
+Négociez l’option &quot;—ansi&quot;
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+### `--no-interaction`, `-n`
+
+Ne posez aucune question interactive
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
+
+
 ## `events:subscribe`
 
 Abonne à l&#39;événement
@@ -7221,7 +7335,7 @@ Ne posez aucune question interactive
 Exécution du serveur d’applications
 
 ```bash
-bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]]
+bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]] [-mwt|--maxWaitTime [MAXWAITTIME]]
 ```
 
 ### `--port`, `-p`
@@ -7250,6 +7364,13 @@ zone du serveur d’applications
 magento bootstrap init params
 
 - Par défaut : &quot;
+- Accepte une valeur
+
+### `--maxWaitTime`, `-mwt`
+
+durée d’attente des programmes de travail après rechargement (par exemple, (changement de configuration) avant de les supprimer
+
+- Valeur par défaut : `3600`
 - Accepte une valeur
 
 ### `--help`, `-h`
@@ -9417,7 +9538,7 @@ Nom de l’administrateur
 
 ### `--search-engine`
 
-Moteur de recherche. Valeurs : élasticsearch5, élasticsearch7, élasticsearch8, opensearch
+Moteur de recherche. Valeurs : élasticsearch7, élasticsearch8, opensearch
 
 - Requiert une valeur
 

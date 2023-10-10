@@ -3,9 +3,9 @@ title: Configuration du vernis pour Commerce
 description: Découvrez comment mettre à jour et gérer votre fichier de configuration de vernis pour l’application Commerce.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,8 @@ Pour configurer Commerce de manière à utiliser le vernis :
    | Liste d’accès | Saisissez le nom d’hôte qualifié complet, l’adresse IP ou [Routage interdomaines sans classe (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) plage d’adresses IP de notation pour laquelle invalider le contenu. Voir [Purge du cache en vernis](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
    | Hôte principal | Saisissez le nom d’hôte complet ou l’adresse IP et le port d’écoute du vernis. _backend_ ou _serveur d’origine_, c’est-à-dire que le serveur fournissant le contenu vernis accélère. En règle générale, il s’agit de votre serveur web. Voir [Serveur principal de cache de marque](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Port principal | Port d’écoute du serveur d’origine. |
-   | Période de grâce | La période de grâce détermine la durée pendant laquelle Varnish diffuse du contenu obsolète si le serveur principal n’est pas réactif. La valeur par défaut est de 300 secondes. |
+   | Période de grâce | Détermine la durée pendant laquelle Varnish diffuse du contenu obsolète si le serveur principal n’est pas réactif. La valeur par défaut est de 300 secondes. |
+   | Gestion de la taille des paramètres  [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponible dans la version 2.4.7-bêta uniquement"} | Indique le nombre maximal de [poignées de mise en page](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) pour traiter sur le [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) Point de terminaison HTTP pour la mise en cache de la page entière. La limitation de la taille peut améliorer la sécurité et les performances. La valeur par défaut est 100. |
 
 1. Cliquez sur **Enregistrer la configuration**.
 
