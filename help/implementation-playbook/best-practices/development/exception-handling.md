@@ -3,13 +3,13 @@ title: Bonnes pratiques relatives à la gestion des exceptions
 description: Découvrez les méthodes recommandées pour consigner les exceptions lors du développement de projets Adobe Commerce.
 feature: Best Practices
 role: Developer
-source-git-commit: 94d37b6a95cae93f465daf8eb96363a198833e27
+exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
+source-git-commit: 4bf8dd5c5320cc9a34cfaa552ec5e91d517d3617
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques relatives à la gestion des exceptions
 
@@ -88,7 +88,7 @@ Les exemples suivants montrent une gestion incorrecte des exceptions.
 
 ### ![incorrect](../../../assets/no.svg) Logique avant connexion
 
-La logique avant la journalisation peut entraîner une autre exception ou une erreur fatale, ce qui empêche l’enregistrement de l’exception et doit être remplacé par [exemple correct](#correct-logging-always-comes-first).
+La logique avant la journalisation peut entraîner une autre exception ou une erreur fatale, ce qui empêche l’enregistrement de l’exception et doit être remplacé par [exemple correct](#logging-always-comes-first).
 
 ```php
 try {
@@ -101,7 +101,7 @@ try {
 
 ### ![incorrect](../../../assets/no.svg) Vide `catch`
 
-Vide `catch` Les blocs peuvent être un signe d’arrêt involontaire et doivent être remplacés par le [exemple correct](#correct-mute-signals).
+Vide `catch` Les blocs peuvent être un signe d’arrêt involontaire et doivent être remplacés par le [exemple correct](#mute-signals).
 
 ```php
 try {
@@ -137,11 +137,11 @@ try {
 
 Cette approche introduit des sauts de ligne dans le message, qui n’est pas conforme au PSR-3. L’exception, y compris la trace de la pile, doit faire partie du contexte du message pour s’assurer qu’il est enregistré correctement avec le message dans New Relic ou dans un autre stockage de journal compatible avec le format PSR-3.
 
-Résolvez ce problème en remplaçant le code par les exemples corrects présentés dans la section [Écrire dans le journal des exceptions](#correct-write-to-the-exception-log) ou [Rétrogradation des exceptions](#correct-downgrade-exceptions).
+Résolvez ce problème en remplaçant le code par les exemples corrects présentés dans la section [Écrire dans le journal des exceptions](#write-to-the-exception-log) ou [Rétrogradation des exceptions](#downgrade-exceptions).
 
 ### ![incorrect](../../../assets/no.svg) Rétrogradation des exceptions sans contexte
 
-L’exception est dégradée en erreur, ce qui ne permet pas de transmettre un objet, mais uniquement une chaîne. Par conséquent, la variable `getMessage()`. Cela entraîne la perte de la trace et doit être remplacé par les exemples corrects présentés dans la section [Écrire dans le journal des exceptions](#correct-write-to-the-exception-log) ou [Rétrogradation des exceptions](#correct-downgrade-exceptions).
+L’exception est dégradée en erreur, ce qui ne permet pas de transmettre un objet, mais uniquement une chaîne. Par conséquent, la variable `getMessage()`. Cela entraîne la perte de la trace et doit être remplacé par les exemples corrects présentés dans la section [Écrire dans le journal des exceptions](#write-to-the-exception-log) ou [Rétrogradation des exceptions](#downgrade-exceptions).
 
 ```php
 try {
@@ -153,7 +153,7 @@ try {
 
 ### ![incorrect](../../../assets/no.svg) Consigne uniquement le message dans le journal des exceptions
 
-Au lieu de transmettre l’objet `$e`, uniquement `$e->getMessage()` est transmis. Cela entraîne la perte de la trace et doit être remplacé par les exemples corrects présentés. [Écrire dans le journal des exceptions](#correct-write-to-the-exception-log) ou [Rétrogradation des exceptions](#correct-downgrade-exceptions).
+Au lieu de transmettre l’objet `$e`, uniquement `$e->getMessage()` est transmis. Cela entraîne la perte de la trace et doit être remplacé par les exemples corrects présentés. [Écrire dans le journal des exceptions](#write-to-the-exception-log) ou [Rétrogradation des exceptions](#downgrade-exceptions).
 
 ```php
 try {
@@ -165,7 +165,7 @@ try {
 
 ### ![incorrect](../../../assets/no.svg) Absente `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`
 
-Ignorer la variable `phpcs:ignore` déclenche un avertissement dans le PHPCS et ne doit pas transmettre votre CI. Il doit être remplacé par l’exemple correct illustré dans [Signaux muets](#correct-mute-signals).
+Ignorer la variable `phpcs:ignore` déclenche un avertissement dans le PHPCS et ne doit pas transmettre votre CI. Il doit être remplacé par l’exemple correct illustré dans [Signaux muets](#mute-signals).
 
 ```php
 try {
