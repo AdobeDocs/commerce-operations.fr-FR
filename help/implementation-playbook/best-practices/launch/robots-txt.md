@@ -1,19 +1,20 @@
 ---
-title: Bonnes pratiques relatives à la configuration des fichiers `robots.txt` et `sitemap.xml`
-description: Découvrez comment transmettre des instructions sur votre site Adobe Commerce aux moteurs de recherche web.
+title: Bonnes pratiques relatives à la configuration des moteurs de recherche Web
+description: Découvrez comment transmettre des instructions sur votre site Adobe Commerce aux développeurs Web à l’aide de fichiers `robots.txt` et `sitemap.xml`.
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
 
-# Bonnes pratiques relatives à la configuration `robots.txt` et `sitemap.xml` files
 
-Cet article présente les bonnes pratiques relatives à l’utilisation de `robots.txt` et `sitemap.xml` dans Adobe Commerce, y compris la configuration et la sécurité. Ces fichiers indiquent aux robots web (généralement aux robots de moteur de recherche) comment analyser les pages d’un site web. La configuration de ces fichiers peut améliorer les performances du site et l’optimisation du moteur de recherche.
+# Bonnes pratiques relatives à la configuration des moteurs de recherche Web
+
+Cet article présente les bonnes pratiques relatives à l’utilisation de `robots.txt` et `sitemap.xml` dans Adobe Commerce, y compris la configuration et la sécurité. Ces fichiers enseignent aux robots de moteur de recherche (généralement les robots de recherche) comment analyser les pages d’un site web. La configuration de ces fichiers peut améliorer les performances du site et l’optimisation du moteur de recherche.
 
 >[!NOTE]
 >
