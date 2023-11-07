@@ -1,20 +1,20 @@
 ---
-title: En-tête X-Frame-Options
-description: Utilisez X-Frame-Options pour contrôler les rendus de page.
+title: Prévention des explosions de détournement de clic
+description: Empêchez les exploits de détournement de clic à l’aide de l’en-tête "X-Frame-Options" pour contrôler les rendus de page.
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 6cc04211fedddab68087bcf2f3603ae0403862b9
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# En-tête X-Frame-Options
+# Prévention des explosions de détournement de clic
 
-Pour éviter [détournement de clic](https://owasp.org/www-community/attacks/Clickjacking) exploits, nous avons ajouté une option pour utiliser la variable [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) En-tête de requête HTTP dans les requêtes à votre storefront.
+Empêcher [détournement de clic](https://owasp.org/www-community/attacks/Clickjacking) exploite en incluant la variable [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) En-tête de requête HTTP dans les requêtes à votre storefront.
 
-La variable `X-Frame-Options` L’en-tête vous permet de spécifier si un navigateur doit être autorisé à effectuer le rendu d’une page dans une `<frame>`, `<iframe>`, ou `<object>` comme suit :
+La variable `X-Frame-Options` L’en-tête vous permet de spécifier si un navigateur est autorisé à afficher une page dans un `<frame>`, `<iframe>`, ou `<object>` comme suit :
 
 - `DENY`: la page ne peut pas être affichée dans un cadre.
 - `SAMEORIGIN`: (par défaut) la page ne peut être affichée que dans un cadre de la même origine que la page elle-même.

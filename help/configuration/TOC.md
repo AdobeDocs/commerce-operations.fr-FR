@@ -2,9 +2,9 @@
 user-guide-title: Guide de configuration
 user-guide-description: Configurez les fonctionnalités et services de votre application Adobe Commerce ou Magento Open Source.
 feature: Configuration
-source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
+source-git-commit: b61a2726e1a26229515d28332bbd88ba3d416a98
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Guide de configuration {#configuration-guide}
 
-+ [Présentation](overview.md)
++ [Vue d’ensemble](overview.md)
 + Configuration générale {#setup}
    + [Initialisation de l’application et amorçage](bootstrap/initialization.md)
    + [Modes d’application](bootstrap/application-modes.md)
@@ -126,7 +126,7 @@ ht-degree: 0%
    + [Empoisonnement du cache](security/cache-poisoning.md)
    + [Secure cron PHP](security/secure-cron-php.md)
    + [TXT de sécurité](security/security-txt.md)
-   + [En-tête X-Frame-Options](security/xframe-options.md)
+   + [Ajout d’explosions à la fenêtre](security/xframe-options.md)
 + Stockage {#storage}
    + [profileur de base de données](storage/db-profiler.md)
    + Stockage distant {#remote-storage}

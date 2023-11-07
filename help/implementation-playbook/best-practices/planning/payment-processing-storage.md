@@ -4,9 +4,9 @@ description: Découvrez comment traiter et stocker en toute sécurité les infor
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 1887d7b285008fc98579955274bbc4affb766d0c
+source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ L&#39;un des principes clés du maintien de la paix [Conformité PCI](https://ex
 
 Le stockage des données des titulaires de carte dans Adobe Commerce est **strictement interdit** et cela pourrait être une violation de vos obligations en tant que commerçant en vertu de la norme de sécurité des données du secteur des cartes de paiement (PCI-DSS). Vous trouverez plus d’informations sur le modèle de responsabilité partagée et les directives relatives aux obligations du marchand dans la section [Guide du modèle de responsabilité partagée Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) sur le Centre de gestion de l’Adobe.
 
-Suivez les bonnes pratiques ci-dessous pour vous assurer que vous traitez correctement les informations de paiement sur votre site eCommerce. Vous trouverez des conseils supplémentaires sur les bonnes pratiques générales de sécurité dans notre [guide des bonnes pratiques de sécurité pour Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) sur le Centre de gestion de l’Adobe
+Suivez les bonnes pratiques ci-dessous pour vous assurer que vous traitez correctement les informations de paiement sur votre site eCommerce. Pour plus d’informations sur les bonnes pratiques en matière de sécurité, voir [Sécurisez votre site et votre infrastructure](../launch/security-best-practices.md).
 
 ## Produits et versions concernés
 

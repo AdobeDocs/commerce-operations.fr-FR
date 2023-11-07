@@ -3,9 +3,9 @@ title: Phase de lancement de la mise en oeuvre
 description: Découvrez les bonnes pratiques de mise en oeuvre pour la phase de lancement des projets Adobe Commerce.
 exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
 feature: Best Practices
-source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
+source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '173'
 ht-degree: 1%
 
 ---
@@ -25,11 +25,11 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
 ## Configuration de la sécurité
 
 | Bonne pratique | Description |
-|------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [&#x200B; du service de notification de sécurité Adobe](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Abonnez-vous aux notifications de sécurité Adobe. |
-| [Prévention et intervention en cas d’incident de sécurité](prevent-respond-security-incident.md) | Évitez les incidents de sécurité pour votre Adobe Commerce et réagissez-y en cas de projets d’infrastructure cloud. |
+|------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Adobe Security Notification Service](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Abonnez-vous aux notifications de sécurité Adobe. |
+| [Sécurisez votre site et votre infrastructure Commerce](security-best-practices.md) | Renforcez la sécurité des installations Commerce afin de protéger le storefront, l’administration, l’infrastructure et les données de Commerce contre les accès non autorisés et les cyber-attaques. |
 | [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html) | Configurez Google reCAPTCHA pour l’accès administrateur et diverses actions de storefront initiées par les clients enregistrés. |
-| [Configuration des moteurs de recherche web](robots-txt.md) | Transmettez des instructions sur votre site Adobe Commerce aux moteurs de recherche Web à l’aide de `robots.txt` et `sitemap.xml` fichiers . |
+| [Configuration des moteurs de recherche web](robots-txt.md) | Transmettez des instructions sur votre site Adobe Commerce aux moteurs de recherche Web. |
 | [Vérification de la configuration de sécurité](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html) | Consultez les éléments de liste de contrôle avant de lancer Adobe Commerce sur le site d’infrastructure cloud. |
 
 ## Surveillance des performances

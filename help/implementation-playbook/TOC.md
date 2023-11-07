@@ -2,9 +2,9 @@
 user-guide-title: Manuel d’implémentation
 user-guide-description: Découvrez les stratégies de planification et d’implémentation d’un site Adobe Commerce performant.
 mini-toc-levels: 3
-source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
+source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '277'
 ht-degree: 11%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 11%
 
 # Manuel d’implémentation {#implementation-playbook}
 
-- [Présentation](overview.md)
+- [Vue d’ensemble](overview.md)
 - Commerce {#intro}
    - [À propos d’Adobe Commerce](intro/about-commerce.md)
    - [Principes de développement de plates-formes](intro/platform-development.md)
@@ -37,10 +37,10 @@ ht-degree: 11%
    - [Stratégie d&#39;extensibilité](architecture/extensibility-strategy.md)
    - [Options d’intégration](architecture/integration-options.md)
    - Architecture de référence globale {#global-reference-architecture}
-      - [Présentation](architecture/global-reference/overview.md)
+      - [Vue d’ensemble](architecture/global-reference/overview.md)
       - [Exemples](architecture/global-reference/examples.md)
       - Développement de compositeur {#composer}
-         - [Présentation](architecture/global-reference/composer/overview.md)
+         - [Vue d’ensemble](architecture/global-reference/composer/overview.md)
          - [Structure du projet](architecture/global-reference/composer/project-structure.md)
          - [Conseils et astuces](architecture/global-reference/composer/tips-and-tricks.md)
    - Commerce sans tête {#headless}
@@ -51,16 +51,16 @@ ht-degree: 11%
       - [Architecture du storefront combinée](architecture/headless/legacy-storefront.md)
       - [Architecture sans affichage](architecture/headless/adobe-commerce.md)
 - Infrastructure et déploiement {#infrastructure}
-   - [Présentation](infrastructure/overview.md)
+   - [Vue d’ensemble](infrastructure/overview.md)
    - Auto-hébergement {#self-hosting}
-      - [Présentation](infrastructure/self-hosting/overview.md)
+      - [Vue d’ensemble](infrastructure/self-hosting/overview.md)
       - [Infrastructure sur site](infrastructure/self-hosting/on-premises.md)
       - [Concepts de sécurité](infrastructure/self-hosting/security-concepts.md)
       - [Surveillance de la télémétrie et des outils](infrastructure/self-hosting/monitoring-tools.md)
       - [Idées de reprise sur sinistre](infrastructure/self-hosting/disaster-recovery-ideas.md)
       - [Conseils sur les performances](infrastructure/self-hosting/performance-tips.md)
    - infrastructure cloud {#cloud}
-      - [Présentation](infrastructure/cloud/overview.md)
+      - [Vue d’ensemble](infrastructure/cloud/overview.md)
       - [Régions](infrastructure/cloud/regions.md)
       - [Technologies](infrastructure/cloud/technology.md)
       - [Sécurité et conformité](infrastructure/cloud/security.md)
@@ -69,17 +69,17 @@ ht-degree: 11%
       - [Benchmarks](infrastructure/performance/benchmarks.md)
       - [Recommendations](infrastructure/performance/recommendations.md)
 - Préparation à Launch {#launch}
-   - [Présentation](launch/overview.md)
+   - [Vue d’ensemble](launch/overview.md)
    - [Étapes de prélancement](launch/pre-launch-steps.md)
    - [Étapes de lancement](launch/launch-steps.md)
    - [Étapes de post-lancement](launch/post-launch-steps.md)
 - Maintenance et assistance {#maintenance}
-   - [Présentation](maintenance/overview.md)
+   - [Vue d’ensemble](maintenance/overview.md)
    - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - Bonnes pratiques {#best-practices}
-   - [Présentation](best-practices/phases.md)
+   - [Vue d’ensemble](best-practices/phases.md)
    - Planification {#planning}
-      - [Présentation](best-practices/planning/overview.md)
+      - [Vue d’ensemble](best-practices/planning/overview.md)
       - [Gestion des catalogues](best-practices/planning/catalog-management.md)
       - [Configuration de la vue Sites, magasins et magasin](best-practices/planning/sites-stores-store-views.md)
       - [Configuration des rapports](best-practices/planning/reporting-configuration.md)
@@ -92,7 +92,7 @@ ht-degree: 11%
       - [Réaffectations de partenaire](best-practices/planning/partner-escalation.md)
       - [Traitement du stockage des paiements](best-practices/planning/payment-processing-storage.md)
    - Développement {#development}
-      - [Présentation](best-practices/development/overview.md)
+      - [Vue d’ensemble](best-practices/development/overview.md)
       - [Bonnes pratiques générales](best-practices/development/general.md)
       - [Gestion du code](best-practices/development/code-management.md)
       - [Révision du code](best-practices/development/code-review.md)
@@ -107,17 +107,18 @@ ht-degree: 11%
       - [Déploiement de contenu statique](best-practices/development/static-content-deployment.md)
       - [Modification des tables de base de données](best-practices/development/modifying-core-and-third-party-tables.md)
    - Launch {#launch}
-      - [Présentation](best-practices/launch/overview.md)
+      - [Vue d’ensemble](best-practices/launch/overview.md)
       - [Configuration des moteurs de recherche web](best-practices/launch/robots-txt.md)
-      - [Prévention et intervention en cas d’incident de sécurité](best-practices/launch/prevent-respond-security-incident.md)
+      - [Sécurisez votre site et votre infrastructure](best-practices/launch/security-best-practices.md)
    - Maintenance {#maintenance}
-      - [Présentation](best-practices/maintenance/overview.md)
+      - [Vue d’ensemble](best-practices/maintenance/overview.md)
       - [Performances du serveur frontal d’audit](best-practices/maintenance/frontend-performance.md)
       - [Optimisation des performances du serveur principal](best-practices/maintenance/backend-performance.md)
       - [Configuration de l’indexeur](best-practices/maintenance/indexer-configuration.md)
       - [Application de correctifs à l’échelle](best-practices/maintenance/patching-at-scale.md)
       - [Traitement des commandes](best-practices/maintenance/order-processing-configuration.md)
       - [Résolution des problèmes de performances de la base de données](best-practices/maintenance/resolve-database-performance-issues.md)
+      - [Réaction aux incidents de sécurité](best-practices/maintenance/respond-to-security-incident.md)
       - [Planification des mises à jour de l’administrateur sur les sites de production](best-practices/maintenance/scheduling-admin-updates-in-production.md)
       - [Mise à jour des services](best-practices/maintenance/update-services.md)
       - [Liste de contrôle de mise à niveau](best-practices/maintenance/upgrade-checklist.md)
