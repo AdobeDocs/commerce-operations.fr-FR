@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6e82738ab9b3ea106b7987fac2f6f4a026ddc4f0
+source-git-commit: b1c258b33898ec07a0d0d805843bea1b3e9de478
 workflow-type: tm+mt
-source-wordcount: '15145'
+source-wordcount: '15346'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,18 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour Magento Open Source, voir la section [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.41 {#v1-1-41}
+
+* **ACSD-54376** (pour Adobe Commerce >=2.4.2 &lt;2.4.7) - Correction du problème qui se produit dans le panier lorsqu’un produit est supprimé du catalogue partagé après avoir été ajouté au panier.
+* **ACSD-53722** (pour Adobe Commerce >=2.4.4 &lt;2.4.7) - Correction du problème en raison duquel le prix des options de produit groupées passe à 0 $ lorsque des mises à jour planifiées pour différentes portées sont actives.
+* **ACSD-53643** (pour Adobe Commerce >=2.4.3 &lt;2.4.7) - Correction du problème en raison duquel le total de la commande était incorrect lors du placement d’une commande avec des produits désactivés ou en rupture de stock. Ce problème est résolu en masquant le paramètre *[!UICONTROL Place Order]* pour ces commandes d’achat.
+* **ACSD-54067** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Correction du problème de lecture d’une vidéo de produit sur un appareil mobile.
+* **ACSD-55414** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Améliore les performances lorsque la MariaDB tente de convertir l’entity_id du fichier EAV de chaîne en entier.
+* **ACSD-51819** (pour Adobe Commerce >=2.4.4 &lt;2.4.4-p4) - Correction du problème en raison duquel plusieurs commandes peuvent être placées avec le même ID de guillemet.
+* **ACSD-53118** (pour Adobe Commerce >=2.4.0 &lt;2.4.7) - Correction du problème en raison duquel la variable *[!UICONTROL Cart Price Rule]* est appliqué à l’aide du code de bon alors que le produit a un attribut vide.
+* **ACSD-54324** (pour Adobe Commerce >=2.4.5 &lt;2.4.7) - Correction d’un problème en raison duquel la demande de liste de demande GraphQL ne prend pas en compte les paramètres de pagination et renvoie tous les résultats.
+* Correctifs mis à jour : MDVA-42855-v2
 
 ## v1.1.40 {#v1-1-40}
 
