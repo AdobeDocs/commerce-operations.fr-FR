@@ -4,9 +4,9 @@ description: Découvrez comment fusionner et minifier des fichiers CSS et JavaSc
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 409bd4795704b9daec7773459e5a1f9f42ef5128
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,8 @@ Il est possible de réduire le temps nécessaire au chargement des fichiers CSS 
 >[!IMPORTANT]
 >
 >Adobe Commerce sur l’infrastructure cloud s’exécute toujours en mode de production et il n’est pas possible de le définir autrement. Par conséquent, vous devez utiliser la méthode de ligne de commande pour activer la fusion, la minification et le regroupement.
+
+Ne fusionnez ou ne regroupez pas de fichiers si votre déploiement utilise HTTP2. HTTP2 télécharge les fichiers statiques de manière asynchrone. Les navigateurs doivent télécharger un fichier fusionné entier avant de traiter le contenu du fichier.
 
 ### Utilisation de l’administrateur
 
