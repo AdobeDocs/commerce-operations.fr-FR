@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8b82081057af7d134528988d3f9f7cf53f4d7525
+source-git-commit: 2727ddb18995ac2163276a0aa8573161add48971
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 5%
+source-wordcount: '760'
+ht-degree: 3%
 
 ---
 # Documentation technique d’Adobe Commerce
@@ -54,25 +54,75 @@ Tous les articles de ce référentiel utilisent GitHub Flavored Markdown. Si vou
 
 ## Modèles
 
-La variable `_jekyll` contient des rubriques sous forme de modèles et les ressources requises.
-Les modèles qui utilisent le langage de modèle Liquid résident dans la variable `_jekyll/templated` sous la forme de fichiers HTML.
-La variable `_jekyll/_data` contient des fichiers contenant les données utilisées pour le rendu des modèles.
+Pour certaines rubriques, nous utilisons des fichiers de données et des modèles pour générer du contenu publié. Voici quelques cas d’utilisation de cette approche :
 
-Pour effectuer le rendu de tous les modèles :
+* Publier de grands ensembles de contenu généré par programmation
+* Fournir une source unique de vérité pour les clients sur plusieurs systèmes qui nécessitent des formats de fichiers lisibles par ordinateur, tels que YAML, pour l’intégration (par exemple, l’outil d’analyse à l’échelle du site)
+
+Voici quelques exemples de contenu modélisé :
+
+* [Référence des outils de ligne de commande](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
+* [Tables de disponibilité des produits](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+* [Tables des exigences système](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+
+### Générer du contenu modèle
+
+En règle générale, la plupart des auteurs n’ont besoin que d’ajouter une version à la disponibilité du produit et aux tableaux de configuration système requise. La maintenance de tout autre contenu modèle est automatisée ou gérée par un membre dédié de l’équipe. Ces instructions sont destinées à &quot;la plupart&quot; des auteurs.
+
+>**REMARQUE :**
+>
+>* La génération de contenu modèle nécessite de travailler sur la ligne de commande d’un terminal.
+>* Ruby doit être installé pour exécuter le script de rendu. Voir [_jekyll/.ruby-version](_jekyll/.ruby-version) pour la version requise.
+
+Pour obtenir une description de la structure de fichiers pour le contenu modèle, reportez-vous aux sections suivantes :
+
+* `_jekyll`: contient des rubriques sous forme de modèles et les ressources requises.
+* `_jekyll/_data`: contient les formats de fichiers lisibles par l’ordinateur utilisés pour le rendu des modèles.
+* `_jekyll/templated`: contient des fichiers de modèle basés sur des HTMLS qui utilisent le langage de modèle Liquid.
+* `help/_includes/templated`: contient la sortie générée pour le contenu modèle dans `.md` format de fichier afin qu’il puisse être publié dans des rubriques Experience League ; le script de rendu écrit automatiquement la sortie générée dans ce répertoire pour vous.
+
+Pour mettre à jour le contenu du modèle :
+
+1. Dans votre éditeur de texte, ouvrez un fichier de données dans le `/jekyll/_data` répertoire . Par exemple :
+
+   * [Tables de disponibilité des produits](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
+   * [Tables des exigences système](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
+
+1. Utilisez la structure YAML existante pour créer des entrées.
+
+   Par exemple, pour ajouter une version d’Adobe Commerce aux tableaux de disponibilité du produit, ajoutez le code suivant à chaque entrée dans la variable `extensions` et `services` des sections `/jekyll/_data/product-availability.yml` (modifiez les numéros de version si nécessaire) :
+
+   ```
+   support:
+      - core: 1.2.3
+        version: 4.5.6
+   ```
 
 1. Accédez au `_jekyll` répertoire .
 
-   cd_jekyll
+   ```
+   cd _jekyll
+   ```
 
-1. Exécutez le script de rendu.
+1. Générez du contenu modèle et écrivez la sortie dans le `help/_includes/templated` répertoire .
 
-```
-_scripts/render
-```
+   ```
+   rake render
+   ```
 
-> **REMARQUE :** Vous devez exécuter le script à partir de la fonction `_jekyll` répertoire .
-> **REMARQUE :** Ruby doit être installé pour exécuter ce script.
+   >**REMARQUE :** Vous devez exécuter le script à partir de la fonction `_jekyll` répertoire . Si c’est la première fois que vous exécutez le script, vous devez d’abord installer les dépendances Ruby avec l’événement `bundle install` .
 
-Le script exécute le rendu et écrit les modèles rendus dans la variable `help/_includes/templated` répertoire .
+1. Vérifiez que la variable `help/_includes/templated` Les fichiers ont été modifiés.
+
+   ```
+   git status
+   ```
+
+   Vous devriez voir une sortie similaire à ce qui suit :
+
+   ```
+   modified:   _data/product-availability.yml
+   modified:   ../help/_includes/templated/product-availability-extensions.md
+   ```
 
 Pour plus d’informations sur la documentation Jekyll [Fichiers de données](https://jekyllrb.com/docs/datafiles), [Filtres liquides](https://jekyllrb.com/docs/liquid/filters/), ainsi que d’autres fonctionnalités.
