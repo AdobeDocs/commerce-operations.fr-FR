@@ -4,9 +4,9 @@ description: Découvrez comment utiliser des outils personnalisés pour accéder
 hide: true
 hidefromtoc: true
 exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-La variable [Bibliothèque JavaScript Adobe Privacy](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) est un ensemble d’outils permettant de créer un processus d’accès et de suppression de données privées.
+La variable [Bibliothèque JavaScript Adobe Privacy](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) est un ensemble d’outils permettant de créer un processus d’accès et de suppression de données privées.
 
 Adobe Commerce et les services de suivi des données Magento Open Source peuvent stocker des informations privées applicables aux réglementations de confidentialité, telles que la variable [Règlement général sur la protection des données (RGPD)](gdpr.md) et [California Consumer Privacy Act (CCPA)](ccpa.md).
 
@@ -43,7 +43,7 @@ La bibliothèque JS d’AdobePrivacy fournit différentes fonctions pour gérer 
 `retrieveThenRemoveIdentities()`
 : cette fonction est similaire à la fonction `removeIdentities()` en ce sens qu’il récupère un tableau d’identités et les supprime du navigateur.
 
-Pour plus d’informations et d’exemples sur l’utilisation de ces fonctions, voir la section [documentation officielle de la bibliothèque](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html).
+Pour plus d’informations et d’exemples sur l’utilisation de ces fonctions, voir la section [documentation officielle de la bibliothèque](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
 
 ### Initialisation
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 Le constructeur accepte un objet de configuration avec des paramètres lors de l’instanciation.
-Voir [documentation officielle de la bibliothèque](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) pour une liste de ces paramètres de configuration.
+Voir [documentation officielle de la bibliothèque](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) pour une liste de ces paramètres de configuration.
