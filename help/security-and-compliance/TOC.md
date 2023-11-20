@@ -1,10 +1,10 @@
 ---
 user-guide-title: Sécurité et conformité
-user-guide-description: Découvrez comment les marchands Adobe Commerce et Magento Open Sources sont chargés de maintenir un environnement sécurisé et de respecter les exigences légales et les bonnes pratiques pour les marchands en ligne dans leur juridiction.
+user-guide-description: Découvrez la conformité aux réglementations et les responsabilités du marché pour la maintenance d’un projet Adobe Commerce sécurisé.
 feature: Security
-source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
+source-git-commit: 28b94fe2fd4f976ad48fa9c59e7e1559db8ba35e
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '58'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,8 @@ ht-degree: 1%
 
 # Sécurité et conformité {#security-and-compliance}
 
-- [Présentation](overview.md)
+- [Vue d’ensemble](overview.md)
+- [Responsabilité partagée](shared-responsibility.md)
 - [Stratégie de sécurité du contenu](content-security-policy.md)
 - Règlements relatifs à la confidentialité {#privacy}
    - [CCPA](privacy/ccpa.md)
