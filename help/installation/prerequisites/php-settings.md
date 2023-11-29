@@ -3,9 +3,9 @@ title: paramètres PHP
 description: Suivez ces étapes pour installer les extensions PHP requises et configurer les paramètres PHP requis pour les installations sur site d’Adobe Commerce et de Magento Open Source.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: aacc4332cecec0cb9b0f5c23d60b7abd1c63feea
+source-git-commit: 9fe0a27346554bca3cb635b2e7ecf175adcec54a
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '812'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ Cette rubrique explique comment définir les options PHP requises.
 >[!NOTE]
 >
 >La dernière version d’Adobe Commerce et de Magento Open Source requiert au minimum PHP 8.1. Voir [configuration requise](../system-requirements.md) pour toutes les versions prises en charge de PHP.
+
+Pour obtenir des conseils sur la configuration du cloud, voir [paramètres PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) dans le _Commerce sur l’infrastructure cloud_ guide.
 
 ## Vérifier que PHP est installé
 

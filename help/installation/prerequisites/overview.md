@@ -2,9 +2,9 @@
 title: Conditions préalables à l’installation sur site
 description: En savoir plus sur les dépendances logicielles requises pour les installations sur site d’Adobe Commerce et de Magento Open Source.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 9fe0a27346554bca3cb635b2e7ecf175adcec54a
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
@@ -66,9 +66,11 @@ Pour installer ou mettre à niveau Apache, voir [Apache](web-server/apache.md).
 
 ### PHP
 
-Voir [configuration requise](../system-requirements.md) pour les versions prises en charge de PHP et [PHP] pour les exigences de PHP.
+Voir [configuration requise](../system-requirements.md) pour les versions prises en charge de PHP et [PHP](../system-requirements.md#php-settings) pour les exigences de PHP.
 
 ### MySQL
+
+Vérifiez que vous disposez d’une version compatible de MySQL pour la version d’Adobe Commerce ou du Magento Open Source que vous installez. Voir [Configuration requise](../system-requirements.md) pour les versions prises en charge
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -80,7 +82,7 @@ Par exemple :
 mysql -u magento -p
 ```
 
-Vérifiez que vous disposez de la version correcte de MySQL pour la version d’Adobe Commerce ou du Magento Open Source que vous installez ([rechercher ici les versions prises en charge](../system-requirements.md). Le résultat suivant indique la version que vous exécutez.)
+Le résultat suivant indique la version que vous exécutez.
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
