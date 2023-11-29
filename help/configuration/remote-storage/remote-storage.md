@@ -3,9 +3,9 @@ title: Configuration du stockage distant
 description: Découvrez comment configurer le module de stockage distant pour l’application Commerce sur site.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Après avoir activé le stockage à distance pour un adaptateur spécifique, vou
 
 >[!INFO]
 >
->La commande sync migre uniquement les fichiers dans la variable `pub/media` répertoire, _not_ les fichiers d’importation/exportation dans la variable `var` répertoire . Voir [Importation/exportation planifiée][import-export] dans le _Guide de l’utilisateur de Commerce 2.4_.
+>La commande sync migre uniquement les fichiers dans la variable `pub/media` répertoire, _not_ les fichiers d’importation/exportation dans la variable `var` répertoire . Voir [Importation/exportation planifiée](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) dans le _Guide de l’utilisateur de Commerce 2.4_.
 
 <!-- link definitions -->
 

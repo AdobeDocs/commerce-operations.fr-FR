@@ -2,9 +2,9 @@
 title: Modifier l’ID d’incrément
 description: Modifiez l’ID d’incrément d’une entité de base de données Commerce.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Vous devrez peut-être modifier l’ID d’incrément pour les nouvelles entité
 
 >[!INFO]
 >
->Vous pouvez également résoudre le problème de passerelle de paiement pour PayPal en autorisant plusieurs paiements par identifiant de facture dans les préférences de réception des paiements de PayPal. Voir [Demande de rejet de la passerelle PayPal - problème de facture en double] dans le _Base de connaissances_.
+>Vous pouvez également résoudre le problème de passerelle de paiement pour PayPal en autorisant plusieurs paiements par identifiant de facture dans les préférences de réception des paiements de PayPal. Voir [Demande de rejet de la passerelle PayPal - problème de facture en double](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) dans le _Base de connaissances_.
 
 ## Étapes préalables
 
@@ -55,7 +55,7 @@ ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_va
 
 >[!INFO]
 >
-Important : La nouvelle valeur d’incrément doit être supérieure à la valeur actuelle.
+>Important : La nouvelle valeur d’incrément doit être supérieure à la valeur actuelle.
 
 Après avoir exécuté la requête suivante :
 
@@ -74,6 +74,6 @@ Avant d’exécuter la fonction `ALTER TABLE` sur un environnement de production
 
 <!-- Link Definitions -->
 
-[Demande de rejet de la passerelle PayPal - problème de facture en double]: https://support.magento.com/hc/en-us/articles/115002457473
+[PayPal gateway rejected request - duplicate invoice issue]: https://support.magento.com/hc/en-us/articles/115002457473
 [Création d’une sauvegarde de base de données]: https://support.magento.com/hc/en-us/articles/360003254334
 [toute version prise en charge]
