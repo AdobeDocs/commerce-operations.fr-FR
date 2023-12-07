@@ -3,9 +3,9 @@ title: Cache de contenu statique
 description: Apprenez à signer du contenu statique et à activer ou désactiver cette fonctionnalité.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: d099d60bcf3c960b2e40b48c386041d8865cfb50
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,10 @@ Cela modifie l’URL des fichiers statiques et force le navigateur à charger la
 
 Commerce active cette fonctionnalité par défaut et Adobe recommande de la conserver afin d’éviter les problèmes liés aux navigateurs qui diffusent d’anciennes ressources statiques.
 
-Vous trouverez la configuration de cette fonction dans [**[!UICONTROL Stores]**> Paramètres > Configuration >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+La configuration de la signature de contenu statique se trouve dans [**[!UICONTROL Stores]**> Paramètres > Configuration >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+
+- **Sur site uniquement**: cette configuration est disponible si votre site est **not** in [Mode de production](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode).
+- **Cloud**: cette configuration est masquée car le mode Production est strictement appliqué. Vous devez donc utiliser la ligne de commande comme illustré ci-dessous.
 
 ![Paramètres des fichiers statiques](../../assets/configuration/static-files-settings.png)
 
