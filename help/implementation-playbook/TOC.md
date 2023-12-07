@@ -2,7 +2,7 @@
 user-guide-title: Manuel d’implémentation
 user-guide-description: Découvrez les stratégies de planification et d’implémentation d’un site Adobe Commerce performant.
 mini-toc-levels: 3
-source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
+source-git-commit: a547653046fd1926c7fd587df19cb2209e263114
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 11%
@@ -106,6 +106,7 @@ ht-degree: 11%
       - [Blocs de contenu privé](best-practices/development/private-content-block-configuration.md)
       - [Déploiement de contenu statique](best-practices/development/static-content-deployment.md)
       - [Modification des tables de base de données](best-practices/development/modifying-core-and-third-party-tables.md)
+      - [Modification du code principal et du code tiers](best-practices/development/modifying-core-and-third-party-code.md)
    - Launch {#launch}
       - [Vue d’ensemble](best-practices/launch/overview.md)
       - [Configuration des moteurs de recherche web](best-practices/launch/robots-txt.md)

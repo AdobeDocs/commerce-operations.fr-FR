@@ -4,9 +4,9 @@ description: Découvrez les bonnes pratiques de mise en oeuvre pour la phase de 
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+source-git-commit: ce386611834c4199e34b5d95ce76254957821f46
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '349'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques pou
 ## Optimisation des fichiers
 
 | Bonne pratique | Description |
-|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [Redimensionnement des images du catalogue](catalog-image-resizing.md) | Fournit des conseils sur le redimensionnement des images avant que le magasin ne passe en production pour garantir des performances optimales |
 | [CSS et JS](optimize-css-js-files.md) | Fusion et minimisation de fichiers CSS (feuilles de style en cascade) et JavaScript (JS) depuis l’administrateur ou la ligne de commande |
 | [Images](image-optimization.md) | Optimisation des images et utilisation rapide pour optimiser le temps de réponse |
@@ -62,10 +62,11 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques pou
 ## développement PHP
 
 | Bonne pratique | Description |
-|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+|-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Gestion des exceptions](exception-handling.md) | Décrit les méthodes recommandées de journalisation des exceptions |
 | [Extensions](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Décrit les modèles de développement pour garantir la compatibilité entre votre extension, les versions futures d’Adobe Commerce et d’autres extensions personnalisées. |
 | [Blocs de contenu privé](private-content-block-configuration.md) | Configuration de blocs de contenu privés pour optimiser les performances du storefront |
+| [Modification du code PHP principal et tiers](modifying-core-and-third-party-code.md) | Modifiez la fonctionnalité, le résultat ou la saisie de tout code que vous n’avez pas créé ou dont vous n’avez pas directement le contrôle. |
 
 ## Plateforme et services
 
