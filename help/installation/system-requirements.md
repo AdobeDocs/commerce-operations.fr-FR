@@ -2,9 +2,9 @@
 title: Configuration requise
 description: Utilisez cette référence pour identifier les dépendances logicielles requises qui ont été testées avec Adobe Commerce et les versions Magento Open Source.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: ad715d1581442fa447e394d88d496ec52519a1c3
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,10 @@ Il est recommandé de vérifier que la variable [OPcache PHP](https://www.php.ne
 Pour les messages on-premise, vérifiez que PHP OPcache est installé, voir [paramètres PHP](prerequisites/php-settings.md). Ou pour obtenir des conseils spécifiques sur les paramètres de performances, consultez les recommandations logicielles pour [paramètres PHP](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) dans le _Bonnes pratiques en matière de performances_ guide.
 
 Si vous devez installer OPcache séparément, voir la section [Documentation du fichier OPcache PHP](https://www.php.net/manual/en/opcache.setup.php).
+
+### Contrôle de processus PHP
+
+{{php-process-control}}
 
 ### PHPUnit
 

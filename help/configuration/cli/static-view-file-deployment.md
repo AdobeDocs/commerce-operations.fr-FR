@@ -2,9 +2,9 @@
 title: Déploiement de fichiers d’affichage statique
 description: Découvrez comment écrire des fichiers statiques dans le système de fichiers Commerce en mode de production.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 0a72bc492dfec0a9014a518282a97ab21e59f96d
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1124'
 ht-degree: 0%
 
 ---
@@ -54,13 +54,13 @@ Le tableau suivant explique les paramètres et les valeurs de cette commande.
 | Option | Description | Obligatoire ? |
 | ------ | ----------- | --------- |
 | `<languages>` | Liste séparée par des espaces de [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) codes de langue pour lesquels générer des fichiers d’affichage statique. (Par défaut : `en_US`.)<br>Recherchez la liste en exécutant : `bin/magento info:language:list` | Non |
-| `--language (-l)` | Générez des fichiers uniquement pour les langues spécifiées. La valeur par défaut, sans option spécifiée, est de générer des fichiers pour tous les codes de langue ISO-639. Vous pouvez spécifier le nom d’un code de langue à la fois. La valeur par défaut est **all**.<br>Par exemple: `--language en_US --language es_ES` | Non |
+| `--language (-l)` | Générez des fichiers uniquement pour les langues spécifiées. La valeur par défaut, sans option spécifiée, est de générer des fichiers pour tous les codes de langue ISO-639. Vous pouvez spécifier le nom d’un code de langue à la fois. La valeur par défaut est **all**.<br>Par exemple : `--language en_US --language es_ES` | Non |
 | `--exclude-language` | Générez des fichiers pour les codes de langue spécifiés. La valeur par défaut, sans option spécifiée, est de n’exclure rien. Vous pouvez spécifier le nom d’un code de langue ou d’une liste de codes de langue séparés par des virgules. La valeur par défaut est **none**. | Non |
-| `--theme <theme>` | Thèmes pour lesquels déployer du contenu statique. La valeur par défaut est **all**.<br>Par exemple: `--theme Magento/blank --theme Magento/luma` | Non |
-| `--exclude-theme <theme>` | Thèmes à exclure lors du déploiement de contenu statique. La valeur par défaut est **none**.<br>Par exemple, `--exclude-theme Magento/blank` | Non |
-| `--area (-a)` | Générez des fichiers uniquement pour les zones spécifiées. La valeur par défaut, sans option spécifiée, est de générer des fichiers pour toutes les zones. Les valeurs valides sont `adminhtml` et `frontend`. La valeur par défaut est **all**.<br>Par exemple: `--area adminhtml` | Non |
+| `--theme <theme>` | Thèmes pour lesquels déployer du contenu statique. La valeur par défaut est **all**.<br>Par exemple : `--theme Magento/blank --theme Magento/luma` | Non |
+| `--exclude-theme <theme>` | Thèmes à exclure lors du déploiement de contenu statique. La valeur par défaut est **none**.<br>Par exemple : `--exclude-theme Magento/blank` | Non |
+| `--area (-a)` | Générez des fichiers uniquement pour les zones spécifiées. La valeur par défaut, sans option spécifiée, est de générer des fichiers pour toutes les zones. Les valeurs valides sont `adminhtml` et `frontend`. La valeur par défaut est **all**.<br>Par exemple : `--area adminhtml` | Non |
 | `--exclude-area` | Ne générez pas de fichiers pour les zones spécifiées. La valeur par défaut, sans option spécifiée, est de n’exclure rien. La valeur par défaut est **none**. | Non |
-| `--jobs (-j)` | Activez le traitement parallèle à l’aide du nombre spécifié de tâches. La valeur par défaut est 0 (ne pas exécuter dans les processus parallèles). La valeur par défaut est **0**. | Non |
+| `--jobs (-j)` | Activer [traitement parallèle](manage-indexers.md#reindexing-in-parallel-mode) en utilisant le nombre de tâches spécifié. La valeur par défaut est 0 (ne pas exécuter dans les processus parallèles). La valeur par défaut est **0**. | Non |
 | `--symlink-locale` | Créez des liens symboliques pour les fichiers de ces paramètres régionaux, qui sont transmis pour le déploiement, mais sans personnalisation. | Non |
 | `--content-version=CONTENT-VERSION` | La version personnalisée du contenu statique peut être utilisée si vous exécutez le déploiement sur plusieurs noeuds afin de vous assurer que la version du contenu statique est identique et que la mise en cache fonctionne correctement. | Non |
 | `--no-javascript` | Ne pas déployer de fichiers JavaScript | Non |

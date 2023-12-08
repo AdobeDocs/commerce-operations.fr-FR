@@ -2,9 +2,9 @@
 title: Gestion des indexeurs
 description: Consultez des exemples d’affichage et de gestion des indexeurs de commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 795d4e9d1910d0ad826eb6c82ac451ac58e43063
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,8 @@ Catalog Search index has been rebuilt successfully in <time>
 >La réindexation de tous les indexeurs peut prendre un certain temps pour les magasins comportant un grand nombre de produits, de clients, de catégories et de règles promotionnelles.
 
 ### Réindexation en mode parallèle
+
+{{php-process-control}}
 
 Les indexeurs sont définis et multithreads pour prendre en charge la réindexation en mode parallèle. Il se met en parallèle par la dimension de l’indexeur et s’exécute sur plusieurs threads, ce qui réduit le temps de traitement.
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 20add0a748e8df38dff48a779c63e1177d2a022d
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -58,3 +58,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Bien que le code pour les améliorations et les correctifs décrits dans ces notes de mise à jour soit fourni avec Adobe Commerce, plusieurs de ces projets (par exemple, B2B, Page Builder et Progressive Web Application (PWA) Studio) sont également publiés indépendamment. Les correctifs de bogues pour ces projets sont documentés dans les informations de mise à jour distinctes et spécifiques au projet disponibles dans la documentation de chaque projet. Voir [présentation de la version des produits](/help/release/release-notes/overview.md).
+
+## Contrôle de processus PHP {#php-process-control}
+
+Avant d’exécuter des indexeurs en mode parallèle, vous devez activer la prise en charge du contrôle des processus (`pcntl`) en PHP. Voir [Installation](https://www.php.net/manual/en/pcntl.installation.php) dans la documentation PHP.
