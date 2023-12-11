@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 704c3e2934c74ee4b06499bbfc4cb68b0a007a1e
+source-git-commit: 3364434c37935285214451a7d242ae38815f3453
 workflow-type: tm+mt
-source-wordcount: '15669'
+source-wordcount: '19210'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,24 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour Magento Open Source, voir la section [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.43 {#v1-1-43}
+
+* **ACSD-54972** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème en raison duquel l’URL de catégorie canonique n’était pas mise à jour après modification de l’URL de catégorie.
+* **ACSD-53636** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.5) - Correction du problème en raison duquel le prix normal ne s’affichait pas sur les pages de liste de produits pour les produits configurables ayant des produits enfants avec des prix spéciaux.
+* **ACSD-54885** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème lié au passage en caisse de plusieurs adresses lorsque l’utilisateur administrateur utilise la variable *Connexion en tant que client* .
+* **ACSD-55610** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction du problème en raison duquel une commande partiellement annulée avait un montant de remise incorrect.
+* **ACSD-55334** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction des traductions des libellés via les dictionnaires de traduction dans la réponse GraphQL.
+* **ACSD-54739** (pour Adobe Commerce >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel la condition d’état du stock de produit n’était pas appliquée aux règles de produit associées.
+* **ACSD-53925** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème qui empêchait l’administrateur d’enregistrer le bloc CMS avec le carrousel de produit lors de la `catalog_product_price` dimensions-mode est défini sur *site web*.
+* **ACSD-52714** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème en raison duquel le filtre de date ne fonctionnait pas dans la grille d’administration lorsque le format de date était défini comme *Y-m-d*.
+* **ACSD-55055** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Améliore les performances de chargement des attributs de produit dans les règles de prix du panier dans le panier.
+* **ACSD-53790** (pour Adobe Commerce >=2.4.6 &lt;2.4.7) - Correction du problème de création de plusieurs RMA pour un seul produit via l’API REST.
+* **ACSD-56090** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.5) - Correction du problème en raison duquel la demande GraphQL répondait avec toutes les données des magasins plutôt que avec les données de magasin demandées spécifiquement.
+* **ACSD-54983** (pour Adobe Commerce >=2.4.2 &lt;2.4.7) - Correction du problème qui empêchait l’obtention de l’UID de l’utilisateur de l’entreprise avec la requête GraphQL lorsque l’état de l’utilisateur était défini sur *[!UICONTROL Inactive]*.
+* **ACSD-53309** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème en raison duquel la taxe n’est pas entièrement appliquée dans la variable *[!UICONTROL Regular Price]* libellé lorsque l’option personnalisable est sélectionnée.
+* **ACSD-55305** (pour Adobe Commerce >=2.4.4 &lt;2.4.7) - Correction du problème en raison duquel la variable *[!UICONTROL Edit Company User]* dans la fenêtre contextuelle **[!UICONTROL myAccount]** > **[!UICONTROL Company Structure]** se bloque avec un chargeur à l’écran.
+* Correctifs mis à jour : ACSD-49013
 
 ## v1.1.42 {#v1-1-42}
 
