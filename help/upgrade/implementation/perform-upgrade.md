@@ -1,26 +1,28 @@
 ---
 title: Effectuer une mise à niveau
-description: Pour mettre à niveau un projet Adobe Commerce ou Magento Open Source, procédez comme suit.
+description: Pour mettre à niveau les déploiements sur site d’Adobe Commerce, procédez comme suit.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 0cee0ab36274758b583c04dbee8251ce3b78e559
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
 
+
 # Effectuer une mise à niveau
 
-Vous pouvez mettre à niveau votre application Adobe Commerce ou Magento Open Source à partir de la ligne de commande si vous avez installé le logiciel en procédant comme suit :
+Vous pouvez effectuer une mise à niveau _sur site_ déploiements de l’application Adobe Commerce ou Magento Open Source à partir de la ligne de commande si vous avez installé le logiciel en :
 
-- Téléchargement du module externe à l’aide du `composer create-project` .
+- Téléchargement du métaphorage du compositeur à l’aide de la fonction `composer create-project` .
 - Installation de l’archive compressée.
 
 >[!NOTE]
 >
->N’utilisez pas cette méthode pour effectuer la mise à niveau si vous avez cloné le référentiel GitHub. Voir [Mettre à niveau une installation basée sur Git](../developer/git-installs.md) pour obtenir des instructions de mise à niveau.
+>- Pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Mise à niveau de la version Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) dans le Guide de Cloud.
+>- N’utilisez pas cette méthode pour effectuer la mise à niveau si vous avez cloné le référentiel GitHub. Voir [Mettre à niveau une installation basée sur Git](../developer/git-installs.md).
 
-Les instructions suivantes vous montrent comment mettre à niveau à l’aide du compositeur. Adobe Commerce 2.4.2 a introduit la prise en charge du compositeur 2. Si vous tentez de mettre à niveau à partir de &lt;2.4.1, vous devez d’abord effectuer une mise à niveau vers une version compatible avec le compositeur 2 (par exemple, 2.4.2) à l’aide du compositeur 1. _before_ mise à niveau vers Composer 2 pour les mises à niveau ultérieures à la version 2.4.2. En outre, vous devez exécuter une [version prise en charge](../../installation/system-requirements.md) de PHP.
+Les instructions suivantes vous montrent comment mettre à niveau à l’aide du gestionnaire de modules du compositeur. Adobe Commerce 2.4.2 a introduit la prise en charge du compositeur 2. Si vous tentez de mettre à niveau à partir de &lt;2.4.1, vous devez d’abord effectuer une mise à niveau vers une version compatible avec le compositeur 2 (par exemple, 2.4.2) à l’aide du compositeur 1. _before_ mise à niveau vers Composer 2 pour les mises à niveau ultérieures à la version 2.4.2. En outre, vous devez exécuter une [version prise en charge](../../installation/system-requirements.md) de PHP.
 
 >[!WARNING]
 >
@@ -34,7 +36,7 @@ Vous devez renseigner la variable [conditions préalables à la mise à niveau](
 
 >[!NOTE]
 >
->Consultez les exemples à la fin de cette section pour obtenir de l’aide sur la spécification de différents niveaux de version. Par exemple, version mineure, correctif de qualité et correctif de sécurité. Les clients Adobe Commerce peuvent accéder aux correctifs deux semaines avant la date de disponibilité générale (GA). Les packages de version préliminaire sont disponibles uniquement via le compositeur . Vous ne pouvez pas les trouver sur le portail de téléchargements ou GitHub avant GA. Si vous ne trouvez pas ces modules dans le compositeur, contactez l’assistance Adobe Commerce.
+>Consultez les exemples à la fin de cette section pour obtenir de l’aide sur la spécification de différents niveaux de version. Par exemple, les correctifs de qualité et de sécurité. Si vous ne trouvez pas ces modules dans le compositeur, contactez l’assistance Adobe Commerce.
 
 1. Passez en mode de maintenance pour empêcher l’accès à votre boutique lors de la mise à niveau.
 
@@ -108,13 +110,13 @@ Vous devez renseigner la variable [conditions préalables à la mise à niveau](
 
    - `<product>` —(Obligatoire) Package à mettre à niveau. Pour les installations sur site, cette valeur doit être : `product-community-edition` ou `product-enterprise-edition`.
 
-   - `<version>` —(Obligatoire) Version d’Adobe Commerce ou de Magento Open Source vers laquelle vous effectuez une mise à niveau. Par exemple, `2.4.3`.
+   - `<version>` —(Obligatoire) Version d’Adobe Commerce ou de Magento Open Source vers laquelle vous effectuez une mise à niveau. Par exemple : `2.4.3`.
 
    - `--no-update` —(Obligatoire) Désactive la mise à jour automatique des dépendances.
 
    - `--interactive-root-conflicts` —(Facultatif) Permet d’afficher et de mettre à jour de manière interactive les valeurs obsolètes des versions précédentes ou les valeurs personnalisées qui ne correspondent pas à la version vers laquelle vous effectuez la mise à niveau.
 
-   - `--force-root-updates` —(Facultatif) Remplace toutes les valeurs personnalisées en conflit par les valeurs de Magento attendues.
+   - `--force-root-updates` —(Facultatif) Remplace toutes les valeurs personnalisées en conflit par les valeurs commerciales attendues.
 
    - `--help` —(Facultatif) Fournit des détails d’utilisation du module externe.
 
@@ -142,58 +144,36 @@ _Adobe Commerce_:
 composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 versions
 ```
 
-### Exemple - Version mineure
-
-Les versions mineures contiennent de nouvelles fonctionnalités, des correctifs de qualité et des correctifs de sécurité. Utilisez le compositeur pour spécifier une version mineure. Par exemple, pour spécifier le métappackage Magento Open Source 2.4.3 :
-
-_Magento Open Source_:
-
-```bash
-composer require-commerce magento/product-community-edition 2.4.0 --no-update
-```
-
-_Adobe Commerce_:
-
-```bash
-composer require-commerce magento/product-enterprise-edition 2.4.0 --no-update
-```
-
 ### Exemple - Correctif de qualité
 
-Les correctifs de qualité contiennent principalement des fonctions fonctionnelles. _et_ correctifs de sécurité. Cependant, elles peuvent parfois contenir de nouvelles fonctionnalités rétrocompatibles. Utilisez le compositeur pour télécharger un correctif de qualité. Par exemple, pour spécifier le métappackage Magento Open Source 2.4.1 :
+Les correctifs de qualité contiennent principalement des fonctions fonctionnelles. _et_ correctifs de sécurité. Cependant, elles peuvent parfois contenir de nouvelles fonctionnalités rétrocompatibles. Utilisez le compositeur pour télécharger un correctif de qualité.
+
+_Adobe Commerce_:
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3 --no-update
+composer require-commerce magento/product-enterprise-edition 2.4.6 --no-update
 ```
 
 _Magento Open Source_:
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3 --no-update
-```
-
-_Adobe Commerce_:
-
-```bash
-composer require-commerce magento/product-enterprise-edition 2.4.3 --no-update
+composer require-commerce magento/product-community-edition 2.4.6 --no-update
 ```
 
 ### Exemple - Correctif de sécurité
 
-Les correctifs de sécurité contiennent uniquement des correctifs de sécurité. Ils sont conçus pour faciliter et accélérer le processus de mise à niveau.
-
-Les correctifs de sécurité utilisent la convention de dénomination du compositeur `2.4.x-px`. Utilisez le compositeur pour spécifier un correctif.
-
-_Magento Open Source_:
-
-```bash
-composer require-commerce magento/product-community-edition 2.4.3-p1 --no-update
-```
+Les correctifs de sécurité contiennent uniquement des correctifs de sécurité. Ils sont conçus pour faciliter et accélérer le processus de mise à niveau. Les correctifs de sécurité utilisent la convention de dénomination du compositeur `2.4.x-px`.
 
 _Adobe Commerce_:
 
 ```bash
-composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-update
+composer require-commerce magento/product-enterprise-edition 2.4.6-p3 --no-update
+```
+
+_Magento Open Source_:
+
+```bash
+composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 ```
 
 ## Mise à jour des métadonnées
@@ -250,7 +230,7 @@ composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-updat
 
 ## Vérifier votre travail
 
-Ouvrez l’URL de storefront dans un navigateur web pour vérifier si la mise à niveau a réussi. Si votre mise à niveau a échoué, votre storefront ne se chargera pas correctement.
+Pour vérifier si la mise à niveau a réussi, ouvrez l’URL de storefront dans un navigateur web. Si votre mise à niveau a échoué, votre storefront ne se charge pas correctement.
 
 Si l’application échoue avec une  `We're sorry, an error has occurred while generating this email.` error:
 
