@@ -2,13 +2,13 @@
 title: Sécurisez votre site et votre infrastructure Commerce
 description: Maintenez la sécurité en mettant en oeuvre les bonnes pratiques de sécurité lors de la configuration, de la configuration et de la mise à jour des installations Adobe Commerce.
 feature: Best Practices
-source-git-commit: cea5868ee37317ae9adfd8b580cd38c33c19761e
+exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
+source-git-commit: cbfd19efd9f489fefa16d93cbd8116eefb57a900
 workflow-type: tm+mt
-source-wordcount: '2151'
+source-wordcount: '2008'
 ht-degree: 0%
 
 ---
-
 
 # Sécurisez votre site et votre infrastructure Commerce
 
@@ -148,14 +148,15 @@ Cependant, l&#39;Adobe a découvert que la plupart des compromis de site ne sont
 Dans les attaques les plus courantes, du code malveillant est injecté dans l’en-tête absolu ou dans le pied de page absolu d’une boutique de clients. Là-bas, le code collecte les données de formulaire qu’un client entre dans le storefront, y compris les informations d’identification de connexion et les données de formulaire de passage en caisse. Ces données sont ensuite envoyées à un autre emplacement à des fins malveillantes plutôt qu’au serveur principal Commerce. En outre, les logiciels malveillants peuvent compromettre l&#39;exécution par l&#39;administrateur du code qui remplace le formulaire de paiement d&#39;origine par un faux formulaire qui remplace toute protection définie par le fournisseur de paiement.
 
 Les escrocs de carte de crédit côté client sont un type de logiciel malveillant qui incorpore le code dans le contenu du site web marchand pouvant être exécuté dans le navigateur d’un utilisateur, comme illustré dans la figure suivante.
-Une fois certaines actions effectuées (par exemple, l’envoi d’un formulaire par un utilisateur ou la modification d’une valeur de champ), la visionneuse sérialise les données et les envoie à des points de terminaison tiers. Ces points de terminaison sont généralement d’autres sites web compromis qui agissent comme un relais pour envoyer les données vers sa destination finale.
 
 ![Flux de données pour les attaques par logiciels malveillants ciblant les sites de commerce électronique](../../../assets/playbooks/malware-data-flow.svg)
 
 Une fois certaines actions effectuées (par exemple, l’envoi d’un formulaire par un utilisateur ou la modification d’une valeur de champ), la visionneuse sérialise les données et les envoie à des points de terminaison tiers. Ces points de terminaison sont généralement d’autres sites web compromis qui agissent comme un relais pour envoyer les données vers sa destination finale.
 
 
-Si le site Commerce a été attaqué, suivez les bonnes pratiques d’Adobe Commerce pour [réponse à un incident de sécurité](../maintenance/respond-to-security-incident.md).
+>[!TIP]
+>
+>Si un site Commerce est affecté par une attaque par un logiciel malveillant, suivez les bonnes pratiques d’Adobe Commerce pour [réponse à un incident de sécurité](../maintenance/respond-to-security-incident.md).
 
 ### Connaître les attaques les plus courantes
 
