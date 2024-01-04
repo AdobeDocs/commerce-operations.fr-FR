@@ -3,10 +3,10 @@ title: Génération de données pour les tests de performance
 description: Découvrez comment générer une grande quantité de données à utiliser pour les tests de performance.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: a2dc85232aa10761a6729fe66f5548f644cb5bd4
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 9%
+source-wordcount: '788'
+ht-degree: 8%
 
 ---
 
@@ -33,24 +33,26 @@ Le tableau suivant fournit des détails sur les profils du générateur de donn�
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
 | `store_views` | 1 | 3 | 50 | 5 | 5 |
-| `simple_products` | 800 | 24,000 | 4,000 | 300,000 | 600,000 |
+| `simple_products` | 800 | 24 000 | 4 000 | 300 000 | 600 000 |
 | `configurable_products` | 16 avec 24 options | 640 avec 24 options | 800 avec 24 options et 79 avec 200 options | 8 000 avec 24 options | 16 000 avec 24 options |
 | `product_images` | 100 images / 3 images par produit | 1 000 images / 3 images par produit | 1 000 images / 3 images par produit | 2 000 images / 3 images par produit | 2 000 images / 3 images par produit |
-| `categories` | 30 | 300 | 100 | 3,000 | 6,000 |
+| `categories` | 30 | 300 | 100 | 3 000 | 6 000 |
 | `categories_nesting_level` | 3 | 3 | 3 | 5 | 5 |
 | `catalog_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `catalog_target_rules` | 5 | 5 | 5 | 5 | 5 |
 | `cart_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `cart_price_rules_floor` | 2 | 2 | 2 | 2 | 2 |
-| `customers` | 200 | 2,000 | 2,000 | 5,000 | 10,000 |
-| `tax rates` | 130 | 40,000 | 40,000 | 40,000 | 40,000 |
-| `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
+| `customers` | 200 | 2 000 | 2 000 | 5 000 | 10 000 |
+| `tax rates` | 130 | 40 000 | 40 000 | 40 000 | 40 000 |
+| `orders` | 80 | 50 000 | 50 000 | 100 000 | 150 000 |
 
 ### Exécution du générateur de données
 
 >[!WARNING]
 >
 >Avant d’exécuter le générateur de données, désactivez toutes les tâches cron exécutées sur le serveur. La désactivation des tâches cron empêche le générateur de données d’effectuer des actions qui entrent en conflit avec les tâches cron actives et évite les erreurs inutiles.
+>
+>Si vous avez l’intention d’implémenter l’événement avec [!DNL Adobe I/O Events for Adobe Commerce] lors du test des performances, exécutez cette commande avant de vous abonner [events](https://developer.adobe.com/commerce/extensibility/events/). L’inscription préalable d’événements peut entraîner des erreurs.
 
 Exécutez la commande comme décrit dans cette section. Une fois la commande exécutée, vous devez [réindexer tous les indexeurs](../cli/manage-indexers.md).
 
