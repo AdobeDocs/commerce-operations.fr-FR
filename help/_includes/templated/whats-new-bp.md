@@ -1,8 +1,8 @@
 ---
-source-git-commit: ef734b35490a3aa37a81557119642a90af87a138
+source-git-commit: 903a5b52dd96423b7ac29997082b2feccdd3e10a
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 1%
+source-wordcount: '82'
+ht-degree: 2%
 
 ---
 # Nouveautés en matière de bonnes pratiques
@@ -27,6 +27,26 @@ Cette page contient des modifications récentes que nous pensons que vous souhai
 </td>
       <td>bonnes pratiques</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21da4c22744dbb3b27b0dbe184b946788748a52e">21da4c</a> (commit)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group --><!-- month_group -->
+
+### 7 décembre 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout d’une nouvelle rubrique de bonnes pratiques à propos de <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-code.html">modification du code PHP principal et tiers</a>.</p>
+</td>
+      <td>bonnes pratiques</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21c0b6faab093bf9db860ce2f4d56072c4cc6e49">21c0b6</a> (commit)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
