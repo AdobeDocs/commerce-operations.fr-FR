@@ -3,9 +3,9 @@ title: Configuration du vernis avancé
 description: Configurez les fonctions Varnish avancées, notamment les modes Contrôle de l’intégrité, Grace et saint.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Varnish fournit plusieurs fonctionnalités qui empêchent les clients de subir de longs délais et délais d’expiration lorsque le serveur Commerce ne fonctionne pas correctement. Ces fonctionnalités peuvent être configurées dans la variable `default.vcl` fichier . Cette rubrique décrit les ajouts que Commerce fournit dans le fichier VCL (Varnish Configuration Language) que vous téléchargez depuis l’administrateur.
 
-Voir [Manuel de référence des pointillés](https://varnish-cache.org/docs/6.3/reference/index.html) pour plus d’informations sur l’utilisation du langage de configuration vernis.
+Voir [Manuel de référence des pointillés](https://varnish-cache.org/docs/index.html) pour plus d’informations sur l’utilisation du langage de configuration vernis.
 
 ## Contrôle de l’intégrité
 
@@ -36,7 +36,7 @@ Toutes les 5 secondes, ce contrôle de l’intégrité appelle la variable `pub/
 
 La variable `health_check.php` se trouve dans la variable `pub` répertoire . Si votre répertoire racine Commerce est `pub`, puis assurez-vous de modifier le chemin dans la variable `url` du paramètre `/pub/health_check.php` to `health_check.php`.
 
-Pour plus d’informations, voir [Contrôles de l’intégrité vernis](https://varnish-cache.org/docs/6.3/users-guide/vcl-backends.html?highlight=health%20check#health-checks) la documentation.
+Pour plus d’informations, voir [Contrôles de l’intégrité vernis](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) la documentation.
 
 ## Mode de grâce
 
@@ -85,10 +85,7 @@ bin/magento cache:flush
 
 ### Installation
 
-Le mode Saint ne fait pas partie du package vernis principal. Il s’agit d’une version séparée. `vmod` qui doit être téléchargé et installé. Par conséquent, vous devez recompiler le vernis à partir de la source, comme décrit dans les articles suivants :
-
-- [Installation de Varnish 6.4](https://varnish-cache.org/docs/6.4/installation/install.html)
-- [Installation de Varnish 6.0](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)
+Le mode Saint ne fait pas partie du package vernis principal. Il s’agit d’une version séparée. `vmod` qui doit être téléchargé et installé. Par conséquent, vous devez recompiler le vernis de la source, comme décrit dans la section [instructions d’installation](https://varnish-cache.org/docs/index.html) pour votre version de vernis.
 
 Après avoir recompilé, vous pouvez installer le module de mode Saint. En général, procédez comme suit :
 

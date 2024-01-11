@@ -3,9 +3,9 @@ title: Configurer et utiliser le vernis
 description: Découvrez comment Varnish stocke les fichiers et améliore le trafic HTTP.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 [Cache de vernis] est un accélérateur d’applications web open source (également appelé _accélérateur HTTP_ ou _mise en cache du proxy inverse HTTP_). Le vernis stocke (ou met en cache) des fichiers ou des fragments de fichiers en mémoire, ce qui permet à Varnish de réduire le temps de réponse et la consommation de bande passante du réseau lors de futures demandes équivalentes. Contrairement aux serveurs web tels qu&#39;Apache et nginx, Varnish a été conçu pour être utilisé exclusivement avec le protocole HTTP.
 
-Commerce 2.4.2 est testé avec Varnish 6.4. Commerce 2.4.x est compatible avec Varnish 6.x
+[Configuration requise](../../installation/system-requirements.md) répertorie les versions de vernis prises en charge.
 
 >[!WARNING]
 >
->We _fortement recommandé_ vous utilisez du vernis en production. Mise en cache de la page complète intégrée (vers le système de fichiers ou [base]: est beaucoup plus lent que Varnish et Varnish est conçu pour accélérer le trafic HTTP.
+>We _fortement recommandé_ vous utilisez du vernis en production. Mise en cache de la page complète intégrée (vers le système de fichiers ou [base](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/): est beaucoup plus lent que Varnish et Varnish est conçu pour accélérer le trafic HTTP.
 
 Pour plus d’informations sur le vernis, voir :
 
@@ -53,9 +53,9 @@ Le processus peut être résumé comme suit :
 
 >[!NOTE]
 >
-- Sauf indication contraire, vous devez saisir toutes les commandes abordées dans cette rubrique en tant qu’utilisateur avec `root` des privilèges.
+>- Sauf indication contraire, vous devez saisir toutes les commandes abordées dans cette rubrique en tant qu’utilisateur avec `root` des privilèges.
 >
-- Cette rubrique est écrite pour le vernis sur CentOS et Apache 2.4. Si vous définissez le vernis dans un autre environnement, certaines commandes peuvent être différentes. Pour plus d’informations, consultez la documentation de vernis .
+>- Cette rubrique est écrite pour le vernis sur CentOS et Apache 2.4. Si vous définissez le vernis dans un autre environnement, certaines commandes peuvent être différentes. Pour plus d’informations, consultez la documentation de vernis .
 
 ## Problèmes connus
 
@@ -96,7 +96,7 @@ La mise en cache de vernis fonctionne avec Commerce en utilisant :
 
 >[!INFO]
 >
-Cette rubrique couvre uniquement les options par défaut de la liste précédente. Il existe de nombreuses autres façons de configurer la mise en cache dans des scénarios complexes (par exemple, l’utilisation d’un réseau de diffusion de contenu). Ces méthodes vont au-delà de la portée de ce guide.
+>Cette rubrique couvre uniquement les options par défaut de la liste précédente. Il existe de nombreuses autres façons de configurer la mise en cache dans des scénarios complexes (par exemple, l’utilisation d’un réseau de diffusion de contenu). Ces méthodes vont au-delà de la portée de ce guide.
 
 Lors de la première demande de navigateur, les ressources pouvant être mises en cache sont diffusées à partir du navigateur client à partir de Varnish et mises en cache sur le navigateur.
 
@@ -120,7 +120,7 @@ L’exemple précédent illustre une requête pour la page principale storefront
 
 >[!NOTE]
 >
-La plupart des ressources statiques comportent un code d’état HTTP 200 (OK), indiquant que la ressource a été récupérée à partir du serveur.
+>La plupart des ressources statiques comportent un code d’état HTTP 200 (OK), indiquant que la ressource a été récupérée à partir du serveur.
 
 ### Deuxième requête de navigateur
 
@@ -148,7 +148,6 @@ Si le contenu change sur le serveur, le client télécharge la ressource statiqu
 
 <!-- Link Definitions -->
 
-[base]: https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/
 [L&#39;image du grand vernis]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
 [Cache de vernis]: https://varnish-cache.org
 [Options de démarrage en pointillés]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options
