@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 3364434c37935285214451a7d242ae38815f3453
+source-git-commit: 9d75675aed671b995f7bdda43abc5a06f2c03ee8
 workflow-type: tm+mt
-source-wordcount: '19210'
+source-wordcount: '19551'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,20 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour Magento Open Source, voir la section [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.44 {#v1-1-44}
+
+* **ACSD-56790** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction du problème où un utilisateur est redirigé vers le tableau de bord administrateur lors du tri des produits de catégorie à l’aide de la variable **Sortir du stock vers le bas** et la variable `Invalid security or form key. Please refresh the page` s’affiche en haut de l’écran.
+* **ACSD-56280** (pour Adobe Commerce >=2.4.4 &lt;2.4.7) - Correction du problème en raison duquel la commande d’éléments à partir d’un registre de cadeaux générait une exception.
+* **ACSD-56246** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction du problème de suppression des données de l’attribut de sélection multiple personnalisé lorsqu’une mise à jour planifiée d’un produit devient active.
+* **ACSD-56193** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.4) - Correction du problème en raison duquel le cache de vernis/de jeûne n’était pas mis à jour lorsqu’un bloc planifié était utilisé dans la description de catégorie à l’aide du générateur de pages.
+* **ACSD-56158** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel la requête &quot;panier&quot; renvoyait la valeur de taxe totale pour chaque règle de taxe.
+* **ACSD-56023** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème en raison duquel le contenu du widget n’était pas mis à jour sur la page CMS lorsque le cache était activé.
+* **ACSD-55427** (pour Adobe Commerce >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel l’utilisateur administrateur ne pouvait pas annuler l’affectation d’un produit d’un catalogue partagé à partir de la page de produit dans l’administrateur.
+* **ACSD-55352** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) : corrige le problème en raison duquel, après la création d’une note de crédit partielle avec des points de récompense client, les options d’état de la commande sont Fermées et les options de note de crédit disparaissent de la page de commande d’administrateur.
+* **ACSD-55231** (pour Adobe Commerce >=2.4.2 &lt;2.4.7) - Correction du problème qui empêchait l’ajout de produits à un panier à l’aide de la fonctionnalité de commande rapide.
+* **ACSD-54283** (pour Adobe Commerce >=2.4.3 &lt;2.4.4) - Correction du problème en raison duquel les produits/catégories non affectés au catalogue partagé par défaut (groupe général) étaient toujours inclus dans le plan de site XML.
+* Correctifs mis à jour : ACSD-52041, ACSD-54040, ACSD-51819
 
 ## v1.1.43 {#v1-1-43}
 
@@ -79,7 +93,7 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 * **ACSD-54472** (pour Adobe Commerce >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel les clients d’une société refusée peuvent toujours s’authentifier et les clients d’une société bloquée et rejetée peuvent toujours passer des commandes. Le correctif ajoute une validation supplémentaire pour les points de terminaison GraphQL.
 * **ACSD-52801** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) : ajoute l’option permettant d’effectuer une correspondance partielle lors de la recherche de produits dans GraphQL.
 * **ACSD-55004** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction du problème de blocage du programme de validation lors du téléchargement d’un fichier d’importation supérieur à la valeur configurée dans `php.ini`.
-* **ACSD-54989** (pour Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) - Correction du problème qui empêchait l’administrateur d’une société de passer une commande lorsque *[!UICONTROL Enable Purchase Orders]* est défini sur *[!UICONTROL Yes]* et *[!UICONTROL Purchase Order]* est défini sur *[!UICONTROL No]*.
+* **ACSD-54989** (pour Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) - Correction du problème qui empêchait l’administrateur d’une entreprise de passer une commande lorsque *[!UICONTROL Enable Purchase Orders]* est défini sur *[!UICONTROL Yes]* et *[!UICONTROL Purchase Order]* est défini sur *[!UICONTROL No]*.
 * **ACSD-54007** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Correction de l’erreur *&quot;Clé de tableau non définie &quot;_scope&quot;* lors de l’importation de données client.
 * **ACSD-55031** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.6) - Correction de la variable *Le type &quot;mixte&quot; ne peut pas être nul* lors de la compilation.
 * **ACSD-54961** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Correction du problème qui empêchait un utilisateur administrateur restreint de mettre à jour en masse la variable *Révision du produit* statut.
@@ -126,7 +140,7 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 * **ACSD-53795** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème lié à un type de données non valide dans `indexer_update_all_views` tâche cron.
 * **ACSD-52143** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction du problème de suppression des options personnalisées après l’importation du produit.
 * **ACSD-53750** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction de la variable *Canalisation rompue ou connexion fermée* erreur lors d’une opération multi-thread `catalog_product_price` réindexer.
-* **ACSD-49843** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.0 || >=2.4.1 &lt;2.4.7) - Correction du problème en raison duquel le lien sur le téléchargement de produit n’était pas disponible une fois que l’article commandé était automatiquement facturé par le mode de paiement en ligne avec la variable **[!UICONTROL Payment Action]** = **[!UICONTROL Sale]** activée.
+* **ACSD-49843** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.0 || >=2.4.1 &lt;2.4.7) - Correction du problème en raison duquel le lien sur le téléchargement de produit n’est pas disponible une fois que l’article commandé est automatiquement facturé par le mode de paiement en ligne avec la variable **[!UICONTROL Payment Action]** = **[!UICONTROL Sale]** activée.
 * **ACSD-47054** (pour Adobe Commerce >=2.4.2 &lt;2.4.6) - Correction du problème en raison duquel la réindexation de l’aperçu s’exécute pour tous les magasins, ce qui entraîne une lenteur.
 * Ajout de nouvelles versions pour ACSD-46541, ACSD-47079.
 * ACSD-49970-v3 remplacé par ACSD-54095.
@@ -224,7 +238,7 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 * **ACSD-50849** (pour Adobe Commerce >=2.4.4 &lt;2.4.6) - Correction du problème en raison duquel l’ajout d’un nouveau produit à la catégorie après l’effacement du cache entraînait une incohérence des positions et des sélections des produits existants.
 * **ACSD-51294** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel le prix GTM/GA, la quantité, la taxe, l’expédition et les recettes sont envoyés sous forme de chaîne à [!DNL Google Analytics] et GTM.
 * **ACSD-51204** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction du problème en raison duquel un produit entièrement vendu ne revenait pas en stock après la création d’une note de crédit.
-* **ACSD-51291** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.4-p4 || >=2.4.5 &lt;2.4.5-p3) - Correction du problème en raison duquel un administrateur restreint ayant accès à un site web pouvait ajouter des images/vidéos au produit affecté à plusieurs sites web.
+* **ACSD-51291** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.4-p4 || >=2.4.5 &lt;2.4.5-p3) : correction du problème en raison duquel un administrateur restreint ayant accès à un site web pouvait ajouter des images/vidéos au produit affecté à plusieurs sites web.
 * Ajout de nouvelles versions pour ACSD-50336.
 * Correctifs remplacés ACSD-49970.
 
@@ -232,7 +246,7 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 
 * **ACSD-50345** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.4 || >=2.4.4-p1 &lt;2.4.6) - Correction du problème en raison duquel Recaptcha v2 ne se rechargeait pas après l’envoi d’un paiement en échec.
 * **ACSD-50817** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Optimise la tâche Cron `sales_clean_quotes` pour exécuter plus rapidement.
-* **ACSD-49392** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.0 || >= 2.4.1 &lt;2.4.7) - Correction du problème en raison duquel l’état de la commande était fermé après un remboursement partiel pour un produit regroupé.
+* **ACSD-49392** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.0 || >= 2.4.1 &lt;2.4.7) - Correction du problème en raison duquel l’état de la commande se fermait après un remboursement partiel pour un produit fourni.
 * **ACSD-51036** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.5) - Correction du problème en raison duquel les conditions de concurrence lors d’appels d’API REST simultanés entraînaient le remplacement des informations d’état de livraison dans la variable [!UICONTROL Items Ordered] table.
 * **ACSD-50858** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Améliore les performances de chargement du contenu des bannières.
 * Ajout de nouvelles versions pour MDVA-39305-v2, ACSD-45169.
@@ -300,7 +314,7 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 * **ACSD-48362** (pour Adobe Commerce >=2.4.1 &lt;2.4.7) - Correction du problème en raison duquel l’adresse de livraison par défaut était utilisée à la place d’une nouvelle adresse lors du placement d’une commande avec un guillemet négociable.
 * **ACSD-48059** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Correction du problème qui empêchait les commerçants d’enregistrer le &quot;[!UICONTROL Match product by rule]&quot; dans la catégorie.
 * **ACSD-48216** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.3.8 || >=2.4.0 &lt;2.4.7) - Correction du problème en raison duquel [!UICONTROL AUTO_INCREMENT] de [!UICONTROL inventory_source_item] augmente au niveau du tableau [!UICONTROL UPDATE] opération.
-* **ACSD-47908** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.3.8 || >=2.4.0 &lt;2.4.7) - Correction de l’erreur &quot;Une valeur inférieure ou égale à 0 est attendue&quot; lors de la sélection de la source et de la quantité à l’étape d’expédition lors du passage en caisse.
+* **ACSD-47908** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.3.8 || >=2.4.0 &lt;2.4.7) : corrige l’erreur &quot;Une valeur inférieure ou égale à 0 est attendue&quot; lors de la sélection de la source et de la quantité à l’étape d’expédition lors du passage en caisse.
 * **ACSD-49497** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.6) - Correction du problème où une commande reste en état de traitement après l’expédition et qu’un remboursement partiel est appliqué.
 * **ACSD-48694** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.3.8 || >=2.4.1 &lt;2.4.7) - Correction du problème en raison duquel l’erreur &quot;Changement d’état non valide demandé&quot; empêchait un client de passer une commande.
 * **ACSD-49013** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction du problème en raison duquel la confirmation par email n’était pas traduite dans les paramètres régionaux du site web lors de la création de clients à l’aide de l’API en bloc.
