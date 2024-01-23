@@ -3,18 +3,14 @@ title: Génération de données pour les tests de performance
 description: Découvrez comment générer une grande quantité de données à utiliser pour les tests de performance.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: a2dc85232aa10761a6729fe66f5548f644cb5bd4
+source-git-commit: d4a6d5cd181c7c4426914bbe481f4d5d1e828b5e
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 8%
+source-wordcount: '762'
+ht-degree: 9%
 
 ---
 
 # Données de test de performance
-
-Pour utiliser la variable [Outils de performance](https://github.com/magento/magento2/blob/2.4/setup/performance-toolkit) Pour un autre outil de test de performance, vous devez générer une grande quantité de données, telles que des magasins, des catégories et des produits.
-
-{{file-system-owner}}
 
 ## Profils
 
@@ -47,6 +43,8 @@ Le tableau suivant fournit des détails sur les profils du générateur de donn�
 | `orders` | 80 | 50 000 | 50 000 | 100 000 | 150 000 |
 
 ### Exécution du générateur de données
+
+{{file-system-owner}}
 
 >[!WARNING]
 >
