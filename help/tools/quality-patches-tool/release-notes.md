@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 9d75675aed671b995f7bdda43abc5a06f2c03ee8
+source-git-commit: 6f0a3434d4730b4d2bcf0aecdacfae58025824cd
 workflow-type: tm+mt
-source-wordcount: '19551'
+source-wordcount: '19799'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,17 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour Magento Open Source, voir la section [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.45 {#v1-1-45}
+
+* **ACSD-56886** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème qui entraînait l’rupture de stock d’un produit configurable lorsqu’un des deux produits enfants était désactivé par une mise à jour planifiée.
+* **ACSD-56616** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.6) - Correction du problème en raison duquel les produits regroupés s’affichent comme en stock sur le storefront lorsque leurs produits simples sont en rupture de stock.
+* **ACSD-56515** (pour Adobe Commerce >=2.4.2 &lt;2.4.7) - Correction du problème qui empêchait l’administrateur disposant d’autorisations au niveau du site web d’ajouter ou de modifier un bloc dynamique.
+* **ACSD-56447** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème en raison duquel l’ajout d’un même produit au panier via des demandes d’API Web REST parallèles générait deux éléments distincts dans le panier.
+* **ACSD-56415** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème de ralentissement des performances de l’indexation de prix partielle en raison d’une erreur `DELETE` requête lorsque la base de données contient de nombreuses données de prix partielles à indexer.
+* **ACSD-54965** (pour Adobe Commerce >=2.4.5 &lt;2.4.6) - Correction du problème en raison duquel la grille de marchandisage visuel n’affichait pas le stock correct lorsqu’un produit était affecté à un stock personnalisé uniquement.
+* **ACSD-52824** (pour Adobe Commerce >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel les boutons PayPal Express, Google Pay et Apple Pay s’affichaient pour les clients de l’entreprise lorsque ces méthodes de paiement étaient désactivées dans les paramètres de l’entreprise.
+* Correctifs mis à jour : ACSD-56193
 
 ## v1.1.44 {#v1-1-44}
 
