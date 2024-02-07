@@ -3,9 +3,9 @@ title: Bonnes pratiques de configuration
 description: Optimisez le temps de réponse de votre déploiement Adobe Commerce ou Magento Open Source à l’aide de ces bonnes pratiques.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 3c53efdaedea075e288d262e247bc9c42b5a2432
+source-git-commit: 2fa587557db214ed2fbeb5e6c175a9a209883f94
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Lorsque vous activez la variable **[!UICONTROL Enable [!DNL JavaScript] Bundling
 ### Conseils de regroupement
 
 * Nous vous recommandons d’utiliser des outils tiers pour la minification et le regroupement (comme [r.js](https://requirejs.org/)). [!DNL Commerce] les mécanismes natifs ne sont pas optimaux et sont fournis en tant qu’alternatives de secours.
-* L’activation du protocole HTTP/2 peut être une bonne alternative à l’utilisation du regroupement JS. Le protocole offre à peu près les mêmes avantages.
+* L’activation du protocole HTTP/2 peut être une bonne alternative à l’utilisation du regroupement JS. Le protocole offre plusieurs des mêmes avantages. Elle est activée par défaut dans Adobe Commerce sur les projets d’infrastructure cloud.
 * Il est déconseillé d’utiliser des paramètres obsolètes tels que la fusion de fichiers JS et CSS, car ils ont été conçus uniquement pour les fichiers JS chargés de manière synchrone dans la section HEAD de la page. L’utilisation de cette technique peut entraîner le regroupement et entraîner un mauvais fonctionnement de la logique JS.
 
 ## Validation des segments client
