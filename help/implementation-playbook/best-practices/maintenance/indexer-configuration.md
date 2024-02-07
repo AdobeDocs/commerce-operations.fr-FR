@@ -4,9 +4,9 @@ description: Maintenez et optimisez les performances du site en suivant les bonn
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: af66d47279245f8ee105030bbb33d77b1b35c3e5
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Commerce possède deux types de modes d’indexation : [!UICONTROL Update 
 
 - **[!UICONTROL Update on Save]** Le mode met immédiatement à jour les index chaque fois que votre catalogue ou d’autres données changent. Par exemple, si un utilisateur administrateur ajoute de nouveaux produits à une catégorie, l’index des produits de catégorie est réindexé immédiatement lors de l’enregistrement de la mise à jour.
 
-- **[!UICONTROL Update on Schedule]** Le mode stocke des informations sur les mises à jour des données. Les opérations de réindexation et les mises à jour d’index sont gérées par une tâche cron qui s’exécute en arrière-plan à des intervalles planifiés.
+- **[!UICONTROL Update on Schedule]** Le mode stocke des informations sur les mises à jour des données. Les opérations de réindexation et les mises à jour d’index sont gérées par une tâche cron qui s’exécute en arrière-plan à des intervalles planifiés. La tâche cron n’effectue pas toujours une réindexation à chaque exécution. Il effectue une nouvelle indexation uniquement lorsqu’il existe de nouvelles entrées dans les journaux des modifications de l’indexeur (par exemple, qu’il y a un journal sur les indexeurs).
 
 Le fait qu’un grand magasin avec plusieurs administrateurs fonctionne en arrière-plan ou qu’il y ait de nombreux imports et exports déclenche de fréquentes mises à jour de l’index. Si la configuration de l’index de site est définie sur [!UICONTROL Update on Save] , la réindexation fréquente dégrade les performances de la base de données, ce qui ralentit les performances du site et entraîne de longs délais dans le processus de réindexation, en particulier pour les grands magasins.
 
