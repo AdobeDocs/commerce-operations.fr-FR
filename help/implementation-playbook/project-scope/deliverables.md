@@ -3,9 +3,9 @@ title: Deliverables
 description: Découvrez les différents livrables associés à une mise en oeuvre Adobe Commerce.
 exl-id: 6f5e603b-bbe5-411d-ad72-696cb4eae246
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 903c8bfc7c341c46d98026f0a02fbefba22c8f5d
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Le processus de découverte identifie des livrables de mise en oeuvre Adobe Comm
 
 ## Exigences commerciales
 
-Ce document présente les approbations des exigences de l’entreprise pour les spécifications fonctionnelles et la convivialité de l’expérience client. Il est utilisé pour améliorer l’expérience utilisateur, la conception visuelle et des plans de test détaillés.
+Un document sur les exigences de l’entreprise capture les approbations pour les spécifications fonctionnelles et la convivialité de l’expérience client. Il est utilisé pour améliorer l’expérience utilisateur, la conception visuelle et des plans de test détaillés.
 
 ## Diagramme de système
 
@@ -24,7 +24,7 @@ Un diagramme de système doit afficher les données (par exemple, les commandes,
 
 ## Spécifications techniques
 
-Ce document définit l’approche de mise en oeuvre technique et les détails applicables sur toutes les intégrations et tous les systèmes tiers qui doivent être modifiés. Cela peut inclure des API qui n’existent pas actuellement et qui doivent être développées.
+Les spécifications techniques définissent l’approche de mise en oeuvre et les détails applicables sur toutes les intégrations et tous les systèmes tiers qui doivent être modifiés. Cela peut inclure des API qui n’existent pas actuellement et doivent être développées.
 
 ## Mappage des données
 
@@ -36,11 +36,11 @@ Affiche les flux d’utilisateurs pour les processus critiques et/ou uniques, en
 
 ## Portée et fournisseurs
 
-Il s’agit d’une liste finalisée de fournisseurs tiers nommés à intégrer à la solution Adobe Commerce.
+Un document de portée et de fournisseurs doit contenir une liste complète de fournisseurs tiers nommés à intégrer à la solution Adobe Commerce.
 
 ## Données de produit
 
-Une révision des produits, des prix et des données d’inventaire existants d’une organisation, ainsi qu’un plan pour mapper les attributs de données utilisés pour renseigner Adobe Commerce.
+Examen des produits, des prix et des données d’inventaire existants d’une organisation, ainsi que d’un plan pour mapper les attributs de données utilisés pour renseigner Adobe Commerce.
 
 ## Plan du projet
 
