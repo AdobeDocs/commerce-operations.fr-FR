@@ -3,10 +3,10 @@ user-guide-title: Informations sur la version
 user-guide-description: Accédez à toutes les informations de mise à jour des correctifs et services Adobe Commerce au même endroit.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: b0b99e87162bdb026feeba062ca75594eb08d68a
+source-git-commit: 51b3be72fcbf3c92a133a8bdec654968a757eeac
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 16%
+source-wordcount: '120'
+ht-degree: 3%
 
 ---
 
@@ -14,10 +14,10 @@ ht-degree: 16%
 # Informations sur la version {#release}
 
 - Notes de mise à jour {#notes}
-   - [Présentation](release-notes/overview.md)
+   - [Vue d’ensemble](release-notes/overview.md)
    - [Modifications incompatibles avec l’arrière](backward-incompatible-changes.md)
    - Adobe Commerce {#adobe-commerce}
-      - [Présentation](release-notes/commerce/overview.md)
+      - [Vue d’ensemble](release-notes/commerce/overview.md)
       - [2.4.7-beta](release-notes/commerce/2-4-7.md)
       - [2.4.6](release-notes/commerce/2-4-6.md)
       - [2.4.5](release-notes/commerce/2-4-5.md)
@@ -27,7 +27,7 @@ ht-degree: 16%
       - [2.4.1](release-notes/commerce/2-4-1.md)
       - [2.4.0](release-notes/commerce/2-4-0.md)
    - Magento Open Source {#magento-open-source}
-      - [Présentation](release-notes/open-source/overview.md)
+      - [Vue d’ensemble](release-notes/open-source/overview.md)
       - [2.4.7-beta](release-notes/open-source/2-4-7.md)
       - [2.4.6](release-notes/open-source/2-4-6.md)
       - [2.4.5](release-notes/open-source/2-4-5.md)
@@ -37,15 +37,18 @@ ht-degree: 16%
       - [2.4.1](release-notes/open-source/2-4-1.md)
       - [2.4.0](release-notes/open-source/2-4-0.md)
    - Versions de correctifs de sécurité {#security-patches}
-      - [Présentation](release-notes/security/overview.md)
+      - [Vue d’ensemble](release-notes/security/overview.md)
+      - [2.4.6-p4](release-notes/security/2-4-6-p4.md)
       - [2.4.6-p3](release-notes/security/2-4-6-p3.md)
       - [2.4.6-p2](release-notes/security/2-4-6-p2.md)
       - [2.4.6-p1](release-notes/security/2-4-6-p1.md)
+      - [2.4.5-p6](release-notes/security/2-4-5-p6.md)
       - [2.4.5-p5](release-notes/security/2-4-5-p5.md)
       - [2.4.5-p4](release-notes/security/2-4-5-p4.md)
       - [2.4.5-p3](release-notes/security/2-4-5-p3.md)
       - [2.4.5-p2](release-notes/security/2-4-5-p2.md)
       - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
+      - [2.4.4-p7](release-notes/security/2-4-4-p7.md)
       - [2.4.4-p6](release-notes/security/2-4-4-p6.md)
       - [2.4.4-p5](release-notes/security/2-4-4-p5.md)
       - [2.4.4-p4](release-notes/security/2-4-4-p4.md)
