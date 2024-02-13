@@ -1,8 +1,8 @@
 ---
-source-git-commit: ac8be2ccb192765ab4633e9fce8684547a9363ac
+source-git-commit: 9f80bf4de9112cc986708266565c96515e85554c
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 11%
+source-wordcount: '499'
+ht-degree: 0%
 
 ---
 # Versions publiées
@@ -48,6 +48,12 @@ La prise en charge de la version 2.4.6 se termine le 14 mars 2026.
   <tbody>
     <tr>
         <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p4.html">2.4.6-p4</a>
+        </td>
+        <td>13 février 2024</td>
+    </tr>
+    <tr>
+        <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p3.html">2.4.6-p3</a>
         </td>
         <td>10 octobre 2023</td>
@@ -85,6 +91,12 @@ La prise en charge de la version 2.4.5 se termine le 9 août 2025.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p6.html">2.4.5-p6</a>
+        </td>
+        <td>13 février 2024</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p5.html">2.4.5-p5</a>
@@ -136,6 +148,12 @@ La prise en charge de la version 2.4.4 se termine le 12 avril 2025.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p7.html">2.4.4-p7</a>
+        </td>
+        <td>13 février 2024</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p6.html">2.4.4-p6</a>
@@ -262,7 +280,7 @@ La prise en charge de la version 2.4.0-2.4.3 s’est terminée le 28 novembre 20
   </tbody>
 </table>
 
-## 2.3
+## 2,3
 
 La prise en charge de la version 2.3 s’est terminée le 8 septembre 2022.
 
@@ -385,7 +403,7 @@ La prise en charge de la version 2.3 s’est terminée le 8 septembre 2022.
   </tbody>
 </table>
 
-## 2.2
+## 2,2
 
 La prise en charge de la version 2.2 s’est terminée le 1er décembre 2019.
 
@@ -423,7 +441,7 @@ La prise en charge de la version 2.2 s’est terminée le 1er décembre 2019.
     </tr>
     <tr>
         <td>
-          2.2.7
+          2,2.7
         </td>
         <td>28 novembre 2018</td>
     </tr>
@@ -435,7 +453,7 @@ La prise en charge de la version 2.2 s’est terminée le 1er décembre 2019.
     </tr>
     <tr>
         <td>
-          2.2.5
+          2,2.5
         </td>
         <td>27 juin 2018</td>
     </tr>
@@ -472,7 +490,7 @@ La prise en charge de la version 2.2 s’est terminée le 1er décembre 2019.
   </tbody>
 </table>
 
-## 2.1
+## 2,1
 
 La prise en charge de la version 2.1 s’est terminée le 30 juin 2019.
 
@@ -601,7 +619,7 @@ La prise en charge de la version 2.1 s’est terminée le 30 juin 2019.
   </tbody>
 </table>
 
-## 2.0
+## 2,0
 
 La prise en charge de la version 2.0 s’est terminée le 31 mars 2018.
 
