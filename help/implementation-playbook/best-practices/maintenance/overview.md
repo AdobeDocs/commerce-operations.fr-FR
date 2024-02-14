@@ -3,9 +3,9 @@ title: Phase de maintenance de la mise en oeuvre
 description: Découvrez les bonnes pratiques de mise en oeuvre pour la phase de maintenance des projets Adobe Commerce.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: 00036391366625ab256a4dc682d1ecbe9e46fa23
+source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '371'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
 | Bonne pratique | Description |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | [Résolution des problèmes de performances de la base de données &#x200B;](resolve-database-performance-issues.md) | Correction de problèmes de base de données qui ralentissent les performances des sites Adobe Commerce déployés sur l’infrastructure cloud. |
-| [Conditions préalables à la mise à niveau d’Adobe Commerce 2.3.5 pour MariaDB &#x200B;](commerce-235-upgrade-prerequisites-mariadb.md) | Préparez votre base de données MariaDB pour une mise à niveau. |
+| [Conditions préalables à la mise à niveau d’Adobe Commerce pour MariaDB &#x200B;](mariadb-upgrade.md) | Préparez votre base de données MariaDB pour une mise à niveau. |
 
 ## Améliorations des fonctionnalités
 

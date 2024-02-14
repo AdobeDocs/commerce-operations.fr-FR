@@ -1,7 +1,7 @@
 ---
-source-git-commit: 631735eceb3609edd743c682291f373f6b01b399
+source-git-commit: d7926b9150137813b1161581bb1d7884a6fe11e9
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '138'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,14 @@ La réindexation sur MariaDB 10.4 et 10.6 prend plus de temps que les versions p
 * [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
 * [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
 
-Si vous constatez une dégradation des performances non liée à l’indexation après la mise à niveau vers MariaDB 10.6, envisagez d’activer la variable [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) . Par exemple, `--query-cache-type=ON`.
+Si vous constatez une dégradation des performances non liée à l’indexation après la mise à niveau vers MariaDB 10.6, envisagez d’activer la variable [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) . Par exemple : `--query-cache-type=ON`.
+
+Avant de mettre à niveau Adobe Commerce sur des projets d’infrastructure cloud, vous devrez peut-être également mettre à niveau MariaDB ([voir Bonnes pratiques de mise à niveau de MariaDB](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md)).
+
+Par exemple :
+
+* Adobe Commerce 2.4.6 avec MariaDB version 10.5.1 ou ultérieure
+* Adobe Commerce 2.3.5 avec MariaDB version 10.3 ou antérieure
 
 Outre ces recommandations, consultez l’administrateur de la base de données pour configurer les paramètres suivants :
 

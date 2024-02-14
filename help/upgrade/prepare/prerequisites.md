@@ -2,9 +2,9 @@
 title: Conditions préalables complètes
 description: Préparez votre projet Adobe Commerce pour une mise à niveau en suivant les étapes préalables requises.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ Nous vous recommandons de contacter le fournisseur de votre moteur de recherche 
 
 ## Conversion du format de tableau de la base de données
 
-Vous devez convertir le format de toutes les tables de base de données à partir de `COMPACT` to `DYNAMIC`. Vous devez également convertir le type de moteur de stockage à partir de `MyISAM` to `InnoDB`. Voir [bonnes pratiques](../../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md).
+Vous devez convertir le format de toutes les tables de base de données à partir de `COMPACT` to `DYNAMIC`. Vous devez également convertir le type de moteur de stockage à partir de `MyISAM` to `InnoDB`. Voir [bonnes pratiques](../../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md).
 
 ## Définition de la limite des fichiers ouverts
 
