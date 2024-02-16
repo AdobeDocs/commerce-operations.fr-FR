@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6f0a3434d4730b4d2bcf0aecdacfae58025824cd
+source-git-commit: 26bde6684b3f38ed16ede6ec9c63cc90fa849fd9
 workflow-type: tm+mt
-source-wordcount: '19799'
+source-wordcount: '19990'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour Magento Open Source, voir la section [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.46 {#v1-1-46}
+
+* **ACSD-46767** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Correction du problème en raison duquel la page de catégorie était mise en cache invalide lorsque la quantité en stock changeait, même si le produit était toujours en stock.
+* **ACSD-54656** (pour Adobe Commerce >=2.4.5 &lt;2.4.6) - Correction du problème d’échec du recaptcha invisible lors de l’extraction, empêchant le placement d’une commande.
+* **ACSD-55100** (pour Adobe Commerce >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel GraphQL ne renvoie pas plus de 10 000 produits dans les résultats de recherche.
+* **ACSD-56621** (pour Adobe Commerce >=2.4.2 &lt;2.4.7) - Correction du problème en raison duquel le prénom et le nom mis à jour ne sont pas reflétés dans la section d’en-tête des salutations pour l’utilisateur administrateur de la société.
+* **ACSD-56842** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème en raison duquel les proxies différées et les usines de proxy différées manquaient après l’exécution. `setup:di:compile`.
+* **ACSD-57003** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel l’état de la commande était remplacé par *[!UICONTROL Complete]* au lieu d’être remplacé par *[!UICONTROL Processing]* lorsqu’une commande est partiellement remboursée et expédiée.
+* Correctifs mis à jour : ACSD-50260-v2, ACSD-54966
 
 ## v1.1.45 {#v1-1-45}
 
