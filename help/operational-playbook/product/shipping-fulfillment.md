@@ -3,9 +3,9 @@ title: Livraison et exécution
 description: Déterminez les méthodes de livraison et les coûts avant de terminer votre projet de commerce électronique.
 exl-id: 07d303ab-f229-4b6a-b35a-b6d2a3be89b3
 feature: Best Practices, Shipping/Delivery
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 766bd4e4e6a31157836770270cc3ba310f142161
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Le tableau suivant décrit les différences entre l’expédition et l’exécut
 | B2B | B2C |
 |----------------------------------------------------------------------------------------------|------------------------------------------------------|
 | L&#39;exécution et l&#39;expédition prennent plus de temps en raison des coûts impliqués et de la quantité | peut être expédié le même jour et/ou livraison gratuite ; |
-| Nécessite une connexion unique entre l’entreprise et le client | Généralement, relations à terme court |
+| Nécessite une connexion unique entre l’entreprise et le client | Généralement, les relations à court terme |
 | Généralement, les relations à long terme | L’entreprise fournit des cartes de fidélité pour fidéliser les clients |
 | Le processus peut être long et complexe. | Offres de promotions et de campagnes destinées aux clients |
 | Des règles fortes doivent être appliquées. | Les règles de base peuvent être appliquées. |
