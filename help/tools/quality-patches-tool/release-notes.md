@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 26bde6684b3f38ed16ede6ec9c63cc90fa849fd9
+source-git-commit: c39eb5c9328657083aea07a385531e7ad0df6e14
 workflow-type: tm+mt
-source-wordcount: '19990'
+source-wordcount: '20136'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,14 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour Magento Open Source, voir la section [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.47 {#v1-1-47}
+
+* **ACSD-55241** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème en raison duquel *[!UICONTROL Used]* et *[!UICONTROL Times Used]* Les attributs affichent des valeurs incorrectes pour les bons générés lorsqu’ils sont utilisés lors du passage en caisse avec plusieurs adresses.
+* **ACSD-56760** (pour Adobe Commerce >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel un utilisateur administrateur limité à un site web spécifique ne pouvait pas trier ou ajouter de nouveaux produits dans une catégorie si le magasin web avait sa propre catégorie racine.
+* **ACSD-56858** (pour Adobe Commerce >=2.4.2 &lt;2.4.7) - Correction du problème d’affichage incorrect des autorisations de rôle d’entreprise B2B pour un administrateur de société restreint.
+* **ACSD-57074** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel la variable *Oui/Non* attribut personnalisé avec `attrbute_code` en commençant par `price_` ne fonctionne pas correctement avec l’indexation, et les produits avec de tels attributs ne sont pas disponibles au front-end.
+* Correctifs mis à jour : ACSD-53378, ACSD-51819
 
 ## v1.1.46 {#v1-1-46}
 
