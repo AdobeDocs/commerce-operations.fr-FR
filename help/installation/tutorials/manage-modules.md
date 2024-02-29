@@ -2,9 +2,9 @@
 title: Activation ou désactivation des modules
 description: Pour gérer les modules Adobe Commerce ou Magento Open Source, procédez comme suit.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 6e87d68df97adf47b5a61e8b6683ac11f600806c
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Où
 * `--enabled` répertorie tous les modules activés.
 * `--disabled` répertorie tous les modules désactivés.
 * `<module-list>` est une liste de modules délimités par des espaces pour vérifier l’état. Si un nom de module contient des caractères spéciaux, placez le nom entre guillemets simples ou doubles.
+
+>[!NOTE]
+>
+>Vous ne pouvez pas activer ni désactiver les modules directement sur les projets cloud. Vous devez exécuter ces commandes localement, puis transmettre les modifications au `app/etc/config.php` pour un environnement. Voir [Workflow du projet Pro : workflow de déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
 
 ## Activation et désactivation des modules
 
