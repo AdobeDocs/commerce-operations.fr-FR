@@ -4,7 +4,7 @@ description: Découvrez les derniers outils de développement composable et les 
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
-source-git-commit: b0cfe0ae73a2d65f205bfe874e080d56f195601b
+source-git-commit: a4738e58d8c17c17426765d6f975a2af0ce11c80
 workflow-type: tm+mt
 source-wordcount: '3076'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Annonces de produit du mois de février Adobe Commerce
+# Annonces de produit de février Adobe Commerce
 
 Adobe Commerce travaille en étroite collaboration avec ses clients afin de développer de nouvelles fonctionnalités commerciales basées sur l’expérience, qui leur permettent d’accélérer et d’accélérer leurs ventes. Les clients comme Hanesbrands bénéficient déjà de sites plus rapides, de taux de conversion plus élevés et de campagnes plus performantes grâce à ces nouvelles fonctionnalités. Et Nestle Purina simplifie le développement composable avec notre expérience de développeur unifiée. Découvrez ces nouvelles fonctionnalités et comment commencer dans cette présentation de l’annonce de produit de février.
 
