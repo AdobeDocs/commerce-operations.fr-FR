@@ -4,9 +4,9 @@ description: Découvrez les derniers outils de développement composable et les 
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
-source-git-commit: a4738e58d8c17c17426765d6f975a2af0ce11c80
+source-git-commit: 2e17313c0a2c87ce4d2ee43e9b40277fda25edb9
 workflow-type: tm+mt
-source-wordcount: '3076'
+source-wordcount: '3078'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ En outre, nous hébergeons également un composant pratique [session de laborato
 
 Adobe dispose d’une vaste expérience dans le déploiement de services prêts pour l’HIPAA auprès de clients de santé de toutes tailles. Qu’il s’agisse de payeurs, de fournisseurs ou de fournisseurs de technologies pharmaceutiques ou médicales, Adobe définit la norme de gestion responsable des données clients. Cette expertise s’étend maintenant au marché en plein essor du commerce numérique de la santé grâce à une version HIPPA de la plateforme cloud Adobe Commerce.
 
-L’offre Prêt pour HIPAA est disponible pour les clients Adobe Commerce Managed Services. Il comprend des contrôles supplémentaires de sécurité et de confidentialité pour assurer la protection des renseignements électroniques personnels sur la santé (IFSP) afin que les organismes de santé et de sciences de la vie puissent plus facilement remplir leurs obligations de conformité. La solution prend en charge un certain nombre de cas pratiques, notamment la vente en ligne rapide et pratique de la couverture de santé, des ordonnances, des dispositifs médicaux prescrits et des fournitures médicales. Adobe Commerce rejoint désormais le [Adobe Experience Cloud pour les soins de santé](https://business.adobe.com/solutions/industries/healthcare.html) suite de solutions permettant aux clients de proposer des expériences de patients sécurisées et exceptionnelles tout en respectant les préférences des clients.
+L’offre Prêt pour HIPAA est disponible pour les clients cloud Adobe Commerce et Managed Service. Il comprend des contrôles supplémentaires de sécurité et de confidentialité pour assurer la protection des renseignements électroniques personnels sur la santé (IFSP) afin que les organismes de santé et de sciences de la vie puissent plus facilement remplir leurs obligations de conformité. La solution prend en charge un certain nombre de cas pratiques, notamment la vente en ligne rapide et pratique de la couverture de santé, des ordonnances, des dispositifs médicaux prescrits et des fournitures médicales. Adobe Commerce rejoint désormais le [Adobe Experience Cloud pour les soins de santé](https://business.adobe.com/solutions/industries/healthcare.html) suite de solutions permettant aux clients de proposer des expériences de patients sécurisées et exceptionnelles tout en respectant les préférences des clients.
 
 >[!TIP]
 >
