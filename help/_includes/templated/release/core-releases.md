@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9f80bf4de9112cc986708266565c96515e85554c
+source-git-commit: 93ec4b59b4c26e31ee117bc13f98d21ce23d586f
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 2.4.7
 
-La prise en charge de la version 2.4.7 se termine le 19 avril 2027.
+La prise en charge de la version 2.4.7 se termine le 9 avril 2027.
 
 <table>
   <thead>
@@ -138,7 +138,7 @@ La prise en charge de la version 2.4.5 se termine le 9 août 2025.
 
 ## 2.4.4
 
-La prise en charge de la version 2.4.4 se termine le 12 avril 2025.
+La prise en charge de la version 2.4.4 se termine le 24 avril 2025.
 
 <table>
   <thead>
