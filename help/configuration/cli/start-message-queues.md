@@ -2,9 +2,9 @@
 title: Démarrage des consommateurs de la file de messages
 description: Découvrez comment démarrer un consommateur de file d’attente de messages.
 exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Après avoir consommé tous les messages disponibles, la commande s’arrête. V
 bin/magento queue:consumers:start <consumer_name> &
 ```
 
-Voir [queue:consumers:start](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#queueconsumersstart) dans la section Commerce du _Référence des outils de ligne de commande_ pour plus d’informations sur les options de commande, les paramètres et les valeurs.
+Voir [`queue:consumers:start`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#queueconsumersstart) dans la section Commerce du _Référence des outils de ligne de commande_ pour plus d’informations sur les options de commande, les paramètres et les valeurs.
 
 >[!INFO]
 >

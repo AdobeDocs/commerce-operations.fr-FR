@@ -2,7 +2,7 @@
 title: Calendrier des versions
 description: Découvrez à quel moment Adobe prévoit d’annoncer la publication de nouvelles fonctionnalités pour Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: cbcc688fb5b356b99d103259e85117bda82f36b9
+source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 2%
@@ -31,7 +31,7 @@ Le tableau suivant indique les dates des versions planifiées (les dates peuvent
 </thead>
 <tfoot>
    <tr>
-      <td colspan="3"><strong>Légende</strong>:
+      <td colspan="3"><strong>Légende :</strong>
          <ul>
             <li><strong><img alt="Icône de fonctionnalité B2B" src="../assets/icons/enterprise.svg"></img> B2B</strong>: nouvelles fonctionnalités, améliorations et correctifs pour l’extension B2B pour Adobe Commerce.</li>
             <li><strong><img alt="Icône de la fonction d’extensibilité" src="../assets/icons/brackets.svg"></img> Extensibilité</strong>: nouveaux outils et services de développement pour une extensibilité hors processus fournie indépendamment des versions de correctif. Par exemple, le SDK de l’interface utilisateur d’administration, les événements d’Adobe I/O pour le commerce et le maillage d’API.</li>

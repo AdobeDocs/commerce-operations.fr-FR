@@ -2,9 +2,9 @@
 title: Installation sur site avancée
 description: Découvrez les scénarios d’installation avancés d’Adobe Commerce ou de Magento Open Source sur l’infrastructure que vous détenez.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2383'
 ht-degree: 0%
 
 ---
@@ -91,9 +91,9 @@ Vous pouvez exécuter les commandes suivantes pour rechercher des valeurs pour c
 
 | Argument du programme d&#39;installation | Commande |
 | ------------------ | ------------------------------- |
-| Langue | Infos bin/magento:language:list |
-| Devise | Infos bin/magento:currency:list |
-| Fuseau horaire | Infos bin/magento:timezone:list |
+| Langue | `bin/magento info:language:list` |
+| Devise | `bin/magento info:currency:list` |
+| Fuseau horaire | `bin/magento info:timezone:list` |
 
 >[!NOTE]
 >
@@ -195,7 +195,7 @@ Les tableaux suivants contiennent de nombreux paramètres d’installation dispo
 |--- |--- |--- |
 | `--lock-provider` | Verrouillez le nom du fournisseur.<br><br>Opérateurs de verrouillage disponibles : `db`, `zookeeper`, `file`.<br><br>Le fournisseur de verrouillage par défaut : `db` | Non |
 | `--lock-db-prefix` | Préfixe db spécifique pour éviter les conflits de verrouillage lors de l’utilisation de `db` fournisseur de verrouillage.<br><br>La valeur par défaut : `NULL` | Non |
-| `--lock-zookeeper-host` | Hôte et port pour vous connecter à la grappe Zookeeper lorsque vous utilisez `zookeeper` fournisseur de verrouillage.<br><br>Par exemple: `127.0.0.1:2181` | Oui, si vous définissez `--lock-provider=zookeeper` |
+| `--lock-zookeeper-host` | Hôte et port pour vous connecter à la grappe Zookeeper lorsque vous utilisez `zookeeper` fournisseur de verrouillage.<br><br>Par exemple : `127.0.0.1:2181` | Oui, si vous définissez `--lock-provider=zookeeper` |
 | `--lock-zookeeper-path` | Chemin d’accès dans lequel le gardien de page enregistre les verrous.<br><br>Le chemin par défaut est le suivant : `/magento/locks` | Non |
 | `--lock-file-path` | Chemin d’accès où les verrous de fichier sont enregistrés. | Oui, si vous définissez `--lock-provider=file` |
 
