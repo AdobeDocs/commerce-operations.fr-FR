@@ -2,9 +2,9 @@
 title: Configuration requise
 description: Utilisez cette référence pour identifier les dépendances logicielles requises qui ont été testées avec Adobe Commerce et les versions Magento Open Source.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
+source-git-commit: 56052a5777b8719d5a9257d0c48e5640a6812a5f
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -112,9 +112,8 @@ Storefront et Admin :
 - Firefox (dernière version et version majeure précédente ; système d’exploitation)
 - Chrome (dernière version et version majeure précédente ; tout système d’exploitation)
 - Safari (dernière version et version majeure précédente ; macOS uniquement)
-- Safari Mobile pour iPad 2, iPad Mini, iPad avec affichage Retina (iOS 12 ou version ultérieure), pour vitrine de bureau
-- Safari Mobile pour iPhone 6 ou version ultérieure ; iOS 12 ou version ultérieure pour le storefront mobile
-- Chrome pour mobile (dernière version et version majeure précédente) [Android™ 4 ou version ultérieure] pour mobile storefront)
+- Safari pour iOS (dernière version et version majeure précédente, pour storefront)
+- Chrome pour Android (dernière et version majeure précédente, pour storefront)
 
 ### Serveur de messagerie
 
