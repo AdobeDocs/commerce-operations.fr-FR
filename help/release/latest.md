@@ -4,13 +4,13 @@ description: Découvrez les derniers outils de développement composable et les 
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
-source-git-commit: 2e17313c0a2c87ce4d2ee43e9b40277fda25edb9
+exl-id: 176886bc-733a-48d9-94dc-58fd8b24f54e
+source-git-commit: 1f2c2ca98ba7076cdc3512e30fdd7a8c76f86200
 workflow-type: tm+mt
 source-wordcount: '3078'
 ht-degree: 0%
 
 ---
-
 
 # Annonces de produit de février Adobe Commerce
 
@@ -22,7 +22,7 @@ Adobe Commerce travaille en étroite collaboration avec ses clients afin de dév
 
 Rejoignez-nous à ces événements en personne et virtuels pour en savoir plus sur Adobe Commerce de la part des dirigeants et des spécialistes du commerce électronique :
 
-- **15 mars 2024**: Adobe Commerce : création de la plateforme Commerce pilotée par l’expérience, 10h00 PDT / 18h00 GMT. [Inscrivez-vous au webinaire en direct](https://engage.adobe.com/BdgxpComWBR-register.html).
+- **14 mars 2024**: Adobe Commerce : création de la plateforme Commerce pilotée par l’expérience, 10h00 PDT / 17h00 GMT. [Inscrivez-vous au webinaire en direct](https://engage.adobe.com/BdgxpComWBR-register.html).
 
 - **Du 26 au 28 mars 2024**: Rejoignez des milliers de leaders et de praticiens du commerce électronique qui vivent à l’Adobe Summit à Las Vegas. En savoir plus sur [Adobe Summit](https://business.adobe.com/summit/adobe-summit.html) et la variable [Suivi Commerce](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search.track=1601680652403006TXuG) avec des haut-parleurs [Marques de gestion](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S435), [Coca-Cola](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S434), [Unilever](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=s430), et [Nestler Purina](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S437).
 
@@ -116,7 +116,7 @@ En outre, nous hébergeons également un composant pratique [session de laborato
 
 [!BADGE Disponible maintenant]{type=Informative tooltip="Disponible maintenant"}
 
-Adobe dispose d’une vaste expérience dans le déploiement de services prêts pour l’HIPAA auprès de clients de santé de toutes tailles. Qu’il s’agisse de payeurs, de fournisseurs ou de fournisseurs de technologies pharmaceutiques ou médicales, Adobe définit la norme de gestion responsable des données clients. Cette expertise s’étend maintenant au marché en plein essor du commerce numérique de la santé grâce à une version HIPPA de la plateforme cloud Adobe Commerce.
+Adobe dispose d’une vaste expérience dans le déploiement de services prêts pour l’HIPAA auprès de clients de santé de toutes tailles. Qu’il s’agisse de payeurs, de fournisseurs ou de fournisseurs de technologies pharmaceutiques ou médicales, Adobe définit la norme de gestion responsable des données clients. Cette expertise s’étend maintenant au marché en plein essor du commerce numérique de la santé avec une version de la plateforme cloud Adobe Commerce prête pour HIPAA.
 
 L’offre Prêt pour HIPAA est disponible pour les clients cloud Adobe Commerce et Managed Service. Il comprend des contrôles supplémentaires de sécurité et de confidentialité pour assurer la protection des renseignements électroniques personnels sur la santé (IFSP) afin que les organismes de santé et de sciences de la vie puissent plus facilement remplir leurs obligations de conformité. La solution prend en charge un certain nombre de cas pratiques, notamment la vente en ligne rapide et pratique de la couverture de santé, des ordonnances, des dispositifs médicaux prescrits et des fournitures médicales. Adobe Commerce rejoint désormais le [Adobe Experience Cloud pour les soins de santé](https://business.adobe.com/solutions/industries/healthcare.html) suite de solutions permettant aux clients de proposer des expériences de patients sécurisées et exceptionnelles tout en respectant les préférences des clients.
 
