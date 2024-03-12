@@ -1,8 +1,8 @@
 ---
-source-git-commit: 28425dbea555b892a1f1ad47f1232ce28f96d269
+source-git-commit: 3e2c2898831c735b17d0c13712824621c0705ca2
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 18%
+source-wordcount: '100'
+ht-degree: 0%
 
 ---
 # Disponibilité du produit pour les extensions Adobe
@@ -12,7 +12,7 @@ ht-degree: 18%
   <thead>
     <tr>
       <th>Versions d’Adobe Commerce</th>
-      <th>2.4.7-beta2</th>
+      <th>2.4.7-beta3</th>
       <th>2.4.6</th>
       <th>2.4.5</th>
       <th>2.4.4</th>
@@ -22,13 +22,35 @@ ht-degree: 18%
   <tbody>
       <tr>
           <td>Événements d’Adobe I/O pour Adobe Commerce</td>
-          <td>1.3.0</td>
-          <td>1.3.0</td>
-          <td>1.3.0</td>
-          <td>1.3.0</td>
+          <td>1.5+</td>
+          <td>1.5+</td>
+          <td>1.5+</td>
+          <td>1.5+</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/events/installation/">Compositeur</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/events/release-notes/">Notes de mise à jour</a><br/>
+          </td>
+      </tr>
+      <tr>
+          <td>SDK de l’interface utilisateur d’administration Adobe Commerce</td>
+          <td>1.3+</td>
+          <td>1.3+</td>
+          <td>1.3+</td>
+          <td>-</td>
+          <td>
+              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/">Compositeur</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">Notes de mise à jour</a><br/>
+          </td>
+      </tr>
+      <tr>
+          <td>Webhooks Adobe Commerce</td>
+          <td>1.2+</td>
+          <td>1.2+</td>
+          <td>1.2+</td>
+          <td>1.2+</td>
+          <td>
+              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/">Compositeur</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/">Notes de mise à jour</a><br/>
           </td>
       </tr>
       <tr>
@@ -43,14 +65,14 @@ ht-degree: 18%
           </td>
       </tr>
       <tr>
-          <td>Connecteur Experience Platform</td>
-          <td>3.0.0-beta1</td>
-          <td>1.0.0+</td>
+          <td>Connexion aux données</td>
+          <td>3.2.0-beta3</td>
+          <td>2.1.1+</td>
           <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marché</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Notes de mise à jour</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">Notes de mise à jour</a><br/>
           </td>
       </tr>
       <tr>
