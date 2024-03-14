@@ -31,7 +31,7 @@ Commerce possède les types de cache suivants :
 | Traductions | translate | Après la fusion des traductions de tous les modules, le cache de fusion sera nettoyé. |
 | Configuration de l’intégration | config_integration | Intégrations compilées. Nettoyez ou videz ce cache après avoir modifié ou ajouté des intégrations. |
 | Configuration de l’API d’intégration | config_integration_api | Configuration des API d’intégration compilée des intégrations du magasin. |
-| Résultats du résolveur de requête GraphQL [!BADGE 2.4.7-beta]{type=URL informative=&quot;/help/release/release-notes/commerce/2-4-7.md&quot; tooltip=&quot;Disponible dans la version 2.4.7-bêta uniquement&quot;} | graphql_query_resolver_result | Met en cache les résultats des programmes de résolution de requêtes GraphQL pour les entités client, page CMS, bloc CMS et galerie de médias de produits. Conservez ce cache activé pour améliorer les performances de GraphQL. |
+| Résultats du résolveur de requête GraphQL [!BADGE 2.4.7-beta]{type=URL informative="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponible dans la version 2.4.7-bêta uniquement"} | graphql_query_resolver_result | Met en cache les résultats des programmes de résolution de requêtes GraphQL pour les entités client, page CMS, bloc CMS et galerie de médias de produits. Conservez ce cache activé pour améliorer les performances de GraphQL. |
 | Configuration des services web | config_webservice | Mise en cache de la structure de l’API Web. |
 | Notification client | customer_notification | Notifications temporaires qui apparaissent dans l’interface utilisateur. |
 
