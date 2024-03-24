@@ -2,10 +2,10 @@
 user-guide-title: Manuel d’implémentation
 user-guide-description: Découvrez les stratégies de planification et d’implémentation d’un site Adobe Commerce performant.
 mini-toc-levels: 3
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 36a2a86cbafab1e4913573b1c8431524ba43dc6a
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 11%
+source-wordcount: '257'
+ht-degree: 12%
 
 ---
 
@@ -32,10 +32,7 @@ ht-degree: 11%
    - [Responsabilité et propriété](planning/ownership.md)
    - [Gouvernance des projets](planning/governance.md)
 - Architecture et intégrations {#architecture}
-   - [Fonctionnalités](architecture/capabilities.md)
-   - [Stratégie d’intégration](architecture/integration-strategy.md)
-   - [Stratégie d&#39;extensibilité](architecture/extensibility-strategy.md)
-   - [Options d’intégration](architecture/integration-options.md)
+   - [Référence d’entreprise](architecture/enterprise-blueprint.md)
    - Architecture de référence globale {#global-reference-architecture}
       - [Vue d’ensemble](architecture/global-reference/overview.md)
       - [Exemples](architecture/global-reference/examples.md)
@@ -43,13 +40,6 @@ ht-degree: 11%
          - [Vue d’ensemble](architecture/global-reference/composer/overview.md)
          - [Structure du projet](architecture/global-reference/composer/project-structure.md)
          - [Conseils et astuces](architecture/global-reference/composer/tips-and-tricks.md)
-   - Commerce sans tête {#headless}
-      - [Avantages](architecture/headless/benefits.md)
-      - [Parcours à sans tête](architecture/headless/journey-to-headless.md)
-      - [Microservices](architecture/headless/microservices.md)
-      - [L&#39;évolution des sans-tête](architecture/headless/evolution.md)
-      - [Architecture du storefront combinée](architecture/headless/legacy-storefront.md)
-      - [Architecture sans affichage](architecture/headless/adobe-commerce.md)
 - Infrastructure et déploiement {#infrastructure}
    - [Vue d’ensemble](infrastructure/overview.md)
    - Auto-hébergement {#self-hosting}
