@@ -2,13 +2,13 @@
 title: Architecture de référence d’Enterprise
 description: Découvrez comment mettre en oeuvre Adobe Commerce à l’aide de la dernière technologie de commerce composable d’Adobe.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
-source-git-commit: 96afb0ccf5ea872cb42320babfd04ba51fa7dbf6
+exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
+source-git-commit: 8eab688ed98eb1b9fcf4fc25f90fe2bbf99c02d6
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 0%
 
 ---
-
 
 # Architecture de référence d’entreprise d’Adobe Commerce
 
@@ -78,3 +78,4 @@ Adobe propose un large éventail de services de marchandisage composables et int
 Le commerce sans affichage est un commerce avec API-first. Adobe Commerce est entièrement sans interface avec une architecture découplée qui fournit tous les services et données de commerce par le biais d’une couche API GraphQL. Cette architecture permet aux équipes de développer leurs interfaces indépendamment de l’application principale, ce qui offre la possibilité de créer et de tester rapidement de nouveaux points de contact avec les technologies émergentes.
 
 Adobe fournit une technologie moderne sans interface de storefront qui inclut les mêmes avantages et capacités que ceux apportés par [Edge Delivery Services](https://www.aem.live/home) avec la création basée sur des documents, une architecture axée sur les performances et des expérimentations natives prêtes à l’emploi. Elle tire parti de l’échelle et des performances d’Adobe Commerce [services storefront](#storefront-services) et la souplesse et la commodité de [composants de menu déroulant](https://experienceleague.adobe.com/developer/commerce/storefront/) pour offrir des fonctionnalités commerciales.
+
