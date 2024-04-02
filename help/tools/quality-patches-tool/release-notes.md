@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: c39eb5c9328657083aea07a385531e7ad0df6e14
+source-git-commit: f21891b1be51896efba83d36048c20119ea1edbf
 workflow-type: tm+mt
-source-wordcount: '20136'
+source-wordcount: '20493'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,20 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour Magento Open Source, voir la section [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.48 {#v1-1-48}
+
+* **ACSD-55566** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction du problème en raison duquel la variable `mergeCart` la mutation échoue avec un &quot;*Erreur interne du serveur*&quot; dans la variable [!DNL GraphQL] lors de la fusion des paniers source et de destination ayant les mêmes éléments de lot.
+* **ACSD-56546** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction du problème d’affichage des produits configurables et groupés en tant que **En rupture de stock** sur le storefront lorsque la variable **affichage d’une configuration de produit obsolète** is *Désactivé*.
+* **ACSD-56635** (pour Adobe Commerce >=2.4.6 &lt;2.4.7) - Correction du problème de duplication du client importé avec la même adresse électronique, lorsqu’un import est utilisé avec **partage de compte** défini sur *Global*.
+* **ACSD-56741** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction du message d’erreur &quot;*Tentative d’accès au décalage du tableau sur la valeur de type null*&quot; qui s’affiche pendant `setup:upgrade` lorsque la base de données contient une [!DNL MySQL] déclencheur non lié au mécanisme d’indexation et [!DNL MView].
+* **ACSD-57315** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème lors de la création d’une transaction dans [!DNL PayPal Payflow Pro] chaque fois que la fonction [!UICONTROL Fetch] Cliquez sur le bouton . **[!UICONTROL View transaction]** dans l’écran Admin.
+* **ACSD-57337** (pour Adobe Commerce >=2.4.4 &lt;2.4.6) - Correction du problème en raison duquel un utilisateur administrateur avec des restrictions d’accès à des sites web spécifiques pouvait voir des entreprises de tous les sites web dans la variable **[!UICONTROL Companies]** grid.
+* **ACSD-57394** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction du problème de tri incorrect des produits selon plusieurs champs de tri dans [!DNL GraphQL].
+* **ACSD-57565** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel la variable **[!UICONTROL Order]** Le tableau de bord affiche des informations de commande incorrectes jusqu’à ce que la période soit mise à jour. Le tableau de bord affiche désormais les statistiques de commande correctes au premier chargement.
+* **ACSD-57854** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème lors de l’utilisation du produit [!DNL GraphQL] les demandes renvoyaient des catégories désactivées dans les agrégations de catégories.
+* **ACSD-58008** (pour Adobe Commerce >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel la mise à jour d’une mise à jour planifiée supprimait la version précédente d’un élément intermédiaire, si aucune date de fin n’était spécifiée.
+* Correctifs mis à jour : MDVA-39305-V2, ACSD-48627, ACSD-54965
 
 ## v1.1.47 {#v1-1-47}
 
