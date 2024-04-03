@@ -1,7 +1,7 @@
 ---
-source-git-commit: 489cafa5fc2bc736ac873d1dd3008463c00b638a
+source-git-commit: febd2aa57434ec9b959a4aff6179ae00fe0ccba8
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '181'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 2%
 ## Nouveautés
 
 Découvrez la nouvelle documentation et les mises à jour importantes de la documentation existante.
+
+### 24 mars 2024
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout d’une <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint.html">plan directeur architectural</a> pour les implémentations d’entreprise de Commerce.</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d33294d02b4431d4aa473aa5d0ab42e297cfed14">d33294</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 12 mars 2024
 
@@ -22,6 +42,12 @@ Découvrez la nouvelle documentation et les mises à jour importantes de la docu
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p>Mise à jour des rubriques suivantes pour la version 2.4.7-bêta3 :<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html">Interface de ligne de commande d’Adobe Commerce (sur site, bêta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html">Interface de ligne de commande du Magento Open Source (bêta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html">Packages Adobe Commerce (bêta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html">Modules Magento Open Sources (bêta)</a></p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/28029603b0a23eb161480363b5106142beda4180">280296</a> (commit)</td>
+    </tr>
     <tr>
       <td><p>Mise à jour des instructions de configuration pour le <a href="https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html">Serveur d’applications pour les API GraphQL</a> fonction .</p>
 </td>
