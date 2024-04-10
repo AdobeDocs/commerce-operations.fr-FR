@@ -1,11 +1,11 @@
 ---
 user-guide-title: Bonnes pratiques en matière de performances
-user-guide-description: Optimisez les performances de votre déploiement en production Adobe Commerce ou Magento Open Source à l’aide de nos recommandations.
+user-guide-description: Optimisez les performances de votre déploiement de production Adobe Commerce ou Magento Open Source à l’aide de nos recommandations.
 feature: Best Practices
 topic: Administration, Commerce, Development, Performance
-source-git-commit: cb843dbb3759d9ce5e94317ae977cfe8acfa4432
+source-git-commit: 51a86a24561e2c21b895dd59b3d784313b52d186
 workflow-type: tm+mt
-source-wordcount: '56'
+source-wordcount: '54'
 ht-degree: 1%
 
 ---
@@ -23,6 +23,6 @@ ht-degree: 1%
 - [Traitement des commandes à haut débit](high-throughput-order-processing.md)
 - Concepts avancés {#concepts}
    - [Configuration avancée](advanced-setup.md)
-   - [Avancé [!DNL JavaScript] bundling](advanced-js-bundling.md)
-   - [Serveur d’applications pour les API GraphQL](application-server.md)
-- [Revenir aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+   - [Avancé [!DNL JavaScript] groupage](advanced-js-bundling.md)
+   - [Serveur d’applications GraphQL](application-server.md)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
