@@ -1,15 +1,15 @@
 ---
-source-git-commit: cbe55af59fae795cab106923af47bb0b4962caba
+source-git-commit: 7964dc6670c2fbe6bc2412b74bc948e520695c9d
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
 # Versions publiées
 
-## 2.4.7
+## 2,4,7
 
-La prise en charge de la version 2.4.7 se termine le 9 avril 2027.
+La prise en charge de la version 2.4.7 de se termine le 9 avril 2027.
 
 <table>
   <thead>
@@ -21,28 +21,16 @@ La prise en charge de la version 2.4.7 se termine le 9 avril 2027.
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2.4.7-beta3</a>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2,4,7</a>
         </td>
-        <td>12 mars 2024</td>
-    </tr>
-    <tr>
-        <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2.4.7-beta2</a>
-        </td>
-        <td>10 octobre 2023</td>
-    </tr>
-    <tr>
-        <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2.4.7-beta1</a>
-        </td>
-        <td>13 juin 2023</td>
+        <td>9 avril 2024</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
 
-## 2.4.6
+## 2 4.6.
 
-La prise en charge de la version 2.4.6 se termine le 14 mars 2026.
+La prise en charge de la version 2.4.6 prend fin le 14 mars 2026.
 
 <table>
   <thead>
@@ -52,6 +40,12 @@ La prise en charge de la version 2.4.6 se termine le 14 mars 2026.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p5.html">2.4.6-p5</a>
+        </td>
+        <td>9 avril 2024</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p4.html">2.4.6-p4</a>
@@ -78,16 +72,16 @@ La prise en charge de la version 2.4.6 se termine le 14 mars 2026.
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">2.4.6</a>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">2 4.6.</a>
         </td>
         <td>14 mars 2023</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
 
-## 2.4.5
+## 2,4,5
 
-La prise en charge de la version 2.4.5 se termine le 9 août 2025.
+La prise en charge de la version 2.4.5 de se termine le 9 août 2025.
 
 <table>
   <thead>
@@ -97,6 +91,12 @@ La prise en charge de la version 2.4.5 se termine le 9 août 2025.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p7.html">2.4.5-p7</a>
+        </td>
+        <td>9 avril 2024</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p6.html">2.4.5-p6</a>
@@ -135,16 +135,16 @@ La prise en charge de la version 2.4.5 se termine le 9 août 2025.
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">2.4.5</a>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">2,4,5</a>
         </td>
         <td>9 août 2022</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
 
-## 2.4.4
+## 2 4.4.4
 
-La prise en charge de la version 2.4.4 se termine le 24 avril 2025.
+La prise en charge de la version 2.4.4 prend fin le 24 avril 2025.
 
 <table>
   <thead>
@@ -154,6 +154,12 @@ La prise en charge de la version 2.4.4 se termine le 24 avril 2025.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p8.html">2.4.4-p8</a>
+        </td>
+        <td>9 avril 2024</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p7.html">2.4.4-p7</a>
@@ -198,7 +204,7 @@ La prise en charge de la version 2.4.4 se termine le 24 avril 2025.
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html">2.4.4</a>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html">2 4.4.4</a>
         </td>
         <td>12 avril 2022</td>
     </tr><!-- patch_releases -->
@@ -207,7 +213,7 @@ La prise en charge de la version 2.4.4 se termine le 24 avril 2025.
 
 ## 2.4.0-2.4.3
 
-La prise en charge de la version 2.4.0-2.4.3 s’est terminée le 28 novembre 2022.
+La prise en charge de la version 2.4.0-2.4.3 de a pris fin le 28 novembre 2022.
 
 <table>
   <thead>
@@ -267,7 +273,7 @@ La prise en charge de la version 2.4.0-2.4.3 s’est terminée le 28 novembre 20
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-1.html">2.4.1</a>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-1.html">2 4.1.</a>
         </td>
         <td>15 octobre 2020</td>
     </tr>
@@ -288,7 +294,7 @@ La prise en charge de la version 2.4.0-2.4.3 s’est terminée le 28 novembre 20
 
 ## 2,3
 
-La prise en charge de la version 2.3 s’est terminée le 8 septembre 2022.
+La prise en charge de la ligne de version 2.3 a pris fin le 8 septembre 2022.
 
 <table>
   <thead>
@@ -324,7 +330,7 @@ La prise en charge de la version 2.3 s’est terminée le 8 septembre 2022.
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html">2.3.7</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html">2,3,7</a>
         </td>
         <td>11 mai 2021</td>
     </tr>
@@ -336,7 +342,7 @@ La prise en charge de la version 2.3 s’est terminée le 8 septembre 2022.
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html">2.3.6</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html">2.3.6.</a>
         </td>
         <td>15 octobre 2020</td>
     </tr>
@@ -360,7 +366,7 @@ La prise en charge de la version 2.3 s’est terminée le 8 septembre 2022.
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html">2.3.5</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html">2,3,5</a>
         </td>
         <td>28 avril 2020</td>
     </tr>
@@ -372,7 +378,7 @@ La prise en charge de la version 2.3 s’est terminée le 8 septembre 2022.
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html">2.3.4</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html">2,3,4</a>
         </td>
         <td>28 janvier 2020</td>
     </tr>
@@ -384,7 +390,7 @@ La prise en charge de la version 2.3 s’est terminée le 8 septembre 2022.
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">2.3.3</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">2 3.3.3</a>
         </td>
         <td>8 octobre 2019</td>
     </tr>
@@ -411,7 +417,7 @@ La prise en charge de la version 2.3 s’est terminée le 8 septembre 2022.
 
 ## 2,2
 
-La prise en charge de la version 2.2 s’est terminée le 1er décembre 2019.
+La prise en charge de la ligne de version 2.2 a pris fin le 1er décembre 2019.
 
 <table>
   <thead>
@@ -423,43 +429,43 @@ La prise en charge de la version 2.2 s’est terminée le 1er décembre 2019.
   <tbody>
     <tr>
         <td>
-          2.2.11
+          2 2.11.
         </td>
         <td>28 janvier 2020</td>
     </tr>
     <tr>
         <td>
-          2.2.10
+          2 2.10.
         </td>
         <td>8 octobre 2019</td>
     </tr>
     <tr>
         <td>
-          2.2.9
+          2,2,9
         </td>
         <td>25 juin 2019</td>
     </tr>
     <tr>
         <td>
-          2.2.8
+          2,2,8
         </td>
         <td>26 mars 2019</td>
     </tr>
     <tr>
         <td>
-          2,2.7
+          2,2,7
         </td>
         <td>28 novembre 2018</td>
     </tr>
     <tr>
         <td>
-          2.2.6
+          2.2.6.
         </td>
         <td>18 septembre 2018</td>
     </tr>
     <tr>
         <td>
-          2,2.5
+          2,2,5
         </td>
         <td>27 juin 2018</td>
     </tr>
@@ -498,7 +504,7 @@ La prise en charge de la version 2.2 s’est terminée le 1er décembre 2019.
 
 ## 2,1
 
-La prise en charge de la version 2.1 s’est terminée le 30 juin 2019.
+La prise en charge de la ligne de version 2.1 a pris fin le 30 juin 2019.
 
 <table>
   <thead>
@@ -522,25 +528,25 @@ La prise en charge de la version 2.1 s’est terminée le 30 juin 2019.
     </tr>
     <tr>
         <td>
-          2.1.16
+          2 1.16.
         </td>
         <td>28 novembre 2018</td>
     </tr>
     <tr>
         <td>
-          2.1.15
+          2 1.15.
         </td>
         <td>18 septembre 2018</td>
     </tr>
     <tr>
         <td>
-          2.1.14
+          2 1.14.
         </td>
         <td>27 juin 2018</td>
     </tr>
     <tr>
         <td>
-          2.1.13
+          2 1.13.
         </td>
         <td>2 mai 2018</td>
     </tr>
@@ -552,7 +558,7 @@ La prise en charge de la version 2.1 s’est terminée le 30 juin 2019.
     </tr>
     <tr>
         <td>
-          2.1.11
+          2 1.11.
         </td>
         <td>12 décembre 2017</td>
     </tr>
@@ -564,31 +570,31 @@ La prise en charge de la version 2.1 s’est terminée le 30 juin 2019.
     </tr>
     <tr>
         <td>
-          2.1.9
+          2,1,9
         </td>
         <td>14 septembre 2017</td>
     </tr>
     <tr>
         <td>
-          2.1.8
+          2,1,8
         </td>
         <td>9 août 2017</td>
     </tr>
     <tr>
         <td>
-          2.1.7
+          2,1,7
         </td>
         <td>31 mai 2017</td>
     </tr>
     <tr>
         <td>
-          2.1.6
+          2.1.6.
         </td>
         <td>11 avril 2017</td>
     </tr>
     <tr>
         <td>
-          2.1.5
+          2,1,5
         </td>
         <td>21 février 2017</td>
     </tr>
@@ -627,7 +633,7 @@ La prise en charge de la version 2.1 s’est terminée le 30 juin 2019.
 
 ## 2,0
 
-La prise en charge de la version 2.0 s’est terminée le 31 mars 2018.
+La prise en charge de la ligne de version 2.0 a pris fin le 31 mars 2018.
 
 <table>
   <thead>
@@ -639,13 +645,13 @@ La prise en charge de la version 2.0 s’est terminée le 31 mars 2018.
   <tbody>
     <tr>
         <td>
-          2.0.18
+          2,0,18
         </td>
         <td>27 février 2018</td>
     </tr>
     <tr>
         <td>
-          2.0.17
+          2,0,17
         </td>
         <td>7 novembre 2017</td>
     </tr>
@@ -693,19 +699,19 @@ La prise en charge de la version 2.0 s’est terminée le 31 mars 2018.
     </tr>
     <tr>
         <td>
-          2.0.9
+          2,0,9
         </td>
         <td>10 août 2016</td>
     </tr>
     <tr>
         <td>
-          2.0.8
+          2,0,8
         </td>
         <td>19 juillet 2016</td>
     </tr>
     <tr>
         <td>
-          2.0.7
+          2,0,7
         </td>
         <td>24 mai 2016</td>
     </tr>
