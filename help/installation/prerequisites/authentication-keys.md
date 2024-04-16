@@ -1,19 +1,19 @@
 ---
 title: Obtention des clés d’authentification
-description: Suivez ces étapes pour récupérer les informations d’identification afin d’accéder aux packages Adobe Commerce et Magento Open Source Composer sur repo.magento.com.
+description: Suivez ces étapes pour récupérer les informations d’identification afin d’accéder aux modules du compositeur d’Adobe Commerce sur repo.magento.com.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
 
 # Obtention des clés d’authentification
 
-La variable `repo.magento.com` est l’emplacement où les modules Adobe Commerce, Magento Open Source et tiers Composer sont stockés et nécessitent une authentification. Utilisez votre compte Commerce Marketplace pour générer une paire de 32 caractères. *clés d’authentification* pour accéder au référentiel.
+La variable `repo.magento.com` est l’emplacement où les modules Adobe Commerce et le compositeur tiers sont stockés et nécessitent une authentification. Utilisez votre compte Commerce Marketplace pour générer une paire de 32 caractères. *clés d’authentification* pour accéder au référentiel.
 
-Pour pouvoir accéder aux packages Adobe Commerce et Magento Open Source, vous devez utiliser les clés associées à un MAGEID auquel l’accès à ces packages a été accordé. Le MAGEID est généralement le contact par Principal sur le compte Adobe Commerce et peut ne pas toujours être le propriétaire du projet Adobe Commerce sur le projet d’infrastructure cloud.
+Pour pouvoir accéder aux packages Adobe Commerce, vous devez utiliser les clés associées à un MAGEID auquel l’accès à ces packages a été accordé. Le MAGEID est généralement le contact par Principal sur le compte Adobe Commerce et peut ne pas toujours être le propriétaire du projet Adobe Commerce sur le projet d’infrastructure cloud.
 
 >[!TIP]
 >
@@ -46,7 +46,7 @@ Vous pouvez également désactiver ou supprimer des clés d’authentification. 
 
 ### Gestion du jeton d’accès SSH
 
-Pour télécharger des versions Adobe Commerce et Magento Open Source à l’aide de SSH, vous devez générer un jeton d’accès aux téléchargements. Pour générer un jeton :
+Pour télécharger des versions Adobe Commerce à l’aide de SSH, vous devez générer un jeton d’accès aux téléchargements. Pour générer un jeton :
 
 1. Connectez-vous à [magento.com compte](https://account.magento.com/customer/account/login).
 1. Cliquez sur **Mon compte** en haut de la page.

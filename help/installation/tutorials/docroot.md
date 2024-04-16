@@ -3,16 +3,16 @@ title: Modification de docroot pour améliorer la sécurité
 description: Empêchez les navigateurs non autorisés d’accéder à Adobe Commerce ou au système de fichiers Magento Open Source sur site.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: 32dd5005422b98923ce1bdf6c3fb3f55c2ec15bd
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
 
 # Modification de docroot pour améliorer la sécurité
 
-Dans une installation standard avec un serveur web Apache, Adobe Commerce et Magento Open Source sont installés à la racine web par défaut : `/var/www/html/magento2`.
+Dans une installation standard avec un serveur web Apache, Adobe Commerce est installé à la racine web par défaut : `/var/www/html/magento2`.
 
 La variable `magento2/` contient les éléments suivants :
 
@@ -168,7 +168,7 @@ Le basculement entre les modes est une étape importante pour vérifier que la c
 
 Accédez au storefront dans un navigateur web pour vérifier que tout fonctionne.
 
-1. Ouvrez un navigateur web et saisissez le nom d’hôte ou l’adresse IP de votre serveur dans la barre d’adresse. Par exemple, `http://192.168.33.10`.
+1. Ouvrez un navigateur web et saisissez le nom d’hôte ou l’adresse IP de votre serveur dans la barre d’adresse. Par exemple : `http://192.168.33.10`.
 
    La figure suivante présente un exemple de page de storefront. S’il s’affiche comme suit, votre installation a réussi !
 

@@ -1,10 +1,10 @@
 ---
 title: courtier de messages
-description: Procédez comme suit pour installer et configurer les logiciels de messagerie requis (tels que [!DNL RabbitMQ]) pour les installations sur site d’Adobe Commerce et de Magento Open Source.
+description: Procédez comme suit pour installer et configurer les logiciels de messagerie requis (tels que [!DNL RabbitMQ]) pour les installations sur site d’Adobe Commerce.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Voir [[!DNL RabbitMQ]Matrice de versions /Erlang](https://www.rabbitmq.com/which
 
 La variable [!DNL RabbitMQ] est inclus sur CentOS, mais la version est souvent ancienne. [!DNL RabbitMQ] recommande d’installer le package sur son site web.
 
-Voir [!DNL RabbitMQ] installez la page pour obtenir la dernière version prise en charge. Prise en charge d’Adobe Commerce et de Magento Open Source 2.3 et 2.4 [!DNL RabbitMQ] 3.8.x.
+Voir [!DNL RabbitMQ] installez la page pour obtenir la dernière version prise en charge. Prise en charge d’Adobe Commerce 2.3 et 2.4 [!DNL RabbitMQ] 3.8.x.
 
 Voir [Installation sous Linux basé sur RPM](https://www.rabbitmq.com/install-rpm.html) pour plus d’informations.
 
@@ -112,7 +112,7 @@ Vous pouvez également définir [!DNL RabbitMQ] valeurs de configuration à l’
 bin/magento setup:config:set --amqp-host="rabbitmq.example.com" --amqp-port="11213" --amqp-user="magento" --amqp-password="magento" --amqp-virtualhost="/"
 ```
 
-Après l’exécution de la commande ou la mise à jour de la variable `<install_directory>/app/etc/env.php` fichier avec des valeurs de configuration AMQP, exécutez `bin/magento setup:upgrade` pour appliquer les modifications et créer les files d’attente et échanges requis dans [!DNL RabbitMQ].
+Après l’exécution de la commande ou la mise à jour de la variable `<install_directory>/app/etc/env.php` fichier avec des valeurs de configuration AMQP, exécutez `bin/magento setup:upgrade` pour appliquer les modifications et créer les files d’attente et les exchanges requis dans [!DNL RabbitMQ].
 
 ## Configurer SSL
 

@@ -1,10 +1,10 @@
 ---
 user-guide-title: Référence des outils de ligne de commande
-user-guide-description: Découvrez l’ensemble des commandes, arguments et options disponibles pour les outils de ligne de commande Adobe Commerce et Magento Open Source.
+user-guide-description: Découvrez toutes les commandes, arguments et options disponibles pour les outils de ligne de commande d’Adobe Commerce.
 feature: Configuration
-source-git-commit: 3ac6f1bfd88a142a0f5913a5f4090c91159c0e46
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '37'
+source-wordcount: '33'
 ht-degree: 0%
 
 ---
@@ -15,4 +15,4 @@ ht-degree: 0%
 - [Adobe Commerce (sur site)](commerce-on-premises.md)
 - [Magento Open Source](magento-open-source.md)
 - [Outil de compatibilité de mise à niveau](uct.md)
-- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Revenir aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

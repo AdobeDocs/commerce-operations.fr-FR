@@ -1,12 +1,12 @@
 ---
 title: Bibliothèque JavaScript Adobe Privacy
-description: Découvrez comment utiliser des outils personnalisés pour accéder aux informations personnelles des clients et les supprimer collectées par Adobe Commerce et Magento Open Source.
+description: Découvrez comment utiliser des outils personnalisés pour accéder aux informations personnelles des clients et les supprimer collectées par Adobe Commerce.
 hide: true
 hidefromtoc: true
 exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 La variable [Bibliothèque JavaScript Adobe Privacy](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) est un ensemble d’outils permettant de créer un processus d’accès et de suppression de données privées.
 
-Adobe Commerce et les services de suivi des données Magento Open Source peuvent stocker des informations privées applicables aux réglementations de confidentialité, telles que la variable [Règlement général sur la protection des données (RGPD)](gdpr.md) et [California Consumer Privacy Act (CCPA)](ccpa.md).
+Les services de suivi de données Adobe Commerce peuvent stocker des informations privées applicables aux réglementations de confidentialité, telles que la variable [Règlement général sur la protection des données (RGPD)](gdpr.md) et [California Consumer Privacy Act (CCPA)](ccpa.md).
 
 Cette bibliothèque fournit un ensemble unifié de fonctions permettant de créer des demandes de données d’accès à des informations personnelles, de les envoyer aux mises en oeuvre de chaque produit et de collecter les réponses. Utilisez cette bibliothèque pour récupérer et supprimer les données stockées dans le navigateur par ces services de suivi de données.
 
@@ -28,7 +28,7 @@ Utilisez l’une des méthodes suivantes pour télécharger le fichier de biblio
 - npm : `npm install @adobe/adobe-privacy`
 - GitHub : [https://github.com/Adobe-Marketing-Cloud/adobe-privacy](https://github.com/Adobe-Marketing-Cloud/adobe-privacy)
 
-Une fois que vous disposez du fichier, vous devez l’ajouter à un module ou à un thème personnalisé installé dans votre instance Adobe Commerce et Magento Open Source. Suivez les instructions décrites dans la section [Utilisation de JavaScript personnalisé](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) pour accomplir cette tâche.
+Une fois le fichier installé, vous devez l’ajouter à un module ou à un thème personnalisé installé dans votre instance Adobe Commerce. Suivez les instructions décrites dans la section [Utilisation de JavaScript personnalisé](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) pour accomplir cette tâche.
 
 ## Utilisation
 

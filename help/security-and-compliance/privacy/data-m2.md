@@ -1,10 +1,10 @@
 ---
 title: Référence des informations personnelles du client (version 2.x)
-description: Découvrez les diagrammes de flux de données et les mappages d’entités de base de données pour les informations personnelles des clients dans Adobe Commerce et Magento Open Source 2.x.
+description: Découvrez les diagrammes de flux de données et les mappages d’entités de base de données pour les informations personnelles des clients dans Adobe Commerce 2.x.
 exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Il s’agit d’une de ces rubriques destinées à aider Adobe Commerce et les marchands et développeurs Magento Open Sources à se préparer à la conformité aux réglementations de confidentialité. Consultez votre service juridique pour déterminer si et comment votre entreprise doit se conformer à des obligations légales.
+>Il s’agit d’une rubrique parmi d’autres destinée à aider les marchands et les développeurs Adobe Commerce à se préparer à la conformité aux réglementations de confidentialité. Consultez votre service juridique pour déterminer si et comment votre entreprise doit se conformer à des obligations légales.
 
 Utilisez les diagrammes de flux de données suivants et les mappages d’entités de base de données à titre de référence lors du développement de programmes de conformité aux réglementations de confidentialité, comme :
 
@@ -32,7 +32,7 @@ Un utilisateur peut saisir des informations sur son client, son adresse et son p
 
 ### Points d’accès aux données frontaux
 
-Adobe Commerce et Magento Open Source chargent les informations sur les clients lorsque le client se connecte et consulte plusieurs pages différentes, ou extrait.
+Adobe Commerce charge les informations sur les clients lorsque le client se connecte et consulte plusieurs pages différentes ou extrait.
 
 ![Points d’accès aux données frontaux](../../assets/security-compliance/frontend-data-access-points.svg)
 
@@ -44,17 +44,17 @@ Un commerçant peut saisir des informations sur le client, des données d’adre
 
 ### Points d’accès aux données du serveur principal
 
-Adobe Commerce et Magento Open Source chargent les informations sur les clients lorsqu’un commerçant affiche plusieurs types de grilles, clique sur une grille pour afficher des informations détaillées et effectue diverses autres tâches.
+Adobe Commerce charge les informations sur les clients lorsqu’un commerçant affiche plusieurs types de grilles, clique sur une grille pour afficher des informations détaillées et effectue diverses autres tâches.
 
 ![Points d’accès aux données du serveur principal](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## Entités de base de données
 
-Adobe Commerce et Magento Open Source stockent principalement des informations spécifiques au client dans les tables de clients, d’adresses, de commandes, de devis et de paiement. D’autres tableaux contiennent des références à l’ID de client.
+Adobe Commerce stocke principalement des informations spécifiques au client dans les tables de clients, d’adresses, de commandes, de devis et de paiement. D’autres tableaux contiennent des références à l’ID de client.
 
 ### Données client
 
-Adobe Commerce et Magento Open Source peuvent être configurés pour stocker les attributs du client suivants :
+Adobe Commerce peut être configuré pour stocker les attributs du client suivants :
 
 - Date de naissance
 - Email
@@ -119,7 +119,7 @@ Les colonnes suivantes du `customer_grid_flat` Le tableau contient les informati
 
 ### Données d’adresse
 
-Adobe Commerce et Magento Open Source stockent les attributs client suivants :
+Adobe Commerce stocke les attributs client suivants :
 
 - Ville
 - Société
@@ -295,7 +295,7 @@ La variable `sales_order_payment` comprend des informations de carte de crédit 
 
 ### Données d’invitation
 
-Adobe Commerce et Magento Open Source peuvent être configurés de sorte que les clients puissent envoyer des invitations à des ventes et événements privés.
+Adobe Commerce peut être configuré de sorte que les clients puissent envoyer des invitations à des ventes et événements privés.
 
 #### `magento_invitation` table
 

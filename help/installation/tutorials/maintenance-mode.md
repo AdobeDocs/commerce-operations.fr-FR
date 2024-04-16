@@ -2,9 +2,9 @@
 title: Activer ou désactiver le mode de maintenance
 description: Suivez ces étapes pour personnaliser ce que voient les clients lorsque votre déploiement Adobe Commerce ou Magento Open Source est arrêté pour maintenance.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Le guide suivant fait référence à une page de mode de maintenance standard. Si vous devez utiliser une page de maintenance personnalisée, voir [Création d’une page de maintenance personnalisée](../../upgrade/troubleshooting/maintenance-mode-options.md) rubrique.
 
-Utilisation d’Adobe Commerce et de Magento Open Source [mode de maintenance](../../configuration/bootstrap/application-modes.md#maintenance-mode) pour désactiver le démarrage. La désactivation de l’amorçage s’avère utile lorsque vous maintenez, mettez à niveau ou reconfigurez votre site.
+Adobe Commerce utilise [mode de maintenance](../../configuration/bootstrap/application-modes.md#maintenance-mode) pour désactiver le démarrage. La désactivation de l’amorçage s’avère utile lorsque vous maintenez, mettez à niveau ou reconfigurez votre site.
 
 L&#39;application détecte le mode de maintenance comme suit :
 

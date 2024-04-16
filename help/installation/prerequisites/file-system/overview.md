@@ -1,10 +1,10 @@
 ---
 title: Propriété de fichier et autorisations
-description: Découvrez l’importance des autorisations du système de fichiers lors de l’utilisation d’installations sur site d’Adobe Commerce et de Magento Open Source.
+description: Découvrez l’importance des autorisations du système de fichiers lors de l’utilisation d’installations sur site d’Adobe Commerce.
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Pour renforcer la sécurité, en particulier dans un environnement de production
 >
 >La sécurité du système de fichiers est complexe et importante. Nous vous recommandons vivement de consulter un administrateur système ou un administrateur réseau expérimenté avant de décider du niveau d’autorisation à définir. Nous vous fournissons un mécanisme à utiliser, mais la création d’une stratégie d’autorisations est de votre responsabilité.
 
-Adobe Commerce et Magento Open Source utilisent un masque par défaut à trois bits : `002`. Soustrayez le masque par défaut des valeurs par défaut UNIX 66 pour les fichiers et 777 pour les répertoires.
+Adobe Commerce utilise un masque par défaut à trois bits : `002`. Soustrayez le masque par défaut des valeurs par défaut UNIX 66 pour les fichiers et 777 pour les répertoires.
 
 Par exemple :
 
@@ -53,7 +53,7 @@ Pour plus d’informations sur la création d’un `magento_umask` fichier, voir
 
 ## Autorisations, propriété et modes d’application
 
-Il est recommandé d’utiliser différents modes d’application Adobe Commerce et Magento Open Source en fonction des autorisations et de la propriété :
+Il est recommandé d’utiliser différents modes d’application Adobe Commerce en fonction des autorisations et de la propriété :
 
 - Par défaut
 - Développeur

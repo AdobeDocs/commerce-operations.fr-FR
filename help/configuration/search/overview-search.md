@@ -1,18 +1,18 @@
 ---
 title: Présentation du moteur de recherche
-description: Présentation des options du moteur de recherche pour Adobe Commerce et Magento Open Source.
+description: Présentation des options de moteur de recherche pour Adobe Commerce.
 feature: Configuration, Search
 exl-id: 0ea78ca2-0bca-4d61-980a-02fb7da04553
-source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '100'
 ht-degree: 0%
 
 ---
 
 # Présentation du moteur de recherche
 
-À compter de la version 2.4.4, Adobe Commerce et Magento Open Source requièrent soit [Elasticsearch] ou [OpenSearch] pour être le moteur de recherche catalogue. Les versions précédentes de la version 2.4.x nécessitaient un Elasticsearch. Pour plus d&#39;informations sur l&#39;installation d&#39;un moteur de recherche et la configuration initiale, reportez-vous aux rubriques suivantes :
+À compter de la version 2.4.4, Adobe Commerce requiert : [Elasticsearch] ou [OpenSearch] pour être le moteur de recherche catalogue. Les versions précédentes de la version 2.4.x nécessitaient un Elasticsearch. Pour plus d&#39;informations sur l&#39;installation d&#39;un moteur de recherche et la configuration initiale, reportez-vous aux rubriques suivantes :
 
 - [Prérequis du moteur de recherche](../../installation/prerequisites/search-engine/overview.md)
 - [Configuration de nginx pour votre moteur de recherche](../../installation/prerequisites/search-engine/configure-nginx.md)

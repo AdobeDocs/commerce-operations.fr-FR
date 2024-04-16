@@ -2,9 +2,9 @@
 title: Référence des informations personnelles du client (version 1.x)
 description: Découvrez les mappages des flux de données et des entités de base de données pour les informations personnelles des clients dans Magento 1.x.
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Il s’agit d’une de ces rubriques destinées à aider Adobe Commerce et les marchands et développeurs Magento Open Sources à se préparer à la conformité aux réglementations de confidentialité. Consultez votre service juridique pour déterminer si et comment votre entreprise doit se conformer à des obligations légales.
+>Il s’agit d’une rubrique parmi d’autres destinée à aider les marchands et les développeurs Adobe Commerce à se préparer à la conformité aux réglementations de confidentialité. Consultez votre service juridique pour déterminer si et comment votre entreprise doit se conformer à des obligations légales.
 
 Utilisez les diagrammes de flux de données suivants et les mappages d’entités de base de données à titre de référence lors du développement de programmes de conformité aux réglementations de confidentialité, comme :
 
@@ -32,7 +32,7 @@ Un utilisateur peut saisir des informations sur son client, son adresse et son p
 
 ### Points d’accès aux données frontaux
 
-Commerce charge les informations client lorsque le client se connecte et consulte plusieurs pages ou extraits différents.
+Commerce charge les informations sur les clients lorsque le client se connecte et consulte plusieurs pages ou extraits différents.
 
 ![Points d’accès aux données frontaux](../../assets/security-compliance/frontend-data-access-points.svg)
 

@@ -1,10 +1,10 @@
 ---
 title: Bibliothèque JavaScript Privacy
-description: Découvrez comment utiliser des outils personnalisés pour accéder aux informations personnelles des clients et les supprimer collectées par Adobe Commerce et Magento Open Source.
+description: Découvrez comment utiliser des outils personnalisés pour accéder aux informations personnelles des clients et les supprimer collectées par Adobe Commerce.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Bibliothèque JavaScript Privacy
 
-La bibliothèque JavaScript de confidentialité est un ensemble d’outils permettant de créer un processus d’accès et de suppression des données privées collectées par Adobe Commerce et Magento Open Source.
+La bibliothèque JavaScript de confidentialité est un ensemble d’outils permettant de créer un processus d’accès et de suppression des données privées collectées par Adobe Commerce.
 
-Les services de suivi des données de commerce peuvent stocker des informations privées applicables aux réglementations de confidentialité, telles que [Règlement général sur la protection des données (RGPD)](gdpr.md) et [California Consumer Privacy Act (CCPA)](ccpa.md).
+Les services de suivi de données Commerce peuvent stocker des informations privées applicables aux réglementations de confidentialité, telles que [Règlement général sur la protection des données (RGPD)](gdpr.md) et [California Consumer Privacy Act (CCPA)](ccpa.md).
 
-Cette bibliothèque fournit un ensemble de fonctions permettant de créer des demandes de données d’accès à des informations personnelles et de collecter leurs réponses. Utilisez cette bibliothèque pour récupérer et supprimer les données stockées dans le navigateur par Adobe Commerce et les services de suivi des données du Magento Open Source.
+Cette bibliothèque fournit un ensemble de fonctions permettant de créer des demandes de données d’accès à des informations personnelles et de collecter leurs réponses. Utilisez cette bibliothèque pour récupérer et supprimer les données stockées dans le navigateur par les services de suivi de données Adobe Commerce.
 
 >[!NOTE]
 >

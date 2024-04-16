@@ -2,9 +2,9 @@
 title: Règlement général sur la protection des données (RGPD)
 description: Découvrez le Règlement général sur la protection des données (RGPD), qui est une législation qui réglemente la protection des données et la confidentialité pour tous les individus de l’Union européenne et de l’Espace économique européen.
 exl-id: 30e60601-f4f7-419e-b2dd-8c82c8a2ed33
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Il s’agit d’une rubrique parmi d’autres pour aider Adobe Commerce et les marchands et développeurs Magento Open Sources à comprendre les implications du Règlement général sur la protection des données (RGPD). Les informations sont destinées à titre informatif uniquement et ne doivent pas être interprétées comme des conseils juridiques. Consultez votre service juridique pour déterminer si et comment votre entreprise doit se conformer à des obligations légales.
+>Il s’agit d’une rubrique parmi d’autres pour aider les marchands et les développeurs Adobe Commerce à comprendre les implications du Règlement général sur la protection des données (RGPD). Les informations sont destinées à titre informatif uniquement et ne doivent pas être interprétées comme des conseils juridiques. Consultez votre service juridique pour déterminer si et comment votre entreprise doit se conformer à des obligations légales.
 
 L&#39;Union européenne (UE) adoptée [Règlement général sur la protection des données](https://ec.europa.eu/info/law/law-topic/data-protection_en) (RGPD) pour donner à ses citoyens plus de contrôle sur leurs données personnelles. Le RGPD s’applique à toute organisation opérant au sein de l’UE. Elle s’applique également aux organisations extérieures à l’UE qui offrent des biens ou des services à des clients ou à des entreprises de l’UE.
 
@@ -29,7 +29,7 @@ Pour obtenir des informations techniques, reportez-vous aux diagrammes de flux d
 - [Référence des informations personnelles du client (version 2.x)](data-m2.md)
 - [Référence des informations personnelles du client (version) 1.x](data-m1.md)
 
-Pour plus d’informations sur la façon dont les marchands d’aide Adobe Commerce et Magento Open Source se conforment au RGPD, voir :
+Pour plus d’informations sur la façon dont Adobe Commerce aide les marchands à se conformer au RGPD, voir :
 
 - [Conformité au RGPD](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
 - [Adobe Commerce est prêt pour le RGPD](https://business.adobe.com/privacy/general-data-protection-regulation.html)

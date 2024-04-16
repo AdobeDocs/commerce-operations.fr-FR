@@ -1,11 +1,11 @@
 ---
 title: Utiliser des redis pour le cache par défaut
-description: Découvrez comment configurer Redis comme cache par défaut pour Adobe Commerce et Magento Open Source.
+description: Découvrez comment configurer Redis comme cache par défaut pour Adobe Commerce.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1069'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=
 
 ## Configuration de la mise en cache de la page Redis
 
-Pour configurer la mise en cache de la page Redis dans Commerce, exécutez le `setup:config:set` avec des paramètres supplémentaires.
+Pour configurer la mise en cache de la page Redis sur Commerce, exécutez le `setup:config:set` avec des paramètres supplémentaires.
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
@@ -76,7 +76,7 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.
 
 ## Résultats
 
-Suite aux deux exemples de commandes, Commerce ajoute des lignes similaires à ce qui suit : `<Commerce-install-dir>app/etc/env.php`:
+Suite aux deux exemples de commandes, Commerce ajoute des lignes similaires à celles-ci : `<Commerce-install-dir>app/etc/env.php`:
 
 ```php
 'cache' => [
@@ -104,7 +104,7 @@ Suite aux deux exemples de commandes, Commerce ajoute des lignes similaires à c
 
 ## Utilisation d’AWS ElastiCache avec votre instance EC2
 
-Depuis Commerce 2.4.3, les instances hébergées sur Amazon EC2 peuvent utiliser un ElastiCache AWS à la place d’une instance Redis locale.
+Depuis Commerce 2.4.3, les instances hébergées sur Amazon EC2 peuvent utiliser un AWS ElastiCache à la place d’une instance locale Redis.
 
 >[!WARNING]
 >
@@ -271,7 +271,7 @@ Comme il s’agit d’un indicateur, vous ne pouvez pas le désactiver à l’ai
 
 ## Vérification de la connexion Redis
 
-Pour vérifier que Redis et Commerce fonctionnent ensemble, connectez-vous au serveur exécutant Redis, ouvrez un terminal et utilisez la commande Redis monitor ou la commande ping .
+Pour vérifier que Redis et Commerce fonctionnent ensemble, connectez-vous au serveur exécutant Redis, ouvrez un terminal et utilisez la commande Redis monitor ou la commande ping.
 
 ### Redis monitor, commande
 

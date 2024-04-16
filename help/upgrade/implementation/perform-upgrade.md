@@ -2,9 +2,9 @@
 title: Effectuer une mise à niveau
 description: Pour mettre à niveau les déploiements sur site d’Adobe Commerce, procédez comme suit.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 0cee0ab36274758b583c04dbee8251ce3b78e559
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,14 @@ Vous pouvez effectuer une mise à niveau _sur site_ déploiements de l’applica
 
 >[!NOTE]
 >
->- Pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Mise à niveau de la version Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) dans le Guide de Cloud.
+>- Pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Mettre à niveau la version de Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) dans le Guide de Cloud.
 >- N’utilisez pas cette méthode pour effectuer la mise à niveau si vous avez cloné le référentiel GitHub. Voir [Mettre à niveau une installation basée sur Git](../developer/git-installs.md).
 
 Les instructions suivantes vous montrent comment mettre à niveau à l’aide du gestionnaire de modules du compositeur. Adobe Commerce 2.4.2 a introduit la prise en charge du compositeur 2. Si vous tentez de mettre à niveau à partir de &lt;2.4.1, vous devez d’abord effectuer une mise à niveau vers une version compatible avec le compositeur 2 (par exemple, 2.4.2) à l’aide du compositeur 1. _before_ mise à niveau vers Composer 2 pour les mises à niveau ultérieures à la version 2.4.2. En outre, vous devez exécuter une [version prise en charge](../../installation/system-requirements.md) de PHP.
 
 >[!WARNING]
 >
->La procédure de mise à niveau d’Adobe Commerce et de Magento Open Source a été modifiée. Vous devez installer une nouvelle version de la fonction `magento/composer-root-update-plugin` (voir [conditions préalables](../prepare/prerequisites.md)). En outre, les commandes de mise à niveau ont été modifiées à partir de `composer require magento/<package_name>` to `composer require-commerce magento/<package_name>`.
+>La procédure de mise à niveau d’Adobe Commerce a été modifiée. Vous devez installer une nouvelle version de la fonction `magento/composer-root-update-plugin` (voir [conditions préalables](../prepare/prerequisites.md)). En outre, les commandes de mise à niveau ont été modifiées à partir de `composer require magento/<package_name>` to `composer require-commerce magento/<package_name>`.
 
 ## Avant de commencer
 
@@ -116,7 +116,7 @@ Vous devez renseigner la variable [conditions préalables à la mise à niveau](
 
    - `--interactive-root-conflicts` —(Facultatif) Permet d’afficher et de mettre à jour de manière interactive les valeurs obsolètes des versions précédentes ou les valeurs personnalisées qui ne correspondent pas à la version vers laquelle vous effectuez la mise à niveau.
 
-   - `--force-root-updates` —(Facultatif) Remplace toutes les valeurs personnalisées en conflit par les valeurs commerciales attendues.
+   - `--force-root-updates` —(Facultatif) Remplace toutes les valeurs personnalisées en conflit par les valeurs Commerce attendues.
 
    - `--help` —(Facultatif) Fournit des détails d’utilisation du module externe.
 

@@ -1,11 +1,11 @@
 ---
 title: Configuration de l’application
-description: Découvrez la configuration post-installation requise pour les déploiements Adobe Commerce et Magento Open Source sur site.
+description: Découvrez la configuration post-installation requise pour les déploiements sur site d’Adobe Commerce.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Maintenant que vous avez fini d’installer Adobe Commerce ou Magento Open Sourc
 
 Le planificateur de tâches UNIX, cron, est essentiel aux opérations quotidiennes de l’application. Il planifie des choses comme la réindexation, les newsletters, les e-mails et les plans de site. A *crontab* est une configuration cron.
 
-Vous devez installer Adobe Commerce et les services Magento Open Source dans le *crontab* ou certaines fonctionnalités de base (et certaines extensions tierces) ne fonctionnent pas correctement.
+Vous devez installer les services Adobe Commerce dans le *crontab* ou certaines fonctionnalités de base (et certaines extensions tierces) ne fonctionnent pas correctement.
 
 Pour plus d’informations sur cron, notamment sur la suppression d’un crontab et l’exécution de cron à partir de la ligne de commande, voir [Configuration et exécution de cron](../../configuration/cli/configure-cron-jobs.md).
 
@@ -56,7 +56,7 @@ UNIX `logrotate` permet d’administrer des systèmes qui génèrent un grand no
 Pour plus d’informations, voir l’une des sections suivantes :
 
 * [HowTo : tutoriel sur la commande de rotation de journal avec dix exemples](https://www.thegeekstuff.com/2010/07/logrotate-examples)
-* [Stack Exchange](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
+* [Empiler l’Exchange](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
 * [`logrotate` page principale](https://linuxconfig.org/logrotate-8-manual-page)
 
 ### Configuration de règles iptables pour permettre à différents services de communiquer
@@ -79,7 +79,7 @@ En savoir plus :
 
 ### Configuration d’un serveur de messagerie
 
-Adobe Commerce et Magento Open Source nécessitent un serveur de messagerie. Nous ne recommandons pas un serveur particulier, mais vous pouvez essayer l’une des méthodes suivantes :
+Adobe Commerce nécessite un serveur de messagerie. Nous ne recommandons pas un serveur particulier, mais vous pouvez essayer l’une des méthodes suivantes :
 
 * Postfix pour CentOS ([Tutoriel sur les océans numériques](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6), [Documentation CentOS](https://www.centos.org))
 * Postfix pour Ubuntu ([Tutoriel sur les océans numériques](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04), [Documentation Ubuntu](https://help.ubuntu.com/community/MailServer))
@@ -92,7 +92,7 @@ Elasticsearch ou OpenSearch est requis pour toutes les installations à partir d
 
 ### Configuration d’une file de messages
 
-Depuis la version 2.3.0, Adobe Commerce et Magento Open Source incluent la fonctionnalité de file d’attente des messages. Dans les versions antérieures, il est disponible uniquement pour Adobe Commerce.
+Depuis la version 2.3.0, Adobe Commerce inclut la fonctionnalité de file d’attente des messages. Dans les versions antérieures, il est disponible uniquement pour Adobe Commerce.
 
 * [[!DNL RabbitMQ]](../../configuration/queues/message-queue-framework.md)
 

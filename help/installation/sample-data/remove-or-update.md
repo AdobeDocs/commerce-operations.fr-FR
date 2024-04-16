@@ -1,10 +1,10 @@
 ---
 title: Suppression ou mise à jour d’exemples de modules de données
-description: Suivez ces étapes pour gérer les exemples de modules de données Adobe Commerce et Magento Open Source.
+description: Suivez ces étapes pour gérer les exemples de modules de données Adobe Commerce.
 exl-id: d23f999f-18bf-449b-be23-bdf392dda539
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '115'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,6 @@ bin/magento sampledata:remove
 
 La liste complète des exemples de modules de données est la suivante :
 
-Adobe Commerce et Magento Open Source :
-
 * `magento/module-bundle-sample-data`
 * `magento/module-catalog-rule-sample-data`
 * `magento/module-catalog-sample-data`
@@ -50,14 +48,6 @@ Adobe Commerce et Magento Open Source :
 * `magento/module-widget-sample-data`
 * `magento/module-wishlist-sample-data`
 * `magento/sample-data-media`
-
-Adobe Commerce uniquement :
-
-* `magento/module-customer-balance-sample-data`
-* `magento/module-gift-card-sample-data`
-* `magento/module-gift-registry-sample-data`
-* `magento/module-multiple-wishlist-sample-data`
-* `magento/module-target-rule-sample-data`
 
 ## Préparation à la mise à jour des exemples de données
 

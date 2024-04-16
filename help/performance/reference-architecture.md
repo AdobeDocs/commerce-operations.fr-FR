@@ -1,17 +1,17 @@
 ---
 title: Architecture de référence
-description: Examinez les diagrammes de l’architecture de référence recommandée pour les déploiements Adobe Commerce et Magento Open Source.
+description: Examinez les diagrammes de l’architecture de référence recommandée pour les déploiements Adobe Commerce.
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
 
 # Architecture de référence
 
-Cette rubrique décrit une configuration recommandée générique pour les instances Adobe Commerce et Magento Open Source à l’aide de serveurs standard hébergés physiquement dans un centre de données (non virtualisés) dans lequel les ressources ne sont pas partagées avec d’autres utilisateurs. Votre fournisseur d’hébergement, en particulier s’il se spécialise dans l’hébergement hautement performant de Commerce, peut recommander une configuration différente qui soit également ou plus efficace pour vos besoins.
+Cette rubrique décrit une configuration recommandée générique pour les instances Adobe Commerce utilisant des serveurs standard hébergés physiquement dans un centre de données (non virtualisés) dans lequel les ressources ne sont pas partagées avec d’autres utilisateurs. Votre fournisseur d’hébergement, en particulier s’il se spécialise dans l’hébergement haute performance de Commerce, peut recommander une configuration différente qui soit également ou plus efficace pour vos besoins.
 
 Pour Adobe Commerce dans les environnements d’infrastructure cloud, voir [Architecture de démarrage](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
 
@@ -27,7 +27,7 @@ La couleur de chaque élément du diagramme indique si l’élément fait partie
 
 ![Diagramme d’architecture de référence Commerce](../assets/performance/images/ref-architecture-2.3.png)
 
-Les sections suivantes contiennent des recommandations et des considérations pour chaque section du diagramme Architecture de référence de commerce.
+Les sections suivantes contiennent des recommandations et des considérations pour chaque section du diagramme de l’architecture de référence de Commerce.
 
 ### [!DNL Varnish]
 

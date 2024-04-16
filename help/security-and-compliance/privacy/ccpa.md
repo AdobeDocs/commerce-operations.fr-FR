@@ -2,9 +2,9 @@
 title: California Consumer Privacy Act (CCPA)
 description: Découvrez le California Consumer Privacy Act (CCPA), qui étend les droits des consommateurs en Californie pour déterminer comment leurs informations personnelles sont collectées, stockées et utilisées.
 exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Il s’agit d’une rubrique parmi d’autres pour aider Adobe Commerce et les marchands et développeurs Magento Open Sources à comprendre les implications de la California Consumer Privacy Act (CCPA). Les informations sont destinées à titre informatif uniquement et ne doivent pas être interprétées comme des conseils juridiques. Consultez votre service juridique pour déterminer si et comment votre entreprise doit se conformer à des obligations légales.
+>Il s’agit d’une rubrique parmi d’autres pour aider les marchands et les développeurs Adobe Commerce à comprendre les implications du California Consumer Privacy Act (CCPA). Les informations sont destinées à titre informatif uniquement et ne doivent pas être interprétées comme des conseils juridiques. Consultez votre service juridique pour déterminer si et comment votre entreprise doit se conformer à des obligations légales.
 
-La variable [CCPA](https://oag.ca.gov/privacy/ccpa) élargit les droits des consommateurs en Californie pour déterminer comment leurs informations personnelles sont collectées, stockées et utilisées, en mettant l&#39;accent sur la protection des consommateurs contre la vente, l&#39;échange non autorisé ou leurs informations personnelles. La CCPA a été adoptée en 2018 et entrera en vigueur le 1er janvier 2020.
+La variable [CCPA](https://oag.ca.gov/privacy/ccpa) élargit les droits des consommateurs en Californie pour déterminer comment leurs informations personnelles sont collectées, stockées et utilisées, en mettant l&#39;accent sur la protection des consommateurs contre la vente ou l&#39;exchange non autorisé ou leurs informations personnelles. La CCPA a été adoptée en 2018 et entrera en vigueur le 1er janvier 2020.
 
 Le CCPA accorde aux consommateurs les nouveaux droits suivants :
 

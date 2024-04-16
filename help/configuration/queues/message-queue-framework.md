@@ -1,10 +1,10 @@
 ---
 title: Présentation des files de messages
-description: Découvrez la structure de la file d’attente des messages et son fonctionnement avec l’application Adobe Commerce et Magento Open Source.
+description: Découvrez la structure de la file d’attente des messages et son fonctionnement avec l’application Adobe Commerce.
 exl-id: 21e7bc3e-6265-4399-9d47-d3b9f03dfef6
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ Le diagramme suivant illustre la structure de la file d’attente des messages :
 
 ![Structure de la file d’attente des messages](../../assets/configuration/mq-framework.png)
 
-- Un éditeur est un composant qui envoie des messages à un échange. Il connaît l’échange vers lequel publier et le format des messages qu’il envoie.
+- Un éditeur est un composant qui envoie des messages à un exchange. Il connaît l’exchange vers lequel publier et le format des messages qu’il envoie.
 
-- Un échange reçoit les messages des éditeurs et les envoie aux files d’attente. Bien que [!DNL RabbitMQ] prend en charge plusieurs types d’échanges, Commerce utilise uniquement les échanges de rubrique. Une rubrique comprend une clé de routage, qui contient des chaînes de texte séparées par des points. Le format du nom d’une rubrique est le suivant : `string1.string2`: par exemple, `customer.created` ou `customer.sent.email`.
+- Un exchange reçoit les messages des éditeurs et les envoie aux files d’attente. Bien que [!DNL RabbitMQ] prend en charge plusieurs types d’exchanges, Commerce utilise uniquement les exchanges de rubrique. Une rubrique comprend une clé de routage, qui contient des chaînes de texte séparées par des points. Le format du nom d’une rubrique est le suivant : `string1.string2`: par exemple, `customer.created` ou `customer.sent.email`.
 
   Le courtier vous permet d’utiliser des caractères génériques lors de la définition de règles pour le transfert de messages. Vous pouvez utiliser un astérisque (`*`) à remplacer. _one_ Chaîne ou signe dièse (`#`) pour remplacer 0 ou plusieurs chaînes. Par exemple : `customer.*` filtre sur `customer.create` et `customer.delete`, mais pas `customer.sent.email`. Cependant `customer.#` filtre sur `customer.create`,  `customer.delete`, et `customer.sent.email`.
 

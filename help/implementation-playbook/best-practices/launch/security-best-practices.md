@@ -3,9 +3,9 @@ title: Sécurisez votre site et votre infrastructure Commerce
 description: Maintenez la sécurité en mettant en oeuvre les bonnes pratiques de sécurité lors de la configuration, de la configuration et de la mise à jour des installations Adobe Commerce.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: cbfd19efd9f489fefa16d93cbd8116eefb57a900
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '2004'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Bien que vous ne puissiez pas éliminer tous les risques de sécurité, l’appl
 
 ## Recommandations relatives aux priorités
 
-Adobe considère que les recommandations suivantes ont la priorité la plus élevée pour tous les clients. Mettez en oeuvre ces bonnes pratiques de sécurité clés dans tous les déploiements de Commerce :
+Adobe considère que les recommandations suivantes ont la priorité la plus élevée pour tous les clients. Mettez en oeuvre les bonnes pratiques de sécurité clés suivantes dans tous les déploiements Commerce :
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Activer l’authentification à deux facteurs pour votre administrateur et toutes les connexions SSH**
 
@@ -59,7 +59,7 @@ La variable `lock config` et `lock env` Les commandes de l’interface de ligne 
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Exécution des analyses de sécurité**
 
-Utilisez la variable [Service d’analyse de sécurité de commerce](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) pour surveiller tous les sites Adobe Commerce et Magento Open Source à la recherche de risques de sécurité et de logiciels malveillants connus, et s’inscrire pour recevoir des mises à jour de correctifs et des notifications de sécurité.
+Utilisez la variable [Service d’analyse de sécurité Commerce](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) pour surveiller tous les sites Adobe Commerce à la recherche de risques de sécurité et de logiciels malveillants connus, et s’inscrire pour recevoir des mises à jour de correctifs et des notifications de sécurité.
 
 ## Garantir la sécurité des extensions et du code personnalisé
 
@@ -83,7 +83,7 @@ Lorsque vous étendez Adobe Commerce en ajoutant des extensions tierces à parti
 
 Adobe publie continuellement des composants de solution mis à jour afin d’améliorer la sécurité et de mieux protéger les clients contre tout compromis possible. La mise à niveau vers la dernière version de l’application Adobe Commerce, les services installés et les extensions et l’application des correctifs actuels est la première et la meilleure ligne de défense contre les menaces de sécurité.
 
-Commerce publie généralement des mises à jour de sécurité sur une base trimestrielle, mais se réserve le droit de publier des correctifs pour les principales menaces de sécurité en fonction de leurs priorités et d’autres facteurs.
+Commerce publie généralement les mises à jour de sécurité sur une base trimestrielle, mais se réserve le droit de publier des correctifs pour les principales menaces de sécurité en fonction des priorités et d’autres facteurs.
 
 Consultez les ressources suivantes pour plus d’informations sur les versions d’Adobe Commerce disponibles, les cycles de publication et le processus de mise à niveau et de correctif :
 
@@ -101,7 +101,7 @@ Consultez les ressources suivantes pour plus d’informations sur les versions d
 
 Si votre site Commerce est compromis, contrôlez les dommages et restaurez rapidement les opérations commerciales normales en développant et en mettant en oeuvre un plan complet de reprise sur sinistre.
 
-Si un client nécessite la restauration d’une instance Commerce en raison d’un désastre, Adobe peut fournir au client des fichiers de sauvegarde. Le client et l’intégrateur de solution, le cas échéant, peuvent effectuer la restauration.
+Si un client nécessite la restauration d’une instance Commerce en raison d’une catastrophe, Adobe peut lui fournir des fichiers de sauvegarde. Le client et l’intégrateur de solution, le cas échéant, peuvent effectuer la restauration.
 
 Dans le cadre d’un plan de reprise après sinistre, Adobe recommande vivement aux clients de [exporter leur configuration d’application Adobe Commerce ;](../../../configuration/cli/export-configuration.md) pour faciliter le redéploiement, s’il est nécessaire à des fins de continuité d’activité. La raison principale pour laquelle exporter la configuration vers le système de fichiers est que la configuration du système a priorité sur la configuration de la base de données. Dans un système de fichiers en lecture seule, l’application doit être redéployée pour modifier les paramètres de configuration sensibles, fournissant ainsi une couche de protection supplémentaire.
 
@@ -137,7 +137,7 @@ Les installations Adobe Commerce déployées sur l’infrastructure cloud peuven
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Configuration des paramètres avancés de protection des mots de passe**: configurez les mots de passe difficiles à deviner et modifiez-les au moins tous les 90 jours, comme recommandé par la norme de sécurité des données PCI dans la section 8.2.4. Voir [Configuration des paramètres de sécurité d’administration](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html).
 
-![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Utiliser HTTPS**: si le site Commerce vient d’être mis en oeuvre, lancez l’intégralité du site à l’aide de HTTPS. Google utilise non seulement HTTPS comme facteur de classement, mais de nombreux utilisateurs n’envisagent même pas d’acheter sur un site, sauf s’il est sécurisé avec HTTPS.
+![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Utiliser HTTPS**: si le site Commerce est récemment implémenté, lancez l’intégralité du site à l’aide de HTTPS. Google utilise non seulement HTTPS comme facteur de classement, mais de nombreux utilisateurs n’envisagent même pas d’acheter sur un site, sauf s’il est sécurisé avec HTTPS.
 
 ## Protect contre les malware
 
@@ -156,11 +156,11 @@ Une fois certaines actions effectuées (par exemple, l’envoi d’un formulaire
 
 >[!TIP]
 >
->Si un site Commerce est affecté par une attaque par un logiciel malveillant, suivez les bonnes pratiques d’Adobe Commerce pour [réponse à un incident de sécurité](../maintenance/respond-to-security-incident.md).
+>Si un site Commerce est affecté par une attaque par un logiciel malveillant, suivez les bonnes pratiques Adobe Commerce pour [réponse à un incident de sécurité](../maintenance/respond-to-security-incident.md).
 
 ### Connaître les attaques les plus courantes
 
-Vous trouverez ci-dessous une liste des catégories courantes d’attaques auxquelles Adobe recommande à tous les clients Commerce d’être informés et de prendre des mesures pour les protéger :
+Vous trouverez ci-dessous une liste des catégories courantes d’attaques auxquelles Adobe recommande à tous les clients Commerce de prendre connaissance et de prendre des mesures pour les protéger :
 
 - **Déformation du site**— Un attaquant endommage un site web en modifiant l&#39;aspect visuel du site ou en ajoutant ses propres messages. Bien que l’accès au site et aux comptes d’utilisateurs ait été compromis, les informations de paiement restent souvent protégées.
 
@@ -187,7 +187,7 @@ Les attaques par devinette force le mot de passe peuvent entraîner un accès ad
 
   >[!TIP]
   >
-  >Si vous employez une main-d’oeuvre distante, assurez-vous que les adresses IP des employés distants sont incluses dans la liste des adresses avec autorisation d’accès au site Commerce.
+  >Si vous utilisez une main-d’oeuvre distante, assurez-vous que les adresses IP des employés distants sont incluses dans la liste des adresses avec autorisation d’accès au site Commerce.
 
 ### Prévention des explosions de détournement de clic
 

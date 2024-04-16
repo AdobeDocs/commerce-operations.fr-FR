@@ -1,18 +1,18 @@
 ---
 title: Configuration du moteur de recherche
-description: Configurez un moteur de recherche pour les déploiements sur site d’Adobe Commerce et de Magento Open Source.
+description: Configurez un moteur de recherche pour les déploiements sur site d’Adobe Commerce.
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
 
 # Configuration du moteur de recherche
 
-Cette section décrit les paramètres minimaux que vous devez choisir pour tester Elasticsearch ou OpenSearch avec les déploiements sur site d’Adobe Commerce et de Magento Open Source.
+Cette section décrit les paramètres minimaux que vous devez choisir pour tester Elasticsearch ou OpenSearch avec les déploiements sur site d’Adobe Commerce.
 
 >[!TIP]
 >

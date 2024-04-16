@@ -1,18 +1,18 @@
 ---
 title: Prérequis du moteur de recherche
-description: Pour installer et configurer les logiciels de moteur de recherche pris en charge pour les installations sur site d’Adobe Commerce et de Magento Open Source, procédez comme suit.
+description: Pour installer et configurer les logiciels de moteur de recherche pris en charge pour les installations sur site d’Adobe Commerce, procédez comme suit.
 feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
 
 # Prérequis du moteur de recherche
 
-Depuis Adobe Commerce et Magento Open Source 2.4, toutes les installations doivent être configurées pour utiliser [Elasticsearch](https://www.elastic.co) ou [OpenSearch](https://opensearch.org/) en tant que solution de recherche catalogue.
+Depuis Adobe Commerce 2.4, toutes les installations doivent être configurées pour utiliser [Elasticsearch](https://www.elastic.co) ou [OpenSearch](https://opensearch.org/) en tant que solution de recherche catalogue.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Le diagramme qui précède affiche :
 
 Les requêtes de recherche sont traitées comme suit :
 
-1. Une demande de recherche d’un utilisateur est reçue par le serveur Web de Commerce, qui la transfère au serveur du moteur de recherche.
+1. Une requête de recherche d’un utilisateur est reçue par le serveur web Commerce, qui la transfère au serveur du moteur de recherche.
 
    Vous configurez le moteur de recherche pour qu’il se connecte à l’hôte et au port du proxy. Nous vous recommandons le port SSL du serveur web (par défaut, 443).
 

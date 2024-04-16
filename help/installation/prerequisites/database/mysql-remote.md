@@ -1,10 +1,10 @@
 ---
 title: Configuration d’une connexion de base de données MySQL distante
-description: Pour configurer une connexion à base de données distante pour les installations sur site d’Adobe Commerce et de Magento Open Source, procédez comme suit.
+description: Pour configurer une connexion à base de données distante pour les installations sur site d’Adobe Commerce, procédez comme suit.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Il peut arriver que vous souhaitiez héberger la base de données sur un serveur distinct au lieu d’exécuter le serveur de base de données et le serveur web sur le même ordinateur.
 
-Adobe a fourni un moyen de se connecter à un serveur MySQL sur une autre machine. Depuis Adobe Commerce et Magento Open Source 2.4.3, vous pouvez également configurer l’application pour utiliser une base de données Amazon Web Services (AWS) Aurora sans modification de code.
+Adobe a fourni un moyen de se connecter à un serveur MySQL sur une autre machine. Depuis Adobe Commerce 2.4.3, vous pouvez également configurer l’application pour utiliser une base de données Amazon Web Services (AWS) Aurora sans modification de code.
 
 Aurora est un serveur MySQL hautement performant et entièrement compatible hébergé sur AWS.
 
 ## Connexion à une base de données AWS Aurora
 
-L&#39;utilisation d&#39;Aurora comme base de données est aussi simple que la spécification de la base de données dans la configuration standard d&#39;Adobe Commerce et de Magento Open Source, à l&#39;aide du connecteur de base de données par défaut.
+Utiliser Aurora comme base de données est aussi simple que de spécifier la base de données dans la configuration standard d&#39;Adobe Commerce, à l&#39;aide du connecteur de base de données par défaut.
 
 En cours d’exécution `bin/magento setup:install`, utilisez les informations Aurora dans la variable `db-` fields :
 

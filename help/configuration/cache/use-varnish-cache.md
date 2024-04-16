@@ -3,16 +3,16 @@ title: Nettoyage du cache avec vernis
 description: Découvrez comment l’effacement de la mémoire cache fonctionne avec le vernis et comment l’utiliser comme accélérateur de mise en cache web pour l’application Adobe Commerce.
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
 
 # Nettoyage du cache avec vernis
 
-Cette rubrique aborde les principes de base de l’utilisation du vernis comme accélérateur de mise en cache web pour Adobe Commerce et Magento Open Source.
+Cette rubrique aborde les principes de base de l’utilisation du vernis comme accélérateur de mise en cache web pour Adobe Commerce.
 
 ## Purge de vernis
 
@@ -54,7 +54,7 @@ Par exemple,
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 ```
 
-Vous pouvez ensuite purger les hôtes ternes lorsque vous actualisez le cache Commerce (également appelé *nettoyage* le cache) dans l’Admin ou à l’aide de la ligne de commande.
+Vous pouvez ensuite purger les hôtes ternes lors de l’actualisation du cache de Commerce (également appelé *nettoyage* le cache) dans l’Admin ou à l’aide de la ligne de commande.
 
 Pour actualiser le cache à l’aide de l’administrateur, cliquez sur **[!UICONTROL SYSTEM]** > Outils > **Gestion du cache**, puis cliquez sur **Vider le cache du Magento** en haut de la page. (Vous pouvez également actualiser des types de cache individuels.)
 

@@ -1,11 +1,11 @@
 ---
 title: Solution de performance de la base de données de partage
-description: Découvrez la solution de base de données partagée pour Adobe Commerce et Magento Open Source.
+description: Découvrez la solution de base de données partagée pour Adobe Commerce.
 recommendations: noCatalog
 exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 {{deprecate-split-db}}
 
-Adobe Commerce offre plusieurs avantages en termes d’évolutivité, notamment la possibilité d’utiliser trois bases de données principales distinctes pour différents domaines fonctionnels de l’application Commerce.
+Adobe Commerce offre plusieurs avantages en termes d’évolutivité, notamment la possibilité d’utiliser trois bases de données maîtres distinctes pour différents domaines fonctionnels de l’application Commerce.
 
 L’extraction, les commandes et les données de produit peuvent utiliser une base de données principale distincte que vous pouvez éventuellement répliquer. Cette séparation met à l’échelle la charge par rapport aux passages en caisse d’un site web, aux activités de gestion des commandes, à la navigation sur le site web et aux activités de marchandisage, selon vos besoins. Ces modifications offrent une flexibilité considérable dans la façon dont le niveau de la base de données peut être mis à l’échelle.
 
@@ -24,7 +24,7 @@ L’extraction, les commandes et les données de produit peuvent utiliser une ba
 >
 >Adobe Commerce sur l’infrastructure cloud _not_ prennent en charge cette fonctionnalité.
 
-La variable `ResourceConnections` fournit la connexion de base de données MySQL unifiée à l’application Commerce. Pour les requêtes envoyées aux bases de données principales, nous implémentons le modèle de base de données CQRS (Command Query Responsabilité Segregation). Ce modèle gère la logique de routage des requêtes de lecture et d’écriture vers les bases de données appropriées. Les développeurs n’ont pas besoin de savoir quelle configuration est utilisée et il n’existe aucune connexion de base de données en lecture et en écriture distincte.
+La variable `ResourceConnections` fournit la connexion unifiée de la base de données MySQL à l’application Commerce. Pour les requêtes envoyées aux bases de données principales, nous implémentons le modèle de base de données CQRS (Command Query Responsabilité Segregation). Ce modèle gère la logique de routage des requêtes de lecture et d’écriture vers les bases de données appropriées. Les développeurs n’ont pas besoin de savoir quelle configuration est utilisée et il n’existe aucune connexion de base de données en lecture et en écriture distincte.
 
 Si vous configurez une réplication de base de données facultative, vous bénéficiez des avantages suivants :
 
@@ -60,7 +60,7 @@ En raison de la conception de la solution de performances de la base de données
 
 Cela signifie également que vous pouvez :
 
-- Configuration de la solution de base de données partagée _before_ Mise en production du commerce.
+- Configuration de la solution de base de données partagée _before_ mise en production de Commerce.
 
   Adobe recommande de configurer des bases de données partagées dès que possible après l’installation du logiciel Commerce.
 
@@ -74,7 +74,7 @@ Cela signifie également que vous pouvez :
 
 ## Conditions préalables
 
-La base de données partagée requiert que vous configuriez trois bases de données principales MySQL sur n’importe quel hôte (les trois sur le serveur Commerce, chaque base de données sur un serveur distinct, etc.). Voici les _master_ et elles sont utilisées comme suit :
+La base de données partagée nécessite la configuration de trois bases de données MySQL maîtres sur n’importe quel hôte (les trois sur le serveur Commerce, chaque base de données sur un serveur distinct, etc.). Voici les _master_ et elles sont utilisées comme suit :
 
 - Une base de données principale pour les tables de passage en caisse
 - Une base de données principale pour les tables de ventes (également appelées _Système de gestion des commandes_, ou _OMS_, tableaux)

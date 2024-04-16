@@ -1,23 +1,23 @@
 ---
 user-guide-title: Guide d’installation
-user-guide-description: Découvrez comment installer Adobe Commerce et Magento Open Source pour les déploiements sur site.
+user-guide-description: Découvrez comment installer Adobe Commerce pour les déploiements sur site.
 feature: Install
-source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 3%
+source-wordcount: '169'
+ht-degree: 2%
 
 ---
 
 
 # Guide d’installation {#installation-guide}
 
-- [Présentation](overview.md)
+- [Vue d’ensemble](overview.md)
 - [Configuration requise](system-requirements.md)
 - Conditions préalables {#prerequisites}
    - [Présentation](prerequisites/overview.md)
    - Système de fichiers {#file-system}
-      - [Présentation](prerequisites/file-system/overview.md)
+      - [Vue d’ensemble](prerequisites/file-system/overview.md)
       - [Configuration des autorisations](prerequisites/file-system/configure-permissions.md)
    - Serveur web {#web-server}
       - [Nginx](prerequisites/web-server/nginx.md)
@@ -26,7 +26,7 @@ ht-degree: 3%
       - [MySQL](prerequisites/database/mysql.md)
       - [Connexions distantes](prerequisites/database/mysql-remote.md)
    - Moteur de recherche {#search-engine}
-      - [Présentation](prerequisites/search-engine/overview.md)
+      - [Vue d’ensemble](prerequisites/search-engine/overview.md)
       - [AWS OpenSearch](prerequisites/search-engine/aws-opensearch.md)
       - [Configuration de Nginx](prerequisites/search-engine/configure-nginx.md)
       - [Configurer Apache](prerequisites/search-engine/configure-apache.md)
@@ -43,11 +43,11 @@ ht-degree: 3%
    - [Configuration de l’application](next-steps/configuration.md)
    - [Définir un masque (facultatif)](next-steps/set-umask.md)
    - Installer des exemples de données (facultatif) {#sample-data}
-      - [Présentation](sample-data/overview.md)
+      - [Vue d’ensemble](sample-data/overview.md)
       - [Télécharger les modules du compositeur](sample-data/composer-packages.md)
       - [Clonage des référentiels Git](sample-data/git-repositories.md)
       - [Suppression ou mise à jour de modules](sample-data/remove-or-update.md)
-- Tutoriels {#tutorials}
+- Tutorials {#tutorials}
    - [Sauvegarde et restauration du système de fichiers, du média et de la base de données](tutorials/backup.md)
    - [Vérification du statut de la base de données](tutorials/database-status.md)
    - [Configuration du comportement des consommateurs de messages](tutorials/message-consumers.md)

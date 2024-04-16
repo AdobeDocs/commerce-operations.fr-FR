@@ -2,9 +2,9 @@
 title: Installation d’Adobe Commerce
 description: Pour installer Adobe Commerce ou Magento Open Source sur une infrastructure que vous détenez, procédez comme suit.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2102'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Dans Adobe Commerce version 2.2.8 et ultérieure, vous pouvez créer l’utilisa
 | `--db-name` | Nom de l&#39;instance de base de données dans laquelle vous souhaitez installer les tables de base de données.<br><br>Par défaut : `magento2`. | Oui |
 | `--db-user` | Nom d’utilisateur du propriétaire de l’instance de base de données.<br><br>Par défaut : `root`. | Oui |
 | `--db-password` | Mot de passe du propriétaire de l’instance de base de données. | Oui |
-| `--db-prefix` | À utiliser uniquement si vous installez les tables de base de données dans une instance de base de données qui contient déjà des tables Adobe Commerce ou Magento Open Source.<br><br>Dans ce cas, utilisez un préfixe pour identifier les tables pour cette installation. Certains clients disposent de plusieurs instances Adobe Commerce et Magento Open Source s’exécutant sur un serveur avec toutes les tables dans la même base de données.<br><br>Le préfixe peut contenir, au maximum, cinq caractères. Il doit commencer par une lettre et ne peut contenir que des lettres, des chiffres et des caractères de soulignement.<br><br>Cette option permet à ces clients de partager le serveur de base de données avec plusieurs installations. | Non |
+| `--db-prefix` | À utiliser uniquement si vous installez les tables de base de données dans une instance de base de données qui contient déjà des tables Adobe Commerce ou Magento Open Source.<br><br>Dans ce cas, utilisez un préfixe pour identifier les tables pour cette installation. Certains clients disposent de plusieurs instances Adobe Commerce s’exécutant sur un serveur avec toutes les tables dans la même base de données.<br><br>Le préfixe peut contenir, au maximum, cinq caractères. Il doit commencer par une lettre et ne peut contenir que des lettres, des chiffres et des caractères de soulignement.<br><br>Cette option permet à ces clients de partager le serveur de base de données avec plusieurs installations. | Non |
 | `--db-ssl-key` | Chemin d’accès à la clé client. | Non |
 | `--db-ssl-cert` | Chemin d’accès au certificat client. | Non |
 | `--db-ssl-ca` | Chemin d’accès au certificat du serveur. | Non |
@@ -161,7 +161,7 @@ Dans Adobe Commerce version 2.2.8 et ultérieure, vous pouvez créer l’utilisa
 |--- |--- |--- |
 | `--lock-provider` | Verrouillez le nom du fournisseur.<br><br>Opérateurs de verrouillage disponibles : `db`, `zookeeper`, `file`.<br><br>Le fournisseur de verrouillage par défaut : `db` | Non |
 | `--lock-db-prefix` | Préfixe db spécifique pour éviter les conflits de verrouillage lors de l’utilisation de `db` fournisseur de verrouillage.<br><br>La valeur par défaut : `NULL` | Non |
-| `--lock-zookeeper-host` | Hôte et port pour vous connecter à la grappe Zookeeper lorsque vous utilisez `zookeeper` fournisseur de verrouillage.<br><br>Par exemple: `127.0.0.1:2181` | Oui, si vous définissez `--lock-provider=zookeeper` |
+| `--lock-zookeeper-host` | Hôte et port pour vous connecter à la grappe Zookeeper lorsque vous utilisez `zookeeper` fournisseur de verrouillage.<br><br>Par exemple : `127.0.0.1:2181` | Oui, si vous définissez `--lock-provider=zookeeper` |
 | `--lock-zookeeper-path` | Chemin d’accès dans lequel le gardien de page enregistre les verrous.<br><br>Le chemin par défaut est le suivant : `/magento/locks` | Non |
 | `--lock-file-path` | Chemin d’accès où les verrous de fichier sont enregistrés. | Oui, si vous définissez `--lock-provider=file` |
 

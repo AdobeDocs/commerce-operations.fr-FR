@@ -1,10 +1,10 @@
 ---
 title: Installation sur site avancée
-description: Découvrez les scénarios d’installation avancés d’Adobe Commerce ou de Magento Open Source sur l’infrastructure que vous détenez.
+description: Découvrez les scénarios d’installation avancés d’Adobe Commerce sur l’infrastructure que vous détenez.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '2383'
+source-wordcount: '2375'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Interface de ligne de commande
 
-Adobe Commerce et Magento Open Source disposent d’une interface de ligne de commande unique pour les tâches d’installation et de configuration : `<magento_root>/bin/magento`. L’interface effectue plusieurs tâches, notamment :
+Adobe Commerce dispose d’une seule interface de ligne de commande pour les tâches d’installation et de configuration : `<magento_root>/bin/magento`. L’interface effectue plusieurs tâches, notamment :
 
 * Installation (et tâches associées, telles que la création ou la mise à jour du schéma de base de données, la création de la configuration de déploiement).
 * Effacement du cache.

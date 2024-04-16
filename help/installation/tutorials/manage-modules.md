@@ -2,9 +2,9 @@
 title: Activation ou désactivation des modules
 description: Pour gérer les modules Adobe Commerce ou Magento Open Source, procédez comme suit.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 6e87d68df97adf47b5a61e8b6683ac11f600806c
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ bin/magento cache:clean
 
 ## A propos de l&#39;activation et de la désactivation des modules
 
-Adobe Commerce et Magento Open Source vous permettent d’activer ou de désactiver les modules actuellement disponibles, c’est-à-dire tout module fourni par l’Adobe ou tout module tiers actuellement disponible.
+Adobe Commerce vous permet d’activer ou de désactiver les modules actuellement disponibles, c’est-à-dire tout module fourni par Adobe ou tout module tiers actuellement disponible.
 
 Certains modules ont des dépendances sur d’autres modules, auquel cas vous ne pourrez pas activer ou désactiver un module car il a des dépendances sur d’autres modules.
 
@@ -92,7 +92,7 @@ Exemples :
 
 * Le module A est en conflit avec le module B. Vous pouvez désactiver le module A et le module B ou l’un ou l’autre de ces modules, mais vous pouvez *cannot* Activez simultanément les modules A et B.
 
-* Les dépendances sont déclarées dans la variable `require` dans Adobe Commerce et Magento Open Source `composer.json` pour chaque module. Les conflits sont déclarés dans le `conflict` champ dans les modules&#39; `composer.json` fichiers . Nous utilisons ces informations pour créer un graphique de dépendances : `A->B` signifie que le module A dépend du module B.
+* Les dépendances sont déclarées dans la variable `require` dans Adobe Commerce `composer.json` pour chaque module. Les conflits sont déclarés dans le `conflict` champ dans les modules&#39; `composer.json` fichiers . Nous utilisons ces informations pour créer un graphique de dépendances : `A->B` signifie que le module A dépend du module B.
 
 * A *chaîne de dépendance* est le chemin d’accès d’un module à un autre. Par exemple, si le module A dépend du module B et que le module B dépend du module C, la chaîne de dépendance est `A->B->C`.
 

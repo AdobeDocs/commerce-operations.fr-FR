@@ -1,10 +1,10 @@
 ---
 title: Installation sur site - Aperçu
-description: Découvrez le processus d’installation pour les déploiements sur site d’Adobe Commerce et de Magento Open Source.
+description: Découvrez le processus d’installation pour les déploiements sur site d’Adobe Commerce.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Le diagramme suivant présente un aperçu général de la _**sur site**_ installations d’Adobe Commerce et de Magento Open Source :
+>Le diagramme suivant présente un aperçu général de la _**sur site**_ installations d’Adobe Commerce :
 
 ![Fonctionnement de l’installation](../assets/installation/install-diagram-24.svg)
 
@@ -23,7 +23,7 @@ Le flux général d&#39;installation est le suivant :
 
    Installez le logiciel prérequis, notamment PHP, Apache, MySQL et le moteur de recherche. Voir [configuration requise](system-requirements.md) pour plus d’informations.
 
-1. Get [clés d’authentification](prerequisites/authentication-keys.md) dans le référentiel Commerce Composer.
+1. Get [clés d’authentification](prerequisites/authentication-keys.md) dans le référentiel du compositeur Commerce.
 
 1. Procurez-vous le logiciel Adobe Commerce ou Magento Open Source.
 

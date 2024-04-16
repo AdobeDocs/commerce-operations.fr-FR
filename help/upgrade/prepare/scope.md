@@ -2,9 +2,9 @@
 title: Présentation de la portée de la mise à niveau
 description: Découvrez les modifications incompatibles en amont dans une version pouvant avoir un impact sur les modules personnalisés Adobe Commerce ou Magento Open Source ou les extensions tierces.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Consultez la section [notes de mise à jour](https://devdocs.magento.com/guides/
 
 ## Modifications incompatibles avec l’arrière
 
-Les versions d’Adobe Commerce et de Magento Open Source peuvent contenir des modifications incompatibles avec le passé. Consultez notre documentation sur les modifications incompatibles avec l’arrière-plan, voir ce qui suit :
+Les versions d’Adobe Commerce peuvent contenir des modifications incompatibles avec le passé. Consultez notre documentation sur les modifications incompatibles avec l’arrière-plan, voir ce qui suit :
 
 - **[Principales caractéristiques des changements](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)**: modifications qui ont un impact majeur et nécessitent des explications détaillées et des instructions spéciales pour garantir le bon fonctionnement des modules tiers.
 - **[Référence de modification mineure](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)**: documentation de référence générée à partir de la base de code qui décrit les modifications mineures apportées aux classes, à l’adhésion à l’API, à la base de données, à l’injection de dépendances, aux interfaces, aux mises en page, au système et au schéma XSD.

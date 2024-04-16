@@ -1,10 +1,10 @@
 ---
 title: Présentation des exemples de données
-description: Découvrez comment utiliser des exemples de données pour les projets Adobe Commerce et Magento Open Source.
+description: Découvrez comment utiliser des exemples de données pour les projets Adobe Commerce.
 exl-id: 828b009d-a6ff-4db2-aa1a-838f6f55a194
-source-git-commit: decaac76955aaae011c308ed1295198abf791abe
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Vous pouvez installer des exemples de données avant ou après l’installation 
 
 >[!WARNING]
 >
->Vous ne pouvez pas désinstaller les exemples de données. Utilisez des exemples de données uniquement pour en savoir plus sur le fonctionnement d’Adobe Commerce et de Magento Open Source. Évitez d’effectuer un développement dans un système dans lequel vous avez installé des exemples de données.
+>Vous ne pouvez pas désinstaller les exemples de données. Utilisez des exemples de données uniquement pour en savoir plus sur le fonctionnement d’Adobe Commerce. Évitez d’effectuer un développement dans un système dans lequel vous avez installé des exemples de données.
 
 Vous pouvez installer des exemples de données facultatifs de l’une des manières suivantes :
 

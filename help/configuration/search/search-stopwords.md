@@ -3,9 +3,9 @@ title: Configuration des mots-clés de recherche
 description: Découvrez comment gérer les mots-arrêts pour Adobe Commerce à l’aide de fichiers CSV.
 feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Pour plus d’informations sur la façon dont Elasticsearch et OpenSearch utilis
 
 ## Configuration des mots-clés
 
-Les mots-clés situés dans la variable `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` répertoire . Adobe Commerce et Magento Open Source sont livrés avec un fichier CSV contenant les mots-clés pour les paramètres régionaux par défaut et un fichier supplémentaire, `stopwords.csv`, qui contient des mots de fin pour les paramètres régionaux qui ne sont pas représentés par un autre fichier CSV.
+Les mots-clés situés dans la variable `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` répertoire . Adobe Commerce est livré avec un fichier CSV contenant les mots-clés pour les paramètres régionaux par défaut et un fichier supplémentaire, `stopwords.csv`, qui contient des mots de fin pour les paramètres régionaux qui ne sont pas représentés par un autre fichier CSV.
 
 La durée de vie par défaut du cache de fichiers des mots-clés est de 15 minutes.
 
@@ -35,7 +35,7 @@ La durée de vie par défaut du cache de fichiers des mots-clés est de 15 minut
 
 **Pour modifier des mots-clés**:
 
-1. Connectez-vous à votre serveur Commerce ou passez à l’ [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
+1. Connectez-vous à votre serveur Commerce ou basculez vers [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
 1. Utilisation d’un éditeur de texte pour ouvrir un fichier de mots-clés dans la variable `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` répertoire .
 
    Les fichiers CSV utilisent la convention d’affectation des noms `stopwords_<locale_code>.csv`. Par exemple, le fichier du mot-clé allemand est nommé `stopwords_de_DE.csv`.
@@ -61,7 +61,7 @@ La durée de vie par défaut du cache de fichiers des mots-clés est de 15 minut
 
 **Pour ajouter des mots de fin pour un paramètre régional**:
 
-1. Connectez-vous à votre serveur Commerce ou passez à l’ [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
+1. Connectez-vous à votre serveur Commerce ou basculez vers [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
 
 1. Utilisez un éditeur de texte pour créer un fichier de mots-clés nommés `stopwords_<locale_code>.csv` dans le `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` répertoire .
 

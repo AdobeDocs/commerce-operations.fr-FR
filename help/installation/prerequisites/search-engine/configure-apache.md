@@ -1,11 +1,11 @@
 ---
 title: Configuration d’Apache pour votre moteur de recherche
-description: Pour configurer un moteur de recherche avec le serveur web Apache pour les installations sur site d’Adobe Commerce et de Magento Open Source, procédez comme suit.
+description: Pour configurer un moteur de recherche avec le serveur web Apache pour les installations sur site d’Adobe Commerce, procédez comme suit.
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---

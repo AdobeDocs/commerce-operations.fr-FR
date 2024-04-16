@@ -2,9 +2,9 @@
 title: Outil de ligne de commande
 description: Utilisez l’outil de ligne de commande Commerce pour exécuter les tâches d’installation et de configuration.
 exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Commerce possède une interface de ligne de commande —`<magento_root>/bin/magento`: exécute les tâches d’installation et de configuration, notamment :
 
-- L’installation de Commerce (et des tâches connexes telles que la mise à jour du schéma de base de données, créer une configuration de déploiement)
+- L’installation de Commerce (et les tâches associées, telles que la mise à jour du schéma de base de données, créer une configuration de déploiement)
 - Effacement du cache
 - Gestion des index, notamment réindexation
 - Création de dictionnaires de traduction et de packages de traduction
@@ -28,7 +28,7 @@ Autres avantages :
 - L’interface en ligne de commande est extensible, de sorte que les développeurs tiers puissent y &quot;se connecter&quot;. Cela permet également d’éliminer la courbe d’apprentissage des utilisateurs.
 - Les commandes des modules désactivés ne s’affichent pas.
 
-Cette rubrique aborde la configuration des logiciels Adobe Commerce et Magento Open Source à l’aide de l’interface de ligne de commande. Pour plus d’informations sur l’installation de Commerce, voir [Flux d’installation](../../installation/overview.md) dans le _Guide d’installation_.
+Cette rubrique aborde la configuration du logiciel Adobe Commerce à l’aide de l’interface en ligne de commande. Pour plus d’informations sur l’installation de Commerce, voir [Flux d’installation](../../installation/overview.md) dans le _Guide d’installation_.
 
 ## Conditions préalables
 
@@ -36,7 +36,7 @@ Avant de commencer à utiliser l’interface en ligne de commande, assurez-vous 
 
 1. Votre système répond aux exigences décrites dans la section [Configuration requise](../../installation/system-requirements.md) dans le _Guide d’installation_.
 1. Vous avez effectué toutes les tâches prérequises décrites dans la section [Conditions préalables](../../installation/prerequisites/overview.md) dans le _Guide d’installation_.
-1. Une fois que vous êtes connecté au serveur Commerce, basculez vers un utilisateur disposant des droits d’écriture sur le système de fichiers Commerce. Voir [passer au propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md) dans le _Guide d’installation_.
+1. Une fois que vous êtes connecté au serveur Commerce, basculez vers un utilisateur autorisé à écrire sur le système de fichiers Commerce. Voir [passer au propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md) dans le _Guide d’installation_.
 
 ## Exécution des commandes
 

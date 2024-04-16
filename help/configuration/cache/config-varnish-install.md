@@ -3,9 +3,9 @@ title: Installer le vernis
 description: Consultez les conseils sur l’installation de vernis.
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
-source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
@@ -32,4 +32,4 @@ Ouvrez un terminal et saisissez la commande suivante pour afficher la version de
 varnishd -V
 ```
 
-Assurez-vous que [Prise en charge d’Adobe Commerce et de Magento Open Source](../../installation/system-requirements.md) la version installée de Varnish avant de continuer. Si vous exécutez une version non prise en charge, vous devez effectuer une mise à niveau vers une version prise en charge. Pour plus d’informations, consultez la documentation sur l’installation du vernis .
+Assurez-vous que [Adobe Commerce prend en charge](../../installation/system-requirements.md) la version installée de Varnish avant de continuer. Si vous exécutez une version non prise en charge, vous devez effectuer une mise à niveau vers une version prise en charge. Pour plus d’informations, consultez la documentation sur l’installation du vernis .

@@ -3,16 +3,16 @@ title: Nettoyage du cache avec plusieurs instances de vernis
 description: Découvrez comment l’effacement du cache fonctionne avec plusieurs instances de vernis.
 feature: Configuration, Cache
 exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '176'
 ht-degree: 1%
 
 ---
 
 # Nettoyage du cache de plusieurs instances Varnish
 
-Adobe Commerce et Magento Open Source prennent en charge plusieurs instances de vernis prêtes à l’emploi.
+Adobe Commerce prend en charge plusieurs instances de vernis prêtes à l’emploi.
 
 Cette rubrique présente les principes de base de la configuration de plusieurs instances de vernis avec Commerce.
 
@@ -30,7 +30,7 @@ Par exemple,
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 ```
 
-Vous pouvez ensuite purger tous les hôtes de marque lors de l’actualisation du cache Commerce (également appelé _nettoyage_ le cache) dans l’Admin ou à l’aide de la ligne de commande.
+Vous pouvez ensuite purger tous les hôtes de marque lors de l’actualisation du cache de Commerce (également appelé _nettoyage_ le cache) dans l’Admin ou à l’aide de la ligne de commande.
 
 Pour actualiser le cache à l’aide de l’administrateur, cliquez sur **SYSTÈME** > Outils > **Gestion du cache**, puis cliquez sur **Vider le cache du Magento** en haut de la page. (Vous pouvez également actualiser des types de cache individuels.)
 

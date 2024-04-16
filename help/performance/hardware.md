@@ -1,11 +1,11 @@
 ---
 title: Recommendations matériel
-description: Consultez la liste du matériel recommandé pour optimiser les performances des déploiements Adobe Commerce et Magento Open Source.
+description: Consultez la liste du matériel recommandé pour optimiser les performances des déploiements Adobe Commerce.
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -50,4 +50,4 @@ Si vous déployez plusieurs [!DNL Commerce] et en utilisant Redis ou [!DNL Varni
 
 ## Bande passante réseau
 
-Une bande passante réseau suffisante est l’une des exigences clés pour l’échange de données entre les noeuds web, les bases de données, les serveurs de mise en cache/session et d’autres services. Parce que [!DNL Commerce] exploite efficacement la mise en cache pour des performances élevées, votre système peut échanger activement des données avec des serveurs de mise en cache tels que Redis. Si Redis se trouve sur un serveur distant, vous devez fournir un canal réseau suffisant entre les noeuds web et le serveur de mise en cache pour éviter les goulets d’étranglement lors des opérations de lecture/écriture.
+Une bande passante réseau suffisante est l’une des principales exigences pour l’exchange des données entre les noeuds web, les bases de données, les serveurs de mise en cache/session et d’autres services. Parce que [!DNL Commerce] exploite efficacement la mise en cache pour des performances élevées, votre système peut exchange activement des données avec des serveurs de mise en cache tels que Redis. Si Redis se trouve sur un serveur distant, vous devez fournir un canal réseau suffisant entre les noeuds web et le serveur de mise en cache pour éviter les goulets d’étranglement lors des opérations de lecture/écriture.

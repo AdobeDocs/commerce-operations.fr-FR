@@ -1,18 +1,18 @@
 ---
 title: Bonnes pratiques
-description: Utilisez les bonnes pratiques recommandées par l’Adobe pour gérer le processus de mise à niveau de vos projets Adobe Commerce et Magento Open Source.
+description: Utilisez les bonnes pratiques recommandées par l’Adobe pour gérer le processus de mise à niveau de vos projets Adobe Commerce.
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
 
 # Bonnes pratiques relatives à la mise à niveau
 
-Cette rubrique répertorie les actions que vous devez entreprendre pour gérer la complexité de la mise à niveau des projets Adobe Commerce et Magento Open Source. Votre équipe doit réfléchir aux mises à niveau dès le début du développement de votre projet et continuer à travailler sur chaque version. En suivant ces bonnes pratiques, le processus de mise à niveau sera beaucoup plus facile, plus rapide et moins coûteux.
+Cette rubrique répertorie les actions que vous devez entreprendre pour gérer la complexité de la mise à niveau des projets Adobe Commerce. Votre équipe doit réfléchir aux mises à niveau dès le début du développement de votre projet et continuer à travailler sur chaque version. En suivant ces bonnes pratiques, le processus de mise à niveau sera beaucoup plus facile, plus rapide et moins coûteux.
 
 >[!TIP]
 >

@@ -3,13 +3,13 @@ title: Bonnes pratiques de gestion des catalogues
 description: Découvrez les recommandations relatives à la configuration des limites de panier et des attributs de produit, à la pagination des listes, aux options, aux promotions et aux variations.
 role: Developer
 feature: Best Practices, Catalog Management
-source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
+exl-id: 9a672017-9122-4841-a67b-a183224b67dc
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques de gestion des catalogues
 
@@ -25,7 +25,7 @@ Les bonnes pratiques de gestion des catalogues décrites ici couvrent un large �
 
 ## Limites du panier
 
-Pour de meilleures performances, suivez les instructions ci-après pour gérer les limites de panier pour Adobe Commerce et Magento Open Source.
+Pour de meilleures performances, suivez les instructions ci-après pour gérer les limites de panier pour Adobe Commerce.
 
 ### Produits et versions concernés
 
@@ -262,4 +262,3 @@ Le fait d’avoir plus que le nombre maximal recommandé de règles de prix de p
 - Amélioration du temps de chargement et du rendu du minicart.
 - Augmentation du temps pour le rendu de la page de panier.
 - Augmentation du temps pour le rendu de la variable **Totaux** sur la page Passage en caisse .
-

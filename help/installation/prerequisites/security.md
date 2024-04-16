@@ -3,9 +3,9 @@ title: Sécurité de l’installation sur site
 description: Découvrez comment améliorer la sécurité de votre installation sur site Adobe Commerce ou Magento Open Source.
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe ne recommande pas d’utiliser SELinux ; vous pouvez l’utiliser pour une sécurité renforcée si vous le souhaitez. Si vous utilisez SELinux, vous devez le configurer correctement, sinon Adobe Commerce et Magento Open Source peuvent fonctionner de manière imprévisible. Si vous choisissez d’utiliser SELinux, consultez une ressource telle que la variable [Wiki de CentOS](https://wiki.centos.org/HowTos/SELinux) pour configurer des règles pour activer la communication.
+>Adobe ne recommande pas d’utiliser SELinux ; vous pouvez l’utiliser pour une sécurité renforcée si vous le souhaitez. Si vous utilisez SELinux, vous devez le configurer correctement, sinon Adobe Commerce peut fonctionner de manière imprévisible. Si vous choisissez d’utiliser SELinux, consultez une ressource telle que la variable [Wiki de CentOS](https://wiki.centos.org/HowTos/SELinux) pour configurer des règles pour activer la communication.
 
 ## Suggestion d’installation avec Apache
 
