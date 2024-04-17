@@ -3,9 +3,9 @@ title: La variable [!UICONTROL Redis] tab
 description: En savoir plus sur les [!UICONTROL Redis] de [!DNL Observation for Adobe Commerce].
 exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 06f015139683f319f11317f8d7f0029cbd2548e3
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ La variable **[!UICONTROL Redis used memory]** frame affiche l’utilisation du 
 
 ![Modifie depuis le dernier enregistrement de la base de données](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis] est un résident de la mémoire et enregistre les informations dans le stockage. La variable **[!UICONTROL Redis changes since last db save]** frame indique le nombre de modifications apportées à la mémoire depuis que la dernière base de données a été enregistrée dans le stockage. Voir [Réinitialiser la persistance](https://redis.io/docs/manual/persistence/) pour plus d’informations sur [!DNL Redis's] persistance.
+[!DNL Redis] est un résident de la mémoire et enregistre les informations dans le stockage. La variable **[!UICONTROL Redis changes since last db save]** frame indique le nombre de modifications apportées à la mémoire depuis que la dernière base de données a été enregistrée dans le stockage. Voir [Réinitialiser la persistance](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/) pour plus d’informations sur [!DNL Redis's] persistance.
 
 ## [!UICONTROL Redis synchronization from Log]
 
