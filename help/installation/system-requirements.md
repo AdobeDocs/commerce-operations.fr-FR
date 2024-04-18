@@ -2,9 +2,9 @@
 title: Configuration requise
 description: Utilisez cette référence pour identifier les dépendances logicielles requises qui ont été testées avec les versions d’Adobe Commerce.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -155,4 +155,4 @@ Pour Adobe Commerce on Cloud, voir [Configuration de Xdebug](https://experiencel
 
 >[!NOTE]
 >
->Il existe un problème connu avec `xdebug` qui peuvent affecter les installations d’Adobe Commerce ou de Magento Open Source ou l’accès au storefront ou à l’administrateur après l’installation. Voir [Problème connu qui affecte `xdebug` installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) dans le _Base de connaissances pour la prise en charge de Commerce_.
+>Il existe un problème connu avec `xdebug` qui peuvent affecter les installations Adobe Commerce ou l’accès au storefront ou à l’administrateur après l’installation. Voir [Problème connu qui affecte `xdebug` installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) dans le _Base de connaissances pour la prise en charge de Commerce_.

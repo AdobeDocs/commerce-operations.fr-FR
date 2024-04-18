@@ -4,16 +4,16 @@ description: Découvrez comment fusionner et minifier des fichiers CSS et JavaSc
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 2662ced484fb42bf2d32609e4e82364c1e47c8f0
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
 # Optimisation des fichiers de ressources
 
-Pour un site de commerce plus réactif, optimisez les fichiers de ressources CSS et JavaScript (JS) et supprimez les ressources de blocage du rendu.
+Pour un site Commerce plus réactif, optimisez les fichiers de ressources CSS et JavaScript (JS) et supprimez les ressources de blocage du rendu.
 
 - **Optimisation des fichiers CSS et JS**: réduisez le temps nécessaire au chargement des fichiers CSS et JavaScript (JS) en configurant Adobe Commerce pour fusionner, minifier et regrouper des fichiers distincts dans un seul fichier.
 - **Élimination des ressources bloquant le rendu**: envisagez de fournir des fonctionnalités JS et CSS critiques en ligne et de différer tous les styles JS/CSS non critiques. Pour plus d’informations, voir [Élimination des ressources bloquant le rendu](https://web.dev/render-blocking-resources/).
@@ -24,7 +24,6 @@ Pour un site de commerce plus réactif, optimisez les fichiers de ressources CSS
 
 - Adobe Commerce sur l’infrastructure cloud
 - Adobe Commerce sur site
-- Magento Open Source
 
 ## Fusion ou minimisation de fichiers CSS
 

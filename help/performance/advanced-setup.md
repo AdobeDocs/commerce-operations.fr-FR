@@ -2,9 +2,9 @@
 title: Configuration avancée
 description: Examinez les bonnes pratiques et les recommandations relatives aux systèmes d’entreprise de grande taille conçus pour traiter de grands volumes de données.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Vous pouvez également utiliser une grappe Redis qui effectue des opérations de
 
 ## Configuration [!DNL RabbitMQ]
 
-Magento Open Source et Adobe [!DNL Commerce] prendre en charge les files de messages implémentées via [!DNL RabbitMQ]. [!DNL Commerce] utilise ce service pour exécuter de nombreuses opérations asynchrones, y compris les opérations de catalogue B2B et les mises à jour de stock asynchrones. Toutes les interfaces permettant d’ajouter d’autres tâches au serveur de tâches sont distribuées avec le produit et sont disponibles pour l’implémentation de logique asynchrone personnalisée dans le cadre d’extensions tierces. Comme pour toute autre intégration, [!DNL Commerce] fournit un exemple de fichier de configuration pour [!DNL RabbitMQ] qui contient tous les paramètres recommandés et est entièrement prêt pour l’utilisation en production.
+Adobe Commerce prend en charge les files d’attente de messages implémentées via [!DNL RabbitMQ]. [!DNL Commerce] utilise ce service pour exécuter de nombreuses opérations asynchrones, y compris les opérations de catalogue B2B et les mises à jour de stock asynchrones. Toutes les interfaces permettant d’ajouter d’autres tâches au serveur de tâches sont distribuées avec le produit et sont disponibles pour l’implémentation de logique asynchrone personnalisée dans le cadre d’extensions tierces. Comme pour toute autre intégration, [!DNL Commerce] fournit un exemple de fichier de configuration pour [!DNL RabbitMQ] qui contient tous les paramètres recommandés et est entièrement prêt pour l’utilisation en production.
 
 ## Partage de la base
 

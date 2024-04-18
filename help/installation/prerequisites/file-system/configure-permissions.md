@@ -2,16 +2,16 @@
 title: Configuration de la propriété et des autorisations de fichier
 description: Pour configurer les autorisations du système de fichiers pour les installations sur site d’Adobe Commerce, procédez comme suit.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
 
 # Configuration de la propriété et des autorisations de fichier
 
-Cette rubrique explique comment définir des autorisations de lecture-écriture pour le groupe de serveurs web avant d’installer Adobe Commerce ou Magento Open Source. Cela est nécessaire afin que la ligne de commande puisse écrire des fichiers dans le système de fichiers.
+Cette rubrique explique comment définir des autorisations de lecture-écriture pour le groupe de serveurs web avant d’installer Adobe Commerce. Cela est nécessaire afin que la ligne de commande puisse écrire des fichiers dans le système de fichiers.
 
 La procédure que vous utilisez diffère selon que vous utilisez [hébergement partagé](#set-permissions-for-one-user-on-shared-hosting) et avoir un utilisateur ou si vous utilisez une [serveur privé](#set-ownership-and-permissions-for-two-users) et ont deux utilisateurs.
 

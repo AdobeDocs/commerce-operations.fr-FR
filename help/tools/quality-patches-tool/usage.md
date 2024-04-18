@@ -3,22 +3,22 @@ title: Utilisation
 description: Découvrez comment utiliser le [!DNL Quality Patches Tool].
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
 
 # Utilisation
 
-La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fournit des correctifs individuels développés par Adobe et la communauté Magento Open Source. Il vous permet d’appliquer, de rétablir et d’afficher des informations générales sur tous les correctifs individuels disponibles pour la version installée d’Adobe Commerce ou de Magento Open Source. Vous pouvez appliquer des correctifs aux projets Adobe Commerce, quel que soit le développeur du correctif. Par exemple, vous pouvez appliquer un correctif développé par la communauté aux projets Adobe Commerce.
+La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fournit des correctifs individuels développés par Adobe et la communauté Magento Open Source. Il vous permet d’appliquer, de rétablir et d’afficher des informations générales sur tous les correctifs individuels disponibles pour la version installée d’Adobe Commerce. Vous pouvez appliquer des correctifs aux projets Adobe Commerce, quel que soit le développeur du correctif. Par exemple, vous pouvez appliquer un correctif développé par la communauté aux projets Adobe Commerce.
 
 Regardez ceci : [video technique](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) et découvrez comment utiliser l’outil de correctifs de qualité pour Adobe Commerce.
 
 >[!INFO]
 >
->Voir [Application de correctifs individuels](#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce ou Magento Open Source. Voir [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) pour consulter la liste complète des correctifs publiés.
+>Voir [Application de correctifs individuels](#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) pour consulter la liste complète des correctifs publiés.
 
 >[!WARNING]
 >
@@ -36,7 +36,7 @@ composer require magento/quality-patches
 
 ## Affichage des correctifs individuels
 
-Pour afficher la liste des correctifs individuels disponibles pour votre version d’Adobe Commerce ou de Magento Open Source :
+Pour afficher la liste des correctifs individuels disponibles pour votre version d’Adobe Commerce :
 
 ```bash
 ./vendor/bin/magento-patches status
@@ -76,7 +76,7 @@ Le tableau d’état comprend :
 
 >[!INFO]
 >
->Après la mise à niveau vers une nouvelle version d’Adobe Commerce ou de Magento Open Source, vous devez réappliquer les correctifs si ceux-ci ne sont pas inclus dans la nouvelle version. Voir [Réappliquer des correctifs après une mise à niveau](#re-apply-patches-after-an-upgrade).
+>Après la mise à niveau vers une nouvelle version d’Adobe Commerce, vous devez réappliquer les correctifs si ceux-ci ne sont pas inclus dans la nouvelle version. Voir [Réappliquer des correctifs après une mise à niveau](#re-apply-patches-after-an-upgrade).
 
 ## Application de correctifs individuels {#apply-individual-patches}
 
@@ -104,7 +104,7 @@ Vous devez nettoyer le cache après avoir appliqué des correctifs pour voir les
 
 >[!INFO]
 >
->Envisagez de conserver une liste des correctifs appliqués à un emplacement distinct. Vous devrez peut-être réappliquer certaines d’entre elles après la mise à niveau vers une nouvelle version d’Adobe Commerce ou de Magento Open Source. Voir [Réappliquer des correctifs après une mise à niveau](#re-apply-patches-after-an-upgrade).
+>Envisagez de conserver une liste des correctifs appliqués à un emplacement distinct. Vous devrez peut-être réappliquer certaines d’entre elles après la mise à niveau vers une nouvelle version d’Adobe Commerce. Voir [Réappliquer des correctifs après une mise à niveau](#re-apply-patches-after-an-upgrade).
 
 ## Rétablissement de correctifs individuels
 
@@ -156,7 +156,7 @@ Affichez les correctifs ajoutés :
 
 ## Réappliquer des correctifs après une mise à niveau {#re-apply-patches-after-an-upgrade}
 
-Lorsque vous effectuez une mise à niveau vers une nouvelle version d’Adobe Commerce ou de Magento Open Source, vous devez réappliquer les correctifs si ceux-ci ne sont pas inclus dans la nouvelle version.
+Lorsque vous effectuez une mise à niveau vers une nouvelle version d’Adobe Commerce, vous devez réappliquer les correctifs si ceux-ci ne sont pas inclus dans la nouvelle version.
 
 Pour réappliquer des correctifs :
 

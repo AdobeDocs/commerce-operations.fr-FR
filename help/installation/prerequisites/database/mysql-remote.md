@@ -2,9 +2,9 @@
 title: Configuration d’une connexion de base de données MySQL distante
 description: Pour configurer une connexion à base de données distante pour les installations sur site d’Adobe Commerce, procédez comme suit.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Avant de commencer, vous devez :
 
 * [Installation du serveur MySQL](mysql.md) sur le serveur de base de données.
 * [Créer une instance de base de données](mysql.md#configuring-the-database-instance) sur le serveur de base de données.
-* Installez le client MySQL sur votre noeud web Adobe Commerce ou Magento Open Source. Pour plus d’informations, consultez la documentation MySQL .
+* Installez le client MySQL sur votre noeud web Adobe Commerce. Pour plus d’informations, consultez la documentation MySQL .
 
 ### Haute disponibilité
 
@@ -136,7 +136,7 @@ Sur l’hôte de noeud web, saisissez la commande suivante pour vérifier le fon
 mysql -u <local database username> -h <database server ip address> -p
 ```
 
-Si le moniteur MySQL s’affiche comme suit, la base de données est prête pour Adobe Commerce ou Magento Open Source :
+Si le moniteur MySQL s’affiche comme suit, la base de données est prête pour Adobe Commerce :
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -151,9 +151,9 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 Si votre serveur web est en grappe, saisissez la commande sur chaque hôte de serveur web.
 
-## Installation d’Adobe Commerce ou de Magento Open Source
+## Installation d’Adobe Commerce
 
-Lorsque vous installez Adobe Commerce ou Magento Open Source, vous devez indiquer les informations suivantes :
+Lorsque vous installez Adobe Commerce, vous devez indiquer les informations suivantes :
 
 * L’URL de base (également appelée *adresse du magasin*) indique le nom d’hôte ou l’adresse IP du *noeud web*
 * L’hôte de base de données est *serveur de base de données distant* Adresse IP (ou équilibreur de charge si le serveur de base de données est en cluster)

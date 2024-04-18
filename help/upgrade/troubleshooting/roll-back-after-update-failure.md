@@ -1,10 +1,10 @@
 ---
 title: Restauration après échec de la mise à jour du module
-description: Dépannez votre mise à niveau Adobe Commerce ou Magento Open Source après avoir rencontré une erreur de mise à jour de module.
+description: Résolvez votre mise à niveau Adobe Commerce après avoir rencontré une erreur de mise à jour de module.
 exl-id: 1537a6b1-b450-4f90-bffb-73359fa71598
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---

@@ -2,20 +2,20 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: f21891b1be51896efba83d36048c20119ea1edbf
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '20493'
+source-wordcount: '20485'
 ht-degree: 0%
 
 ---
 
 # Notes de mise à jour
 
-La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fournit des correctifs individuels développés par Adobe et la communauté Magento Open Source. Il vous permet d’appliquer, de rétablir et d’afficher des informations générales sur tous les correctifs individuels disponibles pour la version installée d’Adobe Commerce ou de Magento Open Source. Vous pouvez appliquer des correctifs aux projets Adobe Commerce et Magento Open Source, quel que soit le développeur du correctif. Par exemple, vous pouvez appliquer un correctif développé par la communauté aux projets Adobe Commerce.
+La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fournit des correctifs individuels développés par Adobe et la communauté Magento Open Source. Il vous permet d’appliquer, de rétablir et d’afficher des informations générales sur tous les correctifs individuels disponibles pour la version installée d’Adobe Commerce. Vous pouvez appliquer des correctifs aux projets Adobe Commerce et Magento Open Source, quel que soit le développeur du correctif. Par exemple, vous pouvez appliquer un correctif développé par la communauté aux projets Adobe Commerce.
 
 >[!INFO]
 >
->Voir [Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce ou Magento Open Source. Voir [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le Guide de mise à jour du logiciel pour consulter la liste complète des correctifs publiés.
+>Voir [Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le Guide de mise à jour du logiciel pour consulter la liste complète des correctifs publiés.
 
 >[!INFO]
 >

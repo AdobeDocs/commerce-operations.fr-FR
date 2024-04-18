@@ -1,10 +1,10 @@
 ---
 title: Vérification du statut de la base de données
-description: Pour vérifier l’état de votre base de données Adobe Commerce ou Magento Open Source, procédez comme suit.
+description: Procédez comme suit pour vérifier l’état de votre base de données Adobe Commerce.
 exl-id: 33d9b30a-4504-4955-b11a-0a642f23209b
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '104'
 ht-degree: 3%
 
 ---

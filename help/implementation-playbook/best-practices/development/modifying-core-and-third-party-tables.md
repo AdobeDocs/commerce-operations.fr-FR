@@ -5,9 +5,9 @@ role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Pour plus d’informations sur l’utilisation de l’intégration d’API à Gr
 Si vous déterminez que les données héritées nécessitent une migration ou que de nouvelles données doivent être enregistrées dans [!DNL Adobe Commerce], Adobe recommande d’utiliser [attributs d’extension](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. L’utilisation d’attributs d’extension pour enregistrer des données supplémentaires présente les avantages suivants :
 
 - Vous pouvez contrôler les données conservées et la structure de la base de données, ce qui garantit que les données sont enregistrées avec le type de colonne correct et les index adéquats.
-- La plupart des entités dans [!DNL Adobe Commerce] et [!DNL Magento Open Source] prennent en charge l’utilisation d’attributs d’extension.
+- La plupart des entités dans [!DNL Adobe Commerce] prennent en charge l’utilisation d’attributs d’extension.
 - Les attributs d’extension sont un mécanisme indépendant du stockage qui offre la possibilité d’enregistrer les données à l’emplacement optimal de votre projet.
 
 Deux exemples d’emplacements de stockage sont des tables de base de données et [!DNL Redis]. Les éléments essentiels à prendre en compte lors du choix d’un emplacement sont les suivants : l’emplacement introduit une complexité supplémentaire ou affecte les performances.
@@ -71,7 +71,7 @@ Adobe recommande de procéder comme suit lorsque vous ajoutez une colonne à un 
 
 1. Créez un module avec un nom dans votre espace de noms qui représente ce que vous mettez à jour.
 
-   Par exemple: `app/code/YourCompany/Customer`
+   Par exemple : `app/code/YourCompany/Customer`
 
 1. Créez les fichiers appropriés pour activer le module (voir [Création d’un module](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 

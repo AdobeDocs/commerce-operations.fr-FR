@@ -4,9 +4,9 @@ description: Découvrez les bonnes pratiques de mise en oeuvre pour la phase de 
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '424'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
   </tr>
   <tr>
     <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">Mise en cache pleine page</a></td>
-    <td>Découvrez comment utiliser les données publiques lors de l’implémentation de la mise en cache dans votre extension Adobe Commerce ou Magento Open Source.</td>
+    <td>Découvrez comment utiliser les données publiques lors de l’implémentation de la mise en cache dans votre extension Adobe Commerce.</td>
   </tr>
   <tr>
     <td><a href="opcache-memory-size.md">Taille de la mémoire OPcache</a></td>

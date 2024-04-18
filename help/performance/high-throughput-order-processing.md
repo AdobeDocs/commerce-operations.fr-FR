@@ -1,11 +1,11 @@
 ---
 title: Traitement des commandes à haut débit
-description: Optimisez l’emplacement des commandes et l’expérience de passage en caisse pour votre déploiement Adobe Commerce ou Magento Open Source.
+description: Optimisez l’emplacement des commandes et l’expérience de passage en caisse pour votre déploiement Adobe Commerce.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---

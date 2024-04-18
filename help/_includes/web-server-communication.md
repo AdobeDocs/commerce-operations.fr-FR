@@ -1,7 +1,7 @@
 ---
-source-git-commit: 475dbc056ac3e6a00c8f794259bb0fbf04143687
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Nous vous recommandons ce qui suit :
 
 * Votre moteur de recherche s’exécute sur le même hôte qu’un serveur web. L’exécution du moteur de recherche et du serveur web sur différents hôtes dépasse le cadre de cette rubrique.
 
-  L’avantage de placer le moteur de recherche et le serveur web sur le même hôte est qu’il rend impossible l’interception de communications cryptées. Il n’est pas nécessaire que le serveur web du moteur de recherche soit le même que le serveur web Adobe Commerce ou le serveur Magento Open Source ; par exemple, Adobe Commerce peut exécuter Apache et Elasticsearch/OpenSearch peut exécuter nginx.
+  L’avantage de placer le moteur de recherche et le serveur web sur le même hôte est qu’il rend impossible l’interception de communications cryptées. Le serveur web du moteur de recherche ne doit pas nécessairement être le même que le serveur web Adobe Commerce ; par exemple, Adobe Commerce peut exécuter Apache et Elasticsearch/OpenSearch peut exécuter nginx.
 
   Si le moteur de recherche est exposé au Web public, vous devez configurer l’authentification. Si votre instance de moteur de recherche est protégée sur votre réseau, cela peut ne pas être nécessaire. Collaborez avec votre fournisseur d’hébergement pour déterminer les mesures de sécurité à implémenter pour protéger votre instance.
 

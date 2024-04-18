@@ -1,7 +1,7 @@
 ---
-source-git-commit: 405c1d7073e5936aefc7fb3c6eb1d5dd4d69a066
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '6574'
+source-wordcount: '6363'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ _Attributs de terme :_
 _nom_
 
 Une caractéristique ou une propriété d’un produit qui décrit un aspect du produit.
-Les utilisateurs d’Adobe Commerce ou de Magento Open Source peuvent créer des attributs personnalisés à ajouter au jeu d’attributs par défaut ou à un jeu d’attributs personnalisé.
+Les utilisateurs d’Adobe Commerce peuvent créer des attributs personnalisés à ajouter au jeu d’attributs par défaut ou à un jeu d’attributs personnalisé.
 Créez ces attributs par le biais de l’administrateur ou par programmation.
 Exemples : couleur, taille, poids, prix, âge, sexe, etc.
 
@@ -739,7 +739,7 @@ _nom_
 
 Code qui étend ou personnalise le comportement Adobe Commerce.
 Vous pouvez éventuellement regrouper et distribuer une extension sur Commerce Marketplace ou sur un autre système de distribution d’extension.
-Une extension Commerce peut inclure des modules, des thèmes et des modules de langue.
+Une extension Commerce peut inclure des modules, des thèmes et des packs de langue.
 
 _Attributs de terme :_
 
@@ -1013,7 +1013,7 @@ _Attributs de terme :_
 _nom_
 
 MFTF est un [Structure des tests fonctionnels](https://developer.adobe.com/commerce/testing/functional-testing-framework/).
-Il fournit une structure de test pour les développeurs de commerce et les ingénieurs logiciels, tels que les spécialistes de l’assurance qualité, les développeurs PHP et les intégrateurs de système.
+Il fournit une structure de test pour les développeurs Commerce et les ingénieurs logiciels, tels que les spécialistes de l’assurance qualité, les développeurs PHP et les intégrateurs système.
 Les développeurs et l’assurance qualité peuvent rédiger des tests pour tenter d’interagir avec les applications web, vérifier les fonctionnalités et automatiser les tests de régression.
 
 _Attributs de terme :_
@@ -1169,7 +1169,7 @@ _Attributs de terme :_
 
 _nom_
 
-Le règlement a lieu lorsque la banque qui procède à l&#39;acquisition et les fonds de change de l&#39;émetteur et que le produit est déposé sur le compte marchand.
+Le règlement a lieu lorsque la banque qui procède à l&#39;acquisition et les fonds de l&#39;exchange émetteur et que le produit est déposé sur le compte marchand.
 
 _Attributs de terme :_
 
@@ -1380,7 +1380,7 @@ Contient des informations graphiques et d’aspect.
 Personnalise l’aspect du magasin.
 Adobe Commerce peut envoyer des thèmes dans des modules (compositeur).
 Mais les thèmes peuvent être placés sous application/conception, qui n’est pas fournie dans un package.
-Les modules sont l’unité de téléchargement du compositeur d’expérience visuelle et, par Commerce Marketplace, les utilisateurs de Commerce peuvent télécharger CE ou EE sous la forme d’une série de modules, où les modules contiennent des modules, des thèmes ou des modules de langue.
+Les modules sont l’unité de téléchargement du compositeur d’expérience visuelle et — par Commerce Marketplace — les utilisateurs de Commerce peuvent télécharger CE ou EE sous la forme d’une série de modules, où les modules contiennent des modules, des thèmes ou des modules de langue.
 
 _Attributs de terme :_
 
@@ -1438,7 +1438,7 @@ _Attributs de terme :_
 _nom_
 
 Le code produit par le fournisseur qui étend ou personnalise le comportement de Commerce et fonctionne comme une extension tierce est considéré comme une extension groupée de fournisseurs (VBE).
-Les VBE sont soigneusement testées et incluses avec chaque version prise en charge de Magento Open Source et Adobe Commerce.
+Les environnements virtuels sont soigneusement testés et inclus dans chaque version prise en charge d’Adobe Commerce.
 Un serveur de diffusion virtuelle peut inclure des modules, des thèmes et des modules de langue.
 
 En savoir plus dans la section [Rubrique Extension groupée du fournisseur](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).

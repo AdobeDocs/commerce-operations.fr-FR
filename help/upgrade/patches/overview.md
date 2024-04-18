@@ -2,9 +2,9 @@
 title: Fonctionnement des correctifs
 description: Découvrez les différents types de correctifs pour Adobe Commerce et leur fonctionnement.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Utilisez la variable [[!DNL Quality Patches Tool]](https://experienceleague.adob
 
 ## Correctifs personnalisés
 
-Parfois, il faut un certain temps à l’équipe d’ingénierie d’Adobe pour inclure un correctif de bogue créé sur GitHub dans une version d’Adobe Commerce ou du compositeur de Magento Open Source. En attendant, vous pouvez créer un correctif à partir de GitHub et utiliser la variable [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) pour l’appliquer à votre installation basée sur le compositeur.
+Parfois, il faut un certain temps à l’équipe d’ingénierie d’Adobe pour inclure un correctif de bogue créé sur GitHub dans une version du compositeur d’Adobe Commerce. En attendant, vous pouvez créer un correctif à partir de GitHub et utiliser la variable [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) pour l’appliquer à votre installation basée sur le compositeur.
 
 Utilisez la variable [ligne de commande](apply.md#command-line) ou [Compositeur](apply.md#composer) pour appliquer des correctifs personnalisés.
 

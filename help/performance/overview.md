@@ -1,10 +1,10 @@
 ---
-title: Présentation
-description: Suivez ces bonnes pratiques pour optimiser les performances de votre déploiement Adobe Commerce ou Magento Open Source.
+title: Vue d’ensemble
+description: Suivez ces bonnes pratiques pour optimiser les performances de votre déploiement Adobe Commerce.
 exl-id: 5381a477-bacd-4e74-a150-7f98abc2f744
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '86'
 ht-degree: 1%
 
 ---
@@ -15,5 +15,5 @@ La variable _Bonnes pratiques en matière de performances_ Ce guide fournit des 
 
 ## Hypothèses
 
-* Vous avez installé Adobe Commerce ou Magento Open Source à l’aide de [Compositeur](../installation/composer.md).
-* Vous utilisez cette installation pour exécuter une instance de production en direct d’Adobe Commerce ou de Magento Open Source.
+* Vous avez installé Adobe Commerce à l’aide de [Compositeur](../installation/composer.md).
+* Vous utilisez cette installation pour exécuter une instance de production en direct d’Adobe Commerce.

@@ -2,9 +2,9 @@
 title: Modules et extensions de mise à niveau
 description: Utilisez l’interface de ligne de commande et le compositeur pour mettre à niveau les modules et extensions Adobe Commerce.
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Pour mettre à jour ou mettre à niveau un module ou une extension :
 
 1. Téléchargez le fichier mis à jour depuis Marketplace ou un autre développeur d’extensions. Prenez note du nom et de la version du module.
 
-1. Exportez le contenu vers votre répertoire d’installation racine Adobe Commerce ou Magento Open Source.
+1. Exportez le contenu vers votre répertoire d’installation racine Adobe Commerce.
 
 1. S’il existe un module de compositeur pour le module, exécutez l’une des opérations suivantes.
 

@@ -1,10 +1,10 @@
 ---
 title: Vérification de l’installation
-description: Suivez ces étapes pour confirmer que votre installation Adobe Commerce ou Magento Open Source sur site a réussi.
+description: Suivez ces étapes pour confirmer que votre installation Adobe Commerce sur site a réussi.
 exl-id: 0bd7ec01-c616-4384-ae26-db2ce3668caf
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---

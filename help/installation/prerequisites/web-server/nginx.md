@@ -2,9 +2,9 @@
 title: Nginx
 description: Pour installer et configurer le serveur web Nginx pour les installations sur site d’Adobe Commerce, procédez comme suit.
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1110'
 ht-degree: 0%
 
 ---
@@ -97,13 +97,13 @@ Cet exemple présente une installation basée sur le compositeur à l’aide de 
    cd /var/www/html
    ```
 
-1. Installez le compositeur globalement. Le compositeur est nécessaire pour mettre à jour les dépendances avant d’installer Adobe Commerce ou Magento Open Source :
+1. Installez le compositeur globalement. Le compositeur est nécessaire pour mettre à jour les dépendances avant d’installer Adobe Commerce :
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Créez un projet de compositeur à l’aide du métapaquet Magento Open Source ou Adobe Commerce.
+1. Créez un projet de compositeur à l’aide du métapaquet Adobe Commerce.
 
    **Magento Open Source**
 
@@ -207,7 +207,7 @@ Ces instructions supposent que vous utilisez l’emplacement Ubuntu par défaut 
    >
    >La variable `include` doit pointer vers l’exemple de fichier de configuration nginx dans votre répertoire d’installation.
 
-1. Remplacer `www.magento-dev.com` par votre nom de domaine. Celui-ci doit correspondre à l’URL de base que vous avez spécifiée lors de l’installation d’Adobe Commerce ou de Magento Open Source.
+1. Remplacer `www.magento-dev.com` par votre nom de domaine. Il doit correspondre à l’URL de base que vous avez spécifiée lors de l’installation d’Adobe Commerce.
 
 1. Enregistrez l’éditeur, puis quittez-le.
 
@@ -283,7 +283,7 @@ Adobe Commerce nécessite plusieurs [PHP](../php-settings.md) des extensions pou
 
    >[!NOTE]
    >
-   >Nous vous recommandons de définir la limite de mémoire sur 2 G lors du test d’Adobe Commerce ou de Magento Open Source. Voir [Paramètres PHP requis](../php-settings.md) pour plus d’informations.
+   >Nous vous recommandons de définir la limite de mémoire sur 2 G lors du test d’Adobe Commerce. Voir [Paramètres PHP requis](../php-settings.md) pour plus d’informations.
 
 1. Annulez la mise en commentaire du répertoire du chemin de session et définissez le chemin d’accès :
 
@@ -376,13 +376,13 @@ Cet exemple présente une installation basée sur le compositeur à l’aide de 
    cd /var/www/html
    ```
 
-1. Installez le compositeur globalement. Le compositeur est nécessaire pour mettre à jour les dépendances avant d’installer Adobe Commerce ou Magento Open Source :
+1. Installez le compositeur globalement. Le compositeur est nécessaire pour mettre à jour les dépendances avant d’installer Adobe Commerce :
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Créez un projet de compositeur à l’aide du métapaquet Magento Open Source ou Adobe Commerce.
+1. Créez un projet de compositeur à l’aide du métapaquet Adobe Commerce.
 
    **Magento Open Source**
 

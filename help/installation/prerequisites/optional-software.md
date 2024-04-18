@@ -2,9 +2,9 @@
 title: Logiciels facultatifs
 description: En savoir plus sur les logiciels facultatifs que vous pouvez installer pour prendre en charge les installations sur site d’Adobe Commerce.
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Nous vous recommandons vivement d’installer NTP pour vous assurer que les tâches liées à cron fonctionnent correctement. (Les dates du serveur peuvent être passées ou futures, par exemple.)
 
-Les autres utilitaires facultatifs abordés dans cette rubrique peuvent vous aider à effectuer votre installation. Toutefois, ils ne sont pas nécessaires pour installer ou utiliser Adobe Commerce ou Magento Open Source.
+Les autres utilitaires facultatifs abordés dans cette rubrique peuvent vous aider à effectuer votre installation. Toutefois, ils ne sont pas nécessaires pour installer ou utiliser Adobe Commerce.
 
 ## Installation et configuration du protocole NTP (Network Time Protocol)
 
 [NTP](https://www.ntp.org/) permet aux serveurs de synchroniser leurs horloges système à l’aide de [serveurs de pool disponibles globalement](https://www.ntppool.org/en/). Nous vous recommandons d’utiliser des serveurs NTP en qui vous avez confiance, qu’il s’agisse de solutions matérielles dédiées à votre réseau interne ou de serveurs publics externes.
 
-Si vous déployez Adobe Commerce ou Magento Open Source sur plusieurs hôtes, NTP est un moyen simple de garantir que leurs horloges sont toutes synchronisées, quel que soit le fuseau horaire des serveurs. En outre, les tâches liées à cron (telles que l’indexation et les emails transactionnels) dépendent de la précision de l’horloge du serveur.
+Si vous déployez Adobe Commerce sur plusieurs hôtes, le protocole NTP est un moyen simple de garantir que leurs horloges sont toutes synchronisées, quel que soit le fuseau horaire dans lequel se trouvent les serveurs. En outre, les tâches liées à cron (telles que l’indexation et les emails transactionnels) dépendent de la précision de l’horloge du serveur.
 
 ### Installation et configuration de NTP sur Ubuntu
 

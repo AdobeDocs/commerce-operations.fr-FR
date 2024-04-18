@@ -2,9 +2,9 @@
 title: Mise à niveau
 description: Découvrez les différentes phases de mise en oeuvre de la mise à niveau pour les projets Adobe Commerce.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '812'
 ht-degree: 1%
 
 ---
@@ -38,23 +38,23 @@ Vous trouverez ci-dessous des éléments que vous pouvez inclure dans une analys
 
   | Service | Version actuelle | Mettre à niveau vers | Remarques |
   |-----------------|-----------------|------------|----------------------------------------------------------|
-  | PHP | 7.4 | 8.1 |                                                          |
-  | Redis | 6.0 | 6.2 |                                                          |
-  | [!DNL RabbitMQ] | 3.8 | 3.9 | Non utilisé actuellement, mais nous devrions envisager de l’utiliser |
-  | MariaDB (Cloud) | 10.4 | 10.6 |                                                          |
-  | MySQL | 8.0 | -/-/ |                                                          |
-  | Compositeur | 1.9.2 | 2.2 |                                                          |
-  | Elasticsearch | 7.10 | 7.17 |                                                          |
+  | PHP | 7,4 | 8,1 |                                                          |
+  | Redis | 6,0 | 6,2 |                                                          |
+  | [!DNL RabbitMQ] | 3,8 | 3,9 | Non utilisé actuellement, mais nous devrions envisager de l’utiliser |
+  | MariaDB (Cloud) | 10,4 | 10,6 |                                                          |
+  | MySQL | 8,0 | -/-/ |                                                          |
+  | Compositeur | 1.9.2 | 2,2 |                                                          |
+  | Elasticsearch | 7,10 | 7,17 |                                                          |
 
-- **Extensions et modules tiers**: utilisez ce modèle de tableau pour vous aider à comprendre l’état de vos extensions et personnalisations afin que vous puissiez prendre des décisions stratégiques et définir des actions. Il s’agit d’une opportunité de remplacer toutes les extensions qui peuvent être natives d’Adobe Commerce ou de Magento Open Source afin de minimiser la complexité de votre projet. Utilisez la variable `bin/magento module:status` pour afficher une liste de modules et d’extensions.
+- **Extensions et modules tiers**: utilisez ce modèle de tableau pour vous aider à comprendre l’état de vos extensions et personnalisations afin que vous puissiez prendre des décisions stratégiques et définir des actions. Il s’agit d’une opportunité de remplacer toutes les extensions qui peuvent être natives d’Adobe Commerce afin de minimiser la complexité de votre projet. Utilisez la variable `bin/magento module:status` pour afficher une liste de modules et d’extensions.
 
-  | # | Extension/<br>nom du module | Module de compositeur | Fournisseur | Version actuelle | Fonctionnalité | Compatible avec la dernière version<br>Version commerciale ? | Problèmes | Natif de Commerce ? | Action | Remarques |
+  | # | Extension/<br>nom du module | Module de compositeur | Fournisseur | Version actuelle | Fonctionnalité | Compatible avec la dernière version<br>Version de Commerce ? | Problèmes | Est-ce que vous êtes natif de Commerce ? | Action | Remarques |
   |---|-----------------------------|------------------------------------|-------------|-------------------|-----------------------|---------------------------------------------|--------------------------------------------------|---------------------|-------------------------|-------|
   | 1 | Nom et lien de l’extension | extension/<br>extensionx-magento-2 | Nom du fournisseur | Version installée | Exigences commerciales | Oui/Non | Liste des problèmes identifiés rencontrés avec cette extension | Oui/Non | Conserver/Remplacer<br>Supprimer |       |
 
 - **Modules personnalisés**: à l’instar du tableau des modules tiers, ce modèle vous permet de suivre et de comprendre l’état et les actions requis pour la mise à niveau des modules personnalisés.
 
-  | # | Nom du module | Fonctionnalité | Obligatoire ? | Natif de Commerce ? | Action | Remarques |
+  | # | Nom du module | Fonctionnalité | Obligatoire ? | Est-ce que vous êtes natif de Commerce ? | Action | Remarques |
   |---|--------------|-----------------------|-----------|---------------------|---------------------|-------|
   | 1 | Nom du module | Exigences commerciales | Oui/Non | Oui/Non | Conserver/Remplacer/Supprimer |       |
 

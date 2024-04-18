@@ -1,17 +1,17 @@
 ---
 title: Mise à niveau d’une installation basée sur Git
-description: Mettez à niveau une installation Adobe Commerce ou Magento Open Source que vous avez clonée à partir d’un référentiel git.
+description: Mettez à niveau une installation Adobe Commerce que vous avez clonée à partir d’un référentiel git.
 exl-id: a8c42857-7221-4b21-8377-4bfb6308c418
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '110'
 ht-degree: 0%
 
 ---
 
 # Mettre à niveau une installation basée sur Git
 
-Cette rubrique explique comment un développeur contributeur peut mettre à jour Adobe Commerce ou Magento Open Source sans le réinstaller. Si vous n’êtes pas un développeur contributeur, reportez-vous à la section [Effectuer une mise à niveau](../implementation/perform-upgrade.md).
+Cette rubrique explique comment un développeur contributeur peut mettre à jour Adobe Commerce sans le réinstaller. Si vous n’êtes pas un développeur contributeur, reportez-vous à la section [Effectuer une mise à niveau](../implementation/perform-upgrade.md).
 
 Pour effectuer une mise à niveau si vous êtes un développeur contributeur :
 

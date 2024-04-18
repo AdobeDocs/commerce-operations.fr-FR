@@ -1,10 +1,10 @@
 ---
 title: Activer ou désactiver le mode de maintenance
-description: Suivez ces étapes pour personnaliser ce que voient les clients lorsque votre déploiement Adobe Commerce ou Magento Open Source est arrêté pour maintenance.
+description: Suivez ces étapes pour personnaliser ce que voient les clients lorsque votre déploiement Adobe Commerce est arrêté pour maintenance.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
 title: Création, modification ou déverrouillage d’un compte administrateur
-description: Pour gérer le compte administrateur de votre application Adobe Commerce ou Magento Open Source Admin, procédez comme suit.
+description: Pour gérer le compte administrateur de votre application d’administration Adobe Commerce, procédez comme suit.
 feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---

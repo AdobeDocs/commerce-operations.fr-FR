@@ -1,10 +1,10 @@
 ---
 title: Présentation de la portée de la mise à niveau
-description: Découvrez les modifications incompatibles en amont dans une version pouvant avoir un impact sur les modules personnalisés Adobe Commerce ou Magento Open Source ou les extensions tierces.
+description: Découvrez les modifications incompatibles en amont dans une version pouvant avoir un impact sur les modules personnalisés Adobe Commerce ou les extensions tierces.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---

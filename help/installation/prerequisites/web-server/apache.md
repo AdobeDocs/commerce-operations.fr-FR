@@ -2,9 +2,9 @@
 title: Apache
 description: Pour installer et configurer le serveur web Apache pour les installations sur site d’Adobe Commerce, procédez comme suit.
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Adobe Commerce utilise les réécritures de serveur et `.htaccess` pour fournir 
    >[!NOTE]
    >
    >- Si vous avez effectué une mise à niveau à partir d’une version antérieure d’Apache, recherchez d’abord `<Directory "/var/www/html">` ou `<Directory "/var/www">` in `000-default.conf`.
-   >- Vous devez modifier la valeur de `AllowOverride` dans la directive correspondant au répertoire dans lequel vous prévoyez d’installer le logiciel Adobe Commerce ou Magento Open Source. Par exemple, pour installer dans le répertoire docroot du serveur web, modifiez la directive dans `<Directory /var/www>`.
+   >- Vous devez modifier la valeur de `AllowOverride` dans la directive correspondant au répertoire dans lequel vous prévoyez d’installer le logiciel Adobe Commerce. Par exemple, pour installer dans le répertoire docroot du serveur web, modifiez la directive dans `<Directory /var/www>`.
 
 >[!NOTE]
 >

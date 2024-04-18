@@ -1,10 +1,10 @@
 ---
 title: Présentation du guide de configuration
-description: Découvrez l’ensemble des fonctionnalités et services configurables pour votre application Adobe Commerce ou Magento Open Source.
+description: Découvrez l’ensemble des fonctionnalités et services configurables de votre application Adobe Commerce.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ La variable _Configuration_ Ce guide fournit des documents de référence et des
 - [Paramètres du moteur de recherche](../configuration/search/configure-search-engine.md)
 - [Méthodes de stockage](../configuration/storage/memcached.md)
 
-## Configuration des administrateurs de commerce
+## Configuration de l’administrateur Commerce
 
-Il existe des rubriques correspondantes dans la section [Guide de l’utilisateur de Commerce](https://docs.magento.com/user-guide/stores/configuration.html) qui peuvent vous aider à comprendre la description des champs pour chaque paramètre de configuration dans l’administrateur Commerce.
+Il existe des rubriques correspondantes dans la section [Guide de l’utilisateur de Commerce](https://docs.magento.com/user-guide/stores/configuration.html) qui peuvent vous aider à comprendre la description des champs pour chaque paramètre de configuration dans l’administrateur de Commerce.
 
 ## Configuration du cloud
 

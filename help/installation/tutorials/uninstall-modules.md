@@ -1,10 +1,10 @@
 ---
 title: Désinstallation des modules
-description: Pour désinstaller un module Adobe Commerce ou Magento Open Source, procédez comme suit.
+description: Pour désinstaller un module Adobe Commerce, procédez comme suit.
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '727'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
 title: Création ou mise à jour de la configuration du déploiement
-description: Pour gérer votre configuration de déploiement Adobe Commerce ou Magento Open Source, procédez comme suit.
+description: Pour gérer votre configuration de déploiement Adobe Commerce, procédez comme suit.
 feature: Install, Deploy, Configuration
 exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Le tableau suivant décrit la signification des paramètres et valeurs d’insta
 | `--db-name` | Nom de l&#39;instance de base de données dans laquelle vous souhaitez installer les tables de base de données.<br><br>Par défaut : `magento2`. | Non |
 | `--db-user` | Nom d’utilisateur du propriétaire de l’instance de base de données.<br><br>Par défaut : `root`. | Non |
 | `--db-password` | Mot de passe du propriétaire de l’instance de base de données. | Non |
-| `--db-prefix` | À utiliser uniquement si vous installez les tables de base de données dans une instance de base de données qui contient déjà des tables Adobe Commerce.<br><br>Dans ce cas, utilisez un préfixe pour identifier les tables pour cette installation. Certains clients disposent de plusieurs instances Adobe Commerce ou Magento Open Source s’exécutant sur un serveur avec toutes les tables dans la même base de données.<br><br>Le préfixe peut contenir, au maximum, cinq caractères. Il doit commencer par une lettre et ne peut contenir que des lettres, des chiffres et des caractères de soulignement.<br><br>Cette option permet à ces clients de partager le serveur de base de données avec plusieurs installations Adobe Commerce ou Magento Open Source. | Non |
+| `--db-prefix` | À utiliser uniquement si vous installez les tables de base de données dans une instance de base de données qui contient déjà des tables Adobe Commerce.<br><br>Dans ce cas, utilisez un préfixe pour identifier les tables pour cette installation. Certains clients disposent de plusieurs instances Adobe Commerce s’exécutant sur un serveur avec toutes les tables dans la même base de données.<br><br>Le préfixe peut contenir, au maximum, cinq caractères. Il doit commencer par une lettre et ne peut contenir que des lettres, des chiffres et des caractères de soulignement.<br><br>Cette option permet à ces clients de partager le serveur de base de données avec plusieurs installations Adobe Commerce. | Non |
 | `--session-save` | Utilisez l’une des méthodes suivantes :<br><br>- `db` pour stocker des données de session dans le [base](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). Choisissez le stockage de la base de données si vous disposez d’une base de données en grappe ; dans le cas contraire, le stockage basé sur les fichiers n’offre pas beaucoup d’avantages.<br><br>- `files` pour stocker les données de session dans le système de fichiers. Le stockage des sessions basées sur des fichiers est approprié, sauf si l’accès au système de fichiers est lent, si vous disposez d’une base de données en grappe ou si vous souhaitez stocker des données de session dans Redis.<br><br>- `redis` pour stocker des données de session dans [Utilisation de Redis pour le stockage de session](../../configuration/cache/config-redis.md). Si vous utilisez Redis pour la mise en cache des pages ou par défaut, Redis doit être déjà installé. | Non |
 | `--key` | Si vous en avez un, spécifiez une clé à chiffrer. [données sensibles](#sensitive-data) dans la base de données. Si vous n’en avez pas, l’application en génère une pour vous. | Non |
 | `--db-init-statements` | Paramètre de configuration MySQL avancé. Utilise les instructions d’initialisation de base de données à exécuter lors de la connexion à la base de données MySQL.<br><br>Par défaut : `SET NAMES utf8;`.<br><br>Consultez une référence similaire à [celui-ci](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) avant de définir des valeurs. | Non |

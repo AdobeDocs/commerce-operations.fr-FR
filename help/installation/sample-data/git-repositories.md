@@ -2,9 +2,9 @@
 title: Clonage des exemples de référentiels Git de données
 description: Suivez ces étapes pour installer des exemples de données Adobe Commerce en clonant des référentiels Git.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ Pour cloner le référentiel GitHub de données d’exemple à l’aide du proto
 
 >[!WARNING]
 >
->Si vous installez des exemples de données *after* pour installer Adobe Commerce ou Magento Open Source, vous devez également exécuter la commande suivante pour mettre à jour la base de données et le schéma :
+>Si vous installez des exemples de données *after* pour installer Adobe Commerce, vous devez également exécuter la commande suivante pour mettre à jour la base de données et le schéma :
 >
 >```bash
 ><magento_root>/bin/magento setup:upgrade

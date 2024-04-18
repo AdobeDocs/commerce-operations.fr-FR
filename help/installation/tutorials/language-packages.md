@@ -1,10 +1,10 @@
 ---
 title: Désinstallation des packages de langue
-description: Pour désinstaller un package de langue Adobe Commerce ou Magento Open Source, procédez comme suit.
+description: Pour désinstaller un package de langue Adobe Commerce, procédez comme suit.
 exl-id: 9901aa0b-af1a-4ae9-968f-ac8421060f57
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---

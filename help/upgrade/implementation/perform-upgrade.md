@@ -2,9 +2,9 @@
 title: Effectuer une mise à niveau
 description: Pour mettre à niveau les déploiements sur site d’Adobe Commerce, procédez comme suit.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Effectuer une mise à niveau
 
-Vous pouvez effectuer une mise à niveau _sur site_ déploiements de l’application Adobe Commerce ou Magento Open Source à partir de la ligne de commande si vous avez installé le logiciel en :
+Vous pouvez effectuer une mise à niveau _sur site_ déploiements de l’application Adobe Commerce à partir de la ligne de commande si vous avez installé le logiciel en :
 
 - Téléchargement du métaphorage du compositeur à l’aide de la fonction `composer create-project` .
 - Installation de l’archive compressée.
@@ -110,7 +110,7 @@ Vous devez renseigner la variable [conditions préalables à la mise à niveau](
 
    - `<product>` —(Obligatoire) Package à mettre à niveau. Pour les installations sur site, cette valeur doit être : `product-community-edition` ou `product-enterprise-edition`.
 
-   - `<version>` —(Obligatoire) Version d’Adobe Commerce ou de Magento Open Source vers laquelle vous effectuez une mise à niveau. Par exemple : `2.4.3`.
+   - `<version>` —(Obligatoire) Version d’Adobe Commerce vers laquelle vous effectuez une mise à niveau. Par exemple : `2.4.3`.
 
    - `--no-update` —(Obligatoire) Désactive la mise à jour automatique des dépendances.
 

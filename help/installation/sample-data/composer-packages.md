@@ -3,16 +3,16 @@ title: Télécharger des exemples de modules du compositeur de données
 description: Suivez ces étapes pour installer des exemples de données Adobe Commerce à l’aide du gestionnaire de modules PHP du compositeur.
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 # Télécharger des exemples de modules du compositeur de données
 
-Cette section explique comment installer des exemples de données si vous avez obtenu le logiciel Adobe Commerce ou Magento Open Source de l’une des manières suivantes :
+Cette section explique comment installer des exemples de données si vous avez obtenu le logiciel Adobe Commerce de l’une des manières suivantes :
 
 * Téléchargement d’une archive compressée depuis `https://magento.com/tech-resources/download`.
 

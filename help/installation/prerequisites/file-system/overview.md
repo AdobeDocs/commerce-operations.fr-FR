@@ -2,16 +2,16 @@
 title: Propriété de fichier et autorisations
 description: Découvrez l’importance des autorisations du système de fichiers lors de l’utilisation d’installations sur site d’Adobe Commerce.
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
 
 # Propriété de fichier et autorisations
 
-Il est important de sécuriser votre installation Adobe Commerce ou Magento Open Source dans un environnement de développement afin de vous aider à prévenir les problèmes liés à des personnes ou à des processus non autorisés qui accèdent à votre système et peuvent le endommager. Pour protéger votre installation, appliquez les directives suivantes concernant la propriété et les autorisations du système de fichiers.
+Il est important de sécuriser votre installation d’Adobe Commerce dans un environnement de développement afin de vous aider à prévenir les problèmes liés à des personnes ou à des processus non autorisés qui accèdent à votre système et peuvent le endommager. Pour protéger votre installation, appliquez les directives suivantes concernant la propriété et les autorisations du système de fichiers.
 
 ## Propriétaire du système de fichiers
 
@@ -65,4 +65,4 @@ Nous discutons plus en détail des recommandations relatives aux autorisations d
 
 >[!TIP]
 >
->Avant d’installer Adobe Commerce ou Magento Open Source, consultez [Configuration de la propriété et des autorisations de fichier](configure-permissions.md).
+>Avant d’installer Adobe Commerce, consultez [Configuration de la propriété et des autorisations de fichier](configure-permissions.md).

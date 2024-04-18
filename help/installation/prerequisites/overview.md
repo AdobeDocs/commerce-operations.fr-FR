@@ -2,16 +2,16 @@
 title: Conditions préalables à l’installation sur site
 description: En savoir plus sur les dépendances logicielles requises pour les installations sur site d’Adobe Commerce.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '316'
 ht-degree: 1%
 
 ---
 
 # Conditions préalables à l’installation sur site
 
-Avant d’installer Adobe Commerce ou Magento Open Source, vous devez effectuer les opérations suivantes :
+Avant d’installer Adobe Commerce, vous devez effectuer les opérations suivantes :
 
 * Configurez un ou plusieurs hôtes qui répondent aux [configuration requise](../system-requirements.md).
 * Si vous configurez plusieurs noeuds web avec l’équilibrage de charge, configurez et testez cette partie de votre système. _before_ vous installez l’application.
@@ -19,7 +19,7 @@ Avant d’installer Adobe Commerce ou Magento Open Source, vous devez effectuer 
 
 >[!NOTE]
 >
->Nous supposons que vous installez Adobe Commerce ou Magento Open Source dans une **environnement de développement**, que vous disposez d’un accès utilisateur root à la machine, **et** que la machine n&#39;a pas besoin d&#39;être hautement sécurisée. Si vous configurez une machine plus sécurisée, nous vous recommandons vivement de consulter un administrateur réseau pour obtenir de l’aide supplémentaire.
+>Nous supposons que vous installez Adobe Commerce dans une **environnement de développement**, que vous disposez d’un accès utilisateur root à la machine, **et** que la machine n&#39;a pas besoin d&#39;être hautement sécurisée. Si vous configurez une machine plus sécurisée, nous vous recommandons vivement de consulter un administrateur réseau pour obtenir de l’aide supplémentaire.
 
 Nous vous recommandons vivement de mettre à jour et de mettre à niveau votre logiciel de système d’exploitation. Ces mises à niveau peuvent fournir des correctifs logiciels et de sécurité susceptibles d’empêcher des problèmes futurs. Vous ne savez pas ce que cela signifie ? Consultez notre [page d’aperçu de l’installation](../overview.md).
 
@@ -70,7 +70,7 @@ Voir [configuration requise](../system-requirements.md) pour les versions prises
 
 ### MySQL
 
-Vérifiez que vous disposez d’une version compatible de MySQL pour la version d’Adobe Commerce ou du Magento Open Source que vous installez. Voir [Configuration requise](../system-requirements.md) pour les versions prises en charge
+Vérifiez que vous disposez d’une version compatible de MySQL pour la version d’Adobe Commerce que vous installez. Voir [Configuration requise](../system-requirements.md) pour les versions prises en charge
 
 ```bash
 mysql -u <database root user or database owner name> -p
