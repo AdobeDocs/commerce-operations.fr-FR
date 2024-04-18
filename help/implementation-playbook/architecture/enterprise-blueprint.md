@@ -3,7 +3,7 @@ title: Architecture de référence d’Enterprise
 description: Découvrez comment mettre en oeuvre Adobe Commerce à l’aide de la dernière technologie de commerce composable d’Adobe.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: 8eab688ed98eb1b9fcf4fc25f90fe2bbf99c02d6
+source-git-commit: c2f6b7125f1a611e94f807999787fee48a0e5ece
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 0%
@@ -14,19 +14,19 @@ ht-degree: 0%
 
 Adobe Commerce est une plateforme basée sur l’expérience qui associe de manière unique la flexibilité technique avec une facilité d’utilisation, le tout afin de créer des expériences exceptionnelles qui génèrent des résultats commerciaux.
 
-Le commerce a évolué pour répondre aux besoins de l’entreprise en termes de performances, d’échelle et de sécurité. L’adoption d’une approche moderne de mise en oeuvre qui utilise les dernières solutions commerciales composables d’Adobe est essentielle au succès des entreprises. Cette page décrit l’approche moderne de mise en oeuvre de Commerce en détail technique.
+Commerce a évolué pour répondre aux besoins de l’entreprise en termes de performances, d’échelle et de sécurité. L’adoption d’une approche moderne de mise en oeuvre qui utilise les dernières solutions commerciales composables d’Adobe est essentielle au succès des entreprises. Cette page décrit en détail technique l’approche de mise en oeuvre moderne de Commerce.
 
 Le diagramme d’architecture suivant illustre le flux de données entre Adobe Commerce et toutes les solutions Adobe Experience Cloud.
 
-![Schéma architectural montrant comment Adobe Commerce se connecte aux solutions Experience Cloud](../../assets/playbooks/commerce-architecture-v2.svg){zoomable=&quot;yes&quot;}
+![Schéma architectural montrant comment Adobe Commerce se connecte aux solutions Experience Cloud](../../assets/playbooks/commerce-architecture-v3.svg){zoomable=&quot;yes&quot;}
 
 >[!NOTE]
 >
->Les flux de données de haut niveau présentés dans le diagramme sont cohérents dans la plupart des mises en oeuvre d’entreprise. Le composant clé qui peut rendre les implémentations uniques est la manière dont vous créez votre catalogue (en particulier pour B2B). Vous devez soigneusement mapper l’architecture de votre catalogue à la variable [API web de commerce](https://developer.adobe.com/commerce/webapi/get-started/).
+>Les flux de données de haut niveau présentés dans le diagramme sont cohérents dans la plupart des mises en oeuvre d’entreprise. Le composant clé qui peut rendre les implémentations uniques est la manière dont vous créez votre catalogue (en particulier pour B2B). Vous devez soigneusement mapper l’architecture de votre catalogue à la variable [API web Commerce](https://developer.adobe.com/commerce/webapi/get-started/).
 
 ## Cloud Foundation
 
-[Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview) est la base de votre implémentation de Commerce. Il fournit une [secure](../../security-and-compliance/shared-responsibility.md) plateforme d’hébergement automatisée avec une approche en libre-service pour créer, déployer, surveiller et gérer votre application Commerce dans un environnement natif au cloud.
+[Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview) est la base de votre mise en oeuvre Commerce. Il fournit une [secure](../../security-and-compliance/shared-responsibility.md) plateforme d’hébergement automatisée avec une approche en libre-service pour créer, déployer, surveiller et gérer votre application Commerce dans un environnement natif au cloud.
 
 Consultez les détails techniques suivants sur la base cloud :
 
@@ -35,7 +35,7 @@ Consultez les détails techniques suivants sur la base cloud :
 - [**Gestion des configurations**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/overview)—Fichiers de configuration d’environnement personnalisables et interface de ligne de commande pour gérer les paramètres d’application, les itinéraires, la création et le déploiement d’actions et de notifications.
 - [**Workflow basé sur Git**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow): création et déploiement automatiques après publication des modifications de code pour un développement rapide et un déploiement continu.
 - [**Observabilité intégrée**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/performance): outils qui combinent les données de journal provenant de plusieurs sources pour vous aider à gérer les performances de votre site et à diagnostiquer les problèmes
-- [**Couverture complète des API**](https://developer.adobe.com/commerce/webapi/get-started/)—[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) et [REST](https://developer.adobe.com/commerce/webapi/rest) API pour intégrer l’application Commerce principale à des systèmes tiers et étendre les fonctionnalités de Commerce
+- [**Couverture complète des API**](https://developer.adobe.com/commerce/webapi/get-started/)—[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) et [REST](https://developer.adobe.com/commerce/webapi/rest) API pour intégrer l’application Commerce principale à des systèmes tiers et étendre les fonctionnalités Commerce
 
 ## Intégration à Experience Cloud
 
@@ -50,7 +50,7 @@ Adobe Commerce s’intègre à toutes les solutions Experience Cloud pour diffus
 
 ## Intégration à des systèmes tiers
 
-Adobe fournit aux développeurs des points d’extension et des outils complets pour créer des applications qui étendent les principales fonctionnalités de commerce et qui intègrent Commerce à des systèmes tiers (tels que les CRM, ERPS et PIMS). Ces outils réduisent le coût total de possession de la plate-forme comme suit :
+Adobe fournit aux développeurs des points d’extension et des outils complets pour créer des applications qui étendent les principales fonctionnalités de Commerce et qui intègrent Commerce à des systèmes tiers (tels que les CRM, ERPS et PIMS). Ces outils réduisent le coût total de possession de la plate-forme comme suit :
 
 - **Évolutivité**: les applications peuvent être mises à l’échelle séparément des logiciels principaux, ce qui permet une plus grande efficacité et une mise à niveau simplifiée.
 - **Isolation**-Un environnement isolé signifie que les développeurs peuvent mettre à niveau ou modifier leurs extensions à leur discrétion sans avoir recours à une version principale.
@@ -62,7 +62,7 @@ Adobe fournit les outils de développement suivants pour créer des intégration
 - [**App Builder**](https://developer.adobe.com/app-builder/docs/overview/): créez et déployez des applications web sécurisées et évolutives qui étendent les fonctionnalités de Commerce et s’intègrent à des solutions tierces.
 - [**Événements**](https://developer.adobe.com/commerce/extensibility/events/): utilisez des déclencheurs d’événement personnalisés pour interagir avec d’autres outils de développement extensibles.
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/): utilisez des webhooks pour déclencher automatiquement des interactions entre Commerce et des systèmes tiers.
-- [**SDK de l’interface utilisateur d’administration**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/): personnalisez et améliorez l’administrateur Commerce avec de nouvelles pages et fonctionnalités pour vos commerçants.
+- [**SDK de l’interface utilisateur d’administration**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/): personnalisez et améliorez l’administrateur de Commerce avec de nouvelles pages et fonctionnalités pour vos commerçants.
 
 ## Services Storefront
 
