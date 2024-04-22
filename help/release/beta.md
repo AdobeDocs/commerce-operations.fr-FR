@@ -2,9 +2,9 @@
 title: Versions bêta
 description: Découvrez les versions bêta d’Adobe Commerce et comment y participer.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 07e616b26784a6e2e8994efc5816a5005619b5bb
+source-git-commit: 1dd4b44c6aa685795e16dccebfaf073dcc0062f2
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 Les programmes bêta d’Adobe Commerce sont un moyen pour les marchands d’accéder aux fonctionnalités et au code de version préliminaire, de fournir des commentaires et de guider l’avenir d’Adobe Commerce. Il existe deux types de programmes bêta :
 
 - Version bêta publique : un programme bêta public est disponible pour tous les clients et partenaires d’Adobe Commerce
-- Private Bata : un programme bêta privé peut nécessiter une approbation basée sur des critères admissibles pour participer.
+- Beta privée : un programme bêta privé peut nécessiter une approbation basée sur des critères admissibles pour participer.
 
 >[!IMPORTANT]
 >
@@ -70,7 +70,7 @@ Chaque version bêta d’Adobe Commerce Foundation comprend toutes les modificat
 
 #### Convention d’affectation de nom et planification
 
-Adobe publiera des correctifs bêta deux fois par an. Le premier correctif bêta est généralement publié trois mois après la disponibilité générale d’une nouvelle version de correctif d’application principale.
+Adobe publie généralement deux fois par an des correctifs bêta.
 
 Les modules de version bêta ont une `-betaX` suffixe. Par exemple, les packages de version bêta d’Adobe Commerce 2.4.7 utilisent la convention d’affectation des noms suivante :
 
