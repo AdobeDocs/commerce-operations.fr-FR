@@ -2,9 +2,9 @@
 title: Serveur d’applications GraphQL
 description: Suivez ces instructions pour activer le serveur d’applications GraphQL dans votre déploiement Adobe Commerce.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: b89ed5ddb4c6361de22d4a4439ffcfcc3ec8d474
+source-git-commit: 81320626a83e26a55f9ec14ce8cb706753b44269
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2293'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,11 @@ La variable `ApplicationServer` module (`Magento/ApplicationServer/`) active Gra
 
 ### Activation des projets Pro
 
-Effectuez les étapes suivantes avant de déployer GraphQL Application Server sur les projets Pro :
+>[!NOTE]
+>
+>Le serveur d’applications est une fonctionnalité d’opt-in sur les instances Cloud Pro. Pour l’activer, soumettez une demande d’assistance.
+
+Une fois que la fonction Serveur d’applications est activée sur votre projet Pro, procédez comme suit avant de déployer le serveur d’applications GraphQL :
 
 1. Déployez Adobe Commerce sur l’infrastructure cloud à l’aide du modèle cloud de la [2.4.7-appserver branch](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
 1. Assurez-vous que toutes vos personnalisations et extensions Commerce sont [compatible](https://developer.adobe.com/commerce/php/development/components/app-server/) avec GraphQL Application Server.
