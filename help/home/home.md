@@ -1,16 +1,16 @@
 ---
-keywords: Adobe Commerce;accueil;rubriques populaires
+keywords: Adobe Commerce;accueil;rubriques les plus consultées
 title: Accueil
-description: Parcourez un index de l’administration du système Adobe Commerce et de la documentation opérationnelle du produit.
+description: Parcourez un index de la documentation sur l’administration du système Adobe Commerce et les produits opérationnels.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: c8093c4575eccc1d012da0e1502eb618c9b048e5
+source-git-commit: 5b294d586b58689a576f411b33d95e4dfa76076e
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 17%
 
 ---
 
-# Guides opérationnels d’Adobe Commerce
+# Guides opérationnels Adobe Commerce
 
 Obtenez des informations pratiques sur les concepts, les processus, les outils et les bonnes pratiques pour développer, déployer et gérer des projets Adobe Commerce.
 
@@ -21,8 +21,8 @@ Obtenez des informations pratiques sur les concepts, les processus, les outils e
       <img alt="Informations sur la version" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>Informations sur la version</strong></a>
-      <p>Consultez toutes les informations de mise à jour concernant les correctifs et services Adobe Commerce.</p>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html"><strong>Informations sur la version</strong></a>
+      <p>Consultez toutes les informations de mise à jour des correctifs et services Adobe Commerce.</p>
     </div>
   </td>
   <td valign="top">
@@ -49,18 +49,18 @@ Obtenez des informations pratiques sur les concepts, les processus, les outils e
     </a>
     <div>
       <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Migration des données</strong></a>
-      <p>Découvrez le processus de migration des données entre le Magento 1 et le Magento 2.</p>
+      <p>Découvrez le processus de migration des données entre Magento 1 et Magento 2.</p>
     </div>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <a href="../upgrade/overview.md">
-      <img alt="Mise à niveau" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
+      <img alt="Mettre à niveau" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../upgrade/overview.md"><strong>Mise à niveau</strong></a>
-      <p>Découvrez comment mettre à niveau votre projet Adobe Commerce pour que votre storefront reste sécurisé et fonctionne efficacement.</p>
+      <a href="../upgrade/overview.md"><strong>Mettre à niveau</strong></a>
+      <p>Découvrez comment mettre à niveau votre projet Adobe Commerce afin de garantir la sécurité de votre storefront et de garantir un fonctionnement efficace.</p>
     </div>
   </td>
   <td valign="top">
@@ -69,7 +69,7 @@ Obtenez des informations pratiques sur les concepts, les processus, les outils e
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html"><strong>Référence des outils de ligne de commande</strong></a>
-      <p>Découvrez les commandes, arguments et options des outils de ligne de commande Adobe Commerce.</p>
+      <p>Découvrez les commandes, arguments et options des outils de ligne de commande d’Adobe Commerce.</p>
     </div>
   </td>
   <td valign="top">
@@ -94,10 +94,10 @@ Obtenez des informations pratiques sur les concepts, les processus, les outils e
 <tr>
   <td valign="top">
     <a href="../implementation-playbook/overview.md">
-      <img alt="Mise en œuvre" src="../assets/icons/play.svg" width="40" height="40"/>
+      <img alt="Implémentation" src="../assets/icons/play.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong>Manuel de mise en œuvre</strong></a>
+      <a href="../implementation-playbook/overview.md"><strong>Manuel de mise en oeuvre</strong></a>
       <p>Découvrez les stratégies de planification et d’implémentation d’un site Adobe Commerce performant.</p>
     </div>
   </td>
@@ -115,7 +115,7 @@ Obtenez des informations pratiques sur les concepts, les processus, les outils e
        <img alt="Entreprise" src="../assets/icons/enterprise.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../commerce-at-scale/overview.md"><strong>Commerce à grande échelle</strong></a>
+      <a href="../commerce-at-scale/overview.md"><strong>Commerce à l’échelle</strong></a>
       <p>Découvrez comment diffuser des expériences à grande échelle à l’aide d’Adobe Commerce avec Adobe Experience Manager.</p>
     </div>
   </td>
@@ -125,7 +125,7 @@ Obtenez des informations pratiques sur les concepts, les processus, les outils e
     </a>
     <div>
       <a href="../security-and-compliance/overview.md"><strong>Sécurité et conformité</strong></a>
-      <p>Découvrez comment les commerçants Adobe Commerce sont responsables du maintien d’un environnement sécurisé.</p>
+      <p>Découvrez comment les marchands Adobe Commerce sont chargés de la maintenance d’un environnement sécurisé.</p>
     </div>
   </td>
 </tr>
