@@ -2,17 +2,17 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leurs utilisations, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 9527ce1983340c6438c33b1d07acf4b4b699ccc8
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 1%
+source-wordcount: '182'
+ht-degree: 3%
 
 ---
 
 
 # Outils {#tools}
 
-- [Présentation](overview.md)
+- [Vue d’ensemble](overview.md)
 - Outil d’analyse à l’échelle du site {#site-wide-analysis-tool}
    - [Introduction](site-wide-analysis-tool/intro.md)
    - [Installation](site-wide-analysis-tool/installation.md)
@@ -30,6 +30,10 @@ ht-degree: 1%
    - [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Utilisation](quality-patches-tool/usage.md)
    - [Notes de mise à jour](quality-patches-tool/release-notes.md)
+- Référence des outils de ligne de commande {#cli-reference}
+   - [Adobe Commerce (sur site)](reference/commerce-on-premises.md)
+   - [Magento Open Source](reference/magento-open-source.md)
+   - [Outil de compatibilité de mise à niveau](reference/uct.md)
 - Observation pour Adobe Commerce {#observation-for-adobe-commerce}
    - [Introduction](observation-for-adobe-commerce/intro.md)
    - [Accès](observation-for-adobe-commerce/access.md)
@@ -65,7 +69,7 @@ ht-degree: 1%
       - [Personnaliser](data-migration-tool/customize.md)
       - [Spécification technique](data-migration-tool/technical-specification.md)
    - Migration des données {#migrate-data}
-      - [Présentation](data-migration-tool/migrate-data/overview.md)
+      - [Vue d’ensemble](data-migration-tool/migrate-data/overview.md)
       - [Paramètres](data-migration-tool/migrate-data/settings.md)
       - [Données](data-migration-tool/migrate-data/data.md)
       - [Modifications](data-migration-tool/migrate-data/delta.md)

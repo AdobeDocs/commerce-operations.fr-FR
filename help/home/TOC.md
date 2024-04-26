@@ -2,26 +2,24 @@
 user-guide-title: Guides opérationnels
 user-guide-description: Découvrez les aspects opérationnels de la maintenance de votre application Adobe Commerce.
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 9527ce1983340c6438c33b1d07acf4b4b699ccc8
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 3%
+source-wordcount: '48'
+ht-degree: 4%
 
 ---
 
 
 # Guides opérationnels Adobe Commerce {#operational-guides}
 
-- [Accueil](home.md)
-- [Informations sur la version](https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html)
-- [Installation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/overview.html)
-- [Configuration](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html)
-- [Migration des données](https://experienceleague.adobe.com/docs/commerce-operations/tools/data-migration/how-migration-works.html)
-- [Mettre à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
-- [Bonnes pratiques en matière de performances](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/overview.html)
-- [Outils](https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html)
-- [Outils de ligne de commande](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-- [Manuel de mise en oeuvre](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html)
-- [Manuel opérationnel](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
-- [Commerce à l’échelle](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/overview.html)
-- [Sécurité et conformité](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/overview.html)
+- [Accueil des guides opérationnels](home.md)
+- [Informations sur la version](https://experienceleague.adobe.com/en/docs/commerce-operations/release/latest)
+- [Performances](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/overview)
+- [Sécurité et conformité](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)
+- [Manuel de mise en oeuvre](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/overview)
+- [Manuel opérationnel](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/overview)
+- [Commerce à l’échelle](https://experienceleague.adobe.com/en/docs/commerce-operations/deliver-commerce-at-scale/overview)
+- [Installation (sur site)](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
+- [Configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/overview)
+- [Mettre à niveau](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview)
+- [Outils](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/overview)
