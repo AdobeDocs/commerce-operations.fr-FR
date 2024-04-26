@@ -2,9 +2,9 @@
 title: Obtention des clés d’authentification
 description: Suivez ces étapes pour récupérer les informations d’identification afin d’accéder aux modules du compositeur d’Adobe Commerce sur repo.magento.com.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: fc63ca58cd2ff7c5ec597751980a39bfbe68aa5f
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Pour pouvoir accéder aux packages Adobe Commerce, vous devez utiliser les clés
 >Si vous rencontrez [errors](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), vous ne disposez peut-être pas d’une autorisation d’accès au kit ou le droit d’accès a expiré en raison d’une facture en souffrance sur votre compte.
 >
 >* Si vous êtes la personne Contact Principal sur le compte, vérifiez qu&#39;il n&#39;y a aucune facture en suspens répertoriée sur le compte.
->* Si les clés fournies par le contact du Principal ne fonctionnent pas et qu&#39;il n&#39;y a pas de factures en suspens sur le compte, contactez [Assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour obtenir de l’aide à l’aide du MAGEID du contact de Principal.
+>* Si les clés fournies par le contact Principal ne fonctionnent pas et qu’il n’y a aucune facture en suspens sur le compte, le contact Principal doit contacter [Assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour obtenir de l’aide.
 
 Pour créer des clés d’authentification :
 
