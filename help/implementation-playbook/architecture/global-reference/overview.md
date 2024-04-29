@@ -1,9 +1,11 @@
 ---
 title: Architecture de référence globale
 description: Tirez le meilleur parti de votre implémentation Adobe Commerce en exploitant une architecture de référence globale.
-exl-id: a18529a3-da9b-4e1b-8048-0a906e65c740
 feature: Deploy
-source-git-commit: d33d1e24c38984d0abf0c7f8f5ad2eb804ff621d
+hide: true
+hidefromtoc: true
+exl-id: a18529a3-da9b-4e1b-8048-0a906e65c740
+source-git-commit: 80cf4dc2b5c9dd690aee1b224fbe6c766fe8f2ab
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
