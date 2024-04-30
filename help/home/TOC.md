@@ -1,11 +1,11 @@
 ---
 user-guide-title: Guides opérationnels
-user-guide-description: Découvrez les aspects opérationnels de la maintenance de votre application Adobe Commerce.
+user-guide-description: Découvrez les aspects opérationnels de la maintenance de votre application Adobe Commerce.
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
 source-git-commit: 9527ce1983340c6438c33b1d07acf4b4b699ccc8
 workflow-type: tm+mt
 source-wordcount: '48'
-ht-degree: 4%
+ht-degree: 27%
 
 ---
 
