@@ -2,7 +2,7 @@
 title: Accueil des guides opérationnels
 description: Parcourez un index de la documentation sur l’administration du système Adobe Commerce et les produits opérationnels.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 0e3d5c0f7c0636bb690eea8643afdace074f0ffd
+source-git-commit: a33d12a055db0cb4a4c8f64992d6ebf77842cbe7
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 20%
@@ -19,11 +19,11 @@ Utilisez cette collection de guides pour en savoir plus sur les concepts, proces
 <table>
 <tr>
   <td valign="top">
-    <a href="../release/latest.md">
+    <a href="../release/release-notes/overview.md">
       <img alt="Informations sur la version" src="../assets/icons/promote.svg" width="40"/>
     </a>
     <div>
-      <a href="../release/latest.md"><strong>Informations sur la version</strong></a>
+      <a href="../release/release-notes/overview.md"><strong>Informations sur la version</strong></a>
       <p>Consultez toutes les informations de mise à jour des correctifs et services Adobe Commerce.</p>
     </div>
   </td>
