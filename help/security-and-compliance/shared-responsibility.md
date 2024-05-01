@@ -2,9 +2,9 @@
 title: Sécurité de la responsabilité partagée et modèle opérationnel
 description: Découvrez les responsabilités en matière de sécurité de chaque partie impliquée dans votre projet d’infrastructure cloud Adobe Commerce.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: d4ea2f3fe8d30749c96389655ef38cae482afc99
+source-git-commit: 75eafe97a69668e43818f1c01639956e9b677a69
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2804'
 ht-degree: 0%
 
 ---
@@ -890,5 +890,16 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 | Planification des sauvegardes pour les environnements d’évaluation et de production de Cloud Pro | R |   |
 | Planification de sauvegardes pour les environnements Cloud Starter et Pro Integration |     | R |
 | Disponibilité de l’architecture HA/basculement | R |   |
+
+{style="table-layout:auto"}
+
+#### Serveurs cloud et mise à l’échelle
+
+|     | Adobe | Marchand |
+| --- | --- | --- |
+| Disponibilité des ressources du processeur, centre de données, espace disque | R |   |
+| Disponibilité et exécution de la capacité de montée en puissance ou redimensionnement d&#39;urgence | R |   |
+| Demande de capacité de survol |     | R |
+| Surveillance de l’utilisation de vCPU par rapport aux limites | R |   |
 
 {style="table-layout:auto"}
