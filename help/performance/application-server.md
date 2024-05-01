@@ -2,9 +2,9 @@
 title: Serveur d’applications GraphQL
 description: Suivez ces instructions pour activer le serveur d’applications GraphQL dans votre déploiement Adobe Commerce.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 81320626a83e26a55f9ec14ce8cb706753b44269
+source-git-commit: 9ffcbaa9a16315fe9c7d8ac4c4351ebe3fb27612
 workflow-type: tm+mt
-source-wordcount: '2293'
+source-wordcount: '2079'
 ht-degree: 0%
 
 ---
@@ -391,13 +391,3 @@ Ces fichiers peuvent être inspectés à l’aide de n’importe quel outil util
 >[!NOTE]
 >
 >`--state-monitor` n’est pas compatible avec les versions PHP `8.3.0` - `8.3.4` en raison d’un bogue dans le garbage collector PHP. Si vous utilisez PHP 8.3, vous devez effectuer la mise à niveau vers `8.3.5` ou plus récent pour utiliser cette fonctionnalité.
-
-## Problèmes connus
-
-### Demandes se perdent en cas de fin de thread de travail.
-
-En cas de problème avec un thread de travail qui entraîne la fin du thread de travail, toutes les requêtes HTTP déjà mises en file d’attente vers ce même thread de travail reçoivent une réinitialisation de la connexion du socket TCP. Avec un proxy inverse, tel que NGINX, devant le serveur, ces erreurs apparaissent comme `502` erreurs. Les travailleurs peuvent mourir d’un blocage, d’un manque de mémoire ou d’erreurs PHP dans des extensions tierces. Le comportement par défaut du serveur HTTP de Swoole entraîne ce problème. Par défaut, le serveur HTTP est démarré dans `SWOOLE_BASE` mode . Dans ce mode, les requêtes HTTP qui arrivent dans sont affectées aux threads de traitement dans une file d’attente, même si le thread de traitement traite toujours une requête précédente. Si vous modifiez la valeur en `SWOOLE_PROCESS` , les connexions sont ensuite gérées par le processus principal et il utilise beaucoup plus de communications interprocessus. L&#39;inconvénient de `SWOOLE_PROCESS` est qu’il ne prend pas en charge le ZTS PHP. Lisez la section [Documentation en ligne](https://wiki.swoole.com/en/#/learn?id=swoole_process) pour plus d’informations.
-
-### Le serveur d’applications peut utiliser la configuration précédente des attributs dans certaines conditions.
-
-La variable `CatalogGraphQl\Model\Config\AttributeReader` in `2.4.7` contient un bogue rare qui peut entraîner une requête GraphQL pour obtenir une réponse à l’aide de la configuration d’état des attributs précédente. Un correctif pour ce problème a été fourni dans `2.4-develop`, mais pas à temps pour `2.4.7` version .
