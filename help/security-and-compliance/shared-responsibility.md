@@ -2,9 +2,9 @@
 title: Sécurité de la responsabilité partagée et modèle opérationnel
 description: Découvrez les responsabilités en matière de sécurité de chaque partie impliquée dans votre projet d’infrastructure cloud Adobe Commerce.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 75eafe97a69668e43818f1c01639956e9b677a69
+source-git-commit: e188dad17ccb7d6ae10ed1457e86cc4551deaa75
 workflow-type: tm+mt
-source-wordcount: '2804'
+source-wordcount: '2805'
 ht-degree: 0%
 
 ---
@@ -900,6 +900,6 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 | Disponibilité des ressources du processeur, centre de données, espace disque | R |   |
 | Disponibilité et exécution de la capacité de montée en puissance ou redimensionnement d&#39;urgence | R |   |
 | Demande de capacité de survol |     | R |
-| Surveillance de l’utilisation de vCPU par rapport aux limites | R |   |
+| Surveillance de l’utilisation du processeur virtuel par rapport aux limites | R |   |
 
 {style="table-layout:auto"}
