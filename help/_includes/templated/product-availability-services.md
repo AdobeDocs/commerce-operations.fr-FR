@@ -1,21 +1,21 @@
 ---
-source-git-commit: 8ec54f9a62c0afbbbb332ba23a9a97f9ce2a3187
+source-git-commit: 7edf0d26be64b4583d0a4d6ce313d25077662637
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '129'
 ht-degree: 6%
 
 ---
-# Disponibilité des produits pour Commerce Services
+# Disponibilité du produit des services Commerce
 
 
 <table style="table-layout:auto">
   <thead>
     <tr>
       <th>Versions d’Adobe Commerce</th>
-      <th>2,4,7</th>
-      <th>2 4.6.</th>
-      <th>2,4,5</th>
-      <th>2 4.4.4</th>
+      <th>2.4.7</th>
+      <th>2.4.6</th>
+      <th>2.4.5</th>
+      <th>2.4.4</th>
       <th></th>
     </tr>
   </thead>
@@ -27,7 +27,7 @@ ht-degree: 6%
           <td>4.3.0+</td>
           <td>4.3.0+</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-module-amazon.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-module-amazon.html">Marché</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Notes de mise à jour</a><br/>
           </td>
       </tr>
@@ -38,7 +38,7 @@ ht-degree: 6%
           <td>1,17</td>
           <td>1,17</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">Aperçu</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">Présentation</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Notes de mise à jour</a><br/>
           </td>
       </tr>
@@ -49,7 +49,7 @@ ht-degree: 6%
           <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-channel-manager.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-channel-manager.html">Marché</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">Notes de mise à jour</a><br/>
           </td>
       </tr>
@@ -60,7 +60,7 @@ ht-degree: 6%
           <td>4.1.0</td>
           <td>4.1.0</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marché</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Notes de mise à jour</a><br/>
           </td>
       </tr>
@@ -71,29 +71,18 @@ ht-degree: 6%
           <td>2.4.0 (PHP 8.1)</td>
           <td>2.4.0 (PHP 8.1)</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Marché</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Notes de mise à jour</a><br/>
           </td>
       </tr>
       <tr>
-          <td>Recommendations du produit</td>
+          <td>Recommendations de produit</td>
           <td>6.0.0</td>
           <td>6.0.0</td>
           <td>6.0.0</td>
           <td>6.0.0</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Notes de mise à jour</a><br/>
-          </td>
-      </tr>
-      <tr>
-          <td>Paiement rapide</td>
-          <td>-</td>
-          <td>1.0.0+</td>
-          <td>1.2.0+</td>
-          <td>1.0.0+</td>
-          <td>
-              <a href="https://commercemarketplace.adobe.com/magento-quick-checkout.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marché</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Notes de mise à jour</a><br/>
           </td>
       </tr>
@@ -104,7 +93,7 @@ ht-degree: 6%
           <td>1.2.0+</td>
           <td>1.2.0+</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html">Marché</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">Notes de mise à jour</a><br/>
           </td>
       </tr>
