@@ -1,24 +1,32 @@
 ---
-title: Traitement des commandes à haut débit
-description: Optimisez l’emplacement des commandes et l’expérience de passage en caisse pour votre déploiement Adobe Commerce.
+title: Bonnes pratiques relatives aux performances de passage en caisse
+description: Découvrez comment optimiser les performances des expériences de passage en caisse sur votre site Adobe Commerce.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: e4c1832076bb81cd3e70ff279a6921ffb29ea631
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
 
-# Traitement des commandes à haut débit
 
-Vous pouvez optimiser le placement des commandes et l’expérience de passage en caisse en configurant l’ensemble de modules suivant pour **traitement des commandes à haut débit**:
+# Bonnes pratiques relatives aux performances de passage en caisse
+
+La variable [passage en caisse](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) Le processus dans Adobe Commerce est un aspect essentiel de l’expérience storefront. Il repose sur la fonction intégrée [panier](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart) et [passage en caisse](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page) fonctionnalités.
+
+Les performances sont essentielles pour garantir une expérience utilisateur optimale. Consultez la section [résumé des performances](../implementation-playbook/infrastructure/performance/benchmarks.md) pour en savoir plus sur les attentes en matière de performances. Vous pouvez optimiser les performances de passage en caisse en configurant les options suivantes pour **traitement des commandes à haut débit**:
 
 - [AsyncOrder](#asynchronous-order-placement): traite les commandes de manière asynchrone à l’aide d’une file d’attente.
-- [Calcul total différé](#deferred-total-calculation): renverse les calculs pour les totaux de commande jusqu’au début du passage en caisse.
-- [Contrôle de l’inventaire lors du chargement des citations](#disable-inventory-check): choisissez d’ignorer la validation de l’inventaire des articles du panier.
+- [Calcul total différé](#deferred-total-calculation): définissez les calculs pour les totaux des commandes jusqu’au début du passage en caisse.
+- [Contrôle de l’inventaire au chargement du panier](#disable-inventory-check): choisissez d’ignorer la validation de l’inventaire des articles du panier.
+- [Equilibrage de la charge](#load-balancing): activez les connexions secondaires pour la base de données MySQL et l’instance Redis.
 
-Toutes les fonctionnalités (commande asynchrone, calcul total différé et vérification de l’inventaire) fonctionnent indépendamment. Vous pouvez utiliser les trois fonctions simultanément ou activer et désactiver les fonctions dans n’importe quelle combinaison.
+Les options de configuration Commande asynchrone, Calcul total différé et Contrôle du stock sur le chargement du panier fonctionnent toutes indépendamment. Vous pouvez utiliser les trois fonctions simultanément ou activer et désactiver les fonctions dans n’importe quelle combinaison.
+
+>[!NOTE]
+>
+>N’utilisez pas de code PHP personnalisé pour personnaliser les fonctionnalités intégrées de panier et de passage en caisse. Outre les problèmes de performances potentiels, l’utilisation de code PHP personnalisé peut entraîner des mises à niveau et des problèmes de maintenance complexes. Ces problèmes augmentent le coût total de possession. Si la personnalisation du panier et du passage en caisse basée sur PHP est inévitable, utilisez [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/)Extensions approuvées uniquement. Toutes les extensions Marketplace sont soumises à [examen approfondi](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program/) pour vérifier qu’elles respectent les normes de codage Adobe Commerce et les bonnes pratiques.
 
 ## Placement de l’ordre asynchrone
 
@@ -29,7 +37,7 @@ Par exemple, un client ajoute un produit à son panier et sélectionne **[!UICON
 - **Produit disponible**: l’état de la commande passe à _En attente_, la quantité du produit est ajustée, un e-mail contenant les détails de la commande est envoyé au client et les détails de la commande réussie peuvent être affichés dans la variable **Commandes et renvoie** liste avec des options exploitables, telles que réorganiser.
 - **Produit en rupture de stock ou faible approvisionnement**: l’état de la commande passe à _Rejetés_, la quantité de produit n’est pas ajustée, un e-mail contenant des détails sur la commande est envoyé au client et les détails de la commande rejetée sont disponibles dans la variable **Commandes et renvoie** liste sans options exploitables.
 
-Utilisez l’interface de ligne de commande pour activer ces fonctionnalités ou modifiez la variable `app/etc/env.php` en fonction des fichiers LISEZMOI correspondants définis dans la variable [_Guide de référence du module_][mrg].
+Utilisez l’interface de ligne de commande pour activer ces fonctionnalités ou modifiez la variable `app/etc/env.php` en fonction des fichiers LISEZMOI correspondants définis dans la variable [_Guide de référence du module_](https://developer.adobe.com/commerce/php/module-reference/).
 
 **Pour activer AsyncOrder**:
 
@@ -48,7 +56,7 @@ La variable `set` La commande écrit ce qui suit dans la fonction `app/etc/env.p
    ]
 ```
 
-Voir [AsyncOrder] dans le _Guide de référence du module_.
+Voir [AsyncOrder](https://developer.adobe.com/commerce/php/module-reference/module-async-order/) dans le _Guide de référence du module_.
 
 **Pour désactiver AsyncOrder**:
 
@@ -73,7 +81,7 @@ La variable `set` La commande écrit ce qui suit dans la fonction `app/etc/env.p
 
 ### Compatibilité d’AsyncOrder
 
-AsyncOrder prend en charge un ensemble limité de [!DNL Commerce] fonctions.
+AsyncOrder prend en charge un ensemble limité de fonctionnalités Adobe Commerce.
 
 | Catégorie | Fonctionnalité prise en charge |
 |------------------|--------------------------------------------------------------------------|
@@ -93,14 +101,14 @@ Lorsque le module AsyncOrder est activé, les points de terminaison REST suivant
 
 **REST :**
 
-- `POST /V1/carts/mine/payment-information`
-- `POST /V1/guest-carts/:cartId/payment-information`
-- `POST /V1/negotiable-carts/:cartId/payment-information`
+- [`POST /V1/carts/mine/payment-information`](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/cartsminepayment-information#operation/PostV1CartsMinePaymentinformation)
+- [`POST /V1/guest-carts/{cartId}/payment-information`](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/guest-cartscartIdpayment-information#operation/PostV1GuestcartsCartIdPaymentinformation)
+- [`POST /V1/negotiable-carts/{cartId}/payment-information`](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/negotiable-cartscartIdpayment-information#operation/PostV1NegotiablecartsCartIdPaymentinformation)
 
 **GRAPHQL :**
 
-- [`placeOrder`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/place-order.html)
-- [`setPaymentMethodAndPlaceOrder`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/set-payment-place-order.html)
+- [`placeOrder`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/place-order/)
+- [`setPaymentMethodAndPlaceOrder`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/set-payment-place-order/)
 
 >[!INFO]
 >
@@ -108,7 +116,7 @@ Lorsque le module AsyncOrder est activé, les points de terminaison REST suivant
 
 #### Exclusion des modes de paiement
 
-Les développeurs peuvent exclure explicitement certaines méthodes de paiement de l’emplacement de commande asynchrone en les ajoutant à la variable `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` tableau. Les commandes qui utilisent des méthodes de paiement exclues sont traitées de manière synchrone.
+Les développeurs peuvent exclure explicitement certaines méthodes de paiement du placement de commande asynchrone en les ajoutant à la variable `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` tableau. Les commandes qui utilisent des méthodes de paiement exclues sont traitées de manière synchrone.
 
 ### Ordre asynchrone des citations négociables
 
@@ -116,9 +124,9 @@ La variable _Ordre asynchrone des citations négociables_ Le module B2B vous per
 
 ## Calcul total différé
 
-La variable _Calcul total différé_ optimise le processus de passage en caisse en différant le calcul total jusqu’à ce qu’il soit demandé pour le panier ou lors des étapes finales de passage en caisse. Lorsqu’il est activé, seul le sous-total est calculé lorsqu’un client ajoute des produits au panier.
+La variable _Calcul total différé_ optimise le processus de passage en caisse en différant le calcul total jusqu’à ce qu’il soit demandé pour le panier ou lors des dernières étapes de passage en caisse. Lorsqu’il est activé, seul le sous-total est calculé lorsqu’un client ajoute des produits au panier.
 
-DeferredTotalCalcul **disabled** par défaut. Utilisez l’interface de ligne de commande pour activer ces fonctionnalités ou modifiez la variable `app/etc/env.php` en fonction des fichiers LISEZMOI correspondants définis dans la variable [_Guide de référence du module_][mrg].
+Calcul du total différé **disabled** par défaut. Utilisez l’interface de ligne de commande pour activer ces fonctionnalités ou modifiez la variable `app/etc/env.php` en fonction des fichiers LISEZMOI correspondants définis dans la variable [_Guide de référence du module_](https://developer.adobe.com/commerce/php/module-reference/).
 
 **Pour activer DeferredTotalCalcul**:
 
@@ -154,11 +162,11 @@ La variable `set` La commande écrit ce qui suit dans la fonction `app/etc/env.p
    ]
 ```
 
-Voir [DeferredTotalCalculating] dans le _Guide de référence du module_.
+Voir [DeferredTotalCalculating](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/) dans le _Guide de référence du module_.
 
 ### Taxe sur les produits fixe
 
-Lorsque DeferredTotalCalcul est activé, la taxe sur les produits fixes (FPT) n’est pas incluse dans le prix du produit et le sous-total du panier du mini-panier après l’ajout du produit au panier. Le calcul FPT est différé lors de l’ajout d’un produit au mini panier. Le FPT s’affiche correctement dans le panier après le passage en caisse final.
+Lorsque l’option Calcul du total différé est activée, la taxe sur les produits fixes (FPT) n’est pas incluse dans le prix du produit et le sous-total du panier du mini-panier après l’ajout du produit au panier. Le calcul FPT est différé lors de l’ajout d’un produit au mini panier. Le FPT s’affiche correctement dans le panier après le passage en caisse final.
 
 ## Désactiver la vérification du stock
 
@@ -166,13 +174,13 @@ La variable _Activation de l’inventaire au chargement du panier_ paramètre gl
 
 Lorsque cette option est désactivée, la vérification de stock ne se produit pas lors de l’ajout d’un produit au panier. Si cette vérification de stock est ignorée, certains scénarios en rupture de stock peuvent générer d’autres types d’erreurs. Vérification de stock _always_ se produit à l’étape d’emplacement de la commande, même lorsqu’elle est désactivée.
 
-**Activer Contrôle De L’Inventaire Lors Du Chargement Du Panier** est activée (définie sur Oui) par défaut. Pour désactiver la vérification de stock lors du chargement du panier, définissez **[!UICONTROL Enable Inventory Check On Cart Load]** to `No` dans l’interface utilisateur d’administration **Magasins** > **Configuration** > **Catalogue** > **Inventaire** > **Options Stock** . Voir [Configuration des options globales][global] et [Inventaire du catalogue][inventory] dans le _Guide de l’utilisateur_.
+**Activer Contrôle De L’Inventaire Lors Du Chargement Du Panier** est activée (définie sur Oui) par défaut. Pour désactiver la vérification de stock lors du chargement du panier, définissez **[!UICONTROL Enable Inventory Check On Cart Load]** to `No` dans l’interface utilisateur d’administration **Magasins** > **Configuration** > **Catalogue** > **Inventaire** > **Options Stock** . Voir [Configuration des options globales](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options) et [Inventaire du catalogue](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) dans le _Guide de l’utilisateur_.
 
 ## Equilibrage de la charge
 
 Vous pouvez équilibrer la charge entre les différents noeuds en activant les connexions secondaires pour la base de données MySQL et l’instance Redis.
 
-Adobe Commerce peut lire plusieurs bases de données ou instances Redis de manière asynchrone. Si vous utilisez Commerce sur l’infrastructure cloud, vous pouvez configurer les connexions secondaires en modifiant la variable [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) et [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) dans la variable `.magento.env.yaml` fichier . Un seul noeud doit gérer le trafic de lecture-écriture. Par conséquent, la définition des variables sur `true` crée une connexion secondaire pour le trafic en lecture seule. Définissez les valeurs sur `false` pour supprimer tout tableau de connexion en lecture seule existant du `env.php` fichier .
+Adobe Commerce peut lire plusieurs bases de données ou instances Redis de manière asynchrone. Si vous utilisez Commerce sur l’infrastructure cloud, vous pouvez configurer les connexions secondaires en modifiant la variable [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) et [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) dans la variable `.magento.env.yaml` fichier . Un seul noeud doit gérer le trafic de lecture-écriture. Par conséquent, la définition des variables sur `true` crée une connexion secondaire pour le trafic en lecture seule. Définissez les valeurs sur `false` pour supprimer tout tableau de connexion en lecture seule existant du `env.php` fichier .
 
 Exemple de `.magento.env.yaml` fichier :
 
@@ -182,11 +190,3 @@ stage:
     MYSQL_USE_SLAVE_CONNECTION: true
     REDIS_USE_SLAVE_CONNECTION: true
 ```
-
-<!-- link definitions -->
-
-[global]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/global-options.html
-[inventory]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html
-[mrg]: https://developer.adobe.com/commerce/php/module-reference/
-[AsyncOrder]: https://developer.adobe.com/commerce/php/module-reference/module-async-order/
-[DeferredTotalCalculating]: https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/

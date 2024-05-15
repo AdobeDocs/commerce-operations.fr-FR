@@ -4,9 +4,9 @@ description: Découvrez les bonnes pratiques de mise en oeuvre pour la phase de 
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: ce386611834c4199e34b5d95ce76254957821f46
+source-git-commit: cca301a72b972d843b878fae28901a47c8fc0489
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '336'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,15 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques pou
 | [Révision du code](code-review.md) | Processus de validation recommandé pour s’assurer que les fonctionnalités mises en oeuvre répondent aux exigences |
 | [Comparaison entre le compositeur et Git](code-management.md) | Déterminer comment distribuer du code personnalisé en tenant compte de la gestion des versions, de la complexité du code et de la gestion des dépendances |
 | [Stratégie d&#39;embranchement](git-branching.md) | Gestion du code source dans les référentiels Git |
-| [Exemples de GRA](../../architecture/global-reference/examples.md) | Comprendre les méthodes courantes d’organisation d’une [architecture de référence globale](../../architecture/global-reference/overview.md) base de code |
+
+## Plateforme et services
+
+| Bonne pratique | Description |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| [Versions et déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Décrit les bonnes pratiques pour les étapes de création et de déploiement d’Adobe Commerce sur les projets d’infrastructure cloud |
+| Débogage | Débogage systématique et efficace de la structure Adobe Commerce |
+| [Déploiement de contenu statique](static-content-deployment.md) | Évitez les problèmes liés au contenu statique qui n’apparaît pas sur votre storefront. |
+| [Dépannage](troubleshooting.md) | Résolution des problèmes courants de mise en oeuvre d’Adobe Commerce |
 
 ## Base
 
@@ -67,12 +75,3 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques pou
 | [Extensions](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Décrit les modèles de développement pour garantir la compatibilité entre votre extension, les versions futures d’Adobe Commerce et d’autres extensions personnalisées. |
 | [Blocs de contenu privé](private-content-block-configuration.md) | Configuration de blocs de contenu privés pour optimiser les performances du storefront |
 | [Modification du code PHP principal et tiers](modifying-core-and-third-party-code.md) | Modifiez la fonctionnalité, le résultat ou la saisie de tout code que vous n’avez pas créé ou dont vous n’avez pas directement le contrôle. |
-
-## Plateforme et services
-
-| Bonne pratique | Description |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Versions et déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Décrit les bonnes pratiques pour les étapes de création et de déploiement d’Adobe Commerce sur les projets d’infrastructure cloud |
-| Débogage | Débogage systématique et efficace de la structure Adobe Commerce |
-| [Déploiement de contenu statique](static-content-deployment.md) | Évitez les problèmes liés au contenu statique qui n’apparaît pas sur votre storefront. |
-| [Dépannage](troubleshooting.md) | Résolution des problèmes courants de mise en oeuvre d’Adobe Commerce |
