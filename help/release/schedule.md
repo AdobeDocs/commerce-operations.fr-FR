@@ -2,7 +2,7 @@
 title: Calendrier des versions
 description: Découvrez à quel moment Adobe prévoit d’annoncer la publication de nouvelles fonctionnalités pour Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 4d57c979e8e65e1463f4f16829104cfbde730cb2
+source-git-commit: 1eac85dd1cf90f6cb064dc68a4622a6343c84b4d
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 2%
@@ -33,7 +33,7 @@ Le tableau suivant indique les dates des versions planifiées (les dates peuvent
    <tr>
       <td colspan="3"><strong>Légende</strong>
          <ul>
-           <li><strong><img alt="Icône de fonctionnalité B2B" src="../assets/icons/enterprise.svg"></img> B2B</strong>: nouvelles fonctionnalités, améliorations et correctifs pour l’extension B2B pour Adobe Commerce. Pour plus d’informations sur les versions de l’extension B2B, consultez les [Notes de mise à jour B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).</li>
+           <li><strong><img alt="Icône de fonctionnalité B2B" src="../assets/icons/enterprise.svg"></img> B2B</strong>: nouvelles fonctionnalités, améliorations et correctifs pour l’extension B2B pour Adobe Commerce. Pour plus d’informations sur les versions de l’extension B2B, consultez les [Notes de mise à jour B2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html).</li>
             <li><strong><img alt="Icône de la fonction d’extensibilité" src="../assets/icons/brackets.svg"></img> Extensibilité</strong>: nouveaux outils et services de développement pour une extensibilité hors processus fournie indépendamment des versions de correctif. Par exemple, le SDK de l’interface utilisateur d’administration, les événements d’Adobe I/O pour Commerce et le maillage d’API.</li>
             <li><strong><img alt="Icône Fonctionnalité de l’infrastructure" src="../assets/icons/servers.svg"></img> Infrastructure</strong>: nouvelles fonctionnalités et améliorations apportées à Adobe Commerce sur l’infrastructure cloud et aux modules Cloud Tools Suite for Commerce, conçus pour déployer et gérer les installations et mises à niveau Adobe Commerce sur la plateforme Cloud.</li>
             <li><strong><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> Correctifs</strong>: mises à jour de l’application PHP principale d’Adobe Commerce qui incluent la sécurité, la conformité, les performances et des correctifs de qualité prioritaires.</li>
