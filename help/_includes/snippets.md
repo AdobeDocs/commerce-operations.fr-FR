@@ -1,5 +1,5 @@
 ---
-source-git-commit: f7db6b65d74c605976a3a338c98eebda2dc46a43
+source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Les versions d’Adobe Commerce peuvent contenir des modifications incompatibles avec le passé (BIC). Pour examiner les modifications incompatibles avec l’arrière-plan, voir [Référence BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Les principaux problèmes incompatibles avec le passé sont décrits dans la section [Faits saillants de la BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Toutes les versions n’introduisent pas de code BIC majeur.
+>Les versions d’Adobe Commerce peuvent contenir des modifications incompatibles avec l’arrière-plan (BIC). Pour examiner les modifications incompatibles avec l’arrière-plan, voir [Référence BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Les principaux problèmes incompatibles avec le passé sont décrits dans la section [Faits saillants de la BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Toutes les versions n’introduisent pas de code BIC majeur.
 
 ## Avertissement CVE {#cve-notice}
 
