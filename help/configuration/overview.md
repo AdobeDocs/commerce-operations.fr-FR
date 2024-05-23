@@ -1,11 +1,11 @@
 ---
 title: Présentation du guide de configuration
-description: Découvrez l’ensemble des fonctionnalités et services configurables de votre application Adobe Commerce.
+description: Découvrez l’ensemble des fonctionnalités et services configurables de votre application Adobe Commerce.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: Installation sur site - Aperçu
-description: Découvrez le processus d’installation pour les déploiements sur site d’Adobe Commerce.
+description: Découvrez le processus d’installation pour les déploiements sur site d’Adobe Commerce.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
 source-wordcount: '148'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 

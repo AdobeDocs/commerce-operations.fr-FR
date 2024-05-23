@@ -1,12 +1,12 @@
 ---
 title: Phases de mise en oeuvre
-description: Découvrez les bonnes pratiques pour les phases de mise en oeuvre des projets Adobe Commerce.
+description: Découvrez les bonnes pratiques pour les phases de mise en œuvre des projets Adobe Commerce.
 exl-id: c5272f79-7315-46dc-a191-a40004aaa812
 feature: Best Practices
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '157'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
