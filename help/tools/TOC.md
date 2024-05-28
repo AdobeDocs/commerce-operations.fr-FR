@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leurs utilisations, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 9527ce1983340c6438c33b1d07acf4b4b699ccc8
+source-git-commit: 7cdaeec902235898bb27914a1b39a551f26d26e2
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '179'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,6 @@ ht-degree: 3%
    - [Notes de mise à jour](quality-patches-tool/release-notes.md)
 - Référence des outils de ligne de commande {#cli-reference}
    - [Adobe Commerce (sur site)](reference/commerce-on-premises.md)
-   - [Magento Open Source](reference/magento-open-source.md)
    - [Outil de compatibilité de mise à niveau](reference/uct.md)
 - Observation pour Adobe Commerce {#observation-for-adobe-commerce}
    - [Introduction](observation-for-adobe-commerce/intro.md)
