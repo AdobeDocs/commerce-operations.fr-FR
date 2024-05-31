@@ -2,9 +2,9 @@
 title: Versions bêta
 description: Découvrez les versions bêta d’Adobe Commerce et comment y participer.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 1dd4b44c6aa685795e16dccebfaf073dcc0062f2
+source-git-commit: d761bd089fbd2046e993d4652e9e0e2b3c4d2777
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -47,15 +47,6 @@ Pour participer à cette version bêta, envoyez une demande par courrier électr
 - Prise en charge de plusieurs jeux de données et flux de données
 
 Pour participer à cette version bêta, envoyez une demande par courrier électronique à [DataConnection@adobe.com](mailto:DataConnection@adobe.com).
-
-### Kit de démarrage d’intégration backoffice (version bêta privée)
-
-Le back-office [kit de démarrage d’intégration](https://developer-stage.adobe.com/commerce/extensibility/app-development/starter-kit/) fournit aux développeurs un accélérateur pour créer des intégrations basées sur des événements avec des systèmes tels que les ERP, les CRM et les OMS. Avec le kit de démarrage, vous pouvez réduire les coûts de développement jusqu’à 50 %. Le kit de démarrage suit également les bonnes pratiques d’Adobe Commerce qui réduisent considérablement le coût de maintenance. Voici les points forts du kit de démarrage :
-- Synchronisation des données pour les objets fréquemment utilisés tels que le produit, la commande, le client, le stock et l’expédition
-- Plans directeurs architecturaux suivant les bonnes pratiques
-- Intégration de scripts pour accélérer le développement
-
-Pour participer à cette version bêta, exécutez la [formulaire d&#39;inscription](https://forms.office.com/r/YbYArqE3DT).
 
 ### Adobe Commerce Foundation (version bêta publique)
 
