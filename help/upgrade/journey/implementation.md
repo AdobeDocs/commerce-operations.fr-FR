@@ -2,9 +2,9 @@
 title: Mise à niveau
 description: Découvrez les différentes phases de mise en oeuvre de la mise à niveau pour les projets Adobe Commerce.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: a81d2c0b6526c2c8c8c5c4652c83595667985543
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
@@ -32,6 +32,10 @@ Vous trouverez ci-dessous des éléments que vous pouvez inclure dans une analys
    - Version installée actuelle
    - Mise à niveau de la version cible
    - Nombre et détails des erreurs critiques détectées
+
+  >[!TIP]
+  >
+  >Toutes ces informations (et bien plus) sont disponibles dans l’outil d’analyse à l’échelle du site [tableau de bord](../../tools/site-wide-analysis-tool/dashboard.md).
 
 - Mise à niveau des services pour prendre en charge la version cible. Utilisez le modèle de tableau suivant pour déterminer les services à mettre à niveau. Utilisez la variable [configuration requise](../../installation/system-requirements.md) pour déterminer les éléments à ajouter à la variable _Mettre à niveau vers_ colonne .
 
