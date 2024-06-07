@@ -2,9 +2,9 @@
 title: Versions bêta
 description: Découvrez les versions bêta d’Adobe Commerce et comment y participer.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: d761bd089fbd2046e993d4652e9e0e2b3c4d2777
+source-git-commit: 0e2dfc376a049a47348a7a913bd5181436227cc2
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,22 @@ L’obtention d’un accès anticipé aux fonctionnalités qu’Adobe développe
 ## Programmes bêta actuels
 
 Consultez les sections suivantes pour obtenir la liste des programmes bêta actifs.
+
+### Intégration de Experience Manager Assets pour Commerce (version bêta privée)
+
+L’intégration de Experience Manager Assets pour Commerce permet une gestion et une diffusion efficaces d’un grand volume d’images de produits de Experience Manager Assets à Adobe Commerce avec un faible effort opérationnel ou aucun effort nécessaire.
+
+Principales fonctionnalités :
+
+- Intégration de l’installation et de la lecture : proposez un Adobe prêt à l’emploi, l’intégration entre Experience Manager Assets et Adobe Commerce, afin de permettre aux commerçants de se concentrer sur ce qui importe le plus, avec des coûts d’exploitation réduits et une meilleure efficacité.
+
+- Personnalisez des images de produit à l’échelle Utilisez Experience Manager Assets afin de générer des millions de variations de produit pour des expériences Commerce personnalisées avec des outils d’édition faciles basés sur l’interface utilisateur, la création de contenu génératif à l’aide de l’Adobe Firefly et des workflows de ressources attribués pour garantir la cohérence de la marque. Une fois que vous êtes satisfait des ressources, distribuez-les facilement dans vos vitrines Commerce à l’aide de l’intégration Experience Manager Assets.
+
+- Intégration simple : simplifiez l’intégration des commerçants grâce à un processus de synchronisation configurable qui permet une synchronisation complète entre le référentiel Experience Manager Assets et le catalogue Commerce.
+
+- Stratégie de correspondance flexible : l’intégration comprend des algorithmes de correspondance de ressources par défaut basés sur des SKU de produit qui synchronisent les images entre AEM Assets et Commerce. Elle est extensible à l’aide d’Adobe Developer App Builder. Collaborez avec votre partenaire de solution pour créer une stratégie de mise en correspondance des ressources personnalisée en plus de l’intégration afin de prendre en compte n’importe quelle structure de référentiel de gestion des ressources.
+
+Pour participer à la version bêta, envoyez une demande par courrier électronique à [Shaun McCran](mailto:mccran@adobe.com).
 
 ### Intégration du système de gestion des commandes client IBM (version bêta privée)
 
