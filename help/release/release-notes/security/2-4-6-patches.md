@@ -2,20 +2,27 @@
 title: Notes de mise à jour du correctif de sécurité Adobe Commerce 2.4.6
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et d’autres mises à jour relatives à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.6.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: e1c5b5e5c1a8800aa5aa2657060f61c16743cbda
+source-git-commit: 7705e750a466ab134ae2616a40a32880ee0c45de
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1134'
 ht-degree: 0%
 
 ---
 
-# Notes de mise à jour des correctifs de sécurité Adobe Commerce 2.4.6
+
+# Notes de mise à jour des correctifs de sécurité d’Adobe Commerce 2.4.6
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
+## Adobe Commerce 2.4.6-p6
+
+La version de sécurité Adobe Commerce 2.4.6-p6 fournit des correctifs de bogues de sécurité pour les vulnérabilités identifiées dans les versions précédentes de la version 2.4.6.
+
+Pour obtenir les informations les plus récentes sur les correctifs de bogues de sécurité, voir [Bulletin de sécurité Adobe APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
 ## Adobe Commerce 2.4.6-p5
 
-La version de sécurité Adobe Commerce 2.4.6-p5 fournit des correctifs de bogues de sécurité pour les vulnérabilités identifiées dans les versions précédentes.
+La version de sécurité Adobe Commerce 2.4.6-p5 fournit des correctifs de bogues de sécurité pour les vulnérabilités identifiées dans les versions précédentes de la version 2.4.6.
 
 Pour obtenir les informations les plus récentes sur ces correctifs, voir [Bulletin de sécurité Adobe APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html).
 

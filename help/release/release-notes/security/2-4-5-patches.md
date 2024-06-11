@@ -2,17 +2,27 @@
 title: Notes de mise à jour du correctif de sécurité Adobe Commerce 2.4.5
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et d’autres mises à jour relatives à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.5.
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-source-git-commit: e1c5b5e5c1a8800aa5aa2657060f61c16743cbda
+source-git-commit: 7705e750a466ab134ae2616a40a32880ee0c45de
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
 
 
-# Notes de mise à jour des correctifs de sécurité Adobe Commerce 2.4.5
+# Notes de mise à jour des correctifs de sécurité d’Adobe Commerce 2.4.5
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
+
+## Adobe Commerce 2.4.5-p8
+
+La version de sécurité Adobe Commerce 2.4.5-p7 fournit des correctifs de bogues de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.5.
+
+Pour obtenir les informations les plus récentes sur les correctifs de bogues de sécurité, voir [Bulletin de sécurité Adobe APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
+### Mises à niveau de la plateforme
+
+* **Prise en charge de MariaDB 10.5**. Ce correctif introduit la compatibilité avec MariaDB version 10.5. Adobe Commerce est toujours compatible avec la version 10.4 de MariaDB, mais Adobe recommande d’utiliser Adobe Commerce 2.4.5-p8 et toutes les versions de correctifs de sécurité 2.4.5 à venir uniquement avec la version 10.5 de MariaDB, car la maintenance de MariaDB 10.4 se termine le 18 juin 2024. <!--AC-11530-->
 
 ## Adobe Commerce 2.4.5-p7
 
@@ -107,5 +117,3 @@ La version de sécurité Adobe Commerce 2.4.5-p1 fournit des correctifs de bogue
 Pour obtenir les informations les plus récentes sur les correctifs de bogues de sécurité, voir [Bulletin de sécurité Adobe APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html).
 
 L’un des correctifs de sécurité a inclus la création d’un nouveau paramètre de configuration. La variable **Demande de confirmation d’email si l’email a été modifié** configuration permet aux administrateurs d’avoir besoin d’une confirmation par courrier électronique lorsqu’un utilisateur administrateur modifie son adresse électronique. <!-- AC-6292-->
-
-

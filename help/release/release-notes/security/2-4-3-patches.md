@@ -2,23 +2,23 @@
 title: Notes de mise à jour des correctifs de sécurité Adobe Commerce 2.4.3
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et d’autres mises à jour relatives à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
 
-# Notes de mise à jour du correctif de sécurité Adobe Commerce 2.4.3
+
+# Notes de mise à jour des correctifs de sécurité d’Adobe Commerce 2.4.3
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
 ## Adobe Commerce 2.4.3-p3
 
-La version de sécurité Adobe Commerce 2.4.3-p3 fournit des correctifs de sécurité pour les vulnérabilités identifiées dans la version précédente (Adobe Commerce 2.4.3 et Magento Open Source 2.4.3). Cette version comprend également des améliorations de sécurité qui améliorent la conformité aux dernières bonnes pratiques en matière de sécurité.
+La version de sécurité Adobe Commerce 2.4.3-p3 fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de la version 2.4.3. Cette version comprend également des améliorations de sécurité qui améliorent la conformité aux dernières bonnes pratiques en matière de sécurité.
 
 Pour obtenir les informations les plus récentes sur les correctifs de bogues de sécurité, voir [Bulletin de sécurité Adobe APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html).
-
 
 ### Appliquer `AC-3022.patch` continuer à proposer DHL comme opérateur de transport
 
@@ -39,7 +39,6 @@ Pour obtenir les informations les plus récentes sur les correctifs de bogues de
 ### Appliquer `AC-3022.patch` continuer à proposer DHL comme opérateur de transport
 
 DHL a introduit la version 6.2 du schéma et va abandonner la version 6.0 dans un avenir proche. Adobe Commerce 2.4.4 et les versions antérieures qui prennent en charge l’intégration DHL ne prennent en charge que la version 6.0. Les commerçants qui déploient ces versions doivent s’appliquer `AC-3022.patch` dès leur première convenance de continuer à proposer DHL comme transporteur. Voir [Appliquez un correctif pour continuer à proposer DHL comme opérateur de transport](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) Article de la base de connaissances pour plus d’informations sur le téléchargement et l’installation du correctif.
-
 
 ### Mise en évidence de la sécurité
 
@@ -65,7 +64,6 @@ La version de sécurité Adobe Commerce 2.4.3-p1 fournit des correctifs de bogue
 
 Pour obtenir les informations les plus récentes sur les correctifs de bogues de sécurité, voir [Bulletin de sécurité Adobe APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html). La version de correctif fournit également des correctifs pour les [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html), [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html), et [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html) extensions développées par des fournisseurs.
 
-
 ### Appliquer `AC-3022.patch` continuer à proposer DHL comme opérateur de transport
 
 DHL a introduit la version 6.2 du schéma et va abandonner la version 6.0 dans un avenir proche. Adobe Commerce 2.4.4 et les versions antérieures qui prennent en charge l’intégration DHL ne prennent en charge que la version 6.0. Les commerçants qui déploient ces versions doivent s’appliquer `AC-3022.patch` dès leur première convenance de continuer à proposer DHL comme transporteur. Voir [Appliquez un correctif pour continuer à proposer DHL comme opérateur de transport](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) Article de la base de connaissances pour plus d’informations sur le téléchargement et l’installation du correctif.
@@ -87,4 +85,3 @@ Cette version inclut le correctif suivant, ainsi que tous les correctifs qui ont
 **Vulnérabilités des tests de pénétration récents** ont été corrigés dans cette version. <!-- MC-42431-->
 
 Expression source non prise en charge `unsafe-inline` a été supprimé de la stratégie de sécurité du contenu. `frame-ancestors` de . [GitHub-33101](https://github.com/magento/magento2/issues/33101)<!-- MC-42632-->
-

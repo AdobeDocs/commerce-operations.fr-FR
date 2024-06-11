@@ -2,16 +2,27 @@
 title: Notes de mise à jour des correctifs de sécurité Adobe Commerce 2.4.4
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et d’autres mises à jour relatives à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: e1c5b5e5c1a8800aa5aa2657060f61c16743cbda
+source-git-commit: 7705e750a466ab134ae2616a40a32880ee0c45de
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
 
-# Notes de mise à jour du correctif de sécurité Adobe Commerce 2.4.4
+
+# Notes de mise à jour des correctifs de sécurité d’Adobe Commerce 2.4.4
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
+
+## Adobe Commerce 2.4.4-p9
+
+La version de sécurité Adobe Commerce 2.4.4-p9 fournit des correctifs de bogues de sécurité pour les vulnérabilités identifiées dans les versions précédentes de la version 2.4.4.
+
+Pour obtenir les informations les plus récentes sur les correctifs de bogues de sécurité, voir [Bulletin de sécurité Adobe APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
+### Mises à niveau de la plateforme
+
+* **Prise en charge de MariaDB 10.5**. Ce correctif introduit la compatibilité avec MariaDB version 10.5. Adobe Commerce est toujours compatible avec la version 10.4 de MariaDB, mais Adobe recommande d’utiliser Adobe Commerce 2.4.4-p9 et toutes les prochaines versions de correctifs uniquement avec la version 10.5 de MariaDB, car la maintenance de MariaDB 10.4 se termine le 18 juin 2024. <!--AC-11530-->
 
 ## 2.4.4-p8
 
@@ -131,4 +142,3 @@ Les améliorations de la sécurité de cette version améliorent la conformité 
 **Problème**: les tests d’API Web et d’intégration affichent cette erreur lors de l’exécution sur le package 2.4.4-p1 : `[2022-06-14T16:58:23.694Z] PHP Fatal error:  Declaration of Magento\TestFramework\ErrorLog\Logger::addRecord(int $level, string $message, array $context = []): bool must be compatible with Monolog\Logger::addRecord(int $level, string $message, array $context = [], ?Monolog\DateTimeImmutable $datetime = null): bool in /var/www/html/dev/tests/integration/framework/Magento/TestFramework/ErrorLog/Logger.php on line 69`. **Solution**: installez la version précédente de Monolog en exécutant la fonction `require monolog/monolog:2.6.0` . <!-- AC-3651-->
 
 **Problème**: les marchands peuvent remarquer des avis de rétrogradation de version de package au cours d’une mise à niveau d’Adobe Commerce 2.4.4 vers Adobe Commerce 2.4.4-p1. Ces messages peuvent être ignorés. L’incohérence des versions de package résulte d’anomalies au cours de la génération de package. Aucune fonctionnalité de produit n’a été affectée. Voir [Packages rétrogradation après mise à niveau de 2.4.4 à 2.4.4-p1](https://support.magento.com/hc/en-us/articles/8214752983949) Article de la base de connaissances pour une discussion sur les scénarios et les solutions applicables.
-

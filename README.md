@@ -1,5 +1,5 @@
 ---
-source-git-commit: 7dd6322370b976d8edea51fd94099e6dc4c082b7
+source-git-commit: 0709cd6510adce0f513894fdecb2de5ac88d0e87
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 3%
@@ -7,7 +7,7 @@ ht-degree: 3%
 ---
 # Documentation technique d’Adobe Commerce
 
-Nous acceptons les contributions de notre communauté ainsi que des employés d’Adobe qui ne font pas partie des équipes de documentation.
+Nous acceptons les contributions de la communauté ainsi que des employés d’Adobe qui ne font pas partie des équipes de documentation.
 
 ## Adobe de code de conduite Open Source
 
@@ -67,7 +67,7 @@ Voici quelques exemples de contenu modélisé :
 
 ### Générer du contenu modèle
 
-En règle générale, la plupart des auteurs n’ont besoin que d’ajouter une version à la disponibilité du produit et aux tableaux de configuration système requise. La maintenance de tout autre contenu modèle est automatisée ou gérée par un membre dédié de l’équipe. Ces instructions sont destinées à &quot;la plupart&quot; des auteurs.
+En règle générale, la plupart des auteurs n’ont besoin que d’ajouter une version à la disponibilité du produit et aux tableaux de configuration système requise. La maintenance de tout autre contenu modèle est automatisée ou gérée par un membre dédié de l’équipe. Ces instructions sont destinées à la plupart des auteurs.
 
 >**REMARQUE :**
 >
