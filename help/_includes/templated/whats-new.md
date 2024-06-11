@@ -1,8 +1,8 @@
 ---
-source-git-commit: 050fa7a35bb5f6f87d364e4c381062ca12baecc7
+source-git-commit: 87fa1874f25e58da103efb073078fa8d930b1265
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 3%
+source-wordcount: '140'
+ht-degree: 2%
 
 ---
 # Nouveautés du modèle
@@ -22,6 +22,24 @@ Découvrez la nouvelle documentation et les mises à jour importantes de la docu
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p>Notes de mise à jour publiées pour les correctifs de sécurité de juin 2024 :<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p6</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p8</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p9</a></p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/000fe5ac88b31e5172c35b629d26423afcca214d">000fe5</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Mis à jour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">configuration requise</a> selon la version du correctif de juin 2024. Modification de la représentation des tableaux de configuration requise.</p>
+</td>
+      <td>technique</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aef697509227b1dfebb801b0e1e098da90201971">aef697</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Mise à jour de la prise en charge de RabbitMQ dans les versions 2.4.5-p7 et 2.4.5-p8 dans <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">configuration requise</a>.</p>
+</td>
+      <td>technique</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/20823bae109f5b053f352b0a13275acecf991904">20823b</a> (commit)</td>
+    </tr>
     <tr>
       <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">Référence d’interface de ligne de commande UCT</a>.</p>
 </td>
