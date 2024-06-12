@@ -2,9 +2,9 @@
 title: Serveur d’applications GraphQL
 description: Suivez ces instructions pour activer le serveur d’applications GraphQL dans votre déploiement Adobe Commerce.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 70d86569bef5c656fff3a8c6b4af142c81c81f10
+source-git-commit: c2f48db87f40498a84b2bf41569bb46202565701
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2088'
 ht-degree: 0%
 
 ---
@@ -66,6 +66,12 @@ Une fois que la fonction Serveur d’applications est activée sur votre projet 
            protocol: http
        commands:
            start: ./application-server/start.sh > var/log/application-server-status.log 2>&1
+   ```
+
+1. Assurez-vous que `/application-server/start.sh` est exécutable en exécutant la commande suivante :
+
+   ```bash
+   chmod +x application-server/start.sh
    ```
 
 1. Ajoutez les fichiers mis à jour à l’index git avec la commande suivante :
