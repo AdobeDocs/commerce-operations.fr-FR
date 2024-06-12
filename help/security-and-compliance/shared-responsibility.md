@@ -2,9 +2,9 @@
 title: Sécurité de la responsabilité partagée et modèle opérationnel
 description: Découvrez les responsabilités en matière de sécurité de chaque partie impliquée dans votre projet d’infrastructure cloud Adobe Commerce.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: e188dad17ccb7d6ae10ed1457e86cc4551deaa75
+source-git-commit: 76aafb88855f7f41db8e57b06cf0e82370b57302
 workflow-type: tm+mt
-source-wordcount: '2805'
+source-wordcount: '2802'
 ht-degree: 0%
 
 ---
@@ -605,7 +605,7 @@ Les tableaux de synthèse ci-après clarifient les responsabilités opérationne
 
 #### Synchronisation des environnements
 
-Les commerçants sont chargés de synchroniser les données entre les environnements de production et d’évaluation.
+Les commerçants sont chargés de synchroniser les données entre les environnements.
 
 #### Patching
 
