@@ -1,7 +1,7 @@
 ---
-source-git-commit: 19d19ef385cf4aaee3a255930af8e6d3b81de23a
+source-git-commit: 1f8fda87e0d39fdcf2372f72373a0b2ea486d25a
 workflow-type: tm+mt
-source-wordcount: '21169'
+source-wordcount: '21185'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Version**: 2.4.7
+**Version**: 2.4.7-p1
 
 Cette référence contient 141 commandes disponibles via le `bin/magento` outil de ligne de commande.
 La liste initiale est générée automatiquement à l’aide de la fonction `bin/magento list` dans Adobe Commerce.
@@ -3996,7 +3996,7 @@ Ne posez aucune question interactive
 ## `events:subscribe`
 
 ```bash
-bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--] <event-code>
+bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--hipaaAuditRequired] [--] <event-code>
 ```
 
 Abonne à l&#39;événement
@@ -4049,6 +4049,13 @@ Destination de cet événement. Spécifiez cette option pour les événements qu
 
 - Valeur par défaut : `default`
 - Requiert une valeur
+
+### `--hipaaAuditRequired`
+
+Indique que l’événement contient des données soumises au contrôle HIPAA.
+
+- Valeur par défaut : `false`
+- N’accepte pas de valeur
 
 ### `--help`, `-h`
 
