@@ -2,9 +2,9 @@
 title: Notes de mise à jour des correctifs de sécurité Adobe Commerce 2.4.4
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et d’autres mises à jour relatives à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: 7705e750a466ab134ae2616a40a32880ee0c45de
+source-git-commit: 59a5306c8329ddc3ca2a2e086f5ebe81b49eab3a
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1432'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Pour obtenir les informations les plus récentes sur les correctifs de bogues de
 ### Mises à niveau de la plateforme
 
 * **Prise en charge de MariaDB 10.5**. Ce correctif introduit la compatibilité avec MariaDB version 10.5. Adobe Commerce est toujours compatible avec la version 10.4 de MariaDB, mais Adobe recommande d’utiliser Adobe Commerce 2.4.4-p9 et toutes les prochaines versions de correctifs uniquement avec la version 10.5 de MariaDB, car la maintenance de MariaDB 10.4 se termine le 18 juin 2024. <!--AC-11530-->
+
+### Améliorations supplémentaires de la sécurité
+
+{{$include /help/_includes/release-notes/2-4-7-security.md}}
 
 ## 2.4.4-p8
 
