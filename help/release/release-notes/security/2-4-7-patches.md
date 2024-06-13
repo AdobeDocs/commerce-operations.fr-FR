@@ -1,9 +1,9 @@
 ---
 title: Notes de mise à jour du correctif de sécurité Adobe Commerce 2.4.7
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et d’autres mises à jour relatives à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.7.
-source-git-commit: 59a5306c8329ddc3ca2a2e086f5ebe81b49eab3a
+source-git-commit: 4ed23e2a8319ff97f8206f752cf1cbe2e73ea5c5
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,6 @@ Pour obtenir les informations les plus récentes sur les correctifs de bogues de
 ### Mise en évidence de la sécurité
 
 Cette version comprend une mise à jour des [paramètres de mot de passe unique (OTP)](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication#google) pour l’authentificateur Google afin de résoudre une erreur introduite par un [modification rétrocompatible](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) dans 2.4.7. La description de la variable **[!UICONTROL OTP Window]** fournit désormais une explication exacte du paramètre et la valeur par défaut a été modifiée à partir de `1` to `29`.
-
-### Améliorations supplémentaires de la sécurité
-
-{{$include /help/_includes/release-notes/2-4-7-security.md}}
 
 ### Correctifs inclus dans cette version
 
