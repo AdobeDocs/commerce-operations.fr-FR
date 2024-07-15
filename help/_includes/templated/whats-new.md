@@ -1,7 +1,7 @@
 ---
-source-git-commit: 87fa1874f25e58da103efb073078fa8d930b1265
+source-git-commit: 583d52a24add39bed3adc981aa0d254bf5122c9b
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '159'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 2%
 ## Nouveautés
 
 Découvrez la nouvelle documentation et les mises à jour importantes de la documentation existante.
+
+### 12 juin 2024
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">packages</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises">bin/magento</a> et <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions">extensions PHP requises</a>.</p>
+</td>
+      <td>technique</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/de91db690b6297dc8857807acec5d33c14e60478">de91db</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 11 juin 2024
 
@@ -22,6 +42,12 @@ Découvrez la nouvelle documentation et les mises à jour importantes de la docu
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">référence d’interface de ligne de commande UCT</a>.</p>
+</td>
+      <td>technique</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1fbddf4ea05511c1aefe0cd0d8e8b2ebde7e00dd">1fbddf</a> (commit)</td>
+    </tr>
     <tr>
       <td><p>Notes de mise à jour publiées pour les correctifs de sécurité de juin 2024 : <br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p6</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p8</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p9</a></p>
 </td>
@@ -39,12 +65,6 @@ Découvrez la nouvelle documentation et les mises à jour importantes de la docu
 </td>
       <td>technique</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/20823bae109f5b053f352b0a13275acecf991904">20823b</a> (commit)</td>
-    </tr>
-    <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">référence d’interface de ligne de commande UCT</a>.</p>
-</td>
-      <td>technique</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1fbddf4ea05511c1aefe0cd0d8e8b2ebde7e00dd">1fbddf</a> (commit)</td>
     </tr>
   </tbody>
 </table>
