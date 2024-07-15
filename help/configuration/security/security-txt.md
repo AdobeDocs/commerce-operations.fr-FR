@@ -6,22 +6,22 @@ badge: label="Contribution de Kalpesh Mehta, photo Corra" type="Informative" url
 exl-id: ddafd03c-77b2-42e8-b593-7d655d08e9c3
 source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
 
 # Fichier TXT de sécurité
 
-Lorsque des chercheurs découvrent des vulnérabilités de la sécurité, des canaux de reporting appropriés sont souvent manquants. Par conséquent, certaines vulnérabilités ne sont pas signalées. L’objet de la variable `security.txt` [format de fichier](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09) est destiné à fournir aux chercheurs en sécurité les informations qu’ils peuvent utiliser pour rapporter leurs résultats.
+Lorsque des chercheurs découvrent des vulnérabilités de la sécurité, des canaux de reporting appropriés sont souvent manquants. Par conséquent, certaines vulnérabilités ne sont pas signalées. Le fichier `security.txt` [format de fichier](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09) a pour but de fournir aux chercheurs en sécurité les informations qu’ils peuvent utiliser pour rapporter leurs résultats.
 
-Les vendeurs peuvent saisir leurs coordonnées pour [rapport sur les problèmes de sécurité](https://docs.magento.com/user-guide/stores/security-issue-reporting.html) à partir de Commerce _Administration_. Pour les développeurs, la variable `Magento_Securitytxt` fournit les fonctionnalités suivantes :
+Les commerçants peuvent saisir leurs coordonnées pour la [création de rapports sur les problèmes de sécurité](https://docs.magento.com/user-guide/stores/security-issue-reporting.html) à partir de l’ _administrateur_ de Commerce. Pour les développeurs, le module `Magento_Securitytxt` fournit les fonctionnalités suivantes :
 
-- Permet d’enregistrer les configurations de sécurité à partir du _Administration_.
-- Contient un routeur qui correspond à la classe d’action de l’application pour les requêtes envoyées à l’événement `.well-known/security.txt` et `.well-known/security.txt.sig` fichiers .
-- Diffuse le contenu de la variable `.well-known/security.txt` et `.well-known/security.txt.sig` fichiers .
+- Permet d&#39;enregistrer les configurations de sécurité à partir de l&#39;_Admin_.
+- Contient un routeur pour faire correspondre la classe d’action de l’application pour les demandes aux fichiers `.well-known/security.txt` et `.well-known/security.txt.sig`.
+- Sert le contenu des fichiers `.well-known/security.txt` et `.well-known/security.txt.sig`.
 
-Un valide `security.txt` peut se présenter comme suit :
+Un fichier `security.txt` valide peut ressembler à ce qui suit :
 
 ```text
 Contact: mailto:security@example.com
@@ -32,7 +32,7 @@ Policy: https://example.com/security-policy.html
 Signature: https://example.com/.well-known/security.txt.sig
 ```
 
-Pour créer la variable `security.txt` signature (`security.txt.sig`) :
+Pour créer le fichier de signature `security.txt` (`security.txt.sig`) :
 
 ```bash
 gpg -u KEYID --output security.txt.sig --armor --detach-sig security.txt

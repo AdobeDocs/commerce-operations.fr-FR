@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Mettre à jour le système de production
 
-**Mise à jour du système de production**:
+**Pour mettre à jour le système de production** :
 
 1. Connectez-vous au système de production en tant que propriétaire du système de fichiers.
 1. Passez à la racine de l’application et activez le mode de maintenance.
@@ -20,9 +20,9 @@ ht-degree: 0%
    bin/magento maintenance:enable
    ```
 
-   Pour d’autres options, telles que la possibilité de définir une liste blanche d’adresses IP, voir [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
+   Pour obtenir des options supplémentaires, telles que la possibilité de définir une liste blanche des adresses IP, voir [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
 
-1. Arrêtez tous les programmes de traitement des files d’attente en cours d’exécution en définissant `cron_run` to `false` in `app/etc/env.php` comme suit :
+1. Arrêtez tous les programmes de travail de file d’attente en cours d’exécution en définissant `cron_run` sur `false` dans `app/etc/env.php` comme suit :
 
    ```php?start_inline=1
    'cron_consumers_runner' => [

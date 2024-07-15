@@ -40,7 +40,7 @@ Le délai d’accès au premier octet (TTF) est généralement considéré comme
 - Dépendance de la réponse lente du service tiers
 - Architecture sans évolutivité
 
-Les ressources à chargement lent sont généralement considérées comme un indicateur qui définit la ressource statique (CSS, JavaScript, images, vidéos, réponse d’appel Ajax tiers).
+Les ressources à chargement lent sont généralement considérées comme un indicateur qui définit la ressource statique (CSS, JavaScript, images, vidéos, réponse d’appel Ajax tierce).
 
 Adobe Commerce peut évoluer avec votre entreprise grâce à ses fonctionnalités :
 
@@ -57,4 +57,4 @@ Il existe également des facteurs clés qui déterminent l’échelle du commerc
 
 Pour les architectures en couches et pouvant être mises en cache conçues pour l’échelle, vous pouvez utiliser ce graphique comme référence.
 
-![Diagramme montrant comment utiliser l’API GraphQL d’Adobe Commerce dans une architecture pouvant être mise en cache](../../../assets/playbooks/cacheable-architecture.svg)
+![Diagramme montrant comment utiliser l’API GraphQL Adobe Commerce dans une architecture pouvant être mise en cache](../../../assets/playbooks/cacheable-architecture.svg)

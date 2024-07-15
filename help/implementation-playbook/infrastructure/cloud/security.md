@@ -5,7 +5,7 @@ exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
 source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Sécurité
 
-Adobe Commerce [Architecture Pro Formule](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) est conçu pour offrir un environnement hautement sécurisé. Chaque client est déployé dans son propre environnement serveur isolé, séparé des autres clients. Les détails de sécurité de l’environnement de production sont décrits ci-dessous.
+L’ [ architecture de plan Pro Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) est conçue pour fournir un environnement hautement sécurisé. Chaque client est déployé dans son propre environnement serveur isolé, séparé des autres clients. Les détails de sécurité de l’environnement de production sont décrits ci-dessous.
 
 ## Navigateurs Web
 
@@ -23,7 +23,7 @@ La majeure partie du trafic entrant et sortant de l’environnement cloud provie
 
 Fournit rapidement une protection CDN (Content Delivery Network, réseau de diffusion de contenu) et DDoS (déni de service distribué). Le CDN rapide permet d’isoler l’accès direct aux serveurs d’origine. Le DNS public pointe uniquement vers le réseau Fastly. La solution de DDoS rapide protège contre les attaques de couche 3 et 4 hautement perturbantes, ainsi que contre les attaques de couche 7 plus complexes. Les attaques de couche 7 peuvent être bloquées à l’aide de règles personnalisées basées sur l’ensemble des requêtes HTTP/HTTPS et selon les critères du client et de la requête, y compris les en-têtes, les cookies, le chemin d’accès à la requête et l’adresse IP du client, ou d’indicateurs tels que la géolocalisation.
 
-Voir [Présentation des services rapides](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html) dans le _Guide de Cloud_.
+Voir [Présentation des services rapides](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html) dans le _Guide Cloud_.
 
 ## Pare-feu d’applications web
 
@@ -47,7 +47,7 @@ L’application Adobe Commerce ne prend pas en charge le chiffrement ou le chiff
 
 ## Détection et réponse des points de fin
 
-[!DNL CrowdStrike Falcon], un agent de détection et de réponse de point de terminaison de nouvelle génération légère est installé sur tous les points de terminaison (y compris les serveurs) d’Adobe. Les agents de RTE protègent les données et les systèmes d&#39;Adobe grâce à une surveillance et une collecte continues en temps réel, ce qui permet une identification et une réponse rapides aux menaces.
+[!DNL CrowdStrike Falcon], un agent de détection et de réponse de point de terminaison de nouvelle génération léger est installé sur tous les points de terminaison (y compris les serveurs) d’Adobe. Les agents de RTE protègent les données et les systèmes d&#39;Adobe grâce à une surveillance et une collecte continues en temps réel, ce qui permet une identification et une réponse rapides aux menaces.
 
 ## Test de pénétration
 
@@ -68,15 +68,15 @@ Adobe teste régulièrement le code de l’application principale à la recherch
 - OWASPZAP
 - andSqlMap
 
-La base de code complète est analysée avec ces outils toutes les deux semaines. Les clients sont informés des correctifs de sécurité par le biais d’emails directs, de notifications dans l’application et dans la variable [Centre de sécurité](https://helpx.adobe.com/security.html).
+La base de code complète est analysée avec ces outils toutes les deux semaines. Les clients sont informés des correctifs de sécurité par des emails directs, des notifications dans l’application et dans le [Centre de sécurité](https://helpx.adobe.com/security.html).
 
-Les clients doivent s’assurer que ces correctifs sont appliqués à leur application personnalisée dans les 30 jours suivant la publication, conformément aux directives PCI. Adobe fournit également un [Outil Analyse de sécurité](https://docs.magento.com/user-guide/magento/security-scan.html) qui permet aux commerçants de surveiller régulièrement leurs sites et de recevoir des mises à jour sur les risques de sécurité connus, les logiciels malveillants et les accès non autorisés. L’outil d’analyse de sécurité est un service gratuit qui peut être exécuté sur n’importe quelle version d’Adobe Commerce.
+Les clients doivent s’assurer que ces correctifs sont appliqués à leur application personnalisée dans les 30 jours suivant la publication, conformément aux directives PCI. Adobe fournit également un [ outil d’analyse de sécurité ](https://docs.magento.com/user-guide/magento/security-scan.html) qui permet aux marchands de surveiller régulièrement leurs sites et de recevoir des mises à jour sur les risques de sécurité connus, les logiciels malveillants et les accès non autorisés. L’outil d’analyse de sécurité est un service gratuit qui peut être exécuté sur n’importe quelle version d’Adobe Commerce.
 
-Pour encourager les chercheurs en sécurité à identifier et à signaler des vulnérabilités, Adobe Commerce dispose d’un [bug-bounty program](https://hackerone.com/magento) en plus des tests internes. De plus, le client reçoit le code source complet de la demande pour sa propre révision, le cas échéant.
+Pour encourager les chercheurs en sécurité à identifier et à signaler des vulnérabilités, Adobe Commerce a un [programme de bugs](https://hackerone.com/magento) en plus des tests internes. De plus, le client reçoit le code source complet de la demande pour sa propre révision, le cas échéant.
 
 ## Système de fichiers en lecture seule
 
-Tout le code exécutable est déployé dans une image système de fichiers en lecture seule, ce qui réduit considérablement les surfaces disponibles pour attaque. Le processus de déploiement crée une image Squash-FS afin de réduire les possibilités d’injection de code PHP ou JavaScript dans le système ou de modifier les fichiers d’application Adobe Commerce.
+Tout le code exécutable est déployé dans une image système de fichiers en lecture seule, ce qui réduit considérablement les surfaces disponibles pour attaque. Le processus de déploiement crée une image Squash-FS afin de réduire les possibilités d’injection de code PHP ou JavaScript dans le système ou de modification des fichiers de l’application Adobe Commerce.
 
 ## Déploiement à distance
 
@@ -84,9 +84,9 @@ Le seul moyen d’obtenir du code exécutable dans l’environnement de producti
 
 ## Journalisation
 
-Toutes les activités AWS sont connectées à AWS CloudTrail. Les journaux du système d’exploitation, du serveur d’applications et de la base de données sont stockés sur les serveurs de production et dans des sauvegardes. Toutes les modifications du code source sont enregistrées dans un référentiel Git. L’historique de déploiement est disponible dans Adobe Commerce [Interface Web du projet](https://devdocs.magento.com/cloud/project/projects.html#login). Tous les accès à l’assistance sont consignés et les sessions d’assistance sont enregistrées.
+Toutes les activités AWS sont connectées à AWS CloudTrail. Les journaux du système d’exploitation, du serveur d’applications et de la base de données sont stockés sur les serveurs de production et dans des sauvegardes. Toutes les modifications du code source sont enregistrées dans un référentiel Git. L’historique de déploiement est disponible dans l’ [interface web du projet](https://devdocs.magento.com/cloud/project/projects.html#login) d’Adobe Commerce. Tous les accès à l’assistance sont consignés et les sessions d’assistance sont enregistrées.
 
-Voir [Affichage et gestion des journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) dans le _Guide de Cloud_.
+Voir [Afficher et gérer les journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) dans le _Guide Cloud_.
 
 ## Données sensibles
 
@@ -110,14 +110,14 @@ Le RGPD exige que toutes les informations d’identification personnelle (telles
 
 >[!NOTE]
 >
->Cette page donne un aperçu général des éléments à prendre en compte pour le RGPD. Voir _[Guide de sécurité et de conformité](../../../security-and-compliance/privacy/gdpr.md)_ pour plus d’informations sur la manière dont Adobe Commerce stocke les informations personnelles. Pour déterminer comment votre entreprise doit se conformer à toute obligation juridique, contactez votre conseiller juridique ou reportez-vous à la section [texte officiel](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+>Cette page donne un aperçu général des éléments à prendre en compte pour le RGPD. Pour plus d’informations sur la façon dont Adobe Commerce stocke les informations personnelles, reportez-vous au _[Guide de sécurité et de conformité](../../../security-and-compliance/privacy/gdpr.md)_. Pour déterminer comment votre entreprise doit se conformer à toute obligation juridique, consultez votre service juridique ou reportez-vous au [texte officiel](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
 ## Sauvegardes
 
-Les sauvegardes sont effectuées toutes les heures pendant les dernières 24 heures de fonctionnement. Après la période de 24 heures, les sauvegardes sont conservées selon un calendrier utilisant le service d’instantané AWS EBS. Voir [Politique de rétention](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#retention-policy) dans le _Guide de Cloud_.
+Les sauvegardes sont effectuées toutes les heures pendant les dernières 24 heures de fonctionnement. Après la période de 24 heures, les sauvegardes sont conservées selon un calendrier utilisant le service d’instantané AWS EBS. Voir [Stratégie de rétention](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#retention-policy) dans le _Guide Cloud_.
 
 Le service crée une sauvegarde indépendante sur le stockage redondant. Les volumes EBS étant cryptés, les sauvegardes sont également cryptées. En outre, Managed Services effectue des sauvegardes à la demande des clients.
 
 Votre approche de sauvegarde et de récupération de Managed Services utilise une architecture haute disponibilité associée à des sauvegardes système complètes. Chaque projet est répliqué (toutes les données, le code et les ressources) dans trois zones de disponibilité AWS distinctes ; chaque zone dispose d’un centre de données distinct.
 
-Voir [Instantanés et gestion des sauvegardes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html) dans le _Guide de Cloud_.
+Voir [Gestion des instantanés et des sauvegardes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html) dans le _Guide de Cloud_.

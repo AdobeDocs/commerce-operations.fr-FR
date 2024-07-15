@@ -6,7 +6,7 @@ feature: Integration, Cache
 topic: Commerce, Performance
 source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,14 @@ Pour réduire la latence entre l’éditeur AEM et Adobe Commerce GraphQL lors d
 
 ## Mise en cache de GraphQL dans Adobe Commerce
 
-Lorsque le navigateur de l’utilisateur ou l’éditeur AEM appelle Adobe Commerce GraphQL, certains appels sont mis en cache en mode Fastly. Les requêtes mises en cache sont généralement celles qui contiennent des données non personnelles et qui sont peu susceptibles de changer fréquemment. Par exemple : catégories, categoryList et produits. Ceux qui ne sont pas explicitement mis en cache sont ceux qui changent régulièrement et si la mise en cache peut présenter des risques pour les données personnelles et les opérations sur le site, comme les requêtes de panier et de customerpaymentTokens.
+Lorsque le navigateur de l’utilisateur ou l’éditeur AEM appelle Adobe Commerce GraphQL, certains appels sont mis en cache.
+en mode Fastly. Les requêtes mises en cache sont généralement celles qui contiennent des données non personnelles et qui sont peu susceptibles de changer fréquemment. Par exemple : catégories, categoryList et produits. Ceux qui ne sont pas explicitement mis en cache sont ceux qui changent régulièrement et si la mise en cache peut présenter des risques pour les données personnelles et les opérations sur le site, comme les requêtes de panier et de customerpaymentTokens.
 
 GraphQL vous permet d’effectuer plusieurs requêtes dans un seul appel. Il est important de noter que si vous spécifiez une seule requête qu’Adobe Commerce ne met pas en cache avec de nombreuses autres requêtes qui ne peuvent pas être mises en cache, Adobe Commerce contournera le cache de toutes les requêtes de l’appel . Cela doit être pris en compte par les développeurs lors de la combinaison de plusieurs requêtes afin de s’assurer que les requêtes pouvant être mises en cache ne sont pas involontairement contournées.
 
 >[!NOTE]
 >
-> Pour plus d’informations sur les requêtes pouvant être mises en cache et non mises en cache, voir Adobe Commerce [documentation destinée aux développeurs](https://devdocs.magento.com/guides/v2.4/graphql/caching.html).
+> Pour plus d’informations sur les requêtes pouvant être mises en cache et non mises en cache, consultez la [documentation destinée aux développeurs](https://devdocs.magento.com/guides/v2.4/graphql/caching.html) d’Adobe Commerce.
 
 ## Tableau plat du catalogue
 
@@ -41,9 +42,9 @@ Un protection d’origine rapide peut être activé dans les paramètres du serv
 
 Une fois que l’option de protection d’origine Fastly est activée, vous pouvez également activer Fastly Image Optimizer. Lorsque les images des catalogues de produits sont stockées sur Adobe Commerce, ce service permet de décharger rapidement et hors d’Adobe Commerce toutes les transformations d’images de catalogues de produits gourmands en ressources. Les temps de réponse des utilisateurs finaux sont également améliorés pour les temps de chargement des pages, car les images sont transformées à l’emplacement de périphérie, ce qui élimine la latence en réduisant le nombre de requêtes à l’origine Adobe Commerce.
 
-L’optimisation rapide des images peut être activée en &quot;activant l’optimisation des images profondes&quot; dans la configuration Fastly dans l’administration, bien que seulement après l’activation de votre protection d’origine. Vous trouverez plus d’informations sur les configurations pour l’optimisation rapide des images dans Adobe Commerce. [documentation destinée aux développeurs](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html).
+L’optimisation rapide des images peut être activée en &quot;activant l’optimisation des images profondes&quot; dans la configuration Fastly dans l’administration, bien que seulement après l’activation de votre protection d’origine. Pour plus d’informations sur les configurations pour l’optimisation rapide des images, consultez la [ documentation destinée aux développeurs](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) d’Adobe Commerce.
 
-![Capture d’écran des paramètres d’optimisation des images Fastly dans l’administrateur Adobe Commerce](../assets/commerce-at-scale/image-optimization.svg)
+![Capture d’écran des paramètres d’optimisation d’image Fastly dans l’administrateur Adobe Commerce](../assets/commerce-at-scale/image-optimization.svg)
 
 ## Désactiver les modules inutilisés
 
@@ -57,7 +58,7 @@ Si l’instance Adobe Commerce attend une charge extrême, l’activation de mas
 
 À titre de guide, dans les environnements à charge normale, l’activation de la connexion esclave ralentit les performances de 10 à 15 %. Mais sur les clusters avec une charge et un trafic élevés, il y a une amélioration des performances d&#39;environ 10 à 15 %. Par conséquent, il est important de charger le test de votre environnement avec les niveaux de trafic prévus afin d’évaluer si ce paramètre serait bénéfique pour les temps de performance en cours de chargement.
 
-Pour activer/désactiver les connexions esclaves pour mysql et redis, vous devez modifier votre `.magento.env.yaml` afin d’inclure les éléments suivants :
+Pour activer/désactiver les connexions esclaves pour mysql et redis, vous devez modifier votre fichier `.magento.env.yaml` afin d’inclure les éléments suivants :
 
 ```
 stage:
@@ -72,6 +73,6 @@ Pour l’architecture mise à l’échelle (architecture fractionnée - voir ci-
 
 Si, après toutes les configurations ci-dessus, les résultats du test de charge ou l’analyse des performances de l’infrastructure active indiquent toujours que les niveaux de charge vers Adobe Commerce sont d’un niveau qui atteint systématiquement le maximum des ressources du processeur et d’autres ressources système, alors un passage à une architecture mise à l’échelle (fractionnée) doit être pris en compte.
 
-Avec une architecture Pro standard, il existe 3 noeuds, chacun contenant une pile technique complète. En effectuant une conversion vers une architecture à plusieurs niveaux, cela se transforme en 6 noeuds au minimum : 3 d’entre eux contiennent Elasticsearch, MariaDB, Redis et d’autres services principaux ; les 3 autres pour le traitement du trafic web contiennent phpfpm et NGINX. Il existe des possibilités de mise à l’échelle plus importantes avec un niveau partagé : les noeuds principaux contenant des bases de données peuvent être mis à l’échelle verticalement ; les noeuds web peuvent être mis à l’échelle horizontalement et verticalement, offrant ainsi une grande flexibilité pour développer l’infrastructure à la demande pendant la période définie d’activité à charge élevée et sur les noeuds où les ressources supplémentaires sont nécessaires.
+Avec une architecture Pro standard, il existe 3 noeuds, chacun contenant une tech stack complète. En effectuant une conversion vers une architecture à plusieurs niveaux, cela se transforme en 6 noeuds au minimum : 3 d’entre eux contiennent Elasticsearch, MariaDB, Redis et d’autres services principaux ; les 3 autres pour le traitement du trafic web contiennent phpfpm et NGINX. Il existe des possibilités de mise à l’échelle plus importantes avec un niveau partagé : les noeuds principaux contenant des bases de données peuvent être mis à l’échelle verticalement ; les noeuds web peuvent être mis à l’échelle horizontalement et verticalement, offrant ainsi une grande flexibilité pour développer l’infrastructure à la demande pendant la période définie d’activité à charge élevée et sur les noeuds où les ressources supplémentaires sont nécessaires.
 
 Si une décision a été prise de passer à une architecture à plusieurs niveaux en raison des fortes attentes en matière de charge sur votre site, une discussion doit être engagée avec votre équipe de compte d’Adobe sur les étapes à suivre pour activer cette fonctionnalité.

@@ -17,7 +17,7 @@ La création d’une page personnalisée vers laquelle rediriger les utilisateur
 
 >[!NOTE]
 >
->Vous devez effectuer les tâches de cette section en tant qu’utilisateur avec `root` des privilèges. Les pages de maintenance personnalisées ne peuvent pas être définies en mode développeur.
+>Vous devez effectuer les tâches de cette section en tant qu’utilisateur disposant des privilèges `root`. Les pages de maintenance personnalisées ne peuvent pas être définies en mode développeur.
 
 ## Création d’une page de maintenance personnalisée
 
@@ -94,7 +94,7 @@ Pour rediriger le trafic vers une page de maintenance personnalisée :
    touch <web server docroot>/maintenance.enable
    ```
 
-1. [Mettre à niveau votre système](../implementation/perform-upgrade.md).
+1. [Mettez à niveau votre système](../implementation/perform-upgrade.md).
 1. Testez votre site pour vous assurer qu’il fonctionne correctement.
 1. Une fois la mise à niveau terminée, supprimez `maintenance.enable`.
 
@@ -105,9 +105,9 @@ Cette section explique comment créer une page de maintenance personnalisée et 
 Pour rediriger le trafic vers une page de maintenance personnalisée :
 
 1. Utilisez un éditeur de texte pour ouvrir le fichier de configuration nginx contenant votre bloc de serveur.
-1. Ajoutez ce qui suit au bloc de serveur (`server` s’affiche pour plus de clarté uniquement ; n’ajoutez pas de deuxième bloc de serveur).
+1. Ajoutez le code suivant au bloc de serveur (`server` s’affiche pour plus de clarté uniquement ; n’ajoutez pas de second bloc de serveur).
 
-   Les listes autorisées suivantes  les adresses IP 192.0.2.110 et 192.0.2.115 sur un système sur lequel Magento est installé dans `/var/www/html/magento2`:
+   Les listes autorisées suivantes  les adresses IP 192.0.2.110 et 192.0.2.115 sur un système où Magento est installé dans `/var/www/html/magento2` :
 
    ```conf
    server {
@@ -154,7 +154,7 @@ Pour rediriger le trafic vers une page de maintenance personnalisée :
    service nginx reload
    ```
 
-1. [Mettre à niveau votre système](../implementation/perform-upgrade.md).
+1. [Mettez à niveau votre système](../implementation/perform-upgrade.md).
 1. Testez votre site pour vous assurer qu’il fonctionne correctement.
 1. Une fois la mise à niveau terminée, supprimez ou renommez `maintenance.enable`
 1. Rechargez la configuration de nginx :

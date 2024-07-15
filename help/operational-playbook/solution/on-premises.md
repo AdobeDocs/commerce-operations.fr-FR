@@ -14,7 +14,8 @@ ht-degree: 0%
 
 # Hébergement local
 
-Les solutions d’hébergement basées sur le cloud sont extrêmement populaires et jouent certainement un rôle important dans de nombreuses organisations. Toutefois, l’infrastructure sur site reste une option adéquate pour certaines organisations et commerçants.
+Les solutions d’hébergement basées sur le cloud sont extrêmement populaires et elles servent certainement une
+Dans de nombreuses organisations, cependant, l&#39;infrastructure sur site est toujours une option adéquate pour certaines organisations et commerçants.
 
 Vous devez tenir compte de plusieurs facteurs avant de choisir l’hébergement sur site, y compris des coûts irrécupérables importants, un bassin d’expertise informatique compétente/rentable et le fait que les applications sur site peuvent souvent être plus facilement adaptées et adaptées aux besoins d’une entreprise.
 

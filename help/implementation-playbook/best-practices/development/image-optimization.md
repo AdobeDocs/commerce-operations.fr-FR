@@ -6,8 +6,8 @@ feature: Best Practices
 exl-id: ada8b987-97ed-4232-9e1b-7e0a791a0807
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 0%
+source-wordcount: '197'
+ht-degree: 1%
 
 ---
 
@@ -32,9 +32,9 @@ Avant de charger des images sur vos sites Commerce, optimisez-les et compressez-
 
 ## Activation et configuration de l’optimisation d’images Fastly
 
-Une fois que vous avez configuré le service Fastly pour votre projet Adobe Commerce Cloud, voir [Optimisation rapide des images](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) pour obtenir des instructions sur l’activation et la configuration de l’optimisation des images.
+Une fois que vous avez configuré le service Fastly pour votre projet Adobe Commerce Cloud, reportez-vous à la section [ Optimisation d’image Fastly](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) pour obtenir des instructions sur l’activation et la configuration de l’optimisation des images.
 
 ## Informations supplémentaires
 
-- [Configuration rapide](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
-- [Les images mal optimisées peuvent entraîner des problèmes de performances.](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html)
+- [Configurer Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
+- [ Les images mal optimisées peuvent entraîner des problèmes de performances](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html)

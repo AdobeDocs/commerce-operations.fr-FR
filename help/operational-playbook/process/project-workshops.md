@@ -79,7 +79,7 @@ L’objectif de l’atelier de conception est de réfléchir à ce à quoi le cl
 - Définition d’un objectif
 - Identifier les besoins
 - Définir les résultats
-- Sketch Sketch Sketch Sketch !
+- Sketch Sketch Sketch
 - Effectuez des équipes côté client pour obtenir des commentaires sur le travail des autres
 - Notez les mentions J’aime et je n’aime pas
 - Temps de suivi
@@ -110,7 +110,7 @@ La configuration d’un site d’e-commerce est complexe et nécessite des tests
 - Chargement de page
 - Sauvegarde
 - Transactions
-- Traitement
+- En cours de traitement
 - Intégration
 - Connexion
 - Sécurité

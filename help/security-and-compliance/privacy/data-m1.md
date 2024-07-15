@@ -28,25 +28,25 @@ Les diagrammes de flux de données indiquent les types de données que les clien
 
 Un utilisateur peut saisir des informations sur son client, son adresse et son paiement lors de son enregistrement pour un compte, lors de son passage en caisse et pour d’autres événements similaires.
 
-![Points d’entrée des données frontaux](../../assets/security-compliance/frontend-data-entry-points.svg)
+![ Points d’entrée de données frontend](../../assets/security-compliance/frontend-data-entry-points.svg)
 
 ### Points d’accès aux données frontaux
 
 Commerce charge les informations sur les clients lorsque le client se connecte et consulte plusieurs pages ou extraits différents.
 
-![Points d’accès aux données frontaux](../../assets/security-compliance/frontend-data-access-points.svg)
+![ Points d’accès aux données frontend](../../assets/security-compliance/frontend-data-access-points.svg)
 
 ### Points d’entrée des données dorsales
 
 Un commerçant peut saisir des informations sur le client, l’adresse et le paiement auprès de l’administrateur pour créer un client ou une commande.
 
-![Points d’entrée des données dorsales](../../assets/security-compliance/backend-data-entry-points.svg)
+![ Points d’entrée des données principales](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### Points d’accès aux données du serveur principal
 
 Commerce charge les informations sur les clients lorsqu’un commerçant affiche plusieurs types de grilles, clique sur une grille pour afficher des informations détaillées et effectue diverses autres tâches.
 
-![Points d’accès aux données du serveur principal](../../assets/security-compliance/backend-data-access-points.svg)
+![ Points d’accès aux données du serveur principal](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## Entités de base de données
 
@@ -54,17 +54,17 @@ Le Magento 1 stocke les informations sur les clients dans des tables de base de 
 
 ### Données client
 
-Le Magento 1 stocke les informations client dans la variable `customer_entity` et `customer_address_entity` des tables. Ces deux tables comportent plusieurs tables de référence qui peuvent contenir des attributs client personnalisés.
+Magento 1 stocke les informations sur les clients dans les tables `customer_entity` et `customer_address_entity`. Ces deux tables comportent plusieurs tables de référence qui peuvent contenir des attributs client personnalisés.
 
 #### `customer_entity` et tables de référence
 
-Les colonnes suivantes du `customer_entity`Le tableau contient les informations sur les clients :
+Les colonnes suivantes du `customer_entity`tableau contiennent les informations sur les clients :
 
 | Colonne | Type de données |
 | --- | --- |
 | `email` | varchar(255) |
 
-Ces tables font référence à `customer_entity` et peut contenir des attributs client personnalisés :
+Ces tables font référence à `customer_entity` et peuvent contenir des attributs client personnalisés :
 
 | Tableau | Colonne | Type de données |
 | --- | --- | --- |
@@ -76,7 +76,7 @@ Ces tables font référence à `customer_entity` et peut contenir des attributs 
 
 #### `customer_address_entity` et tables de référence
 
-Référence des tableaux suivants `customer_address_entity` et peut contenir des attributs client personnalisés :
+Les tables suivantes font référence à `customer_address_entity` et peuvent contenir des attributs client personnalisés :
 
 | Tableau | Colonne | Type de données |
 | --- | --- | --- |
@@ -88,11 +88,11 @@ Référence des tableaux suivants `customer_address_entity` et peut contenir des
 
 ### Données de commande
 
-La variable `sales_flat_order` Les tableaux connexes et contiennent le nom du client, les adresses de facturation et d’expédition, ainsi que les informations connexes.
+Les `sales_flat_order` et tables connexes contiennent le nom du client, les adresses de facturation et d’expédition, ainsi que les informations connexes.
 
 #### `sales_flat_order` table
 
-Les colonnes suivantes du `sales_order` Le tableau contient les informations sur les clients :
+Les colonnes suivantes du tableau `sales_order` contiennent les informations sur les clients :
 
 | Colonne | Type de données |
 | --- | --- |
@@ -109,7 +109,7 @@ Les colonnes suivantes du `sales_order` Le tableau contient les informations sur
 
 #### `sales_flat_order_address` table
 
-La variable `sales_flat_order_address` contient l’adresse du client.
+La table `sales_flat_order_address` contient l’adresse du client.
 
 | Colonne | Type de données |
 | --- | --- |
@@ -131,7 +131,7 @@ La variable `sales_flat_order_address` contient l’adresse du client.
 
 #### `sales_flat_order_grid` table
 
-Les colonnes suivantes du `sales_flat_order_grid` Le tableau contient les informations sur les clients :
+Les colonnes suivantes du tableau `sales_flat_order_grid` contiennent les informations sur les clients :
 
 | Colonne | Type de données |
 | --- | --- |
@@ -141,7 +141,7 @@ Les colonnes suivantes du `sales_flat_order_grid` Le tableau contient les inform
 
 #### `sales_flat_order_payment` table
 
-Les colonnes suivantes du `sales_flat_order_payment` Le tableau contient les informations sur les clients :
+Les colonnes suivantes du tableau `sales_flat_order_payment` contiennent les informations sur les clients :
 
 | Colonne | Type de données |
 | --- | --- |
@@ -161,7 +161,7 @@ Les citations contiennent le nom, l’adresse électronique, l’adresse électr
 
 #### `sales_flat_quote` table
 
-Les colonnes suivantes du `sales_flat_quote` Le tableau contient les informations sur les clients :
+Les colonnes suivantes du tableau `sales_flat_quote` contiennent les informations sur les clients :
 
 | Colonne | Type de données |
 | --- | --- |
@@ -181,7 +181,7 @@ Les colonnes suivantes du `sales_flat_quote` Le tableau contient les information
 
 #### `sales_flat_quote_address` table
 
-Les colonnes suivantes du `sales_flat_quote_address` Le tableau contient les informations sur les clients :
+Les colonnes suivantes du tableau `sales_flat_quote_address` contiennent les informations sur les clients :
 
 | Colonne | Type de données |
 | --- | --- |
@@ -200,7 +200,7 @@ Les colonnes suivantes du `sales_flat_quote_address` Le tableau contient les inf
 
 #### `sales_flat_quote_payment` table
 
-La variable `sales_flat_quote_payment` comprend des informations de carte de crédit et d’autres informations transactionnelles.
+La table `sales_flat_quote_payment` comprend des informations de carte de crédit et d’autres informations transactionnelles.
 
 | Colonne | Type de données |
 | --- | --- |

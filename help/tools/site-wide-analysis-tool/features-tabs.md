@@ -1,32 +1,32 @@
 ---
 title: Onglets Fonctionnalités
-description: En savoir plus sur les différents onglets des fonctionnalités dans la section [!DNL Site-Wide Analysis Tool]
+description: En savoir plus sur les différents onglets des fonctionnalités dans le  [!DNL Site-Wide Analysis Tool]
 exl-id: 23fc0311-82aa-430b-b11b-e287bea23d7b
 source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
 
 # Onglets Fonctionnalités
 
-Les informations des onglets Fonctionnalités suivantes s’affichent en haut de la page [!DNL Site-Wide Analysis Tool] écran.
+Les informations des onglets Fonctionnalités suivantes s’affichent en haut de l’écran [!DNL Site-Wide Analysis Tool].
 
-**[!UICONTROL Dashboard]**: la variable [!UICONTROL Dashboard] La page affiche les widgets qui contiennent le Recommendations actuel, la compatibilité de mise à niveau, l’analyse de sécurité, les extensions et [!DNL NewRelic Alerts] pour l’état actuel de votre site web Adobe Commerce. Une liste de [!UICONTROL External Resources] les liens pour Adobe Commerce, y compris la variable [Base de connaissances de l’assistance d’Adobe Commerce (centre d’aide)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html), [Documentation du développeur Adobe Commerce (DevDocs)](https://developer.adobe.com/commerce/docs/), [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, [Centre de sécurité](https://helpx.adobe.com/security.html), et [Observation pour Adobe Commerce (OAC)](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html).
+**[!UICONTROL Dashboard]** : la page [!UICONTROL Dashboard] affiche les widgets qui contiennent le Recommendations actif, la compatibilité de mise à niveau, l’analyse de sécurité, les extensions et [!DNL NewRelic Alerts] pour l’état actuel de votre site web Adobe Commerce. Il existe également une liste de [!UICONTROL External Resources] liens pour Adobe Commerce, y compris la [base de connaissances du centre d’aide Adobe Commerce (centre d’aide)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html), la [documentation du développeur Adobe Commerce (DevDocs)](https://developer.adobe.com/commerce/docs/), [[!DNL Quality Patches Tool] : recherchez des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, le [centre de sécurité](https://helpx.adobe.com/security.html) et l’ [observation pour Adobe Commerce (OAC)](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html)}}.
 
-**[!UICONTROL Information]**: la variable [!UICONTROL Information] affiche des informations de présentation du site.
-La variable [!UICONTROL General Information] affiche les données de la base du site marchand, affiche le propriétaire du contact, [!DNL Jira] Problèmes (utilisation interne uniquement) et sections Billets de rapport .
+**[!UICONTROL Information]** : la page [!UICONTROL Information] affiche des informations d’aperçu concernant le site.
+La zone [!UICONTROL General Information] affiche les données de la base du site marchand, affiche le propriétaire des contacts, les problèmes [!DNL Jira] (utilisation interne uniquement) et les sections Pièces de ticket de rapport.
 La zone Adobe Commerce affiche les sections Détails du site, Produits, Projet et intégration, Compte et Service et Composants .
 
-**[!UICONTROL Recommendations]**: la variable [!UICONTROL Recommendations] affiche le site Bonnes pratiques Recommendations. Les bonnes pratiques Recommendations (problèmes détectés et Recommendations à corriger) sont triées par priorité - P0 (critique) à P4 (notification).
+**[!UICONTROL Recommendations]** : la page [!UICONTROL Recommendations] affiche le site Best Practice Recommendations. Les bonnes pratiques Recommendations (problèmes détectés et Recommendations à corriger) sont triées par priorité - P0 (critique) à P4 (notification).
 La page Bonnes pratiques Recommendations comprend la description des recommandations sur les bonnes pratiques, la recommandation, l’impact du site, la cause racine, les scénarios/conditions préalables et les outils utilisés.
 
-**[!UICONTROL Exceptions]**: la variable [!UICONTROL Exceptions] affiche les erreurs/exceptions du fichier journal du site. Les exceptions sont triées par date/heure (UTC).
+**[!UICONTROL Exceptions]** : la page [!UICONTROL Exceptions] affiche les erreurs/exceptions du fichier journal du site. Les exceptions sont triées par date/heure (UTC).
 Les informations sur les exceptions incluent la dernière date de détection (UTC), le détail de l’exception et le nombre de fois où l’exception s’est produite ce jour-là.
 
-**[!UICONTROL Extensions]**: la variable [!UICONTROL Extensions] affiche les extensions actuellement installées sur votre instance Adobe Commerce. Les informations d’Adobe Commerce Marketplace sont fournies, le cas échéant, pour les extensions répertoriées ici.
+**[!UICONTROL Extensions]** : la page [!UICONTROL Extensions] affiche les extensions actuellement installées sur votre instance Adobe Commerce. Les informations d’Adobe Commerce Marketplace sont fournies, le cas échéant, pour les extensions répertoriées ici.
 
-**[!UICONTROL Alerts]**: la variable [!UICONTROL Alerts] affiche la dernière [!DNL NewRelic Managed Alerts] pour l’instance Adobe Commerce. En savoir plus sur [Alertes gérées pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) et comment [Accès aux services NewRelic](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html) dans la base de connaissances de prise en charge d’Adobe Commerce.
+**[!UICONTROL Alerts]** : la page [!UICONTROL Alerts] affiche le dernier [!DNL NewRelic Managed Alerts] pour l’instance Adobe Commerce. En savoir plus sur [les alertes gérées pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) et sur la façon d’ [accéder aux services NewRelic](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html) dans la base de connaissances de prise en charge d’Adobe Commerce.
 
-**[!UICONTROL Patches]**: la variable [!UICONTROL Patches] affiche tous les correctifs actuels de la [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} compatible avec la version de l’instance Adobe Commerce du commerçant. En savoir plus sur les [[!DNL Quality Patches Tool]: nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html) dans la base de connaissances de prise en charge d’Adobe Commerce.
+**[!UICONTROL Patches]** : la page [!UICONTROL Patches] affiche tous les correctifs actuels de [[!DNL Quality Patches Tool] : recherchez des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} compatibles avec la version de l’instance Adobe Commerce du commerçant. En savoir plus sur le [[!DNL Quality Patches Tool] : nouvel outil pour les correctifs de qualité en libre-service ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html) dans la base de connaissances de support Adobe Commerce.

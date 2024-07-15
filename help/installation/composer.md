@@ -11,31 +11,31 @@ ht-degree: 0%
 
 # Démarrage rapide de l’installation sur site
 
-Les instructions de cette page décrivent comment installer Adobe Commerce sur [auto-hébergé](../implementation-playbook/infrastructure/self-hosting/overview.md) infrastructure. Pour plus d’informations sur la mise à niveau d’une installation existante, voir la section [_Guide de mise à niveau_](../upgrade/overview.md).
+Les instructions de cette page décrivent comment installer Adobe Commerce sur l’infrastructure [auto-hébergée](../implementation-playbook/infrastructure/self-hosting/overview.md). Pour plus d&#39;informations sur la mise à niveau d&#39;une installation existante, consultez le [_Guide de mise à niveau_](../upgrade/overview.md).
 
-Utilisation d’Adobes [Compositeur](https://getcomposer.org/) pour gérer les composants Adobe Commerce et leurs dépendances. L’utilisation du compositeur pour obtenir le métappackage Adobe Commerce offre les avantages suivants :
+Adobe utilise [Composer](https://getcomposer.org/) pour gérer les composants Adobe Commerce et leurs dépendances. L’utilisation du compositeur pour obtenir le métappackage Adobe Commerce offre les avantages suivants :
 
 - Réutilisation de bibliothèques tierces sans les regrouper avec du code source
 - Réduisez les conflits d’extension et les problèmes de compatibilité en utilisant une architecture basée sur des composants avec une gestion robuste des dépendances.
-- Adhérez à [Groupe d’interopérabilité du framework PHP (FIG)](https://www.php-fig.org/) standards
+- Découvrez les normes [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/)
 - Magento Open Source de package avec d’autres composants
 - Utiliser le logiciel Adobe Commerce dans un environnement de production
 
 >[!NOTE]
 >
->Les développeurs contribuant à Magento Open Source doivent utiliser la variable [base sur git](https://developer.adobe.com/commerce/contributor/guides/install/) méthode d’installation.
+>Les développeurs contribuant à Magento Open Source doivent utiliser la méthode d’installation [git-based](https://developer.adobe.com/commerce/contributor/guides/install/) .
 
 ## Conditions préalables
 
 Avant de poursuivre, vous devez effectuer les opérations suivantes :
 
-- Compléter tout [tâches préalables](system-requirements.md).
-- [Installation du compositeur](https://getcomposer.org/download/).
-- Get [clés d’authentification](prerequisites/authentication-keys.md) dans le référentiel du compositeur d’Adobe Commerce.
+- Effectuez toutes les [tâches préalables requises](system-requirements.md).
+- [Installer le compositeur](https://getcomposer.org/download/).
+- Procurez-vous les [clés d’authentification](prerequisites/authentication-keys.md) au référentiel du compositeur Adobe Commerce.
 
 ## Connexion en tant que propriétaire du système de fichiers
 
-En savoir plus sur la propriété, les autorisations et le propriétaire du système de fichiers dans [Présentation de la propriété et des autorisations](prerequisites/file-system/overview.md).
+Découvrez la propriété, les autorisations et le propriétaire du système de fichiers dans la [rubrique Présentation de la propriété et des autorisations](prerequisites/file-system/overview.md).
 
 Pour passer au propriétaire du système de fichiers :
 
@@ -53,9 +53,9 @@ Pour passer au propriétaire du système de fichiers :
    sudo -u <file system owner>  <command>
    ```
 
-1. Pour exécuter des commandes d’interface de ligne de commande depuis n’importe quel répertoire, ajoutez `<app_root>/bin` sur votre système `PATH`.
+1. Pour exécuter des commandes d’interface de ligne de commande à partir de n’importe quel répertoire, ajoutez `<app_root>/bin` à votre système `PATH`.
 
-   Les shells ayant des syntaxes différentes, consultez une référence comme [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   Comme les shells ont des syntaxes différentes, consultez une référence comme [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
    Exemple de shell bash pour CentOS :
 
@@ -73,7 +73,7 @@ Pour passer au propriétaire du système de fichiers :
 
 Pour obtenir le métappackage Adobe Commerce :
 
-1. Connectez-vous à votre serveur d’applications en tant que [propriétaire du système de fichiers](prerequisites/file-system/overview.md).
+1. Connectez-vous à votre serveur d’applications en tant que [propriétaire du système de fichiers](prerequisites/file-system/overview.md) ou basculez-vous vers cette application.
 1. Modifiez le répertoire docroot du serveur web ou un répertoire que vous avez configuré comme docroot d’hôte virtuel.
 1. Créez un projet Composer à l’aide d’un métapaquet Commerce.
 
@@ -93,11 +93,11 @@ Pour obtenir le métappackage Adobe Commerce :
 
    >[!NOTE]
    >
-   > Lors de l’utilisation d’un compositeur `auth.json` fichier ou variable d’environnement, vous ne serez pas invité à saisir vos clés d’authentification.
+   > Lors de l’utilisation d’un fichier de compositeur `auth.json` ou d’une variable d’environnement, vous ne serez pas invité à saisir vos clés d’authentification.
 
-   Si vous rencontrez des erreurs, telles que `Could not find package...` ou `...no matching package found`, assurez-vous qu’il n’y a pas de fautes de frappe dans votre commande. Si vous rencontrez toujours des erreurs, il se peut que vous ne soyez pas autorisé à télécharger Adobe Commerce. Contact [Assistance Adobe Commerce](https://support.magento.com/hc/en-us) pour obtenir de l’aide.
+   Si vous rencontrez des erreurs, telles que `Could not find package...` ou `...no matching package found`, assurez-vous qu’il n’y a pas de fautes de frappe dans votre commande. Si vous rencontrez toujours des erreurs, il se peut que vous ne soyez pas autorisé à télécharger Adobe Commerce. Contactez le [support Adobe Commerce](https://support.magento.com/hc/en-us) pour obtenir de l’aide.
 
-   Voir [Dépannage](https://support.magento.com/hc/en-us/articles/360033818091) pour obtenir de l’aide sur d’autres erreurs.
+   Voir [Dépannage](https://support.magento.com/hc/en-us/articles/360033818091) pour obtenir de l’aide avec plus d’erreurs.
 
 ### Exemple - Version mineure
 
@@ -109,7 +109,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 ### Exemple - Correctif de qualité
 
-Les correctifs de qualité contiennent principalement des fonctions fonctionnelles. _et_ correctifs de sécurité. Cependant, elles peuvent également parfois contenir de nouvelles fonctionnalités rétrocompatibles. Utilisez le compositeur pour télécharger un correctif de qualité. Par exemple, pour spécifier le métappackage Adobe Commerce 2.4.6 :
+Les correctifs de qualité contiennent principalement des correctifs de sécurité _fonctionnels et_. Cependant, elles peuvent également parfois contenir de nouvelles fonctionnalités rétrocompatibles. Utilisez le compositeur pour télécharger un correctif de qualité. Par exemple, pour spécifier le métappackage Adobe Commerce 2.4.6 :
 
 ```bash
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
@@ -119,7 +119,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 Les correctifs de sécurité contiennent uniquement des correctifs de sécurité. Ils sont conçus pour faciliter et accélérer le processus de mise à niveau.
 
-Les correctifs de sécurité utilisent la convention de dénomination du compositeur `2.4.6-px`. Utilisez le compositeur pour spécifier un correctif. Par exemple, pour télécharger le métappackage Adobe Commerce 2.4.6-p1 :
+Les correctifs de sécurité utilisent la convention d’affectation des noms du compositeur `2.4.6-px`. Utilisez le compositeur pour spécifier un correctif. Par exemple, pour télécharger le métappackage Adobe Commerce 2.4.6-p1 :
 
 ```bash
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6-p1 <install-directory-name>
@@ -141,7 +141,7 @@ chmod u+x bin/magento
 
 Vous devez utiliser la ligne de commande pour installer Adobe Commerce.
 
-Cet exemple suppose que le répertoire d’installation est nommé `magento2ee`, la variable `db-host` se trouve sur le même ordinateur (`localhost`), et que la variable `db-name`, `db-user`, et `db-password` sont tous `magento`:
+Cet exemple suppose que le répertoire d’installation est nommé `magento2ee`, que `db-host` se trouve sur le même ordinateur (`localhost`) et que les répertoires `db-name`, `db-user` et `db-password` sont tous `magento` :
 
 ```bash
 bin/magento setup:install \
@@ -168,11 +168,11 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->Vous pouvez personnaliser l’URI d’administration à l’aide de l’ `--backend-frontname` . Cependant, Adobe recommande d’ignorer cette option et de permettre à la commande d’installation de générer automatiquement un URI aléatoire. Un URI aléatoire est plus difficile à exploiter pour les hackers ou les logiciels malveillants. L’URI s’affiche dans la console lorsque l’installation est terminée.
+>Vous pouvez personnaliser l’URI d’administration à l’aide de l’option `--backend-frontname` . Cependant, Adobe recommande d’ignorer cette option et de permettre à la commande d’installation de générer automatiquement un URI aléatoire. Un URI aléatoire est plus difficile à exploiter pour les hackers ou les logiciels malveillants. L’URI s’affiche dans la console lorsque l’installation est terminée.
 
 >[!TIP]
 >
->Pour obtenir une description complète des options d’installation de l’interface en ligne de commande, voir [Installation de l’application à partir de la ligne de commande](advanced.md).
+>Pour une description complète des options d’installation de l’interface de ligne de commande, voir [Installation de l’application à partir de la ligne de commande](advanced.md).
 
 ## Synthèse des commandes
 
@@ -212,7 +212,7 @@ Le tableau suivant résume les commandes disponibles. Les commandes sont présen
 | `magento setup:db-schema:upgrade` | Met à jour le schéma de la base de données. | Configuration du déploiement |
 | `magento setup:db-data:upgrade` | Met à jour les données de la base. | Configuration du déploiement |
 | `magento setup:db:status` | Vérifie si la base de données est à jour avec le code. | Configuration du déploiement |
-| `magento admin:user:create` | Crée un utilisateur administrateur. | Vous pouvez créer des utilisateurs pour les éléments suivants :<br><br>Configuration du déploiement<br><br>Activez au minimum la variable `Magento_User` et `Magento_Authorization` modules<br><br>Base de données (la méthode la plus simple consiste à utiliser `bin/magento setup:upgrade`) |
+| `magento admin:user:create` | Crée un utilisateur administrateur. | Vous pouvez créer des utilisateurs pour les éléments suivants : <br><br>Configuration de déploiement<br><br>Activez au minimum les `Magento_User` et `Magento_Authorization` modules<br><br>Base de données (la façon la plus simple est d&#39;utiliser `bin/magento setup:upgrade`) |
 | `magento list` | Répertorie toutes les commandes disponibles. | Aucun |
 | `magento help` | Fournit de l’aide pour la commande spécifiée. | Aucun |
 
@@ -222,14 +222,14 @@ Les arguments suivants sont communs à toutes les commandes. Ces commandes peuve
 
 | Version longue | Version courte | Signification |
 |--- |--- |--- |
-| `--help` | `-h` | Obtenez de l’aide pour n’importe quelle commande. Par exemple : `./magento help setup:install` ou `./magento help setup:config:set`. |
+| `--help` | `-h` | Obtenez de l’aide pour n’importe quelle commande. Par exemple, `./magento help setup:install` ou `./magento help setup:config:set`. |
 | `--quiet` | `-q` | Mode silencieux ; pas de sortie. |
 | `--no-interaction` | `-n` | Aucune question interactive. |
-| `--verbose=1,2,3` | `-v, -vv, -vvv` | Niveau de verbosité. Par exemple : `--verbose=3` ou `-vvv` affiche la verbosité de débogage, qui est la sortie la plus détaillée. Par défaut : `--verbose=1` ou `-v`. |
+| `--verbose=1,2,3` | `-v, -vv, -vvv` | Niveau de verbosité. Par exemple, `--verbose=3` ou `-vvv` affiche la verbosité de débogage, qui est la sortie la plus détaillée. La valeur par défaut est `--verbose=1` ou `-v`. |
 | `--version` | `-V` | Afficher cette version de l’application |
 | `--ansi` | n/a | Forcer la sortie ANSI |
 | `--no-ansi` | n/a | Désactiver la sortie ANSI |
 
 >[!NOTE]
 >
->Félicitations ! Vous avez terminé l’installation rapide. Besoin d’aide plus avancée ? Consultez la section [Installation avancée](advanced.md) guide.
+>Félicitations ! Vous avez terminé l’installation rapide. Besoin d’aide plus avancée ? Consultez le guide [Advanced install](advanced.md) .

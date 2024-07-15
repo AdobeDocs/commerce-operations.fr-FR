@@ -4,21 +4,21 @@ user-guide-description: Découvrez comment préparer vos entreprises sur le plan
 feature: Best Practices
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 13%
+source-wordcount: '138'
+ht-degree: 14%
 
 ---
 
 
 # Manuel opérationnel {#operational-playbook}
 
-- [Présentation](overview.md)
+- [Vue d’ensemble](overview.md)
 - Commerce {#intro}
    - [Adobe Commerce](intro/commerce.md)
    - [Qu&#39;est-ce que le commerce électronique ?](intro/ecommerce.md)
    - [Modèle commercial](intro/business-model.md)
-   - [Opérations commerciales](intro/operations.md)
-   - [Fonctionnalités commerciales](intro/features.md)
+   - [Opérations Commerce](intro/operations.md)
+   - [Fonctionnalités Commerce](intro/features.md)
 - Leadership {#leadership}
    - [Principes](leadership/principles.md)
    - [Objectifs](leadership/goals.md)
@@ -32,7 +32,7 @@ ht-degree: 13%
    - [Intégrations tierces](solution/integrations.md)
    - [Mises à niveau, sauvegardes et maintenance](solution/maintenance.md)
 - Stratégie {#strategy}
-   - [Stratégie commerciale](strategy/commerce.md)
+   - [Stratégie Commerce](strategy/commerce.md)
    - [Focus](strategy/focus.md)
    - [Stratégie de contenu](strategy/content.md)
    - [Maturité](strategy/maturity.md)
@@ -74,4 +74,4 @@ ht-degree: 13%
    - [PWA](product/progressive-web-app.md)
 - [Listes de contrôle et modèles](checklists-templates/home.md)
 - [Glossaire](glossary.md)
-- [Revenir aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->La prise en charge d’OpenSearch a été ajoutée à la version 2.4.4. OpenSearch est un double compatible d’Elasticsearch. Voir [Migration de l’Elasticsearch vers OpenSearch](../../../upgrade/prepare/opensearch-migration.md) pour plus d’informations.
+>La prise en charge d’OpenSearch a été ajoutée à la version 2.4.4. OpenSearch est un double compatible d’Elasticsearch. Pour plus d’informations, voir [Migration de l’Elasticsearch vers OpenSearch](../../../upgrade/prepare/opensearch-migration.md) .
 
-Cette section explique comment configurer nginx en tant que *unsecure* pour qu’Adobe Commerce puisse utiliser un moteur de recherche s’exécutant sur ce serveur. Cette section ne traite pas de la configuration de l’authentification HTTP de base. C’est ce qui est décrit dans la section [Communication sécurisée avec nginx](#secure-communication-with-nginx).
+Cette section explique comment configurer nginx en tant que proxy *non sécurisé* afin qu’Adobe Commerce puisse utiliser un moteur de recherche s’exécutant sur ce serveur. Cette section ne traite pas de la configuration de l’authentification HTTP de base. C’est ce qui est décrit dans [Communication sécurisée avec nginx](#secure-communication-with-nginx).
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Cette section explique comment configurer nginx en tant que *unsecure* pour qu�
 
 ### Spécifier des fichiers de configuration supplémentaires dans votre configuration globale
 
-Assurez-vous que la variable `/etc/nginx/nginx.conf` contient la ligne suivante afin de charger les autres fichiers de configuration décrits dans les sections suivantes :
+Assurez-vous que votre `/etc/nginx/nginx.conf` global contient la ligne suivante afin qu’il charge les autres fichiers de configuration décrits dans les sections suivantes :
 
 ```conf
 include /etc/nginx/conf.d/*.conf;
@@ -38,7 +38,7 @@ include /etc/nginx/conf.d/*.conf;
 
 Cette section explique comment spécifier qui peut accéder au serveur nginx.
 
-1. Utilisation d’un éditeur de texte pour créer un fichier `/etc/nginx/conf.d/magento_es_auth.conf` avec les contenus suivants :
+1. Utilisez un éditeur de texte pour créer un fichier `/etc/nginx/conf.d/magento_es_auth.conf` avec les contenus suivants :
 
    ```conf
    server {
@@ -81,9 +81,9 @@ Cette section explique comment spécifier qui peut accéder au serveur nginx.
 
 ## Communication sécurisée avec nginx
 
-Cette section explique comment configurer [Authentification HTTP de base](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) avec votre proxy sécurisé. L’utilisation conjointe de l’authentification TLS et HTTP Basic empêche quiconque d’intercepter une communication avec un Elasticsearch ou OpenSearch ou avec votre serveur d’applications.
+Cette section explique comment configurer l’ [authentification HTTP de base](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) avec votre proxy sécurisé. L’utilisation conjointe de l’authentification TLS et HTTP Basic empêche quiconque d’intercepter une communication avec un Elasticsearch ou OpenSearch ou avec votre serveur d’applications.
 
-Étant donné que nginx prend en charge l’authentification HTTP de base, nous vous recommandons de la passer à , par exemple : [Authentification Digest](https://www.nginx.com/resources/wiki/modules/auth_digest/), qui n’est pas recommandé en production.
+Étant donné que nginx prend en charge l’authentification HTTP de base, nous vous recommandons de passer par exemple à l’authentification [Digest authentication](https://www.nginx.com/resources/wiki/modules/auth_digest/), qui n’est pas recommandée en production.
 
 Ressources supplémentaires :
 
@@ -100,7 +100,7 @@ Pour plus d’informations, reportez-vous aux sections suivantes :
 
 ### Créer un mot de passe
 
-Nous vous recommandons d’utiliser Apache. `htpasswd` pour coder les mots de passe d’un utilisateur ayant accès à Elasticsearch ou OpenSearch (nommé `magento_elasticsearch` dans cet exemple).
+Nous vous recommandons d’utiliser la commande Apache `htpasswd` pour coder les mots de passe d’un utilisateur ayant accès à Elasticsearch ou OpenSearch (nommé `magento_elasticsearch` dans cet exemple).
 
 Pour créer un mot de passe :
 
@@ -112,12 +112,12 @@ Pour créer un mot de passe :
 
    Si un chemin d’accès s’affiche, il est installé ; si la commande ne renvoie aucune sortie, `htpasswd` n’est pas installé.
 
-1. Si nécessaire, installez . `htpasswd`:
+1. Si nécessaire, installez `htpasswd` :
 
    * Ubuntu : `apt-get -y install apache2-utils`
    * CentOS : `yum -y install httpd-tools`
 
-1. Créez un `/etc/nginx/passwd` répertoire de stockage des mots de passe :
+1. Créez un répertoire `/etc/nginx/passwd` pour stocker les mots de passe :
 
    ```bash
    mkdir -p /etc/nginx/passwd
@@ -129,15 +129,15 @@ Pour créer un mot de passe :
 
    >[!WARNING]
    >
-   >Pour des raisons de sécurité, `<filename>` doit être masqué, c&#39;est-à-dire qu&#39;il doit commencer par un point.
+   >Pour des raisons de sécurité, `<filename>` doit être masqué, c’est-à-dire qu’il doit commencer par un point.
 
-1. *(Facultatif).* Pour ajouter un autre utilisateur à votre fichier de mot de passe, saisissez la même commande sans le champ `-c` Option (créer) :
+1. *(facultatif).* Pour ajouter un autre utilisateur à votre fichier de mot de passe, saisissez la même commande sans l’option `-c` (créer) :
 
    ```bash
    htpasswd /etc/nginx/passwd/.<filename> <username>
    ```
 
-1. Vérifiez que le contenu de `/etc/nginx/passwd` est correcte.
+1. Vérifiez que le contenu de `/etc/nginx/passwd` est correct.
 
 ### Configurer l’accès à nginx
 
@@ -145,9 +145,9 @@ Cette section explique comment spécifier qui peut accéder au serveur nginx.
 
 >[!WARNING]
 >
->L’exemple illustré est destiné à un *unsecure* proxy. Pour utiliser un proxy sécurisé, ajoutez les contenus suivants (à l&#39;exception du port d&#39;écoute) à votre bloc de serveur sécurisé.
+>L’exemple illustré concerne un proxy *non sécurisé*. Pour utiliser un proxy sécurisé, ajoutez les contenus suivants (à l&#39;exception du port d&#39;écoute) à votre bloc de serveur sécurisé.
 
-Utilisez l’éditeur de texte pour modifier : `/etc/nginx/conf.d/magento_es_auth.conf` (non sécurisé) ou votre bloc de serveur sécurisé avec les contenus suivants :
+Utilisez un éditeur de texte pour modifier `/etc/nginx/conf.d/magento_es_auth.conf` (non sécurisé) ou votre bloc de serveur sécurisé avec les contenus suivants :
 
 ```conf
 server {
@@ -192,7 +192,7 @@ Cette section explique comment spécifier qui peut accéder au serveur du moteur
    mkdir /etc/nginx/auth/
    ```
 
-1. Utilisation d’un éditeur de texte pour créer un fichier `/etc/nginx/auth/magento_elasticsearch.conf` avec les contenus suivants :
+1. Utilisez un éditeur de texte pour créer un fichier `/etc/nginx/auth/magento_elasticsearch.conf` avec les contenus suivants :
 
    ```conf
    location /elasticsearch {

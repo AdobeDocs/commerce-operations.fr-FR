@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Affichage ou modification de l’URI d’administration
 
-Avant d’exécuter cette commande, vous devez [Création ou mise à jour de la configuration du déploiement](deployment.md).
+Avant d’exécuter cette commande, vous devez [créer ou mettre à jour la configuration de déploiement](deployment.md).
 
 ## Affichage de l’URI d’administration
 
-Cette section explique comment utiliser la ligne de commande pour afficher l’ identifiant de ressource Uniform d’administration ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
+Cette section explique comment utiliser la ligne de commande pour afficher l’identifiant de ressource unique d’administration ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
 
 Options de commande :
 
@@ -41,4 +41,4 @@ Vous pouvez également afficher l’URI d’administration dans `<magento_root>/
 
 ## Modification de l’URL d’administration
 
-Pour modifier l’URI d’administration, utilisez la méthode [`magento setup:config:set`](deployment.md) .
+Pour modifier l’URI d’administration, utilisez la commande [`magento setup:config:set`](deployment.md).

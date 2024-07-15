@@ -18,16 +18,16 @@ Depuis les versions 2.4.4, 2.4.3-p2 et 2.3.7-p3, Adobe Commerce prend en charge 
 
 ## Chemin de migration
 
-Les étapes de migration vers OpenSearch sont simples et suivent largement les étapes de la configuration Elasticsearch. Ces étapes supposent qu’Adobe Commerce est la seule application utilisant le moteur de recherche. Si plusieurs applications utilisent le moteur de recherche, suivez le guide de migration officiel. [Passage de l’Elasticsearch open source à OpenSearch](https://opensearch.org/blog/technical-posts/2021/10/moving-from-opensource-elasticsearch-to-opensearch/).
+Les étapes de migration vers OpenSearch sont simples et suivent largement les étapes de la configuration Elasticsearch. Ces étapes supposent qu’Adobe Commerce est la seule application utilisant le moteur de recherche. Dans les cas où plusieurs applications utilisent le moteur de recherche, suivez le guide officiel de migration [Passant de l’Elasticsearch open source à OpenSearch](https://opensearch.org/blog/technical-posts/2021/10/moving-from-opensource-elasticsearch-to-opensearch/).
 
-1. Assurez-vous que votre installation respecte la variable [conditions préalables du moteur de recherche](../../installation/prerequisites/search-engine/overview.md).
+1. Assurez-vous que votre installation respecte les [conditions préalables du moteur de recherche](../../installation/prerequisites/search-engine/overview.md).
 
-1. Placez le site dans [Mode de maintenance](../../installation/tutorials/maintenance-mode.md).
+1. Placez le site en [mode de maintenance](../../installation/tutorials/maintenance-mode.md).
 
 1. Désinstallez éventuellement l’Elasticsearch.
 
 1. [Installer OpenSearch](https://opensearch.org/docs/latest/opensearch/install/important-settings/).
 
-1. [Configuration du moteur de recherche](../../configuration/search/configure-search-engine.md) et effectuer les tâches associées, comme vider le cache et réindexer l’index de recherche du catalogue.
+1. [Configurez le moteur de recherche ](../../configuration/search/configure-search-engine.md) et effectuez les tâches associées, comme vider le cache et réindexer l’index de recherche du catalogue.
 
 Aucune autre modification des valeurs de configuration n’est nécessaire.

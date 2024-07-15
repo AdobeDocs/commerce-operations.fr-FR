@@ -6,18 +6,18 @@ feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
 source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
 
 # Bonnes pratiques en matière de traitement et de stockage des paiements
 
-L&#39;un des principes clés du maintien de la paix [Conformité PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) dispose d’une stratégie pour traiter et stocker correctement les paiements par carte de crédit.
+L&#39;un des principes clés de la gestion de la [conformité PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) est d&#39;avoir une stratégie pour traiter et stocker correctement les paiements par carte de crédit.
 
-Le stockage des données des titulaires de carte dans Adobe Commerce est **strictement interdit** et cela pourrait être une violation de vos obligations en tant que commerçant en vertu de la norme de sécurité des données du secteur des cartes de paiement (PCI-DSS). Vous trouverez plus d’informations sur le modèle de responsabilité partagée et les directives relatives aux obligations du marchand dans la section [Guide du modèle de responsabilité partagée Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) sur le Centre de gestion de l’Adobe.
+Le stockage des données des titulaires de carte dans Adobe Commerce est **strictement interdit** et cela peut constituer une violation de vos obligations en tant que commerçant en vertu de la norme de sécurité des données du secteur des cartes de paiement (PCI-DSS). Vous trouverez plus d’informations sur le modèle de responsabilité partagée et les directives relatives aux obligations du commerçant dans le [Guide du modèle de responsabilité partagée Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) du Adobe Trust Center.
 
-Suivez les bonnes pratiques ci-dessous pour vous assurer que vous traitez correctement les informations de paiement sur votre site eCommerce. Pour plus d’informations sur les bonnes pratiques en matière de sécurité, voir [Sécurisez votre site et votre infrastructure](../launch/security-best-practices.md).
+Suivez les bonnes pratiques ci-dessous pour vous assurer que vous traitez correctement les informations de paiement sur votre site eCommerce. Pour plus d&#39;informations sur les bonnes pratiques en matière de sécurité, voir [Sécuriser votre site et votre infrastructure](../launch/security-best-practices.md).
 
 ## Produits et versions concernés
 
@@ -53,4 +53,4 @@ La méthode recommandée pour gérer les données des titulaires de carte consis
 
 ## Informations supplémentaires
 
-Si vous recherchez des solutions de paiement recommandées par Adobe, envisagez [Adobe des services de paiement](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).
+Si vous recherchez des solutions de paiement recommandées par Adobe, pensez aux [Services de paiement par Adobe](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).

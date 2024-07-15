@@ -1,15 +1,15 @@
 ---
-title: Stratégie commerciale
+title: Stratégie Commerce
 description: Déverrouillez les fonctionnalités de base du commerce électronique à l’aide de notre structure de stratégie suggérée.
 exl-id: 0efb424b-9026-439d-a50c-d2d935c07c8c
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
-# Stratégie commerciale
+# Stratégie Commerce
 
 Le commerce numérique est une force qui évolue rapidement chaque année. Bien que cela puisse être passionnant pour les individus, cela s&#39;accompagne aussi de nombreux défis pour les organisations qui essaient de naviguer sur la couche du commerce électronique.
 
@@ -48,7 +48,7 @@ La stratégie de commerce électronique globale de chaque entreprise est unique 
 - Création de commande
 - Panier et passage en caisse
 - Conversion entre guillemets et commandes
-- Services d’inscriptions
+- Services d’abonnements
 - Transaction de commande en ligne et facture de paiement en ligne
 - Ordre intégré NextGen B2B (par exemple, Punchout)
 - Workflow d’approvisionnement et intégration
@@ -79,4 +79,4 @@ La liste suivante comprend les principaux objectifs à prendre en compte lors de
 
 Consultez le diagramme suivant pour obtenir une structure de stratégie de commerce électronique suggérée :
 
-![Diagramme de structure de la stratégie commerciale](../../assets/playbooks/commerce-strategy-framework.png)
+![Schéma de structure de stratégie Commerce](../../assets/playbooks/commerce-strategy-framework.png)

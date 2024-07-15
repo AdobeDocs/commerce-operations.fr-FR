@@ -4,7 +4,7 @@ user-guide-description: Découvrez la conformité aux réglementations et les re
 feature: Security
 source-git-commit: 28b94fe2fd4f976ad48fa9c59e7e1559db8ba35e
 workflow-type: tm+mt
-source-wordcount: '58'
+source-wordcount: '53'
 ht-degree: 1%
 
 ---
@@ -19,8 +19,8 @@ ht-degree: 1%
    - [CCPA](privacy/ccpa.md)
    - [RGPD](privacy/gdpr.md)
    - [Bibliothèque JavaScript Adobe Privacy](privacy/adobe-javascript-library.md)
-   - [Bibliothèque JavaScript Privacy](privacy/javascript-library.md)
+   - [Bibliothèque JavaScript de confidentialité](privacy/javascript-library.md)
 - Référence {#reference}
    - [Informations personnelles du client (version 2.x)](privacy/data-m2.md)
    - [Informations personnelles du client (version 1.x)](privacy/data-m1.md)
-- [Revenir aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

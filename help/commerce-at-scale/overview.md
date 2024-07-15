@@ -9,23 +9,24 @@ ht-degree: 0%
 
 ---
 
-# Diffuser des expériences à grande échelle avec Adobe Commerce, Commerce Integration Framework et Adobe Experience Manager
+# Diffuser des expériences à grande échelle avec Adobe Commerce, Commerce integration framework et Adobe Experience Manager
 
-Un modèle d’intégration recommandé entre AEM et Adobe Commerce en utilisant CIF comme connecteur est que AEM possède la couche de présentation (la &quot;vitre&quot;) et Adobe Commerce pour alimenter le serveur principal Commerce en tant que serveur principal &quot;sans tête&quot;. Cette approche de l’intégration tire parti des avantages de chaque application : les capacités de création, de personnalisation et d’omnicanal des AEM et des opérations de commerce électronique d’Adobe Commerce.
+Un modèle d’intégration recommandé entre AEM et Adobe Commerce en utilisant CIF comme connecteur est que l’utilisateur doive posséder la couche de présentation (la &quot;vitre&quot;) et Adobe Commerce pour alimenter le serveur principal Commerce en tant que serveur principal &quot;sans tête&quot;. Cette approche de l’intégration tire parti des avantages de chaque application : les capacités de création, de personnalisation et d’omnicanal des AEM et des opérations de commerce électronique d’Adobe Commerce.
 
-Dans un environnement AEM/CIF/Adobe Commerce, les visiteurs du site de commerce électronique arriveront initialement à AEM. AEM vérifie si la page demandée est disponible dans son cache de Dispatcher. Si la page existe, cette page mise en cache est diffusée au visiteur et aucun autre traitement n’est requis. Si le Dispatcher ne contient pas la page demandée, ou si elle a expiré, il demande à l’éditeur AEM de créer la page, l’éditeur appelant Adobe Commerce pour les données de commerce électronique afin de créer la page, si nécessaire. La page créée est ensuite transmise au Dispatcher pour être diffusée au visiteur, puis mise en cache afin d’éviter que d’autres chargements ne soient placés sur les serveurs lors des demandes ultérieures à la même page de la part d’autres visiteurs.
+Dans un environnement AEM/CIF/Adobe Commerce, les visiteurs du site d’e-commerce arrivent tout d’abord à l’. AEM vérifie si la page demandée est disponible dans son cache de Dispatcher. Si la page existe, cette page mise en cache est diffusée au visiteur et aucun autre traitement n’est requis. Si le Dispatcher ne contient pas la page demandée, ou si elle a expiré, il demande à l’éditeur AEM de créer la page, l’éditeur appelant Adobe Commerce pour les données de commerce électronique afin de créer la page, si nécessaire. La page créée est ensuite transmise au Dispatcher pour être diffusée au visiteur, puis mise en cache afin d’éviter que d’autres chargements ne soient placés sur les serveurs lors des demandes ultérieures à la même page de la part d’autres visiteurs.
 
-![Diagramme de présentation de l’architecture d’Adobe Experience Manager et Adobe Commerce](../assets/commerce-at-scale/overview.png)
+![ Diagramme de présentation de l’architecture Adobe Experience Manager et Adobe Commerce ](../assets/commerce-at-scale/overview.png)
 
-Une combinaison de rendu côté serveur et de rendu côté client peut être utilisée dans le modèle AEM/CIF/Adobe Commerce : rendu côté serveur pour diffuser du contenu statique et du rendu côté client afin de diffuser du contenu dynamique personnel ou changeant fréquemment, en appelant directement Adobe Commerce pour des composants spécifiques depuis le navigateur de l’utilisateur.
+Une combinaison de rendu côté serveur et de rendu côté client peut être utilisée dans le modèle AEM/CIF/Adobe Commerce : rendu côté serveur pour diffuser du contenu statique et du rendu côté client pour diffuser du contenu dynamique personnel ou changeant fréquemment en appelant directement Adobe Commerce pour des composants spécifiques.
+depuis le navigateur de l’utilisateur.
 
 Vous trouverez un exemple des différents composants dans une page Détails du produit sur un exemple AEM storefront eCommerce dans l’exemple ci-dessous :
 
-![Diagramme de présentation de l’architecture d’Adobe Experience Manager et Adobe Commerce](../assets/commerce-at-scale/product-details-page.svg)
+![ Diagramme de présentation de l’architecture Adobe Experience Manager et Adobe Commerce ](../assets/commerce-at-scale/product-details-page.svg)
 
 ## Rendu côté serveur
 
-Il est peu probable que les pages d’e-commerce telles que les pages de détails des produits (PDP) et les pages de liste de produits (PLP) changent fréquemment et conviennent pour être entièrement mises en cache après le rendu côté serveur à l’aide des composants principaux CIF AEM. Les pages doivent être rendues sur l’éditeur AEM à l’aide de modèles génériques créés dans AEM. Ces composants obtiennent des données d’Adobe Commerce via les API GraphQL. Ces pages sont créées dynamiquement, rendues sur le serveur, mises en cache dans le Dispatcher d’AEM, puis diffusées au navigateur. Les exemples de ce type sont présentés dans les zones violettes de l’exemple ci-dessus.
+Les pages d’e-commerce, telles que les pages de détails des produits (PDP) et les pages de liste de produits (PLP), ont peu de chances de changer fréquemment et sont adaptées à la mise en cache complète après leur rendu côté serveur à l’aide d’AEM CIF composants principaux. Les pages doivent être rendues sur l’éditeur AEM à l’aide de modèles génériques créés dans AEM. Ces composants obtiennent des données d’Adobe Commerce via les API GraphQL. Ces pages sont créées dynamiquement, rendues sur le serveur, mises en cache dans le Dispatcher d’AEM, puis diffusées au navigateur. Les exemples de ce type sont présentés dans les zones violettes de l’exemple ci-dessus.
 
 ## Rendu côté client
 

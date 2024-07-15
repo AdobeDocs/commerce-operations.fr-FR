@@ -4,21 +4,21 @@ description: Découvrez comment l’application de correctifs centralisés pour 
 role: Developer
 feature: Best Practices
 badge: label="Contribution d&#39;Anton Evers, ingénieur en architecture technique, Adobe" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="Contribution d’Anton Evers"
-source-git-commit: 9cda88a4aeb4cc58d8ec9c4417e3107885a6cdb8
+exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
 
-
 # Bonnes pratiques pour la distribution de correctifs Adobe Commerce à grande échelle
 
-Si vous gérez plusieurs installations Adobe Commerce, [correction](../../../upgrade/patches/apply.md) peut être un processus complexe. _Application de correctifs centralisée_ est une partie essentielle de [architecture de référence globale](../../architecture/global-reference/overview.md) et une bonne pratique pour les entreprises. Il vous aide à appliquer les correctifs appropriés sur toutes vos installations Adobe Commerce. Cette rubrique explique comment obtenir une distribution de correctifs centralisée pour tous les types d’Adobe Commerce. [Correctifs](../../../upgrade/patches/overview.md).
+Si vous gérez plusieurs installations Adobe Commerce, [correction](../../../upgrade/patches/apply.md) peut être un processus complexe. _La correction centralisée_ est une partie essentielle de l’ [architecture de référence globale](../../architecture/global-reference/overview.md) et une bonne pratique pour les entreprises. Il vous aide à appliquer les correctifs appropriés sur toutes vos installations Adobe Commerce. Cette rubrique explique comment obtenir une distribution de correctifs centralisée pour tous les types de [correctifs](../../../upgrade/patches/overview.md) Adobe Commerce.
 
 >[!NOTE]
 >
->Le contenu suivant a été initialement publié dans la [Distribution des correctifs Adobe Commerce à l’échelle](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) Article sur le blog Adobe Tech. Il a été modifié afin de se concentrer sur les étapes et les exemples de code pour mettre en oeuvre une stratégie de correctif centralisé. Pour plus d’informations sur les différents types de correctifs décrits ici, consultez la publication d’origine .
+>Le contenu suivant a été publié à l’origine dans l’article [Distribution de correctifs Adobe Commerce à l’échelle](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) sur le blog Adobe Tech. Il a été modifié afin de se concentrer sur les étapes et les exemples de code pour mettre en oeuvre une stratégie de correctif centralisé. Pour plus d’informations sur les différents types de correctifs décrits ici, consultez la publication d’origine .
 
 ## Produits et versions concernés
 
@@ -31,43 +31,43 @@ Si vous gérez plusieurs installations Adobe Commerce, [correction](../../../upg
 
 Comme il existe de nombreux types de correctifs différents et de nombreuses façons de les appliquer, comment savoir quel correctif est appliqué en premier ? Plus vous avez de correctifs, plus les chances qu’ils s’appliquent au même fichier ou à la même ligne de code sont grandes. Les correctifs sont appliqués dans l’ordre suivant :
 
-1. **Correctifs de sécurité** font partie de la base de code statique d’une version d’Adobe Commerce.
-1. **Correctifs du compositeur** through `composer install` et `composer update` modules externes tels que [cweagans/compositeur-correctifs](https://packagist.org/packages/cweagans/composer-patches).
-1. Tous **correctifs requis** inclus dans la variable [Correctifs de cloud pour Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html) module.
-1. Sélectionné **correctifs de qualité** inclus dans la variable [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md).
-1. **Correctifs personnalisés** et les correctifs de la prise en charge d’Adobe Commerce dans `/m2-hotfixes` par ordre alphabétique par nom de correctif.
+1. **Les correctifs de sécurité** font partie de la base de code statique d’une version d’Adobe Commerce.
+1. **Correctifs du compositeur** à `composer install` et `composer update` plug-ins tels que [cweagans/compositeur-patches](https://packagist.org/packages/cweagans/composer-patches).
+1. Tous les **correctifs requis** inclus dans le package [Cloud Patches for Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html).
+1. **Correctifs de qualité** sélectionnés inclus dans [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md).
+1. **Correctifs personnalisés** et correctifs de prise en charge d’Adobe Commerce dans le répertoire `/m2-hotfixes` dans l’ordre alphabétique par nom de correctif.
 
    >[!IMPORTANT]
    >
    >Plus vous appliquez de correctifs, plus votre code devient complexe. Un code complexe peut rendre la mise à niveau vers une nouvelle version du commerce Adobe plus difficile et augmenter le coût total de possession.
 
-Si vous êtes responsable de la maintenance de plusieurs installations d’Adobe Commerce, il peut s’avérer difficile de s’assurer que toutes les instances ont le même ensemble de correctifs installés. Chaque installation possède son propre référentiel git, `/m2-hotfixes` répertoire et `composer.json` fichier . La seule garantie que vous avez est que la variable **correctifs de sécurité** et **correctifs requis** pour les utilisateurs cloud sont tous installés dans le cadre de votre version Adobe Commerce principale.
+Si vous êtes responsable de la maintenance de plusieurs installations d’Adobe Commerce, il peut s’avérer difficile de s’assurer que toutes les instances ont le même ensemble de correctifs installés. Chaque installation possède son propre référentiel git, son répertoire `/m2-hotfixes` et son fichier `composer.json`. La seule garantie que vous avez est que les **correctifs de sécurité** et les **correctifs requis** pour les utilisateurs de cloud sont tous installés dans le cadre de votre version principale d’Adobe Commerce.
 
-Actuellement, il n’existe pas de solution centralisée unique pour ce problème, mais le compositeur d’expérience offre un moyen de combler le fossé. La variable [`cweagans/composer-patches`](https://packagist.org/packages/cweagans/composer-patches) Le module vous permet de [appliquer des correctifs à partir des dépendances ;](https://github.com/cweagans/composer-patches/tree/1.x#allowing-patches-to-be-applied-from-dependencies). Vous pouvez créer un module Compositeur qui installe tous vos correctifs, puis en avoir besoin dans tous vos projets.
+Actuellement, il n’existe pas de solution centralisée unique pour ce problème, mais le compositeur d’expérience offre un moyen de combler le fossé. Le package [`cweagans/composer-patches`](https://packagist.org/packages/cweagans/composer-patches) vous permet [d’appliquer des correctifs à partir de dépendances](https://github.com/cweagans/composer-patches/tree/1.x#allowing-patches-to-be-applied-from-dependencies). Vous pouvez créer un module Compositeur qui installe tous vos correctifs, puis en avoir besoin dans tous vos projets.
 
-Les couvertures **correctifs de sécurité**, **correctifs requis**, et **Correctifs du compositeur**, mais qu’en est-il des correctifs de qualité et du contenu des `/m2-hotfixes` répertoire ?
+Cela concerne les **correctifs de sécurité**, les **correctifs requis** et les ****, mais qu’en est-il des correctifs de qualité et du contenu du répertoire `/m2-hotfixes` ?
 
 ## Application de correctifs de qualité et de correctifs logiciels
 
-Vous pouvez installer des correctifs de qualité sur l’infrastructure cloud et les installations sur site à l’aide du `vendor/bin/magento-patches apply` . Vous devez vous assurer que la variable `vendor/bin/magento-patches apply` La commande s’exécute après `composer install` opérations.
+Vous pouvez installer des correctifs de qualité sur l’infrastructure cloud et les installations sur site à l’aide de la commande `vendor/bin/magento-patches apply`. Vous devez vous assurer que la commande `vendor/bin/magento-patches apply` s’exécute après les opérations `composer install`.
 
 >[!NOTE]
 >
->Sur l’infrastructure cloud, vous pouvez également installer des correctifs de qualité en les répertoriant dans la liste de votre projet. `.magento.env.yaml` fichier . L’exemple présenté ici nécessite d’utiliser la méthode `vendor/bin/magento-patches apply` .
+>Sur l’infrastructure cloud, vous pouvez également installer des correctifs de qualité en les répertoriant dans le fichier `.magento.env.yaml` de votre projet. L’exemple décrit ici nécessite l’utilisation de la commande `vendor/bin/magento-patches apply`.
 
-Vous pouvez spécifier les correctifs à appliquer dans le `composer.json` fichier d’un module de composant Compositeur personnalisé, puis créez un module externe qui exécute la commande après `composer install` opérations.
+Vous pouvez spécifier les correctifs à appliquer dans le fichier `composer.json` d’un module de composant Composer personnalisé, puis créer un module externe qui exécute la commande après les opérations `composer install`.
 
 Pour résumer, cet exemple de correctif centralisé nécessite la création de deux packages compositeur personnalisés :
 
 - **Package de composant :** `centralized-patcher`
 
-   - Définit la liste des correctifs de qualité et `m2-hotfixes` pour installer
-   - Nécessite le `centralized-patcher-composer-plugin` , qui exécute la variable `vendor/bin/magento-patches apply` command after `composer install` opérations
+   - Définit la liste des correctifs de qualité et `m2-hotfixes` à installer
+   - Nécessite le package `centralized-patcher-composer-plugin` qui exécute la commande `vendor/bin/magento-patches apply` après les opérations `composer install`
 
-- **Module externe :** `centralized-patcher-composer-plugin`
+- **Package de module externe :** `centralized-patcher-composer-plugin`
 
-   - Définit un `CentralizedPatcher` Classe PHP qui lit la liste des correctifs de qualité à partir de la `centralized-patcher` package
-   - Exécute la variable `vendor/bin/magento-patches apply` pour installer la liste des correctifs de qualité après `composer install` opérations
+   - Définit une classe PHP `CentralizedPatcher` qui lit la liste des correctifs de qualité du package `centralized-patcher`.
+   - Exécute la commande `vendor/bin/magento-patches apply` pour installer la liste des correctifs de qualité après les opérations `composer install`.
 
 ### `centralized-patcher`
 
@@ -75,17 +75,17 @@ Vous pouvez créer un module de composant Compositeur (`centralized-patcher`) po
 
 Le module de composant doit :
 
-- Copiez le contenu de la `/m2-hotfixes` dans toutes vos installations pendant le déploiement.
+- Copiez le contenu du répertoire `/m2-hotfixes` dans toutes vos installations pendant le déploiement.
 - Définissez la liste des correctifs de qualité à installer.
-- Exécutez la variable `vendor/bin/magento-patches` pour installer la même liste de correctifs de qualité sur toutes les installations (à l’aide de la commande [`centralized-patcher-composer-plugin`](#centralized-patcher-composer-plugin) module externe en tant que dépendance).
+- Exécutez la commande `vendor/bin/magento-patches` pour installer la même liste de correctifs de qualité sur toutes les installations (en utilisant le module externe [`centralized-patcher-composer-plugin`](#centralized-patcher-composer-plugin) comme dépendance).
 
-Pour créer la variable `centralized-patcher` package de composant :
+Pour créer le package de composant `centralized-patcher` :
 
-1. Créez un `composer.json` avec les contenus suivants :
+1. Créez un fichier `composer.json` avec les contenus suivants :
 
    >[!NOTE]
    >
-   >La variable `require` dans l’exemple suivant affiche une `require` dépendante de la variable [module externe](#centralized-patcher-composer-plugin) que vous devez créer plus tard dans cet exemple.
+   >L’attribut `require` de l’exemple suivant montre une dépendance `require` sur le [module externe ](#centralized-patcher-composer-plugin) que vous devez créer plus tard dans cet exemple.
 
    ```json
    {
@@ -109,7 +109,7 @@ Pour créer la variable `centralized-patcher` package de composant :
    }
    ```
 
-1. Créez un `/m2-hotfixes` répertoire dans votre package et ajoutez-le à la variable `map` dans votre `composer.json` fichier . La variable `map` contient les fichiers à copier de ce package dans la racine du projet cible que vous souhaitez corriger.
+1. Créez un répertoire `/m2-hotfixes` dans votre package et ajoutez-le à l’attribut `map` de votre fichier `composer.json`. L’attribut `map` contient des fichiers à copier de ce package dans la racine du projet cible que vous souhaitez corriger.
 
    ```json
    {
@@ -126,9 +126,9 @@ Pour créer la variable `centralized-patcher` package de composant :
 
    >[!NOTE]
    >
-   >La variable `centralized-patcher` copie le contenu de la variable `/m2-hotfixes` répertoire dans le répertoire m2-hotfixes du projet cible sur `composer install`.  Puisque les scripts de déploiement cloud appliquent des correctifs m2 après `composer install`, tous les correctifs sont installés par le mécanisme de déploiement.
+   >Le package `centralized-patcher` copie le contenu du répertoire `/m2-hotfixes` dans le répertoire m2-hotfixes du projet cible sur `composer install`.  Puisque les scripts de déploiement cloud appliquent des correctifs m2 après `composer install`, tous les correctifs sont installés par le mécanisme de déploiement.
 
-1. Définissez les correctifs de qualité à installer dans le `quality-patches` attribut.
+1. Définissez les correctifs de qualité à installer dans l’attribut `quality-patches`.
 
    ```json
    {
@@ -148,13 +148,13 @@ Pour créer la variable `centralized-patcher` package de composant :
    ```
 
 
-La variable `quality-patches` dans l’exemple de code précédent contient deux correctifs de la fonction [liste complète de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) par exemple.  Ces correctifs de qualité sont installés sur chaque projet qui nécessite les `centralized-patcher` à l’aide du module `vendor/bin/magento-patches apply` .
+L’attribut `quality-patches` de l’exemple de code précédent contient deux correctifs de la [liste complète de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) comme exemple.  Ces correctifs de qualité sont installés sur chaque projet qui nécessite le package `centralized-patcher` à l’aide de la commande `vendor/bin/magento-patches apply`.
 
 À des fins de test, vous pouvez créer un exemple de correctif (`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`).
 
 >[!NOTE]
 >
->Vous devez placer vos propres correctifs dans la `m2-hotfixes` avec les correctifs que vous recevez directement de l’assistance Adobe Commerce.
+>Vous devez placer vos propres correctifs dans le répertoire `m2-hotfixes` avec les correctifs que vous recevez directement du support Adobe Commerce.
 
 Exemple de fichier de correctif (`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`) :
 
@@ -175,11 +175,11 @@ index 03a3bf9..681e0b0 100644
 
 ### `centralized-patcher-composer-plugin`
 
-Puisque cet exemple utilise la méthode sur site pour installer des correctifs de qualité, vous devez vous assurer que la variable `vendor/bin/magento-patches apply` La commande s’exécute après `composer install` opérations. Ce module externe est déclenché après `composer install` qui exécute la variable `vendor/bin/magento-patches apply` .
+Puisque cet exemple utilise la méthode sur site pour installer des correctifs de qualité, vous devez vous assurer que la commande `vendor/bin/magento-patches apply` s’exécute après les opérations `composer install`. Ce module externe est déclenché après les opérations `composer install` qui exécutent la commande `vendor/bin/magento-patches apply`.
 
-Pour créer la variable `centralized-patcher-compose-plugin` package de composant :
+Pour créer le package de composant `centralized-patcher-compose-plugin` :
 
-1. Créez un `composer.json` avec les contenus suivants :
+1. Créez un fichier `composer.json` avec les contenus suivants :
 
    ```json
    {
@@ -214,7 +214,7 @@ Pour créer la variable `centralized-patcher-compose-plugin` package de composan
    }
    ```
 
-1. Créez un fichier PHP et définissez une `CentralizedPatcher` pour lire la liste des correctifs de qualité à partir de la [`centralized-patcher`](#centralized-patcher) module de composant et installez-les immédiatement après chaque `composer install` opération.
+1. Créez un fichier PHP et définissez une classe `CentralizedPatcher` pour lire la liste des correctifs de qualité à partir du package de composant [`centralized-patcher`](#centralized-patcher) et les installer immédiatement après chaque opération `composer install`.
 
    ```php
    <?php
@@ -331,28 +331,28 @@ Pour créer la variable `centralized-patcher-compose-plugin` package de composan
 
 >[!TIP]
 >
->Voir [code-examples](#code-examples) pour voir en action les deux packages décrits dans cet exemple.
+>Reportez-vous aux [exemples-code](#code-examples) pour voir les deux packages décrits dans cet exemple en action.
 
 
 ## Que faire des correctifs spécifiques à un projet
 
-Il peut y avoir un scénario où seulement 95 % des correctifs sont requis dans tous les projets, tandis que quelques correctifs s’appliquent uniquement à une instance spécifique. La méthode régulière d’application de correction fonctionne toujours. Vous pouvez conserver les correctifs spécifiques au projet dans le `/m2-hotfixes` et installez des correctifs de qualité par projet.
+Il peut y avoir un scénario où seulement 95 % des correctifs sont requis dans tous les projets, tandis que quelques correctifs s’appliquent uniquement à une instance spécifique. La méthode régulière d’application de correction fonctionne toujours. Vous pouvez conserver des correctifs spécifiques au projet dans le répertoire `/m2-hotfixes` et installer des correctifs de qualité par projet.
 
-Si vous utilisez cette approche, **ne pas** de soumettre tous les correctifs dans la fonction `/m2-hotfixes` répertoire qui a été copié dans votre projet par l’objet `centralized-patcher` module de composant. Vous pouvez empêcher les validations accidentelles en ajoutant `/m2-hotfixes` à votre `.gitignore` fichier . Après la mise à jour de la variable `.gitignore` , n’oubliez pas que tout `/m2-hotfixes` doit être ajouté à l’aide de la variable `git add –force` .
+Si vous utilisez cette approche, **ne validez pas** les correctifs du répertoire `/m2-hotfixes` qui ont été copiés dans votre projet par le package de composant `centralized-patcher`. Vous pouvez empêcher les validations accidentelles en ajoutant `/m2-hotfixes` à votre fichier `.gitignore`. Après la mise à jour du fichier `.gitignore`, n’oubliez pas que tout `/m2-hotfixes` spécifique au projet doit être ajouté à l’aide de la commande `git add –force`.
 
 ## Exécution de différentes versions d’Adobe Commerce
 
-Assurez-vous de définir la dépendance appropriée dans la variable `centralized-patcher` module de composant. Par exemple, vous pouvez avoir besoin d’Adobe Commerce 2.4.5-p2 pour une version spécifique de votre package, qui ne fournit que les correctifs compatibles avec Adobe Commerce 2.4.5-p2. Vous pouvez avoir une autre version de ce module compatible avec Adobe Commerce 2.4.4.
+Assurez-vous de définir la dépendance appropriée dans le package de composants `centralized-patcher`. Par exemple, vous pouvez avoir besoin d’Adobe Commerce 2.4.5-p2 pour une version spécifique de votre package, qui ne fournit que les correctifs compatibles avec Adobe Commerce 2.4.5-p2. Vous pouvez avoir une autre version de ce module compatible avec Adobe Commerce 2.4.4.
 
 ## Comprendre le résultat
 
-Comme avec Adobe Commerce sur l’infrastructure cloud, cet article suppose que votre processus de déploiement utilise la méthode `composer install` Commande et non `composer update` ou `git pull` pour déployer le nouveau code sur vos serveurs. Le flux d&#39;installation de correctifs centralisés se présente alors comme suit :
+Comme avec Adobe Commerce sur l’infrastructure cloud, cet article suppose que votre processus de déploiement utilise la commande `composer install` et non `composer update` ou `git pull` pour déployer le nouveau code sur vos serveurs. Le flux d&#39;installation de correctifs centralisés se présente alors comme suit :
 
 1. Installation du compositeur
 
    - Installe Adobe Commerce, y compris les correctifs de sécurité -p1 ou -p2 et fonctionnels.
-   - Combine des éléments centralisés `/m2-hotfixes` et prise en charge des correctifs avec des `/m2-hotfixes` et correctifs de support
-   - Applique tous les correctifs installés avec le `cweagans/composer-patches` Module de compositeur
+   - Combine les `/m2-hotfixes` centralisés et les correctifs de prise en charge avec les `/m2-hotfixes` spécifiques au projet et les correctifs de prise en charge
+   - Applique tous les correctifs installés avec le package du compositeur `cweagans/composer-patches`.
 
 1. Après `composer install`
 
@@ -360,17 +360,17 @@ Comme avec Adobe Commerce sur l’infrastructure cloud, cet article suppose que 
 
 1. Déploiement
 
-   - Les correctifs requis et les correctifs de qualité spécifiques au projet sont installés en fonction de la variable `.magento.env.yaml` (Adobe Commerce sur les projets d’infrastructure cloud uniquement).
-   - Correctifs personnalisés et correctifs de prise en charge depuis `/m2-hotfixes` sont installés par ordre alphabétique par nom de correctif.
+   - Les correctifs requis et les correctifs de qualité spécifiques au projet sont installés sur la base du fichier `.magento.env.yaml` (Adobe Commerce sur les projets d’infrastructure cloud uniquement).
+   - Les correctifs personnalisés et les correctifs de prise en charge du répertoire `/m2-hotfixes` sont installés par ordre alphabétique par nom de correctif.
 
 Ainsi, vous pouvez gérer de manière centralisée tous vos correctifs pour toutes vos installations et vous pouvez mieux garantir la sécurité et la stabilité de vos magasins Adobe Commerce. Utilisez les méthodes suivantes pour vérifier l’état du correctif :
 
-- [Projets d’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html#view-available-patches-and-status)
+- [ Projets d’infrastructure cloud ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html#view-available-patches-and-status)
 - [Projets sur site](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## Exemples de code
 
 - [Correctifs centralisés en Magento Open Source](https://github.com/AntonEvers/centralized-patches-on-magento-open-source)
-- [Correctifs centralisés dans Adobe Commerce sur l’infrastructure cloud](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
-- [Module externe du compositeur de patcher centralisé](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
-- [Composant du dispatcher centralisé](https://github.com/AntonEvers/centralized-patcher)
+- [ Correctifs centralisés dans Adobe Commerce sur l’infrastructure cloud ](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
+- [ Plug-in du compositeur de dispatcher centralisé](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
+- [Composant de dispatcher centralisé](https://github.com/AntonEvers/centralized-patcher)

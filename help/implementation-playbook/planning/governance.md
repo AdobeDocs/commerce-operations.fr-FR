@@ -16,7 +16,7 @@ La gouvernance du projet est une fonction de surveillance alignée sur la struct
 
 Le modèle de gouvernance définit, documente et communique des pratiques personnalisées et efficaces afin de fournir une méthode complète de contrôle du projet et de fournir une visibilité périodique à tous les niveaux pour garantir la réussite. Il contient un cadre pour prendre des décisions, définit les rôles, les responsabilités et les responsabilités pour la réalisation du projet et détermine l&#39;efficacité. La structure de gouvernance s’étend de l’équipe d’exécution jusqu’à la direction, en définissant les activités, le reporting, la réaffectation et le flux d’informations.
 
-![Infographie de gouvernance du projet](../../assets/playbooks/project-governance.svg)
+![Infographie de gouvernance de projet](../../assets/playbooks/project-governance.svg)
 
 À différents niveaux, les équipes examinent des mesures sprint et de projet spécifiques pour comprendre les progrès et prendre des mesures correctives si nécessaire. Ces mesures au niveau du sprint peuvent inclure la vitesse et la charge de chaque sprint.
 

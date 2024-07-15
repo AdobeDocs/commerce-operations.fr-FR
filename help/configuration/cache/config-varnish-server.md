@@ -5,7 +5,7 @@ feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -16,18 +16,18 @@ Configurez votre serveur web pour qu’il écoute sur un port autre que le port 
 
 Les sections suivantes utilisent le port 8080 comme exemple.
 
-**Modification du port d’écoute Apache 2.4**:
+**Pour modifier le port d’écoute Apache 2.4** :
 
-1. Ouvrir `/etc/httpd/conf/httpd.conf` dans un éditeur de texte.
-1. Recherchez la variable `Listen` de .
-1. Modifiez la valeur du port d’écoute en `8080`. (Vous pouvez utiliser n’importe quel port d’écoute disponible.)
+1. Ouvrez `/etc/httpd/conf/httpd.conf` dans un éditeur de texte.
+1. Recherchez la directive `Listen` .
+1. Remplacez la valeur du port d’écoute par `8080`. (Vous pouvez utiliser n’importe quel port d’écoute disponible.)
 1. Enregistrez vos modifications dans `httpd.conf` et quittez l’éditeur de texte.
 
 ## Modification de la configuration du système Varnish
 
 Pour modifier la configuration du système vernis :
 
-1. En tant qu’utilisateur avec `root` , ouvrez votre fichier de configuration de espagnol dans un éditeur de texte :
+1. En tant qu’utilisateur disposant des privilèges `root`, ouvrez votre fichier de configuration de l’annulation dans un éditeur de texte :
 
    - CentOS 6 : `/etc/sysconfig/varnish`
    - CentOS 7 : `/etc/varnish/varnish.params`
@@ -40,7 +40,7 @@ Pour modifier la configuration du système vernis :
    VARNISH_LISTEN_PORT=80
    ```
 
-   Pour Varnish 4.x, assurez-vous que DAEMON_OPTS contient le port d’écoute correct pour la variable `-a` (même si VARNISH_LISTEN_PORT est défini sur la valeur correcte) :
+   Pour Varnish 4.x, assurez-vous que DAEMON_OPTS contient le port d’écoute correct pour le paramètre `-a` (même si VARNISH_LISTEN_PORT est défini sur la valeur correcte) :
 
    ```conf
    DAEMON_OPTS="-a :80 \
@@ -54,17 +54,17 @@ Pour modifier la configuration du système vernis :
 
 ### Modification de la VCL par défaut
 
-Cette section explique comment fournir une configuration minimale afin que Varnish renvoie des en-têtes de réponse HTTP. Cela vous permet de vérifier que le vernis fonctionne avant de configurer le [!DNL Commerce] application pour utiliser le vernis.
+Cette section explique comment fournir une configuration minimale afin que Varnish renvoie des en-têtes de réponse HTTP. Cela vous permet de vérifier que le vernis fonctionne avant de configurer l’application [!DNL Commerce] pour utiliser le vernis.
 
 Pour configurer minimalement le vernis :
 
-1. Sauvegarde `default.vcl`:
+1. Sauvegardez `default.vcl` :
 
    ```bash
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
    ```
 
-1. Ouvrir `/etc/varnish/default.vcl` dans un éditeur de texte.
+1. Ouvrez `/etc/varnish/default.vcl` dans un éditeur de texte.
 1. Localisez la scène suivante :
 
    ```conf
@@ -74,11 +74,11 @@ Pour configurer minimalement le vernis :
    }
    ```
 
-1. Remplacer la valeur de `.host` avec le nom d’hôte complet ou l’adresse IP et le port d’écoute du vernis _backend_ ou _serveur d’origine_ En d’autres termes, le serveur fournissant le contenu vernis va accélérer.
+1. Remplacez la valeur de `.host` par le nom d’hôte complet ou l’adresse IP et le port d’écoute du _serveur principal_ ou du _serveur d’origine_ ; c’est-à-dire que le serveur fournissant le contenu Varnish va accélérer.
 
-   En règle générale, il s’agit de votre serveur web. Voir [Serveurs principaux](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) dans le _Guide en vernis_.
+   En règle générale, il s’agit de votre serveur web. Voir [Serveurs principaux](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) dans le _guide de vernis_.
 
-1. Remplacer la valeur de `.port` avec le port d’écoute du serveur web (8080 dans cet exemple).
+1. Remplacez la valeur de `.port` par le port d’écoute du serveur web (8080 dans cet exemple).
 
    Exemple : Apache est installé sur l’hôte 192.0.2.55 et Apache écoute sur le port 8080 :
 
@@ -116,7 +116,7 @@ Les messages d’erreur doivent s’afficher.
 
 ## Vérifier que le vernis fonctionne
 
-Les sections suivantes expliquent comment vérifier que le vernis fonctionne, mais _without_ configuration de Commerce pour l’utiliser. Avant de configurer Commerce, vous devez l’essayer.
+Les sections suivantes expliquent comment vérifier que Varnish fonctionne, mais _sans_ configurer Commerce pour l’utiliser. Avant de configurer Commerce, vous devez l’essayer.
 
 Effectuez les tâches décrites dans les sections suivantes dans l’ordre indiqué :
 
@@ -168,13 +168,13 @@ tcp        0      0 ::1:48509                   :::*                        LIST
 
 Le précédent présente Varnish s’exécutant sur le port 80 et Apache s’exécutant sur le port 8080.
 
-Si vous ne voyez pas de sortie pour `varnishd`, assurez-vous que le vernis est en cours d’exécution.
+Si vous ne voyez pas de sortie pour `varnishd`, vérifiez que Varnish est en cours d’exécution.
 
 Voir [`netstat` options](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
 
 ## Installation du logiciel Commerce
 
-Installez le logiciel Commerce si vous ne l’avez pas déjà fait. Lorsque vous êtes invité à saisir une URL de base, utilisez l’hôte Varnish et le port 80 (pour Varnish), car Varnish reçoit toutes les requêtes HTTP entrantes.
+Installez le logiciel Commerce si ce n’est pas déjà fait. Lorsque vous êtes invité à saisir une URL de base, utilisez l’hôte Varnish et le port 80 (pour Varnish), car Varnish reçoit toutes les requêtes HTTP entrantes.
 
 Erreur possible lors de l’installation de Commerce :
 
@@ -185,7 +185,7 @@ XID: 303394517
 Varnish cache server
 ```
 
-Si vous rencontrez cette erreur, modifiez `default.vcl` et ajoutez un délai d’expiration à la variable `backend` stanza :
+Si vous rencontrez cette erreur, modifiez `default.vcl` et ajoutez un délai d’attente à la barre d’état `backend` comme suit :
 
 ```conf
 backend default {
@@ -197,13 +197,13 @@ backend default {
 
 ## Vérification des en-têtes de réponse HTTP
 
-Vous pouvez maintenant vérifier que Varnish diffuse les pages en examinant les en-têtes de réponse de HTML renvoyés depuis n’importe quelle page.
+Vous pouvez maintenant vérifier que Varnish diffuse les pages en examinant les en-têtes de réponse de l’HTML renvoyés depuis n’importe quelle page.
 
-Avant de pouvoir consulter les en-têtes, vous devez définir Commerce pour le mode Développeur. Il existe plusieurs façons de le faire, dont la plus simple consiste à modifier `.htaccess` dans la racine de l’application Commerce. Vous pouvez également utiliser la variable [`magento deploy:mode:set`](../cli/set-mode.md) .
+Avant de pouvoir consulter les en-têtes, vous devez définir Commerce pour le mode Développeur. Il existe plusieurs façons de le faire, dont la plus simple consiste à modifier `.htaccess` dans la racine de l’application Commerce. Vous pouvez également utiliser la commande [`magento deploy:mode:set`](../cli/set-mode.md).
 
-### Définir Commerce pour le mode Développeur
+### Définition de Commerce pour le mode Développeur
 
-Pour définir Commerce en mode Développeur, utilisez le [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) .
+Pour définir Commerce en mode Développeur, utilisez la commande [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode).
 
 ### Consultez le journal de vernis
 
@@ -232,13 +232,13 @@ Une longue liste d’en-têtes de réponse s’affiche dans la fenêtre de votre
 -   ReqHeader      Origin: http://10.249.151.10
 ```
 
-Si des en-têtes comme ceux-ci font _not_ affichez, arrêtez Varnish, vérifiez vos `default.vcl`, puis réessayez.
+Si des en-têtes comme ceux-ci s&#39;affichent _not_, arrêtez Varnish, vérifiez votre `default.vcl`, puis réessayez.
 
-### Vérification des en-têtes de réponse de HTML
+### Vérification des en-têtes de réponse d’HTML
 
 Il existe plusieurs façons d’examiner les en-têtes de réponse, notamment l’utilisation d’un module externe de navigateur ou d’un inspecteur de navigateur.
 
-L’exemple suivant utilise `curl`. Vous pouvez saisir cette commande depuis n’importe quel ordinateur qui peut accéder au serveur Commerce à l’aide de HTTP.
+L’exemple suivant utilise `curl`. Vous pouvez saisir cette commande depuis n’importe quel ordinateur qui peut accéder au serveur Commerce en utilisant HTTP.
 
 ```bash
 curl -I -v --location-trusted '<your Commerce base URL>'

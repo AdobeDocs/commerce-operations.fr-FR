@@ -13,17 +13,17 @@ ht-degree: 1%
 
 Avant d’installer Adobe Commerce, vous devez effectuer les opérations suivantes :
 
-* Configurez un ou plusieurs hôtes qui répondent aux [configuration requise](../system-requirements.md).
-* Si vous configurez plusieurs noeuds web avec l’équilibrage de charge, configurez et testez cette partie de votre système. _before_ vous installez l’application.
+* Configurez un ou plusieurs hôtes qui répondent à la [ configuration requise](../system-requirements.md).
+* Si vous configurez plusieurs noeuds web avec l’équilibrage de charge, configurez et testez cette partie de votre système _avant_ d’installer l’application.
 * Assurez-vous de pouvoir sauvegarder l’ensemble du système à différents moments pendant l’installation afin de pouvoir le restaurer en cas de problème.
 
 >[!NOTE]
 >
->Nous supposons que vous installez Adobe Commerce dans une **environnement de développement**, que vous disposez d’un accès utilisateur root à la machine, **et** que la machine n&#39;a pas besoin d&#39;être hautement sécurisée. Si vous configurez une machine plus sécurisée, nous vous recommandons vivement de consulter un administrateur réseau pour obtenir de l’aide supplémentaire.
+>Nous supposons que vous installez Adobe Commerce dans un **environnement de développement**, que vous disposez d’un accès utilisateur root à la machine, **et** que la machine n’a pas besoin d’être hautement sécurisée. Si vous configurez une machine plus sécurisée, nous vous recommandons vivement de consulter un administrateur réseau pour obtenir de l’aide supplémentaire.
 
-Nous vous recommandons vivement de mettre à jour et de mettre à niveau votre logiciel de système d’exploitation. Ces mises à niveau peuvent fournir des correctifs logiciels et de sécurité susceptibles d’empêcher des problèmes futurs. Vous ne savez pas ce que cela signifie ? Consultez notre [page d’aperçu de l’installation](../overview.md).
+Nous vous recommandons vivement de mettre à jour et de mettre à niveau votre logiciel de système d’exploitation. Ces mises à niveau peuvent fournir des correctifs logiciels et de sécurité susceptibles d’empêcher des problèmes futurs. Vous ne savez pas ce que cela signifie ? Consultez la [page de présentation de l&#39;installation](../overview.md).
 
-Saisissez les commandes suivantes en tant qu’utilisateur avec `root` privilèges :
+Saisissez les commandes suivantes en tant qu’utilisateur disposant des privilèges `root` :
 
 * Ubuntu
 
@@ -66,11 +66,11 @@ Pour installer ou mettre à niveau Apache, voir [Apache](web-server/apache.md).
 
 ### PHP
 
-Voir [configuration requise](../system-requirements.md) pour les versions prises en charge de PHP et [PHP](../system-requirements.md#php-settings) pour les exigences de PHP.
+Voir [Configuration requise](../system-requirements.md) pour les versions prises en charge de PHP et [PHP](../system-requirements.md#php-settings) pour les exigences de PHP.
 
 ### MySQL
 
-Vérifiez que vous disposez d’une version compatible de MySQL pour la version d’Adobe Commerce que vous installez. Voir [Configuration requise](../system-requirements.md) pour les versions prises en charge
+Vérifiez que vous disposez d’une version compatible de MySQL pour la version d’Adobe Commerce que vous installez. Voir [Configuration requise](../system-requirements.md) pour connaître les versions prises en charge.
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -96,9 +96,9 @@ affiliates. Other names may be trademarks of their respective
 owners.
 ```
 
-Type `help` ou `\h` pour obtenir de l’aide. Type `\c` pour effacer l’instruction d’entrée actuelle.
+Saisissez `help` ou `\h` pour obtenir de l’aide. Saisissez `\c` pour effacer l’instruction d’entrée actuelle.
 
-Entrée `exit` à l’adresse `mysql>` pour quitter.
+Entrez `exit` à l’invite `mysql>` pour quitter.
 
 Pour installer ou mettre à niveau MySQL, voir [MySQL](database/mysql.md).
 

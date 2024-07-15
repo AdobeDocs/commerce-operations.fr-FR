@@ -21,7 +21,7 @@ Utilisez cette liste de contrôle lors de vos conversations annuelles et trimest
 
 >[!NOTE]
 >
->Pour une description détaillée des étapes techniques de mise à niveau réussie, voir [Conditions préalables à la mise à niveau](../../../upgrade/prepare/prerequisites.md) dans notre documentation utilisateur.
+>Pour une description détaillée des étapes techniques de mise à niveau réussie, reportez-vous à la section [Conditions préalables à la mise à niveau complètes](../../../upgrade/prepare/prerequisites.md) dans notre documentation utilisateur.
 
 ## Produits et versions concernés
 
@@ -46,7 +46,7 @@ Utilisez cette liste de contrôle lors de vos conversations annuelles et trimest
 
 ## Budget et minutage
 
-▢ Utilisation d’Adobe Commerce [calendrier de publication](../../../release/schedule.md) pour planifier votre prochaine mise à niveau et préparer l’avance.
+▢ Utilisez le [calendrier de publication](../../../release/schedule.md) d’Adobe Commerce pour planifier votre prochaine mise à niveau et préparer l’avance.
 
 ▢ Déterminez quelle version vous pensez adopter (complète ou sécuritaire uniquement) en fonction des besoins anticipés.
 
@@ -60,14 +60,14 @@ Utilisez cette liste de contrôle lors de vos conversations annuelles et trimest
 
 ▢ Activités d’accès anticipé
 
-- Le partenaire participe [Beta](../../../release/beta.md)
-- Révision des notes de mise à jour bêta.
+- Le partenaire participe à [Beta](../../../release/beta.md)
+- Examen des notes de mise à jour de Beta.
 
 ▢ Convenir du budget, du calendrier, de la portée.
 
-▢ Exécutez la variable [Outil de compatibilité de mise à niveau](../../../upgrade/upgrade-compatibility-tool/overview.md)
+▢ Exécutez l’ [outil de compatibilité de mise à niveau](../../../upgrade/upgrade-compatibility-tool/overview.md)
 
-▢ Envisagez d’utiliser la mise à niveau pour résoudre les problèmes identifiés par la variable [Outil Analyse à l’échelle du site](../../../tools/site-wide-analysis-tool/intro.md).
+▢ Envisagez d’utiliser la mise à niveau pour résoudre les problèmes identifiés par l’ [outil d’analyse à l’échelle du site](../../../tools/site-wide-analysis-tool/intro.md).
 
 ▢ Dépendances des documents et toute modification technique de la pile requise, comme les versions PHP ou Elastic Search.
 
@@ -77,17 +77,17 @@ Utilisez cette liste de contrôle lors de vos conversations annuelles et trimest
 
 ▢ Planifiez la période de maintenance si des temps d’arrêt sont prévus.
 
-▢ Examinez et approuvez la stratégie de test ; envisagez d’utiliser Adobe Commerce [framework de test](https://developer.adobe.com/commerce/testing/) ou une suite d’automatisation tierce.
+▢ Examinez et approuvez la stratégie de test ; envisagez d’utiliser le [framework de test](https://developer.adobe.com/commerce/testing/) d’Adobe Commerce ou une suite d’automatisation tierce.
 
 ▢ Vérifiez que toutes les extensions et personnalisations sont compatibles.
 
 ▢ Consultez et mettez à jour le manuel de lecture après le lancement ; à utiliser en cas de problèmes détectés pendant ou après la mise à niveau.
 
-## Post-déploiement
+## Déploiement de Post
 
 ▢ Surveillez le site pour tout problème : performances, traitement des commandes, analyses, etc.
 
-▢ Exécution d’une Adobe Commerce [analyse de sécurité](https://account.magento.com/scanner/dashboard/) ou d’autres tiers analysent et analysent les vulnérabilités de sécurité potentielles.
+▢ Effectuez une analyse de sécurité Adobe Commerce [1} ou autre analyse tierce et examinez les vulnérabilités de sécurité potentielles.](https://account.magento.com/scanner/dashboard/)
 
 ▢ Effectuez une rétrospective avec toutes les parties prenantes et documentez ce qui s’est bien passé, ce qui ne s’est pas passé et comment s’améliorer.
 

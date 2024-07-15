@@ -1,10 +1,10 @@
 ---
 title: Commandes courantes
-description: Affichez un échantillon des commandes et de l’utilisation courantes de l’interface de ligne de commande de Commerce.
+description: Affichez un échantillon des commandes et de l’utilisation de l’interface de ligne de commande Commerce courantes.
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Vous trouverez ci-dessous un résumé de certaines des commandes disponibles.
 
-**Pour afficher une liste complète des commandes**:
+**Pour afficher une liste complète des commandes** :
 
 ```bash
 bin/magento list
@@ -44,7 +44,7 @@ Les commandes sont présentées sous forme de résumé uniquement. Pour plus d�
 | [`magento dev:tests:run`](../cli/unit-tests.md) | Exécution de tests automatisés |
 | [`magento dev:xml:convert`](../cli/convert-layout-files.md) | Mettez à jour vos fichiers XML de mise en page pour qu’ils correspondent à la nouvelle feuille de style XSLT (Extensible Stylesheet Language Transformations). |
 | [`magento setup:perf:generate-fixtures`](../cli/generate-data.md) | Générer des données à utiliser pour les tests de performances. |
-| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Installe des exemples de données facultatifs après l’installation de l’application Commerce.<br><br>Pour plus d’informations sur les exemples de données, voir [Exemple de données facultatif](../../installation/sample-data/overview.md). |
+| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Installe les exemples de données facultatifs après l’installation de l’application Commerce.<br><br>Pour plus d’informations sur les exemples de données, voir [Données d’exemple facultatives](../../installation/sample-data/overview.md). |
 | [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | Gère les configurations du serveur principal |
 | [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | Crée/modifie/déverrouille les utilisateurs administrateurs. |
 | [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | Active/désactive les conseils de modèle de développeur. |
@@ -55,10 +55,10 @@ Les arguments suivants sont communs à toutes les commandes. Ces commandes peuve
 
 | Version longue | Version courte | Signification |
 |--- |--- |--- |
-| `--help` | `-h` | Obtenez de l’aide pour n’importe quelle commande. Par exemple : `./magento help setup:install` ou `./magento help setup:config:set`. |
+| `--help` | `-h` | Obtenez de l’aide pour n’importe quelle commande. Par exemple, `./magento help setup:install` ou `./magento help setup:config:set`. |
 | `--quiet` | `-q` | Mode silencieux ; pas de sortie. |
 | `--no-interaction` | `-n` | Aucune question interactive. |
-| `--verbose=1,2,3` | `-v, -vv, -vvv` | Niveau de verbosité. Par exemple : `--verbose=3` ou `-vvv` affiche la verbosité de débogage, qui est la sortie la plus détaillée. Par défaut : `--verbose=1` ou `-v`. |
+| `--verbose=1,2,3` | `-v, -vv, -vvv` | Niveau de verbosité. Par exemple, `--verbose=3` ou `-vvv` affiche la verbosité de débogage, qui est la sortie la plus détaillée. La valeur par défaut est `--verbose=1` ou `-v`. |
 | `--version` | `-V` | Afficher cette version de l’application |
 | `--ansi` | n/a | Forcer la sortie ANSI |
 | `--no-ansi` | n/a | Désactiver la sortie ANSI |

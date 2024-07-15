@@ -55,4 +55,4 @@ Impact de l’évaluation géographique :
 
 >[!TIP]
 >
->Voir [Exemples de GRA](examples.md).
+>Voir [Exemples GRA](examples.md).

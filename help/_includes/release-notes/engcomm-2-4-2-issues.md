@@ -1,8 +1,8 @@
 ---
 source-git-commit: 85e9a890f8ccb0f4d8b63c9c96971cf6e011f992
 workflow-type: tm+mt
-source-wordcount: '4030'
-ht-degree: 13%
+source-wordcount: '1759'
+ht-degree: 0%
 
 ---
 # Contributions de la communauté
@@ -208,7 +208,7 @@ ht-degree: 13%
 | Oleh Usik | [#30222](https://github.com/magento/magento2/pull/30222) |  |
 | Timon de Groot | [#28809](https://github.com/magento/magento2/pull/28809) | [22375](https://github.com/magento/magento2/issues/22375) |
 | Nirav Patel | [#28385](https://github.com/magento/magento2/pull/28385) | [30345](https://github.com/magento/magento2/issues/30345) |
-| Dan Wallis | [#27940](https://github.com/magento/magento2/pull/27940) | [29555](https://github.com/magento/magento2/issues/29555) |
+| Dan Wallis | [#27940](https://github.com/magento/magento2/pull/27940) | [2955](https://github.com/magento/magento2/issues/29555) |
 | Sean van Zuidam | [#30065](https://github.com/magento/magento2/pull/30065) | [30064](https://github.com/magento/magento2/issues/30064) |
 | Tu Nguyen | [#30008](https://github.com/magento/magento2/pull/30008) | [30036](https://github.com/magento/magento2/issues/30036) |
 | Tu Nguyen | [#29726](https://github.com/magento/magento2/pull/29726) | [29719](https://github.com/magento/magento2/issues/29719) |

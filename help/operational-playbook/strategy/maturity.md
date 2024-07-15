@@ -4,7 +4,7 @@ description: Évaluez l’état de votre entreprise en fonction de ce modèle de
 exl-id: 5cf9f080-0ac4-4426-837f-3c245d10e504
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Considérez un modèle de maturité comme un rapport robuste qui vous aide à d�
 
 Le diagramme suivant résume les différents besoins entre les niveaux de maturité :
 
-![Schéma des besoins à travers les niveaux de maturité](../../assets/playbooks/maturity-levels.png)
+![ Schéma des niveaux de maturité ](../../assets/playbooks/maturity-levels.png)
 
 ## Niveaux de maturité
 
@@ -115,7 +115,7 @@ Avez-vous établi un soutien continu à l&#39;optimisation et au partage des con
 
 Gestion de la sécurité et de la confidentialité :
 
-Ajoutez-vous de la valeur à l’expérience de votre client en échange des données personnelles qu’il vous fournit ? Êtes-vous juste en train de vous fixer des principes de base ou êtes-vous en concurrence pour la vie privée et la sécurité ?
+Ajoutez-vous de la valeur à l’expérience de votre client dans exchange pour les données personnelles qu’il vous fournit ? Êtes-vous juste en train de vous fixer des principes de base ou êtes-vous en concurrence pour la vie privée et la sécurité ?
 
 - Documents de politique de confidentialité en ligne
 - Processus de flux de données mappés

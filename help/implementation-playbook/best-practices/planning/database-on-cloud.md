@@ -21,7 +21,7 @@ Adobe Commerce sur l’infrastructure cloud
 
 ## Convertir toutes les tables MyISAM en InnoDB
 
-Adobe recommande d&#39;utiliser le moteur de base de données InnoDB. Dans une installation Adobe Commerce par défaut, toutes les tables de la base sont stockées à l&#39;aide du moteur InnoDB. Cependant, certains modules tiers (extensions) peuvent introduire des tableaux au format MyISAM. Après avoir installé un module tiers, vérifiez la base de données pour identifier les tables dans `myisam` formater et les convertir en `innodb` format.
+Adobe recommande d&#39;utiliser le moteur de base de données InnoDB. Dans une installation Adobe Commerce par défaut, toutes les tables de la base sont stockées à l&#39;aide du moteur InnoDB. Cependant, certains modules tiers (extensions) peuvent introduire des tableaux au format MyISAM. Après avoir installé un module tiers, vérifiez la base de données pour identifier les tables au format `myisam` et les convertir au format `innodb`.
 
 ### Déterminer si un module comprend des tables MyISAM
 
@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### Remplacez le moteur de stockage par InnoDB.
 
-Dans le `db_schema.xml` déclaration du tableau, définissez la variable `engine` valeur d’attribut pour la `table` noeud à `innodb`. À titre de référence, voir [Configuration du schéma déclaratif > noeud de tableau](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) dans notre documentation destinée aux développeurs.
+Dans le fichier `db_schema.xml` déclarant la table, définissez la valeur d&#39;attribut `engine` du noeud `table` correspondant sur `innodb`. À titre de référence, voir [Configuration d’un schéma déclaratif > noeud de table](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) dans notre documentation destinée aux développeurs.
 
 Le schéma de déclaration a été introduit dans Adobe Commerce sur l’infrastructure cloud version 2.3.
 
@@ -72,22 +72,22 @@ Les déclencheurs sont utilisés pour consigner les modifications dans les table
 - Les déclencheurs sont interprétés comme du code et MySQL ne les précompile pas. En se connectant à l’espace de transaction de votre requête, ils ajoutent la surcharge à un analyseur et à un interprète pour chaque requête effectuée avec la table.
 - Les déclencheurs partagent le même espace de transaction que les requêtes d’origine, et tandis que ces requêtes se disputent les verrous sur la table, les déclencheurs se disputent indépendamment les verrous sur une autre table.
 
-Pour en savoir plus sur les alternatives à l’utilisation de déclencheurs personnalisés, voir [Déclencheurs MySQL](mysql-configuration.md#triggers).
+Pour en savoir plus sur les alternatives à l’utilisation de déclencheurs personnalisés, voir [Triggers MySQL](mysql-configuration.md#triggers).
 
 ## Mettre à niveau [!DNL ECE-Tools] vers la version 2002.0.21 ou ultérieure {#ece-tools-version}
 
-Pour éviter tout problème potentiel lié à des blocages cron, effectuez une mise à niveau de CEE-Tools vers la version 2002.0.21 ou ultérieure. Pour obtenir des instructions, voir [Mettre à jour `ece-tools` version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) dans notre documentation destinée aux développeurs.
+Pour éviter tout problème potentiel lié à des blocages cron, effectuez une mise à niveau de CEE-Tools vers la version 2002.0.21 ou ultérieure. Pour obtenir des instructions, reportez-vous à la section [Mise à jour de `ece-tools` version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) de notre documentation destinée aux développeurs.
 
 ## Basculer le mode indexeur en toute sécurité
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
-Changement des indexeurs générés [!DNL data definition language] (DDL) pour créer des déclencheurs pouvant entraîner des verrous de base de données. Vous pouvez éviter ce problème en mettant votre site web en mode de maintenance et en désactivant les tâches cron avant de modifier la configuration.
-Pour obtenir des instructions, voir [Configuration des indexeurs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) dans le *Guide de configuration d’Adobe Commerce*.
+Le changement d’indexeurs génère des instructions [!DNL data definition language] (DDL) pour créer des déclencheurs qui peuvent entraîner des verrous de base de données. Vous pouvez éviter ce problème en mettant votre site web en mode de maintenance et en désactivant les tâches cron avant de modifier la configuration.
+Pour obtenir des instructions, reportez-vous à la section [Configuration des indexeurs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) du *Guide de configuration d’Adobe Commerce*.
 
 ## N’exécutez pas d’instructions DDL dans Production
 
-Évitez d’exécuter des instructions DDL dans l’environnement de production pour éviter les conflits (comme les modifications et les créations de tableau). La variable `setup:upgrade` process est une exception.
+Évitez d’exécuter des instructions DDL dans l’environnement de production pour éviter les conflits (comme les modifications et les créations de tableau). Le processus `setup:upgrade` est une exception.
 
 Si vous devez exécuter une instruction DDL, mettez le site web en mode de maintenance et désactivez cron (voir les instructions pour changer d’index en toute sécurité dans la section précédente).
 
@@ -95,7 +95,7 @@ Si vous devez exécuter une instruction DDL, mettez le site web en mode de maint
 
 Activez l’archivage des commandes auprès de l’administrateur afin de réduire l’espace requis pour les tables de ventes au fur et à mesure que vos données de commande s’accroissent. L’archivage permet d’économiser de l’espace disque MySQL et d’améliorer les performances d’extraction.
 
-Voir [Activer l’archivage](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) dans la documentation d’Adobe Commerce Merchant.
+Voir [Activer l’archivage](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) dans la documentation Adobe Commerce Merchant.
 
 ## Informations supplémentaires
 

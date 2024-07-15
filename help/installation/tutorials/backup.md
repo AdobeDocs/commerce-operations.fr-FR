@@ -13,17 +13,17 @@ ht-degree: 0%
 
 Cette commande permet de sauvegarder :
 
-* Le système de fichiers (à l’exclusion de `var` et `pub/static` répertoires)
-* La variable `pub/media` directory
+* Le système de fichiers (à l’exclusion des répertoires `var` et `pub/static`)
+* Répertoire `pub/media`
 * La base
 
-Les sauvegardes sont stockées dans la variable `var/backups` et peut être restauré à tout moment à l’aide de la variable [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) .
+Les sauvegardes sont stockées dans le répertoire `var/backups` et peuvent être restaurées à tout moment à l’aide de la commande [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files).
 
-Après la sauvegarde, vous pouvez [restauration](#rollback) plus tard.
+Après la sauvegarde, vous pouvez [restaurer](#rollback) ultérieurement.
 
 >[!TIP]
 >
->Pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Instantanés et gestion des sauvegardes](https://devdocs.magento.com/cloud/project/project-webint-snap.html) dans le _Guide de Cloud_.
+>Pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Gestion des instantanés et des sauvegardes](https://devdocs.magento.com/cloud/project/project-webint-snap.html) dans le _guide Cloud_.
 
 ## Activation des sauvegardes
 
@@ -40,17 +40,17 @@ bin/magento config:set system/backup/functionality_enabled 1
 
 ## Définition de la limite des fichiers ouverts
 
-La restauration d’une sauvegarde précédente peut échouer silencieusement, ce qui entraîne l’écriture de données incomplètes dans le système de fichiers ou la base de données à l’aide de la variable [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) .
+La restauration d’une sauvegarde précédente peut échouer de manière silencieuse, ce qui entraîne l’écriture de données incomplètes dans le système de fichiers ou la base de données à l’aide de la commande [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files).
 
 Parfois, une longue chaîne de requête entraîne une insuffisance de mémoire de l’utilisateur en raison d’un trop grand nombre d’appels récursifs.
 
 ## Comment définir les fichiers ouverts `ulimit`
 
-Nous vous recommandons de définir les fichiers ouverts. [`ulimit`](https://ss64.com/bash/ulimit.html) pour que l’utilisateur du système de fichiers ait la valeur `65536` ou plus.
+Nous vous recommandons de définir les fichiers ouverts [`ulimit`](https://ss64.com/bash/ulimit.html) pour l’utilisateur du système de fichiers sur une valeur de `65536` ou plus.
 
 Vous pouvez le faire sur la ligne de commande ou en faire un paramètre permanent pour l’utilisateur en modifiant son script shell.
 
-Avant de continuer, si ce n’est pas déjà fait, passez à la [propriétaire du système de fichiers](../prerequisites/file-system/overview.md).
+Avant de poursuivre, si ce n’est pas déjà fait, passez à l’[propriétaire du système de fichiers](../prerequisites/file-system/overview.md).
 
 Commande :
 
@@ -62,12 +62,12 @@ Si nécessaire, vous pouvez définir cette valeur sur une valeur plus élevée.
 
 >[!NOTE]
 >
->Syntaxe des fichiers ouverts `ulimit` dépend du shell UNIX utilisé. Le paramètre précédent doit fonctionner avec CentOS et Ubuntu avec le conteneur Bash. Toutefois, pour macOS, le paramètre correct est `ulimit -S 65532`. Pour plus d’informations, consultez la page de gestion ou la référence du système d’exploitation.
+>La syntaxe des fichiers ouverts `ulimit` dépend du shell UNIX que vous utilisez. Le paramètre précédent doit fonctionner avec CentOS et Ubuntu avec le conteneur Bash. Toutefois, pour macOS, le paramètre correct est `ulimit -S 65532`. Pour plus d’informations, consultez la page de gestion ou la référence du système d’exploitation.
 
 Pour définir éventuellement la valeur dans le conteneur Bash de l’utilisateur :
 
-1. Si vous ne l’avez pas déjà fait, passez à la [propriétaire du système de fichiers](../prerequisites/file-system/overview.md).
-1. Ouvrir `/home/<username>/.bashrc` dans un éditeur de texte.
+1. Si vous ne l’avez pas déjà fait, basculez vers le [propriétaire du système de fichiers](../prerequisites/file-system/overview.md).
+1. Ouvrez `/home/<username>/.bashrc` dans un éditeur de texte.
 1. Ajoutez la ligne suivante :
 
    ```bash
@@ -78,7 +78,7 @@ Pour définir éventuellement la valeur dans le conteneur Bash de l’utilisateu
 
 >[!WARNING]
 >
->Nous vous recommandons d’éviter de définir une valeur pour [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) dans le `php.ini` car cela peut entraîner des restaurations incomplètes sans préavis d’échec.
+>Nous vous recommandons d’éviter de définir une valeur pour [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) dans le fichier `php.ini`, car cela peut entraîner des restaurations incomplètes sans préavis d’échec.
 
 ## Sauvegarde
 

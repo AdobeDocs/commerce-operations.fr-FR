@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Vous pouvez exécuter les types de rapports suivants :
 
-- **Dépendances des modules**: indique le nombre total de dépendances entre les modules et si les dépendances sont hard ou soft.
-- **Dépendances circulaires**: affiche le nombre total de chaînes de dépendances et le nombre et la liste des dépendances circulaires pour chaque module.
-- **Dépendances des structures**: affiche le nombre total de dépendances sur la structure de commerce par module (y compris le nombre total d’entrées de structure pour chaque bibliothèque).
+- **Dépendances de module** : indique le nombre total de dépendances entre les modules et si les dépendances sont hard ou soft.
+- **Dépendances circulaires** : affiche le nombre total de chaînes de dépendances ainsi que le nombre et la liste des dépendances circulaires pour chaque module.
+- **Dépendances de structure** : affiche le nombre total de dépendances de la structure Commerce par module (y compris le nombre total d’entrées de structure pour chaque bibliothèque).
 
 Une dépendance dans un commentaire est également une dépendance.
 

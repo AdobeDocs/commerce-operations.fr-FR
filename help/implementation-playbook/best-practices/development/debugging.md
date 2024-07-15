@@ -3,13 +3,13 @@ title: Bonnes pratiques relatives au débogage
 description: Découvrez des techniques pour résoudre les problèmes de développement courants d’Adobe Commerce.
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+exl-id: 78fbea7b-28e8-4713-990d-b4cae159250c
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1139'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques relatives au débogage pour Adobe Commerce
 
@@ -22,7 +22,7 @@ Cette section décrit les problèmes les plus courants que vous pouvez rencontre
 ### Cache
 
 - Videz le cache avant d’approfondir l’enquête
-- Tenez compte du cache d’APC, du réseau de diffusion de contenu, du vernis, du code généré et de la variable `var/view_preprocessed` et `pub/static/` répertoires
+- Examinez le cache d’APC, le CDN, le vernis, le code généré et les répertoires `var/view_preprocessed` et `pub/static/`.
 - Arrêtez et redémarrez les gestionnaires de file d’attente après avoir vidé le cache ou modifié le code.
 
 L’exemple de code suivant fournit des commandes utiles relatives à la gestion du cache (ne pas exécuter sur les environnements de production) :
@@ -96,7 +96,7 @@ bin/magento cache:flush
 
 ### Mode Développeur
 
-Vérifiez que votre installation locale se trouve dans `developer` mode .
+Assurez-vous que votre installation locale est en mode `developer`.
 
 ### Nouveau module
 
@@ -108,9 +108,9 @@ Si vous avez créé un module, recherchez les problèmes suivants :
   bin/magento module --enable Your_Module
   ```
 
-  Vérifiez les `app/etc/config.php` pour votre nouveau module.
+  Vérifiez le fichier `app/etc/config.php` de votre nouveau module.
 
-- Vérifiez l’imbrication du fichier et de la structure de répertoires. Par exemple, les fichiers de mise en page se trouvent dans la variable `view/layout/` au lieu du répertoire `view/frontend/layout` répertoire ? Sont des modèles dans la variable `view/frontend/template` au lieu du répertoire `view/frontend/templates` répertoire ?
+- Vérifiez l’imbrication du fichier et de la structure de répertoires. Par exemple, les fichiers de mise en page se trouvent-ils dans le répertoire `view/layout/` au lieu du répertoire `view/frontend/layout` ? Les modèles se trouvent-ils dans le répertoire `view/frontend/template` au lieu du répertoire `view/frontend/templates` ?
 
 ## Dépannage : Partage à moitié
 
@@ -118,9 +118,9 @@ Si les suspects habituels ne proposent pas de solution au problème, la façon l
 
 Voir les diagrammes suivants :
 
-![Diagramme de bord](../../../assets/playbooks/bisect.png)
+![Diagramme de contour](../../../assets/playbooks/bisect.png)
 
-![Diagramme de bord](../../../assets/playbooks/bisect2.png)
+![Diagramme de contour](../../../assets/playbooks/bisect2.png)
 
 Il existe plusieurs approches de la segmentation, mais Adobe recommande de suivre cet ordre :
 
@@ -132,12 +132,12 @@ Il existe plusieurs approches de la segmentation, mais Adobe recommande de suivr
 
 Si le problème peut ne pas être lié au code, supprimez d’abord les gros blocs. Voici quelques-uns des grands blocs à envisager :
 
-- **Structure Adobe Commerce**— Le problème est-il lié à Adobe Commerce ou pourrait-il être lié à un autre système connecté ?
-- **Serveur et client**: effacez le cache et le stockage du navigateur. Le problème est-il résolu ? Cela peut exclure une cause liée au serveur. Le problème existe-t-il encore ? Il n’est plus nécessaire de perdre du temps dans le débogage du navigateur.
-- **Session**: le problème se produit-il pour chaque utilisateur ? Si ce n’est pas le cas, votre problème peut se limiter aux rubriques liées à la session ou au navigateur.
-- **Cache**—La désactivation de tous les caches change-t-elle quoi que ce soit ? Si tel est le cas, vous pouvez vous concentrer sur les rubriques liées au cache.
-- **Base**: le problème se produit-il sur chaque environnement exécutant le même code ? Si ce n’est pas le cas, recherchez les problèmes de configuration et d’autres sujets liés à la base de données.
-- **Code**: recherchez des problèmes de code si aucun des problèmes ci-dessus n’a résolu le problème.
+- **Structure Adobe Commerce** : le problème est-il lié à Adobe Commerce ou peut-il être lié à un autre système connecté ?
+- **Serveur et client** : effacez le cache et le stockage du navigateur. Le problème est-il résolu ? Cela peut exclure une cause liée au serveur. Le problème existe-t-il encore ? Il n’est plus nécessaire de perdre du temps dans le débogage du navigateur.
+- **Session** : le problème se produit-il pour chaque utilisateur ? Si ce n’est pas le cas, votre problème peut se limiter aux rubriques liées à la session ou au navigateur.
+- **Cache** : la désactivation de tous les caches change-t-elle quelque chose ? Si tel est le cas, vous pouvez vous concentrer sur les rubriques liées au cache.
+- **Base de données** : le problème se produit-il dans chaque environnement exécutant le même code ? Si ce n’est pas le cas, recherchez les problèmes de configuration et d’autres sujets liés à la base de données.
+- **Code** : recherchez des problèmes de code si aucun des problèmes ci-dessus n’a résolu le problème.
 
 ### Étape 2 : biaiser par validations
 
@@ -148,7 +148,7 @@ Vous pouvez remplacer les semaines et les jours par des validations. Par exemple
 ### Étape 3 : sélection par fichiers
 
 - Divisez Adobe Commerce par types de fichiers (core et non-core). Tout d’abord, désactivez tous les modules client et marketplace. Le problème existe-t-il encore ? Il s&#39;agit probablement d&#39;une question non fondamentale.
-- Activez (environ) à nouveau la moitié des modules dans la fonction `app/etc/config.php` fichier . Tenez compte des dépendances. Il est préférable d’activer simultanément des grappes de modules avec le même sujet. Le problème existe-t-il encore ?
+- Activez (environ) à nouveau la moitié des modules dans le fichier `app/etc/config.php` . Tenez compte des dépendances. Il est préférable d’activer simultanément des grappes de modules avec le même sujet. Le problème existe-t-il encore ?
 - Activez un quart des modules restants. Le problème existe-t-il encore ? Désactivez la moitié de ce que vous avez activé. Cette méthode peut vous aider à isoler la cause racine d’un seul module.
 
 ## Économies de temps
@@ -169,7 +169,7 @@ La description du problème est-elle claire ? Êtes-vous certain qu’aucun term
 
 ### Recherche Internet
 
-Effectuez une recherche Internet avec des termes liés au problème. Il est probable que quelqu&#39;un d&#39;autre ait déjà rencontré le même problème. Effectuez une recherche dans le [Problèmes liés à Adobe Commerce GitHub](https://github.com/magento/magento2/issues).
+Effectuez une recherche Internet avec des termes liés au problème. Il est probable que quelqu&#39;un d&#39;autre ait déjà rencontré le même problème. Recherchez les [problèmes Adobe Commerce GitHub](https://github.com/magento/magento2/issues).
 
 ### Faites une pause
 
@@ -177,7 +177,7 @@ Si vous cherchez un problème pendant trop longtemps, il peut être difficile de
 
 ## Outils
 
-Outils d’interface de ligne de commande n98 Magerun ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2)) fournissent des fonctionnalités utiles pour travailler avec Adobe Commerce à partir de la ligne de commande. En particulier, ces commandes :
+Les outils d’interface de ligne de commande n98 Magerun ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2)) fournissent des fonctionnalités utiles pour travailler avec Adobe Commerce à partir de la ligne de commande. En particulier, ces commandes :
 
 ```bash
 n98-magerun2.phar dev:console

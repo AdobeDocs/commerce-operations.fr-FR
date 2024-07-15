@@ -16,7 +16,7 @@ Utilisez le tableau suivant pour trouver des notes de mise à jour et des inform
 
 >[!TIP]
 >
->- Si vous découvrez Adobe Commerce, reportez-vous à la section [architecture d&#39;entreprise](../../implementation-playbook/architecture/enterprise-blueprint.md) et [à propos d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) pour vous orienter.
+>- Si vous découvrez Adobe Commerce, reportez-vous aux rubriques [Architecture d’entreprise](../../implementation-playbook/architecture/enterprise-blueprint.md) et [ sur Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) pour obtenir une orientation.
 >- Pour plus d’informations sur les mises à niveau, voir [lecture recommandée](../../upgrade/resources/recommended-reading.md).
 
 <table>
@@ -62,7 +62,7 @@ Utilisez le tableau suivant pour trouver des notes de mise à jour et des inform
       <td><strong>Outils</strong>
         <p>Découvrez les dernières améliorations apportées aux outils conçus pour vous aider à trouver et à utiliser plus facilement les logiciels Adobe Commerce.</p>
           <ul>
-            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Maillage d’API pour le développeur du créateur d’applications Adobe</a></li>
+            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Maillage API pour Adobe App Builder Developer</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Événements d’Adobe I/O pour Adobe Commerce</a></li>
             <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">SDK de l’interface utilisateur d’administration</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">Outil Correctifs de qualité</a></li>

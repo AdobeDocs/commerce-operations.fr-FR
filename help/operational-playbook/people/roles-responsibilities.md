@@ -4,7 +4,7 @@ description: Découvrez les différents rôles et responsabilités impliqués da
 exl-id: 6e61dcce-ad71-4380-bae4-48be1a3d88b9
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -130,12 +130,12 @@ L’équipe Contenu fait partie de l’équipe marketing, de l’équipe eCommer
 
 L’équipe chargée du contenu est chargée des tâches suivantes :
 
-- **Organiser le contenu**: les éléments, les URL, la navigation et la structure de page doivent être simples et conviviaux. Si le site est trop compliqué, les clients se perdent.
+- **Organisation du contenu** : les éléments, les URL, la navigation et la structure des pages doivent être simples et conviviaux. Si le site est trop compliqué, les clients se perdent.
 
-- **Correction de contenu rompu**: les images, pages, pages manquantes, flux de passage en caisse rompu et messages d’erreur endommagés font quitter votre site et laissent une impression négative.
+- **Correction de contenu endommagé** : les images, pages, pages manquantes, flux de passage en caisse rompu et messages d’erreur endommagés font quitter votre site et laissent une impression négative.
 
-- **Mettre à jour le contenu**: le contenu du site web doit être à jour. Si le site est constitué de contenu obsolète, cela a un impact sur l’expérience client et augmente la charge de travail de l’équipe du service client. Par exemple, ils doivent répondre aux questions des clients auxquelles le contenu du site Web aurait dû répondre.
+- **Mise à jour du contenu** : le contenu du site web doit être à jour. Si le site est constitué de contenu obsolète, cela a un impact sur l’expérience client et augmente la charge de travail de l’équipe du service client. Par exemple, ils doivent répondre aux questions des clients auxquelles le contenu du site Web aurait dû répondre.
 
-- **Simplification du contenu**: l’équipe Contenu doit créer du contenu simple et direct. Le langage simple fonctionne mieux lorsque vous interagissez avec des clients.
+- **Simplification du contenu** : l’équipe Contenu doit créer du contenu simple et direct. Le langage simple fonctionne mieux lorsque vous interagissez avec des clients.
 
 L’équipe Contenu crée, teste, gère et optimise tout le contenu du site web, ce qui permet d’obtenir un retour sur investissement.

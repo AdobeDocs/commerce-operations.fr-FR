@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Référence des chemins de configuration des paiements
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Ventes** > **Méthodes de paiement**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > **Ventes** > **Méthodes de paiement**.
 
-La variable [`magento app:config:dump` command](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle source. Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables). Cette rubrique fonctionne _not_ list [valeurs sensibles et spécifiques au système](config-reference-sens.md).
+La commande [`magento app:config:dump`](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle source. Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, reportez-vous à la section [Utilisation de variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables). Cette rubrique ne _répertorie pas_ les [ valeurs sensibles et spécifiques au système ](config-reference-sens.md).
 
 Les paramètres sont organisés par mode de paiement.
 
@@ -100,7 +100,7 @@ Les paramètres sont organisés par mode de paiement.
 
 ## Paiements pour la solution hébergée (Royaume-Uni)
 
-Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [pays marchand](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths).
+Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [ pays commerçant ](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths).
 
 | Nom | Chemin de configuration | Commerce uniquement ? | Chiffré ? |
 |--------------|--------------|--------------|--------------|
@@ -260,7 +260,7 @@ Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [pa
 
 >[!INFO]
 >
->Les chemins disponibles sont déterminés par votre choix. [Pays du commerce](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths).
+>Les chemins disponibles sont déterminés par votre choix de [Pays commerçant](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths).
 
 | Nom | Chemin de configuration | Commerce uniquement ? | Chiffré ? |
 |--------------|--------------|--------------|--------------|
@@ -329,39 +329,39 @@ Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [pa
 | Total de la commande minimale | `payment_nz/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Total de la commande maximale | `payment_nz/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ordre de tri | `payment_nz/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activé | `payment_nz/cybersource/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_nz/cybersource/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_nz/cybersource/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| New Order Status | `payment_nz/cybersource/order_status` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_nz/cybersource/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_nz/cybersource/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_nz/cybersource/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_nz/cybersource/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande minimale | `payment_nz/cybersource/min_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande maximale | `payment_nz/cybersource/max_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_nz/cybersource/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_nz/worldpay/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_nz/worldpay/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Autoriser la modification des coordonnées | `payment_nz/worldpay/fix_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Masquer les informations de contact | `payment_nz/worldpay/hide_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Champs de signature | `payment_nz/worldpay/signature_fields` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_nz/worldpay/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement pour le test | `payment_nz/worldpay/test_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_nz/worldpay/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement Des Pays Applicables | `payment_nz/worldpay/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement De Pays Spécifiques | `payment_nz/worldpay/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_nz/worldpay/cvv_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_nz/worldpay/avs_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_nz/worldpay/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_nz/eway/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Type de connexion | `payment_nz/eway/connection_type` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_nz/eway/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_nz/eway/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_nz/eway/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_nz/eway/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_nz/eway/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_nz/eway/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_nz/eway/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_nz/cybersource/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_nz/cybersource/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_nz/cybersource/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| New Order Status | `payment_nz/cybersource/order_status` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_nz/cybersource/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_nz/cybersource/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_nz/cybersource/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_nz/cybersource/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande minimale | `payment_nz/cybersource/min_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande maximale | `payment_nz/cybersource/max_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_nz/cybersource/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_nz/worldpay/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_nz/worldpay/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Autoriser la modification des coordonnées | `payment_nz/worldpay/fix_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Masquer les informations de contact | `payment_nz/worldpay/hide_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Champs de signature | `payment_nz/worldpay/signature_fields` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_nz/worldpay/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement pour le test | `payment_nz/worldpay/test_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_nz/worldpay/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement Des Pays Applicables | `payment_nz/worldpay/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement De Pays Spécifiques | `payment_nz/worldpay/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_nz/worldpay/cvv_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_nz/worldpay/avs_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_nz/worldpay/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_nz/eway/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Type de connexion | `payment_nz/eway/connection_type` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_nz/eway/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_nz/eway/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_nz/eway/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_nz/eway/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_nz/eway/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_nz/eway/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_nz/eway/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Récupération planifiée | `payment_hk/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Style des pages marchandes PayPal | `payment_hk/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Récupération planifiée | `payment_hk/paypal_group_all_in_one/payments_pro_hosted_solution_hk/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -421,39 +421,39 @@ Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [pa
 | Total de la commande minimale | `payment_hk/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Total de la commande maximale | `payment_hk/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ordre de tri | `payment_hk/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activé | `payment_hk/cybersource/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_hk/cybersource/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_hk/cybersource/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| New Order Status | `payment_hk/cybersource/order_status` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_hk/cybersource/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_hk/cybersource/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_hk/cybersource/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_hk/cybersource/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande minimale | `payment_hk/cybersource/min_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande maximale | `payment_hk/cybersource/max_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_hk/cybersource/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_hk/worldpay/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_hk/worldpay/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Autoriser la modification des coordonnées | `payment_hk/worldpay/fix_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Masquer les informations de contact | `payment_hk/worldpay/hide_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_hk/worldpay/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement pour le test | `payment_hk/worldpay/test_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_hk/worldpay/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement Des Pays Applicables | `payment_hk/worldpay/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement De Pays Spécifiques | `payment_hk/worldpay/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_hk/worldpay/cvv_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_hk/worldpay/avs_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_hk/worldpay/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_hk/eway/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Type de connexion | `payment_hk/eway/connection_type` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_hk/eway/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Mode sandbox | `payment_hk/eway/sandbox_flag` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_hk/eway/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_hk/eway/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_hk/eway/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_hk/eway/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_hk/eway/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_hk/eway/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_hk/cybersource/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_hk/cybersource/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_hk/cybersource/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| New Order Status | `payment_hk/cybersource/order_status` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_hk/cybersource/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_hk/cybersource/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_hk/cybersource/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_hk/cybersource/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande minimale | `payment_hk/cybersource/min_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande maximale | `payment_hk/cybersource/max_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_hk/cybersource/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_hk/worldpay/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_hk/worldpay/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Autoriser la modification des coordonnées | `payment_hk/worldpay/fix_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Masquer les informations de contact | `payment_hk/worldpay/hide_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_hk/worldpay/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement pour le test | `payment_hk/worldpay/test_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_hk/worldpay/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement Des Pays Applicables | `payment_hk/worldpay/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement De Pays Spécifiques | `payment_hk/worldpay/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_hk/worldpay/cvv_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_hk/worldpay/avs_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_hk/worldpay/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_hk/eway/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Type de connexion | `payment_hk/eway/connection_type` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_hk/eway/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Mode sandbox | `payment_hk/eway/sandbox_flag` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_hk/eway/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_hk/eway/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_hk/eway/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_hk/eway/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_hk/eway/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_hk/eway/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Récupération planifiée | `payment_es/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Style des pages marchandes PayPal | `payment_es/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Récupération planifiée | `payment_es/paypal_group_all_in_one/payments_pro_hosted_solution_es/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -514,42 +514,42 @@ Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [pa
 | Total de la commande minimale | `payment_es/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Total de la commande maximale | `payment_es/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ordre de tri | `payment_es/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activé | `payment_es/cybersource/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_es/cybersource/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_es/cybersource/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Identifiant de profil | `payment_es/cybersource/profile_id` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) | ![Chiffré](/help/assets/configuration/cloud-enc.png) |
-| New Order Status | `payment_es/cybersource/order_status` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_es/cybersource/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_es/cybersource/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_es/cybersource/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_es/cybersource/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande minimale | `payment_es/cybersource/min_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande maximale | `payment_es/cybersource/max_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_es/cybersource/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_es/worldpay/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_es/worldpay/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| ID d’installation | `payment_es/worldpay/installation_id` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| ID d’installation d’administrateur distant | `payment_es/worldpay/admin_installation_id` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Autoriser la modification des coordonnées | `payment_es/worldpay/fix_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Masquer les informations de contact | `payment_es/worldpay/hide_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Champs de signature | `payment_es/worldpay/signature_fields` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Mode test | `payment_es/worldpay/sandbox_flag` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement pour le test | `payment_es/worldpay/test_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_es/worldpay/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement Des Pays Applicables | `payment_es/worldpay/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement De Pays Spécifiques | `payment_es/worldpay/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_es/worldpay/cvv_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_es/worldpay/avs_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_es/worldpay/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_es/eway/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Type de connexion | `payment_es/eway/connection_type` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_es/eway/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_es/eway/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_es/eway/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_es/eway/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_es/eway/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_es/eway/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_es/eway/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_es/cybersource/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_es/cybersource/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_es/cybersource/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Identifiant de profil | `payment_es/cybersource/profile_id` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) | ![Encrypted](/help/assets/configuration/cloud-enc.png) |
+| New Order Status | `payment_es/cybersource/order_status` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_es/cybersource/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_es/cybersource/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_es/cybersource/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_es/cybersource/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande minimale | `payment_es/cybersource/min_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande maximale | `payment_es/cybersource/max_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_es/cybersource/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_es/worldpay/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_es/worldpay/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| ID d’installation | `payment_es/worldpay/installation_id` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| ID d’installation d’administrateur distant | `payment_es/worldpay/admin_installation_id` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Autoriser la modification des coordonnées | `payment_es/worldpay/fix_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Masquer les informations de contact | `payment_es/worldpay/hide_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Champs de signature | `payment_es/worldpay/signature_fields` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Mode test | `payment_es/worldpay/sandbox_flag` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement pour le test | `payment_es/worldpay/test_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_es/worldpay/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement Des Pays Applicables | `payment_es/worldpay/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement De Pays Spécifiques | `payment_es/worldpay/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_es/worldpay/cvv_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_es/worldpay/avs_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_es/worldpay/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_es/eway/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Type de connexion | `payment_es/eway/connection_type` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_es/eway/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_es/eway/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_es/eway/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_es/eway/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_es/eway/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_es/eway/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_es/eway/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Récupération planifiée | `payment_it/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Style des pages marchandes PayPal | `payment_it/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Récupération planifiée | `payment_it/paypal_group_all_in_one/payments_pro_hosted_solution_it/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -609,39 +609,39 @@ Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [pa
 | Total de la commande minimale | `payment_it/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Total de la commande maximale | `payment_it/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ordre de tri | `payment_it/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activé | `payment_it/cybersource/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_it/cybersource/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_it/cybersource/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| New Order Status | `payment_it/cybersource/order_status` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_it/cybersource/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_it/cybersource/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_it/cybersource/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_it/cybersource/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande minimale | `payment_it/cybersource/min_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande maximale | `payment_it/cybersource/max_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_it/cybersource/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_it/worldpay/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_it/worldpay/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Autoriser la modification des coordonnées | `payment_it/worldpay/fix_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Masquer les informations de contact | `payment_it/worldpay/hide_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Champs de signature | `payment_it/worldpay/signature_fields` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_it/worldpay/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement pour le test | `payment_it/worldpay/test_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_it/worldpay/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement Des Pays Applicables | `payment_it/worldpay/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement De Pays Spécifiques | `payment_it/worldpay/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_it/worldpay/cvv_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_it/worldpay/avs_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_it/worldpay/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_it/eway/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Type de connexion | `payment_it/eway/connection_type` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_it/eway/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_it/eway/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_it/eway/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_it/eway/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_it/eway/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_it/eway/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_it/eway/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_it/cybersource/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_it/cybersource/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_it/cybersource/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| New Order Status | `payment_it/cybersource/order_status` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_it/cybersource/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_it/cybersource/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_it/cybersource/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_it/cybersource/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande minimale | `payment_it/cybersource/min_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande maximale | `payment_it/cybersource/max_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_it/cybersource/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_it/worldpay/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_it/worldpay/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Autoriser la modification des coordonnées | `payment_it/worldpay/fix_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Masquer les informations de contact | `payment_it/worldpay/hide_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Champs de signature | `payment_it/worldpay/signature_fields` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_it/worldpay/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement pour le test | `payment_it/worldpay/test_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_it/worldpay/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement Des Pays Applicables | `payment_it/worldpay/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement De Pays Spécifiques | `payment_it/worldpay/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_it/worldpay/cvv_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_it/worldpay/avs_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_it/worldpay/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_it/eway/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Type de connexion | `payment_it/eway/connection_type` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_it/eway/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_it/eway/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_it/eway/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_it/eway/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_it/eway/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_it/eway/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_it/eway/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Récupération planifiée | `payment_fr/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Style des pages marchandes PayPal | `payment_fr/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Récupération planifiée | `payment_fr/paypal_group_all_in_one/payments_pro_hosted_solution_fr/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -701,38 +701,38 @@ Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [pa
 | Total de la commande minimale | `payment_fr/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Total de la commande maximale | `payment_fr/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ordre de tri | `payment_fr/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activé | `payment_fr/cybersource/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_fr/cybersource/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_fr/cybersource/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| New Order Status | `payment_fr/cybersource/order_status` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_fr/cybersource/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_fr/cybersource/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_fr/cybersource/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_fr/cybersource/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande minimale | `payment_fr/cybersource/min_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande maximale | `payment_fr/cybersource/max_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_fr/cybersource/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_fr/worldpay/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_fr/worldpay/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Autoriser la modification des coordonnées | `payment_fr/worldpay/fix_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Masquer les informations de contact | `payment_fr/worldpay/hide_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_fr/worldpay/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement pour le test | `payment_fr/worldpay/test_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_fr/worldpay/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement Des Pays Applicables | `payment_fr/worldpay/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement De Pays Spécifiques | `payment_fr/worldpay/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_fr/worldpay/cvv_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_fr/worldpay/avs_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_fr/worldpay/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_fr/eway/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Type de connexion | `payment_fr/eway/connection_type` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_fr/eway/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_fr/eway/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_fr/eway/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_fr/eway/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_fr/eway/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_fr/eway/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_fr/eway/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_fr/cybersource/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_fr/cybersource/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_fr/cybersource/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| New Order Status | `payment_fr/cybersource/order_status` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_fr/cybersource/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_fr/cybersource/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_fr/cybersource/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_fr/cybersource/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande minimale | `payment_fr/cybersource/min_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande maximale | `payment_fr/cybersource/max_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_fr/cybersource/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_fr/worldpay/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_fr/worldpay/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Autoriser la modification des coordonnées | `payment_fr/worldpay/fix_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Masquer les informations de contact | `payment_fr/worldpay/hide_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_fr/worldpay/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement pour le test | `payment_fr/worldpay/test_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_fr/worldpay/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement Des Pays Applicables | `payment_fr/worldpay/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement De Pays Spécifiques | `payment_fr/worldpay/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_fr/worldpay/cvv_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_fr/worldpay/avs_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_fr/worldpay/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_fr/eway/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Type de connexion | `payment_fr/eway/connection_type` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_fr/eway/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_fr/eway/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_fr/eway/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_fr/eway/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_fr/eway/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_fr/eway/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_fr/eway/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Récupération planifiée | `payment_jp/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Style des pages marchandes PayPal | `payment_jp/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Récupération planifiée | `payment_jp/paypal_group_all_in_one/payments_pro_hosted_solution_jp/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -792,37 +792,37 @@ Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [pa
 | Total de la commande minimale | `payment_jp/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Total de la commande maximale | `payment_jp/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ordre de tri | `payment_jp/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activé | `payment_jp/cybersource/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_jp/cybersource/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_jp/cybersource/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_jp/cybersource/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_jp/cybersource/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_jp/cybersource/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_jp/cybersource/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande minimale | `payment_jp/cybersource/min_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande maximale | `payment_jp/cybersource/max_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_jp/cybersource/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_jp/worldpay/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_jp/worldpay/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Autoriser la modification des coordonnées | `payment_jp/worldpay/fix_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Masquer les informations de contact | `payment_jp/worldpay/hide_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_jp/worldpay/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement pour le test | `payment_jp/worldpay/test_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_jp/worldpay/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement Des Pays Applicables | `payment_jp/worldpay/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement De Pays Spécifiques | `payment_jp/worldpay/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_jp/worldpay/cvv_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_jp/worldpay/avs_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_jp/worldpay/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_jp/eway/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Type de connexion | `payment_jp/eway/connection_type` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_jp/eway/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_jp/eway/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_jp/eway/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_jp/eway/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_jp/eway/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_jp/eway/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_jp/eway/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_jp/cybersource/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_jp/cybersource/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_jp/cybersource/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_jp/cybersource/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_jp/cybersource/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_jp/cybersource/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_jp/cybersource/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande minimale | `payment_jp/cybersource/min_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande maximale | `payment_jp/cybersource/max_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_jp/cybersource/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_jp/worldpay/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_jp/worldpay/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Autoriser la modification des coordonnées | `payment_jp/worldpay/fix_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Masquer les informations de contact | `payment_jp/worldpay/hide_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_jp/worldpay/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement pour le test | `payment_jp/worldpay/test_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_jp/worldpay/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement Des Pays Applicables | `payment_jp/worldpay/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement De Pays Spécifiques | `payment_jp/worldpay/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_jp/worldpay/cvv_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_jp/worldpay/avs_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_jp/worldpay/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_jp/eway/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Type de connexion | `payment_jp/eway/connection_type` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_jp/eway/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_jp/eway/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_jp/eway/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_jp/eway/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_jp/eway/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_jp/eway/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_jp/eway/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Récupération planifiée | `payment_au/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Style des pages marchandes PayPal | `payment_au/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Récupération planifiée | `payment_au/paypal_group_all_in_one/payments_pro_hosted_solution_au/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -887,43 +887,43 @@ Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [pa
 | Total de la commande minimale | `payment_au/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Total de la commande maximale | `payment_au/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ordre de tri | `payment_au/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activé | `payment_au/cybersource/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_au/cybersource/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_au/cybersource/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Identifiant du marchand | `payment_au/cybersource/merchant_id` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) | ![Chiffré](/help/assets/configuration/cloud-enc.png) |
-| Identifiant de profil | `payment_au/cybersource/profile_id` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) | ![Chiffré](/help/assets/configuration/cloud-enc.png) |
-| New Order Status | `payment_au/cybersource/order_status` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_au/cybersource/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_au/cybersource/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_au/cybersource/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_au/cybersource/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande minimale | `payment_au/cybersource/min_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande maximale | `payment_au/cybersource/max_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_au/cybersource/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_au/worldpay/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_au/worldpay/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| ID d’installation | `payment_au/worldpay/installation_id` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Autoriser la modification des coordonnées | `payment_au/worldpay/fix_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Masquer les informations de contact | `payment_au/worldpay/hide_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Champs de signature | `payment_au/worldpay/signature_fields` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_au/worldpay/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Mode test | `payment_au/worldpay/sandbox_flag` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement pour le test | `payment_au/worldpay/test_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_au/worldpay/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement Des Pays Applicables | `payment_au/worldpay/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement De Pays Spécifiques | `payment_au/worldpay/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_au/worldpay/cvv_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_au/worldpay/avs_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_au/worldpay/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_au/eway/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Type de connexion | `payment_au/eway/connection_type` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_au/eway/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_au/eway/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_au/eway/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_au/eway/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_au/eway/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_au/eway/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_au/eway/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_au/cybersource/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_au/cybersource/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_au/cybersource/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Identifiant du marchand | `payment_au/cybersource/merchant_id` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) | ![Encrypted](/help/assets/configuration/cloud-enc.png) |
+| Identifiant de profil | `payment_au/cybersource/profile_id` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) | ![Encrypted](/help/assets/configuration/cloud-enc.png) |
+| New Order Status | `payment_au/cybersource/order_status` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_au/cybersource/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_au/cybersource/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_au/cybersource/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_au/cybersource/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande minimale | `payment_au/cybersource/min_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande maximale | `payment_au/cybersource/max_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_au/cybersource/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_au/worldpay/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_au/worldpay/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| ID d’installation | `payment_au/worldpay/installation_id` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Autoriser la modification des coordonnées | `payment_au/worldpay/fix_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Masquer les informations de contact | `payment_au/worldpay/hide_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Champs de signature | `payment_au/worldpay/signature_fields` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_au/worldpay/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Mode test | `payment_au/worldpay/sandbox_flag` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement pour le test | `payment_au/worldpay/test_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_au/worldpay/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement Des Pays Applicables | `payment_au/worldpay/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement De Pays Spécifiques | `payment_au/worldpay/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_au/worldpay/cvv_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_au/worldpay/avs_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_au/worldpay/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_au/eway/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Type de connexion | `payment_au/eway/connection_type` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_au/eway/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_au/eway/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_au/eway/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_au/eway/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_au/eway/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_au/eway/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_au/eway/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Récupération planifiée | `payment_ca/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Style des pages marchandes PayPal | `payment_ca/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Récupération planifiée | `payment_ca/paypal_group_all_in_one/wps_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -990,38 +990,38 @@ Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [pa
 | Total de la commande minimale | `payment_ca/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Total de la commande maximale | `payment_ca/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ordre de tri | `payment_ca/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activé | `payment_ca/cybersource/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_ca/cybersource/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_ca/cybersource/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_ca/cybersource/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_ca/cybersource/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_ca/cybersource/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_ca/cybersource/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande minimale | `payment_ca/cybersource/min_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande maximale | `payment_ca/cybersource/max_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_ca/cybersource/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_ca/worldpay/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_ca/worldpay/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Autoriser la modification des coordonnées | `payment_ca/worldpay/fix_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Masquer les informations de contact | `payment_ca/worldpay/hide_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Champs de signature | `payment_ca/worldpay/signature_fields` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_ca/worldpay/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement pour le test | `payment_ca/worldpay/test_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_ca/worldpay/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement Des Pays Applicables | `payment_ca/worldpay/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement De Pays Spécifiques | `payment_ca/worldpay/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_ca/worldpay/cvv_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_ca/worldpay/avs_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_ca/worldpay/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_ca/eway/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Type de connexion | `payment_ca/eway/connection_type` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_ca/eway/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_ca/eway/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_ca/eway/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_ca/eway/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_ca/eway/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_ca/eway/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_ca/eway/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_ca/cybersource/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_ca/cybersource/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_ca/cybersource/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_ca/cybersource/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_ca/cybersource/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_ca/cybersource/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_ca/cybersource/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande minimale | `payment_ca/cybersource/min_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande maximale | `payment_ca/cybersource/max_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_ca/cybersource/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_ca/worldpay/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_ca/worldpay/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Autoriser la modification des coordonnées | `payment_ca/worldpay/fix_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Masquer les informations de contact | `payment_ca/worldpay/hide_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Champs de signature | `payment_ca/worldpay/signature_fields` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_ca/worldpay/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement pour le test | `payment_ca/worldpay/test_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_ca/worldpay/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement Des Pays Applicables | `payment_ca/worldpay/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement De Pays Spécifiques | `payment_ca/worldpay/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_ca/worldpay/cvv_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_ca/worldpay/avs_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_ca/worldpay/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_ca/eway/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Type de connexion | `payment_ca/eway/connection_type` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_ca/eway/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_ca/eway/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_ca/eway/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_ca/eway/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_ca/eway/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_ca/eway/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_ca/eway/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Récupération planifiée | `payment_other/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Style des pages marchandes PayPal | `payment_other/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Récupération planifiée | `payment_other/paypal_group_all_in_one/wps_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -1080,38 +1080,38 @@ Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [pa
 | Total de la commande minimale | `payment_other/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Total de la commande maximale | `payment_other/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ordre de tri | `payment_other/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activé | `payment_other/cybersource/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_other/cybersource/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_other/cybersource/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_other/cybersource/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_other/cybersource/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_other/cybersource/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_other/cybersource/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande minimale | `payment_other/cybersource/min_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande maximale | `payment_other/cybersource/max_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_other/cybersource/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_other/worldpay/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_other/worldpay/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Autoriser la modification des coordonnées | `payment_other/worldpay/fix_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Masquer les informations de contact | `payment_other/worldpay/hide_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Champs de signature | `payment_other/worldpay/signature_fields` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_other/worldpay/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement pour le test | `payment_other/worldpay/test_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_other/worldpay/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement Des Pays Applicables | `payment_other/worldpay/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement De Pays Spécifiques | `payment_other/worldpay/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_other/worldpay/cvv_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_other/worldpay/avs_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_other/worldpay/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_other/eway/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Type de connexion | `payment_other/eway/connection_type` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_other/eway/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_other/eway/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_other/eway/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_other/eway/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_other/eway/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_other/eway/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_other/eway/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_other/cybersource/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_other/cybersource/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_other/cybersource/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_other/cybersource/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_other/cybersource/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_other/cybersource/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_other/cybersource/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande minimale | `payment_other/cybersource/min_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande maximale | `payment_other/cybersource/max_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_other/cybersource/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_other/worldpay/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_other/worldpay/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Autoriser la modification des coordonnées | `payment_other/worldpay/fix_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Masquer les informations de contact | `payment_other/worldpay/hide_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Champs de signature | `payment_other/worldpay/signature_fields` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_other/worldpay/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement pour le test | `payment_other/worldpay/test_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_other/worldpay/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement Des Pays Applicables | `payment_other/worldpay/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement De Pays Spécifiques | `payment_other/worldpay/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_other/worldpay/cvv_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_other/worldpay/avs_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_other/worldpay/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_other/eway/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Type de connexion | `payment_other/eway/connection_type` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_other/eway/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_other/eway/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_other/eway/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_other/eway/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_other/eway/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_other/eway/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_other/eway/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Récupération planifiée | `payment_de/paypal_payment_solutions/express_checkout_de/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Style des pages marchandes PayPal | `payment_de/paypal_payment_solutions/express_checkout_de/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Activé | `payment_de/checkmo/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -1155,17 +1155,17 @@ Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [pa
 | Total de la commande minimale | `payment_de/purchaseorder/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Total de la commande maximale | `payment_de/purchaseorder/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ordre de tri | `payment_de/purchaseorder/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activé | `payment_de/cybersource/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_de/cybersource/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_de/cybersource/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| New Order Status | `payment_de/cybersource/order_status` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_de/cybersource/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_de/cybersource/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_de/cybersource/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_de/cybersource/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande minimale | `payment_de/cybersource/min_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande maximale | `payment_de/cybersource/max_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_de/cybersource/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_de/cybersource/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_de/cybersource/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_de/cybersource/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| New Order Status | `payment_de/cybersource/order_status` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_de/cybersource/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_de/cybersource/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_de/cybersource/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_de/cybersource/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande minimale | `payment_de/cybersource/min_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande maximale | `payment_de/cybersource/max_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_de/cybersource/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Activé | `payment_de/authorizenet_directpost/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Action de paiement | `payment_de/authorizenet_directpost/payment_action` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Titre | `payment_de/authorizenet_directpost/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -1179,28 +1179,28 @@ Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [pa
 | Total de la commande minimale | `payment_de/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Total de la commande maximale | `payment_de/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ordre de tri | `payment_de/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activé | `payment_de/worldpay/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_de/worldpay/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Autoriser la modification des coordonnées | `payment_de/worldpay/fix_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Masquer les informations de contact | `payment_de/worldpay/hide_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Champs de signature | `payment_de/worldpay/signature_fields` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Mode test | `payment_de/worldpay/sandbox_flag` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement pour le test | `payment_de/worldpay/test_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_de/worldpay/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement Des Pays Applicables | `payment_de/worldpay/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement De Pays Spécifiques | `payment_de/worldpay/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_de/worldpay/cvv_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_de/worldpay/avs_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_de/worldpay/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_de/eway/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Type de connexion | `payment_de/eway/connection_type` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_de/eway/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_de/eway/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_de/eway/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_de/eway/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_de/eway/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_de/eway/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_de/eway/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_de/worldpay/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_de/worldpay/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Autoriser la modification des coordonnées | `payment_de/worldpay/fix_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Masquer les informations de contact | `payment_de/worldpay/hide_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Champs de signature | `payment_de/worldpay/signature_fields` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Mode test | `payment_de/worldpay/sandbox_flag` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement pour le test | `payment_de/worldpay/test_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_de/worldpay/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement Des Pays Applicables | `payment_de/worldpay/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement De Pays Spécifiques | `payment_de/worldpay/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_de/worldpay/cvv_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_de/worldpay/avs_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_de/worldpay/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_de/eway/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Type de connexion | `payment_de/eway/connection_type` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_de/eway/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_de/eway/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_de/eway/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_de/eway/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_de/eway/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_de/eway/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_de/eway/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Récupération planifiée | `payment_gb/paypal_alternative_payment_methods/express_checkout_gb/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Style des pages marchandes PayPal | `payment_gb/paypal_alternative_payment_methods/express_checkout_gb/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Récupération planifiée | `payment_gb/paypal_group_all_in_one/payments_pro_hosted_solution_with_express_checkout/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -1249,17 +1249,17 @@ Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [pa
 | Total de la commande minimale | `payment_gb/purchaseorder/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Total de la commande maximale | `payment_gb/purchaseorder/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ordre de tri | `payment_gb/purchaseorder/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activé | `payment_gb/cybersource/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_gb/cybersource/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_gb/cybersource/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| New Order Status | `payment_gb/cybersource/order_status` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_gb/cybersource/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_gb/cybersource/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_gb/cybersource/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_gb/cybersource/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande minimale | `payment_gb/cybersource/min_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande maximale | `payment_gb/cybersource/max_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_gb/cybersource/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_gb/cybersource/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_gb/cybersource/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_gb/cybersource/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| New Order Status | `payment_gb/cybersource/order_status` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_gb/cybersource/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_gb/cybersource/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_gb/cybersource/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_gb/cybersource/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande minimale | `payment_gb/cybersource/min_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande maximale | `payment_gb/cybersource/max_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_gb/cybersource/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Activé | `payment_gb/authorizenet_directpost/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Action de paiement | `payment_gb/authorizenet_directpost/payment_action` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Titre | `payment_gb/authorizenet_directpost/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -1273,29 +1273,29 @@ Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [pa
 | Total de la commande minimale | `payment_gb/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Total de la commande maximale | `payment_gb/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ordre de tri | `payment_gb/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activé | `payment_gb/worldpay/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_gb/worldpay/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Secret MD5 pour les transactions | `payment_gb/worldpay/md5_secret` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Autoriser la modification des coordonnées | `payment_gb/worldpay/fix_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Masquer les informations de contact | `payment_gb/worldpay/hide_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Champs de signature | `payment_gb/worldpay/signature_fields` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_gb/worldpay/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement pour le test | `payment_gb/worldpay/test_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_gb/worldpay/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement Des Pays Applicables | `payment_gb/worldpay/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement De Pays Spécifiques | `payment_gb/worldpay/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_gb/worldpay/cvv_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_gb/worldpay/avs_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_gb/worldpay/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_gb/eway/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Type de connexion | `payment_gb/eway/connection_type` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_gb/eway/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_gb/eway/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_gb/eway/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_gb/eway/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_gb/eway/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_gb/eway/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_gb/eway/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_gb/worldpay/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_gb/worldpay/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Secret MD5 pour les transactions | `payment_gb/worldpay/md5_secret` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Autoriser la modification des coordonnées | `payment_gb/worldpay/fix_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Masquer les informations de contact | `payment_gb/worldpay/hide_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Champs de signature | `payment_gb/worldpay/signature_fields` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_gb/worldpay/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement pour le test | `payment_gb/worldpay/test_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_gb/worldpay/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement Des Pays Applicables | `payment_gb/worldpay/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement De Pays Spécifiques | `payment_gb/worldpay/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_gb/worldpay/cvv_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_gb/worldpay/avs_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_gb/worldpay/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_gb/eway/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Type de connexion | `payment_gb/eway/connection_type` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_gb/eway/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_gb/eway/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_gb/eway/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_gb/eway/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_gb/eway/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_gb/eway/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_gb/eway/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Récupération planifiée | `payment_us/paypal_alternative_payment_methods/express_checkout_us/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Style des pages marchandes PayPal | `payment_us/paypal_alternative_payment_methods/express_checkout_us/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Récupération planifiée | `payment_us/paypal_group_all_in_one/payflow_advanced/settings_payments_advanced/settings_payments_advanced_advanced/settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -1368,38 +1368,38 @@ Ces options ne sont disponibles que si vous avez choisi le Royaume-Uni comme [pa
 | Total de la commande minimale | `payment_us/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Total de la commande maximale | `payment_us/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ordre de tri | `payment_us/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activé | `payment_us/cybersource/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_us/cybersource/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_us/cybersource/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| New Order Status | `payment_us/cybersource/order_status` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_us/cybersource/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_us/cybersource/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_us/cybersource/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_us/cybersource/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande minimale | `payment_us/cybersource/min_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Total de la commande maximale | `payment_us/cybersource/max_order_total` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_us/cybersource/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_us/worldpay/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_us/worldpay/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Autoriser la modification des coordonnées | `payment_us/worldpay/fix_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Masquer les informations de contact | `payment_us/worldpay/hide_contact` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Champs de signature | `payment_us/worldpay/signature_fields` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_us/worldpay/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement pour le test | `payment_us/worldpay/test_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_us/worldpay/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement Des Pays Applicables | `payment_us/worldpay/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement De Pays Spécifiques | `payment_us/worldpay/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_us/worldpay/cvv_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_us/worldpay/avs_fraud_case` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre de tri | `payment_us/worldpay/sort_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activé | `payment_us/eway/active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Type de connexion | `payment_us/eway/connection_type` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Titre | `payment_us/eway/title` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Action de paiement | `payment_us/eway/payment_action` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Déboguer | `payment_us/eway/debug` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Types de carte de crédit | `payment_us/eway/cctypes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par les pays applicables | `payment_us/eway/allowspecific` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Paiement par pays spécifique | `payment_us/eway/specificcountry` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_us/cybersource/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_us/cybersource/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_us/cybersource/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| New Order Status | `payment_us/cybersource/order_status` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_us/cybersource/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_us/cybersource/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_us/cybersource/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_us/cybersource/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande minimale | `payment_us/cybersource/min_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Total de la commande maximale | `payment_us/cybersource/max_order_total` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_us/cybersource/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_us/worldpay/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_us/worldpay/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Autoriser la modification des coordonnées | `payment_us/worldpay/fix_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Masquer les informations de contact | `payment_us/worldpay/hide_contact` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Champs de signature | `payment_us/worldpay/signature_fields` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_us/worldpay/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement pour le test | `payment_us/worldpay/test_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_us/worldpay/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement Des Pays Applicables | `payment_us/worldpay/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement De Pays Spécifiques | `payment_us/worldpay/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour CVV | `payment_us/worldpay/cvv_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Définir l’état de la commande sur Fraude suspectée pour le code Postcode AVS | `payment_us/worldpay/avs_fraud_case` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre de tri | `payment_us/worldpay/sort_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activé | `payment_us/eway/active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Type de connexion | `payment_us/eway/connection_type` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Titre | `payment_us/eway/title` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Action de paiement | `payment_us/eway/payment_action` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Déboguer | `payment_us/eway/debug` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Types de carte de crédit | `payment_us/eway/cctypes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par les pays applicables | `payment_us/eway/allowspecific` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Paiement par pays spécifique | `payment_us/eway/specificcountry` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Ordre de tri | `payment_us/eway/sort_order` | |
 
 {style="table-layout:auto"}

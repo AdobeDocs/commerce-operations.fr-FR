@@ -23,7 +23,7 @@ Le public cible de ce manuel de lecture comprend :
 
 - Responsable marketing
 - Responsable du numérique, responsable de la stratégie, responsable du marketing
-- Responsable du contenu, responsable de l’expérience utilisateur, responsable de la production de contenu, stratège de contenu, producteurs de contenu, concepteur d’expérience utilisateur
+- Responsable du contenu, responsable de l’expérience utilisateur, responsable de la production de contenu, stratège de contenu, producteurs de contenu, UX Designer
 - Architecte de solution, responsable de la mise en oeuvre, développeur principal
 - Responsable de programme, chef de projet
 - eCommerce Manager, Business Analytics
@@ -32,17 +32,17 @@ Le public cible de ce manuel de lecture comprend :
 
 Ce document suit une structure conçue pour vous aider à comprendre les principaux domaines d’intérêt afin de tirer le meilleur parti de votre investissement dans Adobe Commerce. Cette structure est basée sur Deloitte et Adobe Commerce Governance Framework, qui crée l’environnement commercial approprié pour que les opérations et transformations numériques réussissent. Il comprend :
 
-- **Leadership**: ralliement de la direction et prise en charge d’une gestion réussie d’une plateforme de commerce électronique.
+- **Leadership** : appui et soutien des dirigeants pour une gestion réussie d’une plateforme de commerce électronique.
 
-- **Stratégie**: clarté et alignement autour des principaux objectifs commerciaux pour l’évaluation des performances numériques et des opérations de commerce électronique.
+- **Stratégie** : clarté et alignement autour des principaux objectifs commerciaux pour l’évaluation des performances numériques et des opérations de commerce électronique.
 
-- **Solution**: évaluation de l’hébergement et de l’infrastructure pour divers besoins commerciaux et de commerce électronique.
+- **Solution** : évaluation de l’hébergement et de l’infrastructure pour divers besoins commerciaux et de commerce électronique.
 
-- **Personnes**: ressources, expertise et structure d’équipe appropriée pour exécuter efficacement les opérations de commerce électronique.
+- **Personnes** : ressources, expertise et structure d’équipe appropriée pour exécuter efficacement les opérations de commerce électronique.
 
-- **Processus**: procédures, gestion de projet et processus pour gérer efficacement un site de commerce électronique.
+- **Processus** : procédures, gestion de projet et workflows pour gérer efficacement un site de commerce électronique.
 
-- **Produit**: solutions d’e-commerce générales, intégrations courantes et automatisations.
+- **Product** : solutions de commerce électronique générales, intégrations courantes et automatisations.
 
 >[!NOTE]
 >

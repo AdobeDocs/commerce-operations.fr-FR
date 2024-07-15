@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Outil de ligne de commande
 
-Commerce possède une interface de ligne de commande —`<magento_root>/bin/magento`: exécute les tâches d’installation et de configuration, notamment :
+Commerce dispose d’une interface de ligne de commande (`<magento_root>/bin/magento`) qui exécute les tâches d’installation et de configuration, notamment :
 
 - L’installation de Commerce (et les tâches associées, telles que la mise à jour du schéma de base de données, créer une configuration de déploiement)
 - Effacement du cache
@@ -28,15 +28,15 @@ Autres avantages :
 - L’interface en ligne de commande est extensible, de sorte que les développeurs tiers puissent y &quot;se connecter&quot;. Cela permet également d’éliminer la courbe d’apprentissage des utilisateurs.
 - Les commandes des modules désactivés ne s’affichent pas.
 
-Cette rubrique aborde la configuration du logiciel Adobe Commerce à l’aide de l’interface en ligne de commande. Pour plus d’informations sur l’installation de Commerce, voir [Flux d’installation](../../installation/overview.md) dans le _Guide d’installation_.
+Cette rubrique aborde la configuration du logiciel Adobe Commerce à l’aide de l’interface en ligne de commande. Pour plus d&#39;informations sur l&#39;installation de Commerce, voir [Flux d&#39;installation](../../installation/overview.md) dans le _Guide d&#39;installation_.
 
 ## Conditions préalables
 
 Avant de commencer à utiliser l’interface en ligne de commande, assurez-vous que :
 
-1. Votre système répond aux exigences décrites dans la section [Configuration requise](../../installation/system-requirements.md) dans le _Guide d’installation_.
-1. Vous avez effectué toutes les tâches prérequises décrites dans la section [Conditions préalables](../../installation/prerequisites/overview.md) dans le _Guide d’installation_.
-1. Une fois que vous êtes connecté au serveur Commerce, basculez vers un utilisateur autorisé à écrire sur le système de fichiers Commerce. Voir [passer au propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md) dans le _Guide d’installation_.
+1. Votre système répond aux exigences décrites dans la [Configuration requise](../../installation/system-requirements.md) du _Guide d&#39;installation_.
+1. Vous avez effectué toutes les tâches préalables requises décrites dans la section [Conditions préalables requises](../../installation/prerequisites/overview.md) du _Guide d&#39;installation_.
+1. Une fois que vous êtes connecté au serveur Commerce, basculez vers un utilisateur autorisé à écrire sur le système de fichiers Commerce. Voir [basculement vers le propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md) dans le _Guide d&#39;installation_.
 
 ## Exécution des commandes
 
@@ -52,9 +52,9 @@ Si le propriétaire du système de fichiers n’autorise pas les connexions, vou
 sudo -u <file system owner> <command>
 ```
 
-**Pour exécuter des commandes d’interface de ligne de commande depuis n’importe quel répertoire**:
+**Pour exécuter des commandes d’interface de ligne de commande à partir de n’importe quel répertoire** :
 
-Ajouter `<magento_root>/bin` sur votre système `PATH`.
+Ajoutez `<magento_root>/bin` à votre système `PATH`.
 
 Exemple de shell bash pour CentOS :
 

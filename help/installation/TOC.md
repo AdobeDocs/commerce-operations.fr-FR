@@ -15,7 +15,7 @@ ht-degree: 2%
 - [Vue d’ensemble](overview.md)
 - [Configuration requise](system-requirements.md)
 - Conditions préalables {#prerequisites}
-   - [Présentation](prerequisites/overview.md)
+   - [Aperçu](prerequisites/overview.md)
    - Système de fichiers {#file-system}
       - [Vue d’ensemble](prerequisites/file-system/overview.md)
       - [Configuration des autorisations](prerequisites/file-system/configure-permissions.md)
@@ -38,7 +38,7 @@ ht-degree: 2%
    - [Logiciels facultatifs](prerequisites/optional-software.md)
 - [Installation de démarrage rapide](composer.md)
 - [Installation avancée](advanced.md)
-- Etapes de post-installation {#next-steps}
+- Étapes d’installation de Post {#next-steps}
    - [Vérification de l’installation](next-steps/verify.md)
    - [Configuration de l’application](next-steps/configuration.md)
    - [Définir un masque (facultatif)](next-steps/set-umask.md)
@@ -67,4 +67,4 @@ ht-degree: 2%
    - [Désinstallation ou réinstallation de Commerce](tutorials/uninstall.md)
    - [Désinstaller les thèmes](tutorials/themes.md)
    - [Mise à niveau du schéma de base de données](tutorials/database-upgrade.md)
-- [Revenir aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

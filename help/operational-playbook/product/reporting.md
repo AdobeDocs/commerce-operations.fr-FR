@@ -4,7 +4,7 @@ description: Surveillez les indicateurs de performance clés, effectuez le suivi
 exl-id: 7b57c11b-ff32-440f-85bd-6b6d09c522b7
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 L’e-commerce convient parfaitement aux rapports et aux tableaux de bord. Dans le commerce électronique, tout est en ligne, ce qui permet aux détaillants d’exploiter la puissance de différents outils pour collecter des données et les analyser afin d’améliorer leurs processus d’entreprise, leurs équipes, leurs offres de produits, etc.
 
-![Exemple de tableau de bord des rapports](../../assets/playbooks/dashboard-example.png)
+![Exemple de tableau de bord de création de rapports](../../assets/playbooks/dashboard-example.png)
 
 Chaque entreprise a des exigences de création de rapports différentes. Si vous souhaitez, par exemple, effectuer le suivi d’une promotion spécifique, vous pouvez créer un tableau de bord spécifique pour afficher la progression de la promotion, par exemple le nombre de personnes qui ont utilisé la promotion, les produits qui ont le mieux vendu, etc. Vous pouvez également utiliser un tableau de bord pour effectuer le suivi des activités quotidiennes sur le site, du trafic, du taux de conversion, du produit à succès, du produit le plus vendu et des retours.
 
@@ -37,13 +37,13 @@ Il y a tellement de choses qui se passent dans le commerce électronique qu&#39;
 
 Les quatre premiers rapports et tableaux de bord utilisés par les entreprises B2B sont les suivants :
 
-- **Profil d’entreprise**—Les entreprises B2B doivent suivre les profils de leurs sociétés clientes pour comprendre leur historique d’achats, les détails de paiement et le canal qu’elles ont utilisé pour acheter. Ce tableau de bord peut vous aider à identifier les risques et problèmes potentiels.
+- **Profil de l’entreprise** : les entreprises B2B doivent suivre les profils de leurs clients pour comprendre leur historique d’achat, les détails de paiement et le canal qu’elles ont utilisé pour acheter. Ce tableau de bord peut vous aider à identifier les risques et problèmes potentiels.
 
-- **Catalogue**: un rapport de catalogue et un tableau de bord aident les entreprises B2B à visualiser les performances de chaque produit dans le catalogue, les promotions et les niveaux d’inventaire, ce qui permet d’identifier le type de promotion qui fonctionne le mieux et les produits qui sont demandés. Cela aide les entreprises à accumuler des stocks et à obtenir un avantage concurrentiel.
+- **Catalogue** : un tableau de bord et un rapport de catalogue aident les entreprises B2B à visualiser les performances de chaque produit dans le catalogue, les promotions et les niveaux d’inventaire, ce qui permet d’identifier le type de promotion qui fonctionne le mieux et les produits qui sont demandés. Cela aide les entreprises à accumuler des stocks et à obtenir un avantage concurrentiel.
 
-- **Guillemets**— Le modèle commercial B2B fonctionne sur les prix et les prix. Les entreprises B2B doivent passer par un processus où elles analysent un devis afin de pouvoir l&#39;approuver ou essayer de négocier. Un rapport de devis et un tableau de bord permettent d’améliorer le taux de conversion des devis en suivant le taux de succès, les taux de concurrence, les performances et la fidélisation client globale.
+- **Guillemets** : le modèle d’entreprise B2B fonctionne sur les prix et les prix. Les entreprises B2B doivent passer par un processus où elles analysent un devis afin de pouvoir l&#39;approuver ou essayer de négocier. Un rapport de devis et un tableau de bord permettent d’améliorer le taux de conversion des devis en suivant le taux de succès, les taux de concurrence, les performances et la fidélisation client globale.
 
-- **Ventes**— Même si les entreprises B2B peuvent fonctionner en ligne, un représentant commercial est toujours nécessaire pour faire avancer les choses en termes d’identification des citations à négocier, de suivi des citations qui se rapprochent de l’expiration, de suivi des contrats en cours de renouvellement, de suivi des performances de l’équipe et de rationalisation des activités commerciales quotidiennes.
+- **Ventes** : même si les entreprises B2B peuvent fonctionner en ligne, un représentant commercial est toujours nécessaire pour faire avancer les choses en termes d’identification des devis qui doivent être négociés, de suivi des devis qui arrivent à expiration, de suivi des contrats en cours de renouvellement, de suivi des performances de l’équipe et de rationalisation des activités commerciales quotidiennes.
 
 ## Mieux vaut travailler ensemble
 

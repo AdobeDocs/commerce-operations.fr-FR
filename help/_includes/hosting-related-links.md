@@ -12,7 +12,7 @@ ht-degree: 3%
 
 ## Ressources d’auto-hébergement
 
-* [Présentation](/help/implementation-playbook/infrastructure/self-hosting/overview.md)
+* [Vue d’ensemble](/help/implementation-playbook/infrastructure/self-hosting/overview.md)
 * [Infrastructure sur site](/help/implementation-playbook/infrastructure/self-hosting/on-premises.md)
 * [Concepts de sécurité](/help/implementation-playbook/infrastructure/self-hosting/security-concepts.md)
 * [Surveillance de la télémétrie et des outils](/help/implementation-playbook/infrastructure/self-hosting/monitoring-tools.md)

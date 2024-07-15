@@ -19,8 +19,8 @@ Il peut s’agir d’une approche réussie. Toutefois, une recommandation qui at
 
 ## Exemple de chronologie standard
 
-![Exemple de chronologie d’implémentation commerciale standard](../../assets/playbooks/timeline-example.svg)
+![Exemple de chronologie d’implémentation de commerce standard](../../assets/playbooks/timeline-example.svg)
 
 ## Exemples d’activités de chronologie
 
-![Exemples d’activités de calendrier de mise en oeuvre de commerce](../../assets/playbooks/timeline-activities-example.svg)
+![Exemple d’activités de chronologie de mise en oeuvre de commerce](../../assets/playbooks/timeline-activities-example.svg)

@@ -6,7 +6,7 @@ feature: Best Practices, Configuration
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 Cette section fournit les meilleures recommandations pour accélérer et simplifier votre migration, ainsi que des conseils sur le temps nécessaire.
 
-* **Utiliser une copie de la base de données à partir d’une instance Magento 1** lors des tests de migration. N’utilisez pas l’instance de production de votre base de données de magasin Magento 1.
+* **Utilisez une copie de la base de données d’une instance de Magento 1** lors du test de migration. N’utilisez pas l’instance de production de votre base de données de magasin Magento 1.
 
-* **Supprimer les données obsolètes et redondantes** de la base de données Magento 1 avant la migration.
+* **Supprimez les données obsolètes et redondantes** de la base de données Magento 1 avant la migration.
 
 Ces données peuvent inclure des logs, des devis de commande, des produits récemment consultés ou comparés, des visiteurs, des catégories spécifiques à un événement et des règles promotionnelles.
 
-* **Suivez la [règles générales pour une migration réussie](migrate-data/overview.md#migration-overview)**.
+* **Suivez les [règles générales pour une migration réussie](migrate-data/overview.md#migration-overview)**.
 
-* Pour améliorer les performances, **activez la variable `direct_document_copy` option** dans votre `config.xml` fichier :
+* Pour améliorer les performances, **activez l’option `direct_document_copy`** dans votre fichier `config.xml` :
 
   ```xml
   <direct_document_copy>1</direct_document_copy>

@@ -1,6 +1,6 @@
 ---
 title: Optimisation des fichiers de ressources CSS et JS
-description: Découvrez comment fusionner et minifier des fichiers CSS et JavaScript (JS) pour les projets Adobe Commerce depuis l’administrateur ou la ligne de commande.
+description: Découvrez comment fusionner et réduire des fichiers CSS et JavaScript (JS) pour les projets Adobe Commerce à partir de l’administrateur ou de la ligne de commande.
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 Pour un site Commerce plus réactif, optimisez les fichiers de ressources CSS et JavaScript (JS) et supprimez les ressources de blocage du rendu.
 
-- **Optimisation des fichiers CSS et JS**: réduisez le temps nécessaire au chargement des fichiers CSS et JavaScript (JS) en configurant Adobe Commerce pour fusionner, minifier et regrouper des fichiers distincts dans un seul fichier.
-- **Élimination des ressources bloquant le rendu**: envisagez de fournir des fonctionnalités JS et CSS critiques en ligne et de différer tous les styles JS/CSS non critiques. Pour plus d’informations, voir [Élimination des ressources bloquant le rendu](https://web.dev/render-blocking-resources/).
+- **Optimiser les fichiers CSS et JS** : réduisez le temps nécessaire au chargement des fichiers CSS et JavaScript (JS) en configurant Adobe Commerce pour fusionner, minifier et regrouper des fichiers séparés dans un seul fichier.
+- **Éliminer les ressources de blocage de rendu** : envisagez de fournir des fonctionnalités JS et CSS critiques en ligne et de différer tous les styles JS/CSS non critiques. Pour plus d’informations, voir [Eliminer les ressources de blocage de rendu](https://web.dev/render-blocking-resources/).
 
 ## Produits et versions concernés
 
-[Toutes les versions prises en charge, 2.3 et ultérieures](../../../release/versions.md) de :
+[Toutes les versions prises en charge, 2.3 et versions ultérieures](../../../release/versions.md) de :
 
 - Adobe Commerce sur l’infrastructure cloud
 - Adobe Commerce sur site
@@ -37,7 +37,7 @@ Ne fusionnez ou ne regroupez pas de fichiers si votre déploiement utilise HTTP/
 
 ### Utilisation de l’administrateur
 
-Pour activer la fusion ou la minification CSS, accédez à la section [!UICONTROL **Administration** > **Magasins** > **Paramètre** > **Configuration** > **Avancé** > **Développeur** > **Paramètres CSS**].
+Pour activer la fusion ou la minification CSS, accédez à [!UICONTROL **Admin** > **Magasins** > **Paramètre** > **Configuration** > **Avancé** > **Développeur** > **Paramètres CSS**].
 
 ### Utilisation de la ligne de commande
 
@@ -49,7 +49,7 @@ Pour activer la fusion CSS dans Adobe Commerce sur l’infrastructure cloud :
    bin/magento config:set --lock-config dev/css/merge_css_files 1
    ```
 
-1. Validez les modifications apportées à la variable `app/etc/config.php` et redéployez.
+1. Validez les modifications apportées au fichier `app/etc/config.php` et redéployez-les.
 
 Pour activer la minimisation CSS dans Adobe Commerce sur l’infrastructure cloud :
 
@@ -59,13 +59,13 @@ Pour activer la minimisation CSS dans Adobe Commerce sur l’infrastructure clou
    bin/magento config:set --lock-config dev/css/minify_files 1
    ```
 
-1. Validez les modifications apportées à la variable `app/etc/config.php` et redéployez.
+1. Validez les modifications apportées au fichier `app/etc/config.php` et redéployez-les.
 
 ## Minimisation des fichiers JS
 
 ### Utilisation de l’administrateur
 
-Sur le *Administration* barre latérale, accédez à **Magasins** > **Paramètres** > **Configuration** > **Avancé** > **Développeur** > **Paramètres JavaScript**.
+Sur la barre latérale *Admin*, accédez à **Magasins** > **Paramètres** > **Configuration** > **Avancé** > **Développeur** > **Paramètres JavaScript**.
 
 ### Utilisation de la ligne de commande
 
@@ -77,11 +77,11 @@ Pour activer la minification JS dans Adobe Commerce sur l’infrastructure cloud
    bin/magento config:set --lock-config dev/js/minify_files 1
    ```
 
-1. Validez les modifications apportées à la variable `app/etc/config.php` et redéployez.
+1. Validez les modifications apportées au fichier `app/etc/config.php` et redéployez-les.
 
 ## Fusion et regroupement de fichiers JS
 
-Vous pouvez activer la fusion ou le regroupement dans l’administrateur Commerce (la fusion et le regroupement ne peuvent pas être activés en même temps) : [!UICONTROL **Magasins** > **Paramètres** > **Configuration** > **Avancé** > **Développeur** > **Paramètres JavaScript**].
+Vous pouvez activer la fusion ou le regroupement dans l’administration Commerce (la fusion et le regroupement ne peuvent pas être activés en même temps) : [!UICONTROL **Magasins** > **Paramètres** > **Configuration** > **Avancé** > **Développeur** > **Paramètres JavaScript**].
 
 Vous pouvez également activer le regroupement intégré Adobe Commerce (regroupement de base) à partir de la ligne de commande :
 
@@ -93,5 +93,5 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 
 - [Paramètres d’optimisation côté client](../../../performance/configuration.md#client-side-optimization-settings)
 - [Guide de l’utilisateur : optimisation des fichiers de ressources](https://docs.magento.com/user-guide/system/file-optimization.html)
-- [Guide du développeur Frontend : fusion, minimisation et performances du site CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- [Guide du développeur front-end : fusion, minification CSS et performances du site](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Lots JavaScript avancés](../../../performance/advanced-js-bundling.md)

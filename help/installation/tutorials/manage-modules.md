@@ -29,7 +29,7 @@ Où
 
 >[!NOTE]
 >
->Vous ne pouvez pas activer ni désactiver les modules directement sur les projets cloud. Vous devez exécuter ces commandes localement, puis transmettre les modifications au `app/etc/config.php` pour un environnement. Voir [Workflow du projet Pro : workflow de déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
+>Vous ne pouvez pas activer ni désactiver les modules directement sur les projets cloud. Vous devez exécuter ces commandes localement, puis envoyer les modifications au fichier `app/etc/config.php` pour un environnement. Voir [Workflow de projet Pro : Workflow de déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
 
 ## Activation et désactivation des modules
 
@@ -47,20 +47,20 @@ Où
 
 * `<module-list>` est une liste de modules délimitée par des espaces à activer ou désactiver. Si un nom de module contient des caractères spéciaux, placez le nom entre guillemets simples ou doubles.
 * `--all` pour activer ou désactiver tous les modules simultanément.
-* `-f` ou `--force` pour forcer l’activation ou la désactivation d’un module malgré les dépendances. Avant d’utiliser cette option, voir [A propos de l&#39;activation et de la désactivation des modules](#about-enabling-and-disabling-modules).
-* `-c` ou `--clear-static-content` cleans [fichiers d’affichage statique générés](../../configuration/cli/static-view-file-deployment.md).
+* `-f` ou `--force` pour forcer l’activation ou la désactivation d’un module malgré les dépendances. Avant d&#39;utiliser cette option, voir [A propos de l&#39;activation et de la désactivation des modules](#about-enabling-and-disabling-modules).
+* `-c` ou `--clear-static-content` nettoie [fichiers de vue statique générés](../../configuration/cli/static-view-file-deployment.md).
 
   Si vous n’effacez pas les fichiers d’affichage statique, des problèmes peuvent se produire s’il existe plusieurs fichiers portant le même nom et que vous ne les effacez pas tous.
 
-  En d’autres termes, à cause de la variable [secours de fichier statique](../../configuration/cli/static-view-file-deployment.md) règles, si vous n’effacez pas les fichiers statiques et qu’il existe plusieurs fichiers nommés `logo.svg` qui sont différents, la solution de secours peut entraîner l’affichage d’un fichier incorrect.
+  En d’autres termes, en raison des règles de [secours de fichier statique](../../configuration/cli/static-view-file-deployment.md), si vous n’effacez pas les fichiers statiques et qu’il y a plusieurs fichiers nommés `logo.svg` différents, le secours peut entraîner l’affichage d’un fichier incorrect.
 
-Par exemple, pour désactiver la variable `Magento_Weee` module, saisissez :
+Par exemple, pour désactiver le module `Magento_Weee`, saisissez :
 
 ```bash
 bin/magento module:disable Magento_Weee
 ```
 
-Pour obtenir des informations importantes sur l’activation et la désactivation des modules, voir [A propos de l&#39;activation et de la désactivation des modules](#about-enabling-and-disabling-modules).
+Pour obtenir des informations importantes sur l&#39;activation et la désactivation des modules, voir [À propos de l&#39;activation et de la désactivation des modules](#about-enabling-and-disabling-modules).
 
 ## Mise à jour de la base de données
 
@@ -82,7 +82,7 @@ Adobe Commerce vous permet d’activer ou de désactiver les modules actuellemen
 
 Certains modules ont des dépendances sur d’autres modules, auquel cas vous ne pourrez pas activer ou désactiver un module car il a des dépendances sur d’autres modules.
 
-En outre, il peut y avoir *conflit* modules qui ne peuvent pas être activés en même temps.
+En outre, il peut y avoir des modules *en conflit* qui ne peuvent pas être activés en même temps.
 
 Exemples :
 
@@ -90,20 +90,20 @@ Exemples :
 
 * Le module A dépend du module B, qui sont tous deux désactivés. Vous devez activer le module B avant de pouvoir activer le module A.
 
-* Le module A est en conflit avec le module B. Vous pouvez désactiver le module A et le module B ou l’un ou l’autre de ces modules, mais vous pouvez *cannot* Activez simultanément les modules A et B.
+* Le module A est en conflit avec le module B. Vous pouvez désactiver le module A et le module B, ou l’un de ces modules, mais vous *ne pouvez pas* activer le module A et le module B en même temps.
 
-* Les dépendances sont déclarées dans la variable `require` dans Adobe Commerce `composer.json` pour chaque module. Les conflits sont déclarés dans le `conflict` champ dans les modules&#39; `composer.json` fichiers . Nous utilisons ces informations pour créer un graphique de dépendances : `A->B` signifie que le module A dépend du module B.
+* Les dépendances sont déclarées dans le champ `require` du fichier Adobe Commerce `composer.json` pour chaque module. Les conflits sont déclarés dans le champ `conflict` des fichiers `composer.json` des modules. Nous utilisons ces informations pour créer un graphique de dépendance : `A->B` signifie que le module A dépend du module B.
 
-* A *chaîne de dépendance* est le chemin d’accès d’un module à un autre. Par exemple, si le module A dépend du module B et que le module B dépend du module C, la chaîne de dépendance est `A->B->C`.
+* Une *chaîne de dépendance* est le chemin d’accès d’un module à un autre. Par exemple, si le module A dépend du module B et que le module B dépend du module C, la chaîne de dépendance est `A->B->C`.
 
 Si vous tentez d’activer ou de désactiver un module qui dépend d’autres modules, le graphique de dépendance s’affiche dans le message d’erreur.
 
 >[!NOTE]
 >
->Il est possible que le module A soit `composer.json` déclare un conflit avec le module B, mais pas à l’inverse.
+>Il est possible que le module A `composer.json` déclare un conflit avec le module B, mais pas inversement.
 
-*Ligne de commande uniquement :* Pour forcer l’activation ou la désactivation d’un module, quelles que soient ses dépendances, utilisez l’option `--force` argument .
+*Ligne de commande uniquement :* Pour forcer l’activation ou la désactivation d’un module, quelles que soient ses dépendances, utilisez l’argument facultatif `--force`.
 
 >[!NOTE]
 >
->Utilisation `--force` peut désactiver votre boutique et entraîner des problèmes d’accès à l’administrateur.
+>L’utilisation de `--force` peut désactiver votre magasin et entraîner des problèmes d’accès à l’administrateur.

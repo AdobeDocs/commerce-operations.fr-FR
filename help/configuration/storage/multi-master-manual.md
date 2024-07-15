@@ -5,7 +5,7 @@ recommendations: noCatalog
 exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1373'
 ht-degree: 0%
 
 ---
@@ -29,16 +29,16 @@ Le fractionnement manuel de bases de données implique :
 
 >[!WARNING]
 >
->Si un code personnalisé utilise des JOIN avec des tableaux dans les bases de données de ventes et de devis, vous _cannot_ utiliser des bases de données partagées. En cas de doute, contactez les auteurs d’un code personnalisé ou d’extensions pour vous assurer que leur code n’utilise pas de JOIN.
+>Si un code personnalisé utilise des JOIN avec des tables dans les bases de données de ventes et de devis, vous _ne pouvez pas_ utiliser des bases de données partagées. En cas de doute, contactez les auteurs d’un code personnalisé ou d’extensions pour vous assurer que leur code n’utilise pas de JOIN.
 
 Cette rubrique utilise les conventions de dénomination suivantes :
 
-- Le nom de la base principale est `magento` et son nom d’utilisateur et son mot de passe sont tous deux `magento`
-- Le nom de la base de données de devis est `magento_quote` et son nom d’utilisateur et son mot de passe sont tous deux `magento_quote`
+- Le nom principal de la base de données est `magento` et son nom d&#39;utilisateur et son mot de passe sont `magento`.
+- Le nom de la base de données de guillemets est `magento_quote` et son nom d’utilisateur et son mot de passe sont `magento_quote`.
 
-  La base de données des guillemets est également appelée _passage en caisse_ base de données.
+  La base de données des guillemets est également appelée base de données _checkout_.
 
-- Le nom de la base de données de ventes est `magento_sales` et son nom d’utilisateur et son mot de passe sont tous deux `magento_sales`
+- Le nom de la base de données des ventes est `magento_sales` et son nom d’utilisateur et son mot de passe sont `magento_sales`.
 
   La base de données des ventes est également appelée base de données OMS.
 
@@ -50,9 +50,9 @@ Cette rubrique utilise les conventions de dénomination suivantes :
 
 Adobe vous recommande vivement de sauvegarder votre base de données et votre système de fichiers actuels afin que vous puissiez le restaurer si vous rencontrez des problèmes au cours du processus.
 
-**Sauvegarde du système**:
+**Pour sauvegarder votre système** :
 
-1. Connectez-vous à votre serveur Commerce en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
+1. Connectez-vous à votre serveur Commerce en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md) ou passez à cet emplacement.
 1. Saisissez les commandes suivantes :
 
    ```bash
@@ -65,7 +65,7 @@ Adobe vous recommande vivement de sauvegarder votre base de données et votre sy
 
 Cette section explique comment créer des instances de base de données pour les tableaux de ventes et de devis.
 
-**Pour créer des bases de données de devis OMS et de ventes**:
+**Pour créer des bases de données de devis OMS et de ventes** :
 
 1. Connectez-vous à votre serveur de base de données comme n’importe quel utilisateur.
 1. Saisissez la commande suivante pour accéder à une invite de commande MySQL :
@@ -74,7 +74,7 @@ Cette section explique comment créer des instances de base de données pour les
    mysql -u root -p
    ```
 
-1. Saisissez le MySQL. `root` mot de passe de l’utilisateur lorsqu’il y est invité.
+1. Saisissez le mot de passe de l’utilisateur MySQL `root` lorsque vous y êtes invité.
 1. Saisissez les commandes suivantes dans l’ordre indiqué pour créer des instances de base de données nommées `magento_quote` et `magento_sales` avec les mêmes noms d’utilisateur et mots de passe :
 
    ```shell
@@ -87,7 +87,7 @@ Cette section explique comment créer des instances de base de données pour les
    GRANT ALL ON magento_sales.* TO magento_sales@localhost IDENTIFIED BY 'magento_sales';
    ```
 
-1. Entrée `exit` pour quitter l’invite de commande.
+1. Saisissez `exit` pour quitter l’invite de commande.
 
 1. Vérifiez les bases de données, une par une :
 
@@ -126,11 +126,11 @@ Les noms des tables de la base de données des ventes commencent par :
 - `salesrule_`
 - `sales_`
 - `magento_sales_`
-- La variable `magento_customercustomattributes_sales_flat_order` est également affecté.
+- La table `magento_customercustomattributes_sales_flat_order` est également affectée.
 
 >[!INFO]
 >
->Cette section contient des scripts avec des noms de table de base de données spécifiques. Si vous avez exécuté des personnalisations ou si vous souhaitez obtenir la liste complète des tableaux avant d’effectuer des actions, reportez-vous à la section [Scripts de référence](#reference-scripts).
+>Cette section contient des scripts avec des noms de table de base de données spécifiques. Si vous avez exécuté des personnalisations ou si vous souhaitez afficher la liste complète des tables avant d’effectuer des actions sur celles-ci, reportez-vous à la section [Scripts de référence](#reference-scripts).
 
 Pour plus d’informations, voir :
 
@@ -139,13 +139,13 @@ Pour plus d’informations, voir :
 
 ### Création de scripts SQL de base de données de ventes
 
-Créez les scripts SQL suivants à un emplacement accessible par l’utilisateur à qui vous pouvez vous connecter à votre serveur Commerce. Par exemple, si vous vous connectez ou exécutez des commandes comme `root`, vous pouvez créer les scripts dans le `/root/sql-scripts` répertoire .
+Créez les scripts SQL suivants à un emplacement accessible par l’utilisateur à qui vous pouvez vous connecter à votre serveur Commerce. Par exemple, si vous vous connectez ou exécutez des commandes en tant que `root`, vous pouvez créer les scripts dans le répertoire `/root/sql-scripts`.
 
 #### Suppression de clés étrangères
 
 Ce script supprime de la base de données des ventes les clés étrangères qui font référence à des tables non commerciales.
 
-Créez le script suivant et attribuez-lui un nom comme `1_foreign-sales.sql`. Remplacer `<your main DB name>` par le nom de votre base de données.
+Créez le script suivant et donnez-lui un nom du type `1_foreign-sales.sql`. Remplacez `<your main DB name>` par le nom de votre base de données.
 
 ```sql
 use <your main DB name>;
@@ -200,13 +200,13 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
 
 Exécutez le script précédent :
 
-1. Connectez-vous à votre base de données MySQL en tant que `root` ou administrateur :
+1. Connectez-vous à votre base de données MySQL en tant qu’utilisateur `root` ou administrateur :
 
    ```bash
    mysql -u root -p
    ```
 
-1. À l’emplacement `mysql>` exécutez le script comme suit :
+1. À l’invite `mysql>`, exécutez le script comme suit :
 
    ```shell
    source <path>/<script>.sql
@@ -224,9 +224,9 @@ Exécutez le script précédent :
 
 Cette section explique comment sauvegarder les tables de ventes de la base de données Commerce principale afin que vous puissiez les restaurer dans la base de données de ventes distincte.
 
-Si vous utilisez actuellement la variable `mysql>` invite, entrée `exit` pour revenir au shell de commande.
+Si vous êtes actuellement à l’invite `mysql>`, saisissez `exit` pour revenir au shell de commande.
 
-Exécutez la commande suivante : `mysqldump` commandes, une par une, du shell de commande. Dans chacun d’eux, remplacez les éléments suivants :
+Exécutez les commandes `mysqldump` suivantes, une à la fois, à partir du shell de commande. Dans chacun d’eux, remplacez les éléments suivants :
 
 - `<your database root username>` avec le nom de l’utilisateur racine de base de données
 - `<your database root user password>` avec le mot de passe de l’utilisateur
@@ -263,7 +263,7 @@ Ce script restaure les données de vente dans votre base de données de devis.
 
 #### Exigences NDB
 
-Si vous utilisez une [Base de données réseau (NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) grappe :
+Si vous utilisez une grappe [Network Database (NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) :
 
 1. Convertir des tableaux de type InnoDb en NDB dans des fichiers de vidage :
 
@@ -297,11 +297,11 @@ Où
 
 - `<your sales DB name>` avec le nom de votre base de données de ventes.
 
-  Dans cette rubrique, le nom de l’exemple de base de données est `magento_sales`.
+  Dans cette rubrique, l’exemple de nom de base de données est `magento_sales`.
 
 - `<root username>` avec votre nom d’utilisateur racine MySQL
 - `<root user password>` avec le mot de passe de l’utilisateur
-- Vérifiez l’emplacement des fichiers de sauvegarde que vous avez créés précédemment (par exemple, `/var/sales.sql`)
+- Vérifiez l’emplacement des fichiers de sauvegarde que vous avez créés précédemment (par exemple, `/var/sales.sql`).
 
 ## Configuration de la base de données de devis
 
@@ -309,15 +309,15 @@ Cette section décrit les tâches requises pour déposer des clés étrangères 
 
 >[!INFO]
 >
->Cette section contient des scripts avec des noms de table de base de données spécifiques. Si vous avez exécuté des personnalisations ou si vous souhaitez obtenir la liste complète des tableaux avant d’effectuer des actions, reportez-vous à la section [Scripts de référence](#reference-scripts).
+>Cette section contient des scripts avec des noms de table de base de données spécifiques. Si vous avez exécuté des personnalisations ou si vous souhaitez afficher la liste complète des tables avant d’effectuer des actions sur celles-ci, reportez-vous à la section [Scripts de référence](#reference-scripts).
 
-Les noms des tables de la base de données citées commencent par `quote`. La variable `magento_customercustomattributes_sales_flat_quote` et `magento_customercustomattributes_sales_flat_quote_address` les tableaux sont également affectés.
+Les noms des tables de la base de données entre guillemets commencent par `quote`. Les tables `magento_customercustomattributes_sales_flat_quote` et `magento_customercustomattributes_sales_flat_quote_address` sont également affectées.
 
 ### Déposer des clés étrangères des tables de guillemets
 
-Ce script supprime les clés étrangères qui font référence à des tableaux non guillemets des tableaux de guillemets. Remplacer `<your main Commerce DB name>` avec le nom de votre base de données Commerce.
+Ce script supprime les clés étrangères qui font référence à des tableaux non guillemets des tableaux de guillemets. Remplacez `<your main Commerce DB name>` par le nom de votre base de données Commerce.
 
-Créez le script suivant et attribuez-lui un nom comme `2_foreign-key-quote.sql`:
+Créez le script suivant et donnez-lui un nom du type `2_foreign-key-quote.sql` :
 
 ```sql
 use <your main DB name>;
@@ -334,7 +334,7 @@ Exécutez le script comme suit :
    mysql -u root -p
    ```
 
-1. À l’emplacement `mysql >` exécutez le script comme suit :
+1. À l’invite `mysql >`, exécutez le script comme suit :
    `source <path>/<script>.sql`
 
    Par exemple,
@@ -357,7 +357,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> magen
 
 ### Exigences NDB
 
-Si vous utilisez une [Base de données réseau (NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) grappe :
+Si vous utilisez une grappe [Network Database (NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) :
 
 1. Convertir des tableaux de type InnoDb en NDB dans des fichiers de vidage :
 
@@ -375,9 +375,9 @@ mysql -u root -p magento_quote < /<path>/quote.sql
 
 ## Supprimer des tableaux de ventes et de devis de la base de données
 
-Ce script vend et cite des tableaux de la base de données Commerce. Remplacer `<your main DB name>` avec le nom de votre base de données Commerce.
+Ce script vend et cite des tableaux de la base de données Commerce. Remplacez `<your main DB name>` par le nom de votre base de données Commerce.
 
-Créez le script suivant et attribuez-lui un nom comme `3_drop-tables.sql`:
+Créez le script suivant et donnez-lui un nom du type `3_drop-tables.sql` :
 
 ```sql
 use <your main DB name>;
@@ -457,7 +457,7 @@ Exécutez le script comme suit :
    mysql -u root -p
    ```
 
-1. À l’emplacement `mysql>` exécutez le script comme suit :
+1. À l’invite `mysql>`, exécutez le script comme suit :
 
    ```shell
    source <path>/<script>.sql
@@ -473,22 +473,22 @@ Exécutez le script comme suit :
 
 ## Mettre à jour votre configuration de déploiement
 
-La dernière étape du fractionnement manuel des bases de données consiste à ajouter des informations de connexion et de ressource à la configuration de déploiement de Commerce, `env.php`.
+La dernière étape du fractionnement manuel des bases de données consiste à ajouter des informations de connexion et de ressource à la configuration de déploiement Commerce, `env.php`.
 
 Pour mettre à jour la configuration du déploiement :
 
-1. Connectez-vous à votre serveur Commerce en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
+1. Connectez-vous à votre serveur Commerce en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md) ou passez à cet emplacement.
 1. Sauvegardez votre configuration de déploiement :
 
    ```bash
    cp <magento_root>/app/etc/env.php <magento_root>/app/etc/env.php.orig
    ```
 
-1. Ouvrir `<magento_root>/app/etc/env.php` dans un éditeur de texte et mettez-le à jour en suivant les instructions des sections suivantes.
+1. Ouvrez `<magento_root>/app/etc/env.php` dans un éditeur de texte et mettez-le à jour en suivant les directives décrites dans les sections suivantes.
 
 ### Mettre à jour les connexions à la base de données
 
-Localisez le bloc commençant par `'default'` (sous `'connection'`) et ajoutez `'checkout'` et `'sales'` sections. Remplacez les exemples de valeurs par les valeurs appropriées à votre site.
+Recherchez le bloc commençant par `'default'` (sous `'connection'`) et ajoutez les sections `'checkout'` et `'sales'` . Remplacez les exemples de valeurs par les valeurs appropriées à votre site.
 
 ```php
  'default' =>
@@ -529,7 +529,7 @@ Localisez le bloc commençant par `'default'` (sous `'connection'`) et ajoutez `
 
 ### Mettre à jour les ressources
 
-Localisez le bloc commençant par `'resource'` et ajouter `'checkout'` et `'sales'` de la façon suivante :
+Recherchez le bloc commençant par `'resource'` et ajoutez-lui les sections `'checkout'` et `'sales'` comme suit :
 
 ```php
 'resource' =>
@@ -555,14 +555,14 @@ Cette section fournit des scripts que vous pouvez exécuter pour imprimer une li
 Pour utiliser ces scripts :
 
 1. Créez un script SQL avec le contenu de chaque script dans cette section.
-1. Dans chaque script, remplacez `<your main DB name>` avec le nom de votre base de données Commerce.
+1. Dans chaque script, remplacez `<your main DB name>` par le nom de votre base de données Commerce.
 
-   Dans cette rubrique, le nom de l’exemple de base de données est `magento`.
+   Dans cette rubrique, l’exemple de nom de base de données est `magento`.
 
-1. Exécutez chaque script à partir de la fonction `mysql>` invite `source <script name>`
+1. Exécutez chaque script de l’invite `mysql>` en tant que `source <script name>`
 1. Examinez la sortie.
-1. Copiez le résultat de chaque script dans un autre script SQL, en supprimant les caractères de barre verticale (`|`).
-1. Exécutez chaque script à partir de la fonction `mysql>` invite `source <script name>`.
+1. Copiez le résultat de chaque script dans un autre script SQL, supprimant les caractères de barre verticale (`|`).
+1. Exécutez chaque script à partir de l’invite `mysql>` en tant que `source <script name>`.
 
    L’exécution de ce second script effectue les actions dans votre base de données Commerce principale.
 
@@ -672,4 +672,4 @@ select 'SET foreign_key_checks = 1;';
 
 ### Déposer les tableaux de guillemets
 
-Déposez tous les tableaux commençant par `quote_`.
+Déposez toutes les tables commençant par `quote_`.

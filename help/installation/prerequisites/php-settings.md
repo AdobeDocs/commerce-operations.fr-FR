@@ -17,9 +17,9 @@ Cette rubrique explique comment définir les options PHP requises.
 
 >[!NOTE]
 >
->La dernière version d’Adobe Commerce requiert au minimum PHP 8.1. Voir [configuration requise](../system-requirements.md) pour toutes les versions prises en charge de PHP.
+>La dernière version d’Adobe Commerce requiert au minimum PHP 8.1. Voir [Configuration requise](../system-requirements.md) pour toutes les versions prises en charge de PHP.
 
-Pour obtenir des conseils sur la configuration du cloud, voir [paramètres PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) dans le _Commerce sur l’infrastructure cloud_ guide.
+Pour obtenir des instructions sur la configuration du cloud, reportez-vous à la section [Paramètres PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) du guide _Commerce on Cloud Infrastructure_.
 
 ## Contrôle de processus PHP
 
@@ -65,7 +65,7 @@ Pour vérifier les extensions installées :
 
 >[!WARNING]
 >
->Si vous utilisez PHP 7.4.20, définissez `pcre.jit=0` dans votre `php.ini` fichier . Cela contourne le PHP [bug](https://bugs.php.net/bug.php?id=81101) qui empêche le chargement de CSS.
+>Si vous utilisez PHP 7.4.20, définissez `pcre.jit=0` dans votre fichier `php.ini`. Cela contourne un [bug](https://bugs.php.net/bug.php?id=81101) PHP qui empêche le chargement du CSS.
 
 - Définissez le fuseau horaire du système pour PHP. Dans le cas contraire, des erreurs telles que l’affichage suivant lors de l’installation et des opérations liées à l’heure telles que cron risquent de ne pas fonctionner :
 
@@ -77,22 +77,22 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
   Adobe recommande ce qui suit :
 
-   - Compilation du code ou déploiement de ressources statiques, `1G`
+   - Compilation de code ou déploiement de ressources statiques, `1G`
    - Débogage, `2G`
    - Tests, `~3-4G`
 
-- Augmenter les valeurs du PHP `realpath_cache_size` et `realpath_cache_ttl` aux paramètres recommandés :
+- Augmentez les valeurs pour les paramètres PHP `realpath_cache_size` et `realpath_cache_ttl` en fonction des recommandations :
 
   ```conf
   realpath_cache_size=10M
   realpath_cache_ttl=7200
   ```
 
-  Ces paramètres permettent aux processus PHP de mettre en cache les chemins d’accès aux fichiers au lieu de les rechercher au chargement de la page. Voir [Optimisation des performances](https://www.php.net/manual/en/ini.core.php) dans la documentation PHP.
+  Ces paramètres permettent aux processus PHP de mettre en cache les chemins d’accès aux fichiers au lieu de les rechercher au chargement de la page. Voir [Réglage des performances](https://www.php.net/manual/en/ini.core.php) dans la documentation PHP.
 
-- Activer [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), qui est requis pour Adobe Commerce 2.1 et versions ultérieures.
+- Activez [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), qui est requis pour Adobe Commerce 2.1 et versions ultérieures.
 
-  Adobe recommande d’activer la fonction [OPcache PHP](https://www.php.net/manual/en/book.opcache.php) pour des raisons de performances. Le OPcache est activé dans de nombreuses distributions PHP.
+  Adobe recommande d’activer le [OPcache PHP](https://www.php.net/manual/en/book.opcache.php) pour des raisons de performances. Le OPcache est activé dans de nombreuses distributions PHP.
 
   Adobe Commerce 2.1 et versions ultérieures utilisent des commentaires de code PHP pour la génération de code.
 
@@ -106,9 +106,9 @@ Cette section explique comment trouver les fichiers de configuration nécessaire
 
 ### Rechercher `php.ini` fichier de configuration
 
-Pour trouver la configuration du serveur web, exécutez un [`phpinfo.php` fichier](optional-software.md#create-phpinfophp) dans votre navigateur web et recherchez les `Loaded Configuration File` comme suit :
+Pour trouver la configuration du serveur web, exécutez un fichier [`phpinfo.php` ](optional-software.md#create-phpinfophp) dans votre navigateur web et recherchez le `Loaded Configuration File` comme suit :
 
-![page d’informations PHP](../../assets/installation/config_phpini-webserver.png)
+![Page d’informations PHP](../../assets/installation/config_phpini-webserver.png)
 
 Pour localiser la configuration de ligne de commande PHP, saisissez
 
@@ -118,19 +118,19 @@ php --ini | grep "Loaded Configuration File"
 
 >[!NOTE]
 >
->Si vous en avez un seul `php.ini` modifiez ce fichier. Si vous avez deux `php.ini` fichiers, modifier *both* fichiers . Si vous ne le faites pas, les performances risquent d’être imprévisibles.
+>Si vous n’avez qu’un seul fichier `php.ini`, modifiez ce fichier. Si vous disposez de deux fichiers `php.ini`, modifiez les fichiers *et*. Si vous ne le faites pas, les performances risquent d’être imprévisibles.
 
 ### Recherche des paramètres de configuration OPcache
 
-Les paramètres du OPcache PHP sont généralement situés dans la variable `php.ini` ou `opcache.ini`. L’emplacement peut dépendre de votre système d’exploitation et de la version PHP. Le fichier de configuration OPcache peut comporter une `opcache` ou des paramètres tels que `opcache.enable`.
+Les paramètres du OPcache PHP sont généralement situés dans `php.ini` ou `opcache.ini`. L’emplacement peut dépendre de votre système d’exploitation et de la version PHP. Le fichier de configuration OPcache peut comporter une section `opcache` ou des paramètres tels que `opcache.enable`.
 
 Suivez les instructions ci-dessous pour le trouver :
 
 - Serveur web Apache :
 
-  Pour Ubuntu avec Apache, les paramètres OPcache se trouvent généralement dans la variable `php.ini` fichier .
+  Pour Ubuntu avec Apache, les paramètres OPcache se trouvent généralement dans le fichier `php.ini`.
 
-  Pour CentOS avec Apache ou nginx, les paramètres OPcache se trouvent généralement dans `/etc/php.d/opcache.ini`
+  Pour CentOS avec Apache ou nginx, les paramètres OPcache se trouvent généralement dans `/etc/php.d/opcache.ini`.
 
   Dans le cas contraire, utilisez la commande suivante pour la localiser :
 
@@ -140,14 +140,14 @@ Suivez les instructions ci-dessous pour le trouver :
 
 - Serveur web nginx avec PHP-FPM : `/etc/php/8.1/fpm/php.ini`
 
-Si vous en avez plusieurs `opcache.ini`, modifiez-les tous.
+Si vous avez plusieurs `opcache.ini`, modifiez-les tous.
 
 ## Comment définir les options PHP
 
 Pour définir les options PHP :
 
-1. Ouvrez une `php.ini` dans un éditeur de texte.
-1. Localisez le fuseau horaire de votre serveur dans la [paramètres de fuseau horaire](https://www.php.net/manual/en/timezones.php)
+1. Ouvrez un `php.ini` dans un éditeur de texte.
+1. Localisez le fuseau horaire de votre serveur dans les [paramètres de fuseau horaire](https://www.php.net/manual/en/timezones.php) disponibles.
 1. Recherchez le paramètre suivant et annulez sa mise en commentaire si nécessaire :
 
    ```conf
@@ -156,7 +156,7 @@ Pour définir les options PHP :
 
 1. Ajoutez le paramètre de fuseau horaire trouvé à l’étape 2.
 
-1. Modifier la valeur de `memory_limit` à l’une des valeurs recommandées au début de cette section.
+1. Remplacez la valeur de `memory_limit` par l’une des valeurs recommandées au début de cette section.
 
    Par exemple,
 
@@ -164,7 +164,7 @@ Pour définir les options PHP :
    memory_limit=2G
    ```
 
-1. Ajoutez ou mettez à jour la variable `realpath_cache` configuration pour correspondre aux valeurs suivantes :
+1. Ajoutez ou mettez à jour la configuration `realpath_cache` pour qu&#39;elle corresponde aux valeurs suivantes :
 
    ```conf
    ;
@@ -184,7 +184,7 @@ Pour définir les options PHP :
 
 ## Définition des options OPcache
 
-Pour définir `opcache.ini` options :
+Pour définir les options `opcache.ini` :
 
 1. Ouvrez votre fichier de configuration OPcache dans un éditeur de texte :
 
@@ -192,7 +192,7 @@ Pour définir `opcache.ini` options :
    - `php.ini` (Ubuntu)
    - `/etc/php/8.1/fpm/php.ini` (serveur web nginx (CentOS ou Ubuntu)
 
-1. Localiser `opcache.save_comments` et décommentez-le si nécessaire.
+1. Recherchez `opcache.save_comments` et annulez la mise en commentaire si nécessaire.
 1. Assurez-vous que sa valeur est définie sur `1`.
 1. Enregistrez vos modifications et quittez l’éditeur de texte.
 1. Redémarrez votre serveur web :
@@ -205,8 +205,8 @@ Pour définir `opcache.ini` options :
 
 Pour obtenir de l’aide sur la résolution des problèmes liés à PHP, reportez-vous aux articles suivants du support Adobe Commerce :
 
-- [Erreur de version PHP ou erreur 404 lors de l’accès à Adobe Commerce dans un navigateur.](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [erreurs de paramètres PHP](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
-- [L’extension de chiffrement PHP n’est pas installée correctement](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
+- [Erreur de version PHP ou erreur 404 lors de l&#39;accès à Adobe Commerce dans un navigateur](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
+- [Erreurs de paramètres PHP](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
+- [Extension de chiffrement PHP non installée correctement](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
 - [Problèmes de vérification de l’état de préparation des versions PHP](https://support.magento.com/hc/en-us/articles/360033546411)
-- [Erreurs et solutions fatales PHP courantes](https://support.magento.com/hc/en-us/articles/360030568432)
+- [Erreurs et solutions PHP courantes fatales](https://support.magento.com/hc/en-us/articles/360030568432)

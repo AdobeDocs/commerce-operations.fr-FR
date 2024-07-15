@@ -1,44 +1,44 @@
 ---
-title: La variable [!UICONTROL Elasticsearch] tab
-description: En savoir plus sur les [!UICONTROL Elasticsearch] de [!DNL Observation for Adobe Commerce].
+title: Onglet [!UICONTROL Elasticsearch]
+description: Découvrez l’onglet [!UICONTROL Elasticsearch] de [!DNL Observation for Adobe Commerce].
 exl-id: e98d351d-b3b1-47bc-bc0d-f96ba9ec2b80
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
 
-# La variable [!UICONTROL Elasticsearch] tab
+# Onglet [!UICONTROL Elasticsearch]
 
-## [!UICONTROL Cluster Status Summary]:
+## [!UICONTROL Cluster Status Summary] :
 
 ![Résumé de l’état du cluster](../../assets/tools/cluster-status-summary.jpg)
 
-Au cours de la période sélectionnée, la variable **[!UICONTROL Cluster Status Summary]** Le cadre affiche les états de couleur que la variable [!DNL Elasticsearch] le groupe est passé. Dans cet exemple, au cours de la période sélectionnée, la grappe était à l’état Vert une fois et à l’état Jaune une fois pendant la période sélectionnée.
+Au cours de la période sélectionnée, l’image **[!UICONTROL Cluster Status Summary]** affiche les états de couleur que la grappe [!DNL Elasticsearch] a subis. Dans cet exemple, au cours de la période sélectionnée, la grappe était à l’état Vert une fois et à l’état Jaune une fois pendant la période sélectionnée.
 
 ## [!UICONTROL Active Primary Shards]
 
-![Partages de Principal actifs](../../assets/tools/active-primary-shards.jpg)
+![Actif Principal Shards](../../assets/tools/active-primary-shards.jpg)
 
-La variable **[!UICONTROL Active Primary Shards]** Le cadre affiche les différents nombres en fonction du nombre de partitions primaires actives pour le compte sélectionné. [!DNL Elasticsearch] service.
+L’image **[!UICONTROL Active Primary Shards]** affiche les nombres différents en fonction du nombre de partages principaux actifs pour le service [!DNL Elasticsearch] du compte sélectionné.
 
-De [!DNL Elasticsearch]: Guide définitif [2.x]:
+De [!DNL Elasticsearch] : Le Guide définitif [2.x] :
 
-&quot;Dans [Indices pouvant être mis à jour dynamiquement](https://www.elastic.co/guide/en/elasticsearch/guide/2.x/dynamic-indices.html), nous avons expliqué qu’une partition est un index Lucene et qu’une [!DNL Elasticsearch] index est une collection de shards. Votre application parle à un index, et [!DNL Elasticsearch] achemine vos requêtes vers les éclats appropriés. Un éclat est l&#39;unité d&#39;échelle. Le plus petit index que vous pouvez avoir est un avec une seule partition. Cela peut être plus que suffisant pour vos besoins — un seul partage peut contenir beaucoup de données — mais cela limite votre capacité à évoluer.&quot;
+&quot;Dans [Index à mise à jour dynamique](https://www.elastic.co/guide/en/elasticsearch/guide/2.x/dynamic-indices.html), nous avons expliqué qu’un partage est un index Lucene et qu’un index [!DNL Elasticsearch] est un ensemble de partitions. Votre application parle à un index et [!DNL Elasticsearch] achemine vos requêtes vers les éclats appropriés. Un éclat est l&#39;unité d&#39;échelle. Le plus petit index que vous pouvez avoir est un avec une seule partition. Cela peut être plus que suffisant pour vos besoins — un seul partage peut contenir beaucoup de données — mais cela limite votre capacité à évoluer.&quot;
 
 Lorsqu’un index est créé, plusieurs shards sont créés avec cet index. Par défaut, cinq éclats principaux sont attribués à chaque nouvel index, ce qui signifie qu’un index peut être réparti sur cinq noeuds (un partage par noeud). Il existe également des éclats de répliques. Il s’agit principalement du basculement. Les shards de Secondaire peuvent servir des requêtes de lecture.
 
 ## [!UICONTROL Active Shards in Cluster]
 
-![Partages actifs en grappe](../../assets/tools/active-shards-in-cluster.jpg)
+![Actif Shards dans une grappe](../../assets/tools/active-shards-in-cluster.jpg)
 
-La variable **[!UICONTROL Active Shards in Cluster]** L’image affiche le nombre total de partitions principales et de réplications dans une [!DNL Elasticsearch] grappe.
+L’image **[!UICONTROL Active Shards in Cluster]** indique le nombre total de partitions principales et de réplication dans une grappe [!DNL Elasticsearch].
 
 ## [!UICONTROL Index health - this will show the index name and color status]
 
-![Santé de l’index](../../assets/tools/index-health.jpg)
+![ {intégrité de l’index](../../assets/tools/index-health.jpg)
 
 Cette image affiche le nom de l’index et le nombre d’états de la couleur de l’index. En faisant défiler le tableau vers le bas, vous verrez le même nom d’index avec les états de couleur Jaune et Rouge. Le nombre qui suit le nom de l’index 27 est le nombre de la couleur de l’état. S’il est égal à zéro, aucune instance de l’index ne se trouvait dans cet état de couleur pendant les périodes sélectionnées.
 
@@ -46,25 +46,25 @@ Cette image affiche le nom de l’index et le nombre d’états de la couleur de
 
 ![Statut de l’Elasticsearch](../../assets/tools/elasticsearch-status-by-node.jpg)
 
-La variable **[!UICONTROL Elasticsearch Status by node information]** Le cadre affiche la [!DNL Elasticsearch] état de la grappe par couleur et par noeud. Cela permet d’indiquer le noeud dans la variable [!DNL Elasticsearch] la grappe renvoie l’état au cours de la période sélectionnée.
+L’image **[!UICONTROL Elasticsearch Status by node information]** affiche l’état de la grappe [!DNL Elasticsearch] par couleur et par noeud. Cela permet d’indiquer quel noeud de la grappe [!DNL Elasticsearch] renvoie l’état au cours de la période sélectionnée.
 
 ## [!UICONTROL Elasticsearch index information]
 
 ![Informations sur l’index Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
-La variable **[!UICONTROL Elasticsearch index information]** Le tableau indique le nom de l’index, le noeud sur lequel il se trouve, le nombre de documents indexés, l’intégrité de l’index et la taille de l’index en Mo à un moment donné.
+La table **[!UICONTROL Elasticsearch index information]** indique le nom de l’index, le noeud sur lequel il se trouve, le nombre de documents indexés, l’intégrité de l’index et la taille de l’index en Mo à un moment donné.
 
 ## [!UICONTROL Elasticsearch process CPU %]
 
 ![Processeur Elasticsearch](../../assets/tools/elasticsearch-process-cpu.jpg)
 
-La variable **[!UICONTROL Elasticsearch process CPU %]** Le cadre affiche le pourcentage du processeur de processus par le [!DNL Elasticsearch] traiter sur la période sélectionnée.
+L’image **[!UICONTROL Elasticsearch process CPU %]** affiche le pourcentage du processeur du processus par le processus [!DNL Elasticsearch] sur la période sélectionnée.
 
 ## [!UICONTROL Elasticsearch Memory garbage collection]
 
-![Défaut mémoire Elasticsearch](../../assets/tools/elasticsearch-memory-garbage.jpg)
+![Elasticsearch Memory garbage](../../assets/tools/elasticsearch-memory-garbage.jpg)
 
-[!DNL Elasticsearch] est un processus Java. Si la mémoire allouée est insuffisante, il déclenche le nettoyage de la mémoire pour libérer de la mémoire. Si le nettoyage de la mémoire est fréquent, cela indique qu’il peut y avoir trop d’index ou de partitions pour la mémoire allouée. Il peut y avoir une opportunité de nettoyer les indices et les éclats ou [!DNL Elasticsearch] peut nécessiter plus de mémoire.
+[!DNL Elasticsearch] est un processus Java. Si la mémoire allouée est insuffisante, il déclenche le nettoyage de la mémoire pour libérer de la mémoire. Si le nettoyage de la mémoire est fréquent, cela indique qu’il peut y avoir trop d’index ou de partitions pour la mémoire allouée. Il peut y avoir une opportunité de nettoyer les indices et les éclats ou [!DNL Elasticsearch] peut avoir besoin de plus de mémoire.
 
 ## [!UICONTROL Elasticsearch Index information]
 
@@ -76,15 +76,15 @@ La variable **[!UICONTROL Elasticsearch process CPU %]** Le cadre affiche le pou
 
 ![Taille de l’index Elasticsearch](../../assets/tools/elasticsearch-index-size.jpg)
 
-La variable **[!UICONTROL Elasticsearch Index Size]** frame indique le nom et la taille de l’index pendant la période sélectionnée. Cela peut indiquer des problèmes liés à l’indexation d’un site.
+L’image **[!UICONTROL Elasticsearch Index Size]** indique le nom et la taille de l’index pendant la période sélectionnée. Cela peut indiquer des problèmes liés à l’indexation d’un site.
 
 ## [!UICONTROL Elasticsearch Errors]
 
 ![Erreurs Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
 
-La variable **[!UICONTROL Elasticsearch Errors]** frame affiche des erreurs avec [!DNL Elasticsearch] comme manquer d’espace, passer de l’état Jaune à l’état Rouge, lorsque tous les éclats échouent, en cas de problèmes de paramètres avec des recherches, des erreurs de version et lorsque tous les noeuds sont indisponibles.
+L’image **[!UICONTROL Elasticsearch Errors]** affiche des erreurs avec [!DNL Elasticsearch], telles que le manque d’espace, le passage de l’état Jaune à l’état Rouge, lorsque tous les éclats échouent, en cas de problèmes de paramètres avec des recherches, des erreurs de version et lorsque tous les noeuds sont indisponibles.
 
-## [!UICONTROL Elasticsearch Unassigned Shards]:
+## [!UICONTROL Elasticsearch Unassigned Shards] :
 
 ![Elasticsearch Unassigned Shards](../../assets/tools/elasticsearch-unassigned-shards.jpg)
 

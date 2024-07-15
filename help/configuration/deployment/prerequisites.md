@@ -22,8 +22,8 @@ Les autorisations et la propriété des fichiers doivent être cohérentes entre
 
 - Modifiez les droits d’accès et de propriété du système de fichiers Commerce sur chaque système selon les besoins en suivant les instructions suivantes :
 
-   - Développement et création : [Définir la propriété et les autorisations de pré-installation (deux utilisateurs)](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
-   - Production : [Propriété commerciale et autorisations dans le développement et la production](file-system-permissions.md)
+   - Développement et version : [Définir la propriété et les autorisations de pré-installation (deux utilisateurs)](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
+   - Production : [Propriété Commerce et autorisations dans le développement et la production](file-system-permissions.md)
 
 >[!INFO]
 >

@@ -17,7 +17,7 @@ Adobe Commerce 2.4.5 prend en charge l’utilisation des grappes de services Ope
 ## Création d’un domaine de service OpenSearch AWS
 
 Vous devez d’abord établir une instance OpenSearch dans AWS.
-Lecture [Création et gestion des domaines de service OpenSearch Amazon](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) pour obtenir des instructions détaillées.
+Pour obtenir des instructions détaillées, consultez la section [Création et gestion des domaines de service OpenSearch Amazon](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) .
 
 ## Obtention de données pour AWS OpenSearch
 
@@ -33,11 +33,11 @@ Les installations plus volumineuses peuvent envisager de migrer leurs index de d
 Il n’est pas nécessaire de migrer les index, car ils peuvent être facilement recréés sur l’instance AWS.
 Cependant, lors de la migration des index de données, assurez-vous que les versions d’Elasticsearch/OpenSearch sont compatibles.
 
-Voir Amazon [Migration vers le service Amazon OpenSearch](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) instructions pour plus d’informations.
+Pour plus d’informations, voir les instructions Amazon [Migration vers le service Amazon OpenSearch](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) .
 
 ### Configuration de Commerce pour OpenSearch
 
-Les étapes de configuration d’OpenSearch sont décrites dans la section [Installation avancée](../../advanced.md) rubrique.
+Les étapes de configuration d’OpenSearch sont décrites dans la rubrique [Installation avancée](../../advanced.md) .
 
 Pour vérifier que la nouvelle configuration fonctionne, testez directement le point de terminaison OpenSearch :
 
@@ -53,4 +53,4 @@ Pour obtenir des produits à partir de l’index, ajoutez : `/magento2docker_pro
 
 ## Ressources supplémentaires
 
-Pour plus d’informations, voir [Documentation OpenSearch AWS](https://docs.aws.amazon.com/opensearch-service/index.html).
+Pour plus d’informations, voir la [documentation OpenSearch AWS](https://docs.aws.amazon.com/opensearch-service/index.html).

@@ -16,7 +16,7 @@ Cette rubrique aborde les principes de base de l’utilisation du vernis comme a
 
 ## Purge de vernis
 
-Selon [Documentation en pointillé](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *purge* c’est ce qui se passe lorsque vous sélectionnez un objet du cache et le jetez avec ses variantes.&quot; Une purge de vernis est similaire à une commande de nettoyage du cache (ou en cliquant sur **Vider le cache du Magento** dans Admin).
+Selon la [documentation de vernis](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;Une *purge* est ce qui se passe lorsque vous sélectionnez un objet du cache et le rejetez avec ses variantes.&quot; Une purge de vernis est similaire à une commande de nettoyage du cache (ou en cliquant sur **vider le cache du Magento** dans l’administrateur).
 
 En fait, lorsque vous nettoyez, videz ou actualisez le cache Commerce, Varnish purge également.
 
@@ -38,13 +38,13 @@ Une fois que vous avez installé et configuré Varnish pour qu’il fonctionne a
 
 - Maintenance du code source.
 
-  Vous devez actualiser le cache et supprimer régulièrement tout le contenu de la `generated/code` et `generated/metadata` répertoires. Pour plus d’informations sur l’actualisation du cache, voir la section suivante.
+  Vous devez actualiser le cache et supprimer régulièrement tout le contenu des répertoires `generated/code` et `generated/metadata`. Pour plus d’informations sur l’actualisation du cache, voir la section suivante.
 
 ## Configuration de Commerce pour purger le vernis
 
-Commerce purge les hôtes ternes après avoir configuré les hôtes ternes à l’aide de la fonction [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) .
+Commerce purge les hôtes ternes après avoir configuré les hôtes ternes à l’aide de la commande [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) .
 
-Vous pouvez utiliser le paramètre facultatif. `--http-cache-hosts` pour spécifier une liste séparée par des virgules d’hôtes et de ports d’écoute Varnish. Configurez tous les hôtes vernis, qu’il y en ait un ou plusieurs. (Ne séparez pas les hôtes avec un espace.)
+Vous pouvez utiliser le paramètre facultatif `--http-cache-hosts` pour spécifier une liste d’hôtes et de ports d’écoute séparés par des virgules. Configurez tous les hôtes vernis, qu’il y en ait un ou plusieurs. (Ne séparez pas les hôtes avec un espace.)
 
 Le format du paramètre doit être `<hostname or ip>:<listen port>`, où vous pouvez omettre `<listen port>` s’il s’agit du port 80.
 
@@ -54,8 +54,8 @@ Par exemple,
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 ```
 
-Vous pouvez ensuite purger les hôtes ternes lors de l’actualisation du cache de Commerce (également appelé *nettoyage* le cache) dans l’Admin ou à l’aide de la ligne de commande.
+Vous pouvez ensuite purger les hôtes ternes lorsque vous actualisez le cache de Commerce (également appelé *nettoyage* du cache) dans l’administrateur ou à l’aide de la ligne de commande.
 
 Pour actualiser le cache à l’aide de l’administrateur, cliquez sur **[!UICONTROL SYSTEM]** > Outils > **Gestion du cache**, puis cliquez sur **Vider le cache du Magento** en haut de la page. (Vous pouvez également actualiser des types de cache individuels.)
 
-Pour actualiser le cache à l’aide de la ligne de commande, vous utilisez généralement la méthode [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) comme la commande [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
+Pour actualiser le cache à l’aide de la ligne de commande, vous utilisez généralement la commande [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) comme [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).

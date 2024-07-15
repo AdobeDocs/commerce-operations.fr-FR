@@ -104,11 +104,11 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
 
 | Bonne pratique | Description |
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [Configuration des catégories](catalog-management.md#category-limits) | Configurez des catégories de produits pour des performances optimales. |
-| [&#x200B; de configuration de produit](catalog-management.md#product-sku-limits) | Configurez des SKU de produit pour des performances optimales. |
-| [Configuration des variations de produit](catalog-management.md#product-variations) | Configurez des variations de produit pour des performances optimales. |
+| [Configuration de catégorie](catalog-management.md#category-limits) | Configurez des catégories de produits pour des performances optimales. |
+| [Configuration de produit &#x200B;](catalog-management.md#product-sku-limits) | Configurez des SKU de produit pour des performances optimales. |
+| [Configuration de variation de produit](catalog-management.md#product-variations) | Configurez des variations de produit pour des performances optimales. |
 | [Configuration des options de produit](catalog-management.md#product-options) | Configurez les options de produit pour des performances optimales. |
-| [&#x200B; de configuration des attributs de produit](catalog-management.md#product-attributes) | Configurez les attributs de produit pour des performances optimales. |
+| [Configuration des attributs de produit &#x200B;](catalog-management.md#product-attributes) | Configurez les attributs de produit pour des performances optimales. |
 | [Configuration de pagination pour les listes de produits](catalog-management.md#product-listing-pagination) | Configurez la pagination des listes de produits pour des performances optimales. |
 
 ## Extensions
@@ -121,7 +121,7 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
 
 | Bonne pratique | Description |
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [Réaffectations de partenaire](partner-escalation.md) | Préparez-vous à la réaffectation d’un problème de partenaire avec une équipe de compte d’Adobe ou apprenez à éviter une réaffectation. |
+| [ Réaffectations de partenaire](partner-escalation.md) | Préparez-vous à la réaffectation d’un problème de partenaire avec une équipe de compte d’Adobe ou apprenez à éviter une réaffectation. |
 | [Traitement du stockage des paiements](payment-processing-storage.md) | Traitez et stockez en toute sécurité les informations de paiement. |
 
 ## Ventes et marketing

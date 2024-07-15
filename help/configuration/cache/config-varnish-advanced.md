@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Configuration du vernis avancé
 
-Varnish fournit plusieurs fonctionnalités qui empêchent les clients de subir de longs délais et délais d’expiration lorsque le serveur Commerce ne fonctionne pas correctement. Ces fonctionnalités peuvent être configurées dans la variable `default.vcl` fichier . Cette rubrique décrit les ajouts que Commerce fournit dans le fichier VCL (Varnish Configuration Language) que vous téléchargez depuis l’administrateur.
+Varnish fournit plusieurs fonctionnalités qui empêchent les clients de subir de longs délais et dépassements de délai lorsque le serveur Commerce ne fonctionne pas correctement. Ces fonctionnalités peuvent être configurées dans le fichier `default.vcl`. Cette rubrique décrit les ajouts que Commerce fournit dans le fichier VCL (Varnish Configuration Language) que vous téléchargez depuis l’administrateur.
 
-Voir [Manuel de référence des pointillés](https://varnish-cache.org/docs/index.html) pour plus d’informations sur l’utilisation du langage de configuration vernis.
+Pour plus d’informations sur l’utilisation du langage de configuration de vernis, voir le [manuel de référence de vernis](https://varnish-cache.org/docs/index.html) .
 
 ## Contrôle de l’intégrité
 
@@ -32,11 +32,11 @@ Commerce définit le contrôle de l’intégrité par défaut suivant :
     }
 ```
 
-Toutes les 5 secondes, ce contrôle de l’intégrité appelle la variable `pub/health_check.php` script. Ce script vérifie la disponibilité du serveur, de chaque base de données et de Redis (s’il est installé). Le script doit renvoyer une réponse dans les 2 secondes. Si le script détermine que l’une de ces ressources est hors service, il renvoie un code d’erreur HTTP 500. Si ce code d’erreur est reçu dans six tentatives sur dix, le serveur principal est considéré comme malsain.
+Toutes les 5 secondes, ce contrôle de l’intégrité appelle le script `pub/health_check.php`. Ce script vérifie la disponibilité du serveur, de chaque base de données et de Redis (s’il est installé). Le script doit renvoyer une réponse dans les 2 secondes. Si le script détermine que l’une de ces ressources est hors service, il renvoie un code d’erreur HTTP 500. Si ce code d’erreur est reçu dans six tentatives sur dix, le serveur principal est considéré comme malsain.
 
-La variable `health_check.php` se trouve dans la variable `pub` répertoire . Si votre répertoire racine Commerce est `pub`, puis assurez-vous de modifier le chemin dans la variable `url` du paramètre `/pub/health_check.php` to `health_check.php`.
+Le script `health_check.php` se trouve dans le répertoire `pub`. Si votre répertoire racine Commerce est `pub`, veillez à modifier le chemin d’accès dans le paramètre `url` de `/pub/health_check.php` à `health_check.php`.
 
-Pour plus d’informations, voir [Contrôles de l’intégrité vernis](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) la documentation.
+Pour plus d’informations, consultez la documentation [Vérification de l’intégrité Varnish](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) .
 
 ## Mode de grâce
 
@@ -45,15 +45,15 @@ Le mode Grace permet à Varnish de garder un objet en cache au-delà de sa valeu
 - Lorsque le serveur principal Commerce est sain, mais qu’une requête prend plus de temps que la normale
 - Lorsque le serveur principal Commerce n’est pas sain.
 
-La variable `vcl_hit` subroutine définit la manière dont Varnish répond à une demande d’objets qui ont été mis en cache.
+La sous-routine `vcl_hit` définit la manière dont Varnish répond à une demande d’objets qui ont été mis en cache.
 
 ### Lorsque le serveur principal Commerce est sain
 
-Lorsque les contrôles de l’intégrité déterminent que le serveur principal Commerce est sain, Varnish vérifie si le temps reste dans la période de grâce. La période de grâce par défaut est de 300 secondes, mais un commerçant peut définir la valeur de l’administrateur comme décrit dans la section [Configuration de Commerce pour l’utilisation du vernis](configure-varnish-commerce.md). Si la période de grâce n’a pas expiré, Varnish diffuse le contenu obsolète et actualise de manière asynchrone l’objet à partir du serveur Commerce. Si la période de grâce a expiré, Varnish diffuse le contenu obsolète et actualise de manière synchrone l’objet à partir du serveur principal Commerce.
+Lorsque les contrôles de l’intégrité déterminent que le serveur principal Commerce est sain, Varnish vérifie si le temps reste dans la période de grâce. La période de grâce par défaut est de 300 secondes, mais un commerçant peut définir la valeur de l’administrateur comme décrit dans la section [Configurer Commerce pour utiliser le vernis](configure-varnish-commerce.md). Si la période de grâce n’a pas expiré, Varnish diffuse le contenu obsolète et actualise de manière asynchrone l’objet à partir du serveur Commerce. Si la période de grâce a expiré, Varnish diffuse le contenu obsolète et actualise de manière synchrone l’objet à partir du serveur principal Commerce.
 
 La durée maximale pendant laquelle Varnish diffuse un objet obsolète est la somme de la période de grâce (300 secondes par défaut) et de la valeur TTL (86 400 secondes par défaut).
 
-Pour modifier la période de grâce par défaut à partir de la fonction `default.vcl` modifiez la ligne suivante dans le fichier `vcl_hit` sous-routine :
+Pour modifier la période de grâce par défaut dans le fichier `default.vcl`, modifiez la ligne suivante dans la sous-routine `vcl_hit` :
 
 ```conf
 if (obj.ttl + 300s > 0s) {
@@ -61,13 +61,13 @@ if (obj.ttl + 300s > 0s) {
 
 ### Lorsque le serveur principal Commerce n’est pas sain
 
-Si le serveur principal Commerce ne répond pas, Varnish diffuse du contenu obsolète du cache pendant trois jours (ou tel que défini dans `beresp.grace`) plus la durée de vie restante (qui est par défaut d’un jour), sauf si le contenu mis en cache est purgé manuellement.
+Si le serveur principal Commerce n’est pas réactif, Varnish diffuse du contenu obsolète du cache pendant trois jours (ou tel que défini dans `beresp.grace`) plus le reste de la durée de vie (qui, par défaut, est d’un jour), sauf si le contenu mis en cache est purgé manuellement.
 
 ## Mode Saint
 
-Le mode Saint exclut les arrière-plans malsains pendant une durée configurable. Par conséquent, les arrière-plans malsains ne peuvent pas traiter le trafic lors de l’utilisation de Varnish comme équilibreur de charge. Le mode Saint peut être utilisé avec le mode de grâce pour permettre une gestion complexe des serveurs principaux malsains. Par exemple, si un serveur principal n’est pas sain, les reprises peuvent être routées vers un autre serveur. Si tous les autres serveurs sont en panne, alors diffusez des objets mis en cache obsolètes. Les hôtes principaux du mode saint et les périodes de blackout sont définis dans la variable `default.vcl` fichier .
+Le mode Saint exclut les arrière-plans malsains pendant une durée configurable. Par conséquent, les arrière-plans malsains ne peuvent pas traiter le trafic lors de l’utilisation de Varnish comme équilibreur de charge. Le mode Saint peut être utilisé avec le mode de grâce pour permettre une gestion complexe des serveurs principaux malsains. Par exemple, si un serveur principal n’est pas sain, les reprises peuvent être routées vers un autre serveur. Si tous les autres serveurs sont en panne, alors diffusez des objets mis en cache obsolètes. Les hôtes principaux du mode saint et les périodes de blackout sont définis dans le fichier `default.vcl` .
 
-Le mode Saint peut également être utilisé lorsque les instances de Commerce sont mises hors ligne individuellement pour effectuer des tâches de maintenance et de mise à niveau sans affecter la disponibilité du site de Commerce.
+Le mode Saint peut également être utilisé lorsque les instances Commerce sont mises hors ligne individuellement pour effectuer des tâches de maintenance et de mise à niveau sans affecter la disponibilité du site Commerce.
 
 ### Prérequis du mode Saint
 
@@ -75,9 +75,9 @@ Désignez une machine comme installation principale. Sur cette machine, installe
 
 Sur tous les autres ordinateurs, l’instance Commerce doit avoir accès à la base de données mySQL de l’ordinateur principal. Les machines secondaires doivent également avoir accès aux fichiers de l’instance Commerce principale.
 
-Vous pouvez également désactiver le contrôle de version des fichiers statiques sur tous les ordinateurs. Vous pouvez y accéder à partir de la section Admin sous **Magasins** > Paramètres > **Configuration** > **Avancé** > **Développeur** > **Paramètres des fichiers statiques** > **Signature de fichiers statiques** = **Non**.
+Vous pouvez également désactiver le contrôle de version des fichiers statiques sur tous les ordinateurs. Vous pouvez y accéder à partir de l’administrateur sous **Magasins** > Paramètres > **Configuration** > **Avancé** > **Développeur** > **Paramètres des fichiers statiques** > **Signer les fichiers statiques** = **Non**.
 
-Enfin, toutes les instances de Commerce doivent être en mode de production. Avant le démarrage de Varnish, effacez le cache de chaque instance. Dans Admin, accédez à **Système** > Outils > **Gestion du cache** et cliquez sur **Vider le cache du Magento**. Vous pouvez également exécuter la commande suivante pour effacer le cache :
+Enfin, toutes les instances Commerce doivent être en mode de production. Avant le démarrage de Varnish, effacez le cache de chaque instance. Dans l’administrateur, accédez à **Système** > Outils > **Gestion du cache** et cliquez sur **Vider le cache du Magento**. Vous pouvez également exécuter la commande suivante pour effacer le cache :
 
 ```bash
 bin/magento cache:flush
@@ -85,11 +85,11 @@ bin/magento cache:flush
 
 ### Installation
 
-Le mode Saint ne fait pas partie du package vernis principal. Il s’agit d’une version séparée. `vmod` qui doit être téléchargé et installé. Par conséquent, vous devez recompiler le vernis de la source, comme décrit dans la section [instructions d’installation](https://varnish-cache.org/docs/index.html) pour votre version de vernis.
+Le mode Saint ne fait pas partie du package vernis principal. Il s&#39;agit d&#39;un `vmod` dont le contrôle de version doit être téléchargé et installé séparément. Par conséquent, vous devez recompiler le vernis à partir de la source, comme décrit dans les [instructions d’installation](https://varnish-cache.org/docs/index.html) de votre version du vernis.
 
 Après avoir recompilé, vous pouvez installer le module de mode Saint. En général, procédez comme suit :
 
-1. Obtention du code source à partir de [Modules vernis](https://github.com/varnish/varnish-modules). Cloner la version Git (version maître), car les versions 0.9.x contiennent une erreur de code source.
+1. Récupérez le code source à partir des [modules vernis](https://github.com/varnish/varnish-modules). Cloner la version Git (version maître), car les versions 0.9.x contiennent une erreur de code source.
 1. Créez le code source avec des outils automatiques :
 
    ```bash
@@ -101,11 +101,11 @@ Après avoir recompilé, vous pouvez installer le module de mode Saint. En gén�
    sudo make install
    ```
 
-Voir [Collection de modules en vernis](https://github.com/varnish/varnish-modules) pour plus d’informations sur l’installation du module mode Saint.
+Pour plus d’informations sur l’installation du module Saint mode, reportez-vous à la section [Collection de modules vernis](https://github.com/varnish/varnish-modules).
 
 ### Exemple de fichier VCL
 
-L’exemple de code suivant illustre le code qui doit être ajouté à votre fichier VCL pour activer le mode saint. Placez le `import` et `backend` Définitions en haut du fichier.
+L’exemple de code suivant illustre le code qui doit être ajouté à votre fichier VCL pour activer le mode saint. Placez les instructions `import` et les définitions `backend` en haut du fichier.
 
 ```cpp
 import saintmode;

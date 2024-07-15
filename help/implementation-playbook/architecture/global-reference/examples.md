@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Exemples d’architecture de référence globale
 
-Cette rubrique décrit les méthodes courantes d’organisation d’une [architecture de référence globale (GRA)](overview.md) base de code. Bien que la variable [packages distincts](#option-1-separate-packages) est préférable, certaines situations nécessitent l’une des autres options décrites ci-dessous.
+Cette rubrique décrit les méthodes courantes d’organisation d’une base de code [architecture de référence globale (GRA)](overview.md). Bien que l’option [packages distincts](#option-1-separate-packages) soit préférée, certaines situations nécessitent l’une des autres options décrites ci-dessous.
 
 ## Définitions
 
@@ -23,11 +23,11 @@ Cette rubrique décrit les méthodes courantes d’organisation d’une [archite
 
 ## Option 1 : packages distincts
 
-Voir [Structure de projet du compositeur](composer/project-structure.md) bonnes pratiques pour configurer cette méthode.
+Voir les meilleures pratiques pour configurer cette méthode dans la [structure de projet du compositeur](composer/project-structure.md).
 
 ![Diagramme illustrant l’option de packages distincts pour l’architecture de référence globale](../../../assets/playbooks/gra-separate-packages.png)
 
-La méthode la plus souple pour gérer les modules du compositeur d’expérience visuelle passe par les métaphores. Les métaphores contiennent un `composer.json` uniquement, qui définit d’autres dépendances de package. Créer des métaphores à l’aide de [Packagiste privé](https://packagist.com/) référentiels.
+La méthode la plus souple pour gérer les modules du compositeur d’expérience visuelle passe par les métaphores. Les métaphores contiennent uniquement un fichier `composer.json` qui définit d’autres dépendances de package. Créez des modules à l’aide des référentiels [Private Packagist](https://packagist.com/).
 
 ### Projet principal `composer.json`
 
@@ -82,7 +82,7 @@ La méthode la plus souple pour gérer les modules du compositeur d’expérienc
 }
 ```
 
-Chaque module, module de langue, thème et bibliothèque possède son propre référentiel Git. Chaque référentiel Git se synchronise automatiquement avec le référentiel Packagist privé et y génère un module tant qu’il y a une `composer.json` dans la racine du référentiel Git.
+Chaque module, module de langue, thème et bibliothèque possède son propre référentiel Git. Chaque référentiel Git se synchronise automatiquement avec le référentiel Packagist privé et y génère un module tant qu’il y a un fichier `composer.json` à la racine du référentiel Git.
 
 ## Options 2 : packages en bloc
 
@@ -109,7 +109,7 @@ La structure de fichiers dans le répertoire du fournisseur doit ressembler à l
             └── composer.json
 ```
 
-La variable `composer.json` doit ressembler à ceci :
+Le fichier `composer.json` doit se présenter comme suit :
 
 ```json
 {
@@ -138,16 +138,16 @@ La variable `composer.json` doit ressembler à ceci :
 
 Cette architecture utilise quatre référentiels Git pour stocker du code :
 
-- `core`: contient l’installation principale d’Adobe Commerce. est utilisé pour mettre à niveau les versions d’Adobe Commerce.
-- `GRA`: contient le code GRA. Tous les modules GRA, modules de langue, thèmes de libellé blanc et bibliothèques.
-- `brand/region`: chaque marque ou région possède son propre référentiel avec uniquement du code spécifique à la marque ou à la région.
-- `release`: tous les éléments ci-dessus sont fusionnés dans ce référentiel Git. Seules les validations de fusion sont autorisées ici.
+- `core` : contient l’installation principale d’Adobe Commerce. est utilisé pour mettre à niveau les versions d’Adobe Commerce.
+- `GRA` : contient le code GRA. Tous les modules GRA, modules de langue, thèmes de libellé blanc et bibliothèques.
+- `brand/region` : chaque marque ou région possède son propre référentiel avec uniquement du code spécifique à la marque ou à la région.
+- `release` : tous les éléments ci-dessus sont fusionnés dans ce référentiel Git. Seules les validations de fusion sont autorisées ici.
 
 ![Diagramme illustrant l’option split Git pour l’architecture de référence globale](../../../assets/playbooks/gra-split-git.png)
 
 Pour configurer cette option :
 
-1. Créez les quatre types de référentiel dans Git. Créez le `core` et `GRA` référentiels une seule fois. En créer un `brand/region` et un `release` pour chaque marque.
+1. Créez les quatre types de référentiel dans Git. Créez les référentiels `core` et `GRA` une seule fois. Créez un référentiel `brand/region` et un référentiel `release` pour chaque marque.
 
    Noms de référentiel suggérés :
 
@@ -156,7 +156,7 @@ Pour configurer cette option :
    - `m2-region-x`/`m2-brand-x` (par exemple, `m2-emea`/`m2-adobe`)
    - `m2-release-region-x`/`m2-release-brand-x` (par exemple, `m2-release-emea`/`m2-release-adobe`)
 
-1. Créez un `release/` et exécutez le suivant pour créer un historique Git partagé pour tous les référentiels.
+1. Créez un répertoire `release/` et exécutez ce qui suit pour créer un historique Git partagé pour tous les référentiels.
 
    ```bash
    git init
@@ -173,7 +173,7 @@ Pour configurer cette option :
    git push region-x master
    ```
 
-1. Cloner chaque référentiel, sauf `core`, dans un autre répertoire de votre ordinateur.
+1. Cloner chaque référentiel, à l’exception de `core`, dans un répertoire différent sur votre ordinateur.
 
    ```bash
    git clone git@github.com:example-client/m2-release-brand-x.git
@@ -181,7 +181,7 @@ Pour configurer cette option :
    git clone git@github.com:example-client/m2-gra.git
    ```
 
-1. [Installation d’Adobe Commerce avec le compositeur](../../../installation/composer.md). Supprimez le `.gitignore` , ajoutez le fichier `core` à distance, ajoutez et validez le code, puis envoyez une notification push.
+1. [Installez Adobe Commerce avec le compositeur](../../../installation/composer.md). Supprimez le fichier `.gitignore`, ajoutez la télécommande `core`, ajoutez et validez le code, puis envoyez une notification push.
 
    ```bash
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition m2-core
@@ -196,18 +196,18 @@ Pour configurer cette option :
    git push
    ```
 
-1. Dans le `GRA` , créez les répertoires suivants :
+1. Dans le référentiel `GRA`, créez les répertoires suivants :
 
    - `app/code/`
    - `app/design/`
    - `app/i18n/`
    - `lib/`
 
-1. Ajoutez du code. Supprimez le `.gitignore` , ajoutez et validez le code, ajoutez la télécommande et push.
+1. Ajoutez du code. Supprimez le fichier `.gitignore`, ajoutez et validez le code, ajoutez la télécommande et poussez.
 
-1. Dans le `brand/region` référentiel. Faites de même que dans `GRA` et gardez à l’esprit que les fichiers doivent être uniques. Vous ne pouvez pas inclure le même fichier dans ce référentiel et dans la variable `GRA` référentiel.
+1. Dans le référentiel `brand/region`. Faites de même que dans le référentiel `GRA` et gardez à l’esprit que les fichiers doivent être uniques. Vous ne pouvez pas inclure le même fichier dans ce référentiel et dans le référentiel `GRA`.
 
-1. Dans le `release` , appliquez la fusion.
+1. Dans le référentiel `release`, appliquez la fusion.
 
    ```bash
    git clone git@github.com:example-client/m2-release-brand-x.git
@@ -220,9 +220,9 @@ Pour configurer cette option :
    git push
    ```
 
-1. Supprimez le `.gitkeep` fichier .
+1. Supprimez le fichier `.gitkeep`.
 
-1. Déployez la variable `release` vers les serveurs de production, de test, d’assurance qualité et de développement. Mise à niveau `core`, `GRA`, et `brand` Le code est aussi facile à exécuter les commandes suivantes :
+1. Déployez le référentiel `release` sur les serveurs de production, de test, d’assurance qualité et de développement. La mise à niveau du code `core`, `GRA` et `brand` est aussi facile à exécuter que les commandes suivantes :
 
    ```bash
    git fetch --all
@@ -255,16 +255,16 @@ Consultez les ressources suivantes pour plus d’informations sur cette automati
 
 ## Ne pas mélanger de stratégies
 
-Il n’est pas conseillé d’utiliser une approche combinée à l’aide du compositeur pour les modules GRA et de la variable `app/` pour les packages de marque ou de région.
+Il n’est pas recommandé d’utiliser une approche combinée à l’aide du compositeur pour les packages GRA et du répertoire `app/` pour les packages de marque ou de région.
 
-Vous n&#39;obtenez pas que tout _avantages_ mais aussi tous _inconvénients_ des deux méthodes. Vous devez choisir l’un ou l’autre (Git ou Compositeur) pour un fonctionnement optimal.
+Vous obtenez non seulement tous les _avantages_ mais également tous les _inconvénients_ des deux méthodes. Vous devez choisir l’un ou l’autre (Git ou Compositeur) pour un fonctionnement optimal.
 
 ## Solutions à éviter
 
 - **Conventions de dénomination des modules pour désigner la GRA ou la marque**
 
-  Attribuer un nom aux modules pour désigner la GRA ou la marque entraîne un manque de flexibilité. Utilisez plutôt des métaphores du compositeur pour déterminer à quel groupe appartient un module. Par exemple, pour le VF client, module `vf/meta-gra` contient des références à tous les packages GRA et peut être installé à l’aide de la variable `composer require vf/meta-gra` . Package `vf/meta-kipling` contient des références à tous les modules spécifiques Kipling et au `vf/meta-gra` module. Les modules sont nommés `vf/module-sales` et `vf/module-sap` par exemple. Cette convention d’affectation des noms vous permet de déplacer des modules entre l’état de la marque et l’état GRA, avec un faible impact.
+  Attribuer un nom aux modules pour désigner la GRA ou la marque entraîne un manque de flexibilité. Utilisez plutôt des métaphores du compositeur pour déterminer à quel groupe appartient un module. Par exemple, pour le VF client, le package `vf/meta-gra` contient des références à tous les packages GRA et peut être installé à l’aide de la commande `composer require vf/meta-gra`. Le package `vf/meta-kipling` contient des références à tous les packages spécifiques à Kipling et au package `vf/meta-gra`. Par exemple, les modules sont nommés `vf/module-sales` et `vf/module-sap`. Cette convention d’affectation des noms vous permet de déplacer des modules entre l’état de la marque et l’état GRA, avec un faible impact.
 
-- **Mises à niveau de base d’Adobe Commerce par instance**
+- **Mises à niveau de base Adobe Commerce par instance**
 
   Planifiez les mises à niveau de base d’Adobe Commerce, y compris les mises à niveau de correctif, pour que les différentes marques ou régions soient exécutées de manière aussi rapprochée que possible. La prise en charge de plusieurs versions d’Adobe Commerce pour les modules partagés entraîne le vidage des modules en raison de contraintes de compatibilité et plus que le double de l’effort de maintenance. Empêchez cette augmentation des efforts en veillant à ce que toutes les instances s’exécutent sur la même version d’Adobe Commerce avant de poursuivre le développement régulier.

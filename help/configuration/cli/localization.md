@@ -4,7 +4,7 @@ description: Découvrez comment générer des dictionnaires de traduction et cr�
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1432'
 ht-degree: 0%
 
 ---
@@ -13,16 +13,16 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Les traductions de commerce vous permettent de personnaliser et de localiser votre boutique pour plusieurs régions et marchés en générant :
+Les traductions de Commerce vous permettent de personnaliser et de localiser votre boutique pour plusieurs régions et marchés en générant :
 
-- **Dictionnaires de traduction**, qui sont un moyen pratique de personnaliser ou de traduire _some_ mots et expressions, comme ceux d’un module ou d’un thème personnalisé.
-- **Packages de langues** qui vous permettent de traduire _tout ou tout_ mots et expressions dans l’application Commerce.
+- **Dictionnaires de traduction**, qui sont un moyen pratique de personnaliser ou de traduire _certains_ mots et expressions, comme ceux pour un module ou un thème personnalisé.
+- **Packages de langues** qui vous permettent de traduire _tous les_ mots et expressions dans l’application Commerce.
 
 Voir [Présentation des traductions].
 
 ## Génération d’un dictionnaire de traduction
 
-Vous pouvez générer une [dictionnaire de traduction] pour personnaliser des chaînes existantes, traduire des mots et des expressions dans un module personnalisé, localiser un thème ou créer des modules de langue.
+Vous pouvez générer un [dictionnaire de traduction] pour personnaliser des chaînes existantes, traduire des mots et des expressions dans un module personnalisé, localiser un thème ou créer des modules de langue.
 
 Pour commencer la traduction, utilisez une commande pour générer un fichier CSV de dictionnaire avec une liste collectée de tous les mots et expressions existants.
 
@@ -33,9 +33,9 @@ Pour générer le dictionnaire et commencer la traduction :
 
    Vous disposez d’options pour utiliser le dictionnaire traduit :
 
-1. Vous pouvez regrouper les dictionnaires de traduction dans un module de langue et fournir le module à l’administrateur de la boutique de commerce.
+1. Vous pouvez regrouper les dictionnaires de traduction dans un module de langue et fournir le module à l’administrateur de magasin Commerce.
 
-1. Dans l’administrateur, l’administrateur de magasin [configure les traductions].
+1. Dans l&#39;administrateur, l&#39;administrateur de magasin [ configure les traductions].
 
 Options de commande :
 
@@ -48,22 +48,22 @@ Le tableau suivant explique les paramètres et les valeurs :
 | Paramètre | Valeur | Obligatoire ? |
 |--- |--- |--- |
 | `<path to directory to translate>` | Chemin d’accès à un répertoire comportant du code traduisible, c’est-à-dire des fichiers PHP, PHTML ou XML ayant des expressions à traduire.<br><br>L’outil commence la recherche à partir du chemin d’accès que vous saisissez et recherche tous les fichiers et sous-répertoires qu’il contient.<br><br>N’utilisez pas ce paramètre si vous utilisez `-m --magento`. | Oui (dictionnaires), non (packages). |
-| `-m --magento` | Requis pour créer un module de langue à partir de ce dictionnaire de traduction. En cas d’utilisation, recherche les répertoires contenant bin/magento. Cette option ajoute des thèmes ou des modules à chaque ligne du dictionnaire.<br><br>Voici un exemple :<br><br>&quot;Aucun élément trouvé&quot;, &quot;Aucun élément trouvé&quot;, module, Magento_Wishlist | Non |
-| `-o --output="<path>"` | Indique le chemin d’accès absolu au système de fichiers et le nom de fichier du fichier CSV du dictionnaire de traduction à créer. La valeur saisie est sensible à la casse. Le nom du fichier CSV doit correspondre exactement au nom du paramètre régional, y compris la casse des caractères.<br><br>Si vous omettez ce paramètre, la sortie est redirigée vers stdout. | Non |
+| `-m --magento` | Requis pour créer un module de langue à partir de ce dictionnaire de traduction. En cas d’utilisation, recherche les répertoires contenant bin/magento. Cette option ajoute des thèmes ou des modules à chaque ligne du dictionnaire.<br><br>Un exemple suit :<br><br>&quot;Aucun élément trouvé&quot;,&quot;Aucun élément trouvé&quot;,module,Magento_Wishlist | Non |
+| `-o --output="<path>"` | Indique le chemin d’accès absolu au système de fichiers et le nom de fichier du fichier CSV du dictionnaire de traduction à créer. La valeur saisie est sensible à la casse. Le nom du fichier CSV doit correspondre exactement au nom du paramètre régional, y compris la casse des caractères.<br><br>Si vous omettez ce paramètre, la sortie est dirigée vers stdout. | Non |
 
 >[!INFO]
 >
->Pour créer un module de langue à partir d’un dictionnaire de traduction, vous devez : _must_ utilisez la méthode `-m|--magento` .
+>Pour créer un module de langue à partir d’un dictionnaire de traduction, vous _devez_ utiliser l’option `-m|--magento` .
 
 ### Instructions de traduction
 
 Suivez les instructions ci-dessous pour traduire des mots et des expressions :
 
-- Modifiez uniquement le contenu de la seconde colonne. Traduisez les expressions en anglais (`US`) dans la langue souhaitée.
+- Modifiez uniquement le contenu de la seconde colonne. Traduisez les expressions de l’anglais (`US`) dans la langue souhaitée.
 - Lors de la création de dictionnaires pour les paramètres régionaux, utilisez les chaînes Commerce par défaut.
 - Lors de la traduction, prêtez attention aux espaces réservés : `%1`, `%2`
 
-Commerce utilise des espaces réservés pour insérer des valeurs contextuelles ; il s’agit de _not_ utilisé pour les traductions. Par exemple :
+Commerce utilise des espaces réservés pour insérer des valeurs contextuelles. Elles sont _et non_ utilisées pour les traductions. Par exemple :
 
 ```text
 Product '%1' has been added to shopping cart.
@@ -75,7 +75,7 @@ Remplit avec une valeur :
 Product 'Multimeter-2000' has been added to shopping cart.
 ```
 
-L’expression résultante doit contenir au moins un espace réservé. Supposons, par exemple, qu’il existe des espaces réservés issus de `%1` to `%3` dans l’expression d’origine. La traduction peut avoir autant d’espaces réservés dans n’importe quel ordre, mais il doit y avoir au moins une occurrence de `%1`, `%2`, et `%3`. La traduction ne peut pas contenir d’espaces réservés qui ne sont pas présents dans la valeur d’origine (par exemple, `%4`, `%5`, etc.).
+L’expression résultante doit contenir au moins un espace réservé. Par exemple, supposons qu’il existe des espaces réservés entre `%1` et `%3` dans l’expression d’origine. La traduction peut avoir autant d’espaces réservés dans n’importe quel ordre, mais il doit y avoir au moins une occurrence de `%1`, `%2` et `%3`. La traduction ne peut pas contenir de valeurs d’espace réservé non présentes dans la valeur d’origine (par exemple, `%4`, `%5`, etc.).
 
 Exemple de traduction d’une expression :
 
@@ -85,14 +85,14 @@ Exemple de traduction d’une expression :
 
 ## Créer un package de langue
 
-Contrairement à un dictionnaire de traduction, vous pouvez traduire n’importe quel ou tous les mots et expressions de l’application Commerce à l’aide d’un package de langue. Vous pouvez traduire un composant particulier, tel qu’un module ou un thème, à l’aide d’un dictionnaire de traduction. [En savoir plus sur les packages de langue].
+Contrairement à un dictionnaire de traduction, vous pouvez traduire n’importe quel ou tous les mots et expressions de l’application Commerce à l’aide d’un module de langue. Vous pouvez traduire un composant particulier, tel qu’un module ou un thème, à l’aide d’un dictionnaire de traduction. [En savoir plus sur les packages de langue].
 
 Cette section explique comment créer un module de langue, qui écrit des fichiers CSV dans des modules et des thèmes. Pour créer un package de langue, vous devez effectuer les tâches décrites dans les sections suivantes :
 
-1. [Collecte et traduction de mots et d’expressions](#generate-a-translation-dictionary). (La variable `--magento` est obligatoire.)
-1. [Exécution de la commande du module de langue](#run-the-language-package-command).
-1. [Création de répertoires et de fichiers](#create-directories-and-files).
-1. (Facultatif.) [Configuration de plusieurs packages pour une langue](#configure-multiple-packages-for-a-language).
+1. [Collecter et traduire des mots et des expressions](#generate-a-translation-dictionary). (Le paramètre `--magento` est requis.)
+1. [Exécutez la commande de module de langue](#run-the-language-package-command).
+1. [ Créez des répertoires et des fichiers ](#create-directories-and-files).
+1. (Facultatif) [Configurez plusieurs packages pour une langue](#configure-multiple-packages-for-a-language).
 
 ### Exécution de la commande du module de langue
 
@@ -106,8 +106,8 @@ Le tableau suivant explique les paramètres et valeurs de la commande du module 
 
 | Paramètre | Valeur | Obligatoire ? |
 |--- |--- |--- |
-| `<source>` | Chemin d’accès absolu au système de fichiers et nom de fichier d’un fichier CSV contenant le dictionnaire de traduction combiné et les méta-informations nécessaires à la ventilation dans un module de langue.<br><br>Utilisation [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) pour créer le fichier CSV, puis créez le module de langue comme décrit dans [Création de répertoires et de fichiers](#m2devgde-xlate-files). | Oui |
-| `<locale>` | [ISO 639-1] (langue) et [ISO 3166] (pays) identifiant de la langue utilisée comme nom de fichier pour tous les fichiers CSV obtenus. Exemples : `de_DE`, `pt_PT`, `pt_BR`. | Oui |
+| `<source>` | Chemin d’accès absolu au système de fichiers et nom de fichier d’un fichier CSV contenant le dictionnaire de traduction combiné et les méta-informations nécessaires à la ventilation dans un module de langue.<br><br>Utilisez [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) pour créer le fichier CSV, puis créez le module de langue comme décrit dans la section [Création de répertoires et de fichiers](#m2devgde-xlate-files). | Oui |
+| `<locale>` | [Identifiant ISO 639-1] (langue) et [ISO 3166] (pays) de la langue utilisée comme nom de fichier pour tous les fichiers CSV obtenus. Exemples : `de_DE`, `pt_PT`, `pt_BR`. | Oui |
 | `-m --mode` | Si un fichier cible existe, indique s’il faut remplacer le module de langue existant ou le fusionner avec le nouveau module de langue. La fusion remplace toutes les expressions qui existaient et en ajoute de nouvelles.<br><br>Valeurs : fusionner ou remplacer (par défaut). | Non |
 | `-d --allow-duplicates` | Incluez cette option pour autoriser les doublons dans le module de langue. Dans le cas contraire, la commande échoue avec une erreur si elle rencontre la même expression dans plusieurs entrées avec des traductions différentes. | Non |
 
@@ -117,7 +117,7 @@ Les modules de langue se trouvent dans un répertoire sous `app/i18n/<VendorName
 
 - Fichiers de licence requis
 - `composer.json`
-- `registration.php` that [registres] le package de langue
+- `registration.php` que [enregistre] le package de langue
 - [`language.xml`](#language-package-languagexml) fichier de méta-information
 
 >[!INFO]
@@ -128,18 +128,18 @@ Pour créer ces fichiers :
 
 1. Créez un répertoire sous `app/i18n`.
 
-   Par exemple, les modules de langue Commerce se trouvent dans `app/i18n/magento`
+   Par exemple, les modules de langue Commerce se trouvent dans `app/i18n/magento`.
 
 1. Ajoutez les fichiers de licence requis.
-1. Ajouter [`composer.json`] qui spécifie les dépendances pour votre module de langue.
+1. Ajoutez [`composer.json`] qui spécifie les dépendances pour votre package de langue.
 1. Enregistrez le package de langue avec [`registration.php`]
-1. Ajouter `language.xml` fichier de méta-information, comme décrit dans la section suivante.
+1. Ajoutez le fichier de métadonnées `language.xml` comme décrit dans la section suivante.
 
 #### Language Package language.xml
 
-Lors de la déclaration d’un module de langue dans la variable `language.xml` fichier de configuration, vous devez spécifier la séquence d’héritage de langue pour ce module.
+Lors de la déclaration d’un package de langue dans le fichier de configuration `language.xml`, vous devez spécifier la séquence d’héritage de langue pour ce package.
 
-L’héritage de langue vous permet de créer une traduction appelée _child_ sur la base d’une traduction existante appelée _parent_. Les traductions enfants remplacent le parent. Cependant, si le téléchargement ou l’affichage de la traduction enfant échoue ou si une expression ou un mot manque, Commerce utilise le paramètre régional parent. [Exemples d’héritage de package de langue](#example-of-language-inheritance).
+L’héritage de langue vous permet de créer une traduction appelée _child_ à partir d’une traduction existante appelée _parent_. Les traductions enfants remplacent le parent. Toutefois, si le téléchargement ou l’affichage de la traduction enfant échoue ou si une expression ou un mot manque, Commerce utilise le paramètre régional parent. [Exemples d’héritage de package de langue](#example-of-language-inheritance).
 
 Pour déclarer un package, indiquez les informations suivantes :
 
@@ -156,11 +156,11 @@ Pour déclarer un package, indiquez les informations suivantes :
 
 Où :
 
-- `code`—Paramètre régional du package de langue (obligatoire)
-- `vendor`—Nom du fournisseur du module (obligatoire)
-- `package`—Nom du package de langue (obligatoire)
-- `sort_order`: priorité de chargement d’un module lorsque plusieurs modules de langue sont disponibles pour un magasin.
-- `use`: paramètre régional du package de langue parente à partir duquel hériter des dictionnaires
+- `code` : paramètres régionaux du package de langue (requis)
+- `vendor` : nom du fournisseur du module (obligatoire)
+- `package` : nom du package de langue (obligatoire)
+- `sort_order` : priorité de chargement d’un module lorsqu’il existe plusieurs modules de langue disponibles pour un magasin.
+- `use` : paramètre régional du package de langue parente à partir duquel hériter des dictionnaires
 
 Si nécessaire, vous pouvez spécifier plusieurs packages parents. Les packages parents sont appliqués sur la première base répertoriée, la première utilisée.
 
@@ -168,7 +168,7 @@ Si nécessaire, vous pouvez spécifier plusieurs packages parents. Les packages 
 
 Supposons qu’un module de langue hérite de deux autres modules et que ces derniers possèdent également des modules parents et &quot;grand-parents&quot;.
 
-Si un module de langue hérite de deux modules, son `language.xml` peut se présenter comme suit :
+Si un package de langue hérite de deux packages, son `language.xml` peut ressembler à ce qui suit :
 
 ```xml
 <language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
@@ -186,7 +186,7 @@ Dans l’exemple précédent :
 - `language_package_one` hérite de `en_au_package` et `en_au_package` hérite de `en_ie_package`
 - `language_package_two` hérite de `en_ca_package` et `en_ca_package` hérite de `en_us_package`
 
-Si l’application Commerce ne trouve pas de mot ou d’expression dans la variable `en_GB` module, il recherche dans d’autres modules dans l’ordre suivant :
+Si l’application Commerce ne trouve pas de mot ou d’expression dans le package `en_GB`, elle recherche dans d’autres packages dans l’ordre suivant :
 
 1. `parent-package-one/language_package_one`
 1. `<vendorname>/en_au_package`
@@ -195,13 +195,13 @@ Si l’application Commerce ne trouve pas de mot ou d’expression dans la varia
 1. `<vendorname>/en_ca_package`
 1. `<vendorname>/en_us_package`
 
-La spécification de tous les héritages entre les packages de langue peut entraîner la création de chaînes d’héritage circulaires. Utilisation [Magento\Test\Integrity\App\Language\CircularDependencyTest] tester pour localiser et corriger de telles chaînes.
+La spécification de tous les héritages entre les packages de langue peut entraîner la création de chaînes d’héritage circulaires. Utilisez le test [Magento\Test\Integrity\App\Language\CircularDependencyTest] pour localiser et corriger ces chaînes.
 
 ### Configuration de plusieurs packages pour une langue
 
 Pour vous aider à rendre votre boutique plus flexible, vous pouvez charger plusieurs modules de langue pour la même langue dans votre boutique. Ainsi, vous pouvez utiliser différents packages personnalisés pour différentes parties de votre magasin, car le système compile un seul package à partir de tous les packages disponibles pour une langue.
 
-Pour activer un module supplémentaire pour une langue existante, nommez le nouveau module sous un nom quelconque, à l’exception d’un nom de code de langue existant (afin d’éviter toute confusion). Spécifier les configurations d’un module dans le `language.xml` fichier de méta-information, comme décrit dans la section suivante.
+Pour activer un module supplémentaire pour une langue existante, nommez le nouveau module sous un nom quelconque, à l’exception d’un nom de code de langue existant (afin d’éviter toute confusion). Spécifiez les configurations d’un package dans le fichier de méta-information `language.xml` du package de langue, comme décrit dans la section suivante.
 
 ## Exemples d’utilisation des commandes de traduction
 
@@ -219,10 +219,10 @@ Pour ajouter une traduction allemande à un module ou à un thème que vous souh
 
    >[!INFO]
    >
-   >Le nom du fichier CSV doit _correspond exactement_ le paramètre régional, y compris la casse des caractères.
+   >Le nom du fichier CSV doit _correspondre exactement à_ le paramètre régional, y compris la casse des caractères.
 
 1. Traduisez les mots et expressions à l’aide de [ces instructions](#translation-guidelines).
-1. Si nécessaire, copiez `xx_YY.csv` to `/var/www/html/magento2/app/code/ExampleCorp/SampleModule/i18n` ou au répertoire de thèmes du module (selon que le dictionnaire de traduction est pour un module ou un thème).
+1. Si nécessaire, copiez `xx_YY.csv` vers `/var/www/html/magento2/app/code/ExampleCorp/SampleModule/i18n` ou dans le répertoire de thèmes du module (selon que le dictionnaire de traduction est pour un module ou un thème).
 
 ### Exemple : créer un package de langue
 
@@ -236,7 +236,7 @@ Comme dans l’exemple précédent, générez un fichier CSV, mais au lieu de sp
 
    >[!INFO]
    >
-   >Le nom du fichier CSV doit _correspond exactement_ le paramètre régional, y compris la casse des caractères.
+   >Le nom du fichier CSV doit _correspondre exactement à_ le paramètre régional, y compris la casse des caractères.
 
 1. Traduisez les mots et expressions à l’aide de [ces instructions](#translation-guidelines).
 1. Créez le package de langue.
@@ -256,7 +256,7 @@ Comme dans l’exemple précédent, générez un fichier CSV, mais au lieu de sp
    - `registration.php` (exemple de suivi)
    - `language.xml` (exemple de suivi)
 
-   **Exemple`composer.json`**:
+   **Exemple`composer.json`** :
 
    ```json
    {
@@ -279,7 +279,7 @@ Comme dans l’exemple précédent, générez un fichier CSV, mais au lieu de sp
    }
    ```
 
-   **Exemple`registration.php`**:
+   **Exemple`registration.php`** :
 
    ```php
    <?php
@@ -297,7 +297,7 @@ Comme dans l’exemple précédent, générez un fichier CSV, mais au lieu de sp
    );
    ```
 
-   **Exemple`language.xml`**:
+   **Exemple`language.xml`** :
 
    ```xml
    <?xml version="1.0"?>

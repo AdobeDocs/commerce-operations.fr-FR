@@ -5,7 +5,7 @@ exl-id: 9ac485c5-d491-4022-9366-5e3a382513b6
 feature: Best Practices
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1532'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Les questions suivantes peuvent servir de point de départ pour déterminer quel
 
 - Combien de vos analystes techniques seront affectés à ce projet ?
 
-- Combien de vos développeurs de HTML seront affectés à ce projet ?
+- Combien de vos développeurs d’HTML seront affectés à ce projet ?
 
 - Quelle documentation existe pour les processus d’entreprise actuels ?
 
@@ -252,7 +252,7 @@ Existe-t-il des API qui peuvent être utilisées ?
 
 - Permettrez-vous à un client de lancer l’annulation d’une commande à partir du site web ?
 
-- Permettrez-vous à un client de lancer l’échange d’articles à partir du site web ?
+- Permettrez-vous à un client de lancer l’exchange d’éléments à partir du site web ?
 
 - Avez-vous besoin d’une validation d’adresse en temps réel ?
 

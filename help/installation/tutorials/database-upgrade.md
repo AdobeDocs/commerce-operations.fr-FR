@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Mise à niveau du schéma et des données de la base de données
 
-Avant d’utiliser cette commande, vous devez : [installation de l’application](../advanced.md).
+Avant d&#39;utiliser cette commande, vous devez [installer l&#39;application](../advanced.md).
 
 ## Mise à niveau du schéma et des données de la base de données
 
@@ -23,7 +23,7 @@ Chaque fois que vous effectuez une action qui entraîne la modification du sché
 
 >[!NOTE]
 >
->A *component* peut être un module, un thème ou un module de langue ; peu importe que le composant vienne du Commerce Marketplace ou non.
+>Un *composant* peut être un module, un thème ou un module de langue ; peu importe que le composant provienne ou non du Commerce Marketplace.
 
 1. Démarrez la mise à niveau :
 
@@ -31,7 +31,7 @@ Chaque fois que vous effectuez une action qui entraîne la modification du sché
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   Où `--keep-generated` est un argument facultatif qui ne met pas à jour [fichiers d’affichage statique](../../configuration/cli/static-view-file-deployment.md). Cet argument facultatif est à utiliser *only* dans des circonstances limitées par des intégrateurs système expérimentés. Il doit être utilisé. *only* in [mode de production](../../configuration/bootstrap/application-modes.md#production-mode). Elle devrait *not* être utilisé dans [mode développeur](../../configuration/bootstrap/application-modes.md#developer-mode).
+   Où `--keep-generated` est un argument facultatif qui ne met pas à jour les [fichiers de vue statique](../../configuration/cli/static-view-file-deployment.md). Cet argument facultatif est destiné à l’utilisation de *only* dans des circonstances limitées par des intégrateurs système expérimentés. Il doit être utilisé *uniquement* en [mode de production](../../configuration/bootstrap/application-modes.md#production-mode). Il doit *ne pas* être utilisé en [mode développeur](../../configuration/bootstrap/application-modes.md#developer-mode).
 
 1. Nettoyez le cache :
 

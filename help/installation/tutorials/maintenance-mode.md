@@ -11,24 +11,24 @@ ht-degree: 0%
 
 # Activer ou désactiver le mode de maintenance
 
-Le guide suivant fait référence à une page de mode de maintenance standard. Si vous devez utiliser une page de maintenance personnalisée, voir [Création d’une page de maintenance personnalisée](../../upgrade/troubleshooting/maintenance-mode-options.md) rubrique.
+Le guide suivant fait référence à une page de mode de maintenance standard. Si vous devez utiliser une page de maintenance personnalisée, consultez la rubrique [Création de la page de maintenance personnalisée](../../upgrade/troubleshooting/maintenance-mode-options.md) .
 
-Adobe Commerce utilise [mode de maintenance](../../configuration/bootstrap/application-modes.md#maintenance-mode) pour désactiver le démarrage. La désactivation de l’amorçage s’avère utile lorsque vous maintenez, mettez à niveau ou reconfigurez votre site.
+Adobe Commerce utilise le [mode de maintenance](../../configuration/bootstrap/application-modes.md#maintenance-mode) pour désactiver le démarrage. La désactivation de l’amorçage s’avère utile lorsque vous maintenez, mettez à niveau ou reconfigurez votre site.
 
 L&#39;application détecte le mode de maintenance comme suit :
 
-* If `var/.maintenance.flag` n’existe pas, le mode de maintenance est désactivé et l’application fonctionne normalement.
+* Si `var/.maintenance.flag` n’existe pas, le mode de maintenance est désactivé et l’application fonctionne normalement.
 * Sinon, le mode de maintenance est activé, sauf si `var/.maintenance.ip` existe.
 
   `var/.maintenance.ip` peut contenir une liste d’adresses IP. Si un point d’entrée est accessible en HTTP et que l’adresse IP du client correspond à l’une des entrées de cette liste, le mode de maintenance est désactivé.
 
 ## Installation de l’application
 
-Avant d’utiliser cette commande pour activer ou désactiver le mode de maintenance, vous devez : [installation de l’application](../advanced.md).
+Avant d&#39;utiliser cette commande pour activer ou désactiver le mode de maintenance, vous devez [installer l&#39;application](../advanced.md).
 
 ## Activer ou désactiver le mode de maintenance
 
-Utilisez la variable `magento maintenance` Commande de l’interface de ligne de commande pour activer ou désactiver le mode de maintenance.
+Utilisez la commande d&#39;interface de ligne de commande `magento maintenance` pour activer ou désactiver le mode de maintenance.
 
 Utilisation des commandes :
 
@@ -44,13 +44,13 @@ bin/magento maintenance:disable [--ip=<ip address> ... --ip=<ip address>] | [ip=
 bin/magento maintenance:status
 ```
 
-La variable `--ip=<ip address>` est une adresse IP qui permet d’exempter le mode de maintenance (par exemple, les développeurs effectuant la maintenance). Pour exempter plusieurs adresses IP dans la même commande, utilisez l’option plusieurs fois.
+L’option `--ip=<ip address>` est une adresse IP qui permet d’exempter le mode de maintenance (par exemple, les développeurs effectuant la maintenance). Pour exempter plusieurs adresses IP dans la même commande, utilisez l’option plusieurs fois.
 
 >[!NOTE]
 >
->Utilisation `--ip=<ip address>` avec `magento maintenance:disable` enregistre la liste des adresses IP en vue d’une utilisation ultérieure. Pour effacer la liste des adresses IP exemptées, utilisez `magento maintenance:enable --ip=none` ou voir [Maintenir la liste des adresses IP exemptées](#maintain-the-list-of-exempt-ip-addresses).
+>L’utilisation de `--ip=<ip address>` avec `magento maintenance:disable` enregistre la liste des adresses IP en vue d’une utilisation ultérieure. Pour effacer la liste des adresses IP exemptées, utilisez `magento maintenance:enable --ip=none` ou reportez-vous à la section [Maintenance de la liste des adresses IP exemptées](#maintain-the-list-of-exempt-ip-addresses).
 
-La variable `bin/magento maintenance:status` affiche l’état du mode de maintenance.
+La commande `bin/magento maintenance:status` affiche l’état du mode de maintenance.
 
 Par exemple, pour activer le mode de maintenance sans dispenses d’adresses IP :
 
@@ -65,30 +65,30 @@ bin/magento maintenance:enable --ip=192.0.2.10 --ip=192.0.2.11
 ```
 
 Après avoir mis l’application en mode de maintenance, vous devez arrêter tous les processus consommateurs de la file d’attente des messages.
-L’une des manières de trouver ces processus consiste à exécuter la variable `ps -ef | grep queue:consumers:start` puis exécutez la commande `kill <process_id>` pour chaque consommateur. Dans un environnement à plusieurs noeuds, répétez cette tâche sur chaque noeud.
+Une méthode pour trouver ces processus consiste à exécuter la commande `ps -ef | grep queue:consumers:start`, puis à exécuter la commande `kill <process_id>` pour chaque consommateur. Dans un environnement à plusieurs noeuds, répétez cette tâche sur chaque noeud.
 
 ## Maintenir la liste des adresses IP exemptées
 
-Pour conserver la liste des adresses IP exemptées, vous pouvez utiliser la variable `[--ip=<ip list>]` dans les commandes précédentes ou vous pouvez utiliser les options suivantes :
+Pour conserver la liste des adresses IP exemptées, vous pouvez utiliser l’option `[--ip=<ip list>]` dans les commandes précédentes ou utiliser les éléments suivants :
 
 ```bash
 bin/magento maintenance:allow-ips <ip address> .. <ip address> [--none]
 ```
 
-La variable `<ip address> .. <ip address>` La syntaxe est une liste facultative d’adresses IP à exempter délimitée par des espaces.
+La syntaxe `<ip address> .. <ip address>` est une liste facultative délimitée par des espaces d’adresses IP à exempter.
 
-La variable `--none` efface la liste.
+L’option `--none` efface la liste.
 
 ## Configurations multi-magasin
 
 <!-- To set up multiple stores, each with a different layout and localized content, create a skin for each and put it into `pub/errors/{name}` where `{name}` is the store code. To distinguish between stores and websites with the same instance, use `pub/errors/{type}-{name}` where `{type}` is either `store` or `website` and matches the `MAGE_RUN_TYPE` in your server configuration. Another option is to pass the `$_GET['skin']` parameter to the intended processor. This method requires a specific configuration on your server. -->
 <!-- Replace the line below with the commented text after https://github.com/magento/magento2/pull/35095 is merged. -->
 
-Si vous souhaitez configurer plusieurs magasins, chacun avec une disposition différente et un contenu localisé, transmettez la variable `$_GET['skin']` au processeur prévu.
+Si vous souhaitez configurer plusieurs magasins, chacun avec une disposition différente et un contenu localisé, transmettez le paramètre `$_GET['skin']` au processeur prévu.
 
-Dans l’exemple suivant, nous utilisons une `503` type fichier de modèle d’erreur, qui nécessite du contenu localisé.
+Dans l’exemple suivant, nous utilisons un fichier de modèle d’erreur de type `503` qui nécessite du contenu localisé.
 
-Le constructeur de la variable `Error_Processor` accepte une classe `skin` paramètre de GET pour modifier la mise en page :
+Le constructeur de la classe `Error_Processor` accepte un paramètre de GET `skin` pour modifier la mise en page :
 
 ```php
 if (isset($_GET['skin'])) {
@@ -96,15 +96,15 @@ if (isset($_GET['skin'])) {
 }
 ```
 
-Vous pouvez également l’ajouter à une règle de réécriture dans la variable `.htaccess` qui ajoute un `skin` à l’URL.
+Vous pouvez également l’ajouter à une règle de réécriture dans le fichier `.htaccess` qui ajoute un paramètre `skin` à l’URL.
 
-### $_GET[&#39;peau&#39;] parameter
+### Paramètre $_GET[&#39;peau&#39;]
 
-Pour utiliser la variable `skin` parameter:
+Pour utiliser le paramètre `skin` :
 
-1. Vérifiez si la variable `.maintenance.flag` existe.
-1. Notez l’adresse hôte, qui fait référence au `HTTP_HOST`ou toute autre variable telle que les variables ENV.
-1. Vérifiez si la variable `skin` existe.
+1. Vérifiez si le `.maintenance.flag` existe.
+1. Notez l’adresse de l’hôte, qui fait référence à `HTTP_HOST`, ou toute autre variable telle que les variables ENV.
+1. Vérifiez si le paramètre `skin` existe.
 1. Définissez le paramètre à l’aide des règles de réécriture ci-dessous.
 
    Voici quelques exemples de règles de réécriture :
@@ -116,13 +116,13 @@ Pour utiliser la variable `skin` parameter:
 
 1. Copiez les fichiers suivants :
 
-   * `pub/errors/default/503.phtml` to `pub/errors/sub/503.phtml`
-   * `pub/errors/default/css/styles.css` to `pub/errors/sub/styles.css`
+   * `pub/errors/default/503.phtml` à `pub/errors/sub/503.phtml`
+   * `pub/errors/default/css/styles.css` à `pub/errors/sub/styles.css`
 
-1. Modifiez ces fichiers pour fournir du contenu localisé dans la `503.phtml` et le style personnalisé dans la variable `styles.css` fichier .
+1. Modifiez ces fichiers pour fournir du contenu localisé dans le fichier `503.phtml` et des styles personnalisés dans le fichier `styles.css`.
 
-   Assurez-vous que vos chemins pointent vers vos `errors` répertoire . Le nom du répertoire doit correspondre au paramètre d’URL indiqué dans la variable `RewriteRule`. Dans l’exemple précédent, la variable `sub` est utilisé, qui est spécifié en tant que paramètre dans la variable `RewriteRule` (`skin=sub`)
+   Vérifiez que vos chemins d’accès pointent vers votre répertoire `errors`. Le nom du répertoire doit correspondre au paramètre d’URL indiqué dans le `RewriteRule`. Dans l’exemple précédent, le répertoire `sub` est utilisé, qui est spécifié comme paramètre dans le `RewriteRule` (`skin=sub`)
 
 >[!NOTE]
 >
->La variable [nginx](../../configuration/multi-sites/ms-nginx.md) doit être ajouté pour les configurations multi-magasin.
+>Le paramètre [nginx](../../configuration/multi-sites/ms-nginx.md) doit être ajouté pour les configurations multi-magasin.

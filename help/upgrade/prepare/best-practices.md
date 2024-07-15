@@ -26,7 +26,7 @@ Le niveau d’effort nécessaire à la mise à niveau de votre instance Adobe Co
 
 - **Comment avez-vous créé votre site ?** La quantité de travail personnalisé et le nombre de modules tiers installés affectent fortement la complexité d’une mise à niveau. La qualité du travail et des modules personnalisés peut déterminer si une mise à niveau se déroule sans problème.
 
-- **Ignorez-vous plusieurs versions ?** Ignorer les versions rend la mise à niveau suivante plus complexe, la mise à niveau à partir de versions conséquentes rend le processus plus facile et moins coûteux.
+- **Ignorez-vous plusieurs versions ?** Si vous ignorez les versions, la mise à niveau suivante à partir de versions conséquentes rend le processus plus facile et moins coûteux.
 
 - **Quel type de mise à niveau effectuez-vous ?** Une mise à niveau vers une version mineure (de 2.3.x à 2.4.0, par exemple) est plus étendue qu’une mise à niveau entre les versions de correctif (de 2.4.2 à 2.4.3, par exemple). Les mises à niveau de sécurité sont le type le plus facile à mettre en oeuvre.
 
@@ -49,19 +49,19 @@ Commencez à adopter la plateforme d’extensibilité d’Adobe Commerce, si ce 
 
 - **Extensibilité de l’interface utilisateur**. Étendez et développez votre storefront indépendamment de votre backend et de votre middleware à l’aide de [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/).
 
-- **Extensibilité des API**. Utilisation [GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html) pour étendre la couche d’API Web en adaptant le modèle de données graphique et en exécutant des fonctions lambda directement à partir de la couche graphique.
+- **Extensibilité de l’API**. Utilisez [GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html) pour étendre la couche d’API Web en évoluant le modèle de données graphiques et en exécutant des fonctions lambda directement à partir de la couche de graphique.
 
-- **Adobe I/O de middleware et services**. Connectez vos systèmes à Adobe Commerce à l’aide du middleware d’Adobe et d’une suite de connexions d’applications reposant sur [Adobe I/O](https://www.adobe.io/). En outre, vous pouvez étendre les fonctionnalités de base de la plateforme en remplaçant le comportement par défaut par votre propre logique métier qui s’exécute sur Adobe I/O.
+- **Adobe I/O du middleware et des services**. Connectez vos systèmes à Adobe Commerce à l’aide du middleware d’Adobe et d’une suite de connexions d’applications créées sur [Adobe I/O](https://www.adobe.io/). En outre, vous pouvez étendre les fonctionnalités de base de la plateforme en remplaçant le comportement par défaut par votre propre logique métier qui s’exécute sur Adobe I/O.
 
 ### Planification des mises à niveau
 
 Alors que nous développons continuellement les fonctionnalités d’Adobe Commerce, il est essentiel que vous développiez la dernière version disponible et définissiez une stratégie de mise à niveau dans vos plans de projet. Cela vous permet de rester sécurisé, conforme et à jour par rapport aux dernières améliorations qui vous permettent d’augmenter plus rapidement les ventes, de fonctionner plus efficacement et de garder l’avance sur votre concurrence maintenant et à l’avenir.
 
-Pour vous aider à planifier et à budgéter les mises à niveau, vous devez surveiller nos [calendrier de publication](https://devdocs.magento.com/release). Planifiez à l’avance les tâches de mise à niveau dans le délai d’attente de votre équipe. Visez à terminer ce travail avec GA.
+Pour vous aider à planifier et à respecter le budget des mises à niveau, vous devez surveiller notre [calendrier de publication](https://devdocs.magento.com/release). Planifiez à l’avance les tâches de mise à niveau dans le délai d’attente de votre équipe. Visez à terminer ce travail avec GA.
 
 - Utilisez la version préliminaire pour en savoir plus sur chaque nouvelle version. Une version préliminaire est un code de disponibilité générale disponible pour les marchands Adobe Commerce et tous les partenaires deux semaines avant la disponibilité générale. Si vous disposez de plusieurs magasins, utilisez la version préliminaire de votre magasin de base et vérifiez que vos modules et thèmes personnalisés sont compatibles avec celui-ci.
 
-- Consultez la section [Liste de contrôle du plan de mise à niveau](https://support.magento.com/hc/en-us/articles/360057968951) pour Adobe Commerce afin de vous aider à planifier votre mise à niveau.
+- Consultez la liste de contrôle [Plan de mise à niveau](https://support.magento.com/hc/en-us/articles/360057968951) pour Adobe Commerce afin de vous aider à planifier votre mise à niveau.
 
 - Planifiez les upgrades au début de l&#39;année. Vous devez réserver un budget et des ressources pour terminer chaque upgrade. N’oubliez pas que l’effort de mise à niveau peut varier considérablement d’un projet à l’autre. Utilisez vos expériences et vos connaissances pour rendre un plan aussi précis que possible.
 
@@ -73,16 +73,16 @@ Les mises à niveau doivent être effectuées régulièrement et sous la forme d
 
 Évaluer le travail à effectuer pour la mise à niveau :
 
-- Consultez la section [notes de mise à jour](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) pour comprendre la portée et l’impact de la nouvelle version.
+- Passez en revue les [notes de mise à jour](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) pour comprendre la portée et l’impact de la nouvelle version.
 
-- Utilisez la variable [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) pour identifier les problèmes potentiels qui doivent être résolus dans votre code personnalisé avant de tenter une mise à niveau vers une version plus récente.
+- Utilisez [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) pour identifier les problèmes potentiels qui doivent être corrigés dans votre code personnalisé avant de tenter une mise à niveau vers une version plus récente.
 
 - Si vous utilisez des extensions tierces, validez leur compatibilité avec la version cible vers laquelle vous envisagez d’effectuer la mise à niveau.
 
-### Test après la mise à niveau
+### Test de mise à niveau de Post
 
-Le test est la phase de mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. Vous pouvez bénéficier de l’utilisation des outils de test de base. La variable [Guide de test d’application](https://developer.adobe.com/commerce/testing/guide/) fournit des détails.
+Le test est la phase de mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. Vous pouvez bénéficier de l’utilisation des outils de test de base. Le [Guide de test d’application](https://developer.adobe.com/commerce/testing/guide/) fournit des détails.
 
 Utilisez un environnement d’évaluation pour tester et valider votre mise à niveau avant de passer en production.
 
-Utilisez un **page de maintenance**. La préparation préalable de cette page vous permet de communiquer avec vos clients, les informant que le travail est en cours en arrière-plan. Cette page doit être visible pendant quelques minutes, mais en cas de problème, vous devrez peut-être l’utiliser plus longtemps. Disposer du contenu et de la conception appropriés pour votre page de maintenance offre aux utilisateurs une expérience optimale, même lorsque votre boutique n’est pas disponible.
+Utilisez une **page de maintenance**. La préparation préalable de cette page vous permet de communiquer avec vos clients, les informant que le travail est en cours en arrière-plan. Cette page doit être visible pendant quelques minutes, mais en cas de problème, vous devrez peut-être l’utiliser plus longtemps. Disposer du contenu et de la conception appropriés pour votre page de maintenance offre aux utilisateurs une expérience optimale, même lorsque votre boutique n’est pas disponible.

@@ -5,7 +5,7 @@ feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
 source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -14,27 +14,27 @@ ht-degree: 0%
 
 Vous pouvez disposer d’un système de génération qui répond aux exigences suivantes :
 
-- L’ensemble du code Commerce est contrôlé par la source dans le même référentiel que les systèmes de développement et de production.
-- Assurez-vous que tous les éléments suivants sont _included_ dans le contrôle de code source :
+- Tout le code Commerce est contrôlé par la source dans le même référentiel que les systèmes de développement et de production.
+- Assurez-vous que tous les éléments suivants sont _inclus_ dans le contrôle source :
 
    - `app/etc/config.php`
-   - `generated` répertoire (et sous-répertoires)
-   - `pub/media` directory
-   - `pub/media/wysiwyg` répertoire (et sous-répertoires)
-   - `pub/static` répertoire (et sous-répertoires)
+   - Répertoire `generated` (et sous-répertoires)
+   - répertoire `pub/media`
+   - Répertoire `pub/media/wysiwyg` (et sous-répertoires)
+   - Répertoire `pub/static` (et sous-répertoires)
 
 - Doit avoir une version PHP compatible installée
 - Composer doit être installé
-- Il dispose de la propriété du système de fichiers et d’autorisations définies comme décrit dans [Conditions préalables pour vos systèmes de développement, de génération et de production](../deployment/technical-details.md).
+- Il dispose de droits de propriété et d’autorisations du système de fichiers, comme décrit dans la section [Condition préalable requise pour votre développement, création et production ](../deployment/technical-details.md).
 - Le système de génération n’a pas besoin que Commerce soit installé, mais le code doit être disponible.
 
 >[!WARNING]
 >
->La connexion à la base de données n’est pas requise si elle est déjà contenue dans `config.php`; voir [Exporter la configuration](../cli/export-configuration.md). Sinon, la connexion à la base de données est requise.
+>La connexion à la base de données n&#39;est pas requise si elle est déjà contenue dans `config.php`. Voir [Exporter la configuration](../cli/export-configuration.md). Sinon, la connexion à la base de données est requise.
 
 >[!INFO]
 >
->L’ordinateur de génération peut se trouver sur son propre hôte ou sur le même hôte qu’un système Commerce installé.
+>La machine de génération peut se trouver sur son propre hôte ou sur le même hôte qu’un système Commerce installé.
 
 ## Configuration de l’ordinateur de génération
 
@@ -67,11 +67,11 @@ Pour installer le compositeur :
    mv composer.phar /usr/local/bin/composer
    ```
 
-Pour connaître les autres options d’installation, voir [Documentation sur l’installation du compositeur][composer].
+Pour plus d’options d’installation, voir la [documentation d’installation du compositeur][composer].
 
 ### Installer PHP
 
-Installer PHP [CentOS] ou [Ubuntu].
+Installez PHP sur [CentOS] ou [ ].
 
 ### Configuration du système de génération
 
@@ -86,7 +86,7 @@ Pour configurer le système de génération :
    git clone [-b <branch name>] <repository URL>
    ```
 
-1. Modifiez le répertoire racine de Commerce et saisissez :
+1. Accédez au répertoire racine Commerce et saisissez :
 
    ```bash
    composer install
@@ -106,7 +106,7 @@ Pour configurer le système de génération :
    ```
 
 1. Si vous utilisez Git, ouvrez `.gitignore` dans un éditeur de texte.
-1. Commencez chacune des lignes suivantes par une `#` pour les commenter :
+1. Démarrez chacune des lignes suivantes avec un caractère `#` pour les commenter :
 
    ```conf
    # app/etc/config.php
@@ -124,15 +124,15 @@ Pour configurer le système de génération :
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   Voir [`.gitignore` reference](../reference/config-reference-gitignore.md) pour plus d’informations.
+   Pour plus d’informations, voir la [`.gitignore` référence](../reference/config-reference-gitignore.md) .
 
-1. Le système de génération doit utiliser [mode par défaut](../bootstrap/application-modes.md#default-mode) ou [mode développeur](../bootstrap/application-modes.md#developer-mode):
+1. Le système de génération doit utiliser le [mode par défaut](../bootstrap/application-modes.md#default-mode) ou le [mode développeur](../bootstrap/application-modes.md#developer-mode) :
 
    ```bash
    bin/magento deploy:mode:set <mode>
    ```
 
-   `<mode>` est obligatoire. Cela peut être soit `default` ou `developer`.
+   `<mode>` est requis. Il peut s’agir de `default` ou de `developer`.
 
 <!-- Link Definitions -->
 

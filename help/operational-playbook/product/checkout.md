@@ -5,7 +5,7 @@ exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
 feature: Best Practices, Checkout
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Le passage en caisse est un élément essentiel des achats en ligne. C&#39;est l
 
 Le flux de passage en caisse est semblable à la ligne d’arrivée, où les acheteurs se transforment en clients effectuant des transactions. Cependant, même un petit creux dans le passage en caisse peut avoir un énorme impact négatif sur le taux de conversion et le retour sur investissement, donc, l’amélioration du taux de conversion, même légèrement, peut contribuer à l’augmentation massive du retour sur investissement. L’amélioration des flux et processus de passage en caisse commence avant même la page de passage en caisse.
 
-![Diagramme de flux de processus de passage en caisse](../../assets/playbooks/checkout-diagram.png)
+![ Diagramme de flux de processus de passage en caisse](../../assets/playbooks/checkout-diagram.png)
 
 ## Pages de produit
 
@@ -69,7 +69,7 @@ Ne forcez pas un type d’option sur l’utilisateur.
 
 Les détaillants doivent fournir différentes méthodes d’expédition pour répondre aux besoins de différents clients.
 
-Outre les options de paiement, les détaillants peuvent également proposer des options telles que [cliquer et collecter](click-collect.md).
+Outre les options de paiement, les détaillants peuvent également fournir des options telles que [cliquer et collecter](click-collect.md).
 
 ## Détails du paiement
 
@@ -107,7 +107,7 @@ Il existe une différence entre les flux et les processus de passage en caisse B
 - Différentes options de paiement, telles que la carte de crédit et le portefeuille électronique
 - Possibilité d’ajouter du code de coupon au passage en caisse
 
-![Diagramme de paiement B2C](../../assets/playbooks/checkout-b2c.png)
+![Diagramme de passage en caisse B2C](../../assets/playbooks/checkout-b2c.png)
 
 ### B2B
 

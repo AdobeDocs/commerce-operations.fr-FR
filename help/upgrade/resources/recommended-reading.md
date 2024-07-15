@@ -66,7 +66,7 @@ Continuez à découvrir les mises à niveau d’Adobe Commerce en utilisant les 
             <li><a href="recommended-upgrade-paths.md">Chemins de mise à niveau recommandés</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 Enregistrement de l’atelier de mise à niveau technique</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html">Accès aux versions préliminaires</a></li>
-            <li><a href="../../release/beta.md">Présentation des versions bêta</a></li>
+            <li><a href="../../release/beta.md">Présentation des versions de Beta</a></li>
             <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/">Développement incompatible avec le passé</a></li>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/">Modifications incompatibles en amont</a></li>
             <li><a href="../../implementation-playbook/best-practices/maintenance/upgrade-checklist.md">Liste de contrôle du plan de mise à niveau</a></li>

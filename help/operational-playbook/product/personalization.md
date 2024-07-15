@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Personnalisation
 
-La base de la croissance du commerce électronique est la fidélisation des clients. Garder les clients heureux est une combinaison de nombreux facteurs issus des produits, du contenu, de l’extraction, du client et de l’expérience de service. La personnalisation dépend de l’IA, qui effectue le suivi des informations client en temps réel et offre une expérience personnalisée unique. La personnalisation peut ne pas fonctionner pour tous les types d’entreprises, mais il s’agit d’une fonctionnalité supplémentaire qui peut vous aider à diriger le trafic vers votre site.
+La base de la croissance du commerce électronique est la fidélisation des clients. Garder les clients heureux est une combinaison de nombreux facteurs issus des produits, du contenu, de l’extraction, du client et de l’expérience de service. Personalization dépend de l’IA, qui effectue le suivi des informations client en temps réel et offre une expérience personnalisée unique. Personalization peut ne pas fonctionner pour tous les types d’entreprises, mais il s’agit d’une fonctionnalité supplémentaire qui peut vous aider à diriger le trafic vers votre site.
 
-La personnalisation doit inclure :
+Personalization doit inclure :
 
 - Répondre aux besoins des clients
 
@@ -26,21 +26,21 @@ La personnalisation doit inclure :
 
 Voici quelques exemples de personnalisation :
 
-- **Intérêt du client**: modification de la page d’accueil et de la navigation en fonction du profil du client. Par exemple, si un utilisateur a déjà visité le site et a exploré la section réservée aux femmes, la prochaine fois qu’il saisit l’URL, il accède à la page d’accueil des femmes.
+- **Centre d’intérêt du client** : modification de la page d’accueil et de la navigation en fonction du profil du client. Par exemple, si un utilisateur a déjà visité le site et a exploré la section réservée aux femmes, la prochaine fois qu’il saisit l’URL, il accède à la page d’accueil des femmes.
 
-- **Produits recommandés**: recommander des produits en fonction du comportement de navigation des clients.
+- **Produits recommandés** : recommander des produits en fonction du comportement de navigation des clients.
 
-- **Rechercher**: affiche des résultats de recherche personnalisés en fonction du comportement de recherche précédent d’un client.
+- **Recherche** : affiche des résultats de recherche personnalisés en fonction du comportement de recherche précédent d’un client.
 
-- **Email**: envoyez des emails personnalisés sur les produits si un client a quitté l’article dans son panier ou si le produit était en rupture de stock, envoyez une notification lorsqu’il est de nouveau en stock.
+- **Email** : envoyez des emails personnalisés sur les produits si un client a quitté l’article dans son panier ou si le produit était en rupture de stock, envoyez une notification lorsqu’il est de retour en stock.
 
-- **Géolocalisation**: affichage de plusieurs emplacements géographiques pour le site. Par exemple, un client visite le site de l’UA, mais l’option du site des États-Unis s’affiche également pour donner au client le choix.
+- **Géolocalisation** : affichage de plusieurs emplacements géographiques pour le site. Par exemple, un client visite le site de l’UA, mais l’option du site des États-Unis s’affiche également pour donner au client le choix.
 
-- **Code remise**: affiche des codes de remise de catégorie spécifiques pour promouvoir des produits d’une catégorie particulière.
+- **Code remise** : affiche des codes remise de catégorie spécifiques pour promouvoir des produits d’une catégorie particulière.
 
-- **Produits complémentaires**: affiche les produits complémentaires lorsque le client visite un produit. Par exemple, un client consulte une robe et peut afficher des produits complémentaires tels que des chaussures, des sacs et des accessoires qui vont avec la robe.
+- **Produits complémentaires** : affiche les produits complémentaires lorsque le client visite un produit. Par exemple, un client consulte une robe et peut afficher des produits complémentaires tels que des chaussures, des sacs et des accessoires qui vont avec la robe.
 
-- **Page d’accueil personnalisée**: affiche une page d’accueil personnalisée pour un utilisateur enregistré afin qu’il se sente spécial.
+- **Page d’accueil personnalisée** : affiche une page d’accueil personnalisée pour un utilisateur enregistré afin qu’il se sente spécial.
 
 ![Exemple de produits personnalisés](../../assets/playbooks/personalization-example.png)
 

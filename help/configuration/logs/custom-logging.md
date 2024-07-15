@@ -5,7 +5,7 @@ feature: Configuration, Logs
 exl-id: 6c94ebcf-70df-4818-a17b-32512eba516d
 source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 Les journaux offrent une visibilité sur les processus système, par exemple les informations de débogage qui vous aident à comprendre quand une erreur s’est produite ou ce qui a conduit à l’erreur.
 
-Cette rubrique porte sur la journalisation basée sur les fichiers, bien que Commerce offre la possibilité de stocker également les journaux dans la base de données.
+Cette rubrique concerne la journalisation basée sur les fichiers, bien que Commerce offre la possibilité de stocker également les journaux dans la base de données.
 
 Adobe recommande d’utiliser la journalisation centralisée des applications pour les raisons suivantes :
 
 - Il permet le stockage des journaux sur un serveur autre que le serveur d’applications et réduit les opérations d’E/S de disque, ce qui simplifie la prise en charge du serveur d’applications.
 
-- Cela rend le traitement des données de journaux plus efficace à l’aide d’outils spéciaux, tels que [Logstash], [Logplex], ou [fluentd]: sans impact sur un serveur de production.
+- Cela rend le traitement des données de journaux plus efficace en utilisant des outils spéciaux, tels que [Logstash], [Logplex] ou [fluent]—sans impact sur un serveur de production.
 
   >[!INFO]
   >
@@ -28,13 +28,13 @@ Adobe recommande d’utiliser la journalisation centralisée des applications po
 
 ## Conformité PSR-3
 
-La variable [PSR-3 standard][laminas] définit une interface PHP courante pour les bibliothèques de journalisation. L’objectif principal de PSR-3 est de permettre aux bibliothèques de recevoir une `Psr\Log\LoggerInterface` et écrivez-y des journaux d’une manière simple et universelle.
+La [norme PSR-3][laminas] définit une interface PHP commune pour les bibliothèques de journalisation. L’objectif principal de PSR-3 est de permettre aux bibliothèques de recevoir un objet `Psr\Log\LoggerInterface` et d’y écrire des journaux d’une manière simple et universelle.
 
 Cela permet à l’implémentation d’être facilement remplacée sans craindre qu’un tel remplacement puisse endommager le code de l’application. Il garantit également qu’un composant personnalisé fonctionnera même si l’implémentation du journal est modifiée dans une version ultérieure du système.
 
 ## Monolog
 
-Commerce 2 est conforme à la norme PSR-3. Par défaut, Commerce utilise [Monolog]. Monolog mis en oeuvre comme préférence pour `Psr\Log\LoggerInterface` dans l’application Commerce [`di.xml`][di].
+Commerce 2 est conforme à la norme PSR-3. Par défaut, Commerce utilise [Monolog]. Monolog implémenté comme préférence pour `Psr\Log\LoggerInterface` dans l&#39;application Commerce [`di.xml`][di].
 
 Monolog est une solution de journalisation PHP courante qui propose un large éventail de gestionnaires et vous permet de créer des stratégies de journalisation avancées. Voici un résumé du fonctionnement de Monolog.
 
@@ -43,7 +43,7 @@ Un monolog _logger_ est un canal qui possède son propre jeu de _gestionnaires_.
 - Connexion aux fichiers et au fichier syslog
 - Envoyer des alertes et des emails
 - Journalisation de serveurs spécifiques et connexion en réseau
-- Connexion au développement (intégration avec FireBug et Chrome Logger, entre autres)
+- Connexion au développement (intégration à FireBug et Chrome Logger, entre autres)
 - Connexion à la base de données
 
 Chaque gestionnaire peut soit traiter le message d’entrée et arrêter la propagation, soit transmettre le contrôle au gestionnaire suivant dans une chaîne.

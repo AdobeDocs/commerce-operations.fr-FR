@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # Prérequis du moteur de recherche
 
-Depuis Adobe Commerce 2.4, toutes les installations doivent être configurées pour utiliser [Elasticsearch](https://www.elastic.co) ou [OpenSearch](https://opensearch.org/) en tant que solution de recherche catalogue.
+Depuis Adobe Commerce 2.4, toutes les installations doivent être configurées pour utiliser [Elasticsearch](https://www.elastic.co) ou [OpenSearch](https://opensearch.org/) comme solution de recherche de catalogue.
 
 >[!NOTE]
 >
->La prise en charge d’OpenSearch a été ajoutée à la version 2.4.4. OpenSearch est un double compatible d’Elasticsearch. Toutes les instructions pour configurer Elasticsearch 7 s’appliquent à OpenSearch. [Migration de l’Elasticsearch vers OpenSearch](../../../upgrade/prepare/opensearch-migration.md) fournit des conseils sur le passage à OpenSearch.
+>La prise en charge d’OpenSearch a été ajoutée à la version 2.4.4. OpenSearch est un double compatible d’Elasticsearch. Toutes les instructions pour configurer Elasticsearch 7 s’appliquent à OpenSearch. [Migrer de l’Elasticsearch vers OpenSearch](../../../upgrade/prepare/opensearch-migration.md) fournit des conseils pour passer à OpenSearch.
 
 ## Versions prises en charge
 
 Vous devez installer et configurer Elasticsearch ou OpenSearch avant d’installer Adobe Commerce 2.4.4 et versions ultérieures.
 
-Voir [Configuration requise](../../system-requirements.md) pour des informations de version spécifiques.
+Pour plus d’informations sur les versions spécifiques, voir la [Configuration requise](../../system-requirements.md) .
 
 ## Configuration recommandée
 
@@ -35,13 +35,13 @@ Nous vous recommandons ce qui suit :
 
 Les tâches suivantes supposent que vous avez configuré votre système selon le diagramme suivant :
 
-![Diagramme du moteur de recherche](../../../assets/installation/search-engine-config.svg)
+![Diagramme de moteur de recherche](../../../assets/installation/search-engine-config.svg)
 
 Le diagramme qui précède affiche :
 
 * L’application Commerce et le moteur de recherche sont installés sur différents hôtes.
 
-  L’exécution sur des hôtes distincts nécessite un proxy pour fonctionner. (La mise en grappe du moteur de recherche va au-delà de ce guide, mais vous trouverez plus d’informations dans la section [Documentation sur la mise en grappe des Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
+  L’exécution sur des hôtes distincts nécessite un proxy pour fonctionner. (La mise en grappe du moteur de recherche va au-delà de ce guide, mais vous trouverez plus d’informations dans la [documentation sur la mise en grappe des Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
 * Chaque hôte possède son propre serveur web ; les serveurs web ne doivent pas nécessairement être les mêmes.
 
@@ -59,7 +59,7 @@ Les requêtes de recherche sont traitées comme suit :
 
 1. Le serveur web du moteur de recherche (écoute sur le port 443) envoie une requête par proxy au serveur du moteur de recherche (par défaut, il écoute sur le port 9200).
 
-1. L’accès au moteur de recherche est protégé par l’authentification HTTP de base. Pour qu’une requête atteigne le moteur de recherche, il doit passer par SSL. *et* indiquez un nom d’utilisateur et un mot de passe valides.
+1. L’accès au moteur de recherche est protégé par l’authentification HTTP de base. Pour qu’une demande atteigne le moteur de recherche, il doit passer par le protocole SSL *et* fournir un nom d’utilisateur et un mot de passe valides.
 
 1. Le moteur de recherche traite la requête.
 
@@ -82,7 +82,7 @@ Les logiciels liés à la sécurité (iptables, SELinux, AppArmor) peuvent être
 
 Pour configurer des règles permettant la communication avec le pare-feu ou SELinux activé, consultez les ressources suivantes :
 
-* [procédure iptables](https://help.ubuntu.com/community/IptablesHowTo)
+* [iptables how-to](https://help.ubuntu.com/community/IptablesHowTo)
 * [Comment modifier les règles iptables (projet fedora)](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
 * [Introduction à SELinux (CentOS.org)](https://www.centos.org)
 * [Wiki pratique SELinux (CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
@@ -95,7 +95,7 @@ Pour déterminer si Java est déjà installé, saisissez la commande suivante :
 java -version
 ```
 
-Si le message `java: command not found` s’affiche, vous devez installer le SDK Java, comme décrit dans la section suivante.
+Si le message `java: command not found` s’affiche, vous devez installer le SDK Java comme décrit dans la section suivante.
 
 Consultez l’une des sections suivantes :
 
@@ -104,9 +104,9 @@ Consultez l’une des sections suivantes :
 
 #### Installation du JDK sur CentOS
 
-Voir [Tutoriel sur les océans numériques](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8).
+Consultez ce [tutoriel sur les océans numériques](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8).
 
-Assurez-vous d’installer le JDK et *not* JRE.
+Veillez à installer le JDK et *pas* le JRE.
 
 ```bash
 yum -y install java-1.8.0-openjdk
@@ -114,11 +114,11 @@ yum -y install java-1.8.0-openjdk
 
 >[!NOTE]
 >
->Il se peut que la version 8 de Java ne soit pas disponible pour tous les systèmes d’exploitation. Par exemple, vous pouvez [rechercher la liste des packages disponibles pour Ubuntu ;](https://packages.ubuntu.com/).
+>Il se peut que la version 8 de Java ne soit pas disponible pour tous les systèmes d’exploitation. Par exemple, vous pouvez [rechercher la liste des packages disponibles pour Ubuntu](https://packages.ubuntu.com/).
 
 #### Installation du JDK sur Ubuntu
 
-Pour installer JDK 1.8 sur Ubuntu, saisissez les commandes suivantes en tant qu’utilisateur avec `root` privilèges :
+Pour installer JDK 1.8 sur Ubuntu, saisissez les commandes suivantes en tant qu’utilisateur disposant des privilèges `root` :
 
 ```bash
 apt-get -y update
@@ -128,7 +128,7 @@ apt-get -y update
 apt-get install -y openjdk-8-jdk
 ```
 
-Pour connaître les autres options, voir [Documentation Oracle](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
+Pour plus d’informations sur les autres options, reportez-vous à la [documentation sur l’Oracle](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
 
 ### Installation du moteur de recherche
 
@@ -159,10 +159,10 @@ curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 
 ## Mise à niveau d’Elasticsearch
 
-Voir [Mise à niveau d’Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) pour obtenir des instructions complètes sur la sauvegarde de vos données, la détection des problèmes de migration potentiels et le test des mises à niveau avant le déploiement en production. Selon votre version actuelle d’Elasticsearch, un redémarrage complet de la grappe peut être nécessaire ou non.
+Pour obtenir des instructions complètes sur la sauvegarde de vos données, la détection des problèmes de migration potentiels et le test des mises à niveau avant le déploiement en production, reportez-vous à la section [Mise à niveau d’Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) . Selon votre version actuelle d’Elasticsearch, un redémarrage complet de la grappe peut être nécessaire ou non.
 
 Elasticsearch requiert JDK 1.8 ou version ultérieure. Voir [Installation du Java Software Development Kit](#install-the-java-software-development-kit) pour vérifier quelle version de JDK est installée.
 
 ## Ressources supplémentaires
 
-Voir [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) ou [OpenSearch](https://opensearch.org/docs/latest/) la documentation.
+Consultez la documentation [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) ou [OpenSearch](https://opensearch.org/docs/latest/).

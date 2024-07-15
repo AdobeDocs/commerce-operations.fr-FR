@@ -44,4 +44,4 @@ Examen des produits, des prix et des données d’inventaire existants d’une o
 
 ## Plan du projet
 
-Un plan de projet décrit les tâches de haut niveau et les calendriers associés à l’initiative de mise en oeuvre, y compris les intégrations qui se chevauchent et les dépendances tierces. le plan peut aussi comporter un tableau des responsabilités; [RACI](../planning/ownership.md), graphique qui indique qui est responsable, responsable, consulté et informé.
+Un plan de projet décrit les tâches de haut niveau et les calendriers associés à l’initiative de mise en oeuvre, y compris les intégrations qui se chevauchent et les dépendances tierces. Le plan peut également inclure une matrice des responsabilités, ou [RACI](../planning/ownership.md), un graphique qui indique qui est responsable, responsable, consulté et informé.

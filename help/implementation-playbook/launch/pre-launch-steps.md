@@ -5,7 +5,7 @@ exl-id: bd10881f-0336-4aa4-82ad-4d635010e2e4
 feature: Deploy
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ La liste de contrôle de prélancement doit être vérifiée avant l’état de 
 - Activation de l’outil de surveillance des performances (nouvelles versions)
 - Migration des données en répétition (le cas échéant)
 
-![Diagramme présentant la phase 1 du processus de lancement](../../assets/playbooks/launch-steps-1.svg)
+![Diagramme affichant la phase 1 du processus de lancement](../../assets/playbooks/launch-steps-1.svg)
 
 Les principales différences entre les implémentations sur site et cloud d’Adobe Commerce sont les scripts et les outils de déploiement, ainsi que la configuration pour SSL, Mail service et CDN. Cependant, le processus reste le même.
 

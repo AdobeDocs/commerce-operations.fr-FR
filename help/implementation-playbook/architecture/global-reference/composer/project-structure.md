@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Structure de projet du compositeur
 
-Ce guide décrit comment configurer et gérer la variable [option packages séparés](../examples.md#option-1-separate-packages) décrits dans les exemples d’architecture de référence globale (GRA).
+Ce guide décrit comment configurer et gérer l’ [option de packages distincte](../examples.md#option-1-separate-packages) décrite dans les exemples d’architecture de référence globale (GRA).
 
 ## Conditions préalables
 
@@ -23,7 +23,7 @@ Avant de commencer, vérifiez les éléments suivants :
 
 - Vous avez un référentiel Git.
 - Vous disposez d’un référentiel de compositeur (cette rubrique met en évidence Private Packagist).
-- Vous avez configuré votre référentiel de compositeur pour qu’il reflète la variable `repo.magento.com` et `packagist.org` référentiels
+- Vous avez configuré votre référentiel Composer pour qu’il reflète les référentiels `repo.magento.com` et `packagist.org`.
 
 ## Référentiel de projet Git principal
 
@@ -37,7 +37,7 @@ Le référentiel de projet Git principal ne doit contenir qu’un projet Compose
 └─ composer.lock
 ```
 
-Ajoutez le contenu suivant au `.gitignore` fichier :
+Ajoutez le contenu suivant au fichier `.gitignore` :
 
 ```tree
 /*
@@ -49,7 +49,7 @@ Ajoutez le contenu suivant au `.gitignore` fichier :
 
 1. Créez un référentiel Git appelé `project-<region/country/brand>`.
 
-1. Créer `composer.json` et `composer.lock` files :
+1. Créez les fichiers `composer.json` et `composer.lock` :
 
    ```bash
    composer create-project --no-install --repository-url=https://repo.magento.com/ magento/project-enterprise-edition project-<region/country/brand>
@@ -71,13 +71,13 @@ Ajoutez le contenu suivant au `.gitignore` fichier :
 
 ## Enregistrer les fichiers non-module
 
-1. Ajoutez la variable `app/etc/config.xml` vers le référentiel Git.
+1. Ajoutez le fichier `app/etc/config.xml` au référentiel Git.
 
-   Vous pouvez utiliser le module que vous allez créer pour installer d’autres fichiers de région ou de marque, tels que `.htaccess`, fichiers texte d’authentification Google ou Bing, exécutables ou autres fichiers statiques qui ne sont pas gérés par les modules Adobe Commerce.
+   Vous pouvez utiliser le module que vous allez créer pour installer d’autres fichiers de région ou de marque, tels que des fichiers texte d’authentification `.htaccess`, Google ou Bing, des exécutables ou d’autres fichiers statiques qui ne sont pas gérés par les modules Adobe Commerce.
 
-   Utilisation `magento2-component` des packages de type pour créer un mappage de fichiers afin de copier des fichiers dans le référentiel Git principal pendant la `composer install` et `composer update` opérations.
+   Utilisez des packages de type `magento2-component` pour créer un mappage de fichiers afin de copier des fichiers dans le référentiel Git principal pendant les opérations `composer install` et `composer update`.
 
-1. Création d’un référentiel Git conforme à la convention d’affectation des noms `component-environment-<region/country/brand>`:
+1. Créez un référentiel Git qui suit la convention d’affectation des noms `component-environment-<region/country/brand>` :
 
    ```bash
    bin/magento module:enable --all
@@ -94,7 +94,7 @@ Ajoutez le contenu suivant au `.gitignore` fichier :
    composer config -e
    ```
 
-1. Ajoutez la variable `app/etc/config.php` comme mappage dans la variable `extra.map` de votre `composer.json` fichier :
+1. Ajoutez le fichier `app/etc/config.php` comme mappage dans l’attribut `extra.map` de votre fichier `composer.json` :
 
    ```json
    {
@@ -115,7 +115,7 @@ Ajoutez le contenu suivant au `.gitignore` fichier :
    }
    ```
 
-1. Validez votre `composer.json` et validez-la dans le référentiel Git :
+1. Validez votre fichier `composer.json` et validez-le dans le référentiel Git :
 
    ```bash
    composer validate
@@ -203,7 +203,7 @@ Ajoutez le contenu suivant au `.gitignore` fichier :
    git push --tags
    ```
 
-1. Vérifiez que le compositeur a copié le `app/etc/config.php` fichier à partir de `<client>/component-environment-<region/country/brand>`.
+1. Vérifiez que le compositeur a copié le fichier `app/etc/config.php` à partir de `<client>/component-environment-<region/country/brand>`.
 
 ## Déploiement du code
 
@@ -211,24 +211,24 @@ Sur le serveur web, vous pouvez déployer du code à l’aide du compositeur d�
 
 ## Ajouter d’autres instances et packages
 
-Chaque instance (région, marque ou autre installation Adobe Commerce unique) doit avoir sa propre **projet principal** instance, **métaphorage spécifique**, et **package du composant d’environnement**. La variable **Métappackage GRA** should **shared** sur toutes les instances.
+Chaque instance (installation Adobe Commerce unique, de marque ou de région) doit avoir sa propre instance **projet principal**, un **métappackage spécifique** et un **package de composant d’environnement**. Le **métapackage GRA** doit être **partagé** sur toutes les instances.
 
 Les modules fonctionnels (modules, thèmes, modules de langue et bibliothèques Adobe Commerce, par exemple) et les modules tiers doivent être requis par :
 
-- **Métappackage GRA**—Pour l’installation sur _all_ instances
-- **métaphorage spécifique à une instance**: installation sur une seule marque ou région
+- **Métapackage GRA**—Pour une installation sur _toutes{3 instances_
+- **métappackage spécifique à l’instance**—Pour une installation sur une seule marque ou une seule région
 
 >[!IMPORTANT]
 >
->Ne nécessite pas de modules dans le fichier du projet principal `composer.json` sur le `main` ou `release` branches.
+>Ne nécessite pas de packages dans le fichier `composer.json` du projet principal sur les branches `main` ou `release`.
 
 ## Préparation au développement
 
-Pour le développement, installez . `develop` versions de tous les modules que vous conservez.
+Pour le développement, installez les versions `develop` de tous les modules que vous conservez.
 
-Selon votre stratégie d’embranchement, vous pouvez avoir `develop`, `qa`, `uat`, et `main` branches. Chaque branche existe dans le compositeur avec une `dev-` préfixe. Ainsi, la variable `develop` la branche peut être requise par le biais du compositeur en tant que version `dev-develop`.
+Selon votre stratégie d&#39;embranchement, vous pouvez avoir `develop`, `qa`, `uat` et `main` branches. Chaque branche existe dans le compositeur avec un préfixe `dev-`. La branche `develop` peut donc être requise par le biais du compositeur en tant que version `dev-develop`.
 
-1. Créer `develop` branches dans tous les modules et référentiels de projet.
+1. Créez `develop` branches dans tous les modules et référentiels de projet.
 
    ```bash
    cd ../component-environment-<region/country/brand>
@@ -262,7 +262,7 @@ Selon votre stratégie d’embranchement, vous pouvez avoir `develop`, `qa`, `ua
    "magento-services/component-environment-fantasy-corp:dev-develop as 0.999"
    ```
 
-   L’étape précédente génère les lignes suivantes dans votre `composer.json` fichier :
+   L’étape précédente génère les lignes suivantes dans votre fichier `composer.json` :
 
    ```json
    "require": {
@@ -274,4 +274,4 @@ Selon votre stratégie d’embranchement, vous pouvez avoir `develop`, `qa`, `ua
 
    >[!IMPORTANT]
    >
-   >**Ne pas fusionner** these `composer.json` modifications apportées à votre branche de production. Installer uniquement les versions stables des modules sur `release` et `main` branches. Vous pouvez définir ces dépendances pour `qa` branches et autres branches non principales.
+   >**Ne fusionnez pas** ces `composer.json` modifications de fichier dans votre branche de production. Installez uniquement les versions stables des packages sur les branches `release` et `main`. Vous pouvez définir ces dépendances pour `qa` branches et d’autres branches non principales.

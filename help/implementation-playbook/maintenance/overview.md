@@ -5,7 +5,7 @@ exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -33,5 +33,5 @@ Le diagramme suivant montre les phases et activités qui seraient incluses dans 
 Identifier le modèle de prise en charge approprié pour votre entreprise afin de continuer à optimiser votre plateforme (et les pratiques commerciales dans leur ensemble) est une étape essentielle pour maintenir le travail acharné qui a été effectué pendant le processus de mise en oeuvre. Grâce à un plan d’assistance complet et permanent, votre site commercial peut répondre aux attentes de vos clients et vous pouvez continuer à atteindre vos objectifs.
 
 Lors du déploiement d’Adobe Commerce, il est essentiel de réfléchir aux éléments à inclure dans votre stratégie de maintenance et de support.
-La prise en charge d’experts est incluse dans une licence Adobe Commerce. Pour plus d’informations sur l’assistance d’experts et les plans d’assistance Adobe, reportez-vous à la section [Formules d’assistance Adobe](https://business.adobe.com/customers/consulting-services/premier-support.html).
+La prise en charge d’experts est incluse dans une licence Adobe Commerce. Pour plus d’informations sur l’assistance d’experts et les plans d’assistance à l’Adobe, reportez-vous à la section [Plans d’assistance à l’Adobe](https://business.adobe.com/customers/consulting-services/premier-support.html).
 Outre les plans d’assistance à l’Adobe, il existe des termes d’assistance à l’Magento hérités. Pour connaître les services d’assistance qui vous sont applicables, veuillez vous référer à votre contrat pour consulter le contrat d’assistance que vous avez ou consulter votre équipe de compte d’Adobe.

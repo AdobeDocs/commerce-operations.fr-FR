@@ -4,7 +4,7 @@ description: Appliquez des structures connues pour gérer votre projet de commer
 exl-id: 514e2317-f409-4079-bdee-1596f6635467
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ La gestion de projet est l’application de connaissances, de compétences, d’
 
 Le diagramme suivant décrit les cinq phases de la gestion de projet et du cycle de vie de la gestion de projet :
 
-![Diagramme de cycle de vie de la gestion de projet](../../assets/playbooks/project-management-lifecycle.png)
+![ Diagramme de cycle de vie de la gestion de projet ](../../assets/playbooks/project-management-lifecycle.png)
 
 Le cycle de vie de la gestion de projet offre un processus de livraison opportun et contrôlé qui profite à un projet. La gestion de projet est la première étape de la diffusion d’un projet d’e-commerce réussi. L’approche et la méthodologie appropriées sont nécessaires pour permettre à l’équipe de mener à bien le projet de manière efficace.
 
@@ -28,7 +28,7 @@ Certaines équipes choisissent la méthodologie de gestion de projet Scrum pour 
 - Session de planification pour chaque sprint
 - Rétrospectives Sprint
 
-![Diagramme de cycle de vie agile](../../assets/playbooks/scrum-lifecycle.png)
+![Diagramme de cycle de vie agile à crum](../../assets/playbooks/scrum-lifecycle.png)
 
 Scrum permet de gérer les modifications au cours du projet, d’afficher rapidement les résultats, d’être flexible et d’accroître la collaboration.
 
@@ -36,17 +36,17 @@ Scrum permet de gérer les modifications au cours du projet, d’afficher rapide
 
 Voici un plan de gestion de projet de commerce électronique de base :
 
-- **Analyse**—Dans la phase initiale d’un projet, l’entreprise doit procéder à une analyse, y compris une analyse des marchés et des concurrents, afin de comprendre les forces et les faiblesses de l’organisation.
+- **Analyse** : dans la phase initiale d’un projet, l’entreprise doit effectuer une analyse, y compris une analyse commerciale du marché et des concurrents, afin de comprendre les forces et les faiblesses de l’organisation.
 
-- **Conditions**: définissez les exigences détaillées de ce que l’organisation souhaite à la fin du projet en termes d’amélioration des compétences existantes et/ou de mise en oeuvre de nouvelles fonctionnalités et/ou intégrations.
+- **Exigences** : définissez les exigences détaillées de ce que l’organisation souhaite à la fin du projet en termes d’amélioration des compétences existantes et/ou de mise en oeuvre de nouvelles fonctionnalités et/ou intégrations.
 
-- **Fournisseurs tiers**: à ce stade, mappez les intégrations tierces requises (par exemple, paiement, livraison, évaluations et révisions).
+- **Prestataires tiers** : à cette étape, mappez les intégrations tierces requises (par exemple, paiement, livraison, évaluations et révisions).
 
-- **Conception**—Renseignez-vous sur les exigences spécifiques à la conception pour les modèles et le livre de marque de l’entreprise.
+- **Conception** : découvrez les exigences de conception spécifiques aux modèles et au livre de marque de l’entreprise.
 
-- **Migration**: planifiez les étapes de migration du contenu et des données.
+- **Migration** : planifiez les étapes de migration de contenu et de données.
 
-- **Plateforme eCommerce**: analysez et finalisez la plateforme requise pour que l’entreprise puisse répondre aux exigences.
+- **Plateforme d’e-commerce** : analysez et finalisez la plate-forme requise pour que l’entreprise réponde aux exigences.
 
 ## Bonnes pratiques
 

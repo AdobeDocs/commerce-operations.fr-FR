@@ -14,17 +14,17 @@ ht-degree: 9%
 
 ## Profils
 
-Vous pouvez ajuster la quantité de données que vous créez à l’aide de _profils_ (petit, moyen, grand et très grand). Les profils se trouvent dans la variable `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` répertoire .
+Vous pouvez ajuster la quantité de données que vous créez à l’aide des _profils_ (petits, moyens, grands et très grands). Les profils se trouvent dans le répertoire `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>`.
 
 Par exemple, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
-La figure suivante montre comment un produit est affiché dans le storefront à l’aide de la variable _small_ profile:
+La figure suivante montre l’affichage d’un produit sur le storefront à l’aide du profil _small_ :
 
 ![Exemple de vitrine avec données générées](../../assets/configuration/generate-data.png)
 
 Le tableau suivant fournit des détails sur les profils du générateur de données : petit, moyen, grand et très grand.
 
-| Paramètre | Petit profil | Profil moyen | Profil multi-site moyen | Profil volumineux | Profil volumineux supplémentaire |
+| Paramètre | Petit profil | Profil Medium | Profil multi-site Medium | Profil volumineux | Profil volumineux supplémentaire |
 | --- | --- | --- | --- | --- | --- |
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
@@ -50,7 +50,7 @@ Le tableau suivant fournit des détails sur les profils du générateur de donn�
 >
 >Avant d’exécuter le générateur de données, désactivez toutes les tâches cron exécutées sur le serveur. La désactivation des tâches cron empêche le générateur de données d’effectuer des actions qui entrent en conflit avec les tâches cron actives et évite les erreurs inutiles.
 >
->Si vous avez l’intention d’implémenter l’événement avec [!DNL Adobe I/O Events for Adobe Commerce] lors du test des performances, exécutez cette commande avant de vous abonner [events](https://developer.adobe.com/commerce/extensibility/events/). L’inscription préalable d’événements peut entraîner des erreurs.
+>Si vous avez l’intention d’implémenter des événements avec [!DNL Adobe I/O Events for Adobe Commerce] lors du test des performances, exécutez cette commande avant d’abonner [events](https://developer.adobe.com/commerce/extensibility/events/). L’inscription préalable d’événements peut entraîner des erreurs.
 
 Exécutez la commande comme décrit dans cette section. Une fois la commande exécutée, vous devez [réindexer tous les indexeurs](../cli/manage-indexers.md).
 
@@ -125,7 +125,7 @@ Génère des jeux d’attributs avec la configuration spécifiée. Noeud de prof
 
 ### Lot de produits
 
-Génère des produits en bundle. Les sélections de lots générées ne s’affichent pas individuellement dans le catalogue. Les produits sont répartis uniformément par catégories et par sites web. If  `assign_entities_to_all_websites` du profil est défini sur `1`. Les produits sont attribués à tous les sites web.
+Génère des produits en bundle. Les sélections de lots générées ne s’affichent pas individuellement dans le catalogue. Les produits sont répartis uniformément par catégories et par sites web. Si `assign_entities_to_all_websites` du profil est défini sur `1`. Les produits sont attribués à tous les sites web.
 
 Noeud de profil XML :
 
@@ -163,7 +163,7 @@ Génère des règles de prix de catalogue. Noeud de profil XML :
 
 ### Catégories
 
-Génère des catégories. If `assign_entities_to_all_websites` est défini sur `0`, toutes les catégories sont réparties uniformément par catégories racine ; dans le cas contraire, toutes les catégories sont affectées à une catégorie racine.
+Génère des catégories. Si `assign_entities_to_all_websites` est défini sur `0`, toutes les catégories sont réparties uniformément par catégories racine ; dans le cas contraire, toutes les catégories sont affectées à une seule catégorie racine.
 
 Noeud de profil XML :
 
@@ -195,7 +195,7 @@ Définit des valeurs pour les champs de configuration. Noeud de profil XML :
 
 ### Produits configurables
 
-Génère des produits configurables. Les options configurables générées ne s’affichent pas individuellement dans le catalogue. Les produits sont répartis uniformément par catégories et par sites web. If `assign_entities_to_all_websites` est défini sur `1`, les produits sont affectés à tous les sites web.
+Génère des produits configurables. Les options configurables générées ne s’affichent pas individuellement dans le catalogue. Les produits sont répartis uniformément par catégories et par sites web. Si `assign_entities_to_all_websites` est défini sur `1`, les produits sont attribués à tous les sites Web.
 
 Les formats de noeud XML suivants sont pris en charge :
 
@@ -380,9 +380,9 @@ Noeud de profil XML :
 
 ### Produits simples
 
-Génère des produits simples. Les produits sont distribués par défaut et par jeux d’attributs prédéfinis. Si des jeux d’attributs supplémentaires sont spécifiés dans le profil comme suit : `<product_attribute_sets>{int}</product_attribute_sets>`, les produits sont également distribués par jeu d’attributs supplémentaire.
+Génère des produits simples. Les produits sont distribués par défaut et par jeux d’attributs prédéfinis. Si des jeux d’attributs supplémentaires sont spécifiés dans le profil comme suit : `<product_attribute_sets>{int}</product_attribute_sets>`, les produits sont également distribués par jeux d’attributs supplémentaires.
 
-Les produits sont répartis uniformément par catégories et par sites web. If `assign_entities_to_all_websites` est défini sur `1`, les produits sont affectés à tous les sites web.
+Les produits sont répartis uniformément par catégories et par sites web. Si `assign_entities_to_all_websites` est défini sur `1`, les produits sont attribués à tous les sites Web.
 
 Noeud de profil XML :
 
@@ -402,7 +402,7 @@ Génère des sites web. Noeud de profil XML :
 
 ### Groupes de magasin
 
-Génère des groupes de magasins (appelés dans l’administration _stores_). Les groupes de magasins sont distribués normalement entre les sites web.
+Génère des groupes de magasins (appelés dans l’administrateur _stores_). Les groupes de magasins sont distribués normalement entre les sites web.
 
 Noeud de profil XML :
 
@@ -434,16 +434,16 @@ Génère des taux d&#39;imposition. Noeud de profil XML :
 
 ## Informations de configuration supplémentaires :
 
-- `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml`—Jeux d’attributs par défaut
+- `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml` : ensembles d’attributs par défaut
 
-- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml`—Configuration client
+- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml` - Configuration client
 
-- `<Commerce root dir>/setup/performance-toolkit/config/description.xml`—Configuration de la description complète du produit
+- `<Commerce root dir>/setup/performance-toolkit/config/description.xml` : configuration de description complète du produit
 
-- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml`—Configuration de description courte du produit
+- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml` : configuration de description courte du produit
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml`: configuration pour une description courte et complète du produit. Cette ancienne mise en oeuvre est fournie à des fins de rétrocompatibilité.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml` : configuration pour une description courte et complète du produit. Cette ancienne mise en oeuvre est fournie à des fins de rétrocompatibilité.
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml`: petit nombre de termes de recherche en descriptions courtes et complètes
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml` : petit nombre de termes de recherche à en termes courts et complets
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`: nombre plus important de termes de recherche à utiliser dans une description courte et complète.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml` : nombre plus important de termes de recherche à utiliser dans une description courte et complète.

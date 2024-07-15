@@ -4,14 +4,14 @@ description: Consultez la liste des valeurs du fichier env.php.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
 
 # référence env.php
 
-La variable `env.php` contient les sections suivantes :
+Le fichier `env.php` contient les sections suivantes :
 
 | Nom | Description |
 |-------------------------------|-----------------------------------------------------------------|
@@ -23,12 +23,12 @@ La variable `env.php` contient les sections suivantes :
 | `crypt` | Clé de chiffrement des fonctions cryptographiques |
 | `db` | Paramètres de connexion à la base de données |
 | `default_connection` | Connexion par défaut des files de messages |
-| `directories` | Paramètres de mappage des répertoires de commerce |
+| `directories` | Paramètres de mappage des répertoires Commerce |
 | `downloadable_domains` | Liste des domaines téléchargeables |
 | `install` | La date d&#39;installation |
 | `lock` | Verrouillage des paramètres du fournisseur |
-| `MAGE_MODE` | La variable [mode applicatif](../bootstrap/application-modes.md) |
-| `queue` | [Files d&#39;attente des messages](../queues/manage-message-queues.md) paramètres |
+| `MAGE_MODE` | Le [mode application](../bootstrap/application-modes.md) |
+| `queue` | Paramètres [Files d’attente de messages](../queues/manage-message-queues.md) |
 | `resource` | Mappage du nom de la ressource à une connexion |
 | `session` | Données de stockage de session |
 | `system` | Désactive le champ à modifier dans l&#39;administrateur. |
@@ -36,7 +36,7 @@ La variable `env.php` contient les sections suivantes :
 
 ## backend
 
-Configurez la variable **frontName** pour l’URL d’administration de Commerce à l’aide de la variable `backend` dans env.php.
+Configurez **frontName** pour l’URL d’administration de Commerce à l’aide du noeud `backend` dans env.php.
 
 ```conf
 'backend' => [
@@ -46,7 +46,7 @@ Configurez la variable **frontName** pour l’URL d’administration de Commerce
 
 ## cache
 
-Configuration de la page de modification et de la mise en cache par défaut à l’aide de `cache` dans le noeud `env.php` fichier .
+Configurez la page rouge et la mise en cache par défaut en utilisant le noeud `cache` dans le fichier `env.php`.
 
 ```conf
 'cache' => [
@@ -72,7 +72,7 @@ Configuration de la page de modification et de la mise en cache par défaut à l
 ]
 ```
 
-En savoir plus dans [Configuration des redis](../cache/redis-pg-cache.md).
+Pour en savoir plus, consultez la [configuration Redis](../cache/redis-pg-cache.md).
 
 ## cache_types
 
@@ -98,11 +98,11 @@ Toutes les configurations de types de cache sont disponibles à partir de ce noe
 ]
 ```
 
-En savoir plus sur les différents [Types de cache](../cli/manage-cache.md).
+En savoir plus sur les différents [types de cache](../cli/manage-cache.md).
 
 ## consumer_wait_for_messages
 
-Indiquez si les consommateurs doivent continuer à interroger les messages si le nombre de messages traités est inférieur à la valeur `max_messages` . La valeur par défaut est `1`.
+Indiquez si les consommateurs doivent continuer à interroger les messages si le nombre de messages traités est inférieur à la valeur `max_messages`. La valeur par défaut est `1`.
 
 ```conf
 'queue' => [
@@ -112,17 +112,17 @@ Indiquez si les consommateurs doivent continuer à interroger les messages si le
 
 Les options disponibles sont les suivantes :
 
-- `1`: les consommateurs continuent à traiter les messages de la file d’attente des messages jusqu’à atteindre le `max_messages` spécifiée dans la variable `env.php` avant de fermer la connexion TCP et d’interrompre le processus client. Si la file d’attente se vide avant d’atteindre la variable `max_messages` , le consommateur attend que d’autres messages arrivent.
+- `1` : les consommateurs continuent à traiter les messages de la file d’attente des messages jusqu’à atteindre la valeur `max_messages` spécifiée dans le fichier `env.php` avant de fermer la connexion TCP et d’interrompre le processus client. Si la file d’attente se vide avant d’atteindre la valeur `max_messages`, le consommateur attend que d’autres messages arrivent.
 
   Nous vous recommandons ce paramètre pour les grands vendeurs, car un flux de messages constant est attendu et les retards de traitement ne sont pas souhaitables.
 
-- `0`: les consommateurs traitent les messages disponibles dans la file d’attente, ferment la connexion TCP et s’arrêtent. Les consommateurs n’attendent pas que des messages supplémentaires entrent dans la file d’attente, même si le nombre de messages traités est inférieur à la valeur `max_messages` spécifiée dans la variable `env.php` fichier . Cela peut aider à éviter les problèmes liés aux tâches cron causés par de longs délais dans le traitement de la file d’attente des messages.
+- `0` : les consommateurs traitent les messages disponibles dans la file d’attente, ferment la connexion TCP et s’arrêtent. Les consommateurs n’attendent pas que des messages supplémentaires entrent dans la file d’attente, même si le nombre de messages traités est inférieur à la valeur `max_messages` spécifiée dans le fichier `env.php`. Cela peut aider à éviter les problèmes liés aux tâches cron causés par de longs délais dans le traitement de la file d’attente des messages.
 
-  Nous vous recommandons ce paramètre pour les petits commerçants qui ne s’attendent pas à un flux de messages constant et qui préfèrent conserver les ressources informatiques en échange de retards de traitement mineurs alors qu’il ne pouvait pas y avoir de messages pendant des jours.
+  Nous recommandons ce paramètre pour les petits commerçants qui ne s’attendent pas à un flux de messages constant et qui préfèrent conserver les ressources informatiques en exchange pour les retards de traitement mineurs lorsqu’il ne peut pas y avoir de messages pendant des jours.
 
 ## cron
 
-Activez ou désactivez les tâches cron pour l’application Commerce. Par défaut, les tâches cron sont activées. Pour les désactiver, ajoutez le `cron` à la section `env.php` et définissez la valeur sur `0`.
+Activez ou désactivez les tâches cron pour l’application Commerce. Par défaut, les tâches cron sont activées. Pour les désactiver, ajoutez la configuration `cron` au fichier `env.php` et définissez la valeur sur `0`.
 
 ```conf
 'cron' => [
@@ -146,7 +146,7 @@ Commerce utilise une clé de chiffrement pour protéger les mots de passe et d�
 ]
 ```
 
-En savoir plus sur [Clé de chiffrement](https://docs.magento.com/user-guide/system/encryption-key.html) dans le _Guide d’utilisation de Commerce_.
+Pour en savoir plus sur [la clé de chiffrement](https://docs.magento.com/user-guide/system/encryption-key.html), consultez le _guide de l’utilisateur de Commerce_.
 
 ## db
 
@@ -172,7 +172,7 @@ Toutes les configurations de base de données sont disponibles dans ce noeud.
 
 ## default_connection
 
-Définit la connexion par défaut pour les files d’attente de messages. La valeur peut être `db`, `amqp`, ou un système de file d’attente personnalisé comme `redismq`. Si vous spécifiez une valeur autre que `db`, le logiciel de la file d’attente des messages doit d’abord être installé et configuré. Sinon, les messages ne seront pas traités correctement.
+Définit la connexion par défaut pour les files d’attente de messages. La valeur peut être `db`, `amqp` ou un système de file d’attente personnalisé comme `redismq`. Si vous spécifiez une valeur autre que `db`, le logiciel de la file d’attente des messages doit d’abord être installé et configuré. Sinon, les messages ne seront pas traités correctement.
 
 ```conf
 'queue' => [
@@ -180,12 +180,12 @@ Définit la connexion par défaut pour les files d’attente de messages. La val
 ]
 ```
 
-If `queue/default_connection` est spécifié dans le système. `env.php` , cette connexion est utilisée pour toutes les files d’attente de messages à travers le système, sauf si une connexion spécifique est définie dans un `queue_topology.xml`, `queue_publisher.xml` ou `queue_consumer.xml` fichier .
-Par exemple, si `queue/default_connection` is `amqp` in `env.php` mais un `db` La connexion est spécifiée dans la configuration de la file d’attente des fichiers XML d’un module. Le module utilisera MySQL comme courtier de messages.
+Si `queue/default_connection` est spécifié dans le fichier `env.php` du système, cette connexion est utilisée pour toutes les files d’attente de messages à travers le système, sauf si une connexion spécifique est définie dans un fichier `queue_topology.xml`, `queue_publisher.xml` ou `queue_consumer.xml`.
+Par exemple, si `queue/default_connection` est `amqp` dans `env.php` mais qu’une connexion `db` est spécifiée dans les fichiers XML de configuration de file d’attente d’un module, le module utilisera MySQL comme courtier de messages.
 
 ## répertoires
 
-Options facultatives de mappage de répertoire qui doivent être définies lorsque le serveur web est configuré pour servir l’application Commerce à partir de la variable `/pub` répertoire pour [sécurité améliorée](../../installation/tutorials/docroot.md).
+Options facultatives de mappage de répertoire qui doivent être définies lorsque le serveur web est configuré pour servir l’application Commerce à partir du répertoire `/pub` pour [une sécurité améliorée](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -203,7 +203,7 @@ Liste des domaines téléchargeables disponibles dans ce noeud. D’autres domai
 ]
 ```
 
-En savoir plus sur [Domaines téléchargeables](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd).
+En savoir plus sur les [domaines téléchargeables](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd).
 
 ## install
 
@@ -217,9 +217,9 @@ Date d’installation de l’application Commerce.
 
 ## lock
 
-Les paramètres du fournisseur de verrouillage sont configurés à l’aide de la fonction `lock` noeud .
+Les paramètres du fournisseur de verrouillage sont configurés à l’aide du noeud `lock`.
 
-En savoir plus sur [Verrouillage de la configuration du fournisseur](../../installation/tutorials/lock-provider.md).
+En savoir plus sur la [configuration du fournisseur de verrouillage](../../installation/tutorials/lock-provider.md).
 
 ## MAGE_MODE
 
@@ -229,7 +229,7 @@ Le mode de déploiement peut être configuré dans ce noeud.
 'MAGE_MODE' => 'developer'
 ```
 
-En savoir plus sur [modes d’application](../cli/set-mode.md).
+En savoir plus sur les [modes d&#39;application](../cli/set-mode.md).
 
 ## queue
 
@@ -244,7 +244,7 @@ Les configurations de la file d’attente des messages sont disponibles dans ce 
 ]
 ```
 
-En savoir plus sur [File d’attente des messages][message-queue].
+En savoir plus sur [Message Queue][message-queue].
 
 ## resource
 
@@ -260,7 +260,7 @@ Les paramètres de configuration des ressources sont disponibles dans ce noeud.
 
 ## session
 
-Les configurations de session sont stockées dans la variable `session` noeud .
+Les configurations de session sont stockées dans le noeud `session` .
 
 ```conf
 'session' => [
@@ -282,7 +282,7 @@ En savoir plus sur [x-frame-options](../security/xframe-options.md).
 
 ## system
 
-À l’aide de ce noeud, Commerce verrouille les valeurs de configuration dans le `env.php` puis désactive le champ dans l’administrateur.
+En utilisant ce noeud, Commerce verrouille les valeurs de configuration dans le fichier `env.php`, puis désactive le champ dans l’administrateur.
 
 ```conf
 'system' => [

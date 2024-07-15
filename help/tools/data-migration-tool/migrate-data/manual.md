@@ -5,7 +5,7 @@ exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -33,15 +33,15 @@ Cette section explique comment migrer manuellement les fichiers multimédias.
 >La méthode de stockage des médias dans la base de données est obsolète depuis Magento 2.4.3.
 
 
-Cette section vous concerne *only* si vous stockez des fichiers multimédias dans la base de données du Magento. Cette étape doit être effectuée avant [migration des données](data.md):
+Cette section s’applique *uniquement* si vous stockez des fichiers multimédias dans la base de données du Magento. Cette étape doit être effectuée avant la [migration des données](data.md) :
 
 1. Connectez-vous au panneau d’administration Magento 1 en tant qu’administrateur.
 
 1. Cliquez sur **Système** > **Configuration** > AVANCÉ > **Système**.
 
-1. Dans le volet de droite, faites défiler jusqu’à **Configuration de stockage pour Media**.
+1. Dans le volet de droite, faites défiler l’écran jusqu’à **Configuration de stockage pour Media**.
 
-1. Dans la **Sélectionner la base de données multimédia** cliquez sur le nom de votre base de données de stockage de médias.
+1. Dans la liste **Select Media Database**, cliquez sur le nom de votre base de données de stockage de médias.
 
 1. Cliquez sur **Synchroniser**.
 
@@ -49,9 +49,9 @@ Répétez ensuite les mêmes étapes dans le panneau d’administration de Magen
 
 ### Fichiers multimédias dans le système de fichiers
 
-Tous les fichiers multimédias (images pour les produits, les catégories, l’éditeur WYSIWYG, etc.) doivent être copiés manuellement depuis `<your Magento 1 install dir>/media` to `<your Magento 2 install dir>/pub/media`.
+Tous les fichiers multimédias (images pour les produits, les catégories, l’éditeur WYSIWYG, etc.) doivent être copiés manuellement de `<your Magento 1 install dir>/media` vers `<your Magento 2 install dir>/pub/media`.
 
-Toutefois, la méthode *not* Copiez le `.htaccess` fichiers situés dans le Magento 1 `media` dossier. Le Magento 2 a sa propre `.htaccess` qui doivent être préservées.
+Cependant, ne copiez pas *et non* les fichiers `.htaccess` situés dans le dossier Magento 1 `media`. Le Magento 2 possède son propre `.htaccess` qui doit être conservé.
 
 ## Conception Storefront
 
@@ -69,4 +69,4 @@ Vous devez recréer manuellement tous les éléments suivants :
 
 >[!NOTE]
 >
->Vous pouvez ajuster le fuseau horaire d’une entité de base de données à l’aide de la variable `\Migration\Handler\Timezone` gestionnaire. Voir [suivi](follow-up.md) pour plus d’informations.
+>Vous pouvez ajuster le fuseau horaire d’une entité de base de données à l’aide du gestionnaire `\Migration\Handler\Timezone`. Pour plus d’informations, consultez la section [relance](follow-up.md) .

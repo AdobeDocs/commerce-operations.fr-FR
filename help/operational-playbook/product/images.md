@@ -4,7 +4,7 @@ description: Fournissez à vos clients des images et des vidéos de produits de 
 exl-id: 080f177e-f668-4154-8a05-ea4724c29c5f
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Différents types d’images peuvent être utilisés selon les besoins de l’en
 
 ## Images de produits phares
 
-![Image de produit en vedette](../../assets/playbooks/product-image-feature.png)
+![Image du produit en vedette](../../assets/playbooks/product-image-feature.png)
 
 ## Images de style de vie
 
@@ -39,7 +39,7 @@ Différents types d’images peuvent être utilisés selon les besoins de l’en
 
 ## Images de package de produit
 
-![Image de produit en vedette](../../assets/playbooks/product-image-packaging.png)
+![Image du produit en vedette](../../assets/playbooks/product-image-packaging.png)
 
 ## Images non en boîte
 
@@ -51,19 +51,19 @@ Différents types d’images peuvent être utilisés selon les besoins de l’en
 
 ## Bonnes pratiques
 
-- **Démonstration du produit**: si le produit a un objectif défini, faites une démonstration du produit pour afficher ses fonctions et fonctionnalités.
+- **Démo du produit** : si le produit a un objectif défini, faites une démonstration du produit pour afficher ses fonctions et fonctionnalités.
 
-- **Promouvoir les images générées par l’utilisateur**: les utilisateurs chargent leurs images avec le produit sous la forme d’une révision, ce qui incite d’autres acheteurs à acheter le produit.
+- **Promouvoir les images générées par l’utilisateur** : les utilisateurs chargent leurs images avec le produit en tant que révision, ce qui motive d’autres acheteurs à acheter le produit.
 
-- **Vue à 360 degrés du produit**: le téléchargement d’une vidéo ou d’un GIF à 360 degrés du produit peut fournir une vue détaillée du client et l’inciter à acheter le produit.
+- **Vue à 360 degrés du produit** : le téléchargement d’une vidéo ou d’un GIF à 360 degrés du produit peut fournir une vue détaillée du client et le motiver à acheter le produit.
 
-- **Convention d’appellation**: créez une règle pour suivre une convention d’affectation de nom pour l’image du produit, ce qui contribue à minimiser l’erreur de téléchargement d’une image incorrecte pour un produit et aide l’équipe à gérer facilement les images.
+- **Convention d’affectation de nom** : créez une règle pour suivre une convention d’affectation de nom pour l’image du produit, ce qui contribue à minimiser l’erreur de téléchargement d’une image incorrecte pour un produit et aide l’équipe à gérer facilement les images.
 
-- **Chargement de page**: ne téléchargez pas d’images qui augmenteront le temps de chargement de la page. Si un client doit attendre l’affichage de l’image, il peut quitter le site.
+- **Chargement de page** : ne téléchargez pas d’images qui augmenteront le temps de chargement de la page. Si un client doit attendre l’affichage de l’image, il peut quitter le site.
 
-- **Contenu simple**: ne compliquez pas le contenu de manière excessive. Faites en sorte que le contenu reste simple et attrayant lorsque le point de mire est le produit. Par exemple, une bonne pratique consiste à placer l’image du produit sur un arrière-plan blanc pour améliorer l’image du produit.
+- **Contenu simple** : ne comptez pas le contenu de manière excessive. Faites en sorte que le contenu reste simple et attrayant lorsque le point de mire est le produit. Par exemple, une bonne pratique consiste à placer l’image du produit sur un arrière-plan blanc pour améliorer l’image du produit.
 
-- **Image du produit réel**: lorsqu’un client achète un produit en ligne, il s’attend à le voir tel quel sur le site web. Évitez d’appliquer des filtres ou d’améliorer l’image pour modifier l’aspect du produit. Il est important d’être transparent avec le client, sinon vous pourriez avoir un taux de rendement élevé.
+- **Image du produit réel** : lorsqu’un client achète un produit en ligne, il s’attend à voir le produit tel quel sur le site web. Évitez d’appliquer des filtres ou d’améliorer l’image pour modifier l’aspect du produit. Il est important d’être transparent avec le client, sinon vous pourriez avoir un taux de rendement élevé.
 
 >[!TIP]
 >

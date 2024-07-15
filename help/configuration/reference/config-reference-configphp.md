@@ -4,14 +4,14 @@ description: Voir une liste de valeurs dans le fichier config.php.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '147'
 ht-degree: 1%
 
 ---
 
 # Référence config.php
 
-La variable `config.php` contient les sections suivantes :
+Le fichier `config.php` contient les sections suivantes :
 
 | Nom | Description |
 | --------- | -------------------|
@@ -34,7 +34,7 @@ Contient un tableau de modules et leurs états. Si le module est activé, la val
 ]
 ```
 
-En savoir plus sur [Modules].
+En savoir plus sur les [modules].
 
 ## portées
 
@@ -82,7 +82,7 @@ Contient un tableau de valeurs de configuration de portée. Il contient les sous
 ]
 ```
 
-En savoir plus sur [Portées de commerce][scopes].
+En savoir plus sur [Portées Commerce][scopes].
 
 ## system
 
@@ -100,7 +100,7 @@ Contient un tableau de valeurs de configuration des champs système.
 ]
 ```
 
-En savoir plus sur [Configurations spécifiques au système](config-reference-sens.md).
+En savoir plus sur les [configurations spécifiques au système](config-reference-sens.md).
 
 ## thèmes
 

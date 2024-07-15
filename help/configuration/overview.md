@@ -11,7 +11,7 @@ ht-degree: 9%
 
 # Guide de configuration
 
-La variable _Configuration_ Ce guide fournit des documents de référence et des conseils limités pour gérer les fonctionnalités et services d’application Commerce configurables. Les utilisateurs techniques chargés de configurer l’application Commerce peuvent trouver des conseils dans les domaines suivants :
+Le guide _Configuration_ fournit du matériel de référence et des conseils limités pour gérer les fonctionnalités et services de l’application Commerce configurables. Les utilisateurs techniques chargés de configurer l’application Commerce peuvent trouver des conseils dans les domaines suivants :
 
 - [Installation](../configuration/bootstrap/initialization.md)
 - [Méthodes de déploiement](../configuration/deployment/overview.md)
@@ -25,8 +25,8 @@ La variable _Configuration_ Ce guide fournit des documents de référence et des
 
 ## Configuration de l’administrateur Commerce
 
-Il existe des rubriques correspondantes dans la section [Guide de l’utilisateur de Commerce](https://docs.magento.com/user-guide/stores/configuration.html) qui peuvent vous aider à comprendre la description des champs pour chaque paramètre de configuration dans l’administrateur de Commerce.
+Il existe des rubriques correspondantes dans le [Guide de l’utilisateur de Commerce](https://docs.magento.com/user-guide/stores/configuration.html) qui peuvent vous aider à comprendre la description des champs pour chaque paramètre de configuration dans l’administrateur Commerce.
 
 ## Configuration du cloud
 
-[!DNL Commerce on cloud infrastructure] utilise une [ensemble de fichiers de configuration](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) pour mettre à jour les fonctionnalités et services de l’application Commerce dans les environnements hébergés. En raison de la nature unique des environnements hébergés dans le cloud Adobe, vous devez toujours consulter la section [Guide de Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) pour d’autres exigences de configuration.
+[!DNL Commerce on cloud infrastructure] utilise un [ ensemble de fichiers de configuration](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) pour mettre à jour les fonctionnalités et services de l’application Commerce dans les environnements hébergés. En raison de la nature unique des environnements hébergés dans le cloud Adobe, vous devez toujours consulter le [Guide de Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) pour connaître d’autres exigences de configuration.

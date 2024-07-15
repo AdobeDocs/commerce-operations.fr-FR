@@ -5,27 +5,27 @@ feature: Configuration, B2B, Companies, Payments, Quotes
 exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
 source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
 
 # Référence sur les chemins de configuration de l’extension B2B
 
-_Cette option est disponible pour les instances avec B2B pour Adobe Commerce installées._
+_Ceci est disponible pour les instances avec B2B pour Adobe Commerce installé._
 
-Cette rubrique répertorie les chemins de configuration de l’extension Commerce Enterprise B2B. La variable [`magento app:config:dump` command](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle source.
+Cette rubrique répertorie les chemins de configuration de l’extension Commerce Enterprise B2B. La commande [`magento app:config:dump`](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle source.
 
 >[!INFO]
 >
->Ces listes de référence _only_ chemins de configuration uniques à B2B pour Adobe Commerce. Cette extension comprend tous les chemins de configuration pour Adobe Commerce.
+>Cette référence répertorie les chemins de configuration _only_ uniques à B2B pour Adobe Commerce. Cette extension comprend tous les chemins de configuration pour Adobe Commerce.
 
 Pour ces chemins de configuration, voir :
 
 - [Chemins de configuration des paiements](config-reference-payment.md)
 - [Référence des chemins de configuration sensibles et spécifiques au système](config-reference-sens.md)
 
-Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables).
+Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, reportez-vous à la section [Utilisation de variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables).
 
 ## Catégorie générale
 
@@ -33,7 +33,7 @@ Cette section répertorie les noms de variable et les chemins de configuration d
 
 ### Chemins des fonctionnalités B2B
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **[!UICONTROL Stores]** > Paramètres > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**.
+Ces valeurs de configuration sont disponibles dans l’Admin sous **[!UICONTROL Stores]** > Paramètres > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**.
 
 | Nom | Chemin de configuration | Chiffré ? | Spécifique au système ? | Sensibles ? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -53,13 +53,13 @@ Cette section répertorie les noms de variable et les chemins de configuration d
 
 ### Chemins de configuration de l’entreprise
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **[!UICONTROL Stores]** > Paramètres > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Company Configuration]**.
+Ces valeurs de configuration sont disponibles dans l’Admin sous **[!UICONTROL Stores]** > Paramètres > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Company Configuration]**.
 
 | Nom | Chemin de configuration | Chiffré ? | Spécifique au système ? | Sensibles ? |
 |--------------|--------------|--------------|--------------|--------------|
 | Autorisation de l’enregistrement des entreprises à partir de Storefront | `company/general/allow_company_registration` | | | |
-| Destinataire de l’e-mail d’enregistrement de société | `company/email/company_registration` | | | ![Sensibilité](/help/assets/configuration/cloud-sens.png) |
-| Envoyer une copie de courrier électronique d’enregistrement de société à | `company/email/company_registration_copy` | | | ![Sensibilité](/help/assets/configuration/cloud-sens.png) |
+| Destinataire de l’e-mail d’enregistrement de société | `company/email/company_registration` | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
+| Envoyer une copie de courrier électronique d’enregistrement de société à | `company/email/company_registration_copy` | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Méthode d’envoi de copie de courrier électronique | `company/email/company_copy_method` | | | |
 | Email d’enregistrement de société par défaut | `company/email/company_notify_admin_template` | | | |
 | Emails liés au client | `company/email/heading_customer` | | | |
@@ -72,7 +72,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **[!
 | Email inactif d’état client par défaut | `company/email/customer_account_locked_template` | | | |
 | Changement d’état de la société | `company/email/heading_company_status` | | | |
 | Destinataire de l’email de changement d’état de la société | `company/email/company_status_change` | | | |
-| Envoyer la copie de l’état de la société | `company/email/company_status_change_copy` | | | ![Sensibilité](/help/assets/configuration/cloud-sens.png) |
+| Envoyer la copie de l’état de la société | `company/email/company_status_change_copy` | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Méthode d’envoi de copie de courrier électronique | `company/email/company_status_copy_method` | | | |
 | Par Défaut, Changement De L’État De L’Entreprise En 1 Courrier Électronique Actif | `company/email/company_status_pending_approval_to_active_template` | | | |
 | La Modification De L’État De L’Entreprise Par Défaut A Été Actif 2 Email. | `company/email/company_status_rejected_blocked_to_active_template` | | | |
@@ -80,7 +80,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **[!
 | Modification de l’état de l’entreprise par défaut pour bloquer l’adresse électronique | `company/email/company_status_blocked_template` | | | |
 | Par Défaut, Changement D’État De L’Entreprise En Attente D’Un Email D’Approbation | `company/email/company_status_pending_approval_template` | | | |
 | Crédit de la société | `company/email/heading_company_credit` | | | |
-| Changement de crédit d’entreprise Expéditeur d’email | `company/email/company_credit_change` |  | | ![Sensibilité](/help/assets/configuration/cloud-sens.png) |
+| Changement de crédit d’entreprise Expéditeur d’email | `company/email/company_credit_change` |  | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Envoyer la copie de courrier électronique du crédit de la société | `company/email/company_credit_change_copy` | | | |
 | Méthode d’envoi de copie de courrier électronique | `company/email/company_credit_copy_method` | | | |
 | Modèle de courrier électronique attribué | `company/email/credit_allocated_email_template` | | | |
@@ -93,7 +93,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **[!
 
 ### Chemins des listes de demandes
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Clients** > **Listes de demandes**.
+Ces valeurs de configuration sont disponibles dans l’administrateur de **Magasins** > Paramètres > **Configuration** > **Clients** > **Listes de demandes**.
 
 | Nom | Chemin de configuration | Chiffré ? | Spécifique au système ? | Sensibles ? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -103,11 +103,11 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 
 ## Catégorie de ventes
 
-Cette section répertorie les noms de variable et les chemins de configuration disponibles pour les options dans l’Admin sous **Magasins** > Paramètres > **Configuration** > **Ventes**.
+Cette section répertorie les noms de variable et les chemins de configuration disponibles pour les options dans l’administrateur sous **Magasins** > Paramètres > **Configuration** > **Ventes**.
 
 ### Chemins des emails de vente
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Ventes** > **Courriers électroniques de vente**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > **Ventes** > **Courriers électroniques de vente**.
 
 | Nom | Chemin de configuration | Chiffré ? | Spécifique au système ? | Sensibles ? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -119,14 +119,14 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 | Expiration des citations (en 48 heures) | `sales_email/quote/expire_two_days_template` | | | |
 | Expiration des citations (en 24 heures) | `sales_email/quote/expire_one_day_template` | | | |
 | Réinitialisation de la date d’expiration | `sales_email/quote/expire_reset_template` | | | |
-| Envoyer une copie de devis à | `sales_email/quote/copy_to` | | | ![Sensibilité](/help/assets/configuration/cloud-sens.png) |
+| Envoyer une copie de devis à | `sales_email/quote/copy_to` | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Méthode Envoyer une copie de courrier électronique citée | `sales_email/quote/copy_method` | | | |
 
 {style="table-layout:auto"}
 
 ### Chemins des citations
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Ventes** > **Guillemets**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > **Ventes** > **Guillemets**.
 
 | Nom | Chemin de configuration | Chiffré ? | Spécifique au système ? | Sensibles ? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -145,7 +145,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 
 ## Chemins des méthodes de paiement
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Ventes** > **Méthodes de paiement**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > **Ventes** > **Méthodes de paiement**.
 
 >[!INFO]
 >

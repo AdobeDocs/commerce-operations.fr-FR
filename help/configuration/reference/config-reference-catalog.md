@@ -5,20 +5,20 @@ feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
 source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
 
 # Référence sur les chemins de configuration du catalogue
 
-Cette section répertorie les noms de variable et les chemins de configuration disponibles pour les options dans l’Admin sous **Magasins** > Paramètres > **Configuration** > **Catalogue**.
+Cette section répertorie les noms de variable et les chemins de configuration disponibles pour les options de l’administrateur sous **Magasins** > Paramètres > **Configuration** > **Catalogue**.
 
-La variable [`magento app:config:dump` command](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle source. Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables). Cette rubrique fonctionne _not_ list [valeurs sensibles et spécifiques au système](config-reference-sens.md).
+La commande [`magento app:config:dump`](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle source. Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, reportez-vous à la section [Utilisation de variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables). Cette rubrique ne _répertorie pas_ les [ valeurs sensibles et spécifiques au système ](config-reference-sens.md).
 
 ## Chemins du catalogue
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Catalogue**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Catalogue**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -53,7 +53,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 | Afficher la vidéo associée | `catalog/product_video/show_related` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Redémarrage automatique de la vidéo | `catalog/product_video/video_auto_restart` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Portée du prix du catalogue | `catalog/price/scope` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Prix de produit par défaut | `catalog/price/default_product_price` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Prix de produit par défaut | `catalog/price/default_product_price` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Afficher le nombre de produits | `catalog/layered_navigation/display_product_count` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Calcul de l’étape de navigation par prix | `catalog/layered_navigation/price_range_calculation` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Étape de navigation par défaut des prix | `catalog/layered_navigation/price_range_step` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -64,14 +64,14 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 | Longueur minimale de requête | `catalog/search/min_query_length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Longueur maximale de la requête | `catalog/search/max_query_length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Moteur de recherche | `catalog/search/engine` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Délai d’expiration du serveur Solr | `catalog/search/solr_server_timeout` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Délai d’expiration du serveur Solr | `catalog/search/solr_server_timeout` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Mode d’indexation | `catalog/search/engine_commit_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activation des suggestions de recherche | `catalog/search/search_suggestion_enabled` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Nombre de suggestions de recherche | `catalog/search/search_suggestion_count` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Afficher le nombre de résultats pour chaque suggestion | `catalog/search/search_suggestion_count_results_enabled` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activer Search Recommendations | `catalog/search/search_recommendations_enabled` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Décompte Recommendations de recherche | `catalog/search/search_recommendations_count` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Afficher le nombre de résultats pour chaque recommandation | `catalog/search/search_recommendations_count_results_enabled` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activation des suggestions de recherche | `catalog/search/search_suggestion_enabled` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Nombre de suggestions de recherche | `catalog/search/search_suggestion_count` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Afficher le nombre de résultats pour chaque suggestion | `catalog/search/search_suggestion_count_results_enabled` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activer Search Recommendations | `catalog/search/search_recommendations_enabled` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Décompte Recommendations de recherche | `catalog/search/search_recommendations_count` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Afficher le nombre de résultats pour chaque recommandation | `catalog/search/search_recommendations_count_results_enabled` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Termes minimum à faire correspondre | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Générer des réécritures d’URL &quot;catégorie/produit&quot; | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Termes de recherche populaires | `catalog/seo/search_terms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -82,15 +82,15 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 | Séparateur de titre de page | `catalog/seo/title_separator` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Utilisation D’Une Métadonnées De Lien Canonique Pour Les Catégories | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Utilisation D’Une Métadonnées De Lien Canonique Pour Les Produits | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activer | `catalog/magento_catalogpermissions/enabled` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Autoriser la catégorie de navigation | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Groupes de clients | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Page d’entrée | `catalog/magento_catalogpermissions/restricted_landing_page` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Afficher les prix des produits | `catalog/magento_catalogpermissions/grant_catalog_product_price` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Groupes de clients | `catalog/magento_catalogpermissions/grant_catalog_product_price_groups` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Autoriser l’ajout au panier | `catalog/magento_catalogpermissions/grant_checkout_items` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Groupes de clients | `catalog/magento_catalogpermissions/grant_checkout_items_groups` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Interdire la recherche catalogue par | `catalog/magento_catalogpermissions/deny_catalog_search` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activer | `catalog/magento_catalogpermissions/enabled` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Autoriser la catégorie de navigation | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Groupes de clients | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Page d’entrée | `catalog/magento_catalogpermissions/restricted_landing_page` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Afficher les prix des produits | `catalog/magento_catalogpermissions/grant_catalog_product_price` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Groupes de clients | `catalog/magento_catalogpermissions/grant_catalog_product_price_groups` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Autoriser l’ajout au panier | `catalog/magento_catalogpermissions/grant_checkout_items` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Groupes de clients | `catalog/magento_catalogpermissions/grant_checkout_items_groups` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Interdire la recherche catalogue par | `catalog/magento_catalogpermissions/deny_catalog_search` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | État de l’élément de commande pour activer les téléchargements | `catalog/downloadable/order_item_status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Nombre maximal de téléchargements par défaut | `catalog/downloadable/downloads_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Partager | `catalog/downloadable/shareable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -103,25 +103,25 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 | Ordre des champs de date | `catalog/custom_options/date_fields_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Format d’heure | `catalog/custom_options/time_format` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Période | `catalog/custom_options/year_range` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activation de la fonctionnalité d’événements de catalogue | `catalog/magento_catalogevent/enabled` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Activation du widget d’événement de catalogue sur Storefront | `catalog/magento_catalogevent/lister_output` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Nombre d’événements à afficher dans le widget du curseur d’événement | `catalog/magento_catalogevent/lister_widget_limit` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Événements à faire défiler par clic dans le widget du curseur d’événement | `catalog/magento_catalogevent/lister_widget_scroll` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Nombre maximal de produits dans la liste de produits associés | `catalog/magento_targetrule/related_position_limit` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Afficher les produits associés | `catalog/magento_targetrule/related_position_behavior` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Mode de rotation pour les produits dans la liste de produits associés | `catalog/magento_targetrule/related_rotation_mode` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Nombre maximal de produits dans la liste de produits en vente croisée | `catalog/magento_targetrule/crosssell_position_limit` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Afficher les produits en vente croisée | `catalog/magento_targetrule/crosssell_position_behavior` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Mode de rotation des produits dans la liste de produits en vente croisée | `catalog/magento_targetrule/crosssell_rotation_mode` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Nombre maximal de produits dans la liste de produits de vente incitative | `catalog/magento_targetrule/upsell_position_limit` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Afficher les produits de mise à niveau | `catalog/magento_targetrule/upsell_position_behavior` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Mode de rotation des produits dans la liste de produits de vente incitative | `catalog/magento_targetrule/upsell_rotation_mode` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Activation de la fonctionnalité d’événements de catalogue | `catalog/magento_catalogevent/enabled` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Activation du widget d’événement de catalogue sur Storefront | `catalog/magento_catalogevent/lister_output` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Nombre d’événements à afficher dans le widget du curseur d’événement | `catalog/magento_catalogevent/lister_widget_limit` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Événements à faire défiler par clic dans le widget du curseur d’événement | `catalog/magento_catalogevent/lister_widget_scroll` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Nombre maximal de produits dans la liste de produits associés | `catalog/magento_targetrule/related_position_limit` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Afficher les produits associés | `catalog/magento_targetrule/related_position_behavior` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Mode de rotation pour les produits dans la liste de produits associés | `catalog/magento_targetrule/related_rotation_mode` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Nombre maximal de produits dans la liste de produits en vente croisée | `catalog/magento_targetrule/crosssell_position_limit` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Afficher les produits en vente croisée | `catalog/magento_targetrule/crosssell_position_behavior` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Mode de rotation des produits dans la liste de produits en vente croisée | `catalog/magento_targetrule/crosssell_rotation_mode` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Nombre maximal de produits dans la liste de produits de vente incitative | `catalog/magento_targetrule/upsell_position_limit` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Afficher les produits de mise à niveau | `catalog/magento_targetrule/upsell_position_behavior` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Mode de rotation des produits dans la liste de produits de vente incitative | `catalog/magento_targetrule/upsell_rotation_mode` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
 ## Chemins d’accès du stock
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Inventaire**.
+Ces valeurs de configuration sont disponibles dans l’administrateur de **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Inventaire**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -130,10 +130,10 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 | Afficher les produits en rupture de stock | `cataloginventory/options/show_out_of_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Seuil gauche seulement X | `cataloginventory/options/stock_threshold_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Afficher la disponibilité des produits en stock sur Storefront | `cataloginventory/options/display_product_stock_status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Synchronisation avec le catalogue | `cataloginventory/options/synchronize_with_catalog` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Synchronisation avec le catalogue | `cataloginventory/options/synchronize_with_catalog` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Gérer Stock | `cataloginventory/item_options/manage_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Arrière-plan | `cataloginventory/item_options/backorders` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Utiliser la mise à jour différée des stocks | `cataloginventory/item_options/use_deferred_stock_update` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Utiliser la mise à jour différée des stocks | `cataloginventory/item_options/use_deferred_stock_update` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Quantité maximale autorisée dans le panier | `cataloginventory/item_options/max_sale_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Seuil hors stock | `cataloginventory/item_options/min_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Quantité minimale autorisée dans le panier | `cataloginventory/item_options/min_sale_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -141,8 +141,8 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 | Activer les incréments de qualité | `cataloginventory/item_options/enable_qty_increments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Incréments de qualité | `cataloginventory/item_options/qty_increments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Renvoyer automatiquement l’article de la note de crédit à Stock | `cataloginventory/item_options/auto_return` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Exécution asynchrone | `cataloginventory/bulk_operations/async` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Taille de lot asynchrone | `cataloginventory/bulk_operations/batch_size` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Exécution asynchrone | `cataloginventory/bulk_operations/async` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Taille de lot asynchrone | `cataloginventory/bulk_operations/batch_size` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Fournisseur | `cataloginventory/source_selection_distance_based/provider` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mode de calcul | `cataloginventory/source_selection_distance_based_google/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Valeur | `cataloginventory/source_selection_distance_based_google/value` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -151,20 +151,20 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 
 ## Chemins de marchandisage visuel
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Marchandisage visuel**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Marchandisage visuel**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
-| Attributs visibles pour les règles de catégorie | `visualmerchandiser/options/smart_attributes` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Seuil minimum de stock | `visualmerchandiser/options/minimum_stock_threshold` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Code d’attribut de couleur | `visualmerchandiser/options/color_attribute_code` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Ordre des couleurs | `visualmerchandiser/options/color_order` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Attributs visibles pour les règles de catégorie | `visualmerchandiser/options/smart_attributes` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Seuil minimum de stock | `visualmerchandiser/options/minimum_stock_threshold` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Code d’attribut de couleur | `visualmerchandiser/options/color_attribute_code` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Ordre des couleurs | `visualmerchandiser/options/color_order` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
 ## Chemins du plan de site XML
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Plan du site XML**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > **Catalogue** > **plan de site XML**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -188,7 +188,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 
 ## Chemins des flux RSS
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Flux RSS**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Flux RSS**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -204,7 +204,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 
 ## Envoyer un courrier électronique à des chemins d’ami
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Envoyer un email à un ami**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Envoyer un courrier électronique à un ami**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|

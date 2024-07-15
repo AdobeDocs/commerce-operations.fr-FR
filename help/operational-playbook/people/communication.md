@@ -39,7 +39,7 @@ Nous allons explorer certains de ces outils, qui se sont avérés très efficace
 
 Les outils d&#39;application pour la gestion de projet et le suivi des problèmes existent depuis un bon moment maintenant. Ces outils simplifient le processus de communication entre les employés et assurent l’évolutivité du projet ou de la plateforme.
 
-JIRA est connu pour cocher toutes les cases en ce qui concerne l&#39;échange d&#39;informations et la gestion de projet fondamentale. L’application permet aux équipes de partager plus de connaissances et d’informations, ce qui permet de mieux comprendre les objectifs commerciaux, les objectifs et les tâches de toute équipe. Lorsqu’elle est bien utilisée, elle peut améliorer la collaboration et l’efficacité au sein d’une organisation.
+JIRA est connu pour cocher toutes les cases en ce qui concerne l&#39;exchange de l&#39;information et la gestion fondamentale du projet. L’application permet aux équipes de partager plus de connaissances et d’informations, ce qui permet de mieux comprendre les objectifs commerciaux, les objectifs et les tâches de toute équipe. Lorsqu’elle est bien utilisée, elle peut améliorer la collaboration et l’efficacité au sein d’une organisation.
 
 La liste suivante répertorie les façons dont JIRA peut être utilisé au sein de n’importe quelle organisation :
 
@@ -65,7 +65,7 @@ La liste suivante répertorie les façons dont JIRA peut être utilisé au sein 
 
 JIRA permet aux équipes de créer et d’écrire des tâches détaillées, de générer des rapports, de personnaliser les workflows et d’affecter relativement rapidement des tâches à tous les individus.
 
-Les responsables du commerce, les équipes de marketing et de développement, même les parties prenantes de niveau C, peuvent suivre la progression quotidienne, hebdomadaire, mensuelle et annuelle d’une tâche ou d’un projet JIRA donné. L’outil de gestion de projet Atlassian est disponible en trois versions, dont JIRA Align, JIRA Core et JIRA Software.
+Les responsables Commerce, les équipes de marketing et de développement, même les parties prenantes de niveau C, peuvent suivre la progression quotidienne, hebdomadaire, mensuelle et annuelle d’une tâche ou d’un projet JIRA donné. L’outil de gestion de projet Atlassian est disponible en trois versions, dont JIRA Align, JIRA Core et JIRA Software.
 
 L’utilisation de JIRA dans n’importe quel commerce électronique offre la possibilité pour plusieurs équipes de collaborer à l’aide d’une seule plateforme. Souvent, les entreprises assistent aux équipes marketing, de développement, créatives et de commerce électronique qui travaillent toutes dans des silos différents. Disposer d’un outil de gestion de projet comme JIRA permet à chaque équipe de représenter différentes priorités. Les problèmes peuvent représenter les éléments dont les équipes souhaitent effectuer le suivi et sont tous contenus dans différents projets qui sont composés de tâches récurrentes que les équipes doivent effectuer. Chaque problème passe par un processus appelé workflow.
 

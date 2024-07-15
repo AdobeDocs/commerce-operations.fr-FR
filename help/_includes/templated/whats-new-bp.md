@@ -23,7 +23,7 @@ Cette page contient des modifications récentes que nous pensons que vous souhai
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de bonnes pratiques pour <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html">mise à niveau de MariaDB</a> à 10.5.1 et versions ultérieures.</p>
+      <td><p>Ajout de bonnes pratiques pour la <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html">mise à niveau de MariaDB</a> vers la version 10.5.1 et versions ultérieures.</p>
 </td>
       <td>bonnes pratiques</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7199e74f82cef6dd682f5e240ee2b6fc56da18c8">7199e7</a> (commit)</td>
@@ -43,7 +43,7 @@ Cette page contient des modifications récentes que nous pensons que vous souhai
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’informations sur la variable <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">Options de configuration du dimensionnement de la mémoire cache L2</a> pour Adobe Commerce sur l’infrastructure cloud.</p>
+      <td><p>Ajout d’informations sur les <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">options de configuration du dimensionnement de la mémoire cache L2</a> pour Adobe Commerce sur l’infrastructure cloud.</p>
 </td>
       <td>bonnes pratiques</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21da4c22744dbb3b27b0dbe184b946788748a52e">21da4c</a> (commit)</td>

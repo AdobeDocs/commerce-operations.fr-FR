@@ -5,7 +5,7 @@ recommendations: noCatalog
 exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,9 @@ Les bases de données MySQL se répliquent de manière asynchrone, ce qui signif
 Ce guide ne vise pas à approfondir la question de la réplication des bases de données. Pour le configurer, vous pouvez consulter une ressource du type :
 
 - [Documentation MySQL](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [Comment configurer la réplication esclave par Principal dans MySQL (digitalsea)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [Configuration de la réplication esclave par Principal dans MySQL (digitalsea)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
-Commerce fournit des exemples de configurations MySQL pour vos bases de données esclaves. Une configuration simple est fournie avec la variable `ResourceConnections` class `README.md`.
+Commerce fournit des exemples de configurations MySQL pour vos bases de données esclaves. Une configuration simple est fournie avec la classe `ResourceConnections` `README.md`.
 
 Les éléments suivants sont plus avancés et ne sont fournis qu’à titre d’information :
 
@@ -122,9 +122,9 @@ Les éléments suivants sont plus avancés et ne sont fournis qu’à titre d’
 
 ## Amélioration des performances
 
-Pour améliorer les performances de la réplication maître-esclave, vous pouvez filtrer certaines tables sur des instances esclaves. Nous vous recommandons de filtrer toutes les tables temporaires avec un modèle de nom. `search\_tmp\_%` qui sont utilisés pour la recherche catalogue.
+Pour améliorer les performances de la réplication maître-esclave, vous pouvez filtrer certaines tables sur des instances esclaves. Nous vous recommandons de filtrer toutes les tables temporaires avec le modèle de nom `search\_tmp\_%` utilisées pour la recherche de catalogue.
 
-Pour ce faire, ajoutez la ligne suivante à votre `my.cnf` sur vos instances esclaves :
+Pour ce faire, ajoutez la ligne suivante à votre fichier `my.cnf` sur vos instances esclaves :
 
 ```conf
 replicate-wild-ignore-table=%.search\_tmp\_%

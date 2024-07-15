@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Flux de déploiement
 
-La variable [!DNL Commerce] le flux de déploiement de production permet à un magasin d’atteindre des performances maximales.
+Le flux de déploiement de production [!DNL Commerce] permet à un magasin d’atteindre des performances maximales.
 
 ## Installer les dépendances
 
-La variable `composer.json` et `composer.lock` gestion des fichiers [!DNL Commerce] dépendances et installez la version appropriée pour chaque module. Vous devez installer les dépendances avant [instructions d’injection de dépendance de prétraitement](#preprocess-dependency-injection-instructions) si vous prévoyez de mettre à jour la variable [autoloader](#update-the-autoloader).
+Les fichiers `composer.json` et `composer.lock` gèrent les dépendances [!DNL Commerce] et installent la version appropriée pour chaque module. Vous devez installer les dépendances avant les [instructions d’injection de dépendance de prétraitement](#preprocess-dependency-injection-instructions) si vous envisagez de mettre à jour l’[outil d’auto-chargement](#update-the-autoloader).
 
-Pour installer [!DNL Commerce] dependencies :
+Pour installer les dépendances [!DNL Commerce] :
 
 ```bash
 composer install --no-dev
@@ -41,13 +41,13 @@ bin/magento setup:di:compile
 
 ## Mise à jour du chargeur automatique
 
-Une fois la compilation terminée, vérifiez que [APCu est activé](../performance/software.md#php-settings) et mettez à jour l’outil de chargement automatique :
+Une fois la compilation terminée, vérifiez que [APCu est activé](../performance/software.md#php-settings) et mettez à jour l’outil d’auto-chargement :
 
 Pour mettre à jour l’outil de chargement automatique :
 
 >[!INFO]
 >
->La variable `-o` L’option convertit le chargement automatique PSR-0/4 en classmap pour obtenir un chargeur automatique plus rapide. La variable `--apcu` L’option utilise APCu pour mettre en cache les classes trouvées/introuvables.
+>L’option `-o` convertit le chargement automatique PSR-0/4 en classmap pour obtenir un chargeur automatique plus rapide. L’option `--apcu` utilise APCu pour mettre en cache les classes trouvées/introuvables.
 
 ```bash
 composer dump-autoload -o --apcu
@@ -73,7 +73,7 @@ bin/magento setup:static-content:deploy
 
 ## Déploiement de contenu statique
 
-Déploiement de causes de contenu statique [!DNL Commerce] pour effectuer les actions suivantes :
+Le déploiement de contenu statique entraîne [!DNL Commerce] à effectuer les actions suivantes :
 
 * Analyse de toutes les ressources statiques
 * Réaliser la fusion, la minimisation et le regroupement de contenu
@@ -83,7 +83,7 @@ Déploiement de causes de contenu statique [!DNL Commerce] pour effectuer les ac
 
 Si votre contenu statique n’est pas déployé, [!DNL Commerce] effectue toutes les opérations répertoriées à la volée, ce qui entraîne une augmentation significative du temps de réponse.
 
-Vous pouvez utiliser diverses options pour personnaliser les opérations de déploiement en fonction de la taille de magasin et des besoins d’exécution. La stratégie de déploiement compacte est la plus courante. Voir [Stratégies de déploiement des fichiers statiques](../configuration/cli/static-view-file-strategy.md)
+Vous pouvez utiliser diverses options pour personnaliser les opérations de déploiement en fonction de la taille de magasin et des besoins d’exécution. La stratégie de déploiement compacte est la plus courante. Voir [Stratégies de déploiement de fichiers statiques](../configuration/cli/static-view-file-strategy.md)
 
 Pour déployer du contenu statique :
 
@@ -97,9 +97,9 @@ Cette commande permet au compositeur de recréer le mappage sur les fichiers de 
 
 >[!INFO]
 >
->La définition du mode de production s’exécute automatiquement. `setup:di:compile` et `setup:static-content:deploy`.
+>La définition du mode de production exécute automatiquement `setup:di:compile` et `setup:static-content:deploy`.
 
-Enfin, vous devez placer votre magasin en mode Production. Le mode de production est spécifiquement optimisé pour des performances maximales de votre magasin. Elle désactive également toutes les fonctionnalités spécifiques aux développeurs. Vous pouvez le faire dans votre `.htaccess` ou `nginx.conf` fichier :
+Enfin, vous devez placer votre magasin en mode Production. Le mode de production est spécifiquement optimisé pour des performances maximales de votre magasin. Elle désactive également toutes les fonctionnalités spécifiques aux développeurs. Vous pouvez le faire dans votre fichier `.htaccess` ou `nginx.conf` :
 
 `SetEnv MAGE_MODE production`
 

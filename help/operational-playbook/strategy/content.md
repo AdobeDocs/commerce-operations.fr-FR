@@ -16,7 +16,7 @@ Les plans marketing de contenu d’e-commerce performants ne proviennent pas de 
 
 ## Structure de la stratégie de contenu
 
-![Diagramme de structure de la stratégie de contenu](../../assets/playbooks/content-strategy-framework.png)
+![Diagramme de structure de stratégie de contenu](../../assets/playbooks/content-strategy-framework.png)
 
 ### Préproduction
 
@@ -26,7 +26,7 @@ Cette étape consiste à commencer par votre utilisateur, à comprendre ses beso
 
 Cette étape implique la création de contenu. Cela inclut la création, la création, la modification, la production de ressources et l’optimisation du contenu (accessibilité, optimisation du moteur de recherche, balisage et classification, externalisation de la production, rôle des outils et technologies tiers et réutilisation du contenu).
 
-### Post-production
+### Production Post
 
 Cette étape implique la révision et l’évaluation du contenu, de l’adaptation et de l’optimisation. Cela inclut l’évaluation des analyses, l’optimisation, le test, la formation et l’expérience utilisateur.
 
@@ -38,10 +38,10 @@ Que vous gériez du contenu web de base ou du contenu à diffuser sur les résea
 
 Adobe Experience Manager combine plusieurs fonctions au niveau de l’infrastructure et de l’application dans un package intégré unique. L&#39;offre s&#39;adresse :
 
-- **Sites**: créez et diffusez rapidement des sites web et des applications mobiles pertinents, puis mettez à jour le contenu à tout moment sans charger votre service informatique.
-- **Ressources**: gérez facilement des images, des vidéos et d’autres ressources sur chaque canal numérique pour offrir des expériences client personnalisées.
-- **Communautés**: construisez des communautés prospères et des conversations attrayantes sur toutes vos propriétés sociales afin que vous puissiez inspirer de nouveaux niveaux d’apprentissage et de fidélisation des clients.
-- **Forms**: intégrez des formulaires d’entreprise dans vos sites web et expériences mobiles et simplifiez la création de formulaires et la réalisation de transactions.
-- **Applications**: créez et diffusez des applications mobiles avec une solution qui réduit l’écart entre les marketeurs et l’informatique afin que les marketeurs puissent facilement mettre à jour le contenu (même après le lancement).
+- **Sites** : créez et diffusez rapidement des sites web et des applications mobiles pertinents et mettez à jour le contenu à tout moment sans charger votre service informatique.
+- **Assets** : gérez facilement des images, des vidéos et d’autres ressources sur chaque canal numérique pour offrir des expériences client personnalisées.
+- **Communautés** : créez des communautés prospères et des conversations attrayantes sur toutes vos propriétés sociales afin que vous puissiez inspirer de nouveaux niveaux d’apprentissage et de fidélisation des clients.
+- **Forms** : intégrez des formulaires d’entreprise à vos sites web et expériences mobiles et simplifiez la création de formulaires et la réalisation de transactions.
+- **Applications** : créez et diffusez des applications mobiles avec une solution qui comble le fossé entre les marketeurs et l’informatique afin que les marketeurs puissent facilement mettre à jour le contenu (même après le lancement).
 
-![Diagramme de structure de la stratégie de contenu](../../assets/playbooks/content-strategy-framework2.png)
+![Diagramme de structure de stratégie de contenu](../../assets/playbooks/content-strategy-framework2.png)

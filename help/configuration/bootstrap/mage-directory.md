@@ -4,18 +4,18 @@ description: Utilisez la variable MAGE_DIRS pour définir un tableau de chemins 
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---
 
 # Chemins de répertoire de base
 
-La variable `MAGE_DIRS` La variable d’environnement vous permet de spécifier des chemins d’accès aux répertoires de base personnalisés et des fragments d’URL de base utilisés par l’application Commerce pour créer des chemins d’accès absolus vers différents fichiers ou pour générer des URL.
+La variable d’environnement `MAGE_DIRS` vous permet de spécifier des chemins d’accès de répertoire de base personnalisés et des fragments d’URL de base utilisés par l’application Commerce pour créer des chemins d’accès absolus vers différents fichiers ou pour générer des URL.
 
 ## Définir MAGE_DIRS
 
-Spécifiez un tableau associatif dont les clés sont des constantes de [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] Les valeurs et sont les chemins absolus des répertoires ou de leurs chemins d’URL, respectivement.
+Spécifiez un tableau associatif où les clés sont des constantes de [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] et où les valeurs sont des chemins absolus de répertoires ou de leurs chemins d’URL, respectivement.
 
 Vous pouvez définir `MAGE_DIRS` de l’une des manières suivantes :
 
@@ -48,7 +48,7 @@ Vous pouvez définir `MAGE_DIRS` de l’une des manières suivantes :
   $bootstrap->run($app);
   ```
 
-L’exemple précédent définit des chemins pour `[cache]` et `[media]` répertoires vers `/mnt/nfs/cache` et `/mnt/nfs/media`, respectivement.
+L’exemple précédent définit les chemins pour les répertoires `[cache]` et `[media]` sur `/mnt/nfs/cache` et `/mnt/nfs/media`, respectivement.
 
 <!-- link definitions -->
 

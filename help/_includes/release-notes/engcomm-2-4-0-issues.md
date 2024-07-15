@@ -1,8 +1,8 @@
 ---
 source-git-commit: 85e9a890f8ccb0f4d8b63c9c96971cf6e011f992
 workflow-type: tm+mt
-source-wordcount: '6434'
-ht-degree: 12%
+source-wordcount: '3292'
+ht-degree: 0%
 
 ---
 # Contributions de la communauté
@@ -292,7 +292,7 @@ ht-degree: 12%
 | toxix | [#25488](https://github.com/magento/magento2/pull/25488) | [25487](https://github.com/magento/magento2/issues/25487) |
 | Nikita Sarychev | [#25249](https://github.com/magento/magento2/pull/25249) | N/A |
 | vishal-webkul | [#25246](https://github.com/magento/magento2/pull/25246) | [25245](https://github.com/magento/magento2/issues/25245) |
-| adrian-martinez-interactiv4 | [#24843](https://github.com/magento/magento2/pull/24843) | [24842](https://github.com/magento/magento2/issues/24842) |
+| adrian-martinez-interactive4 | [#24843](https://github.com/magento/magento2/pull/24843) | [24842](https://github.com/magento/magento2/issues/24842) |
 | Sathish Subramanian | [#26820](https://github.com/magento/magento2/pull/26820) | N/A |
 | Karyna Tsymbal | [#26816](https://github.com/magento/magento2/pull/26816) | N/A |
 | Ajith | [#26771](https://github.com/magento/magento2/pull/26771) | N/A |

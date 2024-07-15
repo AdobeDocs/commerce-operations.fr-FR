@@ -19,17 +19,17 @@ Vous pouvez rencontrer des problèmes lors du développement de modules Adobe Co
 
 >[!NOTE]
 >
->Ces directives s’appliquent principalement aux [architecture de référence globale (GRA)](../overview.md) projets.
+>Ces instructions s’appliquent principalement aux projets [d’architecture de référence globale (GRA)](../overview.md).
 
 ## Compositeur d’accélération
 
-Installer [https://github.com/hirak/prestissimo](https://github.com/hirak/prestissimo) pour accélérer le compositeur avec des téléchargements de modules asynchrones.
+Installez [https://github.com/hirak/prestissimo](https://github.com/hirak/prestissimo) pour accélérer le compositeur avec les téléchargements de modules asynchrones.
 
 ```bash
 composer global require hirak/prestissimo
 ```
 
-Si vous rencontrez des problèmes, désinstallez `prestissimo`:
+Si vous rencontrez des problèmes, désinstallez `prestissimo` :
 
 ```bash
 composer global remove hirak/prestissimo
@@ -45,7 +45,7 @@ Le compositeur est parfois bloqué par les versions de package. Vous pouvez voir
    composer clearcache
    ```
 
-1. Supprimez le `composer.lock` pour tous les packages.
+1. Supprimez le fichier `composer.lock` pour tous les packages.
 
    ```bash
    rm -rf vendor/* composer.lock
@@ -59,7 +59,7 @@ Le compositeur est parfois bloqué par les versions de package. Vous pouvez voir
 
 >[!TIP]
 >
->Ces étapes mettent à jour tous les packages vers la dernière version disponible. Rétablir `composer.lock` pour annuler ces mises à niveau à partir de Git.
+>Ces étapes mettent à jour tous les packages vers la dernière version disponible. Rétablissez le fichier `composer.lock` à partir de Git pour annuler ces mises à niveau.
 
 ## Rechercher les éventuelles mises à jour dans les packages client
 
@@ -69,7 +69,7 @@ Le compositeur est parfois bloqué par les versions de package. Vous pouvez voir
    composer outdated
    ```
 
-1. Filtrage à l’aide de caractères génériques et/ou de la variable `--minor-only` option permettant d’ignorer les mises à niveau incompatibles en amont :
+1. Filtrez à l’aide de caractères génériques et/ou de l’option `--minor-only` pour ignorer les mises à niveau incompatibles en amont :
 
    ```bash
    composer outdated 'magento/*'
@@ -84,7 +84,7 @@ Affichez les détails de tous les packages installés sur une branche Git.
 composer info
 ```
 
-Exécuter `composer install` après le changement de branches Git et avant l’exécution `composer info`. Sinon, le compositeur affiche des détails sur la branche précédente que vous avez extraite.
+Exécutez `composer install` après avoir changé de branches Git et avant d’exécuter `composer info`. Sinon, le compositeur affiche des détails sur la branche précédente que vous avez extraite.
 
 >[!TIP]
 >
@@ -123,24 +123,24 @@ composer why-not client/module-example
 
 ## Hébergement d’un référentiel de compositeur privé
 
-Si vous avez besoin d’un référentiel de compositeur privé, utilisez [Packagiste privé](https://packagist.com/) ou [JFrog Artifactory](https://jfrog.com/integration/php-composer-repository/). Ne pas utiliser [Satis](https://github.com/composer/satis).
+Si vous avez besoin d’un référentiel de compositeur privé, utilisez [Private Packagist](https://packagist.com/) ou [JFrog Artifactory](https://jfrog.com/integration/php-composer-repository/). N’utilisez pas [Satis](https://github.com/composer/satis).
 
-- **Packagiste privé** est sécurisé, coûte environ 600 USD par an avec trois utilisateurs administrateurs et est hébergé.
+- **Private Packagist** est sécurisé, coûte environ 600 USD par an avec trois utilisateurs administrateurs et est hébergé.
 
-- **JFrog Artifactory** commence à 1 176 USD par an. Il n&#39;est pas aussi couramment utilisé que Packagist, mais il prend en charge plus de langages que PHP.
+- **JFrog Artifactory** commence à $1,176 USD par an. Il n&#39;est pas aussi couramment utilisé que Packagist, mais il prend en charge plus de langages que PHP.
 
-- **Satis** ne comporte aucune sécurité intégrée, aucune automatisation et nécessite un hébergement supplémentaire. Il n&#39;est gratuit que si votre temps est également gratuit.
+- **Satis** n’a pas de sécurité intégrée, n’a pas d’automatisation et nécessite un hébergement supplémentaire. Il n&#39;est gratuit que si votre temps est également gratuit.
 
 ## Modules de contrôle de version
 
-Utilisation [Contrôle de version sémantique 2.0.0](https://semver.org/spec/v2.0.0.html) comme décrit dans Adobe Commerce [schéma de contrôle de version](https://developer.adobe.com/commerce/php/development/versioning/). Ne réinventez pas la roue.
+Utilisez [ version sémantique 2.0.0](https://semver.org/spec/v2.0.0.html) comme décrit dans le [schéma de contrôle de version](https://developer.adobe.com/commerce/php/development/versioning/) d’Adobe Commerce. Ne réinventez pas la roue.
 
-Pour les dépendances des modules Adobe Commerce, suivez la [dépendances des versions de module](https://developer.adobe.com/commerce/php/development/versioning/dependencies/) la documentation.
+Pour les dépendances des modules Adobe Commerce, suivez la documentation [Dépendances des versions de module](https://developer.adobe.com/commerce/php/development/versioning/dependencies/) .
 
-N’utilisez pas la définition de version dans la variable `composer.json` fichier . Utilisez plutôt des balises Git pour les versions. Voir [Versions et contraintes du compositeur](https://getcomposer.org/doc/articles/versions.md#versions-and-constraints).
+N’utilisez pas la définition de version dans le fichier `composer.json`. Utilisez plutôt des balises Git pour les versions. Voir [Versions et contraintes du compositeur](https://getcomposer.org/doc/articles/versions.md#versions-and-constraints).
 
 ## Où placer les modules qui s’affichent dans un fichier d’archive et non dans le compositeur
 
-Créez un référentiel Git pour les modules d’une archive et hébergez-les vous-même. Chaque module Adobe Commerce comporte une `composer.json` fichier . Après l’avoir hébergé dans Git et synchronisé avec Private Packagist, vous pouvez l’installer avec Composer.
+Créez un référentiel Git pour les modules d’une archive et hébergez-les vous-même. Chaque module Adobe Commerce possède un fichier `composer.json`. Après l’avoir hébergé dans Git et synchronisé avec Private Packagist, vous pouvez l’installer avec Composer.
 
 Lorsque vous recevez une nouvelle version du module, téléchargez le code dans Git, balisez-le, puis installez la nouvelle version avec le compositeur.

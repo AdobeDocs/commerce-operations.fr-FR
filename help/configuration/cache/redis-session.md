@@ -5,7 +5,7 @@ feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '712'
 ht-degree: 1%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Vous devez [install Redis](config-redis.md#install-redis) avant de continuer.
+>Vous devez [installer Redis](config-redis.md#install-redis) avant de continuer.
 
 
-Commerce fournit désormais des options de ligne de commande pour configurer l’enregistrement de session Redis. Dans les versions précédentes, vous aviez modifié la variable `<Commerce install dir>app/etc/env.php` fichier . La ligne de commande fournit la validation et est la méthode de configuration recommandée, mais vous pouvez toujours modifier la variable `env.php` fichier .
+Commerce fournit désormais des options de ligne de commande pour configurer l’enregistrement de session Redis. Dans les versions précédentes, vous aviez modifié le fichier `<Commerce install dir>app/etc/env.php`. La ligne de commande fournit la validation et est la méthode de configuration recommandée, mais vous pouvez toujours modifier le fichier `env.php`.
 
-Exécutez la variable `setup:config:set` et spécifiez des paramètres spécifiques à Redis.
+Exécutez la commande `setup:config:set` et spécifiez des paramètres spécifiques à Redis.
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
@@ -36,9 +36,9 @@ where
 | session-save-redis-host | hôte | Nom d’hôte complet, adresse IP ou chemin d’accès absolu si vous utilisez des sockets UNIX. | localhost |
 | session-save-redis-port | port | Port d’écoute du serveur Redis. | 6379 |
 | session-save-redis-password | password | Indique un mot de passe si votre serveur Redis doit être authentifié. | empty |
-| session-save-redis-timeout | timeout | Timeout de connexion, en secondes. | 2.5 |
+| session-save-redis-timeout | timeout | Timeout de connexion, en secondes. | 2,5 |
 | session-save-redis-persistent-id | persistent_identifier | Chaîne unique pour activer les connexions persistantes (par exemple, sess-db0).<br>[Problèmes connus avec phpredis et php-fpm](https://github.com/phpredis/phpredis/issues/70). |
-| session-save-redis-db | base | Numéro de base de données Redis unique, recommandé pour éviter toute perte de données.<br><br>**Important**: si vous utilisez Redis pour plusieurs types de mise en cache, les numéros de la base de données doivent être différents. Il est recommandé d’attribuer le numéro de base de données de mise en cache par défaut à 0, le numéro de base de données de mise en cache de page à 1 et le numéro de base de données de stockage de session à 2. | 0 |
+| session-save-redis-db | base | Numéro de base de données Redis unique, recommandé pour éviter toute perte de données.<br><br>**Important** : Si vous utilisez Redis pour plusieurs types de mise en cache, les numéros de la base de données doivent être différents. Il est recommandé d’attribuer le numéro de base de données de mise en cache par défaut à 0, le numéro de base de données de mise en cache de page à 1 et le numéro de base de données de stockage de session à 2. | 0 |
 | session-save-redis-compression-threshold | compression_threshold | Définissez cette variable sur 0 pour désactiver la compression (recommandé lorsque `suhosin.session.encrypt = On`).<br>[Problème connu avec des chaînes de plus de 64 Ko](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
 | session-save-redis-compression-lib | compression_library | Options : gzip, lzf, lz4 ou snappy. | gzip |
 | session-save-redis-log-level | log_level | Définissez sur l’un des éléments suivants, répertoriés dans l’ordre entre au moins verbose et la plupart des verbose :<ul><li>0 (urgence : seules les erreurs les plus graves)<li>1 (alerte : action immédiate requise)<li>2 (critique : composant d’application indisponible)<li>3 (erreur : erreurs d’exécution, non critiques mais devant être surveillées)<li>4 (avertissement : informations supplémentaires, recommandé)<li>5 (avis : état normal mais significatif)<li>6 (informations : messages d’information)<li>7 (débogage : informations les plus complètes à des fins de développement ou de test uniquement)</ul> | 1 |
@@ -58,7 +58,7 @@ where
 
 ## Exemple
 
-L’exemple suivant définit Redis comme entrepôt de données de session et définit l’hôte sur `127.0.0.1`, définit le niveau de journal sur 4 et le numéro de la base de données sur 2. Tous les autres paramètres sont définis sur la valeur par défaut.
+L’exemple suivant définit Redis comme entrepôt de données de session, définit l’hôte sur `127.0.0.1`, définit le niveau de journal sur 4 et définit le numéro de base de données sur 2. Tous les autres paramètres sont définis sur la valeur par défaut.
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
@@ -66,7 +66,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.
 
 ### Résultat
 
-Commerce ajoute des lignes similaires à ce qui suit : `<magento_root>app/etc/env.php`:
+Commerce ajoute des lignes similaires à celles-ci à `<magento_root>app/etc/env.php` :
 
 ```php
     'session' =>
@@ -102,7 +102,7 @@ Commerce ajoute des lignes similaires à ce qui suit : `<magento_root>app/etc/en
 
 ## Vérification de la connexion Redis
 
-Pour vérifier que Redis et Commerce fonctionnent ensemble, connectez-vous au serveur exécutant Redis, ouvrez un terminal et utilisez la commande Redis monitor ou la commande ping .
+Pour vérifier que Redis et Commerce fonctionnent ensemble, connectez-vous au serveur exécutant Redis, ouvrez un terminal et utilisez la commande Redis monitor ou la commande ping.
 
 ### Redis monitor, commande
 
@@ -133,4 +133,4 @@ Si les deux commandes ont réussi, Redis est configuré correctement.
 
 ### Inspection des données compressées
 
-Pour examiner les données de session compressées et le cache de page, la variable [RESP.app](https://flathub.org/apps/details/app.resp.RESP) prend en charge la décompression automatique du cache de session et de page Commerce 2 et affiche les données de session PHP sous une forme lisible.
+Pour examiner les données de session compressées et le cache de page, [RESP.app](https://flathub.org/apps/details/app.resp.RESP) prend en charge la décompression automatique du cache de page et de session Commerce 2 et affiche les données de session PHP sous une forme lisible par l’utilisateur.

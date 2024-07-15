@@ -1,13 +1,13 @@
 ---
 name: New topic
 about: Create a request to add missing information
-title: '"Demande d’une nouvelle rubrique"'
+title: "Demande d’une nouvelle rubrique"
 labels: New Topic
 assignees: ''
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '36'
+ht-degree: 8%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 <!-- Use the following checklist template as a starting point -->
 
 - [ ] La rubrique fournit une explication du fonctionnement de ____.
-- [ ] La rubrique décrit les étapes à suivre pour ____.
+- [ ] La rubrique fournit des étapes pour ____.
 - [ ] La rubrique contient des exemples de code qui affichent ____.
 - [ ] Autre (veuillez préciser)
 

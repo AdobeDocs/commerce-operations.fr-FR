@@ -4,7 +4,7 @@ description: Alignez votre infrastructure Adobe Commerce et Adobe Experience Man
 exl-id: f9cb818f-1461-4b23-b931-e7cee70912fd
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,9 @@ En supposant qu’il existe un équilibreur de charge de l’application AWS dan
 
 1. Les contrôles de l’intégrité de l’éditeur doivent être examinés afin d’empêcher les dispatchers de se retirer inutilement tôt du service des montées de charge. Les paramètres de délai d’expiration du contrôle de l’intégrité de l’équilibreur de charge doivent être alignés sur les paramètres de délai d’expiration de l’éditeur.
 
-   ![Capture d’écran montrant les contrôles de l’intégrité de l’équilibreur de charge AEM](../assets/commerce-at-scale/health-checks.png)
+   ![Capture d’écran montrant les contrôles d’intégrité AEM équilibreur de charge](../assets/commerce-at-scale/health-checks.png)
 
-1. L’affinité du groupe cible du Dispatcher peut être désactivée et l’algorithme d’équilibrage de charge Tour à tour peut être utilisé. Cela suppose qu’il n’existe aucune fonctionnalité spécifique AEM ou qu’aucune AEM session utilisateur utilisée ne nécessite la définition de l’affinité de session. Cela suppose que la gestion des connexions et des sessions des utilisateurs se fait uniquement sur Adobe Commerce via GraphQL.
+1. L’attractivité du groupe cible Dispatcher peut être désactivée et l’algorithme d’équilibrage de charge Tour à tour peut être utilisé. Cela suppose qu’il n’existe aucune fonctionnalité spécifique AEM ou qu’aucune AEM session utilisateur utilisée ne nécessite la définition de l’affinité de session. Cela suppose que la gestion des connexions et des sessions des utilisateurs se fait uniquement sur Adobe Commerce via GraphQL.
 
    ![Capture d’écran montrant les attributs d’affinité de session AEM](../assets/commerce-at-scale/session-stickiness.png)
 
@@ -41,15 +41,15 @@ S’il n’existe aucun équilibreur de charge dans l’infrastructure, les para
 
 ## Éditeurs
 
-Limites et délais de connexion de l’éditeur GraphQL : au départ, les connexions HTTP maximales dans les paramètres de configuration du client Adobe Commerce CIF GraphQL Factory OSGI doivent être définies sur la limite de connexions maximale par défaut, qui est actuellement définie sur 200. Même s’il existe plusieurs éditeurs dans la ferme de AEM, la limite doit être définie de la même manière pour chaque éditeur, en respectant le paramètre Fastly . Cela s’explique par le fait que, dans certains cas, un éditeur peut gérer plus de trafic que les autres éditeurs, si un dispatcher associé est exclu de la ferme par exemple. Cela signifie que tout le trafic sera acheminé par le seul dispatcher et les éditeurs restants, dans ce cas l’éditeur unique peut alors avoir besoin de toutes les connexions HTTP.
+Limites et délais de connexion de l’éditeur GraphQL : au départ, les connexions HTTP maximales dans les paramètres OSGI de configuration du client GraphQL d’Adobe Commerce CIF doivent être définies sur la limite maximale par défaut de connexions rapides, actuellement définie sur 200. Même s’il existe plusieurs éditeurs dans la ferme de AEM, la limite doit être définie de la même manière pour chaque éditeur, en respectant le paramètre Fastly . Cela s’explique par le fait que, dans certains cas, un éditeur peut gérer plus de trafic que les autres éditeurs, si un dispatcher associé est exclu de la ferme par exemple. Cela signifie que tout le trafic sera acheminé par le seul dispatcher et les éditeurs restants, dans ce cas l’éditeur unique peut alors avoir besoin de toutes les connexions HTTP.
 
 La &quot;méthode HTTP par défaut&quot; doit être définie de POST à GET. Seules les requêtes de GET sont mises en cache dans le cache GraphQL d’Adobe Commerce. Par conséquent, la méthode par défaut doit toujours être définie sur GET.
 
 Le délai de connexion http et le délai de socket http doivent être définis sur une valeur correspondant au délai de connexion Fastly.
 
-L’image suivante montre l’usine de configuration du client GraphQL Magento. Les paramètres présentés ici ne sont que des exemples et doivent être réglés au cas par cas :
+L’image suivante montre l’usine de configuration du client Magento CIF GraphQL. Les paramètres présentés ici ne sont que des exemples et doivent être réglés au cas par cas :
 
-![Capture d’écran des paramètres de configuration de la structure d’intégration de Commerce](../assets/commerce-at-scale/cif-config.png)
+![Capture d’écran des paramètres de configuration de Commerce integration framework](../assets/commerce-at-scale/cif-config.png)
 
 Les illustrations suivantes présentent les configurations d’arrière-plan Fastly. Les paramètres présentés ici ne sont que des exemples et doivent être réglés au cas par cas :
 

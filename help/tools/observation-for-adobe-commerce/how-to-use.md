@@ -1,49 +1,49 @@
 ---
-title: Comment utiliser la variable [!DNL Observation for Adobe Commerce] nerdlet
-description: Découvrez comment utiliser le [!DNL Observation for Adobe Commerce] le petit.
+title: Utilisation du caractère  [!DNL Observation for Adobe Commerce] nerdlet
+description: Découvrez comment utiliser le caractère  [!DNL Observation for Adobe Commerce] nerdlet.
 exl-id: 3c368814-0786-4e8f-ac81-9a77cec94677
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
 
-# Comment utiliser la variable [!DNL Observation for Adobe Commerce] nerdlet
+# Comment utiliser le mini-servlet [!DNL Observation for Adobe Commerce]
 
 ## Approche générale de l’examen des problèmes
 
 Vérifiez les états des ressources d’environnement :
 
-* Examiner le pourcentage de **[!UICONTROL Storage Free and MySQL % free storage by node]** images.
+* Examinez le pourcentage d’images **[!UICONTROL Storage Free and MySQL % free storage by node]**.
 
    * Suivez les liens dans l’en-tête du cadre si le stockage est faible.
 
-* Examiner le pourcentage de **[!UICONTROL free system memory and Swap memory free in bytes]** images.
+* Examinez le pourcentage d’images **[!UICONTROL free system memory and Swap memory free in bytes]**.
 
    * Si ces états de mémoire sont très faibles, ils peuvent contribuer à des problèmes.
 
-* Examinez la variable **[!UICONTROL Alerts during the timeframe]** cadre.
+* Examinez l’image **[!UICONTROL Alerts during the timeframe]**.
 
-   * Adobe Commerce sur l’infrastructure cloud fournit [!DNL Managed alerts]. Vous pouvez cliquer sur le lien dans l’en-tête pour afficher [!DNL Support Knowledge Base] des articles qui vous aideront à déterminer les actions de votre part pour des alertes spécifiques.
+   * Adobe Commerce sur l’infrastructure cloud fournit [!DNL Managed alerts]. Vous pouvez cliquer sur le lien dans l’en-tête pour afficher [!DNL Support Knowledge Base] articles qui vous aideront à déterminer les actions de votre part pour des alertes spécifiques.
 
-* Examinez la variable **[!UICONTROL CPU % by host]** frame : s’il présente une utilisation élevée du processeur, vérifiez la variable [!DNL Support Knowledge Base] article dans l’en-tête du cadre. Vérifiez également que les imports/exports de base de données ou les sauvegardes ne sont pas effectués pendant les périodes de pointe du trafic.
+* Examinez l’image **[!UICONTROL CPU % by host]** : si elle présente une utilisation élevée du processeur, vérifiez l’article [!DNL Support Knowledge Base] dans l’en-tête de l’image. Vérifiez également que les imports/exports de base de données ou les sauvegardes ne sont pas effectués pendant les périodes de pointe du trafic.
 
-* Vérifiez les **[!UICONTROL Web Traffic volume compared to one week ago]** frame : Si le trafic est beaucoup plus élevé que la semaine précédente au cours de la même période, peut-il être expliqué (campagne de vente ou nouveaux produits qui ont été commercialisés, par exemple) ?
+* Vérifiez l’image **[!UICONTROL Web Traffic volume compared to one week ago]** : si le trafic est beaucoup plus élevé que la semaine précédente au cours de la même période, peut-il être expliqué (campagne de vente ou nouveaux produits qui ont été commercialisés, par exemple) ?
    * S’il n’est pas possible d’expliquer l’augmentation du trafic, consultez la mesure Temps de réponse moyen (millisecondes) de l’environnement de production. Le trafic élevé contribue-t-il à un temps de réponse différent de ce qui est normal ? Développez la période pour voir s’il s’agit d’une anomalie.
-   * L’augmentation du trafic a-t-elle un impact sur les transactions web ? Vérifiez les **[!UICONTROL Response Code]** cadre pour les erreurs. Si le site est en panne, vous pouvez cliquer sur la variable `Site Down?` dans l’en-tête du cadre. Le cadre identifie les erreurs qui se produisent et leur fréquence.
-   * Quelqu’un a-t-il déployé les modifications sur votre site web ? La variable **[!UICONTROL Deployment Log Entries]** cadre indique si des déploiements ont été effectués pendant la période du problème. Si le problème se produit immédiatement après le déploiement, il se peut que les activités de déploiement ajoutent une charge supplémentaire au site (mises en cache effacées, services redémarrés, etc.).
-   * Une modification ou une réduction de taille s’est-elle produite ? Si votre site a été temporairement mis à niveau, il a peut-être été redéfini à sa taille de grappe d’origine. Si une demande a été faite pour augmenter la capacité du site, une modification de la taille peut se produire. Vérifiez les **[!UICONTROL Upsize/Downsize – vCPU view over the timeline]** cadre. Cette image détecte parfois une panne sur un noeud particulier. Si la taille diminue, cela peut indiquer un problème avec un ou plusieurs noeuds.
+   * L’augmentation du trafic a-t-elle un impact sur les transactions web ? Recherchez les erreurs dans l’image **[!UICONTROL Response Code]**. Si le site est en panne, vous pouvez cliquer sur le lien `Site Down?` dans l’en-tête du cadre. Le cadre identifie les erreurs qui se produisent et leur fréquence.
+   * Quelqu’un a-t-il déployé les modifications sur votre site web ? L’image **[!UICONTROL Deployment Log Entries]** indique si des déploiements ont été effectués pendant la période du problème. Si le problème se produit immédiatement après le déploiement, il se peut que les activités de déploiement ajoutent une charge supplémentaire au site (mises en cache effacées, services redémarrés, etc.).
+   * Une modification ou une réduction de taille s’est-elle produite ? Si votre site a été temporairement mis à niveau, il a peut-être été redéfini à sa taille de grappe d’origine. Si une demande a été faite pour augmenter la capacité du site, une modification de la taille peut se produire. Vérifiez l’image **[!UICONTROL Upsize/Downsize – vCPU view over the timeline]**. Cette image détecte parfois une panne sur un noeud particulier. Si la taille diminue, cela peut indiquer un problème avec un ou plusieurs noeuds.
 
-* La variable **[!UICONTROL IP Frequency]** identifie la fréquence des demandes provenant d’adresses IP effectuées sur les serveurs d’origine (ce qui signifie que la demande n’a pas pu être diffusée à partir de [!DNL Fastly] comme 74, il n’a pas été mis en cache).
+* L’onglet **[!UICONTROL IP Frequency]** identifie la fréquence des demandes provenant des adresses IP effectuées sur les serveurs d’origine (ce qui signifie que la demande n’a pas pu être diffusée à partir de [!DNL Fastly] car 74 elle n’a pas été mise en cache).
 
-   * Pour tout [!DNL Fastly] problèmes connexes, vérifiez les **[!UICONTROL Fastly Cache]** et sélectionnez la facette Erreur pour afficher le pourcentage de requêtes qui sont des erreurs. Ils peuvent indiquer un problème de serveur principal s’ils correspondent à un chargement non web.
+   * Pour tout problème [!DNL Fastly], vérifiez l’image **[!UICONTROL Fastly Cache]** et sélectionnez la facette Erreur pour afficher le pourcentage de requêtes qui sont des erreurs. Ils peuvent indiquer un problème de serveur principal s’ils correspondent à un chargement non web.
    * Si la charge ne semble pas être due au trafic web, il peut y avoir des erreurs ou une compilation de requêtes non-web, telles que des requêtes lentes ou [!DNL crons].
 
-* Vérifiez les **[!UICONTROL Database Errors]** cadre pour les erreurs qui peuvent coïncider avec la chronologie des problèmes/problèmes.
-* Vérifiez les **[!UICONTROL Database mysql-slow.log]** image pour identifier les instructions SQL qui se produisent. `INSERT`, `UPDATE`, et `DELETE` peut prendre un certain temps si la requête n’est pas optimisée. Même `SELECT` Les instructions peuvent être très inefficaces si elles sont effectuées sur des tables volumineuses.
-* **[!UICONTROL PHP States]** et **[!UICONTROL PHP Errors]** Les images présenteront des problèmes potentiels avec PHP. La variable **[!UICONTROL PHP States]** frame affiche les mises en fin de processus PHP, les démarrages et lorsque le service atteint l’état prêt par noeud. La variable **[!UICONTROL PHP Errors]** Frame peut aider à isoler l’emplacement du problème avec PHP, comme la taille de la mémoire, les programmes de travail ou le nombre de serveurs.
-* Pour afficher la latence des transactions, la table Transactions - Avg, Max, Min peut être triée par colonne afin d&#39;afficher la durée de transaction la plus longue. Une grappe surchargée aura des durées latentes dans les transactions, mais affichera également des anomalies qui pourraient signaler un problème avec une méthode ou [!DNL cron].
-* La variable **[!UICONTROL Cron error]** Le cadre affiche [!DNL cron] verrous, erreurs SQL pouvant être associées à [!DNL cron] journaux et évaluation partagée [!DNL crons] qui peut être exécuté sur des environnements de production lorsqu’il existe un environnement d’évaluation dédié.
-* La variable [!UICONTROL ElasticSearch Errors] frame affiche des erreurs qui peuvent indiquer des problèmes majeurs avec [!DNL Elasticsearch] requêtes, données ou index.
+* Recherchez dans l’image **[!UICONTROL Database Errors]** les erreurs qui peuvent coïncider avec la chronologie des problèmes/problèmes.
+* Vérifiez l’image **[!UICONTROL Database mysql-slow.log]** pour identifier les instructions SQL qui se produisent. Les commandes `INSERT`, `UPDATE` et `DELETE` peuvent prendre un certain temps si la requête n’est pas optimisée. Même les instructions `SELECT` peuvent être très inefficaces si elles sont effectuées sur des tables volumineuses.
+* **[!UICONTROL PHP States]** et **[!UICONTROL PHP Errors]** images afficheront des problèmes potentiels avec PHP. L’image **[!UICONTROL PHP States]** affichera les terminations, les démarrages et lorsque le service atteint l’état prêt par noeud. L’image **[!UICONTROL PHP Errors]** peut aider à isoler l’emplacement du problème avec PHP, comme la taille de la mémoire, les programmes de travail ou le nombre de serveurs.
+* Pour afficher la latence des transactions, la table Transactions - Avg, Max, Min peut être triée par colonne afin d&#39;afficher la durée de transaction la plus longue. Une grappe surchargée aura des durées latentes dans les transactions, mais elle affichera également des anomalies qui pourraient signaler un problème avec une méthode ou [!DNL cron].
+* L’image **[!UICONTROL Cron error]** affichera des verrous [!DNL cron], des erreurs SQL qui peuvent être associées aux [!DNL cron] journaux et l’évaluation partagée [!DNL crons] qui peut être en cours d’exécution dans les environnements de production lorsqu’il y a un environnement d’évaluation dédié.
+* L’image [!UICONTROL ElasticSearch Errors] affiche des erreurs qui peuvent indiquer des problèmes majeurs avec des requêtes, des données ou des index [!DNL Elasticsearch].

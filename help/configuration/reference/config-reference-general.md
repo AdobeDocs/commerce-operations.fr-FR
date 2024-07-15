@@ -5,31 +5,31 @@ feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
 source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
 
 # Référence sur les chemins de configuration généraux et avancés
 
-Cette rubrique répertorie les chemins de configuration généraux et avancés et _not_ [valeurs sensibles et spécifiques au système](config-reference-sens.md). La variable [`magento app:config:dump` command](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle source.
+Cette rubrique répertorie les chemins de configuration généraux et avancés et les __ [ valeurs sensibles et spécifiques au système ](config-reference-sens.md). La commande [`magento app:config:dump`](../cli/export-configuration.md) écrit ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit être dans le contrôle source.
 
-Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables).
+Pour éventuellement remplacer des paramètres de configuration ou définir des paramètres sensibles, reportez-vous à la section [Utilisation de variables d’environnement pour remplacer les paramètres de configuration](override-config-settings.md#environment-variables).
 
 ## Catégorie générale
 
-Cette section répertorie les noms de variable et les chemins de configuration disponibles pour les options dans l’Admin sous **Magasins** > Paramètres > **Configuration** > **Général**.
+Cette section répertorie les noms de variable et les chemins de configuration disponibles pour les options dans l’administrateur sous **Magasins** > Paramètres > **Configuration** > **Général**.
 
 ### Chemins généraux
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > Général > **Général**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > Général > **Général**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? | Sensibles ? |
 |--------------|--------------|--------------|--------------|
-| Pays par défaut | `general/country/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensibilité](/help/assets/configuration/cloud-sens.png) |
-| Autoriser les pays | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensibilité](/help/assets/configuration/cloud-sens.png) |
-| Le code postal est facultatif pour les | `general/country/optional_zip_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensibilité](/help/assets/configuration/cloud-sens.png) |
-| Pays de l’Union européenne | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensibilité](/help/assets/configuration/cloud-sens.png) |
+| Pays par défaut | `general/country/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
+| Autoriser les pays | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
+| Le code postal est facultatif pour les | `general/country/optional_zip_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
+| Pays de l’Union européenne | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Destinations principales | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | L’état est requis pour | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Autoriser l’état s’il est facultatif pour le pays | `general/region/display_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
@@ -38,11 +38,11 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 | Unité de poids | `general/locale/weight_unit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Premier jour de la semaine | `general/locale/firstday` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Jours de week-end | `general/locale/weekend` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
-| Restriction d’accès | `general/restriction/is_active` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) | |
-| Mode Restriction | `general/restriction/mode` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) | |
-| Page de démarrage | `general/restriction/http_redirect` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) | |
-| Page d’entrée | `general/restriction/cms_page` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) | |
-| Réponse HTTP | `general/restriction/http_status` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) | |
+| Restriction d’accès | `general/restriction/is_active` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) | |
+| Mode Restriction | `general/restriction/mode` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) | |
+| Page de démarrage | `general/restriction/http_redirect` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) | |
+| Page d’entrée | `general/restriction/cms_page` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) | |
+| Réponse HTTP | `general/restriction/http_status` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) | |
 | Nom de la boutique | `general/store_information/name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Numéro de téléphone du magasin | `general/store_information/phone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Heures d’ouverture du magasin | `general/store_information/hours` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
@@ -59,7 +59,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 
 ### Chemins Web
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Général** > **Web**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > **Général** > **Web**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -91,14 +91,14 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 
 ### Chemins de configuration des devises
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Général** > **Configuration des devises**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > **Général** > **Configuration de devise**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
 | Devise de base | `currency/options/base` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Devise d’affichage par défaut | `currency/options/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Devises autorisées | `currency/options/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Yahoo Finance Exchange | `TBD` | |
+| Exchange Yahoo Finance | `TBD` | |
 | Fixer.io | `TBD` | |
 | Webservicex | `TBD` | |
 | Timeout de connexion en secondes | `currency/yahoofinance/timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -116,7 +116,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 
 ### Chemins des contacts
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Général** > **Contacts**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > **Général** > **Contacts**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -129,7 +129,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 
 ### Chemins des rapports
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Général** > **Rapports**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > **Général** > **Rapports**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -140,7 +140,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 
 ### Chemins de gestion de contenu
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Général** > **Gestion de contenu**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > **Général** > **Gestion de contenu**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -154,7 +154,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 
 ### Chemins de création de rapports New Relic
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Général** > **Rapports New Relic**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > **Général** > **Rapports New Relic**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -166,11 +166,11 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 
 ## Catégorie avancée
 
-Cette section répertorie les noms de variable et les chemins de configuration disponibles pour les options dans l’Admin sous **Magasins** > Paramètres > **Configuration** > **Avancé**.
+Cette section répertorie les noms de variable et les chemins de configuration disponibles pour les options dans l’administrateur sous **Magasins** > Paramètres > **Configuration** > **Avancé**.
 
 ### Chemins d’accès des administrateurs
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Avancé** > **Administration**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > **Avancé** > **Admin**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -208,7 +208,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 
 ### Chemins système
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Avancé** > **Système**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > **Avancé** > **Système**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -229,20 +229,20 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 | Nettoyage de l’historique tous les | `system/cron/default/history_cleanup_every` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Durée de vie de l’historique de succès | `system/cron/default/history_success_lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Durée de vie de l’historique des échecs | `system/cron/default/history_failure_lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Générer des planifications toutes les | `system/cron/staging/schedule_generate_every` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Prévision pour | `system/cron/staging/schedule_ahead_for` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Absente si elle n’est pas exécutée dans | `system/cron/staging/schedule_lifetime` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Nettoyage de l’historique tous les | `system/cron/staging/history_cleanup_every` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Durée de vie de l’historique de succès | `system/cron/staging/history_success_lifetime` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Durée de vie de l’historique des échecs | `system/cron/staging/history_failure_lifetime` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Utilisation d’un processus distinct | `system/cron/staging/use_separate_process` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Générer des planifications toutes les | `system/cron/catalog/event/schedule_generate_every` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Prévision pour | `system/cron/catalog/event/schedule_ahead_for` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Absente si elle n’est pas exécutée dans | `system/cron/catalog/event/schedule_lifetime` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Nettoyage de l’historique tous les | `system/cron/catalog/event/history_cleanup_every` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Durée de vie de l’historique de succès | `system/cron/catalog/event/history_success_lifetime` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Durée de vie de l’historique des échecs | `system/cron/catalog/event/history_failure_lifetime` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
-| Utilisation d’un processus distinct | `system/cron/catalog/event/use_separate_process` | ![Commerce uniquement](/help/assets/configuration/cloud-ee.png) |
+| Générer des planifications toutes les | `system/cron/staging/schedule_generate_every` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Prévision pour | `system/cron/staging/schedule_ahead_for` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Absente si elle n’est pas exécutée dans | `system/cron/staging/schedule_lifetime` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Nettoyage de l’historique tous les | `system/cron/staging/history_cleanup_every` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Durée de vie de l’historique de succès | `system/cron/staging/history_success_lifetime` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Durée de vie de l’historique des échecs | `system/cron/staging/history_failure_lifetime` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Utilisation d’un processus distinct | `system/cron/staging/use_separate_process` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Générer des planifications toutes les | `system/cron/catalog/event/schedule_generate_every` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Prévision pour | `system/cron/catalog/event/schedule_ahead_for` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Absente si elle n’est pas exécutée dans | `system/cron/catalog/event/schedule_lifetime` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Nettoyage de l’historique tous les | `system/cron/catalog/event/history_cleanup_every` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Durée de vie de l’historique de succès | `system/cron/catalog/event/history_success_lifetime` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Durée de vie de l’historique des échecs | `system/cron/catalog/event/history_failure_lifetime` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| Utilisation d’un processus distinct | `system/cron/catalog/event/use_separate_process` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Utilisation d’un processus distinct | `system/cron/default/use_separate_process` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Désactiver les communications par courrier électronique | `system/smtp/disable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Définir Return-Path | `system/smtp/set_return_path` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -276,7 +276,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 
 ### Chemins de développement
 
-Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Magasins** > Paramètres > **Configuration** > **Avancé** > **Développeur**.
+Ces valeurs de configuration sont disponibles dans l’Admin de **Magasins** > Paramètres > **Configuration** > **Avancé** > **Développeur**.
 
 | Nom | Chemin de configuration | Commerce uniquement ? |
 |--------------|--------------|--------------|
@@ -291,7 +291,7 @@ Ces valeurs de configuration sont disponibles dans l’ Admin de la section **Ma
 | Activé pour Storefront | `dev/translate_inline/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Activé pour l’administrateur | `dev/translate_inline/active_admin` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Fusionner les fichiers JavaScript | `dev/js/merge_files` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activation de la collecte JavaScript | `dev/js/enable_js_bundling` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Activation du regroupement JavaScript | `dev/js/enable_js_bundling` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Minimisation des fichiers JavaScript | `dev/js/minify_files` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Stratégie de traduction | `dev/js/translate_strategy` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Enregistrer les erreurs JS dans le stockage de session | `dev/js/session_storage_logging` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

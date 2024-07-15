@@ -36,13 +36,13 @@ ht-degree: 12%
    - Architecture de référence globale {#global-reference-architecture}
       - [Vue d’ensemble](architecture/global-reference/overview.md)
       - [Exemples](architecture/global-reference/examples.md)
-      - Développement de compositeur {#composer}
+      - Développement du compositeur {#composer}
          - [Vue d’ensemble](architecture/global-reference/composer/overview.md)
          - [Structure du projet](architecture/global-reference/composer/project-structure.md)
          - [Conseils et astuces](architecture/global-reference/composer/tips-and-tricks.md)
 - Infrastructure et déploiement {#infrastructure}
    - [Vue d’ensemble](infrastructure/overview.md)
-   - Auto-hébergement {#self-hosting}
+   - Hébergement automatique {#self-hosting}
       - [Vue d’ensemble](infrastructure/self-hosting/overview.md)
       - [Infrastructure sur site](infrastructure/self-hosting/on-premises.md)
       - [Concepts de sécurité](infrastructure/self-hosting/security-concepts.md)
@@ -58,12 +58,12 @@ ht-degree: 12%
       - [Problèmes standard](infrastructure/performance/optimization.md)
       - [Benchmarks](infrastructure/performance/benchmarks.md)
       - [Recommendations](infrastructure/performance/recommendations.md)
-- Préparation à Launch {#launch}
+- Préparation au lancement {#launch}
    - [Vue d’ensemble](launch/overview.md)
    - [Étapes de prélancement](launch/pre-launch-steps.md)
    - [Étapes de lancement](launch/launch-steps.md)
-   - [Étapes de post-lancement](launch/post-launch-steps.md)
-- Maintenance et assistance {#maintenance}
+   - [Étapes de lancement de Post](launch/post-launch-steps.md)
+- Maintenance et support {#maintenance}
    - [Vue d’ensemble](maintenance/overview.md)
    - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - Bonnes pratiques {#best-practices}
@@ -97,7 +97,7 @@ ht-degree: 12%
       - [Déploiement de contenu statique](best-practices/development/static-content-deployment.md)
       - [Modification des tables de base de données](best-practices/development/modifying-core-and-third-party-tables.md)
       - [Modification du code principal et du code tiers](best-practices/development/modifying-core-and-third-party-code.md)
-   - Launch {#launch}
+   - Lancement {#launch}
       - [Vue d’ensemble](best-practices/launch/overview.md)
       - [Configuration des moteurs de recherche web](best-practices/launch/robots-txt.md)
       - [Sécurisez votre site et votre infrastructure](best-practices/launch/security-best-practices.md)
@@ -114,4 +114,4 @@ ht-degree: 12%
       - [Mise à jour des services](best-practices/maintenance/update-services.md)
       - [Liste de contrôle de mise à niveau](best-practices/maintenance/upgrade-checklist.md)
       - [Conditions préalables à la mise à niveau pour MariaDB](best-practices/maintenance/mariadb-upgrade.md)
-- [Revenir aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

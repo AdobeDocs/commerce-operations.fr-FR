@@ -4,18 +4,18 @@ description: Découvrez comment personnaliser les crons à l’aide de groupes c
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
 
 # Personnalisation de la référence des crons
 
-Cette rubrique vous aide à configurer des onglets et éventuellement des groupes cron pour les modules personnalisés. Si votre module personnalisé doit planifier des tâches périodiquement, vous devez configurer un crontab pour ce module. A _crontab_ est une configuration de tâche cron.
+Cette rubrique vous aide à configurer des onglets et éventuellement des groupes cron pour les modules personnalisés. Si votre module personnalisé doit planifier des tâches périodiquement, vous devez configurer un crontab pour ce module. Un _crontab_ est une configuration de tâche cron.
 
 Vous pouvez éventuellement configurer un groupe personnalisé qui vous permet, entre autres, d’exécuter des tâches cron définies dans ce groupe indépendamment des autres tâches cron.
 
-Pour consulter un tutoriel détaillé, voir [Configuration de tâches cron personnalisées et de groupes cron (tutoriel)](custom-cron-tutorial.md).
+Pour consulter un tutoriel détaillé, reportez-vous à la section [Configuration de tâches cron personnalisées et de groupes cron (tutoriel)](custom-cron-tutorial.md).
 
 Pour obtenir un aperçu des tâches cron, voir [Configuration des tâches cron](../cli/configure-cron-jobs.md).
 
@@ -23,13 +23,13 @@ Pour obtenir un aperçu des tâches cron, voir [Configuration des tâches cron](
 
 Cette section explique comment créer éventuellement un groupe cron pour un module personnalisé. Si vous n’avez pas besoin de le faire, passez à la section suivante.
 
-A _groupe cron_ est un groupe logique qui permet d’exécuter facilement cron pour plusieurs processus à la fois. La plupart des modules Commerce utilisent la variable `default` groupe cron ; certains modules utilisent la variable `index` groupe.
+Un _groupe cron_ est un groupe logique qui vous permet d’exécuter facilement cron pour plusieurs processus à la fois. La plupart des modules Commerce utilisent le groupe cron `default` ; certains modules utilisent le groupe `index`.
 
-Si vous implémentez cron pour un module personnalisé, vous pouvez choisir d’utiliser la variable `default` ou un autre groupe.
+Si vous implémentez cron pour un module personnalisé, vous pouvez choisir d’utiliser le groupe `default` ou un autre groupe.
 
-**Pour configurer un groupe cron pour votre module**:
+**Pour configurer un groupe cron pour votre module** :
 
-Créez un `crontab.xml` dans votre répertoire de module :
+Créez un fichier `crontab.xml` dans votre répertoire de module :
 
 ```text
 <your component base dir>/<vendorname>/module-<name>/etc/crontab.xml
@@ -55,7 +55,7 @@ Où :
 | `group_name` | Nom du groupe cron. Le nom du groupe ne doit pas nécessairement être unique. Vous pouvez exécuter cron pour un groupe à la fois. |
 | `job_name` | Identifiant unique de cette tâche cron. |
 | `classpath` | Classe à instancier (classpath). |
-| `method` | Méthode dans `classpath` pour appeler. |
+| `method` | Méthode dans `classpath` à appeler. |
 | `time` | Planification au format cron. Omettez ce paramètre si la planification est définie dans la base de données Commerce ou dans un autre espace de stockage. |
 
 Le résultat `crontab.xml` avec deux groupes peut ressembler à ceci :
@@ -82,17 +82,17 @@ Le résultat `crontab.xml` avec deux groupes peut ressembler à ceci :
 </config>
 ```
 
-À titre d’exemple, reportez-vous à la section [Magento_Customer crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml).
+Pour consulter un exemple, reportez-vous à la section [Magento_Customer crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml).
 
 ### Spécification des options de groupe Cron
 
-Vous pouvez déclarer un nouveau groupe et spécifier ses options de configuration (qui s’exécutent toutes dans la portée de la vue du magasin) via le `cron_groups.xml` fichier situé dans :
+Vous pouvez déclarer un nouveau groupe et spécifier ses options de configuration (qui s’exécutent toutes dans la portée de vue du magasin) via le fichier `cron_groups.xml`, situé dans :
 
 ```text
 <your component base dir>/<vendorname>/module-<name>/etc/cron_groups.xml
 ```
 
-Voici un exemple de la fonction `cron_groups.xml` fichier :
+Voici un exemple du fichier `cron_groups.xml` :
 
 ```xml
 <?xml version="1.0"?>
@@ -113,8 +113,8 @@ Où :
 
 | Option | Description |
 | -------------------------- | ------------------------------------------------------------------------------------------------------ |
-| `schedule_generate_every` | Fréquence (en minutes) pendant laquelle les plannings sont écrits dans la variable `cron_schedule` table. |
-| `schedule_ahead_for` | Heure (en minutes) à l’avance à laquelle les plannings sont écrits dans la variable `cron_schedule` table. |
+| `schedule_generate_every` | Fréquence (en minutes) d&#39;écriture des plannings dans le tableau `cron_schedule`. |
+| `schedule_ahead_for` | Temps (en minutes) à l’avance pendant lequel les plannings sont écrits dans la table `cron_schedule`. |
 | `schedule_lifetime` | Fenêtre de temps (en minutes) pendant laquelle une tâche cron doit démarrer ou la tâche cron est considérée comme manquée (&quot;trop tard&quot; pour s’exécuter). |
 | `history_cleanup_every` | Durée (en minutes) pendant laquelle l’historique cron est conservé dans la base de données. |
 | `history_success_lifetime` | Temps (en minutes) pendant lequel l’enregistrement des tâches cron terminées est conservé dans la base de données. |
@@ -123,9 +123,9 @@ Où :
 
 ## Désactivation d’une tâche cron
 
-Les tâches Cron n’ont pas de `disable` comme nous l’avons fait pour [observateurs](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers). Cependant, une tâche cron peut être désactivée en utilisant la technique suivante : `schedule` une heure contenant une date qui ne se produira jamais.
+Les tâches Cron n’ont pas de fonction `disable` comme celle que nous avons pour [observateurs](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers). Cependant, une tâche cron peut être désactivée en utilisant la technique suivante : `schedule` une fois qui contient une date qui ne se produira jamais.
 
-Par exemple, désactivez la variable `visitor_clean` tâche cron définie dans `Magento_Customer` module :
+Par exemple, désactivez la tâche `visitor_clean` cron définie dans le module `Magento_Customer` :
 
 ```xml
 ...
@@ -137,7 +137,7 @@ Par exemple, désactivez la variable `visitor_clean` tâche cron définie dans `
 ...
 ```
 
-Pour désactiver la fonction `visitor_clean` tâche cron, créez un module personnalisé et réécrivez `visitor_clean` tâche cron `schedule`:
+Pour désactiver la tâche `visitor_clean` cron, créez un module personnalisé et réécrivez la tâche `visitor_clean` cron `schedule` :
 
 ```xml
 ...
@@ -149,4 +149,4 @@ Pour désactiver la fonction `visitor_clean` tâche cron, créez un module perso
 ...
 ```
 
-Maintenant, le `visitor_clean` La tâche cron a été définie pour s’exécuter à 00:00 le 30 février, à la date qui ne se produira jamais.
+Désormais, la tâche cron `visitor_clean` a été définie pour s’exécuter à 00:00 le 30 février, à la date qui ne se produira jamais.

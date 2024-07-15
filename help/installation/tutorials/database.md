@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Création du schéma de la base de données
 
-Avant d’exécuter cette commande, vous devez [Création ou mise à jour de la configuration du déploiement](deployment.md).
+Avant d’exécuter cette commande, vous devez [créer ou mettre à jour la configuration de déploiement](deployment.md).
 
 ## Configurer la base de données et ajouter des données
 

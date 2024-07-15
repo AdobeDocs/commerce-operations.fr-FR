@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## CPU
 
-[!DNL Commerce] les noeuds web diffusent toutes les requêtes qui ne sont pas mises en cache ou qui ne peuvent pas l’être par le biais de l’application. Un noyau de processeur peut servir autour de deux (parfois jusqu’à quatre) [!DNL Commerce] demande de manière efficace. Utilisez l’équation suivante pour déterminer le nombre de noeuds/coeurs web dont vous avez besoin pour traiter toutes les requêtes entrantes sans les mettre en file d’attente :
+[!DNL Commerce] noeuds web diffusent toutes les requêtes qui ne sont pas mises en cache ou qui ne peuvent pas l’être par le biais de l’application. Un noyau de processeur peut répondre efficacement à deux (parfois jusqu’à quatre) demandes [!DNL Commerce]. Utilisez l’équation suivante pour déterminer le nombre de noeuds/coeurs web dont vous avez besoin pour traiter toutes les requêtes entrantes sans les mettre en file d’attente :
 
 ```
 N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
@@ -32,22 +32,22 @@ Scénarios et exigences de mémoire PHP attendues :
 
 * Noeud web ne diffusant que les pages de storefront : 256 Mo
 * Noeud web servant les pages d’administration avec un catalogue volumineux : 1 Go
-* [!DNL Commerce] indexation cron d’un site avec un catalogue volumineux : >256 Mo (voir [advanced-setup](../performance/advanced-setup.md) pour optimiser les performances.)
-* [!DNL Commerce] compilation et déploiement de ressources statiques : 756 Mo
-* [!DNL Commerce] génération de profils de boîte à outils de performance : >1 Go de RAM PHP, >16 Mo [!DNL MySQL] Paramètres TMP_TABLE_SIZE et MAX_HEAP_TABLE_SIZE
+* [!DNL Commerce] cron indexant un site avec un catalogue volumineux : >256 Mo (voir [advanced-setup](../performance/advanced-setup.md) pour optimiser les performances.)
+* [!DNL Commerce] Compilation et déploiement de ressources statiques : 756 Mo
+* [!DNL Commerce] génération de profil de boîte à outils de performance : >1 Go de RAM PHP, >16 Mo [!DNL MySQL] Paramètres TMP_TABLE_SIZE et MAX_HEAP_TABLE_SIZE
 
 ### [!DNL MySQL]
 
-La variable [!DNL Commerce] La base de données (ainsi que toute autre base de données) est sensible à la quantité de mémoire disponible pour le stockage des données et des index. Pour tirer pleinement parti des [!DNL MySQL] indexation des données, la quantité de mémoire disponible doit être, au minimum, proche de la moitié de la taille des données stockées dans la base de données.
+La base de données [!DNL Commerce] (ainsi que toute autre base de données) est sensible à la quantité de mémoire disponible pour le stockage des données et des index. Pour utiliser efficacement l’indexation de données [!DNL MySQL], la quantité de mémoire disponible doit être, au minimum, proche de la moitié de la taille des données stockées dans la base de données.
 
 ### Caches
 
-Si vous déployez plusieurs [!DNL Commerce] et en utilisant Redis ou [!DNL Varnish] pour vos caches, veuillez tenir compte des principes suivants :
+Si vous déployez plusieurs [!DNL Commerce] et que vous utilisez Redis ou [!DNL Varnish] pour vos caches, veuillez tenir compte des principes suivants :
 
-* [!DNL Varnish] l’invalidation de la mémoire cache de la page entière est effective, il est recommandé d’allouer suffisamment de mémoire [!DNL Varnish] pour conserver vos pages les plus populaires en mémoire
+* [!DNL Varnish] L’invalidation de la mémoire cache de la pleine page est effective, recommandez suffisamment de mémoire allouée à [!DNL Varnish] pour contenir vos pages les plus populaires en mémoire
 * Le cache de session est un bon candidat à configurer pour une instance distincte de Redis.  La configuration de la mémoire pour ce type de cache doit tenir compte de la stratégie d’abandon de panier du site et de la durée pendant laquelle une session doit rester dans le cache.
 * La mémoire des redis doit être suffisante pour contenir tous les autres caches en mémoire pour des performances optimales.  Le cache des blocs sera le facteur clé pour déterminer la quantité de mémoire à configurer.  Le cache des blocs augmente par rapport au nombre de pages sur un site (nombre de SKU x nombre de vues de magasin).
 
 ## Bande passante réseau
 
-Une bande passante réseau suffisante est l’une des principales exigences pour l’exchange des données entre les noeuds web, les bases de données, les serveurs de mise en cache/session et d’autres services. Parce que [!DNL Commerce] exploite efficacement la mise en cache pour des performances élevées, votre système peut exchange activement des données avec des serveurs de mise en cache tels que Redis. Si Redis se trouve sur un serveur distant, vous devez fournir un canal réseau suffisant entre les noeuds web et le serveur de mise en cache pour éviter les goulets d’étranglement lors des opérations de lecture/écriture.
+Une bande passante réseau suffisante est l’une des principales exigences pour l’exchange des données entre les noeuds web, les bases de données, les serveurs de mise en cache/session et d’autres services. Étant donné que [!DNL Commerce] exploite efficacement la mise en cache pour des performances élevées, votre système peut activement exchange des données avec des serveurs de mise en cache comme Redis. Si Redis se trouve sur un serveur distant, vous devez fournir un canal réseau suffisant entre les noeuds web et le serveur de mise en cache pour éviter les goulets d’étranglement lors des opérations de lecture/écriture.

@@ -26,8 +26,8 @@ Cette rubrique aborde en détail certaines des principales normes de développem
 
 Bien que certains implémentateurs de solutions puissent avoir leurs propres préférences en termes de méthodologies, de processus et d’outils, ce manuel se concentre sur les bonnes pratiques et méthodologies acceptées qui peuvent être partagées dans la plupart des implémentations.
 
-Comme tout projet informatique volumineux, Adobe Commerce repose sur des normes de codage qui utilisent les bonnes pratiques et les normes, ainsi que des normes établies dans Adobe Commerce. [Codage standard](https://developer.adobe.com/commerce/php/coding-standards/). Le respect de ces normes est important pour éliminer les bogues et améliorer la qualité et la maintenabilité du code personnalisé.
+Comme tout projet informatique volumineux, Adobe Commerce repose sur des normes de codage qui utilisent les bonnes pratiques et les normes, ainsi que des normes établies dans Adobe Commerce [Coding Standard](https://developer.adobe.com/commerce/php/coding-standards/). Le respect de ces normes est important pour éliminer les bogues et améliorer la qualité et la maintenabilité du code personnalisé.
 
 ## Adobe Commerce sur l’infrastructure cloud
 
-Adobe Commerce sur l’infrastructure cloud est une plateforme d’hébergement automatisée et gérée pour le logiciel Adobe Commerce. Adobe Commerce sur l’infrastructure cloud s’accompagne de différentes fonctionnalités qui la distinguent des mises en oeuvre Adobe Commerce sur site. Voir [Guide de Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).
+Adobe Commerce sur l’infrastructure cloud est une plateforme d’hébergement automatisée et gérée pour le logiciel Adobe Commerce. Adobe Commerce sur l’infrastructure cloud s’accompagne de différentes fonctionnalités qui la distinguent des mises en oeuvre Adobe Commerce sur site. Voir le [Guide de Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).

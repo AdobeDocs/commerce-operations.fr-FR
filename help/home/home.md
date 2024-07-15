@@ -32,7 +32,7 @@ Utilisez cette collection de guides pour en savoir plus sur les concepts, proces
        <img alt="Performances" src="../assets/icons/gauge.svg" width="40"/>
     </a>
     <div>
-      <a href="../performance/overview.md"><strong>Bonnes pratiques en matière de performances</strong></a>
+      <a href="../performance/overview.md"><strong> Bonnes pratiques de performances</strong></a>
       <p>Utilisez ces recommandations pour optimiser les performances de votre déploiement Adobe Commerce.</p>
     </div>
   </td>
@@ -104,7 +104,7 @@ Utilisez cette collection de guides pour en savoir plus sur les concepts, proces
       <img alt="Mettre à niveau" src="../assets/icons/upload-cloud.svg" width="40"/>
     </a>
     <div>
-      <a href="../upgrade/overview.md"><strong>Mettre à niveau</strong></a>
+      <a href="../upgrade/overview.md"><strong>Upgrade</strong></a>
       <p>Découvrez comment mettre à niveau votre projet Adobe Commerce afin de garantir la sécurité de votre storefront et de garantir un fonctionnement efficace.</p>
     </div>
   </td>

@@ -6,8 +6,8 @@ feature: Best Practices, Cache
 exl-id: 1cd48155-5d60-48b2-b07b-9b5784b81681
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 0%
+source-wordcount: '182'
+ht-degree: 1%
 
 ---
 
@@ -15,10 +15,10 @@ ht-degree: 0%
 
 Le cache du chemin d’accès réel met en cache les chemins d’accès système de fichiers réels des noms de fichier référencés au lieu de les rechercher à chaque fois. Chaque fois que différentes fonctions de fichier sont effectuées ou nécessitent un fichier et utilisent un chemin relatif, PHP doit rechercher où ce fichier existe réellement.
 
-Pour améliorer les performances de Commerce, utilisez les paramètres recommandés suivants pour configurer la variable `realpath_cache` dans le `php.ini` fichier :
+Pour améliorer les performances de Commerce, utilisez les paramètres recommandés suivants pour configurer les paramètres `realpath_cache` dans le fichier `php.ini` :
 
 - Définissez la taille du cache sur 10 Mo (`realpath cache_size=10M`)
-- Définissez l’heure d’activation (ttl) sur 7 200 secondes (`realpath_cache_ttl=7200`)
+- Définissez l’heure d’activation (ttl) sur 7 200 secondes (`realpath_cache_ttl=7200`).
 
 Pour obtenir des instructions sur la configuration, voir [Comment définir les options PHP](../../../installation/prerequisites/php-settings.md#how-to-set-php-options).
 

@@ -13,7 +13,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Le diagramme suivant présente un aperçu général de la _**sur site**_ installations d’Adobe Commerce :
+>Le diagramme suivant présente un aperçu général des installations _**sur site**_ d’Adobe Commerce :
 
 ![Fonctionnement de l’installation](../assets/installation/install-diagram-24.svg)
 
@@ -21,18 +21,18 @@ Le flux général d&#39;installation est le suivant :
 
 1. Configurez votre environnement de serveur.
 
-   Installez le logiciel prérequis, notamment PHP, Apache, MySQL et le moteur de recherche. Voir [configuration requise](system-requirements.md) pour plus d’informations.
+   Installez le logiciel prérequis, notamment PHP, Apache, MySQL et le moteur de recherche. Pour plus d’informations, voir la [configuration requise](system-requirements.md) .
 
-1. Get [clés d’authentification](prerequisites/authentication-keys.md) dans le référentiel du compositeur Commerce.
+1. Procurez-vous les [clés d’authentification](prerequisites/authentication-keys.md) au référentiel du compositeur Commerce.
 
 1. Procurez-vous le logiciel Adobe Commerce.
 
-   * (Recommandé) Obtenez la variable [Métaphorage du compositeur](composer.md) pour gérer les modules et leurs dépendances.
+   * (Recommandé) Procurez-vous le [métappackage du compositeur](composer.md) pour gérer les modules et leurs dépendances.
 
-   * Si vous souhaitez contribuer au code du Magento Open Source ou personnaliser l’application, [clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) le référentiel GitHub ; Cette méthode nécessite une bonne connaissance de GitHub et du compositeur.
+   * Si vous souhaitez contribuer au code base du Magento Open Source ou personnaliser l’application, [clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) du référentiel GitHub. Cette méthode nécessite une bonne connaissance de GitHub et du compositeur.
 
 1. Installez l’application à l’aide de la ligne de commande.
 
-   Si l’étape échoue car le logiciel prérequis n’est pas configuré correctement, consultez la section [conditions préalables](prerequisites/overview.md).
+   Si l’étape échoue car le logiciel prérequis n’est pas configuré correctement, passez en revue les [conditions préalables](prerequisites/overview.md).
 
-1. [Vérifier](next-steps/verify.md) l’installation en affichant votre storefront et l’administrateur.
+1. [Vérifiez](next-steps/verify.md) l’installation en affichant votre storefront et l’administrateur.

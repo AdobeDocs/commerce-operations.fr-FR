@@ -7,11 +7,11 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-exl-id: c4912f02-0411-466f-8c77-d610de9eb35d
+exl-id: f76a8906-af31-4a61-be68-f5dad87161e2
 feature: Install, Security
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1546'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Les analyses de programmes malveillants sont généralement trouvées auprès d�
 
 ## Outil d’analyse à l’échelle du site pour Commerce
 
-La variable [Outil d’analyse à l’échelle du site](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html){target="_blank"} est un outil en libre-service proactif et un référentiel central qui comprend des informations détaillées sur le système et des recommandations pour garantir la sécurité et la maniabilité de votre installation Adobe Commerce. Il fournit 24/7 surveillance des performances, rapports et conseils en temps réel afin d’identifier les problèmes potentiels et d’améliorer la visibilité sur l’intégrité, la sécurité et les configurations d’application du site. Cela permet de réduire le temps de résolution et d’améliorer la stabilité et les performances du site.
+L’ [ outil d’analyse à l’échelle du site ](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html){target="_blank"} est un outil en libre-service proactif et un référentiel central qui comprend des informations détaillées sur le système et des recommandations pour garantir la sécurité et la maniabilité de votre installation Adobe Commerce. Il fournit 24/7 surveillance des performances, rapports et conseils en temps réel afin d’identifier les problèmes potentiels et d’améliorer la visibilité sur l’intégrité, la sécurité et les configurations d’application du site. Cela permet de réduire le temps de résolution et d’améliorer la stabilité et les performances du site.
 
 ## Activation et vérification des paramètres pour la journalisation des actions d’administration
 
@@ -58,7 +58,8 @@ Pour détecter une création d’utilisateurs administrateurs non souhaitée ou 
 
 Limitez l’accès aux données de production. Ces coéquipiers désignés devraient avoir la possibilité de retirer les bases de données de production et de les nettoyer des données réelles. Si la suppression des données est une option, tronquez les tableaux appropriés tels que les commandes, les devis et les clients. Cependant, il arrive parfois que vous souhaitiez l’ensemble complet des données, mais les valeurs peuvent être rendues anonymes. Cela est généralement vrai dans un environnement d’évaluation. Elle est également utile avant les mises à niveau. En disposant du volume réel de données, mais en étant anonyme, vous êtes certain de tester et de valider le temps d’exécution d’un déploiement en vue de la mise à niveau. Si vous disposez d’un ensemble limité de données, vous pouvez sous-estimer le processus de mise à niveau et le timing.
 
-+++Exemple d’informations sur les clients de manière aléatoire Voici un exemple pour savoir comment modifier l’adresse email des clients avec une chaîne aléatoire et tous les champs de prénom et de dernier cri dans certaines tables standard où Adobe Commerce stocke des données. **N’oubliez pas de vérifier toutes les tables pour les données sensibles. Cette liste n’inclut pas toutes les tables susceptibles de stocker les données clients.**
++++Exemple d’informations sur les clients de manière aléatoire
+Voici un exemple de modification de l’adresse électronique du client avec une chaîne aléatoire et tous les champs de prénom et de dernier cri dans certaines tables standard où Adobe Commerce stocke des données. **N&#39;oubliez pas de vérifier toutes les tables pour les données sensibles. Cette liste n&#39;inclut pas toutes les tables pouvant stocker les données client**
 
 ```SQL
 SET FOREIGN_KEY_CHECKS=0;
@@ -104,7 +105,8 @@ SET FOREIGN_KEY_CHECKS=1;
 
 +++
 
-+++Supprimer complètement les informations Exemple Voici un exemple pour supprimer toutes les commandes, devis, notes de crédit, etc. avant le lancement ou pour un environnement de développement inférieur.
++++Exemple de suppression complète des informations
+Voici un exemple pour supprimer toutes les commandes, devis, notes de crédit, etc. avant le lancement ou pour un environnement de développement inférieur.
 
 ```SQL
 DELETE FROM `gift_message`;
@@ -210,11 +212,11 @@ ALTER TABLE sequence_shipment_7 AUTO_INCREMENT=1;
 
 ## Utilisation des variables d’environnement
 
-[!BADGE Adobe Commerce dans le cloud uniquement]{type=Informative}
+[!BADGE Adobe Commerce sur le cloud uniquement]{type=Informative}
 
 L’utilisation de variables d’environnement vous permet de définir certaines valeurs qui peuvent et doivent être modifiées pour chaque environnement. Par exemple, vous souhaitez peut-être avoir une URL d’administration différente pour chaque environnement. En définissant cette valeur comme variable d’environnement, vous pouvez la configurer et la référencer rapidement à partir de l’interface utilisateur de Cloud, le cas échéant.
 
-Vous pouvez en savoir plus sur ce sujet dans Experience League [Variables d’environnement de l’infrastructure Commerce on Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html){target="_blank"}
+Vous pouvez en savoir plus sur cette rubrique dans les [variables d’environnement Commerce on Cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html){target="_blank"} Experience League
 
 ## Outils d’analyse des vulnérabilités des logiciels
 
@@ -232,6 +234,6 @@ Le WAF examine le trafic Web et administratif pour identifier toute activité su
 
 En tant que service basé sur le cloud, le WAF ne nécessite aucun matériel ou logiciel à installer ou à gérer. Rapidement, un partenaire technologique existant, fournit le logiciel et l&#39;expertise. Leur haute performance, le WAF toujours actif, réside dans chaque noeud de cache sur le réseau de diffusion global de Fastly.
 
-Pour plus d’informations sur la méthode WAF sur Adobe Commerce sur le cloud fourni par Fastly, consultez la section [FAQ sur la base de connaissances Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"}.
+Pour plus d’informations sur le WAF sur l’Adobe Commerce on cloud fourni par Fastly, consultez la [FAQ sur la base de connaissances Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"}.
 
 {{$include /help/_includes/hosting-related-links.md}}

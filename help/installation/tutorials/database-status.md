@@ -11,7 +11,7 @@ ht-degree: 3%
 
 # Vérification du statut de la base de données
 
-Avant d’exécuter cette commande, vous devez [Création ou mise à jour de la configuration du déploiement](deployment.md).
+Avant d’exécuter cette commande, vous devez [créer ou mettre à jour la configuration de déploiement](deployment.md).
 
 ## Utilisation des commandes
 
@@ -34,5 +34,5 @@ La commande renvoie l’un des codes de sortie suivants :
 | Quitter le code | Description | Action suggérée |
 |--------------|--------------|---------------|
 | 0 | Normal | Aucun |
-| 1 | Certains modules utilisent des versions de code plus récentes ou plus anciennes que la base de données. | Exécuter [`magento setup:upgrade`](database-upgrade.md) pour mettre à jour le schéma de la base de données et exécuter `composer update` à partir du répertoire racine de l’application pour mettre à jour les dépendances des composants. |
-| 2 | `magento setup:upgrade` est requis | [`magento setup:upgrade`](database-upgrade.md) mise à jour du schéma de base de données |
+| 1 | Certains modules utilisent des versions de code plus récentes ou plus anciennes que la base de données. | Exécutez [`magento setup:upgrade`](database-upgrade.md) pour mettre à jour le schéma de base de données et exécutez `composer update` à partir du répertoire racine de l’application pour mettre à jour les dépendances des composants. |
+| 2 | `magento setup:upgrade` est requis | [`magento setup:upgrade`](database-upgrade.md) pour mettre à jour le schéma de base de données |

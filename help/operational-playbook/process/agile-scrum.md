@@ -19,12 +19,12 @@ Scrum encourage les équipes auto-organisées et interfonctionnelles à résoudr
 
 Dans la méthodologie Scrum, plusieurs réunions sont utilisées pour favoriser la transparence et le progrès d&#39;un projet d&#39;e-commerce :
 
-- **Planification Sprint**: réunion de planification au cours de laquelle les membres de l’équipe se réunissent pour décider de la quantité de travail à effectuer dans un sprint.
+- **Planification de l’impression** : réunion de planification au cours de laquelle les membres de l’équipe se réunissent pour décider de la quantité de travail à effectuer dans un sprint.
 
-- **Dégradé quotidien**— Une réunion de 15 minutes permettant de partager des mises à jour sur les travaux de chaque membre de l’équipe.
+- **Défilement quotidien** : réunion de 15 minutes utilisée pour partager des mises à jour sur les travaux de chaque membre de l’équipe.
 
-- **Révision Sprint**— Une réunion utilisée pour démontrer les progrès du sprint.
+- **Révision Sprint** : réunion utilisée pour démontrer la progression à partir du sprint.
 
-- **Rétrospective Sprint**— Une réunion pour réfléchir au sprint précédent et identifier les opportunités d’amélioration.
+- **Rétrospective Sprint** : réunion utilisée pour réfléchir au sprint précédent et identifier les opportunités d’amélioration.
 
 À la fin de chaque sprint, un incrément de valeur (par exemple, de nouvelles fonctionnalités, des correctifs de bogues, des mises à niveau ou des mises à jour de code général) doit être fourni et disponible pour les clients.

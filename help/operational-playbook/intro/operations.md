@@ -1,5 +1,5 @@
 ---
-title: Opérations commerciales
+title: Opérations Commerce
 description: Découvrez ce qu’il faut pour avoir une stratégie opérationnelle efficace pour votre entreprise de commerce électronique.
 exl-id: 21123987-0508-4d52-8af4-837b7a3ba1cb
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
@@ -9,9 +9,9 @@ ht-degree: 0%
 
 ---
 
-# Opérations commerciales
+# Opérations Commerce
 
-Les opérations commerciales consistent à centraliser les opérations principales afin qu’elles fonctionnent de manière plus intelligente, plus rapide et plus efficace. Une stratégie opérationnelle réussie nécessite une infrastructure informatique solide, capable de prendre en charge les opérations de commerce électronique de bout en bout : catalogue de produits, gestion d’inventaire, passage en caisse et expédition. Les opérations d’e-commerce reposent sur plusieurs éléments, tels qu’une vitrine conviviale, une variété de produits, une gestion correcte des stocks, des promotions, un passage en caisse facile et des méthodes de paiement et d’expédition pratiques.
+Les opérations Commerce consistent à centraliser les opérations principales afin qu’elles fonctionnent de manière plus intelligente, plus rapide et plus efficace. Une stratégie opérationnelle réussie nécessite une infrastructure informatique solide, capable de prendre en charge les opérations de commerce électronique de bout en bout : catalogue de produits, gestion d’inventaire, passage en caisse et expédition. Les opérations d’e-commerce reposent sur plusieurs éléments, tels qu’une vitrine conviviale, une variété de produits, une gestion correcte des stocks, des promotions, un passage en caisse facile et des méthodes de paiement et d’expédition pratiques.
 
 ## Pourquoi la stratégie d’exploitation du commerce électronique est-elle importante ?
 

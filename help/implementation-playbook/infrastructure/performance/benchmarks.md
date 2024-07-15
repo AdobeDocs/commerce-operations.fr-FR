@@ -5,7 +5,7 @@ exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
 feature: Cloud
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # Résumé des tests
 
 Les résultats des tests de performances d’Adobe Commerce 2.4.5 reflètent les performances mesurées sur une instance Adobe Commerce déployée avec l’infrastructure suivante et les composants supplémentaires.
-- [Environnement cloud professionnel](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) avec [architecture mise à l’échelle](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)
+- [Environnement cloud professionnel](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) avec [ architecture mise à l’échelle ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)
 - [B2B pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/b2b/introduction.html)
 - [Adobe Commerce Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html)
 - [Adobe Stock](https://experienceleague.adobe.com/docs/commerce-admin/content-design/media/adobe-stock/adobe-stock.html)
@@ -24,7 +24,7 @@ Les informations suivantes résument les résultats des tests d’évaluation et
 
 ## Mesures de performances clés
 
-La figure suivante montre la configuration de la boutique Commerce pour l’évaluation des performances et les mesures de performances clés des résultats de test.
+La figure suivante montre la configuration du magasin Commerce pour l’évaluation des performances et les mesures de performances clés des résultats du test.
 
 ![JMeter d’évaluation des performances et infrastructure de production](../../../assets/performance/images/performance-benchmark-kpis-245-cloud.png){width="700" zoomable="yes"}
 
@@ -32,17 +32,17 @@ Selon des critères de test qui imitent une organisation B2C d’entreprise, le 
 
 ### Mise en évidence des performances
 
-- **Commandes**: traitement de 3 481 commandes par minute tout en conservant des temps de réponse de moins de 2 secondes pour le 99e percentile (99 % des demandes ont été traitées avec un temps de réponse inférieur à 2 secondes).
-- **Pages vues**: géré plus de 2 millions de pages vues par heure tout en conservant des temps de réponse de moins de 2 secondes pour le 99e percentile.
-- **SKU efficaces**— Le profil client comprenait 242 millions de variations de prix différentes (<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/product-sku-limits.html">eSKU</a>) pour 250 000 produits.
-- **Requêtes GraphQL**: système mis à l’échelle à 10 500 demandes GraphQL non mises en cache par minute tout en conservant des temps de réponse de moins de 2 secondes pour le 99e percentile.
-- **Utilisateurs administrateurs simultanés**: système mis à l’échelle pour prendre en charge 500 utilisateurs administrateurs simultanés tout en conservant des temps de réponse de moins de 2 secondes pour le 99e percentile.
+- **Commandes** : traité 3 481 commandes par minute tout en conservant des temps de réponse de moins de 2 secondes pour le 99e percentile (99 % des demandes ont été traitées avec un temps de réponse de moins de 2 secondes).
+- **Pages vues** : a géré plus de 2 millions de pages vues par heure tout en conservant des temps de réponse de moins de 2 secondes pour le 99e percentile.
+- **SKU effectif** : le profil client comprenait 242 millions de variations de prix différentes (<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/product-sku-limits.html">eSKU</a>) pour 250 000 produits.
+- **Demandes GraphQL** : système mis à l’échelle à 10 500 demandes GraphQL non mises en cache par minute tout en conservant des temps de réponse de moins de 2 secondes pour le 99e percentile.
+- **Utilisateurs administrateurs simultanés** : système mis à l’échelle pour prendre en charge 500 utilisateurs administrateurs simultanés tout en conservant des temps de réponse de moins de 2 secondes pour le 99e percentile.
 
 ## Environnement de test
 
 Les résultats des tests de performance ont été obtenus en comparant une instance Adobe Commerce 2.4.5 déployée dans un environnement cloud Pro avec une architecture mise à l’échelle. Les modules d’intégration Adobe Commerce B2B, Inventory management et Adobe Stock étaient également installés, configurés et activés sur l’instance.
 
-Les données de test de performance du profil de test ont été générées à l’aide de la variable <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html">Outils de performance</a>.
+Les données de test de performance pour le profil de test ont été générées à l’aide de la <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html">boîte à outils de performance</a>.
 
 Les mesures de performances sont basées sur des activités de magasin quotidiennes simulées pour les clients et les utilisateurs professionnels. Les valeurs reflètent un débit proche du maximum pour chaque cas, mais ne reflètent pas de modèles commerciaux uniques, tels que les ventes privées ou les ventes flash.
 
@@ -52,7 +52,7 @@ Les mesures de performances sont basées sur des activités de magasin quotidien
 
      L’utilisation efficace de la couche de cache augmente le nombre de pages vues par heure.
 
-- **API GRAPHQL**
+- **API GraphQL**
    - 250 threads simultanés
    - Définir sur 0 % le taux d’accès au cache du réseau CDN
 
@@ -74,7 +74,7 @@ Le test de chargement a été terminé à l’aide des profils de chargement JMe
 
 ### Infrastructure
 
-Pour la référence de performances, Adobe Commerce 2.4.5 a été déployé sur un [infrastructure évolutive](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html) avec la capacité suivante.
+Pour la référence de performances, Adobe Commerce 2.4.5 a été déployé sur une [infrastructure évolutive](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html) avec la capacité suivante.
 
 - **Spécifications des noeuds web**
    - vCPU 216 (72 x 3 noeuds)

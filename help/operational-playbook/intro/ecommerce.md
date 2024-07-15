@@ -4,7 +4,7 @@ description: Description du commerce électronique
 exl-id: b418d36b-7dc6-49c7-95a8-03a55c69cb6f
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ L&#39;e-commerce permet aux gens d&#39;ouvrir les portes de leurs propres magasi
 - Les frais généraux d&#39;e-commerce sont faibles par rapport aux briques et au mortier.
 - Les magasins en ligne sont ouverts 24/7
 - L&#39;achat est instantané
-- Personnalisation et expériences utilisateur personnalisées
+- Expériences utilisateur Personalization et personnalisées
 - Potentiel de la clientèle globale
 
 ### Inconvénients
@@ -73,6 +73,6 @@ Les attentes des clients augmentent et de nouvelles techniques de croissance son
 
 ![La valeur de la technologie commerciale](../../assets/playbooks/commerce-tech.png)
 
-## Secteur du commerce
+## Commerce
 
 ![La valeur de la technologie commerciale](../../assets/playbooks/commerce-industries.png)

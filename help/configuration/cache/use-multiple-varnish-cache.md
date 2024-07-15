@@ -18,9 +18,9 @@ Cette rubrique présente les principes de base de la configuration de plusieurs 
 
 ## Configuration pour purger plusieurs instances de vernis
 
-Commerce purge les hôtes ternes après avoir configuré les hôtes ternes à l’aide de la fonction [`magento setup:config:set`](../../installation/tutorials/deployment.md) .
+Commerce purge les hôtes ternes après avoir configuré les hôtes ternes à l’aide de la commande [`magento setup:config:set`](../../installation/tutorials/deployment.md) .
 
-Vous devez utiliser la variable `--http-cache-hosts` pour spécifier une liste séparée par des virgules d’hôtes et de ports d’écoute Varnish. (Ne séparez pas les hôtes avec un espace.)
+Utilisez le paramètre `--http-cache-hosts` pour spécifier une liste séparée par des virgules d’hôtes Varnish et de ports d’écoute. (Ne séparez pas les hôtes avec un espace.)
 
 Le format du paramètre doit être `<hostname or ip>:<listen port>`, où vous pouvez omettre `<listen port>` s’il s’agit du port 80.
 
@@ -30,8 +30,8 @@ Par exemple,
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 ```
 
-Vous pouvez ensuite purger tous les hôtes de marque lors de l’actualisation du cache de Commerce (également appelé _nettoyage_ le cache) dans l’Admin ou à l’aide de la ligne de commande.
+Vous pouvez ensuite purger tous les hôtes vernis lorsque vous actualisez le cache de Commerce (également appelé _nettoyage_ du cache) dans l’administrateur ou à l’aide de la ligne de commande.
 
-Pour actualiser le cache à l’aide de l’administrateur, cliquez sur **SYSTÈME** > Outils > **Gestion du cache**, puis cliquez sur **Vider le cache du Magento** en haut de la page. (Vous pouvez également actualiser des types de cache individuels.)
+Pour actualiser le cache à l’aide de l’administrateur, cliquez sur **SYSTEM** > Tools > **Cache Management**, puis sur **Flush Magento Cache** en haut de la page. (Vous pouvez également actualiser des types de cache individuels.)
 
-Pour actualiser le cache de plusieurs instances de vernis à partir de l’interface de ligne de commande, utilisez la fonction [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) comme la commande [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
+Pour actualiser le cache de plusieurs instances Varnish à partir de l’interface de ligne de commande, utilisez la commande [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) en tant que [ propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).

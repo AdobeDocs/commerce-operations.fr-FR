@@ -5,7 +5,7 @@ feature: Upgrade
 topic: Administration, Commerce, Development, Upgrade
 source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '139'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 4%
    - [Conditions préalables à la mise à niveau](prepare/prerequisites.md)
    - [Migration de l’Elasticsearch vers OpenSearch](prepare/opensearch-migration.md)
    - [Présentation de la portée de la mise à niveau](prepare/scope.md)
-- Implémentation {#implementation}
+- Mise en oeuvre {#implementation}
    - [Effectuer une mise à niveau](implementation/perform-upgrade.md)
 - Modules et extensions {#modules}
    - [Mettre à niveau les modules](modules/upgrade.md)
@@ -34,11 +34,11 @@ ht-degree: 4%
    - [Fonctionnement des correctifs](patches/overview.md)
    - [Appliquer les correctifs](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
-   - [Présentation](upgrade-compatibility-tool/overview.md)
+   - [Vue d’ensemble](upgrade-compatibility-tool/overview.md)
    - [Configuration requise](upgrade-compatibility-tool/prerequisites.md)
-   - Utilisez la variable [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
+   - Utilisez le [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
       - [Exécution de l’outil dans une interface de ligne de commande](upgrade-compatibility-tool/run.md)
-      - [Intégrez à la variable [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
+      - [Intégration avec le  [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
       - [Exécution de l’outil dans le module externe PHPStorm du Magento](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
    - Reporting {#reporting}
       - [Rapports](upgrade-compatibility-tool/reports.md)
@@ -54,4 +54,4 @@ ht-degree: 4%
 - Ressources {#resources}
    - [Lecture recommandée](resources/recommended-reading.md)
    - [Modernisation de votre plateforme avec Adobe Commerce](resources/recommended-upgrade-paths.md)
-- [Revenir aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

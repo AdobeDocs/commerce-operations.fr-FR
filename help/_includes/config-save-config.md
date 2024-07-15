@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Mettre à jour la configuration partagée
 
-**Mise à jour de la configuration**:
+**Pour mettre à jour la configuration** :
 
 1. Connectez-vous à votre système de développement en tant que propriétaire du système de fichiers ou passez à .
 
@@ -25,7 +25,7 @@ ht-degree: 0%
    php bin/magento app:config:dump
    ```
 
-1. Confirmez que `app/etc/config.php` a été mis à jour.
+1. Vérifiez que `app/etc/config.php` a été mis à jour.
 
    ```bash
    git status
@@ -43,9 +43,9 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >Do _not_ d’envoyer les modifications au `generated`, `pub/media`, ou `pub/static` répertoires vers le contrôle source. Vous générez ces fichiers sur votre système de génération. Le système de développement comporte probablement du code, des thèmes, etc., qui ne sont pas prêts à être utilisés dans le système de production.
+   >N’envoyez _pas_ les modifications apportées aux répertoires `generated`, `pub/media` ou `pub/static` vers le contrôle source. Vous générez ces fichiers sur votre système de génération. Le système de développement comporte probablement du code, des thèmes, etc., qui ne sont pas prêts à être utilisés dans le système de production.
 
-1. Archivez vos modifications dans `app/etc/config.php` uniquement au contrôle de code source.
+1. Enregistrez vos modifications sur `app/etc/config.php` uniquement pour le contrôle de code source.
 
    ```bash
    git add app/etc/config.php && git commit -m "Updated shared configuration" && git push mconfig m2.2_deploy

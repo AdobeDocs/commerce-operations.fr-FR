@@ -4,7 +4,7 @@ description: Suivez ces dix conseils pour offrir un clic agréable et collecter 
 exl-id: 5f5743ac-75a5-41f1-8819-2de088f56387
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
@@ -34,13 +34,13 @@ Les entreprises doivent suivre ces dix conseils pour fournir un bon clic et coll
 
 Lorsque vous décidez de mettre en oeuvre les clics et les collectes, les entreprises doivent tenir compte de la manière dont elles prévoient de diffuser les clics et les collectes aux clients, comme les types de services :
 
-- **Paiement en ligne et collecte en magasin**: l’utilisateur paie le produit en ligne et, une fois le paiement confirmé, le magasin le informe lorsque le produit est prêt à être collecté en fonction de la sélection de la boutique des clients. La collecte des premiers paiements aide à réserver le produit.
+- **Paiement en ligne et collecte en magasin** : l’utilisateur paie le produit en ligne et, une fois le paiement confirmé, le magasin informe le client lorsque le produit est prêt à être collecté en fonction de la sélection de la boutique des clients. La collecte des premiers paiements aide à réserver le produit.
 
-- **Réserver les produits en ligne, les paiements et la collection en magasin**: dans ce type de service, le client ne paie pas en ligne lors de la réservation d’un produit. Dans ce type de service, le client peut changer d’avis et peut ne pas acheter le produit.
+- **Réserver le produit en ligne, le paiement et la collection en magasin** : dans ce type de service, le client ne paie pas en ligne lors de la réservation d’un produit. Dans ce type de service, le client peut changer d’avis et peut ne pas acheter le produit.
 
-- **Intégration**: une fois le type de diffusion sélectionné, les entreprises doivent choisir la structure d’intégration (où les commandes sont envoyées, où les commandes sont réalisées). Les stocks peuvent être réalisés à partir d’un entrepôt central ou directement à partir de magasins individuels.
+- **Intégration** : une fois le type de diffusion sélectionné, les entreprises doivent décider de la structure de l’intégration (où les commandes sont envoyées, où les commandes sont exécutées). Les stocks peuvent être réalisés à partir d’un entrepôt central ou directement à partir de magasins individuels.
 
-- **Renvoie**: les retours peuvent être complexes. Les entreprises doivent disposer d’une stratégie claire pour gérer les retours sur les produits livrés et les produits commandés à l’aide de clics et de collectes. Les entreprises doivent permettre aux clients de renvoyer les produits qu’ils commandent par clic et collectent afin de fournir un service client de bout en bout.
+- **Renvoie** : les retours peuvent être complexes. Les entreprises doivent disposer d’une stratégie claire pour gérer les retours sur les produits livrés et les produits commandés à l’aide de clics et de collectes. Les entreprises doivent permettre aux clients de renvoyer les produits qu’ils commandent par clic et collectent afin de fournir un service client de bout en bout.
 
 ## Promotion
 

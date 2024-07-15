@@ -1,25 +1,25 @@
 ---
-title: Intégrez la variable [!DNL Site-Wide Analysis Tool]
-description: Procédez comme suit pour récupérer la variable [!DNL Upgrade Compatibility Tool] du rapport [!DNL Site-Wide Analysis Tool] tableau de bord de votre projet Adobe Commerce.
+title: Intégrer le  [!DNL Site-Wide Analysis Tool]
+description: Suivez ces étapes pour récupérer le rapport  [!DNL Upgrade Compatibility Tool] du tableau de bord  [!DNL Site-Wide Analysis Tool]  de votre projet Adobe Commerce.
 exl-id: 1ef37294-a837-47a4-841c-4027087acf12
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
-# Intégrez la variable [!DNL Site-Wide Analysis Tool]
+# Intégrer le [!DNL Site-Wide Analysis Tool]
 
-La variable [!DNL Site-Wide Analysis Tool] fournit 24/7 surveillance des performances, rapports et recommandations en temps réel afin d’assurer la sécurité et la maniabilité des instances Adobe Commerce.
+[!DNL Site-Wide Analysis Tool] fournit 24/7 surveillance des performances, rapports et recommandations en temps réel afin d’assurer la sécurité et l’opérabilité des instances Adobe Commerce.
 
-La variable [!DNL Upgrade Compatibility Tool] est désormais intégré à la fonction [!DNL Site-Wide Analysis Tool] afin que les personnes non techniques puissent exécuter la variable [!DNL Upgrade Compatibility Tool] et obtenez une [rapport](../upgrade-compatibility-tool/reports.md) contenant une liste de problèmes pour chaque fichier.
+[!DNL Upgrade Compatibility Tool] est désormais intégré à [!DNL Site-Wide Analysis Tool] afin de permettre aux personnes non techniques d&#39;exécuter le [!DNL Upgrade Compatibility Tool] et d&#39;obtenir un [rapport](../upgrade-compatibility-tool/reports.md) contenant une liste de problèmes pour chaque fichier.
 
-Voir [[!DNL Site-Wide Analysis Tool] guide de l’utilisateur](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) pour plus d’informations.
+Pour plus d’informations, consultez le [[!DNL Site-Wide Analysis Tool] guide de l’utilisateur](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) .
 
-## Exécutez la variable [!DNL Upgrade Compatibility Tool] de la [!DNL Site-Wide Analysis Tool]
+## Exécutez le [!DNL Upgrade Compatibility Tool] à partir du [!DNL Site-Wide Analysis Tool]
 
-Accédez au [!DNL Site-Wide Analysis Tool] tableau de bord de votre projet et recherchez la variable [!DNL Upgrade Compatibility Tool] widget.
+Accédez au tableau de bord [!DNL Site-Wide Analysis Tool] de votre projet et localisez le widget [!DNL Upgrade Compatibility Tool].
 
 ![Widget UCT SWAT - Initial](../../assets/upgrade-guide/uct-swat-initial.png)
 
@@ -31,9 +31,9 @@ Une fois l’analyse terminée, les résultats de haut niveau s’affichent dans
 
 ![Widget UCT SWAT - Résultats](../../assets/upgrade-guide/uct-swat-results.png)
 
-Cliquez sur **[!UICONTROL Download Report]** pour récupérer la variable [!DNL Upgrade Compatibility Tool] [Rapport HTML](../upgrade-compatibility-tool/reports.md#html-report) et passez en revue les détails.
+Cliquez sur **[!UICONTROL Download Report]** pour récupérer le [!DNL Upgrade Compatibility Tool] [rapport d&#39;HTML](../upgrade-compatibility-tool/reports.md#html-report) et passez en revue les détails.
 
 
 >[!NOTE]
 >
-> Exécutez la variable [!DNL Upgrade Compatibility Tool] par le biais du [!DNL Site-Wide Analysis Tool] optimise vos résultats et vous aide à vous concentrer sur les problèmes nouveaux et critiques pour la mise à niveau de Target. Elle utilise la variable [`--ignore-current-version-compatibility-errors`](run.md#optimize-your-results) et affiche toujours les résultats en comparant la version de votre projet à la dernière version publiée.
+> L’exécution de [!DNL Upgrade Compatibility Tool] via [!DNL Site-Wide Analysis Tool] optimise vos résultats et vous aide à vous concentrer sur les problèmes nouveaux et critiques pour la mise à niveau de votre cible. Il utilise l’option [`--ignore-current-version-compatibility-errors`](run.md#optimize-your-results) et affiche toujours les résultats en comparant la version de votre projet à la dernière version publiée.

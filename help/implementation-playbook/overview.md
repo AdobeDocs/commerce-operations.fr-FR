@@ -37,16 +37,16 @@ Bien que le succès d’un projet informatique repose en grande partie sur l’e
 
 La structure de ce manuel de lecture suit le cycle de vie type d’un projet de mise en oeuvre Adobe Commerce. Cela simplifie la navigation dans ce document, car les lecteurs peuvent immédiatement passer à la section correspondante d’un projet pour obtenir toutes les informations pertinentes.
 
-- **Portée du projet**: ventilation des principales parties prenantes, processus, échéances et exigences essentiels à la compréhension et à la réalisation des marques pour une mise en oeuvre réussie.
+- **Portée du projet** : ventilation des principaux intervenants, processus, calendriers et exigences essentiels pour que les marques comprennent et terminent une mise en oeuvre réussie.
 
-- **Développement et contrôle qualité**— Un coup d’oeil aux outils, solutions, processus et méthodologies qui ont été testés et perfectionnés sur un certain nombre d’implémentations d’Adobe Commerce, ainsi que nos recommandations pour les solutions les mieux adaptées aux besoins et aux objectifs spécifiques de l’entreprise.
+- **Contrôle du développement et de la qualité** : découvrez les outils, solutions, processus et méthodologies qui ont été testés et perfectionnés sur un certain nombre d’implémentations d’Adobe Commerce, ainsi que nos recommandations pour les solutions les mieux adaptées aux besoins et aux objectifs spécifiques de l’entreprise.
 
-- **Planification et gouvernance**—La création d’un plan pour la mise en oeuvre d’une solution à temps, à temps et selon les budgets, et qui réponde à vos besoins, est essentielle au succès.
+- **Planification et gouvernance** : la création d’un plan de mise en oeuvre d’une solution à temps, sur le budget et qui réponde à vos besoins est essentielle au succès.
 
-- **Architecture et intégrations**: fonctionnalités, architecture et intégrations qui font d’Adobe Commerce l’une des plateformes de commerce électronique les plus fiables et de confiance sur le marché.
+- **Architecture et intégrations** : fonctionnalités, architecture et intégrations qui font d’Adobe Commerce l’une des plateformes de commerce électronique les plus fiables et de confiance sur le marché.
 
-- **Infrastructure et déploiement**—En allant plus loin dans la plateforme elle-même, nous mettons en évidence l’infrastructure et les environnements qui alimentent Adobe Commerce et les solutions logicielles qui en font une plate-forme si robuste.
+- **Infrastructure et déploiement** : en allant plus loin dans la plateforme proprement dite, nous mettons en évidence l’infrastructure et les environnements qui alimentent Adobe Commerce et les solutions logicielles qui en font une plate-forme si robuste.
 
-- **Lancement et processus de coupure**: tactiques et actions qui doivent être mises en place entre le prélancement et le post-lancement pour garantir la mise en service du site et maintenir son niveau d’efficacité dès le premier jour.
+- **Lancement et processus de coupure** : tactiques et actions allant du prélancement au post-lancement qui doivent être mises en place pour garantir la mise en ligne du site et maintenir son niveau d’efficacité à partir du premier jour.
 
-- **Assistance et maintenance en cours**: informations détaillées sur la phase de transition, les types de modèles et de contrats de niveau de service autour d’un plan de support continu pour continuer à faire avancer votre marque après le lancement.
+- **Assistance et maintenance en cours** : informations détaillées sur la phase de transition et les types de modèles et de contrats de niveau de service autour d’un plan de prise en charge continu pour continuer à faire avancer votre marque après le lancement.

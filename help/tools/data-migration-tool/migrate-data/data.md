@@ -1,11 +1,11 @@
 ---
 title: Migration des données
-description: Découvrez comment commencer la migration des données de Magento 1 vers Magento 2 avec le [!DNL Data Migration Tool].
+description: Découvrez comment commencer la migration des données du Magento 1 vers le Magento 2 avec le  [!DNL Data Migration Tool].
 exl-id: f4ea8f6a-21f8-4db6-b598-c5efecec254f
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -14,10 +14,10 @@ ht-degree: 0%
 
 Avant de commencer, procédez comme suit pour préparer :
 
-1. Connectez-vous à votre serveur d’applications en tant que [le propriétaire du système de fichiers](../../../installation/prerequisites/file-system/overview.md).
-1. Modifiez le répertoire d’installation de l’application ou assurez-vous qu’il est ajouté à votre système. `PATH`.
+1. Connectez-vous à votre serveur d’applications en tant que [propriétaire du système de fichiers](../../../installation/prerequisites/file-system/overview.md).
+1. Modifiez le répertoire d&#39;installation de l&#39;application ou assurez-vous qu&#39;il est ajouté à votre système `PATH`.
 
-Voir [premières étapes](overview.md#first-steps) pour plus d’informations.
+Pour plus d’informations, voir la section [premières étapes](overview.md#first-steps) .
 
 ## Exécution de la commande de migration des données
 
@@ -29,22 +29,22 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 Où :
 
-* `[-a|--auto]` est un argument facultatif qui empêche l’arrêt de la migration lorsqu’elle rencontre des erreurs de vérification d’intégrité.
+* `[-a|--auto]` est un argument facultatif qui empêche l’arrêt de la migration lorsqu’elle rencontre des erreurs de vérification de l’intégrité.
 
 * `[-r|--reset]` est un argument facultatif qui lance la migration à partir du début. Vous pouvez utiliser cet argument pour tester la migration.
 
-* `{<path to config.xml>}` est le chemin d’accès absolu au système de fichiers vers `config.xml`; cet argument est obligatoire.
+* `{<path to config.xml>}` est le chemin d’accès absolu au système de fichiers vers `config.xml` ; cet argument est obligatoire.
 
-Au cours de cette étape, la variable [!DNL Data Migration Tool] crée des tables et des triggers supplémentaires pour les tables de migration dans la base de données Magento 1. Ils sont utilisés dans la variable [incrémentiel/delta](delta.md) étape de migration. Les tableaux supplémentaires contiennent des informations sur les enregistrements modifiés après l’exécution finale de la migration. Les déclencheurs de base de données sont utilisés pour remplir ces tables supplémentaires. Ainsi, si une nouvelle opération est effectuée sur la table particulière (un enregistrement est ajouté/modifié/supprimé), cette base de données déclenche l’enregistrement des informations sur cette opération dans la table supplémentaire. Lorsque nous exécutons un processus de migration delta, la variable [!DNL Data Migration Tool] vérifie les enregistrements non traités dans ces tables et migre le contenu nécessaire dans la base de données Magento 2.
+Au cours de cette étape, [!DNL Data Migration Tool] crée des tables et des déclencheurs supplémentaires pour les tables de migration dans la base de données Magento 1. Ils sont utilisés dans l’étape de migration [incrémentielle/delta](delta.md). Les tableaux supplémentaires contiennent des informations sur les enregistrements modifiés après l’exécution finale de la migration. Les déclencheurs de base de données sont utilisés pour remplir ces tables supplémentaires. Ainsi, si une nouvelle opération est effectuée sur la table particulière (un enregistrement est ajouté/modifié/supprimé), cette base de données déclenche l’enregistrement des informations sur cette opération dans la table supplémentaire. Lors de l&#39;exécution d&#39;un processus de migration delta, [!DNL Data Migration Tool] recherche dans ces tables les enregistrements non traités et migre le contenu nécessaire dans la base de données Magento 2.
 
 Chaque nouveau tableau contient :
 
 * `m2_cl` préfixe
 * `INSERT`, `UPDATE`, `DELETE` déclencheurs d’événement.
 
-Par exemple, pour la variable `sales_flat_order` la valeur [!DNL Data Migration Tool] crée :
+Par exemple, pour le `sales_flat_order`, le [!DNL Data Migration Tool] crée :
 
-* `m2_cl_sales_flat_order` table :
+* table `m2_cl_sales_flat_order` :
 
   ```sql
   CREATE TABLE `m2_cl_sales_flat_order` (
@@ -55,7 +55,7 @@ Par exemple, pour la variable `sales_flat_order` la valeur [!DNL Data Migration 
   ) COMMENT='m2_cl_sales_flat_order';
   ```
 
-* `trg_sales_flat_order_after_insert`, `trg_sales_flat_order_after_update`, `trg_sales_flat_order_after_delete` triggers :
+* `trg_sales_flat_order_after_insert`, `trg_sales_flat_order_after_update`, `trg_sales_flat_order_after_delete` déclencheurs :
 
   ```sql
   DELIMITER ;;
@@ -85,12 +85,12 @@ Par exemple, pour la variable `sales_flat_order` la valeur [!DNL Data Migration 
 
 >[!NOTE]
 >
->La variable [!DNL Data Migration Tool] enregistre sa progression actuelle au fur et à mesure de son exécution. Si des erreurs ou une intervention de l’utilisateur l’empêchent d’exécuter, l’outil reprend la progression au dernier état correct connu. Pour forcer la variable [!DNL Data Migration Tool] pour exécuter à partir du début, utilisez la méthode `--reset` argument . Dans ce cas, nous vous recommandons de restaurer le vidage de la base de données Magento 2 afin d’éviter la duplication des données migrées précédemment.
+>Le [!DNL Data Migration Tool] enregistre sa progression actuelle lors de son exécution. Si des erreurs ou une intervention de l’utilisateur l’empêchent d’exécuter, l’outil reprend la progression au dernier état correct connu. Pour forcer l’exécution de [!DNL Data Migration Tool] à partir du début, utilisez l’argument `--reset`. Dans ce cas, nous vous recommandons de restaurer le vidage de la base de données Magento 2 afin d’éviter la duplication des données migrées précédemment.
 
 
 ## Erreurs de cohérence possibles
 
-Lors de l’exécution, la variable [!DNL Data Migration Tool] peut signaler des incohérences entre les bases de données de Magento 1 et de Magento 2 et afficher des messages du type :
+Lors de l’exécution, le [!DNL Data Migration Tool] peut signaler des incohérences entre les bases de données du Magento 1 et du Magento 2 et afficher des messages du type :
 
 * `Source documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`
 * `Destination documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`
@@ -105,7 +105,7 @@ Lors de l’exécution, la variable [!DNL Data Migration Tool] peut signaler des
 * `Incompatibility in data. Source document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 * `Incompatibility in data. Destination document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 
-Voir [Dépannage](https://support.magento.com/hc/en-us/articles/360033020451) pour plus d’informations et de recommandations.
+Pour plus d’informations et de recommandations, consultez la section [Dépannage](https://support.magento.com/hc/en-us/articles/360033020451) de ce guide.
 
 ## Étape suivante de migration
 

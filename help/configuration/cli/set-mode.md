@@ -4,7 +4,7 @@ description: Découvrez comment définir les modes de fonctionnement d’Adobe C
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Pour améliorer la sécurité et la facilité d’utilisation, nous avons ajouté une commande qui permet de basculer [modes d&#39;application](../bootstrap/application-modes.md) du développeur à la production et vice versa.
+Pour améliorer la sécurité et la facilité d&#39;utilisation, nous avons ajouté une commande qui passe de [modes d&#39;application](../bootstrap/application-modes.md) du développeur à la production et vice versa.
 
-Les performances du mode de production sont meilleures, car les fichiers d’affichage statique sont renseignés dans la variable `pub/static` et à cause de la compilation du code.
+Le mode de production offre de meilleures performances car les fichiers de vue statiques sont renseignés dans le répertoire `pub/static` et à cause de la compilation du code.
 
 >[!INFO]
 >
->Dans les versions 2.0.6 et ultérieures, Commerce ne définit pas explicitement les autorisations de fichier ou d’annuaire lorsque vous passez d’un mode par défaut, de développement à un mode de production. Contrairement aux autres modes, les modes de développement et de production sont définis dans la variable `env.php` fichier . Adobe Commerce sur l’infrastructure cloud prend uniquement en charge les modes de production et de maintenance.
+>Dans les versions 2.0.6 et ultérieures, Commerce ne définit pas explicitement les autorisations de fichier ou de répertoire lorsque vous passez d’un mode par défaut, de développement à un mode de production. Contrairement aux autres modes, les modes de développement et de production sont définis dans le fichier `env.php`. Adobe Commerce sur l’infrastructure cloud prend uniquement en charge les modes de production et de maintenance.
 >
->Voir [Propriété commerciale et autorisations dans le développement et la production](../deployment/file-system-permissions.md).
+>Voir [Propriété Commerce et autorisations dans le développement et la production](../deployment/file-system-permissions.md).
 
 Lorsque vous passez en mode Développeur ou Production, nous effacons le contenu des répertoires suivants :
 
@@ -35,16 +35,16 @@ pub/static
 
 Exceptions :
 
-- `.htaccess` Les fichiers ne sont pas supprimés
+- `.htaccess` fichiers ne sont pas supprimés
 - `pub/static` contient un fichier qui spécifie la version du contenu statique ; ce fichier n’est pas supprimé.
 
 >[!INFO]
 >
->Par défaut, Commerce utilise la variable `var` répertoires pour stocker le cache, les journaux et le code compilé. Vous pouvez personnaliser ce répertoire, mais dans ce guide, il est supposé être `var`.
+>Par défaut, Commerce utilise les répertoires `var` pour stocker le cache, les journaux et le code compilé. Vous pouvez personnaliser ce répertoire, mais dans ce guide, il est supposé être `var`.
 
 ## Afficher le mode actuel
 
-La méthode la plus simple consiste à exécuter cette commande en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md). Si vous avez partagé l’hébergement, il s’agit de l’utilisateur que votre fournisseur vous donne pour vous connecter au serveur. Si vous disposez d’un serveur privé, il s’agit généralement d’un compte d’utilisateur local sur le serveur Commerce.
+Pour ce faire, la méthode la plus simple consiste à exécuter cette commande en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md). Si vous avez partagé l’hébergement, il s’agit de l’utilisateur que votre fournisseur vous donne pour vous connecter au serveur. Si vous disposez d’un serveur privé, il s’agit généralement d’un compte utilisateur local sur le serveur Commerce.
 
 Utilisation des commandes :
 
@@ -60,7 +60,7 @@ Current application mode: {mode}. (Note: Environment variables may override this
 
 où :
 
-- **`{mode}`** peut être `default`, `developer`, ou `production`
+- **`{mode}`** peut être `default`, `developer` ou `production`
 
 ## Modifier les modes
 
@@ -72,9 +72,9 @@ bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 
 où :
 
-- **`{mode}`** est requis ; il peut être `developer` ou `production`
+- **`{mode}`** est requis ; il peut s’agir de `developer` ou de `production`
 
-- **`--skip-compilation`** est un paramètre facultatif que vous pouvez utiliser pour ignorer [compilation de code](../cli/code-compiler.md) lorsque vous passez en mode de production.
+- **`--skip-compilation`** est un paramètre facultatif que vous pouvez utiliser pour ignorer la [compilation de code](../cli/code-compiler.md) lorsque vous passez en mode de production.
 
 Voici des exemples.
 
@@ -129,7 +129,7 @@ Enabled production mode.
 
 Lorsque vous passez du mode de production au mode Développeur, vous devez effacer les classes générées et les entités du gestionnaire d’objets telles que les proxies pour éviter les erreurs inattendues. Vous pouvez ensuite modifier les modes. Procédez comme suit :
 
-1. Si vous passez du mode de production au mode développeur, supprimez le contenu de la variable `generated/code` et `generated/metadata` répertoires :
+1. Si vous passez du mode de production au mode développeur, supprimez le contenu des répertoires `generated/code` et `generated/metadata` :
 
    ```bash
    rm -rf <magento_root>/generated/metadata/* <magento_root>/generated/code/*
@@ -161,6 +161,6 @@ Enabled default mode.
 
 ### Exécutez des commandes de ligne de commande n’importe où
 
-[Exécutez des commandes de ligne de commande n’importe où](../cli/config-cli.md#config-install-cli-first).
+[Exécutez les commandes de l’interface de ligne de commande n’importe où](../cli/config-cli.md#config-install-cli-first).
 
-Si vous n’avez pas ajouté `<Commerce-install-directory>/bin` sur votre système `PATH`, vous pouvez alors vous attendre à une erreur lors de l’exécution de la commande seule.
+Si vous n&#39;avez pas ajouté `<Commerce-install-directory>/bin` à votre système `PATH`, vous pouvez vous attendre à une erreur lors de l&#39;exécution de la commande seule.

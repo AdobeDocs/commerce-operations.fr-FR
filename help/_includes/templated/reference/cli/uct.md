@@ -10,16 +10,16 @@ ht-degree: 0%
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**Version**: 3.0.17
+**Version** : 3.0.17
 
-Cette référence contient 9 commandes disponibles via la fonction `bin/uct` outil de ligne de commande.
-La liste initiale est générée automatiquement à l’aide de la fonction `bin/uct list` dans Adobe Commerce.
+Cette référence contient 9 commandes disponibles via l’outil de ligne de commande `bin/uct`.
+La liste initiale est générée automatiquement à l’aide de la commande `bin/uct list` sur Adobe Commerce.
 
-En savoir plus sur l’outil dans [Présentation](/help/upgrade/upgrade-compatibility-tool/overview.md).
+Pour en savoir plus sur l’outil, voir [Aperçu](/help/upgrade/upgrade-compatibility-tool/overview.md).
 
 >[!NOTE]
 >
->Cette référence est générée à partir du code base de l’application. Pour modifier le contenu, vous pouvez mettre à jour le code source de l’implémentation de la commande correspondante dans le [codebase](https://github.com/magento) et envoyer vos modifications pour révision. Une autre méthode consiste à _Donnez-nous vos commentaires_ (trouvez le lien en haut à droite). Pour obtenir des instructions sur les contributions, voir [Contributions au code](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>Cette référence est générée à partir du code base de l’application. Pour modifier le contenu, vous pouvez mettre à jour le code source pour l’implémentation de commande correspondante dans le référentiel [codebase](https://github.com/magento) et envoyer vos modifications pour révision. Une autre méthode consiste à _Laisser un commentaire_ (trouvez le lien en haut à droite). Pour obtenir des instructions sur les contributions, voir [Contributions au code](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ## `_complete`
 
@@ -38,14 +38,14 @@ Le type de shell (&quot;bash&quot;)
 
 ### `--input`, `-i`
 
-Un tableau de jetons d’entrée (par exemple, &quot;C.C._WORDS&quot; ou &quot;argv&quot;)
+Tableau de jetons d’entrée (COMP_WORDS ou argv, par exemple)
 
 - Valeur par défaut : `[]`
 - Requiert une valeur
 
 ### `--current`, `-c`
 
-Index de la table &quot;input&quot; dans laquelle se trouve le curseur (par exemple, Throne_CWORD)
+Index du tableau &quot;input&quot; dans lequel se trouve le curseur (par exemple, COMP_CWORD)
 
 - Requiert une valeur
 

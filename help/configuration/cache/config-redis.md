@@ -5,7 +5,7 @@ feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 Redis features :
 
 - Stockage des sessions PHP
-- Nettoyage du cache basé sur les balises sans `foreach` boucles
+- Nettoyage du cache basé sur les balises sans boucles `foreach`
 - Enregistrement sur disque et réplication maître/esclave
 
 ## Installer Redis
@@ -25,23 +25,23 @@ L’installation et la configuration du logiciel Redis ne font pas partie de ce 
 - [Télécharger la page Redis](https://redis.io/download)
 - [Démarrage rapide de Redis](https://redis.io/docs/getting-started/)
 - [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis)
-- [Page de documentation Redis](https://redis.io/docs)
+- [Redis documentation page](https://redis.io/docs)
 
 ## Configuration de Redis
 
-Selon votre installation, vous trouverez généralement votre configuration Redis dans l’un des fichiers suivants : `/etc/redis/redis.conf` ou `/etc/redis/<port>.conf`
+Selon votre installation, vous pouvez généralement trouver votre configuration Redis dans l’un des fichiers suivants : `/etc/redis/redis.conf` ou `/etc/redis/<port>.conf`
 
 Pour optimiser l’instance Redis en fonction de vos besoins, vous obtenez de meilleurs résultats en utilisant une instance dédiée pour chaque session, cache Commerce et FPC.
 
 Pour les sessions, Adobe vous recommande d’activer la persistance pour copier les données Redis sur le disque à l’aide de l’une des options de persistance suivantes : instantanés RDB (Redis Database Backup) standard ou journaux de persistance AOF (Append Only File).
 
-- **Sauvegarde de la base de données Redis** (RDB) les instantanés stockent la base de données complète dans un fichier de vidage après une période donnée, lorsqu’un nombre minimum de clés a changé depuis le dernier enregistrement. Utilisez la variable `save` dans le `redis.conf` pour configurer ce paramètre.
+- Les instantanés **Redis Database Backup** (RDB) stockent la base de données complète dans un fichier de sauvegarde après une période donnée, lorsqu’un nombre minimum de clés a changé depuis le dernier enregistrement. Utilisez le paramètre `save` du fichier `redis.conf` pour configurer ce paramètre.
 
-- **Ajouter un fichier uniquement** (AOF) stocke chaque opération d’écriture envoyée à Redis dans un fichier journal. Redis lit ce fichier au redémarrage uniquement et l’utilise pour restaurer le jeu de données d’origine.
+- **Ajouter uniquement le fichier** (AOF) stocke chaque opération d’écriture envoyée à Redis dans un fichier journal. Redis lit ce fichier au redémarrage uniquement et l’utilise pour restaurer le jeu de données d’origine.
 
-Vous pouvez également activer simultanément les options RDB et AOF. Pour plus d’informations, notamment sur les avantages et les inconvénients des options de persistance, voir la section [Documentation sur la persistance Redis](https://redis.io/topics/persistence).
+Vous pouvez également activer simultanément les options RDB et AOF. Pour plus d’informations, notamment sur les avantages et les inconvénients des options de persistance, consultez la [documentation sur la persistance des segments](https://redis.io/topics/persistence).
 
-Pour l’instance de cache, configurez l’instance de sorte qu’elle soit suffisamment grande pour stocker l’intégralité du cache Commerce. Les exigences de taille dépendent de différents facteurs tels que le nombre de produits et de consultations en magasin. Pour commencer, vous pouvez utiliser la taille du dossier de cache sur votre système de fichiers. Par exemple, si la variable `var/cache` sur votre système de fichiers est de 5 Go, configurez votre instance Redis avec au moins 5 Go pour démarrer. La persistance n’est pas requise pour l’instance de cache, car le cache Commerce peut être restauré. Voir [Guide de mise en cache de Redis](https://redis.io/docs/manual/eviction/).
+Pour l’instance de cache, configurez l’instance de sorte qu’elle soit suffisamment grande pour stocker l’intégralité du cache Commerce. Les exigences de taille dépendent de différents facteurs tels que le nombre de produits et de consultations en magasin. Pour commencer, vous pouvez utiliser la taille du dossier de cache sur votre système de fichiers. Par exemple, si le dossier `var/cache` de votre système de fichiers est de 5 Go, configurez votre instance Redis avec au moins 5 Go pour démarrer. La persistance n’est pas requise pour l’instance de cache, car le cache de Commerce peut être restauré. Voir le [guide de mise en cache des révisions](https://redis.io/docs/manual/eviction/).
 
 Pour optimiser les performances, vous pouvez activer les paramètres suivants pour la suppression asynchrone. Ces paramètres ne modifient pas le comportement de Redis.
 

@@ -19,16 +19,16 @@ ht-degree: 1%
 Cette rubrique explique comment commencer à utiliser la solution de base de données partagée en procédant comme suit :
 
 1. Installation d’Adobe Commerce avec une seule base de données maître (nommée `magento`)
-1. Création de deux bases de données principales supplémentaires pour le passage en caisse et les OMS (nommés `magento_quote` et `magento_sales`)
+1. Création de deux bases de données principales supplémentaires pour le passage en caisse et OMS (nommés `magento_quote` et `magento_sales`)
 1. Configuration d’Adobe Commerce pour l’utilisation des bases de données de paiement et de vente
 
 >[!INFO]
 >
->Ce guide suppose que les trois bases de données se trouvent sur le même hôte que l’application Commerce et qu’elles sont nommées . `magento`, `magento_quote`, et `magento_sales`. Cependant, c&#39;est à vous de choisir où trouver les bases de données et leur nom. Nous espérons que nos exemples rendent les instructions plus faciles à suivre.
+>Ce guide suppose que les trois bases de données se trouvent sur le même hôte que l’application Commerce et qu’elles sont nommées `magento`, `magento_quote` et `magento_sales`. Cependant, c&#39;est à vous de choisir où trouver les bases de données et leur nom. Nous espérons que nos exemples rendent les instructions plus faciles à suivre.
 
 ## Installation du logiciel Adobe Commerce
 
-Vous pouvez activer la division des bases de données à tout moment après l’installation du logiciel Adobe Commerce ; en d’autres termes, vous pouvez ajouter des bases de données fractionnées à un système Adobe Commerce qui dispose déjà de données de passage en caisse et de commande. Suivez les instructions de la section Adobe Commerce README ou [guide d’installation](../../installation/overview.md) pour installer le logiciel Adobe Commerce à l’aide d’une seule base de données principale.
+Vous pouvez activer la division des bases de données à tout moment après l’installation du logiciel Adobe Commerce ; en d’autres termes, vous pouvez ajouter des bases de données fractionnées à un système Adobe Commerce qui dispose déjà de données de passage en caisse et de commande. Suivez les instructions du fichier LISEZMOI d’Adobe Commerce ou du [guide d’installation](../../installation/overview.md) pour installer le logiciel Adobe Commerce à l’aide d’une seule base de données principale.
 
 ## Configurer des bases de données principales supplémentaires
 
@@ -41,7 +41,7 @@ Créez des bases de données principales OMS et de passage en caisse comme suit 
    mysql -u root -p
    ```
 
-1. Saisissez le MySQL. `root` mot de passe de l’utilisateur lorsqu’il y est invité.
+1. Saisissez le mot de passe de l’utilisateur MySQL `root` lorsque vous y êtes invité.
 1. Saisissez les commandes suivantes dans l’ordre indiqué pour créer des instances de base de données nommées `magento_quote` et `magento_sales` avec les mêmes noms d’utilisateur et mots de passe :
 
    ```shell
@@ -60,7 +60,7 @@ Créez des bases de données principales OMS et de passage en caisse comme suit 
    GRANT ALL ON magento_sales.* TO magento_sales@localhost IDENTIFIED BY 'magento_sales';
    ```
 
-1. Entrée `exit` pour quitter l’invite de commande.
+1. Saisissez `exit` pour quitter l’invite de commande.
 
 1. Vérifiez les bases de données, une par une :
 
@@ -92,7 +92,7 @@ Après avoir configuré un total de trois bases de données principales, utilise
 
 ### Premières étapes
 
-Voir [Exécution des commandes](../cli/config-cli.md#running-commands) pour se connecter et exécuter des commandes d’interface de ligne de commande.
+Voir [Commandes en cours d’exécution](../cli/config-cli.md#running-commands) pour ouvrir une session et exécuter des commandes de l’interface de ligne de commande.
 
 ### Configuration de la base de données de paiement
 

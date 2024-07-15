@@ -6,7 +6,7 @@ badge: label="Contribution de Atish Goswami" type="Informative" url="https://git
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Le profileur de base de données Commerce affiche toutes les requêtes implémen
 
 ## Étape 1 : modification de la configuration du déploiement
 
-Modifier `<magento_root>/app/etc/env.php` pour ajouter la référence suivante au [classe profileur de base de données](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
+Modifiez `<magento_root>/app/etc/env.php` pour ajouter la référence suivante à la [classe du profileur de base de données](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php) :
 
 ```php?start_inline=1
         'profiler' => [
@@ -55,7 +55,7 @@ Voici un exemple :
 
 ## Etape 2 : paramétrer la sortie
 
-Configurez la sortie dans votre fichier d’amorçage de l’application Commerce. Il peut s’agir de `<magento_root>/pub/index.php` ou il peut se trouver dans une configuration d’hôte virtuel d’un serveur web.
+Configurez la sortie dans le fichier d’amorçage de votre application Commerce ; il peut s’agir de `<magento_root>/pub/index.php` ou se trouver dans une configuration d’hôte virtuel d’un serveur web.
 
 L’exemple suivant affiche les résultats dans un tableau à trois colonnes :
 
@@ -63,7 +63,7 @@ L’exemple suivant affiche les résultats dans un tableau à trois colonnes :
 - SQL (affiche toutes les requêtes SQL ; l’en-tête de ligne affiche le nombre de requêtes)
 - Paramètres de requête (affiche les paramètres de chaque requête SQL)
 
-Pour configurer la sortie, ajoutez ce qui suit après la `$bootstrap->run($app);` dans votre fichier bootstrap :
+Pour configurer la sortie, ajoutez les éléments suivants après la ligne `$bootstrap->run($app);` dans votre fichier de démarrage :
 
 ```php?start_inline=1
 /** @var \Magento\Framework\App\ResourceConnection $res */
@@ -91,4 +91,4 @@ echo "</table>";
 
 Accédez à n’importe quelle page de votre storefront ou de votre administrateur pour afficher les résultats. Voici un exemple :
 
-![Exemples de résultats du profileur de base de données](../../assets/configuration/db-profiler-results.png)
+![Exemple de résultats de profileur de base de données](../../assets/configuration/db-profiler-results.png)

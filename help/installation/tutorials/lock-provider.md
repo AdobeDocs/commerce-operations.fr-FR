@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Configuration du fournisseur de verrouillage
 
-Avant d’exécuter cette commande, procédez comme suit : *ou* vous devez [installation de l’application](../advanced.md):
+Avant d&#39;exécuter cette commande, vous devez effectuer les *ou* suivants en [installant l&#39;application](../advanced.md) :
 
 * [Création ou mise à jour de la configuration du déploiement](deployment.md)
 * [Création du schéma de la base de données](database.md)
@@ -38,8 +38,8 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 
 | Nom | Valeur | Obligatoire ? |
 |--- |--- |--- |
-| `--lock-provider` | Verrouiller le nom du fournisseur : `db`, `zookeeper`, ou `file`.<br><br>Le fournisseur de verrouillage par défaut : `db` | Non |
-| `--lock-db-prefix` | Le préfixe db spécifique pour éviter les conflits de verrouillage lors de l’utilisation de la fonction `db` fournisseur de verrouillage.<br><br>La valeur par défaut : `NULL` | Non |
-| `--lock-zookeeper-host` | Hébergez et port pour vous connecter à la grappe Zookeeper lorsque vous utilisez la méthode `zookeeper` fournisseur de verrouillage.<br><br>Par exemple : `127.0.0.1:2181` | Oui, si vous définissez `--lock-provider=zookeeper` |
-| `--lock-zookeeper-path` | Chemin d’accès dans lequel le gardien de page enregistre les verrous.<br><br>Le chemin par défaut est le suivant : `/magento/locks` | Non |
+| `--lock-provider` | Nom du fournisseur de verrouillage : `db`, `zookeeper` ou `file`.<br><br>Le fournisseur de verrouillage par défaut : `db` | Non |
+| `--lock-db-prefix` | Préfixe db spécifique pour éviter les conflits de verrouillage lors de l&#39;utilisation du fournisseur de verrouillage `db`.<br><br>La valeur par défaut : `NULL` | Non |
+| `--lock-zookeeper-host` | Hébergez et port pour vous connecter à la grappe Zookeeper lorsque vous utilisez le fournisseur de verrouillage `zookeeper`.<br><br>Par exemple : `127.0.0.1:2181` | Oui, si vous définissez `--lock-provider=zookeeper` |
+| `--lock-zookeeper-path` | Chemin d’accès dans lequel le gardien de page enregistre les verrous.<br><br>Le chemin par défaut est : `/magento/locks` | Non |
 | `--lock-file-path` | Chemin d’accès où les verrous de fichier sont enregistrés. | Oui, si vous définissez `--lock-provider=file` |

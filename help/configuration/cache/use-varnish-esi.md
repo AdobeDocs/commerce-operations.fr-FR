@@ -1,12 +1,12 @@
 ---
 title: Bloc ESI en pointillé
-description: Découvrez Edge Side Includes et comment les utiliser pour incorporer des pages web.
+description: Découvrez les inclusions côté Edge et comment les utiliser pour incorporer des pages web.
 badge: label="Contribution de Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Constantin G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
@@ -23,18 +23,18 @@ Exemple :
 </div>
 ```
 
-Le vernis récupère le contenu de `http://domain.com/index.php/page_cache/block/esi/blocks` et remplacez la fonction `<esi>` avec.
+Le vernis récupère le contenu de `http://domain.com/index.php/page_cache/block/esi/blocks` et remplace la balise `<esi>` par celle-ci.
 
-## Commerce et vernissage de l’ESI
+## Commerce et ESI vernal
 
 La structure Commerce crée une balise ESI lorsque les conditions suivantes sont remplies :
 
 - L’application de mise en cache est définie sur `Varnish Cache`
-- Une disposition XML `block` est ajouté avec un élément `ttl` attribute
+- Un élément `block` de disposition XML est ajouté avec un attribut `ttl`
 
 ### Exemple
 
-`cms_index_index.xml`:
+`cms_index_index.xml` :
 
 ```xml
   <referenceContainer name="content">
@@ -42,13 +42,13 @@ La structure Commerce crée une balise ESI lorsque les conditions suivantes sont
    </referenceContainer>
 ```
 
-Dans l’exemple ci-dessus, la variable `block` ajoute du contenu à partir de la fonction `esi.phtml` sur une page d’accueil et Varnish la met automatiquement à jour toutes les 30 secondes.
+Dans l’exemple ci-dessus, l’élément `block` ajoute du contenu du modèle `esi.phtml` à une page d’accueil et le vernis le met automatiquement à jour toutes les 30 secondes.
 
 ## Limites
 
 Actuellement, Varnish ne prend pas en charge l’ESI par HTTPS et passe donc automatiquement au HTTP.
 
-`Magento\PageCache\Observer\ProcessLayoutRenderElement`:
+`Magento\PageCache\Observer\ProcessLayoutRenderElement` :
 
 ```php
     private function _wrapEsi(

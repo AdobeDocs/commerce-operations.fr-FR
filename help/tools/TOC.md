@@ -27,7 +27,7 @@ ht-degree: 3%
    - [Alertes](site-wide-analysis-tool/alerts.md)
    - [Correctifs](site-wide-analysis-tool/patches.md)
 - Outil Correctifs de qualité {#quality-patches-tool}
-   - [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+   - [[!DNL Quality Patches Tool] : Recherchez des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Utilisation](quality-patches-tool/usage.md)
    - [Notes de mise à jour](quality-patches-tool/release-notes.md)
 - Référence des outils de ligne de commande {#cli-reference}
@@ -48,7 +48,7 @@ ht-degree: 3%
    - [Onglet Alertes](observation-for-adobe-commerce/alerts-tab.md)
    - [Onglet WAF](observation-for-adobe-commerce/waf-tab.md)
    - [Onglet CDN](observation-for-adobe-commerce/cdn-tab.md)
-   - [La variable [!DNL RabbitMQ] tab](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [Onglet  [!DNL RabbitMQ] ](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [Onglet Cron](observation-for-adobe-commerce/cron-tab.md)
    - [Onglet Indexation](observation-for-adobe-commerce/indexing-tab.md)
    - [Onglet Aperçu rapide](observation-for-adobe-commerce/oac-quickview-tab.md)
@@ -67,15 +67,15 @@ ht-degree: 3%
       - [Configurer](data-migration-tool/configure.md)
       - [Personnaliser](data-migration-tool/customize.md)
       - [Spécification technique](data-migration-tool/technical-specification.md)
-   - Migration des données {#migrate-data}
+   - Migrer les données {#migrate-data}
       - [Vue d’ensemble](data-migration-tool/migrate-data/overview.md)
       - [Paramètres](data-migration-tool/migrate-data/settings.md)
       - [Données](data-migration-tool/migrate-data/data.md)
       - [Modifications](data-migration-tool/migrate-data/delta.md)
       - [Suivi](data-migration-tool/migrate-data/follow-up.md)
       - [Données nécessitant une migration manuelle](data-migration-tool/migrate-data/manual.md)
-      - [Etapes de migration post-données](data-migration-tool/migrate-data/post-migration.md)
+      - [Etapes de migration des données Post](data-migration-tool/migrate-data/post-migration.md)
    - Ressources {#resources}
       - [Dépannage](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Revenir aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

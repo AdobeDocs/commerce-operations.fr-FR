@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->La prise en charge d’OpenSearch a été ajoutée à la version 2.4.4. OpenSearch est un double compatible d’Elasticsearch. Voir [Migration de l’Elasticsearch vers OpenSearch](../../../upgrade/prepare/opensearch-migration.md) pour plus d’informations.
+>La prise en charge d’OpenSearch a été ajoutée à la version 2.4.4. OpenSearch est un double compatible d’Elasticsearch. Pour plus d’informations, voir [Migration de l’Elasticsearch vers OpenSearch](../../../upgrade/prepare/opensearch-migration.md) .
 
-Cette section explique comment configurer Apache en tant que *unsecure* pour qu’Adobe Commerce puisse utiliser un moteur de recherche s’exécutant sur ce serveur. Cette section ne traite pas de la configuration de l’authentification HTTP de base. C’est ce qui est décrit dans la section [Communication sécurisée avec Apache](#secure-communication-with-apache).
+Cette section explique comment configurer Apache en tant que proxy *non sécurisé* afin qu’Adobe Commerce puisse utiliser un moteur de recherche s’exécutant sur ce serveur. Cette section ne traite pas de la configuration de l’authentification HTTP de base. C’est ce qui est décrit dans la section [Communication sécurisée avec Apache](#secure-communication-with-apache).
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Cette section explique comment configurer Apache en tant que *unsecure* pour qu�
 
 Cette section explique comment configurer un proxy à l’aide d’un hôte virtuel.
 
-1. Activer `mod_proxy` comme suit :
+1. Activez `mod_proxy` comme suit :
 
    ```bash
    a2enmod proxy_http
@@ -84,7 +84,7 @@ Cette section explique comment configurer un proxy à l’aide d’un hôte virt
 
 ## Communication sécurisée avec Apache
 
-Cette section explique comment sécuriser la communication entre Apache et le moteur de recherche à l’aide de [HTTP Basic](https://datatracker.ietf.org/doc/html/rfc2617) authentification avec Apache. Pour plus d’options, consultez l’une des ressources suivantes :
+Cette section explique comment sécuriser la communication entre Apache et le moteur de recherche à l’aide de l’authentification [HTTP Basic](https://datatracker.ietf.org/doc/html/rfc2617) avec Apache. Pour plus d’options, consultez l’une des ressources suivantes :
 
 * [Tutoriel sur l’authentification et l’autorisation Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
@@ -99,7 +99,7 @@ Pour des raisons de sécurité, vous pouvez localiser le fichier de mot de passe
 
 #### Installez htpasswd si nécessaire
 
-Tout d’abord, voir si vous disposez de l’Apache `htpasswd` L’utilitaire est installé comme suit :
+Tout d’abord, vérifiez si l’utilitaire Apache `htpasswd` est installé comme suit :
 
 1. Saisissez la commande suivante pour déterminer si `htpasswd` est déjà installé :
 
@@ -109,14 +109,14 @@ Tout d’abord, voir si vous disposez de l’Apache `htpasswd` L’utilitaire es
 
    Si un chemin d’accès s’affiche, il est installé ; si la commande ne renvoie aucune sortie, `htpasswd` n’est pas installé.
 
-1. Si nécessaire, installez . `htpasswd`:
+1. Si nécessaire, installez `htpasswd` :
 
    * Ubuntu : `apt-get -y install apache2-utils`
    * CentOS : `yum -y install httpd-tools`
 
 #### Créer un fichier de mot de passe
 
-Saisissez les commandes suivantes en tant qu’utilisateur avec `root` privilèges :
+Saisissez les commandes suivantes en tant qu’utilisateur disposant des privilèges `root` :
 
 ```bash
 mkdir -p /usr/local/apache/password
@@ -166,7 +166,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticse
 
 #### Ajout d’utilisateurs
 
-Pour ajouter un autre utilisateur à votre fichier de mot de passe, saisissez la commande suivante en tant qu’utilisateur avec `root` privilèges :
+Pour ajouter un autre utilisateur à votre fichier de mot de passe, saisissez la commande suivante en tant qu’utilisateur disposant des privilèges `root` :
 
 ```bash
 htpasswd /usr/local/apache/password/.htpasswd <username>
@@ -174,7 +174,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### Communication sécurisée avec Apache
 
-Cette section explique comment configurer [Authentification HTTP de base](https://httpd.apache.org/docs/2.2/howto/auth.html). L’utilisation conjointe de l’authentification TLS et HTTP Basic empêche quiconque d’intercepter une communication avec un Elasticsearch ou OpenSearch ou avec votre serveur d’applications.
+Cette section explique comment configurer l’ [authentification HTTP de base](https://httpd.apache.org/docs/2.2/howto/auth.html). L’utilisation conjointe de l’authentification TLS et HTTP Basic empêche quiconque d’intercepter une communication avec un Elasticsearch ou OpenSearch ou avec votre serveur d’applications.
 
 Cette section explique comment spécifier qui peut accéder au serveur Apache.
 
@@ -200,7 +200,7 @@ Cette section explique comment spécifier qui peut accéder au serveur Apache.
    </Proxy>
    ```
 
-1. Si vous avez ajouté le précédent à votre hôte virtuel sécurisé, supprimez `Listen 8080` et la variable `<VirtualHost *:8080>` directives que vous avez ajoutées précédemment à votre hôte virtuel non sécurisé.
+1. Si vous avez ajouté les instructions précédentes à votre hôte virtuel sécurisé, supprimez `Listen 8080` et les directives `<VirtualHost *:8080>` que vous avez ajoutées précédemment à votre hôte virtuel non sécurisé.
 
 1. Enregistrez vos modifications, quittez l’éditeur de texte, puis redémarrez Apache :
 

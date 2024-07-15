@@ -17,7 +17,7 @@ Pour Adobe Commerce dans les environnements d’infrastructure cloud, voir [Arch
 
 ## [!DNL Commerce] Diagramme d’architecture de référence
 
-La variable [!DNL Commerce] Le diagramme de l’architecture de référence représente l’approche recommandée pour la configuration d’une [!DNL Commerce] site.
+Le diagramme [!DNL Commerce] de l’architecture de référence représente l’approche recommandée pour configurer un site [!DNL Commerce] évolutif.
 
 La couleur de chaque élément du diagramme indique si l’élément fait partie de Magento Open Source ou d’Adobe Commerce et s’il est obligatoire.
 
@@ -25,15 +25,15 @@ La couleur de chaque élément du diagramme indique si l’élément fait partie
 * Les éléments gris sont facultatifs pour Magento Open Source.
 * Les éléments bleus sont facultatifs pour Adobe Commerce.
 
-![Diagramme d’architecture de référence Commerce](../assets/performance/images/ref-architecture-2.3.png)
+![ Diagramme d’architecture de référence Commerce](../assets/performance/images/ref-architecture-2.3.png)
 
 Les sections suivantes contiennent des recommandations et des considérations pour chaque section du diagramme de l’architecture de référence de Commerce.
 
 ### [!DNL Varnish]
 
-* A [!DNL Varnish] La grappe peut se développer en fonction du trafic d’un site.
+* Une grappe [!DNL Varnish] peut s’adapter au trafic d’un site.
 * Réglez la taille de l’instance en fonction du nombre de pages du cache nécessaire.
-* Sur un site à trafic élevé, utilisez un [!DNL Varnish] Principal pour garantir le vidage en cache d’une requête (au plus) par niveau web
+* Sur un site à trafic élevé, utilisez un Principal [!DNL Varnish] pour vous assurer que le vidage en cache d’une requête (au plus) par niveau web.
 
 ### Web
 
@@ -62,14 +62,14 @@ Les sections suivantes contiennent des recommandations et des considérations po
 * Envisagez d’utiliser GFS ou GlusterFS pour le stockage des pub/médias.
 * Vous pouvez également utiliser le stockage DB pour les sites à faible trafic.
 
-### Recommandé [!DNL Varnish] architecture de référence
+### Architecture de référence [!DNL Varnish] recommandée
 
-Magento prend en charge plusieurs moteurs de mise en cache de pages entières (fichier, Memcache, Redis, [!DNL Varnish]) prêtes à l’emploi, ainsi que la couverture étendue par le biais d’extensions. [!DNL Varnish] est le moteur de cache de page complète recommandé.  [!DNL Commerce] prend en charge de nombreuses [!DNL Varnish] configurations.
+Magento prend en charge plusieurs moteurs de mise en cache de page complète (File, Memcache, Redis, [!DNL Varnish]) prêts à l’emploi, ainsi qu’une couverture étendue par le biais d’extensions. [!DNL Varnish] est le moteur de cache de page complète recommandé.  [!DNL Commerce] prend en charge de nombreuses configurations [!DNL Varnish] différentes.
 
-Pour les sites qui ne nécessitent pas de disponibilité élevée, nous vous recommandons d’utiliser une [!DNL Varnish] configuration avec la terminaison SSL de Nginx.
+Pour les sites qui ne nécessitent pas de haute disponibilité, nous vous recommandons d’utiliser une configuration simple [!DNL Varnish] avec terminaison SSL Nginx.
 
-![Simple [!DNL Varnish] Configuration avec arrêt SSL](../assets/performance/images/single-varnish-with-ssl-termination.png)
+![Configuration simple [!DNL Varnish] avec arrêt SSL](../assets/performance/images/single-varnish-with-ssl-termination.png)
 
-Pour les sites qui nécessitent une haute disponibilité, nous vous recommandons d’utiliser un [!DNL Varnish] configuration avec un équilibreur de charge d’arrêt SSL.
+Pour les sites qui nécessitent une haute disponibilité, nous vous recommandons d’utiliser une configuration [!DNL Varnish] à 2 niveaux avec un équilibreur de charge d’arrêt SSL.
 
-![Haute disponibilité à deux niveaux [!DNL Varnish] configuration avec SSL mettant fin à l’équilibreur de charge](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)
+![ Configuration à deux niveaux haute disponibilité [!DNL Varnish] avec SSL arrêtant l&#39;équilibreur de charge](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)

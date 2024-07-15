@@ -1,6 +1,6 @@
 ---
-title: La variable [!UICONTROL Indexing] tab
-description: En savoir plus sur les [!UICONTROL Indexing] de [!DNL Observation for Adobe Commerce].
+title: Onglet [!UICONTROL Indexing]
+description: Découvrez l’onglet [!UICONTROL Indexing] de [!DNL Observation for Adobe Commerce].
 exl-id: c7e123b7-2d0c-49d4-9f76-128939dc02a8
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,15 +10,15 @@ ht-degree: 0%
 
 ---
 
-# La variable [!UICONTROL Indexing] tab
+# Onglet [!UICONTROL Indexing]
 
-La variable **[!UICONTROL Indexing]** tente d’expliquer les problèmes liés à l’indexation et d’identifier les causes potentielles.
+L’onglet **[!UICONTROL Indexing]** tente d’expliquer les problèmes d’indexation et d’identifier les causes potentielles.
 
 ## [!UICONTROL Core index invalidated]
 
 ![Index principal invalidé](../../assets/tools/observation-for-adobe-commerce/indexing-tab-1.jpg)
 
-La variable **[!UICONTROL Core index invalidated]** frame examine l’invalidation de l’indexation sur une période sélectionnée. Si l’indexation se produit en même temps que d’autres ressources intensives [!DNL crons], il place une charge importante sur les ressources du site.
+L’image **[!UICONTROL Core index invalidated]** examine l’invalidation de l’indexation sur une période sélectionnée. Si l’indexation se produit en même temps que d’autres [!DNL crons] gourmands en ressources, elle placera une charge importante sur les ressources du site.
 
 * `%Catalog Product Rule indexer has been invalidated%`) as `catalog_product_rule_idx_reset`
 * `%Catalog Rule Product indexer has been invalidated%`) as `catalog_rule_product_idx_reset`
@@ -36,9 +36,9 @@ La variable **[!UICONTROL Core index invalidated]** frame examine l’invalidati
 
 ## [!UICONTROL Core index rebuilds]
 
-![Recréations de l’index principal](../../assets/tools/observation-for-adobe-commerce/indexing-tab-2.jpg)
+![Reclassements de l’index principal](../../assets/tools/observation-for-adobe-commerce/indexing-tab-2.jpg)
 
-La variable **[!UICONTROL Core index rebuilds]** frame s’intéresse aux recompilations d’index principal au cours d’une période sélectionnée. Voici les chaînes analysées à partir des journaux pour indiquer la fin de la reconstruction de l’index.
+L’image **[!UICONTROL Core index rebuilds]** examine les recompilations d’index principal au cours d’une période sélectionnée. Voici les chaînes analysées à partir des journaux pour indiquer la fin de la reconstruction de l’index.
 
 * `%Catalog Product Rule index has been rebuilt%`) as `catalog_product_rule_idx`
 * `%Catalog Rule Product index has been rebuilt%`) as `catalog_rule_product_idx`
@@ -59,10 +59,10 @@ La variable **[!UICONTROL Core index rebuilds]** frame s’intéresse aux recomp
 
 ![table(s) d’index catalogsearch](../../assets/tools/observation-for-adobe-commerce/indexing-tab-3.jpg)
 
-La variable **[!UICONTROL catalogsearch index table(s)]** frame examine les tables d’index de recherche de catalogues sur une période sélectionnée. Cette requête examine la durée des opérations de banque de données par rapport aux tables comportant des `%catalogsearch%` dans le nom de la table.
+L’image **[!UICONTROL catalogsearch index table(s)]** examine les tables d’index de recherche de catalogues sur une période sélectionnée. Cette requête examine la durée des opérations de banque de données par rapport aux tables dont le nom contient `%catalogsearch%`.
 
 ## [!UICONTROL product index table(s)]
 
 ![table(s) d’index de produit](../../assets/tools/observation-for-adobe-commerce/indexing-tab-4.jpg)
 
-La variable **[!UICONTROL product index table(s)]** frame examine les tables d’index de produit sur une période sélectionnée. Cette requête examine la durée des opérations de banque de données par rapport aux tables comportant des `%product%` dans le nom de la table.
+L’image **[!UICONTROL product index table(s)]** examine les tables d’index de produit pendant une période sélectionnée. Cette requête examine la durée des opérations de banque de données par rapport aux tables dont le nom contient `%product%`.

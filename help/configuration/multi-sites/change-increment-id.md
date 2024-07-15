@@ -4,14 +4,14 @@ description: Modifiez l’ID d’incrément d’une entité de base de données 
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
 source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
 
 # Modifier l’ID d’incrément
 
-Cet article explique comment modifier l’ID d’incrément d’une entité de base de données Commerce (commande, facture, note de crédit, etc.) sur une boutique Commerce spécifique à l’aide de la variable `ALTER TABLE` Instruction SQL.
+Cet article explique comment modifier l’ID d’incrément d’une entité de base de données Commerce (DB) (commande, facture, note de crédit, etc.) sur un magasin Commerce particulier à l’aide de l’instruction SQL `ALTER TABLE`.
 
 ## Versions affectées
 
@@ -28,14 +28,14 @@ Vous devrez peut-être modifier l’ID d’incrément pour les nouvelles entité
 
 >[!INFO]
 >
->Vous pouvez également résoudre le problème de passerelle de paiement pour PayPal en autorisant plusieurs paiements par identifiant de facture dans les préférences de réception des paiements de PayPal. Voir [Demande de rejet de la passerelle PayPal - problème de facture en double](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) dans le _Base de connaissances_.
+>Vous pouvez également résoudre le problème de passerelle de paiement pour PayPal en autorisant plusieurs paiements par identifiant de facture dans les préférences de réception des paiements de PayPal. Voir [Demande de refus de la passerelle PayPal - problème de facture en double](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) dans la _base de connaissances_.
 
 ## Étapes préalables
 
 1. Recherchez les magasins et les entités pour lesquels le nouvel ID d’incrément doit être modifié.
 1. Connectez-vous à votre base de données MySQL.
 Pour Adobe Commerce sur l’infrastructure cloud, vous devez d’abord vous connecter à votre environnement à l’aide de SSH.
-1. Vérifier la variable actuelle `auto_increment` valeur de la table de séquence d’entités à l’aide de la requête suivante :
+1. Vérifiez la valeur `auto_increment` actuelle de la table de séquence d’entités à l’aide de la requête suivante :
 
    ```sql
    SHOW TABLE STATUS FROM `{database_name}` WHERE `name` LIKE 'sequence_{entity_type}_{store_id}';
@@ -43,7 +43,7 @@ Pour Adobe Commerce sur l’infrastructure cloud, vous devez d’abord vous conn
 
 Si vous cochez une incrémentation automatique pour une commande sur le magasin avec ID=1, le nom de la table sera &#39;sequence_order_1&#39;.
 
-Si la valeur de la variable `auto_increment` est 1234, la commande suivante placée dans le magasin avec `ID=1` aura l&#39;identifiant &#39;#100001234&#39;.
+Si la valeur de la colonne `auto_increment` est &#39;1234&#39;, l’identifiant &#39;#100001234&#39; sera ajouté à l’ordre suivant placé dans le magasin avec `ID=1`.
 
 ## Mettre à jour l’entité pour modifier l’ID d’incrément
 
@@ -63,14 +63,14 @@ Après avoir exécuté la requête suivante :
 ALTER TABLE sequence_order_1 AUTO_INCREMENT = 2000;
 ```
 
-La commande suivante placée dans le magasin avec `ID=1` aura l&#39;identifiant &#39;#100002000&#39;.
+La commande suivante placée dans le magasin avec `ID=1` aura l’identifiant &quot;#100002000&quot;.
 
 ## Autres étapes recommandées pour les environnements de production cloud
 
-Avant d’exécuter la fonction `ALTER TABLE` sur un environnement de production d’Adobe Commerce sur l’infrastructure cloud, il est vivement recommandé d’effectuer les étapes suivantes :
+Avant d’exécuter la requête `ALTER TABLE` sur un environnement de production d’Adobe Commerce sur l’infrastructure cloud, nous vous recommandons vivement d’effectuer les étapes suivantes :
 
 - Testez l’ensemble de la procédure de modification de l’identifiant d’incrément dans votre environnement d’évaluation.
-- [Création d’une sauvegarde de base de données] pour restaurer la base de données de production en cas d’échec
+- [Créez une sauvegarde de base de données] pour restaurer la base de données de production en cas d’échec
 
 <!-- Link Definitions -->
 

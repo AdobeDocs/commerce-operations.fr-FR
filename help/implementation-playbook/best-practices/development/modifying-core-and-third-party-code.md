@@ -4,7 +4,8 @@ description: Découvrez comment et à quel moment modifier le code Adobe Commerc
 role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2023-12-8
-source-git-commit: ab02552939d595627f0de83b8508c7cd21777642
+exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1
+source-git-commit: d47567a8d69ccdae3db01e964f1db12e8ae26717
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 0%
@@ -46,7 +47,7 @@ index 51b68411d40..ac4a3468322 100644
 
 #### Modifications possibles avec un correctif
 
-N&#39;importe quoi. Littéralement, tout caractère d’un fichier ciblé peut être modifié. Les correctifs ne sont pas limités à un type de fichier ou à un langage de code particulier. En règle générale, vous utilisez un correctif pour cibler des fichiers dans le `vendor` répertoire . 
+N&#39;importe quoi. Littéralement, tout caractère d’un fichier ciblé peut être modifié. Les correctifs ne sont pas limités à un type de fichier ou à un langage de code particulier. En règle générale, vous utilisez un correctif pour cibler des fichiers dans le répertoire `vendor`. 
 
 #### Quand utiliser un correctif
 
@@ -69,7 +70,7 @@ Notez que (généralement) la nouvelle classe PHP remplaçant la classe PHP d’
 
 #### Déclarer une préférence
 
-Il est assez simple de déclarer une préférence. Une seule ligne de code doit être ajoutée à une `di.xml` dans un module. Cela peut être effectué globalement ou dans n’importe quelle &quot;zone&quot; Adobe Commerce, telle que `frontend`, `adminhtml`, `graphql`, `webapi_rest`, et `crontab`.
+Il est assez simple de déclarer une préférence. Une seule ligne de code doit être ajoutée à un fichier `di.xml` dans un module. Cela peut être effectué globalement ou dans n’importe quelle &quot;zone&quot; Adobe Commerce, par exemple `frontend`, `adminhtml`, `graphql`, `webapi_rest` et `crontab`.
 
 ```xml
 <preference for="Magento\Elasticsearch7\SearchAdapter\Adapter" type="Vendor\Namespace\Adapter\AlgoliaElasticSearch7Adapter"/>
@@ -105,11 +106,11 @@ Les préférences sont un moyen gourmand de modifier le code et ne doivent être
 
 Un observateur est le concept d’un écouteur d’événement, comme on le trouve dans de nombreuses applications, plateformes, bibliothèques et langages de codage. Le concept n’est pas propre à la plateforme Adobe Commerce. Les observateurs sont intégrés à la plateforme depuis l’époque de Magento 1 et sont considérés comme un choix principal de la modification du code principal et du code tiers. 
 
-Le code base principal et tout module tiers peuvent distribuer un événement à un emplacement donné dans le code. L&#39;observateur, qui est déclaré dans un `events.xml` et écoute l’événement distribué par son nom, peut fonctionner à un niveau global ou être limité à toute &quot;zone&quot; Adobe Commerce, telle que `frontend`, `adminhtml`, `graphql`, `webapi_rest`, et `crontab`.
+Le code base principal et tout module tiers peuvent distribuer un événement à un emplacement donné dans le code. L’observateur, qui est déclaré dans un fichier `events.xml` et qui écoute l’événement distribué par nom, peut travailler à un niveau global ou être limité à n’importe quelle &quot;zone&quot; Adobe Commerce, telle que `frontend`, `adminhtml`, `graphql`, `webapi_rest` et `crontab`.
 
 #### Comment déclarer un observateur
 
-Les observateurs peuvent être configurés dans une zone globale ou spécifique. `events.xml` fichier .
+Les observateurs peuvent être configurés dans un fichier `events.xml` global ou spécifique à une zone.
 
 ```xml
     <event name="sales_model_service_quote_submit_before">
@@ -164,11 +165,11 @@ En outre, un autre facteur limitatif pour les observateurs est que l’événeme
 
 ### Module externe
 
-Un module externe est un concept flexible introduit dans la plateforme Adobe Commerce. Il vous permet d’intercepter, de remplacer et de modifier toutes les méthodes PHP publiques. Les plug-ins vous permettent de modifier les arguments d’une méthode avant l’exécution de la méthode ciblée, de modifier le résultat après l’exécution de la méthode ciblée ou de remplacer entièrement la méthode ciblée. Vous pouvez modifier de nombreuses méthodes d’une classe PHP ciblée dans un seul fichier de module externe. Vous pouvez également utiliser la variable `$subject` pour exécuter toutes les méthodes publiques qui existent dans la classe PHP ciblée.
+Un module externe est un concept flexible introduit dans la plateforme Adobe Commerce. Il vous permet d’intercepter, de remplacer et de modifier toutes les méthodes PHP publiques. Les plug-ins vous permettent de modifier les arguments d’une méthode avant l’exécution de la méthode ciblée, de modifier le résultat après l’exécution de la méthode ciblée ou de remplacer entièrement la méthode ciblée. Vous pouvez modifier de nombreuses méthodes d’une classe PHP ciblée dans un seul fichier de module externe. Vous pouvez également utiliser l’argument `$subject` pour exécuter toutes les méthodes publiques existant dans la classe PHP ciblée.
 
 #### Comment déclarer un module externe
 
-Les modules externes peuvent être configurés dans une zone globale ou spécifique à une zone. `di.xml` fichier .
+Les modules externes peuvent être configurés dans un fichier `di.xml` global ou spécifique à une zone.
 
 ```xml
     <type name="Magento\Catalog\Api\CategoryRepositoryInterface">

@@ -3,13 +3,13 @@ title: Bonnes pratiques relatives à l’examen du code
 description: Découvrez les bonnes pratiques de révision du code pour la phase de développement des projets Adobe Commerce.
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1161'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques relatives à la révision du code pour Adobe Commerce
 
@@ -49,7 +49,7 @@ Tenez également compte des points suivants lors de l’implémentation des proc
 
 Le style peut être testé automatiquement en exécutant l’inspection PhpStorm (voir ci-dessous).
 
-Assurez-vous de configurer [PHPMD et PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) et pour exécuter la fonction [Codage standard](https://github.com/magento/magento-coding-standard) de l’interface en ligne de commande (également ci-dessous). Il existe un certain chevauchement, mais les deux présentent également des tests uniques.
+Veillez à configurer [PHPMD et PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) et à exécuter l’outil [Coding Standard](https://github.com/magento/magento-coding-standard) à partir de l’interface de ligne de commande (également ci-dessous). Il existe un certain chevauchement, mais les deux présentent également des tests uniques.
 
 ### Convention et structure
 
@@ -69,7 +69,7 @@ Les révisions pour l’exhaustivité sont effectuées manuellement.
 
 - Le code peut-il être activé ou désactivé par la configuration et tout le code nécessaire se comporte-t-il comme prévu ?
 - Est-ce que toute la configuration mentionnée dans le ticket est présente ? Vérifiez la portée, le type de données, la validation, la traduction et les valeurs par défaut.
-- La configuration est-elle toujours récupérée au niveau le plus bas possible (niveau d’affichage de la boutique, niveau du site web ou niveau global) ? La récupération de configuration doit correspondre à la définition de la portée dans la variable `system.xml` fichier .
+- La configuration est-elle toujours récupérée au niveau le plus bas possible (niveau d’affichage de la boutique, niveau du site web ou niveau global) ? La récupération de la configuration doit correspondre à la définition de la portée dans le fichier `system.xml`.
 - Tous les chemins dans le diagramme de flux de la spécification technique sont-ils pris en compte ? Toutes les autres spécifications techniques sont-elles couvertes ?
 - Les listes de contrôle d’accès sont-elles définies pour la nouvelle fonctionnalité ?
 - PhpDocs est-il clair ? Les messages de validation sont-ils clairs ?
@@ -80,14 +80,14 @@ Les révisions pour l’exhaustivité sont effectuées manuellement.
 Les révisions des performances sont effectuées manuellement, ce qui peut être aidé par l’exécution du code en cas de doute.
 
 - Les requêtes sont-elles exécutées dans une boucle ? Cette boucle peut se trouver en dehors des fichiers modifiés.
-- Pouvez-vous repérer n&#39;importe lequel ? `cachable="false"` attributs ? Sont-elles correctement appliquées ?
+- Pouvez-vous repérer n’importe quel attribut `cachable="false"` ? Sont-elles correctement appliquées ?
 
 ### Sécurité
 
 Les révisions pour la sécurité sont effectuées manuellement, ce qui peut être aidé par la recherche de texte. Une partie de la vérification de sécurité est gérée par des tests automatisés.
 
 - Les exceptions sont-elles consignées si nécessaire ? Les types d’exceptions appropriés sont-ils utilisés ?
-- Peut `around` les modules externes doivent être évités ?
+- Les modules externes `around` peuvent-ils être évités ?
 - Les modules externes renvoient-ils les types de données corrects ?
 - Pouvez-vous trouver des requêtes SQL brutes qui doivent être créées à l’aide de la couche d’abstraction de base de données ?
 - Un nouveau type de données est-il exposé à tout type d’utilisateur, d’administrateur ou de frontal ? Cette exposition présente-t-elle un risque pour la sécurité ?
@@ -95,7 +95,7 @@ Les révisions pour la sécurité sont effectuées manuellement, ce qui peut êt
 
 ### Confidentialité et RGPD
 
-Révisions pour la confidentialité et [RGPD](../../../security-and-compliance/privacy/gdpr.md) sont effectuées manuellement.
+Les révisions pour la confidentialité et le [RGPD](../../../security-and-compliance/privacy/gdpr.md) sont effectuées manuellement.
 
 - Le code traite-t-il les données ou les e-mails des clients ? Faites attention.
 - Si ce code peut être exécuté dans une boucle, peut-il laisser passer les données client d’un cycle de boucle à un autre ?
@@ -131,19 +131,19 @@ Les développeurs peuvent utiliser l’automatisation pour passer en revue la co
   bin/magento deploy:mode:set developer || exit;
   ```
 
-- Schéma de base de données `whitelist.json`: exécutez la commande d’interface de ligne de commande suivante et validez que la variable `db_schema_whitelist.json` n’est pas ajouté ni modifié.
+- Schéma de base de données `whitelist.json` : exécutez la commande d’interface de ligne de commande suivante et vérifiez que le fichier `db_schema_whitelist.json` n’a pas été ajouté ni modifié.
 
   ```bash
   bin/magento setup:db-declaration:generate-whitelist --module-name[=MODULE-NAME]
   ```
 
-- Composer validate : validation de la variable `composer.json` en exécutant la commande d’interface de ligne de commande suivante dans le répertoire contenant la variable `composer.json` fichier .
+- Composer validate : validez le fichier `composer.json` en exécutant la commande d’interface de ligne de commande suivante dans le répertoire contenant le fichier `composer.json`.
 
   ```bash
   composer validate
   ```
 
-- Coding standard : installez et exécutez l’outil Coding Standard et exécutez-le par rapport à votre module. Le fichier suivant montre comment l’exécuter n’importe où en saisissant `mcs ./app/code/Vendor/Module/`.
+- Coding standard : installez et exécutez l’outil Coding Standard et exécutez-le par rapport à votre module. Le fichier suivant montre comment l’exécuter n’importe où en tapant `mcs ./app/code/Vendor/Module/`.
 
   ```bash
   #!/usr/bin/env bash

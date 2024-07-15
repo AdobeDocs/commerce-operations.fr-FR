@@ -38,7 +38,7 @@ Pour de meilleures performances, suivez les instructions ci-après pour gérer l
 
 Utilisez les stratégies suivantes pour gérer le nombre d’articles du panier :
 
-- Divisez les commandes en plusieurs commandes plus petites avec un plus petit nombre de lignes à l’aide de la fonction [!UICONTROL Add Item by SKU] fonction .
+- Divisez les commandes en plusieurs commandes plus petites avec un plus petit nombre de lignes à l’aide de la fonction [!UICONTROL Add Item by SKU].
 - Ajoutez uniquement la logique personnalisée et la personnalisation du panier nécessaires au chargement d’une liste d’éléments.
 
 ## Limites de catégorie
@@ -100,7 +100,7 @@ Supprimez les ensembles d’attributs de produit inutilisés à l’aide de MySQ
 
 #### Vérification de la configuration des jeux d’attributs
 
-1. [Connexion à la base de données du site](https://devdocs.magento.com/cloud/project/services-mysql.html#connect-to-the-database).
+1. [Connectez-vous à la base de données du site](https://devdocs.magento.com/cloud/project/services-mysql.html#connect-to-the-database).
 
 1. Recherche du nombre de jeux d’attributs à l’aide de MySQL
 
@@ -112,7 +112,7 @@ Supprimez les ensembles d’attributs de produit inutilisés à l’aide de MySQ
 
 ### Impact potentiel sur les performances
 
-Configuration de plusieurs **attributs de produit** augmente la taille du modèle de produit pour chaque produit (structure de test de performance) et la quantité de données à récupérer. Cette augmentation affecte les opérations de la manière suivante :
+La configuration de nombreux **attributs de produit** augmente la taille du modèle de produit pour chaque produit (structure de fichier EAV) et la quantité de données à récupérer. Cette augmentation affecte les opérations de la manière suivante :
 
 - Augmentation du trafic de requêtes SQL lié à la récupération des données par les VEC et de la quantité de données traitées, ce qui entraîne une diminution du débit de base de données
 - Augmentation significative de la taille des index Adobe Commerce et de l’index de recherche de texte intégral
@@ -125,7 +125,7 @@ L’augmentation des données de produit et des tailles d’index peut affecter 
 - La fonctionnalité des actions en masse de produit peut être bloquée.
 - Le temps de reconstruction des index pour les catalogues de taille moyenne et grande ne peut pas être réalisé quotidiennement en raison de longues heures d’exécution.
 
-Configuration de plusieurs **options d’attribut** peut affecter les performances du site de la manière suivante :
+La configuration de nombreuses **options d’attribut** peut affecter les performances du site de la manière suivante :
 
 - Longs délais de demande et de rendu sur les pages de détails du produit (PDP) et des catégories contenant des produits complexes.
 - Le temps de réponse des opérations d’enregistrement des produits d’administration augmente au-dessus des cibles de performances optimales.
@@ -155,7 +155,7 @@ Utilisez les stratégies suivantes pour réduire le nombre d’options de produi
 
 La configuration de nombreuses options de produit augmente la quantité de données récupérées pour chaque produit pour toutes les opérations de lecture et d’écriture, ce qui entraîne :
 
-- Augmentation du trafic de requêtes SQL et augmentation du trafic `JOIN` augmente le débit de la base de données.
+- L’augmentation du trafic des requêtes SQL et des opérations `JOIN` plus lourdes augmentent le débit de la base de données.
 - Taille accrue des index Adobe Commerce et de l’index de recherche en texte intégral.
 
 Les augmentations répertoriées ci-dessus peuvent affecter les performances du site de la manière suivante :
@@ -177,9 +177,9 @@ L’affichage d’un trop grand nombre de produits par page peut affecter les pe
 
 ### Mettre à jour la configuration de la liste de produits
 
-Si une catégorie contient trop de produits, mettez à jour la configuration du catalogue storefront pour désactiver l’option sur **Autoriser tous les produits par page**.
+Si vous avez trop de produits dans une catégorie, mettez à jour la configuration du catalogue storefront pour désactiver l’option **Autoriser tous les produits par page**.
 
-Après avoir désactivé cette option, Adobe Commerce utilise les commandes de pagination storefront de la liste de produits pour gérer le nombre de produits qui s’affichent dans les composants storefront. Pour obtenir des instructions, voir [Configuration des contrôles de pagination](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
+Après avoir désactivé cette option, Adobe Commerce utilise les commandes de pagination storefront de la liste de produits pour gérer le nombre de produits qui s’affichent dans les composants storefront. Pour obtenir des instructions, voir [Configuration des commandes de pagination](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
 ## Limites de SKU du produit
 
@@ -205,7 +205,7 @@ Utilisez les stratégies suivantes pour réduire le nombre de produits (SKU) :
    - Réduire le nombre de SKU en réduisant le nombre de sites web, de groupes de clients, de catalogues partagés, de produits ou d’options de produits configurables
 - Fournissez d’autres variations de produit en utilisant des options personnalisées au lieu de créer des produits distincts.
 - Prise en compte du fait qu’un SKU effectif peut inclure un certain nombre de permutation de prix potentielles, car les prix peuvent être spécifiés différemment selon chaque magasin ou groupe de clients.
-- Désactivez ou supprimez les composants système inutilisés tels que les modules. Voir  [Désinstallation des modules](../../../installation/tutorials/uninstall-modules.md).
+- Désactivez ou supprimez les composants système inutilisés tels que les modules. Voir [Désinstallation des modules](../../../installation/tutorials/uninstall-modules.md).
 - Gérez les produits dans un système de gestion de plateforme externe (PMS).
 
 ## Variations de produit
@@ -261,4 +261,4 @@ Le fait d’avoir plus que le nombre maximal recommandé de règles de prix de p
 - Amélioration du temps de réponse lorsque des produits sont ajoutés au panier.
 - Amélioration du temps de chargement et du rendu du minicart.
 - Augmentation du temps pour le rendu de la page de panier.
-- Augmentation du temps pour le rendu de la variable **Totaux** sur la page Passage en caisse .
+- Accélération accrue pour le rendu du bloc **Totaux** sur la page Passage en caisse.

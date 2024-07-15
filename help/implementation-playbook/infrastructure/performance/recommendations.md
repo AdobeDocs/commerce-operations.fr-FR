@@ -18,7 +18,7 @@ Même si l’optimisation des performances peut provenir de nombreux aspects, ce
 
 >[!TIP]
 >
->Voir [_Guide des bonnes pratiques relatives aux performances_](../../../performance/overview.md) pour plus d’informations sur l’optimisation des performances.
+>Pour plus d’informations sur l’optimisation des performances, consultez le [_Guide des bonnes pratiques de performances_](../../../performance/overview.md) .
 
 ## Infrastructure
 
@@ -38,9 +38,9 @@ L’emplacement du centre de données affecte la latence web des utilisateurs fr
 
 ### Bande passante réseau
 
-Une bande passante réseau suffisante est l’une des principales exigences pour l’échange de données entre les noeuds web, les bases de données, les serveurs de mise en cache/session et d’autres services.
+Une bande passante réseau suffisante est l’une des principales exigences pour l’exchange des données entre les noeuds web, les bases de données, les serveurs de mise en cache/session et d’autres services.
 
-Étant donné qu’Adobe Commerce utilise efficacement la mise en cache pour des performances élevées, votre système peut échanger activement des données avec des serveurs de mise en cache tels que Redis. Si Redis est installé sur un serveur distant, vous devez fournir un canal réseau suffisant entre les noeuds web et le serveur de mise en cache pour éviter les goulets d’étranglement lors des opérations de lecture/écriture.
+Comme Adobe Commerce utilise la mise en cache pour des performances élevées, votre système peut activement exchange des données avec des serveurs de mise en cache tels que Redis. Si Redis est installé sur un serveur distant, vous devez fournir un canal réseau suffisant entre les noeuds web et le serveur de mise en cache pour éviter les goulets d’étranglement lors des opérations de lecture/écriture.
 
 ### Système d’exploitation
 
@@ -58,11 +58,11 @@ N[Cores] = (N [Expected Requests] / 2) + N [Expected Cron Processes])
 
 L’optimisation de ces paramètres dépend des résultats des tests de performance pour différents projets.
 
-- **ByteCode**: pour tirer le meilleur parti d’Adobe Commerce avec PHP 7, vous devez activer la fonction `opcache` et configurez-le correctement.
+- **ByteCode** : pour tirer le meilleur parti d’Adobe Commerce sur PHP 7, vous devez activer le module `opcache` et le configurer correctement.
 
-- **APCU**: Adobe recommande d’activer l’extension APCu PHP et de configurer le compositeur afin d’optimiser les performances. Cette extension met en cache les emplacements de fichiers pour les fichiers ouverts, ce qui augmente les performances des appels au serveur Adobe Commerce, y compris les pages, les appels Ajax et les points de fin.
+- **APCU** : Adobe recommande d’activer l’extension APCu PHP et de configurer le compositeur afin d’optimiser les performances. Cette extension met en cache les emplacements de fichiers pour les fichiers ouverts, ce qui augmente les performances des appels au serveur Adobe Commerce, y compris les pages, les appels Ajax et les points de fin.
 
-- **Realpath_cacheconfiguration**: optimisation `realpath_cache` permet aux processus PHP de mettre en cache les chemins d’accès aux fichiers au lieu de les rechercher chaque fois qu’une page est chargée.
+- **Realpath_cacheconfiguration** : l’optimisation de `realpath_cache` permet aux processus PHP de mettre en cache les chemins d’accès aux fichiers au lieu de les rechercher chaque fois qu’une page est chargée.
 
 ### Serveur web
 
@@ -80,7 +80,7 @@ Ce document ne fournit pas d’instructions d’optimisation MySQL détaillées,
 
 La base de données Adobe Commerce (et toute autre base de données) est sensible à la quantité de mémoire disponible pour le stockage des données et des index. Pour utiliser efficacement l’indexation des données MySQL, la quantité de mémoire disponible doit être, au minimum, proche de la moitié de la taille des données stockées dans la base de données.
 
-Optimisez les `innodb_buffer_pool_instances` pour éviter des problèmes liés à plusieurs threads tentant d’accéder à la même instance. La valeur de la variable `max_connections` doit correspondre au nombre total de threads PHP configurés dans le serveur d’applications. Utilisez la formule suivante pour calculer la meilleure valeur pour `innodb-thread-concurrency`:
+Optimisez le paramètre `innodb_buffer_pool_instances` pour éviter les problèmes liés à plusieurs threads tentant d’accéder à la même instance. La valeur du paramètre `max_connections` doit correspondre au nombre total de threads PHP configurés dans le serveur d’applications. Utilisez la formule suivante pour calculer la meilleure valeur pour `innodb-thread-concurrency` :
 
 ```
 innodb-thread-concurrency = 2 * (NumCPUs+NumDisks)
@@ -94,7 +94,7 @@ La mémoire des redis doit être suffisante pour contenir tous les autres caches
 
 ### Mise en cache des pages
 
-Adobe recommande vivement d’utiliser le vernis pour le cache de page complet sur votre boutique Adobe Commerce. La variable `PageCache` est toujours présent dans le code base, mais il doit être utilisé à des fins de développement uniquement.
+Adobe recommande vivement d’utiliser le vernis pour le cache de page complet sur votre boutique Adobe Commerce. Le module `PageCache` est toujours présent dans le code base, mais il doit être utilisé à des fins de développement uniquement.
 
 Installez Varnish sur un serveur distinct devant le niveau web. Il doit accepter toutes les requêtes entrantes et fournir des copies de page mises en cache. Pour permettre à Varnish de fonctionner efficacement avec les pages sécurisées, un proxy de terminaison SSL peut être placé devant Varnish. Nginx peut être utilisé à cet effet.
 
@@ -126,7 +126,7 @@ Il existe une section distincte dédiée à [headless](../../architecture/enterp
 
 ### Conserver Adobe Commerce mise à jour
 
-Adobe Commerce offre toujours de meilleures performances lors de l’exécution de la dernière version. Même s’il n’est pas possible de tenir Adobe Commerce à jour après chaque publication d’une nouvelle version, il est toujours recommandé de [upgrade](../../../upgrade/overview.md) lorsqu’Adobe Commerce introduit des optimisations de performances significatives.
+Adobe Commerce offre toujours de meilleures performances lors de l’exécution de la dernière version. Même s’il n’est pas possible de tenir Adobe Commerce à jour après chaque publication de nouvelle version, il est toujours recommandé de [mettre à niveau](../../../upgrade/overview.md) lorsqu’Adobe Commerce introduit des optimisations de performances significatives.
 
 Par exemple, en 2020, Adobe a publié une optimisation de la couche Redis, corrigeant de nombreuses inefficacités, problèmes de connexion et transferts inutiles de données entre Redis et Adobe Commerce. Les performances globales entre la version 2.3 et la version 2.4 sont de nuit et de jour et fournissent des améliorations significatives dans le panier, le passage en caisse et les utilisateurs simultanés, simplement en raison de l’optimisation de Redis.
 

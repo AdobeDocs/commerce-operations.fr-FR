@@ -21,26 +21,26 @@ Aurora est un serveur MySQL hautement performant et entièrement compatible héb
 
 Utiliser Aurora comme base de données est aussi simple que de spécifier la base de données dans la configuration standard d&#39;Adobe Commerce, à l&#39;aide du connecteur de base de données par défaut.
 
-En cours d’exécution `bin/magento setup:install`, utilisez les informations Aurora dans la variable `db-` fields :
+Lors de l’exécution de `bin/magento setup:install`, utilisez les informations Aurora dans les champs `db-` :
 
 ```bash
 bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws.com' --db-name='magento2' --db-user='username' --db-password='password' ...
 ```
 
-La variable `db-host` est l’URL de l’Aurora avec la variable `https://` et à la fin `:portnumber`  supprimé.
+La valeur `db-host` est l’URL de l’Aurora dont `https://` et `:portnumber` de fin ont été supprimés.
 
 ## Configurer une connexion à une base de données distante
 
 >[!NOTE]
 >
->Il s’agit d’une rubrique avancée qui ne doit être utilisée que par un administrateur réseau ou un administrateur de base de données expérimenté. Vous devez avoir `root` accéder au système de fichiers et vous devez pouvoir vous connecter à MySQL en tant que `root`.
+>Il s’agit d’une rubrique avancée qui ne doit être utilisée que par un administrateur réseau ou un administrateur de base de données expérimenté. Vous devez disposer de `root` accès au système de fichiers et vous devez pouvoir vous connecter à MySQL en tant que `root`.
 
 ### Conditions préalables
 
 Avant de commencer, vous devez :
 
-* [Installation du serveur MySQL](mysql.md) sur le serveur de base de données.
-* [Créer une instance de base de données](mysql.md#configuring-the-database-instance) sur le serveur de base de données.
+* [Installez MySQL Server](mysql.md) sur le serveur de base de données.
+* [Créez une instance de base de données](mysql.md#configuring-the-database-instance) sur le serveur de base de données.
 * Installez le client MySQL sur votre noeud web Adobe Commerce. Pour plus d’informations, consultez la documentation MySQL .
 
 ### Haute disponibilité
@@ -50,7 +50,7 @@ Suivez les instructions suivantes pour configurer les connexions à une base de 
 * Vous devez configurer une connexion pour chaque noeud de serveur web.
 * En règle générale, vous configurez une connexion de base de données à l’équilibreur de charge de la base de données. Toutefois, la mise en grappe de la base de données peut être complexe et vous pouvez la configurer. Adobe ne fait aucune recommandation spécifique pour la mise en grappe de la base de données.
 
-  Pour plus d’informations, voir [Documentation MySQL](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  Pour plus d’informations, voir la [documentation MySQL](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 
 ### Résolution des problèmes de connexion
 
@@ -60,7 +60,7 @@ Si vous rencontrez des problèmes de connexion à l’un des hôtes, commencez p
 
 Pour créer une connexion distante :
 
-1. Sur votre serveur de base de données, en tant qu’utilisateur avec `root` , ouvrez votre fichier de configuration MySQL.
+1. Sur votre serveur de base de données, en tant qu’utilisateur disposant des privilèges `root`, ouvrez votre fichier de configuration MySQL.
 
    Pour le localiser, saisissez la commande suivante :
 
@@ -79,17 +79,17 @@ Pour créer une connexion distante :
    >
    >Sur Ubuntu 16, le chemin est généralement `/etc/mysql/mysql.conf.d/mysqld.cnf`.
 
-1. Recherchez dans le fichier de configuration pour `bind-address`.
+1. Recherchez le fichier de configuration `bind-address`.
 
    Si elle existe, modifiez la valeur comme suit.
 
-   S’il n’existe pas, ajoutez-le à la variable `[mysqld]` .
+   S’il n’existe pas, ajoutez-le à la section `[mysqld]`.
 
    ```conf
    bind-address = <ip address of your web node>
    ```
 
-   Voir [Documentation MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html), en particulier si vous disposez d’un serveur web en grappe.
+   Voir la [documentation MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html), en particulier si vous disposez d’un serveur web en grappe.
 
 1. Enregistrez vos modifications dans le fichier de configuration et quittez l’éditeur de texte.
 1. Redémarrez le service MySQL :
@@ -100,18 +100,18 @@ Pour créer une connexion distante :
 
    >[!NOTE]
    >
-   >Si MySQL ne démarre pas, recherchez la source du problème dans syslog. Résolvez le problème à l’aide de [Documentation MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) ou une autre source faisant autorité.
+   >Si MySQL ne démarre pas, recherchez la source du problème dans syslog. Résolvez le problème à l’aide de la [documentation MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) ou d’une autre source de référence.
 
 ## Accorder l’accès à un utilisateur de base de données
 
 Pour permettre à votre noeud web de se connecter au serveur de base de données, vous devez accorder à un utilisateur de base de données de noeud web l’accès à la base de données sur le serveur distant.
 
-Cet exemple accorde au `root` accès complet de l’utilisateur à la base de données sur l’hôte distant.
+Cet exemple donne à l’utilisateur de la base de données `root` un accès complet à la base de données sur l’hôte distant.
 
 Pour accorder l’accès à un utilisateur de la base de données :
 
 1. Connectez-vous au serveur de base de données.
-1. Connectez-vous à la base de données MySQL en tant que `root` utilisateur.
+1. Connectez-vous à la base de données MySQL en tant qu’utilisateur `root`.
 1. Saisissez la commande suivante :
 
    ```shell
@@ -155,8 +155,8 @@ Si votre serveur web est en grappe, saisissez la commande sur chaque hôte de se
 
 Lorsque vous installez Adobe Commerce, vous devez indiquer les informations suivantes :
 
-* L’URL de base (également appelée *adresse du magasin*) indique le nom d’hôte ou l’adresse IP du *noeud web*
-* L’hôte de base de données est *serveur de base de données distant* Adresse IP (ou équilibreur de charge si le serveur de base de données est en cluster)
-* Le nom d’utilisateur de la base de données est *noeud web local* utilisateur de base de données auquel vous avez donné accès
+* L’URL de base (également appelée *adresse de magasin*) spécifie le nom d’hôte ou l’adresse IP du *noeud web*
+* L’hôte de base de données est l’adresse IP du *serveur de base de données distant* (ou équilibreur de charge si le serveur de base de données est en grappe).
+* Le nom d’utilisateur de la base de données est l’utilisateur de base de données *noeud web local* auquel vous avez donné accès.
 * Mot de passe de la base de données est le mot de passe de l’utilisateur du noeud web local.
 * Le nom de la base de données est le nom de la base de données sur le serveur distant

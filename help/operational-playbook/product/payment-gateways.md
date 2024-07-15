@@ -5,7 +5,7 @@ exl-id: eab50191-0744-41da-99ba-2e06ea61da27
 feature: Best Practices, Payments
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Il fut un temps où l&#39;argent liquide était la principale source de transactions, mais le monde en ligne a pris le dessus et les méthodes de paiement en ligne remplacent les anciennes méthodes de paiement. Tout est maintenant en ligne, ce qui rend les choses plus faciles et plus accessibles, y compris les cartes de crédit, les portefeuilles électroniques et les virements bancaires.
 
-![Logs du fournisseur de passerelle de paiement](../../assets/playbooks/payment-gateways.png)
+![ Loggos du fournisseur de passerelle de paiement ](../../assets/playbooks/payment-gateways.png)
 
 Une passerelle de paiement est un fournisseur de services qui connecte et traite les paiements pour les sites web de commerce électronique. Ils jouent un rôle essentiel dans les taux d’expérience d’achat et de conversion des clients. Les systèmes de paiement compliqués ont tendance à pousser les clients à abandonner leur panier. Il est important de fournir aux clients un système de paiement facile et convivial où même si un mode de paiement échoue, ils disposent d’une autre méthode pour les motiver à effectuer l’achat.
 
@@ -43,7 +43,8 @@ Lorsqu’une entreprise décide d’intégrer une passerelle de paiement à sa p
 
 Les entreprises B2B et B2C ont des systèmes de paiement similaires, mais les entreprises B2B ont plus de règles, de réglementations et de processus. Les entreprises B2B ont tendance à traiter des volumes plus importants par rapport aux entreprises B2C.
 
-Les clients B2C achètent des produits ou des services à usage individuel. Les clients paient généralement le même prix que les autres clients et il n’y a pas de négociation en cause. Les clients B2B incluent divers intervenants, ce qui rend l’approbation plus complexe et plus coûteuse.
+Les clients B2C achètent des produits ou des services à usage individuel. Les clients paient généralement le même prix que les autres clients et il n’y a pas de négociation en cause. Les clients B2B incluent divers
+les parties prenantes, ce qui rend l’approbation plus complexe et plus coûteuse.
 
 Les clients B2B ont des commandes et des exigences différentes, qui doivent être traitées et approuvées par le représentant commercial ou un représentant commercial doit être impliqué lorsqu’un client achète en ligne à l’aide d’une demande de proposition (RFP) ou d’un bon de commande (PO).
 

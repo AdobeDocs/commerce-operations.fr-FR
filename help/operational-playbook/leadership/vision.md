@@ -1,5 +1,5 @@
 ---
-title: Vision du commerce
+title: Vision Commerce
 description: Inspirez votre équipe en établissant une vision pour votre projet Adobe Commerce.
 exl-id: 0eed719a-50fe-4ed7-9838-ec51d9b222b4
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776

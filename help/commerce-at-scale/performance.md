@@ -6,20 +6,20 @@ feature: Integration, Cache
 topic: Commerce, Performance
 source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
-source-wordcount: '2248'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
 
 # Optimisation des performances AEM
 
-Le Dispatcher AEM est un proxy inverse qui permet de fournir un environnement à la fois rapide et dynamique. Il fait partie d’un serveur de HTML statique, tel que Apache HTTP Server, dans le but de stocker (ou de &quot;mettre en cache&quot;) la plus grande partie du contenu du site sous la forme de ressources statiques possible. Cette approche vise à minimiser la nécessité d’accéder autant que possible à la fonctionnalité de rendu de page d’AEM et au service GraphQL Adobe Commerce. Le fait de traiter la plupart des pages en tant que HTML statique, CSS et JS offre des avantages en termes de performances aux utilisateurs et réduit les exigences d’infrastructure dans l’environnement. Toute page ou requête susceptible d’être répétée de manière identique d’un utilisateur à l’autre doit être prise en compte pour la mise en cache.
+Le Dispatcher AEM est un proxy inverse qui permet de fournir un environnement à la fois rapide et dynamique. Il fonctionne comme faisant partie d’un serveur d’HTML statique, tel que Apache HTTP Server, dans le but de stocker (ou de &quot;mettre en cache&quot;) la plus grande partie du contenu du site possible, sous la forme de ressources statiques. Cette approche vise à minimiser la nécessité d’accéder autant que possible à la fonctionnalité de rendu de page d’AEM et au service GraphQL Adobe Commerce. Le fait de traiter la plupart des pages en tant qu’HTML statique, CSS et JS offre des avantages en termes de performances aux utilisateurs et réduit les exigences d’infrastructure dans l’environnement. Toute page ou requête susceptible d’être répétée de manière identique d’un utilisateur à l’autre doit être prise en compte pour la mise en cache.
 
 Les sections suivantes présentent à un haut niveau la zone d’intérêt technique recommandée à examiner pour permettre une mise en cache efficace sur AEM dans un environnement CIF/Adobe Commerce.
 
 ## Mise en cache basée sur TTL sur AEM dispatchers
 
-La mise en cache d’un maximum de sites sur les dispatchers est une bonne pratique pour tout projet AEM. L’utilisation de l’invalidation du cache basée sur le temps mettra en cache les pages CIF rendues côté serveur, pendant une durée limitée. Une fois l’heure définie expirée, la requête suivante recréera la page à partir de l’éditeur AEM et d’Adobe Commerce GraphQL et la stockera à nouveau dans le cache du Dispatcher jusqu’à l’invalidation suivante.
+La mise en cache d’un maximum de sites sur les dispatchers est une bonne pratique pour tout projet AEM. L’utilisation de l’invalidation du cache basée sur le temps mettra en cache CIF pages rendues côté serveur, pendant une durée limitée. Une fois l’heure définie expirée, la requête suivante recréera la page à partir de l’éditeur AEM et d’Adobe Commerce GraphQL et la stockera à nouveau dans le cache du Dispatcher jusqu’à l’invalidation suivante.
 
 La fonction de mise en cache TTL peut être configurée AEM avec le composant &quot;Dispatcher TTL&quot; dans le package ACS AEM Commons et la définition de /enableTTL &quot;1&quot; dans le fichier de configuration dispatcher.any.
 
@@ -29,20 +29,20 @@ S’il est activé, le Dispatcher évalue les en-têtes de réponse du serveur p
 
 L’approche TTL du dispatcher ci-dessus réduira considérablement les requêtes et le chargement sur l’éditeur. Toutefois, certaines ressources sont très improbables à modifier. Par conséquent, même les requêtes envoyées au dispatcher peuvent être réduites en mettant en cache les fichiers pertinents localement sur le navigateur d’un utilisateur. Par exemple, le logo du site, qui s’affiche sur chaque page du site dans le modèle de site, n’a pas besoin d’être demandé à chaque fois au Dispatcher. Cela peut être stocké dans le cache du navigateur de l’utilisateur. La réduction des exigences de bande passante pour chaque chargement de page aurait un impact important sur la réactivité du site et les temps de chargement des pages.
 
-La mise en cache au niveau du navigateur est généralement effectuée via l’en-tête de réponse &quot;Cache-Control: max-age=&quot;. Le paramètre maxage indique au navigateur combien de secondes il doit mettre en cache le fichier avant de tenter de le &quot;revalider&quot; ou de le demander de nouveau sur le site. Ce concept d’âge maximal du cache est généralement appelé &quot;expiration du cache&quot; ou TTL (&quot;durée de vie&quot;). Diffusion d’expériences commerciales à grande échelle - Avec Adobe Experience Manager, Commerce Integration Framework, Adobe Commerce 7
+La mise en cache au niveau du navigateur est généralement effectuée via l’en-tête de réponse &quot;Cache-Control: max-age=&quot;. Le paramètre maxage indique au navigateur combien de secondes il doit mettre en cache le fichier avant de tenter de le &quot;revalider&quot; ou de le demander de nouveau sur le site. Ce concept d’âge maximal du cache est généralement appelé &quot;expiration du cache&quot; ou TTL (&quot;durée de vie&quot;). Diffusion d’expériences commerciales à grande échelle - avec Adobe Experience Manager, Commerce integration framework, Adobe Commerce 7
 
 Voici quelques zones d’un site AEM/CIF/Adobe Commerce pouvant être définies pour être mises en cache dans le navigateur du client :
 
 - Images (dans le modèle d’AEM lui-même, par exemple le logo du site et les images de conception de modèle - les images de produit de catalogue sont appelées à partir d’Adobe Commerce via Fastly, et la mise en cache de ces images est discutée ultérieurement)
-- Fichiers de HTML (pour les pages rarement modifiées - page de conditions générales, etc.)
+- Fichiers d’HTML (pour les pages rarement modifiées - page de conditions générales, etc.)
 - Fichiers CSS
 - Tous les fichiers JavaScript du site, y compris les fichiers JavaScript CIF
 
-## Optimisation de la période de grâce et du niveau de statut du Dispatcher
+## Optimisation de la période de grâce et du niveau de statut Dispatcher
 
-La configuration Dispatcher par défaut utilise le paramètre /statfilelevel &quot;0&quot;, ce qui signifie qu’un seul fichier &quot;.stat&quot; est placé à la racine du répertoire htdocs (répertoire racine du document). Si une modification est apportée à une page ou à un fichier dans AEM, l’heure de modification de ce fichier stat unique est mise à jour au moment de la modification. Si le temps est plus récent que l’heure de modification de la ressource, le Dispatcher considère que toutes les ressources sont invalidées et toute requête ultérieure pour une ressource invalidée déclenche un appel à l’instance de publication. Donc essentiellement, avec ce paramètre, chaque activation invalidera l’ensemble du cache.
+La configuration Dispatcher par défaut utilise le paramètre /statfilelevel &quot;0&quot;, ce qui signifie qu’un seul fichier &quot;.stat&quot; est placé à la racine du répertoire htdocs (répertoire racine du document). Si une modification est apportée à une page ou à un fichier dans AEM, l’heure de modification de ce fichier stat unique est mise à jour au moment de la modification. Si le temps est plus récent que l’heure de modification de la ressource, le Dispatcher considère que toutes les ressources sont invalidées et toute requête ultérieure pour une ressource invalidée déclenche un appel vers l’instance Publish. Donc essentiellement, avec ce paramètre, chaque activation invalidera l’ensemble du cache.
 
-Pour tous les sites, en particulier les sites de commerce avec une charge importante, cela placerait une charge inutile sur le niveau Publication AEM pour que la structure entière du site soit invalidée avec une seule mise à jour de page.
+Pour tous les sites, en particulier les sites de commerce avec une charge importante, cela placerait une charge inutile sur le niveau Publish AEM pour que la structure entière du site soit invalidée avec une seule mise à jour de page.
 
 Au lieu de cela, le paramètre statfilelevel peut être modifié à une valeur supérieure, correspondant à la profondeur des sous-répertoires du répertoire htdocs à partir du répertoire racine du document, de sorte que lorsqu’un fichier situé à un certain niveau est invalidé, seuls les fichiers au niveau du répertoire .stat et au-dessous sont mis à jour.
 
@@ -68,11 +68,12 @@ Un autre paramètre de Dispatcher à optimiser lors de la configuration du nivea
 
 >[!NOTE]
 >
-> Pour plus d’informations sur ce sujet, reportez-vous au [aem-dispatcher-expériences](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/gracePeriod) Référentiel GitHub.
+> Une lecture plus détaillée de cette rubrique est disponible dans le référentiel GitHub [aem-dispatcher-expériences](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/gracePeriod).
 
-## CIF - Mise en cache GraphQL via des composants
+## CIF - Mise en cache de GraphQL via des composants
 
-Les composants individuels d’AEM peuvent être définis pour être mis en cache, ce qui signifie que la requête GraphQL vers Adobe Commerce est appelée une fois, puis les requêtes suivantes, dans la limite de temps configurée, sont récupérées à partir du cache AEM et ne placent pas d’autre chargement sur Adobe Commerce. Il peut s’agir, par exemple, d’une navigation sur le site basée sur une arborescence de catégories affichée sur chaque page et sur les options d’une fonctionnalité de recherche à facettes. Il s’agit de deux zones qui nécessitent la création de requêtes gourmandes en ressources sur Adobe Commerce. Il est donc peu probable qu’elles changent régulièrement et constituent de bons choix pour la mise en cache. Ainsi, par exemple, même lorsqu’un PDP ou un PLP est en cours de reconstruction par l’éditeur, la requête GraphQL gourmande en ressources pour la version de navigation n’atteint pas Adobe Commerce et peut être récupérée à partir du cache GraphQL sur AEM CIF.
+Les composants individuels d’AEM peuvent être définis pour être mis en cache, ce qui signifie que la demande GraphQL d’Adobe
+Commerce est appelé une fois, puis les requêtes suivantes, jusqu’à la limite de temps configurée, sont récupérées à partir du cache AEM et ne placent pas de chargement supplémentaire sur Adobe Commerce. Il peut s’agir, par exemple, d’une navigation sur le site basée sur une arborescence de catégories affichée sur chaque page et sur les options d’une fonctionnalité de recherche à facettes. Il s’agit de deux zones qui nécessitent la création de requêtes gourmandes en ressources sur Adobe Commerce. Il est donc peu probable qu’elles changent régulièrement et constituent de bons choix pour la mise en cache. Ainsi, par exemple, même lorsqu’un PDP ou un PLP est en cours de reconstruction par l’éditeur, la requête GraphQL gourmande en ressources pour la version de navigation n’atteint pas Adobe Commerce et peut être récupérée à partir du cache GraphQL sur AEM CIF.
 
 Un exemple ci-dessous montre que le composant de navigation doit être mis en cache, car il envoie la même requête GraphQL sur toutes les pages du site. La requête ci-dessous met en cache les 100 dernières entrées pendant 10 minutes pour la structure de navigation :
 
@@ -88,7 +89,8 @@ com.adobe.cq.commerce.core.search.services.SearchFilterService:true:100:3600
 
 La requête, y compris tous les en-têtes et variables HTTP personnalisés, doit correspondre exactement pour que le cache soit &quot;accès&quot; et pour empêcher un appel de répétition vers Adobe Commerce. Une fois défini, il doit être noté qu’il n’existe aucun moyen facile d’invalider manuellement ce cache. Cela peut donc signifier que si une nouvelle catégorie est ajoutée dans Adobe Commerce, elle ne s’affichera pas dans la navigation tant que le délai d’expiration défini dans le cache ci-dessus n’aura pas expiré et que la requête GraphQL n’aura pas été actualisée. Idem pour les facettes de recherche. Toutefois, étant donné les avantages de performances que cette mise en cache offre, il s’agit généralement d’un compromis acceptable.
 
-Les options de mise en cache ci-dessus peuvent être définies à l’aide de la console de configuration OSGi AEM dans &quot;GraphQL Client Configuration Factory&quot;. Chaque entrée de configuration du cache peut être spécifiée au format suivant :
+Les options de mise en cache ci-dessus peuvent être définies à l’aide de la console de configuration OSGi AEM dans &quot;GraphQL Client&quot;.
+Usine de configuration&quot;. Chaque entrée de configuration du cache peut être spécifiée au format suivant :
 
 ```
 * NAME:ENABLE:MAXSIZE:TIMEOUT like for example mycache:true:1000:60 where each attribute is defined as:
@@ -100,7 +102,7 @@ Les options de mise en cache ci-dessus peuvent être définies à l’aide de la
 
 ## Mise en cache hybride : demandes GraphQL côté client dans les pages Dispatcher mises en cache
 
-Il est également possible d’adopter une approche hybride de la mise en cache des pages : il est possible qu’une page CIF contienne des composants qui demanderaient toujours les dernières informations d’Adobe Commerce directement depuis le navigateur du client. Cela peut s’avérer utile pour des zones spécifiques de la page dans un modèle qui sont importantes pour être à jour avec des informations en temps réel : les prix des produits dans un PDP, par exemple. Lorsque les prix changent fréquemment en raison de la correspondance dynamique des prix, ces informations peuvent être configurées pour ne pas être mises en cache sur le Dispatcher. Au contraire, les prix peuvent être récupérés côté client dans le navigateur du client à partir d’Adobe Commerce directement via les API GraphQL avec des composants web CIF AEM.
+Il est également possible d’adopter une approche hybride de la mise en cache des pages : il est possible qu’une page CIF contienne des composants qui demanderaient toujours les dernières informations d’Adobe Commerce directement depuis le navigateur du client. Cela peut s’avérer utile pour des zones spécifiques de la page dans un modèle qui sont importantes pour être à jour avec des informations en temps réel : les prix des produits dans un PDP, par exemple. Lorsque les prix changent fréquemment en raison de la correspondance dynamique des prix, ces informations peuvent être configurées pour ne pas être mises en cache sur le Dispatcher. Au contraire, les prix peuvent être récupérés côté client dans le navigateur du client à partir d’Adobe Commerce directement via les API GraphQL avec des composants web d’AEM CIF.
 
 Cela peut être configuré via les paramètres des composants d’AEM : pour les informations de prix sur les pages de liste de produits, il peut être configuré dans le modèle de liste de produits, en sélectionnant le composant de liste de produits dans les paramètres de la page et en cochant l’option &quot;Charger les prix&quot;. La même approche pourrait fonctionner pour le niveau des stocks.
 
@@ -128,12 +130,12 @@ Lors d’un événement de montée en puissance, cela peut même entraîner une 
 
 >[!NOTE]
 >
->En savoir plus sur l&#39;importance de définir `ignoreUrlParams` est disponible dans la variable [aem-dispatcher-expériences](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/ignoreUrlParams) Référentiel GitHub.
+>Vous trouverez plus d’informations sur l’importance de la définition de `ignoreUrlParams` dans le référentiel GitHub [ aem-dispatcher-expériences](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/ignoreUrlParams).
 
-Il doit donc être configuré pour ignorer tous les paramètres par défaut dans &quot;ignoreUrlParams&quot;, sauf lorsqu’un paramètre de GET est utilisé pour modifier la structure de HTML d’une page. Par exemple, une page de recherche dans laquelle le terme de recherche figure dans l’URL en tant que paramètre de GET serait utilisée. Dans ce cas, vous devez ensuite configurer manuellement ignoreUrlParams pour ignorer les paramètres tels que gclid, fbclid et tout autre paramètre de suivi utilisé par vos canaux publicitaires, sans affecter les paramètres de GET requis pour les opérations normales du site.
+Il doit donc être configuré pour ignorer tous les paramètres par défaut dans &quot;ignoreUrlParams&quot;, sauf lorsqu’un paramètre GET est utilisé pour modifier la structure d’HTML d’une page. Par exemple, une page de recherche dans laquelle le terme de recherche figure dans l’URL en tant que paramètre de GET serait utilisée. Dans ce cas, vous devez ensuite configurer manuellement ignoreUrlParams pour ignorer les paramètres tels que gclid, fbclid et tout autre paramètre de suivi utilisé par vos canaux publicitaires, sans affecter les paramètres de GET requis pour les opérations normales du site.
 
 ## Limites des travailleurs MPM sur les dispatchers
 
-Les paramètres de traitement MPM sont une configuration de serveur Apache HTTP avancée qui nécessite des tests approfondis pour optimiser en fonction du processeur et de la mémoire vive de votre Dispatcher. Cependant, dans la portée de ce livre blanc, nous suggérons que ServerLimit et MaxRequestWorkers, soient augmentés à un niveau que le processeur et la mémoire RAM disponibles du serveur prennent en charge, puis que les MinSpareThreads et MaxSpareThreads soient tous deux augmentés à un niveau correspondant à MaxRequestWorkers.
+Les paramètres de traitement MPM sont une configuration avancée du serveur Apache HTTP qui nécessiterait des tests approfondis pour optimiser l’utilisation en fonction du processeur et de la mémoire vive de votre Dispatcher. Cependant, dans la portée de ce livre blanc, nous suggérons que ServerLimit et MaxRequestWorkers, soient augmentés à un niveau que le processeur et la mémoire RAM disponibles du serveur prennent en charge, puis que les MinSpareThreads et MaxSpareThreads soient tous deux augmentés à un niveau correspondant à MaxRequestWorkers.
 
 Cette configuration laisserait Apache HTTP sur un &quot;paramètre de préparation complet&quot; qui est une configuration haute performance pour les serveurs avec une RAM importante et plusieurs coeurs de processeur. Cette configuration produira les meilleurs temps de réponse possibles à partir d’Apache HTTP en maintenant des connexions ouvertes persistantes prêtes à servir les requêtes et supprimera tout délai dans la frai de nouveaux processus en réponse à des soudaines augmentations de trafic, comme lors des ventes Flash.

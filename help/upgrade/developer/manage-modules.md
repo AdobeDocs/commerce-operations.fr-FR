@@ -12,9 +12,9 @@ ht-degree: 3%
 
 # Gestion des modules et des extensions
 
-Contribution des développeurs à la mise à niveau des modules et extensions en spécifiant leurs versions dans Adobe Commerce `composer.json` fichier . Si vous n’êtes pas un développeur contributeur, reportez-vous à la section [Effectuer une mise à niveau](../implementation/perform-upgrade.md).
+Les développeurs contribuant à mettre à niveau les modules et les extensions en spécifiant leurs versions dans le fichier Adobe Commerce `composer.json`. Si vous n&#39;êtes pas un développeur contributeur, reportez-vous à la section [Réaliser une mise à niveau](../implementation/perform-upgrade.md).
 
-Vous pouvez ajouter une `require` à la section `composer.json` ou vous pouvez utiliser la variable `composer require` de la façon suivante :
+Vous pouvez ajouter une section `require` au fichier `composer.json` ou vous pouvez utiliser la commande `composer require` comme suit :
 
 {{$include /help/_includes/server-login.md}}
 
@@ -34,7 +34,7 @@ Par exemple :
 composer show --all example/module
 ```
 
-## Utilisez la variable `composer require` command
+## Utilisation de la commande `composer require`
 
 Utilisation des commandes :
 
@@ -50,11 +50,11 @@ composer require example/module:1.0.0
 
 Patientez pendant que le compositeur met à jour les dépendances et installe le module.
 
-## Ajouter un `require` au fichier compositeur.json
+## Ajouter une section `require` au fichier compositeur.json
 
 1. Ouvrez le `composer.json` dans un éditeur de texte.
 
-1. Ajouter un `require` .
+1. Ajoutez une section `require` .
 
    ```json
    "require": {
@@ -63,9 +63,9 @@ Patientez pendant que le compositeur met à jour les dépendances et installe le
    }
    ```
 
-1. Enregistrez vos modifications dans le `composer.json` et quittez l’éditeur de texte.
+1. Enregistrez vos modifications dans le fichier `composer.json` et quittez l’éditeur de texte.
 
-1. Résolvez les dépendances et écrivez des versions exactes dans la variable `composer.lock` fichier .
+1. Résolvez les dépendances et écrivez des versions exactes dans le fichier `composer.lock`.
 
    ```bash
    composer update

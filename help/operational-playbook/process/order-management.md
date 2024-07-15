@@ -1,5 +1,5 @@
 ---
-title: Gestion des commandes
+title: Order Management
 description: Découvrez comment un système de gestion des commandes est essentiel pour votre commerce électronique.
 exl-id: 62edc895-d725-4252-9a43-e03427579444
 feature: Best Practices, Orders, Shipping/Delivery
@@ -12,9 +12,10 @@ ht-degree: 0%
 
 # Gestion des commandes
 
-Pour les nouvelles entreprises, les niveaux de commande sont bas et il est plus facile d’exécuter des commandes à moindre coût. Cependant, lorsque la demande augmente, les commandes augmentent et il devient difficile de gérer les commandes avec une petite équipe ou par vous-même à un coût moindre. Vous aurez peut-être besoin d’une plus grande installation, comme un entrepôt ou plusieurs entrepôts, selon la nature de l’entreprise, ce qui peut être coûteux et nécessiter davantage de personnel. C&#39;est là que la gestion des commandes entre en jeu.
+Pour les nouvelles entreprises, les niveaux de commande sont bas et il est plus facile de
+terminer des commandes à moindre coût. Cependant, lorsque la demande augmente, les commandes augmentent et il devient difficile de gérer les commandes avec une petite équipe ou par vous-même à un coût moindre. Vous aurez peut-être besoin d’une plus grande installation, comme un entrepôt ou plusieurs entrepôts, selon la nature de l’entreprise, ce qui peut être coûteux et nécessiter davantage de personnel. C&#39;est là que la gestion des commandes entre en jeu.
 
-La gestion des commandes permet de répondre aux nouvelles exigences opérationnelles en matière de gestion de la demande, des stocks, des emballages et de l’expédition. L’intégration d’un système de gestion des commandes à Platform peut aider les entreprises à répondre à leurs besoins changeants et à accroître la satisfaction de leurs clients, la fidélisation de leurs clients, des taux de conversion plus élevés et la fidélité à la marque. Tous ces facteurs influent directement et indirectement sur les performances et la croissance des recettes de votre entreprise.
+La gestion des commandes permet de répondre aux nouvelles exigences opérationnelles en matière de gestion de la demande, des stocks, des emballages et de l’expédition. L’intégration d’un système Order Management à Platform peut aider les entreprises à répondre à l’évolution de leurs besoins et à accroître la satisfaction de leurs clients, la fidélisation de leurs clients, des taux de conversion plus élevés et la fidélisation de leur marque. Tous ces facteurs influent directement et indirectement sur les performances et la croissance des recettes de votre entreprise.
 
 Les systèmes de gestion des commandes permettent de centraliser toutes les données essentielles d’un système unique, qui fournit une vue unique de tous les flux, y compris les commandes, les produits, les clients, l’inventaire, l’emballage, les retours et les paiements, afin que vous puissiez facilement répondre aux attentes des clients.
 
@@ -29,6 +30,6 @@ La gestion des commandes est essentielle dans toute activité de commerce élect
 - Surveillez le retour pour comprendre pourquoi les clients réalisent des retours afin de pouvoir y travailler et améliorer
 - Aide à comprendre l’expérience globale du client s’il est satisfait ou non de ses achats et comment l’entreprise peut améliorer ses services aux clients
 
-Le bon système de gestion des commandes et son bon usage peuvent faire des merveilles pour l’organisation en termes de chiffre d’affaires. Elle permet d’économiser de l’argent et du temps, d’avoir un aperçu des différents services qui travaillent ensemble et d’aider les entreprises à prévoir la demande et à améliorer l’expérience client afin d’augmenter les taux de conversion.
+Le bon système Order Management et son bon usage peuvent faire des merveilles pour l&#39;organisation en termes de revenus. Elle permet d’économiser de l’argent et du temps, d’avoir un aperçu des différents services qui travaillent ensemble et d’aider les entreprises à prévoir la demande et à améliorer l’expérience client afin d’augmenter les taux de conversion.
 
 ![Diagramme de processus de gestion des commandes](../../assets/playbooks/order-management.png)

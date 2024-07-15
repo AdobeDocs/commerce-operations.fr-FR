@@ -23,7 +23,7 @@ Ces bonnes pratiques sont organisées par phase de mise en oeuvre afin que vous 
     <img alt="Planification" src="../../assets/icons/enterprise.svg" width="80" height="80"/>
     </a>
     <div>
-    <a href="planning/overview.md"><strong>Planification</strong></a>
+    <a href="planning/overview.md"><strong>Planning</strong></a>
     </div>
     Collecte des exigences, conception architecturale, conception de catalogue, portée du projet, attribution des privilèges d’accès aux comptes, accès utilisateur, achat d’extensions
     <br>

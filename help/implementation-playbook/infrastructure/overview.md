@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Présentation
+# Vue d’ensemble
 
 Jusqu’à présent, nous avons décrit chacune des étapes nécessaires à la configuration de votre mise en oeuvre du commerce électronique sur Adobe Commerce pour succès. Maintenant, nous allons plus loin dans la plate-forme elle-même, en soulignant les infrastructures et les environnements qui alimentent Adobe Commerce et les solutions logicielles qui en font une plate-forme si robuste.
 

@@ -5,7 +5,7 @@ exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1107'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,9 @@ Adobe Managed Services fournit des applications et une infrastructure hébergée
 
 Adobe Managed Services offre des avantages clés par rapport aux implémentations cloud sur site et non gérées, notamment :
 
-- **Cibles de niveau de service améliorées (SLT)**: temps de réponse plus rapide que la prise en charge standard d’Adobe Commerce.
-- **Contrats de niveau de service améliorés (SLA)**: niveau d’application de 99,9 % auquel les clients standard d’Adobe Commerce sur l’infrastructure cloud accèdent par rapport au niveau d’infrastructure de 99,99 %.
-- **Expertise dans le cloud désigné**: Managed Services fournit aux clients un ingénieur du service client désigné qui fait office d’expert en infrastructure cloud et en application. L’ingénieur du service client travaille avec les clients et leurs partenaires, en leur fournissant les bonnes pratiques et des conseils pour accélérer le délai de mise sur le marché, notamment :
+- **Cibles de niveau de service améliorées (SLT)** : temps de réponse plus rapides que la prise en charge standard d’Adobe Commerce.
+- **Contrats de niveau de service améliorés (SLA)** : niveau d’application de 99,9 % auquel les clients standard d’Adobe Commerce sur l’infrastructure cloud accèdent par rapport au niveau d’infrastructure de 99,99 %.
+- **Expertise dans le cloud désigné** : Managed Services fournit aux clients un ingénieur du service client désigné qui fait office d’expert en infrastructure dans le cloud et l’application. L’ingénieur du service client travaille avec les clients et leurs partenaires, en leur fournissant les bonnes pratiques et des conseils pour accélérer le délai de mise sur le marché, notamment :
    - Guide et support via le processus d’intégration
    - Gestion de la configuration et de la configuration de la plateforme
    - Conseils sur les principes architecturaux pour les intégrations et les personnalisations
@@ -81,7 +81,7 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
             <td>Propriétaire</td>
         </tr>
         <tr>
-            <td>Accès au code source Adobe Commerce</td>
+            <td>Accès au code Source Adobe Commerce</td>
             <td></td>
             <td></td>
             <td>Propriétaire</td>
@@ -372,15 +372,15 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
 
 La pile de sécurité Adobe pour Managed Services intègre la sécurité à tous les niveaux à l’aide de l’automatisation et de la cohérence afin de réduire les erreurs humaines. Les équipes de développement et d’exploitation héritent automatiquement des contrôles de sécurité de différents niveaux de la pile.
 
-Les partenaires de plateforme, tels que Amazon Web Services et Microsoft Azure, assurent une couverture de sécurité maximale lors de l’application des personnalisations de plateforme, tandis que l’équipe Managed Services d’Adobe fournit des services de sécurité principaux, tels que la conformité, la journalisation, l’authentification, l’analyse et la surveillance, ainsi que la sécurité du serveur et la configuration sécurisée des applications. Voir [Sécurité Adobe Commerce](https://business.adobe.com/products/magento/secure-ecommerce.html) pour plus d’informations.
+Les partenaires de plateforme, tels que Amazon Web Services et Microsoft Azure, assurent une couverture de sécurité maximale lors de l’application des personnalisations de plateforme, tandis que l’équipe Managed Services d’Adobe fournit des services de sécurité principaux, tels que la conformité, la journalisation, l’authentification, l’analyse et la surveillance, ainsi que la sécurité du serveur et la configuration sécurisée des applications. Pour plus d’informations, voir [Adobe Commerce Security](https://business.adobe.com/products/magento/secure-ecommerce.html) .
 
 Le diagramme suivant illustre la pile de technologie de sécurité Managed Services Adobe :
 
-![Diagramme affichant la pile de sécurité Managed Services Adobe](../../assets/playbooks/managed-services-security-stack.svg)
+![ Diagramme affichant la pile de sécurité Managed Services Adobe ](../../assets/playbooks/managed-services-security-stack.svg)
 
 ## Assistance à la mise à niveau
 
-L’équipe Managed Services joue un rôle actif pour vous aider à planifier et à gérer la mise à niveau. L’ingénieur du service client travaille avec votre équipe de projet de mise à niveau, notamment les chefs de projet et les développeurs (experts en matière interne, partenaires certifiés Adobe ou professionnels du conseil d’Adobe) pour aider votre équipe à garantir une planification adéquate et le respect des bonnes pratiques lors de la mise à niveau.
+L’équipe Managed Services joue un rôle actif pour vous aider à planifier et à gérer la mise à niveau. L’ingénieur du service client travaille avec votre équipe de projet de mise à niveau, notamment les chefs de projet et les développeurs (experts en matière interne, partenaires certifiés Adobe ou professionnels d’Adobe Consulting) pour aider votre équipe à garantir une planification adéquate et une conformité aux bonnes pratiques lors de la mise à niveau.
 
 Les ingénieurs du service client Managed Services ont collaboré avec les clients Adobe Commerce pour exécuter les mises à niveau dans des environnements volumineux. Votre ingénieur du service client peut vous aider à tirer parti des connaissances d’experts pour optimiser le succès de la mise à niveau tout en réduisant les temps d’arrêt et en réduisant les risques globaux. En outre, les ingénieurs du service client de Managed Services fonctionnent avec votre environnement d’évaluation dédié pour la mise à niveau, de sorte que les processus de production existants ne soient pas affectés lors de la validation de la mise à niveau.
 
@@ -402,29 +402,29 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
     <td>Créer un plan de projet de mise à niveau</td>
     <td>Propriétaire</td>
     <td>Contributeur</td>
-    <td>Contributeur<br />L’ingénieur du service client fournit des exemples de modèles de mise à niveau et de plans de mise à niveau. Il fournit également des conseils et des bonnes pratiques.</td>
+    <td>Contributor<br />L’ingénieur du service client fournit des exemples de modèles de mise à niveau et de plans de mise à niveau ; fournit des conseils et de bonnes pratiques.</td>
   </tr>
   <tr>
     <td>Déterminer les modifications d’infrastructure nécessaires</td>
     <td></td>
     <td>Contributeur</td>
-    <td>Propriétaire<br />L’ingénieur du service client examine l’infrastructure d’évaluation et de production afin d’assurer un dimensionnement approprié.</td>
+    <td>Propriétaire <br />L’ingénieur du service client examine l’infrastructure d’évaluation et de production pour garantir un dimensionnement correct.</td>
   </tr>
   <tr>
-    <td>Évaluation de la complexité de la mise à niveau<br />Identifiez et documentez les modules, problèmes et correctifs, ainsi que les modules tiers et personnalisés.</td>
+    <td>Évaluer la complexité de la mise à niveau<br />Identifier et documenter les packages, les problèmes et correctifs, ainsi que les modules tiers et personnalisés</td>
     <td>Contributeur</td>
     <td>Propriétaire</td>
-    <td>Contributeur<br />L’ingénieur du service client fournit des rapports et des recommandations sur l’outil de compatibilité de mise à niveau.</td>
+    <td>Contributor<br />CSE fournit des rapports et des recommandations sur l’outil de compatibilité de mise à niveau.</td>
   </tr>
   <tr>
     <td rowspan="3">Exécuter la mise à niveau</td>
     <td>Mise à niveau des services d’infrastructure<br />[MariaDB, Redis, Open Search et Rabbit MQ] (évaluation et production)</td>
     <td></td>
     <td></td>
-    <td>Propriétaire<br />L’ingénieur du service client coordonne les mises à niveau des services d’infrastructure.<br />L’ingénieur du service client planifie une réunion pour les mises à niveau.<br />L’ingénieur du service client aide à la migration des données de la production vers l’évaluation.</td>
+    <td>Propriétaire<br />L’ingénieur du service client coordonne les mises à niveau des services d’infrastructure.<br />L'ingénieur du service client organise une réunion de conférence pour les mises à niveau.<br />L’ingénieur du service client aide à la migration des données de la production vers l’évaluation.</td>
   </tr>
   <tr>
-    <td>Mise à jour de la base de code Commerce et des personnalisations ; recompilation et refactorisation du code</td>
+    <td>Mise à jour de la base de code et des personnalisations Commerce ; recompilation et refactorisation du code</td>
     <td>Contributeur</td>
     <td>Propriétaire</td>
     <td></td>
@@ -433,29 +433,29 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
     <td>Effectuer les vérifications et la résolution des problèmes après la mise à niveau</td>
     <td></td>
     <td>Propriétaire</td>
-    <td>Contributeur<br />L’ingénieur du service client exécute le runbook après la mise à niveau pour détecter et résoudre les problèmes liés à la mise à niveau.</td>
+    <td>Contributor<br />L’ingénieur du service client exécute le runbook après la mise à niveau pour détecter et résoudre les problèmes liés à la mise à niveau.</td>
   </tr>
   <tr>
     <td rowspan="3">UAT et Launch</td>
     <td>Exécution de tests de performance et de sécurité</td>
     <td>Contributeur</td>
     <td>Propriétaire</td>
-    <td>Contributeur<br />L’ingénieur du service client participe aux tests de charge en surveillant les performances de l’application et de l’infrastructure.<br />L’ingénieur du service client vous aide à configurer l’outil d’analyse de sécurité de Commerce.</td>
+    <td>Contributor<br />L’ingénieur du service client aide à effectuer des tests de charge en surveillant les performances de l’application et de l’infrastructure.<br />L’ingénieur du service client vous aide à configurer l’outil d’analyse de sécurité de Commerce.</td>
   </tr>
   <tr>
     <td>Test d’acceptation utilisateur lors de l’évaluation</td>
     <td>Propriétaire</td>
     <td>Contributeur</td>
-    <td>Contributeur<br />L’ingénieur du service client valide les performances correctes de l’application et de l’infrastructure après la mise à niveau.</td>
+    <td>Contributor<br />L’ingénieur du service client valide les performances correctes de l’application et de l’infrastructure après la mise à niveau.</td>
   </tr>
   <tr>
     <td>Lancement en production</td>
     <td>Contributeur</td>
     <td>Propriétaire</td>
-    <td>Contributeur<br />L’ingénieur du service client planifie une réunion de lancement.</td>
+    <td>Contributeur<br />L’ingénieur du service client planifie l’événement de réunion de lancement de la conférence.</td>
   </tr>
   <tr>
-    <td>Après le lancement</td>
+    <td>Post-Launch</td>
     <td></td>
     <td>Contributeur</td>
     <td>Contributeur</td>

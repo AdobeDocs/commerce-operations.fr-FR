@@ -17,7 +17,7 @@ Les autres utilitaires facultatifs abordés dans cette rubrique peuvent vous aid
 
 ## Installation et configuration du protocole NTP (Network Time Protocol)
 
-[NTP](https://www.ntp.org/) permet aux serveurs de synchroniser leurs horloges système à l’aide de [serveurs de pool disponibles globalement](https://www.ntppool.org/en/). Nous vous recommandons d’utiliser des serveurs NTP en qui vous avez confiance, qu’il s’agisse de solutions matérielles dédiées à votre réseau interne ou de serveurs publics externes.
+[NTP](https://www.ntp.org/) permet aux serveurs de synchroniser leurs horloges système à l’aide de [ serveurs de pool disponibles globalement ](https://www.ntppool.org/en/). Nous vous recommandons d’utiliser des serveurs NTP en qui vous avez confiance, qu’il s’agisse de solutions matérielles dédiées à votre réseau interne ou de serveurs publics externes.
 
 Si vous déployez Adobe Commerce sur plusieurs hôtes, le protocole NTP est un moyen simple de garantir que leurs horloges sont toutes synchronisées, quel que soit le fuseau horaire dans lequel se trouvent les serveurs. En outre, les tâches liées à cron (telles que l’indexation et les emails transactionnels) dépendent de la précision de l’horloge du serveur.
 
@@ -29,7 +29,7 @@ Saisissez la commande suivante pour installer NTP :
 apt-get install ntp
 ```
 
-Passez à la [Utiliser les serveurs de pool NTP](#use-ntp-pool-servers).
+Passez à [Utiliser les serveurs de pool NTP](#use-ntp-pool-servers).
 
 ### Installation et configuration de NTP sur CentOS
 
@@ -41,7 +41,7 @@ Pour installer et configurer NTP :
    yum search ntp
    ```
 
-1. Sélectionnez un package à installer. Par exemple : `ntp.x86_64`.
+1. Sélectionnez un package à installer. Par exemple, `ntp.x86_64`.
 
 1. Installez le package.
 
@@ -59,9 +59,9 @@ Pour installer et configurer NTP :
 
 ### Utiliser les serveurs de pool NTP
 
-C’est à vous de choisir les serveurs de pool. Si vous utilisez des serveurs de pool NTP, ntp.org vous recommande d&#39;utiliser [serveurs de pool](https://www.ntppool.org/en/) qui sont proches du fuseau horaire de vos serveurs, comme indiqué dans la section [Page de projet de pool NTP](https://www.ntppool.org/en/use.html). Si votre déploiement comprend un serveur NTP privé disponible pour tous les hôtes, vous pouvez utiliser ce serveur à la place.
+C’est à vous de choisir les serveurs de pool. Si vous utilisez des serveurs de pool NTP, ntp.org vous recommande d&#39;utiliser des [serveurs de pool](https://www.ntppool.org/en/) proches du fuseau horaire de vos serveurs, comme expliqué sur la [page de projet de pool NTP](https://www.ntppool.org/en/use.html). Si votre déploiement comprend un serveur NTP privé disponible pour tous les hôtes, vous pouvez utiliser ce serveur à la place.
 
-1. Ouvrir `/etc/ntp.conf` dans un éditeur de texte.
+1. Ouvrez `/etc/ntp.conf` dans un éditeur de texte.
 
 1. Recherchez des lignes similaires à celles-ci :
 
@@ -89,21 +89,21 @@ C’est à vous de choisir les serveurs de pool. Si vous utilisez des serveurs d
 
    * CentOS : `service ntpd restart`
 
-1. Entrée `date` pour vérifier la date du serveur.
+1. Saisissez `date` pour vérifier la date du serveur.
 
    Si la date est incorrecte, assurez-vous que le port client NTP (généralement UDP 123) est ouvert dans votre pare-feu.
 
-   Essayez le `ntpdate _[pool server hostname]_` . En cas d’échec, recherchez l’erreur renvoyée.
+   Essayez la commande `ntpdate _[pool server hostname]_`. En cas d’échec, recherchez l’erreur renvoyée.
 
    Si tout le reste échoue, essayez de redémarrer le serveur.
 
 ## Créer phpinfo.php
 
-La variable [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) affiche une grande quantité d’informations sur PHP et ses extensions.
+Le fichier [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) affiche une grande quantité d’informations sur PHP et ses extensions.
 
 >[!NOTE]
 >
->Utilisation `phpinfo.php` dans un système de développement _only_. Il peut s’agir d’un problème de sécurité en production.
+>Utilisez `phpinfo.php` dans un système de développement _only_. Il peut s’agir d’un problème de sécurité en production.
 
 Ajoutez le code suivant n’importe où dans la docroot de votre serveur web :
 
@@ -113,7 +113,7 @@ Ajoutez le code suivant n’importe où dans la docroot de votre serveur web :
 phpinfo();
 ```
 
-Pour plus d’informations, voir [page manuelle phpinfo](https://www.php.net/manual/en/function.phpinfo.php).
+Pour plus d&#39;informations, consultez la [page du manuel phpinfo](https://www.php.net/manual/en/function.phpinfo.php).
 
 Pour afficher les résultats, saisissez l’URL suivante dans le champ de l’emplacement ou de l’adresse de votre navigateur :
 
@@ -134,13 +134,13 @@ Si une erreur 404 (Introuvable) s’affiche, vérifiez les points suivants :
 
 L’application phpMyAdmin est un utilitaire d’administration de base de données gratuit et facile à utiliser. Vous pouvez l’utiliser pour vérifier et manipuler le contenu de votre base de données. Vous devez vous connecter à phpMyAdmin en tant qu’utilisateur administrateur de base de données MySQL.
 
-Pour plus d’informations sur phpMyAdmin, voir [page d’accueil phpMyAdmin](https://www.phpmyadmin.net/).
+Pour plus d’informations sur phpMyAdmin, consultez la [page d’accueil phpMyAdmin](https://www.phpmyadmin.net/).
 
-Pour plus d’informations sur l’installation, voir [Documentation sur l’installation de phpMyAdmin](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install).
+Pour plus d’informations sur l’installation, consultez la [documentation d’installation phpMyAdmin](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install).
 
 >[!NOTE]
 >
->Utilisation de phpMyAdmin dans un système de développement _only_. Il peut s’agir d’un problème de sécurité en production.
+>Utilisez phpMyAdmin dans un système de développement _only_. Il peut s’agir d’un problème de sécurité en production.
 
 1. Pour utiliser phpMyAdmin, saisissez la commande suivante dans le champ d’adresse ou d’emplacement de votre navigateur :
 
@@ -148,4 +148,4 @@ Pour plus d’informations sur l’installation, voir [Documentation sur l’ins
    http://<web server host or IP>/phpmyadmin
    ```
 
-1. Lorsque vous y êtes invité, connectez-vous à l’aide de votre base de données MySQL. `root` ou le nom d’utilisateur et le mot de passe de l’administrateur.
+1. Lorsque vous y êtes invité, connectez-vous à l’aide de votre base de données MySQL `root` ou du nom d’utilisateur et du mot de passe de l’administrateur.

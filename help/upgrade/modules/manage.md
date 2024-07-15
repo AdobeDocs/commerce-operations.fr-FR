@@ -16,10 +16,10 @@ Vous devez utiliser la ligne de commande pour gérer les modules et extensions A
 
 ## Activation ou désactivation d’un module
 
-Pour activer ou désactiver un module, voir [Activation ou désactivation des modules](../../installation/tutorials/manage-modules.md).
+Pour activer ou désactiver un module, voir [Activation ou désactivation de modules](../../installation/tutorials/manage-modules.md).
 
 ## Désinstallation d’un module
 
 Pour désinstaller un module, voir [Désinstallation des modules](../../installation/tutorials/uninstall-modules.md).
 
-Pour désinstaller un thème, utilisez la méthode [`theme:uninstall`](../../installation/tutorials/themes.md) .
+Pour désinstaller un thème, utilisez la commande [`theme:uninstall`](../../installation/tutorials/themes.md).

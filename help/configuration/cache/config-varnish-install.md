@@ -15,14 +15,14 @@ ht-degree: 0%
 L&#39;installation du logiciel Varnish ne relève pas du présent guide. Pour plus d’informations sur l’installation de vernis, voir :
 
 - [guide d’installation](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
-- [Guides d’installation en pointillés](https://www.varnish-cache.org/docs)
+- [Guides d’installation vernis](https://www.varnish-cache.org/docs)
 - [Comment installer Varnish (Tecmint)](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
 
 >[!INFO]
 >
 >Cette rubrique est écrite pour le vernis sur CentOS et Apache 2.4. Si vous configurez le vernis dans un autre environnement, certaines commandes sont probablement différentes. Pour plus d’informations, consultez la documentation précédente .
 >
->Si vous avez l’intention d’installer des modules Varnish (vmods), par exemple le mode saint, vous devez installer le vernis en compilant le code, plutôt qu’en l’installant à partir d’un package. Voir [Mode Saint](config-varnish-advanced.md#saint-mode) pour plus d’informations.
+>Si vous avez l’intention d’installer des modules Varnish (vmods), par exemple le mode saint, vous devez installer le vernis en compilant le code, plutôt qu’en l’installant à partir d’un package. Pour plus d’informations, voir [Mode Saint](config-varnish-advanced.md#saint-mode) .
 
 ## Confirmez votre version de vernis.
 

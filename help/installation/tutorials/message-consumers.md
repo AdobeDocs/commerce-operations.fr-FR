@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Configuration des consommateurs de messages
 
-Avant d’exécuter cette commande, procédez comme suit : *ou* vous devez [installation de l’application](../advanced.md):
+Avant d&#39;exécuter cette commande, vous devez effectuer les *ou* suivants en [installant l&#39;application](../advanced.md) :
 
 * [Création ou mise à jour de la configuration du déploiement](deployment.md)
 * [Création du schéma de la base de données](database.md)

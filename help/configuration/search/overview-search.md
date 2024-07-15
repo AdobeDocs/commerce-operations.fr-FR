@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Présentation du moteur de recherche
 
-À compter de la version 2.4.4, Adobe Commerce requiert : [Elasticsearch] ou [OpenSearch] pour être le moteur de recherche catalogue. Les versions précédentes de la version 2.4.x nécessitaient un Elasticsearch. Pour plus d&#39;informations sur l&#39;installation d&#39;un moteur de recherche et la configuration initiale, reportez-vous aux rubriques suivantes :
+Depuis la version 2.4.4, Adobe Commerce requiert [Elasticsearch] ou [OpenSearch] pour être le moteur de recherche de catalogue. Les versions précédentes de la version 2.4.x nécessitaient un Elasticsearch. Pour plus d&#39;informations sur l&#39;installation d&#39;un moteur de recherche et la configuration initiale, reportez-vous aux rubriques suivantes :
 
 - [Prérequis du moteur de recherche](../../installation/prerequisites/search-engine/overview.md)
 - [Configuration de nginx pour votre moteur de recherche](../../installation/prerequisites/search-engine/configure-nginx.md)

@@ -4,7 +4,7 @@ description: Configurez d’autres sites web, magasins et vues de magasin dans l
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
 source-git-commit: f7c82844fd6d006e4ebbcf56f6e10338f67d0bdd
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ Cette tâche nécessite de créer une catégorie racine (et d’autres catégori
 
 - [Catégories](https://docs.magento.com/user-guide/catalog/categories.html)
 - [Ajout de sites web](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [URL de magasin](https://docs.magento.com/user-guide/stores/store-urls.html)
+- [Store URLs](https://docs.magento.com/user-guide/stores/store-urls.html)
 - [Contenu](https://docs.magento.com/user-guide/cms/content-menu.html)
 
 >[!INFO]
 >
->Par exemple, nous utilisons un site web français avec le code du site web. `french` dans cette rubrique. Pour des tutoriels détaillés, voir [Tutoriel : configuration de plusieurs sites web avec Apache](ms-apache.md) et [Tutoriel : configuration de plusieurs sites web avec nginx](ms-nginx.md)
+>Par exemple, nous utilisons un site web français avec le code de site web `french` dans cette rubrique. Pour des tutoriels détaillés, reportez-vous à la section [Tutoriel : configuration de plusieurs sites web avec Apache](ms-apache.md) et [Tutoriel : configuration de plusieurs sites web avec nginx](ms-nginx.md)
 
 ## Étape 1 : création de catégories racine
 
@@ -30,15 +30,15 @@ Pour créer une catégorie racine :
 
 1. Connectez-vous à l’administrateur en tant qu’utilisateur autorisé à créer des catégories.
 1. Cliquez sur **Catalogue** > **Catégories**.
-1. Cliquez sur **Ajout d’une catégorie racine**.
-1. Dans le **Nom de la catégorie** , saisissez un nom unique pour identifier cette catégorie.
+1. Cliquez sur **Ajouter la catégorie racine**.
+1. Dans le champ **Nom de la catégorie**, saisissez un nom unique pour identifier cette catégorie.
 1. Assurez-vous que l’option Activer la catégorie est définie sur **Oui**.
 
    Pour plus d’informations sur les autres options de cette page, voir [Catégories racine](https://docs.magento.com/user-guide/catalog/category-root.html).
 
    La figure suivante illustre un exemple.
 
-   ![Création et activation d’une catégorie racine](../../assets/configuration/add-root-category.png)
+   ![Créer et activer une catégorie racine](../../assets/configuration/add-root-category.png)
 
 1. Cliquez sur **Enregistrer**.
 1. Répétez ces tâches autant de fois que nécessaire pour créer des catégories racine pour vos magasins.
@@ -48,12 +48,12 @@ Pour créer une catégorie racine :
 Pour créer un site web :
 
 1. Connectez-vous à l’administrateur en tant qu’utilisateur autorisé à créer des sites web, des magasins et des vues de magasin.
-1. Cliquez sur **Magasins** > **Paramètres** > **Toutes les boutiques**.
-1. Sur le _Magasins_ page, cliquez sur **Créer un site web**.
+1. Cliquez sur **Magasins** > **Paramètres** > **Tous les magasins**.
+1. Sur la page _Magasins_, cliquez sur **Créer un site Web**.
 
-   - **Nom**: saisissez un nom pour identifier le site web.
-   - **Code**: saisissez un code unique ; par exemple, si vous disposez d’un magasin français, vous pouvez saisir `french`
-   - **Ordre de tri**: saisissez un ordre de tri numérique facultatif.
+   - **Nom** : saisissez un nom pour identifier le site web.
+   - **Code** : saisissez un code unique ; par exemple, si vous disposez d’un magasin français, vous pouvez saisir `french`
+   - **Ordre de tri** : saisissez un ordre de tri numérique facultatif.
 
    La figure suivante illustre un exemple.
 
@@ -66,13 +66,13 @@ Pour créer un site web :
 
 Pour créer un magasin :
 
-1. Dans le _Administration_ panneau, cliquez sur **Magasins** > **Paramètres** > **Toutes les boutiques**.
-1. Sur le _Magasins_ page, cliquez sur **Créer un magasin**.
+1. Dans le panneau _Admin_, cliquez sur **Magasins** > **Paramètres** > **Toutes les boutiques**.
+1. Sur la page _Magasins_, cliquez sur **Créer un magasin**.
 
-   - **Site Web**: cliquez sur le nom du site web auquel associer ce magasin.
-   - **Nom**: saisissez un nom pour identifier le magasin.
-   - **Code**: saisissez un code unique pour identifier le magasin.
-   - **Catégorie racine**: cliquez sur le nom de la catégorie racine de ce magasin.
+   - **Site Web** : cliquez sur le nom du site Web auquel associer ce magasin.
+   - **Nom** : saisissez un nom pour identifier le magasin.
+   - **Code** : saisissez un code unique pour identifier le magasin.
+   - **Catégorie racine** : cliquez sur le nom de la catégorie racine de ce magasin.
 
    La figure suivante illustre un exemple.
 
@@ -85,37 +85,37 @@ Pour créer un magasin :
 
 Pour créer une vue de magasin :
 
-1. Dans le _Administration_ panneau, cliquez sur **Magasins** > **Paramètres** > **Toutes les boutiques**.
+1. Dans le panneau _Admin_, cliquez sur **Magasins** > **Paramètres** > **Toutes les boutiques**.
 1. Sur la page Magasins, cliquez sur **Créer une vue de magasin**.
 
-   - **Magasin**: cliquez sur le nom du magasin auquel associer cette vue de magasin.
-   - **Nom**: saisissez un nom pour identifier cette vue de magasin.
-   - **Code**: saisissez un nom unique pour identifier cette vue de magasin.
-   - **État**—Select **Activé**.
+   - **Magasin** : cliquez sur le nom du magasin auquel associer cette vue de magasin.
+   - **Nom** : saisissez un nom pour identifier cette vue de magasin.
+   - **Code** : saisissez un nom unique pour identifier cette vue de magasin.
+   - **Status**—Sélectionnez **Enabled**.
 
    La figure suivante illustre un exemple.
 
    ![Ajouter un magasin](../../assets/configuration/multi-site-storeview.png)
 
-1. Cliquez sur **Enregistrer la vue de magasin**.
+1. Cliquez sur **Enregistrer la vue de la boutique**.
 1. Répétez ces tâches autant de fois que nécessaire pour créer vos vues de magasin.
 
 ## Étape 5 : modifier l’URL de base du site web
 
-Pour accéder à un site web à l’aide d’une URL unique, comme `http://french.magento.mg`, vous devez modifier l’URL de base de chaque site dans l’administrateur.
+Pour accéder à un site web à l’aide d’une URL unique telle que `http://french.magento.mg`, vous devez modifier l’URL de base de chaque site dans l’administrateur.
 
 Pour modifier l’URL de base du site web :
 
-1. Dans le _Administration_ panneau, cliquez sur **Magasins** > **Paramètres** > **Configuration** > **Général** > **Web**.
-1. Dans la **Affichage en magasin** dans la liste supérieure de la page, cliquez sur le nom de l’un de vos sites web, comme le montre la figure suivante.
+1. Dans le panneau _Admin_, cliquez sur **Magasins** > **Paramètres** > **Configuration** > **Général** > **Web**.
+1. Dans la liste **Affichage magasin** située en haut de la page, cliquez sur le nom d’un de vos sites web comme le montre la figure suivante.
 
-   ![Sélection d’une portée](../../assets/configuration/multi-site-scope.png)
+   ![Sélectionner une portée](../../assets/configuration/multi-site-scope.png)
 
 1. Dans le volet de droite, développez **URL de base**.
-1. Dans le _URL de base_ , effacer **Utiliser la valeur système**.
-1. Saisissez le `http://french.magento.mg` URL dans le **URL de base** et **URL du lien de base** des champs.
+1. Dans la section _URL de base_, effacez la mention **Utiliser la valeur système**.
+1. Saisissez l’URL `http://french.magento.mg` dans les champs **URL de base** et **URL de lien de base** .
 
-1. Répétez l’étape précédente dans le _URL de base (sécurisées)_ .
+1. Répétez l’étape précédente dans la section _URL de base (sécurisées)_ .
 
    >[!INFO]
    >
@@ -127,24 +127,24 @@ Pour modifier l’URL de base du site web :
 
 ## Étape 6 : Ajout du code de magasin à l’URL de base
 
-Commerce vous offre la possibilité d’ajouter le code de magasin à l’URL de base du site, ce qui simplifie le processus de configuration de plusieurs magasins. Avec cette option, il n’est pas nécessaire de créer des répertoires sur le système de fichiers Commerce à stocker. `index.php` et `.htaccess`.
+Commerce vous offre la possibilité d’ajouter le code de magasin à l’URL de base du site, ce qui simplifie le processus de configuration de plusieurs magasins. Avec cette option, vous n’avez pas à créer de répertoires sur le système de fichiers Commerce pour stocker `index.php` et `.htaccess`.
 
-Cela empêche `index.php` et `.htaccess` pour ne pas être synchronisé avec le code base de commerce lors des futures mises à niveau.
+Cela empêche `index.php` et `.htaccess` de se désynchroniser avec le code base de Commerce lors des futures mises à niveau.
 
-Voir [Guide de l’utilisateur de Commerce](https://docs.magento.com/user-guide/stores/store-urls.html).
+Voir le [Guide de l’utilisateur de Commerce](https://docs.magento.com/user-guide/stores/store-urls.html).
 
 Pour ajouter le code de magasin à l’URL de base :
 
-1. Dans le _Administration_ panneau, cliquez sur **Magasins** > **Paramètres** > **Configuration** > **Général** > **Web**.
-1. Dans la **Affichage en magasin** dans la liste supérieure de la page, cliquez sur **Configuration par défaut** comme le montre la figure suivante.
+1. Dans le panneau _Admin_, cliquez sur **Magasins** > **Paramètres** > **Configuration** > **Général** > **Web**.
+1. Dans la liste **Affichage magasin** située en haut de la page, cliquez sur **Configuration par défaut** comme le montre la figure suivante.
 
-   ![Sélection de l’étendue de configuration par défaut](../../assets/configuration/multi-site-default.png)
+   ![Sélectionnez la portée de configuration par défaut](../../assets/configuration/multi-site-default.png)
 
-1. Dans le volet de droite, développez **Options D’Url**.
-1. Effacez la variable **Utiliser la valeur système** en regard de _Ajout de code de magasin aux URL_.
-1. Dans la _Ajout de code de magasin aux URL_ liste, cliquez sur **Oui**.
+1. Dans le volet de droite, développez **Url Options**.
+1. Décochez la case **Utiliser la valeur système** en regard de _Ajouter le code magasin aux URL_.
+1. Dans la liste _Ajouter un code de magasin aux URL_, cliquez sur **Oui**.
 
-   ![Ajouter le code de magasin à l’URL de base du magasin](../../assets/configuration/multi-site-add-store-url.png)
+   ![Ajoutez le code de magasin à l’URL de base du magasin](../../assets/configuration/multi-site-add-store-url.png)
 
 1. Cliquez sur **Enregistrer la configuration**.
 1. Si vous y êtes invité, videz le cache. (**Système** > **Gestion du cache**).
@@ -155,17 +155,17 @@ Vous devez effectuer cette étape en dernier lieu, car vous perdrez l’accès �
 
 Pour modifier l’URL de base de la vue de magasin par défaut :
 
-1. Dans le _Administration_ panneau, cliquez sur **Magasins** > **Paramètres** > **Configuration** > **Général** > **Web**.
+1. Dans le panneau _Admin_, cliquez sur **Magasins** > **Paramètres** > **Configuration** > **Général** > **Web**.
 
-1. Dans la _Affichage en magasin_ dans la liste supérieure de la page, cliquez sur **Configuration par défaut**.
+1. Dans la liste _Affichage magasin_ située en haut de la page, cliquez sur **Configuration par défaut**.
 
-   ![Sélection de l’étendue de configuration par défaut](../../assets/configuration/multi-site-default.png)
+   ![Sélectionnez la portée de configuration par défaut](../../assets/configuration/multi-site-default.png)
 
 1. Dans le volet de droite, développez **URL de base**.
-1. Dans le _URL de base_ , effacer **Utiliser la valeur système**.
-1. Saisissez le `http://magento.mg` URL dans le **URL de base** et **URL du lien de base** des champs.
+1. Dans la section _URL de base_, effacez la mention **Utiliser la valeur système**.
+1. Saisissez l’URL `http://magento.mg` dans les champs **URL de base** et **URL de lien de base** .
 
-1. Répétez l’étape précédente dans le **URL de base (sécurisées)** .
+1. Répétez l’étape précédente dans la section **URL de base (sécurisées)** .
 
    >[!INFO]
    >
@@ -175,4 +175,4 @@ Pour modifier l’URL de base de la vue de magasin par défaut :
 
 >[!INFO]
 >
->Le code d’affichage du site web, du magasin et du magasin peut inclure des lettres (a-z ou A-Z), des chiffres (0-9) et des traits de soulignement (_) uniquement. En outre, le premier caractère doit être une lettre. Si des majuscules ou des minuscules sont utilisées, la correspondance n’est pas sensible à la casse en interne pour permettre le remplacement des paramètres de configuration par le biais de variables d’environnement. Voir [Utilisation des variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).
+>Le code d’affichage du site web, du magasin et du magasin peut inclure des lettres (a-z ou A-Z), des chiffres (0-9) et des traits de soulignement (_) uniquement. En outre, le premier caractère doit être une lettre. Si des majuscules ou des minuscules sont utilisées, la correspondance n’est pas sensible à la casse en interne pour permettre le remplacement des paramètres de configuration par le biais de variables d’environnement. Voir [Utilisation de variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).

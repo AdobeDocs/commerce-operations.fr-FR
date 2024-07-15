@@ -4,7 +4,7 @@ description: Découvrez comment exécuter le compilateur de code à partir de la
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ La compilation de code comprend les éléments suivants (sans ordre particulier)
 - Génération de code de référentiels (code généré pour les API)
 - Génération d’attributs de données de service (classes d’extension générées pour les objets de données)
 
-Vous trouverez les classes de compilation de code dans la variable [\Magento\Setup\Module\Di\App\Task\Operation][operation] espace de noms.
+Vous trouverez des classes de compilation de code dans l’espace de noms [\Magento\Setup\Module\Di\App\Task\Operation][operation] .
 
 Pour exécuter le compilateur client unique :
 
@@ -44,7 +44,7 @@ Dans certains cas, vous souhaiterez peut-être compiler le code avant d’instal
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
-   Utilisez la variable `[-c|--clear-static-content]` pour effacer le contenu statique. Cela est nécessaire si vous avez précédemment activé ou désactivé les modules et que vous devez effacer le contenu statique généré précédemment pour ceux-ci.
+   Utilisez l’option `[-c|--clear-static-content]` pour effacer le contenu statique. Cela est nécessaire si vous avez précédemment activé ou désactivé les modules et que vous devez effacer le contenu statique généré précédemment pour ceux-ci.
 
    Voir [Activation des modules](../../installation/tutorials/manage-modules.md).
 
@@ -58,7 +58,7 @@ Dans certains cas, vous souhaiterez peut-être compiler le code avant d’instal
    Generated code and dependency injection configuration successfully.
    ```
 
-Pour compiler du code sans base de données, voir [Déployer des fichiers d’affichage statique sans installer Magento](../cli/static-view-file-deployment.md).
+Pour compiler du code sans base de données, voir [Déploiement de fichiers d’affichage statique sans installation de Magento](../cli/static-view-file-deployment.md).
 
 <!-- link definitions -->
 

@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Mettre à jour le système de génération
 
-**Mise à jour du système de génération**:
+**Pour mettre à jour le système de génération** :
 
 1. Connectez-vous au système de génération en tant que propriétaire du système de fichiers.
 1. Modifiez le répertoire racine de l’application.
@@ -16,7 +16,7 @@ ht-degree: 0%
    cd <Magento root dir>
    ```
 
-1. Extrayez les modifications dans `app/etc/config.php` du contrôle source.
+1. Extrayez les modifications vers `app/etc/config.php` à partir du contrôle source.
 
    ```bash
    git pull mconfig m2.2_deploy

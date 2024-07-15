@@ -29,7 +29,7 @@ Utilisez la commande suivante pour vérifier le moteur de recherche actuel :
 bin/magento config:show catalog/search/engine
 ```
 
-L’erreur se produit si la valeur renvoyée est `mysql`, `elasticsearch`, ou `elasticsearch6`.
+L’erreur se produit si la valeur renvoyée est `mysql`, `elasticsearch` ou `elasticsearch6`.
 
 >[!WARNING]
 >
@@ -43,7 +43,7 @@ L’erreur se produit si la valeur renvoyée est `mysql`, `elasticsearch`, ou `e
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->Où `<version>` est la version du Magento que vous utilisiez. **before** la mise à niveau. Par exemple : `2.3.5`.
+>Où `<version>` est la version du Magento que vous exécutiez **avant** la mise à niveau. Par exemple, `2.3.5`.
 
 Suivez les instructions décrites dans les sections suivantes pour récupérer à partir d’un état incohérent.
 
@@ -62,16 +62,16 @@ Après avoir configuré le moteur de recherche et réindexé, vous êtes prêt �
 
 Elasticsearch 6 et versions antérieures ne sont plus prises en charge.
 
-Une valeur de `elasticsearch` indique que votre version inférieure d’Adobe Commerce est configurée pour utiliser Elasticsearch 2.x. Cette version d’Elasticsearch n’est plus prise en charge.
+La valeur `elasticsearch` indique que votre version de bas niveau d’Adobe Commerce est configurée pour utiliser Elasticsearch 2.x. Cette version d’Elasticsearch n’est plus prise en charge.
 
 Vous devez effectuer les tâches suivantes avant la mise à niveau vers la version 2.4 :
 
-1. Mise à jour vers une version d’Elasticsearch prise en charge par Commerce. Voir [Mise à niveau d’Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) pour obtenir des instructions complètes sur la sauvegarde de vos données, la détection des problèmes de migration potentiels et le test des mises à niveau avant le déploiement en production. Selon votre version actuelle d’Elasticsearch, un redémarrage complet de la grappe peut être nécessaire ou non.
+1. Mise à jour vers une version d’Elasticsearch prise en charge par Commerce. Pour obtenir des instructions complètes sur la sauvegarde de vos données, la détection des problèmes de migration potentiels et le test des mises à niveau avant le déploiement en production, reportez-vous à la section [Mise à niveau d’Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) . Selon votre version actuelle d’Elasticsearch, un redémarrage complet de la grappe peut être nécessaire ou non.
 
    >[!NOTE]
    >
-   >Elasticsearch requiert JDK 1.8 ou version ultérieure. Voir [Installation de Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) pour vérifier quelle version de JDK est installée.
+   >Elasticsearch requiert JDK 1.8 ou version ultérieure. Voir [Installation du Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) pour vérifier quelle version de JDK est installée.
 
-1. [Configurer l’Elasticsearch](../../configuration/search/configure-search-engine.md) et réindexez.
+1. [Configurez Elasticsearch](../../configuration/search/configure-search-engine.md) et réindexez.
 
 Après avoir configuré le moteur de recherche et réindexé, vous êtes prêt à effectuer la mise à niveau vers la version 2.4.

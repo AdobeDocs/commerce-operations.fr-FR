@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Mettre à niveau une installation basée sur Git
 
-Cette rubrique explique comment un développeur contributeur peut mettre à jour Adobe Commerce sans le réinstaller. Si vous n’êtes pas un développeur contributeur, reportez-vous à la section [Effectuer une mise à niveau](../implementation/perform-upgrade.md).
+Cette rubrique explique comment un développeur contributeur peut mettre à jour Adobe Commerce sans le réinstaller. Si vous n&#39;êtes pas un développeur contributeur, reportez-vous à la section [Réaliser une mise à niveau](../implementation/perform-upgrade.md).
 
 Pour effectuer une mise à niveau si vous êtes un développeur contributeur :
 
 {{$include /help/_includes/server-login.md}}
 
-1. Enregistrez les modifications apportées au `composer.json` car les étapes suivantes l’écrasent.
+1. Enregistrez les modifications apportées au fichier `composer.json`, car les étapes suivantes l’écrasent.
 
-1. Créez une sauvegarde de votre `composer.json` fichier .
+1. Créez une sauvegarde de votre fichier `composer.json`.
 
    ```bash
    cp composer.json composer.json.old
@@ -33,11 +33,11 @@ Pour effectuer une mise à niveau si vous êtes un développeur contributeur :
 
    >[!NOTE]
    >
-   >If `git pull origin develop` échec, voir [dépannage](https://support.magento.com/hc/en-us/articles/360034229872).
+   >Si `git pull origin develop` échoue, voir [dépannage](https://support.magento.com/hc/en-us/articles/360034229872).
 
-1. Divisez et fusionnez votre `composer.json.old` avec le fichier `composer.json` fichier .
+1. Divisez et fusionnez votre fichier `composer.json.old` avec le fichier `composer.json`.
 
-1. Résolvez les dépendances et écrivez des versions exactes dans la variable `composer.lock` fichier .
+1. Résolvez les dépendances et écrivez des versions exactes dans le fichier `composer.lock`.
 
    ```bash
    composer update

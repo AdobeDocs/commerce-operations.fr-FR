@@ -15,7 +15,7 @@ Pour les projets de mise en oeuvre numérique, il existe généralement une stru
 
 Le diagramme suivant illustre la structure de l&#39;organisation :
 
-![Diagramme de structure organisationnelle](../../assets/playbooks/org-structure.png)
+![ Diagramme de structure organisationnelle ](../../assets/playbooks/org-structure.png)
 
 Les avantages de cette forme de modèle centralisé dans un projet de mise en oeuvre numérique incluent :
 

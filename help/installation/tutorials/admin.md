@@ -20,7 +20,7 @@ Avant de pouvoir utiliser cette commande, vous devez effectuer les opérations s
 
 >[!NOTE]
 >
->La méthode la plus simple pour créer la base de données consiste à utiliser la commande . `magento setup:upgrade`.
+>La méthode la plus simple pour créer la base de données consiste à utiliser la commande `magento setup:upgrade`.
 
 ## Créer ou modifier un administrateur
 
@@ -28,7 +28,7 @@ Utilisez cette commande pour créer un administrateur ou pour modifier un admini
 
 >[!NOTE]
 >
->Si vous modifiez un administrateur, seule la variable `first name`, `last name`, et `password` peut être modifié.
+>Si vous modifiez un administrateur, seuls les éléments `first name`, `last name` et `password` peuvent être modifiés.
 
 Utilisation des commandes :
 
@@ -44,8 +44,8 @@ Où le tableau suivant définit des paramètres et des valeurs :
 | `--admin-lastname` | Nom de l’utilisateur administrateur. | Oui |
 | `--admin-email` | Adresse électronique de l’utilisateur administrateur. | Oui |
 | `--admin-user` | Nom d’utilisateur administrateur. | Oui |
-| `--admin-password` | Mot de passe de l’administrateur. Le mot de passe doit contenir au moins 7 caractères et au moins un caractère alphabétique et au moins un caractère numérique. <br><br>Nous vous recommandons un mot de passe plus long et plus complexe. Si la chaîne de mot de passe contient des caractères spéciaux nécessitant une interprétation littérale (barres obliques inverses ou espaces, par exemple), placez le mot de passe entre guillemets simples. | Oui |
-| `--magento-init-params` | Ajouter à toute commande pour personnaliser les paramètres d’initialisation de l’application<br/><br/>Par exemple : `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | Non |
+| `--admin-password` | Mot de passe de l’administrateur. Le mot de passe doit contenir au moins 7 caractères et au moins un caractère alphabétique et au moins un caractère numérique. <br><br>Nous recommandons un mot de passe plus long et plus complexe. Si la chaîne de mot de passe contient des caractères spéciaux nécessitant une interprétation littérale (barres obliques inverses ou espaces, par exemple), placez le mot de passe entre guillemets simples. | Oui |
+| `--magento-init-params` | Ajoutez à n’importe quelle commande pour personnaliser les paramètres d’initialisation de l’application<br/><br/>Par exemple : `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | Non |
 
 Exemple d’utilisation :
 
@@ -75,7 +75,7 @@ Admin last name: Doe Young
 Created Magento administrator user named John
 ```
 
-L’exemple suivant met à jour : `first name`, `last name`, et `password` de `j.doe` utilisateur admin :
+L’exemple suivant met à jour `first name`, `last name` et `password` de l’utilisateur administrateur `j.doe` :
 
 ```bash
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567
@@ -109,7 +109,7 @@ Si le compte n’est pas déverrouillé ou en cas de problème, le message suiva
 The user account "admin" was not locked or could not be unlocked
 ```
 
-Vérifiez que l’utilisateur est un administrateur, qu’il est actif et que le compte est verrouillé. Pour afficher la liste des utilisateurs verrouillés dans l’administrateur, connectez-vous en tant qu’administrateur, puis cliquez sur **Système** > **Autorisations** > **Utilisateurs verrouillés**.
+Vérifiez que l’utilisateur est un administrateur, qu’il est actif et que le compte est verrouillé. Pour afficher la liste des utilisateurs verrouillés dans l’administrateur, connectez-vous en tant qu’administrateur et cliquez sur **Système** > **Autorisations** > **Utilisateurs verrouillés**.
 
 Si le compte n’existe pas, le message suivant s’affiche :
 

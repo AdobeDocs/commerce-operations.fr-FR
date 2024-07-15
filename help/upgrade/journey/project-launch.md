@@ -13,4 +13,4 @@ ht-degree: 0%
 
 La maintenance d’un site d’e-commerce sain est tout aussi essentielle à la réussite de votre entreprise que votre lancement initial. L’un des aspects clés de cette démarche est la planification proactive et la préparation aux mises à niveau qui aident votre site à fonctionner le plus efficacement possible.
 
-Ne pas définir les attentes de mise à niveau appropriées pendant cette période entraîne un mécontentement futur. Assurez-vous de connaître et de comprendre le [cadence de publication](https://devdocs.magento.com/release/)et utilisez ce guide pour vous aider à définir comment et à quel moment planifier les mises à niveau.
+Ne pas définir les attentes de mise à niveau appropriées pendant cette période entraîne un mécontentement futur. Assurez-vous de connaître et de comprendre la [cadence de publication](https://devdocs.magento.com/release/), et utilisez ce guide pour vous aider à définir comment et quand planifier les mises à niveau.

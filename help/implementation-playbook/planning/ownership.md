@@ -18,6 +18,6 @@ Cela se produit souvent en raison d’un manque de clarté dans les rôles et le
 
 ## Comment collaborons-nous collectivement ?
 
-une matrice responsable, responsable, consultée et informée, comme nous l&#39;avons mentionné dans la section [portée du projet](../project-scope/deliverables.md) est un outil utile qui définit et documente la propriété et la responsabilité à chaque étape du projet. Dans la matrice, chaque tâche, chaque jalon et chaque décision du projet est mappé à des rôles ou à des individus spécifiques. Il permet à la gestion de projet de rationaliser les processus en s’assurant que chaque membre de l’équipe et chaque partie prenante comprend leurs rôles spécifiques. Cela devrait être défini lors de la phase de planification du projet et accepté par chaque partie prenante.
+Une matrice responsable, responsable, consultée et informée (RACI), comme nous l&#39;avons mentionné dans la section [portée du projet](../project-scope/deliverables.md), est un outil utile qui définit et documente la propriété et la responsabilité à chaque étape du projet. Dans la matrice, chaque tâche, chaque jalon et chaque décision du projet est mappé à des rôles ou à des individus spécifiques. Il permet à la gestion de projet de rationaliser les processus en s’assurant que chaque membre de l’équipe et chaque partie prenante comprend leurs rôles spécifiques. Cela devrait être défini lors de la phase de planification du projet et accepté par chaque partie prenante.
 
-![Tableau décrivant la structure de l’IARAC](../../assets/playbooks/raci.svg)
+![Tableau décrivant la structure RACI](../../assets/playbooks/raci.svg)

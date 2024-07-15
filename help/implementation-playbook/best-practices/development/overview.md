@@ -26,7 +26,7 @@ La phase de développement comprend les activités suivantes :
 
 >[!TIP]
 >
->Voir [bonnes pratiques générales](general.md) pour obtenir des recommandations de haut niveau sur la gestion globale du processus de développement.
+>Pour obtenir des recommandations de haut niveau sur la gestion globale du processus de développement, voir [bonnes pratiques générales](general.md) .
 
 Les sections suivantes contiennent des informations sur les bonnes pratiques pour la phase de développement.
 
@@ -34,8 +34,8 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques pou
 
 | Bonne pratique | Description |
 |-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| [Révision du code](code-review.md) | Processus de validation recommandé pour s’assurer que les fonctionnalités mises en oeuvre répondent aux exigences |
-| [Comparaison entre le compositeur et Git](code-management.md) | Déterminer comment distribuer du code personnalisé en tenant compte de la gestion des versions, de la complexité du code et de la gestion des dépendances |
+| [Examen du code](code-review.md) | Processus de validation recommandé pour s’assurer que les fonctionnalités mises en oeuvre répondent aux exigences |
+| [Compositeur par rapport à Git](code-management.md) | Déterminer comment distribuer du code personnalisé en tenant compte de la gestion des versions, de la complexité du code et de la gestion des dépendances |
 | [Stratégie d&#39;embranchement](git-branching.md) | Gestion du code source dans les référentiels Git |
 
 ## Plateforme et services
@@ -57,7 +57,7 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques pou
 
 | Bonne pratique | Description |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [Redimensionnement des images du catalogue](catalog-image-resizing.md) | Fournit des conseils sur le redimensionnement des images avant que le magasin ne passe en production pour garantir des performances optimales |
+| [Redimensionnement d’image du catalogue](catalog-image-resizing.md) | Fournit des conseils sur le redimensionnement des images avant que le magasin ne passe en production pour garantir des performances optimales |
 | [CSS et JS](optimize-css-js-files.md) | Fusion et minimisation de fichiers CSS (feuilles de style en cascade) et JavaScript (JS) depuis l’administrateur ou la ligne de commande |
 | [Images](image-optimization.md) | Optimisation des images et utilisation rapide pour optimiser le temps de réponse |
 
@@ -74,4 +74,4 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques pou
 | [Gestion des exceptions](exception-handling.md) | Décrit les méthodes recommandées de journalisation des exceptions |
 | [Extensions](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Décrit les modèles de développement pour garantir la compatibilité entre votre extension, les versions futures d’Adobe Commerce et d’autres extensions personnalisées. |
 | [Blocs de contenu privé](private-content-block-configuration.md) | Configuration de blocs de contenu privés pour optimiser les performances du storefront |
-| [Modification du code PHP principal et tiers](modifying-core-and-third-party-code.md) | Modifiez la fonctionnalité, le résultat ou la saisie de tout code que vous n’avez pas créé ou dont vous n’avez pas directement le contrôle. |
+| [Modifier le code PHP principal et tiers](modifying-core-and-third-party-code.md) | Modifiez la fonctionnalité, le résultat ou la saisie de tout code que vous n’avez pas créé ou dont vous n’avez pas directement le contrôle. |

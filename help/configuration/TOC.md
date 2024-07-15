@@ -41,7 +41,7 @@ ht-degree: 0%
       + [Configuration de Redis](cache/config-redis.md)
       + [Utiliser des redis pour le cache par défaut](cache/redis-pg-cache.md)
       + [Utilisation de Redis pour le stockage de session](cache/redis-session.md)
-   + Varnish {#varnish}
+   + vernis {#varnish}
       + [Présentation du vernis](cache/config-varnish.md)
       + [Installer le vernis](cache/config-varnish-install.md)
    + [Serveur web](cache/config-varnish-server.md)
@@ -105,7 +105,7 @@ ht-degree: 0%
    + [Interface de journalisation](logs/logger-interface.md)
    + [Activité Log database](logs/database-activity.md)
    + [Écriture dans un fichier journal personnalisé](logs/custom-log-files.md)
-+ Queues des messages {#message-queues}
++ Files d’attente de messages {#message-queues}
    + [Structure de la file d&#39;attente des messages](queues/message-queue-framework.md)
    + [Gestion des files d’attente de messages](queues/manage-message-queues.md)
    + [Configuration d’Amazon MQ](queues/aws-mq.md)
@@ -146,4 +146,4 @@ ht-degree: 0%
       + [Vérifier la base de données partagée](storage/multi-master-verify.md)
       + [Réplication des bases de données](storage/multi-master-replication.md)
       + [Rétablissement d’une seule base de données](storage/revert-split-database.md)
-+ [Revenir aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
++ [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -1,7 +1,7 @@
 ---
 source-git-commit: 85e9a890f8ccb0f4d8b63c9c96971cf6e011f992
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 | Bartlomiejsz | [magento/magento2#33658](https://github.com/magento/magento2/pull/33658) | [magento/magento2#33839](https://github.com/magento/magento2/issues/33839) |
 | sergiy-v | [magento/magento2#33530](https://github.com/magento/magento2/pull/33530) | [magento/magento2#33531](https://github.com/magento/magento2/issues/33531) |
 | qsolutions-pl | [magento/magento2#33487](https://github.com/magento/magento2/pull/33487) | [magento/magento2#33486](https://github.com/magento/magento2/issues/33486) |
-| Jitheesh | [magento/magento2#33468](https://github.com/magento/magento2/pull/33468) | [fast/fast-magento2#466](https://github.com/fastly/fastly-magento2/issues/466) [magento/magento2#28102](https://github.com/magento/magento2/issues/28102) [magento/magento2#6401](https://github.com/magento/magento2/issues/6401) |
+| Jitheesh | [magento/magento2#33468](https://github.com/magento/magento2/pull/33468) | [/fastly-magento2#466](https://github.com/fastly/fastly-magento2/issues/466) [magento/magento2#28102](https://github.com/magento/magento2/issues/28102) [magento/magento2#6401](https://github.com/magento/magento2/issues/6401) |
 | monteshot | [magento/magento2#33449](https://github.com/magento/magento2/pull/33449) | [magento/magento2#33334](https://github.com/magento/magento2/issues/33334) |
 | AnnaAPak | [magento/magento2#33431](https://github.com/magento/magento2/pull/33431) | [magento/magento2#33635](https://github.com/magento/magento2/issues/33635) |
 | ihor-sviziev | [magento/magento2#33419](https://github.com/magento/magento2/pull/33419) | [magento/magento2#34166](https://github.com/magento/magento2/issues/34166) |

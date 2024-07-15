@@ -1,5 +1,5 @@
 ---
-title: Intégrations commerciales
+title: Intégrations Commerce
 description: équipez votre équipe des outils dont elle a besoin pour satisfaire vos clients et garantir des opérations quotidiennes transparentes.
 exl-id: 52bfa6c7-0687-45de-8889-c529cea7d01a
 feature: Best Practices, Integration
@@ -16,7 +16,8 @@ La plupart des entreprises comprennent que de nombreuses stratégies et processu
 
 La plupart des besoins opérationnels peuvent être satisfaits à l’aide de différentes plates-formes logicielles, notamment les plates-formes ERP, les marchés, les outils de renseignements commerciaux, les logiciels de comptabilité, les suites de rapports, etc. Le logiciel supplémentaire est sélectionné pour réduire le temps et les efforts de l’entreprise tout en optimisant l’expérience client et les opérations commerciales.
 
-Lors de la sélection d’un fournisseur tiers, les entreprises doivent utiliser une approche simple et efficace pour l’intégration qui répond à leurs besoins. Après avoir compris les besoins des clients, décidez d’un plan détaillé avec l’aide de la partie prenante. Après avoir décidé du plan, configurez un document de spécification qui définit la manière dont le système communique et quel type de données est requis et transmis à un tiers.
+Lorsque vous sélectionnez un fournisseur tiers, les entreprises doivent utiliser une
+et une approche efficace de l&#39;intégration qui répond à leurs besoins. Après avoir compris les besoins des clients, décidez d’un plan détaillé avec l’aide de la partie prenante. Après avoir décidé du plan, configurez un document de spécification qui définit la manière dont le système communique et quel type de données est requis et transmis à un tiers.
 
 >[!NOTE]
 >

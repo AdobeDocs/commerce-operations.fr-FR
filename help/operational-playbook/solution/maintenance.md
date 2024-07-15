@@ -4,7 +4,7 @@ description: Fixer des normes de qualité et mettre en place des mécanismes pou
 exl-id: 8f394ae0-02c4-4efc-a313-40b8c48aecbb
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -29,17 +29,18 @@ En effectuant une mise à niveau, vous optimisez votre entreprise par l’avenir
 
 Voici une liste rapide des questions que vous devez poser lorsque vous planifiez votre mise à niveau :
 
-- **Nettoyage du site**— Que puis-je garder et que puis-je changer ? Quelles sont les nouveautés que je souhaite implémenter ? Par exemple, quelles modifications dois-je apporter à la taxonomie et à la structure du produit ou au contenu ?
+- **Nettoyage du site** : que puis-je conserver et que puis-je changer ? Quelles sont les nouveautés que je souhaite implémenter ? Par exemple, quelles modifications dois-je apporter à la taxonomie et à la structure du produit ou au contenu ?
 
-- **Vérification Analytics**— Quels sont mes indicateurs clés de performance actuels ? Que me disent mes données sur la manière dont mon site pourrait être amélioré ? Y a-t-il de nouveaux indicateurs clés de performance que je souhaite mettre en oeuvre pour mon nouveau site ?
+- **Vérification Analytics** : quels sont mes indicateurs clés de performance actuels ? Que me disent mes données sur la manière dont mon site pourrait être amélioré ? Y a-t-il de nouveaux indicateurs clés de performance que je souhaite mettre en oeuvre pour mon nouveau site ?
 
-- **Extensions**- Ai-je encore besoin d&#39;eux ? Quelles extensions tierces répondent à mes besoins ?
+- **Extensions** : ai-je toujours besoin d’elles ? Quelles extensions tierces répondent à mes besoins ?
 
-- **Intégrations**— Avec quels systèmes tiers, tels que l’ERP et la comptabilité, dois-je m’intégrer ? Disposent-ils de connecteurs spécifiques ou les intégrations personnalisées sont-elles nécessaires ?
+- **Intégrations** : avec quels systèmes tiers, tels que l’ERP et la comptabilité, dois-je intégrer ? Disposent-ils de connecteurs spécifiques ou les intégrations personnalisées sont-elles nécessaires ?
 
-- **Formation**—L&#39;équipe de mise à niveau a-t-elle les connaissances et la formation adéquates ? Quel est mon plan pour former les utilisateurs finaux à l’utilisation du nouvel administrateur avant qu’il ne soit mis en ligne ?
+- **Formation** : l’équipe de mise à niveau dispose-t-elle des connaissances et de la formation appropriées ? What&#39;s
+mon plan de formation des utilisateurs finaux sur l’utilisation du nouvel administrateur avant sa mise en service ?
 
-- **Équipe de mise à niveau**—Qui est dédié au projet de mise à niveau (experts internes et externes) ? Ont-ils le soutien nécessaire de la part des dirigeants et d&#39;autres équipes internes ?
+- **Équipe de mise à niveau** : qui est dédié au projet de mise à niveau (experts internes et externes) ? Ont-ils le soutien nécessaire de la part des dirigeants et d&#39;autres équipes internes ?
 
 ## Questions courantes relatives à la mise à niveau
 
@@ -50,7 +51,7 @@ R : Cela dépend de la plateforme et de l’architecture. Il y a beaucoup de var
 
 Q : Combien coûte l’upgrade ?
 
-R : Encore une fois, cela dépend de votre situation actuelle et de vos besoins pour votre nouveau site. La bonne nouvelle, c’est que, généralement, à mesure que les partenaires et les développeurs se familiarisent et s’habituent à votre plate-forme Commerce, les coûts de mise à niveau et la durée des projets diminuent. Nous vous recommandons de consulter votre Solution Partner pour obtenir une estimation.
+R : Encore une fois, cela dépend de votre situation actuelle et de vos besoins pour votre nouveau site. La bonne nouvelle, c’est que généralement, à mesure que les partenaires et les développeurs se familiarisent et s’habituent à votre plateforme Commerce, les coûts de mise à niveau et la durée des projets diminuent. Nous vous recommandons de consulter votre Solution Partner pour obtenir une estimation.
 
 Q : Les versions Adobe Commerce 2 de mes extensions Adobe Commerce 1 sont-elles disponibles ?
 

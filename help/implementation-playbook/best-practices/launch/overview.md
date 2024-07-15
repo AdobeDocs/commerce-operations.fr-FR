@@ -5,7 +5,7 @@ exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
 feature: Best Practices
 source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '157'
 ht-degree: 1%
 
 ---
@@ -26,14 +26,14 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
 
 | Bonne pratique | Description |
 |------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Adobe Security Notification Service](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Abonnez-vous aux notifications de sécurité Adobe. |
-| [Sécurisez votre site et votre infrastructure Commerce](security-best-practices.md) | Renforcez la sécurité des installations Commerce afin de protéger le storefront, l’administration, l’infrastructure et les données de Commerce contre les accès non autorisés et les cyber-attaques. |
+| [Service de notification de sécurité d’Adobe](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Abonnez-vous aux notifications de sécurité Adobe. |
+| [Sécurisez votre site et votre infrastructure Commerce](security-best-practices.md) | Renforcer la sécurité des installations Commerce afin de protéger le storefront, l’administration, l’infrastructure et les données Commerce contre les accès non autorisés et les cyber-attaques. |
 | [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html) | Configurez Google reCAPTCHA pour l’accès administrateur et diverses actions de storefront initiées par les clients enregistrés. |
-| [Configuration des moteurs de recherche web](robots-txt.md) | Transmettez des instructions sur votre site Adobe Commerce aux moteurs de recherche Web. |
-| [Vérification de la configuration de sécurité](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html) | Consultez les éléments de liste de contrôle avant de lancer Adobe Commerce sur le site d’infrastructure cloud. |
+| [Configurer les moteurs de recherche Web](robots-txt.md) | Transmettez des instructions sur votre site Adobe Commerce aux moteurs de recherche Web. |
+| [Vérification de la configuration de la sécurité](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html) | Consultez les éléments de liste de contrôle avant de lancer Adobe Commerce sur le site d’infrastructure cloud. |
 
 ## Surveillance des performances
 
 | Bonne pratique | Description |
 |------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [Utilisez la variable [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Affichez les informations importantes sur votre site Adobe Commerce à un seul endroit. |
+| [Utilisez le  [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Affichez les informations importantes sur votre site Adobe Commerce à un seul endroit. |

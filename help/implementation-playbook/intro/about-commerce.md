@@ -5,7 +5,7 @@ exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
 feature: Cloud, Integration, Inventory, Orders, Security, Staging, Shipping/Delivery
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '296'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ En associant le contenu au commerce pour répondre aux demandes des clients en c
 
 ## Réaliser des achats homogènes partout
 
-La croissance du commerce est alimentée par la satisfaction des besoins de vos clients. Développez votre portée et développez de nouveaux canaux, géographies et vendez-les en ligne à la fois aux entreprises et aux consommateurs dans une seule plateforme. Amenez le commerce à vos clients où, quand et quand ils préfèrent faire leurs achats.
+La croissance de Commerce est alimentée par les besoins de vos clients. Développez votre portée et développez de nouveaux canaux, géographies et vendez-les en ligne à la fois aux entreprises et aux consommateurs dans une seule plateforme. Amenez le commerce à vos clients où, quand et quand ils préfèrent faire leurs achats.
 
 - Mobile commerce
 - Commerce électronique B2B

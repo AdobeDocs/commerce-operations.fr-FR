@@ -4,7 +4,7 @@ description: Résolution des problèmes liés à votre projet Commerce à l’ai
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Les utilitaires de prise en charge d’Adobe Commerce, également appelés [Collecteur de données](https://docs.magento.com/user-guide/system/support-data-collector.html): permet aux utilisateurs de collecter des informations de dépannage sur votre système qui peuvent être utilisées par notre équipe d’assistance.
+Les utilitaires de support Adobe Commerce, également appelés [Collecteur de données](https://docs.magento.com/user-guide/system/support-data-collector.html), permettent aux utilisateurs de collecter des informations de dépannage sur votre système qui peuvent être utilisées par notre équipe de support.
 
-Adobe Commerce utilise ces sauvegardes, également appelées _vidages_, pour analyser les problèmes qui nécessitent l’accès à votre code. Voici un scénario type :
+Adobe Commerce utilise ces sauvegardes, également appelées _dumps_, pour analyser les problèmes qui nécessitent l’accès à votre code. Voici un scénario type :
 
-1. Vous rencontrez un problème avec votre boutique de commerce et vous contactez l’assistance d’Adobe Commerce.
+1. Vous rencontrez un problème avec votre boutique Commerce et vous contactez l’assistance Adobe Commerce.
 1. L’assistance détermine qu’ils doivent voir votre code ou votre base de données pour reproduire le problème.
-1. Vous sauvegardez le code dans une `.tar.gz` fichier .
+1. Vous sauvegardez le code dans un fichier `.tar.gz`.
 
    Cette sauvegarde _exclut vos fichiers multimédias afin d’accélérer le processus et d’obtenir un fichier beaucoup plus petit.
 
-1. Vous sauvegardez la base de données dans une `.tar.gz` fichier .
+1. Vous sauvegardez la base de données dans un fichier `.tar.gz`.
 
    Par défaut, les données sensibles sont hachées lors de la sauvegarde.
 
@@ -36,7 +36,7 @@ L’exécution des utilitaires peut prendre plusieurs minutes.
 
 ## Création d’une sauvegarde de code
 
-Cette commande sauvegarde le code et le compresse dans `tar.gz` format.
+Cette commande sauvegarde le code et le compresse au format `tar.gz`.
 
 {{tip-backup-command}}
 
@@ -48,11 +48,11 @@ bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--
 
 Où :
 
-- **`--name`** spécifie le nom du fichier de vidage (facultatif). Si vous omettez ce paramètre, le fichier de vidage est horodaté et horodaté.
+- **`--name`** spécifie le nom de fichier de vidage (facultatif). Si vous omettez ce paramètre, le fichier de vidage est horodaté et horodaté.
 - **`-o|--output=<path>`** est le chemin d’accès absolu au système de fichiers pour stocker la sauvegarde (obligatoire).
-- **`-l|--logs`** inclut les fichiers journaux (facultatif).
+- **`-l|--logs`** comprend des fichiers journaux (facultatif).
 
-Par exemple, pour créer une sauvegarde de code nommée `/var/www/html/magento2/var/log/mycodebackup.tar.gz`:
+Par exemple, pour créer une sauvegarde de code nommée `/var/www/html/magento2/var/log/mycodebackup.tar.gz` :
 
 ```bash
 bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/var/log
@@ -62,7 +62,7 @@ Une fois la commande terminée, effectuez la sauvegarde du code auprès de l’a
 
 ## Création d’une sauvegarde de base de données
 
-Cette commande sauvegarde la base de données Commerce et la compresse dans `tar.gz` format.
+Cette commande sauvegarde la base de données Commerce et la compresse au format `tar.gz`.
 
 {{tip-backup-command}}
 
@@ -74,9 +74,9 @@ bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [
 
 Où :
 
-- **`--name`** spécifie le nom du fichier de vidage (facultatif). Si vous omettez ce paramètre, le fichier de vidage est horodaté et horodaté.
+- **`--name`** spécifie le nom de fichier de vidage (facultatif). Si vous omettez ce paramètre, le fichier de vidage est horodaté et horodaté.
 - **`-o|--output=<path>` est le chemin d’accès absolu au système de fichiers pour stocker la sauvegarde (obligatoire).
-- **`-l|--logs`** inclut les fichiers journaux (facultatif).
+- **`-l|--logs`** comprend des fichiers journaux (facultatif).
 - **`-i|--ignore-sanitize`** signifie que les données sont conservées ; omettez l’indicateur pour hacher les données sensibles stockées dans la base de données lors de la création de la sauvegarde (facultatif).
 
 Les données sensibles incluent des informations sur les clients provenant des tables de base de données suivantes :
@@ -106,13 +106,13 @@ Utility lsof not found
 
 Exécutez les commandes suivantes dans l’ordre indiqué pour afficher les chemins d’accès aux applications utilisées par les utilitaires de support et le collecteur de données :
 
-1. Modifiez le répertoire d’installation de Commerce.
+1. Accédez au répertoire d’installation de Commerce.
 
    Par exemple, `cd /var/www/magento2`
 
    >[!INFO]
    >
-   >Les commandes s’exécutent correctement _only_ à partir du répertoire d’installation.
+   >Les commandes s’exécutent correctement _uniquement_ à partir du répertoire d’installation.
 
 1. `bin/magento support:utility:paths` crée `<magento_root>/var/support/Paths.php`, qui répertorie les chemins d’accès à toutes les applications utilisées par l’utilitaire.
 1. `bin/magento support:utility:check` affiche les chemins d’accès au système de fichiers.
@@ -131,4 +131,4 @@ Voici un exemple :
    mysql => /usr/bin/mysql
 ```
 
-Pour résoudre les problèmes liés à l’exécution des outils, assurez-vous que ces applications sont installées et se trouvent dans le fichier `$PATH` Variable d’environnement.
+Pour résoudre les problèmes liés à l’exécution des outils, assurez-vous que ces applications sont installées et se trouvent dans la variable d’environnement `$PATH` de l’utilisateur du serveur web.

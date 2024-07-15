@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
 source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -34,12 +34,12 @@ Si votre projet nécessite de nombreux sites, magasins ou vues de magasin, vous 
 
 Les sites web et les magasins sont des multiplicateurs pour les données de catalogue. Par conséquent, le fait d’avoir de nombreux sites web et magasins peut avoir une incidence négative sur les performances du site des manières suivantes :
 
-- Des tables d’index plus volumineuses augmentent le temps nécessaire pour terminer les opérations d’indexation. [Indice de prix].
+- Des tables d’index plus volumineuses augmentent le temps nécessaire pour terminer les opérations d’indexation [Index de prix].
 - La durée accrue de récupération de la configuration de l’application dégrade le temps de réponse du storefront pour les pages de catalogue non mises en cache.
 - Augmentation significative du temps nécessaire à l’exécution des opérations de sauvegarde dans l’administrateur, car les données sont enregistrées séparément pour chaque site web.
 
 
 ## Informations supplémentaires
 
-- [Présentation des sites web, des magasins et des vues de magasin](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
-- [Configuration de plusieurs sites web ou magasins](https://devdocs.magento.com/cloud/project/project-multi-sites.html)
+- [Comprendre les sites web, les magasins et les vues de magasin](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
+- [ Configuration de plusieurs sites Web ou magasins](https://devdocs.magento.com/cloud/project/project-multi-sites.html)

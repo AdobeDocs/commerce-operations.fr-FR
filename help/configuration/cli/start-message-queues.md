@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Vous devez commencer une [client de la file d&#39;attente de messages](../queues/consumers.md) pour activer les opérations asynchrones telles que les actions de masse Inventory management et les points de terminaison REST en masse et asynchrones. Pour activer la fonctionnalité B2B, vous devez démarrer plusieurs consommateurs. Les modules tiers peuvent également nécessiter le démarrage d’un consommateur personnalisé.
+Vous devez démarrer un [consommateur de file de messages](../queues/consumers.md) pour activer les opérations asynchrones telles que les actions de masse Inventory management et les points de terminaison REST en masse et asynchrones. Pour activer la fonctionnalité B2B, vous devez démarrer plusieurs consommateurs. Les modules tiers peuvent également nécessiter le démarrage d’un consommateur personnalisé.
 
 Pour afficher la liste de tous les consommateurs :
 
@@ -27,14 +27,14 @@ Pour démarrer les consommateurs de la file d’attente des messages :
 bin/magento queue:consumers:start [--max-messages=<value>] [--batch-size=<value>] [--single-thread] [--area-code=<value>] [--multi-process=<value>] <consumer_name>
 ```
 
-Après avoir consommé tous les messages disponibles, la commande s’arrête. Vous pouvez exécuter à nouveau la commande manuellement ou avec une tâche cron. Vous pouvez également exécuter plusieurs instances de la variable `magento queue:consumers:start` pour traiter les files d’attente de messages volumineuses. Par exemple, vous pouvez ajouter `&` à la commande pour l’exécuter en arrière-plan, revenez à une invite et continuez à exécuter les commandes :
+Après avoir consommé tous les messages disponibles, la commande s’arrête. Vous pouvez exécuter à nouveau la commande manuellement ou avec une tâche cron. Vous pouvez également exécuter plusieurs instances de la commande `magento queue:consumers:start` pour traiter les files d’attente de messages volumineuses. Par exemple, vous pouvez ajouter `&` à la commande pour l’exécuter en arrière-plan, revenir à une invite et continuer à exécuter les commandes :
 
 ```bash
 bin/magento queue:consumers:start <consumer_name> &
 ```
 
-Voir [`queue:consumers:start`](../../tools/reference/commerce-on-premises.md#queueconsumersstart) dans la section Commerce du _Référence des outils de ligne de commande_ pour plus d’informations sur les options de commande, les paramètres et les valeurs.
+Pour plus d’informations sur les options de commande, les paramètres et les valeurs, voir [`queue:consumers:start`](../../tools/reference/commerce-on-premises.md#queueconsumersstart) dans la section Commerce de la _référence des outils de ligne de commande_.
 
 >[!INFO]
 >
->La variable `--multi-process` est présente dans la variable `queue:consumers:start` mais pour exécuter des consommateurs avec des processus parallèles, configurez la variable [`multiple_processes`](../queues/manage-message-queues.md#configuration) dans `/app/etc/env.php`. Sinon, si `queue:consumers:start` est appelé avec la fonction `--multi-process` , il ne fonctionne que sur un seul thread.
+>L’option `--multi-process` est présente dans la commande `queue:consumers:start`, mais pour exécuter les consommateurs avec des processus parallèles, configurez l’option [`multiple_processes`](../queues/manage-message-queues.md#configuration) dans `/app/etc/env.php`. Sinon, si `queue:consumers:start` est appelé avec l’option `--multi-process`, il ne fonctionne que sur un seul thread.

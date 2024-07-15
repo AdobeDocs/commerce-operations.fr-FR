@@ -5,7 +5,7 @@ feature: Configuration, Deploy, Extensions
 exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
 source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 Lors du déploiement de fichiers d’affichage statiques, vous pouvez choisir l’une des trois stratégies disponibles. Chacune d’elles fournit des résultats de déploiement optimaux pour différents cas d’utilisation :
 
-- [Standard](#standard-strategy): processus de déploiement régulier.
-- [Rapide](#quick-strategy) (_default_) : réduit le temps nécessaire au déploiement lorsque des fichiers pour plusieurs paramètres régionaux sont déployés.
-- [Compact](#compact-strategy): réduit l’espace pris par les fichiers d’affichage publiés.
+- [Standard](#standard-strategy) : processus de déploiement standard.
+- [Quick](#quick-strategy) (_default_) : minimise le temps nécessaire au déploiement lorsque les fichiers pour plusieurs paramètres régionaux sont déployés.
+- [Compact](#compact-strategy) : réduit l’espace pris par les fichiers d’affichage publiés.
 
 Les sections suivantes décrivent les détails et les fonctionnalités de mise en oeuvre de chaque stratégie.
 
 ## Stratégie standard
 
-Lorsque la stratégie Standard est utilisée, tous les fichiers d’affichage statique de tous les modules sont déployés, c’est-à-dire traités par [`\Magento\Framework\App\View\Asset\Publisher`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php).
+Lorsque la stratégie Standard est utilisée, tous les fichiers d’affichage statique de tous les packages sont déployés, c’est-à-dire traités par [`\Magento\Framework\App\View\Asset\Publisher`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php).
 
 Pour plus d’informations, voir [Déploiement de fichiers d’affichage statique](../cli/static-view-file-deployment.md).
 
@@ -38,15 +38,15 @@ La stratégie rapide effectue les actions suivantes :
 
 >[!INFO]
 >
->Par _similaire_, nous entendons par fichiers indépendants des paramètres régionaux, du thème ou de la zone. Il peut s’agir de fichiers CSS, d’images et de polices.
+>Par _similar_, nous entendons les fichiers indépendants des paramètres régionaux, du thème ou de la zone. Il peut s’agir de fichiers CSS, d’images et de polices.
 
 Cette approche réduit le temps de déploiement requis pour plusieurs paramètres régionaux, bien que de nombreux fichiers soient dupliqués.
 
 ## Stratégie compacte
 
-La stratégie compacte évite la duplication des fichiers en stockant des fichiers similaires dans `base` sous-répertoires.
+La stratégie compacte évite la duplication de fichiers en stockant des fichiers similaires dans des sous-répertoires `base`.
 
-Pour le résultat le plus optimisé, trois portées d’une similarité possible sont attribuées : zone, thème et paramètre régional. La variable `base` les sous-répertoires sont créés pour toutes les combinaisons de ces portées.
+Pour le résultat le plus optimisé, trois portées d’une similarité possible sont attribuées : zone, thème et paramètre régional. Les sous-répertoires `base` sont créés pour toutes les combinaisons de ces portées.
 
 Les fichiers sont déployés dans ces sous-répertoires selon les modèles suivants.
 
@@ -66,11 +66,11 @@ L’approche de déploiement utilisée dans la stratégie compacte signifie que 
 - `map.php`
 - `requirejs-map.js`
 
-La variable `map.php` est utilisé par [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) pour créer des URL correctes.
+Le fichier `map.php` est utilisé par [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) pour créer les URL correctes.
 
-La variable `requirejs-map.js` est utilisé par la variable `baseUrlResolver` pour RequireJS.
+`requirejs-map.js` est utilisé par le module externe `baseUrlResolver` pour RequireJS.
 
-Exemple d&#39;un `map.php`:
+Exemple de `map.php` :
 
 ```php?start_inline=1
 return [
@@ -87,7 +87,7 @@ return [
 ];
 ```
 
-Exemple d&#39;un `requirejs-map.js`:
+Exemple de `requirejs-map.js` :
 
 ```js
 require.config({

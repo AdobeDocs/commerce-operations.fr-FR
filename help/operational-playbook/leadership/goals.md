@@ -1,5 +1,5 @@
 ---
-title: Objectifs du commerce
+title: Objectifs de Commerce
 description: Définissez des objectifs à court et à long terme afin d’aider votre équipe à s’aligner sur les objectifs stratégiques et à accroître l’efficacité organisationnelle.
 exl-id: 749f6a9a-c06f-4f51-a19c-9e4181e002f7
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776

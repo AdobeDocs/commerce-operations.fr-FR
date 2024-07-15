@@ -23,4 +23,4 @@ Si la mise à jour de votre module échoue, des messages similaires à ceux-ci s
 
 Dans l’exemple précédent, il n’existe aucune version de composant à restaurer. Contactez le fournisseur du composant ou essayez de résoudre le problème vous-même.
 
-En attendant, vous pouvez restaurer une version précédente en cliquant sur **Retour arrière**, qui récupère vos données même si vous ne les avez pas sauvegardées précédemment.
+En attendant, vous pouvez restaurer une version précédente en cliquant sur **Restaurer**, ce qui permet de récupérer vos données même si vous n’avez pas effectué de sauvegarde auparavant.

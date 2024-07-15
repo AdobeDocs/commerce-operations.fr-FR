@@ -5,7 +5,7 @@ exl-id: a6b38975-ff85-4cc1-86e3-9792562369ab
 feature: Best Practices, Promotions/Events
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -28,25 +28,25 @@ Pourquoi envisagez-vous le marketing par e-mail :
 
 Il est essentiel de faire la première impression en dernier dans le commerce électronique. Si le premier email que vous envoyez à de nouveaux clients est efficace, il laissera une impression durable dans la mémoire du client. Essayez de garder le design simple et original. Par exemple, certaines marques proposent des remises dans l’email lorsque le client s’inscrit.
 
-![Exemple d’email marketing de bienvenue](../../assets/playbooks/marketing-email-welcome.png)
+![ Exemple d’e-mail marketing de bienvenue](../../assets/playbooks/marketing-email-welcome.png)
 
 ## Email traité
 
 Le courrier électronique traité est l’une des meilleures formes de courrier électronique, car il permet aux abonnés d’en savoir plus sur le produit. Vous pouvez également envoyer des emails traités en fonction de la segmentation des clients.
 
-![Exemple d’email marketing traité](../../assets/playbooks/marketing-email-curated.png)
+![Exemple d&#39;email marketing traité](../../assets/playbooks/marketing-email-curated.png)
 
 ## Email d’engagement
 
 Les clients peuvent facilement ignorer les emails, mais si les emails sont envoyés en tant qu’emails d’engagement, la probabilité qu’un client les supprime sans les examiner est plus faible. Les courriers électroniques d’engagement peuvent prendre la forme d’une campagne qui fournit aux utilisateurs une promotion, comme la livraison gratuite.
 
-![Exemple d’email marketing d’engagement](../../assets/playbooks/marketing-email-engagement.png)
+![ Exemple d’email marketing d’engagement ](../../assets/playbooks/marketing-email-engagement.png)
 
 ## Courrier électronique de référence
 
 Le bouche à oreille est l&#39;une des meilleures stratégies marketing. Par exemple, envoyer un email de référence à un client existant. Par exemple, &quot;Référez-vous à un ami et recevez 10 $ !&quot; L’e-mail de référence motive les clients à diffuser le mot de manière organique, ce qui vous aide à gagner plus de clients.
 
-![Exemple d’email marketing de référence](../../assets/playbooks/marketing-email-referral.png)
+![Exemple de parrainage d’un email marketing](../../assets/playbooks/marketing-email-referral.png)
 
 ## Email de réduction
 

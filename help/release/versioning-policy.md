@@ -11,16 +11,16 @@ ht-degree: 0%
 
 # Stratégie de mise à jour Adobe Commerce
 
-Adobe Commerce utilise [contrôle de version sémantique](https://semver.org/) au niveau du module individuel (par exemple `magento/framework 101.1.1`), mais pas pour le numéro de version marketing. Par exemple :
+Adobe Commerce utilise le [contrôle de version sémantique](https://semver.org/) au niveau du module individuel (par exemple `magento/framework 101.1.1`), mais pas pour le numéro de version marketing. Par exemple :
 
-- **Version MAJOR**—2
-- **Version MINEURE**—2.4
+- **MAJOR release**—2
+- **MINOR release**—2.4
 - **Version du PATCH**—2.4.5
    - **Version de correctif de sécurité**—2.4.5-p1
       - Correctif de bogue de sécurité
       - Amélioration de la sécurité
-- **Version de correctif BÊTA**—2.4.7-beta2
-- **Extension, infrastructure et version des services**
+- **Version de correctif BETA**—2.4.7-beta2
+- **Extensibilité, infrastructure et mise à jour des services**
 - **Correctif**
 - **Correctif individuel**
 - **Correctif personnalisé**
@@ -48,11 +48,11 @@ Les directives suivantes s’appliquent aux versions de correctif :
 
 {{$include /help/_includes/security-patch-release-overview.md}}
 
-## Version de correctif BÊTA
+## Publication de correctifs Beta
 
 Les versions de disponibilité prégénérales des fonctionnalités d’Adobe Commerce sont mises à la disposition de tous les clients et partenaires d’Adobe d’Adobe Commerce. Il permet de disposer de davantage de temps avant la disponibilité générale pour examiner le code et les composants affectés.
 
-Les versions bêta peuvent contenir des défauts et sont fournies &quot;EN L’ÉTAT&quot; sans aucune garantie de quelque type que ce soit. Adobe n’aura aucune obligation de gérer, corriger, mettre à jour, modifier, modifier ou d’autre manière prendre en charge (via les services d’assistance d’Adobe ou d’une autre manière) les versions bêta. Il est conseillé aux clients de faire preuve de prudence et de ne pas s’appuyer d’aucune manière sur le bon fonctionnement ou les performances des versions bêta et/ou de la documentation ou des documents associés. Par conséquent, toute utilisation des versions bêta est entièrement à la charge du client.
+Les versions de Beta peuvent contenir des défauts et sont fournies &quot;EN L’ÉTAT&quot; sans garantie de quelque type que ce soit. Adobe n’aura aucune obligation de gérer, corriger, mettre à jour, modifier, modifier ou d’autre manière prendre en charge les versions de Beta (via les services d’assistance d’Adobe ou autres). Il est conseillé aux clients de faire preuve de prudence et de ne pas s’appuyer d’aucune manière sur le bon fonctionnement ou sur les performances correctes des versions de Beta et/ou de la documentation ou des documents associés. Par conséquent, toute utilisation des versions de Beta est entièrement à la merci du client.
 
 ## Extension, infrastructure et version des services
 
@@ -60,7 +60,7 @@ Description des nouvelles fonctionnalités qui contiennent de nouvelles fonction
 
 ## Correctif
 
-Les correctifs sont des correctifs qui contiennent des correctifs de sécurité ou de qualité à fort impact, tels que des correctifs de vulnérabilités de jour zéro, qui affectent de nombreux marchands. Adobe publie des correctifs pour les versions d’Adobe Commerce qui sont toujours prises en charge et affectées par des problèmes critiques de sécurité ou de qualité, si nécessaire. Les correctifs sont publiés dans la [Section Problèmes connus](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) de notre base de connaissances. Ces correctifs sont inclus dans la prochaine version de correctif planifiée.
+Les correctifs sont des correctifs qui contiennent des correctifs de sécurité ou de qualité à fort impact, tels que des correctifs de vulnérabilités de jour zéro, qui affectent de nombreux marchands. Adobe publie des correctifs pour les versions d’Adobe Commerce qui sont toujours prises en charge et affectées par des problèmes critiques de sécurité ou de qualité, si nécessaire. Les correctifs sont publiés dans la [section Problèmes connus](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) de notre base de connaissances. Ces correctifs sont inclus dans la prochaine version de correctif planifiée.
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Les correctifs sont des correctifs qui contiennent des correctifs de sécurité 
 
 ## Correctif individuel
 
-Les correctifs individuels contiennent des correctifs de qualité à faible impact pour un problème spécifique. Ces correctifs s’appliquent aux versions mineures prises en charge d’Adobe Commerce. Adobe publie les correctifs individuels nécessaires pour Adobe Commerce conformément à nos [Stratégie de cycle de vie logicielle](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+Les correctifs individuels contiennent des correctifs de qualité à faible impact pour un problème spécifique. Ces correctifs s’appliquent aux versions mineures prises en charge d’Adobe Commerce. Adobe publie des correctifs individuels, selon les besoins, pour Adobe Commerce conformément à notre [Politique de cycle de vie des logiciels](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 >[!NOTE]
 >
@@ -76,10 +76,10 @@ Les correctifs individuels contiennent des correctifs de qualité à faible impa
 
 ## Correctif personnalisé
 
-Créé par le personnel non-Adobe pour résoudre un problème ou modifier le code Adobe Commerce pour diverses raisons. Les correctifs personnalisés sont fournis par l’intermédiaire de la fonction [Outil Correctifs de qualité](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+Créé par le personnel non-Adobe pour résoudre un problème ou modifier le code Adobe Commerce pour diverses raisons. Les correctifs personnalisés sont fournis par l’[ outil de correctifs de qualité](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
 
 ## Rubriques connexes
 
 - [Contrôle de version](https://developer.adobe.com/commerce/php/development/versioning/)
 - [Versions à venir](schedule.md)
-- [Stratégie de cycle de vie logicielle](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+- [Stratégie de cycle de vie des logiciels](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)

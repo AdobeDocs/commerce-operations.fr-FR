@@ -5,7 +5,7 @@ feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 Cette rubrique explique comment localiser vos fichiers de session. Le système utilise la logique suivante pour stocker les fichiers de session :
 
-- Si vous avez configuré la mémoire mise en cache, les sessions sont stockées dans la mémoire RAM. Voir [Utiliser la mémoire mise en cache pour le stockage de session](memcached.md).
-- Si vous avez configuré Redis, les sessions sont stockées sur le serveur Redis ; voir [Utilisation de Redis pour le stockage de session](../cache/redis-session.md).
+- Si vous avez configuré la mémoire mise en cache, les sessions sont stockées dans la mémoire vive. Voir [Utiliser la mémoire mise en cache pour le stockage de session](memcached.md).
+- Si vous avez configuré Redis, les sessions sont stockées sur le serveur Redis ; voir [Utiliser Redis pour le stockage de session](../cache/redis-session.md).
 - Si vous utilisez le stockage de session basé sur les fichiers par défaut, nous stockons les sessions aux emplacements suivants dans l’ordre indiqué :
 
    1. Répertoire défini dans [`env.php`](#example-in-envphp)
    1. Répertoire défini dans [`php.ini`](#example-in-phpini)
-   1. `<magento_root>/var/session` directory
+   1. répertoire `<magento_root>/var/session`
 
 ## Exemple dans `env.php`
 
-Un exemple de fragment de code de `<magento_root>/app/etc/env.php` suit :
+Voici un exemple de fragment de code provenant de `<magento_root>/app/etc/env.php` :
 
 ```php
  'session' => [
@@ -33,25 +33,25 @@ Un exemple de fragment de code de `<magento_root>/app/etc/env.php` suit :
  ],
 ```
 
-L’exemple précédent stocke des fichiers de session dans `/var/www/session`
+L’exemple précédent stocke des fichiers de session dans `/var/www/session`.
 
 ## Exemple dans `php.ini`
 
-En tant qu’utilisateur avec `root` privilèges, ouvrez votre `php.ini` et recherchez la valeur de `session.save_path`. Cela identifie l’emplacement de stockage des sessions.
+En tant qu’utilisateur disposant des privilèges `root`, ouvrez votre fichier `php.ini` et recherchez la valeur `session.save_path`. Cela identifie l’emplacement de stockage des sessions.
 
 ## Gestion de la taille de session
 
-Voir [Gestion des sessions](https://docs.magento.com/user-guide/stores/security-session-management.html) dans le _Guide de l’utilisateur_.
+Voir la [gestion des sessions](https://docs.magento.com/user-guide/stores/security-session-management.html) dans le _guide de l’utilisateur_.
 
 ## Configuration du nettoyage de la mémoire
 
-Pour nettoyer les sessions expirées, le système appelle la variable `gc` (_nettoyage_), selon une probabilité calculée par la variable `gc_probability / gc_divisor` de . Par exemple, si vous définissez ces directives sur `1/100` cela signifie une probabilité de `1%` (_probabilité d’un appel de nettoyage de la mémoire pour 100 demandes_).
+Pour nettoyer les sessions expirées, le système appelle le gestionnaire `gc` (_nettoyage de la mémoire_) de manière aléatoire selon une probabilité calculée par la directive `gc_probability / gc_divisor`. Par exemple, si vous définissez ces directives sur `1/100`, cela signifie une probabilité de `1%` (_probabilité d’un appel de nettoyage de la mémoire pour 100 requêtes_).
 
-Le gestionnaire de nettoyage de la mémoire utilise la variable `gc_maxlifetime` directive : nombre de secondes après lesquelles les sessions sont vues comme _ordures_ et potentiellement nettoyé.
+Le gestionnaire de nettoyage de la mémoire utilise la directive `gc_maxlifetime` : le nombre de secondes après lesquelles les sessions sont vues comme _la mémoire_ et potentiellement nettoyées.
 
-Sur certains systèmes d&#39;exploitation (Debian/Ubuntu), la valeur par défaut `session.gc_probability` est `0`, qui empêche l’exécution du gestionnaire de nettoyage de la mémoire.
+Sur certains systèmes d&#39;exploitation (Debian/Ubuntu), la directive `session.gc_probability` par défaut est `0`, ce qui empêche l&#39;exécution du gestionnaire de nettoyage de la mémoire.
 
-Vous pouvez remplacer la variable `session.gc_` des directives `php.ini` dans le fichier `<magento_root>/app/etc/env.php` fichier :
+Vous pouvez remplacer les directives `session.gc_` du fichier `php.ini` dans le fichier `<magento_root>/app/etc/env.php` :
 
 ```php
  'session' => [

@@ -4,7 +4,7 @@ description: Exécutez des tests unitaires définis dans la base de code Adobe C
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -17,19 +17,19 @@ Cette commande exécute un ensemble de tests définis dans la base de code Comme
 
 ## Conditions préalables
 
-Avant d’exécuter cette commande, procédez comme suit : _must_ être vrai :
+Avant d’exécuter cette commande, les _must_ suivants doivent être vrais :
 
-- La variable `Magento_Developer` doit être activé. Vous pouvez l’activer comme suit :
+- Le module `Magento_Developer` doit être activé. Vous pouvez l’activer comme suit :
 
   ```bash
   bin/magento module:enable [--force] Magento_Developer
   ```
 
-  Utilisez la variable `--force` uniquement si nécessaire.
+  Utilisez l’option `--force` uniquement si nécessaire.
 
 - Votre système doit être configuré pour exécuter les tests souhaités.
 
-Par exemple, pour exécuter des tests d’intégration, vous devez copier `dev/tests/integration/etc/install-config-mysql.php.dist` to `dev/tests/integration/etc/install-config-mysql.php` et modifiez-la pour l’adapter à votre environnement.
+Par exemple, pour exécuter des tests d’intégration, vous devez copier `dev/tests/integration/etc/install-config-mysql.php.dist` vers `dev/tests/integration/etc/install-config-mysql.php` et le modifier pour l’adapter à votre environnement.
 
 ## Exécution de tests
 

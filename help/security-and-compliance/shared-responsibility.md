@@ -107,7 +107,7 @@ La solution d’infrastructure cloud d’Adobe Commerce utilise les fournisseurs
 Le tableau récapitulatif suivant utilise le modèle RACI pour afficher les responsabilités de sécurité partagées entre l’Adobe, le commerçant et le fournisseur de services Cloud :
 
 **R** — Responsable
-**A** — Responsable
+**A** — Approbateur
 **C** — Consulté
 **I** — Informé
 
@@ -132,7 +132,7 @@ Le tableau récapitulatif suivant utilise le modèle RACI pour afficher les resp
     <td></td>
   </tr>
   <tr>
-    <td>Application de correctifs aux services de support<br>(Par exemple, Nginx ou MySQL.)</td>
+    <td>Application de correctifs aux services de prise en charge<br> (par exemple, Nginx ou MySQL).</td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -328,7 +328,7 @@ Le tableau récapitulatif suivant utilise le modèle RACI pour afficher les resp
     <td></td>
   </tr>
   <tr>
-    <td>Prise en charge de CDN<sup>2</sup></td>
+    <td>Support du CDN<sup>2</sup></td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -440,7 +440,7 @@ Le tableau récapitulatif suivant utilise le modèle RACI pour afficher les resp
     <td></td>
   </tr>
   <tr>
-    <td>Correction d’Adobe Commerce sur les scans PCI de l’infrastructure cloud<sup>4</sup></td>
+    <td>Correction d’Adobe Commerce sur les scans PCI d’infrastructure cloud<sup>4</sup></td>
     <td>R</td>
     <td>R</td>
     <td></td>
@@ -521,9 +521,9 @@ Le tableau récapitulatif suivant utilise le modèle RACI pour afficher les resp
   <tr>
     <td colspan="5">
       <p><sup><strong>1</strong></sup> Uniquement si le référentiel Adobe Commerce sur l’infrastructure cloud est utilisé comme référentiel principal. L'utilisation d'autres référentiels externes est la seule responsabilité du marchand.</p>
-      <p><sup><strong>2</strong></sup> Adobe fournit une prise en charge de niveau 1 pour les problèmes avec les fournisseurs de réseau de diffusion de contenu.</p>
-      <p><sup><strong>3</strong></sup> Le commerçant est responsable de tout contrôle Ngnix qu’il configure pour ses applications.</p>
-      <p><sup><strong>4</strong></sup> Pour les PCI, les exigences de test de pénétration sont partagées entre l’Adobe et le marchand.</p>
+      <p>L’Adobe <sup><strong>2</strong></sup> fournit une prise en charge de niveau 1 pour les problèmes avec les fournisseurs de réseau de diffusion de contenu.</p>
+      <p><sup><strong>3</strong></sup> Le commerçant est responsable de tous les contrôles Ngnix qu’il configure pour ses applications.</p>
+      <p><sup><strong>4</strong></sup> Pour PCI, les exigences de test de pénétration sont partagées entre l’Adobe et le commerçant.</p>
     </td>
   </tr>
 </tfoot>
@@ -639,7 +639,7 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 | --- | --- | --- |
 | Rotation des journaux | R |   |
 | Application Adobe Commerce personnalisée | | R |
-| Disponibilité des services New Relic :<br>intégration de l’application et de l’agent APM, application d’infrastructure,<br>Journalisation et intégration | R |   |
+| Disponibilité des services New Relic : <br>intégration de l’application et de l’agent APM, application d’infrastructure, <br>Journalisation et intégration | R |   |
 | Configuration des alertes New Relic |     | R |
 | Déploiement de l’agent New Relic sur les serveurs PaaS |     | R |
 
@@ -662,7 +662,7 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 | --- | --- | --- |
 | Configuration des applications |     | R |
 | Ajout de domaines à l’application Adobe Commerce (URL de base) |     | R |
-| Configuration du panneau d’utilisation pour utiliser les versions de services prises en charge par la version d’Adobe Commerce déployée<br><br>Par exemple, différentes versions de Commerce sont compatibles avec des versions spécifiques de PHP, Redis, etc. |     | R |
+| Configuration de PaaS pour utiliser les versions de services prises en charge par la version déployée d’Adobe Commerce <br><br>Par exemple, différentes versions de Commerce sont compatibles avec des versions spécifiques de PHP, Redis, etc. |     | R |
 
 {style="table-layout:auto"}
 
@@ -702,8 +702,8 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 |     | Adobe | Marchand |
 | --- | --- | --- |
 | Disponibilité des services Galera et MariaDB | R | |
-| Maintenance en cours des paramètres par défaut de la base de données<br><br>(indexation et optimisation des tables principales, optimisation des paramètres sys-admin par défaut) | R |   |
-| Maintenance continue des données marchandes et des paramètres modifiés<br><br>(configuration des tables normalisées ou plates, indexation et optimisation des tables tierces et personnalisées, archivage ou suppression des données, configuration des paramètres d’administration du système) |     | R |
+| Maintenance en cours des paramètres par défaut de la base de données<br><br> (indexation et optimisation des tables principales, optimisation des paramètres par défaut de sys-admin) | R |   |
+| Maintenance en cours des données commerciales et des paramètres modifiés<br><br> (configuration des tables normalisées ou plates, indexation et optimisation des tables tierces et personnalisées, archivage ou suppression des données, configuration des paramètres d’administration du système) |     | R |
 | Configuration de Galera et MySQL | R |   |
 | Qualité et correction continues de Galera et MariaDB | R |   |
 | Optimisation continue de l’infrastructure | R |   |
@@ -755,7 +755,7 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 | --- | --- | --- |
 | Disponibilité du service de messagerie SendGrid et de son intégration | R |   |
 | Surveiller l’utilisation de SendGrid du marchand par rapport aux limites | R |   |
-| Le commerçant n&#39;est responsable de l&#39;utilisation du service que pour les emails transactionnels sortants.<br>Le service ne prend pas en charge l’envoi d’emails marketing. |     | R |
+| Le marchand n&#39;utilise le service que pour les emails transactionnels sortants<br>Le service ne prend pas en charge l&#39;envoi d&#39;emails marketing. |     | R |
 | Configuration des services de messagerie tiers facultatifs |     | R |
 
 {style="table-layout:auto"}
@@ -786,8 +786,8 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 | Disponibilité des services de Business Intelligence Adobe Commerce | R |   |
 | Processus de synchronisation des données de l’IMS | R |   |
 | Détection des problèmes de synchronisation des MBI | R |   |
-| Configuration de la synchronisation des données MBI avec Adobe Commerce Cloud Pro, Starter, On Premise ou non Adobe Commerce<br>(API, qualité et formatage des données, réseau commercial,<br>Connexions DB à l’intérieur et à l’extérieur de Adobe Commerce Cloud DB, par-dessus les seuils de données) |     | R |
-| Configuration de la synchronisation des données MBI avec Adobe Commerce Cloud Pro<br>(Configuration de la base de données Adobe Commerce Cloud) | R |   |
+| Configuration de la synchronisation des données MBI avec Adobe Commerce Cloud Pro, Starter, On Premise ou non Adobe Commerce<br> (API, qualité et formatage des données, réseau commercial, <br>connexions DB à l’intérieur et à l’extérieur de Adobe Commerce Cloud DB, sur les seuils de données) |     | R |
+| Configuration de la synchronisation des données MBI avec Adobe Commerce Cloud Pro<br> (configuration de la base de données Adobe Commerce Cloud) | R |   |
 
 {style="table-layout:auto"}
 
@@ -857,7 +857,7 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 | Configuration de PrivateLink entrant dans le point d’entrée du service VPC du commerçant |     | R |
 | Acceptation du lien privé entrant dans le point d’entrée du service VPC du détaillant | R |   |
 | Configuration des intégrations PrivateLink (point d’entrée vers compte) |     | R |
-| Configuration du VPC détenu par le commerce pour le point d’entrée PrivateLink<br><br> (y compris toute connexion VPN) |     | R |
+| Configuration de VPC détenu par le commerce pour le point d’entrée PrivateLink <br><br> (y compris toute connexion VPN) |     | R |
 
 {style="table-layout:auto"}
 
