@@ -2,7 +2,7 @@
 title: Définir la valeur des paramètres de bootstrap
 description: Découvrez comment définir les paramètres de bootstrap pour l’application Commerce.
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Vous pouvez spécifier des variables d’amorçage en tant que variables d’env
 
 Par exemple, vous pouvez utiliser la variable d’environnement système `MAGE_PROFILER` pour spécifier un mode comme suit :
 
-```terminal
+```
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
@@ -80,7 +80,7 @@ Vous pouvez modifier `.htaccess` aux emplacements suivants, en fonction du point
 
 1. Définissez la valeur de `MAGE_PROFILER` sur l’une des valeurs suivantes :
 
-   ```terminal
+   ```
    firebug
    csvfile
    <custom value>

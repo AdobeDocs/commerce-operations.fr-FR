@@ -3,7 +3,7 @@ title: paramètres PHP
 description: Suivez ces étapes pour installer les extensions PHP requises et configurer les paramètres PHP requis pour les installations sur site d’Adobe Commerce.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 0%
@@ -35,7 +35,7 @@ php -v
 
 Si PHP est installé, un message similaire à celui-ci s’affiche :
 
-```terminal
+```
 PHP 8.1.2-1ubuntu2.14 (cli) (built: Aug 18 2023 11:41:11) (NTS)
 Copyright (c) The PHP Group
 Zend Engine v4.1.2, Copyright (c) Zend Technologies
@@ -69,7 +69,7 @@ Pour vérifier les extensions installées :
 
 - Définissez le fuseau horaire du système pour PHP. Dans le cas contraire, des erreurs telles que l’affichage suivant lors de l’installation et des opérations liées à l’heure telles que cron risquent de ne pas fonctionner :
 
-```terminal
+```
 PHP Warning:  date(): It is not safe to rely on the system's timezone settings. [more messages follow]
 ```
 

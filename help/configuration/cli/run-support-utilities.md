@@ -2,7 +2,7 @@
 title: Exécution des utilitaires de support
 description: Résolution des problèmes liés à votre projet Commerce à l’aide de l’utilitaire de prise en charge intégré.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Où :
 
 Les données sensibles incluent des informations sur les clients provenant des tables de base de données suivantes :
 
-```terminal
+```
 'customer_entity',
 'customer_entity_varchar',
 'customer_address_entity',
@@ -100,7 +100,7 @@ Une fois la commande terminée, effectuez la sauvegarde de la base de données a
 
 Nous fournissons des commandes qui affichent les chemins d’accès aux utilitaires requis par le collecteur de données et la ligne de commande. Vous pouvez utiliser ces commandes, par exemple, si des erreurs comme celle-ci s’affichent dans l’Admin ou sur la ligne de commande :
 
-```terminal
+```
 Utility lsof not found
 ```
 
@@ -119,7 +119,7 @@ Exécutez les commandes suivantes dans l’ordre indiqué pour afficher les chem
 
 Voici un exemple :
 
-```terminal
+```
    gzip => /bin/gzip
    lsof => /usr/sbin/lsof
    mysqldump => /usr/bin/mysqldump

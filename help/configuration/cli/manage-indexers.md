@@ -2,7 +2,7 @@
 title: Gestion des indexeurs
 description: Voir des exemples d’affichage et de gestion des indexeurs Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 5e1684d4d910f2ea52e12eeccdc291a54372f8d6
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 0%
@@ -21,7 +21,7 @@ bin/magento indexer:info
 
 La liste se présente comme suit :
 
-```terminal
+```
 design_config_grid                       Design Config Grid
 customer_grid                            Customer Grid
 catalog_category_product                 Category Products
@@ -55,7 +55,7 @@ Où `[indexer]` est une liste d’indexeurs séparés par des espaces. Omettez `
 
 Exemple de résultat :
 
-```terminal
+```
 +----------------------+------------------+-----------+---------------------+---------------------+
 | Title                | Status           | Update On | Schedule Status     | Schedule Updated    |
 +----------------------+------------------+-----------+---------------------+---------------------+
@@ -91,7 +91,7 @@ Où `[indexer]` est une liste d’indexeurs séparés par des espaces. Omettez `
 
 Exemple de résultat :
 
-```terminal
+```
 Design Config Grid index has been rebuilt successfully in <time>
 Customer Grid index has been rebuilt successfully in <time>
 Category Products index has been rebuilt successfully in <time>
@@ -176,7 +176,7 @@ Où ```[indexer]``` est une liste d’indexeurs séparés par des espaces. Omett
 
 Exemple de résultat :
 
-```terminal
+```
 Design Config Grid indexer has been invalidated.
 Customer Grid indexer has been invalidated.
 Category Products indexer has been invalidated.
@@ -211,7 +211,7 @@ Où `[indexer]` est une liste d’indexeurs séparés par des espaces. Omettez `
 
 Exemple de résultat :
 
-```terminal
+```
 Design Config Grid:                                Update on Save
 Customer Grid:                                     Update on Save
 Category Products:                                 Update on Save
@@ -257,7 +257,7 @@ bin/magento indexer:set-mode schedule catalog_category_product catalog_product_c
 
 Exemple de résultat :
 
-```terminal
+```
 Index mode for Indexer Category Products was changed from 'Update on Save' to 'Update by Schedule'
 Index mode for Indexer Product Categories was changed from 'Update on Save' to 'Update by Schedule'
 ```
@@ -289,7 +289,7 @@ bin/magento indexer:set-status suspended catalog_category_product catalog_produc
 
 Exemple de résultat :
 
-```terminal
+```
 Index status for Indexer 'Category Products' was changed from 'valid' to 'suspended'.
 Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspended'.
 ```

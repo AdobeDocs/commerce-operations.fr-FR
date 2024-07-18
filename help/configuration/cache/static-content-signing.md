@@ -3,7 +3,7 @@ title: Cache de contenu statique
 description: Apprenez à signer du contenu statique et à activer ou désactiver cette fonctionnalité.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: d099d60bcf3c960b2e40b48c386041d8865cfb50
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Pour ce faire, Commerce ajoute une version de déploiement à l’URL des fichie
 
 Voici un exemple d’URL signée avec une version :
 
-```terminal
+```
 http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/images/logo.svg
 ```
 

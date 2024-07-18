@@ -2,7 +2,7 @@
 title: Rapports de dépendance
 description: Créez des rapports qui affichent les totaux pour les dépendances de module, circulaire et de structure.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Si aucun répertoire ou nom de fichier n’est transmis comme argument, la racin
 
 Voici une partie de la sortie pour un exemple de rapport de dépendances de module :
 
-```terminal
+```
 "","All","Hard","Soft"
 "Total number of dependencies","602","587","15"
 
@@ -75,7 +75,7 @@ Voici une partie de la sortie pour un exemple de rapport de dépendances de modu
 
 Voici une partie de la sortie pour un exemple de rapport de dépendances circulaires :
 
-```terminal
+```
 "Circular dependencies:","Total number of chains"
 "","848"
 
@@ -101,7 +101,7 @@ Voici une partie de la sortie pour un exemple de rapport de dépendances circula
 
 Voici une partie de la sortie pour un exemple de rapport de dépendances de structure :
 
-```terminal
+```
 "Dependencies of framework:","Total number"
 "","111"
 

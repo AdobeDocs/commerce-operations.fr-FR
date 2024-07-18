@@ -2,7 +2,7 @@
 title: Clonage des exemples de référentiels Git de données
 description: Suivez ces étapes pour installer des exemples de données Adobe Commerce en clonant des référentiels Git.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Pour cloner le référentiel GitHub de données d’exemple à l’aide du proto
    >
    >Si l’erreur suivante s’affiche, assurez-vous que vous avez [partagé votre clé SSH](https://docs.github.com/articles/generating-ssh-keys/) avec GitHub:<br>
 
-   ```terminal
+   ```
    Cloning into 'magento2'...
    Permission denied (publickey).
    fatal: The remote end hung up unexpectedly

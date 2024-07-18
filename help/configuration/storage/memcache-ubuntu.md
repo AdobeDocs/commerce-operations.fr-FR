@@ -3,7 +3,7 @@ title: Configuration de la mémoire mise en cache sur Ubuntu
 description: Installez et configurez memcached sur Ubuntu.
 feature: Configuration, Cache, Storage
 exl-id: 831193d2-3e81-472c-9b87-78a8d52959b4
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -142,7 +142,7 @@ stats items
 
 Le résultat est similaire à ce qui suit :
 
-```terminal
+```
 STAT items:2:number 1
 STAT items:2:age 106
 STAT items:2:evicted 0

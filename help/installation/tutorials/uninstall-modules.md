@@ -2,7 +2,7 @@
 title: Désinstallation des modules
 description: Pour désinstaller un module Adobe Commerce, procédez comme suit.
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 0%
@@ -67,7 +67,7 @@ La commande de désinstallation du module effectue les tâches suivantes :
 
 Par exemple, si vous tentez de désinstaller un module dont dépend un autre module, le message suivant s’affiche :
 
-```terminal
+```
 magento module:uninstall Magento_SampleMinimal
     Cannot uninstall module 'Magento_SampleMinimal' because the following module(s) depend on it:
         Magento_SampleModifyContent
@@ -81,7 +81,7 @@ bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent -
 
 Messages similaires à l’affichage suivant :
 
-```terminal
+```
 You are about to remove code and/or database tables. Are you sure?[y/N]y
 Enabling maintenance mode
 Code backup is starting...
@@ -180,7 +180,7 @@ Par exemple, pour restaurer une sauvegarde de code (système de fichiers), saisi
 
   Messages similaires à l’affichage suivant :
 
-  ```terminal
+  ```
   Enabling maintenance mode
   Code rollback is starting ...
   Code rollback filename: 1433876616_filesystem.tgz

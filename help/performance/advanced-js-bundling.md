@@ -2,7 +2,7 @@
 title: Avancé [!DNL JavaScript] Regroupement
 description: Découvrez comment le regroupement JavaScript peut réduire la taille et la fréquence des requêtes de serveur.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 0%
@@ -212,7 +212,7 @@ phantomjs deps.js <i>url-to-specific-page</i> &gt; <i>text-file-membership-paget
 
 Par exemple, voici quatre pages de l’exemple de magasin à thème Luma qui représentent les quatre types de pages que nous utiliserons pour créer nos quatre lots (page d’accueil, catégorie, produit, panier) :
 
-```terminal
+```
 phantomjs deps.js http://m2.loc/ > bundle/homepage.txt
 phantomjs deps.js http://m2.loc/women/tops-women/jackets-women.html > bundle/category.txt
 phantomjs deps.js http://m2.loc/beaumont-summit-kit.html > bundle/product.txt
@@ -234,7 +234,7 @@ Cette commande (utilisée dans le script [!DNL PhantomJS]) crée la même liste 
 
 Après avoir fusionné les dépendances [!DNL RequireJS] en fichiers texte de type page, vous pouvez utiliser la commande suivante sur chaque fichier de dépendance de type page pour remplacer les virgules de vos fichiers par des lignes supplémentaires :
 
-```terminal
+```bash
 sed -i -e $'s/,/\\\n/g' bundle/category.txt
 sed -i -e $'s/,/\\\n/g' bundle/homepage.txt
 sed -i -e $'s/,/\\\n/g' bundle/product.txt
@@ -243,7 +243,7 @@ sed -i -e $'s/,/\\\n/g' bundle/product.txt
 
 Vous devez également supprimer tous les mixins de chaque fichier, car les mixins dupliquent les dépendances. Utilisez la commande suivante sur chaque fichier de dépendance :
 
-```terminal
+```bash
 sed -i -e 's/mixins\!.*$//g' bundle/homepage.txt
 sed -i -e 's/mixins\!.*$//g' bundle/category.txt
 sed -i -e 's/mixins\!.*$//g' bundle/product.txt
@@ -262,7 +262,7 @@ sort bundle/*.txt |uniq -c |sort -n
 
 Cette commande fusionne et trie les dépendances trouvées dans les fichiers `bundle/*.txt`.  La sortie indique également le nombre de fichiers contenant chaque dépendance :
 
-```terminal
+```
 1 buildTools,
 1 jquery/jquery.parsequery,
 1 jsbuild,
@@ -317,7 +317,7 @@ bash deps-map.sh
 
 La sortie de ce script, appliquée à nos trois exemples de types de page, doit ressembler à ceci (mais beaucoup plus longtemps) :
 
-```terminal
+```
 bundle/product.txt   -->   buildTools,
 bundle/category.txt  -->   jquery/jquery.parsequery,
 bundle/product.txt   -->   jsbuild,
@@ -427,7 +427,7 @@ La liste du contenu du nouveau répertoire de bundle peut se présenter comme su
 ll pub/static/frontend/Magento/luma/en_US/bundles
 ```
 
-```terminal
+```
 total 1900
 drwxr-xr-x  2 root root    4096 Mar 28 11:24 ./
 drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../

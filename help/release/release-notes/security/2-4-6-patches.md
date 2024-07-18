@@ -2,7 +2,7 @@
 title: Notes de mise à jour du correctif de sécurité Adobe Commerce 2.4.6
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et d’autres mises à jour relatives à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.6.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: 2269c99908c0f8292ad62bd5837b1b8cebd50cb3
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 0%
@@ -128,7 +128,7 @@ Les mises à niveau de plateforme de cette version améliorent la conformité au
 
 * Les dépendances manquantes pour le package de sécurité B2B provoquent l’erreur d’installation suivante lors de l’installation ou de la mise à niveau de l’extension B2B vers la version 1.4.0.
 
-  ```terminal
+  ```
   Your requirements could not be resolved to an installable set of packages.
   
     Problem 1

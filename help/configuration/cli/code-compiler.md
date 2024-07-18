@@ -2,7 +2,7 @@
 title: Compilateur de code
 description: Découvrez comment exécuter le compilateur de code à partir de la ligne de commande.
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Pour exécuter le compilateur client unique :
 bin/magento setup:di:compile
 ```
 
-```terminal
+```
 Generated code and dependency injection configuration successfully.
 ```
 
@@ -54,7 +54,7 @@ Dans certains cas, vous souhaiterez peut-être compiler le code avant d’instal
    bin/magento setup:di:compile
    ```
 
-   ```terminal
+   ```
    Generated code and dependency injection configuration successfully.
    ```
 

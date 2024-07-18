@@ -2,7 +2,7 @@
 title: Configuration de plusieurs sites web avec Nginx
 description: Suivez ce tutoriel pour configurer plusieurs sites web avec Nginx.
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 0%
@@ -89,7 +89,7 @@ Cette configuration s’étend sur la [configuration nginx](../../installation/p
 
 1. En cas de réussite, le message suivant s’affiche :
 
-   ```terminal
+   ```
    nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 
@@ -147,7 +147,7 @@ Pour plus d’informations sur la directive map, consultez la [documentation ngi
 
 1. En cas de réussite, le message suivant s’affiche :
 
-   ```terminal
+   ```
    nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 

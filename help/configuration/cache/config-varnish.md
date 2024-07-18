@@ -3,7 +3,7 @@ title: Configurer et utiliser le vernis
 description: Découvrez comment Varnish stocke les fichiers et améliore le trafic HTTP.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Nous connaissons les problèmes suivants avec le vernis :
 
 - Erreur possible lors de l’installation de Commerce :
 
-  ```terminal
+  ```
   Error 503 Service Unavailable
   Service Unavailable
   XID: 303394517

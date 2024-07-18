@@ -3,7 +3,7 @@ title: Création, modification ou déverrouillage d’un compte administrateur
 description: Pour gérer le compte administrateur de votre application d’administration Adobe Commerce, procédez comme suit.
 feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Exemple d’utilisation :
 bin/magento admin:user:create --admin-firstname=John --admin-lastname=Doe --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A0b9%t3g
 ```
 
-```terminal
+```
 Created Magento administrator user named j.doe
 ```
 
@@ -63,7 +63,7 @@ Si vous ne spécifiez aucun des paramètres requis, l’application les demande 
 bin/magento admin:user:create
 ```
 
-```terminal
+```
 Admin user: John
 Admin password:
 Admin email: j.doe.young@example.com
@@ -71,7 +71,7 @@ Admin first name: John
 Admin last name: Doe Young
 ```
 
-```terminal
+```
 Created Magento administrator user named John
 ```
 
@@ -81,7 +81,7 @@ L’exemple suivant met à jour `first name`, `last name` et `password` de l’u
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567
 ```
 
-```terminal
+```
 Created Magento administrator user named j.doe
 ```
 
@@ -99,13 +99,13 @@ Vous devez indiquer le nom d’utilisateur de l’administrateur. Exemple :
 bin/magento admin:user:unlock admin
 ```
 
-```terminal
+```
 The user account "admin" has been unlocked
 ```
 
 Si le compte n’est pas déverrouillé ou en cas de problème, le message suivant s’affiche :
 
-```terminal
+```
 The user account "admin" was not locked or could not be unlocked
 ```
 
@@ -113,6 +113,6 @@ Vérifiez que l’utilisateur est un administrateur, qu’il est actif et que le
 
 Si le compte n’existe pas, le message suivant s’affiche :
 
-```terminal
+```
 Couldn't find the user account "bob"
 ```

@@ -2,7 +2,7 @@
 title: Gestion du cache
 description: Gestion des types de cache et affichage de l’état du cache à partir de la ligne de commande à l’aide de l’interface de ligne de commande Commerce
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Dans la ligne de commande du serveur d’applications Commerce, affichez l’ét
 
 Voici un exemple :
 
-```terminal
+```
 Current status:
                         config: 1
                         layout: 1
@@ -100,7 +100,7 @@ bin/magento cache:disable db_ddl full_page
 
 Exemple de résultat :
 
-```terminal
+```
    Changed cache status:
        db_ddl: 1 -> 0
     full_page: 1 -> 0
@@ -152,7 +152,7 @@ Où `[type]` est une liste de types de cache séparés par des espaces. L’omis
 
 Exemple de résultat :
 
-```terminal
+```
    Flushed cache types:
    config
    layout
