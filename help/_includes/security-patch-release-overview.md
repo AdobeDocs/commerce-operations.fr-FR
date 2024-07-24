@@ -1,7 +1,7 @@
 ---
-source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
+source-git-commit: 50b87e6f2f604d195c2d079bd18451754edaa11c
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
@@ -15,4 +15,4 @@ Avec les versions de correctifs de sécurité, vous pouvez maintenir votre site 
 
 Chaque version de correctif de sécurité est basée sur la version de correctif complète précédente. Il contient des correctifs de qualité et de sécurité issus d’une version de correctif précédente et des correctifs de sécurité créés entre la version de correctif complète précédente et la version de correctif de sécurité.
 
-Pour plus d&#39;informations sur le téléchargement et l&#39;application de correctifs de sécurité, reportez-vous à la section [Installation de démarrage rapide](../installation/composer.md#example---security-patch).
+Pour plus d&#39;informations sur le téléchargement et l&#39;application de correctifs de sécurité, reportez-vous à la section [Exécution et mise à niveau](../installation/composer.md#example---security-patch) du _Guide de mise à niveau_.
