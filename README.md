@@ -1,5 +1,5 @@
 ---
-source-git-commit: 0709cd6510adce0f513894fdecb2de5ac88d0e87
+source-git-commit: a6086afc0a1f099b62014ad61098a5a1dc9d4675
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 3%
@@ -9,19 +9,19 @@ ht-degree: 3%
 
 Nous acceptons les contributions de la communauté ainsi que des employés d’Adobe qui ne font pas partie des équipes de documentation.
 
-## Adobe de code de conduite Open Source
+## Adobe Ouvrir le code de conduite Source
 
 Ce projet respecte le [Code de conduite d’Adobe Open Source](code-of-conduct.md) ou le [Code de conduite .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Pour plus d’informations, consultez l’article [Contribution](contributing.md).
 
 ## À propos de vos contributions pour Adobe du contenu
 
-Voir [Guide du contributeur de documents d’Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Voir le [Guide du contributeur de documents d’Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Votre contribution dépend de qui vous êtes et du type de modifications que vous souhaitez apporter :
 
 ### Modifications mineures
 
-Si vous contribuez à des mises à jour mineures, consultez l’article et cliquez sur la zone de commentaires qui s’affiche au bas de l’article, cliquez sur **Options de commentaires détaillées**, puis cliquez sur **Suggérer une modification** pour accéder au fichier source Markdown sur GitHub. Utilisez l’interface utilisateur de GitHub pour effectuer vos mises à jour. Voir le [Guide du contributeur pour Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) pour plus d’informations.
+Si vous contribuez à des mises à jour mineures, consultez l’article et cliquez sur la zone de commentaires qui s’affiche au bas de l’article, cliquez sur **Options de commentaires détaillées**, puis sur **Suggérer une modification** pour accéder au fichier source Markdown sur GitHub. Utilisez l’interface utilisateur de GitHub pour effectuer vos mises à jour. Pour plus d’informations, consultez le [Guide du contributeur à la documentation d’Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) .
 
 Les corrections mineures ou les clarifications que vous envoyez pour la documentation et les exemples de code dans ce référentiel sont couvertes par les conditions d’utilisation Adobe.
 
@@ -43,14 +43,14 @@ Si vous êtes rédacteur technique, chef de programme ou développeur de l’éq
 
 Les contributeurs de la communauté peuvent utiliser l’interface utilisateur GitHub pour effectuer des modifications de base ou dupliquer le référentiel pour apporter des contributions majeures.
 
-Voir [Guide du contributeur de documents d’Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) pour plus d’informations.
+Pour plus d’informations, consultez le [Guide du contributeur de documents d’Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) .
 
 ## Utilisation de Markdown pour formater votre rubrique
 
 Tous les articles de ce référentiel utilisent GitHub Flavored Markdown. Si vous ne connaissez pas Markdown, voir :
 
-* [Concepts de base de Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Markdown cheatsheet imprimable](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [ Concepts de base de Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [Aide-mémoire imprimable pour le markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Modèles
 
@@ -61,9 +61,9 @@ Pour certaines rubriques, nous utilisons des fichiers de données et des modèle
 
 Voici quelques exemples de contenu modélisé :
 
-* [Référence des outils de ligne de commande](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-* [Tables de disponibilité des produits](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
-* [Tables des exigences système](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+* [Référence des outils de l’interface de ligne de commande](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
+* [ Tables de disponibilité des produits](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+* [ Tables de configuration système ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
 
 ### Générer du contenu modèle
 
@@ -72,25 +72,25 @@ En règle générale, la plupart des auteurs n’ont besoin que d’ajouter une 
 >**REMARQUE :**
 >
 >* La génération de contenu modèle nécessite de travailler sur la ligne de commande d’un terminal.
->* Ruby doit être installé pour exécuter le script de rendu. Voir [_jekyll/.ruby-version](_jekyll/.ruby-version) pour la version requise.
+>* Ruby doit être installé pour exécuter le script de rendu. Voir [_jekyll/.ruby-version](_jekyll/.ruby-version) pour connaître la version requise.
 
 Pour obtenir une description de la structure de fichiers pour le contenu modèle, reportez-vous aux sections suivantes :
 
-* `_jekyll`: contient des rubriques sous forme de modèles et les ressources requises.
-* `_jekyll/_data`: contient les formats de fichiers lisibles par l’ordinateur utilisés pour le rendu des modèles.
-* `_jekyll/templated`: contient des fichiers de modèle basés sur des HTMLS qui utilisent le langage de modèle Liquid.
-* `help/_includes/templated`: contient la sortie générée pour le contenu modèle dans `.md` format de fichier afin qu’il puisse être publié dans des rubriques Experience League ; le script de rendu écrit automatiquement la sortie générée dans ce répertoire pour vous.
+* `_jekyll` : contient des rubriques modélisées et les ressources requises
+* `_jekyll/_data` : contient les formats de fichiers lisibles par l’ordinateur utilisés pour le rendu des modèles.
+* `_jekyll/templated` : contient des fichiers de modèle basés sur l’HTML qui utilisent le langage de modèle Liquid.
+* `help/_includes/templated` : contient la sortie générée pour le contenu modèle au format de fichier `.md` afin qu’il puisse être publié dans des rubriques Experience League ; le script de rendu écrit automatiquement la sortie générée dans ce répertoire pour vous.
 
 Pour mettre à jour le contenu du modèle :
 
-1. Dans votre éditeur de texte, ouvrez un fichier de données dans le `/jekyll/_data` répertoire . Par exemple :
+1. Dans votre éditeur de texte, ouvrez un fichier de données dans le répertoire `/jekyll/_data`. Par exemple :
 
-   * [Tables de disponibilité des produits](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
-   * [Tables des exigences système](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
+   * [ Tables de disponibilité des produits ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) : `/jekyll/_data/product-availability.yml`
+   * [ Tables de configuration système ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) : `/jekyll/_data/system-requirements.yml`
 
 1. Utilisez la structure YAML existante pour créer des entrées.
 
-   Par exemple, pour ajouter une version d’Adobe Commerce aux tableaux de disponibilité du produit, ajoutez le code suivant à chaque entrée dans la variable `extensions` et `services` des sections `/jekyll/_data/product-availability.yml` (modifiez les numéros de version si nécessaire) :
+   Par exemple, pour ajouter une version d’Adobe Commerce aux tables de disponibilité du produit, ajoutez le code suivant à chaque entrée des sections `extensions` et `services` du fichier `/jekyll/_data/product-availability.yml` (modifiez les numéros de version si nécessaire) :
 
    ```
    support:
@@ -98,27 +98,27 @@ Pour mettre à jour le contenu du modèle :
         version: 4.5.6
    ```
 
-1. Accédez au `_jekyll` répertoire .
+1. Accédez au répertoire `_jekyll`.
 
    ```
    cd _jekyll
    ```
 
-1. Générez du contenu modèle et écrivez la sortie dans le `help/_includes/templated` répertoire .
+1. Générez du contenu modèle et écrivez la sortie dans le répertoire `help/_includes/templated`.
 
    ```
    rake render
    ```
 
-   >**REMARQUE :** Vous devez exécuter le script à partir de la fonction `_jekyll` répertoire . Si c’est la première fois que vous exécutez le script, vous devez d’abord installer les dépendances Ruby avec l’événement `bundle install` .
+   >**REMARQUE :** Vous devez exécuter le script à partir du répertoire `_jekyll`. Si c’est la première fois que vous exécutez le script, vous devez d’abord installer les dépendances Ruby avec la commande `bundle install`.
 
-1. Revenez au `root` répertoire .
+1. Revenez au répertoire `root`.
 
    ```
    cd ..
    ```
 
-1. Vérifiez que la variable `help/_includes/templated` Les fichiers ont été modifiés.
+1. Vérifiez que les fichiers `help/_includes/templated` attendus ont été modifiés.
 
    ```
    git status
@@ -134,9 +134,9 @@ Pour mettre à jour le contenu du modèle :
 1. Envoyez vos modifications.
 
    ```
-   git add
-   git commit -m "_descriptive message of the intended commit_"
+   git add .
+   git commit -m "descriptive message of the intended commit"
    git push
    ```
 
-Pour plus d’informations sur la documentation Jekyll [Fichiers de données](https://jekyllrb.com/docs/datafiles), [Filtres liquides](https://jekyllrb.com/docs/liquid/filters/), ainsi que d’autres fonctionnalités.
+Pour plus d’informations sur les [fichiers de données](https://jekyllrb.com/docs/datafiles), les [filtres liquides](https://jekyllrb.com/docs/liquid/filters/) et d’autres fonctionnalités, consultez la documentation de Jekyll .
