@@ -2,7 +2,7 @@
 title: Commandes courantes
 description: Affichez un échantillon des commandes et de l’utilisation de l’interface de ligne de commande Commerce courantes.
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d0e6d6517e28a32816bfe2b328edfba97523740
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Les commandes sont présentées sous forme de résumé uniquement. Pour plus d�
 
 ## Arguments courants
 
-Les arguments suivants sont communs à toutes les commandes. Ces commandes peuvent être exécutées avant ou après l’installation du logiciel Commerce :
+Les arguments suivants sont communs à [toutes les commandes](/help/tools/reference/commerce-on-premises.md). Ces commandes peuvent être exécutées avant ou après l’installation du logiciel Commerce :
 
 | Version longue | Version courte | Signification |
 |--- |--- |--- |
