@@ -2,9 +2,9 @@
 title: Calendrier des versions
 description: Découvrez à quel moment Adobe prévoit d’annoncer la publication de nouvelles fonctionnalités pour Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 2dd18f3eada5fc5e1abe9ecc7954df06986abcd1
+source-git-commit: dc493fc044401e33ef40e4e070b5d82977938eb1
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '493'
 ht-degree: 2%
 
 ---
@@ -82,7 +82,7 @@ Le tableau suivant indique les dates des versions de correctif planifiées (les 
   </tr>
   <tr>
     <td>14 octobre 2025</td>
-    <td><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Correctifs de sécurité</a> : pour les versions 2.4.8, 2.4.7, 2.4.6 et 2.4.5</td>
+    <td><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Correctifs de sécurité</a> : pour 2.4.8, 2.4.7 et 2.4.6</td>
   </tr>
 </tbody>
 </table>
