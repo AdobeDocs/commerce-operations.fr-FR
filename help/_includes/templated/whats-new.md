@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2ffc16a7bbe2333c749f0bfeb57b1cbffd3ec474
+source-git-commit: 3ee39b766bbad8d0b3a80cd2305dd8323eadf17f
 workflow-type: tm+mt
-source-wordcount: '77'
+source-wordcount: '118'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,32 @@ ht-degree: 2%
 ## Nouveautés
 
 Découvrez la nouvelle documentation et les mises à jour importantes de la documentation existante.
+
+### 13 août 2024
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Notes de mise à jour publiées pour les correctifs de sécurité d’août 2024 : <br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p2</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p7</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p9</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p10</a></p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0bfe3444c045bbfacf63e59e609d75d43e9c44a0">0bfe34</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Ajout de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule">dates d’annonce 2025</a> pour la fonctionnalité Adobe Commerce et les versions de correctifs.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6e499dc4423b8f0a3b72ac9ae3e1223f5c4c4db7">6e499d</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 5 août 2024
 

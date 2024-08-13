@@ -2,76 +2,87 @@
 title: Calendrier des versions
 description: Découvrez à quel moment Adobe prévoit d’annoncer la publication de nouvelles fonctionnalités pour Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: e9ef167f5425407f6b1850f0dd913d5d3e2bd628
+source-git-commit: 2dd18f3eada5fc5e1abe9ecc7954df06986abcd1
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '495'
 ht-degree: 2%
 
 ---
 
+
 # Calendrier des versions
 
-Adobe s’efforce continuellement de trouver le bon équilibre entre la simplicité et la prévisibilité des mises à niveau de produit tout en offrant des améliorations et de nouvelles fonctionnalités aux utilisateurs précoces plus rapidement (voir la [politique de contrôle de version](versioning-policy.md)). Cette planification a pour but de spécifier la date à laquelle l’Adobe prévoit d’annoncer la sortie de nouvelles fonctionnalités importantes. Ces fonctionnalités peuvent varier tout au long de l’année. Cependant, Adobe publie régulièrement et continuellement des améliorations pour les outils d’extensibilité, l’infrastructure et les produits SaaS (services) entre les dates spécifiées sur cette page.
+Adobe s’efforce continuellement de trouver le bon équilibre entre la simplicité et la prévisibilité des mises à niveau de produit tout en offrant des améliorations et de nouvelles fonctionnalités aux utilisateurs précoces plus rapidement (voir la [politique de contrôle de version](versioning-policy.md)). Cette planification a pour but de spécifier la date à laquelle l’Adobe prévoit d’annoncer la sortie de nouvelles fonctionnalités importantes.
 
-Adobe met à jour [correctifs](versioning-policy.md#patch-release) pour chaque ligne de mise à jour prise en charge de l’application PHP principale d’Adobe Commerce. Les mises à jour de correctifs offrent la possibilité de mettre à niveau le code de base afin de maintenir la sécurité, la fiabilité et les performances de votre plateforme. Les fonctionnalités sont indépendantes du code base et sont disponibles via le [module externe, extension, outil ou service Web](versioning-policy.md#extensibility-infrastructure-and-services-release).
+## Fonctionnalités, infrastructure cloud et extensibilité
+
+Les nouvelles fonctionnalités, les mises à jour de fonctionnalités, l’infrastructure cloud et les mises à jour de l’extensibilité sont fournies indépendamment des versions de correctif et sont disponibles par le biais de modules externes, d’extensions, d’outils ou de services web. Par exemple :
+
+- ![Icône Fonctionnalité](../assets/icons/feature.svg) [**Fonctionnalités et fonctionnalités**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/release-information/release-notes-all) : nouvelles fonctionnalités proposées indépendamment des versions de correctif. Par exemple, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), service de catalogue, connexion aux données, recherche en direct et Recommendations de produit.
+
+- ![Icône d’infrastructure](../assets/icons/servers.svg) [****](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) : nouvelles fonctionnalités et améliorations apportées à Adobe Commerce sur l’infrastructure cloud et la suite d’outils Cloud pour les modules Commerce, qui déploient et gèrent les installations et mises à niveau Adobe Commerce sur la plateforme Cloud.
+
+- ![Icône d’extensibilité](../assets/icons/brackets.svg) [**Extensibilité**](https://developer.adobe.com/commerce/extensibility/) : nouveaux outils et services de développement pour l’extensibilité hors processus fournis indépendamment des versions de correctif. Par exemple, le kit de démarrage d’intégration, le SDK de l’interface utilisateur d’administration, les événements d’Adobe I/O pour Commerce et le maillage API.
+
+La liste suivante indique les dates des versions planifiées des fonctionnalités, de l’infrastructure cloud et de l’extensibilité (les dates peuvent être modifiées) :
+
+- 13 août 2024
+- 8 octobre 2024
+- 11 février 2025
+- 8 avril 2025
+- 10 juin 2025
+- 12 août 2025
+- 14 octobre 2025
 
 >[!NOTE]
 >
->Depuis 2024, Adobe ne fournit plus l’accès &quot;préversion&quot; aux correctifs. À la place, pour la version 2.4.7 et ultérieure, les clients Adobe Commerce peuvent utiliser les [versions bêta](beta.md) pour accéder au code de disponibilité prégénéral à des fins de test et de développement.
+>Les fonctionnalités, l’infrastructure cloud et les versions d’extensibilité peuvent varier tout au long de l’année. Cependant, Adobe publie régulièrement et en continu des améliorations pour ces zones entre les dates spécifiées sur cette page. Voir [Qu’est-ce qu’Adobe Commerce ?](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) pour en savoir plus sur les dernières fonctionnalités.
 
-Le tableau suivant indique les dates des versions planifiées (les dates peuvent être modifiées) :
+## Correctifs
+
+Adobe publie également les [correctifs](versioning-policy.md#patch-release) pour chaque ligne de mise à jour prise en charge de l’application PHP principale d’Adobe Commerce. Les mises à jour de correctifs offrent la possibilité de mettre à niveau le code de base afin de maintenir la sécurité, la fiabilité et les performances de votre plateforme.
+
+Outre la qualité, la sécurité et les correctifs bêta planifiés répertoriés sur cette page, Adobe permet d’accéder aux [ correctifs individuels](versioning-policy.md#individual-patch) par l’ [ outil de correctifs de qualité](../tools/quality-patches-tool/usage.md). L’outil vous permet d’appliquer, de rétablir et d’afficher des informations générales sur tous les correctifs individuels disponibles pour la version installée d’Adobe Commerce.
+
+Le tableau suivant indique les dates des versions de correctif planifiées (les dates peuvent être modifiées) :
 
 <table>
 <thead>
   <tr>
     <th>Disponibilité générale</th>
-    <th>Fonctionnalités</th>
-    <th>PHP</th>
+    <th>Correctifs</th>
   </tr>
 </thead>
-<tfoot>
-   <tr>
-      <td colspan="3"><strong>Légende</strong>
-         <ul>
-           <li><strong><img alt="Icône de fonctionnalité B2B" src="../assets/icons/enterprise.svg"></img> B2B</strong> : nouvelles fonctionnalités, améliorations et correctifs pour l’extension B2B pour Adobe Commerce. Pour plus d’informations sur les versions de l’extension B2B, consultez les <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">Notes de mise à jour B2B</a>.</li>
-            <li><strong><img alt="Icône de la fonction d’extensibilité" src="../assets/icons/brackets.svg"></img> Extensibilité</strong> : nouveaux outils et services de développement pour l’extensibilité hors processus, fournis indépendamment des versions de correctif. Par exemple, le SDK de l’interface utilisateur d’administration, les événements d’Adobe I/O pour Commerce et le maillage d’API.</li>
-            <li><strong><img alt="Icône Fonctionnalité de l’infrastructure" src="../assets/icons/servers.svg"></img> Infrastructure</strong> : nouvelles fonctionnalités et améliorations apportées à Adobe Commerce sur l’infrastructure cloud et aux modules Cloud Tools Suite for Commerce, conçus pour déployer et gérer les installations et mises à niveau Adobe Commerce sur la plateforme Cloud.</li>
-            <li><strong><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> Correctifs</strong> : mises à jour de l’application PHP principale d’Adobe Commerce qui incluent des correctifs de sécurité, de conformité, de performances et de qualité haute priorité.</li>
-            <li><strong><img alt="Icône des fonctionnalités de services" src="../assets/icons/feature.svg"></img> Services</strong> : nouvelles fonctionnalités SaaS diffusées indépendamment des versions de correctif. Par exemple, le service de catalogue, la recherche en direct et le Recommendations de produit.</li>
-         </ul>
-      </td>
-   </tr>
-</tfoot>
 <tbody>
   <tr>
-    <td>13 février 2024</td>
-    <td><img alt="Icône de la fonction d’extensibilité" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibilité</a><br><img alt="Icône Fonctionnalité de l’infrastructure" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infrastructure</a><br><img alt="Icône des fonctionnalités de services" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a></td>
-    <td><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Correctifs de sécurité</a> : 2.4.6-p4, 2.4.5-p6, 2.4.4-p7</td>
-  </tr>
-  <tr>
-    <td>12 mars 2024</td>
-    <td>—</td>
-    <td><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Correctif Beta</a> : 2.4.7-beta3</td>
-  </tr>
-  <tr>
-    <td>9 avril 2024</td>
-    <td><img alt="Icône de la fonction d’extensibilité" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibilité</a><br><img alt="Icône Fonctionnalité de l’infrastructure" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infrastructure</a><br><img alt="Icône des fonctionnalités de services" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a></td>
-    <td><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md"><strong>Adobe Commerce 2.4.7</a></strong> :<ul><li>Amélioration des performances</li><li>Amélioration de la qualité</li><li>Amélioration de la sécurité</li><li>Mises à jour des dépendances tierces</li></ul><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Correctifs de sécurité</a> : 2.4.6-p5, 2.4.5-p7, 2.4.4-p8</td>
-  </tr>
-  <tr>
-    <td>11 juin 2024</td>
-    <td><img alt="Icône de la fonction d’extensibilité" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibilité</a><br><img alt="Icône Fonctionnalité de l’infrastructure" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infrastructure</a><br><img alt="Icône des fonctionnalités de services" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a></td>
-    <td><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Correctifs de sécurité</a> : 2.4.7-p1, 2.4.6-p6, 2.4.5-p8, 2.4.4-p9</td>
-  </tr>
   <tr>
     <td>13 août 2024</td>
-    <td><img alt="Icône de la fonction d’extensibilité" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibilité</a><br><img alt="Icône Fonctionnalité de l’infrastructure" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infrastructure</a><br><img alt="Icône des fonctionnalités de services" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a></td>
     <td><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Correctifs de sécurité</a> : 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10</td>
   </tr>
   <tr>
     <td>8 octobre 2024</td>
-    <td><img alt="Icône de la fonction d’extensibilité" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibilité</a><br><img alt="Icône Fonctionnalité de l’infrastructure" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infrastructure</a><br><img alt="Icône des fonctionnalités de services" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a></td>
-    <td><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md"> </a> : 2.4.8-beta1<br><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md"> </a> : 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11</td>
+    <td><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="beta.md#adobe-commerce-foundation-public-beta"> </a> : 2.4.8-beta1<br><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md"> </a> : 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11</td>
+  </tr>
+  <tr>
+    <td>11 février 2025</td>
+    <td><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="beta.md#adobe-commerce-foundation-public-beta"> </a> : 2.4.8-beta2<br><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md"> </a> : pour 2.4.7, 2.4.6, 2.4.5 et 2.4.4</td>
+  </tr>
+  <tr>
+    <tr>
+    <td>8 avril 2025</td>
+    <td><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md"><strong>Adobe Commerce 2.4.8</a></strong> :<ul><li>Amélioration des performances</li><li>Amélioration de la qualité</li><li>Amélioration de la sécurité</li><li>Mises à jour des dépendances tierces</li></ul><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Correctifs de sécurité</a> : pour les versions 2.4.7, 2.4.6, 2.4.5 et 2.4.4</td>
+  </tr>
+  <tr>
+    <td>10 juin 2025</td>
+    <td><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Correctifs de sécurité</a> : pour les versions 2.4.8, 2.4.7, 2.4.6 et 2.4.5</td>
+  </tr>
+  <tr>
+    <td>12 août 2025</td>
+    <td><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Correctifs de sécurité</a> : pour les versions 2.4.8, 2.4.7, 2.4.6 et 2.4.5</td>
+  </tr>
+  <tr>
+    <td>14 octobre 2025</td>
+    <td><img alt="Icône de version du correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Correctifs de sécurité</a> : pour les versions 2.4.8, 2.4.7, 2.4.6 et 2.4.5</td>
   </tr>
 </tbody>
 </table>

@@ -2,9 +2,9 @@
 title: Stratégie de publication
 description: Découvrez les différents types de versions d’Adobe Commerce, notamment les versions mineures, les correctifs, les correctifs de sécurité, les fonctionnalités, les correctifs, les correctifs individuels et les correctifs personnalisés.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: b5d120893668f4315e289a204649270db4f7a6bc
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -54,9 +54,9 @@ Les versions de disponibilité prégénérales des fonctionnalités d’Adobe Co
 
 Les versions de Beta peuvent contenir des défauts et sont fournies &quot;EN L’ÉTAT&quot; sans garantie de quelque type que ce soit. Adobe n’aura aucune obligation de gérer, corriger, mettre à jour, modifier, modifier ou d’autre manière prendre en charge les versions de Beta (via les services d’assistance d’Adobe ou autres). Il est conseillé aux clients de faire preuve de prudence et de ne pas s’appuyer d’aucune manière sur le bon fonctionnement ou sur les performances correctes des versions de Beta et/ou de la documentation ou des documents associés. Par conséquent, toute utilisation des versions de Beta est entièrement à la merci du client.
 
-## Extension, infrastructure et version des services
+## Fonctionnalités, infrastructure cloud et version de l’extensibilité
 
-Description des nouvelles fonctionnalités qui contiennent de nouvelles fonctionnalités et des mises à jour de fonctionnalités diffusées en tant que services indépendants, indépendamment des mises à jour de correctifs. Parmi les exemples, citons les technologies d’extensibilité telles que le Mesh et l’Eventing de l’API, les produits SaaS tels que Recommendations de produit et Live Search, les modules indépendants tels que B2B et PWA Studio, ainsi que les mises à jour de nos services d’hébergement de cloud et de notre infrastructure.
+L’infrastructure cloud et les mises à jour de fonctionnalités contiennent de nouvelles fonctionnalités et des mises à jour de fonctionnalités fournies sous la forme de services indépendants, distinctes des mises à jour de correctifs. Par exemple, les mises à jour de nos services et infrastructures d’hébergement dans le cloud, les produits B2B, SaaS (service de catalogue, connexion aux données, Recommendations de produit et recherche en direct), ainsi que les technologies d’extensibilité (maillage d’API, kit de démarrage d’intégration et mode Eventing).
 
 ## Correctif
 
@@ -64,7 +64,7 @@ Les correctifs sont des correctifs qui contiennent des correctifs de sécurité 
 
 >[!NOTE]
 >
->Les correctifs peuvent contenir des modifications rétrocompatibles.
+>Les correctifs peuvent contenir des modifications incompatibles avec le passé.
 
 ## Correctif individuel
 
@@ -72,14 +72,12 @@ Les correctifs individuels contiennent des correctifs de qualité à faible impa
 
 >[!NOTE]
 >
->Les correctifs individuels ne contiennent pas de modifications rétrocompatibles.
+>Les correctifs individuels ne contiennent pas de modifications incompatibles avec le passé.
+
+## Correctif isolé
+
+Contient un correctif autonome inclus dans le dernier correctif de sécurité uniquement ou un correctif de sécurité uniquement à venir, qui est publié séparément pour une mise en oeuvre plus rapide.
 
 ## Correctif personnalisé
 
 Créé par le personnel non-Adobe pour résoudre un problème ou modifier le code Adobe Commerce pour diverses raisons. Les correctifs personnalisés sont fournis par l’[ outil de correctifs de qualité](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
-
-## Rubriques connexes
-
-- [Contrôle de version](https://developer.adobe.com/commerce/php/development/versioning/)
-- [Versions à venir](schedule.md)
-- [Stratégie de cycle de vie des logiciels](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
