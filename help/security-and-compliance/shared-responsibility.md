@@ -2,9 +2,9 @@
 title: Sécurité de la responsabilité partagée et modèle opérationnel
 description: Découvrez les responsabilités en matière de sécurité de chaque partie impliquée dans votre projet d’infrastructure cloud Adobe Commerce.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 76aafb88855f7f41db8e57b06cf0e82370b57302
+source-git-commit: 9d0ab29be70c5638296694f90755fedac41b6a77
 workflow-type: tm+mt
-source-wordcount: '2802'
+source-wordcount: '2791'
 ht-degree: 0%
 
 ---
@@ -51,13 +51,13 @@ Adobe est responsable de la sécurité et de la disponibilité d’Adobe Commerc
 - Surveillance des opérations de la plateforme et prise en charge 24/7 d’Adobe Commerce sur les marchands d’infrastructure cloud
 - Mise en service des environnements de production et d’évaluation
 - Évaluation des menaces potentielles pour la sécurité des opérations et de l’infrastructure de la plateforme
-- Mise à l’échelle de l’informatique, du stockage, de la grille et d’autres ressources, comme décrit dans l’accord de niveau de service (SLA) avec le marchand
+- Mise à l’échelle de l’informatique, du stockage, de la grille et des autres ressources, comme décrit dans l’accord de niveau de service (SLA) avec le marchand
 - Configuration du DNS (Adobe Commerce sur l’infrastructure de la plateforme d’infrastructure cloud uniquement)
 - Test de la plateforme pour détecter des failles de sécurité
 
 Adobe gère la certification PCI pour l’infrastructure et les services utilisés pour la solution Adobe Commerce.  Les commerçants sont responsables de la conformité du code personnalisé, des processus système et réseau, ainsi que de l’organisation.
 
-L&#39;Adobe assure également la disponibilité de l&#39;infrastructure du marchand, comme convenu dans le contrat de niveau de service applicable.
+L’Adobe assure également la disponibilité de l’infrastructure du marchand, comme convenu dans le SLA applicable.
 
 ## Responsabilités du marché
 
@@ -98,7 +98,7 @@ Les fournisseurs de services cloud sont également responsables des éléments s
 
 ## Responsabilités du fournisseur CDN
 
-La solution d’infrastructure cloud d’Adobe Commerce utilise les fournisseurs CDN pour accélérer le temps de chargement des pages, mettre en cache le contenu et purger instantanément le contenu obsolète. Ces fournisseurs sont également responsables des problèmes de sécurité directement liés à leur réseau de diffusion de contenu ou affectant celui-ci, ainsi que de la définition et de la maintenance des règles de diffusion de contenu de contenu de diffusion de contenu.
+La solution d’infrastructure cloud d’Adobe Commerce utilise les fournisseurs CDN pour accélérer le temps de chargement des pages, mettre en cache le contenu et purger instantanément le contenu obsolète. Ces fournisseurs sont également responsables des problèmes de sécurité directement liés à leur réseau de diffusion de contenu ou affectant celui-ci, ainsi que de la définition et de la maintenance des règles WAF de réseau de diffusion de contenu.
 
 ## Résumé des responsabilités de sécurité
 
@@ -146,7 +146,7 @@ Le tableau récapitulatif suivant utilise le modèle RACI pour afficher les resp
     <td></td>
   </tr>
   <tr>
-    <td>Définition des règles CDN WAF</td>
+    <td>Définition des règles WAF CDN</td>
     <td>A</td>
     <td></td>
     <td></td>
@@ -160,7 +160,7 @@ Le tableau récapitulatif suivant utilise le modèle RACI pour afficher les resp
     <td></td>
   </tr>
   <tr>
-    <td>Déploiement des règles CDN WAF</td>
+    <td>Déploiement de règles CDN WAF</td>
     <td>A</td>
     <td>I</td>
     <td></td>
@@ -641,7 +641,7 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 | Application Adobe Commerce personnalisée | | R |
 | Disponibilité des services New Relic : <br>intégration de l’application et de l’agent APM, application d’infrastructure, <br>Journalisation et intégration | R |   |
 | Configuration des alertes New Relic |     | R |
-| Déploiement de l’agent New Relic sur les serveurs PaaS |     | R |
+| Déploiement de l’agent New Relic sur les serveurs PaaS | R |  |
 
 {style="table-layout:auto"}
 
@@ -820,13 +820,13 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 
 {style="table-layout:auto"}
 
-#### Web Application Firewall (WAF)
+#### Pare-feu d’applications web (WAF)
 
 |     | Adobe | Marchand |
 | --- | --- | --- |
-| Disponibilité et configuration du WAF | R |  |
+| Disponibilité et configuration de WAF | R |  |
 | Traitement des faux positifs de la règle WAF | R | |
-| Reporting des faux positifs de la règle WAF |     | R |
+| Signalement de faux positifs de la règle WAF |     | R |
 | Réglage des règles WAF (NON PRIS EN CHARGE) |     |     |
 | Journaux WAF/CDN |     | R |
 
@@ -841,7 +841,6 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 | Détection DDOS - couche 3-4 | R |   |
 | Détection DDOS - Couche 7 |     | R |
 | Réponse DDOS | R |   |
-| Configuration de la limitation de taux d’extension rapide et de la protection des robots (limitée) |     | R |
 
 {style="table-layout:auto"}
 
@@ -850,11 +849,11 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 |     | Adobe | Marchand |
 | --- | --- | --- |
 | Configuration et maintenance des connexions PrivateLink (le cas échéant) avec un VPC détenu par l’Adobe | R |   |
-| Configuration et maintenance des connexions PrivateLink (le cas échéant) avec un VPC détenu par le marchand |     | R |
+| Configuration et maintenance des connexions PrivateLink (le cas échéant) avec un VPC détenu par le détaillant |     | R |
 | Disponibilité du SSH (lien non privé) | R |   |
 | Configuration de PrivateLink entrant dans le point d’entrée du service Adobe Commerce Cloud | R |   |
 | Acceptation de PrivateLink entrant dans le point d’entrée du service Adobe Commerce Cloud |     | R |
-| Configuration de PrivateLink entrant dans le point d’entrée du service VPC du commerçant |     | R |
+| Configuration de PrivateLink entrant vers le point d’entrée VPC Service du détaillant |     | R |
 | Acceptation du lien privé entrant dans le point d’entrée du service VPC du détaillant | R |   |
 | Configuration des intégrations PrivateLink (point d’entrée vers compte) |     | R |
 | Configuration de VPC détenu par le commerce pour le point d’entrée PrivateLink <br><br> (y compris toute connexion VPN) |     | R |
