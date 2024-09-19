@@ -2,9 +2,9 @@
 title: Versions de Beta
 description: Découvrez les versions bêta d’Adobe Commerce et comment y participer.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 050d5877fae4cb9caaee06598f4429ea8857b1d2
+source-git-commit: f90279e0e152204ac976db307ca14d4418cbcba8
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '1094'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,32 @@ L’obtention d’un accès anticipé aux fonctionnalités qu’Adobe développe
 ## Programmes Beta actuels
 
 Consultez les sections suivantes pour obtenir la liste des programmes bêta actifs.
+
+### Amélioration des fonctionnalités de recherche pour la recherche en direct (Beta public)
+
+Cette version bêta prend en charge trois nouvelles fonctionnalités de la requête [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) :
+
+- **Recherche en couches** - Recherche dans un autre contexte de recherche - Grâce à cette fonctionnalité, vous pouvez effectuer jusqu’à deux couches de recherche pour vos requêtes de recherche. Par exemple :
+
+   - **Recherche de calque 1** - Recherchez &quot;engine&quot; sur &quot;product_attribute_1&quot;.
+   - **Recherche par couche 2** - Recherchez &quot;numéro de partie 123&quot; sur &quot;product_attribute_2&quot;. Cet exemple recherche &quot;part number 123&quot; dans les résultats pour &quot;engine&quot;.
+
+  La recherche en couches est disponible pour l’indexation de recherche `startsWith` et l’indexation de recherche `contains` comme décrit ci-dessous :
+
+- **startsWith search indexation** - Effectuez une recherche en utilisant l’indexation `startsWith`. Cette nouvelle fonctionnalité permet :
+
+   - La recherche de produits pour lesquels la valeur d’attribut commence par une chaîne spécifique.
+   - Configuration d’une recherche &quot;se termine par&quot; afin que les acheteurs puissent rechercher des produits pour lesquels la valeur d’attribut se termine par une chaîne spécifique. Pour activer une recherche &quot;se termine par&quot;, l’attribut de produit doit être ingéré en sens inverse et l’appel API doit également être une chaîne inversée.
+
+- **contient l’indexation de la recherche** - Recherchez un attribut à l’aide de l’indexation contient. Cette nouvelle fonctionnalité permet :
+
+   - Recherche d’une requête dans une chaîne plus grande. Par exemple, si un acheteur recherche le numéro de produit &quot;PE-123&quot; dans la chaîne &quot;HAPE-123&quot;.
+
+      - Remarque : Ce type de recherche est différent de la [recherche d’expression](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase) existante, qui effectue une recherche de saisie semi-automatique. Par exemple, si la valeur de votre attribut de produit est &quot;pantalon extérieur&quot;, une recherche d’expression renvoie une réponse pour &quot;pantalon d’extraction&quot;, mais ne renvoie pas de réponse pour &quot;fourmis d’extérieur&quot;. Une recherche contient, cependant, renvoie une réponse pour &quot;fourmis pauvres&quot;.
+
+Ces nouvelles conditions améliorent le mécanisme de filtrage des requêtes de recherche pour affiner les résultats de recherche. Ces nouvelles conditions n’affectent pas la requête de recherche principale. Pour un accès bêta, envoyez un email à `sagonzal@adobe.com` ou `alexj@adobe.com`.
+
+Pour installer la version bêta de Live Search, consultez le [guide de Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta).
 
 ### Intégration de Experience Manager Assets pour Commerce (Private Beta)
 
