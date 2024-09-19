@@ -1,7 +1,7 @@
 ---
-source-git-commit: 08c42f87d550cf5666413b452efe0bb3b5403b36
+source-git-commit: b5bb4c27b9aa0b911805249ea169d372266606a4
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
@@ -354,31 +354,31 @@ La prise en charge de la version 2.3 s’est terminée en septembre.  8 mars 20
   <tbody>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p4.html">2.3.7-p4</a>
+          2.3.7-p4
         </td>
         <td>Août  9 janvier 2022</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p3.html">2.3.7-p3</a>
+          2.3.7-p3
         </td>
         <td>12 avril 2022</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p2.html">2.3.7-p2</a>
+          2.3.7-p2
         </td>
         <td>12 octobre 2021</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p1.html">2.3.7-p1</a>
+          2.3.7-p1
         </td>
         <td>10 août 2021</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html">2.3.7</a>
+          2.3.7
         </td>
         <td>11 mai 2021</td>
     </tr>
@@ -390,7 +390,7 @@ La prise en charge de la version 2.3 s’est terminée en septembre.  8 mars 20
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html">2.3.6</a>
+          2.3.6
         </td>
         <td>15 octobre 2020</td>
     </tr>
@@ -414,7 +414,7 @@ La prise en charge de la version 2.3 s’est terminée en septembre.  8 mars 20
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html">2.3.5</a>
+          2.3.5
         </td>
         <td>28 avril 2020</td>
     </tr>
@@ -426,7 +426,7 @@ La prise en charge de la version 2.3 s’est terminée en septembre.  8 mars 20
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html">2.3.4</a>
+          2.3.4
         </td>
         <td>28 janvier 2020</td>
     </tr>
@@ -438,25 +438,25 @@ La prise en charge de la version 2.3 s’est terminée en septembre.  8 mars 20
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">2.3.3</a>
+          2.3.3
         </td>
         <td>octobre  8 mai 2019</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html">2.3.2</a>
+          2.3.2
         </td>
         <td>25 juin 2019</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html">2.3.1</a>
+          2.3.1
         </td>
         <td>26 mars 2019</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html">2.3.0</a>
+          2.3.0
         </td>
         <td>28 novembre 2018</td>
     </tr><!-- patch_releases -->
