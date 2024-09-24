@@ -4,9 +4,9 @@ description: Découvrez comment améliorer les performances de mise en cache à 
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 7f277fe6245aba851aba7ddc70be40343bdaecc7
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -156,6 +156,10 @@ stage:
         translate:
           frontend: "stale_cache_enabled"
 ```
+
+>[!NOTE]
+>
+>Dans l’exemple précédent, le cache `full_page` n’est pas pertinent pour Adobe Commerce sur les projets d’infrastructure cloud, car ils utilisent [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly).
 
 Pour configurer les installations sur site, reportez-vous à la section [Options de cache obsolètes](../../../configuration/cache/level-two-cache.md#stale-cache-options) du _Guide de configuration_.
 
