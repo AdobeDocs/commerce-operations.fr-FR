@@ -2,7 +2,7 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leurs utilisations, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 582f36f9f38394d8af9aaf660847be15372fd815
+source-git-commit: 9c9001f28c4cb28ad881bb9a3c78e875fcbef607
 workflow-type: tm+mt
 source-wordcount: '5878'
 ht-degree: 0%
@@ -129,7 +129,7 @@ ht-degree: 0%
          - [MDVA-42507 : le cache de la page entière est nettoyé après application de la mise à jour intermédiaire pour la règle de panier.](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42507-full-page-cache-is-cleaned-after-applying-staging-update-for-cart-rule.md)
          - [MDVA-42657 : impossible de sélectionner des catégories dans les conditions de segment du client](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42657-unable-to-select-categories-in-customer-segment-conditions.md)
          - [MDVA-42806 : un nouveau courrier électronique d’enregistrement de société est envoyé chaque fois que la société existante est mise à jour.](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42806-new-company-registration-email-sent-when-existing-company-updated.md)
-      - v1-1-10 {#v1-1-10}
+      - v1.1.10 {#v1-1-10}
          - [Présentation : Outil de correctifs de qualité (QPT) v1.1.10](quality-patches-tool/patches-available-in-qpt/v1-1-10/overview.md)
          - [MDVA-38728 : la modification de la visibilité du produit crée une réécriture de l’URL pour le site web principal](quality-patches-tool/patches-available-in-qpt/v1-1-10/mdva-38728-changing-product-visibility-creates-url-rewrite-for-the-main-website.md)
          - [MDVA-39181 : les règles de produit connexes affichent les produits de la catégorie non définis dans la règle.](quality-patches-tool/patches-available-in-qpt/v1-1-10/mdva-39181-related-product-rules-show-products-from-category-not-defined-in-rule.md)
@@ -148,7 +148,7 @@ ht-degree: 0%
          - [MDVA-42269 : L’utilisateur administrateur ne peut pas se connecter à l’administrateur en raison de l’erreur &quot;TypeError&quot;](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42269-admin-user-cannot-log-in-to-admin-due-to-the-typeerror.md)
          - [MDVA-42520 : Taux d&#39;imposition appliqué deux fois lorsque &quot;Activer le commerce transfrontalier&quot; est utilisé](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42520-tax-rate-applied-twice-when-enable-cross-border-trade-is-used.md)
          - [MDVA-42790 : les attributs de prix de produit ne peuvent pas être mis à jour pour un site web spécifique via l’API REST.](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42790-product-price-attributes-cannot-be-updated-for-specific-website-via-rest-api.md)
-      - v1-1-12 {#v1-1-12}
+      - v1.1.12 {#v1-1-12}
          - [Présentation : Outil de correctifs de qualité (QPT) v1.1.12](quality-patches-tool/patches-available-in-qpt/v1-1-12/overview.md)
          - [MDVA-39546 : la date de début de la mise à jour intermédiaire peut être définie sur une date antérieure à la date actuelle.](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-39546-staging-update-start-date-set-to-earlier-date-than-current-date.md)
          - [MDVA-39713 : l’utilisateur peut modifier l’heure de début de la mise à jour planifiée active](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-39713-user-able-to-edit-start-time-for-active-scheduled-update.md)
@@ -623,6 +623,8 @@ ht-degree: 0%
          - [ACSD-48210 : l’attribut de portée spécifique de la vue de magasin remplace les valeurs globales.](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-48210-store-view-specific-scope-attribute-overrides-global-values.md)
          - [ACSD-59280 : erreur ReflectionUnionType::getName() dans les installations 2.4.4-pX](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59280-fix-for-reflection-union-type-error.md)
          - [ACSD-60303 : résolution du problème d’emplacement des commandes d’administration avec la minification d’HTML activée](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60303-admin-order-placement-fix.md)
+      - v1.1.51 {#v1-1-51}
+         - [Présentation : [!DNL Quality Patches Tool]  (QPT) v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
       - [Correctif du problème Adobe Commerce avec l’outil Correctifs de qualité](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Référence des outils de ligne de commande {#cli-reference}
