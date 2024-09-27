@@ -3,9 +3,9 @@ title: "ACSD-59514 : Forms dans l’administration avec  [!DNL Page Builder] gé
 description: Appliquez le correctif ACSD-59514 pour résoudre le problème Adobe Commerce en raison duquel les formulaires dans Admin avec  [!DNL Page Builder]  renvoyaient l’erreur "[!DNL Page Builder]" pendant 5 secondes sans déclencher de verrous. dans la console du navigateur après l’envoi du formulaire, et les modifications ne peuvent pas être enregistrées.
 feature: Page Builder
 role: Admin, Developer
-source-git-commit: 52742cbc2098958f8e4cddf8534e0c2bf79d5c3e
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Le chargeur n&#39;arrête pas de tourner et le bloc n&#39;est pas enregistré. L
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
 * Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe

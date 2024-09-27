@@ -3,16 +3,16 @@ title: '"ACSD-45049 : le paramètre d’attribut "Le client est requis" ne fonct
 description: Appliquez le correctif ACSD-45049 pour résoudre le problème Adobe Commerce en raison duquel l’attribut "[!UICONTROL Is required]" du client n’est pas correctement remplacé conformément à la portée du site web dans Admin.
 feature: Attributes, Customers
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
 
 # ACSD-45049 : le paramètre d’attribut *[!UICONTROL Is required]* du client ne fonctionne pas selon la portée du site web dans Admin
 
-Le correctif ACSD-45049 corrige le problème en raison duquel le paramètre d’attribut customer *[!UICONTROL Is required]* ne fonctionne pas correctement selon la portée du site web dans Admin. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.50 est installé. L’ID de correctif est ACSD-45049. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-45049 corrige le problème en raison duquel le paramètre d’attribut customer *[!UICONTROL Is required]* ne fonctionne pas correctement selon la portée du site web dans Admin. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/usage.md) 1.1.50 est installé. L’ID de correctif est ACSD-45049. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -53,7 +53,7 @@ L’attribut n’est pas obligatoire pour le site web autre que celui par défau
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
 * Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe

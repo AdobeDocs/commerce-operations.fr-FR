@@ -3,9 +3,9 @@ title: 'ACSD-52613 : le cache et les index sont actualisés sans mise à jour'
 description: Appliquez le correctif ACSD-52613 pour résoudre le problème Adobe Commerce en raison duquel le cache et les index sont actualisés lorsqu’aucune mise à jour n’est effectuée sur les éléments "Inventory_source" d’ [!DNL REST API].
 feature: REST
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -685,7 +685,7 @@ Le cache ne doit pas être nettoyé et les index ne doivent pas être exécutés
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
 * Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe

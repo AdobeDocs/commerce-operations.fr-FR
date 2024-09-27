@@ -3,9 +3,9 @@ title: 'ACSD-54660 : nouveau tri des attributs d’entrée pour trier les comman
 description: Appliquez le correctif ACSD-54660 pour résoudre le problème Adobe Commerce en raison duquel un nouvel attribut d’entrée "sort" a été ajouté pour trier les commandes client dans [!DNL GraphQL] par "sort_field" et "sort_direction".
 feature: GraphQL, Orders
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Il n&#39;est pas possible de trier les commandes à l&#39;aide de [!DNL GraphQL]
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
 * Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe

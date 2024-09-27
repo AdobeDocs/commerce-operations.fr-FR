@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leurs utilisations, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: b9164d958ddc366de3843c9f9b7f6521ad0b4ff2
+source-git-commit: af567e6643ef977671f8ba27dbb961bcc4c7d472
 workflow-type: tm+mt
-source-wordcount: '5888'
+source-wordcount: '5892'
 ht-degree: 0%
 
 ---
@@ -626,6 +626,8 @@ ht-degree: 0%
       - v1.1.51 {#v1-1-51}
          - [Présentation : [!DNL Quality Patches Tool]  (QPT) v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
          - [ACSD-60538 : les attributs ne s’affichent pas si un produit est désactivé.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
+      - v1.1.52 {#v1-1-52}
+         - [Présentation : [!DNL Quality Patches Tool]  (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
       - [Correctif du problème Adobe Commerce avec l’outil Correctifs de qualité](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Référence des outils de ligne de commande {#cli-reference}

@@ -3,9 +3,9 @@ title: 'ACSD-48627 : le produit configurable en rupture de stock provoque une er
 description: Appliquez le correctif ACSD-48627 pour résoudre le problème Adobe Commerce en raison duquel le produit configurable en rupture de stock provoque une erreur lors de l’envoi d’une demande GraphQL pour obtenir les détails du panier.
 feature: Admin Workspace, Configuration, Orders, Products
 role: Admin
-source-git-commit: e4744df378c3436598e49500d68cf4ef45d64f8c
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -275,7 +275,7 @@ La réponse contient une *erreur de serveur interne*.
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
 * Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe

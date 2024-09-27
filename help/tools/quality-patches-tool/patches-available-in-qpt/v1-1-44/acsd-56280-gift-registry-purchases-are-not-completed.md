@@ -3,9 +3,9 @@ title: "ACSD-56280 : les achats du registre des cadeaux ne sont pas terminés"
 description: Appliquez le correctif ACSD-56280 pour résoudre le problème Adobe Commerce où les achats du registre des cadeaux ne sont pas terminés.
 feature: Checkout
 role: Admin
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ La commande n’est pas placée et l’erreur affichée est `Call to a member fu
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
 * Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe
