@@ -2,9 +2,9 @@
 title: Versions de Beta
 description: Découvrez les versions bêta d’Adobe Commerce et comment y participer.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: a6c0a7f8c2a2bd6156f19838e05f8046209177e4
+source-git-commit: 4643c8392b6d92a2ccbbc2ec5b27d75c112d7521
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1097'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Cette version bêta prend en charge trois nouvelles fonctionnalités de la requ�
 
       - Remarque : Ce type de recherche est différent de la [recherche d’expression](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase) existante, qui effectue une recherche de saisie semi-automatique. Par exemple, si la valeur de votre attribut de produit est &quot;pantalon extérieur&quot;, une recherche d’expression renvoie une réponse pour &quot;pantalon d’extraction&quot;, mais ne renvoie pas de réponse pour &quot;fourmis d’extérieur&quot;. Une recherche contient, cependant, renvoie une réponse pour &quot;fourmis pauvres&quot;.
 
-Ces nouvelles conditions améliorent le mécanisme de filtrage des requêtes de recherche pour affiner les résultats de recherche. Ces nouvelles conditions n’affectent pas la requête de recherche principale. Pour participer à la version bêta, envoyez une demande par courrier électronique à [Sandra Gonzales Mangana](mailto:sagonzal@adobe.com) ou [Alex Jose](mailto:alexj@adobe.com).
+Ces nouvelles conditions améliorent le mécanisme de filtrage des requêtes de recherche pour affiner les résultats de recherche. Ces nouvelles conditions n’affectent pas la requête de recherche principale. Pour participer à la version bêta, envoyez une demande par e-mail à [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
 
 Pour installer la version bêta de Live Search, consultez le [guide de Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta).
 
