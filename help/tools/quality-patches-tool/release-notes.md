@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: b1b7152caa8a9f04ee779e4483c6b82d2002fcc7
+source-git-commit: e951ffec9b6b6178f58a1721095b7d62e4f006d3
 workflow-type: tm+mt
-source-wordcount: '21646'
+source-wordcount: '21987'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,21 @@ ht-degree: 0%
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour Magento Open Source, consultez les [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.52 {#v1-1-52}
+
+* **BUNDLE-3375** (pour Adobe Commerce et Magento Open Source) - Ajoute tous les champs nécessaires pour répondre aux exigences du mandat VISA 3DS lors de l’utilisation de [!DNL Braintree] comme passerelle de paiement.
+* **ACSD-59366** (pour Adobe Commerce >=2.4.6 &lt;2.4.8) - Correction du problème qui se produit lorsqu’une erreur survient lors de la tentative de suppression d’une équipe contenant des utilisateurs désactivés qui ne sont pas visibles dans la liste de l’équipe.
+* **ACSD-59865** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction du problème où un [!UICONTROL Cart Price Rule] n’annule pas les règles précédemment appliquées si la quantité du produit dans le panier n’est pas suffisante pour que les règles soient appliquées.
+* **ACSD-59925** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème de tri des éléments dans [!UICONTROL Media Gallery] par position dans GraphQL.
+* **ACSD-59952** (pour Adobe Commerce >=2.4.4 &lt;2.4.8) - Correction du problème qui se produit lors de la création d’un [!UICONTROL Shared Catalog] avec un ID de groupe attribué à un [!UICONTROL Shared Catalog] existant.
+* **ACSD-60590** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Améliore les performances de génération de [!UICONTROL Bestsellers Aggregated Daily Reports] pour un grand volume de commandes passées.
+* **ACSD-60673** (pour Adobe Commerce >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel [!UICONTROL Cart Price Rule] pour plusieurs méthodes de paiement au passage en caisse ne s’applique pas correctement au mode de paiement spécifique.
+* **ACSD-60684** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel le tri des produits GraphQL par plusieurs champs ne fonctionne pas comme prévu.
+* **ACSD-60788** (pour Adobe Commerce >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel les scripts personnalisés pour [!DNL Google Tag Manager] ne sont pas exécutés en raison d’erreurs CSP (Content Security Policy, stratégie de sécurité du contenu).
+* **ACSD-61322** (pour Adobe Commerce >=2.4.6 &lt;2.4.8) - Correction du problème en raison duquel [!UICONTROL Products/Categories] n’est pas affecté à [!UICONTROL Shared Catalog] pour le groupe par défaut (Groupe général) est toujours inclus dans le plan de site XML.
+* **ACSD-61366** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Correction du problème où la commande `setup:static-content:deploy --jobs 4` s’exécute avec plusieurs tâches échouant avec l’erreur *Port doit être configuré dans le paramètre d’hôte* lorsque le port est spécifié pour la connexion DB.
+* Correctifs mis à jour : ACSD-51857, ACSD-57394
 
 ## v1.1.51 {#v1-1-51}
 
