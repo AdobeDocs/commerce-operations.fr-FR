@@ -2,9 +2,9 @@
 title: Gestion des indexeurs
 description: Voir des exemples d’affichage et de gestion des indexeurs Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 9a92204369d3a8310aadfb94f8193a6c89f78c30
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -194,7 +194,7 @@ Catalog Search indexer has been invalidated.
 
 Utilisez cette commande pour définir les options d’indexeur suivantes :
 
-- **Mise à jour lors de l’enregistrement (`realtime`)** : les données indexées sont mises à jour lorsqu’une modification est apportée dans l’administrateur. (Par exemple, l’index des produits de catégorie est réindexé une fois les produits ajoutés à une catégorie dans l’administrateur.) Il s’agit du paramètre par défaut.
+- **Mise à jour lors de l’enregistrement (`realtime`)** : les données indexées sont mises à jour lorsqu’une modification est apportée dans l’administrateur. (Par exemple, l’index des produits de catégorie est réindexé une fois les produits ajoutés à une catégorie dans l’administrateur.)
 - **Mise à jour par planning (`schedule`)** : les données sont indexées selon le planning défini par votre tâche cron.
 
 [En savoir plus sur l’indexation](https://developer.adobe.com/commerce/php/development/components/indexing/).

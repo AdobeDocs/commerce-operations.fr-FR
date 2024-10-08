@@ -4,9 +4,9 @@ description: Maintenez et optimisez les performances du site en suivant les bonn
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: af66d47279245f8ee105030bbb33d77b1b35c3e5
+source-git-commit: 153cf3bae74a78d7a41176e0216203d354d2513b
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Pour optimiser et maintenir les performances du site, passez en revue et mettez 
 
 ## Définir les indexeurs à mettre à jour selon un planning
 
-Adobe Commerce a deux types de modes d&#39;indexation : [!UICONTROL Update on Save] (paramètre par défaut) et [!DNL Update on Schedule].
+Adobe Commerce a deux types de modes d&#39;indexation : [!UICONTROL Update on Save] et [!DNL Update on Schedule].
 
 - Le mode **[!UICONTROL Update on Save]** met immédiatement à jour les index chaque fois que votre catalogue ou d’autres données changent. Par exemple, si un utilisateur administrateur ajoute de nouveaux produits à une catégorie, l’index des produits de catégorie est réindexé immédiatement lors de l’enregistrement de la mise à jour.
 
