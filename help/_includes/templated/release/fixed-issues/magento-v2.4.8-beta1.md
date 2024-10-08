@@ -1,7 +1,7 @@
 ---
-source-git-commit: cb3392b7716667201305b7502f6c9c31bc7d1a23
+source-git-commit: d2fe92c778cb90912062c5f318332a02f6a4131e
 workflow-type: tm+mt
-source-wordcount: '14443'
+source-wordcount: '14792'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ assurer la compatibilité et les fonctionnalités à jour. Auparavant, la mise �
 
 ## Problèmes résolus
 
-Nous avons corrigé 253 problèmes dans le code principal Magento Open Source 2.4.8. Vous trouverez ci-dessous un sous-ensemble des problèmes résolus inclus dans cette version.
+Nous avons corrigé 254 problèmes dans le code principal Magento Open Source 2.4.8. Vous trouverez ci-dessous un sous-ensemble des problèmes résolus inclus dans cette version.
 
 ### API
 
@@ -207,6 +207,10 @@ Auparavant, il était possible de créer le groupe de prix du site web Dupliquer
    * _Remarque : le système accepte désormais les téléchargements d’images de produits avec des extensions de fichier de lettres majuscules, ce qui garantit un processus de création de produits fluide._ Auparavant, les téléchargements d’images avec extensions de fichier de majuscules étaient refusés, ce qui forçait les utilisateurs à modifier l’extension de fichier en minuscules.
    * _Problème GitHub_ : <https://github.com/magento/magento2/issues/38831>
    * _Contribution du code GitHub_ : <https://github.com/magento/magento2/commit/c8f87c25>
+* _AC-6975_ : [Problème] Définissez le mode d’indexeur par défaut sur &quot;planning&quot;
+   * _Remarque de correctif_ : tous les nouveaux indexeurs sont par défaut en mode **[!UICONTROL Update by Schedule]**.  Auparavant, le mode par défaut était **[!UICONTROL Update on Save]**. Les indexeurs existants ne sont pas affectés. [GitHub-36419](https://github.com/magento/magento2/issues/36419)
+   * _Problème GitHub_ : <https://github.com/magento/magento2/issues/36419>
+   * _Contribution du code GitHub_ : <https://github.com/magento/magento2/commit/0b410856>
 * _AC-7700_ : [Problème] Déposer les tables de modification de l’indexeur sur le désabonnement de l’affichage
    * _Remarque_ : le système supprime désormais automatiquement les tables de logs de modifications inutilisées lorsqu’un index passe de &quot;mise à jour programmée&quot; à &quot;mise à jour à l’enregistrement&quot;, marquant l’index comme non valide afin de s’assurer qu’aucune entrée n’est manquée. Auparavant, le fait de basculer un index sur &quot;mettre à jour lors de l’enregistrement&quot; laissait les tables modifielog inutilisées dans le système et marquait tous les index modifiés comme étant &quot;valides&quot;.
    * _Problème GitHub_ : <https://github.com/magento/magento2/issues/29789>
@@ -300,18 +304,24 @@ Nous pouvons désormais mettre à jour les statuts de commande personnalisés, a
 ### Braintree
 
 * _BUNDLE-3367_ : Payer par LPM
+   * _Remarque : le système effectue désormais correctement le rendu des méthodes de paiement locales (LPM) au chargement initial, même lorsque les adresses d’expédition et de facturation d’un client connecté ne correspondent pas, ce qui garantit un processus de passage en caisse fluide._ Auparavant, une incohérence entre les adresses d’expédition et de facturation d’un client empêchait le rendu de LPM, ce qui pouvait entraîner des perturbations lors du passage en caisse.
    * _Contribution du code GitHub_ : <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3368_ : configurable avec Virtual as Child Product
+   * _Remarque_ : le système permet désormais des méthodes de paiement express pour les produits configurables ayant un produit enfant virtuel, assurant ainsi un processus de passage en caisse fluide. Auparavant, les méthodes de paiement express n’étaient pas disponibles lorsqu’un produit configurable avec un produit enfant virtuel était ajouté au panier.
    * _Contribution du code GitHub_ : <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3369_ : Erreur de vérification CVV échouée
    * _Contribution du code GitHub_ : <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3370_ : Résolution des problèmes liés aux zones du compte 247
+   * _Remarque :_ : le système permet désormais aux clients d’enregistrer de nouvelles informations de carte ou de compte PayPal sur plusieurs sites web sans rencontrer d’erreurs d’autorisation. Auparavant, les clients ne pouvaient pas enregistrer de nouveaux modes de paiement sur différents sites web et un message d’erreur d’autorisation s’affichait.
    * _Contribution du code GitHub_ : <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3371_ : Expéditeur d’une adresse d’un autre pays
+   * _Remarque_ : le système permet désormais de traiter les transactions sans erreur lors de l’expédition vers une adresse d’un autre pays, ce qui garantit un processus de passage en caisse fluide. Auparavant, toute tentative d’envoi vers une adresse d’un autre pays générait des erreurs de console, en dépit d’aucune erreur visible sur le serveur frontal.
    * _Contribution du code GitHub_ : <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3372_ : Carte de crédit - Fonction Teardown
+   * _Remarque :_ : le système gère désormais correctement le démarrage des composants PayPal Braintree lorsqu’un client revient de la page de paiement à la page d’expédition, ce qui empêche toute erreur et garantit que les boutons PayPal Express s’affichent correctement. Auparavant, la navigation vers la page d’expédition à partir de la page de paiement entraînait parfois une erreur lors de la tentative de désactivation des composants PayPal du Braintree.
    * _Contribution du code GitHub_ : <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3373_ : Rappel d’expédition pour PayPal Express
+   * _Remarque :_ : le système affiche désormais correctement les méthodes de livraison disponibles dans le modal PayPal Express, ce qui permet aux clients de sélectionner leur méthode de livraison préférée avant de passer à la page de révision ou de terminer leur transaction. Auparavant, aucune méthode d’expédition ne pouvait être sélectionnée dans le modal PayPal Express, ce qui obligeait les clients à sélectionner une méthode d’expédition sur une page de révision distincte avant de pouvoir terminer leur transaction.
    * _Contribution du code GitHub_ : <https://github.com/magento/ext-braintree/pull/204>
 
 ### Panier et passage en caisse
