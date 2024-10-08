@@ -1,5 +1,5 @@
 ---
-source-git-commit: cb4f388c90902c2fe1df4a5d84841280fa740104
+source-git-commit: cbb880010fa907592f87b42ecd4da8fdf06bc5fe
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -13,7 +13,7 @@ Cette version comprend les points forts suivants :
 
    * TinyMCE 7.3 offre une expérience utilisateur améliorée, une meilleure collaboration et une efficacité accrue. TinyMCE 5 a été supprimé dans la ligne de mise à jour 2.4.8. &#x200B;
 
-   * Comme une vulnérabilité de sécurité ([CVE-2024-38357](https://nvd.nist.gov/vuln/detail/CVE-2024-38357)) a été signalée dans TinyMCE 5.10, la dépendance a également été mise à niveau pour toutes les lignes de mise à jour actuellement prises en charge et incluse dans tous les correctifs de sécurité d’octobre 2024 :
+   * Comme une vulnérabilité de sécurité ([CVE-2024-38357](https://nvd.nist.gov/vuln/detail/CVE-2024-38357)) a été signalée dans TinyMCE 5.10, la dépendance a également été mise à niveau pour toutes les lignes de version actuellement prises en charge et incluse dans tous les correctifs de sécurité d’octobre 2024 :
 
       * 2.4.7-p3
       * 2.4.6-p8
