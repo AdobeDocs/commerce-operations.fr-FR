@@ -1,5 +1,5 @@
 ---
-source-git-commit: b30fe4ed4d910ac3a99d3bcf4ff94103bcbd1369
+source-git-commit: 00b8e1bb5ee259763ddb2c52065cee2af98641e0
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Les améliorations de sécurité suivantes apportées à cette version améliore
 >
 >Pour obtenir les informations les plus récentes sur les correctifs de bogues de sécurité, reportez-vous à la section [Bulletin de sécurité Adobe APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
             <td><strong>Paramètres</strong></td>
@@ -37,7 +37,7 @@ Les améliorations de sécurité suivantes apportées à cette version améliore
 
 Les mises à niveau suivantes de la plateforme de cette version garantissent qu’Adobe Commerce reste une plateforme robuste et fiable, prête à répondre aux besoins des environnements commerciaux modernes :
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
             <td><strong>Base</strong></td>
@@ -87,7 +87,7 @@ Les mises à niveau suivantes de la plateforme de cette version garantissent qu�
 
 Cette version de comprend les améliorations de performances suivantes :
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
             <td><strong>Indexateurs</strong></td>
@@ -100,7 +100,7 @@ Cette version de comprend les améliorations de performances suivantes :
 
 Cette version de comprend les améliorations de qualité suivantes :
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
            <td><strong>Inventaire</strong></td>
@@ -117,7 +117,7 @@ Cette version de comprend les améliorations de qualité suivantes :
 
 Cette version de comprend les améliorations GraphQL suivantes :
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
            <td><strong>Améliorations générales</strong></td>
