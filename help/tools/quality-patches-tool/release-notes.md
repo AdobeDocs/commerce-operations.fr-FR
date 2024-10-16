@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: e951ffec9b6b6178f58a1721095b7d62e4f006d3
+source-git-commit: f10eb87efbda20899574486f1e9db01f2a66f855
 workflow-type: tm+mt
-source-wordcount: '21987'
+source-wordcount: '22258'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,19 @@ ht-degree: 0%
 >[!INFO]
 >
 >Pour plus d’informations sur [!DNL quality patches] créé par la communauté pour Magento Open Source, consultez les [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.53 {#v1-1-53}
+
+* **ACSD-48318** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction du problème où l’imbrication de l’émulation de l’environnement n’est pas autorisée. Désormais, l’émulation démarre pendant l’appel `send()` une fois que l’émulation s’arrête pendant l’appel `getInfoBlockHtml()`.
+* **ACSD-59930** (pour Adobe Commerce >=2.4.6 &lt;2.4.8) - Améliore les performances des flux **[!UICONTROL Create]**, **[!UICONTROL Save]** et **[!UICONTROL Delete]** de l’entreprise.
+* **ACSD-60584** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel un jeton d’accès créé pour l’utilisateur sur un site web est autorisé à accéder ou à modifier les informations du client sur d’autres sites web.
+* **ACSD-60804** (pour Adobe Commerce >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel la modification d’un client lié à une société supprimée provoquait l’erreur *Appel à une fonction membre `getSuperUserId()` sur null*.
+* **ACSD-61133** (pour Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.8) - Correction du problème en raison duquel le `sales_clean_quotes` [!DNL cron] supprimait les guillemets des commandes non approuvées.
+* **ACSD-61528** (pour Adobe Commerce >=2.4.6 &lt;2.4.8) - Correction du problème en raison duquel la récupération des rôles de [!UICONTROL Admin] à l’aide de [!DNL GraphQL] ne renvoie aucun résultat.
+* **ACSD-61553** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel les remises **[!UICONTROL Cart Price Rule]** sont incorrectement calculées lorsque plusieurs remises avec des priorités différentes et **[!UICONTROL Maximum Qty Discount is Applied To]** sont appliquées au produit.
+* **ACSD-61667** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Améliore les performances d’inventaire pour la création d’expédition dans le cas de nombreuses sources avec une récupération en magasin.
+* **ACSD-61969** (pour Adobe Commerce >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel l’utilisateur doit saisir un code de bon sensible à la casse pour correspondre exactement au code de bon configuré.
+* Correctifs mis à jour : ACSD-54989, ACSD-60632
 
 ## v1.1.52 {#v1-1-52}
 
