@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leurs utilisations, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 5afe552b58fae28b4a8f020bdf2d3ec8b41b18d6
+source-git-commit: 12f32287f1222725517344dcb0d6c2d3deade7cf
 workflow-type: tm+mt
-source-wordcount: '5983'
+source-wordcount: '5998'
 ht-degree: 0%
 
 ---
@@ -637,6 +637,7 @@ ht-degree: 0%
          - [ACSD-60590 : amélioration des performances de la génération de rapports quotidiens agrégés des Bestsellers](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
          - [ACSD-59925 : Tri des éléments dans [!UICONTROL Media Gallery]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
          - [ACSD-59865 : [!UICONTROL Cart Price Rule] ne parvient pas à annuler les règles précédentes en raison d’une quantité insuffisante.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59865-cart-price-rule-fix-for-insufficient-quantity-issue.md)
+         - [ACSD-59952 : erreur lors de la suppression d’un catalogue partagé avec le même ID de groupe qu’un autre catalogue partagé](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog.md)
       - v1.1.53 {#v1-1-53}
          - [Présentation : [!DNL Quality Patches Tool]  (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
       - [Correctif du problème Adobe Commerce avec l’outil Correctifs de qualité](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
