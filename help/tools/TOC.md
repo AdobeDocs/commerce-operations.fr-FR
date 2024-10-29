@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leurs utilisations, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: c489f77a9805ff3f96211f4ce2f47d8e963c47de
+source-git-commit: 46c1b2cdafe8335e604ee0391ca9aa8a32b54d84
 workflow-type: tm+mt
-source-wordcount: '6020'
+source-wordcount: '6035'
 ht-degree: 0%
 
 ---
@@ -628,6 +628,7 @@ ht-degree: 0%
          - [ACSD-60632 : adresse enregistrée avec chaque tentative de commande](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60632-address-saved-on-every-order-attempt.md)
          - [ACSD-61195 : la demande GraphQL de panier ne parvient pas à renvoyer les éléments sur la dernière page](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
          - [ACSD-60538 : les attributs ne s’affichent pas si un produit est désactivé.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
+         - [ACSD-60631 : GraphQL renvoie une erreur lorsqu’un même produit est affecté à plusieurs produits configurables.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60631-graphql-returns-an-error-when-same-product-is-assigned-to-multiple-configurable-products.md)
          - [ACSD-60816: [!DNL New Relic] Les scripts de surveillance de navigateur injectés par l’agent APM ne sont pas conformes à la CSP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60816-newrelic-browser-monitoring-scripts-injected-by-apm-agent-are-not-compliant-with-csp.md)
          - [ACSD-59967 : l’erreur JavaScript empêche [!DNL Google Maps] d’effectuer correctement le rendu.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59967-javascript-error-prevents-google-maps-from-rendering-correctly.md)
          - [ACSD-60326 : La requête GraphQL sur le statut du client [!UICONTROL Returns] renvoie une erreur](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
