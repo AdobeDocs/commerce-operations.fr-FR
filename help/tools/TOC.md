@@ -2,7 +2,7 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leurs utilisations, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 3efc57161e30a17dae50a52060a78698997649f0
+source-git-commit: fec2ee4a047d8b33fa1cb3b2c4d9364f925fa028
 workflow-type: tm+mt
 source-wordcount: '6061'
 ht-degree: 0%
@@ -632,7 +632,7 @@ ht-degree: 0%
          - [ACSD-60816: [!DNL New Relic] Les scripts de surveillance de navigateur injectés par l’agent APM ne sont pas conformes à la CSP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60816-newrelic-browser-monitoring-scripts-injected-by-apm-agent-are-not-compliant-with-csp.md)
          - [ACSD-59967 : l’erreur JavaScript empêche [!DNL Google Maps] d’effectuer correctement le rendu.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59967-javascript-error-prevents-google-maps-from-rendering-correctly.md)
          - [ACSD-60326 : La requête GraphQL sur le statut du client [!UICONTROL Returns] renvoie une erreur](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
-         - [ACSD-59786 : GraphQL renvoie une erreur lors de la récupération d’un ID de devis pour un guillemet expiré](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59786-graphql-returns-an-error-when-fetching-a-quote-id-for-an-expired.quote.md)
+         - [ACSD-59786 : GraphQL renvoie une erreur lors de la récupération d’un ID de devis pour un guillemet expiré](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59786-graphql-returns-an-error-when-fetching-a-quote-id-for-an-expired-quote.md)
       - v1.1.52 {#v1-1-52}
          - [Présentation : [!DNL Quality Patches Tool]  (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
          - [ACSD-61366 : configuration bin/magento:static-content:deploy —jobs 4 échoue avec erreur](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61366-setup-command-fails-with-error.md)
