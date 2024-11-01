@@ -3,7 +3,7 @@ title: Configuration du stockage distant
 description: Découvrez comment configurer le module de stockage distant pour l’application Commerce sur site.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
+source-git-commit: 4fce6763ec619b0b5069e71cced9ebeb81505304
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 0%
@@ -12,15 +12,27 @@ ht-degree: 0%
 
 # Configuration du stockage distant
 
-Le module Stockage distant offre la possibilité de stocker des fichiers multimédias et de planifier les imports et exports dans un conteneur de stockage distant persistant à l’aide d’un service de stockage, tel qu’AWS S3. Par défaut, l’application Adobe Commerce stocke les fichiers multimédias dans le même système de fichiers que celui qui contient l’application. Cela n’est pas efficace pour les configurations multi-serveurs complexes et peut entraîner une dégradation des performances lors du partage des ressources. Avec le module de stockage distant, vous pouvez stocker des fichiers multimédias dans le répertoire `pub/media` et importer/exporter des fichiers dans le répertoire `var` du stockage d’objets distants afin de tirer parti du redimensionnement d’image côté serveur.
+Le module Stockage distant offre la possibilité de stocker des fichiers multimédias et de planifier les imports et exports dans un conteneur de stockage distant persistant à l’aide d’un service de stockage, tel qu’AWS S3.
+
+Par défaut, l’application Adobe Commerce stocke les fichiers multimédias dans le même système de fichiers que celui qui contient l’application. Cela n’est pas efficace pour les configurations multi-serveurs complexes et peut entraîner une dégradation des performances lors du partage des ressources. Avec le module de stockage distant, vous pouvez stocker des fichiers multimédias dans le répertoire `pub/media` et importer/exporter des fichiers dans le répertoire `var` du stockage d’objets distants afin de tirer parti du redimensionnement d’image côté serveur.
+
+>[!BEGINSHADEBOX]
+
+Le stockage à distance _et le stockage de base de données_ ne peuvent pas être activés en même temps. Vous devez désactiver le stockage de la base de données avant d’activer le stockage à distance.
+
+```bash
+bin/magento config:set system/media_storage_configuration/media_database 0
+```
+
+L’activation du stockage à distance peut affecter votre expérience de développement établie. Par exemple, certaines fonctions de fichier PHP peuvent ne pas fonctionner comme prévu. L’utilisation de Commerce Framework pour les opérations de fichier doit être appliquée. La liste des fonctions natives PHP interdites est disponible dans le référentiel [magento-coding-standard](https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php) .
+
+>[!ENDSHADEBOX]
 
 >[!INFO]
 >
->Le stockage à distance n’est disponible que pour Commerce version 2.4.2 et ultérieure. Voir les [notes de mise à jour 2.4.2](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
-
->[!INFO]
+>- Le stockage à distance n’est disponible que pour Commerce version 2.4.2 et ultérieure. Voir les [notes de mise à jour 2.4.2](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
 >
->Le module de stockage à distance prend _en charge limitée_ dans Adobe Commerce sur l’infrastructure cloud. Adobe ne peut pas résoudre entièrement les problèmes liés au service d’adaptateur de stockage tiers. Voir [Configuration de l’espace de stockage distant pour Commerce sur l’infrastructure cloud](cloud-support.md) pour obtenir des conseils sur l’implémentation de l’espace de stockage distant pour les projets cloud.
+>- Le module de stockage à distance prend _en charge limitée_ dans Adobe Commerce sur l’infrastructure cloud. Adobe ne peut pas résoudre entièrement les problèmes liés au service d’adaptateur de stockage tiers. Voir [Configuration de l’espace de stockage distant pour Commerce sur l’infrastructure cloud](cloud-support.md) pour obtenir des conseils sur l’implémentation de l’espace de stockage distant pour les projets cloud.
 
 ![image de schéma](../../assets/configuration/remote-storage-schema.png)
 
@@ -69,18 +81,6 @@ Vous pouvez installer un stockage distant lors d’une installation Adobe Commer
 >
 >Pour Adobe Commerce sur l’infrastructure cloud, voir [Configuration de l’espace de stockage distant pour Commerce sur l’infrastructure cloud](cloud-support.md).
 
-## Limites
-
-Le stockage à distance et le stockage dans la base de données ne peuvent pas être activés simultanément. Désactivez le stockage dans la base de données si vous utilisez le stockage à distance.
-
-```bash
-bin/magento config:set system/media_storage_configuration/media_database 0
-```
-
-L’activation du stockage à distance peut affecter votre expérience de développement établie. Par exemple, certaines fonctions de fichier PHP peuvent ne pas fonctionner comme prévu. L’utilisation de Commerce Framework pour les opérations de fichier doit être appliquée.
-
-La liste des fonctions natives PHP interdites est disponible dans le [référentiel magento-coding-standard][code-standard].
-
 ## Migration de contenu
 
 Après avoir activé le stockage à distance pour un adaptateur spécifique, vous pouvez utiliser l’interface de ligne de commande pour migrer les fichiers _media_ existants vers le stockage à distance.
@@ -96,4 +96,3 @@ Après avoir activé le stockage à distance pour un adaptateur spécifique, vou
 <!-- link definitions -->
 
 [import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html
-[code-standard]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php
