@@ -2,7 +2,7 @@
 title: référence env.php
 description: Consultez la liste des valeurs du fichier env.php.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 0%
@@ -11,12 +11,12 @@ ht-degree: 0%
 
 # référence env.php
 
-Le fichier `env.php` contient les sections suivantes :
+Le `env.php` fichier contient les sections suivantes :
 
 | Nom | Description |
 |-------------------------------|-----------------------------------------------------------------|
-| `backend` | Paramètres de la zone d’administration |
-| `cache` | Configuration de la page rouge et du cache par défaut |
+| `backend` | Paramètres de la zone Admin |
+| `cache` | Configuration de la page redis et du cache par défaut |
 | `cache_types` | Paramètres de stockage du cache |
 | `consumers_wait_for_messages` | Configuration du traitement des messages par les consommateurs à partir de la file d’attente des messages |
 | `cron` | Activation ou désactivation des tâches cron |
@@ -28,7 +28,7 @@ Le fichier `env.php` contient les sections suivantes :
 | `install` | La date d&#39;installation |
 | `lock` | Verrouillage des paramètres du fournisseur |
 | `MAGE_MODE` | Le [mode application](../bootstrap/application-modes.md) |
-| `queue` | Paramètres [Files d’attente de messages](../queues/manage-message-queues.md) |
+| `queue` | [Paramètres des files d’attente de](../queues/manage-message-queues.md) messages |
 | `resource` | Mappage du nom de la ressource à une connexion |
 | `session` | Données de stockage de session |
 | `system` | Désactive le champ à modifier dans l&#39;administrateur. |
@@ -36,7 +36,7 @@ Le fichier `env.php` contient les sections suivantes :
 
 ## backend
 
-Configurez **frontName** pour l’URL d’administration de Commerce à l’aide du noeud `backend` dans env.php.
+Configurez frontName **** pour l’URL d’administration Commerce à l’aide `backend` du nœud dans env.php.
 
 ```conf
 'backend' => [
@@ -46,7 +46,7 @@ Configurez **frontName** pour l’URL d’administration de Commerce à l’aide
 
 ## cache
 
-Configurez la page rouge et la mise en cache par défaut en utilisant le noeud `cache` dans le fichier `env.php`.
+Configurez la page redis et la mise en cache par défaut à l’aide `cache` du nœud dans le `env.php` fichier.
 
 ```conf
 'cache' => [
@@ -72,7 +72,7 @@ Configurez la page rouge et la mise en cache par défaut en utilisant le noeud `
 ]
 ```
 
-Pour en savoir plus, consultez la [configuration Redis](../cache/redis-pg-cache.md).
+En savoir plus sur la [configuration](../cache/redis-pg-cache.md) Redis.
 
 ## cache_types
 
@@ -136,7 +136,7 @@ Activez ou désactivez les tâches cron pour l’application Commerce. Par défa
 
 En savoir plus sur [Crons](../cli/configure-cron-jobs.md).
 
-## crypt
+## crypte
 
 Commerce utilise une clé de chiffrement pour protéger les mots de passe et d’autres données sensibles. Cette clé est générée pendant le processus d’installation.
 
@@ -146,7 +146,7 @@ Commerce utilise une clé de chiffrement pour protéger les mots de passe et d�
 ]
 ```
 
-Pour en savoir plus sur [la clé de chiffrement](https://docs.magento.com/user-guide/system/encryption-key.html), consultez le _guide de l’utilisateur de Commerce_.
+Pour en savoir plus sur [la clé de chiffrement](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key), consultez le _guide de l’utilisateur de Commerce_.
 
 ## db
 
@@ -185,7 +185,7 @@ Par exemple, si `queue/default_connection` est `amqp` dans `env.php` mais qu’u
 
 ## répertoires
 
-Options facultatives de mappage de répertoire qui doivent être définies lorsque le serveur web est configuré pour servir l’application Commerce à partir du répertoire `/pub` pour [une sécurité améliorée](../../installation/tutorials/docroot.md).
+Options de mappage de répertoire facultatives qui doivent être définies lorsque le serveur Web est configuré pour servir l’application Commerce à partir du `/pub` répertoire pour [une sécurité](../../installation/tutorials/docroot.md) améliorée.
 
 ```conf
 'directories' => [
@@ -195,7 +195,7 @@ Options facultatives de mappage de répertoire qui doivent être définies lorsq
 
 ## downloadable_domains
 
-Liste des domaines téléchargeables disponibles dans ce noeud. D’autres domaines peuvent être ajoutés, supprimés ou répertoriés à l’aide des commandes de l’interface de ligne de commande.
+Liste des domaines téléchargeables disponibles dans ce nœud. D’autres domaines peuvent être ajoutés, supprimés ou répertoriés à l’aide des commandes de l’interface de ligne de commande.
 
 ```conf
 'downloadable_domains' => [
@@ -203,7 +203,7 @@ Liste des domaines téléchargeables disponibles dans ce noeud. D’autres domai
 ]
 ```
 
-En savoir plus sur les [domaines téléchargeables](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd).
+En savoir plus sur les [domaines téléchargeables](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## install
 
@@ -215,11 +215,11 @@ Date d’installation de l’application Commerce.
 ]
 ```
 
-## lock
+## serrure
 
-Les paramètres du fournisseur de verrouillage sont configurés à l’aide du noeud `lock`.
+Les paramètres du fournisseur de verrouillage sont configurés à l’aide du `lock` nœud.
 
-En savoir plus sur la [configuration du fournisseur de verrouillage](../../installation/tutorials/lock-provider.md).
+En savoir plus sur [la configuration du](../../installation/tutorials/lock-provider.md) fournisseur de verrouillage.
 
 ## MAGE_MODE
 
@@ -272,7 +272,7 @@ En savoir plus sur [Session](../storage/sessions.md).
 
 ## x-frame-options
 
-L’en-tête x-frame-options peut être configuré à l’aide de ce noeud.
+L’en-tête x-frame-options peut être configuré à l’aide de ce nœud.
 
 ```conf
 'x-frame-options' => 'SAMEORIGIN'
@@ -280,7 +280,7 @@ L’en-tête x-frame-options peut être configuré à l’aide de ce noeud.
 
 En savoir plus sur [x-frame-options](../security/xframe-options.md).
 
-## system
+## système
 
 En utilisant ce noeud, Commerce verrouille les valeurs de configuration dans le fichier `env.php`, puis désactive le champ dans l’administrateur.
 

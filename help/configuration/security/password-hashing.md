@@ -3,7 +3,7 @@ title: Hachage de mot de passe
 description: Découvrez les stratégies de hachage de mot de passe et leur mise en oeuvre.
 feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -61,4 +61,4 @@ Comme Commerce stocke toutes les versions de hachage de mot de passe utilisées 
 
 ## Implémentation
 
-La classe `\Magento\Framework\Encryption\Encryptor` est responsable de la génération et de la vérification du hachage du mot de passe. La commande [`bin/magento customer:hash:upgrade`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#customerhashupgrade) met à niveau le hachage d’un mot de passe client vers le dernier algorithme de hachage.
+La classe `\Magento\Framework\Encryption\Encryptor` est responsable de la génération et de la vérification du hachage du mot de passe. La commande [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) met à niveau le hachage d’un mot de passe client vers le dernier algorithme de hachage.

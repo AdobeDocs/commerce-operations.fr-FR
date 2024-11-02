@@ -4,7 +4,7 @@ description: Découvrez comment configurer les paramètres de la base de donnée
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -59,9 +59,9 @@ Pour déterminer quel moteur de recherche est actuellement utilisé, exécutez l
 
 Pour obtenir des instructions sur la configuration, consultez le Guide du développeur pour Adobe Commerce sur le cloud :
 
-- [Configuration du service OpenSearch](https://devdocs.magento.com/cloud/project/services-opensearch.html)
+- [Configuration du service OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
 
-- [Configuration du service Elasticsearch](https://devdocs.magento.com/cloud/project/services-elastic.html)
+- [Configuration du service Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
 
 ## Éviter les déclencheurs personnalisés
 
@@ -76,7 +76,7 @@ Pour en savoir plus sur les alternatives à l’utilisation de déclencheurs per
 
 ## Mettre à niveau [!DNL ECE-Tools] vers la version 2002.0.21 ou ultérieure {#ece-tools-version}
 
-Pour éviter tout problème potentiel lié à des blocages cron, effectuez une mise à niveau de CEE-Tools vers la version 2002.0.21 ou ultérieure. Pour obtenir des instructions, reportez-vous à la section [Mise à jour de `ece-tools` version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) de notre documentation destinée aux développeurs.
+Pour éviter tout problème potentiel lié à des blocages cron, effectuez une mise à niveau de CEE-Tools vers la version 2002.0.21 ou ultérieure. Pour obtenir des instructions, reportez-vous à la section [Mise à jour de `ece-tools` version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) de notre documentation destinée aux développeurs.
 
 ## Basculer le mode indexeur en toute sécurité
 

@@ -2,7 +2,7 @@
 title: Présentation de la portée de la mise à niveau
 description: Découvrez les modifications incompatibles en amont dans une version pouvant avoir un impact sur les modules personnalisés Adobe Commerce ou les extensions tierces.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -11,14 +11,14 @@ ht-degree: 0%
 
 # Comprendre la portée de la mise à niveau
 
-Passez en revue les [notes de mise à jour](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) pour comprendre la portée d’une version, y compris les améliorations, les correctifs de bogues et les problèmes connus qui peuvent avoir un impact sur les modules tiers et personnalisés.
+Passez en revue les [notes de mise à jour](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) pour comprendre la portée d’une version, y compris les améliorations, les correctifs de bogues et les problèmes connus qui peuvent avoir un impact sur les modules tiers et personnalisés.
 
 ## Modifications incompatibles avec l’arrière
 
 Les versions d’Adobe Commerce peuvent contenir des modifications incompatibles avec le passé. Consultez notre documentation sur les modifications incompatibles avec l’arrière-plan, voir ce qui suit :
 
-- **[Changements majeurs ](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)** : modifications ayant un impact majeur et nécessitant une explication détaillée et des instructions spéciales pour garantir que les modules tiers continuent à fonctionner.
-- **[Référence des modifications mineures](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)** : documentation de référence générée à partir de la base de code qui décrit les modifications mineures apportées aux classes, à l’appartenance à l’API, à la base de données, à l’injection de dépendances, aux interfaces, aux mises en page, au système et au schéma XSD.
+- **[Changements majeurs ](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/)** : modifications ayant un impact majeur et nécessitant une explication détaillée et des instructions spéciales pour garantir que les modules tiers continuent à fonctionner.
+- **[Référence des modifications mineures](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)** : documentation de référence générée à partir de la base de code qui décrit les modifications mineures apportées aux classes, à l’appartenance à l’API, à la base de données, à l’injection de dépendances, aux interfaces, aux mises en page, au système et au schéma XSD.
 
 ## Extensions tierces
 
@@ -26,7 +26,7 @@ La nouvelle politique de compatibilité d’Adobe Commerce Marketplace garantit 
 
 ## Modules personnalisés
 
-Tous les modules personnalisés doivent être comparés à la version cible vers laquelle vous souhaitez effectuer la mise à niveau. Il s’agit du processus de mise à niveau qui nécessite le plus de temps et de ressources. Lors de l’évaluation de vos modules personnalisés, vous devez rechercher des modifications incompatibles avec le passé et être conscient des nouvelles pratiques, telles que la décomposition du contrôleur. Vous pouvez en savoir plus à ce sujet dans les [notes de mise à jour](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Assurez-vous également de suivre les [bonnes pratiques](https://developer.adobe.com/commerce/php/best-practices/extensions/) pour le développement de module.
+Tous les modules personnalisés doivent être comparés à la version cible vers laquelle vous souhaitez effectuer la mise à niveau. Il s’agit du processus de mise à niveau qui nécessite le plus de temps et de ressources. Lors de l’évaluation de vos modules personnalisés, vous devez rechercher des modifications incompatibles avec le passé et être conscient des nouvelles pratiques, telles que la décomposition du contrôleur. Vous pouvez en savoir plus à ce sujet dans les [notes de mise à jour](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview). Assurez-vous également de suivre les [bonnes pratiques](https://developer.adobe.com/commerce/php/best-practices/extensions/) pour le développement de module.
 
 ## [!DNL Upgrade Compatibility Tool]
 

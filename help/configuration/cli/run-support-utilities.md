@@ -2,7 +2,7 @@
 title: Exécution des utilitaires de support
 description: Résolution des problèmes liés à votre projet Commerce à l’aide de l’utilitaire de prise en charge intégré.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Les utilitaires de support Adobe Commerce, également appelés [Collecteur de données](https://docs.magento.com/user-guide/system/support-data-collector.html), permettent aux utilisateurs de collecter des informations de dépannage sur votre système qui peuvent être utilisées par notre équipe de support.
+Les utilitaires de support Adobe Commerce, également appelés [Collecteur de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector), permettent aux utilisateurs de collecter des informations de dépannage sur votre système qui peuvent être utilisées par notre équipe de support.
 
 Adobe Commerce utilise ces sauvegardes, également appelées _dumps_, pour analyser les problèmes qui nécessitent l’accès à votre code. Voici un scénario type :
 

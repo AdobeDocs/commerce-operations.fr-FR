@@ -1,10 +1,10 @@
 ---
 title: Optimisation des fichiers de ressources CSS et JS
-description: Découvrez comment fusionner et réduire des fichiers CSS et JavaScript (JS) pour les projets Adobe Commerce à partir de l’administrateur ou de la ligne de commande.
+description: Découvrez comment fusionner et réduire les fichiers CSS et JavaScript (JS) pour les projets Adobe Commerce à partir de l’administration ou de la ligne de commande.
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 0%
@@ -23,11 +23,11 @@ Pour un site Commerce plus réactif, optimisez les fichiers de ressources CSS et
 [Toutes les versions prises en charge, 2.3 et versions ultérieures](../../../release/versions.md) de :
 
 - Adobe Commerce sur l’infrastructure cloud
-- Adobe Commerce sur site
+- Adobe Commerce local
 
-## Fusion ou minimisation de fichiers CSS
+## Fusion ou réduction des fichiers CSS
 
-Il est possible de réduire le temps nécessaire au chargement des fichiers CSS et JavaScript (JS) en fusionnant, en minimisant et en regroupant des fichiers distincts dans un seul fichier.
+Le temps nécessaire au chargement des fichiers CSS et JavaScript (JS) peut être réduit en fusionnant, en minimisant et en regroupant des fichiers distincts dans un seul fichier.
 
 >[!IMPORTANT]
 >
@@ -49,9 +49,9 @@ Pour activer la fusion CSS dans Adobe Commerce sur l’infrastructure cloud :
    bin/magento config:set --lock-config dev/css/merge_css_files 1
    ```
 
-1. Validez les modifications apportées au fichier `app/etc/config.php` et redéployez-les.
+1. Validez les modifications dans le fichier et redéployez-le `app/etc/config.php` .
 
-Pour activer la minimisation CSS dans Adobe Commerce sur l’infrastructure cloud :
+Pour activer la minification CSS dans Adobe Commerce sur l’infrastructure cloud :
 
 1. Exécutez cette commande localement :
 
@@ -77,13 +77,13 @@ Pour activer la minification JS dans Adobe Commerce sur l’infrastructure cloud
    bin/magento config:set --lock-config dev/js/minify_files 1
    ```
 
-1. Validez les modifications apportées au fichier `app/etc/config.php` et redéployez-les.
+1. Validez les modifications dans le fichier et redéployez-le `app/etc/config.php` .
 
 ## Fusion et regroupement de fichiers JS
 
-Vous pouvez activer la fusion ou le regroupement dans l’administration Commerce (la fusion et le regroupement ne peuvent pas être activés en même temps) : [!UICONTROL **Magasins** > **Paramètres** > **Configuration** > **Avancé** > **Développeur** > **Paramètres JavaScript**].
+Vous pouvez activer la fusion ou le regroupement dans l’Administration Commerce (la fusion et le regroupement ne peuvent pas être activés en même temps) : Stocke **les paramètres >**> **** la configuration **>** Paramètres >JavaScript > ****]**avancés** du développeur **.[!UICONTROL **
 
-Vous pouvez également activer le regroupement intégré Adobe Commerce (regroupement de base) à partir de la ligne de commande :
+Vous pouvez également activer le bundling intégré Adobe Commerce (bundling de base) à partir de la ligne de commande :
 
 ```bash
 php -f bin/magento config:set dev/js/enable_js_bundling 1
@@ -92,6 +92,6 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 ## Informations supplémentaires
 
 - [Paramètres d’optimisation côté client](../../../performance/configuration.md#client-side-optimization-settings)
-- [Guide de l’utilisateur : optimisation des fichiers de ressources](https://docs.magento.com/user-guide/system/file-optimization.html)
+- [Guide de l’utilisateur : optimisation des fichiers de ressources](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
 - [Guide du développeur front-end : fusion, minification CSS et performances du site](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Lots JavaScript avancés](../../../performance/advanced-js-bundling.md)

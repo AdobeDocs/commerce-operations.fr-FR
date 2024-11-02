@@ -4,7 +4,7 @@ description: Découvrez les recommandations relatives à la configuration des li
 role: Developer
 feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 0%
@@ -38,10 +38,10 @@ Pour de meilleures performances, suivez les instructions ci-après pour gérer l
 
 Utilisez les stratégies suivantes pour gérer le nombre d’articles du panier :
 
-- Divisez les commandes en plusieurs commandes plus petites avec un plus petit nombre de lignes à l’aide de la fonction [!UICONTROL Add Item by SKU].
-- Ajoutez uniquement la logique personnalisée et la personnalisation du panier nécessaires au chargement d’une liste d’éléments.
+- Fractionnez les commandes en plusieurs commandes plus petites avec un plus petit nombre de lignes à l’aide de la [!UICONTROL Add Item by SKU] fonctionnalité.
+- Ajoutez uniquement la logique personnalisée et la personnalisation du panier requises pour charger une liste d’articles.
 
-## Limites de catégorie
+## Limites des catégories
 
 La configuration d’un grand nombre de catégories peut affecter les performances.
 
@@ -50,13 +50,13 @@ La configuration d’un grand nombre de catégories peut affecter les performanc
 [Toutes les versions prises en charge](../../../release/versions.md) de :
 
 - Adobe Commerce sur l’infrastructure cloud
-- Adobe Commerce sur site
+- Adobe Commerce local
 
-### Réduction du nombre de produits
+### Réduire le nombre de produits
 
 Utilisez les stratégies suivantes pour réduire le nombre de catégories :
 
-- Gestion des fonctionnalités de produit uniques par le biais d’attributs et d’options personnalisées
+- Gérer les fonctionnalités uniques d’un produit à l’aide d’attributs et d’options personnalisées
 - Suppression des catégories inactives
 - Optimiser la profondeur de catalogue dans la navigation
 
@@ -100,7 +100,7 @@ Supprimez les ensembles d’attributs de produit inutilisés à l’aide de MySQ
 
 #### Vérification de la configuration des jeux d’attributs
 
-1. [Connectez-vous à la base de données du site](https://devdocs.magento.com/cloud/project/services-mysql.html#connect-to-the-database).
+1. [Connectez-vous à la base de données du site](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
 
 1. Recherche du nombre de jeux d’attributs à l’aide de MySQL
 
@@ -143,7 +143,7 @@ La configuration d’un trop grand nombre d’options de produit par produit peu
 - Adobe Commerce sur l’infrastructure cloud
 - Adobe Commerce sur site
 
-### Réduction du nombre d’options
+### Réduisez le nombre d’options
 
 Utilisez les stratégies suivantes pour réduire le nombre d’options de produit par produit :
 
@@ -153,14 +153,14 @@ Utilisez les stratégies suivantes pour réduire le nombre d’options de produi
 
 ### Impact potentiel sur les performances
 
-La configuration de nombreuses options de produit augmente la quantité de données récupérées pour chaque produit pour toutes les opérations de lecture et d’écriture, ce qui entraîne :
+La configuration de nombreuses options de produit augmente la quantité de données récupérées pour chaque produit sur toutes les opérations de lecture et d’écriture, ce qui se traduit par :
 
-- L’augmentation du trafic des requêtes SQL et des opérations `JOIN` plus lourdes augmentent le débit de la base de données.
-- Taille accrue des index Adobe Commerce et de l’index de recherche en texte intégral.
+- L’augmentation du trafic de requêtes SQL et le volume des opérations plus `JOIN` lourdes augmentent le débit de la base de données.
+- Augmentation de la taille des index Commerce Adobe et de l’index de recherche de texte intégral.
 
-Les augmentations répertoriées ci-dessus peuvent affecter les performances du site de la manière suivante :
+Les augmentations répertoriées ci-dessus peuvent affecter les performances du site des manières suivantes :
 
-- Délai de réponse plus long pour la plupart des scénarios de storefront relatifs aux produits contenant de nombreuses options dans les attributs.
+- Temps de réponse plus long pour la plupart des scénarios de vitrine liés aux produits contenant de nombreuses options dans les attributs.
 - Augmentation significative du temps nécessaire à l’exécution des opérations de gestion des produits dans l’administration, ce qui peut entraîner des dépassements de délai, en particulier pour les scénarios liés à la liste d’attributs et à la récupération d’arborescence, y compris la gestion des règles de promotion.
 - Peut bloquer les actions en bloc qui terminent des opérations de masse asynchrones comme l’importation et l’exportation et affecter des prix personnalisés à plusieurs produits dans un catalogue partagé.
 
@@ -181,13 +181,13 @@ Si vous avez trop de produits dans une catégorie, mettez à jour la configurati
 
 Après avoir désactivé cette option, Adobe Commerce utilise les commandes de pagination storefront de la liste de produits pour gérer le nombre de produits qui s’affichent dans les composants storefront. Pour obtenir des instructions, voir [Configuration des commandes de pagination](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
-## Limites de SKU du produit
+## Limites des SKU du produit
 
-La configuration d’un trop grand nombre de SKU de produit peut affecter les performances en ralentissant la récupération des données de produit et en augmentant le temps nécessaire pour terminer les opérations d’administration ou les indexations.
+La configuration d’un trop grand nombre de SKU de produit peut affecter les performances en ralentissant la récupération des données du produit et en augmentant le temps nécessaire pour effectuer les opérations d’administration ou les indexations.
 
 ### Produits et versions concernés
 
-[Toutes les versions prises en charge](../../../release/versions.md) de :
+[Toutes les versions](../../../release/versions.md) prises en charge de :
 
 - Adobe Commerce sur l’infrastructure cloud
 - Adobe Commerce sur site
@@ -238,14 +238,14 @@ Le dépassement du nombre recommandé de variations de produit peut affecter les
 
 ## Promotions
 
-Suivez les bonnes pratiques suivantes pour configurer les ventes et les promotions pour les articles d’un panier :
+Pour configurer les ventes et les promotions des articles d’un panier, suivez ces meilleures pratiques :
 
-- **Règles de vente (règles de prix du panier)**
+- **Règles de vente (règles de prix de panier)**
    - Gérez et supprimez les règles inutilisées.
    - Ajoutez des conditions de règle strictes (comme un filtre d’attribut ou de catégorie) pour une correspondance plus efficace.
 - **Coupons**
    - Supprimez les bons inutilisés et expirés.
-   - Générez uniquement le nombre de coupons nécessaires pour répondre aux besoins de l&#39;opération.
+   - Générez uniquement le nombre de coupons nécessaires pour satisfaire les exigences de la campagne.
 
 ### Produits et versions concernés
 

@@ -1,21 +1,21 @@
 ---
-title: Accès à  [!DNL Site-Wide Analysis Tool]
-description: Découvrez comment accéder à la fonction  [!DNL Site-Wide Analysis Tool]
+title: Comment y accéder [!DNL Site-Wide Analysis Tool]
+description: Découvrez comment accéder au [!DNL Site-Wide Analysis Tool]
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 18416ae29cee182a5d088069065d73814fc7d860
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-# Accès à [!DNL Site-Wide Analysis Tool]
+# Comment accéder à l&#39; [!DNL Site-Wide Analysis Tool]
 
 Vous pouvez accéder à [!DNL Site-Wide Analysis Tool Dashboard] de deux façons.
 
 Vous pouvez accéder à [!DNL dashboard] à partir du [[!DNL Site-Wide Analysis Tool] site Web](https://supportinsights.adobe.com/commerce) directement **(pour Adobe Commerce sur l’infrastructure cloud uniquement)** et vous connecter avec votre Adobe ID, ou accéder à l’aide de l’ [!DNL dashboard] à partir de [!DNL Admin Panel] de votre boutique.
 
-Le service [!DNL Site-Wide Analysis Tool] est disponible en [mode de production](https://docs.magento.com/user-guide/magento/installation-modes.html) pour les utilisateurs [!DNL Admin] autorisés à accéder aux ressources de rôle [ de l’utilisateur ](https://docs.magento.com/user-guide/system/permissions-user-roles.html).
+Le service [!DNL Site-Wide Analysis Tool] est disponible en [mode de production](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes) pour les utilisateurs [!DNL Admin] autorisés à accéder aux ressources de rôle [ de l’utilisateur ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles).
 
 >[!NOTE]
 >
@@ -37,27 +37,27 @@ Si vous disposez déjà d’un compte [!DNL Commerce], mais que vous n’avez pa
    ![Tableau de bord de l’analyse à l’échelle du site](../../assets/tools/adobe-id-login.jpg)
    *[!DNL Adobe ID]écran de connexion*
 
-1. Acceptez les conditions générales.
+1. Acceptez les termes et conditions.
 
-1. **<u>Remarque</u> :** Votre compte doit avoir le droit d’accéder à **[!DNL Support Permissions]** pour pouvoir accéder à [!DNL Site-Wide Analysis Tool Dashboard].
-Pour plus d’informations, reportez-vous à la section [Partage d’un  [!DNL Commerce] compte](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) de notre guide d’utilisation.
+1. **<u>Remarque</u> :** Votre compte devrait être autorisé **[!DNL Support Permissions]** à pour accéder [!DNL Site-Wide Analysis Tool Dashboard]à .
+Consultez plus de détails dans [Partager un [!DNL Commerce] compte](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) dans notre guide de l’utilisateur.
 
-## Option 2 : connexion à votre [!DNL Site-Wide Analysis Tool Dashboard] à partir du [!DNL Admin Panel] de votre boutique
+## Option 2 : Connexion à votre à partir [!DNL Site-Wide Analysis Tool Dashboard] du [!DNL Admin Panel]
 
-### Étape 1 : vérification des autorisations
+### Étape 1 : Vérifier les autorisations
 
-Vérifiez que le compte d’utilisateur [!DNL Admin] est autorisé à accéder à [!DNL Site-Wide Analysis Tool] par l’intermédiaire de son [rôle d’utilisateur attribué](https://docs.magento.com/user-guide/system/permissions-user-roles.html).
+Vérifiez que le compte d’utilisateur dispose de l’autorisation [!DNL Admin] d’accéder [!DNL Site-Wide Analysis Tool] au via le rôle](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) d’utilisateur qui lui [a été attribué.
 
 >[!IMPORTANT]
 >
->La ressource de rôle [!DNL Site-Wide Analysis Tool] (autorisation) est **et non** affectée automatiquement. Elle DOIT être activée pour le rôle utilisateur et le rôle affectés individuellement à chaque compte utilisateur dans le [!UICONTROL Admin].
+>La [!DNL Site-Wide Analysis Tool] ressource de rôle (autorisation) n’est **pas** attribuée automatiquement. Il DOIT être activé pour le rôle d’utilisateur et le rôle attribué individuellement à chaque compte d’utilisateur dans le [!UICONTROL Admin].
 
-Pour le rôle personnalisé nécessitant un accès [!DNL Site-Wide Analysis Tool], procédez comme suit :
+Pour le rôle personnalisé nécessitant un [!DNL Site-Wide Analysis Tool] accès, procédez comme suit :
 
-1. Sélectionnez la ressource de rôle **[!UICONTROL Reports]** > *[!UICONTROL System Insights]* > **[!UICONTROL Site-Wide Analysis Tool]** .
+1. Sélectionnez la ressource > *[!UICONTROL System Insights]* > **[!UICONTROL Reports]** **[!UICONTROL Site-Wide Analysis Tool]** rôle.
 
-   ![Tableau de bord de l’analyse à l’échelle du site](../../assets/tools/swat-role-access.png)
-   *[!DNL Site-Wide Analysis Tool]autorisation sélectionnée pour le rôle*
+   ![Tableau de bord Analyse à l’échelle du site](../../assets/tools/swat-role-access.png)
+   *[!DNL Site-Wide Analysis Tool]permission sélectionnée pour le rôle*
 
 1. Cliquez sur **[!UICONTROL Save Role]**.
 
@@ -79,16 +79,16 @@ Pour le rôle personnalisé nécessitant un accès [!DNL Site-Wide Analysis Tool
    Chaque utilisateur doit accepter les Conditions d’utilisation de la session. Cette étape est répétée pour chaque session connectée.
 
 
-1. Dans la partie supérieure du tableau de bord, cliquez sur l’onglet que vous souhaitez afficher.
+1. En haut du tableau de bord, cliquez sur l’onglet à afficher.
 
-   ![Tableau de bord de l’analyse à l’échelle du site](../../assets/tools/swat-information-tab.png)
+   ![Tableau de bord Analyse à l’échelle du site](../../assets/tools/swat-information-tab.png)
    *[!DNL Site-Wide Analysis Tool]information*
 
-## Générer des rapports à partir du [!DNL Site-Wide Analysis Tool Dashboard]
+## Générez des rapports à partir du [!DNL Site-Wide Analysis Tool Dashboard]
 
-1. Dans le coin supérieur droit du tableau de bord, cliquez sur **[!UICONTROL Generate Report]**.
+1. Dans l’angle supérieur droit du tableau de bord, cliquez sur **[!UICONTROL Generate Report]**.
 
-1. Cochez la case pour chaque paramètre **[!UICONTROL Type]** et **[!UICONTROL Priority]** que vous souhaitez inclure dans le rapport.
+1. Cochez la case correspondant à chaque **[!UICONTROL Type]** paramètre **[!UICONTROL Priority]** à inclure dans le rapport.
 
 1. Cliquez sur **[!UICONTROL Generate Report]**.
 
@@ -100,8 +100,8 @@ Pour le rôle personnalisé nécessitant un accès [!DNL Site-Wide Analysis Tool
 | Tableau de bord | Affiche l’intégrité de votre système avec les notifications et recommandations actuelles par priorité. |
 | Informations | Fournit des informations sur les contacts client et un résumé des tickets en cours, avec des informations détaillées sur chaque produit Adobe Commerce installé. |
 | Recommendations | Répertorie les recommandations basées sur les bonnes pratiques pour résoudre les problèmes détectés sur votre site. |
-| Exceptions | Répertorie les erreurs générées par l’application par des conditions anormales sans gestionnaire d’erreurs. |
-| Extensions | Répertorie toutes les extensions tierces et bibliothèques tierces. |
+| Exceptions | Répertorie les erreurs générées par l’application provoquées par des conditions anormales sans gestionnaire d’erreurs. |
+| Extensions | Répertorie toutes les extensions et bibliothèques tierces. |
 
 >[!NOTE]
 >

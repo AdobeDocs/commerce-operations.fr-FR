@@ -3,7 +3,7 @@ title: "ACSD-44938 : L’ID de TVA ne peut pas être appliqué dans une demande 
 description: Le correctif ACSD-44938 corrige le problème qui empêchait l’application de l’identifiant TVA dans une requête GraphQL pour un utilisateur invité. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 est installé. L’ID de correctif est ACSD-44938. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
 feature: Admin Workspace, GraphQL
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%
@@ -34,12 +34,12 @@ L’attribut TVA_ID ne peut pas être appliqué dans une requête GraphQL pour u
 
 <u>Étapes à reproduire</u> :
 
-1. Suivez les étapes mentionnées dans le [tutoriel GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-shopping-cart.html) de notre documentation destinée aux développeurs pour créer un panier d’invité.
+1. Suivez les étapes mentionnées dans le [tutoriel GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-shopping-cart.html) de notre documentation destinée aux développeurs pour créer un panier d’invité.
 1. Essayez d’appliquer l’attribut TVA_ID pour l’utilisateur invité à l’aide de GraphQL.
 
 <u>Résultats attendus</u> :
 
-L’attribut TVA_ID peut être appliqué de la même manière que pour un client enregistré. Voir l’article [mutation createCustomerAddress](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-customer-address.html) dans notre documentation destinée aux développeurs.
+L’attribut TVA_ID peut être appliqué de la même manière que pour un client enregistré. Voir l’article [mutation createCustomerAddress](https://developer.adobe.com/commerce/webapi/graphql/mutations/create-customer-address.html) dans notre documentation destinée aux développeurs.
 
 <u>Résultats réels</u> :
 

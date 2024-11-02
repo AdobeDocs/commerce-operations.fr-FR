@@ -4,7 +4,7 @@ description: Découvrez les bonnes pratiques de configuration afin d’améliore
 role: Admin, User
 feature: Best Practices
 exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 - **[!UICONTROL Asynchronous indexing]** : activez cette option pour empêcher les verrous de base de données et le ralentissement du traitement qui peuvent se produire lorsque de grands nombres de commandes sont placés simultanément.
 - **[!UICONTROL Asynchronous email notifications]** : activez cette option pour accélérer les performances de passage en caisse en envoyant des notifications par courrier électronique de passage en caisse et de traitement des commandes à des intervalles désignés au lieu de les envoyer immédiatement.
-- **[!UICONTROL Enable Archiving]** : activez cette option pour améliorer les performances des commandes, des factures, des envois et des notes de crédit, et garder votre espace de travail à l’abri des informations superflues afin que vous puissiez vous concentrer sur l’activité actuelle. Voir [Activer l’archivage](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
+- **[!UICONTROL Enable Archiving]** : activez cette option pour améliorer les performances des commandes, des factures, des envois et des notes de crédit, et garder votre espace de travail à l’abri des informations superflues afin que vous puissiez vous concentrer sur l’activité actuelle. Voir [Activer l’archivage](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 ## Produits et versions concernés
 

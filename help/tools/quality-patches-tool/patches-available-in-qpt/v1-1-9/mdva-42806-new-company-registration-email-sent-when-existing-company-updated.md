@@ -3,7 +3,7 @@ title: 'MDVA-42806 : un nouveau courrier électronique d’enregistrement de soc
 description: Le correctif MDVA-42806 résout le problème d’envoi d’un nouvel email d’enregistrement de société chaque fois qu’une société existante est mise à jour via l’API REST. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 est installé. L’ID de correctif est MDVA-42806. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
 feature: REST, B2B, Communications, Companies
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Modules B2B installés.
 <u>Étapes à reproduire</u> :
 
 1. Créez un compte de société.
-1. Utilisez le point d’entrée `/V1&#x200B;/company&#x200B;/<company_id>`. Pour mettre à jour la société créée, voir [mettre à jour la société](https://devdocs.magento.com/guides/v2.4/b2b/company-object.html#update-the-company) dans notre documentation destinée aux développeurs. Voici un exemple de payload :
+1. Utilisez le point d’entrée `/V1&#x200B;/company&#x200B;/<company_id>`. Pour mettre à jour la société créée, voir [mettre à jour la société](https://developer.adobe.com/commerce/webapi/rest/b2b/company-object/#update-the-company) dans notre documentation destinée aux développeurs. Voici un exemple de payload :
 
 ```php
 {

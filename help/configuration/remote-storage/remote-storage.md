@@ -3,7 +3,7 @@ title: Configuration du stockage distant
 description: Découvrez comment configurer le module de stockage distant pour l’application Commerce sur site.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 4fce6763ec619b0b5069e71cced9ebeb81505304
+source-git-commit: 419a21604d1fda0a76dd0375ae2340fd6e59ec89
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 0%
@@ -30,7 +30,7 @@ L’activation du stockage à distance peut affecter votre expérience de dével
 
 >[!INFO]
 >
->- Le stockage à distance n’est disponible que pour Commerce version 2.4.2 et ultérieure. Voir les [notes de mise à jour 2.4.2](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
+>- Le stockage à distance n’est disponible que pour Commerce version 2.4.2 et ultérieure. Voir les [notes de mise à jour 2.4.2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
 >- Le module de stockage à distance prend _en charge limitée_ dans Adobe Commerce sur l’infrastructure cloud. Adobe ne peut pas résoudre entièrement les problèmes liés au service d’adaptateur de stockage tiers. Voir [Configuration de l’espace de stockage distant pour Commerce sur l’infrastructure cloud](cloud-support.md) pour obtenir des conseils sur l’implémentation de l’espace de stockage distant pour les projets cloud.
 

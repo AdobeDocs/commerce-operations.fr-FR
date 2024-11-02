@@ -2,7 +2,7 @@
 title: '[!DNL Upgrade Compatibility Tool] Outils connexes'
 description: En savoir plus sur les outils associés à  [!DNL Upgrade Compatibility Tool]  dans votre projet Adobe Commerce.
 exl-id: a8cebb74-fba9-42ce-914b-b8fb6c7f53bf
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Il existe des outils liés à [!DNL Upgrade Compatibility Tool], qui peuvent être utilisés pour des résultats similaires ou peuvent déclencher une exécution de [!DNL Upgrade Compatibility Tool].
 
-- **[!DNL Security scanner]** : fournit aux clients Adobe Commerce des informations en temps réel sur l’état de sécurité de leur boutique en détectant de manière proactive les logiciels malveillants et en leur indiquant si leur boutique est compromise. Pour plus d’informations, consultez le [[!DNL Security scan] guide de l’utilisateur](https://docs.magento.com/user-guide/magento/security-scan.html) .
+- **[!DNL Security scanner]** : fournit aux clients Adobe Commerce des informations en temps réel sur l’état de sécurité de leur boutique en détectant de manière proactive les logiciels malveillants et en leur indiquant si leur boutique est compromise. Pour plus d’informations, consultez le [[!DNL Security scan] guide de l’utilisateur](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) .
 
 - **[!DNL Site-Wide Analysis Tool]** : outil en libre-service proactif et référentiel central qui comprend des informations détaillées sur le système et des recommandations pour garantir la sécurité et la maniabilité de votre installation Adobe Commerce. Il fournit 24/7 surveillance des performances, rapports et conseils en temps réel afin d’identifier les problèmes potentiels et de fournir une meilleure visibilité sur l’intégrité, la sécurité et les configurations d’application du site. Pour plus d’informations, consultez le [[!DNL Site-Wide Analysis Tool] guide](../../tools/site-wide-analysis-tool/intro.md) .
 

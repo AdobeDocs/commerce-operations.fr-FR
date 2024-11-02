@@ -4,7 +4,7 @@ description: Découvrez comment transmettre des instructions sur votre site Adob
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Un projet Adobe Commerce par défaut contient une hiérarchie qui inclut un seul
 
 Suivez les bonnes pratiques suivantes lors de la configuration des fichiers `robots.txt` et `sitemap.xml` pour les vitrines à site unique :
 
-- Assurez-vous que votre projet utilise la version 2002.0.12 de [`ece-tools`](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) ou une version ultérieure.
+- Assurez-vous que votre projet utilise la version 2002.0.12 de [`ece-tools`](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package) ou une version ultérieure.
 - Utilisez l’application d’administration pour ajouter du contenu au fichier `robots.txt`.
 
   >[!TIP]
@@ -64,12 +64,12 @@ Suivez les bonnes pratiques suivantes lors de la configuration des fichiers `rob
 
 >[!INFO]
 >
->Voir [Ajout de robots de moteur de recherche et de carte de site](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) pour obtenir des instructions détaillées.
+>Voir [Ajout de robots de moteur de recherche et de carte de site](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) pour obtenir des instructions détaillées.
 
 
 ### Bannières de magasin multi-site
 
-Vous pouvez configurer et exécuter plusieurs magasins avec une seule mise en oeuvre d’Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de plusieurs sites Web ou magasins](https://devdocs.magento.com/cloud/project/project-multi-sites.html).
+Vous pouvez configurer et exécuter plusieurs magasins avec une seule mise en oeuvre d’Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de plusieurs sites Web ou magasins](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites).
 
 Les mêmes bonnes pratiques pour la configuration des fichiers `robots.txt` et `sitemap.xml` pour les [ vitrines à site unique ](#single-site-storefronts) s’appliquent aux vitrines à plusieurs sites avec deux différences importantes :
 
@@ -111,7 +111,7 @@ Pour les étapes de modification du fichier `robots.txt` et de suppression de to
 
 ## Informations supplémentaires
 
-- [Comprendre les sites web, les magasins et les vues de magasin](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
-- [Ajout de sites Web](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [Utilisez Fastly pour bloquer le trafic malveillant de vos sites Adobe Commerce](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
+- [Comprendre les sites web, les magasins et les vues de magasin](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [Ajout de sites Web](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Utilisez Fastly pour bloquer le trafic malveillant de vos sites Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
 - [robots.txt renvoie une erreur 404 dans Adobe Commerce sur l’infrastructure cloud 2.3.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)

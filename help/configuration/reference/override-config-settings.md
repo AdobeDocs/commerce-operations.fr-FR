@@ -2,7 +2,7 @@
 title: Remplacement des paramètres de configuration
 description: Découvrez comment utiliser les variables d’environnement pour remplacer les paramètres de configuration.
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -62,8 +62,8 @@ Le format général des noms de variable des paramètres système suit :
   Pour plus d’informations sur les portées, voir :
 
    - [Étape 1 : recherche de la valeur de portée du site web ou de la vue de magasin](#step-1-find-the-website-or-store-view-scope-value)
-   - [Rubrique du guide de l’utilisateur de Commerce sur la portée](https://docs.magento.com/user-guide/configuration/scope.html)
-   - [Référence rapide sur l’étendue](https://docs.magento.com/user-guide/stores/store-scope-reference.html)
+   - [Rubrique du guide de l’utilisateur de Commerce sur la portée](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+   - [Référence rapide sur l’étendue](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` est le chemin de configuration avec des caractères de soulignement doubles remplacés par `/`. Pour plus d’informations, voir [Étape 2 : définition des variables système](#step-2-set-global-website-or-store-view-variables).
 
@@ -251,7 +251,7 @@ Un exemple détaillé est présenté dans la section [Définir des valeurs de co
 
 >[!WARNING]
 >
->- Pour utiliser les valeurs que vous définissez dans le tableau `$_ENV`, vous devez définir `variables_order = "EGPCS"`(Environnement, Get, Post, Cookie et Server) dans votre fichier `php.ini`. Pour plus d’informations, voir la [documentation PHP](https://www.php.net/manual/en/ini.core.php).
+>- Pour utiliser les valeurs que vous définissez dans le tableau `$_ENV`, vous devez définir `variables_order = "EGPCS"`(Environnement, Get, Post, Cookie et Serveur) dans votre fichier `php.ini`. Pour plus d’informations, voir la [documentation PHP](https://www.php.net/manual/en/ini.core.php).
 >
 >- Pour Adobe Commerce sur l’infrastructure cloud, si vous tentez de remplacer les paramètres de configuration à l’aide de l’[ interface web du projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), vous devez ajouter `env:` en préfixe au nom de la variable. Par exemple :
 >

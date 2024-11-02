@@ -3,7 +3,7 @@ title: Nettoyage du cache avec vernis
 description: Découvrez comment l’effacement de la mémoire cache fonctionne avec le vernis et comment l’utiliser comme accélérateur de mise en cache web pour l’application Adobe Commerce.
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Une fois que vous avez installé et configuré Varnish pour qu’il fonctionne a
 
 ## Configuration de Commerce pour purger le vernis
 
-Commerce purge les hôtes ternes après avoir configuré les hôtes ternes à l’aide de la commande [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) .
+Commerce purge les hôtes ternes après avoir configuré les hôtes ternes à l’aide de la commande [`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) .
 
 Vous pouvez utiliser le paramètre facultatif `--http-cache-hosts` pour spécifier une liste d’hôtes et de ports d’écoute séparés par des virgules. Configurez tous les hôtes vernis, qu’il y en ait un ou plusieurs. (Ne séparez pas les hôtes avec un espace.)
 

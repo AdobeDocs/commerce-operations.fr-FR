@@ -2,7 +2,7 @@
 title: Tâches Cron
 description: Découvrez les groupes cron et la création d’une tâche cron personnalisée.
 exl-id: a9d83af7-9979-4653-adc9-30ffeb13a5ce
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%
@@ -21,5 +21,5 @@ L’application Commerce fournit les groupes cron suivants :
 - `index`, qui actualise [indexers](../cli/manage-indexers.md)
 - `consumers`, qui exécute la file d&#39;attente des messages [consommateurs](../cli/start-message-queues.md)
 - Ces rubriques sont disponibles dans Adobe Commerce uniquement
-   - `staging` qui exécute les [tâches liées à l’évaluation](https://docs.magento.com/user-guide/cms/content-staging.html)
+   - `staging` qui exécute les [tâches liées à l’évaluation](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging)
    - `catalog_event`, qui exécute des tâches pour les règles de panier et de cible

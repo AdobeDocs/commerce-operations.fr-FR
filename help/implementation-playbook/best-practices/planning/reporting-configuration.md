@@ -4,7 +4,7 @@ description: Optimisez les performances du site en supprimant le module de repor
 role: Admin
 feature: Best Practices, Configuration
 exl-id: 8c991b8a-affb-4a9e-9383-671f595ff89e
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Bonne pratique pour la configuration des rapports
 
-Si votre entreprise ne nécessite pas de fonctionnalités de création de rapports ou de segments de clients dynamiques, désactivez la [fonctionnalité Rapports](https://docs.magento.com/user-guide/configuration/general/reports.html) pour améliorer les performances du magasin.
+Si votre entreprise ne nécessite pas de fonctionnalités de création de rapports ou de segments de clients dynamiques, désactivez la [fonctionnalité Rapports](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/reports) pour améliorer les performances du magasin.
 
 ## Produits et versions concernés
 
@@ -32,5 +32,5 @@ Si vous n’utilisez pas les segments Rapports ou clients dynamiques, désactive
 
 ## Informations supplémentaires
 
-- [Générer des rapports dans Adobe Commerce](https://docs.magento.com/user-guide/reports.html)
-- [ Segments dynamiques client ](https://docs.magento.com/user-guide/marketing/customer-segments.html)
+- [Générer des rapports dans Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/reports-menu)
+- [ Segments dynamiques client ](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments)

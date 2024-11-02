@@ -3,7 +3,7 @@ title: Emplacement de stockage de session
 description: Découvrez où les fichiers de session sont stockés.
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -41,7 +41,7 @@ En tant qu’utilisateur disposant des privilèges `root`, ouvrez votre fichier 
 
 ## Gestion de la taille de session
 
-Voir la [gestion des sessions](https://docs.magento.com/user-guide/stores/security-session-management.html) dans le _guide de l’utilisateur_.
+Voir la [gestion des sessions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) dans le _guide de l’utilisateur_.
 
 ## Configuration du nettoyage de la mémoire
 

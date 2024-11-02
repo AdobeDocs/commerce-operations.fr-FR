@@ -2,7 +2,7 @@
 title: Configuration du fournisseur de verrouillage
 description: Suivez ces étapes pour empêcher les tâches cron en double et les groupes cron de s’exécuter sur votre déploiement Adobe Commerce.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Configurez un fournisseur de verrouillage pour empêcher le lancement de tâches
 
 Adobe Commerce utilise la base de données pour enregistrer les verrous par défaut. Si vos serveurs contiennent plusieurs noeuds, nous vous recommandons d’utiliser Zookeeper en tant que fournisseur de verrouillage.
 
-Si vous exécutez Adobe Commerce sur l’infrastructure cloud, il n’est pas nécessaire de configurer les paramètres du fournisseur de verrouillage. L’application configure le fournisseur de verrouillage de fichier pour les projets Pro pendant le processus d’approvisionnement. Voir [Variables cloud](https://devdocs.magento.com/cloud/env/variables-cloud.html).
+Si vous exécutez Adobe Commerce sur l’infrastructure cloud, il n’est pas nécessaire de configurer les paramètres du fournisseur de verrouillage. L’application configure le fournisseur de verrouillage de fichier pour les projets Pro pendant le processus d’approvisionnement. Voir [Variables cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
 
 ### Utilisation des commandes
 

@@ -4,7 +4,7 @@ description: Découvrez comment éviter les problèmes de performances causés p
 role: Admin
 feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 1%
@@ -35,5 +35,5 @@ Les extensions tierces d’Adobe Commerce (modules) peuvent entraîner divers pr
 
 - [Bonnes pratiques pour la planification des mises à niveau](../../../upgrade/prepare/best-practices.md)
 - Utilisation d’extensions tierces avec Adobe Commerce sur l’infrastructure cloud
-   - [Technologies et exigences - Développement et test](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-devtest)
-   - [Pourquoi tester entièrement dans l’intégration et l’évaluation ?](https://devdocs.magento.com/cloud/live/live.html#whytest)
+   - [Technologies et exigences - Développement et test](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
+   - [Pourquoi tester entièrement dans l’intégration et l’évaluation ?](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

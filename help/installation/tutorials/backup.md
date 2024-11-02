@@ -2,7 +2,7 @@
 title: Sauvegarde et restauration du système de fichiers, du média et de la base de données
 description: Pour sauvegarder et restaurer votre application Adobe Commerce, procédez comme suit.
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Après la sauvegarde, vous pouvez [restaurer](#rollback) ultérieurement.
 
 >[!TIP]
 >
->Pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Gestion des instantanés et des sauvegardes](https://devdocs.magento.com/cloud/project/project-webint-snap.html) dans le _guide Cloud_.
+>Pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Gestion des instantanés et des sauvegardes](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) dans le _guide Cloud_.
 
 ## Activation des sauvegardes
 

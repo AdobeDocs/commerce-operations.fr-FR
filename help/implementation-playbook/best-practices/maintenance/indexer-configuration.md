@@ -4,7 +4,7 @@ description: Maintenez et optimisez les performances du site en suivant les bonn
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 153cf3bae74a78d7a41176e0216203d354d2513b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Le fait qu’un grand magasin avec plusieurs administrateurs fonctionne en arri�
 Pour optimiser les performances du site, suivez les bonnes pratiques d’indexation suivantes :
 
 - Examinez la configuration de l’index.
-- Définissez les indexeurs sur _[!UICONTROL Update on Schedule]_pour les sites volumineux et les sites avec des mises à jour fréquentes et un trafic élevé. Voir [Gestion des index](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
+- Définissez les indexeurs sur _[!UICONTROL Update on Schedule]_pour les sites volumineux et les sites avec des mises à jour fréquentes et un trafic élevé. Voir [Gestion des index](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 - Suivez les [bonnes pratiques de performances](../../../performance/configuration.md) pour gérer les index.
 
 >[!IMPORTANT]

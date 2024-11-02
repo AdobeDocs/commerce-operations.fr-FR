@@ -2,7 +2,7 @@
 title: Présentation de  [!DNL Upgrade Compatibility Tool]
 description: Découvrez  [!DNL Upgrade Compatibility Tool] et comment il peut vous aider à gérer votre projet Adobe Commerce.
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
-source-git-commit: fc1be3362863d3b0fa3468380fe62ca698abac43
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -54,6 +54,6 @@ Pour plus d’informations sur la contribution des normes de codage, reportez-vo
 Consultez les ressources suivantes pour vous aider à comprendre les mises à niveau d’Adobe Commerce :
 
 - Le [guide de mise à niveau](../overview.md) donne un aperçu du parcours de mise à niveau standard d’Adobe Commerce et des bonnes pratiques à suivre le long de ce parcours.
-- La page [prochaines versions](https://devdocs.magento.com/release/) indique les dates des versions planifiées et à venir.
+- La page [prochaines versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) indique les dates des versions planifiées et à venir.
 - La page [ressources de la communauté](https://developer.adobe.com/commerce/contributor/community/) doit servir à lancer des discussions ou à trouver plus d’informations.
 - Consultez la page [ outils connexes](../upgrade-compatibility-tool/related-tools.md) pour obtenir des outils utiles dans votre parcours de mise à niveau classique.

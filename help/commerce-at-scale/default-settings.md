@@ -1,10 +1,10 @@
 ---
 title: Optimisation des performances d’Adobe Commerce
-description: Préparez votre projet Adobe Commerce à utiliser Adobe Experience Manager en tant que CMS en modifiant certains paramètres par défaut.
+description: Préparez votre projet Adobe Commerce à utiliser Adobe Experience Manager as a CMS en modifiant certains paramètres par défaut.
 exl-id: 55d77af7-508c-4ef7-888b-00911cc6e920
 feature: Integration, Cache
 topic: Commerce, Performance
-source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1142'
 ht-degree: 0%
@@ -26,11 +26,11 @@ GraphQL vous permet d’effectuer plusieurs requêtes dans un seul appel. Il est
 
 >[!NOTE]
 >
-> Pour plus d’informations sur les requêtes pouvant être mises en cache et non mises en cache, consultez la [documentation destinée aux développeurs](https://devdocs.magento.com/guides/v2.4/graphql/caching.html) d’Adobe Commerce.
+> Pour plus d’informations sur les requêtes pouvant être mises en cache et non mises en cache, consultez la [documentation destinée aux développeurs](https://developer.adobe.com/commerce/webapi/graphql/caching.html) d’Adobe Commerce.
 
-## Tableau plat du catalogue
+## Table plate de catalogue
 
-L’utilisation de tableaux plats pour les produits et les catégories n’est pas recommandée. L’utilisation de cette fonctionnalité obsolète peut entraîner des dégradations de performances et des problèmes d’indexation. Par conséquent, les catalogues plats doivent être désactivés via l’administrateur Adobe Commerce, dans la section storefront. Certains modules et personnalisations tiers ne nécessitent pas de tableaux plats pour fonctionner correctement. Il est recommandé d’effectuer une évaluation afin de comprendre les impacts et les risques liés à l’utilisation de tableaux plats lorsque vous choisissez d’utiliser ces extensions ou personnalisations.
+L’utilisation de tables plates pour les produits et les catégories n’est pas recommandée. L’utilisation de cette fonctionnalité obsolète peut entraîner des dégradations de performances et des problèmes d’indexation. Par conséquent, les catalogues plats doivent être désactivés via l’administrateur Adobe Commerce, dans la section storefront. Certains modules et personnalisations tiers ne nécessitent pas de tableaux plats pour fonctionner correctement. Il est recommandé d’effectuer une évaluation afin de comprendre les impacts et les risques liés à l’utilisation de tableaux plats lorsque vous choisissez d’utiliser ces extensions ou personnalisations.
 
 ## Protection d&#39;origine très rapide
 
@@ -42,7 +42,7 @@ Un protection d’origine rapide peut être activé dans les paramètres du serv
 
 Une fois que l’option de protection d’origine Fastly est activée, vous pouvez également activer Fastly Image Optimizer. Lorsque les images des catalogues de produits sont stockées sur Adobe Commerce, ce service permet de décharger rapidement et hors d’Adobe Commerce toutes les transformations d’images de catalogues de produits gourmands en ressources. Les temps de réponse des utilisateurs finaux sont également améliorés pour les temps de chargement des pages, car les images sont transformées à l’emplacement de périphérie, ce qui élimine la latence en réduisant le nombre de requêtes à l’origine Adobe Commerce.
 
-L’optimisation rapide des images peut être activée en &quot;activant l’optimisation des images profondes&quot; dans la configuration Fastly dans l’administration, bien que seulement après l’activation de votre protection d’origine. Pour plus d’informations sur les configurations pour l’optimisation rapide des images, consultez la [ documentation destinée aux développeurs](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) d’Adobe Commerce.
+L’optimisation rapide des images peut être activée en &quot;activant l’optimisation des images profondes&quot; dans la configuration Fastly dans l’administration, bien que seulement après l’activation de votre protection d’origine. Pour plus d’informations sur les configurations pour l’optimisation rapide des images, consultez la [ documentation destinée aux développeurs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization) d’Adobe Commerce.
 
 ![Capture d’écran des paramètres d’optimisation d’image Fastly dans l’administrateur Adobe Commerce](../assets/commerce-at-scale/image-optimization.svg)
 
@@ -56,9 +56,9 @@ Par défaut, les connexions MySQL et Redis Slave ne sont pas activées dans Adob
 
 Si l’instance Adobe Commerce attend une charge extrême, l’activation de master-slave pour MySQL et Redis permet d’optimiser les performances en répartissant la charge sur la base de données MySQL ou les redis sur différents noeuds.
 
-À titre de guide, dans les environnements à charge normale, l’activation de la connexion esclave ralentit les performances de 10 à 15 %. Mais sur les clusters avec une charge et un trafic élevés, il y a une amélioration des performances d&#39;environ 10 à 15 %. Par conséquent, il est important de charger le test de votre environnement avec les niveaux de trafic prévus afin d’évaluer si ce paramètre serait bénéfique pour les temps de performance en cours de chargement.
+À titre de guide, dans les environnements à charge normale, l’activation de la connexion esclave ralentit les performances de 10 à 15 %. Mais sur les clusters avec une charge et un trafic lourds, il y a une augmentation des performances d’environ 10-15%. Par conséquent, il est important de tester la charge de votre environnement avec les niveaux de trafic attendus afin d’évaluer si ce paramètre serait bénéfique pour vos temps de performance sous charge.
 
-Pour activer/désactiver les connexions esclaves pour mysql et redis, vous devez modifier votre fichier `.magento.env.yaml` afin d’inclure les éléments suivants :
+Pour activer/désactiver les connexions esclaves pour mysql et redis, vous devez modifier votre `.magento.env.yaml` fichier pour inclure les éléments suivants :
 
 ```
 stage:
