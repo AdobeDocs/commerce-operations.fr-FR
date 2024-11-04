@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leurs utilisations, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 4764716fe6fbc043f96843195f9d25b6d3517a40
+source-git-commit: ebcf6c2f99b44489d3914dc4a83fd0f3f944ad93
 workflow-type: tm+mt
-source-wordcount: '6087'
+source-wordcount: '6093'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 0%
    - [Correctifs](site-wide-analysis-tool/patches.md)
 
 - Outil Correctifs de qualité {#quality-patches-tool}
+   - [[!DNL Quality Patches Tool] : outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
    - [[!DNL Quality Patches Tool] : Recherchez des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Utilisation](quality-patches-tool/usage.md)
    - [Notes de mise à jour](quality-patches-tool/release-notes.md)
