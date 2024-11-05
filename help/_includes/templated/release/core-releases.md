@@ -30,7 +30,7 @@ La date de fin de la prise en charge de la ligne de mise à jour 2.4.8 n’a pas
 
 ## 2.4.7
 
-La prise en charge de la version 2.4.7 se termine en avril  9 mars 2027.
+La prise en charge de la version 2.4.7 se termine le 9 avril 2027.
 
 <table>
   <thead>
@@ -385,9 +385,9 @@ La prise en charge de la version 2.4.0-2.4.3 s’est terminée le 28 novembre 20
   </tbody>
 </table>
 
-## 2,3
+## 2.3
 
-La prise en charge de la version 2.3 s’est terminée en septembre.  8 mars 2022.
+La prise en charge de la version 2.3 s’est terminée le 8 septembre 2022.
 
 <table>
   <thead>
@@ -508,9 +508,9 @@ La prise en charge de la version 2.3 s’est terminée en septembre.  8 mars 20
   </tbody>
 </table>
 
-## 2,2
+## 2.2
 
-La prise en charge de la version 2.2 s’est terminée en décembre  1er janvier 2019.
+La prise en charge de la version 2.2 s’est terminée le 1er décembre 2019.
 
 <table>
   <thead>
@@ -546,7 +546,7 @@ La prise en charge de la version 2.2 s’est terminée en décembre  1er janvie
     </tr>
     <tr>
         <td>
-          2,2.7
+          2.2.7
         </td>
         <td>28 novembre 2018</td>
     </tr>
@@ -558,7 +558,7 @@ La prise en charge de la version 2.2 s’est terminée en décembre  1er janvie
     </tr>
     <tr>
         <td>
-          2,2.5
+          2.2.5
         </td>
         <td>27 juin 2018</td>
     </tr>
@@ -595,7 +595,7 @@ La prise en charge de la version 2.2 s’est terminée en décembre  1er janvie
   </tbody>
 </table>
 
-## 2,1
+## 2.1
 
 La prise en charge de la version 2.1 s’est terminée le 30 juin 2019.
 
@@ -724,7 +724,7 @@ La prise en charge de la version 2.1 s’est terminée le 30 juin 2019.
   </tbody>
 </table>
 
-## 2,0
+## 2.0
 
 La prise en charge de la version 2.0 s’est terminée le 31 mars 2018.
 
