@@ -4,9 +4,9 @@ description: Découvrez comment conserver votre Adobe Commerce sur la pile de te
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 5e3289b328b51eb50354efdc1571283791175b9a
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Les clients sur les plans Pro ne peuvent utiliser que les mises à niveau de ser
 
 >[!WARNING]
 >
->Les mises à niveau de service ne peuvent pas être transmises à l’environnement de production sans préavis de 48 heures ouvrables à notre équipe d’infrastructure. Cela est nécessaire, car nous devons nous assurer qu’un ingénieur du support de l’infrastructure est disponible pour mettre à jour votre configuration dans les délais voulus, avec un temps d’arrêt minimal pour votre environnement de production.
+>Les mises à niveau de service ne peuvent pas être transférées vers un environnement de production sans préavis de 48 heures ouvrables à l’équipe d’infrastructure d’Adobe. Cela est nécessaire afin qu’Adobe puisse s’assurer qu’un ingénieur du support de l’infrastructure est disponible pour mettre à jour votre configuration dans les délais impartis, avec un temps d’arrêt minimal pour votre environnement de production. Adobe recommande de mettre votre site en mode de maintenance lors de la mise à niveau du service.
 
 Vous pouvez afficher la liste des versions de service et des dates de fin de vie dans le fichier suivant : [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
