@@ -4,7 +4,7 @@ description: Décrit comment éviter une dégradation des performances par des p
 role: Developer
 feature: Best Practices
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 6c0a9268cb3a3b2e76f4a389846e8407f0893b4f
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Allouez au moins **2 Go** de mémoire pour le [module PHP OPcache](https://www.p
 ## Informations supplémentaires
 
 * [ Bonnes pratiques de performances - Paramètres PHP](../../../performance/software.md#php-settings)
-* [Configurer les options PHP](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/overview)
+* [Configurer les options PHP](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
 * [Bonnes pratiques relatives aux bases de données pour Adobe Commerce sur l’infrastructure cloud](database-on-cloud.md)
 * [Problèmes de base de données les plus courants dans Adobe Commerce sur l’infrastructure cloud](../maintenance/resolve-database-performance-issues.md)
 * [Les indexeurs &quot;Mise à jour selon le calendrier&quot; optimisent les performances d’Adobe Commerce](../maintenance/indexer-configuration.md)

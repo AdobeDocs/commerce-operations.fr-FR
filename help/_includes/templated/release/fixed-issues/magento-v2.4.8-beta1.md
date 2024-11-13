@@ -1,7 +1,7 @@
 ---
-source-git-commit: d2fe92c778cb90912062c5f318332a02f6a4131e
+source-git-commit: 2d46933005b9848fee526d0a9f96e2e5ff58cbb8
 workflow-type: tm+mt
-source-wordcount: '14792'
+source-wordcount: '14732'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ assurer la compatibilité et les fonctionnalités à jour. Auparavant, la mise �
 
 ## Problèmes résolus
 
-Nous avons corrigé 254 problèmes dans le code principal Magento Open Source 2.4.8. Vous trouverez ci-dessous un sous-ensemble des problèmes résolus inclus dans cette version.
+Nous avons corrigé 253 problèmes dans le code principal Magento Open Source 2.4.8. Vous trouverez ci-dessous un sous-ensemble des problèmes résolus inclus dans cette version.
 
 ### API
 
@@ -1143,10 +1143,6 @@ dans la configuration bin/magento : définissez la valeur twofactorauth/google/l
 * _AC-12128_ : correctif de sécurité de Prototype.js CVE-2020-27511
    * _Remarque de correctif_ : le système a été mis à jour pour répondre à la vulnérabilité de sécurité CVE-2020-27511 dans Prototype.js 1.7.3, améliorant ainsi la sécurité globale du système. Avant cette mise à jour, le système était susceptible de subir un refus de service d’expression régulière (ReDOS) par l’élimination de balises d’HTML conçues.
    * _Contribution du code GitHub_ : <https://github.com/magento/magento2/commit/de4dfb8e>
-* _AC-12128_ :
-   * _Remarque de correctif_ : Correctif de vulnérabilité de sécurité Prototype.js CVE-2020-27511
-   * _Problème GitHub_ : &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _Contribution du code GitHub_ : le système a été mis à jour pour répondre à la vulnérabilité de sécurité CVE-2020-27511 dans Prototype.js 1.7.3, améliorant ainsi la sécurité globale du système. Avant cette mise à jour, le système était susceptible de subir un refus de service d’expression régulière (ReDOS) par l’élimination de balises d’HTML conçues.
 * _AC-12189_ : Grunt Less utilise pub/prefix pour sourcemaps
    * _Remarque de correctif_ : le système génère désormais des cartes sourcemap less/css sans le préfixe /pub pour les chemins d’accès lors de l’utilisation du graphique, rendant ainsi inutile toute solution de contournement dans la configuration du serveur web. Auparavant, l’utilisation du préfixe /pub dans les chemins d’accès des plans sources nécessitait une configuration spécifique dans le serveur web pour fonctionner correctement.
    * _Problème GitHub_ : <https://github.com/magento/magento2/issues/38837>
