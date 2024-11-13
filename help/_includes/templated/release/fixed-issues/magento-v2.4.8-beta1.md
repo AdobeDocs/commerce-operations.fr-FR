@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2d46933005b9848fee526d0a9f96e2e5ff58cbb8
+source-git-commit: e05e4e4ef547bfb95fdcc53c2095ef0725b0a6e1
 workflow-type: tm+mt
-source-wordcount: '14732'
+source-wordcount: '14731'
 ht-degree: 0%
 
 ---
@@ -809,10 +809,10 @@ assurer la compatibilité et les fonctionnalités à jour. Auparavant, la mise �
    * _Remarque de correctif_ : le système ajoute désormais uniquement le pays modifié à la configuration &quot;general/region/state_required&quot; lorsqu’un nouveau pays avec les états requis est ajouté, ce qui empêche toute interruption du code personnalisé qui suppose que la région est désactivée. Auparavant, l’ajout d’un nouveau pays avec les états requis réinitialisait la configuration &quot;general/region/state_required&quot; sur les pays par défaut avec un état requis, ce qui risquait de rompre la boutique.
    * _Problème GitHub_ : <https://github.com/magento/magento2/issues/37796>
    * _Contribution du code GitHub_ : <https://github.com/magento/magento2/pull/38076>
-* _AC-9712_ : https://github.com/magento/magento2/issues/37841
-   * _Fix Remarque_ : Différence dans une compilation moindre entre la bibliothèque php et nodejs (grunt) avec des expressions `calc` complexes
-   * _Problème GitHub_ : &lt;<https://github.com/magento/magento2/commit/b34c0a75>>
-   * _Contribution du code GitHub_ : corrigez la différence de compilation moindre entre la bibliothèque php et nodejs (grunt) après la mise à jour wikimedia/less.php:^5.x
+* _AC-9712_ : Différence en moins de compilation entre la bibliothèque php et nodejs (grunt) avec des expressions `calc` compliquées
+   * _Note de correctif_ : corrigez la différence de compilation moindre entre la bibliothèque php et nodejs (grunt) après la mise à jour wikimedia/less.php:^5.x
+   * _Problème GitHub_ : <https://github.com/magento/magento2/issues/37841>
+   * _Contribution du code GitHub_ : <https://github.com/magento/magento2/commit/b34c0a75>
 * _ACP2E-2692_ : l&#39;erreur &quot;Table ou vue de base introuvable&quot; se produit lors de l&#39;exécution de l&#39;indexation partielle
    * _Remarque de correctif_ : La réindexation partielle fonctionne désormais correctement avec les grands fichiers de modification en cas de connexion à la base de données secondaire.
    * _Contribution du code GitHub_ : <https://github.com/magento/magento2/commit/ba25af8a>
