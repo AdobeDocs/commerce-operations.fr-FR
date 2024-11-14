@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leurs utilisations, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 6e89a3f7143ba0c19e2ac5da1f6578511b5d5955
+source-git-commit: 4ad78705e8bf9b37f4d3b9ee71efdf4f24d7e244
 workflow-type: tm+mt
-source-wordcount: '6187'
+source-wordcount: '6192'
 ht-degree: 0%
 
 ---
@@ -650,6 +650,7 @@ ht-degree: 0%
       - v1.1.53 {#v1-1-53}
          - [Présentation : [!DNL Quality Patches Tool]  (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
          - [ACSD-59930 : améliore les performances des flux de l’entreprise](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows.md)
+         - [ACSD-61553 : [!UICONTROL Cart Price Rule] est mal calculé](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61553-cart-price-rule-discounts-are-incorrectly-calculated-when-multiple-discounts-with-different-priorities-are-applied.md)
          - [ACSD-60584 : le jeton d’accès créé pour un site web est autorisé à accéder aux informations d’autres sites web.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60584-access-token-created-for-one-website-is-allowed-to-access-information-on-other-websites.md)
          - [ACSD-61528 : la récupération des rôles à l’aide de GraphQL ne renvoie aucun résultat](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results.md)
          - [ACSD-48318 : Erreur d’imbrication de l’émulation de l’environnement dans &quot;system.log&quot;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log.md)
