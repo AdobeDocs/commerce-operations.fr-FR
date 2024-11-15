@@ -1,18 +1,19 @@
 ---
-title: "ACSD-44938 : L’ID de TVA ne peut pas être appliqué dans une demande GraphQL pour un utilisateur invité"
-description: Le correctif ACSD-44938 corrige le problème qui empêchait l’application de l’identifiant TVA dans une requête GraphQL pour un utilisateur invité. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 est installé. L’ID de correctif est ACSD-44938. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
+title: "ACSD-44938 : L'ID de TVA ne peut pas être appliqué dans la  [!DNL GraphQL] demande d'utilisateur invité"
+description: Le correctif ACSD-44938 corrige le problème en raison duquel le `TVA_ID` ne peut pas être appliqué dans une requête [!DNL GraphQL] pour un utilisateur invité. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 est installé. L’ID de correctif est ACSD-44938. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
 feature: Admin Workspace, GraphQL
 role: Admin
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+exl-id: 62d36c27-545a-4c32-be69-a92e4b3ca2ca
+source-git-commit: 3fdefc6201714c441d63574d293863e83205894b
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
 
-# ACSD-44938 : L’ID de TVA ne peut pas être appliqué dans la requête GraphQL pour un utilisateur invité.
+# ACSD-44938 : L&#39;ID de TVA ne peut pas être appliqué dans la requête [!DNL GraphQL] pour un utilisateur invité
 
-Le correctif ACSD-44938 corrige le problème qui empêchait l’application de l’identifiant TVA dans une requête GraphQL pour un utilisateur invité. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.18 est installé. L’ID de correctif est ACSD-44938. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-44938 corrige le problème en raison duquel `VAT_ID` ne peut pas être appliqué dans une requête [!DNL GraphQL] pour un utilisateur invité. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.18 est installé. L’ID de correctif est ACSD-44938. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -30,20 +31,20 @@ Le correctif ACSD-44938 corrige le problème qui empêchait l’application de l
 
 ## Problème
 
-L’attribut TVA_ID ne peut pas être appliqué dans une requête GraphQL pour un utilisateur invité.
+`VAT_ID` ne peut pas être appliqué dans une requête [!DNL GraphQL] pour un utilisateur invité.
 
 <u>Étapes à reproduire</u> :
 
-1. Suivez les étapes mentionnées dans le [tutoriel GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-shopping-cart.html) de notre documentation destinée aux développeurs pour créer un panier d’invité.
-1. Essayez d’appliquer l’attribut TVA_ID pour l’utilisateur invité à l’aide de GraphQL.
+1. Suivez les étapes mentionnées dans le [[!DNL GraphQL] tutoriel](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) de notre documentation destinée aux développeurs pour créer un panier d’invité.
+1. Essayez d&#39;appliquer `VAT_ID` à l&#39;utilisateur invité en utilisant [!DNL GraphQL].
 
 <u>Résultats attendus</u> :
 
-L’attribut TVA_ID peut être appliqué de la même manière que pour un client enregistré. Voir l’article [mutation createCustomerAddress](https://developer.adobe.com/commerce/webapi/graphql/mutations/create-customer-address.html) dans notre documentation destinée aux développeurs.
+`VAT_ID` peut être appliqué de la même manière que pour un client enregistré. Consultez l’article [`createCustomerAddress` mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/create-address/) dans notre documentation destinée aux développeurs.
 
 <u>Résultats réels</u> :
 
-L’attribut TVA_ID ne peut pas être appliqué à un utilisateur invité utilisant GraphQL.
+`VAT_ID` ne peut pas être appliqué à un utilisateur invité utilisant [!DNL GraphQL].
 
 ## Appliquer le correctif
 
@@ -54,7 +55,7 @@ Pour appliquer des correctifs individuels, utilisez les liens suivants en foncti
 
 ## Lecture connexe
 
-Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
+Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
 * [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!DNL Quality Patches Tool].

@@ -1,18 +1,19 @@
 ---
 title: '''MDVA-41631 : erreur lors de la récupération des informations de commande sans valeur "téléphonique" facultative'
-description: Le correctif MDVA-41631 corrige le problème en raison duquel les utilisateurs obtenaient une erreur lors de la récupération des informations de commande sans valeur "téléphonique" facultative via GraphQL. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 est installé. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
+description: Le correctif MDVA-41631 corrige le problème en raison duquel les utilisateurs obtenaient une erreur lors de la récupération des informations de commande sans valeur "telephone" facultative via [!DNL GraphQL]. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 est installé. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
 feature: Orders
 role: Admin
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+exl-id: e56cea59-ffc1-4520-85ca-136cda613884
+source-git-commit: 3f14d93eca09967e320aae4af5e94c6d0c16cd20
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
 
 # MDVA-41631 : erreur lors de la récupération des informations de commande sans valeur &quot;téléphonique&quot; facultative
 
-Le correctif MDVA-41631 corrige le problème en raison duquel les utilisateurs obtenaient une erreur lors de la récupération des informations de commande sans valeur &quot;téléphonique&quot; facultative via GraphQL. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 est installé. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
+Le correctif MDVA-41631 corrige le problème en raison duquel les utilisateurs obtenaient une erreur lors de la récupération des informations de commande sans valeur &quot;telephone&quot; facultative via [!DNL GraphQL]. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 est installé. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
 
 ## Produits et versions concernés
 
@@ -30,14 +31,14 @@ Adobe Commerce (toutes les méthodes de déploiement) 2.4.1 - 2.4.3-p1
 
 ## Problème
 
-Les utilisateurs obtiennent une erreur lors de la récupération des informations de commande sans valeur &quot;téléphonique&quot; facultative via GraphQL.
+Les utilisateurs obtiennent une erreur lors de la récupération des informations de commande sans valeur &quot;telephone&quot; facultative via [!DNL GraphQL].
 
 <u>Étapes à reproduire</u> :
 
 1. Accédez à **Magasin** > **Configuration** > **Clients** > **Configuration client** > **Options de nom et d’adresse** > **Afficher le numéro de téléphone** et définissez le numéro de téléphone comme facultatif.
-1. Passez une commande à l’aide de l’API GraphQL en tant que client connecté.
-   * Ne définissez pas le numéro de téléphone lors de la définition des adresses de facturation et de livraison. Suivez les instructions du [tutoriel sur le passage en caisse de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-customer.html) dans notre documentation destinée aux développeurs.
-1. Récupérez la commande à l’aide de la requête GraphQL [customerCommandes](https://developer.adobe.com/commerce/webapi/graphql/queries/customer-orders.html).
+1. passé une commande en utilisant [!DNL GraphQL API] comme client connecté ;
+   * Ne définissez pas le numéro de téléphone lors de la définition des adresses de facturation et de livraison. Suivez les instructions de la section [[!DNL GraphQL] Tutoriel sur le passage en caisse](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) de notre documentation destinée aux développeurs.
+1. Récupérez la commande à l’aide de la requête [!DNL GraphQL] [`customerOrders`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/orders/).
 
 <pre>
 <code class="language-graphql">
@@ -81,7 +82,7 @@ country_code
 
 <u>Résultats attendus</u> :
 
-Les utilisateurs obtiennent des informations sur la commande.
+Les utilisateurs obtiennent les informations sur la commande.
 
 <u>Résultats réels</u> :
 
@@ -96,7 +97,7 @@ Pour appliquer des correctifs individuels, utilisez les liens suivants en foncti
 
 ## Lecture connexe
 
-Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
+Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
 * [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!DNL Quality Patches Tool].
