@@ -2,7 +2,7 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: fb884f895cb03dcc920dc3de9baa63deb8737cd3
+source-git-commit: 3f6093b55c7bbfaf8666438ac1fef8f90432d947
 workflow-type: tm+mt
 source-wordcount: '23125'
 ht-degree: 0%
@@ -68,7 +68,7 @@ ht-degree: 0%
 * **ACSD-61553** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel les remises **[!UICONTROL Cart Price Rule]** sont incorrectement calculées lorsque plusieurs remises avec des priorités différentes et **[!UICONTROL Maximum Qty Discount is Applied To]** sont appliquées au produit.
 * **ACSD-61667** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Améliore les performances d’inventaire pour la création d’expédition dans le cas de nombreuses sources avec une récupération en magasin.
 * **ACSD-61969** (pour Adobe Commerce >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel l’utilisateur doit saisir un code de bon sensible à la casse pour correspondre exactement au code de bon configuré.
-* Correctifs mis à jour : ACSD-54989, ACSD-60632
+* Versions mises à jour : **ACSD-54989**, **ACSD-60632**
 
 ## v1.1.52 {#v1-1-52}
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 * **ACSD-60788** (pour Adobe Commerce >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel les scripts personnalisés pour [!DNL Google Tag Manager] ne sont pas exécutés en raison d’erreurs CSP (Content Security Policy, stratégie de sécurité du contenu).
 * **ACSD-61322** (pour Adobe Commerce >=2.4.6 &lt;2.4.8) - Correction du problème en raison duquel [!UICONTROL Products/Categories] n’est pas affecté à [!UICONTROL Shared Catalog] pour le groupe par défaut (Groupe général) est toujours inclus dans le plan de site XML.
 * **ACSD-61366** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Correction du problème où la commande `setup:static-content:deploy --jobs 4` s’exécute avec plusieurs tâches échouant avec l’erreur *Port doit être configuré dans le paramètre d’hôte* lorsque le port est spécifié pour la connexion DB.
-* Versions mises à jour : **ACSD-54989**, **ACSD-60632**
+* Correctifs mis à jour : ACSD-51857, ACSD-57394
 
 ## v1.1.51 {#v1-1-51}
 
