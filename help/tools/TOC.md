@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leurs utilisations, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: b6ba3f3381c60e0158c85d77f70899f16ad7ca7b
+source-git-commit: f684470add56a13dc7bf898f50a73c792e26673c
 workflow-type: tm+mt
-source-wordcount: '6203'
+source-wordcount: '6207'
 ht-degree: 0%
 
 ---
@@ -660,6 +660,8 @@ ht-degree: 0%
          - [ACSD-61200 : fixe la compensation de la taxe de remise dans les calculs du total des ventes.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
          - [ACSD-61522 : Les adresses électroniques des champs Prénom et Nom envoient des confirmations de commande non valides](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
          - [ACSD-61845 : une erreur se produit pour les requêtes avec l’en-tête accept text/html](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
+      - v1.1.55 {#v1-1-55}
+         - [Présentation : [!DNL Quality Patches Tool]  (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
       - [Correctif du problème Adobe Commerce avec l’outil Correctifs de qualité](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Référence des outils de ligne de commande {#cli-reference}
