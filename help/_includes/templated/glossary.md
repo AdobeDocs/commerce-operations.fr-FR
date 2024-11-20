@@ -1,7 +1,7 @@
 ---
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 0d5eeb691281d7c62aa64a9d8cd042f18504a67f
 workflow-type: tm+mt
-source-wordcount: '6363'
+source-wordcount: '6370'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ _adjectif_
 
 Une entreprise de vente au détail avec un emplacement physique permanent, par opposition à des entreprises qui fonctionnent virtuellement ou uniquement par Internet.
 
-Pour [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) et [Order Management](https://omsdocs.magento.com/getting-started/terminology/), ce magasin est une source pour effectuer le suivi des quantités de produits, des commandes d’expédition et de la prise en charge de la récupération en magasin.
+Pour [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) et [Order Management](#oms), ce magasin est une source pour effectuer le suivi des quantités de produits, des commandes d’expédition et de la prise en charge de la récupération en magasin.
 
 _Attributs de terme :_
 
@@ -1046,7 +1046,11 @@ _Attributs de terme :_
 
 _noun_
 
-[OMS](https://omsdocs.magento.com) est l’offre du système Order Management d’Adobe.
+OMS est l’offre Order Management System de l’Adobe.
+
+>[!IMPORTANT]
+>
+>Adobe Commerce Order Management (OMS) a atteint la fin de vie et n’est plus pris en charge.
 
 OMS est une solution flexible et abordable pour gérer, vendre et réaliser des stocks à partir de n’importe quel canal de vente.
 Le système OMS offre une expérience client transparente, qui augmente les ventes tout en réduisant les coûts et accélère le délai de mise sur le marché.
@@ -1058,7 +1062,7 @@ Les fonctionnalités d’OMS incluent :
 * Service client plus facile et plus réactif
 * Amélioration de l’expérience client et de la fidélité
 
-En savoir plus : [Prise en main d’OMS](https://omsdocs.magento.com/en/getting-started/), [site de documents OMS](https://omsdocs.magento.com/en/)
+En savoir plus : [site de documents OMS archivés](https://commerce-docs.github.io/oms-documentation-archive/)
 
 _Attributs de terme :_
 
@@ -1279,7 +1283,7 @@ _Attributs de terme :_
 
 _noun_
 
-Unité modulaire de contenu pouvant être placée par un utilisateur dans le CMS sur une page pour afficher du texte et des images, ou exécuter des fragments de code.
+Unité modulaire de contenu pouvant être placée par un utilisateur dans CMS sur une page pour afficher du texte et des images, ou exécuter des fragments de code.
 Les blocs statiques contiennent du contenu modifiable et peuvent servir de landing pages pour les catégories de produits.
 Des widgets peuvent être ajoutés aux blocs statiques pour fournir des fonctionnalités supplémentaires.
 
