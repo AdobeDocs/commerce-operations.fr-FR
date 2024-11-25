@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leurs utilisations, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: b6dada04a89664fe03c0f706ce9cd247e61679ac
+source-git-commit: a2e26daf2d5775e1186c1eca7272f9a2efcee23f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '6253'
 ht-degree: 0%
 
 ---
@@ -660,6 +660,7 @@ ht-degree: 0%
          - [ACSD-61199 : l’onglet [!UICONTROL Hierarchy] de la page CMS n’affiche pas la structure arborescente appropriée](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
          - [ACSD-61200 : fixe la compensation de la taxe de remise dans les calculs du total des ventes.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
          - [ACSD-61522 : Les adresses électroniques des champs Prénom et Nom envoient des confirmations de commande non valides](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
+         - [ACSD-62485 : async.operations.all consumer cesse de fonctionner lors de la création de l’entreprise](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created.md)
          - [ACSD-61845 : une erreur se produit pour les requêtes avec l’en-tête accept text/html](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
       - v1.1.55 {#v1-1-55}
          - [Présentation : [!DNL Quality Patches Tool]  (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
