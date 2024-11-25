@@ -2,7 +2,7 @@
 title: Types de configuration
 description: Créez ou étendez des types de configuration.
 exl-id: 4390c310-b35a-431a-859f-3fd46d8ba6bf
-source-git-commit: 02c69e890b40643781ab8f48c3133527dd79386a
+source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 0%
@@ -91,7 +91,7 @@ Pour créer un type de configuration :
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All Rights Reserved.
  */
 
