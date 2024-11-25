@@ -3,7 +3,7 @@ title: Configuration de Redis
 description: Obtenez un aperçu des fonctionnalités Redis et démarrez votre configuration Redis.
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Pour les sessions, Adobe vous recommande d’activer la persistance pour copier 
 
 Vous pouvez également activer simultanément les options RDB et AOF. Pour plus d’informations, notamment sur les avantages et les inconvénients des options de persistance, consultez la [documentation sur la persistance des segments](https://redis.io/topics/persistence).
 
-Pour l’instance de cache, configurez l’instance de sorte qu’elle soit suffisamment grande pour stocker l’intégralité du cache Commerce. Les exigences de taille dépendent de différents facteurs tels que le nombre de produits et de consultations en magasin. Pour commencer, vous pouvez utiliser la taille du dossier de cache sur votre système de fichiers. Par exemple, si le dossier `var/cache` de votre système de fichiers est de 5 Go, configurez votre instance Redis avec au moins 5 Go pour démarrer. La persistance n’est pas requise pour l’instance de cache, car le cache de Commerce peut être restauré. Voir le [guide de mise en cache des révisions](https://redis.io/docs/manual/eviction/).
+Pour l’instance de cache, configurez l’instance de sorte qu’elle soit suffisamment grande pour stocker l’intégralité du cache Commerce. Les exigences de taille dépendent de différents facteurs tels que le nombre de produits et de consultations en magasin. Pour commencer, vous pouvez utiliser la taille du dossier de cache sur votre système de fichiers. Par exemple, si le dossier `var/cache` de votre système de fichiers est de 5 Go, configurez votre instance Redis avec au moins 5 Go pour démarrer. La persistance n’est pas requise pour l’instance de cache, car le cache de Commerce peut être restauré. Voir le [guide de mise en cache des révisions](https://redis.io/docs/latest/develop/use/).
 
 Pour optimiser les performances, vous pouvez activer les paramètres suivants pour la suppression asynchrone. Ces paramètres ne modifient pas le comportement de Redis.
 
