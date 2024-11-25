@@ -4,9 +4,9 @@ description: Découvrez comment éviter les problèmes de performances causés p
 role: Admin
 feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 1fdbded7738365593ef7da64f4dbe6713984bff3
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '193'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 1%
 
 Les extensions tierces d’Adobe Commerce (modules) peuvent entraîner divers problèmes qui peuvent avoir un impact négatif sur les performances du storefront. Vous pouvez éviter ces problèmes en suivant les bonnes pratiques suivantes :
 
+- Développez vos intégrations et personnalisations Commerce à l’aide de l’[extensibilité hors processus](https://developer.adobe.com/commerce/extensibility/) chaque fois que possible pour faciliter la maintenance et la mise à niveau.
 - Téléchargez et achetez des extensions tierces à partir d’une source de confiance, comme le [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
 - Mettez à jour toutes les extensions tierces vers la dernière version.
 - Si vous ne pouvez pas conserver vos extensions tierces à jour, pensez à utiliser d’autres extensions.

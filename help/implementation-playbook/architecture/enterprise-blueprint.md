@@ -3,9 +3,9 @@ title: Architecture de référence d’Enterprise
 description: Découvrez comment mettre en oeuvre Adobe Commerce à l’aide de la dernière technologie de commerce composable d’Adobe.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: c2f6b7125f1a611e94f807999787fee48a0e5ece
+source-git-commit: 581a7dbcc19c31df80e03cb9f321a6adb5fa1a73
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,10 @@ Adobe Commerce s’intègre à toutes les solutions Experience Cloud pour offrir
 
 >[!NOTE]
 >
->Pour plus d’informations techniques, voir [Digital Experience Blueprints](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) .
+>Pour plus d’informations, consultez les ressources suivantes :
+>
+>- [Plan directeur d’expérience numérique](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) pour plus de détails techniques.
+>- Voir [Personnalisation de l’expérience client](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
 
 
 ## Intégration à des systèmes tiers
@@ -63,6 +66,11 @@ Adobe fournit les outils de développement suivants pour créer des intégration
 - [**Événements**](https://developer.adobe.com/commerce/extensibility/events/) : utilisez des déclencheurs d’événement personnalisés pour interagir avec d’autres outils de développement extensibles.
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/) : utilisez des webhooks pour déclencher automatiquement des interactions entre Commerce et des systèmes tiers.
 - [**SDK de l’interface utilisateur d’administration**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/) : personnalisez et améliorez l’administrateur Commerce avec de nouvelles pages et fonctionnalités pour vos commerçants.
+- [**Kit de démarrage d’intégration**](https://developer.adobe.com/commerce/extensibility/starter-kit/) : accélérez vos intégrations d’arrière-plan avec des intégrations de référence, des scripts d’intégration et une architecture normalisée.
+
+>[!NOTE]
+>
+>Voir [L’approche moderne : extensibilité efficace dans Adobe Commerce](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility).
 
 ## Services Storefront
 

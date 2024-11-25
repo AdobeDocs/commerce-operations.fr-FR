@@ -3,9 +3,9 @@ title: Bonnes pratiques relatives aux performances de passage en caisse
 description: Découvrez comment optimiser les performances des expériences de passage en caisse sur votre site Adobe Commerce.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: e4c1832076bb81cd3e70ff279a6921ffb29ea631
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Le processus [checkout](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) dans Adobe Commerce est un aspect essentiel de l’expérience storefront. Il repose sur les fonctionnalités [cart](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart) et [checkout](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page) intégrées.
 
-Les performances sont essentielles pour garantir une expérience utilisateur optimale. Passez en revue le [résumé des performances](../implementation-playbook/infrastructure/performance/benchmarks.md) pour en savoir plus sur les attentes en matière de performances. Vous pouvez optimiser les performances de passage en caisse en configurant les options suivantes pour le **traitement de commande à haut débit** :
+Les performances sont essentielles pour garantir une expérience utilisateur optimale. Vous pouvez optimiser les performances de passage en caisse en configurant les options suivantes pour le **traitement de commande à haut débit** :
 
 - [AsyncOrder](#asynchronous-order-placement) : traite les commandes de manière asynchrone à l’aide d’une file d’attente.
 - [Calcul total différé](#deferred-total-calculation) : remplacez les calculs pour les totaux de commande jusqu’au début du passage en caisse.

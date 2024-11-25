@@ -5,16 +5,16 @@ role: Developer
 feature: Best Practices
 badge: label="Contribution d&#39;Anton Evers, ingénieur en architecture technique, Adobe" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="Contribution d’Anton Evers"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1251'
 ht-degree: 0%
 
 ---
 
 # Bonnes pratiques pour la distribution de correctifs Adobe Commerce à grande échelle
 
-Si vous gérez plusieurs installations Adobe Commerce, [correction](../../../upgrade/patches/apply.md) peut être un processus complexe. _La correction centralisée_ est une partie essentielle de l’ [architecture de référence globale](../../architecture/global-reference/overview.md) et une bonne pratique pour les entreprises. Il vous aide à appliquer les correctifs appropriés sur toutes vos installations Adobe Commerce. Cette rubrique explique comment obtenir une distribution de correctifs centralisée pour tous les types de [correctifs](../../../upgrade/patches/overview.md) Adobe Commerce.
+Si vous gérez plusieurs installations Adobe Commerce, [correction](../../../upgrade/patches/apply.md) peut être un processus complexe. _La correction centralisée_ est une bonne pratique pour les entreprises. Il vous aide à appliquer les correctifs appropriés sur toutes vos installations Adobe Commerce. Cette rubrique explique comment obtenir une distribution de correctifs centralisée pour tous les types de [correctifs](../../../upgrade/patches/overview.md) Adobe Commerce.
 
 >[!NOTE]
 >

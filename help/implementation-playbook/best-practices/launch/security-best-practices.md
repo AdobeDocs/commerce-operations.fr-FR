@@ -3,9 +3,9 @@ title: Sécurisez votre site et votre infrastructure Commerce
 description: Maintenez la sécurité en mettant en oeuvre les bonnes pratiques de sécurité lors de la configuration, de la configuration et de la mise à jour des installations Adobe Commerce.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: a00b7b66beb6499f7fb19fda2dfd450799f73728
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -115,10 +115,6 @@ Dans le cadre d&#39;un plan de reprise sur sinistre, Adobe recommande vivement a
 
 **Adobe Commerce déployé sur site**
 
-- [Idées de reprise sur sinistre](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
-
-- [Sauvegarde et récupération](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
-
 - [Exportation des paramètres de configuration](../../../configuration/cli/export-configuration.md)
 
    - [Importation des paramètres de configuration](../../../configuration/cli/import-configuration.md)
@@ -133,7 +129,7 @@ Cette section résume les bonnes pratiques relatives à la maintenance de la sé
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Utilisez un pare-feu d’application web** : analysez le trafic et découvrez des schémas suspects, tels que des informations de carte de crédit, envoyées à une adresse IP inconnue à l’aide d’un pare-feu d’application web.
 
-Les installations Adobe Commerce déployées sur l’infrastructure cloud peuvent utiliser les services WAF intégrés disponibles avec l’ [intégration de services fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
+Les installations Adobe Commerce déployées sur l’infrastructure cloud peuvent utiliser les services WAF intégrés disponibles avec l’ [intégration de services Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Configurez les paramètres avancés de sécurité des mots de passe** : configurez les mots de passe difficiles à deviner et modifiez-les au moins tous les 90 jours, comme recommandé par la norme de sécurité des données PCI dans la section 8.2.4. Voir [Configuration des paramètres de sécurité d’administration](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html).
 

@@ -4,9 +4,9 @@ description: Découvrez les bonnes pratiques générales pour le développement 
 feature: Best Practices
 role: Developer
 exl-id: 35de9849-2d19-4bb6-b920-9ce3838bc8bc
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 68dc4635df9fc411925fe0d48a578edece8895dc
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -46,18 +46,6 @@ Les mots-clés &quot;DOIT&quot;, &quot;NE DOIT PAS&quot;, &quot;REQUIRED&quot;, 
 1. Tous les développeurs doivent développer et tester à l’aide de la même pile technologique que celle utilisée sur les (futurs) serveurs de production. Les versions du logiciel de cette pile technologique DOIVENT correspondre aux versions majeures et mineures du logiciel installé sur les serveurs de production. Voir [Configuration requise](../../../installation/system-requirements.md) pour plus d’informations sur la pile de technologie type pour Adobe Commerce.
 1. L’administrateur système ou l’architecte technique PEUT fournir à l’équipe un environnement de développement local géré de manière centralisée pour assurer et promouvoir des environnements locaux égaux et à jour.
 1. Les développeurs et les ingénieurs QA DOIVENT avoir accès à la ligne de commande, à la base de données et aux fichiers journaux de l’environnement d’assurance qualité. Cela PEUT nécessiter une connexion VPN.
-
-## Normes de codage
-
-1. Tout code DOIT respecter les conventions en matière d’architecture, de méthodologie et de normes de codage. La créativité est désirée en fonction, pas en forme.
-1. Tout le code doit être conforme au [Guide de l’architecture d’Adobe Commerce](https://developer.adobe.com/commerce/php/architecture/){target="_blank}.
-1. Tout le code doit respecter les [normes de codage Adobe Commerce](https://developer.adobe.com/commerce/php/coding-standards/).
-1. Tout le code doit respecter les [directives techniques Adobe Commerce](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/).
-1. Tout le code doit implémenter les [bonnes pratiques Adobe Commerce](../phases.md), le cas échéant.
-1. Tout le code doit respecter les [standards du groupe d’interopérabilité du framework PHP (FIG)](https://www.php-fig.org/).
-1. Dans la mesure du possible, il est RECOMMANDÉ de prendre en compte [Visions techniques Adobe Commerce](https://developer.adobe.com/commerce/php/architecture/technical-vision/).
-1. Toutes les intégrations avec des systèmes externes DOIVENT comporter des tests d’intégration qui valident le processus d’entreprise.
-1. Tous les modules DOIVENT avoir une couverture de test. Les éléments à tester doivent être déterminés par l’équipe de développement en collaboration avec l’architecte technique ou le développeur principal. Cette détermination doit être fondée sur des mesures qualitatives et non sur des mesures quantitatives : un pourcentage élevé de couverture du code n’est pas un indicateur de succès et n’implique pas une qualité de code élevée. Déterminez plutôt le risque de ne pas couvrir une partie du code en évaluant la probabilité et la gravité des régressions dans cette partie du programme.
 
 ## Contrôle de version
 

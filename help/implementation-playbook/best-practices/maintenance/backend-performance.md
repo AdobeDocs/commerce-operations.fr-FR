@@ -5,9 +5,9 @@ badge: label="Contribution par objet" type="Informative" url="https://objectsour
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
-source-git-commit: e5df5a7242dbe8ceff548257daeb39f7c9fc5c69
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,6 @@ Vous pouvez, par exemple, examiner de plus près les transactions en vous concen
 En savoir plus sur la gestion des performances du site :
 
 - [Surveillance des performances](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) (infrastructure cloud)
-- [Examen de l’optimisation des performances](/help/implementation-playbook/infrastructure/performance/recommendations.md)
 - [Bonnes pratiques de configuration](/help/performance/configuration.md)
 - [Observation pour Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md)
 
