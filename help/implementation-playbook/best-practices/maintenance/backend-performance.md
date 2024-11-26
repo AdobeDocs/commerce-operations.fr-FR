@@ -5,7 +5,7 @@ badge: label="Contribution par objet" type="Informative" url="https://objectsour
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: d884d434e696a911de626dc76983468556cf451f
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 0%
@@ -81,7 +81,7 @@ La résolution des problèmes de performances MySQL par l’implémentation de l
 
 Les sites Web à trafic élevé sont souvent confrontés à des goulets d’étranglement au niveau de la base de données, principalement dus à la dépendance à un seul serveur MySQL. Vous pouvez remédier à ces goulets d’étranglement en mettant en oeuvre la mise en grappe de la base de données, une architecture répartie qui améliore les performances et assure une haute disponibilité.
 
-La mise en grappe de la base de données réduit l’impact des problèmes liés à la base de données pendant les périodes de trafic élevées en permettant à plusieurs noeuds web de se connecter à plusieurs serveurs MySQL. Utilisez des outils tels que la grappe Galera pour configurer la mise en grappe de bases de données pour les sites Commerce. La grappe Galera est incluse dans les [projets Adobe Commerce déployés sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/technology.html).
+La mise en grappe de la base de données réduit l’impact des problèmes liés à la base de données pendant les périodes de trafic élevées en permettant à plusieurs noeuds web de se connecter à plusieurs serveurs MySQL. Utilisez des outils tels que la grappe Galera pour configurer la mise en grappe de bases de données pour les sites Commerce. La grappe Galera est incluse dans les [projets Adobe Commerce déployés sur l’infrastructure cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture).
 
 #### Optimisation des requêtes MySQL
 
