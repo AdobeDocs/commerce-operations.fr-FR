@@ -1,17 +1,17 @@
 ---
-title: 'ACSD-58383 : des crédits en double provenant de demandes de remboursement simultanées via [!DNL REST API]'
+title: 'ACSD-58383 : Duplication des crédits de demandes de remboursement simultanées via [!DNL REST API]'
 description: Appliquez le correctif ACSD-58383 pour corriger le problème Adobe Commerce en raison duquel émettre un remboursement via le  [!DNL REST API] avec deux demandes identiques exécutées simultanément, crée des notes de crédit en double.
 feature: REST, Payments, Returns
 role: Admin, Developer
-source-git-commit: ce3faa5dfc05500dcd672498761b48307064614e
+exl-id: 962970d5-22e7-4bdc-afa0-70e1fa21ecec
+source-git-commit: 28390659fe180180c9b2c8d16239008a1f8a510b
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
 
 ---
 
-
-# Correctif d’Adobe Commerce ACSD-58383 : des notes de crédit en double provenant de demandes de remboursement simultanées via [!DNL REST API]
+# Correctif Adobe Commerce ACSD-58383 : duplication de crédits de demandes simultanées de remboursement via [!DNL REST API]
 
 Le correctif ACSD-58383 corrige le problème en raison duquel l’émission d’un remboursement via l’ [!DNL REST API] avec deux demandes identiques exécutées simultanément entraîne la duplication de notes de crédit.
 
