@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53098 : les produits du catalogue partagé ne reflètent pas sur l’interface frontale"
+title: 'ACSD-53098 : les produits du catalogue partagé ne reflètent pas sur l’interface frontale'
 description: Appliquez le correctif ACSD-53098 pour résoudre le problème Adobe Commerce en raison duquel les produits affectés à un catalogue partagé ne se reflètent pas sur l’interface lors de l’exécution d’un index partiel.
 feature: B2B, Catalog Management, Categories, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 25230086-13b5-4b16-b50f-931e9e3d7102
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%

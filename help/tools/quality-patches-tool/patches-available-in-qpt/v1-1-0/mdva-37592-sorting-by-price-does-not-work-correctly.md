@@ -1,9 +1,10 @@
 ---
-title: "MDVA-37592 : Le tri par prix ne fonctionne pas pour les produits dont le prix est nul"
+title: 'MDVA-37592 : Le tri par prix ne fonctionne pas pour les produits dont le prix est nul'
 description: Le correctif Adobe Commerce MDVA-37592 résout le problème en raison duquel le tri par prix ne fonctionne pas correctement pour les produits dont le prix est nul affecté à un catalogue partagé. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.0 est installé. L’ID de correctif est MDVA-37592. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
 feature: B2B, Catalog Management, Categories, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 4d4a158c-2020-42a4-9b8b-14c9b48b4107
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%

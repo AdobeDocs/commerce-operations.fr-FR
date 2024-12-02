@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49835 : [!UICONTROL Use Default Value] case à cocher non enregistrée"
+title: 'ACSD-49835 : [!UICONTROL Use Default Value] la case à cocher n’est pas enregistrée'
 description: Appliquez le correctif ACSD-49835 pour résoudre le problème Adobe Commerce en raison duquel la case à cocher [!UICONTROL Use Default Value] n’est pas enregistrée correctement au niveau du magasin pour un attribut à sélection multiple.
 feature: Storefront
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e8d5a95f-b17d-49fc-a6d3-e03554667438
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%

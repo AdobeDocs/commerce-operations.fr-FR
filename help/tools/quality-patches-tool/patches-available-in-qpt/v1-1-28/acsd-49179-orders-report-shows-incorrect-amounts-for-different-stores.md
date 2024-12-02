@@ -3,7 +3,8 @@ title: 'ACSD-49179 : le rapport Commandes affiche des quantités incorrectes pou
 description: Appliquez le correctif ACSD-49179 pour résoudre le problème Adobe Commerce en raison duquel le rapport de commandes affiche des montants incorrects en cas de devises différentes pour différents magasins.
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b10653ef-c4b1-40df-8bfe-7da755db621b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%

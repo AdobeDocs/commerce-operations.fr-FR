@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53239 : l’indexeur de stock nettoie tous les caches"
+title: 'ACSD-53239 : L’indexeur de stock nettoie tous les caches'
 description: Appliquez le correctif ACSD-53239 pour résoudre le problème Adobe Commerce où l’indexeur d’inventaire nettoie tous les caches en mode [!UICONTROL Update on Schedule].
 feature: GraphQL, Inventory, Catalog Management
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 69e71e2d-8f26-4200-ad4a-6bd9e45627e4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%

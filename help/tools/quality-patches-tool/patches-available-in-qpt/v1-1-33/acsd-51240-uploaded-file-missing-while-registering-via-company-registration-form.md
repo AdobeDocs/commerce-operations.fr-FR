@@ -1,7 +1,8 @@
 ---
 title: 'ACSD-51240 : fichier téléchargé manquant lors de l’enregistrement via le formulaire d’enregistrement de la société'
 description: Appliquez le correctif ACSD-51240 pour résoudre le problème Adobe Commerce en raison duquel le fichier téléchargé est manquant lors de l’enregistrement via le formulaire d’enregistrement de l’entreprise.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 78e339d6-435e-4856-9f57-98bb955d093c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%

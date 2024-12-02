@@ -1,9 +1,10 @@
 ---
-title: "MDVA-41061 : le statut des stocks est réinitialisé à la vente lorsque le produit est enregistré depuis l’administrateur"
+title: 'MDVA-41061 : Le statut des stocks est réinitialisé à la vente lorsque le produit est enregistré depuis l’administrateur.'
 description: Le correctif MDVA-41061 corrige le problème en raison duquel l’état du stock est réinitialisé sur vendable lorsque le produit est enregistré depuis l’administrateur. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 est installé. L’ID de correctif est MDVA-41061. La dernière version de correctif est disponible dans QPT 1.1.15 avec l’ID de correctif MDVA-41061-V3. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.4.
 feature: Admin Workspace, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: ddbc30ef-bc88-4878-8bd8-6880823819a2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%

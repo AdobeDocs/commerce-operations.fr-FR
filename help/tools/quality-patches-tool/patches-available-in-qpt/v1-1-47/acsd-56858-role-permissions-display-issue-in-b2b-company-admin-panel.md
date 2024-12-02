@@ -1,9 +1,10 @@
 ---
-title: "ACSD-56858 : incohérence des autorisations de rôle dans l’administration de la société B2B"
+title: 'ACSD-56858 : incohérence des autorisations de rôle dans l’administration de la société B2B'
 description: Appliquez le correctif ACSD-56858 pour résoudre le problème Adobe Commerce en raison duquel les autorisations de rôle s’affichent incorrectement pour un administrateur de société restreint dans l’environnement B2B.
 feature: Companies, B2B, Roles/Permissions
 role: Admin, Developer
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 28f90c8b-5d8b-4444-99ef-c91cfb5d6081
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%

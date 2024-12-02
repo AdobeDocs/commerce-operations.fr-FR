@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54264 : erreur lorsque le client tente d’extraire avec un guillemet négociable'
+title: 'ACSD-54264 : Erreur lorsque le client tente d’extraire avec un devis négociable'
 description: 'Appliquez le correctif ACSD-54264 pour résoudre le problème Adobe Commerce en raison duquel un message d’erreur "Vous ne pouvez pas mettre à jour l’attribut demandé. Identifiant de ligne : store_id" apparaît lorsqu’un client tente d’extraire avec un guillemet négociable provenant d’une autre vue de magasin.'
 feature: B2B, Checkout
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b1696228-b2ed-44eb-9e75-bf25ccf2f1cd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%

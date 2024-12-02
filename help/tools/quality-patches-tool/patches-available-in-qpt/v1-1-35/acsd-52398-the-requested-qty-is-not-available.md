@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52398 : la quantité demandée n’est pas disponible lors de la tentative de mise à jour de la quantité de produit groupé"
+title: 'ACSD-52398 : La quantité demandée n’est pas disponible lors de la tentative de mise à jour de la quantité de produit groupé.'
 description: Appliquez le correctif ACSD-52398 pour résoudre le problème Adobe Commerce en raison duquel la quantité demandée n’est pas disponible lors de la tentative de mise à jour de la quantité d’un produit regroupé dans le panier sur le storefront.
 feature: Shopping Cart, Quotes, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 75fa5f96-22e7-40a2-8b8a-f44452e5124d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

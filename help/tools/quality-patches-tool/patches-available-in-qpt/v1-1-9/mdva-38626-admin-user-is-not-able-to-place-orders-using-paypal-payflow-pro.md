@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-38626 : l’utilisateur administrateur ne peut pas passer de commandes à l’aide de PayPal Payflow Pro'
+title: 'MDVA-38626 : L’utilisateur administrateur ne peut pas passer de commandes à l’aide de PayPal Payflow Pro'
 description: Le correctif MDVA-38626 résout le problème où l’utilisateur administrateur ne parvient pas à passer une commande sur le serveur principal à l’aide du mode de paiement PayPal Payflow Pro. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 est installé. L’ID de correctif est MDVA-38626. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
 feature: Admin Workspace, Orders, Payments
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 32d2e5dd-7081-42f2-a074-71e21c870dc2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

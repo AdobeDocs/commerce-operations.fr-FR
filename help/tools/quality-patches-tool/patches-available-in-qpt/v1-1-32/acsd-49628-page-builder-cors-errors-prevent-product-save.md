@@ -3,7 +3,8 @@ title: 'ACSD-49628: [!DNL Page Builder] Les erreurs CORS empêchent l’enregist
 description: Appliquez le correctif ACSD-49628 pour résoudre le problème Adobe Commerce où les erreurs  [!DNL Page Builder] CORS empêchent l’enregistrement du produit.
 feature: Categories, Page Builder, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5bceddfa-5fbf-4ebe-a233-de7720764849
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%

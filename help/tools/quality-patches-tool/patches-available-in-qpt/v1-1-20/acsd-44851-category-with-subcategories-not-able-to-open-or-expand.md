@@ -1,9 +1,10 @@
 ---
-title: "ACSD-44851 : catégorie avec des sous-catégories qui ne peuvent pas s’ouvrir ni se développer"
+title: 'ACSD-44851 : catégorie dont les sous-catégories ne peuvent pas s’ouvrir ou se développer'
 description: Cet article fournit une solution au problème où l’utilisateur ne peut pas ouvrir ou développer une catégorie avec des sous-catégories.
 feature: Categories
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c1ad13d8-94e1-47cf-ad65-9bc5ce1c26ad
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%

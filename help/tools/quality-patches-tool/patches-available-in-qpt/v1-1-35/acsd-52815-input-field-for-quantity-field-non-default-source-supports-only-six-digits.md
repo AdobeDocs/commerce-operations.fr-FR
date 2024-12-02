@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52815 : le champ d’entrée pour le champ de quantité d’une source autre que la source par défaut ne prend en charge que 6 chiffres au maximum"
+title: 'ACSD-52815 : le champ d’entrée pour le champ de quantité d’une source autre que la source par défaut ne prend en charge que 6 chiffres au maximum.'
 description: Appliquez le correctif ACSD-52815 pour résoudre le problème de performances d’Adobe Commerce en raison duquel le champ d’entrée pour le champ de quantité d’une source autre que la source par défaut ne prend en charge que 6 chiffres, à la différence de 8 pour un stock par défaut.
 feature: Inventory, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d863af1f-8a7f-4a43-893e-54525ab68cd7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%

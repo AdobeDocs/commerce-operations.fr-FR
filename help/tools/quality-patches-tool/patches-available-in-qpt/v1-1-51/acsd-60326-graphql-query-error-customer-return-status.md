@@ -1,11 +1,12 @@
 ---
-title: "ACSD-60326 : la requête GraphQL sur le statut du client [!UICONTROL Returns] renvoie une erreur"
+title: 'ACSD-60326 : La requête GraphQL sur le statut du client [!UICONTROL Returns] renvoie une erreur'
 description: Appliquez le correctif ACSD-60326 pour résoudre le problème Adobe Commerce en raison duquel une erreur se produit dans la requête GraphQL pour l’état du client [!UICONTROL Returns].
 feature: GraphQL, Returns, Customers
 role: Admin, Developer
-source-git-commit: d7455f78009358bf20b07bd35122c4cab147351a
+exl-id: 5cfd7e0d-8703-43a0-86d3-e69612347534
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---

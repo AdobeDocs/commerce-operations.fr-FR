@@ -1,5 +1,5 @@
 ---
-title: "Commencer à utiliser : sélection du compte et de la période"
+title: 'Commencer à utiliser : sélection du compte et de la période'
 description: Découvrez comment commencer à utiliser le "nerdlet"  [!DNL Observation for Adobe Commerce] en sélectionnant le compte et la période.
 exl-id: f2364fa4-ef83-42f2-992f-e37ff1ac96a1
 feature: Configuration, Observability

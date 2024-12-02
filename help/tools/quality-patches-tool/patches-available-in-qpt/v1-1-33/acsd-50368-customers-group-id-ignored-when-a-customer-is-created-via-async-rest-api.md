@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50368 : le groupe_id des clients est ignoré lorsqu’un client est créé via l’API REST asynchrone ou l’API REST asynchrone en bloc"
+title: 'ACSD-50368 : le group_id des clients est ignoré lorsqu’un client est créé via l’API REST asynchrone ou l’API REST asynchrone en bloc'
 description: Appliquez le correctif ACSD-50368 pour résoudre le problème Adobe Commerce en raison duquel le group_id des clients est ignoré lorsqu’un client est créé via l’API REST asynchrone ou l’API REST asynchrone en bloc.
 feature: REST
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1ca78717-2144-4410-a398-764864ee182f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%

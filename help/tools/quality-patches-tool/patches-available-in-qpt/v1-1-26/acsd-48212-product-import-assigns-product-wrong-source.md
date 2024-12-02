@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48212 : l’importation de produit affecte le produit à une source incorrecte"
+title: 'ACSD-48212 : l’importation de produit affecte le produit à une source incorrecte'
 description: Appliquez le correctif ACSD-48212 pour résoudre le problème Adobe Commerce en raison duquel l’importation de produit affecte le produit à la mauvaise source.
 feature: Admin Workspace, Data Import/Export, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d573d95b-95fc-4f59-b518-18088855a154
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%

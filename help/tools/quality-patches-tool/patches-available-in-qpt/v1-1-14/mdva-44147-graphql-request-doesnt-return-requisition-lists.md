@@ -1,5 +1,5 @@
 ---
-title: "MDVA-44147: [!DNL GraphQL] la requête ne renvoie pas [!UICONTROL Requisition Lists]"
+title: 'MDVA-44147: [!DNL GraphQL] la requête ne renvoie pas [!UICONTROL Requisition Lists]'
 description: Le correctif MDVA-44147 corrige le problème où la requête  [!DNL GraphQL] ne renvoie pas [!UICONTROL Requisition Lists]. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 est installé. L’ID de correctif est MDVA-44147. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
 feature: B2B, GraphQL
 role: Admin

@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-45049 : le paramètre d’attribut "Le client est requis" ne fonctionne pas selon la portée du site web dans Admin"'
+title: 'ACSD-45049 : Le paramètre d’attribut "Client est requis" ne fonctionne pas selon la portée du site web dans Admin'
 description: Appliquez le correctif ACSD-45049 pour résoudre le problème Adobe Commerce en raison duquel l’attribut "[!UICONTROL Is required]" du client n’est pas correctement remplacé conformément à la portée du site web dans Admin.
 feature: Attributes, Customers
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 368af877-a3ec-431f-8f41-5d51354be571
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

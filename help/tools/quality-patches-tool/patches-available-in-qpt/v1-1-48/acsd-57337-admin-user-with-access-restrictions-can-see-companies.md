@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-57337 : un utilisateur administrateur avec des restrictions d’accès peut afficher toutes les entreprises dans la grille *Entreprises*'
+title: 'ACSD-57337 : Un utilisateur administrateur avec des restrictions d’accès peut afficher toutes les entreprises dans la grille *Entreprises*'
 description: Appliquez le correctif ACSD-57337 pour résoudre le problème Adobe Commerce en raison duquel un utilisateur administrateur avec des restrictions d’accès à des sites web spécifiques pouvait afficher les sociétés de tous les sites de la grille *Entreprises*.
 feature: Companies, B2B, Configuration
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7a05d335-5ed8-460e-80c4-dbc51d06c5bd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

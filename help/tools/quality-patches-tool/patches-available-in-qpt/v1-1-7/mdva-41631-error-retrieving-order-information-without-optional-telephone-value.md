@@ -1,5 +1,5 @@
 ---
-title: '''MDVA-41631 : erreur lors de la récupération des informations de commande sans valeur "téléphonique" facultative'
+title: 'MDVA-41631 : erreur lors de la récupération des informations de commande sans valeur "téléphonique" facultative'
 description: Le correctif MDVA-41631 corrige le problème en raison duquel les utilisateurs obtenaient une erreur lors de la récupération des informations de commande sans valeur "telephone" facultative via [!DNL GraphQL]. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 est installé. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
 feature: Orders
 role: Admin

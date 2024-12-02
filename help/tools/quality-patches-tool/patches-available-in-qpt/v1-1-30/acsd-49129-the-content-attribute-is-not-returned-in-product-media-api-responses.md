@@ -3,7 +3,8 @@ title: 'ACSD-49129 : attribut "Contenu" non renvoyé dans les réponses de l’A
 description: Appliquez le correctif ACSD-49129 pour résoudre le problème Adobe Commerce en raison duquel l’attribut *content* (*code image base64*) n’est pas renvoyé dans les réponses de l’API média du produit "rest/V1/products/sku/media".
 feature: REST, Attributes, Media, Page Content, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5235b7d1-4ebf-4cfb-8605-47614306a122
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%

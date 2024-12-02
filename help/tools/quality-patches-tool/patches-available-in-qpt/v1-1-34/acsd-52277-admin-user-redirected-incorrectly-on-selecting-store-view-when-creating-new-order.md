@@ -1,7 +1,8 @@
 ---
-title: "ACSD-52277 : l’utilisateur administrateur a redirigé incorrectement la sélection de la vue de magasin lors de la création d’une commande"
+title: 'ACSD-52277 : L’utilisateur administrateur a redirigé incorrectement la sélection de la vue de magasin lors de la création d’une nouvelle commande.'
 description: Appliquez le correctif ACSD-52277 pour résoudre le problème Adobe Commerce en raison duquel un utilisateur administrateur n’est pas redirigé correctement après avoir sélectionné la vue de magasin lors de la création d’une commande dans Admin.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 61ef59a9-7a31-441f-a763-2d8016498fa7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%

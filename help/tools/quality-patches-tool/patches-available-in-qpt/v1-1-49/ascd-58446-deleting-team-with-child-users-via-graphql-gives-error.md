@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-58446 : la suppression d’une équipe avec des utilisateurs ou des équipes enfants via GraphQL donne un message d’erreur informatif'
+title: 'ACSD-58446 : La suppression d’une équipe avec des utilisateurs ou des équipes enfants via GraphQL génère un message d’erreur informatif.'
 description: Appliquez le correctif ACSD-58446 pour résoudre le problème Adobe Commerce en raison duquel la suppression d’une équipe avec des utilisateurs ou des équipes enfants via GraphQL renvoie un message d’erreur non informatif incompatible avec l’interface utilisateur.
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 943ab281-cc41-4b96-8a7c-fff8c074267c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%

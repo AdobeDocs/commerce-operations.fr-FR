@@ -3,7 +3,8 @@ title: 'MDVA-32776 : statut des stocks non mis à jour avec emplacement de comma
 description: Le correctif MDVA-32776 corrige le problème où l’état du stock n’est pas mis à jour lorsqu’une commande est passée mais n’est pas expédiée. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6 est installé. L’ID de correctif est MDVA-32776. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.2.
 feature: Orders
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 6f872c72-c96f-4c23-b6df-44e3da3a81c2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%

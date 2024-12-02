@@ -3,7 +3,8 @@ title: 'ACSD-53925 : impossible d’enregistrer le bloc CMS avec [!UICONTROL Pro
 description: Appliquez le correctif ACSD-53925 pour résoudre le problème Adobe Commerce en raison duquel l’administrateur ne parvient pas à enregistrer un bloc CMS avec le carrousel de produit lorsque le mode dimensions pour "catalog_product_price" est défini sur le site web.
 feature: CMS, Page Builder, Price Indexer, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f6d286ab-d904-4f08-8265-99632f74b88a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%

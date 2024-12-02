@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54680 : Citation B2B pour un produit avec plusieurs sources affectées impossible à traiter"
+title: 'ACSD-54680 : Le devis B2B d’un produit avec plusieurs sources affectées ne peut pas être traité.'
 description: Appliquez le correctif ACSD-54680 pour résoudre le problème Adobe Commerce en raison duquel le devis B2B pour un produit avec plusieurs sources affectées ne peut pas être traité.
 feature: B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c5307785-a4c6-4d0c-9009-0d0caee97b3d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%

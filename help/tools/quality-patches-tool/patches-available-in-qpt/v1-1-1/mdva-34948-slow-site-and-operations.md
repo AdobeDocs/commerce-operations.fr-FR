@@ -3,7 +3,8 @@ title: 'MDVA-34948 : Ralentissement du site web'
 description: Le correctif Adobe Commerce MDVA-34948 corrige le problème de ralentissement du site web. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.1 est installé. L’ID de correctif est MDVA-34948. Veuillez noter que le problème a été corrigé dans Adobe Commerce version 2.4.1.
 feature: Observability, Configuration
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 3c2a2d44-7d60-42da-a0a3-785fb61d571e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%

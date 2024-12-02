@@ -3,7 +3,8 @@ title: 'ACSD-57394 : Tri incorrect des produits selon plusieurs attributs de tri
 description: Appliquez le correctif ACSD-57394 pour résoudre le problème Adobe Commerce en raison duquel les produits sont incorrectement triés lors de l’utilisation de plusieurs attributs de tri dans [!DNL GraphQL].
 feature: GraphQL, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3e4ca535-37ed-4363-ba6c-968eb53b98b3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -103,4 +104,3 @@ Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
 
 Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide [!DNL Quality Patches Tool].
-

@@ -3,7 +3,8 @@ title: 'MDVA-40601 : impossible de récupérer les données sur la catégorie mo
 description: Le correctif de qualité MDVA-40601 Adobe Commerce corrige le problème d’erreur des utilisateurs lorsqu’ils obtiennent des informations sur la catégorie modifiée par une mise à jour planifiée via GraphQL. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3 est installé. L’ID de correctif est MDVA-40601. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
 feature: Categories, GraphQL
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+exl-id: c50e9f77-66eb-4c4c-b0b5-b77db84a4a0b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'MDVA-38393 : les règles du catalogue cessent de fonctionner pour un pro
 description: Le correctif MDVA-38393 corrige le problème en raison duquel les règles du catalogue ne fonctionnent plus pour un produit configurable si son produit simple est renommé. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8 est installé. L’ID de correctif est MDVA-38393. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
 feature: Catalog Management, Categories, Configuration, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 3d98671c-6ee7-4fe8-80d9-67fa697cae75
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 0%

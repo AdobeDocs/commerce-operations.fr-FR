@@ -1,9 +1,10 @@
 ---
-title: "MDVA-43167 : L’action en masse de la grille d’ordre d’administration ne s’applique pas pour les pages multiples"
+title: 'MDVA-43167 : L’action en masse de la grille d’ordre d’administration ne s’applique pas pour les pages multiples.'
 description: Le correctif MDVA-43167 corrige le problème en raison duquel l’action de masse de la grille d’ordre d’administration ne s’applique pas pour les pages multiples lorsque l’utilisateur administrateur sélectionne toutes les commandes. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.16 est installé. L’ID de correctif est MDVA-43167. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 992f8a90-300e-41aa-b03d-b8a647dddd51
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%

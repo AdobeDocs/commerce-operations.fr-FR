@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51041 : l'indice des prix prend beaucoup de temps à se terminer"
+title: 'ACSD-51041 : l''indice des prix prend beaucoup de temps à se terminer'
 description: Appliquez le correctif ACSD-51041 pour résoudre le problème Adobe Commerce où l’index de prix prend beaucoup de temps pour se terminer avec un très grand ensemble de produits.
 feature: Configuration
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d45d4042-06a1-445d-bed3-803085626dd3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%

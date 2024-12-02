@@ -1,7 +1,7 @@
 ---
 name: New topic
 about: Create a request to add missing information
-title: "Demande d’une nouvelle rubrique"
+title: Demande d’une nouvelle rubrique
 labels: New Topic
 assignees: ''
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601

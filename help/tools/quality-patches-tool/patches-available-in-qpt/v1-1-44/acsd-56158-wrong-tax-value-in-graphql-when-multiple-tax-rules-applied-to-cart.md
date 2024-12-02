@@ -1,9 +1,10 @@
 ---
-title: "ACSD-56158 : mauvaise valeur de taxe dans la réponse GraphQL lorsque plusieurs règles de taxe sont appliquées au panier"
+title: 'ACSD-56158 : valeur de taxe incorrecte dans la réponse GraphQL lorsque plusieurs règles de taxe sont appliquées au panier'
 description: Appliquez le correctif ACSD-56158 pour résoudre le problème Adobe Commerce en raison duquel le rendu de la valeur de taxe dans la réponse GraphQL est incorrect lorsque plusieurs règles de taxe sont appliquées au panier.
 feature: GraphQL, Taxes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: dc22861c-cd41-402f-be37-d02c02b59433
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%

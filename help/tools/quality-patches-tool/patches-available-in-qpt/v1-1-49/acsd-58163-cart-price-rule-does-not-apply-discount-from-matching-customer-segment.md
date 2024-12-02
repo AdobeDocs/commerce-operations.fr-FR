@@ -1,15 +1,15 @@
 ---
-title: '''ACSD-58163 : [!UICONTROL Cart Price Rule] n''applique pas de réduction à partir du panier [!UICONTROL Customer Segment] correspondant sans code de coupon'''
+title: 'ACSD-58163 : [!UICONTROL Cart Price Rule] n''applique pas de réduction à partir du panier [!UICONTROL Customer Segment] correspondant sans code de coupon'
 description: Appliquez le correctif ACSD-58163 pour résoudre le problème Adobe Commerce où [!UICONTROL Cart Price Rule] n’applique pas de réduction pour un invité du panier [!UICONTROL Customer Segment] correspondant sans code de bon.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 209a50f7-32d9-40e9-bfd5-4658e4ca392d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58163 : [!UICONTROL Cart Price Rule] n&#39;applique pas de réduction à partir du panier [!UICONTROL Customer Segment] correspondant sans code de coupon
 

@@ -1,9 +1,10 @@
 ---
-title: 'Aperçu : [!DNL Quality Patches Tool] (QPT) v1.1.53'
+title: 'Présentation : [!DNL Quality Patches Tool]  (QPT) v1.1.53'
 description: Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.53.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: e87723f395563b645d25bac6e6cb7887ce23f1ab
+exl-id: 4e7c8d45-dc0c-4182-8cd0-727b28294d58
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%

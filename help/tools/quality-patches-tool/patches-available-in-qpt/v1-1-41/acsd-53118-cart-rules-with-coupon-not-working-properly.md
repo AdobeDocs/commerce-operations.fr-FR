@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53118 : les règles du panier avec coupon ne fonctionnent pas correctement"
+title: 'ACSD-53118 : les règles du panier avec coupon ne fonctionnent pas correctement'
 description: Appliquez le correctif ACSD-53118 pour résoudre le problème Adobe Commerce en raison duquel la règle de prix du panier est appliquée à l’aide d’un code de bon alors que le produit dans le panier a un attribut correspondant vide.
 feature: Shopping Cart, Price Rules
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8957790e-c22b-4a25-939b-94d7a9fb1cc7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%

@@ -1,15 +1,15 @@
 ---
-title: "ACSD-54887 : le panier client est effacé après l’expiration de la session client"
+title: 'ACSD-54887 : le panier client est effacé une fois la session du client expirée.'
 description: Appliquez le correctif ACSD-54887 pour résoudre le problème Adobe Commerce en raison duquel le panier du client est effacé une fois la session du client expirée avec [!UICONTROL Persistent Shopping Cart] activé.
 feature: Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: de2a96b2-48ce-4b9b-93bc-f7b64c37463a
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-54887 : le panier client est effacé une fois la session du client expirée.
 
@@ -71,4 +71,3 @@ Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
 
 Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide [!DNL Quality Patches Tool].
-

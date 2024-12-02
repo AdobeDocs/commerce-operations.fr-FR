@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40262 : les requêtes GraphQL ne s’affichent pas dans les termes de recherche les plus courants dans l’administration"
+title: 'MDVA-40262 : les requêtes GraphQL ne s’affichent pas dans les termes de recherche courants dans l’administration'
 description: Le correctif de qualité MDVA-40262 Adobe Commerce corrige le problème en raison duquel les requêtes de recherche GraphQL ne s’affichent pas dans les termes de recherche courants dans l’administrateur. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3 est installé. L’ID de correctif est MDVA-40262. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
 feature: Admin Workspace, GraphQL, Search
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+exl-id: 9442ac86-e632-4ab3-8cb3-d29487a1ecbe
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%

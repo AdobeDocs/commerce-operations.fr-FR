@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49877 : la lecture automatique de la vidéo ne fonctionne pas sur mobile [!DNL Safari]'
+title: 'ACSD-49877 : La lecture automatique de la vidéo ne fonctionne pas sur mobile [!DNL Safari]'
 description: Appliquez le correctif ACSD-49877 pour résoudre le problème Adobe Commerce en raison duquel l’option de lecture automatique de la vidéo ne fonctionne pas sur mobile [!DNL Safari]  lorsque la vidéo est directement liée à un fichier vidéo distant.
 feature: CMS
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: aa2557e2-4bed-4004-b9bc-36c59f1e9cdc
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

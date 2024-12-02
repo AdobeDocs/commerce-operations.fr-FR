@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60684: [!DNL GraphQL] le tri des produits par plusieurs champs ne fonctionne pas comme prévu"
+title: 'ACSD-60684: [!DNL GraphQL] le tri des produits par plusieurs champs ne fonctionne pas comme prévu'
 description: Appliquez le correctif ACSD-60684 pour résoudre le problème Adobe Commerce en raison duquel le tri des produits par plusieurs champs  [!DNL GraphQL] ne fonctionne pas lorsque le tri est transmis dans les variables.
 feature: GraphQL, Products, Search
 role: Admin, Developer
-source-git-commit: 279036e9e7247ce915820a4b00173644ee7252b1
+exl-id: 1c29299b-c85f-4166-886b-357a1486e67e
+source-git-commit: a5dda25e502889ee0a23e99b412aeeb863de452c
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%

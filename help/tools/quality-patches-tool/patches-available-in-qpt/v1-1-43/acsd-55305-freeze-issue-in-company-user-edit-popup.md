@@ -3,7 +3,8 @@ title: 'ACSD-55305 : gel des fenêtres contextuelles lors de l’édition des ut
 description: Appliquez le correctif ACSD-55305 pour résoudre le problème Adobe Commerce où la fenêtre contextuelle [!UICONTROL Edit Company User] sur la page [!UICONTROL My Account] &gt; [!UICONTROL Company Structure] se bloque avec un chargeur à l’écran.
 feature: Companies, B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: eeb2b136-022f-42d5-85e2-85537f4677d6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%

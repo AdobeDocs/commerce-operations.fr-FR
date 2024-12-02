@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51305 : produits enfants composites en rupture de stock indisponibles dans la réponse GraphQL"
+title: 'ACSD-51305 : produits enfants composites en rupture de stock indisponibles dans la réponse GraphQL'
 description: Appliquez le correctif ACSD-51305 pour résoudre le problème Adobe Commerce en raison duquel les produits enfants composites en rupture de stock ne sont pas disponibles dans la réponse GraphQL.
 feature: Categories, GraphQL, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 110bb332-2032-4aaf-b95e-971fc3382262
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%

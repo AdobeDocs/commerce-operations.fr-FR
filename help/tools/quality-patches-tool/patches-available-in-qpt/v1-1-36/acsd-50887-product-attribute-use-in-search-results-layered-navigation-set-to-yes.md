@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-50887: *[!UICONTROL Use in Search Results Layered Navigation]* défini sur Oui sans l’option *[!UICONTROL Use in Search]*'
+title: 'ACSD-50887 : *[!UICONTROL Use in Search Results Layered Navigation]* défini sur Oui sans l’option *[!UICONTROL Use in Search]*'
 description: Appliquez le correctif ACSD-50887 pour résoudre le problème Adobe Commerce en raison duquel la propriété d’attribut de produit *[!UICONTROL Use in Search Results Layered Navigation]* peut être définie sur *Oui* sans que l’option *[!UICONTROL Use in Search]* soit également définie sur *Oui*.
 feature: Attributes, Products, Search, Storefront
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5e797121-c386-4aca-9139-0a02a60be38a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%

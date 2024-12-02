@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52287 : L’état des commandes archivées ne change pas"
+title: 'ACSD-52287 : L’état des commandes archivées ne change pas'
 description: Appliquez le correctif ACSD-52287 pour résoudre le problème Adobe Commerce en raison duquel l’état des commandes archivées ne passe pas de *terminé* à *fermé* sur la grille après l’envoi de la note de crédit.
 feature: Orders, Checkout
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 012f49ba-fdc1-4e1e-87fe-7b9c661f231b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 0%

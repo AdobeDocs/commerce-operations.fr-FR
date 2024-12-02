@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48784 : prix des segments clients incorrectement mis en cache entre les groupes de clients"
+title: 'ACSD-48784 : les prix des segments clients sont incorrectement mis en cache entre les groupes de clients.'
 description: Appliquez le correctif ACSD-48784 pour résoudre le problème Adobe Commerce en raison duquel les prix des segments de clients sont incorrectement mis en cache entre les groupes de clients.
 feature: Admin Workspace, Cache, Customer Service, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a691c61c-fdba-4d6a-8314-095dfb0ba4a1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%

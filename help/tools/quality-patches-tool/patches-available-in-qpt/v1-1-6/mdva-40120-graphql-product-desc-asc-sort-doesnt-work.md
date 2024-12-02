@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40120 : le produit GraphQL DESC/ASC sort ne fonctionne pas"
+title: 'MDVA-40120 : Le tri du produit GraphQL DESC/ASC ne fonctionne pas'
 description: Le correctif MDVA-40120 résout le problème en raison duquel le tri GraphQL par DESC/ASC ne fonctionne pas avec des produits ayant la même pertinence ou le même prix. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6 est installé. L’ID de correctif est MDVA-40120. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
 feature: GraphQL, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 4df7f14d-181b-4f34-aff7-0af823632015
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%

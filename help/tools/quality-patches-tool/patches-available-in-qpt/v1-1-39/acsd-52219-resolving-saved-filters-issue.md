@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52219 : résolution du problème de filtre des grilles d’administration lors du changement d’affichage des signets"
+title: 'ACSD-52219 : résolution du problème de filtre des grilles d’administration lors du changement de vue de signet'
 description: Appliquez le correctif ACSD-52219 pour résoudre le problème Adobe Commerce en raison duquel les filtres enregistrés des grilles d’administration ne fonctionnent pas comme prévu lors du basculement fréquent entre les vues des signets.
 feature: Admin Workspace
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3f1af6ba-88a0-480c-b16e-c00c655e346f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

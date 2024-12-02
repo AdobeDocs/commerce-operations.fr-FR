@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61200 : fixe la compensation de la taxe de remise dans les calculs du total des ventes"
+title: 'ACSD-61200 : fixe la compensation de la taxe de remise dans les calculs du total des ventes.'
 description: Appliquez le correctif ACSD-61200 pour résoudre le problème Adobe Commerce en raison duquel *[!UICONTROL Discount Tax Compensation Amount]* et *[!UICONTROL Shipping Discount Tax Compensation Amount]* sont absents des calculs du total des ventes, ce qui entraîne des incohérences entre les données de commande et les données de rapport de coupon.
 feature: Reporting, Taxes
 role: Admin, Developer
-source-git-commit: 61259d8e059cd813a84907e4baef873b2cc8cad0
+exl-id: eb908827-de29-4b2c-b094-b5db0931cd52
+source-git-commit: 2e82c935145d71d0c66c531003fa51f564da6e41
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%

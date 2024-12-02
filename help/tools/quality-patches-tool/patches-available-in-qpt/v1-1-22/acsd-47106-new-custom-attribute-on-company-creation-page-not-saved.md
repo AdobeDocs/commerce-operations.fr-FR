@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47106 : nouvel attribut personnalisé sur la page de création de l’entreprise non enregistré"
+title: 'ACSD-47106 : nouvel attribut personnalisé sur la page de création de l’entreprise non enregistré'
 description: Appliquez le correctif ACSD-47106 pour résoudre le problème Adobe Commerce en raison duquel une valeur ne peut pas être enregistrée dans un nouvel attribut personnalisé sur la page de création d’une entreprise.
 feature: Attributes, B2B, Companies
 role: Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5835760d-fca1-44ba-aa5e-8797258c7c75
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%

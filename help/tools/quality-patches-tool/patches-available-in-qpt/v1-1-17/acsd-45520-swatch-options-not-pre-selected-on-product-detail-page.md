@@ -1,9 +1,10 @@
 ---
-title: "ACSD-45520 : options d’échantillon non sélectionnées sur la page des détails du produit"
+title: 'ACSD-45520 : options d’échantillon non sélectionnées sur la page des détails du produit'
 description: Le correctif ACSD-45520 corrige le problème en raison duquel les options d’échantillon ne sont pas présélectionnées sur la page des détails du produit lorsqu’un utilisateur modifie des produits configurables à partir du panier. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.17 est installé. L’ID de correctif est ACSD-45520. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
 feature: Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: a8b37dba-5a02-45a9-8e43-5288352a9d75
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 0%

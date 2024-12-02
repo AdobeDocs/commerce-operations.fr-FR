@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52906 : résolution du problème de cookie X-Magento-Vary pour la mise en cache du client connecté"
+title: 'ACSD-52906 : résolution du problème de cookie X-Magento-Vary pour la mise en cache du client connecté'
 description: Appliquez le correctif ACSD-52906 pour résoudre le problème Adobe Commerce en raison duquel le cookie X-Magento-Vary est mal défini pour les clients connectés.
 feature: Cache
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 487b7588-7131-4502-b714-05f37520991f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-59865 : [!UICONTROL Cart Price Rule] ne parvient pas à annuler les règles précédentes en raison d’une quantité insuffisante de produits"
+title: 'ACSD-59865 : [!UICONTROL Cart Price Rule] ne parvient pas à annuler les règles précédentes en raison d’une quantité insuffisante de produits.'
 description: Appliquez le correctif ACSD-59865 pour résoudre le problème Adobe Commerce en raison duquel la valeur *Étape de quantité du rabais* dans *Remise de prix fixe* *Pourcentage de remise sur le prix du produit* et *Acheter X obtenir Y* [!UICONTROL Cart Price Rules] n’annule plus l’action des règles précédentes.
 feature: Price Rules
 role: Admin, Developer
-source-git-commit: 602a839708eab2551bd99a4f24e66edbde511150
+exl-id: 5838a740-018d-44c2-8135-54426ea08627
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%

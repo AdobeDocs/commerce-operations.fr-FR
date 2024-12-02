@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52133 : impossible d’enregistrer le compte client après une mise à niveau"
+title: 'ACSD-52133 : le compte client ne peut pas être enregistré après une mise à niveau'
 description: Appliquez le correctif ACSD-52133 pour résoudre le problème Adobe Commerce en raison duquel un compte client ne peut pas être enregistré après une mise à niveau.
 feature: Customers, Upgrade
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 4a0e6ed8-3e35-40ce-bb49-8ccfcde437a0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

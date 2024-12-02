@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54067 : la vidéo du produit ne s’exécute pas sur un appareil mobile"
+title: 'ACSD-54067 : La vidéo du produit ne s’exécute pas sur un périphérique mobile'
 description: Appliquez le correctif ACSD-54067 pour résoudre le problème Adobe Commerce en raison duquel une vidéo de produit n’est pas lue sur un appareil mobile.
 feature: Media, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 023e7cf7-c344-4e86-850d-741b85df87a9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%

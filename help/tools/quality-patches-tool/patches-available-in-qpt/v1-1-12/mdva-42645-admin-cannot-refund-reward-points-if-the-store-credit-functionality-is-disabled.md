@@ -1,9 +1,10 @@
 ---
-title: "MDVA-42645 : L'administrateur ne peut pas rembourser les points de récompense pour le crédit de magasin désactivé"
+title: 'MDVA-42645 : L’administrateur ne peut pas rembourser les points de récompense pour le crédit de magasin désactivé'
 description: Le correctif MDVA-42645 résout le problème où l’administrateur ne peut pas rembourser les points de récompense si la fonctionnalité de crédit de magasin est désactivée. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 est installé. L’ID de correctif est MDVA-42645. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
 feature: Admin Workspace, Orders, Rewards, Returns
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 8053fcc7-d30c-424a-9494-df6e8630b095
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 0%

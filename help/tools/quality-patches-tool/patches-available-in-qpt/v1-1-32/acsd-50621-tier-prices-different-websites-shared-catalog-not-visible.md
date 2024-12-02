@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50621 : les prix de niveau pour les différents sites web du catalogue partagé ne sont pas visibles"
+title: 'ACSD-50621 : Les prix de niveau pour les différents sites web du catalogue partagé ne sont pas visibles.'
 description: Appliquez le correctif ACSD-50621 pour résoudre le problème Adobe Commerce en raison duquel les prix de niveau des différents sites web du catalogue partagé ne sont pas visibles lors de leur modification dans un environnement multi-site.
 feature: Catalog Management, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2256dee7-e544-4723-9753-ba9cf7247880
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

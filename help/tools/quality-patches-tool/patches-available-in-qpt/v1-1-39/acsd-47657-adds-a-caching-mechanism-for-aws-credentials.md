@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47657 : ajoute un mécanisme de mise en cache pour les informations d’identification AWS"
+title: 'ACSD-47657 : ajoute un mécanisme de mise en cache pour les informations d’identification AWS'
 description: Appliquez le correctif ACSD-47657 pour résoudre le problème Adobe Commerce qui se produit lors d’un chargement élevé de requêtes vers AWS S3 en ajoutant un mécanisme de mise en cache pour les informations d’identification AWS.
 feature: Cache
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2851d511-a9b0-49f8-94ba-ad63d2397ca5
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%

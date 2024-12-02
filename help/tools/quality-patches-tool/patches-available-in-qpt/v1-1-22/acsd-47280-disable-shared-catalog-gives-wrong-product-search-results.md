@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL ACSD-47280] : désactiver le catalogue partagé donne des résultats de recherche de produits incorrects.'
+title: '[!DNL ACSD-47280] : Désactiver le catalogue partagé donne des résultats de recherche de produits incorrects'
 description: Appliquez le correctif  [!DNL ACSD-47280] pour corriger l’affichage des résultats de recherche corrects lorsque la fonctionnalité de catalogue partagé est désactivée.
 source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt

@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Data Migration Tool] Technical specification'
+title: '[!DNL Data Migration Tool] - Spécification technique'
 description: Découvrez les détails de mise en oeuvre de  [!DNL Data Migration Tool]  et comment étendre lors du transfert de données entre Magento 1 et Magento 2.
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration

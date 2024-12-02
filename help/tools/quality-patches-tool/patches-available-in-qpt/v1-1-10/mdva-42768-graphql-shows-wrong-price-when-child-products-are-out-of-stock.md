@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-42768 : GraphQL affiche un mauvais prix lorsque les produits pour enfants sont en rupture de stock'
+title: 'MDVA-42768 : GraphQL affiche un mauvais prix lorsque les produits pour enfants sont en rupture de stock.'
 description: Le correctif MDVA-42768 corrige le problème en raison duquel GraphQL affiche le mauvais prix lorsque les produits enfants configurables sont en rupture de stock. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.10 est installé. L’ID de correctif est MDVA-42768. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
 feature: GraphQL, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 9f6ab418-2267-4548-952a-17dc8295f632
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%

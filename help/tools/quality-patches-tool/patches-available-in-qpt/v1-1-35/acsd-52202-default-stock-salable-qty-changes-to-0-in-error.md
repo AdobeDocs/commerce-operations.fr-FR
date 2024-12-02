@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-52202 : La valeur par défaut de la valeur de la valeur de stock Salable passe à 0 en erreur lorsque le stock non par défaut est défini sur 0 quantité dans l’ordre'
+title: 'ACSD-52202 : La valeur par défaut de la valeur Salable du stock passe à 0 en erreur lorsque le stock non par défaut est défini sur 0 quantité dans l’ordre.'
 description: Appliquez le correctif ACSD-52202 pour résoudre le problème Adobe Commerce en raison duquel une quantité vendable par défaut de stock passe à 0 en erreur lorsque le stock non par défaut est défini sur 0 quantité dans une commande.
 feature: Inventory, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2ba5cc3b-9774-49f6-948f-371ab3c0c9df
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%

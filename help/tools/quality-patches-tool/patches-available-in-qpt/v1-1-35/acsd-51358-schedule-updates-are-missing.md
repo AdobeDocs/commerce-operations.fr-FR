@@ -3,7 +3,8 @@ title: 'ACSD-51358 : les mises à jour de planification sont manquantes'
 description: Appliquez le correctif ACSD-51358 pour résoudre le problème Adobe Commerce en raison duquel les modifications apportées à la mise à jour planifiée sans date de fin entraînent la suppression d’autres mises à jour planifiées sur la même entité.
 feature: Staging
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6e2e598b-72f1-4f00-a989-3f75bf65f8f0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

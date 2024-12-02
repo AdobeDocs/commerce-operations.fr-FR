@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51984 : Les valeurs des champs de produit non cochées [!UICONTROL Use Default Value] et non par défaut ne sont pas enregistrées pour le deuxième site web, magasin et vue de magasin"
+title: 'ACSD-51984 : Les valeurs des champs de produit non cochées [!UICONTROL Use Default Value] et non par défaut ne sont pas enregistrées pour le deuxième site web, magasin et magasin.'
 description: Appliquez le correctif ACSD-51984 pour résoudre le problème Adobe Commerce en raison duquel les valeurs des champs de produit non cochées [!UICONTROL Use Default Value] et non par défaut ne sont pas enregistrées pour le deuxième site web, magasin et magasin.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 51a810fa-d416-4b37-b5bd-66eed9fe4626
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%

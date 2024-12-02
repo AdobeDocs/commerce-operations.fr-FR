@@ -1,9 +1,10 @@
 ---
-title: '"MDVA-37115 : un avis "Seulement 0 à gauche" s’affiche sur la page du produit"'
+title: 'MDVA-37115 : un avis "Seulement 0 gauche" s’affiche sur la page du produit.'
 description: Le correctif MDVA-37115 résout le problème en raison duquel l’avis inutile *Seul 0 gauche* s’affiche sur la page du produit configurable. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 est installé. L’ID de correctif est MDVA-37115. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.3.
 feature: Configuration, Products, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: ba94b2fd-6a7d-4194-afd8-798854431b57
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%

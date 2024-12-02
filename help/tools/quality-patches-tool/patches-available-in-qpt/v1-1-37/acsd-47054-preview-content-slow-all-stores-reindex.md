@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47054 : aperçu du contenu lent à mesure que tous les magasins réindexent"
+title: 'ACSD-47054 : l’aperçu du contenu ralentit lorsque tous les magasins réindexent'
 description: Appliquez le correctif ACSD-47054 pour résoudre le problème Adobe Commerce où le chargement de la page d’aperçu est lent en raison de la réindexation de tous les magasins.
 feature: Page Content
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: bfbda95a-354b-4b67-8081-84aefbbd7cb4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%

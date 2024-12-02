@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49042 : le produit avec un ordre infini ne peut pas être commandé à partir du storefront"
+title: 'ACSD-49042 : le produit avec un ordre infini ne peut pas être commandé à partir du storefront.'
 description: Appliquez le correctif ACSD-49042 pour résoudre le problème d’Adobe Commerce en raison duquel un produit avec un ordre d’arrière-plan infini ne peut pas être commandé à partir du storefront.
 feature: Admin Workspace, Orders, Products, Storefront
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b94d06c0-806a-40be-bcd4-d6b8e5e474c3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%

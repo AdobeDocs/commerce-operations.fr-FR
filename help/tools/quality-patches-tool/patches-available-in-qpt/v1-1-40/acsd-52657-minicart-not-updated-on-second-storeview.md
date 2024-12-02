@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52657 : Minicart non mis à jour sur le deuxième storeview utilisant le sous-domaine"
+title: 'ACSD-52657 : Minicart n’est pas mis à jour sur le deuxième storeview qui utilise le sous-domaine'
 description: Appliquez le correctif ACSD-52657 pour résoudre le problème Adobe Commerce en raison duquel le minicart n’est pas mis à jour dans la seconde vue de magasin qui utilise un sous-domaine.
 feature: Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: feec9dde-5532-481b-9410-7f6be9df4be7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%

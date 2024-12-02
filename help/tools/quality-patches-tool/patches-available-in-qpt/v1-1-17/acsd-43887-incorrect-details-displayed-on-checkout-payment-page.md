@@ -1,9 +1,10 @@
 ---
-title: "ACSD-43887 : informations incorrectes affichées sur la page de paiement du passage en caisse"
+title: 'ACSD-43887 : informations incorrectes affichées sur la page de paiement du passage en caisse'
 description: Le correctif ACSD-43887 corrige le problème en raison duquel des détails incorrects s’affichaient sur la page de paiement du passage en caisse lorsque les commandes d’achat pour les entreprises étaient activées. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.17 est installé. L’ID de correctif est ACSD-43887. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
 feature: B2B, Checkout, Orders, Payments, User Account
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: e150f093-9f1a-4ba5-bdcf-90e7f42a29c3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 0%

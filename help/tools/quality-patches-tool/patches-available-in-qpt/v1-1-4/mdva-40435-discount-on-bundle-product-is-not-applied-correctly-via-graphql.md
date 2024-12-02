@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40435 : la remise sur le produit groupé n’est pas appliquée correctement via GraphQL"
+title: 'MDVA-40435 : La remise sur le produit groupé n’est pas appliquée correctement via GraphQL'
 description: Le correctif MDVA-40435 résout le problème en raison duquel la remise sur un produit groupé n’est pas correctement appliquée via GraphQL. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 est installé. L’ID de correctif est MDVA-40435. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
 feature: GraphQL, Orders, Personalization, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 001be138-5d09-455d-a597-57115cd21a25
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%

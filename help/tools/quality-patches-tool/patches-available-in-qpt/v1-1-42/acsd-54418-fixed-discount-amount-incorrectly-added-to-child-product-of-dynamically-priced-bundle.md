@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54418 : montant de remise fixe ajouté de manière incorrecte au produit enfant d’un regroupement à prix dynamique"
+title: 'ACSD-54418 : Correction d’un montant de remise ajouté de manière incorrecte à un produit enfant d’un regroupement à prix dynamique'
 description: Appliquez le correctif ACSD-54418 pour corriger le problème Adobe Commerce où le montant de remise fixe est incorrectement appliqué à chaque produit enfant du lot à prix dynamique.
 feature: Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f7b57361-9056-4eec-a393-dadb65aa595b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%

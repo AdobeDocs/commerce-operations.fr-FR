@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-60441 : la mise à jour des clients via V1/customers [!DNL REST] Le point d’entrée API renvoie une erreur'
+title: 'ACSD-60441 : la mise à jour des clients via le point d’entrée V1/customers [!DNL REST] API renvoie une erreur'
 description: Appliquez le correctif ACSD-60441 pour résoudre le problème Adobe Commerce en raison duquel la mise à jour des clients via l’API V1/customers [!DNL REST] lors de l’utilisation d’un jeton d’accès à l’intégration généré à partir du serveur principal renvoie une erreur.
 feature: REST, Customers
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3936c065-41a6-4860-8313-e054f9b23ac7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%

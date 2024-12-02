@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48866 : Erreur lors de la demande d’un flux RSS pour les catégories"
+title: 'ACSD-48866 : erreur lors de la demande d’un flux RSS pour des catégories'
 description: Appliquez le correctif ACSD-48866 pour résoudre le problème Adobe Commerce qui se produit lorsqu’une erreur se produit lors de la demande de flux RSS pour les catégories.
 feature: Admin Workspace, Categories
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f278a90f-f30c-401f-a544-713c89eb208a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%

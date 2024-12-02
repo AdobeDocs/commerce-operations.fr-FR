@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51574 : Image non mise à jour sur l’interface frontale lorsqu’elle est remplacée par une autre image"
+title: 'ACSD-51574 : Image non mise à jour sur l’interface frontale lorsqu’elle est remplacée par une autre image'
 description: Appliquez le correctif ACSD-51574 pour résoudre le problème Adobe Commerce en raison duquel l’image n’est pas mise à jour sur le front-end après son remplacement par une autre image.
 feature: Configuration
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 199674fc-c3b3-4fee-9061-f0546833c1cd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%

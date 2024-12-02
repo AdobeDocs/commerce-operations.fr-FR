@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48813 : la recherche n’affiche pas les résultats pertinents en fonction du poids des attributs de recherche"
+title: 'ACSD-48813 : la recherche n’affiche pas les résultats pertinents en fonction du poids de la recherche des attributs.'
 description: Appliquez le correctif ACSD-48813 pour résoudre le problème Adobe Commerce en raison duquel la recherche n’affiche pas les résultats pertinents en fonction du poids de la recherche des attributs.
 feature: Admin Workspace, Attributes, Search
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 98ef7eb1-c13e-4c56-9a25-8e61cfb5fade
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52921 : erreur de demande de détails de panier auprès de GraphQL pour un produit configurable en rupture de stock"
+title: 'ACSD-52921 : erreur de demande de détails de panier auprès de GraphQL pour un produit configurable en rupture de stock'
 description: Appliquez le correctif ACSD-52921 pour résoudre le problème Adobe Commerce en raison duquel une erreur interne se produit lors de la demande des détails du panier auprès de GraphQL pour un produit configurable en rupture de stock.
 feature: GraphQL, Configuration, Products, Shopping Cart
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 7790718a-6b86-497e-b1a1-88ba22c3e8ff
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

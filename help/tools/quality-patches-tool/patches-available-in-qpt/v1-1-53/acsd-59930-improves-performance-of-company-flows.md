@@ -1,9 +1,10 @@
 ---
-title: "ACSD-59930 : améliore les performances des flux de l’entreprise"
+title: 'ACSD-59930 : améliore les performances des flux de l’entreprise'
 description: Appliquez le correctif ACSD-5930 pour résoudre le problème Adobe Commerce où une erreur *Timeout* s’affiche dans le panneau d’administration lors de la création, de l’enregistrement ou de la suppression d’une société avec un administrateur dont les adresses sont *1000+* dans le carnet d’adresses.
 feature: Customers, B2B
 role: Admin, Developer
-source-git-commit: bff014ede6ab7e8e72700814bb4edda2e733557a
+exl-id: eaa6c78d-13e3-439d-90f7-70c1c96c3197
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53204: *Le produit ne peut pas être enregistré* erreur lors de demandes simultanées d’ajout d’images à la galerie'
+title: 'ACSD-53204 : *Le produit ne peut pas être enregistré* erreur lors de demandes simultanées d’ajout d’images à la galerie'
 description: Appliquez le correctif ACSD-53204 pour résoudre le problème Adobe Commerce en raison duquel l’erreur *Le produit ne peut pas être enregistré* est générée lors de demandes simultanées d’ajout d’images à la galerie de produits à l’aide du point de terminaison rest/V1/products/&lt;sku&;gt;/media .
 feature: Catalog Management, Media, Products, REST
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7fdf41e5-46ef-4505-b8ce-c330bd899fa1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

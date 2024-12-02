@@ -1,9 +1,10 @@
 ---
-title: "ACSD-56193: [!DNL Fastly] le cache n’est pas effacé pour la mise à jour de l’évaluation du contenu"
+title: 'ACSD-56193: [!DNL Fastly] Le cache n’est pas effacé pour la mise à jour de l’évaluation du contenu'
 description: Appliquez le correctif ACSD-56193 pour résoudre le problème Adobe Commerce où le cache  [!DNL Fastly] n’est pas effacé pour la mise à jour de l’évaluation du contenu.
 feature: Cache, GraphQL, Staging
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a702ce22-cc85-4f58-8766-637a1b93d405
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

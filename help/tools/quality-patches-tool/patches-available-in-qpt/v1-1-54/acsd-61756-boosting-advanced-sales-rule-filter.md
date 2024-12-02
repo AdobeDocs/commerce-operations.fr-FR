@@ -3,7 +3,8 @@ title: 'ACSD-61756 : Dégradation des performances des filtres "AdvancedSalesRul
 description: Appliquez le correctif ACSD-61756 pour résoudre le problème Adobe Commerce en raison duquel la requête "magento_salesrule_filter" exécute une analyse complète de la table sans utiliser d’index, ce qui entraîne une dégradation des performances lors de la gestion de gros volumes d’enregistrements. Ce correctif améliore les performances en ajoutant les index de base de données manquants pour les filtres "AdvancedSalesRule".
 feature: Price Rules, Price Indexer
 role: Admin, Developer
-source-git-commit: 42a376d1a791a17d88bea68dfef178a7b2849ce2
+exl-id: 418c7c40-83ee-4cd9-8ebb-b356886ffb58
+source-git-commit: 23e92bb9032001134d2696be498a4c384f323c36
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-57315 : Une nouvelle transaction est créée dans  [!DNL PayPal Payflow Pro]  chaque fois que l’utilisateur clique sur le bouton de récupération'
+title: 'ACSD-57315 : Une nouvelle transaction est créée dans  [!DNL PayPal Payflow Pro]  chaque fois que l’utilisateur clique sur le bouton de récupération.'
 description: Appliquez le correctif ACSD-57315 pour corriger le problème Adobe Commerce en raison duquel une nouvelle transaction est créée dans  [!DNL PayPal Payflow Pro]  chaque fois que l’utilisateur clique sur le bouton de récupération dans l’écran d’affichage des transactions dans [!UICONTROL Admin].
 feature: Payments
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1fb8a5af-fda1-4c24-859d-d45424bde12f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%

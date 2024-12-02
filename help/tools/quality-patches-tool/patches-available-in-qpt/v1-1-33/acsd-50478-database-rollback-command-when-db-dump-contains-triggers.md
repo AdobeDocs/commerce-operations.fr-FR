@@ -1,7 +1,8 @@
 ---
-title: "ACSD-50478 : problème JS pour l’action de restauration dans la grille de sauvegardes et la commande de restauration de base de données"
+title: 'ACSD-50478 : problème JS pour l’action de restauration dans la commande de restauration de la grille de sauvegardes et de la base de données'
 description: Appliquez le correctif ACSD-50478 afin de résoudre le problème JS pour l’action de restauration dans la grille de sauvegardes et la commande de restauration de la base de données dans le cas où le vidage DB contient des déclencheurs et une commande SQL *délimiteur*.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2f47fbf6-44fc-487c-91fe-6e2e52fcdb2b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

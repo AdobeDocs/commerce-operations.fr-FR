@@ -3,7 +3,8 @@ title: 'ACSD-46809 : l’utilisateur obtient une erreur lors de l’attribution 
 description: Appliquez le correctif ACSD-46809 pour résoudre le problème Adobe Commerce en raison duquel l’utilisateur rencontre une erreur lors de l’attribution d’un grand nombre de sources de produits.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4225f49b-84a1-4641-a05b-ba6ada6e83be
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%

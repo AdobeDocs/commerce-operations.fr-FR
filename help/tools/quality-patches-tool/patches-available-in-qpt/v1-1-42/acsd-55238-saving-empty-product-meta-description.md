@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55238 : enregistrement de la méta-description du produit vide"
+title: 'ACSD-55238 : enregistrement de la méta-description du produit vide'
 description: Appliquez le correctif ACSD-55238 pour résoudre le problème Adobe Commerce en raison duquel une description de produit contenant le code d’HTML généré par [!DNL Page Builder] ou un autre éditeur d’HTML s’affiche toujours dans la métamdescription, et il n’est pas possible de la définir sur vide.
 feature: Products, Page Builder, Page Content
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 39ccf1bb-a71a-47a0-b252-e6331e2df9b0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%

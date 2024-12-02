@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49737 : le coupon est incorrectement marqué comme utilisé après un paiement par carte en échec'
+title: 'ACSD-49737 : Le coupon est incorrectement marqué comme utilisé après un paiement de carte en échec'
 description: Appliquez le correctif ACSD-49737 pour corriger le problème Adobe Commerce en raison duquel le coupon est incorrectement marqué comme utilisé après l’échec du paiement de la carte.
 feature: Orders, Payments
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 09060026-8d64-49f6-a85a-3230a52030fb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%

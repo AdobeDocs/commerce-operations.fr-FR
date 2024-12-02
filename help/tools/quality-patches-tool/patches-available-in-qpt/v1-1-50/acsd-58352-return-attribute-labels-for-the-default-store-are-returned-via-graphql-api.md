@@ -3,13 +3,13 @@ title: 'ACSD-58352 : les libellés d’attribut de retour pour le magasin par d�
 description: Appliquez le correctif ACSD-58352 pour résoudre le problème Adobe Commerce en raison duquel les libellés d’attribut de retour pour le magasin par défaut sont renvoyés via l’API  [!DNL GraphQL] lorsqu’une vue de magasin autre que la vue par défaut est spécifiée dans l’en-tête de la requête.
 feature: GraphQL, Returns
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e513039e-42cd-4dac-963b-3068ba8bf7ee
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58352 : les libellés d’attribut de retour pour le magasin par défaut sont renvoyés via l’API [!DNL GraphQL]
 

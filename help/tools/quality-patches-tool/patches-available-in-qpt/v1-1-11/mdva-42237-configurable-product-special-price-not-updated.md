@@ -1,9 +1,10 @@
 ---
-title: "MDVA-42237 : Prix spécial du produit configurable non mis à jour"
+title: 'MDVA-42237 : Prix spécial du produit configurable non mis à jour'
 description: Le correctif MDVA-42237 corrige le problème en raison duquel le prix spécial du produit configurable n’est pas mis à jour après modification du prix de son sous-produit. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.11 est installé. L’ID de correctif est MDVA-42237. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
 feature: Admin Workspace, Configuration, Orders, Personalization, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 1bae9a14-d6c1-4ee3-85aa-5d80ef479385
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%

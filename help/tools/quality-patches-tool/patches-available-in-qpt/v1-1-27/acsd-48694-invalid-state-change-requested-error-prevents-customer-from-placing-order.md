@@ -3,7 +3,8 @@ title: 'ACSD-48694 : une erreur de demande de changement d’état non valide em
 description: Appliquez le correctif ACSD-48694 pour résoudre le problème Adobe Commerce où l’erreur *Changement d’état non valide demandé* empêche un client de passer une commande.
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6b9fa474-1d9d-411d-bbca-ce7463cfeb0d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 0%

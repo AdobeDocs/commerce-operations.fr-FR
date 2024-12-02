@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53979 : une erreur JS se produit sur la page d’accueil"
+title: 'ACSD-53979 : une erreur JS se produit sur la page d’accueil'
 description: Appliquez le correctif ACSD-53979 pour résoudre le problème Adobe Commerce en raison duquel une erreur JavaScript se produit sur la page d’accueil si le message de bienvenue contient une guillemet simple.
 feature: Page Content
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 34a1802e-b64c-4d5d-85df-356c0740aa41
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "BB2B-2598 : ajoute la fonctionnalité de mise en cache à storeConfig, currency, country, countries, availableStores GraphQl requests"
+title: 'BB2B-2598 : ajoute la fonctionnalité de mise en cache à storeConfig, currency, country, countries, availableStores GraphQl requêtes'
 description: Appliquez le correctif BB2B-2598 pour ajouter la fonctionnalité de mise en cache aux requêtes GraphQl storeConfig, currency, country, countries et availableStores.
 feature: B2B, GraphQL, Cache
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b842fab4-d2c0-4ef1-be13-182f09015cd7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

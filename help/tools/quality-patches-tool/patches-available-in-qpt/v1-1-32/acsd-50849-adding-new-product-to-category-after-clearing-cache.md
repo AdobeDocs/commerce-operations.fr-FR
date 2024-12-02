@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50849 : l’ajout d’un nouveau produit après l’effacement du cache entraîne une incohérence"
+title: 'ACSD-50849 : l’ajout d’un nouveau produit après l’effacement du cache entraîne une incohérence.'
 description: Appliquez le correctif ACSD-50849 pour résoudre le problème Adobe Commerce en raison duquel l’ajout d’un nouveau produit à la catégorie après avoir effacé le cache entraîne une incohérence des positions et des sélections des produits existants.
 feature: Cache, Categories, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e7fd0614-eaa3-48ad-95ff-87f7ad3d76c1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%

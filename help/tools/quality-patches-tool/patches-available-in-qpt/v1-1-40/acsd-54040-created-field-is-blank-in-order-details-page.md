@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54040 : le champ [!UICONTROL Created] est vide dans les détails de l’ordre lorsque les modules B2B sont activés'
+title: 'ACSD-54040 : le champ [!UICONTROL Created] est vide pour les détails de l’ordre lorsque les modules B2B sont activés.'
 description: Appliquez le correctif ACSD-54040 pour résoudre le problème Adobe Commerce où le champ [!UICONTROL Created] est vide sur la page des détails de la commande lorsque les modules B2B sont activés.
 feature: B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 09fc1e0f-2e02-4cfc-9a7a-7c6aacd9fee0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%

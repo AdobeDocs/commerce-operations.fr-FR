@@ -1,9 +1,10 @@
 ---
-title: "ACSD-58375 : Une clé d’API YouTube mal configurée entraîne une erreur lors de l’ajout de la vidéo au niveau de l’affichage du magasin"
+title: 'ACSD-58375 : Une clé d’API YouTube mal configurée entraîne une erreur lors de l’ajout de vidéos au niveau de l’affichage de la boutique.'
 description: Appliquez le correctif ACSD-58375 pour résoudre le problème Adobe Commerce en raison duquel une configuration de clé API YouTube incorrecte provoque une erreur lors de l’ajout d’une vidéo YouTube au niveau de l’affichage du magasin.
 feature: Catalog Management, Configuration
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 24187308-d9dc-4ce2-9cfa-70ccb7726a5b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%

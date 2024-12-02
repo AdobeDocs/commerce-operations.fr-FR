@@ -3,7 +3,8 @@ title: 'ACSD-60267 : FPT s’applique incorrectement lorsque des produits sont a
 description: Appliquez le correctif ACSD-60267 pour résoudre le problème Adobe Commerce en raison duquel la taxe sur les produits fixes (FPT) s’applique correctement lors de l’ajout direct de produits simples au panier, mais échoue lors de la sélection des mêmes produits par le biais d’options de produits configurables.
 feature: Taxes
 role: Admin, Developer
-source-git-commit: c18ff9dd75ec6002c6461fcd3abd98ac8b97a9f7
+exl-id: 919b3b96-1995-4faf-aaf1-b5cbb20e46bf
+source-git-commit: bbf7df7fdca4c11f6f268344db00e2c8643b5dce
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -67,4 +68,3 @@ Pour appliquer des correctifs individuels, utilisez les liens suivants en foncti
 Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
 * [[!DNL Quality Patches Tool] : outil en libre-service pour les correctifs de qualité ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils.
-

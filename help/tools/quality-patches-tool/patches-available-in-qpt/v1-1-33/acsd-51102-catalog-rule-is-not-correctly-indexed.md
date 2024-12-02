@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51102 : règle de catalogue appliquée à un grand nombre de produits incorrectement indexés"
+title: 'ACSD-51102 : règle de catalogue appliquée à un grand nombre de produits mal indexés'
 description: Appliquez le correctif ACSD-51102 pour résoudre le problème Adobe Commerce en raison duquel une règle de catalogue appliquée à un grand nombre de produits n’est pas correctement indexée lorsque la règle est activée par une mise à jour planifiée.
 feature: Catalog Management, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 35a8078d-667b-4101-8562-ece052b44c9c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%

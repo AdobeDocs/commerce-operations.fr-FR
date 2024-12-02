@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51884 : chemin du cache de l’image du produit incorrect sur la commande de redimensionnement"
+title: 'ACSD-51884 : chemin du cache de l’image du produit incorrect sur la commande de redimensionnement'
 description: Appliquez le correctif ACSD-51884 pour résoudre le problème Adobe Commerce en raison duquel le chemin du cache de l’image du produit devient incorrect après l’exécution de la commande de redimensionnement.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a3779e4b-2749-460e-a0a8-656b26bb06fa
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: '''MDVA-43824 : l’action d’annulation de commande a échoué avec l’erreur "Vous n’avez pas annulé l’article"'
-description: '''Le correctif MDVA-43824 résout le problème où l’action d’annulation de commande échouait avec l’erreur : *Vous n’avez pas annulé l’élément*. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID de correctif est MDVA-43824. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5."'
+title: 'MDVA-43824 : l’action d’annulation de commande a échoué avec l’erreur "Vous n’avez pas annulé l’article"'
+description: 'Le correctif MDVA-43824 résout le problème où l’action d’annulation de commande échouait avec l’erreur : *Vous n’avez pas annulé l’élément*. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID de correctif est MDVA-43824. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.'
 feature: Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 8c2d15a0-2f53-4583-bdf2-86746f61160f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%

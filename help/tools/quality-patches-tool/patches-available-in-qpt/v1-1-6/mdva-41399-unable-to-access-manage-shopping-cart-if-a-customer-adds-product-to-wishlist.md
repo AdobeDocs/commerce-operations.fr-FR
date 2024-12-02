@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-41399 : impossible d’accéder à la fonction Gérer le panier si un client ajoute un produit à une liste bloquée'
+title: 'MDVA-41399 : impossible d’accéder à la fonction Gérer le panier si un client ajoute un produit à une liste de souhaits.'
 description: Le correctif MDVA-41399 résout le problème en raison duquel les utilisateurs administrateurs ne peuvent pas accéder à la page Gérer le panier si un client ajoute un produit à la liste des souhaits. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6 est installé. L’ID de correctif est MDVA-41399. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.2.
 feature: Orders, Products, Shopping Cart
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 81a128b5-0c38-4f8f-b297-1f264952d431
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%

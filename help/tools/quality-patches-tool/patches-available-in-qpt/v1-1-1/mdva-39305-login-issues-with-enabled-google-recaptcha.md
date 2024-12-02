@@ -3,7 +3,8 @@ title: 'MDVA-39305 : problème de connexion avec Google reCAPTCHA activé'
 description: Le correctif MDVA-39305 corrige le problème en raison duquel les clients enregistrés ne peuvent pas se connecter avec Google reCAPTCHA activé. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.1 est installé. L’ID de correctif est MDVA-39305. Veuillez noter que le problème doit être corrigé dans les versions 2.4.4 et 2.4.7 d’Adobe Commerce.
 feature: Console
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: c40fd84a-73dc-42bd-8cda-58738615fbba
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

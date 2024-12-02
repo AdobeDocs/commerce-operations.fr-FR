@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51230 : le compte de carte cadeau est supprimé"
+title: 'ACSD-51230 : le compte de carte cadeau est supprimé'
 description: Appliquez le correctif ACSD-51230 pour résoudre le problème Adobe Commerce en raison duquel le compte de carte-cadeau est supprimé lorsque le remboursement partiel d’un produit simple est traité à partir d’une commande.
 feature: Customer Service, Gift, Marketing Tools
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a4aed574-3908-42e0-ac32-911f61b44995
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-58471 : le contenu dynamique ne parvient pas à se charger sur la page des détails du produit, lorsque les règles de prix du catalogue associées ont été planifiées"
+title: 'ACSD-58471 : le contenu dynamique ne se charge pas sur la page des détails du produit, lorsque les règles de prix du catalogue associées ont été planifiées.'
 description: Appliquez le correctif ACSD-58471 pour résoudre le problème Adobe Commerce en raison duquel le contenu dynamique ne se charge pas sur la page des détails du produit, lorsque les règles de prix du catalogue associées ont été planifiées.
 feature: Catalog Management
 role: Admin, Developer

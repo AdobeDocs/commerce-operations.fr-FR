@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47704 : Le produit groupé indique le prix de dans les produits en stock uniquement"
+title: 'ACSD-47704 : Le produit groupé affiche le prix de dans les produits en stock uniquement'
 description: Appliquez le correctif ACSD-47704 pour résoudre le problème d’Adobe Commerce en raison duquel un produit fourni indique uniquement le prix de dans les produits boursiers.
 feature: Admin Workspace, Customer Service, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7f05ceed-869c-4d1a-91fd-0122dc98e65e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 0%

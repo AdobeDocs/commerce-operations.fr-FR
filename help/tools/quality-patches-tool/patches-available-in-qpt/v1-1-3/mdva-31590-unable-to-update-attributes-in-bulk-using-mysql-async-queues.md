@@ -3,7 +3,8 @@ title: 'MDVA-31590 : impossible de mettre à jour les attributs en masse à l’
 description: Le correctif MDVA-31590 résout le problème où les utilisateurs ne peuvent pas mettre à jour les attributs en masse à l’aide des files d’attente asynchrones MySQL. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3 est installé. L’ID de correctif est MDVA-31590. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.2.
 feature: Attributes, Services
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: f8d1c3bd-e995-41ef-89e1-93eec6e8b1f1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 0%
