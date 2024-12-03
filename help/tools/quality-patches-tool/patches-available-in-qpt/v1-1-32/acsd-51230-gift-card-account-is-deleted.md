@@ -4,7 +4,7 @@ description: Appliquez le correctif ACSD-51230 pour résoudre le problème Adobe
 feature: Customer Service, Gift, Marketing Tools
 role: Admin
 exl-id: a4aed574-3908-42e0-ac32-911f61b44995
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%

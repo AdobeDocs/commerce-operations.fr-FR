@@ -4,7 +4,7 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 4e7c8d45-dc0c-4182-8cd0-727b28294d58
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
