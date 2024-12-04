@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leurs utilisations, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: c03b0b3c81556f1c75ad5259a5905a5dd5b0224e
+source-git-commit: 73953020c85ffb0a941602e1dafe5de6a6175cff
 workflow-type: tm+mt
-source-wordcount: '6425'
+source-wordcount: '6437'
 ht-degree: 0%
 
 ---
@@ -670,6 +670,7 @@ ht-degree: 0%
          - [ACSD-61799 : Calcul incorrect de la remise totale avec plusieurs règles de panier de remise fixe appliquées au devis](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61799-incorrect-total-discount-calculation-with-multiple-fixed-discount-rules.md)
          - [ACSD-62485 : async.operations.all consumer cesse de fonctionner lors de la création de l’entreprise](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created.md)
          - [ACSD-61845 : une erreur se produit pour les requêtes avec l’en-tête accept text/html](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
+         - [ACSD-62056 : Échec du chargement des images pour un produit configurable si MSI est installé](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed.md)
       - v1.1.55 {#v1-1-55}
          - [Présentation : [!DNL Quality Patches Tool]  (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
          - [ACSD-58828 : le message &quot;Adresse requise&quot; côté serveur s’affiche pour tout champ obligatoire vide, avec validation côté client.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation.md)
