@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leurs utilisations, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 73953020c85ffb0a941602e1dafe5de6a6175cff
+source-git-commit: 7fdaa4cb85abc76c307ca8aa5f43cfa394b8a1ce
 workflow-type: tm+mt
-source-wordcount: '6437'
+source-wordcount: '6446'
 ht-degree: 0%
 
 ---
@@ -673,6 +673,7 @@ ht-degree: 0%
          - [ACSD-62056 : Échec du chargement des images pour un produit configurable si MSI est installé](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed.md)
       - v1.1.55 {#v1-1-55}
          - [Présentation : [!DNL Quality Patches Tool]  (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
+         - [ACSD-58685 : Les emails de vente désactivés sont envoyés lors de la réactivation.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58685-ensures-disabled-sales-emails-are-not-sent-upon-re-enabling.md)
          - [ACSD-58828 : le message &quot;Adresse requise&quot; côté serveur s’affiche pour tout champ obligatoire vide, avec validation côté client.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation.md)
          - [ACSD-61534 : la configuration de conception ne peut pas être définie à l’aide de bin/magento config:set](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61534-design-configuration-cannot-set-using-bin-magento-config-set.md)
          - [ACSD-61348 : Mise en liste blanche des éléments visibles via GraphQL mais pas sur le storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61348-wishlist-items-visible-via-graphql-but-not-on-storefront.md)
