@@ -2,9 +2,9 @@
 title: Conditions préalables complètes
 description: Préparez votre projet Adobe Commerce pour une mise à niveau en suivant les étapes préalables requises.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 4c84710da62fbb31214a0de2adc8adbd68880a76
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1612'
 ht-degree: 0%
 
 ---
@@ -229,11 +229,11 @@ Les résultats semblables à ceux-ci doivent s’afficher :
 
 Un autre symptôme de l’inexécution de cron est l’erreur suivante dans l’administrateur :
 
-![](../../assets/upgrade-guide/cron-not-running.png)
+![Messages système - cron non en cours d’exécution](../../assets/upgrade-guide/cron-not-running.png)
 
 Pour voir l’erreur, cliquez sur **Messages système** en haut de la fenêtre comme suit :
 
-![](../../assets/upgrade-guide/system-messages.png)
+![Notification des messages système](../../assets/upgrade-guide/system-messages.png)
 
 Voir [Configuration et exécution de cron](../../configuration/cli/configure-cron-jobs.md) pour plus d’informations.
 
