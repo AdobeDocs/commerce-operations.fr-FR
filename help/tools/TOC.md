@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leurs utilisations, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 089ef6e52b45a69455b80d0a43668e3250fb4b4f
+source-git-commit: e48479b9beb3a75fb513edd4a5e1b6c8c932f45f
 workflow-type: tm+mt
-source-wordcount: '6485'
+source-wordcount: '6495'
 ht-degree: 0%
 
 ---
@@ -686,6 +686,7 @@ ht-degree: 0%
          - [ACSD-62332 : requête GraphQL de liste de produits limitée à 10 000 produits et  [!DNL Live Search] définit la page active sur 1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
       - v1.1.56 {#v1-1-56}
          - [Présentation : [!DNL Quality Patches Tool]  (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
+         - [ACSD-63062 : calculs de remise de panier incorrects avec plusieurs règles se chevauchant](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
          - [ACSD-62428 : Erreurs d’état des stocks dans l’index de recherche catalogue](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
       - [Correctif du problème Adobe Commerce avec l’outil Correctifs de qualité](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
