@@ -1,16 +1,21 @@
 ---
-title: "ACSD-52801 : requête de filtre de produit GraphQL n’affichant pas les résultats de correspondance partielle"
+title: 'ACSD-52801 : requête de filtre de produit GraphQL n’affichant pas les résultats de correspondance partielle'
 description: Appliquez le correctif ACSD-52801 pour résoudre le problème Adobe Commerce en raison duquel la requête de filtre de produit GraphQL n’affichait pas les résultats de correspondance partielle.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 946a7189-60b2-4812-92ca-ed7ba35b2488
+source-git-commit: ec05b041c7af477abd6d3ade6ea95fed5065f2fa
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
 # ACSD-52801 : requête de filtre de produit GraphQL n’affichant pas les résultats de correspondance partielle
+
+>[!NOTE]
+>
+>Un correctif mis à jour ([ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)) a été publié pour résoudre le même problème pour les versions 2.4.6 - 2.4.6-p8. Il remplace le correctif ACSD-52801 pour les versions 2.4.6 et ultérieures. Pour plus d’informations, voir [ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md).
 
 Le correctif ACSD-52801 corrige le problème en raison duquel la requête de filtre de produit GraphQL n’affichait pas de résultats de correspondance partielle. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.40 est installé. L’ID de correctif est ACSD-52801. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.7.
 

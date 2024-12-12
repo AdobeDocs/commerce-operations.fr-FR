@@ -1,16 +1,21 @@
 ---
-title: "ACSD-55100: [!DNL GraphQL] ne renvoie pas de produits au-delà de 10K dans les résultats de recherche"
+title: 'ACSD-55100: [!DNL GraphQL] ne renvoie pas de produits au-delà de 10K dans les résultats de recherche'
 description: Appliquez le correctif ACSD-55100 pour résoudre le problème Adobe Commerce en raison duquel GraphQL ne renvoie pas de produits au-delà de *10k* dans les résultats de recherche.
 feature: GraphQL, Products, Search
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f08b62b9-ed56-4eca-b7e7-6e2bd99df01f
+source-git-commit: ec05b041c7af477abd6d3ade6ea95fed5065f2fa
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
 
 # ACSD-55100 : [!DNL GraphQL] ne renvoie pas de produits au-delà de 10K dans les résultats de recherche
+
+>[!NOTE]
+>
+>Un correctif mis à jour ([ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)) a été publié pour résoudre le même problème pour les versions 2.4.6 - 2.4.6-p8. Pour plus d’informations, voir [ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md).
 
 Le correctif ACSD-55100 corrige le problème où [!DNL GraphQL] ne renvoie pas de produits au-delà de *10k* dans les résultats de recherche. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.46 est installé. L’ID de correctif est ACSD-55100. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
 
