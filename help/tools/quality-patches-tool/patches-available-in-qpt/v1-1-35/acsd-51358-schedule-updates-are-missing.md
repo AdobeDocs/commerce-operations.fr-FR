@@ -4,7 +4,7 @@ description: Appliquez le correctif ACSD-51358 pour résoudre le problème Adobe
 feature: Staging
 role: Admin, Developer
 exl-id: 6e2e598b-72f1-4f00-a989-3f75bf65f8f0
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
@@ -51,7 +51,7 @@ La (*mise à jour 2*) a été supprimée de la liste **[!UICONTROL schedule upda
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](</help/tools/quality-patches-tool/usage.md>) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
 * Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe

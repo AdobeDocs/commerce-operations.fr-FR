@@ -1,7 +1,8 @@
 ---
-title: "ACSD-52160 : Résultat de validation du produit par rapport à la règle du prix du panier"
+title: 'ACSD-52160 : Résultat de validation du produit par rapport à la règle de prix du panier'
 description: Appliquez le correctif ACSD-52160 pour résoudre le problème Adobe Commerce en raison duquel le résultat de la validation du produit par rapport à la règle de prix du panier n’est pas correctement évalué en fonction de la condition de règle *[!UICONTROL If an item is FOUND/NOT FOUND in the cart with All/Any of these conditions true]*.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8f8799c9-850a-4c8f-bde4-68df64e46c85
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -53,7 +54,7 @@ Le code de coupon est appliqué.
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](</help/tools/quality-patches-tool/usage.md>) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
 * Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe

@@ -3,7 +3,8 @@ title: Correctifs disponibles dans l’outil QPT - Aperçu
 description: Cet article présente un aperçu de [!DNL Quality Patches Tool] (QPT) et des liens vers des ressources expliquant comment l’utiliser.
 feature: Support, Tools and External Services
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e67e5823-d878-4efc-90af-c7bb8c59d654
+source-git-commit: 32800bcca9174eb09ff7a723bdc775ebaa569807
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
@@ -50,7 +51,7 @@ Les commandes d’installation et d’utilisation sont différentes pour Adobe C
 
 ### Comment installer et utiliser QPT pour Adobe Commerce sur site
 
-Pour plus d’informations sur l’installation et l’utilisation de QPT pour appliquer et rétablir des correctifs, reportez-vous à la section [Commerce > Outils > Utilisation](/help/tools/quality-patches-tool/usage.md) de notre documentation destinée aux développeurs.
+Pour plus d’informations sur l’installation et l’utilisation de QPT pour appliquer et rétablir des correctifs, reportez-vous à la section [Commerce > Outils > Utilisation](../usage.md) de notre documentation destinée aux développeurs.
 
 ### Comment installer et utiliser QPT pour Adobe Commerce sur l’infrastructure cloud
 

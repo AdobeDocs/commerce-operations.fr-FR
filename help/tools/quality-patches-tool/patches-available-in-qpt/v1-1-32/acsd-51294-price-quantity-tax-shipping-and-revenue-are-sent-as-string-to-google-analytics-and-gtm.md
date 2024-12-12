@@ -3,7 +3,8 @@ title: 'ACSD-51294 : prix, quantité, taxe, expédition, recettes envoyées sous
 description: Appliquez le correctif ACSD-51294 pour résoudre le problème Adobe Commerce en raison duquel le prix, la quantité, la taxe, l’expédition et les recettes sont envoyés sous forme de chaîne à  [!DNL Google Analytics] et à GTM.
 feature: Orders, Shipping/Delivery, Variables
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 99d2a311-2543-4007-99fd-6c34a2950773
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -51,7 +52,7 @@ Les valeurs de prix et de quantité sont des chaînes.
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](</help/tools/quality-patches-tool/usage.md>) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
 * Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe

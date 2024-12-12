@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52041 : le rendu du générateur de pages ne libère pas les verrous"
+title: 'ACSD-52041 : Le rendu du générateur de pages ne libère pas les verrous'
 description: Appliquez le correctif ACSD-52041 pour résoudre le problème Adobe Commerce en raison duquel le générateur de pages s’affiche pendant cinq secondes sans déclencher de verrous.
 feature: Page Builder
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 48a7fc36-e98a-4a4e-bed3-248d7d73f6cb
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -54,7 +55,7 @@ Erreur dans la console : ``Page Builder was rendering for 5 seconds without rele
 
 Pour appliquer des correctifs individuels pour les versions **2.4.4 - 2.4.4-p5, 2.4.5 - 2.4.5-p4 et 2.4.6 - 2.4.6-p2**, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](</help/tools/quality-patches-tool/usage.md>) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
 * Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe

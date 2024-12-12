@@ -2,7 +2,7 @@
 title: 'ACSD-51645 : Enregistrement d’une nouvelle règle de prix du panier si l’extension Magento_OfflineShipping est désactivée'
 description: Appliquez le correctif ACSD-51645 pour corriger le problème Adobe Commerce qui se produit lorsqu’une erreur se produit lors de l’enregistrement d’une nouvelle règle de prix du panier si l’extension Magento_OfflineShipping est désactivée.
 exl-id: ce747ae4-6d2f-41c0-ba75-7da72be359c7
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
@@ -53,7 +53,7 @@ L’erreur suivante se produit :
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](</help/tools/quality-patches-tool/usage.md>) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
 * Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe
