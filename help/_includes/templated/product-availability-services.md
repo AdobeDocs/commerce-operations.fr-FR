@@ -1,11 +1,11 @@
 ---
-source-git-commit: 00db83a517b124fa012f91d4a6407846dd4eef66
+source-git-commit: 4a97065049c5d88ce2a1cc169bfbedd370676ff4
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 16%
 
 ---
-# Disponibilité du produit des services Commerce
+# Disponibilité des produits des services Commerce
 
 
 <table style="table-layout:auto">
@@ -27,7 +27,7 @@ ht-degree: 16%
           <td>4.3.0+</td>
           <td>4.3.0+</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-module-amazon.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-module-amazon.html">Marché</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Notes de mise à jour</a><br/>
           </td>
       </tr>
@@ -49,40 +49,40 @@ ht-degree: 16%
           <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-channel-manager.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-channel-manager.html">Marché</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">Notes de mise à jour</a><br/>
           </td>
       </tr>
       <tr>
           <td>Recherche en direct</td>
-          <td>4.2.1</td>
-          <td>4.2.1</td>
-          <td>4.2.1</td>
-          <td>4.2.1</td>
+          <td>4,2,1</td>
+          <td>4,2,1</td>
+          <td>4,2,1</td>
+          <td>4,2,1</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marché</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Notes de mise à jour</a><br/>
           </td>
       </tr>
       <tr>
           <td>Services de paiement</td>
-          <td>2.9.0 (PHP 8.3)</td>
+          <td>2.10.0 (PHP 8.3)</td>
           <td>2.5.0 (PHP 8.2)</td>
           <td>2.4.0 (PHP 8.1)</td>
           <td>2.4.0 (PHP 8.1)</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Marché</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Notes de mise à jour</a><br/>
           </td>
       </tr>
       <tr>
-          <td>Recommendations de produit</td>
+          <td>Recommendations du produit</td>
           <td>6.0.3</td>
           <td>6.0.3</td>
           <td>6.0.3</td>
           <td>6.0.3</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marché</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Notes de mise à jour</a><br/>
           </td>
       </tr>
@@ -93,7 +93,7 @@ ht-degree: 16%
           <td>1.2.0+</td>
           <td>1.2.0+</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html">Marché</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">Notes de mise à jour</a><br/>
           </td>
       </tr>
