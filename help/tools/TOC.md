@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: c97ab644e6372cd6b2dac284d68eb2a79d02c908
+source-git-commit: 6ec6aec8747e4b40943c864dec84b98e6b293d07
 workflow-type: tm+mt
-source-wordcount: '6541'
+source-wordcount: '6547'
 ht-degree: 0%
 
 ---
@@ -692,6 +692,7 @@ ht-degree: 0%
          - [ACSD-63242 : import lent lors de l’ajout de plus de 10 000 produits de catalogue](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
          - [ACSD-63062 : calculs de remise de panier incorrects avec plusieurs règles qui se chevauchent](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
          - [ACSD-62428 : erreurs d’état des stocks dans l’index de recherche de catalogue](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
+         - [ACSD-62577 : optimisation des performances de recherche Storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization.md)
       - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - {#cli-reference} de référence des outils de ligne de commande
