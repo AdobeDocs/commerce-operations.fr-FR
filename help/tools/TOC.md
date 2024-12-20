@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: f8541ffca30199ab6f6409d79753c65e31fb13f6
+source-git-commit: 5e705bd71b9229e7040ed3c8fccd8057512ac710
 workflow-type: tm+mt
-source-wordcount: '6578'
+source-wordcount: '6582'
 ht-degree: 0%
 
 ---
@@ -696,7 +696,8 @@ ht-degree: 0%
          - [ACSD-62428 : erreurs d’état des stocks dans l’index de recherche de catalogue](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
          - [ACSD-62577 : optimisation des performances de recherche Storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization.md)
       - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
-
+      - v1.1.57 {#v1-1-57}
+         - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
 - {#cli-reference} de référence des outils de ligne de commande
    - [Adobe Commerce (sur site)](reference/commerce-on-premises.md)
    - [Outil de compatibilité de mise à niveau](reference/uct.md)
