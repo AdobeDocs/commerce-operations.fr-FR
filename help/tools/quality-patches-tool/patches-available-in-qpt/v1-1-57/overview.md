@@ -3,7 +3,8 @@ title: Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.57
 description: Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans  [!DNL Quality Patches Tool] (QPT) v1.1.57.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 82b8d22438107680cdf47057e0db3e15bf819599
+exl-id: 3e252a71-f35f-4046-9353-169060451ffe
+source-git-commit: fc5c790108a3c62d4591631128743259824c4c6b
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -27,7 +28,7 @@ QPT v1.1.57 comprend les correctifs suivants :
 1. **ACSD-62635** : corrige le problème d’affichage incorrect des produits associés à plusieurs magasins dans la requête de produit [!DNL GraphQL].
 1. **ACSD-62671** : corrige le problème en raison duquel la requête [!DNL GraphQL] ne renvoie pas d’informations d’adresse à jour lors de la première tentative.
 1. **ACSD-62689** : corrige le problème en raison duquel le client ne peut pas ajouter de catégories dans [!UICONTROL Related Product Rules] et [!UICONTROL Widgets] après la profondeur 4.
-1. **ACSD-62708** : corrige le problème en raison duquel [!DNL TinyMCE] taille de police de l’éditeur 7 dans l’administration affiche [!UICONTROL px] et non [!UICONTROL pt] après l’application du correctif depuis [!UICONTROL ACP2E-3430]. Vous pouvez désormais également définir la taille de police dans [!UICONTROL px] au lieu de [!UICONTROL pt].
+1. **ACSD-62708** : corrige le problème en raison duquel [!DNL TinyMCE] taille de police de l’éditeur 7 dans l’administration affiche [!UICONTROL pt] et non [!UICONTROL px] après l’application du correctif depuis [!UICONTROL ACP2E-3430]. Vous pouvez désormais également définir la taille de police dans [!UICONTROL px] au lieu de [!UICONTROL pt].
 1. **ACSD-62758** : corrige le problème en raison duquel les vidéos de produit ne s’affichent pas correctement sur la page des détails du [!UICONTROL Configurable Product] si l’URL contient les options sélectionnées.
 1. **ACSD-62951** : corrige le problème d’envoi de l’e-mail [!UICONTROL Credit Memo] sans inclure d’éléments ni de totaux.
 1. **ACSD-62965** : corrige le problème en raison duquel un message *LocalizedException* n’est pas inclus dans le [!DNL GraphQL response] d’emplacement de commande.
