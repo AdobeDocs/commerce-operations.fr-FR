@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: e1363d565257948bc84fdd1a3c50af9ff8245e53
+source-git-commit: f52400b0caca369ca827f11071e95c9ac17a46fc
 workflow-type: tm+mt
-source-wordcount: '6605'
+source-wordcount: '6616'
 ht-degree: 0%
 
 ---
@@ -698,6 +698,7 @@ ht-degree: 0%
       - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
       - v1.1.57 {#v1-1-57}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
+         - [ACSD-62965 : corrige le message LocalizedException manquant dans la réponse d’emplacement de commande GraphQL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62965-fixes-missing-localizedexception-message-in-graphql-order-placement-response.md)
          - [ACSD-62758 : résolution du problème de rendu vidéo sur les pages de produits configurables](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62758-resolved-video-rendering-issue-on-configurable-product-pages.md)
          - [ACSD-63326 : correction d’un problème de redirection d’administration après avoir passé une commande depuis le serveur principal](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend.md)
 - {#cli-reference} de référence des outils de ligne de commande
