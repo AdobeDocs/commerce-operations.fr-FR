@@ -3,13 +3,13 @@ title: 'ACSD-58325 : bouton [!UICONTROL Import] disponible même après une erre
 description: Appliquez le correctif ACSD-58325 pour résoudre le problème d’Adobe Commerce où le bouton [!UICONTROL Import] est disponible même après une erreur de validation.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: 5a2709014828810827e71d9dd91d34102d80bd66
+exl-id: 551a9ac7-9b7f-49b5-9255-2014c330fb07
+source-git-commit: c50fa066d02c04a08c28730afffe4508019a93aa
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58325 : bouton [!UICONTROL Import] disponible même après une erreur de validation
 
@@ -21,8 +21,7 @@ Le correctif ACSD-58325 corrige le problème en raison duquel le bouton **[!UICO
 * Adobe Commerce (toutes les méthodes de déploiement) 2.4.6-p3
 
 **Compatible avec les versions d’Adobe Commerce :**
-* Adobe Commerce on-premise 2.4.6 - 2.4.6-p8
-* Adobe Commerce sur les infrastructures cloud 2.4.6 - 2.4.6-p8
+* Adobe Commerce (toutes les méthodes de déploiement) 2.4.6 - 2.4.6-p8
 
 >[!NOTE]
 >
@@ -60,4 +59,3 @@ Pour appliquer des correctifs individuels, utilisez les liens suivants en foncti
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
 * [[!DNL Quality Patches Tool] : un outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils .
-
