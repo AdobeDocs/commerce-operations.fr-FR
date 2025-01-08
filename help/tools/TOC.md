@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 5f161057bba76d208d363d33e6c09d1780c2e74b
+source-git-commit: ae2d0a48898063ce93efb7dce889f7485562f936
 workflow-type: tm+mt
-source-wordcount: '6716'
+source-wordcount: '6729'
 ht-degree: 0%
 
 ---
@@ -700,6 +700,7 @@ ht-degree: 0%
          - [ACSD-62872 : les mises à jour de planification ne sont pas validées correctement](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly.md)
          - [ACSD-62952 : La date d&#39;enregistrement du cadeau ne s&#39;affiche pas correctement sur le storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62952-gift-registry-date-inaccurate-storefront.md)
          - [ACSD-62577 : optimisation des performances de recherche Storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization.md)
+         - [ACSD-62755: [!DNL TinyMCE] 7 nécessite l’ajout de la taille et de la police aux paramètres d’initialisation de l’éditeur](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting.md)
       - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
       - v1.1.57 {#v1-1-57}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
