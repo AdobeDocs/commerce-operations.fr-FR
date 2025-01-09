@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: fa59bb2e45f7f7539f5a7515f02854b7066314fe
+source-git-commit: 7605d4a0e3c975f8ef67130a3ef58a34a41fd869
 workflow-type: tm+mt
-source-wordcount: '6739'
+source-wordcount: '6749'
 ht-degree: 0%
 
 ---
@@ -713,6 +713,7 @@ ht-degree: 0%
          - [ACSD-63326 : correction d’un problème de redirection d’administration après avoir passé une commande depuis le serveur principal](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend.md)
          - [ACSD-63286 : les produits affectés au catalogue partagé nécessitent une réindexation manuelle pour apparaître](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear.md)
          - [ACSD-58325 : bouton [!UICONTROL Import] disponible même après une erreur de validation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
+         - [ACSD-62671: [!DNL GraphQL] ne renvoie pas l’adresse mise à jour à la première tentative](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
 - {#cli-reference} de référence des outils de ligne de commande
    - [Adobe Commerce (sur site)](reference/commerce-on-premises.md)
    - [Outil de compatibilité de mise à niveau](reference/uct.md)
