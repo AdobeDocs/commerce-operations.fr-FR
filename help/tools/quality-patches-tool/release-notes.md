@@ -2,39 +2,56 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 696f8b1e24c38b7604058df88eff31c6c296d6e7
+source-git-commit: 9e71d979e0662770043fd9ca74b9ba8b5a6752f0
 workflow-type: tm+mt
-source-wordcount: '24185'
+source-wordcount: '24552'
 ht-degree: 0%
 
 ---
 
 # Notes de mise à jour
 
-Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fournit des correctifs individuels développés par l’Adobe et la communauté des Magento Open Sources. Il vous permet d’appliquer, de rétablir et d’afficher des informations générales sur tous les correctifs individuels disponibles pour la version installée de Adobe Commerce. Vous pouvez appliquer des correctifs à des projets Adobe Commerce et Magento Open Source, quelle que soit la personne qui les a développés. Par exemple, vous pouvez appliquer un correctif développé par la communauté à Adobe projets Commerce.
+Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fournit des correctifs individuels développés par l’Adobe et la communauté des Magento Open Sources. Il vous permet d’appliquer, d’annuler et d’afficher des informations générales sur tous les correctifs individuels disponibles pour la version installée d’Adobe Commerce. Vous pouvez appliquer des correctifs à des projets Adobe Commerce et Magento Open Source, quelle que soit la personne qui les a développés. Par exemple, vous pouvez appliquer un correctif développé par la communauté aux projets Adobe Commerce.
 
 >[!INFO]
 >
->Voir [Appliquer des](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) correctifs pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
+>Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
 
 >[!INFO]
 >
 >Pour plus d’informations sur les [!DNL quality patches] créées par la communauté pour Magento Open Source, consultez les [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.58 {#v1-1-58}
+
+* **ACSD-48570** (pour Adobe Commerce et le mot de Magento Open Source >=2.4.4 &lt;2.4.7) - Correction du problème en raison duquel la page de réinitialisation du mot de passe n’était pas accessible en cliquant sur le lien [!UICONTROL Admin] Réinitialiser le mot de passe lorsque **Ajouter le code de magasin aux URL** était *activé*, ce qui entraînait auparavant l’affichage de la page de connexion ou d’une page 404.
+* **ACSD-62118** (pour Adobe Commerce >=2.4.6 &lt;2.4.8) - Correction du problème en raison duquel la table `sales_order_tax_item` n’est pas entièrement mise à jour lorsque des commandes [!DNL B2B] sont passées à l’aide de la méthode Bon de commande.
+* **ACSD-63067** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction d’un problème en raison duquel toutes les quantités de produits sont mises en surbrillance de manière incorrecte et le message *[!DNL Please specify the quantity of product(s).]* s’affiche pour tous les produits d’un produit regroupé lorsqu’une seule quantité est incorrecte.
+* **ACSD-63090** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème de suppression des articles du panier lors de la suppression d’un produit après son ajout au panier.
+* **ACSD-63182** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige le problème où une erreur se produit lors de l’enregistrement d’un produit groupé dupliqué avec **[!DNL MSI]** *activé*.
+* **ACSD-63283** (pour Adobe Commerce >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel la commande d’éléments à partir du registre des cadeaux provoque une exception et en raison duquel les mises à jour du registre des cadeaux incluent des éléments qui n’appartiennent pas au registre.
+* **ACSD-63299** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel le prix spécial d’un produit configurable ne s’affiche pas sur le storefront.
+* **ACSD-63325** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Corrige le problème d’erreur `Syntax Error: Unexpected <EOF>` lors de l’envoi d’une demande de [!DNL GraphQL] vide.
+* **ACSD-63329** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel les valeurs par défaut des attributs avec des types d’entrée **[!UICONTROL Date]** ou **[!UICONTROL Date and Time]** ne sont pas définies lors de la création de produits via l’[!DNL REST API].
+* **ACSD-63572** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.8) - Correction du problème en raison duquel les tables temporaires de l’indexeur `CatalogRule` ne sont pas nettoyées si le processus de l’indexeur est arrêté.
+* **ACSD-63578** (pour Adobe Commerce >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel le fait de cliquer sur le bouton **[!UICONTROL Delete]** dans **[!UICONTROL Add to Order by SKU]** de l’[!UICONTROL Admin] ne supprime pas le [!DNL SKU].
+* Versions mises à jour : **MDVA-39305-V3**
+* Correctifs remplacés : **ACSD-56280**
+* Correctifs obsolètes : **ACSD-62872**
 
 ## v1.1.57 {#v1-1-57}
 
 * **ACSD-57570** (pour Adobe Commerce >=2.4.4 &lt;2.4.4-p10) - Correction du problème en raison duquel un utilisateur administrateur restreint ayant accès à un magasin particulier ne peut pas toujours voir tous les catalogues partagés auxquels les produits sont affectés, ni ne peut voir les clients qui ne peuvent pas être enregistrés, ce qui entraîne des incohérences dans le système.
 * **ACSD-58325** (pour Adobe Commerce >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel le bouton **[!UICONTROL Import]** est disponible même après une erreur de validation.
 * **ACSD-59083** (pour Adobe Commerce >=2.4.4 &lt;2.5.0) - Correction du problème en raison duquel certaines opérations de mise à jour de la base de données génèrent une erreur *Table ou vue de base introuvable* si la mise à jour de la [!DNL mview] est exécutée en même temps.
-* **Les taux spécifiques au compte de la norme ACSD-61622** (pour Adobe Commerce and Magento Open Source >=2.4.6-p1 &lt;2.4.7) - Fixes the issue where [!DNL FedEx]sont absents de la réponse.
-* **ACSD-61895** (pour Adobe Commerce >=2.4.4[!DNL GraphQL] &lt;2.5.0) - Fixes the issue where the categories La requête renvoie les catégories avec l’autorisation Autoriser **** même si la catégorie racine n’a pas l’autorisation **Autoriser**.
-* **ACSD-62212** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.5.0) - Fixes the issue where the **Mot de passe** oublié Le contenu des emails n’est pas traduit dans la langue de l’affichage du magasin.
+* **ACSD-61622** (pour Adobe Commerce et Magento Open Source >=2.4.6-p1 &lt;2.4.7) - Correction du problème en raison duquel les taux spécifiques au compte de [!DNL FedEx] sont manquants dans la réponse.
+* **ACSD-61895** (pour Adobe Commerce >=2.4.4 &lt;2.5.0) - Correction du problème en raison duquel les catégories [!DNL GraphQL] la requête renvoient des catégories avec l’autorisation **autoriser** même si la catégorie racine ne dispose pas de l’autorisation **autoriser**.
+* **ACSD-62212** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.5.0) - Correction du problème en raison duquel le contenu de l’e-mail **Mot de passe oublié** n’est pas traduit dans la langue de la vue du magasin.
 * **ACSD-62481** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.5.0) - Correction du problème en raison duquel le panier du client devient vide même si **[!UICONTROL Persistence]** est activé.
 * **ACSD-62629** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.5.0) - Correction d’un problème en raison duquel une liste de produits utilisée dans **[!UICONTROL Widgets]** ne reflète pas la condition de catégorie.
 * **ACSD-62635** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.5.0) - Correction d’un problème d’affichage incorrect des produits associés à plusieurs magasins dans la requête de produit [!DNL GraphQL].
 * **ACSD-62671** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.5.0) - Correction du problème en raison duquel la requête [!DNL GraphQL] ne renvoie pas d’informations d’adresse à jour lors de la première tentative.
-* **ACSD-62689** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.5.0) - Fixes the issue where the customer is unable to add Categories in **[!UICONTROL Related Product Rules and Widgets]** après *profondeur 4*.
-* **ACSD-62708** (pour Adobe Commerce et Magento Open Source >=2.4.4-p11 &lt;2.4.5 ||=&quot;&quot;>=2.4.5-p10 &lt;2.4.6-p2 ||=&quot;&quot;>= 2.4.6-p8 &lt;2.4.7-p1) - Fixes the issue where [!DNL TinyMCE] 7 La taille de la police de l’éditeur dans l’interface administrateur affiche *PT* et non *PX*. &lt;/2.4.6-p2>&lt;/2.4.5> Désormais, vous pouvez également définir la taille de la police en *PX* au lieu de *PT.*
+* **ACSD-62689** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.5.0) - Correction du problème en raison duquel le client ne peut pas ajouter de catégories dans **[!UICONTROL Related Product Rules and Widgets]** après *profondeur 4*.
+* **ACSD-62708** (pour Adobe Commerce et Magento Open Source >=2.4.4-p11 &lt;2.4.5 || >=2.4.5-p10 &lt;2.4.6-p2 || >=2.4.6-p8 &lt;2.4.7-p1) - Correction du problème en raison duquel la taille de police de l’éditeur [!DNL TinyMCE] 7 dans l’administration affichait *PT* et non *PX*. Désormais, vous pouvez également définir la taille de police en *PX* au lieu de *PT*.
 * **ACSD-62758** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.5.0) - Correction d’un problème en raison duquel les vidéos de produit ne s’affichent pas correctement sur la page de détails du **[!UICONTROL Configurable Product]** si le [!DNL URL] contient des options sélectionnées.
 * **ACSD-62951** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.5.0) - Correction du problème d’envoi de l’e-mail d’avoir sans inclure d’éléments ni de totaux.
 * **ACSD-62965** (pour Adobe Commerce >=2.4.7 &lt;2.5.0) - Corrige le problème en raison duquel un message `LocalizedException` n’est pas inclus dans la réponse de [!DNL GraphQL] d’emplacement de commande.
@@ -120,7 +137,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **BUNDLE-3375** (pour Adobe Commerce et Magento Open Source) : ajoute tous les champs nécessaires pour répondre aux exigences du mandat 3DS VISA lors de l’utilisation de [!DNL Braintree] comme passerelle de paiement.
 * **ACSD-59366** (pour Adobe Commerce >=2.4.6 &lt;2.4.8) - Correction du problème d’erreur qui se produit lors de la tentative de suppression d’une équipe contenant des utilisateurs désactivés qui ne sont pas visibles dans la liste des équipes.
 * **ACSD-59865** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction du problème en raison duquel un [!UICONTROL Cart Price Rule] n’annule pas les règles précédemment appliquées si la quantité de produit du panier n’est pas suffisante pour que les règles soient appliquées.
-* **ACSD-59925** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Fixes the issue with sorting items in the [!UICONTROL Media Gallery] par position dans GraphQL.
+* **ACSD-59925** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige le problème lié au tri des éléments dans le [!UICONTROL Media Gallery] par position dans GraphQL.
 * **ACSD-59952** (pour Adobe Commerce >=2.4.4 &lt;2.4.8) - Correction du problème d’erreur lors de la création d’un [!UICONTROL Shared Catalog] avec un ID de groupe affecté à un [!UICONTROL Shared Catalog] existant.
 * **ACSD-60590** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Améliore les performances de génération de [!UICONTROL Bestsellers Aggregated Daily Reports] pour un grand volume de commandes passées.
 * **ACSD-60673** (pour Adobe Commerce >=2.4.4 &lt;2.4.8) - Correction d’un problème en raison duquel la [!UICONTROL Cart Price Rule] de plusieurs modes de paiement lors du passage en caisse ne s’applique pas correctement au mode de paiement spécifique.
@@ -134,32 +151,32 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 * **ACSD-59786** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.8) - Correction du problème en raison duquel GraphQL renvoie une erreur de serveur interne lors de la tentative d’obtention d’un ID de devis pour un devis expiré.
 * **ACSD-60234** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel un montant incorrect est affiché sur [!DNL PayPal] lorsque la remise est appliquée par le mode de paiement.
-* **ACSD-59967** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7-p2) - Fixes the issue where a JavaScript error prevents [!DNL Google Maps] de rendu correct.
-* **DCSD-60326** (pour Adobe Commerce >=2.4.4 &lt;2.4.8) - Fixes the issue where an error occurs on the GraphQL query for customer return status.
-* **ACSD-60538** (pour Adobe Commerce >=2.4.7 &lt;2.4.8) - Fixes the issue where if a product is disabled in *[!UICONTROL All Store Views]* et activée uniquement dans des étendues d’affichage de magasin spécifiques, les attributs de produit ne s’affichent pas correctement dans la réponse GraphQL, ce qui empêche le produit de s’afficher correctement.
-* **DCSD-60631** (pour le commerce Adobe et Magento Open Source >=2.4.7 &lt;2.4.8) - Fixes the issue where GraphQL returns an error when the same simple product is assigned to multiple configurable products.
+* **ACSD-59967** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7-p2) - Corrige le problème en raison duquel une erreur JavaScript empêche [!DNL Google Maps] rendu correct.
+* **ACSD-60326** (pour Adobe Commerce >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel une erreur se produit sur la requête GraphQL pour le statut du retour des clients.
+* **ACSD-60538** (pour Adobe Commerce >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel, si un produit est désactivé dans *[!UICONTROL All Store Views]* et activé uniquement dans des portées d’affichage de magasin spécifiques, les attributs de produit ne s’affichent pas correctement dans la réponse de GraphQL, ce qui entraîne l’affichage incorrect du produit.
+* **ACSD-60631** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel GraphQL renvoie une erreur lorsque le même produit simple est affecté à plusieurs produits configurables.
 * **ACSD-60632** (pour Adobe Commerce et Magento Open Source >=2.4.5-p8 &lt;2.4.8) - Correction du problème d’enregistrement d’une nouvelle adresse à chaque tentative de placement de commande, que la commande ait été créée avec succès ou non.
-* **Les scripts ACSD-60816** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Fixes the issue where the [!DNL New Relic Browser Monitoring] injectés par l’agent APM ne sont pas conformes à la stratégie de sécurité du contenu (CSP), ce qui empêche leur exécution.
-* **DCSD-61195** (pour le commerce Adobe et Magento Open Source >=2.4.7 &lt;2.4.8) - Fixes the issue where no cart items are returned on the last page for the cart GraphQL request.
+* **ACSD-60816** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction du problème en raison duquel les scripts [!DNL New Relic Browser Monitoring] injectés par l’agent APM ne sont pas conformes à la CSP (Content Security Policy), ce qui empêche leur exécution.
+* **ACSD-61195** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Corrige le problème en raison duquel aucun article de panier n’est renvoyé sur la dernière page de la requête GraphQL de panier.
 * Correctifs mis à jour : ACSD-59378
 
 ## v1.1.50 {#v1-1-50}
 
-* **ACSD-59280** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.5) - Fixes the error *Appel à la méthode non définie ReflectionUnionType ::getName()* lors de l’installation des versions 2.4.4-pX.
-* **ACSD-45049** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.4-p8 ||=&quot;&quot;>= 2.4.5 &lt;2.4.6) - Fixes the issue where a customer *[!UICONTROL Is required]* Le paramètre d’attribut ne fonctionne pas correctement selon l’étendue du site Web dans Admin.&lt;/2.4.4-p8>
+* **ACSD-59280** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.5) - Corrige l’erreur *Appel à une méthode non définie ReflectionUnionType::getName()* qui se produit lors de l’installation des versions 2.4.4-pX.
+* **ACSD-45049** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.4-p8 || >=2.4.5 &lt;2.4.6) - Correction d’un problème en raison duquel un paramètre d’attribut de *[!UICONTROL Is required]* client ne fonctionne pas correctement selon la portée du site web dans Admin.
 * **ACSD-46938** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Correction du problème de performances de la recréation des déclencheurs de base de données lors de l’`setup:upgrade`.
 * **ACSD-48210** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction du problème en raison duquel la mise à jour d’un attribut *[!UICONTROL Website Scope]* dans une vue de magasin spécifique remplace les valeurs d’attribut dans la portée globale.
 * **ACSD-54887** (pour Adobe Commerce et Magento Open Source >=2.4.4-p4 &lt;2.4.4-p9 || >=2.4.5-p3 &lt;2.4.5-p8 || >=2.4.6-p1 &lt;2.4.6-p6) - Corrige le problème où le panier du client est effacé après l’expiration de la session client avec [!UICONTROL Persistent Shopping Cart] activé.
-* **ACSD-58141** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Fixes the issue where PHPSESSID regenerates on POST requests on the storefront area for a logged-in customer if the [!DNL L2 Redis cache] est activé et le client est mis à jour à partir de l’administration.
-* **DCSD-58352** (pour Adobe Commerce >=2.4.4 &lt;2.4.7) - Fixes the issue where return attribute labels for the default store view are returned via GraphQL API when a non-default store view is specified in the request header.
+* **ACSD-58141** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel PHPSESSID se régénère sur les requêtes de POST dans la zone de storefront pour un client connecté si le [!DNL L2 Redis cache] est activé et que le client est mis à jour à partir de l’administrateur.
+* **ACSD-58352** (pour Adobe Commerce >=2.4.4 &lt;2.4.7) - Correction du problème où les libellés d’attribut de retour pour la vue de magasin par défaut sont renvoyés via l’API GraphQL lorsqu’une vue de magasin autre que la vue par défaut est spécifiée dans l’en-tête de la requête.
 * **ACSD-58442** (pour Adobe Commerce >=2.4.4 &lt;2.4.7-p1) - Corrige le problème où les appareils d’une largeur de 768 px sont traités comme mobiles, ce qui entraîne le chargement du menu et de l’en-tête dans une vue mobile au lieu de bureau.
 * **ACSD-58790** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige la fonctionnalité de pincement pour zoom sur les images de la page des détails du produit en mode mobile sur [!DNL Chrome].
 * **ACSD-59036** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Correction d’une exception qui se produit lors du chargement des prix des produits avec des limites inférieure et supérieure égales à 0 $.
 * **ACSD-59229** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction du problème en raison duquel les informations relatives au groupe de clients sont enregistrées dans le mauvais segment en raison de l’ancienne valeur de X-Magento-Vary dans la requête.
 * **ACSD-59378** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.6) - Correction d’un problème en raison duquel les réécritures d’URL au niveau du magasin sont incorrectement mises à jour lors de l’importation.
-* **ACSD-59514** (pour Adobe Commerce >=2.4.4 &lt;2.4.7-p2) - Correction du problème en raison duquel les formulaires de la zone d’administration contenant [!DNL Page Builder] renvoient l’erreur *[!DNL Page Builder]s’affichait pendant 5 secondes sans libérer les verrous.* dans la console du navigateur après l’envoi du formulaire, et les modifications ne peuvent pas être enregistrées.
-* **ACSD-60303** (pour le commerce Adobe >=2.4.4-p9 &lt;2.4.5 ||=&quot;&quot;>=2.4.5-p8 &lt;2.4.6 ||=&quot;&quot;>=2.4.6-p6 &lt;2.4.8) - Fixes the issue where an order from Admin cannot be placed if HTML minification is enabled.&lt;/2.4.6>&lt;/2.4.5>
-* **ACSD-60441** (pour le commerce Adobe et Magento Open Source 2.4.4-p9 || 2.4.5-p8 || 2.4.6-p6 || 2.4.7-p1) - Résout le problème de mise à jour des clients via `V1/customers` [!DNL REST API] le point de terminaison lors de l’utilisation du jeton d’accès d’intégration généré à partir du backend.
+* **ACSD-59514** (pour Adobe Commerce >=2.4.4 &lt;2.4.7-p2) - Correction du problème en raison duquel les formulaires de la zone d’administration contenant [!DNL Page Builder] renvoient l’erreur *[!DNL Page Builder]s’affichait pendant 5 secondes sans libérer les verrous.* dans la console du navigateur après l’envoi du formulaire et les modifications ne peuvent pas être enregistrées.
+* **ACSD-60303** (pour Adobe Commerce >=2.4.4-p9 &lt;2.4.5 || >=2.4.5-p8 &lt;2.4.6 || >=2.4.6-p6 &lt;2.4.8) - Correction du problème en raison duquel une commande d’administrateur ne peut pas être passée si la minimisation d’HTML est activée.
+* **ACSD-60441** (pour Adobe Commerce et Magento Open Source 2.4.4-p9) || 2.4.5-p8 || 2.4.6-p6 || 2.4.7-p1) - Correction du problème lié à la mise à jour des clients via `V1/customers` point d’entrée [!DNL REST API] lors de l’utilisation du jeton d’accès à l’intégration généré à partir du serveur principal.
 * Correctifs mis à jour : ACSD-57003
 
 ## v1.1.49 {#v1-1-49}
@@ -167,7 +184,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACSD-56979** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction du problème de suppression des images de produit après la suppression d’une mise à jour d’évaluation.
 * **ACSD-57086** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction du problème de traitement incorrect des commandes passées à partir de sites web autres que ceux par défaut dont les conditions générales sont activées.
 * **ACSD-57588** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel l’envoi d’une commande à plusieurs adresses déclenche une erreur lors du traitement de l’identifiant de la région.
-* **ACSD-57643** (pour le commerce Adobe et Magento Open Source >=2.4.6 &lt;2.4.7) - Fixes the issue where products with custom options are incorrectly added to the shopping cart via GraphQL.
+* **ACSD-57643** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction d’un problème en raison duquel des produits dotés d’options personnalisées étaient incorrectement ajoutés au panier via GraphQL.
 * **ACSD-57846** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème en raison duquel les produits GraphQL recherchés avec un filtre à prix zéro ne renvoient aucun résultat en raison d’une exception.
 * **ACSD-57941** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction du problème d’affectation incorrecte des options de produit à l’admin store plutôt qu’à leurs magasins respectifs.
 * **ACSD-58375** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème en raison duquel une configuration de *[!DNL YouTube API Key]* incorrecte entraînait une erreur lors de l’ajout d’une vidéo [!DNL YouTube] au niveau de l’affichage du magasin.
@@ -180,8 +197,8 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 ## v1.1.48 {#v1-1-48}
 
-* **La mutation ACSD-55566** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Fixes the issue where the `mergeCart` échoue avec une «*erreur* interne du serveur » dans la réponse lors de la [!DNL GraphQL] fusion des paniers source et de destination qui ont les mêmes articles de lot.
-* **ACSD-56546** (pour Adobe Commerce et Magento Open Source >=2.4.4 **&lt;2.4.7) - Fixes the issue where configurable and bundle products display as  Hors Stock** sur la vitrine lorsque l’affichage **hors configuration du produit** est *désactivé*.
+* **ACSD-55566** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction du problème en raison duquel la mutation `mergeCart` échoue avec une « *Erreur de serveur interne* » dans la réponse [!DNL GraphQL] lors de la fusion des paniers source et de destination qui ont les mêmes éléments de lot.
+* **ACSD-56546** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction du problème d’affichage des produits configurables et groupés comme **En rupture de stock** sur le storefront lorsque l’**affichage de la configuration en rupture de produit** est *Désactivé*.
 * **ACSD-56635** (pour Adobe Commerce >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel le client importé est dupliqué avec la même adresse e-mail, lorsqu’une importation est utilisée avec **partage de compte** défini sur *Global*.
 * **ACSD-56741** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Corrige le message d’erreur « *Tentative d’accès au décalage de tableau sur la valeur de type null* » qui s’affiche lors de l’`setup:upgrade` lorsque la base de données contient un déclencheur [!DNL MySQL] personnalisé non lié au mécanisme d’indexation et à la [!DNL MView].
 * **ACSD-57315** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Corrige le problème lorsqu’une nouvelle transaction est créée dans [!DNL PayPal Payflow Pro] chaque fois que l’utilisateur clique sur le bouton [!UICONTROL Fetch] de l’écran **[!UICONTROL View transaction]** dans l’Administration.
@@ -255,17 +272,17 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 ## v1.1.42 {#v1-1-42}
 
-* **ACSD-53658** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Fixes the issue where *[!UICONTROL Recently Viewed]* Les données produit ne sont pas mises à jour correctement dans la vue Store.
+* **ACSD-53658** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction d’un problème en raison duquel les données de *[!UICONTROL Recently Viewed]* produit ne sont pas correctement mises à jour dans la vue du magasin.
 * **ACSD-54626** (pour Adobe Commerce >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel vous ne pouvez pas créer de règle de bon de commande (`createPurchaseOrderApprovalRule`) avec l’attribut `NUMBER_OF_SKUS` via [!DNL GraphQL].
 * **ACSD-53845** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Corrige le problème de délai d’expiration de la connexion [!DNL MySQL] lorsque `consumer max_messages` = 0.
 * **ACSD-54890** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Correction du problème en raison duquel `aggregate_sales_report_bestsellers_data` entraîne des erreurs [!DNL MySQL] dues au manque d’espace `/tmp` disque.
 * **ACSD-55112** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Correction du problème en raison duquel il est possible de cliquer plusieurs fois sur le bouton *[!UICONTROL Submit review]* sans validation [!DNL Google reCAPTCHA v3].
-* **ACSD-54264** (pour Adobe Commerce >=2.4.4-p5 &lt;2.4.5 ||=&quot;&quot;>=2.4.5-p4 &lt;2.4.6 ||=&quot;&quot;>=2.4.6-p2 &lt;2.4.7) - Fixes the issue where the error message *« Vous ne pouvez pas mettre à jour l’attribut demandé. &lt;/2.4.6>&lt;/2.4.5> ID de ligne : store_id »* s’affiche lorsqu’un client tente de passer en caisse avec un devis négociable provenant d’une autre vue de magasin.
+* **ACSD-54264** (pour Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) - Correction du problème en raison duquel le message d’erreur *« Vous ne pouvez pas mettre à jour l’attribut demandé. ID de ligne : store_id »* s’affiche lorsqu’un client tente de passer en caisse avec un devis négociable provenant d’une autre vue de magasin.
 * **ACSD-54418** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Corrige le problème d’application incorrecte d’un montant fixe de remise à chaque produit enfant du bundle à prix dynamique.
 * **ACSD-55238** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correctifs enregistrant le *[!UICONTROL Meta Description]* de produit vide.
 * **ACSD-54966** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel un code de coupon à utilisation limitée par client ne peut pas être réutilisé en cas d’échec de la commande précédente.
 * **ACSD-54060** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction du problème en raison duquel un administrateur restreint ne peut pas enregistrer un produit s’il est l’enfant d’un autre produit affecté à une portée différente.
-* **DCSD-48910** (pour le commerce Adobe et Magento Open Source >=2.4.5 &lt;2.4.6) - Fixed the issue where a bundle product assigned to multiple sources goes out-of-stock after an order is invoiced and shipped, even if it still has a non-zero quantity.
+* **ACSD-48910** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.6) - Correction d’un problème en raison duquel un produit groupé affecté à plusieurs sources est en rupture de stock après qu’une commande a été facturée et expédiée, même s’il contient toujours une quantité différente de zéro.
 * **ACSD-55381** (pour Adobe Commerce >=2.4.2 &lt;2.4.7) - Corrige une erreur de serveur interne lors de l’interrogation de champs `configurable_product_option_uid` et `configurable_product_option_value_uid` depuis un *[!UICONTROL Requisition list]* [!DNL B2B] via [!DNL GraphQL].
 * **ACSD-55628** (pour Adobe Commerce >=2.4.4-p2 &lt; 2.4.5 || >=2.4.5-p1 &lt; 2.4.6) - Correctifs du chargement d’un fichier sur le formulaire d’enregistrement de l’entreprise et du remplacement d’un fichier pour un attribut du client sur le storefront.
 * Correctifs mis à jour : ACSD-51240, ACSD-51890, ACSD-53098
@@ -273,31 +290,31 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 ## v1.1.41 {#v1-1-41}
 
 * **ACSD-54376** (pour Adobe Commerce >=2.4.2 &lt;2.4.7) - Corrige le problème qui se produit dans le panier lorsqu’un produit est supprimé du catalogue partagé après avoir déjà été ajouté au panier.
-* **ACSD-53722** (pour Adobe Commerce >=2.4.4 &lt;2.4.7) - Fixes the issue where the bundled product options price changes to $0 when scheduled updates for different scopes become active.
-* **DCSD-53643** (pour Adobe Commerce >=2.4.3 &lt;2.4.7) - Fixes the issue where the order has an incorrect total when placing a purchase order with disabled or out-of-stock products. Ce problème est corrigé en masquant le *[!UICONTROL Place Order]* bouton pour ces bons de commande.
-* **DCSD-54067** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Fixes the issue where a product video doesn&#39;t play on a mobile device.
-* **DCSD-55414** (pour le commerce Adobe et Magento Open Source >=2.4.0 &lt;2.4.6) - Improves performance when the MariaDB tries to cast the EAV entity_id from string to integer.
+* **ACSD-53722** (pour Adobe Commerce >=2.4.4 &lt;2.4.7) - Correction du problème en raison duquel le prix des options de produit groupées passe à 0 $ lorsque les mises à jour planifiées pour différentes portées deviennent actives.
+* **ACSD-53643** (pour Adobe Commerce >=2.4.3 &lt;2.4.7) - Correction du problème en raison duquel le total de la commande est incorrect lors de la passation d’une commande avec des produits désactivés ou en rupture de stock. Elle est corrigée en masquant le bouton *[!UICONTROL Place Order]* pour ces commandes fournisseur.
+* **ACSD-54067** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Correction d’un problème qui empêchait la lecture d’une vidéo de produit sur un appareil mobile.
+* **ACSD-55414** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Améliore les performances lorsque MariaDB tente de convertir le paramètre entity_id EAV de chaîne en entier.
 * **ACSD-51819** (pour Adobe Commerce >=2.4.4 &lt;2.4.4-p4) - Correction du problème en raison duquel plusieurs commandes peuvent être passées avec le même ID de devis.
-* **La norme ACSD-53118** (pour Adobe Commerce >=2.4.0 &lt;2.4.7) - Fixes the issue where the *[!UICONTROL Cart Price Rule]* est appliquée à l’aide d’un code promo alors que le produit a un attribut vide, ce qui aurait dû entraîner l’invalidation de la règle.
-* **ACSD-54324** (pour Adobe Commerce >=2.4.5 &lt;2.4.7) - Fixes the issue where the GraphQL requisition_lists request does not consider pagination settings and returns all results.
+* **ACSD-53118** (pour Adobe Commerce >=2.4.0 &lt;2.4.7) - Correction du problème en raison duquel le *[!UICONTROL Cart Price Rule]* est appliqué à l’aide d’un code de coupon alors que le produit possède un attribut vide, ce qui aurait dû entraîner l’invalidation de la règle.
+* **ACSD-54324** (pour Adobe Commerce >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel la requête requisition_lists de GraphQL ne prend pas en compte les paramètres de pagination et renvoie tous les résultats.
 * Correctifs mis à jour : MDVA-42855-v2
 
 ## v1.1.40 {#v1-1-40}
 
-* **ACSD-54680** (pour Adobe Commerce >=2.4.0 &lt;2.4.6) - Fixes the issue where it is not possible to process a B2B Quote submitted for a product with Multiple Assigned Sources.
-* **Le champ ACSD-54040** (pour Adobe Commerce >=2.4.4-p5 &lt;2.4.5 ||=&quot;&quot;>= 2.4.5-p4 &lt;2.4.6) - Fixes the issue where the *[!UICONTROL Created]* ) est vide dans les détails de commande lorsque les modules B2B sont activés.&lt;/2.4.5>
+* **ACSD-54680** (pour Adobe Commerce >=2.4.0 &lt;2.4.6) - Corrige le problème en raison duquel il n’est pas possible de traiter un devis B2B envoyé pour un produit avec plusieurs sources affectées.
+* **ACSD-54040** (pour Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6) - Corrige le problème où le champ *[!UICONTROL Created]* est vide dans les détails de commande lorsque les modules B2B sont activés.
 * **ACSD-54319** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.6) - Correction du problème en raison duquel le prix du produit affiche zéro dans le rapport de *[!UICONTROL Product in Cart]*.
 * **ACSD-53378** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Améliore le temps de chargement des pages de passage en caisse pour les clients qui disposent de carnets d’adresses volumineux.
-* **ACSD-52657** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Fixes the issue where the minicart is not updated on the secondary storeview, which uses a subdomain.
+* **ACSD-52657** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel le mini-graphique n’est pas mis à jour sur le magasin secondaire qui utilise un sous-domaine.
 * **ACSD-53414** (pour Adobe Commerce >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel un utilisateur administrateur restreint peut voir les pages CMS en dehors de sa portée d’autorisations.
 * **ACSD-54472** (pour Adobe Commerce >=2.4.6 &lt;2.4.7) - Corrige le problème en raison duquel les clients d’une société refusée peuvent toujours s’authentifier et les clients d’une société bloquée et d’une société refusée peuvent toujours passer des commandes. Le correctif ajoute une validation supplémentaire pour les points d’entrée GraphQL.
 * **ACSD-52801** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Ajoute l’option permettant d’effectuer une correspondance partielle lors de la recherche de produits dans GraphQL.
 * **ACSD-55004** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Corrige le problème en raison duquel le programme de validation se bloque lors du téléchargement d’un fichier d’importation dont la valeur est supérieure à celle configurée dans `php.ini`.
 * **ACSD-54989** (pour Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) - Correction du problème en raison duquel un administrateur d’entreprise ne peut pas passer de commande lorsque *[!UICONTROL Enable Purchase Orders]* est défini sur *[!UICONTROL Yes]* et *[!UICONTROL Purchase Order]* sur *[!UICONTROL No]*.
-* **ACSD-54007** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Fixes the error *« Clé de tableau non définie « _scope&quot; »* lors de l’importation de données client.
-* **ACSD-55031** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.6) - Fixes the *Le type « mixed » ne peut pas être une erreur annulable* lors de la compilation.
-* **ACSD-54961** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Fixes the issue where a restricted admin user cannot mass update the *État des critiques* du produit.
-* **DCSD-55256** (pour le commerce Adobe et Magento Open Source >=2.4.6 &lt;2.4.7) - Fixes the issue where only the first image is successfully displayed in the image slider.
+* **ACSD-54007** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Corrige l’erreur *« Clé de tableau non définie »_scope »* lors de l’importation de données client.
+* **ACSD-55031** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.6) - Corrige l’erreur *Le type « mixte » ne peut pas être considéré comme une valeur nulle* lors de la compilation.
+* **ACSD-54961** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Correction du problème en raison duquel un utilisateur administrateur restreint ne peut pas mettre à jour en masse le statut *Révision du produit*.
+* **ACSD-55256** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction du problème d’affichage réussi de la première image dans le curseur d’image.
 * Correctifs mis à jour : ACSD-52041, ACSD-54106
 
 ## v1.1.39 {#v1-1-39}
@@ -317,9 +334,9 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 ## v1.1.38 {#v1-1-38}
 
-* **DCSD-53098** (pour le commerce Adobe et Magento Open Source >=2.4.3 &lt;2.4.4) - Fixes the issue where products assigned to a shared catalog do not appear on the storefront when a partial index is executed.
-* **ACSD-54018** (pour Adobe Commerce et Magento Open Source widget >=2.3.7 &lt;2.4.6) - Fixes the performance issues with the [!UICONTROL Product List] qui utilise un attribut non global dans la condition de widget.
-* **DCSD-54111** (pour le commerce Adobe et Magento Open Source >=2.4.2 &lt;2.4.6) - Fixes the issue where the product thumbnail images are not displayed on the storefront when the aspect ratio of the watermark image does not match the product image.
+* **ACSD-53098** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.4) - Correction du problème en raison duquel les produits affectés à un catalogue partagé n’apparaissent pas sur le storefront lors de l’exécution d’un index partiel.
+* **ACSD-54018** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.6) - Corrige les problèmes de performances avec le widget [!UICONTROL Product List] qui utilise un attribut non global dans la condition du widget.
+* **ACSD-54111** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.6) - Correction du problème en raison duquel les images miniatures du produit ne s’affichent pas sur le storefront lorsque les proportions de l’image du filigrane ne correspondent pas à l’image du produit.
 * **ACSD-47669** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.6) - Correctifs *Violation de contrainte d’intégrité : 1452 Impossible d’ajouter ou de mettre à jour une ligne enfant : échec d’une contrainte de clé étrangère* erreur lors de l’importation de produits CSV.
 * **ACSD-53347** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel l’exécution de l’indexeur de prix prend trop de temps.
 * **ACSD-52287** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Correction d’un problème lié à un statut de commande incorrect dans la grille de commande archivée lorsque l’indexation de grille asynchrone est activée.
@@ -347,14 +364,14 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 ## v1.1.36 {#v1-1-36}
 
-* **DCSD-53239** (pour le commerce Adobe et Magento Open Source >=2.4.3 &lt; 2.4.6) - Fixes the issue where the inventory indexer cleans all caches in the Update on Schedule mode.
+* **ACSD-53239** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt; 2.4.6) - Correction du problème en raison duquel l’indexeur d’inventaire nettoie tous les caches en mode Mise à jour selon le calendrier.
 * **ACSD-50887** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Correction du problème en raison duquel la *[!UICONTROL Use in Search Results Layered Navigation]* de la propriété d’attribut de produit peut être définie sur *Oui* sans que l’option de *[!UICONTROL Use in search]* ne soit définie sur *Oui*.
 * **ACSD-51846** (pour Adobe Commerce et Magento Open Source >=2.4.3-p2 &lt;2.4.6) - Correction du problème *Erreur interne* qui se produit car tous les niveaux de la payload de l’API REST ne sont pas validés.
-* **DCSD-52906** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Fixes the issue where the X-Magento-Vary cookie is set incorrectly for logged-in customers that belong to the same customer segment causing improper caching for some pages.
-* **ACSD-52736** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.6) - Fixes the issue where a *La règle* de prix du panier qui inclut des exigences pour la quantité configurable de produit ne fonctionne pas comme prévu.
-* **ACSD-47875** (pour le commerce Adobe et Magento Open Source >=2.3.7 &lt;2.4.7) - Fixes the issue where admin users are not able to add a product to a customer cart from the Admin for a particular store view scope with inventory management.
-* **ACSD-53176** (pour Adobe Commerce >=2.3.7 &lt;2.4.5) - Fixes the issue where *Produit connexe La règle* avec *est l’une des* conditions ne correspond pas aux produits.
-* **ACSD-51666** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Fixes the error *La session a expiré. Veuillez vous reconnecter.* qui se produit lorsqu’un client tente de se connecter.
+* **ACSD-52906** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel le cookie X-Magento-Vary est défini de manière incorrecte pour les clients connectés appartenant au même segment client, ce qui entraîne une mise en cache incorrecte de certaines pages.
+* **ACSD-52736** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.6) - Correction d’un problème en raison duquel une *règle de prix de panier* qui inclut des exigences pour la quantité de produit configurable ne fonctionne pas comme prévu.
+* **ACSD-47875** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel les utilisateurs administrateurs ne sont pas en mesure d’ajouter un produit au panier d’un administrateur pour une portée d’affichage de magasin spécifique avec la gestion des stocks.
+* **ACSD-53176** (pour Adobe Commerce >=2.3.7 &lt;2.4.5) - Correction du problème en raison duquel *Règle du produit associé* avec *est l’une des* conditions ne correspond pas aux produits.
+* **ACSD-51666** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Corrige l’erreur *La session a expiré, veuillez vous reconnecter.* qui se produit lorsqu’un client tente de se connecter.
 * Ajout de nouvelles versions pour MDVA-39305-v2.
 * Mise à jour des exigences pour ACSD-19640.
 
@@ -389,11 +406,11 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACSD-52277** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Correction d’un problème en raison duquel un utilisateur administrateur n’est pas redirigé correctement après avoir sélectionné une vue de magasin lors de la création d’une commande dans Admin.
 * **ACSD-50813** (pour Adobe Commerce >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel l’administrateur n’était pas en mesure d’ajouter des produits groupés contenant une barre oblique dans le SKU avec la fonctionnalité [!UICONTROL Add Products by SKU] à la commande d’administration.
 * **ACSD-51630** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction du problème en raison duquel un grand nombre de messages système ralentit le téléchargement des pages d’administration.
-* **DCSD-51853** (pour le commerce Adobe et Magento Open Source >=2.4.1 &lt;2.4.7) - Fixes the issue where copied text styles are not applied when using the [!UICONTROL Page Builder].
-* **DCSD-52160** (pour le commerce Adobe et Magento Open Source >=2.4.4 &lt;2.4.7) - Fixes the issue where the product validation result against the cart price rule was not properly evaluated based on the rule condition &#39;If an item is FOUND/NOT FOUND in the cart with All/Any of these conditions true&#39;.
+* **ACSD-51853** (pour Adobe Commerce et Magento Open Source >=2.4.1 &lt;2.4.7) - Correction du problème en raison duquel les styles de texte copiés ne sont pas appliqués lors de l’utilisation de l’[!UICONTROL Page Builder].
+* **ACSD-52160** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction d’un problème en raison duquel le résultat de validation du produit par rapport à la règle de prix du panier n’était pas correctement évalué en fonction de la condition de règle « Si un article est TROUVÉ/NON TROUVÉ dans le panier avec Toutes/L’une de ces conditions est vraie ».
 * **ACSD-51636** (pour Adobe Commerce >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel l’administrateur de la société ne peut pas ajouter de nouveaux utilisateurs à partir de la section compte client bien qu’il dispose de tous les rôles et autorisations nécessaires.
 * **ACSD-51739** (pour Adobe Commerce >=2.4.6 &lt;2.4.7) - Corrige le problème où une erreur est renvoyée lorsque l’`structure_id` est demandée dans une requête CompanyTeam GraphQL.
-* **ACSD-51857** (pour Adobe Commerce and Magento Open Source >=2.4.0 &lt;2.4.7) - Fixes the issue where the slow performance of the `aggregate_sales_report_bestsellers_data` rapport cron sur les grandes tables sales_order et `sales_order_item` de base de données était dû à la façon dont la requête de données principale était écrite.
+* **ACSD-51857** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Correction du problème en raison duquel la lenteur des performances du rapport `aggregate_sales_report_bestsellers_data` cron sur les tables de base de données sales_order et `sales_order_item` volumineuses était due à la manière dont la requête de données principale a été écrite.
 * **ACSD-48448** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Corrige le problème en raison duquel un problème de condition de concurrence se produit lors des annulations de commande, ce qui entraîne une entrée dupliquée dans la table `inventory_reservation`.
 * **ACSD-52689** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.6) - Correction du problème en raison duquel les images ne peuvent pas être chargées vers le stockage Amazon S3 à l’aide de l’API REST.
 * **B2B-2674** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Ajoutez une fonctionnalité de mise en cache à la requête GraphQL 1customAttributeMetadata1.
@@ -419,7 +436,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACSD-51240** (pour Adobe Commerce >=2.4.4 &lt;2.4.6) - Corrige le problème en raison duquel le fichier chargé est manquant si l’enregistrement est effectué via le formulaire d’enregistrement de la société.
 * **ACSD-51907** (pour Adobe Commerce >=2.4.2 &lt;2.4.3) - Correction du problème en raison duquel un utilisateur administrateur restreint ne peut pas créer d’avoir avec remboursement hors ligne.
 * **ACSD-52148** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.4) - Correction du problème en raison duquel la connexion de l’administrateur [!DNL Google V3 reCAPTCHA] échoue parfois.
-* **ACSD-51431** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Fixes the issue where an indexer status is *fonctionnent* même s’il n’y a pas de nouvelles entrées dans le journal des modifications.
+* **ACSD-51431** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel un statut d’indexeur *fonctionne* même s’il n’existe aucune nouvelle entrée dans le journal des modifications.
 * **ACSD-51892** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Corrige le problème de performances en raison duquel les fichiers de configuration se chargent plusieurs fois.
 * ACSD-51114 obsolète.
 
@@ -428,9 +445,9 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACSD-49628** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.7) - Correction du problème en raison duquel les [!UICONTROL Page Builder's] erreurs multiples empêchent l’administrateur d’enregistrer un produit sans autorisations de contenu.
 * **ACSD-51305** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel les produits enfants configurables en rupture de stock ne sont pas disponibles dans la réponse de GraphQL.
 * **ACSD-50621** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel les [!UICONTROL Tier Prices] des différents sites web du catalogue partagé ne sont pas visibles lors de la tentative de modification dans un environnement multi-site.
-* **DCSD-51041** (pour le commerce Adobe et Magento Open Source >=2.3.7 &lt;2.4.0 ||=&quot;&quot;>=2.4.1 &lt;2.4.6) - Improves performance of price indexer.&lt;/2.4.0>
-* **ACSD-51379** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Fixes the issue where changes made to page text content via [!UICONTROL Page Builder] ne sont pas enregistrées.
-* **DCSD-49480** (pour le commerce Adobe et Magento Open Source >=2.4.4 &lt;2.4.6) - Fixes the issue where only one cart price rule is applied to the cart.
+* **ACSD-51041** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.0 || >=2.4.1 &lt;2.4.6) - Améliore les performances de l’indexeur des prix.
+* **ACSD-51379** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel les modifications apportées au contenu textuel de la page via [!UICONTROL Page Builder] ne sont pas enregistrées.
+* **ACSD-49480** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Correction du problème en raison duquel une seule règle de prix de panier est appliquée au panier.
 * **ACSD-51230** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Correction du problème de suppression du compte de carte cadeau lorsqu’un remboursement partiel d’un produit simple est traité à partir d’une commande.
 * **ACSD-51238** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction du problème de suppression de la source d’inventaire lors de la mise à jour de produits configurables et de la modification du prix.
 * **ACSD-50794** (pour Adobe Commerce >=2.4.1 &lt;2.4.7) - Correction d’un problème en raison duquel les informations sur le message cadeau ou l’emballage du cadeau ne sont pas mises à jour dans la base de données lors de sa suppression via GraphQL.
@@ -454,7 +471,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 ## v1.1.30 {#v1-1-30}
 
-* **ACSD-50336** (pour le commerce Adobe et Magento Open Source >=2.4.4-p1 &lt;2.4.4-p3) - Fixes the issue where product alert emails are not sent when a product is back in stock or the price is changed.
+* **ACSD-50336** (pour Adobe Commerce et Magento Open Source >=2.4.4-p1 &lt;2.4.4-p3) - Correction du problème en raison duquel les e-mails d’alerte produit ne sont pas envoyés lorsqu’un produit est de nouveau en stock ou que le prix est modifié.
 * **ACSD-50367** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel l’exportation de l’adresse du client ne fonctionne pas lorsqu’un attribut d’adresse du client à sélection multiple sans valeurs est créé.
 * **ACSD-49877** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel la lecture automatique de la vidéo ne fonctionne pas sur les [!DNL Safari] mobiles lorsque la vidéo est directement liée à un fichier vidéo distant et non à un service de streaming.
 * **ACSD-50165** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Corrige l’erreur *Le fichier ne peut pas être supprimé. Avertissement!unlink: aucun fichier ou répertoire de ce type* lors du vidage du cache JS/CSS de l’administrateur.
@@ -476,16 +493,16 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 * **ACSD-49389** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.7) - Correction du problème en raison duquel un e-mail prêt à être récupéré est envoyé par l’API lorsque la commande n’est pas prête à être récupérée.
 * **ACSD-49822** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel les mises à jour de la page [!UICONTROL Requisition List] ne sont pas répercutées sur le [!UICONTROL Print Requisition List].
-* **ACSD-48771** (pour les versions Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Fixes the issue with upgrading the column-block content type from older [!DNL Page Builder] .
-* **ACSD-49464** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Fixes the issue where invoices, shipments, and credit memos are not moved back from the archive when the orderId is different.
-* **DCSD-49773** (pour le commerce Adobe et Magento Open Source >=2.4.2 &lt;2.4.6) - Fixes the issue where product export fails when AWS S3 is used as remote storage.
-* **DCSD-49748** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Fixes the issue where invitations cannot be sent.
+* **ACSD-48771** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème lié à la mise à niveau du type de contenu du bloc de colonne à partir des versions [!DNL Page Builder] plus anciennes.
+* **ACSD-49464** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel les factures, les expéditions et les avoirs ne sont pas retirés de l’archive lorsque l’orderId est différent.
+* **ACSD-49773** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.6) - Correction du problème en raison duquel l’exportation du produit échoue lorsque AWS S3 est utilisé comme stockage distant.
+* **ACSD-49748** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Corrige le problème en raison duquel les invitations ne peuvent pas être envoyées.
 * **ACSD-49502** (pour Adobe Commerce >=2.4.3 &lt;2.4.7) - Correction d’un problème en raison duquel le lien téléchargeable n’est pas correctement mis à jour après l’application d’une mise à jour d’évaluation au produit téléchargeable.
-* **DCSD-49527** (pour Adobe Commerce >=2.4.2 &lt;2.4.7) - Fixes the issue where GraphQL company roles don&#39;t display pagination correctly.
-* **DCSD-49706** (pour le commerce Adobe et Magento Open Source >=2.3.7 &lt;2.4.7) - Fixes the issue where the default value is saved for a visual swatch attribute when no value is selected.
-* **DCSD-49835** (pour le commerce Adobe et Magento Open Source >=2.4.5 &lt;2.4.7) - Fixes the issue where the Use default checkbox value is not saved correctly on a store level for a multi-select attribute.
-* **DCSD-49898** (pour le commerce Adobe et Magento Open Source >=2.4.4 &lt;2.4.6) - Fixes the issue where the products grid throws an exception when a bundled product has a special price that exceeds 1000.
-* **DCSD-50234** (pour le commerce Adobe et Magento Open Source >=2.3.7 &lt;2.4.5) - Fixes the issue with the wrong customer name in the confirmation email if placing an order with [!DNL PayPal].
+* **ACSD-49527** (pour Adobe Commerce >=2.4.2 &lt;2.4.7) - Corrige le problème d’affichage incorrect de la pagination des rôles d’entreprise GraphQL.
+* **ACSD-49706** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel la valeur par défaut est enregistrée pour un attribut d’échantillon visuel lorsqu’aucune valeur n’est sélectionnée.
+* **ACSD-49835** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Corrige le problème en raison duquel la valeur de la case à cocher Utiliser par défaut n’est pas enregistrée correctement au niveau du magasin pour un attribut à sélection multiple.
+* **ACSD-49898** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Correction du problème en raison duquel la grille de produits renvoie une exception lorsqu’un produit groupé a un prix spécial qui dépasse 1 000.
+* **ACSD-50234** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.5) - Correction d’un problème lié à un nom de client incorrect dans l’e-mail de confirmation lors de la commande auprès de [!DNL PayPal].
 * **ACSD-49960** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction d’un problème en raison duquel le filtrage par date ne fonctionne pas pour la grille de commandes client.
 * **ACSD-49849** (pour Adobe Commerce et Magento Open Source >=2.3.7 &lt;2.4.6) - Correction du problème de remplacement de l’e-mail du client par [!DNL PayPal] e-mail lors de la commande auprès d’[!DNL PayPal Express] via GraphQL.
 * **ACSD-49839** (pour Adobe Commerce >=2.3.7 &lt;2.4.7) - Correction du problème en raison duquel la tarification et la structure du catalogue partagé génèrent une erreur dans l’administration lorsque les produits comportent des guillemets simples ou doubles dans le SKU.
@@ -555,15 +572,15 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACSD-45168** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.6) - Correction du problème en raison duquel les URL compatibles avec les moteurs de recherche ne sont pas générées pour les produits dont les attributs *url_key* sont remplacés au niveau de la vue du magasin.
 * **ACSD-46865** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Correction du problème en raison duquel la grille Expédition et Avoir n’est pas renseignée lorsque l’indexation asynchrone est activée.
 * **ACSD-47004** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.6) - Correction d’un problème en raison duquel la TVA n’est pas appliquée à une adresse de facturation sans numéro de TVA.
-* **ACSD-47803** (pour le commerce Adobe et Magento Open Source >=2.4.0 &lt;2.4.6) - Fixes the issue where out-of-stock configurable product swatches are displayed as available.
-* **DCSD-47137** (pour le commerce Adobe et Magento Open Source >=2.4.4 &lt;2.4.6) - Improves the loading speed of the image gallery when the pub/media folder is very big.
-* **ACSD-46770** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Fixes the issue where admin order emails are sent even when the *L’option Confirmation* de commande par courriel n’est pas cochée.
+* **ACSD-47803** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Correction du problème d’affichage des échantillons de produits configurables en rupture de stock.
+* **ACSD-47137** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Améliore la vitesse de chargement de la galerie d’images lorsque le dossier pub/media est très volumineux.
+* **ACSD-46770** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Correction du problème d’envoi des e-mails de commande de l’administrateur même lorsque l’option *Confirmation de commande par e-mail* n’est pas cochée.
 * **ACSD-47955** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Correction d’un problème en raison duquel GraphQL n’affiche pas correctement la remise du panier.
 * **ACSD-46617** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Correction du problème en raison duquel le bouton *Continuer la récupération* est grisé même si le sous-total est supérieur au *Montant minimal de commande* configuré.
 * **ACSD-47079** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.5) - Correction du problème en raison duquel l’état du stock des produits composites (groupés, et configurables) n’est pas mis à jour lorsque l’état du stock des sous-produits change via le POST de l’API REST /rest/V1/inventory/source-items.
 * **ACSD-47336** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Correctifs *Un problème est survenu.* erreur lors de l’ignorance des notifications dans Commerce Admin.
 * **ACSD-47559** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Corrige le problème en raison duquel la zone Prévisualiser le modèle d’e-mail n’est pas entièrement visible.
-* **ACSD-47920** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Fixes the issue where orders can be placed via Rest API as a guest user even when the *Autoriser l’extraction* des invités est désactivée.
+* **ACSD-47920** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Correction du problème en raison duquel les commandes peuvent être passées via l’API Rest en tant qu’utilisateur invité, même si l’option *Autoriser le passage en caisse des invités* est désactivée.
 * Correctifs remplacés : MDVA-39305, MDVA-42855.
 
 ## v1.1.23 {#v1-1-23}
@@ -640,18 +657,18 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACSD-45143** (*pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.5*) - Corrige le problème en raison duquel la mutation `setShippingAddressesOnCart` ne permet pas de définir le code de région numérique comme *région*.
 * **ACSD-44591** (*pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.6*) - Corrige l’erreur qui se produit lorsqu’une commande est passée sans confirmation CAPTCHA.
 * **ACSD-45520** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.6*) - Correction du problème en raison duquel les options d’échantillon ne sont pas présélectionnées sur la page des détails du produit lorsqu’un utilisateur modifie des produits configurables à partir du panier.
-* **ACSD-45169** (*pour Adobe Commerce et Magento Open Source >=2.4.1*&lt;2.4.6) - Résout le problème où [!DNL Visual Merchandiser] n’affiche pas le stock et le prix corrects pour un produit configurable après une mise à jour intermédiaire.
-* **ACSD-45424** (*pour Adobe Commerce et Magento Open Source >=2.3.4 &lt;2.4.6*) - Résout le problème où une compensation de réservation incorrecte est créée après un remboursement partiel (note de crédit).
-* **MDVA-42807** (*pour Adobe Commerce et Magento Open Source >=2.3.1 &lt;2.4.6*) - Résout le problème où le signe de devise personnalisée n’est pas affiché sur la devanture du magasin.
+* **ACSD-45169** (*pour Adobe Commerce et Magento Open Source >=2.4.1 &lt;2.4.6*) - Corrige le problème en raison duquel [!DNL Visual Merchandiser] n’affiche pas le stock et le prix corrects d’un produit configurable après l’application d’une mise à jour d’évaluation.
+* **ACSD-45424** (*pour Adobe Commerce et Magento Open Source >=2.3.4 &lt;2.4.6*) - Corrige le problème en raison duquel une compensation de réservation incorrecte est créée après un remboursement partiel (avoir).
+* **MDVA-42807** (*pour Adobe Commerce et Magento Open Source >=2.3.1 &lt;2.4.6*) - Correction d’un problème en raison duquel le signe de devise personnalisé n’était pas affiché en façade.
 * Correctifs mis à jour : MDVA-42689, AC-3022.
 
 ## v1.1.16 {#v1-1-16}
 
 * **MDVA-44703** (*pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.4*) - Corrige le problème en raison duquel le total des commandes du rapport Commandes est mal calculé pour l’utilisateur administrateur restreint.
-* **MDVA-44940** (*pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.4*) - Corrige l’erreur SQL qui se produit lors de l’enregistrement de la catégorie à partir de l’administration.
-* **MDVA-44562** (*pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.2-p2*) - Résout le problème où l’identifiant de magasin autre que celui par défaut pour les articles de devis est remplacé par l’identifiant de magasin par défaut, malgré la demande GraphQL provenant de la vue de magasin non par défaut.
-* **MDVA-43167** (*pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.4*) - Résout le problème selon lequel l’action de masse de grille de commandes d’administration ne s’applique pas à plusieurs pages lorsque l’utilisateur administrateur sélectionne toutes les commandes.
-* **MDVA-44044** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.2-p2*) - Résout le problème où un produit n’est pas affiché sur la page de catégorie après avoir été affecté à un nouveau site Web.
+* **MDVA-44940** (*pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.4*) - Corrige l’erreur SQL qui se produit lors de l’enregistrement de la catégorie depuis Admin.
+* **MDVA-44562** (*pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.2-p2*) - Correction du problème où l’ID de magasin autre que celui par défaut pour les articles de devis est remplacé par l’ID de magasin par défaut, malgré la requête GraphQL provenant de la vue de magasin autre que celle par défaut.
+* **MDVA-43167** (*pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.4*) - Correction du problème en raison duquel l’action de masse de la grille de commandes de l’administrateur ne s’applique pas à plusieurs pages lorsque l’utilisateur administrateur sélectionne toutes les commandes.
+* **MDVA-44044** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.2-p2*) - Corrige le problème lorsqu’un produit n’est pas affiché sur la page de catégorie après avoir été affecté à un nouveau site web.
 * **MDVA-42509** (*pour Adobe Commerce et Magento Open Source >=2.3.3 &lt;2.4.4*) - Corrige le problème en raison duquel un fichier CSV n’a pas pu être chargé pour une commande rapide, ce qui entraînait une erreur *Impossible d’envoyer le cookie*.
 * Correctifs mis à jour : MDVA-41061, MDVA-42584.
 * Le préfixe des nouveaux correctifs [!DNL Quality Patches Tool] sera modifié de *MDVA* en *ACSD* en raison de modifications du processus interne.
@@ -756,41 +773,41 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 ## v1.1.8 {#v1-1-8}
 
-* **MDVA-41215 (pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.4 *) - Résout le problème où les utilisateurs obtiennent l’erreur 500 après avoir défini le*cookie mage-messages *s’il existe déjà, mais qu’il n’y a pas de nouveaux messages.***
-* **MDVA-41139** (*pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.4*) - Résout le problème où les produits configurables deviennent Hors Stock après l’importation du produit lorsque qté = 0 d’un produit simple pour l’une de ses sources.
-* **MDVA-42326** (*pour Adobe Commerce et Magento Open Source >=2.3.6 &lt;=2.3.7-p2 ||=&quot;&quot;>= 2.4.1 &lt;2.4.4*) - Résout le problème où les clients obtiennent une erreur à la caisse après une session expirée, même si le panier persistant est activé.&lt;/=2.3.7-p2>
-* **MDVA-42341** (*pour Adobe Commerce et Magento Open Source >=2.4.2*&lt;2.4.4) - Résout le problème où la `categoryList` requête GraphQL ne filtre pas les résultats si une requête a l’en-tête Store.
-* **MDVA-38393** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.4*) - Résout le problème selon lequel les règles de catalogue cessent de fonctionner pour un produit configurable si son produit simple est renommé.
-* **MDVA-39153** (*pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.4*) - Résout le problème où un montant de remise est calculé de manière incorrecte lors de la commande dans l’administration.
+* **MDVA-41215** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.4*) - Correction du problème en raison duquel les utilisateurs obtiennent l’erreur 500 après avoir défini le cookie *mage-messages* s’il existe déjà, mais qu’il n’existe aucun nouveau message.
+* **MDVA-41139** (*pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.4*) - Correction du problème en raison duquel les produits configurables sont en rupture de stock après l’importation d’un produit lorsque la quantité d’un produit simple est égale à 0 pour l’une de ses sources.
+* **MDVA-42326** (*pour Adobe Commerce et Magento Open Source >=2.3.6 &lt;=2.3.7-p2 || >=2.4.1 &lt;2.4.4*) - Corrige le problème où les clients obtiennent une erreur lors du passage en caisse après un délai d’expiration de session, même si le panier persistant est activé.
+* **MDVA-42341** (*pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.4*) - Corrige le problème en raison duquel la requête GraphQL `categoryList` ne filtre pas les résultats si une requête comporte l’en-tête Store.
+* **MDVA-38393** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.4*) - Correction du problème en raison duquel les règles de catalogue cessent de fonctionner pour un produit configurable si son produit simple est renommé.
+* **MDVA-39153** (*pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.4*) - Corrige le problème en raison duquel un montant de remise est calculé de manière incorrecte lors de la réorganisation dans l’administrateur.
 * Correctifs mis à jour : MDVA-28993, MDVA-41061, MDVA-35984.
 
 ## v1.1.7 {#v1-1-7}
 
-* **MDVA-39711** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.3*) - Résout le problème selon lequel les utilisateurs administrateurs ne peuvent pas accéder à la grille du client après avoir supprimé le site Web.
-* **MDVA-40311** (*pour Adobe Commerce et Magento Open Source >=2.4.2-p2*&lt;2.4.4) - Résout le problème où les utilisateurs administrateurs obtiennent le message *d’erreur Sécurité ou clé de formulaire non valide. Veuillez actualiser la page* après vous être connecté à l’administrateur si le chemin d’accès d’administration personnalisé est configuré et que la clé secrète est activée.
+* **MDVA-39711** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.3*) - Correction du problème en raison duquel les utilisateurs administrateurs ne peuvent pas accéder à la grille du client après la suppression du site web.
+* **MDVA-40311** (*pour Adobe Commerce et Magento Open Source >=2.4.2-p2 &lt;2.4.4*) - Corrige le problème en raison duquel les utilisateurs administrateurs reçoivent le message d’erreur *Sécurité non valide ou clé de formulaire). Actualisez la page* après vous être connecté à l’administrateur si le chemin d’accès d’administrateur personnalisé est configuré et que la clé secrète est activée.
 * **MDVA-41631** (*pour Adobe Commerce et Magento Open Source >=2.4.1 &lt;2.4.4*) - Correction du problème en raison duquel les utilisateurs rencontrent une erreur lorsqu’ils tentent de récupérer des informations de commande sans une valeur *téléphone* facultative via GraphQL.
 * **MDVA-27239** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.3.6*) - Correction du problème d’affichage des produits de ventes croisées.
 * Correctifs mis à jour : MDVA-37068, MDVA-35254, MDVA-41164, MDVA-37916, MDVA-37478, MDVA-34551, MDVA-31791.
 
 ## v1.1.6 {#v1-1-6}
 
-* **MDVA-40550** (*pour Adobe Commerce et Magento Open Source >=2.3.5 &lt;2.4.4*) - Résout le problème lié aux produits manquants sur le frontend pendant la réindexation.
+* **MDVA-40550** (*pour Adobe Commerce et Magento Open Source >=2.3.5 &lt;2.4.4*) - Correction du problème lié aux produits manquants sur le serveur frontal lors de la réindexation.
 * **MDVA-40120** (*pour Adobe Commerce et Magento Open Source >=2.4.1 &lt;2.4.4*) - Correction du problème en raison duquel le tri GraphQL par DESC/ASC ne fonctionne pas avec les produits ayant la même pertinence ou le même prix.
 * **MDVA-41399** (*pour Adobe Commerce et Magento Open Source >=2.3.3 &lt;2.4.2*) - Correction du problème en raison duquel les utilisateurs administrateurs ne peuvent pas accéder à la page *Gérer le panier* si un client ajoute un produit à la liste de souhaits.
 * **MDVA-40609** (*pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.3*) - Correction du problème en raison duquel les données des produits désactivés étaient absentes de la table d’index des `cataloginventory_stock_status`, affichant des quantités de produits désactivées incorrectes.
 * **MDVA-39031** (*pour Adobe Commerce et Magento Open Source >=2.4.1 &lt;2.4.4*) - Corrige le problème en raison duquel il est possible d’ajouter un produit au panier via GraphQL même s’il n’est pas affecté au site web cible.
 * **MDVA-41597** (*pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.4*) - Corrige le problème où les utilisateurs et utilisatrices reçoivent une erreur lors de l’ajout de plusieurs produits configurables au panier à l’aide de GraphQL.
 * **MDVA-27456** (*pour Adobe Commerce et Magento Open Source >=2.3.5 &lt;2.3.7*) - Corrige le problème en raison duquel les utilisateurs obtiennent une erreur lors du chargement de [!DNL Swagger].
-* **MDVA-32776** (*pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.2*) - Résout le problème où l’état des stocks n’est pas mis à jour lorsqu’une commande est passée mais pas expédiée.
-* **MDVA-30862** (*pour Adobe Commerce and Magento Open Source >=2.3.4 &lt;2.4.0*) - Résout le problème lié à une date de commande incorrecte sur la facture PDF imprimée.
-* Amélioration de la page d’index pour le [!DNL Quality Patch Tool]. Ajout d’une recherche et d’un filtrage pratiques pour [!DNL quality patches] la dernière version de l’outil.
+* **MDVA-32776** (*pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.2*) - Correction du problème en raison duquel le statut du stock n’est pas mis à jour lorsqu’une commande est passée mais n’est pas envoyée.
+* **MDVA-30862** (*pour Adobe Commerce et Magento Open Source >=2.3.4 &lt;2.4.0*) - Correction d’un problème lié à une date de commande incorrecte sur la facture PDF imprimée.
+* Amélioration de la page d’index pour la [!DNL Quality Patch Tool] . Ajout de la recherche et du filtrage pratiques pour [!DNL quality patches] à la dernière version de l’outil.
 * Correctifs mis à jour : MDVA-33382, MDVA-39482.
 
 ## v1.1.5 {#v1-1-5}
 
 * **MDVA-41236** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.4*) - Corrige le problème en raison duquel il est impossible de créer une mise à jour planifiée ou de modifier une mise à jour planifiée existante pour un produit si la date de fin a été précédemment supprimée.
 * **MDVA-41046** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.4*) - Correction du problème en raison duquel des produits simples avec des options personnalisées étaient disponibles pour l’affectation à des produits configurables/regroupés.
-* **MDVA-40545** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.4*) - Résout le problème selon lequel seul le premier nœud d’une page était récupéré, même s’il y avait plusieurs nœuds pour la même page.
+* **MDVA-40545** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.4*) - Correction du problème en raison duquel seul le premier nœud d’une page était récupéré, même s’il y avait plusieurs nœuds pour la même page.
 * **MDVA-41164** (*pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.3-p1*) - Corrige le problème en raison duquel un utilisateur administrateur n’est pas en mesure d’enregistrer ou de modifier une société avec un attribut client personnalisé de type fichier ou image.
 * **MDVA-39229** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.4*) - Corrige le problème en raison duquel l’erreur suivante apparaît après la mise à jour de l’heure de début de la mise à jour de l’évaluation de la règle de catalogue : *La tâche Cron staging_synchronize_entities_period comporte une erreur : la mise à jour active ne peut pas être supprimée.*
 * **MDVA-40619** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.4*) - Correction du problème en raison duquel les modifications apportées à la hiérarchie des pages de CMS provoquent une erreur 500 lors de la tentative de modification sur la ligne d’une page CMS.
@@ -802,9 +819,9 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 * **MDVA-40399** (*pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.4*) - Correction du problème en raison duquel les factures partielles d’une même commande ne peuvent pas être créées simultanément via l’API REST.
 * **MDVA-40101** (*pour Adobe Commerce et Magento Open Source >=2.3.2 &lt;2.4.0*) - Correction d’un problème en raison duquel les articles ne sont pas supprimés du mini panier après un placement de commande réussi à l’aide de [!DNL PayPal Express] Passage en caisse.
-* **MDVA-40401** (*pour Adobe Commerce et Magento Open Source >=2.3.6 &lt;=2.3.7-p2 ||=&quot;&quot;>= 2.4.1 &lt;2.4.4*) - Résout le problème où la valeur d’utilisation du coupon change même si la passation d’une commande échoue.&lt;/=2.3.7-p2>
-* **MDVA-40537** (*pour Adobe Commerce et Magento Open Source >=2.3.4 &lt;=2.4.0-p1*) - Résout le problème où les utilisateurs obtiennent une erreur lors de la création d’une vue de magasin s’il existe plusieurs pages CMS avec la même clé URL.
-* **MDVA-37725** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;=2.4.3-p1*) - Résout le problème où les e-mails de commande asynchrones envoyés à partir de sites Web autres que ceux par défaut contiennent des URL de logo du site Web par défaut.
+* **MDVA-40401** (*pour Adobe Commerce et Magento Open Source >=2.3.6 &lt;=2.3.7-p2 || >=2.4.1 &lt;2.4.4*) - Correction du problème en raison duquel la valeur d’utilisation des coupons change même en cas d’échec de la commande.
+* **MDVA-40537** (*pour Adobe Commerce et Magento Open Source >=2.3.4 &lt;=2.4.0-p1*) - Correction du problème en raison duquel les utilisateurs obtiennent une erreur lors de la création d’une vue de magasin s’il existe plusieurs pages CMS avec la même clé URL.
+* **MDVA-37725** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;=2.4.3-p1*) - Correction du problème en raison duquel les e-mails de commande asynchrones envoyés à partir de sites web non par défaut contiennent des URL de logo provenant du site web par défaut.
 * **MDVA-39482** (*pour Adobe Commerce et Magento Open Source >=2.3.6 &lt;=2.3.7-p2 || >=2.4.1 &lt;2.4.4*) - Correction du problème en raison duquel un produit est en rupture de stock s’il est importé avec une quantité de « 0 » lorsque les commandes en souffrance sont activées.
 * **MDVA-40435** (*pour Adobe Commerce et Magento Open Source >=2.3.4 &lt;2.4.4*) - Corrige le problème en appliquant une remise incorrecte aux produits groupés avec des prix dynamiques lorsqu’ils sont appliqués via GraphQL.
 * **MC-42528** (*pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;=2.4.3-p1*) - Corrige le problème en raison duquel la requête GraphQL `categoryList` renvoie à la fois les catégories affectées et non affectées.
@@ -883,7 +900,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **MDVA-37288** (*pour Adobe Commerce 2.4.2*) - Correction du problème en raison duquel des prix de niveau incorrects étaient renvoyés après une demande de GraphQL.
 * **MDVA-37225** (*pour Adobe Commerce >=2.4.1 &lt;=2.4.2-p1*) - Correction du problème en raison duquel le processus de chargement est bloqué lors de la création rapide d’une commande lorsqu’il existe une valeur entière dans les SKU importés.
 * **MDVA-37224** (*pour Adobe Commerce >=2.3.3 &lt;=2.4.2-p1*) - Correction du problème en raison duquel les clients ne peuvent pas payer de devis négociable avec [!DNL PayFlow Pro] avec un autre produit du panier.
-* **MDVA-36286** (*pour Adobe Commerce >=2.3.6 &lt;=2.4.2-p1*) - Résout le problème où l’aperçu du widget des produits Page Builder s’interrompt si le même SKU occupe une position différente dans les sous-catégories.
+* **MDVA-36286** (*pour Adobe Commerce >=2.3.6 &lt;=2.4.2-p1*) - Correction du problème en raison duquel l’aperçu du widget Produits de Page Builder se rompt si le même SKU a une position différente dans les sous-catégories.
 * **MDVA-30186** (*pour Adobe Commerce >=2.3.4 &lt;=2.3.5-p2, >=2.4.0 &lt;=2.4.0-p1, >=2.4.2 &lt;=2.4.2-p1*) - Corrige le problème où les options d’attribut sont triées par valeur d’option au lieu du nombre d’éléments d’attribut dans la réponse GraphQL.
 
 ## v1.0.22 {#v1-0-22}
@@ -897,7 +914,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 ## v1.0.21 {#v1-0-21}
 
-* **MDVA-34665** (*pour Adobe Commerce >=2.3.4 &lt;=2.3.4-p2*) - Résout le problème des produits groupés manquants sur les pages de catégorie.
+* **MDVA-34665** (*pour Adobe Commerce >=2.3.4 &lt;=2.3.4-p2*) - Corrige le problème lié aux produits groupés manquants sur les pages de catégorie.
 * **MDVA-36615** (*pour Adobe Commerce 2.4.2*) - Correction d’un problème lié à un nombre de produits incorrect dans la grille de produits de l’administrateur.
 * **MDVA-36464** (*pour Adobe Commerce >=2.4.0 &lt;=2.4.2*) - Corrige le problème en raison duquel la configuration des notifications par e-mail ne fonctionne pas au niveau de la vue du magasin.
 * **MDVA-36138** (*pour Adobe Commerce ^2.3.2*) - Correction d’un problème en raison duquel le prix d’expédition n’est pas ajusté et que le prix d’expédition complet est affiché aux clients si tous les articles du panier ne sont pas éligibles à la règle de panier d’expédition gratuit.
@@ -906,31 +923,31 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 ## v1.0.20 {#v1-0-20}
 
-* **MDVA-36170** (*pour Adobe Commerce >=2.3.4 &lt;2.4.2*) - Cela résout le problème où la requête GraphQL n’est pas mise en cache à l’aide de la balise de cache de catégorie.
-* **MDVA-33168** (*pour Adobe Commerce >=2.3.3 &lt;2.4.2*) - Résout le problème lors de la mise à jour d’un attribut de produit via l’API Tous les autres attributs passent à une valeur vide.
-* **MDVA-19640** (*pour Adobe Commerce >=2.3.0*) - Résout le problème en raison duquel [!DNL Advanced Reporting] n’affiche aucune donnée.
-* **MDVA-11189** (*pour Adobe Commerce >=2.3.0*&lt;2.3.5 ) - Résout le problème lorsque, après l’importation d’un fichier CSV pour mettre à jour le stock de produits, des `cataloginventory_stock` lignes du tableau sont supprimées.
+* **MDVA-36170** (*pour Adobe Commerce >=2.3.4 &lt;2.4.2*) - Correction du problème en raison duquel la requête GraphQL n’est pas mise en cache à l’aide de la balise de cache de catégorie.
+* **MDVA-33168** (*pour Adobe Commerce >=2.3.3 &lt;2.4.2*) - Corrige le problème lors de la mise à jour d’un attribut de produit via l’API, tous les autres attributs sont remplacés par une valeur vide.
+* **MDVA-19640** (*pour Adobe Commerce >=2.3.0*) - Corrige le problème en raison duquel [!DNL Advanced Reporting] n’affiche aucune donnée.
+* **MDVA-11189** (*pour Adobe Commerce >=2.3.0 &lt;2.3.5*) - Corrige le problème en raison duquel, après avoir importé un fichier CSV pour mettre à jour le stock de produits, les lignes du tableau `cataloginventory_stock` sont supprimées.
 * **MDVA-26639** (*pour Adobe Commerce >=2.3.3-p1 &lt;2.3.6*) - Correction du problème en raison duquel, si un nouveau modèle d’e-mail de confirmation de commande est créé, les éléments de commande sont manquants dans l’e-mail de commande.
-* **MDVA-15546** (*pour Adobe Commerce >=2.3.0*) - Résout le problème en raison duquel, après la création d’une commande, une *erreur Column entity_id where clause is ambigu* s’affiche dans le journal des exceptions.
-* **MDVA-21095** (*pour Adobe Commerce >=2.3.0*&lt;2.3.5) - Résout le problème lorsqu’une requête `INSERT INTO search_tmp` ne se termine pas après la mise à jour de la valeur d’attribut de masse.
-* **MDVA-23845** (*pour Adobe Commerce >=2.3.2-p2 &lt;2.3.5*) - Résout le problème selon lequel les modèles de courrier électronique ne peuvent pas être prévisualisés une fois JavaScript minification activée.
-* **MDVA-22026** (*pour Adobe Commerce >=2.3.2 &lt;2.3.4*) - Résout le problème d’échec de l’importation de produits à partir d’un fichier CSV, y compris des images à partir d’URL externes.
-* **MDVA-22383** (*pour Adobe Commerce >=2.3.0 &lt;2.3.4*) - Résout le problème lorsque l’enregistrement d’un produit prend beaucoup de temps et que les sauts de page se produisent.
+* **MDVA-15546** (*pour Adobe Commerce >=2.3.0*) - Corrige le problème en raison duquel, après la création d’une commande, un *Id_entité_colonne où la clause est ambiguë* l’erreur s’affiche dans le journal des exceptions.
+* **MDVA-21095** (*pour Adobe Commerce >=2.3.0 &lt;2.3.5*) - Corrige le problème lorsqu’une `INSERT INTO search_tmp` de requête ne se termine pas après la mise à jour en masse de la valeur d’attribut.
+* **MDVA-23845** (*pour Adobe Commerce >=2.3.2-p2 &lt;2.3.5*) - Correction du problème en raison duquel les modèles d’e-mail ne peuvent pas être prévisualisés une fois que la minimisation de JavaScript est activée.
+* **MDVA-22026** (*pour Adobe Commerce >=2.3.2 &lt;2.3.4*) - Corrige le problème d’échec de l’importation de produits à partir d’un fichier CSV, y compris des images provenant d’URL externes.
+* **MDVA-22383** (*pour Adobe Commerce >=2.3.0 &lt;2.3.4*) - Correction du problème en raison duquel l’enregistrement d’un produit prend beaucoup de temps et les sauts de page.
 * **MC-41359** (*pour Adobe Commerce >=2.3.6-p1 &lt;2.3.7, >=2.4.2 &lt;2.4.3*) - Corrige le problème de paramètres de cookie SameSite incorrects.
 
 ## v1.0.19 {#v1-0-19}
 
 * **MDVA-33614** (*pour Adobe Commerce 2.4.1*) - Correction du problème en raison duquel Page Builder renvoie l’erreur suivante : *Une erreur s’est produite lors du lancement de Page Builder. Veuillez consulter votre contact d’assistance technique.*
-* **MDVA-35356** (*pour Adobe Commerce >=2.3.0 &lt;2.4.3*) - Résout le problème lié au retour de crédit de magasin incorrect après l’annulation de commande partiellement facturée.
-* **MDVA-33289** (*pour Adobe Commerce >=2.4.0*&lt;2.4.3 ) - Résout le problème où le code JavaScript brut s’affiche dans l’interface utilisateur de l’adresse de facturation lors du paiement si [!DNL Google Tag Manager] est activé.
+* **MDVA-35356** (*pour Adobe Commerce >=2.3.0 &lt;2.4.3*) - Corrige le problème lié à un retour de crédit de magasin incorrect après l’annulation d’une commande partiellement facturée.
+* **MDVA-33289** (*pour Adobe Commerce >=2.4.0 &lt;2.4.3*) - Corrige le problème en raison duquel le code JavaScript brut s’affiche dans l’interface utilisateur de l’adresse de facturation lors du passage en caisse si [!DNL Google Tag Manager] est activé.
 * **MDVA-35982** (*pour Adobe Commerce >=2.3.0 &lt;2.4.3*) - Correction du problème en raison duquel les utilisateurs administrateurs limités à un site web spécifique ne peuvent pas créer d’expédition pour la commande passée sur le même site web.
 * **MDVA-35155** (*pour Adobe Commerce >=2.3.0 &lt;2.3.6*) - Corrige le problème en raison duquel il est impossible d’acheter un produit groupé si le titre de l’option a été modifié.
 * **MDVA-35910** (*pour Adobe Commerce >=2.4.1 &lt;2.4.3*) - Corrige le problème en raison duquel il est impossible de créer un compte client après avoir désactivé la fonctionnalité Connexion en tant que client.
-* **MDVA-34474** (*pour Adobe Commerce >=2.3.0 &lt;2.4.3*) - Résout le problème lié à l’ajout d’un produit à la liste des demandes à l’aide de l’API.
-* **MDVA-34591** (*pour Adobe Commerce >=2.3.0 &lt;2.4.3*) - Résout le problème lié à une règle de panier incorrecte pour le calcul de la remise Qté maximale est *appliquée à* et *l’étape Qté de remise (Acheter X).*
-* **MDVA-33704 (pour Adobe Commerce >=2.4.0 &lt;2.4.3 *) - Résout le problème où l’option*Expédition de ramassage *en magasin ne s’affiche pas, bien qu’elle soit configurée pour être disponible.***
-* **MDVA-34928** (*pour Adobe Commerce >=2.3.5 &lt;2.3.5-p2*) - Résout le problème où le chargeur de page est affiché indéfiniment après la suppression du crédit de la boutique du paiement.
-* **MDVA-35254** (*pour Adobe Commerce >=2.3.1 &lt;2.4.3*) - Corrige les problèmes liés à CAPTCHA lors du paiement.
+* **MDVA-34474** (*pour Adobe Commerce >=2.3.0 &lt;2.4.3*) - Corrige le problème lié à l’ajout d’un produit à la liste de demandes d’approvisionnement à l’aide de l’API.
+* **MDVA-34591** (*pour Adobe Commerce >=2.3.0 &lt;2.4.3*) - Corrige le problème en raison d’un calcul de remise de règle de panier incorrect pour *La remise Qté maximale est appliquée à* et *Étape Qté de remise (Acheter X)*.
+* **MDVA-33704** (*pour Adobe Commerce >=2.4.0 &lt;2.4.3*) - Corrige le problème en raison duquel l’option *En magasin, retrait* expédition ne s’affiche pas, bien qu’elle soit configurée pour être disponible.
+* **MDVA-34928** (*pour Adobe Commerce >=2.3.5 &lt;2.3.5-p2*) - Correction du problème en raison duquel le chargeur de page s’affiche indéfiniment après la suppression du crédit de la boutique du paiement.
+* **MDVA-35254** (*pour Adobe Commerce >=2.3.1 &lt;2.4.3*) - Corrige les problèmes liés à CAPTCHA lors de l’extraction.
 * **MDVA-35569** (*pour Adobe Commerce >=2.3.4 &lt;2.4.2*) - Correction du problème en raison duquel le champ *taxes fixes sur les produits* n’est pas renseigné dans la réponse GraphQL lorsque l’état est spécifié.
 * **MDVA-35847** (*pour Adobe Commerce >=2.4.1 &lt;2.4.3*) - Correction du problème B2B en raison duquel le formulaire Utilisateurs de l’entreprise est rompu si un attribut client personnalisé est utilisé.
 * **MDVA-31307** (*pour Adobe Commerce >=2.4.0 &lt;2.4.2*) - Correction du problème de *mémoire insuffisante* erreurs sur certaines catégories en raison de problèmes de whitelistage CSP dynamique pour les blocs mis en cache.
@@ -950,9 +967,9 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **MDVA-35064** (*pour Adobe Commerce >=2.3.3 &lt;2.4.3*) - Correction du problème en raison duquel les réécritures d’URL ne sont pas générées pour les produits configurables créés via l’API.
 * **MDVA-34943** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corrige le problème en raison duquel les commandes rapides mettent en cache les SKU saisies précédemment.
 * **MDVA-35197** (*pour Adobe Commerce >=2.3.5 &lt;2.4.0*) - Corrige le problème en raison duquel une erreur se produit lors de l’ajout au panier à l’aide de GraphQL si des produits ajoutés précédemment sont en rupture de stock.
-* **MDVA-34850** (*pour Adobe Commerce >=2.3.1 &lt;2.4.0*) - Résout le problème où les options de rupture de stock d’un produit configurable ne sont pas affichées au lieu d’être affichées comme barrées.
-* **MDVA-34867** (*pour Adobe Commerce >=2.3.0 &lt;2.4.3*) - Résout le problème où les valeurs d’un champ de condition défini pour une mise à jour planifiée ne sont pas enregistrées.
-* **MDVA-35092 (pour Adobe Commerce >=2.3.5&lt;2.4.3 *) - Résout le problème où les utilisateurs ne peuvent pas ajouter [!DNL Vimeo] de vidéos en raison d’une API obsolète[!DNL Vimeo].***
+* **MDVA-34850** (*pour Adobe Commerce >=2.3.1 &lt;2.4.0*) - Correction du problème d’affichage des options en rupture de stock d’un produit configurable au lieu de leur affichage en tant que texte barré.
+* **MDVA-34867** (*pour Adobe Commerce >=2.3.0 &lt;2.4.3*) - Corrige le problème en raison duquel les valeurs d’un champ de condition défini pour une mise à jour planifiée ne sont pas enregistrées.
+* **MDVA-35092** (*pour Adobe Commerce >=2.3.5 &lt;2.4.3*) - Correction du problème en raison duquel les utilisateurs ne peuvent pas ajouter de vidéos [!DNL Vimeo] en raison de l’obsolescence de l’API [!DNL Vimeo].
 
 ## v1.0.16 {#v1-0-16}
 
@@ -985,10 +1002,10 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **MDVA-33382** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corrige les problèmes d’invalidation des indexeurs après la suppression de produits d’une catégorie.
 * **MDVA-28511** (*pour Adobe Commerce >=2.3.5 &lt;2.3.6*) - Corrige le problème en raison duquel il n’est pas possible de terminer [!DNL PayPal] extraction si le champ Nom contient certains caractères (comme des majuscules).
 * **MDVA-31519** (*pour Adobe Commerce >=2.3.5 &lt;2.3.6*) - Corrige le problème des délais d’attente dans le passage en caisse des invités lorsqu’une règle de vente à l’échelle du site est en cours d’utilisation.
-* **MDVA-33281** (*pour Adobe Commerce >=2.3.4*&lt;2.3.6 ) - Résout le problème d’une erreur irrécupérable due `inventory:reservation:list-inconsistencies` à un type de paramètre SKU incorrect.
-* **MDVA-24201** (*pour Adobe Commerce >=2.3.0 &lt;2.3.5*) - Résout le problème où les prix ne reflètent pas la règle de prix du panier planifié jusqu’à ce qu’ils soient réindexés manuellement.
-* **MDVA-32694** (*pour Adobe Commerce >=2.3.0 &lt;2.3.6 ||=&quot;&quot;>= 2.4.0 &lt;2.4.2*) - Résout le problème où un utilisateur administrateur ne peut pas ajouter un produit à un devis négociable s’il est lié à un magasin non par défaut.&lt;/2.3.6>
-* **MDVA-33516** (*pour Adobe Commerce >=2.3.0 &lt;2.3.6*) - Résout le problème où la modification d’un produit groupé dans une liste de demandes entraîne une erreur.
+* **MDVA-33281** (*pour Adobe Commerce >=2.3.4 &lt;2.3.6*) - Corrige le problème d’erreur fatale dans `inventory:reservation:list-inconsistencies` en raison d’un type de paramètre de SKU incorrect.
+* **MDVA-24201** (*pour Adobe Commerce >=2.3.0 &lt;2.3.5*) - Corrige le problème en raison duquel les prix ne reflètent pas la règle de prix de panier planifiée tant qu’ils n’ont pas été réindexés manuellement.
+* **MDVA-32694** (*pour Adobe Commerce >=2.3.0 &lt;2.3.6 || >= 2.4.0 &lt;2.4.2*) - Correction du problème en raison duquel un utilisateur administrateur ne peut pas ajouter un produit à un devis négociable s’il est lié à un magasin autre que celui par défaut.
+* **MDVA-33516** (*pour Adobe Commerce >=2.3.0 &lt;2.3.6*) - Corrige le problème en raison duquel la modification d’un produit groupé dans une liste de demandes d’approvisionnement entraîne une erreur.
 * **MDVA-33975** (*pour Adobe Commerce >=2.3.4 &lt;2.4.2*) - Corrige plusieurs problèmes liés au calcul du prix dans les requêtes GraphQL.
 
 ## v1.0.13 {#v1-0-13}
@@ -1030,19 +1047,19 @@ Correctifs mineurs pour les versions de correctifs
 
 * **MDVA-31363** (*pour Adobe Commerce >=2.3.2 &lt;2.4.2*) - Correction du problème en raison duquel la règle de prix de panier avec coupon ne s’applique pas via GraphQL lorsque l’action *Remise de montant fixe pour l’ensemble du panier* est utilisée.
 * **MDVA-30889** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corrige le problème où une erreur se produit après la facturation d’un bundle avec des produits simples et virtuels comme options.
-* **MDVA-31791** (*pour Adobe Commerce >=2.3.4 &lt;2.3.5*) - Améliore les performances de la page produit dans les cas où des règles cibles ou des produits liés sont utilisés.
+* **MDVA-31791** (*pour Adobe Commerce >=2.3.4 &lt;2.3.5*) - Améliore les performances de la page produit dans les cas où des règles cible ou des produits liés sont utilisés.
 * **MDVA-31168** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corrige le problème en raison duquel le fichier CSV d’exportation du produit n’apparaît pas et une erreur d’allocation de mémoire se produit.
 * **MDVA-32313** (*pour Adobe Commerce >=2.3.0 &lt;2.3.4*) - Correction du problème en raison duquel des produits configurables pouvaient être ajoutés à la liste de souhaits avec les mauvaises options de configuration.
 * **MDVA-31759** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2*) - Correction du problème où les produits ne sont pas mis à jour avec les valeurs d’attribut *dropdown* et *textarea* lors de l’importation du fichier CSV.
-* **MDVA-32012** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2*) - Résout le problème où les codes postaux en Corée et en Argentine ne peuvent pas être validés.
-* **MDVA-31640** (*pour Adobe Commerce >=2.3.1 &lt;2.3.6 ||=&quot;&quot;>=2.4.0 &lt;2.4.1*) - Résout le problème où un prix spécial ne peut pas être mis à jour via l’API REST.&lt;/2.3.6>
+* **MDVA-32012** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corrige le problème en raison duquel les codes postaux en Corée et en Argentine ne peuvent pas être validés.
+* **MDVA-31640** (*pour Adobe Commerce >=2.3.1 &lt;2.3.6 || >=2.4.0 &lt;2.4.1*) - Correction du problème en raison duquel un prix spécial ne peut pas être mis à jour via l’API REST.
 * **MDVA-28651** (*pour Adobe Commerce >=2.3.0 &lt;2.3.6 || >2.4.0 avec extension B2B*) - Correction du problème de performances lié au chargement de devis négociables via l’API REST.
 
 ## v1.0.8 {#v1-0-8}
 
 * **MDVA-31242** (*pour Adobe Commerce >=2.3.0 &lt;2.4.1 avec extension B2B*) - Corrige le problème d’affichage d’un signe de devise incorrect dans la grille d’avoir.
 * **MDVA-31295** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corrige le problème où les points de récompense ne sont pas calculés lorsqu’une commande partielle est terminée et que les articles sont taxés.
-* **MDVA-30112** (*pour Adobe Commerce >=2.3.4 &lt;2.4.2*) - Résout le problème selon lequel, si le nombre de commandes dépasse la valeur de la *taille* du groupe, Adobe Commerce considère les commandes en *attente* comme des incohérences.
+* **MDVA-30112** (*pour Adobe Commerce >=2.3.4 &lt;2.4.2*) - Correction du problème en raison duquel, si le nombre de commandes dépasse la valeur *taille-lot*, Adobe Commerce considère les commandes avec le statut *en attente* comme des incohérences.
 * **MDVA-31150** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2*) - Correction du problème en raison duquel les soldes des cartes de crédit et des cartes cadeaux du magasin ne sont pas renvoyés par l’appel API REST de GET Invoice, lorsque la facture a été validée par l’appel API REST et que la commande a été partiellement payée par les comptes de carte de crédit et de carte cadeau du magasin.
 * **MDVA-30963** (*pour Adobe Commerce >=2.3.2 &lt;2.4.2*) - Correction du problème en raison duquel les résultats de filtrage des produits définis sur contiennent uniquement les valeurs spécifiées pour la portée *Toutes les vues de magasin* dans l’administration, incluent les produits dont les valeurs sont remplacées au niveau de la vue de magasin.
 * **MDVA-29954** (*pour Adobe Commerce >=2.3.0 &lt;2.3.6 || 2.4.0 || 2.4.2 avec extension B2B*) - Correction du problème en raison duquel les e-mails *Nouvelle demande d’enregistrement de l’entreprise* et *Vous avez été lié à une entreprise* sont envoyés à la mauvaise adresse.
@@ -1061,17 +1078,17 @@ Correctifs mineurs pour les versions de correctifs
 * **MDVA-30815** (*pour Adobe Commerce >=2.3.2 &lt;2.3.4*) - Correction du problème en raison duquel, lorsque vous modifiez le nombre de résultats de recherche à afficher sur la page des résultats de recherche, Adobe Commerce affiche une page vierge. [!DNL Elasticsearch] affiche désormais correctement les résultats des pages de catégorie lorsque vous modifiez le nombre de résultats de recherche affichés par page.
 * **MDVA-30782** (*pour Adobe Commerce >=2.3.5 &lt;2.4.2*) - Corrige le problème d’affichage du bloc dynamique quelle que soit la règle du panier.
 * **MDVA-31021** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corrige le problème lié aux problèmes de performances dans `module-catalog-import-export/Model/Import/Product/Option.php`. S’il y a plus de 100 000 enregistrements dans `catalog_product_option` tableau, la validation d’un nouveau fichier CSV avec un seul produit prend moins de 10 secondes.
-* **MDVA-31007** (*pour Adobe Commerce >=2.4.0 &lt;2.4.1*) - Résout le problème où les attributs d’adresse personnalisés ne s’affichent pas correctement dans la page des détails de la commande de la zone Mon compte et dans le serveur principal.
+* **MDVA-31007** (*pour Adobe Commerce >=2.4.0 &lt;2.4.1*) - Correction d’un problème en raison duquel les attributs d’adresse personnalisée ne s’affichaient pas correctement dans la page des détails de la commande dans la zone Mon compte et sur le serveur principal.
 * **MDVA-29389** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2*) - Correction du problème lié aux rapports avancés où la tâche cron `analytics_collect_data` indique : *Le port doit être configuré dans le paramètre de l’hôte (comme localhost:3306)*.
 * **MDVA-31343** (*pour Adobe Commerce >=2.3.4 &lt;2.3.6*) - Corrige le problème lié au `page-layout-category-full-width` de classe de corps supprimé lorsqu’une catégorie est planifiée.
 * **MDVA-30945** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corrige le problème en raison duquel vous recevez un message d’erreur irrécupérable lors de la mise à jour des `Call to a member function getValue() on null in module-configurable-product CartItemProcessor.php` de panier.
 
 ## v1.0.6 {#v1-0-6}
 
-* **MDVA-28993** (*pour Adobe Commerce >=2.3.4*&lt;2.4.0 ) - Implémente le minimum doit correspondre aux ** fonctionnalités et recherche partielle pour [!DNL Elasticsearch] le moteur. Résout les problèmes liés aux tirets dans les requêtes de recherche.
-* **MDVA-30102** (*pour Adobe Commerce >=2.3.2 &lt;=2.4.0*) - Résout le problème où le cache Redis se développe rapidement car les caches de mise en page n’ont pas de TTL.
-* **MDVA-30599** (*pour Adobe Commerce >=2.3.4 &lt;=2.4.0*) - Résout le problème où les devis d’invités créés à l’aide de l’API sont incorrectement marqués comme devis pour les clients connectés.
-* **MDVA-29446** (*pour Adobe Commerce >=2.3.3 &lt;=2.4.0*) - Résout le problème où le prix de la méthode d’expédition non applicable est affiché comme zéro lors du paiement.
+* **MDVA-28993** (*pour Adobe Commerce >=2.3.4 &lt;2.4.0*) - Implémente la fonctionnalité *La valeur minimale doit correspondre* et la recherche partielle [!DNL Elasticsearch] moteur. Résout les problèmes liés aux tirets dans les requêtes de recherche.
+* **MDVA-30102** (*pour Adobe Commerce >=2.3.2 &lt;=2.4.0*) - Correction du problème en raison duquel le cache Redis augmente rapidement, car les caches de disposition n’ont pas de TTL.
+* **MDVA-30599** (*pour Adobe Commerce >=2.3.4 &lt;=2.4.0*) - Correction du problème en raison duquel les devis d’invités créés à l’aide de l’API sont incorrectement marqués comme devis pour les clients connectés.
+* **MDVA-29446** (*pour Adobe Commerce >=2.3.3 &lt;=2.4.0*) - Corrige le problème en raison duquel le prix d’un mode d’expédition non applicable est indiqué comme zéro lors du passage en caisse.
 * **MDVA-30357** (*pour Adobe Commerce >=2.3.2 &lt;=2.4.0*) - Correction du problème en raison duquel des URL d’image incorrectes sont créées lors de la génération d’un plan de site par cron.
 * **MDVA-30565** (*pour Adobe Commerce >=2.3.2 &lt;=2.3.3-p1*) - Correction du problème où *Aucune entité de ce type avec l’erreur cartid = 0* ne s’affiche pour le client invité lors du passage en caisse du storefront si le panier persistant est activé.
 * **MDVA-29787** (*pour Adobe Commerce >=2.3.0 &lt;=2.4.0*) - Correction du problème en raison duquel la règle cible pour les produits associés ne fonctionne pas lorsque *est l’une des* conditions est utilisée pour définir les produits à afficher.
@@ -1091,8 +1108,8 @@ Correctifs mineurs pour les versions de correctifs
 * **MDVA-30107** (*pour Adobe Commerce >=2.3.0 &lt;2.3.6*) - Correction d’un problème en raison duquel le sélecteur de boutique ne fonctionne pas comme prévu si différentes URL de base sont utilisées pour les vues de boutique.
 * **MDVA-28763** (*pour Adobe Commerce >=2.3.2 &lt;2.3.4*) - Correction du problème de duplication d’images de produit après plusieurs mises à jour des informations de produit à l’aide de l’API REST.
 * **MDVA-30284** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2*) - Correction du problème en raison duquel l’indexeur de la recherche catalogue échoue en raison de l’erreur *[!DNL Elasticsearch]suivante : la limite du nombre total de champs de l’index a été dépassée.*
-* **MDVA-29042** (*pour Adobe Commerce >=2.3.3 &lt;=2.3.4-p2 with B2B extension*) - Résout le problème où les autorisations de catalogue ont été modifiées en *Autoriser* automatiquement après l’ajout d’un nouveau produit au catalogue partagé.
-* **MDVA-30428** (*pour Adobe Commerce >=2.3.3 &lt;2.4.2*) - Résout le problème selon lequel les clients ne peuvent pas ajouter un produit à la liste de souhaits si ce produit est affecté à une source de stock personnalisée.
+* **MDVA-29042** (*pour Adobe Commerce >=2.3.3 &lt;=2.3.4-p2 avec extension B2B*) - Corrige le problème où les autorisations du catalogue étaient modifiées en *Autoriser* automatiquement après l’ajout d’un nouveau produit au catalogue partagé.
+* **MDVA-30428** (*pour Adobe Commerce >=2.3.3 &lt;2.4.2*) - Correction du problème en raison duquel les clients ne peuvent pas ajouter un produit à leur liste de souhaits si ce produit est affecté à une source d’inventaire personnalisée.
 * **MDVA-28661** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2 avec extension B2B*) - Corrige le problème où une erreur est générée dans la section Compte d’entreprise des utilisateurs de l’entreprise après la modification de l’administrateur de l’entreprise.
 
 ## v1.0.4 {#v1-0-4}
@@ -1118,8 +1135,8 @@ Correctifs mineurs pour les versions de correctifs
 * **MDVA-26694** (*pour Adobe Commerce >=2.3.0 &lt;2.3.6 || 2.4.0*) - Corrige le problème en raison duquel les caches de produits et de catalogues expirent quotidiennement, même si leur expiration est planifiée différemment.
 * **MDVA-27825** (*pour Adobe Commerce >=2.3.0 &lt;2.4.1*) - Correction du problème en raison duquel l’exportation de gros volumes de données a échoué en raison d’une fuite de mémoire.
 * **MDVA-29085** (*pour Adobe Commerce >=2.3.0 &lt;=2.3.5-p1*) - Correction du problème B2B en raison duquel aucun e-mail de nouvelle société obligatoire n’est envoyé si une société est créée par API.
-* **MDVA-29344** (*pour Adobe Commerce >=2.3.5 &lt;=2.4.0-p1*) - Résout le problème où Page Builder est bloqué après avoir copié du texte d’un élément d’en-tête vers un élément de texte.
-* **MDVA-29835** (*pour Adobe Commerce >2.3.1 &lt;2.4.2*) - Résout le problème où les commandes de cartes-cadeaux contenaient deux codes au lieu d’un.
-* **MDVA-30052** (*pour Adobe Commerce >=2.3.2-p2 &lt;2.3.5*) - Résout le problème du contenu privé (stockage local) qui n’est pas rempli correctement, ce qui entraîne des problèmes de performances.
+* **MDVA-29344** (*pour Adobe Commerce >=2.3.5 &lt;=2.4.0-p1*) - Corrige le problème en raison duquel Page Builder est bloqué après avoir copié du texte d’un élément d’en-tête vers un élément de texte.
+* **MDVA-29835** (*pour Adobe Commerce >2.3.1 &lt;2.4.2*) - Correction du problème en raison duquel les commandes de cartes-cadeaux contenaient deux codes au lieu d’un.
+* **MDVA-30052** (*pour Adobe Commerce >=2.3.2-p2 &lt;2.3.5*) - Correction d’un problème en raison duquel le contenu privé (stockage local) n’était pas correctement renseigné, ce qui entraînait des problèmes de performances.
 * **MDVA-30131** (*pour Adobe Commerce >=2.3.4 &lt;2.3.6 || 2.4.0*) - Correction du problème lié à la navigation par couches, où la valeur *Non* pour les attributs de produit de type booléen n’était pas incluse dans la navigation par couches si [!DNL Elasticsearch] était utilisée comme moteur de recherche.
 * **MDVA-35514** (*pour Adobe Commerce >=2.4.0 &lt;2.4.1*) - Correction du problème lié à la création d’une étiquette d’expédition et à l’ajout de produits commandés à un package dans la fenêtre modale Créer des packages.
