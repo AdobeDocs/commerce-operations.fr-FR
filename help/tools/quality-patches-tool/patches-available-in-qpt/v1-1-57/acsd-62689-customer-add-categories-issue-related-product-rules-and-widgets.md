@@ -3,17 +3,17 @@ title: 'ACSD-62689 : impossible d’ajouter des catégories dans les [!UICONTROL
 description: Appliquez le correctif ACSD-62689 pour résoudre le problème d’Adobe Commerce en raison duquel un client ne peut pas ajouter de catégories dans les [!UICONTROL Related Product Rules] et les widgets après l’imbrication de profondeur 4.
 feature: Categories
 role: Admin, Developer
-source-git-commit: 154a017fbc6e069e8e59651db46955922c004955
+exl-id: 2506744a-01c8-462b-9a27-cd0bdb5664f9
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-62689 : impossible d’ajouter des catégories dans les *[!UICONTROL Related Product Rules]* et les widgets après la profondeur 4
 
-Le correctif ACSD-62689 corrige le problème en raison duquel un client ne peut pas ajouter de catégories dans les *[!UICONTROL Related Product Rules]* et les widgets après l’imbrication de profondeur 4. Ce correctif est disponible lorsque la version 1.1.57 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/patches/release-notes.html) est installée. L’ID du correctif est ACSD-62689. Notez que ce problème doit être résolu dans Adobe Commerce 2.4.8.
+Le correctif ACSD-62689 corrige le problème en raison duquel un client ne peut pas ajouter de catégories dans les *[!UICONTROL Related Product Rules]* et les widgets après l’imbrication de profondeur 4. Ce correctif est disponible lorsque la version 1.1.57 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-62689. Notez que ce problème doit être résolu dans Adobe Commerce 2.4.8.
 
 ## Produits et versions concernés
 
@@ -67,3 +67,4 @@ Pour appliquer des correctifs individuels, utilisez les liens suivants en foncti
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
 * [[!DNL Quality Patches Tool] : un outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils .
+

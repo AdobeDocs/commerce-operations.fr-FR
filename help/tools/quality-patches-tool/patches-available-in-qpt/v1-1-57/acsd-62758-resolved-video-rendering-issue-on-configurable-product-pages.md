@@ -3,16 +3,17 @@ title: 'ACSD-62758 : résolution du problème de rendu vidéo sur les pages de p
 description: Appliquez le correctif ACSD-62758 pour résoudre le problème d’Adobe Commerce en raison duquel les vidéos de produits sur les pages de détails de produits configurables ne s’affichent pas correctement lorsque les URL contiennent des options d’échantillon présélectionnées.
 feature: Catalog Management
 role: Admin, Developer
-source-git-commit: 313709361ee86e39b89c416f71a92b078318f4fb
+exl-id: 084b497d-4471-4458-bc1d-2a452bfe2662
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
 
 # ACSD-62758 : résolution du problème de rendu vidéo sur les pages de produits configurables
 
-Le correctif ACSD-62758 corrige le problème en raison duquel les vidéos de produit sur les pages de détails de produit configurables ne s’affichent pas correctement lorsque les URL contiennent des options d’échantillon présélectionnées. Ce correctif est disponible lorsque la version 1.1.57 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-62758. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.8.
+Le correctif ACSD-62758 corrige le problème en raison duquel les vidéos de produit sur les pages de détails de produit configurables ne s’affichent pas correctement lorsque les URL contiennent des options d’échantillon présélectionnées. Ce correctif est disponible lorsque la version 1.1.57 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-62758. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.8.
 
 ## Produits et versions concernés
 
@@ -70,3 +71,4 @@ Pour appliquer des correctifs individuels, utilisez les liens suivants en foncti
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
 * [[!DNL Quality Patches Tool] : un outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils .
+

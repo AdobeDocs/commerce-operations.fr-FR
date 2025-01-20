@@ -3,17 +3,17 @@ title: 'ACSD-62591 : le thème ne change pas lorsque **[!UICONTROL User Agent Ru
 description: Appliquez le correctif ACSD-62591 pour résoudre le problème d’Adobe Commerce en raison duquel le thème ne change pas correctement lorsque les **[!UICONTROL User Agent Rules]** sont configurés.
 feature: Themes
 role: Admin, Developer
-source-git-commit: 319ac7ea1fb8f33f4ed7bfa440477cf6d6657cb5
+exl-id: 7b206b25-8918-40a6-a956-d38d5058d38f
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-62591 : le thème ne change pas correctement lorsqu’[!UICONTROL User Agent Rules] est configuré
 
-Le correctif ACSD-62591 corrige le problème en raison duquel le thème ne change pas correctement lorsque les **[!UICONTROL User Agent Rules]** sont configurés. Ce correctif est disponible lorsque la version 1.1.55 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-62591. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.8.
+Le correctif ACSD-62591 corrige le problème en raison duquel le thème ne change pas correctement lorsque les **[!UICONTROL User Agent Rules]** sont configurés. Ce correctif est disponible lorsque la version 1.1.55 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-62591. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.8.
 
 ## Produits et versions concernés
 
@@ -61,3 +61,4 @@ Pour appliquer des correctifs individuels, utilisez les liens suivants en foncti
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
 * [[!DNL Quality Patches Tool] : un outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils .
+

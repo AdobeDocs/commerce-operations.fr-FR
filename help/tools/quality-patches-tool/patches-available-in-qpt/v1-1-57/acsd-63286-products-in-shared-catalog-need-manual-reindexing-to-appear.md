@@ -3,16 +3,17 @@ title: 'ACSD-63286 : les produits affectés au catalogue partagé nécessitent u
 description: Appliquez le correctif ACSD-63286 pour résoudre le problème d’Adobe Commerce où les produits affectés à un catalogue partagé via l’API n’apparaissent pas sur le storefront tant qu’une réindexation manuelle n’a pas été exécutée.
 feature: Products, REST
 role: Admin, Developer
-source-git-commit: 00b2b9285ca27d630bd0ece2750b531710e8d196
+exl-id: 0435c06e-337e-4320-acc6-fa79a3b34008
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 # ACSD-63286 : les produits affectés au catalogue partagé nécessitent une réindexation manuelle pour apparaître
 
-Le correctif ACSD-63286 corrige le problème où les produits affectés à un catalogue partagé via l’API n’apparaissent pas sur le storefront tant qu’une réindexation manuelle n’est pas exécutée. Ce correctif est disponible lorsque la version 1.1.57 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-63286. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.8.
+Le correctif ACSD-63286 corrige le problème où les produits affectés à un catalogue partagé via l’API n’apparaissent pas sur le storefront tant qu’une réindexation manuelle n’est pas exécutée. Ce correctif est disponible lorsque la version 1.1.57 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-63286. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.8.
 
 ## Produits et versions concernés
 
