@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 3b200e814ee973fde79b436d9efc5738b3420ee2
+source-git-commit: b2659c1fc31150e452cb50424bb26529e6162c85
 workflow-type: tm+mt
-source-wordcount: '6811'
+source-wordcount: '6825'
 ht-degree: 0%
 
 ---
@@ -720,6 +720,7 @@ ht-degree: 0%
          - [ACSD-62671: [!DNL GraphQL] ne renvoie pas l’adresse mise à jour à la première tentative](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
       - v1.1.58 {#v1-1-58}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.58](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/overview.md)
+         - [ACSD-62118 : la table sales_order_tax_item n&#39;est pas entièrement mise à jour pour les commandes B2B passées à l&#39;aide de la méthode [!UICONTROL Purchase Order]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method.md)
    - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - {#cli-reference} de référence des outils de ligne de commande
    - [Adobe Commerce (sur site)](reference/commerce-on-premises.md)
