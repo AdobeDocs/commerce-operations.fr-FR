@@ -1,18 +1,19 @@
 ---
-title: "ACSD-46703 : le glisser-déposer de la personnalisation du produit ne fonctionne pas"
-description: Cet article fournit une solution au problème où le glisser-déposer des options personnalisables du produit ne fonctionne pas comme prévu.
+title: 'ACSD-46703 : le glisser-déposer de la personnalisation du produit ne fonctionne pas'
+description: Cet article fournit une solution au problème de fonctionnement inattendu du glisser-déposer des options personnalisables du produit.
 feature: Products
 role: Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 38b9490a-c9d4-4f8e-b90f-69bf50a6b571
+source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
 
-# ACSD-46703 : Le glisser-déposer de la personnalisation du produit ne fonctionne pas
+# ACSD-46703 : le glisser-déposer de la personnalisation du produit ne fonctionne pas
 
-Le correctif ACSD-46703 corrige le problème en raison duquel les options personnalisables du produit (glisser-déposer) ne fonctionnent pas comme prévu. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20 est installé. L’ID de correctif est ACSD-46703. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-46703 corrige le problème en raison duquel les options personnalisables du produit (glisser-déposer) ne fonctionnent pas comme prévu. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) version 1.1.20 est installé. L’ID du correctif est ACSD-46703. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -22,44 +23,44 @@ Le correctif ACSD-46703 corrige le problème en raison duquel les options person
 
 **Compatible avec les versions d’Adobe Commerce :**
 
-* Adobe Commerce (toutes les méthodes de déploiement) 2.4.4 à 2.4.5
+* Adobe Commerce (toutes les méthodes de déploiement) 2.4.4 - 2.4.5
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec les nouvelles versions de l’[ outil de correctifs de qualité]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec les nouvelles versions de l’[outil de correctifs de qualité]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Les utilisateurs ne peuvent pas faire glisser les options personnalisables d’une page vers une autre.
+Les utilisateurs ne peuvent pas faire glisser les options personnalisables d’une page à une autre.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Créez un produit simple.
-1. Ajoutez des options personnalisables au produit simple et veillez à ajouter plus de 20 options, ce qui se traduit par une pagination.
-1. Essayez de déplacer une option personnalisable (par glisser-déposer) dans la même page.
-1. Essayez maintenant de déplacer une option personnalisable de la page deux vers la page un.
+1. Ajoutez des options personnalisables au produit simple et veillez à ajouter plus de 20 options pour obtenir une pagination.
+1. Essayez de déplacer une option personnalisable (glisser-déposer) dans la même page.
+1. Essayez maintenant de déplacer une option personnalisable de la page 2 vers la page 1.
 
 <u>Résultats attendus</u> :
 
-* Vous pouvez faire glisser les options personnalisables d’une page vers une autre.
+* Vous pouvez faire glisser les options personnalisables d’une page à une autre.
 * Vous pouvez trier les valeurs à l’aide de la fonctionnalité de glisser-déposer, même pour plusieurs pages.
 
 <u>Résultats réels</u> :
 
-Vous ne pouvez pas déplacer de valeur vers une autre page à l’aide de la fonctionnalité de glisser-déposer.
+Vous ne pouvez déplacer aucune valeur vers une autre page à l’aide de la fonctionnalité de glisser-déposer.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [Outils de correctifs de qualité > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de l’outil de correctifs de qualité.
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [Outils de correctifs de qualité > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de l’outil de correctifs de qualité.
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
+Pour en savoir plus sur l’outil de correctifs de la qualité, voir :
 
-* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html) dans notre base de connaissances de support.
+* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de l’outil Correctifs de qualité.
+Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide Outil de correctifs de qualité.
