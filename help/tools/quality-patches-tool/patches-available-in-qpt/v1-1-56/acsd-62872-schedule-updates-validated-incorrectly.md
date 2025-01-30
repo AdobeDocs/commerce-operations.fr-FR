@@ -3,13 +3,13 @@ title: 'ACSD-62872 : les mises à jour de planification ne sont pas validées co
 description: Appliquez le correctif ACSD-62872 pour résoudre le problème d’Adobe Commerce avec la validation d’attribut unique où les mises à jour planifiées sont validées de manière incorrecte.
 feature: Catalog Management, Admin Workspace
 role: Admin, Developer
-source-git-commit: f734dab2316237d60164a430eeabed17782b0ae6
+exl-id: bd0d452b-aae3-4682-8a2c-471a7f8bf132
+source-git-commit: 4727a94178c642922224cb37ad5c1b2b4f6002cb
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62872 : les mises à jour de planification ne sont pas validées correctement
 
@@ -23,7 +23,11 @@ Le correctif ACSD-62872 corrige le problème lié à la validation d’attributs
 
 **Compatible avec les versions d’Adobe Commerce :**
 
-* Adobe Commerce (toutes les méthodes de déploiement) 2.4.4 - 2.4.7-p3
+* Adobe Commerce (toutes les méthodes de déploiement) 2.4.7 - 2.4.7-p3
+
+>[!NOTE]
+>
+>Le correctif est marqué comme obsolète pour les versions 2.4.4 à 2.4.6-p8 dans la version 1.1.58 de QPT.
 
 >[!NOTE]
 >
@@ -39,7 +43,7 @@ La mise à jour planifiée d’un attribut personnalisé est incorrectement vali
 1. Accédez à **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
 1. Créez une nouvelle catégorie.
 1. Dans la même catégorie, accédez à la section **[!UICONTROL Scheduled Updates]** .
-1. Configurez une nouvelle mise à jour pour cette catégorie dans le futur.
+1. Configurez une nouvelle mise à jour pour cette catégorie à tout moment ultérieur.
 1. Avant de commencer la mise à jour planifiée, essayez de modifier la mise à jour planifiée créée pour la catégorie.
 
 <u>Résultats attendus</u> :
@@ -55,8 +59,7 @@ Une erreur est générée : *La valeur de l’attribut « Attribut personnalisé
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-Premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
-
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
