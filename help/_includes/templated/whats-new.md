@@ -1,7 +1,7 @@
 ---
-source-git-commit: a574d2f4b81c489fababcd5dd12750256f29995b
+source-git-commit: 06c3dd1b383b39c60734ea4e464dedb14fdba111
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1053'
 ht-degree: 3%
 
 ---
@@ -10,6 +10,46 @@ ht-degree: 3%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### samedi 7 février 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63090-deleting-product-from-admin-empties-the-shopping-cart"> description détaillée du problème résolu par le correctif ACSD-63090 dans la version QPT 1.1.58</a></p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/69881c628311a8306166f0375834898f9b006584">69881c</a> (validation)</td>
+    </tr>
+  </tbody>
+</table>
+
+### vendredi 6 février 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api"> description détaillée du problème résolu par le correctif ACSD-63329 dans la version QPT 1.1.58</a></p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a86e6771c42c49416cc45321dc77f55c56e7d95">3a86e6</a> (validation)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### samedi 31 janvier 2025
 
@@ -459,84 +499,6 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
 </td>
       <td>major-update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ad25af4928619fbf94671d15b1a5f6df30a16cc1">ad25af</a> (validation)</td>
-    </tr>
-  </tbody>
-</table>
-
-### samedi 13 décembre 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62793-datetime-attributes-exports-missing-time-component-and-fields-enclosure-enabled-attribute-values-enclosed-within-double-quotes"> description détaillée du problème résolu par le correctif ACSD-62793 dans la version QPT 1.1.55</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f541ea47bba9e5af5ed0d4736eb84b72b3691e28">f541ea</a> (validation)</td>
-    </tr>
-  </tbody>
-</table>
-
-### vendredi 12 décembre 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page"> description détaillée du problème résolu par le correctif ACSD-62332 dans la version QPT 1.1.55</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2340671127e164fc564502290a38b8b9a012e28f">234067</a> (validation)</td>
-    </tr>
-    <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products"> description détaillée du problème résolu par le correctif ACSD-63242 dans la version QPT 1.1.56</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5c4204157e01798e547017daf23cf35ff9fd4eb5">5c4204</a> (validation)</td>
-    </tr>
-    <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules"> description détaillée du problème résolu par le correctif ACSD-63242 dans la version QPT 1.1.56</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/97db9099994fccd5dccb6850d451d0696fd619e3">97db90</a> (validation)</td>
-    </tr>
-    <tr>
-      <td><p>Ajout d’une <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index"> description détaillée du problème résolu par le correctif ACSD-62428 dans la version QPT 1.1.56</a>.</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0be8dffc84398832af135dfc1718ba37825d596f">0be8df</a> (validation)</td>
-    </tr>
-  </tbody>
-</table>
-
-### mardi 9 décembre 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview"> description des problèmes résolus par les correctifs disponibles dans la version QPT 1.1.56</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3f5f5ca91e33c75437c8830cb81da8316b56736b">3f5f5c</a> (validation)</td>
     </tr>
   </tbody>
 </table>
