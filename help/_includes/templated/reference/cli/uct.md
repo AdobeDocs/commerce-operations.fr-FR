@@ -1,8 +1,8 @@
 ---
-source-git-commit: 31de6be4eb57fa396801c9ce4f3ed65d77026190
+source-git-commit: 5e907705e1fc20e44caedc81153e0ad118de5b42
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 0%
+source-wordcount: '929'
+ht-degree: 1%
 
 ---
 # bin/uct
@@ -12,75 +12,75 @@ ht-degree: 0%
 
 
 <!-- The template to render with above values -->
-**Version** : 3.0.20
+**Version** : 3.0.21
 
 Cette référence contient 9 commandes disponibles via l’outil de ligne de commande `bin/uct`.
-La liste initiale est générée automatiquement à l’aide de la commande `bin/uct list` sur Adobe Commerce.
+La liste initiale est générée automatiquement à l’aide de la commande `bin/uct list` dans Adobe Commerce.
 
 ## Général
 
-Pour en savoir plus sur l’outil, voir [Aperçu](/help/upgrade/upgrade-compatibility-tool/overview.md).
+En savoir plus sur l’outil dans [Présentation](/help/upgrade/upgrade-compatibility-tool/overview.md).
 
-Cette documentation de référence est générée à partir du code source de l’application. Pour modifier la documentation, vous devez ouvrir une requête d’extraction pour la commande correspondante dans le référentiel [codebase](https://github.com/magento) approprié. Pour plus d’informations, voir [Contributions au code](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) .
+Cette documentation de référence est générée à partir du code source de l’application. Pour modifier la documentation, vous devez ouvrir une requête de tirage pour la commande correspondante dans le référentiel [codebase](https://github.com/magento) approprié. Pour plus d’informations, voir [Contributions du code](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ### Options globales
 
 #### `--help`, `-h`
 
-Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie à l’aide de l’affichage de la commande de liste
+Afficher l’aide pour la commande donnée. Lorsqu’aucune commande n’est fournie, afficher l’aide pour la commande de liste
 
 - Valeur par défaut : `false`
-- N’accepte pas de valeur
+- N’accepte aucune valeur
 
 #### `--quiet`, `-q`
 
-Ne sortez aucun message
+Ne pas générer de message
 
 - Valeur par défaut : `false`
-- N’accepte pas de valeur
+- N’accepte aucune valeur
 
 #### `--verbose`, `-v|-vv|-vvv`
 
-Augmenter la verbalisation des messages : 1 pour une sortie normale, 2 pour une sortie plus détaillée et 3 pour le débogage
+Augmentez la verbosité des messages : 1 pour une sortie normale, 2 pour une sortie plus verbose et 3 pour le débogage
 
 - Valeur par défaut : `false`
-- N’accepte pas de valeur
+- N’accepte aucune valeur
 
 #### `--version`, `-V`
 
-Afficher cette version de l’application
+Afficher cette version de l&#39;application
 
 - Valeur par défaut : `false`
-- N’accepte pas de valeur
+- N’accepte aucune valeur
 
 #### `--ansi`
 
 Forcer (ou désactiver —no-ansi) la sortie ANSI
 
-- N’accepte pas de valeur
+- N’accepte aucune valeur
 
 #### `--no-ansi`
 
-Négociez l’option &quot;—ansi&quot;
+Ignorer l’option « —ansi »
 
 - Valeur par défaut : `false`
-- N’accepte pas de valeur
+- N’accepte aucune valeur
 
 #### `--no-interaction`, `-n`
 
 Ne posez aucune question interactive
 
 - Valeur par défaut : `false`
-- N’accepte pas de valeur
+- N’accepte aucune valeur
 
 
 ## `_complete`
 
 ```bash
-bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-S|--symfony SYMFONY]
+bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
 
-Commande interne permettant de fournir des suggestions d’achèvement du shell
+Commande interne pour fournir des suggestions d&#39;achèvement du shell
 
 ### Options
 
@@ -88,26 +88,32 @@ Pour les options globales, voir [Options globales](#global-options).
 
 #### `--shell`, `-s`
 
-Le type de shell (&quot;bash&quot;)
+Le type de coque (« bash », « fish », « zsh »)
 
 - Requiert une valeur
 
 #### `--input`, `-i`
 
-Un tableau de jetons d’entrée (par exemple, &quot;C.C._WORDS&quot; ou &quot;argv&quot;)
+Tableau de jetons d’entrée (par exemple COMP_WORDS ou argv)
 
 - Valeur par défaut : `[]`
 - Requiert une valeur
 
 #### `--current`, `-c`
 
-Index de la table &quot;input&quot; dans laquelle se trouve le curseur (par exemple, Throne_CWORD)
+Index du tableau « input » dans lequel se trouve le curseur (par exemple COMP_CWORD)
+
+- Requiert une valeur
+
+#### `--api-version`, `-a`
+
+Version API du script d&#39;achèvement
 
 - Requiert une valeur
 
 #### `--symfony`, `-S`
 
-Version du script d’achèvement
+obsolète
 
 - Requiert une valeur
 
@@ -118,22 +124,22 @@ Version du script d’achèvement
 bin/uct completion [--debug] [--] [<shell>]
 ```
 
-Saut du script d’achèvement du shell
+Vider le script de fin du shell
 
 ```
 The completion command dumps the shell completion script required
-to use shell autocompletion (currently only bash completion is supported).
+to use shell autocompletion (currently, bash, fish, zsh completion are supported).
 
 Static installation
 -------------------
 
 Dump the script to a global completion file and restart your shell:
 
-    uct/bin/uct completion bash | sudo tee /etc/bash_completion.d/uct
+    uct/bin/uct completion  | sudo tee /etc/bash_completion.d/uct
 
 Or dump the script to a local file and source it:
 
-    uct/bin/uct completion bash > completion.sh
+    uct/bin/uct completion  > completion.sh
 
     # source the file whenever you use the project
     source completion.sh
@@ -146,14 +152,14 @@ Dynamic installation
 
 Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
 
-    eval "$(/var/jenkins/workspace/gendocs-uct-cli/uct/bin/uct completion bash)"
+    eval "$(/var/jenkins/workspace/gendocs-uct-cli/uct/bin/uct completion )"
 ```
 
 ### Arguments
 
 #### `shell`
 
-Le type de shell (par exemple &quot;bash&quot;), la valeur de la variable d’environnement &quot;$SHELL&quot; sera utilisée si ce n’est pas le cas.
+Le type de shell (par exemple « bash »), la valeur de la variable d&#39;environnement « $SHELL » sera utilisée si elle n&#39;est pas indiquée
 
 ### Options
 
@@ -161,10 +167,10 @@ Pour les options globales, voir [Options globales](#global-options).
 
 #### `--debug`
 
-Suivi du journal de débogage de fin
+Faire apparaître dans le journal de débogage l’achèvement
 
 - Valeur par défaut : `false`
-- N’accepte pas de valeur
+- N’accepte aucune valeur
 
 
 ## `help`
@@ -173,7 +179,7 @@ Suivi du journal de débogage de fin
 bin/uct help [--format FORMAT] [--raw] [--] [<command_name>]
 ```
 
-Afficher l’aide d’une commande
+Affichage de l’aide d’une commande
 
 ```
 The help command displays help for a given command:
@@ -201,7 +207,7 @@ Pour les options globales, voir [Options globales](#global-options).
 
 #### `--format`
 
-Format de sortie (txt, xml, json ou md)
+Le format de sortie (txt, xml, json ou md)
 
 - Valeur par défaut : `txt`
 - Requiert une valeur
@@ -211,7 +217,7 @@ Format de sortie (txt, xml, json ou md)
 Pour générer l’aide de la commande brute
 
 - Valeur par défaut : `false`
-- N’accepte pas de valeur
+- N’accepte aucune valeur
 
 
 ## `list`
@@ -255,21 +261,21 @@ Pour les options globales, voir [Options globales](#global-options).
 Pour générer la liste de commandes brute
 
 - Valeur par défaut : `false`
-- N’accepte pas de valeur
+- N’accepte aucune valeur
 
 #### `--format`
 
-Format de sortie (txt, xml, json ou md)
+Le format de sortie (txt, xml, json ou md)
 
 - Valeur par défaut : `txt`
 - Requiert une valeur
 
 #### `--short`
 
-Pour ignorer les arguments de description des commandes
+Pour ignorer la description des arguments des commandes
 
 - Valeur par défaut : `false`
-- N’accepte pas de valeur
+- N’accepte aucune valeur
 
 
 ## `refactor`
@@ -278,13 +284,13 @@ Pour ignorer les arguments de description des commandes
 bin/uct refactor <path>
 ```
 
-Résout les problèmes qui peuvent être résolus automatiquement. Le code du chemin d’accès indiqué sera mis à jour.
+Résout les problèmes qui peuvent être résolus automatiquement. Le code du chemin d’accès fourni sera mis à jour.
 
 ### Arguments
 
 #### `path`
 
-Chemin de résolution des problèmes dans .
+Chemin d’accès à la résolution des problèmes dans .
 
 - Obligatoire
 
@@ -299,13 +305,13 @@ Pour les options globales, voir [Options globales](#global-options).
 bin/uct core:code:changes [-o|--output [OUTPUT]] [--] <dir> [<vanilla-dir>]
 ```
 
-L’outil de compatibilité de mise à niveau est un outil de ligne de commande qui vérifie la compatibilité d’une instance Adobe Commerce avec une version spécifique en analysant tous les modules non Adobe Commerce installés dans celle-ci. Renvoie la liste des erreurs et avertissements que vous devez corriger avant d’effectuer une mise à niveau vers une nouvelle version du code Adobe Commerce.
+L’outil de compatibilité de mise à niveau est un outil de ligne de commande qui vérifie une instance Adobe Commerce par rapport à une version spécifique en analysant tous les modules non-Adobe Commerce installés dans celle-ci. Renvoie une liste d’erreurs et d’avertissements que vous devez corriger avant d’effectuer la mise à niveau vers une nouvelle version du code Adobe Commerce.
 
 ### Arguments
 
 #### `dir`
 
-Répertoire d’installation Adobe Commerce.
+Répertoire d’installation d’Adobe Commerce.
 
 - Obligatoire
 
@@ -320,7 +326,7 @@ Pour les options globales, voir [Options globales](#global-options).
 
 #### `--output`, `-o`
 
-Chemin du fichier vers lequel la sortie sera exportée (format Json)
+Chemin d’accès au fichier dans lequel la sortie sera exportée (format JSON)
 
 - Accepte une valeur
 
@@ -331,7 +337,7 @@ Chemin du fichier vers lequel la sortie sera exportée (format Json)
 bin/uct dbschema:diff <current-version> <target-version>
 ```
 
-Permet de répertorier les différences de schéma Adobe Commerce DB entre deux versions sélectionnées. Versions disponibles : 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2.4.6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-beta1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-beta3 | 2.4.7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8 | 2.4.4-p9 | 2.4.5-p8 | 2.4.6-p6 | 2.4.7-p1 | 2.4.4-p10 | 2.4.5-p9 | 2.4.6-p7 | 2.4.7-p2 | 2.4.4-p11 | 2.4.5-p10 | 2.4.6-p8 | 2.4.7-p3 | 2.4.8-beta1
+Permet de répertorier les différences de schéma de base de données Adobe Commerce entre deux versions sélectionnées. Versions disponibles : 2.3.0 | 2,3,1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2,3,4 | 2.3.4-p1 | 2.3.4-p2 | 2,3,5 | 2.3.5-p1 | 2.3.5-p2 | 2,3,6 | 2.3.6-p1 | 2,3,7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2,4,1 | 2.4.1-p1 | 2,4,2 | 2.4.2-p1 | 2.4.2-p2 | 2,4,3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2,4,4 | 2.4.4-p1 | 2,4,5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2,4,6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-beta1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-bêta3 | 2,4,7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8 | 2.4.4-p9 | 2.4.5-p8 | 2.4.6-p6 | 2.4.7-p1 | 2.4.4-p10 | 2.4.5-p9 | 2.4.6-p7 | 2.4.7-p2 | 2.4.4-p11 | 2.4.5-p10 | 2.4.6-p8 | 2.4.7-p3 | 2.4.8-beta1 | 2.4.4-p12 | 2.4.5-p11 | 2.4.6-p9 | 2.4.7-p4 | 2.4.8-beta2
 
 ### Arguments
 
@@ -382,7 +388,7 @@ Pour les options globales, voir [Options globales](#global-options).
 
 #### `--output`, `-o`
 
-Chemin du fichier vers lequel la sortie sera exportée (format JSON)
+Chemin d’accès au fichier dans lequel la sortie sera exportée (format JSON)
 
 - Accepte une valeur
 
@@ -393,13 +399,13 @@ Chemin du fichier vers lequel la sortie sera exportée (format JSON)
 bin/uct upgrade:check [-a|--current-version [CURRENT-VERSION]] [-c|--coming-version [COMING-VERSION]] [--json-output-path [JSON-OUTPUT-PATH]] [--html-output-path [HTML-OUTPUT-PATH]] [--min-issue-level [MIN-ISSUE-LEVEL]] [-i|--ignore-current-version-compatibility-issues] [--context CONTEXT] [--] <dir>
 ```
 
-L’outil de compatibilité de mise à niveau est un outil de ligne de commande qui vérifie la personnalisation d’une instance Adobe Commerce par rapport à une version spécifique en analysant tous les modules qui y sont installés. Renvoie la liste des erreurs et avertissements à corriger avant la mise à niveau vers la dernière version d’Adobe Commerce.
+L’outil de compatibilité de mise à niveau est un outil de ligne de commande qui vérifie une instance personnalisée Adobe Commerce par rapport à une version spécifique en analysant tous les modules installés dans celle-ci. Renvoie une liste d’erreurs et d’avertissements à corriger avant la mise à niveau vers la dernière version d’Adobe Commerce.
 
 ### Arguments
 
 #### `dir`
 
-Répertoire d’installation Adobe Commerce.
+Répertoire d’installation d’Adobe Commerce.
 
 - Obligatoire
 
@@ -409,25 +415,25 @@ Pour les options globales, voir [Options globales](#global-options).
 
 #### `--current-version`, `-a`
 
-La version actuelle d’Adobe Commerce, la version de l’installation d’Adobe Commerce, sera utilisée si elle est omise.
+La version actuelle d’Adobe Commerce et la version de l’installation d’Adobe Commerce seront utilisées si elles sont omises.
 
 - Accepte une valeur
 
 #### `--coming-version`, `-c`
 
-Version d’Adobe Commerce cible. La dernière version stable publiée d’Adobe Commerce sera utilisée si elle est omise. Versions d’Adobe Commerce disponibles : 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3.3-p1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-p2 \| 2.3.5 \| 2.3.5-p1 \| 2.3.5-p2 \| 2.3.6 \| 2.3.6-p1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-p2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4.1-p1 \| 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-p1 \| 2.4.3-p2 \| 2.4.3-p3 \| 2.4.4 \| 2.4.4-p1 \| 2.4.4-p2 \| 2.4.4-p3 \| 2.4.4-p4 \| 2.4.4-p5 \| 2.4.4-p6 \| 2.4.4-p7 \| 2.4.4-p8 \| 2.4.4-p9 \| 2.4.4-p10 \| 2.4.4-p11 \| 2.4.5 \| 2.4.5-p1 \| 2.4.5-p2 \| 2.4.5-p3 \| 2.4.5-p4 \| 2.4.5-p5 \| 2.4.5-p6 \| 2.4.5-p7 \| 2.4.5-p8 \| 2.4.5-p9 \| 2.4.5-p10 \| 2.4.6 \| 2.4.6-p1 \| 2.4.6-p2 \| 2.4.6-p3 \| 2.4.6-p4 \| 2.4.6-p5 \| 2.4.6-p6 \| 2.4.6-p7 \| 2.4.6-p8 \| 2.4.7-beta1 \| 2.4.7-beta2 \| 2.4.7-beta3 \| 2.4.7 \| 2.4.7-p1 \| 2.4.7-p2 \| 2.4.7-p3 \| 2.4.8-beta1
+Version Adobe Commerce cible. La dernière version stable d’Adobe Commerce publiée sera utilisée si elle est omise. Versions d’Adobe Commerce disponibles : 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3.3-p1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-p2 \| 2.3.5 \| 2.3.5-p1 \| 2.3.5-p2 \| 2.3.6 \| 2.3.6-p1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-p2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4.1-p1 \| 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-p1 \| 2.4.3-p2 \| 2.4.3-p3 \| 2.4.4 \| 2.4.4-p1 \| 2.4.4-p2 \| 2.4.4-p3 \| 2.4.4-p4 \| 2.4.4-p5 \| 2.4.4-p6 \| 2.4.4-p7 \| 2.4.4-p8 \| 2.4.4-p9 \| 2.4.4-p10 \| 2.4.4-p11 \| 2.4.4-p12 \| 2.4.5 \| 2.4.5-p1 \| 2.4.5-p2 \| 2.4.5-p3 \| 2.4.5-p4 \| 2.4.5-p5 \| 2.4.5-p6 \| 2.4.5-p7 \| 2.4.5-p8 \| 2.4.5-p9 \| 2.4.5-p10 \| 2.4.5-p11 \| 2.4.6 \| 2.4.6-p1 \| 2.4.6-p2 \| 2.4.6-p3 \| 2.4.6-p4 \| 2.4.6-p5 \| 2.4.6-p6 \| 2.4.6-p7 \| 2.4.6-p8 \| 2.4.6-p9 \| 2.4.7-beta1 \| 2.4.7-beta2 \| 2.4.7-beta3 \| 2.4.7 \| 2.4.7-p1 \| 2.4.7-p2 \| 2.4.7-p3 \| 2.4.7-p4 \| 2.4.8-beta1 \| 2.4.8-beta2
 
 - Accepte une valeur
 
 #### `--json-output-path`
 
-Chemin du fichier dans lequel la sortie sera exportée au format json
+Chemin d’accès au fichier dans lequel la sortie sera exportée au format JSON
 
 - Accepte une valeur
 
 #### `--html-output-path`
 
-Chemin du fichier dans lequel la sortie sera exportée au format HTML.
+Chemin du fichier où sera exportée la sortie au format HTML
 
 - Accepte une valeur
 
@@ -440,14 +446,14 @@ Niveau de problème minimal à afficher dans le rapport (avertissement, erreur o
 
 #### `--ignore-current-version-compatibility-issues`, `-i`
 
-Ignorer les problèmes courants pour la version actuelle et à venir
+Ignorer les problèmes courants de la version actuelle et des versions à venir
 
 - Valeur par défaut : `false`
-- N’accepte pas de valeur
+- N’accepte aucune valeur
 
 #### `--context`
 
-Contexte d&#39;exécution. Cette option est destinée à des fins d’intégration et n’affecte pas le résultat de l’exécution.
+Contexte d’exécution. Cette option est proposée à des fins d’intégration et n’affecte pas le résultat de l’exécution.
 
 - Requiert une valeur
 
