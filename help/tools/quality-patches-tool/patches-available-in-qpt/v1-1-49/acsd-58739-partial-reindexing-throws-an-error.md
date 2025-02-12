@@ -1,19 +1,19 @@
 ---
-title: 'ACSD-58739 : La réindexation partielle renvoie une erreur'
-description: Appliquez le correctif ACSD-55241 pour résoudre le problème Adobe Commerce où la réindexation partielle renvoie une erreur.
+title: 'ACSD-58739 : la réindexation partielle renvoie une erreur'
+description: Appliquez le correctif ACSD-55241 pour résoudre le problème d’Adobe Commerce où la réindexation partielle génère une erreur.
 feature: Inventory, Products
 role: Admin, Developer
 exl-id: b4e6b8b4-43de-4434-94fb-6269a75e1c28
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: c643d55823ae0791ecfa0f2220116bbcbd02668a
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
 
 ---
 
-# ACSD-58739 : La réindexation partielle renvoie une erreur
+# ACSD-58739 : la réindexation partielle renvoie une erreur
 
-Le correctif ACSD-58739 corrige le problème lorsque la réindexation partielle renvoie une erreur. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.49 est installé. L’ID de correctif est ACSD-58739. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.8.
+Le correctif ACSD-58739 corrige le problème en raison duquel la réindexation partielle génère une erreur. Ce correctif est disponible lorsque la version 1.1.49 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-58739. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.8.
 
 ## Produits et versions concernés
 
@@ -23,26 +23,26 @@ Le correctif ACSD-58739 corrige le problème lorsque la réindexation partielle 
 
 **Compatible avec les versions d’Adobe Commerce :**
 
-* Adobe Commerce (toutes les méthodes de déploiement) 2.4.7 à 2.4.8
+* Adobe Commerce (toutes les méthodes de déploiement) 2.4.7 - 2.4.8
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 La réindexation partielle renvoie une erreur.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Ajoutez des paramètres de connexion esclave à `app/etc/ev.php`.
-1. Générez jusqu’à 1 000 produits et exécutez la commande suivante :
+1. Ajoutez les paramètres de connexion esclave au `app/etc/env.php`.
+1. Générez jusqu’à 10000 produits et exécutez la commande suivante :
 
    ```
    bin/magento index:reindex
    ```
 
-1. Ajoutez les ID de produit générés dans la table `catalogsearch_fulltext_cl` DB.
+1. Ajoutez les ID de produit générés dans `catalogsearch_fulltext_cl` table de base de données.
 
    ```
    insert into catalogsearch_fulltext_cl (entity_id) select entity_id from catalog_product_entity;
@@ -62,19 +62,19 @@ Aucune erreur.
 
 <u>Résultats réels</u> :
 
-*Erreur de table ou de vue de base introuvable* lors de l’exécution de la réindexation partielle.
+*Table ou vue de base introuvable* une erreur se produit lors de l’exécution de la réindexation partielle.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool]
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide d’infrastructure Commerce on Cloud
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool]
+* Adobe Commerce sur les infrastructures cloud : [ Mises à niveau et correctifs > Appliquer des correctifs ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
-* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances du support
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool]
+* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].
