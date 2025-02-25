@@ -1,8 +1,8 @@
 ---
-source-git-commit: 989bcdcb4bbd8f880a3e2c8add280a072998afd8
+source-git-commit: 9c2e080e25fd2919b5f178e5b73ce84a04caca21
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 3%
+source-wordcount: '1068'
+ht-degree: 4%
 
 ---
 # Nouveautés du modèle
@@ -10,6 +10,66 @@ ht-degree: 3%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### samedi 21 février 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails"> description détaillée du problème résolu par le correctif ACSD-64112 dans la version QPT 1.1.59</a>.</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c22cffcbac34ed45d0252a879fa714cf283be4fe">c22cff</a> (validation)</td>
+    </tr>
+  </tbody>
+</table>
+
+### vendredi 20 février 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown"> description détaillée du problème résolu par le correctif ACSD-63454 dans la version QPT 1.1.59</a>.</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ee04269b7b443d9a75bc905e4dde2470e2c9eb7d">ee0426</a> (validation)</td>
+    </tr>
+  </tbody>
+</table>
+
+### jeudi 19 février 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change"> description détaillée du problème résolu par le correctif ACSD-63870 dans la version QPT 1.1.59</a></p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/826125b9e176639a53c79ec7fea825b6963ffa3c">826125</a> (validation)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### samedi 14 février 2025
 
