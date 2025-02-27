@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 24cce88e5daccd8ad50e01b869f2682722cb8052
+source-git-commit: fa23ca7a760f25e6b77b94af15eec7d8a88e880e
 workflow-type: tm+mt
-source-wordcount: '24820'
+source-wordcount: '25023'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,15 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 >[!INFO]
 >
 >Pour plus d’informations sur les [!DNL quality patches] créées par la communauté pour Magento Open Source, consultez les [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.60 {#v1-1-60}
+
+* **ACSD-63323** (pour Adobe Commerce >=2.4.7 &lt;2.4.8) - Correction d’un problème en raison duquel l’option **[!UICONTROL Select All]** ne fonctionne pas lors de l’ajout de produits à une catégorie. En outre, cela garantit que la pagination et le libellé du nombre d’enregistrements fonctionnent correctement lors de l’ajout de produits à une catégorie via la grille contextuelle.
+* **ACSD-63992** (pour Adobe Commerce >=2.4.4 &lt;2.4.8) - Correction d’un problème en raison duquel une règle de prix de panier avec un coupon et une condition basée sur une méthode d’expédition ne peuvent pas être correctement appliquées via l’interface utilisateur d’administration.
+* **ACSD-64111** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème qui se produit lorsqu’une erreur se produit lors de la définition de conditions imbriquées pour un composant Produit dans [!DNL Page Builder].
+* **ACSD-64137** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction d’un problème en raison duquel la recherche d’emplacements de retrait par code postal ne fonctionnait pas correctement pour la localisation en néerlandais.
+* **ACSD-64149** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel un segment client avec une condition de période peut être enregistré lorsqu’une seule des dates est modifiée.
+* Versions mises à jour : **MDVA-12304**, **ACSD-45049**, **MDVA-43824**, **ACSD-46192**, **ACSD-50368**, **ACSD-52133**, **ACSD-47657**, **ACSD-51819**, **ACSD-54966,** ACSD-**, 55628** ACSD-**, 45049** ACSD-**63242**
 
 ## v1.1.59 {#v1-1-59}
 
@@ -110,8 +119,8 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACSD-61534** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel la configuration de conception ne pouvait pas être définie à l’aide de la commande `bin/magento config:set` et les valeurs verrouillées pouvaient être modifiées par la manipulation du formulaire. Désormais, les valeurs verrouillées définies à partir du [!DNL CLI] avec `--lock-env` ou `--lock-conf` ne peuvent pas être mises à jour.
 * **ACSD-61785** (pour Adobe Commerce >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel la mise à jour de l’attribut `reward_warning_notification` n’était pas possible via [!DNL GraphQL] mutation et les appels de [!DNL REST API], l’alignement de son comportement sur `reward_update_notification`.
 * **ACSD-62591** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Correction d’un problème en raison duquel le thème ne change pas correctement lorsque les **[!UICONTROL User Agent Rules]** sont configurées.
-* **ACSD-62793** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Fixes the issue where `datetime` ) dans les données exportées n’incluent pas le composant de temps. En outre, si **[!UICONTROL Fields Enclosure]** cette option est *activée*, les valeurs d’attribut de la `additional_attributes` colonne sont placées entre guillemets doubles.
-* **ACSD-62332** (pour Adobe Commerce >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel la requête de [!DNL GraphQL] de liste de produits était limitée à un `total_count` de 10 000 produits. Résout le problème qui [!DNL Live Search] définit la page actuelle sur *1* au lieu de la page *2* dans les critères de recherche lors de la requête via [!DNL GraphQL].
+* **ACSD-62793** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel les attributs `datetime` dans les données exportées n’incluent pas le composant « Heure ». De plus, si **[!UICONTROL Fields Enclosure]** est *activé*, les valeurs d’attribut dans la colonne `additional_attributes` sont placées entre guillemets doubles.
+* **ACSD-62332** (pour Adobe Commerce >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel la requête de [!DNL GraphQL] de liste de produits était limitée à un `total_count` de 10 000 produits. Correction du problème en raison duquel [!DNL Live Search] définit la page active sur *1* au lieu de la page *2* dans les critères de recherche lors de l’interrogation via [!DNL GraphQL].
 * Versions mises à jour : **ACSD-46581**, **ACSD-49513**, **ACSD-52801**, **ACSD-59514**
 * Correctifs remplacés : **ACSD-52801**, **ACSD-55100**
 * Correctifs obsolètes : **ACSD-52085**, **ACSD-57854**
@@ -587,8 +596,8 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACSD-46865** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Correction du problème en raison duquel la grille Expédition et Avoir n’est pas renseignée lorsque l’indexation asynchrone est activée.
 * **ACSD-47004** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.6) - Correction d’un problème en raison duquel la TVA n’est pas appliquée à une adresse de facturation sans numéro de TVA.
 * **ACSD-47803** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Correction du problème d’affichage des échantillons de produits configurables en rupture de stock.
-* **DCSD-47137** (pour le commerce Adobe et Magento Open Source >=2.4.4 &lt;2.4.6) - Improves the loading speed of the image gallery when the pub/media folder is very big.
-* **ACSD-46770** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Fixes the issue where admin order emails are sent even when the *L’option Confirmation* de commande par courriel n’est pas cochée.
+* **ACSD-47137** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Améliore la vitesse de chargement de la galerie d’images lorsque le dossier pub/media est très volumineux.
+* **ACSD-46770** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Correction du problème d’envoi des e-mails de commande de l’administrateur même lorsque la case *Confirmation de commande par e-mail* n’est pas cochée.
 * **ACSD-47955** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Corrige le problème en raison duquel GraphQL n’affiche pas correctement la remise du panier.
 * **ACSD-46617** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Correction du problème en raison duquel le bouton *Continuer la récupération* est grisé même si le sous-total est supérieur au *Montant minimum de commande* configuré.
 * **ACSD-47079** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.5) - Correction du problème en raison duquel l’état du stock des produits composites (groupés, et configurables) n’est pas mis à jour lorsque l’état du stock des sous-produits change via l’API REST POST /rest/V1/inventory/source-items.
@@ -612,19 +621,19 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 ## v1.1.22 {#v1-1-22}
 
 * **ACSD-47444** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.3) - Corrige l’erreur _Tentative d’accès au décalage de tableau sur une valeur de type bool_ lors de l’accès à certains chemins de catégorie non existants pour des produits connus sur PHP 7.4.
-* **DCSD-47332** (pour le commerce Adobe et Magento Open Source >=2.4.0 &lt;2.4.6) - Fixes the issue where cron fails with an error that is only reported when running between 00:00 and 00:59 UTC.
-* **ACSD-47280** (pour le commerce Adobe et Magento Open Source >=2.4.0 &lt;2.4.6) - Fixes the issue where disabling the shared catalog feature on a specific scope does not work correctly.
-* **ACSD-47106** (pour le commerce Adobe et Magento Open Source >=2.4.4 &lt;2.4.6) - Fixes the issue where a value cannot be saved in a new custom attribute on a company creation page.
-* Mise à jour du correctif : ACSD-45143.
+* **ACSD-47332** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Correction du problème en raison duquel cron échoue avec une erreur qui n’est signalée que lors de l’exécution entre 00:00 et 00:59 UTC.
+* **ACSD-47280** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Corrige le problème en raison duquel la désactivation de la fonctionnalité de catalogue partagé sur une portée spécifique ne fonctionne pas correctement.
+* **ACSD-47106** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Correction du problème en raison duquel une valeur ne peut pas être enregistrée dans un nouvel attribut personnalisé sur une page de création d’entreprise.
+* Correctif mis à jour : ACSD-45143.
 
 ## v1.1.21 {#v1-1-21}
 
-* **DCSD-46809** (pour le commerce Adobe et Magento Open Source >=2.4.2 &lt;2.4.6) - Fixes the issue where a user gets an error when assigning a large number of product sources.
-* **ACSD-46856** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) -=&quot;&quot; improves=&quot;&quot; performance=&quot;&quot; updating=&quot;&quot; tier=&quot;&quot; prices=&quot;&quot; via=&quot;&quot; system=&quot;&quot;> Configuration > Importation > Tarification avancée.&lt;/2.4.6)>
-* **ACSD-46541** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.4) - Fixes the issue where an admin user cannot create a credit memo if an order item is deleted.
-* **DCSD-46581** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Fixes the issue where the estimated tax total is not updated after selecting a country in the shopping cart.
-* **DCSD-46618** (pour le commerce Adobe et Magento Open Source >=2.4.0 &lt;2.4.6) - Fixes the issue where the product list widget shows incorrect cached prices for a logged-in customer.
-* **ACSD-46674** (pour le commerce Adobe et Magento Open Source >=2.4.0 &lt;2.4.6) - Fixes the issue where custom options of an image type are displayed as HTML in customer emails.
+* **ACSD-46809** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.6) - Corrige le problème où un utilisateur ou une utilisatrice reçoit une erreur lors de l’affectation d’un grand nombre de sources de produits.
+* **ACSD-46856** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Améliore les performances en mettant à jour les prix par niveau via Système > Configuration > Importer > Tarification avancée.
+* **ACSD-46541** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.4) - Correction du problème en raison duquel un utilisateur administrateur ne peut pas créer d’avoir si un élément de commande est supprimé.
+* **ACSD-46581** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Correction du problème en raison duquel le total de taxe estimé n’est pas mis à jour après la sélection d’un pays dans le panier.
+* **ACSD-46618** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Correction du problème en raison duquel le widget Liste de produits affiche des prix mis en cache incorrects pour un client connecté.
+* **ACSD-46674** (pour Adobe Commerce et Magento Open Source >=2.4.0 &lt;2.4.6) - Correction du problème d’affichage des options personnalisées d’un type d’image sous forme d’HTML dans les e-mails des clients.
 * **ACSD-46988** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Correction du problème en raison duquel la requête de l’API « currency » de GraphQL renvoie des valeurs NULL pour une devise personnalisée.
 * **ACSD-47076** (pour Adobe Commerce et Magento Open Source >=2.4.1 &lt;2.4.5) - Correction du problème en raison duquel les vidéos Vimeo ne peuvent pas être lues sur le storefront.
 * **ACSD-45071** (pour Adobe Commerce et Magento Open Source >=2.4.2 &lt;2.4.4) - Correction du problème en raison duquel la source par défaut est ajoutée au produit lors de l’importation.
@@ -729,9 +738,9 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 ## v1.1.12 {#v1-1-12}
 
 * **MDVA-39713** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.3.6*) - Corrige le problème en raison duquel l’utilisateur ou l’utilisatrice peut modifier l’heure de début d’une mise à jour planifiée active.
-* **MDVA-42410** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.5*) - Résout le problème où les rapports de coupons affichent uniquement la devise de base par défaut.
-* **MDVA-41136** (*pour Adobe Commerce et Magento Open Source >=2.3.0*&lt;2.4.5 ) - Résout le problème où la date d’expiration de la `mage-cache-sessid` n’est pas prolongée, ce qui entraîne le nettoyage des données client.
-* **MDVA-39993** (*pour Adobe Commerce et Magento Open Source >=2.3.5 &lt;=2.3.7-p2 ||=&quot;&quot;>= 2.4.0 &lt;2.4.4*) - Résout le problème où les modifications de stock effectuées via l’API ne se reflètent pas sur la page produit sur le frontend.&lt;/=2.3.7-p2>
+* **MDVA-42410** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.5*) - Correction du problème en raison duquel les rapports de coupon affichaient uniquement la devise de base par défaut.
+* **MDVA-41136** (*pour Adobe Commerce et Magento Open Source >=2.3.0 &lt;2.4.5*) - Corrige le problème en raison duquel la date d’expiration du `mage-cache-sessid` n’est pas prolongée, ce qui entraîne un nettoyage des données client.
+* **MDVA-39993** (*pour Adobe Commerce et Magento Open Source >=2.3.5 &lt;=2.3.7-p2 || >=2.4.0 &lt;2.4.4*) - Correction du problème en raison duquel les modifications d’inventaire effectuées par le biais de l’API ne sont pas reflétées sur la page du produit sur le serveur frontal.
 * **MDVA-42855** (*pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.5*) - Corrige le problème en raison duquel une nouvelle adresse du client n’est pas enregistrée dans le carnet d’adresses lors du passage en caisse.
 * **MDVA-42645** (*pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.5*) - Correction du problème en raison duquel l’administrateur ne peut pas rembourser les points de récompense si la fonctionnalité de crédit de magasin est désactivée.
 * **MDVA-43414** (*pour Adobe Commerce et Magento Open Source >=2.3.6 &lt;=2.3.7-p2*) - Corrige l’erreur fatale PHP qui se produit lors de l’exécution du client de la file d’attente `inventory.reservations.updateSalabilityStatus` sur des SKU numériques.
