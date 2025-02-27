@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 4e4ae0e4c0d23b98a44ffcf1c9f4605d67e94714
+source-git-commit: f92cdabf58cf9f95c57312f7d3efb2b2ad098e2e
 workflow-type: tm+mt
-source-wordcount: '7043'
+source-wordcount: '7055'
 ht-degree: 0%
 
 ---
@@ -740,6 +740,7 @@ ht-degree: 0%
          - [ACSD-64112 : l’exécution cron indexer_update_all_views échoue lorsque MAGE_INDEXER_THREADS_COUNT est défini](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
          - [ACSD-63454 : la valeur par défaut pour les attributs Menu déroulant et Sélection multiple n’est pas enregistrée correctement dans la base de données](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown.md)
          - [ACSD-63870 : le client ne s&#39;est pas déconnecté correctement lors du changement de statut de la société](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change.md)
+         - [ACSD-63793 : les processus d’importation interfèrent entre eux dans différents onglets du navigateur](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs.md)
          - [ACSD-63574 : l’ajout d’[!UICONTROL Bundle Product] liste à bloquer via [!DNL Page Builder] entraîne une erreur](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error.md)
    - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - {#cli-reference} de référence des outils de ligne de commande
