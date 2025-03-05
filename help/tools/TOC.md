@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: c01df7ef04c5e259d6bd015f8a3105c167b5c26f
+source-git-commit: f59d574087a4eaa33643d6de16e702a19a3606f9
 workflow-type: tm+mt
-source-wordcount: '7083'
+source-wordcount: '7094'
 ht-degree: 0%
 
 ---
@@ -740,6 +740,7 @@ ht-degree: 0%
          - [ACSD-64112 : l’exécution cron indexer_update_all_views échoue lorsque MAGE_INDEXER_THREADS_COUNT est défini](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
          - [ACSD-63454 : la valeur par défaut pour les attributs Menu déroulant et Sélection multiple n’est pas enregistrée correctement dans la base de données](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown.md)
          - [ACSD-63870 : le client ne s&#39;est pas déconnecté correctement lors du changement de statut de la société](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change.md)
+         - [ACSD-63469 : les remises sur panier à montant fixe ne sont pas appliquées correctement avec plusieurs règles](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63469-whole-carts-fixed-amount-discount-not-applied-correctly.md)
          - [ACSD-64113 : erreur d’administration lors du chargement d’une image d’une largeur inférieure à la hauteur via  [!DNL Media Gallery]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images.md)
          - [ACSD-64212 : commande non liée à un compte client créé via [!DNL GraphQL] after-place order](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account.md)
          - [ACSD-63793 : les processus d’importation interfèrent entre eux dans différents onglets du navigateur](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs.md)
