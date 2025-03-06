@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: f59d574087a4eaa33643d6de16e702a19a3606f9
+source-git-commit: 2dc974d2887fb725e1854aef2cbdd63616e3846d
 workflow-type: tm+mt
-source-wordcount: '7094'
+source-wordcount: '7108'
 ht-degree: 0%
 
 ---
@@ -735,6 +735,7 @@ ht-degree: 0%
          - [ACSD-63325 : erreur « Erreur de syntaxe : erreur inattendue &lt; EOF > » lors de l’envoi d’une demande  [!DNL GraphQL]  vide](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
          - [ACSD-63578 : cliquer sur l’icône [!UICONTROL Delete] dans [!UICONTROL Add to Order by SKU] ne supprime pas le SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
          - [ACSD-63329 : les valeurs par défaut des champs date et heure ne sont pas définies lors de la création de produits avec l’API REST](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
+         - [ACSD-63572 : les tables temporaires de l&#39;indexeur de catalogrule ne sont pas nettoyées si le processus de l&#39;indexeur est terminé](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated.md)
       - v1.1.59 {#v1-1-59}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.59](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview.md)
          - [ACSD-64112 : l’exécution cron indexer_update_all_views échoue lorsque MAGE_INDEXER_THREADS_COUNT est défini](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
