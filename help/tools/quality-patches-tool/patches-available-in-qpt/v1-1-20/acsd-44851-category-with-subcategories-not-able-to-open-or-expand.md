@@ -4,9 +4,9 @@ description: Cet article fournit une solution au problème en raison duquel l’
 feature: Categories
 role: Admin
 exl-id: c1ad13d8-94e1-47cf-ad65-9bc5ce1c26ad
-source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
+source-git-commit: 33a9d54ce3e50df89b0455e4c1b2dfccb5bee32a
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -59,9 +59,6 @@ Pour appliquer des correctifs individuels, utilisez les liens suivants en foncti
 
 ## Lecture connexe
 
-Pour en savoir plus sur l’outil de correctifs de la qualité, voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
-
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide Outil de correctifs de qualité.
+* [[!DNL Quality Patches Tool] : un outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils .
