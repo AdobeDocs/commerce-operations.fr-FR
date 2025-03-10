@@ -2,9 +2,9 @@
 title: Configuration requise
 description: Utilisez cette référence pour identifier les dépendances logicielles requises qui ont été testées avec les versions d’Adobe Commerce.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 63c73a34eb6c61c83f00761e0510108485687596
+source-git-commit: 0d8dcfd7064488787ddd0ff54c82c77f3e4d1cfb
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Vous trouverez ci-dessous un résumé des dépendances logicielles et des services testés pour Adobe Commerce.
 
-Il existe quelques différences dans les dépendances de Commerce à l’infrastructure cloud. La prise en charge de la version et de la compatibilité des services pour Adobe Commerce sur les infrastructures cloud est déterminée par les services testés et déployés sur les environnements cloud hébergés. Elle diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Par exemple, Elasticsearch 7.17 est pris en charge pour Commerce 2.4.4 pour les déploiements on-premise, mais OpenSearch 1.2 est pris en charge pour Commerce 2.4.4 sur les infrastructures cloud.
+Il existe quelques différences dans les dépendances de Commerce on Cloud. La prise en charge de la compatibilité et des versions des services pour Adobe Commerce on Cloud est déterminée par les services testés et déployés dans les environnements cloud hébergés. Elle diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Par exemple, Elasticsearch 7.17 est pris en charge pour Commerce 2.4.4 pour les déploiements on-premise, mais OpenSearch 1 est pris en charge pour la version 2.4.4 d’Adobe Commerce on Cloud.
 
 >[!NOTE]
 >
