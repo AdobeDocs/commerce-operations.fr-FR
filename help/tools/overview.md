@@ -1,8 +1,8 @@
 ---
 title: Outils
-description: Optimisez votre boutique Adobe Commerce avec ces outils.
+description: Optimisez votre boutique Adobe Commerce à l’aide de ces outils.
 exl-id: e2770019-d879-4685-bcbe-791550f49cf0
-source-git-commit: 66cd2717d95424c9738c54fdc18fb439ea18ea5f
+source-git-commit: 60f85dfb889e1e6d15aaf45f95115705b090ccad
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 0%
@@ -11,16 +11,17 @@ ht-degree: 0%
 
 # Outils
 
-L’objectif de ce guide est de vous fournir les outils nécessaires pour exécuter un site Adobe Commerce performant, optimisé et sain.
+L’objectif de ce guide est de vous fournir les outils nécessaires pour exécuter un site Adobe Commerce réussi, optimisé et sain.
 
-## Pour qui est ce guide ?
+## À qui s&#39;adresse ce guide ?
 
-Ce guide est conçu à l’intention des marchands, des développeurs et des intégrateurs afin de faciliter les performances optimales de leur boutique Adobe Commerce.
+Ce guide est conçu pour les commerçants, les développeurs et les intégrateurs afin de faciliter les performances optimales de leur boutique Adobe Commerce.
 
-## Qu&#39;y a-t-il dans le guide ?
+## Que contient le guide ?
 
 * [[!DNL Site-Wide Analysis Tool]](../tools/site-wide-analysis-tool/intro.md)
-* [[!DNL Quality Patches Tool] : Recherchez des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+* [[!DNL Managed alerts for Adobe Commerce]](../tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
+* [[!DNL Quality Patches Tool] : rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 * [`bin/magento`](reference/commerce-on-premises.md)
 * [`bin/uct`](reference/commerce-on-premises.md)
 * [[!DNL Observation for Adobe Commerce]](../tools/observation-for-adobe-commerce/intro.md)
