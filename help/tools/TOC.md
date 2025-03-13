@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 3f2996a41f14d830c8023256c78c9bb85b1718d2
+source-git-commit: a45b8e687d186f7a5ae540037dd3645a510f626a
 workflow-type: tm+mt
-source-wordcount: '7202'
+source-wordcount: '7217'
 ht-degree: 0%
 
 ---
@@ -759,6 +759,8 @@ ht-degree: 0%
          - [ACSD-64212 : commande non liée à un compte client créé via [!DNL GraphQL] after-place order](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account.md)
          - [ACSD-63793 : les processus d’importation interfèrent entre eux dans différents onglets du navigateur](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs.md)
          - [ACSD-63574 : l’ajout d’[!UICONTROL Bundle Product] liste à bloquer via [!DNL Page Builder] entraîne une erreur](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error.md)
+      - v1.1.60 {#v1-1-60}
+         - [ACSD-63323 : résout [!UICONTROL Select All] fonctionnalité et améliore la pagination et le nombre d’enregistrements dans la fenêtre contextuelle de la catégorie de produits.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
    - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - {#cli-reference} de référence des outils de ligne de commande
    - [Adobe Commerce (sur site)](reference/commerce-on-premises.md)
