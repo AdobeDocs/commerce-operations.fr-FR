@@ -2,9 +2,9 @@
 title: Configuration requise
 description: Utilisez cette référence pour identifier les dépendances logicielles requises qui ont été testées avec les versions d’Adobe Commerce.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 0d8dcfd7064488787ddd0ff54c82c77f3e4d1cfb
+source-git-commit: ca0c47cf9882bccbc55aca786f3e6615503662f3
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Pour obtenir des conseils sur la configuration du cloud, consultez [Paramètres 
 
 Il est recommandé de vérifier que [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php) est activé pour des raisons de performances. Le cache OP est activé dans de nombreuses distributions PHP. L’extension `opcache` est installée par défaut dans Commerce sur les infrastructures cloud.
 
-Pour on-premesis, vérifiez que PHP OPcache est installé, voir [Paramètres PHP](prerequisites/php-settings.md). Ou pour obtenir des conseils spécifiques sur les paramètres de performance, consultez les recommandations logicielles pour [les paramètres PHP](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) dans le guide _Bonnes pratiques de performance_.
+Pour une installation sur site, vérifiez que PHP OPcache est installé, voir [Paramètres PHP](prerequisites/php-settings.md). Ou pour obtenir des conseils spécifiques sur les paramètres de performance, consultez les recommandations logicielles pour [les paramètres PHP](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) dans le guide _Bonnes pratiques de performance_.
 
 Si vous devez installer OPcache séparément, consultez la documentation [PHP OPcache](https://www.php.net/manual/en/opcache.setup.php).
 
@@ -129,7 +129,9 @@ La mise à niveau des applications et des extensions que vous obtenez du Commerc
 
 ### Systèmes d&#39;exploitation (Linux x86-64)
 
-les distributions Linux, telles que RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, etc. Microsoft Windows et macOS ne sont pas pris en charge.
+les distributions Linux, telles que RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, etc.
+
+Microsoft Windows et macOS ne sont **pas pris** charge.
 
 Adobe Commerce requiert les outils système suivants pour certaines opérations :
 
