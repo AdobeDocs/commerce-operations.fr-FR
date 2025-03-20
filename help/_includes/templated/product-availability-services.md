@@ -1,8 +1,8 @@
 ---
-source-git-commit: c3fc4276d7cae3794ad5f7a1b59261cee5d13b68
+source-git-commit: c3ca03b2db6182e693c2fcd8fee765fee65880ea
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 14%
+source-wordcount: '95'
+ht-degree: 15%
 
 ---
 # Disponibilité des produits des services Commerce
@@ -23,11 +23,11 @@ ht-degree: 14%
   <tbody>
       <tr>
           <td>Service de catalogue pour Adobe Commerce</td>
-          <td>-</td>
-          <td>1,17</td>
-          <td>1,17</td>
-          <td>1,17</td>
-          <td>1,17</td>
+          <td>1,32</td>
+          <td>1,32</td>
+          <td>1,32</td>
+          <td>1,32</td>
+          <td>1,32</td>
           <td>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">Aperçu</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Notes de mise à jour</a><br/>
