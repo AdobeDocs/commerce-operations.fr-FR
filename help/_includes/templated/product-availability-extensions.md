@@ -1,11 +1,11 @@
 ---
-source-git-commit: 7f7d8ca9ade089b305f0259d1caee8e20a1265a2
+source-git-commit: 1d192966d457d7f1b95254a3b9c59054e8b03629
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 0%
+source-wordcount: '124'
+ht-degree: 6%
 
 ---
-# Disponibilité du produit pour les extensions Adobes
+# Disponibilité du produit des extensions créées par Adobe
 
 
 <table style="table-layout:auto">
@@ -21,21 +21,21 @@ ht-degree: 0%
   </thead>
   <tbody>
       <tr>
-          <td>Événements d’Adobe I/O pour Adobe Commerce</td>
-          <td>1.5+</td>
-          <td>1.5+</td>
-          <td>1.5+</td>
-          <td>1.5+</td>
+          <td>Adobe I/O Events pour Adobe Commerce</td>
+          <td>1,5+</td>
+          <td>1,5+</td>
+          <td>1,5+</td>
+          <td>1,5+</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/events/installation/">Compositeur</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/events/release-notes/">Notes de mise à jour</a><br/>
           </td>
       </tr>
       <tr>
-          <td>SDK de l’interface utilisateur d’administration Adobe Commerce</td>
-          <td>1.3+</td>
-          <td>1.3+</td>
-          <td>1.3+</td>
+          <td>SDK de l’interface utilisateur d’administration d’Adobe Commerce</td>
+          <td>1,3+</td>
+          <td>1,3+</td>
+          <td>1,3+</td>
           <td>-</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/">Compositeur</a><br/>
@@ -44,20 +44,31 @@ ht-degree: 0%
       </tr>
       <tr>
           <td>Webhooks Adobe Commerce</td>
-          <td>1.2+</td>
-          <td>1.2+</td>
-          <td>1.2+</td>
-          <td>1.2+</td>
+          <td>1,2+</td>
+          <td>1,2+</td>
+          <td>1,2+</td>
+          <td>1,2+</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/">Compositeur</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/">Notes de mise à jour</a><br/>
           </td>
       </tr>
       <tr>
+          <td>Intégration d’Adobe Experience Manager Assets pour Commerce</td>
+          <td>1.0.20+</td>
+          <td>1.0.20+</td>
+          <td>1.0.20+</td>
+          <td>1.0.20+</td>
+          <td>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-commerce">Compositeur</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-release-notes">Notes de mise à jour</a><br/>
+          </td>
+      </tr>
+      <tr>
           <td>B2B</td>
           <td>1.5.0 (PHP 8.3)</td>
           <td>1.3.5+</td>
-          <td>1.3.4</td>
+          <td>1,3,4</td>
           <td>1.3.3</td>
           <td>
               <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html">Compositeur</a><br/>
@@ -71,18 +82,18 @@ ht-degree: 0%
           <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marché</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">Notes de mise à jour</a><br/>
           </td>
       </tr>
       <tr>
           <td>Page Builder</td>
           <td>-</td>
-          <td>1.7.3</td>
-          <td>1.7.2</td>
-          <td>1.7.1</td>
+          <td>1,7,3</td>
+          <td>1,7,2</td>
+          <td>1,7,1</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html">Guide de l’utilisateur</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html"> Guide de l’utilisateur </a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Notes de mise à jour</a><br/>
           </td>
       </tr>
