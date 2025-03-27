@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 0073f5e1b6de110ff640748457b7c644d71fcbe8
+source-git-commit: 93c9eb8865aa53ec784d47fd66ca97d1941b4604
 workflow-type: tm+mt
-source-wordcount: '25431'
+source-wordcount: '25682'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 >[!INFO]
 >
 >Pour plus d’informations sur les [!DNL quality patches] créées par la communauté pour Magento Open Source, consultez les [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.62 {#v1-1-62}
+
+* **ACSD-63406** (pour Adobe Commerce et Magento Open Source >=2.4.4-p9 &lt;2.4.5 || >=2.4.5-p8 &lt;2.4.6 || >=2.4.6-p6 &lt;2.4.8) - Correction du problème en raison duquel les guillemets persistants expirés ne sont effacés par aucune tâche cron lors de l’exécution de la tâche cron `persistent_clear_expired`.
+* **ACSD-63520** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel les images ajoutées par le biais de **[!UICONTROL Configurations]** dans le panneau d’administration ne respectent pas la taille maximale de chargement.
+* **ACSD-64523** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel il était possible de créer des produits sans nom via le processus d’importation (admin ou API), ce qui rompait l’interface d’administration et entraînait des produits non valides.
+* **ACSD-64532** (pour Adobe Commerce et Magento Open Source >=2.4.6-p2 &lt;2.4.8) - Correction du problème en raison duquel une variable ENV définie sur « false » est traitée comme une chaîne « false » au lieu d’une valeur booléenne false.
+* **ACSD-64592** (pour Adobe Commerce >=2.4.4 &lt;2.4.8) - Corrige le problème en raison duquel le lien de réclamation figurant dans l’e-mail pour une carte-cadeau dans les magasins non par défaut redirigeait toujours la réclamation de la carte-cadeau vers le site web par défaut.
+* **ACSD-65164** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.8) - Correction du problème en raison duquel le message d’erreur *Certaines des options d’élément sélectionnées ne sont actuellement pas disponibles* se produit lors de la réorganisation d’un produit configurable avec une seule option personnalisée de case à cocher sélectionnée.
+* **ACSD-64732** (pour Adobe Commerce >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel les contrôleurs tiers n’étaient pas correctement mis en cache avec les segments des clients.
 
 ## v1.1.61 {#v1-1-61}
 
