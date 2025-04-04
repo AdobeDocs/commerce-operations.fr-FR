@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: bbbe5481d87c44fe22beb303bcc19dcc00984fac
+source-git-commit: 1e02a1831639368ba4640231a854d6f5613c60ad
 workflow-type: tm+mt
-source-wordcount: '7271'
+source-wordcount: '7287'
 ht-degree: 0%
 
 ---
@@ -766,7 +766,8 @@ ht-degree: 0%
          - [ACSD-64111 : corrige l’erreur InvalidArgumentException : la classe n’existe pas lors de la définition de conditions imbriquées pour un composant Product dans  [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992 : erreur de condition de bon et de méthode d’expédition [!UICONTROL Cart Price Rule] avec l’interface utilisateur d’administration.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
       - v1.1.61 {#v1-1-61}
-         - [Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
+         - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
+         - [ACP2E-3689 : plusieurs problèmes avec affichage de l’arborescence des catégories à des niveaux plus profonds et reflétant les relations ancre/non-ancre](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178 : [!UICONTROL Edit Attribute Set] page se charge lentement avec des milliers d’attributs de produit](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
    - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - {#cli-reference} de référence des outils de ligne de commande
