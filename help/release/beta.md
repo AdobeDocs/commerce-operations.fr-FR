@@ -2,9 +2,9 @@
 title: Versions de Beta
 description: Découvrez les versions bêta d’Adobe Commerce et comment y participer.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: e569e8106930882323ab3ab046a3db0ee1da1503
+source-git-commit: c27867be74dfaa1bcd782a23db27db29fdccc4e3
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -79,15 +79,6 @@ Cet accélérateur d’intégration pour IBM Sterling Order Management permet au
 
 Pour participer à cette version bêta, envoyez une demande par e-mail à [sbieber@adobe.com](mailto:sbieber@adobe.com).
 
-### Connexion aux données et Audience Activation (Beta public)
-
-Partage de données étendu entre Adobe Commerce et Adobe Experience Platform pour offrir des expériences personnalisées plus puissantes. Cette fonctionnalité permet aux commerçants de :
-
-- Partage de profils clients Commerce
-- Création d’attributs personnalisés
-
-Pour participer à cette version bêta, envoyez une demande par e-mail à [DataConnection@adobe.com](mailto:DataConnection@adobe.com).
-
 ### Adobe Commerce Foundation (Beta public)
 
 Chaque version bêta d’Adobe Commerce Foundation comprend toutes les modifications apportées au code principal d’Adobe Commerce à la date de publication prévue, y compris, mais sans s’y limiter, les domaines fonctionnels suivants :
@@ -109,7 +100,6 @@ Les packages de version Beta comportent un suffixe `-betaX`. Par exemple, les pa
 - `2.4.7-beta2`
 
 Consultez le [calendrier des versions](schedule.md) pour obtenir la liste des dates de publication des prochaines versions bêta publiques.
-
 
 #### Accès à la version de Beta
 
