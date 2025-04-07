@@ -4,14 +4,18 @@ description: Appliquez le correctif ACSD-62689 pour résoudre le problème d’A
 feature: Categories
 role: Admin, Developer
 exl-id: 2506744a-01c8-462b-9a27-cd0bdb5664f9
-source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
+source-git-commit: 7aefd4f20580529a9da14776368bf2c3bbb3ff3c
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
 
 # ACSD-62689 : impossible d’ajouter des catégories dans les *[!UICONTROL Related Product Rules]* et les widgets après la profondeur 4
+
+>[!NOTE]
+>
+>Ce correctif est remplacé par [ACP2E-3689](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md).
 
 Le correctif ACSD-62689 corrige le problème en raison duquel un client ne peut pas ajouter de catégories dans les *[!UICONTROL Related Product Rules]* et les widgets après l’imbrication de profondeur 4. Ce correctif est disponible lorsque la version 1.1.57 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-62689. Notez que ce problème doit être résolu dans Adobe Commerce 2.4.8.
 
@@ -58,7 +62,7 @@ Un client ne peut pas ajouter de catégories dans les *[!UICONTROL Related Produ
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source On-Premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
 * Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 
