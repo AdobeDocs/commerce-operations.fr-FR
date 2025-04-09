@@ -2,7 +2,7 @@
 title: Versions de Beta
 description: Découvrez les versions bêta d’Adobe Commerce et comment y participer.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: c27867be74dfaa1bcd782a23db27db29fdccc4e3
+source-git-commit: c523b57270370d87be0f2ab0513f7908bb0a7173
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Cette version Beta prend en charge trois nouvelles fonctionnalités dans la requ
 
 Ces nouvelles conditions améliorent le mécanisme de filtrage des requêtes de recherche pour affiner les résultats de recherche. Ces nouvelles conditions n’affectent pas la requête de recherche principale. Pour participer à la version bêta, envoyez une demande par e-mail à [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
 
-Pour installer la version Beta de Live Search, consultez le [Guide de Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta).
+Pour installer la version Beta de Live Search, consultez le [Guide de Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
 
 ### Intégration du système IBM Sterling Order Management (Private Beta)
 
@@ -88,7 +88,7 @@ Chaque version bêta d’Adobe Commerce Foundation comprend toutes les modificat
 - Améliorations de GraphQL
 - Correctifs de qualité générale
 - Contributions de la Communauté
-- Modifications requises pour prendre en charge la compatibilité avec les [services Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- Modifications requises pour prendre en charge la compatibilité avec les [services Adobe Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
 
 #### Convention et planning d’affectation des noms
 

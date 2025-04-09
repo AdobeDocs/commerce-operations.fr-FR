@@ -2,9 +2,9 @@
 title: Notes De Mise À Jour Du Correctif De Sécurité D’Adobe Commerce 2.4.5
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.5.
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-source-git-commit: 9397740c608e4f0521018d6f6c918ca267197c6c
+source-git-commit: 9bf1c539220d70a8e7fe449e4d91199f23cc23b2
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1235'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,14 @@ ht-degree: 0%
 # Notes de mise à jour des correctifs de sécurité d’Adobe Commerce 2.4.5
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+## 2.4.5-p12
+
+La version de sécurité 2.4.5-p12 d’Adobe Commerce fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.5.
+
+Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
+
+{{b2b-patches}}
 
 ## 2.4.5-p11
 

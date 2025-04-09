@@ -1,5 +1,5 @@
 ---
-source-git-commit: 5ad3f01421b7724d1bc81cadfe7ce4528d8ba969
+source-git-commit: ba444c5f74cdeec86c842014d02775faf16b2f50
 workflow-type: tm+mt
 source-wordcount: '9'
 ht-degree: 0%
@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Extensions PHP
 
-Adobe Commerce requiert :
+Adobe Commerce requiert les éléments suivants :
 
 - `ext-bcmath`
 - `ext-ctype`
@@ -15,6 +15,7 @@ Adobe Commerce requiert :
 - `ext-dom`
 - `ext-fileinfo`
 - `ext-filter`
+- `ext-ftp`
 - `ext-gd`
 - `ext-hash`
 - `ext-iconv`
@@ -37,7 +38,7 @@ Adobe Commerce requiert :
 - `ext-zlib`
 - `lib-libxml`
 
-Magento Open Source requiert :
+Magento Open Source requiert les éléments suivants :
 
 - `ext-bcmath`
 - `ext-ctype`
@@ -45,6 +46,7 @@ Magento Open Source requiert :
 - `ext-dom`
 - `ext-fileinfo`
 - `ext-filter`
+- `ext-ftp`
 - `ext-gd`
 - `ext-hash`
 - `ext-iconv`
