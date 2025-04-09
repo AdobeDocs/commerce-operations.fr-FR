@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: fd76886406710d98dafa22953950424d2037477a
+source-git-commit: ecdc18ecee369cb94d5e86a78577d486f13de9e3
 workflow-type: tm+mt
-source-wordcount: '7312'
+source-wordcount: '7351'
 ht-degree: 0%
 
 ---
@@ -763,6 +763,7 @@ ht-degree: 0%
       - v1.1.60 {#v1-1-60}
          - [Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.60](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md)
          - [ACSD-63323 : résout [!UICONTROL Select All] fonctionnalité et améliore la pagination et le nombre d’enregistrements dans la fenêtre contextuelle de la catégorie de produits.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
+         - [ACSD-64137 : la recherche d&#39;emplacements de retrait par code postal ne fonctionne pas correctement pour la localisation en néerlandais](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code)
          - [ACSD-64111 : corrige l’erreur InvalidArgumentException : la classe n’existe pas lors de la définition de conditions imbriquées pour un composant Product dans  [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992 : erreur de condition de bon et de méthode d’expédition [!UICONTROL Cart Price Rule] avec l’interface utilisateur d’administration.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
       - v1.1.61 {#v1-1-61}
@@ -770,6 +771,8 @@ ht-degree: 0%
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
          - [ACP2E-3689 : plusieurs problèmes avec affichage de l’arborescence des catégories à des niveaux plus profonds et reflétant les relations ancre/non-ancre](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178 : [!UICONTROL Edit Attribute Set] page se charge lentement avec des milliers d’attributs de produit](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
+         - [ACP2E-3705 : l’exécution du cron indexer_update_all_views échoue lorsque MAGE_INDEXER_THREADS_COUNT est défini](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)
+         - [ACSD-64467 : éditeur WYSIWYG vide après l’enregistrement de la description de la catégorie au niveau de l’affichage du magasin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description.md)
          - [ACSD-63974 : corrige le temps de chargement des [!UICONTROL Requisition List] lents avec la pagination.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
    - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Référence des outils de ligne de commande {#cli-reference}
@@ -821,3 +824,6 @@ ht-degree: 0%
       - [Dépannage](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Journal des modifications](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+
+
+[def]: /help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code.md
