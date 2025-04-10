@@ -1,18 +1,23 @@
 ---
-title: 'ACSD-46192 : problème avec async/bulk/V1/configurable-products/bySku/options endpoint'
-description: Le correctif ACSD-46192 corrige le problème avec le point de terminaison "async/bulk/V1/configurable-products/bySku/options". Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19 est installé. L’ID de correctif est ACSD-46192. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.5.
+title: 'ACSD-46192 : problème avec le point d’entrée async/bulk/V1/configurable-products/bySku/options'
+description: Le correctif ACSD-46192 corrige le problème avec le point d’entrée « async/bulk/V1/configurable-products/bySku/options ». Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19 est installé. L’ID du correctif est ACSD-46192. Notez que le problème a été résolu dans Adobe Commerce 2.4.5.
 feature: Configuration, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 5a54f4b5-8467-40de-9d8f-ba46880ed5ad
+source-git-commit: 2cd5a55d95fad071fe872fa466aaeb56c439dad1
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
 # ACSD-46192 : problème avec le point d’entrée async/bulk/V1/configurable-products/bySku/options
 
-Le correctif ACSD-46192 corrige le problème avec le point de terminaison `async/bulk/V1/configurable-products/bySku/options`. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19 est installé. L’ID de correctif est ACSD-46192. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.5.
+>[!NOTE]
+>
+>Le correctif ACSD-46192 est partiellement obsolète, car ce problème est résolu par le correctif de sécurité obligatoire [APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).
+
+Le correctif ACSD-46192 corrige le problème avec le point d’entrée `async/bulk/V1/configurable-products/bySku/options`. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19 est installé. L’ID du correctif est ACSD-46192. Notez que le problème a été résolu dans Adobe Commerce 2.4.5.
 
 ## Produits et versions concernés
 
@@ -22,19 +27,19 @@ Le correctif ACSD-46192 corrige le problème avec le point de terminaison `async
 
 **Compatible avec les versions d’Adobe Commerce :**
 
-* Adobe Commerce (toutes les méthodes de déploiement) 2.4.3 et 2.4.4
+* Adobe Commerce (toutes les méthodes de déploiement) 2.3.6 - 2.4.3-p3
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Une erreur se produit lorsqu’une demande de POST est envoyée à `async/bulk/V1/configurable-products/bySku/`.
+Une erreur se produit lorsqu’une requête POST est envoyée à `async/bulk/V1/configurable-products/bySku/`.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Envoyez une demande de POST à `async/bulk/V1/configurable-products/bySku/`.
+1. Envoyez une requête POST à `async/bulk/V1/configurable-products/bySku/`.
 
 ```JSON
 [{
@@ -55,7 +60,7 @@ Une erreur se produit lorsqu’une demande de POST est envoyée à `async/bulk/V
 
 <u>Résultats attendus</u> :
 
-Il n’y a pas d’erreur. Vous obtenez la réponse suivante :
+Il n’y a aucune erreur. Vous obtenez la réponse suivante :
 
 ```JSON
 {
@@ -79,18 +84,18 @@ L’erreur suivante se produit :
 TypeError: Argument 3 passed to Magento\Framework\Webapi\ServiceInputProcessor::process() must be of the type array, string given, called in /var/www/html/vendor/magento/module-webapi-async/Controller/Rest/Asynchronous/InputParamsResolver.php on line 154 and defined in /var/www/html/vendor/magento/framework/Webapi/ServiceInputProcessor.php:172
 ```
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
+Pour en savoir plus sur l’outil de correctifs de la qualité, voir :
 
-* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!DNL Quality Patches Tool].
+* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!DNL Quality Patches Tool].
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].
