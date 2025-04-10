@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 7358d2aca927c94505e7a99b5ee390aa6a7f5fc9
+source-git-commit: 58d57155fdb197897bff7647546b4a79740ebb38
 workflow-type: tm+mt
-source-wordcount: '7359'
+source-wordcount: '7381'
 ht-degree: 0%
 
 ---
@@ -771,6 +771,7 @@ ht-degree: 0%
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
          - [ACP2E-3689 : plusieurs problèmes avec affichage de l’arborescence des catégories à des niveaux plus profonds et reflétant les relations ancre/non-ancre](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178 : [!UICONTROL Edit Attribute Set] page se charge lentement avec des milliers d’attributs de produit](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
+         - [ACSD-64684 : erreur de validation lors de l&#39;enregistrement d&#39;une carte cadeau d&#39;une valeur supérieure à 999 en raison de la virgule en mille (1 000)](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand.md)
          - [ACSD-63883 : correction d’un nombre_éléments incorrect en  [!DNL GraphQL]  de réponse pour [!UICONTROL Requisition List]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list.md)
          - [ACP2E-3705 : l’exécution du cron indexer_update_all_views échoue lorsque MAGE_INDEXER_THREADS_COUNT est défini](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)
          - [ACSD-64467 : éditeur WYSIWYG vide après l’enregistrement de la description de la catégorie au niveau de l’affichage du magasin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description.md)
