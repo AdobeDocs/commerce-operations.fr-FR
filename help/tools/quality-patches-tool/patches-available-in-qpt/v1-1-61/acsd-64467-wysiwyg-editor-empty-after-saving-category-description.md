@@ -1,0 +1,62 @@
+---
+title: 'ACSD-64467 : éditeur WYSIWYG vide après l’enregistrement de la description de la catégorie au niveau de l’affichage du magasin'
+description: Appliquez le correctif ACSD-64467 pour résoudre le problème d’Adobe Commerce en raison duquel l’éditeur WYSIWYG apparaît vide après l’enregistrement d’une description de catégorie au niveau de l’affichage du magasin.
+feature: Page Content
+role: Admin, Developer
+exl-id: 8bc1794f-ace1-4719-9fff-194dbd701ab6
+source-git-commit: b71447d5dac3208e537b29204dc8d47e8838f584
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 0%
+
+---
+
+# ACSD-64467 : éditeur WYSIWYG vide après l’enregistrement de la description de la catégorie au niveau de l’affichage du magasin
+
+Le correctif ACSD-64467 résout le problème où l’éditeur WYSIWYG apparaît vide après l’enregistrement d’une description de catégorie au niveau de l’affichage du magasin. Ce correctif est disponible lorsque la [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) version 1.1.61 est installée. L’ID de correctif est ACSD-64467. Veuillez noter que ce problème devrait être résolu dans Adobe Commerce 2.4.8.
+
+## Produits et versions concernés
+
+**Le correctif est créé pour Adobe version de Commerce :**
+
+* Adobe Commerce (toutes les méthodes de déploiement) 2.4.7-p3
+
+**Compatible avec les versions Adobe Commerce :**
+
+* Adobe Commerce (toutes les méthodes de déploiement) 2.4.7 - 2.4.7-p4
+
+>[!NOTE]
+>
+>Le correctif peut devenir applicable à d’autres versions avec de nouvelles [!DNL Quality Patches Tool] versions. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+
+## Problème
+
+L’éditeur WYSIWYG apparaît vide après l’enregistrement d’une description de catégorie au niveau de l’affichage du magasin.
+
+<u>Étapes à reproduire</u> :
+
+1. Modifiez une catégorie dans l’Administrateur Commerce au niveau de l’affichage du magasin.
+1. Décochez la *[!UICONTROL Use default value]* case en regard de la description de la catégorie.
+1. Saisissez une description dans l’éditeur WYSIWYG.
+1. Cliquez sur **[!UICONTROL Save]**.
+
+<u>Résultats</u> attendus :
+
+La description est enregistrée et correctement affichée.
+
+<u>Résultats</u> réels :
+
+La description est vide après le rechargement de la page.
+
+## Application du correctif
+
+Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
+
+* Adobe Commerce ou Magento Open Source local : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le [!DNL Quality Patches Tool] guide.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > appliquez des](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) correctifs dans le guide Commerce on Cloud Infrastructure.
+
+## Lectures connexes
+
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
+
+* [[!DNL Quality Patches Tool]: un outil en libre-service pour des correctifs de](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) qualité dans le guide Outils.
