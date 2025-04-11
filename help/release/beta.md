@@ -2,9 +2,9 @@
 title: Versions de Beta
 description: Découvrez les versions bêta d’Adobe Commerce et comment y participer.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: c523b57270370d87be0f2ab0513f7908bb0a7173
+source-git-commit: ea4f340540e57b282657a44502d80f1d5c409c6a
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Avec Adobe Commerce Optimizer, vous pouvez :
 - Créez des recherches et des recommandations personnalisées à l’aide de l’IA et du ML.
 - Affichez la disponibilité des données essentielles du produit, y compris l’état de synchronisation et les données d’événement du storefront pour une implémentation et un dépannage précis.
 
-[En savoir plus](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) sur Adobe Commerce Optimizer. Si vous souhaitez participer au programme d’accès anticipé de Adobe Commerce Optimizer, envoyez une demande par e-mail à [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+[En savoir plus](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) sur Adobe Commerce Optimizer. Si vous souhaitez en savoir plus sur le programme d’accès anticipé [!DNL Adobe Commerce Optimizer], remplissez le [formulaire de demande d’accès anticipé](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u).
 
 ### Amélioration des fonctionnalités de recherche pour la recherche en direct (Beta public)
 
