@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 72917c9e97141216e7393c28048e43f4f5f9c73f
+source-git-commit: 0960da0b0c1945e899ce092fb938de13e1b5c95c
 workflow-type: tm+mt
-source-wordcount: '7407'
+source-wordcount: '7422'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # Outils {#tools}
 
 - [Vue d’ensemble](overview.md)
-- {#site-wide-analysis-tool} de l’outil d’analyse à l’échelle du site
+- Outil d’analyse à l’échelle du site {#site-wide-analysis-tool}
    - [Introduction](site-wide-analysis-tool/intro.md)
    - [Installation](site-wide-analysis-tool/installation.md)
    - [Accès](site-wide-analysis-tool/access.md)
@@ -40,25 +40,25 @@ ht-degree: 0%
    - [Alertes gérées sur Adobe Commerce: [!DNL MariaDB] alerts](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
    - [Alertes gérées pour Adobe Commerce : alerte d [!DNL Apdex] avertissement](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
    - [Alertes gérées pour Adobe Commerce : alerte d’avertissement de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
-- {#quality-patches-tool} de l’outil de correctifs de qualité
+- Outil de correctifs de qualité {#quality-patches-tool}
    - [[!DNL Quality Patches Tool] : outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
    - [[!DNL Quality Patches Tool] : rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Utilisation](quality-patches-tool/usage.md)
    - [Notes de mise à jour](quality-patches-tool/release-notes.md)
    - Correctifs disponibles dans l’outil de correctifs de la qualité {#patches-available-in-qpt}
       - [Vue d’ensemble](quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview.md)
-      - {#v1-1-0} v1.1.0
+      - v1.1.0 {#v1-1-0}
          - [Présentation : Outil de correctifs de qualité (QPT) v1.1.0](quality-patches-tool/patches-available-in-qpt/v1-1-0/overview.md)
          - [MDVA-37592 : Le tri par prix ne fonctionne pas pour les produits dont le prix est égal à zéro](quality-patches-tool/patches-available-in-qpt/v1-1-0/mdva-37592-sorting-by-price-does-not-work-correctly.md)
          - [MDVA-38799 : produits téléchargeables non enregistrés après la création d’une mise à jour d’évaluation](quality-patches-tool/patches-available-in-qpt/v1-1-0/mdva-38799-downloadable-products-were-not-saved-after-creating-a-staging-update.md)
          - [MDVA-38827 : les clients reçoivent une erreur d’expédition de commande par e-mail](quality-patches-tool/patches-available-in-qpt/v1-1-0/mdva-38827-customers-receive-an-order-shipment-email-containing-an-error-message.md)
-      - {#v1-1-1} v1.1.1
+      - v1.1.1 {#v1-1-1}
          - [Présentation : Outil de correctifs de qualité (QPT) v1.1.1](quality-patches-tool/patches-available-in-qpt/v1-1-1/overview.md)
          - [MDVA-34948 : Ralentissement du site web](quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-34948-slow-site-and-operations.md)
          - [MDVA-36021 : les utilisateurs reçoivent un message d’erreur lors de l’ouverture des détails de la commande](quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-36021-call-to-a-member-function-getid-error-on-the-order-details-page.md)
          - [MDVA-37897 : redirection incorrecte lors de l’ajout de produits provenant de la section Récemment consultés](quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-37897-incorrect-redirect-when-customers-try-to-add-products.md)
          - [MDVA-39305 : problème de connexion lié à l’activation de Google reCAPTCHA](quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-39305-login-issues-with-enabled-google-recaptcha.md)
-      - {#v1-1-2} v1.1.2
+      - v1.1.2 {#v1-1-2}
          - [Présentation : Outil de correctifs de qualité (QPT) v1.1.2](quality-patches-tool/patches-available-in-qpt/v1-1-2/overview.md)
          - [MDVA-37115 : l’avis « Il n’y a que 0 à gauche » s’affiche sur la page du produit](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-37115-unnecessary-only-0-left-notice-is-shown-on-the-configurable-product-page.md)
          - [MDVA-37364 : l’attribut client personnalisé de type date rompt l’interface utilisateur de la grille.](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-37364-custom-customer-attribute-of-date-type-breaks-the-customer-grid-ui.md)
@@ -74,7 +74,7 @@ ht-degree: 0%
          - [MDVA-39966 : impossible de déployer des paramètres régionaux autres qu’en_US](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-39966-unable-to-deploy-locales-other-than-en-us.md)
          - [MDVA-39986 : impossible de passer des commandes dans l’administration dans le navigateur Safari sur macOS](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-39986-unable-to-place-order-in-admin-using-safari-browser-in-macos.md)
          - [MDVA-40134 : GraphQL ne renvoie pas les produits associés lorsque le catalogue partagé est activé](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-40134-graphql-does-not-return-related-products-when-shared-catalog-is-enabled.md)
-      - {#v1-1-3} v1.1.3
+      - v1.1.3 {#v1-1-3}
          - [Présentation : Outil de correctifs de qualité (QPT) v1.1.3](quality-patches-tool/patches-available-in-qpt/v1-1-3/overview.md)
          - [MDVA-31590 : impossible de mettre à jour les attributs en bloc à l’aide des files d’attente asynchrones MySQL](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-31590-unable-to-update-attributes-in-bulk-using-mysql-async-queues.md)
          - [MDVA-33606 : les utilisateurs rencontrent une erreur lors de l’enregistrement de la page CMS affectée à la hiérarchie](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-33606-users-get-error-when-saving-cms-page-assigned-to-hierarchy.md)
@@ -82,7 +82,7 @@ ht-degree: 0%
          - [MDVA-37234 : l’ajout multiple d’articles au panier crée des lignes en double](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-37234-adding-item-to-cart-multiple-times-creates-duplicate-item.md)
          - [MDVA-40262 : les requêtes GraphQL ne s’affichent pas dans les termes de recherche populaires dans admin](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-40262-graphql-queries-dont-show-in-popular-search-terms-in-admin.md)
          - [MDVA-40601 : impossible de récupérer les données sur la catégorie modifiée par la mise à jour planifiée via GraphQL](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-40601-users-get-error-retrieving-info-about-category.md)
-      - {#v1-1-4} v1.1.4
+      - v1.1.4 {#v1-1-4}
          - [Présentation : Outil de correctifs de qualité (QPT) v1.1.4](quality-patches-tool/patches-available-in-qpt/v1-1-4/overview.md)
          - [MC-42528 : la requête GraphQL de categoryList affiche toutes les catégories](quality-patches-tool/patches-available-in-qpt/v1-1-4/mc-42528-graphql-query-of-categorylist-shows-all-categories.md)
          - [MDVA-25631 : impossible d’enregistrer et d’actualiser les segments de clients](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-25631-unable-to-save-and-refresh-customer-segments.md)
@@ -95,7 +95,7 @@ ht-degree: 0%
          - [MDVA-40401 : la valeur d’utilisation du coupon change après l’échec de la commande](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-40401-coupon-usage-value-changes-even-after-failed-order.md)
          - [MDVA-40435 : la remise sur le produit groupé n’est pas appliquée correctement via GraphQL](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-40435-discount-on-bundle-product-is-not-applied-correctly-via-graphql.md)
          - [MDVA-40537 : la création d’une vue de magasin génère une erreur lorsque plusieurs pages CMS ont la même clé d’URL.](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-40537-creating-store-view-gives-error-when-multiple-cms-pages-with-same-url-keys-exist.md)
-      - {#v1-1-5} v1.1.5
+      - v1.1.5 {#v1-1-5}
          - [Présentation : Outil de correctifs de qualité (QPT) v1.1.5](quality-patches-tool/patches-available-in-qpt/v1-1-5/overview.md)
          - [MDVA-31763 : les règles de prix de catalogue sont rétablies jusqu’à la réindexation manuelle.](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-31763-catalog-price-rules-are-reverted-until-manual-reindex.md)
          - [MDVA-37748 : la requête GraphQL renvoie les produits non affectés au catalogue partagé](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-37748-graphql-query-returns-products-not-assigned-to-shared-catalog.md)
@@ -106,7 +106,7 @@ ht-degree: 0%
          - [MDVA-41061 : le statut du stock est réinitialisé sur vendable lorsque le produit est enregistré depuis l’administrateur](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-41061-stock-status-resets-saleable-when-saved-from-admin.md)
          - [MDVA-41164 : impossible d’enregistrer ou de modifier la société avec des attributs de client personnalisés](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-41164-admin-user-cannot-save-or-edit-company-with-custom-customer-attributes.md)
          - [MDVA-41236 : impossible de créer ou de modifier les mises à jour planifiées existantes pour le produit](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-41236-unable-to-create-new-or-edit-existing-scheduled-staging-update.md)
-      - {#v1-1-6} v1.1.6
+      - v1.1.6 {#v1-1-6}
          - [Présentation : Outil de correctifs de qualité (QPT) v1.1.6](quality-patches-tool/patches-available-in-qpt/v1-1-6/overview.md)
          - [MDVA-27456 : les utilisateurs reçoivent une erreur lors du chargement de Swagger](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-27456-users-get-error-when-loading-swagger.md)
          - [MDVA-30862 : date de commande incorrecte sur la facture PDF imprimée](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-30862-incorrect-order-date-on-printed-pdf-invoice.md)
@@ -772,6 +772,7 @@ ht-degree: 0%
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
          - [ACP2E-3689 : plusieurs problèmes avec affichage de l’arborescence des catégories à des niveaux plus profonds et reflétant les relations ancre/non-ancre](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178 : [!UICONTROL Edit Attribute Set] page se charge lentement avec des milliers d’attributs de produit](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
+         - [ACSD-64431 : la mutation « placeOrder » avec le code de coupon dans la requête renvoie une erreur interne](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error.md)
          - [ACSD-64684 : erreur de validation lors de l&#39;enregistrement d&#39;une carte cadeau d&#39;une valeur supérieure à 999 en raison de la virgule en mille (1 000)](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand.md)
          - [ACSD-63883 : correction d’un nombre_éléments incorrect en  [!DNL GraphQL]  de réponse pour [!UICONTROL Requisition List]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list.md)
          - [ACP2E-3705 : l’exécution du cron indexer_update_all_views échoue lorsque MAGE_INDEXER_THREADS_COUNT est défini](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)
@@ -779,7 +780,7 @@ ht-degree: 0%
          - [ACSD-63974 : corrige le temps de chargement des [!UICONTROL Requisition List] lents avec la pagination.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
          - [ACSD-64209 : le planificateur Cron récupère les devis négociables sans exclure les devis [!UICONTROL Ordered]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64209-excludes-ordered-quotes-in-cron-scheduler-to-prevent-email-triggers.md)
    - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
-- {#cli-reference} de référence des outils de ligne de commande
+- Référence des outils de ligne de commande {#cli-reference}
    - [Adobe Commerce (sur site)](reference/commerce-on-premises.md)
    - [Outil de compatibilité de mise à niveau](reference/uct.md)
 - Observation pour Adobe Commerce {#observation-for-adobe-commerce}
@@ -804,11 +805,11 @@ ht-degree: 0%
    - [Onglet Sécurité](observation-for-adobe-commerce/security-tab.md)
    - [Onglet Infra](observation-for-adobe-commerce/oac-infra.md)
    - [Utilisation de l’observation pour Adobe Commerce](observation-for-adobe-commerce/how-to-use.md)
-- {#data-migration} de l’outil de migration des données
+- Outil de migration des données {#data-migration}
    - [Fonctionnement de la migration](data-migration-tool/how-migration-works.md)
    - [Bonnes pratiques](data-migration-tool/best-practices.md)
    - [Versions prises en charge](data-migration-tool/supported-versions.md)
-   - {#basics} de base
+   - Concepts de base {#basics}
       - [Création d’un plan](data-migration-tool/create-plan.md)
       - [Conditions préalables](data-migration-tool/prerequisites.md)
       - [Installer](data-migration-tool/install.md)
@@ -816,7 +817,7 @@ ht-degree: 0%
       - [Configuration](data-migration-tool/configure.md)
       - [Personnaliser](data-migration-tool/customize.md)
       - [Spécification technique](data-migration-tool/technical-specification.md)
-   - Migrer les {#migrate-data} de données
+   - Migrer les données {#migrate-data}
       - [Vue d’ensemble](data-migration-tool/migrate-data/overview.md)
       - [Paramètres](data-migration-tool/migrate-data/settings.md)
       - [Données](data-migration-tool/migrate-data/data.md)
@@ -824,7 +825,7 @@ ht-degree: 0%
       - [Suivi](data-migration-tool/migrate-data/follow-up.md)
       - [Données nécessitant une migration manuelle](data-migration-tool/migrate-data/manual.md)
       - [Étapes suivant la migration des données](data-migration-tool/migrate-data/post-migration.md)
-   - {#resources} des ressources
+   - Ressources {#resources}
       - [Dépannage](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Journal des modifications](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
