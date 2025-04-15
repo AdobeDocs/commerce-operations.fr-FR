@@ -1,8 +1,8 @@
 ---
-source-git-commit: 54757d09eb0f476229e567e43c58dc2130a59ac9
+source-git-commit: f756964406f101a93a513600f668edbffec17cb1
 workflow-type: tm+mt
 source-wordcount: '602'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 # Versions publiées
@@ -255,7 +255,7 @@ La prise en charge de la version 2.4.5 se termine le 9 août 2025.
 
 ## 2.4.4
 
-La prise en charge de la version 2.4.4 se termine le 24 avril 2025.
+La prise en charge de la version 2.4.4 de a pris fin le 12 avril 2025.
 
 <table>
   <thead>
