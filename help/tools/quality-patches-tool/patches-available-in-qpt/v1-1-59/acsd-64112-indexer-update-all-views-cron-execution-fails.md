@@ -3,15 +3,19 @@ title: 'ACSD-64112 : l’exécution cron « indexer_update_all_views » échoue 
 description: Appliquez le correctif ACSD-64112 pour résoudre le problème d’Adobe Commerce en raison duquel l’exécution cron « indexer_update_all_views » échoue lorsque « MAGE_INDEXER_THREADS_COUNT » est défini.
 feature: Catalog Management, B2B
 role: Admin, Developer
-source-git-commit: 544c7b9664ccc9204c2c0c78b103ad823e18ef7d
+exl-id: c95f179d-5291-481f-b655-08a9db608513
+source-git-commit: 0078cf5fb6d6c3a8650762d7cdf5556de642e201
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-64112 : l’exécution de `indexer_update_all_views` cron échoue lorsque `MAGE_INDEXER_THREADS_COUNT` est défini
+
+>[!NOTE]
+>
+>Ce correctif a été remplacé par [ACP2E-3705](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md) pour les versions d’Adobe Commerce supérieures à la version 2.4.7.
 
 Le correctif ACSD-64112 corrige le problème d’échec de l’exécution du cron `indexer_update_all_views` lorsque `MAGE_INDEXER_THREADS_COUNT` est défini. Ce correctif est disponible lorsque la version 1.1.59 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-64112. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.8.
 
@@ -23,7 +27,7 @@ Le correctif ACSD-64112 corrige le problème d’échec de l’exécution du cro
 
 **Compatible avec les versions d’Adobe Commerce :**
 
-* Adobe Commerce (toutes les méthodes de déploiement) 2.4.5 - 2.4.7-p3
+* Adobe Commerce (toutes les méthodes de déploiement) 2.4.5 - 2.4.6-p10
 
 >[!NOTE]
 >
