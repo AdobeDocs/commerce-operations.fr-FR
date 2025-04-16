@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2f8ca1dd3289c1a24e33198c95d38c1a04a507ff
+source-git-commit: 934fe621356c45bcefd2f84b7d01986b4995b061
 workflow-type: tm+mt
-source-wordcount: '28394'
+source-wordcount: '28390'
 ht-degree: 0%
 
 ---
@@ -99,8 +99,8 @@ Auparavant, il était possible de créer le groupe de clients de prix de groupe 
    * _Remarque à propos de la correction_ : le système aligne désormais correctement les boutons d’actions de page sur le côté droit de l’en-tête autocollant dans le panneau d’administration, ce qui améliore l’aspect professionnel. Auparavant, ces boutons flottaient incorrectement sur le côté gauche de l’en-tête persistant.
    * _Problème GitHub_ : <https://github.com/magento/magento2/issues/38701>
    * _Contribution du code GitHub_ : <https://github.com/magento/magento2/commit/44cef3a9>
-* _AC-11999_ : erreur dev:di:info dans magento 2.4.7
-   * _Remarque de correction_ : le système affiche désormais correctement les paramètres du constructeur lors de l’exécution de la commande dev:di:info, ce qui empêche toute erreur. Auparavant, l’exécution de cette commande entraînait une erreur en raison d’une incohérence de type dans l’argument .
+* _AC-11999_ : erreur `dev:di:info` dans Magento 2.4.7
+   * _Remarque de correction_ : le système affiche désormais correctement les paramètres du constructeur lors de l’exécution de la commande `dev:di:info`, ce qui empêche toute erreur. Auparavant, l’exécution de cette commande entraînait une erreur en raison d’une incohérence de type dans l’argument .
    * _Problème GitHub_ : <https://github.com/magento/magento2/issues/38740>
    * _Contribution du code GitHub_ : <https://github.com/magento/magento2/commit/0c53bbf7>
 * _AC-13000_ : la case à cocher Se connecter en tant que client ne peut pas être traduite
@@ -245,7 +245,7 @@ Nous pouvons désormais mettre à jour les statuts de commande personnalisés, a
    * _Remarque sur la correction_ : après la correction, si le domaine d’administration personnalisé est un sous-domaine du domaine principal, l’administrateur est accessible uniquement à partir du sous-domaine configuré.
    * _Problème GitHub_ : <https://github.com/magento/magento2/issues/37663>
    * _Contribution du code GitHub_ : <https://github.com/magento/magento2/commit/3f12d152>
-* _ACP2E-3392_ : validation non effectuée de la « quantité maximale autorisée dans le panier »
+* _ACP2E-3392_ : validation non effectuée pour la « quantité maximale autorisée dans le panier »
    * _Correction de note_ : auparavant, lorsque nous mettions `Maximum Qty Allowed in Shopping Cart` vide, aucune exception n’était générée, bien qu’une valeur vide ne soit pas acceptée ici. Une fois que ce correctif est appliqué, le fait de placer une chaîne vide génère des exceptions et ne permet pas d’enregistrer le produit.
    * _Contribution du code GitHub_ : <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3408_ : [problème d’interface utilisateur de l’aperçu de Pagebuilder] les boutons de la colonne Page Builder ne s’alignent pas correctement
@@ -1531,8 +1531,8 @@ Auparavant, affecté à l’admin store au lieu de leur magasin respectif.
 * _LYNX-399_ : la miniature de l’espace réservé est renvoyée lorsqu’un produit simple est ajouté au panier dans un produit groupé
    * _Correction d’une note_ : correction d’un problème en raison duquel l’ajout d’un produit simple (partie d’un produit groupé) au panier renvoyait une image miniature d’espace réservé, même si une image était affectée au produit.
 Détails du correctif :
-· La miniature du produit affiche désormais correctement l’image affectée, le cas échéant.
-· La sélection de miniature respecte la configuration d’administration sous :
+* La miniature du produit affiche désormais correctement l’image affectée, le cas échéant.
+* La sélection de miniature respecte la configuration d’administration sous :
 Magasins > Paramétrage > Ventes > Passage en caisse > Panier > Image de produit groupé.
 Cela garantit un comportement cohérent des miniatures pour les produits regroupés en fonction des paramètres du magasin.
 * _LYNX-400_ : les attributs d’option personnalisés du client ne fonctionnent pas avec des valeurs entières
@@ -1542,10 +1542,10 @@ Cela garantit un comportement cohérent des miniatures pour les produits regroup
 * _LYNX-403_ : only_x_left_in_stock renvoie toujours 0 pour les produits configurables
    * _Correction de la note_ : correction d’un problème en raison duquel l’attribut only_x_left_in_stock renvoyait toujours 0 pour les produits configurables lorsqu’il était ajouté à l’aide du SKU parent avec des options.
 Détails du correctif :
-· La valeur only_x_left_in_stock reflète désormais précisément le stock de la variante enfant sélectionnée au lieu du SKU parent.
-· Cela permet de s’assurer que les niveaux de stock sont correctement affichés pour les variations de produit configurables dans le panier et les pages de produit.
+* La valeur only_x_left_in_stock reflète désormais précisément le stock de la variante enfant sélectionnée au lieu du SKU parent.
+* Cela permet de s’assurer que les niveaux de stock sont correctement affichés pour les variations de produit configurables dans le panier et les pages de produit.
 * _LYNX-405_ : erreur GraphQL : type &#39;fichier&#39; non pris en charge dans la requête des options personnalisables
-   * _Remarque de correction_ : correction d’un problème en raison duquel GraphQL renvoyait une erreur pour les options personnalisables de type « fichier » dans les éléments de panier. La requête renvoie désormais correctement les détails de tous les types d’options personnalisables, y compris les options basées sur des fichiers, sans causer d’erreurs.
+   * _Correction d’une note_ : correction d’un problème en raison duquel GraphQL renvoyait une erreur pour les options personnalisables de type « fichier » dans les articles du panier. La requête renvoie désormais correctement les détails de tous les types d’options personnalisables, y compris les options basées sur des fichiers, sans causer d’erreurs.
 * _LYNX-411_ : la requête GraphQL ne renvoie pas le prix normal calculé correct pour les produits personnalisables
    * _Correction de la note_ : correction d’un problème en raison duquel GraphQL ne renvoyait pas le prix normal calculé correct pour les produits personnalisables. La requête inclut désormais correctement le prix normal calculé avec des valeurs personnalisables appliquées (par exemple, 125 $) dans la propriété de prix, reflétant à la fois le prix de base et tous les coûts de personnalisation supplémentaires.
 * _LYNX-412_ : les taxes appliquées via EstimatedTotals persistent avec des mutations mises à jour
