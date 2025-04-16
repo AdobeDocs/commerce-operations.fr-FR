@@ -3,15 +3,15 @@ title: 'ACSD-64431 : la mutation « placeOrder » avec le code de coupon dans la
 description: Appliquez le correctif ACSD-64431 pour résoudre le problème d’Adobe Commerce où la mutation « placeOrder » contenant les informations du code de coupon dans la requête renvoie une erreur de serveur interne au lieu de passer la commande avec succès.
 feature: GraphQL, Orders, Promotions/Events
 role: Admin, Developer
-source-git-commit: 883b9db12308c8832afbf709bc188edab746618f
+exl-id: 13918f3e-842b-4b2e-b2e2-2d8add542a87
+source-git-commit: 43f4055d7c6bf681fde851d5132860ea7b68b677
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
-
-# ACSD-64431 : la mutation « placeOrder » avec le code de coupon dans la requête renvoie une erreur interne
+# ACSD-64431 : la mutation « placeOrder » avec le code de coupon dans la requête renvoie une erreur de serveur interne
 
 Le correctif ACSD-64431 corrige le problème en raison duquel la mutation `placeOrder` contenant les informations de code de coupon dans la requête génère une erreur de serveur interne au lieu de passer la commande avec succès. Ce correctif est disponible lorsque la version 1.1.61 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-64431. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.8.
 
@@ -341,10 +341,6 @@ Pour appliquer des correctifs individuels, utilisez les liens suivants en foncti
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
 * Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
-
-## Étapes supplémentaires requises après l’installation du correctif
-
-(Cette section est facultative ; certaines étapes peuvent être nécessaires après l’application du correctif pour résoudre le problème.) 
 
 ## Lecture connexe
 
