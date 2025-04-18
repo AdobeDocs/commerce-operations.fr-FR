@@ -1,7 +1,7 @@
 ---
-source-git-commit: 934fe621356c45bcefd2f84b7d01986b4995b061
+source-git-commit: ae8701cf2486ef0a79c96bd264e16b0e7803a8f6
 workflow-type: tm+mt
-source-wordcount: '28390'
+source-wordcount: '28386'
 ht-degree: 0%
 
 ---
@@ -245,7 +245,7 @@ Nous pouvons désormais mettre à jour les statuts de commande personnalisés, a
    * _Remarque sur la correction_ : après la correction, si le domaine d’administration personnalisé est un sous-domaine du domaine principal, l’administrateur est accessible uniquement à partir du sous-domaine configuré.
    * _Problème GitHub_ : <https://github.com/magento/magento2/issues/37663>
    * _Contribution du code GitHub_ : <https://github.com/magento/magento2/commit/3f12d152>
-* _ACP2E-3392_ : validation non effectuée pour la « quantité maximale autorisée dans le panier »
+* _ACP2E-3392_ : validation non effectuée pour la « Quantité maximale autorisée dans le panier »
    * _Correction de note_ : auparavant, lorsque nous mettions `Maximum Qty Allowed in Shopping Cart` vide, aucune exception n’était générée, bien qu’une valeur vide ne soit pas acceptée ici. Une fois que ce correctif est appliqué, le fait de placer une chaîne vide génère des exceptions et ne permet pas d’enregistrer le produit.
    * _Contribution du code GitHub_ : <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3408_ : [problème d’interface utilisateur de l’aperçu de Pagebuilder] les boutons de la colonne Page Builder ne s’alignent pas correctement
@@ -1089,8 +1089,8 @@ Auparavant, les enregistrements des tables de séquences de produits groupées n
    * _Remarque de correction_ : le système référence désormais correctement les classes dans les modules, ce qui garantit un fonctionnement plus fluide et empêche les blocages dus à des classes inexistantes. Cela inclut un correctif de bugs dans les modules Indexer et Creditmemo, ainsi que l’implémentation de HttpGetActionInterface dans la classe PrintAction. Auparavant, des références de classe incorrectes entraînaient des erreurs et des blocages système potentiels, et certaines fonctionnalités, telles que le nom de fichier pour les fichiers PDF creditmemo et la réindexation des stocks, ne fonctionnaient pas comme prévu.
    * _Problème GitHub_ : <https://github.com/magento/magento2/issues/39126>
    * _Contribution du code GitHub_ : <https://github.com/magento/magento2/pull/37784>
-* _AC-12964_ : possibilité de définir la zone pour la commande de ligne de commande dev:di:info
-   * _Remarque sur la correction_ : le système permet désormais aux développeurs de définir une zone pour la commande dev:di:info CLI, ce qui améliore le processus de développement et de débogage. Auparavant, cette commande ne pouvait afficher que les informations relatives à la zone GLOBAL.
+* _AC-12964_ : possibilité de définir une zone pour `dev:di:info` commande CLI
+   * _Remarque sur la correction_ : le système permet désormais aux développeurs de définir une zone pour la commande de l’interface de ligne de commande `dev:di:info`, ce qui améliore le processus de développement et de débogage. Auparavant, cette commande ne pouvait afficher que les informations relatives à la zone GLOBAL.
    * _Problème GitHub_ : <https://github.com/magento/magento2/issues/38758>
    * _Contribution du code GitHub_ : <https://github.com/magento/magento2/pull/38759>
 * _AC-13149_ : [Problème] ajoutez la propriété isMultipleFiles au modèle d’élément de formulaire d’image
