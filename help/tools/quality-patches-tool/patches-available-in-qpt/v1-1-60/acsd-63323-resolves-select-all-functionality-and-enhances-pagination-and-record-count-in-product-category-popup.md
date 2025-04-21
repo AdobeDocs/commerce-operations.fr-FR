@@ -3,17 +3,17 @@ title: 'ACSD-63323 : résout [!UICONTROL Select All] fonctionnalité et amélior
 description: Appliquez le correctif ACSD-63323 pour résoudre le problème d’Adobe Commerce en raison duquel l’option [!UICONTROL Select All] ne fonctionne pas lors de l’ajout de produits à une catégorie. En outre, cela garantit que la pagination et le libellé du nombre d’enregistrements fonctionnent correctement lors de l’ajout de produits à une catégorie via la grille contextuelle.
 feature: Products
 role: Admin, Developer
-source-git-commit: f3f0cc93adf83b485ca50811adcc561638e3c5c2
+exl-id: 96e318fd-f1dd-4b15-b171-78ae1c8e4e0d
+source-git-commit: d24909ea2571eacafac1ff6b225e87bc40d320bc
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-63323 : résout [!UICONTROL Select All] fonctionnalité et améliore la pagination et le nombre d’enregistrements dans la fenêtre contextuelle de la catégorie de produits.
 
-Le correctif ACSD-63323 corrige le problème en raison duquel l’option **[!UICONTROL Select All]** ne fonctionne pas lors de l’ajout de produits à une catégorie. En outre, cela garantit que la pagination et le libellé du nombre d’enregistrements fonctionnent correctement lors de l’ajout de produits à une catégorie via la grille contextuelle. Ce correctif est disponible lorsque le [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installé. L’ID du correctif est ACSD-63323. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.8.
+Le correctif ACSD-63323 corrige le problème en raison duquel l’option **[!UICONTROL Select All]** ne fonctionne pas lors de l’ajout de produits à une catégorie. En outre, cela garantit que la pagination et le libellé du nombre d’enregistrements fonctionnent correctement lors de l’ajout de produits à une catégorie via la grille contextuelle. Ce correctif est disponible lorsque la version 1.1.60 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-63323. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.8.
 
 ## Produits et versions concernés
 
@@ -68,5 +68,3 @@ Pour appliquer des correctifs individuels, utilisez les liens suivants en foncti
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
 * [[!DNL Quality Patches Tool] : un outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils .
-
-
