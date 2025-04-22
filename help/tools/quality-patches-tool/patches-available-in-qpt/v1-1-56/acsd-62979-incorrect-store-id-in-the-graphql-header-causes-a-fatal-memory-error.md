@@ -3,13 +3,13 @@ title: 'ACSD-62979 : un ID de magasin incorrect dans l’en-tête GraphQL entra�
 description: Appliquez le correctif ACSD-62979 pour résoudre le problème d’Adobe Commerce où l’utilisation d’un ID de magasin incorrect dans l’en-tête du GraphQL provoque une erreur de mémoire fatale
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: 16875f95ab23559d4e1081b8cfe0374e1394d87d
+exl-id: 832baae1-34b4-4ca8-bfa9-221aa60da67e
+source-git-commit: 187a0056971e6bec324b5cc9d374375bbfb84dd8
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62979 : un ID de magasin incorrect dans l’en-tête GraphQL entraîne une erreur de mémoire fatale
 
@@ -19,11 +19,11 @@ Le correctif ACSD-62979 corrige le problème en raison duquel l’utilisation d�
 
 **Le correctif est créé pour la version Adobe Commerce :**
 
-* Adobe Commerce (toutes les méthodes de déploiement) 2.4.6-p7, 2.4.6
+* Adobe Commerce (toutes les méthodes de déploiement) 2.4.6, 2.4.6-p7, 2.4.7-p3
 
 **Compatible avec les versions d’Adobe Commerce :**
 
-* Adobe Commerce (toutes les méthodes de déploiement) 2.4.4 - 2.4.6-p8
+* Adobe Commerce (toutes les méthodes de déploiement) 2.4.4 - 2.4.7-p4
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Erreur fatale telle que :
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source On-Premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
 * Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
@@ -93,4 +93,3 @@ Pour appliquer des correctifs individuels, utilisez les liens suivants en foncti
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
 * [[!DNL Quality Patches Tool] : un outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils .
-
