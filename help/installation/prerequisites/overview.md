@@ -2,28 +2,28 @@
 title: Conditions préalables à l’installation sur site
 description: En savoir plus sur les dépendances logicielles requises pour les installations sur site d’Adobe Commerce.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: db2256f5327897a4376a0d038ce697e8f93235af
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '332'
 ht-degree: 1%
 
 ---
 
 # Conditions préalables à l’installation sur site
 
-Avant d’installer Adobe Commerce, vous devez effectuer les opérations suivantes :
+Avant d’installer Adobe Commerce, procédez comme suit :
 
-* Configurez un ou plusieurs hôtes qui répondent à la [ configuration requise](../system-requirements.md).
-* Si vous configurez plusieurs noeuds web avec l’équilibrage de charge, configurez et testez cette partie de votre système _avant_ d’installer l’application.
-* Assurez-vous de pouvoir sauvegarder l’ensemble du système à différents moments pendant l’installation afin de pouvoir le restaurer en cas de problème.
+* Configurez un ou plusieurs hôtes conformes à la [configuration requise](../system-requirements.md) répertoriée dans l’onglet *Commerce On-Premise*.
+* Si vous configurez plusieurs nœuds web avec l’équilibrage de charge, configurez et testez cette partie de votre système _avant_ d’installer l’application.
+* Assurez-vous de pouvoir sauvegarder l’ensemble de votre système à différents moments de l’installation afin de pouvoir le restaurer en cas de problèmes.
 
 >[!NOTE]
 >
->Nous supposons que vous installez Adobe Commerce dans un **environnement de développement**, que vous disposez d’un accès utilisateur root à la machine, **et** que la machine n’a pas besoin d’être hautement sécurisée. Si vous configurez une machine plus sécurisée, nous vous recommandons vivement de consulter un administrateur réseau pour obtenir de l’aide supplémentaire.
+>Nous supposons que vous installez Adobe Commerce dans un **environnement de développement**, que vous disposez d’un accès utilisateur racine à la machine, **et** que la machine n’a pas besoin d’être hautement sécurisée. Si vous configurez une machine plus sécurisée, nous vous recommandons vivement de consulter un administrateur réseau pour obtenir une assistance supplémentaire.
 
-Nous vous recommandons vivement de mettre à jour et de mettre à niveau votre logiciel de système d’exploitation. Ces mises à niveau peuvent fournir des correctifs logiciels et de sécurité susceptibles d’empêcher des problèmes futurs. Vous ne savez pas ce que cela signifie ? Consultez la [page de présentation de l&#39;installation](../overview.md).
+Nous vous recommandons vivement de mettre à jour et à niveau votre logiciel de système d&#39;exploitation. Ces mises à niveau peuvent fournir des correctifs de sécurité et logiciels qui pourraient prévenir de futurs problèmes. Vous ne savez pas ce que ça veut dire ? Consultez notre [page de présentation de l’installation](../overview.md).
 
-Saisissez les commandes suivantes en tant qu’utilisateur disposant des privilèges `root` :
+Saisissez les commandes suivantes en tant qu’utilisateur disposant de droits d’`root` :
 
 * Ubuntu
 
@@ -45,9 +45,9 @@ Saisissez les commandes suivantes en tant qu’utilisateur disposant des privil�
   yum -y upgrade
   ```
 
-## Vérification requise
+## Vérification des prérequis
 
-Pour vérifier la configuration système requise, saisissez les commandes suivantes :
+Pour vérifier les prérequis sur votre système, saisissez les commandes suivantes :
 
 ### Apache
 
@@ -55,7 +55,7 @@ CentOS : `httpd -v`
 
 Ubuntu : `apache2 -v`
 
-Adobe Commerce prend en charge la version 2.4 d’Apache, car le résultat suivant indique :
+Adobe Commerce prend en charge Apache version 2.4, comme l’indique le résultat suivant :
 
 ```
 Server version: Apache/2.4.0 (Unix)
@@ -66,11 +66,11 @@ Pour installer ou mettre à niveau Apache, voir [Apache](web-server/apache.md).
 
 ### PHP
 
-Voir [Configuration requise](../system-requirements.md) pour les versions prises en charge de PHP et [PHP](../system-requirements.md#php-settings) pour les exigences de PHP.
+Voir l&#39;onglet *Commerce On-premise* dans [Configuration requise](../system-requirements.md) pour les versions supportées de PHP et [PHP](../system-requirements.md#php-settings) pour les exigences PHP.
 
 ### MySQL
 
-Vérifiez que vous disposez d’une version compatible de MySQL pour la version d’Adobe Commerce que vous installez. Voir [Configuration requise](../system-requirements.md) pour connaître les versions prises en charge.
+Vérifiez que vous disposez d’une version de MySQL compatible avec la version d’Adobe Commerce que vous installez. Consultez l’onglet *Commerce On-premise* dans [Configuration requise](../system-requirements.md) pour connaître les versions prises en charge.
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -96,9 +96,9 @@ affiliates. Other names may be trademarks of their respective
 owners.
 ```
 
-Saisissez `help` ou `\h` pour obtenir de l’aide. Saisissez `\c` pour effacer l’instruction d’entrée actuelle.
+Saisissez `help` ou `\h` pour obtenir de l’aide. Tapez `\c` pour effacer l&#39;instruction d&#39;entrée actuelle.
 
-Entrez `exit` à l’invite `mysql>` pour quitter.
+Saisissez `exit` à l’invite de `mysql>` pour quitter.
 
 Pour installer ou mettre à niveau MySQL, voir [MySQL](database/mysql.md).
 
@@ -110,7 +110,7 @@ Pour vérifier votre installation OpenSearch :
 curl -XGET '<opensearch-hostname>:<opensearch-port>'
 ```
 
-Pour vérifier l’installation de votre Elasticsearch :
+Pour vérifier votre installation Elasticsearch :
 
 ```bash
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'
