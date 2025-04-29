@@ -1,7 +1,7 @@
 ---
-source-git-commit: 736e2b53cc6df0083fc02c7e6e88da1e7ca00b0d
+source-git-commit: a2c060d3bbc0b22034cd4deea382412426376fef
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '881'
 ht-degree: 4%
 
 ---
@@ -10,6 +10,58 @@ ht-degree: 4%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### mercredi 29 avril 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout d’un problème connu concernant Braintree aux notes de mise à jour de la version <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5</a>.</p>
+</td>
+      <td>
+        Mise à jour majeure
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e195b58c7ae5573373f644c583eb12633703591">0e195b</a> (validation)</td>
+    </tr>
+  </tbody>
+</table>
+
+### mercredi 22 avril 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Mise à jour de la section <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54966-fix-for-limited-use-coupon-code-after-failed-orders">produits et versions affectés dans le correctif ACSD-54966</a></p>
+</td>
+      <td>
+        Qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aa47a83f4ec38aa6ff96008cbab2733602465435">aa47a8</a> (validation)</td>
+    </tr>
+    <tr>
+      <td><p>Mise à jour de la section <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error">produits et versions affectés dans le correctif ACSD-62979</a></p>
+</td>
+      <td>
+        Qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4f16e57e339fd9ef7de1e0da30eaec7b7bb38396">4f16e5</a> (validation)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### samedi 18 avril 2025
 
