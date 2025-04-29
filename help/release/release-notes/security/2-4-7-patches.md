@@ -2,9 +2,9 @@
 title: Notes De Mise À Jour Du Correctif De Sécurité D’Adobe Commerce 2.4.7
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-source-git-commit: 9bf1c539220d70a8e7fe449e4d91199f23cc23b2
+source-git-commit: 331a76e8389b1779dda402f506ddb9b76bea95b9
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,14 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 ### Faits saillants
 
 Cette version introduit la prise en charge de l’extension Adobe Commerce [conforme à la norme HIPAA](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview).
+
+### Problèmes connus
+
+**Problème** : lors de l’installation de la version 2.4.7-p5 avec PHP 8.2 ou une version ultérieure, le système installe `paypal/module-braintree` version 4.7.0, qui est prévue pour la version 2.4.8 et les versions ultérieures. Pour PHP 8.1, la version correcte de Braintree 4.6.1-p5 est utilisée. Cette incohérence est due à la dépendance lâche sur `adobe-commerce/extensions-metapackage: ~2.0` dans le métapaquet. Cela a un impact sur la compatibilité et les fonctionnalités prises en charge pour les déploiements PHP 8.2+.<!-- ACPLTSRV-6276) -->
+
+En outre, pour les versions 2.4.7-p3, 2.4.7-p4 et 2.4.7-p5, l’extension Braintree version 4.6.1-p5 peut être installée, tandis que certains utilisateurs et utilisatrices s’attendent à une version 4.6.1-p3 ou p4, en raison de dépendances plus strictes qui ont été assouplies pour permettre les mises à niveau d’extension dans une ligne de version. <!-- AC-14430 -->
+
+**Solution** : Pour vous assurer que vous disposez de la version Braintree correcte pour votre version PHP, exécutez `composer update` pour installer la version appropriée comme dicté par la dépendance `adobe-commerce/extensions-metapackage:2.0.0`.
 
 ## 2.4.7-p4
 
