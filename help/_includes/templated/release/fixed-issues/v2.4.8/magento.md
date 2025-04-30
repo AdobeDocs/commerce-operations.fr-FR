@@ -1,7 +1,7 @@
 ---
-source-git-commit: ae8701cf2486ef0a79c96bd264e16b0e7803a8f6
+source-git-commit: c96f5620bbde1b15f6419c482c790517cc8de70c
 workflow-type: tm+mt
-source-wordcount: '26039'
+source-wordcount: '26036'
 ht-degree: 0%
 
 ---
@@ -288,7 +288,7 @@ Auparavant, après s’être connecté, les produits ajoutés à la liste de com
 * _AC-9843_ : i18n:collect-phrases rompt l’intégrité des traductions
    * _Correction de la remarque_ : la commande `bin/magento i18n:collect-phrases -o` collecte et ajoute désormais correctement les nouvelles expressions des fichiers JavaScript et .phtml, en veillant à ce que les traductions soient reflétées avec précision dans le fichier de traduction. Auparavant, le système n’incluait pas les expressions de traduction multiligne des fichiers JavaScript et les expressions des fichiers .phtml dans le fichier de traduction, ce qui entraînait des traductions incomplètes ou incorrectes.
    * _Contribution du code GitHub_ : <https://github.com/magento/magento2/commit/0c53bbf7>
-* _ACP2E-2787_ : l&#39;apostrophe dans le nom d&#39;affichage du magasin est remplacée par &#39;
+* _ACP2E-2787_ : l&#39;apostrophe dans le nom d&#39;affichage du magasin est remplacée par &amp;#039;
    * _Correction d’une note_ : les filtres de vue de magasin de la grille affichent désormais correctement les apostrophes
    * _Problème GitHub_ : <https://github.com/magento/magento2/issues/38395>
    * _Contribution du code GitHub_ : <https://github.com/magento/magento2/commit/39d54c2d>
@@ -1005,8 +1005,8 @@ Nous pouvons désormais mettre à jour les statuts de commande personnalisés, a
    * _Remarque de correction_ : les PHPDocs de la méthode \Magento\Framework\Data\Collection::getItemById ont été mis à jour afin d’inclure la valeur null comme type de retour possible, ce qui résout les problèmes liés aux outils d’analyse statique. Auparavant, les PHPDocs de la méthode ne spécifiaient pas la valeur null comme type de retour possible, ce qui entraînait des avertissements ou des erreurs dans l’analyse statique lorsque la méthode était utilisée dans des instructions conditionnelles.
    * _Problème GitHub_ : <https://github.com/magento/magento2/issues/38485>
    * _Contribution du code GitHub_ : <https://github.com/magento/magento2/pull/38439>
-* _AC-11592_ : [Problème] Autoriser uniquement les préférences valides pendant la configuration:di:la compilation
-   * _Remarque de correction_ : le système renvoie désormais une erreur lors de la commande setup:di:compile si une préférence est créée pour une classe qui n’existe pas ou qui est spécifiquement exclue, en s’assurant que seules des préférences valides sont autorisées. Auparavant, ces scénarios échouaient en silence, ce qui rendait inutiles les modules externes associés aux classes d’origine.
+* _AC-11592_ : [Problème] Autoriser uniquement les préférences valides pendant l’`setup:di:compile`
+   * _Remarque de correction_ : le système renvoie désormais une erreur lors de la commande `setup:di:compile` si une préférence est créée pour une classe qui n’existe pas ou qui est spécifiquement exclue, en s’assurant que seules des préférences valides sont autorisées. Auparavant, ces scénarios échouaient en silence, ce qui rendait inutiles les modules externes associés aux classes d’origine.
    * _Problème GitHub_ : <https://github.com/magento/magento2/issues/38517>
    * _Contribution du code GitHub_ : <https://github.com/magento/magento2/pull/33161>
 * _AC-11651_ : Magento tente de modifier la propriété en lecture seule dans la méthode __wakeup de LoggerProxy
@@ -1537,7 +1537,7 @@ Détails du correctif :
    * _Correction de la note_ : correction d’un problème en raison duquel la tentative de suppression des produits en stock du panier entraînait une erreur GraphQL « La quantité demandée n’est pas disponible » si le panier contenait également des produits configurables avec un stock insuffisant. La suppression fonctionne désormais comme prévu sans déclencher d’erreurs.
 * _LYNX-469_ : impossible d’ajouter des produits en raison de la sensibilité à la casse du SKU dans la mutation
    * _Remarque de correction_ : correction d’un problème en raison duquel la mutation addProductsToCart renvoyait une erreur « PRODUCT_NOT_FOUND » lors de l’utilisation de SKU avec une casse différente. La mutation gère désormais les SKU sans respect de la casse, ce qui garantit la cohérence avec les requêtes du service de catalogue et le comportement du PDP.
-* _LYNX-603_ : attribut de produit > ™ abrégée de marque renvoyée sous la forme ™
+* _LYNX-603_ : attribut de produit > marque de commerce forme abrégée &amp;trade; est renvoyé sous la forme &amp;trade;
    * _Remarque à propos de la correction_ : problème de codage des caractères résolu avec le nom du produit pour l’API GraphQL
 * _LYNX-619_ : problème de mutation updateCustomerEmail
    * _Correction d’une note_ : correction d’un problème lié à la mutation updateCustomerEmail en raison duquel les clients sans attributs personnalisés obligatoires (ajoutés après la création du compte) ne pouvaient pas mettre à jour leur e-mail.
@@ -1591,7 +1591,7 @@ Détails du correctif :
    * _Remarque à propos de la correction_ : le système charge désormais correctement les fichiers CSS de manière asynchrone sur les pages de passage en caisse, même lorsque le paramètre « dev/css/use_css_critical_path » est activé, ce qui garantit que ces pages sont rendues avec les styles CSS appropriés. Auparavant, une politique de sécurité du contenu (CSP) restreinte empêchait l’exécution du JavaScript intégré, ce qui entraînait le chargement inattendu des fichiers CSS.
    * _Problème GitHub_ : <https://github.com/magento/magento2/issues/39020>
    * _Contribution du code GitHub_ : <https://github.com/magento/magento2/pull/39040>
-* _AC-13398_ : en utilisant le type virtuel pour configurer le plug-in, la méthode d&#39;intercepteur ne peut pas être générée correctement dans la commande setup:di:compile
+* _AC-13398_ : à l’aide du type virtuel pour configurer le plug-in, la méthode d’intercepteur ne peut pas être générée correctement dans `setup:di:compile` commande
    * _Remarque de correction_ : le système génère désormais correctement des méthodes d’intercepteur lors de l’utilisation d’un type virtuel pour configurer un plug-in, ce qui garantit des résultats cohérents, qu’ils soient précompilés ou compilés lors de l’exécution. Auparavant, le système générait des résultats incorrects lors de la précompilation par rapport à la compilation à l’exécution.
    * _Problème GitHub_ : <https://github.com/magento/magento2/issues/33980>
    * _Contribution du code GitHub_ : <https://github.com/magento/magento2/pull/38141>
