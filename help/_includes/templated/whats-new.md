@@ -1,8 +1,8 @@
 ---
-source-git-commit: a2c060d3bbc0b22034cd4deea382412426376fef
+source-git-commit: d755cea4bef9328a5e9ebb6d610922c70d8e4288
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 4%
+source-wordcount: '938'
+ht-degree: 5%
 
 ---
 # Nouveautés du modèle
@@ -10,6 +10,50 @@ ht-degree: 4%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### vendredi 1 mai 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Amélioration du formatage des notes de mise à jour pour les problèmes résolus dans <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a> 2.4.8. (Crédits sur <a href="https://github.com/hostep">@hostep</a>)</p>
+</td>
+      <td>
+        Technique
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35df05be16d3da775b9cead47d2895b63d575892">35df05</a> (validation)</td>
+    </tr>
+  </tbody>
+</table>
+
+### jeudi 30 avril 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Correction du rendu de texte dans les notes de mise à jour pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a>. (Crédits à <a href="https://github.com/hostep">@hostep</a>)</p>
+</td>
+      <td>
+        Technique
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ce23f97dfa62e9b9b57b6db62a7d0c97d3faf7a6">ce23f9</a> (validation)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### mercredi 29 avril 2025
 
@@ -23,7 +67,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’un problème connu concernant Braintree aux notes de mise à jour de la version <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5</a>.</p>
+      <td><p>Ajout d’un problème connu à propos de Braintree aux notes</a> de mise à jour de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">version 2.4.7-p5.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -141,7 +185,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list">description détaillée du problème résolu par le correctif ACSD-63883 dans la version QPT 1.1.61</a></p>
+      <td><p>Ajout <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list">d’une description détaillée du problème résolu par le correctif ACSD-63883 dans la version QPT 1.1.61</a></p>
 </td>
       <td>
         Nouvelle rubrique
@@ -154,10 +198,10 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td>
         Nouvelle rubrique
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e6fb66170fd0a0487a049508c7ac3fa96fa3633a">e6fb66</a> (validation)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e6fb66170fd0a0487a049508c7ac3fa96fa3633a">e6FB66</a> (commit)</td>
     </tr>
     <tr>
-      <td><p>Ajout <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand">description détaillée du problème résolu par le correctif ACSD-64684 dans la version QPT 1.1.61</a></p>
+      <td><p>Ajout <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand">d’une description détaillée du problème résolu par le correctif ACSD-64684 dans la version QPT 1.1.61</a></p>
 </td>
       <td>
         Nouvelle rubrique
@@ -187,12 +231,12 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d58695ea2c82c6e1c5f30411ef9fc343e983b892">j58695</a> (validation)</td>
     </tr>
     <tr>
-      <td><p>Ajout de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer"> description détaillée du problème résolu par le correctif ACP2E-3705 dans la version QPT 1.1.61</a></p>
+      <td><p>Ajout <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer">d’une description détaillée du problème résolu par le correctif ACP2E-3705 dans la version QPT 1.1.61</a></p>
 </td>
       <td>
         Nouvelle rubrique
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aaed1bc7241dc485894fcb63a99c08d26cb99a15">aaed1b</a> (validation)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aaed1bc7241dc485894fcb63a99c08d26cb99a15">aaed1b</a> (commit)</td>
     </tr>
     <tr>
       <td><p>Ajout <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/ascd-64149-customer-segment-with-a-date-range-condition">description détaillée du problème résolu par le correctif ACSD-64149 dans la version QPT 1.1.60</a></p>
@@ -413,7 +457,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview"> description des problèmes résolus par les correctifs disponibles dans la version QPT 1.1.60</a></p>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview">description des problèmes résolus par les correctifs disponibles dans la version QPT 1.1.60</a></p>
 </td>
       <td>
         Nouvelle rubrique
@@ -421,7 +465,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dca8a509796fb6c81e338000f771cc5fe3fea81c">dca8a5</a> (validation)</td>
     </tr>
     <tr>
-      <td><p>Ajout d’une section de dépannage aux instructions <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites#search-engine">préparation du moteur de recherche</a>.</p>
+      <td><p>Ajout d’une section de dépannage aux instructions de préparation</a> des moteurs de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites#search-engine">recherche.</p>
 <p><i>Contribution communautaire de jeff-matthews</i></p></td>
       <td>
         Technique
@@ -536,7 +580,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td>
         Nouvelle rubrique
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/862a248bee86d4ceed05b0ce3a3d072c3542d6b3">862a24</a> (validation)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/862a248bee86d4ceed05b0ce3a3d072c3542d6b3">862a24</a> (commit)</td>
     </tr>
   </tbody>
 </table>
