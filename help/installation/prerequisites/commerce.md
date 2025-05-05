@@ -62,4 +62,4 @@ Les systèmes UNIX nécessitent des `root` privilèges pour installer et configu
 
 N’installez *pas* l’application dans le serveur Web docroot en tant qu’utilisateur `root` , car le serveur Web pourrait ne pas être en mesure d’interagir avec ces fichiers.
 
-Vous devez disposer `root` de privilèges pour créer le propriétaire](file-system/overview.md) du système de [fichiers et ajouter ce propriétaire au groupe du serveur Web. Vous utilisez le propriétaire du système de fichiers pour exécuter `bin/magento` des commandes à partir de la ligne de commande et pour configurer des tâches cron, qui planifient des tâches pour vous.
+Vous devez disposer `root` de privilèges pour créer le propriétaire[&#128279;](file-system/overview.md) du système de fichiers et ajouter ce propriétaire au groupe du serveur Web. Vous utilisez le propriétaire du système de fichiers pour exécuter `bin/magento` des commandes à partir de la ligne de commande et pour configurer des tâches cron, qui planifient des tâches pour vous.

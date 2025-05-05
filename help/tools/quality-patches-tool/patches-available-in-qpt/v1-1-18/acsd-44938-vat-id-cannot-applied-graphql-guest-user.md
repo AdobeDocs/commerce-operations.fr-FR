@@ -1,6 +1,6 @@
 ---
 title: "ACSD-44938 : L'ID de TVA ne peut pas être appliqué dans la  [!DNL GraphQL] demande d'utilisateur invité"
-description: Le correctif ACSD-44938 corrige le problème en raison duquel le `TVA_ID` ne peut pas être appliqué dans une requête [!DNL GraphQL] pour un utilisateur invité. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 est installé. L’ID de correctif est ACSD-44938. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
+description: Le correctif ACSD-44938 corrige le problème en raison duquel le &grave;TVA_ID&grave; ne peut pas être appliqué dans une requête [!DNL GraphQL] pour un utilisateur invité. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 est installé. L’ID de correctif est ACSD-44938. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
 feature: Admin Workspace, GraphQL
 role: Admin
 exl-id: 62d36c27-545a-4c32-be69-a92e4b3ca2ca

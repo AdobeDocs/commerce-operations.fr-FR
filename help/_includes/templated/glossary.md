@@ -1432,7 +1432,7 @@ Un projet de PWA peut inclure un fichier de définition UPWARD pour spécifier s
 _Attributs de terme :_
 
 * _Champ : conception, logiciel de commerce, programmation_
-* _Synonymes : PWA Studio, Unified Progressive Web App Response Definition{1_
+* _Synonymes : PWA Studio, Unified Progressive Web App Response Definition&lbrace;1_
 * _Termes associés : pwa_
 
 ## V

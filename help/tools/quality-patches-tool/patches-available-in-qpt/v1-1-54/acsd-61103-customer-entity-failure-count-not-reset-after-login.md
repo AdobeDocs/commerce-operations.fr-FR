@@ -1,6 +1,6 @@
 ---
 title: "ACSD-61103 : le nombre d’échecs n’est pas réinitialisé à zéro après une connexion client réussie via l’API"
-description: Appliquez le correctif ACSD-61103 pour résoudre le problème Adobe Commerce en raison duquel le nombre d’échecs dans la table `customer_entity` n’est pas réinitialisé à zéro une fois qu’un client s’est connecté via les points de terminaison de l’API.
+description: Appliquez le correctif ACSD-61103 pour résoudre le problème Adobe Commerce en raison duquel le nombre d’échecs dans la table &grave;customer_entity&grave; n’est pas réinitialisé à zéro une fois qu’un client s’est connecté via les points de terminaison de l’API.
 feature: GraphQL, REST, Customers
 role: Admin, Developer
 source-git-commit: d53b747c3b2021e842647de5371a5f0f2a760f09

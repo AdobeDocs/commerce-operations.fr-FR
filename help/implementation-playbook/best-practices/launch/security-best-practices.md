@@ -57,7 +57,7 @@ Utilisez [la gestion de la configuration](../../../configuration/cli/set-configu
 
 Les commandes d’interface de ligne de commande `lock config` et `lock env` configurent les variables d’environnement pour les empêcher d’être mises à jour par l’administrateur. La commande écrit la valeur dans le fichier `<Commerce base dir>/app/etc/env.php`. (Pour Commerce sur les projets d’infrastructure cloud, voir [Gestion de la configuration du magasin](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html#sensitive-data).)
 
-![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **** Exécution des analyses de sécurité
+![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **&#x200B;**&#x200B;Exécution des analyses de sécurité
 
 Utilisez le [ service d&#39;analyse de sécurité de Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) pour surveiller tous les sites Adobe Commerce à la recherche de risques de sécurité connus et de logiciels malveillants, et inscrivez-vous pour recevoir des mises à jour de correctifs et des notifications de sécurité.
 

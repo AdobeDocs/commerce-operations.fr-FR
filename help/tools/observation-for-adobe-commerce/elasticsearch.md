@@ -38,7 +38,7 @@ L’image **[!UICONTROL Active Shards in Cluster]** indique le nombre total de p
 
 ## [!UICONTROL Index health - this will show the index name and color status]
 
-![ {intégrité de l’index](../../assets/tools/index-health.jpg)
+![ &lbrace;intégrité de l’index](../../assets/tools/index-health.jpg)
 
 Cette image affiche le nom de l’index et le nombre d’états de la couleur de l’index. En faisant défiler le tableau vers le bas, vous verrez le même nom d’index avec les états de couleur Jaune et Rouge. Le nombre qui suit le nom de l’index 27 est le nombre de la couleur de l’état. S’il est égal à zéro, aucune instance de l’index ne se trouvait dans cet état de couleur pendant les périodes sélectionnées.
 

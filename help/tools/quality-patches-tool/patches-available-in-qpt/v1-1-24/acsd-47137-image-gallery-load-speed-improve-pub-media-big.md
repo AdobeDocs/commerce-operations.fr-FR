@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-47137 : amélioration de la vitesse de chargement de la galerie d’images `pub/media` grand dossier'
+title: 'ACSD-47137 : amélioration de la vitesse de chargement de la galerie d’images &grave;pub/media&grave; grand dossier'
 description: Appliquez le correctif ACSD-47137 pour améliorer la vitesse de chargement de la galerie d’images lorsque le dossier "pub/media" est très volumineux.
 feature: Cache, Catalog Management, Categories, Media
 role: Admin

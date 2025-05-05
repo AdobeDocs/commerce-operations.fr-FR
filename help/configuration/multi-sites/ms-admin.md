@@ -106,7 +106,7 @@ Pour accéder à un site Web à l’aide d’une URL unique telle que `http://fr
 
 Pour modifier l’URL de base du site Web :
 
-1. Dans le _panneau Admin_, cliquez sur **Stocke les** paramètres > **>** la configuration **>****Général** > **Web**.
+1. Dans le _panneau Admin_, cliquez sur **Stocke les** paramètres > **>** la configuration **>**&#x200B;**Général** > **Web**.
 1. Dans la **liste Vue** du magasin en haut de la page, cliquez sur le nom de l’un de vos sites Web, comme le montre la figure suivante.
 
    ![Sélectionner une portée](../../assets/configuration/multi-site-scope.png)
@@ -135,7 +135,7 @@ Voir le [Guide de l’utilisateur de Commerce](https://experienceleague.adobe.co
 
 Pour ajouter le code du magasin à l’URL de base :
 
-1. Dans le _panneau Admin_, cliquez sur **Stocke les** paramètres > **>** la configuration **>****Général** > **Web**.
+1. Dans le _panneau Admin_, cliquez sur **Stocke les** paramètres > **>** la configuration **>**&#x200B;**Général** > **Web**.
 1. Dans la **liste Vue** du magasin en haut de la page, cliquez sur **Configuration** par défaut, comme le montre la figure suivante.
 
    ![Sélectionnez la portée de configuration par défaut](../../assets/configuration/multi-site-default.png)
@@ -155,7 +155,7 @@ Vous devez effectuer cette étape en dernier car vous perdrez l’accès à l’
 
 Pour modifier l’URL de base d’affichage de magasin par défaut :
 
-1. Dans le _panneau Admin_, cliquez sur **Stocke les** paramètres > **>** la configuration **>****Général** > **Web**.
+1. Dans le _panneau Admin_, cliquez sur **Stocke les** paramètres > **>** la configuration **>**&#x200B;**Général** > **Web**.
 
 1. Dans la liste _Affichage magasin_ située en haut de la page, cliquez sur **Configuration par défaut**.
 

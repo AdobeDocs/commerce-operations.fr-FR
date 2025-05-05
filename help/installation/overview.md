@@ -13,7 +13,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Le diagramme suivant présente un aperçu général des installations _**sur site**_ d’Adobe Commerce :
+>Le diagramme suivant présente un aperçu général des installations _&#x200B;**sur site**&#x200B;_ d’Adobe Commerce :
 
 ![Fonctionnement de l’installation](../assets/installation/install-diagram-24.svg)
 

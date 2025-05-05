@@ -24,7 +24,7 @@ Utilisez le guide [« Ajouter des commandes d’interface de ligne de commande �
 
 Vous pouvez appeler `bin/magento` commandes de l’interface de ligne de commande à l’aide de raccourcis au lieu du nom complet de la commande. Par exemple, vous pouvez appeler `bin/magento setup:upgrade` en utilisant `bin/magento s:up`, `bin/magento s:upg`. Voir [syntaxe des raccourcis](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) pour comprendre comment utiliser des raccourcis avec n’importe quelle commande d’interface de ligne de commande.
 
-Cette documentation de référence est générée à partir du code source de l’application. Pour modifier la documentation, vous devez ouvrir une pull request pour la commande correspondante dans le référentiel codebase](https://github.com/magento) approprié[. Voir [Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) pour plus d’informations.
+Cette documentation de référence est générée à partir du code source de l’application. Pour modifier la documentation, vous devez ouvrir une pull request pour la commande correspondante dans le référentiel codebase[&#128279;](https://github.com/magento) approprié. Voir [Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) pour plus d’informations.
 
 ### Options globales
 

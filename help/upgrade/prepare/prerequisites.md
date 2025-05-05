@@ -99,7 +99,7 @@ Pour mettre correctement à niveau MySQL de la version 8.0 vers la version 8.4, 
    >
    >Si vous ne modifiez pas la valeur de `restrict_fk_on_non_standard_key` en `OFF`, l’erreur suivante s’affiche lors de l’importation :
    >
-   ```sql
+   >```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. Redémarrez le serveur MySQL.
@@ -192,7 +192,7 @@ La prise en charge d’Elasticsearch 8.x a été introduite dans Adobe Commerce 
 
    Cette approche fonctionne pour 2.4.7-p4 avec PHP 8.3. Le problème se produit car `aws/aws-sdk-php` nécessite des `psr/http-message >= 2.0`, ce qui peut entraîner des conflits. Les étapes ci-dessus permettent de résoudre ces problèmes de dépendance.
 
-+++
+   +++
 
 1. Mettez à jour les composants de votre projet.
 

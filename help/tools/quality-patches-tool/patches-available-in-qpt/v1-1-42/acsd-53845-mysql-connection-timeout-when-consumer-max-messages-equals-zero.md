@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-53845 : problème de délai d’expiration de la connexion MySQL lorsque consumer max_messages = 0'
-description: Appliquez le correctif ACSD-53845 pour résoudre le problème Adobe Commerce où la connexion MySQL expire lorsque le consommateur `max_messages = 0`.
+description: Appliquez le correctif ACSD-53845 pour résoudre le problème Adobe Commerce où la connexion MySQL expire lorsque le consommateur &grave;max_messages = 0&grave;.
 feature: REST, Configuration
 role: Admin, Developer
 source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-61133: `sales_clean_citations` cron supprime les guillemets des commandes non approuvées"
+title: "ACSD-61133: &grave;sales_clean_citations&grave; cron supprime les guillemets des commandes non approuvées"
 description: Appliquez le correctif ACSD-61133 pour résoudre le problème Adobe Commerce en raison duquel le cron "sales_clean_citations" supprime les guillemets des commandes non approuvées.
 feature: B2B, Purchase Orders
 role: Admin, Developer

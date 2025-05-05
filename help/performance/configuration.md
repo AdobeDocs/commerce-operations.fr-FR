@@ -24,7 +24,7 @@ Un indexeur peut s’exécuter en mode **[!UICONTROL Update on Save]** ou **[!UI
 
 >[!TIP]
 >
->La réindexation sur MariaDB 10.4 et 10.6 prend plus de temps que les autres versions de MariaDB ou de [!DNL MySQL]. Nous vous suggérons de modifier le paramètre de configuration MariaDB par défaut, décrit dans les conditions préalables](../installation/prerequisites/database/mysql.md) à l’installation[.
+>La réindexation sur MariaDB 10.4 et 10.6 prend plus de temps que les autres versions de MariaDB ou de [!DNL MySQL]. Nous vous suggérons de modifier le paramètre de configuration MariaDB par défaut, décrit dans les conditions préalables[&#128279;](../installation/prerequisites/database/mysql.md) à l’installation.
 
 ## Caches
 
@@ -101,7 +101,7 @@ Lorsque vous activez l’option **[!UICONTROL Enable [!DNL JavaScript] Bundling]
 
 >[!INFO]
 >
->Pour plus d’informations sur l’optimisation des fichiers CSS et Javascript sur Adobe Commerce sur l’infrastructure cloud et Adobe Commerce](https://support.magento.com/hc/en-us/articles/360044482152) dans le Centre d’aide Adobe Commerce_, voir [Optimisation des fichiers CSS et Javascript.
+>Pour plus d’informations sur l’optimisation des fichiers CSS et Javascript sur Adobe Commerce sur l’infrastructure cloud et Adobe Commerce[&#128279;](https://support.magento.com/hc/en-us/articles/360044482152) dans le Centre d’aide Adobe Commerce_, voir Optimisation des fichiers CSS et Javascript.
 
 ### Conseils de regroupement
 

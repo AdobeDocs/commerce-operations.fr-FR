@@ -44,6 +44,6 @@ Si la journalisation binaire est activée pour votre base de données Magento 1,
 
 Migrez le code de l’extension Magento 1 vers Magento 2.
 
-Pour trouver les dernières versions des extensions, rendez-vous sur [!DNL [Commerce Marketplace]](https://marketplace.magento.com/) ou contactez votre fournisseur d’extension.
+Pour trouver les dernières versions des extensions, rendez-vous sur [[!DNL [Commerce Marketplace]]](https://marketplace.magento.com/) ou contactez votre fournisseur d’extension.
 
-Vous pouvez également utiliser le [!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md).
+Vous pouvez également utiliser le [[!DNL [Code Migration Tool]]](https://github.com/magento-commerce/code-migration/blob/develop/README.md).

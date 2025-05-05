@@ -1,6 +1,6 @@
 ---
 title: "ACSD-56741 : résolution des erreurs de configuration de la base de données avec les déclencheurs MySQL personnalisés"
-description: Appliquez le correctif ACSD-56741 pour résoudre le problème Adobe Commerce en raison duquel un message d’erreur *Tentative d’accès au décalage de tableau sur la valeur de type null* apparaît pendant `setup:upgrade` en raison d’un déclencheur MySQL personnalisé dans la base de données sans rapport avec l’indexation et [!DNL MView].
+description: Appliquez le correctif ACSD-56741 pour résoudre le problème Adobe Commerce en raison duquel un message d’erreur *Tentative d’accès au décalage de tableau sur la valeur de type null* apparaît pendant &grave;setup:upgrade&grave; en raison d’un déclencheur MySQL personnalisé dans la base de données sans rapport avec l’indexation et [!DNL MView].
 feature: Install
 role: Admin, Developer
 source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a

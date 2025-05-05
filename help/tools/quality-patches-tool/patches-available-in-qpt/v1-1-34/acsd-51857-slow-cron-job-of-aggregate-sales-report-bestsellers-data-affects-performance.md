@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-51857 : La tâche cron lente de `aggregate_sales_report_bestsellers_data` affecte les performances'
+title: 'ACSD-51857 : La tâche cron lente de &grave;aggregate_sales_report_bestsellers_data&grave; affecte les performances'
 description: Appliquez le correctif ACSD-51857 pour résoudre le problème Adobe Commerce en raison duquel la tâche cron lente "aggregate_sales_report_bestsellers_data" affecte les grandes tables de base de données "sales_order" et "sales_order_item".
 exl-id: 48e9852d-2cf6-411c-adf6-f91ac7743338
 source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace

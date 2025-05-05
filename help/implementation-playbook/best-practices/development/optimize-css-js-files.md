@@ -81,7 +81,7 @@ Pour activer la minification JS dans Adobe Commerce sur l’infrastructure cloud
 
 ## Fusion et regroupement de fichiers JS
 
-Vous pouvez activer la fusion ou le regroupement dans l’Administration Commerce (la fusion et le regroupement ne peuvent pas être activés en même temps) : Stocke **les paramètres >**> **** la configuration **>** Paramètres >JavaScript > ****]**avancés** du développeur **.[!UICONTROL **
+Vous pouvez activer la fusion ou le regroupement dans l’Administration Commerce (la fusion et le regroupement ne peuvent pas être activés en même temps) : Stocke **les paramètres >**> **&#x200B;**&#x200B;la configuration **>** Paramètres >JavaScript > **&#x200B;**&#x200B;**avancés** du développeur **.**
 
 Vous pouvez également activer le bundling intégré Adobe Commerce (bundling de base) à partir de la ligne de commande :
 

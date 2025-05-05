@@ -61,4 +61,4 @@ Pour en savoir plus sur les correctifs de qualité pour Adobe Commerce, consulte
 * [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Correctifs de qualité dans le [!DNL Quality Patches Tool] guide.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section Correctifs disponibles dans QPT[](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section Correctifs disponibles dans QPT[&#128279;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).

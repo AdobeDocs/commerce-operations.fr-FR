@@ -134,7 +134,7 @@ Si l’extension n’est pas installée, suivez les instructions suivantes pour 
 
 ## Installation de l’agent
 
-Nous avons créé un [script](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) shell pour simplifier l’installation. Nous vous recommandons d’utiliser le script shell, mais vous pouvez suivre la méthode d’installation](#manual) manuelle [si nécessaire.
+Nous avons créé un [script](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) shell pour simplifier l’installation. Nous vous recommandons d’utiliser le script shell, mais vous pouvez suivre la méthode d’installation[&#128279;](#manual) manuelle si nécessaire.
 
 >[!INFO]
 >
@@ -403,9 +403,9 @@ Pour résoudre cette erreur, essayez les étapes suivantes :
 
 1. Effectuez une [installation par script](#scripted), enregistrez la sortie et recherchez les erreurs éventuelles dans la sortie.
 1. Vérifiez le fichier `config.yaml` généré et vérifiez que le chemin d&#39;accès à votre instance Commerce et PHP est correct.
-1. Assurez-vous que l’utilisateur qui exécute le planificateur appartient au groupe](../../installation/prerequisites/file-system/overview.md) Unix propriétaire du [système de fichiers ou est le même utilisateur que le propriétaire du système de fichiers.
+1. Assurez-vous que l’utilisateur qui exécute le planificateur appartient au groupe[&#128279;](../../installation/prerequisites/file-system/overview.md) Unix propriétaire du système de fichiers ou est le même utilisateur que le propriétaire du système de fichiers.
 1. Assurez-vous que les clés du [connecteur](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) Commerce Services sont correctement installées et essayez de les mettre à jour pour connecter l’extension à votre système.
-1. [Désinstallez](#uninstall) l’agent après la mise à jour des clés et réinstallez-le à l’aide du script](#scripted) d’installation[.
+1. [Désinstallez](#uninstall) l’agent après la mise à jour des clés et réinstallez-le à l’aide du script[&#128279;](#scripted) d’installation.
 1. Exécutez le planificateur et voyez si la même erreur persiste.
 1. Si la même erreur persiste, augmentez le niveau de journalisation dans le `config.yaml` pour déboguer et ouvrez un ticket de support.
 

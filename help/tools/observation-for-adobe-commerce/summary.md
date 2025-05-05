@@ -288,7 +288,7 @@ Le comportement du ou des processus PHP dépend de la [configuration](https://ww
 
 ### [!UICONTROL PHP errors]
 
-![ {php errors](../../assets/tools/php-errors.jpg)
+![ &lbrace;php errors](../../assets/tools/php-errors.jpg)
 
 L’image **[!UICONTROL PHP errors]** indique le nombre d’erreurs PHP avec les programmes de travail pendant la période sélectionnée. Pour plus d’informations, reportez-vous à la section [Paramètres PHP Adobe Commerce](../../installation/prerequisites/php-settings.md).
 
@@ -384,7 +384,7 @@ L’image **[!UICONTROL Order transactions (default?)]** recherche les transacti
 * &quot;%Vous pouvez résoudre ce problème en mettant à niveau le service Elasticsearch de votre infrastructure cloud Magento vers la version%&quot; en tant que &quot;ver_err&quot;.
 * L’état d’intégrité de la grappe est passé de \[JAUNE\] à \[ROUGE\] (motif :%&#39; comme &#39;jaune_rouge&#39;
 * &#39;%Aucun espace laissé sur l’appareil%&#39; comme &#39;no_space&#39;
-* &#39;% Échec de l&#39;exécution de [SearchRequest{searchType=%&#39; en tant que &#39;failed_query&#39;
+* &#39;% Échec de l&#39;exécution de &lbrack;SearchRequest&lbrace;searchType=%&#39; en tant que &#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 

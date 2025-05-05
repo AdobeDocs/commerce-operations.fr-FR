@@ -36,7 +36,7 @@ Le `env.php` fichier contient les sections suivantes :
 
 ## backend
 
-Configurez frontName **** pour l’URL d’administration Commerce à l’aide `backend` du nœud dans env.php.
+Configurez frontName **&#x200B;**&#x200B;pour l’URL d’administration Commerce à l’aide `backend` du nœud dans env.php.
 
 ```conf
 'backend' => [

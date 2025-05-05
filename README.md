@@ -72,7 +72,7 @@ En règle générale, la plupart des auteurs n’ont besoin que d’ajouter une 
 >**REMARQUE :**
 >
 >* La génération de contenu modèle nécessite de travailler sur la ligne de commande d’un terminal.
->* Ruby doit être installé pour exécuter le script de rendu. Voir [_jekyll/.ruby-version](_jekyll/.ruby-version) pour connaître la version requise.
+>* Ruby doit être installé pour exécuter le script de rendu. Voir [_jekyll/.ruby-version] (_jekyll/.ruby-version) pour connaître la version requise.
 
 Pour obtenir une description de la structure de fichiers pour le contenu modèle, reportez-vous aux sections suivantes :
 

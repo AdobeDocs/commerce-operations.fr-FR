@@ -25,7 +25,7 @@ Le _guide de configuration_ fournit des documents de référence et des conseils
 
 ## Configuration de l’administrateur Commerce
 
-Il existe des rubriques correspondantes dans le Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview) de l’utilisateur [Commerce qui peuvent vous aider à comprendre les descriptions de champs pour chaque paramètre de configuration dans l’Administrateur Commerce.
+Il existe des rubriques correspondantes dans le Guide[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview) de l’utilisateur Commerce qui peuvent vous aider à comprendre les descriptions de champs pour chaque paramètre de configuration dans l’Administrateur Commerce.
 
 ## Configuration du cloud
 

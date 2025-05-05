@@ -16,7 +16,7 @@ Utilisez le tableau suivant pour trouver des notes de mise à jour et des inform
 
 >[!TIP]
 >
->- Si vous débutez dans Adobe Commerce, consultez l’architecture d’entreprise [et [les rubriques Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) pour vous orienter](../../implementation-playbook/architecture/enterprise-blueprint.md).
+>- Si vous débutez dans Adobe Commerce, consultez l’architecture d’entreprise [&#128279;](../../implementation-playbook/architecture/enterprise-blueprint.md)et [les rubriques Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) pour vous orienter.
 >- Pour plus d’informations sur les mises à niveau, voir [Lecture](../../upgrade/resources/recommended-reading.md) recommandée.
 
 <table>

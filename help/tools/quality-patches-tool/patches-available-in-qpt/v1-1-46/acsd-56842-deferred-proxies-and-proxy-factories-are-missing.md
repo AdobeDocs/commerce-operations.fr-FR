@@ -1,6 +1,6 @@
 ---
-title: '''ACSD-56842 : les proxys différés et les usines de proxy sont manquants après avoir exécuté `setup:di:compile`'
-description: Appliquez le correctif ACSD-56842 pour résoudre le problème Adobe Commerce en raison duquel les proxys différés et les usines de proxy sont manquants après avoir exécuté `setup:di:compile`.
+title: '''ACSD-56842 : les proxys différés et les usines de proxy sont manquants après avoir exécuté &grave;setup:di:compile&grave;'
+description: Appliquez le correctif ACSD-56842 pour résoudre le problème Adobe Commerce en raison duquel les proxys différés et les usines de proxy sont manquants après avoir exécuté &grave;setup:di:compile&grave;.
 feature: Deploy, Catalog Management
 role: Admin, Developer
 source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a

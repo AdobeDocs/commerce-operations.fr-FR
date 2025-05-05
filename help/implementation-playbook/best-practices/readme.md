@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Bonnes pratiques : workflow de création de contenu
 
-Ce document décrit le processus utilisateur pour demander des modifications ou des ajouts au contenu *[Bonnes pratiques](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html* dans le *manuel d’implémentation Adobe Commerce*.
+Ce document décrit le processus utilisateur pour demander des modifications ou des ajouts au contenu *[Bonnes pratiques] (https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html* dans le *manuel d’implémentation Adobe Commerce*.
 
 ## Qui peut créer une requête ?
 

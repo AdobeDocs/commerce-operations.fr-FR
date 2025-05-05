@@ -112,7 +112,7 @@ Exemple de résultat :
 
 >[!INFO]
 >
->À compter de la version 2.3.4, Commerce met en cache tous les attributs EAV système lors de leur récupération. La mise en cache des attributs EAV de cette manière améliore les performances, car elle réduit le nombre de requêtes d’insertion/sélection dans la base de données. Cependant, elle augmente également la taille du réseau du cache. Les développeurs peuvent mettre en cache les attributs EAV personnalisés en exécutant la commande `bin/magento config:set dev/caching/cache_user_defined_attributes 1`. Vous pouvez également le faire à partir de l’administrateur en [mode Développeur](../bootstrap/application-modes.md) en définissant **Magasins** > Paramètres **Configuration** > **Avancé** > **Développeur** > **Paramètres de mise en cache** > **Attributs définis par l’utilisateur du cache** vers **Oui**}}.
+>À compter de la version 2.3.4, Commerce met en cache tous les attributs EAV système lors de leur récupération. La mise en cache des attributs EAV de cette manière améliore les performances, car elle réduit le nombre de requêtes d’insertion/sélection dans la base de données. Cependant, elle augmente également la taille du réseau du cache. Les développeurs peuvent mettre en cache les attributs EAV personnalisés en exécutant la commande `bin/magento config:set dev/caching/cache_user_defined_attributes 1`. Vous pouvez également le faire à partir de l’administrateur en [mode Développeur](../bootstrap/application-modes.md) en définissant **Magasins** > Paramètres **Configuration** > **Avancé** > **Développeur** > **Paramètres de mise en cache** > **Attributs définis par l’utilisateur du cache** vers **Oui**&rbrace;&rbrace;.
 
 ## Nettoyer et vider les types de cache
 

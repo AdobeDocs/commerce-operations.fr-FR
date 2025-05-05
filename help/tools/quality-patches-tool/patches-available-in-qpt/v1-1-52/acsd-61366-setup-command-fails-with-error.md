@@ -1,6 +1,6 @@
 ---
-title: "ACSD-61366 : la commande `bin/magento setup:static-content:deploy —jobs 4` rencontre plusieurs échecs de tâche avec une erreur"
-description: Appliquez le correctif ACSD-61366 pour résoudre le problème Adobe Commerce en raison duquel la commande `bin/magento setup:static-content:deploy —jobs 4` rencontre plusieurs échecs de tâche avec le *Port doit être configuré dans l’erreur de paramètre d’hôte*, même si le port de la connexion DB est spécifié.
+title: "ACSD-61366 : la commande &grave;bin/magento setup:static-content:deploy —jobs 4&grave; rencontre plusieurs échecs de tâche avec une erreur"
+description: Appliquez le correctif ACSD-61366 pour résoudre le problème Adobe Commerce en raison duquel la commande &grave;bin/magento setup:static-content:deploy —jobs 4&grave; rencontre plusieurs échecs de tâche avec le *Port doit être configuré dans l’erreur de paramètre d’hôte*, même si le port de la connexion DB est spécifié.
 feature: SCD
 role: Admin, Developer
 source-git-commit: b671dc30cd511d63dbbbaa6edd47ee36c1351620

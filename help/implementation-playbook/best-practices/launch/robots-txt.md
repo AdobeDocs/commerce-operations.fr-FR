@@ -1,6 +1,6 @@
 ---
 title: Bonnes pratiques relatives à la configuration des moteurs de recherche Web
-description: Découvrez comment transmettre des instructions sur votre site Adobe Commerce aux développeurs Web à l’aide de fichiers `robots.txt` et `sitemap.xml`.
+description: Découvrez comment transmettre des instructions sur votre site Adobe Commerce aux développeurs Web à l’aide de fichiers &grave;robots.txt&grave; et &grave;sitemap.xml&grave;.
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab

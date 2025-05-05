@@ -123,7 +123,7 @@ Adobe Commerce 2.4.6-p3 inclut la résolution de la dégradation des performance
 
 **Problème** : Adobe Commerce affiche une `wrong checksum` erreur lors du téléchargement par Composer à partir de et le téléchargement du `repo.magento.com`package est interrompu. Ce problème peut se produire pendant le téléchargement des packages de version mis à disposition pendant la période de pré-version et est provoqué par un reconditionnement du `magento/module-page-cache` package.
 
-**** Solution : Les marchands qui voient cette erreur pendant le téléchargement peuvent suivre les étapes suivantes :
+**&#x200B;**&#x200B;Solution : Les marchands qui voient cette erreur pendant le téléchargement peuvent suivre les étapes suivantes :
 
 1) Supprimez le `/vendor` répertoire à l’intérieur du projet, le cas échéant.
 2) Exécutez la `bin/magento composer update magento/module-page-cache` commande. Cette commande met à jour le package uniquement `page cache` .

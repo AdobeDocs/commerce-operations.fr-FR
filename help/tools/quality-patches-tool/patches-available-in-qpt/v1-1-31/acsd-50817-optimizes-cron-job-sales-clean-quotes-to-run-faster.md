@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-50817 : optimise la tâche cron sales_clean_citations pour une exécution plus rapide.'
-description: Appliquez le correctif ACSD-50817 afin d’optimiser la tâche cron `sales_clean_quotes` pour s’exécuter plus rapidement en ajoutant un index composite sur les colonnes `store_id` et `updated_at` dans la table des guillemets.
+description: Appliquez le correctif ACSD-50817 afin d’optimiser la tâche cron &grave;sales_clean_quotes&grave; pour s’exécuter plus rapidement en ajoutant un index composite sur les colonnes &grave;store_id&grave; et &grave;updated_at&grave; dans la table des guillemets.
 feature: Quotes
 role: Admin
 exl-id: b6cd412f-2f37-438b-9abc-d45de6ed54d6

@@ -87,7 +87,7 @@ Utilisez cette liste de contrôle lors de vos conversations annuelles et trimest
 
 ▢ Surveillez le site pour tout problème : performances, traitement des commandes, analyses, etc.
 
-▢ Effectuez une analyse de sécurité Adobe Commerce [1} ou autre analyse tierce et examinez les vulnérabilités de sécurité potentielles.](https://account.magento.com/scanner/dashboard/)
+▢ Effectuez une analyse de sécurité Adobe Commerce [1&rbrace; ou autre analyse tierce et examinez les vulnérabilités de sécurité potentielles.](https://account.magento.com/scanner/dashboard/)
 
 ▢ Effectuez une rétrospective avec toutes les parties prenantes et documentez ce qui s’est bien passé, ce qui ne s’est pas passé et comment s’améliorer.
 

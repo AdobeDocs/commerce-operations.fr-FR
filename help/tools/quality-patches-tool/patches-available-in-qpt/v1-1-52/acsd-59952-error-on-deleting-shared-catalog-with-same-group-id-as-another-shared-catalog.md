@@ -1,6 +1,6 @@
 ---
 title: "ACSD-59952 : erreur lors de la suppression d’un catalogue partagé avec le même ID de groupe qu’un autre catalogue partagé"
-description: Appliquez le correctif ACSD-59952 pour résoudre le problème Adobe Commerce en raison duquel une erreur est générée lors de la suppression d’un catalogue partagé avec le même `customer_group_id` qu’un autre catalogue partagé.
+description: Appliquez le correctif ACSD-59952 pour résoudre le problème Adobe Commerce en raison duquel une erreur est générée lors de la suppression d’un catalogue partagé avec le même &grave;customer_group_id&grave; qu’un autre catalogue partagé.
 feature: B2B, REST
 role: Admin, Developer
 source-git-commit: a67f31aa905b420dcd2a17645734632d3f94520c

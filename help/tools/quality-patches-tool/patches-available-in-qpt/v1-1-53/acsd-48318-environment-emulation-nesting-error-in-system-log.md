@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-48318 : Erreur d’imbrication de l’émulation de l’environnement dans `system.log`'
-description: Appliquez le correctif ACSD-48318 pour résoudre le problème Adobe Commerce en raison duquel un message d’erreur *main.ERROR:Environment emulation nested n’est pas autorisé* apparaît dans `system.log` chaque fois qu’un email de facture est envoyé.
+title: 'ACSD-48318 : Erreur d’imbrication de l’émulation de l’environnement dans &grave;system.log&grave;'
+description: Appliquez le correctif ACSD-48318 pour résoudre le problème Adobe Commerce en raison duquel un message d’erreur *main.ERROR:Environment emulation nested n’est pas autorisé* apparaît dans &grave;system.log&grave; chaque fois qu’un email de facture est envoyé.
 feature: System, Orders
 role: Admin, Developer
 exl-id: 24af18de-80dd-4e0a-bdf9-5b9c075fc608
