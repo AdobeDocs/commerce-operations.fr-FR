@@ -43,7 +43,7 @@ Vous trouverez des correctifs dans le [Centre de sécurité](https://magento.com
 
 Les correctifs individuels contiennent des correctifs de qualité à faible impact pour un problème spécifique. Ces correctifs sont appliqués à la dernière version mineure prise en charge (par exemple, 2.4.x), mais peuvent ne pas figurer dans la version mineure prise en charge précédente (par exemple, 2.3.x). Adobe publie les correctifs individuels si nécessaire.
 
-Utilisez [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} pour appliquer des correctifs individuels.
+Utilisez [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr){target="_blank"} pour appliquer des correctifs individuels.
 
 >[!NOTE]
 >
@@ -90,10 +90,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 Vous pouvez appliquer des correctifs à l’aide de l’une des méthodes suivantes :
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr){target="_blank"}
 - [Ligne de commande](/help/upgrade/patches/apply.md#command-line)
 - [Compositeur](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->Pour appliquer un correctif à un projet d’infrastructure cloud Adobe Commerce, reportez-vous à la section [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) du _guide Commerce on Cloud_.
+>Pour appliquer un correctif à un projet d’infrastructure cloud Adobe Commerce, reportez-vous à la section [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) du _guide Commerce on Cloud_.

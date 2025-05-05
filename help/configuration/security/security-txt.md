@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Lorsque des chercheurs découvrent des vulnérabilités de la sécurité, des canaux de reporting appropriés sont souvent manquants. Par conséquent, certaines vulnérabilités ne sont pas signalées. Le fichier `security.txt` [format de fichier](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09) a pour but de fournir aux chercheurs en sécurité les informations qu’ils peuvent utiliser pour rapporter leurs résultats.
 
-Les commerçants peuvent saisir leurs coordonnées pour la [création de rapports sur les problèmes de sécurité](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-issue-reporting) à partir de l’ _administrateur_ de Commerce. Pour les développeurs, le module `Magento_Securitytxt` fournit les fonctionnalités suivantes :
+Les commerçants peuvent saisir leurs coordonnées pour la [création de rapports sur les problèmes de sécurité](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-issue-reporting) à partir de l’ _administrateur_ de Commerce. Pour les développeurs, le module `Magento_Securitytxt` fournit les fonctionnalités suivantes :
 
 - Permet d&#39;enregistrer les configurations de sécurité à partir de l&#39;_Admin_.
 - Contient un routeur pour faire correspondre la classe d’action de l’application pour les demandes aux fichiers `.well-known/security.txt` et `.well-known/security.txt.sig`.

@@ -31,7 +31,7 @@ Les actions critiques entraînent l’invalidation du cache et la réindexation,
 
 ## Informations supplémentaires
 
-- [Bonnes pratiques pour la mise en cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
+- [Bonnes pratiques pour la mise en cache](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
 - [Contenu privé : invalider le contenu privé](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [Recommandations matérielles : mises en cache](../../../performance/hardware.md#caches)
 - [Configuration avancée : configuration de Redis](../../../performance/advanced-setup.md#set-up-redis)

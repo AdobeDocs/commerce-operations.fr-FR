@@ -37,11 +37,11 @@ L’outil a pour but de vous permettre d’utiliser en libre-service des correct
 
 >[!NOTE]
 >
->QPT est réservé aux correctifs de qualité. Les correctifs de sécurité sont disponibles dans le [Centre de sécurité Magento](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
+>QPT est réservé aux correctifs de qualité. Les correctifs de sécurité sont disponibles dans le [Centre de sécurité Magento](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/overview).
 
 ## Correctifs disponibles dans l’outil Correctifs de qualité
 
-Pour obtenir la liste des correctifs disponibles, reportez-vous à la section [Outil de correctifs de qualité](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans la documentation destinée aux développeurs.
+Pour obtenir la liste des correctifs disponibles, reportez-vous à la section [Outil de correctifs de qualité](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans la documentation destinée aux développeurs.
 
 ## Comment installer et utiliser l’outil Correctifs de qualité
 
@@ -49,13 +49,13 @@ Les commandes d’installation et d’utilisation sont différentes pour Adobe C
 
 ### Comment installer et utiliser QPT pour Adobe Commerce sur site
 
-Pour plus d’informations sur l’installation et l’utilisation de QPT pour appliquer et rétablir des correctifs, reportez-vous au [Guide de mise à jour de logiciel > Patching](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) dans la documentation destinée aux développeurs.
+Pour plus d’informations sur l’installation et l’utilisation de QPT pour appliquer et rétablir des correctifs, reportez-vous au [Guide de mise à jour de logiciel > Patching](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/usage) dans la documentation destinée aux développeurs.
 
 ### Comment installer et utiliser QPT pour Adobe Commerce sur l’infrastructure cloud
 
-Pour plus d’informations sur l’installation et l’utilisation du protocole QPT pour l’application et la restauration de correctifs sur Adobe Commerce sur l’infrastructure cloud, reportez-vous à la section [Cloud for Adobe Commerce > Apply patches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans la documentation destinée aux développeurs.
+Pour plus d’informations sur l’installation et l’utilisation du protocole QPT pour l’application et la restauration de correctifs sur Adobe Commerce sur l’infrastructure cloud, reportez-vous à la section [Cloud for Adobe Commerce > Apply patches](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans la documentation destinée aux développeurs.
 
 ## Lecture connexe
 
-* [Notes de mise à jour de l’outil de correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes) dans la documentation destinée aux développeurs.
-* [Comment appliquer les correctifs de compositeur fournis par Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) dans la base de connaissances de support.
+* [Notes de mise à jour de l’outil de correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/release-notes) dans la documentation destinée aux développeurs.
+* [Comment appliquer les correctifs de compositeur fournis par Adobe](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) dans la base de connaissances de support.

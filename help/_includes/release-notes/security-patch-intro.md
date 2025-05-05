@@ -18,4 +18,4 @@ Ces notes de mise à jour de correctif de sécurité capturent des mises à jour
 En savoir plus sur les versions des correctifs de sécurité :
 
 * [Présentation des versions du correctif de sécurité d’Adobe Commerce](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
-* Les instructions de téléchargement et d’application des versions des correctifs de sécurité sont disponibles dans le [ Guide de mise à niveau ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)
+* Les instructions de téléchargement et d’application des versions des correctifs de sécurité sont disponibles dans le [ Guide de mise à niveau ](https://experienceleague.adobe.com/fr/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)

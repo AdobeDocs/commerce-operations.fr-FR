@@ -49,7 +49,7 @@ Vous pouvez également utiliser un gestionnaire de processus tel que [Superviseu
 
 >[!INFO]
 >
->Si votre boutique Adobe Commerce est hébergée sur la plateforme Cloud, utilisez [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) pour configurer la tâche cron `consumers_runner`.
+>Si votre boutique Adobe Commerce est hébergée sur la plateforme Cloud, utilisez [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#cron_consumers_runner) pour configurer la tâche cron `consumers_runner`.
 
 ### Configuration spécifique
 
@@ -82,6 +82,6 @@ Modifiez le fichier `/app/etc/env.php` pour configurer la tâche cron `consumers
 
   >[!INFO]
   >
-  >Si votre boutique Adobe Commerce est hébergée sur la plateforme Cloud, utilisez [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) pour configurer la manière dont les clients traitent les messages de la file d’attente des messages.
+  >Si votre boutique Adobe Commerce est hébergée sur la plateforme Cloud, utilisez [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#consumers_wait_for_max_messages) pour configurer la manière dont les clients traitent les messages de la file d’attente des messages.
 
 Voir [Démarrage des consommateurs de la file d’attente de messages](../cli/start-message-queues.md).

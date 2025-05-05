@@ -19,7 +19,7 @@ Cette rubrique explique comment définir les options PHP requises.
 >
 >La dernière version d’Adobe Commerce requiert au minimum PHP 8.1. Voir [Configuration requise](../system-requirements.md) pour toutes les versions prises en charge de PHP.
 
-Pour obtenir des instructions sur la configuration du cloud, reportez-vous à la section [Paramètres PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) du guide _Commerce on Cloud Infrastructure_.
+Pour obtenir des instructions sur la configuration du cloud, reportez-vous à la section [Paramètres PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=fr) du guide _Commerce on Cloud Infrastructure_.
 
 ## Contrôle de processus PHP
 

@@ -26,7 +26,7 @@ Configurez un fournisseur de verrouillage pour empêcher le lancement de tâches
 
 Adobe Commerce utilise la base de données pour enregistrer les verrous par défaut. Si vos serveurs contiennent plusieurs noeuds, nous vous recommandons d’utiliser Zookeeper en tant que fournisseur de verrouillage.
 
-Si vous exécutez Adobe Commerce sur l’infrastructure cloud, il n’est pas nécessaire de configurer les paramètres du fournisseur de verrouillage. L’application configure le fournisseur de verrouillage de fichier pour les projets Pro pendant le processus d’approvisionnement. Voir [Variables cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
+Si vous exécutez Adobe Commerce sur l’infrastructure cloud, il n’est pas nécessaire de configurer les paramètres du fournisseur de verrouillage. L’application configure le fournisseur de verrouillage de fichier pour les projets Pro pendant le processus d’approvisionnement. Voir [Variables cloud](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
 
 ### Utilisation des commandes
 

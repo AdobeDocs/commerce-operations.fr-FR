@@ -15,13 +15,13 @@ Ce projet respecte le [Code de conduite d’Adobe Open Source](code-of-conduct.m
 
 ## À propos de vos contributions pour Adobe du contenu
 
-Voir le [Guide du contributeur de documents d’Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Voir le [Guide du contributeur de documents d’Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).
 
 Votre contribution dépend de qui vous êtes et du type de modifications que vous souhaitez apporter :
 
 ### Modifications mineures
 
-Si vous contribuez à des mises à jour mineures, consultez l’article et cliquez sur la zone de commentaires qui s’affiche au bas de l’article, cliquez sur **Options de commentaires détaillées**, puis sur **Suggérer une modification** pour accéder au fichier source Markdown sur GitHub. Utilisez l’interface utilisateur de GitHub pour effectuer vos mises à jour. Pour plus d’informations, consultez le [Guide du contributeur à la documentation d’Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) .
+Si vous contribuez à des mises à jour mineures, consultez l’article et cliquez sur la zone de commentaires qui s’affiche au bas de l’article, cliquez sur **Options de commentaires détaillées**, puis sur **Suggérer une modification** pour accéder au fichier source Markdown sur GitHub. Utilisez l’interface utilisateur de GitHub pour effectuer vos mises à jour. Pour plus d’informations, consultez le [Guide du contributeur à la documentation d’Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr) .
 
 Les corrections mineures ou les clarifications que vous envoyez pour la documentation et les exemples de code dans ce référentiel sont couvertes par les conditions d’utilisation Adobe.
 
@@ -43,7 +43,7 @@ Si vous êtes rédacteur technique, chef de programme ou développeur de l’éq
 
 Les contributeurs de la communauté peuvent utiliser l’interface utilisateur GitHub pour effectuer des modifications de base ou dupliquer le référentiel pour apporter des contributions majeures.
 
-Pour plus d’informations, consultez le [Guide du contributeur de documents d’Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) .
+Pour plus d’informations, consultez le [Guide du contributeur de documents d’Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr) .
 
 ## Utilisation de Markdown pour formater votre rubrique
 
@@ -62,8 +62,8 @@ Pour certaines rubriques, nous utilisons des fichiers de données et des modèle
 Voici quelques exemples de contenu modélisé :
 
 * [Référence des outils de l’interface de ligne de commande](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-* [ Tables de disponibilité des produits](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
-* [ Tables de configuration système ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+* [ Tables de disponibilité des produits](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=fr)
+* [ Tables de configuration système ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr)
 
 ### Générer du contenu modèle
 
@@ -85,8 +85,8 @@ Pour mettre à jour le contenu du modèle :
 
 1. Dans votre éditeur de texte, ouvrez un fichier de données dans le répertoire `/jekyll/_data`. Par exemple :
 
-   * [ Tables de disponibilité des produits ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) : `/jekyll/_data/product-availability.yml`
-   * [ Tables de configuration système ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) : `/jekyll/_data/system-requirements.yml`
+   * [ Tables de disponibilité des produits ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=fr) : `/jekyll/_data/product-availability.yml`
+   * [ Tables de configuration système ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) : `/jekyll/_data/system-requirements.yml`
 
 1. Utilisez la structure YAML existante pour créer des entrées.
 

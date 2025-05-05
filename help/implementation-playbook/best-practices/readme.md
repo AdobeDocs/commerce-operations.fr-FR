@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Bonnes pratiques : workflow de création de contenu
 
-Ce document décrit le processus utilisateur pour demander des modifications ou des ajouts au contenu *[Bonnes pratiques] (https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html* dans le *manuel d’implémentation Adobe Commerce*.
+Ce document décrit le processus utilisateur pour demander des modifications ou des ajouts au contenu *[Bonnes pratiques] (https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=fr* dans le *manuel d’implémentation Adobe Commerce*.
 
 ## Qui peut créer une requête ?
 
@@ -35,13 +35,13 @@ Vous pouvez envoyer les types de requêtes suivants :
 
 Si une requête ne contient pas suffisamment d’informations, l’équipe demande des informations supplémentaires au demandeur. Si le demandeur ne répond pas dans les 14 jours, l’équipe ferme la demande.
 
-**Création ou mise à jour de contenu** - La création de contenu est terminée à la suite du processus décrit dans le [Guide du contributeur Adobe Experience League](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html). Selon la requête, le travail peut inclure la conversion d’un nouveau contenu en Markdown, la création d’une rubrique ou la mise à jour d’une rubrique existante.
+**Création ou mise à jour de contenu** - La création de contenu est terminée à la suite du processus décrit dans le [Guide du contributeur Adobe Experience League](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr). Selon la requête, le travail peut inclure la conversion d’un nouveau contenu en Markdown, la création d’une rubrique ou la mise à jour d’une rubrique existante.
 
-**Révision, approbation et publication de contenu** - Le contenu est révisé et modifié lors de la création ou de la mise à jour de rubrique à l’aide des [demandes d’extraction GitHub](https://experienceleague.adobe.com/docs/contributor/contributor-guide/setup/git-fundamentals.html?lang=en#pull-requests). Tout le contenu doit passer par une révision éditoriale. La révision technique est facultative et dépend du contenu. Si aucune révision technique n&#39;est nécessaire, le processus se poursuit uniquement par une révision éditoriale. Ce processus peut nécessiter plusieurs itérations jusqu&#39;à ce que le contenu soit validé.
+**Révision, approbation et publication de contenu** - Le contenu est révisé et modifié lors de la création ou de la mise à jour de rubrique à l’aide des [demandes d’extraction GitHub](https://experienceleague.adobe.com/docs/contributor/contributor-guide/setup/git-fundamentals.html?lang=fr#pull-requests). Tout le contenu doit passer par une révision éditoriale. La révision technique est facultative et dépend du contenu. Si aucune révision technique n&#39;est nécessaire, le processus se poursuit uniquement par une révision éditoriale. Ce processus peut nécessiter plusieurs itérations jusqu&#39;à ce que le contenu soit validé.
 
 Une fois un article approuvé, la requête de tirage peut être fusionnée avec la branche de production. La fusion doit être effectuée par l’auteur. Une fois qu’une rubrique est fusionnée, elle peut être publiée en production immédiatement à l’aide d’un processus manuel ou automatiquement lors de la prochaine exécution de la tâche de publication. Les tâches de publication s’exécutent généralement toutes les deux heures.
 
-**Nouvelle notification de contenu**-Adobe fournira une section *Nouveautés* sur la rubrique [Présentation des bonnes pratiques](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=en) pour tenir les utilisateurs informés des rubriques récemment publiées ou mises à jour. Adobe promeut également le nouveau contenu des bonnes pratiques à l’aide des canaux existants, tels que le marketing et les communications internes.
+**Nouvelle notification de contenu**-Adobe fournira une section *Nouveautés* sur la rubrique [Présentation des bonnes pratiques](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=fr) pour tenir les utilisateurs informés des rubriques récemment publiées ou mises à jour. Adobe promeut également le nouveau contenu des bonnes pratiques à l’aide des canaux existants, tels que le marketing et les communications internes.
 
 ## Arborescence et panorama Kanban
 

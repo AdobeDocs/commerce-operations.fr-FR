@@ -146,4 +146,4 @@ ht-degree: 0%
       + [Vérifier la base de données partagée](storage/multi-master-verify.md)
       + [Réplication des bases de données](storage/multi-master-replication.md)
       + [Rétablissement d’une seule base de données](storage/revert-split-database.md)
-+ [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
++ [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=fr)

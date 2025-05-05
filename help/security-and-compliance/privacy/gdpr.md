@@ -31,5 +31,5 @@ Pour obtenir des informations techniques, reportez-vous aux diagrammes de flux d
 
 Pour plus d’informations sur la façon dont Adobe Commerce aide les marchands à se conformer au RGPD, voir :
 
-- [Conformité au RGPD](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
+- [Conformité au RGPD](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html?lang=fr)
 - [Adobe Commerce est prêt pour le RGPD](https://business.adobe.com/privacy/general-data-protection-regulation.html)

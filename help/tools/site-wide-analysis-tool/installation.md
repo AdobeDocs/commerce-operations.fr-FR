@@ -78,7 +78,7 @@ Votre infrastructure locale doit répondre aux exigences suivantes avant d’ins
 
 ## [!DNL Commerce Services Connector]
 
-L’agent nécessite que l’extension soit installée sur votre système et [configurée](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) avec des [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) clés API. Pour vérifier que l’extension est bien installée, exécutez la commande suivante :
+L’agent nécessite que l’extension soit installée sur votre système et [configurée](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=fr) avec des [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=fr) clés API. Pour vérifier que l’extension est bien installée, exécutez la commande suivante :
 
 ```bash
 bin/magento module:status Magento_ServicesId
@@ -92,13 +92,13 @@ Si vous avez installé l’extension et l’avez configurée à l’aide d’une
 
    >[!NOTE]
    >
-   > Si vous ne parvenez pas à accéder à votre compte, consultez [Impossible de se connecter au support Adobe Commerce ou au compte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) cloud pour obtenir de l’aide sur la résolution des problèmes.
+   > Si vous ne parvenez pas à accéder à votre compte, consultez [Impossible de se connecter au support Adobe Commerce ou au compte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html?lang=fr) cloud pour obtenir de l’aide sur la résolution des problèmes.
 
 1. Cliquez sur **[!UICONTROL API Portal]**.
 
 1. Cliquez **[!UICONTROL Delete]** en regard de la clé API existante.
 
-1. [Configurez](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) une nouvelle clé API.
+1. [Configurez](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=fr) une nouvelle clé API.
 
 >[!IMPORTANT]
 >
@@ -130,7 +130,7 @@ Si l’extension n’est pas installée, suivez les instructions suivantes pour 
    bin/magento cache:clean
    ```
 
-1. [Configurez les clés API pour](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) connecter l’extension à votre système.
+1. [Configurez les clés API pour](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=fr) connecter l’extension à votre système.
 
 ## Installation de l’agent
 
@@ -404,7 +404,7 @@ Pour résoudre cette erreur, essayez les étapes suivantes :
 1. Effectuez une [installation par script](#scripted), enregistrez la sortie et recherchez les erreurs éventuelles dans la sortie.
 1. Vérifiez le fichier `config.yaml` généré et vérifiez que le chemin d&#39;accès à votre instance Commerce et PHP est correct.
 1. Assurez-vous que l’utilisateur qui exécute le planificateur appartient au groupe[&#128279;](../../installation/prerequisites/file-system/overview.md) Unix propriétaire du système de fichiers ou est le même utilisateur que le propriétaire du système de fichiers.
-1. Assurez-vous que les clés du [connecteur](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) Commerce Services sont correctement installées et essayez de les mettre à jour pour connecter l’extension à votre système.
+1. Assurez-vous que les clés du [connecteur](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=fr) Commerce Services sont correctement installées et essayez de les mettre à jour pour connecter l’extension à votre système.
 1. [Désinstallez](#uninstall) l’agent après la mise à jour des clés et réinstallez-le à l’aide du script[&#128279;](#scripted) d’installation.
 1. Exécutez le planificateur et voyez si la même erreur persiste.
 1. Si la même erreur persiste, augmentez le niveau de journalisation dans le `config.yaml` pour déboguer et ouvrez un ticket de support.

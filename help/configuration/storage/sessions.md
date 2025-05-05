@@ -41,7 +41,7 @@ En tant qu’utilisateur disposant des privilèges `root`, ouvrez votre fichier 
 
 ## Gestion de la taille de session
 
-Voir la [gestion des sessions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) dans le _guide de l’utilisateur_.
+Voir la [gestion des sessions](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-session-management) dans le _guide de l’utilisateur_.
 
 ## Configuration du nettoyage de la mémoire
 

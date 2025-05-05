@@ -42,7 +42,7 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques pou
 
 | Bonne pratique | Description |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Versions et déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Décrit les bonnes pratiques pour les étapes de création et de déploiement d’Adobe Commerce sur les projets d’infrastructure cloud |
+| [Versions et déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=fr){target="_blank"} | Décrit les bonnes pratiques pour les étapes de création et de déploiement d’Adobe Commerce sur les projets d’infrastructure cloud |
 | Débogage | Débogage systématique et efficace de la structure Adobe Commerce |
 | [Déploiement de contenu statique](static-content-deployment.md) | Évitez les problèmes liés au contenu statique qui n’apparaît pas sur votre storefront. |
 | [Dépannage](troubleshooting.md) | Résolution des problèmes courants de mise en oeuvre d’Adobe Commerce |

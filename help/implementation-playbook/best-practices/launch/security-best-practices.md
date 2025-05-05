@@ -18,7 +18,7 @@ Bien que vous ne puissiez pas éliminer tous les risques de sécurité, l’appl
 
 >[!NOTE]
 >
->Pour plus d’informations sur les rôles et les responsabilités relatifs à la sécurisation et à la maintenance des projets Adobe Commerce sur l’infrastructure cloud, voir le [modèle de responsabilité partagée](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)) dans le _Guide de sécurité et de conformité d’Adobe Commerce_.
+>Pour plus d’informations sur les rôles et les responsabilités relatifs à la sécurisation et à la maintenance des projets Adobe Commerce sur l’infrastructure cloud, voir le [modèle de responsabilité partagée](https://experienceleague.adobe.com/fr/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)) dans le _Guide de sécurité et de conformité d’Adobe Commerce_.
 
 [Toutes les versions prises en charge](../../../release/versions.md) de :
 
@@ -31,21 +31,21 @@ Adobe considère que les recommandations suivantes ont la priorité la plus éle
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Activez l’authentification à deux facteurs pour votre administrateur et toutes les connexions SSH**
 
-- [Sécurité pour l’administrateur Commerce](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html)
+- [Sécurité pour l’administrateur Commerce](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html?lang=fr)
 
-- [Connexions SSH sécurisées](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html) (infrastructure cloud)
+- [Connexions SSH sécurisées](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html?lang=fr) (infrastructure cloud)
 
 Lorsque MFA est activé sur un projet, tous les comptes d’infrastructure cloud avec accès SSH doivent suivre un workflow d’authentification. Ce workflow nécessite un code d’authentification à deux facteurs (2FA) ou un jeton API et un certificat SSH pour accéder à l’environnement.
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Sécuriser l’administrateur**
 
-- [Configurez une URL d’administration autre que l’URL par défaut](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html#use-a-custom-admin-url) au lieu d’utiliser le terme par défaut `admin` ou un terme courant tel que `backend`. Cette configuration réduit l’exposition aux scripts qui tentent d’obtenir un accès non autorisé à votre site.
+- [Configurez une URL d’administration autre que l’URL par défaut](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=fr#use-a-custom-admin-url) au lieu d’utiliser le terme par défaut `admin` ou un terme courant tel que `backend`. Cette configuration réduit l’exposition aux scripts qui tentent d’obtenir un accès non autorisé à votre site.
 
-- [Configurez les paramètres de sécurité avancés](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html) : ajoutez une clé secrète aux URL, exigez que les mots de passe soient sensibles à la casse et limitez la durée de session de l’administrateur, l’intervalle de durée de vie du mot de passe et le nombre de tentatives de connexion autorisées avant de verrouiller un compte utilisateur administrateur. Pour une sécurité accrue, configurez la durée d’inactivité du clavier avant l’expiration de la session en cours, en exigeant que le nom d’utilisateur et le mot de passe soient sensibles à la casse.
+- [Configurez les paramètres de sécurité avancés](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=fr) : ajoutez une clé secrète aux URL, exigez que les mots de passe soient sensibles à la casse et limitez la durée de session de l’administrateur, l’intervalle de durée de vie du mot de passe et le nombre de tentatives de connexion autorisées avant de verrouiller un compte utilisateur administrateur. Pour une sécurité accrue, configurez la durée d’inactivité du clavier avant l’expiration de la session en cours, en exigeant que le nom d’utilisateur et le mot de passe soient sensibles à la casse.
 
-- [Activez ReCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html) pour protéger l’administrateur contre les attaques de force brute automatisées.
+- [Activez ReCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=fr) pour protéger l’administrateur contre les attaques de force brute automatisées.
 
-- Appliquez le principe du moindre privilège lorsque vous attribuez des [autorisations d’administrateur](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html) aux rôles et aux rôles aux comptes d’utilisateurs administrateurs.
+- Appliquez le principe du moindre privilège lorsque vous attribuez des [autorisations d’administrateur](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html?lang=fr) aux rôles et aux rôles aux comptes d’utilisateurs administrateurs.
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Mise à niveau vers la dernière version d’Adobe Commerce**
 
@@ -55,11 +55,11 @@ Conservez votre code mis à jour en [mettant à niveau votre projet Commerce ver
 
 Utilisez [la gestion de la configuration](../../../configuration/cli/set-configuration-values.md) pour verrouiller les valeurs de configuration critiques.
 
-Les commandes d’interface de ligne de commande `lock config` et `lock env` configurent les variables d’environnement pour les empêcher d’être mises à jour par l’administrateur. La commande écrit la valeur dans le fichier `<Commerce base dir>/app/etc/env.php`. (Pour Commerce sur les projets d’infrastructure cloud, voir [Gestion de la configuration du magasin](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html#sensitive-data).)
+Les commandes d’interface de ligne de commande `lock config` et `lock env` configurent les variables d’environnement pour les empêcher d’être mises à jour par l’administrateur. La commande écrit la valeur dans le fichier `<Commerce base dir>/app/etc/env.php`. (Pour Commerce sur les projets d’infrastructure cloud, voir [Gestion de la configuration du magasin](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=fr#sensitive-data).)
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **&#x200B;**&#x200B;Exécution des analyses de sécurité
 
-Utilisez le [ service d&#39;analyse de sécurité de Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) pour surveiller tous les sites Adobe Commerce à la recherche de risques de sécurité connus et de logiciels malveillants, et inscrivez-vous pour recevoir des mises à jour de correctifs et des notifications de sécurité.
+Utilisez le [ service d&#39;analyse de sécurité de Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html?lang=fr) pour surveiller tous les sites Adobe Commerce à la recherche de risques de sécurité connus et de logiciels malveillants, et inscrivez-vous pour recevoir des mises à jour de correctifs et des notifications de sécurité.
 
 ## Garantir la sécurité des extensions et du code personnalisé
 
@@ -109,9 +109,9 @@ Dans le cadre d&#39;un plan de reprise sur sinistre, Adobe recommande vivement a
 
 **Adobe Commerce déployée sur l’infrastructure cloud**
 
-- [Sauvegarde et reprise après sinistre](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#backup-and-disaster-recovery)
+- [Sauvegarde et reprise après sinistre](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=fr#backup-and-disaster-recovery)
 
-- [Gestion de la configuration du magasin pour Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html)
+- [Gestion de la configuration du magasin pour Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=fr)
 
 **Adobe Commerce déployé sur site**
 
@@ -129,9 +129,9 @@ Cette section résume les bonnes pratiques relatives à la maintenance de la sé
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Utilisez un pare-feu d’application web** : analysez le trafic et découvrez des schémas suspects, tels que des informations de carte de crédit, envoyées à une adresse IP inconnue à l’aide d’un pare-feu d’application web.
 
-Les installations Adobe Commerce déployées sur l’infrastructure cloud peuvent utiliser les services WAF intégrés disponibles avec l’ [intégration de services Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
+Les installations Adobe Commerce déployées sur l’infrastructure cloud peuvent utiliser les services WAF intégrés disponibles avec l’ [intégration de services Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=fr)
 
-![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Configurez les paramètres avancés de sécurité des mots de passe** : configurez les mots de passe difficiles à deviner et modifiez-les au moins tous les 90 jours, comme recommandé par la norme de sécurité des données PCI dans la section 8.2.4. Voir [Configuration des paramètres de sécurité d’administration](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html).
+![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Configurez les paramètres avancés de sécurité des mots de passe** : configurez les mots de passe difficiles à deviner et modifiez-les au moins tous les 90 jours, comme recommandé par la norme de sécurité des données PCI dans la section 8.2.4. Voir [Configuration des paramètres de sécurité d’administration](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=fr).
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Utiliser HTTPS** : si le site Commerce est récemment mis en oeuvre, lancez le site entier à l’aide de HTTPS. Google utilise non seulement HTTPS comme facteur de classement, mais de nombreux utilisateurs n’envisagent même pas d’acheter sur un site, sauf s’il est sécurisé avec HTTPS.
 
@@ -178,7 +178,7 @@ Les attaques par devinette force le mot de passe peuvent entraîner un accès ad
 
 - Contrôlez l’accès au site Commerce en configurant une liste de contrôle d’accès qui autorise uniquement l’accès aux utilisateurs provenant d’une adresse IP ou d’un réseau spécifié.
 
-  Vous pouvez utiliser une liste de contrôle d’accès Edge rapide avec un extrait de code VCL personnalisé pour filtrer les requêtes entrantes et autoriser l’accès par adresse IP. Voir [VCL personnalisée pour autoriser les requêtes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html).
+  Vous pouvez utiliser une liste de contrôle d’accès Edge rapide avec un extrait de code VCL personnalisé pour filtrer les requêtes entrantes et autoriser l’accès par adresse IP. Voir [VCL personnalisée pour autoriser les requêtes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html?lang=fr).
 
 
   >[!TIP]

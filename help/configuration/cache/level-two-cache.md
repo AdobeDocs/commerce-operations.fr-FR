@@ -23,7 +23,7 @@ Commerce stocke la version des données hachées dans Redis, en ajoutant le suff
 
 >[!INFO]
 >
->Pour Adobe Commerce sur l’infrastructure cloud, vous pouvez utiliser [déployer des variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) pour la configuration du cache L2.
+>Pour Adobe Commerce sur l’infrastructure cloud, vous pouvez utiliser [déployer des variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#redis_backend) pour la configuration du cache L2.
 
 ## Exemple de configuration
 

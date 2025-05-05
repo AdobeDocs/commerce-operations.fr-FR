@@ -41,5 +41,5 @@ Les sites web et les magasins sont des multiplicateurs pour les données de cata
 
 ## Informations supplémentaires
 
-- [Comprendre les sites web, les magasins et les vues de magasin](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [ Configuration de plusieurs sites Web ou magasins](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [Comprendre les sites web, les magasins et les vues de magasin](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [ Configuration de plusieurs sites Web ou magasins](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)

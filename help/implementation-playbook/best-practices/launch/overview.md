@@ -28,9 +28,9 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
 |------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Service de notification de sécurité d’Adobe](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Abonnez-vous aux notifications de sécurité Adobe. |
 | [Sécurisez votre site et votre infrastructure Commerce](security-best-practices.md) | Renforcer la sécurité des installations Commerce afin de protéger le storefront, l’administration, l’infrastructure et les données Commerce contre les accès non autorisés et les cyber-attaques. |
-| [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html) | Configurez Google reCAPTCHA pour l’accès administrateur et diverses actions de storefront initiées par les clients enregistrés. |
+| [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=fr) | Configurez Google reCAPTCHA pour l’accès administrateur et diverses actions de storefront initiées par les clients enregistrés. |
 | [Configurer les moteurs de recherche Web](robots-txt.md) | Transmettez des instructions sur votre site Adobe Commerce aux moteurs de recherche Web. |
-| [Vérification de la configuration de la sécurité](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html) | Consultez les éléments de liste de contrôle avant de lancer Adobe Commerce sur le site d’infrastructure cloud. |
+| [Vérification de la configuration de la sécurité](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=fr) | Consultez les éléments de liste de contrôle avant de lancer Adobe Commerce sur le site d’infrastructure cloud. |
 
 ## Surveillance des performances
 

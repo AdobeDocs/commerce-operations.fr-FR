@@ -27,4 +27,4 @@ Utilisez la page pour afficher les [!UICONTROL Exceptions] journaux des erreurs/
 
 ## Bonnes pratiques
 
-Surveillez la [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] page pour voir quelles exceptions se produisent. Pour plus d’informations, voir [Afficher et gérer les journaux dans notre documentation destinée aux développeurs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) .
+Surveillez la [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] page pour voir quelles exceptions se produisent. Pour plus d’informations, voir [Afficher et gérer les journaux dans notre documentation destinée aux développeurs](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/test/log-locations) .

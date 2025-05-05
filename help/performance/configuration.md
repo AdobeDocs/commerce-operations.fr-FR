@@ -32,15 +32,15 @@ Lorsque vous lancez votre magasin en production, activez tous les caches à part
 
 ## Notifications électroniques asynchrones
 
-L’activation du paramètre &quot;Notifications par e-mail asynchrones&quot; déplace les processus qui gèrent l’extraction et le traitement des notifications par e-mail en arrière-plan. Pour activer cette fonctionnalité, accédez à **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. Pour plus d’informations, voir [Courriers électroniques](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/sales-emails) du service commercial dans le Guide _d’utilisation de l’administrateur_.
+L’activation du paramètre &quot;Notifications par e-mail asynchrones&quot; déplace les processus qui gèrent l’extraction et le traitement des notifications par e-mail en arrière-plan. Pour activer cette fonctionnalité, accédez à **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. Pour plus d’informations, voir [Courriers électroniques](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/sales/sales-emails) du service commercial dans le Guide _d’utilisation de l’administrateur_.
 
 ## Traitement asynchrone des données de commande
 
-Il peut y avoir des moments où les ventes intensives sur une vitrine se produisent en même temps que [!DNL Commerce] le traitement intensif des commandes. Vous pouvez configurer [!DNL Commerce] pour distinguer ces deux modèles de trafic au niveau de la base de données afin d’éviter les conflits entre les opérations de lecture et d’écriture dans les tables correspondantes. Vous pouvez stocker et indexer les données de commande de manière asynchrone. Les commandes sont placées en stockage temporaire et déplacées en vrac vers la grille de gestion des commandes sans aucune collision. Vous pouvez activer cette option à partir de **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. Pour plus d’informations, voir [Mises à jour](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations#enable-scheduled-grid-updates-and-reindexing) planifiées de la grille dans le Guide _d’utilisation de l’administrateur_.
+Il peut y avoir des moments où les ventes intensives sur une vitrine se produisent en même temps que [!DNL Commerce] le traitement intensif des commandes. Vous pouvez configurer [!DNL Commerce] pour distinguer ces deux modèles de trafic au niveau de la base de données afin d’éviter les conflits entre les opérations de lecture et d’écriture dans les tables correspondantes. Vous pouvez stocker et indexer les données de commande de manière asynchrone. Les commandes sont placées en stockage temporaire et déplacées en vrac vers la grille de gestion des commandes sans aucune collision. Vous pouvez activer cette option à partir de **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. Pour plus d’informations, voir [Mises à jour](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations#enable-scheduled-grid-updates-and-reindexing) planifiées de la grille dans le Guide _d’utilisation de l’administrateur_.
 
 >[!WARNING]
 >
->L’onglet et les **[!UICONTROL Developer]** options ne sont disponibles qu’en [mode](../configuration/cli/set-mode.md) Développeur. [Adobe Commerce sur l’infrastructure](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) cloud ne prend pas en charge `Developer` le mode.
+>L’onglet et les **[!UICONTROL Developer]** options ne sont disponibles qu’en [mode](../configuration/cli/set-mode.md) Développeur. [Adobe Commerce sur l’infrastructure](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) cloud ne prend pas en charge `Developer` le mode.
 
 ## Enregistrement de configuration asynchrone
 
@@ -69,7 +69,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## Mise à jour différée du stock
 
-En période de ventes intensives, [!DNL Commerce] peut différer les mises à jour de stock liées aux commandes. Cela réduit le nombre d’opérations et accélère le processus de placement des commandes. Cependant, cette option est risquée et ne peut être utilisée que lorsque les commandes en arrière-plan sont activées dans le magasin, car cette option peut entraîner des quantités de stock négatives. Cette option peut apporter une amélioration significative des performances sur les flux de paiement pour les magasins qui peuvent facilement remplir leur stock à la demande. Pour activer les mises à jour différées sur votre site, accédez à **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**. Pour plus d’informations, consultez [Gestion des stocks](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud) dans le Guide _de_ l’utilisateur de Adobe Commerce.
+En période de ventes intensives, [!DNL Commerce] peut différer les mises à jour de stock liées aux commandes. Cela réduit le nombre d’opérations et accélère le processus de placement des commandes. Cependant, cette option est risquée et ne peut être utilisée que lorsque les commandes en arrière-plan sont activées dans le magasin, car cette option peut entraîner des quantités de stock négatives. Cette option peut apporter une amélioration significative des performances sur les flux de paiement pour les magasins qui peuvent facilement remplir leur stock à la demande. Pour activer les mises à jour différées sur votre site, accédez à **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**. Pour plus d’informations, consultez [Gestion des stocks](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud) dans le Guide _de_ l’utilisateur de Adobe Commerce.
 
 >[!INFO]
 >
@@ -77,7 +77,7 @@ En période de ventes intensives, [!DNL Commerce] peut différer les mises à jo
 
 >[!INFO]
 >
->Cette option fonctionne également avec [le placement](high-throughput-order-processing.md#asynchronous-order-placement) de commande asynchrone en combinaison avec [la gestion des](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html) stocks.
+>Cette option fonctionne également avec [le placement](high-throughput-order-processing.md#asynchronous-order-placement) de commande asynchrone en combinaison avec [la gestion des](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html?lang=fr) stocks.
 
 ## Paramètres d’optimisation côté client
 
@@ -95,7 +95,7 @@ Pour améliorer la réactivité de la vitrine de votre [!DNL Commerce] instance,
 
 >[!INFO]
 >
->L’onglet et les **[!UICONTROL Developer]** options ne sont disponibles qu’en [mode](../configuration/cli/set-mode.md) Développeur. [ [!DNL Commerce] Adobe sur l’infrastructure](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) cloud ne prend pas en charge `Developer` le mode.
+>L’onglet et les **[!UICONTROL Developer]** options ne sont disponibles qu’en [mode](../configuration/cli/set-mode.md) Développeur. [ [!DNL Commerce] Adobe sur l’infrastructure](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) cloud ne prend pas en charge `Developer` le mode.
 
 Lorsque vous activez l’option **[!UICONTROL Enable [!DNL JavaScript] Bundling]** , vous autorisez Commerce à fusionner toutes les ressources JS en un ou un ensemble de bundles chargés dans les pages de vitrine. Le regroupement de JS réduit le nombre de demandes au serveur, ce qui améliore les performances des pages. Il aide également le navigateur à mettre en cache les ressources JS lors du premier appel et à les réutiliser pour toute navigation ultérieure. Cette option apporte également une évaluation différée, car tout le JS est chargé sous forme de texte. Elle n’effectue l’analyse et l’évaluation du code qu’après le déclenchement d’actions spécifiques sur la page. Cependant, ce paramètre n’est pas recommandé pour les magasins où le premier temps de chargement de page est extrêmement critique, car tout le contenu JS sera chargé lors du premier appel.
 
@@ -111,7 +111,7 @@ Lorsque vous activez l’option **[!UICONTROL Enable [!DNL JavaScript] Bundling]
 
 ## Validation des segments client
 
-Les commerçants qui ont un grand nombre de [segments de clients](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments) peuvent rencontrer une dégradation significative des performances avec des actions de clients, comme la connexion client et l’ajout de produits au panier.
+Les commerçants qui ont un grand nombre de [segments de clients](https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/segments/customer-segments) peuvent rencontrer une dégradation significative des performances avec des actions de clients, comme la connexion client et l’ajout de produits au panier.
 
 Les actions des clients déclenchent un processus de validation pour les segments de clients, ce qui peut entraîner une dégradation des performances. Par défaut, Adobe Commerce valide chaque segment en temps réel pour définir quels segments de clientèle correspondent et lesquels ne le sont pas.
 

@@ -54,6 +54,6 @@ Pour plus d’informations sur la contribution des normes de codage, reportez-vo
 Consultez les ressources suivantes pour vous aider à comprendre les mises à niveau d’Adobe Commerce :
 
 - Le [guide de mise à niveau](../overview.md) donne un aperçu du parcours de mise à niveau standard d’Adobe Commerce et des bonnes pratiques à suivre le long de ce parcours.
-- La page [prochaines versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) indique les dates des versions planifiées et à venir.
+- La page [prochaines versions](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/schedule) indique les dates des versions planifiées et à venir.
 - La page [ressources de la communauté](https://developer.adobe.com/commerce/contributor/community/) doit servir à lancer des discussions ou à trouver plus d’informations.
 - Consultez la page [ outils connexes](../upgrade-compatibility-tool/related-tools.md) pour obtenir des outils utiles dans votre parcours de mise à niveau classique.

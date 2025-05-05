@@ -119,7 +119,7 @@ Les options suivantes spécifient les informations d’identification et les inf
 
 Vous pouvez créer l’utilisateur administrateur pendant ou après l’installation. Si vous créez l’utilisateur pendant l’installation, toutes les variables d’informations d’identification d’administrateur sont requises. Voir [Exemples d’installations](#sample-localhost-installations) localhost.
 
-Les tableaux suivants fournissent un grand nombre de paramètres d’installation disponibles, mais pas tous. Pour obtenir la liste complète, consultez la page de référence des outils de ligne de [commande](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+Les tableaux suivants fournissent un grand nombre de paramètres d’installation disponibles, mais pas tous. Pour obtenir la liste complète, consultez la page de référence des outils de ligne de [commande](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Nom | Valeur | Obligatoire ? |
 |--- |--- |--- |

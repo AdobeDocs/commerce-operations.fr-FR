@@ -51,7 +51,7 @@ Le fichier `config.php` contient une liste de modules installés. Adobe Commerce
 Exemples :
 
 - Désinstallation des composants : [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- Vérifiez l’état des composants : [`bin/magento module:status`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
+- Vérifiez l’état des composants : [`bin/magento module:status`](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
 - Activez ou désactivez les composants : [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md), [`bin/magento module:enable`](../../installation/tutorials/manage-modules.md).
 
 > _config.php_

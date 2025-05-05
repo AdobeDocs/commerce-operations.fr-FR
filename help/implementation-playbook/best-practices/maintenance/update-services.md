@@ -23,9 +23,9 @@ Adobe Commerce sur l’infrastructure cloud 2.4.x et versions ultérieures
 
 Mettez à niveau les services et les composants utilisés par Adobe Commerce avant qu’ils n’atteignent ou ne se rapprochent de la date de fin de vie. Cela permet de respecter la conformité PCI et de réduire les vulnérabilités de sécurité.
 
-Les clients utilisant des plans de démarrage peuvent se servir eux-mêmes lors des mises à niveau de services. Pour plus d&#39;informations sur la façon de procéder, reportez-vous à la section [Modification de la version de service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version) .
+Les clients utilisant des plans de démarrage peuvent se servir eux-mêmes lors des mises à niveau de services. Pour plus d&#39;informations sur la façon de procéder, reportez-vous à la section [Modification de la version de service](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version) .
 
-Les clients sur les plans Pro ne peuvent utiliser que les mises à niveau de services en libre-service dans leur [environnement d’intégration](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Pour les mises à niveau de services en production, vous devez [envoyer un ticket d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) demandant la mise à niveau.
+Les clients sur les plans Pro ne peuvent utiliser que les mises à niveau de services en libre-service dans leur [environnement d’intégration](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=fr). Pour les mises à niveau de services en production, vous devez [envoyer un ticket d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) demandant la mise à niveau.
 
 >[!WARNING]
 >

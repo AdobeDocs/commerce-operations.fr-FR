@@ -36,5 +36,5 @@ Les extensions tierces d’Adobe Commerce (modules) peuvent entraîner divers pr
 
 - [Bonnes pratiques pour la planification des mises à niveau](../../../upgrade/prepare/best-practices.md)
 - Utilisation d’extensions tierces avec Adobe Commerce sur l’infrastructure cloud
-   - [Technologies et exigences - Développement et test](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
-   - [Pourquoi tester entièrement dans l’intégration et l’évaluation ?](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)
+   - [Technologies et exigences - Développement et test](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
+   - [Pourquoi tester entièrement dans l’intégration et l’évaluation ?](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

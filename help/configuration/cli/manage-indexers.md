@@ -231,11 +231,11 @@ Catalog Search:                                    Update on Save
 >
 >Veillez à définir le [!DNL Customer Grid] avec `realtime` au lieu de `schedule`. La [!DNL Customer Grid] ne peut être réindexée qu’à l’aide de l’option [!UICONTROL Update on Save]. Cet index ne prend pas en charge l’option `Update by Schedule`. Utilisez la ligne de commande suivante pour définir cet indexeur afin qu’il soit mis à jour lors de l’enregistrement : `php bin/magento indexer:set-mode realtime customer_grid`
 >
->Voir [Bonnes pratiques pour la configuration de l’indexeur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) dans le _Guide d’implémentation_.
+>Voir [Bonnes pratiques pour la configuration de l’indexeur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=fr) dans le _Guide d’implémentation_.
 
 >[!INFO]
 >
->Avant de changer de mode d’indexation, définissez votre site web sur le mode [maintenance](../../installation/tutorials/maintenance-mode.md) et [désactivez les tâches cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Vous éviterez ainsi les verrous de base de données.
+>Avant de changer de mode d’indexation, définissez votre site web sur le mode [maintenance](../../installation/tutorials/maintenance-mode.md) et [désactivez les tâches cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=fr#disable-cron-jobs). Vous éviterez ainsi les verrous de base de données.
 
 Pour spécifier la configuration de l’indexeur :
 

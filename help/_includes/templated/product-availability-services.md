@@ -29,8 +29,8 @@ ht-degree: 15%
           <td>1,32</td>
           <td>1,32</td>
           <td>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview">Vue d’ensemble</a><br/>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">Notes de mise à jour</a><br/>
+              <a href="https://experienceleague.adobe.com/fr/docs/commerce/catalog-service/guide-overview">Vue d’ensemble</a><br/>
+              <a href="https://experienceleague.adobe.com/fr/docs/commerce/catalog-service/release-notes">Notes de mise à jour</a><br/>
           </td>
       </tr>
       <tr>
@@ -41,7 +41,7 @@ ht-degree: 15%
           <td>4.3.0</td>
           <td>4.3.0</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Notes de mise à jour de Marketplace</a><br/><a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">
+              <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Notes de mise à jour de Marketplace</a><br/><a href="https://experienceleague.adobe.com/fr/docs/commerce/live-search/release-notes">
               </a><br/>
           </td>
       </tr>
@@ -53,7 +53,7 @@ ht-degree: 15%
           <td>2.4.0 (PHP 8.1)</td>
           <td>2.4.0 (PHP 8.1)</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Notes de mise à jour de Marketplace</a><br/><a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">
+              <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Notes de mise à jour de Marketplace</a><br/><a href="https://experienceleague.adobe.com/fr/docs/commerce/payment-services/release-notes">
               </a><br/>
           </td>
       </tr>
@@ -65,7 +65,7 @@ ht-degree: 15%
           <td>6.2.0</td>
           <td>6.2.0</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Notes de mise à jour de Marketplace</a><br/><a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes">
+              <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Notes de mise à jour de Marketplace</a><br/><a href="https://experienceleague.adobe.com/fr/docs/commerce/product-recommendations/release-notes">
               </a><br/>
           </td>
       </tr>

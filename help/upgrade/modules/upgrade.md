@@ -47,7 +47,7 @@ Pour mettre à jour ou mettre à niveau un module ou une extension :
 
 ## Extensions groupées de fournisseurs (VBE)
 
-Adobe a supprimé tous les [VBEs](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/modules/upgrade) dans la version 2.4.4. Les fournisseurs continuent de prendre en charge ces extensions sur Adobe Commerce Marketplace.
+Adobe a supprimé tous les [VBEs](https://experienceleague.adobe.com/fr/docs/commerce-operations/upgrade-guide/modules/upgrade) dans la version 2.4.4. Les fournisseurs continuent de prendre en charge ces extensions sur Adobe Commerce Marketplace.
 
 Si vous souhaitez continuer à utiliser ces extensions avec Adobe Commerce 2.4.4 et versions ultérieures, vous devez mettre à jour les dépendances de package correspondantes dans votre fichier `composer.json` _avant_ de procéder à la mise à niveau vers la version 2.4.4. Contactez le fournisseur pour connaître le nom et la version du module à utiliser.
 

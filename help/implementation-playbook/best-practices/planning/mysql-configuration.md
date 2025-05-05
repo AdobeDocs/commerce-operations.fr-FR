@@ -48,7 +48,7 @@ Pour éviter des problèmes de performances lors de l’utilisation de déclench
 
 - Si des déclencheurs personnalisés écrivent des données au moment de l’exécution du déclencheur, déplacez cette logique pour écrire directement dans les tables d’audit à la place. Par exemple, en ajoutant une requête supplémentaire dans le code de l’application, après la requête pour laquelle vous avez voulu créer le déclencheur.
 - Examinez les déclencheurs personnalisés existants et envisagez de les supprimer et d’écrire directement dans les tableaux du côté de l’application. Recherchez des déclencheurs existants dans votre base de données à l’aide de l’instruction SQL [`SHOW TRIGGERS`](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
-- Pour toute question, assistance ou assistance supplémentaire, [soumettez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).
+- Pour toute question, assistance ou assistance supplémentaire, [soumettez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr&#submit-ticket).
 
 ## Connexions esclaves
 
@@ -62,7 +62,7 @@ Adobe Commerce sur l’infrastructure cloud, architecture Pro uniquement
 
 ### Configuration
 
-Dans Adobe Commerce sur l’infrastructure cloud, vous pouvez remplacer la configuration par défaut de la connexion esclave MYSQL en définissant la variable [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) . Définissez cette variable sur `true` pour utiliser automatiquement une connexion en lecture seule à la base de données.
+Dans Adobe Commerce sur l’infrastructure cloud, vous pouvez remplacer la configuration par défaut de la connexion esclave MYSQL en définissant la variable [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#mysql_use_slave_connection) . Définissez cette variable sur `true` pour utiliser automatiquement une connexion en lecture seule à la base de données.
 
 **Pour activer la connexion esclave MySQL** :
 

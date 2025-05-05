@@ -35,7 +35,7 @@ Un projet Adobe Commerce par défaut contient une hiérarchie qui inclut un seul
 
 Suivez les bonnes pratiques suivantes lors de la configuration des fichiers `robots.txt` et `sitemap.xml` pour les vitrines à site unique :
 
-- Assurez-vous que votre projet utilise la version 2002.0.12 de [`ece-tools`](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package) ou une version ultérieure.
+- Assurez-vous que votre projet utilise la version 2002.0.12 de [`ece-tools`](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package) ou une version ultérieure.
 - Utilisez l’application d’administration pour ajouter du contenu au fichier `robots.txt`.
 
   >[!TIP]
@@ -64,12 +64,12 @@ Suivez les bonnes pratiques suivantes lors de la configuration des fichiers `rob
 
 >[!INFO]
 >
->Voir [Ajout de robots de moteur de recherche et de carte de site](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) pour obtenir des instructions détaillées.
+>Voir [Ajout de robots de moteur de recherche et de carte de site](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) pour obtenir des instructions détaillées.
 
 
 ### Bannières de magasin multi-site
 
-Vous pouvez configurer et exécuter plusieurs magasins avec une seule mise en oeuvre d’Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de plusieurs sites Web ou magasins](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites).
+Vous pouvez configurer et exécuter plusieurs magasins avec une seule mise en oeuvre d’Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de plusieurs sites Web ou magasins](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites).
 
 Les mêmes bonnes pratiques pour la configuration des fichiers `robots.txt` et `sitemap.xml` pour les [ vitrines à site unique ](#single-site-storefronts) s’appliquent aux vitrines à plusieurs sites avec deux différences importantes :
 
@@ -93,7 +93,7 @@ Les mêmes bonnes pratiques pour la configuration des fichiers `robots.txt` et `
 
 ## Adobe Commerce sur site
 
-Utilisez l’application d’administration pour configurer les fichiers `robots.txt` et `sitemap.xml` afin d’empêcher les robots d’analyser et d’indexer le contenu inutile (voir [Robots de moteur de recherche](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)).
+Utilisez l’application d’administration pour configurer les fichiers `robots.txt` et `sitemap.xml` afin d’empêcher les robots d’analyser et d’indexer le contenu inutile (voir [Robots de moteur de recherche](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=fr#search-engine-robots)).
 
 >[!TIP]
 >
@@ -103,15 +103,15 @@ Utilisez l’application d’administration pour configurer les fichiers `robots
 
 N’exposez pas votre chemin d’accès administrateur dans votre fichier `robots.txt`. Le chemin d’accès administrateur est exposé à une vulnérabilité de piratage de site et de perte potentielle de données. Supprimez le chemin d’accès administrateur du fichier `robots.txt`.
 
-Pour les étapes de modification du fichier `robots.txt` et de suppression de toutes les entrées du chemin d’accès administrateur, voir [ Guide de l’utilisateur marketing > SEO et recherche > Robots du moteur de recherche](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots).
+Pour les étapes de modification du fichier `robots.txt` et de suppression de toutes les entrées du chemin d’accès administrateur, voir [ Guide de l’utilisateur marketing > SEO et recherche > Robots du moteur de recherche](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=fr#search-engine-robots).
 
 >[!TIP]
 >
->Si vous avez besoin d’aide, [soumettez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+>Si vous avez besoin d’aide, [soumettez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket).
 
 ## Informations supplémentaires
 
-- [Comprendre les sites web, les magasins et les vues de magasin](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [Ajout de sites Web](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [Utilisez Fastly pour bloquer le trafic malveillant de vos sites Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
-- [robots.txt renvoie une erreur 404 dans Adobe Commerce sur l’infrastructure cloud 2.3.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)
+- [Comprendre les sites web, les magasins et les vues de magasin](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [Ajout de sites Web](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Utilisez Fastly pour bloquer le trafic malveillant de vos sites Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
+- [robots.txt renvoie une erreur 404 dans Adobe Commerce sur l’infrastructure cloud 2.3.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html?lang=fr)

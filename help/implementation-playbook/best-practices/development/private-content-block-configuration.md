@@ -31,4 +31,4 @@ Les sites qui comportent des blocs de contenu privés contenant les variables `_
 ## Informations supplémentaires
 
 - [Contenu privé](../../../performance/configuration.md#client-side-optimization-settings)
-- [Les demandes d&#39;AJAX à débit élevé provoquent des performances médiocres](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)
+- [Les demandes d&#39;AJAX à débit élevé provoquent des performances médiocres](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=fr)

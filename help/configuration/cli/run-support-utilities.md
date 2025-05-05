@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Les utilitaires de support Adobe Commerce, également appelés [Collecteur de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector), permettent aux utilisateurs de collecter des informations de dépannage sur votre système qui peuvent être utilisées par notre équipe de support.
+Les utilitaires de support Adobe Commerce, également appelés [Collecteur de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/support#data-collector), permettent aux utilisateurs de collecter des informations de dépannage sur votre système qui peuvent être utilisées par notre équipe de support.
 
 Adobe Commerce utilise ces sauvegardes, également appelées _dumps_, pour analyser les problèmes qui nécessitent l’accès à votre code. Voici un scénario type :
 

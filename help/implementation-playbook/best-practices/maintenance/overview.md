@@ -73,7 +73,7 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques rel
 | [ Performances du serveur frontal d&#39;audit](frontend-performance.md) | Identifiez et résolvez les problèmes qui ont un impact négatif sur les performances du site à l’aide des outils de performances web. |
 | [Prêt, Défini, Conserver](https://business.adobe.com/blog/basics/ready-set-maintain) | Conseils pour la maintenance de vos sites Adobe Commerce afin de maximiser la valeur ajoutée et le temps de disponibilité de l’entreprise. |
 | [Utilisez le  [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Affichez les informations importantes sur votre site Adobe Commerce à un seul endroit. |
-| [Surveillance des performances, de l’espace disque et des journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) | Utilisez New Relic pour surveiller les informations de performances clés relatives à votre Adobe Commerce sur le site d’infrastructure cloud. |
+| [Surveillance des performances, de l’espace disque et des journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html?lang=fr) | Utilisez New Relic pour surveiller les informations de performances clés relatives à votre Adobe Commerce sur le site d’infrastructure cloud. |
 | [Répondre aux incidents de sécurité](respond-to-security-incident.md) | Utilisez New Relic pour surveiller les informations de performances clés relatives à votre Adobe Commerce sur le site d’infrastructure cloud. |
 
 ### Mises à niveau

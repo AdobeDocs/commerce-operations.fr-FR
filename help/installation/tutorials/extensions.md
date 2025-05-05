@@ -20,7 +20,7 @@ Les extensions incluent :
 - Thèmes (modifiez l’aspect de votre storefront et de votre administrateur)
 - Packages de langue (localisez le storefront et l’administrateur)
 
-Cette rubrique explique comment utiliser l’interface de ligne de commande pour gérer les extensions tierces que vous achetez sur le Commerce Marketplace pour des projets _sur site_. Pour les projets d’infrastructure cloud, voir [Gestion des extensions](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+Cette rubrique explique comment utiliser l’interface de ligne de commande pour gérer les extensions tierces que vous achetez sur le Commerce Marketplace pour des projets _sur site_. Pour les projets d’infrastructure cloud, voir [Gestion des extensions](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/extensions).
 
 Vous pouvez utiliser la même procédure pour installer l’extension _any_ ; vous avez simplement besoin du nom et de la version du compositeur de l’extension. Pour le trouver, ouvrez le fichier `composer.json` de l’extension et notez les valeurs de `"name"` et `"version"`.
 

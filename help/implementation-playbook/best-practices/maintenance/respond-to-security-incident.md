@@ -63,7 +63,7 @@ Dans le malheureux cas d&#39;un compromis de site, voici quelques recommandation
 
 La première étape de l&#39;analyse des incidents est de rassembler autant de faits que possible, aussi vite que possible. Rassembler des informations sur l’incident peut aider à déterminer la cause potentielle de l’incident. Adobe Commerce fournit les outils ci-dessous pour faciliter votre analyse des incidents.
 
-- [Journaux d’action de l’administrateur d’audit](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html).
+- [Journaux d’action de l’administrateur d’audit](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html?lang=fr).
 
   Le rapport Journaux d’actions affiche un enregistrement détaillé de toutes les actions d’administration activées pour la journalisation. Chaque enregistrement est horodaté et enregistre l’adresse IP et le nom de l’utilisateur. Le détail du journal comprend les données utilisateur de l’administrateur et les modifications associées qui ont été apportées pendant l’action.
 
@@ -73,9 +73,9 @@ La première étape de l&#39;analyse des incidents est de rassembler autant de f
 
   Utilisez l’onglet **Sécurité** de l’outil pour obtenir une vue claire des problèmes de sécurité potentiels afin d’identifier les causes premières et de garder les sites à un niveau optimal.
 
-- Analysez les journaux avec [New Relic Logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html)
+- Analysez les journaux avec [New Relic Logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=fr)
 
-  Les projets Adobe Commerce sur l’infrastructure cloud Pro incluent le service [New Relic Logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html). Le service est préconfiguré pour agréger toutes les données de journal de vos environnements d’évaluation et de production afin de les afficher dans un tableau de bord de gestion des journaux centralisé où vous pouvez rechercher et visualiser des données agrégées.
+  Les projets Adobe Commerce sur l’infrastructure cloud Pro incluent le service [New Relic Logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=fr). Le service est préconfiguré pour agréger toutes les données de journal de vos environnements d’évaluation et de production afin de les afficher dans un tableau de bord de gestion des journaux centralisé où vous pouvez rechercher et visualiser des données agrégées.
 
   Pour d’autres projets Commerce, vous pouvez configurer et utiliser le service [New Relic Logs](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) pour effectuer les tâches suivantes :
    - Utilisez [des requêtes New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) pour rechercher des données de journal agrégées.
@@ -89,17 +89,17 @@ Continuez à surveiller de près le site après l&#39;incident, car de nombreux 
 
 ### Comptes d’utilisateurs administrateurs d’audit
 
-- [ Vérifiez l’accès des utilisateurs administrateurs ](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html) : supprimez les comptes anciens, inutilisés ou suspects et faites pivoter les mots de passe de tous les utilisateurs administrateurs.
+- [ Vérifiez l’accès des utilisateurs administrateurs ](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=fr) : supprimez les comptes anciens, inutilisés ou suspects et faites pivoter les mots de passe de tous les utilisateurs administrateurs.
 
-- [Vérifiez les paramètres de sécurité d’administrateur](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html) : vérifiez que les paramètres de sécurité d’administrateur suivent les bonnes pratiques en matière de sécurité.
+- [Vérifiez les paramètres de sécurité d’administrateur](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=fr) : vérifiez que les paramètres de sécurité d’administrateur suivent les bonnes pratiques en matière de sécurité.
 
-- [ Vérifiez les comptes d’utilisateurs d’Adobe Commerce sur les projets d’infrastructure cloud ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) : supprimez les comptes anciens, inutilisés ou suspects et faites pivoter les mots de passe de tous les utilisateurs administrateurs de projet cloud. Vérifiez que les paramètres de sécurité du compte sont correctement configurés.
+- [ Vérifiez les comptes d’utilisateurs d’Adobe Commerce sur les projets d’infrastructure cloud ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=fr) : supprimez les comptes anciens, inutilisés ou suspects et faites pivoter les mots de passe de tous les utilisateurs administrateurs de projet cloud. Vérifiez que les paramètres de sécurité du compte sont correctement configurés.
 
-- [ Audit des clés SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) pour Adobe Commerce sur l’infrastructure cloud : vérifiez, supprimez et faites pivoter les clés SSH.
+- [ Audit des clés SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr) pour Adobe Commerce sur l’infrastructure cloud : vérifiez, supprimez et faites pivoter les clés SSH.
 
 ### Code d’audit
 
-- À partir de l’administrateur, passez en revue la [configuration HTML Header and Footer](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) à tous les niveaux de portée, y compris `website` et `store view`. Supprimez tout code JavaScript inconnu des scripts et des feuilles de style, ainsi que des paramètres d’HTML divers. Conservez uniquement le code reconnu tel que les fragments de code de suivi.
+- À partir de l’administrateur, passez en revue la [configuration HTML Header and Footer](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=fr) à tous les niveaux de portée, y compris `website` et `store view`. Supprimez tout code JavaScript inconnu des scripts et des feuilles de style, ainsi que des paramètres d’HTML divers. Conservez uniquement le code reconnu tel que les fragments de code de suivi.
 
 - Comparez la base de code de production actuelle à la base de code stockée dans le système de contrôle de version (VCS).
 

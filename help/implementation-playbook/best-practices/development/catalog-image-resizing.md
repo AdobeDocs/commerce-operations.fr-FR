@@ -116,5 +116,5 @@ La consultation d’une URL de cache d’image génère toutes les tailles d’i
 
 >[!NOTE]
 >
->- Adobe Commerce sur les projets d’infrastructure cloud peut décharger le redimensionnement des images du produit vers le service Fastly. Voir [Optimisation des images profondes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=en#deep-image-optimization) dans le _Guide Cloud_.
->- Si vous utilisez le module de stockage à distance, vous pouvez également essayer de décharger le redimensionnement de l’image sur nginx. Voir [Configuration du redimensionnement des images pour le stockage à distance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) dans le _Guide de configuration_.
+>- Adobe Commerce sur les projets d’infrastructure cloud peut décharger le redimensionnement des images du produit vers le service Fastly. Voir [Optimisation des images profondes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=fr#deep-image-optimization) dans le _Guide Cloud_.
+>- Si vous utilisez le module de stockage à distance, vous pouvez également essayer de décharger le redimensionnement de l’image sur nginx. Voir [Configuration du redimensionnement des images pour le stockage à distance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=fr) dans le _Guide de configuration_.

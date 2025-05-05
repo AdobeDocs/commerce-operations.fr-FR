@@ -13,10 +13,10 @@ ht-degree: 0%
 
 Cette tâche vous oblige à créer une catégorie racine (et des catégories supplémentaires, si vous le souhaitez) pour chaque magasin. Les tâches décrites dans cette rubrique permettent de configurer plusieurs magasins. Pour plus d’informations, reportez-vous aux ressources suivantes du Guide de l’utilisateur de Commerce :
 
-- [Catégories](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)
-- [Ajout de sites web](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [Store URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
-- [Contenu](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu)
+- [Catégories](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/categories/categories)
+- [Ajout de sites web](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Store URLs](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [Contenu](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
@@ -34,7 +34,7 @@ Pour créer une catégorie racine :
 1. Dans le champ **Nom de la catégorie**, saisissez un nom unique pour identifier cette catégorie.
 1. Assurez-vous que l’option Activer la catégorie est définie sur **Oui**.
 
-   Pour plus d’informations sur les autres options de cette page, consultez [Catégories](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root) racines.
+   Pour plus d’informations sur les autres options de cette page, consultez [Catégories](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/categories/category-root) racines.
 
    La figure suivante montre un exemple.
 
@@ -131,7 +131,7 @@ Commerce vous offre la possibilité d’ajouter le code de magasin à l’URL de
 
 Cela empêche `index.php` et `.htaccess` de se désynchroniser avec le code base de Commerce lors des futures mises à niveau.
 
-Voir le [Guide de l’utilisateur de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
+Voir le [Guide de l’utilisateur de Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 Pour ajouter le code du magasin à l’URL de base :
 

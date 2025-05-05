@@ -35,7 +35,7 @@ Le fait qu’un grand magasin avec plusieurs administrateurs fonctionne en arri�
 Pour optimiser les performances du site, suivez les bonnes pratiques d’indexation suivantes :
 
 - Examinez la configuration de l’index.
-- Définissez les indexeurs sur _[!UICONTROL Update on Schedule]_&#x200B;pour les sites volumineux et les sites avec des mises à jour fréquentes et un trafic élevé. Voir [Gestion des index](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+- Définissez les indexeurs sur _[!UICONTROL Update on Schedule]_&#x200B;pour les sites volumineux et les sites avec des mises à jour fréquentes et un trafic élevé. Voir [Gestion des index](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 - Suivez les [bonnes pratiques de performances](../../../performance/configuration.md) pour gérer les index.
 
 >[!IMPORTANT]
@@ -45,5 +45,5 @@ Pour optimiser les performances du site, suivez les bonnes pratiques d’indexat
 ## Informations supplémentaires
 
 - [Gestion des index pour les utilisateurs administrateurs](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Gestion des index à l’aide de l’interface de ligne de commande du Magento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
+- [Gestion des index à l’aide de l’interface de ligne de commande du Magento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=fr)
 - [Présentation de l’indexation pour les développeurs](https://developer.adobe.com/commerce/php/development/components/indexing/)

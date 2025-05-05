@@ -39,9 +39,9 @@ GTmetrix est l’un des outils que vous pouvez utiliser pour les tests de stress
 
 En savoir plus sur la préparation des projets Commerce pour les périodes de trafic élevé :
 
-- [Préparation des vacances](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
-- [Analyse des achats de vacances](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html)
-- [Augmentation De La Capacité De Surge](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html)
+- [Préparation des vacances](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=fr)
+- [Analyse des achats de vacances](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=fr)
+- [Augmentation De La Capacité De Surge](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html?lang=fr)
 
 ### Test de chargement
 
@@ -51,12 +51,12 @@ Utilisez GTmetrix pour simuler un trafic important et analyser les performances 
 
 En savoir plus sur le test des projets Adobe Commerce :
 
-- [Conseil de test](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html) (infrastructure cloud)
+- [Conseil de test](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html?lang=fr) (infrastructure cloud)
 - [Test d’application](https://developer.adobe.com/commerce/testing/guide/)
 
 ### Identification et résolution des problèmes de performances
 
-Résolvez les problèmes de performances en utilisant divers outils tels que New Relic et Observation pour Adobe Commerce afin de détecter les goulets d’étranglement et d’optimiser efficacement les sites Commerce. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) est inclus avec Adobe Commerce sur l’infrastructure cloud et [Observation pour Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) est inclus pour les déploiements cloud et sur site.
+Résolvez les problèmes de performances en utilisant divers outils tels que New Relic et Observation pour Adobe Commerce afin de détecter les goulets d’étranglement et d’optimiser efficacement les sites Commerce. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=fr) est inclus avec Adobe Commerce sur l’infrastructure cloud et [Observation pour Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) est inclus pour les déploiements cloud et sur site.
 
 Utilisez ces outils pour analyser les performances du site et identifier les problèmes de performances liés à :
 
@@ -69,7 +69,7 @@ Vous pouvez, par exemple, examiner de plus près les transactions en vous concen
 
 En savoir plus sur la gestion des performances du site :
 
-- [Surveillance des performances](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) (infrastructure cloud)
+- [Surveillance des performances](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html?lang=fr) (infrastructure cloud)
 - [Bonnes pratiques de configuration](/help/performance/configuration.md)
 - [Observation pour Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md)
 
@@ -81,7 +81,7 @@ La résolution des problèmes de performances MySQL par l’implémentation de l
 
 Les sites Web à trafic élevé sont souvent confrontés à des goulets d’étranglement au niveau de la base de données, principalement dus à la dépendance à un seul serveur MySQL. Vous pouvez remédier à ces goulets d’étranglement en mettant en oeuvre la mise en grappe de la base de données, une architecture répartie qui améliore les performances et assure une haute disponibilité.
 
-La mise en grappe de la base de données réduit l’impact des problèmes liés à la base de données pendant les périodes de trafic élevées en permettant à plusieurs noeuds web de se connecter à plusieurs serveurs MySQL. Utilisez des outils tels que la grappe Galera pour configurer la mise en grappe de bases de données pour les sites Commerce. La grappe Galera est incluse dans les [projets Adobe Commerce déployés sur l’infrastructure cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture).
+La mise en grappe de la base de données réduit l’impact des problèmes liés à la base de données pendant les périodes de trafic élevées en permettant à plusieurs noeuds web de se connecter à plusieurs serveurs MySQL. Utilisez des outils tels que la grappe Galera pour configurer la mise en grappe de bases de données pour les sites Commerce. La grappe Galera est incluse dans les [projets Adobe Commerce déployés sur l’infrastructure cloud](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/architecture/pro-architecture).
 
 #### Optimisation des requêtes MySQL
 
@@ -93,10 +93,10 @@ Pour optimiser les performances du serveur MySQL et réduire les goulets d’ét
 
 En savoir plus sur la configuration et l’optimisation de MySQL :
 
-- [ Bonnes pratiques pour la configuration de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
-- [Réplication lente pour la réplication Galera DB](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html)
+- [ Bonnes pratiques pour la configuration de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=fr)
+- [Réplication lente pour la réplication Galera DB](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html?lang=fr)
 - [Directives générales pour MySQL](/help/installation/prerequisites/database/mysql.md)
-- [Mise en cache de requête MySQL](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html)
+- [Mise en cache de requête MySQL](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html?lang=fr)
 
 ## Gérer efficacement les tâches cron : performances et timing
 
@@ -110,7 +110,7 @@ Vous pouvez également utiliser Observation pour Adobe Commerce pour afficher le
 
 En savoir plus sur l’implémentation d’Adobe Commerce cron :
 
-- [Cron (tâches planifiées)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) dans le _Guide de l’utilisateur des systèmes d’administration Commerce_
-- [Configuration de l’application - propriété crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) (infrastructure cloud)
-- [Configurer et exécuter crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) (sur site)
-- [Observation pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) (Voir les onglets [!UICONTROL Cron] et [!UICONTROL MySQL] .)
+- [Cron (tâches planifiées)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=fr) dans le _Guide de l’utilisateur des systèmes d’administration Commerce_
+- [Configuration de l’application - propriété crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=fr) (infrastructure cloud)
+- [Configurer et exécuter crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=fr) (sur site)
+- [Observation pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=fr) (Voir les onglets [!UICONTROL Cron] et [!UICONTROL MySQL] .)

@@ -25,7 +25,7 @@ Le correctif ACSD-64546 corrige le problème où un message d’erreur génériq
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles [!DNL Quality Patches Tool] versions. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le `magento/quality-patches` package vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool]page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) : Search des correctifs. Utilisez l’identifiant du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec de nouvelles [!DNL Quality Patches Tool] versions. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le `magento/quality-patches` package vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool]page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) : Search des correctifs. Utilisez l’identifiant du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Émettre
 

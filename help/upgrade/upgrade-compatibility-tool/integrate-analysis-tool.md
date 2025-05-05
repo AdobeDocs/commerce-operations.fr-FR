@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Upgrade Compatibility Tool] est désormais intégré à [!DNL Site-Wide Analysis Tool] afin de permettre aux personnes non techniques d&#39;exécuter le [!DNL Upgrade Compatibility Tool] et d&#39;obtenir un [rapport](../upgrade-compatibility-tool/reports.md) contenant une liste de problèmes pour chaque fichier.
 
-Pour plus d’informations, consultez le [[!DNL Site-Wide Analysis Tool] guide de l’utilisateur](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) .
+Pour plus d’informations, consultez le [[!DNL Site-Wide Analysis Tool] guide de l’utilisateur](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/site-wide-analysis-tool/access) .
 
 ## Exécutez le [!DNL Upgrade Compatibility Tool] à partir du [!DNL Site-Wide Analysis Tool]
 

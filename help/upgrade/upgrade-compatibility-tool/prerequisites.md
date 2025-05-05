@@ -80,4 +80,4 @@ Il est nécessaire que le [!DNL Upgrade Compatibility Tool] ait accès au code s
 
 Si vous exécutez le [!DNL Upgrade Compatibility Tool] sur une instance Adobe Commerce avec des modules et des fichiers volumineux, l’outil peut nécessiter une quantité élevée de RAM (au moins 2 Go).
 
-Exécutez le [!DNL Upgrade Compatibility Tool] à partir des projets [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) pour [Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank}.
+Exécutez le [!DNL Upgrade Compatibility Tool] à partir des projets [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=fr) pour [Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=fr){target=_blank}.

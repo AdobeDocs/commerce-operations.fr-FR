@@ -40,7 +40,7 @@ Chaque phase de développement doit avoir une branche correspondante dans Git po
 
 >[!TIP]
 >
->Adobe Commerce sur les projets d’infrastructure cloud contient des branches spécifiques qui correspondent à différents environnements. Voir les [workflows de projet Pro](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html) et [workflow de projet de démarrage](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html) dans le _Guide Cloud_.
+>Adobe Commerce sur les projets d’infrastructure cloud contient des branches spécifiques qui correspondent à différents environnements. Voir les [workflows de projet Pro](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=fr) et [workflow de projet de démarrage](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html?lang=fr) dans le _Guide Cloud_.
 
 ## Stratégies de branche
 

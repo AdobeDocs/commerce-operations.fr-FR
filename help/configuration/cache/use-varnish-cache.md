@@ -42,7 +42,7 @@ Une fois que vous avez installé et configuré Varnish pour qu’il fonctionne a
 
 ## Configuration de Commerce pour purger le vernis
 
-Commerce purge les hôtes ternes après avoir configuré les hôtes ternes à l’aide de la commande [`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) .
+Commerce purge les hôtes ternes après avoir configuré les hôtes ternes à l’aide de la commande [`magento setup:config:set`](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) .
 
 Vous pouvez utiliser le paramètre facultatif `--http-cache-hosts` pour spécifier une liste d’hôtes et de ports d’écoute séparés par des virgules. Configurez tous les hôtes vernis, qu’il y en ait un ou plusieurs. (Ne séparez pas les hôtes avec un espace.)
 

@@ -21,5 +21,5 @@ L’application Commerce fournit les groupes cron suivants :
 - `index`, qui actualise [indexers](../cli/manage-indexers.md)
 - `consumers`, qui exécute la file d&#39;attente des messages [consommateurs](../cli/start-message-queues.md)
 - Ces rubriques sont disponibles dans Adobe Commerce uniquement
-   - `staging` qui exécute les [tâches liées à l’évaluation](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging)
+   - `staging` qui exécute les [tâches liées à l’évaluation](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/staging/content-staging)
    - `catalog_event`, qui exécute des tâches pour les règles de panier et de cible
