@@ -69,4 +69,4 @@ Marchands et partenaires qui souhaitent bénéficier d’une meilleure visibilit
 
 Regardez cette vidéo pour en savoir plus sur [!DNL Site-Wide Analysis Tool] :
 
->[!VIDEO](https://video.tv.adobe.com/v/344001?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3410777?quality=12&captions=fre_fr)
