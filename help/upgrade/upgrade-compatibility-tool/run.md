@@ -146,7 +146,7 @@ Options disponibles pour la commande `core:code:changes` :
 
 >[!NOTE]
 >
-> Il est recommandé de tenir le code personnalisé en dehors du code principal. Pour connaître les bonnes pratiques de mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) consultez le [ guide de mise à niveau d’Adobe Commerce 2.4 .
+> Il est recommandé de tenir le code personnalisé en dehors du code principal. Pour connaître les bonnes pratiques de mise à niveau[&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) consultez le  guide de mise à niveau d’Adobe Commerce 2.4 .
 
 ### Installation Vanilla
 
