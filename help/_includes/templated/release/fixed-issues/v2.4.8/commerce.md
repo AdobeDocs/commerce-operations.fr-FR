@@ -1,7 +1,7 @@
 ---
-source-git-commit: 53b2494d848c027e32f1493bbc7a9f204677afaa
+source-git-commit: 5d6d60b99d883f0a83cdcfc1c65c04d2f4ef09b7
 workflow-type: tm+mt
-source-wordcount: '27958'
+source-wordcount: '27937'
 ht-degree: 0%
 
 ---
@@ -192,7 +192,7 @@ La commande `bin/magento i18n:collect-phrases -o` collecte et ajoute désormais 
 * __Problème d’autorisation d’accès au bloc dynamique__
 Auparavant, pour l’administration restreinte, l’ajout d’un nouveau bloc dynamique générait une erreur. Après l’implémentation de ce correctif, l’administrateur restreint peut ajouter le bloc dynamique et le modifier sans erreur
   _ACP2E-2687_
-* __L’apostrophe dans le nom de la vue du magasin est remplacée par &#039;__
+* __L’apostrophe dans le nom de la vue du magasin est remplacée par &amp;#039;__
 Les filtres de vue de magasin de la grille affichent désormais correctement les apostrophes
   _ACP2E-2787 - [Problème GitHub](https://github.com/magento/magento2/issues/38395) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/39d54c2d)_
 * __Le chargement de Favicon ne parvient pas à valider les fichiers .ico__
@@ -1537,7 +1537,7 @@ Correction d’un problème en raison duquel la tentative de suppression des pro
 * __Impossible d’ajouter des produits en raison du respect de la casse du SKU dans la mutation__
 Correction d’un problème en raison duquel la mutation addProductsToCart renvoyait une erreur « PRODUCT_NOT_FOUND » lors de l’utilisation de SKU avec une casse différente. La mutation gère désormais les SKU sans respect de la casse, ce qui garantit la cohérence avec les requêtes du service de catalogue et le comportement du PDP.
   _LYNX-469_
-* __Attribut de produit > forme abrégée de marque &trade; est renvoyé sous la forme &trade;__
+* __Attribut de produit > forme abrégée de marque &amp;trade; est renvoyé sous la forme &amp;trade;__
 Résolution d’un problème de codage des caractères avec le nom du produit pour l’API GraphQL
   _LYNX-603_
 * __problème de mutation updateCustomerEmail__
@@ -1638,9 +1638,6 @@ Le système charge désormais correctement les fichiers CSS de manière asynchro
 * __En utilisant le type virtuel pour configurer le plug-in, la méthode intercepteur ne peut pas être générée correctement dans `setup:di:compile` commande__
 Le système génère désormais correctement des méthodes d&#39;interception lors de l&#39;utilisation d&#39;un type virtuel pour configurer un plug-in, assurant ainsi des résultats cohérents qu&#39;ils soient précompilés ou compilés à l&#39;exécution. Auparavant, le système générait des résultats incorrects lors de la précompilation par rapport à la compilation à l’exécution.
   _AC-13398 - [Problème GitHub](https://github.com/magento/magento2/issues/33980) - [Contribution du code GitHub](https://github.com/magento/magento2/pull/38141)_
-* __Impossible de télécharger les fichiers du collecteur de données__
-Le téléchargement de la sauvegarde n’affiche plus une page vierge au lieu de télécharger le fichier.
-  _ACP2E-3441_
 * __Échec des tests unitaires Adobe Commerce 2.4.7-p3__
 Aucune note de mise à jour n’est requise.
   _ACP2E-3631 - [contribution du code GitHub](https://github.com/magento/magento2/commit/982b1c42)_
