@@ -1,5 +1,5 @@
 ---
-source-git-commit: 5d6d60b99d883f0a83cdcfc1c65c04d2f4ef09b7
+source-git-commit: 290e79e329d5809b0cbb756a53ee935af95c86c5
 workflow-type: tm+mt
 source-wordcount: '27937'
 ht-degree: 0%
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Correction de problèmes dans la version v2.4.8
 
-Nous avons corrigé 582 problèmes dans le code principal d’Adobe Commerce 2.4.8. Un sous-ensemble des problèmes résolus inclus dans cette version est décrit ci-dessous.
+Nous avons corrigé 581 problèmes dans le code principal d’Adobe Commerce 2.4.8. Un sous-ensemble des problèmes résolus inclus dans cette version est décrit ci-dessous.
 
 ### API
 
@@ -192,7 +192,7 @@ La commande `bin/magento i18n:collect-phrases -o` collecte et ajoute désormais 
 * __Problème d’autorisation d’accès au bloc dynamique__
 Auparavant, pour l’administration restreinte, l’ajout d’un nouveau bloc dynamique générait une erreur. Après l’implémentation de ce correctif, l’administrateur restreint peut ajouter le bloc dynamique et le modifier sans erreur
   _ACP2E-2687_
-* __L’apostrophe dans le nom de la vue du magasin est remplacée par &#039;__
+* __L’apostrophe dans le nom de la vue du magasin est remplacée par &amp;#039;__
 Les filtres de vue de magasin de la grille affichent désormais correctement les apostrophes
   _ACP2E-2787 - [Problème GitHub](https://github.com/magento/magento2/issues/38395) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/39d54c2d)_
 * __Le chargement de Favicon ne parvient pas à valider les fichiers .ico__
@@ -1537,7 +1537,7 @@ Correction d’un problème en raison duquel la tentative de suppression des pro
 * __Impossible d’ajouter des produits en raison du respect de la casse du SKU dans la mutation__
 Correction d’un problème en raison duquel la mutation addProductsToCart renvoyait une erreur « PRODUCT_NOT_FOUND » lors de l’utilisation de SKU avec une casse différente. La mutation gère désormais les SKU sans respect de la casse, ce qui garantit la cohérence avec les requêtes du service de catalogue et le comportement du PDP.
   _LYNX-469_
-* __Attribut de produit > forme abrégée de marque &trade; est renvoyé sous la forme &trade;__
+* __Attribut de produit > forme abrégée de marque &amp;trade; est renvoyé sous la forme &amp;trade;__
 Résolution d’un problème de codage des caractères avec le nom du produit pour l’API GraphQL
   _LYNX-603_
 * __problème de mutation updateCustomerEmail__
