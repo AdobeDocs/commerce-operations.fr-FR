@@ -1,7 +1,7 @@
 ---
-source-git-commit: b63fa9a8b2b59f6e8dfd7003e75c66caf99d5e81
+source-git-commit: 779571c234e6fc620321d91cf8fd5f9ed28b869e
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '103'
 ht-degree: 0%
 
 ---
@@ -18,4 +18,4 @@ Ces notes de mise à jour de correctif de sécurité capturent des mises à jour
 En savoir plus sur les versions des correctifs de sécurité :
 
 * [Présentation des versions du correctif de sécurité d’Adobe Commerce](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
-* Les instructions de téléchargement et d’application des versions des correctifs de sécurité sont disponibles dans le [ Guide de mise à niveau ](https://experienceleague.adobe.com/fr/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)
+* Les instructions de téléchargement et d’application des correctifs de sécurité sont disponibles dans la section [Comment obtenir et appliquer des correctifs de sécurité](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) de la _base de connaissances Adobe Commerce_.

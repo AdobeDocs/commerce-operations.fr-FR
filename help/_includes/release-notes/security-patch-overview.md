@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9514f6655bb6d99205c3799a164b6db62887362c
+source-git-commit: 0eb7528ebcc1515defd672830b8f00e460819aa1
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,4 @@ Les versions de correctifs de sécurité peuvent également inclure des modifica
 
 Chaque version de correctif de sécurité est basée sur la version complète antérieure du correctif. Il contient les correctifs de qualité et de sécurité de la version précédente du correctif ainsi que les correctifs de sécurité créés entre la version précédente complète du correctif et la version précédente du correctif de sécurité.
 
-Pour obtenir des instructions sur le téléchargement et l’application de correctifs de sécurité, consultez [Exécution et mise à niveau](../../installation/composer.md#example---security-patch) dans le _Guide de mise à niveau_.
+Pour obtenir des instructions sur le téléchargement et l’application de correctifs de sécurité, consultez [Comment obtenir et appliquer des correctifs de sécurité](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) dans la _base de connaissances Adobe Commerce_.
