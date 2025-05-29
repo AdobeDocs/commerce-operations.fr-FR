@@ -17,4 +17,4 @@ Les versions de correctifs de sécurité peuvent également inclure des modifica
 
 Chaque version de correctif de sécurité est basée sur la version complète antérieure du correctif. Il contient les correctifs de qualité et de sécurité de la version précédente du correctif ainsi que les correctifs de sécurité créés entre la version précédente complète du correctif et la version précédente du correctif de sécurité.
 
-Pour obtenir des instructions sur le téléchargement et l’application de correctifs de sécurité, consultez [Comment obtenir et appliquer des correctifs de sécurité](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) dans la _base de connaissances Adobe Commerce_.
+Pour obtenir des instructions sur le téléchargement et l’application de correctifs de sécurité, consultez [Comment obtenir et appliquer des correctifs de sécurité](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) dans la _base de connaissances Adobe Commerce_.
