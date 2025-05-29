@@ -50,6 +50,7 @@ Les règles de prix de panier pour les produits multi-expédition ne s’appliqu
 1. Test de produit 2 :
    1. Catégories : Test de catégorie 2
    1. Prix : 56,25 $ 
+
       **(Les prix doivent être identiques à ceux affichés ici pour garantir le bon fonctionnement du test.)**
 
 **Règle de prix du panier :**
