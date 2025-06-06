@@ -1,42 +1,42 @@
 ---
-title: référence env.php
-description: Consultez la liste des valeurs du fichier env.php.
+title: env.php référence
+description: Voir une liste de valeurs pour le fichier env.php.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 3f46ee08bb4edc08775bf986804772b88ca35f45
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
 
-# référence env.php
+# env.php référence
 
-Le `env.php` fichier contient les sections suivantes :
+Le fichier `env.php` contient les sections suivantes :
 
 | Nom | Description |
 |-------------------------------|-----------------------------------------------------------------|
 | `backend` | Paramètres de la zone Admin |
-| `cache` | Configuration de la page redis et du cache par défaut |
-| `cache_types` | Paramètres de stockage du cache |
-| `consumers_wait_for_messages` | Configuration du traitement des messages par les consommateurs à partir de la file d’attente des messages |
+| `cache` | Configuration de la page de redis et du cache par défaut |
+| `cache_types` | Paramètres de stockage dans le cache |
+| `consumers_wait_for_messages` | Configurer la manière dont les consommateurs et consommatrices traitent les messages de la file d’attente des messages |
 | `cron` | Activation ou désactivation des tâches cron |
-| `crypt` | Clé de chiffrement des fonctions cryptographiques |
+| `crypt` | La clé de chiffrement pour les fonctions cryptographiques |
 | `db` | Paramètres de connexion à la base de données |
-| `default_connection` | Connexion par défaut des files de messages |
+| `default_connection` | Connexion par défaut des files d&#39;attente des messages |
 | `directories` | Paramètres de mappage des répertoires Commerce |
 | `downloadable_domains` | Liste des domaines téléchargeables |
 | `install` | La date d&#39;installation |
-| `lock` | Verrouillage des paramètres du fournisseur |
-| `MAGE_MODE` | Le [mode application](../bootstrap/application-modes.md) |
-| `queue` | [Paramètres des files d’attente de](../queues/manage-message-queues.md) messages |
-| `resource` | Mappage du nom de la ressource à une connexion |
-| `session` | Données de stockage de session |
-| `system` | Désactive le champ à modifier dans l&#39;administrateur. |
-| `x-frame-options` | Paramètre pour [x-frame-options][x-frame-options] |
+| `lock` | Verrouiller les paramètres du fournisseur |
+| `MAGE_MODE` | Le [ mode d’application ](../bootstrap/application-modes.md) |
+| `queue` | [Files d’attente des messages](../queues/manage-message-queues.md) paramètres |
+| `resource` | Mappage du nom d’une ressource sur une connexion |
+| `session` | Données de stockage de la session |
+| `system` | Désactive le champ à modifier dans l’administrateur |
+| `x-frame-options` | Définition de [x-frame-options][x-frame-options] |
 
-## backend
+## serveur principal
 
-Configurez frontName **&#x200B;**&#x200B;pour l’URL d’administration Commerce à l’aide `backend` du nœud dans env.php.
+Configurez le **frontName** pour l’URL d’administration Commerce à l’aide du nœud `backend` dans env.php.
 
 ```conf
 'backend' => [
@@ -46,7 +46,7 @@ Configurez frontName **&#x200B;**&#x200B;pour l’URL d’administration Commerc
 
 ## cache
 
-Configurez la page redis et la mise en cache par défaut à l’aide `cache` du nœud dans le `env.php` fichier.
+Configurez la page redis et la mise en cache par défaut en utilisant `cache` nœud dans le fichier `env.php`.
 
 ```conf
 'cache' => [
@@ -72,11 +72,11 @@ Configurez la page redis et la mise en cache par défaut à l’aide `cache` du 
 ]
 ```
 
-En savoir plus sur la [configuration](../cache/redis-pg-cache.md) Redis.
+En savoir plus dans [Configuration Redis](../cache/redis-pg-cache.md).
 
 ## cache_types
 
-Toutes les configurations de types de cache sont disponibles à partir de ce noeud.
+Toutes les configurations de types de cache sont disponibles à partir de ce nœud.
 
 ```conf
 'cache_types' => [
@@ -98,7 +98,7 @@ Toutes les configurations de types de cache sont disponibles à partir de ce noe
 ]
 ```
 
-En savoir plus sur les différents [types de cache](../cli/manage-cache.md).
+En savoir plus sur les différents [ types de cache ](../cli/manage-cache.md).
 
 ## consumer_wait_for_messages
 
@@ -110,15 +110,15 @@ Indiquez si les consommateurs doivent continuer à interroger les messages si le
 ]
 ```
 
-Les options disponibles sont les suivantes :
+Les options suivantes sont disponibles :
 
-- `1` : les consommateurs continuent à traiter les messages de la file d’attente des messages jusqu’à atteindre la valeur `max_messages` spécifiée dans le fichier `env.php` avant de fermer la connexion TCP et d’interrompre le processus client. Si la file d’attente se vide avant d’atteindre la valeur `max_messages`, le consommateur attend que d’autres messages arrivent.
+- `1` : les clients continuent à traiter les messages de la file d&#39;attente des messages jusqu&#39;à ce qu&#39;ils atteignent la valeur `max_messages` spécifiée dans le fichier `env.php` avant de fermer la connexion TCP et d&#39;arrêter le traitement des clients. Si la file d’attente se vide avant d’atteindre la valeur `max_messages`, le client attend l’arrivée d’autres messages.
 
-  Nous vous recommandons ce paramètre pour les grands vendeurs, car un flux de messages constant est attendu et les retards de traitement ne sont pas souhaitables.
+  Nous recommandons ce paramètre pour les grands commerçants, car un flux de messages constant est attendu et les retards de traitement ne sont pas souhaitables.
 
-- `0` : les consommateurs traitent les messages disponibles dans la file d’attente, ferment la connexion TCP et s’arrêtent. Les consommateurs n’attendent pas que des messages supplémentaires entrent dans la file d’attente, même si le nombre de messages traités est inférieur à la valeur `max_messages` spécifiée dans le fichier `env.php`. Cela peut aider à éviter les problèmes liés aux tâches cron causés par de longs délais dans le traitement de la file d’attente des messages.
+- `0` : les consommateurs et consommatrices traitent les messages disponibles dans la file d&#39;attente, ferment la connexion TCP et s&#39;arrêtent. Les consommateurs et consommatrices n’attendent pas que des messages supplémentaires entrent dans la file d’attente, même si le nombre de messages traités est inférieur à la valeur `max_messages` spécifiée dans le fichier `env.php`. Cela peut permettre d’éviter les problèmes liés aux tâches cron en raison des longs délais de traitement des files d’attente des messages.
 
-  Nous recommandons ce paramètre pour les petits commerçants qui ne s’attendent pas à un flux de messages constant et qui préfèrent conserver les ressources informatiques en exchange pour les retards de traitement mineurs lorsqu’il ne peut pas y avoir de messages pendant des jours.
+  Nous recommandons ce paramètre pour les petits commerçants qui ne s&#39;attendent pas à un flux de messages constant et qui préfèrent conserver les ressources informatiques en échange de retards de traitement mineurs alors qu&#39;il pourrait n&#39;y avoir aucun message pendant des jours.
 
 ## cron
 
@@ -132,13 +132,13 @@ Activez ou désactivez les tâches cron pour l’application Commerce. Par défa
 
 >[!WARNING]
 >
->Soyez prudent lorsque vous désactivez les tâches cron. Lorsqu’elles sont désactivées, les processus essentiels requis par l’application Commerce ne s’exécuteront pas.
+>Soyez prudent lorsque vous désactivez les tâches cron. Lorsqu’ils sont désactivés, les processus essentiels requis par l’application Commerce ne s’exécutent pas.
 
 En savoir plus sur [Crons](../cli/configure-cron-jobs.md).
 
-## crypte
+## chiffrer
 
-Commerce utilise une clé de chiffrement pour protéger les mots de passe et d’autres données sensibles. Cette clé est générée pendant le processus d’installation.
+Commerce utilise une clé de chiffrement pour protéger les mots de passe et d’autres données sensibles. Cette clé est générée lors du processus d&#39;installation.
 
 ```conf
 'crypt' => [
@@ -146,11 +146,11 @@ Commerce utilise une clé de chiffrement pour protéger les mots de passe et d�
 ]
 ```
 
-Pour en savoir plus sur [la clé de chiffrement](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/encryption-key), consultez le _guide de l’utilisateur de Commerce_.
+Apprenez-en davantage sur la [clé de chiffrement](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) dans le guide d’utilisation de _Commerce_.
 
 ## db
 
-Toutes les configurations de base de données sont disponibles dans ce noeud.
+Toutes les configurations de base de données sont disponibles dans ce nœud.
 
 ```conf
 'db' => [
@@ -172,7 +172,7 @@ Toutes les configurations de base de données sont disponibles dans ce noeud.
 
 ## default_connection
 
-Définit la connexion par défaut pour les files d’attente de messages. La valeur peut être `db`, `amqp` ou un système de file d’attente personnalisé comme `redismq`. Si vous spécifiez une valeur autre que `db`, le logiciel de la file d’attente des messages doit d’abord être installé et configuré. Sinon, les messages ne seront pas traités correctement.
+Définit la connexion par défaut pour les files d’attente de messages. La valeur peut être `db`, `amqp` ou un système de file d’attente personnalisé comme `redismq`. Si vous spécifiez une valeur autre que `db`, le logiciel de file d’attente de messages doit d’abord être installé et configuré. Sinon, les messages ne seront pas traités correctement.
 
 ```conf
 'queue' => [
@@ -180,12 +180,12 @@ Définit la connexion par défaut pour les files d’attente de messages. La val
 ]
 ```
 
-Si `queue/default_connection` est spécifié dans le fichier `env.php` du système, cette connexion est utilisée pour toutes les files d’attente de messages à travers le système, sauf si une connexion spécifique est définie dans un fichier `queue_topology.xml`, `queue_publisher.xml` ou `queue_consumer.xml`.
+Si `queue/default_connection` est spécifié dans le fichier de `env.php` système, cette connexion est utilisée pour toutes les files d&#39;attente de messages du système, sauf si une connexion spécifique est définie dans un fichier `queue_topology.xml`, `queue_publisher.xml` ou `queue_consumer.xml`.
 Par exemple, si `queue/default_connection` est `amqp` dans `env.php` mais qu’une connexion `db` est spécifiée dans les fichiers XML de configuration de file d’attente d’un module, le module utilisera MySQL comme courtier de messages.
 
 ## répertoires
 
-Options de mappage de répertoire facultatives qui doivent être définies lorsque le serveur Web est configuré pour servir l’application Commerce à partir du `/pub` répertoire pour [une sécurité](../../installation/tutorials/docroot.md) améliorée.
+Options de mappage de répertoire facultatives devant être définies lorsque le serveur web est configuré pour servir l’application Commerce à partir du répertoire `/pub` pour une [sécurité renforcée](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -203,9 +203,9 @@ Liste des domaines téléchargeables disponibles dans ce nœud. D’autres domai
 ]
 ```
 
-En savoir plus sur les [domaines téléchargeables](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+En savoir plus sur les [domaines téléchargeables](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
-## install
+## installer
 
 Date d’installation de l’application Commerce.
 
@@ -217,23 +217,23 @@ Date d’installation de l’application Commerce.
 
 ## serrure
 
-Les paramètres du fournisseur de verrouillage sont configurés à l’aide du `lock` nœud.
+Les paramètres du fournisseur de verrous sont configurés à l’aide du nœud `lock` .
 
-En savoir plus sur [la configuration du](../../installation/tutorials/lock-provider.md) fournisseur de verrouillage.
+En savoir plus sur la [configuration du fournisseur de verrouillage](../../installation/tutorials/lock-provider.md).
 
-## MAGE_MODE
+## MODE_IMAGE
 
-Le mode de déploiement peut être configuré dans ce noeud.
+Le mode de déploiement peut être configuré dans ce nœud.
 
 ```conf
 'MAGE_MODE' => 'developer'
 ```
 
-En savoir plus sur les [modes d&#39;application](../cli/set-mode.md).
+En savoir plus sur les [modes d’application](../cli/set-mode.md).
 
-## queue
+## file d&#39;attente
 
-Les configurations de la file d’attente des messages sont disponibles dans ce noeud.
+Les configurations de file d’attente de messages sont disponibles dans ce nœud.
 
 ```conf
 'queue' => [
@@ -244,11 +244,11 @@ Les configurations de la file d’attente des messages sont disponibles dans ce 
 ]
 ```
 
-En savoir plus sur [Message Queue][message-queue].
+En savoir plus sur [File d’attente des messages][message-queue].
 
-## resource
+## ressource
 
-Les paramètres de configuration des ressources sont disponibles dans ce noeud.
+Les paramètres de configuration des ressources sont disponibles dans ce nœud.
 
 ```conf
 'resource' => [
@@ -258,9 +258,9 @@ Les paramètres de configuration des ressources sont disponibles dans ce noeud.
 ]
 ```
 
-## session
+## séance
 
-Les configurations de session sont stockées dans le noeud `session` .
+Les configurations de session sont stockées dans le nœud `session`.
 
 ```conf
 'session' => [
@@ -282,7 +282,7 @@ En savoir plus sur [x-frame-options](../security/xframe-options.md).
 
 ## système
 
-En utilisant ce noeud, Commerce verrouille les valeurs de configuration dans le fichier `env.php`, puis désactive le champ dans l’administrateur.
+En utilisant ce nœud, Commerce verrouille les valeurs de configuration dans le fichier `env.php`, puis désactive le champ dans l’administration.
 
 ```conf
 'system' => [
@@ -300,3 +300,74 @@ En savoir plus dans [env-php-config-set](../cli/set-configuration-values.md).
 <!-- Link definitions -->
 
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
+
+
+## Ajouter des variables à la configuration du fichier
+
+Vous pouvez définir ou remplacer chaque option de configuration (variable avec valeur) par des variables d’environnement au niveau du système d’exploitation (SE).
+
+La configuration `env.php` est stockée dans un tableau avec des niveaux imbriqués. Pour convertir un chemin de tableau imbriqué en chaîne pour les variables d’environnement du système d’exploitation, concaténez chaque clé du chemin avec deux caractères de soulignement `__`, mis en majuscules et précédés du préfixe `MAGENTO_DC_`.
+
+Par exemple, convertissons le gestionnaire d’enregistrement de session de `env.php` configuration en une variable d’environnement de système d’exploitation.
+
+```conf
+'session' => [
+  'save' => 'files'
+],
+```
+
+Concaténées avec des clés `__` et mises en majuscules deviendront `SESSION__SAVE`.
+
+Ensuite, nous lui ajoutons le préfixe `MAGENTO_DC_` pour obtenir le `MAGENTO_DC_SESSION__SAVE` de nom de la variable d’environnement du système d’exploitation obtenu.
+
+```shell
+export MAGENTO_DC_SESSION__SAVE=files
+```
+
+Autre exemple : convertissons un chemin d’accès d’option de configuration de `env.php` scalaire.
+
+```conf
+'x-frame-options' => 'SAMEORIGIN'
+```
+
+>[!INFO]
+>
+>Bien que le nom de la variable doive être mis en majuscule, la valeur respecte la casse et doit être conservée tel que documenté.
+
+Nous le mettons simplement en majuscules et le précédons de `MAGENTO_DC_` pour recevoir le `MAGENTO_DC_X-FRAME-OPTIONS` final du nom de variable d&#39;environnement du système d&#39;exploitation.
+
+```shell
+export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
+```
+
+>[!INFO]
+>
+>Notez que le contenu `env.php` aura la priorité sur les variables d’environnement du système d’exploitation.
+
+## Remplacer la configuration du fichier par des variables
+
+Pour remplacer les options de configuration de `env.php` existantes par une variable d’environnement de système d’exploitation, l’élément de tableau de la configuration doit être codé JSON et défini comme une valeur de la variable de système d’exploitation `MAGENTO_DC__OVERRIDE`.
+
+Si vous devez remplacer plusieurs options de configuration, assemblez-les toutes dans un seul tableau avant l’encodage JSON.
+
+Par exemple, remplaçons les configurations `env.php` suivantes :
+
+```conf
+'session' => [
+  'save' => 'files'
+],
+'x-frame-options' => 'SAMEORIGIN'
+```
+
+Le texte codé JSON du tableau ci-dessus serait .
+`{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}`.
+
+Définissez-la désormais comme valeur de la variable du système d’exploitation `MAGENTO_DC__OVERRIDE`.
+
+```shell
+export MAGENTO_DC__OVERRIDE='{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}'
+```
+
+>[!INFO]
+>
+>Assurez-vous que le tableau codé JSON est correctement cité et/ou placé dans une séquence d’échappement si nécessaire, pour empêcher le système d’exploitation de corrompre la chaîne codée.
