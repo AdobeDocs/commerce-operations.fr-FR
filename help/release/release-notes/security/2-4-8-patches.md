@@ -1,9 +1,9 @@
 ---
 title: Notes De Mise À Jour Du Correctif De Sécurité D’Adobe Commerce 2.4.8
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.7.
-source-git-commit: 9ec53ae90e400a6dad98c77c6ae55c70c19e0a40
+source-git-commit: cbf41054a2a8ffefa38049e1bf6e4a2f09e06ce1
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -23,4 +23,24 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 ### Faits saillants
 
-{{$include /help/_includes/release-notes/highlights/security-2025-06.md}}
+Les points forts de cette version sont les suivants :
+
+* **Amélioration des performances de l’API** : résout la dégradation des performances des points d’entrée d’API web asynchrones en bloc introduits après le correctif de sécurité précédent<!-- AC-14078 -->.
+
+* **Correctif des blocs d’accès CMS**—Résout un problème en raison duquel les utilisateurs administrateurs disposant d’autorisations limitées (comme un accès au marchandisage uniquement) ne pouvaient pas afficher la page de liste [!UICONTROL CMS Blocks].
+
+  Auparavant, ces utilisateurs rencontraient une erreur en raison de paramètres de configuration manquants après l’installation des correctifs de sécurité précédents.<!-- AC-14087 -->
+
+* **Compatibilité des limites de cookies** : résout une modification non rétrocompatible impliquant la constante `MAX_NUM_COOKIES` dans le framework. Cette mise à jour restaure le comportement attendu et assure la compatibilité des extensions ou des personnalisations qui interagissent avec les limites de cookies.<!-- AC-14475 -->
+
+* **Correctif pour CVE-2024-34104** : résout une vulnérabilité d’autorisation incorrecte.<!-- AC-13917 -->
+
+* **Correctif pour CVE-2025-47110** : résout une vulnérabilité des modèles d’e-mail.<!-- AC-14695 -->
+
+* **Correctif pour VULN-31547** : résout une vulnérabilité de lien canonique de catégorie.<!-- AC-14713 -->
+
+>[!BEGINSHADEBOX]
+
+Le correctif pour CVE-2025-47110 est également disponible sous la forme d’un correctif isolé. Pour plus d’informations, consultez l’article [Base de connaissances](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50).
+
+>[!ENDSHADEBOX]
