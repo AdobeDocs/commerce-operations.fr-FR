@@ -267,7 +267,7 @@ Le système affiche désormais correctement le champ &#39;created_at&#39; à par
 * __i18n:collect-phrases rompt l’intégrité des traductions__
 La commande `bin/magento i18n:collect-phrases -o` collecte et ajoute désormais correctement les nouvelles expressions des fichiers JavaScript et .phtml, en veillant à ce que les traductions soient reflétées avec précision dans le fichier de traduction. Auparavant, le système n’incluait pas les expressions de traduction multiligne des fichiers JavaScript et les expressions des fichiers .phtml dans le fichier de traduction, ce qui entraînait des traductions incomplètes ou incorrectes.
   _AC-9843 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/0c53bbf7)_
-* __L’apostrophe dans le nom de la vue du magasin est remplacée par &amp;#039;__
+* __L’apostrophe dans le nom de la vue du magasin est remplacée par &#039;__
 Les filtres de vue de magasin de la grille affichent désormais correctement les apostrophes
   _ACP2E-2787 - [Problème GitHub](https://github.com/magento/magento2/issues/38395) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/39d54c2d)_
 * __Le chargement de Favicon ne parvient pas à valider les fichiers .ico__
@@ -1449,7 +1449,7 @@ Correction d’un problème en raison duquel la tentative de suppression des pro
 * __Impossible d’ajouter des produits en raison du respect de la casse du SKU dans la mutation__
 Correction d’un problème en raison duquel la mutation addProductsToCart renvoyait une erreur « PRODUCT_NOT_FOUND » lors de l’utilisation de SKU avec une casse différente. La mutation gère désormais les SKU sans respect de la casse, ce qui garantit la cohérence avec les requêtes du service de catalogue et le comportement du PDP.
   _LYNX-469_
-* __Attribut de produit > forme abrégée de marque &amp;trade; est renvoyé sous la forme &amp;trade;__
+* __Attribut de produit > forme abrégée de marque &trade; est renvoyé sous la forme &trade;__
 Résolution d’un problème de codage des caractères avec le nom du produit pour l’API GraphQL
   _LYNX-603_
 * __problème de mutation updateCustomerEmail__
