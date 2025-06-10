@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
+source-git-commit: 102fee9672c75c94c7d18d47562338f8eff97f11
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Après avoir installé ce correctif de sécurité, les commerçants B2B d’Adobe Commerce doivent également effectuer la mise à jour vers la dernière version du correctif de sécurité B2B compatible. Voir les notes de mise à jour [B2B](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/release-notes).
+>Après avoir installé ce correctif de sécurité, les commerçants B2B d’Adobe Commerce doivent également effectuer la mise à jour vers la dernière version du correctif de sécurité B2B compatible. Voir les notes de mise à jour [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Adobe Commerce uniquement {#ee-only}
 
@@ -52,6 +52,12 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Les versions d’Adobe Commerce peuvent contenir des modifications non rétrocompatibles (BIC). Pour vérifier les modifications non rétrocompatibles, voir [Référence BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Les principaux problèmes de rétrocompatibilité sont décrits dans [points forts du BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/). Toutes les versions n’introduisent pas de BIC majeurs.
+
+## Clause de non-responsabilité d’Alpha {#alpha}
+
+>[!IMPORTANT]
+>
+>Les versions d’[Alpha](/help/release/versioning-policy.md#alpha-patch-release) peuvent être incomplètes et risquent de contenir des défauts. Ils sont fournis « EN L&#39;ÉTAT » sans garantie d&#39;aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge d’une autre manière (via les services d’assistance Adobe ou autre) les versions d’Alpha. Les clients ne doivent pas s’appuyer sur le bon fonctionnement ou les performances des versions d’Alpha ou de toute documentation ou documentation d’accompagnement. L’utilisation des versions d’Alpha s’effectue entièrement aux risques et périls du client.
 
 ## Clause de non-responsabilité Beta {#beta}
 
