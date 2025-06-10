@@ -23,7 +23,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Notes de mise à jour publiées pour les correctifs de sécurité de juin 2025 et le correctif 2.4.9-alpha1 :<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">2.4.9-alpha1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">2.4.8-p1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p6</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p11</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p13</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p14</a></p>
+      <td><p>Notes de mise à jour publiées pour les correctifs de sécurité de juin 2025 et le correctif 2.4.9-alpha1 :<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">2.4.9-alpha1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">2.4.8-p1</a><br />- <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p6</a><br />- <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p11</a><br />- <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p13</a><br />- <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p14</a></p>
 </td>
       <td>
         Mise à jour majeure
@@ -31,7 +31,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7cd58c1fe597258ee1f4514acfb08e71bee1c848">validation</a></td>
     </tr>
     <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">configuration requise</a> pour la version de correctif de juin 2025.</p>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements">configuration requise</a> pour la version de correctif de juin 2025.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -53,7 +53,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Publié <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">notes de mise à jour</a> pour la version 1.1.65 de l’outil de correctifs de qualité (QPT).</p>
+      <td><p>Publié <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=fr">notes de mise à jour</a> pour la version 1.1.65 de l’outil de correctifs de qualité (QPT).</p>
 </td>
       <td>
         Mise à jour majeure, qpt
@@ -75,7 +75,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled"> description détaillée du problème résolu par le correctif ACP2E-3841 dans la version QPT 1.1.64</a></p>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled"> description détaillée du problème résolu par le correctif ACP2E-3841 dans la version QPT 1.1.64</a></p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -97,7 +97,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de RabbitMQ 3.13 dans le tableau <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">configuration requise</a> pour les correctifs de sécurité d’avril 2025.</p>
+      <td><p>Ajout de RabbitMQ 3.13 dans le tableau <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements">configuration requise</a> pour les correctifs de sécurité d’avril 2025.</p>
 </td>
       <td>
         Technique
@@ -105,7 +105,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cdf687ce0f1201e57b66d2b9232ed8820a116d6f">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout de correctifs 2.4.9-alpha au <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule">calendrier de publication</a>.</p>
+      <td><p>Ajout de correctifs 2.4.9-alpha au <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/schedule">calendrier de publication</a>.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -127,7 +127,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Publié <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">notes de mise à jour</a> pour la version 1.1.64 de l’outil de correctifs de qualité (QPT).</p>
+      <td><p>Publié <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=fr">notes de mise à jour</a> pour la version 1.1.64 de l’outil de correctifs de qualité (QPT).</p>
 </td>
       <td>
         Mise à jour majeure, qpt
@@ -149,7 +149,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64732-third-party-controllers-are-not-cached-correctly"> description détaillée du problème résolu par le correctif ACSD-64732 dans la version QPT 1.1.62</a></p>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64732-third-party-controllers-are-not-cached-correctly"> description détaillée du problème résolu par le correctif ACSD-64732 dans la version QPT 1.1.62</a></p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -157,7 +157,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7d2d6c5fb9b72dd7fcf6aed6c87568903219b5d6">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-65164-the-error-message-occurs-when-reordering"> description détaillée du problème résolu par le correctif ACSD-65164 dans la version QPT 1.1.62</a></p>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-65164-the-error-message-occurs-when-reordering"> description détaillée du problème résolu par le correctif ACSD-65164 dans la version QPT 1.1.62</a></p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -179,7 +179,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles"> description détaillée du problème résolu par le correctif ACSD-64627 dans la version QPT 1.1.63</a></p>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles"> description détaillée du problème résolu par le correctif ACSD-64627 dans la version QPT 1.1.63</a></p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -201,7 +201,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany"> description détaillée du problème résolu par le correctif ACSD-65195 dans la version QPT 1.1.63</a>.</p>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany"> description détaillée du problème résolu par le correctif ACSD-65195 dans la version QPT 1.1.63</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -209,7 +209,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a6a8ad44c339b95b4afcedbd33b84c1d8b3411cc">validation</a></td>
     </tr>
     <tr>
-      <td><p>Le correctif <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false">ACSD-64532</a> corrige le problème en raison duquel la variable ENV définie sur false est traitée comme une chaîne false au lieu d’une valeur BOOLEAN FALSE.</p>
+      <td><p>Le correctif <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false">ACSD-64532</a> corrige le problème en raison duquel la variable ENV définie sur false est traitée comme une chaîne false au lieu d’une valeur BOOLEAN FALSE.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -231,7 +231,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview"> description des problèmes résolus par les correctifs disponibles dans la version QPT 1.1.63</a></p>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview"> description des problèmes résolus par les correctifs disponibles dans la version QPT 1.1.63</a></p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -239,7 +239,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/73e94802a4fbf4dfcbfb50be1a8a23d831368168">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63406-expired-persistent-quotes-not-cleared"> description détaillée du problème résolu par le correctif ACSD-63406 dans la version QPT 1.1.62</a></p>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63406-expired-persistent-quotes-not-cleared"> description détaillée du problème résolu par le correctif ACSD-63406 dans la version QPT 1.1.62</a></p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -247,7 +247,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9661351d137ebd704c884f2dc1459eee26a3fdc4">validation</a></td>
     </tr>
     <tr>
-      <td><p>Mise à jour de la section <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64592-non-default-store-gift-card-claim-links-redirect-to-default-website">produits et versions concernés dans le correctif ACSD-64592</a>.</p>
+      <td><p>Mise à jour de la section <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64592-non-default-store-gift-card-claim-links-redirect-to-default-website">produits et versions concernés dans le correctif ACSD-64592</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -269,7 +269,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de RabbitMQ 4.1 à la liste des <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">configurations système requises</a> prises en charge pour les correctifs de juin 2025 (sauf la version 2.4.4-p13).<br />- 2.4.8<br />- 2.4.7-p5<br />- 2.4.6-p10<br />- 2.4.5-p12</p>
+      <td><p>Ajout de RabbitMQ 4.1 à la liste des <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements">configurations système requises</a> prises en charge pour les correctifs de juin 2025 (sauf la version 2.4.4-p13).<br />- 2.4.8<br />- 2.4.7-p5<br />- 2.4.6-p10<br />- 2.4.5-p12</p>
 </td>
       <td>
         Technique
@@ -291,7 +291,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64523-rest-endpoint-fails-to-validate-mandatory-fields"> description détaillée du problème résolu par le correctif ACSD-64523 dans la version QPT 1.1.62</a></p>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64523-rest-endpoint-fails-to-validate-mandatory-fields"> description détaillée du problème résolu par le correctif ACSD-64523 dans la version QPT 1.1.62</a></p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -299,7 +299,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/55dd9097d014d37d519ff0ce00fee03c82fbc0ac">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63520-image-upload-configuration-does-not-adhere-to-maximum-upload-size-limits"> description détaillée du problème résolu par le correctif ACSD-64684 dans la version QPT 1.1.62</a></p>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63520-image-upload-configuration-does-not-adhere-to-maximum-upload-size-limits"> description détaillée du problème résolu par le correctif ACSD-64684 dans la version QPT 1.1.62</a></p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -321,7 +321,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview"> description des problèmes résolus par les correctifs disponibles dans la version QPT 1.1.62</a></p>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview"> description des problèmes résolus par les correctifs disponibles dans la version QPT 1.1.62</a></p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -365,7 +365,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Publié <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">notes de mise à jour</a> pour la version 1.1.63 de l’outil de correctifs de qualité (QPT).</p>
+      <td><p>Publié <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=fr">notes de mise à jour</a> pour la version 1.1.63 de l’outil de correctifs de qualité (QPT).</p>
 </td>
       <td>
         Mise à jour majeure, qpt
@@ -395,7 +395,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’un problème connu concernant Braintree aux notes de mise à jour de la version <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5</a>.</p>
+      <td><p>Ajout d’un problème connu concernant Braintree aux notes de mise à jour de la version <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5</a>.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -417,7 +417,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la section <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54966-fix-for-limited-use-coupon-code-after-failed-orders">produits et versions affectés dans le correctif ACSD-54966</a></p>
+      <td><p>Mise à jour de la section <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54966-fix-for-limited-use-coupon-code-after-failed-orders">produits et versions affectés dans le correctif ACSD-54966</a></p>
 </td>
       <td>
         Qpt
@@ -425,7 +425,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aa47a83f4ec38aa6ff96008cbab2733602465435">validation</a></td>
     </tr>
     <tr>
-      <td><p>Mise à jour de la section <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error">produits et versions affectés dans le correctif ACSD-62979</a></p>
+      <td><p>Mise à jour de la section <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error">produits et versions affectés dans le correctif ACSD-62979</a></p>
 </td>
       <td>
         Qpt
@@ -447,7 +447,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la version 2.4.8 à la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy">politique relative au cycle de vie</a>.</p>
+      <td><p>Ajout de la version 2.4.8 à la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/lifecycle-policy">politique relative au cycle de vie</a>.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -469,7 +469,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error">description détaillée du problème résolu par le correctif ACSD-64431 dans la version QPT 1.1.61</a>.</p>
+      <td><p>Ajout <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error">description détaillée du problème résolu par le correctif ACSD-64431 dans la version QPT 1.1.61</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
