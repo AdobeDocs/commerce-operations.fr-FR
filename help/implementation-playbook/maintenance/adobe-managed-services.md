@@ -1,11 +1,11 @@
 ---
 title: Adobe Managed Services
-description: Découvrez comment Adobe Managed Services peut vous aider à prendre en charge et à gérer votre mise en oeuvre Adobe Commerce.
+description: Découvrez comment Adobe Managed Services peut vous aider à prendre en charge et à gérer votre implémentation Adobe Commerce.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: c93dd37d6e196a09c9e7f4b376e421ca5886c7e0
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -13,35 +13,52 @@ ht-degree: 0%
 
 # Adobe Managed Services
 
-Adobe Commerce est une plate-forme permettant de proposer des fonctionnalités de commerce électronique qui incluent des fonctionnalités prêtes à l’emploi fiables, des options de personnalisation complètes et des intégrations tierces.
+Adobe Commerce est une plateforme permettant de fournir des fonctionnalités d’e-commerce qui inclut des fonctionnalités prêtes à l’emploi robustes, des options de personnalisation étendues et des intégrations tierces.
 
-Adobe Managed Services fournit des applications et une infrastructure hébergées et gérées pour Adobe Commerce sur les plans d’infrastructure cloud Pro.
+Adobe Managed Services fournit une application hébergée et gérée, ainsi qu’une infrastructure pour les plans Pro d’Adobe Commerce sur les infrastructures cloud.
 
 ## Avantages
 
 ![Infographie montrant les avantages d’Adobe Managed Services](../../assets/playbooks/managed-services-benefits.png)
 
-### Comparaison des options de mise en oeuvre
+### Comparaison des options de mise en œuvre
 
 Adobe Managed Services offre des avantages clés par rapport aux implémentations cloud sur site et non gérées, notamment :
 
-- **Cibles de niveau de service améliorées (SLT)** : temps de réponse plus rapides que la prise en charge standard d’Adobe Commerce.
-- **Contrats de niveau de service améliorés (SLA)** : niveau d’application de 99,9 % auquel les clients standard d’Adobe Commerce sur l’infrastructure cloud accèdent par rapport au niveau d’infrastructure de 99,99 %.
-- **Expertise dans le cloud désigné** : Managed Services fournit aux clients un ingénieur du service client désigné qui fait office d’expert en infrastructure dans le cloud et l’application. L’ingénieur du service client travaille avec les clients et leurs partenaires, en leur fournissant les bonnes pratiques et des conseils pour accélérer le délai de mise sur le marché, notamment :
-   - Guide et support via le processus d’intégration
-   - Gestion de la configuration et de la configuration de la plateforme
-   - Conseils sur les principes architecturaux pour les intégrations et les personnalisations
-   - Gestion des incidents et continuité de l’activité
-   - Fournir une assistance pour les événements par le biais de la planification, de l’exécution et de la surveillance
-   - Assistance et expertise dans le cloud (optimisation proactive, reporting et bonnes pratiques)
+- **Cibles de niveau de service (SLT) améliorées** avec des temps de réponse plus rapides que la prise en charge standard d’Adobe Commerce.
+- **Contrats de niveau de service (SLA) améliorés** niveau d’application de 99,9 % permettant aux clients Adobe Commerce standard sur les infrastructures cloud d’atteindre un niveau d’infrastructure de 99,99 %.
+- **Expertise cloud désignée** : Managed Services met à la disposition des clients une ingénieure ou un ingénieur du succès client désigné qui fait office d’experte ou d’expert en applications et en infrastructures cloud. Le CSE travaille avec les clients et leurs partenaires, en leur fournissant les bonnes pratiques et des conseils pour accélérer le délai de mise sur le marché, notamment :
+   - Guide et assistance tout au long du processus d’intégration
+   - Gestion du provisionnement et de la configuration de la plateforme
+   - Conseils sur les principes architecturaux des intégrations et des personnalisations
+   - Favoriser la gestion des incidents et la continuité d&#39;activité
+   - Prise en charge des événements par la planification, l’exécution et la surveillance
+   - Assistance et expertise Cloud (optimisation proactive, création de rapports et bonnes pratiques)
 
-Consultez l’infographie suivante pour une comparaison plus détaillée des principaux avantages de Managed Services :
+Consultez le tableau suivant pour une comparaison plus détaillée des principaux avantages de Managed Services :
 
-![Infographie montrant une comparaison entre Adobe Managed Services et d’autres options de mise en oeuvre Adobe Commerce](../../assets/playbooks/managed-services-compare.png)
+| Fonctionnalité | Adobe Commerce On-Premise | Adobe Commerce on Cloud | Adobe Commerce sous Managed Services |
+|---------|---------------------------|-------------------------|-----------------------------------|
+| Logiciel d’entreprise Adobe | ✓ | ✓ | ✓ |
+| Infrastructure cloud sécurisée et dédiée | | ✓ | ✓ |
+| Objectif amélioré de niveau de service pour les incidents | | P1 : 1 heure | P1 : 15 minutes |
+| Surveillance et réponse de la capacité de pointe | | | ✓ |
+| Sécurité des infrastructures | | | ✓ |
+| Niveau d’infrastructure 99,99 % SLA | | | ✓ |
+| Niveau d’application : 99,9 % SLA | | | |
+| Ressource d’expert en infrastructure désigné (ingénieur du succès client) | | | |
+| Gestion des événements planifiés | | | |
+| Surveillance de site personnalisée et runbook personnalisé | | | |
+| Assistance au déploiement des mises à niveau et des correctifs | | | |
+| Coordination du processus de mise en production | | | |
+| Gestion des remontées d’informations dédiée | | | |
+| Surveillance et assistance des applications | | | |
+
+Prévenez-moi si vous souhaitez exporter ce fichier vers Excel ou un autre format.
 
 ## Rôles et responsabilités
 
-Adobe fournit un ensemble de services relatifs à la mise en service, au développement, à l’évaluation et à la production d’Adobe Commerce sur les systèmes Managed Services. Pour que le développement et le déploiement de la solution se déroulent le plus efficacement possible, il est important que le client et le partenaire comprennent et remplissent leurs rôles, comme décrit ci-dessous :
+Adobe fournit un ensemble de services concernant la configuration, le développement, l’évaluation et la production d’Adobe Commerce sur les systèmes Managed Services. Pour que le développement et le déploiement de la solution se déroulent de la manière la plus efficace possible, il est important que le client et le partenaire comprennent et remplissent leurs rôles, comme décrit ci-dessous :
 
 <table>
     <thead>
@@ -49,12 +66,12 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
             <th></th>
             <th>Client</th>
             <th>Partenaire</th>
-            <th>Ingénieur du service client</th>
+            <th>Ingénieur du succès client</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td colspan="4" style="background:lightgray;"><strong>Mise en service</strong></td>
+            <td colspan="4" style="background:lightgray;"><strong>Configuration</strong></td>
         </tr>
         <tr>
             <td>Sélection de la région du cloud</td>
@@ -63,7 +80,7 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
             <td>Conseiller</td>
         </tr>
         <tr>
-            <td>Attribution des instances</td>
+            <td>Approvisionnement des instances</td>
             <td></td>
             <td></td>
             <td>Propriétaire</td>
@@ -81,7 +98,7 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
             <td>Propriétaire</td>
         </tr>
         <tr>
-            <td>Accès au code Source Adobe Commerce</td>
+            <td>Accès au code Adobe Commerce Source</td>
             <td></td>
             <td></td>
             <td>Propriétaire</td>
@@ -114,7 +131,7 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
             <td>Conseiller</td>
         </tr>
         <tr>
-            <td>Test d’application</td>
+            <td>Test de l’application</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
             <td>Conseiller</td>
@@ -123,25 +140,25 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
             <td colspan="4" style="background:lightgray;"><strong>Évaluation et transition</strong></td>
         </tr>
         <tr>
-            <td>Déploiement du code vers le développement, l’intégration et l’évaluation</td>
+            <td>Déploiement du code pour le développement, l’intégration et l’évaluation</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
             <td>Conseiller</td>
         </tr>
         <tr>
-            <td>Déploiement de contenu</td>
+            <td>Déploiement du contenu</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
             <td>Conseiller</td>
         </tr>
         <tr>
-            <td>Développement du test d’acceptation utilisateur</td>
+            <td>Développement de tests d’acceptation par les utilisateurs</td>
             <td>Propriétaire</td>
             <td>Contributeur</td>
             <td>Conseiller</td>
         </tr>
         <tr>
-            <td>Tests d’acceptation utilisateur</td>
+            <td>Test d’acceptation par l’utilisateur</td>
             <td>Propriétaire</td>
             <td>Contributeur</td>
             <td>Conseiller</td>
@@ -159,31 +176,31 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
             <td>Contributeur</td>
         </tr>
         <tr>
-            <td>Développement des tests de performance et de charge</td>
+            <td>Développement de tests de performance et de charge</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
             <td>Conseiller</td>
         </tr>
         <tr>
-            <td>Test de performance et de chargement</td>
+            <td>Tests de performance et de charge</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
             <td>Conseiller</td>
         </tr>
         <tr>
-            <td>Développement de la personnalisation et contrôle qualité</td>
+            <td>Développement de la personnalisation et assurance qualité</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
             <td>Conseiller</td>
         </tr>
         <tr>
-            <td>Fin du runbook</td>
+            <td>Runbook completion</td>
             <td>Propriétaire</td>
             <td>Contributeur</td>
             <td>Contributeur</td>
         </tr>
         <tr>
-            <td>Examen du runbook</td>
+            <td>Révision Runbook</td>
             <td></td>
             <td></td>
             <td>Propriétaire</td>
@@ -192,13 +209,13 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
             <td colspan="4" style="background:lightgray;"><strong>Launch</strong></td>
         </tr>
         <tr>
-            <td>Liste de contrôle d’activation</td>
+            <td>Liste de contrôle de mise en production</td>
             <td>Contributeur</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
         </tr>
         <tr>
-            <td>Salle de conférence pour les événements de GoLive</td>
+            <td>Salle de conférence d’événement de mise en production</td>
             <td>Contributeur</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
@@ -225,37 +242,37 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
             <td>Propriétaire</td>
         </tr>
         <tr>
-            <td>Réponse de l’événement de production</td>
+            <td>Réponse à un événement de production</td>
             <td>Contributeur</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
         </tr>
         <tr>
-            <td>Maintenance au niveau de l’infrastructure et du système d’exploitation</td>
+            <td>Maintenance de l’infrastructure et des systèmes d’exploitation</td>
             <td></td>
             <td></td>
             <td>Propriétaire</td>
         </tr>
         <tr>
-            <td>Correctifs de maintenance et de sécurité du code personnalisé</td>
+            <td>Correctifs de maintenance et de sécurité de code personnalisé</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
             <td>Conseiller</td>
         </tr>
         <tr>
-            <td>Accéder aux mises à jour et mises à niveau du produit Adobe Commerce</td>
+            <td>Permettre l’accès aux mises à jour et mises à niveau des produits Adobe Commerce</td>
             <td>Contributeur</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
         </tr>
         <tr>
-            <td>Application des mises à jour et mises à niveau du produit Adobe Commerce</td>
+            <td>Application de mises à jour et de mises à niveau de produits Adobe Commerce</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
             <td>Conseiller</td>
         </tr>
         <tr>
-            <td>Modifier le comité d’approbation pour approuver les déploiements de production</td>
+            <td>Modifier le tableau d’approbation pour approuver les déploiements en production</td>
             <td>Contributeur</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
@@ -267,19 +284,19 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
             <td>Conseiller</td>
         </tr>
         <tr>
-            <td>Paramétrage de l'infrastructure de production</td>
+            <td>Réglage de l’infrastructure de production</td>
             <td>Contributeur</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
         </tr>
         <tr>
-            <td>Mise à l’échelle de l’architecture de production</td>
+            <td>Évolution de l’architecture de production</td>
             <td></td>
             <td></td>
             <td>Propriétaire</td>
         </tr>
         <tr>
-            <td>Sauvegardes et récupération de production</td>
+            <td>Sauvegardes et récupération en production</td>
             <td></td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
@@ -288,7 +305,7 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
             <td colspan="4" style="background:lightgray;"><strong>Sécurité et conformité</strong></td>
         </tr>
         <tr>
-            <td>Audit SOC-2 du service</td>
+            <td>SOC-2 Audit du Service</td>
             <td></td>
             <td></td>
             <td>Propriétaire</td>
@@ -312,19 +329,19 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
             <td>Conseiller</td>
         </tr>
         <tr>
-            <td>Audits de sécurité des personnalisations et des extensions</td>
+            <td>Contrôles de sécurité des personnalisations et des extensions</td>
             <td>Propriétaire</td>
             <td>Contributeur</td>
             <td></td>
         </tr>
         <tr>
-            <td>Test de pénétration des instances du client des applications</td>
+            <td>Test de pénétration des instances des applications du client</td>
             <td>Propriétaire</td>
             <td>Contributeur</td>
             <td></td>
         </tr>
         <tr>
-            <td>Règles de pare-feu d’applications web (WAF)</td>
+            <td>Règles de pare-feu d’application web (WAF)</td>
             <td>Contributeur</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
@@ -336,31 +353,31 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
             <td>Propriétaire</td>
         </tr>
         <tr>
-            <td>Surveillance des événements d’application et de base de données</td>
+            <td>Surveillance des événements des applications et des bases de données</td>
             <td>Contributeur</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
         </tr>
         <tr>
-            <td>Surveillance des événements du pare-feu d’applications web</td>
+            <td>Surveillance des événements du pare-feu d'application web</td>
             <td>Contributeur</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
         </tr>
         <tr>
-            <td>Gestion des utilisateurs et intégration SSO</td>
+            <td>Gestion des utilisateurs et intégration de la fonction SSO</td>
             <td>Propriétaire</td>
             <td>Contributeur</td>
             <td>Contributeur</td>
         </tr>
         <tr>
-            <td>Réponse d’événement de sécurité</td>
+            <td>Réponse à un événement de sécurité</td>
             <td>Contributeur</td>
             <td>Contributeur</td>
             <td>Propriétaire</td>
         </tr>
         <tr>
-            <td>Configuration, sécurisation et maintenance de la connexion aux réseaux et ressources de l’entreprise </td>
+            <td>Configuration, sécurisation et maintien de la connexion aux réseaux et ressources d’entreprise </td>
             <td>Propriétaire</td>
             <td>Conseiller</td>
             <td>Conseiller</td>
@@ -370,21 +387,21 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
 
 ## Sécurité
 
-La pile de sécurité Adobe pour Managed Services intègre la sécurité à tous les niveaux à l’aide de l’automatisation et de la cohérence afin de réduire les erreurs humaines. Les équipes de développement et d’exploitation héritent automatiquement des contrôles de sécurité de différents niveaux de la pile.
+La pile de sécurité Adobe pour Managed Services renforce la sécurité dans à chaque niveau en utilisant l’automatisation et la cohérence pour réduire les erreurs humaines. Les équipes de développement et d’exploitation héritent automatiquement des contrôles de sécurité de différents niveaux de la pile.
 
-Les partenaires de plateforme, tels que Amazon Web Services et Microsoft Azure, assurent une couverture de sécurité maximale lors de l’application des personnalisations de plateforme, tandis que l’équipe Managed Services d’Adobe fournit des services de sécurité principaux, tels que la conformité, la journalisation, l’authentification, l’analyse et la surveillance, ainsi que la sécurité du serveur et la configuration sécurisée des applications. Pour plus d’informations, voir [Adobe Commerce Security](https://business.adobe.com/products/magento/secure-ecommerce.html) .
+Les partenaires de Platform, tels que Amazon Web Services et Microsoft Azure, assurent une couverture de sécurité maximale lors de l’application des personnalisations de la plateforme. L’équipe d’Adobe Managed Services fournit des services de sécurité de base, tels que la conformité, la journalisation, l’authentification, l’analyse et la surveillance, ainsi que la sécurité du serveur et la configuration sécurisée des applications. Voir [Sécurité Adobe Commerce](https://business.adobe.com/products/magento/secure-ecommerce.html) pour plus d’informations.
 
-Le diagramme suivant illustre la pile de technologie de sécurité Managed Services Adobe :
+Le diagramme suivant montre la pile technologique de sécurité d’Adobe Managed Services :
 
-![ Diagramme affichant la pile de sécurité Managed Services Adobe ](../../assets/playbooks/managed-services-security-stack.svg)
+![Diagramme présentant la pile de sécurité d’Adobe Managed Services](../../assets/playbooks/managed-services-security-stack.svg)
 
-## Assistance à la mise à niveau
+## Assistance de mise à niveau
 
-L’équipe Managed Services joue un rôle actif pour vous aider à planifier et à gérer la mise à niveau. L’ingénieur du service client travaille avec votre équipe de projet de mise à niveau, notamment les chefs de projet et les développeurs (experts en matière interne, partenaires certifiés Adobe ou professionnels d’Adobe Consulting) pour aider votre équipe à garantir une planification adéquate et une conformité aux bonnes pratiques lors de la mise à niveau.
+L’équipe de Managed Services joue un rôle actif dans la planification et l’assistance du processus de mise à niveau. Votre ingénieur du succès client (CSE) travaille avec votre équipe de projet de mise à niveau, y compris les chefs de projet et les développeurs (experts internes en la matière, partenaires certifiés Adobe ou professionnels d’Adobe Consulting) pour aider votre équipe à assurer une planification adéquate et le respect des bonnes pratiques pendant la mise à niveau.
 
-Les ingénieurs du service client Managed Services ont collaboré avec les clients Adobe Commerce pour exécuter les mises à niveau dans des environnements volumineux. Votre ingénieur du service client peut vous aider à tirer parti des connaissances d’experts pour optimiser le succès de la mise à niveau tout en réduisant les temps d’arrêt et en réduisant les risques globaux. En outre, les ingénieurs du service client de Managed Services fonctionnent avec votre environnement d’évaluation dédié pour la mise à niveau, de sorte que les processus de production existants ne soient pas affectés lors de la validation de la mise à niveau.
+Les ingénieurs de service client Managed Services ont collaboré avec des clients Adobe Commerce pour exécuter des mises à niveau dans des environnements volumineux. Votre CSE peut vous aider à tirer parti des connaissances d’experts pour optimiser la réussite de la mise à niveau tout en réduisant les temps d’arrêt et les risques globaux. En outre, les ingénieurs de service client Managed Services travaillent avec votre environnement d’évaluation dédié pour la mise à niveau afin que les processus de production existants ne soient pas affectés lors de la validation de la mise à niveau.
 
-Adobe fournit un ensemble de services relatifs à la mise en service, au développement, à l’évaluation et à la production de votre système Managed Services. Le tableau suivant présente un aperçu des rôles que chaque participant joue dans le processus de mise à niveau :
+Adobe fournit un ensemble de services concernant la configuration, le développement, l’évaluation et la production de votre système Managed Services. Le tableau suivant donne un aperçu des rôles que chaque participant joue dans le processus de mise à niveau :
 
 <table>
 <thead>
@@ -398,68 +415,68 @@ Adobe fournit un ensemble de services relatifs à la mise en service, au dévelo
 </thead>
 <tbody>
   <tr>
-    <td rowspan="3">Mise à niveau du plan</td>
+    <td rowspan="3">Planifier la mise à niveau</td>
     <td>Créer un plan de projet de mise à niveau</td>
     <td>Propriétaire</td>
     <td>Contributeur</td>
-    <td>Contributor<br />L’ingénieur du service client fournit des exemples de modèles de mise à niveau et de plans de mise à niveau ; fournit des conseils et de bonnes pratiques.</td>
+    <td>Le contributeur<br />CSE fournit des exemples de modèle et de plan de mise à niveau, ainsi que des conseils et des conseils sur les bonnes pratiques.</td>
   </tr>
   <tr>
-    <td>Déterminer les modifications d’infrastructure nécessaires</td>
+    <td>Détermination des modifications d’infrastructure nécessaires</td>
     <td></td>
     <td>Contributeur</td>
-    <td>Propriétaire <br />L’ingénieur du service client examine l’infrastructure d’évaluation et de production pour garantir un dimensionnement correct.</td>
+    <td>Le propriétaire<br />CSE examine l’infrastructure d’évaluation et de production pour garantir un dimensionnement approprié.</td>
   </tr>
   <tr>
-    <td>Évaluer la complexité de la mise à niveau<br />Identifier et documenter les packages, les problèmes et correctifs, ainsi que les modules tiers et personnalisés</td>
+    <td>Évaluation de la complexité de la mise à niveau<br /> Identification et documentation des packages, des problèmes et des correctifs, ainsi que des modules tiers et personnalisés</td>
     <td>Contributeur</td>
     <td>Propriétaire</td>
-    <td>Contributor<br />CSE fournit des rapports et des recommandations sur l’outil de compatibilité de mise à niveau.</td>
+    <td>Contributeur<br />CSE fournit des rapports et des recommandations sur l’outil de compatibilité de mise à niveau.</td>
   </tr>
   <tr>
     <td rowspan="3">Exécuter la mise à niveau</td>
-    <td>Mise à niveau des services d’infrastructure<br />[MariaDB, Redis, Open Search et Rabbit MQ] (évaluation et production)</td>
+    <td>Mise à niveau des services d’infrastructure <br />[MariaDB, Redis, Open Search et Rabbit MQ] (évaluation et production)</td>
     <td></td>
     <td></td>
-    <td>Propriétaire<br />L’ingénieur du service client coordonne les mises à niveau des services d’infrastructure.<br />L'ingénieur du service client organise une réunion de conférence pour les mises à niveau.<br />L’ingénieur du service client aide à la migration des données de la production vers l’évaluation.</td>
+    <td>Le propriétaire<br />CSE coordonne les mises à niveau des services d’infrastructure.<br />Le CSE planifie une réunion de conférence pour les mises à niveau.<br /> Le CSE aide à la migration des données de la production à l’évaluation.</td>
   </tr>
   <tr>
-    <td>Mise à jour de la base de code et des personnalisations Commerce ; recompilation et refactorisation du code</td>
+    <td>Mise à jour de la base de code et des personnalisations de Commerce ; recompilation et refactorisation du code</td>
     <td>Contributeur</td>
     <td>Propriétaire</td>
     <td></td>
   </tr>
   <tr>
-    <td>Effectuer les vérifications et la résolution des problèmes après la mise à niveau</td>
+    <td>Effectuer des vérifications et un dépannage après la mise à niveau</td>
     <td></td>
     <td>Propriétaire</td>
-    <td>Contributor<br />L’ingénieur du service client exécute le runbook après la mise à niveau pour détecter et résoudre les problèmes liés à la mise à niveau.</td>
+    <td>Le contributeur<br />CSE exécute un runbook après la mise à niveau pour détecter et résoudre les problèmes liés à la mise à niveau.</td>
   </tr>
   <tr>
     <td rowspan="3">UAT et Launch</td>
-    <td>Exécution de tests de performance et de sécurité</td>
+    <td>Exécuter des tests de performance et de sécurité</td>
     <td>Contributeur</td>
     <td>Propriétaire</td>
-    <td>Contributor<br />L’ingénieur du service client aide à effectuer des tests de charge en surveillant les performances de l’application et de l’infrastructure.<br />L’ingénieur du service client vous aide à configurer l’outil d’analyse de sécurité de Commerce.</td>
+    <td>Le contributeur<br />CSE aide à tester la charge en surveillant les performances de l’application et de l’infrastructure.<br />Le CSE vous aide à configurer l’outil d’analyse de sécurité Commerce.</td>
   </tr>
   <tr>
     <td>Test d’acceptation utilisateur lors de l’évaluation</td>
     <td>Propriétaire</td>
     <td>Contributeur</td>
-    <td>Contributor<br />L’ingénieur du service client valide les performances correctes de l’application et de l’infrastructure après la mise à niveau.</td>
+    <td>Le contributeur<br />CSE valide l’application et l’infrastructure s’exécute correctement après la mise à niveau.</td>
   </tr>
   <tr>
-    <td>Lancement en production</td>
+    <td>Du lancement à la production</td>
     <td>Contributeur</td>
     <td>Propriétaire</td>
-    <td>Contributeur<br />L’ingénieur du service client planifie l’événement de réunion de lancement de la conférence.</td>
+    <td>Le contributeur<br />CSE planifie l’événement de la conférence de lancement.</td>
   </tr>
   <tr>
-    <td>Post-Launch</td>
+    <td>Après le lancement</td>
     <td></td>
     <td>Contributeur</td>
     <td>Contributeur</td>
-    <td>Propriétaire<br />L’ingénieur du service client surveille les performances de l’application et de l’infrastructure.</td>
+    <td>Le CSE <br /> propriétaire surveille les performances des applications et de l’infrastructure.</td>
   </tr>
 </tbody>
 </table>
