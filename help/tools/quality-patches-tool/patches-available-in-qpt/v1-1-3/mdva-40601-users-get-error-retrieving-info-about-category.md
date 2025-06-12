@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40601 : impossible de récupérer les données sur la catégorie modifiée par la mise à jour planifiée via GraphQL'
-description: Le correctif de qualité Adobe Commerce MDVA-40601 corrige le problème en raison duquel les utilisateurs et utilisatrices reçoivent une erreur lors de l’obtention d’informations sur le changement de catégorie par mise à jour planifiée via GraphQL. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3 est installé. L’ID du correctif est MDVA-40601. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
+description: Le correctif de qualité Adobe Commerce MDVA-40601 corrige le problème en raison duquel les utilisateurs et utilisatrices reçoivent une erreur lors de l’obtention d’informations sur le changement de catégorie par mise à jour planifiée via GraphQL. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3 est installé. L’ID du correctif est MDVA-40601. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
 feature: Categories, GraphQL
 role: Admin
 exl-id: c50e9f77-66eb-4c4c-b0b5-b77db84a4a0b
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-40601 : impossible de récupérer les données sur la catégorie modifiée par la mise à jour planifiée via GraphQL
 
-Le correctif de qualité Adobe Commerce MDVA-40601 corrige le problème en raison duquel les utilisateurs et utilisatrices reçoivent une erreur lors de l’obtention d’informations sur le changement de catégorie par mise à jour planifiée via GraphQL. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3 est installé. L’ID du correctif est MDVA-40601. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
+Le correctif de qualité Adobe Commerce MDVA-40601 corrige le problème en raison duquel les utilisateurs et utilisatrices reçoivent une erreur lors de l’obtention d’informations sur le changement de catégorie par mise à jour planifiée via GraphQL. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3 est installé. L’ID du correctif est MDVA-40601. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
 
 ## Produits et versions concernés
 
@@ -27,7 +27,7 @@ Adobe Commerce (toutes les méthodes de déploiement) 2.3.1 - 2.4.2-p2
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -125,13 +125,13 @@ Vous obtenez l’erreur suivante :
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre type de déploiement :
 
 &#x200B;* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-&#x200B;* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
+&#x200B;* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
 Pour en savoir plus sur les correctifs de qualité pour Adobe Commerce, consultez :
 
-&#x200B;* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
+&#x200B;* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
 &#x200B;* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!DNL Quality Patches Tool].
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr).
