@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-50813 : l’administrateur ne peut pas ajouter de produits groupés contenant une barre oblique'
-description: Appliquez le correctif ACSD-50813 pour résoudre le problème de performances d’Adobe Commerce en raison duquel l’administrateur ne peut pas ajouter de produits groupés contenant une barre oblique (`/`) dans le SKU avec la fonctionnalité *Ajouter des produits par SKU* à la commande d’administration.
+description: Appliquez le correctif ACSD-50813 pour résoudre le problème de performances d’Adobe Commerce en raison duquel l’administrateur ne peut pas ajouter de produits groupés contenant une barre oblique (&grave;/&grave;) dans le SKU avec la fonctionnalité *Ajouter des produits par SKU* à la commande d’administration.
 exl-id: ff6fa673-bac1-4ef8-a427-60c2f56068f3
 source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt

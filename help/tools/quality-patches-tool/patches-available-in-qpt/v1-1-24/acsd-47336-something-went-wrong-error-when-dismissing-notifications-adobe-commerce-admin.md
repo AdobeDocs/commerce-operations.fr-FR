@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47336 : erreur _[!UICONTROL Something went wrong]_lors de l’ignorance des notifications dans Adobe Commerce Admin
+# ACSD-47336 : erreur _[!UICONTROL Something went wrong]_&#x200B;lors de l’ignorance des notifications dans Adobe Commerce Admin
 
-Le correctif ACSD-47336 corrige le problème en raison duquel l’utilisateur voit l’erreur _[!UICONTROL Something went wrong]_lors de l’ignorance des notifications dans l’administrateur [!DNL Commerce]. Ce correctif est disponible lorsque la version 1.1.24 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-47336. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-47336 corrige le problème en raison duquel l’utilisateur voit l’erreur _[!UICONTROL Something went wrong]_&#x200B;lors de l’ignorance des notifications dans l’administrateur [!DNL Commerce]. Ce correctif est disponible lorsque la version 1.1.24 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-47336. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -31,7 +31,7 @@ Le correctif ACSD-47336 corrige le problème en raison duquel l’utilisateur vo
 
 ## Problème
 
-L’utilisateur voit _[!UICONTROL Something went wrong]_erreur lors de l’ignorance des notifications dans l’administration [!DNL Commerce].
+L’utilisateur voit _[!UICONTROL Something went wrong]_&#x200B;erreur lors de l’ignorance des notifications dans l’administration [!DNL Commerce].
 
 <u>Procédure à suivre </u> :
 
@@ -41,11 +41,11 @@ L’utilisateur voit _[!UICONTROL Something went wrong]_erreur lors de l’ignor
 
 <u>Résultats attendus</u> :
 
-L’erreur _[!UICONTROL Something went wrong]_ne doit pas s’afficher lors de l’effacement des tâches terminées.
+L’erreur _[!UICONTROL Something went wrong]_&#x200B;ne doit pas s’afficher lors de l’effacement des tâches terminées.
 
 <u>Résultats réels</u> :
 
-L’erreur _[!UICONTROL Something went wrong]_s’affiche.
+L’erreur _[!UICONTROL Something went wrong]_&#x200B;s’affiche.
 
 ## Application du correctif
 
