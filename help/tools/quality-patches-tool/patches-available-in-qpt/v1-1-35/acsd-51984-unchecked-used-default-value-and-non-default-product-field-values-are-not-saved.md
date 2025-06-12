@@ -1,23 +1,23 @@
 ---
-title: 'ACSD-51984 : Les valeurs des champs de produit non cochées [!UICONTROL Use Default Value] et non par défaut ne sont pas enregistrées pour le deuxième site web, magasin et magasin.'
-description: Appliquez le correctif ACSD-51984 pour résoudre le problème Adobe Commerce en raison duquel les valeurs des champs de produit non cochées [!UICONTROL Use Default Value] et non par défaut ne sont pas enregistrées pour le deuxième site web, magasin et magasin.
+title: 'ACSD-51984 : les [!UICONTROL Use Default Value] non cochées et les valeurs de champ de produit non par défaut ne sont pas enregistrées pour la deuxième vue de site web, de magasin et de magasin'
+description: Appliquez le correctif ACSD-51984 pour résoudre le problème d’Adobe Commerce où les valeurs de champ de produit non cochées [!UICONTROL Use Default Value] et non par défaut ne sont pas enregistrées pour la deuxième vue de site web, de magasin et de magasin.
 feature: Products
 role: Admin
 exl-id: 51a810fa-d416-4b37-b5bd-66eed9fe4626
-source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
 
 ---
 
-# ACSD-51984 : Les valeurs des champs de produit non cochées *[!UICONTROL Use Default Value]* et non par défaut ne sont pas enregistrées.
+# ACSD-51984 : les *[!UICONTROL Use Default Value]* non cochées et les valeurs de champ de produit non par défaut ne sont pas enregistrées
 
 >[!NOTE]
 >
->Ce correctif est obsolète et a été remplacé par le correctif [ACSD-54776](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-54776-unchecked-used-default-value-and-non-default-product-field-values-are-not-saved.md) ajouté dans la version 1.1.39 QPT.
+>Ce correctif est obsolète et a été remplacé par le correctif [ACSD-54776](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-54776-unchecked-used-default-value-and-non-default-product-field-values-are-not-saved.md) ajouté dans la version 1.1.39 de QPT.
 
-Le correctif ACSD-51984 corrige le problème en raison duquel les valeurs des champs de produit non cochées **[!UICONTROL Use Default Value]** et non par défaut ne sont pas enregistrées pour le deuxième site web, magasin et magasin. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.35 est installé. L’ID de correctif est ACSD-51984. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-51984 corrige le problème en raison duquel les valeurs de champ de produit non cochées **[!UICONTROL Use Default Value]** et non par défaut ne sont pas enregistrées pour la deuxième vue de site web, de magasin et de magasin. Ce correctif est disponible lorsque la version 1.1.35 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-51984. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -31,19 +31,19 @@ Le correctif ACSD-51984 corrige le problème en raison duquel les valeurs des ch
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Les valeurs de champ de produit non cochées *[!UICONTROL Use Default Value]* et autres que par défaut ne sont pas enregistrées pour la deuxième vue de site web, de magasin et de magasin.
+Les valeurs de champ de produit *[!UICONTROL Use Default Value]* et non par défaut non cochées ne sont pas enregistrées pour la deuxième vue de site web, de magasin et de magasin.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Accédez au serveur principal et accédez à **[!UICONTROL Stores]** > **[!UICONTROL All Stores]** et créez un site web, un magasin et une vue de magasin.
-1. Accédez à **[!UICONTROL Catalog]** > **[!UICONTROL Products]**, créez un produit simple et enregistrez-le, puis affectez-le aux deux sites Web, à partir du **[!UICONTROL Product in Websites]**.
-1. Remplacez la portée par la nouvelle vue de magasin de l’étape 2.
-1. Accédez à **[!UICONTROL Search Engine Optimization]** et désélectionnez les cases **[!UICONTROL Use Default Value]** pour [!UICONTROL Meta Title], [!UICONTROL Meta Keywords] et [!UICONTROL Meta Description].
-1. Nettoyez le texte des champs : *[!UICONTROL Meta Title]*, *[!UICONTROL Meta Keywords]* et *[!UICONTROL Meta Description]*, puis cliquez sur **[!UICONTROL Save]**.
+1. Accédez au serveur principal, puis à **[!UICONTROL Stores]** > **[!UICONTROL All Stores]** et créez un site web, un magasin et une vue de magasin.
+1. Accédez à **[!UICONTROL Catalog]** > **[!UICONTROL Products]**, créez un produit simple et enregistrez-le, puis affectez le produit aux deux sites web, à partir du **[!UICONTROL Product in Websites]**.
+1. Modifiez la portée sur la vue de magasin nouvellement créée à partir de l’étape 2.
+1. Accédez à **[!UICONTROL Search Engine Optimization]** et décochez les cases **[!UICONTROL Use Default Value]** pour [!UICONTROL Meta Title], [!UICONTROL Meta Keywords] et [!UICONTROL Meta Description].
+1. Nettoyez le texte des champs *[!UICONTROL Meta Title]*, *[!UICONTROL Meta Keywords]* et *[!UICONTROL Meta Description]*, puis cliquez sur **[!UICONTROL Save]**.
 1. Accédez à nouveau à **[!UICONTROL Search Engine Optimization]**.
 
 <u>Résultats attendus</u>
@@ -54,19 +54,19 @@ Les valeurs des champs et des cases à cocher sont enregistrées.
 
 Les valeurs des champs et des cases à cocher ne sont pas enregistrées.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr>) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html>) dans le guide de [!DNL Quality Patches Tool].

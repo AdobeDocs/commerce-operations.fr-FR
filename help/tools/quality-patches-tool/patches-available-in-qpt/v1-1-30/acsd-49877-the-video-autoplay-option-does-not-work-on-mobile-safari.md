@@ -1,19 +1,19 @@
 ---
-title: 'ACSD-49877 : La lecture automatique de la vidéo ne fonctionne pas sur mobile [!DNL Safari]'
-description: Appliquez le correctif ACSD-49877 pour résoudre le problème Adobe Commerce en raison duquel l’option de lecture automatique de la vidéo ne fonctionne pas sur mobile [!DNL Safari]  lorsque la vidéo est directement liée à un fichier vidéo distant.
+title: 'ACSD-49877 : la lecture automatique de la vidéo ne fonctionne pas sur les appareils mobiles [!DNL Safari]'
+description: Appliquez le correctif ACSD-49877 pour résoudre le problème d’Adobe Commerce en raison duquel l’option de lecture automatique de la vidéo ne fonctionne pas sur les appareils mobiles [!DNL Safari] lorsque la vidéo est directement liée à un fichier vidéo distant.
 feature: CMS
 role: Admin
 exl-id: aa2557e2-4bed-4004-b9bc-36c59f1e9cdc
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
 
 ---
 
-# ACSD-49877 : La lecture automatique de la vidéo ne fonctionne pas sur le périphérique mobile [!DNL Safari]
+# ACSD-49877 : la lecture automatique de la vidéo ne fonctionne pas sur les [!DNL Safari] mobiles
 
-L’ACSD-49877 corrige le problème en raison duquel l’option de lecture automatique sur le mobile [!DNL Safari] ne fonctionne pas lorsque la vidéo est directement liée à un fichier vidéo distant. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.30 est installé. L’ID de correctif est ACSD-49877. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+L’ACSD-49877 corrige le problème en raison duquel l’option de lecture automatique sur les [!DNL Safari] mobiles ne fonctionne pas lorsque la vidéo est directement liée à un fichier vidéo distant. Ce correctif est disponible lorsque la version 1.1.30 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-49877. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -27,46 +27,46 @@ L’ACSD-49877 corrige le problème en raison duquel l’option de lecture autom
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package [ !magento/quality-Correctifs] vers la dernière version et vérifiez la compatibilité sur le [[!DNL Quality Patches Tool] : recherchez des correctifs]. Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package [!magento/quality-patches] vers la dernière version et vérifiez la compatibilité sur le [[!DNL Quality Patches Tool] : Rechercher des correctifs]. Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-La lecture automatique de la vidéo ne fonctionne pas sur le mobile [!DNL Safari] lorsque la vidéo est directement liée à un fichier vidéo distant et non à un service de diffusion en continu.
+La lecture automatique de la vidéo ne fonctionne pas sur les [!DNL Safari] mobiles lorsque la vidéo est directement liée à un fichier vidéo distant et non à un service de diffusion en continu.
 
 <u>Conditions préalables</u> :
 Les modules [!DNL Page Builder] sont installés.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Créez une page CMS et modifiez la **[!UICONTROL Content Value]** avec [!DNL Page Builder].
-1. Ajoutez un élément *Tab* au contenu, puis un *élément vidéo* dans l’onglet *Tab*.
-1. Cliquez maintenant sur le bouton d’engrenage pour modifier l’ *élément vidéo*.
-1. Ajoutez un lien vers un fichier vidéo mp4 au champ [!UICONTROL Video URL].
+1. Ajoutez un élément *Tab* au contenu et ajoutez un élément *Video* dans l’*Tab*.
+1. Cliquez maintenant sur le bouton d’engrenage pour modifier l’*Élément vidéo*.
+1. Ajoutez un lien vers un fichier vidéo mp4 au champ [!UICONTROL Video URL] .
 1. Marquez le champ **[!UICONTROL Autoplay]** comme *Oui*.
 1. Cliquez sur **[!UICONTROL Save]**.
 1. Ouvrez la page récemment créée sur [!DNL Safari] à l’aide d’une iPhone.
 
 <u>Résultats attendus</u>
 
-L’option de lecture automatique fonctionne sur [!DNL Safari] à l’aide d’un iPhone.
+L’option de lecture automatique fonctionne sur les [!DNL Safari] à l’aide d’une iPhone.
 
 <u>Résultats réels</u>
 
-L’option de lecture automatique ne fonctionne pas sur [!DNL Safari] à l’aide d’un iPhone.
+L’option de lecture automatique ne fonctionne pas sur les [!DNL Safari] utilisant un iPhone.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

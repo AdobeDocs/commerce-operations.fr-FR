@@ -1,19 +1,19 @@
 ---
-title: 'ACSD-58008 : si vous modifiez la date de fin comme *vide*, la mise à jour du planning disparaît.'
-description: Appliquez le correctif ACSD-58008 pour résoudre le problème Adobe Commerce en raison duquel la modification de la date de fin comme *vide* entraîne la disparition de la mise à jour du planning.
+title: 'ACSD-58008 : la modification de la date de fin en tant que *vide* entraîne la disparition de la mise à jour du planning'
+description: Appliquez le correctif ACSD-58008 pour résoudre le problème d’Adobe Commerce en raison duquel la modification de la date de fin en tant que *vide* entraîne la disparition de la mise à jour du planning.
 feature: Staging, Page Content
 role: Admin, Developer
 exl-id: 6d2279e5-6580-4325-b0a8-ed62a95da3c2
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
 
 ---
 
-# ACSD-58008 : la modification de la date de fin comme *empty* entraîne la disparition de la mise à jour du planning
+# ACSD-58008 : la modification de la date de fin en tant que *vide* entraîne la disparition de la mise à jour du planning
 
-Le correctif ACSD-58008 corrige le problème en raison duquel la modification de la date de fin comme *vide* provoquait la disparition de la mise à jour du planning. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.48 est installé. L’ID de correctif est ACSD-58008. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-58008 corrige le problème en raison duquel la modification de la date de fin en tant que *vide* entraîne la disparition de la mise à jour du planning. Ce correctif est disponible lorsque la version 1.1.48 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-58008. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -27,19 +27,19 @@ Le correctif ACSD-58008 corrige le problème en raison duquel la modification de
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Si vous modifiez la date de fin comme *empty*, la mise à jour du planning disparaît.
+La modification de la date de fin en tant que *vide* entraîne la disparition de la mise à jour du planning
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Connectez-vous en tant que [!UICONTROL Admin].
+1. Connectez-vous en tant qu’[!UICONTROL Admin].
 1. Accédez à **[!UICONTROL Content]** > **[!UICONTROL Elements]** > **[!UICONTROL Pages]** et créez une page.
-1. Sélectionnez la page créée et cliquez sur **[!UICONTROL Schedule New Update]**. *(Parcourez-le dans le coin supérieur droit de la page)*.
-1. Créez quatre mises à jour. *(par exemple, sous la forme d’un incrément de* 2 *minutes)*.
-1. Mettez à jour la *mise à jour 2* et remplacez l’heure par une heure antérieure à la dernière *mise à jour 4*.
+1. Sélectionnez la page créée et cliquez sur **[!UICONTROL Schedule New Update]**. *(Accédez au coin supérieur droit de la page)*.
+1. Créez quatre mises à jour. *(par exemple, par incrément de* 2 *minutes)*.
+1. Mettez à jour la *mise à jour 2* et définissez l’heure sur une heure antérieure à la dernière *mise à jour 4*.
 1. Enregistrez les mises à jour effectuées.
 
 <u>Résultats attendus</u> :
@@ -48,21 +48,21 @@ La mise à jour du planning affiche la *mise à jour 3*.
 
 <u>Résultats réels</u> :
 
-La mise à jour du planning n&#39;affiche pas la *mise à jour 3*.
+La mise à jour du planning n’affiche pas la *mise à jour 3*.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

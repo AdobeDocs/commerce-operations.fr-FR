@@ -1,18 +1,19 @@
 ---
-title: 'ACSD-57854: *La réponse GraphQL* contient des catégories désactivées qui ne doivent pas être répertoriées dans les agrégations de catégories'
-description: Appliquez le correctif ACSD-57854 pour résoudre le problème Adobe Commerce en raison duquel la réponse *GraphQL* contient des catégories désactivées qui ne doivent pas être répertoriées dans les agrégations de catégories.
+title: 'ACSD-57854 : la réponse *GraphQL* contient des catégories désactivées qui ne doivent pas être répertoriées dans les agrégations de catégories'
+description: Appliquez le correctif ACSD-57854 pour résoudre le problème d’Adobe Commerce où la réponse *GraphQL* contient des catégories désactivées qui ne doivent pas être répertoriées dans les agrégations de catégories.
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 216aad2a-f470-49f9-b8ca-79107ca07891
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
 
 ---
 
-# ACSD-57854 : *La réponse GraphQL* contient des catégories désactivées qui ne doivent pas être répertoriées dans les agrégations de catégories.
+# ACSD-57854 : la réponse *GraphQL* contient des catégories désactivées qui ne doivent pas être répertoriées dans les agrégations de catégories
 
-Le correctif ACSD-57854 corrige le problème en raison duquel la réponse *GraphQL* contient des catégories désactivées qui ne doivent pas être répertoriées dans les agrégations de catégories. Ce correctif est disponible lorsque [!DNL Quality Patches Tool (QPT)] 1.1.48 est installé. L’ID de correctif est ACSD-57854. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.5.0.
+Le correctif ACSD-57854 corrige le problème où la réponse *GraphQL* contient des catégories désactivées qui ne doivent pas être répertoriées dans les agrégations de catégories. Ce correctif est disponible lorsque la version 1.1.48 de [!DNL Quality Patches Tool (QPT)] est installée. L’ID du correctif est ACSD-57854. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.5.0.
 
 ## Produits et versions concernés
 
@@ -26,17 +27,17 @@ Le correctif ACSD-57854 corrige le problème en raison duquel la réponse *Graph
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 La réponse *GraphQL* contient des catégories désactivées qui ne doivent pas être répertoriées dans les agrégations de catégories.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Créez deux catégories.
-1. Créez un produit (Tester le produit d’Adobe) et affectez-le aux deux catégories.
-1. Désactivez l&#39;une des catégories qui a été créée.
+1. Créez un produit (test de produit Adobe) et affectez-le aux deux catégories.
+1. Désactivez l’une des catégories qui ont été créées.
 1. Utilisez les produits *GraphQL* pour rechercher le produit.
 1. Vérifiez la liste des catégories de produits dans la réponse *GraphQL*.
 
@@ -46,21 +47,21 @@ Les catégories désactivées ne sont pas répertoriées dans la réponse *Graph
 
 <u>Résultats réels</u> :
 
-Les catégories désactivées sont répertoriées dans la réponse d’agrégation de catégories *GraphQL*.
+Les catégories désactivées sont répertoriées dans la réponse d’agrégation des catégories *GraphQL*.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

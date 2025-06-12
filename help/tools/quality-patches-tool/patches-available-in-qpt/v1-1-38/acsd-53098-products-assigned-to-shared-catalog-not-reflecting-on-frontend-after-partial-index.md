@@ -1,19 +1,19 @@
 ---
-title: 'ACSD-53098 : les produits du catalogue partagé ne reflètent pas sur l’interface frontale'
-description: Appliquez le correctif ACSD-53098 pour résoudre le problème Adobe Commerce en raison duquel les produits affectés à un catalogue partagé ne se reflètent pas sur l’interface lors de l’exécution d’un index partiel.
+title: 'ACSD-53098 : les produits du catalogue partagé ne sont pas reflétés sur le serveur frontal'
+description: Appliquez le correctif ACSD-53098 pour résoudre le problème d’Adobe Commerce en raison duquel les produits affectés à un catalogue partagé ne sont pas reflétés sur le serveur frontal lors de l’exécution d’un index partiel.
 feature: B2B, Catalog Management, Categories, Products
 role: Admin, Developer
 exl-id: 25230086-13b5-4b16-b50f-931e9e3d7102
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
 
 ---
 
-# ACSD-53098 : les produits du catalogue partagé ne reflètent pas sur l’interface frontale
+# ACSD-53098 : les produits du catalogue partagé ne sont pas reflétés sur le serveur frontal
 
-Le correctif ACSD-53098 corrige le problème en raison duquel les produits affectés à un catalogue partagé ne reflètent pas sur l’interface lors de l’exécution d’un index partiel. Ce correctif est disponible lorsque [!DNL Quality Patches Tool (QPT)] 1.1.38 est installé. L’ID de correctif est ACSD-53098. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-53098 corrige le problème où les produits affectés à un catalogue partagé ne se reflètent pas sur le serveur frontal lors de l’exécution d’un index partiel. Ce correctif est disponible lorsque la version 1.1.38 de [!DNL Quality Patches Tool (QPT)] est installée. L’ID du correctif est ACSD-53098. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -27,16 +27,16 @@ Le correctif ACSD-53098 corrige le problème en raison duquel les produits affec
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Les produits affectés à un catalogue partagé via l’API ne s’affichent pas sur le front-end après l’exécution de la tâche cron par l’indexeur partiel, suivi du cron du consommateur.
+Les produits affectés à un catalogue partagé via l’API ne s’affichent pas sur le serveur frontal une fois que l’indexeur partiel exécute la tâche cron, suivie de la tâche cron du client.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Configurez [!DNL RabbitMQ] comme service de file d’attente.
-1. Passez les indexeurs en mode **[!UICONTROL Update on Schedule]**.
+1. Basculez les indexeurs en mode **[!UICONTROL Update on Schedule]**.
 1. Créez un catalogue partagé et affectez-le à une entreprise.
 1. Créez un produit simple et affectez-le à une catégorie. Exécutez la réindexation partielle :
 
@@ -54,36 +54,36 @@ Les produits affectés à un catalogue partagé via l’API ne s’affichent pas
    }
    ```
 
-1. Exécutez le cron suivant pour effacer les files d’attente, puis exécutez la réindexation partielle :
+1. Exécutez la commande cron suivante pour effacer les files d’attente et exécuter la réindexation partielle :
 
    `bin/magento cron:run --group=consumers`
 
    `bin/magento cron:run --group=index --bootstrap=standaloneProcessStarted=1`
 
-1. Connectez-vous au front-end en tant qu’utilisateur de l’entreprise.
-1. Consultez la page de catégorie de front-end.
+1. Connectez-vous au serveur frontal en tant qu’utilisateur de l’entreprise.
+1. Vérifiez la page de catégorie front-end.
 
 <u>Résultats attendus</u> :
 
-Les produits nouvellement attribués apparaissent sur le front-end.
+Les nouveaux produits affectés apparaissent sur le front-end.
 
 <u>Résultats réels</u> :
 
-Les produits nouvellement attribués n’apparaissent pas sur le front-end.
+Les nouveaux produits affectés n’apparaissent pas sur le serveur frontal.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

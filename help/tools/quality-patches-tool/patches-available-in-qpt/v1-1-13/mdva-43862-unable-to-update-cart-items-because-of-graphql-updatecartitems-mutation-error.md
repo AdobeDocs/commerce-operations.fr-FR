@@ -1,10 +1,10 @@
 ---
 title: 'MDVA-43862 : le client ne peut pas mettre à jour les articles du panier en raison d’une erreur de mutation UpdateCartItems de GraphQL'
-description: Le correctif MDVA-43862 résout le problème où le client ne peut pas mettre à jour les articles du panier en raison d’une erreur de mutation GraphQL UpdateCartItems. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID de correctif est MDVA-43862. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
+description: Le correctif MDVA-43862 résout le problème où le client ne peut pas mettre à jour les articles du panier en raison d’une erreur de mutation UpdateCartItems de GraphQL. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID du correctif est MDVA-43862. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 feature: GraphQL, Orders, Shopping Cart
 role: Admin
 exl-id: d8a2579f-58f5-4407-8006-d58794a84b1f
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-43862 : le client ne peut pas mettre à jour les articles du panier en raison d’une erreur de mutation UpdateCartItems de GraphQL
 
-Le correctif MDVA-43862 résout le problème où le client ne peut pas mettre à jour les articles du panier en raison d’une erreur de mutation GraphQL UpdateCartItems. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID de correctif est MDVA-43862. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
+Le correctif MDVA-43862 résout le problème où le client ne peut pas mettre à jour les articles du panier en raison d’une erreur de mutation UpdateCartItems de GraphQL. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID du correctif est MDVA-43862. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 
 ## Produits et versions concernés
 
@@ -27,25 +27,25 @@ Le correctif MDVA-43862 résout le problème où le client ne peut pas mettre à
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 Le client ne peut pas mettre à jour les articles du panier en raison d’une erreur de mutation UpdateCartItems de GraphQL.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Créez un produit configurable (MH01) en attribuant un simple (MH01-XL-Gray).
-1. Accédez à l’administrateur Commerce > **Catalogue** > **Produits** > **SKU** > **MH01** > **Options personnalisables**.
+1. Accédez à Commerce Admin > **Catalogue** > **Produits** > **SKU** > **MH01** > **Options personnalisables**.
 1. Ajoutez une option personnalisée au produit.
    * Titre de l’option : Option1
-   * Type d’option : Champ
+   * Type d’option : champ
    * Obligatoire : Oui
-   * Prix : 10,00
-   * Type de prix : fixe
+   * Prix : 10.00
+   * Type de prix : Fixe
    * SKU : MHC1
-   * Nombre max. de caractères : 25
-1. Exécutez la requête GraphQL ci-dessous pour générer l’identifiant de panier.
+   * Caractères max. : 25
+1. Exécutez la requête GraphQL ci-dessous pour générer l’ID de panier.
 
    ```GraphQL
    mutation {
@@ -53,7 +53,7 @@ Le client ne peut pas mettre à jour les articles du panier en raison d’une er
    }
    ```
 
-1. Notez le code d’identifiant de panier.
+1. Notez le code de l’ID de panier.
 1. Exécutez la requête ci-dessous pour ajouter un produit configurable au panier :
 
    ```GraphQL
@@ -95,9 +95,9 @@ Le client ne peut pas mettre à jour les articles du panier en raison d’une er
    }
    ```
 
-1. Vous remarquerez que le panier est renseigné avec l’élément configurable.
-1. Notez l’uid renvoyé.
-1. Exécutez à nouveau la requête ci-dessous pour mettre à jour l’élément de panier.
+1. Vous remarquerez que l’article configurable est présent dans le panier.
+1. Notez l’UID renvoyé.
+1. Exécutez à nouveau la requête ci-dessous pour mettre à jour l’article du panier.
 
    ```GraphQL
    mutation {
@@ -170,18 +170,18 @@ Vous obtenez l’erreur suivante :
 }
 ```
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
+Pour en savoir plus sur l’outil de correctifs de la qualité, voir :
 
-* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!DNL Quality Patches Tool].
+* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!DNL Quality Patches Tool].
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

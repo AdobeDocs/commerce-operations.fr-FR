@@ -3,7 +3,8 @@ title: 'MDVA-39305-V3 : problème de connexion avec activé [!DNL Google reCAPTC
 description: Appliquez le correctif MDVA-39305-V3 pour résoudre le problème d’Adobe Commerce en raison duquel les clients enregistrés ne peuvent pas se connecter lorsque  [!DNL Google reCAPTCHA]  est activé. Ce correctif corrige également le problème en raison duquel un formulaire peut être envoyé avant  [!DNL Google reCAPTCHA]  chargement complet. En outre, il corrige l’erreur *L’appel à une fonction membre isDisabled() sur null* lorsque des blocs sont utilisés à des emplacements autres que ceux par défaut sur une page CMS.
 feature: Console
 role: Admin
-source-git-commit: 7846079987d2b7c0e9fdd0485bb3aae4f09cd6f9
+exl-id: 63e880aa-9a2e-4c34-9ead-20bfc5204f2c
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 Le correctif MDVA-39305-V3 corrige le problème en raison duquel les clients enregistrés ne peuvent pas se connecter lorsque [!DNL Google reCAPTCHA] est activé. Ce correctif corrige également le problème où un formulaire peut être envoyé avant le chargement complet de l’[!DNL Google reCAPTCHA]. En outre, il corrige l’erreur *Appel à une fonction membre isDisabled() sur null* lorsque des blocs sont utilisés à des emplacements autres que ceux par défaut sur une page CMS.
 
-Ce correctif a été ajouté dans l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) version 1.1.48. Elle a été mise à jour dans la version QPT 1.1.58 afin d’inclure les nouvelles versions Adobe Commerce 2.4.7 à 2.4.7-p4. L’ID du correctif est MDVA-39305-V3. Notez que le problème a été corrigé dans les versions 2.4.4, 2.4.5-p2 et 2.4.7 d’Adobe Commerce.
+Ce correctif a été ajouté dans l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) version 1.1.48. Elle a été mise à jour dans la version QPT 1.1.58 afin d’inclure les nouvelles versions Adobe Commerce 2.4.7 à 2.4.7-p4. L’ID du correctif est MDVA-39305-V3. Notez que le problème a été corrigé dans les versions 2.4.4, 2.4.5-p2 et 2.4.7 d’Adobe Commerce.
 
 ## Produits et versions concernés
 
@@ -32,7 +33,7 @@ Ce correctif a été ajouté dans l’[outil de correctifs de qualité (QPT)](ht
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Événements
 
@@ -84,12 +85,10 @@ Une erreur 500 se produit sur la page du storefront.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
 * [[!DNL Quality Patches Tool] : un outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils .
-
-

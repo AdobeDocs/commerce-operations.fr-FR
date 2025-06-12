@@ -1,18 +1,19 @@
 ---
-title: '''ACSD-49013 : confirmation d''email non traduite en paramètre régional du site web'''
-description: Appliquez le correctif ACSD-49013 pour résoudre le problème Adobe Commerce en raison duquel la confirmation par courrier électronique n’est pas traduite dans les paramètres régionaux du site web lors de la création de clients à l’aide de l’API en bloc.
+title: 'ACSD-49013 : confirmation d’e-mail non traduite en paramètres régionaux du site web'
+description: Appliquez le correctif ACSD-49013 pour résoudre le problème d’Adobe Commerce en raison duquel la confirmation par e-mail n’est pas traduite en paramètres régionaux du site web lors de la création de clients à l’aide de l’API en bloc.
 feature: Admin Workspace, Communications
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1b0dc6aa-d5ee-4adf-882d-88f29a7eab34
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 0%
 
 ---
 
-# ACSD-49013 : confirmation d&#39;email non traduite dans les paramètres régionaux du site web
+# ACSD-49013 : confirmation d’e-mail non traduite en paramètres régionaux du site web
 
-Le correctif ACSD-49013 corrige le problème en raison duquel la confirmation par email n’est pas traduite dans les paramètres régionaux du site web lors de la création de clients à l’aide d’une API en bloc. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.27 est installé. L’ID de correctif est ACSD-49013. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-49013 corrige le problème où la confirmation par e-mail n’est pas traduite en paramètres régionaux du site web lors de la création de clients à l’aide de l’API en bloc. Ce correctif est disponible lorsque la version 1.1.27 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-49013. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -26,20 +27,20 @@ Le correctif ACSD-49013 corrige le problème en raison duquel la confirmation pa
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-La confirmation par e-mail n’est pas traduite dans les paramètres régionaux du site web lors de la création de clients à l’aide de l’API en bloc.
+Les e-mails de confirmation ne sont pas traduits en paramètres régionaux du site web lors de la création de clients utilisant l’API en bloc.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Installez un autre paramètre régional comme `de_DE`.
 1. Configurez *RabbitMQ*.
-1. Exécutez `bin/magento setup:upgrade` pour installer les files d’attente dans RabbitMQ et configurer le module de langue.
+1. Exécutez `bin/magento setup:upgrade` pour installer les files d’attente dans RabbitMQ et configurer le module linguistique.
 1. Créez un site web supplémentaire dans [!UICONTROL Admin] > **[!UICONTROL Stores]** > **[!UICONTROL All Stores]**.
 1. Définissez le paramètre régional de ce nouveau site web sur `de_DE` dans [!UICONTROL Admin] > **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Locale Options]**.
-1. Exécutez un appel API pour créer un compte client à l’aide de l’API en bloc. Utilisez le `website_id` correspondant.
+1. Exécutez un appel API pour créer un compte client à l’aide de l’API en bloc. Utilisez la `website_id` correspondante.
 
    `Endpoint: /rest/async/bulk/V1/customers`
 
@@ -56,30 +57,30 @@ La confirmation par e-mail n’est pas traduite dans les paramètres régionaux 
    ```
 
 1. Exécutez `bin/magento queue:consumers:start async.operations.all --single-thread --max-messages=10`.
-1. Vous pouvez constater que le compte client a été créé correctement sur le site web spécifié.
+1. Vous pouvez constater que le compte client est correctement créé sur le site web spécifié.
 1. Vérifiez l’e-mail reçu pour l’enregistrement du client.
 
 <u>Résultats attendus</u> :
 
-Le client étant créé sur un site web spécifique, le courrier électronique d’enregistrement est envoyé en utilisant les paramètres régionaux de ce site web.
+Puisque le client est créé sur un site web spécifié, l’e-mail d’enregistrement est envoyé à l’aide des paramètres régionaux de ce site web.
 
 <u>Résultats réels</u> :
 
-Le client est créé correctement sur le site web spécifié, mais l’email d’enregistrement est envoyé en utilisant le paramètre régional par défaut lors de l’utilisation de l’API en bloc.
+Le client est créé correctement sur le site web spécifié, mais l’e-mail d’enregistrement est envoyé à l’aide du paramètre régional par défaut lorsque l’API en bloc est utilisée.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

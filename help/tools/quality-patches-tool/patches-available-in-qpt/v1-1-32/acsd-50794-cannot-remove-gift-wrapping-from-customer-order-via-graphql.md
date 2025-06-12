@@ -1,19 +1,19 @@
 ---
-title: 'ACSD-50794 : impossible de supprimer l’encapsulation des cadeaux de la commande client via GraphQL'
-description: Appliquez le correctif ACSD-50794 pour résoudre le problème Adobe Commerce en raison duquel les utilisateurs ne peuvent pas supprimer l’emballage cadeau de la commande client via GraphQL.
+title: 'ACSD-50794 : impossible de supprimer l’emballage-cadeau de la commande client via GraphQL'
+description: Appliquez le correctif ACSD-50794 pour résoudre le problème d’Adobe Commerce en raison duquel les utilisateurs ne peuvent pas supprimer l’emballage-cadeau de la commande client via GraphQL.
 feature: Gift, GraphQL, Orders
 role: Admin
 exl-id: e088fb18-89d3-47e4-ad02-54068c1ab653
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%
 
 ---
 
-# ACSD-50794 : impossible de supprimer l’encapsulation des cadeaux de la commande client via GraphQL
+# ACSD-50794 : impossible de supprimer l’emballage-cadeau de la commande client via GraphQL
 
-Le correctif ACSD-50794 corrige le problème en raison duquel les utilisateurs ne peuvent pas supprimer l’encapsulation des cadeaux de la commande client via GraphQL. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.32 est installé. L’ID de correctif est ACSD-50794. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-50794 corrige le problème en raison duquel les utilisateurs ne peuvent pas supprimer l’emballage-cadeau de la commande du client via GraphQL. Ce correctif est disponible lorsque la version 1.1.32 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-50794. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -27,26 +27,26 @@ Le correctif ACSD-50794 corrige le problème en raison duquel les utilisateurs n
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Les utilisateurs ne peuvent pas supprimer l’emballage cadeau de la commande client via GraphQL.
+Les utilisateurs ne peuvent pas supprimer l’emballage-cadeau de la commande client via GraphQL.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Créez un client à partir du front-end.
+1. Créez un client à partir du serveur frontal.
 1. Créez un produit simple.
-1. Activez *[!UICONTROL Gift Messages]* en accédant à **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Gift Options]** et définissez *[!UICONTROL Allow Gift Messages]* = *[!UICONTROL Yes]*.
-1. Créez *[!UICONTROL Gift Wrapping]* en accédant à **[!UICONTROL Stores]** > **[!UICONTROL Other Settings]** > **[!UICONTROL Gift Wrapping]**.
-1. Obtenir le jeton client.
+1. Activez *[!UICONTROL Gift Messages]* en accédant à **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Gift Options]** et en définissant *[!UICONTROL Allow Gift Messages]* = *[!UICONTROL Yes]*.
+1. Créez des *[!UICONTROL Gift Wrapping]* en accédant à **[!UICONTROL Stores]** > **[!UICONTROL Other Settings]** > **[!UICONTROL Gift Wrapping]**.
+1. Obtention du jeton client.
 1. Créez un panier vide, customerCart.
-   * Ajouter des produits au panier : mutation `addProductsToCart`
-   * Définition de l’adresse de facturation : mutation `setBillingAddressOnCart`
-   * Définition de l’adresse de livraison : mutation `setShippingAddressesOnCart`
-   * Méthode de livraison définie : mutation `setShippingMethodsOnCart` (flatrate)
-   * Méthode de paiement définie : mutation `setPaymentMethodOnCart` (checkmo)
-1. Vérifiez maintenant l’encapsulage du cadeau *Uid* avec cette requête de panier :
+   * Ajouter des produits au panier : `addProductsToCart` mutation
+   * Définir l&#39;adresse de facturation : mutation `setBillingAddressOnCart`
+   * Définir l&#39;adresse de livraison : `setShippingAddressesOnCart` mutation
+   * Définir le mode d&#39;expédition : `setShippingMethodsOnCart` mutation (flatté)
+   * Définir le mode de paiement : `setPaymentMethodOnCart` mutation (checkmo)
+1. Vérifiez maintenant l’emballage du cadeau *Uid* avec cette requête de panier :
 
    ```GraphQL
    {
@@ -58,12 +58,12 @@ Les utilisateurs ne peuvent pas supprimer l’emballage cadeau de la commande cl
    }
    ```
 
-1. Définissez le retour automatique à la ligne cadeau à l’aide de `setGiftOptionsOnCart`.
-1. Vérifiez la requête panier : panier.
-1. Retour à la ligne du cadeau non défini à l’aide de `setGiftOptionsOnCart` (définissez la valeur sur null).
-1. Vérifiez à nouveau la requête panier : panier.
-1. Ordre de tri : mutation `placeOrder`.
-1. Exécutez la requête du client : customer.
+1. Enveloppe cadeau en utilisant `setGiftOptionsOnCart`.
+1. Vérifier le panier : requête de panier.
+1. Annuler l&#39;emballage cadeau à l&#39;aide de `setGiftOptionsOnCart` (définir la valeur sur null).
+1. Vérifiez à nouveau la requête panier : panier .
+1. Ordre de placement : mutation `placeOrder`.
+1. Exécuter la requête client : client.
 
    ```GraphQL
    query {
@@ -102,25 +102,25 @@ Les utilisateurs ne peuvent pas supprimer l’emballage cadeau de la commande cl
 
 <u>Résultats attendus</u> :
 
-Une fois qu’un utilisateur a défini un retour automatique à la ligne du cadeau et l’a annulé, la requête du client renvoie &quot;null&quot;.
+Une fois qu’un utilisateur a défini un habillage cadeau et l’a désactivé, la requête client renvoie la valeur null.
 
 <u>Résultats réels</u> :
 
-La requête du client renvoie toujours l’encapsulation du cadeau comme appliquée.
+La requête client renvoie toujours l’emballage cadeau tel qu’appliqué.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

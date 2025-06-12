@@ -1,18 +1,19 @@
 ---
-title: 'MDVA-42806 : un nouveau courrier électronique d’enregistrement de société est envoyé chaque fois qu’une société existante est mise à jour'
-description: Le correctif MDVA-42806 résout le problème d’envoi d’un nouvel email d’enregistrement de société chaque fois qu’une société existante est mise à jour via l’API REST. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 est installé. L’ID de correctif est MDVA-42806. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
+title: 'MDVA-42806 : un nouvel e-mail d’enregistrement de société est envoyé chaque fois que la société existante est mise à jour'
+description: Le correctif MDVA-42806 résout le problème d’envoi d’un nouvel e-mail d’enregistrement de société chaque fois qu’une société existante est mise à jour via l’API REST. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.9 est installé. L’ID du correctif est MDVA-42806. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 feature: REST, B2B, Communications, Companies
 role: Admin
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+exl-id: 4fc2ee54-d88b-4940-b6ac-e25ad61e5c66
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
 
 ---
 
-# MDVA-42806 : un nouveau courrier électronique d’enregistrement de société est envoyé chaque fois que la société existante est mise à jour.
+# MDVA-42806 : un nouvel e-mail d’enregistrement de société est envoyé chaque fois que la société existante est mise à jour
 
-Le correctif MDVA-42806 résout le problème d’envoi d’un nouvel email d’enregistrement de société chaque fois qu’une société existante est mise à jour via l’API REST. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 est installé. L’ID de correctif est MDVA-42806. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
+Le correctif MDVA-42806 résout le problème d’envoi d’un nouvel e-mail d’enregistrement de société chaque fois qu’une société existante est mise à jour via l’API REST. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.9 est installé. L’ID du correctif est MDVA-42806. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 
 ## Produits et versions concernés
 
@@ -26,19 +27,19 @@ Le correctif MDVA-42806 résout le problème d’envoi d’un nouvel email d’e
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Un nouvel e-mail d’enregistrement de société est envoyé chaque fois qu’une société existante est mise à jour via l’API REST.
+Un nouvel e-mail d’enregistrement d’entreprise est envoyé chaque fois qu’une entreprise existante est mise à jour via l’API REST.
 
 <u>Conditions préalables</u> :
 
 Modules B2B installés.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Créez un compte de société.
+1. Créez un compte d’entreprise.
 1. Utilisez le point d’entrée `/V1&#x200B;/company&#x200B;/<company_id>`. Pour mettre à jour la société créée, voir [mettre à jour la société](https://developer.adobe.com/commerce/webapi/rest/b2b/company-object/#update-the-company) dans notre documentation destinée aux développeurs. Voici un exemple de payload :
 
 ```php
@@ -65,24 +66,24 @@ Modules B2B installés.
 
 <u>Résultats attendus</u> :
 
-Aucun courrier électronique n’est envoyé indiquant &quot;Nouvelle demande d’enregistrement de la société&quot;, car l’API met à jour une société existante.
+Aucun e-mail indiquant « Nouvelle demande d’enregistrement d’entreprise » n’est envoyé, car l’API met à jour une entreprise existante.
 
 <u>Résultats réels</u> :
 
-Un courrier électronique est envoyé, indiquant &quot;Nouvelle demande d’enregistrement de la société&quot; chaque fois que la demande d’API est envoyée.
+Un e-mail indiquant « Nouvelle demande d’enregistrement de société » est envoyé chaque fois que la demande d’API est envoyée.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
+Pour en savoir plus sur l’outil de correctifs de la qualité, voir :
 
-* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!DNL Quality Patches Tool].
+* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!DNL Quality Patches Tool].
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

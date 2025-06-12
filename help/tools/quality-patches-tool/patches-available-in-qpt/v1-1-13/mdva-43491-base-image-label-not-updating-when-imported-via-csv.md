@@ -1,18 +1,19 @@
 ---
-title: '''MDVA-43491 : Libellé de l''image de base non mis à jour lors d''un import via CSV'''
-description: Le correctif MDVA-43491 corrige le problème en raison duquel le &grave;base_image_label&grave; ne se met pas à jour lors d’un import via un fichier CSV pour un site web multi-magasin. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID de correctif est MDVA-43491. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
+title: 'MDVA-43491 : le libellé de l’image de base ne se met pas à jour lors de l’importation au format CSV'
+description: Le correctif MDVA-43491 corrige le problème en raison duquel « base_image_label » n’est pas mis à jour lors d’une importation via un fichier CSV pour un site web multi-magasin. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID du correctif est MDVA-43491. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 feature: Data Import/Export
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: f6a5f641-aaf0-4b6e-afa9-7f436f8f59e6
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
 
 ---
 
-# MDVA-43491 : Libellé de l’image de base non mis à jour lors d’un import via CSV
+# MDVA-43491 : le libellé de l’image de base ne se met pas à jour lors de l’importation au format CSV
 
-Le correctif MDVA-43491 corrige le problème où `base_image_label` ne se met pas à jour lors d’un import via un fichier CSV pour un site web multi-magasin. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID de correctif est MDVA-43491. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
+Le correctif MDVA-43491 corrige le problème en raison duquel le `base_image_label` n’est pas mis à jour lors d’une importation via un fichier CSV pour un site web multi-magasin. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID du correctif est MDVA-43491. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 
 ## Produits et versions concernés
 
@@ -26,50 +27,50 @@ Le correctif MDVA-43491 corrige le problème où `base_image_label` ne se met pa
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-`base_image_label` ne se met pas à jour lors d’un import à l’aide d’un fichier CSV pour un site web multi-magasin.
+Le `base_image_label` n’est pas mis à jour lors de l’importation à l’aide d’un fichier CSV pour un site web multi-magasin.
 
 <u>Conditions préalables</u> :
 
-Un ou plusieurs sites web, magasins et vues de magasin qui ne sont pas par défaut.
+Un ou plusieurs sites web, magasins et vues de magasin existants autres que ceux par défaut.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Créez un produit.
 
-   * Téléchargez une image.
-   * Affectez le produit aux sites web nouvellement créés.
+   * Chargez une image.
+   * Attribuez le produit aux sites web nouvellement créés.
 
 1. Exportez le produit au format CSV.
-1. Mettez à jour `base_image_label` pour chaque vue de magasin en dupliquant la ligne par défaut du fichier CSV.
-1. Importez le fichier CSV. Il mettra correctement à jour les libellés de chaque magasin, qui peuvent être vérifiés sous l’onglet **Images et vidéos** de la page de modification du produit.
+1. Mettez à jour la `base_image_label` de chaque vue de magasin en dupliquant la ligne par défaut du fichier CSV.
+1. Importez le fichier CSV. Les libellés de chaque boutique seront correctement mis à jour. Cela peut être vérifié dans l’onglet **Images et vidéos** de la page de modification du produit.
 1. Exportez à nouveau le fichier CSV et mettez à jour la colonne `base_image_label` avec des valeurs différentes.
 1. Importez à nouveau le fichier CSV.
-1. Ouvrez le produit dans Admin et vérifiez si le libellé a été mis à jour pour chaque vue de magasin.
+1. Ouvrez le produit dans l’interface d’administration et vérifiez si l’étiquette a été mise à jour pour chaque vue de magasin.
 
 <u>Résultats attendus</u> :
 
-Le texte de remplacement (libellé de l’image) est mis à jour avec la valeur spécifique au magasin, conformément au fichier CSV.
+Le texte secondaire (libellé de l’image) est mis à jour avec la valeur spécifique au magasin conformément au fichier CSV.
 
 <u>Résultats réels</u> :
 
 Le texte de remplacement (libellé de l’image) n’est pas mis à jour avec la valeur `base_image_label` dans le fichier CSV.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
+Pour en savoir plus sur l’outil de correctifs de la qualité, voir :
 
-* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!DNL Quality Patches Tool].
+* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!DNL Quality Patches Tool].
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

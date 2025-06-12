@@ -1,18 +1,19 @@
 ---
-title: 'ACSD-61134 : [!UICONTROL Braintree Vault] méthode de paiement automatiquement désélectionnée dans le workflow de passage en caisse'
-description: Appliquez le correctif ACSD-61134 pour résoudre le problème Adobe Commerce en raison duquel le mode de paiement *[!UICONTROL Braintree Vault]* est automatiquement désélectionné dans le workflow de passage en caisse lorsqu’un acheteur met à jour son adresse de facturation en désélectionnant la case à cocher *[!UICONTROL My billing and shipping address are the same]*.
+title: 'ACSD-61134 : [!UICONTROL Braintree Vault] mode de paiement automatiquement désélectionné dans le workflow de passage en caisse'
+description: Appliquez le correctif ACSD-61134 pour résoudre le problème d’Adobe Commerce où le mode de paiement *[!UICONTROL Braintree Vault]* est automatiquement désélectionné dans le workflow de passage en caisse lorsqu’un acheteur met à jour son adresse de facturation en décochant la case *[!UICONTROL My billing and shipping address are the same]*.
 feature: Checkout
 role: Admin, Developer
-source-git-commit: 459f1e70464e4df04dc306ee403730798f0f9b9e
+exl-id: 8aad34e2-89ef-460c-8921-91098bd1645b
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
 
 ---
 
-# ACSD-61134 : *[!UICONTROL Braintree Vault]* méthode de paiement automatiquement désélectionnée dans le workflow de passage en caisse
+# ACSD-61134 : *[!UICONTROL Braintree Vault]* mode de paiement automatiquement désélectionné dans le workflow de passage en caisse
 
-Le correctif ACSD-61134 corrige le problème en raison duquel le mode de paiement *[!UICONTROL Braintree Vault]* est automatiquement désélectionné dans le workflow de passage en caisse lorsqu’un acheteur met à jour son adresse de facturation en désélectionnant la case à cocher *[!UICONTROL My billing and shipping address are the same]* . Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.54 est installé. L’ID de correctif est ACSD-61134. Veuillez noter que ce problème doit être corrigé dans Adobe Commerce 2.4.7-beta1.
+Le correctif ACSD-61134 corrige le problème où le mode de paiement *[!UICONTROL Braintree Vault]* est automatiquement désélectionné dans le workflow de passage en caisse lorsqu’un acheteur met à jour son adresse de facturation en décochant la case *[!UICONTROL My billing and shipping address are the same]*. Ce correctif est disponible lorsque la version 1.1.54 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-61134. Notez que ce problème doit être corrigé dans la version 2.4.7-bêta1 d’Adobe Commerce.
 
 ## Produits et versions concernés
 
@@ -26,18 +27,18 @@ Adobe Commerce (toutes les méthodes de déploiement) 2.4.4 - 2.4.6-p8
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Le mode de paiement *[!UICONTROL Braintree Vault]* est automatiquement désélectionné dans le workflow de passage en caisse.
+*[!UICONTROL Braintree Vault]* mode de paiement est automatiquement désélectionné dans le workflow de passage en caisse.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Configurez le mode de paiement *[!DNL Braintree]* avec *[!UICONTROL Vault]* activé.
+1. Configurez le mode de paiement *[!DNL Braintree]* avec le *[!UICONTROL Vault]* activé.
 1. Extrayez et enregistrez une carte dans le *[!UICONTROL Vault]*.
-1. Extraire un autre produit.
-1. Sur la page *[!UICONTROL Shipping]*, ajoutez une nouvelle adresse de livraison afin de pouvoir sélectionner deux adresses.
+1. Extrayez un autre produit.
+1. Sur la page *[!UICONTROL Shipping]*, ajoutez une nouvelle adresse de livraison afin d&#39;avoir deux adresses à sélectionner.
 1. Sur la page *[!UICONTROL Payment]*, sélectionnez votre mode de paiement et cliquez sur **[!UICONTROL My billing and shipping addresses are the same]**.
 
 <u>Résultats attendus</u> :
@@ -46,18 +47,17 @@ Le mode de paiement sélectionné reste sélectionné.
 
 <u>Résultats réels</u> :
 
-Le mode de paiement sélectionné est décoché.
+Le mode de paiement sélectionné est désélectionné.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] : outil en libre-service pour les correctifs de qualité ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils.
-
+* [[!DNL Quality Patches Tool] : un outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils .

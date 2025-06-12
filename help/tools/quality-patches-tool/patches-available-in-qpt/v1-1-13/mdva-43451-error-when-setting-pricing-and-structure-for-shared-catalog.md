@@ -1,18 +1,19 @@
 ---
-title: 'MDVA-43451 : erreur lors de la définition des tarifs et de la structure pour le catalogue partagé'
-description: Le correctif MDVA-43451 résout le problème où l’utilisateur ne parvient pas à définir les tarifs et la structure d’un catalogue partagé. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID de correctif est MDVA-43451. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
+title: 'MDVA-43451 : erreur lors de la définition de la tarification et de la structure pour le catalogue partagé'
+description: Le correctif MDVA-43451 résout le problème en raison duquel l’utilisateur ne peut pas définir la tarification et la structure d’un catalogue partagé. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID du correctif est MDVA-43451. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 feature: Catalog Management
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 2cddfca2-ee32-4e73-9ef6-78125fbaa13d
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 0%
 
 ---
 
-# MDVA-43451 : erreur lors de la définition des tarifs et de la structure pour le catalogue partagé
+# MDVA-43451 : erreur lors de la définition de la tarification et de la structure pour le catalogue partagé
 
-Le correctif MDVA-43451 résout le problème où l’utilisateur ne parvient pas à définir les tarifs et la structure d’un catalogue partagé. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID de correctif est MDVA-43451. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
+Le correctif MDVA-43451 résout le problème en raison duquel l’utilisateur ne peut pas définir la tarification et la structure d’un catalogue partagé. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID du correctif est MDVA-43451. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 
 ## Produits et versions concernés
 
@@ -26,18 +27,18 @@ Le correctif MDVA-43451 résout le problème où l’utilisateur ne parvient pas
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-L’utilisateur ne peut pas définir les tarifs et la structure pour un catalogue partagé. Le message suivant s’affiche : *Le magasin demandé est introuvable. Vérifiez le magasin et réessayez.*
+L’utilisateur ne peut pas définir la tarification et la structure d’un catalogue partagé. Le message suivant s’affiche : *Le magasin demandé est introuvable. Vérifiez le magasin et réessayez.*
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Créez un site web personnalisé. Les identifiants des sites web doivent être 0, 1, 2.
+1. Créez un site web personnalisé. Les identifiants des sites web doivent être 0, 1 et 2.
 1. Créez un magasin sous le site web ci-dessus. Les identifiants des magasins doivent être 0,1,2.
-1. Créez trois vues de magasin pour le magasin ci-dessus. Les identifiants des vues de magasin doivent être 0,1, 2, 3 et 4.
-1. Supprimez la vue magasin avec l’identifiant 2. Le tableau du magasin doit maintenant ressembler au tableau ci-dessous.
+1. Créez trois vues de magasin pour le magasin ci-dessus. Les ID des vues de magasin doivent être 0,1, 2, 3 et 4.
+1. Supprimez la vue de magasin avec l’ID 2. Désormais, le tableau du magasin doit ressembler au tableau ci-dessous.
 
    ```bash
    MariaDB [m24devinvb2b]> SELECT store_id,code,website_id,group_id,name FROM store;
@@ -61,21 +62,21 @@ Le catalogue partagé est enregistré sans problème.
 
 <u>Résultats réels</u> :
 
-Vous ne pouvez pas enregistrer le catalogue partagé. L&#39;erreur suivante s&#39;affiche :
+Vous ne pouvez pas enregistrer le catalogue partagé. L’erreur suivante s’affiche :
 *Le magasin demandé est introuvable. Vérifiez le magasin et réessayez.*
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
+Pour en savoir plus sur l’outil de correctifs de la qualité, voir :
 
-* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!DNL Quality Patches Tool].
+* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!DNL Quality Patches Tool].
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

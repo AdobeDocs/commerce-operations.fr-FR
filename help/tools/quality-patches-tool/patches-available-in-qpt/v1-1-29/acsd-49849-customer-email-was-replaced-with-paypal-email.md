@@ -1,19 +1,19 @@
 ---
-title: 'ACSD-49849 : l’email du client a été remplacé par l’email PayPal'
-description: Appliquez le correctif ACSD-49849 pour résoudre le problème Adobe Commerce en raison duquel l’email du client a été remplacé par l’email PayPal lors du passage d’une commande avec PayPal Express via GraphQL.
+title: 'ACSD-49849 : l''e-mail du client a été remplacé par l''e-mail PayPal'
+description: Appliquez le correctif ACSD-49849 pour résoudre le problème d'Adobe Commerce où l'e-mail du client a été remplacé par un e-mail PayPal lors de la commande avec PayPal Express via GraphQL.
 feature: Admin Workspace, Communications, Orders, Payments
 role: Admin
 exl-id: 1d7a2bde-892a-4ded-a4b4-9450989c8aee
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%
 
 ---
 
-# ACSD-49849 : l&#39;email du client est remplacé par l&#39;email [!DNL PayPal]
+# ACSD-49849 : l’e-mail du client est remplacé par [!DNL PayPal] e-mail
 
-Le correctif ACSD-49849 corrige le problème en raison duquel l’email d’un client est remplacé par un email [!DNL PayPal's] lors du placement d’une commande avec [!DNL PayPal Express] via GraphQL. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.29 est installé. L’ID de correctif est ACSD-49849. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-49849 corrige le problème de remplacement de l’e-mail d’un client par un e-mail [!DNL PayPal's] lors de la commande avec [!DNL PayPal Express] via GraphQL. Ce correctif est disponible lorsque la version 1.1.29 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-49849. Notez que le problème a été résolu dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -27,43 +27,43 @@ Le correctif ACSD-49849 corrige le problème en raison duquel l’email d’un c
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-L’email d’un client est remplacé par un [!DNL PayPal's] email lors du placement d’une commande avec [!DNL PayPal Express] via GraphQL.
+L’e-mail d’un client ou d’une cliente est remplacé par un e-mail [!DNL PayPal's] lors de la commande avec [!DNL PayPal Express] via GraphQL.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Payments]**.
 1. Activez et configurez [!DNL PayPal Express] et définissez **[!UICONTROL Payment Action]** = **[!UICONTROL Sale]**.
 1. Accédez à **[!UICONTROL Catalog]** > **[!UICONTROL Products]** et créez un produit simple.
-1. Effectuez le paiement des invités à l’aide de GraphQL. Pour plus d’informations, reportez-vous au [tutoriel de passage en caisse GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) dans la documentation Adobe Commerce Developer.
-1. Utilisez [!DNL PayPal Express] comme méthode de paiement.
-1. Notez l’e-mail que vous avez utilisé à l’étape où vous [configurez votre e-mail pour le panier](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/set-email-address/) dans la documentation du développeur Adobe Commerce.
-1. Une fois la commande passée, accédez à l’administrateur Adobe Commerce et vérifiez l’email dans l’ordre créé.
+1. Effectuez le passage en caisse des invités à l’aide de GraphQL. Pour plus d’informations, consultez le tutoriel de passage en caisse de [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) dans la documentation pour les développeurs Adobe Commerce.
+1. Utilisez [!DNL PayPal Express] comme mode de paiement.
+1. Notez l’e-mail que vous avez utilisé à l’étape de [configuration de l’e-mail pour le panier](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/set-email-address/) dans la documentation pour les développeurs d’Adobe Commerce.
+1. Une fois la commande passée, accédez à l’administration Adobe Commerce et vérifiez l’e-mail dans la commande créée.
 
 <u>Résultats attendus</u> :
 
-L’email est le même que celui défini lors de l’extraction.
+L’adresse e-mail est la même que celle définie lors du passage en caisse.
 
 <u>Résultats réels</u> :
 
-L’e-mail défini lors du passage en caisse est remplacé par l’e-mail défini dans le compte [!DNL PayPal].
+L’adresse e-mail définie lors du passage en caisse est remplacée par celle définie dans le compte [!DNL PayPal].
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

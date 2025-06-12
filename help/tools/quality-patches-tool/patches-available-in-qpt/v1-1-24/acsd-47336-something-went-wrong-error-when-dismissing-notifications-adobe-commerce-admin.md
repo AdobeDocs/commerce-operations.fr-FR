@@ -1,19 +1,19 @@
 ---
-title: 'ACSD-47336 : [!UICONTROL Something went wrong] erreur lors de l''affichage des notifications dans l''administrateur Adobe Commerce'
-description: Appliquez le correctif ACSD-47336 pour résoudre le problème Adobe Commerce où l’utilisateur voit [!UICONTROL Something went wrong] erreur lors de l’affichage des notifications dans l’administrateur  [!DNL Commerce] .
+title: 'ACSD-47336 : erreur [!UICONTROL Something went wrong] lors de l’ignorance des notifications dans Adobe Commerce Admin'
+description: Appliquez le correctif ACSD-47336 pour résoudre le problème d’Adobe Commerce où l’utilisateur voit [!UICONTROL Something went wrong] erreur lors de l’abandon des notifications dans l’ [!DNL Commerce] .
 feature: Admin Workspace
 role: Admin
 exl-id: da0c0119-6720-493f-a278-d573ed898a63
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%
 
 ---
 
-# ACSD-47336 : _[!UICONTROL Something went wrong]_&#x200B;erreur lors de l&#39;affichage des notifications dans l&#39;administrateur Adobe Commerce
+# ACSD-47336 : erreur _[!UICONTROL Something went wrong]_lors de l’ignorance des notifications dans Adobe Commerce Admin
 
-Le correctif ACSD-47336 corrige le problème en raison duquel l’utilisateur détecte l’erreur _[!UICONTROL Something went wrong]_&#x200B;lors de l’affichage des notifications dans l’administrateur [!DNL Commerce]. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.24 est installé. L’ID de correctif est ACSD-47336. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-47336 corrige le problème en raison duquel l’utilisateur voit l’erreur _[!UICONTROL Something went wrong]_lors de l’ignorance des notifications dans l’administrateur [!DNL Commerce]. Ce correctif est disponible lorsque la version 1.1.24 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-47336. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -27,39 +27,39 @@ Le correctif ACSD-47336 corrige le problème en raison duquel l’utilisateur d�
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-L’utilisateur voit une erreur _[!UICONTROL Something went wrong]_&#x200B;lors de l’affichage des notifications dans l’administrateur [!DNL Commerce].
+L’utilisateur voit _[!UICONTROL Something went wrong]_erreur lors de l’ignorance des notifications dans l’administration [!DNL Commerce].
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Effectuez une opération en bloc (par exemple, la mise à jour en masse des attributs de produit à partir de la grille de produits).
+1. Effectuer une opération en bloc (par exemple, mettre à jour en bloc les attributs de produit à partir de la grille de produits).
 1. Terminez l’opération (par exemple, exécutez `bin/magento queue:consumer:start product_action_attribute.update`).
-1. Actualisez la page d’administration [!DNL Commerce], développez la section de notification d’administrateur, puis cliquez sur le lien **[!UICONTROL Dismiss All Completed Tasks]**.
+1. Actualisez la page [!DNL Commerce] Admin, développez la section Notification de l’administrateur et cliquez sur le lien **[!UICONTROL Dismiss All Completed Tasks]**.
 
 <u>Résultats attendus</u> :
 
-L’erreur _[!UICONTROL Something went wrong]_&#x200B;ne doit pas s’afficher lors de l’effacement des tâches terminées.
+L’erreur _[!UICONTROL Something went wrong]_ne doit pas s’afficher lors de l’effacement des tâches terminées.
 
 <u>Résultats réels</u> :
 
-L’erreur _[!UICONTROL Something went wrong]_&#x200B;s’affiche.
+L’erreur _[!UICONTROL Something went wrong]_s’affiche.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

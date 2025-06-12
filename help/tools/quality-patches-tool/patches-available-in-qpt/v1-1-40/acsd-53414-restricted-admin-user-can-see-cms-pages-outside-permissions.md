@@ -1,18 +1,19 @@
 ---
-title: "ACSD-53414 : les utilisateurs administrateurs à restrictions peuvent voir les pages CMS en dehors de leur portée d’autorisation"
-description: Appliquez le correctif ACSD-53414 pour résoudre le problème Adobe Commerce en raison duquel un utilisateur administrateur restreint peut voir les pages CMS en dehors de leur portée d’autorisation.
+title: 'ACSD-53414 : les utilisateurs administrateurs restreints peuvent voir les pages CMS en dehors de leur portée d’autorisations'
+description: Appliquez le correctif ACSD-53414 pour résoudre le problème d’Adobe Commerce où un utilisateur administrateur restreint peut voir les pages CMS en dehors de sa portée d’autorisations.
 feature: CMS
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 86658336-679b-4fe0-9d26-56064ff0c604
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
 
 ---
 
-# ACSD-53414 : Les utilisateurs administrateurs à restrictions peuvent voir les pages CMS en dehors de leur périmètre d’autorisation.
+# ACSD-53414 : les utilisateurs administrateurs restreints peuvent voir les pages CMS en dehors de leur portée d’autorisations
 
-Le correctif ACSD-53414 corrige le problème en raison duquel un utilisateur administrateur restreint peut voir les pages CMS en dehors de leur portée d’autorisation. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.40 est installé. L’ID de correctif est ACSD-53414. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-53414 corrige le problème en raison duquel un utilisateur administrateur restreint peut voir les pages CMS en dehors de sa portée d’autorisations. Ce correctif est disponible lorsque la version 1.1.40 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-53414. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -26,46 +27,46 @@ Le correctif ACSD-53414 corrige le problème en raison duquel un utilisateur adm
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Les utilisateurs administrateurs à restrictions peuvent voir les pages CMS au-delà de leur portée d’autorisation.
+Les utilisateurs administrateurs restreints peuvent voir les pages CMS au-delà de leur portée d’autorisations.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Créez un site web (sub_website), un magasin (sub_store) et un storeview (sub_storeview).
-1. Créez un rôle de sous-expert, permettant de définir la portée de sub_website et sub_store. Attribuez uniquement les autorisations suivantes : [!UICONTROL Dashboard] et [!UICONTROL Pages].
-1. Créez un utilisateur administrateur et affectez-le au rôle sub_expert.
-1. Affectez les pages de CSM suivantes à sub_storeview et à l’affichage de magasin par défaut.
+1. Créez un site web (sous_site web), un magasin (sous_magasin) et un magasin (sous_magasin).
+1. Créez un rôle de sous_expert, autorisant la portée du sous_site web et du sous_magasin. Attribuez uniquement les autorisations suivantes : [!UICONTROL Dashboard] et [!UICONTROL Pages].
+1. Créez un utilisateur administrateur et affectez-le au rôle sub_expert .
+1. Affectez les pages CSM suivantes à sub_store et à store review par défaut.
 
-   * [!UICONTROL 404 Not Found] > Sous-storeview
-   * [!UICONTROL 503 Service Unavailable] > Présentation par défaut
+   * [!UICONTROL 404 Not Found] > Sous-magasin
+   * [!UICONTROL 503 Service Unavailable] > Storereview par défaut
 
-1. Connectez-vous à l’administrateur à l’aide de l’utilisateur administrateur créé à l’étape 3.
-1. Vérifiez la grille de page CMS.
+1. Connectez-vous à l’administrateur en utilisant l’utilisateur administrateur créé à l’étape 3.
+1. Vérifiez la grille de la page CMS.
 
 <u>Résultats attendus</u> :
 
-La page *[!UICONTROL 503 Service Unavailable]* n’est pas visible par l’administrateur web.
+*[!UICONTROL 503 Service Unavailable]* page n’est pas visible par l’administrateur web.
 
 <u>Résultats réels</u> :
 
 *[!UICONTROL 503 Service Unavailable]* est visible par l’administrateur web.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

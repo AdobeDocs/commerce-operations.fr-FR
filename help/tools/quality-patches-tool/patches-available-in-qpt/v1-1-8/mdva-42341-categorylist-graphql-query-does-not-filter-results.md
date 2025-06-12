@@ -1,18 +1,19 @@
 ---
-title: '"MDVA-42341 : la requête GraphQL "categoryList" ne filtre pas les résultats"'
-description: Le correctif MDVA-42341 résout le problème en raison duquel la requête GraphQL "categoryList" ne filtre pas les résultats si une requête comporte l’en-tête Magasin. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8 est installé. L’ID de correctif est MDVA-42341. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
+title: 'MDVA-42341 : la requête GraphQL « categoryList » ne filtre pas les résultats'
+description: Le correctif MDVA-42341 résout le problème où la requête GraphQL « categoryList » ne filtre pas les résultats si une requête contient l’en-tête Store . Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.8 est installé. L’ID du correctif est MDVA-42341. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
 feature: GraphQL, Categories
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 56b81385-6db0-4e62-8e2b-bccfc9e0a581
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
 
 ---
 
-# MDVA-42341 : la requête GraphQL &quot;categoryList&quot; ne filtre pas les résultats
+# MDVA-42341 : la requête GraphQL « categoryList » ne filtre pas les résultats
 
-Le correctif MDVA-42341 résout le problème en raison duquel la requête GraphQL &quot;categoryList&quot; ne filtre pas les résultats si une requête comporte l’en-tête Magasin. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8 est installé. L’ID de correctif est MDVA-42341. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
+Le correctif MDVA-42341 résout le problème où la requête GraphQL « categoryList » ne filtre pas les résultats si une requête contient l’en-tête Store . Ce correctif est disponible lors de l’installation de l’outil [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) version 1.1.8. L’ID du correctif est MDVA-42341. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
 
 ## Produits et versions concernés
 
@@ -26,57 +27,57 @@ Le correctif MDVA-42341 résout le problème en raison duquel la requête GraphQ
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-La requête GraphQL &quot;categoryList&quot; ne filtre pas les résultats si une requête comporte l’en-tête Magasin .
+La requête GraphQL « categoryList » ne filtre pas les résultats si une requête contient l’en-tête Store .
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Créez une nouvelle catégorie racine et nommez-la **root2**.
-1. Créez un second site Web/Magasin/Magasin et affectez **root2** au nouveau magasin.
-1. Créez une nouvelle catégorie sous Catégorie racine par défaut = catégorie1.
-1. À l’aide d’une requête GraphQL, obtenez une liste de catégories pour le deuxième site web (utilisez Header store = new).
+1. Créez une catégorie racine et nommez-la **root2**.
+1. Créez un second site web/magasin/magasin et affectez **root2** au nouveau magasin.
+1. Créez une catégorie sous Catégorie racine par défaut = category1.
+1. À l’aide d’une requête GraphQL, obtenez une liste de catégories pour le deuxième site web (utilisez Magasin d’en-têtes = nouveau).
 
 <pre>
 <code class="language-graphql">
-&lbrace;
-  categoryList(filters: {name: {match: "category1"}}) &lbrace;
+{
+  categoryList(filters: {name: {match: "category1"}}) {
     uid
     level
     name
-    breadcrumbs &lbrace;
+    breadcrumbs {
       category_uid
       category_name
       category_level
       category_url_key
-    &rbrace;
-  &rbrace;
-&rbrace;
+    }
+  }
+}
 </code>
 </pre>
 
 <u>Résultats attendus</u> :
 
-Les catégories de la catégorie racine par défaut ne sont pas répertoriées en réponse, car nous utilisons un &quot;nouvel&quot; en-tête de magasin.
+Les catégories de la catégorie racine par défaut ne sont pas répertoriées en réponse, car nous utilisons un « nouvel » en-tête de magasin.
 
 <u>Résultats réels</u> :
 
 Les catégories de la catégorie racine par défaut sont disponibles dans les résultats.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
+Pour en savoir plus sur l’outil de correctifs de la qualité, voir :
 
-* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!DNL Quality Patches Tool].
+* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!DNL Quality Patches Tool].
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

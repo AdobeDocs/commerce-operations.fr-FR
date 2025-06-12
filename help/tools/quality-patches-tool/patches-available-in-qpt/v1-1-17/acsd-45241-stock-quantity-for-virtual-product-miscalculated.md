@@ -1,18 +1,19 @@
 ---
-title: "ACSD-45241 : mal calculé la quantité en stock d'un produit virtuel"
-description: Le correctif ACSD-45241 corrige le problème en raison duquel la quantité de stock du produit virtuel est mal calculée après la création d’un avoir de crédit. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.17 est installé. L’ID de correctif est ACSD-45241. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.4.
+title: 'ACSD-45241 : erreur de calcul de la quantité de stock du produit virtuel'
+description: Le correctif ACSD-45241 corrige le problème où la quantité de stock du produit virtuel est mal calculée après la création d'un avoir. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.17 est installé. L’ID du correctif est ACSD-45241. Notez que le problème a été résolu dans Adobe Commerce 2.4.4.
 feature: Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 447a84f0-aab4-4bb1-9f06-c056c006cd69
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 0%
 
 ---
 
-# ACSD-45241 : erreur de calcul de la quantité en stock d’un produit virtuel
+# ACSD-45241 : erreur de calcul de la quantité de stock du produit virtuel
 
-Le correctif ACSD-45241 corrige le problème en raison duquel la quantité de stock du produit virtuel est mal calculée après la création d’un avoir de crédit. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.17 est installé. L’ID de correctif est ACSD-45241. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.4.
+Le correctif ACSD-45241 corrige le problème où la quantité de stock du produit virtuel est mal calculée après la création d&#39;un avoir. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.17 est installé. L’ID du correctif est ACSD-45241. Notez que le problème a été résolu dans Adobe Commerce 2.4.4.
 
 ## Produits et versions concernés
 
@@ -26,45 +27,45 @@ Le correctif ACSD-45241 corrige le problème en raison duquel la quantité de st
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-La quantité d’actions d’un produit virtuel est mal calculée après la création d’une note de crédit.
+La quantité de stock d&#39;un produit virtuel est mal calculée après la création d&#39;un avoir.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Créez un produit configurable avec un produit virtuel en tant que produit enfant dans l’administrateur Commerce.
+1. Créez un produit configurable avec un produit virtuel en tant que produit enfant dans Commerce Admin.
 1. Assurez-vous que les deux produits créés à l’étape 1 sont en stock.
-1. Marquez la quantité pour le produit virtuel créé à l’étape 1 comme 100 et conservez également la quantité vendable 100.
+1. Marquez la quantité du produit virtuel créé à l&#39;étape 1 sur 100 et conservez également la quantité vendable sur 100.
 1. Ajoutez le produit au panier.
-1. passer une commande avec le produit virtuel créé à l’étape 1.
-1. Conservez l’état de la commande comme &quot;En attente&quot;. Pas besoin de traiter le paiement.
-1. `order_created` enregistrement créé dans `inventory_reservation`. La quantité de produit virtuelle affiche 100 avec une quantité vendable de 99.
-1. Ouvrez la commande et accédez à **Facture** > **Submit Invoice**.
-1. `invoice_created` enregistrement créé dans `inventory_reservation`. La quantité virtuelle du produit est maintenant de 99, et la quantité vendable aussi est de 99.
-1. Créez une note de crédit sans sélectionner **Revenir à Stock**.
+1. Commandez le produit virtuel créé à l&#39;étape 1.
+1. Conserver le statut de la commande comme « En attente ». Pas besoin de traiter le paiement.
+1. Enregistrement `order_created` créé en `inventory_reservation`. La quantité de produit virtuel affiche 100 avec une quantité vendable égale à 99.
+1. Ouvrez la commande et accédez à **Facture** > **Soumettre la facture**.
+1. Enregistrement `invoice_created` créé en `inventory_reservation`. La quantité de produit virtuel est maintenant de 99 et la quantité vendable est également de 99.
+1. Créez un avoir sans sélectionner **Retour aux stocks**.
 
 <u>Résultats attendus</u> :
 
-Aucun nouvel enregistrement n’est créé dans `inventory_reservation` et la quantité en stock du produit virtuel reste inchangée.
+Aucun nouvel enregistrement n&#39;est créé dans `inventory_reservation` et la quantité de stock du produit virtuel reste inchangée.
 
 <u>Résultats réels</u> :
 
-Un enregistrement `creditmemo_created` est créé dans `inventory_reservation`, et la quantité de stock de produit virtuel est ajustée à 98 avec une quantité vendable à 99.
+Un enregistrement `creditmemo_created` est créé dans `inventory_reservation` et la quantité de stock de produits virtuels est ajustée à 98 avec la quantité vendable à 99.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
+Pour en savoir plus sur l’outil de correctifs de la qualité, voir :
 
-* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!DNL Quality Patches Tool].
+* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!DNL Quality Patches Tool].
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

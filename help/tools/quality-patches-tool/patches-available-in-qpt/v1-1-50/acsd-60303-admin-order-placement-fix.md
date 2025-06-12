@@ -1,18 +1,19 @@
 ---
-title: "ACSD-60303 : problème de placement des commandes d’administration résolu avec la minification d’HTML activée"
-description: Appliquez le correctif ACSD-60303 pour résoudre le problème Adobe Commerce en raison duquel une commande de l’administrateur ne peut pas être placée si la minimisation des HTMLS est activée.
+title: 'ACSD-60303 : problème d’emplacement de commande administrateur résolu avec la minimisation d’HTML activée'
+description: Appliquez le correctif ACSD-60303 pour résoudre le problème d’Adobe Commerce en raison duquel une commande de l’administrateur ne peut pas être passée si la minimisation d’HTML est activée.
 feature: Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 85b987e7-9d65-4d15-8099-985dc227b66c
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
 
 ---
 
-# ACSD-60303 : résolution du problème d’emplacement des commandes d’administration avec la minification d’HTML activée
+# ACSD-60303 : problème d’emplacement de commande administrateur résolu avec la minimisation d’HTML activée
 
-Le correctif ACSD-60303 corrige le problème en raison duquel une commande de l’administrateur ne peut pas être placée si la minification d’HTML est activée. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.50 est installé. L’ID de correctif est ACSD-60303. Veuillez noter que le problème devrait être corrigé dans la version 2.4.8.
+Le correctif ACSD-60303 corrige le problème en raison duquel une commande de l’administrateur ne peut pas être passée si la minimisation d’HTML est activée. Ce correctif est disponible lorsque la version 1.1.50 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-60303. Notez que le problème doit être résolu dans la version 2.4.8.
 
 ## Produits et versions concernés
 
@@ -26,21 +27,21 @@ Le correctif ACSD-60303 corrige le problème en raison duquel une commande de l�
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Les commandes ne peuvent pas être placées à partir du panneau d’administration lorsque la minification d’HTML est activée.
+Les commandes ne peuvent pas être passées à partir du panneau d’administration lorsque la minimisation d’HTML est activée.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Activez la minimisation des HTMLS.
-1. Définissez le **[!UICONTROL Application Mode]** sur *[!UICONTROL Production]*.
-1. Créez une commande à partir du panneau Admin.
+1. Activez la minimisation HTML.
+1. Définissez la **[!UICONTROL Application Mode]** sur *[!UICONTROL Production]*.
+1. Créez une commande à partir du panneau d’administration.
 
 <u>Résultats attendus</u> :
 
-La commande est passée avec succès.
+La commande a été passée.
 
 <u>Résultats réels</u> :
 
@@ -48,19 +49,19 @@ La commande n’est pas créée et l’erreur suivante est consignée :
 
 `report.CRITICAL: ParseError: syntax error, unexpected token "<<" in var/view_preprocessed/pub/static/vendor/magento/module-gift-wrapping/view/adminhtml/templates/order/create/info.phtml:1`
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

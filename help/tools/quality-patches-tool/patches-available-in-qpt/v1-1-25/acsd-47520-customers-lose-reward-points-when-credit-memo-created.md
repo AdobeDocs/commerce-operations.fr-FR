@@ -1,18 +1,19 @@
 ---
-title: "ACSD-47520 : les clients perdent des points de récompense lors de la création d’une note de crédit"
-description: Appliquez le correctif ACSD-47520 pour résoudre le problème Adobe Commerce en raison duquel les clients perdent des points de récompense lorsqu’une note de crédit est créée.
+title: 'ACSD-47520 : les clients perdent des points de récompense lors de la création d''un avoir'
+description: Appliquez le correctif ACSD-47520 pour résoudre le problème d’Adobe Commerce en raison duquel les clients perdent des points de récompense lors de la création d’un avoir.
 feature: Admin Workspace, Cache, Orders, Rewards, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 09104451-e9f0-4ddb-b019-8aa34630edb9
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
 
 ---
 
-# ACSD-47520 : les clients perdent des points de récompense lors de la création d’une note de crédit
+# ACSD-47520 : les clients perdent des points de récompense lors de la création d&#39;un avoir
 
-Le correctif ACSD-47520 corrige le problème en raison duquel les clients perdent des points de récompense lors de la création d’une note de crédit. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.25 est installé. L’ID de correctif est ACSD-47520. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-47520 corrige le problème où les clients perdent des points de récompense lors de la création d&#39;un avoir. Ce correctif est disponible lorsque la version 1.1.25 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-47520. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -24,15 +25,15 @@ Le correctif ACSD-47520 corrige le problème en raison duquel les clients perden
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Les clients perdent des points de récompense lorsqu’un avoir est créé.
+Les clients perdent des points de récompense lors de la création d&#39;un avoir.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Accédez à l’administrateur Adobe Commerce > **[!UICONTROL Store]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Reward Points]**.
+1. Accédez à Adobe Commerce Admin > **[!UICONTROL Store]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Reward Points]**.
 1. Modifiez le paramètre :
    * **[!UICONTROL Enable Reward Points Functionality]** = _Oui_
    * **[!UICONTROL Enable Reward Points Functionality on Storefront]** = _Oui_
@@ -42,37 +43,37 @@ Les clients perdent des points de récompense lorsqu’un avoir est créé.
 1. Accédez à Admin > **[!UICONTROL Store]** > **[!UICONTROL Other Settings]** > **[!UICONTROL Reward Exchange Rates]** et cliquez sur **[!UICONTROL Add New Rate]**.
 1. Ajoutez un nouveau taux (1:1) et videz le cache.
 1. Créez un client et ajoutez 10 points de récompense à ce compte.
-1. Accédez à Admin > **[!UICONTROL Sales]** > **[!UICONTROL Orders]** > **[!UICONTROL Create New Order]** > Sélectionnez le client créé à l’étape précédente.
+1. Accédez à Admin > **[!UICONTROL Sales]** > **[!UICONTROL Orders]** > **[!UICONTROL Create New Order]** > Sélectionnez le client ou la cliente créé(e) à l’étape précédente.
 1. Sélectionnez un produit dont le prix est supérieur aux points de récompense.
-1. Passer une commande par n&#39;importe quel mode de paiement et les points de récompense.
+1. Passez une commande via n&#39;importe quel mode de paiement et les points de récompense.
 1. Créez une facture pour la commande.
-1. Créez une note de crédit, mais ne remboursez pas les points de récompense.
+1. Créez un avoir, mais ne remboursez pas les points de récompense.
 
 <u>Résultats attendus</u> :
 
-* L&#39;administrateur peut rembourser les points de récompense.
+* L’administrateur peut rembourser les points de récompense.
 
-* L’état de la commande est fermé.
+* Le statut de la commande sera clôturé.
 
 <u>Résultats réels</u> :
 
 * Il n&#39;y a aucun moyen de rembourser les points de récompense.
 
-* L’état de la commande est **[!UICONTROL Completed]**.
+* Le statut de la commande est **[!UICONTROL Completed]**.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

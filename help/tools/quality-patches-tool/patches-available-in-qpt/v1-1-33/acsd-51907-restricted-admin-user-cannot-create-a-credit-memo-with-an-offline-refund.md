@@ -1,16 +1,17 @@
 ---
-title: "ACSD-51907 : L’utilisateur administrateur restreint ne peut pas créer de note de crédit pour le remboursement hors ligne"
-description: Appliquez le correctif ACSD-51907 pour résoudre le problème Adobe Commerce en raison duquel l’utilisateur administrateur restreint ne peut pas créer d’avoir avec un remboursement hors ligne.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+title: 'ACSD-51907 : l''utilisateur administrateur restreint ne peut pas créer d''avoir pour le remboursement hors ligne'
+description: Appliquez le correctif ACSD-51907 pour résoudre le problème d’Adobe Commerce en raison duquel l’utilisateur administrateur restreint ne peut pas créer d’avoir avec remboursement hors ligne.
+exl-id: 1c44d99b-7633-4768-b7e7-332f3666a5d9
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
 
 ---
 
-# ACSD-51907 : L’utilisateur administrateur restreint ne peut pas créer de note de crédit pour le remboursement hors ligne.
+# ACSD-51907 : l&#39;utilisateur administrateur restreint ne peut pas créer d&#39;avoir pour le remboursement hors ligne
 
-Le correctif ACSD-51907 corrige le problème de performances où l’utilisateur administrateur restreint ne peut pas créer d’avoir avec un remboursement hors ligne. Ce correctif est disponible lorsque [!DNL Quality Patches Tool (QPT)] 1.1.33 est installé. L’ID de correctif est ACSD-51907. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-51907 corrige le problème de performances en raison duquel l’utilisateur administrateur restreint ne peut pas créer d’avoir avec remboursement hors ligne. Ce correctif est disponible lorsque la version 1.1.33 de [!DNL Quality Patches Tool (QPT)] est installée. L’ID du correctif est ACSD-51907. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -24,51 +25,51 @@ Le correctif ACSD-51907 corrige le problème de performances où l’utilisateur
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Un utilisateur administrateur restreint ne peut pas créer d’avoir avec un remboursement hors ligne.
+L&#39;utilisateur administrateur restreint ne peut pas créer un avoir avec un remboursement hors ligne.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Créez un **customer** sur le site web par défaut.
-1. Créez **un nouveau site Web** avec les *magasin* et *vue de magasin* associés.
+1. Créez un **client** sur le site web par défaut.
+1. Créez **nouveau site web** avec les *magasin* et *vue de magasin* associés.
 1. Définissez le site web par défaut sur le nouveau site web. Effacez les caches.
-1. Modifier la configuration du client : **Admin** > **Magasin** > **Configuration** > **Clients** > **Configuration du client** > **Partager les comptes du client = Global**.
-1. Créez un nouveau rôle d’utilisateur administrateur avec la portée du rôle définie sur le nouveau site web *(accès aux données commerciales uniquement)* dans **Admin** > **Système** > **Autorisations**&rbrace;.
+1. Modifiez la configuration client : **Admin** > **Store** > **Configuration** > **Customers** > **Configuration client** > **Partager les comptes client = Global**.
+1. Créez un rôle d’utilisateur administrateur avec la portée du rôle définie sur la nouvelle *de site web créée (accès aux données de vente uniquement)* dans **Admin** > **Système** > **Autorisations**.
 1. Créez un compte administrateur avec ce rôle.
-1. Créez une nouvelle commande à l’aide du mode de paiement en ligne *(par exemple, Auth.net ou PayPal)*.
+1. Créez une nouvelle commande à l&#39;aide du mode de paiement en ligne *(par ex. Auth.net ou PayPal)*.
 1. Connectez-vous en tant qu’utilisateur administrateur restreint.
-1. Accédez à **Sales** > **Commandes** > puis **page de vue de commande**.
+1. Accédez à **Ventes** > **Commandes** > puis **page d’affichage des commandes**.
 1. Créez une facture.
 1. Accédez à l’onglet Factures .
-1. Cliquez sur **Invoice**.
+1. Cliquez sur **Facture**.
 1. Cliquez sur **[!UICONTROL Credit Memo]**.
-1. Cochez la case **[!UICONTROL Refund to Store Credit]** et définissez le champ de texte à proximité de la valeur *1* .
-1. Cliquez sur le bouton **[!UICONTROL Refund Offline]** .
+1. Cochez la case **[!UICONTROL Refund to Store Credit]** , définissez le champ de texte près de lui sur la valeur *1*.
+1. Cliquez sur le bouton **[!UICONTROL Refund Offline]**.
 
 <u>Résultats attendus</u> :
 
-La note de crédit est créée et *$1* est remboursé au crédit de la boutique.
+L&#39;avoir est créé et *1 $* est remboursé au crédit du magasin.
 
 <u>Résultats réels</u> :
 
-Le message d’erreur, *Plus d’autorisations sont nécessaires pour afficher cet élément* s’affiche.
+Le message d’erreur *Des autorisations supplémentaires sont nécessaires pour afficher cet élément* s’affiche.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

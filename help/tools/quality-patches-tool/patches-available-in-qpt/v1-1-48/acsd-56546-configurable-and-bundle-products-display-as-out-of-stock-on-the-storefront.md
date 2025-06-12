@@ -1,18 +1,19 @@
 ---
-title: "ACSD-56546 : les produits configurables et groupés s’affichent en rupture de stock sur le storefront"
-description: Appliquez le correctif ACSD-56546 pour résoudre le problème Adobe Commerce en raison duquel les produits configurables et groupés s’affichent en rupture de stock sur le storefront lorsque l’option de configuration *[!UICONTROL Display Out of Stock Products]* est désactivée.
+title: 'ACSD-56546 : les produits configurables et groupés s''affichent comme étant en rupture de stock sur le storefront'
+description: Appliquez le correctif ACSD-56546 pour résoudre le problème d’Adobe Commerce où les produits configurables et groupés s’affichent comme étant en rupture de stock sur le storefront lorsque l’option de configuration *[!UICONTROL Display Out of Stock Products]* est désactivée.
 feature: Storefront, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d9bb05ca-a84e-48bb-957e-55b28631b3cb
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
 
 ---
 
-# ACSD-56546 : les produits configurables et groupés s’affichent en rupture de stock sur le storefront.
+# ACSD-56546 : les produits configurables et groupés s&#39;affichent comme étant en rupture de stock sur le storefront
 
-Le correctif ACSD-56546 corrige le problème en raison duquel les produits configurables et groupés s’affichent en rupture de stock sur le storefront. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.48 est installé. L’ID de correctif est ACSD-56546. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-56546 corrige le problème où les produits configurables et groupés s’affichent comme étant en rupture de stock sur le storefront. Ce correctif est disponible lorsque la version 1.1.48 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-56546. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -26,22 +27,22 @@ Le correctif ACSD-56546 corrige le problème en raison duquel les produits confi
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Les produits configurables et groupés s’affichent en rupture de stock sur le storefront lorsque l’option *[!UICONTROL Display Out of Stock Products]* est désactivée.
+Les produits configurables et groupés s’affichent comme étant en rupture de stock sur le storefront lorsque *[!UICONTROL Display Out of Stock Products]* option est désactivée.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Définissez l’option **[!UICONTROL Display Out of Stock Products]** sur *Non*.
-1. Créez un site web, un magasin et un storeview.
-1. Créez une source et un stock, puis attribuez-le au deuxième site web.
-1. Créez un *produit configurable* avec deux produits enfants. Affectez les produits enfants à la fois aux sources et aux deux sites web.
-1. Mettez à jour le premier produit enfant avec *qty=0* dans les deux sources.
+1. Créez un site web, un magasin et une révision de magasin.
+1. Créez une source et un stock, puis affectez-les au second site web.
+1. Créez un *produit configurable* avec deux produits enfants. Attribuez les deux produits enfants aux deux sources et aux deux sites web.
+1. Mettez à jour le premier produit enfant pour qu&#39;il ait *qty=0* dans les deux sources.
 1. Mettez à jour le deuxième produit enfant et désactivez-le sur le deuxième site web.
 1. Effectuez une réindexation complète.
-1. Vérifiez la catégorie contenant le produit configurable sur le deuxième site web.
+1. Vérifiez la catégorie qui contient le produit configurable sur le deuxième site web.
 
 <u>Résultats attendus</u> :
 
@@ -51,19 +52,19 @@ Les produits configurables en rupture de stock ne sont pas visibles sur le store
 
 Les produits configurables en rupture de stock sont visibles sur le storefront même lorsque l’option *[!UICONTROL Display Out of Stock Products]* est désactivée.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

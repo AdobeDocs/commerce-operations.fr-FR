@@ -1,18 +1,19 @@
 ---
-title: 'ACSD-51528 : Différents comportements sur la mise en forme serpent_case'
-description: Appliquez le correctif ACSD-51528 pour résoudre le problème Adobe Commerce où il existe différents comportements sur la mise en forme snake_case.
+title: 'ACSD-51528 : différents comportements sur la mise en forme snake_case'
+description: Appliquez le correctif ACSD-51528 pour résoudre le problème Adobe Commerce où il existe différents comportements sur le formatage snake_case.
 feature: Variables
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5f2add4b-8209-47a7-bfbd-cc434a050f0f
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
 
 ---
 
-# ACSD-51528 : Différents comportements sur la mise en forme snake_case
+# ACSD-51528 : différents comportements sur la mise en forme snake_case
 
-Le correctif ACSD-51528 corrige différents comportements sur la mise en forme snake_case. Ce correctif est disponible lorsque [!DNL Quality Patches Tool (QPT)] 1.1.32 est installé. L’ID de correctif est ACSD-51528. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-51528 corrige différents comportements sur le formatage snake_case. Ce correctif est disponible lorsque la version 1.1.32 de [!DNL Quality Patches Tool (QPT)] est installée. L’ID du correctif est ACSD-51528. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -26,39 +27,39 @@ Le correctif ACSD-51528 corrige différents comportements sur la mise en forme s
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Différents comportements sur la mise en forme snake_case.
+Les différents comportements sur la mise en forme snake_case.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Testez la fonction `\Magento\Framework\Api\DataObjectHelper::populateWithArray` avec une variété de noms de propriété différents.
-1. Les propriétés portant des noms tels que *NewPName* doivent être transformées en *new_p_name*, au lieu de cela, elles sont transformées en *new_pname*.
-1. En outre, lors de l&#39;utilisation de la fonction *getNewPName* dans l&#39;objet, *null* est renvoyé car le *modèle abstrait* transformera correctement l&#39;appel en *new_p_name* rendant les deux fonctions incompatibles l&#39;une avec l&#39;autre.
+1. Testez la fonction `\Magento\Framework\Api\DataObjectHelper::populateWithArray` avec différents noms de propriété.
+1. Les propriétés portant des noms tels que *NewPName* doivent être transformées en *new_p_name*, au lieu de cela elles sont transformées en *new_pname*.
+1. En outre, lors de l’utilisation de la fonction *getNewPName* dans l’objet , *null* est renvoyée, car le *modèle abstrait* transforme correctement l’appel en *new_p_name* rendant les deux fonctions incompatibles entre elles.
 
 <u>Résultats attendus</u>
 
-La fonction **[!UICONTROL populateWithArray]** doit transformer correctement les propriétés de l’objet en snake_case, ce qui la rend compatible avec les **[!DNL AbstractModel's]** `Getters` et `Setters`.
+La fonction **[!UICONTROL populateWithArray]** doit transformer correctement les propriétés de l&#39;objet en snake_case, ce qui le rend compatible avec les `Getters` et `Setters` **[!DNL AbstractModel's]**.
 
 <u>Résultats réels</u>
 
-Lors de l’utilisation de la fonction **[!UICONTROL populateWithArray]**, toute propriété d’objet qui contient plusieurs majuscules dans une ligne de nom entraînera une transformation snake_case incorrecte dans le tableau de données final.
+Lors de l&#39;utilisation de la fonction **[!UICONTROL populateWithArray]**, toute propriété d&#39;objet dont le nom contient deux majuscules ou plus à la suite provoque la transformation de snake_case incorrecte dans le tableau de données final.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

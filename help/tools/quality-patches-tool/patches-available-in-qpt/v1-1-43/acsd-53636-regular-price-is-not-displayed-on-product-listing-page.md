@@ -1,18 +1,19 @@
 ---
-title: '''ACSD-53636 : Le prix normal n''est pas affiché sur la page [!UICONTROL Product Listing]'''
-description: Appliquez le correctif ACSD-53636 pour résoudre le problème Adobe Commerce en raison duquel le prix normal n’est pas affiché sur les *[!UICONTROL Product Listing]* pages pour les produits configurables qui ont des produits enfants avec des prix spéciaux.
+title: 'ACSD-53636 : le prix normal n''est pas affiché sur [!UICONTROL Product Listing] page'
+description: Appliquez le correctif ACSD-53636 pour résoudre le problème d’Adobe Commerce où le prix normal n’est pas affiché sur les pages *[!UICONTROL Product Listing]* pour les produits configurables qui ont des produits enfants avec des prix spéciaux.
 feature: Catalog Management, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e6d66ae4-2c21-466a-b03c-a1f486e7fa29
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%
 
 ---
 
-# ACSD-53636 : Le prix normal n&#39;est pas affiché sur la page *[!UICONTROL Product Listing]*
+# ACSD-53636 : le prix normal n&#39;est pas affiché sur *[!UICONTROL Product Listing]* page
 
-Le correctif ACSD-53636 corrige le problème en raison duquel le prix normal n’est pas affiché sur les pages *[!UICONTROL Product Listing]* pour les produits configurables ayant des produits enfants avec des prix spéciaux. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.43 est installé. L’ID de correctif est ACSD-53636. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-53636 corrige le problème où le prix normal n&#39;est pas affiché sur les pages *[!UICONTROL Product Listing]* pour les produits configurables qui ont des produits enfants avec des prix spéciaux. Ce correctif est disponible lorsque la version 1.1.43 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-53636. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -26,40 +27,40 @@ Le correctif ACSD-53636 corrige le problème en raison duquel le prix normal n�
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Le prix normal n’est pas affiché sur les pages *[!UICONTROL Product Listing]* pour les produits configurables qui ont des produits enfants avec des prix spéciaux.
+Le prix normal ne s’affiche pas sur les pages *[!UICONTROL Product Listing]* pour les produits configurables qui ont des produits enfants avec des prix spéciaux.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Connectez-vous à l’administrateur et accédez à **[!UICONTROL Admin]** > **[!UICONTROL Catalog]**, puis créez ou ouvrez un produit configurable.
-2. Ouvrez le produit enfant, ajoutez un prix spécial à tous les produits enfants ou à l’un d’eux et enregistrez le produit.
-3. Accédez à l’interface frontale et ouvrez la page **[!UICONTROL Product Detail]** du produit configurable ; sur les échantillons du produit enfant à prix spécial, vous verrez l’ *[!UICONTROL Regular price]* exclu (prévu).
-4. Accédez à l’interface frontale et ouvrez la page **[!UICONTROL Product Listing]** pour le produit configurable à prix spécial. Notez que les modifications d’échantillon de produit configurables n’affichent pas le prix normal contrairement à *[!UICONTROL Product Detail Page]* et à d’autres produits simples.
+1. Connectez-vous en tant qu’administrateur, accédez à **[!UICONTROL Admin]** > **[!UICONTROL Catalog]**, puis créez ou ouvrez tout produit configurable.
+2. Ouvrez le produit enfant et ajoutez un prix spécial à l&#39;ensemble ou à l&#39;un des produits enfants et enregistrez le produit.
+3. Accédez à l’interface utilisateur et ouvrez la page **[!UICONTROL Product Detail]** du produit configurable. Sur les échantillons du produit enfant au prix spécial, le *[!UICONTROL Regular price]* est barré (prévu).
+4. Accédez au serveur frontal et ouvrez la page **[!UICONTROL Product Listing]** pour le produit configurable avec un prix spécial. Veillez à ce que les modifications de l’échantillon de produit configurable n’affichent pas le prix normal, contrairement au *[!UICONTROL Product Detail Page]* et aux autres produits simples.
 
 <u>Résultats attendus</u> :
 
-Sur la page *[!UICONTROL Product Listing]*, le produit configurable indique le prix normal de son produit enfant.
+Sur la page *[!UICONTROL Product Listing]*, le produit configurable affiche le prix normal de son produit enfant.
 
 <u>Résultats réels</u> :
 
 Sur la page *[!UICONTROL Product Listing]*, le produit configurable n’affiche pas le prix normal de son produit enfant.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

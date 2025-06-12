@@ -1,18 +1,19 @@
 ---
-title: "ACSD-48044 : l’application de plusieurs cartes-cadeaux empêche l’envoi de commandes"
-description: Appliquez le correctif ACSD-48044 pour résoudre le problème Adobe Commerce en raison duquel l’application de plusieurs cartes-cadeaux à une seule commande avec livraison multiple empêche le placement des commandes.
+title: 'ACSD-48044 : l''application de plusieurs cartes-cadeaux empêche de passer des commandes'
+description: Appliquez le correctif ACSD-48044 pour résoudre le problème d'Adobe Commerce où l'application de plusieurs cartes-cadeaux à une seule commande avec expédition multiple empêche les commandes d'être passées.
 feature: Admin Workspace, Gift, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c7b72b1f-2f1b-4445-b842-5847d05d5ae9
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
 
 ---
 
-# ACSD-48044 : l’application de plusieurs cartes-cadeaux empêche le placement des commandes.
+# ACSD-48044 : l&#39;application de plusieurs cartes-cadeaux empêche de passer des commandes
 
-Le correctif ACSD-48044 corrige le problème en raison duquel l’application de plusieurs cartes-cadeaux à une seule commande avec livraison multiple empêchait le placement des commandes. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.25 est installé. L’ID de correctif est ACSD-48044. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-48044 corrige le problème où l&#39;application de plusieurs cartes-cadeaux à une seule commande avec expédition multiple empêche de passer des commandes. Ce correctif est disponible lorsque la version 1.1.25 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-48044. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -26,17 +27,17 @@ Le correctif ACSD-48044 corrige le problème en raison duquel l’application de
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-L’application de plusieurs cartes-cadeaux à une seule commande avec livraison multiple empêche le placement des commandes.
+L’application de plusieurs cartes-cadeaux à une seule commande avec expédition multiple empêche le passage de commandes.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Installez une version propre d’Adobe Commerce.
 1. Créez un produit simple au prix de 100 $ et un autre produit simple au prix de 10 $.
-1. Connectez-vous à [!UICONTROL Admin panel] et créez deux cartes-cadeaux.
+1. Connectez-vous au [!UICONTROL Admin panel] et créez deux cartes-cadeaux.
 
    * 02KB8M0H0GRD = 50 $
    * 00GXM6SUGBLW = 25 $
@@ -44,48 +45,48 @@ L’application de plusieurs cartes-cadeaux à une seule commande avec livraison
 1. Créez un client avec deux adresses.
 1. Ajoutez deux produits au panier.
 
-   * Ajoutez d’abord le produit à 10 €, puis le produit à 100 €. Le problème ne peut pas être reproduit si le produit 100 $ est ajouté en premier.
+   * Ajoutez d’abord le produit à 10 $, puis ajoutez le produit à 100 $. Le problème ne peut pas être reproduit si le produit de 100 $ est ajouté en premier.
 
-1. Dans le panier, ajoutez les deux cartes-cadeaux que vous avez créées.
-1. Cliquez sur **[!UICONTROL Ship to Multiple Addresses]** sur la page du panier.
+1. Accédez au panier et ajoutez les deux cartes-cadeaux que vous avez créées.
+1. Cliquez sur **[!UICONTROL Ship to Multiple Addresses]** dans la page du panier.
 1. Attribuez chaque produit à une adresse différente.
 1. Accédez à la page **[!UICONTROL Shipping information]** .
 1. Accédez à la page **[!UICONTROL Billing information]** .
-1. Accédez à la page **[!UICONTROL Review Your Order]** où vous pouvez voir le problème.
+1. Accédez à la page **[!UICONTROL Review Your Order]**, où vous pouvez voir le problème.
 1. Essayez de passer la commande.
 
 <u>Résultats attendus</u> :
 
-* Les cartes cadeau sont correctement appliquées au montant total.
+* Les cartes-cadeaux sont correctement appliquées au montant total.
 * Les commandes sont passées.
 
 <u>Résultats réels</u> :
 
-Les montants des cartes-cadeaux sont mélangés avec une erreur *&quot;Veuillez corriger le code de carte-cadeau.&quot;* lors du placement de la commande.
+Les montants des cartes-cadeaux sont mélangés avec une erreur *« Veuillez corriger le code de la carte-cadeau. »* lors de la commande.
 
 * Premier produit :
 
-   * Supprimer la carte cadeau (00GXM6SUGBLW) - 15,00 $
-   * Supprimer la carte cadeau (02KB8M0H0GRD) - 0,00 $
+   * Supprimer Carte Cadeau (00GXM6SUGBLW) - 15,00 $
+   * Supprimer Carte Cadeau (02KB8M0H0GRD) - 0,00 $
 
 * Deuxième produit :
 
-   * Supprimer la carte cadeau (00GXM6SUGBLW) - 25 $
-   * Supprimer la carte cadeau (02KB8M0H0GRD) - 35,00 $
+   * Supprimer Carte Cadeau (00GXM6SUGBLW) - 25,00 $
+   * Supprimer la carte-cadeau (02KB8M0H0GRD) - 35,00 $
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

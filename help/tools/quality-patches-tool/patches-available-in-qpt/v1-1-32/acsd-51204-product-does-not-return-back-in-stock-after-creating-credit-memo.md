@@ -1,19 +1,19 @@
 ---
-title: 'ACSD-51204 : le produit ne revient pas en stock après la création de l’avoir-mémoire de crédit'
-description: Appliquez le correctif ACSD-51204 pour résoudre le problème Adobe Commerce en raison duquel le produit ne revient pas en stock après la création de l’avoir.
+title: 'ACSD-51204 : le produit ne revient pas en stock après la création de l''avoir'
+description: Appliquez le correctif ACSD-51204 pour résoudre le problème d'Adobe Commerce en raison duquel le produit n'est pas retourné en stock après la création de l'avoir.
 feature: Orders, Products, Returns
 role: Admin
 exl-id: a4dba28c-c239-4812-8b3a-ce0493f9b1aa
-source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
-# ACSD-51204 : le produit ne revient pas en stock après la création de l’avoir-mémoire de crédit
+# ACSD-51204 : le produit ne revient pas en stock après la création de l&#39;avoir
 
-Le correctif ACSD-51204 corrige le problème en raison duquel le produit ne revient pas en stock après la création de l’avoir. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.32 est installé. L’ID de correctif est ACSD-51204. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-51204 corrige le problème lorsque le produit ne revient pas en stock après la création de l&#39;avoir. Ce correctif est disponible lorsque la version 1.1.32 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-51204. Notez que le problème a été résolu dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -27,43 +27,43 @@ Le correctif ACSD-51204 corrige le problème en raison duquel le produit ne revi
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr>). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html>). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Le produit vendu ne revient pas en stock après la création de l’avoir.
+Le produit épuisé ne revient pas en stock après la création de l&#39;avoir.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Installez **[!UICONTROL Adobe Commerce]** et activez les **[!UICONTROL Inventory Management Module]** avec les *source* et *stock* par défaut uniquement.
-1. Ajoutez un **[!UICONTROL new product]** avec une quantité de *10*.
-1. Affectez le produit à **[!UICONTROL default stock]**.
-1. Sur le storefront, ajoutez le produit au panier et passez une commande pour une quantité disponible entière de 10.
-1. Dans le panneau d’administration, générez une *facture* et une *livraison* pour la commande.
-1. Créez un **[!UICONTROL Credit Memo]** avec la case à cocher *Revenir au stock* sélectionnée pour tous les éléments.
-1. Vérifiez les **[!UICONTROL Salable Quantity]** du produit dans l’Admin.
+1. Installez **[!UICONTROL Adobe Commerce]** et activez le **[!UICONTROL Inventory Management Module]** avec les valeurs par défaut *source* et *stock* uniquement.
+1. Ajoutez une **[!UICONTROL new product]** avec une quantité de *10*.
+1. Attribuez le produit au **[!UICONTROL default stock]**.
+1. Sur le Storefront, ajoutez le produit au panier et passez une commande pour une quantité totale disponible 10.
+1. Dans le panneau d’administration, générez une *facture* et *expédition* pour la commande.
+1. Créez un **[!UICONTROL Credit Memo]** avec la case *Retour au stock* sélectionnée pour tous les éléments.
+1. Vérifiez les **[!UICONTROL Salable Quantity]** du produit dans l’administrateur.
 
 <u>Résultats attendus</u> :
 
-La quantité vendable du produit doit revenir à *10*.
+La quantité commercialisable du produit doit revenir à *10*.
 
 <u>Résultats réels</u> :
 
-La quantité vendable du produit est conservée sous la forme *0*.
+La quantité commercialisable du produit est laissée à *0*.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr>) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html>) dans le guide de [!DNL Quality Patches Tool].

@@ -1,18 +1,19 @@
 ---
-title: "ACSD-54106 : correction du tri des caractères accentués turcs dans la catégorie de produits"
-description: Appliquez le correctif ACSD-54106 pour résoudre le problème Adobe Commerce en raison duquel le tri par nom des produits de catégorie pour les caractères accentués turcs est incorrect.
+title: 'ACSD-54106 : Correction du tri des caractères accentués turcs dans la catégorie de produits'
+description: Appliquez le correctif ACSD-54106 pour résoudre le problème d’Adobe Commerce en raison duquel le tri des produits de catégorie par nom pour les caractères accentués turcs est incorrect.
 feature: Categories, Products, Search
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 45c8efbb-85d0-4d25-9d7e-9c41a97e80fa
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
 
 ---
 
-# ACSD-54106 : correction du tri des caractères accentués turcs dans la catégorie de produits
+# ACSD-54106 : Correction du tri des caractères accentués turcs dans la catégorie de produits
 
-Le correctif ACSD-54106 corrige le problème en raison duquel le tri par nom des produits de catégorie pour les caractères accentués turcs est incorrect. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.39 est installé. L’ID de correctif est ACSD-54106. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-54106 corrige le problème en raison duquel le tri des produits de catégorie par nom pour les caractères accentués turcs est incorrect. Ce correctif est disponible lorsque la version 1.1.39 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-54106. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -26,71 +27,71 @@ Le correctif ACSD-54106 corrige le problème en raison duquel le tri par nom des
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Le tri des produits par nom dans les catégories est incorrect pour les caractères accentués turcs.
+Le tri des produits dans les catégories par nom est incorrect pour les caractères accentués turcs.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Connectez-vous au panneau d’administration.
 1. Créez des produits simples nommés comme suit et affectez-les à n’importe quelle catégorie :
 
-* Nom A
-* Nom :
-* Nom D
-* Nom Ğ
+* Nommer Un
+* Nom Ç
+* ID du nom
+* Nom ‣
 * Nom M
 * Nom Ö
-* Nom : précisément
+* Nom Ü
 * Nom Y
 * Nom Z
 
-1. Accédez au storefront et à la catégorie contenant les produits.
+1. Accédez à la vitrine et à la catégorie contenant les produits.
 1. Modifiez l’ordre de tri sur *[!UICONTROL By Name]*.
 
 <u>Résultats attendus</u> :
 
 Les produits sont correctement triés dans l’ordre suivant :
 
-* Nom A
-* Nom :
-* Nom D
-* Nom Ğ
+* Nommer Un
+* Nom Ç
+* ID du nom
+* Nom ‣
 * Nom M
 * Nom Ö
-* Nom : précisément
+* Nom Ü
 * Nom Y
 * Nom Z
 
 <u>Résultats réels</u> :
 
-Les produits sont incorrectement triés dans l’ordre suivant :
+Les produits ne sont pas triés correctement dans l’ordre suivant :
 
-* Nom A
-* Nom D
+* Nommer Un
+* ID du nom
 * Nom M
 * Nom Y
 * Nom Z
-* Nom :
+* Nom Ç
 * Nom Ö
-* Nom : précisément
-* Nom Ğ
+* Nom Ü
+* Nom ‣
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

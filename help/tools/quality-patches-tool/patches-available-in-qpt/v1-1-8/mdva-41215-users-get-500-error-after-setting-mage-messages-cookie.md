@@ -1,18 +1,19 @@
 ---
-title: '''MDVA-41215 : l’erreur 500 s’affiche pour les utilisateurs après la définition du cookie "images-messages"'
-description: Le correctif MDVA-41215 corrige le problème qui entraînait une erreur 500 pour les utilisateurs après avoir défini le cookie "image-messages" s’il existe déjà, mais qu’il n’y avait aucun nouveau message. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8 est installé. L’ID de correctif est MDVA-41215. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
+title: 'MDVA-41215 : les utilisateurs reçoivent une erreur 500 après la définition du cookie « mage-messages »'
+description: Le correctif MDVA-41215 corrige le problème où les utilisateurs obtiennent une erreur 500 après avoir défini le cookie « mage-messages » s’il existe déjà, mais qu’il n’y a aucun nouveau message. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.8 est installé. L’ID du correctif est MDVA-41215. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
 feature: Configuration
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 6724b7ed-31d4-4dbc-9b80-6799fb3b8f3c
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
 
 ---
 
-# MDVA-41215 : les utilisateurs reçoivent une erreur 500 après avoir défini le cookie &quot;images-messages&quot;
+# MDVA-41215 : les utilisateurs reçoivent une erreur 500 après la définition du cookie « mage-messages »
 
-Le correctif MDVA-41215 corrige le problème qui entraînait une erreur 500 pour les utilisateurs après avoir défini le cookie &quot;image-messages&quot; s’il existe déjà, mais qu’il n’y avait aucun nouveau message. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8 est installé. L’ID de correctif est MDVA-41215. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
+Le correctif MDVA-41215 corrige le problème où les utilisateurs obtiennent une erreur 500 après avoir défini le cookie « mage-messages » s’il existe déjà, mais qu’il n’y a aucun nouveau message. Ce correctif est disponible lors de l’installation de l’outil [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) version 1.1.8. L’ID du correctif est MDVA-41215. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
 
 ## Produits et versions concernés
 
@@ -26,19 +27,19 @@ Adobe Commerce (toutes les méthodes de déploiement) 2.3.0 - 2.4.3-p1
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Les utilisateurs reçoivent une erreur 500 après avoir défini le cookie &quot;images-messages&quot; s’il existe déjà, mais qu’il n’y a aucun nouveau message.
+Les utilisateurs reçoivent une erreur 500 après avoir défini le cookie « mage-messages » s’il existe déjà, mais qu’il n’existe aucun nouveau message.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Accédez à **../customer/account/login**.
-1. Ouvrez l’onglet réseau dans les outils de développement du navigateur (assurez-vous que l’option conserver le journal est cochée).
+1. Ouvrez l’onglet réseau dans les outils de développement du navigateur (assurez-vous que l’option Conserver le journal est cochée).
 1. Remplissez le formulaire avec des valeurs non valides (la connexion doit échouer).
-1. Cliquez sur **Submit**.
-1. Copiez en tant que cURL la première requête de l’onglet réseau et recherchez les valeurs PHPSESSID et form_key .
+1. Cliquez sur **Soumettre**.
+1. Copiez en tant que cURL la première requête à partir de l’onglet réseau et recherchez les valeurs PHPSESSID et form_key.
 1. Remplacez les valeurs PHPSESSID et form_key dans la requête cURL mise à jour et envoyez-la.
 
 ```curl -sSL -D - 'http://magento24.loc/customer/account/loginPost/' -i -o /dev/null \
@@ -48,24 +49,24 @@ Les utilisateurs reçoivent une erreur 500 après avoir défini le cookie &quot;
 
 <u>Résultats attendus</u> :
 
-Les utilisateurs obtiennent `HTTP/1.1 200 OK`
+Users get `HTTP/1.1 200 OK`
 
 <u>Résultats réels</u> :
 
-Les utilisateurs obtiennent `HTTP/1.1 500 Internal Server Error`
+Users get `HTTP/1.1 500 Internal Server Error`
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
+Pour en savoir plus sur l’outil de correctifs de la qualité, voir :
 
-* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!DNL Quality Patches Tool].
+* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!DNL Quality Patches Tool].
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

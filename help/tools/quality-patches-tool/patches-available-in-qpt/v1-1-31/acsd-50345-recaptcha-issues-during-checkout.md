@@ -1,18 +1,19 @@
 ---
-title: 'ACSD-50345 : problèmes reCAPTCHA lors du passage en caisse'
-description: Appliquez le correctif ACSD-50345 pour résoudre le problème Adobe Commerce en raison duquel les validations reCAPTCHA v2 et v3 échouent lors du placement des commandes et du passage en caisse.
+title: 'ACSD-50345 : problèmes reCAPTCHA lors de l’extraction'
+description: Appliquez le correctif ACSD-50345 pour résoudre le problème d’Adobe Commerce où les validations reCAPTCHA v2 et v3 ont échoué lors du passage des commandes et pendant le passage en caisse.
 feature: Checkout, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: eae9a6ad-0999-4581-b3c0-7667ee7beb54
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
 
 ---
 
-# ACSD-50345 : problèmes reCAPTCHA lors du passage en caisse
+# ACSD-50345 : problèmes reCAPTCHA lors de l’extraction
 
-Le correctif ACSD-50345 corrige le problème où les validations reCAPTCHA v2 et v3 échouent lors du placement de commandes et lors du passage en caisse. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.31 est installé. L’ID de correctif est ACSD-50345. Veuillez noter que le problème a été partiellement corrigé dans Adobe Commerce 2.4.6 et qu’il est prévu qu’il soit complètement corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-50345 corrige le problème en raison duquel les validations reCAPTCHA v2 et v3 échouent lors du passage des commandes et lors du passage en caisse. Ce correctif est disponible lorsque la version 1.1.31 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-50345. Veuillez noter que le problème a été partiellement résolu dans Adobe Commerce 2.4.6 et qu&#39;il est prévu de le résoudre entièrement dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -26,60 +27,60 @@ Le correctif ACSD-50345 corrige le problème où les validations reCAPTCHA v2 et
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 **Cas #1**
 
-Google reCAPTCHA v2 ne se recharge pas après l’envoi d’un paiement en échec.
+Google reCAPTCHA v2 ne se recharge pas après l&#39;envoi d&#39;un paiement en échec.
 
-<u>Étapes à reproduire</u>
+<u>Procédure à suivre</u>
 
-1. Configurez **[!UICONTROL Google reCAPTCHA v2]** (*Je ne suis pas un robot*).
-1. Activez le **[!UICONTROL reCAPTCHA]** pour le passage en caisse.
+1. Configurez **[!UICONTROL Google reCAPTCHA v2]** (*je ne suis pas un robot*).
+1. Activez le **[!UICONTROL reCAPTCHA]** pour l’extraction.
 1. Essayez de passer une commande sans cliquer sur **[!UICONTROL reCAPTCHA]**.
-1. Une fois que l’utilisateur a reçu le message d’erreur pour le reCAPTCHA manquant (*reCAPTCHA validation failed, veuillez réessayer*), cliquez sur le **[!UICONTROL reCAPTCHA]** et essayez de passer une commande.
+1. Une fois que l’utilisateur reçoit le message d’erreur pour le reCAPTCHA manquant (*échec de la validation de reCAPTCHA, veuillez réessayer*), cliquez sur le **[!UICONTROL reCAPTCHA]** et essayez de passer une commande.
 
 <u>Résultats attendus</u>
 
-La commande ne sera pas placée avec un reCAPTCHA incorrect.
+La commande ne sera pas passée avec un reCAPTCHA incorrect.
 
 <u>Résultats réels</u>
 
-Une erreur est générée - *la validation reCAPTCHA a échoué, veuillez réessayer* et *Aucun panier avec id = 4*
+Une erreur est générée. *La validation reCAPTCHA a échoué, veuillez réessayer* et *Aucun panier de ce type avec l’ID = 4*
 
 **Cas #2**
 
-Google reCAPTCHA v3 Invisible ne fonctionne pas lors de l’extraction et la commande ne peut pas être placée. L’événement `PlaceOrder` n’est pas déclenché.
+Google reCAPTCHA v3 Invisible ne fonctionne pas lors de l’extraction et la commande ne peut pas être passée. `PlaceOrder` événement n’est pas déclenché.
 
-<u>Étapes à reproduire</u>
+<u>Procédure à suivre</u>
 
-1. Configurez le **[!UICONTROL reCAPTCHA v3 Invisible]** à partir de **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Security]**.
-1. Activez **[!UICONTROL reCAPTCHA v3 Invisible]** pour extraire/placer une commande sous l’onglet **[!UICONTROL Storefront]**.
+1. Configurez le **[!UICONTROL reCAPTCHA v3 Invisible]** à partir du **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Security]**.
+1. Activez **[!UICONTROL reCAPTCHA v3 Invisible]** pour passer en caisse ou passer une commande sous l’onglet **[!UICONTROL Storefront]** .
 1. Essayez de passer une commande avec le mode de paiement [!UICONTROL Check/Money order].
 
 <u>Résultats attendus</u>
 
-La commande doit être placée avec le **[!UICONTROL reCAPTCHA]** activé.
+La commande doit être passée avec le **[!UICONTROL reCAPTCHA]** activé.
 
 <u>Résultats réels</u>
 
-Après avoir cliqué sur le bouton **[!UICONTROL Place Order]**, il est désactivé et rien ne se passe plus.
+Après avoir cliqué sur le bouton **[!UICONTROL Place Order]** , il est désactivé et rien ne se passe plus.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

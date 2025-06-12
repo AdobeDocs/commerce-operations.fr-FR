@@ -1,19 +1,19 @@
 ---
-title: 'ACSD-51884 : chemin du cache de l’image du produit incorrect sur la commande de redimensionnement'
-description: Appliquez le correctif ACSD-51884 pour résoudre le problème Adobe Commerce en raison duquel le chemin du cache de l’image du produit devient incorrect après l’exécution de la commande de redimensionnement.
+title: 'ACSD-51884 : chemin d’accès au cache de l’image du produit incorrect sur la commande de redimensionnement'
+description: Appliquez le correctif ACSD-51884 pour résoudre le problème d’Adobe Commerce en raison duquel le chemin d’accès au cache de l’image du produit devient incorrect après l’exécution de la commande de redimensionnement.
 feature: Products
 role: Admin
 exl-id: a3779e4b-2749-460e-a0a8-656b26bb06fa
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
 
 ---
 
-# ACSD-51884 : chemin du cache de l’image du produit incorrect sur la commande de redimensionnement
+# ACSD-51884 : chemin d’accès au cache de l’image du produit incorrect sur la commande de redimensionnement
 
-Le correctif ACSD-51884 corrige le problème en raison duquel une erreur interne où le chemin du cache de l’image du produit est incorrect après l’exécution de la commande resize. Ce correctif est disponible lorsque [!DNL Quality Patches Tool (QPT)] 1.1.37 est installé. L’ID de correctif est ACSD-51884. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-51884 corrige le problème d’erreur interne où le chemin d’accès au cache de l’image du produit devient incorrect après l’exécution de la commande de redimensionnement. Ce correctif est disponible lorsque la version 1.1.37 de [!DNL Quality Patches Tool (QPT)] est installée. L’ID du correctif est ACSD-51884. Notez que le problème a été résolu dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -23,22 +23,22 @@ Le correctif ACSD-51884 corrige le problème en raison duquel une erreur interne
 
 **Compatible avec les versions d’Adobe Commerce :**
 
-* Adobe Commerce (toutes les méthodes de déploiement) 2.3.7 - 2.4.7
+* Adobe Commerce (toutes les méthodes de déploiement) 2.3.7 à 2.4.7
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Le chemin du cache de l’image du produit est incorrect lors de la commande resize.
+Le chemin d’accès au cache de l’image du produit devient incorrect lors de la commande de redimensionnement.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Créez un site web/magasin/storeview.
-1. Créez un produit, puis affectez-le à des sites web et chargez l’image du produit.
-1. Créez un thème (voir le fichier joint Adobe.zip).
-1. Dans `app/design/Adobe/theme/etc/view.xml` change :
+1. Créez un site web/magasin/magasin.
+1. Créez un produit, affectez-le aux deux sites web et chargez l’image du produit.
+1. Créez un thème (voir le fichier Adobe.zip joint).
+1. Dans `app/design/Adobe/theme/etc/view.xml` modification :
 
 ```
 <vars module="Magento_Catalog">
@@ -46,7 +46,7 @@ Le chemin du cache de l’image du produit est incorrect lors de la commande res
 </vars>
 ```
 
-to
+vers
 
 ```
 <vars module="Magento_Catalog">
@@ -54,11 +54,11 @@ to
 </vars>
 ```
 
-1. Appliquez le thème à la vue de magasin créée précédemment.
-1. Consultez la page produit du 2e site web. L’image du produit s’affiche correctement.
-1. Utiliser le cache de purge :
+1. Appliquez le thème au magasin créé précédemment.
+1. Consultez la page produit sur le 2e site web. L’image du produit s’affiche correctement.
+1. Utiliser le cache de vidage :
    `bin/magento cache:flush`
-1. Consultez la page produit du 2e site web.
+1. Consultez la page produit sur le 2e site web.
 
 <u>Résultats attendus</u> :
 
@@ -68,19 +68,19 @@ L’image du produit s’affiche correctement.
 
 L’image du produit n’existe pas.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

@@ -1,18 +1,19 @@
 ---
-title: "ACSD-59229 : mauvaise affectation des données du groupe client en raison d’une valeur X-Magento-Vary obsolète"
-description: Appliquez le correctif ACSD-59229 pour résoudre le problème Adobe Commerce en raison duquel les informations relatives au groupe de clients sont enregistrées dans le mauvais segment en raison d’une valeur X-Magento-Vary obsolète dans la requête.
+title: 'ACSD-59229 : mauvaise affectation des données du groupe client en raison d’une valeur X-Magento-Vary obsolète'
+description: Appliquez le correctif ACSD-59229 pour résoudre le problème d’Adobe Commerce où les informations relatives au groupe de clients sont enregistrées dans le mauvais segment en raison d’une valeur X-Magento-Vary obsolète dans la requête.
 feature: Customers, Personalization, Marketing Tools
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c039c114-d920-4b05-b5e9-3e9b73490ee0
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
 
 ---
 
-# ACSD-59229 : inaffectation des données du groupe client en raison d’une valeur X-Magento-Vary obsolète
+# ACSD-59229 : mauvaise affectation des données du groupe client en raison d’une valeur X-Magento-Vary obsolète
 
-Le correctif ACSD-59229 corrige le problème en raison duquel les informations liées au groupe de clients sont enregistrées dans le mauvais segment en raison d’une valeur X-Magento-Vary obsolète dans la requête. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.50 est installé. L’ID de correctif est ACSD-59229. Veuillez noter que le problème a été corrigé dans la version 2.4.7.
+Le correctif ACSD-59229 corrige le problème d’enregistrement des informations relatives au groupe de clients dans le mauvais segment en raison d’une valeur X-Magento-Vary obsolète dans la requête. Ce correctif est disponible lorsque la version 1.1.50 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-59229. Notez que le problème a été résolu dans la version 2.4.7.
 
 ## Produits et versions concernés
 
@@ -26,55 +27,55 @@ Le correctif ACSD-59229 corrige le problème en raison duquel les informations l
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Les informations relatives aux groupes de clients sont enregistrées dans le mauvais segment en raison d’une valeur X-Magento-Vary obsolète dans la requête.
+Les informations relatives au groupe de clients sont enregistrées dans le mauvais segment en raison d’une valeur X-Magento-Vary obsolète dans la requête.
 
 <u>Conditions préalables</u> :
 
 Assurez-vous qu’Adobe Commerce B2B avec des exemples de données est installé et que [!DNL Varnish] est configuré.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Configurez des tarifs avancés pour le [!DNL SKU 24-MB01] :
-   1. [!UICONTROL Regular price] = *999$*
+1. Configurez une tarification avancée pour le [!DNL SKU 24-MB01] :
+   1. [!UICONTROL Regular price] = *9999$*
    1. [!UICONTROL Catalog and Tier Price] :
-      * ** = *$200*
+      * *En gros* = *200 $*
       * *Retailer* = *$30*
 
-1. Créez deux comptes clients.
-1. Affectez les deux clients au groupe **Wholesale**.
+1. Créez deux comptes client.
+1. Affectez les deux clients au groupe **en gros**.
 1. Ouvrez deux sessions de navigateur différentes et connectez-vous avec chaque client.
-1. Accédez à la page du produit **[!UICONTROL 24-MB01]** pour chaque client et vérifiez que le prix affiché est *$200*.
-1. Remplacez le groupe de clients de l’un des clients par **Retail**.
+1. Accédez à la page produit **[!UICONTROL 24-MB01]** pour chaque client et vérifiez que le prix affiché est de 200 **.
+1. Remplacez le groupe de clients de l’un des clients par **Vente au détail**.
 1. Effacez le cache à l’aide de la commande : `bin/magento cache:flush full_page`.
-1. Actualisez la page de produits pour chaque client.
+1. Actualisez la page produit pour chaque client.
 
 <u>Résultats attendus</u> :
 
-1. Le client de détail peut voir le prix correct de *$30* pour le produit.
-1. Le client de gros peut voir le prix correct de *$200* pour le produit.
+1. Le client au détail peut voir le prix correct de *$30* pour le produit.
+1. Le client en gros peut voir le prix correct de *$200* pour le produit.
 
 <u>Résultats réels</u> :
 
-1. Le client de détail peut voir le prix correct de *$30* pour le produit.
-1. Le client de gros voit un prix incorrect de *$30* (prix de détail) pour le produit.
+1. Le client au détail peut voir le prix correct de *$30* pour le produit.
+1. Le client en gros voit un prix incorrect de *$30* (prix de détail) pour le produit.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

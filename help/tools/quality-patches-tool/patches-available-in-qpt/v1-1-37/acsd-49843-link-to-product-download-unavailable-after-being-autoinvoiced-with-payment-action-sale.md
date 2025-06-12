@@ -1,18 +1,19 @@
 ---
-title: 'ACSD 49843 : lien de téléchargement de produit indisponible après la facturation automatique avec [!UICONTROL Payment Action] = [!UICONTROL Intent Sale]'
-description: Appliquez le correctif ACSD-49843 pour résoudre le problème Adobe Commerce en raison duquel le lien de téléchargement de produit n’est pas disponible une fois que l’article commandé est automatiquement facturé par un mode de paiement en ligne lorsque [!UICONTROL Payment Action] est défini sur [!UICONTROL Intent Sale].
+title: 'ACSD 49843 : lien de téléchargement de produit indisponible après avoir été facturé automatiquement avec [!UICONTROL Payment Action] = [!UICONTROL Intent Sale]'
+description: Appliquez le correctif ACSD-49843 pour résoudre le problème d'Adobe Commerce où le lien de téléchargement de produit n'est pas disponible après que l'article commandé a été facturé automatiquement par un mode de paiement en ligne lorsque [!UICONTROL Payment Action] est défini sur [!UICONTROL Intent Sale].
 feature: Catalog Management, Configuration, Invoices, Orders, Storefront
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e990b550-fb32-48d2-9c39-2176d7ab34c9
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
 
 ---
 
-# ACSD-49843 : lien de téléchargement de produit indisponible après la facturation automatique avec [!UICONTROL Payment Action] = [!UICONTROL Intent Sale]
+# ACSD-49843 : lien de téléchargement de produit indisponible après avoir été facturé automatiquement avec [!UICONTROL Payment Action] = [!UICONTROL Intent Sale]
 
-Le correctif ACSD-49843 corrige le problème en raison duquel le lien de téléchargement du produit n’est pas disponible une fois que l’article commandé est automatiquement facturé par un mode de paiement en ligne lorsque [!UICONTROL Payment Action] est défini sur [!UICONTROL Intent Sale]. Ce correctif est disponible lorsque [!DNL Quality Patches Tool (QPT)] 1.1.37 est installé. L’ID de correctif est ACSD-49843. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-49843 corrige le problème en raison duquel le lien de téléchargement du produit n’est pas disponible après que l’article commandé a été facturé automatiquement par un mode de paiement en ligne lorsque [!UICONTROL Payment Action] est défini sur [!UICONTROL Intent Sale]. Ce correctif est disponible lorsque la version 1.1.37 de [!DNL Quality Patches Tool (QPT)] est installée. L’ID du correctif est ACSD-49843. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -26,50 +27,50 @@ Le correctif ACSD-49843 corrige le problème en raison duquel le lien de téléc
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Le lien de téléchargement du produit n’est pas disponible une fois que l’article commandé est automatiquement facturé par un mode de paiement en ligne lorsque [!UICONTROL Payment Action] est défini sur [!UICONTROL Intent Sale].
+Le lien de téléchargement de produit n’est pas disponible une fois que l’article commandé a été facturé automatiquement par un mode de paiement en ligne lorsque [!UICONTROL Payment Action] est défini sur [!UICONTROL Intent Sale].
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Connectez-vous à l’administrateur Adobe Commerce et accédez à **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Configure Braintree]**.
+1. Connectez-vous à l’administration Adobe Commerce et accédez à **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Configure Braintree]**.
 
    * Dans la liste déroulante [!UICONTROL Payment Action], sélectionnez **[!UICONTROL Intent Sale]** et définissez *[!UICONTROL Enable Card Payments]* sur *Oui*.
 
-1. Accédez à **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Downloadable Product Option]** > **[!UICONTROL Order Item status for Download]**, et assurez-vous qu’il est défini sur *&quot;Invotered&quot;*.
+1. Accédez à **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Downloadable Product Option]** > **[!UICONTROL Order Item status for Download]**, et assurez-vous qu’il est défini sur *« Facturé »*.
 1. Dans le storefront, connectez-vous en tant que client.
 
-   * Ajoutez tout produit téléchargeable et un produit simple au panier.
-   * Utilisez [!DNL Braintree Pay] pour passer la commande à l’aide de l’option de carte.
+   * Ajoutez au panier n’importe quel produit téléchargeable ainsi qu’un produit simple.
+   * Utilisez [!DNL Braintree Pay] pour passer la commande à l’aide de l’option de carte .
 
-1. Accédez à **[!UICONTROL My Orders]** et vérifiez que la facture est automatiquement créée pour la commande et que les deux statuts de l&#39;article sont *&quot;Facturé&quot;*.
-1. Accédez à **[!UICONTROL My Downloadable Products]** et observez que le lien de téléchargement n’est pas encore disponible.
-1. Dans l’administrateur, accédez à cette commande et créez une expédition pour celle-ci.
-1. Dans le storefront, accédez à **[!UICONTROL My Downloadable Products]** et observez que le lien de téléchargement est désormais disponible.
+1. Accédez à **[!UICONTROL My Orders]** et vérifiez que la facture est automatiquement créée pour la commande et que les deux statuts d&#39;article sont *« Facturé »*.
+1. Accédez à **[!UICONTROL My Downloadable Products]** et notez que le lien de téléchargement n’est pas encore disponible.
+1. Dans l’administrateur, accédez à cette commande et créez une expédition pour elle.
+1. Dans le storefront, accédez à **[!UICONTROL My Downloadable Products]** et notez que le lien de téléchargement est maintenant disponible.
 
 <u>Résultats attendus</u> :
 
-Le lien de téléchargement est disponible lorsque l’état du produit téléchargeable est *&quot;Invocable&quot;*.
+Le lien de téléchargement est disponible lorsque le statut du produit téléchargeable est *« Facturé »*.
 
 <u>Résultats réels</u> :
 
-Le lien de téléchargement n’est pas disponible même lorsque l’état du produit téléchargeable indique *&quot;Invoqué&quot;*. Il n’est disponible qu’après la création d’une expédition pour le produit physique.
+Le lien de téléchargement n’est pas disponible même lorsque le statut du produit téléchargeable indique *« Facturé »*. Il n&#39;est disponible qu&#39;après la création d&#39;une expédition pour le produit physique.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

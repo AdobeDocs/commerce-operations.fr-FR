@@ -1,19 +1,19 @@
 ---
-title: 'ACSD-60590 : amélioration des performances de la génération de rapports quotidiens agrégés des Bestsellers'
-description: Appliquez le correctif ACSD-60590 pour résoudre le problème Adobe Commerce en raison duquel le rapport quotidien agrégé des Bestsellers prend un temps important pour générer un grand volume de commandes passées.
+title: 'ACSD-60590 : Amélioration des performances de la génération de rapports quotidiens agrégés Best-sellers'
+description: Appliquez le correctif ACSD-60590 pour résoudre le problème d’Adobe Commerce où le rapport quotidien agrégé des meilleures ventes prend beaucoup de temps à générer pour un grand volume de commandes passées.
 feature: Reporting
 role: Admin, Developer
 exl-id: 3b2b92eb-d4fc-4cd7-a117-a2c1caac72ec
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%
 
 ---
 
-# ACSD-60590 : amélioration des performances de la génération de rapports quotidiens agrégés des Bestsellers
+# ACSD-60590 : Amélioration des performances de la génération de rapports quotidiens agrégés Best-sellers
 
-Le correctif ACSD-60590 corrige le problème en raison duquel le rapport quotidien agrégé des Bestsellers prend un temps important pour générer un grand volume de commandes passées. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=fr) 1.1.52 est installé. L’ID de correctif est ACSD-60590. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.8.
+Le correctif ACSD-60590 corrige le problème en raison duquel le rapport quotidien agrégé des meilleures ventes prend beaucoup de temps à générer pour un grand volume de commandes passées. Ce correctif est disponible lorsque la version 1.1.52 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) est installée. L’ID du correctif est ACSD-60590. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.8.
 
 ## Produits et versions concernés
 
@@ -27,45 +27,45 @@ Le correctif ACSD-60590 corrige le problème en raison duquel le rapport quotidi
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Le rapport quotidien agrégé des Bestsellers prend beaucoup de temps pour générer un grand volume de commandes passées.
+Le rapport quotidien agrégé des meilleures ventes prend beaucoup de temps à générer pour un grand volume de commandes passées.
 
 <u>Conditions préalables</u>
 
 Un grand nombre de commandes (par exemple : *500k*).
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Exécutez la commande suivante :
 
    `update sales_order set created_at = DATE(DATE_SUB(NOW(), INTERVAL ROUND(RAND()*3650) DAY))  ;`
 
-1. Exécutez la tâche `aggregate_sales_report_bestsellers_data`.
+1. Exécutez le traitement `aggregate_sales_report_bestsellers_data`.
 
 <u>Résultats attendus</u> :
 
-La tâche se termine en moins de 30 secondes.
+Le traitement se termine en moins de 30 secondes.
 
 <u>Résultats réels</u> :
 
-La requête prend environ 10 minutes pour chaque magasin pour les dates `created_at`.
+La requête prend environ 10 minutes pour chaque magasin pour les dates de `created_at`.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

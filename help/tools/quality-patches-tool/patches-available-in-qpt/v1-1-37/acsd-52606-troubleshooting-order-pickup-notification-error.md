@@ -1,18 +1,19 @@
 ---
-title: '"ACSD-52606 : message d’erreur affiché lorsque l’utilisateur clique sur "Avertir que la commande est prête pour la récupération"'
+title: 'ACSD-52606 : message d''erreur affiché lorsque l''utilisateur clique sur « Notifier la commande prête pour le retrait »'
 description: Appliquez le correctif ACSD-52606 pour résoudre le problème Adobe Commerce où un message d’erreur s’affiche lorsque l’utilisateur clique sur **[!UICONTROL Notify Order is Ready for Pickup]**.
 feature: Orders, User Account
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d0b5a7a6-0d32-4019-8f28-60722fce1a99
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%
 
 ---
 
-# ACSD-52606 : message d’erreur affiché lorsque l’utilisateur clique sur &quot;Avertir la commande est prête pour la récupération&quot;.
+# ACSD-52606 : message d&#39;erreur affiché lorsque l&#39;utilisateur clique sur « Notifier la commande prête pour le retrait »
 
-Le correctif ACSD-52606 corrige le problème en raison duquel un message d’erreur *Votre commande n’est pas prête pour la récupération* s’affiche lorsque l’utilisateur clique sur **[!UICONTROL Notify Order is Ready for Pickup]**. Ce correctif est disponible lorsque [!DNL Quality Patches Tool (QPT)] 1.1.37 est installé. L’ID de correctif est ACSD-52606. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-52606 corrige le problème où un message d’erreur *Votre commande n’est pas prête pour l’enlèvement* s’affiche lorsque l’utilisateur clique sur **[!UICONTROL Notify Order is Ready for Pickup]**. Ce correctif est disponible lorsque la version 1.1.37 de [!DNL Quality Patches Tool (QPT)] est installée. L’ID du correctif est ACSD-52606. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -26,25 +27,25 @@ Le correctif ACSD-52606 corrige le problème en raison duquel un message d’err
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Un message d’erreur *Votre commande n’est pas prête pour la récupération* s’affiche à l’écran lorsque l’utilisateur clique sur **[!UICONTROL Notify Order is Ready for Pickup]**.
+Un message d’erreur *Votre commande n’est pas prête pour le retrait* s’affiche à l’écran lorsque l’utilisateur clique sur **[!UICONTROL Notify Order is Ready for Pickup]**.
 
 <u>Conditions préalables</u> :
 
 Les modules d’inventaire sont installés.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Installez une nouvelle instance.
 1. Créez une nouvelle source et un nouveau stock.
 1. Affectez la nouvelle source au site web par défaut.
-1. Activez l’emplacement de sélection de la source nouvellement créée.
+1. Activez l’emplacement de retrait pour la source nouvellement créée.
 1. Accédez à **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL In-Store Delivery]** et activez **[!UICONTROL In-Store Delivery]**.
-1. Créez un produit simple *In Stock* avec *QTY=0* pour tous les stocks et *[!UICONTROL Manage Stock = No]* et affectez-le aux deux sources.
-1. Créez une commande à partir de l’interface avec le produit créé à l’étape précédente, en choisissant *[!UICONTROL In-Store Pickup]* comme méthode de livraison.
+1. Créez un produit simple *En stock* avec *QTÉ=0* pour tous les stocks et *[!UICONTROL Manage Stock = No]* et affectez-le aux deux sources.
+1. Créez une commande à partir du serveur frontal avec le produit créé à l’étape précédente, en choisissant *[!UICONTROL In-Store Pickup]* comme méthode de livraison.
 1. Dans Admin, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Orders]** > **[!UICONTROL Invoice that order]**.
 1. Cliquez sur **[!UICONTROL Notify order is ready for pickup]**.
 
@@ -54,21 +55,21 @@ Vous êtes averti sans erreur.
 
 <u>Résultats réels</u> :
 
-Vous recevez le message d’erreur suivant : *Votre commande n’est pas prête pour le nettoyage*.
+Vous recevez le message d’erreur suivant : *Votre commande n’est pas prête pour la récupération*.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

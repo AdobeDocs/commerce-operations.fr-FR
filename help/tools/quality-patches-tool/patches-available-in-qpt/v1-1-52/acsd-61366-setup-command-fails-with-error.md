@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61366 : la commande &grave;bin/magento setup:static-content:deploy —jobs 4&grave; rencontre plusieurs échecs de tâche avec une erreur"
-description: Appliquez le correctif ACSD-61366 pour résoudre le problème Adobe Commerce en raison duquel la commande &grave;bin/magento setup:static-content:deploy —jobs 4&grave; rencontre plusieurs échecs de tâche avec le *Port doit être configuré dans l’erreur de paramètre d’hôte*, même si le port de la connexion DB est spécifié.
+title: 'ACSD-61366 : la commande « bin/magento setup:static-content:deploy —jobs 4 » rencontre plusieurs échecs de tâche avec une erreur'
+description: Appliquez le correctif ACSD-61366 pour résoudre le problème d’Adobe Commerce où la commande « bin/magento setup:static-content:deploy —jobs 4 » rencontre plusieurs échecs de tâche avec l’erreur « Le port doit être configuré dans le paramètre hôte », bien que le port pour la connexion à la base de données ait été spécifié.
 feature: SCD
 role: Admin, Developer
-source-git-commit: b671dc30cd511d63dbbbaa6edd47ee36c1351620
+exl-id: d71a4833-a236-429b-a4e5-7d7d51c2caeb
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-61366 : la commande `bin/magento setup:static-content:deploy --jobs 4` rencontre plusieurs échecs de tâche avec une erreur
 
-Le correctif ACSD-61366 corrige le problème en raison duquel la commande `bin/magento setup:static-content:deploy --jobs 4` rencontre plusieurs échecs de tâche avec l’erreur *Port doit être configurée dans le paramètre hôte*, bien que la spécification du port pour la connexion DB. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.52 est installé. L’ID de correctif est ACSD-61366. Veuillez noter que ce problème doit être corrigé dans Adobe Commerce 2.4.8.
+Le correctif ACSD-61366 corrige le problème où la commande `bin/magento setup:static-content:deploy --jobs 4` rencontre plusieurs échecs de tâche avec l’erreur *Le port doit être configuré dans le paramètre host*, bien que spécifiant le port pour la connexion à la base de données. Ce correctif est disponible lorsque la version 1.1.52 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-61366. Notez que ce problème doit être résolu dans Adobe Commerce 2.4.8.
 
 ## Produits et versions concernés
 
@@ -26,38 +27,38 @@ Adobe Commerce (toutes les méthodes de déploiement) 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-La commande `bin/magento setup:static-content:deploy --jobs 4` rencontre plusieurs échecs de tâche avec le *port doit être configuré dans l’erreur de paramètre hôte*, même si vous spécifiez le port pour la connexion DB.
+La commande `bin/magento setup:static-content:deploy --jobs 4` rencontre plusieurs échecs de tâche avec l’erreur *Le port doit être configuré dans le paramètre host*, bien que le port de la connexion à la base de données ait été spécifié.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Spécifiez un port dans la connexion à la base de données dans `app/etc/env.php`.
-1. Exécutez la commande `bin/magento setup:static-content:deploy --jobs 4`.
+1. Exécutez `bin/magento setup:static-content:deploy --jobs 4` commande .
 
 <u>Résultats attendus</u> :
 
-Le déploiement du contenu statique se termine correctement.
+Le déploiement du contenu statique s’est terminé avec succès.
 
 <u>Résultats réels</u> :
 
-La commande échoue avec l&#39;erreur *Port doit être configurée dans le paramètre d&#39;hôte*.
+La commande échoue avec l’erreur *Le port doit être configuré dans le paramètre hôte*.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

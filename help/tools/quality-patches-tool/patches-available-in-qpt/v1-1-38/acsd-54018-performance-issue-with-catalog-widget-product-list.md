@@ -1,18 +1,19 @@
 ---
-title: "ACSD-54018 : problème de performance avec la liste de produits des widgets de catalogue"
-description: Appliquez le correctif ACSD-54018 pour résoudre le problème Adobe Commerce en raison duquel la page se charge lentement lors de l’ajout d’une liste de produits de widgets de catalogue avec une condition et un type d’attribut booléen.
+title: 'ACSD-54018 : problème de performances avec la liste de produits du widget de catalogue'
+description: Appliquez le correctif ACSD-54018 pour résoudre le problème d’Adobe Commerce en raison duquel la page se charge lentement lors de l’ajout d’une liste de produits de widgets de catalogue avec une condition et un type d’attribut booléen.
 feature: Attributes, Catalog Management, Page Builder, Page Content, Storefront
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2fb7ca37-78cc-45f4-86a3-d922cf4d1457
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
 
 ---
 
-# ACSD-54018 : problème de performance avec la liste de produits du widget de catalogue
+# ACSD-54018 : problème de performances avec la liste de produits du widget de catalogue
 
-Le correctif ACSD-54018 corrige le problème en raison duquel la page se charge lentement lors de l’ajout d’une liste de produits de widgets de catalogue avec condition et type d’attribut booléen. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.38 est installé. L’ID de correctif est ACSD-54018. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-54018 corrige le problème en raison duquel la page se charge lentement lors de l’ajout d’une liste de produits de widgets de catalogue avec une condition et un type d’attribut booléen. Ce correctif est disponible lorsque la version 1.1.38 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-54018. Notez que le problème a été résolu dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -26,32 +27,32 @@ Le correctif ACSD-54018 corrige le problème en raison duquel la page se charge 
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 La page se charge lentement lors de l’ajout d’une liste de produits de widgets de catalogue avec une condition et un type d’attribut booléen.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Générer 100 000 produits.
-1. Créez un attribut bool avec la portée définie sur [!UICONTROL Store View].
+1. Générez 100 000 produits.
+1. Créez un attribut bool avec l’étendue définie sur [!UICONTROL Store View].
 1. Attribuez un attribut à tous les jeux d’attributs.
-   * Attribuez la valeur d’attribut *Yes* à tous les produits.
-1. Maintenant, accédez à **[!UICONTROL Catalog]** > **[!UICONTROL Products]** et sélectionnez tous les 100 000 produits.
-   * Sélectionnez **[!UICONTROL Actions]** > **[!UICONTROL Update Attribute]**.
-   * Définissez l’attribut bool sur *Yes* et enregistrez-le.
-   * Si vous vous êtes déconnecté à cette étape, consultez les *notes*.
-1. Accédez à l’interface en ligne de commande et exécutez `php bin/magento queue:con:start product_action_attribute.update`.
-   * Veillez à mettre à jour les attributs de tous les produits.
+   * Attribuez la valeur d’attribut *Oui* à tous les produits.
+1. Accédez maintenant à **[!UICONTROL Catalog]** > **[!UICONTROL Products]** et sélectionnez l’ensemble des 100 000 produits.
+   * Choisissez **[!UICONTROL Actions]** > **[!UICONTROL Update Attribute]**.
+   * Définissez l’attribut bool sur *Oui* et enregistrez-le.
+   * Si vous vous êtes déconnecté de cette étape, vérifiez les *Notes*.
+1. Accédez à l’interface de ligne de commande et exécutez `php bin/magento queue:con:start product_action_attribute.update`.
+   * Assurez-vous que les attributs de tous les produits sont mis à jour.
 1. Accédez maintenant à **[!UICONTROL Content]** > **[!UICONTROL Pages]** et créez une page.
 1. Ouvrez **[!UICONTROL Page Builder]** > **[!UICONTROL Add row]** > **[!UICONTROL Add Content]** > **[!UICONTROL Products]**.
-1. Sélectionnez *[!UICONTROL Select Products By]* = *[!UICONTROL Condition]*.
-1. Définissez la condition *[!UICONTROL Created attribute]* sur *[!UICONTROL Yes]* et enregistrez-la.
+1. Choisissez *[!UICONTROL Select Products By]* = *[!UICONTROL Condition]*.
+1. Définissez le *[!UICONTROL Created attribute]* de condition sur *[!UICONTROL Yes]* et enregistrez-le.
 1. Accédez au front-end et ouvrez la page créée.
-1. Désactivez le cache de la page entière et bloquez le cache HTML.
-1. Vérifiez la vitesse de chargement des pages.
-1. Rechargez la page quelques fois et calculez la durée moyenne de chargement.
+1. Désactivez le cache de page complet et bloquez le cache HTML.
+1. Vérifiez la vitesse de chargement de la page.
+1. Rechargez la page plusieurs fois et calculez le temps de chargement moyen.
 
 <u>Résultats attendus</u> :
 
@@ -61,19 +62,19 @@ La page se charge rapidement.
 
 Le chargement de la page prend entre 5 et 10 secondes.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

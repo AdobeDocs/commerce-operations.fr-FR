@@ -1,19 +1,19 @@
 ---
-title: 'MDVA-39966 : impossible de déployer des paramètres régionaux autres que en_US'
-description: Le correctif MDVA-39966 résout le problème où l’utilisateur ne peut pas déployer de paramètres régionaux autres que en_US. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 est installé. L’ID de correctif est MDVA-39966. Veuillez noter que le problème a été corrigé dans Adobe Commerce version 2.4.1.
+title: 'MDVA-39966 : impossible de déployer des paramètres régionaux autres qu’en_US'
+description: Le correctif MDVA-39966 résout le problème où l’utilisateur ne peut pas déployer de paramètres régionaux autres qu’en_US. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2 est installé. L’ID du correctif est MDVA-39966. Notez que le problème a été résolu dans la version 2.4.1 d’Adobe Commerce.
 feature: Deploy
 role: Admin
 exl-id: 03bb0002-9742-4f26-bb41-1b46f0a3573c
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
 
 ---
 
-# MDVA-39966 : impossible de déployer des paramètres régionaux autres que en_US
+# MDVA-39966 : impossible de déployer des paramètres régionaux autres qu’en_US
 
-Le correctif MDVA-39966 résout le problème où l’utilisateur ne peut pas déployer de paramètres régionaux autres que en_US. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 est installé. L’ID de correctif est MDVA-39966. Veuillez noter que le problème a été corrigé dans Adobe Commerce version 2.4.1.
+Le correctif MDVA-39966 résout le problème où l’utilisateur ne peut pas déployer de paramètres régionaux autres qu’en_US. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2 est installé. L’ID du correctif est MDVA-39966. Notez que le problème a été résolu dans la version 2.4.1 d’Adobe Commerce.
 
 ## Produits et versions concernés
 
@@ -27,15 +27,15 @@ Le correctif MDVA-39966 résout le problème où l’utilisateur ne peut pas dé
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Impossible de déployer des paramètres régionaux autres que en_US.
+Impossible de déployer des paramètres régionaux autres qu’en_US.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Configurez deux vues de magasin avec des paramètres régionaux différents, par exemple : en_US et de_DE.
+1. Configurez deux vues de magasin avec des paramètres régionaux différents ; en_US et de_DE, par exemple.
 1. Essayez de déployer du contenu statique pour ces paramètres régionaux en exécutant la commande suivante :
 
 ```bash
@@ -45,7 +45,7 @@ bin/magento setup:static-content:deploy --language=de_DE
 
 <u>Résultats attendus</u> :
 
-Le paramètre régional de de_DE est déployé.
+de_DE locale est déployé.
 
 ```bash
 bin/magento setup:static-content:deploy --language=de_DE
@@ -60,7 +60,7 @@ Execution time: 27.062166929245
 
 <u>Résultats réels</u> :
 
-paramètre régional en_US déployé au lieu de de_DE :
+Paramètres régionaux en_US déployés au lieu de de de_DE :
 
 ```bash
 bin/magento setup:static-content:deploy --language=de_DE
@@ -71,18 +71,18 @@ frontend/Magento/blank/en_US            2486/2486           ====================
 frontend/Magento/luma/en_US             2504/2504           ============================ 100%   2 secs
 ```
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
+Pour en savoir plus sur l’outil de correctifs de la qualité, voir :
 
-* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!DNL Quality Patches Tool].
+* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!DNL Quality Patches Tool].
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

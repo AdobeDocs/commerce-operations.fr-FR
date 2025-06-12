@@ -1,18 +1,19 @@
 ---
-title: "ACSD-49773 : l’exportation de produits échoue lorsque AWS S3 est utilisé comme stockage distant"
-description: Appliquez le correctif ACSD-49773 pour résoudre le problème Adobe Commerce en raison duquel l’exportation de produits échoue lorsque AWS S3 est utilisé comme stockage distant.
+title: 'ACSD-49773 : l’exportation du produit échoue lorsqu’AWS S3 est utilisé comme stockage distant'
+description: Appliquez le correctif ACSD-49773 pour résoudre le problème d’Adobe Commerce en raison duquel l’exportation du produit échoue lorsqu’AWS S3 est utilisé comme stockage distant.
 feature: Data Import/Export, Iaas, Products, Storage
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 82f1299f-52b6-4f87-b01c-072d1661c022
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
 
 ---
 
-# ACSD-49773 : l’exportation de produits échoue lorsque AWS S3 est utilisé comme stockage distant
+# ACSD-49773 : l’exportation du produit échoue lorsqu’AWS S3 est utilisé comme stockage distant
 
-Le correctif ACSD-49773 corrige le problème d’échec de l’exportation de produits lorsque AWS S3 est utilisé comme stockage distant. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.29 est installé. L’ID de correctif est ACSD-49773. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-49773 corrige le problème d’échec de l’exportation du produit lorsque AWS S3 est utilisé comme stockage distant. Ce correctif est disponible lorsque la version 1.1.29 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-49773. Notez que le problème a été résolu dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -26,43 +27,43 @@ Le correctif ACSD-49773 corrige le problème d’échec de l’exportation de pr
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-L’exportation de produits échoue lorsque AWS S3 est utilisé comme stockage distant.
+L’exportation du produit échoue lorsqu’AWS S3 est utilisé comme stockage distant.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Installer un profil de données volumineux
+1. Installez un profil de données volumineux.
 1. Créez un compte AWS et configurez un compartiment S3 et un utilisateur IAM.
 1. Mettez à jour `app/etc/env.php` avec les configurations.
 1. Exécutez `bin/magento setup:upgrade`.
 1. Accédez au serveur principal et effectuez une exportation complète du produit.
-1. Surveillez l’état du message de la file d’attente à partir de la table `[queue_message_status]`.
-1. Vérifiez les journaux du système.
+1. Surveillez le statut des messages de la file d&#39;attente dans la table `[queue_message_status]`.
+1. Vérifiez les journaux système.
 
 <u>Résultats attendus</u> :
 
-L’export de produit se termine sans erreur.
+L&#39;exportation du produit se termine sans erreur.
 
 <u>Résultats réels</u> :
 
 Une erreur est consignée dans les journaux système.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool]
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide d’infrastructure Commerce on Cloud
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool]
+* Adobe Commerce sur les infrastructures cloud : [ Mises à niveau et correctifs > Appliquer des correctifs ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
-* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool]
+* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

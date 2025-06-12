@@ -1,18 +1,19 @@
 ---
-title: "ACSD-48807 : révisions de produits non filtrées par storeview"
-description: Appliquez le correctif ACSD-48807 pour résoudre le problème Adobe Commerce en raison duquel les révisions de produits ne sont pas filtrées par l’aperçu de magasin via GraphQL.
+title: 'ACSD-48807 : Avis sur les produits non filtrés par storeview'
+description: Appliquez le correctif ACSD-48807 pour résoudre le problème d’Adobe Commerce où les avis sur les produits ne sont pas filtrés par storeview via GraphQL.
 feature: Admin Workspace, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ce2cf5a1-a650-4eaa-8caf-f34dd0111c36
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
 
 ---
 
-# ACSD-48807 : Les révisions de produits ne sont pas filtrées par storeview
+# ACSD-48807 : Avis sur les produits non filtrés par storeview
 
-Le correctif ACSD-48807 corrige le problème en raison duquel les révisions de produits ne sont pas filtrées par l’aperçu de magasin via GraphQL. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.28 est installé. L’ID de correctif est ACSD-48807. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-48807 corrige le problème en raison duquel les avis sur les produits ne sont pas filtrés par storeview via GraphQL. Ce correctif est disponible lorsque la version 1.1.28 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-48807. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -26,43 +27,43 @@ Le correctif ACSD-48807 corrige le problème en raison duquel les révisions de 
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Les révisions de produit ne sont pas filtrées par storeview via GraphQL.
+Les avis sur les produits ne sont pas filtrés par avis de magasin via GraphQL.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Créez un autre storeview.
-1. Créez un compte client et connectez-vous.
-1. Dans l’affichage de magasin par défaut, créez une révision pour un produit.
-1. Passez à une autre vue d’ensemble et créez une autre révision pour un produit.
-1. Approuvez les deux révisions dans l’administrateur Adobe Commerce.
-1. Envoyez une requête GraphQL client pour récupérer les révisions de produit lors de la spécification de l’aperçu de magasin créé à l’étape 1 dans l’en-tête .
+1. Créez un magasin supplémentaire.
+1. Créer un compte client et se connecter.
+1. Dans l’aperçu par défaut, créez un aperçu pour un produit.
+1. Basculez vers un autre magasin et créez un autre magasin pour un produit.
+1. Approuvez les deux révisions dans Adobe Commerce Admin.
+1. Envoyez une requête GraphQL client pour récupérer les révisions de produit tout en spécifiant la révision de magasin créée à l’étape 1 dans l’en-tête.
 1. Observez la réponse.
 
 <u>Résultats attendus</u> :
 
-Seule la révision de produit pour l’aperçu de magasin spécifié est renvoyée dans la réponse.
+Seule la révision du produit pour la révision de magasin spécifiée est renvoyée dans la réponse.
 
 <u>Résultats réels</u> :
 
 Les deux révisions sont renvoyées dans la réponse.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

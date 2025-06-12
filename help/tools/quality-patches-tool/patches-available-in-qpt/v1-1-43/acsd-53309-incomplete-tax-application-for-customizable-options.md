@@ -1,19 +1,19 @@
 ---
-title: 'ACSD-53309 : Application fiscale incomplète pour les options personnalisables et étiquette [!UICONTROL Regular Price]'
-description: Appliquez le correctif ACSD-53309 pour résoudre le problème Adobe Commerce où la taxe n'est pas entièrement appliquée dans l'étiquette '[!UICONTROL Regular Price]' lorsqu'une option personnalisable est sélectionnée.
+title: 'ACSD-53309 : Demande de taxe incomplète pour les options personnalisables et le libellé de [!UICONTROL Regular Price]'
+description: Appliquez le correctif ACSD-53309 pour résoudre le problème d’Adobe Commerce où la taxe n’est pas entièrement appliquée dans le libellé « [!UICONTROL Regular Price] » lorsqu’une option personnalisable est sélectionnée.
 feature: Taxes, Shipping/Delivery
 role: Admin, Developer
 exl-id: 7f4a8923-11dd-48b2-9d97-77de5c2b24ce
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
-# ACSD-53309 : Application fiscale incomplète pour les options personnalisables et étiquette &#39;[!UICONTROL Regular Price]&#39;
+# ACSD-53309 : demande de taxe incomplète pour les options personnalisables et le libellé « [!UICONTROL Regular Price] »
 
-Le correctif ACSD-53309 corrige le problème en raison duquel la taxe n’est pas entièrement appliquée dans l’étiquette &quot;[!UICONTROL Regular Price]&quot; lorsqu’une option personnalisable est sélectionnée. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.43 est installé. L’ID de correctif est ACSD-53309. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-53309 corrige le problème où la taxe n&#39;est pas entièrement appliquée dans le libellé « [!UICONTROL Regular Price] » lorsqu&#39;une option personnalisable est sélectionnée. Ce correctif est disponible lorsque la version 1.1.43 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-53309. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -27,15 +27,15 @@ Le correctif ACSD-53309 corrige le problème en raison duquel la taxe n’est pa
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-La taxe n’est pas entièrement reflétée dans l’étiquette &quot;[!UICONTROL Regular Price]&quot; lorsqu’une option personnalisable est sélectionnée.
+La taxe n’est pas entièrement reflétée dans le libellé « [!UICONTROL Regular Price] » lorsqu’une option personnalisable est sélectionnée.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Connectez-vous au panneau Admin.
+1. Connectez-vous au panneau d’administration.
 1. Accédez à **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Tax]** pour configurer les paramètres de taxe.
 
    * [!UICONTROL Tax Classes] :
@@ -75,33 +75,33 @@ La taxe n’est pas entièrement reflétée dans l’étiquette &quot;[!UICONTRO
 1. Créez un produit simple et définissez les éléments suivants :
    * [!UICONTROL Price = 110]
    * [!UICONTROL Special Price = 100]
-   * Dans la liste déroulante, définissez le type sur l’option personnalisée avec le prix défini sur 15 %.
-1. Accédez à la page produit pour l’article simple créé sur le storefront.
-1. Choisissez l&#39;option personnalisée créée, *15%*.
+   * Dans la liste déroulante, définissez le type sur l’option personnalisée avec le prix défini sur 15 %
+1. Accédez à la page produit pour l’article simple fabriqué sur le storefront.
+1. Sélectionnez l’option personnalisée créée, *15 %*.
 
 <u>Résultats attendus</u> :
 
-* La taxe de 20 % est appliquée sur l’option personnalisée sélectionnée.
-* &#39;[!UICONTROL Regular Price]&#39; = 151.80.
+* Une taxe de 20 % est appliquée à l’option personnalisée sélectionnée.
+* &#39;[!UICONTROL Regular Price]&#39; = 151,80.
 
 <u>Résultats réels</u> :
 
-* La taxe de 20 % n’est pas appliquée à l’option personnalisée sélectionnée.
-* &#39;[!UICONTROL Regular Price]&#39; = 148.50.
+* La taxe de 20 % n&#39;est pas appliquée à l&#39;option personnalisée sélectionnée.
+* &#39;[!UICONTROL Regular Price]&#39; = 148,50.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

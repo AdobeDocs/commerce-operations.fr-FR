@@ -1,19 +1,19 @@
 ---
-title: 'MDVA-37364 : l’attribut client personnalisé de type date rompt l’interface utilisateur de la grille'
-description: Le correctif MDVA-37364 résout le problème en raison duquel l’attribut client personnalisé de type date rompt l’interface utilisateur de la grille client. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 est installé. L’ID de correctif est MDVA-37364. Veuillez noter que le problème doit être corrigé dans Adobe Commerce version 2.4.4.
+title: 'MDVA-37364 : l’attribut client personnalisé de type date rompt l’interface utilisateur de la grille.'
+description: Le correctif MDVA-37364 résout le problème en raison duquel l’attribut client personnalisé de type date rompt l’interface utilisateur de la grille client. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2 est installé. L’ID du correctif est MDVA-37364. Notez que le problème est planifié pour être corrigé dans la version 2.4.4 d’Adobe Commerce.
 feature: Attributes, Cache
 role: Developer
 exl-id: 5bd64004-06c4-49fd-8e56-e2c44008ca82
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
 
 ---
 
-# MDVA-37364 : l’attribut client personnalisé de type date rompt l’interface utilisateur de la grille
+# MDVA-37364 : l’attribut client personnalisé de type date rompt l’interface utilisateur de la grille.
 
-Le correctif MDVA-37364 résout le problème en raison duquel l’attribut client personnalisé de type date rompt l’interface utilisateur de la grille client. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 est installé. L’ID de correctif est MDVA-37364. Veuillez noter que le problème doit être corrigé dans Adobe Commerce version 2.4.4.
+Le correctif MDVA-37364 résout le problème en raison duquel l’attribut client personnalisé de type date rompt l’interface utilisateur de la grille client. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2 est installé. L’ID du correctif est MDVA-37364. Notez que le problème est planifié pour être corrigé dans la version 2.4.4 d’Adobe Commerce.
 
 ## Produits et versions concernés
 
@@ -27,46 +27,46 @@ Le correctif MDVA-37364 résout le problème en raison duquel l’attribut clien
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-L’attribut client personnalisé de type date rompt l’interface utilisateur de la grille client.
+L’attribut client personnalisé de type date rompt l’interface utilisateur de grille client.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Créez un attribut personnalisé de type date :
+1. Créez un attribut personnalisé avec le type de date :
    * Accédez à **Magasins** > **Attributs** > **Ajouter un attribut**.
    * Définissez le Type d’entrée sur Date.
-   * Définissez l’option Ajouter à la colonne sur Oui.
-   * Enregistrez l’attribut .
-1. Allez à **Admin** > **Clients** > **Tous les Clients**.
-   * Ajoutez l’attribut personnalisé nouvellement ajouté à la grille à partir de l’option Colonnes.
-1. Créez/Modifiez un client et définissez la valeur du champ d’attribut de date personnalisé créé.
+   * Définissez les options Ajouter à la colonne sur Oui.
+   * Enregistrez l’attribut.
+1. Accédez à **Admin** > **Clients** > **Tous les clients**.
+   * Ajoutez l’attribut personnalisé nouvellement ajouté à la grille à partir de l’option Colonnes .
+1. Créez/modifiez un client et définissez la valeur du champ d’attribut de date personnalisé créé.
 1. Enregistrez, réindexez et effacez le cache.
-1. Accédez à **Customers** > **Tous les clients**.
+1. Accédez à **Clients** > **Tous les clients**.
    * Vérifiez la grille client.
 
 <u>Résultats attendus</u> :
 
-La grille d’administration du client affiche toutes les données, y compris la nouvelle date et le nouvel attribut personnalisé, sans interrompre l’interface utilisateur de la grille client.
+La grille client d’administration affiche toutes les données, y compris le nouvel attribut personnalisé de date, sans rompre l’interface utilisateur de la grille client.
 
 <u>Résultats réels</u> :
 
-L’interface utilisateur de la grille client d’administration est rompue.
+L’interface utilisateur de la grille cliente d’administration est endommagée.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre type de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
+Pour en savoir plus sur l’outil de correctifs de la qualité, voir :
 
-* [Outil de correctifs de qualité publié : un nouvel outil pour appliquer des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md).
+* [Publication de l’outil de correctifs de qualité : un nouvel outil pour appliquer des correctifs de qualité en libre-service](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md).
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) .
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-).

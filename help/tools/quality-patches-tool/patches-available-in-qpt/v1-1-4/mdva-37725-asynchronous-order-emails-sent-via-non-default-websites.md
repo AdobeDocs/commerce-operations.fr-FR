@@ -1,23 +1,23 @@
 ---
-title: 'MDVA-37725 : les emails envoyés via des sites non par défaut contiennent les URL de logo du site par défaut.'
-description: Le correctif MDVA-37725 corrige le problème en raison duquel les emails de commande asynchrones sont envoyés via des sites web non par défaut contenant des URL de logo du site web par défaut.
+title: 'MDVA-37725 : les e-mails envoyés via des sites non par défaut contiennent les URL de logo du site par défaut'
+description: Le correctif MDVA-37725 corrige le problème d’envoi des e-mails de commande asynchrones via des sites web autres que ceux par défaut contenant des URL de logo à partir du site web par défaut.
 feature: Communications, Orders
 role: Admin
 exl-id: 6e72897c-7652-4b5a-8575-090e94188daf
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
 
 ---
 
-# MDVA-37725 : les emails envoyés via des sites non par défaut contiennent les URL de logo du site par défaut.
+# MDVA-37725 : les e-mails envoyés via des sites non par défaut contiennent les URL de logo du site par défaut
 
 >[!WARNING]
 >
 > Le correctif MDVA-37725 est obsolète.
 
-Le correctif MDVA-37725 corrige le problème en raison duquel les emails de commande asynchrones sont envoyés via des sites web non par défaut contenant des URL de logo du site web par défaut. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 est installé. L’ID de correctif est MDVA-37725. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
+Le correctif MDVA-37725 corrige le problème d’envoi des e-mails de commande asynchrones via des sites web autres que ceux par défaut contenant des URL de logo à partir du site web par défaut. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4 est installé. L’ID du correctif est MDVA-37725. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
 
 ## Produits et versions concernés
 
@@ -31,44 +31,44 @@ Adobe Commerce (toutes les méthodes de déploiement) 2.3.0 - 2.4.3
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Les emails de commande asynchrones sont envoyés par le biais de sites web autres que les sites par défaut contenant les URL de logo du site web par défaut.
+Les e-mails de commande asynchrones sont envoyés via des sites web autres que ceux par défaut contenant les URL de logo du site web par défaut.
 
 <u>Conditions préalables</u> :
 
-1. Le deuxième site web/magasin/magasin-view doit avoir été créé.
-1. La configuration **Envoi asynchrone** doit être activée à partir de **Magasins** > **Paramètres** > **Configuration** > **Ventes** > **Adresse électronique des ventes** > **Paramètres généraux**.
-1. La configuration **Ajouter le code de magasin aux URL** est activée pour faciliter l’accès au site Web secondaire à partir de **Magasins** > **Paramètres** > **Configuration** > **Options d’URL**.
+1. Le deuxième site web/magasin/affichage de magasin doit avoir été créé.
+1. La configuration **Envoi asynchrone** doit être activée à partir de **Magasins** > **Paramètres** > **Configuration** > **Ventes** > **Ventes Email** > **Paramètres généraux**.
+1. **Ajouter le code de magasin aux URL** la configuration est activée pour faciliter l’accès au site web secondaire à partir de **Magasins** > **Paramètres** > **Configuration** > **Options d’URL**.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Passer des commandes dans les premier et deuxième magasins.
-1. Exécutez cron pour envoyer les emails de vente.
-1. Consultez l’e-mail du deuxième site Web.
+1. Passez des commandes à partir du premier et du deuxième magasin.
+1. Exécutez cron pour envoyer les e-mails de vente.
+1. Vérifiez l’e-mail du deuxième site web.
 
 <u>Résultats attendus</u> :
 
-L’URL du logo de l’email contient l’URL du deuxième site web.
+L’URL du logo de l’e-mail contient l’URL du deuxième site web.
 
 <u>Résultats réels</u> :
 
-L’URL du logo de l’email contient l’URL du site web par défaut.
+L’URL du logo de l’e-mail contient l’URL du site web par défaut.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
+Pour en savoir plus sur l’outil de correctifs de la qualité, voir :
 
-* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!DNL Quality Patches Tool].
+* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!DNL Quality Patches Tool].
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) .
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).

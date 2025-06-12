@@ -1,18 +1,19 @@
 ---
-title: 'MDVA-41236 : impossible de créer ou de modifier des mises à jour planifiées existantes pour le produit'
-description: Le correctif MDVA-41236 corrige le problème qui empêchait les utilisateurs de créer ou de modifier des mises à jour planifiées existantes pour le produit si la "Date de fin" avait été supprimée précédemment. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 est installé. L’ID de correctif est MDVA-41236. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
+title: 'MDVA-41236 : impossible de créer ou de modifier les mises à jour planifiées existantes pour le produit'
+description: Le correctif MDVA-41236 corrige le problème en raison duquel les utilisateurs ne peuvent pas créer de mises à jour planifiées ou en modifier existantes pour le produit si la « Date de fin » a été supprimée précédemment. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5 est installé. L’ID du correctif est MDVA-41236. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 feature: Products, Staging
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 82192778-4f25-40a0-882e-d52d32c433c2
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%
 
 ---
 
-# MDVA-41236 : impossible de créer ou de modifier des mises à jour planifiées existantes pour le produit.
+# MDVA-41236 : impossible de créer ou de modifier les mises à jour planifiées existantes pour le produit
 
-Le correctif MDVA-41236 corrige le problème qui empêchait les utilisateurs de créer ou de modifier des mises à jour planifiées existantes pour le produit si la &quot;Date de fin&quot; avait été supprimée précédemment. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 est installé. L’ID de correctif est MDVA-41236. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
+Le correctif MDVA-41236 corrige le problème en raison duquel les utilisateurs ne peuvent pas créer de mises à jour planifiées ou en modifier existantes pour le produit si la « Date de fin » a été supprimée précédemment. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5 est installé. L’ID du correctif est MDVA-41236. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 
 ## Produits et versions concernés
 
@@ -26,48 +27,48 @@ Adobe Commerce (toutes les méthodes de déploiement) 2.3.0 - 2.4.3-p1
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Les utilisateurs ne peuvent pas créer de calendriers ou modifier des calendriers existants pour les produits si la &quot;Date de fin&quot; a été supprimée précédemment.
+Les utilisateurs ne peuvent pas créer de nouveaux plannings ni modifier les plannings existants pour les produits si la « Date de fin » a été supprimée précédemment.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Créez un produit dont l’état est défini sur *disable*.
+1. Créez un produit dont le Statut est défini sur *désactiver*.
 1. Ajoutez une mise à jour planifiée pour activer ce produit.
    * Ajoutez des dates de début et de fin futures.
 1. Modifiez la mise à jour planifiée en supprimant la **Date de fin**.
-1. Modifiez à nouveau le planning et essayez d&#39;ajouter une **Date de fin**. Une erreur se produira.
-1. Actualisez la page et accédez à nouveau à **Modifier la mise à jour planifiée**.
+1. Modifiez à nouveau le planning et essayez d’ajouter une **Date de fin**. Une erreur se produira.
+1. Actualisez la page et accédez de nouveau à **Modifier la mise à jour planifiée**.
 1. Cliquez sur **Supprimer de la mise à jour** > **Supprimer la mise à jour**.
-1. Maintenant, la mise à jour planifiée ne doit pas s’afficher en haut de la page de modification du produit.
-1. Essayez de créer une nouvelle mise à jour planifiée qui chevauche la durée précédente.
+1. Désormais, vous ne devriez pas voir la mise à jour planifiée en haut de la page de modification du produit.
+1. Essayez de créer une mise à jour planifiée qui chevauche la durée précédente.
 
 <u>Résultats attendus</u> :
 
-* Il n’y a aucune erreur à l’étape 4. L’administrateur peut mettre à jour la mise à jour planifiée sans erreur car le planning n’est pas encore actif.
+* Il n’y a pas d’erreur à l’étape 4. L’administrateur peut mettre à jour la mise à jour planifiée sans erreur, car le planning n’est pas encore actif.
 * L’utilisateur administrateur peut supprimer la mise à jour précédente et en créer une nouvelle.
 
 <u>Résultats réels</u> :
 
 Les utilisateurs reçoivent le message d’erreur suivant :
 
-*error : Future Update existe déjà dans cette période. Définissez une autre plage et réessayez.*
+*erreur : une mise à jour ultérieure existe déjà dans cette période. Définissez une autre plage et réessayez.*
 
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
+Pour en savoir plus sur l’outil de correctifs de la qualité, voir :
 
-* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!DNL Quality Patches Tool].
+* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!DNL Quality Patches Tool].
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) .
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).

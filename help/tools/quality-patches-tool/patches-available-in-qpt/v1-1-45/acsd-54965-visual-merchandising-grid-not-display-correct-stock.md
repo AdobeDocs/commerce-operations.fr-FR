@@ -1,18 +1,19 @@
 ---
-title: '''ACSD-54965 : [!UICONTROL Visual Merchandising] la grille n''affiche pas le bon stock'''
-description: Appliquez le correctif ACSD-54965 pour résoudre le problème Adobe Commerce en raison duquel la grille [!UICONTROL Visual Merchandising] n’affiche pas le stock correct lorsqu’un produit est affecté à un stock personnalisé.
+title: 'ACSD-54965 : [!UICONTROL Visual Merchandising] grille n''affiche pas le bon stock'
+description: Appliquez le correctif ACSD-54965 pour résoudre le problème d’Adobe Commerce où la grille de [!UICONTROL Visual Merchandising] n’affiche pas le stock correct lorsqu’un produit est affecté au stock personnalisé.
 feature: Merchandising, Categories
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: bd8a3547-1d84-4a17-b006-b35d92256211
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
 
 ---
 
-# ACSD-54965 : [!UICONTROL Visual Merchandising] la grille n&#39;affiche pas le stock correct
+# ACSD-54965 : [!UICONTROL Visual Merchandising] grille n&#39;affiche pas le bon stock
 
-Le correctif ACSD-54965 corrige le problème en raison duquel la grille [!UICONTROL Visual Merchandising] n’affiche pas le stock correct lorsqu’un produit est affecté à un stock personnalisé. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.45 est installé. L’ID de correctif est ACSD-54965. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-54965 corrige le problème où la grille de [!UICONTROL Visual Merchandising] n’affiche pas le stock correct lorsqu’un produit est affecté à un stock personnalisé. Ce correctif est disponible lorsque la version 1.1.45 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-54965. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -26,43 +27,43 @@ Le correctif ACSD-54965 corrige le problème en raison duquel la grille [!UICONT
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-La grille [!UICONTROL Visual Merchandising] n’affiche pas le stock correct lorsqu’un produit est affecté à un stock personnalisé.
+La grille de [!UICONTROL Visual Merchandising] n’affiche pas le stock correct lorsqu’un produit est affecté à un stock personnalisé.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Créez une source.
+1. Créez une nouvelle source.
 1. Créez un nouveau stock.
 1. Créez deux produits :
-   * Un produit avec le stock personnalisé uniquement.
+   * Un seul produit avec le stock personnalisé uniquement.
    * Un produit avec le stock par défaut uniquement.
 1. Ajoutez ces produits à une catégorie.
-1. Accédez à la grille [!UICONTROL visual Merchandising] (*[!UICONTROL Products in Category]*).
+1. Accédez à la grille de [!UICONTROL visual Merchandising] (*[!UICONTROL Products in Category]*).
 
 <u>Résultats réels</u> :
 
-Dans les portées *[!UICONTROL All Store Views]*, le produit avec du stock personnalisé n’affiche aucune quantité. Ce n’est que lorsque la portée *[!UICONTROL Default Store View]* est sélectionnée que le stock personnalisé indique la quantité du produit.
+Dans les portées de *[!UICONTROL All Store Views]*, le produit avec stock personnalisé n’affiche aucune quantité. Ce n’est que lorsque la portée de la *[!UICONTROL Default Store View]* est sélectionnée que le stock personnalisé affiche la quantité du produit.
 
 <u>Résultats attendus</u> :
 
-La grille affiche toutes les informations sur les stocks si la portée est *[!UICONTROL All Store Views]*.
+La grille affiche toutes les informations sur le stock si la portée est *[!UICONTROL All Store Views]*.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) dans la base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].
