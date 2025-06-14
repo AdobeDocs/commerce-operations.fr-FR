@@ -20,7 +20,7 @@ ht-degree: 90%
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">2.4.9-alpha1</a>
+          <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">2.4.9-alpha1</a>
         </td>
         <td>mercredi 10 juin 2025</td>
     </tr><!-- patch_releases -->
@@ -41,7 +41,7 @@ La prise en charge de la version 2.4.8 se termine le mercredi 11 avril 2028.
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#p1">2.4.8-p1</a>
+          <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#p1">2.4.8-p1</a>
         </td>
         <td>mercredi 10 juin 2025</td>
     </tr>
