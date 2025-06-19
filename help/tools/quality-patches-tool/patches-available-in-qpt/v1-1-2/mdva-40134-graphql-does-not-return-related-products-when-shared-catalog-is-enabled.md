@@ -47,16 +47,16 @@ L’instance doit être propre avec uniquement les données d’exemple.
 1. Sous **Produits connexes**, ajouter les deux sacs Duffle (ID 7 et 13).
 1. Envoyez une requête **Post** :
 
-<pre>{
-  products(filter : {sku : {eq : « 24-MB01 »}}, sort : {name : ASC}) {
-    items {
-      related_products {
+<pre>&lbrace;
+  products(filter : {sku : {eq : « 24-MB01 »}}, sort : {name : ASC}) &lbrace;
+    items &lbrace;
+      related_products &lbrace;
         uid
         nom
-      }
-    }
-  }
-}</pre>
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;</pre>
 
 <u>Résultats attendus</u> :
 
@@ -66,7 +66,7 @@ Les produits associés sont affichés dans la réponse de GraphQL.
 
 L’erreur suivante s’affiche pour les utilisateurs :
 
-<pre>La valeur renvoyée par Magento\CatalogPermissionsGraphQl\Model\Store\StoreProcessor::getStoreId() doit être du type int, la valeur renvoyée par null {« exception »:« [object] (GraphQL\\Error\\Error(code : 0) : la valeur renvoyée par Magento\\CatalogPermissionsGraphQl\\Model\\Store\\StoreProcessor::getStoreId() doit être du type int, la valeur renvoyée par null </pre>
+<pre>La valeur renvoyée par Magento\CatalogPermissionsGraphQl\Model\Store\StoreProcessor::getStoreId() doit être du type int, la valeur renvoyée par null &lbrace;« exception »:« [object] (GraphQL\\Error\\Error(code : 0) : la valeur renvoyée par Magento\\CatalogPermissionsGraphQl\\Model\\Store\\StoreProcessor::getStoreId() doit être du type int, la valeur renvoyée par null </pre>
 
 ## Application du correctif
 

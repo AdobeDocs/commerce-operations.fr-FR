@@ -42,7 +42,7 @@ Les modules B2B doivent être installés.
 
 1. Créez un produit configurable avec des produits simples définis sur **Non visibles individuellement**.
 1. Exécutez une **réindexation complète**.
-1. Exécutez une requête GraphQL **** comme suit :
+1. Exécutez une requête GraphQL **&#x200B;**&#x200B;comme suit :
 
 <pre>requête getFilteredProducts(
   $filter : ProductAttributeFilterInput !
@@ -50,26 +50,26 @@ Les modules B2B doivent être installés.
   $search : chaîne
   $pageSize: Int!
   $currentPage : Int !
-) {
+) &lbrace;
   products(
     filter : $filter
     sort : $sort
     recherche : $search
     pageSize : $pageSize
     currentPage : $currentPage
-  ) {
+  ) &lbrace;
     total_count
-    page_info {
+    page_info &lbrace;
       total_pages
       current_page
       page_size
-    }
-    items {
+    &rbrace;
+    items &lbrace;
       nom
       sku
-    }
-  }
-}</pre>
+    &rbrace;
+  &rbrace;
+&rbrace;</pre>
 
 Variables :
 

@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40896 : erreur « Erreur : TypeError : argument 3 » dans le produit asynchrone'
-description: 'Le correctif MDVA-40896 corrige le problème en raison duquel l’erreur « Error: TypeError: Argument 3 transmis à Magento\Framework\Webapi\ServiceInputProcessor::process() doit être du type tableau, l’erreur « string given » s’affiche dans l’API de produit en masse asynchrone. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15 est installé. L’ID du correctif est MDVA-40896. Notez que le problème a été résolu dans Adobe Commerce 2.4.4.'
+description: 'Le correctif MDVA-40896 corrige le problème en raison duquel l’erreur « Error: TypeError: Argument 3 transmis à MagentoFrameworkWebapiServiceInputProcessor::process() doit être du type tableau, l’erreur « string given » s’affiche dans l’API de produit en masse asynchrone. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15 est installé. L’ID du correctif est MDVA-40896. Notez que le problème a été résolu dans Adobe Commerce 2.4.4.'
 feature: Products
 role: Admin
 exl-id: 24eedd8d-4ae1-4ebc-a3e4-993f0c361a67

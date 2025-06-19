@@ -37,7 +37,7 @@ L’importation de données par le biais de l’interface utilisateur d’admini
 <u>Procédure à suivre </u> :
 
 1. Accédez à **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Import]**.
-1. Définissez **[!UICONTROL Entity Type]** sur *[!UICONTROL Customers and Addresses](fichier unique)*.
+1. Définissez **[!UICONTROL Entity Type]** sur *[!UICONTROL Customers and Addresses] (fichier unique)*.
 1. Définissez **[!UICONTROL Import Behavior]** sur *[!UICONTROL Add/Update]*.
 1. Sélectionnez un fichier valide à importer.
 1. Cliquez sur le bouton **[!UICONTROL Check Data]** .

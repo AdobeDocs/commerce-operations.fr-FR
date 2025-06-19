@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-54890 : « aggregate_sales_report_bestsellers_data » cause  [!DNL MySQL]  erreurs'
-description: Appliquez le correctif ACSD-54890 pour résoudre le problème d’Adobe Commerce en raison duquel « aggregate_sales_report_bestsellers_data » entraîne des erreurs dues au manque d [!DNL MySQL] espace de `/tmpdisk`.
+description: Appliquez le correctif ACSD-54890 pour résoudre le problème d’Adobe Commerce en raison duquel « aggregate_sales_report_bestsellers_data » entraîne des erreurs dues au manque d [!DNL MySQL] espace de &grave;/tmpdisk&grave;.
 feature: Attributes
 role: Admin, Developer
 exl-id: 21f926e0-a4f4-45ae-9397-4885a85db947
