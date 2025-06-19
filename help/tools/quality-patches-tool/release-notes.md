@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 811c29c722448a0dc0c9172f58020bd17241513c
+source-git-commit: 883d9cd90a70dc898766f89ee4d8e8adb1583c08
 workflow-type: tm+mt
-source-wordcount: '26381'
+source-wordcount: '26682'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,24 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 >[!INFO]
 >
->Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=fr#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
+>Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
 
 >[!INFO]
 >
 >Pour plus d’informations sur les [!DNL quality patches] créées par la communauté pour Magento Open Source, consultez les [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.66 {#v1-1-66}
+
+* **ACP2E-3789** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.9) - Correction du problème de mise à jour d’un produit via [!DNL WebAPI] fichiers multimédias dupliqués lorsqu’un ID de média était fourni.
+* **ACP2E-3918** (pour Adobe Commerce >=2.4.5 &lt;2.4.9) - Correction du problème en raison duquel le passage en caisse avait échoué pour les clients de société connectés utilisant le retrait en magasin sans adresse de facturation par défaut.
+* **ACSD-65750** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.9) - Correction du problème en raison duquel la requête de `route` GraphQL renvoyait des produits dans le désordre dans les types de contenu de produits Page Builder.
+* **ACSD-65775** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème en raison duquel les détails de commande de l’API [!DNL REST] renvoyaient des valeurs `base_row_total` et `row_total` incorrectes lorsque plusieurs quantités du même élément étaient commandées.
+* **ACSD-65777** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige le problème en raison duquel le champ `types` était manquant pour les types d’images de produit dans la demande de GraphQL `MediaGallery`.
+* **ACSD-65848** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème où le nombre total de produits dans une catégorie était calculé à l’aide d’une sous-sélection, en refactorisant la méthode pour utiliser à la place une jointure.
+* **ACSD-65913** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.9) - Correction du problème en raison duquel [!DNL OpenSearch] générait une erreur *legal_argument_exception* pour les catégories dont les produits avaient le même prix.
+* **ACSD-66041** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Correction du problème en raison duquel les codes postaux Irlande (IE) ne pouvaient pas être recherchés pour les emplacements de retrait en raison d’un `CountryID` manquant.
+* **ACSD-66212** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige le problème en raison duquel l’importation d’un fichier CSV client à deux reprises a provoqué des échecs lors de la deuxième tentative et des tentatives suivantes.
+* Versions mises à jour : **MDVA-12304**, **MDVA-19640**, **ACP2E-3841**, **ACSD-65100**, **ACSD-65787**, **ACP2E-3753**, **ACSD-65202**, **ACSD-65331**, **ACSD-65822**
 
 ## v1.1.65 {#v1-1-65}
 
