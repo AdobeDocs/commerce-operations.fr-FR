@@ -1,18 +1,20 @@
 ---
-title: 'ACSD-63242 : importation lente lors de l’ajout de plus de 10 000 produits de catalogue'
-description: Appliquez le correctif ACSD-63242 pour résoudre le problème Adobe Commerce des importations lentes lorsque des produits de catalogue comportant plus de 10 000 entrées sont ajoutés.
+title: 'ACSD-63242 : import lent lors de l’ajout de plus de 10 000 produits de catalogue'
+description: Appliquez le correctif ACSD-63242 pour résoudre le problème Adobe Commerce des imports lents lorsque des produits de catalogue comportant plus de 10 000 entrées sont ajoutés.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: 5fe00c9341414a0a2ba6b535d992d6c64e1c3b3a
+exl-id: 2d9114c8-72e4-4a11-89e7-b1a41c1fe14f
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
 
 ---
 
-# ACSD-63242 : importation lente lors de l’ajout de plus de 10 000 produits de catalogue
+# ACSD-63242 : import lent lors de l’ajout de plus de 10 000 produits de catalogue
 
-Le correctif ACSD-63242 corrige le problème des importations lentes lorsque des produits du catalogue comportant plus de 10 000 entrées sont ajoutés. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 est installé. L’ID de correctif est ACSD-63242. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.8.
+Le correctif ACSD-63242 corrige le problème des importations lentes lorsque des produits de catalogue comportant plus de 10 000 entrées sont ajoutés. Ce correctif est disponible lorsque la version 1.1.56 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-63242. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.8.
 
 ## Produits et versions concernés
 
@@ -26,39 +28,39 @@ Adobe Commerce (toutes les méthodes de déploiement) 2.4.6 - 2.4.6-p8 et 2.4.7-
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-L’importation des produits est lente lorsque des produits de catalogue comportant plus de 10 000 entrées sont ajoutés.
+L’importation de produits est lente lorsque des produits de catalogue comportant plus de 10 000 entrées sont ajoutés.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Accédez à **[!UICONTROL System]** > **[!UICONTROL Import]** > **[!UICONTROL Products]** > **[!UICONTROL Add/Update]**.
-1. Importez un fichier avec plus de 10 000 entrées.
+1. Importer un fichier contenant plus de 10 000 entrées.
 
 <u>Résultats attendus</u> :
 
-L’importation des produits du catalogue est exécutée dans le délai prévu.
+L’importation des produits du catalogue est exécutée dans les délais prévus.
 
 <u>Résultats réels</u> :
 
-L’importation des produits est lente. Le `var/log/exception.log` contient :
+L’importation du produit est lente. Le `var/log/exception.log` contient :
 
 ```PHP
 Exception: Warning: DOMXPath::query(): Recursion limit exceeded in /var/www/html/lib/internal/Magento/Framework/Validator/HTML/ConfigurableWYSIWYGValidator.php on line 114 in /var/www/html/lib/internal/Magento/Framework/App/ErrorHandler.php:62
 ```
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] : outil en libre-service pour les correctifs de qualité ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils.
+* [[!DNL Quality Patches Tool] : un outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils .

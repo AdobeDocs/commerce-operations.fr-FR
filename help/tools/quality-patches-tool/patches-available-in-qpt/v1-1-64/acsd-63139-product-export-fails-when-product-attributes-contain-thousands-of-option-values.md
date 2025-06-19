@@ -3,13 +3,14 @@ title: 'ACSD-63139 : l’exportation du produit échoue lorsque les attributs du
 description: Appliquez le correctif ACSD-63139 pour résoudre le problème d’Adobe Commerce en raison duquel l’exportation du produit échoue lorsque les attributs du produit contiennent des milliers de valeurs d’option.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: 57970acb07948f0792856e5f60df6c297a26780a
+exl-id: 785907dc-aa3f-49e2-bd52-c3afe4393456
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63139 : l’exportation du produit échoue lorsque les attributs du produit contiennent des milliers de valeurs d’option
 
@@ -27,7 +28,7 @@ Le correctif ACSD-63139 corrige le problème d’échec de l’exportation du pr
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -37,16 +38,16 @@ L’exportation du produit échoue lorsque les attributs du produit contiennent 
 
 1. Installez Adobe Commerce avec le module B2B.
 1. Importez une image mémoire de base de données volumineuse avec :
-   &#x200B;- ~7 000 produits
-   &#x200B;- ~450 attributs de produit
-   &#x200B;- Certains attributs ayant plus de 100 options
+   - ~7 000 produits
+   - ~450 attributs de produit
+   - Certains attributs ayant plus de 100 options
 1. Exécutez la commande suivante pour installer cron (s’il n’est pas déjà installé) :
 
    ```
    bin/magento cron:install
    ```
 
-1. Configurez [!DNL RabbitMQ] en suivant les instructions de la section [[!DNL RabbitMQ] Conditions préalables](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/rabbitmq).
+1. Configurez [!DNL RabbitMQ] en suivant les instructions de la section [[!DNL RabbitMQ] Conditions préalables](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/rabbitmq).
 1. Ouvrez le fichier `php.ini`, définissez la limite de mémoire sur 4G, puis redémarrez le service PHP.
 1. Dans le panneau d’administration, accédez à **[!UICONTROL System]** > *[!UICONTROL Data Transfer]* > **[!UICONTROL Export]**.
 1. Dans la section *[!UICONTROL Export Settings]*, définissez **[!UICONTROL Entity Type]** sur *Produits*, faites défiler la page vers le bas et cliquez sur **[!UICONTROL Continue]**.
@@ -73,7 +74,7 @@ Fatal error: Allowed memory size of 4294967296 bytes exhausted (tried to allocat
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

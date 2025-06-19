@@ -1,10 +1,11 @@
 ---
-title: 'Présentation : [!DNL Quality Patches Tool]  (QPT) v1.1.32'
-description: Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.32.
+title: Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.32
+description: Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans  [!DNL Quality Patches Tool] (QPT) v1.1.32.
 feature: Tools and External Services
 role: Admin
 exl-id: a6d434ce-2c3b-4f4f-b308-aee2025c7b0e
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
@@ -17,15 +18,15 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 
 QPT v1.1.32 comprend les correctifs suivants :
 
-1. **ACSD-49628** : corrige le problème où les erreurs [!UICONTROL Page Builder] CORS empêchent l’enregistrement du produit.
-1. **ACSD-51305** : résolution du problème en raison duquel les produits enfants composites en rupture de stock ne sont pas disponibles dans la réponse GraphQL.
-1. **ACSD-50621** : correction d’un problème en raison duquel les prix de niveau pour différents sites web d’un catalogue partagé ne sont pas visibles lors de la tentative de modification dans l’environnement multi-site.
-1. **ACSD-51041** : résolution du problème en raison duquel l’index de prix prend beaucoup de temps à se terminer en cas d’ensemble de produits volumineux.
-1. **ACSD-51379** : corrige le problème en raison duquel les modifications apportées au contenu de texte de page via [!UICONTROL Page Builder] ne sont pas enregistrées.
-1. **ACSD-49480** : correction d’un problème en raison duquel [!UICONTROL Cart Price Rule] ignorait les règles suivantes, les empêchant de fonctionner comme prévu.
-1. **ACSD-51230** : résolution du problème de suppression du compte [!UICONTROL Gift Card] lorsqu’un remboursement partiel d’un produit simple est traité depuis une commande.
-1. **ACSD-51238** : résolution du problème de suppression de la source d’inventaire lors de la mise à jour de produits configurables et de la modification du prix.
-1. **ACSD-50794** : résolution du problème en raison duquel les détails du message cadeau ou de l’emballage cadeau ne sont pas mis à jour dans la base de données lors de sa suppression via GraphQL.
-1. **ACSD-51528** : résolution du problème en raison duquel le formatage de `snake_case` a un comportement différent de celui attendu.
+1. **ACSD-49628** : corrige le problème en raison duquel les erreurs CORS [!UICONTROL Page Builder] empêchent l’enregistrement du produit.
+1. **ACSD-51305** : corrige le problème en raison duquel les produits enfants composites en rupture de stock ne sont pas disponibles dans la réponse de GraphQL.
+1. **ACSD-50621** : corrige le problème en raison duquel les prix de niveau pour différents sites web dans un catalogue partagé ne sont pas visibles lors de la tentative de modification dans un environnement multi-sites web.
+1. **ACSD-51041** : corrige le problème en raison duquel l’indexation des prix prend beaucoup de temps lorsqu’il existe un jeu de produits volumineux.
+1. **ACSD-51379** : correction du problème en raison duquel les modifications apportées au contenu textuel de la page via [!UICONTROL Page Builder] ne sont pas enregistrées.
+1. **ACSD-49480** : corrige le problème en raison duquel le [!UICONTROL Cart Price Rule] ignore les règles suivantes, ce qui les rend inopérantes.
+1. **ACSD-51230** : corrige le problème de suppression du compte [!UICONTROL Gift Card] lorsqu’un remboursement partiel d’un produit simple est traité à partir d’une commande.
+1. **ACSD-51238** : corrige le problème de suppression de la source d’inventaire lors de la mise à jour de produits configurables et de la modification du prix.
+1. **ACSD-50794** : corrige le problème en raison duquel les informations sur le message cadeau ou l’emballage du cadeau ne sont pas mises à jour dans la base de données lors de leur suppression via GraphQL.
+1. **ACSD-51528** : corrige le problème en raison duquel le comportement du formatage des `snake_case` est différent de celui attendu.
 
-Utilisez le menu de gauche pour accéder à une page de correctif spécifique.
+Utilisez le menu à gauche pour accéder à une page de correctif spécifique.

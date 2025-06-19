@@ -1,18 +1,20 @@
 ---
-title: "ACSD-61845 : une erreur se produit pour les requêtes avec l’en-tête accept text/html"
-description: Appliquez le correctif ACSD-61845 pour résoudre le problème Adobe Commerce en raison duquel l’envoi d’une requête HTTP avec uniquement un en-tête d’acceptation *text/html* provoque une erreur 500, avec les modules B2B installés.
+title: 'ACSD-61845 : une erreur se produit pour les requêtes avec en-tête d’acceptation text/html'
+description: Appliquez le correctif ACSD-61845 pour résoudre le problème d’Adobe Commerce où l’envoi d’une requête HTTP avec uniquement un en-tête Accept *text/html* provoque une erreur 500, avec les modules B2B installés.
 feature: B2B
 role: Admin, Developer
-source-git-commit: 8dbf91806097281fb4f7c74e182f10b09b18e925
+exl-id: 6fa6c3ff-bb45-4b9e-afd4-95692acb0a90
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%
 
 ---
 
-# ACSD-61845 : une erreur se produit pour les requêtes dont l’en-tête *text/html* accept
+# ACSD-61845 : une erreur se produit pour les requêtes avec en-tête *text/html* accept
 
-Le correctif ACSD-61845 corrige le problème en raison duquel une requête HTTP contenant uniquement un en-tête d’acceptation *text/html* provoquait une erreur 500 en raison de décalages de type de média dans la gestion des réponses. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 est installé. L’ID de correctif est ACSD-61845. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.8.
+Le correctif ACSD-61845 corrige le problème où une requête HTTP avec uniquement un en-tête *text/html* accept provoque une erreur 500 en raison de discordances de type de média dans la gestion des réponses. Ce correctif est disponible lorsque la version 1.1.54 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-61845. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.8.
 
 ## Produits et versions concernés
 
@@ -26,17 +28,17 @@ Le correctif ACSD-61845 corrige le problème en raison duquel une requête HTTP 
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Lors de l’envoi d’une requête HTTP contenant uniquement *text/html* dans l’en-tête accept, une erreur 500 se produit en raison d’une incohérence dans la configuration du type de média.
+Lors de l’envoi d’une requête HTTP avec uniquement *text/html* dans l’en-tête Accept , une erreur 500 se produit en raison d’une incohérence dans la configuration du type de média.
 
 <u>Conditions préalables</u> :
 
 Les modules B2B sont installés et activés.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Envoyez une requête avec uniquement *text/html* dans l’en-tête accept, comme suit :
 
@@ -46,7 +48,7 @@ Les modules B2B sont installés et activés.
 
 <u>Résultats attendus</u> :
 
-La page est renvoyée avec un *200 status code*.
+La page est renvoyée avec un code d’état *200*.
 
 <u>Résultats réels</u> :
 
@@ -56,15 +58,15 @@ Une erreur 500 est renvoyée, avec le message d’erreur suivant dans le `except
 Magento\Framework\Webapi\Exception: Server cannot match any of the given Accept HTTP header media type(s) from the request: "text/html" with media types from the config of response renderer. in vendor/magento/framework/Webapi/Rest/Response/RendererFactory.php:84
 ```
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-[[!DNL Quality Patches Tool] : outil en libre-service pour les correctifs de qualité ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils.
+[[!DNL Quality Patches Tool] : un outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils .

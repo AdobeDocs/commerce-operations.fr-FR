@@ -1,29 +1,31 @@
 ---
-title: 'Aperçu : [!DNL Quality Patches Tool] (QPT) v1.1.21'
-description: Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.21.
+title: Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.21
+description: Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans  [!DNL Quality Patches Tool] (QPT) v1.1.21.
 feature: Tools and External Services
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 8cfc61bc-c082-40b5-b64d-68a4c30561fd
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
 
 ---
 
-# [!DNL Quality Patches Tool] (QPT) v1.1.21 - Aperçu
+# Présentation d’[!DNL Quality Patches Tool] (QPT) v1.1.21
 
 Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.21.
 
 QPT v1.1.21 comprend les correctifs suivants :
 
-1. **ACSD-45071** : résolution du problème d’ajout de la source par défaut au produit lors de l’importation.
-1. **ACSD-46541** : résolution du problème de l’impossibilité pour un utilisateur administrateur de créer une note de crédit si un article de commande est supprimé.
-1. **ACSD-46581** : résolution du problème en raison duquel le total estimé de la taxe n’est pas mis à jour après la sélection d’un pays dans le panier.
-1. **ACSD-46618** : correction d’un problème en raison duquel le widget de liste de produits affichait des prix en cache incorrects pour un client connecté.
-1. **ACSD-46674** : résolution du problème d’affichage des options personnalisées d’un type d’image en tant qu’HTML dans les emails des clients.
-1. **ACSD-46809** : résolution du problème d’erreur d’un utilisateur lors de l’attribution d’un grand nombre de sources de produits.
+1. **ACSD-45071** : corrige le problème en raison duquel la source par défaut est ajoutée au produit lors de l’importation.
+1. **ACSD-46541** : correction du problème en raison duquel un utilisateur administrateur ne peut pas créer d’avoir en cas de suppression d’un élément de commande.
+1. **ACSD-46581** : corrige le problème en raison duquel le total de taxe estimé n’est pas mis à jour après la sélection d’un pays dans le panier.
+1. **ACSD-46618** : corrige le problème en raison duquel le widget de liste de produits affiche des prix mis en cache incorrects pour un client connecté.
+1. **ACSD-46674** : corrige le problème d’affichage des options personnalisées d’un type d’image sous la forme d’HTML dans les e-mails des clients et clientes.
+1. **ACSD-46809** : corrige le problème d’erreur d’un utilisateur ou d’une utilisatrice lors de l’affectation d’un grand nombre de sources de produits.
 1. **ACSD-46856** : améliore les performances en mettant à jour les prix des niveaux via **[!UICONTROL System]** > **[!UICONTROL Configuration]** > **[!UICONTROL Import]** > **[!UICONTROL Advanced Pricing]**.
-1. **ACSD-46988** : résolution du problème en raison duquel la requête d’API de &quot;devise&quot; de GraphQL renvoie des valeurs NULL pour une devise personnalisée.
-1. **ACSD-47076** : résolution du problème de lecture des vidéos [!DNL Vimeo] sur le storefront.
+1. **ACSD-46988** : corrige le problème en raison duquel la requête API « currency » de GraphQL renvoie des valeurs NULL pour une devise personnalisée.
+1. **ACSD-47076** : corrige le problème en raison duquel les vidéos [!DNL Vimeo] ne peuvent pas être lues sur le storefront.
 
-Utilisez le menu de gauche pour accéder à une page de correctif spécifique.
+Utilisez le menu à gauche pour accéder à une page de correctif spécifique.

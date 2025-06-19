@@ -1,9 +1,11 @@
 ---
-title: 'Aperçu : [!DNL Quality Patches Tool] (QPT) v1.1.45'
-description: Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.45.
+title: Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.45
+description: Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans  [!DNL Quality Patches Tool] (QPT) v1.1.45.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+exl-id: 1e1bdbfa-a817-4b04-8617-0a70c234b65a
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
@@ -16,12 +18,12 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 
 QPT v1.1.45 comprend les correctifs suivants :
 
-1. **ACSD-56886** : correction d’un problème en raison duquel un produit configurable était en rupture de stock lorsqu’un des deux produits enfants était désactivé par une mise à jour planifiée.
-1. **ACSD-56616** : résolution du problème d’affichage des produits regroupés en stock sur le storefront lorsque leurs produits simples sont en rupture de stock.
-1. **ACSD-56515** : résolution du problème de l’impossibilité pour l’administrateur disposant d’autorisations au niveau du site web d’ajouter ou de modifier un bloc dynamique.
-1. **ACSD-56447** : correction d’un problème en raison duquel l’ajout d’un même produit au panier via la demande d’API Web REST parallèle générait deux éléments distincts dans le panier.
-1. **ACSD-56415** : résolution du problème de ralentissement des performances de l’indexation de prix partielle en raison d’une requête `DELETE` lorsque la base de données contient de nombreuses données de prix partielles à indexer.
-1. **ACSD-54965** : résolution du problème en raison duquel la grille [!UICONTROL Visual Merchandising] n’affiche pas le stock correct lorsqu’un produit est affecté à un stock personnalisé uniquement.
-1. **ACSD-52824** : résolution du problème d’affichage des boutons **[!DNL PayPal Express]**, **[!DNL Google Pay]** et **[!DNL Apple Pay]** pour les clients de l’entreprise lorsque ces méthodes de paiement sont désactivées dans les paramètres de l’entreprise.
+1. **ACSD-56886** : corrige le problème de rupture de stock d’un produit configurable lorsque l’un des deux produits enfants est désactivé par une mise à jour planifiée.
+1. **ACSD-56616** : corrige le problème d’affichage des produits groupés en stock sur le storefront lorsque leurs produits simples sont en rupture de stock.
+1. **ACSD-56515** : corrige le problème en raison duquel l’administrateur disposant d’autorisations au niveau du site web ne peut pas ajouter ni modifier un bloc dynamique.
+1. **ACSD-56447** : corrige le problème en raison duquel l’ajout d’un même produit au panier via une requête d’API web REST parallèle génère deux éléments distincts dans le panier.
+1. **ACSD-56415** : corrige le problème en raison duquel la performance de l’indexation partielle des prix est ralentie en raison d’une requête `DELETE` lorsque la base de données contient beaucoup de données de prix partielles à indexer.
+1. **ACSD-54965** : corrige le problème en raison duquel la grille de [!UICONTROL Visual Merchandising] n’affiche pas le stock correct lorsqu’un produit est affecté à un stock personnalisé uniquement.
+1. **ACSD-52824** : corrige le problème d’affichage des boutons **[!DNL PayPal Express]**, **[!DNL Google Pay]** et **[!DNL Apple Pay]** pour les clients d’entreprise lorsque ces modes de paiement sont désactivés dans les paramètres de l’entreprise.
 
-Utilisez le menu de gauche pour accéder à une page de correctif spécifique.
+Utilisez le menu à gauche pour accéder à une page de correctif spécifique.

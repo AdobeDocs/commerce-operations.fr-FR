@@ -1,26 +1,28 @@
 ---
-title: 'Aperçu : [!DNL Quality Patches Tool] (QPT) v1.1.8'
-description: Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.8.
+title: Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.8
+description: Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans  [!DNL Quality Patches Tool] (QPT) v1.1.8.
 feature: Tools and External Services
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: bcc35189-bed7-4076-bd9e-3d4ca47b3215
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 0%
 
 ---
 
-# [!DNL Quality Patches Tool] (QPT) v1.1.8 - Aperçu
+# Présentation d’[!DNL Quality Patches Tool] (QPT) v1.1.8
 
 Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.8.
 
 QPT v1.1.8 comprend les correctifs suivants :
 
-1. **MDVA-38393** : résolution du problème de l’arrêt du fonctionnement des règles du catalogue pour un produit configurable si son produit simple est renommé.
-1. **MDVA-39153** : correction d’un problème en raison duquel un montant de remise n’était pas correctement calculé lors d’une réorganisation dans l’Admin.
-1. **MDVA-41139** : corrige le problème en raison duquel les produits configurables deviennent hors stock après l’importation d’un produit lorsque la quantité=0 d’un produit simple est épuisée pour l’une de ses sources.
-1. **MDVA-41215** : corrige le problème en raison duquel les utilisateurs obtenaient l’erreur 500 après avoir défini le cookie *mage-messages* s’il existe déjà, mais qu’il n’y a aucun nouveau message.
-1. **MDVA-42326** : correction d’un problème en raison duquel les clients obtenaient une erreur lors du passage en caisse après un délai d’expiration de session, même si le panier persistant était activé.
-1. **MDVA-42341** : corrige le problème en raison duquel la requête GraphQL `categoryList` ne filtre pas les résultats si une requête contient l’en-tête Boutique.
+1. **MDVA-38393** : correction du problème en raison duquel les règles de catalogue ne fonctionnent plus pour un produit configurable si son produit simple est renommé.
+1. **MDVA-39153** : correction d’un problème en raison duquel un montant de remise n’est pas calculé correctement lors de la réorganisation dans l’administration.
+1. **MDVA-41139** : correction du problème en raison duquel les produits configurables sont en rupture de stock après l’importation d’un produit lorsque la quantité=0 d’un produit simple pour l’une de ses sources est affectée.
+1. **MDVA-41215** : corrige le problème où les utilisateurs obtiennent l’erreur 500 après avoir défini le cookie *mage-messages* s’il existe déjà, mais qu’il n’existe aucun nouveau message.
+1. **MDVA-42326** : corrige le problème où les clients obtiennent une erreur lors du passage en caisse après une temporisation de session, même si le panier persistant est activé.
+1. **MDVA-42341** : permet de résoudre le problème en raison duquel la requête `categoryList` GraphQL ne filtre pas les résultats si une requête comporte l’en-tête Store .
 
-Utilisez le menu de gauche pour accéder à une page de correctif spécifique.
+Utilisez le menu à gauche pour accéder à une page de correctif spécifique.

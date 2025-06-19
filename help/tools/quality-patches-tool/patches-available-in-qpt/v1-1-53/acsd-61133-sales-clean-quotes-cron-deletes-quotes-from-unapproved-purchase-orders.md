@@ -1,18 +1,20 @@
 ---
-title: "ACSD-61133: &grave;sales_clean_citations&grave; cron supprime les guillemets des commandes non approuvées"
-description: Appliquez le correctif ACSD-61133 pour résoudre le problème Adobe Commerce en raison duquel le cron "sales_clean_citations" supprime les guillemets des commandes non approuvées.
+title: 'ACSD-61133 : le cron « sales_clean_quotes » supprime les devis des commandes fournisseur non approuvées'
+description: Appliquez le correctif ACSD-61133 pour résoudre le problème d’Adobe Commerce où « sales_clean_quotes » cron supprime les devis des commandes fournisseur non approuvées.
 feature: B2B, Purchase Orders
 role: Admin, Developer
-source-git-commit: 67b1dd3d4814b487d47a25697ed21d60f1e4e378
+exl-id: 06979d4b-08ea-40fe-a211-3d950c9afb47
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
 
 ---
 
-# ACSD-61133 : `sales_clean_quotes` le cron supprime les guillemets des commandes non approuvées
+# ACSD-61133 : `sales_clean_quotes` cron supprime les devis des commandes fournisseur non approuvées
 
-Le correctif ACSD-61133 corrige le problème en raison duquel le cron `sales_clean_quotes` supprime les guillemets des commandes non approuvées. Ce correctif est disponible lorsque [!DNL Quality Patches Tool (QPT)] 1.1.53 est installé. L’ID de correctif est ACSD-61133. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.8.
+Le correctif ACSD-61133 corrige le problème où le cron `sales_clean_quotes` supprime les devis des commandes fournisseur non approuvées. Ce correctif est disponible lorsque la version 1.1.53 de [!DNL Quality Patches Tool (QPT)] est installée. L’ID du correctif est ACSD-61133. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.8.
 
 ## Produits et versions concernés
 
@@ -26,41 +28,41 @@ Adobe Commerce (toutes les méthodes de déploiement) 2.4.4-p5 - 2.4.4-p11, 2.4.
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-`sales_clean_quotes` cron supprime les guillemets des commandes non approuvées. Le *[bon de commande B2B]* ne peut pas être converti dans l’ordre du guillemet associé à la commande achetée, car le cron le supprime.
+`sales_clean_quotes` cron supprime les devis des commandes fournisseur non approuvées. Le bon de commande *[B2B]* ne peut pas être converti en commande du devis associé au bon de commande car le cron le supprime.
 
 <u>Conditions préalables</u> :
 
 Les modules Adobe Commerce [!UICONTROL B2B] sont installés et activés.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Activez la fonctionnalité *[!UICONTROL B2B Purchase Order]* .
-1. Créez une société.
+1. Activez la fonctionnalité *[!UICONTROL B2B Purchase Order]*.
+1. Créez une entreprise.
 1. Créez un *[!UICONTROL Purchase Order]*.
-1. Attendez que le guillemet expire et soit supprimé par le cron. La période d’expiration de la citation peut être définie avec **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Quotes]** > **[!UICONTROL General]** > **[!UICONTROL Default Expiration Period configuration]**.
-1. Convertissez *[!UICONTROL Purchase Order]* à l&#39;ordre par le biais de *[!UICONTROL My Purchase Order in Customer Dashboard]* ou avec une mutation [!DNL GraphQL] `placeOrderForPurchaseOrder`.
+1. Patientez jusqu’à l’expiration du devis et sa suppression par le cron. La période d’expiration du devis peut être définie avec **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Quotes]** > **[!UICONTROL General]** > **[!UICONTROL Default Expiration Period configuration]**.
+1. Convertissez les *[!UICONTROL Purchase Order]* en ordre via *[!UICONTROL My Purchase Order in Customer Dashboard]* ou avec [!DNL GraphQL] mutation `placeOrderForPurchaseOrder`.
 
 <u>Résultats attendus</u> :
 
-Le guillemet associé à l’actif *[!UICONTROL Purchase Order]* n’est pas supprimé comme expiré par le cron. La commande est correctement placée sur le storefront ou via [!DNL GraphQL].
+Le devis associé au *[!UICONTROL Purchase Order]* actif n&#39;est pas supprimé comme expiré par le cron. La commande est placée avec succès sur le storefront ou via [!DNL GraphQL].
 
 <u>Résultats réels</u> :
 
-La commande n’est pas placée et une erreur s’affiche sur le storefront ou est renvoyée dans la réponse [!DNL GraphQL].
+La commande n’est pas passée et une erreur s’affiche sur le storefront ou est renvoyée dans la réponse [!DNL GraphQL].
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide [!DNL Quality Patches Tool].
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
-Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
+Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] : outil en libre-service pour les correctifs de qualité ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils.
+* [[!DNL Quality Patches Tool] : un outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils .
