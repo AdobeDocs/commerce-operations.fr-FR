@@ -5,9 +5,9 @@ feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 6cfe4f4c-cdb3-49b3-84d0-ad794dfcafc3
-source-git-commit: b1912bbc5aabd36067563326ee5c6bb84e14441d
+source-git-commit: 773bc7a5b34a2b5f7314929be435c842a755de54
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ QPT v1.1.65 comprend les correctifs suivants :
 1. **ACSD-65202** : **[!UICONTROL My Account]** page n’affiche pas les commandes récentes provenant d’autres vues du magasin.
 1. **ACSD-65254** : notification par e-mail non envoyée après la mise à jour de l’e-mail du client via `updateCustomerEmail` mutation GraphQL.
 1. **ACSD-65331** : le magasin sélectionné dans **[!UICONTROL Pick in Store]** est effacé après être revenu à la page de passage en caisse.
-1. **ACSD-65822** : les quantités de produits groupés et configurables ne sont pas correctement reflétées dans le panier.
+1. **ACSD-65822** : les quantités de produits groupés et configurables ne sont pas correctement reflétées dans le [!UICONTROL Shopping Cart].
 1. **ACSD-66093** : les champs de nom du client invité autorisent la saisie d’e-mails, ce qui entraîne des messages de commande non valides.
 
 Utilisez le menu à gauche pour accéder à une page de correctif spécifique.
