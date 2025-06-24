@@ -30,7 +30,7 @@ Le [service Amazon Simple Storage Service (Amazon S3)][AWS S3] est un service de
    bin/magento config:set system/media_storage_configuration/media_database 0
    ```
 
-1. Configurez Commerce pour utiliser le compartiment privé. Pour obtenir une liste complète des paramètres](remote-storage.md#remote-storage-options) consultez la section [ Options de stockage distant .
+1. Configurez Commerce pour utiliser le compartiment privé. Pour obtenir une liste complète des paramètres[&#128279;](remote-storage.md#remote-storage-options) consultez la section  Options de stockage distant .
 
    ```bash
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
