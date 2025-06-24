@@ -4,13 +4,13 @@ description: Appliquez le correctif ACSD-64813 pour résoudre le problème d’A
 feature: B2B, REST, Categories
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 0ed4bde6d78429da5a375a8c50f6b348db5a5ad5
+exl-id: e6fd89c2-d3c0-462f-b328-7a80b456d96d
+source-git-commit: 239a9efcc2ae231b337f654e4e36e6119e6eff7e
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64813 : l’annulation de l’affectation de catégories dans [!DNL B2B] catalogue partagé via l’API REST est lente
 
@@ -28,7 +28,7 @@ Le correctif ACSD-64813 corrige le problème de lenteur de l’annulation de l�
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -38,29 +38,29 @@ L’annulation de l’affectation de catégories dans un catalogue partagé [!DN
 
 1. Activez **[!UICONTROL B2B]**, **[!UICONTROL Company]** et **[!UICONTROL Shared Catalog]**.
 1. générer 30 000 produits actifs en stock ;
-1. Créez un [catalogue partagé personnalisé](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) et affectez-y tous les produits.
+1. Créez un [catalogue partagé personnalisé](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) et affectez-y tous les produits.
 1. Créez une catégorie sous la catégorie racine par défaut et attribuez-lui quelques produits.
 1. Utilisez le jeton d’administration pour appeler le point d’entrée de l’API REST `rest/all/V1/sharedCatalog/<shared_catalog_id>/assignCategories` avec le nouvel ID de catégorie.
 
-```
-{
-  "categories": [
-    { "id": <new category id> }
-  ]
-}
-```
+   ```
+   {
+     "categories": [
+       { "id": <new category id> }
+     ]
+   }
+   ```
 
 1. Vérifiez que la réponse est *true*.
 1. Exécutez `bin/magento cron:run` deux fois ou effectuez une réindexation.
 1. Utilisez le jeton d’administration pour appeler le point d’entrée de l’API REST `rest/all/V1/sharedCatalog/<shared_catalog_id>/unassignCategories` avec le nouvel ID de catégorie.
 
-```
-{
-  "categories": [
-    { "id": <new category id> }
-  ]
-}
-```
+   ```
+   {
+     "categories": [
+       { "id": <new category id> }
+     ]
+   }
+   ```
 
 <u>Résultats attendus</u> :
 
@@ -75,7 +75,7 @@ L’exécution prend environ 30 minutes ou génère une erreur de temporisation.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
