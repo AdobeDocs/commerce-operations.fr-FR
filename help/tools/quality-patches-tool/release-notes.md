@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: fe1bec27cb9aa420fd71a0542edd5f82492e17aa
+source-git-commit: c14532e7390a3c123a4f673fca2211bfea9bcaa1
 workflow-type: tm+mt
-source-wordcount: '26682'
+source-wordcount: '26993'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,25 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 >[!INFO]
 >
->Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=fr#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
+>Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
 
 >[!INFO]
 >
 >Pour plus d’informations sur les [!DNL quality patches] créées par la communauté pour Magento Open Source, consultez les [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.67 {#v1-1-67}
+
+* **ACSD-65935** (pour Adobe Commerce >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel la requête `customerOrders` GraphQL renvoyait une erreur de serveur interne lors de la suppression d’un produit.
+* **ACSD-66049** (pour Adobe Commerce et Magento Open Source >=2.4.5-p3 &lt;2.4.6 || >=2.4.7 &lt;2.4.9) - Correction du problème où les vitrines non anglaises affichent un prix incorrect en raison de la version de la bibliothèque de l’interface utilisateur.
+* **ACSD-66084** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.9) - Corrige le problème où `row_total_incl_tax` est renvoyée comme une valeur résiduelle proche de zéro dans la réponse de l’API de commande au lieu de 0,00 pour les éléments entièrement actualisés.
+* **ACSD-66118** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Correction du problème en raison duquel la mise à jour du code d’affichage du magasin efface [!UICONTROL Design Configuration] paramètres si le cache de configuration n’est pas actualisé.
+* **ACSD-66139** (pour Adobe Commerce >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel les appels GraphQL pour passer une commande pour un panier inexistant ou inactif renvoyaient un code d’erreur *UNDEFINED*.
+* **ACSD-66301** (pour Adobe Commerce et Magento Open Source >=2.4.6-p9 &lt;2.4.7 || >=2.4.7-p4 &lt;2.4.8) - Corrige le problème en raison duquel le déplacement de produits d’une commande vers le panier dans l’Administration entraîne une incohérence de la quantité.
+* **ACSD-66434** (pour Adobe Commerce >=2.4.6-p8 &lt;2.4.9) - Corrige le problème en raison duquel l’ID de client était absent des requêtes GraphQL de la société.
+* **ACSD-66441** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.8) - Correction du problème en raison duquel le storefront affiche des données d’index incorrectes dans une navigation par couches lors de l’indexation des produits configurables pour une configuration multi-magasin.
+* **AC-14984** (pour Adobe Commerce et Magento Open Source >=2.4.6-p10 &lt;2.4.7 || >=2.4.8 &lt;2.4.9) - Corrige l’erreur *Type de cadre non valide 21* sur la connexion SSL de RabbitMQ.
+* **AC-14985** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème en raison duquel les e-mails ne sont pas envoyés lors de l’utilisation du serveur `smtp` externe avec TLS activé.
+* Versions mises à jour : **MDVA-12304**, **ACSD-47920**, **ACSD-56447**, **ACSD-61845**, **ACSD-64118**
 
 ## v1.1.66 {#v1-1-66}
 
