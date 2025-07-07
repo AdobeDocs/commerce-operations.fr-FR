@@ -3,9 +3,9 @@ title: Adobe Managed Services
 description: Découvrez comment Adobe Managed Services peut vous aider à prendre en charge et à gérer votre implémentation Adobe Commerce.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: e5a50707463bb7b36b4285889b10353faf9ba09f
+source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -40,19 +40,20 @@ Consultez le tableau suivant pour une comparaison plus détaillée des principau
 | Fonctionnalité | Adobe Commerce On-Premise | Adobe Commerce on Cloud | Adobe Commerce sous Managed Services |
 |---------|---------------------------|-------------------------|-----------------------------------|
 | Logiciel d’entreprise Adobe | ✓ | ✓ | ✓ |
-| Infrastructure cloud sécurisée et dédiée | | ✓ | ✓ |
-| Objectif amélioré de niveau de service pour les incidents | | P1 : 1 heure | P1 : 15 minutes |
-| Surveillance et réponse de la capacité de pointe | | | ✓ |
-| Sécurité des infrastructures | | | ✓ |
-| Niveau d’infrastructure 99,99 % SLA | | | ✓ |
-| Niveau d’application : 99,9 % SLA | | | |
-| Ressource d’expert en infrastructure désigné (ingénieur du succès client) | | | |
-| Gestion des événements planifiés | | | |
-| Surveillance de site personnalisée et runbook personnalisé | | | |
-| Assistance au déploiement des mises à niveau et des correctifs | | | |
-| Coordination du processus de mise en production | | | |
-| Gestion des remontées d’informations dédiée | | | |
-| Surveillance et assistance des applications | | | |
+| Adobe Developer App Builder | | ✓ | ✓ |
+| Infrastructure cloud sécurisée et dédiée | | ✓ P1 : 1 heure | ✓ P1 : 15 minutes |
+| Objectif de niveau de service d’incident amélioré | | ✓ | ✓ |
+| Surveillance et réponse de la capacité de pointe | | ✓ | ✓ |
+| Sécurité des infrastructures | | ✓ | ✓ |
+| Niveau d’infrastructure 99,99 % SLA | | ✓ | ✓ |
+| Niveau d’application : 99,9 % SLA | | | ✓ |
+| Ressource d’expert en infrastructure désigné (ingénieur du succès client) | | | ✓ |
+| Gestion des événements planifiés | | | ✓ |
+| Surveillance de site personnalisée et runbook personnalisé | | | ✓ |
+| Assistance au déploiement des mises à niveau et des correctifs | | | ✓ |
+| Coordination du processus de mise en production | | | ✓ |
+| Gestion des remontées d’informations dédiée | | | ✓ |
+| Surveillance et assistance des applications | | | ✓ |
 
 ## Rôles et responsabilités
 
