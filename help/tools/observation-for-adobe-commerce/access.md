@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Pour utiliser l’applet de commande [!DNL New Relic Observation for Adobe Commerce], vérifiez que vous avez accès à [!DNL New Relic].
 
-[Gestion de compte New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management)
+[Gestion de compte New Relic](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management)
 
 Ensuite, sur la page d’accueil de [!DNL New Relic], sélectionnez l’élément de menu Applications .
 
