@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: b5b80bfa-a52c-466b-b95c-23590e850aed
-source-git-commit: 31a6b8296681a8f8aa23aa941c0637510b330cdc
+source-git-commit: f24e6b4cc973247cb176b7e6b10cc9c61e1c16c2
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ QPT v1.1.66 comprend les correctifs suivants :
 1. **ACP2E-3789** : fichiers multimédias dupliqués lors de la mise à jour du produit via l’API Web.
 1. **ACP2E-3918** : échec de l&#39;extraction pour les clients de l&#39;entreprise connectés utilisant le retrait en magasin sans adresse de facturation par défaut.
 1. **ACSD-65750** : la requête « itinéraire » de GraphQL a renvoyé des produits dans le désordre dans les types de contenu de produits Page Builder.
-1. **ACSD-65775** : les détails de commande de l’API REST ont renvoyé des valeurs `base_row_total` et `row_total` incorrectes lorsque plusieurs quantités d’un même élément ont été commandées.
+1. **ACSD-65775** : valeurs `base_row_total` et `row_total` incorrectes dans les détails de commande de l’API REST pour plusieurs quantités.
 1. **ACSD-65777** : le champ « types » était manquant pour les types d’images de produit dans la demande de GraphQL `MediaGallery`.
 1. **ACSD-65848** : les catégories dans l’administration se chargent très lentement.
 1. **ACSD-65913** : OpenSearch a lancé une `illegal_argument_exception` pour les catégories dont les produits avaient le même prix.
