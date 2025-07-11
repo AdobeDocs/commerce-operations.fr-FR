@@ -78,11 +78,11 @@ L’étape d’expédition commence à charger et à rediriger vers **[!UICONTRO
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool]** > Utilisation]**(/help/tools/quality-patches-tool/usage.md) dans le guide de[!DNL Quality Patches Tool]**.
+* Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] **&#x200B; > Utilisation]**(/help/tools/quality-patches-tool/usage.md) dans le guide de[!DNL Quality Patches Tool]**.
 * ** Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs]&#x200B;(https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool]**, consultez :
 
-* [[!DNL Quality Patches Tool]**: outil en libre-service pour les correctifs de qualité]**(/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils .
+* [[!DNL Quality Patches Tool]&#x200B;**: outil en libre-service pour les correctifs de qualité]**(/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils .
