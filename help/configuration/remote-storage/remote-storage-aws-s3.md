@@ -3,9 +3,9 @@ title: Configurer le compartiment AWS S3 pour le stockage distant
 description: Configurez votre projet Commerce pour utiliser le service de stockage AWS S3 pour le stockage distant.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 3f45b61a2f4fd6db161c66182212f3aff5900e26
+source-git-commit: 3690043019d70ad15332f757158937a7d5305043
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ Le [service Amazon Simple Storage Service (Amazon S3)][AWS S3] est un service de
 >[!WARNING]
 >
 >Adobe décourage fortement l’utilisation des compartiments publics, car ils posent un risque de sécurité grave.
+>
+>Lors de l’utilisation d’un compartiment S3 fourni par le client pour le stockage de ressources ou de médias, Adobe n’est pas responsable des problèmes, des pertes de données ou des pannes liés à la configuration, à la gestion ou au fonctionnement du compartiment S3, et ne fournit pas de prise en charge pour ces problèmes. Le dépannage et la maintenance du compartiment S3 relèvent de la seule responsabilité du client.
 
 **Pour activer le stockage distant avec l&#39;adaptateur AWS S3** :
 
@@ -30,7 +32,7 @@ Le [service Amazon Simple Storage Service (Amazon S3)][AWS S3] est un service de
    bin/magento config:set system/media_storage_configuration/media_database 0
    ```
 
-1. Configurez Commerce pour utiliser le compartiment privé. Pour obtenir une liste complète des paramètres[&#128279;](remote-storage.md#remote-storage-options) consultez la section  Options de stockage distant .
+1. Configurez Commerce pour utiliser le compartiment privé. Pour obtenir une liste complète des paramètres[ consultez la section ](remote-storage.md#remote-storage-options) Options de stockage distant .
 
    ```bash
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
