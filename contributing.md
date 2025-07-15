@@ -19,7 +19,7 @@ vous devez respecter ce code. Veuillez signaler tout comportement inacceptable �
 
 ## Documentation du guide du contributeur
 
-Voir le [Guide du contributeur](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
+Voir le [Guide du contributeur](https://experienceleague.adobe.com/fr/docs/contributor/contributor-guide/introduction).
 
 ## Vous Avez Une Question ?
 
@@ -57,11 +57,11 @@ n’hésitez pas à contacter les responsables existants pour en discuter.
 
 ## Problèmes de sécurité
 
-Les problèmes de sécurité ne doivent pas être signalés dans ce dispositif de suivi de problèmes. Soumettez plutôt [ problème à nos experts en sécurité](https://helpx.adobe.com/security/alertus.html).
+Les problèmes de sécurité ne doivent pas être signalés dans ce dispositif de suivi de problèmes. Soumettez plutôt [ problème à nos experts en sécurité](https://helpx.adobe.com/fr/security/alertus.html).
 
 ## Nouveautés
 
-Si vos modifications introduisent de nouvelles rubriques, des mises à jour importantes ou des corrections qui doivent être mises en évidence, vous pouvez ajouter une brève description à la section [Quoi de neuf ](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home#whats-new) directement à partir du corps de votre requête d’extraction.
+Si vos modifications introduisent de nouvelles rubriques, des mises à jour importantes ou des corrections qui doivent être mises en évidence, vous pouvez ajouter une brève description à la section [Quoi de neuf ](https://experienceleague.adobe.com/fr/docs/commerce-operations/operational-guides/home#whats-new) directement à partir du corps de votre requête d’extraction.
 
 Pour ajouter une mise en surbrillance Nouveautés :
 
@@ -109,4 +109,4 @@ Pour ajouter une mise en surbrillance Nouveautés :
 1. La partie `whatsnew` doit commencer à partir de la balise `whatsnew` et se trouver à la toute fin du corps de la demande d’extraction.
 1. Les descriptions des modifications doivent inclure des liens de travail. Assurez-vous que les liens sont corrects et mènent aux sujets prévus. Si la rubrique est nouvelle, vérifiez que les liens fonctionnent après la fusion de la demande d’extraction et la publication de la nouvelle rubrique. Vous pouvez corriger les liens après la fusion de la demande d’extraction.
 
-Par exemple, recherchez dans les demandes d’extraction fermées du référentiel pour voir comment les mises en surbrillance existantes sont formatées, puis comparez-les à la section [Nouveautés](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home#whats-new) pour voir comment elles apparaissent dans la documentation.
+Par exemple, recherchez dans les demandes d’extraction fermées du référentiel pour voir comment les mises en surbrillance existantes sont formatées, puis comparez-les à la section [Nouveautés](https://experienceleague.adobe.com/fr/docs/commerce-operations/operational-guides/home#whats-new) pour voir comment elles apparaissent dans la documentation.
