@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: b5b80bfa-a52c-466b-b95c-23590e850aed
-source-git-commit: a7cbe756f73211e4cc400ea27e357e99aa39605c
+source-git-commit: 8e7cec268cf4d0022cf5037f5effcaa8a13b55ca
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,8 @@ ht-degree: 0%
 Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.66.
 
 QPT v1.1.66 comprend les correctifs suivants :
+1. **ACP2E-3918** : échec de passage en caisse pour les clients de l’entreprise qui utilisent le retrait en magasin.
 1. **ACP2E-3789** : fichiers multimédias dupliqués lors de la mise à jour du produit via l’API Web.
-1. **ACP2E-3918** : échec de l&#39;extraction pour les clients de l&#39;entreprise connectés utilisant le retrait en magasin sans adresse de facturation par défaut.
 1. **ACSD-65750** : la requête « itinéraire » de GraphQL a renvoyé des produits dans le désordre dans les types de contenu de produits Page Builder.
 1. **ACSD-65775** : valeurs `base_row_total` et `row_total` incorrectes dans les détails de commande de l’API REST pour plusieurs quantités.
 1. **ACSD-65777** : le champ « types » était manquant pour les types d’images de produit dans la demande de GraphQL `MediaGallery`.
