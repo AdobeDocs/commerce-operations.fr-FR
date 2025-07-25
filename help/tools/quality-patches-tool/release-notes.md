@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: c14532e7390a3c123a4f673fca2211bfea9bcaa1
+source-git-commit: 00153baf1c4a52d17b750db35a678b1950e00ed1
 workflow-type: tm+mt
-source-wordcount: '26993'
+source-wordcount: '27482'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,31 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 >[!INFO]
 >
->Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=fr#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
+>Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
 
 >[!INFO]
 >
 >Pour plus d’informations sur les [!DNL quality patches] créées par la communauté pour Magento Open Source, consultez les [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.68 {#v1-1-68}
+
+* **ACSD-58131** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel la présence d’une image de 0 octet dans la galerie de médias empêchait l’affichage ou la sélection de toutes les images du répertoire.
+* **ACSD-62415** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige le problème lorsque le serveur principal Adobe Commerce charge les catégories très lentement.
+* **ACSD-66082** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.9) - Correction du problème en raison duquel il n’était pas possible de mettre à jour l’image d’échantillon d’un produit via l’importation du produit.
+* **ACSD-66179** (pour Adobe Commerce et Magento Open Source >=2.4.4-p11 &lt;2.4.5 || >=2.4.5-p10 &lt;2.4.6 || >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.9) - Correction du problème en raison duquel l’annulation d’une facture créée avec le type de paiement « Pas de capture » générait une page d’erreur 404.
+* **ACSD-66865** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel l’enregistrement des règles de prix de catalogue invalidait les indexeurs et fournissait une alternative à la réindexation uniquement des produits affectés.
+* **ACSD-66963** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel la mutation `estimateTotals` renvoyait une valeur nulle pour les remises lorsqu’un code de remise était appliqué à un panier contenant des produits virtuels.
+* **ACSD-67039** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel les enregistrements des clients n’étaient pas enregistrés en raison de la validation de l’attribut système `rp_token` et la validation des diacritiques est désormais appliquée uniquement à l’e-mail du client obtenu.
+* **ACSD-62146** (pour Adobe Commerce >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel l’adresse de facturation sélectionnée disparaît de la page de paiement de la commande lorsque la recherche d’adresse est activée et que la valeur « Limite du nombre d’adresses client » est définie sur 1.
+* **ACSD-65938** (pour Adobe Commerce >=2.4.4 &lt;2.4.9) - Correction du problème d’envoi des e-mails de carte cadeau même lorsque la création de la facture a échoué.
+* **ACSD-66072** (pour Adobe Commerce >=2.4.6 &lt;2.4.9) - Correction du problème en raison duquel les produits associés n’étaient pas renvoyés via GraphQL sur la page des détails du produit en raison d’une erreur de serveur interne lors de la configuration des « règles relatives aux produits associés ».
+* **ACSD-66233** (pour Adobe Commerce >=2.4.8 &lt;2.4.9) - Correction du problème en raison duquel les utilisateurs administrateurs ne pouvaient pas ajouter de produits à une catégorie en raison de l’échec du chargement de la fenêtre contextuelle Ajouter un produit .
+* **ACSD-66889** (pour Adobe Commerce >=2.4.4 &lt;2.4.6) - Correction d’une ligne de code obsolète avec la structure appropriée pour assurer la réussite du processus d’indexation de l’inventaire.
+* **ACSD-66965** (pour Adobe Commerce B2B >=1.5.0 &lt;1.5.3) - Correction du problème lié à l’option d’impression de la page de la liste de demandes d’approvisionnement qui provoquait une erreur.
+* **ACSD-66506** (pour Adobe Commerce B2B >=1.5.0 &lt;1.5.3) - Corrige l’erreur du serveur principal qui se produisait lorsque les produits précédemment affectés d’un catalogue partagé étaient supprimés et que de nouveaux produits étaient affectés.
+* **ACSD-66417** (pour Braintree 4.6.1) - Correction d’un problème en raison duquel la grille des commandes client générait une erreur lors de la tentative de filtrage des commandes par date.
+* Versions mises à jour : **ACSD-60590**, **ACP2E-3705**
+* Correctifs remplacés : **ACSD-57003**, **ACSD-66434**
 
 ## v1.1.67 {#v1-1-67}
 
@@ -236,7 +256,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACSD-59930** (pour Adobe Commerce >=2.4.6 &lt;2.4.8) - Améliore les performances des flux **[!UICONTROL Create]**, **[!UICONTROL Save]** et **[!UICONTROL Delete]** de l’entreprise.
 * **ACSD-60584** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel un jeton d’accès créé pour l’utilisateur sur un site web est autorisé à accéder aux informations du client ou à les modifier sur d’autres sites web.
 * **ACSD-60804** (pour Adobe Commerce >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel la modification d’un client lié à une société supprimée entraînait l’erreur *Appel à une fonction membre `getSuperUserId()` sur null*.
-* **ACSD-61133** (pour Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.8) - Correction du problème en raison duquel le [!DNL cron] `sales_clean_quotes` supprime les devis des commandes fournisseur non approuvées.
+* **ACSD-61133** (pour Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.8) - Correction du problème en raison duquel le `sales_clean_quotes` [!DNL cron] supprime les devis des commandes fournisseur non approuvées.
 * **ACSD-61528** (pour Adobe Commerce >=2.4.6 &lt;2.4.8) - Correction du problème en raison duquel la récupération de rôles à partir du [!UICONTROL Admin] à l’aide de [!DNL GraphQL] ne renvoie aucun résultat.
 * **ACSD-61553** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel les remises **[!UICONTROL Cart Price Rule]** sont incorrectement calculées lorsque plusieurs remises avec des priorités et des **[!UICONTROL Maximum Qty Discount is Applied To]** différentes sont appliquées au produit.
 * **ACSD-61667** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Améliore les performances de l’inventaire pour la création d’expédition dans le cas de nombreuses sources avec retrait en magasin.
@@ -394,7 +414,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACSD-54966** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel un code de coupon à utilisation limitée par client ne peut pas être réutilisé en cas d’échec de la commande précédente.
 * **ACSD-54060** (pour Adobe Commerce et Magento Open Source >=2.4.3 &lt;2.4.7) - Correction du problème en raison duquel un administrateur restreint ne peut pas enregistrer un produit s’il est l’enfant d’un autre produit affecté à une portée différente.
 * **ACSD-48910** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.6) - Correction d’un problème en raison duquel un produit groupé affecté à plusieurs sources est en rupture de stock après qu’une commande a été facturée et expédiée, même s’il contient toujours une quantité différente de zéro.
-* **ACSD-55381** (pour Adobe Commerce >=2.4.2 &lt;2.4.7) - Corrige une erreur de serveur interne lors de l’interrogation de champs `configurable_product_option_uid` et `configurable_product_option_value_uid` depuis un *[!UICONTROL Requisition list]* [!DNL B2B] via [!DNL GraphQL].
+* **ACSD-55381** (pour Adobe Commerce >=2.4.2 &lt;2.4.7) - Corrige une erreur de serveur interne lors de l’interrogation de champs `configurable_product_option_uid` et `configurable_product_option_value_uid` depuis un [!DNL B2B] *[!UICONTROL Requisition list]* via [!DNL GraphQL].
 * **ACSD-55628** (pour Adobe Commerce >=2.4.4-p2 &lt; 2.4.5 || >=2.4.5-p1 &lt; 2.4.6) - Correctifs du chargement d’un fichier sur le formulaire d’enregistrement de l’entreprise et du remplacement d’un fichier pour un attribut du client sur le storefront.
 * Correctifs mis à jour : ACSD-51240, ACSD-51890, ACSD-53098
 
