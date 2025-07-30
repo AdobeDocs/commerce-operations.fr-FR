@@ -1,5 +1,5 @@
 ---
-source-git-commit: 92907752d92cd7f4a81377a5239dfded10fe3655
+source-git-commit: 1f377ab6e4dcdd2d350366f3889b8befd233474b
 workflow-type: tm+mt
 source-wordcount: '27924'
 ht-degree: 0%
@@ -337,7 +337,7 @@ Auparavant, pour l’administration restreinte, l’ajout d’un nouveau bloc dy
 
 _ACP2E-2687_
 
-#### L’apostrophe dans le nom de la vue du magasin est remplacée par &#039;
+#### L’apostrophe dans le nom de la vue du magasin est remplacée par &amp;#039;
 
 Les filtres de vue de magasin de la grille affichent désormais correctement les apostrophes
 
@@ -1971,7 +1971,7 @@ Le système respecte désormais la norme de codage en supprimant la balise `@aut
 
 _AC-8356 - [Problème GitHub](https://github.com/magento/magento2/issues/37250) - [Contribution du code GitHub](https://github.com/magento/magento2/pull/37000)_
 
-#### L’espace dans la syntaxe editorconfig rompt la règle pour les `[&lbrace;composer,auth&rbrace;.json]`
+#### L’espace dans la syntaxe editorconfig rompt la règle pour les `[{composer,auth}.json]`
 
 Le système applique désormais correctement un retrait de 4 espaces aux fichiers composer et auth.json, suite à un correctif apporté à une erreur de syntaxe dans editorconfig. Auparavant, en raison d’un espace dans la syntaxe editorconfig, ces fichiers étaient incorrectement formatés avec un retrait de 2 espaces.
 
@@ -2127,7 +2127,7 @@ Le problème a été corrigé après l’application de la vérification lors de
 
 _ACP2E-2653 - [contribution du code GitHub](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### L’appel aux produits GraphQL contenant le filtre de prix `&lbrace;from:&quot;0&quot;&rbrace;` ne renvoie aucun résultat
+#### L’appel aux produits GraphQL contenant le filtre de prix `{from:&quot;0&quot;}` ne renvoie aucun résultat
 
 Auparavant, la recherche de produits GraphQL avec un filtre à prix nuls ne renvoyait aucun résultat en raison d’une exception levée. Désormais, la recherche renvoie les résultats attendus.
 
@@ -2706,8 +2706,8 @@ _LYNX-395_
 
 Correction d’un problème en raison duquel l’ajout d’un produit simple (partie d’un produit groupé) au panier renvoyait une image miniature d’espace réservé, même si le produit était associé à une image.
 Détails du correctif :
-* La miniature du produit affiche désormais correctement l’image affectée, le cas échéant.
-* La sélection de miniature respecte la configuration d’administration sous :
+- La miniature du produit affiche désormais correctement l’image affectée, le cas échéant.
+- La sélection de miniature respecte la configuration d’administration sous :
 Magasins > Paramétrage > Ventes > Passage en caisse > Panier > Image de produit groupé.
 Cela garantit un comportement cohérent des miniatures pour les produits regroupés en fonction des paramètres du magasin.
 
@@ -2729,8 +2729,8 @@ _LYNX-402_
 
 Correction d’un problème en raison duquel l’attribut only_x_left_in_stock renvoyait toujours 0 pour les produits configurables lorsqu’il était ajouté à l’aide du SKU parent avec des options.
 Détails du correctif :
-* La valeur only_x_left_in_stock reflète désormais précisément le stock de la variante enfant sélectionnée au lieu du SKU parent.
-* Cela permet de s’assurer que les niveaux de stock sont correctement affichés pour les variations de produit configurables dans le panier et les pages de produit.
+- La valeur only_x_left_in_stock reflète désormais précisément le stock de la variante enfant sélectionnée au lieu du SKU parent.
+- Cela permet de s’assurer que les niveaux de stock sont correctement affichés pour les variations de produit configurables dans le panier et les pages de produit.
 
 _LYNX-403_
 
@@ -2800,7 +2800,7 @@ Correction d’un problème en raison duquel la mutation addProductsToCart renvo
 
 _LYNX-469_
 
-#### Attribut de produit > forme abrégée de marque &trade; est renvoyé sous la forme &trade;
+#### Attribut de produit > forme abrégée de marque &amp;trade; est renvoyé sous la forme &amp;trade;
 
 Résolution d’un problème de codage des caractères avec le nom du produit pour l’API GraphQL
 
