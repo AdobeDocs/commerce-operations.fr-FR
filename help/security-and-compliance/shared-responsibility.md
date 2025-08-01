@@ -2,9 +2,9 @@
 title: Sécurité à responsabilité partagée et modèle opérationnel
 description: Découvrez les responsabilités de sécurité de chaque partie impliquée dans votre projet d’infrastructure cloud Adobe Commerce.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 4cd71d156ef6833185565180b297ba1b7f42a032
+source-git-commit: fcaf6ff1dce1c1a5084307cd366ca58d71a8f4e4
 workflow-type: tm+mt
-source-wordcount: '2791'
+source-wordcount: '2850'
 ht-degree: 0%
 
 ---
@@ -798,6 +798,28 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 |     | Adobe | Marchand |
 | --- | --- | --- |
 | Disponibilité du service de recommandations de produits | R |   |
+
+{style="table-layout:auto"}
+
+#### Recherche en direct
+
+|     | Adobe | Marchand |
+| --- | --- | --- |
+| Disponibilité du service Live Search | R |   |
+
+{style="table-layout:auto"}
+
+#### Qualité des événements storefront (collecte de données) pour alimenter les recommandations de produits et les sorties Live Search
+
+|     | Adobe | Marchand |
+| --- | --- | --- |
+| Thème principal (Luma) | R |   |
+| Thème personnalisé |  | R |
+| Implémentation de PWA principale | R |   |
+| Implémentation PWA personnalisée |  | R |
+| Implémentation principale d’AEM EDS (modèle standard Commerce) | R |   |
+| Implémentation personnalisée d’AEM EDS |  | R |
+| Toute autre implémentation de storefront personnalisée |  | R |
 
 {style="table-layout:auto"}
 
