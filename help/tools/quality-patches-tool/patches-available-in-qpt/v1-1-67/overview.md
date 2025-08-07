@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: f26ada4171197107866c45db7a711bce8be1d18e
+source-git-commit: 6758b85e797de75ea5430062c8335fa903f00838
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ QPT v1.1.67 comprend les correctifs suivants :
 1. **ACSD-66118** : la mise à jour du code d’affichage du magasin efface les paramètres de configuration de conception si le cache de configuration n’est pas actualisé.
 1. **ACSD-66139** : GraphQL renvoie une erreur UNDEFINED pour un panier inexistant ou inactif lors du placement de la commande.
 1. **ACSD-66301** : le retour de produits d’une commande au panier dans Admin entraîne une incohérence de la quantité.
-1. **[ACSD-66434](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)** : ID de client manquant dans les requêtes GraphQL de la société.
-1. **ACSD-66441** : données d’index incorrectes dans la navigation superposée pour les produits configurables dans des configurations multi-magasin.
+1. **ACSD-66434** : ID de client manquant dans les requêtes GraphQL de la société.
+1. **ACSD-66441** : la navigation par couches affiche des options d’attribut incorrectes dans la configuration multi-magasin.
 
 Utilisez le menu à gauche pour accéder à une page de correctif spécifique.
