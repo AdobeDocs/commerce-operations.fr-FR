@@ -2,12 +2,14 @@
 title: Utiliser Valkey pour le cache par défaut
 description: Découvrez comment configurer Valkey en tant que cache par défaut pour Adobe Commerce.
 feature: Configuration, Cache
-source-git-commit: 2891c8b2ff9cfae120d01605aad6eb543f01315d
+exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
+source-git-commit: bc0274074c0254f649af2f9e2b288017ac82ce9b
 workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 0%
 
 ---
+
 
 # Utiliser Valkey pour le cache par défaut
 

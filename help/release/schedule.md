@@ -2,10 +2,10 @@
 title: Calendrier des versions
 description: Découvrez à quel moment Adobe prévoit d’annoncer la publication de nouvelles fonctionnalités pour Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 9e3246e81063769e4197f2e786e1e405b4460787
+source-git-commit: b908b468f0b8abe8bb7904b9c4a626201dc919bc
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 5%
+source-wordcount: '483'
+ht-degree: 4%
 
 ---
 
@@ -18,16 +18,14 @@ Adobe s’efforce en permanence de trouver le bon équilibre entre la simplicit�
 
 Les nouvelles fonctionnalités, mises à jour de fonctionnalité, mises à jour de l’infrastructure cloud et mises à jour de l’extensibilité sont fournies indépendamment des versions de correctif et sont disponibles via des modules externes, des extensions, des outils ou des services web. Voici quelques exemples :
 
-- ![Icône Fonctionnalité](../assets/icons/feature.svg) [**Fonctionnalités et fonctions**](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/release-information/release-notes-all)—Nouvelles fonctionnalités et fonctions fournies indépendamment des versions de correctifs. Par exemple, [B2B](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/release-notes), Catalog Service, Data Connection, Live Search et Product Recommendations.
+- ![Icône Fonctionnalité](../assets/icons/feature.svg) [**Fonctionnalités et fonctions**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all)—Nouvelles fonctionnalités et fonctions fournies indépendamment des versions de correctifs. Par exemple, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Catalog Service, Data Connection, Live Search et Product Recommendations.
 
-- ![Icône d’infrastructure](../assets/icons/servers.svg) [**Infrastructure cloud**](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) : nouvelles fonctionnalités et améliorations d’Adobe Commerce sur l’infrastructure cloud et des packages de la suite d’outils cloud pour Commerce, qui déploient et gèrent les installations et mises à niveau d’Adobe Commerce sur la plateforme cloud.
+- ![Icône d’infrastructure](../assets/icons/servers.svg) [**Infrastructure cloud**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) : nouvelles fonctionnalités et améliorations d’Adobe Commerce sur l’infrastructure cloud et des packages de la suite d’outils cloud pour Commerce, qui déploient et gèrent les installations et mises à niveau d’Adobe Commerce sur la plateforme cloud.
 
 - ![Icône d’extensibilité](../assets/icons/brackets.svg) [**Extensibilité**](https://developer.adobe.com/commerce/extensibility/) : nouveaux outils et services de développement pour une extensibilité hors processus, fournis indépendamment des versions de correctifs. Par exemple, le kit de démarrage d’intégration, l’interface utilisateur d’administration SDK, Adobe I/O Events pour Commerce et le maillage API.
 
 La liste suivante fournit les dates des mises à jour planifiées des fonctionnalités, de l’infrastructure cloud et des extensions (les dates peuvent changer) :
 
-- mercredi 13 août 2024
-- mercredi 8 octobre 2024
 - mercredi 11 février 2025
 - mercredi 8 avril 2025
 - mercredi 10 juin 2025
@@ -36,7 +34,7 @@ La liste suivante fournit les dates des mises à jour planifiées des fonctionna
 
 >[!NOTE]
 >
->Les mises à jour des fonctionnalités, de l’infrastructure cloud et de l’extensibilité peuvent varier tout au long de l’année. Cependant, Adobe publie régulièrement et en permanence des améliorations pour ces zones entre les dates spécifiées sur cette page. Voir [Qu’est-ce qu’Adobe Commerce ?](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/about) en savoir plus sur les dernières fonctionnalités.
+>Les mises à jour des fonctionnalités, de l’infrastructure cloud et de l’extensibilité peuvent varier tout au long de l’année. Cependant, Adobe publie régulièrement et en permanence des améliorations pour ces zones entre les dates spécifiées sur cette page. Voir [Qu’est-ce qu’Adobe Commerce ?](https://business.adobe.com/products/magento/magento-commerce.html) en savoir plus sur les dernières fonctionnalités.
 
 ## Correctifs
 
@@ -55,14 +53,6 @@ Le tableau suivant indique les dates des mises à jour programmées des correcti
 </thead>
 <tbody>
   <tr>
-  <tr>
-    <td>mercredi 13 août 2024</td>
-    <td><img alt="Icône de version de correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Correctifs de sécurité</a> : 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10</td>
-  </tr>
-  <tr>
-    <td>mercredi 8 octobre 2024</td>
-    <td><img alt="Icône de version de correctif" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">Correctif Beta </a> : 2.4.8-beta1<br><img alt="Icône de version de correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Correctifs de sécurité</a> : 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11</td>
-  </tr>
   <tr>
     <td>mercredi 11 février 2025</td>
     <td><img alt="Icône de version de correctif" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">Correctif Beta </a> : 2.4.8-beta2<br><img alt="Icône de version de correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Correctifs de sécurité</a> : pour 2.4.7, 2.4.6, 2.4.5 et 2.4.4</td>
