@@ -3,7 +3,7 @@ title: Configuration de l’application
 description: Découvrez la configuration post-installation requise pour les déploiements sur site d’Adobe Commerce.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: a28dad04dac23075234a6ac3c2b362d125c9d981
+source-git-commit: a7c98879e027948fc887e28d4baa5fb04214ca95
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Pour plus d’informations sur cron, notamment sur la suppression d’un cron ta
 
 Après l’installation, nous recommandons ce qui suit :
 
-* Assurez-vous que la propriété et les autorisations des fichiers sont correctement définies
+* Assurez-vous que la propriété et les autorisations des fichiers sont correctement définies [](../prerequisites/file-system/configure-permissions.md)
 * Nous vous recommandons vivement de [modifier l’URI d’administration par défaut](../tutorials/admin-uri.md) de `admin` à autre chose
 * Assurez-vous que l’en-tête HTTP [`X-Frame-Option`](../../configuration/security/xframe-options.md) est correctement défini.
 * Prenez des précautions contre le cross-site scripting (XSS) en [ sécurisant vos modèles ](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
@@ -65,7 +65,7 @@ Pour plus d’informations, voir l’une des rubriques suivantes :
 >
 >* Les environnements de démarrage n’ont pas de rotation de journal.
 >
->* Vous ne pouvez pas configurer la rotation du journal sur les environnements d’intégration Pro. Vous devez implémenter une solution/un script personnalisé(e) et [configurer votre cron](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) pour exécuter le script selon vos besoins.
+>* Vous ne pouvez pas configurer la rotation du journal sur les environnements d’intégration Pro. Vous devez implémenter une solution/un script personnalisé(e) et [configurer votre cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) pour exécuter le script selon vos besoins.
 
 ### Configurez les règles iptables pour permettre à divers services de communiquer
 
