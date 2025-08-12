@@ -1,7 +1,7 @@
 ---
-source-git-commit: 796000b57319966119650c60a30c6d01c61ec4a8
+source-git-commit: 93645ce948d1a20c7d3fd956fbc95c4a47727f8c
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '670'
 ht-degree: 71%
 
 ---
@@ -20,7 +20,13 @@ ht-degree: 71%
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">2.4.9-alpha1</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9#highlights-in-v249-alpha2">2.4.9-alpha2</a>
+        </td>
+        <td>mercredi 12 août 2025</td>
+    </tr>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9#highlights-in-v249-alpha1">2.4.9-alpha1</a>
         </td>
         <td>mercredi 10 juin 2025</td>
     </tr><!-- patch_releases -->
@@ -41,7 +47,13 @@ La prise en charge régulière de la version 2.4.8 de se termine le 11 avril 202
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#p1">2.4.8-p1</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#p2">2.4.8-p2</a>
+        </td>
+        <td>mercredi 12 août 2025</td>
+    </tr>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#p1">2.4.8-p1</a>
         </td>
         <td>mercredi 10 juin 2025</td>
     </tr>
@@ -68,19 +80,25 @@ La prise en charge régulière de la version 2.4.7 de se termine en avril  9 20
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p6">2.4.7-p6</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p7">2.4.7-p7</a>
+        </td>
+        <td>mercredi 12 août 2025</td>
+    </tr>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p6">2.4.7-p6</a>
         </td>
         <td>mercredi 10 juin 2025</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5</a>
         </td>
         <td>Avril  8 2025</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p4">2.4.7-p4</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p4">2.4.7-p4</a>
         </td>
         <td>mercredi 11 février 2025</td>
     </tr>
@@ -125,19 +143,25 @@ La prise en charge régulière de la version 2.4.6 de se termine le 11 août 202
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p11">2.4.6-p11</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p12">2.4.6-p12</a>
+        </td>
+        <td>mercredi 12 août 2025</td>
+    </tr>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p11">2.4.6-p11</a>
         </td>
         <td>mercredi 10 juin 2025</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p10">2.4.6-p10</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p10">2.4.6-p10</a>
         </td>
         <td>Avril  8 2025</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p9">2.4.6-p9</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p9">2.4.6-p9</a>
         </td>
         <td>mercredi 11 février 2025</td>
     </tr>
@@ -200,7 +224,7 @@ La prise en charge régulière de la version 2.4.6 de se termine le 11 août 202
 
 ## 2.4.5
 
-La prise en charge régulière de la version 2.4.5 de se termine le 12 août 2025.
+La prise en charge régulière de la version 2.4.5 de a pris fin le 12 août 2025.
 La prise en charge étendue de la version 2.4.5 de prend fin le 11 août 2026.
 
 <table>
@@ -213,19 +237,19 @@ La prise en charge étendue de la version 2.4.5 de prend fin le 11 août 2026.
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p13">2.4.5-p13</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p14">2.4.5-p14</a>
+        </td>
+        <td>mercredi 12 août 2025</td>
+    </tr>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p13">2.4.5-p13</a>
         </td>
         <td>mercredi 10 juin 2025</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p12">2.4.5-p12</a>
-        </td>
-        <td>Avril  8 2025</td>
-    </tr>
-    <tr>
-        <td>
-          <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p11">2.4.5-p11</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p11">2.4.5-p11</a>
         </td>
         <td>mercredi 11 février 2025</td>
     </tr>
@@ -313,19 +337,25 @@ La prise en charge étendue de la version 2.4.4 de prend fin le 14 avril 2026.
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p14">2.4.4-p14</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p15">2.4.4-p15</a>
+        </td>
+        <td>mercredi 12 août 2025</td>
+    </tr>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p14">2.4.4-p14</a>
         </td>
         <td>June  5 2025</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p13">2.4.4-p13</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p13">2.4.4-p13</a>
         </td>
         <td>Avril  8 2025</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p12">2.4.4-p12</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p12">2.4.4-p12</a>
         </td>
         <td>mercredi 11 février 2025</td>
     </tr>
