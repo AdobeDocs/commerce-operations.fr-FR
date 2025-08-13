@@ -1,18 +1,18 @@
 ---
-title: 'ACSD-66084 : « row_total_incl_tax » renvoie une valeur résiduelle proche de zéro au lieu de 0,00 pour les éléments entièrement actualisés dans la réponse de l’API de commande'
+title: 'ACSD-66084 : « row_total_incl_tax » renvoie un résultat proche de zéro au lieu de 0,00 pour les articles bénéficiant d’une remise totale dans l’API de commande'
 description: Appliquez le correctif ACSD-66084 pour résoudre le problème d’Adobe Commerce où « row_total_incl_tax » renvoyait une valeur résiduelle proche de zéro au lieu de 0,00 pour les éléments entièrement actualisés dans la réponse de l’API de commande.
 feature: Orders, REST, Taxes, Payments, Checkout
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 01f7059e53590c4ff6602c41eb980ac7c141af33
+exl-id: 421c6fe6-b6b1-4f33-acb6-fbd4306bcc4c
+source-git-commit: 951738a4c671ed6fcc47b2a928d2110c78763d26
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
 
-
-# ACSD-66084 : `row_total_incl_tax` renvoie une valeur résiduelle proche de zéro au lieu de 0,00 pour les éléments entièrement actualisés dans la réponse de l’API de commande
+# ACSD-66084 : `row_total_incl_tax` renvoie un résultat proche de zéro au lieu de 0,00 pour les articles bénéficiant d’une remise totale dans l’API de commande
 
 Le correctif ACSD-66084 corrige le problème où `row_total_incl_tax` est renvoyée comme une valeur résiduelle proche de zéro dans la réponse de l’API de commande au lieu de 0,00 pour les articles bénéficiant d’une remise totale. Ce correctif est disponible lorsque la version 1.1.67 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-66084. Notez que ce problème doit être résolu dans Adobe Commerce 2.4.9.
 
@@ -28,7 +28,7 @@ Le correctif ACSD-66084 corrige le problème où `row_total_incl_tax` est renvoy
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -61,7 +61,7 @@ Le `row_total_incl_tax` est renvoyé sous la forme d’une valeur résiduelle pr
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

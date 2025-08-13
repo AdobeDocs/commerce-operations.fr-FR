@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: d025c8a6e451ff41ec4b50cf633927e52b9429f0
+source-git-commit: 951738a4c671ed6fcc47b2a928d2110c78763d26
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ QPT v1.1.67 comprend les correctifs suivants :
 1. **AC-14984** : problème de connexion SSL avec php-amqplib/php-amqplib ^3.2.0.
 1. **ACSD-65935** : `customerOrders` requête GraphQL a renvoyé une erreur de serveur interne lors de la suppression d’un produit.
 1. **ACSD-66049** : les vitrines non anglaises affichent un prix incorrect en raison de la version de la bibliothèque ICU.
-1. **ACSD-66084** : `row_total_incl_tax` renvoie une valeur résiduelle proche de zéro au lieu de 0,00 pour les éléments entièrement actualisés dans la réponse de l’API de commande.
+1. **ACSD-66084** : `row_total_incl_tax` renvoie un résultat proche de zéro au lieu de 0,00 pour les articles bénéficiant d’une remise totale dans l’API de commande.
 1. **ACSD-66118** : la mise à jour **[!UICONTROL Store View]** code efface **[!UICONTROL Design Configuration]** paramètres si le cache de configuration n’est pas actualisé.
 1. **ACSD-66139** : GraphQL renvoie une erreur UNDEFINED pour un panier inexistant ou inactif lors du placement de la commande.
 1. **ACSD-66301** : le déplacement de produits d’une commande vers le panier dans Commerce Admin entraîne une incohérence de la quantité.
