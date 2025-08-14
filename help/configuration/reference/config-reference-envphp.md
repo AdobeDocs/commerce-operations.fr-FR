@@ -2,9 +2,9 @@
 title: env.php référence
 description: Voir une liste de valeurs pour le fichier env.php.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 3f46ee08bb4edc08775bf986804772b88ca35f45
+source-git-commit: 26fac37405ad635f297b65415517451d5149e50f
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Commerce utilise une clé de chiffrement pour protéger les mots de passe et d�
 ]
 ```
 
-Apprenez-en davantage sur la [clé de chiffrement](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/encryption-key) dans le guide d’utilisation de _Commerce_.
+Apprenez-en davantage sur la [clé de chiffrement](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) dans le guide d’utilisation de _Commerce_.
 
 ## db
 
@@ -203,7 +203,7 @@ Liste des domaines téléchargeables disponibles dans ce nœud. D’autres domai
 ]
 ```
 
-En savoir plus sur les [domaines téléchargeables](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+En savoir plus sur les [domaines téléchargeables](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## installer
 
@@ -347,6 +347,12 @@ export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
 ## Remplacer la configuration du fichier par des variables
 
 Pour remplacer les options de configuration de `env.php` existantes par une variable d’environnement de système d’exploitation, l’élément de tableau de la configuration doit être codé JSON et défini comme une valeur de la variable de système d’exploitation `MAGENTO_DC__OVERRIDE`.
+
+Lorsque `MAGENTO_DC__OVERRIDE` est défini, le framework Commerce contourne les valeurs correspondantes dans le fichier `env.php` et lit la configuration directement à partir de la variable d’environnement. Les valeurs du fichier `env.php` restent inchangées, mais sont ignorées pour les sections de configuration remplacées.
+
+>[!IMPORTANT]
+>
+>La variable `MAGENTO_DC__OVERRIDE` contourne complètement les sections de configuration spécifiées dans le fichier `env.php`. Ce comportement est différent de celui des variables de `MAGENTO_DC_` individuelles, qui ont une priorité inférieure aux valeurs du fichier `env.php`.
 
 Si vous devez remplacer plusieurs options de configuration, assemblez-les toutes dans un seul tableau avant l’encodage JSON.
 
