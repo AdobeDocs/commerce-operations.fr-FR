@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 47c8541c228f9ed3795c93b67b8ff85cbd4bd555
+source-git-commit: 937acc659427b788b8af778f5ea826eacccdc70e
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,6 @@ QPT v1.1.68 comprend les correctifs suivants :
 1. **ACSD-66889** : erreur lors de la réindexation de l’inventaire dans l’interface de ligne de commande.
 1. **ACSD-66963** : la mutation EstimateTotals renvoie la valeur null pour les remises lorsqu’un code de remise est appliqué à un panier avec des produits virtuels.
 1. **ACSD-66965** : L&#39;option Imprimer de la page Liste des demandes d&#39;approvisionnement provoque une erreur.
-1. **ACSD-67039** : les enregistrements du client n’ont pas été enregistrés en raison de la validation de l’attribut système rp_token.
+1. **ACSD-67039** : les enregistrements du client n’ont pas été enregistrés en raison de la validation de l’attribut système `rp_token`.
 
 Utilisez le menu à gauche pour accéder à une page de correctif spécifique.
