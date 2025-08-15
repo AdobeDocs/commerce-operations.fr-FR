@@ -38,9 +38,9 @@ L’exportation du produit échoue lorsque les attributs du produit contiennent 
 
 1. Installez Adobe Commerce avec le module B2B.
 1. Importez une image mémoire de base de données volumineuse avec :
-   - ~7 000 produits
-   - ~450 attributs de produit
-   - Certains attributs ayant plus de 100 options
+   &#x200B;- ~7 000 produits
+   &#x200B;- ~450 attributs de produit
+   &#x200B;- Certains attributs ayant plus de 100 options
 1. Exécutez la commande suivante pour installer cron (s’il n’est pas déjà installé) :
 
    ```

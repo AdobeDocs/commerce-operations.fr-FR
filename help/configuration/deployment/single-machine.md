@@ -22,7 +22,7 @@ Cette rubrique fournit des instructions pour déployer des mises à jour sur Com
 >[!WARNING]
 >
 >Ce guide ne s’applique pas si vous avez utilisé `git clone` pour installer Commerce.
->>Les développeurs contributeurs doivent utiliser [ce guide][install] pour mettre à jour leur installation Commerce.
+>&#x200B;>Les développeurs contributeurs doivent utiliser [ce guide][install] pour mettre à jour leur installation Commerce.
 
 ## Étapes de déploiement
 

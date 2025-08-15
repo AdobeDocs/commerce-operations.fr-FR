@@ -35,7 +35,7 @@ Voici des éléments que vous pouvez inclure dans une analyse approfondie :
 
   >[!TIP]
   >
-  >Toutes ces informations (et d’autres encore) sont disponibles dans le tableau de bord de l’outil d’analyse à l’échelle du site [](../../tools/site-wide-analysis-tool/dashboard.md).
+  >Toutes ces informations (et d’autres encore) sont disponibles dans le tableau de bord de l’outil d’analyse à l’échelle du site [&#128279;](../../tools/site-wide-analysis-tool/dashboard.md).
 
 - Mise à niveau des services pour la prise en charge de la version cible. Utilisez le modèle de tableau suivant pour indiquer les services à mettre à niveau. Utilisez la [configuration requise](../../installation/system-requirements.md) pour déterminer les éléments à ajouter à la colonne _Mettre à niveau vers_.
 

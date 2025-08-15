@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47444 : erreur _[!UICONTROL Trying to access array offset on value of type bool]_lors de l&#39;accès à certains chemins de catégorie non existants pour les produits connus sur PHP 7.4
+# ACSD-47444 : erreur _[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;lors de l&#39;accès à certains chemins de catégorie non existants pour les produits connus sur PHP 7.4
 
-Le patch ACSD-47444 résout le problème où vous voyez _[!UICONTROL Trying to access array offset on value of type bool]_erreur lors de l&#39;accès à certains chemins de catégorie non existants pour les produits connus sur PHP 7.4. Ce correctif est disponible lorsque la version 1.1.22 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée.
+Le patch ACSD-47444 résout le problème où vous voyez _[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;erreur lors de l&#39;accès à certains chemins de catégorie non existants pour les produits connus sur PHP 7.4. Ce correctif est disponible lorsque la version 1.1.22 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée.
 
 ## Produits et versions concernés
 
@@ -30,7 +30,7 @@ Le patch ACSD-47444 résout le problème où vous voyez _[!UICONTROL Trying to a
 
 ## Problème
 
-Vous rencontrez l&#39;erreur suivante : _[!UICONTROL Trying to access array offset on value of type bool]_lors de l&#39;accès à certains chemins de catégories non existants pour des produits connus, sur PHP 7.4.
+Vous rencontrez l&#39;erreur suivante : _[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;lors de l&#39;accès à certains chemins de catégories non existants pour des produits connus, sur PHP 7.4.
 
 <u>Conditions préalables</u> :
 

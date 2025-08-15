@@ -31,7 +31,7 @@ Une fois l’analyse terminée, les résultats de haut niveau s’affichent dans
 
 ![Widget SWAT UCT - Résultats](../../assets/upgrade-guide/uct-swat-results.png)
 
-Cliquez sur **[!UICONTROL Download Report]** pour récupérer le [!DNL Upgrade Compatibility Tool] rapport HTML [](../upgrade-compatibility-tool/reports.md#html-report) et consulter les détails.
+Cliquez sur **[!UICONTROL Download Report]** pour récupérer le [!DNL Upgrade Compatibility Tool] rapport HTML [&#128279;](../upgrade-compatibility-tool/reports.md#html-report) et consulter les détails.
 
 
 >[!NOTE]

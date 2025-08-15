@@ -384,7 +384,7 @@ Le cadre de **[!UICONTROL Order transactions (default?)]** recherche les transac
 * « %Vous pouvez résoudre ce problème en mettant à niveau le service Elasticsearch de votre infrastructure cloud Magento vers la version % » en tant que « ver_err »
 * &#39;%cluster health status changed from \[YELLOW\] to \[RED\] (reason:%&#39; as &#39;yel_red&#39;
 * &#39;%Aucun espace restant sur l’appareil%&#39; en tant que &#39;no_space&#39;
-* &#39;% n&#39;a pas réussi à exécuter [SearchRequest{searchType=%&#39; en tant que &#39;failed_query&#39;
+* &#39;% n&#39;a pas réussi à exécuter &lbrack;SearchRequest&lbrace;searchType=%&#39; en tant que &#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 

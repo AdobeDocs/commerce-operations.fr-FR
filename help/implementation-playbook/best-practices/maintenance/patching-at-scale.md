@@ -34,7 +34,7 @@ Comme il existe de nombreux types de correctifs et de nombreuses façons de les 
 1. Les **correctifs de sécurité** font partie de la base de code statique d’une version d’Adobe Commerce.
 1. **Correctifs du compositeur** via des modules externes `composer install` et `composer update` tels que [cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches).
 1. Tous les **correctifs requis** inclus dans le package [Correctifs cloud pour Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html).
-1. Sélection **correctifs de qualité** inclus dans le [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md).
+1. Sélection **correctifs de qualité** inclus dans le [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md).
 1. **Correctifs personnalisés** et les correctifs Adobe Commerce prennent en charge les correctifs du répertoire `/m2-hotfixes` dans l’ordre alphabétique par nom de correctif.
 
    >[!IMPORTANT]

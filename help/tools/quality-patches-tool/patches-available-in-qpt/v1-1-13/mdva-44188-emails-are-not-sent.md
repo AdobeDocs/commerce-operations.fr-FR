@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-44188 : les e-mails ne sont pas envoyés aux identifiants contenant « ».- »'
-description: Le correctif MDVA-44188 corrige le problème où les e-mails ne sont pas envoyés aux ID d’e-mail contenant « ».-`. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID du correctif est MDVA-44188. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
+description: Le correctif MDVA-44188 corrige le problème où les e-mails ne sont pas envoyés aux ID d’e-mail contenant « ».-&grave;. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID du correctif est MDVA-44188. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 feature: Communications
 role: Admin
 exl-id: 9029c7f1-3e62-44a1-8962-9730ae54db7d

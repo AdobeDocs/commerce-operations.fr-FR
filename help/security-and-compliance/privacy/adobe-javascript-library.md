@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-La bibliothèque Adobe Privacy JavaScript [](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) est un ensemble d’outils permettant de créer un processus d’accès et de suppression des données privées.
+La bibliothèque Adobe Privacy JavaScript [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) est un ensemble d’outils permettant de créer un processus d’accès et de suppression des données privées.
 
 Les services de suivi des données d’Adobe Commerce peuvent stocker des informations privées applicables aux réglementations de confidentialité telles que le [ Règlement général sur la protection des données (RGPD)](gdpr.md) et le [California Consumer Privacy Act (CCPA)](ccpa.md).
 

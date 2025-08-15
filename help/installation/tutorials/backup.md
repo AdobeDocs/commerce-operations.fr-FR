@@ -36,7 +36,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**Avis d’obsolescence :**
->>La fonctionnalité de sauvegarde est obsolète à partir des versions 2.1.16, 2.2.7 et 2.3.0. Nous vous recommandons d’étudier d’autres technologies de sauvegarde et outils de sauvegarde binaire (tels que Percona XtraBackup).
+>&#x200B;>La fonctionnalité de sauvegarde est obsolète à partir des versions 2.1.16, 2.2.7 et 2.3.0. Nous vous recommandons d’étudier d’autres technologies de sauvegarde et outils de sauvegarde binaire (tels que Percona XtraBackup).
 
 ## Définir la limite des fichiers ouverts
 

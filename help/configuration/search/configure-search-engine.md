@@ -17,7 +17,7 @@ Cette section décrit les paramètres minimaux que vous devez choisir pour teste
 >[!TIP]
 >
 >Dans les versions 2.4.4 et 2.4.3-p2, tous les champs libellés **Elasticsearch** s’appliquent également à OpenSearch.
->>Lorsque la prise en charge d’Elasticsearch 8.x a été introduite dans la version 2.4.6, de nouveaux libellés ont été créés pour faire la distinction entre les configurations Elasticsearch et OpenSearch.
+>&#x200B;>Lorsque la prise en charge d’Elasticsearch 8.x a été introduite dans la version 2.4.6, de nouveaux libellés ont été créés pour faire la distinction entre les configurations Elasticsearch et OpenSearch.
 
 Pour plus d’informations sur la configuration de votre moteur de recherche, consultez le [Guide de l’utilisateur](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 

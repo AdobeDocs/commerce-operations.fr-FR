@@ -58,10 +58,10 @@ Les données client sont mises à jour.
 Vous obtenez l’erreur suivante :
 
     «json
-    {
+    &lbrace;
     « message »: « Un client avec la même adresse e-mail existe déjà dans un site web associé. »,
     « trace »: ...
-    }
+    &rbrace;
      »
 
 ## Application du correctif

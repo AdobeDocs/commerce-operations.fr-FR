@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-50367 : l’exportation de l’adresse du client ne fonctionne pas avec l’attribut à sélection multiple'
-description: Appliquez le correctif ACSD-50367 pour résoudre le problème d’Adobe Commerce en raison duquel l’exportation de l’adresse du client ne fonctionne pas lors de la création d’un attribut **`Adresse du client`** à sélection multiple sans valeurs.
+description: Appliquez le correctif ACSD-50367 pour résoudre le problème d’Adobe Commerce en raison duquel l’exportation de l’adresse du client ne fonctionne pas lors de la création d’un attribut **&grave;Adresse du client&grave;** à sélection multiple sans valeurs.
 feature: Admin Workspace, Attributes, Data Import/Export, Shipping/Delivery
 role: Admin
 exl-id: 3f33a590-e7c2-424e-aacd-2df7ab893c3e

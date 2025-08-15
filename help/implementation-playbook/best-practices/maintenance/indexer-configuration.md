@@ -35,7 +35,7 @@ Un magasin volumineux avec plusieurs administrateurs travaillant en arrière-pla
 Pour optimiser les performances du site, suivez ces bonnes pratiques d’indexation :
 
 - Vérifiez la configuration de l’index.
-- Définissez les indexeurs sur _[!UICONTROL Update on Schedule]_pour les sites volumineux et les sites comportant des mises à jour fréquentes et un trafic important. Voir [Gestion des index](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+- Définissez les indexeurs sur _[!UICONTROL Update on Schedule]_&#x200B;pour les sites volumineux et les sites comportant des mises à jour fréquentes et un trafic important. Voir [Gestion des index](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 - Appliquez les [bonnes pratiques en matière de performances](../../../performance/configuration.md) pour gérer les index.
 
 >[!IMPORTANT]

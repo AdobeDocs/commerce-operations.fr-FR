@@ -26,7 +26,7 @@ Pour plus d’informations sur cron, notamment sur la suppression d’un cron ta
 
 Après l’installation, nous recommandons ce qui suit :
 
-* Assurez-vous que la propriété et les autorisations des fichiers sont correctement définies [](../prerequisites/file-system/configure-permissions.md)
+* Assurez-vous que la propriété et les autorisations des fichiers sont correctement définies [&#128279;](../prerequisites/file-system/configure-permissions.md)
 * Nous vous recommandons vivement de [modifier l’URI d’administration par défaut](../tutorials/admin-uri.md) de `admin` à autre chose
 * Assurez-vous que l’en-tête HTTP [`X-Frame-Option`](../../configuration/security/xframe-options.md) est correctement défini.
 * Prenez des précautions contre le cross-site scripting (XSS) en [ sécurisant vos modèles ](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
