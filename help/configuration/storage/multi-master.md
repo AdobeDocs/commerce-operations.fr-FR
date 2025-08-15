@@ -1,5 +1,5 @@
 ---
-title: Solution de performance de la base de données de partage
+title: Solution de performances de base de données partagée
 description: Découvrez la solution de base de données partagée pour Adobe Commerce.
 recommendations: noCatalog
 exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
@@ -10,33 +10,33 @@ ht-degree: 0%
 
 ---
 
-# Présentation de la solution de base de données partagée
+# Présentation de la solution de base de données fractionnée
 
 {{ee-only}}
 
 {{deprecate-split-db}}
 
-Adobe Commerce offre plusieurs avantages en termes d’évolutivité, notamment la possibilité d’utiliser trois bases de données maîtres distinctes pour différents domaines fonctionnels de l’application Commerce.
+Adobe Commerce offre plusieurs avantages en termes d’évolutivité, notamment la possibilité d’utiliser trois bases de données principales distinctes pour différents domaines fonctionnels de l’application Commerce.
 
-L’extraction, les commandes et les données de produit peuvent utiliser une base de données principale distincte que vous pouvez éventuellement répliquer. Cette séparation met à l’échelle la charge par rapport aux passages en caisse d’un site web, aux activités de gestion des commandes, à la navigation sur le site web et aux activités de marchandisage, selon vos besoins. Ces modifications offrent une flexibilité considérable dans la façon dont le niveau de la base de données peut être mis à l’échelle.
+Les données de passage en caisse, de commandes et de produits peuvent chacune utiliser une base de données principale distincte que vous pouvez éventuellement répliquer. Cette séparation met à l’échelle de manière indépendante la charge des passages en caisse des sites web, des activités de gestion des commandes, de navigation sur les sites web et des activités de marchandisage, en fonction de vos besoins. Ces modifications offrent une flexibilité considérable quant à la manière dont le niveau de base de données peut être dimensionné.
 
 >[!INFO]
 >
->Adobe Commerce sur l’infrastructure cloud ne prend _pas_ en charge cette fonctionnalité.
+>Adobe Commerce sur les infrastructures cloud ne prend _pas_ en charge cette fonctionnalité.
 
-La classe `ResourceConnections` fournit la connexion de base de données MySQL unifiée à l’application Commerce. Pour les requêtes envoyées aux bases de données principales, nous implémentons le modèle de base de données CQRS (Command Query Responsabilité Segregation). Ce modèle gère la logique de routage des requêtes de lecture et d’écriture vers les bases de données appropriées. Les développeurs n’ont pas besoin de savoir quelle configuration est utilisée et il n’existe aucune connexion de base de données en lecture et en écriture distincte.
+La classe `ResourceConnections` fournit la connexion de base de données MySQL unifiée à l’application Commerce. Pour les requêtes aux bases de données principales, nous implémentons le modèle de base de données CQRS (Command Query Responsibility Segregation). Ce modèle gère la logique de routage des requêtes de lecture et d’écriture vers les bases de données appropriées. Les développeurs n’ont pas besoin de savoir quelle configuration est utilisée et il n’existe aucune connexion de base de données distincte en lecture et écriture.
 
-Si vous configurez une réplication de base de données facultative, vous bénéficiez des avantages suivants :
+Si vous configurez la réplication de base de données facultative, vous obtenez les avantages suivants :
 
 - Sauvegarde des données
 - Analyse des données sans affecter la base de données principale
 - Évolutivité
 
-Les bases de données MySQL se répliquent de manière asynchrone, ce qui signifie que les esclaves n’ont pas besoin d’être connectés de manière permanente pour recevoir les mises à jour du maître.
+Les bases de données MySQL se répliquent de manière asynchrone, ce qui signifie que les esclaves n’ont pas besoin d’être connectés en permanence pour recevoir les mises à jour du maître.
 
-La figure suivante illustre le fonctionnement de cette fonctionnalité.
+La figure suivante montre le fonctionnement de cette fonctionnalité.
 
-![Adobe Commerce utilise différentes bases de données pour stocker des tables](../../assets/configuration/split-db-diagram-ee.png)
+![Adobe Commerce utilise différentes bases de données pour stocker les tables](../../assets/configuration/split-db-diagram-ee.png)
 
 Dans Magento Open Source, une seule base de données principale est utilisée.
 
@@ -44,45 +44,45 @@ Adobe Commerce utilise trois bases de données principales et un nombre configur
 
 ## Options de configuration
 
-En raison de la conception de la solution de performances de la base de données partagée, votre code personnalisé et les composants installés _ne peuvent pas_ effectuer l’une des opérations suivantes :
+En raison de la conception de la solution de performances de la base de données partagée, votre code personnalisé et les composants installés _ne peuvent pas_ effectuer les opérations suivantes :
 
-- Ecrire directement dans la base de données (vous devez utiliser l&#39;interface de la base de données Adobe Commerce)
-- Utiliser des JOIN qui affectent les bases de données de ventes ou de devis
-- Utiliser des clés étrangères pour les tables dans les bases de données principales, de ventes ou de passage en caisse
+- Écrire directement dans la base de données (au lieu de cela, vous devez utiliser l’interface de base de données Adobe Commerce)
+- Utiliser des jointures qui affectent les bases de données de ventes ou de devis
+- Utilisez des clés étrangères pour créer des tables dans les bases de données de paiement, de ventes ou principales
 
 >[!WARNING]
 >
->Contactez les développeurs de composants pour vérifier si leurs composants effectuent l’une des opérations précédentes. Si tel est le cas, vous ne devez choisir qu’une seule des options suivantes :
+>Contactez les développeurs de composants pour vérifier si leurs composants effectuent l’une des opérations précédentes. Si tel est le cas, vous devez choisir uniquement l’une des options suivantes :
 >
 >- Demandez aux développeurs de composants de mettre à jour leurs composants.
->- Utilisez les composants tels quels _sans_ la solution de base de données partagée.
->- Supprimez les composants pour pouvoir utiliser la solution de base de données partagée.
+>- Utilisez les composants en l’état _sans_ la solution de base de données fractionnée.
+>- Supprimez les composants afin de pouvoir utiliser la solution de base de données partagée.
 
-Cela signifie également que vous pouvez :
+Cela signifie également que vous pouvez effectuer l’une des opérations suivantes :
 
-- Configurez la solution de base de données partagée _avant_ de mettre Commerce en production.
+- Configurez la solution de base de données partagée _avant_ mise en production de Commerce.
 
-  Adobe recommande de configurer des bases de données partagées dès que possible après l’installation du logiciel Commerce.
+  Adobe recommande de configurer les bases de données fractionnées dès que possible après l’installation du logiciel Commerce.
 
-- [Configurez manuellement](multi-master-manual.md) la solution de base de données partagée.
+- [Configuration manuelle](multi-master-manual.md) la solution de base de données partagée.
 
-  Vous devez effectuer cette tâche si vous avez déjà installé des composants ou si Commerce est déjà en production. (_Ne mettez pas_ à jour un système de production ; effectuez les mises à jour dans un système de développement et synchronisez les modifications après les avoir testés.)
+  Vous devez effectuer cette tâche si vous avez déjà installé des composants ou si Commerce est déjà en production. (_Ne mettez pas_ jour un système de production ; effectuez les mises à jour dans un système de développement et synchronisez les modifications après les avoir testées.)
 
   >[!WARNING]
   >
-  >Vous devez sauvegarder manuellement les deux instances de base de données supplémentaires. Commerce sauvegarde uniquement l’instance de base de données principale. La commande [`magento setup:backup --db`](../../installation/tutorials/backup.md) et les options d&#39;administration ne sauvegardent pas les tables supplémentaires.
+  >Vous devez sauvegarder manuellement les deux instances de base de données supplémentaires. Commerce ne sauvegarde que l’instance de base de données principale. La commande [`magento setup:backup --db`](../../installation/tutorials/backup.md) et les options d’administration ne sauvegardent pas les tableaux supplémentaires.
 
 ## Conditions préalables
 
-La base de données partagée nécessite la configuration de trois bases de données MySQL maîtres sur n’importe quel hôte (les trois sur le serveur Commerce, chaque base de données sur un serveur distinct, etc.). Il s’agit des bases de données _master_ qui sont utilisées comme suit :
+La base de données fractionnée nécessite que vous configuriez trois bases de données principales MySQL sur n’importe quel hôte (les trois sur le serveur Commerce, chaque base de données sur un serveur distinct, etc.). Il s&#39;agit des bases de données _maître_ qui sont utilisées comme suit :
 
 - Une base de données principale pour les tables de passage en caisse
-- Une base de données principale pour les tables de ventes (également appelée _Order Management System_ ou _OMS_, tables)
-- Une base de données principale pour le reste des tables de l’application Commerce 2
+- Une base de données principale pour les tables de ventes (également appelées tables _Order Management System_ ou _OMS_)
+- Une base de données principale pour le reste des tables d’application Commerce 2
 
-En outre, vous pouvez éventuellement configurer un nombre indéfini de bases de données _slave_ qui servent d’équilibreurs de charge et de sauvegardes.
+En outre, vous pouvez éventuellement configurer un nombre illimité de bases de données _esclaves_ qui servent de répartition de charge et de sauvegardes.
 
-Ce guide explique uniquement comment configurer les bases de données principales. Nous fournissons des exemples de configurations et de références pour que vous puissiez configurer des bases de données esclaves si vous le souhaitez.
+Ce guide explique comment configurer les bases de données principales uniquement. Nous fournissons des exemples de configurations et de références pour vous permettre de configurer des bases de données esclaves si vous le souhaitez.
 
 Dans ce guide, les trois bases de données principales sont nommées :
 
@@ -90,4 +90,4 @@ Dans ce guide, les trois bases de données principales sont nommées :
 - `magento_sales`
 - `magento`
 
-(Vous pouvez nommer vos bases de données comme bon vous semble.)
+(Vous pouvez nommer vos bases de données comme vous le souhaitez.)

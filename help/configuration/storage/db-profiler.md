@@ -1,8 +1,8 @@
 ---
 title: Configuration du profileur de base de données
-description: Consultez un exemple de configuration de la sortie pour le profileur de base de données.
+description: Consultez un exemple de configuration de sortie pour le profileur de base de données.
 feature: Configuration, Storage
-badge: label="Contribution de Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Goswami d&#39;Asie"
+badge: label="Contribution Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Le profileur de base de données Commerce affiche toutes les requêtes implémentées sur une page, y compris l’heure de chaque requête et les paramètres appliqués.
 
-## Étape 1 : modification de la configuration du déploiement
+## Étape 1 : modifier la configuration de déploiement
 
-Modifiez `<magento_root>/app/etc/env.php` pour ajouter la référence suivante à la [classe du profileur de base de données](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php) :
+Modifiez `<magento_root>/app/etc/env.php` pour ajouter la référence suivante à la classe [profileur de base de données](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php) :
 
 ```php?start_inline=1
         'profiler' => [
@@ -53,17 +53,17 @@ Voici un exemple :
   ),
 ```
 
-## Etape 2 : paramétrer la sortie
+## Étape 2 : configurer la sortie
 
-Configurez la sortie dans le fichier d’amorçage de votre application Commerce ; il peut s’agir de `<magento_root>/pub/index.php` ou se trouver dans une configuration d’hôte virtuel d’un serveur web.
+Configurez la sortie dans le fichier d’amorçage de votre application Commerce. Il peut s’agir d’un fichier `<magento_root>/pub/index.php` ou d’une configuration d’hôte virtuel de serveur web.
 
 L’exemple suivant affiche les résultats dans un tableau à trois colonnes :
 
-- Durée totale (affiche la durée totale d’exécution de toutes les requêtes sur la page)
-- SQL (affiche toutes les requêtes SQL ; l’en-tête de ligne affiche le nombre de requêtes)
+- Durée totale (affiche la durée totale nécessaire pour exécuter toutes les requêtes sur la page)
+- SQL (affiche toutes les requêtes SQL ; l&#39;en-tête de ligne affiche le nombre de requêtes)
 - Paramètres de requête (affiche les paramètres de chaque requête SQL)
 
-Pour configurer la sortie, ajoutez les éléments suivants après la ligne `$bootstrap->run($app);` dans votre fichier de démarrage :
+Pour configurer la sortie, ajoutez les éléments suivants après la ligne `$bootstrap->run($app);` dans votre fichier de données d’amorçage :
 
 ```php?start_inline=1
 /** @var \Magento\Framework\App\ResourceConnection $res */
@@ -91,4 +91,4 @@ echo "</table>";
 
 Accédez à n’importe quelle page de votre storefront ou de votre administrateur pour afficher les résultats. Voici un exemple :
 
-![Exemple de résultats de profileur de base de données](../../assets/configuration/db-profiler-results.png)
+![Exemples de résultats du profileur de base de données](../../assets/configuration/db-profiler-results.png)

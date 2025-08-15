@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Présentation de la portée de la mise à niveau
 
-Consultez les [notes de mise à jour](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/overview) pour comprendre la portée d’une version, y compris les améliorations, les correctifs et les problèmes connus qui peuvent avoir un impact sur les modules tiers et personnalisés.
+Consultez les [notes de mise à jour](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) pour comprendre la portée d’une version, y compris les améliorations, les correctifs et les problèmes connus qui peuvent avoir un impact sur les modules tiers et personnalisés.
 
 ## Modifications non rétrocompatibles
 
@@ -26,7 +26,7 @@ La nouvelle politique de compatibilité d’Adobe Commerce Marketplace garantit 
 
 ## Modules personnalisés
 
-Tous les modules personnalisés doivent être comparés à la version cible vers laquelle vous souhaitez effectuer la mise à niveau. Il s’agit du processus de mise à niveau qui nécessite le plus de temps et de ressources. Lors de l’évaluation de vos modules personnalisés, vous devez rechercher les modifications non rétrocompatibles et tenir compte des nouvelles pratiques, telles que la décomposition du contrôleur. Pour en savoir plus à ce sujet, consultez les [notes de mise à jour](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/overview). Veillez également à suivre les [bonnes pratiques](https://developer.adobe.com/commerce/php/best-practices/extensions/) en matière de développement de modules.
+Tous les modules personnalisés doivent être comparés à la version cible vers laquelle vous souhaitez effectuer la mise à niveau. Il s’agit du processus de mise à niveau qui nécessite le plus de temps et de ressources. Lors de l’évaluation de vos modules personnalisés, vous devez rechercher les modifications non rétrocompatibles et tenir compte des nouvelles pratiques, telles que la décomposition du contrôleur. Pour en savoir plus à ce sujet, consultez les [notes de mise à jour](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview). Veillez également à suivre les [bonnes pratiques](https://developer.adobe.com/commerce/php/best-practices/extensions/) en matière de développement de modules.
 
 ## [!DNL Upgrade Compatibility Tool]
 

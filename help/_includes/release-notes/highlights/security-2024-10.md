@@ -9,7 +9,7 @@ ht-degree: 0%
 
 Les points forts de cette version sont les suivants :
 
-* **Mise à niveau de TinyMCE** : l’éditeur [WYSIWYG](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/wysiwyg/editor) dans l’administration utilise désormais la dernière version de la dépendance TinyMCE (7.3&#x200B;).
+* **Mise à niveau de TinyMCE** : l’éditeur [WYSIWYG](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/editor) dans l’administration utilise désormais la dernière version de la dépendance TinyMCE (7.3&#x200B;).
 
    * TinyMCE 7.3 offre une expérience utilisateur améliorée, une meilleure collaboration et une efficacité accrue. TinyMCE 5 a été supprimé dans la version 2.4.8&#x200B;
 

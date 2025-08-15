@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bonnes pratiques de traitement et de stockage des paiements
 
-L’un des principes clés du maintien de la conformité [PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html?lang=fr) est d’avoir une stratégie pour traiter et stocker correctement les paiements par carte de crédit.
+L’un des principes clés du maintien de la conformité [PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) est d’avoir une stratégie pour traiter et stocker correctement les paiements par carte de crédit.
 
 Le stockage des données des titulaires de carte dans Adobe Commerce est **strictement interdit** et cela pourrait constituer une violation de vos obligations en tant que commerçant en vertu de la norme PCI-DSS (Payment Card Industry Data Security Standard). Pour plus d’informations sur le modèle de responsabilité partagée et les directives relatives aux obligations des commerçants, consultez le [Guide du modèle de responsabilité partagée d’Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) dans le Centre de gestion de la confidentialité d’Adobe.
 
@@ -53,4 +53,4 @@ La méthode recommandée pour gérer les données du titulaire de carte consiste
 
 ## Informations supplémentaires
 
-Si vous recherchez des solutions de paiement recommandées par Adobe, pensez à [Adobe Payment Services](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html?lang=fr).
+Si vous recherchez des solutions de paiement recommandées par Adobe, pensez à [Adobe Payment Services](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html).

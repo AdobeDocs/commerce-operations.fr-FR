@@ -1,6 +1,6 @@
 ---
-title: Configuration de la propriété et des autorisations de fichier
-description: Pour configurer les autorisations du système de fichiers pour les installations sur site d’Adobe Commerce, procédez comme suit.
+title: Configuration de la propriété et des autorisations des fichiers
+description: Pour configurer les autorisations de système de fichiers pour les installations sur site d’Adobe Commerce, procédez comme suit.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
@@ -9,20 +9,20 @@ ht-degree: 0%
 
 ---
 
-# Configuration de la propriété et des autorisations de fichier
+# Configuration de la propriété et des autorisations des fichiers
 
-Cette rubrique explique comment définir des autorisations de lecture-écriture pour le groupe de serveurs web avant d’installer Adobe Commerce. Cela est nécessaire afin que la ligne de commande puisse écrire des fichiers dans le système de fichiers.
+Cette rubrique explique comment définir des autorisations de lecture/écriture pour le groupe de serveurs web avant d’installer Adobe Commerce. Cela est nécessaire pour que la ligne de commande puisse écrire des fichiers dans le système de fichiers.
 
-La procédure que vous utilisez est différente, selon que vous utilisez l&#39;[hébergement partagé](#set-permissions-for-one-user-on-shared-hosting) et que vous utilisez un utilisateur ou un [serveur privé](#set-ownership-and-permissions-for-two-users) et que vous avez deux utilisateurs.
+La procédure à suivre est différente selon que vous utilisez [hébergement partagé](#set-permissions-for-one-user-on-shared-hosting) et que vous avez un utilisateur ou un [serveur privé](#set-ownership-and-permissions-for-two-users) et que vous avez deux utilisateurs.
 
 ## Définition des autorisations pour un utilisateur sur l’hébergement partagé
 
-Cette section explique comment définir les autorisations de pré-installation si vous vous connectez au serveur d’applications en tant qu’utilisateur exécutant également le serveur web. Ce type de configuration est courant dans les environnements d’hébergement partagés.
+Cette section explique comment définir des autorisations de préinstallation si vous vous connectez au serveur d’applications avec le même utilisateur qui exécute également le serveur web. Ce type de configuration est courant dans les environnements d’hébergement partagés.
 
-Pour définir les autorisations avant d’installer l’application :
+Pour définir des autorisations avant d’installer l’application, procédez comme suit :
 
 1. Connectez-vous à votre serveur d’applications.
-1. Utilisez une application de gestionnaire de fichiers fournie par votre fournisseur d’hébergement partagé pour vérifier que les autorisations d’écriture sont définies sur les répertoires suivants :
+1. Utilisez une application de gestion de fichiers fournie par votre fournisseur d’hébergement partagé pour vérifier que les autorisations d’écriture sont définies sur les répertoires suivants :
 
    * `vendor` (installation du compositeur ou de l’archive compressée)
    * `app/etc`
@@ -31,7 +31,7 @@ Pour définir les autorisations avant d’installer l’application :
    * `generated`
    * Toute autre ressource statique
 
-1. Si vous disposez d’un accès en ligne de commande, saisissez les commandes suivantes dans l’ordre indiqué :
+1. Si vous disposez d’un accès à la ligne de commande, saisissez les commandes suivantes dans l’ordre indiqué :
 
    ```bash
    cd <app_root>
@@ -49,71 +49,71 @@ Pour définir les autorisations avant d’installer l’application :
    chmod u+x bin/magento
    ```
 
-   Si vous le souhaitez, saisissez toutes les commandes sur une seule ligne, en supposant que l’application soit installée dans `/var/www/html/magento2` :
+   Pour éventuellement saisir toutes les commandes sur une ligne, saisissez ce qui suit en supposant que l&#39;application soit installée dans `/var/www/html/magento2` :
 
    ```bash
    cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} + && chmod u+x bin/magento
    ```
 
-1. Si vous ne l’avez pas déjà fait, récupérez l’application de l’une des manières suivantes :
+1. Si vous ne l&#39;avez pas déjà fait, obtenez l&#39;application de l&#39;une des façons suivantes :
 
-   * [Métaphorage du compositeur](../../composer.md)
-   * [Cloner le référentiel (développeurs contributeurs uniquement)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+   * [Métapaquet du compositeur](../../composer.md)
+   * [Cloner le référentiel (développeurs et développeuses contributeurs uniquement)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 1. Après avoir défini la propriété et les autorisations du système de fichiers, [installez l’application](../../advanced.md)
 
 >[!NOTE]
 >
->Pour restreindre davantage les autorisations après l&#39;installation de l&#39;application, vous pouvez [configurer un umask](../../next-steps/set-umask.md).
+>Pour restreindre davantage les autorisations après l’installation de l’application, vous pouvez [configurer un masque](../../next-steps/set-umask.md).
 
 ## Définir la propriété et les autorisations pour deux utilisateurs
 
-Cette section explique comment définir la propriété et les autorisations pour votre propre serveur ou une configuration d’hébergement privé. Dans ce type de configuration, vous *ne pouvez pas* vous connecter en tant qu’utilisateur du serveur web ou passer à . En règle générale, vous vous connectez en tant qu’utilisateur unique et exécutez le serveur web en tant qu’utilisateur différent.
+Cette section explique comment définir la propriété et les autorisations de votre propre serveur ou d’une configuration d’hébergement privée. Dans ce type de configuration, vous ne pouvez généralement *pas* vous connecter en tant qu’utilisateur du serveur web ou passer à cet utilisateur. En règle générale, vous vous connectez en tant qu’utilisateur unique et exécutez le serveur web en tant qu’utilisateur différent.
 
 Pour définir la propriété et les autorisations d’un système à deux utilisateurs :
 
 Effectuez les tâches suivantes dans l’ordre indiqué :
 
 * [À propos du groupe partagé](#about-the-shared-group)
-* [Créez le propriétaire du système de fichiers et attribuez à l’utilisateur un mot de passe sécurisé.](#create-the-file-system-owner-and-give-the-user-a-strong-password)
-* [Recherche du groupe d’utilisateurs du serveur web](#find-the-web-server-user-group)
+* [Créez le propriétaire du système de fichiers et donnez à l&#39;utilisateur un mot de passe fort](#create-the-file-system-owner-and-give-the-user-a-strong-password)
+* [Rechercher le groupe de l&#39;utilisateur du serveur web](#find-the-web-server-user-group)
 * [Placez le propriétaire du système de fichiers dans le groupe de serveurs web](#put-the-file-system-owner-in-the-web-server-group)
-* [Obtention du logiciel](#get-the-software)
+* [Obtenir le logiciel](#get-the-software)
 * [Définir la propriété et les autorisations pour le groupe partagé](#set-ownership-and-permissions-for-the-shared-group)
 
 ### À propos du groupe partagé
 
-Pour permettre au serveur web d’écrire des fichiers et des répertoires dans le système de fichiers, mais aussi de gérer la *propriété* par le propriétaire du système de fichiers, les deux utilisateurs doivent appartenir au même groupe. Cela est nécessaire afin que les deux utilisateurs puissent partager l’accès aux fichiers (y compris les fichiers créés à l’aide de l’administrateur ou d’autres utilitaires web).
+Pour permettre au serveur Web d&#39;écrire des fichiers et des répertoires dans le système de fichiers mais aussi de conserver *propriété* par le propriétaire du système de fichiers, les deux utilisateurs doivent appartenir au même groupe. Cela est nécessaire afin que les deux utilisateurs puissent partager l’accès aux fichiers (y compris les fichiers créés à l’aide d’Admin ou d’autres utilitaires web).
 
-Cette section explique comment créer un propriétaire de système de fichiers et placer cet utilisateur dans le groupe du serveur web. Si vous le souhaitez, vous pouvez utiliser un compte utilisateur existant ; nous vous recommandons de disposer d’un mot de passe sécurisé.
+Cette section explique comment créer un propriétaire de système de fichiers et placer cet utilisateur dans le groupe du serveur web. Vous pouvez utiliser un compte utilisateur existant si vous le souhaitez ; nous recommandons à l’utilisateur d’avoir un mot de passe sécurisé pour des raisons de sécurité.
 
 >[!NOTE]
 >
->Passez à [Trouvez le groupe d’utilisateurs du serveur web](#find-the-web-server-user-group) si vous envisagez d’utiliser un compte d’utilisateur existant.
+>Passez à [Rechercher le groupe d’utilisateurs du serveur web](#find-the-web-server-user-group) si vous envisagez d’utiliser un compte utilisateur existant.
 
-### Créez le propriétaire du système de fichiers et attribuez à l’utilisateur un mot de passe sécurisé.
+### Créez le propriétaire du système de fichiers et donnez à l&#39;utilisateur un mot de passe fort
 
-Cette section explique comment créer le propriétaire du système de fichiers. (Le propriétaire du système de fichiers est un autre terme pour l’ *utilisateur de ligne de commande*.)
+Cette section explique comment créer le propriétaire du système de fichiers. (propriétaire du système de fichiers est un autre terme pour *utilisateur de ligne de commande*.)
 
-Pour créer un utilisateur sous CentOS ou Ubuntu, saisissez la commande suivante en tant qu’utilisateur disposant des privilèges `root` :
+Pour créer un utilisateur sous CentOS ou Ubuntu, saisissez la commande suivante en tant qu&#39;utilisateur disposant des privilèges `root` :
 
 ```bash
 adduser <username>
 ```
 
-Pour attribuer un mot de passe à l’utilisateur, saisissez la commande suivante en tant qu’utilisateur disposant des privilèges `root` :
+Pour attribuer un mot de passe à l&#39;utilisateur, saisissez la commande suivante en tant qu&#39;utilisateur disposant des privilèges `root` :
 
 ```bash
 passwd <username>
 ```
 
-Suivez les invites de votre écran pour créer un mot de passe pour l’utilisateur.
+Suivez les invites à l&#39;écran pour créer un mot de passe pour l&#39;utilisateur.
 
 >[!WARNING]
 >
->Si vous ne disposez pas des privilèges `root` sur votre serveur d’applications, vous pouvez utiliser un autre compte d’utilisateur local. Assurez-vous que l&#39;utilisateur dispose d&#39;un mot de passe fort et continuez avec [Placez le propriétaire du système de fichiers dans le groupe de serveurs web](#step-3-put-the-file-system-owner-in-the-web-servers-group).
+>Si vous ne disposez pas des privilèges `root` sur votre serveur d’applications, vous pouvez utiliser un autre compte utilisateur local. Assurez-vous que l’utilisateur dispose d’un mot de passe fort et continuez avec [Placez le propriétaire du système de fichiers dans le groupe de serveurs web](#step-3-put-the-file-system-owner-in-the-web-servers-group).
 
-Par exemple, pour créer un utilisateur nommé `magento_user` et donner un mot de passe à l’utilisateur, saisissez :
+Par exemple, pour créer un utilisateur nommé `magento_user` et lui donner un mot de passe, saisissez :
 
 ```bash
 sudo adduser magento_user
@@ -125,11 +125,11 @@ sudo passwd magento_user
 
 >[!WARNING]
 >
->Comme la création de cet utilisateur a pour but de fournir une sécurité supplémentaire, veillez à créer un [mot de passe fort](https://en.wikipedia.org/wiki/Password_strength).
+>Le but de la création de cet utilisateur étant de fournir une sécurité accrue, veillez à créer un [mot de passe sécurisé](https://en.wikipedia.org/wiki/Password_strength).
 
 ### Recherche du groupe d’utilisateurs du serveur web
 
-Pour trouver le groupe d’utilisateurs du serveur web :
+Pour trouver le groupe de l&#39;utilisateur du serveur web :
 
 * CentOS :
 
@@ -143,36 +143,36 @@ Pour trouver le groupe d’utilisateurs du serveur web :
   grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
   ```
 
-En règle générale, le nom de l’utilisateur et le nom du groupe sont `apache`.
+En règle générale, les noms d’utilisateur et de groupe sont tous deux `apache`.
 
-* Ubuntu : `ps aux | grep apache` pour trouver l’utilisateur Apache, puis `groups <apache user>` pour trouver le groupe.
+* Ubuntu : `ps aux | grep apache` pour trouver l&#39;utilisateur Apache, puis `groups <apache user>` pour trouver le groupe.
 
-En règle générale, le nom d’utilisateur et le nom du groupe sont `www-data`.
+En règle générale, le nom d’utilisateur et le nom du groupe sont tous deux `www-data`.
 
 ### Placez le propriétaire du système de fichiers dans le groupe de serveurs web
 
-Pour placer le propriétaire du système de fichiers dans le groupe principal du serveur web (en supposant que le nom type du groupe Apache soit CentOS et Ubuntu), saisissez la commande suivante en tant qu’utilisateur disposant des privilèges `root` :
+Pour placer le propriétaire du système de fichiers dans le groupe principal du serveur web (en supposant le nom de groupe Apache standard pour CentOS et Ubuntu), saisissez la commande suivante en tant qu’utilisateur avec des privilèges `root` :
 
 * CentOS : `usermod -a -G apache <username>`
 * Ubuntu : `usermod -a -G www-data <username>`
 
 >[!NOTE]
 >
->Les options `-a -G` sont importantes car elles ajoutent `apache` ou `www-data` en tant que groupe *secondaire* au compte utilisateur, ce qui conserve le groupe *principal* de l’utilisateur. L&#39;ajout d&#39;un groupe secondaire à un compte utilisateur permet de [restreindre la propriété et les autorisations des fichiers](#set-ownership-and-permissions-for-two-users) pour s&#39;assurer que les membres d&#39;un groupe partagé n&#39;ont accès qu&#39;à certains fichiers.
+>Les options de `-a -G` sont importantes, car elles ajoutent `apache` ou `www-data` en tant que groupe *secondaire* au compte d’utilisateur, ce qui préserve le groupe *principal* de l’utilisateur. L’ajout d’un groupe secondaire à un compte utilisateur permet de [restreindre la propriété et les autorisations des fichiers](#set-ownership-and-permissions-for-two-users) pour s’assurer que les membres d’un groupe partagé n’ont accès qu’à certains fichiers.
 
-Par exemple, pour ajouter l&#39;utilisateur `magento_user` au groupe principal `apache` sur CentOS :
+Par exemple, pour ajouter l’utilisateur `magento_user` au groupe principal `apache` sous CentOS :
 
 ```bash
 sudo usermod -a -G apache magento_user
 ```
 
-Pour confirmer que votre utilisateur fait partie du groupe de serveurs web, saisissez la commande suivante :
+Pour confirmer que votre utilisateur est membre du groupe de serveurs web , saisissez la commande suivante :
 
 ```bash
 groups magento_user
 ```
 
-L’exemple de résultat suivant montre les groupes primaire (`magento`) et secondaire (`apache`) de l’utilisateur.
+L’exemple de résultat suivant montre les groupes principal (`magento`) et secondaire (`apache`) de l’utilisateur.
 
 ```bash
 magento_user : magento_user apache
@@ -187,19 +187,19 @@ Pour terminer la tâche, redémarrez le serveur web :
 * Ubuntu : `service apache2 restart`
 * CentOS : `service httpd restart`
 
-### Obtention du logiciel
+### Obtenir le logiciel
 
-Si vous ne l’avez pas déjà fait, récupérez le logiciel de l’une des manières suivantes :
+Si vous ne l&#39;avez pas déjà fait, procurez-vous le logiciel de l&#39;une des façons suivantes :
 
-* [Métaphorage du compositeur](../../composer.md)
-* [Cloner le référentiel (développeurs contributeurs uniquement)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [Métapaquet du compositeur](../../composer.md)
+* [Cloner le référentiel (développeurs et développeuses contributeurs uniquement)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 ### Définir la propriété et les autorisations pour le groupe partagé
 
 Pour définir la propriété et les autorisations avant d’installer l’application :
 
-1. Connectez-vous à votre serveur d’applications en tant que propriétaire du système de fichiers ou basculez vers .
-1. Saisissez les commandes suivantes dans l’ordre indiqué :
+1. Connectez-vous au serveur d’applications en tant que propriétaire du système de fichiers ou passez à ce serveur.
+1. Saisissez les commandes suivantes dans l&#39;ordre indiqué :
 
    ```bash
    cd <app_root>
@@ -221,13 +221,13 @@ Pour définir la propriété et les autorisations avant d’installer l’applic
    chmod u+x bin/magento
    ```
 
-Si vous le souhaitez, saisissez toutes les commandes sur une seule ligne, en supposant que l’application soit installée dans `/var/www/html/magento2` et que le nom du groupe de serveurs web soit `apache` :
+Pour éventuellement saisir toutes les commandes sur une ligne, saisissez ce qui suit en supposant que l&#39;application soit installée dans `/var/www/html/magento2` et que le nom du groupe de serveurs web soit `apache` :
 
 ```bash
 cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && chown -R :apache . && chmod u+x bin/magento
 ```
 
-Dans le système de fichiers d’événements, les autorisations sont définies de manière incorrecte et ne peuvent pas être modifiées par le propriétaire du système de fichiers. Vous pouvez saisir la commande en tant qu’utilisateur disposant des privilèges `root` :
+Dans le cas où les autorisations du système de fichiers sont définies de manière incorrecte et ne peuvent pas être modifiées par le propriétaire du système de fichiers, vous pouvez saisir la commande en tant qu’utilisateur disposant de droits d’`root` :
 
 ```bash
 cd /var/www/html/magento2 && sudo find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && sudo find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && sudo chown -R :apache . && sudo chmod u+x bin/magento

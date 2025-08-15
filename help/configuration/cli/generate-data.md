@@ -1,5 +1,5 @@
 ---
-title: Génération de données pour les tests de performance
+title: Générer des données pour les tests de performance
 description: Découvrez comment générer une grande quantité de données à utiliser pour les tests de performance.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
@@ -14,24 +14,24 @@ ht-degree: 9%
 
 ## Profils
 
-Vous pouvez ajuster la quantité de données que vous créez à l’aide des _profils_ (petits, moyens, grands et très grands). Les profils se trouvent dans le répertoire `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>`.
+Vous pouvez ajuster la quantité de données que vous créez à l’aide de _profils_ (petit, moyen, grand et très grand). Les profils se trouvent dans le répertoire `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>`.
 
 Par exemple, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
 La figure suivante montre l’affichage d’un produit sur le storefront à l’aide du profil _small_ :
 
-![Exemple de vitrine avec données générées](../../assets/configuration/generate-data.png)
+![Exemple de storefront avec des données générées](../../assets/configuration/generate-data.png)
 
 Le tableau suivant fournit des détails sur les profils du générateur de données : petit, moyen, grand et très grand.
 
-| Paramètre | Petit profil | Profil Medium | Profil multi-site Medium | Profil volumineux | Profil volumineux supplémentaire |
+| Paramètre | Petit profil | Profil Medium | Medium multi-site profile | Profil volumineux | Très grand profil |
 | --- | --- | --- | --- | --- | --- |
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
 | `store_views` | 1 | 3 | 50 | 5 | 5 |
 | `simple_products` | 800 | 24 000 | 4 000 | 300 000 | 600 000 |
 | `configurable_products` | 16 avec 24 options | 640 avec 24 options | 800 avec 24 options et 79 avec 200 options | 8 000 avec 24 options | 16 000 avec 24 options |
-| `product_images` | 100 images / 3 images par produit | 1 000 images / 3 images par produit | 1 000 images / 3 images par produit | 2 000 images / 3 images par produit | 2 000 images / 3 images par produit |
+| `product_images` | 100 images/3 images par produit | 1 000 images/3 images par produit | 1 000 images/3 images par produit | 2 000 images/3 images par produit | 2 000 images/3 images par produit |
 | `categories` | 30 | 300 | 100 | 3 000 | 6 000 |
 | `categories_nesting_level` | 3 | 3 | 3 | 5 | 5 |
 | `catalog_price_rules` | 20 | 20 | 20 | 20 | 20 |
@@ -42,17 +42,17 @@ Le tableau suivant fournit des détails sur les profils du générateur de donn�
 | `tax rates` | 130 | 40 000 | 40 000 | 40 000 | 40 000 |
 | `orders` | 80 | 50 000 | 50 000 | 100 000 | 150 000 |
 
-### Exécution du générateur de données
+### Exécuter le générateur de données
 
 {{file-system-owner}}
 
 >[!WARNING]
 >
->Avant d’exécuter le générateur de données, désactivez toutes les tâches cron exécutées sur le serveur. La désactivation des tâches cron empêche le générateur de données d’effectuer des actions qui entrent en conflit avec les tâches cron actives et évite les erreurs inutiles.
+>Avant d’exécuter le générateur de données, désactivez toutes les tâches cron exécutées sur le serveur. La désactivation des tâches cron empêche le générateur de données d’effectuer des actions entrant en conflit avec les tâches cron actives et évite les erreurs inutiles.
 >
->Si vous avez l’intention d’implémenter des événements avec [!DNL Adobe I/O Events for Adobe Commerce] lors du test des performances, exécutez cette commande avant d’abonner [events](https://developer.adobe.com/commerce/extensibility/events/). L’inscription préalable d’événements peut entraîner des erreurs.
+>Si vous envisagez d’implémenter les événements avec [!DNL Adobe I/O Events for Adobe Commerce] lors du test des performances, exécutez cette commande avant d’y abonner des [événements](https://developer.adobe.com/commerce/extensibility/events/). L’abonnement préalable aux événements peut entraîner des erreurs.
 
-Exécutez la commande comme décrit dans cette section. Une fois la commande exécutée, vous devez [réindexer tous les indexeurs](../cli/manage-indexers.md).
+Exécutez la commande comme décrit dans cette section. Une fois la commande exécutée, vous devez [ réindexer tous les indexeurs ](../cli/manage-indexers.md).
 
 Options de commande :
 
@@ -97,11 +97,11 @@ Generating simple products...  done in <time>
 ... more ...
 ```
 
-## Correctifs de performances
+## Appareils de performance
 
 ### Utilisateurs administrateurs
 
-Génère les utilisateurs administrateurs. Noeud de profil XML :
+Génère des utilisateurs administrateurs. Nœud de profil XML :
 
 ```xml
 <!-- Number of admin users -->
@@ -110,7 +110,7 @@ Génère les utilisateurs administrateurs. Noeud de profil XML :
 
 ### Jeux d’attributs
 
-Génère des jeux d’attributs avec la configuration spécifiée. Noeud de profil XML :
+Génère des jeux d’attributs avec la configuration spécifiée. Nœud de profil XML :
 
 ```xml
 <!-- Number of product attribute sets -->
@@ -123,11 +123,11 @@ Génère des jeux d’attributs avec la configuration spécifiée. Noeud de prof
 <product_attribute_sets_attributes_values>{int}</product_attribute_sets_attributes_values>
 ```
 
-### Lot de produits
+### Lots de produits
 
-Génère des produits en bundle. Les sélections de lots générées ne s’affichent pas individuellement dans le catalogue. Les produits sont répartis uniformément par catégories et par sites web. Si `assign_entities_to_all_websites` du profil est défini sur `1`. Les produits sont attribués à tous les sites web.
+Génère des produits groupés. Les sélections de bundle générées ne s’affichent pas individuellement dans le catalogue. Les produits sont distribués uniformément par catégories et par sites Web. Si la `assign_entities_to_all_websites` du profil est définie sur `1`. Les produits sont affectés à tous les sites web.
 
-Noeud de profil XML :
+Nœud de profil XML :
 
 ```xml
 <!-- Number of products -->
@@ -142,7 +142,7 @@ Noeud de profil XML :
 
 ### Règles de prix du panier
 
-Génère des règles de prix de panier. Noeud de profil XML :
+Génère des règles de prix de panier. Nœud de profil XML :
 
 ```xml
 <!-- Number of cart price rules -->
@@ -152,9 +152,9 @@ Génère des règles de prix de panier. Noeud de profil XML :
 <cart_price_rules_floor>{int}</cart_price_rules_floor>
 ```
 
-### Règles de prix du catalogue
+### Règles de prix de catalogue
 
-Génère des règles de prix de catalogue. Noeud de profil XML :
+Génère des règles de prix de catalogue. Nœud de profil XML :
 
 ```xml
 <!-- Number of catalog price rules -->
@@ -163,9 +163,9 @@ Génère des règles de prix de catalogue. Noeud de profil XML :
 
 ### Catégories
 
-Génère des catégories. Si `assign_entities_to_all_websites` est défini sur `0`, toutes les catégories sont réparties uniformément par catégories racine ; dans le cas contraire, toutes les catégories sont affectées à une seule catégorie racine.
+Génère des catégories. Si `assign_entities_to_all_websites` est défini sur `0`, toutes les catégories sont uniformément réparties par catégorie racine ; dans le cas contraire, toutes les catégories sont affectées à une catégorie racine.
 
-Noeud de profil XML :
+Nœud de profil XML :
 
 ```xml
 <!-- Number of categories to generate -->
@@ -177,7 +177,7 @@ Noeud de profil XML :
 
 ### Configurations
 
-Définit des valeurs pour les champs de configuration. Noeud de profil XML :
+Définit les valeurs des champs de configuration. Nœud de profil XML :
 
 ```xml
 <!-- Config variables and values for change -->
@@ -195,11 +195,11 @@ Définit des valeurs pour les champs de configuration. Noeud de profil XML :
 
 ### Produits configurables
 
-Génère des produits configurables. Les options configurables générées ne s’affichent pas individuellement dans le catalogue. Les produits sont répartis uniformément par catégories et par sites web. Si `assign_entities_to_all_websites` est défini sur `1`, les produits sont attribués à tous les sites Web.
+Génère des produits configurables. Les options configurables générées ne s’affichent pas individuellement dans le catalogue. Les produits sont distribués uniformément par catégories et par sites Web. Si `assign_entities_to_all_websites` est défini sur `1`, les produits sont affectés à tous les sites web.
 
-Les formats de noeud XML suivants sont pris en charge :
+Les formats de nœud XML pris en charge sont les suivants :
 
-- Distribution par jeu d’attributs par défaut et prédéfini :
+- Distribution par jeux d’attributs par défaut et prédéfinis :
 
   ```xml
   <!-- Number of configurable products -->
@@ -232,7 +232,7 @@ Les formats de noeud XML suivants sont pris en charge :
   </configurable_products>
   ```
 
-- Générer des produits à partir d’un jeu d’attributs créé dynamiquement avec un nombre spécifié d’attributs et d’options :
+- Générer des produits en fonction d’un jeu d’attributs créé dynamiquement avec un nombre spécifié d’attributs et d’options :
 
   ```xml
   <configurable_products>
@@ -261,7 +261,7 @@ Les formats de noeud XML suivants sont pris en charge :
   </configurable_products>
   ```
 
-- Générer des produits à partir d’un jeu d’attributs créé dynamiquement avec une configuration spécifiée pour chaque attribut :
+- Générer des produits en fonction d’un jeu d’attributs créé dynamiquement avec une configuration spécifiée pour chaque attribut :
 
   ```xml
   <configurable_products>
@@ -300,16 +300,16 @@ Les formats de noeud XML suivants sont pris en charge :
 
 ### Clients
 
-Génère des clients. Les clients disposent d’une distribution normale sur tous les sites web disponibles. Chaque client possède les mêmes données, à l’exception de l’adresse électronique du client, du groupe de clients et des adresses du client.
+Génère des clients. Les clients ont une distribution normale sur tous les sites web disponibles. Chaque client possède les mêmes données, à l’exception des adresses électroniques du client, du groupe de clients et des adresses client.
 
-Noeud de profil XML :
+Nœud de profil XML :
 
 ```xml
 <!-- Number of customers to generate -->
 <customers>{int}</customers>
 ```
 
-Vous pouvez utiliser le code XML suivant pour modifier la configuration du client :
+Vous pouvez utiliser le code XML suivant pour modifier la configuration client :
 
 ```xml
 <customer-config>
@@ -318,11 +318,11 @@ Vous pouvez utiliser le code XML suivant pour modifier la configuration du clien
 </customer-config>
 ```
 
-### Images de produit
+### Images du produit
 
 Génère des images de produit. La génération n’inclut pas le redimensionnement.
 
-Noeud de profil XML :
+Nœud de profil XML :
 
 ```xml
 <product-images>
@@ -336,7 +336,7 @@ Noeud de profil XML :
 
 ### État des indexeurs
 
-Met à jour l’état des indexeurs. Noeud de profil XML :
+Met à jour l’état des indexeurs. Nœud de profil XML :
 
 ```xml
 <indexer>
@@ -348,9 +348,9 @@ Met à jour l’état des indexeurs. Noeud de profil XML :
 
 ### Commandes
 
-Génère des commandes avec un nombre configurable de différents types d’articles de commande. Vous pouvez également générer des guillemets inactifs pour les commandes générées.
+Génère des commandes avec un nombre configurable de différents types d&#39;articles de commande. Génère éventuellement des devis inactifs pour les commandes générées.
 
-Noeud de profil XML :
+Nœud de profil XML :
 
 ```xml
 <!-- It is necessary to enable quotes for orders -->
@@ -380,11 +380,11 @@ Noeud de profil XML :
 
 ### Produits simples
 
-Génère des produits simples. Les produits sont distribués par défaut et par jeux d’attributs prédéfinis. Si des jeux d’attributs supplémentaires sont spécifiés dans le profil comme suit : `<product_attribute_sets>{int}</product_attribute_sets>`, les produits sont également distribués par jeux d’attributs supplémentaires.
+Génère des produits simples. Les produits sont distribués par jeux d’attributs par défaut et prédéfinis. Si des jeux d’attributs supplémentaires sont spécifiés dans le profil en tant que : `<product_attribute_sets>{int}</product_attribute_sets>`, les produits sont également distribués par jeux d’attributs supplémentaires.
 
-Les produits sont répartis uniformément par catégories et par sites web. Si `assign_entities_to_all_websites` est défini sur `1`, les produits sont attribués à tous les sites Web.
+Les produits sont distribués uniformément par catégories et par sites Web. Si `assign_entities_to_all_websites` est défini sur `1`, les produits sont affectés à tous les sites web.
 
-Noeud de profil XML :
+Nœud de profil XML :
 
 ```xml
 <!-- Number of simple products to generate -->
@@ -393,27 +393,27 @@ Noeud de profil XML :
 
 ### Sites web
 
-Génère des sites web. Noeud de profil XML :
+Génère des sites web. Nœud de profil XML :
 
 ```xml
 <!-- Number of websites to be generated -->
 <websites>{int}</websites>
 ```
 
-### Groupes de magasin
+### Groupes de magasins
 
-Génère des groupes de magasins (appelés dans l’administrateur _stores_). Les groupes de magasins sont distribués normalement entre les sites web.
+Génère des groupes de magasins (appelés _magasins_ dans l’interface d’administration). Les groupes de magasins sont distribués normalement entre les sites web.
 
-Noeud de profil XML :
+Nœud de profil XML :
 
 ```xml
 <!-- Number of store groups to be generated -->
 <store_groups>{int}</store_groups>
 ```
 
-### Vues du magasin
+### Vues de la boutique
 
-Génère des vues de magasin. Les vues des magasins sont distribuées normalement entre les groupes de magasins. Noeud de profil XML :
+Génère des vues de magasin. Les vues de magasin sont distribuées normalement entre les groupes de magasins. Nœud de profil XML :
 
 ```xml
 <!-- Number of store views to be generated -->
@@ -425,7 +425,7 @@ Génère des vues de magasin. Les vues des magasins sont distribuées normalemen
 
 ### Taux d&#39;imposition
 
-Génère des taux d&#39;imposition. Noeud de profil XML :
+Génère des taux de taxe. Nœud de profil XML :
 
 ```xml
 <!-- Accepts name of CSV file with tax rates (<path to Commerce folder>/setup/src/Magento/Setup/Fixtures/_files) -->
@@ -434,16 +434,16 @@ Génère des taux d&#39;imposition. Noeud de profil XML :
 
 ## Informations de configuration supplémentaires :
 
-- `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml` : ensembles d’attributs par défaut
+- `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml` : jeux d&#39;attributs par défaut
 
-- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml` - Configuration client
+- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml` : configuration client
 
-- `<Commerce root dir>/setup/performance-toolkit/config/description.xml` : configuration de description complète du produit
+- `<Commerce root dir>/setup/performance-toolkit/config/description.xml` : configuration de la description complète du produit
 
-- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml` : configuration de description courte du produit
+- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml` : configuration de la description courte du produit
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml` : configuration pour une description courte et complète du produit. Cette ancienne mise en oeuvre est fournie à des fins de rétrocompatibilité.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml` : configuration pour une description courte et complète du produit. Cette ancienne mise en œuvre est fournie à des fins de rétrocompatibilité.
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml` : petit nombre de termes de recherche à en termes courts et complets
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml` : un petit nombre de termes de recherche pour les descriptions courtes et complètes.
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml` : nombre plus important de termes de recherche à utiliser dans une description courte et complète.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml` : un plus grand nombre de termes de recherche à utiliser dans une description courte et complète.

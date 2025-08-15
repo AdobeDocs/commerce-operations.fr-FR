@@ -13,36 +13,36 @@ ht-degree: 0%
 
 Nous supposons que :
 
-Si nécessaire, copiez le script de point d’entrée `index.php` existant pour la vue de votre site web ou de votre magasin et ajoutez-y le script suivant :
+Si nécessaire, copiez le script du point d’entrée `index.php` existant pour l’affichage de votre site web ou de votre boutique et ajoutez-y les éléments suivants :
 
 - Vous travaillez sur une machine de développement (ordinateur portable, machine virtuelle, etc.)
 
   Des tâches supplémentaires peuvent être nécessaires pour déployer plusieurs sites web dans un environnement hébergé. Pour plus d’informations, contactez votre fournisseur d’hébergement.
 
-  Des tâches supplémentaires sont requises pour configurer Adobe Commerce sur l’infrastructure cloud. Une fois les tâches décrites dans cette rubrique terminées, reportez-vous à la section [Configuration de plusieurs sites Web ou magasins](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=fr) du _guide sur l’infrastructure de Commerce on Cloud_.
+  Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Une fois les tâches décrites dans cette rubrique terminées, consultez [Configuration de plusieurs sites web ou magasins](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) dans le guide _Commerce sur les infrastructures cloud_.
 
-- Vous utilisez un hôte virtuel par site web ; le fichier de configuration de l’hôte virtuel est `/etc/httpd/httpd.conf`
+- Vous utilisez un hôte virtuel par site Web ; le fichier de configuration de l&#39;hôte virtuel est `/etc/httpd/httpd.conf`
 
-  Différentes versions d’Apache sur différents systèmes d’exploitation configurent différemment les hôtes virtuels. Consultez la [documentation Apache](https://httpd.apache.org/docs/2.4/vhosts) ou un administrateur réseau si vous ne savez pas comment configurer un hôte virtuel.
+  Différentes versions d’Apache sur différents systèmes d’exploitation configurent les hôtes virtuels différemment. Consultez la [documentation Apache](https://httpd.apache.org/docs/2.4/vhosts) ou contactez un administrateur réseau si vous n’êtes pas sûr de la manière de configurer un hôte virtuel.
 
 - Le logiciel Commerce est installé dans `/var/www/html/magento2`
-- Vous avez deux sites web autres que le site par défaut :
+- Vous disposez de deux sites web autres que le site par défaut :
 
-   - `french.mysite.mg` avec le code de site web `french` et le code d’affichage de magasin `fr`
-   - `german.mysite.mg` avec le code de site web `german` et le code d’affichage de magasin `de`
+   - `french.mysite.mg` avec le code du site web `french` et le code d’affichage du magasin `fr`
+   - `german.mysite.mg` avec le code du site web `german` et le code d’affichage du magasin `de`
 
 ## Feuille de route pour la configuration de plusieurs sites web avec Apache
 
-La configuration de plusieurs magasins comprend les tâches suivantes :
+La configuration de plusieurs magasins se compose des tâches suivantes :
 
-1. [Configurez les sites web, les magasins et les vues de magasin](ms-admin.md) dans l’administrateur.
+1. [Configurez des sites web, des boutiques et des affichages de boutique](ms-admin.md) dans l’Administration.
 1. Créez un [hôte virtuel Apache](#step-2-create-apache-virtual-hosts) par site web Commerce.
 
-## Étape 1 : Création de sites web, magasins et magasins d’affichages dans l’administration
+## Étape 1 : créer des sites web, des boutiques et des vues de boutique dans l’Administration
 
-Voir [Configuration de plusieurs sites web, magasins et vues de magasin dans l’Admin](ms-admin.md).
+Voir [Configuration de plusieurs sites web, boutiques et vues de boutique dans l’Administration](ms-admin.md).
 
-## Étape 2 : création d’hôtes virtuels Apache
+## Étape 2 : créer des hôtes virtuels Apache
 
 Cette section explique comment définir des valeurs pour `MAGE_RUN_TYPE` et `MAGE_RUN_CODE` à l’aide de la variable de serveur Apache `SetEnvIf` dans un hôte virtuel.
 
@@ -53,9 +53,9 @@ Pour plus d’informations sur `SetEnvIf`, voir :
 
 **Pour créer des hôtes virtuels Apache** :
 
-1. En tant qu’utilisateur disposant des privilèges `root`, ouvrez le fichier de configuration de l’hôte virtuel dans un éditeur de texte.
+1. En tant qu’utilisateur disposant de privilèges `root`, ouvrez le fichier de configuration de l’hôte virtuel dans un éditeur de texte.
 
-   Par exemple, ouvrez `/etc/httpd/conf/httpd.conf`.
+   Par exemple, ouvrez `/etc/httpd/conf/httpd.conf`
 
 1. Recherchez la section commençant par `<VirtualHost *:80>`.
 1. Créez les hôtes virtuels suivants après tout hôte virtuel existant :
@@ -87,9 +87,9 @@ Pour plus d’informations sur `SetEnvIf`, voir :
    - CentOS : `service httpd restart`
    - Ubuntu : `service apache2 restart`
 
-## Vérification du site
+## Vérification de votre site
 
-À moins que vous n’ayez configuré DNS pour les URL de vos magasins, vous devez ajouter un itinéraire statique à l’hôte dans votre fichier `hosts` :
+À moins que le DNS n’ait été configuré pour les URL de vos magasins, vous devez ajouter un itinéraire statique vers l’hôte dans votre fichier `hosts` :
 
 1. Recherchez le fichier `hosts` de votre système d’exploitation.
 1. Ajoutez l’itinéraire statique au format :
@@ -110,10 +110,10 @@ Pour plus d’informations sur `SetEnvIf`, voir :
 >[!INFO]
 >
 >- Des tâches supplémentaires peuvent être nécessaires pour déployer plusieurs sites web dans un environnement hébergé. Pour plus d’informations, contactez votre fournisseur d’hébergement.
->- Des tâches supplémentaires sont requises pour configurer Adobe Commerce sur l’infrastructure cloud. Voir [ Configuration de plusieurs sites Web ou magasins cloud ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=fr) dans le _guide sur l’infrastructure de Commerce on Cloud_.
+>- Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de plusieurs sites web ou magasins cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) dans le guide _Commerce sur l’infrastructure cloud_.
 
 ### Dépannage
 
-- Si vos sites français et allemand renvoient 404 s mais que votre administrateur charge, veillez à avoir terminé [Étape 6 : ajoutez le code de magasin à l’URL de base](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
-- Si toutes les URL renvoient 404, veillez à redémarrer votre serveur web.
+- Si vos sites français et allemands renvoient 404 mais que votre administrateur charge, veillez à terminer [Étape 6 : ajouter le code de magasin à l’URL de base](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- Si toutes les URL renvoient des URL 404, veillez à redémarrer votre serveur web.
 - Si l’administrateur ne fonctionne pas correctement, assurez-vous de configurer correctement vos hôtes virtuels.

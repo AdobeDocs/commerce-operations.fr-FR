@@ -4,17 +4,17 @@ description: Appliquez le correctif ACSD-65254 pour résoudre le problème d’A
 feature: GraphQL, User Account
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 5f7af7704c53c808298422dc165397dd255480b9
+exl-id: a97daceb-98f6-4bb8-9847-692af700c0fd
+source-git-commit: 7e9598e3ac0558706ef98ca81c19d27c37f7e860
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-65254 : notification par e-mail non envoyée après la mise à jour de l’e-mail du client via `updateCustomerEmail` mutation [!DNL GraphQL]
 
-Le correctif ACSD-65254 corrige le problème en raison duquel les notifications par e-mail n’étaient pas envoyées aux clients après la mise à jour de leurs adresses e-mail sur leurs comptes à l’aide de la mutation [!DNL GraphQL] `updateCustomerEmail`. Ce correctif est disponible lorsque la version 1.1.65 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-65254. Notez que ce problème doit être résolu dans Adobe Commerce 2.4.9.
+Le correctif ACSD-65254 corrige le problème en raison duquel les notifications par e-mail n’étaient pas envoyées aux clients après la mise à jour de leurs adresses e-mail sur leurs comptes à l’aide de la mutation `updateCustomerEmail` [!DNL GraphQL]. Ce correctif est disponible lorsque la version 1.1.65 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-65254. Notez que ce problème doit être résolu dans Adobe Commerce 2.4.9.
 
 ## Produits et versions concernés
 
@@ -28,7 +28,7 @@ Le correctif ACSD-65254 corrige le problème en raison duquel les notifications 
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -91,7 +91,7 @@ Seul un e-mail d’abonnement est envoyé à la nouvelle adresse ; l’e-mail de
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

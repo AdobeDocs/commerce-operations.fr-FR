@@ -1,6 +1,6 @@
 ---
-title: Restauration après échec de la mise à jour du module
-description: Résolvez votre mise à niveau Adobe Commerce après avoir rencontré une erreur de mise à jour de module.
+title: Restaurer après l’échec de la mise à jour du module
+description: Dépannage de votre mise à niveau Adobe Commerce après avoir rencontré une erreur de mise à jour de module.
 exl-id: 1537a6b1-b450-4f90-bffb-73359fa71598
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ---
 
-# Restauration après échec de la mise à jour du module
+# Restaurer après l’échec de la mise à jour du module
 
 Si la mise à jour de votre module échoue, des messages similaires à ceux-ci s’affichent dans le journal de la console :
 
@@ -23,4 +23,4 @@ Si la mise à jour de votre module échoue, des messages similaires à ceux-ci s
 
 Dans l’exemple précédent, il n’existe aucune version de composant à restaurer. Contactez le fournisseur du composant ou essayez de résoudre le problème vous-même.
 
-En attendant, vous pouvez restaurer une version précédente en cliquant sur **Restaurer**, ce qui permet de récupérer vos données même si vous n’avez pas effectué de sauvegarde auparavant.
+En attendant, vous pouvez restaurer une version précédente en cliquant sur **Restaurer**, ce qui permet de récupérer vos données même si vous ne les avez pas sauvegardées auparavant.

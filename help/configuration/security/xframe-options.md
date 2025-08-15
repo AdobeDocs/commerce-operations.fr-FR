@@ -1,6 +1,6 @@
 ---
-title: Prévention des explosions de détournement de clic
-description: Empêchez les exploits de détournement de clic à l’aide de l’en-tête "X-Frame-Options" pour contrôler les rendus de page.
+title: Empêcher les exploits de détournement de clic
+description: Empêchez les exploits de détournement de clic en utilisant l’en-tête « X-Frame-Options » pour contrôler les rendus de page.
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
 source-git-commit: 6cc04211fedddab68087bcf2f3603ae0403862b9
@@ -10,24 +10,24 @@ ht-degree: 0%
 
 ---
 
-# Prévention des explosions de détournement de clic
+# Empêcher les exploits de détournement de clic
 
-Empêchez l’utilisation de [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) en incluant l’en-tête de requête HTTP [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) dans les requêtes envoyées à votre vitrine.
+Empêchez les exploits [détournement de clic](https://owasp.org/www-community/attacks/Clickjacking) en incluant l’en-tête de requête HTTP [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) dans les requêtes envoyées à votre storefront.
 
-L’en-tête `X-Frame-Options` vous permet de spécifier si un navigateur est autorisé à effectuer le rendu d’une page dans un `<frame>`, `<iframe>` ou `<object>` comme suit :
+L’en-tête `X-Frame-Options` vous permet de spécifier si un navigateur est autorisé à effectuer le rendu d’une page dans une `<frame>`, un `<iframe>` ou un `<object>` comme suit :
 
 - `DENY` : la page ne peut pas être affichée dans un cadre.
-- `SAMEORIGIN` : (par défaut) la page ne peut être affichée que dans un cadre de la même origine que la page elle-même.
+- `SAMEORIGIN` : (par défaut) la page ne peut être affichée que dans un cadre, sur la même origine que la page elle-même.
 
 >[!WARNING]
 >
->L’option `ALLOW-FROM <uri>` a été abandonnée car les navigateurs pris en charge par Commerce ne la prennent plus en charge. Voir [Compatibilité du navigateur](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options#browser_compatibility).
+>L’option `ALLOW-FROM <uri>` est obsolète, car les navigateurs pris en charge par Commerce ne la prennent plus en charge. Voir [Compatibilité navigateur](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options#browser_compatibility).
 
 >[!WARNING]
 >
->Pour des raisons de sécurité, Adobe recommande vivement de ne pas exécuter le storefront Commerce dans un cadre.
+>Pour des raisons de sécurité, Adobe recommande vivement de ne pas exécuter le storefront Commerce dans un frame.
 
-## Mise en oeuvre de `X-Frame-Options`
+## Implémentation de `X-Frame-Options`
 
 Définissez une valeur pour `X-Frame-Options` dans `<project-root>/app/etc/env.php`. La valeur par défaut est définie comme suit :
 
@@ -35,17 +35,17 @@ Définissez une valeur pour `X-Frame-Options` dans `<project-root>/app/etc/env.p
 'x-frame-options' => 'SAMEORIGIN',
 ```
 
-Redéployez pour que les modifications apportées au fichier `env.php` prennent effet.
+Effectuez un redéploiement pour que les modifications apportées au fichier `env.php` soient prises en compte.
 
 >[!TIP]
 >
->Il est plus sûr de modifier le fichier `env.php` que de définir une valeur dans l’administrateur.
+>La modification du fichier `env.php` est plus sûre que la définition d’une valeur dans l’Administration.
 
-## Vérifiez votre paramètre pour `X-Frame-Options`
+## Vérifier votre paramètre pour `X-Frame-Options`
 
-Pour vérifier votre paramètre, affichez les en-têtes HTTP sur n’importe quelle page de storefront. Il existe plusieurs façons de procéder, notamment l’utilisation d’un inspecteur de navigateur Web.
+Pour vérifier votre paramètre, affichez les en-têtes HTTP sur n’importe quelle page de storefront. Il existe plusieurs façons de le faire, notamment en utilisant un inspecteur de navigateur web.
 
-L’exemple suivant utilise curl, que vous pouvez exécuter à partir de n’importe quel ordinateur pouvant se connecter à votre serveur Commerce via le protocole HTTP.
+L’exemple suivant utilise curl, que vous pouvez exécuter à partir de tout ordinateur pouvant se connecter à votre serveur Commerce via le protocole HTTP.
 
 ```bash
 curl -I -v --location-trusted '<storefront-URL>'

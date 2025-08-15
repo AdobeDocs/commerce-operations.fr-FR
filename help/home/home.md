@@ -1,6 +1,6 @@
 ---
-title: Accueil des guides opérationnels
-description: Parcourez un index de la documentation sur l’administration du système Adobe Commerce et les produits opérationnels.
+title: Page de départ Guides opérationnels
+description: Parcourez un index de l’administration du système Adobe Commerce et de la documentation opérationnelle du produit.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
 source-git-commit: 5a2aae6a2f3b1353457f003460d230db2b57abdd
 workflow-type: tm+mt
@@ -10,11 +10,11 @@ ht-degree: 7%
 ---
 
 
-# Guides opérationnels Adobe Commerce
+# Guides opérationnels d’Adobe Commerce
 
-Utilisez cette collection de guides pour en savoir plus sur les concepts, processus, outils et bonnes pratiques d’administration du système afin de planifier, configurer, déployer et gérer des projets Adobe Commerce.
+Utilisez cet ensemble de guides pour en savoir plus sur les concepts, les processus, les outils et les bonnes pratiques d’administration système pour planifier, configurer, déployer et gérer des projets Adobe Commerce.
 
-## Planification et conseils
+## Planification et orientation
 
 <table>
 <tr>
@@ -23,16 +23,16 @@ Utilisez cette collection de guides pour en savoir plus sur les concepts, proces
       <img alt="Informations sur la version" src="../assets/icons/promote.svg" width="40"/>
     </a>
     <div>
-      <a href="../release/release-notes/overview.md"><strong>Informations sur la version</strong></a>
-      <p>Consultez toutes les informations de mise à jour des correctifs et services Adobe Commerce.</p>
+      <a href="../release/release-notes/overview.md"><strong>Informations de mise à jour</strong></a>
+      <p>Consultez toutes les informations de mise à jour relatives aux correctifs et services Adobe Commerce.</p>
     </div>
   </td>
     <td valign="top">
     <a href="../implementation-playbook/overview.md">
-      <img alt="Implémentation" src="../assets/icons/play.svg" width="40"/>
+      <img alt="Mise en œuvre" src="../assets/icons/play.svg" width="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong>Manuel de mise en oeuvre</strong></a>
+      <a href="../implementation-playbook/overview.md"><strong>Manuel d’implémentation</strong></a>
       <p>Découvrez les stratégies de planification et d’implémentation d’un site Adobe Commerce performant.</p>
     </div>
   </td>
@@ -41,8 +41,8 @@ Utilisez cette collection de guides pour en savoir plus sur les concepts, proces
        <img alt="Entreprise" src="../assets/icons/alert-circle.svg" width="40"/>
     </a>
     <div>
-      <a href="../security-and-compliance/overview.md"><strong>Sécurité et conformité</strong></a>
-      <p>Découvrez comment les marchands Adobe Commerce sont chargés de la maintenance d’un environnement sécurisé.</p>
+      <a href="../security-and-compliance/overview.md"><strong>Sécurité et conformité </strong></a>
+      <p>Découvrez comment les commerçants Adobe Commerce sont chargés de la maintenance d’un environnement sécurisé.</p>
     </div>
   </td>
     <td valign="top">
@@ -50,14 +50,14 @@ Utilisez cette collection de guides pour en savoir plus sur les concepts, proces
        <img alt="Performances" src="../assets/icons/gauge.svg" width="40"/>
     </a>
     <div>
-      <a href="../performance/overview.md"><strong> Bonnes pratiques de performances</strong></a>
-      <p>Utilisez ces recommandations pour optimiser les performances de votre déploiement Adobe Commerce.</p>
+      <a href="../performance/overview.md"><strong>Bonnes pratiques en matière de performances</strong></a>
+      <p>Suivez ces recommandations pour optimiser les performances de votre déploiement Adobe Commerce.</p>
     </div>
   </td>
 </tr>
 </table>
 
-## Gestion des systèmes
+## Gestion du système
 
 <table>
 <tr>
@@ -66,7 +66,7 @@ Utilisez cette collection de guides pour en savoir plus sur les concepts, proces
       <img alt="Installation (sur site)" src="../assets/icons/servers.svg" width="40"/>
     </a>
     <div>
-      <a href="../installation/overview.md"><strong>Installation</strong></a>
+      <a href="../installation/overview.md"><strong> Installation </strong></a>
       <p>Découvrez comment installer Adobe Commerce pour les déploiements sur site.</p>
     </div>
   </td>
@@ -75,17 +75,17 @@ Utilisez cette collection de guides pour en savoir plus sur les concepts, proces
       <img alt="Configuration" src="../assets/icons/settings.svg" width="40"/>
     </a>
     <div>
-      <a href="../configuration/overview.md"><strong>Configuration</strong></a>
+      <a href="../configuration/overview.md"><strong> Configuration </strong></a>
       <p>Configurez les fonctionnalités et services de votre application Adobe Commerce.</p>
     </div>
   </td>
   <td valign="top">
     <a href="../upgrade/overview.md">
-      <img alt="Mettre à niveau" src="../assets/icons/upload-cloud.svg" width="40"/>
+      <img alt="Mise à niveau" src="../assets/icons/upload-cloud.svg" width="40"/>
     </a>
     <div>
-      <a href="../upgrade/overview.md"><strong>Upgrade</strong></a>
-      <p>Découvrez comment mettre à niveau votre projet Adobe Commerce afin de garantir la sécurité de votre storefront et de garantir un fonctionnement efficace.</p>
+      <a href="../upgrade/overview.md"><strong>Mise à niveau</strong></a>
+      <p>Découvrez comment mettre à niveau votre projet Adobe Commerce pour que votre storefront reste sécurisé et fonctionne efficacement.</p>
     </div>
   </td>
   <td valign="top">
@@ -93,7 +93,7 @@ Utilisez cette collection de guides pour en savoir plus sur les concepts, proces
        <img alt="Outils" src="../assets/icons/wrench.svg" width="40"/>
     </a>
     <div>
-      <a href="../tools/overview.md"><strong>Outils</strong></a>
+      <a href="../tools/overview.md"><strong> Outils </strong></a>
       <p>Découvrez les outils que vous pouvez utiliser avec Adobe Commerce.</p>
     </div>
   </td>

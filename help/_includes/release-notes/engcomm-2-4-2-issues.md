@@ -5,9 +5,9 @@ source-wordcount: '1759'
 ht-degree: 0%
 
 ---
-# Contributions de la communauté
+# Contributions de la Communauté
 
-| Contribuer aux membres de la communauté | Requêtes de tirage | Problèmes GitHub connexes |
+| Membre contributeur de la communauté | Demandes d’extraction | Problèmes GitHub associés |
 | ------- | ------- | ------- |
 | Nazar Klovanych | [#29576](https://github.com/magento/magento2/pull/29576) | [1449](https://github.com/magento/magento2/issues/1449) |
 | Shankar Konar | [#29511](https://github.com/magento/magento2/pull/29511) | [29496](https://github.com/magento/magento2/issues/29496) |
@@ -39,8 +39,8 @@ ht-degree: 0%
 | Shankar Konar | [#29510](https://github.com/magento/magento2/pull/29510) | [28422](https://github.com/magento/magento2/issues/28422) |
 | Vadim Malesh | [#29474](https://github.com/magento/magento2/pull/29474) | [29267](https://github.com/magento/magento2/issues/29267) |
 | Oleh Usik | [#29460](https://github.com/magento/magento2/pull/29460) | [29501](https://github.com/magento/magento2/issues/29501) |
-| Dmitri Tsymbal | [#29042](https://github.com/magento/magento2/pull/29042) | [29145](https://github.com/magento/magento2/issues/29145) |
-| Radevic Savvas | [#28816](https://github.com/magento/magento2/pull/28816) | [28802](https://github.com/magento/magento2/issues/28802) |
+| Dmitry Tsymbal | [#29042](https://github.com/magento/magento2/pull/29042) | [29145](https://github.com/magento/magento2/issues/29145) |
+| Savvas Radevic | [#28816](https://github.com/magento/magento2/pull/28816) | [28802](https://github.com/magento/magento2/issues/28802) |
 | Sascha | [#28548](https://github.com/magento/magento2/pull/28548) | [28674](https://github.com/magento/magento2/issues/28674) |
 | Yan Nasonov | [#28512](https://github.com/magento/magento2/pull/28512) | [29661](https://github.com/magento/magento2/issues/29661) |
 | Rudolf Vince | [#27494](https://github.com/magento/magento2/pull/27494) | [29537](https://github.com/magento/magento2/issues/29537) |
@@ -53,17 +53,17 @@ ht-degree: 0%
 | Russell Albin | [#29269](https://github.com/magento/magento2/pull/29269) | [25595](https://github.com/magento/magento2/issues/25595) |
 | Bartłomiej Szubert | [#28163](https://github.com/magento/magento2/pull/28163) | [13401](https://github.com/magento/magento2/issues/13401) |
 | Mateusz Krzeszowiak | [#27696](https://github.com/magento/magento2/pull/27696) | [29553](https://github.com/magento/magento2/issues/29553) |
-| Vitali Prokopov | [#27691](https://github.com/magento/magento2/pull/27691) | [26903](https://github.com/magento/magento2/issues/26903) |
+| Vitaliy Prokopov | [#27691](https://github.com/magento/magento2/pull/27691) | [26903](https://github.com/magento/magento2/issues/26903) |
 | korostii | [#26081](https://github.com/magento/magento2/pull/26081) | [26080](https://github.com/magento/magento2/issues/26080) |
 | Nazar Klovanych | [#29711](https://github.com/magento/magento2/pull/29711) | [1774](https://github.com/magento/magento2/issues/1774) |
 | Hazel Joie Caquicla | [#29411](https://github.com/magento/magento2/pull/29411) |  |
 | Wout Kramer | [#29210](https://github.com/magento/magento2/pull/29210) | [29515](https://github.com/magento/magento2/issues/29515) |
-| Edouard Chitoraga | [#29148](https://github.com/magento/magento2/pull/29148) |  |
+| Eduard Chitoraga | [#29148](https://github.com/magento/magento2/pull/29148) |  |
 | Oleh Usik | [#28821](https://github.com/magento/magento2/pull/28821) | [28558](https://github.com/magento/magento2/issues/28558), [28520](https://github.com/magento/magento2/issues/28520) |
 | Nazar Klovanych | [#29783](https://github.com/magento/magento2/pull/29783) | [1780](https://github.com/magento/magento2/issues/1780) |
 | jmonteros422 | [#29774](https://github.com/magento/magento2/pull/29774) | [1783](https://github.com/magento/magento2/issues/1783) |
 | Hazel Joie Caquicla | [#29772](https://github.com/magento/magento2/pull/29772) |  |
-| Sergii Iouchtchenko | [#29761](https://github.com/magento/magento2/pull/29761) |  |
+| Sergii Ivashchenko | [#29761](https://github.com/magento/magento2/pull/29761) |  |
 | jmonteros422 | [#29753](https://github.com/magento/magento2/pull/29753) | [1784](https://github.com/magento/magento2/issues/1784) |
 | Nazar Klovanych | [#29743](https://github.com/magento/magento2/pull/29743) | [1782](https://github.com/magento/magento2/issues/1782) |
 | Nazar Klovanych | [#29742](https://github.com/magento/magento2/pull/29742) | [1778](https://github.com/magento/magento2/issues/1778) |
@@ -71,19 +71,19 @@ ht-degree: 0%
 | jmonteros422 | [#29677](https://github.com/magento/magento2/pull/29677) | [1504](https://github.com/magento/magento2/issues/1504) |
 | Ihor Sviziev | [#29799](https://github.com/magento/magento2/pull/29799) |  |
 | Oleh Usik | [#29634](https://github.com/magento/magento2/pull/29634) | [29648](https://github.com/magento/magento2/issues/29648) |
-| Alexandre Skrashuk | [#29348](https://github.com/magento/magento2/pull/29348) | [28921](https://github.com/magento/magento2/issues/28921) |
-| Vitali Prokopov | [#28413](https://github.com/magento/magento2/pull/28413) | [28388](https://github.com/magento/magento2/issues/28388) |
+| Alexandr Skrashuk | [#29348](https://github.com/magento/magento2/pull/29348) | [28921](https://github.com/magento/magento2/issues/28921) |
+| Vitaliy Prokopov | [#28413](https://github.com/magento/magento2/pull/28413) | [28388](https://github.com/magento/magento2/issues/28388) |
 | Lukasz Bajsarowicz | [#27609](https://github.com/magento/magento2/pull/27609) |  |
 | korostii | [#27579](https://github.com/magento/magento2/pull/27579) | [27523](https://github.com/magento/magento2/issues/27523) |
-| La participation de Cristian | [#29426](https://github.com/magento/magento2/pull/29426) | [29425](https://github.com/magento/magento2/issues/29425) |
-| Michael Derlatka | [#28915](https://github.com/magento/magento2/pull/28915) | [26425](https://github.com/magento/magento2/issues/26425) |
+| Cristian Partia | [#29426](https://github.com/magento/magento2/pull/29426) | [29425](https://github.com/magento/magento2/issues/29425) |
+| Michał Derlatka | [#28915](https://github.com/magento/magento2/pull/28915) | [26425](https://github.com/magento/magento2/issues/26425) |
 | Oleh Usik | [#29832](https://github.com/magento/magento2/pull/29832) | [29843](https://github.com/magento/magento2/issues/29843) |
 | Oleh Usik | [#29830](https://github.com/magento/magento2/pull/29830) | [29845](https://github.com/magento/magento2/issues/29845) |
 | Oleh Usik | [#29829](https://github.com/magento/magento2/pull/29829) | [29846](https://github.com/magento/magento2/issues/29846) |
 | Oleh Usik | [#29828](https://github.com/magento/magento2/pull/29828) | [29847](https://github.com/magento/magento2/issues/29847) |
 | Oleh Usik | [#29821](https://github.com/magento/magento2/pull/29821) | [29824](https://github.com/magento/magento2/issues/29824) |
 | Oleh Usik | [#29820](https://github.com/magento/magento2/pull/29820) | [29823](https://github.com/magento/magento2/issues/29823) |
-| Deny Babenko | [#28343](https://github.com/magento/magento2/pull/28343) | [29067](https://github.com/magento/magento2/issues/29067) |
+| Denys Babenko | [#28343](https://github.com/magento/magento2/pull/28343) | [29067](https://github.com/magento/magento2/issues/29067) |
 | Bal | [#27269](https://github.com/magento/magento2/pull/27269) | [26288](https://github.com/magento/magento2/issues/26288) |
 | Andrii Kasian | [#27129](https://github.com/magento/magento2/pull/27129) | [25199](https://github.com/magento/magento2/issues/25199) |
 | Hazel Joie Caquicla | [#29875](https://github.com/magento/magento2/pull/29875) |  |
@@ -94,7 +94,7 @@ ht-degree: 0%
 | Tu Nguyen | [#29044](https://github.com/magento/magento2/pull/29044) | [29526](https://github.com/magento/magento2/issues/29526) |
 | Vinoth | [#28349](https://github.com/magento/magento2/pull/28349) |  |
 | bradleybrecher | [#27386](https://github.com/magento/magento2/pull/27386) | [29560](https://github.com/magento/magento2/issues/29560) |
-| Sergii Iouchtchenko | [#29921](https://github.com/magento/magento2/pull/29921) |  |
+| Sergii Ivashchenko | [#29921](https://github.com/magento/magento2/pull/29921) |  |
 | Hazel Joie Caquicla | [#29896](https://github.com/magento/magento2/pull/29896) |  |
 | Shankar Konar | [#29724](https://github.com/magento/magento2/pull/29724) | [29704](https://github.com/magento/magento2/issues/29704) |
 | Oleh Usik | [#28653](https://github.com/magento/magento2/pull/28653) | [29531](https://github.com/magento/magento2/issues/29531) |
@@ -106,22 +106,22 @@ ht-degree: 0%
 | Eden Duong | [#29276](https://github.com/magento/magento2/pull/29276) | [29336](https://github.com/magento/magento2/issues/29336) |
 | Mohamed-Asar | [#27896](https://github.com/magento/magento2/pull/27896) | [29098](https://github.com/magento/magento2/issues/29098) |
 | Honeymay Louiese Ignacio | [#29947](https://github.com/magento/magento2/pull/29947) |  |
-| toxix | [#29925](https://github.com/magento/magento2/pull/29925) | [28981](https://github.com/magento/magento2/issues/28981), [29879](https://github.com/magento/magento2/issues/29879) |
+| toxique | [#29925](https://github.com/magento/magento2/pull/29925) | [28981](https://github.com/magento/magento2/issues/28981), [29879](https://github.com/magento/magento2/issues/29879) |
 | Viktor Kopin | [#29906](https://github.com/magento/magento2/pull/29906) |  |
 | Olga Zakharchuk | [#29863](https://github.com/magento/magento2/pull/29863) | [29958](https://github.com/magento/magento2/issues/29958) |
 | Nikolaj Malevanec | [#29006](https://github.com/magento/magento2/pull/29006) | [12087](https://github.com/magento/magento2/issues/12087) |
-| Abdul Rahman Abouzaid | [#28687](https://github.com/magento/magento2/pull/28687) | [8538](https://github.com/magento/magento2/issues/8538) |
+| Abdul Rahman Abouzaid | [#28687](https://github.com/magento/magento2/pull/28687) | 8538 [](https://github.com/magento/magento2/issues/8538) |
 | KrielkipNL | [#27832](https://github.com/magento/magento2/pull/27832) | [11998](https://github.com/magento/magento2/issues/11998), [27500](https://github.com/magento/magento2/issues/27500) |
 | Gaurav Agarwal | [#27602](https://github.com/magento/magento2/pull/27602) | [27350](https://github.com/magento/magento2/issues/27350) |
-| Alexander Taranovski | [#27391](https://github.com/magento/magento2/pull/27391) | [29601](https://github.com/magento/magento2/issues/29601) |
+| Alexander Taranovsky | [#27391](https://github.com/magento/magento2/pull/27391) | [29601](https://github.com/magento/magento2/issues/29601) |
 | Stanislav Ilnytskyi | [#26877](https://github.com/magento/magento2/pull/26877) | [26876](https://github.com/magento/magento2/issues/26876) |
-| Sergii Iouchtchenko | [#29889](https://github.com/magento/magento2/pull/29889) |  |
+| Sergii Ivashchenko | [#29889](https://github.com/magento/magento2/pull/29889) |  |
 | Nazar Klovanych | [#29715](https://github.com/magento/magento2/pull/29715) | [1487](https://github.com/magento/magento2/issues/1487) |
 | Honeymay Louiese Ignacio | [#29543](https://github.com/magento/magento2/pull/29543) | [1724](https://github.com/magento/magento2/issues/1724) |
 | Oleh Usik | [#29833](https://github.com/magento/magento2/pull/29833) | [29839](https://github.com/magento/magento2/issues/29839) |
 | Porraphit Chuasuk | [#28896](https://github.com/magento/magento2/pull/28896) | [28892](https://github.com/magento/magento2/issues/28892) |
-| Vitali Prokopov | [#27857](https://github.com/magento/magento2/pull/27857) | [26976](https://github.com/magento/magento2/issues/26976) |
-| Edouard Chitoraga | [#29904](https://github.com/magento/magento2/pull/29904) |  |
+| Vitaliy Prokopov | [#27857](https://github.com/magento/magento2/pull/27857) | [26976](https://github.com/magento/magento2/issues/26976) |
+| Eduard Chitoraga | [#29904](https://github.com/magento/magento2/pull/29904) |  |
 | Hazel Joie Caquicla | [#30006](https://github.com/magento/magento2/pull/30006) |  |
 | Ihor Sviziev | [#29993](https://github.com/magento/magento2/pull/29993) | [30004](https://github.com/magento/magento2/issues/30004) |
 | Viktor Kopin | [#29959](https://github.com/magento/magento2/pull/29959) | [1813](https://github.com/magento/magento2/issues/1813) |
@@ -133,7 +133,7 @@ ht-degree: 0%
 | Hazel Joie Caquicla | [#29895](https://github.com/magento/magento2/pull/29895) |  |
 | ashokadewit | [#27446](https://github.com/magento/magento2/pull/27446) | [29603](https://github.com/magento/magento2/issues/29603) |
 | Pascal Brouwers | [#26527](https://github.com/magento/magento2/pull/26527) | [26526](https://github.com/magento/magento2/issues/26526) |
-| Sergii Iouchtchenko | [#30076](https://github.com/magento/magento2/pull/30076) |  |
+| Sergii Ivashchenko | [#30076](https://github.com/magento/magento2/pull/30076) |  |
 | Hazel Joie Caquicla | [#30044](https://github.com/magento/magento2/pull/30044) |  |
 | Viktor Kopin | [#29979](https://github.com/magento/magento2/pull/29979) | [1806](https://github.com/magento/magento2/issues/1806) |
 | Janusz Janczy | [#29934](https://github.com/magento/magento2/pull/29934) | [29933](https://github.com/magento/magento2/issues/29933) |
@@ -148,7 +148,7 @@ ht-degree: 0%
 | Oleh Usik | [#29835](https://github.com/magento/magento2/pull/29835) | [29842](https://github.com/magento/magento2/issues/29842) |
 | Oleh Usik | [#29834](https://github.com/magento/magento2/pull/29834) | [29838](https://github.com/magento/magento2/issues/29838) |
 | Evgeny Levinsky | [#27698](https://github.com/magento/magento2/pull/27698) | [28324](https://github.com/magento/magento2/issues/28324) |
-| Vadim Malesh | [#26470](https://github.com/magento/magento2/pull/26470) | [7720](https://github.com/magento/magento2/issues/7720) |
+| Vadim Malesh | [#26470](https://github.com/magento/magento2/pull/26470) | 7720 [](https://github.com/magento/magento2/issues/7720) |
 | Oleh Usik | [#30081](https://github.com/magento/magento2/pull/30081) | [30103](https://github.com/magento/magento2/issues/30103) |
 | Leandro F. L. | [#30014](https://github.com/magento/magento2/pull/30014) | [30013](https://github.com/magento/magento2/issues/30013) |
 | Taras Gamanov | [#29968](https://github.com/magento/magento2/pull/29968) | [24348](https://github.com/magento/magento2/issues/24348), [24400](https://github.com/magento/magento2/issues/24400) |
@@ -156,7 +156,7 @@ ht-degree: 0%
 | Ejaz Alam | [#29486](https://github.com/magento/magento2/pull/29486) | [29487](https://github.com/magento/magento2/issues/29487), [29502](https://github.com/magento/magento2/issues/29502) |
 | Oleh Usik | [#30030](https://github.com/magento/magento2/pull/30030) | [30032](https://github.com/magento/magento2/issues/30032) |
 | Eugene Shakhsuvarov | [#28117](https://github.com/magento/magento2/pull/28117) | [28116](https://github.com/magento/magento2/issues/28116) |
-| Serhii Dzepa | [#30095](https://github.com/magento/magento2/pull/30095) |  |
+| Serhii Dzhepa | [#30095](https://github.com/magento/magento2/pull/30095) |  |
 | Hazel Joie Caquicla | [#30057](https://github.com/magento/magento2/pull/30057) |  |
 | Hazel Joie Caquicla | [#30034](https://github.com/magento/magento2/pull/30034) |  |
 | Marcos Trama | [#29972](https://github.com/magento/magento2/pull/29972) | [29984](https://github.com/magento/magento2/issues/29984) |
@@ -179,8 +179,8 @@ ht-degree: 0%
 | Zach Nanninga | [#28379](https://github.com/magento/magento2/pull/28379) | [27397](https://github.com/magento/magento2/issues/27397) |
 | Bünyamin | [#27869](https://github.com/magento/magento2/pull/27869) | [27866](https://github.com/magento/magento2/issues/27866) |
 | Eden Duong | [#27585](https://github.com/magento/magento2/pull/27585) | [29599](https://github.com/magento/magento2/issues/29599) |
-| David Haecker | [#30096](https://github.com/magento/magento2/pull/30096) | [322](https://github.com/magento/magento2/issues/322) |
-| Yaroslav Garmash | [#30075](https://github.com/magento/magento2/pull/30075) | [312](https://github.com/magento/magento2/issues/312) |
+| David Haecker | [#30096](https://github.com/magento/magento2/pull/30096) | 322 [](https://github.com/magento/magento2/issues/322) |
+| Yaroslav Garmash | [#30075](https://github.com/magento/magento2/pull/30075) | 312 [](https://github.com/magento/magento2/issues/312) |
 | John Carlo Octabio | [#30028](https://github.com/magento/magento2/pull/30028) |  |
 | Frédéric MARTINEZ | [#30182](https://github.com/magento/magento2/pull/30182) | [30191](https://github.com/magento/magento2/issues/30191) |
 | Ihor Sviziev | [#30170](https://github.com/magento/magento2/pull/30170) | [30146](https://github.com/magento/magento2/issues/30146) |
@@ -194,13 +194,13 @@ ht-degree: 0%
 | Kate Kyzyma | [#30217](https://github.com/magento/magento2/pull/30217) |  |
 | Nikita Sarychev | [#30172](https://github.com/magento/magento2/pull/30172) | [30173](https://github.com/magento/magento2/issues/30173) |
 | Tu Nguyen | [#30108](https://github.com/magento/magento2/pull/30108) |  |
-| Alexandre Menk | [#29205](https://github.com/magento/magento2/pull/29205) | [29174](https://github.com/magento/magento2/issues/29174), [30240](https://github.com/magento/magento2/issues/30240) |
+| Alexander Menk | [#29205](https://github.com/magento/magento2/pull/29205) | [29174](https://github.com/magento/magento2/issues/29174), [30240](https://github.com/magento/magento2/issues/30240) |
 | Barny Shergold | [#28676](https://github.com/magento/magento2/pull/28676) | [28633](https://github.com/magento/magento2/issues/28633) |
 | Jonas Hünig | [#28516](https://github.com/magento/magento2/pull/28516) | [29662](https://github.com/magento/magento2/issues/29662) |
 | Tu Nguyen | [#28177](https://github.com/magento/magento2/pull/28177) | [30237](https://github.com/magento/magento2/issues/30237) |
-| Alexander Taranovski | [#27939](https://github.com/magento/magento2/pull/27939) | [30031](https://github.com/magento/magento2/issues/30031) |
+| Alexander Taranovsky | [#27939](https://github.com/magento/magento2/pull/27939) | [30031](https://github.com/magento/magento2/issues/30031) |
 | David Manners | [#27581](https://github.com/magento/magento2/pull/27581) | [29598](https://github.com/magento/magento2/issues/29598) |
-| Navarre Barnier | [#27077](https://github.com/magento/magento2/pull/27077) | [29558](https://github.com/magento/magento2/issues/29558) |
+| Navar Barnier | [#27077](https://github.com/magento/magento2/pull/27077) | [29558](https://github.com/magento/magento2/issues/29558) |
 | kolaente | [#30180](https://github.com/magento/magento2/pull/30180) | [30190](https://github.com/magento/magento2/issues/30190) |
 | Peep van Puijenbroek | [#29466](https://github.com/magento/magento2/pull/29466) | [29652](https://github.com/magento/magento2/issues/29652) |
 | Frédéric MARTINEZ | [#28588](https://github.com/magento/magento2/pull/28588) |
@@ -208,7 +208,7 @@ ht-degree: 0%
 | Oleh Usik | [#30222](https://github.com/magento/magento2/pull/30222) |  |
 | Timon de Groot | [#28809](https://github.com/magento/magento2/pull/28809) | [22375](https://github.com/magento/magento2/issues/22375) |
 | Nirav Patel | [#28385](https://github.com/magento/magento2/pull/28385) | [30345](https://github.com/magento/magento2/issues/30345) |
-| Dan Wallis | [#27940](https://github.com/magento/magento2/pull/27940) | [2955](https://github.com/magento/magento2/issues/29555) |
+| Dan Wallis | [#27940](https://github.com/magento/magento2/pull/27940) | [29555](https://github.com/magento/magento2/issues/29555) |
 | Sean van Zuidam | [#30065](https://github.com/magento/magento2/pull/30065) | [30064](https://github.com/magento/magento2/issues/30064) |
 | Tu Nguyen | [#30008](https://github.com/magento/magento2/pull/30008) | [30036](https://github.com/magento/magento2/issues/30036) |
 | Tu Nguyen | [#29726](https://github.com/magento/magento2/pull/29726) | [29719](https://github.com/magento/magento2/issues/29719) |
@@ -234,24 +234,24 @@ ht-degree: 0%
 | Tu Nguyen | [#30454](https://github.com/magento/magento2/pull/30454) | [30496](https://github.com/magento/magento2/issues/30496) |
 | solwininfotech | [#30405](https://github.com/magento/magento2/pull/30405) | [26133](https://github.com/magento/magento2/issues/26133) |
 | Bartłomiej Szubert | [#30355](https://github.com/magento/magento2/pull/30355) | [30296](https://github.com/magento/magento2/issues/30296) |
-| Serhii Dzepa | [#30554](https://github.com/magento/magento2/pull/30554) |  |
-| Alin Alexandra | [#30340](https://github.com/magento/magento2/pull/30340) | [30508](https://github.com/magento/magento2/issues/30508) |
+| Serhii Dzhepa | [#30554](https://github.com/magento/magento2/pull/30554) |  |
+| Alin Alexandru | [#30340](https://github.com/magento/magento2/pull/30340) | [30508](https://github.com/magento/magento2/issues/30508) |
 | Oleh Usik | [#29868](https://github.com/magento/magento2/pull/29868) | [30061](https://github.com/magento/magento2/issues/30061) |
 | guillaume quintard | [#28928](https://github.com/magento/magento2/pull/28928) | [29988](https://github.com/magento/magento2/issues/29988) |
 | Par | [#28172](https://github.com/magento/magento2/pull/28172) | [27925](https://github.com/magento/magento2/issues/27925) |
 | Bartłomiej Szubert | [#28157](https://github.com/magento/magento2/pull/28157) | [22503](https://github.com/magento/magento2/issues/22503), [24091](https://github.com/magento/magento2/issues/24091) |
-| Nikolaï Sumrak | [#27672](https://github.com/magento/magento2/pull/27672) | [29552](https://github.com/magento/magento2/issues/29552) |
+| Nikolay Sumrak | [#27672](https://github.com/magento/magento2/pull/27672) | [29552](https://github.com/magento/magento2/issues/29552) |
 | Jonas Hünig | [#30502](https://github.com/magento/magento2/pull/30502) | [30566](https://github.com/magento/magento2/issues/30566) |
 | Yaroslav Bogutsky | [#30493](https://github.com/magento/magento2/pull/30493) | [30510](https://github.com/magento/magento2/issues/30510) |
 | Tu Nguyen | [#30453](https://github.com/magento/magento2/pull/30453) | [30542](https://github.com/magento/magento2/issues/30542) |
 | Sunil Patel | [#30402](https://github.com/magento/magento2/pull/30402) | [30388](https://github.com/magento/magento2/issues/30388) |
 | Oleh Usik | [#30079](https://github.com/magento/magento2/pull/30079) |  |
 | Jeroen | [#29911](https://github.com/magento/magento2/pull/29911) | [29915](https://github.com/magento/magento2/issues/29915) |
-| Hôte du pipeline | [#29196](https://github.com/magento/magento2/pull/29196) | [29297](https://github.com/magento/magento2/issues/29297), [29478](https://github.com/magento/magento2/issues/29478) |
+| Pieter Hoste | [#29196](https://github.com/magento/magento2/pull/29196) | [29297](https://github.com/magento/magento2/issues/29297), [29478](https://github.com/magento/magento2/issues/29478) |
 | Johan Lindahl | [#28917](https://github.com/magento/magento2/pull/28917) | [29656](https://github.com/magento/magento2/issues/29656) |
 | Bartosz Kubicki | [#26967](https://github.com/magento/magento2/pull/26967) | [29615](https://github.com/magento/magento2/issues/29615) |
 | Ejaz Alam | [#30579](https://github.com/magento/magento2/pull/30579) | [30545](https://github.com/magento/magento2/issues/30545) |
-| Hôte du pipeline | [#30570](https://github.com/magento/magento2/pull/30570) | [6868](https://github.com/magento/magento2/issues/6868), [7252](https://github.com/magento/magento2/issues/7252), [13316](https://github.com/magento/magento2/issues/13316) |
+| Pieter Hoste | [#30570](https://github.com/magento/magento2/pull/30570) | [6868](https://github.com/magento/magento2/issues/6868), [7252](https://github.com/magento/magento2/issues/7252), [13316](https://github.com/magento/magento2/issues/13316) |
 | Namrata | [#30538](https://github.com/magento/magento2/pull/30538) | [30550](https://github.com/magento/magento2/issues/30550) |
 | Pratik Oza | [#30530](https://github.com/magento/magento2/pull/30530) | [30552](https://github.com/magento/magento2/issues/30552) |
 | Andrii Kasian | [#30521](https://github.com/magento/magento2/pull/30521) | [30563](https://github.com/magento/magento2/issues/30563) |
@@ -260,11 +260,11 @@ ht-degree: 0%
 | Stanislav Ilnytskyi | [#30198](https://github.com/magento/magento2/pull/30198) | [30601](https://github.com/magento/magento2/issues/30601) |
 | Cyildirim | [#28352](https://github.com/magento/magento2/pull/28352) | [28124](https://github.com/magento/magento2/issues/28124) |
 | Andrii Beziazychnyi | [#30633](https://github.com/magento/magento2/pull/30633) | [30469](https://github.com/magento/magento2/issues/30469) |
-| Edouard Chitoraga | [#30619](https://github.com/magento/magento2/pull/30619) | [30468](https://github.com/magento/magento2/issues/30468) |
+| Eduard Chitoraga | [#30619](https://github.com/magento/magento2/pull/30619) | [30468](https://github.com/magento/magento2/issues/30468) |
 | Sudheer Singamsetti | [#30375](https://github.com/magento/magento2/pull/30375) | [30349](https://github.com/magento/magento2/issues/30349) |
-| Sagar Dahiwala | [#30368](https://github.com/magento/magento2/pull/30368) | [325](https://github.com/magento/magento2/issues/325) |
+| Sagar Dahiwala | [#30368](https://github.com/magento/magento2/pull/30368) | 325 [](https://github.com/magento/magento2/issues/325) |
 | Nikolaj Malevanec | [#30763](https://github.com/magento/magento2/pull/30763) | [30747](https://github.com/magento/magento2/issues/30747) |
-| Dmitri Tsymbal | [#30359](https://github.com/magento/magento2/pull/30359) | [30372](https://github.com/magento/magento2/issues/30372) |
+| Dmitry Tsymbal | [#30359](https://github.com/magento/magento2/pull/30359) | [30372](https://github.com/magento/magento2/issues/30372) |
 | Oleh Usik | [#30223](https://github.com/magento/magento2/pull/30223) | [30683](https://github.com/magento/magento2/issues/30683) |
 | Lukasz Bajsarowicz | [#28147](https://github.com/magento/magento2/pull/28147) | [28309](https://github.com/magento/magento2/issues/28309) |
 | Matei Purcaru | [#27972](https://github.com/magento/magento2/pull/27972) | [27954](https://github.com/magento/magento2/issues/27954) |
@@ -273,7 +273,7 @@ ht-degree: 0%
 | Simon Sprankel | [#26401](https://github.com/magento/magento2/pull/26401) | [29621](https://github.com/magento/magento2/issues/29621) |
 | Gabriel da Gama | [#30895](https://github.com/magento/magento2/pull/30895) | [30896](https://github.com/magento/magento2/issues/30896) |
 | Samuel Caçador | [#30793](https://github.com/magento/magento2/pull/30793) | [30833](https://github.com/magento/magento2/issues/30833) |
-| Vova Yatsyuk | [#30774](https://github.com/magento/magento2/pull/30774) | [30781](https://github.com/magento/magento2/issues/30781), [197](https://github.com/magento/magento2/issues/197) |
+| Vova Yatsyuk | [#30774](https://github.com/magento/magento2/pull/30774) | [30781](https://github.com/magento/magento2/issues/30781) [197](https://github.com/magento/magento2/issues/197) |
 | Diego Sanabria | [#30681](https://github.com/magento/magento2/pull/30681) | [30680](https://github.com/magento/magento2/issues/30680) |
 | Evgen Mozok | [#30632](https://github.com/magento/magento2/pull/30632) | [24730](https://github.com/magento/magento2/issues/24730) |
 | Sanjay Patel | [#30411](https://github.com/magento/magento2/pull/30411) | [30408](https://github.com/magento/magento2/issues/30408) |
@@ -299,7 +299,7 @@ ht-degree: 0%
 | Oleh Usik | [#30779](https://github.com/magento/magento2/pull/30779) | [30782](https://github.com/magento/magento2/issues/30782) |
 | Nazar Klovanych | [#30662](https://github.com/magento/magento2/pull/30662) | [30649](https://github.com/magento/magento2/issues/30649) |
 | Oleh Usik | [#30529](https://github.com/magento/magento2/pull/30529) | [30926](https://github.com/magento/magento2/issues/30926) |
-| March Denchev | [#30614](https://github.com/magento/magento2/pull/30614) | [30104](https://github.com/magento/magento2/issues/30104) |
+| Marush Denchev | [#30614](https://github.com/magento/magento2/pull/30614) | [30104](https://github.com/magento/magento2/issues/30104) |
 | Lachlan | [#29692](https://github.com/magento/magento2/pull/29692) | [30243](https://github.com/magento/magento2/issues/30243) |
 | Viktor Kopin | [#30947](https://github.com/magento/magento2/pull/30947) | [29128](https://github.com/magento/magento2/issues/29128) |
 | Andrii Kalinich | [#30807](https://github.com/magento/magento2/pull/30807) | [26432](https://github.com/magento/magento2/issues/26432) |

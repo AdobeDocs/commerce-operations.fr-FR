@@ -1,6 +1,6 @@
 ---
 title: Configurer et utiliser le vernis
-description: Découvrez comment Varnish stocke les fichiers et améliore le trafic HTTP.
+description: Découvrez comment Varnish stocke des fichiers et améliore le trafic HTTP.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
@@ -12,50 +12,50 @@ ht-degree: 0%
 
 # Configurer le vernis
 
-[Varnish Cache] est un accélérateur d’applications web open source (également appelé _accélérateur HTTP_ ou _proxy inverse HTTP de mise en cache_). Le vernis stocke (ou met en cache) des fichiers ou des fragments de fichiers en mémoire, ce qui permet à Varnish de réduire le temps de réponse et la consommation de bande passante du réseau lors de futures demandes équivalentes. Contrairement aux serveurs web tels qu&#39;Apache et nginx, Varnish a été conçu pour être utilisé exclusivement avec le protocole HTTP.
+[Varnish Cache] est un accélérateur d’applications web open source (également appelé _accélérateur HTTP_ ou _proxy inverse HTTP de mise en cache_). Varnish stocke (ou met en cache) des fichiers ou des fragments de fichiers en mémoire, ce qui permet à Varnish de réduire le temps de réponse et la consommation de bande passante du réseau pour les futures demandes équivalentes. Contrairement aux serveurs web Apache et Nginx, Varnish a été conçu pour être utilisé exclusivement avec le protocole HTTP.
 
-[Configuration requise](../../installation/system-requirements.md) répertorie les versions de vernis prises en charge.
+[Configuration requise](../../installation/system-requirements.md) répertorie les versions prises en charge de Vernis.
 
 >[!WARNING]
 >
->Nous _vous recommandons vivement_ d’utiliser du vernis en production. La mise en cache de la page entière intégrée (au système de fichiers ou à la [base de données](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)) est beaucoup plus lente que Varnish et Varnish est conçue pour accélérer le trafic HTTP.
+>Nous vous _recommandons vivement_ d&#39;utiliser le vernis en production. La mise en cache de pleine page intégrée, vers le système de fichiers ou la [base de données](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/), est beaucoup plus lente que Varnish, qui est conçu pour accélérer le trafic HTTP.
 
-Pour plus d’informations sur le vernis, voir :
+Pour plus d&#39;informations sur le vernis, voir :
 
-- [ The Big Varnish Picture]
-- [Options de démarrage de vernis]
-- [Performance de vernis et de site web]
+- [Le Grand Vernis]
+- [Options de démarrage avec vernis]
+- [Vernis et performances de site web]
 
-## Diagramme de topologie vernale
+## Diagramme de topologie de vernis
 
-La figure suivante présente une vue de base du vernis dans votre topologie Commerce.
+La figure suivante présente une vue de base de Varnish dans votre topologie Commerce.
 
 ![Diagramme de vernis de base](../../assets/configuration/varnish-basic.png)
 
-Dans la figure précédente, les requêtes HTTP des utilisateurs sur Internet génèrent de nombreuses requêtes de CSS, d’HTML, de JavaScript et d’images (appelées collectivement _ressources_). Varnish se trouve devant le serveur web et envoie ces requêtes par proxy au serveur web.
+Dans la figure précédente, les requêtes HTTP des utilisateurs sur Internet entraînent de nombreuses requêtes pour les CSS, HTML, JavaScript et les images (appelées collectivement _ressources_). Varnish se trouve en face du serveur web et envoie par proxy ces requêtes au serveur web.
 
-Lorsque le serveur web renvoie des ressources, les ressources pouvant être mises en cache sont stockées en vernis. Toutes les demandes suivantes pour ces ressources sont satisfaites par Varnish (ce qui signifie que les demandes n’atteignent pas le serveur web). Le vernis renvoie extrêmement rapidement le contenu mis en cache. Les résultats se traduisent par des temps de réponse plus rapides pour renvoyer le contenu aux utilisateurs et un nombre réduit de requêtes qui doivent être satisfaites par Commerce.
+Lorsque le serveur web renvoie des ressources, les ressources pouvant être mises en cache sont stockées en vernis. Toutes les demandes ultérieures pour ces ressources sont traitées par Varnish (en d’autres termes, les demandes n’atteignent pas le serveur web). Le vernis renvoie le contenu mis en cache extrêmement rapidement. Vous obtiendrez ainsi des temps de réponse plus rapides pour renvoyer le contenu aux utilisateurs et utilisatrices, ainsi qu’un nombre réduit de requêtes qui doivent être satisfaites par Commerce.
 
-Les Assets mises en cache par Varnish expirent à un intervalle configurable ou sont remplacées par de nouvelles versions des mêmes ressources. Vous pouvez également effacer le cache manuellement à l’aide de la commande Admin ou [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) .
+Les Assets mises en cache par Vernis expirent à un intervalle configurable ou sont remplacées par de nouvelles versions des mêmes ressources. Vous pouvez également vider le cache manuellement à l’aide de la commande Admin ou [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) .
 
-## Présentation des processus
+## Présentation du processus
 
-Cette rubrique explique comment installer initialement le vernis avec un ensemble minimal de paramètres et tester son fonctionnement. Ensuite, exportez une configuration de vernis à partir de l’administrateur Commerce et testez-la à nouveau.
+Cette rubrique explique comment installer initialement Varnish avec un jeu minimal de paramètres et tester son fonctionnement. Ensuite, exportez une configuration de vernis à partir de l’administration Commerce et testez-la à nouveau.
 
 Le processus peut être résumé comme suit :
 
-1. Installez le vernis et testez-le en accédant à n’importe quelle page Commerce pour vérifier si vous obtenez des en-têtes de réponse HTTP indiquant que le vernis fonctionne.
-1. Installez le logiciel Commerce et utilisez l’administrateur pour créer un fichier de configuration de vernis.
-1. Remplacez votre fichier de configuration de vernis existant par celui généré par l’administrateur.
+1. Installez le vernis et testez-le en accédant à n’importe quelle page Commerce pour voir si vous obtenez des en-têtes de réponse HTTP indiquant que le vernis fonctionne.
+1. Installez le logiciel Commerce et utilisez l&#39;Admin pour créer un fichier de configuration Varnish.
+1. Remplacez votre fichier de configuration de vernis existant par celui généré par l&#39;administrateur.
 1. Testez à nouveau tout.
 
-   Si votre répertoire `<magento_root>/var/page_cache` ne contient rien, vous avez correctement configuré le vernis avec Commerce !
+   S&#39;il n&#39;y a rien dans votre répertoire `<magento_root>/var/page_cache`, vous avez correctement configuré Varnish avec Commerce !
 
 >[!NOTE]
 >
->- Sauf indication contraire, vous devez saisir toutes les commandes abordées dans cette rubrique en tant qu’utilisateur disposant de droits `root`.
+>- Sauf indication contraire, vous devez saisir toutes les commandes décrites dans cette rubrique en tant qu’utilisateur disposant de droits d’`root`.
 >
->- Cette rubrique est écrite pour le vernis sur CentOS et Apache 2.4. Si vous définissez le vernis dans un autre environnement, certaines commandes peuvent être différentes. Pour plus d’informations, consultez la documentation de vernis .
+>- Cette rubrique a été écrite pour Varnish sur CentOS et Apache 2.4. Si vous configurez le vernis dans un environnement différent, certaines commandes peuvent être différentes. Consultez la documentation de Varnish pour plus d’informations.
 
 ## Problèmes connus
 
@@ -76,7 +76,7 @@ Nous connaissons les problèmes suivants avec le vernis :
   Varnish cache server
   ```
 
-  Si vous rencontrez cette erreur, modifiez `default.vcl` et ajoutez un délai d’attente à la barre d’état `backend` comme suit :
+  Si vous rencontrez cette erreur, modifiez les `default.vcl` et ajoutez un délai d’expiration à la stature `backend` comme suit :
 
   ```conf
   backend default {
@@ -86,37 +86,37 @@ Nous connaissons les problèmes suivants avec le vernis :
   }
   ```
 
-## Présentation de la mise en cache de vernis
+## Présentation de la mise en cache du vernis
 
-La mise en cache de vernis fonctionne avec Commerce en utilisant :
+La mise en cache des vernis fonctionne avec Commerce à l’aide des éléments suivants :
 
-- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) à partir du référentiel GitHub de Magento 2
+- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) du référentiel GitHub de Magento 2
 - `.htaccess` fichier de configuration distribué pour Apache fourni avec Commerce
-- `default.vcl` configuration pour le vernis généré à l’aide de [Admin](../cache/configure-varnish-commerce.md)
+- Configuration `default.vcl` pour le vernis générée à l’aide de l’[Admin](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
 >
->Cette rubrique couvre uniquement les options par défaut de la liste précédente. Il existe de nombreuses autres façons de configurer la mise en cache dans des scénarios complexes (par exemple, l’utilisation d’un réseau de diffusion de contenu). Ces méthodes vont au-delà de la portée de ce guide.
+>Cette rubrique ne couvre que les options par défaut de la liste précédente. Il existe de nombreuses autres façons de configurer la mise en cache dans des scénarios complexes (par exemple, à l’aide d’un réseau de diffusion de contenu) ; ces méthodes ne font pas partie de ce guide.
 
-Lors de la première demande de navigateur, les ressources pouvant être mises en cache sont diffusées à partir du navigateur client à partir de Varnish et mises en cache sur le navigateur.
+Lors de la première requête du navigateur, les ressources pouvant être mises en cache sont diffusées au navigateur client à partir de Varnish et mises en cache dans le navigateur.
 
-En outre, Varnish utilise une balise d’entité (ETag) pour les ressources statiques. L’ETag permet de déterminer le moment où les fichiers statiques changent sur le serveur. Par conséquent, les ressources statiques sont envoyées au client lorsqu’il change sur le serveur, soit à une nouvelle demande d’un navigateur, soit lorsque le client actualise le cache du navigateur, généralement en appuyant sur F5 ou Ctrl+F5.
+En outre, Varnish utilise une balise d’entité (ETag) pour les ressources statiques. L’ETag permet de déterminer à quel moment les fichiers statiques changent sur le serveur. Par conséquent, les ressources statiques sont envoyées au client lorsqu’elles sont modifiées sur le serveur, soit lors d’une nouvelle demande d’un navigateur, soit lorsque le client actualise le cache du navigateur, généralement en appuyant sur F5 ou Contrôle+F5.
 
 Vous trouverez plus de détails dans les sections suivantes.
 
-## Mise en cache par requête du navigateur
+## Mise en cache par requête de navigateur
 
-Cette section utilise un inspecteur de navigateur pour montrer comment les ressources sont diffusées au navigateur dans la première requête et chargées ensuite à partir du cache du navigateur local.
+Cette section utilise un inspecteur de navigateur pour afficher la manière dont les ressources sont diffusées au navigateur dans la première requête, puis chargées à partir du cache du navigateur local.
 
-### Première requête du navigateur
+### Première requête de navigateur
 
-`nginx.conf.sample` et `.htaccess` fournissent des options pour la mise en cache du client. Lorsque la première requête est effectuée à partir d’un navigateur pour un objet pouvant être mis en cache, Varnish la transmet au client.
+`nginx.conf.sample` et `.htaccess` fournissent des options de mise en cache du client. Lorsque la première requête est effectuée à partir d’un navigateur pour un objet pouvant être mis en cache, Varnish la diffuse au client.
 
 La figure suivante illustre un exemple d’utilisation d’un inspecteur de navigateur :
 
-![La première fois qu’une requête est faite pour un objet pouvant être mis en cache, Varnish la transmet au navigateur](../../assets/configuration/varnish-apache-first-visit.png)
+![La première fois qu’une demande est envoyée pour un objet pouvant être mis en cache, Varnish la transmet au navigateur](../../assets/configuration/varnish-apache-first-visit.png)
 
-L’exemple précédent illustre une requête pour la page principale storefront (`m2_ce_my`). Les ressources CSS et JavaScript sont mises en cache dans le navigateur client.
+L’exemple précédent illustre une requête pour la page principale de storefront (`m2_ce_my`). Les ressources CSS et JavaScript sont mises en cache dans le navigateur client.
 
 >[!NOTE]
 >
@@ -126,30 +126,30 @@ L’exemple précédent illustre une requête pour la page principale storefront
 
 Si le même navigateur demande à nouveau la même page, ces ressources sont diffusées à partir du cache du navigateur local, comme le montre la figure suivante.
 
-![La prochaine fois que le même objet sera demandé, les ressources seront chargées à partir du cache du navigateur local](../../assets/configuration/varnish-apache-second-visit.png)
+![La prochaine fois que le même objet est demandé, les ressources se chargent à partir du cache du navigateur local](../../assets/configuration/varnish-apache-second-visit.png)
 
-Notez la différence de temps de réponse entre la première et la seconde requête. Là encore, les ressources statiques ont un code de réponse 200 (OK), car elles sont diffusées pour la première fois à partir du cache local.
+Notez la différence de temps de réponse entre la première et la seconde requête. Là encore, les ressources statiques ont un code de réponse 200 (OK), car elles sont diffusées à partir du cache local pour la première fois.
 
 ## Utilisation d’Etag par Commerce
 
-L’exemple suivant montre les en-têtes de réponse d’une ressource statique spécifique.
+L’exemple suivant illustre les en-têtes de réponse pour une ressource statique spécifique.
 
-![L’ETag facilite la détermination d’une ressource statique modifiée ou non](../../assets/configuration/varnish-etag.png)
+![L’ETag permet de déterminer plus facilement si une ressource statique a changé ou non](../../assets/configuration/varnish-etag.png)
 
-`calendar.css` comporte un en-tête de réponse ETag, ce qui signifie que le fichier CSS sur le navigateur client peut être comparé à celui sur le serveur.
+`calendar.css` comporte un en-tête de réponse ETag, ce qui signifie que le fichier CSS du navigateur client peut être comparé à celui du serveur.
 
 En outre, les ressources statiques sont renvoyées avec un code d’état HTTP 304 (Non modifié), comme le montre la figure suivante.
 
-![Le code de réponse HTTP 304 (non modifié) indique que la ressource statique dans le cache local est la même que sur le serveur](../../assets/configuration/varnish-304.png)
+![Le code de réponse HTTP 304 (Non modifié) indique que la ressource statique dans le cache local est la même que sur le serveur](../../assets/configuration/varnish-304.png)
 
-Le code d’état 304 se produit car l’utilisateur a invalidé son cache local et le contenu sur le serveur n’a pas changé. En raison du code d’état 304, la ressource statique _content_ n’est pas transférée ; seuls les en-têtes HTTP sont téléchargés vers le navigateur.
+Le code d’état 304 se produit, car l’utilisateur a invalidé son cache local et le contenu sur le serveur n’a pas été modifié. En raison du code d’état 304, la ressource statique _content_ n’est pas transférée ; seuls les en-têtes HTTP sont téléchargés sur le navigateur.
 
-Si le contenu change sur le serveur, le client télécharge la ressource statique avec un code d’état HTTP 200 (OK) et un nouveau ETag.
+Si le contenu change sur le serveur, le client télécharge la ressource statique avec un code d’état HTTP 200 (OK) et un nouvel ETag.
 
 <!-- Link Definitions -->
 
-[L&#39;image du grand vernis]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
+[Le Grand Tableau Verni]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
 [Cache de vernis]: https://varnish-cache.org
-[Options de démarrage en pointillés]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options
-[Performances et performances du site web]: https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance
+[Options de démarrage du vernis]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options
+[Vernis et performances de site web]: https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance
 [Le vernis ne prend pas en charge SSL]: https://www.varnish-cache.org/docs/3.0/phk/ssl.html

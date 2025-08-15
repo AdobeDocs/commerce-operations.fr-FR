@@ -1,8 +1,8 @@
 ---
-title: Écriture dans le fichier journal personnalisé
+title: Écrire dans un fichier journal personnalisé
 description: Découvrez comment configurer des fichiers journaux personnalisés.
 feature: Configuration, Logs
-badge: label="Contribution d’Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
+badge: label="Contribution Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
 source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Écriture dans un fichier journal personnalisé
+# Écrire dans un fichier journal personnalisé
 
-Le module `Magento\Framework\Logger` contient les classes de gestionnaires suivantes :
+Le module `Magento\Framework\Logger` contient les classes de gestionnaire suivantes :
 
 | Classe | Fichier journal |
 | ----- | -------- |
@@ -27,12 +27,12 @@ Vous pouvez les trouver dans le répertoire `lib/internal/Magento/Framework/Logg
 
 Vous pouvez utiliser l’une des méthodes suivantes pour vous connecter à un fichier personnalisé :
 
-- Configurez un fichier journal personnalisé dans le `di.xml`
-- Configuration d’un fichier personnalisé dans la classe de gestionnaire de journalisation personnalisée
+- Configurer un fichier journal personnalisé dans le `di.xml`
+- Configurer un fichier personnalisé dans la classe de gestionnaire d’enregistreur personnalisé
 
-## Configurez un fichier journal personnalisé dans le `di.xml`
+## Configurer un fichier journal personnalisé dans le `di.xml`
 
-Cet exemple montre comment utiliser des [types virtuels](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) pour consigner des messages `debug` dans un fichier journal personnalisé au lieu d&#39;un `/var/log/debug.log` standard.
+Cet exemple montre comment utiliser [les types virtuels](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) pour consigner des messages `debug` dans un fichier journal personnalisé au lieu d&#39;un `/var/log/debug.log` standard.
 
 1. Dans le fichier `di.xml` de votre module, définissez un fichier journal personnalisé en tant que [type virtuel](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
 
@@ -58,7 +58,7 @@ Cet exemple montre comment utiliser des [types virtuels](https://developer.adobe
    </virtualType>
    ```
 
-1. injectez le `MyCustomLogger` [type virtuel](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) dans l’objet `Magento\Payment\Model\Method\Logger` :
+1. Insérez le `MyCustomLogger` [type virtuel](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) dans l’objet `Magento\Payment\Model\Method\Logger` :
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -68,7 +68,7 @@ Cet exemple montre comment utiliser des [types virtuels](https://developer.adobe
    </type>
    ```
 
-1. La classe virtuelle `Magento\Payment\Model\Method\MyCustomDebug` est injectée dans le gestionnaire `debug` de la propriété `$logger` de la classe `Magento\Payment\Model\Method\Logger`.
+1. Le `Magento\Payment\Model\Method\MyCustomDebug` de classe virtuel est injecté dans le gestionnaire de `debug` de la propriété `$logger` dans la classe `Magento\Payment\Model\Method\Logger`.
 
    ```xml
    ...
@@ -79,11 +79,11 @@ Cet exemple montre comment utiliser des [types virtuels](https://developer.adobe
 
 Les messages d’exception sont consignés dans le fichier `/var/log/payment.log`.
 
-## Configuration d’un fichier journal personnalisé dans la classe du gestionnaire de journalisation
+## Configurez un fichier journal personnalisé dans la classe de gestionnaire d’enregistreur
 
-Cet exemple montre comment utiliser une classe de gestionnaire de journalisation personnalisée pour consigner des messages `error` dans un fichier journal spécifique.
+Cet exemple montre comment utiliser une classe de gestionnaire d’enregistreur personnalisée pour consigner les messages `error` dans un fichier journal spécifique.
 
-1. Créez une classe qui consigne les données. Dans cet exemple, la classe est définie dans `app/code/Vendor/ModuleName/Logger/Handler/ErrorHandler.php`.
+1. Créez une classe qui enregistre les données. Dans cet exemple, la classe est définie dans `app/code/Vendor/ModuleName/Logger/Handler/ErrorHandler.php`.
 
    ```php
    <?php
@@ -117,7 +117,7 @@ Cet exemple montre comment utiliser une classe de gestionnaire de journalisation
    }
    ```
 
-1. Définissez le gestionnaire de cette classe comme [type virtuel](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) dans le fichier `di.xml` du module.
+1. Définissez le gestionnaire de cette classe en tant que [type virtuel](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) dans le fichier `di.xml` du module.
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -131,7 +131,7 @@ Cet exemple montre comment utiliser une classe de gestionnaire de journalisation
 
    `MyCustomLogger` est un identifiant unique.
 
-1. Dans la définition de `type`, spécifiez le nom de classe où le gestionnaire de journalisation personnalisé est injecté. Utilisez le nom de type virtuel de l’étape précédente comme argument pour ce type.
+1. Dans la définition de `type`, spécifiez le nom de la classe dans laquelle le gestionnaire d’enregistreur personnalisé est injecté. Utilisez le nom du type virtuel de l’étape précédente comme argument pour ce type.
 
    ```xml
    <type name="Vendor\ModuleName\Observer\MyObserver">
@@ -193,7 +193,7 @@ Cet exemple montre comment utiliser une classe de gestionnaire de journalisation
    }
    ```
 
-1. La classe `Vendor\ModuleName\Logger\Handler\ErrorHandler` est injectée dans le gestionnaire `error` de la propriété `$logger` dans le `Vendor\ModuleName\Observer\MyObserver`.
+1. Le `Vendor\ModuleName\Logger\Handler\ErrorHandler` de classe est injecté dans le gestionnaire de `error` de la propriété `$logger` dans le `Vendor\ModuleName\Observer\MyObserver` .
 
    ```xml
    ...

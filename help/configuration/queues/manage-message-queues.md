@@ -1,6 +1,6 @@
 ---
-title: Gestion des files d’attente de messages
-description: Découvrez comment gérer les files d’attente de messages à partir de la ligne de commande d’Adobe Commerce.
+title: Gérer les files d'attente de messages
+description: Découvrez comment gérer les files d’attente de messages à partir de la ligne de commande pour Adobe Commerce.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
 source-git-commit: 8dce1f1e961ec02d7783a7423a51a7d4567dce79
 workflow-type: tm+mt
@@ -9,15 +9,15 @@ ht-degree: 0%
 
 ---
 
-# Gestion des files d’attente de messages
+# Gérer les files d&#39;attente de messages
 
 Vous pouvez gérer les files d’attente de messages à partir de la ligne de commande à l’aide de tâches cron ou d’un gestionnaire de processus externe pour vous assurer que les consommateurs récupèrent les messages.
 
 ## Gestion des processus
 
-Les tâches Cron sont le mécanisme par défaut pour redémarrer les consommateurs. Les processus démarrés par `cron` utilisent le nombre spécifié de messages, puis s’arrêtent. La réexécution de `cron` redémarre le consommateur.
+Les tâches cron constituent le mécanisme par défaut pour redémarrer les consommateurs. Les processus lancés par `cron` consomment le nombre de messages spécifié, puis s&#39;arrêtent. La réexécution `cron` redémarre le client.
 
-L’exemple suivant illustre la configuration `crontab` pour l’exécution des consommateurs :
+L’exemple suivant illustre la configuration `crontab` pour l’exécution de consommateurs :
 
 > /app/code/Magento/MessageQueue/etc/crontab.xml
 
@@ -31,29 +31,29 @@ L’exemple suivant illustre la configuration `crontab` pour l’exécution des 
 
 >[!INFO]
 >
->La fréquence à laquelle vous vérifiez les files d’attente des messages peut dépendre de la logique métier et des ressources système disponibles. En règle générale, vous pouvez rechercher de nouveaux clients et envoyer plus souvent des emails de bienvenue qu’un processus plus gourmand en ressources, tel que la mise à jour de votre catalogue. Vous devez définir des planifications `cron` en fonction des besoins de votre entreprise.
+>La fréquence de vérification des files d&#39;attente de messages dépend de la logique de votre entreprise et des ressources système disponibles. En règle générale, vous pouvez rechercher de nouveaux clients et envoyer des e-mails de bienvenue plus fréquemment qu’un processus qui nécessite davantage de ressources, comme la mise à jour de votre catalogue. Vous devez définir des plannings de `cron` en fonction des besoins de votre entreprise.
 >
->Il peut être configuré dans les options de configuration Admin Magasins > Paramètres > Configuration > Avancé > Système > Cron pour le groupe : consommateurs.
+>Il peut être configuré dans les options de configuration Admin Stores > Settings > Configuration > Advanced > System > Cron pour le groupe : consumer.
 >
->Voir [Configuration et exécution de cron](../cli/configure-cron-jobs.md) pour plus d’informations sur l’utilisation de `cron` avec Commerce.
+>Voir [Configurer et exécuter cron](../cli/configure-cron-jobs.md) pour plus d’informations sur l’utilisation de `cron` avec Commerce.
 
-Vous pouvez également utiliser un gestionnaire de processus tel que [Superviseur](https://supervisord.readthedocs.io/en/latest/) pour surveiller l’état des processus. Le gestionnaire peut utiliser la ligne de commande pour redémarrer les processus selon les besoins.
+Vous pouvez également utiliser un gestionnaire de processus tel que [Superviseur](https://supervisord.readthedocs.io/en/latest/) pour surveiller le statut des processus. Le gestionnaire peut utiliser la ligne de commande pour redémarrer les processus si nécessaire.
 
 ## Configuration
 
 ### Comportement par défaut
 
-- La tâche Cron `consumers_runner` est activée.
-- La tâche Cron `consumers_runner` exécute tous les consommateurs définis.
-- Chaque consommateur traite 10 000 messages, puis s’arrête
+- La tâche cron `consumers_runner` est activée.
+- La tâche cron exécute `consumers_runner` tous les consommateurs définis
+- Chaque client traite 10000 messages, puis s’arrête
 
 >[!INFO]
 >
->Si votre boutique Adobe Commerce est hébergée sur la plateforme Cloud, utilisez [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#cron_consumers_runner) pour configurer la tâche cron `consumers_runner`.
+>Si votre magasin Adobe Commerce est hébergé sur la plateforme cloud, utilisez l’[`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) pour configurer la tâche cron `consumers_runner`.
 
 ### Configuration spécifique
 
-Modifiez le fichier `/app/etc/env.php` pour configurer la tâche cron `consumers_runner`.
+Modifiez le fichier `/app/etc/env.php` pour configurer le `consumers_runner` de la tâche cron.
 
 ```php
 ...
@@ -71,17 +71,17 @@ Modifiez le fichier `/app/etc/env.php` pour configurer la tâche cron `consumers
 ...
 ```
 
-- `cron_run` - Une valeur booléenne qui active ou désactive la tâche `consumers_runner` cron (par défaut = `true`).
-- `max_messages` - Nombre maximal de messages que chaque consommateur doit traiter avant de s’arrêter (par défaut = `10000`). Bien que nous ne le recommandions pas, vous pouvez utiliser 0 pour empêcher le consommateur de s’arrêter. Voir [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) pour configurer la manière dont les consommateurs traitent les messages de la file d’attente des messages.
-- `consumers` - Un tableau de chaînes spécifiant les consommateurs à exécuter. Un tableau vide exécute *tous les* consommateurs.
-- `multiple_processes` - Un tableau de paires clé-valeur spécifiant le consommateur à exécuter dans le nombre de processus. Pris en charge dans Commerce 2.4.4 ou version ultérieure.
+- `cron_run` - Valeur booléenne qui active ou désactive la tâche cron `consumers_runner` (par défaut = `true`).
+- `max_messages` - Nombre maximal de messages que chaque client doit traiter avant de s’arrêter (par défaut = `10000`). Bien que nous ne le recommandions pas, vous pouvez utiliser 0 pour empêcher le client de s’arrêter. Consultez [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) pour configurer la manière dont les consommateurs traitent les messages de la file d’attente des messages.
+- `consumers` - Tableau de chaînes spécifiant les consommateurs à exécuter. Un tableau vide s’exécute *tous* les consommateurs.
+- `multiple_processes` - Tableau de paires clé-valeur spécifiant le client à exécuter dans combien de processus. Pris en charge dans Commerce 2.4.4 ou version ultérieure.
 
   >[!INFO]
   >
-  >Il est déconseillé d’exécuter plusieurs consommateurs sur une file d’attente gérée par MySQL. Pour plus d’informations, voir [Changement de la file d’attente des messages de MySQL en AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) .
+  >Il n’est pas recommandé d’exécuter plusieurs consommateurs sur une file d’attente gérée par MySQL. Voir [Modifier la file d’attente de messages de MySQL vers AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) pour plus d’informations.
 
   >[!INFO]
   >
-  >Si votre boutique Adobe Commerce est hébergée sur la plateforme Cloud, utilisez [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#consumers_wait_for_max_messages) pour configurer la manière dont les clients traitent les messages de la file d’attente des messages.
+  >Si votre boutique Adobe Commerce est hébergée sur la plateforme cloud, utilisez le [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) pour configurer la manière dont les consommateurs et consommatrices traitent les messages de la file d’attente des messages.
 
-Voir [Démarrage des consommateurs de la file d’attente de messages](../cli/start-message-queues.md).
+Voir [Démarrer les consommateurs de file d’attente de messages](../cli/start-message-queues.md).

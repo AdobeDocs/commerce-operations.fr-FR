@@ -1,6 +1,6 @@
 ---
 title: Rapports de dépendance
-description: Créez des rapports qui affichent les totaux pour les dépendances de module, circulaire et de structure.
+description: Créez des rapports qui affichent les totaux des dépendances de module, circulaires et de structure.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Vous pouvez exécuter les types de rapports suivants :
 
-- **Dépendances de module** : indique le nombre total de dépendances entre les modules et si les dépendances sont hard ou soft.
+- **Dépendances de module** : affiche le nombre total de dépendances entre les modules et si les dépendances sont dures ou souples.
 - **Dépendances circulaires** : affiche le nombre total de chaînes de dépendances ainsi que le nombre et la liste des dépendances circulaires pour chaque module.
-- **Dépendances de structure** : affiche le nombre total de dépendances de la structure Commerce par module (y compris le nombre total d’entrées de structure pour chaque bibliothèque).
+- **Dépendances de framework** : affiche le nombre total de dépendances du framework Commerce par module (y compris le nombre total d’entrées de framework pour chaque bibliothèque).
 
-Une dépendance dans un commentaire est également une dépendance.
+Une dépendance dans un commentaire est également une dépendance .
 
-## Exécution des rapports de dépendance
+## Exécution de rapports de dépendance
 
 Options de commande :
 
@@ -29,19 +29,19 @@ Options de commande :
 bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework} [-d|--directory="<path>"] [-o|--output="<path and filename"]
 ```
 
-Le tableau suivant explique les options, paramètres et valeurs de cette commande.
+Le tableau suivant décrit les options, paramètres et valeurs de cette commande.
 
 | Paramètre | Valeur | Obligatoire ? |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------- | --------- |
-| `show-modules` | Rapport Dépendances des modules . | Oui |
-| `show-modules-circular` | Rapport Dépendances circulaires . | Oui |
-| `show-framework` | Rapport des dépendances de structure. | Oui |
-| `-d --directory` | Chemin d’accès au répertoire de base pour commencer la recherche des données de rapport. | Non |
-| `-o --output` | Indique le chemin d’accès au système de fichiers absolu et le nom de fichier du fichier de sortie csv (valeurs séparées par des virgules) pour le rapport. | Non |
+| `show-modules` | Rapport sur les dépendances des modules. | Oui |
+| `show-modules-circular` | Rapport de dépendances circulaires. | Oui |
+| `show-framework` | Rapport sur les dépendances de framework. | Oui |
+| `-d --directory` | Chemin d’accès au répertoire de base pour commencer à rechercher les données du rapport. | Non |
+| `-o --output` | Indique le chemin d’accès absolu au système de fichiers et le nom de fichier du fichier de sortie de valeurs séparées par des virgules (csv) pour le rapport. | Non |
 
-Si aucun répertoire ou nom de fichier n’est transmis comme argument, la racine de l’application suivante est utilisée comme répertoire par défaut et les noms de fichier par défaut suivants sont utilisés :
+Si aucun répertoire ou nom de fichier n’est transmis en tant qu’argument, la racine d’application suivante est utilisée comme répertoire par défaut et les noms de fichier par défaut suivants sont utilisés :
 
-| Commande | Nom du fichier |
+| Commande | Nom de fichier |
 | ----------------------------------------------------- | ----------------------------------- |
 | `bin/magento info:dependencies:show-modules` | `modules-dependencies.csv` |
 | `bin/magento info:dependencies:show-modules-circular` | `modules-circular-dependencies.csv` |
@@ -49,7 +49,7 @@ Si aucun répertoire ou nom de fichier n’est transmis comme argument, la racin
 
 ### Exemple de rapport de dépendances de module
 
-Voici une partie de la sortie pour un exemple de rapport de dépendances de module :
+Voici une partie de la sortie d’un exemple de rapport de dépendances de module :
 
 ```
 "","All","Hard","Soft"
@@ -99,7 +99,7 @@ Voici une partie de la sortie pour un exemple de rapport de dépendances circula
 
 ### Exemple de rapport de dépendances de framework
 
-Voici une partie de la sortie pour un exemple de rapport de dépendances de structure :
+Voici une partie de la sortie d’un exemple de rapport de dépendances de framework :
 
 ```
 "Dependencies of framework:","Total number"

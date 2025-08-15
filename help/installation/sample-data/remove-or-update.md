@@ -1,6 +1,6 @@
 ---
-title: Suppression ou mise à jour d’exemples de modules de données
-description: Suivez ces étapes pour gérer les exemples de modules de données Adobe Commerce.
+title: Supprimer ou mettre à jour des exemples de modules de données
+description: Pour gérer les exemples de modules de données d’Adobe Commerce, procédez comme suit.
 exl-id: d23f999f-18bf-449b-be23-bdf392dda539
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
@@ -9,15 +9,15 @@ ht-degree: 0%
 
 ---
 
-# Suppression ou mise à jour d’exemples de modules de données
+# Supprimer ou mettre à jour des exemples de modules de données
 
 Cette rubrique explique comment :
 
-* [Supprimez les exemples de modules de données](#remove-sample-data-modules) d&#39;une installation Adobe Commerce `composer.json`. Cette option supprime *not* les exemples de données de la base de données.
+* [Supprimez des exemples de modules de données](#remove-sample-data-modules) d’un `composer.json` d’installation Adobe Commerce. Cette option ne supprime *pas* les exemples de données de la base de données.
 
-* [Préparez la mise à jour des exemples de données](#prepare-to-update-sample-data) (par exemple, avant de mettre à jour l’application du Magento).
+* [Préparez la mise à jour des données d’exemple](#prepare-to-update-sample-data) (par exemple, avant de mettre à jour l’application Magento).
 
-## Suppression des exemples de modules de données
+## Supprimer des exemples de modules de données
 
 Saisissez la commande suivante :
 
@@ -49,9 +49,9 @@ La liste complète des exemples de modules de données est la suivante :
 * `magento/module-wishlist-sample-data`
 * `magento/sample-data-media`
 
-## Préparation à la mise à jour des exemples de données
+## Préparer la mise à jour des données d’exemple
 
-Cette commande permet de mettre à jour des données d’exemple avant de mettre à jour Adobe Commerce.
+Cette commande permet de mettre à jour les exemples de données avant de mettre à jour Adobe Commerce.
 
 Pour préparer les exemples de données à mettre à jour, saisissez la commande suivante :
 

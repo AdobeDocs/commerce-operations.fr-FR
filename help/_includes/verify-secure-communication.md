@@ -7,12 +7,12 @@ ht-degree: 1%
 ---
 # Vérifier que la communication est sécurisée
 
-Cette section décrit deux manières de vérifier que l’authentification HTTP de base fonctionne :
+Cette section présente deux façons de vérifier que l’authentification HTTP de base fonctionne :
 
-* Utilisation d’une commande `curl` pour vérifier que vous devez saisir un nom d’utilisateur et un mot de passe pour obtenir l’état du cluster
-* Configuration de l’authentification HTTP de base dans Admin
+* À l’aide d’une commande `curl` pour vérifier, vous devez saisir un nom d’utilisateur et un mot de passe pour obtenir le statut du cluster
+* Configuration de l’authentification HTTP de base dans l’administration
 
-## Utilisation d’une commande `curl` pour vérifier l’état de la grappe
+## Utilisez une commande `curl` pour vérifier l’état du cluster
 
 Saisissez la commande suivante :
 
@@ -55,7 +55,7 @@ Par exemple :
 curl -i -u magento_elasticsearch:mypassword http://localhost:8080/_cluster/health
 ```
 
-Cette fois, la commande réussit avec un message similaire à ce qui suit :
+Cette fois, la commande réussit avec un message similaire à celui-ci :
 
 ```
 HTTP/1.1 200 OK
@@ -66,10 +66,10 @@ Connection: keep-alive
 {"cluster_name":"elasticsearch","status":"yellow","timed_out":false,"number_of_nodes":1,"number_of_data_nodes":1,"active_primary_shards":5,"active_shards":5,"relocating_shards":0,"initializing_shards":0,"unassigned_shards":5,"delayed_unassigned_shards":0,"number_of_pending_tasks":0,"number_of_in_flight_fetch":0,"task_max_waiting_in_queue_millis":0,"active_shards_percent_as_number":50.0}
 ```
 
-## Configuration de l’authentification HTTP de base dans Admin
+## Configuration de l’authentification HTTP de base dans l’administration
 
-Effectuez les mêmes tâches que celles décrites dans la [Configuration du moteur de recherche](../configuration/search/configure-search-engine.md) *sauf* cliquez sur **[!UICONTROL Yes]** dans la liste **[!UICONTROL Enable HTTP Auth]** et saisissez votre nom d’utilisateur et votre mot de passe dans les champs fournis.
+Effectuez les mêmes tâches que celles décrites dans [Configuration du moteur de recherche](../configuration/search/configure-search-engine.md) *sauf* cliquez sur **[!UICONTROL Yes]** dans la liste **[!UICONTROL Enable HTTP Auth]** et saisissez votre nom d’utilisateur et votre mot de passe dans les champs fournis.
 
-Cliquez sur **[!UICONTROL Test Connection]** pour vous assurer qu&#39;il fonctionne, puis sur **[!UICONTROL Save Config]**.
+Cliquez sur **[!UICONTROL Test Connection]** pour vérifier que cela fonctionne, puis sur **[!UICONTROL Save Config]**.
 
 Vous devez vider le cache et réindexer avant de continuer.

@@ -3,7 +3,7 @@ title: Bonnes pratiques de distribution des correctifs à grande échelle
 description: Découvrez comment les correctifs centralisés pour Adobe Commerce peuvent vous aider à gérer les projets d’entreprise.
 role: Developer
 feature: Best Practices
-badge: label="Contribution Tony Evers, architecte technique principal, Adobe" type="Informative" url="https://www.linkedin.com/in/evers-tony/" tooltip="Contribution Tony Evers"
+badge: label="Contribution de Tony Evers, architecte technique principal, Adobe" type="Informative" url="https://www.linkedin.com/in/evers-tony/" tooltip="Contribution Tony Evers"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
 source-git-commit: 2c9f827326315bc4ef77d511dddce81e059a1092
 workflow-type: tm+mt
@@ -18,7 +18,7 @@ Si vous gérez plusieurs installations d’Adobe Commerce, l[application de corr
 
 >[!NOTE]
 >
->Le contenu suivant a été initialement publié dans l’article [ Distribution des correctifs Adobe Commerce à grande échelle ](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) sur le blog Adobe Tech. Il a été modifié pour se concentrer sur les étapes et les exemples de code pour la mise en œuvre d&#39;une stratégie de correctifs centralisée. Voir la publication d’origine pour plus d’informations sur les différents types de correctifs décrits ici.
+>Le contenu suivant a été initialement publié dans l’article [ Distribution des correctifs Adobe Commerce à l’échelle ](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) sur le blog Adobe Tech. Il a été modifié pour se concentrer sur les étapes et les exemples de code pour la mise en œuvre d&#39;une stratégie de correctifs centralisée. Voir la publication d’origine pour plus d’informations sur les différents types de correctifs décrits ici.
 
 ## Produits et versions concernés
 
@@ -33,13 +33,13 @@ Comme il existe de nombreux types de correctifs et de nombreuses façons de les 
 
 1. Les **correctifs de sécurité** font partie de la base de code statique d’une version d’Adobe Commerce.
 1. **Correctifs du compositeur** via des modules externes `composer install` et `composer update` tels que [cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches).
-1. Tous les **correctifs requis** inclus dans le package [Correctifs cloud pour Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html?lang=fr).
-1. Sélection **correctifs de qualité** inclus dans le [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md).
+1. Tous les **correctifs requis** inclus dans le package [Correctifs cloud pour Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html).
+1. Sélection **correctifs de qualité** inclus dans le [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md).
 1. **Correctifs personnalisés** et les correctifs Adobe Commerce prennent en charge les correctifs du répertoire `/m2-hotfixes` dans l’ordre alphabétique par nom de correctif.
 
    >[!IMPORTANT]
    >
-   >Plus vous appliquez de correctifs, plus votre code devient complexe. Un code complexe peut rendre la mise à niveau vers une nouvelle version du commerce d’Adobe plus difficile et augmenter votre coût total de possession.
+   >Plus vous appliquez de correctifs, plus votre code devient complexe. Un code complexe peut rendre la mise à niveau vers une nouvelle version d’Adobe Commerce plus difficile et augmenter votre coût total de possession.
 
 Si vous êtes responsable de la maintenance de plusieurs installations d’Adobe Commerce, il peut être difficile de s’assurer que toutes les instances disposent du même ensemble de correctifs. Chaque installation possède son propre référentiel Git, son propre répertoire `/m2-hotfixes` et son propre fichier `composer.json`. La seule garantie que vous avez est que les **correctifs de sécurité** et **correctifs requis** pour les utilisateurs du cloud sont tous installés dans le cadre de votre version Adobe Commerce principale.
 
@@ -148,7 +148,7 @@ Pour créer le package de composants `centralized-patcher` :
    ```
 
 
-L’attribut `quality-patches` de l’exemple de code précédent contient deux correctifs de la [liste complète des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) à titre d’exemple.  Ces correctifs de qualité sont installés sur chaque projet qui nécessite le package `centralized-patcher` à l’aide de la commande `vendor/bin/magento-patches apply`.
+L’attribut `quality-patches` de l’exemple de code précédent contient deux correctifs de la [liste complète des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) à titre d’exemple.  Ces correctifs de qualité sont installés sur chaque projet qui nécessite le package `centralized-patcher` à l’aide de la commande `vendor/bin/magento-patches apply`.
 
 À des fins de test, vous pouvez créer un exemple de correctif (`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`).
 
@@ -365,7 +365,7 @@ Comme avec Adobe Commerce sur les infrastructures cloud, cet article suppose que
 
 Vous pouvez ainsi gérer de manière centralisée tous vos correctifs pour toutes vos installations et mieux garantir la sécurité et la stabilité de vos magasins Adobe Commerce. Utilisez les méthodes suivantes pour vérifier le statut du correctif :
 
-- [ Projets d’infrastructure cloud ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr#view-available-patches-and-status)
+- [ Projets d’infrastructure cloud ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html#view-available-patches-and-status)
 - [Projets sur site](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## Exemples de code

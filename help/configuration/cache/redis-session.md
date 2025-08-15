@@ -17,7 +17,7 @@ ht-degree: 1%
 >Vous devez [installer Redis](config-redis.md#install-redis) avant de continuer.
 
 
-Commerce fournit désormais des options de ligne de commande pour configurer l’enregistrement de session Redis. Dans les versions précédentes, vous aviez modifié le fichier `<Commerce install dir>app/etc/env.php`. La ligne de commande fournit la validation et est la méthode de configuration recommandée, mais vous pouvez toujours modifier le fichier `env.php`.
+Commerce fournit désormais des options de ligne de commande pour configurer le stockage de session Redis. Dans les versions précédentes, vous avez modifié le fichier `<Commerce install dir>app/etc/env.php`. La ligne de commande permet la validation et constitue la méthode de configuration recommandée, mais vous pouvez toujours modifier le fichier `env.php`.
 
 Exécutez la commande `setup:config:set` et spécifiez des paramètres spécifiques à Redis.
 
@@ -25,40 +25,40 @@ Exécutez la commande `setup:config:set` et spécifiez des paramètres spécifiq
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
 ```
 
-where
+où
 
 `--session-save=redis` active le stockage de session Redis. Si cette fonctionnalité a déjà été activée, omettez ce paramètre.
 
-`--session-save-redis-<parameter_name>=<parameter_value>` est une liste de paires paramètre/valeur qui configurent le stockage de session :
+`--session-save-redis-<parameter_name>=<parameter_value>` une liste de paires paramètre/valeur qui configurent le stockage de session :
 
 | Paramètre de ligne de commande | Nom du paramètre | Signification | Valeur par défaut |
 |--- |--- |--- |--- |
-| session-save-redis-host | hôte | Nom d’hôte complet, adresse IP ou chemin d’accès absolu si vous utilisez des sockets UNIX. | localhost |
-| session-save-redis-port | port | Port d’écoute du serveur Redis. | 6379 |
-| session-save-redis-password | password | Indique un mot de passe si votre serveur Redis doit être authentifié. | empty |
-| session-save-redis-timeout | timeout | Timeout de connexion, en secondes. | 2,5 |
-| session-save-redis-persistent-id | persistent_identifier | Chaîne unique pour activer les connexions persistantes (par exemple, sess-db0).<br>[Problèmes connus avec phpredis et php-fpm](https://github.com/phpredis/phpredis/issues/70). |
-| session-save-redis-db | base | Numéro de base de données Redis unique, recommandé pour éviter toute perte de données.<br><br>**Important** : Si vous utilisez Redis pour plusieurs types de mise en cache, les numéros de la base de données doivent être différents. Il est recommandé d’attribuer le numéro de base de données de mise en cache par défaut à 0, le numéro de base de données de mise en cache de page à 1 et le numéro de base de données de stockage de session à 2. | 0 |
-| session-save-redis-compression-threshold | compression_threshold | Définissez cette variable sur 0 pour désactiver la compression (recommandé lorsque `suhosin.session.encrypt = On`).<br>[Problème connu avec des chaînes de plus de 64 Ko](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
+| session-save-redis-host | hôte | Nom d’hôte complet, adresse IP ou chemin absolu si vous utilisez des sockets UNIX. | localhost |
+| session-save-redis-port | port | Port d&#39;écoute du serveur Redis. | 6379 |
+| session-save-redis-password | mot de passe | Spécifie un mot de passe si votre serveur Redis requiert une authentification. | vide |
+| session-save-red-timeout | timeout | Timeout de connexion, en secondes. | 2,5 |
+| session-save-red-persistent-id | persistent_identifier | Chaîne unique pour activer les connexions persistantes (par exemple, sess-db0).<br>[Problèmes connus liés à phpredis et php-fpm](https://github.com/phpredis/phpredis/issues/70). |
+| session-save-redis-db | de données | Numéro de base de données Redis unique, recommandé pour se protéger contre la perte de données.<br><br>**Important** : si vous utilisez Redis pour plusieurs types de mise en cache, les numéros de base de données doivent être différents. Il est recommandé d&#39;attribuer le numéro de base de données de mise en cache par défaut à 0, le numéro de base de données de mise en cache de page à 1 et le numéro de base de données de stockage de session à 2. | 0 |
+| session-save-red-compression-threshold | compression_seuil | Définissez cette valeur sur 0 pour désactiver la compression (recommandé lorsque `suhosin.session.encrypt = On`).<br>[Problème connu avec les chaînes de plus de 64 Ko](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
 | session-save-redis-compression-lib | compression_library | Options : gzip, lzf, lz4 ou snappy. | gzip |
-| session-save-redis-log-level | log_level | Définissez sur l’un des éléments suivants, répertoriés dans l’ordre entre au moins verbose et la plupart des verbose :<ul><li>0 (urgence : seules les erreurs les plus graves)<li>1 (alerte : action immédiate requise)<li>2 (critique : composant d’application indisponible)<li>3 (erreur : erreurs d’exécution, non critiques mais devant être surveillées)<li>4 (avertissement : informations supplémentaires, recommandé)<li>5 (avis : état normal mais significatif)<li>6 (informations : messages d’information)<li>7 (débogage : informations les plus complètes à des fins de développement ou de test uniquement)</ul> | 1 |
-| session-save-redis-max-concurrency | max_concurrency | Nombre maximal de processus pouvant attendre un verrouillage sur une session. Pour les grappes de production volumineuses, définissez cette valeur sur au moins 10 % du nombre de processus PHP. | 6 |
-| session-save-redis-break-after-frontend | break_after_frontend | Nombre de secondes à attendre avant d’essayer de rompre le verrouillage de la session front-end (c’est-à-dire storefront). | 5 |
-| session-save-redis-break-after-adminhtml | break_after_adminhtml | Nombre de secondes à attendre avant de tenter de rompre le verrouillage pour une session adminhtml (c’est-à-dire admin). | 30 |
-| session-save-redis-first-lifetime | first_lifetime | Durée de vie, en secondes, de la session pour les non-robots lors de la première écriture, ou utilisez 0 pour désactiver. | 600 |
-| session-save-redis-bot-first-lifetime | bot_first_lifetime | Durée de vie, en secondes, de la session pour les robots lors de la première écriture, ou utilisez 0 pour désactiver. | 60 |
-| session-save-redis-bot-lifetime | bot_lifetime | Durée de vie, en secondes, de la session pour les robots lors des écritures suivantes, ou utilisez 0 pour désactiver. | 7200 |
-| session-save-redis-disable-locking | disable_locking | Désactivez entièrement le verrouillage de session. | 0 (false) |
-| session-save-redis-min-lifetime | min_lifetime | Durée de session minimale, en secondes. | 60 |
-| session-save-redis-max-lifetime | max_lifetime | Durée maximale de la session, en secondes. | 2592000 (720 heures) |
-| session-save-redis-sentinel-master | sentinel_master | Nom principal Redis Sentinel | empty |
-| session-save-redis-sentinel-servers | sentinel_servers | Liste des serveurs Redis Sentinel, séparés par des virgules | empty |
-| session-save-redis-sentinel-verify-master | sentinel_verify_master | Vérification de l’indicateur d’état principal Redis Sentinel | 0 (false) |
-| session-save-redis-sentinel-connect-retries | sentinel_connect_retries | Reprises de connexion pour les envois | 5 |
+| session-save-redis-log-level | log_level | Définissez sur l’une des options suivantes, répertoriées dans l’ordre du moins détaillé au plus détaillé :<ul><li>0 (urgence : seulement les erreurs les plus graves)<li>1 (alerte : action immédiate requise)<li>2 (critique : composant d’application non disponible)<li>3 (erreur : erreurs d’exécution, non critiques, mais doivent être surveillées)<li>4 (avertissement : informations supplémentaires, recommandé)<li>5 (avis : état normal mais significatif)<li>6 (info : messages informatifs)<li>7 (débogage : le plus d’informations pour le développement ou le test uniquement)</ul> | 1 |
+| session-save-redis-max-concurrency | max_concurrency | Nombre maximum de processus pouvant attendre un verrouillage sur une session. Pour les clusters de production volumineux, définissez cette valeur sur au moins 10 % du nombre de processus PHP. | 6 |
+| session-save-red-break-after-frontend | break_after_frontend | Nombre de secondes à attendre avant d’essayer d’interrompre le verrouillage d’une session frontale (c’est-à-dire storefront). | 5 |
+| session-save-red-break-after-adminhtml | break_after_adminhtml | Nombre de secondes à attendre avant d’essayer d’interrompre le verrouillage d’une session adminhtml (c’est-à-dire Admin). | 30 |
+| session-save-redis-first-life | first_life | Durée de vie, en secondes, de la session pour les non-robots lors de la première écriture, ou utilisez 0 pour désactiver. | 600 |
+| session-save-redis-bot-first-life | bot_first_life | Durée de vie, en secondes, de la session des robots lors de la première écriture ou utilisez 0 pour la désactiver. | 60 |
+| session-save-redis-bot-life | bot_life | Durée de vie, en secondes, de la session des robots lors des écritures suivantes, ou utilisez 0 pour la désactiver. | 7200 |
+| session-save-redis-disable-lock | disable_lock | Désactivez entièrement le verrouillage de session. | 0 (faux) |
+| session-save-redis-min-life | min_life | Durée de vie minimale d’une session, en secondes. | 60 |
+| session-save-redis-max-life | max_life | Durée de vie maximale de la session, en secondes. | 2592000 (720 heures) |
+| session-save-redis-sentinel-master | sentinelle_master | Nom de maître Redis Sentinel | vide |
+| session-save-redis-sentinel-servers | sentinel_servers | Liste des serveurs Redis Sentinel, séparés par des virgules | vide |
+| session-save-redis-sentinel-verify-master | sentinelle_verify_master | Vérifier l&#39;indicateur de statut principal Redis Sentinel | 0 (faux) |
+| session-save-redis-sentinel-connect-retries | sentinel_connect_retries | Reprises de connexion pour les sentinelles | 5 |
 
 ## Exemple
 
-L’exemple suivant définit Redis comme entrepôt de données de session, définit l’hôte sur `127.0.0.1`, définit le niveau de journal sur 4 et définit le numéro de base de données sur 2. Tous les autres paramètres sont définis sur la valeur par défaut.
+L’exemple suivant définit Redis comme magasin de données de session, définit l’hôte sur `127.0.0.1`, définit le niveau de journal sur 4 et définit le numéro de base de données sur 2. Tous les autres paramètres sont définis sur la valeur par défaut.
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
@@ -66,7 +66,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.
 
 ### Résultat
 
-Commerce ajoute des lignes similaires à celles-ci à `<magento_root>app/etc/env.php` :
+Commerce ajoute des lignes similaires à ce qui suit à `<magento_root>app/etc/env.php` :
 
 ```php
 'session' => [
@@ -96,19 +96,19 @@ Commerce ajoute des lignes similaires à celles-ci à `<magento_root>app/etc/env
 
 >[!INFO]
 >
->TTL pour les enregistrements de session utilise la valeur de durée de vie du cookie, qui est configurée dans l’Admin. Si la durée de vie du cookie est définie sur 0 (la valeur par défaut est 3 600), les sessions de redirection expirent en secondes spécifiées en min_lifetime (la valeur par défaut est 60). Cette incohérence est due aux différences dans la manière dont les cookies de session et de redis interprètent une valeur de durée de vie de 0. Si ce comportement n’est pas souhaité, augmentez la valeur de min_lifetime .
+>La durée de vie des enregistrements de session utilise la valeur de la durée de vie du cookie , qui est configurée dans l’administration. Si la durée de vie du cookie est définie sur 0 (la valeur par défaut est 3 600), les sessions Redis expirent dans le nombre de secondes spécifié dans min_life (la valeur par défaut est 60). Cette incohérence est due à des différences dans la façon dont Redis et les cookies de session interprètent une valeur de durée de vie de 0. Si ce comportement n&#39;est pas souhaité, augmentez la valeur de min_life.
 
-## Vérification de la connexion Redis
+## Vérifier la connexion Redis
 
 Pour vérifier que Redis et Commerce fonctionnent ensemble, connectez-vous au serveur exécutant Redis, ouvrez un terminal et utilisez la commande Redis monitor ou la commande ping.
 
-### Redis monitor, commande
+### Commande Redis monitor
 
 ```bash
 redis-cli monitor
 ```
 
-Exemple de sortie session-storage :
+Exemple de sortie de stockage de session :
 
 ```
 1476824834.187250 [0 127.0.0.1:52353] "select" "0"
@@ -119,16 +119,16 @@ Exemple de sortie session-storage :
 ... more ...
 ```
 
-### Redis ping, commande
+### Commande de redimensionnement
 
 ```bash
 redis-cli ping
 ```
 
-`PONG` doit être la réponse.
+`PONG` devrait être la réponse.
 
-Si les deux commandes ont réussi, Redis est configuré correctement.
+Si les deux commandes ont réussi, Redis est correctement configuré.
 
 ### Inspection des données compressées
 
-Pour examiner les données de session compressées et le cache de page, [RESP.app](https://flathub.org/apps/details/app.resp.RESP) prend en charge la décompression automatique du cache de page et de session Commerce 2 et affiche les données de session PHP sous une forme lisible par l’utilisateur.
+Pour inspecter les données de session compressées et le cache de page, le [RESP.app](https://flathub.org/apps/details/app.resp.RESP) prend en charge la décompression automatique du cache de session et de page de Commerce 2 et affiche les données de session PHP sous une forme lisible par l&#39;utilisateur.

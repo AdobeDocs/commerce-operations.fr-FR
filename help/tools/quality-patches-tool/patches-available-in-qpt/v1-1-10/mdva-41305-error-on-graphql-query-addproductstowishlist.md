@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-41305 : erreur sur la requête GraphQL addProductsToWishlist pour les produits configurables.'
-description: Le correctif MDVA-41305 résout le problème où les utilisateurs et utilisatrices obtiennent une erreur sur la requête GraphQL « addProductsToWishlist » pour les produits configurables. Ce correctif est disponible lorsque l’[Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 est installé. L’ID du correctif est MDVA-41305. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
+description: Le correctif MDVA-41305 résout le problème où les utilisateurs et utilisatrices obtiennent une erreur sur la requête GraphQL « addProductsToWishlist » pour les produits configurables. Ce correctif est disponible lorsque l’[Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 est installé. L’ID du correctif est MDVA-41305. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 feature: GraphQL, Configuration, Products
 role: Admin
 exl-id: 985c3c46-d2c8-4479-b9e4-e5f9504ab03b
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # MDVA-41305 : erreur sur la requête GraphQL addProductsToWishlist pour les produits configurables.
 
-Le correctif MDVA-41305 résout le problème où les utilisateurs et utilisatrices obtiennent une erreur lors de l’`addProductsToWishlist` de requêtes GraphQL pour les produits configurables. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 est installé. L’ID du correctif est MDVA-41305. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
+Le correctif MDVA-41305 résout le problème où les utilisateurs et utilisatrices obtiennent une erreur lors de l’`addProductsToWishlist` de requêtes GraphQL pour les produits configurables. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 est installé. L’ID du correctif est MDVA-41305. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 
 ## Produits et versions concernés
 
@@ -28,7 +28,7 @@ Le correctif MDVA-41305 résout le problème où les utilisateurs et utilisatric
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -42,11 +42,11 @@ Lorsque les utilisateurs ajoutent des produits configurables (avec ou sans confi
 
    <pre>
     <code class="language-graphql">
-    mutation &lbrace;
-      generateCustomerToken(email: "", password: "") &lbrace;
+    mutation {
+      generateCustomerToken(email: "", password: "") {
         token
-      &rbrace;
-     &rbrace;
+      }
+     }
      </code>
      </pre>
 
@@ -55,84 +55,84 @@ Lorsque les utilisateurs ajoutent des produits configurables (avec ou sans confi
 
 <pre>
 <code class="language-graphql">
-mutation &lbrace;
+mutation {
  addProductsToWishlist(
    wishlistId: 1
-   wishlistItems: &lbrack;
-     &lbrace;
+   wishlistItems: [
+     {
        sku: "conf2"
-       selected_options: &lbrack;
+       selected_options: [
             "Y29uZmlndXJhYmxlLzkzLzUw"
-       &rbrack;
+       ]
        quantity: 1
-       entered_options: &lbrack;
-         &lbrace;
+       entered_options: [
+         {
            uid: "Y3VzdG9tLW9wdGlvbi8x"
            value: "test"
-         &rbrace;
-       &rbrack;
-     &rbrace;
-    &rbrack;
-  ) &lbrace;
-    wishlist &lbrace;
+         }
+       ]
+     }
+    ]
+  ) {
+    wishlist {
       id
       items_count
-      items_v2 (currentPage: 1, pageSize: 8 ) &lbrace;
-        items &lbrace;
+      items_v2 (currentPage: 1, pageSize: 8 ) {
+        items {
          id
          quantity
-         ... on ConfigurableWishlistItem  &lbrace;
+         ... on ConfigurableWishlistItem  {
            child_sku
-           customizable_options &lbrace;
+           customizable_options {
              customizable_option_uid
-           &rbrace;
-         &rbrace;
-         product &lbrace;
+           }
+         }
+         product {
            uid
            name
            sku
            options_container
-           ... on CustomizableProductInterface &lbrace;
-             options &lbrace;
+           ... on CustomizableProductInterface {
+             options {
               title
               required
               sort_order
               option_id
-              ... on CustomizableFieldOption &lbrace;
-                value &lbrace;
+              ... on CustomizableFieldOption {
+                value {
                   uid
                   sku
                   price
                   price_type
                   max_characters
-                &rbrace;
-              &rbrace;
-            &rbrace;
-          &rbrace;
-          price_range &lbrace;
-            minimum_price &lbrace;
-              regular_price &lbrace;
+                }
+              }
+            }
+          }
+          price_range {
+            minimum_price {
+              regular_price {
                 currency
                 value
-              &rbrace;
-            &rbrace;
-            maximum_price &lbrace;
-               regular_price &lbrace;
+              }
+            }
+            maximum_price {
+               regular_price {
                  currency
                  value
-               &rbrace;
-             &rbrace;
-           &rbrace;
-         &rbrace;
-       &rbrace;
-     &rbrace;
-   &rbrace;
-  user_errors &lbrace;
+               }
+             }
+           }
+         }
+       }
+     }
+   }
+  user_errors {
     code
     message
-   &rbrace;
- &rbrace;
-&rbrace;
+   }
+ }
+}
 </code>
 </pre>
 
@@ -149,13 +149,13 @@ Les utilisateurs reçoivent en réponse une *Erreur de serveur interne*.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil de correctifs de la qualité, voir :
 
-* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
+* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!DNL Quality Patches Tool].
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide de [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

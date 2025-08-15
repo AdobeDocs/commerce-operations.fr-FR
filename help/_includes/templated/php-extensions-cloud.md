@@ -14,10 +14,10 @@ ht-degree: 0%
             Extensions par défaut
         </th>
         <th>
-            Extensions installées non désinstallées
+            Extensions installées ne pouvant pas être désinstallées
         </th>
         <th>
-            Extensions qui peuvent être installées et désinstallées si nécessaire
+            Les extensions qui peuvent être installées et désinstallées si nécessaire
         </th>
       </tr>
     </thead>
@@ -26,82 +26,82 @@ ht-degree: 0%
             <td>
                 bcmath<br>
                 bz2<br>
-                calendar<br>
-                exif<br>
+                calendrier <br>
+                exif <br>
                 gd<br>
-                gettext<br>
+                gettext <br>
                 intl<br>
                 libxml<br>
-                mysqli<br>
-                opcache<br>
+                mysqli <br>
+                opcache <br>
                 pcntl<br>
                 pdo_mysql<br>
-                Reflection<br>
-                soap<br>
+                Réflexion <br>
+                du savon <br>
                 sockets<br>
-                SPL<br>
+                SPL <br>
                 standard<br>
-                swoole<br>
+                gonfler<br>
                 sysvmsg<br>
-                sysvsem<br>
-                sysvshm<br>
-                zip<br>
+                sysvsem <br>
+                sysvshm <br>
+                zip <br>
                 zlib<br>
             </td>
             <td>
-                ctype<br>
+                ctype <br>
                 curl<br>
-                date<br>
+                date <br>
                 dba<br>
                 dom<br>
                 fileinfo<br>
-                filter<br>
+                filtre <br>
                 ftp<br>
-                hash<br>
+                hachage <br>
                 iconv<br>
                 json<br>
                 mbstring<br>
                 mysqlnd<br>
                 openssl<br>
                 pcre<br>
-                pdo<br>
+                aop<br>
                 pdo_sqlite<br>
                 phar<br>
-                posix<br>
-                readline<br>
-                session<br>
+                posix <br>
+                readline <br>
+                session <br>
                 sqlite3<br>
-                tokenizer<br>
+                tokenizer <br>
                 xml<br>
                 xmlreader<br>
                 xmlwriter<br>
             </td>
             <td>
-                geoip<br>
-                gmp<br>
-                igbinary<br>
-                imagick<br>
+                geoip <br>
+                gmp <br>
+                igbinary <br>
+                imagick <br>
                 imap<br>
-                ldap<br>
+                ldap <br>
                 mailparse<br>
-                mcrypt<br>
-                msgpack<br>
-                mysqli<br>
+                mcrypt <br>
+                msgpack <br>
+                mysqli <br>
                 oauth<br>
                 pdo_mysql<br>
                 propro<br>
-                pspell<br>
+                pspell <br>
                 raphf<br>
-                enregistrement<br>
-                redis<br>
-                sockets shmop<br>
+                recoder <br>
+                redis <br>
+                douilles shmop<br>
                 sodium<br>
                 ssh2<br>
-                tidy<br>
+                bien rangé<br>
                 xdebug<br>
-                xmlrpc<br>
+                xmlrpc <br>
                 xsl<br>
-                yaml<br>
+                yaml <br>
             </td>
         </tr>
     </tbody>

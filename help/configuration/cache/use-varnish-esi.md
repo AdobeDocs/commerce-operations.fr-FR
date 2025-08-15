@@ -1,7 +1,7 @@
 ---
-title: Bloc ESI en pointillé
+title: Bloc d'ESI vernis
 description: Découvrez les inclusions côté Edge et comment les utiliser pour incorporer des pages web.
-badge: label="Contribution de Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Constantin G."
+badge: label="Contribution Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# Bloc ESI en pointillé
+# Bloc d&#39;ESI vernis
 
-Edge Side Includes (ESI) sont des directives spéciales que vous pouvez utiliser pour inclure des pages web dans d’autres pages web.
+Les inclusions côté Edge (ESI) sont des directives spéciales que vous pouvez utiliser pour inclure des pages web dans d’autres pages web.
 
-Exemple :
+Par exemple :
 
 ```html
 <div>
@@ -23,14 +23,14 @@ Exemple :
 </div>
 ```
 
-Le vernis récupère le contenu de `http://domain.com/index.php/page_cache/block/esi/blocks` et remplace la balise `<esi>` par celle-ci.
+Le vernis récupère le contenu de `http://domain.com/index.php/page_cache/block/esi/blocks` et remplace la balise `<esi>` par celui-ci.
 
-## Commerce et ESI vernal
+## ESI Commerce et vernis
 
-La structure Commerce crée une balise ESI lorsque les conditions suivantes sont remplies :
+Le framework Commerce crée une balise ESI lorsque les conditions suivantes sont remplies :
 
 - L’application de mise en cache est définie sur `Varnish Cache`
-- Un élément `block` de disposition XML est ajouté avec un attribut `ttl`
+- Un élément de `block` de mise en page XML est ajouté avec un attribut `ttl`
 
 ### Exemple
 
@@ -42,11 +42,11 @@ La structure Commerce crée une balise ESI lorsque les conditions suivantes sont
    </referenceContainer>
 ```
 
-Dans l’exemple ci-dessus, l’élément `block` ajoute du contenu du modèle `esi.phtml` à une page d’accueil et le vernis le met automatiquement à jour toutes les 30 secondes.
+Dans l’exemple ci-dessus, l’élément `block` ajoute le contenu du modèle `esi.phtml` à une page d’accueil et Varnish le met automatiquement à jour toutes les 30 secondes.
 
-## Limites
+## Restrictions
 
-Actuellement, Varnish ne prend pas en charge l’ESI par HTTPS et passe donc automatiquement au HTTP.
+Actuellement, Varnish ne prend pas en charge l’ESI via HTTPS et passe donc automatiquement au HTTP.
 
 `Magento\PageCache\Observer\ProcessLayoutRenderElement` :
 

@@ -1,6 +1,6 @@
 ---
-title: Titre de la rubrique Bonnes pratiques
-description: Découvrez comment ...
+title: Titre de la rubrique des bonnes pratiques
+description: Découvrez comment...
 role: Developer
 feature: Best Practices
 hide: true
@@ -36,28 +36,28 @@ Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/
 
 [Toutes les versions prises en charge](../../../release/versions.md) de :
 
-- Adobe Commerce sur l’infrastructure cloud
-- Adobe Commerce sur site
+- Adobe Commerce sur les infrastructures cloud
+- Adobe Commerce on-premise
 
 <!-- Example 2: -->
 
-Adobe Commerce sur l’infrastructure cloud avec Adobe Commerce version 2.3.4 ou antérieure et MariaDB version 10.0 ou antérieure.
+Adobe Commerce sur les infrastructures cloud avec Adobe Commerce version 2.3.4 ou antérieure et MariaDB version 10.0 ou antérieure.
 
-&lt;!— Type d’entreprise : B2C et B2B — indiquez uniquement si nécessaire/)—>
+&lt;!— Type d&#39;entreprise : B2C et B2B — spécifier uniquement si nécessaire/)—>
 
-## En-tête ...
+## En-tête...
 
-Regroupez le contenu en sections pour faciliter la lecture. Le contenu doit inclure des appels à l’action avec des exemples (bons ou mauvais) et des liens vers la documentation, le cas échéant.
+Fragmentez le contenu en sections pour une lecture plus facile. Le contenu doit inclure des appels à l’action avec des exemples (bons ou mauvais) et des liens vers la documentation, le cas échéant.
 
-## En-tête ...
+## En-tête...
 
-Utilisez autant de sections que nécessaire.
+Utilisez uniquement le nombre de sections nécessaire.
 
 ## Informations supplémentaires
 
 <!-- If applicable, add links to additional, more detailed documentation that provides more context about this best practices content.-->
 
-- Rubrique 1
+- Thème 1
 - Rubrique 2
 
 <!-- Template instruction:  Remove all template comments and instructions from the best practices article before committing your changes. -->

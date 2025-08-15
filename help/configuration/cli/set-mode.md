@@ -1,6 +1,6 @@
 ---
 title: Définir le mode de fonctionnement
-description: Découvrez comment définir les modes de fonctionnement d’Adobe Commerce.
+description: En savoir plus sur la définition des modes de fonctionnement d’Adobe Commerce.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
@@ -13,17 +13,17 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Pour améliorer la sécurité et la facilité d&#39;utilisation, nous avons ajouté une commande qui passe de [modes d&#39;application](../bootstrap/application-modes.md) du développeur à la production et vice versa.
+Pour améliorer la sécurité et la facilité d’utilisation, nous avons ajouté une commande qui fait basculer [modes d’application](../bootstrap/application-modes.md) du développement vers la production et vice versa.
 
-Le mode de production offre de meilleures performances car les fichiers de vue statiques sont renseignés dans le répertoire `pub/static` et à cause de la compilation du code.
+Le mode de production offre de meilleures performances car les fichiers d’affichage statiques sont renseignés dans le répertoire `pub/static` et en raison de la compilation de code.
 
 >[!INFO]
 >
->Dans les versions 2.0.6 et ultérieures, Commerce ne définit pas explicitement les autorisations de fichier ou de répertoire lorsque vous passez d’un mode par défaut, de développement à un mode de production. Contrairement aux autres modes, les modes de développement et de production sont définis dans le fichier `env.php`. Adobe Commerce sur l’infrastructure cloud prend uniquement en charge les modes de production et de maintenance.
+>Dans les versions 2.0.6 et ultérieures, Commerce ne définit pas explicitement les autorisations de fichiers ou de répertoires lorsque vous basculez entre les modes par défaut, de développement et de production. Contrairement aux autres modes, les modes de développement et de production sont définis dans le fichier `env.php`. Adobe Commerce sur les infrastructures cloud prend uniquement en charge les modes de production et de maintenance.
 >
->Voir [Propriété Commerce et autorisations dans le développement et la production](../deployment/file-system-permissions.md).
+>Voir [Propriété et autorisations Commerce en développement et en production](../deployment/file-system-permissions.md).
 
-Lorsque vous passez en mode Développeur ou Production, nous effacons le contenu des répertoires suivants :
+Lorsque vous passez en mode de développement ou de production, nous effaçons le contenu des répertoires suivants :
 
 ```
 var/cache
@@ -35,8 +35,8 @@ pub/static
 
 Exceptions :
 
-- `.htaccess` fichiers ne sont pas supprimés
-- `pub/static` contient un fichier qui spécifie la version du contenu statique ; ce fichier n’est pas supprimé.
+- Les fichiers `.htaccess` ne sont pas supprimés
+- `pub/static` contient un fichier qui spécifie la version du contenu statique ; ce fichier n’est pas supprimé
 
 >[!INFO]
 >
@@ -44,7 +44,7 @@ Exceptions :
 
 ## Afficher le mode actuel
 
-Pour ce faire, la méthode la plus simple consiste à exécuter cette commande en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md). Si vous avez partagé l’hébergement, il s’agit de l’utilisateur que votre fournisseur vous donne pour vous connecter au serveur. Si vous disposez d’un serveur privé, il s’agit généralement d’un compte utilisateur local sur le serveur Commerce.
+Pour ce faire, le plus simple consiste à exécuter cette commande en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md). Si vous avez partagé l’hébergement, il s’agit de l’utilisateur que votre fournisseur vous donne pour vous connecter au serveur. Si vous disposez d’un serveur privé, il s’agit généralement d’un compte utilisateur local sur le serveur Commerce.
 
 Utilisation des commandes :
 
@@ -52,7 +52,7 @@ Utilisation des commandes :
 bin/magento deploy:mode:show
 ```
 
-Un message similaire à celui-ci s’affiche :
+Un message similaire au suivant s’affiche :
 
 ```
 Current application mode: {mode}. (Note: Environment variables may override this value.)
@@ -72,11 +72,11 @@ bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 
 où :
 
-- **`{mode}`** est requis ; il peut s’agir de `developer` ou de `production`
+- **`{mode}`** est obligatoire ; il peut être `developer` ou `production`
 
-- **`--skip-compilation`** est un paramètre facultatif que vous pouvez utiliser pour ignorer la [compilation de code](../cli/code-compiler.md) lorsque vous passez en mode de production.
+- **`--skip-compilation`** est un paramètre facultatif que vous pouvez utiliser pour ignorer [compilation de code](../cli/code-compiler.md) lorsque vous passez en mode de production.
 
-Voici des exemples.
+Des exemples suivent.
 
 ### Passage en mode de production
 
@@ -84,7 +84,7 @@ Voici des exemples.
 bin/magento deploy:mode:set production
 ```
 
-Messages similaires à l’affichage suivant :
+Des messages similaires à ce qui suit s’affichent :
 
 ```
 Enabled maintenance mode
@@ -127,9 +127,9 @@ Enabled production mode.
 
 ### Passer en mode Développeur
 
-Lorsque vous passez du mode de production au mode Développeur, vous devez effacer les classes générées et les entités du gestionnaire d’objets telles que les proxies pour éviter les erreurs inattendues. Vous pouvez ensuite modifier les modes. Procédez comme suit :
+Lorsque vous passez du mode de production au mode de développement, vous devez effacer les classes générées et les entités Object Manager telles que les proxies pour éviter les erreurs inattendues. Après cela, vous pouvez changer de mode. Procédez comme suit :
 
-1. Si vous passez du mode de production au mode développeur, supprimez le contenu des répertoires `generated/code` et `generated/metadata` :
+1. Si vous passez du mode production au mode développement, supprimez le contenu des répertoires `generated/code` et `generated/metadata` :
 
    ```bash
    rm -rf <magento_root>/generated/metadata/* <magento_root>/generated/code/*
@@ -159,8 +159,8 @@ Le message suivant s’affiche :
 Enabled default mode.
 ```
 
-### Exécutez des commandes de ligne de commande n’importe où
+### Exécutez les commandes de l’interface de ligne de commande n’importe où.
 
 [Exécutez les commandes de l’interface de ligne de commande n’importe où](../cli/config-cli.md#config-install-cli-first).
 
-Si vous n&#39;avez pas ajouté `<Commerce-install-directory>/bin` à votre système `PATH`, vous pouvez vous attendre à une erreur lors de l&#39;exécution de la commande seule.
+Si vous n’avez pas ajouté de `<Commerce-install-directory>/bin` à votre `PATH` système, vous pouvez vous attendre à une erreur lors de l’exécution de la commande seule.

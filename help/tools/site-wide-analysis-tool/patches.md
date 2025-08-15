@@ -11,18 +11,18 @@ ht-degree: 0%
 
 # [!DNL Patches]
 
-La page [!DNL Site-Wide Analysis Tool's] [!UICONTROL Patches] affiche tous les correctifs disponibles pour votre boutique Adobe Commerce. Ces correctifs permettent de résoudre les problèmes que vous pouvez rencontrer avec Adobe Commerce. Reportez-vous à l’article [Outil de correctifs de qualité publié : nouvel outil pour les correctifs de qualité en libre-service](https://support.magento.com/hc/en-us/articles/360047139492) dans notre [!DNL support knowledge base].
+La page [!DNL Site-Wide Analysis Tool's] [!UICONTROL Patches] affiche tous les correctifs disponibles pour votre boutique Adobe Commerce. Ces correctifs permettent de résoudre les problèmes que vous pouvez rencontrer avec Adobe Commerce. Reportez-vous à l’article [Outil de correctifs de qualité publié : nouvel outil pour appliquer des correctifs de qualité en libre-service](https://support.magento.com/hc/en-us/articles/360047139492) dans notre [!DNL support knowledge base].
 
 >[!NOTE]
 >
 >Certains des correctifs recommandés sont facultatifs et nécessitent que vous déterminiez si un correctif spécifique doit être appliqué.
 
-## Quand utiliser
+## Quand l’utiliser
 
-Utilisez l’onglet [!UICONTROL Patches] pour afficher les correctifs disponibles pour votre instance Adobe Commerce. Cet onglet affiche tous les correctifs, leurs détails et leur état.
+Utilisez l’onglet [!UICONTROL Patches] pour afficher les correctifs disponibles pour votre instance Adobe Commerce. Cet onglet affiche tous les correctifs, leurs détails et leur statut.
 
 ## Avantages
 
-* Obtenez toutes les informations pertinentes concernant les correctifs au même endroit.
+* Obtenez toutes les informations pertinentes concernant les correctifs en un seul endroit.
 
-* Correction de problèmes à l’aide des correctifs disponibles dans l’onglet [!UICONTROL Patches].
+* Résolvez les problèmes à l’aide des correctifs disponibles dans l’onglet [!UICONTROL Patches] .

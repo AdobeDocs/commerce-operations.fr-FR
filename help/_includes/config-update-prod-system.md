@@ -7,9 +7,9 @@ ht-degree: 0%
 ---
 # Mettre à jour le système de production
 
-**Pour mettre à jour le système de production** :
+**Pour mettre à jour le système d’exploitation** :
 
-1. Connectez-vous au système de production en tant que propriétaire du système de fichiers.
+1. Connectez-vous au système d’exploitation en tant que propriétaire du système de fichiers.
 1. Passez à la racine de l’application et activez le mode de maintenance.
 
    ```bash
@@ -20,9 +20,9 @@ ht-degree: 0%
    bin/magento maintenance:enable
    ```
 
-   Pour obtenir des options supplémentaires, telles que la possibilité de définir une liste blanche des adresses IP, voir [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
+   Pour d’autres options, telles que la possibilité de définir une liste autorisée d’adresses IP, voir [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
 
-1. Arrêtez tous les programmes de travail de file d’attente en cours d’exécution en définissant `cron_run` sur `false` dans `app/etc/env.php` comme suit :
+1. Arrêtez tous les programmes de traitement de file d’attente en cours d’exécution en définissant `cron_run` sur `false` dans `app/etc/env.php` comme suit :
 
    ```php?start_inline=1
    'cron_consumers_runner' => [
@@ -36,19 +36,19 @@ ht-degree: 0%
    bin/magento app:config:import
    ```
 
-1. Enfin, `kill` tout processus client actif.
+1. Enfin, `kill` tous les processus consommateurs actifs.
 
    ```bash
    kill <PID>
    ```
 
-   Où `PID` est l’ID de processus à supprimer, par exemple :
+   Où `PID` est l’ID du processus à interrompre, par exemple :
 
    ```bash
    kill 1234
    ```
 
-1. Extrayez le code du contrôle source.
+1. Extrayez le code du contrôle de code source.
 
    ```bash
    git pull mconfig m2.2_deploy
@@ -66,7 +66,7 @@ ht-degree: 0%
    bin/magento cache:clean
    ```
 
-1. Mode de maintenance de fin.
+1. Terminez le mode de maintenance.
 
    ```bash
    bin/magento maintenance:disable

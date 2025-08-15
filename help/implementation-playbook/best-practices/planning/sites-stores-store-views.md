@@ -1,6 +1,6 @@
 ---
-title: Bonnes pratiques relatives à la configuration des sites, des magasins et des vues des magasins
-description: Découvrez les bonnes pratiques de configuration des sites, des magasins et de la vue du magasin afin d’optimiser les performances du site.
+title: Bonnes pratiques relatives à la configuration des sites, des boutiques et des vues de boutique
+description: Découvrez les bonnes pratiques de configuration des sites, des boutiques et des affichages de boutique afin d’optimiser les performances du site.
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
@@ -11,35 +11,35 @@ ht-degree: 0%
 
 ---
 
-# Bonne pratique pour la configuration des sites, des magasins et de l’affichage en magasin
+# Bonne pratique pour la configuration des sites, des boutiques et de la vue de boutique
 
-Pour Adobe Commerce sur l’infrastructure cloud, les bonnes pratiques s’appliquent spécifiquement à l’environnement de production (et éventuellement à l’environnement d’évaluation sur l’architecture Pro, soumis à des contraintes de ressources) qui aurait plus de ressources que les environnements d’intégration et de développement.
+Pour Adobe Commerce sur les infrastructures cloud, les bonnes pratiques s’appliquent spécifiquement à l’environnement de production (et éventuellement à l’architecture Staging on Pro, soumise à des contraintes de ressources) qui disposerait de davantage de ressources que les environnements d’intégration et de développement.
 
 ## Produits et versions concernés
 
 [Toutes les versions prises en charge](../../../release/versions.md) de :
 
-- Adobe Commerce sur l’infrastructure cloud
-- Adobe Commerce sur site
+- Adobe Commerce sur les infrastructures cloud
+- Adobe Commerce On-Premise
 
-## Stratégies pour améliorer les performances
+## Stratégies d’amélioration des performances
 
 Si votre projet nécessite de nombreux sites, magasins ou vues de magasin, vous pouvez utiliser les stratégies suivantes pour améliorer les performances :
 
-- Restructurer le catalogue en transférant la logique vers des catégories
-- Séparez les listes de prix des données de catalogue à l’aide d’un prix externe et d’un système de gestion des prix (PMS).
-- Utiliser un stockage de données non SQL alternatif comme Elasticsearch
+- Restructurer le catalogue en transférant la logique aux catégories
+- Séparez les tarifs des données du catalogue à l&#39;aide d&#39;un prix externe et d&#39;un système de gestion des prix (PMS).
+- Utiliser un autre stockage de données noSQL comme Elasticsearch
 
-## Incidences sur les performances potentielles
+## Impacts potentiels sur les performances
 
-Les sites web et les magasins sont des multiplicateurs pour les données de catalogue. Par conséquent, le fait d’avoir de nombreux sites web et magasins peut avoir une incidence négative sur les performances du site des manières suivantes :
+Les sites web et les magasins sont des multiplicateurs pour les données de catalogue. Par conséquent, un grand nombre de sites web et de magasins peut avoir une incidence négative sur les performances du site des manières suivantes :
 
-- Des tables d’index plus volumineuses augmentent le temps nécessaire pour terminer les opérations d’indexation [Index de prix].
-- La durée accrue de récupération de la configuration de l’application dégrade le temps de réponse du storefront pour les pages de catalogue non mises en cache.
-- Augmentation significative du temps nécessaire à l’exécution des opérations de sauvegarde dans l’administrateur, car les données sont enregistrées séparément pour chaque site web.
+- Les tables d’index plus volumineuses augmentent le temps nécessaire aux opérations d’indexation [Indice de prix].
+- L’augmentation du temps de récupération de la configuration de l’application dégrade le temps de réponse du storefront pour les pages de catalogue non mises en cache.
+- Augmentation significative du temps nécessaire pour terminer les opérations d’enregistrement dans l’Administration, car les données sont enregistrées séparément pour chaque site web.
 
 
 ## Informations supplémentaires
 
-- [Comprendre les sites web, les magasins et les vues de magasin](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [ Configuration de plusieurs sites Web ou magasins](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [Présentation des sites web, des boutiques et des affichages de boutique](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [Configurer plusieurs sites web ou magasins](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)

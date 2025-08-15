@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Upgrade Compatibility Tool] requirements'
-description: Vérifiez que votre système répond aux exigences nécessaires pour exécuter le  [!DNL Upgrade Compatibility Tool]  dans une interface de ligne de commande pour votre projet Adobe Commerce.
+title: '[!DNL Upgrade Compatibility Tool] requises'
+description: Vérifiez que votre système répond à la configuration requise pour exécuter dans une interface  [!DNL Upgrade Compatibility Tool]  ligne de commande pour votre projet Adobe Commerce.
 exl-id: b8af2e07-3d28-4937-bb88-b0a1c88a2938
 source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 {{commerce-only}}
 
-Vous devez disposer de [clés d’accès Adobe Commerce](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) pour télécharger et utiliser [!DNL Upgrade Compatibility Tool]. Ajoutez vos clés d’accès Adobe Commerce à votre fichier `auth.json`, situé par défaut à l’emplacement `~/.composer`.
+Vous devez disposer de [clés d’accès Adobe Commerce](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) pour télécharger et utiliser le [!DNL Upgrade Compatibility Tool]. Ajoutez vos clés d’accès Adobe Commerce à votre fichier `auth.json`, qui se trouve par défaut à l’emplacement `~/.composer`.
 
 >[!NOTE]
 >
->Vérifiez la variable d&#39;environnement **COMPOSER_HOME** pour voir où se trouve le fichier `auth.json`.
+>Vérifiez votre variable d’environnement **COMPOSER_HOME** pour savoir où se trouve le fichier `auth.json`.
 
-La **clé publique** correspond au _nom d’utilisateur_ tandis que la **clé privée** correspond au _mot de passe_ :
+La **clé publique** correspond au _nom d&#39;utilisateur_ tandis que la **clé privée** correspond au _mot de passe_ :
 
 ## Exemple de clés d’accès Adobe Commerce
 
@@ -34,22 +34,22 @@ La **clé publique** correspond au _nom d’utilisateur_ tandis que la **clé pr
 
 >[!NOTE]
 >
-> Si vous ne configurez pas correctement vos **clés d&#39;accès Adobe Commerce**, vous ne pouvez pas télécharger [!DNL Upgrade Compatibility Tool] et la commande `composer create-project` échouera.
+> Si vous ne configurez pas correctement vos clés d&#39;accès **Adobe Commerce**, vous ne pouvez pas télécharger le [!DNL Upgrade Compatibility Tool] et la commande `composer create-project` échouera.
 
-Exécutez `composer install` dans votre terminal pour installer les dépendances.
+Exécutez `composer install` dans votre terminal pour installer des dépendances.
 
 ## Configuration requise
 
 La configuration minimale requise pour utiliser le [!DNL Upgrade Compatibility Tool] dans une interface de ligne de commande est la suivante :
 
-| **Exigences** | **Contraintes** |
+| **Conditions requises** | **Contraintes** |
 |----------------|-----------------|
-| version PHP | >= 7.3 |
+| Version PHP | >= 7,3 |
 | Compositeur | aucune exigence connue. |
-| Node.js | Node.js versions `^12.22.0`, `^14.17.0` ou `>=16.0.0` (voir [ Installation de Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)) |
-| Limites de mémoire | Au moins 2 Go de mémoire vive. |
+| Node.js | Versions `^12.22.0`, `^14.17.0` ou `>=16.0.0` de Node.js (voir [Installation de Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)) |
+| Limites de la mémoire | Au moins 2 Go de RAM. |
 
-[!DNL Upgrade Compatibility Tool] nécessite [PCNTL](https://www.php.net/manual/en/book.pcntl.php) et d’autres extensions PHP pour l’exécution. Vérifiez les extensions PHP requises à l’aide de la commande `composer check-platform-reqs` :
+[!DNL Upgrade Compatibility Tool] nécessite [PCNTL](https://www.php.net/manual/en/book.pcntl.php) et d&#39;autres extensions PHP pour l&#39;exécution. Vérifiez les extensions PHP requises à l&#39;aide de `composer check-platform-reqs` commande :
 
 ```bash
 # Example output of `composer check-platform-reqs` command for UCT 2.2.6 and PHP 7.4:
@@ -74,10 +74,10 @@ ext-zip       1.15.6    success
 php           7.4.30    success
 ```
 
-Adobe Commerce est uniquement pris en charge sur les systèmes d’exploitation Linux. Vous pouvez exécuter le [!DNL Upgrade Compatibility Tool] dans un système d’exploitation Linux. Il n’est pas nécessaire d’exécuter l’ [!DNL Upgrade Compatibility Tool] où se trouve votre instance Adobe Commerce.
+Adobe Commerce n’est pris en charge que sur les systèmes d’exploitation Linux. Vous pouvez exécuter le [!DNL Upgrade Compatibility Tool] sous un système d’exploitation Linux. Il n’est pas nécessaire d’exécuter le [!DNL Upgrade Compatibility Tool] où se trouve votre instance Adobe Commerce.
 
-Il est nécessaire que le [!DNL Upgrade Compatibility Tool] ait accès au code source de l&#39;instance Adobe Commerce. Par exemple, vous pouvez l’installer sur un serveur et le pointer vers votre installation Adobe Commerce sur un autre serveur.
+Il est nécessaire que le [!DNL Upgrade Compatibility Tool] ait accès au code source de l’instance Adobe Commerce. Par exemple, vous pouvez l’installer sur un serveur et le pointer vers votre installation Adobe Commerce sur un autre serveur.
 
-Si vous exécutez le [!DNL Upgrade Compatibility Tool] sur une instance Adobe Commerce avec des modules et des fichiers volumineux, l’outil peut nécessiter une quantité élevée de RAM (au moins 2 Go).
+Si vous exécutez le [!DNL Upgrade Compatibility Tool] sur une instance Adobe Commerce avec des modules et des fichiers volumineux, l’outil peut nécessiter une quantité de RAM élevée (au moins 2 Go).
 
-Exécutez le [!DNL Upgrade Compatibility Tool] à partir des projets [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=fr) pour [Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=fr){target=_blank}.
+Exécutez le [!DNL Upgrade Compatibility Tool] à partir du [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) pour les projets [Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank}.

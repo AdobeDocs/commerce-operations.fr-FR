@@ -23,7 +23,7 @@ Adobe offre une prolongation de prise en charge d’un an sans frais supplément
 >[!NOTE]
 >
 >- Adobe recommande d’installer ou de mettre à niveau Adobe Commerce vers le dernier correctif de sécurité disponible pour chaque version.
->- Pour connaître les autres mises à jour de sécurité, voir [Mises à jour de sécurité pour Magento/Adobe Commerce](https://helpx.adobe.com/fr/security/products/magento.html).
+>- Pour connaître les autres mises à jour de sécurité, voir [Mises à jour de sécurité pour Magento/Adobe Commerce](https://helpx.adobe.com/security/products/magento.html).
 >- Pour connaître les tarifs, voir Tarification [Adobe Commerce](https://business.adobe.com/products/magento/pricing.html).
 
 {{$include /help/_includes/templated/release/core-releases.md}}

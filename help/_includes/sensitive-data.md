@@ -9,13 +9,13 @@ ht-degree: 1%
 
 Adobe Commerce utilise votre clé de chiffrement pour chiffrer les éléments suivants :
 
-* Informations sur la carte de crédit
-* Noms d’utilisateur et mots de passe spécifiés dans la configuration Admin (par exemple, connexions aux passerelles de paiement)
+* Informations de carte de crédit
+* Noms d’utilisateur et mots de passe spécifiés dans la configuration d’administration (par exemple, connexions aux passerelles de paiement)
 * Valeurs CAPTCHA envoyées sur le réseau
 
-Adobe Commerce do *not* encrypt :
+Adobe Commerce ne chiffre ** :
 
 * Noms d’utilisateur et mots de passe administratifs et clients (ces mots de passe sont hachés)
 * Adresse
 * Numéro de téléphone
-* Autres types d’informations d’identification personnelle, à l’exception des numéros de carte de crédit
+* Autres types d&#39;informations d&#39;identification personnelle, à l&#39;exception des numéros de carte de crédit

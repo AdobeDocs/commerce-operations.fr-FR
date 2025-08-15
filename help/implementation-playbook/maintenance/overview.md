@@ -1,6 +1,6 @@
 ---
-title: Présentation de la maintenance et de l’assistance
-description: Effectuez correctement la maintenance et la prise en charge de votre mise en oeuvre Adobe Commerce nouvellement lancée.
+title: Présentation de la maintenance et du support
+description: Maintenez et prenez en charge correctement votre nouvelle implémentation d’Adobe Commerce.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
@@ -10,28 +10,28 @@ ht-degree: 0%
 
 ---
 
-# Présentation de la maintenance et de l’assistance
+# Présentation de la maintenance et du support
 
-Les consommateurs ont déjà plus d&#39;options que jamais à portée de main. Alors que les marques ne manquent pas pour attirer l&#39;attention, vous ne pouvez donner aucune raison aux consommateurs de regarder vos concurrents. Comme nous l&#39;avons vu, la loyauté et la patience avec les consommateurs sont minces. Il ne leur faut pas grand chose pour abandonner votre marque et avoir une mauvaise expérience du commerce électronique est un moyen facile pour eux d&#39;abandonner.
+Les consommateurs ont déjà plus d&#39;options à portée de main que jamais auparavant. Comme il n&#39;y a pas de pénurie de marques qui rivalisent pour attirer l&#39;attention, vous ne pouvez donner aux consommateurs aucune raison de regarder vos concurrents. Comme nous l&#39;avons vu, la loyauté et la patience envers les consommateurs sont minces. Il n&#39;en faut pas beaucoup pour qu&#39;ils abandonnent votre marque et avoir une mauvaise expérience d&#39;e-commerce est un moyen facile pour eux d&#39;abandonner.
 
-Cela conduit à deux points complémentaires. Le premier est que le lancement d&#39;un nouveau site de commerce électronique ne signifie pas que vous pouvez passer à autre chose. Le taux de changement du marketing et des besoins des consommateurs est trop élevé que les marques doivent constamment évoluer pour suivre le rythme. Ce qui nous amène au deuxième point. Si votre soutien au commerce électronique n&#39;est là que pour réparer quelque chose quand il tombe en panne, alors il sera impossible de répondre aux attentes croissantes des consommateurs. En bref, la prise en charge du commerce électronique ne doit pas simplement maintenir le fonctionnement de votre site, mais doit également faire progresser votre marque. Cette section vous aidera à commencer à faire avancer votre marque après le lancement de votre site.
+Cela nous amène à deux points complémentaires. La première est que le lancement d&#39;un nouveau site d&#39;e-commerce ne signifie pas que vous pouvez passer à autre chose. Le rythme de l&#39;évolution du marketing et des besoins des consommateurs est trop important pour que les marques évoluent constamment pour suivre le rythme. Ce qui nous amène au deuxième point. Si votre soutien au commerce électronique n&#39;est là que pour réparer quelque chose qui casse, alors il sera impossible de répondre aux attentes croissantes des consommateurs. En résumé, l’assistance en matière d’e-commerce ne doit pas se contenter de faire fonctionner votre site, elle doit faire progresser votre marque. Cette section vous aidera à commencer à faire progresser votre marque après le lancement de votre site.
 
 ## Phase de transition
 
-La mise en place d’une prise en charge de la production lors de la phase de transition d’un projet est l’un des facteurs de succès les plus essentiels pour une entreprise commerciale. Une fois la mise en oeuvre terminée et le site mis en ligne, l’équipe d’assistance à la production doit être prête et équipée pour prendre la relève des activités d’assistance. La pratique habituelle consiste à renforcer l’équipe de développement pendant la phase de transition et à mettre en place une équipe plus petite pour l’assistance.
+La mise en place d’un support de production pendant la phase de transition d’un projet est l’un des facteurs de succès les plus critiques pour une entreprise commerciale. Une fois la mise en œuvre terminée et le site activé, l’équipe d’assistance à la production doit être prête et équipée pour prendre en charge les activités d’assistance. La pratique habituelle consiste à réduire l’équipe de développement pendant la phase de transition et à créer une équipe plus petite en place pour le soutien.
 
-Le transfert des connaissances s’effectue au cours de l’ensemble du projet et une approche de transition réussie se produit en parallèle de la diffusion. De plus, des guides d’utilisation et un wiki technologique sont des outils importants qui permettent à l’équipe d’organiser des ateliers tout au long des phases du projet.
+Le transfert des connaissances se fait tout au long du projet, et une approche de transition réussie se produit parallèlement à la mise en œuvre. En outre, les guides de l&#39;utilisateur et un wiki technologique sont des outils importants qui permettent à l&#39;équipe de participer à des ateliers tout au long des phases du projet.
 
-Le diagramme suivant montre les phases et activités qui seraient incluses dans un résultat de transition réussi :
+Le diagramme suivant montre les phases et les activités qui seraient incluses dans un résultat de transition réussi :
 
-![Diagramme présentant les phases du processus de transition](../../assets/playbooks/transition-diagram.svg)
+![Diagramme montrant les phases du processus de transition](../../assets/playbooks/transition-diagram.svg)
 
 >[!NOTE]
 >
-> Il est important de mettre en place une liste de contrôle de transition qui aide les chefs de projet à accomplir les tâches requises pour configurer correctement l’équipe d’assistance après production. Cette transition doit faire partie du plan de projet global et les tâches doivent être incluses dans le planning.
+> Il est important d’établir une liste de contrôle de transition qui aide les chefs de projet à accomplir les tâches requises pour mettre en place avec succès l’équipe d’assistance de post-production. Cette transition devrait faire partie du plan global du projet et les tâches doivent être incluses dans le calendrier.
 
-Identifier le modèle de prise en charge approprié pour votre entreprise afin de continuer à optimiser votre plateforme (et les pratiques commerciales dans leur ensemble) est une étape essentielle pour maintenir le travail acharné qui a été effectué pendant le processus de mise en oeuvre. Grâce à un plan d’assistance complet et permanent, votre site commercial peut répondre aux attentes de vos clients et vous pouvez continuer à atteindre vos objectifs.
+L’identification du modèle d’assistance approprié pour votre entreprise afin de continuer à améliorer et à optimiser votre plateforme et votre pratique commerciale dans son ensemble est une étape essentielle pour conserver tout le travail effectué au cours du processus de mise en œuvre. Avec un plan d’assistance complet et continu en place, votre site commercial peut répondre aux attentes de vos clients et vous pouvez continuer à atteindre vos objectifs.
 
-Lors du déploiement d’Adobe Commerce, il est essentiel de réfléchir aux éléments à inclure dans votre stratégie de maintenance et de support.
-La prise en charge d’experts est incluse dans une licence Adobe Commerce. Pour plus d’informations sur l’assistance d’experts et les plans d’assistance à l’Adobe, reportez-vous à la section [Plans d’assistance à l’Adobe](https://business.adobe.com/customers/consulting-services/premier-support.html).
-Outre les plans d’assistance à l’Adobe, il existe des termes d’assistance à l’Magento hérités. Pour connaître les services d’assistance qui vous sont applicables, veuillez vous référer à votre contrat pour consulter le contrat d’assistance que vous avez ou consulter votre équipe de compte d’Adobe.
+Lors du déploiement d’Adobe Commerce, il est essentiel de réfléchir aux éléments à inclure dans votre stratégie de maintenance et d’assistance.
+L’assistance d’experts est incluse dans une licence Adobe Commerce. Pour plus d’informations sur l’assistance d’experts et les programmes d’assistance Adobe, consultez les [programmes d’assistance Adobe](https://business.adobe.com/customers/consulting-services/premier-support.html).
+Outre les programmes d’assistance Adobe, il existe des conditions d’assistance Magento héritées. Pour connaître les services d’assistance qui vous concernent, veuillez consulter votre contrat afin de connaître le contrat d’assistance dont vous disposez ou adressez-vous à l’équipe chargée de votre compte Adobe.

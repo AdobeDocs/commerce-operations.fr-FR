@@ -1,6 +1,6 @@
 ---
-title: Exécution de tests unitaires
-description: Exécutez des tests unitaires définis dans la base de code Adobe Commerce.
+title: Exécuter des tests unitaires
+description: Exécutez des tests unitaires définis dans la base de code d’Adobe Commerce.
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
@@ -9,15 +9,15 @@ ht-degree: 0%
 
 ---
 
-# Exécution de tests unitaires
+# Exécuter des tests unitaires
 
 {{file-system-owner}}
 
-Cette commande exécute un ensemble de tests définis dans la base de code Commerce 2. Vous pouvez exécuter tous les tests ou tests que vous avez sélectionnés. Chaque fois qu’un type non pris en charge est spécifié, le programme s’arrête et répertorie tous les types disponibles. Après l’exécution, un rapport détaillé affiche l’exécution et les résultats du test.
+Cette commande exécute un ensemble de tests définis dans la base de code Commerce 2. Vous pouvez exécuter tous les tests ou les tests que vous sélectionnez. Lorsqu’un type non pris en charge est spécifié, le programme s’arrête et répertorie tous les types disponibles. Une fois l’exécution terminée, un rapport détaillé affiche l’exécution du test et ses résultats.
 
 ## Conditions préalables
 
-Avant d’exécuter cette commande, les _must_ suivants doivent être vrais :
+Avant d’exécuter cette commande, la valeur suivante _doit_ doit être vraie :
 
 - Le module `Magento_Developer` doit être activé. Vous pouvez l’activer comme suit :
 
@@ -25,13 +25,13 @@ Avant d’exécuter cette commande, les _must_ suivants doivent être vrais :
   bin/magento module:enable [--force] Magento_Developer
   ```
 
-  Utilisez l’option `--force` uniquement si nécessaire.
+  N’utilisez l’option `--force` que si nécessaire.
 
 - Votre système doit être configuré pour exécuter les tests souhaités.
 
-Par exemple, pour exécuter des tests d’intégration, vous devez copier `dev/tests/integration/etc/install-config-mysql.php.dist` vers `dev/tests/integration/etc/install-config-mysql.php` et le modifier pour l’adapter à votre environnement.
+Par exemple, pour exécuter des tests d’intégration, vous devez copier le `dev/tests/integration/etc/install-config-mysql.php.dist` dans `dev/tests/integration/etc/install-config-mysql.php` et le modifier en fonction de votre environnement.
 
-## Exécution de tests
+## Exécution des tests
 
 Utilisation des commandes :
 

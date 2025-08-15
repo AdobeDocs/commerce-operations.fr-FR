@@ -5,9 +5,9 @@ source-wordcount: '138'
 ht-degree: 1%
 
 ---
-# Paramètres de configuration MariaDB
+# Paramètres de configuration de MariaDB
 
-La réindexation sur MariaDB 10.4 et 10.6 prend plus de temps que les versions précédentes de MariaDB ou de MySQL. Pour accélérer la réindexation, nous vous recommandons de définir les paramètres de configuration MariaDB suivants :
+La réindexation sur MariaDB 10.4 et 10.6 prend plus de temps que les versions précédentes de MariaDB ou MySQL. Pour accélérer la réindexation, nous vous recommandons de définir les paramètres de configuration MariaDB suivants :
 
 * [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
 * [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
@@ -21,11 +21,11 @@ Par exemple :
 * Adobe Commerce 2.4.6 avec MariaDB version 10.5.1 ou ultérieure
 * Adobe Commerce 2.3.5 avec MariaDB version 10.3 ou antérieure
 
-Outre ces recommandations, consultez l’administrateur de la base de données pour configurer les paramètres suivants :
+Outre ces recommandations, contactez l’administrateur de votre base de données pour configurer les paramètres suivants :
 
 >[!NOTE]
 >
->Ces paramètres sont disponibles uniquement pour les déploiements sur site. Les clients d’Adobe Commerce sur l’infrastructure cloud n’ont pas accès à ces paramètres.
+>Ces paramètres sont disponibles pour les déploiements sur site uniquement. Les clients Adobe Commerce sur les infrastructures cloud n’ont pas accès à ces paramètres.
 
 * [`--query-cache-limit`](https://mariadb.com/kb/en/server-system-variables/#query_cache_limit)
 * [`--query-cache-size`](https://mariadb.com/kb/en/server-system-variables/#query_cache_size)

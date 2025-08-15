@@ -1,5 +1,5 @@
 ---
-title: Sauvegarde et restauration du système de fichiers, du média et de la base de données
+title: Sauvegarde et restauration du système de fichiers, du support et de la base de données
 description: Pour sauvegarder et restaurer votre application Adobe Commerce, procédez comme suit.
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
@@ -9,25 +9,25 @@ ht-degree: 0%
 
 ---
 
-# Sauvegarde et restauration du système de fichiers, du média et de la base de données
+# Sauvegarde et restauration du système de fichiers, du support et de la base de données
 
 Cette commande permet de sauvegarder :
 
 * Le système de fichiers (à l’exclusion des répertoires `var` et `pub/static`)
-* Répertoire `pub/media`
-* La base
+* Le répertoire `pub/media`
+* La base de données
 
 Les sauvegardes sont stockées dans le répertoire `var/backups` et peuvent être restaurées à tout moment à l’aide de la commande [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files).
 
-Après la sauvegarde, vous pouvez [restaurer](#rollback) ultérieurement.
+Après la sauvegarde, vous pouvez [restaurer](#rollback) plus tard.
 
 >[!TIP]
 >
->Pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Gestion des instantanés et des sauvegardes](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) dans le _guide Cloud_.
+>Pour les projets d’infrastructure cloud d’Adobe Commerce, voir [Snapshots et gestion des sauvegardes](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) dans le guide _Cloud_.
 
-## Activation des sauvegardes
+## Activer les sauvegardes
 
-La fonction de sauvegarde est désactivée par défaut. Pour l’activer, saisissez la commande d’interface de ligne de commande suivante :
+La fonctionnalité de sauvegarde est désactivée par défaut. Pour l’activer, saisissez la commande d’interface de ligne de commande suivante :
 
 ```bash
 bin/magento config:set system/backup/functionality_enabled 1
@@ -36,21 +36,21 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**Avis d’obsolescence :**
->La fonctionnalité de sauvegarde est obsolète depuis les versions 2.1.16, 2.2.7 et 2.3.0. Nous vous recommandons d’étudier des technologies de sauvegarde supplémentaires et des outils de sauvegarde binaires (tels que Percona XtraBackup).
+>>La fonctionnalité de sauvegarde est obsolète à partir des versions 2.1.16, 2.2.7 et 2.3.0. Nous vous recommandons d’étudier d’autres technologies de sauvegarde et outils de sauvegarde binaire (tels que Percona XtraBackup).
 
-## Définition de la limite des fichiers ouverts
+## Définir la limite des fichiers ouverts
 
-La restauration d’une sauvegarde précédente peut échouer de manière silencieuse, ce qui entraîne l’écriture de données incomplètes dans le système de fichiers ou la base de données à l’aide de la commande [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files).
+La restauration d’une sauvegarde précédente peut échouer en silence, ce qui entraîne l’écriture de données incomplètes dans le système de fichiers ou la base de données à l’aide de la commande [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files).
 
-Parfois, une longue chaîne de requête entraîne une insuffisance de mémoire de l’utilisateur en raison d’un trop grand nombre d’appels récursifs.
+Parfois, une longue chaîne de requête entraîne une saturation de la mémoire allouée à l’utilisateur en raison d’un trop grand nombre d’appels récursifs.
 
-## Comment définir les fichiers ouverts `ulimit`
+## Comment définir des fichiers ouverts `ulimit`
 
-Nous vous recommandons de définir les fichiers ouverts [`ulimit`](https://ss64.com/bash/ulimit.html) pour l’utilisateur du système de fichiers sur une valeur de `65536` ou plus.
+Nous vous recommandons de définir la [`ulimit`](https://ss64.com/bash/ulimit.html) des fichiers ouverts pour l’utilisateur du système de fichiers sur une valeur de `65536` ou plus.
 
-Vous pouvez le faire sur la ligne de commande ou en faire un paramètre permanent pour l’utilisateur en modifiant son script shell.
+Vous pouvez effectuer cette opération sur la ligne de commande ou en faire un paramètre permanent pour l’utilisateur en modifiant son script shell.
 
-Avant de poursuivre, si ce n’est pas déjà fait, passez à l’[propriétaire du système de fichiers](../prerequisites/file-system/overview.md).
+Avant de poursuivre, si vous ne l’avez pas déjà fait, passez au [propriétaire du système de fichiers](../prerequisites/file-system/overview.md).
 
 Commande :
 
@@ -58,13 +58,13 @@ Commande :
 ulimit -s 65536
 ```
 
-Si nécessaire, vous pouvez définir cette valeur sur une valeur plus élevée.
+Si nécessaire, vous pouvez augmenter cette valeur.
 
 >[!NOTE]
 >
->La syntaxe des fichiers ouverts `ulimit` dépend du shell UNIX que vous utilisez. Le paramètre précédent doit fonctionner avec CentOS et Ubuntu avec le conteneur Bash. Toutefois, pour macOS, le paramètre correct est `ulimit -S 65532`. Pour plus d’informations, consultez la page de gestion ou la référence du système d’exploitation.
+>La syntaxe des `ulimit` de fichiers ouverts dépend du shell UNIX utilisé. Le paramètre précédent doit fonctionner avec CentOS et Ubuntu avec le shell Bash. Toutefois, pour macOS, le paramètre correct est `ulimit -S 65532`. Consultez une page de manuel ou une référence de système d’exploitation pour plus d’informations.
 
-Pour définir éventuellement la valeur dans le conteneur Bash de l’utilisateur :
+Pour définir éventuellement la valeur dans le shell Bash de l’utilisateur :
 
 1. Si vous ne l’avez pas déjà fait, basculez vers le [propriétaire du système de fichiers](../prerequisites/file-system/overview.md).
 1. Ouvrez `/home/<username>/.bashrc` dans un éditeur de texte.
@@ -78,7 +78,7 @@ Pour définir éventuellement la valeur dans le conteneur Bash de l’utilisateu
 
 >[!WARNING]
 >
->Nous vous recommandons d’éviter de définir une valeur pour [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) dans le fichier `php.ini`, car cela peut entraîner des restaurations incomplètes sans préavis d’échec.
+>Nous vous recommandons d’éviter de définir une valeur pour [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) dans le fichier `php.ini`, car cela peut entraîner des restaurations incomplètes sans avertissement d’échec.
 
 ## Sauvegarde
 
@@ -91,23 +91,23 @@ bin/magento setup:backup [--code] [--media] [--db]
 La commande effectue les tâches suivantes :
 
 1. Met le magasin en mode de maintenance.
-1. Exécute l’une des options de commande suivantes.
+1. Exécute l&#39;une des options de commande suivantes.
 
    | Option | Signification | Nom et emplacement du fichier de sauvegarde |
    |--- |--- |--- |
-   | `--code` | Sauvegarde le système de fichiers (à l’exception des répertoires var et pub/static). | `var/backups/<timestamp>/_filesystem.tgz` |
-   | `--media` | Sauvegardez le répertoire pub/média. | `var/backups/<timestamp>/_filesystem_media.tgz` |
-   | `--db` | Sauvegardez la base. | `var/backups/<timestamp>/_db.sql` |
+   | `--code` | Sauvegarde le système de fichiers (à l’exclusion des répertoires var et pub/static). | `var/backups/<timestamp>/_filesystem.tgz` |
+   | `--media` | Sauvegardez le répertoire pub/media. | `var/backups/<timestamp>/_filesystem_media.tgz` |
+   | `--db` | Sauvegardez la base de données. | `var/backups/<timestamp>/_db.sql` |
 
-1. Supprime le magasin hors mode de maintenance.
+1. Permet de sortir le magasin du mode de maintenance.
 
-par exemple pour sauvegarder le système de fichiers et la base de données,
+Par exemple, pour sauvegarder le système de fichiers et la base de données :
 
 ```bash
 bin/magento setup:backup --code --db
 ```
 
-Messages similaires à l’affichage suivant :
+Des messages similaires à ce qui suit s’affichent :
 
 ```
 Enabling maintenance mode
@@ -122,17 +122,17 @@ DB backup path: /var/www/html/magento2/var/backups/1434133011_db.sql
 Disabling maintenance mode
 ```
 
-## Retour arrière
+## Restaurer
 
-Cette section explique comment restaurer une sauvegarde que vous avez effectuée précédemment. Vous devez connaître le nom de fichier du fichier de sauvegarde à restaurer.
+Cette section explique comment restaurer une sauvegarde que vous avez effectuée précédemment. Vous devez connaître le nom du fichier de sauvegarde à restaurer.
 
-Pour connaître le nom de vos sauvegardes, saisissez :
+Pour trouver le nom de vos sauvegardes, saisissez :
 
 ```bash
 bin/magento info:backups:list
 ```
 
-La première chaîne du nom du fichier de sauvegarde est l’horodatage.
+La première chaîne du nom du fichier de sauvegarde est la date et l’heure.
 
 Pour restaurer une sauvegarde précédente, saisissez :
 
@@ -140,13 +140,13 @@ Pour restaurer une sauvegarde précédente, saisissez :
 bin/magento setup:rollback [-c|--code-file="<name>"] [-m|--media-file="<name>"] [-d|--db-file="<name>"]
 ```
 
-Par exemple, pour restaurer une sauvegarde multimédia nommée `1440611839_filesystem_media.tgz`, saisissez
+Par exemple, pour restaurer une sauvegarde de média nommée `1440611839_filesystem_media.tgz`, saisissez
 
 ```bash
 bin/magento setup:rollback -m 1440611839_filesystem_media.tgz
 ```
 
-Messages similaires à l’affichage suivant :
+Des messages similaires à ce qui suit s’affichent :
 
 ```
 [SUCCESS]: Media rollback completed successfully.

@@ -33,7 +33,7 @@ Assurez-vous d’avoir mis à jour toutes les exigences système et dépendances
 
 >[!NOTE]
 >
->Pour les projets Pro d’Adobe Commerce sur les infrastructures cloud, vous devez créer un ticket [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour installer ou mettre à jour les services dans les environnements d’évaluation et de production. Indiquez les changements de service nécessaires et incluez vos fichiers `.magento.app.yaml` et `services.yaml` mis à jour ainsi que la version PHP dans le ticket. La mise à jour de votre projet par l’équipe en charge de l’infrastructure cloud peut prendre jusqu’à 48 heures. Voir [Logiciels et services pris en charge](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html?lang=fr#supported-software-and-services).
+>Pour les projets Pro d’Adobe Commerce sur les infrastructures cloud, vous devez créer un ticket [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour installer ou mettre à jour les services dans les environnements d’évaluation et de production. Indiquez les changements de service nécessaires et incluez vos fichiers `.magento.app.yaml` et `services.yaml` mis à jour ainsi que la version PHP dans le ticket. La mise à jour de votre projet par l’équipe en charge de l’infrastructure cloud peut prendre jusqu’à 48 heures. Voir [Logiciels et services pris en charge](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
 
 ## Vérifier qu’un moteur de recherche pris en charge est installé
 
@@ -99,7 +99,7 @@ Pour mettre correctement à niveau MySQL de la version 8.0 vers la version 8.4, 
    >
    >Si vous ne modifiez pas la valeur de `restrict_fk_on_non_standard_key` en `OFF`, l’erreur suivante s’affiche lors de l’importation :
    >
-   >```sql
+   ```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. Redémarrez le serveur MySQL.
@@ -174,7 +174,7 @@ La prise en charge d’Elasticsearch 8.x a été introduite dans Adobe Commerce 
 
    Si vous rencontrez une erreur de dépendance pour `psr/http-message`, cliquez sur pour développer la section de dépannage suivante :
 
-   +++Résolution des problèmes
+   +++Dépannage
 
    Si vous rencontrez des conflits de dépendance lors de l’installation d’Elasticsearch 8, en particulier avec `psr/http-message`, vous pouvez les résoudre en procédant comme suit :
 

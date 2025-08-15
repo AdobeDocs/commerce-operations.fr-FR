@@ -12,24 +12,24 @@ ht-degree: 0%
 
 # Gestion des extensions tierces
 
-Le code qui étend ou personnalise le comportement d’Adobe Commerce est appelé extension. Vous pouvez éventuellement grouper et distribuer des extensions sur le [Commerce Marketplace](https://commercemarketplace.adobe.com/) ou un autre système de distribution d’extension.
+Le code qui étend ou personnalise le comportement d’Adobe Commerce est appelé extension. Vous pouvez éventuellement regrouper et distribuer des extensions sur [Commerce Marketplace](https://commercemarketplace.adobe.com/) ou sur un autre système de distribution d’extensions.
 
 Les extensions incluent :
 
-- Modules (extension des fonctionnalités Adobe Commerce)
-- Thèmes (modifiez l’aspect de votre storefront et de votre administrateur)
-- Packages de langue (localisez le storefront et l’administrateur)
+- Modules (extension des fonctionnalités d’Adobe Commerce)
+- Thèmes (modifier l’aspect de votre storefront et de votre administrateur)
+- Packages de langue (localiser le storefront et l’administrateur)
 
-Cette rubrique explique comment utiliser l’interface de ligne de commande pour gérer les extensions tierces que vous achetez sur le Commerce Marketplace pour des projets _sur site_. Pour les projets d’infrastructure cloud, voir [Gestion des extensions](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+Cette rubrique explique comment utiliser l’interface de ligne de commande pour gérer les extensions tierces que vous achetez auprès de Commerce Marketplace pour les projets _On-premise_. Pour les projets d’infrastructure cloud, voir [Gestion des extensions](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
 
-Vous pouvez utiliser la même procédure pour installer l’extension _any_ ; vous avez simplement besoin du nom et de la version du compositeur de l’extension. Pour le trouver, ouvrez le fichier `composer.json` de l’extension et notez les valeurs de `"name"` et `"version"`.
+Vous pouvez utiliser la même procédure pour installer l’extension _any_ ; tout ce dont vous avez besoin est le nom et la version du compositeur de l’extension. Pour le trouver, ouvrez le fichier `composer.json` de l’extension et notez les valeurs de `"name"` et `"version"`.
 
 ## Installer
 
 Avant l’installation, vous pouvez :
 
-1. Sauvegardez votre base.
-1. Activer le mode de maintenance :
+1. Sauvegardez votre base de données.
+1. Activez le mode de maintenance :
 
    ```bash
    bin/magento maintenance:enable
@@ -38,7 +38,7 @@ Avant l’installation, vous pouvez :
 Pour installer une extension, vous devez :
 
 1. Obtenez une extension du Commerce Marketplace ou d’un autre développeur d’extensions.
-1. Si vous installez une extension à partir du Commerce Marketplace, assurez-vous que le référentiel `repo.magento.com` existe dans votre fichier `composer.json` :
+1. Si vous installez une extension à partir de Commerce Marketplace, assurez-vous que le référentiel `repo.magento.com` existe dans votre fichier `composer.json` :
 
    ```bash
    "repositories": [
@@ -50,17 +50,17 @@ Pour installer une extension, vous devez :
    ```
 
 1. Obtenez le nom et la version du compositeur de l’extension.
-1. Mettez à jour le fichier `composer.json` de votre projet avec le nom et la version de l’extension.
+1. Mettez à jour le fichier `composer.json` dans votre projet avec le nom et la version de l’extension.
 1. Vérifiez que l’extension est installée correctement.
 1. Activez et configurez l’extension.
 
 ### Obtenir des informations sur l’extension
 
-Si vous connaissez déjà le nom et la version du compositeur de l’extension, ignorez cette étape et passez à l’étape [Mettre à jour votre fichier `composer.json`](#update-composer-dependencies).
+Si vous connaissez déjà le nom et la version du compositeur de l’extension, ignorez cette étape et continuez avec [Mettre à jour votre fichier `composer.json`](#update-composer-dependencies).
 
 Pour obtenir le nom et la version du compositeur de l’extension à partir du Commerce Marketplace :
 
-1. Connectez-vous à [Commerce Marketplace](https://commercemarketplace.adobe.com/) avec le nom d’utilisateur et le mot de passe que vous avez utilisés pour acheter l’extension.
+1. Connectez-vous à [Commerce Marketplace](https://commercemarketplace.adobe.com/) avec le nom d&#39;utilisateur et le mot de passe que vous avez utilisés pour acheter l&#39;extension.
 
 1. Dans le coin supérieur droit, cliquez sur **Votre nom** > **Mon profil**.
 
@@ -68,21 +68,21 @@ Pour obtenir le nom et la version du compositeur de l’extension à partir du C
 
 1. Cliquez sur **Mes achats**.
 
-   ![Historique des achats Marketplace](../../assets/installation//marketplace-my-purchases.png)
+   ![Historique des achats du marché](../../assets/installation//marketplace-my-purchases.png)
 
-1. Recherchez l’extension que vous souhaitez installer et notez le nom et la version du composant.
+1. Recherchez l’extension à installer et notez le nom et la version du composant.
 
-   ![Les détails techniques affichent le nom du compositeur de l’extension ](../../assets/installation/marketplace-extension-technical-details.png)
+   ![Les détails techniques affichent le nom du compositeur de l’extension](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
 >Vous pouvez également trouver le nom du compositeur et la version de l’extension _any_ (que vous l’ayez achetée sur Commerce Marketplace ou ailleurs) dans le fichier `composer.json` de l’extension.
 
-### Mise à jour des dépendances du compositeur
+### Mettre à jour les dépendances du compositeur
 
 Ajoutez le nom et la version de l’extension à votre fichier `composer.json` :
 
-1. Accédez au répertoire de votre projet et mettez à jour votre fichier `composer.json`.
+1. Accédez au répertoire du projet et mettez à jour le fichier `composer.json`.
 
    ```bash
    composer require <component-name>:<version>
@@ -94,9 +94,9 @@ Ajoutez le nom et la version de l’extension à votre fichier `composer.json` :
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. Saisissez vos [clés d&#39;authentification](../prerequisites/authentication-keys.md). Votre clé publique est votre nom d’utilisateur ; votre clé privée est votre mot de passe.
+1. Saisissez vos [ clés d’authentification ](../prerequisites/authentication-keys.md). Votre clé publique est votre nom d&#39;utilisateur ; votre clé privée est votre mot de passe.
 
-1. Attendez que le compositeur termine la mise à jour des dépendances de votre projet et assurez-vous qu’il n’y a aucune erreur :
+1. Attendez que le compositeur ait terminé la mise à jour des dépendances de votre projet et vérifiez qu’il n’y a aucune erreur :
 
    ```
    Updating dependencies (including require-dev)
@@ -126,19 +126,19 @@ Le nom de l’extension est au format `<VendorName>_<ComponentName>` ; il s’ag
 bin/magento module:status
 ```
 
-Recherchez l’extension sous &quot;Liste des modules désactivés&quot;.
+Et recherchez l’extension sous « Liste des modules désactivés ».
 
 ### Activer
 
-Certaines extensions ne fonctionnent pas correctement, sauf si vous effacez d’abord les fichiers d’affichage statique générés. Utilisez l’option `--clear-static-content` pour effacer les fichiers d’affichage statique lorsque vous activez une extension.
+Certaines extensions ne fonctionnent pas correctement, sauf si vous effacez d’abord les fichiers d’affichage statique générés. Utilisez l’option `--clear-static-content` pour effacer les fichiers d’affichage statiques lorsque vous activez une extension.
 
-1. Activez l’extension et effacez les fichiers de vue statique :
+1. Activez l’extension et effacez les fichiers d’affichage statique :
 
    ```bash
    bin/magento module:enable J2t_Payplug --clear-static-content
    ```
 
-   Vous devriez voir la sortie suivante :
+   La sortie suivante devrait s’afficher :
 
    ```
    The following modules have been enabled:
@@ -156,7 +156,7 @@ Certaines extensions ne fonctionnent pas correctement, sauf si vous effacez d’
    bin/magento setup:upgrade
    ```
 
-1. Recompiler votre projet : en mode de production, vous pouvez recevoir un message indiquant &quot;Veuillez réexécuter la commande de compilation du Magento&quot;. L’application ne vous invite pas à exécuter la commande compile en mode Développeur.
+1. Recompiler votre projet : en mode Production, vous pouvez recevoir un message indiquant « Veuillez réexécuter la commande de compilation Magento ». L’application ne vous invite pas à exécuter la commande compiler en mode Développeur.
 
    ```bash
    bin/magento setup:di:compile
@@ -168,7 +168,7 @@ Certaines extensions ne fonctionnent pas correctement, sauf si vous effacez d’
    bin/magento module:status J2t_Payplug
    ```
 
-   La sortie doit normalement s’afficher pour vérifier que l’extension n’est plus désactivée :
+   Vous devriez voir la sortie vérifiant que l’extension n’est plus désactivée :
 
    ```
    Module is enabled
@@ -180,23 +180,23 @@ Certaines extensions ne fonctionnent pas correctement, sauf si vous effacez d’
    bin/magento cache:clean
    ```
 
-1. Configurez l’extension dans Admin selon les besoins.
+1. Configurez l’extension dans Admin selon vos besoins.
 
 >[!TIP]
 >
 >Si vous rencontrez des erreurs lors du chargement du storefront dans un navigateur, utilisez la commande suivante pour effacer le cache : `bin/magento cache:flush`.
 
-## Mettre à niveau
+## Mise à niveau
 
 Pour mettre à jour ou mettre à niveau un module ou une extension :
 
-1. Téléchargez le fichier mis à jour depuis Marketplace ou un autre développeur d’extensions. Prenez note du nom et de la version du module.
+1. Téléchargez le fichier mis à jour à partir de Marketplace ou d’un autre développeur d’extensions. Notez le nom et la version du module.
 
-1. Exportez le contenu dans le répertoire racine de votre application.
+1. Exportez le contenu vers le répertoire racine de votre application.
 
-1. S’il existe un module de compositeur pour le module, exécutez l’une des opérations suivantes.
+1. S’il existe un package de compositeur pour le module , exécutez l’une des opérations suivantes.
 
-   Mise à jour par nom de module :
+   Mettre à jour par nom de module :
 
    ```bash
    composer update vendor/module-name
@@ -226,34 +226,34 @@ Pour mettre à jour ou mettre à niveau un module ou une extension :
 
 Vous devez contacter le fournisseur de l’extension pour obtenir des instructions sur la suppression d’une extension tierce. Les instructions doivent fournir les informations suivantes :
 
-- Comment rétablir les modifications des tables de la base de données
-- Comment rétablir les modifications apportées aux données de la base
-- Quels fichiers doivent être supprimés ou restaurés ?
+- Comment annuler les modifications de table de base de données
+- Comment annuler les modifications apportées aux données de la base de données
+- Les fichiers à supprimer ou à rétablir
 
 >[!CAUTION]
 >
->Exécutez les étapes de désinstallation sur un environnement hors production _first_ et effectuez un test complet avant de procéder au déploiement dans votre environnement de production.
+>Effectuez les étapes de désinstallation sur un environnement hors production _d’abord_ et testez-le minutieusement avant de le déployer sur votre environnement de production.
 
-Les instructions suivantes fournissent des informations générales pour la désinstallation d’extensions tierces :
+Les instructions suivantes fournissent des informations générales sur la désinstallation des extensions tierces :
 
 1. Supprimez l’extension de votre référentiel de projet Adobe Commerce.
 
-   - Pour les extensions basées sur le compositeur, supprimez l’extension de votre fichier Adobe Commerce `composer.json`.
+   - Pour les extensions basées sur un compositeur, supprimez l’extension de votre fichier Adobe Commerce `composer.json`.
 
      ```bash
      composer remove <component-name>
      ```
 
-   - Pour les extensions non basées sur un compositeur, supprimez les fichiers physiques du référentiel de projet Adobe Commerce.
+   - Pour les extensions non basées sur un compositeur, supprimez les fichiers physiques du référentiel de votre projet Adobe Commerce.
 
      ```bash
      rm -rf app/code/<vendor-name>/<component-name>
      ```
 
-1. Si le fichier `config.php` est contrôlé par la source dans votre référentiel de projet Adobe Commerce, supprimez l’extension du fichier `config.php`.
+1. Si le fichier `config.php` est sous contrôle de code source dans votre référentiel de projet Adobe Commerce, supprimez l’extension du fichier `config.php`.
 
 1. Testez votre base de données locale pour vous assurer que les instructions fournies par le fournisseur fonctionnent comme prévu.
 
-1. Vérifiez que l’extension est correctement désactivée et que votre site web fonctionne comme prévu dans votre environnement d’évaluation.
+1. Vérifiez que l’extension est correctement désactivée et que votre site web fonctionne comme prévu sur votre environnement d’évaluation.
 
 1. Déployez les modifications dans votre environnement de production.

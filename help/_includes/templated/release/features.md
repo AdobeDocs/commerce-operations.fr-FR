@@ -5,7 +5,7 @@ source-wordcount: '180'
 ht-degree: 8%
 
 ---
-# Fonctionnalités Commerce
+# Fonctionnalités de Commerce
 
 <!--This include content is automatically generated using the features.html template and the "_data/release/features.yml" data file. To update the content, add new information to the data file. Follow the instructions in the README instructions to generate the updated content: 
 https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates -->
@@ -13,15 +13,15 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
 <table style="table-layout:auto">
   <tbody>
     <tr style="background:lightgray;">
-      <th style="border-style:none;">Maximiser les conversions et les ventes</th>
-      <th style="border-style:none;">2,0</th>
-      <th style="border-style:none;">2,1</th>
-      <th style="border-style:none;">2,2</th>
-      <th style="border-style:none;">2,3</th>
+      <th style="border-style:none;">Optimiser les conversions et les ventes</th>
+      <th style="border-style:none;">2.0</th>
+      <th style="border-style:none;">2.1</th>
+      <th style="border-style:none;">2.2</th>
+      <th style="border-style:none;">2.3</th>
       <th style="border-style:none;">2,4</th>
     </tr>
     <tr>
-      <td>Recherche en direct optimisée par Adobe Sensei (B2C et B2B)</td>
+      <td>Live Search optimisé par Adobe Sensei (B2C et B2B)</td>
       <td></td>
       <td></td>
       <td></td>
@@ -29,7 +29,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Vendeur - Aidé Shopping</td>
+      <td>Achats Assistés Par Le Vendeur</td>
       <td></td>
       <td></td>
       <td></td>
@@ -45,7 +45,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Recommendations produit optimisé par Adobe Sensei (B2C et B2B)</td>
+      <td>Recommandations de produits optimisées par Adobe Sensei (B2C et B2B)</td>
       <td></td>
       <td></td>
       <td></td>
@@ -53,7 +53,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Gestion du contenu par glisser-déposer du générateur de pages</td>
+      <td>Gestion de contenu par glisser-déposer Page Builder</td>
       <td></td>
       <td></td>
       <td></td>
@@ -77,7 +77,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Fonctionnalités et API compatibles B2B (pour plus d’informations, consultez la feuille de calcul B2B)</td>
+      <td>Fonctionnalités et API prêtes pour le B2B (pour plus d’informations, consultez la fiche d’information B2B)</td>
       <td></td>
       <td></td>
       <td>+</td>
@@ -85,7 +85,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>achat instantané</td>
+      <td>Achat instantané</td>
       <td></td>
       <td></td>
       <td>+</td>
@@ -93,7 +93,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Passage en caisse contextuel de PayPal</td>
+      <td>Passage en caisse en contexte PayPal</td>
       <td></td>
       <td>+</td>
       <td>+</td>
@@ -103,11 +103,11 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
   </tbody>
   <tbody>
     <tr style="background:lightgray;">
-      <th style="border-style:none;">Opérations plus intelligentes et plus rapides</th>
-      <th style="border-style:none;">2,0</th>
-      <th style="border-style:none;">2,1</th>
-      <th style="border-style:none;">2,2</th>
-      <th style="border-style:none;">2,3</th>
+      <th style="border-style:none;">Des opérations plus intelligentes et plus rapides</th>
+      <th style="border-style:none;">2.0</th>
+      <th style="border-style:none;">2.1</th>
+      <th style="border-style:none;">2.2</th>
+      <th style="border-style:none;">2.3</th>
       <th style="border-style:none;">2,4</th>
     </tr>
     <tr>
@@ -119,7 +119,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Amélioration de la galerie de médias et de la gestion des ressources</td>
+      <td>Galerie de médias améliorée et gestion des ressources</td>
       <td></td>
       <td></td>
       <td></td>
@@ -127,7 +127,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Performance de magasin pour Adobe Commerce par Walmart Technologies</td>
+      <td>Traitement des commandes pour Adobe Commerce par Walmart Technologies</td>
       <td></td>
       <td></td>
       <td></td>
@@ -135,7 +135,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Acheter le ticket en ligne en magasin (BOPIS)</td>
+      <td>Acheter en ligne Pickup In-Store (BOPIS)</td>
       <td></td>
       <td></td>
       <td></td>
@@ -143,7 +143,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Workflows d’approbation de commande B2B</td>
+      <td>Workflows d’approbation des commandes B2B</td>
       <td></td>
       <td></td>
       <td></td>
@@ -151,7 +151,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Intégration Adobe Stock</td>
+      <td>Intégration d’Adobe Stock</td>
       <td></td>
       <td></td>
       <td></td>
@@ -159,7 +159,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Inventory management multi-Source</td>
+      <td>Multi-Source Inventory management</td>
       <td></td>
       <td></td>
       <td></td>
@@ -194,10 +194,10 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
   <tbody>
     <tr style="background:lightgray;">
       <th style="border-style:none;">Améliorations de la plateforme, des performances et de la sécurité</th>
-      <th style="border-style:none;">2,0</th>
-      <th style="border-style:none;">2,1</th>
-      <th style="border-style:none;">2,2</th>
-      <th style="border-style:none;">2,3</th>
+      <th style="border-style:none;">2.0</th>
+      <th style="border-style:none;">2.1</th>
+      <th style="border-style:none;">2.2</th>
+      <th style="border-style:none;">2.3</th>
       <th style="border-style:none;">2,4</th>
     </tr>
     <tr>
@@ -209,7 +209,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Module externe de mise à jour du compositeur</td>
+      <td>Plug-in de mise à jour du compositeur</td>
       <td></td>
       <td></td>
       <td></td>
@@ -233,7 +233,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Traitement de l’ordre asynchrone</td>
+      <td>Traitement de commande asynchrone</td>
       <td></td>
       <td></td>
       <td></td>
@@ -249,7 +249,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Mises à jour continues de tech stack</td>
+      <td>Poursuite des mises à jour de tech stack</td>
       <td></td>
       <td></td>
       <td></td>
@@ -289,7 +289,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Événements d’Adobe I/O pour Adobe Commerce</td>
+      <td>Adobe I/O Events pour Adobe Commerce</td>
       <td></td>
       <td></td>
       <td></td>
@@ -305,7 +305,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Cloud optimisé pour Adobe Commerce</td>
+      <td>cloud optimisé par Adobe Commerce</td>
       <td></td>
       <td>+</td>
       <td>+</td>
@@ -313,7 +313,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Observation pour Adobe Commerce sur l’infrastructure cloud</td>
+      <td>Observation d’Adobe Commerce sur l’infrastructure cloud</td>
       <td></td>
       <td>+</td>
       <td>+</td>

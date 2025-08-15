@@ -1,5 +1,5 @@
 ---
-title: Référence config.php
+title: config.php référence
 description: Voir une liste de valeurs dans le fichier config.php.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
@@ -9,7 +9,7 @@ ht-degree: 1%
 
 ---
 
-# Référence config.php
+# config.php référence
 
 Le fichier `config.php` contient les sections suivantes :
 
@@ -17,13 +17,13 @@ Le fichier `config.php` contient les sections suivantes :
 | --------- | -------------------|
 | `i18n` | Toutes les données de traduction intégrées. La lecture de cette section n’est pas prise en charge. |
 | `modules` | La liste des modules activés et désactivés. |
-| `scopes` | Liste des magasins, des groupes de magasins et des sites web contenant des informations connexes. |
-| `system` | Configurations système requises pour le déploiement de contenu statique. |
-| `themes` | Configuration des thèmes installés. |
+| `scopes` | Liste de magasins, de groupes de magasins et de sites web avec des informations connexes. |
+| `system` | Les configurations système requises pour le déploiement de contenu statique. |
+| `themes` | La configuration des thèmes installés. |
 
 ## modules
 
-Contient un tableau de modules et leurs états. Si le module est activé, la valeur est 1. Sinon, la valeur est 0.
+Contient un tableau de modules et leurs états. Si le module est activé, la valeur est 1. Dans le cas contraire, la valeur est 0.
 
 ```conf
 'modules' => [
@@ -38,13 +38,13 @@ En savoir plus sur les [modules].
 
 ## portées
 
-Contient un tableau de valeurs de configuration de portée. Il contient les sous-noeuds suivants :
+Contient un tableau de valeurs de configuration de l’étendue. Il comporte les sous-nœuds suivants :
 
 | Nom | Description |
 | ---------- | -----------------------------------|
 | `websites` | Configuration du site web |
-| `groups` | Configuration des magasins |
-| `stores` | Configuration des vues du magasin |
+| `groups` | Stocke la configuration |
+| `stores` | Configuration des vues de magasin |
 
 ```conf
 'scopes' => [
@@ -82,9 +82,9 @@ Contient un tableau de valeurs de configuration de portée. Il contient les sous
 ]
 ```
 
-En savoir plus sur [Portées Commerce][scopes].
+En savoir plus sur les [étendues de Commerce][scopes].
 
-## system
+## système
 
 Contient un tableau de valeurs de configuration des champs système.
 
@@ -100,7 +100,7 @@ Contient un tableau de valeurs de configuration des champs système.
 ]
 ```
 
-En savoir plus sur les [configurations spécifiques au système](config-reference-sens.md).
+En savoir plus sur les [ configurations spécifiques au système ](config-reference-sens.md).
 
 ## thèmes
 
@@ -120,10 +120,10 @@ Contient un tableau de valeurs pour la configuration du thème.
 ]
 ```
 
-En savoir plus sur [Thèmes].
+En savoir plus sur les [thèmes].
 
 <!-- link definitions -->
 
-[Modules]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=fr
-[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr#scope-settings
+[Modules]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html
+[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings
 [Thèmes]: https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/

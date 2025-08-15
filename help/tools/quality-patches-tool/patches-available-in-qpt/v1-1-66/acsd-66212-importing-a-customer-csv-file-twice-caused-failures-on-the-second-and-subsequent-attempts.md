@@ -3,13 +3,13 @@ title: 'ACSD-66212 : l’importation du fichier CSV du client à deux reprises a
 description: Appliquez le correctif ACSD-66212 pour résoudre le problème d’Adobe Commerce où l’importation d’un fichier CSV client provoquait deux fois des échecs lors de la deuxième tentative et des suivantes.
 feature: Data Import/Export, Customers
 role: Admin, Developer
-source-git-commit: 97a5979a189e43b737c44cfe7a65025effae711c
+exl-id: ae41f341-6ca3-405e-877a-35bdc3bc5623
+source-git-commit: 5a36d0f0aaa9b7cf0ed30f0da8efac241523cf6b
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66212 : l’importation du fichier CSV du client à deux reprises a provoqué des échecs lors de la deuxième tentative et des tentatives suivantes
 
@@ -27,7 +27,7 @@ Le correctif ACSD-66212 corrige le problème en raison duquel l’importation d�
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -55,7 +55,7 @@ Additional data: <div class="messages"><div class="message message-error error">
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

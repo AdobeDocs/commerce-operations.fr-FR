@@ -11,18 +11,18 @@ ht-degree: 0%
 
 # [!DNL Recommendations]
 
-La page [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Recommendations] répertorie des recommandations basées sur les bonnes pratiques pour résoudre les problèmes détectés sur votre site. Les recommandations sont triées par priorité PO vers P4, où PO est critique et P4 est faible. Les résultats incluent la description, la recommandation, l’impact du site, la cause racine, les scénarios/conditions préalables, le résultat attendu et les outils utilisés.
+La page [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Recommendations] répertorie les recommandations basées sur les bonnes pratiques pour résoudre les problèmes détectés sur votre site. Les recommandations sont triées par priorité PO à P4, où PO est critique et P4 est faible. Les résultats incluent la description, la recommandation, l’impact sur le site, la cause première, les scénarios/conditions préalables, le résultat attendu et les outils utilisés.
 
-## Quand utiliser
+## Quand l’utiliser
 
-Utilisez la page [!UICONTROL Recommendations] pour afficher et mettre en oeuvre des recommandations pour améliorer l’intégrité de votre site.
+Utilisez la page [!UICONTROL Recommendations] pour afficher et mettre en œuvre les recommandations visant à améliorer l’intégrité de votre site.
 
 ## Avantages
 
 * Découvrez les bonnes pratiques pour améliorer les performances de votre site.
 
-* Suivez et implémentez les recommandations répertoriées par priorité.
+* Suivre et mettre en œuvre les recommandations répertoriées par priorité.
 
 ## Bonnes pratiques
 
-La page [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Recommendations] répertorie les recommandations avec la priorité P0 vers P4. P0 est critique, P1 est urgent, P2 est élevé, P3 est moyen et P4 est faible. Surveillez cette page pour afficher ces recommandations et les mettre en oeuvre en fonction de leur priorité afin d’optimiser les performances du site.
+La page [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Recommendations] répertorie les recommandations avec la priorité P0 à P4. P0 est critique, P1 est urgent, P2 est élevé, P3 est moyen et P4 est faible. Surveillez cette page pour afficher ces recommandations et implémentez-les en fonction de la priorité afin d’assurer des performances optimales du site.

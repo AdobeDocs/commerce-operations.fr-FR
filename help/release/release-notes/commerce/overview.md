@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Notes de mise à jour d’Adobe Commerce
 
-Découvrez les dernières améliorations apportées à Adobe Commerce, notamment les améliorations, la sécurité, les correctifs de bogues et les problèmes connus.
+Découvrez les dernières améliorations apportées à Adobe Commerce, notamment les améliorations, la sécurité, les correctifs de bugs et les problèmes connus.
 
 {{other-release-info}}
 

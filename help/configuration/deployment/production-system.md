@@ -11,10 +11,10 @@ ht-degree: 0%
 
 # Configuration du système de production
 
-Vous pouvez avoir un seul système de production. Tous les éléments suivants doivent être vrais :
+Vous pouvez avoir un seul système de production. Tout ce qui suit doit être vrai :
 
-- Tout le code Commerce est sous contrôle de code source dans le même référentiel que les systèmes de développement et de création.
-- Assurez-vous que tous les éléments suivants sont _inclus_ dans le contrôle source :
+- Tout le code Commerce se trouve dans le contrôle de code source dans le même référentiel que les systèmes de développement et de création
+- Assurez-vous que tous les éléments suivants sont _inclus_ dans le contrôle de code source :
 
    - `app/etc/config.php`
    - Répertoire `generated` (et sous-répertoires)
@@ -22,15 +22,15 @@ Vous pouvez avoir un seul système de production. Tous les éléments suivants d
    - Répertoire `pub/media/wysiwyg` (et sous-répertoires)
    - Répertoire `pub/static` (et sous-répertoires)
 
-- Commerce 2.2 ou version ultérieure doit être installé et défini pour le [mode de production](../bootstrap/application-modes.md#production-mode)
-- Il dispose de droits de propriété et d’autorisations du système de fichiers, comme décrit dans la section [Condition préalable requise pour votre développement, création et production ](../deployment/prerequisites.md).
+- Commerce 2.2 ou une version ultérieure doit être installé et défini pour le [mode de production](../bootstrap/application-modes.md#production-mode)
+- La propriété et les autorisations du système de fichiers sont définies, comme indiqué dans la section [Prérequis pour les systèmes de développement, de version et de production](../deployment/prerequisites.md).
 
-## Configurer une machine de production
+## Configuration d’une machine de production
 
 Pour configurer une machine de production :
 
-1. Après avoir installé Commerce ou l’avoir extrait du contrôle de code source, connectez-vous au serveur de production ou passez au propriétaire du système de fichiers.
-1. Créez `~/.ssh/.composer/auth.json` si vous ne l’avez pas déjà fait.
+1. Après l’installation de Commerce ou son extraction du contrôle de code source, connectez-vous au serveur de production en tant que propriétaire du système de fichiers ou passez à celui-ci.
+1. Créez des `~/.ssh/.composer/auth.json` si vous ne l’avez pas déjà fait.
 
    Créez le répertoire :
 
@@ -38,9 +38,9 @@ Pour configurer une machine de production :
    mkdir -p ~/.ssh/.composer
    ```
 
-   Créez `auth.json` dans ce répertoire.
+   Créez des `auth.json` dans ce répertoire.
 
-   `auth.json` doit contenir vos [clés d&#39;authentification](../../installation/prerequisites/authentication-keys.md).
+   `auth.json` devez contenir vos [ clés d’authentification ](../../installation/prerequisites/authentication-keys.md).
 
    Voici un exemple :
 
@@ -56,21 +56,21 @@ Pour configurer une machine de production :
    ```
 
 1. Enregistrez vos modifications dans `auth.json`.
-1. Copiez `<Commerce root dir>/app/etc/env.php` de votre système de développement vers votre système de production.
+1. Copiez le `<Commerce root dir>/app/etc/env.php` de votre système de développement vers votre système de production.
 1. Ouvrez `env.php` dans un éditeur de texte et modifiez les valeurs nécessaires (par exemple, les informations de connexion à la base de données).
 1. Exécutez la commande [`magento config:set`](../cli/set-configuration-values.md) ou [`magento config:set-sensitive`](../cli/set-configuration-values.md) pour définir les valeurs de toutes les valeurs de configuration sensibles ou spécifiques au système, respectivement.
 
    La section suivante présente un exemple.
 
-## Définition des valeurs de configuration sur votre système de production
+## Définissez les valeurs de configuration sur votre système de production.
 
-Cette section explique comment définir des valeurs sensibles sur votre système de production à l’aide de la commande `magento config:sensitive:set`.
+Cette section explique comment définir des valeurs sensibles sur votre système d’exploitation à l’aide de la commande `magento config:sensitive:set`.
 
 Pour définir des valeurs sensibles :
 
 1. Recherchez une valeur à définir à l’aide de la [référence de valeur sensible](../reference/config-reference-sens.md).
-1. Notez le chemin de configuration du paramètre.
-1. Connectez-vous au système de production en tant que propriétaire du système de fichiers ou passez à .
+1. Notez le chemin de configuration du paramètre .
+1. Connectez-vous au système de production en tant que propriétaire du système de fichiers ou passez à ce système.
 1. Accédez au répertoire d’installation de Commerce.
 1. Saisissez la commande suivante :
 
@@ -90,13 +90,13 @@ Pour définir des valeurs sensibles :
    bin/magento config:sensitive:set -i
    ```
 
-   Lorsque vous y êtes invité, saisissez une valeur pour chaque paramètre sensible ou appuyez sur Entrée pour ignorer une valeur et passer à la valeur suivante.
+   Lorsque vous y êtes invité, saisissez une valeur pour chaque paramètre sensible ou appuyez sur Entrée pour ignorer une valeur et passer à la suivante.
 
-1. Pour vérifier que la valeur a été définie, connectez-vous à l’administrateur.
-1. Localisez le paramètre dans Admin.
+1. Pour vérifier que la valeur a été définie, connectez-vous à l’administration.
+1. Recherchez le paramètre dans Admin.
 
-   Par exemple, le paramètre de clé de l’API YouTube se trouve dans **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Catalogue** > **Vidéo produit**.
+   Par exemple, le paramètre de clé API YouTube se trouve dans **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Catalogue** > **Vidéo du produit**.
 
-   Le paramètre s’affiche dans l’onglet Administration et ne peut pas être modifié. La figure suivante illustre un exemple.
+   Le paramètre s’affiche dans l’interface d’administration et ne peut pas être modifié. La figure suivante en est un exemple.
 
-   ![Paramètre sensible dans l’Admin](../../assets/configuration/sensitive-set.png)
+   ![Paramètre Sensible dans l’administration](../../assets/configuration/sensitive-set.png)

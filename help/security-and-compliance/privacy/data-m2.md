@@ -5,7 +5,7 @@ exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
 source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -13,65 +13,65 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Il s’agit d’une rubrique parmi d’autres destinée à aider les marchands et les développeurs Adobe Commerce à se préparer à la conformité aux réglementations de confidentialité. Consultez votre service juridique pour déterminer si et comment votre entreprise doit se conformer à des obligations légales.
+>Cette rubrique fait partie d’une série de rubriques destinées à aider les commerçants et les développeurs Adobe Commerce à se préparer à la conformité aux réglementations de confidentialité. Consultez votre conseiller juridique pour déterminer si et comment votre entreprise devrait se conformer à des obligations légales.
 
-Utilisez les diagrammes de flux de données suivants et les mappages d’entités de base de données à titre de référence lors du développement de programmes de conformité aux réglementations de confidentialité, comme :
+Utilisez les diagrammes de flux de données et les mappages d’entités de base de données suivants à titre de référence lors du développement de programmes de conformité pour les réglementations de confidentialité telles que :
 
 - [RGPD](gdpr.md)
 - [CCPA](ccpa.md)
 
 ## Diagrammes de flux de données
 
-Les diagrammes de flux de données indiquent les types de données que les clients et les administrateurs peuvent saisir et récupérer à partir du storefront et de l’administrateur.
+Les diagrammes de flux de données montrent les types de données que les clients et les administrateurs peuvent saisir et récupérer dans le storefront et l’administrateur.
 
-### Points d’entrée des données frontaux
+### Points d’entrée des données front-end
 
-Un utilisateur peut saisir des informations sur son client, son adresse et son paiement lors de son enregistrement pour un compte, lors de son passage en caisse et pour d’autres événements similaires.
+Un utilisateur peut saisir des informations sur le client, l’adresse et le paiement lors de l’inscription à un compte, du passage en caisse et d’événements similaires.
 
-![ Points d’entrée de données frontend](../../assets/security-compliance/frontend-data-entry-points.svg)
+![Points d’entrée de données front-end](../../assets/security-compliance/frontend-data-entry-points.svg)
 
-### Points d’accès aux données frontaux
+### Points d’accès aux données front-end
 
-Adobe Commerce charge les informations sur les clients lorsque le client se connecte et consulte plusieurs pages différentes ou extrait.
+Adobe Commerce charge les informations du client lorsque ce dernier se connecte et consulte plusieurs pages différentes ou les extrait.
 
-![ Points d’accès aux données frontend](../../assets/security-compliance/frontend-data-access-points.svg)
+![Points d’accès aux données front-end](../../assets/security-compliance/frontend-data-access-points.svg)
 
-### Points d’entrée des données dorsales
+### Points d’entrée des données du serveur principal
 
 Un commerçant peut saisir des informations sur le client, des données d’adresse et des données de paiement lors de la création d’un client ou d’une commande auprès de l’administrateur.
 
-![ Points d’entrée des données principales](../../assets/security-compliance/backend-data-entry-points.svg)
+![Points d’entrée des données du serveur principal](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### Points d’accès aux données du serveur principal
 
-Adobe Commerce charge les informations sur les clients lorsqu’un commerçant affiche plusieurs types de grilles, clique sur une grille pour afficher des informations détaillées et effectue diverses autres tâches.
+Adobe Commerce charge les informations client lorsqu’un commerçant consulte plusieurs types de grilles, clique sur une grille pour afficher des informations détaillées et effectue diverses autres tâches.
 
-![ Points d’accès aux données du serveur principal](../../assets/security-compliance/backend-data-access-points.svg)
+![Points d’accès aux données du serveur principal](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## Entités de base de données
 
-Adobe Commerce stocke principalement des informations spécifiques au client dans les tables de clients, d’adresses, de commandes, de devis et de paiement. D’autres tableaux contiennent des références à l’ID de client.
+Adobe Commerce stocke principalement les informations spécifiques au client dans les tables de client, d’adresse, de commande, de devis et de paiement. D’autres tableaux contiennent des références à l’ID client.
 
-### Données client
+### Données clients
 
 Adobe Commerce peut être configuré pour stocker les attributs du client suivants :
 
 - Date de naissance
-- Email
+- E-mail
 - Prénom
-- Genre
+- Sexe
 - Nom
-- Middle Name/Initial
-- Nom Prefix
-- Nom Suffix
+- Deuxième prénom/initial
+- Préfixe de nom
+- Suffixe du nom
 
 >[!NOTE]
 >
->Conformément aux bonnes pratiques actuelles en matière de sécurité et de confidentialité, veillez à être conscient des risques potentiels liés à la sécurité et à la légalité liés au stockage de la date de naissance complète des clients (mois, jour, année), ainsi que d’autres identifiants personnels, tels que le nom complet, avant de collecter ou de traiter ces données.
+>Conformément aux bonnes pratiques actuelles en matière de sécurité et de confidentialité, assurez-vous d’être conscient de tous les risques juridiques et de sécurité potentiels associés au stockage de la date de naissance complète du client (mois, jour, année) ainsi que d’autres identifiants personnels, tels que le nom complet, avant de collecter ou de traiter ces données.
 
-#### Références `customer_entity` et &#39;customer_entity&#39;
+#### Références `customer_entity` et « customer_entity »
 
-Les colonnes suivantes du tableau `customer_entity` contiennent les informations sur les clients :
+Les colonnes suivantes du tableau `customer_entity` contiennent des informations sur les clients :
 
 | Colonne | Type de données |
 | ------------ | ------------ |
@@ -84,28 +84,28 @@ Les colonnes suivantes du tableau `customer_entity` contiennent les informations
 | `dob` | date |
 | `gender` | smallint(5) |
 
-Ces tables font référence à `customer_entity` et peuvent contenir des attributs client personnalisés :
+Ces tableaux font référence à `customer_entity` et peuvent contenir des attributs client personnalisés :
 
 | Tableau | Colonne | Type de données |
 | -------------------------- | ------- | ------------- |
 | `customer_entity_datetime` | `value` | datetime |
 | `customer_entity_decimal` | `value` | decimal(12,4) |
 | `customer_entity_int` | `value` | int(11) |
-| `customer_entity_text` | `value` | text |
+| `customer_entity_text` | `value` | texte |
 | `customer_entity_varchar` | `value` | varchar(255) |
 
 #### `customer_grid_flat` table
 
-Les colonnes suivantes du tableau `customer_grid_flat` contiennent les informations sur les clients :
+Les colonnes suivantes du tableau `customer_grid_flat` contiennent des informations sur les clients :
 
 | Colonne | Type de données |
 | -------------------- | ------------ |
-| `name` | text |
+| `name` | texte |
 | `email` | varchar(255) |
 | `dob` | date |
 | `gender` | int(11) |
-| `shipping_full` | text |
-| `billing_full` | text |
+| `shipping_full` | texte |
+| `billing_full` | texte |
 | `billing_firstname` | varchar(255) |
 | `billing_lastname` | varchar(255) |
 | `billing_telephone` | varchar(255) |
@@ -119,27 +119,27 @@ Les colonnes suivantes du tableau `customer_grid_flat` contiennent les informati
 
 ### Données d’adresse
 
-Adobe Commerce stocke les attributs client suivants :
+Adobe Commerce stocke les attributs du client suivants :
 
 - Ville
 - Société
 - Pays
-- Fax
+- Télécopie
 - Prénom
 - Nom
-- Middle Name/Initial
-- Nom Prefix
-- Nom Suffix
+- Deuxième prénom/initial
+- Préfixe de nom
+- Suffixe du nom
 - Numéro de téléphone
-- Etat/Province
-- ID état/province
-- Adresse postale
+- État/Province
+- Identifiant de l’état/province
+- Adresse Postale
 - Numéro de TVA
-- Code postal
+- Code Postal
 
-#### Références `customer_address_entity` et `customer_address_entity`
+#### `customer_address_entity` et références `customer_address_entity`
 
-Les colonnes suivantes du tableau `customer_address_entity` contiennent les informations sur les clients :
+Les colonnes suivantes du tableau `customer_address_entity` contiennent des informations sur les clients :
 
 | Colonne | Type de données |
 | ------------ | ------------ |
@@ -153,28 +153,28 @@ Les colonnes suivantes du tableau `customer_address_entity` contiennent les info
 | `postcode` | varchar(255) |
 | `region` | varchar(255) |
 | `region_id` | int(10) |
-| `street` | text |
+| `street` | texte |
 | `suffix` | varchar(40) |
 | `telephone` | varchar(255) |
 | `vat_id` | varchar(255) |
 
-Ces tables font référence à `customer_address_entity` et peuvent contenir des attributs client personnalisés :
+Ces tableaux font référence à `customer_address_entity` et peuvent contenir des attributs client personnalisés :
 
 | Tableau | Colonne | Type de données |
 | ---------------------------------- | ------- | ------------- |
 | `customer_address_entity_datetime` | `value` | datetime |
 | `customer_address_entity_decimal` | `value` | decimal(12,4) |
 | `customer_address_entity_int` | `value` | int(11) |
-| `customer_address_entity_text` | `value` | text |
+| `customer_address_entity_text` | `value` | texte |
 | `customer_address_entity_varchar` | `value` | varchar(255) |
 
 ### Données de commande
 
-Les tableaux `sales_order` et associés contiennent le nom du client, les adresses de facturation et de livraison, ainsi que les données associées.
+Le `sales_order` et les tables associées contiennent le nom du client, les adresses de facturation et d’expédition, ainsi que les données associées.
 
 #### `sales_order` table
 
-Les colonnes suivantes du tableau `sales_order` contiennent les informations sur les clients :
+Les colonnes suivantes du tableau `sales_order` contiennent des informations sur les clients :
 
 | Colonne | Type de données |
 | --------------------- | ------------ |
@@ -195,7 +195,7 @@ Les colonnes suivantes du tableau `sales_order` contiennent les informations sur
 
 #### `sales_order_address` table
 
-La table `sales_order_address` contient l’adresse du client.
+La table `sales_order_address` contient l&#39;adresse du client.
 
 | Colonne | Type de données |
 | --------------------- | ------------ |
@@ -218,7 +218,7 @@ La table `sales_order_address` contient l’adresse du client.
 
 #### `sales_order_grid` table
 
-Les colonnes suivantes du tableau `sales_order_grid` contiennent les informations sur les clients :
+Les colonnes suivantes du tableau `sales_order_grid` contiennent des informations sur les clients :
 
 | Colonne | Type de données |
 | ---------------------- | ------------ |
@@ -231,13 +231,13 @@ Les colonnes suivantes du tableau `sales_order_grid` contiennent les information
 | `customer_email` | varchar(255) |
 | `customer_name` | varchar(255) |
 
-### Données citées
+### Données de devis
 
-Les citations contiennent le nom, l’adresse électronique, l’adresse électronique et les informations associées d’un client.
+Les devis contiennent le nom, l’adresse e-mail, l’adresse et les informations associées d’un client.
 
 #### `quote` table
 
-Les colonnes suivantes du tableau `quote` contiennent les informations sur les clients :
+Les colonnes suivantes du tableau `quote` contiennent des informations sur les clients :
 
 | Colonne | Type de données |
 | --------------------- | ------------ |
@@ -254,7 +254,7 @@ Les colonnes suivantes du tableau `quote` contiennent les informations sur les c
 
 #### `quote_address` table
 
-Les colonnes suivantes du tableau `quote_address` contiennent les informations sur les clients :
+Les colonnes suivantes du tableau `quote_address` contiennent des informations sur les clients :
 
 | Colonne | Type de données |
 | ------------- | ------------ |
@@ -277,7 +277,7 @@ Les colonnes suivantes du tableau `quote_address` contiennent les informations s
 
 ### Données de paiement
 
-La table `sales_order_payment` comprend des informations de carte de crédit et d’autres informations transactionnelles.
+Le tableau `sales_order_payment` comprend les informations de carte de crédit et d’autres informations transactionnelles.
 
 | Colonne | Type de données |
 | ------------------------ | ------------ |
@@ -291,15 +291,15 @@ La table `sales_order_payment` comprend des informations de carte de crédit et 
 | `cc_debug_response_body` | varchar(32) |
 | `echeck_account_name` | varchar(32) |
 | `cc_number_enc` | varchar(128) |
-| `additional_information` | text |
+| `additional_information` | texte |
 
 ### Données d’invitation
 
-Adobe Commerce peut être configuré de sorte que les clients puissent envoyer des invitations à des ventes et événements privés.
+Adobe Commerce peut être configuré de sorte que les clients puissent envoyer des invitations à des ventes privées et à des événements.
 
 #### `magento_invitation` table
 
-La table `magento_invitation` contient l’ID de client, l’adresse électronique et l’ID de référence.
+La table `magento_invitation` contient l’ID client, l’adresse e-mail et l’ID de référence.
 
 | Colonne | Type de données |
 | ------------- | ------------ |
@@ -309,14 +309,14 @@ La table `magento_invitation` contient l’ID de client, l’adresse électroniq
 
 #### `magento_invitation_track` table
 
-La table `magento_invitation_track` contient également des informations sur les clients.
+Le tableau `magento_invitation_track` contient également des informations sur les clients.
 
 | Colonne | Type de données |
 | ------------- | --------- |
 | `inviter_id` | int(10) |
 | `referral_id` | int(10) |
 
-### Tables diverses faisant référence au client
+### Tables diverses qui font référence au client
 
 Les tableaux suivants contiennent une colonne `customer_id` :
 

@@ -1,6 +1,6 @@
 ---
-title: Déploiement mono-machine
-description: Découvrez comment déployer des mises à jour vers Commerce sur un serveur de production à l’aide de la ligne de commande.
+title: Déploiement sur un seul ordinateur
+description: Découvrez comment déployer des mises à jour sur Commerce sur un serveur de production à l’aide de la ligne de commande.
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
 source-git-commit: dcc283b901917e3681863370516771763ae87462
@@ -10,23 +10,23 @@ ht-degree: 1%
 
 ---
 
-# Déploiement mono-machine
+# Déploiement sur un seul ordinateur
 
-Cette rubrique fournit des instructions pour le déploiement de mises à jour vers Commerce sur un serveur de production à l’aide de la ligne de commande. Ce processus s’applique aux utilisateurs techniques responsables des magasins s’exécutant sur une seule machine avec certains thèmes et paramètres régionaux installés.
+Cette rubrique fournit des instructions pour déployer des mises à jour sur Commerce sur un serveur de production à l’aide de la ligne de commande. Ce processus s’applique aux utilisateurs et utilisatrices techniques responsables des magasins s’exécutant sur une seule machine avec certains thèmes et paramètres régionaux installés.
 
 ## Hypothèses
 
-- Vous avez installé Commerce à l’aide de [Composer](../../installation/composer.md).
+- Vous avez installé Commerce à l’aide du [compositeur](../../installation/composer.md).
 - Vous appliquez directement des mises à jour au serveur.
 
 >[!WARNING]
 >
 >Ce guide ne s’applique pas si vous avez utilisé `git clone` pour installer Commerce.
->Les développeurs contributeurs doivent utiliser [ce guide][install] pour mettre à jour leur installation Commerce.
+>>Les développeurs contributeurs doivent utiliser [ce guide][install] pour mettre à jour leur installation Commerce.
 
-## Etapes de déploiement
+## Étapes de déploiement
 
-1. Connectez-vous à votre serveur de production en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md) ou passez à cette fonction.
+1. Connectez-vous au serveur de production en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md) ou passez à ce serveur.
 
 1. Remplacez le répertoire par le répertoire de base de Commerce :
 
@@ -53,15 +53,15 @@ Cette rubrique fournit des instructions pour le déploiement de mises à jour ve
    - `magento/product-community-edition`
    - `magento/product-enterprise-edition`
 
-   **version** : version cible du module que vous souhaitez mettre à jour.
+   **version** : version cible du package à mettre à jour.
 
-1. Mise à jour des composants avec le compositeur :
+1. Mettre à jour les composants avec le compositeur :
 
    ```bash
    composer update
    ```
 
-1. Mise à jour du schéma et des données de la base de données :
+1. Mettre à jour le schéma et les données de la base :
 
    ```bash
    bin/magento setup:upgrade
@@ -73,7 +73,7 @@ Cette rubrique fournit des instructions pour le déploiement de mises à jour ve
    bin/magento setup:di:compile
    ```
 
-1. Déployer du contenu statique :
+1. Déployez du contenu statique :
 
    ```bash
    bin/magento setup:static-content:deploy

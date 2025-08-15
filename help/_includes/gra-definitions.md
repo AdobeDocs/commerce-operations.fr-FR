@@ -7,6 +7,6 @@ ht-degree: 0%
 ---
 # Définitions GRA
 
-- **Architecture de référence globale (GRA)** : également connue sous le nom d’architecture de libellé blanc ou de base de code commun. Il s’agit de l’architecture de distribution de module pour une configuration multi-instances.
-- **Configuration multi-instances** : le même client utilise des installations Adobe Commerce distinctes pour des régions ou des marques distinctes. Chaque installation a partagé ainsi que des modules uniques.
-- **Configuration d’une seule instance** : il n’y a qu’une seule installation Adobe Commerce. Plusieurs copies du code source peuvent exister pour différents environnements de test, mais il n’existe qu’une seule version du code de production.
+- **architecture de référence globale (GRA)** également appelée architecture en marque blanche ou base de code commune. Il s’agit de l’architecture de distribution de module pour une configuration multi-instance.
+- **Configuration multi-instance** : le même client utilise des installations Adobe Commerce distinctes pour des régions ou des marques distinctes. Chaque installation comporte des modules partagés ainsi que des modules uniques.
+- **Configuration d’instance unique** : il n’existe qu’une seule installation Adobe Commerce. Plusieurs copies du code source peuvent exister pour différents environnements de test, mais il n’existe qu’une seule version du code de production.

@@ -12,43 +12,43 @@ ht-degree: 0%
 
 # Effectuer une mise à niveau
 
-Vous pouvez mettre à niveau les _déploiements sur site_ de l’application Adobe Commerce à partir de la ligne de commande si vous avez installé le logiciel en :
+Vous pouvez mettre à niveau _sur site_ les déploiements de l’application Adobe Commerce à partir de la ligne de commande si vous avez installé le logiciel :
 
-- Téléchargement du métaphorage du compositeur à l’aide de la commande `composer create-project`.
+- Téléchargement du métapaquet du compositeur à l’aide de la commande `composer create-project`.
 - Installation de l’archive compressée.
 
 >[!NOTE]
 >
->- Pour Adobe Commerce sur les projets d’infrastructure cloud, reportez-vous à la section [Mise à niveau de Commerce version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=fr) du Guide Cloud.
+>- Pour les projets d’infrastructure cloud d’Adobe Commerce, consultez [Mise à niveau de la version de Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) dans le guide cloud.
 >- N’utilisez pas cette méthode pour effectuer la mise à niveau si vous avez cloné le référentiel GitHub. Voir [Mise à niveau d’une installation basée sur Git](../developer/git-installs.md).
 
-Les instructions suivantes vous montrent comment mettre à niveau à l’aide du gestionnaire de modules du compositeur. Adobe Commerce 2.4.2 a introduit la prise en charge du compositeur 2. Si vous tentez de mettre à niveau à partir de &lt;2.4.1, vous devez d’abord effectuer une mise à niveau vers une version compatible avec le compositeur 2 (par exemple, 2.4.2) à l’aide du compositeur 1 _avant_ de procéder à la mise à niveau vers le compositeur 2 pour les mises à niveau ultérieures à la version 2.4.2. En outre, vous devez exécuter une [version prise en charge](../../installation/system-requirements.md) de PHP.
+Les instructions suivantes vous montrent comment effectuer une mise à niveau à l’aide du gestionnaire de packages du compositeur. Adobe Commerce 2.4.2 a introduit la prise en charge du compositeur 2. Si vous tentez d’effectuer une mise à niveau à partir de la version &lt;2.4.1, vous devez d’abord effectuer la mise à niveau vers une version compatible avec le compositeur 2 (par exemple, 2.4.2) à l’aide du compositeur 1 _avant_ d’effectuer la mise à niveau vers le compositeur 2 pour les mises à niveau >2.4.2. En outre, vous devez exécuter une [version prise en charge](../../installation/system-requirements.md) de PHP.
 
 >[!WARNING]
 >
->La procédure de mise à niveau d’Adobe Commerce a été modifiée. Vous devez installer une nouvelle version du package `magento/composer-root-update-plugin` (voir [conditions préalables](../prepare/prerequisites.md)). En outre, les commandes de mise à niveau ont été remplacées de `composer require magento/<package_name>` par `composer require-commerce magento/<package_name>`.
+>La procédure de mise à niveau d’Adobe Commerce a été modifiée. Vous devez installer une nouvelle version du package `magento/composer-root-update-plugin` (voir [conditions préalables](../prepare/prerequisites.md)). En outre, les commandes de mise à niveau sont passées de `composer require magento/<package_name>` à `composer require-commerce magento/<package_name>`.
 
 ## Avant de commencer
 
-Vous devez remplir les [conditions préalables à la mise à niveau](../prepare/prerequisites.md) pour préparer votre environnement avant de lancer le processus de mise à niveau.
+Vous devez remplir les [ conditions préalables à la mise à niveau ](../prepare/prerequisites.md) pour préparer votre environnement avant de démarrer le processus de mise à niveau.
 
-## Gestion des modules
+## Gestion des packages
 
 >[!NOTE]
 >
->Consultez les exemples à la fin de cette section pour obtenir de l’aide sur la spécification de différents niveaux de version. Par exemple, les correctifs de qualité et de sécurité. Si vous ne trouvez pas ces modules dans le compositeur, contactez l’assistance Adobe Commerce.
+>Consultez les exemples à la fin de cette section pour obtenir de l’aide sur la spécification de différents niveaux de version. Par exemple, les correctifs de qualité et les correctifs de sécurité. Si ces packages sont introuvables dans le compositeur, contactez l’assistance Adobe Commerce.
 
-1. Passez en mode de maintenance pour empêcher l’accès à votre boutique lors de la mise à niveau.
+1. Passez en mode de maintenance pour empêcher l’accès à votre boutique pendant le processus de mise à niveau.
 
    ```bash
    bin/magento maintenance:enable
    ```
 
-   Voir [Activation ou désactivation du mode de maintenance](../../installation/tutorials/maintenance-mode.md) pour obtenir des options supplémentaires. Vous pouvez éventuellement créer une [page de mode de maintenance personnalisée](../troubleshooting/maintenance-mode-options.md).
+   Voir [Activation ou désactivation du mode de maintenance](../../installation/tutorials/maintenance-mode.md) pour d’autres options. Vous pouvez éventuellement créer une page [mode de maintenance personnalisé](../troubleshooting/maintenance-mode-options.md).
 
-1. Le démarrage du processus de mise à niveau pendant l’exécution de processus asynchrones, tels que les consommateurs de file d’attente de messages, peut entraîner une corruption des données. Pour empêcher la corruption des données, désactivez toutes les tâches cron.
+1. Le démarrage du processus de mise à niveau pendant l’exécution de processus asynchrones, tels que les consommateurs de file d’attente de messages, peut entraîner la corruption des données. Pour éviter la corruption des données, désactivez toutes les tâches cron.
 
-   _Adobe Commerce sur l’infrastructure cloud :_
+   _Adobe Commerce sur les infrastructures cloud :_
 
    ```bash
    ./vendor/bin/ece-tools cron:disable
@@ -60,13 +60,13 @@ Vous devez remplir les [conditions préalables à la mise à niveau](../prepare/
    bin/magento cron:remove
    ```
 
-1. Démarrez manuellement tous les consommateurs de la file d’attente de messages pour vous assurer que tous les messages sont consommés.
+1. Démarrez manuellement tous les consommateurs de file d&#39;attente de messages pour vous assurer que tous les messages sont consommés.
 
    ```bash
    bin/magento cron:run --group=consumers
    ```
 
-   Attendez que la tâche cron soit terminée. Vous pouvez surveiller l’état de la tâche avec une visionneuse de processus ou exécuter la commande `ps aux | grep 'bin/magento queue'` plusieurs fois jusqu’à ce que tous les processus soient terminés.
+   Attendez que la tâche cron soit terminée. Vous pouvez surveiller le statut de la tâche à l’aide d’une visionneuse de processus ou en exécutant plusieurs fois la commande `ps aux | grep 'bin/magento queue'` jusqu’à ce que tous les processus soient terminés.
 
 1. Créez une sauvegarde du fichier `composer.json`.
 
@@ -76,19 +76,19 @@ Vous devez remplir les [conditions préalables à la mise à niveau](../prepare/
 
 1. Ajoutez ou supprimez des packages spécifiques en fonction de vos besoins.
 
-   Par exemple, si vous effectuez une mise à niveau de Magento Open Source vers Adobe Commerce, supprimez le package de Magento Open Source.
+   Par exemple, si vous effectuez une mise à niveau de Magento Open Source vers Adobe Commerce, supprimez le package Magento Open Source.
 
    ```bash
    composer remove magento/product-community-edition --no-update
    ```
 
-   Vous pouvez également mettre à niveau des données d’exemple.
+   Vous pouvez également mettre à niveau les exemples de données.
 
    ```bash
    composer require <sample data module-1>:<version> ... <sample data module-n>:<version> --no-update
    ```
 
-   - _Adobe Commerce:_
+   - _Adobe Commerce :_
 
      ```bash
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
@@ -100,7 +100,7 @@ Vous devez remplir les [conditions préalables à la mise à niveau](../prepare/
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
      ```
 
-1. Mettez à niveau votre instance à l’aide de la syntaxe de commande `composer require-commerce` suivante :
+1. Mettez à niveau votre instance en utilisant la syntaxe de commande `composer require-commerce` suivante :
 
    ```bash
    composer require-commerce magento/<product> <version> --no-update [--interactive-root-conflicts] [--force-root-updates] [--help]
@@ -108,19 +108,19 @@ Vous devez remplir les [conditions préalables à la mise à niveau](../prepare/
 
    Les options de commande incluent :
 
-   - `<product>` —(Obligatoire) Package à mettre à niveau. Pour les installations sur site, cette valeur doit être `product-community-edition` ou `product-enterprise-edition`.
+   - `<product>` — (Obligatoire) Package à mettre à niveau. Pour les installations sur site, cette valeur doit être soit `product-community-edition` soit `product-enterprise-edition`.
 
-   - `<version>` —(Obligatoire) Version d’Adobe Commerce vers laquelle vous effectuez une mise à niveau. Par exemple, `2.4.3`.
+   - `<version>` — (Obligatoire) Version d’Adobe Commerce vers laquelle vous effectuez la mise à niveau. Par exemple, `2.4.3`.
 
-   - `--no-update` —(Obligatoire) Désactive la mise à jour automatique des dépendances.
+   - `--no-update` — (Obligatoire) Désactive la mise à jour automatique des dépendances.
 
-   - `--interactive-root-conflicts` —(Facultatif) Permet d’afficher et de mettre à jour de manière interactive les valeurs obsolètes des versions précédentes ou les valeurs personnalisées qui ne correspondent pas à la version vers laquelle vous effectuez la mise à niveau.
+   - `--interactive-root-conflicts` — (Facultatif) Permet d&#39;afficher et de mettre à jour de manière interactive toutes les valeurs obsolètes des versions précédentes ou toutes les valeurs personnalisées qui ne correspondent pas à la version vers laquelle vous effectuez la mise à niveau.
 
-   - `--force-root-updates` —(Facultatif) Permet de remplacer toutes les valeurs personnalisées en conflit par les valeurs Commerce attendues.
+   - `--force-root-updates` — (Facultatif) Remplace toutes les valeurs personnalisées en conflit avec les valeurs Commerce attendues.
 
-   - `--help` —(Facultatif) Fournit des détails d’utilisation du module externe.
+   - `--help` — (Facultatif) Fournit des détails d’utilisation sur le plug-in.
 
-   Si ni `--interactive-root-conflicts` ni `--force-root-updates` ne sont spécifiés, la commande conserve les valeurs existantes en conflit et affiche un message d’avertissement. Pour en savoir plus sur le module externe, reportez-vous à la section [Plugin Usage README](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
+   Si ni `--interactive-root-conflicts` ni `--force-root-updates` ne sont spécifiés, la commande conserve les valeurs existantes en conflit et affiche un message d’avertissement. Pour en savoir plus sur le plug-in, consultez le fichier [Lisez-moi sur l’utilisation du plug-in](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
 
 1. Mettez à jour les dépendances.
 
@@ -128,17 +128,17 @@ Vous devez remplir les [conditions préalables à la mise à niveau](../prepare/
    composer update
    ```
 
-### Exemple - répertorier les versions disponibles
+### Exemple - Liste des versions disponibles
 
 Pour afficher la liste complète des versions 2.4.x disponibles :
 
-_Magento Open Source_ :
+_Magento Open Source_:
 
 ```bash
 composer show magento/product-community-edition 2.4.* --available | grep -m 1 versions
 ```
 
-_Adobe Commerce_ :
+_Adobe Commerce_:
 
 ```bash
 composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 versions
@@ -146,15 +146,15 @@ composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 v
 
 ### Exemple - Correctif de qualité
 
-Les correctifs de qualité contiennent principalement des correctifs de sécurité _fonctionnels et_. Cependant, elles peuvent parfois contenir de nouvelles fonctionnalités rétrocompatibles. Utilisez le compositeur pour télécharger un correctif de qualité.
+Les correctifs de qualité contiennent principalement des correctifs de sécurité _et_ fonctionnels. Cependant, ils peuvent parfois contenir de nouvelles fonctionnalités rétrocompatibles. Utilisez le compositeur pour télécharger un correctif de qualité.
 
-_Adobe Commerce_ :
+_Adobe Commerce_:
 
 ```bash
 composer require-commerce magento/product-enterprise-edition 2.4.6 --no-update
 ```
 
-_Magento Open Source_ :
+_Magento Open Source_:
 
 ```bash
 composer require-commerce magento/product-community-edition 2.4.6 --no-update
@@ -162,23 +162,23 @@ composer require-commerce magento/product-community-edition 2.4.6 --no-update
 
 ### Exemple - Correctif de sécurité
 
-Les correctifs de sécurité contiennent uniquement des correctifs de sécurité. Ils sont conçus pour faciliter et accélérer le processus de mise à niveau. Les correctifs de sécurité utilisent la convention d’affectation des noms du compositeur `2.4.x-px`.
+Les correctifs de sécurité contiennent uniquement des correctifs de sécurité. Ils sont conçus pour accélérer et faciliter le processus de mise à niveau. Les correctifs de sécurité utilisent la `2.4.x-px` de convention de nommage du compositeur.
 
-_Adobe Commerce_ :
+_Adobe Commerce_:
 
 ```bash
 composer require-commerce magento/product-enterprise-edition 2.4.6-p3 --no-update
 ```
 
-_Magento Open Source_ :
+_Magento Open Source_:
 
 ```bash
 composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 ```
 
-## Mise à jour des métadonnées
+## Mettre à jour les métadonnées
 
-1. Mettez à jour les champs `"name"`, `"version"` et `"description"` dans le fichier `composer.json` si nécessaire.
+1. Mettez à jour les champs `"name"`, `"version"` et `"description"` du fichier `composer.json` selon vos besoins.
 
    >[!NOTE]
    >
@@ -206,7 +206,7 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
    >[!NOTE]
    >
-   >Si vous utilisez un stockage de cache autre que le système de fichiers, tel que Redis ou Memcached, vous devez également effacer manuellement le cache là-bas.
+   >Si vous utilisez un stockage du cache autre que le système de fichiers, tel que Redis ou Memcached, vous devez également effacer manuellement le cache.
 
 1. Mettez à jour le schéma et les données de la base de données.
 
@@ -220,9 +220,9 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
    bin/magento maintenance:disable
    ```
 
-1. _(Facultatif)_ Redémarrez le vernis.
+1. _(Facultatif)_ Redémarrez Le Vernis.
 
-   Si vous utilisez le vernis pour la mise en cache de la page, redémarrez-le :
+   Si vous utilisez un vernis pour la mise en cache de page, redémarrez-le :
 
    ```bash
    service varnish restart
@@ -230,11 +230,11 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 ## Vérifier votre travail
 
-Pour vérifier si la mise à niveau a réussi, ouvrez l’URL de storefront dans un navigateur web. Si votre mise à niveau a échoué, votre storefront ne se charge pas correctement.
+Pour vérifier si la mise à niveau a réussi, ouvrez l’URL de votre storefront dans un navigateur web. Si votre mise à niveau a échoué, votre storefront ne se charge pas correctement.
 
 Si l’application échoue avec une erreur `We're sorry, an error has occurred while generating this email.` :
 
-1. Réinitialisez [la propriété et les autorisations du système de fichiers](../../installation/prerequisites/file-system/configure-permissions.md) en tant qu’utilisateur disposant de droits `root`.
+1. Réinitialisez [propriété et autorisations du système de fichiers](../../installation/prerequisites/file-system/configure-permissions.md) en tant qu’utilisateur disposant de droits d’`root`.
 1. Effacez les répertoires suivants :
    - `var/cache/`
    - `var/page_cache/`

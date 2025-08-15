@@ -1,6 +1,6 @@
 ---
-title: Bonnes pratiques relatives au débogage
-description: Découvrez des techniques pour résoudre les problèmes de développement courants d’Adobe Commerce.
+title: Bonnes pratiques de débogage
+description: Découvrez les techniques permettant de résoudre les problèmes de développement courants d’Adobe Commerce.
 feature: Best Practices
 role: Developer
 exl-id: 78fbea7b-28e8-4713-990d-b4cae159250c
@@ -11,21 +11,21 @@ ht-degree: 0%
 
 ---
 
-# Bonnes pratiques relatives au débogage pour Adobe Commerce
+# Bonnes pratiques de débogage pour Adobe Commerce
 
-Cette rubrique explique comment déboguer de manière systématique et efficace la structure Adobe Commerce. L’objectif est de vous aider à atteindre rapidement la racine d’un problème et de réduire le temps d’enquête.
+Cette rubrique explique comment déboguer systématiquement et efficacement le framework Adobe Commerce. L’objectif est de vous aider à vous attaquer rapidement à la racine d’un problème et de réduire le temps nécessaire aux enquêtes.
 
-## Dépannage : suspects usuels
+## Dépannage : les suspects habituels
 
-Cette section décrit les problèmes les plus courants que vous pouvez rencontrer lors du développement.
+Cette section décrit les problèmes les plus courants que vous pouvez rencontrer pendant le développement.
 
 ### Cache
 
 - Videz le cache avant d’approfondir l’enquête
-- Examinez le cache d’APC, le CDN, le vernis, le code généré et les répertoires `var/view_preprocessed` et `pub/static/`.
-- Arrêtez et redémarrez les gestionnaires de file d’attente après avoir vidé le cache ou modifié le code.
+- Tenez compte du cache APC, du réseau CDN, du vernis, du code généré et des répertoires `var/view_preprocessed` et `pub/static/`
+- Arrêtez et redémarrez les gestionnaires de file d’attente après avoir vidé le cache ou modifié le code
 
-L’exemple de code suivant fournit des commandes utiles relatives à la gestion du cache (ne pas exécuter sur les environnements de production) :
+L’exemple de code suivant fournit des commandes utiles liées à la gestion du cache (ne pas exécuter dans les environnements de production) :
 
 ```bash
 # restart php-fpm to flush APC
@@ -72,11 +72,11 @@ sudo kill <process_id>
 
 ### Données indexées
 
-Réindexez tout si le problème peut être lié à l’index. Le débogage des données indexées se produit généralement dans des environnements hors production. Dans les environnements de production, vous pouvez examiner l’origine du décalage d’index avant de réindexer. Les caractéristiques de l&#39;état défectueux peuvent vous donner une idée de l&#39;origine du problème.
+Réindexez tout si le problème peut être lié à l’index. Le débogage des données indexées se produit généralement dans les environnements hors production. Dans les environnements de production, vous pouvez rechercher l’origine de l’alignement incorrect des index avant de les réindexer. Les caractéristiques de l&#39;état défectueux peuvent vous en dire quelque chose sur l&#39;origine du problème.
 
 ### Compositeur
 
-Le code peut être obsolète en raison d’un changement de branche ou des fichiers principaux qui ont été modifiés lors d’un précédent débogage. Pour éliminer les problèmes potentiels, exécutez les commandes suivantes :
+Il se peut que votre code soit obsolète en raison d’une modification de branche ou de fichiers principaux modifiés lors d’un effort de débogage précédent. Pour éliminer les problèmes potentiels, exécutez les commandes suivantes :
 
 ```bash
 rm -rf vendor/*
@@ -86,7 +86,7 @@ composer install
 
 ### Contenu généré
 
-Recréez les fichiers frontend avant de déboguer le contenu généré dans JS, CSS, images, traductions et autres fichiers.
+Recréez les fichiers frontend avant de déboguer le contenu généré dans les fichiers JS, CSS, images, traductions et autres.
 
 ```bash
 rm -rf generated/* var/cache/* var/page_cache/* var/session/* var/view_preprocessed/* pub/static/*
@@ -100,7 +100,7 @@ Assurez-vous que votre installation locale est en mode `developer`.
 
 ### Nouveau module
 
-Si vous avez créé un module, recherchez les problèmes suivants :
+Si vous avez créé un module, vérifiez les problèmes suivants :
 
 - Le module est-il activé ?
 
@@ -108,76 +108,76 @@ Si vous avez créé un module, recherchez les problèmes suivants :
   bin/magento module --enable Your_Module
   ```
 
-  Vérifiez le fichier `app/etc/config.php` de votre nouveau module.
+  Vérifiez le fichier `app/etc/config.php` pour votre nouveau module.
 
-- Vérifiez l’imbrication du fichier et de la structure de répertoires. Par exemple, les fichiers de mise en page se trouvent-ils dans le répertoire `view/layout/` au lieu du répertoire `view/frontend/layout` ? Les modèles se trouvent-ils dans le répertoire `view/frontend/template` au lieu du répertoire `view/frontend/templates` ?
+- Vérifiez l’imbrication des fichiers et de la structure des répertoires. Par exemple, les fichiers de disposition se trouvent-ils dans le répertoire `view/layout/` et non dans le répertoire `view/frontend/layout` ? Les modèles se trouvent-ils dans le répertoire `view/frontend/template` plutôt que dans le répertoire `view/frontend/templates` ?
 
-## Dépannage : Partage à moitié
+## Dépannage : division en deux
 
-Si les suspects habituels ne proposent pas de solution au problème, la façon la plus rapide de procéder est de diviser à moitié (ou de diviser) le problème. Avec cette méthode, vous éliminez les blocs volumineux et divisez ce qui reste pour localiser la cause principale au lieu de parcourir le code de manière linéaire.
+Si les suspects habituels n’offrent pas de solution au problème, la façon la plus rapide de procéder est de diviser le problème en deux (ou en deux). Avec cette méthode, vous éliminez des blocs volumineux et divisez ce qui reste pour localiser la cause principale au lieu de parcourir le code de manière linéaire.
 
 Voir les diagrammes suivants :
 
-![Diagramme de contour](../../../assets/playbooks/bisect.png)
+![Diagramme Bisect](../../../assets/playbooks/bisect.png)
 
-![Diagramme de contour](../../../assets/playbooks/bisect2.png)
+![Diagramme Bisect](../../../assets/playbooks/bisect2.png)
 
-Il existe plusieurs approches de la segmentation, mais Adobe recommande de suivre cet ordre :
+Il existe plusieurs approches pour bissecter, mais Adobe recommande de suivre cet ordre :
 
-- Biscuit par rubrique
-- Bisculez par validations
-- Biscuit par fichier
+- Diviser par sujet
+- Diviser par validations
+- Tri par fichiers
 
-### Etape 1 : biaiser par sujet
+### Étape 1 : Bisecter par sujet
 
-Si le problème peut ne pas être lié au code, supprimez d’abord les gros blocs. Voici quelques-uns des grands blocs à envisager :
+Si le problème n’est pas lié au code, éliminez d’abord les blocs volumineux. Voici quelques-uns des éléments importants à prendre en compte :
 
-- **Structure Adobe Commerce** : le problème est-il lié à Adobe Commerce ou peut-il être lié à un autre système connecté ?
-- **Serveur et client** : effacez le cache et le stockage du navigateur. Le problème est-il résolu ? Cela peut exclure une cause liée au serveur. Le problème existe-t-il encore ? Il n’est plus nécessaire de perdre du temps dans le débogage du navigateur.
-- **Session** : le problème se produit-il pour chaque utilisateur ? Si ce n’est pas le cas, votre problème peut se limiter aux rubriques liées à la session ou au navigateur.
-- **Cache** : la désactivation de tous les caches change-t-elle quelque chose ? Si tel est le cas, vous pouvez vous concentrer sur les rubriques liées au cache.
-- **Base de données** : le problème se produit-il dans chaque environnement exécutant le même code ? Si ce n’est pas le cas, recherchez les problèmes de configuration et d’autres sujets liés à la base de données.
-- **Code** : recherchez des problèmes de code si aucun des problèmes ci-dessus n’a résolu le problème.
+- **Framework Adobe Commerce**—Le problème est-il lié à Adobe Commerce ou pourrait-il être lié à un autre système connecté ?
+- **Serveur et client** : videz le cache et le stockage du navigateur. Le problème est-il résolu ? Cela peut exclure une cause liée au serveur. Le problème existe-t-il toujours ? Plus besoin de perdre de temps dans le débogage du navigateur.
+- **Session** : le problème se produit-il pour chaque utilisateur ? Si ce n’est pas le cas, votre problème peut se limiter à des rubriques liées à la session ou au navigateur.
+- **Cache** : la désactivation de tous les caches change-t-elle quelque chose ? Si tel est le cas, vous pouvez vous concentrer sur les rubriques relatives au cache.
+- **Base de données** : le problème se produit-il dans chaque environnement exécutant le même code ? Dans le cas contraire, recherchez les problèmes de configuration et d&#39;autres rubriques relatives à la base de données.
+- **Code** : recherchez les problèmes de code si aucun des éléments ci-dessus ne résout le problème.
 
-### Étape 2 : biaiser par validations
+### Étape 2 : division par validations
 
-Si le problème a commencé entre maintenant et il y a deux mois, ramenez le code à il y a deux mois. Vérifiez si le problème existe toujours. Avance d&#39;un mois. Le problème se produit-il là ? Si ce n&#39;est pas le cas, passez deux semaines. Cela se produit-il maintenant ? Reviens une semaine en arrière. Toujours là ? Retournez quatre jours en arrière. À un moment donné, il ne vous reste qu’une seule validation susceptible de contenir du code lié au problème. Votre cause principale est désormais probablement limitée aux fichiers modifiés dans cette validation.
+Si le problème a commencé entre maintenant et il y a deux mois, restaurez le code à deux mois auparavant. Vérifiez si le problème existe toujours. Avance d&#39;un mois. Le problème se produit-il là-bas? Sinon, allez-y pendant deux semaines. Cela se produit-il maintenant ? Retourne une semaine en arrière. Toujours là ? Remontez quatre jours en arrière. À un moment donné, il ne vous reste qu’une seule validation, qui contient probablement du code lié au problème. Votre cause première est désormais probablement limitée aux fichiers modifiés dans cette validation.
 
-Vous pouvez remplacer les semaines et les jours par des validations. Par exemple, basculez 100 validations, 50, 25, 12.
+Vous pouvez remplacer semaines et jours par des validations. Par exemple, annuler 100 validations, avancer 50, avancer 25, reculer 12.
 
-### Étape 3 : sélection par fichiers
+### Étape 3 : Diviser par fichiers
 
-- Divisez Adobe Commerce par types de fichiers (core et non-core). Tout d’abord, désactivez tous les modules client et marketplace. Le problème existe-t-il encore ? Il s&#39;agit probablement d&#39;une question non fondamentale.
-- Activez (environ) à nouveau la moitié des modules dans le fichier `app/etc/config.php` . Tenez compte des dépendances. Il est préférable d’activer simultanément des grappes de modules avec le même sujet. Le problème existe-t-il encore ?
-- Activez un quart des modules restants. Le problème existe-t-il encore ? Désactivez la moitié de ce que vous avez activé. Cette méthode peut vous aider à isoler la cause racine d’un seul module.
+- Divisez Adobe Commerce par types de fichiers (principaux et non principaux). Tout d’abord, désactivez tous les modules de marché et de client. Le problème existe-t-il toujours ? Il s’agit probablement d’une question secondaire.
+- Activez à nouveau (en gros) la moitié des modules dans le fichier `app/etc/config.php`. Tenez compte des dépendances. Il est préférable d’activer les clusters de modules avec le même sujet en même temps. Le problème existe-t-il toujours ?
+- Activez un quart des modules restants. Le problème existe-t-il toujours ? Désactivez la moitié de ce que vous avez activé. Cette méthode peut vous aider à isoler la cause première à un seul module.
 
-## Économies de temps
+## Gains de temps
 
-Outre les techniques de dépannage, cette section fournit des règles générales qui peuvent vous aider à gagner du temps lors du débogage.
+Outre les techniques de dépannage, cette section fournit quelques règles générales qui peuvent vous aider à gagner du temps lors du débogage.
 
 ### Limiter les données
 
-Déterminez si vous avez besoin du catalogue complet ou de toutes les vues de magasin pour répliquer le problème. Vous pouvez déboguer des problèmes d’indexation avec un clone de base de données où vous avez supprimé 95 % du catalogue avant de commencer le débogage. Cette méthode permet de gagner un temps considérable lors des processus d’indexation. Créez un doublon de la base de données client avec un nombre et un catalogue réduits. Cela peut également s’appliquer à d’autres entités (telles que les clients) en fonction de la zone que vous déboguez.
+Déterminez si vous avez besoin du catalogue complet ou de toutes les vues de magasin pour répliquer le problème. Vous pouvez déboguer les problèmes d’indexation avec un clone de base de données dans lequel vous avez supprimé 95 % du catalogue avant de commencer le débogage. Cette méthode permet de gagner beaucoup de temps pendant les processus d’indexation. Créez un doublon de la base de données cliente avec un nombre de magasins et un catalogue réduits. Cela peut également s’appliquer à d’autres entités (comme les clients) en fonction de la zone que vous déboguez.
 
-### Demander plus d’informations
+### Demander plus d&#39;informations
 
-Parfois, une étape facile à oublier au milieu de tout le code et le travail technique : demander plus d&#39;informations. Captures plein écran, vidéo, conversation vidéo avec la personne qui a identifié le problème, étapes de réplication, questions sur le fait que d&#39;autres choses apparemment sans importance se soient produites autour de l&#39;événement problématique. Demandez ce que quelqu&#39;un s&#39;attendait à ce qu&#39;il se produise. S’agit-il vraiment d’un bogue ou peut-être simplement d’un malentendu sur le fonctionnement du code ?
+Parfois, une étape facile à oublier parmi tout le code et le travail technique : demandez plus d&#39;informations. Captures en plein écran, vidéo, conversation par vidéoconférence avec la personne qui a identifié le problème, étapes de réplication, questions pour savoir si d’autres événements apparemment sans importance se sont produits autour de l’événement problématique. Demandez-lui ce que quelqu&#39;un s&#39;attendait à voir se produire. S’agit-il vraiment d’un bug ou peut-être simplement d’une mauvaise compréhension du fonctionnement du code ?
 
 ### Langue et interprétation
 
-La description du problème est-elle claire ? Êtes-vous certain qu’aucun terme ou description ne peut être interprété de plusieurs façons. Si c&#39;est le cas, assurez-vous de parler de la même chose.
+La description du problème est-elle claire ? Êtes-vous certain qu’aucun terme ou description ne peut être interprété de plusieurs façons. Si oui, assurez-vous de parler de la même chose.
 
-### Recherche Internet
+### Recherche sur Internet
 
-Effectuez une recherche Internet avec des termes liés au problème. Il est probable que quelqu&#39;un d&#39;autre ait déjà rencontré le même problème. Recherchez les [problèmes Adobe Commerce GitHub](https://github.com/magento/magento2/issues).
+Effectuez une recherche sur Internet avec les termes liés au problème. Il est probable que quelqu’un d’autre ait déjà rencontré le même problème. Recherchez parmi les [problèmes GitHub d’Adobe Commerce](https://github.com/magento/magento2/issues).
 
 ### Faites une pause
 
-Si vous cherchez un problème pendant trop longtemps, il peut être difficile de trouver une solution. Posez votre travail et prenez une autre tâche ou faites une promenade. La réponse peut vous venir à l&#39;esprit lorsque vous oubliez le problème pendant un moment.
+Si vous cherchez un problème depuis trop longtemps, il peut être difficile de trouver une solution. Déposez votre travail et prenez une autre tâche ou faites une promenade. La réponse peut vous venir lorsque vous oubliez la question pendant un certain temps.
 
 ## Outils
 
-Les outils d’interface de ligne de commande n98 Magerun ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2)) fournissent des fonctionnalités utiles pour travailler avec Adobe Commerce à partir de la ligne de commande. En particulier, ces commandes :
+Les outils de l’interface de ligne de commande n98 magerun ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2)) offrent des fonctionnalités utiles pour travailler avec Adobe Commerce à partir de la ligne de commande. En particulier, ces commandes :
 
 ```bash
 n98-magerun2.phar dev:console
@@ -189,18 +189,18 @@ n98-magerun2.phar index:trigger:recreate
 
 ## Fragments de code
 
-Les rubriques suivantes contiennent des fragments de code qui peuvent être utilisés pour consigner ou identifier des problèmes dans les projets Commerce.
+Les rubriques suivantes fournissent des fragments de code qui peuvent être utilisés pour consigner ou identifier des problèmes dans les projets Commerce.
 
 ### Vérifier si un fichier XML est utilisé par Commerce
 
-Ajoutez une erreur de syntaxe évidente dans un fichier XML pour vérifier s’il est utilisé. Ouvrez une balise et ne la fermez pas, par exemple :
+Ajoutez une erreur de syntaxe évidente dans un fichier XML pour voir si elle est utilisée. Ouvrez une balise sans la fermer par exemple :
 
 ```xml
 <?xml version="1.0"?>
 <test
 ```
 
-Si ce fichier est utilisé, une erreur est générée. Si ce n’est pas le cas, votre module peut ne pas être utilisé ou activé par exemple, ou le fichier XML peut se trouver au mauvais emplacement.
+Si ce fichier est utilisé, il génère une erreur. Si ce n&#39;est pas le cas, il se peut que votre module ne soit pas utilisé ou activé, par exemple, ou que le fichier XML se trouve au mauvais emplacement.
 
 ### Journalisation
 
@@ -213,7 +213,7 @@ Si ce fichier est utilisé, une erreur est générée. Si ce n’est pas le cas,
     ->get(\Psr\Log\LoggerInterface::class)->debug('message');
 ```
 
->[!TAB Monolog]
+>[!TAB Monologue]
 
 ```php
 $log = new \Monolog\Logger('custom', [new \Monolog\Handler\StreamHandler(BP.'/var/log/test.log')]);

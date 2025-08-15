@@ -3,13 +3,13 @@ title: 'ACP2E-3753 : e-mails d’alerte de stock n’utilisant pas de modèles d
 description: Appliquez le correctif ACP2E-3753 pour résoudre le problème d’Adobe Commerce où les e-mails d’alerte de produit dans une configuration multi-magasin sont toujours envoyés à l’aide du thème par défaut, quelle que soit la configuration du magasin ou du thème.
 feature: Themes, Personalization
 role: Admin, Developer
-source-git-commit: 6af6dc5d4880cc0cb80c443cab98cfb562949101
+exl-id: ad44ffdd-f122-4119-83e3-1816951b662c
+source-git-commit: 2089fed83a207f9d0211273652ea320d2590f8d5
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-3753 : e-mails d’alerte de stock n’utilisant pas de modèles de thème spécifiques au magasin dans la configuration multi-magasin
 
@@ -27,7 +27,7 @@ Le correctif ACP2E-3753 corrige le problème où les e-mails d’alerte de produ
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -61,7 +61,7 @@ Les e-mails n’incluent pas les modèles définis dans le site web/magasin corr
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

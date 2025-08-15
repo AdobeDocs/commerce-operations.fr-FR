@@ -1,6 +1,6 @@
 ---
-title: Phase de développement de mise en oeuvre
-description: Découvrez les bonnes pratiques de mise en oeuvre pour la phase de développement des projets Adobe Commerce.
+title: Phase de développement de la mise en œuvre
+description: Découvrez les bonnes pratiques de mise en œuvre pour la phase de développement des projets Adobe Commerce.
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
@@ -16,17 +16,17 @@ ht-degree: 2%
 
 La phase de développement comprend les activités suivantes :
 
-- Configuration de l’environnement local et d’évaluation
-- Planification Sprint
-- Exécution des billets
+- Configuration des environnements local et d’évaluation
+- Planification du sprint
+- Exécution du ticket
 - Dépannage
 - Révision, fusion et test du code
-- Révision Sprint
-- Validation client
+- Révision au sprint
+- Approbation du client
 
 >[!TIP]
 >
->Pour obtenir des recommandations de haut niveau sur la gestion globale du processus de développement, voir [bonnes pratiques générales](general.md) .
+>Voir [Bonnes pratiques générales](general.md) pour des recommandations de haut niveau sur la gestion globale du processus de développement.
 
 Les sections suivantes contiennent des informations sur les bonnes pratiques pour la phase de développement.
 
@@ -34,44 +34,44 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques pou
 
 | Bonne pratique | Description |
 |-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| [Examen du code](code-review.md) | Processus de validation recommandé pour s’assurer que les fonctionnalités mises en oeuvre répondent aux exigences |
-| [Compositeur par rapport à Git](code-management.md) | Déterminer comment distribuer du code personnalisé en tenant compte de la gestion des versions, de la complexité du code et de la gestion des dépendances |
-| [Stratégie d&#39;embranchement](git-branching.md) | Gestion du code source dans les référentiels Git |
+| [ Révision du code ](code-review.md) | Processus de validation recommandé pour s’assurer que la fonctionnalité implémentée répond aux exigences |
+| [Compositeur et Git](code-management.md) | Déterminez comment distribuer le code personnalisé en prenant en compte la gestion des versions, la complexité du code et la gestion des dépendances |
+| [Stratégie d’embranchement](git-branching.md) | Gestion du code source dans les référentiels Git |
 
 ## Plateforme et services
 
 | Bonne pratique | Description |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Versions et déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=fr){target="_blank"} | Décrit les bonnes pratiques pour les étapes de création et de déploiement d’Adobe Commerce sur les projets d’infrastructure cloud |
-| Débogage | Débogage systématique et efficace de la structure Adobe Commerce |
-| [Déploiement de contenu statique](static-content-deployment.md) | Évitez les problèmes liés au contenu statique qui n’apparaît pas sur votre storefront. |
-| [Dépannage](troubleshooting.md) | Résolution des problèmes courants de mise en oeuvre d’Adobe Commerce |
+| [Versions et déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Décrit les bonnes pratiques pour les étapes de création et de déploiement d’Adobe Commerce sur les projets d’infrastructure cloud |
+| Débogage | Déboguer systématiquement et efficacement le framework Adobe Commerce |
+| [Déploiement de contenu statique](static-content-deployment.md) | Évitez les problèmes liés au contenu statique qui n’apparaît pas sur votre storefront |
+| [Dépannage](troubleshooting.md) | Résolution des problèmes courants d’implémentation d’Adobe Commerce |
 
-## Base
+## Base de données
 
 | Bonne pratique | Description |
 |----------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [Modification de table](modifying-core-and-third-party-tables.md) | Déterminer comment et à quel moment modifier des tables de base de données tierces et Adobe Commerce |
+| [Modification du tableau](modifying-core-and-third-party-tables.md) | Déterminez comment et quand modifier Adobe Commerce et les tables de bases de données tierces. |
 
 ## Optimisation des fichiers
 
 | Bonne pratique | Description |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [Redimensionnement d’image du catalogue](catalog-image-resizing.md) | Fournit des conseils sur le redimensionnement des images avant que le magasin ne passe en production pour garantir des performances optimales |
-| [CSS et JS](optimize-css-js-files.md) | Fusion et minimisation de fichiers CSS (feuilles de style en cascade) et JavaScript (JS) depuis l’administrateur ou la ligne de commande |
-| [Images](image-optimization.md) | Optimisation des images et utilisation rapide pour optimiser le temps de réponse |
+| [Redimensionnement de l’image du catalogue](catalog-image-resizing.md) | Fournit des conseils sur le redimensionnement des images avant le démarrage en production d’un magasin pour garantir des performances optimales |
+| [ CSS et JS ](optimize-css-js-files.md) | Fusionner et réduire les fichiers de feuille de style en cascade (CSS) et JavaScript (JS) depuis Admin ou la ligne de commande |
+| [Images](image-optimization.md) | Optimisez les images et utilisez Fastly pour optimiser le temps de réponse |
 
-## Développement des frontières
+## Développement frontal
 
 | Bonne pratique | Description |
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [Développement de thème](https://developer.adobe.com/commerce/frontend-core/guide/best-practices/){target="_blank"} | Décrit les modèles de développement pour garantir la compatibilité entre votre thème, les versions futures d’Adobe Commerce et les extensions personnalisées. |
+| [Développement du thème](https://developer.adobe.com/commerce/frontend-core/guide/best-practices/){target="_blank"} | Décrit les modèles de développement pour garantir la compatibilité entre votre thème, les futures versions d’Adobe Commerce et les extensions personnalisées |
 
-## développement PHP
+## Développement PHP
 
 | Bonne pratique | Description |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Gestion des exceptions](exception-handling.md) | Décrit les méthodes recommandées de journalisation des exceptions |
-| [Extensions](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Décrit les modèles de développement pour garantir la compatibilité entre votre extension, les versions futures d’Adobe Commerce et d’autres extensions personnalisées. |
-| [Blocs de contenu privé](private-content-block-configuration.md) | Configuration de blocs de contenu privés pour optimiser les performances du storefront |
-| [Modifier le code PHP principal et tiers](modifying-core-and-third-party-code.md) | Modifiez la fonctionnalité, le résultat ou la saisie de tout code que vous n’avez pas créé ou dont vous n’avez pas directement le contrôle. |
+| [Gestion des exceptions](exception-handling.md) | Décrit les méthodes recommandées pour la journalisation des exceptions |
+| [ Extensions ](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Décrit les modèles de développement pour garantir la compatibilité entre votre extension, les futures versions d’Adobe Commerce et d’autres extensions personnalisées |
+| [Blocs de contenu privés](private-content-block-configuration.md) | Configurer des blocs de contenu privés pour optimiser les performances du storefront |
+| [Modification du code PHP principal et tiers](modifying-core-and-third-party-code.md) | Modifier la fonctionnalité, le résultat ou l’entrée d’un code que vous n’avez pas créé ou que vous ne contrôlez pas directement |

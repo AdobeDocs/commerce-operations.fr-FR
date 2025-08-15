@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-37748 : la requête GraphQL renvoie les produits non affectés au catalogue partagé'
-description: Le correctif MDVA-37748 corrige le problème où une requête GraphQL renvoie des produits non affectés à un catalogue partagé. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5 est installé. L’ID du correctif est MDVA-37748. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
+description: Le correctif MDVA-37748 corrige le problème où une requête GraphQL renvoie des produits non affectés à un catalogue partagé. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5 est installé. L’ID du correctif est MDVA-37748. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
 feature: B2B, GraphQL, Catalog Management, Categories, Products
 role: Admin
 exl-id: 8aa00953-dbf0-4533-9b53-b809bf59ec20
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # MDVA-37748 : la requête GraphQL renvoie les produits non affectés au catalogue partagé
 
-Le correctif MDVA-37748 corrige le problème où une requête GraphQL renvoie des produits non affectés à un catalogue partagé. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5 est installé. L’ID du correctif est MDVA-37748. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
+Le correctif MDVA-37748 corrige le problème où une requête GraphQL renvoie des produits non affectés à un catalogue partagé. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5 est installé. L’ID du correctif est MDVA-37748. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
 
 ## Produits et versions concernés
 
@@ -28,7 +28,7 @@ Adobe Commerce (toutes les méthodes de déploiement) 2.4.2 - 2.4.2-p2
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -53,14 +53,14 @@ Les modules B2B sont installés.
 
    <pre>
     <code class="language-graphql">
-    mutation &lbrace;
+    mutation {
       generateCustomerToken(
         email: "company.admin@exapmle.test"
         password: "password"
-      ) &lbrace;
+      ) {
         token
-      &rbrace;
-    &rbrace;
+      }
+    }
     </code>
     </pre>
 
@@ -68,29 +68,29 @@ Les modules B2B sont installés.
 
    <pre>
     <code class="language-graphql">
-    &lbrace;
+    {
       products(
           filter: {},
           pageSize: 100,
           currentPage: 1
           sort: {}
-        ) &lbrace;
+        ) {
           total_count
-          page_info &lbrace;
+          page_info {
             page_size
             current_page
-          &rbrace;
-          aggregations &lbrace;
+          }
+          aggregations {
             attribute_code
             count
             label
-            options &lbrace;
+            options {
               label
               value
               count
-            &rbrace;
-          &rbrace;
-          items &lbrace;
+            }
+          }
+          items {
             name
             sku
             created_at
@@ -100,107 +100,107 @@ Les modules B2B sont installés.
             short_description {html}
             url_key
             url_path
-            price_tiers&lbrace;
-              final_price&lbrace;
+            price_tiers{
+              final_price{
                   value
                   currency
-                &rbrace;
-              discount&lbrace;
+                }
+              discount{
                   amount_off
                   percent_off
-                &rbrace;
+                }
               quantity
-            &rbrace;
-            price_range &lbrace;
-             maximum_price &lbrace;
-              regular_price &lbrace;
+            }
+            price_range {
+             maximum_price {
+              regular_price {
                 value
-              &rbrace;
-              final_price &lbrace;
+              }
+              final_price {
                 value
-              &rbrace;
-            &rbrace;
-            minimum_price &lbrace;
-              regular_price &lbrace;
+              }
+            }
+            minimum_price {
+              regular_price {
                 value
-              &rbrace;
-              final_price &lbrace;
+              }
+              final_price {
                value
-              &rbrace;
-            &rbrace;
-          &rbrace;
-          image &lbrace;
+              }
+            }
+          }
+          image {
            url
-          &rbrace;
-          thumbnail &lbrace;
+          }
+          thumbnail {
            url
-          &rbrace;
-          small_image &lbrace;
+          }
+          small_image {
            url
-          &rbrace;
-          media_gallery &lbrace;
+          }
+          media_gallery {
            url
-          &rbrace;
-          ... on ConfigurableProduct &lbrace;
-            configurable_options &lbrace;
+          }
+          ... on ConfigurableProduct {
+            configurable_options {
              id
 
              label
              position
              use_default
              attribute_code
-             values &lbrace;
+             values {
                value_index
                label
-               swatch_data &lbrace;
+               swatch_data {
                  value
-               &rbrace;
-            &rbrace;
+               }
+            }
             product_id
-          &rbrace;
-          variants &lbrace;
-            product &lbrace;
+          }
+          variants {
+            product {
               id
               name
               sku
-              &#x200B;#margin
-              &#x200B;#margin_percentage
-              image &lbrace;
+              #margin
+              #margin_percentage
+              image {
                 url
-              &rbrace;
-              small_image &lbrace;
+              }
+              small_image {
                 url
-              &rbrace;
-              thumbnail &lbrace;
+              }
+              thumbnail {
                 url
-              &rbrace;
-              media_gallery&lbrace;
+              }
+              media_gallery{
                 url
-              &rbrace;
+              }
               attribute_set_id
-              ... on PhysicalProductInterface &lbrace;
+              ... on PhysicalProductInterface {
                 weight
-              &rbrace;
-              price_range &lbrace;
-                minimum_price &lbrace;
-                  regular_price &lbrace;
+              }
+              price_range {
+                minimum_price {
+                  regular_price {
                     value
                     currency
-                  &rbrace;
-                &rbrace;
-              &rbrace;
-            &rbrace;
-            attributes &lbrace;
+                  }
+                }
+              }
+            }
+            attributes {
               label
               code
               value_index
-            &rbrace;
-          &rbrace;
-        &rbrace;
-      &rbrace;
+            }
+          }
+        }
+      }
 
-    &rbrace;
-&rbrace;
+    }
+}
 </code>
 </pre>
 
@@ -214,106 +214,106 @@ Seul « Produit 2 » est renvoyé, mais le `total_count` en affiche deux.
 
 <pre>
 <code class="language-graphql">
-&lbrace;
-  "data": &lbrace;
-    "products": &lbrace;
+{
+  "data": {
+    "products": {
       "total_count": 2,
-      "page_info": &lbrace;
+      "page_info": {
         "page_size": 100,
         "current_page": 1
-      &rbrace;,
-      "aggregations": &lbrack;
-        &lbrace;
+      },
+      "aggregations": [
+        {
           "attribute_code": "price",
           "count": 2,
           "label": "Price",
-          "options": &lbrack;
-            &lbrace;
+          "options": [
+            {
               "label": "0-100",
               "value": "0_100",
               "count": 1
-            &rbrace;,
-            &lbrace;
+            },
+            {
               "label": "100-200",
               "value": "100_200",
               "count": 1
-            &rbrace;
-          &rbrack;
-        &rbrace;,
-        &lbrace;
+            }
+          ]
+        },
+        {
           "attribute_code": "category_id",
           "count": 1,
           "label": "Category",
-          "options": &lbrack;
-            &lbrace;
+          "options": [
+            {
               "label": "Cat 1",
               "value": "3",
               "count": 2
-            &rbrace;
-          &rbrack;
-        &rbrace;
-      &rbrack;,
-      "items": &lbrack;
-        &lbrace;
+            }
+          ]
+        }
+      ],
+      "items": [
+        {
           "name": "Product 2",
           "sku": "Product 2",
           "created_at": "2021-05-12 10:51:44",
           "updated_at": "2021-05-12 11:03:24",
           "stock_status": "IN_STOCK",
-          "description": &lbrace;
+          "description": {
             "html": ""
-          &rbrace;,
-          "short_description": &lbrace;
+          },
+          "short_description": {
             "html": ""
-          &rbrace;,
+          },
           "url_key": "product-2",
           "url_path": null,
-          "price_tiers": &lbrack;
-            &lbrace;
-              "final_price": &lbrace;
+          "price_tiers": [
+            {
+              "final_price": {
                 "value": 90,
                 "currency": "USD"
-              &rbrace;,
-              "discount": &lbrace;
+              },
+              "discount": {
                 "amount_off": 10,
                 "percent_off": 10
-              &rbrace;,
+              },
               "quantity": 1
-            &rbrace;
-          &rbrack;,
-          "price_range": &lbrace;
-            "maximum_price": &lbrace;
-              "regular_price": &lbrace;
+            }
+          ],
+          "price_range": {
+            "maximum_price": {
+              "regular_price": {
                 "value": 100
-              &rbrace;,
-              "final_price": &lbrace;
+              },
+              "final_price": {
                 "value": 90
-              &rbrace;
-            &rbrace;,
-            "minimum_price": &lbrace;
-              "regular_price": &lbrace;
+              }
+            },
+            "minimum_price": {
+              "regular_price": {
                 "value": 100
-              &rbrace;,
-              "final_price": &lbrace;
+              },
+              "final_price": {
                 "value": 90
-              &rbrace;
-            &rbrace;
-          &rbrace;,
-          "image": &lbrace;
+              }
+            }
+          },
+          "image": {
             "url": "../pub/static/version1620816308/frontend/Magento/luma/en_US/Magento_Catalog/images/product/placeholder/image.jpg"
-          &rbrace;,
-          "thumbnail": &lbrace;
+          },
+          "thumbnail": {
             "url": "../pub/static/version1620816308/frontend/Magento/luma/en_US/Magento_Catalog/images/product/placeholder/thumbnail.jpg"
-          &rbrace;,
-          "small_image": &lbrace;
+          },
+          "small_image": {
             "url": "../pub/static/version1620816308/frontend/Magento/luma/en_US/Magento_Catalog/images/product/placeholder/small_image.jpg"
-          &rbrace;,
+          },
           "media_gallery": []
-        &rbrace;
-      &rbrack;
-    &rbrace;
-  &rbrace;
-&rbrace;
+        }
+      ]
+    }
+  }
+}
 </code>
 </pre>
 
@@ -322,13 +322,13 @@ Seul « Produit 2 » est renvoyé, mais le `total_count` en affiche deux.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil de correctifs de la qualité, voir :
 
-* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
+* Publication de l’outil [Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!DNL Quality Patches Tool].
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr).
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).

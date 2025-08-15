@@ -1,6 +1,6 @@
 ---
 title: Versions prises en charge pour la migration des données
-description: Découvrez les versions de Magento 1 et de Magento 2 prises en charge par  [!DNL Data Migration Tool] .
+description: Découvrez les versions de Magento 1 et Magento 2 prises en charge par le  [!DNL Data Migration Tool] .
 exl-id: ba6398b4-66be-4d33-a4d3-a9f0aaa0fa81
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Versions prises en charge pour la migration des données
 
-Le [!DNL Data Migration Tool] prend en charge la migration _depuis_ les versions suivantes :
+Le [!DNL Data Migration Tool] prend en charge la migration _à partir_ versions suivantes :
 
 * ADOBE COMMERCE :
    * 1.11.x
@@ -34,4 +34,4 @@ Si vous migrez de Magento Open Source vers Adobe Commerce, les versions suivante
 
 ## Migration vers la version
 
-Pour en savoir plus sur les versions prises en charge (celle vers laquelle vous migrez), consultez la [ de [!DNL Data Migration Tool] sur la ](https://github.com/magento/data-migration-tool/releases).
+Pour en savoir plus sur les versions prises en charge (celle vers laquelle vous migrez), consultez la page [!DNL Data Migration Tool]Version[ de l’](https://github.com/magento/data-migration-tool/releases).

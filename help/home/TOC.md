@@ -10,14 +10,14 @@ ht-degree: 31%
 ---
 
 
-# Guides opérationnels Adobe Commerce {#operational-guides}
+# Guides opérationnels d’Adobe Commerce {#operational-guides}
 
-- [Accueil des guides opérationnels](home.md)
-- [Informations sur la version](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/overview)
-- [Manuel de mise en oeuvre](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/overview)
-- [Sécurité et conformité](https://experienceleague.adobe.com/fr/docs/commerce-operations/security-and-compliance/overview)
-- [Performance](https://experienceleague.adobe.com/fr/docs/commerce-operations/performance-best-practices/overview)
-- [Installation (sur site)](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/overview)
-- [Configuration](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/overview)
-- [Upgrade](https://experienceleague.adobe.com/fr/docs/commerce-operations/upgrade-guide/overview)
-- [Outils](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/overview)
+- [Page de départ Guides opérationnels](home.md)
+- [Informations de mise à jour](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)
+- [Manuel d’implémentation](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/overview)
+- [Sécurité et conformité ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)
+- [Performances](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/overview)
+- [Installation (sur site)](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
+- [ Configuration ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/overview)
+- [Mise à niveau](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview)
+- [ Outils ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/overview)

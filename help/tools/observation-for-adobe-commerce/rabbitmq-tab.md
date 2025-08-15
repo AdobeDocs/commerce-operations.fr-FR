@@ -1,6 +1,6 @@
 ---
-title: Onglet [!DNL RabbitMQ]
-description: Découvrez l’onglet [!DNL RabbitMQ] de  [!DNL Observation for Adobe Commerce].
+title: Onglet [!UICONTROL [!DNL RabbitMQ]]
+description: En savoir plus sur l’onglet [!UICONTROL [!DNL RabbitMQ]] de  [!DNL Observation for Adobe Commerce].
 exl-id: c5370c30-fed8-4f45-89c3-ef0d6ad41a89
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -16,102 +16,102 @@ L’onglet **[!UICONTROL [!DNL RabbitMQ]]** contient des informations axées sur
 
 ## [!UICONTROL [!DNL RabbitMQ] Infrastructure events]
 
-![[!DNL RabbitMQ] Événements d’infrastructure](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
+Événements d’infrastructure ![[!DNL RabbitMQ]](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
 
-L’image **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** montre les événements d’infrastructure qui impliquent [!DNL RabbitMQ] et qui se sont produits au cours de la période sélectionnée :
+La période **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** affiche les événements d’infrastructure impliquant des [!DNL RabbitMQ] qui se sont produits au cours de la période sélectionnée :
 
-* `%Response [error] for node [rabbit@host1]: unexpected http response from%`) as `unexpected_resp_node1`
-* `%Response [error] for node [rabbit@host2]: unexpected http response from%`) as `unexpected_resp_node2`
-* `%Response [error] for node [rabbit@host3]: unexpected http response from%`) as `unexpected_resp_node3`
-* `%Response [error] for node [rabbit@host3]: Get "http://localhost:15672/api/healthchecks/node/rabbit@host3": context deadline exceeded%`) as `node3_timeout_exceeded`
-* `%Response [error] for node [rabbit@host1]: Get "http://localhost:15672/api/healthchecks/node/rabbit@host1": context deadline exceeded%`) as `node1_timeout_exceeded`
-* `%Response [error] for node [rabbit@host2]: Get "http://localhost:15672/api/healthchecks/node/rabbit@host2": context deadline exceeded%`) as `node2_timeout_exceeded`
-* `%401 Unauthorized%`) as `401_unauth`
-* `%401 Unauthorized%`) as `401_unauth`
-* `%Service restarted: rabbitmq-server%`) as `rmq_service_restart`
-* `%Response [failed] for node [rabbit@host1]: nodedown%`) as `rmq_node1_down`
-* `%Response [failed] for node [rabbit@host2]: nodedown%`) as `rmq_node2_down`
-* `%Response [failed] for node [rabbit@host2]: nodedown%`) as `rmq_node2_down`
-* `%Entity modified: exchange/bindings.destination%`) as `rmq_entity_modified`
-* `%Entity modified: exchange/bindings.destination%`) as `rmq_entity_modified`
-* `%Entity modified: queue/exclusive%`) comme `rmq_entity_created_q_exclusive` `%Entity modified: queue/auto_delete%`) comme `rmq_entity_q_delete`
-* `%Entity modified: queue/durable%`) as `rmq_entity_modified_q_durable`
-* `%Entity modified: version/management%`) as `rmq_entity_modified_ver_mgt`
-* `%Entity modified: version/management%`) as `rmq_entity_modified_ver_mgt`
+* `%Response [error] for node [rabbit@host1]: unexpected http response from%`) comme `unexpected_resp_node1`
+* `%Response [error] for node [rabbit@host2]: unexpected http response from%`) comme `unexpected_resp_node2`
+* `%Response [error] for node [rabbit@host3]: unexpected http response from%`) comme `unexpected_resp_node3`
+* `%Response [error] for node [rabbit@host3]: Get "http://localhost:15672/api/healthchecks/node/rabbit@host3": context deadline exceeded%`) comme `node3_timeout_exceeded`
+* `%Response [error] for node [rabbit@host1]: Get "http://localhost:15672/api/healthchecks/node/rabbit@host1": context deadline exceeded%`) comme `node1_timeout_exceeded`
+* `%Response [error] for node [rabbit@host2]: Get "http://localhost:15672/api/healthchecks/node/rabbit@host2": context deadline exceeded%`) comme `node2_timeout_exceeded`
+* `%401 Unauthorized%`) comme `401_unauth`
+* `%401 Unauthorized%`) comme `401_unauth`
+* `%Service restarted: rabbitmq-server%`) comme `rmq_service_restart`
+* `%Response [failed] for node [rabbit@host1]: nodedown%`) comme `rmq_node1_down`
+* `%Response [failed] for node [rabbit@host2]: nodedown%`) comme `rmq_node2_down`
+* `%Response [failed] for node [rabbit@host2]: nodedown%`) comme `rmq_node2_down`
+* `%Entity modified: exchange/bindings.destination%`) comme `rmq_entity_modified`
+* `%Entity modified: exchange/bindings.destination%`) comme `rmq_entity_modified`
+* `%Entity modified: queue/exclusive%`) en tant `rmq_entity_created_q_exclusive` `%Entity modified: queue/auto_delete%`) que `rmq_entity_q_delete`
+* `%Entity modified: queue/durable%`) comme `rmq_entity_modified_q_durable`
+* `%Entity modified: version/management%`) comme `rmq_entity_modified_ver_mgt`
+* `%Entity modified: version/management%`) comme `rmq_entity_modified_ver_mgt`
 
 ## [!UICONTROL [!DNL RabbitMQ] service start/stop signals]
 
-![[!DNL RabbitMQ] signaux de démarrage/arrêt du service ](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
+![[!DNL RabbitMQ] les signaux de démarrage/arrêt du service](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
 
-Cette image affiche les signaux de démarrage/arrêt du service [!DNL RabbitMQ] qui se sont produits au cours de la période sélectionnée :
+Cette trame montre [!DNL RabbitMQ] signaux de démarrage/arrêt du service qui se sont produits pendant la période sélectionnée :
 
-* `%RabbitMQ is asked to stop...%`) as `rabbitmq_stop`
-* `%Starting RabbitMQ%`) as `rabbitmq_start`
+* `%RabbitMQ is asked to stop...%`) comme `rabbitmq_stop`
+* `%Starting RabbitMQ%`) comme `rabbitmq_start`
 
 ## [!UICONTROL [!DNL RabbitMQ] errors]
 
-![[!DNL RabbitMQ] errors](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-3.jpeg)
+![[!DNL RabbitMQ] des erreurs](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-3.jpeg)
 
-Cette image affiche [!DNL RabbitMQ] erreurs qui se sont produites au cours de la période sélectionnée :
+Ce cadre affiche [!DNL RabbitMQ] erreurs qui se sont produites au cours du délai sélectionné :
 
-* `%exit with reason {case_clause,timeout} and stacktrace {rabbit_mgmt_wm_healthchecks%}` comme `exit_timeout`
-* `%client unexpectedly closed TCP connection%`) as `client_closed_tcp_conn`
-* `%at undefined exit with reason shutdown in context shutdown_error%`) as `undef_exit`
-* `%Connection attempt from disallowed node%`) as `disallowed_node`
-* `%closing AMQP connection%`) as `rmq_err_amqp_conn`
+* `%exit with reason {case_clause,timeout} and stacktrace {rabbit_mgmt_wm_healthchecks%}` en tant que `exit_timeout`
+* `%client unexpectedly closed TCP connection%`) comme `client_closed_tcp_conn`
+* `%at undefined exit with reason shutdown in context shutdown_error%`) comme `undef_exit`
+* `%Connection attempt from disallowed node%`) comme `disallowed_node`
+* `%closing AMQP connection%`) comme `rmq_err_amqp_conn`
 
 ## [!UICONTROL [!DNL RabbitMQ] node status]
 
-![[!DNL RabbitMQ] État du noeud ](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
+![[!DNL RabbitMQ] le statut du nœud ](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
 
-* `%rabbit on node rabbit@host1 down%`) as `rmq_node1_down`
-* `%rabbit on node rabbit@host2 down%`) as `rmq_node2_down`
-* `%rabbit on node rabbit@host3 down%`) as `rmq_node3_down`
-* `%rabbit on node rabbit@host1 up%`) as `rmq_node1_up`
-* `%rabbit on node rabbit@host2 up%`) as `rmq_node2_up`
-* `%rabbit on node rabbit@host3 up%`) as `rmq_node3_up`
+* `%rabbit on node rabbit@host1 down%`) comme `rmq_node1_down`
+* `%rabbit on node rabbit@host2 down%`) comme `rmq_node2_down`
+* `%rabbit on node rabbit@host3 down%`) comme `rmq_node3_down`
+* `%rabbit on node rabbit@host1 up%`) comme `rmq_node1_up`
+* `%rabbit on node rabbit@host2 up%`) comme `rmq_node2_up`
+* `%rabbit on node rabbit@host3 up%`) comme `rmq_node3_up`
 
 ## [!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]
 
-![[!DNL RabbitMQ] État du résumé de haut niveau du message par file d’attente](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)
+![[!DNL RabbitMQ] statut du résumé général des messages par file d&#39;attente](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)
 
-Le graphique **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** indique le nombre de messages publiés par la file d’attente [!DNL RabbitMQ] pour la période sélectionnée.
+Le graphique **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** indique le nombre de messages publiés par la file d&#39;attente de [!DNL RabbitMQ] pour la période sélectionnée.
 
 ## [!UICONTROL [!DNL RabbitMQ] Message Detail Summary]
 
-![[!DNL RabbitMQ] Résumé des détails du message ](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
+Résumé des détails du message ![[!DNL RabbitMQ]](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
 
-* `%report.ERROR: Cron Job consumers_runner has an error: NOT_FOUND - no queue%`) as `queue_err`
-* `%report.ERROR: Cron Job consumers_runner has an error: NOT_FOUND - no queue%`) as `queue_err`
-* `%authenticated and granted access to vhost%`) as `auth`
-* `%closing AMQP connection%`) as `close_conn`
+* `%report.ERROR: Cron Job consumers_runner has an error: NOT_FOUND - no queue%`) comme `queue_err`
+* `%report.ERROR: Cron Job consumers_runner has an error: NOT_FOUND - no queue%`) comme `queue_err`
+* `%authenticated and granted access to vhost%`) comme `auth`
+* `%closing AMQP connection%`) comme `close_conn`
 
 ## [!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]
 
-![[!DNL RabbitMQ] Consommation de la file d’attente MB](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
+![[!DNL RabbitMQ] Mo de consommation dans la file d&#39;attente](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
 
 Le graphique **[!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]** indique le nombre d’octets consommés par chaque file d’attente [!DNL RabbitMQ] au cours de la période sélectionnée.
 
 ## [!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]
 
-![[!DNL RabbitMQ] Messages publiés par file d’attente](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
+![[!DNL RabbitMQ] les messages publiés par file d&#39;attente](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
 
 Le graphique **[!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]** indique le nombre d’octets consommés par chaque file d’attente [!DNL RabbitMQ] au cours de la période sélectionnée.
 
 ## [!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]
 
-![[!DNL RabbitMQ] Débit des messages publiés par file d’attente](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
+![[!DNL RabbitMQ] débit des messages publiés par file d&#39;attente](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
 
-Le graphique **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** montre le nombre moyen de messages publiés par seconde par chaque file d’attente [!DNL RabbitMQ] sur la période sélectionnée.
+Le graphique **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** indique le nombre moyen de messages publiés par seconde par chaque file d&#39;attente [!DNL RabbitMQ] au cours de la période sélectionnée.
 
 ## [!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]
 
-![[!DNL RabbitMQ] Débit total des messages par file d’attente](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
+![[!DNL RabbitMQ] débit total des messages par file d&#39;attente](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
 
-Le graphique **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** montre le nombre total moyen de messages par seconde par chaque file d’attente [!DNL RabbitMQ] sur la période sélectionnée.
+Le graphique **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** indique le nombre total moyen de messages par seconde par chaque file d’attente [!DNL RabbitMQ] au cours de la période sélectionnée.
 
 ## [!UICONTROL [!DNL RabbitMQ] Consumers by Queue]
 
-![[!DNL RabbitMQ] Consommateurs par file d’attente](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
+![[!DNL RabbitMQ] des clients par file d’attente](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
 
-Le graphique **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** montre le nombre total moyen de consommateurs par chaque file d’attente [!DNL RabbitMQ] sur la période sélectionnée.
+Le graphique **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** indique le nombre total moyen de consommateurs par file d’attente [!DNL RabbitMQ] au cours de la période sélectionnée.

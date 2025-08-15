@@ -1,6 +1,6 @@
 ---
 title: Onglet [!UICONTROL Redis]
-description: Découvrez l’onglet [!UICONTROL Redis] de [!DNL Observation for Adobe Commerce].
+description: En savoir plus sur l’onglet [!UICONTROL Redis] de  [!DNL Observation for Adobe Commerce].
 exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
 feature: Configuration, Observability
 source-git-commit: 06f015139683f319f11317f8d7f0029cbd2548e3
@@ -14,54 +14,54 @@ ht-degree: 0%
 
 ## [!UICONTROL Redis Node summary]
 
-![Résumé du noeud Redis](../../assets/tools/observation-for-adobe-commerce/redis-tab-1.jpg)
+![Résumé du nœud Redis](../../assets/tools/observation-for-adobe-commerce/redis-tab-1.jpg)
 
-Le **[!UICONTROL Redis Node summary]** comprend tous les noeuds d’un environnement. L’exemple ci-dessus inclut les noeuds pour l’évaluation partagée. Il y a un primaire et deux secondaires en production et un primaire et deux secondaires en évaluation.
+La **[!UICONTROL Redis Node summary]** inclut tous les nœuds d’un environnement. L’exemple ci-dessus inclut les nœuds pour l’évaluation partagée. Il y a un primaire et deux secondaires sur la production et aussi un primaire et deux secondaires sur l&#39;évaluation.
 
 ## [!UICONTROL Redis node detail]
 
-![Redis node detail](../../assets/tools/observation-for-adobe-commerce/redis-tab-2.jpg)
+![Détails du nœud Redis](../../assets/tools/observation-for-adobe-commerce/redis-tab-2.jpg)
 
-Le cadre **[!UICONTROL Redis node detail]** indique l’environnement, le rôle [!DNL Redis], la version logicielle et la taille du noeud.
+Le cadre de **[!UICONTROL Redis node detail]** indique l’environnement, le rôle de [!DNL Redis], la version du logiciel et la taille du nœud.
 
 ## [!UICONTROL Redis node roles timeline]
 
-![Redis node rôles timeline](../../assets/tools/observation-for-adobe-commerce/redis-tab-3.jpg)
+![Chronologie des rôles de nœud Redis](../../assets/tools/observation-for-adobe-commerce/redis-tab-3.jpg)
 
-L’image **[!UICONTROL Redis node roles timeline]** indique la perte du service [!DNL Redis] dans des rôles particuliers. Si une ligne s’effondre, cela indique que le rôle particulier représenté par la ligne a perdu un ou plusieurs noeuds.
+La trame **[!UICONTROL Redis node roles timeline]** indique la perte de service [!DNL Redis] dans des rôles particuliers. Si une ligne baisse, cela indique que le rôle particulier représenté par la ligne a perdu un ou plusieurs nœuds.
 
 ## [!UICONTROL Connection to Redis]
 
 ![Connexion à Redis](../../assets/tools/observation-for-adobe-commerce/redis-tab-4.jpg)
 
-L’image **[!UICONTROL Connection to Redis]** affiche la valeur net.connectClients de l’exemple de données [!DNL New Relic Redis]. Il affiche le nombre de connexions par l’application [!DNL New Relic] (environnement) et le noeud.
+L’image **[!UICONTROL Connection to Redis]** affiche la valeur net.connectorClients à partir des données d’exemple [!DNL New Relic Redis]. Il affiche le nombre de connexions par application [!DNL New Relic] (environnement) et nœud.
 
 ## [!UICONTROL Commands per second by node]
 
-![Commandes par seconde par noeud](../../assets/tools/observation-for-adobe-commerce/redis-tab-5.jpg)
+![ Commandes par seconde par nœud ](../../assets/tools/observation-for-adobe-commerce/redis-tab-5.jpg)
 
-L’image **[!UICONTROL Commands per second by node]** affiche les commandes [!DNL Redis] par noeud par seconde pendant la période sélectionnée.
+L’image **[!UICONTROL Commands per second by node]** affiche les commandes [!DNL Redis] par nœud et par seconde pendant la période sélectionnée.
 
 ## [!UICONTROL Redis % of memory used]
 
 ![Redis % de la mémoire utilisée](../../assets/tools/observation-for-adobe-commerce/redis-tab-6.jpg)
 
-L’image **[!UICONTROL Redis % of memory used]** indique le pourcentage de la mémoire maximale utilisée par les serveurs [!DNL Redis].
+L’image **[!UICONTROL Redis % of memory used]** affiche le pourcentage de mémoire maximale utilisé par les serveurs [!DNL Redis].
 
 ## [!UICONTROL Redis used memory]
 
-![Redis used memory](../../assets/tools/observation-for-adobe-commerce/redis-tab-7.jpg)
+![Redis de la mémoire utilisée](../../assets/tools/observation-for-adobe-commerce/redis-tab-7.jpg)
 
-L’image **[!UICONTROL Redis used memory]** montre l’utilisation des noeuds de la mémoire en Go/Mo.
+L’image **[!UICONTROL Redis used memory]** indique l’utilisation de la mémoire par les nœuds en Go/Mo.
 
 ## [!UICONTROL Redis changes since last db save]
 
-![Redis les modifications depuis le dernier enregistrement de la base](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
+![Redis des modifications depuis le dernier enregistrement de la base de données](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis] est un résident de la mémoire et enregistre les informations dans le stockage. L’image **[!UICONTROL Redis changes since last db save]** indique le nombre de modifications apportées à la mémoire depuis l’enregistrement de la dernière base de données dans le stockage. Pour plus d’informations sur la persistance [!DNL Redis's], voir [Redis persistence](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/) .
+[!DNL Redis] est un résident de la mémoire et enregistre les informations dans le stockage . La trame **[!UICONTROL Redis changes since last db save]** indique le nombre de modifications de mémoire qui se sont produites depuis le dernier enregistrement de la base de données dans le stockage. Voir [Persistance Redis](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/) pour plus d’explications sur la persistance [!DNL Redis's].
 
 ## [!UICONTROL Redis synchronization from Log]
 
-![Redis synchronisation à partir du journal](../../assets/tools/observation-for-adobe-commerce/redis-tab-9.jpg)
+![Synchronisation Redis depuis le journal](../../assets/tools/observation-for-adobe-commerce/redis-tab-9.jpg)
 
-L’image **[!UICONTROL Redis synchronization from Log]** se concentre sur les erreurs rencontrées lors de la synchronisation [!DNL Redis] ou les erreurs qui se produisent en raison de problèmes de synchronisation. Pour plus d&#39;informations sur [!DNL Redis], consultez la [[!DNL Redis] documentation](https://redis.io/docs/).
+La trame de **[!UICONTROL Redis synchronization from Log]** se concentre sur les erreurs rencontrées lors de la synchronisation [!DNL Redis] ou sur les erreurs dues à des problèmes de synchronisation. Pour plus d’informations sur les [!DNL Redis], consultez la [[!DNL Redis] Documentation](https://redis.io/docs/).

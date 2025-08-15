@@ -1,6 +1,6 @@
 ---
-title: Bonnes pratiques relatives aux services de mise à jour
-description: Découvrez comment conserver votre Adobe Commerce sur la pile de technologie de l’infrastructure cloud mise à jour.
+title: Bonnes pratiques relatives à la mise à jour des services
+description: Découvrez comment mettre à jour votre pile technologique Adobe Commerce sur l’infrastructure cloud.
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
@@ -11,31 +11,31 @@ ht-degree: 0%
 
 ---
 
-# Bonnes pratiques relatives aux services de mise à jour
+# Bonnes pratiques relatives à la mise à jour des services
 
-Cet article fournit des recommandations pour que votre Adobe Commerce reste à jour sur la pile de technologie de l’infrastructure cloud et fournit des liens vers des ressources utiles.
+Cet article fournit des recommandations pour que votre pile technologique Adobe Commerce sur les infrastructures cloud soit mise à jour et fournit des liens vers des ressources utiles.
 
 ## Produits et versions concernés
 
-Adobe Commerce sur l’infrastructure cloud 2.4.x et versions ultérieures
+Adobe Commerce sur les infrastructures cloud 2.4.x et ultérieures
 
-## Mise à jour des services
+## Mettre à jour les services
 
-Mettez à niveau les services et les composants utilisés par Adobe Commerce avant qu’ils n’atteignent ou ne se rapprochent de la date de fin de vie. Cela permet de respecter la conformité PCI et de réduire les vulnérabilités de sécurité.
+Mettez à niveau les services et les composants utilisés par Adobe Commerce avant qu’ils n’atteignent leur date de fin de vie ou qu’ils n’en soient proches. Cela permet de respecter la conformité PCI et de réduire les vulnérabilités de sécurité.
 
-Les clients utilisant des plans de démarrage peuvent se servir eux-mêmes lors des mises à niveau de services. Pour plus d&#39;informations sur la façon de procéder, reportez-vous à la section [Modification de la version de service](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version) .
+Les clients disposant de plans de démarrage peuvent se servir des mises à niveau des services. Pour plus d’informations sur la procédure à suivre, voir [Modifier la version du service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version).
 
-Les clients sur les plans Pro ne peuvent utiliser que les mises à niveau de services en libre-service dans leur [environnement d’intégration](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=fr). Pour les mises à niveau de services en production, vous devez [envoyer un ticket d&#39;assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) demandant la mise à niveau.
+Les clients avec forfaits Pro ne peuvent se servir que des mises à niveau de services dans leur [environnement d’intégration](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Pour les mises à niveau des services en production, vous devez [soumettre un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) demander la mise à niveau.
 
 >[!WARNING]
 >
->Les mises à niveau de service ne peuvent pas être transférées vers un environnement de production sans préavis de 48 heures ouvrables à l’équipe d’infrastructure d’Adobe. Cela est nécessaire afin qu’Adobe puisse s’assurer qu’un ingénieur du support de l’infrastructure est disponible pour mettre à jour votre configuration dans les délais impartis, avec un temps d’arrêt minimal pour votre environnement de production. Adobe recommande de mettre votre site en mode de maintenance lors de la mise à niveau du service.
+>Les mises à niveau de service ne peuvent pas être envoyées à un environnement de production sans préavis de 48 heures ouvrables à l’équipe d’infrastructure d’Adobe. Cela est nécessaire afin qu’Adobe puisse s’assurer qu’un ingénieur d’assistance en infrastructure est disponible pour mettre à jour votre configuration dans le délai souhaité avec un temps d’arrêt minimal pour votre environnement de production. Adobe recommande de mettre votre site en mode de maintenance pendant la mise à niveau du service.
 
-Vous pouvez afficher la liste des versions de service et des dates de fin de vie dans le fichier suivant : [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
+Vous pouvez consulter la liste des versions de service et des dates de fin de vie dans le fichier suivant : [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
 >[!NOTE]
 >
->Ce fichier ne peut pas être considéré comme une source unique de vérité. Reportez-vous aux sites web officiels des fournisseurs pour ces technologies en cas de doute.
+>Ce fichier ne peut pas être considéré comme une source unique de vérité. En cas de doute, consultez les sites web officiels des fournisseurs pour ces technologies.
 
 ## Informations supplémentaires
 

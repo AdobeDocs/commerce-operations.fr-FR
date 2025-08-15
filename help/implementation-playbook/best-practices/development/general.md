@@ -13,44 +13,44 @@ ht-degree: 0%
 
 # Bonnes pratiques générales de développement pour Adobe Commerce
 
-Cette rubrique décrit la ligne de base d’un processus de développement Adobe Commerce sain. Il décrit les processus fondamentaux, les principes de codage et les principes de conception d’application pour guider les développeurs.
+Cette rubrique décrit les principes de base d’un processus de développement Adobe Commerce sain. Il décrit les processus fondamentaux, les principes de codage et les principes de conception d’applications pour guider les développeurs.
 
 >[!NOTE]
 >
->Les architectes techniques d’Adobe utilisent ces bonnes pratiques comme référence lors d’engagements impliquant le développement.
+>Les architectes techniques Adobe utilisent ces bonnes pratiques comme référence lors des missions de développement.
 
-Ces bonnes pratiques ont été développées sur la base d’années d’expérience dans le développement et la diffusion de projets Commerce. Adobe recommande que les initiatives techniques suivent ces bonnes pratiques et que vous amélioriez les processus et le code existants pour vous aligner sur ces bonnes pratiques.
+Ces bonnes pratiques ont été développées sur la base d’années d’expérience dans le développement et la diffusion de projets Commerce. Adobe recommande que les initiatives techniques respectent ces bonnes pratiques et que vous amélioriez les processus et le code existants pour les respecter.
 
 ## Conventions de texte
 
-Les mots-clés &quot;DOIT&quot;, &quot;NE DOIT PAS&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;, &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;MAY&quot; et &quot;FACULTATIF&quot; dans cette rubrique doivent être interprétés comme décrit dans la [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
+Les mots clés « MUST », « MUST NOT », « REQUIRED », « SHALL », « SHALL NOT », « SHOULD », « SHOULD NOT », « RECOMMENDED », « MAY » et « OPTIONAL » dans cette rubrique doivent être interprétés comme décrit dans la [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
 
 ## Processus
 
-1. Une méthodologie de projet définie DOIT être convenue avant de commencer les activités du projet. Il peut s’agir de Scrum, de Cascade ou de toute autre méthodologie ou combinaison de méthodologies, à condition qu’elle soit définie.
+1. Une méthodologie de projet définie DOIT être convenue avant de commencer les activités du projet. Il PEUT s’agir de Scrum, Waterfall ou de toute autre méthodologie ou combinaison de méthodologies, à condition qu’elle soit définie.
 1. Le développement NE DOIT PAS commencer tant qu’une stratégie d’embranchement pour le système de contrôle de version n’est pas disponible pour l’équipe de développement.
-1. Le développement NE DOIT PAS démarrer tant qu’après l’approbation des spécifications techniques, l’approbation des articles d’utilisateurs et des cas d’utilisation et l’approbation des cas de test ne sont pas disponibles pour l’équipe de développement.
-1. Développement NE DOIT PAS démarrer tant qu’au moins un environnement de développement et d’assurance qualité n’est pas disponible.
+1. Le développement NE DOIT PAS commencer avant que l’approbation des spécifications techniques, l’approbation des histoires d’utilisateurs et des cas d’utilisation et l’approbation des cas de test ne soient disponibles pour l’équipe de développement.
+1. Le développement NE DOIT PAS commencer tant qu’un environnement de développement et d’assurance qualité n’est pas disponible.
 1. Les exigences spécifiques au projet qui sont obligatoires pour que le développement démarre PEUVENT être documentées dans une _Définition de prêt_.
-1. L’approbation doit être effectuée par un représentant client autorisé à valider les éléments livrables du projet.
-1. Dans les méthodologies de projet agiles, des exigences supplémentaires PEUVENT suivre l’approbation. Ces exigences doivent être traitées comme de nouvelles exigences et doivent être capturées, architecturées et planifiées en conséquence.
-1. Tout développement DOIT être testé fonctionnellement par le développeur avant envoi.
-1. Tout développement DOIT réussir les tests automatisés avant d’être envoyé pour révision du code. Il PEUT être configuré en tant que processus automatisé à la suite de la création d’une requête de tirage.
-1. Tout développement DOIT transmettre une révision manuelle du code par un architecte technique ou un développeur principal avant de l’envoyer pour l’assurance qualité.
-1. Tout développement DOIT transmettre l’assurance qualité avant la diffusion au client.
-1. Les exigences spécifiques au projet qui sont obligatoires pour la diffusion PEUVENT être documentées dans une &quot;Définition du Terminé&quot;.
+1. L’approbation DOIT être effectuée par un représentant du client autorisé à approuver les livrables du projet.
+1. Dans les méthodologies de projet Agile, des exigences supplémentaires PEUVENT suivre l’approbation. Ces exigences DEVRAIENT être traitées comme de nouvelles exigences et devraient être saisies, conçues et planifiées en conséquence.
+1. Tous les développements DOIVENT être testés fonctionnellement par le développeur avant envoi.
+1. Tous les développements DOIVENT passer avec succès les tests automatisés avant d’être soumis à la révision du code. Ceci PEUT être configuré en tant que processus automatisé suite à la création d’une demande de tirage.
+1. Tous les développements DOIVENT passer la révision manuelle du code par un architecte technique ou un développeur en chef avant d&#39;être soumis pour l&#39;assurance qualité.
+1. Tous les développements DOIVENT passer l&#39;assurance qualité avant la livraison au client.
+1. Les exigences spécifiques au projet qui sont obligatoires pour la livraison PEUVENT être documentées dans une « Définition de Terminé ».
 
 ## Environnement
 
-1. Tous les développeurs doivent utiliser le même IDE. PhpStorm est l’IDE recommandé pour le développement d’Adobe Commerce.
-1. Tous les développeurs doivent développer et tester à l’aide de la même pile technologique que celle utilisée sur les (futurs) serveurs de production. Les versions du logiciel de cette pile technologique DOIVENT correspondre aux versions majeures et mineures du logiciel installé sur les serveurs de production. Voir [Configuration requise](../../../installation/system-requirements.md) pour plus d’informations sur la pile de technologie type pour Adobe Commerce.
-1. L’administrateur système ou l’architecte technique PEUT fournir à l’équipe un environnement de développement local géré de manière centralisée pour assurer et promouvoir des environnements locaux égaux et à jour.
-1. Les développeurs et les ingénieurs QA DOIVENT avoir accès à la ligne de commande, à la base de données et aux fichiers journaux de l’environnement d’assurance qualité. Cela PEUT nécessiter une connexion VPN.
+1. Tous les développeurs DOIVENT utiliser le même IDE. PhpStorm est l’IDE recommandé pour le développement Adobe Commerce.
+1. Tous les développeurs DOIVENT développer et tester à l’aide de la même pile technologique que celle utilisée sur les (futurs) serveurs de production. Les versions du logiciel de cette pile technologique DOIVENT correspondre à la version majeure et mineure du logiciel installé sur les serveurs de production. Consultez [configuration requise](../../../installation/system-requirements.md) pour plus d’informations sur la pile technologique type d’Adobe Commerce.
+1. L’administrateur système ou l’architecte technique PEUT fournir à l’équipe un environnement de développement local géré de manière centralisée afin d’assurer et de promouvoir des environnements locaux égaux et à jour.
+1. Les développeurs et les ingénieurs et ingénieures en assurance qualité DOIVENT avoir accès à la ligne de commande, à la base de données et aux fichiers journaux de l’environnement d’assurance qualité. Ceci PEUT nécessiter une connexion VPN.
 
 ## Contrôle de version
 
-Les versions de module DOIVENT respecter la norme [Semantic Versioning 2.0.0 standard](https://semver.org/).
-Les dépendances sur le code base Adobe Commerce DOIVENT suivre les [ instructions de dépendances des versions de module](https://developer.adobe.com/commerce/php/development/versioning/dependencies/).
+Les versions des modules DOIVENT respecter la norme [Semantic Versioning 2.0.0](https://semver.org/).
+Les dépendances de la base de code Adobe Commerce DOIVENT suivre les instructions [Dépendances de version du module](https://developer.adobe.com/commerce/php/development/versioning/dependencies/).
 
 ## CONTRÔLE DE RÉVISION
 
@@ -58,7 +58,7 @@ Les validations DOIVENT être accompagnées de messages de validation significat
 
 ## Sécurité
 
-1. [Les fonctions non sécurisées](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/) NE DOIVENT PAS être utilisées.
-1. [Les stratégies de prévention XSS](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) DOIVENT être appliquées.
-1. [Stratégies de sécurité du contenu](https://developer.adobe.com/commerce/php/development/security/content-security-policies/) DOIVENT être appliquées.
-1. Les nouvelles instances Adobe Commerce DOIVENT être diffusées sur la dernière version de sécurité d’une version qui n’a pas encore atteint la date &quot;Fin des correctifs de sécurité&quot;. Voir [Adobe Commerce Software Lifecycle Policy](../../../release/lifecycle-policy.md).
+1. [Fonctions non sécurisées](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/) NE DOIVENT PAS être utilisées.
+1. [Stratégies de prévention XSS](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) DOIVENT être appliquées.
+1. [Politiques de sécurité du contenu](https://developer.adobe.com/commerce/php/development/security/content-security-policies/) DOIT être appliqué.
+1. Les nouvelles instances d’Adobe Commerce DOIVENT être diffusées à la version de sécurité la plus récente d’une version qui n’a pas encore atteint la date de « Fin des correctifs de sécurité ». Voir [Politique relative au cycle de vie du logiciel Adobe Commerce](../../../release/lifecycle-policy.md).

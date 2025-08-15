@@ -1,6 +1,6 @@
 ---
 title: Onglet [!UICONTROL Deploy]
-description: Découvrez l’onglet [!UICONTROL Deploy] de [!DNL Observation for Adobe Commerce].
+description: En savoir plus sur l’onglet [!UICONTROL Deploy] de  [!DNL Observation for Adobe Commerce].
 exl-id: 3e33f7b0-7a40-4598-ae2e-436118e8d99a
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -16,15 +16,15 @@ Cet onglet permet d’isoler rapidement les problèmes et les causes des problè
 
 ## [!UICONTROL Deploy log Deployment Troubleshooter]
 
-![Déployer le dépannage du déploiement du journal](../../assets/tools/observation-for-adobe-commerce/deploy-tab-1.jpg)
+![Dépannage du déploiement du journal de déploiement](../../assets/tools/observation-for-adobe-commerce/deploy-tab-1.jpg)
 
-L’image **[!UICONTROL Deploy log Deployment Troubleshooter]** affiche le nombre d’événements de journal de déploiement qui se sont produits au cours de la période sélectionnée. L’objectif est de fournir une vue d’ensemble de l’activité de déploiement et de déterminer la complexité du déploiement en fonction du nombre. Plus le nombre de messages consignés est élevé, plus le déploiement est complexe.
+La période **[!UICONTROL Deploy log Deployment Troubleshooter]** affiche le nombre d’événements du journal de déploiement qui se sont produits au cours de la période sélectionnée. L’objectif est de fournir une vue d’ensemble de l’activité de déploiement et de déterminer la complexité du déploiement en fonction du nombre. Plus le nombre de messages consignés est élevé, plus le déploiement est complexe.
 
 ## [!UICONTROL Deploy State]
 
-![ État du déploiement ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-2.jpg)
+![État de déploiement](../../assets/tools/observation-for-adobe-commerce/deploy-tab-2.jpg)
 
-L’image **[!UICONTROL Deploy State]** montre les événements de déploiement qui se sont produits au cours de la période sélectionnée. L’analyseur de ce cadre recherche ces signaux spécifiques :
+La période **[!UICONTROL Deploy State]** affiche les événements de déploiement qui se sont produits au cours de la période sélectionnée. L&#39;analyseur de cette trame recherche les signaux spécifiques suivants :
 
 * &#39;`%NOTICE: Starting generate command%`&#39;) comme &#39;`start_gen`&#39;
 * &#39;`%git apply /app/vendor/magento/ece-tools/patches%`&#39;) comme &#39;`apply_patches`&#39;
@@ -38,9 +38,9 @@ L’image **[!UICONTROL Deploy State]** montre les événements de déploiement 
 
 ## [!UICONTROL Deploy Log Detail]
 
-![Déployer les détails du journal](../../assets/tools/observation-for-adobe-commerce/deploy-tab-3.jpg)
+![Détails du journal de déploiement](../../assets/tools/observation-for-adobe-commerce/deploy-tab-3.jpg)
 
-L’image **[!UICONTROL Deploy Log Detail]** affiche les détails de résumé du message du journal de déploiement qui se sont produits au cours de la période sélectionnée. Le cadre analyse les chaînes suivantes dans les journaux de déploiement :
+Le cadre **[!UICONTROL Deploy Log Detail]** affiche les détails de la synthèse des messages du journal de déploiement qui se sont produits au cours de la période sélectionnée. Le cadre analyse les chaînes suivantes dans les journaux de déploiement :
 
 * &#39;`%NOTICE: Starting deploy.%`&#39;) comme &#39;`start_dply`&#39;
 * &#39;`%INFO: Starting scenario(s): scenario/deploy.xml%`&#39;) comme &#39;`start_scenario`&#39;
@@ -79,9 +79,9 @@ L’image **[!UICONTROL Deploy Log Detail]** affiche les détails de résumé du
 
 ## [!UICONTROL Post Deploy Log Detail]
 
-![Détails du journal de déploiement Post](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
+![Détails du journal de post-déploiement](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
 
-L’image **[!UICONTROL Post Deploy Log Detail]** affiche les détails du journal de post-déploiement qui se sont produits au cours de la période sélectionnée. Ce cadre est axé sur des messages de journal spécifiques qui contiennent les chaînes suivantes :
+La période **[!UICONTROL Post Deploy Log Detail]** affiche les détails du journal après déploiement qui se sont produits pendant la période sélectionnée. Ce cadre est axé sur des messages de journal particuliers qui contiennent les chaînes suivantes :
 
 * &#39;`%Disabled maintenance mode%`&#39;) comme &#39;`disabled_maint_mode`&#39;
 * &#39;`%INFO: Starting scenario(s): scenario/post-deploy.xml%`&#39;) comme &#39;`start_pstdply_scenario`&#39;
@@ -97,9 +97,9 @@ L’image **[!UICONTROL Post Deploy Log Detail]** affiche les détails du journa
 
 ## [!UICONTROL Cloud Log Detail]
 
-![Détails du journal cloud](../../assets/tools/observation-for-adobe-commerce/deploy-tab-5.jpg)
+![Détails du journal Cloud](../../assets/tools/observation-for-adobe-commerce/deploy-tab-5.jpg)
 
-L’image **[!UICONTROL Cloud Log Detail]** affiche les détails du journal de cloud qui se sont produits au cours de la période sélectionnée. Les chaînes suivantes sont analysées et renvoyées avec l’étiquette &quot;AS&quot; ci-dessous :
+Le cadre **[!UICONTROL Cloud Log Detail]** affiche les détails du journal cloud qui se sont produits au cours de la période sélectionnée. Les chaînes suivantes sont analysées et renvoyées avec le libellé « AS » ci-dessous :
 
 * &#39;`%DEBUG: /bin/bash -c "set -o pipefail; php ./bin/magento setup:upgrade%`&#39;) comme &#39;`start_update`&#39;
 * &#39;`%Schema creation/updates:%`&#39;) comme &#39;`schema_updates`&#39;
@@ -144,19 +144,19 @@ L’image **[!UICONTROL Cloud Log Detail]** affiche les détails du journal de c
 * &#39;`%INFO: Trying to kill running cron jobs%`&#39;) comme &#39;`kill_crons`&#39;
 * &#39;`%INFO: Clearing redis cache:%`&#39;) comme &#39;`clear_redis_cache`&#39;
 * &#39;`%INFO: Checking if db exists and has tables%`&#39;) comme &#39;`db_check`&#39;
-* &#39;`%WARNING: [2010] Elasticsearch service is installed at infrastructure layer, but is not used as a search engine.%`) en tant que &#39;`es_not_used`&#39;
+* &#39;`%WARNING: [2010] Elasticsearch service is installed at infrastructure layer, but is not used as a search engine.%`) comme &#39;`es_not_used`&#39;
 * &#39;`%NOTICE: Starting update.%`&#39;) comme &#39;`starting_update`&#39;
 * &#39;`%INFO: Set search engine to: mysql%`&#39;) comme &#39;`mysql_search`&#39;
 * &#39;`%SQLSTATE[HY000] [2006] MySQL server has gone away%`&#39;) comme &#39;`mysql_gone`&#39;
 
 ## [!UICONTROL Count of modules imported during deploy]
 
-![Nombre de modules importés pendant le déploiement](../../assets/tools/observation-for-adobe-commerce/deploy-tab-6.jpg)
+![Nombre de modules importés lors du déploiement](../../assets/tools/observation-for-adobe-commerce/deploy-tab-6.jpg)
 
-L’image **[!UICONTROL Count of modules imported during deploy]** indique le nombre de modules importés pendant le déploiement sur la période sélectionnée.
+Le cadre **[!UICONTROL Count of modules imported during deploy]** indique le nombre de modules importés pendant le déploiement sur la période sélectionnée.
 
 ## [!UICONTROL Deployed module list]
 
-![Liste des modules déployés](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
+![ Liste des modules déployés ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
 
-L’image **[!UICONTROL Deployed module list]** affiche les modules déployés sur la période sélectionnée.
+La période **[!UICONTROL Deployed module list]** affiche les modules déployés sur la période sélectionnée.

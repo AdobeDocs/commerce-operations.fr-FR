@@ -1,6 +1,6 @@
 ---
-title: Modules Magento Open Sources
-description: Découvrez toutes les dépendances et les licences tierces utilisées en Magento Open Source.
+title: Packages Magento Open Source
+description: Découvrez toutes les dépendances et licences tierces utilisées dans Magento Open Source.
 recommendations: noCatalog
 exl-id: 41f875af-9d65-4d4f-af5c-6ad887eeaf0d
 source-git-commit: 4bcc68890e16e51f0a84ed3d0d47b1f3dbbd52f0

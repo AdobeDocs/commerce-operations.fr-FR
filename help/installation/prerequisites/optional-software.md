@@ -1,6 +1,6 @@
 ---
-title: Logiciels facultatifs
-description: En savoir plus sur les logiciels facultatifs que vous pouvez installer pour prendre en charge les installations sur site d’Adobe Commerce.
+title: Logiciels en option
+description: En savoir plus sur les logiciels en option que vous pouvez installer pour prendre en charge les installations sur site d’Adobe Commerce.
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
@@ -9,19 +9,19 @@ ht-degree: 0%
 
 ---
 
-# Logiciels facultatifs
+# Logiciels en option
 
-Nous vous recommandons vivement d’installer NTP pour vous assurer que les tâches liées à cron fonctionnent correctement. (Les dates du serveur peuvent être passées ou futures, par exemple.)
+Nous vous recommandons vivement d’installer NTP pour vous assurer que les tâches liées à cron s’exécutent correctement. (Les dates du serveur peuvent être dans le passé ou dans le futur, par exemple.)
 
-Les autres utilitaires facultatifs abordés dans cette rubrique peuvent vous aider à effectuer votre installation. Toutefois, ils ne sont pas nécessaires pour installer ou utiliser Adobe Commerce.
+Les autres utilitaires facultatifs décrits dans cette rubrique peuvent vous aider à installer ; toutefois, ils ne sont pas nécessaires pour installer ou utiliser Adobe Commerce.
 
 ## Installation et configuration du protocole NTP (Network Time Protocol)
 
-[NTP](https://www.ntp.org/) permet aux serveurs de synchroniser leurs horloges système à l’aide de [ serveurs de pool disponibles globalement ](https://www.ntppool.org/en/). Nous vous recommandons d’utiliser des serveurs NTP en qui vous avez confiance, qu’il s’agisse de solutions matérielles dédiées à votre réseau interne ou de serveurs publics externes.
+[NTP](https://www.ntp.org/) permet aux serveurs de synchroniser leurs horloges système à l’aide de [serveurs de pool disponibles dans le monde entier](https://www.ntppool.org/en/). Nous vous recommandons d&#39;utiliser des serveurs NTP de confiance, qu&#39;il s&#39;agisse de solutions matérielles dédiées sur votre réseau interne ou de serveurs externes publics.
 
-Si vous déployez Adobe Commerce sur plusieurs hôtes, le protocole NTP est un moyen simple de garantir que leurs horloges sont toutes synchronisées, quel que soit le fuseau horaire dans lequel se trouvent les serveurs. En outre, les tâches liées à cron (telles que l’indexation et les emails transactionnels) dépendent de la précision de l’horloge du serveur.
+Si vous déployez Adobe Commerce sur plusieurs hôtes, NTP est un moyen simple de garantir que leurs horloges sont toutes synchronisées, quel que soit le fuseau horaire dans lequel se trouvent les serveurs. En outre, les tâches liées à cron (telles que l’indexation et les e-mails transactionnels) dépendent de l’exactitude de l’horloge du serveur.
 
-### Installation et configuration de NTP sur Ubuntu
+### Installer et configurer NTP sur Ubuntu
 
 Saisissez la commande suivante pour installer NTP :
 
@@ -29,7 +29,7 @@ Saisissez la commande suivante pour installer NTP :
 apt-get install ntp
 ```
 
-Passez à [Utiliser les serveurs de pool NTP](#use-ntp-pool-servers).
+Continuez avec [Utiliser les serveurs de pool NTP](#use-ntp-pool-servers).
 
 ### Installation et configuration de NTP sur CentOS
 
@@ -43,7 +43,7 @@ Pour installer et configurer NTP :
 
 1. Sélectionnez un package à installer. Par exemple, `ntp.x86_64`.
 
-1. Installez le package.
+1. Installez le package .
 
    ```bash
    yum -y install ntp.x86_64
@@ -57,13 +57,13 @@ Pour installer et configurer NTP :
 
 1. Passez à la section suivante.
 
-### Utiliser les serveurs de pool NTP
+### Utiliser les serveurs du pool NTP
 
-C’est à vous de choisir les serveurs de pool. Si vous utilisez des serveurs de pool NTP, ntp.org vous recommande d&#39;utiliser des [serveurs de pool](https://www.ntppool.org/en/) proches du fuseau horaire de vos serveurs, comme expliqué sur la [page de projet de pool NTP](https://www.ntppool.org/en/use.html). Si votre déploiement comprend un serveur NTP privé disponible pour tous les hôtes, vous pouvez utiliser ce serveur à la place.
+C&#39;est à vous de choisir les serveurs du pool. Si vous utilisez des serveurs de pool NTP, ntp.org vous recommande d&#39;utiliser des serveurs [pool](https://www.ntppool.org/en/) proches du fuseau horaire de vos serveurs, comme indiqué sur la page [projet de pool NTP](https://www.ntppool.org/en/use.html). Si vous disposez d’un serveur NTP privé disponible pour tous les hôtes de votre déploiement , vous pouvez utiliser ce serveur à la place.
 
 1. Ouvrez `/etc/ntp.conf` dans un éditeur de texte.
 
-1. Recherchez des lignes similaires à celles-ci :
+1. Recherchez des lignes similaires à ce qui suit :
 
    ```conf
    server 0.centos.pool.ntp.org
@@ -71,7 +71,7 @@ C’est à vous de choisir les serveurs de pool. Si vous utilisez des serveurs d
    server 2.centos.pool.ntp.org
    ```
 
-1. Remplacez ces lignes ou ajoutez des lignes supplémentaires qui spécifient votre serveur de pool NTP ou d&#39;autres serveurs NTP. C&#39;est une bonne idée de spécifier plus d&#39;un.
+1. Remplacez ces lignes ou ajoutez des lignes supplémentaires qui spécifient votre serveur de pool NTP ou d&#39;autres serveurs NTP. Il est préférable d&#39;en spécifier plusieurs.
 
 1. Voici un exemple d’utilisation de trois serveurs NTP basés aux États-Unis :
 
@@ -83,7 +83,7 @@ C’est à vous de choisir les serveurs de pool. Si vous utilisez des serveurs d
 
 1. Enregistrez vos modifications dans `/etc/ntp.conf` et quittez l’éditeur de texte.
 
-1. Redémarrez le service.
+1. Redémarrez le service .
 
    * Ubuntu : `service ntp restart`
 
@@ -91,7 +91,7 @@ C’est à vous de choisir les serveurs de pool. Si vous utilisez des serveurs d
 
 1. Saisissez `date` pour vérifier la date du serveur.
 
-   Si la date est incorrecte, assurez-vous que le port client NTP (généralement UDP 123) est ouvert dans votre pare-feu.
+   Si la date est incorrecte, assurez-vous que le port client NTP (généralement, UDP 123) est ouvert dans votre pare-feu.
 
    Essayez la commande `ntpdate _[pool server hostname]_`. En cas d’échec, recherchez l’erreur renvoyée.
 
@@ -99,13 +99,13 @@ C’est à vous de choisir les serveurs de pool. Si vous utilisez des serveurs d
 
 ## Créer phpinfo.php
 
-Le fichier [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) affiche une grande quantité d’informations sur PHP et ses extensions.
+Le fichier [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) affiche une grande quantité d&#39;informations sur PHP et ses extensions.
 
 >[!NOTE]
 >
->Utilisez `phpinfo.php` dans un système de développement _only_. Il peut s’agir d’un problème de sécurité en production.
+>Utilisez `phpinfo.php` dans un système de développement _uniquement_. Il peut s’agir d’un problème de sécurité en production.
 
-Ajoutez le code suivant n’importe où dans la docroot de votre serveur web :
+Ajoutez le code suivant n’importe où dans la racine docroot de votre serveur web :
 
 ```php
 <?php
@@ -113,9 +113,9 @@ Ajoutez le code suivant n’importe où dans la docroot de votre serveur web :
 phpinfo();
 ```
 
-Pour plus d&#39;informations, consultez la [page du manuel phpinfo](https://www.php.net/manual/en/function.phpinfo.php).
+Pour plus d&#39;informations, reportez-vous à la [page du manuel phpinfo](https://www.php.net/manual/en/function.phpinfo.php).
 
-Pour afficher les résultats, saisissez l’URL suivante dans le champ de l’emplacement ou de l’adresse de votre navigateur :
+Pour afficher les résultats, saisissez l’URL suivante dans le champ d’emplacement ou d’adresse de votre navigateur :
 
 ```http
 http://<web server host or IP>/phpinfo.php
@@ -124,7 +124,7 @@ http://<web server host or IP>/phpinfo.php
 Si une erreur 404 (Introuvable) s’affiche, vérifiez les points suivants :
 
 * Démarrez le serveur web si nécessaire.
-* Assurez-vous que votre pare-feu autorise le trafic sur le port 80.
+* Vérifiez que votre pare-feu autorise le trafic sur le port 80.
 
   [Aide pour Ubuntu](https://help.ubuntu.com/community/UFW)
 
@@ -132,20 +132,20 @@ Si une erreur 404 (Introuvable) s’affiche, vérifiez les points suivants :
 
 ## phpMyAdmin
 
-L’application phpMyAdmin est un utilitaire d’administration de base de données gratuit et facile à utiliser. Vous pouvez l’utiliser pour vérifier et manipuler le contenu de votre base de données. Vous devez vous connecter à phpMyAdmin en tant qu’utilisateur administrateur de base de données MySQL.
+L&#39;application phpMyAdmin est un utilitaire d&#39;administration de base de données gratuit et facile à utiliser. Vous pouvez l’utiliser pour vérifier et manipuler le contenu de votre base de données. Vous devez vous connecter à phpMyAdmin en tant qu&#39;utilisateur administrateur de la base de données MySQL.
 
-Pour plus d’informations sur phpMyAdmin, consultez la [page d’accueil phpMyAdmin](https://www.phpmyadmin.net/).
+Pour plus d&#39;informations sur phpMyAdmin, consultez la page d&#39;accueil de [phpMyAdmin](https://www.phpmyadmin.net/).
 
-Pour plus d’informations sur l’installation, consultez la [documentation d’installation phpMyAdmin](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install).
+Pour plus d’informations sur l’installation, consultez la documentation d’installation de [phpMyAdmin](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install).
 
 >[!NOTE]
 >
->Utilisez phpMyAdmin dans un système de développement _only_. Il peut s’agir d’un problème de sécurité en production.
+>Utilisez phpMyAdmin dans un système de développement _uniquement_. Il peut s’agir d’un problème de sécurité en production.
 
-1. Pour utiliser phpMyAdmin, saisissez la commande suivante dans le champ d’adresse ou d’emplacement de votre navigateur :
+1. Pour utiliser phpMyAdmin, saisissez la commande suivante dans le champ adresse ou emplacement de votre navigateur :
 
    ```http
    http://<web server host or IP>/phpmyadmin
    ```
 
-1. Lorsque vous y êtes invité, connectez-vous à l’aide de votre base de données MySQL `root` ou du nom d’utilisateur et du mot de passe de l’administrateur.
+1. Lorsque vous y êtes invité, connectez-vous en utilisant votre `root` de base de données MySQL ou le nom d&#39;utilisateur et le mot de passe de l&#39;utilisateur administrateur.

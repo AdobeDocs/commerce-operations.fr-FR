@@ -3,22 +3,22 @@ title: Alertes gérées pour Adobe Commerce
 description: Si vous êtes un client d’Adobe Commerce sur les infrastructures cloud Pro Planifier l’architecture , vous pouvez utiliser des alertes gérées pour connaître l’intégrité de votre site. Si vous êtes un client d’Adobe Commerce sur l’architecture du plan de démarrage d’infrastructure cloud, vous ne recevrez des alertes que pour les conditions de taux d’erreur  [!DNL Apdex]  et .
 feature: Observability, Support, Tools and External Services
 role: Admin
-source-git-commit: efb58b920a9b72ac96bbd28aaae6210ede84e24f
+exl-id: 3fc4b07f-4e27-4833-97a9-cf9741ae5648
+source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
 
-
 # Alertes gérées pour Adobe Commerce
 
 
-Nous avons mis en place des tableaux de bord et des alertes clés pour vous aider à comprendre à quel moment votre site atteint des niveaux de stockage et de [!DNL Apdex] critiques (satisfaction des utilisateurs à l&#39;égard des applications et du temps de réponse des services). Cela peut vous aider à prendre des mesures avant de remarquer des temps de réponse lents ou une panne. Vous pourrez résoudre les problèmes liés aux alertes avec les articles répertoriés ci-dessous. Avant de pouvoir utiliser les alertes, commencez par configurer les canaux de notification. Reportez-vous à [[!DNL New Relic] Configuration des canaux de notification](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) dans le guide Commerce sur le cloud.
+Nous avons mis en place des tableaux de bord et des alertes clés pour vous aider à comprendre à quel moment votre site atteint des niveaux de stockage et de [!DNL Apdex] critiques (satisfaction des utilisateurs à l&#39;égard des applications et du temps de réponse des services). Cela peut vous aider à prendre des mesures avant de remarquer des temps de réponse lents ou une panne. Vous pourrez résoudre les problèmes liés aux alertes avec les articles répertoriés ci-dessous. Avant de pouvoir utiliser les alertes, commencez par configurer les canaux de notification. Reportez-vous à [[!DNL New Relic] Configuration des canaux de notification](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) dans le guide Commerce sur le cloud.
 
 >[!NOTE]
 >
->Si les alertes gérées pour la politique d’alerte d’Adobe Commerce ne sont pas disponibles, cela peut être dû au fait que ce compte a été récemment créé ou [!DNL New Relic] avoir été récemment configuré. Un processus est exécuté tous les mardis pour ajouter la politique d’alerte à ces comptes. La stratégie d’alerte doit être disponible le lendemain de l’exécution du processus suivant. Si la politique est toujours manquante, [envoyez une demande d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) et incluez votre ID de projet.
+>Si les alertes gérées pour la politique d’alerte d’Adobe Commerce ne sont pas disponibles, cela peut être dû au fait que ce compte a été récemment créé ou [!DNL New Relic] avoir été récemment configuré. Un processus est exécuté tous les mardis pour ajouter la politique d’alerte à ces comptes. La stratégie d’alerte doit être disponible le lendemain de l’exécution du processus suivant. Si la politique est toujours manquante, [envoyez une demande d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) et incluez votre ID de projet.
 
 Consultez le tableau ci-dessous pour obtenir des liens vers les articles de la base de connaissances qui fournissent des étapes de dépannage pour ces alertes :
 

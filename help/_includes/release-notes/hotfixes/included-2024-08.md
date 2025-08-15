@@ -9,7 +9,7 @@ ht-degree: 0%
 
 Cette version comprend les correctifs suivants :
 
-* Correctif pour résoudre une erreur JavaScript qui empêchait le rendu correct des cartes Google dans l’éditeur [!UICONTROL **PageBuilder**]. Pour plus d’informations, consultez l’article de la base de connaissances [Correctifs révisés pour les cartes Google - Perte d’accès sur toutes les versions d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions).
+* Correctif pour résoudre une erreur JavaScript qui empêchait le rendu correct des cartes Google dans l’éditeur [!UICONTROL **PageBuilder**]. Pour plus d’informations, consultez l’article de la base de connaissances [Correctifs révisés pour les cartes Google - Perte d’accès sur toutes les versions d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions).
 
 <!--
 ACP2E-3156
@@ -18,7 +18,7 @@ ACP2E-3158
 ACP2E-3159
 -->
 
-* Correctif pour résoudre un problème de validation de jeton web JSON (JWT) lié à CVE-2024-34102. Pour plus d’informations, consultez l’article [ Mise à jour de sécurité disponible pour Adobe Commerce-APSB24-40 ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102) de la base de connaissances .
+* Correctif pour résoudre un problème de validation de jeton web JSON (JWT) lié à CVE-2024-34102. Pour plus d’informations, consultez l’article [ Mise à jour de sécurité disponible pour Adobe Commerce-APSB24-40 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102) de la base de connaissances .
 
 <!--
 AC-12486

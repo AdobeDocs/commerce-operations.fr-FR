@@ -1,6 +1,6 @@
 ---
 title: Vérification du statut de la base de données
-description: Procédez comme suit pour vérifier l’état de votre base de données Adobe Commerce.
+description: Pour vérifier l’état de votre base de données Adobe Commerce, procédez comme suit.
 exl-id: 33d9b30a-4504-4955-b11a-0a642f23209b
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
@@ -21,9 +21,9 @@ Pour vérifier le statut de la base de données.
 bin/magento setup:db:status
 ```
 
-Cette commande ne comporte aucun argument ou option.
+Cette commande ne comporte aucun argument ni option.
 
-Voici un exemple de résultat :
+Voici un exemple de sortie :
 
 ```
 All modules are up to date.
@@ -31,8 +31,8 @@ All modules are up to date.
 
 La commande renvoie l’un des codes de sortie suivants :
 
-| Quitter le code | Description | Action suggérée |
+| Code de sortie | Description | Action suggérée |
 |--------------|--------------|---------------|
-| 0 | Normal | Aucun |
-| 1 | Certains modules utilisent des versions de code plus récentes ou plus anciennes que la base de données. | Exécutez [`magento setup:upgrade`](database-upgrade.md) pour mettre à jour le schéma de base de données et exécutez `composer update` à partir du répertoire racine de l’application pour mettre à jour les dépendances des composants. |
-| 2 | `magento setup:upgrade` est requis | [`magento setup:upgrade`](database-upgrade.md) pour mettre à jour le schéma de base de données |
+| 0 | Normale | Aucune |
+| 1 | Certains modules utilisent des versions de code plus récentes ou plus anciennes que la base de données | Exécutez [`magento setup:upgrade`](database-upgrade.md) pour mettre à jour le schéma de base de données et exécutez `composer update` à partir du répertoire racine de l’application pour mettre à jour les dépendances des composants |
+| 2 | `magento setup:upgrade` est obligatoire | [`magento setup:upgrade`](database-upgrade.md) de mise à jour du schéma de base de données |

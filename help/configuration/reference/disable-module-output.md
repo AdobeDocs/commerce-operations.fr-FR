@@ -32,10 +32,10 @@ La désactivation de Output est effectuée dans les classes suivantes :
 
 Pour désactiver la sortie du module dans le déploiement du pipeline ou tout autre déploiement, avec plusieurs instances de l’application Commerce :
 
-1. Modifiez le fichier `config.xml` du module `Backend`.
+1. Modifiez le fichier `Backend` du module `config.xml`.
 1. Exportez les modifications de configuration.
 
-### Modifier le fichier `config.xml` du module `Backend`
+### Modifier le fichier `Backend` du module `config.xml`
 
 1. Archivez le fichier `config.xml` d’origine.
 1. Ajoutez au fichier `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml` des lignes similaires aux suivantes, directement sous l’élément `<default>` :

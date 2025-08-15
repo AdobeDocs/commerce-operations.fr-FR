@@ -1,6 +1,6 @@
 ---
 title: Présentation de la migration
-description: Découvrez comment commencer la migration des données du Magento 1 vers le Magento 2 avec le  [!DNL Data Migration Tool].
+description: Découvrez comment commencer à migrer des données de Magento 1 vers Magento 2 avec l’ [!DNL Data Migration Tool].
 exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,27 +12,27 @@ ht-degree: 0%
 
 # Présentation de la migration
 
-Avant de commencer la migration, arrêtez toutes les tâches Magento 1 cron.
+Avant de commencer la migration, arrêtez toutes les tâches cron de Magento 1.
 
-Lors du processus de migration, suivez les règles générales suivantes pour réussir la migration :
+Pendant le processus de migration, suivez les règles générales suivantes pour réussir la migration :
 
-1. **N’effectuez pas** de modifications dans l’administrateur Magento 1, à l’exception de la gestion des commandes (expédition, création de factures et de notes de crédit).
-1. **Ne modifiez pas** le code
-1. **N’effectuez pas** de modifications dans l’administrateur et le storefront de Magento 2
+1. **N’apportez pas** modifications dans l’administrateur Magento 1, à l’exception de la gestion des commandes (expédition, création de factures et avoirs)
+1. **Ne modifiez** code
+1. **N’apportez pas** modifications dans l’administration et le storefront de Magento 2.
 
 >[!TIP]
 >
->Toutes les opérations dans le storefront Magento 1 sont autorisées.
+>Toutes les opérations effectuées dans le storefront Magento 1 sont autorisées.
 
-## Exécutez le [!DNL Data Migration Tool]
+## Exécuter le [!DNL Data Migration Tool]
 
 Cette section explique comment exécuter le [!DNL Data Migration Tool] pour migrer les paramètres, les données ou les modifications incrémentielles.
 
 ### Premières étapes
 
-1. Connectez-vous au serveur d’applications en tant qu’utilisateur ou passez à un utilisateur autorisé à écrire sur le système de fichiers. Voir [basculement vers le propriétaire du système de fichiers](../../../installation/prerequisites/file-system/overview.md).
+1. Connectez-vous au serveur d’applications en tant qu’utilisateur ou en tant qu’utilisateur disposant des autorisations d’écriture sur le système de fichiers. Voir [passer au propriétaire du système de fichiers](../../../installation/prerequisites/file-system/overview.md).
 
-   Si vous utilisez le shell bash, vous pouvez utiliser la syntaxe suivante pour basculer vers le propriétaire du système de fichiers et saisir la commande en même temps :
+   Si vous utilisez le shell bash, vous pouvez utiliser la syntaxe suivante pour passer au propriétaire du système de fichiers et saisir simultanément la commande :
 
    ```bash
    su <file system owner> -s /bin/bash -c <command>
@@ -44,23 +44,23 @@ Cette section explique comment exécuter le [!DNL Data Migration Tool] pour migr
    sudo -u <file system owner>  <command>
    ```
 
-1. Pour exécuter des commandes de Magento depuis n’importe quel répertoire, ajoutez `<magento_root>/bin` à votre système `PATH`.
+1. Pour exécuter des commandes Magento à partir de n’importe quel répertoire, ajoutez des `<magento_root>/bin` à votre `PATH` système.
 
-   Les shells ayant une syntaxe différente, consultez une référence telle que [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   Étant donné que les shell ont une syntaxe différente, consultez une référence telle que [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
-   Exemple de shell bash pour CentOS :
+   Exemple de shell Bash pour CentOS :
 
    ```bash
    export PATH=$PATH:/var/www/html/magento2/bin
    ```
 
-   Vous pouvez éventuellement exécuter les commandes comme suit :
+   Vous pouvez éventuellement exécuter les commandes des manières suivantes :
 
-   - `cd <magento_root>/bin` et exécutez-les comme `./magento <command name>`
+   - `cd <magento_root>/bin` et exécutez-les en tant que `./magento <command name>`
    - `<magento_root>/bin/magento <command name>`
-   - `<magento_root>` est un sous-répertoire de votre serveur web docroot.
+   - `<magento_root>` est un sous-répertoire de la racine docroot de votre serveur web.
 
-### Syntaxe de la commande
+### Syntaxe des commandes
 
 Voici un exemple de commande type :
 
@@ -71,9 +71,9 @@ bin/magento migrate:<mode> [-r|--reset] [-a|--auto] {<path to config.xml>}
 Où :
 
 - `<mode>` peut être : [`settings`](settings.md), [`data`](data.md) ou [`delta`](delta.md)
-- `[-r|--reset]` est un argument facultatif qui lance la migration à partir du début. Vous pouvez utiliser cet argument pour tester la migration.
-- `[-a|--auto]` est un argument facultatif qui empêche l’arrêt de la migration lorsqu’elle rencontre des erreurs de vérification de l’intégrité.
-- `{<path to config.xml>}` est le chemin d’accès absolu au système de fichiers `config.xml` ; cet argument est obligatoire.
+- `[-r|--reset]` est un argument facultatif qui lance la migration depuis le début. Vous pouvez utiliser cet argument pour tester la migration.
+- `[-a|--auto]` est un argument facultatif qui empêche l’arrêt de la migration lorsqu’elle rencontre des erreurs de contrôle d’intégrité.
+- `{<path to config.xml>}` est le chemin d’accès absolu au système de fichiers à `config.xml` ; cet argument est obligatoire.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Où :
 
 ## Ordre de migration
 
-Lorsque nous avons créé le [!DNL Data Migration Tool], nous avons supposé la séquence de transfert de données suivante :
+Lors de la création du [!DNL Data Migration Tool], nous avons supposé que la séquence de transfert de données suivante était active :
 
 1. [Paramètres](settings.md)
 1. [Données](data.md)

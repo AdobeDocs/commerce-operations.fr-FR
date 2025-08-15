@@ -5,30 +5,30 @@ source-wordcount: '49'
 ht-degree: 0%
 
 ---
-# Mettre à jour le système de génération
+# Mettre à jour le système de build
 
-**Pour mettre à jour le système de génération** :
+**Pour mettre à jour le système de build** :
 
 1. Connectez-vous au système de génération en tant que propriétaire du système de fichiers.
-1. Modifiez le répertoire racine de l’application.
+1. Accédez au répertoire racine de l’application.
 
    ```bash
    cd <Magento root dir>
    ```
 
-1. Extrayez les modifications vers `app/etc/config.php` à partir du contrôle source.
+1. Extrayez les modifications apportées à `app/etc/config.php` à partir du contrôle de code source.
 
    ```bash
    git pull mconfig m2.2_deploy
    ```
 
-1. Compilez du code.
+1. Compilez le code.
 
    ```bash
    bin/magento setup:di:compile
    ```
 
-1. Une fois le code compilé, générez des fichiers d’affichage statiques.
+1. Une fois le code compilé, générez des fichiers de vue statiques.
 
    ```bash
    bin/magento setup:static-content:deploy -f

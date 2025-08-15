@@ -11,14 +11,14 @@ ht-degree: 0%
 
 # Planification annuelle des mises à niveau
 
-De nombreuses entreprises travaillent à partir de budgets annuels et de feuilles de route. Lors de ces discussions annuelles, il est impératif que vous discutiez de l’état, de la direction et de la stratégie de mise à niveau de votre plateforme pour l’année, ainsi que de la manière dont elle s’insère dans les objectifs généraux et les indicateurs de performance clés (IPC) de l’entreprise.
+De nombreuses entreprises travaillent à partir de budgets annuels et de feuilles de route. Au cours de ces discussions annuelles, il est impératif que vous parliez de l’état de votre plateforme, de votre orientation et de votre stratégie de mise à niveau pour l’année, ainsi que de la manière dont elle s’intègre dans les objectifs généraux et les indicateurs de performance clés (ICP) de l’entreprise.
 
-Suivant le [ calendrier de publication ](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/schedule), attribuez des délais de budget et de publication pour les mises à niveau, en évitant les jours fériés, les fermetures d’entreprises et les heures de pointe. En comprenant le calendrier des versions de l’Adobe et en restant informé des modifications et améliorations qui font partie de chaque version par le biais des [ notes de mise à jour](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/overview), vous pouvez mieux planifier votre année.
+En suivant le [calendrier des versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule), affectez un budget et des fenêtres de publication pour les mises à niveau, en évitant les jours fériés, les fermetures d’entreprise et les heures de pointe. En comprenant le planning des versions d’Adobe et en restant informé des modifications et améliorations apportées à chaque version grâce aux [notes de mise à jour](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview), vous pouvez mieux planifier votre année.
 
-Lors de la planification, vous pouvez vous demander :
+Lors de la planification, vous pouvez vous poser les questions suivantes :
 
-- Existe-t-il des personnalisations ou des extensions à créer pour atteindre les objectifs de mon entreprise ?
-- Vais-je vérifier que ces personnalisations et extensions ne sont pas fournies en mode natif par Adobe et ne seront pas incluses dans une prochaine version ? Si c&#39;est le cas, je pourrais économiser à la fois du temps et de l&#39;argent.
-- Ai-je des intégrations tierces qui pourront nécessiter une maintenance au cours de l’année à venir ?
+- Existe-t-il des personnalisations ou des extensions qui doivent être créées pour répondre aux objectifs de mon entreprise ?
+- Dois-je vérifier que ces personnalisations et extensions ne sont pas fournies nativement par Adobe et ne figurent pas dans une prochaine version ? Si c&#39;est le cas, je pourrais peut-être économiser du temps et de l&#39;argent à mon entreprise.
+- Existe-t-il des intégrations tierces qui peuvent nécessiter une maintenance au cours de l’année à venir ?
 
-Pour vous assurer que votre équipe est sur la bonne voie, planifiez un point de contrôle de mise à niveau tout au long de l’année afin de revoir vos plans, votre budget, votre calendrier et la capacité de l’équipe.
+Pour vous assurer que votre équipe est sur la bonne voie, planifiez une mise à niveau à mi-parcours de l’année afin d’examiner vos plans, votre budget, votre calendrier et la capacité de l’équipe.

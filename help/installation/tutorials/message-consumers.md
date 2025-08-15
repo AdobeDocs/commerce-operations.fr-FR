@@ -1,6 +1,6 @@
 ---
 title: Configuration des consommateurs de messages
-description: Suivez ces étapes pour configurer le comportement des consommateurs de la file d’attente de messages Adobe Commerce.
+description: Pour configurer le comportement des consommateurs de files d’attente de messages d’Adobe Commerce, procédez comme suit.
 exl-id: df292301-f4bd-49df-a241-7467c35bf1d8
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
@@ -11,10 +11,10 @@ ht-degree: 0%
 
 # Configuration des consommateurs de messages
 
-Avant d&#39;exécuter cette commande, vous devez effectuer les *ou* suivants en [installant l&#39;application](../advanced.md) :
+Avant d’exécuter cette commande, vous devez effectuer les opérations suivantes *ou* vous devez [installer l’application](../advanced.md) :
 
-* [Création ou mise à jour de la configuration du déploiement](deployment.md)
-* [Création du schéma de la base de données](database.md)
+* [Créer ou mettre à jour la configuration de déploiement](deployment.md)
+* [Création du schéma de base de données](database.md)
 
 ## Configuration du comportement des consommateurs
 

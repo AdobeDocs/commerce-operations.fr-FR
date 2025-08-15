@@ -11,21 +11,21 @@ ht-degree: 0%
 
 # Présentation des exemples de données
 
-Les exemples de données fournissent une vitrine basée sur le thème Luma équipé de produits, de catégories, d’enregistrement de clients, etc. Il fonctionne comme un storefront Commerce et vous pouvez manipuler les prix, les stocks et les règles de prix promotionnels à l’aide de l’administrateur.
+Les exemples de données fournissent une vitrine basée sur le thème Luma doté de produits, de catégories, de l’enregistrement des clients, etc. Il fonctionne comme une vitrine Commerce et vous pouvez manipuler les prix, les stocks et les règles de tarification promotionnelle à l’aide de l’administrateur.
 
 >[!NOTE]
 >
->Pour passer en revue et analyser la base de données et différentes fonctionnalités, pensez à utiliser des données réelles plutôt que des exemples de données. Les exemples de données sont conçus comme une simulation de magasin prégénérée, afin de démontrer la conception de thème et le comportement de base du storefront. Toutes les entités de données d’exemple sont écrites directement dans les tables de base de données, tandis que les données d’exemple sont installées.
+>Pour examiner et analyser la base de données et diverses fonctionnalités, pensez à utiliser des données réelles plutôt que des données d’exemple. Les exemples de données sont conçus comme une simulation de magasin prégénérée, pour démontrer la conception du thème et le comportement de base du storefront. Toutes les entités de données d’exemple sont écrites directement dans les tables de la base de données, tandis que les données d’exemple sont installées.
 
-Vous pouvez installer des exemples de données avant ou après l’installation du logiciel Commerce. Lorsque vous avez terminé avec les exemples de données, vous pouvez soit le supprimer, soit l’installer à jour, comme décrit dans la section [Suppression des exemples de modules de données ou mise à jour des exemples de données](remove-or-update.md).
+Vous pouvez installer des données d’exemple avant ou après l’installation du logiciel Commerce. Lorsque vous avez terminé d’utiliser les exemples de données, vous pouvez soit les supprimer, soit les installer à nouveau, comme indiqué dans la section [Supprimer des exemples de modules de données ou mettre à jour des exemples de données](remove-or-update.md).
 
 >[!WARNING]
 >
->Vous ne pouvez pas désinstaller les exemples de données. Utilisez des exemples de données uniquement pour en savoir plus sur le fonctionnement d’Adobe Commerce. Évitez d’effectuer un développement dans un système dans lequel vous avez installé des exemples de données.
+>Vous ne pouvez pas désinstaller les données d’exemple. Utilisez des données d’exemple uniquement pour en savoir plus sur le fonctionnement d’Adobe Commerce. Évitez d’effectuer tout développement dans un système dans lequel vous avez installé des données d’exemple.
 
-Vous pouvez installer des exemples de données facultatifs de l’une des manières suivantes :
+Vous pouvez installer les données d’exemple facultatives de l’une des manières suivantes :
 
-| Méthode d&#39;installation | Description | Niveau de compétence requis |
+| Méthode d’installation | Description | Niveau de compétence requis |
 |--- |--- |--- |
-| Utilisation du compositeur | [ Exécutez `magento sampledata:deploy` pour modifier la racine de l’application `composer.json`](composer-packages.md) afin d’activer les exemples de modules de données. | Nécessite des connaissances du compositeur et un accès au système de fichiers Commerce. |
-| Clonage des référentiels | [Cloner le référentiel GitHub](git-repositories.md) et le référentiel de données d’exemple, puis les lier. | Pour les développeurs qui contribuent uniquement. Tous les autres devraient utiliser l&#39;une des méthodes précédentes. |
+| Utilisation du compositeur | [Exécutez `magento sampledata:deploy` pour modifier le `composer.json`](composer-packages.md) racine de l’application afin d’activer les exemples de modules de données. | Nécessite des connaissances en compositeur et un accès au système de fichiers Commerce. |
+| Clonage de référentiels | [Clonez le référentiel GitHub](git-repositories.md) ainsi que le référentiel de données d’exemple, puis liez-les. | Pour les développeurs contributeurs uniquement. Toute autre personne doit utiliser l’une des méthodes précédentes. |

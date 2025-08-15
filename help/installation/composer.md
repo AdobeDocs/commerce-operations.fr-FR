@@ -18,18 +18,18 @@ Adobe utilise [Composer](https://getcomposer.org/) pour gérer les composants Ad
 - Réutiliser des bibliothèques tierces sans les regrouper avec du code source
 - Réduisez les conflits d’extension et les problèmes de compatibilité en utilisant une architecture basée sur des composants avec une gestion robuste des dépendances
 - Respectez les normes [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/)
-- Recompresser le Magento Open Source avec d’autres composants
+- Recompressez Magento Open Source avec d’autres composants.
 - Utilisation du logiciel Adobe Commerce dans un environnement de production
 
 >[!NOTE]
 >
->Les développeurs qui contribuent à Magento Open Source doivent utiliser la méthode d’installation [basée sur ](https://developer.adobe.com/commerce/contributor/guides/install/).
+>Les développeurs qui contribuent à Magento Open Source doivent utiliser la méthode d’installation [basée sur Git](https://developer.adobe.com/commerce/contributor/guides/install/).
 
 ## Conditions préalables
 
-Avant de poursuivre, vous devez procéder comme suit :
+Avant de continuer, vous devez effectuer les opérations suivantes :
 
-- Effectuez toutes les [tâches](system-requirements.md) préalables.
+- Effectuez toutes les [tâches préalables](system-requirements.md).
 - [Installez le compositeur](https://getcomposer.org/download/).
 - Obtenez les [clés d’authentification](prerequisites/authentication-keys.md) dans le référentiel du compositeur Adobe Commerce.
 
@@ -37,11 +37,11 @@ Avant de poursuivre, vous devez procéder comme suit :
 
 Découvrez la propriété, les autorisations et le propriétaire du système de fichiers dans la rubrique [Présentation de la propriété et des autorisations](prerequisites/file-system/overview.md).
 
-Pour basculer vers le propriétaire du système de fichiers :
+Pour passer au propriétaire du système de fichiers :
 
-1. Connectez-vous au serveur d’applications ou basculez vers un utilisateur autorisé à écrire dans le système de fichiers.
+1. Connectez-vous au serveur d’applications en tant qu’utilisateur ou en tant qu’utilisateur disposant des autorisations d’écriture sur le système de fichiers.
 
-   Si vous utilisez le shell bash, vous pouvez utiliser la syntaxe suivante pour basculer sur le propriétaire du système de fichiers et entrer la commande en même temps :
+   Si vous utilisez le shell bash, vous pouvez utiliser la syntaxe suivante pour passer au propriétaire du système de fichiers et saisir simultanément la commande :
 
    ```bash
    su <file system owner> -s /bin/bash -c <command>
@@ -53,7 +53,7 @@ Pour basculer vers le propriétaire du système de fichiers :
    sudo -u <file system owner>  <command>
    ```
 
-1. Pour exécuter des commandes CLI à partir de n’importe quel répertoire, ajoutez `<app_root>/bin` à votre système `PATH`.
+1. Pour exécuter des commandes d’interface de ligne de commande à partir de n’importe quel répertoire, ajoutez `<app_root>/bin` à votre `PATH` système.
 
    Comme les shell ont des syntaxes différentes, consultez une référence comme [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
@@ -89,11 +89,11 @@ Pour obtenir le métapaquet Adobe Commerce :
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   A l’invite, saisissez vos clés d’authentification. Les clés publiques et privées sont créées et configurées à partir de [Commerce Marketplace - Clés d&#39;accès](https://commercemarketplace.adobe.com/customer/account/login/). Pour le `[!UICONTROL username]`, copiez et collez la valeur de la clé publique. Pour le `[!UICONTROL password]`, copiez et collez la valeur de la clé privée.
+   A l’invite, saisissez vos clés d’authentification. Les clés publiques et privées sont créées et configurées à partir de [Commerce Marketplace - Access Keys](https://commercemarketplace.adobe.com/customer/account/login/). Pour le `[!UICONTROL username]`, copiez et collez la valeur de la clé publique. Pour le `[!UICONTROL password]`, copiez et collez la valeur de la clé privée.
 
    >[!NOTE]
    >
-   > Si vous utilisez un fichier `[auth.json](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` du compositeur ou une variable d’environnement configurée avec vos clés d’authentification Commerce, vous n’êtes pas invité à saisir les clés d’authentification.
+   > Si vous utilisez un fichier `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` du compositeur ou une variable d’environnement configurée avec vos clés d’authentification Commerce, vous n’êtes pas invité à saisir les clés d’authentification.
 
    Si vous rencontrez des erreurs, telles que `Could not find package...` ou `...no matching package found`, assurez-vous qu’il n’y a aucune faute de frappe dans votre commande. Si vous rencontrez toujours des erreurs, il se peut que vous ne soyez pas autorisé à télécharger Adobe Commerce. Contactez [l’assistance Adobe Commerce](https://support.magento.com/hc/en-us) pour obtenir de l’aide.
 
@@ -206,15 +206,15 @@ Le tableau suivant résume les commandes disponibles. Les commandes sont présen
 | `magento setup:uninstall` | Supprime l’application. | Application installée |
 | `magento setup:upgrade` | Met à jour l’application. | Configuration du déploiement |
 | `magento maintenance:{enable/disable}` | Active ou désactive le mode de maintenance (en mode de maintenance, seules les adresses IP exemptées peuvent accéder à Admin ou Storefront). | Application installée |
-| `magento setup:config:set` | Crée ou met à jour la configuration de déploiement. | Aucun |
-| `magento module:{enable/disable}` | activer ou désactiver des modules. | Aucun |
-| `magento setup:store-config:set` | Définit les options liées à la vitrine, telles que l’URL de base, la langue ou le fuseau horaire. | Configuration du déploiement |
+| `magento setup:config:set` | Crée ou met à jour la configuration de déploiement. | Aucune |
+| `magento module:{enable/disable}` | Activez ou désactivez les modules. | Aucune |
+| `magento setup:store-config:set` | Définit les options liées au storefront, telles que l’URL de base, la langue et le fuseau horaire. | Configuration du déploiement |
 | `magento setup:db-schema:upgrade` | Met à jour le schéma de la base de données. | Configuration du déploiement |
 | `magento setup:db-data:upgrade` | Met à jour les données de la base. | Configuration du déploiement |
 | `magento setup:db:status` | Vérifie si la base de données est à jour avec le code. | Configuration du déploiement |
-| `magento admin:user:create` | Crée un utilisateur administrateur. | Vous pouvez créer des utilisateurs pour les éléments suivants :<br><br>Configuration du<br><br>déploiement Activez au minimum la base de `Magento_User` données des modules<br><br>et `Magento_Authorization` (la méthode la plus simple consiste à utiliser `bin/magento setup:upgrade`) |
-| `magento list` | Affiche la liste de toutes les commandes disponibles. | Aucun |
-| `magento help` | Fournit de l’aide pour la commande spécifiée. | Aucun |
+| `magento admin:user:create` | Crée un utilisateur administrateur. | Vous pouvez créer des utilisateurs pour les éléments suivants :<br><br>Configuration du déploiement<br><br>Activez au minimum les modules `Magento_User` et `Magento_Authorization`Base de données<br><br>la façon la plus simple d’utiliser `bin/magento setup:upgrade`) |
+| `magento list` | Répertorie toutes les commandes disponibles. | Aucune |
+| `magento help` | Fournit de l’aide pour la commande spécifiée. | Aucune |
 
 ### Arguments courants
 

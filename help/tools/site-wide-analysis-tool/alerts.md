@@ -11,12 +11,12 @@ ht-degree: 0%
 
 # [!DNL Alerts]
 
-La page [!DNL Site-Wide Analysis Tool's] [!UICONTROL Alerts] affiche les correctifs des alertes gérées Adobe Commerce pour les marchands. Adobe fournit le [!DNL Managed Alerts] pour effectuer le suivi des mesures de performances à l’aide des bonnes pratiques du secteur. Référencez l’article [Alertes gérées pour Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832-Managed-alerts-for-Adobe-Commerce) dans notre [!DNL support knowledge base].
+La page [!DNL Site-Wide Analysis Tool's] [!UICONTROL Alerts] affiche les correctifs d’Adobe Commerce Managed Alerts pour les commerçants. Adobe permet d’effectuer le [!DNL Managed Alerts] des mesures de performances à l’aide des bonnes pratiques du secteur. Référencez l’article [Alertes gérées pour Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832-Managed-alerts-for-Adobe-Commerce) dans notre [!DNL support knowledge base].
 
-## Quand utiliser
+## Quand l’utiliser
 
-L’onglet [!UICONTROL Managed Alerts] affiche les 20 [!DNL New Relic Alerts] les plus récents, leur état, l’URL de l’incident et un lien vers un article [!DNL support knowledge base]. Vous pouvez utiliser cet onglet pour rester à jour avec [!DNL Alerts].
+[!UICONTROL Managed Alerts] onglet affiche les 20 derniers [!DNL New Relic Alerts], leur statut, l’URL de l’incident et le lien vers un article [!DNL support knowledge base]. Vous pouvez utiliser cet onglet pour rester à jour avec les [!DNL Alerts].
 
 ## Avantages
 
-Améliorez les performances de votre site en restant mis à jour sur [!DNL Alerts] et en le mettant à jour selon les besoins.
+Améliorez les performances de votre site en restant informé des [!DNL Alerts] et en mettant à jour le site si nécessaire.
