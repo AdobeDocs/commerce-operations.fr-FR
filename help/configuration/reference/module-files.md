@@ -2,7 +2,7 @@
 title: Fichiers de configuration du module
 description: Découvrez comment personnaliser un module à l’aide de types de configuration.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 80d7a7f2592e547ef70f2fac63c25be0cce9365d
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Le tableau ci-dessous présente chaque type de configuration et l’objet de con
 | --- | --- | --- | --- |
 | `address_formats.xml` | Déclaration du format de l’adresse | principal, global | [\Magento\Customer\Model\Address\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Address/Config.php) |
 | `acl.xml` | [ Liste de contrôle d’accès ](https://developer.adobe.com/commerce/webapi/get-started/authentication/#relationship-between-aclxml-and-webapixml) | global | [\Magento\Framework\Acl\AclResource\Provider](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Acl/AclResource/Provider.php) |
-| `analytics.xml` | [Rapports avancés]https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/) | principal, global | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
+| `analytics.xml` | [Rapports avancés](https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/) | principal, global | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
 | `cache.xml` | Déclaration de type de cache | principal, global | [\Magento\Framework\Cache\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Config/Data.php) |
 | `catalog_attributes.xml` | Configuration des attributs de catalogue | global | [\Magento\Catalog\Model\Attribute\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Attribute/Config/Data.php) |
 | `config.php` et `env.php` | [Configuration du déploiement](../reference/deployment-files.md) | Ces fichiers sont lisibles/inscriptibles par le processeur de configuration interne. | N’a aucun objet, ne peut pas être personnalisé |
