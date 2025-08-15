@@ -40,7 +40,7 @@ Chaque phase de développement doit comporter une branche correspondante dans Gi
 
 >[!TIP]
 >
->Les projets d’infrastructure cloud d’Adobe Commerce contiennent des branches spécifiques qui correspondent à différents environnements. Reportez-vous aux sections [Workflow de projet Pro](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html) et [Workflow de projet Starter](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html) du _Guide cloud_.
+>Les projets d’infrastructure cloud d’Adobe Commerce contiennent des branches spécifiques qui correspondent à différents environnements. Reportez-vous aux sections [Workflow de projet Pro](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=fr) et [Workflow de projet Starter](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html?lang=fr) du _Guide cloud_.
 
 ## Stratégies des branches
 

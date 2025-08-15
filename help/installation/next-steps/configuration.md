@@ -65,7 +65,7 @@ Pour plus d’informations, voir l’une des rubriques suivantes :
 >
 >* Les environnements de démarrage n’ont pas de rotation de journal.
 >
->* Vous ne pouvez pas configurer la rotation du journal sur les environnements d’intégration Pro. Vous devez implémenter une solution/un script personnalisé(e) et [configurer votre cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) pour exécuter le script selon vos besoins.
+>* Vous ne pouvez pas configurer la rotation du journal sur les environnements d’intégration Pro. Vous devez implémenter une solution/un script personnalisé(e) et [configurer votre cron](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) pour exécuter le script selon vos besoins.
 
 ### Configurez les règles iptables pour permettre à divers services de communiquer
 

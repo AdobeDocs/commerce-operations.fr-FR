@@ -316,7 +316,7 @@ Comme dans l’exemple précédent, générez un fichier CSV, mais au lieu de sp
 
 [Présentation des traductions]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [dictionnaire de traduction]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[configure les traductions]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
+[configure les traductions]: https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-localize
 [En savoir plus sur les packages de langue]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

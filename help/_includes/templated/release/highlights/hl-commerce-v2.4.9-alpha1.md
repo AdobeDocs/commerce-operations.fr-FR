@@ -59,6 +59,6 @@ _AC-13258_
 
 ### Sécurité
 
-Pour obtenir les dernières informations sur les correctifs de bugs de sécurité, consultez le [Bulletin de sécurité Adobe APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
+Pour obtenir les dernières informations sur les correctifs de bugs de sécurité, consultez le [Bulletin de sécurité Adobe APSB25-50](https://helpx.adobe.com/fr/security/products/magento/apsb25-50.html).
 
 {{$include /help/_includes/release-notes/highlights/security-2025-06.md}}

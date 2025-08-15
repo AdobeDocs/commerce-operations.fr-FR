@@ -27,7 +27,7 @@ Allouez au moins **2 Go** de mémoire pour le module PHP [OPcache](https://www.p
 ## Informations supplémentaires
 
 * [Bonnes pratiques de performance - Paramètres PHP](../../../performance/software.md#php-settings)
-* [Configurer les options PHP](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
+* [Configurer les options PHP](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
 * [Bonnes pratiques relatives aux bases de données pour Adobe Commerce sur les infrastructures cloud](database-on-cloud.md)
 * [Problèmes de base de données les plus courants dans Adobe Commerce sur les infrastructures cloud](../maintenance/resolve-database-performance-issues.md)
 * [La fonction « Mettre à jour selon le calendrier » des indexeurs optimise les performances d’Adobe Commerce](../maintenance/indexer-configuration.md)

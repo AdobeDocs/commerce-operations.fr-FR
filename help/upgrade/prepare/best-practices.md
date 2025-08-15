@@ -57,7 +57,7 @@ Commencez à adopter la plateforme d’extensibilité d’Adobe Commerce, si vou
 
 Alors que nous étendons continuellement les fonctionnalités d’Adobe Commerce, il est essentiel que vous développiez sur la dernière version disponible et définissiez une stratégie de mise à niveau dans vos plans de projet. Cela vous aide à rester sécurisé, conforme et à jour sur les dernières améliorations qui vous permettent d&#39;augmenter vos ventes plus rapidement, d&#39;opérer plus efficacement et de devancer vos concurrents, maintenant et à l&#39;avenir.
 
-Pour vous aider à planifier et à budgéter les mises à niveau, vous devez suivre notre [calendrier des versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule). Planifiez les tâches de mise à niveau dans la liste d’attente de votre équipe à l’avance. Visez à terminer ce travail avec GA.
+Pour vous aider à planifier et à budgéter les mises à niveau, vous devez suivre notre [calendrier des versions](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/schedule). Planifiez les tâches de mise à niveau dans la liste d’attente de votre équipe à l’avance. Visez à terminer ce travail avec GA.
 
 - Utilisez la version préliminaire pour en savoir plus sur chaque nouvelle version. La version préliminaire est le code de disponibilité générale qui est disponible pour les commerçants Adobe Commerce et tous les partenaires deux semaines avant la disponibilité générale. Si vous disposez de plusieurs magasins, utilisez la version préliminaire sur votre magasin de base et vérifiez que vos modules et thèmes personnalisés sont compatibles avec celle-ci.
 
@@ -73,7 +73,7 @@ Les mises à niveau doivent être effectuées régulièrement et dans le cadre d
 
 Évaluez le travail à effectuer pour la mise à niveau :
 
-- Consultez les [notes de mise à jour](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) pour comprendre la portée et l’impact de la nouvelle version.
+- Consultez les [notes de mise à jour](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/overview) pour comprendre la portée et l’impact de la nouvelle version.
 
 - Utilisez le [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) pour identifier les problèmes potentiels qui doivent être corrigés dans votre code personnalisé avant d’essayer d’effectuer une mise à niveau vers une version plus récente.
 

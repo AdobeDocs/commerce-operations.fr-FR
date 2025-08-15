@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-La bibliothèque Adobe Privacy JavaScript [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) est un ensemble d’outils permettant de créer un processus d’accès et de suppression des données privées.
+La bibliothèque Adobe Privacy JavaScript [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=fr) est un ensemble d’outils permettant de créer un processus d’accès et de suppression des données privées.
 
 Les services de suivi des données d’Adobe Commerce peuvent stocker des informations privées applicables aux réglementations de confidentialité telles que le [ Règlement général sur la protection des données (RGPD)](gdpr.md) et le [California Consumer Privacy Act (CCPA)](ccpa.md).
 
@@ -43,7 +43,7 @@ La bibliothèque JS d’Adobe Privacy fournit diverses fonctions de gestion des 
 `retrieveThenRemoveIdentities()`
 : cette fonction est similaire à `removeIdentities()` dans la mesure où elle récupère un tableau d’identités et les supprime du navigateur.
 
-Pour plus d’informations et d’exemples d’utilisation de ces fonctions, consultez la [documentation de la bibliothèque officielle](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
+Pour plus d’informations et d’exemples d’utilisation de ces fonctions, consultez la [documentation de la bibliothèque officielle](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=fr).
 
 ### Initialisation
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 Le constructeur accepte un objet de configuration avec des paramètres lors de l’instanciation.
-Reportez-vous à la [documentation officielle de la bibliothèque](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) pour obtenir la liste de ces paramètres de configuration.
+Reportez-vous à la [documentation officielle de la bibliothèque](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=fr) pour obtenir la liste de ces paramètres de configuration.

@@ -61,4 +61,4 @@ Comme Commerce stocke toutes les versions de hachage de mot de passe utilisées 
 
 ## Mise en œuvre
 
-La classe `\Magento\Framework\Encryption\Encryptor` est responsable de la génération et de la vérification du hachage du mot de passe. La commande [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) met à niveau un hachage de mot de passe client vers le dernier algorithme de hachage.
+La classe `\Magento\Framework\Encryption\Encryptor` est responsable de la génération et de la vérification du hachage du mot de passe. La commande [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) met à niveau un hachage de mot de passe client vers le dernier algorithme de hachage.

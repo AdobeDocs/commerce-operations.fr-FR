@@ -23,7 +23,7 @@ Après la sauvegarde, vous pouvez [restaurer](#rollback) plus tard.
 
 >[!TIP]
 >
->Pour les projets d’infrastructure cloud d’Adobe Commerce, voir [Snapshots et gestion des sauvegardes](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) dans le guide _Cloud_.
+>Pour les projets d’infrastructure cloud d’Adobe Commerce, voir [Snapshots et gestion des sauvegardes](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) dans le guide _Cloud_.
 
 ## Activer les sauvegardes
 

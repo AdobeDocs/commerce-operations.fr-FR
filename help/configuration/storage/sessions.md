@@ -41,7 +41,7 @@ En tant qu’utilisateur disposant de droits d’`root`, ouvrez votre fichier `p
 
 ## Gérer la taille de session
 
-Voir la [Gestion des sessions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) dans le _Guide de l’utilisateur_.
+Voir la [Gestion des sessions](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-session-management) dans le _Guide de l’utilisateur_.
 
 ## Configuration du nettoyage de la mémoire
 

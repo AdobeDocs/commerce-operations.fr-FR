@@ -92,4 +92,4 @@ Correctifs isolés Contiennent un correctif autonome inclus dans le dernier corr
 
 ## Correctif personnalisé
 
-Créé par du personnel non Adobe pour résoudre un problème ou modifier le code Adobe Commerce pour diverses raisons. Les correctifs personnalisés sont fournis via l’outil [Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage).
+Créé par du personnel non Adobe pour résoudre un problème ou modifier le code Adobe Commerce pour diverses raisons. Les correctifs personnalisés sont fournis via l’outil [Quality Patches Tool](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/usage).

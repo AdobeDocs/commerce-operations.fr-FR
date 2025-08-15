@@ -17,10 +17,10 @@ Pour obtenir le droit d’accès aux packages Adobe Commerce, vous devez utilise
 
 >[!TIP]
 >
->Si vous rencontrez des [erreurs](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), il se peut que vous n’ayez pas l’autorisation d’accéder au package ou que le droit d’accès ait expiré en raison d’une facture en suspens sur votre compte.
+>Si vous rencontrez des [erreurs](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=fr), il se peut que vous n’ayez pas l’autorisation d’accéder au package ou que le droit d’accès ait expiré en raison d’une facture en suspens sur votre compte.
 >
 >* Si vous êtes la personne de contact de Principal sur le compte, assurez-vous qu&#39;aucune facture en souffrance n&#39;est répertoriée sur le compte.
->* Si les clés fournies par le contact de Principal ne fonctionnent pas et qu&#39;il n&#39;y a aucune facture en suspens sur le compte, le contact de Principal doit contacter [l&#39;assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour obtenir de l&#39;aide.
+>* Si les clés fournies par le contact de Principal ne fonctionnent pas et qu&#39;il n&#39;y a aucune facture en suspens sur le compte, le contact de Principal doit contacter [l&#39;assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour obtenir de l&#39;aide.
 
 Pour créer des clés d’authentification :
 

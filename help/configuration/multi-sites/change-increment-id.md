@@ -28,7 +28,7 @@ Vous devrez peut-être modifier l’ID d’incrément pour les nouvelles entité
 
 >[!INFO]
 >
->Vous pouvez également résoudre le problème de passerelle de paiement pour PayPal en autorisant plusieurs paiements par ID de facture dans les Préférences de réception des paiements de PayPal. Voir [Demande rejetée de la passerelle PayPal - Émission de facture en double](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) dans la _Base de connaissances_.
+>Vous pouvez également résoudre le problème de passerelle de paiement pour PayPal en autorisant plusieurs paiements par ID de facture dans les Préférences de réception des paiements de PayPal. Voir [Demande rejetée de la passerelle PayPal - Émission de facture en double](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=fr) dans la _Base de connaissances_.
 
 ## Étapes préalables
 

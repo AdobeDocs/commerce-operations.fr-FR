@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Vous pouvez appliquer des correctifs à l’aide de l’une des méthodes suivantes :
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr){target="_blank"}
 - [Ligne de commande](../patches/apply.md#command-line)
 - [Compositeur](../patches/apply.md#composer)
 
@@ -26,7 +26,7 @@ Vous pouvez appliquer des correctifs à l’aide de l’une des méthodes suivan
 
 >[!IMPORTANT]
 >
->Pour appliquer les correctifs de qualité officiels, utilisez le [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} . Effectuez toujours des tests complets avant de déployer un correctif personnalisé.
+>Pour appliquer les correctifs de qualité officiels, utilisez le [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr){target="_blank"} . Effectuez toujours des tests complets avant de déployer un correctif personnalisé.
 
 Pour appliquer un correctif personnalisé à l’aide du compositeur :
 

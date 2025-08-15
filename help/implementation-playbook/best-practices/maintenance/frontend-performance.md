@@ -37,5 +37,5 @@ Pour vérifier les performances frontales de la boutique de votre site web :
 ## Informations supplémentaires
 
 - [Gestion des index pour les utilisateurs administrateurs](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Gestion des index à l’aide de l’interface de ligne de commande](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
+- [Gestion des index à l’aide de l’interface de ligne de commande](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=fr)
 - [Présentation de l’indexation pour les développeurs](https://developer.adobe.com/commerce/php/development/components/indexing/)

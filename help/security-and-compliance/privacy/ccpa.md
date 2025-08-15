@@ -26,7 +26,7 @@ Le CCPA accorde aux consommateurs les nouveaux droits suivants :
 
 ## Conformité au CCPA
 
-L&#39;élaboration et la mise en œuvre d&#39;un plan de conformité au CCPA exigent un effort coordonné. Nous encourageons les commerçants à constituer une équipe transversale et à suivre la feuille de route décrite dans le [Guide de conformité du CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) pour mettre leur entreprise en conformité avec la réglementation. En tant que développeur, vous pouvez être invité à participer en tant que partie prenante en mettant l’accent sur les étapes 2 à 5 du processus. Pour plus d’informations, consultez le [Guide de conformité du CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html).
+L&#39;élaboration et la mise en œuvre d&#39;un plan de conformité au CCPA exigent un effort coordonné. Nous encourageons les commerçants à constituer une équipe transversale et à suivre la feuille de route décrite dans le [Guide de conformité du CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=fr) pour mettre leur entreprise en conformité avec la réglementation. En tant que développeur, vous pouvez être invité à participer en tant que partie prenante en mettant l’accent sur les étapes 2 à 5 du processus. Pour plus d’informations, consultez le [Guide de conformité du CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=fr).
 
 1. Constituer une équipe transversale pour assurer la conformité au CCPA.
 

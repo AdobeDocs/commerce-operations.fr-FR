@@ -59,9 +59,9 @@ Pour déterminer le moteur de recherche actuellement utilisé, exécutez la comm
 
 Pour obtenir des instructions de configuration, consultez le Guide du développeur pour Adobe Commerce sur le cloud :
 
-- [Configurer le service OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+- [Configurer le service OpenSearch](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
 
-- [Configurer le service Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
+- [Configurer le service Elasticsearch](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
 
 ## Éviter les déclencheurs personnalisés
 
@@ -76,14 +76,14 @@ Pour en savoir plus sur les alternatives à l’utilisation de déclencheurs per
 
 ## Mettre à niveau [!DNL ECE-Tools] vers la version 2002.0.21 ou ultérieure {#ece-tools-version}
 
-Pour éviter des problèmes potentiels avec les blocages cron, mettez à niveau ECE-Tools vers la version 2002.0.21 ou supérieure. Pour obtenir des instructions, consultez [Mise à jour de `ece-tools` version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) dans notre documentation destinée aux développeurs.
+Pour éviter des problèmes potentiels avec les blocages cron, mettez à niveau ECE-Tools vers la version 2002.0.21 ou supérieure. Pour obtenir des instructions, consultez [Mise à jour de `ece-tools` version](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) dans notre documentation destinée aux développeurs.
 
 ## Basculer en mode indexeur en toute sécurité
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
 Le changement d’indexeur génère des instructions [!DNL data definition language] (DDL) pour créer des déclencheurs susceptibles de provoquer des verrous de base de données. Vous pouvez éviter ce problème en mettant votre site web en mode de maintenance et en désactivant les tâches cron avant de modifier la configuration.
-Pour obtenir des instructions, consultez [Configuration des indexeurs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) dans le *Guide de configuration d’Adobe Commerce*.
+Pour obtenir des instructions, consultez [Configuration des indexeurs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=fr#configure-indexers-1) dans le *Guide de configuration d’Adobe Commerce*.
 
 ## N’exécutez pas les instructions DDL dans Production
 
@@ -95,7 +95,7 @@ Si vous devez exécuter une instruction DDL, placez le site web en mode de maint
 
 Activez l’archivage des commandes auprès de l’administrateur afin de réduire l’espace requis pour les tables de ventes à mesure que les données de commande augmentent. L’archivage permet de gagner de l’espace disque MySQL et d’améliorer les performances de passage en caisse.
 
-Voir [Activer l’archivage](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) dans la documentation pour les commerçants Adobe Commerce.
+Voir [Activer l’archivage](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html?lang=fr) dans la documentation pour les commerçants Adobe Commerce.
 
 ## Informations supplémentaires
 

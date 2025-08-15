@@ -33,7 +33,7 @@ Comme il existe de nombreux types de correctifs et de nombreuses façons de les 
 
 1. Les **correctifs de sécurité** font partie de la base de code statique d’une version d’Adobe Commerce.
 1. **Correctifs du compositeur** via des modules externes `composer install` et `composer update` tels que [cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches).
-1. Tous les **correctifs requis** inclus dans le package [Correctifs cloud pour Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html).
+1. Tous les **correctifs requis** inclus dans le package [Correctifs cloud pour Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html?lang=fr).
 1. Sélection **correctifs de qualité** inclus dans le [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md).
 1. **Correctifs personnalisés** et les correctifs Adobe Commerce prennent en charge les correctifs du répertoire `/m2-hotfixes` dans l’ordre alphabétique par nom de correctif.
 
@@ -148,7 +148,7 @@ Pour créer le package de composants `centralized-patcher` :
    ```
 
 
-L’attribut `quality-patches` de l’exemple de code précédent contient deux correctifs de la [liste complète des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) à titre d’exemple.  Ces correctifs de qualité sont installés sur chaque projet qui nécessite le package `centralized-patcher` à l’aide de la commande `vendor/bin/magento-patches apply`.
+L’attribut `quality-patches` de l’exemple de code précédent contient deux correctifs de la [liste complète des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) à titre d’exemple.  Ces correctifs de qualité sont installés sur chaque projet qui nécessite le package `centralized-patcher` à l’aide de la commande `vendor/bin/magento-patches apply`.
 
 À des fins de test, vous pouvez créer un exemple de correctif (`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`).
 
@@ -365,7 +365,7 @@ Comme avec Adobe Commerce sur les infrastructures cloud, cet article suppose que
 
 Vous pouvez ainsi gérer de manière centralisée tous vos correctifs pour toutes vos installations et mieux garantir la sécurité et la stabilité de vos magasins Adobe Commerce. Utilisez les méthodes suivantes pour vérifier le statut du correctif :
 
-- [ Projets d’infrastructure cloud ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html#view-available-patches-and-status)
+- [ Projets d’infrastructure cloud ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr#view-available-patches-and-status)
 - [Projets sur site](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## Exemples de code

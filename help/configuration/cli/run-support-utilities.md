@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Les utilitaires d’assistance Adobe Commerce (également appelés collecteurs de données[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) permettent aux utilisateurs de collecter des informations de dépannage sur votre système, que notre équipe d’assistance peut utiliser.
+Les utilitaires d’assistance Adobe Commerce (également appelés collecteurs de données[&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/support#data-collector) permettent aux utilisateurs de collecter des informations de dépannage sur votre système, que notre équipe d’assistance peut utiliser.
 
 Adobe Commerce utilise ces sauvegardes, également appelées _vidages_, pour analyser les problèmes qui nécessitent l’accès à votre code. Voici un scénario type :
 

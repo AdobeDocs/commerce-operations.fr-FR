@@ -25,8 +25,8 @@ Le guide _Configuration_ fournit des ressources de référence et des conseils l
 
 ## Configuration d’administration de Commerce
 
-Le guide d’utilisation de [Commerce contient les rubriques correspondantes](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview) qui peuvent vous aider à comprendre la description des champs de chaque paramètre de configuration dans l’administration Commerce.
+Le guide d’utilisation de [Commerce contient les rubriques correspondantes](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/guide-overview) qui peuvent vous aider à comprendre la description des champs de chaque paramètre de configuration dans l’administration Commerce.
 
 ## Configuration du cloud
 
-[!DNL Commerce on cloud infrastructure] utilise un [ensemble de fichiers de configuration](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) pour mettre à jour les fonctionnalités et services de l’application Commerce dans les environnements hébergés. En raison de la nature unique des environnements hébergés dans le cloud d’Adobe, vous devez toujours consulter le [ guide sur le cloud ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) pour connaître les autres exigences de configuration.
+[!DNL Commerce on cloud infrastructure] utilise un [ensemble de fichiers de configuration](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html?lang=fr) pour mettre à jour les fonctionnalités et services de l’application Commerce dans les environnements hébergés. En raison de la nature unique des environnements hébergés dans le cloud d’Adobe, vous devez toujours consulter le [ guide sur le cloud ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html?lang=fr) pour connaître les autres exigences de configuration.

@@ -31,4 +31,4 @@ Les sites dont les blocs de contenu privés contiennent les variables `_isScopeP
 ## Informations supplémentaires
 
 - [Contenu privé](../../../performance/configuration.md#client-side-optimization-settings)
-- [Les requêtes AJAX à débit élevé entraînent de faibles performances](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)
+- [Les requêtes AJAX à débit élevé entraînent de faibles performances](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=fr)

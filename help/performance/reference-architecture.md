@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Cette rubrique décrit une configuration générique recommandée pour les instances Adobe Commerce utilisant des serveurs simples hébergés physiquement dans un centre de données (non virtualisé) dans lequel les ressources ne sont pas partagées avec d’autres utilisateurs. Votre fournisseur d’hébergement, en particulier s’il est spécialisé dans l’hébergement haute performance de Commerce, peut recommander une configuration différente qui est également ou plus efficace pour vos besoins.
 
-Pour Adobe Commerce sur les environnements d’infrastructure cloud, voir [Architecture de démarrage](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
+Pour Adobe Commerce sur les environnements d’infrastructure cloud, voir [Architecture de démarrage](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
 
 ## Diagramme d’architecture de référence [!DNL Commerce]
 

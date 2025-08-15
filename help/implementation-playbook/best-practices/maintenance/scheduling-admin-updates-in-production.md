@@ -31,7 +31,7 @@ Les actions critiques entraînent l’invalidation du cache et les opérations d
 
 ## Informations supplémentaires
 
-- [Bonnes pratiques de mise en cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
+- [Bonnes pratiques de mise en cache](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
 - [Contenu privé : invalidation du contenu privé](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [Recommandations matérielles : caches](../../../performance/hardware.md#caches)
 - [Configuration avancée : configurer Redis](../../../performance/advanced-setup.md#set-up-redis)
