@@ -1,7 +1,7 @@
 ---
-source-git-commit: f05d9cbab176997260affa270d0ea6e8fc8420b5
+source-git-commit: 308ce0ac15ca3fecddf81a8e6bb3b30d359c6b2c
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1330'
 ht-degree: 49%
 
 ---
@@ -2310,7 +2310,7 @@ ht-degree: 49%
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
       <td>
-          Redis 6
+          ElastiCache version 7.1 pour Redis OSS (amélioré). Valkey 8 est disponible.
       </td>
       <td>
           Redis 6
@@ -2406,7 +2406,7 @@ ht-degree: 49%
     <tr>
       <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
       <td>
-          ElastiCache version 7.1 pour Redis OSS (amélioré). Valkey 8 est disponible.
+          Version 2.19 ou ultérieure disponible
       </td>
       <td>
           1,2
