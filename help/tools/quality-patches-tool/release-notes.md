@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 00153baf1c4a52d17b750db35a678b1950e00ed1
+source-git-commit: 4adac1df0382cd0ae0833599011aeb664a91ceb6
 workflow-type: tm+mt
-source-wordcount: '27482'
+source-wordcount: '28046'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,33 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 >[!INFO]
 >
->Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=fr#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
+>Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
 
 >[!INFO]
 >
 >Pour plus d’informations sur les [!DNL quality patches] créées par la communauté pour Magento Open Source, consultez les [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.69 {#v1-1-69}
+
+* **AC-15223** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction d’un problème dans le storefront 2.4.8 en raison duquel, après le changement de magasin, la page est diffusée à partir du cache et ne reflète pas le magasin sélectionné.
+* **ACP2E-3731** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Correction du problème en raison duquel les exportations de produits présentant une visibilité **[!UICONTROL Catalog, Search]** incluent incorrectement des enregistrements d’autres vues de magasin dans des environnements multi-magasin.
+* **ACP2E-3767** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Correction du problème en raison duquel la dernière option de bundle d’un produit groupé ne peut pas être supprimée.
+* **ACP2E-3964** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Correction d’un problème en raison duquel les produits enfants de produits configurables ne pouvaient pas être répertoriés via l’API REST lorsqu’une vidéo était définie dans la galerie.
+* **ACP2E-3977** (pour Adobe Commerce >=2.4.4 &lt;2.4.9) - Correction du problème en raison duquel le champ **[!UICONTROL Cap Reward Points Balance At]** ne peut pas être vide lorsqu’[!UICONTROL Rewards Points Balance Redemption Threshold] est défini, ce qui entraîne une erreur de validation.
+* **ACP2E-4050** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.8) - Correction d’un problème en raison duquel les règles de prix de panier ne s’appliquent pas correctement pour les produits multi-expéditions lorsque le produit groupé est utilisé et que des conditions de sous-sélection sont utilisées avec l’option d’expédition gratuite activée.
+* **ACSD-56226** (pour Adobe Commerce >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel les requêtes de lecture au niveau du nœud esclave renvoient des données obsolètes lorsque l’indicateur `synchronous_replication` est activé.
+* **ACSD-57477** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel le traitement des règles de vente ralentit les performances des requêtes liées au panier.
+* **ACSD-58108** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.8) - Correction du problème en raison duquel le nom de la table de jointure manquant dans la table de récupération d’origine provoquait des erreurs avec l’extension de module personnalisé SQL dans la grille de commande.
+* **ACSD-65983** (pour Adobe Commerce >=2.4.6-p10 &lt;2.4.9) - Corrige le problème en raison duquel la reconfiguration d’un devis de produit groupé dans le serveur principal de l’administrateur renvoie une erreur.
+* **ACSD-66149** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel le gestionnaire d’IPN renvoie une erreur *500* pour les types d’IPN non pris en charge ou inconnus.
+* **ACSD-66153** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Correction du problème où une page renvoie une erreur *500* en raison d’une structure de disposition incorrecte mise en cache.
+* **ACSD-66302** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction d’un problème en raison duquel les éléments de liste de souhaits étaient incorrectement filtrés par ID de magasin au lieu d’être filtrés par site web.
+* **ACSD-66311** (pour Adobe Commerce >=2.4.6-p9 &lt;2.4.9) - Correction du problème en raison duquel la grille Entreprises se charge lentement pour les utilisateurs administrateurs disposant d’un accès restreint aux sites web.
+* **ACSD-66404** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige le problème en raison duquel la tâche cron ne parvient pas à effacer les tables du journal des modifications, provoquant ainsi des blocages [!DNL Galera Cluster] lors de la gestion de grandes quantités de données.
+* **ACSD-66952** (pour Adobe Commerce >=2.4.4 &lt;2.4.9) - Correction du problème d’effacement du cache à chaque visite sur le PLP ou le panier, ce qui entraîne une surcharge des performances lorsqu’une règle cible est définie.
+* **ACSD-67264** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème d’incohérence des mises en page des lots et des pages de produits téléchargeables sur les différents appareils.
+* **ACSD-67347** (pour Adobe Commerce et Magento Open Source >=2.4.5-p11 &lt;2.4.6) - Correction du problème d’échec de commande avec l’erreur *Impossible d’acquérir un verrou* lorsque des coupons avec des caractères spéciaux sont utilisés et que le verrouillage de fichier est activé.
+* Correctifs remplacés : **ACP2E-3841**
 
 ## v1.1.68 {#v1-1-68}
 
