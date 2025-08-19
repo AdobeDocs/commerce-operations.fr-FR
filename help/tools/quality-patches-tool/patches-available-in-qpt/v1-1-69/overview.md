@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: a59d05b93e1ada3416562625ce864b7bda94ee8e
+source-git-commit: 0dd91496c3117a424c71382e18b9689fff016ada
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ QPT v1.1.69 comprend les correctifs suivants :
 1. **ACP2E-3731** : les exportations de produits avec une visibilité **[!UICONTROL Catalog, Search]** incluent des enregistrements d’autres vues de magasin.
 1. **ACP2E-3767** : la dernière option de lot réapparaît après l’enregistrement d’un produit du lot.
 1. **ACP2E-3964** : produits enfants configurables avec vidéo non répertoriés via l’API REST.
-1. **ACP2E-3977** : **[!UICONTROL Cap Reward Points Balance At]** ne peut pas être laissé vide.
+1. **ACP2E-3977** : [!UICONTROL Cap Reward Points Balance At] champ ne peut pas être laissé vide.
 1. **ACP2E-4050** : les règles de prix du panier échouent en cas d’expédition multiple avec des produits groupés et une livraison gratuite.
 1. **ACSD-56226** : les requêtes de LECTURE renvoient des données obsolètes avec l’option `synchronous_replication` activée.
 1. **ACSD-57477** : le traitement des règles de vente ralentit les performances des requêtes liées au panier.
 1. **ACSD-58108** : l’absence du nom de la table de jointure entraîne des erreurs SQL dans l’extension du module personnalisé de grille de commande.
 1. **ACSD-65983** : une erreur se produit lors de la reconfiguration du devis de produit groupé dans Admin.
-1. **ACSD-66149** : le gestionnaire IPN renvoie 500 pour les types non pris en charge.
+1. **[ACSD-66149](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66149-ipn-handler-returns-500-for-unsupported-types.md)** : le gestionnaire IPN renvoie 500 pour les types non pris en charge.
 1. **ACSD-66153** : la page renvoie 500 en raison d’une structure de mise en page incorrecte mise en cache.
 1. **ACSD-66302** : éléments de liste de souhaits filtrés par ID de magasin plutôt que par site web.
 1. **ACSD-66311** : la grille des sociétés se charge lentement pour les administrateurs restreints.
