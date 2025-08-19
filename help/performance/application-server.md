@@ -2,9 +2,9 @@
 title: Serveur d’applications GraphQL
 description: Suivez ces instructions pour activer GraphQL Application Server dans votre déploiement Adobe Commerce.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 8427460cd11169ffe7dd2d4ba0cc1fdaea513702
+source-git-commit: ed46f48472a51db17e1c3ade9bfe3ab134098548
 workflow-type: tm+mt
-source-wordcount: '2184'
+source-wordcount: '2212'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Le serveur d’applications Commerce GraphQL permet à Adobe Commerce de conserver l’état des requêtes d’API Commerce GraphQL. GraphQL Application Server, qui repose sur l’extension Swoole, fonctionne comme un processus avec des threads de traitement qui gèrent le traitement des requêtes. En préservant un état d’application amorcé parmi les requêtes d’API GraphQL, le serveur d’applications GraphQL améliore la gestion des requêtes et les performances globales du produit. Les requêtes d’API deviennent beaucoup plus efficaces.
 
-GraphQL Application Server est disponible uniquement pour Adobe Commerce. Il n’est pas disponible pour Magento Open Source. Pour les projets Cloud Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) pour activer le serveur d’applications GraphQL.
+GraphQL Application Server est disponible uniquement pour Adobe Commerce. Il n’est pas disponible pour Magento Open Source. Pour les projets Cloud Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) pour activer le serveur d’applications GraphQL.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ La transition de la logique de gestion des demandes vers une boucle d’événem
 
 ## Avantages
 
-Le serveur d’applications GraphQL permet à Adobe Commerce de conserver l’état entre les requêtes consécutives de l’API Commerce GraphQL. Le partage de l’état de l’application entre les requêtes améliore l’efficacité des requêtes API en réduisant la surcharge de traitement et en optimisant la gestion des requêtes. Par conséquent, le temps de réponse des requêtes GraphQL peut être réduit de 30 %.
+Le serveur d’applications GraphQL permet à Adobe Commerce de conserver l’état entre les requêtes consécutives de l’API Commerce GraphQL. Le partage de l’état de l’application entre les requêtes améliore l’efficacité des requêtes API en réduisant la surcharge de traitement et en optimisant la gestion des requêtes. Par conséquent, vous pouvez réduire le temps de réponse des requêtes GraphQL de jusqu’à 30 %.
 
 ## Configuration requise
 
@@ -38,8 +38,22 @@ L’exécution du serveur d’applications GraphQL requiert les éléments suiva
 
 * Commerce version 2.4.7+
 * PHP 8.2 ou version ultérieure
-* Extension Swoole PHP v5+ installée
 * RAM et CPU adéquates en fonction de la charge prévue
+* Extension Swoole PHP v5+ (voir les exigences spécifiques au projet ci-dessous)
+
+### Projets cloud
+
+Adobe Commerce sur les projets d’infrastructure cloud inclut l’extension Swoole par défaut. Vous pouvez l’[activer](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) dans la propriété `runtime` du fichier `.magento.app.yaml`. Par exemple :
+
+```yaml
+runtime:
+    extensions:
+        - swoole
+```
+
+### Projets sur site
+
+Vous devez manuellement [installer et configurer](#install-and-configure-swoole) l’extension Swoole PHP pour les projets sur site.
 
 ## Activation et déploiement sur une infrastructure cloud
 
@@ -259,7 +273,7 @@ Procédez comme suit avant de déployer GraphQL Application Server sur des proje
 
 >[!NOTE]
 >
->Assurez-vous que tous les paramètres personnalisés de votre fichier de `.magento.app.yaml` racine sont migrés de manière appropriée vers le fichier `application-server/.magento/.magento.app.yaml`. Une fois le fichier `application-server/.magento/.magento.app.yaml` ajouté à votre projet, vous devez le gérer en plus du fichier racine `.magento.app.yaml`. Par exemple, si vous devez [configurer le service RabbitMQ](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) ou [gérer les propriétés web](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) vous devez également ajouter la même configuration à `application-server/.magento/.magento.app.yaml`.
+>Assurez-vous que tous les paramètres personnalisés de votre fichier de `.magento.app.yaml` racine sont migrés de manière appropriée vers le fichier `application-server/.magento/.magento.app.yaml`. Une fois le fichier `application-server/.magento/.magento.app.yaml` ajouté à votre projet, vous devez le gérer en plus du fichier racine `.magento.app.yaml`. Par exemple, si vous devez [configurer le service RabbitMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) ou [gérer les propriétés web](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) vous devez également ajouter la même configuration à `application-server/.magento/.magento.app.yaml`.
 
 ### Vérifier l’activation sur les projets cloud
 
@@ -414,7 +428,7 @@ Voici d’autres moyens de vérifier que GraphQL Application Server est en cours
 
 ### Confirmer que les demandes GraphQL sont en cours de traitement
 
-GraphQL Application Server ajoute l’en-tête de réponse `X-Backend` avec la valeur `graphql_server` à chaque requête qu’il traite. Pour vérifier si un serveur d’applications GraphQL a géré une requête, recherchez cet en-tête de réponse.
+GraphQL Application Server ajoute l’en-tête de réponse `X-Backend` avec la valeur `graphql_server` à chaque requête qu’il traite. Pour vérifier si le serveur d’applications GraphQL a géré une requête, recherchez cet en-tête de réponse.
 
 ### Confirmation de la compatibilité des extensions et des personnalisations
 
@@ -473,7 +487,7 @@ Ce test est conçu pour détecter les changements d’état dans les objets de s
 
 #### Échecs de GraphQlStateTest et mesures correctives potentielles
 
-* **Impossible d’ajouter, d’ignorer ou de filtrer une liste**. Si vous constatez une erreur lors de l’ajout, de l’omission ou du filtrage d’une liste, déterminez si vous pouvez refactoriser la classe d’une manière rétrocompatible pour utiliser les usines des classes de service qui ont un état mutable.
+* **Impossible d’ajouter, d’ignorer ou de filtrer une liste**. Si vous obtenez cette erreur, essayez de refactoriser votre classe pour utiliser des usines pour les classes de service avec un état mutable.
 
 * **La classe présente un état mutable**. Si la classe elle-même présente un état mutable, essayez de réécrire votre code pour contourner cet état. Si l’état mutable est requis pour des raisons de performances, implémentez `ResetAfterRequestInterface` et utilisez `_resetState()` pour réinitialiser l’objet à son état construit initial.
 
@@ -495,7 +509,7 @@ Le `ResetAfterRequestTest` recherche toutes les classes qui implémentent `Reset
 
 ### Tests fonctionnels
 
-lors du déploiement de GraphQL Application Server, les développeurs d’extensions doivent exécuter des tests fonctionnels WebAPI et des tests fonctionnels automatisés ou manuels personnalisés pour GraphQL. Ces tests fonctionnels aident les développeurs et développeuses à identifier les erreurs potentielles ou les problèmes de compatibilité.
+Lors du déploiement de GraphQL Application Server, les développeurs d’extensions doivent exécuter des tests fonctionnels WebAPI et tout test fonctionnel automatisé ou manuel personnalisé pour GraphQL. Ces tests fonctionnels aident les développeurs et développeuses à identifier les erreurs potentielles ou les problèmes de compatibilité.
 
 #### Mode Moniteur d&#39;état
 
