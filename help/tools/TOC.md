@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: d6c342d3ae49f8c455fe72c3a27165e4077f4bf3
+source-git-commit: 0bb347e76b380b04732d4d767b00018d37874b58
 workflow-type: tm+mt
-source-wordcount: '8123'
+source-wordcount: '8158'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Alertes gérées pour Adobe Commerce : alerte d’avertissement de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Outil de correctifs de qualité {#quality-patches-tool}
    - [[!DNL Quality Patches Tool] : outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool] : rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr){target="_blank"}
+   - [[!DNL Quality Patches Tool] : rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Utilisation](quality-patches-tool/usage.md)
    - [Notes de mise à jour](quality-patches-tool/release-notes.md)
    - Correctifs disponibles dans l’outil de correctifs de la qualité {#patches-available-in-qpt}
@@ -842,6 +842,9 @@ ht-degree: 0%
          - [ACSD-66233 : les administrateurs ne peuvent pas ajouter de produits en raison d’une fenêtre contextuelle de liste de produits qui ne répond pas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66233-admins-unable-add-products-due-to-unresponsive-product-list-popup.md)
       - v1.1.69 {#v1-1-69}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.69](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/overview.md)
+         - [ACSD-56226 : les requêtes de LECTURE renvoient des données obsolètes avec la fonction synchronous_replication activée](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-56226-read-queries-return-outdated-data-with-synchronous-replication-enabled.md)
+         - [ACSD-66149 : le gestionnaire IPN renvoie 500 pour les types non pris en charge](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66149-ipn-handler-returns-500-for-unsupported-types.md)
+         - [ACSD-66952 : le cache s’efface à chaque visite de PLP ou de panier lorsqu’une règle cible est définie](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66952-cache-clears-on-each-plp-or-cart-visit-when-a-target-rule-is-set.md)
          - [ACSD-67264 : offres groupées et mises en page de produits téléchargeables incohérentes entre les appareils](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-67264-bundle-and-downloadable-product-page-layouts-inconsistent-across-devices.md)
          - [ACSD-66404 : la tâche Cron ne parvient pas à effacer les tables de journal des modifications en raison des limites de taille des transactions du cluster Galera](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66404-cron-job-fails-to-clear-changelog-tables-due-to-galera-cluster-transaction-size-limits.md)
          - [AC-15223 : la page Storefront affiche le contenu mis en cache après le changement de magasin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/ac-15223-storefront-page-shows-cached-content-after-switching-stores.md)
@@ -892,6 +895,6 @@ ht-degree: 0%
       - [Données nécessitant une migration manuelle](data-migration-tool/migrate-data/manual.md)
       - [Étapes suivant la migration des données](data-migration-tool/migrate-data/post-migration.md)
    - Ressources {#resources}
-      - [Dépannage](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=fr)
+      - [Dépannage](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Journal des modifications](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=fr)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
