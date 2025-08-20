@@ -4,7 +4,7 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: c701c9ff7385821b771af2d19920ead192e4410a
+source-git-commit: 29f09e0ee426f9b58a98fdd512d7c1ac3fca2425
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -27,7 +27,7 @@ QPT v1.1.69 comprend les correctifs suivants :
 1. **ACSD-58108** : l’absence du nom de la table de jointure entraîne des erreurs SQL dans l’extension du module personnalisé de grille de commande.
 1. **ACSD-65983** : une erreur se produit lors de la reconfiguration du devis de produit groupé dans Admin.
 1. **ACSD-66149** : le gestionnaire IPN renvoie 500 pour les types non pris en charge.
-1. **ACSD-66153** : la page renvoie 500 en raison d’une structure de mise en page incorrecte mise en cache.
+1. **ACSD-66153** : la page renvoie une erreur 500 en raison d’une structure de mise en page incorrecte mise en cache.
 1. **ACSD-66302** : éléments de liste de souhaits filtrés par ID de magasin plutôt que par site web.
 1. **ACSD-66311** : la grille des sociétés se charge lentement pour les administrateurs restreints.
 1. **ACSD-66404** : la tâche Cron ne parvient pas à effacer les tables de journal des modifications en raison des limites de taille de transaction [!DNL Galera Cluster].
