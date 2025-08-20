@@ -3,13 +3,14 @@ title: 'ACSD-66952 : le cache s’efface à chaque visite de PLP ou de panier lo
 description: Appliquez le correctif ACSD-66952 pour résoudre le problème d’Adobe Commerce où le cache était effacé à chaque visite du PLP ou du panier, ce qui entraînait une surcharge de performances inutile, lorsqu’une règle cible était définie.
 feature: Shopping Cart, Cache, Price Rules
 role: Admin, Developer
-source-git-commit: 1aec8de86696ffc9ecb13100e6ffa1f912b281fb
+type: Troubleshooting
+exl-id: abff5761-bcf1-4cfc-b5d9-6a7e1ca907e7
+source-git-commit: cf0f5992c7b2a51b270a4a1a81fd50305a92759c
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66952 : le cache s’efface à chaque visite de PLP ou de panier lorsqu’une règle cible est définie
 

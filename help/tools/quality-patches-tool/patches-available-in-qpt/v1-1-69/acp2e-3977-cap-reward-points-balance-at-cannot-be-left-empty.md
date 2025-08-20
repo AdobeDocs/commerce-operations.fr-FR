@@ -1,15 +1,16 @@
 ---
-title: 'ACP2E-3977 : le champ **[!UICONTROL Cap Reward Points Balance At]** ne peut pas être laissé vide'
+title: 'ACP2E-3977 : [!UICONTROL Cap Reward Points Balance At] champ ne peut pas être laissé vide'
 description: Appliquez le correctif ACP2E-3977 pour résoudre le problème d’Adobe Commerce en raison duquel le champ **[!UICONTROL Cap Reward Points Balance At]** ne pouvait pas être laissé vide lorsque le champ **[!UICONTROL Rewards Points Balance Redemption Threshold]** était défini, ce qui provoquait une erreur de validation.
 feature: Configuration, Rewards
 role: Admin, Developer
-source-git-commit: 4fd9b66967639f3afff322bfd82e68cfb79b2138
+type: Troubleshooting
+exl-id: 5275911f-4f8c-4b37-af11-24ceb69406c9
+source-git-commit: 83ce590c5078d70f0414276e2f03a71bdcdad321
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-3977 : **[!UICONTROL Cap Reward Points Balance At]** champ ne peut pas être laissé vide
 
@@ -27,7 +28,7 @@ Le correctif ACP2E-3977 corrige le problème où **[!UICONTROL Cap Reward Points
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -53,7 +54,7 @@ Une valeur vide pour **[!UICONTROL Cap Reward Points Balance At]** est autorisé
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
