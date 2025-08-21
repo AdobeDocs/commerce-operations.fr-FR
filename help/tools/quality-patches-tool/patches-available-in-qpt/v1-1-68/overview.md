@@ -4,7 +4,7 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: fa5164f3118ec51e4562f7ae5073781307452bc4
+source-git-commit: 53768b017845d0ea8033ebd7651421877ed36a55
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 QPT v1.1.68 comprend les correctifs suivants :
 1. **ACSD-58131** : la présence d’une image de 0 octet dans la galerie de médias a empêché l’affichage ou la sélection de toutes les images du répertoire.
 1. **ACSD-62146** : l’adresse de facturation sélectionnée disparaît de la page de paiement de la commande lorsque la recherche d’adresses est activée et que la valeur « Limite du nombre d’adresses client » est définie sur 1.
-1. **ACSD-62415** : le serveur principal d’Adobe Commerce charge les catégories très lentement.
+1. **[ACSD-62415](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62415-adobe-commerce-backend-loads-categories-very-slowly.md)** : le serveur principal d’Adobe Commerce charge les catégories très lentement.
 1. **ACSD-65938** : des e-mails de carte cadeau ont été envoyés même lorsque la création de la facture a échoué.
 1. **ACSD-66072** : les produits associés ne sont pas renvoyés via GraphQL sur la page Détails du produit en raison d’une erreur de serveur interne lors de la configuration de [!UICONTROL Related Products Rule].
 1. **ACSD-66082** : impossible de mettre à jour l’image d’échantillon d’un produit via l’importation du produit.
