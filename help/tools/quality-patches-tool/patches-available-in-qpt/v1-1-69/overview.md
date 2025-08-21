@@ -4,7 +4,7 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 29f09e0ee426f9b58a98fdd512d7c1ac3fca2425
+source-git-commit: 564004a106d69f4b7ff6f85563209433799d36f1
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 
 QPT v1.1.69 comprend les correctifs suivants :
 1. **AC-15223** : la page Storefront affiche le contenu mis en cache après le changement de magasin.
-1. **ACP2E-3731** : les exportations de produits avec une visibilité **[!UICONTROL Catalog, Search]** incluent des enregistrements d’autres vues de magasin.
+1. **ACP2E-3731** : les exportations de produits avec une visibilité *[!UICONTROL Catalog, Search]* incluent des enregistrements d’autres vues de magasin.
 1. **ACP2E-3767** : la dernière option de lot réapparaît après l’enregistrement d’un produit du lot.
 1. **ACP2E-3964** : produits enfants configurables avec vidéo non répertoriés via l’API REST.
 1. **ACP2E-3977** : [!UICONTROL Cap Reward Points Balance At] champ ne peut pas être laissé vide.
