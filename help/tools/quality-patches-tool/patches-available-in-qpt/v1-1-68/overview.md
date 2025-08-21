@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: ba4154c109c64d3e45e6de8dc8ffd9bb9741e5b2
+source-git-commit: fa5164f3118ec51e4562f7ae5073781307452bc4
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,8 @@ QPT v1.1.68 comprend les correctifs suivants :
 1. **ACSD-66865** : l’enregistrement d’un **[!UICONTROL Catalog Price Rule]** invalide les indexeurs et fournit une alternative à la réindexation des produits affectés uniquement.
 1. **ACSD-66889** : erreur lors de la réindexation de l’inventaire dans l’interface de ligne de commande.
 1. **ACSD-66963** : la mutation EstimateTotals renvoie la valeur null pour les remises lorsqu’un code de remise est appliqué à un panier avec des produits virtuels.
-1. **ACSD-66965** : L&#39;option Imprimer de la page Liste des demandes d&#39;approvisionnement provoque une erreur.
+1. **ACSD-66965** : **[!UICONTROL Print]** option sur **[!UICONTROL Requisition List]** page provoque une erreur.
 1. **ACSD-67039** : les enregistrements du client n’ont pas été enregistrés en raison de la validation de l’attribut système `rp_token`.
+
 
 Utilisez le menu à gauche pour accéder à une page de correctif spécifique.
