@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 937acc659427b788b8af778f5ea826eacccdc70e
+source-git-commit: ba4154c109c64d3e45e6de8dc8ffd9bb9741e5b2
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ QPT v1.1.68 comprend les correctifs suivants :
 1. **ACSD-66179** : L&#39;annulation d&#39;une facture avec le type de paiement « Not Capture » génère une page d&#39;erreur 404.
 1. **ACSD-66233** : les administrateurs ne peuvent pas ajouter de produits en raison d’une fenêtre contextuelle de liste de produits qui ne répond pas.
 1. **ACSD-66506** : une erreur de serveur principal s’est produite lors de la suppression de produits précédemment affectés d’un catalogue partagé et de l’affectation de nouveaux produits.
-1. **ACSD-66865** : l’enregistrement des règles de prix de catalogue invalide les indexeurs et fournit une alternative à la réindexation des produits affectés uniquement.
+1. **ACSD-66865** : l’enregistrement d’un **[!UICONTROL Catalog Price Rule]** invalide les indexeurs et fournit une alternative à la réindexation des produits affectés uniquement.
 1. **ACSD-66889** : erreur lors de la réindexation de l’inventaire dans l’interface de ligne de commande.
 1. **ACSD-66963** : la mutation EstimateTotals renvoie la valeur null pour les remises lorsqu’un code de remise est appliqué à un panier avec des produits virtuels.
 1. **ACSD-66965** : L&#39;option Imprimer de la page Liste des demandes d&#39;approvisionnement provoque une erreur.
