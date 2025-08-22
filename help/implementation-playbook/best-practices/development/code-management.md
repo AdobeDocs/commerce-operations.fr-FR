@@ -4,7 +4,7 @@ description: Découvrez les bonnes pratiques de gestion du code pour la phase de
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -115,3 +115,5 @@ Cette rubrique est conçue pour vous aider à décider d’utiliser Git ou le co
 1. **Commencez par Git, puis passez au compositeur**
 
    Choisissez une approche de gestion du code au début de votre projet. Le passage de Git au compositeur ou inversement, avec un développement en cours, est fastidieux et peut entraîner une perte de code et/ou une perte d’historique de révision.
+
+<!-- Last updated from includes: 2023-08-23 15:56:59 -->

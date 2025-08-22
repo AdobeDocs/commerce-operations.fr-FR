@@ -2,7 +2,7 @@
 title: Exemple avec des variables d’environnement
 description: Consultez un exemple de définition de valeurs partagées, spécifiques au système et sensibles dans votre système de développement à l’aide de variables d’environnement.
 exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 0%
@@ -197,3 +197,5 @@ Cette section explique comment vérifier les paramètres de configuration dans l
    La valeur du champ **Domaine d’e-mail par défaut** s’affiche comme suit. Il s’agit d’un paramètre spécifique au système.
 
    ![Vérification des paramètres dans le système d’exploitation](../../assets/configuration/split-default-domain.png)
+
+<!-- Last updated from includes: 2024-07-18 15:50:54 -->

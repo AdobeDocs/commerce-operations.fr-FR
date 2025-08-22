@@ -2,7 +2,7 @@
 title: Exemple d’utilisation de commandes d’interface de ligne de commande
 description: Consultez un exemple de définition de valeurs partagées, spécifiques au système et sensibles dans votre système de développement à l’aide de la ligne de commande.
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 0%
@@ -181,3 +181,5 @@ Pour vérifier les paramètres de configuration :
    La valeur du champ **Domaine d’e-mail par défaut** s’affiche comme suit. Il s’agit d’un paramètre spécifique au système.
 
    ![Vérification des paramètres dans le système d’exploitation](../../assets/configuration/split-default-domain.png)
+
+<!-- Last updated from includes: 2024-07-18 15:50:54 -->

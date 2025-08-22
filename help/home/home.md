@@ -2,7 +2,7 @@
 title: Page de départ Guides opérationnels
 description: Parcourez un index de l’administration du système Adobe Commerce et de la documentation opérationnelle du produit.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 5a2aae6a2f3b1353457f003460d230db2b57abdd
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 7%
@@ -101,3 +101,5 @@ Utilisez cet ensemble de guides pour en savoir plus sur les concepts, les proces
 </table>
 
 {{$include /help/_includes/templated/whats-new.md}}
+
+<!-- Last updated from includes: 2025-08-22 13:46:00 -->

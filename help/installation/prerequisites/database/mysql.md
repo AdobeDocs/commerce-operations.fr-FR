@@ -2,7 +2,7 @@
 title: Instructions MySQL
 description: Pour installer et configurer MySQL et MariaDB pour les installations sur site d’Adobe Commerce, procédez comme suit.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 0%
@@ -200,3 +200,5 @@ Pour configurer une instance de base de données MySQL, procédez comme suit :
 >Pour Adobe Commerce sur les projets d’infrastructure cloud, le paramètre `explicit_defaults_for_timestamp` de MySQL (MariaDB) est défini par défaut sur _OFF_.
 
 {{$include /help/_includes/maria-db-config.md}}
+
+<!-- Last updated from includes: 2024-02-12 09:51:27 -->

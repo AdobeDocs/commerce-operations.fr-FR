@@ -2,7 +2,7 @@
 title: Installation d’Adobe Commerce
 description: Pour installer Adobe Commerce sur l’infrastructure que vous possédez, procédez comme suit.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '2093'
 ht-degree: 0%
@@ -306,3 +306,5 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 >[!TIP]
 >
 >Si vous ne disposez que d’un compte utilisateur pour accéder au serveur d’applications, voir [définition d’un masque](../next-steps/set-umask.md). Ce type de configuration est courant pour l’hébergement partagé.
+
+<!-- Last updated from includes: 2024-04-16 09:42:31 -->
