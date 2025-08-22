@@ -4,13 +4,13 @@ description: Appliquez le correctif ACSD-66139 pour résoudre le problème d’A
 feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 16d95ae0d58dfdc88a5fab725a37d353d3ee5c96
+exl-id: 5a1a94ca-f274-4098-8b44-d3f1a0ea65a1
+source-git-commit: 8681dd706e614f86bbee36c182b47491ec707196
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66139 : la commande GraphQL échoue avec l’erreur « UNDEFINED » pour le panier inactif
 
@@ -28,7 +28,7 @@ Le correctif ACSD-66139 corrige le problème où, lors de la commande d’un pan
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers l’icône dernières versions et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers l’icône dernières versions et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -42,10 +42,11 @@ GraphQL renvoie un code d’erreur *UNDEFINED* au lieu d’un code spécifique l
 "Could not find a cart with ID ""%masked_cart_id""","Oh noo, we have an UNDEFINED issue, see!",module,Magento_QuoteGraphQl
 ```
 
-1. Créez une vue de magasin dans le panneau d’administration. Accédez à **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL All Stores]**. Cliquez sur **[!UICONTROL Create Store View]** et, par **[!UICONTROL Code]**, saisissez le code `test`.
+1. Dans le panneau d’administration, accédez à **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL All Stores]** > **[!UICONTROL Create Store View]** pour créer une vue de magasin.
+1. Définissez **[!UICONTROL Code]** sur *test*.
 1. Attribuez `german` langue à la vue de magasin nouvellement créée.
 1. Exécutez `setup:upgrade` et `setup:static-content:deploy -f`.
-1. Exécutez la requête GraphQL suivante avec l’en-tête « Store :test :
+1. Exécutez la requête GraphQL suivante avec les `Store:test` d’en-tête :
 
 ```
 mutation {
@@ -123,7 +124,7 @@ La `error_code` renvoyée est *UNDEFINED* :
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
