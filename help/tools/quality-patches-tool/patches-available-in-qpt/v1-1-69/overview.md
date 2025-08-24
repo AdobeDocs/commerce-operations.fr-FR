@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 564004a106d69f4b7ff6f85563209433799d36f1
+source-git-commit: eb64190e0c3f9c0dd0690b0174c7a24798f96366
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,6 @@ QPT v1.1.69 comprend les correctifs suivants :
 1. **ACSD-66404** : la tâche Cron ne parvient pas à effacer les tables de journal des modifications en raison des limites de taille de transaction [!DNL Galera Cluster].
 1. **ACSD-66952** : le cache s’efface à chaque visite d’un PLP ou d’un panier lorsqu’une règle cible est définie.
 1. **ACSD-67264** : offre groupée et mises en page de produits téléchargeables incohérentes entre les appareils.
-1. **ACSD-67347** : la commande échoue avec une erreur de verrouillage lors de l’utilisation de coupons de caractères spéciaux et du verrouillage de fichiers.
+1. **ACSD-67347** : échec de la commande avec impossible d’acquérir un verrou lors de l’utilisation de codes coupon.
 
 Utilisez le menu à gauche pour accéder à une page de correctif spécifique.
