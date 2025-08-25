@@ -82,29 +82,29 @@ La mutation `estimateTotals` renvoie la valeur *null* pour les remises lorsqu’
 Les informations de remise sont incluses pour les paniers contenant uniquement des produits virtuels.
 
      »
-    {
-    « data »: {
-    « estimateTotals »: {
-    « cart »: {
-    « prices »: {
-    « remises »: [
-    {
-    « amount »: {
+    &lbrace;
+    « data »: &lbrace;
+    « estimateTotals »: &lbrace;
+    « cart »: &lbrace;
+    « prices »: &lbrace;
+    « remises »: &lbrack;
+    &lbrace;
+    « amount »: &lbrace;
     « value »: 100.5,
     « currency »: « USD »
-    },
+    &rbrace;,
     « label »: « Un second code de remise pour le test »,
-    « coupon »: {
+    « coupon »: &lbrace;
     « code »: « z3r0c00l »
-    },
+    &rbrace;,
     « applied_to »: « ITEM »,
     « type »: null
-    }
-    ]
-    }
-    },
+    &rbrace;
+    &rbrack;
+    &rbrace;
+    &rbrace;,
     « extensions »: 
-    }
+    &rbrace;
     «{}
      
      
@@ -114,20 +114,21 @@ Les informations de remise sont incluses pour les paniers contenant uniquement d
 Les informations de remise sont renvoyées comme *nulles* pour les paniers contenant uniquement des produits virtuels.
 
      »
-    {
-    « data »: {
-    « estimateTotals »: {
-    « cart »: {
-    « prices »: {
+    &lbrace;
+    « data »: &lbrace;
+    « estimateTotals »: &lbrace;
+    « cart »: &lbrace;
+    « prices »: &lbrace;
     « remises »: null
-    }
-    }
-    }
-    },
+    &rbrace;
+    &rbrace;
+    &rbrace;
+    &rbrace;,
     « extensions »: {}
-    }
+    &rbrace;
      »
  »
+
 ## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
