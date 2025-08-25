@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: f04931fb8223f404bbdab8371cc1e4952948f1c1
+source-git-commit: 674aa68a0f7ecf30481a6d4f33b119d295c51a6b
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,9 @@ QPT v1.1.68 comprend les correctifs suivants :
 1. **ACSD-66506** : une erreur de serveur principal s’est produite lors de la suppression de produits précédemment affectés d’un catalogue partagé et de l’affectation de nouveaux produits.
 1. **ACSD-66865** : l’enregistrement d’un **[!UICONTROL Catalog Price Rule]** invalide les indexeurs et fournit une alternative à la réindexation des produits affectés uniquement.
 1. **ACSD-66889** : erreur lors de la réindexation de l’inventaire dans l’interface de ligne de commande.
+1. **ACSD-66963** : la mutation `estimateTotals` renvoie la valeur null pour les remises sur les produits virtuels.
+1. **ACSD-66965** : L&#39;option Imprimer de la page Liste des demandes d&#39;approvisionnement provoque une erreur.
+1. **ACSD-67039** : les enregistrements du client n’ont pas été enregistrés en raison de la validation de l’attribut système rp_token.
 1. **ACSD-66963** : la mutation EstimateTotals renvoie la valeur null pour les remises lorsqu’un code de remise est appliqué à un panier avec des produits virtuels.
 1. **ACSD-66965** : **[!UICONTROL Print]** option sur **[!UICONTROL Requisition List]** page provoque une erreur.
 1. **ACSD-67039** : les enregistrements du client n’ont pas été enregistrés en raison de la validation de l’attribut système `rp_token`.
