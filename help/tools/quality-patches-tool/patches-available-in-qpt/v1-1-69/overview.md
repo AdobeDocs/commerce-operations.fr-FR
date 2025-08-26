@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: eb64190e0c3f9c0dd0690b0174c7a24798f96366
+source-git-commit: 7a2d626092b19852287c48dc3da1fcc766237212
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,8 @@ QPT v1.1.69 comprend les correctifs suivants :
 1. **ACP2E-3731** : les exportations de produits avec une visibilité *[!UICONTROL Catalog, Search]* incluent des enregistrements d’autres vues de magasin.
 1. **ACP2E-3767** : la dernière option de lot réapparaît après l’enregistrement d’un produit du lot.
 1. **ACP2E-3964** : produits enfants configurables avec vidéo non répertoriés via l’API REST.
+1. **ACP2E-3977** : **[!UICONTROL Cap Reward Points Balance At]** ne peut pas être laissé vide.
+1. **ACP2E-4050** : **[!UICONTROL Free Shipping]** non appliqué avec la récupération multi-adresses.
 1. **ACP2E-3977** : [!UICONTROL Cap Reward Points Balance At] champ ne peut pas être laissé vide.
 1. **ACP2E-4050** : les règles de prix du panier échouent en cas d’expédition multiple avec des produits groupés et une livraison gratuite.
 1. **ACSD-56226** : les requêtes de LECTURE renvoient des données obsolètes avec l’option `synchronous_replication` activée.

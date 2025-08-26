@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: f617a59fbbe4736eb302f3940d784219e8644eec
+source-git-commit: 7a2d626092b19852287c48dc3da1fcc766237212
 workflow-type: tm+mt
-source-wordcount: '8354'
+source-wordcount: '8362'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Alertes gérées pour Adobe Commerce : alerte d’avertissement de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Outil de correctifs de qualité {#quality-patches-tool}
    - [[!DNL Quality Patches Tool] : outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool] : rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr){target="_blank"}
+   - [[!DNL Quality Patches Tool] : rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Utilisation](quality-patches-tool/usage.md)
    - [Notes de mise à jour](quality-patches-tool/release-notes.md)
    - Correctifs disponibles dans l’outil de correctifs de la qualité {#patches-available-in-qpt}
@@ -852,6 +852,7 @@ ht-degree: 0%
          - [ACSD-66233 : les administrateurs ne peuvent pas ajouter de produits en raison d’une fenêtre contextuelle de liste de produits qui ne répond pas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66233-admins-unable-add-products-due-to-unresponsive-product-list-popup.md)
       - v1.1.69 {#v1-1-69}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.69](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/overview.md)
+         - [ACP2E-4050 : [!UICONTROL Free Shipping] non appliqué avec la commande avec expédition multiple](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acp2e-4050-cart-price-rules-fail-for-multi-shipping-with-bundle-products-and-free-shipping.md)
          - [ACSD-66311 : la grille des sociétés se charge lentement pour les administrateurs restreints](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66311-companies-grid-loads-slowly-for-restricted-admins.md)
          - [ACSD-67347 : la commande échoue avec l’erreur « Impossible d’acquérir un verrou » lors de l’utilisation de codes de coupon](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-67347-order-fails-with-lock-error-when-using-special-character-coupons-and-file-locking.md)
          - [ACP2E-3731 : les exportations de produits avec une visibilité [!UICONTROL Catalog, Search] incluent des enregistrements d’autres vues de magasin.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acp2e-3731-product-exports-with-catalog-search-visibility-include-records-from-other-store-views.md)
@@ -913,6 +914,6 @@ ht-degree: 0%
       - [Données nécessitant une migration manuelle](data-migration-tool/migrate-data/manual.md)
       - [Étapes suivant la migration des données](data-migration-tool/migrate-data/post-migration.md)
    - Ressources {#resources}
-      - [Dépannage](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=fr)
+      - [Dépannage](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Journal des modifications](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=fr)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
