@@ -4,13 +4,13 @@ description: Appliquez le correctif ACSD-66311 pour résoudre le problème d’A
 role: Admin, Developer
 feature: B2B
 type: Troubleshooting
-source-git-commit: 841e660136354800dd9758d8c10e86c966be3a1e
+exl-id: e470078b-dd10-4b0b-a489-bc88f025fded
+source-git-commit: 3337907b1893260d6cb18b1c4fbf45dfa1f3d6d5
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '405'
 ht-degree: 2%
 
 ---
-
 
 # ACSD-66311 : la grille Entreprises se charge lentement pour les utilisateurs administrateurs restreints
 
@@ -28,7 +28,7 @@ Le correctif ACSD-66311 corrige le problème en raison duquel la grille de soci�
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -54,7 +54,6 @@ La grille des sociétés se charge lentement pour les utilisateurs administrateu
       | 2 | 1 500 |
       | 3 | 500 |
 
-
    1. Exécutez la requête suivante pour vérifier la distribution :
 
       ```
@@ -76,14 +75,13 @@ La grille des sociétés se charge lentement pour les utilisateurs administrateu
       ```
             SELECT customer_count, COUNT(*) AS number_of_companies
             FROM (
-      
-            SELECT company_id, COUNT(customer_id) AS customer_count
-            FROM company_advanced_customer_entity
-            GROUP BY company_id
-) COMME sous-requête
-GROUP BY customer_count
-ORDER BY customer_count ;
-«
+              SELECT company_id, COUNT(customer_id) AS customer_count
+              FROM company_advanced_customer_entity
+              GROUP BY company_id
+            ) AS subquery
+            GROUP BY customer_count
+            ORDER BY customer_count; 
+      ```
 
 1. Réindexez toutes les données pour générer des entrées dans le **customer_grid_flat**.
 1. Connectez-vous en tant qu **adminscope**.
@@ -102,7 +100,7 @@ Le chargement de la page prend plus de 14 minutes.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
