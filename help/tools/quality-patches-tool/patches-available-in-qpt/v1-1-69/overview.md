@@ -4,7 +4,7 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 7a2d626092b19852287c48dc3da1fcc766237212
+source-git-commit: e72c99bbb5e82cd2dc77e33b7d17dfe8955e945a
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -26,7 +26,7 @@ QPT v1.1.69 comprend les correctifs suivants :
 1. **ACP2E-4050** : les règles de prix du panier échouent en cas d’expédition multiple avec des produits groupés et une livraison gratuite.
 1. **ACSD-56226** : les requêtes de LECTURE renvoient des données obsolètes avec l’option `synchronous_replication` activée.
 1. **ACSD-57477** : le traitement des règles de vente ralentit les performances des requêtes liées au panier.
-1. **ACSD-58108** : l’absence du nom de la table de jointure entraîne des erreurs SQL dans l’extension du module personnalisé de grille de commande.
+1. **[ACSD-58108](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-58108-missing-join-table-name-causes-sql-errors-in-order-grid-custom-module-extension.md)** : l’absence du nom de la table de jointure entraîne des erreurs SQL dans l’extension du module personnalisé de grille de commande.
 1. **ACSD-65983** : une erreur se produit lors de la reconfiguration du devis de produit groupé dans Admin.
 1. **ACSD-66149** : le gestionnaire IPN renvoie 500 pour les types non pris en charge.
 1. **ACSD-66153** : la page renvoie une erreur 500 en raison d’une structure de mise en page incorrecte mise en cache.
