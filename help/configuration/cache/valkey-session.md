@@ -3,9 +3,9 @@ title: Utiliser Valkey pour le stockage de session
 description: Découvrez comment configurer Valkey pour le stockage de session.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: bc0274074c0254f649af2f9e2b288017ac82ce9b
+source-git-commit: dea0ad57a8c4525be9bc442708bdd2495f28d72d
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '795'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,15 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parame
 - `--session-save=valkey` active le stockage de session Valkey. Si cette fonctionnalité est déjà activée, omettez ce paramètre.
 
 - `--session-save-valkey-<parameter_name>=<parameter_value>` une liste de paires paramètre/valeur qui configurent le stockage de session :
+
+
+>[!NOTE]
+>
+>À partir de **Adobe Commerce 2.4.9-alpha2**, **Valkey** a officiellement remplacé Redis dans l’outil d’interface de ligne de commande en raison de changements dans les licences. Valkey est une fourchette de Redis et conserve des fonctionnalités quasi identiques. Pour les **versions 2.4.8 et antérieures**, les commandes d’interface de ligne de commande utilisées pour configurer Valkey restent identiques à celles de Redis, assurant ainsi une rétrocompatibilité transparente et simplifiant la migration ou la prise en charge de deux environnements. L’exemple suivant illustre la commande spécifique à Valkey.
+
+```bash
+bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
+```
 
 | Paramètre de ligne de commande | Nom du paramètre | Signification | Valeur par défaut |
 |----------------------------------------------|--- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--- |
@@ -60,6 +69,14 @@ L’exemple suivant définit Valkey comme magasin de données de session, défin
 
 ```bash
 bin/magento setup:config:set --session-save=valkey --session-save-valkey-host=127.0.0.1 --session-save-valkey-log-level=4 --session-save-valkey-db=2
+```
+
+>[!NOTE]
+>
+>Depuis **Adobe Commerce 2.4.9**, **Valkey** a officiellement remplacé Redis dans l’outil d’interface de ligne de commande en raison de changements de licence. Valkey est une fourchette de Redis et conserve des fonctionnalités quasi identiques. Pour les **versions 2.4.8 et antérieures**, les commandes d’interface de ligne de commande utilisées pour configurer Valkey restent identiques à celles de Redis, assurant ainsi une rétrocompatibilité transparente et simplifiant la migration ou la prise en charge de deux environnements. L’exemple suivant illustre la commande spécifique à Valkey.
+
+```bash
+bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
 ```
 
 ### Résultat

@@ -3,9 +3,9 @@ title: Utiliser Valkey pour le cache par défaut
 description: Découvrez comment configurer Valkey en tant que cache par défaut pour Adobe Commerce.
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-source-git-commit: bc0274074c0254f649af2f9e2b288017ac82ce9b
+source-git-commit: dea0ad57a8c4525be9bc442708bdd2495f28d72d
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,14 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 
 - `--cache-backend-valkey-<parameter>=<value>` une liste de paires clé-valeur qui configurent la mise en cache par défaut :
 
+>[!NOTE]
+>
+>À partir de **Adobe Commerce 2.4.9-alpha2**, **Valkey** a officiellement remplacé Redis dans l’outil d’interface de ligne de commande en raison de changements dans les licences. Valkey est une fourchette de Redis et conserve des fonctionnalités quasi identiques. Pour les **versions 2.4.8 et antérieures**, les commandes d’interface de ligne de commande utilisées pour configurer Valkey restent identiques à celles de Redis, assurant ainsi une rétrocompatibilité transparente et simplifiant la migration ou la prise en charge de deux environnements. L’exemple suivant illustre la commande spécifique à Valkey.
+
+```bash
+bin/magento setup:config:set --cache-backend=redis --cache-backend-valkey-<parameter>=<value>...
+```
+
 | Paramètre de ligne de commande | Valeur | Signification | Valeur par défaut |
 |---------------------------------| --------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
 | `cache-backend-valkey-server` | serveur | Nom d’hôte complet, adresse IP ou chemin d’accès absolu à un socket UNIX. La valeur par défaut `127.0.0.1` indique que Valkey est installé sur le serveur Commerce. | `127.0.0.1` |
@@ -42,6 +50,14 @@ L&#39;exemple suivant active la mise en cache par défaut de Valkey, définit l&
 
 ```bash
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-server=127.0.0.1 --cache-backend-valkey-db=0
+```
+
+>[!NOTE]
+>
+>À partir de **Adobe Commerce 2.4.9-alpha2**, **Valkey** a officiellement remplacé Redis dans l’outil d’interface de ligne de commande en raison de changements dans les licences. Valkey est une fourchette de Redis et conserve des fonctionnalités quasi identiques. Pour les **versions 2.4.8 et antérieures**, les commandes d’interface de ligne de commande utilisées pour configurer Valkey restent identiques à celles de Redis, assurant ainsi une rétrocompatibilité transparente et simplifiant la migration ou la prise en charge de deux environnements. L’exemple suivant illustre la commande spécifique à Valkey.
+
+```bash
+bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
 ```
 
 ## Configuration de la mise en cache de pages
@@ -58,6 +74,14 @@ Avec les paramètres suivants :
 
 - `--page-cache-valkey-<parameter>=<value>` une liste de paires clé-valeur qui configurent la mise en cache de page :
 
+>[!NOTE]
+>
+>À partir de **Adobe Commerce 2.4.9-alpha2**, **Valkey** a officiellement remplacé Redis dans l’outil d’interface de ligne de commande en raison de changements dans les licences. Valkey est une fourchette de Redis et conserve des fonctionnalités quasi identiques. Pour les **versions 2.4.8 et antérieures**, les commandes d’interface de ligne de commande utilisées pour configurer Valkey restent identiques à celles de Redis, assurant ainsi une rétrocompatibilité transparente et simplifiant la migration ou la prise en charge de deux environnements. L’exemple suivant illustre la commande spécifique à Valkey.
+
+```bash
+bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
+```
+
 | Paramètre de ligne de commande | Valeur | Signification | Valeur par défaut |
 |------------------------------| --------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
 | `page-cache-valkey-server` | serveur | Nom d’hôte complet, adresse IP ou chemin d’accès absolu à un socket UNIX. La valeur par défaut `127.0.0.1` indique que Valkey est installé sur le serveur Commerce. | `127.0.0.1` |
@@ -71,6 +95,14 @@ L&#39;exemple suivant active la mise en cache de page Valkey, définit l&#39;hô
 
 ```bash
 bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-server=127.0.0.1 --page-cache-valkey-db=1
+```
+
+>[!NOTE]
+>
+>À partir de **Adobe Commerce 2.4.9-alpha2**, **Valkey** a officiellement remplacé Redis dans l’outil d’interface de ligne de commande en raison de changements dans les licences. Valkey est une fourchette de Redis et conserve des fonctionnalités quasi identiques. Pour les **versions 2.4.8 et antérieures**, les commandes d’interface de ligne de commande utilisées pour configurer Valkey restent identiques à celles de Redis, assurant ainsi une rétrocompatibilité transparente et simplifiant la migration ou la prise en charge de deux environnements. L’exemple suivant illustre la commande spécifique à Valkey.
+
+```bash
+bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-valkey-db=1
 ```
 
 ## Résultats
