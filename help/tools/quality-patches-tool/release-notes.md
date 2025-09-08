@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 4adac1df0382cd0ae0833599011aeb664a91ceb6
+source-git-commit: edb7f2351afc346d54f62ae1278f481ba7d732f9
 workflow-type: tm+mt
-source-wordcount: '28046'
+source-wordcount: '28348'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,26 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 >[!INFO]
 >
->Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=fr#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
+>Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
 
 >[!INFO]
 >
 >Pour plus d’informations sur les [!DNL quality patches] créées par la communauté pour Magento Open Source, consultez les [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.70 {#v1-1-70}
+
+* **AC-15210** (pour Adobe Commerce et Magento Open Source >=2.4.6-p3 &lt;2.4.9) - Migre l’intégration USPS des API Web Tools obsolètes vers les nouvelles API RESTful USPS.
+* **ACSD-67102** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel le serveur principal Adobe Commerce se charge **[!UICONTROL Categories]** très lentement.
+* **ACSD-66120** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Correction du problème en raison duquel [!DNL GraphQL] affiche incorrectement les pourcentages de remise et les prix de base lorsque les prix du catalogue sont configurés pour inclure la taxe.
+* **ACSD-66157** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.9) - Correction du problème en raison duquel le prix spécial n’est pas pris en compte pour les sites web créés dans différents fuseaux horaires.
+* **ACSD-67659** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction d’un problème en raison duquel les messages d’erreur traduits renvoyaient un code d’erreur UNDEFINED.
+* **ACSD-67166** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Correction du problème en raison duquel la requête `cataloginventory_stock_status` s’exécute plusieurs fois lors du chargement d’un devis sur le storefront, provoquant des appels de base de données redondants.
+* **ACSD-67289** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème en raison duquel le prix normal ne s’affiche pas lorsqu’un prix spécial est appliqué.
+* **ACSD-67686** (pour Adobe Commerce et Magento Open Source >=2.4.4-p15 &lt;2.4.5 || >=2.4.5-p14 &lt;2.4.6 || >=2.4.6-p12 &lt;2.4.7) - Corrige le problème où une erreur `Syntax Error: Unexpected <EOF>` se produit lors de l’envoi d’une demande de [!DNL GraphQL] vide.
+* **ACSD-67250** (pour Adobe Commerce >=2.4.7-p4 &lt;2.4.8) - Correction du problème en raison duquel l’opération d’enregistrement **[!UICONTROL Shared Catalog]** met à jour tous les éléments au lieu de seulement ceux qui sont affectés, améliorant ainsi les performances en éliminant les opérations inutiles.
+* **ACSD-67030** (pour Adobe Commerce >=2.4.4 &lt;2.4.9) - Correction du problème où l’affectation de produits simples est annulée pour un produit configurable lorsqu’il est modifié par un administrateur à rôle limité.
+* Versions mises à jour : **ACSD-54095**, **ACSD-51636**, **ACSD-51739**, **ACSD-66093**
+* Correctifs remplacés : **ACSD-62415**
 
 ## v1.1.69 {#v1-1-69}
 
