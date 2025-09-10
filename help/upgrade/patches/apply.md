@@ -2,9 +2,9 @@
 title: Application de correctifs
 description: Découvrez les méthodes d’application de correctifs à un projet Adobe Commerce.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Vous pouvez appliquer des correctifs à l’aide de l’une des méthodes suivantes :
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Ligne de commande](../patches/apply.md#command-line)
 - [Compositeur](../patches/apply.md#composer)
 
@@ -24,9 +24,7 @@ Vous pouvez appliquer des correctifs à l’aide de l’une des méthodes suivan
 
 ## Compositeur
 
->[!IMPORTANT]
->
->Pour appliquer les correctifs de qualité officiels, utilisez le [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr){target="_blank"} . Effectuez toujours des tests complets avant de déployer un correctif personnalisé.
+{{custom-patches-disclaimer}}
 
 Pour appliquer un correctif personnalisé à l’aide du compositeur :
 

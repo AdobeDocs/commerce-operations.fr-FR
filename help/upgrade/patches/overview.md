@@ -2,7 +2,7 @@
 title: Fonctionnement des correctifs
 description: Découvrez les différents types de correctifs d’Adobe Commerce et leur fonctionnement.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Vous trouverez les correctifs dans le [Centre de sécurité](https://magento.com
 
 Les correctifs individuels contiennent des correctifs de qualité à faible impact pour un problème spécifique. Ces correctifs sont appliqués à la version mineure la plus récemment prise en charge (par exemple, 2.4.x), mais peuvent être absents de la version mineure précédente prise en charge (par exemple, 2.3.x). Adobe publie des correctifs individuels selon les besoins.
 
-Utilisez l’[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr){target="_blank"} pour appliquer des correctifs individuels.
+Utilisez l’[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} pour appliquer des correctifs individuels.
 
 >[!NOTE]
 >
@@ -51,7 +51,9 @@ Utilisez l’[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/to
 
 ## Correctifs personnalisés
 
-Parfois, il faut un certain temps à l’équipe d’ingénierie Adobe pour inclure un correctif de bug réalisé sur GitHub dans une version du compositeur Adobe Commerce. En attendant, vous pouvez créer un correctif à partir de GitHub et utiliser le plug-in [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) pour l’appliquer à votre installation basée sur le compositeur.
+Parfois, il faut un certain temps à l’équipe d’ingénierie Adobe pour inclure un correctif de bug réalisé sur GitHub dans une version officielle d’Adobe Commerce. En attendant, vous pouvez créer un correctif à partir de GitHub et utiliser le plug-in [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) pour l’appliquer à votre installation basée sur le compositeur.
+
+{{custom-patches-disclaimer}}
 
 Utilisez la [ligne de commande](apply.md#command-line) ou le [compositeur](apply.md#composer) pour appliquer des correctifs personnalisés.
 
@@ -90,10 +92,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 Vous pouvez appliquer des correctifs à l’aide de l’une des méthodes suivantes :
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Ligne de commande](/help/upgrade/patches/apply.md#command-line)
 - [Compositeur](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->Pour appliquer un correctif à un projet d’infrastructure cloud d’Adobe Commerce, voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide _Commerce sur le cloud_.
+>Pour appliquer un correctif à un projet d’infrastructure cloud d’Adobe Commerce, voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide _Commerce sur le cloud_.
