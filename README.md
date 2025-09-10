@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7f23a1b123d2ca2e1d116eb66344a67cfe45e409
+source-git-commit: 21a4ec57b49f896cffefbec8db4ce97c161315a0
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '850'
 ht-degree: 3%
 
 ---
@@ -43,13 +43,13 @@ Ce projet respecte le [Code de conduite d’Adobe Open Source](code-of-conduct.m
 
 ## À propos de vos contributions au contenu d’Adobe
 
-Consultez le Guide du contributeur aux documents Adobe [&#128279;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).
+Consultez le Guide du contributeur aux documents Adobe [](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 La façon dont vous contribuez dépend de qui vous êtes et du type de changements que vous souhaitez apporter :
 
 ### Modifications mineures
 
-Si vous contribuez à des mises à jour mineures, consultez l’article et cliquez sur la zone de commentaires qui s’affiche au bas de l’article, cliquez sur **Options de commentaires détaillées**, puis cliquez sur **Suggérer une modification** pour accéder au fichier source Markdown sur GitHub. Utilisez l’interface utilisateur GitHub pour effectuer vos mises à jour. Pour plus d’informations[ consultez le guide du contributeur aux ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr)documents Adobe .
+Si vous contribuez à des mises à jour mineures, consultez l’article et cliquez sur la zone de commentaires qui s’affiche au bas de l’article, cliquez sur **Options de commentaires détaillées**, puis cliquez sur **Suggérer une modification** pour accéder au fichier source Markdown sur GitHub. Utilisez l’interface utilisateur GitHub pour effectuer vos mises à jour. Pour plus d’informations[ consultez le guide du contributeur aux ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)documents Adobe .
 
 Les modifications ou précisions mineures que vous apportez aux documents et aux exemples de code dans ce référentiel sont soumises aux conditions d’utilisation d’Adobe.
 
@@ -67,7 +67,7 @@ Si vous êtes rédacteur technique, responsable de programme ou développeur au 
 
 Les contributeurs de la communauté peuvent utiliser l’interface utilisateur de GitHub pour apporter des modifications mineures, ou dupliquer le référentiel pour apporter des contributions majeures.
 
-Pour plus d’informations, consultez le Guide du contributeur aux documents Adobe [&#128279;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).
+Pour plus d’informations, consultez le Guide du contributeur aux documents Adobe [](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Comment utiliser Markdown pour formater votre rubrique
 
@@ -86,8 +86,8 @@ Pour certaines rubriques, nous utilisons des fichiers de données et des modèle
 Voici quelques exemples de contenu modélisé, sans s’y limiter :
 
 - [Référence des outils de l’interface de ligne de commande](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-- [Tables de disponibilité des produits](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=fr)
-- [Tableaux de la configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr)
+- [Tables de disponibilité des produits](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+- [Tableaux de la configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
 
 ### Générer le contenu modélisé
 
@@ -96,7 +96,7 @@ En règle générale, la plupart des auteurs et des autrices n’ont besoin d’
 >**REMARQUE :**
 >
 >- La génération de contenu modélisé nécessite de travailler sur la ligne de commande dans un terminal.
->- Ruby doit être installé pour exécuter le script de rendu. Voir [_jekyll/.ruby-version] (_jekyll/.ruby-version) pour la version requise.
+>- Ruby doit être installé pour exécuter le script de rendu. Voir [_jekyll/.ruby-version](_jekyll/.ruby-version) pour la version requise.
 
 Pour obtenir une description de la structure de fichiers pour le contenu modélisé, reportez-vous aux sections suivantes :
 
@@ -109,8 +109,8 @@ Pour mettre à jour le contenu modélisé :
 
 1. Dans l’éditeur de texte, ouvrez un fichier de données dans le répertoire `/jekyll/_data`. Par exemple :
 
-   - [Tables de disponibilité des produits](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=fr) : `/jekyll/_data/product-availability.yml`
-   - [Tables de configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) : `/jekyll/_data/system-requirements.yml`
+   - [Tables de disponibilité des produits](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) : `/jekyll/_data/product-availability.yml`
+   - [Tables de configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) : `/jekyll/_data/system-requirements.yml`
 
 1. Utilisez la structure YAML existante pour créer des entrées.
 
@@ -131,10 +131,10 @@ Pour mettre à jour le contenu modélisé :
 1. Générez le contenu modélisé et écrivez la sortie dans le répertoire `help/_includes/templated`.
 
    ```bash
-   rake render
+   bundle exec rake render
    ```
 
-   >**REMARQUE :** vous devez exécuter le script à partir du répertoire `_jekyll`. Si c’est la première fois que vous exécutez le script, vous devez d’abord installer les dépendances Ruby avec la commande `bundle install`.
+   >**REMARQUE :** vous devez exécuter le script à partir du répertoire `_jekyll`. Si c’est la première fois que vous exécutez le script, vous devez d’abord installer les dépendances Ruby avec la commande `bundle install`. Les tâches principales sont fournies par `adobe-comdox-exl-rake-tasks` gem pour une meilleure maintenabilité dans les référentiels de documentation Adobe Commerce.
 
 1. Revenez au répertoire `root`.
 
@@ -164,3 +164,12 @@ Pour mettre à jour le contenu modélisé :
    ```
 
 Consultez la documentation Jekyll pour plus d’informations sur [Fichiers de données](https://jekyllrb.com/docs/datafiles), [Filtres liquides](https://jekyllrb.com/docs/liquid/filters/) et d’autres fonctionnalités.
+
+## Tâches de classement disponibles
+
+Ce référentiel utilise les tâches rake fournies par `adobe-comdox-exl-rake-tasks` gem. Pour afficher toutes les tâches disponibles, exécutez :
+
+```bash
+cd _jekyll
+bundle exec rake --tasks
+```
