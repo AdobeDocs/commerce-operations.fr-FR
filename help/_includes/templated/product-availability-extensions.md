@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8ac03fa9536de8b40b4f049c0fca0874ef09c757
+source-git-commit: 287be6576d85b403982a50d462b41ace79f697da
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 6%
@@ -65,8 +65,8 @@ ht-degree: 6%
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>
-              <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-commerce">Compositeur</a><br/>
-              <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/aem-asset-management/aem-assets-release-notes">Notes de mise à jour</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-commerce">Compositeur</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-release-notes">Notes de mise à jour</a><br/>
           </td>
       </tr>
       <tr>
@@ -78,7 +78,7 @@ ht-degree: 6%
           <td>1.0.0+</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-audiences.html">Marché</a><br/>
-              <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/audience-activation#release-notes">Notes de mise à jour</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation#release-notes">Notes de mise à jour</a><br/>
           </td>
       </tr>
       <tr>
@@ -89,20 +89,20 @@ ht-degree: 6%
           <td>1,3,4</td>
           <td>1.3.3</td>
           <td>
-              <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/install">Compositeur</a><br/>
-              <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/release-notes">Notes de mise à jour</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install">Compositeur</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes">Notes de mise à jour</a><br/>
           </td>
       </tr>
       <tr>
           <td>Connexion aux données</td>
-          <td>3.3.0+</td>
-          <td>3.1.1+</td>
-          <td>2.1.1+</td>
-          <td>1.0.0+</td>
-          <td>1.0.0+</td>
+          <td>3.4.0</td>
+          <td>3.4.0</td>
+          <td>3.4.0</td>
+          <td>3.4.0</td>
+          <td>3.4.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marché</a><br/>
-              <a href="https://experienceleague.adobe.com/fr/docs/commerce/data-connection/release-notes">Notes de mise à jour</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">Notes de mise à jour</a><br/>
           </td>
       </tr>
       <tr>
@@ -113,8 +113,8 @@ ht-degree: 6%
           <td>1,7,2</td>
           <td>1,7,1</td>
           <td>
-              <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/page-builder/guide-overview"> Guide de l’utilisateur </a><br/>
-              <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/page-builder/release-notes">Notes de mise à jour</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview"> Guide de l’utilisateur </a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/release-notes">Notes de mise à jour</a><br/>
           </td>
       </tr>
   </tbody>
