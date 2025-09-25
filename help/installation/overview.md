@@ -2,10 +2,10 @@
 title: Présentation de l’installation sur site
 description: Découvrez le processus d’installation pour les déploiements sur site d’Adobe Commerce.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 7cc77a204d2a3c0773e6a0ab60e57e6e35f12091
+source-git-commit: 9ad18dac76f171ad0f90330e1a1347baa056403b
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 3%
+source-wordcount: '502'
+ht-degree: 2%
 
 ---
 
@@ -14,13 +14,30 @@ ht-degree: 3%
 
 Cette page présente un aperçu de l’installation d’Adobe Commerce sur votre propre infrastructure. Le processus d’installation implique la configuration de votre environnement de serveur, l’obtention des logiciels et informations d’identification nécessaires et l’exécution de la commande d’installation.
 
-Vous pouvez installer le logiciel Adobe Commerce en 30 à 60 minutes environ. Toutefois, le temps nécessaire à la configuration de votre environnement de serveur avant l’installation varie en fonction de votre expérience et des technologies que vous sélectionnez.
+Vous pouvez installer le logiciel sur site Adobe Commerce en 30 à 60 minutes environ. Toutefois, le temps nécessaire à la configuration de votre environnement de serveur avant l’installation varie en fonction de votre expérience et des technologies que vous sélectionnez.
 
 >[!TIP]
 >
 >Vous devez disposer de connaissances techniques intermédiaires et d’un accès au serveur pour continuer avec succès.
 
-L’installation permet de créer un magasin Adobe Commerce entièrement fonctionnel avec une [vitrine orientée client](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/storefront/storefront) et un [panneau d’administration](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/admin/admin). Vos informations d’identification de base de données, informations de domaine et clés d’authentification doivent être prêtes avant de commencer le processus.
+L’installation permet de créer un magasin Adobe Commerce entièrement fonctionnel avec une [vitrine orientée client](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) et un [panneau d’administration](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). Vos informations d’identification de base de données, informations de domaine et clés d’authentification doivent être prêtes avant de commencer le processus.
+
+## Responsabilités du commerçant
+
+Avec Adobe Commerce On-Premise, vous pouvez héberger et gérer votre propre infrastructure, y compris les serveurs, les environnements d’hébergement et la maintenance du système. Adobe fournit une assistance spécifique pour l’application Commerce principale, notamment :
+
+- Accès aux mises à jour et correctifs de produits
+- Correctifs de sécurité pour corriger les vulnérabilités
+- Documentation complète pour vous aider à gérer et optimiser votre solution d’auto-hébergement
+
+Vous avez un contrôle total sur votre environnement, ce qui vous permet d’offrir une personnalisation et une flexibilité accrues, mais vous êtes tenu de garantir les performances, la sécurité et l’évolutivité de l’infrastructure. Par exemple, vous êtes responsable des éléments suivants :
+
+- La conception, l’implémentation, la configuration, la maintenance, le dépannage et les tests de performance de tous les systèmes Adobe Commerce On-Premise.
+   - Serveurs, système d’exploitation, bases de données, [!DNL PHP], recherche, mise en cache, cache de page complète et réseau de diffusion de contenu. Les thèmes communs peuvent inclure (sans s’y limiter) [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates] et tout [!DNL CDN] utilisé.
+- Planification des capacités, mise à l’échelle automatique, mise en grappe, sauvegardes, reprise après sinistre
+- Toutes les données sur les produits et les clients, la conception, la configuration et la configuration, la maintenance des applications et des bases de données, le déploiement du code, les mises à niveau de version et l&#39;application de correctifs
+- Surveillance et alertes via APM/journalisation/alertes (par exemple, [!DNL New Relic], [!DNL Datadog], [!DNL ELK])
+- Correctifs de sécurité pour le système d&#39;exploitation, la [!DNL PHP], la base de données, le renforcement des middleware et les mises à jour
 
 ## Workflow
 
