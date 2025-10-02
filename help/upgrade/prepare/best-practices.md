@@ -3,7 +3,7 @@ title: Bonnes pratiques
 description: Appliquez les bonnes pratiques recommandées par Adobe pour gérer le processus de mise à niveau de vos projets Adobe Commerce.
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 6b3afb93770c1d976dd975a484070e0aee730a98
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 0%
@@ -57,11 +57,11 @@ Commencez à adopter la plateforme d’extensibilité d’Adobe Commerce, si vou
 
 Alors que nous étendons continuellement les fonctionnalités d’Adobe Commerce, il est essentiel que vous développiez sur la dernière version disponible et définissiez une stratégie de mise à niveau dans vos plans de projet. Cela vous aide à rester sécurisé, conforme et à jour sur les dernières améliorations qui vous permettent d&#39;augmenter vos ventes plus rapidement, d&#39;opérer plus efficacement et de devancer vos concurrents, maintenant et à l&#39;avenir.
 
-Pour vous aider à planifier et à budgéter les mises à niveau, vous devez suivre notre [calendrier des versions](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/schedule). Planifiez les tâches de mise à niveau dans la liste d’attente de votre équipe à l’avance. Visez à terminer ce travail avec GA.
+Pour vous aider à planifier et à budgéter les mises à niveau, vous devez suivre notre [calendrier des versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule). Planifiez les tâches de mise à niveau dans la liste d’attente de votre équipe à l’avance. Visez à terminer ce travail avec GA.
 
 - Utilisez la version préliminaire pour en savoir plus sur chaque nouvelle version. La version préliminaire est le code de disponibilité générale qui est disponible pour les commerçants Adobe Commerce et tous les partenaires deux semaines avant la disponibilité générale. Si vous disposez de plusieurs magasins, utilisez la version préliminaire sur votre magasin de base et vérifiez que vos modules et thèmes personnalisés sont compatibles avec celle-ci.
 
-- Consultez la [liste de contrôle du plan de mise à niveau](https://support.magento.com/hc/en-us/articles/360057968951) pour Adobe Commerce afin de planifier votre mise à niveau.
+- Consultez la [liste de contrôle du plan de mise à niveau](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist) pour Adobe Commerce afin de planifier votre mise à niveau.
 
 - Planifiez les mises à niveau au début de l’année. Vous devez réserver un budget et des ressources pour terminer chaque mise à niveau. N’oubliez pas que la mise à niveau peut varier considérablement d’un projet à l’autre. Utilisez vos expériences et vos connaissances pour créer un plan aussi précis que possible.
 
@@ -73,7 +73,7 @@ Les mises à niveau doivent être effectuées régulièrement et dans le cadre d
 
 Évaluez le travail à effectuer pour la mise à niveau :
 
-- Consultez les [notes de mise à jour](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/overview) pour comprendre la portée et l’impact de la nouvelle version.
+- Consultez les [notes de mise à jour](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) pour comprendre la portée et l’impact de la nouvelle version.
 
 - Utilisez le [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) pour identifier les problèmes potentiels qui doivent être corrigés dans votre code personnalisé avant d’essayer d’effectuer une mise à niveau vers une version plus récente.
 
