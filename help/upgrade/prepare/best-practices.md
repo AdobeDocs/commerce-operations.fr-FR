@@ -42,7 +42,7 @@ Si votre projet est actif, nous vous suggérons d’effectuer un audit pour dét
 
 Dès que vous commencez à travailler sur un projet, vous devez tenir compte de l’impact de votre travail actuel sur les futures mises à niveau. Respectez toujours les bonnes pratiques de développement d’Adobe Commerce, comme décrit ici :
 
-- [ Bonnes pratiques de développement ](https://developer.adobe.com/commerce/php/best-practices/)
+- [&#x200B; Bonnes pratiques de développement &#x200B;](https://developer.adobe.com/commerce/php/best-practices/)
 - [Normes de codage](https://developer.adobe.com/commerce/php/coding-standards/)
 
 Commencez à adopter la plateforme d’extensibilité d’Adobe Commerce, si vous ne l’avez pas déjà fait. La plateforme vous permet de personnaliser efficacement les processus, d’intégrer les systèmes et de déployer de nouvelles fonctionnalités tout en conservant une évolutivité de type SaaS. Ses fonctionnalités sont les suivantes :
@@ -81,7 +81,7 @@ Les mises à niveau doivent être effectuées régulièrement et dans le cadre d
 
 ### Test après la mise à niveau
 
-Les tests sont la phase d’une mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. L’utilisation des outils de test principaux peut vous être bénéfique. Le [ Guide de test d’application ](https://developer.adobe.com/commerce/testing/guide/) fournit des détails.
+Les tests sont la phase d’une mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. L’utilisation des outils de test principaux peut vous être bénéfique. Le [&#x200B; Guide de test d’application &#x200B;](https://developer.adobe.com/commerce/testing/guide/) fournit des détails.
 
 Utilisez un environnement d’évaluation pour tester et valider votre mise à niveau avant de passer en production.
 
