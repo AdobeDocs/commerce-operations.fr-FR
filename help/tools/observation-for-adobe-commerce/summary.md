@@ -58,7 +58,7 @@ L’image **[!UICONTROL Swap memory free in bytes]** affiche, par nœud, la quan
 
 ![CPU % par hôte](../../assets/tools/cpu-percent-by-host.jpg)
 
-L’agrégat de tous les environnements et nœuds s’affiche dans le cadre **[!UICONTROL CPU % by host]**. Vous devez désélectionner les environnements hors production. Notez également les instances où tous les nœuds de l’environnement de production ne sont pas présents. Pour plus d’informations sur l’utilisation élevée de CPU, voir [Résolution des problèmes de performances à l’aide de New Relic sur Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
+L’agrégat de tous les environnements et nœuds s’affiche dans le cadre **[!UICONTROL CPU % by host]**. Vous devez désélectionner les environnements hors production. Notez également les instances où tous les nœuds de l’environnement de production ne sont pas présents. Pour plus d’informations sur l’utilisation élevée de CPU, voir [Résolution des problèmes de performances à l’aide de New Relic sur Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=fr).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -70,7 +70,7 @@ Le **[!UICONTROL Alerts during timeframe]** affiche toutes les alertes, y compri
 
 ![Utilisation de CPU](../../assets/tools/cpu-usage.jpg)
 
-Si la trame de **[!UICONTROL CPU Usage]** est vide, cela indique que l’application d’infrastructure de [!DNL New Relic] n’est pas activée. Si votre site est en version Starter, vous ne voyez pas ces informations. Si votre site est en version Pro, ouvrez un ticket d’assistance [support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) pour que les [!DNL New Relic Infrastructure] soient activées pour votre site.
+Si la trame de **[!UICONTROL CPU Usage]** est vide, cela indique que l’application d’infrastructure de [!DNL New Relic] n’est pas activée. Si votre site est en version Starter, vous ne voyez pas ces informations. Si votre site est en version Pro, ouvrez un ticket d’assistance [support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr) pour que les [!DNL New Relic Infrastructure] soient activées pour votre site.
 
 ## [!UICONTROL Average Response Time]
 

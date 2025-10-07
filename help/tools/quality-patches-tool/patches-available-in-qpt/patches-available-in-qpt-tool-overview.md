@@ -39,12 +39,12 @@ L’outil a pour but de vous permettre d’utiliser des correctifs en libre-serv
 
 >[!NOTE]
 >
->QPT est réservé aux correctifs de qualité uniquement. Les correctifs de sécurité sont disponibles dans les [&#x200B; Notes de mise à jour d’Adobe Commerce et de Magento Open Source &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+>QPT est réservé aux correctifs de qualité uniquement. Les correctifs de sécurité sont disponibles dans les [&#x200B; Notes de mise à jour d’Adobe Commerce et de Magento Open Source &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html?lang=fr).
 
 ## Correctifs disponibles dans le [!DNL Quality Patches Tool]
 
 Dans cette section de la base de connaissances de l’assistance Adobe Commerce, vous trouverez des descriptions détaillées des problèmes, résolus par des correctifs QPT, regroupés par version de QPT.
-Vous pouvez également afficher la liste des correctifs QPT disponibles et filtrer le composant par, à l’aide du tableau généré dynamiquement sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans notre base de connaissances d’assistance.
+Vous pouvez également afficher la liste des correctifs QPT disponibles et filtrer le composant par, à l’aide du tableau généré dynamiquement sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans notre base de connaissances d’assistance.
 
 ## Installation et utilisation du [!DNL Quality Patches Tool]
 
@@ -56,8 +56,8 @@ Consultez [Commerce > Outils > Utilisation](../usage.md) dans la documentation d
 
 ### Installation et utilisation de QPT pour Adobe Commerce sur une infrastructure cloud
 
-Consultez le [Guide de Commerce sur les infrastructures cloud > Application de correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans notre documentation destinée aux développeurs, pour plus d’informations sur l’installation et l’utilisation de QPT pour appliquer et rétablir des correctifs sur Adobe Commerce sur les infrastructures cloud.
+Consultez le [Guide de Commerce sur les infrastructures cloud > Application de correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans notre documentation destinée aux développeurs, pour plus d’informations sur l’installation et l’utilisation de QPT pour appliquer et rétablir des correctifs sur Adobe Commerce sur les infrastructures cloud.
 
 ## Lecture connexe
 
-* [[!DNL Quality Patches Tool] notes de mise à jour](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) dans notre documentation destinée aux développeurs et développeuses.
+* [[!DNL Quality Patches Tool] notes de mise à jour](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=fr) dans notre documentation destinée aux développeurs et développeuses.

@@ -30,7 +30,7 @@ L’activation du stockage distant peut affecter votre expérience de développe
 
 >[!INFO]
 >
->- Le stockage distant est disponible uniquement pour Commerce version 2.4.2 et ultérieure. Voir les notes de mise à jour de la version [2.4.2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
+>- Le stockage distant est disponible uniquement pour Commerce version 2.4.2 et ultérieure. Voir les notes de mise à jour de la version [2.4.2](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
 >- Le module de stockage distant offre une prise en charge _limitée_ d’Adobe Commerce sur les infrastructures cloud. Adobe ne peut pas résoudre entièrement les problèmes liés au service de carte de stockage tiers. Consultez [Configuration du stockage distant pour Commerce sur l’infrastructure cloud](cloud-support.md) pour obtenir des conseils sur l’implémentation du stockage distant pour les projets cloud.
 
@@ -91,7 +91,7 @@ Après avoir activé le stockage distant pour une carte spécifique, vous pouvez
 
 >[!INFO]
 >
->La commande sync migre uniquement les fichiers du répertoire `pub/media`, _pas_ les fichiers d’import/export du répertoire `var`. Voir [Importation/exportation planifiée](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) dans le Guide de l’utilisateur de _Commerce 2.4_.
+>La commande sync migre uniquement les fichiers du répertoire `pub/media`, _pas_ les fichiers d’import/export du répertoire `var`. Voir [Importation/exportation planifiée](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=fr) dans le Guide de l’utilisateur de _Commerce 2.4_.
 
 <!-- link definitions -->
 
