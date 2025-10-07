@@ -34,7 +34,7 @@ Cette rubrique aborde la configuration du logiciel Adobe Commerce à l’aide de
 
 Avant de commencer à utiliser l’interface en ligne de commande, vérifiez les points suivants :
 
-1. Votre système répond à la configuration requise décrite dans la section [ Configuration requise ](../../installation/system-requirements.md) dans le _Guide d’installation_.
+1. Votre système répond à la configuration requise décrite dans la section [&#x200B; Configuration requise &#x200B;](../../installation/system-requirements.md) dans le _Guide d’installation_.
 1. Vous avez terminé toutes les tâches préalables décrites dans [Conditions préalables](../../installation/prerequisites/overview.md) dans le _Guide d’installation_.
 1. Après vous être connecté au serveur Commerce, passez à un utilisateur disposant des autorisations d’écriture sur le système de fichiers Commerce. Voir [passer au propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md) dans le _Guide d’installation_.
 

@@ -38,7 +38,7 @@ L’image **[!UICONTROL Connection to Redis]** affiche la valeur net.connectorCl
 
 ## [!UICONTROL Commands per second by node]
 
-![ Commandes par seconde par nœud ](../../assets/tools/observation-for-adobe-commerce/redis-tab-5.jpg)
+![&#x200B; Commandes par seconde par nœud &#x200B;](../../assets/tools/observation-for-adobe-commerce/redis-tab-5.jpg)
 
 L’image **[!UICONTROL Commands per second by node]** affiche les commandes [!DNL Redis] par nœud et par seconde pendant la période sélectionnée.
 

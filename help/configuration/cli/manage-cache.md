@@ -20,7 +20,7 @@ Vous pouvez utiliser le système de gestion du cache d’Adobe Commerce pour am�
 >[!NOTE]
 >
 >
->Les administrateurs du site Commerce peuvent gérer le cache à partir de l’Administration à l’aide de l’outil Système de gestion du cache. Voir [ Gestion du cache ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) dans le _Guide des systèmes d’administration_.
+>Les administrateurs du site Commerce peuvent gérer le cache à partir de l’Administration à l’aide de l’outil Système de gestion du cache. Voir [&#x200B; Gestion du cache &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) dans le _Guide des systèmes d’administration_.
 
 
 ## Affichage de l’état du cache

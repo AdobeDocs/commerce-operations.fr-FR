@@ -26,7 +26,7 @@ Les options de configuration AsyncOrder, Calcul du total différé et Vérificat
 
 >[!NOTE]
 >
->N’utilisez pas de code PHP personnalisé pour personnaliser les fonctionnalités de panier et de passage en caisse intégrées. Outre les problèmes de performances potentiels, l’utilisation de code PHP personnalisé peut entraîner des mises à niveau et des défis de maintenance complexes. Ces problèmes augmentent le coût total de possession. Si la personnalisation du panier et du passage en caisse basée sur PHP est inévitable, utilisez uniquement les extensions approuvées par [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/). Toutes les extensions de Marketplace font l’objet d’un [ examen approfondi ](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program/) afin de vérifier qu’elles répondent aux normes de codage et aux bonnes pratiques d’Adobe Commerce.
+>N’utilisez pas de code PHP personnalisé pour personnaliser les fonctionnalités de panier et de passage en caisse intégrées. Outre les problèmes de performances potentiels, l’utilisation de code PHP personnalisé peut entraîner des mises à niveau et des défis de maintenance complexes. Ces problèmes augmentent le coût total de possession. Si la personnalisation du panier et du passage en caisse basée sur PHP est inévitable, utilisez uniquement les extensions approuvées par [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/). Toutes les extensions de Marketplace font l’objet d’un [&#x200B; examen approfondi &#x200B;](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program/) afin de vérifier qu’elles répondent aux normes de codage et aux bonnes pratiques d’Adobe Commerce.
 
 ## Passation de commande asynchrone
 

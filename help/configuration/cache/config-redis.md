@@ -23,7 +23,7 @@ Les fonctionnalités Redis incluent :
 L&#39;installation et la configuration du logiciel Redis ne font pas partie de ce guide. Consultez des ressources telles que :
 
 - [Télécharger la page Redis](https://redis.io/download)
-- [ Démarrage rapide Redis ](https://redis.io/docs/getting-started/)
+- [&#x200B; Démarrage rapide Redis &#x200B;](https://redis.io/docs/getting-started/)
 - [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis)
 - [page de documentation Redis](https://redis.io/docs)
 

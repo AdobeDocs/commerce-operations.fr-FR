@@ -16,7 +16,7 @@ ht-degree: 0%
 
 - Configurez les mécanismes de cache suivants dans la configuration [!DNL Commerce] :
 
-   - [ Base de données ](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
+   - [&#x200B; Base de données &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
    - [Redis](config-redis.md)
    - Système de fichiers (par défaut) : aucune configuration n’est nécessaire pour utiliser la mise en cache du système de fichiers par défaut.
 

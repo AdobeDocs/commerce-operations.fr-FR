@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-La commande de déploiement de fichiers de vue statique vous permet d’écrire des fichiers statiques dans le système de fichiers Commerce lorsque le logiciel Commerce est défini pour le [ mode de production ](../bootstrap/application-modes.md#production-mode).
+La commande de déploiement de fichiers de vue statique vous permet d’écrire des fichiers statiques dans le système de fichiers Commerce lorsque le logiciel Commerce est défini pour le [&#x200B; mode de production &#x200B;](../bootstrap/application-modes.md#production-mode).
 
 Le terme _fichier de vue statique_ fait référence aux éléments suivants :
 
@@ -31,7 +31,7 @@ Vous devez écrire manuellement les fichiers de vue statique dans le système de
 
 >[!WARNING]
 >
->_Mode Développeur uniquement_ : lorsque vous installez ou activez un nouveau module, il se peut que celui-ci charge de nouveaux JavaScript, CSS, mises en page, etc. Pour éviter tout problème lié aux fichiers statiques, vous devez nettoyer les anciens fichiers afin de vous assurer d’obtenir toutes les modifications pour le nouveau module. Vous pouvez nettoyer les fichiers d’affichage statique générés de plusieurs manières. Pour plus d’informations[ voir la rubrique ](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) Nettoyer le cache de fichiers statiques .
+>_Mode Développeur uniquement_ : lorsque vous installez ou activez un nouveau module, il se peut que celui-ci charge de nouveaux JavaScript, CSS, mises en page, etc. Pour éviter tout problème lié aux fichiers statiques, vous devez nettoyer les anciens fichiers afin de vous assurer d’obtenir toutes les modifications pour le nouveau module. Vous pouvez nettoyer les fichiers d’affichage statique générés de plusieurs manières. Pour plus d’informations[&#x200B; voir la rubrique &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) Nettoyer le cache de fichiers statiques .
 
 **Pour déployer des fichiers de vue statiques** :
 
@@ -71,7 +71,7 @@ Le tableau suivant explique les paramètres et valeurs de cette commande.
 | `--no-html` | Ne déployez pas de fichiers HTML. | Non |
 | `--no-misc` | Ne déployez pas d’autres types de fichiers : MD, JBF, CSV, JSON, TXT, HTC, SWF | Non |
 | `--no-html-minify` | Ne minimisez pas les fichiers HTML. | Non |
-| `-s <quick\|standard\|compact>` | Définissez la stratégie de déploiement. N’utilisez ces options que si vous disposez de plusieurs instances locales.<ul><li>Utilisez la [stratégie rapide](static-view-file-strategy.md#quick-strategy) pour réduire le temps de déploiement. Il s’agit de l’option de commande par défaut si elle n’est pas spécifiée.</li><li>Utilisez la [stratégie standard](static-view-file-strategy.md#standard-strategy) pour déployer tous les fichiers de vue statiques pour tous les packages.</li><li>Utilisez la [ stratégie compacte ](static-view-file-strategy.md#compact-strategy) pour économiser de l’espace disque sur le serveur.</li></ul> | Non |
+| `-s <quick\|standard\|compact>` | Définissez la stratégie de déploiement. N’utilisez ces options que si vous disposez de plusieurs instances locales.<ul><li>Utilisez la [stratégie rapide](static-view-file-strategy.md#quick-strategy) pour réduire le temps de déploiement. Il s’agit de l’option de commande par défaut si elle n’est pas spécifiée.</li><li>Utilisez la [stratégie standard](static-view-file-strategy.md#standard-strategy) pour déployer tous les fichiers de vue statiques pour tous les packages.</li><li>Utilisez la [&#x200B; stratégie compacte &#x200B;](static-view-file-strategy.md#compact-strategy) pour économiser de l’espace disque sur le serveur.</li></ul> | Non |
 | `--no-parent` | Ne générez pas de fichiers pour les thèmes parents du thème actuel. Il est vivement recommandé d’utiliser cet indicateur si vous n’utilisez pas explicitement le thème parent du thème actuel que vous essayez de déployer. Cela augmente considérablement la vitesse du processus. Cet indicateur est disponible dans Commerce 2.4.2 | Non |
 | `--force (-f)` | Déployez des fichiers dans n’importe quel mode. (par défaut, l’outil de déploiement de contenu statique ne peut être exécuté qu’en mode de production. Utilisez cette option pour l’exécuter en mode par défaut ou en mode développeur). | Non |
 
@@ -171,7 +171,7 @@ ERROR: You need to install the Commerce application before running this utility.
 Procédez comme suit :
 
 1. Installez le logiciel Commerce à l’aide de la [ligne de commande](../../installation/composer.md).
-1. Connectez-vous au serveur d’applications en tant que propriétaire du système de fichiers ou [ passez à ](../../installation/prerequisites/file-system/overview.md).
+1. Connectez-vous au serveur d’applications en tant que propriétaire du système de fichiers ou [&#x200B; passez à &#x200B;](../../installation/prerequisites/file-system/overview.md).
 1. Supprimez le contenu `<app_root>/pub/static` répertoire , à l’exception du fichier `.htaccess`. Ne supprimez pas ce fichier.
 1. Déployer des fichiers de vue statiques : `bin/magento setup:static-content:deploy`
 

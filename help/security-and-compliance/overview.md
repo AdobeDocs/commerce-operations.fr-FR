@@ -15,8 +15,8 @@ Cette section contient des informations sur la sécurité, la confidentialité e
 
 ## Sécurité
 
-- [Sécurité du produit Adobe ](https://helpx.adobe.com/security.html) : découvrez les derniers correctifs, les mises à jour de sécurité et les bonnes pratiques pour Adobe Commerce.
-- [Centre de gestion de la confidentialité Adobe ](https://www.adobe.com/trust.html) : accédez aux dernières informations disponibles sur l’intégrité opérationnelle, la sécurité, la confidentialité et la conformité de tous les services cloud Adobe.
+- [Sécurité du produit Adobe &#x200B;](https://helpx.adobe.com/security.html) : découvrez les derniers correctifs, les mises à jour de sécurité et les bonnes pratiques pour Adobe Commerce.
+- [Centre de gestion de la confidentialité Adobe &#x200B;](https://www.adobe.com/trust.html) : accédez aux dernières informations disponibles sur l’intégrité opérationnelle, la sécurité, la confidentialité et la conformité de tous les services cloud Adobe.
 - [Outil d’analyse à l’échelle du site](../tools/site-wide-analysis-tool/dashboard.md) : affichez des informations rationalisées sur la sécurité de votre site Adobe Commerce, y compris des analyses de sécurité, des services en fin de vie et des recommandations de sécurité.
 
 ## Conformité

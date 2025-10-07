@@ -94,7 +94,7 @@ Ajoutez le nom et la version de l’extension à votre fichier `composer.json` :
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. Saisissez vos [ clés d’authentification ](../prerequisites/authentication-keys.md). Votre clé publique est votre nom d&#39;utilisateur ; votre clé privée est votre mot de passe.
+1. Saisissez vos [&#x200B; clés d’authentification &#x200B;](../prerequisites/authentication-keys.md). Votre clé publique est votre nom d&#39;utilisateur ; votre clé privée est votre mot de passe.
 
 1. Attendez que le compositeur ait terminé la mise à jour des dépendances de votre projet et vérifiez qu’il n’y a aucune erreur :
 

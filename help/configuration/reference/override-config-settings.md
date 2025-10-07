@@ -17,7 +17,7 @@ Vous pouvez remplacer la valeur du paramètre de configuration _any_ à l’aide
 
 >[!TIP]
 >
->Consultez la rubrique [ Configurer les environnements ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) dans le guide _Commerce sur les infrastructures cloud_.
+>Consultez la rubrique [&#x200B; Configurer les environnements &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) dans le guide _Commerce sur les infrastructures cloud_.
 
 ## Variables d’environnement
 
@@ -183,7 +183,7 @@ Cette section explique comment définir des variables système.
 
 - Pour définir des valeurs pour la portée globale (c’est-à-dire tous les sites web, magasins et vues de magasin), commencez le nom de la variable par `CONFIG__DEFAULT__`.
 
-- Pour définir une valeur pour une vue de magasin ou un site web spécifique, commencez par définir le nom de la variable comme décrit dans la section [Étape 1 : Rechercher la valeur de la portée ](#step-1-find-the-website-or-store-view-scope-value) :
+- Pour définir une valeur pour une vue de magasin ou un site web spécifique, commencez par définir le nom de la variable comme décrit dans la section [Étape 1 : Rechercher la valeur de la portée &#x200B;](#step-1-find-the-website-or-store-view-scope-value) :
 
    - `CONFIG__WEBSITES`
    - `CONFIG__STORES`
@@ -255,4 +255,4 @@ Un exemple détaillé est présenté dans [Définir des valeurs de configuration
 >
 >- Pour Adobe Commerce sur les infrastructures cloud, si vous tentez de remplacer les paramètres de configuration à l’aide de l’[interface web de projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), vous devez ajouter le préfixe `env:` au nom de la variable. Par exemple :
 >
->![ Exemple de variable d’environnement ](../../assets/configuration/cloud-console-envvariable.png)
+>![&#x200B; Exemple de variable d’environnement &#x200B;](../../assets/configuration/cloud-console-envvariable.png)

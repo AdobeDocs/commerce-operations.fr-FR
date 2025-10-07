@@ -23,7 +23,7 @@ Commerce étend [Zend_Cache_Core](https://framework.zend.com/manual/1.12/en/zend
 En règle générale, l’application Commerce fonctionne avec n’importe quel cache principal pris en charge par [Zend_Cache Backends](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html). Cependant, ce guide ne couvre que les caches principaux de bas niveau suivants :
 
 - [Redis](config-redis.md)
-- [ Base de données ](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
+- [&#x200B; Base de données &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
 - Système de fichiers (par défaut) : aucune configuration n’est nécessaire pour utiliser la mise en cache du système de fichiers.
 
 [Vernis](config-varnish.md) ne nécessite pas la configuration d’un serveur principal de cache de bas niveau.

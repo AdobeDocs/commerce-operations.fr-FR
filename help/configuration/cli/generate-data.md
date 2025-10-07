@@ -52,7 +52,7 @@ Le tableau suivant fournit des détails sur les profils du générateur de donn�
 >
 >Si vous envisagez d’implémenter les événements avec [!DNL Adobe I/O Events for Adobe Commerce] lors du test des performances, exécutez cette commande avant d’y abonner des [événements](https://developer.adobe.com/commerce/extensibility/events/). L’abonnement préalable aux événements peut entraîner des erreurs.
 
-Exécutez la commande comme décrit dans cette section. Une fois la commande exécutée, vous devez [ réindexer tous les indexeurs ](../cli/manage-indexers.md).
+Exécutez la commande comme décrit dans cette section. Une fois la commande exécutée, vous devez [&#x200B; réindexer tous les indexeurs &#x200B;](../cli/manage-indexers.md).
 
 Options de commande :
 

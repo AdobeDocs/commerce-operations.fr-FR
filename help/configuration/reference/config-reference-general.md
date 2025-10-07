@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Référence des chemins de configuration généraux et avancés
 
-Cette rubrique répertorie les chemins de configuration généraux et avancés ainsi que les valeurs _non_ [ sensibles et spécifiques au système](config-reference-sens.md). La commande [`magento app:config:dump` écrit ](../cli/export-configuration.md) ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit se trouver dans le contrôle de code source.
+Cette rubrique répertorie les chemins de configuration généraux et avancés ainsi que les valeurs _non_ [&#x200B; sensibles et spécifiques au système](config-reference-sens.md). La commande [`magento app:config:dump` écrit &#x200B;](../cli/export-configuration.md) ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit se trouver dans le contrôle de code source.
 
 Pour remplacer éventuellement des paramètres de configuration ou définir des paramètres sensibles, voir [Utiliser des variables d’environnement pour remplacer des paramètres de configuration](override-config-settings.md#environment-variables).
 
@@ -26,10 +26,10 @@ Ces valeurs de configuration sont disponibles dans Admin dans **Magasins** > Par
 
 | Nom | Chemin de configuration | Commerce uniquement ? | Sensible ? |
 |--------------|--------------|--------------|--------------|
-| Pays par défaut | `general/country/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![ Sensible ](/help/assets/configuration/cloud-sens.png) |
-| Autoriser les pays | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![ Sensible ](/help/assets/configuration/cloud-sens.png) |
-| Le code postal est facultatif pour | `general/country/optional_zip_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![ Sensible ](/help/assets/configuration/cloud-sens.png) |
-| Pays de l&#39;Union européenne | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![ Sensible ](/help/assets/configuration/cloud-sens.png) |
+| Pays par défaut | `general/country/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![&#x200B; Sensible &#x200B;](/help/assets/configuration/cloud-sens.png) |
+| Autoriser les pays | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![&#x200B; Sensible &#x200B;](/help/assets/configuration/cloud-sens.png) |
+| Le code postal est facultatif pour | `general/country/optional_zip_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![&#x200B; Sensible &#x200B;](/help/assets/configuration/cloud-sens.png) |
+| Pays de l&#39;Union européenne | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![&#x200B; Sensible &#x200B;](/help/assets/configuration/cloud-sens.png) |
 | Destinations principales | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | L’état est requis pour | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Autoriser à choisir l’état s’il est facultatif pour le pays | `general/region/display_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |

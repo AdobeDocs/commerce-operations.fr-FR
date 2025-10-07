@@ -100,7 +100,7 @@ Contient un tableau de valeurs de configuration des champs système.
 ]
 ```
 
-En savoir plus sur les [ configurations spécifiques au système ](config-reference-sens.md).
+En savoir plus sur les [&#x200B; configurations spécifiques au système &#x200B;](config-reference-sens.md).
 
 ## thèmes
 

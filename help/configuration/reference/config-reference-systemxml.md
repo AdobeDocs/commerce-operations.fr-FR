@@ -248,7 +248,7 @@ Une `<field>`-balise peut avoir les valeurs suivantes pour l’attribut `type=""
 | `select` | Liste déroulante normale, peut nécessiter un `source_model` personnalisé. Également utilisé pour les sélections de `Yes/No`. Voir `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` pour obtenir un exemple. |
 | `multiselect` | Comme `select`, mais plusieurs options sont valides. |
 | `button` | Un bouton qui déclenche un événement immédiat. Nécessite un modèle front-end personnalisé pour définir le texte du bouton et l’action. Voir `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` pour obtenir un exemple. |
-| `obscure` | Champ de texte avec la valeur chiffrée et affichée sous la forme `****`. La modification du type à l’aide de « Inspect Element » dans le navigateur n’affiche pas la valeur. |
+| `obscure` | Champ de texte avec la valeur chiffrée et affichée sous la forme `**&#x200B;**`. La modification du type à l’aide de « Inspect Element » dans le navigateur n’affiche pas la valeur. |
 | `password` | Comme `obscure`, sauf que la valeur masquée n’est pas chiffrée, et que la modification forcée du type à l’aide de « Inspect Element » dans le navigateur révèle la valeur. |
 | `file` | Permet de charger un fichier en vue de son traitement. |
 | `label` | Affiche un libellé au lieu d’un champ modifiable. Utilisez ce type lorsqu’un champ n’est modifiable que sur des portées spécifiques, par exemple le niveau d’affichage du magasin uniquement. |
