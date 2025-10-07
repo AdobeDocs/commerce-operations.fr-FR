@@ -1,12 +1,12 @@
 ---
 title: référence system.xml
-description: Découvrez comment le fichier XML système gère la configuration de l’application Commerce.
+description: Découvrez comment le fichier system.xml gère la configuration de l’application Adobe Commerce. Découvrez la gestion de la configuration du système, la structure XML et les techniques d’implémentation.
 feature: Configuration, System
 badge: label="Contribution David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2717'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ Une `<field>`-balise peut avoir les valeurs suivantes pour l’attribut `type=""
 | `select` | Liste déroulante normale, peut nécessiter un `source_model` personnalisé. Également utilisé pour les sélections de `Yes/No`. Voir `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` pour obtenir un exemple. |
 | `multiselect` | Comme `select`, mais plusieurs options sont valides. |
 | `button` | Un bouton qui déclenche un événement immédiat. Nécessite un modèle front-end personnalisé pour définir le texte du bouton et l’action. Voir `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` pour obtenir un exemple. |
-| `obscure` | Champ de texte avec la valeur chiffrée et affichée sous la forme `**&#x200B;**`. La modification du type à l’aide de « Inspect Element » dans le navigateur n’affiche pas la valeur. |
+| `obscure` | Champ de texte avec la valeur chiffrée et affichée sous la forme `****`. La modification du type à l’aide de « Inspect Element » dans le navigateur n’affiche pas la valeur. |
 | `password` | Comme `obscure`, sauf que la valeur masquée n’est pas chiffrée, et que la modification forcée du type à l’aide de « Inspect Element » dans le navigateur révèle la valeur. |
 | `file` | Permet de charger un fichier en vue de son traitement. |
 | `label` | Affiche un libellé au lieu d’un champ modifiable. Utilisez ce type lorsqu’un champ n’est modifiable que sur des portées spécifiques, par exemple le niveau d’affichage du magasin uniquement. |

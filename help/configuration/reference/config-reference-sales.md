@@ -1,11 +1,11 @@
 ---
 title: Référence des chemins de configuration des ventes
-description: Voir une liste des valeurs de configuration de vente.
+description: Découvrez les chemins de configuration des ventes et les noms des variables dans Adobe Commerce. Découvrez les paramètres d’administration pour le passage en caisse, l’expédition et les taxes.
 feature: Configuration, Checkout, Gift, Shipping/Delivery, Taxes
 exl-id: 7981f78a-5e5f-422c-9bff-54022e1fb9f3
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1485'
 ht-degree: 0%
 
 ---

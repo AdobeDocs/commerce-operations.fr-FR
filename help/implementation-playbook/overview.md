@@ -1,12 +1,12 @@
 ---
 title: Manuel d’implémentation
-description: Découvrez les bonnes pratiques en matière de planification, de développement, de lancement et de maintenance pour votre projet Adobe Commerce.
+description: Découvrez les bonnes pratiques relatives à la planification, au développement, au lancement et à la maintenance de votre projet Adobe Commerce. Découvrez les méthodologies permettant une implémentation réussie pour tous les types de projet.
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
 feature: Best Practices, Cloud, Integration
-source-git-commit: 581a7dbcc19c31df80e03cb9f321a6adb5fa1a73
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 6%
+source-wordcount: '259'
+ht-degree: 0%
 
 ---
 

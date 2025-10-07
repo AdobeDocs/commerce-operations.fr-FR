@@ -1,10 +1,10 @@
 ---
 title: Commandes communes
-description: Affichez un échantillon des commandes et de l’utilisation courantes de l’interface de ligne de commande Commerce.
+description: Découvrez les commandes d’interface de ligne de commande Adobe Commerce courantes et leurs exemples d’utilisation. Découvrez les outils de ligne de commande essentiels au développement et à l’administration.
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
-source-git-commit: 3d0e6d6517e28a32816bfe2b328edfba97523740
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: Fichiers de configuration du module
-description: Découvrez comment personnaliser un module à l’aide de types de configuration.
+description: Découvrez comment personnaliser des modules à l’aide de types de configuration dans Adobe Commerce. Découvrez les bonnes pratiques en matière de gestion des fichiers de configuration et de personnalisation des modules.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 80d7a7f2592e547ef70f2fac63c25be0cce9365d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1263'
 ht-degree: 0%
 
 ---

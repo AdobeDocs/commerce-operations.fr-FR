@@ -1,10 +1,10 @@
 ---
 title: Démarrer les consommateurs des files d’attente de messages
-description: Découvrez comment démarrer un client de file d’attente de messages.
+description: Découvrez comment démarrer les consommateurs de files d’attente de messages pour les opérations asynchrones Adobe Commerce. Découvrez la configuration des fonctionnalités de gestion des consommateurs et B2B.
 exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
-source-git-commit: cdd752532d17e1168e0aa7d354ec283089d98be3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---

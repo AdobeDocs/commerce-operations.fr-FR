@@ -1,10 +1,10 @@
 ---
 title: Configuration d’une tâche cron personnalisée et d’un groupe cron (tutoriel)
-description: Utilisez ce tutoriel détaillé pour créer une tâche cron personnalisée.
+description: Découvrez comment créer des tâches cron personnalisées à l’aide de ce tutoriel détaillé pour Adobe Commerce. Découvrez la configuration du module et la configuration du groupe cron.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---

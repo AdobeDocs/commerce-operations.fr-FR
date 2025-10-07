@@ -1,11 +1,11 @@
 ---
 title: Présentation du processus de mise à niveau
-description: Découvrez comment la mise à niveau de votre projet Adobe Commerce permet de garantir la sécurité de votre storefront et un fonctionnement efficace.
+description: Découvrez comment la mise à niveau de votre projet Adobe Commerce garantit la sécurité et l’efficacité de votre storefront. Découvrez les bonnes pratiques pour planifier et exécuter des mises à niveau réussies.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 1%
+source-wordcount: '901'
+ht-degree: 0%
 
 ---
 

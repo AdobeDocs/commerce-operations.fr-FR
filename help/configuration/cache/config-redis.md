@@ -1,11 +1,11 @@
 ---
 title: Configurer Redis
-description: Obtenez un aperçu des fonctionnalités de Redis et commencez votre configuration Redis.
+description: Découvrez comment configurer la mise en cache Redis pour l’optimisation des performances d’Adobe Commerce. Découvrez les fonctionnalités, les étapes de configuration et les bonnes pratiques de configuration.
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
-source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---

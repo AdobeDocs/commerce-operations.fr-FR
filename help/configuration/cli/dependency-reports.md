@@ -1,10 +1,10 @@
 ---
 title: Rapports de dépendance
-description: Créez des rapports qui affichent les totaux des dépendances de module, circulaires et de structure.
+description: Découvrez comment créer des rapports de dépendance affichant les dépendances de module, circulaires et de structure dans Adobe Commerce. Découvrez les outils d’analyse et de reporting.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---

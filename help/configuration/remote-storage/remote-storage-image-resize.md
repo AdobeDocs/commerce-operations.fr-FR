@@ -3,9 +3,9 @@ title: Configuration du redimensionnement des images pour le stockage distant
 description: Optimisez les ressources du disque en configurant le redimensionnement des images côté serveur.
 feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '247'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ Par défaut, Adobe Commerce prend en charge le redimensionnement des images côt
 
 Le diagramme suivant montre comment Nginx récupère, redimensionne et stocke les images dans le cache. Le redimensionnement est déterminé par les paramètres inclus dans l’URL, tels que la hauteur et la largeur.
 
-![redimensionnement de l’image](../../assets/configuration/remote-storage-nginx-image-resize.png)
+![Configuration de Nginx pour le redimensionnement de l’image du stockage distant affichant les paramètres du bloc serveur](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
 >[!TIP]
 >

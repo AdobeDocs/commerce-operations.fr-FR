@@ -1,11 +1,11 @@
 ---
 title: Configuration de la mise en cache
-description: Découvrez la mise en cache et comment configurer les mécanismes de cache pour l’application Adobe Commerce.
+description: Découvrez les mécanismes de mise en cache et les options de configuration des applications Adobe Commerce. Découvrez des alternatives à la mise en cache du système de fichiers par défaut.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---

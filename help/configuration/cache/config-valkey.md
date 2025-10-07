@@ -1,11 +1,11 @@
 ---
 title: Configurer Valkey
-description: Obtenez un aperçu des fonctionnalités de Valkey et commencez votre configuration de Valkey.
+description: Découvrez comment configurer la mise en cache Valkey pour l’optimisation des performances d’Adobe Commerce. Découvrez les fonctionnalités, les étapes de configuration et les bonnes pratiques de configuration.
 feature: Configuration, Cache
 exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
-source-git-commit: b2cf71bfda3e5db8e27eb28d764cf99216454e33
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---

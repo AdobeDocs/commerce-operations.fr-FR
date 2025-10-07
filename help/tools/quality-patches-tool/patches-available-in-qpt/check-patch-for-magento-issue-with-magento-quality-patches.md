@@ -5,9 +5,9 @@ feature: Tools and External Services
 role: Admin
 exl-id: 4d651c3c-95ad-4b53-bf77-92758acb795d
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -33,17 +33,17 @@ Il permet d’effectuer les opérations suivantes :
 
 Voici un exemple du tableau d’état auquel vous pouvez accéder pour afficher les correctifs disponibles :
 
-![Magento_patches_list](/help/assets/tools/status_table.png)
+![Tableau de statut de l’outil de correctifs de qualité présentant les correctifs disponibles et leur statut d’installation](/help/assets/tools/status_table.png)
 
 L’outil a pour but de vous permettre d’utiliser des correctifs en libre-service pour résoudre les problèmes que vous pourriez rencontrer avec Adobe Commerce, ou d’appliquer facilement des correctifs recommandés par la prise en charge d’Adobe Commerce.
 
 >[!NOTE]
 >
->QPT est réservé aux correctifs de qualité uniquement. Les correctifs de sécurité sont disponibles dans le Centre de sécurité [Magento](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/overview).
+>QPT est réservé aux correctifs de qualité uniquement. Les correctifs de sécurité sont disponibles dans le Centre de sécurité [Magento](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
 ## Correctifs disponibles dans l’outil de correctifs de la qualité
 
-Reportez-vous à [Outil de correctifs de qualité](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans notre documentation destinée aux développeurs pour obtenir la liste des correctifs disponibles.
+Reportez-vous à [Outil de correctifs de qualité](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans notre documentation destinée aux développeurs pour obtenir la liste des correctifs disponibles.
 
 ## Installation et utilisation de l’outil de correctifs de qualité
 
@@ -51,13 +51,13 @@ Les commandes d’installation et d’utilisation sont différentes pour Adobe C
 
 ### Installation et utilisation de QPT pour Adobe Commerce On-Premise
 
-Consultez le [Guide de mise à jour logicielle > Correctifs](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/usage) dans notre documentation destinée aux développeurs pour plus d’informations sur l’installation et l’utilisation de QPT pour l’application et le rétablissement des correctifs.
+Consultez le [Guide de mise à jour logicielle > Correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) dans notre documentation destinée aux développeurs pour plus d’informations sur l’installation et l’utilisation de QPT pour l’application et le rétablissement des correctifs.
 
 ### Installation et utilisation de QPT pour Adobe Commerce sur une infrastructure cloud
 
-Consultez [Cloud for Adobe Commerce > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans notre documentation destinée aux développeurs pour plus d’informations sur l’installation et l’utilisation de QPT pour appliquer et rétablir des correctifs sur Adobe Commerce sur les infrastructures cloud.
+Consultez [Cloud for Adobe Commerce > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans notre documentation destinée aux développeurs pour plus d’informations sur l’installation et l’utilisation de QPT pour appliquer et rétablir des correctifs sur Adobe Commerce sur les infrastructures cloud.
 
 ## Lecture connexe
 
-* [Notes de mise à jour de l’outil de correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/release-notes) dans notre documentation destinée aux développeurs.
-* [Application des correctifs de compositeur fournis par Adobe](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) dans la base de connaissances d’assistance.
+* [Notes de mise à jour de l’outil de correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes) dans notre documentation destinée aux développeurs.
+* [Application des correctifs de compositeur fournis par Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) dans la base de connaissances d’assistance.

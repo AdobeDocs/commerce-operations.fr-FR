@@ -1,11 +1,11 @@
 ---
 title: Emplacement de stockage de la session
-description: Découvrez où sont stockés les fichiers de session.
+description: Découvrez les emplacements de stockage de session et la gestion des fichiers dans Adobe Commerce. Découvrez la logique de stockage et les options de configuration.
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ En tant qu’utilisateur disposant de droits d’`root`, ouvrez votre fichier `p
 
 ## Gérer la taille de session
 
-Voir la [Gestion des sessions](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-session-management) dans le _Guide de l’utilisateur_.
+Voir la [Gestion des sessions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) dans le _Guide de l’utilisateur_.
 
 ## Configuration du nettoyage de la mémoire
 

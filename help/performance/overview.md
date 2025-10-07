@@ -1,10 +1,10 @@
 ---
 title: Vue d’ensemble
-description: Suivez ces bonnes pratiques pour optimiser les performances de votre déploiement Adobe Commerce.
+description: Découvrez les bonnes pratiques en matière de performances pour optimiser votre déploiement Adobe Commerce. Découvrez des stratégies éprouvées pour optimiser la vitesse, l’efficacité et l’expérience client.
 exl-id: 5381a477-bacd-4e74-a150-7f98abc2f744
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '94'
 ht-degree: 1%
 
 ---

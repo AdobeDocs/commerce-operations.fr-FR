@@ -1,10 +1,10 @@
 ---
 title: Convertir les fichiers de disposition
-description: Convertissez des fichiers de disposition XML.
+description: Découvrez comment convertir des fichiers de disposition XML à l’aide d’outils de ligne de commande Adobe Commerce. Découvrez les mises à jour des feuilles de style XSLT et les processus de conversion de fichiers.
 exl-id: 9852b735-9b4b-43ce-887f-5c37d398bbf7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---

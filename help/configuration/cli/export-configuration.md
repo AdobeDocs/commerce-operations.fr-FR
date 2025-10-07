@@ -1,10 +1,10 @@
 ---
 title: Exporter les paramètres de configuration
-description: Exportez les paramètres de configuration Adobe Commerce dans des fichiers de configuration, également appelés image mémoire de configuration.
+description: Découvrez comment exporter les paramètres de configuration Adobe Commerce vers des fichiers à l’aide de l’image mémoire de la configuration. Découvrez le déploiement des pipelines et la gestion de la configuration.
 exl-id: db680f5e-547a-48f3-b017-d77b8cb07bfd
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---

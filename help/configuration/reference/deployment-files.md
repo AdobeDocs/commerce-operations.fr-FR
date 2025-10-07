@@ -1,11 +1,11 @@
 ---
 title: Fichiers de configuration pour le déploiement
-description: Découvrez comment fonctionnent les fichiers de configuration pour installer l’application Commerce.
+description: Découvrez le fonctionnement des fichiers de configuration pour le déploiement de l’application Adobe Commerce. Découvrez les bonnes pratiques de gestion des configurations partagées et spécifiques au système.
 feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Le fichier `config.php` contient la liste des modules installés. Adobe Commerce
 Exemples :
 
 - Désinstaller les composants : [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- Vérification du statut des composants : [`bin/magento module:status`](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
+- Vérification du statut des composants : [`bin/magento module:status`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
 - Activation ou désactivation de composants : [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md), [`bin/magento module:enable`](../../installation/tutorials/manage-modules.md).
 
 > _config.php_

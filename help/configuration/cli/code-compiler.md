@@ -1,10 +1,10 @@
 ---
 title: Compilateur de code
-description: Découvrez comment exécuter le compilateur de code à partir de la ligne de commande.
+description: Découvrez comment exécuter le compilateur de code Adobe Commerce à partir de la ligne de commande. Découvrez les processus de compilation et les techniques d’optimisation.
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---

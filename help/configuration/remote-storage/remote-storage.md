@@ -3,9 +3,9 @@ title: Configurer le stockage distant
 description: Découvrez comment configurer le module de stockage étendu pour l’application Commerce sur site.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 419a21604d1fda0a76dd0375ae2340fd6e59ec89
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,11 @@ L’activation du stockage distant peut affecter votre expérience de développe
 
 >[!INFO]
 >
->- Le stockage distant est disponible uniquement pour Commerce version 2.4.2 et ultérieure. Voir les notes de mise à jour de la version [2.4.2](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
+>- Le stockage distant est disponible uniquement pour Commerce version 2.4.2 et ultérieure. Voir les notes de mise à jour de la version [2.4.2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
 >- Le module de stockage distant offre une prise en charge _limitée_ d’Adobe Commerce sur les infrastructures cloud. Adobe ne peut pas résoudre entièrement les problèmes liés au service de carte de stockage tiers. Consultez [Configuration du stockage distant pour Commerce sur l’infrastructure cloud](cloud-support.md) pour obtenir des conseils sur l’implémentation du stockage distant pour les projets cloud.
 
-![image de schéma](../../assets/configuration/remote-storage-schema.png)
+![Diagramme de schéma de configuration du stockage distant illustrant la relation entre le stockage local et le stockage dans le cloud](../../assets/configuration/remote-storage-schema.png)
 
 ## Options de stockage à distance
 
@@ -91,7 +91,7 @@ Après avoir activé le stockage distant pour une carte spécifique, vous pouvez
 
 >[!INFO]
 >
->La commande sync migre uniquement les fichiers du répertoire `pub/media`, _pas_ les fichiers d’import/export du répertoire `var`. Voir [Importation/exportation planifiée](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=fr) dans le Guide de l’utilisateur de _Commerce 2.4_.
+>La commande sync migre uniquement les fichiers du répertoire `pub/media`, _pas_ les fichiers d’import/export du répertoire `var`. Voir [Importation/exportation planifiée](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) dans le Guide de l’utilisateur de _Commerce 2.4_.
 
 <!-- link definitions -->
 

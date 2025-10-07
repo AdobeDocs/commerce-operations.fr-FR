@@ -1,11 +1,11 @@
 ---
 title: Référence des chemins de configuration des services
-description: Voir une liste des valeurs de configuration des services.
+description: Découvrez les chemins et les valeurs de configuration des services dans les paramètres d’administration Adobe Commerce. Découvrez les options de configuration de l’intégration de l’API Web, d’OAuth et du service.
 feature: Configuration, Services
 exl-id: 77818c54-21ae-4a66-81bf-468bd7d09cda
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---

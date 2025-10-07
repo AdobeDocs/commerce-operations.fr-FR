@@ -1,11 +1,11 @@
 ---
 title: Configurer et utiliser le vernis
-description: Découvrez comment Varnish stocke des fichiers et améliore le trafic HTTP.
+description: Découvrez comment configurer et utiliser la mise en cache de vernis pour Adobe Commerce. Découvrez les techniques d’accélération HTTP, de stockage de fichiers et d’optimisation des performances.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---

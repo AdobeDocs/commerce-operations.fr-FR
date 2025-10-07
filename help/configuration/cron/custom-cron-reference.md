@@ -1,10 +1,10 @@
 ---
 title: Tâche cron personnalisée et référence de groupe cron
-description: Découvrez comment personnaliser des crons à l’aide de groupes cron.
+description: Découvrez comment personnaliser les crons à l’aide des groupes cron et des onglets cron dans Adobe Commerce. Découvrez la configuration des modules personnalisés et la configuration des tâches planifiées.
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---

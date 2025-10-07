@@ -1,11 +1,11 @@
 ---
 title: Référence des chemins de configuration des clients
-description: Voir une liste des valeurs de configuration des clients.
+description: Découvrez les chemins et les valeurs de configuration du client dans les paramètres d’administration Adobe Commerce. Découvrez les options de newsletter, de gestion de compte et de service client.
 feature: Configuration, Customers
 exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---

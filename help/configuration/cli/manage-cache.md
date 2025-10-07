@@ -1,10 +1,10 @@
 ---
 title: Gérer le cache
-description: Gérez les types de cache et affichez l’état du cache à partir de la ligne de commande à l’aide de l’interface de ligne de commande Commerce
+description: Découvrez comment gérer les types de cache et afficher l’état du cache à l’aide des commandes de l’interface de ligne de commande Adobe Commerce. Découvrez les techniques de gestion et d’optimisation du cache.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Vous pouvez utiliser le système de gestion du cache d’Adobe Commerce pour am�
 >[!NOTE]
 >
 >
->Les administrateurs de site Commerce peuvent gérer le cache à partir de l’Administration à l’aide de l’outil Système de gestion du cache. Voir [ Gestion du cache ](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management) dans le _Guide des systèmes d’administration_.
+>Les administrateurs du site Commerce peuvent gérer le cache à partir de l’Administration à l’aide de l’outil Système de gestion du cache. Voir [ Gestion du cache ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) dans le _Guide des systèmes d’administration_.
 
 
 ## Affichage de l’état du cache
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Pour obtenir une description détaillée des types de cache par défaut pris en charge par Adobe Commerce, reportez-vous à la section [Caches](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management#caches) du _Guide des systèmes d’administration_.
+>Pour obtenir une description détaillée des types de cache par défaut pris en charge par Adobe Commerce, reportez-vous à la section [Caches](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) du _Guide des systèmes d’administration_.
 
 
 ## Activation ou désactivation des types de cache

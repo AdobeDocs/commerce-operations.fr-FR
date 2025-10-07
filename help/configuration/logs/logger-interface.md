@@ -1,11 +1,11 @@
 ---
 title: Interface de l’enregistreur
-description: Prise en main de l’interface de l’enregistreur.
+description: Découvrez comment utiliser l’interface de l’enregistreur dans Adobe Commerce pour la journalisation personnalisée. Découvrez l’implémentation de PSR-3 et les fonctions de journalisation.
 feature: Configuration, Logs
 exl-id: fdb1b431-405a-4c32-aff1-9e50bf0a2c90
-source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---

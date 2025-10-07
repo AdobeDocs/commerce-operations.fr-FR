@@ -1,11 +1,11 @@
 ---
 title: Configurer la mise en cache sous CentOS
-description: Installez et configurez memcached sur CentOS.
+description: Découvrez comment installer et configurer la mise en cache de mmemcache sur CentOS pour la mise en cache d’Adobe Commerce. Découvrez les instructions de configuration et des conseils d’optimisation.
 feature: Configuration, Cache, Storage
 exl-id: fc4ad18b-7e99-496e-aebc-1d7640d8716c
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---

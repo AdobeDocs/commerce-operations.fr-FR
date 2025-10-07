@@ -1,11 +1,11 @@
 ---
 title: Configuration avancée du vernis
-description: Configurez les fonctionnalités de vernis avancées, notamment les modes contrôle de l’intégrité, grâce et saint.
+description: Découvrez comment configurer des fonctionnalités de vernis avancées pour Adobe Commerce, notamment les contrôles d’intégrité, la grâce et les modes saint. Découvrez les techniques d’optimisation VCL.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---

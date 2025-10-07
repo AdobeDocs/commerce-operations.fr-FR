@@ -1,10 +1,10 @@
 ---
 title: Exécution des utilitaires d’assistance
-description: Résolvez les problèmes de votre projet Commerce à l’aide de l’utilitaire de prise en charge intégré.
+description: Découvrez comment exécuter des utilitaires d’assistance pour résoudre les problèmes liés à votre projet Adobe Commerce. Découvrez les outils de diagnostic et de support intégrés.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Les utilitaires d’assistance Adobe Commerce (également appelés collecteurs de données[&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/support#data-collector) permettent aux utilisateurs de collecter des informations de dépannage sur votre système, que notre équipe d’assistance peut utiliser.
+Les utilitaires d’assistance Adobe Commerce (également appelés collecteurs de données[ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) permettent aux utilisateurs de collecter des informations de dépannage sur votre système, que notre équipe d’assistance peut utiliser.
 
 Adobe Commerce utilise ces sauvegardes, également appelées _vidages_, pour analyser les problèmes qui nécessitent l’accès à votre code. Voici un scénario type :
 

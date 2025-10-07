@@ -5,9 +5,9 @@ feature: Support, Tools and External Services
 role: Admin
 exl-id: e67e5823-d878-4efc-90af-c7bb8c59d654
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -33,18 +33,18 @@ Il permet d’effectuer les opérations suivantes :
 
 Voici un exemple du tableau d’état auquel vous pouvez accéder pour afficher les correctifs disponibles :
 
-![Magento_patches_list](/help/assets/tools/status_table.png)
+![Tableau de statut de l’outil de correctifs de qualité présentant les correctifs disponibles et leur statut d’installation](/help/assets/tools/status_table.png)
 
 L’outil a pour but de vous permettre d’utiliser des correctifs en libre-service pour résoudre les problèmes que vous pourriez rencontrer avec Adobe Commerce, ou d’appliquer facilement des correctifs recommandés par la prise en charge d’Adobe Commerce.
 
 >[!NOTE]
 >
->QPT est réservé aux correctifs de qualité uniquement. Les correctifs de sécurité sont disponibles dans les [ Notes de mise à jour d’Adobe Commerce et de Magento Open Source ](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html?lang=fr).
+>QPT est réservé aux correctifs de qualité uniquement. Les correctifs de sécurité sont disponibles dans les [ Notes de mise à jour d’Adobe Commerce et de Magento Open Source ](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
 
 ## Correctifs disponibles dans le [!DNL Quality Patches Tool]
 
 Dans cette section de la base de connaissances de l’assistance Adobe Commerce, vous trouverez des descriptions détaillées des problèmes, résolus par des correctifs QPT, regroupés par version de QPT.
-Vous pouvez également afficher la liste des correctifs QPT disponibles et filtrer le composant par, à l’aide du tableau généré dynamiquement sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans notre base de connaissances d’assistance.
+Vous pouvez également afficher la liste des correctifs QPT disponibles et filtrer le composant par, à l’aide du tableau généré dynamiquement sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans notre base de connaissances d’assistance.
 
 ## Installation et utilisation du [!DNL Quality Patches Tool]
 
@@ -56,8 +56,8 @@ Consultez [Commerce > Outils > Utilisation](../usage.md) dans la documentation d
 
 ### Installation et utilisation de QPT pour Adobe Commerce sur une infrastructure cloud
 
-Consultez le [Guide de Commerce sur les infrastructures cloud > Application de correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans notre documentation destinée aux développeurs, pour plus d’informations sur l’installation et l’utilisation de QPT pour appliquer et rétablir des correctifs sur Adobe Commerce sur les infrastructures cloud.
+Consultez le [Guide de Commerce sur les infrastructures cloud > Application de correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans notre documentation destinée aux développeurs, pour plus d’informations sur l’installation et l’utilisation de QPT pour appliquer et rétablir des correctifs sur Adobe Commerce sur les infrastructures cloud.
 
 ## Lecture connexe
 
-* [[!DNL Quality Patches Tool] notes de mise à jour](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=fr) dans notre documentation destinée aux développeurs et développeuses.
+* [[!DNL Quality Patches Tool] notes de mise à jour](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) dans notre documentation destinée aux développeurs et développeuses.

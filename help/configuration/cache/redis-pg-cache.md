@@ -1,11 +1,11 @@
 ---
 title: Utiliser Redis pour le cache par défaut
-description: Découvrez comment configurer Redis comme cache par défaut pour Adobe Commerce.
+description: Découvrez comment configurer Redis comme cache par défaut pour Adobe Commerce. Découvrez l’installation de la ligne de commande, les options de configuration et les techniques de validation.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: 2c489f2655e6fb067de1730355df6cd3683ea562
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---

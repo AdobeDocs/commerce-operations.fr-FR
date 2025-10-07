@@ -1,10 +1,10 @@
 ---
 title: Définir le mode de fonctionnement
-description: En savoir plus sur la définition des modes de fonctionnement d’Adobe Commerce.
+description: Découvrez comment définir des modes de fonctionnement Adobe Commerce entre le développement et la production. Découvrez les commandes de changement de mode et leurs implications en matière de sécurité.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---

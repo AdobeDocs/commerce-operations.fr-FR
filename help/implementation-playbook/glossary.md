@@ -1,11 +1,11 @@
 ---
 title: Glossaire
-description: Termes et définitions dans Adobe Commerce
+description: Découvrez les termes et définitions clés utilisés dans les projets d’implémentation Adobe Commerce. Découvrez le vocabulaire essentiel pour les développeurs, les commerçants et les équipes techniques.
 exl-id: 82abd8c3-fb5a-4599-8435-f1f2f6122397
 recommendations: noDisplay, noCatalog
-source-git-commit: a436200f76cc200b70113daf7dff5929edf0b104
+source-git-commit: 062267b8b06e41d89f704144e640fc1254952532
 workflow-type: tm+mt
-source-wordcount: '8'
+source-wordcount: '23'
 ht-degree: 0%
 
 ---

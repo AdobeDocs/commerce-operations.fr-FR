@@ -1,10 +1,10 @@
 ---
 title: Déploiement de fichiers de vue statiques
-description: Découvrez comment écrire des fichiers statiques dans le système de fichiers Commerce en mode de production.
+description: Découvrez comment déployer des fichiers de vues statiques sur le système de fichiers Adobe Commerce en mode production. Découvrez les commandes de déploiement et les techniques d’optimisation.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1133'
 ht-degree: 0%
 
 ---

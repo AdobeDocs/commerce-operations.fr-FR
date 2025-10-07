@@ -1,10 +1,10 @@
 ---
 title: Traitements cron
-description: Découvrez les groupes cron et la création d’une tâche cron personnalisée.
+description: Découvrez les groupes cron et comment créer des tâches cron personnalisées dans Adobe Commerce. Découvrez la configuration des tâches planifiées et la configuration du groupe cron.
 exl-id: a9d83af7-9979-4653-adc9-30ffeb13a5ce
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -21,5 +21,5 @@ L’application Commerce fournit les groupes cron suivants :
 - `index`, qui actualise les [indexeurs](../cli/manage-indexers.md)
 - `consumers`, qui exécute la file d’attente de messages [consommateurs](../cli/start-message-queues.md)
 - Ces rubriques sont disponibles dans Adobe Commerce uniquement
-   - `staging`, qui exécute [ tâches liées à l’évaluation ](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/staging/content-staging)
+   - `staging`, qui exécute [ tâches liées à l’évaluation ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging)
    - `catalog_event`, qui exécute des tâches pour les règles de cible et de panier

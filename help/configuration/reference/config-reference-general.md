@@ -1,11 +1,11 @@
 ---
 title: Référence des chemins de configuration généraux
-description: Consultez une liste de valeurs de configuration générales et avancées.
+description: Découvrez les chemins et valeurs de configuration généraux et avancés d’Adobe Commerce. Découvrez les options de configuration du système, de la sécurité et de l’administration.
 feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---

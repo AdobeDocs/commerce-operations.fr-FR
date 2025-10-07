@@ -1,11 +1,11 @@
 ---
 title: Utilisation de Redis pour le stockage de session
-description: Découvrez comment configurer Redis pour le stockage de session.
+description: Découvrez comment configurer Redis pour le stockage de session dans Adobe Commerce. Découvrez l’installation de la ligne de commande, les options de configuration et les techniques d’optimisation des performances.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: 3886bf261f8f9d2594602850bef9c54db03fb269
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '724'
 ht-degree: 1%
 
 ---
