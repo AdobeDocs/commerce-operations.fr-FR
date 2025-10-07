@@ -1,9 +1,9 @@
 ---
 title: Présentation des scores et des recommandations de l’index de santé SWAT
 description: Découvrez ce que l’index d’intégrité de l’outil d’analyse à l’échelle du site signifie pour votre site Adobe Commerce. Découvrez comment interpréter les scores et utiliser efficacement les recommandations.
-source-git-commit: e39e0229538bb245fbe744ebfd642572fc2dc790
+source-git-commit: d9b598e9399c26c8fb7c52e9f211029689343ce9
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 Lorsque vous téléchargez le **[!DNL Recommendations Report]** à partir du tableau de bord SWAT, le PDF inclut un score **[!DNL Site Wide Analysis Tool Health Index]** dans la section **Introduction** :
 
-![Score de l’index d’intégrité de l’outil Analysis à l’échelle du site dans le rapport Recommendations généré](https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/assets/38345/cf56a076-e5a8-488d-927d-a3989966a089)
+![Score de l’index d’intégrité de l’outil Analysis à l’échelle du site dans le rapport Recommendations généré](/help/assets/tools/swat-health-index-scroe.png)
 
 L’index d’intégrité SWAT permet de surveiller et d’améliorer l’intégrité globale de votre site Adobe Commerce. Ce score est un outil d’orientation et non une mesure absolue de réussite ou d’échec.
 
