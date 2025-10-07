@@ -3,9 +3,9 @@ title: Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.71
 description: Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans  [!DNL Quality Patches Tool] (QPT) v1.1.71.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 57fea42c0c893166c3489f6b95e09ccba787b9f1
+source-git-commit: 4660942d90435eaeb6960206c29733bed6453b6a
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 QPT v1.1.71 comprend les correctifs suivants :
 
 
-* **ACSD-60624** : **[!UICONTROL Upload Image]** ne fonctionne pas pour le contenu vide dans les sections [!UICONTROL Image], [!UICONTROL Banner] et [!UICONTROL Slider] dans [!DNL Page Builder].
+* **ACSD-60624** : le chargement de l’image échoue pour le contenu vide dans les sections Image, Bannière et Curseur de [!DNL Page Builder]
 * **ACSD-67089** : problème de pagination dans l’API `inventory/export-stock-salable-qty`, qui limite incorrectement la `total_count` à la taille de la page.
 * **ACSD-67093** : la récupération des commandes via [!DNL GraphQL] à l’aide du filtre de période renvoie des résultats incorrects.
 * **ACSD-67459** : impossible d&#39;importer les produits dont la description dépasse 65 536 caractères.
