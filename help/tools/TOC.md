@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 9d6824397b3c1456d8fcf0530a0a6ffff2581277
+source-git-commit: 5491bb0d5cfeaf67850a5eb4d17ea975724a61fb
 workflow-type: tm+mt
-source-wordcount: '8549'
+source-wordcount: '8585'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 0%
    - [Tableau de bord](site-wide-analysis-tool/dashboard.md)
    - [Informations](site-wide-analysis-tool/information.md)
    - [Recommendations](site-wide-analysis-tool/recommendations.md)
+   - [Score de l’index d’intégrité SWAT](site-wide-analysis-tool/swat-health-index.md)
    - [Exceptions](site-wide-analysis-tool/exceptions.md)
    - [Extensions](site-wide-analysis-tool/extensions.md)
    - [Alertes](site-wide-analysis-tool/alerts.md)
@@ -34,13 +35,13 @@ ht-degree: 0%
    - [Alertes gérées pour Adobe Commerce : alerte d’avertissement de mémoire](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert.md)
    - [Alertes gérées sur Adobe Commerce : alerte critique de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert.md)
    - [Alertes gérées sur Adobe Commerce : alerte critique de la mémoire](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert.md)
-   - [Alertes gérées pour Adobe Commerce : alerte critique [!DNL Apdex] &#x200B;](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert.md)
+   - [Alertes gérées pour Adobe Commerce : alerte critique [!DNL Apdex] ](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert.md)
    - [Alertes gérées sur Adobe Commerce: [!DNL MariaDB] alerts](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
    - [Alertes gérées pour Adobe Commerce : alerte d [!DNL Apdex] avertissement](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
    - [Alertes gérées pour Adobe Commerce : alerte d’avertissement de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Outil de correctifs de qualité {#quality-patches-tool}
    - [[!DNL Quality Patches Tool] : outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool] : rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr){target="_blank"}
+   - [[!DNL Quality Patches Tool] : rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Utilisation](quality-patches-tool/usage.md)
    - [Notes de mise à jour](quality-patches-tool/release-notes.md)
    - Correctifs disponibles dans l’outil de correctifs de la qualité {#patches-available-in-qpt}
@@ -396,7 +397,7 @@ ht-degree: 0%
          - [ACSD-51230 : le compte de carte cadeau est supprimé](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51230-gift-card-account-is-deleted.md)
          - [ACSD-51379 : les modifications apportées au contenu texte de la page via  [!DNL Page Builder]  ne sont pas enregistrées](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51379-changes-made-to-page-text-content-via-page-builder-are-not-saved.md)
          - [ACSD-51305 : produits enfants composites en rupture de stock non disponibles dans la réponse GraphQL](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51305-out-of-stock-composite-child-products-unavailable-in-graphql-response.md)
-         - [ACSD-51294 : prix, quantité, taxe, expédition, chiffre d’affaires envoyé en tant que chaîne à et  [!DNL Google Analytics] &#x200B;](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51294-price-quantity-tax-shipping-and-revenue-are-sent-as-string-to-google-analytics-and-gtm.md)
+         - [ACSD-51294 : prix, quantité, taxe, expédition, chiffre d’affaires envoyé en tant que chaîne à et  [!DNL Google Analytics] ](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51294-price-quantity-tax-shipping-and-revenue-are-sent-as-string-to-google-analytics-and-gtm.md)
          - [ACSD-51291 : l’administration restreinte peut ajouter des images/vidéos au produit affecté à plusieurs sites web](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51291-restricted-admin-can-add-images-videos-to-product-assigned-to-multiple-websites.md)
          - [ACSD-50849 : l’ajout d’un nouveau produit à une catégorie après l’effacement du cache entraîne une incohérence des positions et des sélections](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-50849-adding-new-product-to-category-after-clearing-cache.md)
          - [ACSD-51204 : le produit ne revient pas en stock après la création de l&#39;avoir](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51204-product-does-not-return-back-in-stock-after-creating-credit-memo.md)
@@ -872,17 +873,19 @@ ht-degree: 0%
          - [AC-15223 : la page Storefront affiche le contenu mis en cache après le changement de magasin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/ac-15223-storefront-page-shows-cached-content-after-switching-stores.md)
       - v1.1.70 {#v1-1-70}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.70](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/overview.md)
+         - [ACSD-66120: [!DNL GraphQL] affiche des pourcentages de remise et des prix de base incorrects lorsque les prix du catalogue incluent la taxe](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-66120.md)
+         - [ACSD-67289 : le prix normal ne s&#39;affiche pas lorsque le prix spécial est appliqué](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67289.md)
+         - [ACSD-67166 : exécution en double de la requête cataloginventory_stock_status lors du chargement d’un devis sur le storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67166.md)
          - [ACSD-67659 : les messages d’erreur traduits renvoient un code d’erreur UNDEFINED](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67659.md)
          - [ACSD-66157 : Le prix spécial ne prend pas effet pour les sites web créés dans différents fuseaux horaires](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-66157.md)
          - [ACSD-67102 : le chargement des catégories est lent ou expire lorsqu’il y a un grand nombre de catégories et de produits](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67102.md)
-         - [ACSD-67289 : le prix normal ne s&#39;affiche pas lorsque le prix spécial est appliqué](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67289.md)
-         - [ACSD-67166 : exécution en double de la requête cataloginventory_stock_status lors du chargement d’un devis sur le storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67166.md)
       - v1.1.71 {#v1-1-71}
          - [Aperçu : [!DNL Quality Patches Tool] (QPT) v1.1.71](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/overview.md)
-         - [ACSD-60624 : le chargement de l’image échoue pour le contenu vide dans les sections Image, Bannière et Curseur de [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
          - [ACSD-67643 : entrées en double créées lors des mises à jour planifiées dans les environnements de catégories fortement imbriqués](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67643.md)
-         - [ACSD-67904 : impossible de passer des commandes si le nom de la ville contient des chiffres (0-9), une esperluette (&amp;), un point (.) ou des parenthèses ()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
          - [ACSD-67603 : temps de traitement long de la génération du plan de site pour les produits avec l’inclusion d’images activée](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
+         - [ACSD-67652 : statut du bundle renvoyé comme étant en rupture de stock dans les appels GraphQL avec des produits enfants et parents en stock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652.md)
+         - [ACSD-60624 : le chargement de l’image échoue pour le contenu vide dans les sections Image, Bannière et Curseur de [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
+         - [ACSD-67904 : impossible de passer des commandes si le nom de la ville contient des chiffres (0-9), une esperluette (&amp;), un point (.) ou des parenthèses ()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
          - [ACSD-67459 : impossible d’importer des produits dont les descriptions dépassent 65 536 caractères](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
    - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Référence des outils de ligne de commande {#cli-reference}
@@ -903,7 +906,7 @@ ht-degree: 0%
    - [Onglet Alertes](observation-for-adobe-commerce/alerts-tab.md)
    - [Onglet WAF](observation-for-adobe-commerce/waf-tab.md)
    - [Onglet CDN](observation-for-adobe-commerce/cdn-tab.md)
-   - [Onglet  [!DNL RabbitMQ] &#x200B;](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [Onglet  [!DNL RabbitMQ] ](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [Onglet Cron](observation-for-adobe-commerce/cron-tab.md)
    - [Onglet Indexation](observation-for-adobe-commerce/indexing-tab.md)
    - [Onglet Aperçu rapide](observation-for-adobe-commerce/oac-quickview-tab.md)
@@ -931,6 +934,6 @@ ht-degree: 0%
       - [Données nécessitant une migration manuelle](data-migration-tool/migrate-data/manual.md)
       - [Étapes suivant la migration des données](data-migration-tool/migrate-data/post-migration.md)
    - Ressources {#resources}
-      - [Dépannage](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=fr)
+      - [Dépannage](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Journal des modifications](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=fr)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
