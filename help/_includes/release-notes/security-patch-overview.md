@@ -21,4 +21,4 @@ Pour obtenir des instructions sur le téléchargement et l’application de corr
 
 >[!NOTE]
 >
->Les correctifs de sécurité de prise en charge étendue pour les versions 2.4.4 et 2.4.5 sont disponibles uniquement pour les clients Adobe Commerce et ne sont pas disponibles pour la base de code Magento Open Source. Voir [ Prise en charge étendue ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+>Les correctifs de sécurité de prise en charge étendue pour les versions 2.4.4 et 2.4.5 sont disponibles uniquement pour les clients Adobe Commerce et ne sont pas disponibles pour la base de code Magento Open Source. Voir [&#x200B; Prise en charge étendue &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
