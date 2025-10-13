@@ -17,8 +17,8 @@ Les versions de correctifs de sécurité peuvent également inclure des modifica
 
 Chaque version de correctif de sécurité est basée sur la version complète antérieure du correctif. Il contient les correctifs de qualité et de sécurité de la version précédente du correctif ainsi que les correctifs de sécurité créés entre la version précédente complète du correctif et la version précédente du correctif de sécurité.
 
-Pour obtenir des instructions sur le téléchargement et l’application de correctifs de sécurité, consultez [Comment obtenir et appliquer des correctifs de sécurité](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) dans la _base de connaissances Adobe Commerce_.
+Pour obtenir des instructions sur le téléchargement et l’application de correctifs de sécurité, consultez [Comment obtenir et appliquer des correctifs de sécurité](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) dans la _base de connaissances Adobe Commerce_.
 
 >[!NOTE]
 >
->Les correctifs de sécurité de prise en charge étendue pour les versions 2.4.4 et 2.4.5 sont disponibles uniquement pour les clients Adobe Commerce et ne sont pas disponibles pour la base de code Magento Open Source. Voir [&#x200B; Prise en charge étendue &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+>Les correctifs de sécurité de prise en charge étendue pour les versions 2.4.4 et 2.4.5 sont disponibles uniquement pour les clients Adobe Commerce et ne sont pas disponibles pour la base de code Magento Open Source. Voir [&#x200B; Prise en charge étendue &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
