@@ -2,7 +2,7 @@
 title: Politique de version
 description: Découvrez les différents types de versions d’Adobe Commerce.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: fd2ebc358850e47975ce6a3b8df058774440bcf2
+source-git-commit: bf7049ad5b805397f823e7e4cb430e9ecca5965e
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 0%
@@ -81,10 +81,10 @@ Les correctifs individuels contiennent des correctifs de qualité à faible impa
 
 Les correctifs isolés sont des correctifs de sécurité non cumulatifs publiés indépendamment d&#39;un correctif de sécurité complet pour permettre une implémentation plus rapide. Chaque correctif de sécurité isolé résout un problème de sécurité spécifique et est inclus dans le dernier correctif de sécurité complet ou un correctif à venir. Vous trouverez des informations détaillées sur le problème dans le bulletin de sécurité associé, qui contient des liens vers un article de la base de connaissances (Base de connaissances) contenant les détails du correctif, la manière d’appliquer le correctif et des informations supplémentaires.
 
-Consultez le [Centre de sécurité](https://helpx.adobe.com/fr/security/products/magento.html) pour connaître les dernières mises à jour de sécurité disponibles pour Adobe Commerce.
+Consultez le [Centre de sécurité](https://helpx.adobe.com/security/products/magento.html) pour connaître les dernières mises à jour de sécurité disponibles pour Adobe Commerce.
 
 ## Correctif personnalisé
 
-Créé par du personnel non Adobe pour résoudre un problème ou modifier le code Adobe Commerce pour diverses raisons. Les correctifs personnalisés sont fournis via l’outil [Quality Patches Tool](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/usage).
+Créé par du personnel non Adobe pour résoudre un problème ou modifier le code Adobe Commerce pour diverses raisons. Les correctifs personnalisés sont fournis via l’outil [Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage).
 
-<!-- Last updated from includes: 2025-05-28 16:37:31 -->
+<!-- Last updated from includes: 2025-10-09 22:53:22 -->
