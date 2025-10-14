@@ -29,7 +29,7 @@ Le système de file d’attente des messages doit être établi avant d’instal
 
 >[!TIP]
 >
->[ Consultez toujours la page de téléchargement d’Apache ActiveMQ Artemis ](https://activemq.apache.org/components/artemis/download/) la dernière version stable avant l’installation. Les exemples de ce document utilisent la version 2.42.0, qui est la dernière version stable en date de septembre 2025.
+>[&#x200B; Consultez toujours la page de téléchargement d’Apache ActiveMQ Artemis &#x200B;](https://activemq.apache.org/components/artemis/download/) la dernière version stable avant l’installation. Les exemples de ce document utilisent la version 2.42.0, qui est la dernière version stable en date de septembre 2025.
 
 
 ## Installation des artéfacts Apache ActiveMQ

@@ -53,7 +53,7 @@ Pour participer à cette version bêta, remplissez et envoyez le formulaire d’
 
 ### Amélioration des fonctionnalités de recherche pour la recherche en direct (Beta public)
 
-Cette version Beta prend en charge trois nouvelles fonctionnalités dans la requête [`productSearch` ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) :
+Cette version Beta prend en charge trois nouvelles fonctionnalités dans la requête [`productSearch` &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) :
 
 - **Recherche superposée** - Effectuez une recherche dans un autre contexte de recherche - Grâce à cette fonctionnalité, vous pouvez effectuer jusqu’à deux couches de recherche pour vos requêtes de recherche. Par exemple :
 
@@ -121,7 +121,7 @@ Consultez le [calendrier des versions](schedule.md) pour obtenir la liste des da
 
 Les versions alpha et bêta d’Adobe Commerce sont distribuées de la même manière que toute autre version de correctif Adobe Commerce : en tant que métapaquets du compositeur sur `https://repo.magento.com`. Le code source est disponible sur [GitHub](https://github.com/magento/magento2).
 
-Voir [ Démarrage rapide de l’installation du compositeur](../installation/composer.md) pour plus d’informations.
+Voir [&#x200B; Démarrage rapide de l’installation du compositeur](../installation/composer.md) pour plus d’informations.
 
 #### Rapports sur les événements
 
