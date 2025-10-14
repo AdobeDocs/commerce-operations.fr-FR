@@ -1,78 +1,37 @@
 ---
-title: Calendrier des versions
-description: Découvrez quand Adobe prévoit d’annoncer de nouvelles fonctionnalités et versions d’Adobe Commerce. Découvrez les calendriers des correctifs à venir et les calendriers de diffusion des fonctionnalités pour une meilleure planification.
+title: Calendrier de publication des correctifs
+description: Découvrez quand Adobe prévoit d’annoncer la publication de nouveaux correctifs et correctifs de sécurité pour Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 5f9f0e1dab7f5e4580f077693039ea387df23880
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 2%
+source-wordcount: '297'
+ht-degree: 0%
 
 ---
 
 
-# Calendrier des versions
+# Calendrier de publication des correctifs
 
-Adobe s’efforce en permanence de trouver le bon équilibre entre la simplicité et la prévisibilité des mises à niveau de produits et l’accélération de la diffusion des améliorations et des nouvelles fonctionnalités aux utilisateurs et utilisatrices précoces (voir [politique de version](versioning-policy.md)). L’objectif de cette planification est de fournir des dates pour lesquelles Adobe prévoit d’annoncer la publication de nouvelles fonctionnalités importantes.
+Adobe s’efforce en permanence de trouver le bon équilibre entre la simplicité et la prévisibilité des mises à niveau de produits et l’accélération des améliorations pour les utilisateurs précoces (voir [politique de version](versioning-policy.md)).
 
-## Fonctionnalités, infrastructure cloud et extensibilité
-
-Les nouvelles fonctionnalités, mises à jour de fonctionnalité, mises à jour de l’infrastructure cloud et mises à jour de l’extensibilité sont fournies indépendamment des versions de correctif et sont disponibles via des modules externes, des extensions, des outils ou des services web. Voici quelques exemples :
-
-- ![Icône Fonctionnalité](../assets/icons/feature.svg) [**Fonctionnalités et fonctions**](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/release-information/release-notes-all)—Nouvelles fonctionnalités et fonctions fournies indépendamment des versions de correctifs. Par exemple, [B2B](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/release-notes), Catalog Service, Data Connection, Live Search et Product Recommendations.
-
-- ![Icône d’infrastructure](../assets/icons/servers.svg) [**Infrastructure cloud**](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) : nouvelles fonctionnalités et améliorations d’Adobe Commerce sur l’infrastructure cloud et des packages de la suite d’outils cloud pour Commerce, qui déploient et gèrent les installations et mises à niveau d’Adobe Commerce sur la plateforme cloud.
-
-- ![Icône d’extensibilité](../assets/icons/brackets.svg) [**Extensibilité**](https://developer.adobe.com/commerce/extensibility/) : nouveaux outils et services de développement pour une extensibilité hors processus, fournis indépendamment des versions de correctifs. Par exemple, le kit de démarrage d’intégration, l’interface utilisateur d’administration SDK, Adobe I/O Events pour Commerce et le maillage API.
-
-La liste suivante fournit les dates des mises à jour planifiées des fonctionnalités, de l’infrastructure cloud et des extensions (les dates peuvent changer) :
-
-- mercredi 11 février 2025
-- mercredi 8 avril 2025
-- mercredi 10 juin 2025
-- mercredi 12 août 2025
-- mercredi 14 octobre 2025
+L’objectif de ce planning est de fournir les dates auxquelles Adobe prévoit d’annoncer la publication des [correctifs](versioning-policy.md#patch-release) pour chaque ligne de version prise en charge de l’application principale Adobe Commerce PHP. Les versions de correctifs sont l’occasion de mettre à niveau la base de code principale pour garantir la sécurité, la fiabilité et les performances de votre plateforme.
 
 >[!NOTE]
 >
->Les mises à jour des fonctionnalités, de l’infrastructure cloud et de l’extensibilité peuvent varier tout au long de l’année. Cependant, Adobe publie régulièrement et en permanence des améliorations pour ces zones entre les dates spécifiées sur cette page. Voir [Qu’est-ce qu’Adobe Commerce ?](https://business.adobe.com/products/magento/magento-commerce.html) en savoir plus sur les dernières fonctionnalités.
-
-## Correctifs
-
-Adobe publie également des [correctifs](versioning-policy.md#patch-release) pour chaque ligne de version prise en charge de l’application principale Adobe Commerce PHP. Les versions de correctifs sont l’occasion de mettre à niveau la base de code principale pour garantir la sécurité, la fiabilité et les performances de votre plateforme.
+>Pour en savoir plus sur les nouvelles fonctionnalités, l’infrastructure cloud et les versions d’extensibilité, consultez la documentation de la version [Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
 
 Outre les correctifs de qualité, de sécurité et Beta planifiés répertoriés sur cette page, Adobe permet d’accéder à des [correctifs individuels](versioning-policy.md#individual-patch) via l’[outil de correctifs de qualité](../tools/quality-patches-tool/usage.md). Cet outil vous permet d’appliquer, d’annuler et d’afficher des informations générales sur tous les correctifs individuels disponibles pour la version installée d’Adobe Commerce.
 
-Le tableau suivant indique les dates des mises à jour programmées des correctifs (ces dates peuvent être modifiées) :
+À compter de janvier 2026, Adobe Commerce passera à un calendrier de publication mensuelle des correctifs avec la stratégie suivante :
 
-<table>
-<thead>
-  <tr>
-    <th>Disponibilité générale</th>
-    <th>Correctifs</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-  <tr>
-    <td>mercredi 11 février 2025</td>
-    <td><img alt="Icône de version de correctif" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">Correctif Beta </a> : 2.4.8-beta2<br><img alt="Icône de version de correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Correctifs de sécurité</a> : pour 2.4.7, 2.4.6, 2.4.5 et 2.4.4</td>
-  </tr>
-  <tr>
-    <tr>
-    <td>mercredi 8 avril 2025</td>
-    <td><img alt="Icône de version de correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md"><strong>Adobe Commerce 2.4.8</a></strong> :<ul><li>Améliorations des performances</li><li>Amélioration de la qualité</li><li>Améliorations de la sécurité</li><li>Mises à jour des dépendances tierces</li></ul><img alt="Icône de version de correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md"> Correctifs de sécurité </a> : pour les versions 2.4.7, 2.4.6, 2.4.5 et 2.4.4</td>
-  </tr>
-  <tr>
-    <td>mercredi 10 juin 2025</td>
-    <td><img alt="Icône de version de correctif" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">Correctif Alpha </a> : 2.4.9-alpha1<br><img alt="Icône de version de correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Correctifs de sécurité</a> : pour 2.4.8, 2.4.7, 2.4.6 et 2.4.5</td>
-  </tr>
-  <tr>
-    <td>mercredi 12 août 2025</td>
-    <td><img alt="Icône de version de correctif" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">Correctif Alpha </a> : 2.4.9-alpha2<br><img alt="Icône de version de correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Correctifs de sécurité</a> : pour 2.4.8, 2.4.7, 2.4.6 et 2.4.5</td>
-  </tr>
-  <tr>
-    <td>mercredi 14 octobre 2025</td>
-    <td><img alt="Icône de version de correctif" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">Correctif Alpha </a> : 2.4.9-alpha3<br><img alt="Icône de version de correctif" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Correctifs de sécurité</a> : pour 2.4.8, 2.4.7 et 2.4.6</td>
-  </tr>
-</tbody>
-</table>
+- **Correctifs de sécurité isolés**—Les correctifs de sécurité individuels, non cumulatifs [correctifs de sécurité](versioning-policy.md#isolated-patch) peuvent être publiés chaque mois et inclure des correctifs de sécurité pour toutes les lignes de version [prises en charge](lifecycle-policy.md) (y compris la prise en charge régulière et étendue).
+
+- **Correctifs de sécurité** : au minimum, les [correctifs de sécurité](versioning-policy.md#security-patch-release) sont publiés chaque année (en mai) pour toutes les lignes de version [prises en charge](lifecycle-policy.md). Ces correctifs comprennent tous les correctifs de sécurité isolés publiés précédemment. Adobe peut publier des correctifs de sécurité supplémentaires en novembre si nécessaire, mais cela n’est pas garanti.
+
+- **Patch**—Un [patch](versioning-policy.md#patch-release) complet pour la ligne de version Adobe Commerce 2.4.x LTS (période de prise en charge de 3 ans) est publié chaque année (mai).
+
+- **Correctifs Beta**—Deux [correctifs bêta](versioning-policy.md#beta-patch-release) pour la ligne de version Adobe Commerce 2.4.x LTS sont publiés deux fois par an (mars et novembre).
+
+Voir l’image suivante pour plus de détails :
+
+![Calendrier des versions d’Adobe Commerce 2026](../assets/release/release-calendar.drawio.svg)

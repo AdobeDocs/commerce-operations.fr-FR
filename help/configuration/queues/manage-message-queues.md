@@ -2,16 +2,16 @@
 title: Gérer les files d'attente de messages
 description: Découvrez comment gérer les files d’attente de messages à partir de la ligne de commande pour Adobe Commerce.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: 8dce1f1e961ec02d7783a7423a51a7d4567dce79
+source-git-commit: 47525e8d8379061b254bfa90ab46e27a1ee2f524
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
 
 # Gérer les files d&#39;attente de messages
 
-Vous pouvez gérer les files d’attente de messages à partir de la ligne de commande à l’aide de tâches cron ou d’un gestionnaire de processus externe pour vous assurer que les consommateurs récupèrent les messages.
+Vous pouvez gérer les files d’attente de messages à partir de la ligne de commande à l’aide de tâches cron ou d’un gestionnaire de processus externe pour vous assurer que les consommateurs récupèrent les messages. Cela s&#39;applique à tous les courtiers de messages pris en charge, y compris RabbitMQ (AMQP), Apache ActiveMQ Artemis (STOMP) et l&#39;adaptateur MySQL.
 
 ## Gestion des processus
 
@@ -49,7 +49,7 @@ Vous pouvez également utiliser un gestionnaire de processus tel que [Superviseu
 
 >[!INFO]
 >
->Si votre magasin Adobe Commerce est hébergé sur la plateforme cloud, utilisez l’[`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#cron_consumers_runner) pour configurer la tâche cron `consumers_runner`.
+>Si votre magasin Adobe Commerce est hébergé sur la plateforme cloud, utilisez l’[`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) pour configurer la tâche cron `consumers_runner`.
 
 ### Configuration spécifique
 
@@ -78,10 +78,14 @@ Modifiez le fichier `/app/etc/env.php` pour configurer le `consumers_runner` de 
 
   >[!INFO]
   >
-  >Il n’est pas recommandé d’exécuter plusieurs consommateurs sur une file d’attente gérée par MySQL. Voir [Modifier la file d’attente de messages de MySQL vers AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) pour plus d’informations.
+  >Il n’est pas recommandé d’exécuter plusieurs consommateurs sur une file d’attente gérée par MySQL. Voir [Modifier la file d&#39;attente de messages de MySQL vers les courtiers externes](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-external-brokers) pour plus d&#39;informations sur le passage à AMQP (RabbitMQ) ou STOMP (ActiveMQ Artemis).
 
   >[!INFO]
   >
-  >Si votre boutique Adobe Commerce est hébergée sur la plateforme cloud, utilisez le [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#consumers_wait_for_max_messages) pour configurer la manière dont les consommateurs et consommatrices traitent les messages de la file d’attente des messages.
+  >Si votre boutique Adobe Commerce est hébergée sur la plateforme cloud, utilisez le [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) pour configurer la manière dont les consommateurs et consommatrices traitent les messages de la file d’attente des messages.
+
+  >[!NOTE]
+  >
+  >ActiveMQ Artemis (STOMP) a été introduit dans Adobe Commerce 2.4.6 et les versions ultérieures.
 
 Voir [Démarrer les consommateurs de file d’attente de messages](../cli/start-message-queues.md).

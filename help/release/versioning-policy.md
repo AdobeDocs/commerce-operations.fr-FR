@@ -2,9 +2,9 @@
 title: Politique de version
 description: Découvrez les différents types de versions d’Adobe Commerce.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: fd2ebc358850e47975ce6a3b8df058774440bcf2
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -61,15 +61,6 @@ Les versions de disponibilité pré-générale des fonctionnalités d’Adobe Co
 
 Les versions de Beta peuvent contenir des défauts et sont fournies « EN L’ÉTAT » sans garantie d’aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge d’une autre manière (via les services d’assistance Adobe ou autre) les versions de Beta. Les clients ne doivent pas se fier au bon fonctionnement ou aux performances des versions de Beta ou de toute documentation ou documentation d’accompagnement. Par conséquent, toute utilisation des Versions de Beta est entièrement aux risques et périls du client.
 
-## Version des fonctionnalités, de l’infrastructure cloud et de l’extensibilité
-
-Les infrastructures cloud et les mises à jour de fonctionnalités contiennent de nouvelles fonctionnalités et mises à jour de fonctionnalités fournies en tant que services indépendants, distincts des versions de correctif. Voici quelques exemples :
-
-- Mises à jour des services et de l’infrastructure d’hébergement dans le cloud
-- B2B
-- Produits SaaS (service de catalogue, connexion de données, recommandations de produits et recherche en direct)
-- Technologie d’extensibilité (SDK de l’interface utilisateur d’administration, maillage API, kits de démarrage App Builder, événements et Webhooks)
-
 ## Correctif
 
 Les correctifs sont des correctifs de sécurité ou de qualité à fort impact, tels que les correctifs de vulnérabilités de type « jour zéro », qui affectent de nombreux commerçants. Adobe publie des correctifs (si nécessaire) pour les versions d’Adobe Commerce prises en charge lorsque des problèmes de sécurité ou de qualité critiques les affectent. Les correctifs sont publiés dans la section [Problèmes connus](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) de la base de connaissances. Ces correctifs sont inclus dans la prochaine version prévue du correctif.
@@ -86,14 +77,14 @@ Les correctifs individuels contiennent des correctifs de qualité à faible impa
 >
 >Les correctifs individuels ne contiennent pas de modifications non rétrocompatibles.
 
-## Patch isolé
+## Correctifs de sécurité isolés
 
-Les correctifs isolés sont des correctifs de sécurité publiés indépendamment d&#39;un correctif de sécurité complet pour permettre une implémentation plus rapide. Chaque correctif isolé résout un problème de sécurité spécifique et est inclus dans le dernier correctif de sécurité complet ou un correctif à venir. Vous trouverez des informations détaillées sur le problème dans le bulletin de sécurité correspondant, qui contient des liens vers un article de la base de connaissances (Base de connaissances) contenant les détails du correctif, la manière d’appliquer le correctif et des informations supplémentaires.
+Les correctifs isolés sont des correctifs de sécurité non cumulatifs publiés indépendamment d&#39;un correctif de sécurité complet pour permettre une implémentation plus rapide. Chaque correctif de sécurité isolé résout un problème de sécurité spécifique et est inclus dans le dernier correctif de sécurité complet ou un correctif à venir. Vous trouverez des informations détaillées sur le problème dans le bulletin de sécurité associé, qui contient des liens vers un article de la base de connaissances (Base de connaissances) contenant les détails du correctif, la manière d’appliquer le correctif et des informations supplémentaires.
 
-Consultez le [Centre de sécurité](https://helpx.adobe.com/fr/security/products/magento.html) pour connaître les dernières mises à jour de sécurité disponibles pour Adobe Commerce.
+Consultez le [Centre de sécurité](https://helpx.adobe.com/security/products/magento.html) pour connaître les dernières mises à jour de sécurité disponibles pour Adobe Commerce.
 
 ## Correctif personnalisé
 
-Créé par du personnel non Adobe pour résoudre un problème ou modifier le code Adobe Commerce pour diverses raisons. Les correctifs personnalisés sont fournis via l’outil [Quality Patches Tool](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/usage).
+Créé par du personnel non Adobe pour résoudre un problème ou modifier le code Adobe Commerce pour diverses raisons. Les correctifs personnalisés sont fournis via l’outil [Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage).
 
 <!-- Last updated from includes: 2025-05-28 16:37:31 -->

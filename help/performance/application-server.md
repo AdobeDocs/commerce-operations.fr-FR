@@ -2,9 +2,9 @@
 title: Serveur d’applications GraphQL
 description: Découvrez le serveur d’applications GraphQL dans Adobe Commerce. Découvrez les conseils d’implémentation et les stratégies d’optimisation.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
 workflow-type: tm+mt
-source-wordcount: '2212'
+source-wordcount: '2360'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Le serveur d’applications Commerce GraphQL permet à Adobe Commerce de conserver l’état des requêtes d’API Commerce GraphQL. GraphQL Application Server, qui repose sur l’extension Swoole, fonctionne comme un processus avec des threads de traitement qui gèrent le traitement des requêtes. En préservant un état d’application amorcé parmi les requêtes d’API GraphQL, le serveur d’applications GraphQL améliore la gestion des requêtes et les performances globales du produit. Les requêtes d’API deviennent beaucoup plus efficaces.
 
-GraphQL Application Server est disponible uniquement pour Adobe Commerce. Il n’est pas disponible pour Magento Open Source. Pour les projets Cloud Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) pour activer le serveur d’applications GraphQL.
+GraphQL Application Server est disponible uniquement pour Adobe Commerce. Il n’est pas disponible pour Magento Open Source. Pour les projets Cloud Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) pour activer le serveur d’applications GraphQL.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ L’exécution du serveur d’applications GraphQL requiert les éléments suiva
 
 ### Projets cloud
 
-Adobe Commerce sur les projets d’infrastructure cloud inclut l’extension Swoole par défaut. Vous pouvez l’[activer](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) dans la propriété `runtime` du fichier `.magento.app.yaml`. Par exemple :
+Adobe Commerce sur les projets d’infrastructure cloud inclut l’extension Swoole par défaut. Vous pouvez l’[activer](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) dans la propriété `runtime` du fichier `.magento.app.yaml`. Par exemple :
 
 ```yaml
 runtime:
@@ -273,7 +273,7 @@ Procédez comme suit avant de déployer GraphQL Application Server sur des proje
 
 >[!NOTE]
 >
->Assurez-vous que tous les paramètres personnalisés de votre fichier de `.magento.app.yaml` racine sont migrés de manière appropriée vers le fichier `application-server/.magento/.magento.app.yaml`. Une fois le fichier `application-server/.magento/.magento.app.yaml` ajouté à votre projet, vous devez le gérer en plus du fichier racine `.magento.app.yaml`. Par exemple, si vous devez [configurer le service RabbitMQ](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) ou [gérer les propriétés web](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) vous devez également ajouter la même configuration à `application-server/.magento/.magento.app.yaml`.
+>Assurez-vous que tous les paramètres personnalisés de votre fichier de `.magento.app.yaml` racine sont migrés de manière appropriée vers le fichier `application-server/.magento/.magento.app.yaml`. Une fois le fichier `application-server/.magento/.magento.app.yaml` ajouté à votre projet, vous devez le gérer en plus du fichier racine `.magento.app.yaml`. Par exemple, si vous devez [configurer le service RabbitMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) ou [gérer les propriétés web](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) vous devez également ajouter la même configuration à `application-server/.magento/.magento.app.yaml`.
 
 ### Vérifier l’activation sur les projets cloud
 
@@ -537,3 +537,30 @@ Ces fichiers peuvent être inspectés à l’aide de n’importe quel outil que 
 >[!NOTE]
 >
 >`--state-monitor` n&#39;est pas compatible avec les versions PHP `8.3.0` - `8.3.4` en raison d&#39;un bug dans le nettoyeur de mémoire PHP. Si vous utilisez PHP 8.3, vous devez effectuer une mise à niveau vers la version `8.3.5` ou plus récente pour utiliser cette fonctionnalité.
+
+## Configuration d’en-têtes alternatifs pour la détection des adresses IP client
+
+Par défaut, GraphQL Application Server prend en charge une configuration standard pour l’en-tête `x-forwarded-for` défini dans le fichier `app/etc/di.xml`, ce qui permet de récupérer avec précision l’adresse IP du client dans des environnements proxy et CDN standard.
+
+Si vous devez prendre en charge des en-têtes supplémentaires ou personnalisés (tels que `x-client-ip`, `fastly-client-ip` ou `x-real-ip`), vous pouvez étendre ou remplacer l’argument `alternativeHeaders` dans votre fichier `app/etc/di.xml`. Cela n’est nécessaire que si votre environnement utilise des en-têtes autres que `x-forwarded-for` pour transmettre l’adresse IP du client.
+
+Par exemple, pour ajouter la prise en charge d’autres en-têtes, mettez à jour votre `app/etc/di.xml` comme suit :
+
+```xml
+<type name="Magento\Framework\HTTP\PhpEnvironment\RemoteAddress">
+    <arguments>
+        <argument name="alternativeHeaders" xsi:type="array">
+            <item name="x-client-ip" xsi:type="string">HTTP_X_CLIENT_IP</item>
+            <item name="fastly-client-ip" xsi:type="string">HTTP_FASTLY_CLIENT_IP</item>
+            <item name="x-real-ip" xsi:type="string">HTTP_X_REAL_IP</item>
+            <item name="x-forwarded-for" xsi:type="string">HTTP_X_FORWARDED_FOR</item>
+        </argument>
+    </arguments>
+</type>
+```
+
+Vous pouvez ajouter, supprimer ou réorganiser les en-têtes selon les besoins pour vous assurer que l’adresse IP du client est récupérée à partir de la source appropriée pour votre configuration.
+
+>[!NOTE]
+>
+>Si vous utilisez Adobe Commerce Cloud avec le module Fast CDN, cette configuration est gérée automatiquement et aucune modification manuelle n’est nécessaire. Une configuration manuelle n’est nécessaire que pour les configurations de réseau CDN, de proxy ou d’en-tête non standard.

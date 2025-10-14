@@ -2,9 +2,9 @@
 title: env.php référence
 description: Découvrez les valeurs et les sections de configuration du fichier env.php dans Adobe Commerce. Découvrez les paramètres d’environnement et les options de configuration.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1033'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Le fichier `env.php` contient les sections suivantes :
 | `downloadable_domains` | Liste des domaines téléchargeables |
 | `install` | La date d&#39;installation |
 | `lock` | Verrouiller les paramètres du fournisseur |
-| `MAGE_MODE` | Le [&#x200B; mode d’application &#x200B;](../bootstrap/application-modes.md) |
+| `MAGE_MODE` | Le [ mode d’application ](../bootstrap/application-modes.md) |
 | `queue` | [Files d’attente des messages](../queues/manage-message-queues.md) paramètres |
 | `resource` | Mappage du nom d’une ressource sur une connexion |
 | `session` | Données de stockage de la session |
@@ -98,7 +98,7 @@ Toutes les configurations de types de cache sont disponibles à partir de ce nœ
 ]
 ```
 
-En savoir plus sur les différents [&#x200B; types de cache &#x200B;](../cli/manage-cache.md).
+En savoir plus sur les différents [ types de cache ](../cli/manage-cache.md).
 
 ## consumer_wait_for_messages
 
@@ -146,7 +146,7 @@ Commerce utilise une clé de chiffrement pour protéger les mots de passe et d�
 ]
 ```
 
-Apprenez-en davantage sur la [clé de chiffrement](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/encryption-key) dans le guide d’utilisation de _Commerce_.
+Apprenez-en davantage sur la [clé de chiffrement](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) dans le guide d’utilisation de _Commerce_.
 
 ## db
 
@@ -172,11 +172,19 @@ Toutes les configurations de base de données sont disponibles dans ce nœud.
 
 ## default_connection
 
-Définit la connexion par défaut pour les files d’attente de messages. La valeur peut être `db`, `amqp` ou un système de file d’attente personnalisé comme `redismq`. Si vous spécifiez une valeur autre que `db`, le logiciel de file d’attente de messages doit d’abord être installé et configuré. Sinon, les messages ne seront pas traités correctement.
+Définit la connexion par défaut pour les files d’attente de messages. La valeur peut être `db`, `amqp`, `stomp` ou un système de file d’attente personnalisé comme `redismq`. Si vous spécifiez une valeur autre que `db`, le logiciel de file d’attente de messages doit d’abord être installé et configuré. Sinon, les messages ne seront pas traités correctement.
 
 ```conf
 'queue' => [
     'default_connection' => 'amqp'
+]
+```
+
+Pour STOMP (ActiveMQ Artemis) :
+
+```conf
+'queue' => [
+    'default_connection' => 'stomp'
 ]
 ```
 
@@ -203,7 +211,7 @@ Liste des domaines téléchargeables disponibles dans ce nœud. D’autres domai
 ]
 ```
 
-En savoir plus sur les [domaines téléchargeables](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+En savoir plus sur les [domaines téléchargeables](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## installer
 
@@ -233,13 +241,13 @@ En savoir plus sur les [modes d’application](../cli/set-mode.md).
 
 ## file d&#39;attente
 
-Les configurations de file d’attente de messages sont disponibles dans ce nœud.
+Les configurations de file d’attente de messages sont disponibles dans ce nœud. Vous pouvez configurer RabbitMQ (AMQP) ou ActiveMQ Artemis (STOMP) comme courtier de messages.
 
 ```conf
 'queue' => [
   'topics' => [
-    'customer.created' => [publisher="default-rabitmq"],
-    'order.created' => [publisher="default-rabitmq"],
+    'customer.created' => [publisher="default-broker"],
+    'order.created' => [publisher="default-broker"],
   ]
 ]
 ```
