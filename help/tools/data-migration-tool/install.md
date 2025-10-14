@@ -50,7 +50,7 @@ git branch
 Si vous vous trouvez actuellement dans la branche `develop`, vous devez passer à une branche [publiée](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) avant de continuer.
 
 Si vous n’avez pas encore installé le logiciel Adobe Commerce, [installez-le maintenant](../../installation/prerequisites/commerce.md).
-Si vous clonez le référentiel GitHub, veillez à extraire une balise de version, comme indiqué dans la section [ (Contributeur) Cloner le référentiel GitHub ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
+Si vous clonez le référentiel GitHub, veillez à extraire une balise de version, comme indiqué dans la section [&#x200B; (Contributeur) Cloner le référentiel GitHub &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
 
 ## Rechercher les versions publiées de [!DNL Data Migration Tool]
 

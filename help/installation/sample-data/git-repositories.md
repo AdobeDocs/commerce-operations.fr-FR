@@ -18,7 +18,7 @@ Si vous n’êtes pas un développeur participant, choisissez l’une des autres
 Les développeurs contributeurs peuvent utiliser cette méthode d’installation des données d’exemple *uniquement* si ce qui suit est vrai :
 
 * Vous utilisez Magento Open Source
-* Vous [ cloné le référentiel GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* Vous [&#x200B; cloné le référentiel GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 >[!WARNING]
 >
@@ -88,7 +88,7 @@ Pour cloner le référentiel GitHub de données d’exemple à l’aide du proto
 
 1. Attendez que la commande soit terminée.
 
-1. Voir [ Définir les autorisations et la propriété du système de fichiers](#set-file-system-ownership-and-permissions).
+1. Voir [&#x200B; Définir les autorisations et la propriété du système de fichiers](#set-file-system-ownership-and-permissions).
 
 1. Exécutez la commande suivante :
 

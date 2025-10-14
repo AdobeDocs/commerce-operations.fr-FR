@@ -51,7 +51,7 @@ Nous utilisons les termes suivants pour décrire les systèmes impliqués dans l
 Vous pouvez éventuellement utiliser d’autres méthodes de déploiement, notamment :
 
 - Copie sécurisée avec SCP ou rsync
-- [ Capistrano ](https://capistranorb.com/documentation/overview/what-is-capistrano)
+- [&#x200B; Capistrano &#x200B;](https://capistranorb.com/documentation/overview/what-is-capistrano)
 - L’outil [Deployer](https://deployer.org/)
 
 ## Gestion de la configuration

@@ -172,4 +172,4 @@ La veille de la mise à niveau prévue vers MariaDB version 10.3, 10.4 ou 10.6, 
 
 ### Modification du moteur de stockage
 
-Voir [ Convertir des tables MyISAM en InnoDB](../planning/database-on-cloud.md).
+Voir [&#x200B; Convertir des tables MyISAM en InnoDB](../planning/database-on-cloud.md).

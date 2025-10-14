@@ -89,7 +89,7 @@ Vous pouvez également utiliser l&#39;interface Web de Project pour ajouter la v
 
 ### Utiliser l’authentification facultative
 
-Les `key` et `secret` sont facultatifs. Lorsque vous créez la variable, vous pouvez masquer les `key` et les `secret` en sélectionnant l’option `sensitive` . Avec ce paramètre, les valeurs ne sont pas visibles dans l’interface web. Voir [ Visibilité des variables ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html?lang=fr#visibility) dans le guide _Commerce sur les infrastructures cloud_.
+Les `key` et `secret` sont facultatifs. Lorsque vous créez la variable, vous pouvez masquer les `key` et les `secret` en sélectionnant l’option `sensitive` . Avec ce paramètre, les valeurs ne sont pas visibles dans l’interface web. Voir [&#x200B; Visibilité des variables &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html?lang=fr#visibility) dans le guide _Commerce sur les infrastructures cloud_.
 
 Si vous souhaitez utiliser une autre méthode d’authentification, omettez les `key` et `secret` de la configuration JSON,. Configurez la méthode d’authentification alternative et vérifiez que le serveur est autorisé dans le compartiment S3.
 

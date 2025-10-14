@@ -24,7 +24,7 @@ Le cadre **[!UICONTROL API calls by IP, details by URL]** affiche un certain nom
 
 Le cadre d’accès **[!UICONTROL Forgot Password]** affiche le nombre de tentatives de mot de passe oublié sur une période sélectionnée. Une forte activité contre une adresse IP peut constituer une attaque contre le site.
 
-![ Mot de passe oublié ](../../assets/tools/observation-for-adobe-commerce/forgot-password.jpg)
+![&#x200B; Mot de passe oublié &#x200B;](../../assets/tools/observation-for-adobe-commerce/forgot-password.jpg)
 
 ## [!UICONTROL Create Account access]
 

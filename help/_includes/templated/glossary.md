@@ -619,7 +619,7 @@ _nom_
 
 Une clé de déploiement est la clé publique SSH de votre projet et permet un accès en lecture seule ou en lecture-écriture (si activé) à un référentiel Git.
 
-En savoir plus : [ Connexions sécurisées ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr)
+En savoir plus : [&#x200B; Connexions sécurisées &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr)
 
 _Attributs de terme :_
 

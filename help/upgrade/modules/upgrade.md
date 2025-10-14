@@ -55,6 +55,6 @@ Consultez les listes Adobe Commerce Marketplace suivantes pour plus d’informat
 
 - [Amazon Pay](https://marketplace.magento.com/amzn-amazon-pay-magento-2-module.html)
 - [Dotdigital](https://marketplace.magento.com/dotdigital-dotdigital-magento2-os-package.html)
-- [Klarna ](https://marketplace.magento.com/klarna-m2-klarna.html)
+- [Klarna &#x200B;](https://marketplace.magento.com/klarna-m2-klarna.html)
 - [Sommet](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
-- [ Yotpo ](https://marketplace.magento.com/yotpo-module-yotpo.html)
+- [&#x200B; Yotpo &#x200B;](https://marketplace.magento.com/yotpo-module-yotpo.html)

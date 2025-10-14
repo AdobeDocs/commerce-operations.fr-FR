@@ -51,7 +51,7 @@ Le cadre **[!UICONTROL PHP Process states]** montre les états du processus PHP 
 
 ## [!UICONTROL PHP Errors]
 
-![ Erreurs PHP ](../../assets/tools/php-errors-image-1.jpg)
+![&#x200B; Erreurs PHP &#x200B;](../../assets/tools/php-errors-image-1.jpg)
 
 Le cadre **[!UICONTROL PHP Errors]** affiche le nombre d&#39;erreurs de programme de travail PHP sur la période sélectionnée. Les messages d’erreur analysés et affichés sont les suivants :
 
@@ -75,7 +75,7 @@ Le cadre **[!UICONTROL PHP processes count]** montre le nombre de processus PHP 
 
 ## [!UICONTROL Database Errors]
 
-![ Erreurs de base de données ](../../assets/tools/php-tab-database-errors.jpg)
+![&#x200B; Erreurs de base de données &#x200B;](../../assets/tools/php-tab-database-errors.jpg)
 
 La période **[!UICONTROL Database Errors]** affiche les erreurs de base de données sur la période sélectionnée. Les erreurs analysées sont les suivantes :
 

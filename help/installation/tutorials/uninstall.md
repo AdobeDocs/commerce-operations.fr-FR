@@ -17,7 +17,7 @@ Avant d’utiliser ces commandes, vous devez [installer l’application](../tuto
 
 Pour mettre à jour l’application :
 
-* Si vous avez installé le logiciel à partir d&#39;une archive ou si vous avez utilisé &#39;composer-create-project&#39;, consultez le [ Guide de mise à niveau](../../upgrade/overview.md).
+* Si vous avez installé le logiciel à partir d&#39;une archive ou si vous avez utilisé &#39;composer-create-project&#39;, consultez le [&#x200B; Guide de mise à niveau](../../upgrade/overview.md).
 * Si vous êtes un développeur contributeur (c’est-à-dire que vous avez utilisé `git clone`), consultez [Mise à jour de l’application](../../upgrade/developer/git-installs.md).
 
 ## Réinstaller l’application

@@ -17,7 +17,7 @@ L’un des principes clés du maintien de la conformité [PCI](https://experienc
 
 Le stockage des données des titulaires de carte dans Adobe Commerce est **strictement interdit** et cela pourrait constituer une violation de vos obligations en tant que commerçant en vertu de la norme PCI-DSS (Payment Card Industry Data Security Standard). Pour plus d’informations sur le modèle de responsabilité partagée et les directives relatives aux obligations des commerçants, consultez le [Guide du modèle de responsabilité partagée d’Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) dans le Centre de gestion de la confidentialité d’Adobe.
 
-Suivez les bonnes pratiques ci-dessous pour vous assurer que vous traitez correctement les informations de paiement sur votre site d’e-commerce. Pour obtenir des conseils supplémentaires sur les bonnes pratiques de sécurité, voir [ Sécurisation de votre site et de votre infrastructure ](../launch/security-best-practices.md).
+Suivez les bonnes pratiques ci-dessous pour vous assurer que vous traitez correctement les informations de paiement sur votre site d’e-commerce. Pour obtenir des conseils supplémentaires sur les bonnes pratiques de sécurité, voir [&#x200B; Sécurisation de votre site et de votre infrastructure &#x200B;](../launch/security-best-practices.md).
 
 ## Produits et versions concernés
 

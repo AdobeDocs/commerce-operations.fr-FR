@@ -48,7 +48,7 @@ Adobe Commerce s’intègre à toutes les solutions Experience Cloud pour offrir
 >Consultez les ressources suivantes pour plus d’informations :
 >
 >- [Plans directeurs d’expérience digitale](https://experienceleague.adobe.com/fr/docs/blueprints-learn/architecture/overview) pour plus de détails techniques.
->- Voir [ Personnaliser l’expérience client ](https://experienceleague.adobe.com/fr/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
+>- Voir [&#x200B; Personnaliser l’expérience client &#x200B;](https://experienceleague.adobe.com/fr/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
 
 
 ## Intégration à des systèmes tiers

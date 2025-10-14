@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Cet article décrit les étapes de dépannage à suivre lorsque vous recevez une alerte critique [!DNL Apdex] pour Adobe Commerce dans [!DNL New Relic]. Le score [!DNL Apdex] mesure la satisfaction des utilisateurs quant au temps de réponse des applications et services web. Une action immédiate est nécessaire pour remédier au problème. L’alerte se présente comme suit, selon le canal de notification d’alerte que vous avez sélectionné.
 
-![alerte critique apdex ](../../assets/managed-alerts/apdex-critical-magento-managed.png){width="500"}
+![alerte critique apdex &#x200B;](../../assets/managed-alerts/apdex-critical-magento-managed.png){width="500"}
 
 ## Produits et versions concernés
 

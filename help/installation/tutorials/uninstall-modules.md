@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Cette section explique comment désinstaller un ou plusieurs modules. Lors de la désinstallation, vous avez la possibilité de supprimer le code, le schéma de base de données et les données de la base de données des modules. Vous pouvez d’abord créer des sauvegardes afin de pouvoir récupérer les données ultérieurement.
 
-Vous ne devez désinstaller un module que si vous êtes certain de ne pas l&#39;utiliser. Au lieu de désinstaller un module, vous pouvez le désactiver comme indiqué dans la section [ Activer ou désactiver des modules](manage-modules.md).
+Vous ne devez désinstaller un module que si vous êtes certain de ne pas l&#39;utiliser. Au lieu de désinstaller un module, vous pouvez le désactiver comme indiqué dans la section [&#x200B; Activer ou désactiver des modules](manage-modules.md).
 
 >[!NOTE]
 >

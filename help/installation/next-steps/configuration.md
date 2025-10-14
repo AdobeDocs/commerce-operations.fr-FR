@@ -29,7 +29,7 @@ Après l’installation, nous recommandons ce qui suit :
 * Assurez-vous que la propriété et les autorisations des fichiers sont correctement définies [&#128279;](../prerequisites/file-system/configure-permissions.md)
 * Nous vous recommandons vivement de [modifier l’URI d’administration par défaut](../tutorials/admin-uri.md) de `admin` à autre chose
 * Assurez-vous que l’en-tête HTTP [`X-Frame-Option`](../../configuration/security/xframe-options.md) est correctement défini.
-* Prenez des précautions contre le cross-site scripting (XSS) en [ sécurisant vos modèles ](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
+* Prenez des précautions contre le cross-site scripting (XSS) en [&#x200B; sécurisant vos modèles &#x200B;](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
 
 Si vous avez installé en [clonant le référentiel GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/), assurez-vous, lors du déploiement de l’application, d’inclure uniquement les fichiers et les dossiers requis pour l’environnement de production. Les fichiers et les dossiers qui ne sont pas requis peuvent présenter des risques de sécurité.
 
@@ -82,7 +82,7 @@ Nous n&#39;avons pas de recommandation pour savoir si vous utilisez SELinux ; ce
 
 Plus d’informations :
 
-* Ubuntu : [ Manuel Debian ](https://debian-handbook.info/browse/stable/sect.selinux.html)
+* Ubuntu : [&#x200B; Manuel Debian &#x200B;](https://debian-handbook.info/browse/stable/sect.selinux.html)
 * CentOS : [wiki CentOS](https://wiki.centos.org/HowTos/SELinux)
 
 ### Configuration d&#39;un serveur de messagerie

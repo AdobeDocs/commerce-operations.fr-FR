@@ -19,13 +19,13 @@ Cette rubrique présente les détails techniques d’implémentation du déploie
 
 Cette rubrique présente également le [workflow recommandé](#recommended-workflow) pour le déploiement de pipeline et fournit quelques exemples pour vous aider à comprendre son fonctionnement.
 
-Avant de commencer, passez en revue les [ Conditions préalables pour les systèmes de développement, de version et de production](../deployment/prerequisites.md).
+Avant de commencer, passez en revue les [&#x200B; Conditions préalables pour les systèmes de développement, de version et de production](../deployment/prerequisites.md).
 
 ## Gestion de la configuration
 
 Pour vous permettre de synchroniser et de gérer la configuration de vos systèmes de développement et de production, utilisez le schéma de remplacement suivant.
 
-![Comment les valeurs des variables de configuration sont déterminées ](../../assets/configuration/override-flow-diagram.png)
+![Comment les valeurs des variables de configuration sont déterminées &#x200B;](../../assets/configuration/override-flow-diagram.png)
 
 Comme le montre le diagramme, les valeurs de configuration sont utilisées dans l&#39;ordre suivant :
 

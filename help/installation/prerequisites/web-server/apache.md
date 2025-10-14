@@ -26,7 +26,7 @@ Adobe Commerce prend en charge Apache 2.4.x.
 
 ## Apache réécrit et htaccess
 
-Cette rubrique explique comment activer les réécritures Apache 2.4 et spécifier un paramètre pour le [`.htaccess` ](https://github.com/magento/magento2/blob/2.4-develop/.htaccess.sample)fichier de configuration distribué).
+Cette rubrique explique comment activer les réécritures Apache 2.4 et spécifier un paramètre pour le [`.htaccess` &#x200B;](https://github.com/magento/magento2/blob/2.4-develop/.htaccess.sample)fichier de configuration distribué).
 
 Adobe Commerce utilise des réécritures et des `.htaccess` de serveur pour fournir des instructions au niveau du répertoire pour Apache. Les instructions suivantes sont également incluses dans toutes les autres sections de cette rubrique.
 

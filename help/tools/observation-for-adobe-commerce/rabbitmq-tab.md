@@ -62,7 +62,7 @@ Ce cadre affiche [!DNL RabbitMQ] erreurs qui se sont produites au cours du déla
 
 ## [!UICONTROL [!DNL RabbitMQ] node status]
 
-![[!DNL RabbitMQ] le statut du nœud ](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
+![[!DNL RabbitMQ] le statut du nœud &#x200B;](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
 
 * `%rabbit on node rabbit@host1 down%`) comme `rmq_node1_down`
 * `%rabbit on node rabbit@host2 down%`) comme `rmq_node2_down`

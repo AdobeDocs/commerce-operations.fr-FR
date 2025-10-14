@@ -20,13 +20,13 @@ Vous pouvez exécuter l’application Commerce dans l’un des _modes_ suivants 
 | [production](#production-mode) | Déployez et exécutez l’application Commerce sur un système d’exploitation. | Oui |
 | [maintenance](#maintenance-mode) | Empêcher l’accès à un site lors des mises à jour et des configurations. | Oui |
 
-Voir [ Définir le mode de fonctionnement ](../cli/set-mode.md) pour savoir comment modifier manuellement les modes de fonctionnement d’Adobe Commerce.
+Voir [&#x200B; Définir le mode de fonctionnement &#x200B;](../cli/set-mode.md) pour savoir comment modifier manuellement les modes de fonctionnement d’Adobe Commerce.
 
 ## Prise en charge du cloud
 
 En raison du système de fichiers en lecture seule, il existe une restriction stricte empêchant de modifier les modes dans les environnements cloud distants et elle ne peut pas être remplacée par l’assistance Adobe Commerce. N’essayez pas de changer de mode en modifiant le fichier `app/etc/env.php`, car le package `ece-tools` remplace le fichier basé sur plusieurs sources de configuration.
 
-Adobe Commerce sur l’infrastructure cloud exécute automatiquement l’application en mode _maintenance_ au cours d’un déploiement, ce qui met votre site hors ligne jusqu’à ce que le déploiement soit terminé. Dans le cas contraire, l’application reste en mode _production_. Voir [ Processus de déploiement ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=fr#deploy-phase) dans le guide _Commerce sur les infrastructures cloud_.
+Adobe Commerce sur l’infrastructure cloud exécute automatiquement l’application en mode _maintenance_ au cours d’un déploiement, ce qui met votre site hors ligne jusqu’à ce que le déploiement soit terminé. Dans le cas contraire, l’application reste en mode _production_. Voir [&#x200B; Processus de déploiement &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=fr#deploy-phase) dans le guide _Commerce sur les infrastructures cloud_.
 
 Si vous utilisez Cloud Docker pour Commerce en tant qu’outil de développement, vous pouvez déployer votre projet d’infrastructure cloud dans un environnement Docker en mode _développeur_, mais les performances sont plus lentes en raison d’opérations de synchronisation de fichiers supplémentaires. Voir [Déploiement de l’environnement Docker](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) dans le guide _Cloud Docker pour Commerce_.
 

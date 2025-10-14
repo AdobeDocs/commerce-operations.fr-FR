@@ -20,7 +20,7 @@ De nombreux problèmes sont causés par le manque d&#39;espace de stockage de My
 
 ## [!UICONTROL MySQL Connections by Node]
 
-![ Connexions MySQL par nœud ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-2.jpg)
+![&#x200B; Connexions MySQL par nœud &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-2.jpg)
 
 Le cadre **[!UICONTROL MySQL Connections by Node]** indique les périodes de panne des nœuds de la base de données ou les volumes élevés de connexions.
 
@@ -198,7 +198,7 @@ Le cadre **[!UICONTROL DB Statistics]** affiche les suppressions, les écritures
 
 ## [!UICONTROL Database Errors]
 
-![ Erreurs de base de données ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-17.jpg)
+![&#x200B; Erreurs de base de données &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-17.jpg)
 
 Le cadre de **[!UICONTROL Database Errors]** présente diverses [avertissements et erreurs](https://mariadb.com/kb/en/mariadb-error-codes/) de base de données :
 
@@ -273,7 +273,7 @@ Le cadre **[!UICONTROL MySQL Running and Sleeping Threads by environment]** affi
 
 ## [!UICONTROL MySQL mem used by node]
 
-![Mémoire MySQL utilisée par le nœud ](../../assets/tools/observation-for-adobe-commerce/mysql-tab-23.jpg)
+![Mémoire MySQL utilisée par le nœud &#x200B;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-23.jpg)
 
 L’image **[!UICONTROL MySQL mem used by node]** affiche l’utilisation de la mémoire par MySQL sur les nœuds. Sur les sites de plus grande taille, cette trame peut être constituée de barres continues dont la mémoire est de l&#39;ordre de Go.
 

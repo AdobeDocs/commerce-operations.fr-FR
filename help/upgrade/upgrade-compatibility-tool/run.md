@@ -146,7 +146,7 @@ Options disponibles pour la commande `core:code:changes` :
 
 >[!NOTE]
 >
-> Il est recommandé de tenir le code personnalisé en dehors du code principal. Pour connaître les bonnes pratiques de mise à niveau[ consultez le ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=fr) guide de mise à niveau d’Adobe Commerce 2.4 .
+> Il est recommandé de tenir le code personnalisé en dehors du code principal. Pour connaître les bonnes pratiques de mise à niveau[&#x200B; consultez le &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=fr) guide de mise à niveau d’Adobe Commerce 2.4 .
 
 ### Installation Vanilla
 
@@ -259,7 +259,7 @@ Cette opération renvoie des options spécifiques qui peuvent être exécutées 
 
 - Évitez d’avoir deux modules portant le même nom.
 - Respectez les normes de codage [Adobe Commerce](https://developer.adobe.com/commerce/php/coding-standards/).
-- Bonnes pratiques relatives au [ guide de mise à niveau d’Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=fr)
+- Bonnes pratiques relatives au [&#x200B; guide de mise à niveau d’Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=fr)
 - Exécutez le [!DNL Upgrade Compatibility Tool] à partir du [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=fr) pour les projets [Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=fr){target=_blank}.
 
 ## Optimisation des résultats

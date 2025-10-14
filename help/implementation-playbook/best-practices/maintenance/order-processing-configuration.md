@@ -17,7 +17,7 @@ ht-degree: 0%
 
 - **[!UICONTROL Asynchronous indexing]** : activez cette option pour éviter les verrous de base de données et le ralentissement du traitement qui peuvent survenir lorsqu&#39;un grand nombre de commandes sont passées simultanément.
 - **[!UICONTROL Asynchronous email notifications]** : activez cette option pour accélérer les performances de passage en caisse en envoyant des notifications par e-mail de passage en caisse et de traitement de commande à des intervalles spécifiés au lieu de les envoyer immédiatement.
-- **[!UICONTROL Enable Archiving]** : activez cette option pour améliorer les performances des commandes, des factures, des livraisons et des avoirs et préserver votre espace de travail des informations inutiles, afin que vous puissiez vous concentrer sur l&#39;activité actuelle. Voir [ Activer l’archivage ](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
+- **[!UICONTROL Enable Archiving]** : activez cette option pour améliorer les performances des commandes, des factures, des livraisons et des avoirs et préserver votre espace de travail des informations inutiles, afin que vous puissiez vous concentrer sur l&#39;activité actuelle. Voir [&#x200B; Activer l’archivage &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 ## Produits et versions concernés
 

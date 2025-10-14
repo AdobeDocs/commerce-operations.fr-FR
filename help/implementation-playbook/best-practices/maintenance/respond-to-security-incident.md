@@ -18,7 +18,7 @@ Le respect de ces bonnes pratiques peut contribuer à prévenir les accès non a
 
 >[!TIP]
 >
->Adobe a constaté que la plupart des incidents de sécurité se produisent lorsque des acteurs malveillants tirent parti de vulnérabilités existantes non corrigées, de mots de passe inappropriés ainsi que de paramètres de propriété et d’autorisation faibles dans la configuration de l’application et de l’infrastructure Commerce. Minimisez l’occurrence des incidents de sécurité en examinant et en suivant les bonnes pratiques de sécurité d’Adobe lors de la configuration, de la configuration et de la mise à jour des installations d’Adobe Commerce. Voir [ Sécurisation de votre site et de votre infrastructure Commerce](../launch/security-best-practices.md).
+>Adobe a constaté que la plupart des incidents de sécurité se produisent lorsque des acteurs malveillants tirent parti de vulnérabilités existantes non corrigées, de mots de passe inappropriés ainsi que de paramètres de propriété et d’autorisation faibles dans la configuration de l’application et de l’infrastructure Commerce. Minimisez l’occurrence des incidents de sécurité en examinant et en suivant les bonnes pratiques de sécurité d’Adobe lors de la configuration, de la configuration et de la mise à jour des installations d’Adobe Commerce. Voir [&#x200B; Sécurisation de votre site et de votre infrastructure Commerce](../launch/security-best-practices.md).
 
 
 ## Produits et versions concernés

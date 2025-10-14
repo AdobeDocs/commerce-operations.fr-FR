@@ -15,7 +15,7 @@ ht-degree: 0%
 
 La bibliothèque JavaScript d’Adobe Privacy est un ensemble d’outils permettant de créer un processus d’accès et de suppression des données privées collectées par Adobe Commerce.
 
-Les services de suivi des données de Commerce peuvent stocker des informations privées applicables aux réglementations de confidentialité telles que le [ Règlement général sur la protection des données (RGPD)](gdpr.md) et le [California Consumer Privacy Act (CCPA)](ccpa.md).
+Les services de suivi des données de Commerce peuvent stocker des informations privées applicables aux réglementations de confidentialité telles que le [&#x200B; Règlement général sur la protection des données (RGPD)](gdpr.md) et le [California Consumer Privacy Act (CCPA)](ccpa.md).
 
 Cette bibliothèque fournit un ensemble de fonctions pour créer des demandes de données de confidentialité et collecter leurs réponses. Utilisez cette bibliothèque pour récupérer et supprimer les données stockées dans le navigateur par les services de suivi de données Adobe Commerce.
 
@@ -27,7 +27,7 @@ Cette bibliothèque fournit un ensemble de fonctions pour créer des demandes de
 
 La bibliothèque JavaScript de confidentialité est disponible à l’emplacement du réseau CDN suivant : `commerce.adobe.net/magentoprivacy.js`
 
-Une fois que vous disposez du fichier, vous devez l’ajouter à un module ou à un thème personnalisé installé dans votre instance Adobe Commerce. Suivez les instructions décrites dans la rubrique [ Utilisation de JavaScript personnalisés ](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) pour accomplir cette tâche.
+Une fois que vous disposez du fichier, vous devez l’ajouter à un module ou à un thème personnalisé installé dans votre instance Adobe Commerce. Suivez les instructions décrites dans la rubrique [&#x200B; Utilisation de JavaScript personnalisés &#x200B;](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) pour accomplir cette tâche.
 
 ### Initialisation
 

@@ -25,7 +25,7 @@ Pour plus d’informations sur la configuration de votre moteur de recherche, co
 
 >[!TIP]
 >
->Pour obtenir des instructions sur la mise à niveau vers une nouvelle version du moteur de recherche, voir [ Conditions préalables à la mise à niveau ](../../upgrade/prepare/prerequisites.md).
+>Pour obtenir des instructions sur la mise à niveau vers une nouvelle version du moteur de recherche, voir [&#x200B; Conditions préalables à la mise à niveau &#x200B;](../../upgrade/prepare/prerequisites.md).
 
 Pour configurer votre système afin d’utiliser Elasticsearch ou OpenSearch :
 

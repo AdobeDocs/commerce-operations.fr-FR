@@ -36,7 +36,7 @@ Voici une feuille de route pour configurer plusieurs sites web avec des onglets 
 
 1. [Configurez des sites web, des boutiques et des affichages de boutique](ms-admin.md) dans l’Administration.
 1. Créez un [hôte virtuel Nginx](#step-2-create-nginx-virtual-hosts)) pour mapper de nombreux sites web ou un hôte virtuel Nginx par site web Commerce (étapes détaillées ci-dessous).
-1. Transmettez les valeurs des [ et ](ms-overview.md) `$MAGE_RUN_TYPE`variables MAGE`$MAGE_RUN_CODE` à nginx à l’aide du `nginx.conf.sample` fourni par Magento (étapes détaillées ci-dessous).
+1. Transmettez les valeurs des [&#x200B; et &#x200B;](ms-overview.md) `$MAGE_RUN_TYPE`variables MAGE`$MAGE_RUN_CODE` à nginx à l’aide du `nginx.conf.sample` fourni par Magento (étapes détaillées ci-dessous).
 
    - `$MAGE_RUN_TYPE` peut être `store` ou `website` :
 

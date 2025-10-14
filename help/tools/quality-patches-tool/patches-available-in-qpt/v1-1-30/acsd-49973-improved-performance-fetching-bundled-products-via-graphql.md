@@ -36,7 +36,7 @@ Les performances se dégradent lors de la récupération de produits groupés vi
 
 <u>Conditions préalables</u> :
 
-Créez 2 000 produits groupés à l’aide de la boîte à outils [ Performance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html?lang=fr).
+Créez 2 000 produits groupés à l’aide de la boîte à outils [&#x200B; Performance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html?lang=fr).
 
 <u>Procédure à suivre </u> :
 
@@ -79,7 +79,7 @@ Les requêtes de la table `catalog_product_bundle_selection` ne doivent pas êtr
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool]
-* Adobe Commerce sur les infrastructures cloud : [ Mises à niveau et correctifs > Appliquer des correctifs ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [&#x200B; Mises à niveau et correctifs > Appliquer des correctifs &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

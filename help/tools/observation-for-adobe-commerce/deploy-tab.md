@@ -157,6 +157,6 @@ Le cadre **[!UICONTROL Count of modules imported during deploy]** indique le nom
 
 ## [!UICONTROL Deployed module list]
 
-![ Liste des modules déployés ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
+![&#x200B; Liste des modules déployés &#x200B;](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
 
 La période **[!UICONTROL Deployed module list]** affiche les modules déployés sur la période sélectionnée.

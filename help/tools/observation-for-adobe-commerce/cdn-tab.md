@@ -64,7 +64,7 @@ Ce cadre affiche la durée en secondes des requêtes pouvant être mises en cach
 
 ![Réponse moyenne du cache rapide pour la période sélectionnée en secondes facettisée par POP](../../assets/tools/observation-for-adobe-commerce/cdn-tab-10.png)
 
-*POP* dans ce contexte fait référence à un point de présence (POP) configuré pour fonctionner en tant que pool pour le stockage du cache. Voir [ Points de présence ](https://developer.fastly.com/learning/concepts/pop/).
+*POP* dans ce contexte fait référence à un point de présence (POP) configuré pour fonctionner en tant que pool pour le stockage du cache. Voir [&#x200B; Points de présence &#x200B;](https://developer.fastly.com/learning/concepts/pop/).
 
 ## [!UICONTROL Total Bandwidth (All POPs) during the selected timeframe, compared with 1 week ago (% increase/decrease)]
 
@@ -78,7 +78,7 @@ Ce cadre est similaire à la zone de résumé pour les [!UICONTROL Total Request
 
 ## [!UICONTROL Response Count]
 
-![ Nombre de réponses ](../../assets/tools/observation-for-adobe-commerce/cdn-tab-13.png)
+![&#x200B; Nombre de réponses &#x200B;](../../assets/tools/observation-for-adobe-commerce/cdn-tab-13.png)
 
 ## [!UICONTROL Bandwidth by POP]
 
@@ -98,7 +98,7 @@ Le cadre **[!UICONTROL Top 25 URLs]** affiche les URL qui ont renvoyé un statut
 
 ## [!UICONTROL Duration by Response Status]
 
-![ Durée par statut de réponse ](../../assets/tools/observation-for-adobe-commerce/cdn-tab-17.png)
+![&#x200B; Durée par statut de réponse &#x200B;](../../assets/tools/observation-for-adobe-commerce/cdn-tab-17.png)
 
 Le graphique **[!UICONTROL Duration by Response Status]** affiche les réponses d’erreur par nombre au cours de la période sélectionnée, à la facette du code de statut d’erreur.
 

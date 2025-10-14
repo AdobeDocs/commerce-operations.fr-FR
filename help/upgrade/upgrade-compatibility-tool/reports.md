@@ -88,7 +88,7 @@ Vous pouvez obtenir le rapport HTML lors de l’exécution de l’outil sur une 
 - Une liste des problèmes identifiés.
 - Résumé de l’analyse.
 
-![Rapport HTML - Résumé ](../../assets/upgrade-guide/uct-html-summary.png)
+![Rapport HTML - Résumé &#x200B;](../../assets/upgrade-guide/uct-html-summary.png)
 
 Vous pouvez facilement parcourir les problèmes identifiés lors de l’analyse de la [!DNL Upgrade Compatibility Tool].
 

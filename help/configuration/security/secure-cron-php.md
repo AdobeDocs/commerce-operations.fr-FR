@@ -23,7 +23,7 @@ La tâche cron exécute plusieurs tâches planifiées et constitue une partie es
 
 >[!INFO]
 >
->Pour plus d’informations sur les groupes cron[ voir ](../cli/configure-cron-jobs.md#run-cron-from-the-command-line)Configurer et exécuter cron.
+>Pour plus d’informations sur les groupes cron[&#x200B; voir &#x200B;](../cli/configure-cron-jobs.md#run-cron-from-the-command-line)Configurer et exécuter cron.
 
 Vous pouvez exécuter une tâche cron des manières suivantes :
 
@@ -311,4 +311,4 @@ https://magento.example.com/magento2/pub/cron.php?group=index
 
 >[!INFO]
 >
->Vous devez exécuter cron deux fois : d’abord pour découvrir les tâches à exécuter, puis à nouveau pour exécuter les tâches elles-mêmes. Pour plus d’informations sur les groupes cron[ voir ](../cli/configure-cron-jobs.md)Configurer et exécuter cron.
+>Vous devez exécuter cron deux fois : d’abord pour découvrir les tâches à exécuter, puis à nouveau pour exécuter les tâches elles-mêmes. Pour plus d’informations sur les groupes cron[&#x200B; voir &#x200B;](../cli/configure-cron-jobs.md)Configurer et exécuter cron.

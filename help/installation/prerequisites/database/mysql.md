@@ -32,7 +32,7 @@ Adobe _fortement_ vous recommande de respecter la norme suivante lors de la conf
 
 Adobe Commerce 2.4 nécessite une installation correcte de MySQL 8.0. Suivez les liens ci-dessous pour obtenir des instructions sur l’installation de MySQL sur votre ordinateur.
 
-* [ Ubuntu ](https://ubuntu.com/server/docs/databases-mysql)
+* [&#x200B; Ubuntu &#x200B;](https://ubuntu.com/server/docs/databases-mysql)
 * [CentOS](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html)
 
 Si vous prévoyez d’importer un grand nombre de produits, vous pouvez augmenter la valeur de [`max_allowed_packet`](https://dev.mysql.com/doc/refman/5.6/en/program-variables.html) de 16 Mo par défaut, soit une valeur supérieure à la valeur par défaut.
@@ -49,7 +49,7 @@ Pour vérifier éventuellement la valeur que vous définissez, saisissez la comm
 SHOW VARIABLES LIKE 'max_allowed_packet';
 ```
 
-Ensuite, [ Configurer l’instance de base de données ](#configuring-the-database-instance).
+Ensuite, [&#x200B; Configurer l’instance de base de données &#x200B;](#configuring-the-database-instance).
 
 ## Modifications de MySQL 8
 
@@ -176,18 +176,18 @@ Pour configurer une instance de base de données MySQL, procédez comme suit :
 
    Nous vous recommandons de configurer votre instance de base de données en fonction de votre activité. Lors de la configuration de votre base de données, tenez compte des points suivants :
 
-   * Les indexeurs nécessitent des valeurs de `tmp_table_size` et de `max_heap_table_size` plus élevées (par exemple, 64 millions). Si vous configurez le paramètre `batch_size`, vous pouvez ajuster cette valeur ainsi que les paramètres de taille de la table pour améliorer les performances de l’indexeur. Pour plus d’informations[ consultez le ](../../../performance/configuration.md) Guide d’optimisation .
+   * Les indexeurs nécessitent des valeurs de `tmp_table_size` et de `max_heap_table_size` plus élevées (par exemple, 64 millions). Si vous configurez le paramètre `batch_size`, vous pouvez ajuster cette valeur ainsi que les paramètres de taille de la table pour améliorer les performances de l’indexeur. Pour plus d’informations[&#x200B; consultez le &#x200B;](../../../performance/configuration.md) Guide d’optimisation .
 
    * Pour des performances optimales, assurez-vous que toutes les tables d’index MySQL et Adobe Commerce peuvent être conservées en mémoire (par exemple, configurez `innodb_buffer_pool_size`).
 
-   * La réindexation sur MariaDB 10.4 prend plus de temps que les autres versions de MariaDB ou MySQL. Voir [ Bonnes pratiques de configuration ](../../../performance/configuration.md#indexers).
+   * La réindexation sur MariaDB 10.4 prend plus de temps que les autres versions de MariaDB ou MySQL. Voir [&#x200B; Bonnes pratiques de configuration &#x200B;](../../../performance/configuration.md#indexers).
 
 1. Pour que les champs de `TIMESTAMP` MySQL suivent les préférences et la composition attendues par l’architecture de schéma déclaratif de l’application, la variable système `explicit_defaults_for_timestamp` doit être définie sur `on`.
 
    Références :
 
    * [MySQL 5.7](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_explicit_defaults_for_timestamp)
-   * [ MariaDB ](https://mariadb.com/kb/en/server-system-variables/#explicit_defaults_for_timestamp)
+   * [&#x200B; MariaDB &#x200B;](https://mariadb.com/kb/en/server-system-variables/#explicit_defaults_for_timestamp)
 
    Si ce paramètre n’est pas activé, `bin/magento setup:db:status` signale toujours que le `Declarative Schema is not up to date`.
 

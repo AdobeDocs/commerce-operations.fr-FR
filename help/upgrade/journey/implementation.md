@@ -68,7 +68,7 @@ En outre, les partenaires peuvent participer aux [versions bêta d’Adobe Comme
 
 ## Développement et assurance qualité
 
-Les tests sont la phase d’une mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. Le _[Guide de test de l’application ](https://developer.adobe.com/commerce/testing/guide/)_ fournit des détails sur la configuration et l’utilisation des outils de test de plateforme et de système pour accélérer l’assurance qualité. Utilisez un environnement d’évaluation pour tester et valider votre mise à niveau avant de passer en production.
+Les tests sont la phase d’une mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. Le _[Guide de test de l’application &#x200B;](https://developer.adobe.com/commerce/testing/guide/)_ fournit des détails sur la configuration et l’utilisation des outils de test de plateforme et de système pour accélérer l’assurance qualité. Utilisez un environnement d’évaluation pour tester et valider votre mise à niveau avant de passer en production.
 
 ## UAT et préparation du lancement
 

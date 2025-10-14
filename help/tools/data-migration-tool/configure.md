@@ -106,7 +106,7 @@ Avant de migrer des données, vous devez créer un module Magento 2.
 
 1. Dans le fichier `config.xml`, vous devez définir les informations d&#39;accès aux bases de données M1 et M2 et à la clé de chiffrement.
 
-1. Si votre magasin M1 comporte des modifications personnalisées, vous devez mapper le reste de vos fichiers de configuration aux personnalisations de votre magasin Magento 1. Voir [ Utilisation des fichiers de configuration et de mappage](#migration-config).
+1. Si votre magasin M1 comporte des modifications personnalisées, vous devez mapper le reste de vos fichiers de configuration aux personnalisations de votre magasin Magento 1. Voir [&#x200B; Utilisation des fichiers de configuration et de mappage](#migration-config).
 
 ### Configuration de la migration dans `vendor` dossier
 

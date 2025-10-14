@@ -30,7 +30,7 @@ Les instructions suivantes vous montrent comment effectuer une mise à niveau à
 
 ## Avant de commencer
 
-Vous devez remplir les [ conditions préalables à la mise à niveau ](../prepare/prerequisites.md) pour préparer votre environnement avant de démarrer le processus de mise à niveau.
+Vous devez remplir les [&#x200B; conditions préalables à la mise à niveau &#x200B;](../prepare/prerequisites.md) pour préparer votre environnement avant de démarrer le processus de mise à niveau.
 
 ## Gestion des packages
 

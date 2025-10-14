@@ -35,7 +35,7 @@ La durée de vie par défaut du cache de fichier de mots vides est de 15 minutes
 
 **Pour modifier des mots vides** :
 
-1. Connectez-vous à votre serveur Commerce ou passez au [ propriétaire du système de fichiers ](../../installation/prerequisites/file-system/overview.md).
+1. Connectez-vous à votre serveur Commerce ou passez au [&#x200B; propriétaire du système de fichiers &#x200B;](../../installation/prerequisites/file-system/overview.md).
 1. Utilisez un éditeur de texte pour ouvrir un fichier de mots vides dans le répertoire `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`.
 
    Les fichiers CSV utilisent la convention de nommage `stopwords_<locale_code>.csv`. Par exemple, le fichier de mots vides allemand est nommé `stopwords_de_DE.csv`.
@@ -61,7 +61,7 @@ La durée de vie par défaut du cache de fichier de mots vides est de 15 minutes
 
 **Pour ajouter des mots vides pour un paramètre régional** :
 
-1. Connectez-vous à votre serveur Commerce ou passez au [ propriétaire du système de fichiers ](../../installation/prerequisites/file-system/overview.md).
+1. Connectez-vous à votre serveur Commerce ou passez au [&#x200B; propriétaire du système de fichiers &#x200B;](../../installation/prerequisites/file-system/overview.md).
 
 1. Utilisez un éditeur de texte pour créer un fichier de mots vides nommé `stopwords_<locale_code>.csv` dans le répertoire `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`.
 

@@ -35,7 +35,7 @@ Pour les installations sur site, consultez [Configuration de la mise en cache de
 
 ### Dimensionnement de la mémoire cache L2 (Adobe Commerce Cloud)
 
-Le cache L2 utilise un [ système de fichiers temporaire ](https://en.wikipedia.org/wiki/Tmpfs) comme mécanisme de stockage. Par rapport aux systèmes de base de données clé-valeur spécialisés, un système de fichiers temporaires ne dispose pas d’une politique d’éviction des clés pour contrôler l’utilisation de la mémoire.
+Le cache L2 utilise un [&#x200B; système de fichiers temporaire &#x200B;](https://en.wikipedia.org/wiki/Tmpfs) comme mécanisme de stockage. Par rapport aux systèmes de base de données clé-valeur spécialisés, un système de fichiers temporaires ne dispose pas d’une politique d’éviction des clés pour contrôler l’utilisation de la mémoire.
 
 L’absence de contrôle de l’utilisation de la mémoire peut entraîner une augmentation de l’utilisation de la mémoire cache L2 au fil du temps en accumulant le cache obsolète.
 

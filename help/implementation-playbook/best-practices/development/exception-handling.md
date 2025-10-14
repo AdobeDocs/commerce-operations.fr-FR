@@ -101,7 +101,7 @@ try {
 
 ### ![incorrect](../../../assets/no.svg) `catch` vide
 
-Les blocs de `catch` vides peuvent être un signe de désactivation involontaire et doivent être remplacés par l’exemple [ correct](#mute-signals).
+Les blocs de `catch` vides peuvent être un signe de désactivation involontaire et doivent être remplacés par l’exemple [&#x200B; correct](#mute-signals).
 
 ```php
 try {
