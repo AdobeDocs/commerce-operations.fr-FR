@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.4-p16 est une version de sécurité de prise en charge étendue qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.4. Il est disponible uniquement pour les clients Adobe Commerce.
 
-Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
+Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB25-94](https://helpx.adobe.com/fr/security/products/magento/apsb25-94.html).
 
 {{b2b-patches}}
 

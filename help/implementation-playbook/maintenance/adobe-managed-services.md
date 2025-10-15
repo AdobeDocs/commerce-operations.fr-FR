@@ -388,7 +388,7 @@ Adobe fournit un ensemble de services concernant la configuration, le développe
 
 La pile de sécurité Adobe pour Managed Services renforce la sécurité dans à chaque niveau en utilisant l’automatisation et la cohérence pour réduire les erreurs humaines. Les équipes de développement et d’exploitation héritent automatiquement des contrôles de sécurité de différents niveaux de la pile.
 
-Les partenaires de Platform, tels que Amazon Web Services et Microsoft Azure, assurent une couverture de sécurité maximale lors de l’application des personnalisations de la plateforme. L’équipe d’Adobe Managed Services fournit des services de sécurité de base, tels que la conformité, la journalisation, l’authentification, l’analyse et la surveillance, ainsi que la sécurité du serveur et la configuration sécurisée des applications. Voir [Sécurité Adobe Commerce](https://business.adobe.com/products/magento/secure-ecommerce.html) pour plus d’informations.
+Les partenaires de Platform, tels que Amazon Web Services et Microsoft Azure, assurent une couverture de sécurité maximale lors de l’application des personnalisations de la plateforme. L’équipe d’Adobe Managed Services fournit des services de sécurité de base, tels que la conformité, la journalisation, l’authentification, l’analyse et la surveillance, ainsi que la sécurité du serveur et la configuration sécurisée des applications. Voir [Sécurité Adobe Commerce](https://business.adobe.com/fr/products/magento/secure-ecommerce.html) pour plus d’informations.
 
 Le diagramme suivant montre la pile technologique de sécurité d’Adobe Managed Services :
 
