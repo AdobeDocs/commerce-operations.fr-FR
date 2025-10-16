@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 4718ebd237c73913e8bc03b9370298b3504e619f
+source-git-commit: 8ca7b1b616bd5733cc2ecc18cef50dbb176ea0c3
 workflow-type: tm+mt
-source-wordcount: '28592'
+source-wordcount: '29060'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,30 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 >[!INFO]
 >
->Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=fr#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
+>Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
 
 >[!INFO]
 >
 >Pour plus d’informations sur les [!DNL quality patches] créées par la communauté pour Magento Open Source, consultez les [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.72 {#v1-1-72}
+
+* **ACSD-68040** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Correction du problème en raison duquel les performances de la page de recherche frontale se dégradent sur les [!DNL MariaDB] 10.6 et 11.4 avec de nombreuses requêtes de recherche historiques.
+* **ACSD-67941** (pour Adobe Commerce et Magento Open Source >=2.4.7-p1 &lt;2.4.8) - Correction du problème en raison duquel les requêtes GraphQL avec des noms de filtres inconnus provoquent des journaux d’exceptions PHP.
+* **ACSD-68064** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel la création de mises à jour planifiées entraîne des entrées en double dans les environnements comportant un grand nombre de catégories imbriquées.
+* **ACSD-66807** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Correction du problème en raison duquel le tableau `report_viewed_product_index` affiche un nombre incorrect de pages vues de produits.
+* **ACSD-67383** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel l’utilisation de **[!UICONTROL Login as Customer]** avec deux comptes d’administration de société dans la même session provoquait une erreur *Aucune entité de ce type avec cartId*.
+* **ACSD-67518** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème en raison duquel les rapports avancés génèrent des lignes d’en-tête dupliquées lorsque le nombre de lignes dépasse la taille du lot.
+* **ACSD-67639** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème en raison duquel la création d’un avoir échoue pour les produits groupés dont le **[!UICONTROL Dynamic Price]** est défini sur *Non*.
+* **ACSD-67696** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Correction du problème en raison duquel les entrées `media_gallery` ne sont pas renvoyées dans le nœud de produit GraphQL du panier après un vidage du cache.
+* **ACSD-67946** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.9) - Correction du problème en raison duquel les mises à jour du panier affichaient des bannières d’erreur en double.
+* **ACSD-68011** (pour Adobe Commerce, B2B >=1.5.1 &lt;1.5.3) - Correction du problème en raison duquel des SKU inexistants peuvent être affectés à un catalogue partagé via l’API `/V1/sharedCatalog/:id/assignProducts` [!DNL REST].
+* **ACSD-68118** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.9) - Correction du problème en raison duquel la requête `customerCart` GraphQL renvoie des valeurs d’attribut de produit qui ne reflètent pas l’en-tête du magasin, ce qui entraîne une localisation incohérente.
+* **ACSD-68092** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème en raison duquel les options de produits groupés sont perdues après plusieurs enregistrements en raison d’une synchronisation incorrecte entre les mises à jour planifiées et les données de produits de base.
+* **ACSD-67424** (pour Adobe Commerce, B2B >=1.5.0 &lt;1.5.3) - Correction du problème en raison duquel la valeur `updated_at` dans la réponse de l’API `GET /carts/search` [!DNL REST] ne correspond pas à la valeur affichée dans le **[!UICONTROL Admin panel]** lors de l’utilisation de devis négociables.
+* **ACSD-67187** (pour Adobe Commerce, B2B >=1.5.1 &lt;1.5.3) - Correction du problème en raison duquel les utilisateurs administrateurs limités à des sites web autres que ceux par défaut affichaient l’erreur *Veuillez créer au moins un catalogue public partagé pour continuer* et ne peuvent pas accéder au bouton **[!UICONTROL Add New Company]** sur la grille Société.
+* Versions mises à jour : **ACSD-49737**, **ACSD-53750**, **ACSD-51819**, **ACSD-55566**, **ACSD-62965**, **ACSD-63323**, **ACSD-63406**, **ACSD-66139**, **ACSD-66404**, **ACSD-67659**, **ACSD-66301**
+* Correctifs remplacés : **ACSD-62577**, **ACSD-63325**, **ACSD-67102**
 
 ## v1.1.71 {#v1-1-71}
 
