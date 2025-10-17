@@ -2,7 +2,7 @@
 title: Calendrier de publication des correctifs
 description: Découvrez quand Adobe prévoit d’annoncer la publication de nouveaux correctifs et correctifs de sécurité pour Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 5f9f0e1dab7f5e4580f077693039ea387df23880
+source-git-commit: f4601034e3e988b3058946b263ec5e8da41fce16
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -18,7 +18,7 @@ L’objectif de ce planning est de fournir les dates auxquelles Adobe prévoit d
 
 >[!NOTE]
 >
->Pour en savoir plus sur les nouvelles fonctionnalités, l’infrastructure cloud et les versions d’extensibilité, consultez la documentation de la version [Adobe Commerce Services](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/release-information/release-notes-all).
+>Pour en savoir plus sur les nouvelles fonctionnalités, l’infrastructure cloud et les versions d’extensibilité, consultez la documentation de la version [Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
 
 Outre les correctifs de qualité, de sécurité et Beta planifiés répertoriés sur cette page, Adobe permet d’accéder à des [correctifs individuels](versioning-policy.md#individual-patch) via l’[outil de correctifs de qualité](../tools/quality-patches-tool/usage.md). Cet outil vous permet d’appliquer, d’annuler et d’afficher des informations générales sur tous les correctifs individuels disponibles pour la version installée d’Adobe Commerce.
 
@@ -34,4 +34,6 @@ Outre les correctifs de qualité, de sécurité et Beta planifiés répertoriés
 
 Voir l’image suivante pour plus de détails :
 
-![Calendrier des versions d’Adobe Commerce 2026](../assets/release/release-calendar.drawio.svg)
+<!-- The SVG source for the following image is located here: /help/assets/release/release-calendar.drawio.svg -->
+
+![Calendrier des versions d’Adobe Commerce 2026](../assets/release/release-calendar.drawio.png)
