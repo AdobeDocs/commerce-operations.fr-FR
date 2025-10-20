@@ -1,9 +1,9 @@
 ---
 title: Courtier en messages (Artéfacts ActiveMQ)
 description: Pour installer et configurer le courtier de messages Apache ActiveMQ Artemis pour les installations sur site d’Adobe Commerce, procédez comme suit.
-source-git-commit: 6f15a24e650a7138bae6d0b40f230e6970a943b0
+source-git-commit: 46816b42ea30cb6c5f5ce59752cc00c38d221610
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -12,9 +12,10 @@ ht-degree: 0%
 
 Adobe Commerce prend également en charge le courtier de messages open source ActiveMQ Artemis via le protocole STOMP (Simple Text Oriented Messaging Protocol). Il fournit un système de messagerie fiable et évolutif, offrant une flexibilité pour les intégrations STOMP.
 
+
 >[!NOTE]
 >
->ActiveMQ Artemis a été introduit dans Adobe Commerce 2.4.6 et les versions ultérieures.
+>ActiveMQ Artemis a été introduit dans Adobe Commerce 2.4.6 et les versions ultérieures. Pour plus d’informations sur l’installation d’ActiveMQ Artemis dans Adobe Commerce sur des projets d’infrastructure cloud, voir [Configuration du service ActiveMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemqsee) dans le *Guide de Commerce sur le cloud*.
 
 Les files d&#39;attente de messages fournissent un mécanisme de communication asynchrone dans lequel l&#39;expéditeur et le destinataire d&#39;un message ne se contactent pas. Ils n’ont pas non plus besoin de communiquer avec la file d’attente de messages en même temps. Lorsqu&#39;un expéditeur place un message dans une file d&#39;attente, il est stocké jusqu&#39;à ce que le destinataire le reçoive.
 
@@ -29,7 +30,7 @@ Le système de file d’attente des messages doit être établi avant d’instal
 
 >[!TIP]
 >
->[&#x200B; Consultez toujours la page de téléchargement d’Apache ActiveMQ Artemis &#x200B;](https://activemq.apache.org/components/artemis/download/) la dernière version stable avant l’installation. Les exemples de ce document utilisent la version 2.42.0, qui est la dernière version stable en date de septembre 2025.
+>[ Consultez toujours la page de téléchargement d’Apache ActiveMQ Artemis ](https://activemq.apache.org/components/artemis/download/) la dernière version stable avant l’installation. Les exemples de ce document utilisent la version 2.42.0, qui est la dernière version stable en date de septembre 2025.
 
 
 ## Installation des artéfacts Apache ActiveMQ

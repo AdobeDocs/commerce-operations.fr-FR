@@ -1,5 +1,5 @@
 ---
-source-git-commit: bfad68a46b9b1a79a702f04efd39129decda1a1c
+source-git-commit: c71367c553dce66c146540389461f36eaa529bfc
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -93,17 +93,20 @@ _AC-14610_
 #### Migration de l’intégration USPS depuis les API Web Tools obsolètes vers les nouvelles API RESTful USPS
 
 Pour se conformer à l’annonce d’USPS de la suppression des anciennes API Web Tools d’ici le 25 janvier 2026, l’intégration d’Adobe Commerce USPS est migrée vers les nouvelles API RESTful USPS.
+
 Améliorations clés :
-- Prise en charge de la double API : les utilisateurs administrateurs peuvent désormais choisir entre l’ancienne API Web Tools et la nouvelle API RESTful USPS via les paramètres de configuration.
-- Mise à niveau de l’authentification : OAuth 2.0 implémenté pour un accès sécurisé à l’API.
-- Format de données amélioré : passage de XML à JSON pour une communication plus épurée et plus efficace.
-- Nouveaux champs d’administration :
-URL REST de la passerelle (en fonction du mode : En développement ou En direct)
-ID client et secret
-Type de compte, Numéro de compte
-CRID, MID, code d&#39;identification de l&#39;expéditeur
-AES/ITN pour les expéditions internationales
-Modes d’expédition autorisés spécifiques à REST
+
+* Prise en charge de la double API : les utilisateurs administrateurs peuvent désormais choisir entre l’ancienne API Web Tools et la nouvelle API RESTful USPS via les paramètres de configuration.
+* Mise à niveau de l’authentification : OAuth 2.0 implémenté pour un accès sécurisé à l’API.
+* Format de données amélioré : passage de XML à JSON pour une communication plus épurée et plus efficace.
+* Nouveaux champs d’administration :
+   * URL REST de la passerelle (en fonction du mode : En développement ou En direct)
+   * ID client et secret
+   * Type de compte, Numéro de compte
+   * CRID, MID, code d&#39;identification de l&#39;expéditeur
+   * AES/ITN pour les expéditions internationales
+   * Modes d’expédition autorisés spécifiques à REST
+
 Cette migration garantit qu’Adobe Commerce reste conforme aux normes USPS, améliore la fiabilité du système et garantit aux commerçants des intégrations d’expédition pérennes.
 
 _AC-13257_
