@@ -19,7 +19,7 @@ Vous pouvez mettre à niveau _sur site_ les déploiements de l’application Ado
 
 >[!NOTE]
 >
->- Pour les projets d’infrastructure cloud d’Adobe Commerce, consultez [Mise à niveau de la version de Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) dans le guide cloud.
+>- Pour les projets d’infrastructure cloud d’Adobe Commerce, consultez [Mise à niveau de la version de Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=fr) dans le guide cloud.
 >- N’utilisez pas cette méthode pour effectuer la mise à niveau si vous avez cloné le référentiel GitHub. Voir [Mise à niveau d’une installation basée sur Git](../developer/git-installs.md).
 
 Les instructions suivantes vous montrent comment effectuer une mise à niveau à l’aide du gestionnaire de packages du compositeur. Adobe Commerce 2.4.2 a introduit la prise en charge du compositeur 2. Si vous tentez d’effectuer une mise à niveau à partir de la version &lt;2.4.1, vous devez d’abord effectuer la mise à niveau vers une version compatible avec le compositeur 2 (par exemple, 2.4.2) à l’aide du compositeur 1 _avant_ d’effectuer la mise à niveau vers le compositeur 2 pour les mises à niveau >2.4.2. En outre, vous devez exécuter une [version prise en charge](../../installation/system-requirements.md) de PHP.
