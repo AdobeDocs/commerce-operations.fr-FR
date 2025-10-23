@@ -30,13 +30,13 @@ Les instructions suivantes vous montrent comment effectuer une mise à niveau à
 
 ## Avant de commencer
 
-Vous devez remplir les [ conditions préalables à la mise à niveau ](../prepare/prerequisites.md) pour préparer votre environnement avant de démarrer le processus de mise à niveau.
+Vous devez remplir les [&#x200B; conditions préalables à la mise à niveau &#x200B;](../prepare/prerequisites.md) pour préparer votre environnement avant de démarrer le processus de mise à niveau.
 
 >[!IMPORTANT]
 >
 >La version 2.4.6-p13 d’Adobe Commerce n’inclut pas le package `magento/inventory-composer-installer`, qui est requis pour une mise à niveau fluide à partir de versions mineures plus anciennes avec des modifications rétrocompatibles.<br>
->>Si vous effectuez une mise à niveau de la version 2.3 vers la version 2.4.6-p13, exécutez la commande suivante pour installer le package `magento/inventory-composer-installer` avant la mise à niveau :
->>`composer require magento/inventory-composer-installer`
+>&#x200B;>Si vous effectuez une mise à niveau de la version 2.3 vers la version 2.4.6-p13, exécutez la commande suivante pour installer le package `magento/inventory-composer-installer` avant la mise à niveau :
+>&#x200B;>`composer require magento/inventory-composer-installer`
 
 ## Gestion des packages
 

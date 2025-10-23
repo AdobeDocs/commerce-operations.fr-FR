@@ -101,7 +101,7 @@ Améliorations clés :
 * Format de données amélioré : passage de XML à JSON pour une communication plus épurée et plus efficace.
 * Nouveaux champs d’administration :
    * URL REST de la passerelle (en fonction du mode : En développement ou En direct)
-   * ID client &amp;amp; Secret
+   * ID client &amp; Secret
    * Type de compte, Numéro de compte
    * CRID, MID, code d&#39;identification de l&#39;expéditeur
    * AES/ITN pour les expéditions internationales
