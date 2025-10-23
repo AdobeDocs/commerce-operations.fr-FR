@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
+source-git-commit: 5b0229d73dc7b8ad53750102e99447bb15baa84d
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ Améliorations clés :
 * Format de données amélioré : passage de XML à JSON pour une communication plus épurée et plus efficace.
 * Nouveaux champs d’administration :
    * URL REST de la passerelle (en fonction du mode : En développement ou En direct)
-   * ID client &amp; Secret
+   * ID client et secret
    * Type de compte, Numéro de compte
    * CRID, MID, code d&#39;identification de l&#39;expéditeur
    * AES/ITN pour les expéditions internationales
