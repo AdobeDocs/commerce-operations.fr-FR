@@ -1,5 +1,5 @@
 ---
-source-git-commit: b0756431d8ddf0833ef8c13528f7681a1a92a3ca
+source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Toutes les commandes de l’interface de ligne de commande Magento doivent être exécutées par le [&#x200B; propriétaire du système de fichiers](/help/configuration/cli/config-cli.md#prerequisites).
+>Toutes les commandes de l’interface de ligne de commande Magento doivent être exécutées par le [ propriétaire du système de fichiers](/help/configuration/cli/config-cli.md#prerequisites).
 
 ## Commandes de sauvegarde {#tip-backup-command}
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Après avoir installé ce correctif de sécurité, les commerçants B2B d’Adobe Commerce doivent également effectuer la mise à jour vers la dernière version du correctif de sécurité B2B compatible. Voir les notes de mise à jour [B2B](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/release-notes).
+>Après avoir installé ce correctif de sécurité, les commerçants B2B d’Adobe Commerce doivent également effectuer la mise à jour vers la dernière version du correctif de sécurité B2B compatible. Voir les notes de mise à jour [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Adobe Commerce uniquement {#ee-only}
 
@@ -85,7 +85,7 @@ Avant de pouvoir exécuter des indexeurs en mode parallèle, vous devez activer 
 
 >[!IMPORTANT]
 >
->Adobe ne prend pas en charge l’application de correctifs officiels fournis par Adobe à l’aide de cette méthode. Utilisez la méthode suivante à vos risques et périls. Pour appliquer les correctifs officiels, utilisez le [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr){target="_blank"} . Effectuez toujours des tests complets avant de déployer un correctif personnalisé.
+>Adobe ne prend pas en charge l’application de correctifs officiels fournis par Adobe à l’aide de cette méthode. Utilisez la méthode suivante à vos risques et périls. Pour appliquer les correctifs officiels, utilisez le [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} . Effectuez toujours des tests complets avant de déployer un correctif personnalisé.
 
 ## Rétroportages de correctif de sécurité d’octobre 2025 {#oct-2025-backports}
 
@@ -99,5 +99,4 @@ Avant de pouvoir exécuter des indexeurs en mode parallèle, vous devez activer 
 
 * **Ajout de la prise en charge du protocole STOMP d’artémis Apache ActiveMQ**
 
-  Ajout de la prise en charge du courtier de messages open source ActiveMQ Artemis via le protocole STOMP (Simple Text Oriented Messaging Protocol). Il fournit un système de messagerie fiable et évolutif, offrant une flexibilité pour les intégrations STOMP. Voir [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) dans le Guide de configuration de Commerce **.
-
+  Ajout de la prise en charge du courtier de messages open source ActiveMQ Artemis via le protocole STOMP (Simple Text Oriented Messaging Protocol). Il fournit un système de messagerie fiable et évolutif, offrant une flexibilité pour les intégrations STOMP. Voir [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) dans le Guide de configuration de Commerce **.

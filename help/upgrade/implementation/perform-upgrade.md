@@ -2,9 +2,9 @@
 title: Effectuer une mise à niveau
 description: Pour mettre à niveau les déploiements sur site d’Adobe Commerce, procédez comme suit.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Vous pouvez mettre à niveau _sur site_ les déploiements de l’application Ado
 
 >[!NOTE]
 >
->- Pour les projets d’infrastructure cloud d’Adobe Commerce, consultez [Mise à niveau de la version de Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=fr) dans le guide cloud.
+>- Pour les projets d’infrastructure cloud d’Adobe Commerce, consultez [Mise à niveau de la version de Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) dans le guide cloud.
 >- N’utilisez pas cette méthode pour effectuer la mise à niveau si vous avez cloné le référentiel GitHub. Voir [Mise à niveau d’une installation basée sur Git](../developer/git-installs.md).
 
 Les instructions suivantes vous montrent comment effectuer une mise à niveau à l’aide du gestionnaire de packages du compositeur. Adobe Commerce 2.4.2 a introduit la prise en charge du compositeur 2. Si vous tentez d’effectuer une mise à niveau à partir de la version &lt;2.4.1, vous devez d’abord effectuer la mise à niveau vers une version compatible avec le compositeur 2 (par exemple, 2.4.2) à l’aide du compositeur 1 _avant_ d’effectuer la mise à niveau vers le compositeur 2 pour les mises à niveau >2.4.2. En outre, vous devez exécuter une [version prise en charge](../../installation/system-requirements.md) de PHP.
@@ -30,7 +30,13 @@ Les instructions suivantes vous montrent comment effectuer une mise à niveau à
 
 ## Avant de commencer
 
-Vous devez remplir les [&#x200B; conditions préalables à la mise à niveau &#x200B;](../prepare/prerequisites.md) pour préparer votre environnement avant de démarrer le processus de mise à niveau.
+Vous devez remplir les [ conditions préalables à la mise à niveau ](../prepare/prerequisites.md) pour préparer votre environnement avant de démarrer le processus de mise à niveau.
+
+>[!IMPORTANT]
+>
+>La version 2.4.6-p13 d’Adobe Commerce n’inclut pas le package `magento/inventory-composer-installer`, qui est requis pour une mise à niveau fluide à partir de versions mineures plus anciennes avec des modifications rétrocompatibles.<br>
+>>Si vous effectuez une mise à niveau de la version 2.3 vers la version 2.4.6-p13, exécutez la commande suivante pour installer le package `magento/inventory-composer-installer` avant la mise à niveau :
+>>`composer require magento/inventory-composer-installer`
 
 ## Gestion des packages
 
