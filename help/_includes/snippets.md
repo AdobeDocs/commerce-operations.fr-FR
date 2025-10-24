@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Toutes les commandes de l’interface de ligne de commande Magento doivent être exécutées par le [ propriétaire du système de fichiers](/help/configuration/cli/config-cli.md#prerequisites).
+>Toutes les commandes de l’interface de ligne de commande Magento doivent être exécutées par le [&#x200B; propriétaire du système de fichiers](/help/configuration/cli/config-cli.md#prerequisites).
 
 ## Commandes de sauvegarde {#tip-backup-command}
 
