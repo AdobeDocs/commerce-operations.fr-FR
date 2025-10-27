@@ -1,5 +1,5 @@
 ---
-source-git-commit: 151272eed6c4bb2e1c2e5138a5c8a3a7e7bd8fe6
+source-git-commit: ae571a9e7ca1234644a3bc9beade447009c58a3d
 workflow-type: tm+mt
 source-wordcount: '6079'
 ht-degree: 0%
@@ -41,9 +41,9 @@ Correction d’un problème de pagination dans l’API de quantité vendable de 
 
 _ACP2E-4086 - [contribution du code GitHub](https://github.com/magento/inventory/commit/5632fb5e)_
 
-#### Un attaquant peut utiliser la requête POST à l’aide de l’API REST et envoyer une payload RCE
+#### Problème de validation avec les identifiants d’options personnalisées dans les API REST d’article de panier
 
-Les API REST V1/guest-carts/&lt;cartId>/items/ et V1/carts/mine/items/ valident désormais « product_options.extension_attributes.custom_options ».*.option_id » pour être valide option_id dans le SKU de l’article du panier. Auparavant, cette option était traitée et enregistrée dans la base de données sans validation.
+Les API REST V1/guest-carts/&lt;cartId>/items/ et V1/carts/mine/items/ valident désormais « product_options.extension_attributes.custom_options ».*.option_id » pour vous assurer qu’il référence un option_id valide pour le SKU de l’article du panier. Auparavant, ce paramètre était traité et enregistré dans la base de données sans validation.
 
 _ACP2E-4138 - [contribution du code GitHub](https://github.com/magento/magento2/commit/a1c57b2e)_
 
