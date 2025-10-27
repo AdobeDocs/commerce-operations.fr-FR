@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 774b5587f6a26157b8b275d1a4aa226b22b0e0e0
+source-git-commit: 77f917d19d999b195b8c5021f65f31c86b35f85e
 workflow-type: tm+mt
-source-wordcount: '8739'
+source-wordcount: '8755'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,13 @@ ht-degree: 0%
    - [Alertes gérées pour Adobe Commerce : alerte d’avertissement de mémoire](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert.md)
    - [Alertes gérées sur Adobe Commerce : alerte critique de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert.md)
    - [Alertes gérées sur Adobe Commerce : alerte critique de la mémoire](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert.md)
-   - [Alertes gérées pour Adobe Commerce : alerte critique [!DNL Apdex] &#x200B;](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert.md)
+   - [Alertes gérées pour Adobe Commerce : alerte critique [!DNL Apdex] ](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert.md)
    - [Alertes gérées sur Adobe Commerce: [!DNL MariaDB] alerts](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
    - [Alertes gérées pour Adobe Commerce : alerte d [!DNL Apdex] avertissement](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
    - [Alertes gérées pour Adobe Commerce : alerte d’avertissement de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Outil de correctifs de qualité {#quality-patches-tool}
    - [[!DNL Quality Patches Tool] : outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool] : rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr){target="_blank"}
+   - [[!DNL Quality Patches Tool] : rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Utilisation](quality-patches-tool/usage.md)
    - [Notes de mise à jour](quality-patches-tool/release-notes.md)
    - Correctifs disponibles dans l’outil de correctifs de la qualité {#patches-available-in-qpt}
@@ -403,7 +403,7 @@ ht-degree: 0%
          - [ACSD-51230 : le compte de carte cadeau est supprimé](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51230-gift-card-account-is-deleted.md)
          - [ACSD-51379 : les modifications apportées au contenu texte de la page via  [!DNL Page Builder]  ne sont pas enregistrées](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51379-changes-made-to-page-text-content-via-page-builder-are-not-saved.md)
          - [ACSD-51305 : produits enfants composites en rupture de stock non disponibles dans la réponse GraphQL](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51305-out-of-stock-composite-child-products-unavailable-in-graphql-response.md)
-         - [ACSD-51294 : prix, quantité, taxe, expédition, chiffre d’affaires envoyé en tant que chaîne à et  [!DNL Google Analytics] &#x200B;](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51294-price-quantity-tax-shipping-and-revenue-are-sent-as-string-to-google-analytics-and-gtm.md)
+         - [ACSD-51294 : prix, quantité, taxe, expédition, chiffre d’affaires envoyé en tant que chaîne à et  [!DNL Google Analytics] ](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51294-price-quantity-tax-shipping-and-revenue-are-sent-as-string-to-google-analytics-and-gtm.md)
          - [ACSD-51291 : l’administration restreinte peut ajouter des images/vidéos au produit affecté à plusieurs sites web](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51291-restricted-admin-can-add-images-videos-to-product-assigned-to-multiple-websites.md)
          - [ACSD-50849 : l’ajout d’un nouveau produit à une catégorie après l’effacement du cache entraîne une incohérence des positions et des sélections](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-50849-adding-new-product-to-category-after-clearing-cache.md)
          - [ACSD-51204 : le produit ne revient pas en stock après la création de l&#39;avoir](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51204-product-does-not-return-back-in-stock-after-creating-credit-memo.md)
@@ -899,6 +899,7 @@ ht-degree: 0%
          - [ACSD-67459 : impossible d’importer des produits dont les descriptions dépassent 65 536 caractères](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
+         - [ACSD-67639 : La création d&#39;un avoir échoue pour les produits groupés dont le prix dynamique est défini sur Non](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639.md)
          - [ACSD-67518: [!DNL Advanced Reporting]  génère des lignes d’en-tête en double lorsque le nombre de lignes dépasse la taille du lot](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67518.md)
          - [ACSD-67941 : les requêtes GraphQL avec des noms de filtres inconnus entraînent des logs d&#39;exceptions PHP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67941.md)
          - [ACSD-68011 : SKU inexistantes affectées au catalogue partagé via /V1/sharedCatalog/](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68011.md)
@@ -924,7 +925,7 @@ ht-degree: 0%
    - [Onglet Alertes](observation-for-adobe-commerce/alerts-tab.md)
    - [Onglet WAF](observation-for-adobe-commerce/waf-tab.md)
    - [Onglet CDN](observation-for-adobe-commerce/cdn-tab.md)
-   - [Onglet  [!DNL RabbitMQ] &#x200B;](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [Onglet  [!DNL RabbitMQ] ](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [Onglet Cron](observation-for-adobe-commerce/cron-tab.md)
    - [Onglet Indexation](observation-for-adobe-commerce/indexing-tab.md)
    - [Onglet Aperçu rapide](observation-for-adobe-commerce/oac-quickview-tab.md)
@@ -952,6 +953,6 @@ ht-degree: 0%
       - [Données nécessitant une migration manuelle](data-migration-tool/migrate-data/manual.md)
       - [Étapes suivant la migration des données](data-migration-tool/migrate-data/post-migration.md)
    - Ressources {#resources}
-      - [Dépannage](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=fr)
+      - [Dépannage](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Journal des modifications](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=fr)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
