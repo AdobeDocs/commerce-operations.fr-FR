@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: fddde045789cdbbe811975b06635574b9835d497
+source-git-commit: 4a3060235a4d22764cbb231aca7c1f835d357906
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.72.
 
 QPT v1.1.72 comprend les correctifs suivants :
-1. **ACSD-68040** : la page de recherche front-end présente une dégradation des performances sur les [!DNL MariaDB] 10.6 et 11.4 avec de nombreuses requêtes de recherche historiques.
+1. **ACSD-68040** : la page de recherche front-end ralentit sur [!DNL MariaDB] 10.6 avec un historique volumineux.
 1. **ACSD-67941** : les requêtes GraphQL avec des noms de filtres inconnus entraînent des logs d&#39;exceptions PHP.
 1. **ACSD-68064** : la création de mises à jour planifiées entraîne des entrées en double dans les environnements comportant un grand nombre de catégories imbriquées.
 1. **ACSD-66807** : `report_viewed_product_index` tableau indique un nombre incorrect de pages vues de produits.
