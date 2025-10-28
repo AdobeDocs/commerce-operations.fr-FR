@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4a3060235a4d22764cbb231aca7c1f835d357906
+source-git-commit: 3493a89d40e3dee377be715e71e2f977a3afd382
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ QPT v1.1.72 comprend les correctifs suivants :
 1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)** : les entrées `media_gallery` ne sont pas renvoyées dans le nœud de produit GraphQL du panier après un vidage du cache.
 1. **ACSD-67946** : les mises à jour du panier affichent les bannières d’erreur en double.
 1. **ACSD-68011** : SKU inexistantes affectées au catalogue partagé via l’API /V1/sharedCatalog/:id/assignProducts.
-1. **ACSD-68118** : `customerCart` requête GraphQL renvoie des valeurs d’attribut de produit qui ne reflètent pas l’en-tête du magasin, ce qui entraîne une localisation incohérente.
+1. **ACSD-68118** : `customerCart` requête [!DNL GraphQL] renvoie des valeurs d’attribut de produit incorrectes pour la vue de magasin.
 1. **ACSD-68092** : les options de produits groupés sont perdues après plusieurs enregistrements en raison d’une synchronisation incorrecte entre les mises à jour planifiées et les données de produits de base.
 1. **ACSD-67424** : `updated_at` valeur de la réponse de l&#39;API `GET /carts/search` [!DNL REST] ne correspond pas à la valeur affichée dans le **[!UICONTROL Admin panel]** lors de l&#39;utilisation de devis négociables.
 1. **ACSD-67187** : les utilisateurs administrateurs limités à des sites web autres que ceux par défaut voient l’erreur * »*Veuillez créer au moins un catalogue public partagé pour continuer* et ne peuvent pas accéder au bouton **[!UICONTROL Add New Company]** sur la grille de l’entreprise.
