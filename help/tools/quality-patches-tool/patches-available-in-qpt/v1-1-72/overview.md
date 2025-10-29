@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3493a89d40e3dee377be715e71e2f977a3afd382
+source-git-commit: 87f2d57e60ca74e2c90107a0d38517049802c89e
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,7 @@ QPT v1.1.72 comprend les correctifs suivants :
 1. **ACSD-67383** : la connexion en tant que client avec deux comptes d’administration de société dans la même session entraîne une erreur *Aucune entité de ce type avec cartId*.
 1. **ACSD-67518** : la création de rapports avancée génère des lignes d’en-tête dupliquées lorsque le nombre de lignes dépasse la taille du lot.
 1. **ACSD-67639** : la création d&#39;un avoir échoue pour les produits groupés dont le **[!UICONTROL Dynamic Price]** est défini sur *Non*.
+1. **ACSD-67946** : la mise à jour du panier affiche les bannières d’erreur en double.
 1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)** : les entrées `media_gallery` ne sont pas renvoyées dans le nœud de produit GraphQL du panier après un vidage du cache.
 1. **ACSD-67946** : les mises à jour du panier affichent les bannières d’erreur en double.
 1. **ACSD-68011** : SKU inexistantes affectées au catalogue partagé via l’API /V1/sharedCatalog/:id/assignProducts.
