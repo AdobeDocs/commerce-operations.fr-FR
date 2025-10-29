@@ -18,7 +18,7 @@ ht-degree: 0%
 
 La version de sécurité 2.4.3-p3 d’Adobe Commerce fournit des correctifs de sécurité pour les vulnérabilités qui ont été identifiées dans les versions précédentes de 2.4.3. Cette version comprend également des améliorations de sécurité qui améliorent la conformité aux dernières bonnes pratiques de sécurité.
 
-Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html).
+Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB22-38](https://helpx.adobe.com/fr/security/products/magento/apsb22-38.html).
 
 ### Appliquer AC-3022.patch pour continuer à offrir DHL comme transporteur
 
@@ -35,7 +35,7 @@ DHL a introduit la version 6.2 du schéma et abandonnera la version 6.0 dans un 
 
 La version de sécurité 2.4.3-p2 d’Adobe Commerce fournit des correctifs de sécurité pour les vulnérabilités qui ont été identifiées dans les versions précédentes. Cette version comprend également des améliorations de sécurité qui améliorent la conformité aux dernières bonnes pratiques de sécurité.
 
-Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB22-13](https://helpx.adobe.com/security/products/magento/apsb22-13.html).  La version de correctif résout également la vulnérabilité corrigée par `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` et `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`.
+Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB22-13](https://helpx.adobe.com/fr/security/products/magento/apsb22-13.html).  La version de correctif résout également la vulnérabilité corrigée par `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` et `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`.
 
 
 ### Appliquer AC-3022.patch pour continuer à offrir DHL comme transporteur
@@ -46,7 +46,7 @@ DHL a introduit la version 6.2 du schéma et abandonnera la version 6.0 dans un 
 
 * L’utilisation des variables d’e-mail a été abandonnée dans la version 2.3.4 dans le cadre d’une réduction des risques de sécurité au profit d’une syntaxe de variable plus stricte. Ce comportement hérité a été entièrement supprimé dans cette version dans le cadre de la réduction des risques de sécurité.
 
-  Par conséquent, les modèles d’e-mail ou de newsletter qui fonctionnaient dans les versions précédentes peuvent ne pas fonctionner correctement après la mise à niveau vers Adobe Commerce 2.4.3-p2. Les modèles concernés sont les remplacements administrateur, les thèmes, les thèmes enfants et les modèles provenant de modules personnalisés ou d’extensions tierces. Votre déploiement peut toujours être affecté, même après avoir utilisé l’outil de compatibilité de mise à niveau [Upgrade](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en) pour corriger les utilisations obsolètes. Voir [Migration de modèles d’e-mail personnalisés](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/) pour plus d’informations sur les effets potentiels et des instructions pour migrer les modèles affectés.
+  Par conséquent, les modèles d’e-mail ou de newsletter qui fonctionnaient dans les versions précédentes peuvent ne pas fonctionner correctement après la mise à niveau vers Adobe Commerce 2.4.3-p2. Les modèles concernés sont les remplacements administrateur, les thèmes, les thèmes enfants et les modèles provenant de modules personnalisés ou d’extensions tierces. Votre déploiement peut toujours être affecté, même après avoir utilisé l’outil de compatibilité de mise à niveau [Upgrade](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=fr) pour corriger les utilisations obsolètes. Voir [Migration de modèles d’e-mail personnalisés](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/) pour plus d’informations sur les effets potentiels et des instructions pour migrer les modèles affectés.
 
 * Les jetons d’accès OAuth et les jetons de réinitialisation de mot de passe sont désormais chiffrés lorsqu’ils sont stockés dans la base de données. <!-- AC-520 1323-->
 
@@ -64,7 +64,7 @@ DHL a introduit la version 6.2 du schéma et abandonnera la version 6.0 dans un 
 La version de sécurité 2.4.3-p1 d’Adobe Commerce fournit des correctifs de sécurité pour les vulnérabilités qui ont été identifiées dans la version précédente (Adobe Commerce 2.4.3 et Magento Open Source 2.4.3). Cette version comprend également des améliorations de sécurité qui améliorent la conformité aux dernières bonnes pratiques de sécurité.
 
 
-Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html). La version de correctif fournit également des correctifs pour les extensions développées par le fournisseur [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html), [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html) et [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html).
+Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB21-86](https://helpx.adobe.com/fr/security/products/magento/apsb21-86.html). La version de correctif fournit également des correctifs pour les extensions développées par le fournisseur [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html?lang=fr), [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html) et [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html).
 
 ### Appliquer AC-3022.patch pour continuer à offrir DHL comme transporteur
 
