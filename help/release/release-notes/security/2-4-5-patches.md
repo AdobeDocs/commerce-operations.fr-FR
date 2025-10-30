@@ -28,7 +28,7 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 >[!NOTE]
 >
->Les correctifs de sécurité de prise en charge étendue pour la version 2.4.5 sont disponibles uniquement pour les clients Adobe Commerce. Ces correctifs ne sont pas disponibles pour la base de code Magento Open Source. Voir [ Prise en charge étendue ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+>Les correctifs de sécurité de prise en charge étendue pour la version 2.4.5 sont disponibles uniquement pour les clients Adobe Commerce. Ces correctifs ne sont pas disponibles pour la base de code Magento Open Source. Voir [&#x200B; Prise en charge étendue &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
 
 ### Problèmes connus
 
@@ -190,7 +190,7 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 ### Appliquer un correctif pour CVE-2022-31160
 
-`jQuery-UI` version 1.13.1 de la bibliothèque comporte une vulnérabilité de sécurité connue (CVE-2022-31160) qui affecte plusieurs versions d’Adobe Commerce et de Magento Open Source. Cette bibliothèque est une dépendance d’Adobe Commerce et Magento Open Source 2.4.4, 2.4.5 et 2.4.6. Les commerçants exécutant les déploiements affectés doivent appliquer le correctif spécifié dans l’article de la base de connaissances [ Vulnérabilité de sécurité de l’interface utilisateur jQuery CVE-2022-31160 pour les versions 2.4.4, 2.4.5 et 2.4.6 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6) .
+`jQuery-UI` version 1.13.1 de la bibliothèque comporte une vulnérabilité de sécurité connue (CVE-2022-31160) qui affecte plusieurs versions d’Adobe Commerce et de Magento Open Source. Cette bibliothèque est une dépendance d’Adobe Commerce et Magento Open Source 2.4.4, 2.4.5 et 2.4.6. Les commerçants exécutant les déploiements affectés doivent appliquer le correctif spécifié dans l’article de la base de connaissances [&#x200B; Vulnérabilité de sécurité de l’interface utilisateur jQuery CVE-2022-31160 pour les versions 2.4.4, 2.4.5 et 2.4.6 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6) .
 
 ## 2.4.5-p3
 
