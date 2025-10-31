@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4e2c22626701e342920c8f60caff56af23712306
+source-git-commit: 43696165e24e39e25007b5864f8b0c3d0bcb92c2
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ QPT v1.1.72 comprend les correctifs suivants :
 1. **ACSD-67941** : les requêtes GraphQL avec des noms de filtres inconnus entraînent des logs d&#39;exceptions PHP.
 1. **ACSD-68064** : entrées en double créées lors des mises à jour planifiées dans les environnements comportant des catégories profondément imbriquées.
 1. **ACSD-66807** : `report_viewed_product_index` tableau indique un nombre incorrect de pages vues de produits.
-1. **ACSD-67383** : la connexion en tant que client avec deux comptes d’administration de société dans la même session entraîne une erreur *Aucune entité de ce type avec cartId*.
+1. **ACSD-67383** : erreur lors de la connexion en tant que client avec deux comptes d’administrateur de société dans la même session.
 1. **ACSD-67518** : la création de rapports avancée génère des lignes d’en-tête dupliquées lorsque le nombre de lignes dépasse la taille du lot.
 1. **ACSD-67639** : la création d&#39;un avoir échoue pour les produits groupés dont le **[!UICONTROL Dynamic Price]** est défini sur *Non*.
 1. **ACSD-67946** : la mise à jour du panier affiche les bannières d’erreur en double.
