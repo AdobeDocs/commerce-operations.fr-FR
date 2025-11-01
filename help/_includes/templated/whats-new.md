@@ -23,7 +23,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.72 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424">ACSD-67424 : la valeur Updated_at dans la réponse de l’API REST GET /carts/search ne correspond pas à la valeur affichée dans le panneau d’administration lors de l’utilisation de devis négociables</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.72 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424">ACSD-67424 : la valeur Updated_at dans la réponse de l’API REST GET /carts/search ne correspond pas à la valeur affichée dans le panneau d’administration lors de l’utilisation de devis négociables</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -31,7 +31,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b8967a4cc8006fc5fa4319f7ffd6d8c7f3edf3d1">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.72 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383">ACSD-67383 : la connexion en tant que client avec deux comptes d’administration de société dans la même session entraîne l’erreur « Aucune entité de ce type avec cartId »</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.72 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383">ACSD-67383 : la connexion en tant que client avec deux comptes d’administration de société dans la même session entraîne l’erreur « Aucune entité de ce type avec cartId »</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -53,7 +53,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview">Présentation : Outil de correctifs de qualité (QPT) version 1.1.73</a>.</p>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview">Présentation : Outil de correctifs de qualité (QPT) version 1.1.73</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -75,7 +75,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.72 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064">ACSD-68064 : la création de mises à jour planifiées entraîne des entrées en double dans les environnements avec un grand nombre de catégories imbriquées</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.72 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064">ACSD-68064 : la création de mises à jour planifiées entraîne des entrées en double dans les environnements avec un grand nombre de catégories imbriquées</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -83,7 +83,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b8d4046ce9ea0d085cc11f5631d04a8b3adb3239">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.72 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946">ACSD-67946 : les mises à jour du panier affichent les bannières d’erreur en double</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.72 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946">ACSD-67946 : les mises à jour du panier affichent les bannières d’erreur en double</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -113,7 +113,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.72 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68040">ACSD-68040 : la page de recherche front-end présente une dégradation des performances sur MariaDB 10.6 et 11.4 avec de nombreuses requêtes de recherche historiques</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.72 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68040">ACSD-68040 : la page de recherche front-end présente une dégradation des performances sur MariaDB 10.6 et 11.4 avec de nombreuses requêtes de recherche historiques</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -121,7 +121,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6dff1447a89c083fb8bd867281d20462cc843baa">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.72 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118">ACSD-68118 : la requête GraphQL CustomerCart renvoie des valeurs d’attribut de produit qui ne reflètent pas l’en-tête du magasin, ce qui entraîne une localisation incohérente</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.72 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118">ACSD-68118 : la requête GraphQL CustomerCart renvoie des valeurs d’attribut de produit qui ne reflètent pas l’en-tête du magasin, ce qui entraîne une localisation incohérente</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -129,7 +129,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7dec696f3d87d91902a166314199cf3b6c161f85">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.72 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-66807">ACSD-66807 : la table Report_viewed_product_index indique un nombre incorrect de pages vues de produits</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.72 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-66807">ACSD-66807 : la table Report_viewed_product_index indique un nombre incorrect de pages vues de produits</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -151,7 +151,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.72 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639">ACSD-67639 : la création d’un avoir échoue pour les produits groupés avec un prix dynamique défini sur Non</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.72 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639">ACSD-67639 : la création d’un avoir échoue pour les produits groupés avec un prix dynamique défini sur Non</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
