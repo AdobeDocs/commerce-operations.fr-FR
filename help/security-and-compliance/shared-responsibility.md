@@ -2,9 +2,9 @@
 title: Sécurité à responsabilité partagée et modèle opérationnel
 description: Découvrez les responsabilités de sécurité de chaque partie impliquée dans votre projet d’infrastructure cloud Adobe Commerce.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: fcaf6ff1dce1c1a5084307cd366ca58d71a8f4e4
+source-git-commit: aac78fc95b86951f352a636eef33e0b79b22a183
 workflow-type: tm+mt
-source-wordcount: '2850'
+source-wordcount: '2939'
 ht-degree: 0%
 
 ---
@@ -745,9 +745,9 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 
 |     | Adobe | Marchand |
 | --- | --- | --- |
-| Disponibilité d’Elasticsearch | R |   |
-| Configuration des paramètres par défaut d’Elasticsearch | R |   |
-| Envoyez une demande de service pour installer une version d’Elasticsearch compatible avec la version d’Adobe Commerce installée |  | R |
+| Disponibilité d’Elasticsearch ou d’OpenSearch | R |   |
+| Configuration des paramètres par défaut d’Elasticsearch ou d’OpenSearch | R |   |
+| Envoyez une demande de service pour installer une version d’Elasticsearch ou d’OpenSearch compatible avec la version d’Adobe Commerce installée |  | R |
 
 {style="table-layout:auto"}
 
@@ -793,11 +793,17 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 
 {style="table-layout:auto"}
 
+>
+>Les commerçants doivent utiliser la version la plus récente de Live Search, de Product Recommendations et de Payment Services afin de garantir une stabilité, des fonctionnalités et une éligibilité optimales pour l’assistance.
+>Adobe ne prend pas en charge les versions obsolètes et la mise à niveau vous permet de bénéficier des dernières améliorations et correctifs de bugs.
+>Pour plus d’informations sur les versions prises en charge, consultez la [Matrice de disponibilité du produit pour les services Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services).
+
 #### Recommandations de produit
 
 |     | Adobe | Marchand |
 | --- | --- | --- |
 | Disponibilité du service de recommandations de produits | R |   |
+| Mise à niveau des modules de recommandations de produits |   | R |
 
 {style="table-layout:auto"}
 
@@ -806,6 +812,7 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 |     | Adobe | Marchand |
 | --- | --- | --- |
 | Disponibilité du service Live Search | R |   |
+| Mise à niveau des modules Live Search |   | R |
 
 {style="table-layout:auto"}
 
@@ -820,6 +827,15 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 | Implémentation principale d’AEM EDS (modèle standard Commerce) | R |   |
 | Implémentation personnalisée d’AEM EDS |  | R |
 | Toute autre implémentation de storefront personnalisée |  | R |
+
+{style="table-layout:auto"}
+
+#### Services de paiement
+
+|     | Adobe | Marchand |
+| --- | --- | --- |
+| Disponibilité du service de paiement | R |   |
+| Mise à niveau des modules de paiements |   | R |
 
 {style="table-layout:auto"}
 
