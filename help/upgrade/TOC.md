@@ -3,10 +3,10 @@ user-guide-title: Guide de mise à niveau
 user-guide-description: Découvrez pourquoi la mise à niveau de votre application Adobe Commerce est si importante et comment planifier et exécuter une mise à niveau avec succès.
 feature: Upgrade
 topic: Administration, Commerce, Development, Upgrade
-source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
+source-git-commit: 4616cc6990921b531483213f2904a24b483fb7ac
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 5%
+source-wordcount: '144'
+ht-degree: 4%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 5%
    - [Vérifier les modifications de la plateforme](prepare/platform-changes.md)
    - [Conditions préalables à la mise à niveau complètes](prepare/prerequisites.md)
    - [Migration d’Elasticsearch vers OpenSearch](prepare/opensearch-migration.md)
+   - [Migration de RabbitMQ vers ActiveMQ](prepare/activemq-migration.md)
    - [Présentation de la portée de la mise à niveau](prepare/scope.md)
 - Mise en œuvre {#implementation}
    - [Effectuer une mise à niveau](implementation/perform-upgrade.md)
@@ -54,4 +55,4 @@ ht-degree: 5%
 - Ressources {#resources}
    - [Lecture recommandée](resources/recommended-reading.md)
    - [Moderniser votre plateforme avec Adobe Commerce](resources/recommended-upgrade-paths.md)
-- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=fr)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
