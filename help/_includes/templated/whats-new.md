@@ -614,7 +614,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td>
         Mise à jour majeure
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/161">demande de tirage</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.fr-FR/pull/161">demande de tirage</a></td>
     </tr>
   </tbody>
 </table>

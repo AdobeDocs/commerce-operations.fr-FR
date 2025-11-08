@@ -18,7 +18,7 @@ Adobe accepte les demandes des parties prenantes internes et externes, y compris
 
 ## Comment créer une requête ?
 
-**Les parties prenantes internes** peuvent envoyer des demandes en ouvrant un problème Jira dans le projet COMDOX. **Les parties prenantes externes** peuvent envoyer des requêtes en ouvrant un [problème GitHub](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose) dans ce référentiel.
+**Les parties prenantes internes** peuvent envoyer des demandes en ouvrant un problème Jira dans le projet COMDOX. **Les parties prenantes externes** peuvent envoyer des requêtes en ouvrant un [problème GitHub](https://github.com/AdobeDocs/commerce-operations.fr-FR/issues/new/choose) dans ce référentiel.
 
 Vous pouvez soumettre les types de demandes suivants :
 
@@ -29,7 +29,7 @@ Vous pouvez soumettre les types de demandes suivants :
 ## Quel est le processus global ?
 
 
-**Créer un ticket Jira ou un problème**—Les parties prenantes internes créent un ticket Jira dans le projet COMDOX. Les parties prenantes externes soumettent un problème GitHub. Incluez des détails complets dans le problème Jira ou [GitHub](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose) pour aider l’équipe à comprendre le contexte et à donner la priorité à la requête.
+**Créer un ticket Jira ou un problème**—Les parties prenantes internes créent un ticket Jira dans le projet COMDOX. Les parties prenantes externes soumettent un problème GitHub. Incluez des détails complets dans le problème Jira ou [GitHub](https://github.com/AdobeDocs/commerce-operations.fr-FR/issues/new/choose) pour aider l’équipe à comprendre le contexte et à donner la priorité à la requête.
 
 **L’équipe du projet Adobe évalue et classe par priorité la demande**—L’équipe surveille régulièrement les demandes pour déterminer la priorité et évaluer les modifications demandées pour les inclure dans les bonnes pratiques du manuel de mise en œuvre. Par exemple, l’équipe peut déterminer qu’au lieu de créer une rubrique relative aux bonnes pratiques, le contenu demandé doit être ajouté à la documentation du produit existant sur Experience League ou le site Adobe Developer.
 
