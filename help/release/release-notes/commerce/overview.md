@@ -17,4 +17,4 @@ Découvrez les dernières améliorations apportées à Adobe Commerce, notamment
 
 {{bics}}
 
-Utilisez le compositeur pour mettre à jour votre installation de Commerce vers la version la plus récente afin de tirer parti des nouvelles fonctionnalités, des améliorations de performances et des correctifs de sécurité. Pour obtenir des instructions de mise à niveau détaillées, consultez le [guide de mise à niveau d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html).
+Utilisez le compositeur pour mettre à jour votre installation de Commerce vers la version la plus récente afin de tirer parti des nouvelles fonctionnalités, des améliorations de performances et des correctifs de sécurité. Pour obtenir des instructions de mise à niveau détaillées, consultez le [guide de mise à niveau d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html?lang=fr).
