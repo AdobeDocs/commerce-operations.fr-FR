@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Toutes les commandes de l’interface de ligne de commande Magento doivent être exécutées par le [ propriétaire du système de fichiers](/help/configuration/cli/config-cli.md#prerequisites).
+>Toutes les commandes de l’interface de ligne de commande Magento doivent être exécutées par le [&#x200B; propriétaire du système de fichiers](/help/configuration/cli/config-cli.md#prerequisites).
 
 ## Commandes de sauvegarde {#tip-backup-command}
 
@@ -116,4 +116,4 @@ Après les récentes modifications apportées à CSP/SRI, la page de passage en 
 
 **Correctif** :
 
-Un correctif est disponible. Pour plus d’informations sur les correctifs[ consultez la section ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997)L’extraction échoue lorsque la minimisation et le regroupement JS sont activés dans la base de connaissances.
+Un correctif est disponible. Pour plus d’informations sur les correctifs[&#x200B; consultez la section &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997)L’extraction échoue lorsque la minimisation et le regroupement JS sont activés dans la base de connaissances.
