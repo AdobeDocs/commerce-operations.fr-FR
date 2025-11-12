@@ -3,9 +3,9 @@ title: Activer la journalisation
 description: Découvrez comment activer et désactiver différents types de connexion dans Adobe Commerce. Découvrez la configuration et les techniques de gestion de la journalisation.
 feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: aff705cefcd4de38d17cad41628bc8dbd6d630cb
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,23 @@ Par défaut, Commerce écrit dans le journal de débogage (`<install_directory>/
 
 Par défaut, Commerce écrit les journaux d’activité de la base de données dans le fichier `<install-dir>/var/debug/db.log`.
 
+### Emplacement de stockage de la journalisation des requêtes
+
+Lorsque la journalisation de la base de données est activée, Commerce stocke les journaux de requête à l’emplacement suivant :
+
+- **Fichier journal de requête** : `<install-directory>/var/debug/db.log`
+- **Répertoire des journaux** : `<install-directory>/var/debug/`
+
+Le journal des requêtes contient :
+- Requêtes SQL exécutées par l’application
+- Délais d’exécution des requêtes
+- Paramètres de requête et liaisons
+- Informations de connexion à la base de données
+
+>[!NOTE]
+>
+>Le fichier journal de requête peut croître rapidement dans les environnements à trafic élevé. Surveillez l’espace disque et envisagez d’implémenter la rotation du journal ou le nettoyage périodique du fichier journal des requêtes.
+
 ### Pour activer la journalisation de la base de données
 
 1. Utilisez la commande `dev:query-log` pour activer ou désactiver la journalisation de la base de données.
@@ -71,6 +88,24 @@ Par défaut, Commerce écrit les journaux d’activité de la base de données d
    ```bash
    bin/magento cache:flush
    ```
+
+### Pour afficher les journaux de requête
+
+Vous pouvez afficher les journaux de requête à l’aide des commandes d’affichage de fichier standard :
+
+```bash
+# View the entire query log
+cat var/debug/db.log
+
+# View the last 100 lines of the query log
+tail -n 100 var/debug/db.log
+
+# Monitor the query log in real-time
+tail -f var/debug/db.log
+
+# Search for specific queries
+grep "SELECT" var/debug/db.log
+```
 
 ## Journalisation cron
 
