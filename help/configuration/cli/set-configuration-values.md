@@ -2,9 +2,9 @@
 title: Définir les valeurs de configuration
 description: Découvrez comment définir des valeurs de configuration et modifier les valeurs d’administration verrouillées dans Adobe Commerce. Découvrez les commandes et techniques de configuration avancées.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 2672c696d672ad72bef7537570ed630bc33c41b4
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
@@ -124,19 +124,19 @@ bin/magento config:set [--scope="..."] [--scope-code="..."] [-le | --lock-env] [
 **Pour définir des valeurs de configuration sensibles** :
 
 ```bash
-bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path value
+bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path
 ```
 
 Le tableau suivant décrit les paramètres de la commande `set` :
 
 | Paramètre | Description |
-| --- | --- |
+| --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `--scope` | Portée de la configuration. Les valeurs possibles sont `default`, `website` ou `store`. La valeur par défaut est `default`. |
 | `--scope-code` | Le code d’étendue de la configuration (code de site web ou code d’affichage du magasin) |
 | `-e or --lock-env` | Verrouille la valeur afin qu’elle ne puisse pas être modifiée dans l’administration ou modifie un paramètre déjà verrouillé dans l’administration. La commande écrit la valeur dans le fichier `<Commerce base dir>/app/etc/env.php`. |
 | `-c or --lock-config` | Verrouille la valeur afin qu’elle ne puisse pas être modifiée dans l’administration ou modifie un paramètre déjà verrouillé dans l’administration. La commande écrit la valeur dans le fichier `<Commerce base dir>/app/etc/config.php`. L’option `--lock-config` remplace `--lock-env` si vous spécifiez les deux options. |
 | `path` | _Obligatoire_. Chemin de configuration |
-| `value` | _Obligatoire_. Valeur de la configuration |
+| `value` | _Obligatoire_. Valeur de la configuration. Bien qu’il puisse être transmis en tant qu’argument distinct dans une commande d’interface de ligne de commande, Adobe vous recommande de ne pas le spécifier dans la commande d’origine. Exécutez plutôt la commande sans la valeur , puis saisissez la valeur lorsque vous y êtes invité. L’utilisation de cette méthode empêche l’écriture de valeurs d’accès sensibles dans bash_history, ce qui est le moyen le plus sûr de définir la configuration. |
 
 >[!INFO]
 >
@@ -221,7 +221,7 @@ où
 
 >[!INFO]
 >
->La commande `bin/magento config:show` affiche les valeurs de toutes les [&#x200B; valeurs chiffrées &#x200B;](../reference/config-reference-sens.md) sous la forme d’une série d’astérisques : `**&#x200B;**&#x200B;**`.
+>La commande `bin/magento config:show` affiche les valeurs de toutes les [ valeurs chiffrées ](../reference/config-reference-sens.md) sous la forme d’une série d’astérisques : `******`.
 
 ### Exemples
 
@@ -292,5 +292,5 @@ web/unsecure/base_url - http://example-for-store.com/
 
 >[!INFO]
 >
->Le code d’étendue peut uniquement inclure des lettres (a-z ou A-Z), des chiffres (0-9) et des traits de soulignement (_). En outre, le premier caractère doit être une lettre. Si des majuscules ou des majuscules sont utilisées lors de la création d’une vue de site web ou de boutique, en interne, la correspondance est insensible à la casse pour s’adapter au remplacement des paramètres de configuration par le biais de variables d’environnement. Voir [&#x200B; Utilisation de variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).
+>Le code d’étendue peut uniquement inclure des lettres (a-z ou A-Z), des chiffres (0-9) et des traits de soulignement (_). En outre, le premier caractère doit être une lettre. Si des majuscules ou des majuscules sont utilisées lors de la création d’une vue de site web ou de boutique, en interne, la correspondance est insensible à la casse pour s’adapter au remplacement des paramètres de configuration par le biais de variables d’environnement. Voir [ Utilisation de variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).
 
