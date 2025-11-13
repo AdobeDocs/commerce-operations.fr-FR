@@ -3,9 +3,9 @@ title: Créer, modifier ou déverrouiller un compte administrateur
 description: Pour gérer le compte administrateur de votre application Adobe Commerce Admin, procédez comme suit.
 feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: aaed7dba7d11085eb8e2793cefffb8c8b082e750
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -39,12 +39,12 @@ bin/magento admin:user:create [--<parameter_name>=<value>, ...]
 Où le tableau suivant définit les paramètres et valeurs :
 
 | Nom | Valeur | Obligatoire ? |
-|--- |--- |--- |
+|--- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--- |
 | `--admin-firstname` | Prénom de l’utilisateur administrateur. | Oui |
 | `--admin-lastname` | Nom de l’utilisateur administrateur. | Oui |
 | `--admin-email` | Adresse électronique de l’utilisateur administrateur. | Oui |
 | `--admin-user` | Nom d’utilisateur de l’administrateur. | Oui |
-| `--admin-password` | Mot de passe de l’utilisateur administrateur. Le mot de passe doit comporter au moins 7 caractères, au moins un caractère alphabétique et au moins un caractère numérique. <br><br>Nous vous recommandons un mot de passe plus long et plus complexe. Si la chaîne de mot de passe contient des caractères spéciaux qui nécessitent une interprétation littérale (tels que des barres obliques inverses ou des espaces), placez le mot de passe entre guillemets simples. | Oui |
+| `--admin-password` | Mot de passe de l’utilisateur administrateur. Le mot de passe doit comporter au moins 12 caractères, au moins une lettre et au moins un chiffre. <br><br>Adobe recommande de spécifier un mot de passe plus long et plus complexe. Si la chaîne de mot de passe contient des caractères spéciaux qui nécessitent une interprétation littérale (tels que des barres obliques inverses ou des espaces), placez le mot de passe entre guillemets simples. | Oui |
 | `--magento-init-params` | Ajoutez à n&#39;importe quelle commande pour personnaliser les paramètres d&#39;initialisation de l&#39;application<br/><br/>Par exemple : `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | Non |
 
 Exemple d’utilisation :
