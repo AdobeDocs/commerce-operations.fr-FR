@@ -2,9 +2,9 @@
 title: Définir les valeurs de configuration
 description: Découvrez comment définir des valeurs de configuration et modifier les valeurs d’administration verrouillées dans Adobe Commerce. Découvrez les commandes et techniques de configuration avancées.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 2672c696d672ad72bef7537570ed630bc33c41b4
+source-git-commit: 5e2d11330d3334df36ba8b3d176fbe2d8bfe0486
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -140,9 +140,7 @@ Le tableau suivant décrit les paramètres de la commande `set` :
 
 >[!INFO]
 >
->Depuis Commerce version 2.2.4, les options `--lock-env` et `--lock-config` remplacent l’option `--lock`.
->
->Si vous utilisez l’option `--lock-env` ou `--lock-config` pour définir ou modifier une valeur, vous devez utiliser la commande [`bin/magento app:config:import`](../cli/import-configuration.md) pour importer le paramètre avant d’accéder à Admin ou Storefront.
+>Depuis Commerce version 2.2.4, les options `--lock-env` et `--lock-config` remplacent l’option `--lock`. Si vous utilisez l’une de ces options, la valeur est écrite directement dans le fichier `app/etc/env.php` ou `app/etc/config.php` et devient en lecture seule dans Admin. Pour importer les modifications de configuration de ces fichiers dans la base de données, exécutez la commande `bin/magento app:config:import`, par exemple, après avoir modifié ou redéployé manuellement les fichiers.
 
 Si vous saisissez un chemin de configuration incorrect, cette commande renvoie une erreur
 
@@ -191,7 +189,7 @@ Vous pouvez utiliser l’option `--lock-env` pour définir des valeurs de config
 
 >[!INFO]
 >
->Le fichier `env.php` est spécifique au système. Vous ne devez pas le transférer vers un autre système. Vous pouvez l’utiliser pour remplacer les valeurs de configuration de la base de données. Par exemple, vous pouvez prendre une image mémoire de base de données d’un autre système et remplacer le `base_url` et d’autres valeurs afin de ne pas avoir à modifier la base de données.
+>Le fichier `env.php` est spécifique au système. Ne le transférez pas sur un autre système. Vous pouvez l’utiliser pour remplacer les valeurs de configuration de la base de données. Par exemple, vous pouvez prendre une image mémoire de base de données d’un autre système et remplacer le `base_url` et d’autres valeurs afin de ne pas avoir à modifier la base de données.
 
 Si vous utilisez l’option `--lock-config` comme suit, la valeur de configuration est enregistrée dans `<Commerce base dir>/app/etc/config.php`. Le champ permettant de modifier cette valeur dans l’Admin est désactivé.
 
@@ -221,7 +219,7 @@ où
 
 >[!INFO]
 >
->La commande `bin/magento config:show` affiche les valeurs de toutes les [&#x200B; valeurs chiffrées &#x200B;](../reference/config-reference-sens.md) sous la forme d’une série d’astérisques : `**&#x200B;**&#x200B;**`.
+>La commande `bin/magento config:show` affiche les valeurs de toutes les [ valeurs chiffrées ](../reference/config-reference-sens.md) sous la forme d’une série d’astérisques : `******`.
 
 ### Exemples
 
@@ -292,5 +290,5 @@ web/unsecure/base_url - http://example-for-store.com/
 
 >[!INFO]
 >
->Le code d’étendue peut uniquement inclure des lettres (a-z ou A-Z), des chiffres (0-9) et des traits de soulignement (_). En outre, le premier caractère doit être une lettre. Si des majuscules ou des majuscules sont utilisées lors de la création d’une vue de site web ou de boutique, en interne, la correspondance est insensible à la casse pour s’adapter au remplacement des paramètres de configuration par le biais de variables d’environnement. Voir [&#x200B; Utilisation de variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).
+>Le code d’étendue peut uniquement inclure des lettres (a-z ou A-Z), des chiffres (0-9) et des traits de soulignement (_). En outre, le premier caractère doit être une lettre. Si des majuscules ou des majuscules sont utilisées lors de la création d’une vue de site web ou de boutique, en interne, la correspondance est insensible à la casse pour s’adapter au remplacement des paramètres de configuration par le biais de variables d’environnement. Voir [ Utilisation de variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).
 
