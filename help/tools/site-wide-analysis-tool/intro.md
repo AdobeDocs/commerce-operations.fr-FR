@@ -73,4 +73,4 @@ Les commerçants et les partenaires qui souhaitent une plus grande visibilité s
 
 Regardez cette vidéo pour en savoir plus sur le [!DNL Site-Wide Analysis Tool] :
 
->[!VIDEO](https://video.tv.adobe.com/v/344001?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3410777?captions=fre_fr&quality=12)
