@@ -18,9 +18,9 @@ Pour Adobe Commerce 2.4.4 et les versions ultérieures :
 
 - Adobe fournit des correctifs de sécurité par le biais d’une version de correctif de sécurité pour la période de prise en charge de trois ans.
 
-- Pour les problèmes de sécurité critiques, tels que les vulnérabilités « jour zéro », Adobe fournit des [ correctifs logiciels ](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) à tous les clients disposant d’une version prise en charge, même s’ils ne disposent pas du dernier correctif ou de la dernière version du correctif de sécurité. Notez qu’un correctif n’est pas exhaustif et ne résout pas tous les problèmes de sécurité qui seraient résolus par une mise à niveau vers la version la plus récente.
+- Pour les problèmes de sécurité critiques, tels que les vulnérabilités « jour zéro », Adobe fournit des [&#x200B; correctifs logiciels &#x200B;](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) à tous les clients disposant d’une version prise en charge, même s’ils ne disposent pas du dernier correctif ou de la dernière version du correctif de sécurité. Notez qu’un correctif n’est pas exhaustif et ne résout pas tous les problèmes de sécurité qui seraient résolus par une mise à niveau vers la version la plus récente.
 
-- Adobe ne fournit pas de correctifs de sécurité et de qualité pour les services tiers et les dépendances logicielles (telles que PHP et MySQL) qui peuvent arriver en fin de vie lorsque les clients bénéficient de la période de prise en charge de trois ans d’Adobe Commerce. Pour obtenir une liste complète des technologies tierces testées et prises en charge[ consultez la section ](../installation/system-requirements.md)Configuration requise.
+- Adobe ne fournit pas de correctifs de sécurité et de qualité pour les services tiers et les dépendances logicielles (telles que PHP et MySQL) qui peuvent arriver en fin de vie lorsque les clients bénéficient de la période de prise en charge de trois ans d’Adobe Commerce. Pour obtenir une liste complète des technologies tierces testées et prises en charge[&#x200B; consultez la section &#x200B;](../installation/system-requirements.md)Configuration requise.
 
 - Pour les clients Adobe Commerce on Cloud utilisant les versions 2.4.4 et 2.4.5, Adobe applique automatiquement les correctifs de sécurité de durée de vie PHP 8.1 à l’infrastructure, de sorte que ces clients ne sont pas affectés par la fin de prise en charge de PHP 8.1. Les clients sur site utilisant Adobe Commerce 2.4.4 et 2.4.5 doivent contacter le support Adobe pour demander des correctifs de sécurité à vie PHP 8.1 si nécessaire.
 
@@ -54,7 +54,7 @@ Adobe incite les clients à effectuer la mise à niveau dès que possible. Toute
 >- <sup>4</sup> À partir du correctif de sécurité 2.4.6-p11.
 >- <sup>5</sup> À partir du correctif de sécurité 2.4.5-p11.
 >- <sup>6</sup> À partir du correctif de sécurité 2.4.4-p12.
->- Voir [ Politique relative au cycle de vie des logiciels ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+>- Voir [&#x200B; Politique relative au cycle de vie des logiciels &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
 <thead>
