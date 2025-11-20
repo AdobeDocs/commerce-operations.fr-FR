@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 828be0e395980ddd9fca3424dc08324c3fe87244
+source-git-commit: fff49f8c9b0c1def976c14e72b4ae7ee08f823b9
 workflow-type: tm+mt
-source-wordcount: '29260'
+source-wordcount: '29413'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,20 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 >[!INFO]
 >
->Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=fr#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
+>Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
 
 >[!INFO]
 >
 >Pour plus d’informations sur les [!DNL quality patches] créées par la communauté pour Magento Open Source, consultez les [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.74 {#v1-1-74}
+
+* **ACSD-68636** (pour Adobe Commerce >=2.4.4 &lt;2.4.9) - Correction d’un problème en raison duquel le nom du propriétaire du magasin ne s’affiche pas correctement dans les en-têtes des e-mails de carte cadeau lorsque la facture est créée à partir d’un autre magasin.
+* **ACSD-68430** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.8) - Correction d’un problème en raison duquel l’enregistrement d’un client ou d’une adresse de client échoue si l’enregistrement inclut plusieurs options d’attribut qui ont été supprimées de la configuration d’attribut.
+* **ACSD-68499** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Correction d’un problème en raison duquel la mutation du `updateCartItems` GraphQL renvoie une réponse de réussite incorrecte lors de la mise à jour de quantités qui dépassent les stocks disponibles, provoquant ainsi des quantités et des totaux gonflés.
+* **ACSD-68810** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige un problème en raison duquel une commande est affectée à un client créé sur un autre site Web, malgré la configuration **[!UICONTROL Customer Account Sharing]**.
+* Versions mises à jour : **ACSD-49737**, **ACSD-57003-V2**
+* Correctifs remplacés : **ACSD-61969**
 
 ## v1.1.73 {#v1-1-73}
 
