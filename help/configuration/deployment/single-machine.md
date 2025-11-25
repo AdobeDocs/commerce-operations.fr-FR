@@ -3,7 +3,7 @@ title: Déploiement sur un seul ordinateur
 description: Découvrez comment déployer des mises à jour sur Commerce sur un serveur de production à l’aide de la ligne de commande.
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Cette rubrique fournit des instructions pour déployer des mises à jour sur Com
 >[!WARNING]
 >
 >Ce guide ne s’applique pas si vous avez utilisé `git clone` pour installer Commerce.
->&#x200B;>Les développeurs contributeurs doivent utiliser [ce guide][install] pour mettre à jour leur installation Commerce.
+>Les développeurs contributeurs doivent utiliser [ce guide][install] pour mettre à jour leur installation Commerce.
 
 ## Étapes de déploiement
 
@@ -93,4 +93,4 @@ Cette rubrique fournit des instructions pour déployer des mises à jour sur Com
 
 <!-- link definitions -->
 
-[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/
+[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies

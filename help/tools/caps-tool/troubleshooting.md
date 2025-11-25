@@ -3,7 +3,7 @@ title: Guide de dépannage d’[!DNL Cloud Automation Patching Service (CAPS)]
 description: Résolution des problèmes courants et des messages d’erreur dans  [!DNL Cloud Automation Patching Service (CAPS)]
 hide: true
 hidefromtoc: true
-source-git-commit: eff8c0ae9e1d9db6b46ba7cfbb915685ab5b194d
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '946'
 ht-degree: 0%
@@ -218,8 +218,8 @@ Pour obtenir des informations techniques plus détaillées :
 
 ### Rubriques connexes
 
-* [Documentation Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview.html)
-* [Guide d’installation d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview.html)
+* [Documentation Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview)
+* [Guide d’installation d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
 * [Présentation de CAPS](intro.md)
 * [Accès](access.md)
 * [Workflow](workflow.md)

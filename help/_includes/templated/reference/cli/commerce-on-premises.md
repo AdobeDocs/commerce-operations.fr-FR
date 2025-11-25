@@ -1,5 +1,5 @@
 ---
-source-git-commit: ba444c5f74cdeec86c842014d02775faf16b2f50
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '8232'
 ht-degree: 1%
@@ -20,11 +20,11 @@ La liste initiale est générée automatiquement à l’aide de la commande `bin
 
 ## Général
 
-Utilisez le guide [« Ajouter des commandes d’interface de ligne de commande »](https://developer.adobe.com/commerce/php/development/cli-commands/) pour ajouter une commande d’interface de ligne de commande personnalisée.
+Utilisez le guide [« Ajouter des commandes d’interface de ligne de commande »](https://developer.adobe.com/commerce/php/development/cli-commands) pour ajouter une commande d’interface de ligne de commande personnalisée.
 
 Vous pouvez appeler `bin/magento` commandes de l’interface de ligne de commande à l’aide de raccourcis au lieu du nom complet de la commande. Par exemple, vous pouvez appeler `bin/magento setup:upgrade` à l’aide de `bin/magento s:up`, `bin/magento s:upg`. Voir [syntaxe des raccourcis](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) pour comprendre comment utiliser des raccourcis avec n’importe quelle commande d’interface de ligne de commande.
 
-Cette documentation de référence est générée à partir du code source de l’application. Pour modifier la documentation, vous devez ouvrir une requête de tirage pour la commande correspondante dans le référentiel [codebase](https://github.com/magento) approprié. Pour plus d’informations, voir [Contributions du code](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+Cette documentation de référence est générée à partir du code source de l’application. Pour modifier la documentation, vous devez ouvrir une requête de tirage pour la commande correspondante dans le référentiel [codebase](https://github.com/magento) approprié. Pour plus d’informations, voir [Contributions du code](https://developer.adobe.com/commerce/contributor/guides/code-contributions).
 
 ### Options globales
 

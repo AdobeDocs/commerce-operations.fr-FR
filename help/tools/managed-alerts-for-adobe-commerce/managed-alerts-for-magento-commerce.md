@@ -4,9 +4,9 @@ description: Si vous êtes un client d’Adobe Commerce sur les infrastructures 
 feature: Observability, Support, Tools and External Services
 role: Admin
 exl-id: 3fc4b07f-4e27-4833-97a9-cf9741ae5648
-source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
+source-git-commit: 4560e7d000ad8333c3089b8b5e8ffd25f5d31b67
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 # Alertes gérées pour Adobe Commerce
 
 
-Nous avons mis en place des tableaux de bord et des alertes clés pour vous aider à comprendre à quel moment votre site atteint des niveaux de stockage et de [!DNL Apdex] critiques (satisfaction des utilisateurs à l&#39;égard des applications et du temps de réponse des services). Cela peut vous aider à prendre des mesures avant de remarquer des temps de réponse lents ou une panne. Vous pourrez résoudre les problèmes liés aux alertes avec les articles répertoriés ci-dessous. Avant de pouvoir utiliser les alertes, commencez par configurer les canaux de notification. Reportez-vous à [[!DNL New Relic] Configuration des canaux de notification](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) dans le guide Commerce sur le cloud.
+Nous avons mis en place des tableaux de bord et des alertes clés pour vous aider à comprendre à quel moment votre site atteint des niveaux de stockage et de [!DNL Apdex] critiques (satisfaction des utilisateurs à l&#39;égard des applications et du temps de réponse des services). Cela peut vous aider à prendre des mesures avant de remarquer des temps de réponse lents ou une panne. Vous pourrez résoudre les problèmes liés aux alertes avec les articles répertoriés ci-dessous. Avant de pouvoir utiliser les alertes, commencez par configurer les canaux de notification. Reportez-vous à [[!DNL New Relic] Configuration des canaux de notification](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) dans le guide Commerce sur le cloud.
 
 >[!NOTE]
 >
->Si les alertes gérées pour la politique d’alerte d’Adobe Commerce ne sont pas disponibles, cela peut être dû au fait que ce compte a été récemment créé ou [!DNL New Relic] avoir été récemment configuré. Un processus est exécuté tous les mardis pour ajouter la politique d’alerte à ces comptes. La stratégie d’alerte doit être disponible le lendemain de l’exécution du processus suivant. Si la politique est toujours manquante, [envoyez une demande d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) et incluez votre ID de projet.
+>Si les alertes gérées pour la politique d’alerte d’Adobe Commerce ne sont pas disponibles, cela peut être dû au fait que ce compte a été récemment créé ou [!DNL New Relic] avoir été récemment configuré. Un processus est exécuté tous les mardis pour ajouter la politique d’alerte à ces comptes. La stratégie d’alerte doit être disponible le lendemain de l’exécution du processus suivant. Si la politique est toujours manquante, [envoyez une demande d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) et incluez votre ID de projet.
 
 Consultez le tableau ci-dessous pour obtenir des liens vers les articles de la base de connaissances qui fournissent des étapes de dépannage pour ces alertes :
 
@@ -51,3 +51,7 @@ Consultez le tableau ci-dessous pour obtenir des liens vers les articles de la b
 | Avertissement et critique |     |        |      |       | ✅ |              | [Alertes gérées sur Adobe Commerce : alertes MariaDB](managed-alerts-on-magento-commerce-mariadb-alerts.md) |
 | Attention |     |        |      |       |         | ✅ | [Alertes gérées sur Adobe Commerce: [!DNL Redis] alerte d’avertissement de mémoire](managed-alerts-on-magento-commerce-redis-memory-warning-alert.md) |
 | Critique |     |        |      |       |         | ✅ | [Alertes gérées sur Adobe Commerce: [!DNL Redis] alerte critique de mémoire](managed-alerts-on-magento-commerce-redis-memory-critical-alert.md) |
+
+## Vérification des seuils d’alerte définis pour les alertes gérées
+
+Vous pouvez consulter les seuils d’alerte configurés pour les alertes gérées à partir de votre compte New Relic. Pour obtenir des instructions, voir [Surveillance des performances avec des alertes gérées](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts).

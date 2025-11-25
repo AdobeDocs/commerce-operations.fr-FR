@@ -2,7 +2,7 @@
 title: Désinstallation ou réinstallation d’Adobe Commerce
 description: Pour désinstaller et réinstaller les installations sur site d’Adobe Commerce, procédez comme suit.
 exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -17,15 +17,15 @@ Avant d’utiliser ces commandes, vous devez [installer l’application](../tuto
 
 Pour mettre à jour l’application :
 
-* Si vous avez installé le logiciel à partir d&#39;une archive ou si vous avez utilisé &#39;composer-create-project&#39;, consultez le [&#x200B; Guide de mise à niveau](../../upgrade/overview.md).
+* Si vous avez installé le logiciel à partir d&#39;une archive ou si vous avez utilisé &#39;composer-create-project&#39;, consultez le [ Guide de mise à niveau](../../upgrade/overview.md).
 * Si vous êtes un développeur contributeur (c’est-à-dire que vous avez utilisé `git clone`), consultez [Mise à jour de l’application](../../upgrade/developer/git-installs.md).
 
 ## Réinstaller l’application
 
 La façon dont vous réinstallez l’application à partir de la ligne de commande dépend de votre rôle :
 
-* Si vous avez installé le logiciel à partir d&#39;une archive ou si vous avez utilisé &#39;composer-create-project&#39;, voir [Mise à jour des dépendances d&#39;installation](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
-* Si vous êtes un développeur contributeur (c’est-à-dire que vous avez commencé à utiliser `git clone`), reportez-vous à la section [Mise à jour des dépendances d’installation](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
+* Si vous avez installé le logiciel à partir d&#39;une archive ou si vous avez utilisé &#39;composer-create-project&#39;, voir [Mise à jour des dépendances d&#39;installation](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies).
+* Si vous êtes un développeur contributeur (c’est-à-dire que vous avez commencé à utiliser `git clone`), reportez-vous à la section [Mise à jour des dépendances d’installation](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies).
 
 ## Désinstallation de l’application
 

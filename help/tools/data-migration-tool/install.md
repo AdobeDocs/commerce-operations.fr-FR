@@ -4,7 +4,7 @@ description: Découvrez comment installer pour transférer  [!DNL Data Migration
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
@@ -47,10 +47,10 @@ cd <your Magento 2 clone directory>
 git branch
 ```
 
-Si vous vous trouvez actuellement dans la branche `develop`, vous devez passer à une branche [publiée](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) avant de continuer.
+Si vous vous trouvez actuellement dans la branche `develop`, vous devez passer à une branche [publiée](https://developer.adobe.com/commerce/contributor/guides/install/change-version) avant de continuer.
 
 Si vous n’avez pas encore installé le logiciel Adobe Commerce, [installez-le maintenant](../../installation/prerequisites/commerce.md).
-Si vous clonez le référentiel GitHub, veillez à extraire une balise de version, comme indiqué dans la section [&#x200B; (Contributeur) Cloner le référentiel GitHub &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
+Si vous clonez le référentiel GitHub, veillez à extraire une balise de version, comme indiqué dans la section [ (Contributeur) Cloner le référentiel GitHub ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository).
 
 ## Rechercher les versions publiées de [!DNL Data Migration Tool]
 

@@ -2,7 +2,7 @@
 title: Configuration de la propriété et des autorisations des fichiers
 description: Pour configurer les autorisations de système de fichiers pour les installations sur site d’Adobe Commerce, procédez comme suit.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Pour définir des autorisations avant d’installer l’application, procédez c
 1. Si vous ne l&#39;avez pas déjà fait, obtenez l&#39;application de l&#39;une des façons suivantes :
 
    * [Métapaquet du compositeur](../../composer.md)
-   * [Cloner le référentiel (développeurs et développeuses contributeurs uniquement)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+   * [Cloner le référentiel (développeurs et développeuses contributeurs uniquement)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 1. Après avoir défini la propriété et les autorisations du système de fichiers, [installez l’application](../../advanced.md)
 
@@ -192,7 +192,7 @@ Pour terminer la tâche, redémarrez le serveur web :
 Si vous ne l&#39;avez pas déjà fait, procurez-vous le logiciel de l&#39;une des façons suivantes :
 
 * [Métapaquet du compositeur](../../composer.md)
-* [Cloner le référentiel (développeurs et développeuses contributeurs uniquement)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [Cloner le référentiel (développeurs et développeuses contributeurs uniquement)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 ### Définir la propriété et les autorisations pour le groupe partagé
 

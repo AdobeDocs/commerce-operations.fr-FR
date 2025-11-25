@@ -2,7 +2,7 @@
 title: Installation d’Adobe Commerce
 description: Pour installer Adobe Commerce sur l’infrastructure que vous possédez, procédez comme suit.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 47525e8d8379061b254bfa90ab46e27a1ee2f524
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Avant de commencer, effectuez les étapes suivantes :
 
-* Vérifiez que votre système répond à la configuration requise décrite dans la section [&#x200B; Configuration requise &#x200B;](../system-requirements.md).
+* Vérifiez que votre système répond à la configuration requise décrite dans la section [ Configuration requise ](../system-requirements.md).
 
 * Effectuez toutes les tâches [prérequises](../prerequisites/overview.md).
 
@@ -57,7 +57,7 @@ Vous pouvez exécuter les commandes suivantes pour rechercher des valeurs pour c
 
 >[!NOTE]
 >
->Si une erreur s&#39;affiche lorsque vous exécutez ces commandes, vérifiez que vous avez mis à jour les dépendances d&#39;installation, comme indiqué dans la section [Mettre à jour les dépendances d&#39;installation](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
+>Si une erreur s&#39;affiche lorsque vous exécutez ces commandes, vérifiez que vous avez mis à jour les dépendances d&#39;installation, comme indiqué dans la section [Mettre à jour les dépendances d&#39;installation](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies).
 
 ## Installation à partir de la ligne de commande
 
@@ -186,7 +186,7 @@ Dans Adobe Commerce version 2.2.8 et ultérieure, vous pouvez créer l’utilisa
 
 >[!NOTE]
 >
->Pour activer ou désactiver les modules après l’installation de l’application, voir [&#x200B; Activer et désactiver les modules](manage-modules.md).
+>Pour activer ou désactiver les modules après l’installation de l’application, voir [ Activer et désactiver les modules](manage-modules.md).
 
 **Données sensibles :**
 
