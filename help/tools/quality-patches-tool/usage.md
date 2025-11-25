@@ -19,7 +19,7 @@ Regardez cette [vidéo technique](https://experienceleague.adobe.com/docs/commer
 
 >[!INFO]
 >
->Voir [ Application de correctifs individuels ](#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) pour consulter la liste complète des correctifs publiés.
+>Voir [&#x200B; Application de correctifs individuels &#x200B;](#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) pour consulter la liste complète des correctifs publiés.
 
 >[!WARNING]
 >
@@ -83,7 +83,7 @@ Le tableau de statut comprend les éléments suivants :
 
 >[!WARNING]
 >
->Il est recommandé de tester tous les correctifs dans un environnement d’évaluation ou de développement avant de les déployer en production. Il est également recommandé de sauvegarder vos données avant d’appliquer un correctif. Voir [ Sauvegarde et restauration du système de fichiers, du support et de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
+>Il est recommandé de tester tous les correctifs dans un environnement d’évaluation ou de développement avant de les déployer en production. Il est également recommandé de sauvegarder vos données avant d’appliquer un correctif. Voir [&#x200B; Sauvegarde et restauration du système de fichiers, du support et de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Pour appliquer un seul correctif, exécutez la commande suivante où `MAGETWO-XXXX` correspond à l’identifiant de correctif spécifié dans le tableau d’état :
 
@@ -111,7 +111,7 @@ Vous devez nettoyer le cache après l’application des correctifs pour afficher
 
 >[!WARNING]
 >
->Il est recommandé de tester tous les correctifs dans un environnement d’évaluation ou de développement avant de les déployer en production. Il est également recommandé de sauvegarder vos données avant d’appliquer un correctif. Voir [ Sauvegarde et restauration du système de fichiers, du support et de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
+>Il est recommandé de tester tous les correctifs dans un environnement d’évaluation ou de développement avant de les déployer en production. Il est également recommandé de sauvegarder vos données avant d’appliquer un correctif. Voir [&#x200B; Sauvegarde et restauration du système de fichiers, du support et de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Pour rétablir un seul correctif, exécutez la commande suivante où `MAGETWO-XXXX` correspond à l’identifiant de correctif spécifié dans le tableau d’état :
 

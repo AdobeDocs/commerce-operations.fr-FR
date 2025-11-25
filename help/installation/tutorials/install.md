@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Avant de commencer, effectuez les étapes suivantes :
 
-* Vérifiez que votre système répond à la configuration requise décrite dans la section [ Configuration requise ](../system-requirements.md).
+* Vérifiez que votre système répond à la configuration requise décrite dans la section [&#x200B; Configuration requise &#x200B;](../system-requirements.md).
 
 * Effectuez toutes les tâches [prérequises](../prerequisites/overview.md).
 
@@ -186,7 +186,7 @@ Dans Adobe Commerce version 2.2.8 et ultérieure, vous pouvez créer l’utilisa
 
 >[!NOTE]
 >
->Pour activer ou désactiver les modules après l’installation de l’application, voir [ Activer et désactiver les modules](manage-modules.md).
+>Pour activer ou désactiver les modules après l’installation de l’application, voir [&#x200B; Activer et désactiver les modules](manage-modules.md).
 
 **Données sensibles :**
 
