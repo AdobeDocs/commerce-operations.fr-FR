@@ -54,7 +54,7 @@ Deux exemples d’emplacements de stockage sont les tables de base de données e
 
 En tant que développeur, il est essentiel de toujours envisager d’utiliser des outils en dehors de votre environnement de [!DNL Adobe Commerce], tels que le maillage GraphQL et Adobe App Builder. Ces outils peuvent vous aider à conserver l’accès aux données, mais n’ont aucun impact sur l’application commerciale principale ou ses tables de base de données sous-jacentes. Grâce à cette approche, vous exposez vos données par le biais d’une API. Ajoutez ensuite une source de données à votre configuration App Builder. À l’aide du maillage GraphQL, vous pouvez combiner ces sources de données et produire une seule réponse, comme indiqué dans [données héritées](#legacy-data).
 
-Pour plus d’informations sur le maillage GraphQL, voir [Passerelle du maillage GraphQL](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Pour plus d’informations sur Adobe App Builder, voir [Présentation d’App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}.
+Pour plus d’informations sur le maillage GraphQL, voir [Passerelle du maillage GraphQL](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Pour plus d’informations sur Adobe App Builder, voir [Présentation d’App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=fr){target="_blank"}.
 
 ## Modifier une table principale ou une table tierce
 
@@ -73,7 +73,7 @@ Adobe recommande de suivre les étapes suivantes lorsque vous ajoutez une colonn
 
    Par exemple : `app/code/YourCompany/Customer`
 
-1. Créez les fichiers appropriés pour activer le module (voir [Création d’un module](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
+1. Créez les fichiers appropriés pour activer le module (voir [Création d’un module](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=fr){target="_blank"}.
 
 1. Créez un fichier appelé `db_schema.xml` dans le dossier `etc` et apportez les modifications appropriées.
 

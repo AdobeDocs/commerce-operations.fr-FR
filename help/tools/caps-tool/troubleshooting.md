@@ -218,8 +218,8 @@ Pour obtenir des informations techniques plus détaillées :
 
 ### Rubriques connexes
 
-* [Documentation Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview)
-* [Guide d’installation d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
+* [Documentation Adobe Commerce Cloud](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/overview)
+* [Guide d’installation d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/overview)
 * [Présentation de CAPS](intro.md)
 * [Accès](access.md)
 * [Workflow](workflow.md)
