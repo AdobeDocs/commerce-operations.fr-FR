@@ -2,7 +2,7 @@
 title: Démarrage rapide de l’installation locale
 description: Découvrez comment installer Adobe Commerce sur votre propre infrastructure à l’aide du compositeur. Découvrez les étapes de démarrage rapide et les exigences de configuration.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 0532977ff0aeb5d221b1901d73a374cadf95f83b
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Adobe utilise [Composer](https://getcomposer.org/) pour gérer les composants Ad
 
 >[!NOTE]
 >
->Les développeurs qui contribuent à Magento Open Source doivent utiliser la méthode d’installation [basée sur Git](https://developer.adobe.com/commerce/contributor/guides/install).
+>Les développeurs qui contribuent à Magento Open Source doivent utiliser la méthode d’installation [basée sur Git](https://developer.adobe.com/commerce/contributor/guides/install/).
 
 ## Conditions préalables
 
@@ -93,7 +93,7 @@ Pour obtenir le métapaquet Adobe Commerce :
 
    >[!NOTE]
    >
-   > Si vous utilisez un fichier `[auth.json](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` du compositeur ou une variable d’environnement configurée avec vos clés d’authentification Commerce, vous n’êtes pas invité à saisir les clés d’authentification.
+   > Si vous utilisez un fichier `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` du compositeur ou une variable d’environnement configurée avec vos clés d’authentification Commerce, vous n’êtes pas invité à saisir les clés d’authentification.
 
    Si vous rencontrez des erreurs, telles que `Could not find package...` ou `...no matching package found`, assurez-vous qu’il n’y a aucune faute de frappe dans votre commande. Si vous rencontrez toujours des erreurs, il se peut que vous ne soyez pas autorisé à télécharger Adobe Commerce. Contactez [l’assistance Adobe Commerce](https://support.magento.com/hc/en-us) pour obtenir de l’aide.
 
@@ -172,7 +172,7 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->Pour obtenir une description complète des options d’installation de l’interface en ligne de commande, voir [&#x200B; Installer l’application à partir de la ligne de commande &#x200B;](advanced.md).
+>Pour obtenir une description complète des options d’installation de l’interface en ligne de commande, voir [ Installer l’application à partir de la ligne de commande ](advanced.md).
 
 ## Résumé des commandes
 

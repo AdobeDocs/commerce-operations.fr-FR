@@ -2,7 +2,7 @@
 title: Exécutez  [!DNL Upgrade Compatibility Tool]
 description: Pour exécuter le dans une interface  [!DNL Upgrade Compatibility Tool]  ligne de commande pour votre projet Adobe Commerce, procédez comme suit.
 exl-id: ea467a74-18eb-476b-96e2-23f4fc257d73
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 2d17da1f8cbda1462839ad2fa3ea569833443827
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
@@ -29,7 +29,7 @@ chmod +x ./uct/bin/uct
 
 Le [!DNL Upgrade Compatibility Tool] est un outil qui compare une instance personnalisée Adobe Commerce à une version spécifique en analysant tous les modules qui y sont installés. Elle renvoie une liste des problèmes, erreurs et avertissements critiques qui doivent être résolus avant la mise à niveau vers la dernière version d’Adobe Commerce.
 
-Voir ce [tutoriel vidéo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=fr) (06:02) pour en savoir plus sur le [!DNL Upgrade Compatibility Tool].
+Voir ce [tutoriel vidéo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html) (06:02) pour en savoir plus sur le [!DNL Upgrade Compatibility Tool].
 
 Commandes disponibles pour le [!DNL Upgrade Compatibility Tool] dans une interface de ligne de commande :
 
@@ -146,7 +146,7 @@ Options disponibles pour la commande `core:code:changes` :
 
 >[!NOTE]
 >
-> Il est recommandé de tenir le code personnalisé en dehors du code principal. Pour connaître les bonnes pratiques de mise à niveau[&#x200B; consultez le &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=fr) guide de mise à niveau d’Adobe Commerce 2.4 .
+> Il est recommandé de tenir le code personnalisé en dehors du code principal. Pour connaître les bonnes pratiques de mise à niveau[ consultez le ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) guide de mise à niveau d’Adobe Commerce 2.4 .
 
 ### Installation Vanilla
 
@@ -156,7 +156,7 @@ La commande `bin/uct core:code:changes` vérifie s’il existe une instance clas
 
 Vous pouvez exécuter une commande [!DNL Upgrade Compatibility Tool] avec l’option `--vanilla-dir` pour spécifier le répertoire d’installation d’Adobe Commerce vanilla.
 
-Voir la rubrique [Déployer une instance Vanilla](https://developer.adobe.com/commerce/contributor/guides/code-contributions/#deploy-vanilla-magento-open-source-instance) pour plus d’informations.
+Voir la rubrique [Déployer une instance Vanilla](https://developer.adobe.com/commerce/contributor/guides/code-contributions#deploy-vanilla-magento-open-source-instance) pour plus d’informations.
 
 ## Utiliser la commande `refactor`
 
@@ -259,8 +259,8 @@ Cette opération renvoie des options spécifiques qui peuvent être exécutées 
 
 - Évitez d’avoir deux modules portant le même nom.
 - Respectez les normes de codage [Adobe Commerce](https://developer.adobe.com/commerce/php/coding-standards).
-- Bonnes pratiques relatives au [&#x200B; guide de mise à niveau d’Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=fr)
-- Exécutez le [!DNL Upgrade Compatibility Tool] à partir du [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=fr) pour les projets [Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=fr){target=_blank}.
+- Bonnes pratiques relatives au [ guide de mise à niveau d’Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf)
+- Exécutez le [!DNL Upgrade Compatibility Tool] à partir du [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) pour les projets [Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank}.
 
 ## Optimisation des résultats
 
