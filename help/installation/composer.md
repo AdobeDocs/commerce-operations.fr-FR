@@ -93,7 +93,7 @@ Pour obtenir le métapaquet Adobe Commerce :
 
    >[!NOTE]
    >
-   > Si vous utilisez un fichier `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` du compositeur ou une variable d’environnement configurée avec vos clés d’authentification Commerce, vous n’êtes pas invité à saisir les clés d’authentification.
+   > Si vous utilisez un fichier `[auth.json](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` du compositeur ou une variable d’environnement configurée avec vos clés d’authentification Commerce, vous n’êtes pas invité à saisir les clés d’authentification.
 
    Si vous rencontrez des erreurs, telles que `Could not find package...` ou `...no matching package found`, assurez-vous qu’il n’y a aucune faute de frappe dans votre commande. Si vous rencontrez toujours des erreurs, il se peut que vous ne soyez pas autorisé à télécharger Adobe Commerce. Contactez [l’assistance Adobe Commerce](https://support.magento.com/hc/en-us) pour obtenir de l’aide.
 
