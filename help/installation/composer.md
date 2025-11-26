@@ -172,7 +172,7 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->Pour obtenir une description complète des options d’installation de l’interface en ligne de commande, voir [ Installer l’application à partir de la ligne de commande ](advanced.md).
+>Pour obtenir une description complète des options d’installation de l’interface en ligne de commande, voir [&#x200B; Installer l’application à partir de la ligne de commande &#x200B;](advanced.md).
 
 ## Résumé des commandes
 
