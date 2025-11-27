@@ -1,5 +1,5 @@
 ---
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48dfdd81992a82bf984c3e7b0f30f8e5a69ee735
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 1%
@@ -25,7 +25,9 @@ En savoir plus sur l’outil dans [Présentation](/help/upgrade/upgrade-compatib
 >
 >La commande `composer update` ne fonctionne pas pour mettre à niveau cet outil ; vous devez [télécharger et installer la dernière version](/help/upgrade/upgrade-compatibility-tool/run.md).
 
-Cette documentation de référence est générée à partir du code source de l’application. Pour modifier la documentation, vous devez ouvrir une requête de tirage pour la commande correspondante dans le référentiel [codebase](https://github.com/magento) approprié. Pour plus d’informations, voir [Contributions du code](https://developer.adobe.com/commerce/contributor/guides/code-contributions).
+Cette documentation de référence est générée à partir du code source de l’application. Pour modifier la documentation, vous devez ouvrir
+une requête pull pour la commande correspondante dans le référentiel [codebase](https://github.com/magento) approprié. Voir
+[Coder les contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) pour plus d’informations.
 
 ### Options globales
 
