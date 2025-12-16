@@ -2,7 +2,7 @@
 title: Présentation des files d’attente de messages
 description: Découvrez le framework de file d’attente des messages et son fonctionnement avec l’application Adobe Commerce.
 exl-id: 21e7bc3e-6265-4399-9d47-d3b9f03dfef6
-source-git-commit: 6f15a24e650a7138bae6d0b40f230e6970a943b0
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 Le framework Message Queue (MQF) est un système qui permet à un module de publier des messages dans des files d’attente. Elle définit également les [consommateurs](consumers.md) qui recevront les messages de manière asynchrone. Le MQF prend en charge plusieurs courtiers de messagerie :
 
 - **[[!DNL RabbitMQ]](https://www.rabbitmq.com)** - Courtier de messagerie principal, qui fournit une plateforme évolutive pour l&#39;envoi et la réception de messages. Il comprend un mécanisme de stockage des messages non diffusés et est basé sur la spécification AMQP (Advanced Message Queuing Protocol) 0.9.1 .
-- **[Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/)** - Un courtier de messagerie alternatif qui utilise le protocole STOMP (Simple Text Oriented Messaging Protocol) pour une messagerie fiable et évolutive. Introduit dans Adobe Commerce 2.4.6 et versions ultérieures.
+- **[Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/)** - Un courtier de messagerie alternatif qui utilise le protocole STOMP (Simple Text Oriented Messaging Protocol) pour une messagerie fiable et évolutive. Introduit dans Adobe Commerce 2.4.5 et versions ultérieures.
 
 ## RabbitMQ (AMQP)
 
@@ -38,7 +38,7 @@ Au lieu de RabbitMQ, Adobe Commerce prend également en charge [Apache ActiveMQ 
 
 >[!NOTE]
 >
->ActiveMQ Artemis a été introduit dans Adobe Commerce 2.4.6 et les versions ultérieures.
+>ActiveMQ Artemis a été introduit dans Adobe Commerce 2.4.5 et les versions ultérieures.
 
 Le diagramme suivant illustre le framework STOMP avec les artéfacts ActiveMQ :
 

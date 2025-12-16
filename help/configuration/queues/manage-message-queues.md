@@ -2,7 +2,7 @@
 title: Gérer les files d'attente de messages
 description: Découvrez comment gérer les files d’attente de messages à partir de la ligne de commande pour Adobe Commerce.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: 47525e8d8379061b254bfa90ab46e27a1ee2f524
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Vous pouvez également utiliser un gestionnaire de processus tel que [Superviseu
 
 >[!INFO]
 >
->Si votre magasin Adobe Commerce est hébergé sur la plateforme cloud, utilisez l’[`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#cron_consumers_runner) pour configurer la tâche cron `consumers_runner`.
+>Si votre magasin Adobe Commerce est hébergé sur la plateforme cloud, utilisez l’[`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) pour configurer la tâche cron `consumers_runner`.
 
 ### Configuration spécifique
 
@@ -82,10 +82,10 @@ Modifiez le fichier `/app/etc/env.php` pour configurer le `consumers_runner` de 
 
   >[!INFO]
   >
-  >Si votre boutique Adobe Commerce est hébergée sur la plateforme cloud, utilisez le [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#consumers_wait_for_max_messages) pour configurer la manière dont les consommateurs et consommatrices traitent les messages de la file d’attente des messages.
+  >Si votre boutique Adobe Commerce est hébergée sur la plateforme cloud, utilisez le [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) pour configurer la manière dont les consommateurs et consommatrices traitent les messages de la file d’attente des messages.
 
   >[!NOTE]
   >
-  >ActiveMQ Artemis (STOMP) a été introduit dans Adobe Commerce 2.4.6 et les versions ultérieures.
+  >ActiveMQ Artemis (STOMP) a été introduit dans Adobe Commerce 2.4.5 et les versions ultérieures.
 
 Voir [Démarrer les consommateurs de file d’attente de messages](../cli/start-message-queues.md).

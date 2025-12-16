@@ -2,9 +2,9 @@
 title: Migration de RabbitMQ vers ActiveMQ
 description: Découvrez comment remplacer le courtier de file d’attente des messages utilisé pour les installations sur site d’Adobe Commerce.
 feature: Services, Configuration
-source-git-commit: 8f57a4fa7744f4647ab96d0fcfae08b8eb4927c6
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ActiveMQ (Apache ActiveMQ Artemis) est un courtier de messages multiprotocole haute performance qui fournit une alternative à RabbitMQ pour la gestion des files d’attente de messages dans Adobe Commerce.
 
-Depuis la version 2.4.8-p3, 2.4.7-p8 et 2.4.6-p13, Adobe Commerce prend en charge ActiveMQ en tant que courtier de file d’attente de messages. Cela offre une flexibilité supplémentaire aux installations sur site pour choisir entre RabbitMQ et ActiveMQ en fonction de leurs exigences en matière d’infrastructure et de leur expertise.
+Depuis la version 2.4.8-p3, 2.4.7-p8, 2.4.6-p13 et 2.4.5-p16, Adobe Commerce prend en charge ActiveMQ en tant que courtier de file d’attente de messages. Cela offre une flexibilité supplémentaire aux installations sur site pour choisir entre RabbitMQ et ActiveMQ en fonction de leurs exigences en matière d’infrastructure et de leur expertise.
 
 ## Avant de commencer
 
@@ -168,7 +168,7 @@ Vous pouvez désinstaller RabbitMQ s’il n’est plus nécessaire.
 
 ### Étape 8 : installer et configurer ActiveMQ dans Adobe Commerce
 
-Pour effectuer les tâches d&#39;installation et de configuration d&#39;ActiveMQ telles que la configuration du protocole STOMP et la vérification de la connexion, consultez le [&#x200B; Guide d&#39;installation et de configuration](../../installation/prerequisites/activemq.md).
+Pour effectuer les tâches d&#39;installation et de configuration d&#39;ActiveMQ telles que la configuration du protocole STOMP et la vérification de la connexion, consultez le [ Guide d&#39;installation et de configuration](../../installation/prerequisites/activemq.md).
 
 ### Étape 9 : réinstaller les tâches cron
 
