@@ -15,7 +15,7 @@ Adobe Commerce prend également en charge le courtier de messages open source Ac
 
 >[!NOTE]
 >
->ActiveMQ Artemis a été introduit dans Adobe Commerce 2.4.5 et les versions ultérieures. Pour plus d’informations sur l’installation d’ActiveMQ Artemis dans Adobe Commerce sur des projets d’infrastructure cloud, voir [Configuration du service ActiveMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq) dans le *Guide de Commerce sur le cloud*.
+>ActiveMQ Artemis a été introduit dans Adobe Commerce 2.4.5 et les versions ultérieures. Pour plus d’informations sur l’installation d’ActiveMQ Artemis dans Adobe Commerce sur des projets d’infrastructure cloud, voir [Configuration du service ActiveMQ](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/activemq) dans le *Guide de Commerce sur le cloud*.
 
 Les files d&#39;attente de messages fournissent un mécanisme de communication asynchrone dans lequel l&#39;expéditeur et le destinataire d&#39;un message ne se contactent pas. Ils n’ont pas non plus besoin de communiquer avec la file d’attente de messages en même temps. Lorsqu&#39;un expéditeur place un message dans une file d&#39;attente, il est stocké jusqu&#39;à ce que le destinataire le reçoive.
 
