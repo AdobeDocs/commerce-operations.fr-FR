@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4dd926ca7014c9e007a8c2c847e076064eb8d170
+source-git-commit: 86d7fba92705b808b45d655a432bb92ed9f9181a
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
@@ -11,7 +11,7 @@ Merci d&#39;avoir choisi de contribuer !
 
 Voici un ensemble de directives à suivre lorsque vous contribuez à ce projet.
 
-## Code De Conduite
+## Code de conduite
 
 Ce projet respecte le [code de conduite](code-of-conduct.md) d’Adobe. En participant,
 vous devez respecter ce code. Veuillez signaler tout comportement inacceptable à
@@ -19,9 +19,9 @@ vous devez respecter ce code. Veuillez signaler tout comportement inacceptable �
 
 ## Documentation du guide du contributeur
 
-Voir le [Guide du contributeur](https://experienceleague.adobe.com/fr/docs/contributor/contributor-guide/introduction).
+Voir le [Guide du contributeur](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
 
-## Vous Avez Une Question ?
+## Vous avez une question ?
 
 Commencez par signaler un problème. Les validateurs existants à ce projet doivent atteindre .
 consensus autour de la direction du projet et des solutions aux problèmes dans les fils de publication
@@ -41,12 +41,11 @@ Toutes les soumissions doivent prendre la forme de demandes d’extraction et do
 par les responsables de projet. Lisez la documentation relative à la demande d’extraction de [GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 pour plus d’informations sur l’envoi de requêtes d’extraction.
 
-<!--
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
-submitting a pull request!
--->
+Enfin, suivez le modèle [demande d’extraction](PULL_REQUEST_TEMPLATE.md) lorsque
+envoi d’une demande d’extraction !
 
-## Du contributeur au responsable
+
+## Du contributeur au validateur
 
 Nous aimons les contributions de notre communauté ! Si vous souhaitez aller plus loin que le statut de contributeur
 et devenez un validateur disposant d’un accès complet en écriture ayant son mot à dire dans le projet, vous devez :
@@ -57,11 +56,11 @@ n’hésitez pas à contacter les responsables existants pour en discuter.
 
 ## Problèmes de sécurité
 
-Les problèmes de sécurité ne doivent pas être signalés dans ce dispositif de suivi de problèmes. Soumettez plutôt [&#x200B; problème à nos experts en sécurité](https://helpx.adobe.com/fr/security/alertus.html).
+Les problèmes de sécurité ne doivent pas être signalés dans ce dispositif de suivi de problèmes. Soumettez plutôt [ problème à nos experts en sécurité](https://helpx.adobe.com/security/alertus.html).
 
 ## Nouveautés
 
-Si vos modifications introduisent de nouvelles rubriques, des mises à jour importantes ou des corrections qui doivent être mises en évidence, vous pouvez ajouter une brève description à la section [Quoi de neuf &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/operational-guides/home#whats-new) directement à partir du corps de votre requête d’extraction.
+Si vos modifications introduisent de nouvelles rubriques, des mises à jour importantes ou des corrections qui doivent être mises en évidence, vous pouvez ajouter une brève description à la section [Quoi de neuf ](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home#whats-new) directement à partir du corps de votre requête d’extraction.
 
 Pour ajouter une mise en surbrillance Nouveautés :
 
@@ -109,4 +108,4 @@ Pour ajouter une mise en surbrillance Nouveautés :
 1. La partie `whatsnew` doit commencer à partir de la balise `whatsnew` et se trouver à la toute fin du corps de la demande d’extraction.
 1. Les descriptions des modifications doivent inclure des liens de travail. Assurez-vous que les liens sont corrects et mènent aux sujets prévus. Si la rubrique est nouvelle, vérifiez que les liens fonctionnent après la fusion de la demande d’extraction et la publication de la nouvelle rubrique. Vous pouvez corriger les liens après la fusion de la demande d’extraction.
 
-Par exemple, recherchez dans les demandes d’extraction fermées du référentiel pour voir comment les mises en surbrillance existantes sont formatées, puis comparez-les à la section [Nouveautés](https://experienceleague.adobe.com/fr/docs/commerce-operations/operational-guides/home#whats-new) pour voir comment elles apparaissent dans la documentation.
+Par exemple, recherchez dans les demandes d’extraction fermées du référentiel pour voir comment les mises en surbrillance existantes sont formatées, puis comparez-les à la section [Nouveautés](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home#whats-new) pour voir comment elles apparaissent dans la documentation.
