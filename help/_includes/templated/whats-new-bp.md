@@ -23,12 +23,12 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Fournit plus de détails sur la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values"> Définir les valeurs de configuration </a>.</p>
+      <td><p>Fournit plus de détails sur la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values"> Définir les valeurs de configuration </a>.</p>
 </td>
       <td>
         Bonnes pratiques
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/147">demande de tirage</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.fr-FR/pull/147">demande de tirage</a></td>
     </tr>
   </tbody>
 </table>
@@ -45,12 +45,12 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la commande <code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code> de l’interface de ligne de commande dans les instructions <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching">Configurer la mise en cache par défaut de Valkey</a> pour spécifier la valeur correcte du paramètre <code class="language-plaintext highlighter-rouge">cache-backend</code>.</p>
+      <td><p>Mise à jour de la commande <code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code> de l’interface de ligne de commande dans les instructions <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching">Configurer la mise en cache par défaut de Valkey</a> pour spécifier la valeur correcte du paramètre <code class="language-plaintext highlighter-rouge">cache-backend</code>.</p>
 </td>
       <td>
         Bonnes pratiques
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/159">demande de tirage</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.fr-FR/pull/159">demande de tirage</a></td>
     </tr>
   </tbody>
 </table>
