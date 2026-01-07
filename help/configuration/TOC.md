@@ -2,9 +2,9 @@
 user-guide-title: Guide de configuration
 user-guide-description: Configurez les fonctionnalités et services de votre application Adobe Commerce.
 feature: Configuration
-source-git-commit: 1850301e0b7f1abbc54613209940dd63d16ef145
+source-git-commit: d86b9eb07a9da6dc93234f8a02103c543bbead68
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '372'
 ht-degree: 1%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 1%
       + [Configurer Redis](cache/config-redis.md)
       + [Utiliser Redis pour le cache par défaut](cache/redis-pg-cache.md)
       + [Utilisation de Redis pour le stockage de session](cache/redis-session.md)
+      + [Configuration d’ElastiCache pour les instances EC2](cache/redis-elasticache-for-ec2.md)
    + Valkey {#valkey}
       + [Configurer Valkey](cache/config-valkey.md)
       + [Utiliser Valkey pour le cache par défaut](cache/valkey-pg-cache.md)
@@ -150,4 +151,4 @@ ht-degree: 1%
       + [Vérifier la base de données fractionnée](storage/multi-master-verify.md)
       + [Réplication de la base de données](storage/multi-master-replication.md)
       + [Revenir à une base de données unique](storage/revert-split-database.md)
-+ [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=fr)
++ [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

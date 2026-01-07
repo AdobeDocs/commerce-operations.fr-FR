@@ -3,9 +3,9 @@ title: Utiliser Redis pour le cache par défaut
 description: Découvrez comment configurer Redis comme cache par défaut pour Adobe Commerce. Découvrez l’installation de la ligne de commande, les options de configuration et les techniques de validation.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: ee4a873a73e8fd747e7d4c8e157327fab1074cc9
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 Commerce fournit des options de ligne de commande pour configurer la page Redis et la mise en cache par défaut. Bien que vous puissiez configurer la mise en cache en modifiant le fichier `<Commerce-install-dir>app/etc/env.php`, il est recommandé d’utiliser la ligne de commande, en particulier pour les configurations initiales. La ligne de commande permet de valider en s’assurant que la configuration est correcte sur le plan syntaxique.
 
 Vous devez [installer Redis](config-redis.md#install-redis) avant de continuer.
+
+>[!NOTE]
+>
+>Pour les instances Commerce hébergées sur EC2, vous pouvez utiliser AWS ElastiCache au lieu d’une instance Redis locale. Voir [Configuration d’Elasticache pour les instances EC2](redis-elasticache-for-ec2.md).
 
 ## Configurer la mise en cache par défaut de Redis
 
@@ -76,9 +80,9 @@ L&#39;exemple suivant active la mise en cache de page Redis, définit l&#39;hôt
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-redis-db=1
 ```
 
-## Résultats
+## Vérification de la configuration de l’environnement Commerce
 
-Suite à ces deux exemples de commandes, Commerce ajoute des lignes similaires à ce qui suit à `<Commerce-install-dir>app/etc/env.php` :
+L’exécution des commandes pour configurer la mise en cache Redis met à jour la configuration de l’environnement Commerce (`<Commerce-install-dir>app/etc/env.php`) :
 
 ```php
 'cache' => [
@@ -104,93 +108,11 @@ Suite à ces deux exemples de commandes, Commerce ajoute des lignes similaires �
 ],
 ```
 
-## Utilisation d’AWS ElastiCache avec votre instance EC2
+## Configurer des options de mise en cache supplémentaires
 
-Depuis Commerce version 2.4.3, les instances hébergées sur Amazon EC2 peuvent utiliser un ElastiCache AWS à la place d’une instance Redis locale.
+Cette section décrit comment activer les paramètres de configuration facultatifs désactivés par défaut.
 
->[!WARNING]
->
->Cette section fonctionne uniquement pour les instances Commerce s’exécutant sur des VPC EC2 d’Amazon. Il ne fonctionne pas pour les installations sur site.
-
-### Configuration d’un cluster Redis
-
-Après [configuration d’un cluster Redis sur AWS](https://aws.amazon.com/getting-started/hands-on/setting-up-a-redis-cluster-with-amazon-elasticache/), configurez l’instance EC2 pour utiliser ElastiCache.
-
-1. [Créez un cluster ElastiCache](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html) dans la même région et le même VPC de l’instance EC2.
-1. Vérifiez la connexion.
-
-   - Ouvrez une connexion SSH à votre instance EC2
-   - Sur l’instance EC2, installez le client Redis :
-
-     ```bash
-     sudo apt-get install redis
-     ```
-
-   - Ajoutez une règle entrante au groupe de sécurité EC2 : Type `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
-   - Ajoutez une règle entrante au groupe de sécurité de cluster ElastiCache : Type `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
-   - Connectez-vous à l’interface de ligne de commande Redis :
-
-     ```bash
-     redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
-     ```
-
-### Configuration de Commerce pour utiliser le cluster
-
-Commerce prend en charge plusieurs types de configurations de mise en cache. En règle générale, les configurations de mise en cache sont réparties entre le serveur frontal et le serveur principal. La mise en cache front-end est classée comme `default`, utilisée pour tout type de cache. Vous pouvez personnaliser ou diviser les caches en caches de niveau inférieur pour obtenir de meilleures performances. Une configuration Redis courante consiste à séparer le cache par défaut et le cache de page dans leur propre base de données Redis (RDB).
-
-Exécutez `setup` commandes pour spécifier les points d’entrée Redis.
-
-Pour configurer Commerce pour Redis en tant que mise en cache par défaut :
-
-```bash
-bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=<ElastiCache Primary Endpoint host> --cache-backend-redis-port=<ElastiCache Primary Endpoint port> --cache-backend-redis-db=0
-```
-
-Pour configurer Commerce pour la mise en cache de page Redis, procédez comme suit :
-
-```bash
-bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=<ElastiCache Primary Endpoint host> --page-cache-redis-port=<ElastiCache Primary Endpoint port> --page-cache-redis-db=1
-```
-
-Pour configurer Commerce afin d’utiliser Redis pour le stockage de session :
-
-```bash
-bin/magento setup:config:set --session-save=redis --session-save-redis-host=<ElastiCache Primary Endpoint host> --session-save-redis-port=<ElastiCache Primary Endpoint port> --session-save-redis-log-level=4 --session-save-redis-db=2
-```
-
-### Vérifier la connectivité
-
-**Pour vérifier que Commerce communique avec ElastiCache** :
-
-1. Ouvrez une connexion SSH à l’instance Commerce EC2.
-1. Démarrez le moniteur Redis.
-
-   ```bash
-   redis-cli -h <ElastiCache-Primary-Endpoint-host> -p <ElastiCache-Primary-Endpoint-port> monitor
-   ```
-
-1. Ouvrez une page dans l’interface utilisateur de Commerce.
-1. Vérifiez la sortie [cache](#verify-redis-connection) dans votre terminal.
-
-## Nouvelle implémentation du cache Redis
-
-Depuis Commerce version 2.3.5, il est recommandé d’utiliser l’implémentation étendue du cache Redis : `\Magento\Framework\Cache\Backend\Redis`.
-
-```php
-'cache' => [
-    'frontend' => [
-        'default' => [
-            'backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
-            'backend_options' => [
-                'server' => '127.0.0.1',
-                'database' => '0',
-                'port' => '6379'
-            ],
-        ],
-],
-```
-
-## Fonction de préchargement Redis
+### Fonction de préchargement Redis
 
 Comme Commerce stocke les données de configuration dans le cache Redis, nous pouvons précharger les données réutilisées entre les pages. Pour rechercher les clés qui doivent être préchargées, analysez les données transférées de Redis vers Commerce. Nous vous suggérons de précharger les données chargées sur chaque page, telles que `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
 
@@ -235,10 +157,11 @@ Si vous utilisez la fonction de préchargement avec le cache L2, n’oubliez pas
 ],
 ```
 
-## Génération parallèle
+### Génération parallèle
 
-À partir de la version 2.4.0, nous avons introduit l’option `allow_parallel_generation` pour les utilisateurs qui souhaitent éliminer les attentes de verrous.
-Il est désactivé par défaut et nous vous recommandons de le désactiver jusqu’à ce que vous disposiez de configurations et/ou de blocs excessifs.
+Éliminez l’attente de verrous en activant l’option `allow_parallel_generation` .
+
+Cette option est désactivée par défaut et Adobe recommande de la désactiver jusqu’à ce que vous disposiez d’un grand nombre de configurations ou de blocs.
 
 **Pour activer la génération parallèle** :
 
@@ -246,7 +169,7 @@ Il est désactivé par défaut et nous vous recommandons de le désactiver jusqu
 bin/magento setup:config:set --allow-parallel-generation
 ```
 
-Comme il s’agit d’un indicateur , vous ne pouvez pas le désactiver avec une commande. Vous devez définir manuellement la valeur de configuration sur `false` :
+Cette option étant un indicateur, vous ne pouvez pas la désactiver à l’aide d’une commande. Vous devez définir manuellement la valeur de configuration sur `false` :
 
 ```php
     'cache' => [
