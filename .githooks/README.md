@@ -1,7 +1,7 @@
 ---
-source-git-commit: a670f15cf6f0636959b3adb5059e6531d90a7903
+source-git-commit: 4589c405bab743001e967a9825d578ee1a03c216
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ bundle exec rake images:optimize path=../path/to/images
 
 ## Configuration
 
-Les points d’extension utilisent le fichier de configuration `_jekyll/.image_optim` pour personnaliser les paramètres d’optimisation :
+Les points d’extension utilisent le fichier de configuration `_jekyll/.image_optim.yml` pour personnaliser les paramètres d’optimisation :
 
 - **PNG** : utilise `advpng`, `optipng` et `pngquant`
 - **JPEG** : utilise `jhead`, `jpegoptim` et `jpegtran`
@@ -120,12 +120,12 @@ Les points d’extension utilisent le fichier de configuration `_jekyll/.image_o
 ### Échecs d’optimisation
 
 - Vérifiez `bundle install` a été exécuté dans le répertoire `_jekyll`
-- Vérifiez que `image_optim` et `image_optim_pack` gemmes sont installés
-- Vérifier le fichier de configuration `.image_optim`
+- Vérifiez que le `adobe-comdox-exl-rake-tasks` gem est installé (fournit des `image_optim`)
+- Vérifier le fichier de configuration `.image_optim.yml`
 
 ### Problèmes de performances
 
-- Ajuster le nombre de threads dans `_jekyll/.image_optim`
+- Ajuster le nombre de threads dans `_jekyll/.image_optim.yml`
 - Définir `DEBUG=1` variable d’environnement pour obtenir des informations détaillées sur les erreurs
 
 ## Fonctionnement
