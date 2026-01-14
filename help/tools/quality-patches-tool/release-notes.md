@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: fff49f8c9b0c1def976c14e72b4ae7ee08f823b9
+source-git-commit: f08af2909959bf8fb14b279f904e91a90f4e3d44
 workflow-type: tm+mt
-source-wordcount: '29413'
+source-wordcount: '29786'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,25 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 >[!INFO]
 >
->Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=fr#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
+>Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
 
 >[!INFO]
 >
 >Pour plus d’informations sur les [!DNL quality patches] créées par la communauté pour Magento Open Source, consultez les [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.75 {#v1-1-75}
+
+* **ACSD-68289** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction d’un problème en raison duquel la recherche en texte intégral renvoie désormais les produits correspondants si la condition de correspondance minimale est remplie collectivement pour tous les champs pouvant faire l’objet d’une recherche, plutôt que d’exiger que la condition soit remplie par un seul champ.
+* **ACSD-68359** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Correction d’un problème en raison duquel la sélection d’un magasin lors du passage en caisse à l’aide de [!UICONTROL Pick in Store] n’échoue plus en raison d’URL longues lorsque de nombreux produits se trouvent dans le panier. Auparavant, cela déclenchait une erreur *414* due à des URL trop longues générées lors de la sélection du magasin, ce qui empêchait les clients de terminer le passage en caisse.
+* **ACSD-68451** (pour Adobe Commerce, B2B >=1.5.2-p1 &lt;1.5.3) - Corrige un problème lié à plusieurs sites web en raison duquel l’administrateur d’une société se connecte à un site web, crée une société non liée sur un autre site web, mais est lié par erreur à cette société non liée.
+* **ACSD-68490** (pour Adobe Commerce >=2.4.6 &lt;2.4.7) - Correction du problème en raison duquel le bouton [!UICONTROL Add New Attribute] est visible pour un utilisateur administrateur restreint lors de la création d’un produit configurable.
+* **ACSD-68517** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Corrige une erreur de nouvel envoi de formulaire sur les pages Catalogue et Recherche catalogue.
+* **ACSD-68573** (pour Adobe Commerce >=2.4.5 &lt;2.4.9) - Correction d’un problème en raison duquel les autorisations de catégorie n’étaient pas correctement appliquées aux éléments de la liste de souhaits du client. Après la correction, les éléments de liste de souhaits sont correctement affichés et paginés sur le web et dans GraphQL.
+* **ACSD-68615** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Correction du problème en raison duquel l’interface de ligne de commande de compensation de réservation de stock affichait une exception si la combinaison traitée avait un ID de commande manquant.
+* **ACSD-68793** (pour Adobe Commerce, B2B >=1.5.1 &lt;1.5.3) - Correction d’un problème en raison duquel des produits valides étaient incorrectement rejetés lors de leur affectation à un catalogue partagé.
+* **ACSD-68925** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction d’un problème en raison duquel les réponses aux requêtes GraphQL étaient désormais alignées sur les spécifications GraphQL via HTTP. Un code de réponse 4XX est renvoyé lorsque la requête ne peut pas être analysée, n’est pas autorisée ou rencontre un problème général. Si la requête est analysée et peut être traitée, un code de réponse 200 est renvoyé.
+* Versions mises à jour : **MDVA-19640**, **ACSD-47910**, **ACSD-68040**, **ACSD-62965**
+* Correctifs remplacés : **ACSD-62577**, **ACSD-68011**
 
 ## v1.1.74 {#v1-1-74}
 
