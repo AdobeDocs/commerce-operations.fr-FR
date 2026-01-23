@@ -34,7 +34,7 @@ Contient un tableau de modules et leurs états. Si le module est activé, la val
 ]
 ```
 
-En savoir plus sur les [modules](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html).
+En savoir plus sur les [modules](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=fr).
 
 ## portées
 
@@ -82,7 +82,7 @@ Contient un tableau de valeurs de configuration de l’étendue. Il comporte les
 ]
 ```
 
-En savoir plus sur les [étendues de Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings).
+En savoir plus sur les [étendues de Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr#scope-settings).
 
 ## système
 
