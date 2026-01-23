@@ -30,7 +30,7 @@ Vous pouvez disposer d’un système de version qui répond aux exigences suivan
 
 >[!WARNING]
 >
->La connexion à la base de données n’est pas requise si elle figure déjà dans `config.php` ; consultez la section [ Exporter la configuration](../cli/export-configuration.md). Dans le cas contraire, la connexion à la base de données est requise.
+>La connexion à la base de données n’est pas requise si elle figure déjà dans `config.php` ; consultez la section [&#x200B; Exporter la configuration](../cli/export-configuration.md). Dans le cas contraire, la connexion à la base de données est requise.
 
 >[!INFO]
 >
@@ -124,7 +124,7 @@ Pour configurer le système de génération :
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   Pour plus d’informations[`.gitignore` voir la référence ](../reference/config-reference-gitignore.md) .
+   Pour plus d’informations[`.gitignore` voir la référence &#x200B;](../reference/config-reference-gitignore.md) .
 
 1. Le système de génération doit utiliser [mode par défaut](../bootstrap/application-modes.md#default-mode) ou [mode développeur](../bootstrap/application-modes.md#developer-mode) :
 

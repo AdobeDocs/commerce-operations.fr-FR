@@ -18,7 +18,7 @@ Les traductions Commerce vous permettent de personnaliser et de localiser votre 
 - **Dictionnaires de traduction**, qui sont un moyen pratique de personnaliser ou de traduire _certains_ mots et expressions, tels que ceux d’un module ou d’un thème personnalisé.
 - **Packages de langues** qui permettent de traduire _tout ou partie_ des mots et expressions dans l’application Commerce.
 
-Voir [ Présentation des traductions ](https://developer.adobe.com/commerce/frontend-core/guide/translations/).
+Voir [&#x200B; Présentation des traductions &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/translations/).
 
 ## Génération d’un dictionnaire de traduction
 
@@ -139,7 +139,7 @@ Pour créer ces fichiers :
 
 Lors de la déclaration d’un package de langue dans le fichier de configuration `language.xml`, vous devez spécifier la séquence d’héritage de langue de ce package.
 
-L’héritage de langue vous permet de créer une traduction appelée _enfant_ basée sur une traduction existante appelée _parent_. Les traductions enfants remplacent les traductions parents. Cependant, si le chargement ou l’affichage de la traduction enfant échoue ou si une expression ou un mot est manquant, Commerce utilise le paramètre régional parent. [ Exemples d’héritage de package de langue ](#example-of-language-inheritance).
+L’héritage de langue vous permet de créer une traduction appelée _enfant_ basée sur une traduction existante appelée _parent_. Les traductions enfants remplacent les traductions parents. Cependant, si le chargement ou l’affichage de la traduction enfant échoue ou si une expression ou un mot est manquant, Commerce utilise le paramètre régional parent. [&#x200B; Exemples d’héritage de package de langue &#x200B;](#example-of-language-inheritance).
 
 Pour déclarer un package, spécifiez les informations suivantes :
 

@@ -21,7 +21,7 @@ Dans ce tutoriel, nous supposons que :
 
 - L’application Commerce est installée dans `/var/www/html/magento2`
 - Votre nom d’utilisateur et votre mot de passe de base de données Commerce sont tous deux `magento`
-- Vous effectuez toutes les actions en tant que [ propriétaire du système de fichiers ](../../installation/prerequisites/file-system/overview.md)
+- Vous effectuez toutes les actions en tant que [&#x200B; propriétaire du système de fichiers &#x200B;](../../installation/prerequisites/file-system/overview.md)
 
 ## Étape 1 : obtenir un exemple de module
 

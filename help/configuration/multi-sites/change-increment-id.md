@@ -17,7 +17,7 @@ Cet article explique comment modifier l’ID d’incrément d’une entité de b
 
 - Adobe Commerce (sur site) : 2.x.x
 - Adobe Commerce sur l’infrastructure cloud : 2.x.x
-- MySQL : [ toute version prise en charge ](../../installation/prerequisites/database/mysql.md)
+- MySQL : [&#x200B; toute version prise en charge &#x200B;](../../installation/prerequisites/database/mysql.md)
 
 ## Quand devez-vous modifier l’ID d’incrément ?
 

@@ -18,7 +18,7 @@ Lors de la migration, l’étape [Mapper](technical-specification.md#map-step) a
 
 >[!NOTE]
 >
->Lisez la [Spécification technique](technical-specification.md) avant de tenter d’étendre l’[!DNL Data Migration Tool]. Consultez également le [ Guide de migration ](../overview.md) pour obtenir des informations générales sur l’utilisation de l’outil de migration.
+>Lisez la [Spécification technique](technical-specification.md) avant de tenter d’étendre l’[!DNL Data Migration Tool]. Consultez également le [&#x200B; Guide de migration &#x200B;](../overview.md) pour obtenir des informations générales sur l’utilisation de l’outil de migration.
 
 
 ## Modifications mineures du format et de la structure des données
@@ -164,7 +164,7 @@ Les étapes peuvent inclure quatre types de classes :
 
 >[!NOTE]
 >
->Pour plus d’informations[ voir ](technical-specification.md#configuration)Configuration, [Internes des étapes](technical-specification.md#step-internals), [Étapes](technical-specification.md#step-stages) et [Modes d’exécution](technical-specification.md#running-modes).
+>Pour plus d’informations[&#x200B; voir &#x200B;](technical-specification.md#configuration)Configuration, [Internes des étapes](technical-specification.md#step-internals), [Étapes](technical-specification.md#step-stages) et [Modes d’exécution](technical-specification.md#running-modes).
 
 
 Des requêtes SQL complexes peuvent être assemblées dans ces classes pour récupérer et migrer des données. En outre, ces tables doivent être « ignorées » dans l’étape [Mapper](technical-specification.md#map-step), car elle analyse toutes les tables existantes et tente de migrer les données à moins qu’elles ne se trouvent dans la balise `<ignore>` du fichier `map.xml`.
