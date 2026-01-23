@@ -2,7 +2,7 @@
 title: Présentation du processus de mise à niveau
 description: Découvrez comment la mise à niveau de votre projet Adobe Commerce garantit la sécurité et l’efficacité de votre storefront. Découvrez les bonnes pratiques pour planifier et exécuter des mises à niveau réussies.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Le report des mises à niveau de la plateforme se résume souvent à un coût im
 
 Cela peut sembler contre-intuitif, mais effectuer des mises à jour régulières de la plateforme nécessite moins d’effort global que d’effectuer des mises à jour peu fréquentes en raison de la quantité de dette technique accumulée résultant du retard. Adobe a récemment travaillé avec un partenaire qui a un détaillant qui effectuait des mises à niveau peu fréquemment et de manière incohérente (chaque année ou plus). En transformant sa façon d’aborder les mises à niveau et en suivant un chemin de mise à niveau régulier recommandé par Adobe sur une période de 12 mois, le partenaire a pu faire gagner au client quatre semaines de temps de développement cumulé, d’efforts et de coûts associés. Ces coûts pourraient ensuite être réorientés vers des initiatives visant à stimuler la croissance des entreprises.
 
-Lorsque des mises à jour sont effectuées régulièrement, les modifications sont incrémentielles, comme le reflète l’effort de mise à niveau correspondant. Lorsque les mises à jour de la plateforme sont différées pendant une période prolongée, elles peuvent devenir un processus beaucoup plus impliqué. En outre, les extensions que vous utilisez depuis [Adobe Commerce Marketplace](https://marketplace.magento.com/) et d’autres intégrations tierces peuvent également être affectées. Enfin, le temps nécessaire à l’examen, à la planification et à l’exécution d’une mise à niveau différée est plus long, ce qui représente des efforts et des coûts supplémentaires évitables.
+Lorsque des mises à jour sont effectuées régulièrement, les modifications sont incrémentielles, comme le reflète l’effort de mise à niveau correspondant. Lorsque les mises à jour de la plateforme sont différées pendant une période prolongée, elles peuvent devenir un processus beaucoup plus impliqué. En outre, les extensions que vous utilisez depuis [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com//) et d’autres intégrations tierces peuvent également être affectées. Enfin, le temps nécessaire à l’examen, à la planification et à l’exécution d’une mise à niveau différée est plus long, ce qui représente des efforts et des coûts supplémentaires évitables.
 
 Voici quelques-uns des facteurs généraux qui affectent le niveau d’effort nécessaire à la mise à niveau de votre projet :
 

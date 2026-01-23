@@ -3,19 +3,19 @@ title: Consigner l'activité de la base de données
 description: Configurez Commerce pour consigner l’activité de la base de données à l’aide de l’interface du journal.
 feature: Configuration, Logs, Storage
 exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
-source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '86'
 ht-degree: 0%
 
 ---
 
 # Consigner l&#39;activité de la base de données
 
-L’exemple suivant montre comment consigner l’activité de la base de données à l’aide du [`Magento\Framework\DB\LoggerInterface`][interface], qui comporte deux implémentations :
+L’exemple suivant montre comment consigner l’activité de la base de données à l’aide du `[Magento\Framework\DB\LoggerInterface](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/LoggerInterface.php)`, qui comporte deux implémentations :
 
-- N’enregistre rien (par défaut) : [`Magento\Framework\DB\Logger\Quiet`][quiet]
-- Connecte-toi au répertoire `var/log` : [`Magento\Framework\DB\Logger\File`][file]
+- N’enregistre rien (par défaut) : [`Magento\Framework\DB\Logger\Quiet`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/Quiet.php)
+- Connecte-toi au répertoire `var/log` : [`Magento\Framework\DB\Logger\File`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/File.php)
 
 >[!TIP]
 >
@@ -58,8 +58,3 @@ Et nettoyez le cache avec :
 bin/magento cache:clean
 ```
 
-<!-- link definitions -->
-
-[file]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/Logger/File.php
-[interface]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/LoggerInterface.php
-[quiet]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/Logger/Quiet.php

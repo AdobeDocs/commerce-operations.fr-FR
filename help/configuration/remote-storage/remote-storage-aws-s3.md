@@ -3,16 +3,16 @@ title: Configurer le compartiment AWS S3 pour le stockage distant
 description: Configurez votre projet Commerce pour utiliser le service de stockage AWS S3 pour le stockage distant.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 3690043019d70ad15332f757158937a7d5305043
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
 
 # Configurer le compartiment AWS S3 pour le stockage distant
 
-Le [service Amazon Simple Storage Service (Amazon S3)][AWS S3] est un service de stockage d’objets qui offre une évolutivité, une disponibilité des données, une sécurité et des performances de pointe. Le service AWS S3 utilise des compartiments, ou conteneurs, pour le stockage des données. Cette configuration nécessite la création d’un compartiment _privé_. Pour Adobe Commerce sur l’infrastructure cloud, consultez [Configuration du stockage distant pour Commerce sur l’infrastructure cloud](cloud-support.md).
+Le [service Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3) est un service de stockage d’objets qui offre une évolutivité, une disponibilité des données, une sécurité et des performances de pointe. Le service AWS S3 utilise des compartiments, ou conteneurs, pour le stockage des données. Cette configuration nécessite la création d’un compartiment _privé_. Pour Adobe Commerce sur l’infrastructure cloud, consultez [Configuration du stockage distant pour Commerce sur l’infrastructure cloud](cloud-support.md).
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ Le [service Amazon Simple Storage Service (Amazon S3)][AWS S3] est un service de
 
 1. Connectez-vous à votre tableau de bord Amazon S3 et créez un compartiment _privé_.
 
-1. Configurez [les rôles AWS IAM]. Vous pouvez également générer des clés d’accès et secrètes.
+1. Configurez [les rôles AWS IAM](https://aws.amazon.com/iam/). Vous pouvez également générer des clés d’accès et secrètes.
 
 1. Désactivez le stockage de base de données par défaut.
 
@@ -32,7 +32,7 @@ Le [service Amazon Simple Storage Service (Amazon S3)][AWS S3] est un service de
    bin/magento config:set system/media_storage_configuration/media_database 0
    ```
 
-1. Configurez Commerce pour utiliser le compartiment privé. Pour obtenir une liste complète des paramètres[&#x200B; consultez la section &#x200B;](remote-storage.md#remote-storage-options) Options de stockage distant .
+1. Configurez Commerce pour utiliser le compartiment privé. Pour obtenir une liste complète des paramètres[ consultez la section ](remote-storage.md#remote-storage-options) Options de stockage distant .
 
    ```bash
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
@@ -73,7 +73,7 @@ location ~* \.(ico|jpg|jpeg|png|gif|svg|js|css|swf|eot|ttf|otf|woff|woff2)$ {
 
 ### Authentification
 
-Si vous utilisez des clés d’accès et secrètes au lieu des rôles [AWS IAM], vous devez inclure le module [`ngx_aws_auth` Nginx][ngx repo].
+Si vous utilisez des clés d’accès et secrètes au lieu des rôles [AWS IAM](https://aws.amazon.com/iam/), vous devez inclure le module [`ngx_aws_auth` Nginx](https://github.com/anomalizer/ngx_aws_auth).
 
 ### Autorisations
 
@@ -83,8 +83,3 @@ L’intégration S3 repose sur la possibilité de générer et de stocker des im
 
 Il est vivement recommandé d’utiliser des méthodes d’adaptateur de fichiers [!DNL Commerce] dans votre développement de codage ou d’extension, quel que soit le type de stockage de fichiers. Lorsque vous utilisez S3 pour le stockage, n&#39;utilisez pas les opérations d&#39;E/S de fichiers PHP natives, telles que `copy`, `rename` ou `file_put_contents`, car les fichiers S3 ne se trouvent pas dans le système de fichiers. Voir [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) pour des exemples de code.
 
-<!-- link definitions -->
-
-[AWS S3]: https://aws.amazon.com/s3
-[AWS IAM]: https://aws.amazon.com/iam/
-[ngx repo]: https://github.com/anomalizer/ngx_aws_auth

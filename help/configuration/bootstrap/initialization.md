@@ -3,28 +3,28 @@ title: Initialisation et amorçage de l'application
 description: Découvrez la logique d’initialisation et de bootstrap de l’application Commerce.
 feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
 
 # Présentation de l&#39;initialisation et du bootstrap
 
-Pour exécuter l’application Commerce, les actions suivantes sont implémentées dans [pub/index.php][index] :
+Pour exécuter l’application Commerce, les actions suivantes sont implémentées dans [pub/index.php](https://github.com/magento/magento2/tree/2.4.8/pub/index.php) :
 
-- Incluez [app/bootstrap.php][bootinitial], qui effectue les routines d&#39;initialisation essentielles telles que le traitement des erreurs, l&#39;initialisation du chargeur automatique, la définition des options de profilage et la définition du fuseau horaire par défaut.
-- Créez une instance de [\Magento\Framework\App\Bootstrap.php][bootstrap] <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. -->
-- Créez une instance d’application Commerce : [\Magento\Framework\AppInterface][app-face]
+- Incluez le fichier [app/bootstrap.php](https://github.com/magento/magento2/blob/2.4.8/app/bootstrap.php) pour la version Commerce déployée dans votre environnement. Ce fichier exécute les routines d&#39;initialisation essentielles, telles que le traitement des erreurs, l&#39;initialisation du chargeur automatique, la définition des options de profilage et la définition du fuseau horaire par défaut.
+- Créez une instance de [\Magento\Framework\App\Bootstrap.php](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Bootstrap.php) <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. -->
+- Créez une instance d’application Commerce : [\Magento\Framework\AppInterface](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/AppInterface.php)
 - Exécuter Commerce
 
 ## Logique d’exécution de Bootstrap
 
-[L’objet bootstrap][bootinitial] utilise l’algorithme suivant pour exécuter l’application Commerce :
+[L’objet bootstrap](https://github.com/magento/magento2/tree/2.4.8/app/bootstrap.php) utilise l’algorithme suivant pour exécuter l’application Commerce :
 
 1. Initialise le gestionnaire d’erreurs.
-1. Crée les [gestionnaire d’objets][object] et les services partagés de base qui sont utilisés partout et qui sont affectés par l’environnement. Les paramètres d’environnement sont correctement injectés dans ces objets.
+1. Crée les [gestionnaire d’objets](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/ObjectManager) et les services partagés de base qui sont utilisés partout et qui sont affectés par l’environnement. Les paramètres d’environnement sont correctement injectés dans ces objets.
 1. Affirme que le mode de maintenance n’est _pas_ activé ; dans le cas contraire, s’arrête.
 1. Affirme que l’application Commerce est installée ; dans le cas contraire, elle s’arrête.
 1. Démarre l’application Commerce.
@@ -71,7 +71,7 @@ Nous disposons des applications de point d’entrée suivantes (c’est-à-dire 
 
 ### Point d’entrée HTTP
 
-[\Magento\Framework\App\Http][http] fonctionne comme suit :
+[\Magento\Framework\App\Http](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Http) fonctionne comme suit :
 
 1. Détermine la [zone d&#39;application](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
 1. Démarre le contrôleur avant et les systèmes de routage afin de trouver et d&#39;exécuter une action du contrôleur.
@@ -89,7 +89,7 @@ Nous disposons des applications de point d’entrée suivantes (c’est-à-dire 
 
 ### Point d’entrée de ressource statique
 
-[\Magento\Framework\App\StaticResource][static-resource] est une application permettant de récupérer des ressources statiques (par exemple, CSS, JavaScript et images). Cela reporte toutes les actions avec une ressource statique jusqu’à ce que la ressource soit demandée.
+[\Magento\Framework\App\StaticResource](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/StaticResource.php) est une application permettant de récupérer des ressources statiques (par exemple, CSS, JavaScript et images). Cela reporte toutes les actions avec une ressource statique jusqu’à ce que la ressource soit demandée.
 
 >[!INFO]
 >
@@ -105,17 +105,7 @@ Lorsque la requête est redirigée vers le point d’entrée, l’application Co
 
 ### Point d’entrée des ressources multimédia
 
-[Magento\MediaStorage\App\Media][media] récupère les ressources multimédias (c’est-à-dire tous les fichiers chargés dans le stockage multimédia) de la base de données. Il est utilisé chaque fois que la base de données est configurée en tant que stockage multimédia.
+[Magento\MediaStorage\App\Media](https://github.com/magento/magento2/tree/2.4.8/app/code/Magento/MediaStorage/App/Media.php) récupère les ressources multimédias (c’est-à-dire tous les fichiers chargés dans le stockage multimédia) de la base de données. Il est utilisé chaque fois que la base de données est configurée en tant que stockage multimédia.
 
 `\Magento\Core\App\Media` tente de trouver le fichier multimédia dans le stockage de base de données configuré et de l&#39;écrire dans le répertoire `pub/static`, puis de renvoyer son contenu. En cas d’erreur, il renvoie un code d’état HTTP 404 (Introuvable) dans l’en-tête sans contenu.
 
-<!-- Link Definitions -->
-
-[app-face]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/AppInterface.php
-[bootinitial]: https://github.com/magento/magento2/tree/2.4/app/bootstrap.php
-[bootstrap]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/App/Bootstrap.php
-[http]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/App/Http
-[index]: https://github.com/magento/magento2/tree/2.4/pub/index.php
-[media]: https://github.com/magento/magento2/tree/2.4/app/code/Magento/MediaStorage/App/Media.php
-[object]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/ObjectManager
-[static-resource]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/App/StaticResource.php

@@ -2,7 +2,7 @@
 title: env.php référence
 description: Découvrez les valeurs et les sections de configuration du fichier env.php dans Adobe Commerce. Découvrez les paramètres d’environnement et les options de configuration.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 0%
@@ -27,12 +27,12 @@ Le fichier `env.php` contient les sections suivantes :
 | `downloadable_domains` | Liste des domaines téléchargeables |
 | `install` | La date d&#39;installation |
 | `lock` | Verrouiller les paramètres du fournisseur |
-| `MAGE_MODE` | Le [&#x200B; mode d’application &#x200B;](../bootstrap/application-modes.md) |
+| `MAGE_MODE` | Le [ mode d’application ](../bootstrap/application-modes.md) |
 | `queue` | [Files d’attente des messages](../queues/manage-message-queues.md) paramètres |
 | `resource` | Mappage du nom d’une ressource sur une connexion |
 | `session` | Données de stockage de la session |
 | `system` | Désactive le champ à modifier dans l’administrateur |
-| `x-frame-options` | Définition de [x-frame-options][x-frame-options] |
+| `x-frame-options` | Définition de [x-frame-options](../security/xframe-options.md) |
 
 ## serveur principal
 
@@ -98,7 +98,7 @@ Toutes les configurations de types de cache sont disponibles à partir de ce nœ
 ]
 ```
 
-En savoir plus sur les différents [&#x200B; types de cache &#x200B;](../cli/manage-cache.md).
+En savoir plus sur les différents [ types de cache ](../cli/manage-cache.md).
 
 ## consumer_wait_for_messages
 
@@ -146,7 +146,7 @@ Commerce utilise une clé de chiffrement pour protéger les mots de passe et d�
 ]
 ```
 
-Apprenez-en davantage sur la [clé de chiffrement](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/encryption-key) dans le guide d’utilisation de _Commerce_.
+Apprenez-en davantage sur la [clé de chiffrement](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) dans le guide d’utilisation de _Commerce_.
 
 ## db
 
@@ -211,7 +211,7 @@ Liste des domaines téléchargeables disponibles dans ce nœud. D’autres domai
 ]
 ```
 
-En savoir plus sur les [domaines téléchargeables](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+En savoir plus sur les [domaines téléchargeables](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## installer
 
@@ -252,7 +252,7 @@ Les configurations de file d’attente de messages sont disponibles dans ce nœu
 ]
 ```
 
-En savoir plus sur [File d’attente des messages][message-queue].
+En savoir plus sur [File d’attente des messages](https://developer.adobe.com/commerce/php/development/components/message-queues/).
 
 ## ressource
 
@@ -305,9 +305,6 @@ En utilisant ce nœud, Commerce verrouille les valeurs de configuration dans le 
 
 En savoir plus dans [env-php-config-set](../cli/set-configuration-values.md).
 
-<!-- Link definitions -->
-
-[message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
 
 
 ## Ajouter des variables à la configuration du fichier

@@ -2,7 +2,7 @@
 title: Personnalisation des chemins d’accès aux répertoires de base
 description: Utilisez la variable MAGE_DIRS pour définir un tableau de chemins absolus.
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
-source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -15,7 +15,7 @@ La variable d’environnement `MAGE_DIRS` vous permet de spécifier des chemins 
 
 ## Définir MAGE_DIRS
 
-Spécifiez un tableau associatif où les clés sont des constantes de [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] et les valeurs sont des chemins absolus d’accès aux répertoires ou à leurs chemins d’accès aux URL, respectivement.
+Spécifiez un tableau associatif où les clés sont des constantes de [\\Magento\\App\\Filesystem\\DirectoryList](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php) et les valeurs sont des chemins absolus d’accès aux répertoires ou à leurs chemins d’accès aux URL, respectivement.
 
 Vous pouvez définir `MAGE_DIRS` de l’une des manières suivantes :
 
@@ -50,6 +50,3 @@ Vous pouvez définir `MAGE_DIRS` de l’une des manières suivantes :
 
 L’exemple précédent définit les chemins d’accès pour les répertoires `[cache]` et `[media]` sur `/mnt/nfs/cache` et `/mnt/nfs/media`, respectivement.
 
-<!-- link definitions -->
-
-[directory-list]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php

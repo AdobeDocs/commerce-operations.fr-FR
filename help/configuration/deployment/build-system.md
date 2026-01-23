@@ -3,9 +3,9 @@ title: Configuration du système de build
 description: Découvrez comment déployer Commerce dans un système de version.
 feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Vous pouvez disposer d’un système de version qui répond aux exigences suivan
 
 >[!WARNING]
 >
->La connexion à la base de données n’est pas requise si elle figure déjà dans `config.php` ; consultez la section [&#x200B; Exporter la configuration](../cli/export-configuration.md). Dans le cas contraire, la connexion à la base de données est requise.
+>La connexion à la base de données n’est pas requise si elle figure déjà dans `config.php` ; consultez la section [ Exporter la configuration](../cli/export-configuration.md). Dans le cas contraire, la connexion à la base de données est requise.
 
 >[!INFO]
 >
@@ -67,11 +67,11 @@ Pour installer le compositeur :
    mv composer.phar /usr/local/bin/composer
    ```
 
-Pour obtenir des options d’installation supplémentaires, consultez la [documentation d’installation du compositeur][composer].
+Pour obtenir des options d’installation supplémentaires, consultez la [documentation d’installation du compositeur](https://getcomposer.org/download/).
 
 ### Installer PHP
 
-Installez PHP sur [CentOS] ou [Ubuntu].
+Installez PHP sur [CentOS](https://wiki.centos.org/HowTos/php7) ou [Ubuntu](https://help.ubuntu.com/lts/serverguide/php.html).
 
 ### Configurer le système de génération
 
@@ -124,7 +124,7 @@ Pour configurer le système de génération :
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   Pour plus d’informations[`.gitignore` voir la référence &#x200B;](../reference/config-reference-gitignore.md) .
+   Pour plus d’informations[`.gitignore` voir la référence ](../reference/config-reference-gitignore.md) .
 
 1. Le système de génération doit utiliser [mode par défaut](../bootstrap/application-modes.md#default-mode) ou [mode développeur](../bootstrap/application-modes.md#developer-mode) :
 
@@ -134,8 +134,3 @@ Pour configurer le système de génération :
 
    `<mode>` est obligatoire. Il peut être `default` ou `developer`.
 
-<!-- Link Definitions -->
-
-[CentOS]: https://wiki.centos.org/HowTos/php7
-[composer]: https://getcomposer.org/download/
-[Ubuntu]: https://help.ubuntu.com/lts/serverguide/php.html

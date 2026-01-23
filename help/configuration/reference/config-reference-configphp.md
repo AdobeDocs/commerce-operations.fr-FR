@@ -2,9 +2,9 @@
 title: config.php référence
 description: Découvrez les valeurs du fichier config.php et les sections pour la configuration d’Adobe Commerce. Découvrez les modules, les portées, les paramètres système et les bonnes pratiques de déploiement.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '156'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Contient un tableau de modules et leurs états. Si le module est activé, la val
 ]
 ```
 
-En savoir plus sur les [modules].
+En savoir plus sur les [modules](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html).
 
 ## portées
 
@@ -82,7 +82,7 @@ Contient un tableau de valeurs de configuration de l’étendue. Il comporte les
 ]
 ```
 
-En savoir plus sur les [étendues de Commerce][scopes].
+En savoir plus sur les [étendues de Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings).
 
 ## système
 
@@ -100,7 +100,7 @@ Contient un tableau de valeurs de configuration des champs système.
 ]
 ```
 
-En savoir plus sur les [&#x200B; configurations spécifiques au système &#x200B;](config-reference-sens.md).
+En savoir plus sur les [ configurations spécifiques au système ](config-reference-sens.md).
 
 ## thèmes
 
@@ -120,10 +120,5 @@ Contient un tableau de valeurs pour la configuration du thème.
 ]
 ```
 
-En savoir plus sur les [thèmes].
+En savoir plus sur les [thèmes](https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/).
 
-<!-- link definitions -->
-
-[Modules]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=fr
-[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr#scope-settings
-[Thèmes]: https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/

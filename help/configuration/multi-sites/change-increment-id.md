@@ -2,9 +2,9 @@
 title: Modifier l’ID d’incrément
 description: Modifiez l’ID d’incrément d’une entité de base de données Commerce.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Cet article explique comment modifier l’ID d’incrément d’une entité de b
 
 - Adobe Commerce (sur site) : 2.x.x
 - Adobe Commerce sur l’infrastructure cloud : 2.x.x
-- MySQL : [&#x200B; toute version prise en charge &#x200B;](../../installation/prerequisites/database/mysql.md)
+- MySQL : [ toute version prise en charge ](../../installation/prerequisites/database/mysql.md)
 
 ## Quand devez-vous modifier l’ID d’incrément ?
 
@@ -28,7 +28,7 @@ Vous devrez peut-être modifier l’ID d’incrément pour les nouvelles entité
 
 >[!INFO]
 >
->Vous pouvez également résoudre le problème de passerelle de paiement pour PayPal en autorisant plusieurs paiements par ID de facture dans les Préférences de réception des paiements de PayPal. Voir [Demande rejetée de la passerelle PayPal - Émission de facture en double](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=fr) dans la _Base de connaissances_.
+>Vous pouvez également résoudre le problème de passerelle de paiement pour PayPal en autorisant plusieurs paiements par ID de facture dans les Préférences de réception des paiements de PayPal. Voir [Demande rejetée de la passerelle PayPal - Émission de facture en double](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) dans la _Base de connaissances_.
 
 ## Étapes préalables
 
@@ -70,10 +70,5 @@ La prochaine commande passée dans le magasin avec `ID=1` aura l’ID « #100002
 Avant d’exécuter la requête `ALTER TABLE` sur un environnement de production d’Adobe Commerce sur une infrastructure cloud, nous vous recommandons vivement d’effectuer les étapes suivantes :
 
 - Tester l’ensemble de la procédure de modification de l’ID d’incrément dans votre environnement d’évaluation
-- [Créez une sauvegarde de base de données] pour restaurer votre base de données de production en cas d’échec.
+- [Créez une sauvegarde de base de données](https://support.magento.com/hc/en-us/articles/360003254334) pour restaurer votre base de données de production en cas d’échec.
 
-<!-- Link Definitions -->
-
-[PayPal gateway rejected request - duplicate invoice issue]: https://support.magento.com/hc/en-us/articles/115002457473
-[Création d’une sauvegarde de base de données]: https://support.magento.com/hc/en-us/articles/360003254334
-[toute version prise en charge]

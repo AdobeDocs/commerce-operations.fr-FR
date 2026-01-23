@@ -3,9 +3,9 @@ title: Journalisation personnalisée
 description: Découvrez comment rechercher des erreurs à l’aide de la journalisation personnalisée.
 feature: Configuration, Logs
 exl-id: 6c94ebcf-70df-4818-a17b-32512eba516d
-source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe recommande d’utiliser la journalisation centralisée des applications po
 
 - Il permet de stocker les journaux sur un serveur autre que le serveur d’applications et réduit les opérations d’E/S de disque, simplifiant ainsi la prise en charge du serveur d’applications.
 
-- Le traitement des données des journaux est ainsi plus efficace grâce à l’utilisation d’outils spéciaux, tels que [Logstash], [Logplex] ou [fluentd], sans impact sur le serveur de production.
+- Le traitement des données des journaux est ainsi plus efficace grâce à l’utilisation d’outils spéciaux, tels que [Logstash](https://www.elastic.co/products/logstash), [Logplex](https://devcenter.heroku.com/articles/logplex) ou [fluentd](https://www.fluentd.org/), sans impact sur le serveur de production.
 
   >[!INFO]
   >
@@ -28,13 +28,13 @@ Adobe recommande d’utiliser la journalisation centralisée des applications po
 
 ## Conformité au RSP-3
 
-La norme [PSR-3][laminas] définit une interface PHP commune pour les bibliothèques de journalisation. L’objectif principal de PSR-3 est de permettre aux bibliothèques de recevoir un objet `Psr\Log\LoggerInterface` et d’y écrire des journaux de manière simple et universelle.
+La norme [PSR-3](https://docs.laminas.dev/laminas-log/) définit une interface PHP commune pour les bibliothèques de journalisation. L’objectif principal de PSR-3 est de permettre aux bibliothèques de recevoir un objet `Psr\Log\LoggerInterface` et d’y écrire des journaux de manière simple et universelle.
 
 Cela permet de remplacer facilement l’implémentation sans craindre que ce remplacement n’enfreigne le code de l’application. Cela garantit également qu’un composant personnalisé fonctionnera même lorsque l’implémentation du journal sera modifiée dans une future version du système.
 
 ## Monologue
 
-Commerce 2 est conforme à la norme PSR-3. Par défaut, Commerce utilise [Monologue]. Monologue implémenté en tant que préférence pour `Psr\Log\LoggerInterface` dans le [`di.xml`][di] d’application Commerce.
+Commerce 2 est conforme à la norme PSR-3. Par défaut, Commerce utilise [Monologue](https://github.com/Seldaek/monolog). Monologue implémenté en tant que préférence pour `Psr\Log\LoggerInterface` dans le [`di.xml`](https://github.com/magento/magento2/blob/2.4/app/etc/di.xml#L9) d’application Commerce.
 
 Monolog est une solution de journalisation PHP populaire avec un large éventail de gestionnaires qui vous permettent de créer des stratégies de journalisation avancées. Voici un résumé du fonctionnement de Monolog.
 
@@ -52,11 +52,3 @@ Les messages de journal peuvent être traités de différentes manières. Par ex
 
 Les autres canaux peuvent avoir un ensemble différent de gestionnaires et de logiques.
 
-<!-- link definitions -->
-
-[di]: https://github.com/magento/magento2/blob/2.4/app/etc/di.xml#L9
-[fluide]: https://www.fluentd.org/
-[laminas]: https://docs.laminas.dev/laminas-log/
-[Logplex]: https://devcenter.heroku.com/articles/logplex
-[Logstash]: https://www.elastic.co/products/logstash
-[Monologue]: https://github.com/Seldaek/monolog

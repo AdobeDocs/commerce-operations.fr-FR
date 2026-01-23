@@ -3,7 +3,7 @@ title: Personnalisez le  [!DNL Data Migration Tool]
 description: Découvrez comment personnaliser le pour transférer  [!DNL Data Migration Tool]  données créées par les extensions entre Magento 1 et Magento 2.
 exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Configuration du [!DNL Data Migration Tool]
 
-Parfois, le format et la structure des données créés par les [extensions](https://marketplace.magento.com/extensions.html) ou le code personnalisé sont différents entre Magento 1 et Magento 2. Utilisez des points d’extension dans le [!DNL Data Migration Tool] pour migrer ces données. Si le format et la structure des données sont identiques, l’outil peut migrer automatiquement les données sans intervention de l’utilisateur.
+Parfois, le format et la structure des données créés par les [extensions](https://commercemarketplace.adobe.com//extensions.html) ou le code personnalisé sont différents entre Magento 1 et Magento 2. Utilisez des points d’extension dans le [!DNL Data Migration Tool] pour migrer ces données. Si le format et la structure des données sont identiques, l’outil peut migrer automatiquement les données sans intervention de l’utilisateur.
 
 Lors de la migration, l’étape [Mapper](technical-specification.md#map-step) analyse et compare toutes les tables Magento 1 et Magento 2, y compris celles créées par les extensions. Si les tables sont identiques, l’outil migre automatiquement les données. Si les tableaux sont différents, l’outil s’arrête et en informe l’utilisateur.
 
 >[!NOTE]
 >
->Lisez la [Spécification technique](technical-specification.md) avant de tenter d’étendre l’[!DNL Data Migration Tool]. Consultez également le [&#x200B; Guide de migration &#x200B;](../overview.md) pour obtenir des informations générales sur l’utilisation de l’outil de migration.
+>Lisez la [Spécification technique](technical-specification.md) avant de tenter d’étendre l’[!DNL Data Migration Tool]. Consultez également le [ Guide de migration ](../overview.md) pour obtenir des informations générales sur l’utilisation de l’outil de migration.
 
 
 ## Modifications mineures du format et de la structure des données
@@ -164,7 +164,7 @@ Les étapes peuvent inclure quatre types de classes :
 
 >[!NOTE]
 >
->Pour plus d’informations[&#x200B; voir &#x200B;](technical-specification.md#configuration)Configuration, [Internes des étapes](technical-specification.md#step-internals), [Étapes](technical-specification.md#step-stages) et [Modes d’exécution](technical-specification.md#running-modes).
+>Pour plus d’informations[ voir ](technical-specification.md#configuration)Configuration, [Internes des étapes](technical-specification.md#step-internals), [Étapes](technical-specification.md#step-stages) et [Modes d’exécution](technical-specification.md#running-modes).
 
 
 Des requêtes SQL complexes peuvent être assemblées dans ces classes pour récupérer et migrer des données. En outre, ces tables doivent être « ignorées » dans l’étape [Mapper](technical-specification.md#map-step), car elle analyse toutes les tables existantes et tente de migrer les données à moins qu’elles ne se trouvent dans la balise `<ignore>` du fichier `map.xml`.

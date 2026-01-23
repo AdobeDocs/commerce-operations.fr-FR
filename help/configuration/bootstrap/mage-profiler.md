@@ -2,7 +2,7 @@
 title: Activer le profilage
 description: En savoir plus sur l’activation de MAGE Profiler pour l’utiliser avec vos outils d’analyse.
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Avec le profilage Commerce, vous pouvez :
 
   Vous devriez être particulièrement intéressé par la liste des _dépendances inutilisées_, qui sont des objets qui ont été créés parce qu&#39;ils ont été demandés dans certains constructeurs, mais qui n&#39;ont jamais été utilisés (c&#39;est-à-dire qu&#39;aucune de leurs méthodes n&#39;a été appelée). Le temps et la mémoire consacrés par le processeur à la création de ces dépendances sont donc gaspillés.
 
-Commerce fournit la fonctionnalité de base dans [`Magento\Framework\Profiler`][profiler].
+Commerce fournit la fonctionnalité de base dans [`Magento\Framework\Profiler`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler.php).
 
 Vous pouvez activer et configurer le profileur à l’aide d’une variable MAGE_PROFILER ou de la ligne de commande.
 
@@ -37,8 +37,8 @@ Vous pouvez définir la valeur de `MAGE_PROFILER` de l’une des manières décr
 
   Vous pouvez utiliser l’une des valeurs suivantes pour activer un profileur spécifique :
 
-   - `csvfile` qui utilise [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
-   - Toute autre valeur (sauf `2`), y compris une valeur vide, qui utilise [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]
+   - `csvfile` qui utilise [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)
+   - Toute autre valeur (sauf `2`), y compris une valeur vide, qui utilise [`Magento\Framework\Profiler\Driver\Standard\Output\Html`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php)
 
 - `2` d’activer les graphiques de dépendance.
 
@@ -81,8 +81,3 @@ Pour activer les graphiques de dépendance, utilisez l’option variable .
    bin/magento dev:profiler:disable
    ```
 
-<!-- link definitions -->
-
-[csvfile]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php
-[html]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php
-[profiler]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler.php

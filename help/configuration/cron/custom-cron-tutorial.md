@@ -2,16 +2,16 @@
 title: Configuration d’une tâche cron personnalisée et d’un groupe cron (tutoriel)
 description: Découvrez comment créer des tâches cron personnalisées à l’aide de ce tutoriel détaillé pour Adobe Commerce. Découvrez la configuration du module et la configuration du groupe cron.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
 
 # Configuration d’une tâche cron personnalisée
 
-Ce tutoriel détaillé explique comment créer une tâche cron personnalisée et éventuellement un groupe cron dans un exemple de module. Vous pouvez utiliser un module que vous avez déjà ou vous pouvez utiliser un exemple de module de notre référentiel de [`magento2-samples`][samples].
+Ce tutoriel détaillé explique comment créer une tâche cron personnalisée et éventuellement un groupe cron dans un exemple de module. Vous pouvez utiliser un module que vous avez déjà ou vous pouvez utiliser un exemple de module de notre référentiel de [`magento2-samples`](https://github.com/magento/magento2-samples).
 
 L’exécution de la tâche cron entraîne l’ajout d’une ligne au tableau `cron_schedule` avec le nom de la tâche cron, `custom_cron`.
 
@@ -21,7 +21,7 @@ Dans ce tutoriel, nous supposons que :
 
 - L’application Commerce est installée dans `/var/www/html/magento2`
 - Votre nom d’utilisateur et votre mot de passe de base de données Commerce sont tous deux `magento`
-- Vous effectuez toutes les actions en tant que [&#x200B; propriétaire du système de fichiers &#x200B;](../../installation/prerequisites/file-system/overview.md)
+- Vous effectuez toutes les actions en tant que [ propriétaire du système de fichiers ](../../installation/prerequisites/file-system/overview.md)
 
 ## Étape 1 : obtenir un exemple de module
 
@@ -33,13 +33,13 @@ Si vous disposez déjà d’un exemple de module, vous pouvez l’utiliser ; ign
 
 1. Connectez-vous à votre serveur Commerce en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md) ou passez à ce dernier.
 1. Accédez à un répertoire qui ne se trouve pas à la racine de votre application Commerce (par exemple, votre répertoire personnel).
-1. Clonez le référentiel [`magento2-samples`][samples].
+1. Clonez le référentiel [`magento2-samples`](https://github.com/magento/magento2-samples).
 
    ```bash
    git clone git@github.com:magento/magento2-samples.git
    ```
 
-   Si la commande échoue avec le `Permission denied (publickey).` d’erreur, vous devez [ajouter votre clé publique SSH à GitHub.com][git-ssh].
+   Si la commande échoue avec le `Permission denied (publickey).` d’erreur, vous devez [ajouter votre clé publique SSH à GitHub.com](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 1. Créez un répertoire dans lequel copier l’exemple de code :
 
@@ -303,7 +303,3 @@ Pour vérifier votre groupe cron personnalisé :
 
    ![Votre groupe cron personnalisé](../../assets/configuration/cron-group.png)
 
-<!-- link definitions -->
-
-[git-ssh]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-[samples]: https://github.com/magento/magento2-samples
