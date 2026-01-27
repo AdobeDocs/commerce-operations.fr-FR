@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: f08af2909959bf8fb14b279f904e91a90f4e3d44
+source-git-commit: a233f39557ef1cc4f27f3e4ce015de554941d676
 workflow-type: tm+mt
-source-wordcount: '29786'
+source-wordcount: '30379'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,30 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 >[!INFO]
 >
->Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=fr#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
+>Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
 
 >[!INFO]
 >
 >Pour plus d’informations sur les [!DNL quality patches] créées par la communauté pour Magento Open Source, consultez les [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.76 {#v1-1-76}
+
+* **ACSD-67091** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige l’erreur de taille maximale du jeu d’écriture pour assurer le nettoyage de l’index de produit des règles de catalogue en implémentant deux stratégies de suppression en fonction du volume de données.
+* **ACSD-67370** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.9) - Correction de plusieurs problèmes en raison desquels des prix incorrects étaient affichés pour les produits groupés sur PDP/PLP et la page du panier pour les magasins multidevises.
+* **ACSD-68410** (pour Adobe Commerce, B2B >=1.3.3 &lt;1.5.3) - Correction d’un problème en raison duquel la commande d’un devis négociable ajoute ou fusionne incorrectement des lignes de panier supplémentaires au devis. Les produits sont désormais correctement ajoutés au panier après avoir quitté la dernière étape de passage en caisse de devis négociable.
+* **ACSD-69086** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Corrige le problème en raison duquel la tâche cron ne parvient pas à effacer les tables de journal des modifications, provoquant ainsi des blocages du cluster Galera lors de la gestion de grandes quantités de données.
+* **ACSD-69115** (pour Adobe Commerce >=2.4.4 &lt;2.4.9) - Correction d’un problème en raison duquel les erreurs de panier n’étaient pas affichées pour l’utilisateur administrateur lors de la gestion du panier pour un client affecté à un site web autre que celui par défaut.
+* **ACSD-69129** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.7 || >=2.4.8 &lt;2.4.9) - Correction d’un problème en raison duquel la suppression du site web de base par défaut et l’utilisation du site web secondaire en tant que site web par défaut entraînaient une erreur lors de la tentative de mise à jour du prix de niveau du site web secondaire via l’API REST.
+* **ACSD-69203** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction d’un problème en raison duquel le widget Liste de produits renvoyait des résultats incorrects lorsque plusieurs catégories étaient répertoriées dans la condition de catégorie.
+* **ACSD-69261** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Correction d’un problème en raison duquel un coupon de règle de prix de panier configuré pour une utilisation unique par client a été réutilisé plusieurs fois en raison d’une gestion incorrecte de l’attribut `times_used` dans les scénarios d’annulation de facture partielle et de quantité restante.
+* **ACSD-69308** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Correction d’un problème où les règles de prix de catalogue ne s’appliquaient pas lorsque `special_price` était défini uniquement au niveau du site web (et non au niveau de « Toutes les vues de la boutique »). Après la correction, les règles de prix de catalogue s’appliquent correctement en vérifiant d’abord le magasin par défaut du site web.
+* **ACSD-69319** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.9) - Correction d’un problème en raison duquel les prix des bundles n’étaient pas correctement indexés lorsque les produits enfants étaient en stock sous des sources personnalisées.
+* **ACSD-69325** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.9) - Correction d’un problème en raison duquel la modification du dossier de SKU entraînait une rupture de stock du produit sur le storefront.
+* **ACSD-69331** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.9) - Correction d’un problème en raison duquel les créateurs de contenu dans la galerie multimédia ne pouvaient pas créer de dossiers avec uniquement l’autorisation `create_folder`. Après le correctif, ils peuvent créer des dossiers comme prévu.
+* **ACSD-69333** (pour Adobe Commerce >=2.4.7 &lt;2.4.9) - Correction d’un problème en raison duquel les modifications de SKU étaient autorisées pour les produits avec une mise à jour planifiée active. Après la correction, les modifications de SKU sont interdites pendant les mises à jour actives ; les enregistrements échouent avec une erreur claire et le champ SKU d’administration est désactivé. Cela évite les incohérences d’inventaire MSI dues aux modifications de SKU lors des restaurations intermédiaires.
+* **ACSD-69541** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Correction d’un problème en raison duquel la réduction de la quantité d’un produit dans l’administration à une quantité inférieure à celle qui existe déjà dans un panier rendait impossible la modification de la quantité de produit dans ce panier via GraphQL.
+* Versions mises à jour : **ACSD-46541**, **ACSD-53750**, **ACSD-66404**
+* Correctifs remplacés : **ACSD-66404**, **ACSD-68499**
 
 ## v1.1.75 {#v1-1-75}
 
