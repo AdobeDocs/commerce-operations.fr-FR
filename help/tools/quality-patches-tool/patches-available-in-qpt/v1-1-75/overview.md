@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: cb39f5a778ee8af49823f45704d0bb68a13fbf08
+source-git-commit: 9eb3461ef13e9d2572a50733e08f4c6d3af547e3
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ QPT v1.1.75 comprend les correctifs suivants :
 1. **ACSD-68289** : correction d’un problème en raison duquel la recherche en texte intégral renvoie désormais les produits correspondants si la condition de correspondance minimale est remplie collectivement pour tous les champs pouvant faire l’objet d’une recherche, plutôt que d’exiger que la condition soit remplie par un seul champ.
 1. **ACSD-68359** : corrige un problème en raison duquel la sélection d’un magasin lors du passage en caisse à l’aide de **[!UICONTROL Pick in Store]** n’échoue plus en raison de longues URL lorsque de nombreux produits se trouvent dans le panier. Auparavant, cela déclenchait une erreur 414 due à des URL trop longues générées lors d’une vente de magasin.
 1. **ACSD-68451** : corrige un problème lié à plusieurs sites web en raison duquel l’administrateur d’une société se connecte à un site web, crée une société non liée sur un autre site web, mais est lié par erreur à cette société non liée.
-1. **ACSD-68490** : corrige le problème en raison duquel le bouton **[!UICONTROL Add New Attribute]** est visible pour un utilisateur administrateur restreint lors de la création d’un produit configurable.
+1. **ACSD-68490** : bouton **[!UICONTROL Add New Attribute]** visible par l’administrateur restreint lors de la création du produit configurable.
 1. **ACSD-68517** : corrige une erreur de nouvel envoi de formulaire sur les pages Catalogue et Recherche catalogue.
 1. **ACSD-68573** : correction d’un problème en raison duquel les autorisations de catégorie n’étaient pas correctement appliquées aux éléments de la liste de souhaits du client. Après la correction, les éléments de liste de souhaits sont correctement affichés et paginés sur le web et dans GraphQL.
 1. **ACSD-68615** : corrige le problème en raison duquel l’interface de ligne de commande de compensation de réservation de stock affichait une exception si la combinaison traitée avait un ID de commande manquant.
