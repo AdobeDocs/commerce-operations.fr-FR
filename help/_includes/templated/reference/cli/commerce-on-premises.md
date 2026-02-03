@@ -1,5 +1,5 @@
 ---
-source-git-commit: 48dfdd81992a82bf984c3e7b0f30f8e5a69ee735
+source-git-commit: 937e883e74d3a0b32a25dbdf3db0347398ef6ba3
 workflow-type: tm+mt
 source-wordcount: '8232'
 ht-degree: 1%
@@ -24,9 +24,7 @@ Utilisez le guide [« Ajouter des commandes d’interface de ligne de commande �
 
 Vous pouvez appeler `bin/magento` commandes de l’interface de ligne de commande à l’aide de raccourcis au lieu du nom complet de la commande. Par exemple, vous pouvez appeler `bin/magento setup:upgrade` à l’aide de `bin/magento s:up`, `bin/magento s:upg`. Voir [syntaxe des raccourcis](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) pour comprendre comment utiliser des raccourcis avec n’importe quelle commande d’interface de ligne de commande.
 
-Cette documentation de référence est générée à partir du code source de l’application. Pour modifier la documentation, vous devez ouvrir
-une requête pull pour la commande correspondante dans le référentiel [codebase](https://github.com/magento) approprié. Voir
-[Coder les contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) pour plus d’informations.
+Cette documentation de référence est générée à partir du code source de l’application. Pour modifier la documentation, vous devez ouvrir une requête de tirage pour la commande correspondante dans le référentiel [codebase](https://github.com/magento) approprié. Pour plus d’informations, voir [Contributions du code](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ### Options globales
 
