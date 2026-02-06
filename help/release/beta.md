@@ -2,9 +2,9 @@
 title: Versions de Beta
 description: Découvrez les versions bêta d’Adobe Commerce et comment y participer.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 937e883e74d3a0b32a25dbdf3db0347398ef6ba3
+source-git-commit: c5d43d79679a1036f207313464f2a43bc197a3b5
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ L’accès anticipé aux fonctionnalités développées par Adobe permet aux cli
 
 Consultez les sections suivantes pour obtenir la liste des programmes bêta actifs.
 
+### Stockage de la base de données pour App Builder (Beta public)
+
+Le [stockage de base de données pour App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database) est un nouveau magasin de données géré de style document intégré à Adobe Developer App Builder qui offre à vos applications Commerce un stockage persistant et interrogeable pour les données JSON structurées. Tous les clients disposant d’une licence App Builder peuvent configurer cette fonctionnalité.
+
 ### Recherche sémantique : expériences d’achat plus intelligentes et adaptées au contexte (bêta privée)
 
 La recherche sémantique est une technologie de recherche de commerce électronique qui comprend le *sens* derrière la requête d’un acheteur, pas seulement les mots exacts. Contrairement à la recherche traditionnelle par mot-clé, qui échoue souvent lorsque les requêtes incluent des termes inconnus ou mal orthographiés, cette approche basée sur l’IA interprète l’intention à l’aide du traitement du langage naturel (NLP) et du contexte pour fournir des résultats plus pertinents.
@@ -43,9 +47,9 @@ Pour demander une invitation au programme bêta, envoyez un e-mail à [commerce-
 
 ### Service de correctifs de Cloud Automation (Private Beta)
 
-Le [service d’application de correctifs de Cloud Automation](../tools/caps-tool/intro.md) automatise le processus d’application de correctifs de sécurité isolés à vos environnements [Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/overview).
+Le [service d’application de correctifs de Cloud Automation](../tools/caps-tool/intro.md) automatise le processus d’application de correctifs de sécurité isolés à vos environnements [Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview).
 
-En octobre 2025, la version bêta du service de correctifs de Cloud Automation sera ajoutée au tableau de bord de l’outil [Analyse à l’échelle du site](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). Ce service prend en charge les administrateurs de projet Commerce grâce à un workflow d’application de correctifs simplifié qui inclut :
+En octobre 2025, la version bêta du service de correctifs de Cloud Automation sera ajoutée au tableau de bord de l’outil [Analyse à l’échelle du site](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). Ce service prend en charge les administrateurs de projet Commerce grâce à un workflow d’application de correctifs simplifié qui inclut :
 
 - Installation automatisée de correctifs
 - Restauration
@@ -60,7 +64,7 @@ La version bêta comprend les fonctionnalités suivantes :
 
 >[!NOTE]
 >
->Étant donné que le service d&#39;application de correctifs de Cloud Automation applique automatiquement des correctifs de sécurité isolés, vous devez disposer du rôle [Contributeur ou Administrateur de projet](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/user-access) pour l&#39;utiliser.
+>Étant donné que le service d&#39;application de correctifs de Cloud Automation applique automatiquement des correctifs de sécurité isolés, vous devez disposer du rôle [Contributeur ou Administrateur de projet](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) pour l&#39;utiliser.
 
 Pour participer à cette version bêta, remplissez et envoyez le formulaire d’inscription au [Service d’application de correctifs de Cloud Automation - Beta](https://forms.office.com/r/3Wfxj5nPdB).
 
@@ -84,7 +88,7 @@ Chaque version alpha et bêta d’Adobe Commerce Foundation comprend toutes les 
 - Améliorations de GraphQL
 - Correctifs de qualité générale
 - Contributions de la Communauté
-- Modifications requises pour prendre en charge la compatibilité avec les [services Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/home)
+- Modifications requises pour prendre en charge la compatibilité avec les [services Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### Convention et planning d’affectation des noms
 
@@ -106,7 +110,7 @@ Consultez le [calendrier des versions](schedule.md) pour obtenir la liste des da
 
 Les versions alpha et bêta d’Adobe Commerce sont distribuées de la même manière que toute autre version de correctif Adobe Commerce : en tant que métapaquets du compositeur sur `https://repo.magento.com`. Le code source est disponible sur [GitHub](https://github.com/magento/magento2).
 
-Voir [&#x200B; Démarrage rapide de l’installation du compositeur](../installation/composer.md) pour plus d’informations.
+Voir [ Démarrage rapide de l’installation du compositeur](../installation/composer.md) pour plus d’informations.
 
 #### Rapports sur les événements
 
