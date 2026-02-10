@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 291262109cacaae5b4a749e50d1f7c8fa910b538
+source-git-commit: ef05d55e98557cb02e7d2ffb3a5c54a36be666b8
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -26,5 +26,5 @@ QPT v1.1.73 comprend les correctifs suivants :
 1. **ACSD-68206** : Correction de l&#39;erreur lors de l&#39;utilisation du serveur GraphQL Application avec la fonction **[!UICONTROL Rate Limiting]** avec l&#39;extension PHP [!DNL Redis] installée.
 1. **ACSD-68391** : les autorisations liées aux catégories ne sont pas appliquées dans **[!UICONTROL Quick Order]** et **[!UICONTROL Requisition Lists]**.
 1. **ACSD-68356** : [!DNL GraphQL] requête de panier renvoie un montant de remise incorrect pour les devis virtuels.
-1. **ACSD-68400** : La quantité de carte cadeau virtuelle n&#39;est pas reflétée avec précision dans le **[!UICONTROL Inventory reservation table]**.
+1. **ACSD-68400** : La quantité de carte cadeau virtuelle n&#39;est pas correctement reflétée dans la table de réservation de stock.
 Utilisez le menu à gauche pour accéder à une page de correctif spécifique.
