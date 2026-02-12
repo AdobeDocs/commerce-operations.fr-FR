@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: e72c99bbb5e82cd2dc77e33b7d17dfe8955e945a
+source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,16 @@ ht-degree: 0%
 Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.69.
 
 QPT v1.1.69 comprend les correctifs suivants :
+
 1. **AC-15223** : la page Storefront affiche le contenu mis en cache après le changement de magasin.
 1. **ACP2E-3731** : les exportations de produits avec une visibilité *[!UICONTROL Catalog, Search]* incluent des enregistrements d’autres vues de magasin.
 1. **ACP2E-3767** : la dernière option de lot réapparaît après l’enregistrement d’un produit du lot.
 1. **ACP2E-3964** : produits enfants configurables avec vidéo non répertoriés via l’API REST.
 1. **ACP2E-3977** : **[!UICONTROL Cap Reward Points Balance At]** ne peut pas être laissé vide.
 1. **ACP2E-4050** : **[!UICONTROL Free Shipping]** non appliqué avec la récupération multi-adresses.
-1. **ACP2E-3977** : [!UICONTROL Cap Reward Points Balance At] champ ne peut pas être laissé vide.
-1. **ACP2E-4050** : les règles de prix du panier échouent en cas d’expédition multiple avec des produits groupés et une livraison gratuite.
 1. **ACSD-56226** : les requêtes de LECTURE renvoient des données obsolètes avec l’option `synchronous_replication` activée.
 1. **ACSD-57477** : le traitement des règles de vente ralentit les performances des requêtes liées au panier.
-1. **[ACSD-58108](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-58108-missing-join-table-name-causes-sql-errors-in-order-grid-custom-module-extension.md)** : l’absence du nom de la table de jointure entraîne des erreurs SQL dans l’extension du module personnalisé de grille de commande.
+1. **ACSD-58108** : l’absence du nom de la table de jointure entraîne des erreurs SQL dans l’extension du module personnalisé de grille de commande.
 1. **ACSD-65983** : une erreur se produit lors de la reconfiguration du devis de produit groupé dans Admin.
 1. **ACSD-66149** : le gestionnaire IPN renvoie 500 pour les types non pris en charge.
 1. **ACSD-66153** : la page renvoie une erreur 500 en raison d’une structure de mise en page incorrecte mise en cache.

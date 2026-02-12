@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 9dd2ea9464a8e0fb9e45fea44e17d2ded0193ba9
+source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -16,26 +16,21 @@ ht-degree: 0%
 Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.68.
 
 QPT v1.1.68 comprend les correctifs suivants :
+
 1. **ACSD-58131** L&#39;ancienne galerie de médias ne parvient pas à charger les images en raison d&#39;un fichier image de 0 octet.
 1. **ACSD-62146** : l’adresse de facturation sélectionnée disparaît de la page de paiement de la commande lorsque la recherche d’adresses est activée et que la valeur « Limite du nombre d’adresses client » est définie sur 1.
-1. **[ACSD-62415](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62415-adobe-commerce-backend-loads-categories-very-slowly.md)** : le serveur principal d’Adobe Commerce charge les catégories très lentement.
+1. **ACSD-62415** : le serveur principal d’Adobe Commerce charge les catégories très lentement.
 1. **ACSD-65938** : des e-mails de carte cadeau ont été envoyés même lorsque la création de la facture a échoué.
 1. **ACSD-66072** : les produits associés ne sont pas renvoyés via GraphQL sur la page Détails du produit en raison d’une erreur de serveur interne lors de la configuration de [!UICONTROL Related Products Rule].
 1. **ACSD-66082** : impossible de mettre à jour l’image d’échantillon d’un produit via l’importation du produit.
 1. **ACSD-66179** : L&#39;annulation d&#39;une facture avec le type de paiement « Not Capture » génère une page d&#39;erreur 404.
-1. **ACSD-66233** : les utilisateurs administrateurs n’ont pas pu ajouter de produits aux catégories, car la fenêtre contextuelle Ajouter un produit ne se charge pas.
+1. **ACSD-66233** : les utilisateurs administrateurs n’ont pas pu ajouter de produits aux catégories, car [!UICONTROL Add Product] fenêtre contextuelle ne se charge pas.
 1. **ACSD-66506** : une erreur de serveur principal se produit après la suppression et la réaffectation de produits de catalogue partagé.
-1. **ACSD-66865** : l’enregistrement des règles de prix de catalogue invalide les indexeurs et fournit une alternative à la réindexation des produits affectés uniquement.
-1. **ACSD-66233** : les administrateurs ne peuvent pas ajouter de produits en raison d’une fenêtre contextuelle de liste de produits qui ne répond pas.
-1. **ACSD-66506** : une erreur de serveur principal s’est produite lors de la suppression de produits précédemment affectés d’un catalogue partagé et de l’affectation de nouveaux produits.
 1. **ACSD-66865** : l’enregistrement d’un **[!UICONTROL Catalog Price Rule]** invalide les indexeurs et fournit une alternative à la réindexation des produits affectés uniquement.
 1. **ACSD-66889** : erreur lors de la réindexation de l’inventaire dans l’interface de ligne de commande.
-1. **ACSD-66963** : la mutation `estimateTotals` renvoie la valeur null pour les remises sur les produits virtuels.
+1. **ACSD-66963** : `estimateTotals` mutation renvoie *null* pour les remises lorsqu’un code de remise est appliqué à un panier avec des produits virtuels.
 1. **ACSD-66965** : L&#39;option Imprimer de la page Liste des demandes d&#39;approvisionnement provoque une erreur.
-1. **ACSD-67039** : les enregistrements du client n’ont pas été enregistrés en raison de la validation de l’attribut système rp_token.
-1. **ACSD-66963** : la mutation EstimateTotals renvoie la valeur null pour les remises lorsqu’un code de remise est appliqué à un panier avec des produits virtuels.
 1. **ACSD-66965** : **[!UICONTROL Print]** option sur **[!UICONTROL Requisition List]** page provoque une erreur.
 1. **ACSD-67039** : les enregistrements du client n’ont pas été enregistrés en raison de la validation de l’attribut système `rp_token`.
-
 
 Utilisez le menu à gauche pour accéder à une page de correctif spécifique.

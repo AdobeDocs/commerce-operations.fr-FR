@@ -4,7 +4,7 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: b5b80bfa-a52c-466b-b95c-23590e850aed
-source-git-commit: 8e7cec268cf4d0022cf5037f5effcaa8a13b55ca
+source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -16,6 +16,7 @@ ht-degree: 0%
 Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.66.
 
 QPT v1.1.66 comprend les correctifs suivants :
+
 1. **ACP2E-3918** : échec de passage en caisse pour les clients de l’entreprise qui utilisent le retrait en magasin.
 1. **ACP2E-3789** : fichiers multimédias dupliqués lors de la mise à jour du produit via l’API Web.
 1. **ACSD-65750** : la requête « itinéraire » de GraphQL a renvoyé des produits dans le désordre dans les types de contenu de produits Page Builder.

@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 43696165e24e39e25007b5864f8b0c3d0bcb92c2
+source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
@@ -16,20 +16,21 @@ ht-degree: 0%
 Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.72.
 
 QPT v1.1.72 comprend les correctifs suivants :
-1. **ACSD-68040** : la page de recherche front-end ralentit sur [!DNL MariaDB] 10.6 avec un historique volumineux.
-1. **ACSD-67941** : les requêtes GraphQL avec des noms de filtres inconnus entraînent des logs d&#39;exceptions PHP.
-1. **ACSD-68064** : entrées en double créées lors des mises à jour planifiées dans les environnements comportant des catégories profondément imbriquées.
+
 1. **ACSD-66807** : `report_viewed_product_index` tableau indique un nombre incorrect de pages vues de produits.
+1. **ACSD-67187** : les utilisateurs administrateurs limités à des sites web autres que ceux par défaut voient l’erreur * »*Veuillez créer au moins un catalogue public partagé pour continuer* et ne peuvent pas accéder au bouton **[!UICONTROL Add New Company]** sur la grille de l’entreprise.
 1. **ACSD-67383** : erreur lors de la connexion en tant que client avec deux comptes d’administrateur de société dans la même session.
+1. **ACSD-67424** : `updated_at` valeur de la réponse de l&#39;API `GET /carts/search` [!DNL REST] ne correspond pas à la valeur affichée dans le **[!UICONTROL Admin panel]** lors de l&#39;utilisation de devis négociables.
 1. **ACSD-67518** : la création de rapports avancée génère des lignes d’en-tête dupliquées lorsque le nombre de lignes dépasse la taille du lot.
 1. **ACSD-67639** : la création d&#39;un avoir échoue pour les produits groupés dont le **[!UICONTROL Dynamic Price]** est défini sur *Non*.
+1. **ACSD-67696** : les entrées `media_gallery` ne sont pas renvoyées dans le nœud de produit GraphQL du panier après un vidage du cache.
+1. **ACSD-67941** : les requêtes GraphQL avec des noms de filtres inconnus entraînent des logs d&#39;exceptions PHP.
 1. **ACSD-67946** : la mise à jour du panier affiche les bannières d’erreur en double.
-1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)** : les entrées `media_gallery` ne sont pas renvoyées dans le nœud de produit GraphQL du panier après un vidage du cache.
-1. **ACSD-67946** : les mises à jour du panier affichent les bannières d’erreur en double.
 1. **ACSD-68011** : SKU inexistantes affectées au catalogue partagé via l’API /V1/sharedCatalog/:id/assignProducts.
-1. **ACSD-68118** : `customerCart` requête [!DNL GraphQL] renvoie des valeurs d’attribut de produit incorrectes pour la vue de magasin.
+1. **ACSD-68040** : la page de recherche front-end ralentit sur [!DNL MariaDB] 10.6 avec un historique volumineux.
+1. **ACSD-68064** : entrées en double créées lors des mises à jour planifiées dans les environnements comportant des catégories profondément imbriquées.
 1. **ACSD-68092** : les options de produits groupés sont perdues après plusieurs enregistrements en raison d’une synchronisation incorrecte entre les mises à jour planifiées et les données de produits de base.
-1. **ACSD-67424** : `updated_at` valeur de la réponse de l&#39;API `GET /carts/search` [!DNL REST] ne correspond pas à la valeur affichée dans le **[!UICONTROL Admin panel]** lors de l&#39;utilisation de devis négociables.
-1. **ACSD-67187** : les utilisateurs administrateurs limités à des sites web autres que ceux par défaut voient l’erreur * »*Veuillez créer au moins un catalogue public partagé pour continuer* et ne peuvent pas accéder au bouton **[!UICONTROL Add New Company]** sur la grille de l’entreprise.
+1. **ACSD-68118** : `customerCart` requête [!DNL GraphQL] renvoie des valeurs d’attribut de produit incorrectes pour la vue de magasin.
+
 
 Utilisez le menu à gauche pour accéder à une page de correctif spécifique.

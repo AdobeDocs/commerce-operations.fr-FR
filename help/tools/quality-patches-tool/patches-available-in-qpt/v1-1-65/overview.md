@@ -5,7 +5,7 @@ feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 6cfe4f4c-cdb3-49b3-84d0-ad794dfcafc3
-source-git-commit: 9acccaadf718775430e858da3390e666633ecbd7
+source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
@@ -17,6 +17,7 @@ ht-degree: 0%
 Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.65.
 
 QPT v1.1.65 comprend les correctifs suivants :
+
 1. **ACP2E-3753** : les e-mails d’alerte de stock n’utilisent pas de modèles de thème spécifiques au magasin dans la configuration multi-magasin.
 1. **ACSD-64118** : les demandes d’enregistrement de produit simultanées pour un même produit entraînent une incohérence des données et des entrées en double.
 1. **ACSD-64813** : l’annulation de l’affectation de catégories dans le catalogue partagé B2B via l’API REST est lente.
