@@ -23,7 +23,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.75 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517">ACSD-68517 : corrige une erreur de nouvel envoi de formulaire sur les pages Catalogue et Recherche catalogue</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.75 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517">ACSD-68517 : corrige une erreur de nouvel envoi de formulaire sur les pages Catalogue et Recherche catalogue</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -53,7 +53,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8ee6404271170b19ff27a3ab64711061505494b3">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview">Présentation : Outil de correctifs de qualité (QPT) version 1.1.76</a>.</p>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview">Présentation : Outil de correctifs de qualité (QPT) version 1.1.76</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
