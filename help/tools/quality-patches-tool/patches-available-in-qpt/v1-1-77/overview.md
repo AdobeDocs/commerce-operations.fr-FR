@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: ba9d41179fe253634b9de3e3711c19b6fe797a69
+source-git-commit: cb5efec8e323dbe49fe38a4cf2977718b28c835f
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ QPT v1.1.77 comprend les correctifs suivants :
 1. **ACSD-69016** : Le prix spécial n&#39;est pas appliqué sur les sites web avec des fuseaux horaires différents.
 1. **ACSD-69020** : les produits configurables apparaissent dans [!UICONTROL Page Builder] carrousels lorsque les produits enfants correspondent aux filtres.
 1. **ACSD-69237** : `sales_*_async_insert` tâches cron ne traitent que 100 entrées par exécution.
-1. **ACSD-69311** : Calcul de taxe incorrect dans les avoirs après remboursements partiels des factures.
+1. **[ACSD-69311](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)** : corrige le calcul incorrect de la taxe dans les avoirs après remboursements partiels des factures.
 1. **ACSD-69351** : les soldes des cartes-cadeaux et les dates d&#39;expiration sont affichés sur des sites Web incorrects.
 1. **ACSD-69494** : les demandes de remboursement asynchrones avec `is_online` ne déclenchent pas de remboursements en ligne.
 
