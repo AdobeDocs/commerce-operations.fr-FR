@@ -31,7 +31,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c6d81e7aeb4e2b4d2d5a140e9bf7b8c8ba5f5deb">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.77 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494">ACSD-69494 : les demandes de remboursement asynchrones avec is_online ne déclenchent pas de remboursements en ligne</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.77 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494">ACSD-69494 : les demandes de remboursement asynchrones avec is_online ne déclenchent pas de remboursements en ligne</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -39,7 +39,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/29a5f90122336bde78ed00e778b43b7c56549eef">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.77 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537">ACSD-68537 : les performances de passage en caisse se dégradent avec de nombreux segments de clients</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.77 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537">ACSD-68537 : les performances de passage en caisse se dégradent avec de nombreux segments de clients</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
