@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f7205d2558f79798cf25c7c51326eae9fcfa8d19
+source-git-commit: 77e2401d76a95ff15ba47a3ee0e2c228b2ecd39f
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,8 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 
 QPT v1.1.77 comprend les correctifs suivants :
 
-1. **ACSD-63687** : des prix incorrects sont affichés en raison de problèmes de nettoyage du cache [!DNL Redis].
-1. **[ACSD-68341](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)** : plusieurs mises à jour des cookies `X‑Magento‑Vary` se produisent au chargement du PDP.
+1. **ACSD-63687** : correction d’un problème en raison duquel des prix incorrects s’affichent en raison de l’échec [!DNL Redis] nettoyage du cache.
+1. **ACSD-68341** : plusieurs mises à jour des cookies `X‑Magento‑Vary` se produisent au chargement du PDP.
 1. **ACSD-68537** : les performances de passage en caisse se dégradent avec de nombreux segments de clients.
 1. **ACSD-68664** : l’aperçu de la mise à jour planifiée présente des erreurs sur les domaines de magasin personnalisés.
 1. **ACSD-68759** : erreur de création de compte client avec des paramètres régionaux arabes lorsque la date de naissance s’affiche.
@@ -26,7 +26,7 @@ QPT v1.1.77 comprend les correctifs suivants :
 1. **ACSD-69016** : Le prix spécial n&#39;est pas appliqué sur les sites web avec des fuseaux horaires différents.
 1. **ACSD-69020** : les produits configurables apparaissent dans [!UICONTROL Page Builder] carrousels lorsque les produits enfants correspondent aux filtres.
 1. **ACSD-69237** : `sales_*_async_insert` tâches cron ne traitent que 100 entrées par exécution.
-1. **[ACSD-69311](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)** : corrige le calcul incorrect de la taxe dans les avoirs après remboursements partiels des factures.
+1. **ACSD-69311** : corrige le calcul incorrect de la taxe dans les avoirs après remboursements partiels des factures.
 1. **ACSD-69351** : les soldes des cartes-cadeaux et les dates d&#39;expiration sont affichés sur des sites Web incorrects.
 1. **[ACSD-69494](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)** : corrige les demandes de remboursement asynchrones avec `is_online` ne déclenchent pas de remboursements en ligne.
 
