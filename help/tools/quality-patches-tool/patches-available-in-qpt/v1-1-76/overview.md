@@ -4,7 +4,7 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 27356acfca4b9e640478010579b0f419749930d3
+source-git-commit: 65e615d2f679e88d51093a8ea28007dfe418d385
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 QPT v1.1.76 comprend les correctifs suivants :
 1. **ACSD-67091** : corrige l’erreur de taille maximale de l’ensemble d’écriture pour garantir le nettoyage de l’index de produit des règles de catalogue en implémentant deux stratégies de suppression en fonction du volume de données.
 1. **ACSD-67370** : corrige plusieurs problèmes en raison desquels des prix incorrects étaient affichés pour les produits groupés sur PDP/PLP et la page du panier pour les magasins multidevises.
-1. **ACSD-68410** : correction d’un problème en raison duquel la commande d’un devis négociable ajoute ou fusionne incorrectement des lignes de panier supplémentaires dans le devis. Les produits sont désormais correctement ajoutés au panier après avoir quitté la dernière étape de passage en caisse de devis négociable.
+1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)** : correction d’un problème en raison duquel la commande d’un devis négociable ajoute ou fusionne incorrectement des lignes de panier supplémentaires dans le devis. Les produits sont désormais correctement ajoutés au panier après avoir quitté la dernière étape de passage en caisse de devis négociable.
 1. **ACSD-69086** : corrige le problème en raison duquel la tâche cron ne parvient pas à effacer les tables de journal des modifications, provoquant des blocages de [!DNL Galera Cluster] lors de la gestion de grandes quantités de données.
 1. **ACSD-69115** : correction d’un problème en raison duquel les erreurs de panier n’étaient pas affichées pour l’utilisateur administrateur lors de la gestion du panier pour un client affecté à un site web autre que celui par défaut.
 1. **ACSD-69129** : correction d’un problème en raison duquel la suppression du site web de base par défaut et l’utilisation du site web secondaire en tant que site web par défaut entraînaient une erreur lors de la tentative de mise à jour du prix de niveau du site web secondaire via l’API [!DNL REST].
