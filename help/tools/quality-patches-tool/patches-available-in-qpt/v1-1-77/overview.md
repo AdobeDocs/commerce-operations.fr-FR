@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 0e76a5bbc2d44dc8c7d77cb764e9376e5c4aa69f
+source-git-commit: 7dd35627836160bf1e892ea920a21ddd107642ad
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ QPT v1.1.77 comprend les correctifs suivants :
 1. **ACSD-68759** : erreur de création de compte client avec des paramètres régionaux arabes lorsque la date de naissance s’affiche.
 1. **[ACSD-68892](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)** : corrige un comportement de mise en cache [!DNL Fastly] incohérent pour les pages pouvant être mises en cache.
 1. **ACSD-69016** : Le prix spécial n&#39;est pas appliqué sur les sites web avec des fuseaux horaires différents.
-1. **ACSD-69020** : les produits configurables apparaissent dans [!UICONTROL Page Builder] carrousels lorsque les produits enfants correspondent aux filtres.
+1. **[ACSD-69020](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)** : correction d’un problème en raison duquel des produits configurables apparaissent dans [!DNL Page Builder] carrousels de produits lorsque les produits enfants correspondent aux conditions de filtrage.
 1. **ACSD-69237** : `sales_*_async_insert` tâches cron ne traitent que 100 entrées par exécution.
 1. **ACSD-69311** : corrige le calcul incorrect de la taxe dans les avoirs après remboursements partiels des factures.
 1. **ACSD-69351** : les soldes des cartes-cadeaux et les dates d&#39;expiration sont affichés sur des sites Web incorrects.
