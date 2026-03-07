@@ -23,7 +23,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.76 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308">ACSD-69308 : les règles de prix de catalogue ne s’appliquaient pas lorsque <code class="language-plaintext highlighter-rouge">special_price</code> était défini uniquement au niveau du site web (et non au niveau de « Toutes les vues de la boutique »). Après la correction, les règles de prix de catalogue s’appliquent correctement en vérifiant d’abord le magasin par défaut du site web</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.76 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308">ACSD-69308 : les règles de prix de catalogue ne s’appliquaient pas lorsque <code class="language-plaintext highlighter-rouge">special_price</code> était défini uniquement au niveau du site web (et non au niveau de « Toutes les vues de la boutique »). Après la correction, les règles de prix de catalogue s’appliquent correctement en vérifiant d’abord le magasin par défaut du site web</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -31,7 +31,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/db07a5d6f991ff36536a4365ee88fa25062dbe43">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.76 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541">ACSD-69541 : la réduction de la quantité d’un produit dans l’administration à une quantité inférieure à celle qui existe déjà dans un panier a rendu impossible la modification de la quantité de produit dans ce panier via GraphQL</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.76 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541">ACSD-69541 : la réduction de la quantité d’un produit dans l’administration à une quantité inférieure à celle qui existe déjà dans un panier a rendu impossible la modification de la quantité de produit dans ce panier via GraphQL</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -39,7 +39,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b2b801b88aee7fc6c275be3fb32a2e75bbe6f20d">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.77 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020">ACSD-69020 : les produits configurables apparaissent dans les carrousels de Page Builder lorsque les produits enfants correspondent aux filtres</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.77 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020">ACSD-69020 : les produits configurables apparaissent dans les carrousels de Page Builder lorsque les produits enfants correspondent aux filtres</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
