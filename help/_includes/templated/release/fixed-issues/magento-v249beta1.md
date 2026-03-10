@@ -61,7 +61,7 @@ Désormais, les API valident correctement les entrées et renvoient une erreur 4
 
 _AC-6419 - [Problème GitHub](https://github.com/magento/magento2/issues/35934) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Erreur de serveur interne dans le point d’entrée de l’API `/V1/order/{orderId}/ship`
+#### Erreur de serveur interne dans le point d’entrée de l’API `/V1/order/&lbrace;orderId&rbrace;/ship`
 
 Le système corrige désormais l’erreur de serveur interne dans `/V1/order/{orderId}/ship` point d’entrée de l’API et renvoie une erreur 400, car la requête est incorrecte.
 
@@ -2168,7 +2168,7 @@ _AC-8949 - [Contribution du code GitHub](https://github.com/magento/magento2/com
 
 #### La réponse GraphQL pour l&#39;emplacement de commande n&#39;inclut pas le message d&#39;exception
 
-Annulation de la modification précédente qui renvoyait des erreurs dans un format différent. Désormais, les erreurs potentielles sont renvoyées de manière cohérente, sans interrompre le schéma GraphQL. Ceci doit être ajouté en tant que BIC connu, approuvé par PM ici : https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
+Annulation de la modification précédente qui renvoyait des erreurs dans un format différent. Désormais, les erreurs potentielles sont renvoyées de manière cohérente, sans interrompre le schéma GraphQL. Ceci doit être ajouté en tant que BIC connu, approuvé par PM ici : https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
 
 _ACP2E-3399 - [contribution du code GitHub](https://github.com/magento/magento2/commit/9608ca21)_
 
