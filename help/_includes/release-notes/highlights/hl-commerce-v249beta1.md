@@ -1,7 +1,7 @@
 ---
-source-git-commit: c699c3db054dbfb6d43ad18ced4d4d860e2c9db5
+source-git-commit: fd421e8c2455a2b45d3f3cc93573d2a609e4936d
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2408'
 ht-degree: 0%
 
 ---
@@ -137,12 +137,6 @@ Adobe Commerce 2.4.9-beta1 prend entièrement en charge Valkey 8.x en tant que s
 
 _AC-14103, AC-14604_
 
-#### Mise à jour de la version Nginx de 1.26 à 1.28
-
-La version de Nginx utilisée dans les environnements de développement et de test dans toutes les versions actuellement prises en charge d’Adobe Commerce est mise à jour vers la version 1.28, conformément à la dernière version stable de Nginx. Les tests au niveau des relations publiques s’exécutent désormais sur Nginx 1.28, ce qui confirme la compatibilité et la prise en charge complètes de toutes les versions d’Adobe Commerce.
-
-_AC-14104_
-
 #### La prise en charge d’Artemis Apache ActiveMQ remplace RabbitMQ
 
 Ajout de la prise en charge d’Apache ActiveMQ Artemis en tant qu’alternative stratégique à RabbitMQ, en raison des risques de fin de prise en charge associés à RabbitMQ 4. ActiveMQ Artemis est désormais entièrement pris en charge sur les lignes de version 2.4.6 à 2.4.9-bêta1 de Commerce, y compris Adobe Commerce Cloud avec AWS ActiveMQ pour les déploiements natifs dans le cloud, et prend en charge la configuration STOMP pour les consommateurs et les éditeurs de file d’attente. Les installations existantes de RabbitMQ 4 restent compatibles pour les commerçants qui préfèrent continuer à utiliser leur service de file d&#39;attente de messages actuel.
@@ -162,12 +156,6 @@ _AC-15615_
 À compter d’Adobe Commerce 2.4.9-beta1, PHP 8.2 n’est plus pris en charge. La plateforme cible désormais PHP 8.3 et versions ultérieures, avec le code de base, les dépendances et les outils mis à jour pour fonctionner de manière propre et fiable sur PHP 8.4 et 8.5.
 
 _AC-15758_
-
-#### Prise en charge étendue de la version 2.x du compositeur
-
-Auparavant, la prise en charge des versions du compositeur était limitée à la version 2.2.x. Adobe Commerce 2.4.9-beta1 étend cette prise en charge pour inclure Composer 2.4.x et les versions ultérieures, ce qui élargit la compatibilité pour les environnements de développement et de déploiement.
-
-_AC-13792 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/19844aa0)_
 
 #### Compatibilité du compositeur 2.9 vérifiée
 
@@ -276,12 +264,6 @@ _AC-15461_
   _AC-14420 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/98b2848a)_
 
 ### Sécurité
-
-#### Renforcement complet du contrôle d’accès multisite
-
-Cette mise à jour offre un renforcement complet des listes de contrôle d’accès multisite (ACL) dans l’administration Adobe Commerce, en résolvant les problèmes d’autorisation connus et inconnus précédemment dans la configuration du contrôle d’accès multisite. Les utilisateurs administrateurs ayant accès à des sites web ou à des magasins spécifiques ne peuvent plus afficher ni modifier les données appartenant à d’autres sites web ou magasins dans un déploiement multisite.
-
-_AC-11899_
 
 #### Validation CAPTCHA désormais appliquée pour les API REST et GraphQL
 

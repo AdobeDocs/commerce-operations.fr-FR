@@ -1,7 +1,7 @@
 ---
-source-git-commit: 56974b4ada65c21ce1303e4b93bd8acb9fe41b28
+source-git-commit: 65a9bd667d434f1deae69798696f66998e6024a0
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -26,12 +26,6 @@ _ACP2E-4358 - [contribution du code GitHub](https://github.com/magento/magento2/
 Dans le cadre du processus d&#39;examen continu de la sécurité, nous avons évalué la dernière version majeure du cadre JWT afin d&#39;assurer la compatibilité future et de maintenir des normes de sécurité solides. Les fonctionnalités existantes de cette version ne sont pas affectées.
 
 _AC-13209 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/2bac8114) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/09b36ebb) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/33b81f28)_
-
-#### [Partie 2] - Mettez à jour toutes les dépendances de bibliothèque js et npm avec la dernière version disponible.
-
-la prise en charge de la version du compositeur ne dépassait que la version 2.2.x du compositeur. Désormais, la prise en charge s’étend également à la version 2.4.x.
-
-_AC-13792 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/19844aa0)_
 
 #### Remplacez carlos-mg89/oauth par PHP Native Functions
 
