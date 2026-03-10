@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 7dd35627836160bf1e892ea920a21ddd107642ad
+source-git-commit: 5ad8f9ce930ca8484c355561f8bfa2f19dba3e9c
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,9 @@ QPT v1.1.77 comprend les correctifs suivants :
 1. **ACSD-69016** : Le prix spécial n&#39;est pas appliqué sur les sites web avec des fuseaux horaires différents.
 1. **[ACSD-69020](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)** : correction d’un problème en raison duquel des produits configurables apparaissent dans [!DNL Page Builder] carrousels de produits lorsque les produits enfants correspondent aux conditions de filtrage.
 1. **ACSD-69237** : `sales_*_async_insert` tâches cron ne traitent que 100 entrées par exécution.
+1. **ACSD-69351** : corrige le problème d’affichage des soldes des cartes-cadeaux et des dates d’expiration sur des sites web incorrects.
 1. **ACSD-69311** : corrige le calcul incorrect de la taxe dans les avoirs après remboursements partiels des factures.
-1. **ACSD-69351** : les soldes des cartes-cadeaux et les dates d&#39;expiration sont affichés sur des sites Web incorrects.
+1. **ACSD-69494** : corrige les demandes de remboursement asynchrones avec `is_online` ne déclenchent pas de remboursements en ligne.
 1. **[ACSD-69494](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)** : corrige les demandes de remboursement asynchrones avec `is_online` ne déclenchent pas de remboursements en ligne.
 
 Utilisez le menu à gauche pour accéder à une page de correctif spécifique.
