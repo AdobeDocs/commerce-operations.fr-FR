@@ -4,7 +4,7 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 535934d92c0bd8a0d029c2c9a6c06be161db266f
+source-git-commit: f56050886f28692286c42102222dfb580e52aef1
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
@@ -16,8 +16,8 @@ ht-degree: 0%
 Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.76.
 
 QPT v1.1.76 comprend les correctifs suivants :
+1. **[ACSD-67370](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67370.md)** : corrige plusieurs problèmes en raison desquels des prix incorrects étaient affichés pour les produits groupés sur PDP/PLP et la page du panier pour les magasins multidevises.
 1. **[ACSD-67091](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67091.md)** : corrige l’erreur de taille maximale de l’ensemble d’écriture pour garantir le nettoyage de l’index de produit des règles de catalogue en implémentant deux stratégies de suppression en fonction du volume de données.
-1. **ACSD-67370** : corrige plusieurs problèmes en raison desquels des prix incorrects étaient affichés pour les produits groupés sur PDP/PLP et la page du panier pour les magasins multidevises.
 1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)** : correction d’un problème en raison duquel la commande d’un devis négociable ajoute ou fusionne incorrectement des lignes de panier supplémentaires dans le devis. Les produits sont désormais correctement ajoutés au panier après avoir quitté la dernière étape de passage en caisse de devis négociable.
 1. **ACSD-69086** : corrige le problème en raison duquel la tâche cron ne parvient pas à effacer les tables de journal des modifications, provoquant des blocages de [!DNL Galera Cluster] lors de la gestion de grandes quantités de données.
 1. **ACSD-69115** : correction d’un problème en raison duquel les erreurs de panier n’étaient pas affichées pour l’utilisateur administrateur lors de la gestion du panier pour un client affecté à un site web autre que celui par défaut.
