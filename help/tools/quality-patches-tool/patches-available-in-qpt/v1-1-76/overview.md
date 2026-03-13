@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f56050886f28692286c42102222dfb580e52aef1
+source-git-commit: d852c8dc40d061b878daf25aac0c7cf57628954c
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,7 @@ QPT v1.1.76 comprend les correctifs suivants :
 1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)** : correction d’un problème en raison duquel la commande d’un devis négociable ajoute ou fusionne incorrectement des lignes de panier supplémentaires dans le devis. Les produits sont désormais correctement ajoutés au panier après avoir quitté la dernière étape de passage en caisse de devis négociable.
 1. **ACSD-69086** : corrige le problème en raison duquel la tâche cron ne parvient pas à effacer les tables de journal des modifications, provoquant des blocages de [!DNL Galera Cluster] lors de la gestion de grandes quantités de données.
 1. **ACSD-69115** : correction d’un problème en raison duquel les erreurs de panier n’étaient pas affichées pour l’utilisateur administrateur lors de la gestion du panier pour un client affecté à un site web autre que celui par défaut.
+1. **[ACSD-69203](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69203.md)** : correction d’un problème en raison duquel le widget **[!UICONTROL Products List]** renvoie des résultats incorrects lorsque plusieurs catégories étaient répertoriées dans la condition de catégorie.
 1. **[ACSD-69129](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)** : correction d’un problème en raison duquel la suppression du site web de base par défaut et l’utilisation du site web secondaire en tant que site web par défaut entraînaient une erreur lors de la tentative de mise à jour du prix de niveau du site web secondaire via l’API [!DNL REST].
 1. **ACSD-69203** : correction d’un problème en raison duquel le widget **[!UICONTROL Products List]** renvoie des résultats incorrects lorsque plusieurs catégories étaient répertoriées dans la condition de catégorie.
 1. **[ACSD-69261](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261.md)** : correction d’un problème en raison duquel un coupon de règle de prix de panier configuré pour une utilisation unique par client a été réutilisé plusieurs fois en raison d’une gestion incorrecte de l’attribut `times_used` dans les scénarios d’annulation de facture partielle et de quantité restante.
