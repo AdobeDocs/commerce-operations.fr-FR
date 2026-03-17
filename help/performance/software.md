@@ -3,9 +3,9 @@ title: Recommandations logicielles
 description: Découvrez la configuration logicielle requise et les recommandations relatives à Adobe Commerce. Découvrez les versions prises en charge et les bonnes pratiques de configuration pour la production.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 Nous avons besoin des logiciels suivants pour les instances de production de [!DNL Commerce] :
 
 * [PHP](../installation/system-requirements.md)
-* Nginx et [PHP-FPM](https://php-fpm.org/)
+* Nginx et [PHP-FPM](https://www.php.net/manual/en/install.fpm.php)
 * [[!DNL MySQL]](../installation/prerequisites/database/mysql.md)
 * [[!DNL Elasticsearch] ou OpenSearch](../installation/prerequisites/search-engine/overview.md)
 
@@ -47,7 +47,7 @@ net.core.somaxconn = 1024
 
 ## PHP
 
-Magento prend entièrement en charge PHP 7.3 et 7.4. Il y a plusieurs facteurs à prendre en compte lors de la configuration de PHP pour obtenir une vitesse et une efficacité maximales sur le traitement des requêtes.
+Utilisez une version de PHP prise en charge par la version d’Adobe Commerce que vous installez, comme indiqué dans la [configuration requise](../installation/system-requirements.md). Il y a plusieurs facteurs à prendre en compte lors de la configuration de PHP pour obtenir une vitesse et une efficacité maximales sur le traitement des requêtes.
 
 ### Extensions PHP
 
@@ -141,7 +141,7 @@ realpath_cache_ttl=7200
 
 #### ByteCode
 
-Pour obtenir une vitesse maximale hors [!DNL Commerce] sur PHP 7, vous devez activer le module OpCache et le configurer correctement. Ces paramètres sont recommandés pour le module :
+Pour obtenir une vitesse maximale sur [!DNL Commerce], vous devez activer le module OpCache et le configurer correctement. Ces paramètres sont recommandés pour le module :
 
 ```text
 opcache.memory_consumption=512
@@ -182,17 +182,16 @@ Magento prend entièrement en charge les serveurs web Nginx et Apache. [!DNL Com
 
 Vous devez également configurer le nombre de threads pour le traitement des demandes d’entrée, comme indiqué ci-dessous :
 
-| Serveur Web | Nom de l’attribut | Lieu | Informations connexes |
+| Serveur Web | Nom de l’attribut | Emplacement | Informations connexes |
 |--- | --- | --- | ---|
-| Nginx | `worker_connections` | `/etc/nginx/nginx.conf` (Debian) | [Réglage de NGINX pour des performances optimales](https://www.nginx.com/blog/tuning-nginx/) |
-| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Réglage des performances Apache](https://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
+| Nginx | `worker_connections` | `/etc/nginx/nginx.conf` (Debian) | [Réglage de NGINX pour des performances optimales](https://www.f5.com/company/blog/nginx/tuning-nginx) |
 | Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Directives courantes Apache MPM](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
 
 ## [!DNL MySQL]
 
 Ce document ne fournit pas d’instructions de réglage [!DNL MySQL] détaillées, car chaque magasin et chaque environnement sont différents. Nous pouvons toutefois formuler quelques recommandations générales.
 
-De nombreuses améliorations ont été apportées à [!DNL MySQL] 5.7.9. Nous sommes convaincus que [!DNL MySQL] est distribué avec de bons paramètres par défaut. Les paramètres les plus critiques sont les suivants :
+Les versions [!DNL MySQL] récentes comportent de nombreuses améliorations des performances et [!DNL MySQL] est généralement distribué avec de bons paramètres par défaut. Les paramètres les plus critiques sont les suivants :
 
 | Paramètre | Par défaut | Description |
 |--- | --- | ---|
@@ -207,7 +206,7 @@ Magento recommande vivement d’utiliser [!DNL Varnish] comme serveur de cache d
 
 Installez [!DNL Varnish] sur un serveur distinct en amont du niveau web. Il doit accepter toutes les requêtes entrantes et fournir des copies de page mises en cache. Pour permettre aux [!DNL Varnish] de travailler efficacement avec des pages sécurisées, un proxy de terminaison SSL peut être placé devant [!DNL Varnish]. Nginx peut être utilisé à cet effet.
 
-[!DNL Commerce] distribue un exemple de fichier de configuration pour [!DNL Varnish] (versions 4 et 5) qui contient tous les paramètres recommandés pour les performances. Parmi celles-ci, les plus critiques en termes de performances sont les suivantes :
+[!DNL Commerce] distribue des exemples de fichiers de configuration pour les versions de [!DNL Varnish] prises en charge qui contiennent tous les paramètres recommandés en termes de performances. Parmi celles-ci, les plus critiques en termes de performances sont les suivantes :
 
 * Le **contrôle d’intégrité du serveur principal** interroge le serveur [!DNL Commerce] pour déterminer s’il répond dans les délais impartis.
 * Le **mode de grâce** vous permet de demander au [!DNL Varnish] de conserver un objet en cache au-delà de sa période de durée de vie (TTL) et de diffuser ce contenu obsolète si [!DNL Commerce] n’est pas intègre ou si du contenu récent n’a pas encore été récupéré.
@@ -221,7 +220,7 @@ En règle générale, nous vous recommandons de stocker vos ressources (images, 
 
 Si votre site ne nécessite pas le déploiement d’un grand nombre de paramètres régionaux et que vos serveurs se trouvent dans la même région que la majorité de vos clients, vous pouvez réaliser des gains de performances significatifs à moindre coût en stockant vos ressources dans [!DNL Varnish] au lieu d’utiliser un réseau CDN.
 
-Pour stocker vos ressources dans [!DNL Varnish], ajoutez les entrées VCL suivantes dans votre fichier `default.vcl` généré par [!DNL Commerce] pour [!DNL Varnish] 5.
+Pour stocker vos ressources dans [!DNL Varnish], ajoutez les entrées VCL suivantes dans votre fichier `default.vcl` généré par [!DNL Commerce].
 
 À la fin de l’instruction `if` pour les requêtes PURGE dans la sous-routine `vcl_recv`, ajoutez :
 

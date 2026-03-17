@@ -2,9 +2,9 @@
 title: Conditions préalables à l’installation sur site
 description: En savoir plus sur les dépendances logicielles requises pour les installations sur site d’Adobe Commerce.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: db2256f5327897a4376a0d038ce697e8f93235af
+source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '350'
 ht-degree: 1%
 
 ---
@@ -82,12 +82,12 @@ Par exemple :
 mysql -u magento -p
 ```
 
-Le résultat suivant indique la version que vous exécutez.
+Dans la sortie de commande, la ligne de `Server version` indique la version que vous exécutez. Vérifiez qu’elle correspond à une version prise en charge pour la version d’Adobe Commerce que vous installez.
 
 ```
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 871
-Server version: 5.7.9 MySQL Community Server (GPL)
+Server version: <supported MySQL version> MySQL Community Server (GPL)
 
 Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
 

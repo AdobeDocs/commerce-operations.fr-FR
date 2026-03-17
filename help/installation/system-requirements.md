@@ -2,9 +2,9 @@
 title: Configuration requise
 description: Découvrez les dépendances logicielles et la configuration requise pour Adobe Commerce. Découvrez les configurations testées pour garantir la compatibilité avec votre environnement de déploiement.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: e375815800b9a4d0041012c78e0a24c9fe5c860b
+source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Il existe quelques différences dans les dépendances de Commerce on Cloud. La p
 
 >[!NOTE]
 >
->La configuration requise s’applique uniquement aux versions publiées d’Adobe Commerce. Beta ou les versions à accès anticipé ne sont pas inclus. Voir les [notes de mise à jour](../release/release-notes/overview.md) pour en savoir plus sur les dernières versions d’Adobe Commerce.
+>Les tableaux de la configuration requise identifient les versions Adobe Commerce spécifiques couvertes, y compris les versions bêta ou à accès anticipé explicitement mentionnées. Voir les [notes de mise à jour](../release/release-notes/overview.md) pour en savoir plus sur les dernières versions publiées d’Adobe Commerce.
 
 Les tableaux suivants présentent les versions des dépendances de logiciels tiers qu’Adobe a testées avec des versions Adobe Commerce spécifiques.
 
@@ -48,7 +48,7 @@ opensearch:
     disk: 1024
 ```
 
-Voir [Configuration des services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html?lang=fr) dans le guide _Commerce sur les infrastructures cloud_.
+Voir [Configuration des services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) dans le guide *Commerce sur les infrastructures cloud*.
 
 >[!TAB Commerce local]
 
@@ -60,13 +60,16 @@ Voir [Configuration des services](https://experienceleague.adobe.com/docs/commer
 
 Il existe des paramètres de configuration PHP spécifiques, comme le paramètre `memory_limit`, qui peuvent vous aider à éviter les problèmes courants liés à l&#39;utilisation d&#39;Adobe Commerce. Voir [Paramètres PHP requis](prerequisites/php-settings.md).
 
-Pour obtenir des conseils sur la configuration du cloud, consultez [Paramètres PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=fr) dans le guide _Commerce sur les infrastructures cloud_.
+Pour obtenir des conseils sur la configuration du cloud, consultez [Paramètres PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) dans le guide *Commerce sur les infrastructures cloud*.
 
 ### PHP OPcache
 
-Il est recommandé de vérifier que [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php) est activé pour des raisons de performances. Le cache OP est activé dans de nombreuses distributions PHP. L’extension `opcache` est installée par défaut dans Commerce sur les infrastructures cloud.
+Adobe vous recommande de vérifier que [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) est activé pour des raisons de performances. Le cache OP est activé dans de nombreuses distributions PHP.
+- **Pour les déploiements d’Adobe Commerce sur les infrastructures cloud**, l’extension `opcache` est installée par défaut.
+- **Pour les déploiements sur site d’Adobe Commerce :**
+   - [Vérifiez que l&#39;extension PHP OPcache est installée](prerequisites/php-settings.md#verify-php-is-installed).
+   - Pour obtenir des conseils spécifiques sur les paramètres de performance, consultez les recommandations logicielles pour [les paramètres PHP](../performance/software.md#php-settings) dans le guide *Bonnes pratiques de performance*.
 
-Pour une installation sur site, vérifiez que PHP OPcache est installé, voir [Paramètres PHP](prerequisites/php-settings.md). Ou pour obtenir des conseils spécifiques sur les paramètres de performance, consultez les recommandations logicielles pour [les paramètres PHP](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html?lang=fr#php-settings) dans le guide _Bonnes pratiques de performance_.
 
 Si vous devez installer OPcache séparément, consultez la documentation [PHP OPcache](https://www.php.net/manual/en/opcache.setup.php).
 
@@ -84,7 +87,7 @@ Les [instructions d’installation de PHP](prerequisites/php-settings.md) inclue
 
 >[!TIP]
 >
->Pour les extensions PHP dans l’infrastructure cloud, voir [Activer les extensions PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=fr#enable-extensions) dans le guide _Commerce sur l’infrastructure cloud_.
+>Pour les extensions PHP dans l’infrastructure cloud, voir [Activer les extensions PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) dans le guide _Commerce sur l’infrastructure cloud_.
 
 >[!BEGINTABS]
 
@@ -123,11 +126,11 @@ Storefront et Admin :
 
 ### Serveur de messagerie
 
-Mail Transfer Agent (MTA) ou un serveur SMTP. L’infrastructure de Commerce sur le cloud utilise le service de messagerie [SendGrid](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html?lang=fr).
+Mail Transfer Agent (MTA) ou un serveur SMTP. L’infrastructure de Commerce sur le cloud utilise le service de messagerie [SendGrid](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/sendgrid).
 
 ### Mémoire
 
-La mise à niveau des applications et des extensions que vous obtenez du Commerce Marketplace et d’autres sources peut nécessiter jusqu’à 2 Go de RAM. Si vous utilisez un système de moins de 2 Go de RAM, créez un [fichier d’échange](https://support.magento.com/hc/en-us/articles/360032980432) ; dans le cas contraire, la mise à niveau risque d’échouer.
+La mise à niveau des applications et des extensions que vous obtenez du Commerce Marketplace et d’autres sources peut nécessiter jusqu’à 2 Go de RAM. Si vous utilisez un système avec moins de 2 Go de RAM, créez un fichier [swap](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade). Sinon, la mise à niveau risque d’échouer.
 
 ### Systèmes d&#39;exploitation (Linux x86-64)
 
@@ -138,14 +141,14 @@ Microsoft Windows et macOS ne sont **pas pris** charge.
 Adobe Commerce requiert les outils système suivants pour certaines opérations :
 
 - [[!DNL bash]](https://www.gnu.org/software/bash/)
-- [[!DNL gzip]](https://www.gzip.org/)
-- [[!DNL lsof]](https://linux.die.net/man/8/lsof)
+- [[!DNL gzip]](https://www.gnu.org/software/gzip/manual/gzip.html)
+- [[!DNL lsof]](https://lsof.readthedocs.io/en/stable/manpage/)
 - [[!DNL mysql]](https://www.mysql.com/)
-- [[!DNL mysqldump]](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)
-- [[!DNL nice]](https://linux.die.net/man/1/nice)
+- [[!DNL mysqldump]](https://dev.mysql.com/doc/refman/8.4/en/mysqldump.html)
+- [[!DNL nice]](https://www.gnu.org/s/coreutils/manual/html_node/nice-invocation.html)
 - [[!DNL php]](https://www.php.net/)
 - [[!DNL sed]](https://www.gnu.org/software/sed/manual/sed.html)
-- [[!DNL tar]](https://linux.die.net/man/1/tar)
+- [[!DNL tar]](https://www.gnu.org/software/tar/manual/tar.html)
 
 ### SSL
 
@@ -153,17 +156,17 @@ Adobe Commerce requiert les outils système suivants pour certaines opérations 
 - Les certificats SSL auto-signés ne sont pas pris en charge.
 - Exigence de TLS (Transport Layer Security) - PayPal et `repo.magento.com` nécessitent tous deux TLS 1.2 ou une version ultérieure.
 
-Pour Commerce sur les infrastructures cloud, consultez la section [Configuration Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=fr) dans le guide _Commerce sur les infrastructures cloud_.
+Pour Commerce sur les infrastructures cloud, consultez la section [Configuration Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration) dans le guide *Commerce sur les infrastructures cloud*.
 
 ### Xdebug
 
 Pour Adobe Commerce, utilisez [php_xdebug 2.5.x](https://xdebug.org/download) ou une version ultérieure (environnements de développement uniquement ; peut avoir un effet négatif sur les performances).
 
-Pour Adobe Commerce sur le cloud, consultez [Configuration de Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html?lang=fr) dans le guide _Commerce sur les infrastructures cloud_.
+Pour Adobe Commerce sur le cloud, consultez [Configuration de Xdebug](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/debug) dans le guide *Commerce sur les infrastructures cloud*.
 
 >[!NOTE]
 >
->Il existe un problème connu avec `xdebug` qui peut affecter les installations d’Adobe Commerce ou l’accès au storefront ou à l’administrateur après l’installation. Voir [Problème connu affectant `xdebug` installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html?lang=fr) dans la base de connaissances de la prise en charge de _Commerce_.
+>Il existe un problème connu avec `xdebug` qui peut affecter les installations d’Adobe Commerce ou l’accès au storefront ou à l’administrateur après l’installation. Voir [Problème connu affectant `xdebug` installation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) dans la base de connaissances de la prise en charge de _Commerce_.
 
 
 <!-- Last updated from includes: 2026-03-10 20:36:29 -->
