@@ -19,7 +19,7 @@ Cette rubrique explique comment définir les options PHP requises.
 >
 >Les versions PHP prises en charge varient selon la version d’Adobe Commerce. Consultez [Configuration requise](../system-requirements.md) pour connaître les versions PHP exactes prises en charge par la version que vous installez.
 
-Pour obtenir des conseils sur la configuration du cloud, consultez [Paramètres PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) dans le guide _Commerce sur les infrastructures cloud_.
+Pour obtenir des conseils sur la configuration du cloud, consultez [Paramètres PHP](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/php-settings) dans le guide _Commerce sur les infrastructures cloud_.
 
 ## Contrôle de processus PHP
 
@@ -206,9 +206,9 @@ Pour définir `opcache.ini` options :
 Consultez les articles suivants de l’assistance Adobe Commerce pour obtenir de l’aide sur la résolution des problèmes PHP :
 
 - [Erreur de version PHP ou erreur 404 lors de l’accès à Adobe Commerce dans un navigateur](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [Erreurs de paramètres PHP](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
-- [L&#39;extension PHP mcrypt n&#39;est pas installée correctement](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly)
-- [Problèmes de vérification du niveau de préparation pour les versions PHP](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
-- [Erreurs et solutions PHP fatales courantes](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
+- [Erreurs de paramètres PHP](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
+- [L&#39;extension PHP mcrypt n&#39;est pas installée correctement](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly)
+- [Problèmes de vérification du niveau de préparation pour les versions PHP](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+- [Erreurs et solutions PHP fatales courantes](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
 <!-- Last updated from includes: 2025-04-04 22:27:22 -->
