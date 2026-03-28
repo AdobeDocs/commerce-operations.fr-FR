@@ -17,16 +17,16 @@ Pour obtenir le droit d’accès aux packages Adobe Commerce, vous devez utilise
 
 >[!TIP]
 >
->Si vous rencontrez des [erreurs](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html) ou ne voyez pas la section [!UICONTROL Access Keys] dans l’onglet Marketplace , il se peut que vous ne soyez pas autorisé à accéder au package ou que le droit d’accès ait expiré en raison d’une facture en suspens sur votre compte.
+>Si vous rencontrez des [erreurs](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=fr) ou ne voyez pas la section [!UICONTROL Access Keys] dans l’onglet Marketplace , il se peut que vous ne soyez pas autorisé à accéder au package ou que le droit d’accès ait expiré en raison d’une facture en suspens sur votre compte.
 >
 >* Si vous êtes la personne de contact de Principal sur le compte, assurez-vous qu&#39;aucune facture en souffrance n&#39;est répertoriée sur le compte.
->* Si les clés fournies par le contact de Principal ne fonctionnent pas et qu&#39;il n&#39;y a aucune facture en suspens sur le compte, le contact de Principal doit contacter [l&#39;assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour obtenir de l&#39;aide.
+>* Si les clés fournies par le contact de Principal ne fonctionnent pas et qu&#39;il n&#39;y a aucune facture en suspens sur le compte, le contact de Principal doit contacter [l&#39;assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour obtenir de l&#39;aide.
 
 Pour créer des clés d’authentification :
 
 >[!NOTE]
 >
->Depuis août 2022, le titulaire du compte doit disposer d’une Adobe ID et s’assurer qu’elle est liée à son compte Commerce. Si le titulaire du compte ne dispose pas d’une Adobe ID, il doit en créer une et la lier à son compte Commerce avant de générer des clés d’authentification : [Créer votre compte Commerce et y accéder](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
+>Depuis août 2022, le titulaire du compte doit disposer d’une Adobe ID et s’assurer qu’elle est liée à son compte Commerce. Si le titulaire du compte ne dispose pas d’une Adobe ID, il doit en créer une et la lier à son compte Commerce avant de générer des clés d’authentification : [Créer votre compte Commerce et y accéder](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
 
 1. Connectez-vous à [&#128279;](https://commercemarketplace.adobe.com/). Si vous n’avez pas de compte, cliquez sur **S’inscrire**.
 
