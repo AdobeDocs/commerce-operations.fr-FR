@@ -28,7 +28,7 @@ Pour créer des clés d’authentification :
 >
 >Depuis août 2022, le titulaire du compte doit disposer d’une Adobe ID et s’assurer qu’elle est liée à son compte Commerce. Si le titulaire du compte ne dispose pas d’une Adobe ID, il doit en créer une et la lier à son compte Commerce avant de générer des clés d’authentification : [Créer votre compte Commerce et y accéder](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
 
-1. Connectez-vous à [](https://commercemarketplace.adobe.com/). Si vous n’avez pas de compte, cliquez sur **S’inscrire**.
+1. Connectez-vous à [&#128279;](https://commercemarketplace.adobe.com/). Si vous n’avez pas de compte, cliquez sur **S’inscrire**.
 
 1. Cliquez sur le nom de votre compte en haut à droite de la page et sélectionnez **Mon profil**.
 
@@ -52,7 +52,7 @@ Vous pouvez également désactiver ou supprimer des clés d’authentification. 
 
 Pour télécharger les versions d’Adobe Commerce à l’aide de SSH, vous devez générer un jeton d’accès aux téléchargements. Pour générer un jeton :
 
-1. Connectez-vous à votre compte [](https://account.magento.com/customer/account/login).
+1. Connectez-vous à votre compte [&#128279;](https://account.magento.com/customer/account/login).
 1. Cliquez sur **Mon compte** en haut de la page.
 1. Cliquez sur **Paramètres du compte** > **Télécharge le jeton d’accès**.
 

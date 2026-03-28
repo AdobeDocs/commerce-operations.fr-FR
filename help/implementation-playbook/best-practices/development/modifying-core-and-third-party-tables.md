@@ -38,7 +38,7 @@ Une autre option permettant de conserver les données externes à Commerce, mais
 
 Par exemple, vous pouvez `stitch` d’anciennes commandes à partir d’une base de données externe, par exemple l’ancien site Magento 1 qui est mis hors service. Ensuite, à l’aide du maillage GraphQL, affichez-les dans l’historique des commandes des clients. Ces anciennes commandes peuvent être combinées avec les commandes de votre environnement de [!DNL Adobe Commerce] actuel.
 
-Pour plus d’informations sur l’utilisation du maillage API avec GraphQL, voir [En quoi consiste le maillage API ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) et [Passerelle du maillage GraphQL](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
+Pour plus d’informations sur l’utilisation du maillage API avec GraphQL, voir [En quoi consiste le maillage API &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) et [Passerelle du maillage GraphQL](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
 ## Migration des données héritées avec des attributs d’extension
 

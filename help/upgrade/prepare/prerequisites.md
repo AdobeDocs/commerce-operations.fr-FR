@@ -153,7 +153,7 @@ La prise en charge d’Elasticsearch 8.x a été introduite dans Adobe Commerce 
 >
 >Ces étapes s’appliquent uniquement à Adobe Commerce 2.4.6 et 2.4.7. Adobe Commerce 2.4.8 et versions ultérieures ne prennent plus en charge Elasticsearch ; utilisez OpenSearch à la place.
 
-1. Mettez à niveau le serveur Elasticsearch 7.x vers la version 8.x et assurez-vous que est en cours d’exécution. Voir la [documentation ](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch).
+1. Mettez à niveau le serveur Elasticsearch 7.x vers la version 8.x et assurez-vous que est en cours d’exécution. Voir la [documentation &#x200B;](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch).
 
 1. Activez le champ `id_field_data` en ajoutant la configuration suivante à votre fichier `elasticsearch.yml` et en redémarrant le service Elasticsearch 8.x.
 
@@ -219,7 +219,7 @@ La prise en charge d’Elasticsearch 8.x a été introduite dans Adobe Commerce 
 
 Si vous mettez par inadvertance à niveau la version d’Elasticsearch sur votre serveur ou déterminez que vous devez la rétrograder pour toute autre raison, vous devez également mettre à jour les dépendances de vos projets Adobe Commerce. Par exemple, pour rétrograder d’Elasticsearch 8.x vers 7.x
 
-1. Rétrogradez le serveur Elasticsearch 8.x vers la version 7.x et assurez-vous que est en cours d’exécution. Voir la [documentation ](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch).
+1. Rétrogradez le serveur Elasticsearch 8.x vers la version 7.x et assurez-vous que est en cours d’exécution. Voir la [documentation &#x200B;](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch).
 
 1. Dans le répertoire racine de votre projet Adobe Commerce, mettez à jour les dépendances du compositeur pour supprimer le module `Magento_Elasticsearch8` et ses dépendances du compositeur et installer le module `Magento_Elasticsearch7`.
 
