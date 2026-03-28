@@ -2,9 +2,9 @@
 title: Installation sur site avancée
 description: Découvrez les scénarios d’installation avancés pour les déploiements sur site d’Adobe Commerce. Découvrez des configurations complexes et des options de configuration personnalisées.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '2485'
+source-wordcount: '2484'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Le programme d’installation peut être exécuté plusieurs fois si nécessaire
 
 Avant de commencer, effectuez les étapes suivantes :
 
-* Vérifiez que votre système répond à la configuration requise décrite dans la section [&#x200B; Configuration requise &#x200B;](system-requirements.md).
+* Vérifiez que votre système répond à la configuration requise décrite dans la section [ Configuration requise ](system-requirements.md).
 
 * Effectuez toutes les tâches [prérequises](prerequisites/overview.md).
 
@@ -119,7 +119,7 @@ Les options suivantes spécifient les informations d’identification et d’ide
 
 Vous pouvez créer l’utilisateur administrateur pendant ou après l’installation. Si vous créez l’utilisateur lors de l’installation, toutes les variables d’informations d’identification d’administrateur sont requises. Voir [Exemples d’installations localhost](#sample-localhost-installations).
 
-Les tableaux suivants fournissent de nombreux paramètres d’installation, mais pas tous. Pour obtenir une liste complète, voir [Référence des outils de ligne de commande](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+Les tableaux suivants fournissent de nombreux paramètres d’installation, mais pas tous. Pour obtenir une liste complète, voir [Référence des outils de ligne de commande](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Nom | Valeur | Obligatoire ? |
 |--- |--- |--- |
@@ -135,11 +135,11 @@ Les tableaux suivants fournissent de nombreux paramètres d’installation, mais
 |--- |--- |--- |
 | `--base-url` | URL de base à utiliser pour accéder à votre administration et à votre storefront dans l’un des formats suivants :<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Remarque :** le schéma (http:// ou https://) et une barre oblique sont tous deux requis.<br><br>`<your install dir>` est le chemin relatif à docroot dans lequel installer le logiciel Adobe Commerce. Selon la configuration de votre serveur web et de vos hôtes virtuels, le chemin d’accès peut être magento2 ou vide.<br><br>Pour accéder à Adobe Commerce ou MagenAdobe Commerceuse, `http://127.0.0.1/<your install dir>/` ou `http://127.0.0.1/<your install dir>/`.<br><br> : `{{base_url}}` qui représente une URL de base définie par un paramètre d’hôte virtuel ou par un environnement de virtualisation tel que Docker. Par exemple, si vous configurez un hôte virtuel avec le nom d’hôte `magento.example.com`, vous pouvez installer le logiciel avec `--base-url={{base_url}}` et accéder à l’administrateur avec une URL telle que `http://magento.example.com/admin`. | Oui |
 | `--backend-frontname` | Uniform Resource Identifier (URI) pour accéder à l’administrateur. Vous pouvez omettre ce paramètre pour permettre à l’application de générer un URI aléatoire à votre place avec le modèle suivant <code>admin_jkhgdfq</code>.<br><br>Nous vous recommandons d’utiliser un URI aléatoire à des fins de sécurité. Un URI aléatoire est plus difficile à exploiter pour les pirates ou les logiciels malveillants.<br><br>L’URI s’affiche à la fin de l’installation. Vous pouvez l&#39;afficher ultérieurement à tout moment à l&#39;aide de la commande `bin/magento info:adminuri`.<br><br>Si vous choisissez de saisir une valeur, nous vous recommandons de ne pas utiliser un mot commun tel que admin, backend. L’URI d’administration ne peut contenir que des valeurs alphanumériques et le caractère de soulignement (`_`). | Non |
-| `--db-host` | Utilisez l’une des méthodes suivantes : <br><br>- Le nom d’hôte complet ou l’adresse IP complète du serveur de base de données.<br><br>- `localhost` (par défaut) ou `127.0.0.1` si votre serveur de base de données se trouve sur le même hôte que votre serveur web.localhost signifie que la bibliothèque cliente MySQL utilise des sockets UNIX pour se connecter à la base de données. `127.0.0.1` entraîne l’utilisation du protocole TCP par la bibliothèque cliente. Pour plus d’informations sur les sockets, consultez la documentation [PHP PDO_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Remarque :** vous pouvez éventuellement spécifier le port du serveur de base de données dans son nom d’hôte, tel que www.example.com:9000 | Oui |
+| `--db-host` | Utilisez l’une des méthodes suivantes : <br><br>- Le nom d’hôte complet ou l’adresse IP complète du serveur de base de données.<br><br>- `localhost` (par défaut) ou `127.0.0.1` si votre serveur de base de données se trouve sur le même hôte que votre serveur web.localhost signifie que la bibliothèque cliente MySQL utilise des sockets UNIX pour se connecter à la base de données. `127.0.0.1` entraîne l’utilisation du protocole TCP par la bibliothèque cliente. Pour plus d’informations sur les sockets, consultez la documentation [PHP PDO_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Remarque :** vous pouvez éventuellement spécifier le port du serveur de base de données dans son nom d&#39;hôte, comme `www.example.com:9000` | Oui |
 | `--db-name` | Nom de l’instance de base de données dans laquelle vous souhaitez installer les tables de base de données.<br><br>La valeur par défaut est `magento2`. | Oui |
 | `--db-user` | Nom d’utilisateur du propriétaire de l’instance de base de données.<br><br>La valeur par défaut est `root`. | Oui |
 | `--db-password` | Mot de passe du propriétaire de l&#39;instance de base de données. | Oui |
-| `--db-prefix` | À utiliser uniquement si vous installez les tables de la base de données dans une instance de base de données qui contient déjà des tables Adobe Commerce.<br><br>Dans ce cas, utilisez un préfixe pour identifier les tables de cette installation. Certains clients disposent de plusieurs serveurs Adobe Commerce ou MagenAdobe Commerceserver avec toutes les tables dans la même base de données.<br><br>La longueur du préfixe ne peut pas excéder cinq caractères. Elle doit commencer par une lettre et ne peut contenir que des lettres, des chiffres et des traits de soulignement.<br><br>Cette option permet à ces clients de partager le serveur de base de données avec plusieurs installations Adobe Commerce |
+| `--db-prefix` | À utiliser uniquement si vous installez les tables de la base de données dans une instance de base de données qui contient déjà des tables Adobe Commerce.<br><br>Dans ce cas, utilisez un préfixe pour identifier les tables de cette installation. Certains clients disposent de plusieurs serveurs Adobe Commerce ou MagenAdobe Commerceserver avec toutes les tables dans la même base de données.<br><br>La longueur du préfixe ne peut pas excéder cinq caractères. Elle doit commencer par une lettre et ne peut contenir que des lettres, des chiffres et des traits de soulignement.<br><br>Cette option permet à ces clients de partager le serveur de base de données avec plusieurs installations Adobe Commerce | |
 | `--db-ssl-key` | Chemin d’accès à la clé client. | Non |
 | `--db-ssl-cert` | Chemin d’accès au certificat client. | Non |
 | `--db-ssl-ca` | Chemin d’accès au certificat du serveur. | Non |
@@ -220,7 +220,7 @@ Les tableaux suivants fournissent de nombreux paramètres d’installation, mais
 
 >[!NOTE]
 >
->Pour activer ou désactiver les modules après l’installation d’Adobe Commerce, voir [&#x200B; Activer et désactiver les modules](tutorials/manage-modules.md).
+>Pour activer ou désactiver les modules après l’installation d’Adobe Commerce, voir [ Activer et désactiver les modules](tutorials/manage-modules.md).
 
 **Données sensibles :**
 

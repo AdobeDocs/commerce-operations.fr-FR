@@ -1,5 +1,5 @@
 ---
-source-git-commit: 6752688390a8bea98b49d235515f094386d88bd4
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '2906'
 ht-degree: 0%
@@ -7,17 +7,13 @@ ht-degree: 0%
 ---
 # Packages Adobe Commerce
 
-<!-- The 'packages' variable contains the 'packages' node of the '_data/codebase/commerce/composer_lock.json' file
- -->
+<!-- The 'packages' variable contains the 'packages' node of the '_data/codebase/commerce/composer_lock.json' file -->
 
-<!-- The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/commerce/composer_lock.json' file
- -->
+<!-- The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/commerce/composer_lock.json' file -->
 
-<!-- The 'product' variable contains data of the 'magento/product-enterprise-edition' package
- -->
+<!-- The 'product' variable contains data of the 'magento/product-enterprise-edition' package -->
 
-<!-- The edition variable contains `commerce` value from the _data/names.yml file
- -->
+<!-- The edition variable contains `commerce` value from the _data/names.yml file -->
 
 Adobe Commerce utilise le compositeur pour gérer les packages PHP.
 
@@ -312,7 +308,7 @@ La documentation de référence suivante est générée à partir du fichier `co
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/wikimedia/less.php">wikimedia/less.php</a>
+      <a href="https://github.com/wikimedia/less.php"></a>
     </td>
     <td>Bibliothèque</td>
     <td>Port PHP du processeur LESS</td>
@@ -907,7 +903,7 @@ La documentation de référence suivante est générée à partir du fichier `co
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/jmespath/jmespath.php">mtdowling/jmespath.php</a>
+      <a href="https://github.com/jmespath/jmespath.php"></a>
     </td>
     <td>Bibliothèque</td>
     <td>Spécifier de manière déclarative comment extraire des éléments d’un document JSON</td>

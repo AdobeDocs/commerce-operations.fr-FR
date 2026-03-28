@@ -2,9 +2,9 @@
 title: Obtention de vos clés d’authentification
 description: Pour récupérer les informations d’identification et accéder aux packages du compositeur Adobe Commerce sur repo.magento.com, procédez comme suit.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 4a4fd51891b7a98529d00d51c94ed10429218726
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -17,14 +17,18 @@ Pour obtenir le droit d’accès aux packages Adobe Commerce, vous devez utilise
 
 >[!TIP]
 >
->Si vous rencontrez des [erreurs](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=fr) ou ne voyez pas la section [!UICONTROL Access Keys] dans l’onglet Marketplace , il se peut que vous ne soyez pas autorisé à accéder au package ou que le droit d’accès ait expiré en raison d’une facture en suspens sur votre compte.
+>Si vous rencontrez des [erreurs](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html) ou ne voyez pas la section [!UICONTROL Access Keys] dans l’onglet Marketplace , il se peut que vous ne soyez pas autorisé à accéder au package ou que le droit d’accès ait expiré en raison d’une facture en suspens sur votre compte.
 >
 >* Si vous êtes la personne de contact de Principal sur le compte, assurez-vous qu&#39;aucune facture en souffrance n&#39;est répertoriée sur le compte.
->* Si les clés fournies par le contact de Principal ne fonctionnent pas et qu&#39;il n&#39;y a aucune facture en suspens sur le compte, le contact de Principal doit contacter [l&#39;assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour obtenir de l&#39;aide.
+>* Si les clés fournies par le contact de Principal ne fonctionnent pas et qu&#39;il n&#39;y a aucune facture en suspens sur le compte, le contact de Principal doit contacter [l&#39;assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour obtenir de l&#39;aide.
 
 Pour créer des clés d’authentification :
 
-1. Connectez-vous à [Commerce Marketplace](https://commercemarketplace.adobe.com/). Si vous n’avez pas de compte, cliquez sur **S’inscrire**.
+>[!NOTE]
+>
+>Depuis août 2022, le titulaire du compte doit disposer d’une Adobe ID et s’assurer qu’elle est liée à son compte Commerce. Si le titulaire du compte ne dispose pas d’une Adobe ID, il doit en créer une et la lier à son compte Commerce avant de générer des clés d’authentification : [Créer votre compte Commerce et y accéder](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
+
+1. Connectez-vous à [](https://commercemarketplace.adobe.com/). Si vous n’avez pas de compte, cliquez sur **S’inscrire**.
 
 1. Cliquez sur le nom de votre compte en haut à droite de la page et sélectionnez **Mon profil**.
 
@@ -48,7 +52,7 @@ Vous pouvez également désactiver ou supprimer des clés d’authentification. 
 
 Pour télécharger les versions d’Adobe Commerce à l’aide de SSH, vous devez générer un jeton d’accès aux téléchargements. Pour générer un jeton :
 
-1. Connectez-vous à votre compte [magento.com](https://account.magento.com/customer/account/login).
+1. Connectez-vous à votre compte [](https://account.magento.com/customer/account/login).
 1. Cliquez sur **Mon compte** en haut de la page.
 1. Cliquez sur **Paramètres du compte** > **Télécharge le jeton d’accès**.
 

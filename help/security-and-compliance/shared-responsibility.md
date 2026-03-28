@@ -2,7 +2,7 @@
 title: Sécurité à responsabilité partagée et modèle opérationnel
 description: Découvrez les responsabilités de sécurité de chaque partie impliquée dans votre projet d’infrastructure cloud Adobe Commerce.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: aac78fc95b86951f352a636eef33e0b79b22a183
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '2939'
 ht-degree: 0%
@@ -788,15 +788,16 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 | Disponibilité des services Adobe Commerce Business Intelligence | R |   |
 | Processus de synchronisation des données MBI | R |   |
 | Détection des problèmes de synchronisation MBI | R |   |
-| Configuration de la synchronisation des données MBI vers Adobe Commerce Cloud Pro, Starter, On-Premise ou non-Adobe Commerce<br> <br>(API, qualité et formatage des données, réseau commercial, connexions à la base de données à l’intérieur et à l’extérieur de la base de données Adobe Commerce Cloud, au-delà des seuils de données) |     | R |
+| Configuration de la synchronisation des données MBI vers Adobe Commerce Cloud Pro, Starter, On-Premise ou non-<br> <br>(API, qualité et formatage des données, réseau commercial, connexions à la base de données à l’intérieur et à l’extérieur de la base de données Adobe Commerce Cloud, au-delà des seuils de données) |     | R |
 | Configuration de la synchronisation des données MBI vers Adobe Commerce Cloud Pro<br> (configuration de la base de données Adobe Commerce Cloud) | R |   |
 
 {style="table-layout:auto"}
 
+>[!NOTE]
 >
 >Les commerçants doivent utiliser la version la plus récente de Live Search, de Product Recommendations et de Payment Services afin de garantir une stabilité, des fonctionnalités et une éligibilité optimales pour l’assistance.
 >Adobe ne prend pas en charge les versions obsolètes et la mise à niveau vous permet de bénéficier des dernières améliorations et correctifs de bugs.
->Pour plus d’informations sur les versions prises en charge, consultez la [Matrice de disponibilité du produit pour les services Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability#commerce-services).
+>Pour plus d’informations sur les versions prises en charge, consultez la [Matrice de disponibilité du produit pour les services Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services).
 
 #### Recommandations de produit
 

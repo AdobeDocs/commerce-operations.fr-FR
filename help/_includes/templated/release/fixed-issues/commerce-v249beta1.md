@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0a22d08d6965c6abc288a1a171d25f4ff8bbd7ce
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '26969'
+source-wordcount: '26968'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Désormais, les API valident correctement les entrées et renvoient une erreur 4
 
 _AC-6419 - [Problème GitHub](https://github.com/magento/magento2/issues/35934) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Erreur de serveur interne dans le point d’entrée de l’API `/V1/order/&lbrace;orderId&rbrace;/ship`
+#### Erreur de serveur interne dans le point d’entrée de l’API `/V1/order/{orderId}/ship`
 
 Le système corrige désormais l’erreur de serveur interne dans `/V1/order/{orderId}/ship` point d’entrée de l’API et renvoie une erreur 400, car la requête est incorrecte.
 
@@ -261,7 +261,7 @@ _AC-15074 - [Problème GitHub](https://github.com/magento/magento2/issues/40036)
 
 #### Enregistrement de compte client Storefront : le format d’adresse e-mail est converti avec un format de domaine différent
 
-Ce bogue corrige un problème où les e-mails des clients avec des caractères spéciaux dans le domaine (par exemple, tec55241@adòbe.com) étaient automatiquement convertis au format punycode (tec55241@xn--adbe-mqa.com).
+Ce bogue corrige un problème où les e-mails des clients avec des caractères spéciaux dans le domaine (par exemple, òbe.com) étaient automatiquement convertis au format punycode (tec55241@xn--adbe-mqa.com).
 Dans Magento 2.4.9-alpha3, le correctif garantit que ces ID d’e-mail restent inchangés et valides, évitant ainsi les erreurs de diffusion.
 
 _AC-15177 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/68a45d0a)_
@@ -275,7 +275,7 @@ _AC-15185 - [Problème GitHub](https://github.com/magento/magento2/issues/40076)
 
 #### Le Titre Modal D’Annulation De Commande N’A Pas Été Traduit
 
-Le système corrige désormais une traduction manquante dans la boîte de dialogue modale d’annulation de commande sur le storefront. Lorsqu’un client clique sur le bouton « Annuler » de la page Mon compte > Mes commandes , une fenêtre modale s’affiche pour demander un motif d’annulation. Toutefois, le titre modal était auparavant codé en dur et non traduisible. Cette modification garantit que le titre modal utilise une méthode de traduction appropriée.
+Le système corrige désormais une traduction manquante dans la boîte de dialogue modale d’annulation de commande sur le storefront. Lorsqu’un client clique sur le bouton « Annuler » de la page Mon compte > Mes commandes , une boîte de dialogue modale s’affiche pour demander un motif d’annulation. Toutefois, le titre modal était auparavant codé en dur et non traduisible. Cette modification garantit que le titre modal utilise une méthode de traduction appropriée.
 
 _AC-15260 - [Problème GitHub](https://github.com/magento/magento2/issues/40098) - [Contribution du code GitHub](https://github.com/magento/magento2/pull/40100)_
 
@@ -658,7 +658,7 @@ _AC-8440 - [Contribution du code GitHub](https://github.com/magento/magento2/com
 
 ### Analyses / Rapports
 
-#### placer sur la liste autorisée [Problème] Ajout du scp pour Analytics si vous utilisez uniquement Google Analytics
+#### [Problème] Ajout du scp pour Analytics si vous utilisez uniquement Google Analytics
 
 Cette requête de modification ajoute une liste autorisée CSP au module Google Analytics, lui permettant de fonctionner indépendamment sans dépendance Google Adwords. Google Analytics fonctionne désormais correctement même lorsque le module Google Adwords est désactivé.
 
@@ -818,7 +818,7 @@ _AC-14464 - [Problème GitHub](https://github.com/magento/magento2/issues/39820)
 
 #### [2.4.8] Impossible de passer des commandes lorsque la ville comporte les chiffres 0 à 9, l&#39;esperluette, un point ou une parenthèse dans le nom de la ville
 
-Correction d’un problème en raison duquel le passage en caisse échouait pour les noms de ville contenant des caractères spéciaux tels que . , &amp;, ou des parenthèses.
+Correction d’un problème en raison duquel l’extraction échouait pour les noms de ville contenant des caractères spéciaux tels que . , &amp; ou des parenthèses.
 Désormais, les commandes avec ces noms de ville sont passées sans erreurs de validation.
 
 _AC-14495 - [Problème GitHub](https://github.com/magento/magento2/issues/39854) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/b9f5d6f7)_
@@ -1079,7 +1079,7 @@ _AC-13373 - [Problème GitHub](https://github.com/magento/magento2/issues/39363)
 
 #### Le prix spécial ne s&#39;affiche pas correctement pour le produit enfant du produit configurable (produit simple)
 
-Correction d’un problème en raison duquel le prix spécial d’un produit enfant (simple) configurable n’était pas affiché correctement sur la page de liste des produits lorsque la mention « Utilisé dans la liste des produits » était définie sur Non. Désormais, le prix spécial s’affiche correctement avec le prix normal, ce qui garantit une affichage cohérent des prix pour tous les types de produits.
+Correction d’un problème en raison duquel le prix spécial d’un produit enfant (simple) configurable ne s’affichait pas correctement sur la page de liste des produits lorsque la mention « Utilisé dans la liste des produits » était définie sur Non. Désormais, le prix spécial s’affiche correctement avec le prix normal, ce qui garantit une affichage cohérent des prix pour tous les types de produits.
 
 _AC-13594 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/3cf1a106)_
 
@@ -1100,7 +1100,7 @@ Ce comportement est cohérent avec la conception par défaut de Magento, où la 
 
 _AC-13857 - [Problème GitHub](https://github.com/magento/magento2/issues/33559)_
 
-#### [\Magento\ConfigurableProduct\Model\Product\Type\Configurable] Erreur PHP ignorée
+#### [] Erreur PHP ignorée
 
 Modification du nom d’une variable de boucle afin d’ajouter correctement les données « _cache_instance_product_ids » sur le produit donné à utiliser lors des appels suivants.
 
@@ -1165,7 +1165,7 @@ _AC-15237 - [Problème GitHub](https://github.com/magento/magento2/issues/40104)
 
 Correction de la méthode utilisée dans \Magento\Catalog\Ui\DataProvider\Product\Listing\Collector\Url::collect().
 Auparavant, getAddToCartButton() était incorrectement appelé à la place de getAddToCompareButton().
-Cette modification permet de garantir le comportement correct du rendu du bouton « Ajouter pour comparer » dans les listes de produits.
+Cette modification garantit le comportement correct du bouton « Ajouter pour comparer » dans les listes de produits.
 Aucun changement de comportement fonctionnel n’est introduit ; la mise à jour améliore l’expérience du développeur et l’exactitude du code.
 
 _AC-15323 - [Problème GitHub](https://github.com/magento/magento2/issues/39754) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/a3b1abc2)_
@@ -1178,7 +1178,7 @@ _AC-15385 - [Contribution du code GitHub](https://github.com/magento/magento2/co
 
 #### Erreur d’affichage du prix « Aussi bas que » pour les produits configurables lorsque le protocole FPT est activé
 
-Confirmation que le prix incorrect « Aussi bas que » pour les produits configurables lorsque FPT a été activé était dû à l&#39;application double de la taxe ; le correctif garantit que le calcul du prix final respecte la configuration de la taxe et affiche désormais le prix correct.
+Confirmation que le prix incorrect « Aussi bas que » pour les produits configurables lorsque FPT a été activé était dû au fait que la taxe a été appliquée deux fois ; le correctif garantit que le calcul du prix final respecte la configuration de la taxe et affiche désormais le prix correct.
 
 _AC-15718 - [Problème GitHub](https://github.com/magento/magento2/issues/40171) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/a06a4a57)_
 
@@ -2351,7 +2351,7 @@ _AC-8949 - [Contribution du code GitHub](https://github.com/magento/magento2/com
 
 #### La réponse GraphQL pour l&#39;emplacement de commande n&#39;inclut pas le message d&#39;exception
 
-Annulation de la modification précédente qui renvoyait des erreurs dans un format différent. Désormais, les erreurs potentielles sont renvoyées de manière cohérente, sans interrompre le schéma GraphQL. Ceci doit être ajouté en tant que BIC connu, approuvé par PM ici : https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
+Annulation de la modification précédente qui renvoyait des erreurs dans un format différent. Désormais, les erreurs potentielles sont renvoyées de manière cohérente, sans interrompre le schéma GraphQL. Ceci doit être ajouté en tant que BIC connu, approuvé par PM ici : https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
 
 _ACP2E-3399 - [contribution du code GitHub](https://github.com/magento/magento2/commit/9608ca21)_
 
@@ -2449,7 +2449,7 @@ _ACP2E-4244 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 #### Réponse d’erreur incorrecte du GraphQL updateCartItems
 
-Auparavant, lorsqu’une demande graphQL était envoyée pour un article en quantité insuffisante, un message d’erreur correct avec un code d’erreur était renvoyé, ainsi que le calcul de la quantité et du prix demandé, même si l’article n’était pas disponible. Une fois ce correctif appliqué, un message d’erreur correct avec un code d’erreur est maintenant renvoyé et la quantité de l’élément est définie sur son ancienne valeur si elle n’est pas disponible dans la réponse.
+Auparavant, lorsqu’une demande graphQL était envoyée pour un article en quantité insuffisante, un message d’erreur correct avec un code d’erreur était renvoyé, ainsi que le calcul de la quantité et du prix demandé, même si l’article n’était pas disponible. Une fois ce correctif appliqué, un message d’erreur correct avec un code d’erreur est maintenant renvoyé et la quantité de l’article est définie sur son ancienne valeur si elle n’est pas disponible dans la réponse.
 
 _ACP2E-4283 - [contribution du code GitHub](https://github.com/magento/magento2/commit/cbca0396)_
 
@@ -2587,7 +2587,7 @@ _ACP2E-3728 - [contribution du code GitHub](https://github.com/magento/inventory
 
 #### Aucun magasin n’est disponible après la redirection vers la page d’accueil et le passage en caisse
 
-Le magasin précédemment sélectionné sera maintenant présélectionné dans l’expédition « Choisir en magasin » si le client accède à la page de paiement, puis revient à la page d’accueil et revient enfin à la page de passage en caisse. Auparavant, après être revenu à plusieurs reprises à la page de passage en caisse, le magasin sélectionné dans « Choisir en magasin » était effacé.
+Le magasin précédemment sélectionné sera maintenant présélectionné dans l’expédition « Choisir en magasin » si le client accède à la page de paiement, revient à la page d’accueil et revient à la page de passage en caisse. Auparavant, après être revenu à plusieurs reprises à la page de passage en caisse, le magasin sélectionné dans le « Choisir en magasin » était effacé.
 
 _ACP2E-3793 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/a20a6ff2) - [Contribution du code GitHub](https://github.com/magento/inventory/commit/62c0d79b)_
 
@@ -2636,7 +2636,7 @@ _ACP2E-4233 - [Contribution du code GitHub](https://github.com/magento/magento2/
 
 #### [MSI] Échec des tests MFTF liés aux dernières modifications de la ligne principale.
 
-Avant la correction, les clients invités qui choisissaient la cueillette en magasin sans adresse d’expédition recevaient automatiquement l’adresse de facturation de la boutique, qui ne pouvait pas être modifiée, ce qui entraînait des détails de facture incorrects. Après la correction, l’adresse de facturation est désormais modifiable dans ce scénario, ce qui permet aux invités de saisir leurs propres détails. Les utilisateurs enregistrés verront leur adresse de facturation enregistrée au lieu de celle du magasin.
+Avant la correction, les clients invités qui choisissaient la cueillette en magasin sans adresse d&#39;expédition voyaient leur adresse de facturation automatiquement remplie avec l&#39;adresse du magasin, qui ne pouvait pas être modifiée, ce qui entraînait des détails de facture incorrects. Après la correction, l’adresse de facturation est désormais modifiable dans ce scénario, ce qui permet aux invités de saisir leurs propres détails. Les utilisateurs enregistrés verront leur adresse de facturation enregistrée au lieu de celle du magasin.
 
 _ACP2E-4260 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/ab891304) - [Contribution du code GitHub](https://github.com/magento/inventory/commit/13e432a6)_
 
@@ -2833,7 +2833,7 @@ _ACP2E-4061 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 #### L’expéditeur spécifique à la boutique n’est pas utilisé pour les e-mails de carte cadeau
 
-Auparavant, lors de l’envoi d’un modèle d’e-mail pour une carte cadeau après la création d’une facture à partir d’un autre magasin, le nom du propriétaire dans les paramètres de configuration d’administration n’était pas reflété dans les en-têtes d’e-mail lorsque le client recevait l’e-mail. Une fois ce correctif appliqué, les en-têtes des e-mails incluent désormais les informations d’e-mail du propriétaire du magasin approprié.
+Auparavant, lors de l’envoi d’un modèle d’e-mail pour une carte cadeau après la création d’une facture à partir d’un autre magasin, le nom du propriétaire dans les paramètres de configuration d’administration n’était pas reflété dans les en-têtes d’e-mail lorsque le client recevait l’e-mail. Après l’application de ce correctif, les en-têtes des e-mails incluent désormais les informations de messagerie du propriétaire du magasin approprié.
 
 _ACP2E-4310_
 
@@ -3045,7 +3045,7 @@ _AC-14945 - [Problème GitHub](https://github.com/magento/magento2/issues/39986)
 #### Le produit est enregistré même lorsque la date de début du prix spécial est postérieure à la date de fin à l&#39;aide d&#39;une action en masse
 
 Correction d’un problème en raison duquel les produits pouvaient être enregistrés avec une période de prix spéciaux non valide sans validation.
-Désormais, un message d’erreur s’affiche : « Assurez-vous que la date de fin est postérieure ou identique à la date de début. »
+Désormais, un message d’erreur s’affiche : « Assurez-vous que la date de fin est postérieure ou identique à la date de début ».
 
 _AC-15252 - [Problème GitHub](https://github.com/magento/magento2/issues/40113) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/36d4d6fb)_
 
@@ -3087,7 +3087,7 @@ _AC-10843 - [Contribution du code GitHub](https://github.com/magento/inventory/c
 
 #### Le libellé « Aussi bas que » reste affiché pour un produit configurable pour le cas de test AC-6158
 
-Produits configurables mis en œuvre et vérifiés (P1-P7) avec des variations et des affectations de catégories respectives. Affichage correct des prix de storefront et comportement de l&#39;étiquette « Aussi bas que » pour les produits de la catégorie C.
+Produits configurables mis en œuvre et vérifiés (P1-P7) avec des variations et des affectations de catégories respectives. Affichage correct du prix de storefront et comportement de l&#39;étiquette « Aussi bas que » pour les produits de la catégorie C.
 
 _AC-10847 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/a3b1abc2)_
 
@@ -3255,7 +3255,7 @@ La fonctionnalité de segment client comprend désormais un mécanisme de mise e
 
 _ACP2E-4299_
 
-#### [Cloud][experienceleague] Règle de prix de catalogue non appliquée
+#### `[Cloud][experienceleague]` règle de prix de catalogue non appliquée
 
 Avant, les règles de prix de catalogue fixes ne s’appliquaient pas lorsque `special_price` était défini uniquement au niveau du site web (et non au niveau de « Toutes les vues de la boutique »). Après la correction, les règles de prix de catalogue s’appliquent désormais correctement lorsque la `special_price` est définie au niveau du site web en vérifiant d’abord le magasin par défaut du site web.
 
@@ -3285,7 +3285,7 @@ _AC-15345 - [Problème GitHub](https://github.com/magento/magento2/issues/40146)
 
 #### Le produit de comparaison de Storefront crée une erreur d’optimisation du moteur de recherche Google - Les liens ne peuvent pas être analysés.
 
-Correction d’un problème d’optimisation du moteur de recherche (SEO) en raison duquel le lien storefront « Comparer les produits » n’était pas analysable par les moteurs de recherche en raison d’un attribut href manquant ou lié de manière incorrecte. La mise à jour garantit que le lien contient désormais une URL valide et analysable, ce qui améliore la visibilité du site et permet de passer les audits d’optimisation du moteur de recherche Google.
+Correction d’un problème d’optimisation du moteur de recherche (SEO) en raison duquel le lien « Comparer les produits » de storefront n’était pas analysable par les moteurs de recherche en raison d’un attribut href manquant ou lié de manière incorrecte. La mise à jour garantit que le lien contient désormais une URL valide et analysable, ce qui améliore la visibilité du site et permet de passer les audits d’optimisation du moteur de recherche Google.
 
 _AC-15547 - [Problème GitHub](https://github.com/magento/magento2/issues/40185) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/c95ed7d7)_
 
@@ -3355,7 +3355,7 @@ _ACP2E-4285 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 #### Erreur de serveur interne
 
-Magento ajoute désormais avec succès des produits au panier d’un client lors de l’utilisation du point d’entrée REST asynchrone POST /rest/default/async/V1/carts/mine/items. Auparavant, cette demande asynchrone d’« ajout au panier » entraînait une erreur de serveur interne, et Magento consignait l’erreur suivante : Erreur : appel à une fonction membre setFinalPrice() sur null dans app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162.
+Magento ajoute désormais avec succès des produits au panier d’un client lors de l’utilisation du point d’entrée REST asynchrone POST /rest/default/async/V1/carts/mine/items. Auparavant, cette requête asynchrone « ajouter au panier » entraînait une erreur de serveur interne, et Magento consignait l’erreur suivante : Erreur : appel à une fonction membre setFinalPrice() sur null dans app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162.
 
 _AC-16344 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/8670a2b4)_
 
@@ -3487,7 +3487,7 @@ _ACP2E-4226_
 
 #### Impossible de naviguer entre les sites web dans l’aperçu de la planification de mise à jour
 
-Avant cette correction, l’aperçu de la mise à jour planifiée était interrompu lors de la tentative de prévisualisation du contenu pour les magasins avec des domaines personnalisés. Après ce correctif, les domaines de magasin personnalisés peuvent être prévisualisés en l’état et navigués dans le cadre de prévisualisation. Le correctif couvre les produits, les catégories, les pages CMS et les blocs CMS, et prend en charge les liens de navigation à l’aide de balises de balisage `{{store url}}`, comme indiqué dans [Variables Adobe Commerce et balises de balisage](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/variables/markup-tags).
+Avant cette correction, l’aperçu de la mise à jour planifiée était interrompu lors de la tentative de prévisualisation du contenu pour les magasins avec des domaines personnalisés. Après ce correctif, les domaines de magasin personnalisés peuvent être prévisualisés en l’état et navigués dans le cadre de prévisualisation. Le correctif couvre les produits, les catégories, les pages CMS et les blocs CMS, et prend en charge les liens de navigation à l’aide de balises de balisage `{{store url}}`, comme indiqué dans [Variables Adobe Commerce et balises de balisage](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags).
 
 _ACP2E-4308 - [contribution du code GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 

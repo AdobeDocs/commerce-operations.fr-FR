@@ -2,7 +2,7 @@
 title: Mise à niveau de l’implémentation
 description: Découvrez les différentes phases de la mise en œuvre de la mise à niveau pour les projets Adobe Commerce.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: a81d2c0b6526c2c8c8c5c4652c83595667985543
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Voici des éléments que vous pouvez inclure dans une analyse approfondie :
 
   >[!TIP]
   >
-  >Toutes ces informations (et d’autres encore) sont disponibles dans le tableau de bord de l’outil d’analyse à l’échelle du site [&#128279;](../../tools/site-wide-analysis-tool/dashboard.md).
+  >Toutes ces informations (et d’autres encore) sont disponibles dans le tableau de bord de l’outil d’analyse à l’échelle du site [.](../../tools/site-wide-analysis-tool/dashboard.md)
 
 - Mise à niveau des services pour la prise en charge de la version cible. Utilisez le modèle de tableau suivant pour indiquer les services à mettre à niveau. Utilisez la [configuration requise](../../installation/system-requirements.md) pour déterminer les éléments à ajouter à la colonne _Mettre à niveau vers_.
 
@@ -64,11 +64,11 @@ Voici des éléments que vous pouvez inclure dans une analyse approfondie :
 
 - **Packages de compositeurs et dépendances de composer.json nécessitant une mise à jour.**
 
-En outre, les partenaires peuvent participer aux [versions bêta d’Adobe Commerce](../../release/beta.md) et utiliser les opportunités de version préliminaire pour obtenir un accès anticipé au code d’une prochaine version. Accéder au code dès le début permet aux développeurs de se préparer suffisamment à temps pour terminer la mise à niveau à la date de disponibilité générale (GA). Le code Beta est généralement publié cinq semaines avant la date de disponibilité générale et les versions préliminaires sont publiées deux semaines à l’avance.
+En outre, les partenaires peuvent participer aux [versions bêta d’](../../release/beta.md) et utiliser les opportunités de version préliminaire pour obtenir un accès anticipé au code d’une prochaine version. Accéder au code dès le début permet aux développeurs de se préparer suffisamment à temps pour terminer la mise à niveau à la date de disponibilité générale (GA). Le code Beta est généralement publié cinq semaines avant la date de disponibilité générale et les versions préliminaires sont publiées deux semaines à l’avance.
 
 ## Développement et assurance qualité
 
-Les tests sont la phase d’une mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. Le _[Guide de test de l’application &#x200B;](https://developer.adobe.com/commerce/testing/guide/)_ fournit des détails sur la configuration et l’utilisation des outils de test de plateforme et de système pour accélérer l’assurance qualité. Utilisez un environnement d’évaluation pour tester et valider votre mise à niveau avant de passer en production.
+Les tests sont la phase d’une mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. Le _[Guide de test de l’application ](https://developer.adobe.com/commerce/testing/guide/)_ fournit des détails sur la configuration et l’utilisation des outils de test de plateforme et de système pour accélérer l’assurance qualité. Utilisez un environnement d’évaluation pour tester et valider votre mise à niveau avant de passer en production.
 
 ## UAT et préparation du lancement
 
@@ -88,4 +88,4 @@ Enfin, faites le point avec votre équipe pour déterminer les leçons apprises 
 
 Une fois votre site lancé, vérifiez vos données d’analyse, la console de recherche Google et d’autres ressources pour vous assurer qu’il n’y a aucun problème inattendu et que tout fonctionne comme prévu.
 
-Il est toujours préférable de surveiller les performances à l’aide d’outils de surveillance bien conçus. Il existe de nombreux outils et moyens de surveiller les performances de votre site. Veillez donc à en choisir un qui correspond bien à votre organisation. Nous recommandons aux clients Adobe Commerce qui utilisent notre système de gestion de l’infrastructure cloud de tirer parti de services tels que [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=fr) pour surveiller les performances du site.
+Il est toujours préférable de surveiller les performances à l’aide d’outils de surveillance bien conçus. Il existe de nombreux outils et moyens de surveiller les performances de votre site. Veillez donc à en choisir un qui correspond bien à votre organisation. Nous recommandons aux clients Adobe Commerce qui utilisent notre système de gestion de l’infrastructure cloud de tirer parti de services tels que [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) pour surveiller les performances du site.

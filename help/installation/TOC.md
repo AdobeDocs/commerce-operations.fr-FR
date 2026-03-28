@@ -2,10 +2,10 @@
 user-guide-title: Guide d’installation
 user-guide-description: Découvrez comment installer Adobe Commerce pour les déploiements sur site.
 feature: Install
-source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
+source-git-commit: 53f21e0588603ecf19d4d904a8926c978009d449
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 3%
+source-wordcount: '175'
+ht-degree: 4%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 3%
 - [Vue d’ensemble](overview.md)
 - [Configuration requise](system-requirements.md)
 - Conditions préalables {#prerequisites}
-   - [Aperçu](prerequisites/overview.md)
+   - [Vue d’ensemble](prerequisites/overview.md)
    - Système de fichiers {#file-system}
       - [Vue d’ensemble](prerequisites/file-system/overview.md)
       - [Configuration des autorisations](prerequisites/file-system/configure-permissions.md)
    - Serveur Web {#web-server}
-      - [Nginx](prerequisites/web-server/nginx.md)
-      - [Apache](prerequisites/web-server/apache.md)
+      - [Installer Nginx](prerequisites/web-server/nginx.md)
+      - [Installation d’Apache](prerequisites/web-server/apache.md)
    - Serveur de base de données {#database-server}
       - [MySQL](prerequisites/database/mysql.md)
       - [Connexions à distance](prerequisites/database/mysql-remote.md)
@@ -32,7 +32,7 @@ ht-degree: 3%
       - [Configuration d’Apache](prerequisites/search-engine/configure-apache.md)
    - [PHP](prerequisites/php-settings.md)
    - Courtiers en messages {#message-brokers}
-      - [MQ lapin](prerequisites/rabbitmq.md)
+      - [Lapin MQ](prerequisites/rabbitmq.md)
       - [MQ actif](prerequisites/activemq.md)
    - [Sécurité](prerequisites/security.md)
    - [Clés d’authentification](prerequisites/authentication-keys.md)
@@ -69,4 +69,4 @@ ht-degree: 3%
    - [Désinstallation ou réinstallation de Commerce](tutorials/uninstall.md)
    - [Désinstaller les thèmes](tutorials/themes.md)
    - [Mise à niveau du schéma de la base de données](tutorials/database-upgrade.md)
-- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=fr)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

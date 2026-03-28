@@ -5,7 +5,7 @@ feature: GraphQL, User Account
 role: Admin, Developer
 type: Troubleshooting
 exl-id: a97daceb-98f6-4bb8-9847-692af700c0fd
-source-git-commit: 7e9598e3ac0558706ef98ca81c19d27c37f7e860
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Le correctif ACSD-65254 corrige le problème en raison duquel les notifications 
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -40,19 +40,19 @@ Les notifications par e-mail n’étaient pas envoyées aux clients après la mi
 
    ```
    mutation {
-   	    createCustomer(
-   		    input: {
-   			    firstname: "Test"
-   			    lastname: "User"
-   			    email: "test@test.com"
-   			    password: "Admin@123"
-   			    is_subscribed: true
-   		    }
-   	    ) {
-   		    customer {
-   			    created_at
-   		    }
-   	    }
+       createCustomer(
+           input: {
+               firstname: "Test"
+               lastname: "User"
+               email: "test@test.com"
+               password: "Admin@123"
+               is_subscribed: true
+           }
+       ) {
+           customer {
+               created_at
+           }
+       }
    }
    ```
 
@@ -61,7 +61,7 @@ Les notifications par e-mail n’étaient pas envoyées aux clients après la mi
    ```
    mutation {
    generateCustomerToken(email: "test@test.com", password: "Admin@123") {
-   	    token
+       token
    }
    }
    ```
@@ -70,11 +70,11 @@ Les notifications par e-mail n’étaient pas envoyées aux clients après la mi
 
    ```
    mutation {
-   	    updateCustomerEmail(email: "test+updated@test.com", password: "Admin@123") {
-   		    customer {
-   			    email
-   		    }
-   	    }
+       updateCustomerEmail(email: "test+updated@test.com", password: "Admin@123") {
+           customer {
+               email
+           }
+       }
    }
    ```
 
@@ -91,7 +91,7 @@ Seul un e-mail d’abonnement est envoyé à la nouvelle adresse ; l’e-mail de
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

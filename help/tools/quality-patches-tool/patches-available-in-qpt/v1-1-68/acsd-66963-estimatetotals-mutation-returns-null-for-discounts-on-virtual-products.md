@@ -4,13 +4,13 @@ description: Appliquez le correctif ACSD-66963 pour résoudre le problème d’A
 feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 0eede09026df98426cd3b6b1550be274c26d7e13
+exl-id: b62e48f5-a9d6-456a-97e7-96f740d8e927
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66963 : la mutation `estimateTotals` renvoie la valeur null pour les remises sur les produits virtuels
 
@@ -28,7 +28,7 @@ Le correctif ACSD-66963 corrige le problème où `estimateTotals` renvoie *null*
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -81,60 +81,59 @@ La mutation `estimateTotals` renvoie la valeur *null* pour les remises lorsqu’
 
 Les informations de remise sont incluses pour les paniers contenant uniquement des produits virtuels.
 
-     »
-    &lbrace;
-    « data »: &lbrace;
-    « estimateTotals »: &lbrace;
-    « cart »: &lbrace;
-    « prices »: &lbrace;
-    « remises »: &lbrack;
-    &lbrace;
-    « amount »: &lbrace;
-    « value »: 100.5,
-    « currency »: « USD »
-    &rbrace;,
-    « label »: « Un second code de remise pour le test »,
-    « coupon »: &lbrace;
-    « code »: « z3r0c00l »
-    &rbrace;,
-    « applied_to »: « ITEM »,
-    « type »: null
-    &rbrace;
-    &rbrack;
-    &rbrace;
-    &rbrace;,
-    « extensions »: 
-    &rbrace;
-    «{}
-     
-     
+```
+    {
+      "data": {
+        "estimateTotals": {
+          "cart": {
+            "prices": {
+              "discounts": [
+                {
+                  "amount": {
+                    "value": 100.5,
+                    "currency": "USD"
+                  },
+                  "label": "A second discount code for testing",
+                  "coupon": {
+                    "code": "z3r0c00l"
+                  },
+                  "applied_to": "ITEM",
+                  "type": null
+                }
+              ]
+            }
+          }
+        }
+      },
+      "extensions": {}
+    }
+```
 
 <u>Résultats réels</u> :
 
 Les informations de remise sont renvoyées comme *nulles* pour les paniers contenant uniquement des produits virtuels.
 
-     »
-    &lbrace;
-    « data »: &lbrace;
-    « estimateTotals »: &lbrace;
-    « cart »: &lbrace;
-    « prices »: &lbrace;
-    « remises »: null
-    &rbrace;
-    &rbrace;
-    &rbrace;
-    &rbrace;,
-    « extensions »: {}
-    &rbrace;
-     »
- »
+```
+    {
+      "data": {
+        "estimateTotals": {
+          "cart": {
+            "prices": {
+              "discounts": null
+            }
+          }
+        }
+      },
+      "extensions": {}
+    }
+```
 
 ## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

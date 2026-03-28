@@ -3,7 +3,7 @@ title: Utiliser Valkey pour le stockage de session
 description: Découvrez comment configurer Valkey pour le stockage de session dans Adobe Commerce. Découvrez les étapes de configuration, les options de configuration et les techniques d’optimisation des performances.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 1%
@@ -44,7 +44,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | session-save-valkey-port | port | Port d&#39;écoute du serveur Valkey. | 6379 |
 | session-save-valkey-password | mot de passe | Indique un mot de passe si votre serveur Valkey requiert une authentification. | vide |
 | session-save-valkey-timeout | timeout | Timeout de connexion, en secondes. | 2,5 |
-| session-save-valkey-persistent-id | persistent_identifier | Chaîne unique pour activer les connexions persistantes (par exemple, sess-db0).<br>[Problèmes connus liés à phpredis et php-fpm](https://github.com/phpredis/phpredis/issues/70). |
+| session-save-valkey-persistent-id | persistent_identifier | Chaîne unique pour activer les connexions persistantes (par exemple, sess-db0).<br>[Problèmes connus liés à phpredis et php-fpm](https://github.com/phpredis/phpredis/issues/70). |  |
 | session-save-value-db | de données | Numéro de base de données Valkey unique, recommandé pour se protéger contre la perte de données.<br><br>**Important** : si vous utilisez Valkey pour plusieurs types de mise en cache, les numéros de base de données doivent être différents. Il est recommandé d’attribuer le numéro de base de données de mise en cache par défaut à `0`, le numéro de base de données de mise en cache de page à `1` et le numéro de base de données de stockage de session à `2`. | 0 |
 | session-save-valkey-compression-threshold | compression_seuil | Définissez cette valeur sur `0` pour désactiver la compression (recommandé lorsque `suhosin.session.encrypt = On`). | 2048 |
 | session-save-valkey-compression-lib | compression_library | Options : gzip, lzf, lz4 ou snappy. | gzip |

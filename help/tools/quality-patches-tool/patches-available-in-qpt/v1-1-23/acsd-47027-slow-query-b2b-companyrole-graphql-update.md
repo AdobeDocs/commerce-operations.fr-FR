@@ -5,7 +5,7 @@ feature: B2B, Companies, GraphQL, Roles/Permissions
 role: Admin
 exl-id: 91eb0297-1ba8-47b7-9581-29bee835843c
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-47027 : mise à jour de [!UICONTROL CompanyRole] B2B à requête lente [!DNL GraphQL]
 
-Le correctif ACSD-47027 résout le problème en raison duquel la mise à jour [!UICONTROL CompanyRole] de la [!DNL GraphQL] B2B de requête lente ne fonctionne pas comme prévu. Ce correctif est disponible lorsque la version 1.1.23 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-47027. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-47027 résout le problème en raison duquel la mise à jour [!UICONTROL CompanyRole] de la [!DNL GraphQL] B2B de requête lente ne fonctionne pas comme prévu. Ce correctif est disponible lorsque la version 1.1.23 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-47027. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -26,7 +26,7 @@ Le correctif ACSD-47027 résout le problème en raison duquel la mise à jour [!
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -44,45 +44,45 @@ Installez le module B2B .
 1. Activez [!UICONTROL dev] journal des requêtes à l’aide de `bin/magento dev:que:enab`.
 1. Envoyez maintenant la requête de [!DNL GraphQL] ci-dessous (l’identifiant est l’identifiant de rôle codé en [!UICONTROL base64]) :
 
-   <pre><code>
-   mutation &lbrace;
+   ```
+   mutation {
    updateCompanyRole(
-      input: &lbrace;
+      input: {
          id: "Mg=="
-         permissions: &lbrack;
+         permissions: [
          "Magento_Company::view"
          "Magento_Company::view_account"
          "Magento_Company::user_management"
          "Magento_Company::roles_view"
-        &rbrack;
-      &rbrace;
-    ) &lbrace;
-      role &lbrace;
+        ]
+      }
+    ) {
+      role {
          id
-
+   
          name
-
-         permissions &lbrace;
+   
+         permissions {
          id
-
+   
          text
-
-         children &lbrace;
+   
+         children {
             id
-
+   
             text
-
-            children &lbrace;
+   
+            children {
                id
-
+   
                text
-             &rbrace;
-           &rbrace;
-         &rbrace;
-       &rbrace;
-     &rbrace;
-   &rbrace;
-   </code></pre>
+             }
+           }
+         }
+       }
+     }
+   }
+   ```
 
 1. Vérifiez le journal des requêtes.
 1. Vous pouvez constater que la requête ci-dessus est exécutée. Cette requête est exécutée en `app/code/Magento/CompanyGraphQl/Model/Company/Role/ValidateRole.php::validateResources`.
@@ -100,14 +100,14 @@ Adobe Commerce exécute une requête sans aucun filtre. Lorsqu’il y a un grand
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud . 
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud . 
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide de [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

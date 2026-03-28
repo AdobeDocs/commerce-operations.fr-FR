@@ -1,5 +1,5 @@
 ---
-source-git-commit: fd421e8c2455a2b45d3f3cc93573d2a609e4936d
+source-git-commit: adda02b9d05b66ab066f110e877584bc1c77515d
 workflow-type: tm+mt
 source-wordcount: '2408'
 ht-degree: 0%
@@ -281,7 +281,7 @@ _AC-14078 - [Contribution du code GitHub](https://github.com/magento/magento2/co
 
 Les utilisateurs administrateurs doivent désormais configurer un seul des fournisseurs 2FA activés par le commerçant (par exemple, l’authentificateur Google ou U2F) pour accéder au panneau d’administration. D’autres fournisseurs activés peuvent être configurés ultérieurement, si nécessaire. Auparavant, lorsque plusieurs fournisseurs 2FA étaient activés, chaque utilisateur administrateur devait configurer tous les fournisseurs activés avant de pouvoir se connecter, ce qui entraînait des frictions pour les utilisateurs qui n’avaient pas accès à tous les facteurs.
 
-_AC-8253 - [Contribution du code GitHub](https://github.com/magento/security-package/commit/71e7936b)_
+_AC-8253 - [Contribution du code GitHub](https://github.com/magento-commerce/security-package/commit/41e5a26bd36528cb6b1bdc27b249696a2c721779)_
 
 ### Expédition
 
