@@ -50,7 +50,7 @@ Cette fonctionnalité améliore la flexibilité du marchandisage et l’efficaci
 >
 >Les participants de Beta devront recréer toutes les règles de marchandisage existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
 
-Pour partager vos commentaires pendant que vous utilisez cette fonctionnalité bêta, envoyez un e-mail à [](mailto:commerce-storefront-services@adobe.com).
+Pour partager vos commentaires pendant que vous utilisez cette fonctionnalité bêta, envoyez un e-mail à [&#128279;](mailto:commerce-storefront-services@adobe.com).
 
 ### Recommandations de produits à l’échelle mondiale et par vue de catalogue (Beta publique)
 
@@ -75,7 +75,7 @@ Cette amélioration permet aux commerçants de proposer des expériences de déc
 >
 >Les participants de Beta devront recréer toutes les unités de recommandation existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
 
-Pour partager vos commentaires pendant que vous utilisez cette fonctionnalité bêta, envoyez un e-mail à [](mailto:commerce-storefront-services@adobe.com).
+Pour partager vos commentaires pendant que vous utilisez cette fonctionnalité bêta, envoyez un e-mail à [&#128279;](mailto:commerce-storefront-services@adobe.com).
 
 ### Recherche sémantique : expériences d’achat plus intelligentes et adaptées au contexte (Private Beta)
 
@@ -90,7 +90,7 @@ Cette technologie résout une limite majeure de la recherche traditionnelle : le
 - Gestion intelligente des requêtes vagues, mal orthographiées ou composites
 - Compréhension du langage naturel et conversationnel
 
-Pour demander une invitation au programme bêta, envoyez un e-mail à [](mailto:commerce-storefront-services@adobe.com). L’équipe d’Adobe répondra avec les étapes suivantes et les conditions d’éligibilité.
+Pour demander une invitation au programme bêta, envoyez un e-mail à [&#128279;](mailto:commerce-storefront-services@adobe.com). L’équipe d’Adobe répondra avec les étapes suivantes et les conditions d’éligibilité.
 
 ### Service de correctifs de Cloud Automation (Private Beta)
 
@@ -128,7 +128,7 @@ Chaque version alpha et bêta d’Adobe Commerce Foundation comprend toutes les 
 - Améliorations de GraphQL
 - Correctifs de qualité générale
 - Contributions de la Communauté
-- Modifications requises pour prendre en charge la compatibilité avec les [services ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- Modifications requises pour prendre en charge la compatibilité avec les [services &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### Convention et planning d’affectation des noms
 
@@ -150,7 +150,7 @@ Consultez le [calendrier des versions](schedule.md) pour obtenir la liste des da
 
 Les versions alpha et bêta d’Adobe Commerce sont distribuées de la même manière que toute autre version de correctif Adobe Commerce : en tant que métapaquets du compositeur sur `https://repo.magento.com`. Le code source est disponible sur [GitHub](https://github.com/magento/magento2).
 
-Voir [ Démarrage rapide de l’installation du compositeur](../installation/composer.md) pour plus d’informations.
+Voir [&#x200B; Démarrage rapide de l’installation du compositeur](../installation/composer.md) pour plus d’informations.
 
 #### Rapports sur les événements
 

@@ -46,7 +46,7 @@ bin/magento config:set --lock-config dev/js/merge_files 1
 
 >[!NOTE]
 >
->Adobe déconseille d’activer **[!UICONTROL Merge JavaScript Files]**. Voir [ Fusion de fichiers JS (non recommandée)](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files).
+>Adobe déconseille d’activer **[!UICONTROL Merge JavaScript Files]**. Voir [&#x200B; Fusion de fichiers JS (non recommandée)](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files).
 
 1. Activez le mode de production.
 
@@ -69,7 +69,7 @@ Erreurs *404* dans la console du navigateur pour le `tiny_mce_6/plugins/help/js/
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool]
-* Adobe Commerce sur les infrastructures cloud : [ Mises à niveau et correctifs > Appliquer des correctifs ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [&#x200B; Mises à niveau et correctifs > Appliquer des correctifs &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

@@ -1898,7 +1898,7 @@ Le système respecte désormais la norme de codage en supprimant la balise `@aut
 
 _AC-8356 - [Problème GitHub](https://github.com/magento/magento2/issues/37250) - [Contribution du code GitHub](https://github.com/magento/magento2/pull/37000)_
 
-#### L’espace dans la syntaxe editorconfig rompt la règle pour les `[{composer,auth}.json]`
+#### L’espace dans la syntaxe editorconfig rompt la règle pour les `[&lbrace;composer,auth&rbrace;.json]`
 
 Le système applique désormais correctement un retrait de 4 espaces aux fichiers composer et auth.json, suite à un correctif apporté à une erreur de syntaxe dans editorconfig. Auparavant, en raison d’un espace dans la syntaxe editorconfig, ces fichiers étaient incorrectement formatés avec un retrait de 2 espaces.
 
@@ -2042,7 +2042,7 @@ Le problème a été corrigé après l’application de la vérification lors de
 
 _ACP2E-2653 - [contribution du code GitHub](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### L’appel aux produits GraphQL contenant le filtre de prix `{from:"0"}` ne renvoie aucun résultat
+#### L’appel aux produits GraphQL contenant le filtre de prix `&lbrace;from:"0"&rbrace;` ne renvoie aucun résultat
 
 Auparavant, la recherche de produits GraphQL avec un filtre à prix nuls ne renvoyait aucun résultat en raison d’une exception levée. Désormais, la recherche renvoie les résultats attendus.
 

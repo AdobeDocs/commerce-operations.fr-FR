@@ -1,6 +1,6 @@
 ---
 title: Installation d’Apache pour les déploiements On-Premise
-description: Découvrez comment installer et configurer Apache pour les déploiements d’Adobe Commerce sur site. Activez les modules requis, les réécritures et les paramètres `.htaccess`.
+description: Découvrez comment installer et configurer Apache pour les déploiements d’Adobe Commerce sur site. Activez les modules requis, les réécritures et les paramètres &grave;.htaccess&grave;.
 feature: Install, Configuration
 badgePaas: label="On-premise" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
@@ -20,7 +20,7 @@ Adobe prend en charge les versions d’Apache répertoriées dans la [configurat
 Commencez par la section correspondant à votre environnement :
 
 - Si Apache est déjà installé, commencez par [vérifier les exigences d’Apache](#review-apache-requirements).
-- Si vous devez installer ou mettre à niveau Apache sur Ubuntu, accédez à [ Installer ou mettre à niveau Apache sur Ubuntu ](#installing-or-upgrading-apache-on-ubuntu).
+- Si vous devez installer ou mettre à niveau Apache sur Ubuntu, accédez à [&#x200B; Installer ou mettre à niveau Apache sur Ubuntu &#x200B;](#installing-or-upgrading-apache-on-ubuntu).
 - Si vous devez installer Apache sous CentOS, accédez à [Installer Apache sous CentOS](#installing-apache-on-centos).
 
 ## Vérifier les exigences d’Apache
@@ -145,7 +145,7 @@ Lorsque vous configurez les réécritures du serveur Apache, vous devez spécifi
 
 ### Mettre à niveau Apache sur Ubuntu
 
-Si Apache est déjà installé et que vous utilisez une version antérieure à `2.4`, effectuez une mise à niveau vers Apache `2.4` ou vers la dernière version prise en charge par la version d’Adobe Commerce que vous avez déployée. Voir [ Configuration requise ](../../system-requirements.md).
+Si Apache est déjà installé et que vous utilisez une version antérieure à `2.4`, effectuez une mise à niveau vers Apache `2.4` ou vers la dernière version prise en charge par la version d’Adobe Commerce que vous avez déployée. Voir [&#x200B; Configuration requise &#x200B;](../../system-requirements.md).
 
 1. Mettre à jour les informations sur le package :
 
