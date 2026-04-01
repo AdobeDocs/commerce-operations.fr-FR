@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 1dcfbd53f79c83dbf6c44ffce952de101f7e01f1
 workflow-type: tm+mt
-source-wordcount: '27921'
+source-wordcount: '27999'
 ht-degree: 0%
 
 ---
@@ -132,6 +132,8 @@ _AC-10782 - [Problème GitHub](https://github.com/magento/magento2/issues/38331)
 
 #### Mise à jour du mot de passe de l’administrateur.
 
+Aucune description disponible.
+
 _AC-10886 - [Problème GitHub](https://github.com/magento/magento2/issues/38352) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/4bca5dfe)_
 
 #### plantage de l’ajout d’adresse à mon compte lors de l’enregistrement
@@ -171,6 +173,8 @@ Le système permet désormais de définir les champs « Case à cocher Se connec
 _AC-13000 - [Problème GitHub](https://github.com/magento/magento2/issues/32329) - [Contribution du code GitHub](https://github.com/magento/magento2/pull/32359)_
 
 #### Page d’accueil de l’interface utilisateur front-end dans le menu déroulant de mon profil n’est pas présent.(par intermittence)
+
+Aucune description disponible.
 
 _AC-14299_
 
@@ -237,6 +241,8 @@ _ACP2E-3038 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 #### l’attribut d’adresse du client personnalisé « select » ne s’affiche pas pour la nouvelle adresse du client
 
+Aucune description disponible.
+
 _AC-2341 - [Problème GitHub](https://github.com/magento/magento2/issues/34950)_
 
 ### Interface utilisateur d’administration
@@ -285,9 +291,13 @@ _AC-13529 - [Contribution du code GitHub](https://github.com/magento/magento2/co
 
 #### Lorsque le nombre maximal de demandes de réinitialisation de mot de passe est défini sur « supérieur à 0 », par exemple : 3 , « Les messages d’erreur de dépassement de limite sont envoyés avant d’atteindre la limite, c’est-à-dire à partir de la deuxième fois.
 
+Aucune description disponible.
+
 _AC-13767_
 
 #### Bien que le Nombre maximal de demandes de réinitialisation de mot de passe soit défini sur 0 ( désactivé) , « Les messages d’erreur de dépassement de limite sont envoyés à partir de la 2e fois »
+
+Aucune description disponible.
 
 _AC-13768_
 
@@ -298,6 +308,8 @@ L&#39;astérisque rouge précédent ne s&#39;affichait pas pour le numéro de t�
 _AC-13850 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/c699c206)_
 
 #### Dans Admin, il n’est pas possible de cliquer sur le bouton Envoyer la commande lorsque nous tentons de la réorganiser. (par intermittence)
+
+Aucune description disponible.
 
 _AC-14300_
 
@@ -605,6 +617,8 @@ _ACP2E-3187 - [Contribution du code GitHub](https://github.com/magento/magento2/
 
 #### Package 2.4.8-bêta102 L’édition Entreprise échoue avec des exceptions d’application
 
+Aucune description disponible.
+
 _AC-13501_
 
 #### Les produits affectés au catalogue partagé ne sont pas reflétés sur le front-end lorsque l’index partiel est exécuté
@@ -684,6 +698,8 @@ _ACP2E-3391_
 
 #### Le bouton Passage en caisse express d’administration est désactivé.
 
+Aucune description disponible.
+
 _AC-14293_
 
 #### Payer via LPM
@@ -699,6 +715,8 @@ Le système permet désormais des méthodes de paiement express pour les produit
 _LOT-3368_
 
 #### Erreur d’échec de la vérification du fichier CSV
+
+Aucune description disponible.
 
 _LOT-3369_
 
@@ -810,9 +828,13 @@ _AC-13302 - [Problème GitHub](https://github.com/magento/magento2/issues/39292)
 
 #### Le produit du registre des cadeaux ne s&#39;affiche pas correctement
 
+Aucune description disponible.
+
 _AC-13797_
 
 #### Le produit du registre des cadeaux ne s&#39;affiche pas correctement
+
+Aucune description disponible.
 
 _AC-13841_
 
@@ -1531,6 +1553,8 @@ _AC-12283 - [Problème GitHub](https://github.com/magento/magento2/issues/38845)
 
 #### L’arborescence de catégorie du widget n’est pas rendue correctement.
 
+Aucune description disponible.
+
 _AC-12692 - [Problème GitHub](https://github.com/magento/magento2/issues/39008) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/58e40ceb)_
 
 #### Impossible de voir le message « Utilisation de la valeur par défaut » lors de la modification du thème dans la page de configuration de la conception
@@ -1909,6 +1933,8 @@ _AC-13149 - [Problème GitHub](https://github.com/magento/magento2/issues/39219)
 
 #### échec de la configuration :upgrade avec la version 11.4 de MariaDB en raison de modifications du jeu de caractères et du classement
 
+Aucune description disponible.
+
 _AC-13247_
 
 #### [Problème ] supprimez tous les paramètres marketing get pour réduire le cache
@@ -1971,7 +1997,7 @@ Le système respecte désormais la norme de codage en supprimant la balise `@aut
 
 _AC-8356 - [Problème GitHub](https://github.com/magento/magento2/issues/37250) - [Contribution du code GitHub](https://github.com/magento/magento2/pull/37000)_
 
-#### L’espace dans la syntaxe editorconfig rompt la règle pour les `[&lbrace;composer,auth&rbrace;.json]`
+#### L’espace dans la syntaxe editorconfig rompt la règle pour les `[{composer,auth}.json]`
 
 Le système applique désormais correctement un retrait de 4 espaces aux fichiers composer et auth.json, suite à un correctif apporté à une erreur de syntaxe dans editorconfig. Auparavant, en raison d’un espace dans la syntaxe editorconfig, ces fichiers étaient incorrectement formatés avec un retrait de 2 espaces.
 
@@ -2085,6 +2111,8 @@ _AC-7976 - [Problème GitHub](https://github.com/magento/magento2/issues/36877) 
 
 #### 2.4.8-beta1 Les rapports EE ne sont pas générés en raison d’une exception magento
 
+Aucune description disponible.
+
 _AC-13011_
 
 ### Framework, framework d’interface utilisateur
@@ -2127,7 +2155,7 @@ Le problème a été corrigé après l’application de la vérification lors de
 
 _ACP2E-2653 - [contribution du code GitHub](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### L’appel aux produits GraphQL contenant le filtre de prix `&lbrace;from:"0"&rbrace;` ne renvoie aucun résultat
+#### L’appel aux produits GraphQL contenant le filtre de prix `{from:"0"}` ne renvoie aucun résultat
 
 Auparavant, la recherche de produits GraphQL avec un filtre à prix nuls ne renvoyait aucun résultat en raison d’une exception levée. Désormais, la recherche renvoie les résultats attendus.
 
@@ -2662,13 +2690,19 @@ _ACP2E-3003 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 #### [Braintree ] Rembourser la transaction de stockage en ligne en tant que transactionid-remboursement
 
+Aucune description disponible.
+
 _LOT-3394_
 
 #### [] + [CLOUD] Les commandes Braintree (carte de crédit) ne peuvent pas fractionner les frais
 
+Aucune description disponible.
+
 _LOT-3421_
 
 #### Le certificat SSL de [] [Cloud]Braintree expire le 30 juin
+
+Aucune description disponible.
 
 _LOT-3422_
 
@@ -2981,6 +3015,8 @@ _AC-11474 - [Problème GitHub](https://github.com/magento/magento2/issues/38486)
 
 #### La navigation dans l’arborescence des catégories entraîne des erreurs dans Redis : « La session Redis a dépassé les connexions simultanées »
 
+Aucune description disponible.
+
 _AC-12571 - [Problème GitHub](https://github.com/magento/magento2/issues/38851) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/0611e750)_
 
 #### Problèmes de CSP combinés avec dev/css/use_css_critical_path
@@ -3115,6 +3151,8 @@ Le système affiche désormais correctement le prix des produits simples lorsqu�
 _AC-11810 - [Problème GitHub](https://github.com/magento/magento2/issues/38603)_
 
 #### Erreur d’arrondi de centime dans la règle de catalogue
+
+Aucune description disponible.
 
 _AC-13855 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/276e0acd)_
 
@@ -3335,6 +3373,8 @@ _ACP2E-3383 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 #### La deuxième règle de prix de panier n’est pas appliquée si la première règle de panier est déjà appliquée.
 
+Aucune description disponible.
+
 _AC-13751_
 
 ### Rechercher
@@ -3346,6 +3386,8 @@ Le système affiche désormais correctement les résultats de la recherche sur l
 _AC-13053 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/3ea26621)_
 
 #### magento/module-open-search dépend d’une branche opensearch-php inexistante
+
+Aucune description disponible.
 
 _AC-13721 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/05dc0bbf)_
 
@@ -3396,6 +3438,8 @@ Assurez-vous que les taux d’onduleur sont visibles dans le passage en caisse e
 _AC-11938 - [Problème GitHub](https://github.com/magento/magento2/issues/38618) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/493e01f5)_
 
 #### Mises à jour des instructions de configuration « sandbox » et « prod » du REST UPS dans devdoc
+
+Aucune description disponible.
 
 _AC-12938_
 
@@ -3505,9 +3549,13 @@ _AC-13362 - [Problème GitHub](https://github.com/magento/magento2/issues/31399)
 
 #### MAGETWO-95118 : vérification du comportement avec le panier persistant après l’expiration de la session
 
+Aucune description disponible.
+
 _AC-13478 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/7d5e3906)_
 
 #### Échec des tests d’intégration Magento\NegotiableQuote\Controller\Quote\DownloadTest::testCompanyManagerDownloadWithNQSubPermission
+
+Aucune description disponible.
 
 _AC-13716_
 
@@ -3518,6 +3566,8 @@ Auparavant, si la base de données contenait des enregistrements sur la règle c
 _AC-13722_
 
 #### Correction des tests statiques pour permettre leur utilisation par des extensions tierces
+
+Aucune description disponible.
 
 _AC-13848 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/9e383b4d)_
 
@@ -3584,6 +3634,8 @@ Cette requête d’extraction améliore le message d’erreur lorsque la configu
 _AC-13472 - [Problème GitHub](https://github.com/magento/magento2/issues/36761) - [Contribution du code GitHub](https://github.com/magento/magento2/pull/38971)_
 
 #### Erreurs d&#39;obsolescence de PHP 8.4 provoquant des échecs de build dans 2.4-development
+
+Aucune description disponible.
 
 _AC-14004 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/1da9ba6f)_
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 34e2262ad8b4fa1a2e7ade8d3b16258f9873822d
 workflow-type: tm+mt
-source-wordcount: '26968'
+source-wordcount: '26949'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Désormais, les API valident correctement les entrées et renvoient une erreur 4
 
 _AC-6419 - [Problème GitHub](https://github.com/magento/magento2/issues/35934) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Erreur de serveur interne dans le point d’entrée de l’API `/V1/order/&lbrace;orderId&rbrace;/ship`
+#### Erreur de serveur interne dans le point d’entrée de l’API `/V1/order/{orderId}/ship`
 
 Le système corrige désormais l’erreur de serveur interne dans `/V1/order/{orderId}/ship` point d’entrée de l’API et renvoie une erreur 400, car la requête est incorrecte.
 
@@ -150,7 +150,7 @@ _ACP2E-4227 - [Contribution du code GitHub](https://github.com/magento/magento2/
 
 Avant la correction, vous étiez autorisé à créer des produits de carte cadeau qui n’incluaient pas de montant dans la portée globale. Avec le correctif, une validation a été ajoutée pour vérifier les montants dans la portée globale.
 
-_ACP2E-4395 - [Problème GitHub](https://mcstaging.panini.it/shp_ita_it/)_
+_ACP2E-4395_
 
 ### API, panier et passage en caisse
 
@@ -410,7 +410,7 @@ _AC-14266 - [Contribution du code GitHub](https://github.com/magento/magento2/co
 
 Adobe Commerce envoie désormais avec succès des e-mails d’enregistrement lorsqu’une adresse de chemin de retour personnalisée est configurée pour SMTP. Auparavant, sur Adobe Commerce 2.4.8 classique avec system/smtp/set_return_path défini sur 2 et system/smtp/return_path_email défini sur une adresse personnalisée, l’enregistrement du client s’est terminé mais l’e-mail d’enregistrement n’a pas été envoyé, et Adobe Commerce a consigné cette erreur : Symfony\Component\Mime\Exception\LogicException : l’en-tête « Sender » doit être une instance de « Symfony\Component\Mime\Header\MailboxHeader » (obtenu « Symfony\Component\Mime\Header\MailboxListHeader »).
 
-_AC-14520 - [Problème GitHub](https://github.com/magento/magento2/issues/39823) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/1e14bd72) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/1514117f)_
+_AC-14520 - [Problème GitHub](https://github.com/magento/magento2/issues/39823) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/1e14bd72)_
 
 #### L’ordre d’actualisation n’obtient pas les dernières données d’attribut personnalisé
 
@@ -525,13 +525,13 @@ _ACP2E-4044 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 Le filtre et la colonne Anniversaire utiliseront le format unifié J/J/a, identique au filtre/à la colonne « Client depuis »
 
-_ACP2E-4052 - [Problème GitHub](https://stg1.navi-online.kakuyasu.co.jp/adminCgWN7zCh/admin/system_account/index/key/d6fdbee50ff25178d1fef981ec823c5e82e8cee6959717790031bb900c4d6633/) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/52f46328)_
+_ACP2E-4052 - [contribution du code GitHub](https://github.com/magento/magento2/commit/52f46328)_
 
 #### Blocs blancs apparaissant des deux côtés de l’en-tête de la grille d’administration
 
 Correction d’un problème d’alignement visuel dans les grilles d’administration. Auparavant, lors du défilement horizontal dans les grilles de produit du panneau d’administration, les blocs blancs semblaient mal alignés sur les côtés gauche et droit de l’en-tête de grille. Les éléments d’en-tête de grille conservent désormais un alignement vertical correct lors du défilement, offrant ainsi une expérience visuelle plus nette aux administrateurs et administratrices qui gèrent des catalogues de produits volumineux.
 
-_ACP2E-4104 - [Problème GitHub](https://mcprod.pap-store.acer.com/index.html)_
+_ACP2E-4104_
 
 #### Le composant d’interface utilisateur fileUploader ne fonctionne pas correctement sous 2.4.8-p1/ 2.4-develop
 
@@ -585,7 +585,7 @@ _ACP2E-4336 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 Correction du problème en raison duquel les champs de configuration système pouvaient être activés après le chargement de la page, bien que l’option « Utiliser par défaut/site web » soit cochée.
 
-_ACP2E-4337 - [Problème GitHub](https://mcstaging.pap-store.acer.com) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/31258bf6)_
+_ACP2E-4337 - [contribution du code GitHub](https://github.com/magento/magento2/commit/31258bf6)_
 
 #### Le graphique d’ordre du tableau de bord d’administration s’anime en taille finale
 
@@ -664,7 +664,7 @@ Cette requête de modification ajoute une liste autorisée CSP au module Google 
 
 _AC-16311 - [Problème GitHub](https://github.com/magento/magento2/issues/40051) - [Contribution du code GitHub](https://github.com/magento/magento2/pull/40032)_
 
-#### Le rapport d’utilisateur du journal des actions d’administration n’affiche pas les détails du filtre utilisé lors de l’application des filtres
+#### Le rapport de l’utilisateur du journal des actions d’administration n’affiche pas les détails du filtre utilisé lors de l’application des filtres
 
 Avant la correction, les paramètres de filtrage n’étaient pas consignés dans le rapport d’activité d’administration. Désormais, après le correctif, toutes les données de requête sont consignées.
 
@@ -898,7 +898,7 @@ _ACP2E-3541 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 #### La sélection des adresses n’est pas enregistrée lorsque nous « Extrayons avec plusieurs adresses »
 
-Avant la correction lors de l’annulation de l’option d’expédition multiple, l’adresse n’était pas présélectionnée lors du retour à l’expédition multiple. Désormais, l’adresse par défaut est remplacée par l’une des sélections effectuées dans l’écran d’expédition multiple.
+Avant la correction lors de l&#39;annulation de l&#39;option multishipping, l&#39;adresse n&#39;était pas présélectionnée lors du retour à la multishipping. Désormais, l’adresse par défaut est remplacée par l’une des sélections effectuées dans l’écran d’expédition multiple.
 
 _ACP2E-3646 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/6ea61121)_
 
@@ -942,7 +942,7 @@ _ACP2E-4223 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 Correction du problème de prix du produit groupé sur la page du panier pour les magasins multidevises
 
-_ACP2E-4245 - [Problème GitHub](https://www.techbuyer.com/) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/cbca0396)_
+_ACP2E-4245 - [contribution du code GitHub](https://github.com/magento/magento2/commit/cbca0396)_
 
 #### Gérer les problèmes d’étendue du magasin de panier
 
@@ -991,7 +991,7 @@ _ACP2E-3885 - [contribution du code GitHub](https://github.com/magento/magento2/
 La sélection d’un magasin lors du passage en caisse à l’aide de « Choisir en magasin » n’échoue plus en raison des longues URL lorsque de nombreux produits se trouvent dans le panier.
 Auparavant, cela déclenchait une erreur 414 en raison d’URL trop longues générées lors de la sélection de la boutique, empêchant les clients de terminer le passage en caisse.
 
-_ACP2E-4266 - [Problème GitHub](https://mcstaging.casamyers.com.mx/) - [Contribution du code GitHub](https://github.com/magento/inventory/commit/ae1f272f)_
+_ACP2E-4266 - [Contribution du code GitHub](https://github.com/magento/inventory/commit/ae1f272f)_
 
 ### Panier et passer en caisse, commande, produit
 
@@ -1007,7 +1007,7 @@ _ACP2E-3905_
 
 Restriction de la vérification du solde de la carte cadeau avec la portée du site Web attribuée.
 
-_ACP2E-4379 - [problème GitHub](https://www.panini.it)_
+_ACP2E-4379_
 
 ### Panier et passage en caisse, SEO
 
@@ -1023,7 +1023,7 @@ _ACP2E-3699_
 
 Avant la correction, les mixins n’avaient pas été chargés dans le panier et lors du passage en caisse lorsque la miniaturisation et le regroupement étaient activés. Après le correctif, tous les mixins doivent se charger comme prévu.
 
-_ACP2E-4128 - [Problème GitHub](https://ansg.integration-5ojmyuq-f46gejjrfa7be.ap-3.magentosite.cloud/) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/e457c5e2)_
+_ACP2E-4128 - [contribution du code GitHub](https://github.com/magento/magento2/commit/e457c5e2)_
 
 ### Panier et passer en caisse, expédition
 
@@ -1100,7 +1100,7 @@ Ce comportement est cohérent avec la conception par défaut de Magento, où la 
 
 _AC-13857 - [Problème GitHub](https://github.com/magento/magento2/issues/33559)_
 
-#### [] Erreur PHP ignorée
+#### [] Erreur PHP inconnue
 
 Modification du nom d’une variable de boucle afin d’ajouter correctement les données « _cache_instance_product_ids » sur le produit donné à utiliser lors des appels suivants.
 
@@ -1195,6 +1195,8 @@ Correction d’un problème de mise en cache avec les galeries de produits confi
 _AC-16066 - [Problème GitHub](https://github.com/magento/magento2/issues/33965) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/3b5ac075)_
 
 #### La suppression de l’option de liste déroulante ne fonctionne pas lors de la création d’un attribut sur la page de produit
+
+Aucune description disponible.
 
 _AC-16437_
 
@@ -1307,7 +1309,7 @@ Correction d’un problème lié aux entrées en double lors des mises à jour p
 
 _ACP2E-4159 - [contribution du code GitHub](https://github.com/magento/magento2/commit/a1c57b2e)_
 
-#### [CLOUD] Comparer les produits Non-correspondance du nombre de produits Problème pour différents magasins
+#### [CLOUD] Comparer les produits Incompatibilité de nombre Problème pour différents magasins
 
 La comparaison de la liste de produits fonctionne désormais correctement après le passage à une autre boutique
 
@@ -1676,7 +1678,7 @@ _AC-15336 - [Contribution du code GitHub](https://github.com/magento/magento2/co
 
 ### Framework
 
-#### Code de complétion du module désactivé.
+#### Compilation du code d’un module désactivé
 
 Cette demande d’extraction désactive les modules avant la compilation du code.
 
@@ -1873,7 +1875,7 @@ L’envoi d’e-mails SMTP avec TLS fonctionne désormais comme prévu.
 Auparavant, l’envoi d’e-mails via SMTP avec TLS entraînait l’erreur : error:1408F10B:SSL routines:ssl3_get_record:bad version number.
 AC-14883
 
-_AC-14883 - [Problème GitHub](https://github.com/magento/magento2/issues/39947) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/3717e6cb) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/8b453942) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/d3ea191d)_
+_AC-14883 - [Problème GitHub](https://github.com/magento/magento2/issues/39947) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/3717e6cb) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/d3ea191d)_
 
 #### [Problème] Correction d’un problème de simultanéité dans le déploiement de contenu statique
 
@@ -1992,7 +1994,7 @@ La classe EmailMessage gère désormais correctement la récupération du corps 
 Auparavant, dans Magento 2.4.8-p2 avec magento/framework version 103.0.8-p2, la classe Magento\Framework\Mail\EmailMessage tentait d’appeler une méthode inexistante (getTextBody) sur l’objet de message électronique Symfony. Cette erreur se produisait lorsque des modules tiers ou des personnalisations utilisaient cette méthode pour le traitement des e-mails.
 Désormais, la classe EmailMessage n’appelle plus de méthodes non définies, ce qui empêche ces erreurs. AC-15446
 
-_AC-15446 - [Problème GitHub](https://github.com/magento/magento2/issues/40170) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/059fd469) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/e9412b24)_
+_AC-15446 - [Problème GitHub](https://github.com/magento/magento2/issues/40170) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/e9412b24)_
 
 #### [Les correctifs de données/schémas de Magento 2.3.x] getAliases() provoquent des erreurs lors de l’`setup:upgrade`
 
@@ -2001,6 +2003,8 @@ getAliases() provoque des erreurs lors de la configuration:upgrade, ce PR les co
 _AC-15559 - [Problème GitHub](https://github.com/magento/magento2/issues/31396) - [Contribution du code GitHub](https://github.com/magento/magento2/pull/38239)_
 
 #### Combinaison non autorisée de classements pour l&#39;opération
+
+Aucune description disponible.
 
 _AC-15614 - [Problème GitHub](https://github.com/magento/magento2/issues/40138) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/44329e9d)_
 
@@ -2011,6 +2015,8 @@ Ce PR met à jour la PHPDoc pour \Magento\Framework\DB\Adapter\AdapterInterface:
 _AC-15626 - [Problème GitHub](https://github.com/magento/magento2/issues/39598) - [Contribution du code GitHub](https://github.com/magento/magento2/pull/39581)_
 
 #### Combinaison non autorisée de classements dans le module urlrewrite
+
+Aucune description disponible.
 
 _AC-15647 - [Problème GitHub](https://github.com/magento/magento2/issues/40189) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/44329e9d)_
 
@@ -2076,6 +2082,8 @@ Cette requête PR garantit que le paramètre $maxAge dans le noyau PageCache est
 _AC-16313 - [Problème GitHub](https://github.com/magento/magento2/issues/40438) - [Contribution du code GitHub](https://github.com/magento/magento2/pull/36600)_
 
 #### De faux modules nécessitent un répertoire dev/ dans les référentiels d’extension
+
+Aucune description disponible.
 
 _AC-16487_
 
@@ -2275,7 +2283,7 @@ _ACP2E-4058 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 Correction d’un problème en raison duquel la fenêtre contextuelle de calendrier des attributs de date s’affichait hors écran lorsqu’elle était affectée à des groupes d’attributs personnalisés.
 
-_ACP2E-4060 - [Problème GitHub](https://integration-5ojmyuq-3ssteurpe3xzy.us-5.magentosite.cloud/) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/6dd3fa99)_
+_ACP2E-4060 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/6dd3fa99)_
 
 #### La vérification des autorisations ACL de production a provoqué une dégradation des performances - la méthode populateAcl est le goulot d’étranglement
 
@@ -2351,7 +2359,7 @@ _AC-8949 - [Contribution du code GitHub](https://github.com/magento/magento2/com
 
 #### La réponse GraphQL pour l&#39;emplacement de commande n&#39;inclut pas le message d&#39;exception
 
-Annulation de la modification précédente qui renvoyait des erreurs dans un format différent. Désormais, les erreurs potentielles sont renvoyées de manière cohérente, sans interrompre le schéma GraphQL. Ceci doit être ajouté en tant que BIC connu, approuvé par PM ici : https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
+Annulation de la modification précédente qui renvoyait des erreurs dans un format différent. Désormais, les erreurs potentielles sont renvoyées de manière cohérente, sans interrompre le schéma GraphQL. Ceci doit être ajouté en tant que BIC connu, approuvé par PM ici : https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
 
 _ACP2E-3399 - [contribution du code GitHub](https://github.com/magento/magento2/commit/9608ca21)_
 
@@ -2377,7 +2385,7 @@ _ACP2E-3785 - [Contribution du code GitHub](https://github.com/magento/magento2/
 
 Auparavant, avant ce correctif par le biais de la mutation updateGiftRegistry, l’attribut personnalisé du registre des cadeaux n’était pas modifié ou mis à jour par le biais de mutations GraphQL. Une fois ce correctif appliqué, l&#39;attribut dynamique du registre des cadeaux peut être mis à jour avec la mutation updateGiftRegistry.
 
-_ACP2E-3805 - [Problème GitHub](https://mcstaging.briscoes.co.nz/)_
+_ACP2E-3805_
 
 #### Le graphql customerOrders renvoie une erreur lors de la suppression du produit
 
@@ -2682,6 +2690,8 @@ _AC-10568 - [Problème GitHub](https://github.com/magento/magento2/issues/31644)
 
 #### Lorsque le client est défini pour une commande de devis, il s&#39;agit toujours d&#39;une commande invité
 
+Aucune description disponible.
+
 _AC-11689 - [Problème GitHub](https://github.com/magento/magento2/issues/38540)_
 
 #### La commande n&#39;est pas complète lorsque les articles virtuels, remboursés et expédiés sont mélangés
@@ -2803,7 +2813,7 @@ _ACP2E-3662_
 
 #### Statut de la commande bloqué lors du traitement
 
-Avant la correction, lors de la commande d’un produit groupé avec l’option « Expédier ensemble » activée, le statut de la commande ne passait pas automatiquement à « terminé » après la facture et l’expédition. Désormais, après correction, le statut de la commande passe automatiquement à « terminé » une fois la commande facturée et expédiée.
+Avant la correction, lors de la commande d’un produit groupé avec l’option « Livrer ensemble » activée, le statut de la commande ne passait pas automatiquement à « terminé » après la facture et l’expédition. Désormais, après correction, le statut de la commande passe automatiquement à « terminé » une fois la commande facturée et expédiée.
 
 _ACP2E-3947 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/2a252ae6)_
 
@@ -2899,7 +2909,7 @@ Le système réussit maintenant avec un score d’accessibilité de 100
 
 _AC-12783 - [Problème GitHub](https://github.com/magento/magento2/issues/39054) - [Contribution du code GitHub](https://github.com/magento/magento2/pull/39164)_
 
-#### Désactiver la configuration de storefront captcha tout en chargeant les fichiers js captcha
+#### La désactivation de la configuration de storefront captcha charge toujours les fichiers js captcha
 
 Le système ne charge plus les fichiers captcha js lorsque nous avons désactivé captcha
 pour storefront
@@ -2986,7 +2996,7 @@ _AC-16109 - [Problème GitHub](https://github.com/magento/magento2/issues/40282)
 
 #### Le module Autorisations de catégorie peut empêcher la mise en cache.
 
-Les contrôleurs tiers sont désormais correctement mis en cache avec les segments clients
+les contrôleurs tiers sont désormais correctement mis en cache avec les segments clients
 
 _ACP2E-3721_
 
@@ -3170,7 +3180,7 @@ Correction d’un problème en raison duquel la saisie d’un identifiant de jeu
 
 _AC-15753 - [Problème GitHub](https://github.com/magento/magento2/issues/40213) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/a06a4a57)_
 
-#### Remboursement avec remise de remboursement de qté toujours négative
+#### Remboursement avec quantité négative toujours remboursement escompte
 
 Correction d&#39;un problème en raison duquel la création d&#39;un avoir avec une quantité négative remboursait incorrectement le montant de la remise.
 Désormais, les remises ne sont pas remboursées pour les quantités négatives et la quantité remboursée est correctement définie sur zéro.
@@ -3305,7 +3315,7 @@ _ACP2E-3902 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 Correction d’un problème en raison duquel le changement d’affichage des magasins redirigeait les utilisateurs vers la page d’accueil au lieu de la page CMS traduite correspondante. Le sélecteur de magasin recherche désormais les réécritures d’URL dans le magasin cible afin de garantir une redirection correcte (par exemple, la page FAQ en anglais → la page FAQ en français).
 
-_ACP2E-4112 - [Problème GitHub](https://adobe-ent.crm.dynamics.com/main.aspx?appid=f2e74f34-7119-ea11-a811-000d3a5936c5&forceUCI=1&pagetype=entityrecord&etn=incident&id=3e1df344-8a69-f011-bec3-6045bd04f475)_
+_ACP2E-4112_
 
 #### [Cloud] Désactiver l’ancienne génération de plan de site
 
@@ -3487,7 +3497,7 @@ _ACP2E-4226_
 
 #### Impossible de naviguer entre les sites web dans l’aperçu de la planification de mise à jour
 
-Avant cette correction, l’aperçu de la mise à jour planifiée était interrompu lors de la tentative de prévisualisation du contenu pour les magasins avec des domaines personnalisés. Après ce correctif, les domaines de magasin personnalisés peuvent être prévisualisés en l’état et navigués dans le cadre de prévisualisation. Le correctif couvre les produits, les catégories, les pages CMS et les blocs CMS, et prend en charge les liens de navigation à l’aide de balises de balisage `{{store url}}`, comme indiqué dans [Variables Adobe Commerce et balises de balisage](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/variables/markup-tags).
+Avant cette correction, l’aperçu de la mise à jour planifiée était interrompu lors de la tentative de prévisualisation du contenu pour les magasins avec des domaines personnalisés. Après ce correctif, les domaines de magasin personnalisés peuvent être prévisualisés en l’état et navigués dans le cadre de prévisualisation. Le correctif couvre les produits, les catégories, les pages CMS et les blocs CMS, et prend en charge les liens de navigation à l’aide de balises de balisage `{{store url}}`, comme indiqué dans [Variables Adobe Commerce et balises de balisage](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags).
 
 _ACP2E-4308 - [contribution du code GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 
@@ -3546,13 +3556,19 @@ _AC-13492 - [Problème GitHub](https://github.com/magento/magento2/issues/39462)
 
 #### [Cloud Native Service] Échec de création de CNS - 2.4.9-version bêta1- Intégration
 
+Aucune description disponible.
+
 _AC-16427_
 
 #### Échec des chemins d’accès d’installation codés en dur dans les versions du compositeur
 
+Aucune description disponible.
+
 _AC-16488_
 
 #### Incompatibilité du fichier de configuration PHPUnit entre les versions PR et du compositeur
+
+Aucune description disponible.
 
 _AC-16501_
 
@@ -3642,6 +3658,8 @@ AC-12343
 _AC-12343 - [Problème GitHub](https://github.com/magento/magento2/issues/37469)_
 
 #### Le GUID n&#39;est pas enregistré au format sécurisé
+
+Aucune description disponible.
 
 _AC-15809_
 

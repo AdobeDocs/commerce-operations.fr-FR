@@ -4,9 +4,9 @@ description: Découvrez comment fusionner et réduire les fichiers CSS et JavaSc
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 5f4edc2e694c9bdbdffbe48b0e5d69907cbc0027
+source-git-commit: a08560eb307638a36fdc52224c41bdf2c5d47763
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Pour un site Commerce plus réactif, optimisez les fichiers de ressources CSS et JavaScript (JS) et éliminez les ressources bloquant le rendu.
 
-- **Optimiser les fichiers CSS et JS** : réduisez le temps nécessaire au chargement des fichiers CSS et JavaScript (JS) en configurant Adobe Commerce pour fusionner, réduire et regrouper des fichiers distincts en un seul fichier.
+- **Optimiser les fichiers CSS et JS** : réduisez le temps nécessaire au chargement des fichiers CSS et JavaScript (JS) en configurant Adobe Commerce pour réduire et regrouper les fichiers.
 - **Éliminer les ressources bloquant le rendu**—Envisagez de fournir des fonctionnalités JS et CSS essentielles en ligne et de différer tous les styles JS/CSS non critiques. Pour obtenir des conseils, voir [Éliminer les ressources bloquant le rendu](https://web.dev/render-blocking-resources/).
 
 ## Produits et versions concernés
@@ -37,7 +37,7 @@ Ne fusionnez pas ou ne regroupez pas les fichiers si votre déploiement utilise 
 
 ### Utilisation de l’administrateur
 
-Pour activer la fusion ou la minimisation CSS, accédez à [!UICONTROL **Admin** > **Stores** > **Setting** > **Configuration** > **Advanced** > **Developer** > **CSS Settings**].
+Pour activer la fusion ou la minimisation CSS, accédez à **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL CSS Settings]**.
 
 ### Utilisation de la ligne de commande
 
@@ -63,9 +63,9 @@ Pour activer la minimisation CSS dans Adobe Commerce sur l’infrastructure clou
 
 ## Minimiser les fichiers JS
 
-### Utilisation de l’administrateur
+### Utilisation de [!UICONTROL Admin]
 
-Dans la barre latérale *Admin*, accédez à **Magasins** > **Paramètres** > **Configuration** > **Avancé** > **Developer** > **Paramètres JavaScript**.
+Sur la barre latérale [!UICONTROL Admin], accédez à **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]**.
 
 ### Utilisation de la ligne de commande
 
@@ -79,9 +79,13 @@ Pour activer la minimisation JS dans Adobe Commerce sur l’infrastructure cloud
 
 1. Validez les modifications dans le fichier `app/etc/config.php` et redéployez-le.
 
-## Fusion et regroupement de fichiers JS
+## Regrouper les fichiers JS
 
-Vous pouvez activer la fusion ou le regroupement dans l’Administration Commerce (la fusion et le regroupement ne peuvent pas être activés en même temps) : [!UICONTROL **Magasins** > **Paramètres** > **Configuration** > **Avancé** > **Développeur** > **Paramètres JavaScript**].
+Vous pouvez activer le regroupement dans l’[!UICONTROL Admin] Commerce : **[!UICONTROL Stores]** > ***[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]**.
+
+>[!NOTE]
+>
+>La fusion et le regroupement ne peuvent pas être activés en même temps.
 
 Vous pouvez également activer le groupement natif Adobe Commerce (groupement de base) à partir de la ligne de commande :
 
@@ -89,9 +93,18 @@ Vous pouvez également activer le groupement natif Adobe Commerce (groupement de
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
+## Fusion de fichiers JS (non recommandée) {#merge-js-files}
+
+>[!WARNING]
+>
+>Il est déconseillé d’activer **[!UICONTROL Merge JavaScript Files]**. Ce paramètre a été conçu uniquement pour le JavaScript chargé de manière synchrone dans la section **[!UICONTROL HEAD]** de la page. Il peut entraîner un fonctionnement incorrect de la logique de regroupement et de [!DNL RequireJS]. Il est conservé uniquement à des fins de rétrocompatibilité et ne présente aucun avantage en termes de performances lorsque le HTTP/2 est activé.
+>
+>Si vous avez activé **[!UICONTROL Merge JavaScript Files]** et rencontrez des problèmes, essayez de le désactiver avant d’appliquer des correctifs. Voir [ACSD-67908](../../../tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md) si vous ne pouvez pas désactiver la fusion.
+
 ## Informations supplémentaires
 
 - [Paramètres d’optimisation côté client](../../../performance/configuration.md#client-side-optimization-settings)
-- [Guide de l’utilisateur : optimisation des fichiers de ressources](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [Conseils sur le regroupement](../../../performance/configuration.md#bundling-tips) dans *Bonnes pratiques de configuration* : outils de regroupement tiers, HTTP/2, et conseils sur la fusion JS et CSS obsolète
+- [Guide de l’utilisateur : optimisation des fichiers de ressources](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
 - [Guide de développement de Frontend : fusion CSS, minification et performances du site](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Groupement JavaScript avancé](../../../performance/advanced-js-bundling.md)
