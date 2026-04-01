@@ -2,7 +2,7 @@
 title: Installation d’Apache pour les déploiements On-Premise
 description: Découvrez comment installer et configurer Apache pour les déploiements d’Adobe Commerce sur site. Activez les modules requis, les réécritures et les paramètres &grave;.htaccess&grave;.
 feature: Install, Configuration
-badgePaas: label="On-premise" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
+badgePaas: label="On-premise" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
 source-git-commit: 352a71cb88ff38c0920201f49f1d7b889509fd61
 workflow-type: tm+mt
