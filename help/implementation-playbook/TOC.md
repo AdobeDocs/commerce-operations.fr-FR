@@ -2,9 +2,9 @@
 user-guide-title: Manuel d’implémentation
 user-guide-description: Découvrez les stratégies de planification et d’implémentation d’un site Adobe Commerce performant.
 mini-toc-levels: 3
-source-git-commit: 8d2dd409741717b534e4aef5e252a614ccb81f4a
+source-git-commit: 28ca422543728123edcaa41dedca6e3cc53536b6
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '161'
 ht-degree: 14%
 
 ---
@@ -27,8 +27,7 @@ ht-degree: 14%
       - [Configuration des rapports](best-practices/planning/reporting-configuration.md)
       - [Configuration de la base de données pour les déploiements cloud&#x200B;](best-practices/planning/database-on-cloud.md)
       - [Configuration de MySQL](best-practices/planning/mysql-configuration.md)
-      - [Configuration du service Redis](best-practices/planning/redis-service-configuration.md)
-      - [Configuration du service Valkey](best-practices/planning/valkey-service-configuration.md)
+      - [Configuration du service Redis/Valkey](best-practices/planning/redis-valkey-service-configuration.md)
       - [Taille de la mémoire cache de l&#39;OP](best-practices/planning/opcache-memory-size.md)
       - [Taille du cache du Realpath](best-practices/planning/realpath-cache-size.md)
       - [Extensions](best-practices/planning/extensions.md)
@@ -52,7 +51,7 @@ ht-degree: 14%
       - [Modification du code principal et tiers](best-practices/development/modifying-core-and-third-party-code.md)
    - Launch {#launch}
       - [Vue d’ensemble](best-practices/launch/overview.md)
-      - [Configuration des robots d’exploration web](best-practices/launch/robots-txt.md)
+      - [Configuration de robots d&#39;exploration web](best-practices/launch/robots-txt.md)
       - [Sécurisation de votre site et de votre infrastructure](best-practices/launch/security-best-practices.md)
    - Maintenance {#maintenance}
       - [Vue d’ensemble](best-practices/maintenance/overview.md)
@@ -69,4 +68,4 @@ ht-degree: 14%
       - [Liste de contrôle de mise à niveau](best-practices/maintenance/upgrade-checklist.md)
       - [Conditions préalables à la mise à niveau pour MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Glossaire](glossary.md)
-- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=fr)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

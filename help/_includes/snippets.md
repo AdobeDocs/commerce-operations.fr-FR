@@ -1,11 +1,17 @@
 ---
-source-git-commit: 1e3508e2e8e99d686dfa692415e2b4b41e8b80e8
+source-git-commit: c297996273c42481fe9d3ee20ec3b9256e27fb5f
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
 # Fragments de code
+
+## Correctifs de sécurité pour une prise en charge étendue {#extended-support}
+
+>[!NOTE]
+>
+>Les correctifs de sécurité de prise en charge étendue pour la version 2.4.5 sont disponibles uniquement pour les clients Adobe Commerce. Ces correctifs ne sont pas disponibles pour la base de code Magento Open Source. Voir [ Prise en charge étendue ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
 
 ## Commerce uniquement {#commerce-only}
 
@@ -19,7 +25,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Toutes les commandes de l’interface de ligne de commande Magento doivent être exécutées par le [&#x200B; propriétaire du système de fichiers](/help/configuration/cli/config-cli.md#prerequisites).
+>Toutes les commandes de l’interface de ligne de commande Magento doivent être exécutées par le [ propriétaire du système de fichiers](/help/configuration/cli/config-cli.md#prerequisites).
 
 ## Commandes de sauvegarde {#tip-backup-command}
 
@@ -31,7 +37,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Après avoir installé ce correctif de sécurité, les commerçants B2B d’Adobe Commerce doivent également effectuer la mise à jour vers la dernière version du correctif de sécurité B2B compatible. Voir les notes de mise à jour [B2B](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/release-notes).
+>Après avoir installé ce correctif de sécurité, les commerçants B2B d’Adobe Commerce doivent également effectuer la mise à jour vers la dernière version du correctif de sécurité B2B compatible. Voir les notes de mise à jour [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Adobe Commerce uniquement {#ee-only}
 
@@ -57,7 +63,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Les versions d’[Alpha](/help/release/versioning-policy.md#alpha-patch-release) peuvent être incomplètes et risquent de contenir des défauts. Ils sont fournis « EN L&#39;ÉTAT » sans garantie d&#39;aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge d’une autre manière (via les services d’assistance Adobe ou autre) les versions d’Alpha. Les clients ne doivent pas s’appuyer sur le bon fonctionnement ou les performances des versions d’Alpha ou de toute documentation ou documentation d’accompagnement. L’utilisation des versions d’Alpha s’effectue entièrement aux risques et périls du client.
+>Les versions d’[](/help/release/versioning-policy.md#alpha-patch-release) peuvent être incomplètes et risquent de contenir des défauts. Ils sont fournis « EN L&#39;ÉTAT » sans garantie d&#39;aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge d’une autre manière (via les services d’assistance Adobe ou autre) les versions d’Alpha. Les clients ne doivent pas s’appuyer sur le bon fonctionnement ou les performances des versions d’Alpha ou de toute documentation ou documentation d’accompagnement. L’utilisation des versions d’Alpha s’effectue entièrement aux risques et périls du client.
 
 ## Clause de non-responsabilité Beta {#beta}
 
@@ -85,7 +91,7 @@ Avant de pouvoir exécuter des indexeurs en mode parallèle, vous devez activer 
 
 >[!IMPORTANT]
 >
->Adobe ne prend pas en charge l’application de correctifs officiels fournis par Adobe à l’aide de cette méthode. Utilisez la méthode suivante à vos risques et périls. Pour appliquer les correctifs officiels, utilisez le [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr){target="_blank"} . Effectuez toujours des tests complets avant de déployer un correctif personnalisé.
+>Adobe ne prend pas en charge l’application de correctifs officiels fournis par Adobe à l’aide de cette méthode. Utilisez la méthode suivante à vos risques et périls. Pour appliquer les correctifs officiels, utilisez le [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} . Effectuez toujours des tests complets avant de déployer un correctif personnalisé.
 
 ## Rétroportages de correctif de sécurité d’octobre 2025 {#oct-2025-backports}
 
@@ -99,7 +105,7 @@ Avant de pouvoir exécuter des indexeurs en mode parallèle, vous devez activer 
 
 * **Ajout de la prise en charge du protocole STOMP d’artémis Apache ActiveMQ**
 
-  Ajout de la prise en charge du courtier de messages open source ActiveMQ Artemis via le protocole STOMP (Simple Text Oriented Messaging Protocol). Il fournit un système de messagerie fiable et évolutif, offrant une flexibilité pour les intégrations STOMP. Voir [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) dans le Guide de configuration de Commerce **.
+  Ajout de la prise en charge du courtier de messages open source ActiveMQ Artemis via le protocole STOMP (Simple Text Oriented Messaging Protocol). Il fournit un système de messagerie fiable et évolutif, offrant une flexibilité pour les intégrations STOMP. Voir [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) dans le Guide de configuration de Commerce **.
 
 ## La page d’extraction ne parvient pas à charger static.min.js et mixins.min.js. {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
 
@@ -116,4 +122,4 @@ Après les récentes modifications apportées à CSP/SRI, la page de passage en 
 
 **Correctif** :
 
-Un correctif est disponible. Pour plus d’informations sur les correctifs[&#x200B; consultez la section &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27997)L’extraction échoue lorsque la minimisation et le regroupement JS sont activés dans la base de connaissances.
+Un correctif est disponible. Pour plus d’informations sur les correctifs[ consultez la section ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997)L’extraction échoue lorsque la minimisation et le regroupement JS sont activés dans la base de connaissances.
