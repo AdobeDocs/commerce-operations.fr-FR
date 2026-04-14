@@ -46,7 +46,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACP2E-4732** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction d’un problème en raison duquel l’indexation partielle s’arrêtait pour les clients avec un grand nombre de mises à jour lorsque la colonne version_id de la table changelog atteignait sa valeur maximale.
 * **ACP2E-4763** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème en raison duquel la requête customerOrders de GraphQL renvoie des valeurs original_price_include_tax et original_row_total_include_tax gonflées lorsque les prix du catalogue sont définis sur Taxe incluse, en raison d’une application double de la taxe.
 * **ACSD-60989** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel la modification d’une colonne avec une clé étrangère par le biais d’un schéma déclaratif provoque des erreurs sur MariaDB.
-* Versions mises à jour : **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-55031**, **ACSD-51819**, **ACSD-55628**, **ACSD-54965,** ACSD-**, 56546** ACSD-**, 61756** ACSD-**, 68040** ACSD-**, 62708** ACSD-**, 63283** ACSD-**, 64732** ACSD-**, 65775** ACSD-**, 66965** ACSD-ACP2E, ****-4050
+* Versions mises à jour : **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-55031**, **ACSD-51819**, **ACSD-55628**, **ACSD-54965,** ACSD-**, 56546** ACSD-**, 61756** ACSD-**, 68040** ACSD-**, 62708** ACSD-**, 63283** ACSD-**, 64732** ACSD-**, 65775** ACSD-**, 66965** ACSD-ACP2E, **&#x200B;**-4050
 * Correctifs remplacés : **ACSD-58446**, **ACSD-67904**
 
 ## v1.1.77 {#v1-1-77}
