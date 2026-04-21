@@ -16,7 +16,7 @@ Afin de rationaliser la politique de cycle de vie d’Adobe Commerce et de répo
 
 Pendant les trois années de support, les clients ont accès aux éléments suivants :
 
-- **Correctifs de qualité**-Les clients peuvent accéder aux correctifs de qualité en contactant le [support d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) ou par le biais du [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en libre-service. Le tableau suivant décrit les dates de fin de prise en charge logicielle des lignes de version d’Adobe Commerce.
+- **Correctifs de qualité**-Les clients peuvent accéder aux correctifs de qualité en contactant le [support d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) ou par le biais du [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) en libre-service. Le tableau suivant décrit les dates de fin de prise en charge logicielle des lignes de version d’Adobe Commerce.
 
 - **Correctifs de sécurité**-Adobe fournit des correctifs de sécurité par le biais de correctifs de sécurité cumulatifs et de fichiers de correctifs de sécurité non cumulatifs [isolés](versioning-policy.md#isolated-security-fixes) pendant la période de prise en charge de trois ans.
 
@@ -59,11 +59,11 @@ Pendant cette période d’approvisionnement des correctifs de sécurité, notez
 
   Pour appliquer un fichier de correctif de sécurité isolé, les clients doivent disposer de la dernière version du correctif de sécurité uniquement (la dernière version -p) pour leur ligne de version prise en charge, car les correctifs de sécurité isolés sont testés exclusivement par rapport à cette version.
 
-- **Aucun correctif de qualité ou assistance technique**-Aucun correctif, mise à jour de qualité ([Outil de correctifs de qualité](../tools/quality-patches-tool/usage.md)) ou assistance technique ([Assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)) ne sera fourni pour les versions 2.4.4 ou 2.4.5 pendant cette période.
+- **Aucun correctif de qualité ou assistance technique**-Aucun correctif, mise à jour de qualité ([Outil de correctifs de qualité](../tools/quality-patches-tool/usage.md)) ou assistance technique ([Assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)) ne sera fourni pour les versions 2.4.4 ou 2.4.5 pendant cette période.
 
 - **La conformité PCI n’est pas garantie :**-Étant donné que les versions 2.4.4 et 2.4.5 utilisent PHP qui ont atteint leur fin de vie, la conformité PCI ne peut pas être garantie pour les commerçants sur ces versions. Continuer à exécuter ces versions peut compromettre votre conformité PCI.
 
-Pour maintenir une couverture de sécurité complète et assurer la conformité PCI, les clients doivent effectuer dès que possible une mise à niveau vers une version d’Adobe Commerce actuellement prise en charge ou migrer vers [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview).
+Pour maintenir une couverture de sécurité complète et assurer la conformité PCI, les clients doivent effectuer dès que possible une mise à niveau vers une version d’Adobe Commerce actuellement prise en charge ou migrer vers [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/overview).
 
 | Libération | Disponibilité générale | Fin de la prise en charge étendue | Fin de la mise en service des correctifs de sécurité |
 |----------------------|----------------------|-------------------------|------------------------------------|
