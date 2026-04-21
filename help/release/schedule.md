@@ -45,7 +45,7 @@ Voir l’image suivante pour plus de détails :
 
 Adobe informe ses clients des nouvelles versions de correctifs par le biais des canaux suivants :
 
-- [Bulletins et conseils de sécurité ](https://helpx.adobe.com/security/security-bulletin.html#magento)
+- [Bulletins et conseils de sécurité &#x200B;](https://helpx.adobe.com/security/security-bulletin.html#magento)
 - E-mail
 - Alertes intégrées au produit
 
