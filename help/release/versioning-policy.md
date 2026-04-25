@@ -2,9 +2,9 @@
 title: Politique de version
 description: Découvrez les différents types de versions d’Adobe Commerce.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: ef1f4b3199e7e1daa670e537b97175f58327aa12
+source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -33,37 +33,37 @@ Les instructions suivantes s’appliquent aux versions mineures :
 - Des modifications avec rupture sont possibles ; le code écrit pour Adobe Commerce 2.2.x peut ne plus fonctionner avec Adobe Commerce 2.3.x. Par exemple, les versions mineures peuvent introduire la prise en charge des principales exigences et dépendances du système, telles que PHP.
 - Les versions des modules peuvent varier. Par exemple, certaines modifications de module sont introduites dans un nouveau correctif alors que d’autres le sont dans une version mineure.
 - Les versions mineures peuvent inclure de nouvelles fonctionnalités qui peuvent nécessiter un travail supplémentaire de votre part ou de la part de votre partenaire de solution lors d’une mise à niveau pour garantir la compatibilité.
-- Les versions mineures peuvent inclure des correctifs pour les problèmes de sécurité et de qualité.
+- Minor releases can include fixes for security and quality issues.
 
-## Version de PATCH
+## PATCH release
 
-Les versions de correctifs sont principalement axées sur la fourniture de correctifs de sécurité, de performances, de conformité et de qualité haute priorité pour vous aider à maintenir les performances de vos sites à leur meilleur niveau.
+Patch releases are primarily focused on delivering security, performance, compliance, and high-priority quality fixes to help you keep your sites performing at their peak.
 
-Les instructions suivantes s’appliquent aux versions de correctif :
+The following guidelines apply to patch releases:
 
-- La dernière version mineure prise en charge reçoit des correctifs et des améliorations de qualité fonctionnelle complets.
-- Les modifications susceptibles d’interrompre la compatibilité des extensions ou du code sont évitées. Par exemple, le code écrit pour la version 2.2.0 doit toujours fonctionner sur la version 2.2.7.
-- À titre exceptionnel, des modifications importantes ou des correctifs ou correctifs supplémentaires peuvent être publiés pour résoudre des problèmes de sécurité ou de conformité et des problèmes de qualité à fort impact. Au niveau du module, ces modifications sont principalement au niveau du PATCH ; parfois au niveau MINEUR.
+- The latest-supported minor release receives full functional quality fixes and enhancements.
+- Changes that could break extensions or code compatibility are avoided. For example, code written for version 2.2.0 should still work on version 2.2.7.
+- On an exceptional basis, breaking changes or additional patches or hotfixes may be released to address security or compliance issues and high-impact quality issues. On the module level, these changes are mostly PATCH-level; sometimes MINOR-level.
 
-### Mise à jour du correctif de SÉCURITÉ
+### SECURITY patch release
 
 {{$include /help/_includes/release-notes/security-patch-overview.md}}
 
-## Version du correctif ALPHA
+## ALPHA patch release
 
-Les versions pré-Beta des fonctionnalités d’Adobe Commerce sont mises à la disposition de l’ensemble de la clientèle Adobe Commerce et des partenaires Adobe. Les versions d’Alpha sont destinées aux commentaires et à l’évaluation précoces des fonctionnalités qui sont toujours en cours de développement. Ces versions offrent la possibilité d’effectuer des tests précoces et de planifier l’intégration en amont des versions Beta et de disponibilité générale.
+Pre-Beta releases of Adobe Commerce features are made publicly available to all Adobe Commerce customers and Adobe partners. Alpha releases are intended for early feedback and evaluation of features that are still in active development. These releases provide an opportunity for early testing and integration planning ahead of Beta and General Availability releases.
 
-Les versions d’Alpha peuvent être incomplètes et sont susceptibles de contenir des défauts. Ils sont fournis « EN L&#39;ÉTAT » sans garantie d&#39;aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge d’une autre manière (via les services d’assistance Adobe ou autre) les versions d’Alpha. Les clients ne doivent pas s’appuyer sur le bon fonctionnement ou les performances des versions d’Alpha ou de toute documentation ou documentation d’accompagnement. L’utilisation des versions d’Alpha s’effectue entièrement aux risques et périls du client.
+Alpha releases may be incomplete, and are likely to contain defects. They are provided &quot;AS IS&quot; without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify, or otherwise support (via Adobe Support Services or otherwise) Alpha releases. Customers should not rely on the correct functioning or performance of Alpha releases or any accompanying documentation or materials. Use of Alpha releases is entirely at the customer&#39;s own risk.
 
-## Version du correctif Beta
+## BETA patch release
 
-Les versions de disponibilité pré-générale des fonctionnalités d’Adobe Commerce sont mises à la disposition de l’ensemble de la clientèle Adobe Commerce et des partenaires Adobe. Cela permet de disposer de plus de temps avant la disponibilité générale pour examiner le code et les composants affectés.
+Pre-General Availability releases of Adobe Commerce features are made publicly available to all Adobe Commerce customers and Adobe partners. It allows for extra time before General Availability to review code and affected components.
 
-Les versions de Beta peuvent contenir des défauts et sont fournies « EN L’ÉTAT » sans garantie d’aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge d’une autre manière (via les services d’assistance Adobe ou autre) les versions de Beta. Les clients ne doivent pas se fier au bon fonctionnement ou aux performances des versions de Beta ou de toute documentation ou documentation d’accompagnement. Par conséquent, toute utilisation des Versions de Beta est entièrement aux risques et périls du client.
+Beta releases may contain defects and are provided &quot;AS IS&quot; without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify, or otherwise support (via Adobe Support Services or otherwise) Beta releases. Customers should not rely on the correct functioning or performance of Beta releases or any accompanying documentation or materials. Accordingly, any use of the Beta Releases is entirely at a customer&#39;s own risk.
 
 ## Correctif
 
-Les correctifs sont des correctifs de sécurité ou de qualité à fort impact, tels que les correctifs de vulnérabilités de type « jour zéro », qui affectent de nombreux commerçants. Adobe publie des correctifs (si nécessaire) pour les versions d’Adobe Commerce prises en charge lorsque des problèmes de sécurité ou de qualité critiques les affectent. Les correctifs sont fournis via l’[outil de correctifs de qualité](../tools/quality-patches-tool/usage.md). Ces correctifs sont inclus dans la prochaine version prévue du correctif.
+Les correctifs sont des correctifs de sécurité ou de qualité à fort impact, tels que les correctifs de vulnérabilités de type « jour zéro », qui affectent de nombreux commerçants. Adobe publie des correctifs (si nécessaire) pour les versions d’Adobe Commerce prises en charge lorsque des problèmes de sécurité ou de qualité critiques les affectent. Les correctifs sont fournis via l’[outil de correctifs de qualité](../tools/quality-patches-tool/usage.md). These fixes are included in the next planned patch release.
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Les correctifs sont des correctifs de sécurité ou de qualité à fort impact, 
 
 ## Patch individuel
 
-Les correctifs individuels contiennent des correctifs de qualité à faible impact pour un problème spécifique. Ces correctifs sont appliqués aux versions mineures prises en charge d’Adobe Commerce. Adobe publie les correctifs individuels selon les besoins pour Adobe Commerce conformément à la [politique de cycle de vie des logiciels](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Elles sont fournies par le biais de l’outil [Correctifs de qualité](../tools/quality-patches-tool/usage.md).
+Les correctifs individuels contiennent des correctifs de qualité à faible impact pour un problème spécifique. Ces correctifs sont appliqués aux versions mineures prises en charge d’Adobe Commerce. Adobe publie les correctifs individuels selon les besoins pour Adobe Commerce conformément à la [politique de cycle de vie des logiciels](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). They are delivered through the [Quality Patches Tool](../tools/quality-patches-tool/usage.md).
 
 >[!NOTE]
 >
@@ -81,4 +81,4 @@ Les correctifs individuels contiennent des correctifs de qualité à faible impa
 
 Créé par du personnel non Adobe pour résoudre un problème ou modifier le code Adobe Commerce pour diverses raisons.
 
-<!-- Last updated from includes: 2025-10-09 22:53:22 -->
+<!-- Last updated from includes: 2026-04-20 10:12:04 -->
