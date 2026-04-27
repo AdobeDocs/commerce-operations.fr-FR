@@ -4,7 +4,7 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 5d52a3d956054c1d4cb8922f0cfd26ae600c4b8d
+source-git-commit: cc3bd15a0c11762812e4e51e4c01bfa64756421a
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -24,7 +24,7 @@ QPT v1.1.78 comprend les correctifs suivants :
 1. **ACP2E-4456** : correction d’un problème en raison duquel l’annulation d’une commande à l’aide d’une mutation GraphQL ne fait pas passer une commande payée entièrement avec des cartes-cadeaux au statut Fermé.
 1. **ACP2E-4507** : correction d’un problème en raison duquel la configuration des options de mot de passe n’était pas appliquée aux demandes de réinitialisation de mot de passe client effectuées par des mutations de GraphQL.
 1. **ACP2E-4513** : corrige le problème en raison duquel les images CAPTCHA expirées ne sont pas supprimées du système.
-1. **ACP2E-4522** : correction d’une erreur de clé en double intermittente qui se produit dans la table quote_coupons lorsque plusieurs demandes de fusion de panier ou d’enregistrement de devis s’exécutent simultanément.
+1. **[ACP2E-4522](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4522.md)** : correction d’une erreur de clé en double intermittente qui se produit dans la table quote_coupons lorsque plusieurs demandes de fusion de panier ou d’enregistrement de devis s’exécutent simultanément.
 1. **ACP2E-4528** : corrige le problème de validation de la ville dans les adresses des clients, qui autorise désormais une barre oblique (/) et rejette les caractères non valides tels que !,  », # et ?.
 1. **ACP2E-4535** : correction d’un problème en raison duquel l’envoi du formulaire de mot de passe oublié entraîne la destruction ou la régénération de la session (modifications de PHPSESSID) et l’effacement du panier d’invités.
 1. **ACP2E-4540** : correction d’un problème en raison duquel la bibliothèque Fotorama ne se chargeait pas correctement, ce qui rendait visible uniquement la première image jointe.
