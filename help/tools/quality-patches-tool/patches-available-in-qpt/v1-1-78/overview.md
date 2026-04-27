@@ -4,7 +4,7 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3e003e0cf2428a5e6ec45292fa19aaa2b9e9324d
+source-git-commit: 5d52a3d956054c1d4cb8922f0cfd26ae600c4b8d
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 
 QPT v1.1.78 comprend les correctifs suivants :
 1. **ACP2E-4416** : correction d’un problème en raison duquel les points de récompense client ne sont pas initialisés lors de leur création dans l’administration.
-1. **ACP2E-4419** : correction d’un problème en raison duquel les cartes-cadeaux ne sont pas appliquées correctement lors du passage en caisse après la validation réussie de reCAPTCHA v2 (« Je ne suis pas un robot ») sur le storefront.
+1. **[ACP2E-4419](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)** : correction d’un problème en raison duquel les cartes-cadeaux ne sont pas appliquées correctement lors du passage en caisse après la validation réussie de reCAPTCHA v2 (« Je ne suis pas un robot ») sur le storefront.
 1. **ACP2E-4431** : correction d’un problème en raison duquel les produits associés correspondant aux règles cible étaient supprimés lors du processus de réindexation.
 1. **ACP2E-4448** : correction d’un problème en raison duquel les modifications de configuration effectuées lors des pannes de Redis ne sont pas prises en compte après la récupération de Redis, ce qui entraîne la persistance de valeurs obsolètes.
 1. **ACP2E-4452** : correction du problème en raison duquel les prix des produits sur la page Commande rapide incluent la taxe, quelle que soit la configuration de l’affichage de la taxe.
