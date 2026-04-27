@@ -4,7 +4,7 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: cc3bd15a0c11762812e4e51e4c01bfa64756421a
+source-git-commit: 0494717c06fcabcb093a2b168ae714f773ed6f7b
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -29,7 +29,7 @@ QPT v1.1.78 comprend les correctifs suivants :
 1. **ACP2E-4535** : correction d’un problème en raison duquel l’envoi du formulaire de mot de passe oublié entraîne la destruction ou la régénération de la session (modifications de PHPSESSID) et l’effacement du panier d’invités.
 1. **ACP2E-4540** : correction d’un problème en raison duquel la bibliothèque Fotorama ne se chargeait pas correctement, ce qui rendait visible uniquement la première image jointe.
 1. **ACP2E-4555** : corrige le problème des numéros de téléphone modernes contenant « . » ou « / » ne sont pas validés correctement.
-1. **ACP2E-4565** : corrige le problème en raison duquel la requête GraphQL d’entreprise renvoie « Le client actuel n’est pas autorisé » lorsque l’en-tête X-Adobe-Company est utilisé.
+1. **[ACP2E-4565](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565.md)** : corrige le problème en raison duquel la requête GraphQL d’entreprise renvoie « Le client actuel n’est pas autorisé » lorsque l’en-tête X-Adobe-Company est utilisé.
 1. **ACP2E-4591** : correction d’un problème en raison duquel les segments de clients basés sur le nombre de commandes, tels que « Nouveaux acheteurs », n’étaient pas mis à jour lorsque des commandes étaient passées via l’API REST.
 1. **ACP2E-4609** : correction du problème en raison duquel la page Mes devis n&#39;affiche aucun devis lorsque certains devis contiennent des produits supprimés.
 1. **ACP2E-4613** : correction d’un problème en raison duquel les structures de répertoires multimédia volumineuses provoquaient des réponses gettree lentes, ce qui entraînait des temps de chargement d’arborescence de répertoires Media Gallery étendus.
