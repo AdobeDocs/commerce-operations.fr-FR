@@ -2,10 +2,10 @@
 title: Politique relative au cycle de vie des logiciels
 description: Découvrez les dates clés de fin de prise en charge logicielle des versions d’Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 3e7cef954a2be506c6f72e704710d16ed1d9b7a3
+source-git-commit: 3bf3c4261073ab649376bb5c7fb84ea591a09869
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 6%
+source-wordcount: '949'
+ht-degree: 7%
 
 ---
 
@@ -16,13 +16,13 @@ Afin de rationaliser la politique de cycle de vie d’Adobe Commerce et de répo
 
 Pendant les trois années de support, les clients ont accès aux éléments suivants :
 
-- **Correctifs de qualité**-Les clients peuvent accéder aux correctifs de qualité en contactant le [support d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) ou par le biais du [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) en libre-service. Le tableau suivant décrit les dates de fin de prise en charge logicielle des lignes de version d’Adobe Commerce.
+- **Correctifs de qualité**-Les clients peuvent accéder aux correctifs de qualité en contactant le [support d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) ou par le biais du [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en libre-service. Le tableau suivant décrit les dates de fin de prise en charge logicielle des lignes de version d’Adobe Commerce.
 
 - **Correctifs de sécurité**-Adobe fournit des correctifs de sécurité par le biais de correctifs de sécurité cumulatifs et de fichiers de correctifs de sécurité non cumulatifs [isolés](versioning-policy.md#isolated-security-fixes) pendant la période de prise en charge de trois ans.
 
 - **Correctifs**-Pour les problèmes de sécurité critiques, tels que les vulnérabilités « jour zéro », Adobe fournit [correctifs](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) à tous les clients disposant d’une version prise en charge, même s’ils ne disposent pas du dernier correctif ou de la dernière version du correctif de sécurité. Notez qu’un correctif n’est pas exhaustif et ne résout pas tous les problèmes de sécurité qui seraient résolus par une mise à niveau vers la version la plus récente.
 
-Adobe ne fournit pas de correctifs de sécurité et de qualité pour les services tiers et les dépendances logicielles (telles que PHP et MySQL) qui peuvent arriver en fin de vie lorsque les clients sont dans la période de prise en charge de trois ans ou prolongée d’Adobe Commerce. Pour obtenir une liste complète des technologies tierces testées et prises en charge[&#x200B; consultez la section &#x200B;](../installation/system-requirements.md)Configuration requise.
+Adobe ne fournit pas de correctifs de sécurité et de qualité pour les services tiers et les dépendances logicielles (telles que PHP et MySQL) qui peuvent arriver en fin de vie lorsque les clients sont dans la période de prise en charge de trois ans ou prolongée d’Adobe Commerce. Pour obtenir une liste complète des technologies tierces testées et prises en charge](../installation/system-requirements.md) consultez la section [Configuration requise.
 
 ## Prise en charge étendue
 
@@ -36,9 +36,9 @@ Adobe incite les clients à effectuer la mise à niveau dès que possible. Toute
 
 | Libération | Disponibilité générale | Fin de la prise en charge régulière<sup>1</sup> | Fin de la prise en charge étendue |
 |----------------------|----------------------|------------------------------------|-------------------------|
-| Adobe Commerce 2.4.8 | mercredi 8 avril 2025 | jeudi 31 mai 2028 | À déterminer |
-| Adobe Commerce 2.4.7 | mercredi 9 avril 2024 | mardi 31 mai 2027 | À déterminer |
-| Adobe Commerce 2.4.6 | mercredi 14 mars 2023 | mercredi 11 août 2026 | mardi 30 août 2027 |
+| Adobe Commerce 2.4.8 | mercredi 8 avril 2025 | 31 Mai 2028 | À déterminer |
+| Adobe Commerce 2.4.7 | mercredi 9 avril 2024 | 31 Mai 2027 | À déterminer |
+| Adobe Commerce 2.4.6 | mercredi 14 mars 2023 | mercredi 11 août 2026 | 30 Août 2027 |
 | Adobe Commerce 2.4.5 | mercredi 9 août 2022 | mercredi 12 août 2025 | mercredi 11 août 2026 |
 | Adobe Commerce 2.4.4 | mercredi 12 avril 2022 | 12 avril 2022 | mercredi 14 avril 2026 |
 
@@ -47,7 +47,11 @@ Adobe incite les clients à effectuer la mise à niveau dès que possible. Toute
 >[!NOTE]
 >
 >- <sup>1</sup> Si vous êtes un client Adobe Commerce, vous pouvez continuer à recevoir des correctifs de sécurité et de qualité pendant une année supplémentaire pendant la période de prise en charge étendue.
->- Voir [&#x200B; Politique relative au cycle de vie des logiciels &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+>- Voir [ Politique relative au cycle de vie des logiciels ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+
+>[!IMPORTANT]
+>
+>La conformité PCI ne peut pas être garantie pour les commerçants exécutant la version 2.4.6 qui continuent à utiliser PHP 8.1, qui a atteint [fin de prise en charge en 2025](https://www.php.net/eol.php). De même, PHP 8.2 atteint [fin de vie à la fin de 2026](https://www.php.net/supported-versions.php), créant le même risque de conformité PCI pour les commerçants qui continuent à l&#39;utiliser en 2027.
 
 ## Approvisionnement des correctifs de sécurité supplémentaires pour Adobe Commerce 2.4.4 et 2.4.5
 
@@ -59,11 +63,11 @@ Pendant cette période d’approvisionnement des correctifs de sécurité, notez
 
   Pour appliquer un fichier de correctif de sécurité isolé, les clients doivent disposer de la dernière version du correctif de sécurité uniquement (la dernière version -p) pour leur ligne de version prise en charge, car les correctifs de sécurité isolés sont testés exclusivement par rapport à cette version.
 
-- **Aucun correctif de qualité ou assistance technique**-Aucun correctif, mise à jour de qualité ([Outil de correctifs de qualité](../tools/quality-patches-tool/usage.md)) ou assistance technique ([Assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)) ne sera fourni pour les versions 2.4.4 ou 2.4.5 pendant cette période.
+- **Aucun correctif de qualité ou assistance technique**-Aucun correctif, mise à jour de qualité ([Outil de correctifs de qualité](../tools/quality-patches-tool/usage.md)) ou assistance technique ([Assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)) ne sera fourni pour les versions 2.4.4 ou 2.4.5 pendant cette période.
 
 - **La conformité PCI n’est pas garantie :**-Étant donné que les versions 2.4.4 et 2.4.5 utilisent PHP qui ont atteint leur fin de vie, la conformité PCI ne peut pas être garantie pour les commerçants sur ces versions. Continuer à exécuter ces versions peut compromettre votre conformité PCI.
 
-Pour maintenir une couverture de sécurité complète et assurer la conformité PCI, les clients doivent effectuer dès que possible une mise à niveau vers une version d’Adobe Commerce actuellement prise en charge ou migrer vers [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/overview).
+Pour maintenir une couverture de sécurité complète et assurer la conformité PCI, les clients doivent effectuer dès que possible une mise à niveau vers une version d’Adobe Commerce actuellement prise en charge ou migrer vers [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview).
 
 | Libération | Disponibilité générale | Fin de la prise en charge étendue | Fin de la mise en service des correctifs de sécurité |
 |----------------------|----------------------|-------------------------|------------------------------------|
