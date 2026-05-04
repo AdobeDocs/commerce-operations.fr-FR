@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Configuration d’une tâche cron personnalisée
 
-Ce tutoriel détaillé explique comment créer une tâche cron personnalisée et éventuellement un groupe cron dans un exemple de module. Vous pouvez utiliser un module que vous avez déjà ou vous pouvez utiliser un exemple de module de notre référentiel de ](https://github.com/magento/magento2-samples).[`magento2-samples`
+Ce tutoriel détaillé explique comment créer une tâche cron personnalisée et éventuellement un groupe cron dans un exemple de module. Vous pouvez utiliser un module que vous avez déjà ou vous pouvez utiliser un exemple de module de notre référentiel de [&#128279;](https://github.com/magento/magento2-samples).`magento2-samples`
 
 L’exécution de la tâche cron entraîne l’ajout d’une ligne au tableau `cron_schedule` avec le nom de la tâche cron, `custom_cron`.
 
@@ -21,7 +21,7 @@ Dans ce tutoriel, nous supposons que :
 
 - L’application Commerce est installée dans `/var/www/html/magento2`
 - Votre nom d’utilisateur et votre mot de passe de base de données Commerce sont tous deux `magento`
-- Vous effectuez toutes les actions en tant que [ propriétaire du système de fichiers ](../../installation/prerequisites/file-system/overview.md)
+- Vous effectuez toutes les actions en tant que [&#x200B; propriétaire du système de fichiers &#x200B;](../../installation/prerequisites/file-system/overview.md)
 
 ## Étape 1 : obtenir un exemple de module
 
@@ -33,7 +33,7 @@ Si vous disposez déjà d’un exemple de module, vous pouvez l’utiliser ; ign
 
 1. Connectez-vous à votre serveur Commerce en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md) ou passez à ce dernier.
 1. Accédez à un répertoire qui ne se trouve pas à la racine de votre application Commerce (par exemple, votre répertoire personnel).
-1. Clonez le référentiel ](https://github.com/magento/magento2-samples).[`magento2-samples`
+1. Clonez le référentiel [&#128279;](https://github.com/magento/magento2-samples).`magento2-samples`
 
    ```shell
    git clone git@github.com:magento/magento2-samples.git

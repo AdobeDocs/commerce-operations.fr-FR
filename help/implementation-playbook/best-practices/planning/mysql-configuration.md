@@ -47,7 +47,7 @@ Cette surcharge supplémentaire peut avoir un impact négatif sur les performanc
 Pour éviter des problèmes de performances lors de l’utilisation de déclencheurs, suivez ces instructions :
 
 - Si des déclencheurs personnalisés écrivent des données lors de l’exécution du déclencheur, déplacez cette logique pour écrire directement dans les tables d’audit à la place. Par exemple, en ajoutant une requête supplémentaire dans le code de l’application, après la requête pour laquelle vous souhaitiez créer le déclencheur.
-- Passez en revue les déclencheurs personnalisés existants et envisagez de les supprimer et d’écrire directement dans les tableaux du côté de l’application. Recherchez les déclencheurs existants dans votre base de données à l’aide de l’instruction SQL ](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).[`SHOW TRIGGERS`
+- Passez en revue les déclencheurs personnalisés existants et envisagez de les supprimer et d’écrire directement dans les tableaux du côté de l’application. Recherchez les déclencheurs existants dans votre base de données à l’aide de l’instruction SQL [&#128279;](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).`SHOW TRIGGERS`
 - Pour toute assistance supplémentaire, toute question ou préoccupation, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).
 
 ## Connexions esclaves

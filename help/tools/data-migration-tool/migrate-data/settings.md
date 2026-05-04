@@ -16,7 +16,7 @@ Le mode `Settings` migre les magasins, les sites web et la configuration du syst
 
 Avant de commencer, effectuez les étapes de préparation suivantes :
 
-1. Connectez-vous au serveur d’applications en tant que [ propriétaire du système de fichiers ](../../../installation/prerequisites/file-system/overview.md).
+1. Connectez-vous au serveur d’applications en tant que [&#x200B; propriétaire du système de fichiers &#x200B;](../../../installation/prerequisites/file-system/overview.md).
 
 1. Accédez au répertoire `/bin` ou assurez-vous qu’il est ajouté à votre `PATH` système.
 

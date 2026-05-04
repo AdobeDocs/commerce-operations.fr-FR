@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Cette section explique comment désinstaller un ou plusieurs modules. Lors de la désinstallation, vous avez la possibilité de supprimer le code, le schéma de base de données et les données de la base de données des modules. Vous pouvez d’abord créer des sauvegardes afin de pouvoir récupérer les données ultérieurement.
 
-Vous ne devez désinstaller un module que si vous êtes certain de ne pas l&#39;utiliser. Au lieu de désinstaller un module, vous pouvez le désactiver comme indiqué dans la section [ Activer ou désactiver des modules](manage-modules.md).
+Vous ne devez désinstaller un module que si vous êtes certain de ne pas l&#39;utiliser. Au lieu de désinstaller un module, vous pouvez le désactiver comme indiqué dans la section [&#x200B; Activer ou désactiver des modules](manage-modules.md).
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ La commande de désinstallation du module effectue les tâches suivantes :
 
 1. Si `--remove-data` est spécifié, supprimez le schéma de base de données et les données définies dans les classes `Uninstall` du module.
 
-   Pour chaque module spécifié à désinstaller, appelle la méthode `uninstall` dans sa classe `Uninstall`. Cette classe doit hériter de [](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php).
+   Pour chaque module spécifié à désinstaller, appelle la méthode `uninstall` dans sa classe `Uninstall`. Cette classe doit hériter de [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php).
 
 1. Supprime les modules spécifiés de la table de base de données `setup_module`.
 1. Supprime les modules spécifiés de la liste des modules dans la [configuration de déploiement](../../configuration/reference/deployment-files.md).

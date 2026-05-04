@@ -72,7 +72,7 @@ Ensuite, effacez le cache pour activer le nouveau paramètre :
 bin/magento cache:clean config
 ```
 
-Voir [ Exporter la configuration ](../cli/export-configuration.md).
+Voir [&#x200B; Exporter la configuration &#x200B;](../cli/export-configuration.md).
 
 ## Désactiver la sortie du module dans un déploiement simple
 

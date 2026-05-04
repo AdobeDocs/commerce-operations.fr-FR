@@ -128,7 +128,7 @@ apt-get -y update
 apt-get install -y openjdk-8-jdk
 ```
 
-Pour d’autres options, consultez la [documentation ](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
+Pour d’autres options, consultez la [documentation &#x200B;](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
 
 ### Installation du moteur de recherche
 
@@ -165,4 +165,4 @@ Elasticsearch nécessite JDK 1.8 ou une version ultérieure. Consultez [Installa
 
 ## Ressources supplémentaires
 
-Voir la documentation [](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) ou [OpenSearch](https://opensearch.org/docs/latest/).
+Voir la documentation [&#128279;](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) ou [OpenSearch](https://opensearch.org/docs/latest/).

@@ -60,7 +60,7 @@ Pour suivre ce tutoriel, vous devez accéder à une installation fonctionnelle s
 
 >[!NOTE]
 >
->Pour plus d’informations](../prerequisites/overview.md) consultez les sections [Conditions préalables et [Guide d’installation](../overview.md).
+>Pour plus d’informations[&#128279;](../prerequisites/overview.md) consultez les sections Conditions préalables et [Guide d’installation](../overview.md).
 
 ## &#x200B;1. Modification de la configuration du serveur
 
@@ -180,4 +180,4 @@ Accédez au storefront dans un navigateur web pour vérifier que tout fonctionne
 
    Si un message 404 ou le message « Accès refusé » s’affiche, cela signifie que vous avez réussi à restreindre l’accès au système de fichiers.
 
-   ![ Accès refusé ](../../assets/installation/access-denied.png)
+   ![&#x200B; Accès refusé &#x200B;](../../assets/installation/access-denied.png)

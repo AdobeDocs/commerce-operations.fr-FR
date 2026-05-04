@@ -53,7 +53,7 @@ Le programme d’installation peut être exécuté plusieurs fois si nécessaire
 
 Avant de commencer, effectuez les étapes suivantes :
 
-* Vérifiez que votre système répond à la configuration requise décrite dans la section [ Configuration requise ](system-requirements.md).
+* Vérifiez que votre système répond à la configuration requise décrite dans la section [&#x200B; Configuration requise &#x200B;](system-requirements.md).
 
 * Effectuez toutes les tâches [prérequises](prerequisites/overview.md).
 
@@ -220,7 +220,7 @@ Les tableaux suivants fournissent de nombreux paramètres d’installation, mais
 
 >[!NOTE]
 >
->Pour activer ou désactiver les modules après l’installation d’Adobe Commerce, voir [ Activer et désactiver les modules](tutorials/manage-modules.md).
+>Pour activer ou désactiver les modules après l’installation d’Adobe Commerce, voir [&#x200B; Activer et désactiver les modules](tutorials/manage-modules.md).
 
 **Données sensibles :**
 

@@ -16,7 +16,7 @@ ht-degree: 0%
 Suite à l’analyse, l’[!DNL Upgrade Compatibility Tool] peut exporter un rapport contenant une liste des problèmes de chaque fichier en spécifiant sa gravité, son code d’erreur et sa description. Le [!DNL Upgrade Compatibility Tool] exporte le rapport dans deux formats différents :
 
 - Un [fichier JSON](reports.md#json-file).
-- Rapport HTML [](reports.md#html-report).
+- Rapport HTML [&#128279;](reports.md#html-report).
 
 Consultez l’exemple de rapport suivant d’interface de ligne de commande :
 
@@ -88,7 +88,7 @@ Vous pouvez obtenir le rapport HTML lors de l’exécution de l’outil sur une 
 - Une liste des problèmes identifiés.
 - Résumé de l’analyse.
 
-![Rapport HTML - Résumé ](../../assets/upgrade-guide/uct-html-summary.png)
+![Rapport HTML - Résumé &#x200B;](../../assets/upgrade-guide/uct-html-summary.png)
 
 Vous pouvez facilement parcourir les problèmes identifiés lors de l’analyse de la [!DNL Upgrade Compatibility Tool].
 

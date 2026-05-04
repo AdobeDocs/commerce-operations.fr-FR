@@ -16,7 +16,7 @@ ht-degree: 0%
 Les extensions tierces (modules) Adobe Commerce peuvent provoquer divers problèmes susceptibles de nuire aux performances du storefront. Vous pouvez éviter ces problèmes en suivant ces bonnes pratiques :
 
 - Développez vos intégrations et personnalisations Commerce à l’aide de l’[extensibilité hors processus](https://developer.adobe.com/commerce/extensibility/) dans la mesure du possible pour faciliter la maintenance et la mise à niveau.
-- Téléchargez et achetez des extensions tierces auprès d’une source approuvée, comme le [](https://commercemarketplace.adobe.com//extensions.html).
+- Téléchargez et achetez des extensions tierces auprès d’une source approuvée, comme le [&#128279;](https://commercemarketplace.adobe.com//extensions.html).
 - Mettez à jour toutes les extensions tierces vers la dernière version.
 - Si vous ne pouvez pas garder vos extensions tierces à jour, envisagez d’utiliser des extensions différentes.
 - Lors de la planification d’une mise à niveau vers une nouvelle version d’Adobe Commerce, vérifiez que les extensions tierces installées sont compatibles avec la nouvelle version et mettez à niveau les extensions si nécessaire.

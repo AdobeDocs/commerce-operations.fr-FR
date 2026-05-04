@@ -22,7 +22,7 @@ La compilation de code comprend les éléments suivants (dans un ordre particuli
 - Génération du code des référentiels (code généré pour les API)
 - Génération des attributs de données de service (classes d’extension générées pour les objets de données)
 
-Vous trouverez des classes de compilation de code dans l’espace de noms [](https://github.com/magento/magento2/blob/2.4.8/setup/src/Magento/Setup/Module/Di/App/Task/Operation).
+Vous trouverez des classes de compilation de code dans l’espace de noms [&#128279;](https://github.com/magento/magento2/blob/2.4.8/setup/src/Magento/Setup/Module/Di/App/Task/Operation).
 
 Pour exécuter le compilateur à client(e) unique :
 

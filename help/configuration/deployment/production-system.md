@@ -40,7 +40,7 @@ Pour configurer une machine de production :
 
    Créez des `auth.json` dans ce répertoire.
 
-   `auth.json` devez contenir vos [ clés d’authentification ](../../installation/prerequisites/authentication-keys.md).
+   `auth.json` devez contenir vos [&#x200B; clés d’authentification &#x200B;](../../installation/prerequisites/authentication-keys.md).
 
    Voici un exemple :
 

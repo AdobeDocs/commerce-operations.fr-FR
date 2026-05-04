@@ -105,7 +105,7 @@ Lors de l’exécution, le [!DNL Data Migration Tool] peut signaler des incohér
 * `Incompatibility in data. Source document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 * `Incompatibility in data. Destination document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 
-Voir la section [ Dépannage ](https://support.magento.com/hc/en-us/articles/360033020451) de ce guide pour plus d’informations et de recommandations.
+Voir la section [&#x200B; Dépannage &#x200B;](https://support.magento.com/hc/en-us/articles/360033020451) de ce guide pour plus d’informations et de recommandations.
 
 ## Étape de migration suivante
 

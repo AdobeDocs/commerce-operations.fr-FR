@@ -82,7 +82,7 @@ Contient un tableau de valeurs de configuration de l’étendue. Il comporte les
 ]
 ```
 
-En savoir plus sur les [étendues de ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings).
+En savoir plus sur les [étendues de &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings).
 
 ## système
 
@@ -100,7 +100,7 @@ Contient un tableau de valeurs de configuration des champs système.
 ]
 ```
 
-En savoir plus sur les [ configurations spécifiques au système ](config-reference-sens.md).
+En savoir plus sur les [&#x200B; configurations spécifiques au système &#x200B;](config-reference-sens.md).
 
 ## thèmes
 

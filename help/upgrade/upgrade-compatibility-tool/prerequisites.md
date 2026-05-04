@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{commerce-only}}
 
-Vous devez disposer de [clés d’accès ](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information#access-keys) pour télécharger et utiliser le [!DNL Upgrade Compatibility Tool]. Ajoutez vos clés d’accès Adobe Commerce à votre fichier `auth.json`, qui se trouve par défaut à l’emplacement `~/.composer`.
+Vous devez disposer de [clés d’accès &#x200B;](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information#access-keys) pour télécharger et utiliser le [!DNL Upgrade Compatibility Tool]. Ajoutez vos clés d’accès Adobe Commerce à votre fichier `auth.json`, qui se trouve par défaut à l’emplacement `~/.composer`.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ La **clé publique** correspond au _nom d&#39;utilisateur_ tandis que la **clé 
 
 >[!NOTE]
 >
-> Si vous ne configurez pas correctement vos clés d&#39;accès ****, vous ne pouvez pas télécharger le [!DNL Upgrade Compatibility Tool] et la commande `composer create-project` échouera.
+> Si vous ne configurez pas correctement vos clés d&#39;accès **&#x200B;**, vous ne pouvez pas télécharger le [!DNL Upgrade Compatibility Tool] et la commande `composer create-project` échouera.
 
 Exécutez `composer install` dans votre terminal pour installer des dépendances.
 
