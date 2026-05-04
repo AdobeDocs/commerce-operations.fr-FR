@@ -3,9 +3,9 @@ title: Configuration du serveur web
 description: Découvrez comment configurer votre serveur web pour qu’il fonctionne avec la mise en cache de vernis pour Adobe Commerce. Découvrez la configuration et les exigences de configuration des ports.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Pour configurer le vernis de manière minimale :
 
 1. Sauvegarde `default.vcl` :
 
-   ```bash
+   ```shell
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
    ```
 
@@ -97,13 +97,13 @@ Pour configurer le vernis de manière minimale :
 
 1. Redémarrer le vernis :
 
-   ```bash
+   ```shell
    service varnish restart
    ```
 
 Si Varnish ne démarre pas, essayez de l’exécuter à partir de la ligne de commande comme suit :
 
-```bash
+```shell
 varnishd -d -f /etc/varnish/default.vcl
 ```
 
@@ -131,7 +131,7 @@ Si Varnish ne démarre pas en tant que service, démarrez-le à partir de la lig
 
 1. Démarrez l’interface de ligne de commande du vernis :
 
-   ```bash
+   ```shell
    varnishd -d -f /etc/varnish/default.vcl
    ```
 
@@ -141,7 +141,7 @@ Si Varnish ne démarre pas en tant que service, démarrez-le à partir de la lig
 
    Les messages suivants s’affichent pour confirmer un démarrage réussi :
 
-   ```
+   ```text
    child (29805) Started
    200 0
    
@@ -153,13 +153,13 @@ Si Varnish ne démarre pas en tant que service, démarrez-le à partir de la lig
 
 Connectez-vous au serveur Varnish et saisissez la commande suivante :
 
-```bash
+```shell
 netstat -tulpn
 ```
 
 Recherchez en particulier le résultat suivant :
 
-```
+```text
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
 tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
@@ -178,7 +178,7 @@ Installez le logiciel Commerce si vous ne l’avez pas déjà fait. Lorsque vous
 
 Erreur possible lors de l’installation de Commerce :
 
-```
+```text
 Error 503 Service Unavailable
 Service Unavailable
 XID: 303394517
@@ -209,7 +209,7 @@ Pour définir Commerce en mode Développeur, utilisez la commande [`magento depl
 
 Assurez-vous que Varnish est en cours d’exécution, puis saisissez la commande suivante sur le serveur Varnish :
 
-```bash
+```shell
 varnishlog
 ```
 
@@ -217,7 +217,7 @@ Dans un navigateur web, accédez à n’importe quelle page Commerce.
 
 Une longue liste d’en-têtes de réponse s’affiche dans votre fenêtre d’invite de commande. Recherchez des en-têtes comme ceux-ci :
 
-```
+```text
 -   BereqHeader    X-Varnish: 3
 -   VCL_call       BACKEND_FETCH
 -   VCL_return     fetch
@@ -240,19 +240,19 @@ Il existe plusieurs façons d’examiner les en-têtes de réponse, y compris à
 
 L’exemple suivant utilise `curl`. Vous pouvez saisir cette commande à partir de n’importe quel ordinateur pouvant accéder au serveur Commerce à l’aide du protocole HTTP.
 
-```bash
+```shell
 curl -I -v --location-trusted '<your Commerce base URL>'
 ```
 
 Par exemple,
 
-```bash
+```shell
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 ```
 
 Recherchez des en-têtes comme ceux-ci :
 
-```
+```text
 Content-Type: text/html; charset=iso-8859-1
 X-Varnish: 15
 Age: 0

@@ -3,9 +3,9 @@ title: Flux de déploiement
 description: Découvrez le processus de flux de déploiement pour les environnements de production Adobe Commerce. Découvrez les étapes permettant d’obtenir des performances et une fiabilité optimales.
 feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Les fichiers `composer.json` et `composer.lock` gèrent les dépendances [!DNL C
 
 Pour installer [!DNL Commerce] dépendances :
 
-```bash
+```shell
 composer install --no-dev
 ```
 
@@ -35,7 +35,7 @@ Lorsque vous prétraitez et compilez des instructions d’injection de dépendan
 
 Pour prétraiter et compiler des instructions d’ID :
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
@@ -49,25 +49,25 @@ Pour mettre à jour le chargeur automatique :
 >
 >L’option `-o` convertit le chargement automatique PSR-0/4 en classmap pour obtenir un chargeur automatique plus rapide. L’option `--apcu` utilise APCu pour mettre en cache les classes trouvées/introuvables.
 
-```bash
+```shell
 composer dump-autoload -o --apcu
 ```
 
 Si vous prévoyez de mettre à jour le chargeur automatique, vous devez exécuter les commandes suivantes dans l’ordre :
 
-```bash
+```shell
 composer install --no-dev
 ```
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
-```bash
+```shell
 composer dump-autoload -o
 ```
 
-```bash
+```shell
 bin/magento setup:static-content:deploy
 ```
 
@@ -87,7 +87,7 @@ Vous pouvez utiliser diverses options pour personnaliser les opérations de dép
 
 Pour déployer du contenu statique :
 
-```bash
+```shell
 bin/magento setup:static-content:deploy
 ```
 
@@ -105,7 +105,7 @@ Enfin, vous devez placer votre boutique en mode Production. Le mode de productio
 
 Vous pouvez également déployer du contenu statique, compiler le contenu et définir le mode dans une seule commande d’interface de ligne de commande :
 
-```bash
+```shell
 bin/magento deploy:mode:set production
 ```
 
@@ -117,4 +117,4 @@ Ces étapes sont recommandées, mais ne sont pas obligatoires. Vous pouvez les e
 
 * Réindexez les données pour éviter la présence de données incohérentes dans vos index.
 * Videz le cache pour vous assurer qu’aucune donnée ancienne ou incorrecte n’y reste.
-* Préchauffez le cache, qui indique à l’avance les pages de magasin les plus populaires ou les plus critiques, afin que le cache pour ces pages soit généré et stocké. Cette opération peut être effectuée avec n’importe quel robot d’exploration Internet ou manuellement, si vous disposez d’un petit magasin.
+* Préchauffez le cache, qui indique à l’avance les pages de magasin les plus populaires ou les plus critiques, afin que le cache pour ces pages soit généré et stocké. Cette opération peut être effectuée avec n’importe quel robot d&#39;exploration Internet ou manuellement, si vous disposez d’un petit magasin.

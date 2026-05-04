@@ -2,9 +2,9 @@
 title: Exemple d’utilisation de commandes d’interface de ligne de commande
 description: Consultez un exemple de définition de valeurs partagées, spécifiques au système et sensibles dans votre système de développement à l’aide de la ligne de commande.
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ Utilisez les commandes d’interface de ligne de commande suivantes pour défini
 
 Pour définir le paramètre spécifique au système **Domaine d’e-mail par défaut**, qui se trouve dans la portée par défaut, utilisez la commande suivante :
 
-```bash
+```shell
 bin/magento config:set customer/create_account/email_domain <email domain>
 ```
 

@@ -3,9 +3,9 @@ title: Configuration avancée du vernis
 description: Découvrez comment configurer des fonctionnalités de vernis avancées pour Adobe Commerce, notamment les contrôles d’intégrité, la grâce et les modes saint. Découvrez les techniques d’optimisation VCL.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Vous pouvez également désactiver le contrôle de version des fichiers statique
 
 Enfin, toutes les instances Commerce doivent être en mode de production. Avant le démarrage de Varnish, effacez le cache de chaque instance. Dans Admin, accédez à **System** > Tools > **Cache Management** et cliquez sur **Flush Magento Cache**. Vous pouvez également exécuter la commande suivante pour effacer le cache :
 
-```bash
+```shell
 bin/magento cache:flush
 ```
 
@@ -92,7 +92,7 @@ Après avoir recompilé, vous pouvez installer le module mode Saint . En règle 
 1. Obtenez le code source des [modules de vernis](https://github.com/varnish/varnish-modules). Clonez la version Git (version principale), car les versions 0.9.x contiennent une erreur de code source.
 1. Créez le code source à l’aide d’outils automatiques :
 
-   ```bash
+   ```shell
    sudo apt-get install libvarnishapi-dev || sudo yum install varnish-libs-devel
    ./bootstrap   # If running from git.
    ./configure

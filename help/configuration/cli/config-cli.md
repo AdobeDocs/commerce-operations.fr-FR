@@ -2,9 +2,9 @@
 title: Outil de ligne de commande
 description: Découvrez comment utiliser l’outil de ligne de commande Adobe Commerce pour les tâches d’installation et de configuration. Découvrez les commandes de l’interface de ligne de commande et les fonctions administratives.
 exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Cette rubrique aborde la configuration du logiciel Adobe Commerce à l’aide de
 
 Avant de commencer à utiliser l’interface en ligne de commande, vérifiez les points suivants :
 
-1. Votre système répond à la configuration requise décrite dans la section [&#x200B; Configuration requise &#x200B;](../../installation/system-requirements.md) dans le _Guide d’installation_.
+1. Votre système répond à la configuration requise décrite dans la section [ Configuration requise ](../../installation/system-requirements.md) dans le _Guide d’installation_.
 1. Vous avez terminé toutes les tâches préalables décrites dans [Conditions préalables](../../installation/prerequisites/overview.md) dans le _Guide d’installation_.
 1. Après vous être connecté au serveur Commerce, passez à un utilisateur disposant des autorisations d’écriture sur le système de fichiers Commerce. Voir [passer au propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md) dans le _Guide d’installation_.
 
@@ -42,13 +42,13 @@ Avant de commencer à utiliser l’interface en ligne de commande, vérifiez les
 
 Pour le shell bash, utilisez la syntaxe suivante pour passer au propriétaire du système de fichiers et saisissez simultanément la commande :
 
-```bash
+```shell
 su <file system owner> -s /bin/bash -c <command>
 ```
 
 Si le propriétaire du système de fichiers n’autorise pas les connexions, vous pouvez utiliser les méthodes suivantes :
 
-```bash
+```shell
 sudo -u <file system owner> <command>
 ```
 
@@ -58,7 +58,7 @@ Ajoutez des `<magento_root>/bin` à votre `PATH` système.
 
 Exemple de shell Bash pour CentOS :
 
-```bash
+```shell
 export PATH=$PATH:/var/www/html/magento2/bin
 ```
 

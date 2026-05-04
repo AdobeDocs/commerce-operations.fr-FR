@@ -3,9 +3,9 @@ title: Configurer le vernis pour Commerce
 description: Découvrez comment configurer le vernis spécifiquement pour les applications Adobe Commerce. Découvrez les mises à jour des fichiers de configuration et les techniques de gestion.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Pour configurer Commerce afin d’utiliser le vernis :
 
    | Champ | Description |
    | ----- | ----------- |
-   | Accéder à la liste | Entrez le nom d’hôte complet, l’adresse IP ou la plage d’adresses IP de notation [CIDR (Classless Inter-domain Routing)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) pour laquelle invalider le contenu. Voir [&#x200B; Purge du cache de vernis &#x200B;](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
+   | Accéder à la liste | Entrez le nom d’hôte complet, l’adresse IP ou la plage d’adresses IP de notation [CIDR (Classless Inter-domain Routing)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) pour laquelle invalider le contenu. Voir [ Purge du cache de vernis ](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
    | Hôte principal | Saisissez le nom d’hôte complet ou l’adresse IP et le port d’écoute du Varnish _serveur principal_ ou _serveur d’origine_ ; c’est-à-dire le serveur qui fournit le contenu que Varnish accélère. En règle générale, il s’agit de votre serveur web. Voir [Serveurs principaux de cache vernis](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Port du serveur principal | Port d’écoute du serveur d’origine. |
    | Délai de grâce | Détermine la durée pendant laquelle le vernis diffuse du contenu obsolète si le serveur principal ne répond pas. La valeur par défaut est de 300 secondes. |
@@ -32,7 +32,7 @@ Pour configurer Commerce afin d’utiliser le vernis :
 
 Vous pouvez également activer le vernis à partir de la ligne de commande, au lieu de vous connecter à Admin, à l’aide de l’outil d’interface de ligne de commande C :
 
-```bash
+```shell
 bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/caching_application 2
 ```
 
@@ -50,15 +50,15 @@ Pour exporter un fichier de configuration de vernis à partir de l’administrat
 
 1. Sauvegardez vos `default.vcl` existantes. Renommez ensuite le fichier `varnish.vcl` que vous venez d’exporter en `default.vcl`. Copiez ensuite le fichier dans le répertoire `/etc/varnish/`.
 
-   ```bash
+   ```shell
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak2
    ```
 
-   ```bash
+   ```shell
    mv <download_directory>/varnish.vcl default.vcl
    ```
 
-   ```bash
+   ```shell
    cp <download_directory>/default.vcl /etc/varnish/default.vcl
    ```
 
@@ -76,11 +76,11 @@ Pour exporter un fichier de configuration de vernis à partir de l’administrat
 
 1. Redémarrez Varnish et votre serveur web :
 
-   ```bash
+   ```shell
    service varnish restart
    ```
 
-   ```bash
+   ```shell
    service httpd restart
    ```
 

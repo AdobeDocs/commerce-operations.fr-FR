@@ -2,16 +2,16 @@
 title: Présentation de la portée de la mise à niveau
 description: Découvrez les modifications rétrocompatibles dans une version qui peuvent avoir un impact sur les modules personnalisés Adobe Commerce ou les extensions tierces.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '946'
 ht-degree: 0%
 
 ---
 
 # Présentation de la portée de la mise à niveau
 
-Consultez les [notes de mise à jour](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/overview) pour comprendre la portée d’une version, y compris les améliorations, les correctifs et les problèmes connus qui peuvent avoir un impact sur les modules tiers et personnalisés.
+Consultez les [notes de mise à jour](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) pour comprendre la portée d’une version, y compris les améliorations, les correctifs et les problèmes connus qui peuvent avoir un impact sur les modules tiers et personnalisés.
 
 ## Modifications non rétrocompatibles
 
@@ -26,7 +26,7 @@ La nouvelle politique de compatibilité d’Adobe Commerce Marketplace garantit 
 
 ## Modules personnalisés
 
-Tous les modules personnalisés doivent être comparés à la version cible vers laquelle vous souhaitez effectuer la mise à niveau. Il s’agit du processus de mise à niveau qui nécessite le plus de temps et de ressources. Lors de l’évaluation de vos modules personnalisés, vous devez rechercher les modifications non rétrocompatibles et tenir compte des nouvelles pratiques, telles que la décomposition du contrôleur. Pour en savoir plus à ce sujet, consultez les [notes de mise à jour](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/overview). Veillez également à suivre les [bonnes pratiques](https://developer.adobe.com/commerce/php/best-practices/extensions/) en matière de développement de modules.
+Tous les modules personnalisés doivent être comparés à la version cible vers laquelle vous souhaitez effectuer la mise à niveau. Il s’agit du processus de mise à niveau qui nécessite le plus de temps et de ressources. Lors de l’évaluation de vos modules personnalisés, vous devez rechercher les modifications non rétrocompatibles et tenir compte des nouvelles pratiques, telles que la décomposition du contrôleur. Pour en savoir plus à ce sujet, consultez les [notes de mise à jour](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview). Veillez également à suivre les [bonnes pratiques](https://developer.adobe.com/commerce/php/best-practices/extensions/) en matière de développement de modules.
 
 ## [!DNL Upgrade Compatibility Tool]
 
@@ -40,7 +40,7 @@ Consultez les sections suivantes pour commencer à utiliser le [!DNL Upgrade Com
 
 Utilisez le compositeur pour télécharger l’outil. Il nécessite PHP 7.3 ou une version ultérieure, au moins 2 Go de RAM, Node.js (si vous vérifiez la compatibilité GraphQL), et une licence Adobe Commerce.
 
-```bash
+```shell
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
 
@@ -48,7 +48,7 @@ composer create-project magento/upgrade-compatibility-tool uct --repository http
 
 Pour analyser votre instance et rechercher des erreurs, des avertissements et des problèmes critiques :
 
-```bash
+```shell
 bin/uct upgrade:check <dir> -c <coming version> 
 ```
 
@@ -58,7 +58,7 @@ bin/uct upgrade:check <dir> -c <coming version>
 
 Pour identifier les problèmes les plus critiques à résoudre par votre équipe, procédez comme suit :
 
-```bash
+```shell
 bin/uct upgrade:check /path/to/magento/ --ignore-current-compatibility-issues –min-issue-level critical --vanilla-dir /path/to/vanilla/code/ /path/to/magento/app/code/Vendor/
 ```
 

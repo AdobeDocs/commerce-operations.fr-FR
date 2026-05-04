@@ -2,9 +2,9 @@
 title: Activer le profilage
 description: En savoir plus sur l’activation de MAGE Profiler pour l’utiliser avec vos outils d’analyse.
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -63,13 +63,13 @@ Pour activer les graphiques de dépendance, utilisez l’option variable .
 
    Pour activer le profileur à l’aide du type `html` et créer un fichier indicateur :
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:enable html
    ```
 
    Pour activer le profileur à l’aide du type `csvfile` et créer un fichier indicateur :
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:enable csvfile
    ```
 
@@ -77,7 +77,7 @@ Pour activer les graphiques de dépendance, utilisez l’option variable .
 
    Pour désactiver le profileur et supprimer le fichier indicateur :
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:disable
    ```
 

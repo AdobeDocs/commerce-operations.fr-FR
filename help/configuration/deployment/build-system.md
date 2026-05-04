@@ -1,11 +1,11 @@
 ---
 title: Configuration du système de build
-description: Découvrez comment déployer Commerce dans un système de version.
+description: Découvrez comment configurer un système de génération pour le déploiement d’Adobe Commerce avec le contrôle de code source, les ressources générées et les exigences en matière de contenu statique.
 feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Vous pouvez disposer d’un système de version qui répond aux exigences suivan
 
 >[!WARNING]
 >
->La connexion à la base de données n’est pas requise si elle figure déjà dans `config.php` ; consultez la section [&#x200B; Exporter la configuration](../cli/export-configuration.md). Dans le cas contraire, la connexion à la base de données est requise.
+>La connexion à la base de données n’est pas requise si elle figure déjà dans `config.php` ; consultez la section [ Exporter la configuration](../cli/export-configuration.md). Dans le cas contraire, la connexion à la base de données est requise.
 
 >[!INFO]
 >
@@ -59,11 +59,11 @@ Pour installer le compositeur :
 
 1. Saisissez les commandes suivantes :
 
-   ```bash
+   ```shell
    curl -sS https://getcomposer.org/installer | php
    ```
 
-   ```bash
+   ```shell
    mv composer.phar /usr/local/bin/composer
    ```
 
@@ -82,26 +82,26 @@ Pour configurer le système de génération :
 
    Si vous utilisez Git, utilisez la commande suivante :
 
-   ```bash
+   ```shell
    git clone [-b <branch name>] <repository URL>
    ```
 
 1. Accédez au répertoire racine Commerce et saisissez les informations suivantes :
 
-   ```bash
+   ```shell
    composer install
    ```
 
 1. Attendez que les dépendances soient mises à jour.
 1. Définir la propriété :
 
-   ```bash
+   ```shell
    chown -R <Commerce file system owner name>:<web server username> .
    ```
 
    Par exemple,
 
-   ```bash
+   ```shell
    chown -R commerce-username:apache .
    ```
 
@@ -120,15 +120,15 @@ Pour configurer le système de génération :
 1. Enregistrez vos modifications dans `.gitignore` et quittez l’éditeur de texte.
 1. Si vous utilisez Git, validez la modification à l’aide des commandes suivantes :
 
-   ```bash
+   ```shell
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   Pour plus d’informations[`.gitignore` voir la référence &#x200B;](../reference/config-reference-gitignore.md) .
+   Pour plus d’informations](../reference/config-reference-gitignore.md) voir la référence [`.gitignore` .
 
 1. Le système de génération doit utiliser [mode par défaut](../bootstrap/application-modes.md#default-mode) ou [mode développeur](../bootstrap/application-modes.md#developer-mode) :
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set <mode>
    ```
 

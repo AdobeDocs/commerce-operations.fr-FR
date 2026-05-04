@@ -2,9 +2,9 @@
 title: Serveur d’applications GraphQL
 description: Découvrez le serveur d’applications GraphQL dans Adobe Commerce. Découvrez les conseils d’implémentation et les stratégies d’optimisation.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2464'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Le serveur d’applications Commerce GraphQL permet à Adobe Commerce de conserver l’état des requêtes d’API Commerce GraphQL. GraphQL Application Server, qui repose sur l’extension Swoole, fonctionne comme un processus avec des threads de traitement qui gèrent le traitement des requêtes. En préservant un état d’application amorcé parmi les requêtes d’API GraphQL, le serveur d’applications GraphQL améliore la gestion des requêtes et les performances globales du produit. Les requêtes d’API deviennent beaucoup plus efficaces.
 
-GraphQL Application Server est disponible uniquement pour Adobe Commerce. Il n’est pas disponible pour Magento Open Source. Pour les projets Cloud Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) pour activer le serveur d’applications GraphQL.
+GraphQL Application Server est disponible uniquement pour Adobe Commerce. Il n’est pas disponible pour Magento Open Source. Pour les projets Cloud Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) pour activer le serveur d’applications GraphQL.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ L’exécution du serveur d’applications GraphQL requiert les éléments suiva
 
 ### Projets cloud
 
-Adobe Commerce sur les projets d’infrastructure cloud inclut l’extension Swoole par défaut. Vous pouvez l’[activer](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) dans la propriété `runtime` du fichier `.magento.app.yaml`. Par exemple :
+Adobe Commerce sur les projets d’infrastructure cloud inclut l’extension Swoole par défaut. Vous pouvez l’[activer](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) dans la propriété `runtime` du fichier `.magento.app.yaml`. Par exemple :
 
 ```yaml
 runtime:
@@ -85,19 +85,19 @@ Une fois que la fonction Serveur d’applications est activée sur votre projet 
 
 1. Assurez-vous que `/application-server/start.sh` est exécutable en exécutant la commande suivante :
 
-   ```bash
+   ```shell
    chmod +x application-server/start.sh
    ```
 
 1. Ajoutez les fichiers mis à jour à l’index Git avec la commande suivante :
 
-   ```bash
+   ```shell
    git add -f .magento.app.yaml application-server/*
    ```
 
 1. Validez vos modifications avec cette commande :
 
-   ```bash
+   ```shell
    git commit -m "AppServer Enabled"
    ```
 
@@ -105,7 +105,7 @@ Une fois que la fonction Serveur d’applications est activée sur votre projet 
 
 Une fois les étapes d’activation terminées, envoyez les modifications à votre référentiel Git pour déployer le serveur d’applications GraphQL :
 
-```bash
+```shell
 git push
 ```
 
@@ -157,26 +157,26 @@ Procédez comme suit avant de déployer GraphQL Application Server sur des proje
 
 1. Ajoutez les fichiers mis à jour à l’index Git :
 
-   ```bash
+   ```shell
    git add -f .magento.app.yaml .magento/routes.yaml .magento/services.yaml application-server/.magento/*
    ```
 
 1. Validez vos modifications et envoyez-les pour déclencher un déploiement :
 
-   ```bash
+   ```shell
    git commit -m "Enabling AppServer: initial changes"
    git push
    ```
 
 1. Utilisez SSH pour vous connecter à l’environnement cloud distant (_et non_ à l’application `application-server`) :
 
-   ```bash
+   ```shell
    magento-cloud ssh -p <project-ID> -e <environment-ID>
    ```
 
 1. Synchronisez les données des montages locaux aux montages partagés :
 
-   ```bash
+   ```shell
    rsync -avz var/* var_shared/
    rsync -avz app/etc/* app/etc_shared/
    rsync -avz pub/media/* pub/media_shared/
@@ -237,7 +237,7 @@ Procédez comme suit avant de déployer GraphQL Application Server sur des proje
 
 1. Ajoutez le fichier mis à jour à l’index Git, validez les modifications et effectuez une notification push pour déclencher un déploiement :
 
-   ```bash
+   ```shell
    git add -f .magento.app.yaml
    git commit -m "Enabling AppServer: switch mounts"
    git push
@@ -247,7 +247,7 @@ Procédez comme suit avant de déployer GraphQL Application Server sur des proje
 
 1. Nettoyage des anciens montages locaux :
 
-   ```bash
+   ```shell
    rm -rf var_old/*
    rm -rf app/etc_old/*
    rm -rf pub/media_old/*
@@ -265,7 +265,7 @@ Procédez comme suit avant de déployer GraphQL Application Server sur des proje
 
 1. Ajoutez le fichier mis à jour à l’index Git, validez les modifications et effectuez une notification push pour déclencher un déploiement :
 
-   ```bash
+   ```shell
    git add -f .magento.app.yaml
    git commit -m "Enabling AppServer: finish"
    git push
@@ -273,13 +273,13 @@ Procédez comme suit avant de déployer GraphQL Application Server sur des proje
 
 >[!NOTE]
 >
->Assurez-vous que tous les paramètres personnalisés de votre fichier de `.magento.app.yaml` racine sont migrés de manière appropriée vers le fichier `application-server/.magento/.magento.app.yaml`. Une fois le fichier `application-server/.magento/.magento.app.yaml` ajouté à votre projet, vous devez le gérer en plus du fichier racine `.magento.app.yaml`. Par exemple, si vous devez [configurer le service RabbitMQ](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) ou [gérer les propriétés web](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) vous devez également ajouter la même configuration à `application-server/.magento/.magento.app.yaml`.
+>Assurez-vous que tous les paramètres personnalisés de votre fichier de `.magento.app.yaml` racine sont migrés de manière appropriée vers le fichier `application-server/.magento/.magento.app.yaml`. Une fois le fichier `application-server/.magento/.magento.app.yaml` ajouté à votre projet, vous devez le gérer en plus du fichier racine `.magento.app.yaml`. Par exemple, si vous devez [configurer le service RabbitMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) ou [gérer les propriétés web](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) vous devez également ajouter la même configuration à `application-server/.magento/.magento.app.yaml`.
 
 ### Vérifier l’activation sur les projets cloud
 
 1. Exécutez une requête GraphQL ou une mutation sur votre instance pour confirmer que le point d’entrée `graphql` est accessible. Par exemple :
 
-   ```
+   ```graphql
    mutation {  
     createEmptyCart
    }
@@ -299,7 +299,7 @@ Procédez comme suit avant de déployer GraphQL Application Server sur des proje
 
 1. Vous pouvez également vérifier si GraphQL Application Server est en cours d’exécution en exécutant la commande suivante :
 
-   ```bash
+   ```shell
    ps aux|grep php
    ```
 
@@ -341,7 +341,7 @@ Pour exécuter le serveur d’applications GraphQL localement, installez l’ext
 
 La procédure suivante décrit comment installer l&#39;extension Swoole pour PHP 8.2 sur les systèmes OSX. Il s’agit de l’une des nombreuses façons d’installer l’extension Swoole.
 
-```bash
+```shell
 pecl install swoole
 ```
 
@@ -351,7 +351,7 @@ Lors de l’installation, Adobe Commerce affiche des invites pour activer la pri
 
 Vérifiez que l’extension a bien été activée :
 
-```bash
+```shell
 php -m | grep swoole
 ```
 
@@ -361,7 +361,7 @@ Les erreurs qui se produisent lors de l’installation de Swoole se produisent g
 
 * Vérifiez l’emplacement des `openssl` en exécutant :
 
-```bash
+```shell
 openssl version -d
 ```
 
@@ -369,17 +369,17 @@ Cette commande affiche le chemin d’accès où `openssl` est installé.
 
 * Vérifiez l’emplacement des `pcre2` en exécutant :
 
-```bash
+```shell
 pcre2-config --prefix 
 ```
 
 Utilisez Homebrew pour installer les packages manquants si la sortie de commande indique que des fichiers sont manquants :
 
-```bash
+```shell
 brew install openssl
 ```
 
-```bash
+```shell
 brew install pcre2
 ```
 
@@ -387,7 +387,7 @@ brew install pcre2
 
 Pour résoudre les problèmes liés à `openssl`, exécutez :
 
-```bash
+```shell
 export LDFLAGS="-L/opt/homebrew/etc/openssl@3/lib" export CPPFLAGS="-I/opt/homebrew/etc/openssl@3/include"
 ```
 
@@ -397,7 +397,7 @@ Vérifiez que vous utilisez le chemin d’accès à partir de votre environnemen
 
 Vous pouvez exécuter à nouveau la commande suivante pour vérifier si les problèmes liés à openssl ont été résolus :
 
-```bash
+```shell
 pecl install swoole
 ```
 
@@ -409,7 +409,7 @@ Pour résoudre les problèmes liés à `pcre2.h`, liez symboliquement le chemin 
 
 Démarrez le serveur d’applications GraphQL :
 
-```bash
+```shell
 bin/magento server:run
 ```
 
@@ -417,7 +417,7 @@ Cette commande démarre un port HTTP sur 9501. Une fois GraphQL Application Serv
 
 Pour confirmer que GraphQL Application Server est en cours d’exécution dans votre déploiement :
 
-```bash
+```shell
 ps aux | grep php
 ```
 
@@ -449,13 +449,13 @@ Les procédures de désactivation de GraphQL Application Server varient selon qu
 
 1. Validez vos modifications à l’aide de la commande suivante :
 
-   ```bash
+   ```shell
    git commit -m "AppServer Disabled"
    ```
 
 1. Déployez ces modifications à l’aide de la commande suivante :
 
-   ```bash
+   ```shell
    git push
    ```
 
@@ -515,7 +515,7 @@ Lors du déploiement de GraphQL Application Server, les développeurs d’extens
 
 Lors de l’exécution de tests fonctionnels (ou de tests manuels), le serveur d’applications GraphQL peut s’exécuter avec `--state-monitor mode` activé pour aider à trouver les classes où l’état est réutilisé involontairement. Démarrez le serveur d’applications normalement, mais ajoutez le paramètre `--state-monitor` .
 
-```
+```shell
 bin/magento server:run --state-monitor
 ```
 
@@ -523,7 +523,7 @@ Une fois chaque demande traitée, un nouveau fichier est ajouté dans le répert
 
 Exemples :
 
-```
+```text
 /var/workspace/var/tmp/StateMonitor-json-2024-04-10T18:50:39Z-hW0ucN.json
 /var/workspace/var/tmp/StateMonitor-junit-2024-04-10T18:50:39Z-oreUco.xml
 ```

@@ -3,9 +3,9 @@ title: Stockage à distance pour Commerce sur les infrastructures cloud
 description: Consultez les conseils sur la configuration du stockage distant pour Adobe Commerce sur l’infrastructure cloud.
 feature: Configuration, Cloud, Storage
 exl-id: da352466-13f2-42e4-a589-3b0a89728467
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Variable d’environnement
 
-La variable `REMOTE_STORAGE` est utilisée pendant la [phase de déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=fr) d’un projet d’infrastructure cloud.
+La variable `REMOTE_STORAGE` est utilisée pendant la [phase de déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html) d’un projet d’infrastructure cloud.
 
 ### `REMOTE_STORAGE`
 
@@ -40,11 +40,11 @@ stage:
 
 ### Définition d’une variable avec l’interface de ligne de commande Cloud
 
-Définissez la variable `REMOTE_STORAGE` en tant que [variable au niveau de l’environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html?lang=fr) de sorte que les fichiers ne soient pas partagés entre les environnements de production, d’évaluation et d’intégration. La définition des variables au niveau de l’environnement offre la possibilité d’utiliser uniquement le stockage distant sur certains environnements, par exemple en excluant l’utilisation du stockage distant dans l’environnement d’intégration.
+Définissez la variable `REMOTE_STORAGE` en tant que [variable au niveau de l’environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html) de sorte que les fichiers ne soient pas partagés entre les environnements de production, d’évaluation et d’intégration. La définition des variables au niveau de l’environnement offre la possibilité d’utiliser uniquement le stockage distant sur certains environnements, par exemple en excluant l’utilisation du stockage distant dans l’environnement d’intégration.
 
 **Pour ajouter la variable de stockage distant à l’aide de l’interface de ligne de commande Cloud** :
 
-```bash
+```shell
 magento-cloud variable:create --level environment --name REMOTE_STORAGE --json true --inheritable false --value '{"driver":"aws-s3","prefix":"uat","config":{"bucket":"aws-bucket-id","region":"eu-west-1","key":"optional-key","secret":"optional-secret"}}'
 ```
 
@@ -89,7 +89,7 @@ Vous pouvez également utiliser l&#39;interface Web de Project pour ajouter la v
 
 ### Utiliser l’authentification facultative
 
-Les `key` et `secret` sont facultatifs. Lorsque vous créez la variable, vous pouvez masquer les `key` et les `secret` en sélectionnant l’option `sensitive` . Avec ce paramètre, les valeurs ne sont pas visibles dans l’interface web. Voir [&#x200B; Visibilité des variables &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html?lang=fr#visibility) dans le guide _Commerce sur les infrastructures cloud_.
+Les `key` et `secret` sont facultatifs. Lorsque vous créez la variable, vous pouvez masquer les `key` et les `secret` en sélectionnant l’option `sensitive` . Avec ce paramètre, les valeurs ne sont pas visibles dans l’interface web. Voir [ Visibilité des variables ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility) dans le guide _Commerce sur les infrastructures cloud_.
 
 Si vous souhaitez utiliser une autre méthode d’authentification, omettez les `key` et `secret` de la configuration JSON,. Configurez la méthode d’authentification alternative et vérifiez que le serveur est autorisé dans le compartiment S3.
 
@@ -103,7 +103,7 @@ Après avoir activé le module de stockage distant, synchronisez les fichiers mu
 
 1. Démarrez la synchronisation.
 
-```bash
+```shell
 bin/magento remote-storage:sync 
 ```
 
@@ -111,7 +111,7 @@ bin/magento remote-storage:sync
 
 Si vous choisissez d’utiliser la solution de stockage à distance avec un projet d’infrastructure cloud Adobe Commerce, suivez les conseils de [Amazon S3](https://docs.fastly.com/en/guides/amazon-s3) dans la documentation _Fastly_ pour vous assurer que l’optimisation des images Fastly fonctionne avec AWS S3.
 
-Préparez-vous à utiliser vos [informations d’identification Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=fr#get-fastly-credentials). Sur les projets Pro, utilisez SSH pour vous connecter à votre serveur et obtenir les informations d’identification Fastly à partir du fichier `/mnt/shared/fastly_tokens.txt`. Les environnements d’évaluation et de production disposent d’informations d’identification uniques. Vous devez obtenir les informations d’identification pour chaque environnement.
+Préparez-vous à utiliser vos [informations d’identification Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#get-fastly-credentials). Sur les projets Pro, utilisez SSH pour vous connecter à votre serveur et obtenir les informations d’identification Fastly à partir du fichier `/mnt/shared/fastly_tokens.txt`. Les environnements d’évaluation et de production disposent d’informations d’identification uniques. Vous devez obtenir les informations d’identification pour chaque environnement.
 
 Continuez à configurer le stockage distant pour les projets cloud avec les tâches suivantes :
 

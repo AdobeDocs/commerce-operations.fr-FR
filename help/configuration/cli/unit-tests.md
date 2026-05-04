@@ -2,7 +2,7 @@
 title: Exécuter des tests unitaires
 description: Découvrez comment exécuter des tests unitaires définis dans la base de code Adobe Commerce. Découvrez les commandes de test, les options d’exécution et le compte rendu des performances.
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Avant d’exécuter cette commande, la valeur suivante _doit_ doit être vraie :
 
 - Le module `Magento_Developer` doit être activé. Vous pouvez l’activer comme suit :
 
-  ```bash
+  ```shell
   bin/magento module:enable [--force] Magento_Developer
   ```
 
@@ -35,24 +35,24 @@ Par exemple, pour exécuter des tests d’intégration, vous devez copier le `de
 
 Utilisation des commandes :
 
-```bash
+```shell
 bin/magento dev:tests:run <test>
 ```
 
 Pour répertorier les types de test disponibles :
 
-```bash
+```shell
 bin/magento dev:tests:run --help
 ```
 
 Exemple de retour :
 
-```
+```text
 all, unit, integration, integration-all, static, static-all, integrity, legacy, default
 ```
 
 Par exemple, pour exécuter des tests d’intégration :
 
-```bash
+```shell
 bin/magento dev:tests:run integration
 ```

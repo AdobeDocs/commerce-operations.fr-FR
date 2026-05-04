@@ -2,9 +2,9 @@
 title: Application de correctifs
 description: Découvrez les méthodes d’application de correctifs à un projet Adobe Commerce.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Vous pouvez appliquer des correctifs à l’aide de l’une des méthodes suivantes :
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Ligne de commande](../patches/apply.md#command-line)
 - [Compositeur](../patches/apply.md#composer)
 
@@ -31,14 +31,14 @@ Pour appliquer un correctif personnalisé à l’aide du compositeur :
 1. Ouvrez votre application de ligne de commande et accédez au répertoire du projet.
 1. Ajoutez le module externe `cweagans/composer-patches` au fichier `composer.json`.
 
-   ```bash
+   ```shell
    composer require cweagans/composer-patches
    ```
 
 1. Modifiez le fichier `composer.json` et ajoutez la section suivante pour spécifier :
-   - **Module:** *\« magento/module-pay\ »*
-   - **Title:** *\« MAGETWO-56934 : la page de passage en caisse se fige lors de la commande avec Authorize.net avec une carte de crédit non valide\ »*
-   - **Chemin d’accès au correctif :** *\ »patches/composer/github-issue-6474.diff\ »*
+   - **Module:** *\« magento/module-pay\«*
+   - **Title:** *\« MAGETWO-56934 : la page de passage en caisse se fige lors de la commande avec Authorize.net avec une carte de crédit non valide\«*
+   - **Chemin d’accès au correctif :** *\« patches/composer/github-issue-6474.diff\«*
 
    Par exemple :
 
@@ -57,13 +57,13 @@ Pour appliquer un correctif personnalisé à l’aide du compositeur :
 
 1. Appliquez le correctif. N’utilisez l’option `-v` que si vous souhaitez afficher les informations de débogage.
 
-   ```bash
+   ```shell
    composer -v install
    ```
 
 1. Mettez à jour le fichier `composer.lock`. Le fichier de verrouillage effectue le suivi des correctifs qui ont été appliqués à chaque package du compositeur dans un objet .
 
-   ```bash
+   ```shell
    composer update --lock
    ```
 
@@ -75,7 +75,7 @@ Pour appliquer des correctifs à partir de la ligne de commande :
 1. Connectez-vous au serveur en tant qu’[utilisateur administrateur](../../configuration/cli/config-cli.md#prerequisites) et vérifiez que le fichier se trouve dans le répertoire approprié.
 1. Dans l’interface de ligne de commande, exécutez les commandes suivantes en fonction de l’extension de correctif :
 
-   ```bash
+   ```shell
    patch < patch_file_name.patch
    ```
 

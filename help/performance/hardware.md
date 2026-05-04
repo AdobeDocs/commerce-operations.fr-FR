@@ -3,9 +3,9 @@ title: Recommandations matérielles
 description: Découvrez les recommandations matérielles pour des performances optimales d’Adobe Commerce. Découvrez les exigences en matière de CPU, de mémoire et de stockage pour les déploiements en production.
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 [!DNL Commerce] nœuds web diffusent toutes les requêtes qui ne sont pas mises en cache ou qui ne peuvent pas l’être via l’application. Un cœur de CPU peut répondre efficacement à environ deux requêtes [!DNL Commerce] (parfois jusqu’à quatre). Utilisez l’équation suivante pour déterminer le nombre de nœuds/cœurs web dont vous avez besoin pour traiter toutes les requêtes entrantes sans les mettre en file d’attente :
 
-```
+```text
 N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
 ```
 

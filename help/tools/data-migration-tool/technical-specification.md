@@ -3,9 +3,9 @@ title: spécification technique [!DNL Data Migration Tool]
 description: Découvrez les détails d’implémentation de et comment optimiser l’extension lors  [!DNL Data Migration Tool]  transfert de données entre Magento 1 et Magento 2.
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '2098'
+source-wordcount: '2113'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ La [configuration requise](../../installation/system-requirements.md) pour le [!
 
 Le diagramme suivant représente la structure des répertoires de [!DNL Data Migration Tool] :
 
-```
+```shell
 ├── etc                                    --- all configuration files
 │   ├── opensource-to-opensource            --- configuration files for migration from Magento Open Source 1 to Magento Open Source 2
 │   │   ├── 1.9.1.1
@@ -417,7 +417,7 @@ Options :
 
 * *handler* - Décrit le comportement de transformation des champs. Pour appeler le gestionnaire, vous devez spécifier un nom de classe de gestionnaire dans une balise `<handler>`. Utilisez la balise `<param>` avec le nom du paramètre et les données de valeur pour les transmettre au gestionnaire .
 
-**Source** opérations disponibles :
+**** opérations disponibles :
 
 | Document | Champ |
 |--- |--- |
@@ -535,12 +535,12 @@ Il existe trois types de tests dans le [!DNL Data Migration Tool] :
 
 Ils se trouvent dans le répertoire `tests/` de l’outil, qui est identique au type de test (les tests unitaires se trouvent dans le répertoire `tests/unit`). Pour lancer le test, phpunit doit être installé. Remplacez le répertoire actuel par le répertoire test et lancez phpunit. Par exemple :
 
-```bash
+```shell
 [10:32 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool]-[git master]
 $ cd tests/unit
 ```
 
-```bash
+```shell
 [10:33 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool/tests/unit]-[git master]
 $ phpunit
 PHPUnit 8.1.0 by Sebastian Bergmann.

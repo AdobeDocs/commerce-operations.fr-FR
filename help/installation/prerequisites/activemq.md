@@ -1,9 +1,9 @@
 ---
 title: Courtier en messages (Artéfacts ActiveMQ)
 description: Pour installer et configurer le courtier de messages Apache ActiveMQ Artemis pour les installations sur site d’Adobe Commerce, procédez comme suit.
-source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Adobe Commerce prend également en charge le courtier de messages open source Ac
 
 >[!NOTE]
 >
->ActiveMQ Artemis a été introduit dans Adobe Commerce 2.4.5 et les versions ultérieures. Pour plus d’informations sur l’installation d’ActiveMQ Artemis dans Adobe Commerce sur des projets d’infrastructure cloud, voir [Configuration du service ActiveMQ](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/activemq) dans le *Guide de Commerce sur le cloud*.
+>ActiveMQ Artemis a été introduit dans Adobe Commerce 2.4.5 et les versions ultérieures. Pour plus d’informations sur l’installation d’ActiveMQ Artemis dans Adobe Commerce sur des projets d’infrastructure cloud, voir [Configuration du service ActiveMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq) dans le *Guide de Commerce sur le cloud*.
 
 Les files d&#39;attente de messages fournissent un mécanisme de communication asynchrone dans lequel l&#39;expéditeur et le destinataire d&#39;un message ne se contactent pas. Ils n’ont pas non plus besoin de communiquer avec la file d’attente de messages en même temps. Lorsqu&#39;un expéditeur place un message dans une file d&#39;attente, il est stocké jusqu&#39;à ce que le destinataire le reçoive.
 
@@ -30,7 +30,7 @@ Le système de file d’attente des messages doit être établi avant d’instal
 
 >[!TIP]
 >
->[&#x200B; Consultez toujours la page de téléchargement d’Apache ActiveMQ Artemis &#x200B;](https://activemq.apache.org/components/artemis/download/) la dernière version stable avant l’installation. Les exemples de ce document utilisent la version 2.42.0, qui est la dernière version stable en date de septembre 2025.
+>[ Consultez toujours la page de téléchargement d’Apache ActiveMQ Artemis ](https://activemq.apache.org/components/artemis/download/) la dernière version stable avant l’installation. Les exemples de ce document utilisent la version 2.42.0, qui est la dernière version stable en date de septembre 2025.
 
 
 ## Installation des artéfacts Apache ActiveMQ
@@ -51,7 +51,7 @@ Vérifiez que Docker est installé et en cours d’exécution sur votre système
 
 1. Exécutez ActiveMQ Artemis à l’aide de l’image Docker officielle :
 
-   ```bash
+   ```shell
    # Run with default configuration
    docker run --detach \
      --name artemis \
@@ -63,7 +63,7 @@ Vérifiez que Docker est installé et en cours d’exécution sur votre système
 
 1. Exécuter avec des informations d’identification personnalisées :
 
-   ```bash
+   ```shell
    # Run with custom username/password
    docker run --detach \
      --name artemis \
@@ -77,7 +77,7 @@ Vérifiez que Docker est installé et en cours d’exécution sur votre système
 
 #### Commandes de gestion Docker
 
-```bash
+```shell
 # Check container status
 docker ps | grep artemis
 
@@ -115,7 +115,7 @@ Assurez-vous que Java 17 ou version ultérieure est installé (requis pour Activ
 
 1. Téléchargez et installez la dernière version à partir du site web [Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/download/). Depuis septembre 2025, la dernière version stable est la version 2.42.0 :
 
-   ```bash
+   ```shell
    sudo mkdir -p /opt/artemis
    cd /opt/artemis
    sudo curl -O https://downloads.apache.org/activemq/activemq-artemis/2.42.0/apache-artemis-2.42.0-bin.tar.gz
@@ -125,7 +125,7 @@ Assurez-vous que Java 17 ou version ultérieure est installé (requis pour Activ
 
 1. Créez l’utilisateur `artemis` et définissez la propriété :
 
-   ```bash
+   ```shell
    # Create artemis user and set ownership
    sudo useradd -r -s /bin/false artemis 2>/dev/null || true
    sudo chown -R artemis:artemis /opt/artemis
@@ -133,14 +133,14 @@ Assurez-vous que Java 17 ou version ultérieure est installé (requis pour Activ
 
 1. Créez une instance de broker :
 
-   ```bash
+   ```shell
    sudo /opt/artemis/bin/artemis create /var/lib/artemis-instance --user artemis --password artemis --allow-anonymous
    sudo chown -R artemis:artemis /var/lib/artemis-instance
    ```
 
 1. Démarrez le courtier :
 
-   ```bash
+   ```shell
    # Start in foreground (for testing)
    sudo /var/lib/artemis-instance/bin/artemis run
    
@@ -195,7 +195,7 @@ Pour activer SSL sur STOMP, vous devez ajouter explicitement l&#39;accepteur de 
 
 Si vous installez Adobe Commerce _après_ vous installez ActiveMQ Artemis, ajoutez les paramètres de ligne de commande suivants lors de l’installation :
 
-```bash
+```shell
 --stomp-host="<hostname>" --stomp-port="61613" --stomp-user="<user_name>" --stomp-password="<password>"
 ```
 
@@ -232,7 +232,7 @@ Si vous disposez déjà d’une instance Adobe Commerce avec la configuration Ra
 
 Vous pouvez également définir des valeurs de configuration ActiveMQ à l’aide de la commande `bin/magento setup:config:set` (supprimez la configuration AMQP si elle existe dans le fichier `app/etc/env.php`) :
 
-```bash
+```shell
 bin/magento setup:config:set --stomp-host="activemq.example.com" --stomp-port="61613" --stomp-user="magento" --stomp-password="magento"
 ```
 
@@ -337,13 +337,13 @@ ActiveMQ Artemis fournit une console de gestion web accessible à l’adresse su
 
 Testez la connexion STOMP à l&#39;aide de telnet :
 
-```bash
+```shell
 telnet localhost 61613
 ```
 
 Une connexion devrait être établie. Pour effectuer un test avec une commande STOMP :
 
-```bash
+```shell
 # Test basic STOMP connection
 echo -e "CONNECT\nhost:localhost\n\n\x00" | telnet localhost 61613
 ```

@@ -3,9 +3,9 @@ title: Configurer la mise en cache sous CentOS
 description: Découvrez comment installer et configurer la mise en cache de mmemcache sur CentOS pour la mise en cache d’Adobe Commerce. Découvrez les instructions de configuration et des conseils d’optimisation.
 feature: Configuration, Cache, Storage
 exl-id: fc4ad18b-7e99-496e-aebc-1d7640d8716c
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -35,19 +35,19 @@ Pour installer memcached sur CentOS, effectuez les tâches suivantes en tant qu�
 
 1. Installez memcached et ses dépendances :
 
-   ```bash
+   ```shell
    yum -y update
    ```
 
-   ```bash
+   ```shell
    yum install -y libevent libevent-devel
    ```
 
-   ```bash
+   ```shell
    yum install -y memcached
    ```
 
-   ```bash
+   ```shell
    yum install -y php-pecl-memcache
    ```
 
@@ -70,7 +70,7 @@ Pour installer memcached sur CentOS, effectuez les tâches suivantes en tant qu�
 1. Enregistrez vos modifications dans `memcached` et quittez l’éditeur de texte.
 1. Redémarrez memcached.
 
-   ```bash
+   ```shell
    service memcached restart
    ```
 
@@ -78,7 +78,7 @@ Pour installer memcached sur CentOS, effectuez les tâches suivantes en tant qu�
 
    Pour Apache :
 
-   ```bash
+   ```shell
    service httpd restart
    ```
 
@@ -116,11 +116,11 @@ Si le cache mémoire ne s’affiche pas, redémarrez le serveur web et actualise
 
 Le test utilise une base de données, une table et des données MySQL pour vérifier que vous pouvez récupérer les données de la base de données et les stocker dans le cache mémoire. Un script PHP commence par rechercher le cache. Si le résultat n’existe pas, le script interroge la base de données. Une fois la requête remplie par la base de données d’origine, le script stocke le résultat dans memcache, à l’aide de la commande `set`.
 
-[Plus d’informations sur ce test](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
+[Plus de détails sur ce test](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
 
 Créez la base de données MySQL :
 
-```bash
+```shell
 mysql -u root -p
 ```
 
@@ -167,11 +167,11 @@ Où `<memcached hostname or ip>` est `localhost`, `127.0.0.1` ou le nom d’hôt
 
 Exécutez le script à partir de la ligne de commande.
 
-```bash
+```shell
 cd <web server docroot>
 ```
 
-```bash
+```shell
 php cache-test.php
 ```
 
@@ -181,19 +181,19 @@ Le deuxième résultat est `got result from memcached`, qui vérifie que la vale
 
 Enfin, vous pouvez afficher les clés memcache à l&#39;aide de Telnet :
 
-```bash
+```shell
 telnet localhost <memcache port>
 ```
 
 À l’invite, saisissez .
 
-```bash
+```shell
 stats items
 ```
 
 Le résultat est similaire à ce qui suit :
 
-```
+```text
 STAT items:3:number 1
 STAT items:3:age 1075
 STAT items:3:evicted 0
@@ -205,11 +205,11 @@ STAT items:3:tailrepairs 0
 
 Videz la mémoire cache et quittez Telnet :
 
-```bash
+```shell
 flush_all
 ```
 
-```bash
+```shell
 quit
 ```
 

@@ -3,9 +3,9 @@ title: Configuration des mots vides de recherche
 description: Découvrez comment gérer les mots vides pour Adobe Commerce à l’aide de fichiers CSV.
 feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ La durée de vie par défaut du cache de fichier de mots vides est de 15 minutes
 
 **Pour modifier des mots vides** :
 
-1. Connectez-vous à votre serveur Commerce ou passez au [&#x200B; propriétaire du système de fichiers &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Connectez-vous à votre serveur Commerce ou passez au [ propriétaire du système de fichiers ](../../installation/prerequisites/file-system/overview.md).
 1. Utilisez un éditeur de texte pour ouvrir un fichier de mots vides dans le répertoire `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`.
 
    Les fichiers CSV utilisent la convention de nommage `stopwords_<locale_code>.csv`. Par exemple, le fichier de mots vides allemand est nommé `stopwords_de_DE.csv`.
@@ -51,7 +51,7 @@ La durée de vie par défaut du cache de fichier de mots vides est de 15 minutes
 
    - Ligne de commande : en tant que propriétaire du système de fichiers, saisissez la commande suivante :
 
-     ```bash
+     ```shell
      php <magento_root>/bin/magento cache:clean config
      ```
 
@@ -61,7 +61,7 @@ La durée de vie par défaut du cache de fichier de mots vides est de 15 minutes
 
 **Pour ajouter des mots vides pour un paramètre régional** :
 
-1. Connectez-vous à votre serveur Commerce ou passez au [&#x200B; propriétaire du système de fichiers &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Connectez-vous à votre serveur Commerce ou passez au [ propriétaire du système de fichiers ](../../installation/prerequisites/file-system/overview.md).
 
 1. Utilisez un éditeur de texte pour créer un fichier de mots vides nommé `stopwords_<locale_code>.csv` dans le répertoire `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`.
 
@@ -89,7 +89,7 @@ La durée de vie par défaut du cache de fichier de mots vides est de 15 minutes
 
    - Ligne de commande : en tant que propriétaire du système de fichiers, saisissez la commande suivante :
 
-     ```bash
+     ```shell
      php <magento_root>/bin/magento magento cache:clean config
      ```
 
@@ -126,7 +126,7 @@ L’emplacement dépend de la manière dont vous avez installé le logiciel Comm
 
 ## Pour modifier le répertoire depuis votre module
 
-1. [Créer un module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
+1. [Création d’un module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
 1. Dans votre module `etc/di.xml` ajoutez des instructions :
 
    ```xml

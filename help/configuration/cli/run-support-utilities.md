@@ -2,9 +2,9 @@
 title: Exécution des utilitaires d’assistance
 description: Découvrez comment exécuter des utilitaires d’assistance pour résoudre les problèmes liés à votre projet Adobe Commerce. Découvrez les outils de diagnostic et de support intégrés.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Les utilitaires d’assistance Adobe Commerce (également appelés collecteurs de données[&#x200B; &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/support#data-collector) permettent aux utilisateurs de collecter des informations de dépannage sur votre système, que notre équipe d’assistance peut utiliser.
+Les utilitaires d’assistance Adobe Commerce (également appelés collecteurs de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) [ permettent aux utilisateurs de collecter des informations de dépannage sur votre système, que notre équipe d’assistance peut utiliser.
 
 Adobe Commerce utilise ces sauvegardes, également appelées _vidages_, pour analyser les problèmes qui nécessitent l’accès à votre code. Voici un scénario type :
 
@@ -42,7 +42,7 @@ Cette commande sauvegarde le code et le compresse au format `tar.gz`.
 
 Options de commande :
 
-```bash
+```shell
 bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--logs]
 ```
 
@@ -54,7 +54,7 @@ Où :
 
 Par exemple, pour créer une sauvegarde de code nommée `/var/www/html/magento2/var/log/mycodebackup.tar.gz` :
 
-```bash
+```shell
 bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/var/log
 ```
 
@@ -68,7 +68,7 @@ Cette commande sauvegarde la base de données Commerce et la compresse au format
 
 Options de commande :
 
-```bash
+```shell
 bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [-i|--ignore-sanitize]
 ```
 
@@ -81,7 +81,7 @@ Où :
 
 Les données sensibles incluent des informations client provenant des tables de base de données suivantes :
 
-```
+```text
 'customer_entity',
 'customer_entity_varchar',
 'customer_address_entity',
@@ -100,7 +100,7 @@ Une fois la commande terminée, fournissez la sauvegarde de la base de données 
 
 Nous fournissons des commandes qui affichent les chemins d’accès aux utilitaires requis par le collecteur de données et la ligne de commande. Vous pouvez utiliser ces commandes, par exemple, si des erreurs telles que celles-ci s’affichent dans l’interface d’administration ou sur la ligne de commande :
 
-```
+```text
 Utility lsof not found
 ```
 
@@ -119,7 +119,7 @@ Exécutez les commandes suivantes dans l’ordre indiqué pour afficher les chem
 
 Voici un exemple :
 
-```
+```text
    gzip => /bin/gzip
    lsof => /usr/sbin/lsof
    mysqldump => /usr/bin/mysqldump

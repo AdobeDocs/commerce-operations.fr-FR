@@ -2,9 +2,9 @@
 title: Courtier en messages (RabbitMQ)
 description: Pour installer et configurer le logiciel Message Broker requis (tel que [!DNL RabbitMQ]) pour les installations sur site d’Adobe Commerce, procédez comme suit.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Le système de file d’attente des messages doit être établi avant d’instal
 
 Pour installer [!DNL RabbitMQ] sur Ubuntu 16, saisissez la commande suivante :
 
-```bash
+```shell
 sudo apt install -y rabbitmq-server
 ```
 
@@ -73,7 +73,7 @@ Consultez la documentation officielle de [!DNL RabbitMQ] pour configurer et gér
 
 Si vous installez Adobe Commerce _après_ vous installez [!DNL RabbitMQ], ajoutez les paramètres de ligne de commande suivants lors de l’installation :
 
-```bash
+```shell
 --amqp-host="<hostname>" --amqp-port="5672" --amqp-user="<user_name>" --amqp-password="<password>" --amqp-virtualhost="/"
 ```
 
@@ -108,7 +108,7 @@ Si Adobe Commerce est déjà installé et que vous souhaitez le connecter à [!D
 
 Vous pouvez également définir [!DNL RabbitMQ] valeurs de configuration à l’aide de la commande `bin/magento setup:config:set` :
 
-```bash
+```shell
 bin/magento setup:config:set --amqp-host="rabbitmq.example.com" --amqp-port="11213" --amqp-user="magento" --amqp-password="magento" --amqp-virtualhost="/"
 ```
 

@@ -5,9 +5,9 @@ feature: Products, REST
 role: Admin, Developer
 exl-id: 0435c06e-337e-4320-acc6-fa79a3b34008
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Le correctif ACSD-63286 corrige le problème où les produits affectés à un ca
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -41,13 +41,13 @@ Lorsque les produits sont affectés à un catalogue partagé via l’API, ils n�
 1. Créez un produit simple et affectez-le à une catégorie.
 1. Exécutez la réindexation partielle.
 
-   ```
+   ```shell
    bin/magento cron:run --group=index --bootstrap=standaloneProcessStarted=1
    ```
 
 1. Utilisez la requête d’API suivante pour affecter le produit créé au `pub/rest/all/V1/sharedCatalog/<id>/assignProducts` de catalogue partagé :
 
-   ```
+   ```json
    {
        "products":[{
            "sku": "24-MB06"
@@ -58,11 +58,11 @@ Lorsque les produits sont affectés à un catalogue partagé via l’API, ils n�
 
 1. Exécutez la commande cron suivante pour effacer les files d’attente et exécuter la réindexation partielle.
 
-   ```
+   ```shell
    bin/magento cron:run --group=consumers
    ```
 
-   ```
+   ```shell
    bin/magento cron:run --group=index --bootstrap=standaloneProcessStarted=1
    ```
 
@@ -70,7 +70,7 @@ Lorsque les produits sont affectés à un catalogue partagé via l’API, ils n�
 1. Vérifiez la page de catégorie front-end. Les nouveaux produits affectés ne sont pas visibles.
 1. Exécutez une réindexation manuelle :
 
-   ```
+   ```shell
    bin/magento index:reindex
    ```
 
@@ -87,7 +87,7 @@ Le produit s’affiche sur le serveur frontal uniquement après une réindexatio
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 
 ## Lecture connexe

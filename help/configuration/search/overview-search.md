@@ -1,11 +1,11 @@
 ---
 title: Vue d’ensemble du moteur de recherche
-description: Présentation des options du moteur de recherche pour Adobe Commerce.
+description: Découvrez Elasticsearch et OpenSearch pour la recherche de catalogue Adobe Commerce, les conditions préalables, la configuration de serveur web et les tâches de maintenance après installation.
 feature: Configuration, Search
 exl-id: 0ea78ca2-0bca-4d61-980a-02fb7da04553
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '117'
 ht-degree: 0%
 
 ---

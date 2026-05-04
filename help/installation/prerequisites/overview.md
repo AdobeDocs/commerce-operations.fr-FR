@@ -2,9 +2,9 @@
 title: Conditions préalables à l’installation sur site
 description: En savoir plus sur les dépendances logicielles requises pour les installations sur site d’Adobe Commerce.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '356'
 ht-degree: 1%
 
 ---
@@ -27,21 +27,21 @@ Saisissez les commandes suivantes en tant qu’utilisateur disposant de droits d
 
 * Ubuntu
 
-  ```bash
+  ```shell
   apt-get update
   ```
 
-  ```bash
+  ```shell
   apt-get upgrade
   ```
 
 * CentOS
 
-  ```bash
+  ```shell
   yum -y update
   ```
 
-  ```bash
+  ```shell
   yum -y upgrade
   ```
 
@@ -57,7 +57,7 @@ Ubuntu : `apache2 -v`
 
 Adobe Commerce prend en charge Apache version 2.4, comme l’indique le résultat suivant :
 
-```
+```text
 Server version: Apache/2.4.0 (Unix)
 Server built:   Jul 23 2017 14:17:29
 ```
@@ -72,19 +72,19 @@ Voir l&#39;onglet *Commerce On-premise* dans [Configuration requise](../system-r
 
 Vérifiez que vous disposez d’une version de MySQL compatible avec la version d’Adobe Commerce que vous installez. Consultez l’onglet *Commerce On-premise* dans [Configuration requise](../system-requirements.md) pour connaître les versions prises en charge.
 
-```bash
+```shell
 mysql -u <database root user or database owner name> -p
 ```
 
 Par exemple :
 
-```bash
+```shell
 mysql -u magento -p
 ```
 
 Dans la sortie de commande, la ligne de `Server version` indique la version que vous exécutez. Vérifiez qu’elle correspond à une version prise en charge pour la version d’Adobe Commerce que vous installez.
 
-```
+```text
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 871
 Server version: <supported MySQL version> MySQL Community Server (GPL)
@@ -106,23 +106,23 @@ Pour installer ou mettre à niveau MySQL, voir [MySQL](database/mysql.md).
 
 Pour vérifier votre installation OpenSearch :
 
-```bash
+```shell
 curl -XGET '<opensearch-hostname>:<opensearch-port>'
 ```
 
 Pour vérifier votre installation Elasticsearch :
 
-```bash
+```shell
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'
 ```
 
 Par exemple :
 
-```bash
+```shell
 curl -XGET 'localhost:9200'
 ```
 
-```
+```json
 {
   "name" : "Z0S2B05",
   "cluster_name" : "elasticsearch_myname",

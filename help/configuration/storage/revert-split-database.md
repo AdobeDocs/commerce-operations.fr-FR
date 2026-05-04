@@ -3,9 +3,9 @@ title: Rétablir la base de données fractionnée
 description: Revenir d’une implémentation de base de données partagée obsolète à une implémentation de base de données unique.
 feature: Configuration, Storage
 exl-id: 2ece24e0-1f85-445a-8e22-fb10611403ff
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 {{ee-only}}
 
-Pour les clients Adobe Commerce qui ont implémenté [base de données partagée](multi-master.md), la rubrique suivante décrit comment revenir ou migrer vers une seule base de données. Nous recommandons aux commerçants Adobe Commerce qui utilisent actuellement Split Database d’envisager une mise à niveau vers la version 2.4.2, puis de passer en revue ces étapes, ainsi que notre [annonce](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) concernant l’abandon prévu de Split Database.
+Pour les clients Adobe Commerce qui ont implémenté [base de données partagée](multi-master.md), la rubrique suivante décrit comment revenir ou migrer vers une seule base de données. Nous recommandons aux commerçants Adobe Commerce qui utilisent actuellement la base de données partagée d’envisager une mise à niveau vers la version 2.4.2 et une version ultérieure de passer en revue ces étapes.
 
 Pour revenir d&#39;une base de données fractionnée à une base de données unique, vous devez créer des sauvegardes des bases de données `magento_quote` et `magento_sales` avant de les charger dans la base de données `magento_main` unique.
 
@@ -22,44 +22,44 @@ Dans cet exemple, nous nous connectons aux trois bases de données qui sont inst
 
 1. Créez une sauvegarde de la base de données `magento_quote` :
 
-   ```bash
+   ```shell
    mysqldump -h "magento2-mysql" -u root -p magento_quote > ./quote.sql
    ```
 
 1. Créez une sauvegarde de la base de données `magento_sales` :
 
-   ```bash
+   ```shell
    mysqldump -h "magento2-mysql" -u root -p magento_sales > ./sales.sql
    ```
 
 1. Chargez la base de données `magento_quote` dans la base de données `magento_main` :
 
-   ```bash
+   ```shell
    mysql -h "magento2-mysql" -u root -p magento_main < ./quote.sql
    ```
 
 1. Chargez la base de données `magento_sales` dans la base de données `magento_main` :
 
-   ```bash
+   ```shell
    mysql -h "magento2-mysql" -u root -p magento_main < ./sales.sql
    ```
 
 1. Déposez la base de données `magento_sales` :
 
-   ```bash
+   ```shell
    mysql -h "magento2-mysql" -u root -p -e "DROP DATABASE magento_sales;"
    ```
 
 1. Déposez la base de données `magento_quote` :
 
-   ```bash
+   ```shell
    mysql -h "magento2-mysql" -u root -p -e "DROP DATABASE magento_quote;"
    ```
 
 1. Supprimez la configuration de déploiement de `checkout` et `sales` dans les sections `connections` et `resources` du fichier `env.php`.
 1. Restaurer les clés étrangères :
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 

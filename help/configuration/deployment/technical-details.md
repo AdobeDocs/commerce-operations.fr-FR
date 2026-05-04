@@ -2,9 +2,9 @@
 title: Détails techniques
 description: Découvrez les détails techniques du déploiement du pipeline, les types de configurations et les workflows recommandés.
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ Cette rubrique présente les détails techniques d’implémentation du déploie
 
 Cette rubrique présente également le [workflow recommandé](#recommended-workflow) pour le déploiement de pipeline et fournit quelques exemples pour vous aider à comprendre son fonctionnement.
 
-Avant de commencer, passez en revue les [&#x200B; Conditions préalables pour les systèmes de développement, de version et de production](../deployment/prerequisites.md).
+Avant de commencer, passez en revue les [ Conditions préalables pour les systèmes de développement, de version et de production](../deployment/prerequisites.md).
 
 ## Gestion de la configuration
 
 Pour vous permettre de synchroniser et de gérer la configuration de vos systèmes de développement et de production, utilisez le schéma de remplacement suivant.
 
-![Comment les valeurs des variables de configuration sont déterminées &#x200B;](../../assets/configuration/override-flow-diagram.png)
+![Comment les valeurs des variables de configuration sont déterminées ](../../assets/configuration/override-flow-diagram.png)
 
 Comme le montre le diagramme, les valeurs de configuration sont utilisées dans l&#39;ordre suivant :
 
@@ -88,7 +88,7 @@ L’administrateur présente le comportement suivant en mode de production :
 
 ## Installation et suppression de cron
 
-Dans la version 2.2, pour la première fois, nous vous aidons à configurer votre tâche cron en fournissant la commande [`magento cron:install`](../cli/configure-cron-jobs.md). Cette commande configure un crontab en tant qu’utilisateur exécutant la commande.
+Dans la version 2.2, pour la première fois, nous vous aidons à configurer votre tâche cron en fournissant la commande ](../cli/configure-cron-jobs.md). [`magento cron:install`Cette commande configure un crontab en tant qu’utilisateur exécutant la commande.
 
 Vous pouvez également supprimer crontab à l’aide de la commande `magento cron:remove`.
 
@@ -117,7 +117,7 @@ Sur votre système de développement :
 
 1. Pour supprimer le code php généré et les fichiers de ressources statiques lors du développement, exécutez les commandes suivantes :
 
-   ```bash
+   ```shell
    rm -r var/view_preprocessed/*
    rm -r pub/static/*/*
    rm -r generated/*/*
@@ -287,10 +287,10 @@ Le paramètre de configuration par défaut spécifique au système de domaine d�
 
 Les paramètres PayPal ne sont écrits dans aucun fichier car la commande `bin/magento app:config:dump` n&#39;écrit pas de paramètres sensibles. Vous devez définir les paramètres PayPal sur le système d’exploitation à l’aide des commandes suivantes :
 
-```bash
+```shell
 bin/magento config:sensitive:set paypal/wpp/api_username <username>
 ```
 
-```bash
+```shell
 bin/magento config:sensitive:set paypal/wpp/api_password <password>
 ```

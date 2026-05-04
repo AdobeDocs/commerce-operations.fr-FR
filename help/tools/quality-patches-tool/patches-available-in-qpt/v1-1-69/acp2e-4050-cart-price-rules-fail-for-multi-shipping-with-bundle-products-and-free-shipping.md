@@ -4,13 +4,13 @@ description: Appliquez le correctif ACP2E-4050 pour résoudre le problème d’A
 feature: Shopping Cart, Shipping/Delivery
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: d36ce39fcd897261b784d57f8806b3eceb66fc01
+exl-id: 447d2460-5c29-4849-81d0-a9aaf0a758b4
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-4050 : **[!UICONTROL Free Shipping]** non appliqué avec la commande avec expédition multiple
 
@@ -28,7 +28,7 @@ Le correctif ACP2E-4050 corrige le problème où **[!UICONTROL Free Shipping]** 
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -40,7 +40,7 @@ Le correctif ACP2E-4050 corrige le problème où **[!UICONTROL Free Shipping]** 
 1. Activez **[!UICONTROL Free Shipping]** et définissez **[!UICONTROL Minimum Order Amount]** sur *999999*.
 1. Accédez à [!UICONTROL Admin] > [!UICONTROL Marketing] > [!UICONTROL Cart Price Rules], puis créez une règle de prix de panier avec les conditions suivantes :
 
-```
+```text
 If ALL of these conditions are TRUE:
  * Subtotal is at least 50
  * The subtotal is at most 500
@@ -71,7 +71,7 @@ If ALL of these conditions are TRUE:
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

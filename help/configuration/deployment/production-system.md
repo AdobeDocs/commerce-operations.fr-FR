@@ -2,9 +2,9 @@
 title: Configuration du système de production
 description: Découvrez comment configurer un système de production pour l’application Commerce.
 exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -34,13 +34,13 @@ Pour configurer une machine de production :
 
    Créez le répertoire :
 
-   ```bash
+   ```shell
    mkdir -p ~/.ssh/.composer
    ```
 
    Créez des `auth.json` dans ce répertoire.
 
-   `auth.json` devez contenir vos [&#x200B; clés d’authentification &#x200B;](../../installation/prerequisites/authentication-keys.md).
+   `auth.json` devez contenir vos [ clés d’authentification ](../../installation/prerequisites/authentication-keys.md).
 
    Voici un exemple :
 
@@ -74,19 +74,19 @@ Pour définir des valeurs sensibles :
 1. Accédez au répertoire d’installation de Commerce.
 1. Saisissez la commande suivante :
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set {configuration path} {value}
    ```
 
    Par exemple, pour définir la valeur de la clé API YouTube sur `1234`, saisissez
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set catalog/product_video/youtube_api_key 1234
    ```
 
    Vous pouvez également définir une ou plusieurs valeurs de manière interactive comme suit :
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set -i
    ```
 

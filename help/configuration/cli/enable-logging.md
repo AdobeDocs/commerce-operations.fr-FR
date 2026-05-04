@@ -3,9 +3,9 @@ title: Activer la journalisation
 description: Découvrez comment activer et désactiver différents types de connexion dans Adobe Commerce. Découvrez la configuration et les techniques de gestion de la journalisation.
 feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
-source-git-commit: aff705cefcd4de38d17cad41628bc8dbd6d630cb
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ Par défaut, Commerce écrit dans le journal de débogage (`<install_directory>/
 
 1. Utilisez la commande `setup:config:set` pour activer l’enregistrement de débogage pour le mode actuel.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-debug-logging=true
    ```
 
 1. Videz le cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -40,13 +40,13 @@ Par défaut, Commerce écrit dans le journal de débogage (`<install_directory>/
 
 1. Utilisez la commande `setup:config:set` pour désactiver l’enregistrement de débogage pour le mode actuel.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-debug-logging=false
    ```
 
 1. Videz le cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -75,17 +75,17 @@ Le journal des requêtes contient :
 
 1. Utilisez la commande `dev:query-log` pour activer ou désactiver la journalisation de la base de données.
 
-   ```bash
+   ```shell
    bin/magento dev:query-log:enable
    ```
 
-   ```bash
+   ```shell
    bin/magento dev:query-log:disable
    ```
 
 1. Videz le cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -93,7 +93,7 @@ Le journal des requêtes contient :
 
 Vous pouvez afficher les journaux de requête à l’aide des commandes d’affichage de fichier standard :
 
-```bash
+```shell
 # View the entire query log
 cat var/debug/db.log
 
@@ -127,13 +127,13 @@ La connexion à `syslog` est désactivée par défaut.
 
 1. Utilisez la commande `setup:config:set` pour remplacer la valeur de la base de données `dev/syslog/syslog_logging` par `true`.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-syslog-logging=true
    ```
 
 1. Videz le cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -141,12 +141,12 @@ La connexion à `syslog` est désactivée par défaut.
 
 1. Utilisez la commande `setup:config:set` pour remplacer la valeur de la base de données `dev/syslog/syslog_logging` par `false`.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-syslog-logging=false
    ```
 
 1. Videz le cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```

@@ -2,9 +2,9 @@
 title: Surligneur URN
 description: Découvrez comment configurer la mise en surbrillance des URL dans votre IDE pour le développement Adobe Commerce. Découvrez la configuration du schéma XSD et l’optimisation du développement.
 exl-id: 6389ab58-af70-4b33-800e-be3191c5a4cc
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Actuellement, seuls PhpStorm et Visual Studio Code sont pris en charge.
 
 Syntaxe de la commande :
 
-```bash
+```shell
 bin/magento dev:urn-catalog:generate <path>
 ```
 

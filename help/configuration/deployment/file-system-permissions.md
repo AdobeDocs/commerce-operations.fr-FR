@@ -3,9 +3,9 @@ title: Autorisations d’accès aux systèmes de fichiers
 description: Découvrez comment configurer le ou les propriétaires du système de fichiers d’application Commerce pour un système de développement et de production.
 feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -74,19 +74,19 @@ Pour supprimer les autorisations d’écriture sur les fichiers et répertoires 
 
 1. Passez en mode de production.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
 1. Supprimez les autorisations d’écriture sur les répertoires suivants.
 
-   ```bash
+   ```shell
    find app/code var/view_preprocessed vendor pub/static app/etc generated/code generated/metadata \( -type f -or -type d \) -exec chmod u-w {} + && chmod o-rwx app/etc/env.php
    ```
 
 1. Rendez l’outil de ligne de commande exécutable.
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
@@ -98,7 +98,7 @@ Pour rendre les fichiers et les répertoires accessibles en écriture afin de po
 1. Modifiez votre répertoire d’installation Commerce.
 1. Saisissez les commandes suivantes :
 
-   ```bash
+   ```shell
    chmod -R u+w .
    ```
 
@@ -139,7 +139,7 @@ Les fichiers des répertoires suivants doivent pouvoir être écrits par les uti
 - `pub/media`
 - `app/etc`
 
-Définissez le bit [`setgid`](https://linuxg.net/how-to-set-the-setuid-and-setgid-bit-for-files-in-linux-and-unix/) sur les répertoires afin que les autorisations héritent toujours du répertoire parent.
+Définissez le bit [`setgid`](https://linuxconfig.org/how-to-use-special-permissions-the-setuid-setgid-and-sticky-bits) sur les répertoires afin que les autorisations héritent toujours du répertoire parent.
 
 >[!INFO]
 >
@@ -154,15 +154,15 @@ Pour définir les `setgid` et les autorisations pour le mode Développeur :
 1. Connectez-vous à votre serveur Commerce en tant que propriétaire du système de fichiers ou passez à ce dernier.
 1. Saisissez les commandes suivantes dans l&#39;ordre indiqué :
 
-   ```bash
+   ```shell
    cd <magento_root>
    ```
 
-   ```bash
+   ```shell
    find var generated pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
@@ -188,13 +188,13 @@ Pour supprimer les autorisations d’écriture sur les fichiers et répertoires 
 1. Modifiez votre répertoire d’installation Commerce.
 1. En tant que propriétaire du système de fichiers, saisissez la commande suivante pour passer en mode de production :
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
 1. Saisissez la commande suivante en tant qu’utilisateur disposant de droits d’`root` :
 
-   ```bash
+   ```shell
    find app/code lib pub/static app/etc generated/code generated/metadata var/view_preprocessed \( -type d -or -type f \) -exec chmod g-w {} + && chmod o-rwx app/etc/env.php
    ```
 
@@ -206,6 +206,6 @@ Pour rendre les fichiers et les répertoires accessibles en écriture afin de po
 1. Modifiez votre répertoire d’installation Commerce.
 1. Saisissez la commande suivante :
 
-   ```bash
+   ```shell
    find app/code lib var generated vendor pub/static pub/media app/etc \( -type d -or -type f \) -exec chmod g+w {} + && chmod o+rwx app/etc/env.php
    ```

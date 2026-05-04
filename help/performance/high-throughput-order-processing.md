@@ -3,9 +3,9 @@ title: Bonnes pratiques relatives aux performances de passage en caisse
 description: Découvrez les bonnes pratiques relatives aux performances de passage en caisse dans Adobe Commerce. Découvrez les conseils d’implémentation et les stratégies d’optimisation.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 5d94ecbe32b94acf9604db9618a9ae6eb1ae04f9
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1299'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bonnes pratiques relatives aux performances de passage en caisse
 
-Le processus [passage en caisse](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) dans Adobe Commerce est un aspect essentiel de l’expérience storefront. Il repose sur les fonctionnalités intégrées [panier](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/storefront/storefront#shopping-cart) et [passage en caisse](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/storefront/storefront#checkout-page).
+Le processus [passage en caisse](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) dans Adobe Commerce est un aspect essentiel de l’expérience storefront. Il repose sur les fonctionnalités intégrées [panier](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart) et [passage en caisse](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page).
 
 Les performances sont essentielles pour maintenir une bonne expérience utilisateur. Vous pouvez optimiser les performances de passage en caisse en configurant les options suivantes pour le **traitement des commandes à débit élevé** :
 
@@ -26,7 +26,7 @@ Les options de configuration AsyncOrder, Calcul du total différé et Vérificat
 
 >[!NOTE]
 >
->N’utilisez pas de code PHP personnalisé pour personnaliser les fonctionnalités de panier et de passage en caisse intégrées. Outre les problèmes de performances potentiels, l’utilisation de code PHP personnalisé peut entraîner des mises à niveau et des défis de maintenance complexes. Ces problèmes augmentent le coût total de possession. Si la personnalisation du panier et du passage en caisse basée sur PHP est inévitable, utilisez uniquement les extensions approuvées par [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/). Toutes les extensions de Marketplace font l’objet d’un [&#x200B; examen approfondi &#x200B;](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program/) afin de vérifier qu’elles répondent aux normes de codage et aux bonnes pratiques d’Adobe Commerce.
+>N’utilisez pas de code PHP personnalisé pour personnaliser les fonctionnalités de panier et de passage en caisse intégrées. Outre les problèmes de performances potentiels, l’utilisation de code PHP personnalisé peut entraîner des mises à niveau et des défis de maintenance complexes. Ces problèmes augmentent le coût total de possession. Si la personnalisation du panier et du passage en caisse basée sur PHP est inévitable, utilisez uniquement les extensions approuvées par [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/). Toutes les extensions de Marketplace font l’objet d’un [ examen approfondi ](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program) afin de vérifier qu’elles répondent aux normes de codage et aux bonnes pratiques d’Adobe Commerce.
 
 ## Passation de commande asynchrone
 
@@ -43,7 +43,7 @@ Utilisez l’interface de ligne de commande pour activer ces fonctionnalités ou
 
 Vous pouvez activer AsyncOrder à l’aide de l’interface de ligne de commande :
 
-```bash
+```shell
 bin/magento setup:config:set --checkout-async 1
 ```
 
@@ -66,7 +66,7 @@ Voir [AsyncOrder](https://developer.adobe.com/commerce/php/module-reference/modu
 
 Vous pouvez désactiver AsyncOrder à l’aide de l’interface de ligne de commande :
 
-```bash
+```shell
 bin/magento setup:config:set --checkout-async 0
 ```
 
@@ -132,7 +132,7 @@ Le calcul des totaux différés est **désactivé** par défaut. Utilisez l’in
 
 Vous pouvez activer DeferredTotalCalculation à l&#39;aide de l&#39;interface de ligne de commande :
 
-```bash
+```shell
 bin/magento setup:config:set --deferred-total-calculating 1
 ```
 
@@ -149,7 +149,7 @@ La commande `set` écrit les éléments suivants dans le fichier `app/etc/env.ph
 
 Vous pouvez désactiver DeferredTotalCalculation à l&#39;aide de l&#39;interface de ligne de commande :
 
-```bash
+```shell
 bin/magento setup:config:set --deferred-total-calculating 0
 ```
 
@@ -174,13 +174,13 @@ Le paramètre global _Activer l’inventaire au chargement du panier_ détermine
 
 Lorsqu’elle est désactivée, la vérification de l’inventaire ne se produit pas lors de l’ajout d’un produit au panier. Si cette vérification d’inventaire est ignorée, certains scénarios de rupture de stock peuvent générer d’autres types d’erreurs. Une vérification d’inventaire _toujours_ a lieu à l’étape de validation de la commande, même si elle est désactivée.
 
-**Activer la vérification de l’inventaire au chargement du panier** est activé (défini sur Oui) par défaut. Pour désactiver la vérification de l’inventaire lors du chargement du panier, définissez **[!UICONTROL Enable Inventory Check On Cart Load]** sur `No` dans la section IU d’administration **Magasins** > **Configuration** > **Catalogue** > **Inventaire** > **Options de stock**. Voir [Configuration des options globales](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/configuration/global-options) et [Inventaire des catalogues](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/guide-overview) dans le _Guide de l’utilisateur_.
+**Activer la vérification de l’inventaire au chargement du panier** est activé (défini sur Oui) par défaut. Pour désactiver la vérification de l’inventaire lors du chargement du panier, définissez **[!UICONTROL Enable Inventory Check On Cart Load]** sur `No` dans la section IU d’administration **Magasins** > **Configuration** > **Catalogue** > **Inventaire** > **Options de stock**. Voir [Configuration des options globales](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options) et [Inventaire des catalogues](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) dans le _Guide de l’utilisateur_.
 
 ## Équilibrage de charge
 
 Vous pouvez aider à équilibrer la charge sur différents nœuds en activant des connexions secondaires pour la base de données MySQL et l’instance Redis.
 
-Adobe Commerce peut lire plusieurs bases de données ou instances Redis de manière asynchrone. Si vous utilisez Commerce sur une infrastructure cloud, vous pouvez configurer les connexions secondaires en modifiant les valeurs [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) et [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) dans le fichier `.magento.env.yaml`. Un seul nœud doit gérer le trafic en lecture-écriture. Par conséquent, la définition des variables sur `true` entraîne la création d’une connexion secondaire pour le trafic en lecture seule. Définissez les valeurs sur `false` pour supprimer tout tableau de connexion en lecture seule existant du fichier `env.php`.
+Adobe Commerce peut lire plusieurs bases de données ou instances Redis de manière asynchrone. Si vous utilisez Commerce sur une infrastructure cloud, vous pouvez configurer les connexions secondaires en modifiant les valeurs [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) et [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) dans le fichier `.magento.env.yaml`. Un seul nœud doit gérer le trafic en lecture-écriture. Par conséquent, la définition des variables sur `true` entraîne la création d’une connexion secondaire pour le trafic en lecture seule. Définissez les valeurs sur `false` pour supprimer tout tableau de connexion en lecture seule existant du fichier `env.php`.
 
 Exemple de fichier `.magento.env.yaml` :
 

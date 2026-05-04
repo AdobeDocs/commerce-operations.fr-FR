@@ -1,10 +1,10 @@
 ---
 title: Configurer la file d’attente des messages Amazon
-description: Découvrez comment configurer Commerce pour utiliser le service AWS MQ.
+description: Découvrez comment configurer les files d’attente de messages Adobe Commerce pour Amazon MQ dans env.php, y compris les exigences SSL et TLS pour les connexions AMQP prêtes pour le cloud.
 exl-id: 463e513f-e8d4-4450-845e-312cbf00d843
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Où :
 
 Après modification du fichier `env.php`, exécutez la commande suivante pour terminer la configuration :
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
@@ -82,7 +82,7 @@ Pour tester l’envoi de messages de Commerce vers [!DNL RabbitMQ] :
 
 1. Démarrez le client de file d’attente de messages `async.operations.all`.
 
-   ```bash
+   ```shell
    bin/magento queue:consumers:start async.operations.all
    ```
 

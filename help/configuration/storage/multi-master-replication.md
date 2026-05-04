@@ -1,11 +1,11 @@
 ---
 title: Réplication de la base de données
-description: Découvrez les avantages de la configuration de la réplication de base de données.
+description: Découvrez les avantages de la réplication de la base de données pour Adobe Commerce, notamment la sauvegarde, le déchargement des analyses et la configuration asynchrone des serveurs esclaves MySQL.
 recommendations: noCatalog
 exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,9 @@ Les bases de données MySQL se répliquent de manière asynchrone, ce qui signif
 Une discussion approfondie sur la réplication de base de données dépasse le cadre de ce guide. Pour le configurer, vous pouvez consulter une ressource telle que :
 
 - [Documentation MySQL](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [Configuration de la réplication esclave de Principal dans MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [Comment configurer la réplication esclave de Principal dans MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
-Commerce fournit des exemples de configuration MySQL pour vos bases de données esclaves. Une configuration simple est fournie avec le `ResourceConnections` de classe `README.md`.
+Commerce fournit des exemples de configuration MySQL pour vos bases de données esclaves. Une configuration simple est fournie avec le `README.md` de classe `ResourceConnections`.
 
 Les éléments suivants sont plus avancés et sont fournis uniquement à titre d’information :
 

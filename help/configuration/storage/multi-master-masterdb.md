@@ -3,7 +3,7 @@ title: Configuration automatique des bases de données principales
 description: Consultez les conseils sur la configuration automatique de la solution de base de données partagée.
 recommendations: noCatalog
 exl-id: a27ad097-de60-4cdd-81f9-eb1ae84587e4
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Créez des bases de données principales de passage en caisse et OMS comme suit 
 1. Connectez-vous à votre serveur de base de données en tant qu&#39;utilisateur.
 1. Saisissez la commande suivante pour accéder à une invite de commande MySQL :
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -66,7 +66,7 @@ Créez des bases de données principales de passage en caisse et OMS comme suit 
 
    Base de données de passage en caisse :
 
-   ```bash
+   ```shell
    mysql -u magento_quote -p
    ```
 
@@ -76,7 +76,7 @@ Créez des bases de données principales de passage en caisse et OMS comme suit 
 
    Base de données du système de gestion des commandes :
 
-   ```bash
+   ```shell
    mysql -u magento_sales -p
    ```
 
@@ -98,19 +98,19 @@ Voir [Exécution des commandes](../cli/config-cli.md#running-commands) pour vous
 
 Syntaxe de la commande :
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
 Par exemple,
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote --host="localhost" --dbname="magento_quote" --username="magento_quote" --password="magento_quote"
 ```
 
 Le message suivant s’affiche pour confirmer la réussite de la configuration :
 
-```
+```text
 Migration has been finished successfully!
 ```
 
@@ -118,22 +118,22 @@ Migration has been finished successfully!
 
 Syntaxe de la commande :
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
 Par exemple,
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales --host="localhost" --dbname="magento_sales" --username="magento_sales" --password="magento_sales"
 ```
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
 Le message suivant s’affiche pour confirmer la réussite de la configuration :
 
-```
+```text
 Migration has been finished successfully!
 ```

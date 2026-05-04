@@ -4,13 +4,13 @@ description: Appliquez le correctif ACSD-66153 pour résoudre le problème d’A
 feature: Catalog Management
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 70c7255e369ef366407d539488f0d815eb93f48a
+exl-id: 2d6f47cb-2244-40b6-b1b9-0d03f13adc43
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66153 : la page renvoie une erreur 500 en raison d’une structure de disposition incorrecte mise en cache
 
@@ -28,7 +28,7 @@ Le correctif ACSD-66153 corrige le problème où une page renvoie un code d’er
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -44,7 +44,7 @@ Une page renvoie une erreur 500 en raison d’une structure de disposition incor
 1. Ouvrez **[!UICONTROL two terminal windows]** :
    1. **Terminal 1** : nettoyez en permanence le cache de disposition :
 
-      ```
+      ```shell
       for i in {1..200}; do
         bin/magento cache:clean layout
       done
@@ -52,7 +52,7 @@ Une page renvoie une erreur 500 en raison d’une structure de disposition incor
 
    1. **Terminal 2** : simule des requêtes simultanées sur la page de catégorie :
 
-      ```
+      ```shell
       for i in {1..200}; do
         curl -s -o /dev/null -w "Request $i: HTTP %{http_code}\n""http://your_magento_base_url/shop.html?req=$i"
       done
@@ -60,7 +60,7 @@ Une page renvoie une erreur 500 en raison d’une structure de disposition incor
 
 1. Certaines requêtes échouent de manière aléatoire avec un code d’état 500 et le `var/log/support_report.log` affiche l’erreur suivante :
 
-   ```
+   ```yaml
    report.CRITICAL: The element with the "root" ID wasn't found. Verify the ID and try again. [] []
    ```
 
@@ -77,7 +77,7 @@ Certaines requêtes renvoient par intermittence une erreur de serveur interne 50
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

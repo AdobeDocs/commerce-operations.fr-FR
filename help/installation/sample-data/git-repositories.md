@@ -2,9 +2,9 @@
 title: Clonage de référentiels Git de données d’exemple
 description: Pour installer les données d’exemple d’Adobe Commerce en clonant les référentiels Git, procédez comme suit.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Si vous n’êtes pas un développeur participant, choisissez l’une des autres
 Les développeurs contributeurs peuvent utiliser cette méthode d’installation des données d’exemple *uniquement* si ce qui suit est vrai :
 
 * Vous utilisez Magento Open Source
-* Vous [&#x200B; cloné le référentiel GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
+* Vous [ cloné le référentiel GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 >[!WARNING]
 >
@@ -51,7 +51,7 @@ Pour cloner le référentiel GitHub de données d’exemple à l’aide du proto
 
    Voici un exemple :
 
-   ```bash
+   ```shell
    git clone git@github.com:magento/magento2-sample-data.git
    ```
 
@@ -61,7 +61,7 @@ Pour cloner le référentiel GitHub de données d’exemple à l’aide du proto
    >
    >Si l’erreur suivante s’affiche, veillez à [partager votre clé SSH](https://docs.github.com/articles/generating-ssh-keys/) avec GitHub:<br>
 
-   ```
+   ```text
    Cloning into 'magento2'...
    Permission denied (publickey).
    fatal: The remote end hung up unexpectedly
@@ -75,24 +75,24 @@ Pour cloner le référentiel GitHub de données d’exemple à l’aide du proto
 
    Pour extraire la branche appropriée, exécutez la commande suivante à partir du répertoire racine du référentiel de données d’exemple (en supposant que vous ayez besoin de la branche `2.4-develop`) :
 
-   ```bash
+   ```shell
    git checkout 2.4-develop
    ```
 
 1. Remplacez par `<app_root>`.
 1. Saisissez la commande suivante pour créer des liens symboliques entre les fichiers que vous avez clonés afin que les exemples de données fonctionnent correctement :
 
-   ```bash
+   ```shell
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="<path_to_your_magento_instance>"
    ```
 
 1. Attendez que la commande soit terminée.
 
-1. Voir [&#x200B; Définir les autorisations et la propriété du système de fichiers](#set-file-system-ownership-and-permissions).
+1. Voir [ Définir les autorisations et la propriété du système de fichiers](#set-file-system-ownership-and-permissions).
 
 1. Exécutez la commande suivante :
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
@@ -116,7 +116,7 @@ Pour cloner le référentiel GitHub de données d’exemple à l’aide du proto
 
    Voici un exemple :
 
-   ```bash
+   ```shell
    git clone https://github.com/magento/magento2-sample-data.git
    ```
 
@@ -129,20 +129,20 @@ Pour cloner le référentiel GitHub de données d’exemple à l’aide du proto
 
    Pour extraire la branche appropriée, exécutez la commande suivante à partir du répertoire racine du référentiel de données d’exemple (en supposant que vous ayez besoin de la branche `2.4-develop`) :
 
-   ```bash
+   ```shell
    git checkout 2.4-develop
    ```
 
 1. Remplacez par `<magento_root>`.
 1. Saisissez la commande suivante pour créer des liens symboliques entre les fichiers que vous avez clonés afin que les exemples de données fonctionnent correctement :
 
-   ```bash
+   ```shell
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="<path_to_your_magento_instance>"
    ```
 
    Par exemple,
 
-   ```bash
+   ```shell
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="/var/www/magento2"
    ```
 
@@ -153,7 +153,7 @@ Pour cloner le référentiel GitHub de données d’exemple à l’aide du proto
 >
 >Si vous installez des données d’exemple *après* avoir installé Adobe Commerce, vous devez également exécuter la commande suivante pour mettre à jour la base de données et le schéma :
 >
->```bash
+>```shell
 ><magento_root>/bin/magento setup:upgrade
 >```
 
@@ -166,7 +166,7 @@ Pour définir les autorisations et la propriété du système de fichiers sur le
 1. Accédez à votre répertoire de clone de données d’exemple.
 1. Définir la propriété :
 
-   ```bash
+   ```shell
    chown -R :<your web server group name> .
    ```
 
@@ -178,17 +178,17 @@ Pour définir les autorisations et la propriété du système de fichiers sur le
 
 1. Définissez les autorisations :
 
-   ```bash
+   ```shell
    find . -type d -exec chmod g+ws {} +
    ```
 
 1. Effacer les fichiers statiques :
 
-   ```bash
+   ```shell
    cd <your Magento Open Source install dir>
    ```
 
-   ```bash
+   ```shell
    rm -rf var/cache/* var/page_cache/* generated/*
    ```
 

@@ -4,9 +4,9 @@ description: Découvrez les techniques permettant de résoudre les problèmes de
 feature: Best Practices
 role: Developer
 exl-id: 78fbea7b-28e8-4713-990d-b4cae159250c
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1139'
+source-wordcount: '1164'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Cette section décrit les problèmes les plus courants que vous pouvez rencontre
 
 L’exemple de code suivant fournit des commandes utiles liées à la gestion du cache (ne pas exécuter dans les environnements de production) :
 
-```bash
+```shell
 # restart php-fpm to flush APC
 sudo service php-fpm restart
  
@@ -78,7 +78,7 @@ Réindexez tout si le problème peut être lié à l’index. Le débogage des d
 
 Il se peut que votre code soit obsolète en raison d’une modification de branche ou de fichiers principaux modifiés lors d’un effort de débogage précédent. Pour éliminer les problèmes potentiels, exécutez les commandes suivantes :
 
-```bash
+```shell
 rm -rf vendor/*
 composer clear-cache
 composer install
@@ -88,7 +88,7 @@ composer install
 
 Recréez les fichiers frontend avant de déboguer le contenu généré dans les fichiers JS, CSS, images, traductions et autres.
 
-```bash
+```shell
 rm -rf generated/* var/cache/* var/page_cache/* var/session/* var/view_preprocessed/* pub/static/*
 bin/magento setup:static-content:deploy
 bin/magento cache:flush
@@ -104,7 +104,7 @@ Si vous avez créé un module, vérifiez les problèmes suivants :
 
 - Le module est-il activé ?
 
-  ```bash
+  ```shell
   bin/magento module --enable Your_Module
   ```
 
@@ -169,7 +169,7 @@ La description du problème est-elle claire ? Êtes-vous certain qu’aucun term
 
 ### Recherche sur Internet
 
-Effectuez une recherche sur Internet avec les termes liés au problème. Il est probable que quelqu’un d’autre ait déjà rencontré le même problème. Recherchez parmi les [problèmes GitHub d’Adobe Commerce](https://github.com/magento/magento2/issues).
+Effectuez une recherche sur Internet avec les termes liés au problème. Il est probable que quelqu’un d’autre ait déjà rencontré le même problème. Recherchez parmi les [problèmes GitHub d’](https://github.com/magento/magento2/issues).
 
 ### Faites une pause
 
@@ -177,9 +177,9 @@ Si vous cherchez un problème depuis trop longtemps, il peut être difficile de 
 
 ## Outils
 
-Les outils de l’interface de ligne de commande n98 magerun ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2)) offrent des fonctionnalités utiles pour travailler avec Adobe Commerce à partir de la ligne de commande. En particulier, ces commandes :
+Les outils de l’interface de ligne de commande n98 magerun ([](https://github.com/netz98/n98-magerun2)) offrent des fonctionnalités utiles pour travailler avec Adobe Commerce à partir de la ligne de commande. En particulier, ces commandes :
 
-```bash
+```shell
 n98-magerun2.phar dev:console
 n98-magerun2.phar sys:cron:run
 n98-magerun2.phar db:console
@@ -206,7 +206,7 @@ Si ce fichier est utilisé, il génère une erreur. Si ce n&#39;est pas le cas, 
 
 >[!BEGINTABS]
 
->[!TAB Adobe Commerce]
+>[!TAB ]
 
 ```php
 \Magento\Framework\App\ObjectManager::getInstance()

@@ -4,9 +4,9 @@ description: Découvrez les bonnes pratiques relatives à la révision du code p
 feature: Best Practices
 role: Developer
 exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1180'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ Les développeurs peuvent utiliser l’automatisation pour examiner la compilati
 
 - Compilation du code : exécutez les commandes d&#39;interface de ligne de commande suivantes pour voir si le code peut être compilé sans problème.
 
-  ```bash
+  ```shell
   bin/magento module:disable -n -q --all || exit;
   bin/magento module:enable -n -q --all || exit;
   bin/magento cache:enable -n -q || exit;
@@ -133,26 +133,26 @@ Les développeurs peuvent utiliser l’automatisation pour examiner la compilati
 
 - Schéma de base de données `whitelist.json` : exécutez la commande CLI suivante et vérifiez que le fichier `db_schema_whitelist.json` n&#39;est ni ajouté ni modifié.
 
-  ```bash
+  ```shell
   bin/magento setup:db-declaration:generate-whitelist --module-name[=MODULE-NAME]
   ```
 
 - Composer validate : valide le fichier `composer.json` en exécutant la commande CLI suivante dans le répertoire contenant le fichier `composer.json`.
 
-  ```bash
+  ```shell
   composer validate
   ```
 
 - Norme de codage : installez et exécutez l&#39;outil Norme de codage et exécutez-le sur votre module. Le fichier suivant montre comment l’activer pour qu’il s’exécute n’importe où en saisissant `mcs ./app/code/Vendor/Module/`.
 
-  ```bash
+  ```shell
   #!/usr/bin/env bash
   $HOME/web/magento/magento-coding-standard/vendor/bin/phpcs --standard=Magento2 "$@"
   ```
 
 - Phpstan
 
-  ```bash
+  ```shell
   ./vendor/bin/phpstan analyze app/code/Vendor/Module
   ```
 

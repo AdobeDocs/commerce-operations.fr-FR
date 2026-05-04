@@ -3,7 +3,7 @@ title: Paramètres de migration des données
 description: Découvrez comment commencer à migrer les paramètres de Magento 1 vers Magento 2 avec l’ [!DNL Data Migration Tool].
 exl-id: 6fc8285a-9f26-48a5-9034-49a6a1b66b40
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Le mode `Settings` migre les magasins, les sites web et la configuration du syst
 
 Avant de commencer, effectuez les étapes de préparation suivantes :
 
-1. Connectez-vous au serveur d’applications en tant que [&#x200B; propriétaire du système de fichiers &#x200B;](../../../installation/prerequisites/file-system/overview.md).
+1. Connectez-vous au serveur d’applications en tant que [ propriétaire du système de fichiers ](../../../installation/prerequisites/file-system/overview.md).
 
 1. Accédez au répertoire `/bin` ou assurez-vous qu’il est ajouté à votre `PATH` système.
 
@@ -31,7 +31,7 @@ Voir la section [premières étapes](overview.md#first-steps) pour plus d’info
 
 Pour démarrer la migration des paramètres, exécutez :
 
-```bash
+```shell
 bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
@@ -58,7 +58,7 @@ Vous pouvez ignorer, renommer ou modifier les configurations système lors de la
 
 1. Accédez au répertoire suivant :
 
-   ```bash
+   ```shell
    cd <your application 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
    ```
 
@@ -72,7 +72,7 @@ Vous pouvez ignorer, renommer ou modifier les configurations système lors de la
 
 1. Pour créer un fichier `settings.xml` à partir de l’exemple fourni, exécutez :
 
-   ```bash
+   ```shell
    cp settings.xml.dist settings.xml
    ```
 

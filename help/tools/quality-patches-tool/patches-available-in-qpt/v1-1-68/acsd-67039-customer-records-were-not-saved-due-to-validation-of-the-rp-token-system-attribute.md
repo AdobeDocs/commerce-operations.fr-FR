@@ -4,10 +4,11 @@ description: Appliquez le correctif ACSD-67039 pour résoudre le problème d’A
 feature: Customers, Admin Workspace
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 231555e071ebc5edb36182f6b8d4f60acee4f61e
+exl-id: e5995e28-b6b5-4955-a52a-895842c6b6e8
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 0%
+source-wordcount: '394'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +28,7 @@ Le correctif ACSD-67039 corrige le problème où les enregistrements des clients
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -42,7 +43,7 @@ Les diacritiques de codage entraînent des échecs de validation sur `rp_token`,
    *d337b914e91ff703b1e94ba4156aadf0*
 1. Définissez les valeurs ci-dessous dans la base de données pour tout client figurant dans le tableau `customer_entity` :
 *`rp_token` = *incr4869*
-*`rp_token_created_at` = *2021-04-29 20:06:14*
+*`rp_token_created_at` =* 2021-04-29 20:06:14*
 1. Dans le panneau d’administration, accédez à **[!UICONTROL Customers]** > **[!UICONTROL All Customers]**.
 1. Modifiez le client pour lequel vous venez de mettre à jour les valeurs ci-dessus.
 1. Cliquez sur **[!UICONTROL Save Customer]** ou **[!UICONTROL Save and Continue Edit]**.
@@ -56,7 +57,7 @@ Les valeurs client ont été enregistrées.
 L’enregistrement du client n’est pas enregistré et l’utilisateur administrateur voit le message d’erreur *Un problème est survenu lors de l’enregistrement du client.*
 Le `system.log` contient l’erreur suivante :
 
-```
+```text
 report.CRITICAL: Exception message: Notice: iconv(): Detected an incomplete multibyte character in input string in /vendor/magento/module-eav/Model/Attribute/Data/Text.php on line 190
 ```
 
@@ -65,7 +66,7 @@ report.CRITICAL: Exception message: Notice: iconv(): Detected an incomplete mult
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool]
-* Adobe Commerce sur les infrastructures cloud : [&#x200B; Mises à niveau et correctifs > Appliquer des correctifs &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [ Mises à niveau et correctifs > Appliquer des correctifs ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

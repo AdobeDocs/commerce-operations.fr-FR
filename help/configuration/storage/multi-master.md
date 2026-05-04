@@ -1,11 +1,11 @@
 ---
 title: Solution de performances de base de données partagée
-description: Découvrez la solution de base de données partagée pour Adobe Commerce.
+description: Découvrez la solution de performances de la base de données partagée pour Adobe Commerce, qui sépare le passage en caisse, les commandes et les produits principaux pour une évolutivité sur site.
 recommendations: noCatalog
 exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---

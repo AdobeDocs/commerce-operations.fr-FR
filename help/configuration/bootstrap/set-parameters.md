@@ -2,9 +2,9 @@
 title: Définir la valeur des paramètres d’amorçage
 description: Découvrez comment définir les paramètres d’amorçage pour l’application Commerce.
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '617'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Vous pouvez spécifier les variables de bootstrap en tant que variables d’envi
 
 Par exemple, vous pouvez utiliser la variable d’environnement système `MAGE_PROFILER` pour spécifier un mode comme suit :
 
-```
+```text
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
@@ -43,7 +43,7 @@ Définissez la variable à l’aide d’une commande spécifique au shell. Étan
 
 Exemple de shell Bash pour CentOS :
 
-```bash
+```shell
 export MAGE_PROFILER=firebug
 ```
 
@@ -80,7 +80,7 @@ Vous pouvez modifier les `.htaccess` à l’un des emplacements suivants, en fon
 
 1. Définissez la valeur de `MAGE_PROFILER` sur l’une des valeurs suivantes :
 
-   ```
+   ```text
    firebug
    csvfile
    <custom value>
@@ -124,13 +124,13 @@ Les procédures qui suivent montrent comment définir le mode d’application da
 1. Enregistrez vos modifications et quittez l’éditeur de texte.
 1. Activez votre hôte virtuel si vous ne l’avez pas déjà fait :
 
-   ```bash
+   ```shell
    a2ensite <virtual host config file name>
    ```
 
    Par exemple,
 
-   ```bash
+   ```shell
    a2ensite my.magento.conf
    ```
 

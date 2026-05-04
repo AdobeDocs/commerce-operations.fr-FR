@@ -5,9 +5,9 @@ feature: Catalog Management, B2B
 role: Admin, Developer
 exl-id: c95f179d-5291-481f-b655-08a9db608513
 type: Troubleshooting
-source-git-commit: 8124ce31fbe3a94638fba057419efa7f2a139b84
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Le correctif ACSD-64112 corrige le problème d’échec de l’exécution du cro
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -47,7 +47,7 @@ L’exécution de la commande cron `indexer_update_all_views` échoue lorsque la
 1. Exécutez une réindexation complète.
 1. Définissez les indexeurs suivants sur **[!UICONTROL Update on Schedule]** :
 
-   ```
+   ```shell
    bin/magento indexer:set-mode schedule catalogpermissions_category catalogpermissions_product
    ```
 
@@ -55,7 +55,7 @@ L’exécution de la commande cron `indexer_update_all_views` échoue lorsque la
 1. Cliquez sur **[!UICONTROL Category Permissions]** et créez un **[!UICONTROL New Permission]** pour un groupe de clients existant.
 1. Assurez-vous que l’indexeur `catalogpermissions_category` a une liste d’attente. Exécutez la commande suivante pour le vérifier :
 
-   ```
+   ```shell
    bin/magento indexer:status
    ```
 
@@ -67,7 +67,7 @@ L’exécution de la commande cron `indexer_update_all_views` échoue lorsque la
 
 1. Exécutez la tâche cron :
 
-   ```
+   ```shell
    bin/magento cron:run
    ```
 
@@ -79,7 +79,7 @@ La tâche cron doit s’exécuter sans problème.
 
 La tâche cron `indexer_update_all_views` rencontre l’erreur suivante :
 
-```
+```text
 report.CRITICAL: PDOException: There is no active transaction in /home/vendor/magento/zend-db/library/Zend/Db/Adapter/Pdo/Abstract.php:326
 ```
 
@@ -88,7 +88,7 @@ report.CRITICAL: PDOException: There is no active transaction in /home/vendor/ma
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Étapes supplémentaires requises après l’installation du correctif
 
@@ -99,4 +99,4 @@ Pour appliquer des correctifs individuels, utilisez les liens suivants en foncti
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
 * [[!DNL Quality Patches Tool] : un outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans le guide Outils .
-* [Réindexation en mode parallèle](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindexing-in-parallel-mode) dans le Guide de configuration de Commerce.
+* [Réindexation en mode parallèle](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindexing-in-parallel-mode) dans le Guide de configuration de Commerce.

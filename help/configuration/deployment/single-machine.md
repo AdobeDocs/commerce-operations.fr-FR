@@ -3,9 +3,9 @@ title: Déploiement sur un seul ordinateur
 description: Découvrez comment déployer des mises à jour sur Commerce sur un serveur de production à l’aide de la ligne de commande.
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '188'
 ht-degree: 1%
 
 ---
@@ -30,19 +30,19 @@ Cette rubrique fournit des instructions pour déployer des mises à jour sur Com
 
 1. Remplacez le répertoire par le répertoire de base de Commerce :
 
-   ```bash
+   ```shell
    cd <Commerce base directory>
    ```
 
 1. Activez le mode de maintenance à l&#39;aide de la commande :
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Appliquez les mises à jour à Commerce ou à ses composants à l’aide du modèle de commande suivant :
 
-   ```bash
+   ```shell
    composer require-commerce <package> <version> --no-update
    ```
 
@@ -57,37 +57,37 @@ Cette rubrique fournit des instructions pour déployer des mises à jour sur Com
 
 1. Mettre à jour les composants avec le compositeur :
 
-   ```bash
+   ```shell
    composer update
    ```
 
 1. Mettre à jour le schéma et les données de la base :
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. Compilez le code :
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
 1. Déployez du contenu statique :
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy
    ```
 
 1. Nettoyez le cache :
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Quitter le mode de maintenance :
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 

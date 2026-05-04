@@ -2,9 +2,9 @@
 title: Regroupement Avancé De JavaScript
 description: Découvrez le regroupement JavaScript avancé dans Adobe Commerce. Découvrez les conseils d’implémentation et les stratégies d’optimisation.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 5d827da35414fa75649f86a2d96fa8ab9086601a
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2283'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,13 @@ Consultez les [Conseils sur le regroupement](configuration.md#bundling-tips) dan
 
 Pour activer le regroupement intégré à partir de la ligne de commande :
 
-```bash
+```shell
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
 Il s’agit d’un mécanisme Commerce natif qui combine toutes les ressources présentes dans le système et les répartit entre des lots de même taille (bundle_0.js, bundle_1.js ... bundle_x.js) :
 
-![Regroupement &#x200B;](../assets/performance/images/magentoBundling.png)
+![Regroupement ](../assets/performance/images/magentoBundling.png)
 
 Mieux, mais le navigateur charge toujours TOUS les lots JavaScript, pas seulement ceux nécessaires.
 
@@ -53,7 +53,7 @@ Le regroupement de Commerce réduit le nombre de connexions par page, mais pour 
 
 Pour activer la fusion intégrée à partir de la ligne de commande :
 
-```bash
+```shell
 php -f bin/magento config:set dev/js/merge_files 1
 ```
 
@@ -107,7 +107,7 @@ Des versions complètes de l’exemple de code utilisé dans cet article sont di
 
 ### Partie 1 : création d’une configuration de regroupement
 
-#### 1\ Ajouter un fichier build.js
+#### 1\. Ajouter un fichier build.js
 
 Créez un fichier `build.js` dans le répertoire racine Commerce. Ce fichier contient l’ensemble de la configuration de version de vos lots.
 
@@ -120,7 +120,7 @@ Créez un fichier `build.js` dans le répertoire racine Commerce. Ce fichier con
 
 Plus tard, nous modifierons le paramètre `optimize:` de_ `none` en `uglify2` pour réduire la sortie du lot. Mais pour l’instant, pendant le développement, vous pouvez laisser cette option définie sur `none` pour garantir des versions plus rapides.
 
-#### 2\ Ajoutez [!DNL RequireJS] dépendances, des cales, des chemins et un mappage
+#### 2\. Ajoutez [!DNL RequireJS] dépendances, des cales, des chemins et un mappage
 
 Ajoutez les nœuds de configuration de build [!DNL RequireJS] suivants, `deps`, `shim`, `paths` et `map`, à votre fichier de build :
 
@@ -136,7 +136,7 @@ Ajoutez les nœuds de configuration de build [!DNL RequireJS] suivants, `deps`, 
 })
 ```
 
-#### 3\ Agréger les valeurs des instances `requirejs-config.js`
+#### 3\. Agréger les valeurs des instances `requirejs-config.js`
 
 Au cours de cette étape, vous devez agréger tous les différents nœuds de configuration `deps`, `shim`, `paths` et `map` du fichier `requirejs-config.js` de votre magasin dans les nœuds correspondants de votre fichier `build.js`. Pour ce faire, vous pouvez ouvrir l’onglet **[!UICONTROL Network]** dans le panneau Outils de développement de votre navigateur et accéder à n’importe quelle page de votre boutique, telle que la page d’accueil. Dans l’onglet Réseau , l’instance du fichier `requirejs-config.js` de votre magasin apparaît près du haut et est mise en surbrillance :
 
@@ -156,7 +156,7 @@ Vous devez modifier le chemin d’accès `mage/requirejs/text` en `requirejs/tex
 })
 ```
 
-#### 4\ Ajout d’un nœud de modules
+#### 4\. Ajout d’un nœud de modules
 
 À la fin du fichier `build.js`, ajoutez le tableau modules[] comme espace réservé pour les lots que vous définissez ultérieurement pour votre storefront.
 
@@ -174,7 +174,7 @@ Vous devez modifier le chemin d’accès `mage/requirejs/text` en `requirejs/tex
 })
 ```
 
-#### 5\ Récupération des dépendances [!DNL RequireJS]
+#### 5\. Récupération des dépendances [!DNL RequireJS]
 
 Vous pouvez récupérer toutes les dépendances de module [!DNL RequireJS] à partir des types de page de votre boutique à l’aide de :
 
@@ -219,7 +219,7 @@ phantomjs deps.js <i>url-to-specific-page</i> &gt; <i>text-file-presentation-pag
 
 Voici, par exemple, quatre pages de l’exemple de boutique sur le thème Luma qui représentent les quatre types de page que nous utiliserons pour créer nos quatre lots (page d’accueil, catégorie, produit, panier) :
 
-```
+```text
 phantomjs deps.js http://m2.loc/ > bundle/homepage.txt
 phantomjs deps.js http://m2.loc/women/tops-women/jackets-women.html > bundle/category.txt
 phantomjs deps.js http://m2.loc/beaumont-summit-kit.html > bundle/product.txt
@@ -237,11 +237,11 @@ Object.keys(window.require.s.contexts._.defined)
 
 Cette commande (utilisée dans le script [!DNL PhantomJS]) crée la même liste de dépendances [!DNL RequireJS] et les affiche dans la console du navigateur. L’inconvénient de cette approche est que vous devrez créer vos propres fichiers texte de type lot/page.
 
-#### 6 Formater et filtrer la sortie
+#### 6\. Formater et filtrer la sortie
 
 Après avoir fusionné les dépendances [!DNL RequireJS] dans des fichiers texte de type page, vous pouvez utiliser la commande suivante sur chaque fichier de dépendance de type page pour remplacer les virgules dans vos fichiers par des nouvelles lignes :
 
-```bash
+```shell
 sed -i -e $'s/,/\\\n/g' bundle/category.txt
 sed -i -e $'s/,/\\\n/g' bundle/homepage.txt
 sed -i -e $'s/,/\\\n/g' bundle/product.txt
@@ -250,26 +250,26 @@ sed -i -e $'s/,/\\\n/g' bundle/product.txt
 
 Vous devez également supprimer tous les mixins de chaque fichier, car les mixins dupliquent des dépendances. Utilisez la commande suivante sur chaque fichier de dépendance :
 
-```bash
+```shell
 sed -i -e 's/mixins\!.*$//g' bundle/homepage.txt
 sed -i -e 's/mixins\!.*$//g' bundle/category.txt
 sed -i -e 's/mixins\!.*$//g' bundle/product.txt
 ...
 ```
 
-#### 7\ Identifier les lots uniques et communs
+#### 7\. Identifier les lots uniques et communs
 
 L’objectif est de créer un lot commun de fichiers JavaScript nécessaires à toutes les pages. Ainsi, le navigateur n’a plus qu’à charger le lot commun avec un ou plusieurs types de page spécifiques.
 
 Ouvrez un terminal dans le répertoire racine Commerce et utilisez la commande suivante pour vérifier que vous disposez de dépendances que vous pouvez diviser en lots distincts :
 
-```bash
+```shell
 sort bundle/*.txt |uniq -c |sort -n
 ```
 
 Cette commande fusionne et trie les dépendances trouvées dans les fichiers `bundle/*.txt`.  La sortie affiche également le nombre de fichiers contenant chaque dépendance :
 
-```
+```text
 1 buildTools,
 1 jquery/jquery.parsequery,
 1 jsbuild,
@@ -292,7 +292,7 @@ Notre sortie n’affiche que trois types de pages (page d’accueil, catégorie 
 
 Cela nous indique que nous pouvons probablement améliorer la vitesse de chargement des pages de notre boutique en divisant nos dépendances en différents lots, une fois que nous savons quels types de page ont besoin de quelles dépendances.
 
-#### 8\ Créer un fichier de distribution de dépendances
+#### 8\. Créer un fichier de distribution de dépendances
 
 Pour déterminer les types de page qui nécessitent les dépendances, créez un fichier dans le répertoire racine de Commerce appelé `deps-map.sh` et copiez-le dans le code ci-dessous :
 
@@ -314,17 +314,17 @@ awk 'END {
 }' bundle/*.txt
 ```
 
-Vous pouvez également trouver le script à l’adresse [&#128279;](https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html)
+Vous pouvez également trouver le script à l’adresse [](https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html)
 
 Ouvrez un terminal dans le répertoire racine Commerce et exécutez le fichier :
 
-```bash
+```shell
 bash deps-map.sh
 ```
 
 La sortie de ce script, appliquée à nos trois exemples de types de page, doit ressembler à ceci (mais beaucoup plus longtemps) :
 
-```
+```text
 bundle/product.txt   -->   buildTools,
 bundle/category.txt  -->   jquery/jquery.parsequery,
 bundle/product.txt   -->   jsbuild,
@@ -340,7 +340,7 @@ bundle/category.txt/bundle/homepage.txt/bundle/product.txt --> knockoutjs/knocko
 
 Ces informations sont suffisantes pour créer une configuration de lots.
 
-#### &#x200B;9. Créer des lots dans votre fichier build.js
+#### 9\. Créer des lots dans votre fichier build.js
 
 Ouvrez le fichier de configuration `build.js` et ajoutez vos lots au nœud `modules` . Chaque lot doit définir les propriétés suivantes :
 
@@ -387,11 +387,11 @@ Cet exemple réutilise des ressources `mage/bootstrap` et `requirejs/require`, e
 
 Les étapes ci-dessous décrivent le processus de base pour générer des lots Commerce plus efficaces. Vous pouvez automatiser ce processus comme vous le souhaitez, mais vous devrez tout de même utiliser `nodejs` et `r.js` pour générer vos lots. De plus, si vos thèmes comportent des personnalisations liées à JavaScript et ne peuvent pas réutiliser le même fichier `build.js`, vous devrez peut-être créer plusieurs configurations de `build.js` par thème.
 
-#### &#x200B;1. Générer des sites de magasin statiques
+#### &#x200B;1. Générer des sites de stockage statiques
 
 Avant de générer des lots, exécutez la commande de déploiement statique :
 
-```bash
+```shell
 php -f bin/magento setup:static-content:deploy -f -a frontend
 ```
 
@@ -404,17 +404,17 @@ Cette commande génère des déploiements de magasin statiques pour chaque thèm
 
 Pour générer des lots pour tous les thèmes et paramètres régionaux de la boutique, répétez les étapes ci-dessous pour chaque thème et paramètre régional de la boutique.
 
-#### &#x200B;2. Déplacez le contenu statique du magasin vers un répertoire temporaire
+#### &#x200B;2. Déplacer le contenu statique du magasin vers un répertoire temporaire
 
 Tout d’abord, vous devez déplacer le contenu statique du répertoire cible vers un répertoire temporaire, car [!DNL RequireJS] remplace tout le contenu du répertoire cible.
 
-```bash
+```shell
 mv pub/static/frontend/Magento/{theme}/{locale} pub/static/frontend/Magento/{theme}/{locale}_tmp
 ```
 
 Par exemple :
 
-```bash
+```shell
 mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US_tmp
 ```
 
@@ -422,7 +422,7 @@ mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US
 
 Exécutez ensuite l’optimiseur r.js sur le fichier `build.js` à partir du répertoire racine Commerce. Les chemins d’accès à tous les répertoires et fichiers sont relatifs au répertoire de travail.
 
-```bash
+```shell
 r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
@@ -430,11 +430,11 @@ Cette commande génère des lots dans un sous-répertoire `bundles` du répertoi
 
 Voici à quoi pourrait ressembler le contenu du nouveau répertoire du lot :
 
-```bash
+```shell
 ll pub/static/frontend/Magento/luma/en_US/bundles
 ```
 
-```
+```text
 total 1900
 drwxr-xr-x  2 root root    4096 Mar 28 11:24 ./
 drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
@@ -445,7 +445,7 @@ drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
 -rw-r--r--  1 root root   74233 Mar 28 11:24 shipping.js
 ```
 
-#### &#x200B;4. Configurer [!DNL RequireJS] pour utiliser des lots
+#### &#x200B;4. Configurer les [!DNL RequireJS] pour utiliser des lots
 
 Pour [!DNL RequireJS] à utiliser vos lots, ajoutez un rappel `onModuleBundleComplete` après le nœud `modules` dans le fichier `build.js` :
 
@@ -481,11 +481,11 @@ require.config({});
 }
 ```
 
-#### &#x200B;5. Réexécutez la commande de déploiement.
+#### &#x200B;5. Réexécution de la commande de déploiement
 
 Exécutez la commande suivante pour effectuer le déploiement :
 
-```bash
+```shell
 r.js -o app/design/frontend/Magento/luma/build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
@@ -512,7 +512,7 @@ Une fois la page chargée, notez que le navigateur charge différentes dépendan
 
 Le temps de chargement des pages d’une page d’accueil vide est désormais deux fois plus rapide que l’utilisation du regroupement Commerce natif. Mais nous pouvons faire encore mieux.
 
-#### &#x200B;7. Optimiser les lots
+#### &#x200B;7. Optimisation des lots
 
 Même s’ils sont compressés, les fichiers JavaScript restent volumineux. Minimisez-les avec [!DNL RequireJS], qui utilise uglifier pour minimiser JavaScript afin d’obtenir de bons résultats.
 

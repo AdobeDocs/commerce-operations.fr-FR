@@ -2,9 +2,9 @@
 title: Gérer le cache
 description: Découvrez comment gérer les types de cache et afficher l’état du cache à l’aide des commandes de l’interface de ligne de commande Adobe Commerce. Découvrez les techniques de gestion et d’optimisation du cache.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,14 @@ Vous pouvez utiliser le système de gestion du cache d’Adobe Commerce pour am�
 >[!NOTE]
 >
 >
->Les administrateurs du site Commerce peuvent gérer le cache à partir de l’Administration à l’aide de l’outil Système de gestion du cache. Voir [&#x200B; Gestion du cache &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management) dans le _Guide des systèmes d’administration_.
+>Les administrateurs du site Commerce peuvent gérer le cache à partir de l’Administration à l’aide de l’outil Système de gestion du cache. Voir [ Gestion du cache ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) dans le _Guide des systèmes d’administration_.
 
 
 ## Affichage de l’état du cache
 
 À partir de la ligne de commande du serveur d’applications Commerce, affichez l’état du cache à l’aide de la commande `cache:status` de l’interface de ligne de commande Commerce.
 
-```bash
+```shell
    bin/magento cache:status
 ```
 
@@ -35,7 +35,7 @@ Vous pouvez utiliser le système de gestion du cache d’Adobe Commerce pour am�
 
 Voici un exemple :
 
-```
+```text
 Current status:
                         config: 1
                         layout: 1
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Pour obtenir une description détaillée des types de cache par défaut pris en charge par Adobe Commerce, reportez-vous à la section [Caches](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management#caches) du _Guide des systèmes d’administration_.
+>Pour obtenir une description détaillée des types de cache par défaut pris en charge par Adobe Commerce, reportez-vous à la section [Caches](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) du _Guide des systèmes d’administration_.
 
 
 ## Activation ou désactivation des types de cache
@@ -74,11 +74,11 @@ Vous pouvez nettoyer les types de cache (également appelés _vidage_ ou _actual
 
 Options de commande :
 
-```bash
+```shell
 bin/magento cache:enable [type] ... [type]
 ```
 
-```bash
+```shell
 bin/magento cache:disable [type] ... [type]
 ```
 
@@ -88,19 +88,19 @@ Lorsque l’omission de `[type]` active ou désactive tous les types de cache en
 
 Pour répertorier les types de cache et leur statut :
 
-```bash
+```shell
 bin/magento cache:status
 ```
 
 Par exemple, pour désactiver le cache de page complet et le cache DDL :
 
-```bash
+```shell
 bin/magento cache:disable db_ddl full_page
 ```
 
 Exemple de résultat :
 
-```
+```text
    Changed cache status:
        db_ddl: 1 -> 0
     full_page: 1 -> 0
@@ -136,23 +136,23 @@ Videz les types de cache si vous avez déjà essayé de nettoyer le cache et que
 
 Utilisation des commandes :
 
-```bash
+```shell
    bin/magento cache:clean [type] ... [type]
 ```
 
-```bash
+```shell
    bin/magento cache:flush [type] ... [type]
 ```
 
 Où `[type]` est une liste de types de cache séparés par des espaces. L’omission de `[type]` nettoie ou vide tous les types de cache en même temps. Par exemple, pour vider tous les types de cache, saisissez
 
-```bash
+```shell
    bin/magento cache:flush
 ```
 
 Exemple de résultat :
 
-```
+```text
    Flushed cache types:
    config
    layout

@@ -3,9 +3,9 @@ title: Configuration manuelle des bases de données principales
 description: Voir les conseils sur la configuration manuelle de la solution de base de données partagée.
 recommendations: noCatalog
 exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1391'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Adobe vous recommande vivement de sauvegarder votre base de données et votre sy
 1. Connectez-vous à votre serveur Commerce en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md) ou passez à ce dernier.
 1. Saisissez les commandes suivantes :
 
-   ```bash
+   ```shell
    magento setup:backup --code --media --db
    ```
 
@@ -70,7 +70,7 @@ Cette section explique comment créer des instances de base de données pour les
 1. Connectez-vous à votre serveur de base de données en tant qu&#39;utilisateur.
 1. Saisissez la commande suivante pour accéder à une invite de commande MySQL :
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -93,7 +93,7 @@ Cette section explique comment créer des instances de base de données pour les
 
    base de données de devis :
 
-   ```bash
+   ```shell
    mysql -u magento_quote -p
    ```
 
@@ -101,11 +101,11 @@ Cette section explique comment créer des instances de base de données pour les
    exit
    ```
 
-   ```bash
+   ```shell
    mysql -u magento_quote -p
    ```
 
-   ```bash
+   ```shell
    mysql -u magento_sales -p
    ```
 
@@ -202,7 +202,7 @@ Exécutez le script précédent :
 
 1. Connectez-vous à votre base de données MySQL en tant qu’utilisateur `root` ou administrateur :
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -235,25 +235,25 @@ Exécutez les commandes `mysqldump` suivantes, une par une, à partir du shell d
 
 #### Script 1
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> sales_bestsellers_aggregated_daily sales_bestsellers_aggregated_monthly sales_bestsellers_aggregated_yearly sales_creditmemo sales_creditmemo_comment sales_creditmemo_grid sales_creditmemo_item sales_invoice sales_invoice_comment sales_invoice_grid sales_invoice_item sales_invoiced_aggregated sales_invoiced_aggregated_order sales_order sales_order_address sales_order_aggregated_created sales_order_aggregated_updated sales_order_grid sales_order_item sales_order_payment sales_order_status sales_order_status_history sales_order_status_label sales_order_status_state sales_order_tax sales_order_tax_item sales_payment_transaction sales_refunded_aggregated sales_refunded_aggregated_order sales_sequence_meta sales_sequence_profile sales_shipment sales_shipment_comment sales_shipment_grid sales_shipment_item sales_shipment_track sales_shipping_aggregated sales_shipping_aggregated_order > /<path>/sales.sql
 ```
 
 #### Script 2
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> magento_sales_creditmemo_grid_archive magento_sales_invoice_grid_archive magento_sales_order_grid_archive magento_sales_shipment_grid_archive > /<path>/salesarchive.sql
 ```
 
 #### Script 3
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> magento_customercustomattributes_sales_flat_order magento_customercustomattributes_sales_flat_order_address > /<path>/customercustomattributes.sql
 ```
 
 #### Script 4
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> sequence_creditmemo_0 sequence_creditmemo_1 sequence_invoice_0 sequence_invoice_1 sequence_order_0 sequence_order_1 sequence_rma_item_0 sequence_rma_item_1 sequence_shipment_0 sequence_shipment_1 > /<path>/sequence.sql
 ```
 
@@ -267,7 +267,7 @@ Si vous utilisez un cluster [Network Database (NDB)](https://dev.mysql.com/doc/r
 
 1. Convertissez les tableaux de InnoDb en type NDB dans les fichiers de vidage :
 
-   ```bash
+   ```shell
    sed -ei 's/InnoDb/NDB/' <file name>.sql
    ```
 
@@ -277,19 +277,19 @@ Si vous utilisez un cluster [Network Database (NDB)](https://dev.mysql.com/doc/r
 
 Exécutez les commandes suivantes :
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/sales.sql
 ```
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/sequence.sql
 ```
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/salesarchive.sql
 ```
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattributes.sql
 ```
 
@@ -330,7 +330,7 @@ Exécutez le script comme suit :
 
 1. Connectez-vous à votre base de données MySQL en tant qu’utilisateur racine ou administrateur :
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -351,7 +351,7 @@ Cette section explique comment sauvegarder les tables de devis de la base de don
 
 Exécutez la commande suivante à partir d’une invite de commande :
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> magento_customercustomattributes_sales_flat_quote magento_customercustomattributes_sales_flat_quote_address quote quote_address quote_address_item quote_item quote_item_option quote_payment quote_shipping_rate quote_id_mask > /<path>/quote.sql;
 ```
 
@@ -361,7 +361,7 @@ Si vous utilisez un cluster [Network Database (NDB)](https://dev.mysql.com/doc/r
 
 1. Convertissez les tableaux de InnoDb en type NDB dans les fichiers de vidage :
 
-   ```bash
+   ```shell
    sed -ei 's/InnoDb/NDB/' <file name>.sql
    ```
 
@@ -369,7 +369,7 @@ Si vous utilisez un cluster [Network Database (NDB)](https://dev.mysql.com/doc/r
 
 ### Restaurer les tables dans la base de données des guillemets
 
-```bash
+```shell
 mysql -u root -p magento_quote < /<path>/quote.sql
 ```
 
@@ -453,7 +453,7 @@ Exécutez le script comme suit :
 
 1. Connectez-vous à votre base de données MySQL en tant qu’utilisateur racine ou administrateur :
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -480,7 +480,7 @@ Pour mettre à jour la configuration de déploiement :
 1. Connectez-vous à votre serveur Commerce en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md) ou passez à ce dernier.
 1. Sauvegardez la configuration de déploiement :
 
-   ```bash
+   ```shell
    cp <magento_root>/app/etc/env.php <magento_root>/app/etc/env.php.orig
    ```
 

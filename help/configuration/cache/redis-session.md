@@ -3,9 +3,9 @@ title: Utilisation de Redis pour le stockage de session
 description: Découvrez comment configurer Redis pour le stockage de session dans Adobe Commerce. Découvrez l’installation de la ligne de commande, les options de configuration et les techniques d’optimisation des performances.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '836'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Commerce fournit désormais des options de ligne de commande pour configurer le 
 
 Exécutez la commande `setup:config:set` et spécifiez des paramètres spécifiques à Redis.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
 ```
 
@@ -37,9 +37,9 @@ où
 | session-save-redis-port | port | Port d&#39;écoute du serveur Redis. | 6379 |
 | session-save-redis-password | mot de passe | Spécifie un mot de passe si votre serveur Redis requiert une authentification. | vide |
 | session-save-red-timeout | timeout | Timeout de connexion, en secondes. | 2,5 |
-| session-save-red-persistent-id | persistent_identifier | Chaîne unique pour activer les connexions persistantes (par exemple, sess-db0).<br>[Problèmes connus liés à phpredis et php-fpm](https://github.com/phpredis/phpredis/issues/70). |  |
+| session-save-red-persistent-id | persistent_identifier | Chaîne unique pour activer les connexions persistantes (par exemple, sess-db0).<br>[Problèmes connus avec phpredis et php-fpm](https://github.com/phpredis/phpredis/issues/70). |  |
 | session-save-redis-db | de données | Numéro de base de données Redis unique, recommandé pour se protéger contre la perte de données.<br><br>**Important** : si vous utilisez Redis pour plusieurs types de mise en cache, les numéros de base de données doivent être différents. Il est recommandé d&#39;attribuer le numéro de base de données de mise en cache par défaut à 0, le numéro de base de données de mise en cache de page à 1 et le numéro de base de données de stockage de session à 2. | 0 |
-| session-save-red-compression-threshold | compression_seuil | Définissez cette valeur sur 0 pour désactiver la compression (recommandé lorsque `suhosin.session.encrypt = On`).<br>[Problème connu avec les chaînes de plus de 64 Ko](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
+| session-save-red-compression-threshold | compression_seuil | Définissez cette valeur sur 0 pour désactiver la compression (recommandée lorsque `suhosin.session.encrypt = On`).<br>[Problème connu avec les chaînes de plus de 64 Ko](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
 | session-save-redis-compression-lib | compression_library | Options : gzip, lzf, lz4 ou snappy. | gzip |
 | session-save-redis-log-level | log_level | Définissez sur l’une des options suivantes, répertoriées dans l’ordre du moins détaillé au plus détaillé :<ul><li>0 (urgence : seulement les erreurs les plus graves)<li>1 (alerte : action immédiate requise)<li>2 (critique : composant d’application non disponible)<li>3 (erreur : erreurs d’exécution, non critiques, mais doivent être surveillées)<li>4 (avertissement : informations supplémentaires, recommandé)<li>5 (avis : état normal mais significatif)<li>6 (info : messages informatifs)<li>7 (débogage : le plus d’informations pour le développement ou le test uniquement)</ul> | 1 |
 | session-save-redis-max-concurrency | max_concurrency | Nombre maximum de processus pouvant attendre un verrouillage sur une session. Pour les clusters de production volumineux, définissez cette valeur sur au moins 10 % du nombre de processus PHP. | 6 |
@@ -60,7 +60,7 @@ où
 
 L’exemple suivant définit Redis comme magasin de données de session, définit l’hôte sur `127.0.0.1`, définit le niveau de journal sur 4 et définit le numéro de base de données sur 2. Tous les autres paramètres sont définis sur la valeur par défaut.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
 ```
 
@@ -104,13 +104,13 @@ Pour vérifier que Redis et Commerce fonctionnent ensemble, connectez-vous au se
 
 ### Commande Redis monitor
 
-```bash
+```shell
 redis-cli monitor
 ```
 
 Exemple de sortie de stockage de session :
 
-```
+```text
 1476824834.187250 [0 127.0.0.1:52353] "select" "0"
 1476824834.187587 [0 127.0.0.1:52353] "hmget" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "data" "writes"
 1476824834.187939 [0 127.0.0.1:52353] "expire" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "1200"
@@ -121,7 +121,7 @@ Exemple de sortie de stockage de session :
 
 ### Commande de redimensionnement
 
-```bash
+```shell
 redis-cli ping
 ```
 

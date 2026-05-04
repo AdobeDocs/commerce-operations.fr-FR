@@ -2,9 +2,9 @@
 title: Bibliothèque JavaScript de confidentialité
 description: Découvrez comment utiliser des outils personnalisés pour accéder aux informations personnelles des clients collectées par Adobe Commerce et les supprimer.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -15,19 +15,19 @@ ht-degree: 0%
 
 La bibliothèque JavaScript d’Adobe Privacy est un ensemble d’outils permettant de créer un processus d’accès et de suppression des données privées collectées par Adobe Commerce.
 
-Les services de suivi des données de Commerce peuvent stocker des informations privées applicables aux réglementations de confidentialité telles que le [&#x200B; Règlement général sur la protection des données (RGPD)](gdpr.md) et le [California Consumer Privacy Act (CCPA)](ccpa.md).
+Les services de suivi des données de Commerce peuvent stocker des informations privées applicables aux réglementations de confidentialité telles que le [ Règlement général sur la protection des données (RGPD)](gdpr.md) et le [California Consumer Privacy Act (CCPA)](ccpa.md).
 
 Cette bibliothèque fournit un ensemble de fonctions pour créer des demandes de données de confidentialité et collecter leurs réponses. Utilisez cette bibliothèque pour récupérer et supprimer les données stockées dans le navigateur par les services de suivi de données Adobe Commerce.
 
 >[!NOTE]
 >
->Si le [Mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=fr) est activé, Commerce ne collecte pas de données comportementales tant que l’acheteur n’a pas donné son consentement. Si le [!UICONTROL **Mode de restriction des cookies**] est désactivé, Commerce collecte des données comportementales par défaut.
+>Si le [Mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) est activé, Commerce ne collecte pas de données comportementales tant que l’acheteur n’a pas donné son consentement. Si le [!UICONTROL **Mode de restriction des cookies**] est désactivé, Commerce collecte des données comportementales par défaut.
 
 ## Installation
 
 La bibliothèque JavaScript de confidentialité est disponible à l’emplacement du réseau CDN suivant : `commerce.adobe.net/magentoprivacy.js`
 
-Une fois que vous disposez du fichier, vous devez l’ajouter à un module ou à un thème personnalisé installé dans votre instance Adobe Commerce. Suivez les instructions décrites dans la rubrique [&#x200B; Utilisation de JavaScript personnalisés &#x200B;](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) pour accomplir cette tâche.
+Une fois que vous disposez du fichier, vous devez l’ajouter à un module ou à un thème personnalisé installé dans votre instance Adobe Commerce. Suivez les instructions décrites dans la rubrique [ Utilisation de JavaScript personnalisés ](https://developer.adobe.com/commerce/frontend-core/javascript/custom) pour accomplir cette tâche.
 
 ### Initialisation
 

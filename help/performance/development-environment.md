@@ -2,9 +2,9 @@
 title: Recommandations relatives à l’environnement de développement
 description: Découvrez les recommandations relatives à l’environnement de développement dans Adobe Commerce. Découvrez les conseils d’implémentation et les stratégies d’optimisation.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ En mode de développement, n’exécutez pas de commandes pour la compilation, l
 
 * `setup:di:compile` génère des classes générées automatiquement et des caches de configuration optimisés.
 
-  ```bash
+  ```shell
   bin/magento setup:di:compile
   ```
 
@@ -35,7 +35,7 @@ En mode de développement, n’exécutez pas de commandes pour la compilation, l
 
 * `setup:static-content:deploy` déploie du contenu statique pour un magasin.
 
-  ```bash
+  ```shell
   bin/magento setup:static-content:deploy
   ```
 

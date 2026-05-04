@@ -3,9 +3,9 @@ title: Migrer les données
 description: Découvrez comment commencer à migrer des données de Magento 1 vers Magento 2 avec l’ [!DNL Data Migration Tool].
 exl-id: f4ea8f6a-21f8-4db6-b598-c5efecec254f
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Voir la section [premières étapes](overview.md#first-steps) pour plus d’info
 
 Pour commencer à migrer les données, exécutez :
 
-```bash
+```shell
 bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
@@ -105,7 +105,7 @@ Lors de l’exécution, le [!DNL Data Migration Tool] peut signaler des incohér
 * `Incompatibility in data. Source document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 * `Incompatibility in data. Destination document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 
-Voir la section [&#x200B; Dépannage &#x200B;](https://support.magento.com/hc/en-us/articles/360033020451) de ce guide pour plus d’informations et de recommandations.
+Voir la section [ Dépannage ](https://support.magento.com/hc/en-us/articles/360033020451) de ce guide pour plus d’informations et de recommandations.
 
 ## Étape de migration suivante
 

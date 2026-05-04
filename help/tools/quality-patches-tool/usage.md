@@ -4,9 +4,9 @@ description: Découvrez comment utiliser l’outil de correctifs de la qualité 
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fournit des correctifs individuels développés par Adobe et la communauté Magento Open Source. Il vous permet d’appliquer, d’annuler et d’afficher des informations générales sur tous les correctifs individuels disponibles pour la version installée d’Adobe Commerce. Vous pouvez appliquer des correctifs à des projets Adobe Commerce, quelle que soit la personne qui les a développés. Par exemple, vous pouvez appliquer un correctif développé par la communauté aux projets Adobe Commerce.
 
-Regardez cette [vidéo technique](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=fr) et découvrez comment utiliser l’outil de correctifs de qualité pour Adobe Commerce.
+Regardez cette [vidéo technique](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html) et découvrez comment utiliser l’outil de correctifs de qualité pour Adobe Commerce.
 
 >[!INFO]
 >
->Voir [&#x200B; Application de correctifs individuels &#x200B;](#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) pour consulter la liste complète des correctifs publiés.
+>Voir [ Application de correctifs individuels ](#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) pour consulter la liste complète des correctifs publiés.
 
 >[!WARNING]
 >
@@ -31,7 +31,7 @@ Regardez cette [vidéo technique](https://experienceleague.adobe.com/docs/commer
 >
 >S’il n’est pas déjà installé, vous devez installer [[!DNL Git]](https://github.com/git-guides/install-git) ou [Patch](https://man7.org/linux/man-pages/man1/patch.1.html) avant d’installer le [!DNL Quality Patches Tool]. Ajoutez le package `magento/quality-patches` Composer à votre fichier `composer.json` :
 
-```bash
+```shell
 composer require magento/quality-patches
 ```
 
@@ -39,7 +39,7 @@ composer require magento/quality-patches
 
 Pour afficher la liste des correctifs individuels disponibles pour votre version d’Adobe Commerce :
 
-```bash
+```shell
 ./vendor/bin/magento-patches status
 ```
 
@@ -62,7 +62,7 @@ Adobe Commerce 2.3.5.
 Le tableau de statut comprend les éléments suivants :
 
 - **Type** :
-   - `Optional` — Tous les correctifs du [!DNL Quality Patches Tool] et du package [Guide de Commerce sur les infrastructures cloud > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) sont facultatifs pour les installations Adobe Commerce.
+   - `Optional` — Tous les correctifs du [!DNL Quality Patches Tool] et du package [Guide de Commerce sur les infrastructures cloud > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) sont facultatifs pour les installations Adobe Commerce.
    - `Deprecated` — Adobe a rendu obsolète le correctif individuel. Si vous avez appliqué le correctif, nous vous recommandons de le rétablir. L’opération de rétablissement supprime également le correctif de la table des statuts.
 
 - **Statut** :
@@ -83,23 +83,23 @@ Le tableau de statut comprend les éléments suivants :
 
 >[!WARNING]
 >
->Il est recommandé de tester tous les correctifs dans un environnement d’évaluation ou de développement avant de les déployer en production. Il est également recommandé de sauvegarder vos données avant d’appliquer un correctif. Voir [&#x200B; Sauvegarde et restauration du système de fichiers, du support et de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=fr).
+>Il est recommandé de tester tous les correctifs dans un environnement d’évaluation ou de développement avant de les déployer en production. Il est également recommandé de sauvegarder vos données avant d’appliquer un correctif. Voir [ Sauvegarde et restauration du système de fichiers, du support et de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Pour appliquer un seul correctif, exécutez la commande suivante où `MAGETWO-XXXX` correspond à l’identifiant de correctif spécifié dans le tableau d’état :
 
-```bash
+```shell
 ./vendor/bin/magento-patches apply MAGETWO-XXXX
 ```
 
 Vous pouvez également appliquer plusieurs correctifs en même temps en séparant chaque identifiant de correctif supplémentaire par un espace :
 
-```bash
+```shell
 ./vendor/bin/magento-patches apply MAGETWO-XXXX MAGETWO-YYYY
 ```
 
 Vous devez nettoyer le cache après l’application des correctifs pour afficher les modifications dans l’application Adobe Commerce :
 
-```bash
+```shell
 ./bin/magento cache:clean
 ```
 
@@ -111,29 +111,29 @@ Vous devez nettoyer le cache après l’application des correctifs pour afficher
 
 >[!WARNING]
 >
->Il est recommandé de tester tous les correctifs dans un environnement d’évaluation ou de développement avant de les déployer en production. Il est également recommandé de sauvegarder vos données avant d’appliquer un correctif. Voir [&#x200B; Sauvegarde et restauration du système de fichiers, du support et de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=fr).
+>Il est recommandé de tester tous les correctifs dans un environnement d’évaluation ou de développement avant de les déployer en production. Il est également recommandé de sauvegarder vos données avant d’appliquer un correctif. Voir [ Sauvegarde et restauration du système de fichiers, du support et de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Pour rétablir un seul correctif, exécutez la commande suivante où `MAGETWO-XXXX` correspond à l’identifiant de correctif spécifié dans le tableau d’état :
 
-```bash
+```shell
 ./vendor/bin/magento-patches revert MAGETWO-XXXX
 ```
 
 Vous pouvez également rétablir plusieurs correctifs en même temps en séparant chaque identifiant de correctif supplémentaire par un espace :
 
-```bash
+```shell
 ./vendor/bin/magento-patches revert MAGETWO-XXXX MAGETWO-YYYY
 ```
 
 Pour rétablir tous les correctifs appliqués :
 
-```bash
+```shell
 ./vendor/bin/magento-patches revert --all
 ```
 
 Vous devez nettoyer le cache après le rétablissement des correctifs pour afficher les modifications dans l’application Adobe Commerce :
 
-```bash
+```shell
 ./bin/magento cache:clean
 ```
 
@@ -141,7 +141,7 @@ Vous devez nettoyer le cache après le rétablissement des correctifs pour affic
 
 Adobe Commerce publie régulièrement de nouveaux correctifs individuels. Vous devez mettre à jour le [!DNL Quality Patches Tool] pour obtenir de nouveaux correctifs individuels :
 
-```bash
+```shell
 composer update magento/quality-patches
 ```
 
@@ -151,7 +151,7 @@ Affichez les correctifs ajoutés :
 >
 >Les nouveaux correctifs ajoutés s’affichent au bas du tableau.
 
-```bash
+```shell
 ./vendor/bin/magento-patches status
 ```
 
@@ -163,7 +163,7 @@ Pour appliquer à nouveau les correctifs :
 
 1. Mettez à jour le [!DNL Quality Patches Tool] :
 
-   ```bash
+   ```shell
    composer update magento/quality-patches.
    ```
 
@@ -171,7 +171,7 @@ Pour appliquer à nouveau les correctifs :
 
 1. Appliquez les correctifs suivants :
 
-   ```bash
+   ```shell
    ./vendor/bin/magento-patches apply MAGETWO-XXXX
    ```
 
@@ -179,7 +179,7 @@ Pour appliquer à nouveau les correctifs :
 
 1. Nettoyez le cache :
 
-   ```bash
+   ```shell
    ./bin/magento cache:clean
    ```
 

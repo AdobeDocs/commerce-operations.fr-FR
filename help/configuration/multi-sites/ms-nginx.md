@@ -2,9 +2,9 @@
 title: Configuration de plusieurs sites web avec Nginx
 description: Suivez ce tutoriel pour configurer plusieurs sites web avec Nginx.
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '972'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Nous supposons que :
 
   Des tâches supplémentaires peuvent être nécessaires pour déployer plusieurs sites web dans un environnement hébergé. Pour plus d’informations, contactez votre fournisseur d’hébergement.
 
-  Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Une fois les tâches décrites dans cette rubrique terminées, consultez [Configuration de plusieurs sites web ou magasins](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=fr) dans le guide _Commerce sur les infrastructures cloud_.
+  Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Une fois les tâches décrites dans cette rubrique terminées, consultez [Configuration de plusieurs sites web ou magasins](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) dans le guide _Commerce sur les infrastructures cloud_.
 
 - Vous acceptez plusieurs domaines dans un fichier hôte virtuel ou utilisez un hôte virtuel par site web ; les fichiers de configuration de l&#39;hôte virtuel se trouvent dans `/etc/nginx/sites-available`.
 - Vous utilisez le `nginx.conf.sample` fourni par Commerce avec uniquement les modifications abordées dans ce tutoriel.
@@ -36,7 +36,7 @@ Voici une feuille de route pour configurer plusieurs sites web avec des onglets 
 
 1. [Configurez des sites web, des boutiques et des affichages de boutique](ms-admin.md) dans l’Administration.
 1. Créez un [hôte virtuel Nginx](#step-2-create-nginx-virtual-hosts)) pour mapper de nombreux sites web ou un hôte virtuel Nginx par site web Commerce (étapes détaillées ci-dessous).
-1. Transmettez les valeurs des [&#x200B; et &#x200B;](ms-overview.md) `$MAGE_RUN_TYPE`variables MAGE`$MAGE_RUN_CODE` à nginx à l’aide du `nginx.conf.sample` fourni par Magento (étapes détaillées ci-dessous).
+1. Transmettez les valeurs des `$MAGE_RUN_TYPE` et `$MAGE_RUN_CODE` [variables MAGE](ms-overview.md) à nginx à l’aide du `nginx.conf.sample` fourni par Magento (étapes détaillées ci-dessous).
 
    - `$MAGE_RUN_TYPE` peut être `store` ou `website` :
 
@@ -83,13 +83,13 @@ Cette configuration se développe sur [configuration nginx](../../installation/p
 1. Enregistrez vos modifications dans les fichiers et quittez l’éditeur de texte.
 1. Vérifiez la configuration du serveur :
 
-   ```bash
+   ```shell
    nginx -t
    ```
 
 1. En cas de réussite, le message suivant s’affiche :
 
-   ```
+   ```yaml
    nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 
@@ -97,11 +97,11 @@ Cette configuration se développe sur [configuration nginx](../../installation/p
 
 1. Créer un lien symbolique dans le répertoire `/etc/nginx/sites-enabled` :
 
-   ```bash
+   ```shell
    cd /etc/nginx/sites-enabled
    ```
 
-   ```bash
+   ```shell
    ln -s /etc/nginx/sites-available/magento magento
    ```
 
@@ -141,13 +141,13 @@ Pour plus d&#39;informations sur la directive map, voir [nginx documentation on 
 1. Enregistrez vos modifications dans les fichiers et quittez l’éditeur de texte.
 1. Vérifiez la configuration du serveur :
 
-   ```bash
+   ```shell
    nginx -t
    ```
 
 1. En cas de réussite, le message suivant s’affiche :
 
-   ```
+   ```yaml
    nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 
@@ -155,15 +155,15 @@ Pour plus d&#39;informations sur la directive map, voir [nginx documentation on 
 
 1. Créer des liens symboliques dans le répertoire `/etc/nginx/sites-enabled` :
 
-   ```bash
+   ```shell
    cd /etc/nginx/sites-enabled
    ```
 
-   ```bash
+   ```shell
    ln -s /etc/nginx/sites-available/french.mysite.mg french.mysite.mg
    ```
 
-   ```bash
+   ```shell
    ln -s /etc/nginx/sites-available/german.mysite.mg german.mysite.mg
    ```
 
@@ -253,7 +253,7 @@ Vous devez mettre à jour l’URL de base pour les sites Web `french` et `german
 
 Exécutez la commande suivante pour nettoyer les caches `config` et `full_page`.
 
-```bash
+```shell
 bin/magento cache:clean config full_page
 ```
 
@@ -280,7 +280,7 @@ bin/magento cache:clean config full_page
 >[!INFO]
 >
 >- Des tâches supplémentaires peuvent être nécessaires pour déployer plusieurs sites web dans un environnement hébergé. Pour plus d’informations, contactez votre fournisseur d’hébergement.
->- Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de plusieurs sites web ou magasins cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=fr) dans le guide _Commerce sur l’infrastructure cloud_.
+>- Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de plusieurs sites web ou magasins cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) dans le guide _Commerce sur l’infrastructure cloud_.
 
 ### Dépannage
 

@@ -2,9 +2,9 @@
 title: Démarrage rapide de l’installation locale
 description: Découvrez comment installer Adobe Commerce sur votre propre infrastructure à l’aide du compositeur. Découvrez les étapes de démarrage rapide et les exigences de configuration.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 0532977ff0aeb5d221b1901d73a374cadf95f83b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -43,13 +43,13 @@ Pour passer au propriétaire du système de fichiers :
 
    Si vous utilisez le shell bash, vous pouvez utiliser la syntaxe suivante pour passer au propriétaire du système de fichiers et saisir simultanément la commande :
 
-   ```bash
+   ```shell
    su <file system owner> -s /bin/bash -c <command>
    ```
 
    Si le propriétaire du système de fichiers n’autorise pas les connexions, vous pouvez effectuer les opérations suivantes :
 
-   ```bash
+   ```shell
    sudo -u <file system owner>  <command>
    ```
 
@@ -59,7 +59,7 @@ Pour passer au propriétaire du système de fichiers :
 
    Exemple de shell Bash pour CentOS :
 
-   ```bash
+   ```shell
    export PATH=$PATH:/var/www/html/magento2/bin
    ```
 
@@ -77,15 +77,15 @@ Pour obtenir le métapaquet Adobe Commerce :
 1. Passez au répertoire docroot du serveur web ou à un répertoire que vous avez configuré en tant qu&#39;hôte virtuel docroot.
 1. Créez un projet Composer à l’aide d’un métapaquet Commerce.
 
-   **Magento Open Source**
+   ****
 
-   ```bash
+   ```shell
    composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
    ```
 
-   **Adobe Commerce**
+   ****
 
-   ```bash
+   ```shell
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
@@ -93,9 +93,9 @@ Pour obtenir le métapaquet Adobe Commerce :
 
    >[!NOTE]
    >
-   > Si vous utilisez un fichier `[auth.json](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` du compositeur ou une variable d’environnement configurée avec vos clés d’authentification Commerce, vous n’êtes pas invité à saisir les clés d’authentification.
+   > Si vous utilisez un fichier `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` du compositeur ou une variable d’environnement configurée avec vos clés d’authentification Commerce, vous n’êtes pas invité à saisir les clés d’authentification.
 
-   Si vous rencontrez des erreurs, telles que `Could not find package...` ou `...no matching package found`, assurez-vous qu’il n’y a aucune faute de frappe dans votre commande. Si vous rencontrez toujours des erreurs, il se peut que vous ne soyez pas autorisé à télécharger Adobe Commerce. Contactez [l’assistance Adobe Commerce](https://support.magento.com/hc/en-us) pour obtenir de l’aide.
+   Si vous rencontrez des erreurs, telles que `Could not find package...` ou `...no matching package found`, assurez-vous qu’il n’y a aucune faute de frappe dans votre commande. Si vous rencontrez toujours des erreurs, il se peut que vous ne soyez pas autorisé à télécharger Adobe Commerce. Contactez [l’assistance ](https://support.magento.com/hc/en-us) pour obtenir de l’aide.
 
    Voir [Dépannage](https://support.magento.com/hc/en-us/articles/360033818091) pour obtenir de l’aide sur d’autres erreurs.
 
@@ -103,7 +103,7 @@ Pour obtenir le métapaquet Adobe Commerce :
 
 Les versions mineures contiennent de nouvelles fonctionnalités, des correctifs de qualité et des correctifs de sécurité. Utilisez le compositeur pour spécifier une version mineure. Par exemple, pour spécifier le métapaquet Adobe Commerce 2.4.6 :
 
-```bash
+```shell
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
@@ -111,7 +111,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 Les correctifs de qualité contiennent principalement des correctifs de sécurité _et_ fonctionnels. Cependant, ils peuvent également parfois contenir de nouvelles fonctionnalités rétrocompatibles. Utilisez le compositeur pour télécharger un correctif de qualité. Par exemple, pour spécifier le métapaquet Adobe Commerce 2.4.6 :
 
-```bash
+```shell
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
@@ -121,7 +121,7 @@ Les correctifs de sécurité contiennent uniquement des correctifs de sécurité
 
 Les correctifs de sécurité utilisent la `2.4.6-px` de convention de nommage du compositeur. Utilisez le compositeur pour spécifier un correctif. Par exemple, pour télécharger le métapaquet Adobe Commerce 2.4.6-p1 :
 
-```bash
+```shell
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6-p1 <install-directory-name>
 ```
 
@@ -129,7 +129,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 Vous devez définir des autorisations de lecture et d’écriture pour le groupe de serveurs web avant d’installer Adobe Commerce. Cela est nécessaire pour que la ligne de commande puisse écrire des fichiers dans le système de fichiers.
 
-```bash
+```shell
 cd /var/www/html/<magento install directory>
 find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
 find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
@@ -143,7 +143,7 @@ Vous devez utiliser la ligne de commande pour installer Adobe Commerce.
 
 Cet exemple suppose que le répertoire d’installation est nommé `magento2ee`, que le `db-host` se trouve sur le même ordinateur (`localhost`) et que les `db-name`, `db-user` et `db-password` sont tous `magento` :
 
-```bash
+```shell
 bin/magento setup:install \
 --base-url=http://localhost/magento2ee \
 --db-host=localhost \
@@ -172,29 +172,29 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->Pour obtenir une description complète des options d’installation de l’interface en ligne de commande, voir [&#x200B; Installer l’application à partir de la ligne de commande &#x200B;](advanced.md).
+>Pour obtenir une description complète des options d’installation de l’interface en ligne de commande, voir [ Installer l’application à partir de la ligne de commande ](advanced.md).
 
 ## Résumé des commandes
 
 Pour afficher la liste complète des commandes, saisissez :
 
-```bash
+```shell
 bin/magento list
 ```
 
 Pour obtenir de l’aide sur une commande spécifique, saisissez :
 
-```bash
+```shell
 bin/magento help <command>
 ```
 
 Par exemple :
 
-```bash
+```shell
 bin/magento help setup:install
 ```
 
-```bash
+```shell
 bin/magento help cache:enable
 ```
 

@@ -2,9 +2,9 @@
 title: Configuration et exécution des tâches cron
 description: Découvrez comment configurer et gérer les tâches cron dans Adobe Commerce. Découvrez les techniques de planification, de configuration et de dépannage.
 exl-id: 8ba2b2f9-5200-4e96-9799-1b00d7d23ce1
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Pour créer le crontab Commerce :
 1. Modifiez votre répertoire d’installation Commerce.
 1. Saisissez la commande suivante :
 
-   ```bash
+   ```shell
    bin/magento cron:install [--force]
    ```
 
@@ -74,13 +74,13 @@ Utilisez `--force` pour réécrire un crontab existant.
 
 Pour afficher crontab, saisissez la commande suivante en tant que propriétaire du système de fichiers :
 
-```bash
+```shell
 crontab -l
 ```
 
 Voici un exemple :
 
-```
+```shell
 #~ MAGENTO START c5f9e5ed71cceaabc4d4fd9b3e827a2b
 * * * * * /usr/bin/php /var/www/html/magento2/bin/magento cron:run 2>&1 | grep -v "Ran jobs by schedule" >> /var/www/html/magento2/var/log/magento.cron.log
 #~ MAGENTO END c5f9e5ed71cceaabc4d4fd9b3e827a2b
@@ -102,7 +102,7 @@ Pour supprimer le crontab Commerce :
 1. Accédez au répertoire d’installation de Commerce.
 1. Saisissez la commande suivante :
 
-   ```bash
+   ```shell
    bin/magento cron:remove
    ```
 
@@ -114,7 +114,7 @@ Pour supprimer le crontab Commerce :
 
 Options de commande :
 
-```bash
+```shell
 bin/magento cron:run [--group="<cron group name>"]
 ```
 
@@ -122,13 +122,13 @@ où `--group` spécifie le groupe cron à exécuter (omettez cette option pour e
 
 Pour exécuter la tâche cron d’indexation, saisissez :
 
-```bash
+```shell
 bin/magento cron:run --group index
 ```
 
 Pour exécuter la tâche cron par défaut, saisissez :
 
-```bash
+```shell
 bin/magento cron:run --group default
 ```
 

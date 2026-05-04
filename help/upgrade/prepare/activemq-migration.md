@@ -2,9 +2,9 @@
 title: Migration de RabbitMQ vers ActiveMQ
 description: Découvrez comment remplacer le courtier de file d’attente des messages utilisé pour les installations sur site d’Adobe Commerce.
 feature: Services, Configuration
-source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -34,13 +34,13 @@ Ces instructions de migration supposent qu’Adobe Commerce est la seule applica
 
 1. Placez le site en [mode de maintenance](../../installation/tutorials/maintenance-mode.md) :
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Vérifiez que le mode de maintenance est activé :
 
-   ```bash
+   ```shell
    bin/magento maintenance:status
    ```
 
@@ -61,7 +61,7 @@ Avant de poursuivre, vérifiez que tous les messages de RabbitMQ ont été trait
 
 1. Vérifiez toutes les files d’attente et leur nombre de messages :
 
-   ```bash
+   ```shell
    rabbitmqctl list_queues name messages consumers
    ```
 
@@ -69,7 +69,7 @@ Avant de poursuivre, vérifiez que tous les messages de RabbitMQ ont été trait
 
 1. Vérifiez les informations détaillées sur la file d’attente :
 
-   ```bash
+   ```shell
    rabbitmqctl list_queues name messages messages_ready messages_unacknowledged consumers
    ```
 
@@ -81,7 +81,7 @@ Si des messages sont en attente dans une file d’attente, traitez-les avant de 
 
 1. Obtenez la liste des consommateurs disponibles :
 
-   ```bash
+   ```shell
    bin/magento queue:consumers:list
    ```
 
@@ -89,7 +89,7 @@ Si des messages sont en attente dans une file d’attente, traitez-les avant de 
 
    - **Traiter les consommateurs en tant que groupe**
 
-     ```bash
+     ```shell
      bin/magento cron:run --group=consumers
      ```
 
@@ -99,13 +99,13 @@ Si des messages sont en attente dans une file d’attente, traitez-les avant de 
 
    - **Traitement d’une file d’attente de messages spécifique**
 
-     ```bash
+     ```shell
      bin/magento queue:consumers:start <consumer_name> --max-messages=<number>
      ```
 
      Par exemple, pour traiter des opérations asynchrones :
 
-     ```bash
+     ```shell
      bin/magento queue:consumers:start async.operations.all --max-messages=1000
      ```
 
@@ -117,7 +117,7 @@ Si des messages sont en attente dans une file d’attente, traitez-les avant de 
 
      Vérifiez en permanence le nombre de messages jusqu’à ce que toutes les files d’attente soient vides :
 
-     ```bash
+     ```shell
      # Check every few seconds until 0 messages remain
      watch -n 5 "rabbitmqctl list_queues name messages | grep -v '^Listing' | grep -v '0$'"
      ```
@@ -134,7 +134,7 @@ Avant de passer à l’étape suivante, assurez-vous que **toutes les files d’
 
 1. Arrêtez tous les consommateurs de files d’attente de messages en cours d’exécution :
 
-   ```bash
+   ```shell
    # If using supervisor
    supervisorctl stop all
    
@@ -144,13 +144,13 @@ Avant de passer à l’étape suivante, assurez-vous que **toutes les files d’
 
 1. Désactivez les tâches cron :
 
-   ```bash
+   ```shell
    bin/magento cron:remove
    ```
 
 1. Vérifiez que les tâches cron sont supprimées :
 
-   ```bash
+   ```shell
    crontab -l
    ```
 
@@ -158,7 +158,7 @@ Avant de passer à l’étape suivante, assurez-vous que **toutes les files d’
 
 Créez une sauvegarde de votre configuration actuelle :
 
-```bash
+```shell
 cp app/etc/env.php app/etc/env.php.backup.rabbitmq
 ```
 
@@ -168,19 +168,19 @@ Vous pouvez désinstaller RabbitMQ s’il n’est plus nécessaire.
 
 ### Étape 8 : installer et configurer ActiveMQ dans Adobe Commerce
 
-Pour effectuer les tâches d&#39;installation et de configuration d&#39;ActiveMQ telles que la configuration du protocole STOMP et la vérification de la connexion, consultez le [&#x200B; Guide d&#39;installation et de configuration](../../installation/prerequisites/activemq.md).
+Pour effectuer les tâches d&#39;installation et de configuration d&#39;ActiveMQ telles que la configuration du protocole STOMP et la vérification de la connexion, consultez le [ Guide d&#39;installation et de configuration](../../installation/prerequisites/activemq.md).
 
 ### Étape 9 : réinstaller les tâches cron
 
 1. Une fois le test terminé, réinstallez les tâches cron :
 
-   ```bash
+   ```shell
    bin/magento cron:install
    ```
 
 1. Vérifiez que les tâches cron sont planifiées :
 
-   ```bash
+   ```shell
    crontab -l
    ```
 
@@ -188,13 +188,13 @@ Pour effectuer les tâches d&#39;installation et de configuration d&#39;ActiveMQ
 
 1. Après avoir vérifié que tout fonctionne correctement, désactivez le mode de maintenance :
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
 1. Vérifiez que le mode de maintenance est désactivé :
 
-   ```bash
+   ```shell
    bin/magento maintenance:status
    ```
 
@@ -207,7 +207,7 @@ Surveillez votre système pendant 24 à 48 heures après la migration pour vous 
 - Vérifiez que les opérations asynchrones (enregistrements de configuration, exportations, etc.) fonctionnent.
 - Vérifiez les journaux cron pour vous assurer que les consommateurs et consommatrices fonctionnent.
 
-```bash
+```shell
 # Monitor system logs for queue activity
 tail -f var/log/system.log | grep -i queue
 
@@ -224,44 +224,44 @@ Si des problèmes se produisent pendant ou après la migration, vous pouvez reve
 
 1. Activez le mode de maintenance :
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Arrêtez tous les consommateurs et désactivez cron :
 
-   ```bash
+   ```shell
    pkill -f "queue:consumers:start"
    bin/magento cron:remove
    ```
 
 1. Restaurez la configuration précédente :
 
-   ```bash
+   ```shell
    cp app/etc/env.php.backup.rabbitmq app/etc/env.php
    ```
 
 1. Démarrez RabbitMQ (si arrêté) :
 
-   ```bash
+   ```shell
    sudo systemctl start rabbitmq-server
    ```
 
 1. Effacer le cache :
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
 1. Réinstallez cron :
 
-   ```bash
+   ```shell
    bin/magento cron:install
    ```
 
 1. Désactivez le mode de maintenance :
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 

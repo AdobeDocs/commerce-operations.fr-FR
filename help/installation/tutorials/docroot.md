@@ -3,9 +3,9 @@ title: Modifier docroot pour améliorer la sécurité
 description: Empêchez tout accès non autorisé au système de fichiers local d’Adobe Commerce à partir d’un navigateur.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -60,16 +60,16 @@ Pour suivre ce tutoriel, vous devez accéder à une installation fonctionnelle s
 
 >[!NOTE]
 >
->Pour plus d’informations[&#x200B; consultez les sections &#x200B;](../prerequisites/overview.md)Conditions préalables et [Guide d’installation](../overview.md).
+>Pour plus d’informations](../prerequisites/overview.md) consultez les sections [Conditions préalables et [Guide d’installation](../overview.md).
 
-## &#x200B;1. Modifier la configuration du serveur
+## &#x200B;1. Modification de la configuration du serveur
 
 Le nom et l’emplacement de votre fichier d’hôte virtuel dépendent de la version d’Apache que vous exécutez. Cet exemple montre le nom et l’emplacement du fichier d’hôte virtuel sur Apache v2.4.
 
 1. Connectez-vous à votre serveur d’applications.
 1. Modifiez votre fichier d’hôte virtuel :
 
-   ```bash
+   ```shell
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
@@ -92,11 +92,11 @@ Le nom et l’emplacement de votre fichier d’hôte virtuel dépendent de la ve
 
 1. Redémarrez Apache :
 
-   ```bash
+   ```shell
    systemctl restart apache2
    ```
 
-## &#x200B;2. Mettez à jour votre URL de base
+## &#x200B;2. Mettre à jour l’URL de base
 
 Si vous avez ajouté un nom de répertoire au nom d’hôte ou à l’adresse IP de votre serveur pour créer l’URL de base lors de l’installation de l’application (par exemple, `http://192.168.33.10/magento2`), vous devez la supprimer.
 
@@ -106,7 +106,7 @@ Si vous avez ajouté un nom de répertoire au nom d’hôte ou à l’adresse IP
 
 1. Connexion à la base de données :
 
-   ```bash
+   ```shell
    mysql -u <user> -p
    ```
 
@@ -134,7 +134,7 @@ Ajoutez le nœud suivant au fichier `env.php`.
 
 Reportez-vous à la référence [env.php](../../configuration/reference/config-reference-envphp.md) pour plus d&#39;informations.
 
-## &#x200B;4. Changement de mode
+## &#x200B;4. Basculer entre les modes
 
 [Les modes d’application](../../configuration/bootstrap/application-modes.md) qui comprennent le `production` et le `developer`, sont conçus pour améliorer la sécurité et faciliter le développement. Comme les noms l’indiquent, vous devez passer en mode `developer` lors de l’extension ou de la personnalisation de l’application, puis en mode `production` lors de l’exécution dans un environnement en ligne.
 
@@ -143,22 +143,22 @@ Le passage d’un mode à l’autre est une étape importante pour vérifier que
 1. Accédez au répertoire d’installation.
 1. Passez en mode `production`.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
 1. Actualisez votre navigateur et vérifiez que le storefront s’affiche correctement.
 1. Passez en mode `developer`.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set developer
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -180,4 +180,4 @@ Accédez au storefront dans un navigateur web pour vérifier que tout fonctionne
 
    Si un message 404 ou le message « Accès refusé » s’affiche, cela signifie que vous avez réussi à restreindre l’accès au système de fichiers.
 
-   ![&#x200B; Accès refusé &#x200B;](../../assets/installation/access-denied.png)
+   ![ Accès refusé ](../../assets/installation/access-denied.png)

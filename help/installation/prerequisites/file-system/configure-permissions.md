@@ -2,9 +2,9 @@
 title: Configuration de la propriété et des autorisations des fichiers
 description: Pour configurer les autorisations de système de fichiers pour les installations sur site d’Adobe Commerce, procédez comme suit.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1005'
 ht-degree: 0%
 
 ---
@@ -33,25 +33,25 @@ Pour définir des autorisations avant d’installer l’application, procédez c
 
 1. Si vous disposez d’un accès à la ligne de commande, saisissez les commandes suivantes dans l’ordre indiqué :
 
-   ```bash
+   ```shell
    cd <app_root>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} +
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
    Pour éventuellement saisir toutes les commandes sur une ligne, saisissez ce qui suit en supposant que l&#39;application soit installée dans `/var/www/html/magento2` :
 
-   ```bash
+   ```shell
    cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} + && chmod u+x bin/magento
    ```
 
@@ -97,13 +97,13 @@ Cette section explique comment créer le propriétaire du système de fichiers. 
 
 Pour créer un utilisateur sous CentOS ou Ubuntu, saisissez la commande suivante en tant qu&#39;utilisateur disposant des privilèges `root` :
 
-```bash
+```shell
 adduser <username>
 ```
 
 Pour attribuer un mot de passe à l&#39;utilisateur, saisissez la commande suivante en tant qu&#39;utilisateur disposant des privilèges `root` :
 
-```bash
+```shell
 passwd <username>
 ```
 
@@ -115,11 +115,11 @@ Suivez les invites à l&#39;écran pour créer un mot de passe pour l&#39;utilis
 
 Par exemple, pour créer un utilisateur nommé `magento_user` et lui donner un mot de passe, saisissez :
 
-```bash
+```shell
 sudo adduser magento_user
 ```
 
-```bash
+```shell
 sudo passwd magento_user
 ```
 
@@ -133,13 +133,13 @@ Pour trouver le groupe de l&#39;utilisateur du serveur web :
 
 * CentOS :
 
-  ```bash
+  ```shell
   grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
   ```
 
   ou
 
-  ```bash
+  ```shell
   grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
   ```
 
@@ -162,19 +162,19 @@ Pour placer le propriétaire du système de fichiers dans le groupe principal du
 
 Par exemple, pour ajouter l’utilisateur `magento_user` au groupe principal `apache` sous CentOS :
 
-```bash
+```shell
 sudo usermod -a -G apache magento_user
 ```
 
 Pour confirmer que votre utilisateur est membre du groupe de serveurs web , saisissez la commande suivante :
 
-```bash
+```shell
 groups magento_user
 ```
 
 L’exemple de résultat suivant montre les groupes principal (`magento`) et secondaire (`apache`) de l’utilisateur.
 
-```bash
+```shell
 magento_user : magento_user apache
 ```
 
@@ -201,35 +201,35 @@ Pour définir la propriété et les autorisations avant d’installer l’applic
 1. Connectez-vous au serveur d’applications en tant que propriétaire du système de fichiers ou passez à ce serveur.
 1. Saisissez les commandes suivantes dans l&#39;ordre indiqué :
 
-   ```bash
+   ```shell
    cd <app_root>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
-   ```bash
+   ```shell
    chown -R :<web server group> .
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
 Pour éventuellement saisir toutes les commandes sur une ligne, saisissez ce qui suit en supposant que l&#39;application soit installée dans `/var/www/html/magento2` et que le nom du groupe de serveurs web soit `apache` :
 
-```bash
+```shell
 cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && chown -R :apache . && chmod u+x bin/magento
 ```
 
 Dans le cas où les autorisations du système de fichiers sont définies de manière incorrecte et ne peuvent pas être modifiées par le propriétaire du système de fichiers, vous pouvez saisir la commande en tant qu’utilisateur disposant de droits d’`root` :
 
-```bash
+```shell
 cd /var/www/html/magento2 && sudo find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && sudo find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && sudo chown -R :apache . && sudo chmod u+x bin/magento
 ```
 
@@ -242,6 +242,6 @@ Après avoir effectué les autres tâches de cette rubrique, saisissez l’une d
 
 Par exemple,
 
-```bash
+```shell
 su magento_user
 ```

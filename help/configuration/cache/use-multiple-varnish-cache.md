@@ -3,9 +3,9 @@ title: Effacement du cache avec plusieurs instances Varnish
 description: Découvrez comment l’effacement du cache fonctionne avec plusieurs instances Varnish dans Adobe Commerce. Découvrez les bonnes pratiques de configuration et de gestion.
 feature: Configuration, Cache
 exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '186'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Le format du paramètre doit être `<hostname or ip>:<listen port>`, où vous po
 
 Par exemple,
 
-```bash
+```shell
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 ```
 

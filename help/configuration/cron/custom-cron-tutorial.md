@@ -2,16 +2,16 @@
 title: Configuration d’une tâche cron personnalisée et d’un groupe cron (tutoriel)
 description: Découvrez comment créer des tâches cron personnalisées à l’aide de ce tutoriel détaillé pour Adobe Commerce. Découvrez la configuration du module et la configuration du groupe cron.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
 
 # Configuration d’une tâche cron personnalisée
 
-Ce tutoriel détaillé explique comment créer une tâche cron personnalisée et éventuellement un groupe cron dans un exemple de module. Vous pouvez utiliser un module que vous avez déjà ou vous pouvez utiliser un exemple de module de notre référentiel de [`magento2-samples`](https://github.com/magento/magento2-samples).
+Ce tutoriel détaillé explique comment créer une tâche cron personnalisée et éventuellement un groupe cron dans un exemple de module. Vous pouvez utiliser un module que vous avez déjà ou vous pouvez utiliser un exemple de module de notre référentiel de ](https://github.com/magento/magento2-samples).[`magento2-samples`
 
 L’exécution de la tâche cron entraîne l’ajout d’une ligne au tableau `cron_schedule` avec le nom de la tâche cron, `custom_cron`.
 
@@ -21,7 +21,7 @@ Dans ce tutoriel, nous supposons que :
 
 - L’application Commerce est installée dans `/var/www/html/magento2`
 - Votre nom d’utilisateur et votre mot de passe de base de données Commerce sont tous deux `magento`
-- Vous effectuez toutes les actions en tant que [&#x200B; propriétaire du système de fichiers &#x200B;](../../installation/prerequisites/file-system/overview.md)
+- Vous effectuez toutes les actions en tant que [ propriétaire du système de fichiers ](../../installation/prerequisites/file-system/overview.md)
 
 ## Étape 1 : obtenir un exemple de module
 
@@ -33,9 +33,9 @@ Si vous disposez déjà d’un exemple de module, vous pouvez l’utiliser ; ign
 
 1. Connectez-vous à votre serveur Commerce en tant que [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md) ou passez à ce dernier.
 1. Accédez à un répertoire qui ne se trouve pas à la racine de votre application Commerce (par exemple, votre répertoire personnel).
-1. Clonez le référentiel [`magento2-samples`](https://github.com/magento/magento2-samples).
+1. Clonez le référentiel ](https://github.com/magento/magento2-samples).[`magento2-samples`
 
-   ```bash
+   ```shell
    git clone git@github.com:magento/magento2-samples.git
    ```
 
@@ -43,25 +43,25 @@ Si vous disposez déjà d’un exemple de module, vous pouvez l’utiliser ; ign
 
 1. Créez un répertoire dans lequel copier l’exemple de code :
 
-   ```bash
+   ```shell
    mkdir -p /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
 1. Copiez l’exemple de code de module :
 
-   ```bash
+   ```shell
    cp -r ~/magento2-samples/sample-module-minimal/* /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
 1. Vérifiez que les fichiers ont bien été copiés :
 
-   ```bash
+   ```shell
    ls -al /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
    Le résultat devrait être le suivant :
 
-   ```
+   ```text
    drwxrwsr-x.   4 magento_user apache  4096 Oct 30 13:19 .
    drwxrwsr-x. 121 magento_user apache  4096 Oct 30 13:19 ..
    -rw-rw-r--.   1 magento_user apache   372 Oct 30 13:19 composer.json
@@ -75,13 +75,13 @@ Si vous disposez déjà d’un exemple de module, vous pouvez l’utiliser ; ign
 
 1. Mettez à jour la base de données et le schéma Commerce :
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. Nettoyez le cache :
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -91,13 +91,13 @@ Avant de poursuivre, vérifiez que l’exemple de module est enregistré et acti
 
 1. Exécutez la commande suivante :
 
-   ```bash
+   ```shell
    bin/magento module:status Magento_SampleMinimal
    ```
 
 1. Assurez-vous que le module est activé.
 
-   ```
+   ```text
    Module is enabled
    ```
 
@@ -113,7 +113,7 @@ Pour créer une classe :
 
 1. Créez un répertoire pour la classe et modifiez-le :
 
-   ```bash
+   ```shell
    mkdir /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron && cd /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron
    ```
 
@@ -181,13 +181,13 @@ Où `system/config/path` est un chemin de configuration système défini dans le
 
 Compilez le code avec cette commande :
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
 Et nettoyez le cache avec la commande suivante :
 
-```bash
+```shell
 bin/magento cache:clean
 ```
 
@@ -199,7 +199,7 @@ Pour vérifier cron :
 
 1. Exécutez les traitements cron Commerce :
 
-   ```bash
+   ```shell
    bin/magento cron:run
    ```
 
@@ -215,7 +215,7 @@ Pour vérifier cron :
 
       Le résultat doit être similaire à ce qui suit :
 
-      ```
+      ```text
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
       | schedule_id | job_code       | status  | messages | created_at        | scheduled_at        | executed_at         | finished_at     |
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
@@ -228,13 +228,13 @@ Pour vérifier cron :
 
 1. (Facultatif) Vérifiez que les messages sont écrits dans le journal système de Commerce :
 
-   ```bash
+   ```shell
    cat /var/www/html/magento2/var/log/system.log
    ```
 
    Vous devriez voir une ou plusieurs entrées comme celle-ci :
 
-   ```
+   ```text
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 
@@ -283,7 +283,7 @@ Pour vérifier votre groupe cron personnalisé :
 
 1. Exécutez les tâches cron Commerce pour votre groupe personnalisé :
 
-   ```bash
+   ```shell
    php /var/www/html/magento2/bin/magento cron:run --group="custom_crongroup"
    ```
 
@@ -291,7 +291,7 @@ Pour vérifier votre groupe cron personnalisé :
 
 1. Nettoyez le cache :
 
-   ```bash
+   ```shell
    php /var/www/html/magento2/bin/magento cache:clean
    ```
 

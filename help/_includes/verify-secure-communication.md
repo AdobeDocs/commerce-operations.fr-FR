@@ -1,5 +1,5 @@
 ---
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 1%
@@ -16,19 +16,19 @@ Cette section présente deux façons de vérifier que l’authentification HTTP 
 
 Saisissez la commande suivante :
 
-```bash
+```shell
 curl -i http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 ```
 
 Par exemple, si vous saisissez la commande sur le serveur du moteur de recherche et que votre proxy utilise le port 8080 :
 
-```bash
+```shell
 curl -i http://localhost:8080/_cluster/health
 ```
 
 Le message suivant s’affiche pour indiquer que l’authentification a échoué :
 
-```
+```text
 HTTP/1.1 401 Unauthorized
 Date: Tue, 23 Feb 2016 20:35:29 GMT
 Content-Type: text/html
@@ -45,19 +45,19 @@ WWW-Authenticate: Basic realm="Restricted"
 
 Essayez maintenant la commande suivante :
 
-```bash
+```shell
 curl -i -u <username>:<password> http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 ```
 
 Par exemple :
 
-```bash
+```shell
 curl -i -u magento_elasticsearch:mypassword http://localhost:8080/_cluster/health
 ```
 
 Cette fois, la commande réussit avec un message similaire à celui-ci :
 
-```
+```text
 HTTP/1.1 200 OK
 Date: Tue, 23 Feb 2016 20:38:03 GMT
 Content-Type: application/json; charset=UTF-8

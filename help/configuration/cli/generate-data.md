@@ -3,9 +3,9 @@ title: Générer des données pour les tests de performance
 description: Découvrez comment générer de grandes quantités de données pour les tests de performance Adobe Commerce. Découvrez les profils de génération de données et les stratégies de test.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '775'
 ht-degree: 9%
 
 ---
@@ -52,11 +52,11 @@ Le tableau suivant fournit des détails sur les profils du générateur de donn�
 >
 >Si vous envisagez d’implémenter les événements avec [!DNL Adobe I/O Events for Adobe Commerce] lors du test des performances, exécutez cette commande avant d’y abonner des [événements](https://developer.adobe.com/commerce/extensibility/events/). L’abonnement préalable aux événements peut entraîner des erreurs.
 
-Exécutez la commande comme décrit dans cette section. Une fois la commande exécutée, vous devez [&#x200B; réindexer tous les indexeurs &#x200B;](../cli/manage-indexers.md).
+Exécutez la commande comme décrit dans cette section. Une fois la commande exécutée, vous devez [ réindexer tous les indexeurs ](../cli/manage-indexers.md).
 
 Options de commande :
 
-```bash
+```shell
 bin/magento setup:perf:generate-fixtures <path-to-profile>
 ```
 
@@ -64,13 +64,13 @@ Où `<path-to-profile>` spécifie le chemin d’accès absolu au système de fic
 
 Par exemple,
 
-```bash
+```shell
 bin/magento setup:perf:generate-fixtures /var/www/html/magento2/setup/performance-toolkit/profiles/ce/small.xml
 ```
 
 Exemple de sortie pour le petit profil :
 
-```
+```text
 Generating profile with following params:
     |- Websites: 1
     |- Store Groups Count: 1

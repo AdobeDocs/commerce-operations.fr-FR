@@ -2,9 +2,9 @@
 title: Désactiver la sortie du module
 description: Découvrez comment désactiver la sortie du module dans Adobe Commerce sans supprimer les dépendances. Découvrez les étapes de configuration et les cas pratiques.
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -32,10 +32,10 @@ La désactivation de Output est effectuée dans les classes suivantes :
 
 Pour désactiver la sortie du module dans le déploiement du pipeline ou tout autre déploiement, avec plusieurs instances de l’application Commerce :
 
-1. Modifiez le fichier `Backend` du module `config.xml`.
+1. Modifiez le fichier `config.xml` du module `Backend`.
 1. Exportez les modifications de configuration.
 
-### Modifier le fichier `Backend` du module `config.xml`
+### Modifier le fichier `config.xml` du module `Backend`
 
 1. Archivez le fichier `config.xml` d’origine.
 1. Ajoutez au fichier `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml` des lignes similaires aux suivantes, directement sous l’élément `<default>` :
@@ -60,7 +60,7 @@ Suite à cet exemple de configuration, les clients ne peuvent plus s’inscrire 
 
 Exécutez la commande suivante pour exporter les modifications de configuration :
 
-```bash
+```shell
 bin/magento app:config:dump
 ```
 
@@ -68,11 +68,11 @@ Les résultats sont écrits dans le fichier `<Magento_install_dir>/app/etc/confi
 
 Ensuite, effacez le cache pour activer le nouveau paramètre :
 
-```bash
+```shell
 bin/magento cache:clean config
 ```
 
-Voir [&#x200B; Exporter la configuration &#x200B;](../cli/export-configuration.md).
+Voir [ Exporter la configuration ](../cli/export-configuration.md).
 
 ## Désactiver la sortie du module dans un déploiement simple
 

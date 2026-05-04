@@ -4,13 +4,13 @@ description: Appliquez le correctif ACSD-57477 pour résoudre le problème d’A
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 00fce49fbe5432a16324937e0430a08ec7c41188
+exl-id: 3944b4d4-09c0-49a4-9a7e-8e1758d9d73c
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-57477 : le traitement des règles de vente ralentit les performances des requêtes liées au panier
 
@@ -28,7 +28,7 @@ Le correctif ACSD-57477 corrige le problème en raison duquel le traitement des 
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -39,13 +39,13 @@ Le traitement des règles de vente ralentit les performances des requêtes liée
 1. Ajoutez 1 000 attributs de produit.
 1. Créez un panier à l’aide de la requête GraphQL ci-dessous.
 
-   ```
+   ```graphql
    mutation {createEmptyCart}{noformat}
    ```
 
 1. Ajoutez un produit au panier à l’aide de la requête GraphQL ci-dessous.
 
-   ```
+   ```graphql
    mutation AddProductsToCart($cartId: String!, $products: [CartItemInput!]!) {
        addProductsToCart(cartId: $cartId, cartItems: $products) {
          cart {
@@ -59,7 +59,7 @@ Le traitement des règles de vente ralentit les performances des requêtes liée
 
 1. Définissez ces variables.
 
-   ```
+   ```json
    {
      "cartId": "id_here",
      "products": [
@@ -75,7 +75,7 @@ Le traitement des règles de vente ralentit les performances des requêtes liée
 1. Ce problème se produit uniquement lorsque vous envoyez les paramètres sous forme de variables GraphQL. Si vous incluez les paramètres dans la requête GraphQL elle-même, ce problème ne se produit pas.
 1. Envoyez la même requête **Ajouter au panier** après l’ajout de paramètres dans la requête GraphQL elle-même.
 
-   ```
+   ```graphql
    mutation {
     addProductsToCart(
       cartId: "id_here"
@@ -109,7 +109,7 @@ Les performances de l’opération GraphQL `AddProductsToCart` se dégradent, ca
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool]
-* Adobe Commerce sur les infrastructures cloud : [&#x200B; Mises à niveau et correctifs > Appliquer des correctifs &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [ Mises à niveau et correctifs > Appliquer des correctifs ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

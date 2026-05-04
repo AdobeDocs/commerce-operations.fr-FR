@@ -4,13 +4,13 @@ description: Appliquez le correctif ACSD-56226 pour résoudre le problème d’A
 feature: System
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: a45cef14b7b37f1112d2ef82adf29b09d63b8e2b
+exl-id: 5ad0e884-decb-4e09-b5b3-b38a9953a4b8
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-56226 : les requêtes de LECTURE renvoient des données obsolètes avec l’option `synchronous_replication` activée
 
@@ -28,7 +28,7 @@ Le correctif ACSD-56226 corrige le problème où les requêtes READ renvoient de
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -39,7 +39,7 @@ Les requêtes READ renvoient des données obsolètes lorsque l’indicateur `syn
 1. Définissez `MYSQL_USE_SLAVE_CONNECTION` sur *true* dans les variables d’environnement d’Adobe Commerce sur l’infrastructure cloud.
 1. Ajoutez la configuration suivante à `.magento.env.yaml` pour définir `synchronous_replication` sur *false* :
 
-   ```
+   ```text
    DATABASE_CONFIGURATION:
      _merge: true
      slave_connection:
@@ -62,7 +62,7 @@ La connexion esclave est désactivée lorsque `synchronous_replication` est déf
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

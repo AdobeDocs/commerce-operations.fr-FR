@@ -2,9 +2,9 @@
 title: Définir le mode de fonctionnement
 description: Découvrez comment définir des modes de fonctionnement Adobe Commerce entre le développement et la production. Découvrez les commandes de changement de mode et leurs implications en matière de sécurité.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Le mode de production offre de meilleures performances car les fichiers d’affi
 
 Lorsque vous passez en mode de développement ou de production, nous effaçons le contenu des répertoires suivants :
 
-```
+```text
 var/cache
 generated/metadata
 generated/code
@@ -48,13 +48,13 @@ Pour ce faire, le plus simple consiste à exécuter cette commande en tant que [
 
 Utilisation des commandes :
 
-```bash
+```shell
 bin/magento deploy:mode:show
 ```
 
 Un message similaire au suivant s’affiche :
 
-```
+```text
 Current application mode: {mode}. (Note: Environment variables may override this value.)
 ```
 
@@ -66,7 +66,7 @@ où :
 
 Utilisation des commandes :
 
-```bash
+```shell
 bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 ```
 
@@ -80,13 +80,13 @@ Des exemples suivent.
 
 ### Passage en mode de production
 
-```bash
+```shell
 bin/magento deploy:mode:set production
 ```
 
 Des messages similaires à ce qui suit s’affichent :
 
-```
+```text
 Enabled maintenance mode
 Requested languages: en_US
 === frontend -> Magento/luma -> en_US ===
@@ -131,31 +131,31 @@ Lorsque vous passez du mode de production au mode de développement, vous devez 
 
 1. Si vous passez du mode production au mode développement, supprimez le contenu des répertoires `generated/code` et `generated/metadata` :
 
-   ```bash
+   ```shell
    rm -rf <magento_root>/generated/metadata/* <magento_root>/generated/code/*
    ```
 
 1. Définissez le mode :
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set developer
    ```
 
    Le message suivant s’affiche :
 
-   ```
+   ```text
    Enabled developer mode.
    ```
 
 ### Passer en mode par défaut
 
-```bash
+```shell
 bin/magento deploy:mode:set default
 ```
 
 Le message suivant s’affiche :
 
-```
+```text
 Enabled default mode.
 ```
 

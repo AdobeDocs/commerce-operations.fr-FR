@@ -2,9 +2,9 @@
 title: Commandes communes
 description: Découvrez les commandes d’interface de ligne de commande Adobe Commerce courantes et leurs exemples d’utilisation. Découvrez les outils de ligne de commande essentiels au développement et à l’administration.
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ Voici un résumé de certaines des commandes disponibles.
 
 **Pour afficher la liste complète des commandes** :
 
-```bash
+```shell
 bin/magento list
 ```
 
 Exemple de commande d’aide :
 
-```bash
+```shell
 bin/magento help <command>
 ```
 
-```bash
+```shell
 bin/magento help cache:enable
 ```
 
@@ -47,7 +47,7 @@ Les commandes sont présentées sous forme de résumé uniquement ; pour plus d&
 | [`magento sampledata:install`](../../installation/sample-data/overview.md) | Installe des données d’exemple facultatives après l’installation de l’application Commerce.<br><br>Pour plus d’informations sur les données d’exemple, voir [Données d’exemple facultatives](../../installation/sample-data/overview.md). |
 | [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | Gère les configurations du serveur principal |
 | [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | Crée/modifie/déverrouille les utilisateurs administrateurs. |
-| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | Active/désactive les indications du modèle de développement. |
+| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug) | Active/désactive les indications du modèle de développement. |
 
 ## Arguments courants
 

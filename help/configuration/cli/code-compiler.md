@@ -2,9 +2,9 @@
 title: Compilateur de code
 description: Découvrez comment exécuter le compilateur de code Adobe Commerce à partir de la ligne de commande. Découvrez les processus de compilation et les techniques d’optimisation.
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -22,15 +22,15 @@ La compilation de code comprend les éléments suivants (dans un ordre particuli
 - Génération du code des référentiels (code généré pour les API)
 - Génération des attributs de données de service (classes d’extension générées pour les objets de données)
 
-Vous trouverez des classes de compilation de code dans l’espace de noms [\Magento\Setup\Module\Di\App\Task\Operation](https://github.com/magento/magento2/blob/2.4.8/setup/src/Magento/Setup/Module/Di/App/Task/Operation).
+Vous trouverez des classes de compilation de code dans l’espace de noms [](https://github.com/magento/magento2/blob/2.4.8/setup/src/Magento/Setup/Module/Di/App/Task/Operation).
 
 Pour exécuter le compilateur à client(e) unique :
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
-```
+```text
 Generated code and dependency injection configuration successfully.
 ```
 
@@ -40,7 +40,7 @@ Dans certains cas, il se peut que vous souhaitiez compiler le code avant d’ins
 
 1. Activez les modules.
 
-   ```bash
+   ```shell
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
@@ -50,11 +50,11 @@ Dans certains cas, il se peut que vous souhaitiez compiler le code avant d’ins
 
 1. Compilez le code.
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
-   ```
+   ```text
    Generated code and dependency injection configuration successfully.
    ```
 

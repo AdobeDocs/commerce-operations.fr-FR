@@ -3,9 +3,9 @@ title: Configurer le compartiment AWS S3 pour le stockage distant
 description: Configurez votre projet Commerce pour utiliser le service de stockage AWS S3 pour le stockage distant.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -28,19 +28,19 @@ Le [service Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3
 
 1. Désactivez le stockage de base de données par défaut.
 
-   ```bash
+   ```shell
    bin/magento config:set system/media_storage_configuration/media_database 0
    ```
 
-1. Configurez Commerce pour utiliser le compartiment privé. Pour obtenir une liste complète des paramètres[&#x200B; consultez la section &#x200B;](remote-storage.md#remote-storage-options) Options de stockage distant .
+1. Configurez Commerce pour utiliser le compartiment privé. Pour obtenir une liste complète des paramètres](remote-storage.md#remote-storage-options) consultez la section [ Options de stockage distant .
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
    ```
 
 1. Synchronisez les fichiers multimédias avec le stockage distant.
 
-   ```bash
+   ```shell
    bin/magento remote-storage:sync
    ```
 

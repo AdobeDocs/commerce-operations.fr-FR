@@ -5,9 +5,9 @@ role: Admin, Developer
 feature: B2B
 type: Troubleshooting
 exl-id: e470078b-dd10-4b0b-a489-bc88f025fded
-source-git-commit: 3337907b1893260d6cb18b1c4fbf45dfa1f3d6d5
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '425'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Le correctif ACSD-66311 corrige le problème en raison duquel la grille de soci�
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -56,7 +56,7 @@ La grille des sociétés se charge lentement pour les utilisateurs administrateu
 
    1. Exécutez la requête suivante pour vérifier la distribution :
 
-      ```
+      ```sql
            SELECT website_id, COUNT(*) 
            FROM customer_entity 
            GROUP BY website_id; 
@@ -67,12 +67,12 @@ La grille des sociétés se charge lentement pour les utilisateurs administrateu
       | Nombre de clients | Nombre d&#39;entreprises |
       |---------------------|---------------------|
       | 1 | 4 500 |
-      | 2 | ~1 000 |
+      | 2 | ~1,000 |
       | ~595 k | 1 |
 
    1. Exécutez la requête suivante pour vérifier la distribution :
 
-      ```
+      ```sql
             SELECT customer_count, COUNT(*) AS number_of_companies
             FROM (
               SELECT company_id, COUNT(customer_id) AS customer_count
@@ -100,7 +100,7 @@ Le chargement de la page prend plus de 14 minutes.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

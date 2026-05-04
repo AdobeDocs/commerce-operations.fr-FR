@@ -3,9 +3,9 @@ title: Gestion des modules et des extensions (développeur)
 description: Gérez les modules et les extensions Adobe Commerce à l’aide de l’interface de ligne de commande et du gestionnaire de packages du compositeur.
 feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '132'
 ht-degree: 3%
 
 ---
@@ -24,13 +24,13 @@ Les options disponibles sont les suivantes :
 
 Utilisation des commandes :
 
-```bash
+```shell
 composer show --all <vendor>/<name>
 ```
 
 Par exemple :
 
-```bash
+```shell
 composer show --all example/module
 ```
 
@@ -38,13 +38,13 @@ composer show --all example/module
 
 Utilisation des commandes :
 
-```bash
+```shell
 composer require <vendor>/<name>:<version>
 ```
 
 Par exemple :
 
-```bash
+```shell
 composer require example/module:1.0.0
 ```
 
@@ -67,7 +67,7 @@ Patientez pendant que le compositeur met à jour les dépendances et installe le
 
 1. Résolvez les dépendances et écrivez les versions exactes dans le fichier `composer.lock`.
 
-   ```bash
+   ```shell
    composer update
    ```
 

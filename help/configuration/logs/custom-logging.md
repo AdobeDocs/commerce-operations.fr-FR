@@ -1,11 +1,11 @@
 ---
 title: Journalisation personnalisée
-description: Découvrez comment rechercher des erreurs à l’aide de la journalisation personnalisée.
+description: Découvrez comment enquêter sur les erreurs à l’aide de la journalisation basée sur des fichiers personnalisés dans Adobe Commerce, y compris des considérations sur la conformité à la norme PSR-3 et la journalisation centralisée.
 feature: Configuration, Logs
 exl-id: 6c94ebcf-70df-4818-a17b-32512eba516d
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---

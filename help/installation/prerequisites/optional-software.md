@@ -2,9 +2,9 @@
 title: Logiciels en option
 description: En savoir plus sur les logiciels en option que vous pouvez installer pour prendre en charge les installations sur site d’Adobe Commerce.
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Si vous déployez Adobe Commerce sur plusieurs hôtes, NTP est un moyen simple d
 
 Saisissez la commande suivante pour installer NTP :
 
-```bash
+```shell
 apt-get install ntp
 ```
 
@@ -37,7 +37,7 @@ Pour installer et configurer NTP :
 
 1. Saisissez la commande suivante pour trouver le logiciel NTP approprié :
 
-   ```bash
+   ```shell
    yum search ntp
    ```
 
@@ -45,13 +45,13 @@ Pour installer et configurer NTP :
 
 1. Installez le package .
 
-   ```bash
+   ```shell
    yum -y install ntp.x86_64
    ```
 
 1. Saisissez la commande suivante afin que NTP démarre au démarrage du serveur.
 
-   ```bash
+   ```shell
    chkconfig ntpd on
    ```
 
@@ -128,7 +128,7 @@ Si une erreur 404 (Introuvable) s’affiche, vérifiez les points suivants :
 
   [Aide pour Ubuntu](https://help.ubuntu.com/community/UFW)
 
-  [Aide de CentOS](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)
+  [Aide pour CentOS](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)
 
 ## phpMyAdmin
 

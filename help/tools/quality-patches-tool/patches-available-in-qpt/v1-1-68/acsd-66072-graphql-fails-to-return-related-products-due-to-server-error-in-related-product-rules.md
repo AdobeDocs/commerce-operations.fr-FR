@@ -5,9 +5,9 @@ feature: GraphQL, Products
 role: Admin, Developer
 type: Troubleshooting
 exl-id: a706a710-aed3-41a4-bc87-3150e9ba95f7
-source-git-commit: 8bb921704239d2b4622931a7814759bda5e9401f
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Le correctif ACSD-66072 corrige le problème où les produits associés ne sont 
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -46,22 +46,22 @@ Les produits associés ne sont pas renvoyés via GraphQL dans la page Détails d
 
 1. Accédez à **[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Related Products Rule]**, puis créez une règle avec les paramètres suivants :
 
-   * **[!UICONTROL Priority]** : 1
-   * **[!UICONTROL Applies To]** : **[!UICONTROL Related Products]**
-   * **[!UICONTROL Result Limit]** : 10
-   * **[!UICONTROL Products to Match]** : **[!UICONTROL Attribute Set is Default]**
-   * **[!UICONTROL Products to Display]** : `Product Category is the Same as Matched Product Categories`
+   * **[!UICONTROL Priority]**: 1
+   * **[!UICONTROL Applies To]**: **[!UICONTROL Related Products]**
+   * **[!UICONTROL Result Limit]**: 10
+   * **[!UICONTROL Products to Match]**: **[!UICONTROL Attribute Set is Default]**
+   * **[!UICONTROL Products to Display]**: `Product Category is the Same as Matched Product Categories`
 
 1. Exécutez les commandes de l’interface de ligne de commande Magento suivantes :
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex
    bin/magento cache:clean
    ```
 
 1. Envoyez une requête POST à `../graphql` avec la payload suivante :
 
-   ```
+   ```graphql
    query getRelatedProductsForProductPage($urlKey: String!) 
    {
        products(filter: { url_key: { eq: $urlKey } }) 
@@ -172,7 +172,7 @@ La requête renvoie le produit associé (`config1`).
 
 Le fichier `var/log/exception.log` contient :
 
-```
+```text
 report.ERROR: Deprecated Functionality: explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/magento2ee/app/code/Magento/TargetRule/Model/ResourceModel/Index.php on line 557
 ```
 
@@ -181,7 +181,7 @@ report.ERROR: Deprecated Functionality: explode(): Passing null to parameter #2 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

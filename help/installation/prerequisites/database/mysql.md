@@ -2,9 +2,9 @@
 title: Instructions MySQL
 description: Pour installer et configurer MySQL et MariaDB pour les installations sur site d’Adobe Commerce, procédez comme suit.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Adobe _fortement_ vous recommande de respecter la norme suivante lors de la conf
 
 Adobe Commerce 2.4 prend en charge différentes versions de MySQL 8 en fonction de la version que vous installez. Utilisez une version répertoriée dans [Configuration requise](../../system-requirements.md), puis suivez les liens ci-dessous pour obtenir des instructions sur l’installation de MySQL sur votre ordinateur.
 
-* [&#x200B; Ubuntu &#x200B;](https://ubuntu.com/server/docs/databases-mysql/)
+* [Ubuntu](https://ubuntu.com/server/docs/databases-mysql/)
 * [CentOS](https://dev.mysql.com/doc/refman/8.4/en/linux-installation-yum-repo.html)
 
 Si vous prévoyez d’importer un grand nombre de produits, vous pouvez augmenter la valeur de [`max_allowed_packet`](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_max_allowed_packet) à une valeur supérieure à la valeur par défaut, à savoir 16 Mo.
@@ -49,7 +49,7 @@ Pour vérifier éventuellement la valeur que vous définissez, saisissez la comm
 SHOW VARIABLES LIKE 'max_allowed_packet';
 ```
 
-Ensuite, [&#x200B; Configurer l’instance de base de données &#x200B;](#configuring-the-database-instance).
+Ensuite, [ Configurer l’instance de base de données ](#configuring-the-database-instance).
 
 ## Modifications de MySQL 8
 
@@ -79,7 +79,7 @@ Décrire admin_user dans mysql 8.19
 
 À l&#39;exception de _TINYINT(1)_, toute marge intérieure entière (TINYINT > 1, SMALLINT, MEDIUMINT, INT, BIGINT) doit être supprimée du fichier `db_schema.xml`.
 
-Pour plus d’informations, voir [https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature).
+Pour plus d’informations, voir [](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature).
 
 ### Comportement par défaut d’ORDER BY
 
@@ -106,13 +106,13 @@ Pour mettre correctement à jour MySQL de la version 5.7 à la version 8, vous d
 Testez tout et assurez-vous que votre système fonctionne comme prévu.
 1. Activez le mode de maintenance :
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Effectuez une sauvegarde de la base de données :
 
-   ```bash
+   ```shell
    bin/magento setup:backup --db
    ```
 
@@ -120,13 +120,13 @@ Testez tout et assurez-vous que votre système fonctionne comme prévu.
 1. Importez les données sauvegardées dans MySQL.
 1. Nettoyez le cache :
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Désactivez le mode de maintenance :
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
@@ -139,7 +139,7 @@ Pour configurer une instance de base de données MySQL, procédez comme suit :
 1. Connectez-vous à votre serveur de base de données en tant qu&#39;utilisateur.
 1. Accédez à une invite de commande MySQL :
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -166,7 +166,7 @@ Pour configurer une instance de base de données MySQL, procédez comme suit :
 
 1. Vérifiez la base de données :
 
-   ```bash
+   ```shell
    mysql -u magento -p
    ```
 
@@ -176,18 +176,18 @@ Pour configurer une instance de base de données MySQL, procédez comme suit :
 
    Nous vous recommandons de configurer votre instance de base de données en fonction de votre activité. Lors de la configuration de votre base de données, tenez compte des points suivants :
 
-   * Les indexeurs nécessitent des valeurs de `tmp_table_size` et de `max_heap_table_size` plus élevées (par exemple, 64 millions). Si vous configurez le paramètre `batch_size`, vous pouvez ajuster cette valeur ainsi que les paramètres de taille de la table pour améliorer les performances de l’indexeur. Pour plus d’informations[&#x200B; consultez le &#x200B;](../../../performance/configuration.md) Guide d’optimisation .
+   * Les indexeurs nécessitent des valeurs de `tmp_table_size` et de `max_heap_table_size` plus élevées (par exemple, 64 millions). Si vous configurez le paramètre `batch_size`, vous pouvez ajuster cette valeur ainsi que les paramètres de taille de la table pour améliorer les performances de l’indexeur. Pour plus d’informations](../../../performance/configuration.md) consultez le [ Guide d’optimisation .
 
    * Pour des performances optimales, assurez-vous que toutes les tables d’index MySQL et Adobe Commerce peuvent être conservées en mémoire (par exemple, configurez `innodb_buffer_pool_size`).
 
-   * La réindexation sur MariaDB 10.4 prend plus de temps que les autres versions de MariaDB ou MySQL. Voir [&#x200B; Bonnes pratiques de configuration &#x200B;](../../../performance/configuration.md#indexers).
+   * La réindexation sur MariaDB 10.4 prend plus de temps que les autres versions de MariaDB ou MySQL. Voir [ Bonnes pratiques de configuration ](../../../performance/configuration.md#indexers).
 
 1. Pour que les champs de `TIMESTAMP` MySQL suivent les préférences et la composition attendues par l’architecture de schéma déclaratif de l’application, la variable système `explicit_defaults_for_timestamp` doit être définie sur `on`.
 
    Références :
 
    * [MySQL 8.4](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_explicit_defaults_for_timestamp)
-   * [&#x200B; MariaDB &#x200B;](https://mariadb.com/docs/server/server-management/variables-and-modes/server-system-variables#explicit_defaults_for_timestamp)
+   * [MariaDB](https://mariadb.com/docs/server/server-management/variables-and-modes/server-system-variables#explicit_defaults_for_timestamp)
 
    Si ce paramètre n’est pas activé, `bin/magento setup:db:status` signale toujours que le `Declarative Schema is not up to date`.
 

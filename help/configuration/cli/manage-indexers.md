@@ -2,9 +2,9 @@
 title: Gestion des indexeurs
 description: Découvrez comment afficher et gérer les indexeurs Adobe Commerce à l’aide d’outils de ligne de commande. Découvrez les commandes de l’indexeur, la vérification de l’état et les techniques de réindexation.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: ed21cbaf145493614d274da6eee41f6b1ae39ff2
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '1025'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> Les commerçants Adobe Commerce qui utilisent Live Search, Catalog Service ou Product Recommendations ont la possibilité d’utiliser l’indexation de prix [basée sur SaaS](https://experienceleague.adobe.com/fr/docs/commerce/price-indexer/price-indexing).
+> Les commerçants Adobe Commerce qui utilisent Live Search, Catalog Service ou Product Recommendations ont la possibilité d’utiliser l’indexation de prix [basée sur SaaS](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing).
 
 ## Afficher le statut de l’indexeur
 
@@ -269,11 +269,11 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8 et versions ultérieures** : l’indexeur de [!DNL Customer Grid] prend en charge les modes [!UICONTROL Update on Save] et [!UICONTROL Update by Schedule], et la valeur par défaut est [!UICONTROL Update by Schedule].
 >
->Voir [Bonnes pratiques pour la configuration de l’indexeur](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) dans le _Guide d’implémentation_.
+>Voir [Bonnes pratiques pour la configuration de l’indexeur](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) dans le _Guide d’implémentation_.
 
 >[!INFO]
 >
->Avant de changer de mode d’indexation, définissez votre site web sur le mode [maintenance](../../installation/tutorials/maintenance-mode.md) et [désactivez les tâches cron](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property). Vous éviterez ainsi les verrous de base de données.
+>Avant de changer de mode d’indexation, définissez votre site web sur le mode [maintenance](../../installation/tutorials/maintenance-mode.md) et [désactivez les tâches cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property). Vous éviterez ainsi les verrous de base de données.
 
 Pour spécifier la configuration de l’indexeur :
 
@@ -295,7 +295,7 @@ bin/magento indexer:set-mode schedule catalog_category_product catalog_product_c
 
 Exemple de résultat :
 
-```
+```text
 Index mode for Indexer Category Products was changed from 'Update on Save' to 'Update by Schedule'
 Index mode for Indexer Product Categories was changed from 'Update on Save' to 'Update by Schedule'
 ```
@@ -327,7 +327,7 @@ bin/magento indexer:set-status suspended catalog_category_product catalog_produc
 
 Exemple de résultat :
 
-```
+```text
 Index status for Indexer 'Category Products' was changed from 'valid' to 'suspended'.
 Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspended'.
 ```

@@ -3,9 +3,9 @@ title: Moteur de recherche actuel non pris en charge
 description: Résolvez les problèmes liés à la mise à niveau d’Adobe Commerce après avoir rencontré une erreur sur un moteur de recherche non pris en charge.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Le message d’erreur suivant indique que la version d’Adobe Commerce à partir de laquelle vous effectuez la mise à niveau est configurée pour utiliser un moteur de recherche catalogue qui n’est pas pris en charge dans la version vers laquelle vous effectuez la mise à niveau :
 
-```
+```text
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
 ```
 
@@ -25,7 +25,7 @@ Cette erreur signifie que l’une des conditions suivantes est remplie sur la ve
 
 Utilisez la commande suivante pour vérifier le moteur de recherche actif :
 
-```bash
+```shell
 bin/magento config:show catalog/search/engine
 ```
 
@@ -35,11 +35,11 @@ L’erreur se produit si la valeur renvoyée est `mysql`, `elasticsearch` ou `el
 >
 >Si vous avez reçu cette erreur, votre installation est dans un état incohérent et vous ne pouvez pas accéder à l’administrateur. Nous vous recommandons de revenir à votre version précédente pendant que vous résolvez cette erreur. Pour ce faire, exécutez l’une des commandes suivantes :
 >
->```bash
+>```shell
 >composer require-commerce magento/product-enterprise-edition=<version>
 >```
 >
->```bash
+>```shell
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >

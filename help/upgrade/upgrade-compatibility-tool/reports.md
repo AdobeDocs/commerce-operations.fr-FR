@@ -1,10 +1,10 @@
 ---
 title: '[!DNL Upgrade Compatibility Tool] des rapports'
-description: Pour exécuter le sur votre projet Adobe Commerce [!DNL Upgrade Compatibility Tool]  procédez comme suit.
+description: Pour exécuter le sur votre projet  [!DNL Upgrade Compatibility Tool]  procédez comme suit.
 exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 Suite à l’analyse, l’[!DNL Upgrade Compatibility Tool] peut exporter un rapport contenant une liste des problèmes de chaque fichier en spécifiant sa gravité, son code d’erreur et sa description. Le [!DNL Upgrade Compatibility Tool] exporte le rapport dans deux formats différents :
 
 - Un [fichier JSON](reports.md#json-file).
-- Rapport HTML [&#128279;](reports.md#html-report).
+- Rapport HTML [](reports.md#html-report).
 
 Consultez l’exemple de rapport suivant d’interface de ligne de commande :
 
-```
+```text
 File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 ------------------------------------------------------------------
  * [WARNING][1131] Line 10: Extending from class 'Magento\Framework\App\Action\Action' that is @deprecated on version '2.4.4'
@@ -43,7 +43,7 @@ Ce rapport comprend également un résumé détaillé qui indique :
 
 Consultez l’exemple d’interface de ligne de commande suivant :
 
-```
+```text
  ----------------------------- ----------------- 
   Current version               2.4.1            
   Target version                2.4.4            
@@ -68,7 +68,7 @@ Pour chaque problème rencontré, le rapport fournit des informations détaillé
 
 Pour exporter ce fichier `JSON` vers un autre dossier de sortie :
 
-```bash
+```shell
 bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
 ```
 
@@ -88,7 +88,7 @@ Vous pouvez obtenir le rapport HTML lors de l’exécution de l’outil sur une 
 - Une liste des problèmes identifiés.
 - Résumé de l’analyse.
 
-![Rapport HTML - Résumé &#x200B;](../../assets/upgrade-guide/uct-html-summary.png)
+![Rapport HTML - Résumé ](../../assets/upgrade-guide/uct-html-summary.png)
 
 Vous pouvez facilement parcourir les problèmes identifiés lors de l’analyse de la [!DNL Upgrade Compatibility Tool].
 
@@ -121,7 +121,7 @@ Si vous souhaitez afficher des résultats différents pour le diagramme `Modules
 
 Pour exporter ce rapport HTML vers un autre dossier de sortie :
 
-```bash
+```shell
 bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
 ```
 

@@ -2,9 +2,9 @@
 title: Mise à niveau d’une installation basée sur Git
 description: Mettez à niveau une installation Adobe Commerce que vous avez clonée à partir d’un référentiel Git.
 exl-id: a8c42857-7221-4b21-8377-4bfb6308c418
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '118'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ Pour effectuer la mise à niveau si vous êtes un développeur contributeur :
 
 1. Créez une sauvegarde de votre fichier `composer.json`.
 
-   ```bash
+   ```shell
    cp composer.json composer.json.old
    ```
 
 1. Mettez à jour votre référentiel local pour obtenir le code le plus récent :
 
-   ```bash
+   ```shell
    git pull origin develop
    ```
 
@@ -39,19 +39,19 @@ Pour effectuer la mise à niveau si vous êtes un développeur contributeur :
 
 1. Résolvez les dépendances et écrivez les versions exactes dans le fichier `composer.lock`.
 
-   ```bash
+   ```shell
    composer update
    ```
 
 1. Mettez à jour la base de données :
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. Nettoyez le cache :
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 

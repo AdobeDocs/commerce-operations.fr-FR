@@ -2,9 +2,9 @@
 title: Définir les valeurs de configuration
 description: Découvrez comment définir des valeurs de configuration et modifier les valeurs d’administration verrouillées dans Adobe Commerce. Découvrez les commandes et techniques de configuration avancées.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 5e2d11330d3334df36ba8b3d176fbe2d8bfe0486
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Les codes d’étendue pour les sites web et les vues de magasin sont stockés d
 
 1. Connectez-vous à la base de données Commerce.
 
-   ```bash
+   ```shell
    mysql -u <Commerce database username> -p
    ```
 
@@ -98,7 +98,7 @@ Les codes d’étendue pour les sites web et les vues de magasin sont stockés d
 
    Voici un exemple de résultat :
 
-   ```
+   ```ini
    [mysql]> SELECT * FROM store_website;
    +------------+-------+--------------+------------+------------------+------------+
    | website_id | code  | name         | sort_order | default_group_id | is_default |
@@ -117,13 +117,13 @@ Les codes d’étendue pour les sites web et les vues de magasin sont stockés d
 
 **Pour définir des valeurs de configuration spécifiques au système** :
 
-```bash
+```shell
 bin/magento config:set [--scope="..."] [--scope-code="..."] [-le | --lock-env] [-lc | --lock-config] path value
 ```
 
 **Pour définir des valeurs de configuration sensibles** :
 
-```bash
+```shell
 bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path
 ```
 
@@ -161,19 +161,19 @@ Voici quelques exemples de définition d’une URL de base de magasin :
 
 Définissez l’URL de base de la portée par défaut :
 
-```bash
+```shell
 bin/magento config:set web/unsecure/base_url http://example.com/
 ```
 
 Définissez l’URL de base du site web `base` :
 
-```bash
+```shell
 bin/magento config:set --scope=websites --scope-code=base web/unsecure/base_url http://example2.com/
 ```
 
 Définissez l’URL de base de la vue de magasin `test` :
 
-```bash
+```shell
 bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url http://example3.com/
 ```
 
@@ -181,7 +181,7 @@ bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url ht
 
 Si vous utilisez l’option `--lock-env` comme suit, la commande enregistre la valeur de configuration dans `<Commerce base dir>/app/etc/env.php` et désactive le champ permettant de modifier cette valeur dans Admin.
 
-```bash
+```shell
 bin/magento config:set --lock-env --scope=stores --scope-code=default web/unsecure/base_url http://example3.com
 ```
 
@@ -193,7 +193,7 @@ Vous pouvez utiliser l’option `--lock-env` pour définir des valeurs de config
 
 Si vous utilisez l’option `--lock-config` comme suit, la valeur de configuration est enregistrée dans `<Commerce base dir>/app/etc/config.php`. Le champ permettant de modifier cette valeur dans l’Admin est désactivé.
 
-```bash
+```shell
 bin/magento config:set --lock-config --scope=stores --scope-code=default web/url/use_store 1
 ```
 
@@ -207,7 +207,7 @@ Vous pouvez utiliser `--lock-config` pour définir des valeurs de configuration 
 
 Options de commande :
 
-```bash
+```shell
 bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 ```
 
@@ -215,23 +215,23 @@ où
 
 - `--scope` est la portée de la configuration (par défaut, site web, magasin). La valeur par défaut est `default`
 - `--scope-code` est le code d’étendue de la configuration (code de site web ou code d’affichage du magasin)
-- `path` est le chemin de configuration au format first_part/second_part/third_part/etc (_obligatoire_)
+- `path` est le chemin de configuration au format first _part/second_ part/third_part/etc (_obligatoire_)
 
 >[!INFO]
 >
->La commande `bin/magento config:show` affiche les valeurs de toutes les [&#x200B; valeurs chiffrées &#x200B;](../reference/config-reference-sens.md) sous la forme d’une série d’astérisques : `**&#x200B;**&#x200B;**`.
+>La commande `bin/magento config:show` affiche les valeurs de toutes les [ valeurs chiffrées ](../reference/config-reference-sens.md) sous la forme d’une série d’astérisques : `******`.
 
 ### Exemples
 
 **Pour afficher toutes les configurations enregistrées** :
 
-```bash
+```shell
 bin/magento config:show
 ```
 
 Résultat :
 
-```
+```text
 web/unsecure/base_url - http://example.com/
 general/region/display_all - 1
 general/region/state_required - AT,BR,CA,CH,EE,ES,FI,LT,LV,RO,US
@@ -241,54 +241,54 @@ analytics/subscription/enabled - 1
 
 **Pour afficher toutes les configurations enregistrées pour le site web `base`** :
 
-```bash
+```shell
 bin/magento config:show --scope=websites --scope-code=base
 ```
 
 Résultat :
 
-```
+```text
 web/unsecure/base_url - http://example-for-website.com/
 general/region/state_required - AT,BR,CA
 ```
 
 **Pour afficher l’URL de base de la portée par défaut** :
 
-```bash
+```shell
 bin/magento config:show web/unsecure/base_url
 ```
 
 Résultat :
 
-```
+```text
 web/unsecure/base_url - http://example.com/
 ```
 
 **Pour afficher l’URL de base du site web `base`** :
 
-```bash
+```shell
 bin/magento config:show --scope=websites --scope-code=base web/unsecure/base_url
 ```
 
 Résultat :
 
-```
+```text
 web/unsecure/base_url - http://example-for-website.com/
 ```
 
 **Pour afficher l’URL de base du magasin de `default`** :
 
-```bash
+```shell
 bin/magento config:show --scope=stores --scope-code=default web/unsecure/base_url
 ```
 
 Résultat :
 
-```
+```text
 web/unsecure/base_url - http://example-for-store.com/
 ```
 
 >[!INFO]
 >
->Le code d’étendue peut uniquement inclure des lettres (a-z ou A-Z), des chiffres (0-9) et des traits de soulignement (_). En outre, le premier caractère doit être une lettre. Si des majuscules ou des majuscules sont utilisées lors de la création d’une vue de site web ou de boutique, en interne, la correspondance est insensible à la casse pour s’adapter au remplacement des paramètres de configuration par le biais de variables d’environnement. Voir [&#x200B; Utilisation de variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).
+>Le code d’étendue peut uniquement inclure des lettres (a-z ou A-Z), des chiffres (0-9) et des traits de soulignement (_). En outre, le premier caractère doit être une lettre. Si des majuscules ou des majuscules sont utilisées lors de la création d’une vue de site web ou de boutique, en interne, la correspondance est insensible à la casse pour s’adapter au remplacement des paramètres de configuration par le biais de variables d’environnement. Voir [ Utilisation de variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).
 

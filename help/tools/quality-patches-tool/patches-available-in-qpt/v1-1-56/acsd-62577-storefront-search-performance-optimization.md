@@ -5,9 +5,9 @@ feature: Search
 role: Admin, Developer
 exl-id: 211c1e3c-0739-4ff6-a25c-b27d335920d1
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Commerce (toutes les méthodes de déploiement) 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -39,7 +39,7 @@ Les tables `search_query` volumineuses ralentissent considérablement les recher
 1. Configurez Adobe Commerce Developer à l’aide de l’`small.xml` Performance Toolkit.
 1. Accédez à la ligne de commande SQL et supprimez la table `search_query` à l&#39;aide des commandes suivantes :
 
-   ```
+   ```text
    SET FOREIGN_KEY_CHECKS = 0;  
    DROP TABLE search_query;  
    SET FOREIGN_KEY_CHECKS = 1;  
@@ -48,7 +48,7 @@ Les tables `search_query` volumineuses ralentissent considérablement les recher
 1. Renseignez la table `search_query` avec un grand nombre d’enregistrements, par exemple : 4 millions d’enregistrements.
 1. Déclenchez la réindexation et videz les caches.
 
-   ```
+   ```shell
    bin/magento indexer:reindex  
    bin/magento c:c  
    bin/magento c:f  
@@ -56,7 +56,7 @@ Les tables `search_query` volumineuses ralentissent considérablement les recher
 
 1. Activez les journaux de débogage de la base de données :
 
-   ```
+   ```shell
    bin/magento dev:query-log:enable  
    ```
 
@@ -64,7 +64,7 @@ Les tables `search_query` volumineuses ralentissent considérablement les recher
    `http://your_magento_instance/default/catalogsearch/result/?q=test.`
 1. Vérifiez la `db.log` du temps d&#39;exécution de la requête pour le SQL suivant :
 
-   ```
+   ```sql
    SELECT COUNT(*) FROM (  
    SELECT DISTINCT `main_table`.`query_text`  
    FROM `search_query` AS `main_table`  
@@ -82,7 +82,7 @@ Le temps d’exécution de la requête est optimisé, ce qui entraîne une augme
 
 Le temps d’exécution de la requête augmente considérablement en raison d’une gestion inefficace de la grande table `search_query` :
 
-```
+```text
 TIME: 10.8520 seconds  
 ```
 
@@ -91,7 +91,7 @@ TIME: 10.8520 seconds
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

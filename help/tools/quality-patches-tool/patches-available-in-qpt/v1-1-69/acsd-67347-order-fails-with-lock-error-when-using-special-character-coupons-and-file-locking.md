@@ -4,13 +4,13 @@ description: Appliquez le correctif ACSD-67347 au problème Adobe Commerce où l
 feature: Checkout, Shopping Cart
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 1a48428efbb022b53320370f68691eaed44809b3
+exl-id: a439e163-8b09-456c-91bd-6ee67528744e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-67347 : la commande échoue avec l’erreur *Impossible d’acquérir un verrou* lors de l’utilisation de codes de coupon
 
@@ -28,7 +28,7 @@ Le correctif ACSD-67347 corrige le problème d’échec des commandes avec une e
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -39,7 +39,7 @@ Les commandes échouent avec l’erreur *Impossible d’acquérir un verrou* lor
 1. Installez 2.4-development.
 1. Définissez la configuration du verrouillage de fichier dans le fichier `env.php` :
 
-   ```
+   ```text
    'lock' => [
            'provider' => 'file',
            'config' => [
@@ -61,7 +61,7 @@ Les commandes sont passées avec succès car il n&#39;y a aucune restriction sur
 
 La commande ne peut pas être passée. L’erreur suivante s’affiche : *Impossible d’acquérir lock.*
 
-```
+```text
 File "/Users/test/sites/test/locks/coupon_code_123/abc" cannot be opened Warning!fopen(/Users/test/sites/test/locks/coupon_code_123/abc): Failed to open stream: No such file or directory
 ```
 
@@ -70,7 +70,7 @@ File "/Users/test/sites/test/locks/coupon_code_123/abc" cannot be opened Warning
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

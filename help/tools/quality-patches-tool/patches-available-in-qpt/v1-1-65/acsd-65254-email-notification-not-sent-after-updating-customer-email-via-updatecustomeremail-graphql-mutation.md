@@ -5,16 +5,16 @@ feature: GraphQL, User Account
 role: Admin, Developer
 type: Troubleshooting
 exl-id: a97daceb-98f6-4bb8-9847-692af700c0fd
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
 
 # ACSD-65254 : notification par e-mail non envoyée après la mise à jour de l’e-mail du client via `updateCustomerEmail` mutation [!DNL GraphQL]
 
-Le correctif ACSD-65254 corrige le problème en raison duquel les notifications par e-mail n’étaient pas envoyées aux clients après la mise à jour de leurs adresses e-mail sur leurs comptes à l’aide de la mutation `updateCustomerEmail` [!DNL GraphQL]. Ce correctif est disponible lorsque la version 1.1.65 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-65254. Notez que ce problème doit être résolu dans Adobe Commerce 2.4.9.
+Le correctif ACSD-65254 corrige le problème en raison duquel les notifications par e-mail n’étaient pas envoyées aux clients après la mise à jour de leurs adresses e-mail sur leurs comptes à l’aide de la mutation [!DNL GraphQL] `updateCustomerEmail`. Ce correctif est disponible lorsque la version 1.1.65 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-65254. Notez que ce problème doit être résolu dans Adobe Commerce 2.4.9.
 
 ## Produits et versions concernés
 
@@ -28,7 +28,7 @@ Le correctif ACSD-65254 corrige le problème en raison duquel les notifications 
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -38,7 +38,7 @@ Les notifications par e-mail n’étaient pas envoyées aux clients après la mi
 
 1. Créez un utilisateur à l’aide de la mutation suivante :
 
-   ```
+   ```graphql
    mutation {
        createCustomer(
            input: {
@@ -58,7 +58,7 @@ Les notifications par e-mail n’étaient pas envoyées aux clients après la mi
 
 1. Générez un jeton pour l’utilisateur ou l’utilisatrice créé(e) précédemment et utilisez-le comme jeton porteur :
 
-   ```
+   ```graphql
    mutation {
    generateCustomerToken(email: "test@test.com", password: "Admin@123") {
        token
@@ -68,7 +68,7 @@ Les notifications par e-mail n’étaient pas envoyées aux clients après la mi
 
 1. Essayez de mettre à jour l’e-mail de l’utilisateur créé précédemment à l’aide du dernier jeton du porteur créé :
 
-   ```
+   ```graphql
    mutation {
        updateCustomerEmail(email: "test+updated@test.com", password: "Admin@123") {
            customer {
@@ -91,7 +91,7 @@ Seul un e-mail d’abonnement est envoyé à la nouvelle adresse ; l’e-mail de
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

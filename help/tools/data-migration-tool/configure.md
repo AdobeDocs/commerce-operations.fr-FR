@@ -3,9 +3,9 @@ title: Configurez le  [!DNL Data Migration Tool]
 description: Découvrez les deux méthodes de configuration de pour transférer  [!DNL Data Migration Tool]  données entre Magento 1 et Magento 2.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -96,17 +96,17 @@ Avant de migrer des données, vous devez créer un module Magento 2.
 
    Par exemple, si vous migrez des `Magento 1.9.3.6 Community Edition` vers `Magento 2 Open Source` :
 
-   ```bash
+   ```shell
    cd <your Magento 2 install dir>
    ```
 
-   ```bash
+   ```shell
    cp vendor/magento/data-migration-tool/etc/opensource-to-opensource/1.9.3.6/config.xml.dist app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.3.6/config.xml
    ```
 
 1. Dans le fichier `config.xml`, vous devez définir les informations d&#39;accès aux bases de données M1 et M2 et à la clé de chiffrement.
 
-1. Si votre magasin M1 comporte des modifications personnalisées, vous devez mapper le reste de vos fichiers de configuration aux personnalisations de votre magasin Magento 1. Voir [&#x200B; Utilisation des fichiers de configuration et de mappage](#migration-config).
+1. Si votre magasin M1 comporte des modifications personnalisées, vous devez mapper le reste de vos fichiers de configuration aux personnalisations de votre magasin Magento 1. Voir [ Utilisation des fichiers de configuration et de mappage](#migration-config).
 
 ### Configuration de la migration dans `vendor` dossier
 
@@ -118,13 +118,13 @@ Pour configurer le [!DNL Data Migration Tool] pour la migration :
 
 1. Accédez au répertoire suivant :
 
-   ```bash
+   ```shell
    <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>
    ```
 
 1. Saisissez la commande suivante pour créer un `config.xml` à partir de l’exemple fourni :
 
-   ```bash
+   ```shell
    cp config.xml.dist config.xml
    ```
 
@@ -208,7 +208,7 @@ Pour utiliser les fichiers de mappage :
 
 1. Mettez à jour le chemin d’accès au fichier nouvellement copié dans le nœud `<options>` de `config.xml`. Le chemin d’accès mis à jour doit être l’un des suivants :
 
-   1. Chemin d’accès absolu au fichier, par exemple `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. Chemin d’accès absolu au fichier, par exemple g. `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. chemin d’accès relatif du module magento/data-migration-tool : `etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. Chemin d’accès au fichier relatif à la racine Magento : `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
 

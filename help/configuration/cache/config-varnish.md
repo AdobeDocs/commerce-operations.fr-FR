@@ -3,16 +3,16 @@ title: Configurer et utiliser le vernis
 description: Découvrez comment configurer et utiliser la mise en cache de vernis pour Adobe Commerce. Découvrez les techniques d’accélération HTTP, de stockage de fichiers et d’optimisation des performances.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
 
 # Configurer le vernis
 
-[Varnish Cache](https://varnish-cache.org) est un accélérateur d’applications web open source (également appelé _accélérateur HTTP_ ou _proxy inverse HTTP de mise en cache_). Varnish stocke (ou met en cache) des fichiers ou des fragments de fichiers en mémoire, ce qui permet à Varnish de réduire le temps de réponse et la consommation de bande passante du réseau pour les futures demandes équivalentes. Contrairement aux serveurs web Apache et Nginx, Varnish a été conçu pour être utilisé exclusivement avec le protocole HTTP.
+[Varnish Cache](https://www.varnish.org/) est un accélérateur d’applications web open source (également appelé _accélérateur HTTP_ ou _proxy inverse HTTP de mise en cache_). Varnish stocke (ou met en cache) des fichiers ou des fragments de fichiers en mémoire, ce qui permet à Varnish de réduire le temps de réponse et la consommation de bande passante du réseau pour les futures demandes équivalentes. Contrairement aux serveurs web Apache et Nginx, Varnish a été conçu pour être utilisé exclusivement avec le protocole HTTP.
 
 [Configuration requise](../../installation/system-requirements.md) répertorie les versions prises en charge de Vernis.
 
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Pour plus d&#39;informations sur le vernis, voir :
 
-- [Le Grand Vernis](https://www.varnish-cache.org/docs/trunk/users-guide/intro.html)
-- [Options de démarrage avec vernis](https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options)
-- [Vernis et performances de site web](https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance)
+- [Le Grand Tableau Verni](https://www.varnish.org/docs/users-guide/intro/#users-intro)
+- [Options de démarrage du vernis](https://www.varnish.org/docs/users-guide/running/#users-running)
+- [Vernis et performances de site web](https://www.varnish.org/docs/users-guide/performance/)
 
 ## Diagramme de topologie de vernis
 
@@ -69,7 +69,7 @@ Nous connaissons les problèmes suivants avec le vernis :
 
 - Erreur possible lors de l’installation de Commerce :
 
-  ```
+  ```text
   Error 503 Service Unavailable
   Service Unavailable
   XID: 303394517

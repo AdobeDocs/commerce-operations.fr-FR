@@ -4,13 +4,13 @@ description: Appliquez le correctif ACSD-65938 pour résoudre le problème d’A
 feature: Orders, Checkout
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: b688875cd0a7bfc07dba77254605e7055ae7cca4
+exl-id: a6e85c9a-cbf6-4b4a-927b-43ec2ce827fc
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65938 : e-mails de carte cadeau envoyés même lorsque la création de la facture a échoué
 
@@ -28,7 +28,7 @@ Le correctif ACSD-65938 résout un problème en raison duquel des e-mails de car
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -44,7 +44,7 @@ Des e-mails de carte cadeau ont été envoyés avant de confirmer que la facture
 6. Modifiez le `OrderRepository` pour simuler une exception lors du placement de la commande.
 7. Envoyez une requête POST à `rest/default/V1/order/<ORDER_ID>/invoice` avec la payload suivante :
 
-   ```
+   ```json
    {
      "capture": true,
      "notify": true
@@ -65,7 +65,7 @@ L’e-mail de carte cadeau est envoyé même si la création de la facture a éc
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

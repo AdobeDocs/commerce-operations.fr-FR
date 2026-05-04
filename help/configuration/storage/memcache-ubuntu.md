@@ -3,9 +3,9 @@ title: Configurer memcached sur Ubuntu
 description: Découvrez comment installer et configurer memcached sur Ubuntu pour la mise en cache Adobe Commerce. Découvrez les instructions de configuration et des conseils d’optimisation.
 feature: Configuration, Cache, Storage
 exl-id: 831193d2-3e81-472c-9b87-78a8d52959b4
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ L&#39;extension `memcache` actuellement _ne fonctionne pas_ avec PHP 7. Voir [Do
 
 1. En tant qu’utilisateur disposant de droits d’`root`, saisissez la commande suivante :
 
-   ```bash
+   ```shell
    apt-get -y update
    ```
 
-   ```bash
+   ```shell
    apt-get -y install php5-memcached memcached
    ```
 
@@ -53,7 +53,7 @@ L&#39;extension `memcache` actuellement _ne fonctionne pas_ avec PHP 7. Voir [Do
    1. Enregistrez vos modifications dans `memcached.conf` et quittez l’éditeur de texte.
    1. Redémarrez memcached.
 
-      ```bash
+      ```shell
       service memcached restart
       ```
 
@@ -130,7 +130,7 @@ Actualisez le navigateur. Le message devient `Successfully retrieved the data!`
 
 Enfin, vous pouvez afficher les clés memcache à l&#39;aide de Telnet :
 
-```bash
+```shell
 telnet localhost <memcache port>
 ```
 
@@ -142,7 +142,7 @@ stats items
 
 Le résultat est similaire à ce qui suit :
 
-```
+```text
 STAT items:2:number 1
 STAT items:2:age 106
 STAT items:2:evicted 0

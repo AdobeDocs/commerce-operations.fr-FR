@@ -2,9 +2,9 @@
 title: Configuration avancée
 description: Découvrez comment effectuer une configuration avancée pour Adobe Commerce. Découvrez les instructions détaillées et les exigences de configuration.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: da9ce645d4d32c1368da442d9bd260f5fb3cdb98
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Adobe Commerce prend en charge les files d’attente de messages implémentées 
 
 >[!WARNING]
 >
->La fonctionnalité de base de données partagée était [obsolète](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) dans la version 2.4.2 d’Adobe Commerce. Voir [Rétablir une base de données fractionnée en une seule base de données](../configuration/storage/revert-split-database.md).
+>La fonctionnalité de base de données partagée a été abandonnée dans la version 2.4.2 d’Adobe Commerce. Voir [Rétablir une base de données fractionnée en une seule base de données](../configuration/storage/revert-split-database.md).
 
 Adobe Commerce vous permet de configurer un stockage de base de données évolutif pour répondre aux besoins d’une entreprise en croissance. Vous pouvez configurer trois bases de données principales distinctes qui servent des domaines spécifiques :
 
@@ -68,13 +68,13 @@ Pour configurer des bases de données additionnelles, vous devez créer une base
 
 Pour la base de données du Principal de paiement
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote
 ```
 
 Base de données du Principal OMS
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales
 ```
 
@@ -86,7 +86,7 @@ Outre les bases de données principales, [!DNL Commerce] permet de configurer pl
 
 Vous pouvez ajouter une base esclave en exécutant la commande suivante :
 
-```bash
+```shell
 bin/magento setup:db-schema:add-slave
 ```
 

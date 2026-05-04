@@ -4,10 +4,10 @@ description: Découvrez les bonnes pratiques de configuration des blocs de conte
 role: Developer
 feature: Best Practices
 exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 1%
+source-wordcount: '210'
+ht-degree: 0%
 
 ---
 
@@ -31,4 +31,4 @@ Les sites dont les blocs de contenu privés contiennent les variables `_isScopeP
 ## Informations supplémentaires
 
 - [Contenu privé](../../../performance/configuration.md#client-side-optimization-settings)
-- [Les requêtes AJAX à débit élevé entraînent de faibles performances](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=fr)
+- [blocs pouvant être mis en cache et privés](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#cacheable-and-private-blocks) dans le _[!DNL Commerce PHP Extensions Guide]_

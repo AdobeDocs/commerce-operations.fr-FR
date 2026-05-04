@@ -3,9 +3,9 @@ title: Afficher ou modifier l’URI d’administration
 description: Pour afficher et modifier l’URI de votre application Adobe Commerce Admin, procédez comme suit.
 feature: Install, Configuration
 exl-id: 768f9ab4-7123-4460-9df8-a6c98ae55d95
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '91'
+source-wordcount: '99'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ Cette section explique comment utiliser la ligne de commande pour afficher l’i
 
 Options de commande :
 
-```bash
+```shell
 bin/magento info:adminuri
 ```
 
 Voici un exemple de résultat :
 
-```
+```text
 Admin Panel URI: /admin_1wgrah
 ```
 

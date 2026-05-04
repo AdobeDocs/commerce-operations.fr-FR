@@ -2,9 +2,9 @@
 title: Sauvegarde et restauration du système de fichiers, du support et de la base de données
 description: Pour sauvegarder et restaurer votre application Adobe Commerce, procédez comme suit.
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,20 @@ Après la sauvegarde, vous pouvez [restaurer](#rollback) plus tard.
 
 >[!TIP]
 >
->Pour les projets d’infrastructure cloud d’Adobe Commerce, voir [Snapshots et gestion des sauvegardes](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) dans le guide _Cloud_.
+>Pour les projets d’infrastructure cloud d’Adobe Commerce, voir [Snapshots et gestion des sauvegardes](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) dans le guide _Cloud_.
 
 ## Activer les sauvegardes
 
 La fonctionnalité de sauvegarde est désactivée par défaut. Pour l’activer, saisissez la commande d’interface de ligne de commande suivante :
 
-```bash
+```shell
 bin/magento config:set system/backup/functionality_enabled 1
 ```
 
 >[!WARNING]
 >
 >**Avis d’obsolescence :**
->&#x200B;>La fonctionnalité de sauvegarde est obsolète à partir des versions 2.1.16, 2.2.7 et 2.3.0. Nous vous recommandons d’étudier d’autres technologies de sauvegarde et outils de sauvegarde binaire (tels que Percona XtraBackup).
+>La fonctionnalité de sauvegarde est obsolète à partir des versions 2.1.16, 2.2.7 et 2.3.0. Nous vous recommandons d’étudier d’autres technologies de sauvegarde et outils de sauvegarde binaire (tels que Percona XtraBackup).
 
 ## Définir la limite des fichiers ouverts
 
@@ -54,7 +54,7 @@ Avant de poursuivre, si vous ne l’avez pas déjà fait, passez au [propriétai
 
 Commande :
 
-```bash
+```shell
 ulimit -s 65536
 ```
 
@@ -70,7 +70,7 @@ Pour définir éventuellement la valeur dans le shell Bash de l’utilisateur :
 1. Ouvrez `/home/<username>/.bashrc` dans un éditeur de texte.
 1. Ajoutez la ligne suivante :
 
-   ```bash
+   ```shell
    ulimit -s 65536
    ```
 
@@ -84,7 +84,7 @@ Pour définir éventuellement la valeur dans le shell Bash de l’utilisateur :
 
 Utilisation des commandes :
 
-```bash
+```shell
 bin/magento setup:backup [--code] [--media] [--db]
 ```
 
@@ -103,13 +103,13 @@ La commande effectue les tâches suivantes :
 
 Par exemple, pour sauvegarder le système de fichiers et la base de données :
 
-```bash
+```shell
 bin/magento setup:backup --code --db
 ```
 
 Des messages similaires à ce qui suit s’affichent :
 
-```
+```shell
 Enabling maintenance mode
 Code backup is starting...
 Code backup filename: 1434133011_filesystem.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
@@ -128,7 +128,7 @@ Cette section explique comment restaurer une sauvegarde que vous avez effectuée
 
 Pour trouver le nom de vos sauvegardes, saisissez :
 
-```bash
+```shell
 bin/magento info:backups:list
 ```
 
@@ -136,19 +136,19 @@ La première chaîne du nom du fichier de sauvegarde est la date et l’heure.
 
 Pour restaurer une sauvegarde précédente, saisissez :
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file="<name>"] [-m|--media-file="<name>"] [-d|--db-file="<name>"]
 ```
 
 Par exemple, pour restaurer une sauvegarde de média nommée `1440611839_filesystem_media.tgz`, saisissez
 
-```bash
+```shell
 bin/magento setup:rollback -m 1440611839_filesystem_media.tgz
 ```
 
 Des messages similaires à ce qui suit s’affichent :
 
-```
+```shell
 [SUCCESS]: Media rollback completed successfully.
 Please set file permission of bin/magento to executable
 Disabling maintenance mode

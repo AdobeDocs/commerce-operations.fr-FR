@@ -4,13 +4,13 @@ description: Appliquez le correctif ACSD-58131 pour résoudre le problème d’A
 feature: Media
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: b09749a1e56ab6a7b613135ca252fd69757669d0
+exl-id: 8fdca43d-b79f-4036-8694-de6fa1417a52
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58131 : l’ancienne galerie de médias ne parvient pas à charger les images en raison du fichier image de 0 octet
 
@@ -28,13 +28,13 @@ Le correctif ACSD-58131 corrige le problème où l’ancienne galerie de médias
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 Lorsqu’une image de 0 octet est placée dans le répertoire de la galerie multimédia, l’ancienne galerie multimédia ne parvient pas à effectuer le rendu des images. Le système mis à jour ignore désormais les fichiers 0 octet non valides, affiche les images valides comme prévu et consigne un avertissement pour chaque fichier non valide.
 
-```
+```text
 [2024-05-02T14:00:39.616459+00:00] report.WARNING: The image empty2.jpg is invalid and cannot be displayed in the gallery. [] []
 ```
 
@@ -60,7 +60,7 @@ La galerie de médias reste fonctionnelle même si une image de 0 octet (ou tout
 
 La galerie de médias ne parvient pas à charger les images du répertoire `wysiwyg` en raison d’une erreur critique consignée `var/log/system.log` :
 
-```
+```text
 [2024-03-22T05:00:55.100934+00:00] report.CRITICAL: Exception: Notice: getimagesizefromstring(): Error reading from ! in /app/project/vendor/magento/module-cms/Model/Wysiwyg/Images/Storage.php on line 426 in /app/project/vendor/magento/framework/App/ErrorHandler.php:62
 ```
 
@@ -69,7 +69,7 @@ La galerie de médias ne parvient pas à charger les images du répertoire `wysi
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

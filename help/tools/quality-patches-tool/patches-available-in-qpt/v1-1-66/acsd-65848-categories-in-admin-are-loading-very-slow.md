@@ -5,9 +5,9 @@ feature: Admin Workspace
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 0233db9b-86b1-4320-a566-7e7e207dab84
-source-git-commit: 1ccb4c1dda5141934e04509b27fdafbfdc436a15
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Le correctif ACSD-65848 corrige le problème en raison duquel le nombre total de
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -42,7 +42,7 @@ Le chargement de la page d’affichage/de modification de la catégorie Admin pr
    1. Ouvrez le profil `small.xml` et mettez-le à jour pour inclure 2 500 catégories et 250 000 produits (pour correspondre à la configuration du commerçant).
    1. Exécutez la commande suivante pour générer les fixations :
 
-      ```bash
+      ```shell
       bin/magento 
       setup:performance:generate-fixtures var/setup/performance-toolkit/profiles/ce/small.xml
       ```
@@ -62,7 +62,7 @@ Le chargement de la page d’affichage/de modification de la catégorie Admin pr
 1. Dans le panneau d’administration, créez une structure de catégorie plus profonde :
    * Déplacez la catégorie 2 sous la catégorie 1 pour l’imbriquer plus profondément dans l’arborescence.
 1. Essayez d’ouvrir une page de catégorie dans le panneau d’administration en utilisant une URL de type :
-   ```/admin/catalog/category/edit/id/xx/```
+   `/admin/catalog/category/edit/id/xx/`
 
 <u>Résultats attendus</u> :
 
@@ -77,7 +77,7 @@ L’ouverture des pages de catégories prend plus d’une minute.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

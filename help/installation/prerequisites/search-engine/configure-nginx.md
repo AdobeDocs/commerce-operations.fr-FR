@@ -3,9 +3,9 @@ title: Configuration de Nginx pour votre moteur de recherche
 description: Pour configurer un moteur de recherche avec le serveur web Nginx pour les installations sur site d’Adobe Commerce, procédez comme suit.
 feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -51,25 +51,25 @@ Cette section explique comment spécifier qui peut accéder au serveur Nginx.
 
 1. Redémarrez Angles :
 
-   ```bash
+   ```shell
    service nginx restart
    ```
 
 1. Vérifiez que le proxy fonctionne en saisissant la commande suivante :
 
-   ```bash
+   ```shell
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
    Par exemple, si votre proxy utilise le port 8080 :
 
-   ```bash
+   ```shell
    curl -i http://localhost:8080/_cluster/health
    ```
 
    Des messages similaires à ce qui suit s’affichent pour indiquer la réussite :
 
-   ```
+   ```text
    HTTP/1.1 200 OK
    Date: Tue, 23 Feb 2019 20:38:03 GMT
    Content-Type: application/json; charset=UTF-8
@@ -87,7 +87,7 @@ Comme nginx prend en charge l’authentification HTTP de base en mode natif, nou
 
 Ressources supplémentaires :
 
-* [Comment configurer l’authentification par mot de passe avec Nginx sur Ubuntu 14.04 (Digital Ocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
+* [Comment configurer l&#39;authentification par mot de passe avec Nginx sur Ubuntu 14.04 (Digital Ocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
 * [Authentification HTTP de base avec Nginx (HowtoForge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
 * [Exemples de configurations Nginx pour Elasticsearch](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
 
@@ -106,7 +106,7 @@ Pour créer un mot de passe :
 
 1. Saisissez la commande suivante pour déterminer si `htpasswd` est déjà installé :
 
-   ```bash
+   ```shell
    which htpasswd
    ```
 
@@ -119,11 +119,11 @@ Pour créer un mot de passe :
 
 1. Créez un répertoire `/etc/nginx/passwd` pour stocker les mots de passe :
 
-   ```bash
+   ```shell
    mkdir -p /etc/nginx/passwd
    ```
 
-   ```bash
+   ```shell
    htpasswd -c /etc/nginx/passwd/.<filename> <username>
    ```
 
@@ -131,9 +131,9 @@ Pour créer un mot de passe :
    >
    >Pour des raisons de sécurité, `<filename>` doit être masqué ; en d’autres termes, il doit commencer par un point.
 
-1. *(facultatif).* Pour ajouter un autre utilisateur à votre fichier de mots de passe, saisissez la même commande sans l&#39;option `-c` (créer) :
+1. *(Facultatif).* Pour ajouter un autre utilisateur dans votre fichier de mots de passe, saisissez la même commande sans l&#39;option `-c` (créer) :
 
-   ```bash
+   ```shell
    htpasswd /etc/nginx/passwd/.<filename> <username>
    ```
 
@@ -188,7 +188,7 @@ Cette section explique comment spécifier qui peut accéder au serveur du moteur
 
 1. Saisissez la commande suivante afin de créer un répertoire pour stocker la configuration d’authentification :
 
-   ```bash
+   ```shell
    mkdir /etc/nginx/auth/
    ```
 
@@ -209,7 +209,7 @@ Cette section explique comment spécifier qui peut accéder au serveur du moteur
 1. Si vous configurez un proxy sécurisé, supprimez `/etc/nginx/conf.d/magento_es_auth.conf`.
 1. Redémarrez Nginx et passez à la section suivante :
 
-   ```bash
+   ```shell
    service nginx restart
    ```
 

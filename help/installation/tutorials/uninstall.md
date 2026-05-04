@@ -2,9 +2,9 @@
 title: Désinstallation ou réinstallation d’Adobe Commerce
 description: Pour désinstaller et réinstaller les installations sur site d’Adobe Commerce, procédez comme suit.
 exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Avant d’utiliser ces commandes, vous devez [installer l’application](../tuto
 
 Pour mettre à jour l’application :
 
-* Si vous avez installé le logiciel à partir d&#39;une archive ou si vous avez utilisé &#39;composer-create-project&#39;, consultez le [&#x200B; Guide de mise à niveau](../../upgrade/overview.md).
+* Si vous avez installé le logiciel à partir d&#39;une archive ou si vous avez utilisé &#39;composer-create-project&#39;, consultez le [ Guide de mise à niveau](../../upgrade/overview.md).
 * Si vous êtes un développeur contributeur (c’est-à-dire que vous avez utilisé `git clone`), consultez [Mise à jour de l’application](../../upgrade/developer/git-installs.md).
 
 ## Réinstaller l’application
@@ -33,13 +33,13 @@ La désinstallation de l’application interrompt et restaure la base de donnée
 
 Pour désinstaller l&#39;application, saisissez la commande suivante :
 
-```bash
+```shell
 bin/magento setup:uninstall
 ```
 
 Le message suivant s’affiche pour confirmer la réussite de la désinstallation :
 
-```
+```text
 [SUCCESS]: Magento uninstallation complete.
 ```
 
@@ -49,7 +49,7 @@ Par défaut, `bin/magento setup:upgrade` efface le code compilé et le cache. En
 
 Cependant, dans certains cas (en particulier lors d’un déploiement en production), vous pouvez éviter d’effacer le code compilé, car cela peut prendre un certain temps. (Le cache est toujours effacé.) Pour mettre à jour le schéma et les données de la base de données *sans* effacer le code compilé, saisissez :
 
-```bash
+```shell
 bin/magento setup:upgrade --keep-generated
 ```
 

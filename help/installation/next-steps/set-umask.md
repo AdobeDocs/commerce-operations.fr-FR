@@ -3,9 +3,9 @@ title: Définir un masque (facultatif)
 description: Améliorez la posture de sécurité de votre installation sur site Adobe Commerce en limitant les autorisations du système de fichiers.
 feature: Install, Configuration
 exl-id: 18d65d75-7be0-4488-bf35-4b058e4ae5ea
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
@@ -36,13 +36,13 @@ Pour définir `magento_umask` :
 1. Dans un terminal de ligne de commande, connectez-vous à votre serveur d’applications en tant que [propriétaire du système de fichiers](../prerequisites/file-system/overview.md).
 1. Accédez au répertoire d’installation de l’application :
 
-   ```bash
+   ```shell
    cd <Application install directory>
    ```
 
 1. Utilisez la commande suivante pour créer un fichier nommé `magento_umask` et y écrire la valeur `umask`.
 
-   ```bash
+   ```shell
    echo <desired umask number> > magento_umask
    ```
 

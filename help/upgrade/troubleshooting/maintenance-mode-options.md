@@ -2,7 +2,7 @@
 title: Options du mode de maintenance pour la mise à niveau
 description: Créez une page de mode de maintenance personnalisée que vos clients voient sur votre storefront Adobe Commerce lorsque vous exécutez une mise à niveau.
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -72,7 +72,7 @@ Pour rediriger le trafic vers une page de maintenance personnalisée :
 
    Ajoutez ce qui suit à la fin de votre fichier de configuration Apache :
 
-   ```
+   ```text
    RewriteEngine On
    RewriteCond %{REMOTE_ADDR} !^192\.0\.2\.110
    RewriteCond %{DOCUMENT_ROOT}/maintenance.html -f
@@ -90,7 +90,7 @@ Pour rediriger le trafic vers une page de maintenance personnalisée :
 
 1. Saisissez la commande suivante :
 
-   ```bash
+   ```shell
    touch <web server docroot>/maintenance.enable
    ```
 
@@ -107,7 +107,7 @@ Pour rediriger le trafic vers une page de maintenance personnalisée :
 1. Utilisez un éditeur de texte pour ouvrir le fichier de configuration nginx contenant votre bloc de serveur.
 1. Ajoutez les éléments suivants au bloc de serveur (`server` est affiché par souci de clarté uniquement ; n’ajoutez pas de second bloc de serveur).
 
-   Placer sur la liste autorisée Ce qui suit les adresses IP 192.0.2.110 et 192.0.2.115 sur un système sur lequel Magento est installé dans `/var/www/html/magento2` :
+   Ce qui suit les adresses IP 192.0.2.110 et 192.0.2.115 sur un système sur lequel Magento est installé dans `/var/www/html/magento2` :
 
    ```conf
    server {
@@ -144,13 +144,13 @@ Pour rediriger le trafic vers une page de maintenance personnalisée :
 
 1. Saisissez la commande suivante :
 
-   ```bash
+   ```shell
    touch <magento_root>/maintenance.enable
    ```
 
 1. Rechargez la configuration nginx :
 
-   ```bash
+   ```shell
    service nginx reload
    ```
 
@@ -159,6 +159,6 @@ Pour rediriger le trafic vers une page de maintenance personnalisée :
 1. Une fois la mise à niveau terminée, supprimez ou renommez `maintenance.enable`
 1. Rechargez la configuration nginx :
 
-   ```bash
+   ```shell
    service nginx reload
    ```

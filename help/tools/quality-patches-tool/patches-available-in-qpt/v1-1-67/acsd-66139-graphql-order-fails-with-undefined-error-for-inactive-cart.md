@@ -5,9 +5,9 @@ feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 5a1a94ca-f274-4098-8b44-d3f1a0ea65a1
-source-git-commit: 8681dd706e614f86bbee36c182b47491ec707196
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Le correctif ACSD-66139 corrige le problème où, lors de la commande d’un pan
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers l’icône dernières versions et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers l’icône dernières versions et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -38,7 +38,7 @@ GraphQL renvoie un code d’erreur *UNDEFINED* au lieu d’un code spécifique l
 
 1. Ajoutez des `app/i18n/Magento/de_DE/de_DE.csv` et incluez la traduction de chaîne d’erreur suivante :
 
-```
+```shell
 "Could not find a cart with ID ""%masked_cart_id""","Oh noo, we have an UNDEFINED issue, see!",module,Magento_QuoteGraphQl
 ```
 
@@ -48,7 +48,7 @@ GraphQL renvoie un code d’erreur *UNDEFINED* au lieu d’un code spécifique l
 1. Exécutez `setup:upgrade` et `setup:static-content:deploy -f`.
 1. Exécutez la requête GraphQL suivante avec les `Store:test` d’en-tête :
 
-```
+```graphql
 mutation {
     placeOrder(input: { cart_id: "test" }) {
         orderV2 {
@@ -63,7 +63,7 @@ mutation {
 
 Réponse d’erreur correcte :
 
-```
+```graphql
 {
     "errors": [
         {
@@ -93,7 +93,7 @@ Réponse d’erreur correcte :
 
 La `error_code` renvoyée est *UNDEFINED* :
 
-```
+```graphql
 {
     "errors": [
         {
@@ -124,7 +124,7 @@ La `error_code` renvoyée est *UNDEFINED* :
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

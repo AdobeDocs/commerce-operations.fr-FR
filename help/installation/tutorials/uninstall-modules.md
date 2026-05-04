@@ -1,10 +1,10 @@
 ---
 title: Désinstallation des modules
-description: Pour désinstaller un module Adobe Commerce, procédez comme suit.
+description: Découvrez comment désinstaller les modules Adobe Commerce avec la suppression facultative du code, du schéma et des données, et quand désactiver les modules au lieu de les désinstaller.
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Cette section explique comment désinstaller un ou plusieurs modules. Lors de la désinstallation, vous avez la possibilité de supprimer le code, le schéma de base de données et les données de la base de données des modules. Vous pouvez d’abord créer des sauvegardes afin de pouvoir récupérer les données ultérieurement.
 
-Vous ne devez désinstaller un module que si vous êtes certain de ne pas l&#39;utiliser. Au lieu de désinstaller un module, vous pouvez le désactiver comme indiqué dans la section [&#x200B; Activer ou désactiver des modules](manage-modules.md).
+Vous ne devez désinstaller un module que si vous êtes certain de ne pas l&#39;utiliser. Au lieu de désinstaller un module, vous pouvez le désactiver comme indiqué dans la section [ Activer ou désactiver des modules](manage-modules.md).
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ Vous ne devez désinstaller un module que si vous êtes certain de ne pas l&#39;
 
 Utilisation des commandes :
 
-```bash
+```shell
 bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|--remove-data] [-c|--clear-static-content] \
   {ModuleName} ... {ModuleName}
 ```
@@ -50,7 +50,7 @@ La commande de désinstallation du module effectue les tâches suivantes :
 
 1. Si `--remove-data` est spécifié, supprimez le schéma de base de données et les données définies dans les classes `Uninstall` du module.
 
-   Pour chaque module spécifié à désinstaller, appelle la méthode `uninstall` dans sa classe `Uninstall`. Cette classe doit hériter de [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php).
+   Pour chaque module spécifié à désinstaller, appelle la méthode `uninstall` dans sa classe `Uninstall`. Cette classe doit hériter de [](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php).
 
 1. Supprime les modules spécifiés de la table de base de données `setup_module`.
 1. Supprime les modules spécifiés de la liste des modules dans la [configuration de déploiement](../../configuration/reference/deployment-files.md).
@@ -67,7 +67,7 @@ La commande de désinstallation du module effectue les tâches suivantes :
 
 Par exemple, si vous tentez de désinstaller un module dont dépend un autre module, le message suivant s’affiche :
 
-```
+```shell
 magento module:uninstall Magento_SampleMinimal
     Cannot uninstall module 'Magento_SampleMinimal' because the following module(s) depend on it:
         Magento_SampleModifyContent
@@ -75,13 +75,13 @@ magento module:uninstall Magento_SampleMinimal
 
 Une alternative consiste à désinstaller les deux modules après avoir sauvegardé le système de fichiers du module, les fichiers `pub/media` et les tables de la base de données, mais _pas_ en supprimant le schéma ou les données de la base de données du module :
 
-```bash
+```shell
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db
 ```
 
 Des messages similaires à ce qui suit s’affichent :
 
-```
+```text
 You are about to remove code and/or database tables. Are you sure?[y/N]y
 Enabling maintenance mode
 Code backup is starting...
@@ -122,7 +122,7 @@ Disabling maintenance mode
 
 Pour restaurer la base de code à l’état où vous l’avez sauvegardée, utilisez la commande suivante :
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<filename>"] [-d|--db-file="<filename>"]
 ```
 
@@ -144,21 +144,21 @@ Cette commande effectue les tâches suivantes :
 
    a. Vérifie que les emplacements de destination de restauration sont accessibles en écriture (notez que les dossiers `pub/static` et `var` sont ignorés).
 
-   b. Supprime tous les fichiers et répertoires du répertoire d’installation de votre application.
+   b. Supprime tous les fichiers et répertoires situés dans le répertoire d&#39;installation de votre application.
 
    c. Extrait le fichier d’archive vers les emplacements de destination.
 
 1. Si vous spécifiez un fichier de restauration de base de données :
 
-   a. Supprime l’intégralité de la base de données.
+   a. Supprime l&#39;intégralité de la base de données.
 
-   b. Restaure la base de données à l’aide de la sauvegarde de la base de données.
+   b. Restaure la base de données à l&#39;aide de la sauvegarde de la base de données.
 
 1. Si vous spécifiez un fichier de restauration de média :
 
    a. Vérifie que les emplacements de destination de restauration sont accessibles en écriture.
 
-   b. Supprime tous les fichiers et répertoires sous `pub/media`
+   b. Supprime tous les fichiers et répertoires situés sous `pub/media`
 
    c. Extrait le fichier d’archive vers les emplacements de destination.
 
@@ -168,19 +168,19 @@ Par exemple, pour restaurer une sauvegarde de code (c’est-à-dire de système 
 
 * Afficher une liste des sauvegardes :
 
-  ```bash
+  ```shell
   magento info:backups:list
   ```
 
 * Restaurez une sauvegarde de fichier nommée `1433876616_filesystem.tgz` :
 
-  ```bash
+  ```shell
   magento setup:rollback --code-file="1433876616_filesystem.tgz"
   ```
 
   Des messages similaires à ce qui suit s’affichent :
 
-  ```
+  ```text
   Enabling maintenance mode
   Code rollback is starting ...
   Code rollback filename: 1433876616_filesystem.tgz

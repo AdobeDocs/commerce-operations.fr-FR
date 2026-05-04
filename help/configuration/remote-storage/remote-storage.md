@@ -3,9 +3,9 @@ title: Configurer le stockage distant
 description: Découvrez comment configurer le module de stockage étendu pour l’application Commerce sur site.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Par défaut, l’application Adobe Commerce stocke les fichiers multimédias dan
 
 Le stockage distant _et_ le stockage dans la base de données ne peuvent pas être activés en même temps. Vous devez désactiver le stockage de la base de données avant d&#39;activer le stockage distant.
 
-```bash
+```shell
 bin/magento config:set system/media_storage_configuration/media_database 0
 ```
 
@@ -30,7 +30,7 @@ L’activation du stockage distant peut affecter votre expérience de développe
 
 >[!INFO]
 >
->- Le stockage distant est disponible uniquement pour Commerce version 2.4.2 et ultérieure. Voir les notes de mise à jour de la version [2.4.2](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
+>- Le stockage distant est disponible uniquement pour Commerce version 2.4.2 et ultérieure. Voir les notes de mise à jour de la version [2.4.2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
 >- Le module de stockage distant offre une prise en charge _limitée_ d’Adobe Commerce sur les infrastructures cloud. Adobe ne peut pas résoudre entièrement les problèmes liés au service de carte de stockage tiers. Consultez [Configuration du stockage distant pour Commerce sur l’infrastructure cloud](cloud-support.md) pour obtenir des conseils sur l’implémentation du stockage distant pour les projets cloud.
 
@@ -67,13 +67,13 @@ Vous pouvez installer le stockage distant lors d’une installation d’Adobe Co
 
 - Exemple : installation de Commerce avec un stockage distant
 
-  ```bash
+  ```shell
   bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
 
 - Exemple : activer le stockage distant sur un Commerce existant
 
-  ```bash
+  ```shell
   bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
 
@@ -85,11 +85,11 @@ Vous pouvez installer le stockage distant lors d’une installation d’Adobe Co
 
 Après avoir activé le stockage distant pour une carte spécifique, vous pouvez utiliser l&#39;interface de ligne de commande pour migrer les fichiers _media_ existants vers le stockage distant.
 
-```bash
+```shell
 ./magento2ce/bin/magento remote-storage:sync
 ```
 
 >[!INFO]
 >
->La commande sync migre uniquement les fichiers du répertoire `pub/media`, _pas_ les fichiers d’import/export du répertoire `var`. Voir [Importation/exportation planifiée](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=fr) dans le Guide de l’utilisateur de _Commerce 2.4_.
+>La commande sync migre uniquement les fichiers du répertoire `pub/media`, _pas_ les fichiers d’import/export du répertoire `var`. Voir [Importation/exportation planifiée](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) dans le Guide de l’utilisateur de _Commerce 2.4_.
 

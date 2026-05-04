@@ -2,9 +2,9 @@
 title: Remplir les prérequis
 description: Préparez votre projet Adobe Commerce pour une mise à niveau en suivant ces étapes préalables.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1985'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Assurez-vous d’avoir mis à jour toutes les exigences système et dépendances
 
 >[!NOTE]
 >
->Pour les projets Pro d’Adobe Commerce sur les infrastructures cloud, vous devez créer un ticket [Support](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour installer ou mettre à jour les services dans les environnements d’évaluation et de production. Indiquez les changements de service nécessaires et incluez vos fichiers `.magento.app.yaml` et `services.yaml` mis à jour ainsi que la version PHP dans le ticket. La mise à jour de votre projet par l’équipe en charge de l’infrastructure cloud peut prendre jusqu’à 48 heures. Voir [Logiciels et services pris en charge](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
+>Pour les projets Pro d’Adobe Commerce sur les infrastructures cloud, vous devez créer un ticket [Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour installer ou mettre à jour les services dans les environnements d’évaluation et de production. Indiquez les changements de service nécessaires et incluez vos fichiers `.magento.app.yaml` et `services.yaml` mis à jour ainsi que la version PHP dans le ticket. La mise à jour de votre projet par l’équipe en charge de l’infrastructure cloud peut prendre jusqu’à 48 heures. Voir [Logiciels et services pris en charge](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
 
 ## Vérifier qu’un moteur de recherche pris en charge est installé
 
@@ -77,20 +77,20 @@ Pour mettre correctement à niveau MySQL de la version 8.0 vers la version 8.4, 
 
 1. Activez le mode de maintenance :
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Effectuez une sauvegarde de la base de données :
 
-   ```bash
+   ```shell
    bin/magento setup:backup --db
    ```
 
 1. Mettez à niveau MySQL vers la version 8.4.
 1. Définissez `restrict_fk_on_non_standard_key` sur `OFF` dans `[mysqld]` dans le fichier `my.cnf`.
 
-   ```bash
+   ```shell
    [mysqld]
    restrict_fk_on_non_standard_key = OFF 
    ```
@@ -107,13 +107,13 @@ Pour mettre correctement à niveau MySQL de la version 8.0 vers la version 8.4, 
 1. Importez les données sauvegardées dans MySQL.
 1. Nettoyez le cache :
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Désactivez le mode de maintenance :
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
@@ -153,7 +153,7 @@ La prise en charge d’Elasticsearch 8.x a été introduite dans Adobe Commerce 
 >
 >Ces étapes s’appliquent uniquement à Adobe Commerce 2.4.6 et 2.4.7. Adobe Commerce 2.4.8 et versions ultérieures ne prennent plus en charge Elasticsearch ; utilisez OpenSearch à la place.
 
-1. Mettez à niveau le serveur Elasticsearch 7.x vers la version 8.x et assurez-vous que est en cours d’exécution. Voir la [documentation &#x200B;](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch).
+1. Mettez à niveau le serveur Elasticsearch 7.x vers la version 8.x et assurez-vous que est en cours d’exécution. Voir la [documentation ](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch).
 
 1. Activez le champ `id_field_data` en ajoutant la configuration suivante à votre fichier `elasticsearch.yml` et en redémarrant le service Elasticsearch 8.x.
 
@@ -169,7 +169,7 @@ La prise en charge d’Elasticsearch 8.x a été introduite dans Adobe Commerce 
 
 1. Dans le répertoire racine de votre projet Adobe Commerce, mettez à jour les dépendances du compositeur afin de supprimer le module `Magento_Elasticsearch7` et d’installer le module `Magento_Elasticsearch8`.
 
-   ```bash
+   ```shell
    composer require magento/module-elasticsearch-8 --update-with-all-dependencies
    ```
 
@@ -181,13 +181,13 @@ La prise en charge d’Elasticsearch 8.x a été introduite dans Adobe Commerce 
 
    1. Tout d’abord, exiger le module Elasticsearch 8 sans mettre à jour les autres dépendances :
 
-      ```bash
+      ```shell
       composer require magento/module-elasticsearch-8 --no-update
       ```
 
    1. Mettez ensuite à jour le module Elasticsearch 8 et les packages `aws/aws-sdk-php` :
 
-      ```bash
+      ```shell
       composer update magento/module-elasticsearch-8 aws/aws-sdk-php -W
       ```
 
@@ -197,7 +197,7 @@ La prise en charge d’Elasticsearch 8.x a été introduite dans Adobe Commerce 
 
 1. Mettez à jour les composants de votre projet.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
@@ -205,13 +205,13 @@ La prise en charge d’Elasticsearch 8.x a été introduite dans Adobe Commerce 
 
 1. Réindexez l’index de catalogue.
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex catalogsearch_fulltext
    ```
 
 1. Supprimez tous les éléments des types de cache activés.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -219,17 +219,17 @@ La prise en charge d’Elasticsearch 8.x a été introduite dans Adobe Commerce 
 
 Si vous mettez par inadvertance à niveau la version d’Elasticsearch sur votre serveur ou déterminez que vous devez la rétrograder pour toute autre raison, vous devez également mettre à jour les dépendances de vos projets Adobe Commerce. Par exemple, pour rétrograder d’Elasticsearch 8.x vers 7.x
 
-1. Rétrogradez le serveur Elasticsearch 8.x vers la version 7.x et assurez-vous que est en cours d’exécution. Voir la [documentation &#x200B;](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch).
+1. Rétrogradez le serveur Elasticsearch 8.x vers la version 7.x et assurez-vous que est en cours d’exécution. Voir la [documentation ](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch).
 
 1. Dans le répertoire racine de votre projet Adobe Commerce, mettez à jour les dépendances du compositeur pour supprimer le module `Magento_Elasticsearch8` et ses dépendances du compositeur et installer le module `Magento_Elasticsearch7`.
 
-   ```bash
+   ```shell
    composer remove magento/module-elasticsearch-8
    ```
 
 1. Mettez à jour les composants de votre projet.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
@@ -237,13 +237,13 @@ Si vous mettez par inadvertance à niveau la version d’Elasticsearch sur votre
 
 1. Réindexez l’index de catalogue.
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex catalogsearch_fulltext
    ```
 
 1. Supprimez tous les éléments des types de cache activés.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -266,7 +266,7 @@ Pour définir ulimit à partir de la ligne de commande :
 1. Passez au [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
 1. Définissez ulimit sur `65536`.
 
-   ```bash
+   ```shell
    ulimit -n 65536
    ```
 
@@ -276,7 +276,7 @@ Pour définir la valeur dans votre shell Bash :
 1. Ouvrez `/home/<username>/.bashrc` dans un éditeur de texte.
 1. Ajoutez la ligne suivante :
 
-   ```bash
+   ```shell
    ulimit -n 65536
    ```
 
@@ -296,7 +296,7 @@ Pour vérifier que votre tâche cron est configurée correctement, vérifiez le 
 >
 >crontab est le fichier de configuration chargé d’exécuter les tâches cron.
 
-```bash
+```shell
 crontab -l
 ```
 
@@ -341,7 +341,7 @@ Pour définir la variable d’environnement :
 1. Passez au [propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md).
 1. Définissez la variable :
 
-   ```bash
+   ```shell
    export DATA_CONVERTER_BATCH_SIZE=100000
    ```
 
@@ -351,7 +351,7 @@ Pour définir la variable d’environnement :
 
 1. Une fois la mise à niveau terminée, vous pouvez dédéfinir la variable :
 
-   ```bash
+   ```shell
    unset DATA_CONVERTER_BATCH_SIZE
    ```
 
@@ -365,7 +365,7 @@ Pour vérifier que les autorisations de votre système de fichiers sont correcte
 
 Par exemple, saisissez la commande suivante si l&#39;application est installée dans `/var/www/html/magento2` :
 
-```bash
+```shell
 ls -l /var/www/html/magento2
 ```
 
@@ -414,7 +414,7 @@ Consultez les sections suivantes pour obtenir une explication de l’exemple de 
 
 Pour obtenir des informations plus détaillées, vous pouvez saisir la commande suivante :
 
-```bash
+```shell
 ls -la /var/www/html/magento2/pub
 ```
 
@@ -436,13 +436,13 @@ Pour installer le plug-in :
 
 1. Ajoutez le package à votre fichier `composer.json`.
 
-   ```bash
+   ```shell
    composer require magento/composer-root-update-plugin ~2.0 --no-update
    ```
 
 1. Mettez à jour les dépendances :
 
-   ```bash
+   ```shell
    composer update
    ```
 

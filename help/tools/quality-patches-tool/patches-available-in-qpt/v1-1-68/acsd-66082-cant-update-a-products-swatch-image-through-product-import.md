@@ -5,9 +5,9 @@ feature: Products, Data Import/Export, Media
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 0bfff90e-5f1f-4c87-8a99-efc5bb0d814b
-source-git-commit: e0d2e42b070591f3fefc0e9adb1bf5c1ba580fd9
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Le correctif ACSD-66082 corrige le problème en raison duquel il n’était pas 
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -40,7 +40,7 @@ Le téléchargement d’un fichier CSV avec le champ `swatch_image` défini sur 
 1. Chargez une image PNG nommée *testing.png* dans `var/import/images/`.
 1. Créez un fichier CSV avec le contenu suivant :
 
-   ```
+   ```text
    sku,swatch_image,swatch_image_label
    ABC,testing.png,testing
    ```
@@ -51,7 +51,7 @@ Le téléchargement d’un fichier CSV avec le champ `swatch_image` défini sur 
    * Cliquez sur **[!UICONTROL Choose File]** pour sélectionner le fichier CSV créé à l’étape précédente à importer. L’importation a réussi et l’échantillon est ajouté.
 1. Mettez à jour le fichier CSV avec le contenu suivant :
 
-   ```
+   ```text
    sku,swatch_image,swatch_image_label
    ABC,__EMPTY__VALUE__,__EMPTY__VALUE__
    ```
@@ -71,7 +71,7 @@ Le processus d’importation renvoie une erreur.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

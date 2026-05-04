@@ -1,10 +1,10 @@
 ---
 title: Procurez-vous le logiciel Adobe Commerce.
-description: Découvrez comment télécharger le logiciel Adobe Commerce.
+description: Découvrez comment obtenir le logiciel Adobe Commerce à l’aide du compositeur, vérifier la compatibilité des extensions et choisir la distribution appropriée pour l’installation.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ Vous faites partie des 240 000 commerçants du monde entier qui font confiance �
 
 ## Comment obtenir le logiciel
 
-Vérifiez la disponibilité et la compatibilité des extensions créées par Adobe et des services Commerce pour Adobe Commerce et Magento Open Source sur notre [page de disponibilité des produits](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability).
+Vérifiez la disponibilité et la compatibilité des extensions créées par Adobe et des services Commerce pour Adobe Commerce et Magento Open Source sur notre [page de disponibilité des produits](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 >[!NOTE]
 >
 >Les bases de code Adobe Commerce sont désormais exclusivement distribuées via le compositeur en raison de modifications de la politique. Utilisez le compositeur pour télécharger l’une des versions d’Adobe Commerce répertoriées, car la base de code n’est plus disponible dans la section Téléchargements .
 >
->Pour plus d’informations, voir [Impossible d’accéder au relevé de facturation et de télécharger la base de code sur Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26611)
+>Pour plus d’informations, voir [Impossible d’accéder au relevé de facturation et de télécharger la base de code sur Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)
 
 Consultez le tableau suivant pour commencer à installer Adobe Commerce.
 

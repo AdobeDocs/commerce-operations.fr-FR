@@ -2,9 +2,9 @@
 title: Exporter les paramètres de configuration
 description: Découvrez comment exporter les paramètres de configuration Adobe Commerce vers des fichiers à l’aide de l’image mémoire de la configuration. Découvrez le déploiement des pipelines et la gestion de la configuration.
 exl-id: db680f5e-547a-48f3-b017-d77b8cb07bfd
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 Dans Commerce 2.2 et les versions ultérieures [modèle de déploiement de pipeline](../deployment/technical-details.md), vous pouvez gérer une configuration cohérente entre les systèmes. Une fois que vous avez configuré les paramètres dans Admin sur votre système de développement, exportez-les dans les fichiers de configuration à l’aide de la commande suivante :
 
-```bash
+```shell
 bin/magento app:config:dump {config-types}
 ```
 
-_config_types_ est une liste séparée par des espaces de types de configuration à vider. Les types disponibles sont les `scopes`, les `system`, les `themes` et les `i18n`. Si aucun type de configuration n’est spécifié, la commande vide toutes les informations de configuration système.
+_config_ types_ est une liste séparée par des espaces de types de configuration à vider. Les types disponibles sont les `scopes`, les `system`, les `themes` et les `i18n`. Si aucun type de configuration n’est spécifié, la commande vide toutes les informations de configuration système.
 
 L’exemple suivant vide uniquement les étendues et les thèmes :
 
-```bash
+```shell
 bin/magento app:config:dump scopes themes
 ```
 

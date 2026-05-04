@@ -3,9 +3,9 @@ title: Créer ou mettre à jour la configuration de déploiement
 description: Pour gérer la configuration de déploiement d’Adobe Commerce, procédez comme suit.
 feature: Install, Deploy, Configuration
 exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Vous pouvez utiliser cette commande si :
 
 Options de commande :
 
-```bash
+```shell
 bin/magento setup:config:set [--<parameter>=<value>, ...]
 ```
 
@@ -34,16 +34,16 @@ Le tableau suivant explique la signification des paramètres et valeurs d&#39;in
 
 | Paramètre | Valeur | Obligatoire ? |
 |--- |--- |--- |
-| `--backend-frontname` | Uniform Resource Identifier ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)) pour accéder à l’administrateur.<br><br>Pour empêcher les exploits, nous vous recommandons de ne pas utiliser un mot courant tel que admin, backend. L’URI d’administration ne peut contenir que des valeurs alphanumériques et le caractère de soulignement (`_`). | Non |
-| `--db-host` | Utilisez l’une des méthodes suivantes : <br><br>- Le nom d’hôte complet ou l’adresse IP complète du serveur de base de données.<br><br> : `localhost` (par défaut) ou `127.0.0.1` si le serveur de votre base de données se trouve sur le même hôte que votre serveur web. localhost signifie que la bibliothèque cliente MySQL utilise des sockets UNIX pour se connecter à la base de données. `127.0.0.1` entraîne l’utilisation du protocole TCP par la bibliothèque cliente. Pour plus d’informations sur les sockets, consultez la documentation [PHP PDO_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Remarque :** vous pouvez éventuellement spécifier le port du serveur de base de données dans son nom d&#39;hôte, comme `www.example.com:9000` | Non |
+| `--backend-frontname` | Uniform Resource Identifier ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)) pour accéder à Admin.<br><br>Pour empêcher les exploits, nous vous recommandons de ne pas utiliser un mot commun tel que admin, serveur principal. L’URI d’administration ne peut contenir que des valeurs alphanumériques et le caractère de soulignement (`_`). | Non |
+| `--db-host` | Utilisez l’une des méthodes suivantes :<br><br>- Nom d’hôte complet ou adresse IP du serveur de base de données.<br><br>- `localhost` (par défaut) ou `127.0.0.1` si votre serveur de base de données se trouve sur le même hôte que votre serveur web. localhost signifie que la bibliothèque cliente MySQL utilise des sockets UNIX pour se connecter à la base de données. `127.0.0.1` entraîne l’utilisation du protocole TCP par la bibliothèque cliente. Pour plus d’informations sur les sockets, consultez la [documentation PHP PDO_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Remarque :** vous pouvez éventuellement spécifier le port du serveur de base de données dans son nom d’hôte, comme `www.example.com:9000` | Non |
 | `--db-name` | Nom de l’instance de base de données dans laquelle vous souhaitez installer les tables de base de données.<br><br>La valeur par défaut est `magento2`. | Non |
 | `--db-user` | Nom d’utilisateur du propriétaire de l’instance de base de données.<br><br>La valeur par défaut est `root`. | Non |
 | `--db-password` | Mot de passe du propriétaire de l&#39;instance de base de données. | Non |
 | `--db-prefix` | À utiliser uniquement si vous installez les tables de la base de données dans une instance de base de données qui contient déjà des tables Adobe Commerce.<br><br>Dans ce cas, utilisez un préfixe pour identifier les tables de cette installation. Certains clients disposent de plusieurs instances Adobe Commerce s’exécutant sur un serveur avec toutes les tables dans la même base de données.<br><br>La longueur du préfixe ne peut pas excéder cinq caractères. Elle doit commencer par une lettre et ne peut contenir que des lettres, des chiffres et des traits de soulignement.<br><br>Cette option permet à ces clients de partager le serveur de base de données avec plusieurs installations Adobe Commerce. | Non |
-| `--session-save` | Utilisez l’une des méthodes suivantes : <br><br>- `db` pour stocker les données de session dans la [base de données](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). Choisissez le stockage de la base de données si vous disposez d&#39;une base de données en cluster ; sinon, le stockage basé sur des fichiers ne sera pas très avantageux.<br><br> : `files` de stocker les données de session dans le système de fichiers. Le stockage des sessions basé sur des fichiers est approprié, sauf si l’accès au système de fichiers est lent, si vous disposez d’une base de données en cluster ou si vous souhaitez stocker les données de session dans Redis.<br><br>- `redis` de stocker les données de session dans [Utilisez Redis pour le stockage de session](../../configuration/cache/config-redis.md). Si vous utilisez Redis pour la mise en cache par défaut ou de pages, Redis doit être déjà installé. | Non |
+| `--session-save` | Utilisez l’une des méthodes suivantes : <br><br>- `db` pour stocker les données de session dans la [base de données](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). Choisissez le stockage de la base de données si vous disposez d&#39;une base de données en cluster ; sinon, le stockage basé sur des fichiers n&#39;offrirait pas beaucoup d&#39;avantages par rapport au stockage basé sur des fichiers.<br><br>- `files` pour stocker les données de session dans le système de fichiers. Le stockage de session basé sur des fichiers est approprié, sauf si l’accès au système de fichiers est lent, si vous disposez d’une base de données en cluster ou si vous souhaitez stocker des données de session dans Redis.<br><br>- `redis` de stocker les données de session dans [Utilisez Redis pour le stockage de session](../../configuration/cache/config-redis.md). Si vous utilisez Redis pour la mise en cache par défaut ou de pages, Redis doit être déjà installé. | Non |
 | `--key` | Si vous en avez une, spécifiez une clé pour chiffrer les [données sensibles](#sensitive-data) dans la base de données. Si vous n’en avez pas, l’application en génère une pour vous. | Non |
 | `--db-init-statements` | Paramètre de configuration MySQL avancé. Utilise les instructions d&#39;initialisation de base de données à exécuter lors de la connexion à la base de données MySQL.<br><br>La valeur par défaut est `SET NAMES utf8;`.<br><br>Consultez une référence similaire à [celle-ci](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) avant de définir des valeurs. | Non |
-| `--http-cache-hosts` | Liste séparée par des virgules des hôtes de passerelle de cache HTTP auxquels envoyer les requêtes de purge. (Par exemple, les serveurs de vernis.) Utilisez ce paramètre pour spécifier l’hôte ou les hôtes à purger dans la même requête. (Peu importe que vous ayez un seul hôte ou plusieurs hôtes.)<br><br>Le format doit être `<hostname or ip>:<listen port>`, où vous pouvez omettre `<listen port>` s’il s’agit du port 80. Par exemple, `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. Ne séparez pas les hôtes avec un espace. | Non |
+| `--http-cache-hosts` | Liste séparée par des virgules des hôtes de passerelle de cache HTTP auxquels envoyer les requêtes de purge. (Par exemple, les serveurs de vernis.) Utilisez ce paramètre pour spécifier l’hôte ou les hôtes à purger dans la même requête. (Peu importe que vous ayez un seul hôte ou plusieurs.)<br><br>Format doit être `<hostname or ip>:<listen port>`, où vous pouvez omettre `<listen port>` s&#39;il s&#39;agit du port 80. Par exemple, `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. Ne séparez pas les hôtes avec un espace. | Non |
 
 ## Importer les données de configuration
 
@@ -54,7 +54,7 @@ Après avoir importé des sites web, des boutiques, des vues de boutique et des 
 
 Sur le système d’exploitation, exécutez la commande suivante pour importer les données des fichiers de configuration (`config.php` et `env.php`) dans la base de données :
 
-```bash
+```shell
 bin/magento app:config:import [-n, --no-interaction]
 ```
 

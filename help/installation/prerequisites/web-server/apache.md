@@ -1,12 +1,12 @@
 ---
 title: Installation d’Apache pour les déploiements On-Premise
-description: Découvrez comment installer et configurer Apache pour les déploiements d’Adobe Commerce sur site. Activez les modules requis, les réécritures et les paramètres &grave;.htaccess&grave;.
+description: Découvrez comment installer et configurer Apache pour les déploiements d’Adobe Commerce sur site. Activez les modules requis, les réécritures et les paramètres `.htaccess`.
 feature: Install, Configuration
-badgePaas: label="On-premise" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
+badgePaas: label="On-premise" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: 352a71cb88ff38c0920201f49f1d7b889509fd61
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe prend en charge les versions d’Apache répertoriées dans la [configurat
 Commencez par la section correspondant à votre environnement :
 
 - Si Apache est déjà installé, commencez par [vérifier les exigences d’Apache](#review-apache-requirements).
-- Si vous devez installer ou mettre à niveau Apache sur Ubuntu, accédez à [&#x200B; Installer ou mettre à niveau Apache sur Ubuntu &#x200B;](#installing-or-upgrading-apache-on-ubuntu).
+- Si vous devez installer ou mettre à niveau Apache sur Ubuntu, accédez à [ Installer ou mettre à niveau Apache sur Ubuntu ](#installing-or-upgrading-apache-on-ubuntu).
 - Si vous devez installer Apache sous CentOS, accédez à [Installer Apache sous CentOS](#installing-apache-on-centos).
 
 ## Vérifier les exigences d’Apache
@@ -48,7 +48,7 @@ Utilisez cette section pour activer les réécritures Apache et configurer le [f
 
 1. Activez le module de réécriture Apache :
 
-   ```bash
+   ```shell
    a2enmod rewrite
    ```
 
@@ -72,7 +72,7 @@ Utilisez cette section pour activer les réécritures Apache et configurer le [f
 
 1. Redémarrez Apache pour appliquer vos modifications :
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
@@ -91,7 +91,7 @@ Adobe Commerce nécessite l’installation des modules Apache suivants :
 
 Pour vérifier qu’Apache est installé et afficher la version actuelle, saisissez :
 
-```bash
+```shell
 apache2 -v
 ```
 
@@ -120,13 +120,13 @@ Lorsque vous configurez les réécritures du serveur Apache, vous devez spécifi
 
 1. Installez Apache si vous ne l’avez pas déjà fait :
 
-   ```bash
+   ```shell
    apt-get -y install apache2
    ```
 
 1. Vérifiez l’installation :
 
-   ```bash
+   ```shell
    apache2 -v
    ```
 
@@ -145,11 +145,11 @@ Lorsque vous configurez les réécritures du serveur Apache, vous devez spécifi
 
 ### Mettre à niveau Apache sur Ubuntu
 
-Si Apache est déjà installé et que vous utilisez une version antérieure à `2.4`, effectuez une mise à niveau vers Apache `2.4` ou vers la dernière version prise en charge par la version d’Adobe Commerce que vous avez déployée. Voir [&#x200B; Configuration requise &#x200B;](../../system-requirements.md).
+Si Apache est déjà installé et que vous utilisez une version antérieure à `2.4`, effectuez une mise à niveau vers Apache `2.4` ou vers la dernière version prise en charge par la version d’Adobe Commerce que vous avez déployée. Voir [ Configuration requise ](../../system-requirements.md).
 
 1. Mettre à jour les informations sur le package :
 
-   ```bash
+   ```shell
    apt-get -y update
    ```
 
@@ -157,7 +157,7 @@ Si Apache est déjà installé et que vous utilisez une version antérieure à `
 
 1. Installez ou mettez à niveau Apache :
 
-   ```bash
+   ```shell
    apt-get install -y apache2
    ```
 
@@ -167,7 +167,7 @@ Si Apache est déjà installé et que vous utilisez une version antérieure à `
 
 1. Vérifiez l’installation :
 
-   ```bash
+   ```shell
    apache2 -v
    ```
 
@@ -179,7 +179,7 @@ Si Apache est déjà installé et que vous utilisez une version antérieure à `
 
 1. Ouvrez le fichier `/etc/apache2/sites-available/000-default.conf` pour le modifier :
 
-   ```bash
+   ```shell
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
@@ -206,17 +206,17 @@ Si Apache est déjà installé et que vous utilisez une version antérieure à `
 
 1. Configurez Apache pour utiliser le module `mod_rewrite` :
 
-   ```bash
+   ```shell
    cd /etc/apache2/mods-enabled
    ```
 
-   ```bash
+   ```shell
    ln -s ../mods-available/rewrite.load
    ```
 
 1. Redémarrez Apache pour appliquer les modifications :
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
@@ -238,13 +238,13 @@ Lorsque vous configurez les réécritures du serveur Apache, vous devez spécifi
 
 1. Installez Apache si vous ne l’avez pas déjà fait.
 
-   ```bash
+   ```shell
    yum -y install httpd
    ```
 
 1. Vérifiez l’installation :
 
-   ```bash
+   ```shell
    httpd -v
    ```
 
@@ -265,7 +265,7 @@ Lorsque vous configurez les réécritures du serveur Apache, vous devez spécifi
 
 1. Ouvrez le fichier `/etc/httpd/conf/httpd.conf` pour le modifier :
 
-   ```bash
+   ```shell
    vim /etc/httpd/conf/httpd.conf
    ```
 
@@ -296,7 +296,7 @@ Lorsque vous configurez les réécritures du serveur Apache, vous devez spécifi
 
 1. Pour appliquer les paramètres Apache, redémarrez Apache.
 
-   ```bash
+   ```shell
    systemctl restart httpd
    ```
 

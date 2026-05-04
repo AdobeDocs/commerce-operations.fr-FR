@@ -3,9 +3,9 @@ title: Installer le vernis
 description: Découvrez les exigences d’installation de Varnish pour la mise en cache d’Adobe Commerce. Découvrez les ressources d’installation et les conseils de configuration.
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ L&#39;installation du logiciel Varnish n&#39;entre pas dans le cadre de ce guide
 
 Ouvrez un terminal et saisissez la commande suivante pour afficher la version de Vernis :
 
-```bash
+```shell
 varnishd -V
 ```
 

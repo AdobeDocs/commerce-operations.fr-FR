@@ -3,7 +3,7 @@ title: Créer, modifier ou déverrouiller un compte administrateur
 description: Pour gérer le compte administrateur de votre application Adobe Commerce Admin, procédez comme suit.
 feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
-source-git-commit: aaed7dba7d11085eb8e2793cefffb8c8b082e750
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Utilisez cette commande pour créer un administrateur ou modifier un administrat
 
 Utilisation des commandes :
 
-```bash
+```shell
 bin/magento admin:user:create [--<parameter_name>=<value>, ...]
 ```
 
@@ -49,21 +49,21 @@ Où le tableau suivant définit les paramètres et valeurs :
 
 Exemple d’utilisation :
 
-```bash
+```shell
 bin/magento admin:user:create --admin-firstname=John --admin-lastname=Doe --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A0b9%t3g
 ```
 
-```
+```text
 Created Magento administrator user named j.doe
 ```
 
 Si vous ne spécifiez aucun des paramètres requis, l’application les interroge dans l’interface de ligne de commande :
 
-```bash
+```shell
 bin/magento admin:user:create
 ```
 
-```
+```text
 Admin user: John
 Admin password:
 Admin email: j.doe.young@example.com
@@ -71,17 +71,17 @@ Admin first name: John
 Admin last name: Doe Young
 ```
 
-```
+```text
 Created Magento administrator user named John
 ```
 
 L’exemple suivant met à jour les `first name`, `last name` et `password` d’`j.doe` utilisateur administrateur :
 
-```bash
+```shell
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567
 ```
 
-```
+```text
 Created Magento administrator user named j.doe
 ```
 
@@ -89,23 +89,23 @@ Created Magento administrator user named j.doe
 
 Utilisez cette commande pour déverrouiller le compte d’un administrateur verrouillé, généralement en raison de plusieurs tentatives de connexion incorrectes.
 
-```bash
+```shell
 bin/magento admin:user:unlock {username}
 ```
 
 Vous devez indiquer le nom d’utilisateur de l’administrateur. Exemple :
 
-```bash
+```shell
 bin/magento admin:user:unlock admin
 ```
 
-```
+```text
 The user account "admin" has been unlocked
 ```
 
 Si le compte n’est pas déverrouillé ou en cas de problème, le message suivant s’affiche :
 
-```
+```text
 The user account "admin" was not locked or could not be unlocked
 ```
 
@@ -113,6 +113,6 @@ Vérifiez que l’utilisateur est un administrateur, qu’il est actif et que le
 
 Si le compte n’existe pas, le message suivant s’affiche :
 
-```
+```text
 Couldn't find the user account "bob"
 ```

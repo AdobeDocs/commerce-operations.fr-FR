@@ -2,9 +2,9 @@
 title: Démarrer les consommateurs des files d’attente de messages
 description: Découvrez comment démarrer les consommateurs de files d’attente de messages pour les opérations asynchrones Adobe Commerce. Découvrez la configuration des fonctionnalités de gestion des consommateurs et B2B.
 exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -17,19 +17,19 @@ Vous devez démarrer un [client de file d’attente de messages](../queues/consu
 
 Pour afficher la liste de tous les consommateurs :
 
-```bash
+```shell
 bin/magento queue:consumers:list
 ```
 
 Pour démarrer les consommateurs de files d’attente de messages :
 
-```bash
+```shell
 bin/magento queue:consumers:start [--max-messages=<value>] [--batch-size=<value>] [--single-thread] [--area-code=<value>] [--multi-process=<value>] <consumer_name>
 ```
 
 Après avoir consommé tous les messages disponibles, la commande s’arrête. Vous pouvez réexécuter la commande manuellement ou avec une tâche cron. Vous pouvez également exécuter plusieurs instances de la commande `magento queue:consumers:start` pour traiter les files d’attente de messages volumineuses. Par exemple, vous pouvez ajouter `&` à la commande pour l’exécuter en arrière-plan, revenir à une invite et continuer à exécuter les commandes :
 
-```bash
+```shell
 bin/magento queue:consumers:start <consumer_name> &
 ```
 

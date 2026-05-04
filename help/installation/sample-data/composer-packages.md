@@ -3,9 +3,9 @@ title: Télécharger des exemples de packages du compositeur de données
 description: Pour installer les données d’exemple Adobe Commerce à l’aide du gestionnaire de packages Composer PHP, procédez comme suit.
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Vous pouvez utiliser cette méthode pour obtenir des exemples de données pour A
 
 >[!NOTE]
 >
->Si vous rencontrez des erreurs, telles que `Could not find package...` ou `...no matching package found...`, assurez-vous qu’il n’y a aucune faute de frappe dans votre commande. Si vous rencontrez toujours des erreurs, vous n’avez peut-être pas accès aux référentiels de compositeur appropriés, en particulier si vous utilisez Adobe Commerce. Contactez [l’assistance Adobe Commerce](https://support.magento.com/hc/en-us) pour obtenir de l’aide.
+>Si vous rencontrez des erreurs, telles que `Could not find package...` ou `...no matching package found...`, assurez-vous qu’il n’y a aucune faute de frappe dans votre commande. Si vous rencontrez toujours des erreurs, vous n’avez peut-être pas accès aux référentiels de compositeur appropriés, en particulier si vous utilisez Adobe Commerce. Contactez [l’assistance ](https://support.magento.com/hc/en-us) pour obtenir de l’aide.
 
 Vous pouvez utiliser le compositeur pour installer des données d’exemple avant ou après l’installation de l’application ; cependant, il peut y avoir [tâches supplémentaires](remove-or-update.md).
 
@@ -36,7 +36,7 @@ Si vous êtes un développeur contributeur, reportez-vous à la section [Install
 
 Pour installer des données d’exemple à l’aide de la ligne de commande, saisissez la commande suivante en tant que propriétaire du système de fichiers dans le répertoire `<app_root>` :
 
-```bash
+```shell
 bin/magento sampledata:deploy
 ```
 
@@ -44,7 +44,7 @@ bin/magento sampledata:deploy
 >
 >Si vous installez des données d’exemple _après_ avoir installé l’application, vous devez également exécuter la commande suivante pour mettre à jour la base de données et le schéma dans le répertoire `<app_root>` :
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
@@ -54,7 +54,7 @@ Vous devez vous [authentifier](../prerequisites/authentication-keys.md) pour ter
 
 L’erreur d’authentification suivante peut s’afficher :
 
-```
+```text
 [Composer\Downloader\TransportException]
 The 'https://repo.magento.com/packages.json' URL required authentication.
 You must be using the interactive console to authenticate

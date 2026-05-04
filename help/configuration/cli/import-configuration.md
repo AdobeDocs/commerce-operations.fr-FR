@@ -2,9 +2,9 @@
 title: Importer les données des fichiers de configuration
 description: Découvrez comment importer les paramètres de configuration d’Adobe Commerce à partir de fichiers de configuration. Découvrez le déploiement des pipelines et les processus d'import de base de données.
 exl-id: 7d9f156c-e8d3-4888-b359-5d9aa8c4ea05
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Après avoir importé des sites web, des boutiques, des vues de boutique et des 
 
 Sur votre système d’exploitation, exécutez la commande suivante pour importer les données des fichiers de configuration (`config.php` et `env.php`) dans la base de données :
 
-```bash
+```shell
 bin/magento app:config:import [-n, --no-interaction]
 ```
 
@@ -36,7 +36,7 @@ Si vous saisissez `bin/magento app:config:import` sans l’indicateur facultatif
 
 Par exemple, si le fichier de configuration contient un nouveau site web et un nouveau magasin, le message suivant s’affiche :
 
-```
+```text
 These Websites will be created: New Website
 These Groups will be created: New Store
 Do you want to continue [yes/no]?
@@ -46,14 +46,14 @@ Pour poursuivre l’importation, saisissez `yes`.
 
 Si les fichiers de configuration de déploiement contiennent des données à importer, un message similaire au suivant s’affiche :
 
-```
+```text
 Start import:
 Some information about importing
 ```
 
 Si les fichiers de configuration de déploiement ne contiennent aucune donnée à importer, un message similaire au suivant s’affiche :
 
-```
+```text
 Start import:
 Nothing to import
 ```

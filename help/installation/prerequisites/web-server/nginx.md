@@ -2,11 +2,11 @@
 title: Installation de Nginx pour les déploiements On-Premise
 description: Découvrez comment installer et configurer le serveur web Nginx pour les déploiements d’Adobe Commerce sur site. Configurez PHP-FPM et votre hôte virtuel.
 feature: Install, Configuration
-badgePaas: label="On-premise" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
+badgePaas: label="On-premise" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 352a71cb88ff38c0920201f49f1d7b889509fd61
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1477'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Utilisez cette section pour installer Adobe Commerce sur Ubuntu avec Nginx, PHP 
 
 ### Installer Nginx
 
-```bash
+```shell
 sudo apt -y install nginx
 ```
 
@@ -39,7 +39,7 @@ Pour installer et configurer `php-fpm` :
 
 1. Installez les packages `php-fpm` et `php-cli` pour la version PHP prise en charge par votre version d’Adobe Commerce. Sur Ubuntu, les noms de package suivent généralement le modèle suivant :
 
-   ```bash
+   ```shell
    apt-get -y install php<php-version>-fpm php<php-version>-cli
    ```
 
@@ -49,11 +49,11 @@ Pour installer et configurer `php-fpm` :
 
 1. Ouvrez les fichiers `php.ini` dans un éditeur :
 
-   ```bash
+   ```shell
    vim /etc/php/<php-version>/fpm/php.ini
    ```
 
-   ```bash
+   ```shell
    vim /etc/php/<php-version>/cli/php.ini
    ```
 
@@ -73,7 +73,7 @@ Pour installer et configurer `php-fpm` :
 
 1. Redémarrez le service `php-fpm` :
 
-   ```bash
+   ```shell
    systemctl restart php<php-version>-fpm
    ```
 
@@ -87,7 +87,7 @@ Vous pouvez télécharger Adobe Commerce de plusieurs façons :
 
 * [Obtenir le métapaquet du compositeur](../../composer.md)
 
-* [Clonez le référentiel Git](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
+* [Clonez le référentiel Git.](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 Cet exemple illustre une installation basée sur le compositeur à l’aide de la ligne de commande .
 
@@ -95,27 +95,27 @@ Cet exemple illustre une installation basée sur le compositeur à l’aide de l
 
 1. Passez au répertoire docroot du serveur web ou à un répertoire que vous avez configuré en tant qu&#39;hôte virtuel docroot. Pour cet exemple, nous utilisons le `/var/www/html` par défaut Ubuntu.
 
-   ```bash
+   ```shell
    cd /var/www/html
    ```
 
 1. Installez Composer globalement. Le compositeur est nécessaire pour mettre à jour les dépendances avant d’installer Adobe Commerce :
 
-   ```bash
+   ```shell
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
 1. Créez un projet Composer à l’aide du métapaquet Adobe Commerce.
 
-   **&#x200B;**
+   ****
 
-   ```bash
+   ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
    ```
 
-   **&#x200B;**
+   ****
 
-   ```bash
+   ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
@@ -123,29 +123,29 @@ Cet exemple illustre une installation basée sur le compositeur à l’aide de l
 
 1. Définissez les autorisations de lecture et d’écriture pour le groupe de serveurs web avant d’installer l’application. Cela est nécessaire pour que la ligne de commande puisse écrire des fichiers dans le système de fichiers.
 
-   ```bash
+   ```shell
    cd /var/www/html/<magento install directory>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
-   ```bash
+   ```shell
    chown -R :www-data . # Ubuntu
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
 1. Installez à partir de la [ligne de commande](../../advanced.md). Cet exemple suppose que le répertoire d’installation est nommé `magento2ee` et que l’hôte de base de données se trouve sur le même ordinateur (`localhost`) :
 
-   ```bash
+   ```shell
    bin/magento setup:install \
    --base-url=http://localhost/magento2ee \
    --db-host=localhost \
@@ -173,11 +173,11 @@ Cet exemple illustre une installation basée sur le compositeur à l’aide de l
 
 1. Basculez vers le mode Développeur :
 
-   ```bash
+   ```shell
    cd /var/www/html/magento2/bin
    ```
 
-   ```bash
+   ```shell
    ./magento deploy:mode:set developer
    ```
 
@@ -193,7 +193,7 @@ Ces instructions supposent que vous utilisez l&#39;emplacement par défaut Ubunt
 
 1. Créez un hôte virtuel pour votre site :
 
-   ```bash
+   ```shell
    vim /etc/nginx/sites-available/magento
    ```
 
@@ -223,19 +223,19 @@ Ces instructions supposent que vous utilisez l&#39;emplacement par défaut Ubunt
 
 1. Activez l’hôte virtuel que vous venez de créer en y créant un lien symbolique dans le répertoire `/etc/nginx/sites-enabled` :
 
-   ```bash
+   ```shell
    ln -s /etc/nginx/sites-available/magento /etc/nginx/sites-enabled
    ```
 
 1. Vérifiez que la syntaxe est correcte :
 
-   ```bash
+   ```shell
    nginx -t
    ```
 
 1. Redémarrez Nginx :
 
-   ```bash
+   ```shell
    systemctl restart nginx
    ```
 
@@ -249,21 +249,21 @@ Utilisez cette section pour installer Adobe Commerce sur CentOS 7 avec Nginx, PH
 
 ### Installer Nginx
 
-```bash
+```shell
 yum -y install epel-release
 ```
 
-```bash
+```shell
 yum -y install nginx
 ```
 
 Une fois l’installation terminée, démarrez nginx et configurez-le pour qu’il démarre au moment du démarrage :
 
-```bash
+```shell
 systemctl start nginx
 ```
 
-```bash
+```shell
 systemctl enable nginx
 ```
 
@@ -275,7 +275,7 @@ Adobe Commerce requiert plusieurs extensions [PHP](../php-settings.md) pour fonc
 
 1. Installez `php-fpm` :
 
-   ```bash
+   ```shell
    yum -y install <php-fpm-package>
    ```
 
@@ -283,7 +283,7 @@ Adobe Commerce requiert plusieurs extensions [PHP](../php-settings.md) pour fonc
 
    >[!NOTE]
    >
-   >Installez le package qui fournit les `php-fpm` pour la version PHP prise en charge par la version Adobe Commerce que vous installez. Les noms de packages varient selon le référentiel et le système d’exploitation. Voir [&#x200B; Configuration requise &#x200B;](../../system-requirements.md).
+   >Installez le package qui fournit les `php-fpm` pour la version PHP prise en charge par la version Adobe Commerce que vous installez. Les noms de packages varient selon le référentiel et le système d’exploitation. Voir [ Configuration requise ](../../system-requirements.md).
 
 1. Supprimez les commentaires de la ligne de `cgi.fix_pathinfo` et définissez la valeur sur `0`.
 
@@ -334,37 +334,37 @@ Adobe Commerce requiert plusieurs extensions [PHP](../php-settings.md) pour fonc
 
 1. Créez un répertoire pour le chemin de session PHP et modifiez le propriétaire en utilisateur et groupe `nginx` :
 
-   ```bash
+   ```shell
    mkdir -p /var/lib/php/session/
    ```
 
-   ```bash
+   ```shell
    chown -R nginx:nginx /var/lib/php/
    ```
 
 1. Créez un répertoire pour le socket PHP-FPM et remplacez le propriétaire par l&#39;utilisateur et le groupe `nginx` :
 
-   ```bash
+   ```shell
    mkdir -p /run/php-fpm/
    ```
 
-   ```bash
+   ```shell
    chown -R nginx:nginx /run/php-fpm/
    ```
 
 1. Démarrez le service `php-fpm` et configurez-le pour qu&#39;il démarre au démarrage :
 
-   ```bash
+   ```shell
    systemctl start php-fpm
    ```
 
-   ```bash
+   ```shell
    systemctl enable php-fpm
    ```
 
 1. Vérifiez que le service `php-fpm` est en cours d’exécution :
 
-   ```bash
+   ```shell
    netstat -pl | grep php-fpm.sock
    ```
 
@@ -378,7 +378,7 @@ Vous pouvez télécharger Adobe Commerce de plusieurs façons :
 
 * [Obtenir le métapaquet du compositeur](../../composer.md)
 
-* [Clonez le référentiel Git](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
+* [Clonez le référentiel Git.](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 Cet exemple illustre une installation basée sur le compositeur à l’aide de la ligne de commande .
 
@@ -386,27 +386,27 @@ Cet exemple illustre une installation basée sur le compositeur à l’aide de l
 
 1. Passez au répertoire docroot du serveur web ou à un répertoire que vous avez configuré en tant qu&#39;hôte virtuel docroot. Pour cet exemple, utilisez la `/usr/share/nginx/html` par défaut de CentOS.
 
-   ```bash
+   ```shell
    cd /usr/share/nginx/html
    ```
 
 1. Installez Composer globalement. Le compositeur est nécessaire pour mettre à jour les dépendances avant d’installer Adobe Commerce :
 
-   ```bash
+   ```shell
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
 1. Créez un projet Composer à l’aide du métapaquet Adobe Commerce.
 
-   **&#x200B;**
+   ****
 
-   ```bash
+   ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
    ```
 
-   **&#x200B;**
+   ****
 
-   ```bash
+   ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
@@ -414,29 +414,29 @@ Cet exemple illustre une installation basée sur le compositeur à l’aide de l
 
 1. Définissez les autorisations de lecture et d’écriture pour le groupe de serveurs web avant d’installer l’application. Cela est nécessaire pour que la ligne de commande puisse écrire des fichiers dans le système de fichiers.
 
-   ```bash
+   ```shell
    cd /usr/share/nginx/html/<magento install directory>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
-   ```bash
+   ```shell
    chown -R :nginx . # CentOS
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
 1. Installez à partir de la [ligne de commande](../../advanced.md). Cet exemple suppose que le répertoire d’installation est nommé `magento2ee` et que l’hôte de base de données se trouve sur le même ordinateur (`localhost`) :
 
-   ```bash
+   ```shell
    bin/magento setup:install \
    --base-url=http://localhost/magento2ee \
    --db-host=localhost \
@@ -457,11 +457,11 @@ Cet exemple illustre une installation basée sur le compositeur à l’aide de l
 
 1. Basculez vers le mode Développeur :
 
-   ```bash
+   ```shell
    cd /usr/share/nginx/html/magento2/bin
    ```
 
-   ```bash
+   ```shell
    ./magento deploy:mode:set developer
    ```
 
@@ -477,7 +477,7 @@ Ces instructions supposent que vous utilisez l’emplacement par défaut de Cent
 
 1. Créez un hôte virtuel pour votre site :
 
-   ```bash
+   ```shell
    vim /etc/nginx/conf.d/magento.conf
    ```
 
@@ -507,13 +507,13 @@ Ces instructions supposent que vous utilisez l’emplacement par défaut de Cent
 
 1. Vérifiez que la syntaxe est correcte :
 
-   ```bash
+   ```shell
    nginx -t
    ```
 
 1. Redémarrez Nginx :
 
-   ```bash
+   ```shell
    systemctl restart nginx
    ```
 
@@ -521,7 +521,7 @@ Ces instructions supposent que vous utilisez l’emplacement par défaut de Cent
 
 SELinux est activé par défaut sur CentOS 7. Utilisez la commande suivante pour confirmer qu’il est en cours d’exécution :
 
-```bash
+```shell
 sestatus
 ```
 
@@ -529,59 +529,59 @@ Pour configurer SELinux et le pare-feu :
 
 1. Installez les outils de gestion SELinux :
 
-   ```bash
+   ```shell
    yum -y install policycoreutils-python
    ```
 
 1. Exécutez les commandes suivantes pour modifier le contexte de sécurité du répertoire d&#39;installation :
 
-   ```bash
+   ```shell
    semanage fcontext -a -t httpd_sys_rw_content_t '/usr/share/nginx/html/magento2/app/etc(/.*)?'
    ```
 
-   ```bash
+   ```shell
    semanage fcontext -a -t httpd_sys_rw_content_t '/usr/share/nginx/html/magento2/var(/.*)?'
    ```
 
-   ```bash
+   ```shell
    semanage fcontext -a -t httpd_sys_rw_content_t '/usr/share/nginx/html/magento2/pub/media(/.*)?'
    ```
 
-   ```bash
+   ```shell
    semanage fcontext -a -t httpd_sys_rw_content_t '/usr/share/nginx/html/magento2/pub/static(/.*)?'
    ```
 
-   ```bash
+   ```shell
    restorecon -Rv '/usr/share/nginx/html/magento2/'
    ```
 
 1. Installez le package de pare-feu :
 
-   ```bash
+   ```shell
    yum -y install firewalld
    ```
 
 1. Démarrez le service de pare-feu et configurez-le pour qu&#39;il démarre au démarrage :
 
-   ```bash
+   ```shell
    systemctl start firewalld
    ```
 
-   ```bash
+   ```shell
    systemctl enable firewalld
    ```
 
 1. Exécutez les commandes suivantes pour ouvrir les ports HTTP et HTTPS afin de pouvoir accéder à l’URL de base à partir d’un navigateur web :
 
-   ```bash
+   ```shell
    firewall-cmd --permanent --add-service=http
    ```
 
-   ```bash
+   ```shell
    firewall-cmd --permanent --add-service=https
    ```
 
-   ```bash
+   ```shell
    firewall-cmd --reload
    ```
 
