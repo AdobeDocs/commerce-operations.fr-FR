@@ -17,7 +17,7 @@ Nous supposons que :
 
   Des tâches supplémentaires peuvent être nécessaires pour déployer plusieurs sites web dans un environnement hébergé. Pour plus d’informations, contactez votre fournisseur d’hébergement.
 
-  Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Une fois les tâches décrites dans cette rubrique terminées, consultez [Configuration de plusieurs sites web ou magasins](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) dans le guide _Commerce sur les infrastructures cloud_.
+  Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Une fois les tâches décrites dans cette rubrique terminées, consultez [Configuration de plusieurs sites web ou magasins](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=fr) dans le guide _Commerce sur les infrastructures cloud_.
 
 - Vous acceptez plusieurs domaines dans un fichier hôte virtuel ou utilisez un hôte virtuel par site web ; les fichiers de configuration de l&#39;hôte virtuel se trouvent dans `/etc/nginx/sites-available`.
 - Vous utilisez le `nginx.conf.sample` fourni par Commerce avec uniquement les modifications abordées dans ce tutoriel.
@@ -280,7 +280,7 @@ bin/magento cache:clean config full_page
 >[!INFO]
 >
 >- Des tâches supplémentaires peuvent être nécessaires pour déployer plusieurs sites web dans un environnement hébergé. Pour plus d’informations, contactez votre fournisseur d’hébergement.
->- Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de plusieurs sites web ou magasins cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) dans le guide _Commerce sur l’infrastructure cloud_.
+>- Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de plusieurs sites web ou magasins cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=fr) dans le guide _Commerce sur l’infrastructure cloud_.
 
 ### Dépannage
 

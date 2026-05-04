@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fournit des correctifs individuels développés par Adobe et la communauté Magento Open Source. Il vous permet d’appliquer, d’annuler et d’afficher des informations générales sur tous les correctifs individuels disponibles pour la version installée d’Adobe Commerce. Vous pouvez appliquer des correctifs à des projets Adobe Commerce, quelle que soit la personne qui les a développés. Par exemple, vous pouvez appliquer un correctif développé par la communauté aux projets Adobe Commerce.
 
-Regardez cette [vidéo technique](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html) et découvrez comment utiliser l’outil de correctifs de qualité pour Adobe Commerce.
+Regardez cette [vidéo technique](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=fr) et découvrez comment utiliser l’outil de correctifs de qualité pour Adobe Commerce.
 
 >[!INFO]
 >
->Voir [&#x200B; Application de correctifs individuels &#x200B;](#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) pour consulter la liste complète des correctifs publiés.
+>Voir [&#x200B; Application de correctifs individuels &#x200B;](#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) pour consulter la liste complète des correctifs publiés.
 
 >[!WARNING]
 >
@@ -62,7 +62,7 @@ Adobe Commerce 2.3.5.
 Le tableau de statut comprend les éléments suivants :
 
 - **Type** :
-   - `Optional` — Tous les correctifs du [!DNL Quality Patches Tool] et du package [Guide de Commerce sur les infrastructures cloud > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) sont facultatifs pour les installations Adobe Commerce.
+   - `Optional` — Tous les correctifs du [!DNL Quality Patches Tool] et du package [Guide de Commerce sur les infrastructures cloud > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) sont facultatifs pour les installations Adobe Commerce.
    - `Deprecated` — Adobe a rendu obsolète le correctif individuel. Si vous avez appliqué le correctif, nous vous recommandons de le rétablir. L’opération de rétablissement supprime également le correctif de la table des statuts.
 
 - **Statut** :
@@ -83,7 +83,7 @@ Le tableau de statut comprend les éléments suivants :
 
 >[!WARNING]
 >
->Il est recommandé de tester tous les correctifs dans un environnement d’évaluation ou de développement avant de les déployer en production. Il est également recommandé de sauvegarder vos données avant d’appliquer un correctif. Voir [&#x200B; Sauvegarde et restauration du système de fichiers, du support et de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
+>Il est recommandé de tester tous les correctifs dans un environnement d’évaluation ou de développement avant de les déployer en production. Il est également recommandé de sauvegarder vos données avant d’appliquer un correctif. Voir [&#x200B; Sauvegarde et restauration du système de fichiers, du support et de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=fr).
 
 Pour appliquer un seul correctif, exécutez la commande suivante où `MAGETWO-XXXX` correspond à l’identifiant de correctif spécifié dans le tableau d’état :
 
@@ -111,7 +111,7 @@ Vous devez nettoyer le cache après l’application des correctifs pour afficher
 
 >[!WARNING]
 >
->Il est recommandé de tester tous les correctifs dans un environnement d’évaluation ou de développement avant de les déployer en production. Il est également recommandé de sauvegarder vos données avant d’appliquer un correctif. Voir [&#x200B; Sauvegarde et restauration du système de fichiers, du support et de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
+>Il est recommandé de tester tous les correctifs dans un environnement d’évaluation ou de développement avant de les déployer en production. Il est également recommandé de sauvegarder vos données avant d’appliquer un correctif. Voir [&#x200B; Sauvegarde et restauration du système de fichiers, du support et de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=fr).
 
 Pour rétablir un seul correctif, exécutez la commande suivante où `MAGETWO-XXXX` correspond à l’identifiant de correctif spécifié dans le tableau d’état :
 

@@ -35,9 +35,9 @@ Cela modifie l’URL des fichiers statiques et force le navigateur à charger la
 
 Commerce active cette fonctionnalité par défaut et Adobe recommande de la conserver pour éviter les problèmes liés aux navigateurs qui diffusent d’anciennes ressources statiques.
 
-La configuration de la signature de contenu statique se trouve dans [**[!UICONTROL Stores]**> Paramètres > Configuration >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
+La configuration de la signature de contenu statique se trouve dans [**[!UICONTROL Stores]**> Paramètres > Configuration >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
 
-- **On-Premise uniquement** : cette configuration est disponible si votre site n’est **pas** en [mode de production](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode).
+- **On-Premise uniquement** : cette configuration est disponible si votre site n’est **pas** en [mode de production](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=fr#production-mode).
 - **Cloud** : cette configuration est masquée, car le mode de production est strictement appliqué. Vous devez donc utiliser la ligne de commande, comme illustré ci-dessous.
 
 ![Paramètres des fichiers statiques](../../assets/configuration/static-files-settings.png)

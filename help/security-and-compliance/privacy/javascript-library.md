@@ -21,7 +21,7 @@ Cette bibliothèque fournit un ensemble de fonctions pour créer des demandes de
 
 >[!NOTE]
 >
->Si le [Mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) est activé, Commerce ne collecte pas de données comportementales tant que l’acheteur n’a pas donné son consentement. Si le [!UICONTROL **Mode de restriction des cookies**] est désactivé, Commerce collecte des données comportementales par défaut.
+>Si le [Mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=fr) est activé, Commerce ne collecte pas de données comportementales tant que l’acheteur n’a pas donné son consentement. Si le [!UICONTROL **Mode de restriction des cookies**] est désactivé, Commerce collecte des données comportementales par défaut.
 
 ## Installation
 
