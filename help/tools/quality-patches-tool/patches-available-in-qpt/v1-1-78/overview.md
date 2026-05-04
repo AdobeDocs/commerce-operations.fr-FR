@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f78520918618a750cdca062a0543eb4821dfc525
+source-git-commit: 371cca36da675d8b9ad8e7b0281e48a3067073e2
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 0%
 Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.78.
 
 QPT v1.1.78 comprend les correctifs suivants :
+1. **ACP2E-4416** : correction d’un problème en raison duquel les points de récompense client ne sont pas initialisés lors de leur création dans l’administration.
+1. **ACP2E-4419** : correction d’un problème en raison duquel les cartes-cadeaux ne sont pas appliquées correctement lors du passage en caisse après la validation réussie de reCAPTCHA v2 (« Je ne suis pas un robot ») sur le storefront.
+1. **ACP2E-4431** : correction d’un problème en raison duquel les produits associés correspondant aux règles cible étaient supprimés lors du processus de réindexation.
+1. **[ACP2E-4448](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4448.md)** : correction d’un problème en raison duquel les modifications de configuration effectuées lors des pannes de Redis ne sont pas prises en compte après la récupération de Redis, ce qui entraîne la persistance de valeurs obsolètes.
 1. **[ACP2E-4416](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416.md)** : correction d’un problème en raison duquel les points de récompense client ne sont pas initialisés lors de leur création dans l’administration.
 1. **[ACP2E-4431](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431.md)** : correction du problème en raison duquel les [!UICONTROL Related Products] correspondant aux règles de la cible sont supprimés pendant le processus de réindexation.
 1. **[ACP2E-4419](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)** : correction d’un problème en raison duquel les cartes-cadeaux ne sont pas correctement appliquées lors du passage en caisse après la validation réussie de reCAPTCHA v2 (« Je ne suis pas un robot ») sur le storefront.
