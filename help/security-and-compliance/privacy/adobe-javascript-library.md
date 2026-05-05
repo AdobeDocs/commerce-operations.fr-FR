@@ -4,7 +4,7 @@ description: Découvrez comment utiliser des outils personnalisés pour accéder
 hide: true
 hidefromtoc: true
 exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-La bibliothèque Adobe Privacy JavaScript [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=fr) est un ensemble d’outils permettant de créer un processus d’accès et de suppression des données privées.
+La bibliothèque Adobe Privacy JavaScript [](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) est un ensemble d’outils permettant de créer un processus d’accès et de suppression des données privées.
 
-Les services de suivi des données d’Adobe Commerce peuvent stocker des informations privées applicables aux réglementations de confidentialité telles que le [&#x200B; Règlement général sur la protection des données (RGPD)](gdpr.md) et le [California Consumer Privacy Act (CCPA)](ccpa.md).
+Les services de suivi des données d’Adobe Commerce peuvent stocker des informations privées applicables aux réglementations de confidentialité telles que le [ Règlement général sur la protection des données (RGPD)](gdpr.md) et le [California Consumer Privacy Act (CCPA)](ccpa.md).
 
 Cette bibliothèque fournit un ensemble unifié de fonctions permettant de créer des demandes d’accès à des informations personnelles, de les envoyer aux implémentations de chaque produit et de collecter les réponses. Utilisez cette bibliothèque pour récupérer et supprimer les données stockées dans le navigateur par ces services de suivi de données.
 
@@ -26,9 +26,9 @@ Cette bibliothèque fournit un ensemble unifié de fonctions permettant de crée
 Utilisez l’une des méthodes suivantes pour télécharger le fichier de bibliothèque :
 
 - npm : `npm install @adobe/adobe-privacy`
-- GitHub : [&#128279;](https://github.com/Adobe-Marketing-Cloud/adobe-privacy)
+- GitHub : [](https://github.com/Adobe-Marketing-Cloud/adobe-privacy)
 
-Une fois que vous disposez du fichier, vous devez l’ajouter à un module ou à un thème personnalisé installé dans votre instance Adobe Commerce. Suivez les instructions décrites dans la rubrique [&#x200B; Utilisation de JavaScript personnalisés &#x200B;](https://developer.adobe.com/commerce/frontend-core/javascript/custom) pour accomplir cette tâche.
+Une fois que vous disposez du fichier, vous devez l’ajouter à un module ou à un thème personnalisé installé dans votre instance Adobe Commerce. Suivez les instructions décrites dans la rubrique [ Utilisation de JavaScript personnalisés ](https://developer.adobe.com/commerce/frontend-core/javascript/custom) pour accomplir cette tâche.
 
 ## Utilisation
 
@@ -43,7 +43,7 @@ La bibliothèque JS d’Adobe Privacy fournit diverses fonctions de gestion des 
 `retrieveThenRemoveIdentities()`
 : cette fonction est similaire à `removeIdentities()` dans la mesure où elle récupère un tableau d’identités et les supprime du navigateur.
 
-Pour plus d’informations et d’exemples d’utilisation de ces fonctions, consultez la [documentation de la bibliothèque officielle](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=fr).
+Pour plus d’informations et d’exemples d’utilisation de ces fonctions, consultez la [documentation de la bibliothèque officielle](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
 
 ### Initialisation
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 Le constructeur accepte un objet de configuration avec des paramètres lors de l’instanciation.
-Reportez-vous à la [documentation officielle de la bibliothèque](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=fr) pour obtenir la liste de ces paramètres de configuration.
+Reportez-vous à la [documentation officielle de la bibliothèque](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) pour obtenir la liste de ces paramètres de configuration.

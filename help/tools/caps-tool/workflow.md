@@ -3,9 +3,9 @@ title: Fonctionnement  [!DNL Cloud Automation Patching Service (CAPS)]  workflow
 description: Découvrez le processus  [!DNL Cloud Automation Patching Service (CAPS)]  workflow, notamment la terminologie, les phases de workflow et les opérations pour une gestion automatisée des correctifs.
 hide: true
 hidefromtoc: true
-source-git-commit: eff8c0ae9e1d9db6b46ba7cfbb915685ab5b194d
+source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
