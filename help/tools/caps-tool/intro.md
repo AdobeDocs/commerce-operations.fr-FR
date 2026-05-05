@@ -53,7 +53,7 @@ Ce guide est destiné aux commerçants et partenaires Adobe Commerce Cloud qui s
 
 Découvrez le service d’application automatisée de correctifs d’Adobe Cloud et comment cet outil aide les utilisateurs et utilisatrices à rechercher et à appliquer rapidement des correctifs de sécurité. La vidéo suivante explique comment y accéder via le tableau de bord SWAT, choisir votre projet et votre environnement, et appliquer des correctifs en un seul clic.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476249/?captions=fre_fr&learn=on&enablevpops)
 
 ## Cas d’utilisation courants
 
