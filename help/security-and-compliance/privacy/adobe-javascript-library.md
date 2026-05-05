@@ -15,9 +15,9 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-La bibliothèque Adobe Privacy JavaScript [](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) est un ensemble d’outils permettant de créer un processus d’accès et de suppression des données privées.
+La bibliothèque Adobe Privacy JavaScript [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) est un ensemble d’outils permettant de créer un processus d’accès et de suppression des données privées.
 
-Les services de suivi des données d’Adobe Commerce peuvent stocker des informations privées applicables aux réglementations de confidentialité telles que le [ Règlement général sur la protection des données (RGPD)](gdpr.md) et le [California Consumer Privacy Act (CCPA)](ccpa.md).
+Les services de suivi des données d’Adobe Commerce peuvent stocker des informations privées applicables aux réglementations de confidentialité telles que le [&#x200B; Règlement général sur la protection des données (RGPD)](gdpr.md) et le [California Consumer Privacy Act (CCPA)](ccpa.md).
 
 Cette bibliothèque fournit un ensemble unifié de fonctions permettant de créer des demandes d’accès à des informations personnelles, de les envoyer aux implémentations de chaque produit et de collecter les réponses. Utilisez cette bibliothèque pour récupérer et supprimer les données stockées dans le navigateur par ces services de suivi de données.
 
@@ -26,9 +26,9 @@ Cette bibliothèque fournit un ensemble unifié de fonctions permettant de crée
 Utilisez l’une des méthodes suivantes pour télécharger le fichier de bibliothèque :
 
 - npm : `npm install @adobe/adobe-privacy`
-- GitHub : [](https://github.com/Adobe-Marketing-Cloud/adobe-privacy)
+- GitHub : [&#128279;](https://github.com/Adobe-Marketing-Cloud/adobe-privacy)
 
-Une fois que vous disposez du fichier, vous devez l’ajouter à un module ou à un thème personnalisé installé dans votre instance Adobe Commerce. Suivez les instructions décrites dans la rubrique [ Utilisation de JavaScript personnalisés ](https://developer.adobe.com/commerce/frontend-core/javascript/custom) pour accomplir cette tâche.
+Une fois que vous disposez du fichier, vous devez l’ajouter à un module ou à un thème personnalisé installé dans votre instance Adobe Commerce. Suivez les instructions décrites dans la rubrique [&#x200B; Utilisation de JavaScript personnalisés &#x200B;](https://developer.adobe.com/commerce/frontend-core/javascript/custom) pour accomplir cette tâche.
 
 ## Utilisation
 

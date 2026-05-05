@@ -36,9 +36,9 @@ Si vous ne voyez aucun projet dans l’interface utilisateur [!DNL CAPS], vous d
 
 ## Accès aux [!DNL CAPS]
 
-L’outil CAPS est disponible dans le tableau de bord de l’outil d’analyse à l’échelle du site à l’adresse [](https://supportinsights.adobe.com/commerce/). Sous l’onglet Automatisation de l’application de correctifs , vous pouvez sélectionner votre projet et votre environnement.
+L’outil CAPS est disponible dans le tableau de bord de l’outil d’analyse à l’échelle du site à l’adresse [&#128279;](https://supportinsights.adobe.com/commerce/). Sous l’onglet Automatisation de l’application de correctifs , vous pouvez sélectionner votre projet et votre environnement.
 
-1. Accédez à l’outil d’analyse à l’échelle du site sur [](https://supportinsights.adobe.com/commerce/).
+1. Accédez à l’outil d’analyse à l’échelle du site sur [&#128279;](https://supportinsights.adobe.com/commerce/).
 1. Cliquez sur l’onglet [!UICONTROL Patching Automation] dans l’interface.
 1. Sélectionnez le projet et l’environnement dans lesquels vous souhaitez appliquer des correctifs.
 1. Examinez les correctifs disponibles et leur statut de compatibilité.
