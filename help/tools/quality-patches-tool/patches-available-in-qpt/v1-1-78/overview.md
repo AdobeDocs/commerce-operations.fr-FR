@@ -4,7 +4,7 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4c95c5a6c60ff701e81a3d58cbcd587810322a24
+source-git-commit: 0c45d7ba61be21d0983b242cfdbe0b9591dd5c5c
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -20,8 +20,8 @@ QPT v1.1.78 comprend les correctifs suivants :
 1. **ACP2E-4419** : correction d’un problème en raison duquel les cartes-cadeaux ne sont pas appliquées correctement lors du passage en caisse après la validation réussie de reCAPTCHA v2 (« Je ne suis pas un robot ») sur le storefront.
 1. **ACP2E-4431** : correction d’un problème en raison duquel les produits associés correspondant aux règles cible étaient supprimés lors du processus de réindexation.
 1. **ACP2E-4448** : correction d’un problème en raison duquel les modifications de configuration effectuées lors des pannes de Redis ne sont pas prises en compte après la récupération de Redis, ce qui entraîne la persistance de valeurs obsolètes.
+1. **[ACP2E-4456](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4456.md)** : correction d’un problème en raison duquel l’annulation d’une commande à l’aide d’une mutation GraphQL ne fait pas passer une commande payée entièrement avec des cartes-cadeaux au statut Fermé.
 1. **[ACP2E-4452](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4452.md)** : correction du problème en raison duquel les prix des produits sur la page [!UICONTROL Quick Order] incluent la taxe, quelle que soit la configuration de l’affichage de la taxe.
-1. **ACP2E-4456** : correction d’un problème en raison duquel l’annulation d’une commande à l’aide d’une mutation GraphQL ne fait pas passer une commande payée entièrement avec des cartes-cadeaux au statut Fermé.
 1. **ACP2E-4507** : correction d’un problème en raison duquel la configuration des options de mot de passe n’était pas appliquée aux demandes de réinitialisation de mot de passe client effectuées par des mutations de GraphQL.
 1. **ACP2E-4513** : corrige le problème en raison duquel les images CAPTCHA expirées ne sont pas supprimées du système.
 1. **ACP2E-4522** : correction d’une erreur de clé en double intermittente qui se produit dans la table quote_coupons lorsque plusieurs demandes de fusion de panier ou d’enregistrement de devis s’exécutent simultanément.
