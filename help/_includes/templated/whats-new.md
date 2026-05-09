@@ -23,7 +23,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.78 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665">ACP2E-4665 : les produits enfants de produits configurables avec des vidéos dans les galeries de produits n’apparaissent pas lorsqu’ils sont demandés via l’API REST</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.78 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665">ACP2E-4665 : les produits enfants de produits configurables avec des vidéos dans les galeries de produits n’apparaissent pas lorsqu’ils sont demandés via l’API REST</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -45,7 +45,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.78 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613">ACP2E-4613 : les grandes structures de répertoires multimédias ralentissent les réponses gettree et retardent le chargement de l’arborescence du répertoire Media Gallery</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.78 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613">ACP2E-4613 : les grandes structures de répertoires multimédias ralentissent les réponses gettree et retardent le chargement de l’arborescence du répertoire Media Gallery</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -67,7 +67,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.78 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535">ACP2E-4535 : l’envoi du formulaire de mot de passe oublié détruit ou régénère la session (modifications PHPSESSID) et efface le panier d’invités</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.78 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535">ACP2E-4535 : l’envoi du formulaire de mot de passe oublié détruit ou régénère la session (modifications PHPSESSID) et efface le panier d’invités</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -75,7 +75,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/953e231d2161d84e2444fa46ac95b93dbba28241">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.78 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507">ACP2E-4507 : la configuration des options de mot de passe ne s’applique pas aux demandes de réinitialisation de mot de passe client effectuées via des mutations de GraphQL</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.78 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507">ACP2E-4507 : la configuration des options de mot de passe ne s’applique pas aux demandes de réinitialisation de mot de passe client effectuées via des mutations de GraphQL</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -83,7 +83,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b657f2e50d48c9179d1c6b3559ee7e6ee99b306d">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.78 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609">ACP2E-4609 : la page Mes devis n’affiche aucun devis lorsque certains devis contiennent des produits supprimés</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.78 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609">ACP2E-4609 : la page Mes devis n’affiche aucun devis lorsque certains devis contiennent des produits supprimés</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -91,7 +91,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/670dacfa2bdc211eb9f4ed6788144ba6c1dac678">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.78 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431">ACP2E-4431 : les produits associés correspondants par des règles cible sont supprimés pendant le processus de réindexation</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.78 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431">ACP2E-4431 : les produits associés correspondants par des règles cible sont supprimés pendant le processus de réindexation</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -99,7 +99,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f9424da66669c54eb0a794555ea7df66625f6c71">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.78 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416">ACP2E-4416 : les points de récompense client ne s’initialisent pas lorsqu’ils sont créés dans l’administration</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.78 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416">ACP2E-4416 : les points de récompense client ne s’initialisent pas lorsqu’ils sont créés dans l’administration</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
