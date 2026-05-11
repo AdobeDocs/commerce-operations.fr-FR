@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: fcc363df787b5d2f35e8109481d0f9d94c6da9e7
+source-git-commit: 24a6d3e2da8666278b0f491e3caaf6b2509c31d8
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,9 @@ QPT v1.1.78 comprend les correctifs suivants :
 1. **ACP2E-4609** : correction du problème en raison duquel la page Mes devis n&#39;affiche aucun devis lorsque certains devis contiennent des produits supprimés.
 1. **[ACP2E-4613](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613.md)** : correction d&#39;un problème en raison duquel les structures de répertoires multimédia volumineuses provoquaient des réponses gettree lentes, ce qui entraînait des temps de chargement étendus pour l&#39;arborescence de répertoires **[!UICONTROL Media Gallery]**.
 1. **ACP2E-4628** : correction d’un problème en raison duquel l’importation de clients avec des adresses e-mail en majuscules entraînait l’erreur de clé de tableau indéfinie, lorsque le Partage de compte était défini sur Global.
+1. **ACP2E-4665** : corrige le problème où les produits enfants de produits configurables contenant des vidéos dans les galeries de produits ne sont pas répertoriés lorsqu’ils sont demandés via l’API REST.
+1. **ACP2E-4732** : correction d&#39;un problème en raison duquel l&#39;indexation partielle s&#39;arrêtait pour les clients avec un grand nombre de mises à jour lorsque la colonne version_id de la table changelog atteignait sa valeur maximale.
+1. **[ACP2E-4763](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4763.md)** : correction du problème en raison duquel la requête customerOrders de GraphQL renvoie des valeurs original_price_include_tax et original_row_total_include_tax gonflées lorsque les prix du catalogue sont définis sur Taxe incluse, en raison d’une application double de la taxe.
 1. **[ACP2E-4732](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4732.md)** : correction d&#39;un problème en raison duquel l&#39;indexation partielle s&#39;arrêtait pour les clients avec un grand nombre de mises à jour lorsque la colonne version_id de la table changelog atteignait sa valeur maximale.
 1. **[ACP2E-4665](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665.md)** : corrige le problème où les produits enfants de produits configurables contenant des vidéos dans les galeries de produits ne sont pas répertoriés lorsqu’ils sont demandés via l’API REST.
 1. **ACP2E-4665** : corrige le problème où les produits enfants de produits configurables contenant des vidéos dans les galeries de produits ne sont pas répertoriés lorsqu’ils sont demandés via l’API REST.
