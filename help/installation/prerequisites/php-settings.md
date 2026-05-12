@@ -3,7 +3,7 @@ title: Paramètres PHP
 description: Suivez ces étapes pour installer les extensions PHP requises et configurer les paramètres PHP requis pour les installations sur site d’Adobe Commerce.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: e0c62575f71a6d212ba9dab33e38587950e3d783
+source-git-commit: fdd98cea53f1a060b8b56268250b463c74abaaa1
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Cette rubrique explique comment définir les options PHP requises.
 >
 >Les versions PHP prises en charge varient selon la version d’Adobe Commerce. Consultez [Configuration requise](../system-requirements.md) pour connaître les versions PHP exactes prises en charge par la version que vous installez.
 
-Pour obtenir des conseils sur la configuration du cloud, consultez [Paramètres PHP](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/php-settings) dans le guide _Commerce sur les infrastructures cloud_.
+Pour obtenir des conseils sur la configuration du cloud, consultez [Paramètres PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) dans le guide _Commerce sur les infrastructures cloud_.
 
 ## Contrôle de processus PHP
 
@@ -106,7 +106,7 @@ Cette section explique comment trouver les fichiers de configuration nécessaire
 
 ### Rechercher `php.ini` fichier de configuration
 
-Pour trouver la configuration du serveur web, exécutez un fichier [&#128279;](optional-software.md#create-phpinfophp) dans votre navigateur web, puis recherchez le `Loaded Configuration File` comme suit :`phpinfo.php`
+Pour trouver la configuration du serveur web, exécutez un fichier ](optional-software.md#create-phpinfophp) dans votre navigateur web, puis recherchez le `Loaded Configuration File` comme suit :[`phpinfo.php`
 
 ![Page d’informations PHP](../../assets/installation/config_phpini-webserver.png)
 
@@ -206,8 +206,8 @@ Pour définir `opcache.ini` options :
 Consultez les articles suivants de l’assistance Adobe Commerce pour obtenir de l’aide sur la résolution des problèmes PHP :
 
 - [Erreur de version PHP ou erreur 404 lors de l’accès à Adobe Commerce dans un navigateur](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [Erreurs de paramètres PHP](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
-- [Problèmes de vérification du niveau de préparation pour les versions PHP](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
-- [Erreurs et solutions PHP fatales courantes](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
+- [Erreurs de paramètres PHP](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
+- [Problèmes de vérification du niveau de préparation pour les versions PHP](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+- [Erreurs et solutions PHP fatales courantes](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
-<!-- Last updated from includes: 2025-04-04 22:27:22 -->
+<!-- Last updated from includes: 2026-05-11 20:38:54 -->

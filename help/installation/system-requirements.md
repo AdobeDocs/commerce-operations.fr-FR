@@ -1,10 +1,10 @@
 ---
 title: Configuration requise
-description: Découvrez les dépendances logicielles et la configuration requise pour Adobe Commerce. Découvrez les configurations testées pour garantir la compatibilité avec votre environnement de déploiement.
+description: Découvrez les dépendances logicielles et la configuration requise pour Adobe Commerce. Voir les configurations testées pour assurer la compatibilité avec votre environnement de déploiement.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
+source-git-commit: fdd98cea53f1a060b8b56268250b463c74abaaa1
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Vous trouverez ci-dessous un résumé des dépendances logicielles et des services testés pour Adobe Commerce.
 
-Il existe quelques différences dans les dépendances de Commerce on Cloud. La prise en charge de la compatibilité et des versions des services pour Adobe Commerce on Cloud est déterminée par les services testés et déployés dans les environnements cloud hébergés. Elle diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce. Par exemple, Elasticsearch 7.17 est pris en charge pour Commerce 2.4.4 pour les déploiements on-premise, mais OpenSearch 1 est pris en charge pour la version 2.4.4 d’Adobe Commerce on Cloud.
+Il existe quelques différences dans les dépendances de Commerce on Cloud. La prise en charge de la compatibilité et des versions des services pour Adobe Commerce on Cloud est déterminée par les services testés et déployés dans les environnements cloud hébergés. Elle diffère parfois des versions prises en charge par les déploiements sur site d’Adobe Commerce.
 
 >[!NOTE]
 >
@@ -23,9 +23,7 @@ Il existe quelques différences dans les dépendances de Commerce on Cloud. La p
 
 Les tableaux suivants présentent les versions des dépendances de logiciels tiers qu’Adobe a testées avec des versions Adobe Commerce spécifiques.
 
-Adobe ne prend en charge que la configuration système requise décrite dans les tableaux ci-après. Par exemple, la version 2.4.5 est entièrement testée avec MariaDB 10.4. Adobe vous recommande d’effectuer une mise à niveau vers MariaDB 10.4 avant la mise à niveau vers la version 2.4.5.
-
-Pour garantir un processus de mise à niveau fluide et éviter les échecs de déploiement, Adobe recommande de mettre à niveau les versions de RabbitMQ de manière incrémentielle. Par exemple, lors de la mise à niveau de la version 3.8 vers la version 4.1, vous devez d’abord effectuer la mise à niveau de la version 3.8 vers la version 3.9, puis de la version 3.9 vers la version 3.10, etc. Ce n’est qu’après avoir atteint la version 3.13 que vous devez procéder à la mise à niveau vers la version 4.1.
+Adobe ne prend en charge que la configuration système requise décrite dans les tableaux ci-après. Par exemple, la version 2.4.9 est entièrement testée avec MariaDB 12.3. Adobe vous recommande d’effectuer une mise à niveau vers MariaDB 12.3 avant la mise à niveau vers la version 2.4.9.
 
 >[!BEGINTABS]
 
@@ -35,45 +33,52 @@ Le modèle [Commerce sur le cloud](https://github.com/magento/magento-cloud) fou
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
-Les services et versions sont définis dans [le fichier `services.yaml`](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Voici la configuration de service par défaut pour Commerce 2.4.6 sur l’infrastructure cloud :
-
-```yaml
-mysql:
-    type: mysql:10.6
-    disk: 5120
-
-redis:
-    type: redis:7.0
-
-opensearch:
-    type: opensearch:2
-    disk: 1024
-```
-
-Voir [Configuration des services](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) dans le guide *Commerce sur les infrastructures cloud*.
+Pour la configuration par défaut, les services et versions sont définis dans [le fichier `services.yaml`](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
+Pour plus d’informations, consultez la section [Configurer les services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) dans le guide *Commerce sur les infrastructures cloud*.
 
 >[!TAB Commerce local]
 
 {{$include /help/_includes/templated/system-requirements-table.md}}
 
+**MySQL 8.0 a atteint la fin de la prise en charge (EOS) le 30 avril 2026.**
+À compter de cette date, Adobe Commerce 2.4.7, 2.4.6, 2.4.5 et 2.4.4 ne fournira pas de compatibilité ou
+Prise en charge de toutes les versions de MySQL publiées après MySQL 8.0. Adobe ne le fera pas
+valider ou fournir la prise en charge des versions majeures MySQL plus récentes sur cette Adobe
+Ligne de version de Commerce.
+Tous les clients et clientes Adobe Commerce On-Premise exécutant les versions 2.4.7, 2.4.6, 2.4.5 et 2.4.4 ont un niveau de sécurité élevé
+a conseillé de migrer ses serveurs de base de données vers une version MariaDB compatible.
+
+**Elasticsearch 7.17 a atteint la fin de la prise en charge (EOS) le 15 janvier 2026.**
+À compter de cette date, Adobe Commerce 2.4.6, 2.4.5 et 2.4.4 ne fournira pas de compatibilité ou
+la prise en charge de toutes les versions d’Elasticsearch publiées après Elasticsearch 7. Adobe ne le fera pas
+valider ou fournir la prise en charge des versions Elasticsearch majeures plus récentes sur cette Adobe
+Ligne de version de Commerce.
+Tous les clients et clientes Adobe Commerce On-Premise exécutant les versions 2.4.6, 2.4.5 et 2.4.4 ont un niveau de sécurité élevé
+Il est conseillé de migrer leur infrastructure de recherche vers une version OpenSearch compatible.
+
 >[!ENDTABS]
+
+>[!AVAILABILITY]
+>
+><sup>1</sup> La compatibilité entre MariaDB 12.3 et Adobe Commerce 2.4.9 sera confirmée suite à la publication officielle de MariaDB 12.3, prévue pour mai et juin.
 
 ## Paramètres PHP
 
 Il existe des paramètres de configuration PHP spécifiques, comme le paramètre `memory_limit`, qui peuvent vous aider à éviter les problèmes courants liés à l&#39;utilisation d&#39;Adobe Commerce. Voir [Paramètres PHP requis](prerequisites/php-settings.md).
 
-Pour obtenir des conseils sur la configuration du cloud, consultez [Paramètres PHP](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/php-settings) dans le guide *Commerce sur les infrastructures cloud*.
+Pour obtenir des conseils sur la configuration du cloud, consultez [Paramètres PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) dans le guide *Commerce sur les infrastructures cloud*.
 
 ### PHP OPcache
 
 Adobe vous recommande de vérifier que [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) est activé pour des raisons de performances. Le cache OP est activé dans de nombreuses distributions PHP.
+
 - **Pour les déploiements d’Adobe Commerce sur les infrastructures cloud**, l’extension `opcache` est installée par défaut.
 - **Pour les déploiements sur site d’Adobe Commerce :**
    - [Vérifiez que l&#39;extension PHP OPcache est installée](prerequisites/php-settings.md#verify-php-is-installed).
    - Pour obtenir des conseils spécifiques sur les paramètres de performance, consultez les recommandations logicielles pour [les paramètres PHP](../performance/software.md#php-settings) dans le guide *Bonnes pratiques de performance*.
 
 
-If you must install OPcache separately, see the [PHP OPcache documentation](https://www.php.net/manual/en/opcache.setup.php).
+Si vous devez installer OPcache séparément, consultez la documentation [PHP OPcache](https://www.php.net/manual/en/opcache.setup.php).
 
 ### Contrôle de processus PHP
 
@@ -81,7 +86,7 @@ If you must install OPcache separately, see the [PHP OPcache documentation](http
 
 ### PHPUnit
 
-PHPUnit v9 (comme outil de ligne de commande).
+La version majeure de PHPUnit prise en charge dépend de la version d’Adobe Commerce. Adobe teste les versions 2.4.9 avec PHPUnit 12, 2.4.8-p5 avec PHPUnit 10 et 2.4.7-p10 à 2.4.4-p18 avec PHPUnit 9. Installez PHPUnit comme outil de ligne de commande à la version majeure correspondant aux configurations testées par Adobe pour votre version.
 
 ### Extensions PHP
 
@@ -89,7 +94,7 @@ Les [instructions d’installation de PHP](prerequisites/php-settings.md) inclue
 
 >[!TIP]
 >
->Pour les extensions PHP dans l’infrastructure cloud, voir [Activer les extensions PHP](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) dans le guide _Commerce sur l’infrastructure cloud_.
+>Pour les extensions PHP dans l’infrastructure cloud, voir [Activer les extensions PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) dans le guide _Commerce sur l’infrastructure cloud_.
 
 >[!BEGINTABS]
 
@@ -107,7 +112,7 @@ Reportez-vous à la [documentation officielle PHP](https://www.php.net/manual/en
 
 >[!ENDTABS]
 
-## Divers
+## Autres configurations logicielles requises
 
 Cette section décrit la prise en charge et la compatibilité de tous les autres types de logiciels requis et facultatifs.
 
@@ -120,23 +125,23 @@ Cette section décrit la prise en charge et la compatibilité de tous les autres
 Storefront et Admin :
 
 - Microsoft Edge (dernière et précédente version majeure)
-- Firefox (dernière et précédente version majeure ; tout système d’exploitation)
-- Chrome (dernière et précédente version majeure ; tout système d’exploitation)
-- Safari (dernière et précédente version majeure ; macOS uniquement)
-- Safari pour iOS (dernière et précédente version majeure, pour storefront)
-- Chrome pour Android (dernière et précédente version majeure, pour storefront)
+- Firefox (dernière version majeure et précédente sur n&#39;importe quel système d&#39;exploitation)
+- Chrome (dernière version majeure et précédente sur n’importe quel système d’exploitation)
+- Safari (dernière et précédente version majeure sur macOS uniquement)
+- Safari pour iOS (dernière et précédente version majeure pour le storefront)
+- Chrome pour Android (dernière et précédente version majeure pour le storefront)
 
 ### Serveur de messagerie
 
-Mail Transfer Agent (MTA) ou un serveur SMTP. L’infrastructure de Commerce sur le cloud utilise le service de messagerie [SendGrid](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/sendgrid).
+Mail Transfer Agent (MTA) ou un serveur SMTP. L’infrastructure de Commerce sur le cloud utilise le service de messagerie [SendGrid](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/sendgrid).
 
 ### Mémoire
 
-La mise à niveau des applications et des extensions que vous obtenez du Commerce Marketplace et d’autres sources peut nécessiter jusqu’à 2 Go de RAM. Si vous utilisez un système avec moins de 2 Go de RAM, créez un fichier [swap](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade). Sinon, la mise à niveau risque d’échouer.
+La mise à niveau des applications et des extensions que vous obtenez du Commerce Marketplace et d’autres sources peut nécessiter jusqu’à 2 Go de RAM. Si vous utilisez un système avec moins de 2 Go de RAM, créez un fichier [swap](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade). Sinon, la mise à niveau risque d’échouer.
 
 ### Systèmes d&#39;exploitation (Linux x86-64)
 
-les distributions Linux, telles que RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, etc.
+les distributions Linux, telles que Red Hat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, etc.
 
 Microsoft Windows et macOS ne sont **pas pris** charge.
 
@@ -158,17 +163,16 @@ Adobe Commerce requiert les outils système suivants pour certaines opérations 
 - Les certificats SSL auto-signés ne sont pas pris en charge.
 - Exigence de TLS (Transport Layer Security) - PayPal et `repo.magento.com` nécessitent tous deux TLS 1.2 ou une version ultérieure.
 
-Pour Commerce sur les infrastructures cloud, consultez la section [Configuration Fastly](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration) dans le guide *Commerce sur les infrastructures cloud*.
+Pour Commerce sur les infrastructures cloud, consultez la section [Configuration Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration) dans le guide *Commerce sur les infrastructures cloud*.
 
 ### Xdebug
 
 Pour Adobe Commerce, utilisez [php_xdebug 2.5.x](https://xdebug.org/download) ou une version ultérieure (environnements de développement uniquement ; peut avoir un effet négatif sur les performances).
 
-Pour Adobe Commerce sur le cloud, consultez [Configuration de Xdebug](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/test/debug) dans le guide *Commerce sur les infrastructures cloud*.
+Pour Adobe Commerce sur le cloud, consultez [Configuration de Xdebug](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/debug) dans le guide *Commerce sur les infrastructures cloud*.
 
 >[!NOTE]
 >
->Il existe un problème connu avec `xdebug` qui peut affecter les installations d’Adobe Commerce ou l’accès au storefront ou à l’administrateur après l’installation. Voir [Problème connu affectant `xdebug` installation](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) dans la base de connaissances de la prise en charge de _Commerce_.
+>Il existe un problème connu avec `xdebug` qui peut affecter les installations d’Adobe Commerce ou l’accès au storefront ou à l’administrateur après l’installation. Voir [Problème connu affectant `xdebug` installation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) dans la base de connaissances de la prise en charge de _Commerce_.
 
-
-<!-- Last updated from includes: 2026-04-07 14:41:32 -->
+<!-- Last updated from includes: 2026-05-11 20:38:54 -->
