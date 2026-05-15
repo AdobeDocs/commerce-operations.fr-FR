@@ -24,7 +24,7 @@ Vous pouvez utiliser cette méthode pour obtenir des exemples de données pour A
 
 >[!NOTE]
 >
->Si vous rencontrez des erreurs, telles que `Could not find package...` ou `...no matching package found...`, assurez-vous qu’il n’y a aucune faute de frappe dans votre commande. Si vous rencontrez toujours des erreurs, vous n’avez peut-être pas accès aux référentiels de compositeur appropriés, en particulier si vous utilisez Adobe Commerce. Contactez [l’assistance ](https://support.magento.com/hc/en-us) pour obtenir de l’aide.
+>Si vous rencontrez des erreurs, telles que `Could not find package...` ou `...no matching package found...`, assurez-vous qu’il n’y a aucune faute de frappe dans votre commande. Si vous rencontrez toujours des erreurs, vous n’avez peut-être pas accès aux référentiels de compositeur appropriés, en particulier si vous utilisez Adobe Commerce. Contactez [l’assistance &#x200B;](https://support.magento.com/hc/en-us) pour obtenir de l’aide.
 
 Vous pouvez utiliser le compositeur pour installer des données d’exemple avant ou après l’installation de l’application ; cependant, il peut y avoir [tâches supplémentaires](remove-or-update.md).
 

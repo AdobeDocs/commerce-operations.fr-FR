@@ -25,9 +25,9 @@ Le tableau suivant résume les caches principaux disponibles :
 | Serveur principal | Description | Guide de configuration |
 | ------- | ----------- | ------------------- |
 | Système de fichiers | Valeur par défaut. Stocke les données de cache dans des fichiers sous `var/cache/`. Aucune configuration requise. | S.O. |
-| [Redis ](config-redis.md) | Magasin de données en mémoire pour une mise en cache hautes performances. | [Utiliser Redis pour le cache par défaut](redis-pg-cache.md) |
-| [ Valkey ](config-valkey.md) | Alternative open source compatible avec Redis. | [Utiliser Valkey pour le cache par défaut](valkey-pg-cache.md) |
-| [ Base de données ](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) | Mise en cache de base de données. | [Création de moteurs de cache personnalisés](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/){target="_blank"} (documentation Adobe destinée aux développeurs) |
+| [Redis &#x200B;](config-redis.md) | Magasin de données en mémoire pour une mise en cache hautes performances. | [Utiliser Redis pour le cache par défaut](redis-pg-cache.md) |
+| [&#x200B; Valkey &#x200B;](config-valkey.md) | Alternative open source compatible avec Redis. | [Utiliser Valkey pour le cache par défaut](valkey-pg-cache.md) |
+| [&#x200B; Base de données &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) | Mise en cache de base de données. | [Création de moteurs de cache personnalisés](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/){target="_blank"} (documentation Adobe destinée aux développeurs) |
 
 >[!NOTE]
 >

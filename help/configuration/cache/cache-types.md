@@ -80,7 +80,7 @@ Vous pouvez spécifier les options de configuration du cache front-end et back-e
 Où :
 
 - `<frontend_type>` : type de cache front-end de bas niveau. Spécifiez un nom de classe compatible avec `Zend\Cache\Core`.
-Si cet attribut est omis, [](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) est utilisé.
+Si cet attribut est omis, [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) est utilisé.
 
 - `<frontend_option>`, `<frontend_option_value>` : nom et valeur des options que le framework Commerce transmet sous forme de tableau associatif au cache front-end lors de la création.
 
