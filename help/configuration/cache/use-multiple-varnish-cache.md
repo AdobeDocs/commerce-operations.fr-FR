@@ -1,16 +1,16 @@
 ---
-title: Effacement du cache avec plusieurs instances Varnish
+title: Effacement du cache avec plusieurs instances de vernis
 description: Découvrez comment l’effacement du cache fonctionne avec plusieurs instances Varnish dans Adobe Commerce. Découvrez les bonnes pratiques de configuration et de gestion.
 feature: Configuration, Cache
 exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '187'
 ht-degree: 1%
 
 ---
 
-# Effacement du cache de plusieurs instances Varnish
+# Effacement du cache avec plusieurs instances Varnish
 
 Adobe Commerce prend en charge plusieurs instances de vernis prêtes à l’emploi.
 

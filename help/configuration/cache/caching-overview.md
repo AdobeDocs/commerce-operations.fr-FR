@@ -1,50 +1,62 @@
 ---
-title: Configuration de la mise en cache
-description: Découvrez les mécanismes de mise en cache et les options de configuration des applications Adobe Commerce. Découvrez des alternatives à la mise en cache du système de fichiers par défaut.
+title: Présentation de la mise en cache et options de configuration
+description: Découvrez la mise en cache dans Adobe Commerce, notamment le stockage principal, la configuration frontale et la mise en cache de pages complètes avec les caches Varnish, Redis, Valkey et L2.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 9cd0f2a84772e2d68fd15a00651216abfa9ec91c
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
-# Configuration de la mise en cache
+# Présentation de la mise en cache et options de configuration
 
-[!DNL Commerce] vous permet de configurer des alternatives à la mise en cache du système de fichiers par défaut. Le présent guide présente certaines de ces alternatives, à savoir :
+Adobe Commerce repose sur une architecture de mise en cache à plusieurs couches pour réduire la charge de la base de données, minimiser le traitement redondant et accélérer la diffusion des pages. Au niveau de l’application, Commerce gère plus d’une douzaine [types de cache](../cli/manage-cache.md#clean-and-flush-cache-types) tels que la configuration, la disposition, le blocage d’HTML et les collections, que vous pouvez acheminer vers un serveur principal de stockage dédié tel que [Redis](config-redis.md) ou [Valkey](config-valkey.md). Pour la mise en cache de pages entières, Adobe recommande vivement d’utiliser [Varnish](config-varnish.md), un accélérateur HTTP qui sert les pages mises en cache directement depuis la mémoire. D’autres couches, telles que la mise en cache L2 [ et la signature de contenu statique [](static-content-signing.md) L2](level-two-cache.md) améliorent encore les performances pour les déploiements à trafic élevé et à plusieurs nœuds.
 
-- Configurez les mécanismes de cache suivants dans la configuration [!DNL Commerce] :
+Ce guide explique le fonctionnement de chaque couche de mise en cache et vous explique comment configurer les options frontales, principales et avancées en fonction de vos exigences de déploiement.
 
-   - [&#x200B; Base de données &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
-   - [Redis](config-redis.md)
-   - Système de fichiers (par défaut) : aucune configuration n’est nécessaire pour utiliser la mise en cache du système de fichiers par défaut.
+## Mise en cache des fronts
 
-- Configurez le [vernis](config-varnish.md) sans modifier la configuration du [!DNL Commerce].
+Un cache frontal est une interface entre Commerce et le serveur principal de stockage du cache. Vous pouvez définir plusieurs fronts, chacun avec des paramètres de serveur principal différents, puis attribuer des [types de cache](../cli/manage-cache.md#clean-and-flush-cache-types) spécifiques à chaque front-end.  Pour plus d’informations sur la configuration, voir [Configuration des fronts de cache](cache-types.md).
+
+## Mise en cache des serveurs principaux
+
+Un serveur principal de cache est le mécanisme de stockage sous-jacent pour les données mises en cache. Commerce fournit un serveur principal de système de fichiers par défaut, mais vous pouvez configurer d’autres serveurs principaux tels que Redis ou Valkey pour améliorer les performances et l’évolutivité. Pour plus d’informations sur les options disponibles, voir [Mettre en cache les options du serveur principal](cache-options.md).
+
+## Mise en cache de toutes les pages avec vernis
+
+[Varnish Cache](config-varnish.md) est un accélérateur HTTP qui met en cache des pages complètes en mémoire. Adobe recommande vivement Varnish pour les environnements de production, car il est beaucoup plus rapide que le cache de pleine page intégré.
+
+>[!NOTE]
+>
+>Varnish fonctionne comme un proxy inverse devant votre serveur web et ne nécessite pas de modifications de la configuration du serveur principal de cache de Commerce.
+
+## Mise en cache L2 (à deux niveaux)
+
+[Cache L2](level-two-cache.md) stocke les données de cache localement sur chaque nœud web tout en utilisant un cache distant (Redis ou Valkey) comme source de vérité. Cela réduit le trafic réseau entre vos nœuds web et le cache distant, ce qui améliore les performances des sites à trafic élevé.
+
+## Mise en cache de contenu statique
+
+La [signature de contenu statique](static-content-signing.md) invalide le cache du navigateur pour les ressources statiques (CSS, JavaScript, images) en incorporant une version de déploiement dans les URL des fichiers.
 
 ## Terminologie de mise en cache
 
 [!DNL Commerce] utilise la terminologie de mise en cache suivante :
 
-- **Frontend** : similaire à une interface ou une passerelle pour le stockage en cache, implémenté par [Magento\Framework\Cache\Frontend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend).
-- **Types de cache**—Il peut s&#39;agir de l&#39;un des types fournis avec [!DNL Commerce] ou vous pouvez [créer le vôtre](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/).
-- **Serveur principal** : spécifie des détails sur le [stockage en cache](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), implémenté par [Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend)
-- **Serveur principal à deux niveaux** : stocke les enregistrements du cache dans deux serveurs principaux : un plus rapide et un plus lent.
-
-  >[!INFO]
-  >
-  >La configuration du cache principal à deux niveaux dépasse le cadre de ce guide.
+- **Frontend** — Interface ou passerelle de stockage en cache, implémentée par [Magento\Framework\Cache\Frontend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend).
+- **Types de cache** — L&#39;un des types intégrés fournis avec [!DNL Commerce] (comme `config`, `layout`, `block_html`, `full_page`) ou un [type personnalisé](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/).
+- **Serveur principal** — Spécifie les détails du [stockage en cache](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), implémenté par [Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend).
+- **Serveur principal à deux niveaux** — Stocke les enregistrements de cache sur deux serveurs principaux : un cache local (rapide) et un cache distant (partagé). Voir la section Configuration du cache L2 ](level-two-cache.md).[
 
 ## Options de configuration
 
-- Modification du front-end du cache de `default` fourni—
+La configuration du cache est stockée dans deux fichiers :
 
-  Vous modifiez uniquement le fichier `<magento_root>/app/etc/di.xml`, la configuration d’injection de dépendance globale de l’application Commerce.
+- `<magento_root>/app/etc/di.xml` — Configuration de l&#39;injection de dépendance globale. Modifiez ce fichier pour modifier le paramètre frontal de cache `default` fourni.
+- `<magento_root>/app/etc/env.php` : configuration spécifique à un environnement. Modifiez ce fichier pour configurer les fronts de cache personnalisés. Ce fichier remplace la configuration équivalente dans `di.xml`.
 
-- Configurer votre propre cache frontal personnalisé—
+Pour plus d’informations sur le mappage frontal à type et la syntaxe de configuration du cache, voir :
 
-  Vous modifiez uniquement le fichier `<magento_root>/app/etc/env.php`, car il remplace la configuration équivalente dans le fichier `di.xml`.
-
->[!TIP]
->
->Le vernis ne nécessite pas de modifications de la configuration [!DNL Commerce]. Voir [Configurer et utiliser le vernis](config-varnish.md).
+- [Configurer les interfaces frontales du cache](cache-types.md) — Associer une interface frontale du cache à des types de cache spécifiques
+- [Options du serveur principal de mise en cache](cache-options.md) — Référence des options du serveur principal

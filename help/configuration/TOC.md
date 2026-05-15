@@ -2,9 +2,9 @@
 user-guide-title: Guide de configuration
 user-guide-description: Configurez les fonctionnalités et services de votre application Adobe Commerce.
 feature: Configuration
-source-git-commit: d86b9eb07a9da6dc93234f8a02103c543bbead68
+source-git-commit: 605b2e59d200bc8eeab43e91006a3f95e6a6c138
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '399'
 ht-degree: 1%
 
 ---
@@ -34,28 +34,28 @@ ht-degree: 1%
       + [Utilisation de variables d’environnement](deployment/example-environment-variables.md)
 + Cache {#cache}
    + [Présentation de la mise en cache](cache/caching-overview.md)
-   + [Types de cache](cache/cache-types.md)
-   + [Options de cache](cache/cache-options.md)
-   + [Cache L2](cache/level-two-cache.md)
+   + [Configurer les fronts du cache](cache/cache-types.md)
+   + [Mettre en cache les options du serveur principal](cache/cache-options.md)
+   + [Configuration du cache L2](cache/level-two-cache.md)
    + Redis {#redis}
-      + [Configurer Redis](cache/config-redis.md)
-      + [Utiliser Redis pour le cache par défaut](cache/redis-pg-cache.md)
-      + [Utilisation de Redis pour le stockage de session](cache/redis-session.md)
-      + [Configuration d’ElastiCache pour les instances EC2](cache/redis-elasticache-for-ec2.md)
+      + [Installation et configuration de Redis](cache/config-redis.md)
+      + [Configuration de Redis pour le cache de page et par défaut](cache/redis-pg-cache.md)
+      + [Configuration de Redis pour le stockage de session](cache/redis-session.md)
+      + [Configuration de Redis avec AWS ElastiCache](cache/redis-elasticache-for-ec2.md)
    + Valkey {#valkey}
-      + [Configurer Valkey](cache/config-valkey.md)
-      + [Utiliser Valkey pour le cache par défaut](cache/valkey-pg-cache.md)
-      + [Utiliser Valkey pour le stockage de session](cache/valkey-session.md)
+      + [Installation et configuration de Valkey](cache/config-valkey.md)
+      + [Configuration de Valkey pour le cache de page et par défaut](cache/valkey-pg-cache.md)
+      + [Configuration de Valkey pour le stockage de session](cache/valkey-session.md)
    + Vernis {#varnish}
       + [Présentation du vernis](cache/config-varnish.md)
       + [Installer le vernis](cache/config-varnish-install.md)
-   + [Serveur Web](cache/config-varnish-server.md)
-   + [Configuration de l’application Commerce](cache/configure-varnish-commerce.md)
-   + [Configuration avancée du vernis](cache/config-varnish-advanced.md)
-   + [Effacement du cache](cache/use-varnish-cache.md)
-   + [Effacement du cache de plusieurs instances Varnish](cache/use-multiple-varnish-cache.md)
-   + [Vérifier la configuration du vernis](cache/config-varnish-final.md)
-   + [Bloc d&#39;ESI vernis](cache/use-varnish-esi.md)
+      + [Configuration du serveur web](cache/config-varnish-server.md)
+      + [Configuration de l’application Commerce](cache/configure-varnish-commerce.md)
+      + [Configuration avancée du vernis](cache/config-varnish-advanced.md)
+      + [Vérifier la configuration du vernis](cache/config-varnish-final.md)
+      + [Effacement du cache avec vernis](cache/use-varnish-cache.md)
+      + [Effacement du cache avec plusieurs instances Varnish](cache/use-multiple-varnish-cache.md)
+      + [Bloc d&#39;ESI vernis](cache/use-varnish-esi.md)
    + [Cache de contenu statique](cache/static-content-signing.md)
 + Ligne de commande {#cli}
    + [Outil de ligne de commande](cli/config-cli.md)
@@ -151,4 +151,4 @@ ht-degree: 1%
       + [Vérifier la base de données fractionnée](storage/multi-master-verify.md)
       + [Réplication de la base de données](storage/multi-master-replication.md)
       + [Revenir à une base de données unique](storage/revert-split-database.md)
-+ [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=fr)
++ [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

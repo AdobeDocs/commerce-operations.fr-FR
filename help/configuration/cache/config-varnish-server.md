@@ -1,16 +1,16 @@
 ---
-title: Configuration du serveur web
+title: Configuration du serveur web pour la mise en cache du vernis
 description: Découvrez comment configurer votre serveur web pour qu’il fonctionne avec la mise en cache de vernis pour Adobe Commerce. Découvrez la configuration et les exigences de configuration des ports.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# Configuration de votre serveur web
+# Configuration du serveur web pour la mise en cache du vernis
 
 Configurez votre serveur web pour qu’il écoute sur un port autre que le port par défaut 80, car Varnish répond directement aux requêtes HTTP entrantes, et non au serveur web.
 

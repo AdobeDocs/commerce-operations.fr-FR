@@ -1,29 +1,99 @@
 ---
-title: Options de cache
-description: Découvrez les options de cache de bas niveau et la configuration du stockage dans Adobe Commerce. Découvrez la configuration frontale, principale et de stockage pour Redis et les bases de données.
+title: Options du serveur principal de mise en cache et référence de stockage
+description: Découvrez les options du serveur principal de cache dans Adobe Commerce, notamment le système de fichiers, Redis, Valkey et le stockage dans la base de données. Découvrez les approches héritées et modernes.
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 9cd0f2a84772e2d68fd15a00651216abfa9ec91c
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
 
-# Options de cache de bas niveau
+# Mettre en cache les options principales et la référence de stockage
 
-L’application Commerce utilise un cache de bas niveau frontal et principal pour permettre l’accès à l’espace de stockage du cache.
+L’application Commerce utilise un cache de bas niveau frontal et principal pour permettre l’accès au stockage du cache. Commerce prend en charge plusieurs stratégies et back-ends de mise en cache, chacun adapté à différents cas d’utilisation. Cette page décrit les serveurs principaux disponibles et leurs différences.
 
-## Cache frontal de bas niveau
+>[!NOTE]
+>
+>Pour plus d’informations sur la configuration du cache frontal, voir [Configuration des fronts de cache](cache-types.md).
 
-Commerce étend [Zend_Cache_Core](https://framework.zend.com/manual/1.12/en/zend.cache.frontends.html) en implémentant le cache frontal [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php).
+## Options de cache du serveur principal
 
-## Cache du serveur principal de bas niveau
+Le tableau suivant résume les caches principaux disponibles :
 
-En règle générale, l’application Commerce fonctionne avec n’importe quel cache principal pris en charge par [Zend_Cache Backends](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html). Cependant, ce guide ne couvre que les caches principaux de bas niveau suivants :
+| Serveur principal | Description | Guide de configuration |
+| ------- | ----------- | ------------------- |
+| Système de fichiers | Valeur par défaut. Stocke les données de cache dans des fichiers sous `var/cache/`. Aucune configuration requise. | S.O. |
+| [Redis ](config-redis.md) | Magasin de données en mémoire pour une mise en cache hautes performances. | [Utiliser Redis pour le cache par défaut](redis-pg-cache.md) |
+| [ Valkey ](config-valkey.md) | Alternative open source compatible avec Redis. | [Utiliser Valkey pour le cache par défaut](valkey-pg-cache.md) |
+| [ Base de données ](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) | Mise en cache de base de données. | [Création de moteurs de cache personnalisés](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/){target="_blank"} (documentation Adobe destinée aux développeurs) |
 
-- [Redis](config-redis.md)
-- [&#x200B; Base de données &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
-- Système de fichiers (par défaut) : aucune configuration n’est nécessaire pour utiliser la mise en cache du système de fichiers.
+>[!NOTE]
+>
+>[Vernis](config-varnish.md) gère la mise en cache de pleine page au niveau HTTP et n’utilise pas le serveur principal du cache de bas niveau.
 
-[Vernis](config-varnish.md) ne nécessite pas la configuration d’un serveur principal de cache de bas niveau.
+## Approches de mise en œuvre
+
+Commerce prend en charge deux approches d’implémentation principales. L’approche que vous choisissez dépend de votre version de Commerce :
+
+>[!BEGINTABS]
+
+>[!TAB Ancien cache basé sur Zend (2.4.8 et versions antérieures)]
+
+Utilise des noms de classe complets pour la configuration du serveur principal :
+
+| Serveur principal | Nom de la classe |
+| ------- | ---------- |
+| Redis | `Magento\Framework\Cache\Backend\Redis` |
+| Valkey | `Magento\Framework\Cache\Backend\Valkey` |
+
+Ils sont compatibles avec l’interface `Zend_Cache_Backend`.
+
+**Exemple de configuration :**
+
+```php?start_inline=1
+'backend' => 'Magento\\Framework\\Cache\\Backend\\Redis',
+'backend_options' => [
+    'server' => '127.0.0.1',
+    'database' => '0',
+    'port' => '6379',
+],
+```
+
+>[!TAB Cache Symfony moderne (2.4.9 et versions ultérieures, recommandé)]
+
+>[!TIP]
+>
+>L’implémentation moderne de Symfony Cache offre de meilleures performances grâce à la conformité PSR-6, la sérialisation Igbinary, la compression gzip, les scripts Lua et les connexions persistantes.
+
+Utilise des noms de type back-end simplifiés :
+
+| Serveur principal | Saisir le nom |
+| ------- | --------- |
+| Redis | `redis` |
+| Valkey | `valkey` |
+| Système de fichiers | `file` |
+
+**Exemple de configuration :**
+
+```php?start_inline=1
+'backend' => 'redis',
+'backend_options' => [
+    'server' => '127.0.0.1',
+    'database' => '0',
+    'port' => '6379',
+    'serializer' => 'igbinary',
+    'compression_lib' => 'gzip',
+],
+```
+
+>[!ENDTABS]
+
+Pour obtenir des options de configuration complètes, voir :
+
+- [Utiliser Redis pour le cache par défaut](redis-pg-cache.md)
+- [Utiliser Valkey pour le cache par défaut](valkey-pg-cache.md)
+- [Configuration du cache L2](level-two-cache.md)
+
+Consultez la [Documentation Laminas](https://docs.laminas.dev/) pour connaître les options héritées basées sur Zend.

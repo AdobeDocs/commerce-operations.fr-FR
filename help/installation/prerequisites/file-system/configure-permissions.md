@@ -2,7 +2,7 @@
 title: Configuration de la propriété et des autorisations des fichiers
 description: Pour configurer les autorisations de système de fichiers pour les installations sur site d’Adobe Commerce, procédez comme suit.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1005'
 ht-degree: 0%
@@ -111,7 +111,7 @@ Suivez les invites à l&#39;écran pour créer un mot de passe pour l&#39;utilis
 
 >[!WARNING]
 >
->Si vous ne disposez pas des privilèges `root` sur votre serveur d’applications, vous pouvez utiliser un autre compte utilisateur local. Assurez-vous que l’utilisateur dispose d’un mot de passe fort et continuez avec [Placez le propriétaire du système de fichiers dans le groupe de serveurs web](#step-3-put-the-file-system-owner-in-the-web-servers-group).
+>Si vous ne disposez pas des privilèges `root` sur votre serveur d’applications, vous pouvez utiliser un autre compte utilisateur local. Assurez-vous que l’utilisateur dispose d’un mot de passe fort et continuez avec [Placez le propriétaire du système de fichiers dans le groupe de serveurs web](#put-the-file-system-owner-in-the-web-server-group).
 
 Par exemple, pour créer un utilisateur nommé `magento_user` et lui donner un mot de passe, saisissez :
 

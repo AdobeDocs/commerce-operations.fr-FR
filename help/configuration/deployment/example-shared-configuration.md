@@ -2,9 +2,9 @@
 title: Exemple avec une configuration partagée
 description: Consultez un exemple de modification des paramètres dans un système de développement avec un fichier de configuration partagé.
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -88,6 +88,6 @@ La dernière étape du processus consiste à mettre à jour votre système de pr
 
 >[!INFO]
 >
->Pour modifier un paramètre verrouillé dans Admin, utilisez la commande [`magento config:set --lock`](../cli/set-configuration-values.md).
+>Pour modifier un paramètre verrouillé dans Admin, utilisez la commande ](../cli/set-configuration-values.md).[`magento config:set --lock`
 
-<!-- Last updated from includes: 2024-07-18 15:50:54 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

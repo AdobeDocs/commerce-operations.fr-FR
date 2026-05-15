@@ -3,14 +3,14 @@ title: Configurer le vernis pour Commerce
 description: Découvrez comment configurer le vernis spécifiquement pour les applications Adobe Commerce. Découvrez les mises à jour des fichiers de configuration et les techniques de gestion.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
-# Configuration de l’application Commerce pour utiliser le vernis
+# Configurer le vernis pour Commerce
 
 Pour configurer Commerce afin d’utiliser le vernis :
 
@@ -22,7 +22,7 @@ Pour configurer Commerce afin d’utiliser le vernis :
 
    | Champ | Description |
    | ----- | ----------- |
-   | Accéder à la liste | Entrez le nom d’hôte complet, l’adresse IP ou la plage d’adresses IP de notation [CIDR (Classless Inter-domain Routing)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) pour laquelle invalider le contenu. Voir [&#x200B; Purge du cache de vernis &#x200B;](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
+   | Accéder à la liste | Entrez le nom d’hôte complet, l’adresse IP ou la plage d’adresses IP de notation [CIDR (Classless Inter-domain Routing)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) pour laquelle invalider le contenu. Voir [ Purge du cache de vernis ](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
    | Hôte principal | Saisissez le nom d’hôte complet ou l’adresse IP et le port d’écoute du Varnish _serveur principal_ ou _serveur d’origine_ ; c’est-à-dire le serveur qui fournit le contenu que Varnish accélère. En règle générale, il s’agit de votre serveur web. Voir [Serveurs principaux de cache vernis](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Port du serveur principal | Port d’écoute du serveur d’origine. |
    | Délai de grâce | Détermine la durée pendant laquelle le vernis diffuse du contenu obsolète si le serveur principal ne répond pas. La valeur par défaut est de 300 secondes. |

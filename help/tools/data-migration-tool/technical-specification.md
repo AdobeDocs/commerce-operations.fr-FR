@@ -3,7 +3,7 @@ title: spécification technique [!DNL Data Migration Tool]
 description: Découvrez les détails d’implémentation de et comment optimiser l’extension lors  [!DNL Data Migration Tool]  transfert de données entre Magento 1 et Magento 2.
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '2113'
 ht-degree: 0%
@@ -227,7 +227,7 @@ Le processus de migration se compose d’étapes.
 
 L’étape est une unité qui fournit les fonctionnalités requises pour la migration de certaines données séparées. L’étape peut se composer d’une ou de plusieurs étapes (contrôle d’intégrité, contrôle des données, contrôle du volume et delta).
 
-Par défaut, il existe plusieurs étapes ([Map](#map-step), [EAV](#eav), [URL Rewrites](#url-rewrite-step), etc.). Vous pouvez également ajouter vos propres étapes.
+Par défaut, il existe plusieurs étapes ([Map](#map-step), [EAV](#eav-step), [URL Rewrites](#url-rewrite-step), etc.). Vous pouvez également ajouter vos propres étapes.
 
 Les classes associées aux étapes se trouvent dans le répertoire src/Migration/Step.
 
@@ -417,7 +417,7 @@ Options :
 
 * *handler* - Décrit le comportement de transformation des champs. Pour appeler le gestionnaire, vous devez spécifier un nom de classe de gestionnaire dans une balise `<handler>`. Utilisez la balise `<param>` avec le nom du paramètre et les données de valeur pour les transmettre au gestionnaire .
 
-**&#x200B;**&#x200B;opérations disponibles :
+**** opérations disponibles :
 
 | Document | Champ |
 |--- |--- |

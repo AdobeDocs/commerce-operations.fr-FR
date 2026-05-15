@@ -2,7 +2,7 @@
 title: Dictionnaires de traduction et packages de langue
 description: Découvrez comment générer des dictionnaires de traduction et créer des packages de langue pour Adobe Commerce. Découvrez la localisation et la configuration de la boutique multilingue.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Les traductions Commerce vous permettent de personnaliser et de localiser votre 
 - **Dictionnaires de traduction**, qui sont un moyen pratique de personnaliser ou de traduire _certains_ mots et expressions, tels que ceux d’un module ou d’un thème personnalisé.
 - **Packages de langues** qui permettent de traduire _tout ou partie_ des mots et expressions dans l’application Commerce.
 
-Voir [&#x200B; Présentation des traductions &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/translations/).
+Voir [ Présentation des traductions ](https://developer.adobe.com/commerce/frontend-core/guide/translations/).
 
 ## Génération d’un dictionnaire de traduction
 
@@ -35,7 +35,7 @@ Pour générer le dictionnaire et commencer la traduction :
 
 1. Vous pouvez regrouper les dictionnaires de traduction dans un package de langue et fournir le package à l’administrateur du magasin Commerce.
 
-1. Dans Admin, l’administrateur de magasin [configure les traductions](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-localize).
+1. Dans Admin, l’administrateur de magasin [configure les traductions](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize).
 
 Options de commande :
 
@@ -106,7 +106,7 @@ Le tableau suivant explique les paramètres et valeurs de la commande du package
 
 | Paramètre | Valeur | Obligatoire ? |
 |--- |--- |--- |
-| `<source>` | Chemin d’accès absolu au système de fichiers et nom de fichier d’un fichier CSV contenant le dictionnaire de traduction combiné aux méta-informations nécessaires pour la répartition dans un package de langue.<br><br>Utilisez [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) pour créer le fichier CSV, puis créez le package de langue comme décrit dans la section [Création de répertoires et de fichiers](#m2devgde-xlate-files). | Oui |
+| `<source>` | Chemin d’accès absolu au système de fichiers et nom de fichier d’un fichier CSV contenant le dictionnaire de traduction combiné aux méta-informations nécessaires pour la répartition dans un package de langue.<br><br>Utilisez [`bin/magento i18n:collect-phrases`](#generate-a-translation-dictionary) pour créer le fichier CSV, puis créez le package de langue comme décrit dans la section [Création de répertoires et de fichiers](#create-directories-and-files). | Oui |
 | `<locale>` | [Identifiant ISO 639-1](https://www.iso.org/iso-639-language-codes.html) (langue) et [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) (pays) de la langue utilisée comme nom de fichier pour tous les fichiers CSV obtenus. Exemples : `de_DE`, `pt_PT`, `pt_BR`. | Oui |
 | `-m --mode` | S’il existe un fichier cible, indique s’il faut remplacer le package de langue existant ou le fusionner avec le nouveau package de langue. La fusion remplace toutes les expressions qui existaient et en ajoute de nouvelles.<br><br>Valeurs : fusionner ou remplacer (par défaut). | Non |
 | `-d --allow-duplicates` | Incluez cette option pour autoriser les doublons dans le module linguistique. Dans le cas contraire, la commande échoue avec une erreur si elle rencontre la même expression dans plusieurs entrées avec des traductions différentes. | Non |
@@ -139,7 +139,7 @@ Pour créer ces fichiers :
 
 Lors de la déclaration d’un package de langue dans le fichier de configuration `language.xml`, vous devez spécifier la séquence d’héritage de langue de ce package.
 
-L’héritage de langue vous permet de créer une traduction appelée _enfant_ basée sur une traduction existante appelée _parent_. Les traductions enfants remplacent les traductions parents. Cependant, si le chargement ou l’affichage de la traduction enfant échoue ou si une expression ou un mot est manquant, Commerce utilise le paramètre régional parent. [&#x200B; Exemples d’héritage de package de langue &#x200B;](#example-of-language-inheritance).
+L’héritage de langue vous permet de créer une traduction appelée _enfant_ basée sur une traduction existante appelée _parent_. Les traductions enfants remplacent les traductions parents. Cependant, si le chargement ou l’affichage de la traduction enfant échoue ou si une expression ou un mot est manquant, Commerce utilise le paramètre régional parent. [ Exemples d’héritage de package de langue ](#example-of-language-inheritance).
 
 Pour déclarer un package, spécifiez les informations suivantes :
 
@@ -195,7 +195,7 @@ Si l’application Commerce ne trouve pas de mot ou d’expression dans le packa
 1. `<vendorname>/en_ca_package`
 1. `<vendorname>/en_us_package`
 
-La spécification de tous les héritages entre les packages de langue peut entraîner la création de chaînes d’héritage circulaires. Utilisez le test [&#128279;](https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php) pour localiser et corriger ces chaînes.
+La spécification de tous les héritages entre les packages de langue peut entraîner la création de chaînes d’héritage circulaires. Utilisez le test [](https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php) pour localiser et corriger ces chaînes.
 
 ### Configuration de plusieurs packages pour une langue
 

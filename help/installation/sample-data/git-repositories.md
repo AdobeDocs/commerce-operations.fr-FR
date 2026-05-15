@@ -2,7 +2,7 @@
 title: Clonage de référentiels Git de données d’exemple
 description: Pour installer les données d’exemple d’Adobe Commerce en clonant les référentiels Git, procédez comme suit.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Si vous n’êtes pas un développeur participant, choisissez l’une des autres
 Les développeurs contributeurs peuvent utiliser cette méthode d’installation des données d’exemple *uniquement* si ce qui suit est vrai :
 
 * Vous utilisez Magento Open Source
-* Vous [&#x200B; cloné le référentiel GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
+* Vous [ cloné le référentiel GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 >[!WARNING]
 >
@@ -88,7 +88,7 @@ Pour cloner le référentiel GitHub de données d’exemple à l’aide du proto
 
 1. Attendez que la commande soit terminée.
 
-1. Voir [&#x200B; Définir les autorisations et la propriété du système de fichiers](#set-file-system-ownership-and-permissions).
+1. Voir [ Définir les autorisations et la propriété du système de fichiers](#set-file-system-ownership-and-permissions).
 
 1. Exécutez la commande suivante :
 
@@ -196,4 +196,4 @@ Pour définir les autorisations et la propriété du système de fichiers sur le
 
 {{$include /help/_includes/sample-data-complete.md}}
 
-<!-- Last updated from includes: 2022-09-08 11:33:05 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

@@ -2,7 +2,7 @@
 title: Détails techniques
 description: Découvrez les détails techniques du déploiement du pipeline, les types de configurations et les workflows recommandés.
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 0%
@@ -14,18 +14,18 @@ ht-degree: 0%
 Cette rubrique présente les détails techniques d’implémentation du déploiement de pipeline dans Commerce 2.2 et versions ultérieures. Les améliorations peuvent être divisées en plusieurs domaines :
 
 - [Gestion de la configuration](#configuration-management)
-- [Modifications dans l’administrateur](#changes-in-the-admin)
+- [Modifications dans l’administrateur](#the-commerce-admin)
 - [Installation et suppression de cron](#install-and-remove-cron)
 
-Cette rubrique présente également le [workflow recommandé](#recommended-workflow) pour le déploiement de pipeline et fournit quelques exemples pour vous aider à comprendre son fonctionnement.
+Cette rubrique présente également le [workflow recommandé](#recommended-pipeline-deployment-workflow) pour le déploiement de pipeline et fournit quelques exemples pour vous aider à comprendre son fonctionnement.
 
-Avant de commencer, passez en revue les [&#x200B; Conditions préalables pour les systèmes de développement, de version et de production](../deployment/prerequisites.md).
+Avant de commencer, passez en revue les [ Conditions préalables pour les systèmes de développement, de version et de production](../deployment/prerequisites.md).
 
 ## Gestion de la configuration
 
 Pour vous permettre de synchroniser et de gérer la configuration de vos systèmes de développement et de production, utilisez le schéma de remplacement suivant.
 
-![Comment les valeurs des variables de configuration sont déterminées &#x200B;](../../assets/configuration/override-flow-diagram.png)
+![Comment les valeurs des variables de configuration sont déterminées ](../../assets/configuration/override-flow-diagram.png)
 
 Comme le montre le diagramme, les valeurs de configuration sont utilisées dans l&#39;ordre suivant :
 
@@ -60,7 +60,7 @@ Vous pouvez gérer la configuration sensible de l’une des manières suivantes 
 ### Paramètres de configuration verrouillés dans l’administrateur
 
 Tous les paramètres de configuration de `config.php` ou `env.php` sont verrouillés dans l’administration. En d’autres termes, ces paramètres ne peuvent pas être modifiés dans l’administration.
-Utilisez la commande [`magento config:set` ou `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) pour modifier les paramètres des fichiers `config.php` ou `env.php`.
+Utilisez la commande [`magento config:set` ou `magento config:set --lock`](../cli/set-configuration-values.md#set-values) pour modifier les paramètres des fichiers `config.php` ou `env.php`.
 
 ## Administrateur Commerce
 
@@ -88,7 +88,7 @@ L’administrateur présente le comportement suivant en mode de production :
 
 ## Installation et suppression de cron
 
-Dans la version 2.2, pour la première fois, nous vous aidons à configurer votre tâche cron en fournissant la commande [&#128279;](../cli/configure-cron-jobs.md). `magento cron:install`Cette commande configure un crontab en tant qu’utilisateur exécutant la commande.
+Dans la version 2.2, pour la première fois, nous vous aidons à configurer votre tâche cron en fournissant la commande ](../cli/configure-cron-jobs.md). [`magento cron:install`Cette commande configure un crontab en tant qu’utilisateur exécutant la commande.
 
 Vous pouvez également supprimer crontab à l’aide de la commande `magento cron:remove`.
 

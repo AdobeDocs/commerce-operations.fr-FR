@@ -3,7 +3,7 @@ title: Moteur de recherche actuel non pris en charge
 description: Résolvez les problèmes liés à la mise à niveau d’Adobe Commerce après avoir rencontré une erreur sur un moteur de recherche non pris en charge.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Vous devez effectuer les tâches suivantes avant d’effectuer la mise à niveau
 
    >[!NOTE]
    >
-   >Elasticsearch nécessite JDK 1.8 ou une version ultérieure. Consultez [Installation du kit de développement logiciel Java (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) pour vérifier quelle version du JDK est installée.
+   >Elasticsearch nécessite JDK 1.8 ou une version ultérieure. Consultez [Installation du kit de développement logiciel Java (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit) pour vérifier quelle version du JDK est installée.
 
 1. [Configurer Elasticsearch](../../configuration/search/configure-search-engine.md) et la réindexation.
 

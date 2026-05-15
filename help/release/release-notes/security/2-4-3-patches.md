@@ -2,7 +2,7 @@
 title: Notes de mise à jour des correctifs de sécurité d’Adobe Commerce 2.4.3
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 La version de sécurité 2.4.3-p3 d’Adobe Commerce fournit des correctifs de sécurité pour les vulnérabilités qui ont été identifiées dans les versions précédentes de 2.4.3. Cette version comprend également des améliorations de sécurité qui améliorent la conformité aux dernières bonnes pratiques de sécurité.
 
-Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB22-38](https://helpx.adobe.com/fr/security/products/magento/apsb22-38.html).
+Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html).
 
 ### Appliquer AC-3022.patch pour continuer à offrir DHL comme transporteur
 
@@ -35,7 +35,7 @@ DHL a introduit la version 6.2 du schéma et abandonnera la version 6.0 dans un 
 
 La version de sécurité 2.4.3-p2 d’Adobe Commerce fournit des correctifs de sécurité pour les vulnérabilités qui ont été identifiées dans les versions précédentes. Cette version comprend également des améliorations de sécurité qui améliorent la conformité aux dernières bonnes pratiques de sécurité.
 
-Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB22-13](https://helpx.adobe.com/fr/security/products/magento/apsb22-13.html).  La version de correctif résout également la vulnérabilité corrigée par `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` et `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`.
+Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB22-13](https://helpx.adobe.com/security/products/magento/apsb22-13.html).  La version de correctif résout également la vulnérabilité corrigée par `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` et `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`.
 
 
 ### Appliquer AC-3022.patch pour continuer à offrir DHL comme transporteur
@@ -46,7 +46,7 @@ DHL a introduit la version 6.2 du schéma et abandonnera la version 6.0 dans un 
 
 * L’utilisation des variables d’e-mail a été abandonnée dans la version 2.3.4 dans le cadre d’une réduction des risques de sécurité au profit d’une syntaxe de variable plus stricte. Ce comportement hérité a été entièrement supprimé dans cette version dans le cadre de la réduction des risques de sécurité.
 
-  Par conséquent, les modèles d’e-mail ou de newsletter qui fonctionnaient dans les versions précédentes peuvent ne pas fonctionner correctement après la mise à niveau vers Adobe Commerce 2.4.3-p2. Les modèles concernés sont les remplacements administrateur, les thèmes, les thèmes enfants et les modèles provenant de modules personnalisés ou d’extensions tierces. Votre déploiement peut toujours être affecté, même après avoir utilisé l’outil de compatibilité de mise à niveau [Upgrade](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=fr) pour corriger les utilisations obsolètes. Voir [Migration de modèles d’e-mail personnalisés](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration) pour plus d’informations sur les effets potentiels et des instructions pour migrer les modèles affectés.
+  Par conséquent, les modèles d’e-mail ou de newsletter qui fonctionnaient dans les versions précédentes peuvent ne pas fonctionner correctement après la mise à niveau vers Adobe Commerce 2.4.3-p2. Les modèles concernés sont les remplacements administrateur, les thèmes, les thèmes enfants et les modèles provenant de modules personnalisés ou d’extensions tierces. Votre déploiement peut toujours être affecté, même après avoir utilisé l’outil de compatibilité de mise à niveau [Upgrade](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) pour corriger les utilisations obsolètes. Voir [Migration de modèles d’e-mail personnalisés](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration) pour plus d’informations sur les effets potentiels et des instructions pour migrer les modèles affectés.
 
 * Les jetons d’accès OAuth et les jetons de réinitialisation de mot de passe sont désormais chiffrés lorsqu’ils sont stockés dans la base de données. <!-- AC-520 1323-->
 
@@ -64,7 +64,7 @@ DHL a introduit la version 6.2 du schéma et abandonnera la version 6.0 dans un 
 La version de sécurité 2.4.3-p1 d’Adobe Commerce fournit des correctifs de sécurité pour les vulnérabilités qui ont été identifiées dans la version précédente (Adobe Commerce 2.4.3 et Magento Open Source 2.4.3). Cette version comprend également des améliorations de sécurité qui améliorent la conformité aux dernières bonnes pratiques de sécurité.
 
 
-Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB21-86](https://helpx.adobe.com/fr/security/products/magento/apsb21-86.html). La version de correctif fournit également des correctifs pour les extensions développées par le fournisseur [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html?lang=fr), [Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html) et [Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html).
+Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html). La version de correctif fournit également des correctifs pour les extensions développées par le fournisseur [](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html), [Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html) et [Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html).
 
 ### Appliquer AC-3022.patch pour continuer à offrir DHL comme transporteur
 
@@ -80,12 +80,12 @@ Cette version comprend le correctif suivant et tous les correctifs publiés pour
 
 **Les ID de session ont été supprimés de la base de données**. Ce changement de code peut entraîner des modifications avec rupture si les commerçants disposent de personnalisations ou d’extensions installées qui utilisent les ID de session bruts stockés dans la base de données. <!-- MC-40976-->
 
-**Accès administrateur limité aux dossiers de la Galerie de médias**. Les autorisations par défaut de la Galerie de médias n’autorisent désormais que les opérations de répertoire (affichage, chargement, suppression et création) qui sont autorisées explicitement par la configuration. Les utilisateurs administrateurs ne peuvent plus accéder aux ressources multimédias par l’intermédiaire de la Galerie de médias qui ont été chargées en dehors des répertoires `catalog/category` ou `wysiwyg`. Les administrateurs qui souhaitent accéder aux ressources multimédias doivent les déplacer vers un dossier explicitement autorisé ou ajuster leurs paramètres de configuration. Voir [&#x200B; Modifier les autorisations de dossier de Media Library](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/). <!-- B2B-1897-->
+**Accès administrateur limité aux dossiers de la Galerie de médias**. Les autorisations par défaut de la Galerie de médias n’autorisent désormais que les opérations de répertoire (affichage, chargement, suppression et création) qui sont autorisées explicitement par la configuration. Les utilisateurs administrateurs ne peuvent plus accéder aux ressources multimédias par l’intermédiaire de la Galerie de médias qui ont été chargées en dehors des répertoires `catalog/category` ou `wysiwyg`. Les administrateurs qui souhaitent accéder aux ressources multimédias doivent les déplacer vers un dossier explicitement autorisé ou ajuster leurs paramètres de configuration. Voir [ Modifier les autorisations de dossier de Media Library](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/). <!-- B2B-1897-->
 
-**Limites abaissées à la complexité des requêtes GraphQL**. La complexité maximale autorisée des requêtes dans GraphQL a été réduite afin d’empêcher les attaques par déni de service (DOS). Voir la configuration de la sécurité de [&#128279;](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/). <!-- PWA-1700-->
+**Limites abaissées à la complexité des requêtes GraphQL**. La complexité maximale autorisée des requêtes dans GraphQL a été réduite afin d’empêcher les attaques par déni de service (DOS). Voir la configuration de la sécurité de [](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/). <!-- PWA-1700-->
 
 **Des vulnérabilités récentes du test de pénétration** ont été corrigées dans cette version. <!-- MC-42431-->
 
 L’expression source non prise en charge `unsafe-inline` a été supprimée de la directive `frame-ancestors` de la politique de sécurité du contenu. [GitHub-33101](https://github.com/magento/magento2/issues/33101)<!-- MC-42632-->
 
-<!-- Last updated from includes: 2025-05-28 17:01:56 -->
+<!-- Last updated from includes: 2026-04-08 15:01:38 -->

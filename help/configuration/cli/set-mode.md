@@ -2,7 +2,7 @@
 title: Définir le mode de fonctionnement
 description: Découvrez comment définir des modes de fonctionnement Adobe Commerce entre le développement et la production. Découvrez les commandes de changement de mode et leurs implications en matière de sécurité.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -161,6 +161,6 @@ Enabled default mode.
 
 ### Exécutez les commandes de l’interface de ligne de commande n’importe où.
 
-[Exécutez les commandes de l’interface de ligne de commande n’importe où](../cli/config-cli.md#config-install-cli-first).
+[Exécutez les commandes de l’interface de ligne de commande n’importe où](../cli/config-cli.md#prerequisites).
 
 Si vous n’avez pas ajouté de `<Commerce-install-directory>/bin` à votre `PATH` système, vous pouvez vous attendre à une erreur lors de l’exécution de la commande seule.

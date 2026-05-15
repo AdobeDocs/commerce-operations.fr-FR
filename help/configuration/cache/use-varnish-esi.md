@@ -1,17 +1,17 @@
 ---
-title: Bloc d'ESI vernis
+title: Configurer le bloc ESI Varnish
 description: Découvrez les inclusions côté Edge (ESI) de Varnish et comment incorporer des pages web pour Adobe Commerce. Découvrez l’implémentation et l’optimisation des blocs ESI.
 badge: label="Contribution Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 605b2e59d200bc8eeab43e91006a3f95e6a6c138
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '140'
 ht-degree: 0%
 
 ---
 
-# Bloc d&#39;ESI vernis
+# Configurer le bloc ESI Varnish {#varnish-esi-block}
 
 Les inclusions côté Edge (ESI) sont des directives spéciales que vous pouvez utiliser pour inclure des pages web dans d’autres pages web.
 
@@ -34,7 +34,7 @@ Le framework Commerce crée une balise ESI lorsque les conditions suivantes sont
 
 ### Exemple
 
-`cms_index_index.xml` :
+`cms_index_index.xml`:
 
 ```xml
   <referenceContainer name="content">
@@ -48,7 +48,7 @@ Dans l’exemple ci-dessus, l’élément `block` ajoute le contenu du modèle `
 
 Actuellement, Varnish ne prend pas en charge l’ESI via HTTPS et passe donc automatiquement au HTTP.
 
-`Magento\PageCache\Observer\ProcessLayoutRenderElement` :
+`Magento\PageCache\Observer\ProcessLayoutRenderElement`:
 
 ```php
     private function _wrapEsi(

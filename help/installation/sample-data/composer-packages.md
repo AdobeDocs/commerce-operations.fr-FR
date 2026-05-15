@@ -3,7 +3,7 @@ title: Télécharger des exemples de packages du compositeur de données
 description: Pour installer les données d’exemple Adobe Commerce à l’aide du gestionnaire de packages Composer PHP, procédez comme suit.
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Vous pouvez utiliser cette méthode pour obtenir des exemples de données pour A
 
 >[!NOTE]
 >
->Si vous rencontrez des erreurs, telles que `Could not find package...` ou `...no matching package found...`, assurez-vous qu’il n’y a aucune faute de frappe dans votre commande. Si vous rencontrez toujours des erreurs, vous n’avez peut-être pas accès aux référentiels de compositeur appropriés, en particulier si vous utilisez Adobe Commerce. Contactez [l’assistance &#x200B;](https://support.magento.com/hc/en-us) pour obtenir de l’aide.
+>Si vous rencontrez des erreurs, telles que `Could not find package...` ou `...no matching package found...`, assurez-vous qu’il n’y a aucune faute de frappe dans votre commande. Si vous rencontrez toujours des erreurs, vous n’avez peut-être pas accès aux référentiels de compositeur appropriés, en particulier si vous utilisez Adobe Commerce. Contactez [l’assistance ](https://support.magento.com/hc/en-us) pour obtenir de l’aide.
 
 Vous pouvez utiliser le compositeur pour installer des données d’exemple avant ou après l’installation de l’application ; cependant, il peut y avoir [tâches supplémentaires](remove-or-update.md).
 
@@ -66,4 +66,4 @@ Si l’erreur s’affiche, modifiez le répertoire d’installation de votre app
 
 {{$include /help/_includes/sample-data-complete.md}}
 
-<!-- Last updated from includes: 2022-09-08 11:33:05 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->
