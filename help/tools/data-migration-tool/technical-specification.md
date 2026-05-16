@@ -417,7 +417,7 @@ Options :
 
 * *handler* - Décrit le comportement de transformation des champs. Pour appeler le gestionnaire, vous devez spécifier un nom de classe de gestionnaire dans une balise `<handler>`. Utilisez la balise `<param>` avec le nom du paramètre et les données de valeur pour les transmettre au gestionnaire .
 
-**&#x200B;**&#x200B;opérations disponibles :
+**** opérations disponibles :
 
 | Document | Champ |
 |--- |--- |

@@ -88,6 +88,6 @@ La dernière étape du processus consiste à mettre à jour votre système de pr
 
 >[!INFO]
 >
->Pour modifier un paramètre verrouillé dans Admin, utilisez la commande [&#128279;](../cli/set-configuration-values.md).`magento config:set --lock`
+>Pour modifier un paramètre verrouillé dans Admin, utilisez la commande ](../cli/set-configuration-values.md).[`magento config:set --lock`
 
 <!-- Last updated from includes: 2026-04-17 13:49:36 -->
