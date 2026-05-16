@@ -35,7 +35,7 @@ Pour générer le dictionnaire et commencer la traduction :
 
 1. Vous pouvez regrouper les dictionnaires de traduction dans un package de langue et fournir le package à l’administrateur du magasin Commerce.
 
-1. Dans Admin, l’administrateur de magasin [configure les traductions](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize).
+1. Dans Admin, l’administrateur de magasin [configure les traductions](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-localize).
 
 Options de commande :
 
