@@ -2,8 +2,7 @@
 title: '[!DNL Cloud Automation Patching Service (CAPS)]'
 description: Découvrez  [!DNL Cloud Automation Patching Service (CAPS)], ses utilisations, comment y accéder et les bonnes pratiques pour appliquer des correctifs automatisés
 hide: true
-hidefromtoc: true
-source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
+source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -53,7 +52,7 @@ Ce guide est destiné aux commerçants et partenaires Adobe Commerce Cloud qui s
 
 Découvrez le service d’application automatisée de correctifs d’Adobe Cloud et comment cet outil aide les utilisateurs et utilisatrices à rechercher et à appliquer rapidement des correctifs de sécurité. La vidéo suivante explique comment y accéder via le tableau de bord SWAT, choisir votre projet et votre environnement, et appliquer des correctifs en un seul clic.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476249/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
 
 ## Cas d’utilisation courants
 

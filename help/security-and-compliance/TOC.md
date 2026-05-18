@@ -2,9 +2,9 @@
 user-guide-title: Sécurité et conformité
 user-guide-description: Découvrez la conformité réglementaire et les responsabilités des commerçants pour la maintenance d’un projet Adobe Commerce sécurisé.
 feature: Security
-source-git-commit: 28b94fe2fd4f976ad48fa9c59e7e1559db8ba35e
+source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
 workflow-type: tm+mt
-source-wordcount: '53'
+source-wordcount: '62'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 1%
 - Règlements relatifs à la confidentialité {#privacy}
    - [CCPA](privacy/ccpa.md)
    - [RGPD](privacy/gdpr.md)
-   - [Bibliothèque JavaScript d’Adobe Privacy](privacy/adobe-javascript-library.md)
+   - {hide-from-toc}[Bibliothèque Adobe Privacy JavaScript](privacy/adobe-javascript-library.md)
    - [Bibliothèque JavaScript de confidentialité](privacy/javascript-library.md)
 - Référence {#reference}
    - [Informations personnelles du client (version 2.x)](privacy/data-m2.md)
    - [Informations personnelles du client (version 1.x)](privacy/data-m1.md)
-- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=fr)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
