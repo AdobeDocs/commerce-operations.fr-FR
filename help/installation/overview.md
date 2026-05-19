@@ -1,11 +1,11 @@
 ---
 title: Présentation de l’installation sur site
-description: Découvrez le processus d’installation sur site d’Adobe Commerce. Découvrez la configuration requise pour le serveur, les étapes de configuration et les bonnes pratiques de déploiement.
+description: Découvrez le processus d’installation sur site d’Adobe Commerce. Découvrez la configuration requise pour le serveur, les étapes de configuration et les bonnes pratiques de déploiement.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 0%
+source-wordcount: '540'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +20,7 @@ Vous pouvez installer le logiciel sur site Adobe Commerce en 30 à 60 minutes en
 >
 >Vous devez disposer de connaissances techniques intermédiaires et d’un accès au serveur pour continuer avec succès.
 
-L’installation permet de créer un magasin Adobe Commerce entièrement fonctionnel avec une [vitrine orientée client](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/storefront/storefront) et un [panneau d’administration](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/admin/admin). Vos informations d’identification de base de données, informations de domaine et clés d’authentification doivent être prêtes avant de commencer le processus.
+L’installation permet de créer un magasin Adobe Commerce entièrement fonctionnel avec une [vitrine orientée client](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) et un [panneau d’administration](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). Vos informations d’identification de base de données, informations de domaine et clés d’authentification doivent être prêtes avant de commencer le processus.
 
 ## Responsabilités du commerçant
 
@@ -43,7 +43,7 @@ Vous avez un contrôle total sur votre environnement, ce qui vous permet d’off
 
 Le diagramme suivant illustre les principales étapes de l’installation d’Adobe Commerce pour les environnements On-Premise :
 
-![Fonctionnement de l’installation](../assets/installation/on-premises-install.drawio.svg)
+![Fonctionnement de l’installation](../assets/installation/on-premises-install.png)
 
 ### Configuration de votre environnement de serveur
 

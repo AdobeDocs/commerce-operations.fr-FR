@@ -2,9 +2,9 @@
 title: Référence des informations personnelles du client (version 1.x)
 description: Découvrez les mappages de flux de données et d’entités de base de données pour les informations personnelles des clients dans Magento 1.x.
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Un utilisateur peut saisir des informations sur le client, l’adresse et le pai
 
 Commerce charge les informations du client lorsque celui-ci se connecte et consulte plusieurs pages ou passages en caisse différents.
 
-![Points d’accès aux données front-end](../../assets/security-compliance/frontend-data-access-points.svg)
+![Points d’accès aux données front-end](../../assets/security-compliance/frontend-data-access-points.png)
 
 ### Points d’entrée des données du serveur principal
 
@@ -46,7 +46,7 @@ Un commerçant peut saisir le client, l’adresse et les informations de paiemen
 
 Commerce charge les informations client lorsqu’un commerçant consulte plusieurs types de grilles, clique sur une grille pour afficher des informations détaillées et effectue diverses autres tâches.
 
-![Points d’accès aux données du serveur principal](../../assets/security-compliance/backend-data-access-points.svg)
+![Points d’accès aux données du serveur principal](../../assets/security-compliance/backend-data-access-points.png)
 
 ## Entités de base de données
 

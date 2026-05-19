@@ -3,9 +3,9 @@ title: Présentation de la maintenance et du support
 description: Maintenez et prenez en charge correctement votre nouvelle implémentation d’Adobe Commerce.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Le transfert des connaissances se fait tout au long du projet, et une approche d
 
 Le diagramme suivant montre les phases et les activités qui seraient incluses dans un résultat de transition réussi :
 
-![Diagramme montrant les phases du processus de transition](../../assets/playbooks/transition-diagram.svg)
+![Diagramme montrant les phases du processus de transition](../../assets/playbooks/transition-diagram.png)
 
 >[!NOTE]
 >
@@ -33,5 +33,5 @@ Le diagramme suivant montre les phases et les activités qui seraient incluses d
 L’identification du modèle d’assistance approprié pour votre entreprise afin de continuer à améliorer et à optimiser votre plateforme et votre pratique commerciale dans son ensemble est une étape essentielle pour conserver tout le travail effectué au cours du processus de mise en œuvre. Avec un plan d’assistance complet et continu en place, votre site commercial peut répondre aux attentes de vos clients et vous pouvez continuer à atteindre vos objectifs.
 
 Lors du déploiement d’Adobe Commerce, il est essentiel de réfléchir aux éléments à inclure dans votre stratégie de maintenance et d’assistance.
-L’assistance d’experts est incluse dans une licence Adobe Commerce. Pour plus d’informations sur l’assistance d’experts et les programmes d’assistance Adobe, consultez les [programmes d’assistance Adobe](https://business.adobe.com/fr/customers/consulting-services/premier-support.html).
+L’assistance d’experts est incluse dans une licence Adobe Commerce. Pour plus d’informations sur l’assistance d’experts et les programmes d’assistance Adobe, consultez les [programmes d’assistance Adobe](https://business.adobe.com/customers/consulting-services/premier-support.html).
 Outre les programmes d’assistance Adobe, il existe des conditions d’assistance Magento héritées. Pour connaître les services d’assistance qui vous concernent, veuillez consulter votre contrat afin de connaître le contrat d’assistance dont vous disposez ou adressez-vous à l’équipe chargée de votre compte Adobe.
