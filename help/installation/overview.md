@@ -20,7 +20,7 @@ Vous pouvez installer le logiciel sur site Adobe Commerce en 30 à 60 minutes en
 >
 >Vous devez disposer de connaissances techniques intermédiaires et d’un accès au serveur pour continuer avec succès.
 
-L’installation permet de créer un magasin Adobe Commerce entièrement fonctionnel avec une [vitrine orientée client](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) et un [panneau d’administration](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). Vos informations d’identification de base de données, informations de domaine et clés d’authentification doivent être prêtes avant de commencer le processus.
+L’installation permet de créer un magasin Adobe Commerce entièrement fonctionnel avec une [vitrine orientée client](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/storefront/storefront) et un [panneau d’administration](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/admin/admin). Vos informations d’identification de base de données, informations de domaine et clés d’authentification doivent être prêtes avant de commencer le processus.
 
 ## Responsabilités du commerçant
 
