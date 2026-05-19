@@ -18,7 +18,7 @@ L’onglet [!UICONTROL Summary] de [!DNL Observation for Adobe Commerce] est des
 
 ![Présentation des transactions](../../assets/tools/transaction-overview.jpg)
 
-### [Qu&#39;est-ce qu&#39;une transaction ?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20souvent, quand%20la%20réponse%20est%20envoyée)
+### Qu&#39;est-ce qu&#39;une transaction ?
 
 « Au [!DNL New Relic], une transaction est définie comme une unité logique de travail dans une application logicielle. Plus précisément, il fait référence aux appels de fonction et aux appels de méthode qui constituent cette unité de travail. Il fait souvent référence à une transaction web, qui représente une activité qui se produit entre le moment où l’application reçoit une requête web et le moment où la réponse est envoyée. »
 

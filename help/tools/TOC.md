@@ -2,7 +2,7 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: bf7216db7919b3f62e66cd7c27c0db023b2b6441
+source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
 workflow-type: tm+mt
 source-wordcount: '9953'
 ht-degree: 0%
@@ -27,11 +27,11 @@ ht-degree: 0%
    - [Alertes](site-wide-analysis-tool/alerts.md)
    - [Correctifs](site-wide-analysis-tool/patches.md)
 - MAJUSCULES {#caps-tool}
-   - [Introduction](caps-tool/intro.md)
-   - [Accès](caps-tool/access.md)
-   - [Workflow](caps-tool/workflow.md)
-   - [Bonnes pratiques](caps-tool/best-practices.md)
-   - [Dépannage](caps-tool/troubleshooting.md)
+   - {hide-from-toc}[Introduction](caps-tool/intro.md)
+   - {hide-from-toc}[Accès](caps-tool/access.md)
+   - {hide-from-toc}[&#x200B; Workflow &#x200B;](caps-tool/workflow.md)
+   - {hide-from-toc}[Bonnes pratiques](caps-tool/best-practices.md)
+   - {hide-from-toc}[Dépannage](caps-tool/troubleshooting.md)
 - Alertes gérées sur Adobe Commerce {#managed-alerts-for-adobe-commerce}
    - [Alertes gérées sur Adobe Commerce : alerte critique  [!DNL Redis]  mémoire](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
    - [Alertes gérées pour Adobe Commerce : alerte d’avertissement de disque](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)

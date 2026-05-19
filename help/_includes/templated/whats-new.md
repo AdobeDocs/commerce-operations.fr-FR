@@ -1,7 +1,7 @@
 ---
-source-git-commit: 726f78414fa49a9d5d2ee4f1b43e718107039530
+source-git-commit: 8b631aabebcc37a793d8dda60af0c9194c269e36
 workflow-type: tm+mt
-source-wordcount: '2622'
+source-wordcount: '2623'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><p>Ajout d’une section <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements">Configuration requise pour les versions antérieures de Commerce</a> réductible avec des tableaux de référence et des conseils sur la fin de prise en charge de MySQL 8.0/Elasticsearch 7.17 pour les versions antérieures d’Adobe Commerce.</p>
 </td>
       <td>
-        Technique
+        Technique, commentaires
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07e7c6904ead0c730597bc6d0899f4c988b7725b">validation</a></td>
     </tr>
@@ -61,7 +61,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c138beddb066fe26f9e57afbd9b6e74f978a8407">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview">Présentation : Outil de correctifs de qualité (QPT) version 1.1.79</a>.</p>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview">Présentation : Outil de correctifs de qualité (QPT) version 1.1.79</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
