@@ -3,9 +3,9 @@ title: Présentation de la maintenance et du support
 description: Maintenez et prenez en charge correctement votre nouvelle implémentation d’Adobe Commerce.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Le transfert des connaissances se fait tout au long du projet, et une approche d
 
 Le diagramme suivant montre les phases et les activités qui seraient incluses dans un résultat de transition réussi :
 
-![Diagramme montrant les phases du processus de transition](../../assets/playbooks/transition-diagram.svg)
+![Diagramme montrant les phases du processus de transition](../../assets/playbooks/transition-diagram.png)
 
 >[!NOTE]
 >

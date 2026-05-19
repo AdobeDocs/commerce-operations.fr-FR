@@ -2,9 +2,9 @@
 title: Référence des informations personnelles du client (version 2.x)
 description: Découvrez les diagrammes de flux de données et les mappages d’entités de base de données pour les informations personnelles des clients dans Adobe Commerce 2.x.
 exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '841'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Un utilisateur peut saisir des informations sur le client, l’adresse et le pai
 
 Adobe Commerce charge les informations du client lorsque ce dernier se connecte et consulte plusieurs pages différentes ou les extrait.
 
-![Points d’accès aux données front-end](../../assets/security-compliance/frontend-data-access-points.svg)
+![Points d’accès aux données front-end](../../assets/security-compliance/frontend-data-access-points.png)
 
 ### Points d’entrée des données du serveur principal
 
@@ -46,7 +46,7 @@ Un commerçant peut saisir des informations sur le client, des données d’adre
 
 Adobe Commerce charge les informations client lorsqu’un commerçant consulte plusieurs types de grilles, clique sur une grille pour afficher des informations détaillées et effectue diverses autres tâches.
 
-![Points d’accès aux données du serveur principal](../../assets/security-compliance/backend-data-access-points.svg)
+![Points d’accès aux données du serveur principal](../../assets/security-compliance/backend-data-access-points.png)
 
 ## Entités de base de données
 

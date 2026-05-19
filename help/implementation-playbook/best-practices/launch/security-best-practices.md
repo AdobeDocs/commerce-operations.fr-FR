@@ -3,9 +3,9 @@ title: Sécurisation de votre site et de votre infrastructure Commerce
 description: Maintenez la sécurité en implémentant les bonnes pratiques de sécurité lors de la configuration et de la mise à jour des installations d’Adobe Commerce.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '2173'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Adobe considère que les recommandations suivantes sont de la plus haute priorit
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Activez l’authentification à deux facteurs pour votre administrateur et toutes les connexions SSH**
 
-- [Sécurité pour l’administrateur Commerce](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html?lang=fr)
+- [Sécurité pour l’administrateur Commerce](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html)
 
 - [Connexions SSH sécurisées](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html?lang=fr) (infrastructure cloud)
 
@@ -95,7 +95,7 @@ Consultez les ressources suivantes pour plus d’informations sur les versions d
 
 >[!TIP]
 >
->Obtenez les dernières informations de sécurité et atténuez les problèmes de sécurité connus en vous abonnant au service de notification de sécurité [Adobe](https://www.adobe.com/subscription/adbeSecurityNotifications.html).
+>Obtenez les dernières informations de sécurité et atténuez les problèmes de sécurité connus en vous abonnant au service de notification de sécurité [&#128279;](https://www.adobe.com/subscription/adbeSecurityNotifications.html).
 
 ## Développement d’un plan de reprise après sinistre
 
@@ -111,7 +111,7 @@ Dans le cadre d’un plan de reprise après sinistre, Adobe recommande vivement 
 
 - [Sauvegarde et reprise après sinistre](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=fr#backup-and-disaster-recovery)
 
-- [Gestion de la configuration du magasin pour Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=fr)
+- [Gestion de la configuration des magasins pour Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=fr)
 
 **Adobe Commerce déployé sur site**
 
@@ -145,7 +145,7 @@ Dans les attaques les plus courantes, du code malveillant est injecté dans l’
 
 Les fraudeurs de cartes de crédit côté client sont un type de programme malveillant qui incorpore du code dans le contenu du site web du commerçant qui peut être exécuté dans le navigateur d’un utilisateur, comme illustré dans la figure suivante.
 
-![Flux de données pour les attaques de logiciels malveillants ciblant les sites d’e-commerce](../../../assets/playbooks/malware-data-flow.svg)
+![Flux de données pour les attaques de logiciels malveillants ciblant les sites d’e-commerce](../../../assets/playbooks/malware-data-flow.png)
 
 Après certaines actions, telles que l’envoi d’un formulaire par un utilisateur ou la modification d’une valeur de champ, l’émulateur sérialise les données et les envoie à des points d’entrée tiers. Ces points d’entrée sont généralement d’autres sites web compromis qui servent de relais pour envoyer les données à leur destination finale.
 
@@ -160,7 +160,7 @@ Vous trouverez ci-dessous une liste des catégories courantes d’attaques qu’
 
 - **Endommagement du site** : un attaquant endommage un site web en modifiant l’aspect visuel du site ou en ajoutant ses propres messages. Bien que l&#39;accès au site et aux comptes d&#39;utilisateurs ait été compromis, les informations de paiement restent souvent sécurisées.
 
-- **Réseaux de zombies** : le serveur Commerce du client fait partie d&#39;un réseau de zombies qui envoie des courriers indésirables. Placer sur la liste bloquée Bien que les données utilisateur ne soient généralement pas compromises, le nom de domaine du client peut être limité par des filtres de spam, empêchant la diffusion de tout e-mail provenant du domaine. Le site du client peut également faire partie d’un réseau de robots, ce qui entraîne une attaque par déni de service distribué (DDoS) sur un ou plusieurs autres sites. Le réseau de zombies peut bloquer le trafic IP entrant vers le serveur Commerce et empêcher les clients d’effectuer des achats.
+- **Réseaux de zombies** : le serveur Commerce du client fait partie d&#39;un réseau de zombies qui envoie des courriers indésirables. Bien que les données utilisateur ne soient généralement pas compromises, le nom de domaine du client peut être limité par des filtres de spam, empêchant la diffusion de tout e-mail provenant du domaine. Le site du client peut également faire partie d’un réseau de robots, ce qui entraîne une attaque par déni de service distribué (DDoS) sur un ou plusieurs autres sites. Le réseau de zombies peut bloquer le trafic IP entrant vers le serveur Commerce et empêcher les clients d’effectuer des achats.
 
 - **Attaques directes du serveur**—Les données sont compromises, des portes dérobées et des logiciels malveillants sont installés et les opérations du site sont affectées. Les informations de paiement qui ne sont pas stockées sur le serveur sont moins susceptibles d&#39;être compromises par ces attaques.
 
