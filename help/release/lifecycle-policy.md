@@ -55,7 +55,7 @@ Le tableau suivant présente le cycle de vie complet de chaque version d’Adobe
 
 {style="table-layout:auto"}
 
-Si votre ligne de version approche de ces dates ou les dépasse, consultez [Options de mise à niveau et de migration](#upgrade-and-migration-options). Pour plus d’informations sur l’application cloud, voir [ Politique d’application de mise à niveau de version cloud ](version-upgrade-enforcement-policy.md).
+Si votre ligne de version approche de ces dates ou les dépasse, consultez [Options de mise à niveau et de migration](#upgrade-and-migration-options). Pour plus d’informations sur l’application cloud, voir [&#x200B; Politique d’application de mise à niveau de version cloud &#x200B;](version-upgrade-enforcement-policy.md).
 
 ### Chronologie de la prise en charge par trimestre
 
