@@ -22,7 +22,7 @@ Pendant les trois années de support, les clients ont accès aux éléments suiv
 
 - **Correctifs**-Pour les problèmes de sécurité critiques, tels que les vulnérabilités « jour zéro », Adobe fournit [correctifs](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) à tous les clients disposant d’une version prise en charge, même s’ils ne disposent pas du dernier correctif ou de la dernière version du correctif de sécurité. Notez qu’un correctif n’est pas exhaustif et ne résout pas tous les problèmes de sécurité qui seraient résolus par une mise à niveau vers la version la plus récente.
 
-Adobe ne fournit pas de correctifs de sécurité et de qualité pour les services tiers et les dépendances logicielles (telles que PHP et MySQL) qui peuvent arriver en fin de vie lorsque les clients sont dans la période de prise en charge de trois ans ou prolongée d’Adobe Commerce. Pour obtenir une liste complète des technologies tierces testées et prises en charge](../installation/system-requirements.md) consultez la section [Configuration requise.
+Adobe ne fournit pas de correctifs de sécurité et de qualité pour les services tiers et les dépendances logicielles (telles que PHP et MySQL) qui peuvent arriver en fin de vie lorsque les clients sont dans la période de prise en charge de trois ans ou prolongée d’Adobe Commerce. Pour obtenir une liste complète des technologies tierces testées et prises en charge[&#128279;](../installation/system-requirements.md) consultez la section Configuration requise.
 
 ## Prise en charge étendue
 
@@ -47,7 +47,7 @@ Adobe incite les clients à effectuer la mise à niveau dès que possible. Toute
 >[!NOTE]
 >
 >- <sup>1</sup> Si vous êtes un client Adobe Commerce, vous pouvez continuer à recevoir des correctifs de sécurité et de qualité pendant une année supplémentaire pendant la période de prise en charge étendue.
->- Voir [ Politique relative au cycle de vie des logiciels ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+>- Voir [&#x200B; Politique relative au cycle de vie des logiciels &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 >[!IMPORTANT]
 >
