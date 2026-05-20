@@ -1,5 +1,5 @@
 ---
-source-git-commit: 3bee7acf020881743923dabc1d93b6001324bb4d
+source-git-commit: c040c9a3f184f0a39f778e7f0f2417dcbfbfeba1
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Si vous faites partie de la communauté Adobe et que vous souhaitez rédiger un 
 
 ### Modifications majeures apportées par les employés d’Adobe
 
-Si vous êtes rédacteur technique, responsable de programme ou développeur au sein de l’équipe produit d’une solution Adobe Experience Cloud et qu’il vous incombe de contribuer ou de rédiger des articles techniques, vous devez utiliser le référentiel privé à l’adresse `https://git.corp.adobe.com/AdobeDocs`.
+Si vous êtes rédacteur technique, responsable de programme ou développeur au sein de l’équipe produit d’une solution Adobe Experience Cloud et qu’il vous incombe de contribuer ou de rédiger des articles techniques, vous devez utiliser le référentiel privé à l’adresse `https://github.com/Adobe-Enterprise-Docs`.
 
 ## Outils et configuration
 
@@ -82,4 +82,3 @@ Ce référentiel utilise les tâches rake fournies par `adobe-comdox-exl-rake-ta
 cd _jekyll
 bundle exec rake --tasks
 ```
-
