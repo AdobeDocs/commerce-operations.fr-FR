@@ -1,7 +1,7 @@
 ---
-source-git-commit: 04ed1df1fa8601e121811661b81a86672422b639
+source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '36741'
+source-wordcount: '36655'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Correction de problèmes dans la version v2.4.9
 
-Nous avons corrigé 667 problèmes dans le code principal d’Adobe Commerce 2.4.9. Un sous-ensemble des problèmes résolus inclus dans cette version est décrit ci-dessous.
+Nous avons corrigé 666 problèmes dans le code principal d’Adobe Commerce 2.4.9. Un sous-ensemble des problèmes résolus inclus dans cette version est décrit ci-dessous.
 
 ### API
 
@@ -2095,7 +2095,7 @@ _AC-15336 - [Contribution du code GitHub](https://github.com/magento/magento2/co
 
 #### Compilation du code d’un module désactivé
 
-Cette demande d’extraction désactive les modules avant la compilation du code.
+Modification du comportement de `setup:di:compile` afin de ne plus compiler le code pour les modules désactivés.
 
 _AC-10933 - [Problème GitHub](https://github.com/magento/magento2/issues/38241) - [Contribution du code GitHub](https://github.com/magento/magento2/pull/39723)_
 
@@ -2214,15 +2214,6 @@ Auparavant, le fait d&#39;atteindre la valeur maximale pour la colonne version_i
 AC-14424
 
 _AC-14424 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/7bdafaa2)_
-
-#### Magento 2.4.8 utilise des packages de développement qui ne respectent pas le contrôle de version sémantique
-
-Magento 2.4.8 nécessite les versions de développement de pdependance/pdependance et phpmd/phpmd (3.x-dev) pour la compatibilité avec PHP 8.4.
-Ces versions de développement entrent en conflit avec les outils tiers qui attendent des packages compatibles avec SemVer, empêchant certaines mises à niveau.
-Une solution temporaire consiste à alias les versions de développement dans composer.json (par exemple, « 3.x-dev as 3.99.0 »), ce qui permet une compatibilité tout en respectant le contrôle de version sémantique.
-Cela garantit la prise en charge de PHP 8.4 et évite les conflits jusqu&#39;à ce que des versions stables soient disponibles.
-
-_AC-14519 - [Problème GitHub](https://github.com/magento/magento2/issues/39796)_
 
 #### Après avoir téléchargé l&#39;étiquette d&#39;expédition, nous pouvons voir un montant d&#39;expédition qui ne correspondait pas au prix d&#39;expédition et de manutention.
 
