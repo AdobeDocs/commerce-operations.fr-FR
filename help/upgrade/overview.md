@@ -1,11 +1,11 @@
 ---
 title: Présentation du processus de mise à niveau
-description: Découvrez comment la mise à niveau de votre projet Adobe Commerce garantit la sécurité et l’efficacité de votre storefront. Découvrez les bonnes pratiques pour planifier et exécuter des mises à niveau réussies.
+description: Découvrez comment la mise à niveau de votre projet Adobe Commerce garantit la sécurité et l’efficacité de votre storefront. Découvrez les bonnes pratiques de planification et d’exécution de mises à niveau réussies.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
 source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 0%
+source-wordcount: '930'
+ht-degree: 2%
 
 ---
 
@@ -39,7 +39,7 @@ La mise à niveau permet à votre entreprise de rester agile dans un secteur du 
 
 ### Sécurité
 
-La sécurité est l’une des principales raisons de la mise à niveau, car 83 % des incidents de sécurité se produisent sur des logiciels obsolètes. Selon [IBM](https://www.ibm.com/reports/data-breach), le coût moyen d&#39;une violation de données est de 3,86 millions de dollars, soit bien plus que ce qu&#39;il en coûte pour atténuer ce risque par la mise à niveau. Adobe propose deux méthodes pour assurer la sécurité de votre boutique tout au long de l’année :
+La sécurité est l’une des principales raisons de la mise à niveau, car 83 % des incidents de sécurité se produisent sur des logiciels obsolètes. Selon [&#128279;](https://www.ibm.com/reports/data-breach), le coût moyen d&#39;une violation de données est de 3,86 millions de dollars, soit bien plus que ce qu&#39;il en coûte pour atténuer ce risque par la mise à niveau. Adobe propose deux méthodes pour assurer la sécurité de votre boutique tout au long de l’année :
 
 - **Versions des correctifs** : incluez la sécurité, les performances, la qualité et des correctifs de priorité élevée.
 - **Mises à jour des correctifs de sécurité** : incluez des correctifs et des améliorations pour garantir la sécurité de votre site et faciliter sa mise en œuvre.

@@ -4,7 +4,7 @@ description: Découvrez le  [!DNL Upgrade Compatibility Tool]  et comment il peu
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
 source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Le [!DNL Upgrade Compatibility Tool] est un outil qui compare une instance perso
 
 Vous pouvez utiliser le [!DNL Upgrade Compatibility Tool] via :
 
-- Comme outil autonome [interface de ligne de commande](../upgrade-compatibility-tool/run.md). Pour obtenir la liste complète des commandes disponibles, reportez-vous à la référence [`bin/uct`](../../tools/reference/uct.md).
+- Comme outil autonome [interface de ligne de commande](../upgrade-compatibility-tool/run.md). Pour obtenir la liste complète des commandes disponibles, reportez-vous à la référence [&#128279;](../../tools/reference/uct.md).`bin/uct`
 - Intégration de la [!DNL Upgrade Compatibility Tool] au [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md).
 - Une configuration d’exécution dans le plug-in [Magento PHPStorm](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
 
@@ -37,7 +37,7 @@ Le diagramme suivant montre les workflows possibles lors de l’exécution du [!
 
 Regardez cette vidéo pour en savoir plus sur le [!DNL Upgrade Compatibility Tool] :
 
->[!VIDEO](https://video.tv.adobe.com/v/344383?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/344383?captions=fre_fr&quality=12)
 
 ## Contribuez à améliorer l’[!DNL Upgrade Compatibility Tool]
 
