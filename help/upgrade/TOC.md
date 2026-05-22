@@ -5,7 +5,7 @@ feature: Upgrade
 topic: Administration, Commerce, Development, Upgrade
 source-git-commit: 4616cc6990921b531483213f2904a24b483fb7ac
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '153'
 ht-degree: 4%
 
 ---
@@ -55,4 +55,4 @@ ht-degree: 4%
 - Ressources {#resources}
    - [Lecture recommandée](resources/recommended-reading.md)
    - [Moderniser votre plateforme avec Adobe Commerce](resources/recommended-upgrade-paths.md)
-- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=fr)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
