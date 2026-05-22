@@ -23,7 +23,7 @@ Le [!DNL Upgrade Compatibility Tool] est un outil qui compare une instance perso
 
 Vous pouvez utiliser le [!DNL Upgrade Compatibility Tool] via :
 
-- Comme outil autonome [interface de ligne de commande](../upgrade-compatibility-tool/run.md). Pour obtenir la liste complète des commandes disponibles, reportez-vous à la référence ](../../tools/reference/uct.md).[`bin/uct`
+- Comme outil autonome [interface de ligne de commande](../upgrade-compatibility-tool/run.md). Pour obtenir la liste complète des commandes disponibles, reportez-vous à la référence [&#128279;](../../tools/reference/uct.md).`bin/uct`
 - Intégration de la [!DNL Upgrade Compatibility Tool] au [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md).
 - Une configuration d’exécution dans le plug-in [Magento PHPStorm](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
 
@@ -53,7 +53,7 @@ Reportez-vous à la rubrique [Contribute](https://developer.adobe.com/commerce/p
 
 Consultez les ressources suivantes pour mieux comprendre les mises à niveau d’Adobe Commerce :
 
-- Le [ guide de mise à niveau ](../overview.md) présente un aperçu du parcours de mise à niveau d’Adobe Commerce type et des bonnes pratiques à suivre le long de ce parcours.
+- Le [&#x200B; guide de mise à niveau &#x200B;](../overview.md) présente un aperçu du parcours de mise à niveau d’Adobe Commerce type et des bonnes pratiques à suivre le long de ce parcours.
 - La page [prochaines versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) indique les dates des versions planifiées et à venir.
 - La page [Ressources de la communauté](https://developer.adobe.com/commerce/contributor/community/) est un endroit où commencer les discussions ou trouver plus d’informations.
 - Consultez la page [Outils associés](../upgrade-compatibility-tool/related-tools.md) pour découvrir des outils utiles dans votre parcours de mise à niveau standard.
