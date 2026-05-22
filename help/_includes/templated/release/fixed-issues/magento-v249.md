@@ -1,7 +1,7 @@
 ---
-source-git-commit: 04ed1df1fa8601e121811661b81a86672422b639
+source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '32485'
+source-wordcount: '32399'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Correction de problèmes dans la version v2.4.9
 
-Nous avons corrigé 581 problèmes dans le code principal de Magento Open Source 2.4.9. Un sous-ensemble des problèmes résolus inclus dans cette version est décrit ci-dessous.
+Nous avons corrigé 580 problèmes dans le code principal de Magento Open Source 2.4.9. Un sous-ensemble des problèmes résolus inclus dans cette version est décrit ci-dessous.
 
 ### API
 
@@ -73,7 +73,7 @@ Désormais, les API valident correctement les entrées et renvoient une erreur 4
 
 _AC-6419 - [Problème GitHub](https://github.com/magento/magento2/issues/35934) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Erreur de serveur interne dans le point d’entrée de l’API `/V1/order/&lbrace;orderId&rbrace;/ship`
+#### Erreur de serveur interne dans le point d’entrée de l’API `/V1/order/{orderId}/ship`
 
 Le système corrige désormais l’erreur de serveur interne dans `/V1/order/{orderId}/ship` point d’entrée de l’API et renvoie une erreur 400, car la requête est incorrecte.
 
@@ -1805,7 +1805,7 @@ _AC-15336 - [Contribution du code GitHub](https://github.com/magento/magento2/co
 
 #### Compilation du code d’un module désactivé
 
-Cette demande d’extraction désactive les modules avant la compilation du code.
+Modification du comportement de `setup:di:compile` afin de ne plus compiler le code pour les modules désactivés.
 
 _AC-10933 - [Problème GitHub](https://github.com/magento/magento2/issues/38241) - [Contribution du code GitHub](https://github.com/magento/magento2/pull/39723)_
 
@@ -1924,15 +1924,6 @@ Auparavant, le fait d&#39;atteindre la valeur maximale pour la colonne version_i
 AC-14424
 
 _AC-14424 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/7bdafaa2)_
-
-#### Magento 2.4.8 utilise des packages de développement qui ne respectent pas le contrôle de version sémantique
-
-Magento 2.4.8 nécessite les versions de développement de pdependance/pdependance et phpmd/phpmd (3.x-dev) pour la compatibilité avec PHP 8.4.
-Ces versions de développement entrent en conflit avec les outils tiers qui attendent des packages compatibles avec SemVer, empêchant certaines mises à niveau.
-Une solution temporaire consiste à alias les versions de développement dans composer.json (par exemple, « 3.x-dev as 3.99.0 »), ce qui permet une compatibilité tout en respectant le contrôle de version sémantique.
-Cela garantit la prise en charge de PHP 8.4 et évite les conflits jusqu&#39;à ce que des versions stables soient disponibles.
-
-_AC-14519 - [Problème GitHub](https://github.com/magento/magento2/issues/39796)_
 
 #### Le mécanisme MView ignore silencieusement les erreurs lors de l’exécution du déclencheur
 
@@ -3657,7 +3648,7 @@ _ACP2E-4212 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 #### Impossible de naviguer entre les sites web dans l’aperçu de la planification de mise à jour
 
-Avant cette correction, l’aperçu de la mise à jour planifiée était interrompu lors de la tentative de prévisualisation du contenu pour les magasins avec des domaines personnalisés. Après ce correctif, les domaines de magasin personnalisés peuvent être prévisualisés en l’état et navigués dans le cadre de prévisualisation. Le correctif couvre les produits, les catégories, les pages CMS et les blocs CMS, et prend en charge les liens de navigation à l’aide de balises de balisage `{{store url}}`, comme indiqué dans [Variables Adobe Commerce et balises de balisage](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/variables/markup-tags).
+Avant cette correction, l’aperçu de la mise à jour planifiée était interrompu lors de la tentative de prévisualisation du contenu pour les magasins avec des domaines personnalisés. Après ce correctif, les domaines de magasin personnalisés peuvent être prévisualisés en l’état et navigués dans le cadre de prévisualisation. Le correctif couvre les produits, les catégories, les pages CMS et les blocs CMS, et prend en charge les liens de navigation à l’aide de balises de balisage `{{store url}}`, comme indiqué dans [Variables Adobe Commerce et balises de balisage](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags).
 
 _ACP2E-4308 - [contribution du code GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 
