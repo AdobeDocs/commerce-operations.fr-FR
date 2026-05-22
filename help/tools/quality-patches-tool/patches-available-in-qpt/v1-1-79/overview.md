@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 19f0697ee47fcd7e3228d9e44010b45c3799a182
+source-git-commit: 535c5a6de142008bccd2d5883a9b680c77914264
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,6 @@ QPT v1.1.79 comprend les correctifs suivants :
 1. **ACP2E-4475** : correction d’un problème en raison duquel la page de liste des produits filtre et trie incorrectement les produits en rupture de stock par prix lorsque l’option **[!UICONTROL Display Out of Stock Products]** est activée.
 1. **ACP2E-4110** : correction du problème en raison duquel les produits groupés à un prix spécial affichaient des montants incorrects sur PDP et PLP dans une devise autre que la devise par défaut.
 1. **AC-10698** : correction du problème en raison duquel le système envoyait la devise au niveau de toutes les commandes au lieu de l’associer à des commandes individuelles. Les prix et totaux des transactions sont désormais envoyés par commande à [!DNL Google Tag], ce qui améliore la précision du suivi des données d’e-commerce.
-1. **AC-10737** : correction d’un problème en raison duquel la commande `bin/magento setup:db:status` ne reconnaissait pas le type de données JSON.
+1. **[AC-10737](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)** : correction d’un problème en raison duquel la commande `bin/magento setup:db:status` ne reconnaissait pas le type de données JSON.
 
 Utilisez le menu à gauche pour accéder à une page de correctif spécifique.
