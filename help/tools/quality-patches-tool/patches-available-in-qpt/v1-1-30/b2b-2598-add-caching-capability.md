@@ -1,20 +1,38 @@
 ---
-title: 'BB2B-2598 : ajoute une fonctionnalité de mise en cache aux requêtes GraphQl storeConfig, currency, country, COUNTRIES, availableStores'
-description: Appliquez le correctif BB2B-2598 pour ajouter une fonctionnalité de mise en cache aux requêtes GraphQl storeConfig, currency, country, country, country et availableStores .
+title: 'B2B-2598 : ajoute une fonctionnalité de mise en cache aux requêtes GraphQl storeConfig, currency, country, COUNTRIES, availableStores'
+description: Appliquez le correctif B2B-2598 pour ajouter une fonctionnalité de mise en cache aux requêtes GraphQl storeConfig, currency, country, country, country et availableStores .
 feature: B2B, GraphQL, Cache
 role: Admin
-exl-id: b842fab4-d2c0-4ef1-be13-182f09015cd7
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+autotag-review: '2026-05-22T20:21:20.687Z'
+TQID: 'https://experienceleague.adobe.com/DQWkSrUHcUhOTn3fWdnRPVQUK6jRkPGCAnIKPRHkebQ'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+subfeature_v2:
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+industry_v2:
+  - id: aad1e361-483a-40cf-9a88-144325515074
+source-git-commit: 891f738f4a3db4e361984d11585f3679068c8ced
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: 458
 ht-degree: 0%
 
 ---
 
-# BB2B-2598 : ajoute une fonctionnalité de mise en cache aux requêtes GraphQl `storeConfig`, `currency`, `country`, `countries` et `availableStores`
+# B2B-2598 : ajoute une fonctionnalité de mise en cache aux requêtes GraphQl `storeConfig`, `currency`, `country`, `countries` et `availableStores`
 
-Le correctif BB2B-2598 ajoute une fonctionnalité de mise en cache aux requêtes GraphQl `storeConfig`, `currency`, `country`, `countries` et `availableStores`. Ce correctif est disponible lorsque la version 1.1.30 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est BB2B-2598. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7-beta1.
+Le correctif B2B-2598 ajoute une fonctionnalité de mise en cache aux requêtes GraphQl `storeConfig`, `currency`, `country`, `countries` et `availableStores`. Ce correctif est disponible lorsque la version 1.1.30 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est B2B-2598. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7-beta1.
 
 ## Produits et versions concernés
 
