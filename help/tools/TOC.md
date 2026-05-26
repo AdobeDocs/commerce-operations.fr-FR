@@ -2,7 +2,7 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 891f738f4a3db4e361984d11585f3679068c8ced
+source-git-commit: 091df8b7f71edd862cbee9583fb379e29adbb8f2
 workflow-type: tm+mt
 source-wordcount: '9978'
 ht-degree: 0%
@@ -700,7 +700,7 @@ ht-degree: 0%
          - [ACSD-58471 : le contenu dynamique ne parvient pas à se charger sur la page des détails du produit, lorsque des règles de prix de catalogue sont planifiées](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
          - [ACSD-58383 : dupliquer des avoirs à partir de demandes de remboursement simultanées via  [!DNL REST API]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
          - [ACSD-58735 : l’administrateur restreint ne peut pas afficher les paniers abandonnés sur le compte client pour le site web associé](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
-         - [ACSD-62793 : les attributs Datetime dans les exportations ont un composant time manquant. De plus, si [!UICONTROL Fields Enclosure] est activé, les valeurs d’attribut sont placées entre guillemets doubles](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62793-datetime-attributes-exports-missing-time-component-and-fields-enclosure-enabled-attribute-values-enclosed-within-double-quotes.md)
+         - [ACSD-62793 : les attributs Datetime dans les exportations ont un composant time manquant. De plus, si [!UICONTROL Fields Enclosure] est activé, les valeurs d’attribut sont placées entre guillemets doubles](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62793.md)
          - [ACSD-60344 : duplication des e-mails de confirmation de commande lors de l’utilisation de [!UICONTROL Purchase Order] avec approbation automatique](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
          - [ACSD-62332 : la requête GraphQL de liste de produits est limitée à 10 000 produits et  [!DNL Live Search]  la page actuelle à 1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
          - [ACSD-62591 : le thème ne change pas correctement lorsqu’[!UICONTROL User Agent Rules] est configuré](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
@@ -900,7 +900,7 @@ ht-degree: 0%
          - [ACSD-67459 : impossible d’importer des produits dont les descriptions dépassent 65 536 caractères](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
-         - [ACSD-67424 : la valeur updated_at dans la réponse GET /carts/search de l’API REST ne correspond pas à la valeur dans [!UICONTROL Admin Panel] pour [!UICONTROL Negotiable Quotes]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
+         - [ACSD-67424 : la valeur updated_at dans la réponse de l’API REST GET /carts/search ne correspond pas à la valeur dans [!UICONTROL Admin Panel] pour [!UICONTROL Negotiable Quotes]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
          - [ACSD-67383 : erreur lors de la connexion en tant que client avec deux comptes d’administration d’entreprise dans la même session](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383.md)
          - [ACSD-68064 : entrées en double créées lors des mises à jour planifiées dans les environnements comportant des catégories profondément imbriquées](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064.md)
          - [ACSD-67946 : la mise à jour du panier affiche les bannières d’erreur en double](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946.md)
