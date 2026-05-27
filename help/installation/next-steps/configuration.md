@@ -5,7 +5,7 @@ feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
 source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Après l’installation, nous recommandons ce qui suit :
 
 * Assurez-vous que la propriété et les autorisations des fichiers sont correctement définies [&#128279;](../prerequisites/file-system/configure-permissions.md)
 * Nous vous recommandons vivement de [modifier l’URI d’administration par défaut](../tutorials/admin-uri.md) de `admin` à autre chose
-* Assurez-vous que l’en-tête HTTP [`X-Frame-Option`](../../configuration/security/xframe-options.md) est correctement défini.
+* Assurez-vous que l’en-tête HTTP [&#128279;](../../configuration/security/xframe-options.md) est correctement défini.`X-Frame-Option`
 * Prenez des précautions contre le cross-site scripting (XSS) en [&#x200B; sécurisant vos modèles &#x200B;](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting)
 
 Si vous avez installé en [clonant le référentiel GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository), assurez-vous, lors du déploiement de l’application, d’inclure uniquement les fichiers et les dossiers requis pour l’environnement de production. Les fichiers et les dossiers qui ne sont pas requis peuvent présenter des risques de sécurité.
@@ -55,9 +55,9 @@ L&#39;utilitaire `logrotate` UNIX permet d&#39;administrer les systèmes qui gé
 
 Pour plus d’informations, voir l’une des rubriques suivantes :
 
-* [Comment faire : tutoriel ultime sur la commande de rotation du journal avec dix exemples](https://www.thegeekstuff.com/2010/07/logrotate-examples)
-* [Échange de pile](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
-* [`logrotate` page man](https://linuxconfig.org/logrotate-8-manual-page)
+* [Comment : tutoriel ultime sur la commande de rotation du journal avec dix exemples](https://www.thegeekstuff.com/2010/07/logrotate-examples)
+* [Échange De Pile](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
+* [Page de manuel `logrotate`](https://linuxconfig.org/logrotate-8-manual-page)
 
 >[!AVAILABILITY]
 >
