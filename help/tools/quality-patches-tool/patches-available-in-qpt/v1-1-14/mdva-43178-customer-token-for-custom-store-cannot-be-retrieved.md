@@ -45,10 +45,10 @@ Le jeton client d’un magasin personnalisé ne peut pas être récupéré dans 
 
    <pre>
     <code class="language-graphql">
-    {
+    &lbrace;
       "username": "login",
       "password": "password"
-    }
+    &rbrace;
     </code>
     </pre>
 

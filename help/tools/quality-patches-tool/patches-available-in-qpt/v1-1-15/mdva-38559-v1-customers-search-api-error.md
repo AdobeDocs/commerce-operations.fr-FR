@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-38559 : l’API /V1/customers/search renvoie une erreur'
-description: Le correctif MDVA-38559 corrige le problème où l’API `/V1/customers/search` renvoie une erreur pour les clients qui ont plusieurs abonnements. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15 est installé. L’ID du correctif est MDVA-38559. Notez que le problème a été résolu dans Adobe Commerce 2.4.3.
+description: Le correctif MDVA-38559 corrige le problème où l’API &grave;/V1/customers/search&grave; renvoie une erreur pour les clients qui ont plusieurs abonnements. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15 est installé. L’ID du correctif est MDVA-38559. Notez que le problème a été résolu dans Adobe Commerce 2.4.3.
 feature: REST, Search
 role: Admin
 exl-id: 6bcb65d0-1389-4090-b53c-8048bf64d8fb

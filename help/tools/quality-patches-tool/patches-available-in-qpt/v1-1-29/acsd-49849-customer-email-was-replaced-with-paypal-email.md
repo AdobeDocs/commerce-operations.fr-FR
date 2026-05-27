@@ -39,7 +39,7 @@ L’e-mail d’un client ou d’une cliente est remplacé par un e-mail [!DNL Pa
 1. Accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Payments]**.
 1. Activez et configurez [!DNL PayPal Express] et définissez **[!UICONTROL Payment Action]** = **[!UICONTROL Sale]**.
 1. Accédez à **[!UICONTROL Catalog]** > **[!UICONTROL Products]** et créez un produit simple.
-1. Effectuez le passage en caisse des invités à l’aide de GraphQL. Pour plus d’informations, consultez le tutoriel de passage en caisse de [](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) dans la documentation pour les développeurs Adobe Commerce.
+1. Effectuez le passage en caisse des invités à l’aide de GraphQL. Pour plus d’informations, consultez le tutoriel de passage en caisse de [&#128279;](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) dans la documentation pour les développeurs Adobe Commerce.
 1. Utilisez [!DNL PayPal Express] comme mode de paiement.
 1. Notez l’e-mail que vous avez utilisé à l’étape de [configuration de l’e-mail pour le panier](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/set-email-address/) dans la documentation pour les développeurs d’Adobe Commerce.
 1. Une fois la commande passée, accédez à l’administration Adobe Commerce et vérifiez l’e-mail dans la commande créée.
