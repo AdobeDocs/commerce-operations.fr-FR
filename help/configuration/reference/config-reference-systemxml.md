@@ -6,7 +6,7 @@ badge: label="Contribution David Lambauer" type="Informative" url="https://githu
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '2740'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ Une `<field>`-balise peut avoir les valeurs suivantes pour l’attribut `type=""
 | `select` | Liste déroulante normale, peut nécessiter un `source_model` personnalisé. Également utilisé pour les sélections de `Yes/No`. Voir `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` pour obtenir un exemple. |
 | `multiselect` | Comme `select`, mais plusieurs options sont valides. |
 | `button` | Un bouton qui déclenche un événement immédiat. Nécessite un modèle front-end personnalisé pour définir le texte du bouton et l’action. Voir `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` pour obtenir un exemple. |
-| `obscure` | Champ de texte avec la valeur chiffrée et affichée sous la forme `**&#x200B;**`. La modification du type à l’aide de « Inspect Element » dans le navigateur n’affiche pas la valeur. |
+| `obscure` | Champ de texte avec la valeur chiffrée et affichée sous la forme `****`. La modification du type à l’aide de « Inspect Element » dans le navigateur n’affiche pas la valeur. |
 | `password` | Comme `obscure`, sauf que la valeur masquée n’est pas chiffrée, et que la modification forcée du type à l’aide de « Inspect Element » dans le navigateur révèle la valeur. |
 | `file` | Permet de charger un fichier en vue de son traitement. |
 | `label` | Affiche un libellé au lieu d’un champ modifiable. Utilisez ce type lorsqu’un champ n’est modifiable que sur des portées spécifiques, par exemple le niveau d’affichage du magasin uniquement. |
@@ -391,7 +391,7 @@ Les règles de validation disponibles sont les suivantes :
 | `no-whitespace` | Interdit les espaces blancs. |
 | `phoneUK` | Autorise un numéro de téléphone (UK). |
 | `phoneUS` | Autorise un numéro de téléphone (États-Unis). |
-| `required-entry` | Interdit une valeur vide (validation équivalente à `validate-no-empty`).<br> Message d’échec de validation : « Ce champ est obligatoire ». |
+| `required-entry` | Interdit une valeur vide (validation équivalente à `validate-no-empty`).<br>Message d’échec de validation : « Ce champ est obligatoire. » |
 | `time` | Autorise une heure valide au format 24 heures, entre 00:00 et 23:59. Par exemple, `15`, `15:05` ou `15:05:48`. |
 | `time12h` | Permet une heure valide au format 12 heures, entre 12:00h et 23:59:59. Par exemple, `3 am`, `11:30 pm`, `02:15:00 pm`. |
 | `validate-admin-password` | Permet 7 caractères ou plus, à la fois numériques et alphabétiques. |
