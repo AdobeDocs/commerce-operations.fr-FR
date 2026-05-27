@@ -4,7 +4,7 @@ description: Configurez d’autres sites web, boutiques et vues de boutique dans
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Cette tâche nécessite la création d’une catégorie racine (et de catégorie
 
 - [Catégories](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/categories/categories)
 - [Ajout de sites web](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [URL de magasin](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [Stocker les URL](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-urls)
 - [Contenu](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
@@ -131,7 +131,7 @@ Commerce vous offre la possibilité d’ajouter le code du magasin à l’URL de
 
 Cela empêche `index.php` et `.htaccess` de se désynchroniser de la base de code Commerce lors des futures mises à niveau.
 
-Voir le [Guide de l’utilisateur de Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-urls).
+Voir le [Guide de l’utilisateur de &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 Pour ajouter le code de magasin à l’URL de base :
 

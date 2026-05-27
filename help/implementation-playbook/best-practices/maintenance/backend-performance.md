@@ -7,7 +7,7 @@ feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
 source-git-commit: d884d434e696a911de626dc76983468556cf451f
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ En savoir plus sur le test de projets Adobe Commerce :
 
 ### Identifier et résoudre les problèmes de performances
 
-Résolvez les problèmes de performances en utilisant divers outils tels que New Relic et Observation for Adobe Commerce pour détecter les goulets d’étranglement et optimiser efficacement les sites Commerce. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=fr) est inclus avec Adobe Commerce sur l’infrastructure cloud et [Observation pour Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) est inclus pour les déploiements cloud et on-premise.
+Résolvez les problèmes de performances en utilisant divers outils tels que New Relic et Observation for Adobe Commerce pour détecter les goulets d’étranglement et optimiser efficacement les sites Commerce. [&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=fr) est inclus avec Adobe Commerce sur l’infrastructure cloud et [Observation pour Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) est inclus pour les déploiements cloud et on-premise.
 
 Utilisez ces outils pour analyser les performances du site et identifier les problèmes de performances liés aux éléments suivants :
 

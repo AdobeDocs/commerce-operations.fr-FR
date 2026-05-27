@@ -1,11 +1,11 @@
 ---
 title: Présentation du guide de configuration
-description: Découvrez les fonctionnalités et services configurables de votre application Adobe Commerce. Découvrez comment gérer le déploiement, la mise en cache, la sécurité et d’autres paramètres critiques.
+description: Découvrez les fonctionnalités et services configurables de votre application Adobe Commerce. Découvrez comment gérer le déploiement, la mise en cache, la sécurité et d’autres paramètres critiques.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
 source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 0%
+source-wordcount: '180'
+ht-degree: 12%
 
 ---
 

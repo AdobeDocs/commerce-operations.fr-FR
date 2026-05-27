@@ -4,8 +4,8 @@ description: Découvrez où trouver des informations pour des versions spécifiq
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
 source-git-commit: 54aef3d7db7b8333721fb56db0ba8f098aea030b
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 3%
+source-wordcount: '454'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ Utilisez le tableau suivant pour trouver des notes de mise à jour et des inform
 <table>
   <tbody>
     <tr>
-      <td><strong>Adobe Commerce</strong>
+      <td><strong></strong>
         <p>Découvrez les dernières améliorations apportées à Adobe Commerce, notamment les améliorations, la sécurité, les correctifs de bugs et les problèmes connus.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Modifications non rétrocompatibles</a></li>
