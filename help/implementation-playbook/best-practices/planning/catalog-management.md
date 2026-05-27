@@ -100,7 +100,7 @@ Supprimer les jeux d’attributs de produit inutilisés à l’aide de MySQL.
 
 #### Vérifier la configuration du jeu d’attributs
 
-1. [Connexion à la base de données du site](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
+1. [Connexion à la base de données du site](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
 
 1. Rechercher le nombre de jeux d’attributs à l’aide de MySQL
 
@@ -179,7 +179,7 @@ L’affichage d’un trop grand nombre de produits par page peut affecter les pe
 
 Si une catégorie contient trop de produits, mettez à jour la configuration du catalogue storefront pour désactiver l’option **Autoriser tous les produits par page**.
 
-Après avoir désactivé cette option, Adobe Commerce utilise les contrôles de pagination du storefront de la liste de produits pour gérer le nombre de produits qui s’affichent dans les composants du storefront. Pour obtenir des instructions, voir [Configurer les contrôles de pagination](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
+Après avoir désactivé cette option, Adobe Commerce utilise les contrôles de pagination du storefront de la liste de produits pour gérer le nombre de produits qui s’affichent dans les composants du storefront. Pour obtenir des instructions, voir [Configurer les contrôles de pagination](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=fr#configure-the-pagination-controls).
 
 ## Limites SKU du produit
 

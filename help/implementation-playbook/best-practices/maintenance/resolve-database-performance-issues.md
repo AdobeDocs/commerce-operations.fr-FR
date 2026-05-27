@@ -38,7 +38,7 @@ Vous pouvez utiliser MySQL pour identifier et résoudre les requêtes à long te
 Si votre projet Adobe Commerce est déployé sur une architecture Pro, vous pouvez utiliser la boîte à outils Percona pour analyser les requêtes.
 
 1. Exécutez la commande `pt-query-digest --type=slowlog` sur les journaux de requêtes lentes MySQL.
-   * Pour trouver l’emplacement des journaux de requêtes lentes, voir **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs) dans notre documentation destinée aux développeurs.
+   * Pour trouver l’emplacement des journaux de requêtes lentes, voir **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs) dans notre documentation destinée aux développeurs.
    * Consultez la documentation [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) .
 1. En fonction des problèmes détectés, prenez les mesures nécessaires pour corriger la requête afin qu’elle s’exécute plus rapidement.
 
