@@ -4,7 +4,7 @@ description: Découvrez comment personnaliser les crons à l’aide des groupes 
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
 source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Vous pouvez éventuellement configurer un groupe personnalisé, ce qui vous perm
 
 Pour un tutoriel détaillé, consultez [Configuration de tâches et de groupes cron personnalisés (tutoriel)](custom-cron-tutorial.md).
 
-Pour obtenir une présentation des tâches cron, voir [&#x200B; Configuration des tâches cron &#x200B;](../cli/configure-cron-jobs.md).
+Pour obtenir une présentation des tâches cron, voir [ Configuration des tâches cron ](../cli/configure-cron-jobs.md).
 
 ## Configuration des groupes cron
 
@@ -137,7 +137,7 @@ Par exemple, désactivez la tâche cron `visitor_clean` définie dans `Magento_C
 ...
 ```
 
-Pour désactiver la tâche cron `visitor_clean`, créez un module personnalisé et réécrivez les `visitor_clean` de la tâche cron `schedule` :
+Pour désactiver la tâche cron `visitor_clean`, créez un module personnalisé et réécrivez les `schedule` de la tâche cron `visitor_clean` :
 
 ```xml
 ...

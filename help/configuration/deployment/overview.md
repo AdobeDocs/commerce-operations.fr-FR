@@ -5,7 +5,7 @@ feature: Configuration, Deploy
 exl-id: d5ed6fb3-2dd2-49df-802b-6d712ecd9ccf
 source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Nous utilisons les termes suivants pour décrire les systèmes impliqués dans l
 Vous pouvez éventuellement utiliser d’autres méthodes de déploiement, notamment :
 
 - Copie sécurisée avec SCP ou rsync
-- [&#x200B; Capistrano &#x200B;](https://capistranorb.com/documentation/overview/what-is-capistrano)
+- [Capistrano](https://capistranorb.com/documentation/overview/what-is-capistrano)
 - L’outil [Deployer](https://deployer.org/)
 
 ## Gestion de la configuration
@@ -76,6 +76,6 @@ Nous proposons un moyen de synchroniser la configuration de vos systèmes :
 >
 >Ces nouvelles méthodes de gestion de la configuration sont facultatives. Pas besoin, mais il est fortement recommandé de les utiliser.
 
-La plupart du temps, les options de configuration que vous définissez dans la configuration partagée, spécifique au système ou sensible ne peuvent pas être modifiées dans l’administration. Cela permet de garantir la cohérence de vos paramètres sur tous les systèmes. (Vous pouvez éventuellement utiliser la commande [`magento config:set`](../cli/set-configuration-values.md) sans l’option `--lock` pour configurer les paramètres modifiables dans l’Administration.)
+La plupart du temps, les options de configuration que vous définissez dans la configuration partagée, spécifique au système ou sensible ne peuvent pas être modifiées dans l’administration. Cela permet de garantir la cohérence de vos paramètres sur tous les systèmes. (Vous pouvez éventuellement utiliser la commande ](../cli/set-configuration-values.md) sans l’option `--lock` pour configurer les paramètres modifiables dans l’Administration.)[`magento config:set`
 
 Chaque option de configuration Commerce comporte un _chemin de configuration_ unique. Pour définir une valeur pour une option de configuration, vous pouvez utiliser une commande d’interface de ligne de commande ou une variable d’environnement pour définir la valeur de ce chemin de configuration sur un système spécifique.

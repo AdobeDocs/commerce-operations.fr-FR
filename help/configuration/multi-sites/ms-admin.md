@@ -4,7 +4,7 @@ description: Configurez d’autres sites web, boutiques et vues de boutique dans
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,10 @@ ht-degree: 0%
 
 Cette tâche nécessite la création d’une catégorie racine (et de catégories supplémentaires, le cas échéant) pour chaque magasin. Les tâches décrites dans cette rubrique fournissent un moyen de configurer plusieurs magasins. Pour plus d’informations, consultez les ressources suivantes dans le Guide de l’utilisateur de Commerce :
 
-- [Catégories](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/categories/categories)
-- [Ajout de sites web](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [URL de magasin](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-urls)
-- [Contenu](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/content-menu)
+- [Catégories](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)
+- [Ajout de sites web](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Stocker les URL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [Contenu](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
@@ -34,7 +34,7 @@ Pour créer une catégorie racine, procédez comme suit :
 1. Dans le champ **Nom de la catégorie**, saisissez un nom unique pour identifier cette catégorie.
 1. Assurez-vous que l’option Activer la catégorie est définie sur **Oui**.
 
-   Pour plus d’informations sur les autres options de cette page, voir [Catégories racine](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/categories/category-root).
+   Pour plus d’informations sur les autres options de cette page, voir [Catégories racine](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root).
 
    La figure suivante en est un exemple.
 
@@ -131,7 +131,7 @@ Commerce vous offre la possibilité d’ajouter le code du magasin à l’URL de
 
 Cela empêche `index.php` et `.htaccess` de se désynchroniser de la base de code Commerce lors des futures mises à niveau.
 
-Voir le [Guide de l’utilisateur de Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-urls).
+Voir le [Guide de l’utilisateur de ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 Pour ajouter le code de magasin à l’URL de base :
 
@@ -175,4 +175,4 @@ Pour modifier l’URL de base de la vue de magasin par défaut :
 
 >[!INFO]
 >
->Le site web, le magasin et le code d’affichage du magasin peuvent uniquement inclure des lettres (a-z ou A-Z), des chiffres (0-9) et des traits de soulignement (_). En outre, le premier caractère doit être une lettre. Si des majuscules ou des majuscules sont utilisées, en interne la correspondance est insensible à la casse pour permettre le remplacement des paramètres de configuration par le biais de variables d’environnement. Voir [&#x200B; Utilisation de variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).
+>Le site web, le magasin et le code d’affichage du magasin peuvent uniquement inclure des lettres (a-z ou A-Z), des chiffres (0-9) et des traits de soulignement (_). En outre, le premier caractère doit être une lettre. Si des majuscules ou des majuscules sont utilisées, en interne la correspondance est insensible à la casse pour permettre le remplacement des paramètres de configuration par le biais de variables d’environnement. Voir [ Utilisation de variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).
