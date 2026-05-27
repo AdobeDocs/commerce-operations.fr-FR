@@ -7,7 +7,7 @@ exl-id: 8968b314-6625-45fa-9733-20560cca7089
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Le correctif ACSD-51666 corrige le problème où l’erreur *La session a expir�
 
 ## Problème
 
-Le message d’erreur suivant s’affiche *La session a expiré, veuillez vous reconnecter.* lors de la tentative de connexion avec le nouveau mot de passe d’un appareil après la réinitialisation du mot de passe sur un autre appareil. Cela ne se produit que s’il existe une requête Ajax supplémentaire sur la page ajoutée par un module personnalisé.
+Le message d’erreur suivant s’affiche *La session a expiré, veuillez vous reconnecter.* lorsque vous tentez de vous connecter avec le nouveau mot de passe d’un appareil après avoir réinitialisé le mot de passe sur un autre appareil. Cela ne se produit que s’il existe une requête Ajax supplémentaire sur la page ajoutée par un module personnalisé.
 
 <u>Procédure à suivre </u> :
 
@@ -49,7 +49,7 @@ La première tentative de connexion réussit.
 
 <u>Résultats réels</u> :
 
-* Le message *La session a expiré, veuillez vous reconnecter.Erreur de*.
+* Le message *La session a expiré, veuillez vous reconnecter.* s’affiche. erreur.
 * Vous n’êtes pas connecté et redirigé vers la page d’accueil.
 * La deuxième tentative de connexion a réussi.
 
