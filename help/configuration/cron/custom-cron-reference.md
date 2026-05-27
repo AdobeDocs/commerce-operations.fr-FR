@@ -17,7 +17,7 @@ Vous pouvez éventuellement configurer un groupe personnalisé, ce qui vous perm
 
 Pour un tutoriel détaillé, consultez [Configuration de tâches et de groupes cron personnalisés (tutoriel)](custom-cron-tutorial.md).
 
-Pour obtenir une présentation des tâches cron, voir [ Configuration des tâches cron ](../cli/configure-cron-jobs.md).
+Pour obtenir une présentation des tâches cron, voir [&#x200B; Configuration des tâches cron &#x200B;](../cli/configure-cron-jobs.md).
 
 ## Configuration des groupes cron
 

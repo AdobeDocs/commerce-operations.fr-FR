@@ -76,6 +76,6 @@ Nous proposons un moyen de synchroniser la configuration de vos systèmes :
 >
 >Ces nouvelles méthodes de gestion de la configuration sont facultatives. Pas besoin, mais il est fortement recommandé de les utiliser.
 
-La plupart du temps, les options de configuration que vous définissez dans la configuration partagée, spécifique au système ou sensible ne peuvent pas être modifiées dans l’administration. Cela permet de garantir la cohérence de vos paramètres sur tous les systèmes. (Vous pouvez éventuellement utiliser la commande ](../cli/set-configuration-values.md) sans l’option `--lock` pour configurer les paramètres modifiables dans l’Administration.)[`magento config:set`
+La plupart du temps, les options de configuration que vous définissez dans la configuration partagée, spécifique au système ou sensible ne peuvent pas être modifiées dans l’administration. Cela permet de garantir la cohérence de vos paramètres sur tous les systèmes. (Vous pouvez éventuellement utiliser la commande [&#128279;](../cli/set-configuration-values.md) sans l’option `--lock` pour configurer les paramètres modifiables dans l’Administration.)`magento config:set`
 
 Chaque option de configuration Commerce comporte un _chemin de configuration_ unique. Pour définir une valeur pour une option de configuration, vous pouvez utiliser une commande d’interface de ligne de commande ou une variable d’environnement pour définir la valeur de ce chemin de configuration sur un système spécifique.

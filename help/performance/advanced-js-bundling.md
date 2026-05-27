@@ -38,7 +38,7 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 
 Il s’agit d’un mécanisme Commerce natif qui combine toutes les ressources présentes dans le système et les répartit entre des lots de même taille (bundle_0.js, bundle_1.js ... bundle_x.js) :
 
-![Regroupement ](../assets/performance/images/magentoBundling.png)
+![Regroupement &#x200B;](../assets/performance/images/magentoBundling.png)
 
 Mieux, mais le navigateur charge toujours TOUS les lots JavaScript, pas seulement ceux nécessaires.
 
@@ -314,7 +314,7 @@ awk 'END {
 }' bundle/*.txt
 ```
 
-Vous pouvez également trouver le script à l’adresse [](https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html)
+Vous pouvez également trouver le script à l’adresse [&#128279;](https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html)
 
 Ouvrez un terminal dans le répertoire racine Commerce et exécutez le fichier :
 

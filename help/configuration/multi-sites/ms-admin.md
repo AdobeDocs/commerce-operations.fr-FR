@@ -131,7 +131,7 @@ Commerce vous offre la possibilité d’ajouter le code du magasin à l’URL de
 
 Cela empêche `index.php` et `.htaccess` de se désynchroniser de la base de code Commerce lors des futures mises à niveau.
 
-Voir le [Guide de l’utilisateur de ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
+Voir le [Guide de l’utilisateur de &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 Pour ajouter le code de magasin à l’URL de base :
 
@@ -175,4 +175,4 @@ Pour modifier l’URL de base de la vue de magasin par défaut :
 
 >[!INFO]
 >
->Le site web, le magasin et le code d’affichage du magasin peuvent uniquement inclure des lettres (a-z ou A-Z), des chiffres (0-9) et des traits de soulignement (_). En outre, le premier caractère doit être une lettre. Si des majuscules ou des majuscules sont utilisées, en interne la correspondance est insensible à la casse pour permettre le remplacement des paramètres de configuration par le biais de variables d’environnement. Voir [ Utilisation de variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).
+>Le site web, le magasin et le code d’affichage du magasin peuvent uniquement inclure des lettres (a-z ou A-Z), des chiffres (0-9) et des traits de soulignement (_). En outre, le premier caractère doit être une lettre. Si des majuscules ou des majuscules sont utilisées, en interne la correspondance est insensible à la casse pour permettre le remplacement des paramètres de configuration par le biais de variables d’environnement. Voir [&#x200B; Utilisation de variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).
