@@ -4,7 +4,7 @@ description: Découvrez comment gérer les files d’attente de messages à part
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
 source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---

@@ -7,7 +7,7 @@ type: Troubleshooting
 exl-id: 30790492-330e-4810-8069-fce87b40ebb2
 source-git-commit: b1912bbc5aabd36067563326ee5c6bb84e14441d
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Des adresses électroniques ont pu être saisies dans les champs **[!UICONTROL F
 
 <u>Résultats attendus</u> :
 
-Des messages de validation doivent apparaître pour indiquer que les champs **[!UICONTROL First Name]** et **[!UICONTROL Last Name]** ne sont pas valides, comme *Prénom n’est pas valide ! et le nom de famille n’est pas valide.* et la commande ne doivent pas être passées.
+Des messages de validation doivent apparaître pour indiquer que les champs **[!UICONTROL First Name]** et **[!UICONTROL Last Name]** ne sont pas valides, comme *Prénom n’est pas valide ! et le nom de famille n’est pas valide !* et la commande ne doit pas être passée.
 
 <u>Résultats réels</u> :
 
