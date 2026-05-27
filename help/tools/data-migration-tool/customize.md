@@ -5,7 +5,7 @@ exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
 topic: Commerce, Migration
 source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
@@ -164,7 +164,7 @@ Les étapes peuvent inclure quatre types de classes :
 
 >[!NOTE]
 >
->Pour plus d’informations[&#x200B; voir &#x200B;](technical-specification.md#configuration)Configuration, [Internes des étapes](technical-specification.md#step-internals), [Étapes](technical-specification.md#step-stages) et [Modes d’exécution](technical-specification.md#running-modes).
+>Pour plus d’informations[&#128279;](technical-specification.md#configuration) voir Configuration, [Internes des étapes](technical-specification.md#step-internals), [Étapes](technical-specification.md#step-stages) et [Modes d’exécution](technical-specification.md#running-modes).
 
 
 Des requêtes SQL complexes peuvent être assemblées dans ces classes pour récupérer et migrer des données. En outre, ces tables doivent être « ignorées » dans l’étape [Mapper](technical-specification.md#map-step), car elle analyse toutes les tables existantes et tente de migrer les données à moins qu’elles ne se trouvent dans la balise `<ignore>` du fichier `map.xml`.
@@ -366,7 +366,7 @@ Pour ajouter la fonctionnalité de migration delta, ajoutez un nouveau groupe au
 </groups>
 ```
 
-Créez ensuite le `Delta` de classe `Vendor\Migration\Step\GreatBlog\Delta` qui étend `Migration\App\Step\AbstractDelta` :
+Créez ensuite le `Vendor\Migration\Step\GreatBlog\Delta` de classe `Delta` qui étend `Migration\App\Step\AbstractDelta` :
 
 ```php
 class Delta extends \Migration\App\Step\AbstractDelta
