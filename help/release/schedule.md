@@ -4,7 +4,7 @@ description: Découvrez quand Adobe prévoit d’annoncer la publication de nouv
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 source-git-commit: 0f46bdfd0afbca07e0d60e995ee9426f5408671d
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '410'
 ht-degree: 4%
 
 ---
@@ -45,7 +45,7 @@ Voir l’image suivante pour plus de détails :
 
 Adobe informe ses clients des nouvelles versions de correctifs par le biais des canaux suivants :
 
-- [Bulletins et conseils de sécurité &#x200B;](https://helpx.adobe.com/fr/security/security-bulletin.html#magento)
+- [Bulletins et conseils de sécurité Adobe](https://helpx.adobe.com/fr/security/security-bulletin.html#magento)
 - E-mail
 - Alertes intégrées au produit
 

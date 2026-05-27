@@ -1,18 +1,18 @@
 ---
-title: 'MDVA-44188 : les e-mails ne sont pas envoyés aux identifiants contenant « ».- »'
-description: Le correctif MDVA-44188 corrige le problème où les e-mails ne sont pas envoyés aux ID d’e-mail contenant « ».-&grave;. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID du correctif est MDVA-44188. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
+title: 'MDVA-44188 : les e-mails ne sont pas envoyés aux identifiants contenant « .- »'
+description: Le correctif MDVA-44188 corrige le problème en raison duquel les e-mails ne sont pas envoyés aux ID d’e-mail contenant « .- ». Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID du correctif est MDVA-44188. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 feature: Communications
 role: Admin
 exl-id: 9029c7f1-3e62-44a1-8962-9730ae54db7d
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
 
-# MDVA-44188 : les e-mails ne sont pas envoyés aux identifiants contenant « ».- »
+# MDVA-44188 : les e-mails ne sont pas envoyés aux identifiants contenant « .- »
 
 Le correctif MDVA-44188 corrige le problème où les e-mails ne sont pas envoyés aux ID de messagerie contenant les `.-`. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 est installé. L’ID du correctif est MDVA-44188. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 

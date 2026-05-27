@@ -7,7 +7,7 @@ exl-id: ab522c9c-2983-4c2f-b341-4487bdbee34d
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Lorsque l’option Notifier les clients par e-mail pour l’expédition est sél
 <u>Procédure à suivre </u> :
 
 1. Accédez à **Marketing** > **Communications** > **Modèles d’e-mail** et sélectionnez **Ajouter un nouveau modèle**.
-   * Sélectionnez **Ventes Magento** > **Nouvelle expédition**.
+   * Sélectionnez **Ventes** > **Nouvelle expédition**.
    * Cliquez sur **Charger le modèle**.
    * Ajoutez un nom de modèle (par exemple, Modèle d&#39;expédition principal) et cliquez sur **Enregistrer**.
 1. Accédez à **Boutique** > Paramètres > **Configuration** > **Ventes** > **E-mail de vente** :
