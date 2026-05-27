@@ -4,7 +4,7 @@ description: Découvrez quand Adobe prévoit d’annoncer la publication de nouv
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 source-git-commit: 0f46bdfd0afbca07e0d60e995ee9426f5408671d
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '410'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ L’objectif de ce planning est de fournir les dates auxquelles Adobe prévoit d
 
 >[!NOTE]
 >
->Pour en savoir plus sur les nouvelles fonctionnalités, l’infrastructure cloud et les versions d’extensibilité, consultez la documentation de la version [Adobe Commerce Services](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/release-information/release-notes-all).
+>Pour en savoir plus sur les nouvelles fonctionnalités, l’infrastructure cloud et les versions d’extensibilité, consultez la documentation de la version [Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
 
 Outre les correctifs de qualité, de sécurité et Beta planifiés répertoriés sur cette page, Adobe permet d’accéder à des [correctifs individuels](versioning-policy.md#individual-patch) via l’[outil de correctifs de qualité](../tools/quality-patches-tool/usage.md). Cet outil vous permet d’appliquer, d’annuler et d’afficher des informations générales sur tous les correctifs individuels disponibles pour la version installée d’Adobe Commerce.
 
@@ -45,10 +45,10 @@ Voir l’image suivante pour plus de détails :
 
 Adobe informe ses clients des nouvelles versions de correctifs par le biais des canaux suivants :
 
-- [Bulletins et conseils de sécurité &#x200B;](https://helpx.adobe.com/fr/security/security-bulletin.html#magento)
+- [Bulletins et conseils de sécurité Adobe](https://helpx.adobe.com/security/security-bulletin.html#magento)
 - E-mail
 - Alertes intégrées au produit
 
 >[!NOTE]
 >
-> Pour connaître les dates de publication de chaque version mineure, correctif ou de sécurité, ainsi que les dates de fin de la prise en charge standard, consultez [Versions publiées](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/versions).
+> Pour connaître les dates de publication de chaque version mineure, correctif ou de sécurité, ainsi que les dates de fin de la prise en charge standard, consultez [Versions publiées](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
