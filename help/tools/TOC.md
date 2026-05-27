@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: cfac00d94a7ac89c2a36aa122a18f89e5f77f630
+source-git-commit: 09abc74b48c1ac07a3553aed37fcb0c80e3bbefe
 workflow-type: tm+mt
-source-wordcount: '9992'
+source-wordcount: '10033'
 ht-degree: 0%
 
 ---
@@ -900,7 +900,7 @@ ht-degree: 0%
          - [ACSD-67459 : impossible d’importer des produits dont les descriptions dépassent 65 536 caractères](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
-         - [ACSD-67424 : la valeur updated_at dans la réponse GET /carts/search de l’API REST ne correspond pas à la valeur dans [!UICONTROL Admin Panel] pour [!UICONTROL Negotiable Quotes]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
+         - [ACSD-67424 : la valeur updated_at dans la réponse de l’API REST GET /carts/search ne correspond pas à la valeur dans [!UICONTROL Admin Panel] pour [!UICONTROL Negotiable Quotes]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
          - [ACSD-67383 : erreur lors de la connexion en tant que client avec deux comptes d’administration d’entreprise dans la même session](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383.md)
          - [ACSD-68064 : entrées en double créées lors des mises à jour planifiées dans les environnements comportant des catégories profondément imbriquées](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064.md)
          - [ACSD-67946 : la mise à jour du panier affiche les bannières d’erreur en double](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946.md)
@@ -994,8 +994,10 @@ ht-degree: 0%
          - [ACP2E-4419 : les cartes-cadeaux ne s’appliquent pas correctement lors du passage en caisse après la validation réussie de reCAPTCHA v2 sur le storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4411 : les prix de produits groupés affichent des valeurs de taxe et de devise incorrectes entre la page Détails du produit et le panier dans une configuration multidevise](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)
+         - [ACP2E-4110 : Les prix groupés des produits avec un **[!UICONTROL Special Price]** différent entre PDP/PLP et le panier dans une devise autre que celle par défaut](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)
          - [ACP2E-4603 : la réindexation du produit Autorisations de catalogue laisse des lignes d’index d’autorisations obsolètes et un blocage MySQL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)
-         - [AC-10737 : `bin/magento setup:db:status` commande ne reconnaît pas le type de données JSON](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
+         - [AC-10737 : `/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md1` commande ne reconnaît pas le type de données JSON](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
          - [ACP2E-4601 : la réenregistrement d&#39;une transaction d&#39;autorisation de paiement utilise l&#39;auto-référence parent_id et déclenche une boucle infinie/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
    - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Référence des outils de ligne de commande {#cli-reference}

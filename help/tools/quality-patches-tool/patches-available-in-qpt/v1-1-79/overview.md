@@ -4,7 +4,7 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: cfac00d94a7ac89c2a36aa122a18f89e5f77f630
+source-git-commit: 09abc74b48c1ac07a3553aed37fcb0c80e3bbefe
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%
@@ -23,9 +23,9 @@ QPT v1.1.79 comprend les correctifs suivants :
 1. **[ACP2E-4601](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)** : corrige le problème en raison duquel le traitement des transactions de paiement pouvait se comporter de manière inefficace sous certaines conditions.
 1. **ACP2E-4706** : correction d’un problème en raison duquel les produits non activés dans l’étendue [!UICONTROL Admin] étaient ignorés par l’indexeur de [!UICONTROL Target Rule].
 1. **ACP2E-4720** : correction d’un problème en raison duquel la livraison gratuite n’était pas correctement appliquée ni supprimée pour les produits groupés avec des règles de remise sur le panier.
-1. **ACP2E-4411** : correction d’un problème en raison duquel un prix incorrect était affiché pour un produit groupé sur la page du panier et dans le mini-panier pour les magasins multidevises.
+1. **[ACP2E-4411](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)** : correction d’un problème en raison duquel un prix incorrect était affiché pour un produit groupé sur la page du panier et dans le mini-panier pour les magasins multidevises.
 1. **ACP2E-4475** : correction d’un problème en raison duquel la page de liste des produits filtre et trie incorrectement les produits en rupture de stock par prix lorsque l’option **[!UICONTROL Display Out of Stock Products]** est activée.
-1. **ACP2E-4110** : correction du problème en raison duquel les produits groupés à un prix spécial affichaient des montants incorrects sur PDP et PLP dans une devise autre que la devise par défaut.
+1. **[ACP2E-4110](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)** : correction du problème en raison duquel les produits groupés avec un **[!UICONTROL Special Price]** affichent des montants incorrects sur le PDP et le PLP dans une devise autre que la devise par défaut.
 1. **AC-10698** : correction du problème en raison duquel le système envoyait la devise au niveau de toutes les commandes au lieu de l’associer à des commandes individuelles. Les prix et totaux des transactions sont désormais envoyés par commande à [!DNL Google Tag], ce qui améliore la précision du suivi des données d’e-commerce.
 1. **[AC-10737](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)** : correction d’un problème en raison duquel la commande `bin/magento setup:db:status` ne reconnaissait pas le type de données JSON.
 
