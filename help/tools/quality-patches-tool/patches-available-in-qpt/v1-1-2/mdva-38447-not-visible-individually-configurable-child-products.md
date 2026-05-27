@@ -7,7 +7,7 @@ exl-id: d97297c5-e8e8-407b-b43b-033937426fe2
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Les modules B2B doivent être installés.
       page_size
     &rbrace;
     items &lbrace;
-      nom
+      name
       sku
     &rbrace;
   &rbrace;
