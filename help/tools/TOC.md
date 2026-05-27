@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 09abc74b48c1ac07a3553aed37fcb0c80e3bbefe
+source-git-commit: 36e8242f67e80504118e36574cfe4d3b799b849c
 workflow-type: tm+mt
-source-wordcount: '10033'
+source-wordcount: '10059'
 ht-degree: 0%
 
 ---
@@ -994,6 +994,8 @@ ht-degree: 0%
          - [ACP2E-4419 : les cartes-cadeaux ne s’appliquent pas correctement lors du passage en caisse après la validation réussie de reCAPTCHA v2 sur le storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [AC-10698 : les prix et totaux des transactions ne sont pas envoyés à Google Tag](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
+         - [ACP2E-4475 : l’ordre ou le filtrage par prix ne fonctionne pas pour les produits groupés en rupture de stock.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)
          - [ACP2E-4411 : les prix de produits groupés affichent des valeurs de taxe et de devise incorrectes entre la page Détails du produit et le panier dans une configuration multidevise](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)
          - [ACP2E-4110 : Les prix groupés des produits avec un **[!UICONTROL Special Price]** différent entre PDP/PLP et le panier dans une devise autre que celle par défaut](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)
          - [ACP2E-4603 : la réindexation du produit Autorisations de catalogue laisse des lignes d’index d’autorisations obsolètes et un blocage MySQL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)
