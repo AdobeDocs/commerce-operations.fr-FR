@@ -7,7 +7,7 @@ exl-id: 6433df73-b6df-4c88-93a4-12ac1e5080ea
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 
 QPT v1.1.56 comprend les correctifs suivants :
 
-1. **ACSD-63244** : corrige les problèmes où une erreur JavaScript empêche le rendu correct du [!DNL Google Maps] et où il y a beaucoup de *Uncaught TypeError : this._each n&#39;est pas une fonction* erreurs dans la console du panneau [!UICONTROL Admin].
+1. **ACSD-63244** : corrige les problèmes où une erreur JavaScript empêche le rendu correct des [!DNL Google Maps] et où il existe de nombreuses erreurs *Uncaught TypeError: this._each n&#39;est pas une fonction* dans la console dans le panneau [!UICONTROL Admin].
 1. **ACSD-63242** : corrige le problème de lenteur des importations lors de l’ajout de produits de catalogue comportant plus de 10 000 entrées.
 1. **ACSD-63062** : corrige le problème en raison duquel des calculs de remise de panier incorrects se produisent lorsque plusieurs règles qui se chevauchent sont appliquées.
 1. **ACSD-62979** : corrige le problème en raison duquel l’utilisation d’un [!UICONTROL Store ID] incorrect dans l’en-tête de GraphQL provoque une erreur de mémoire fatale.
