@@ -1,7 +1,7 @@
 ---
 source-git-commit: 1dcfbd53f79c83dbf6c44ffce952de101f7e01f1
 workflow-type: tm+mt
-source-wordcount: '27999'
+source-wordcount: '31311'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ Le système permet désormais de définir les champs « Case à cocher Se connec
 
 _AC-13000 - [Problème GitHub](https://github.com/magento/magento2/issues/32329) - [Contribution du code GitHub](https://github.com/magento/magento2/pull/32359)_
 
-#### Page d’accueil de l’interface utilisateur front-end dans le menu déroulant de mon profil n’est pas présent.(par intermittence)
+#### Page d’accueil de l’interface utilisateur front-end dans mon profil Le bouton déroulant n’est pas présent (par intermittence).
 
 Aucune description disponible.
 
@@ -303,7 +303,7 @@ _AC-13768_
 
 #### Il n’y a pas d’astérisque rouge pour le champ du numéro de téléphone obligatoire
 
-L&#39;astérisque rouge précédent ne s&#39;affichait pas pour le numéro de téléphone mais  le numéro de téléphone était obligatoire. Qui est maintenant fixe astérisque rouge peut être vu sur le numéro de téléphone comme un champ obligatoire.
+Un astérisque rouge ne figurait pas auparavant pour le numéro de téléphone, mais le numéro de téléphone était obligatoire. Qui est maintenant fixe astérisque rouge peut être vu sur le numéro de téléphone comme un champ obligatoire.
 
 _AC-13850 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/c699c206)_
 
@@ -375,7 +375,7 @@ _ACP2E-2978 - [Contribution du code GitHub](https://github.com/magento/magento2/
 
 #### Impossible d&#39;exporter plus de 200 commandes
 
-Les limites du serveur pour la taille de requête des identifiants sélectionnés précédemment envoyés ont été négligées en modifiant la requête HTTP de GET vers POST afin de résoudre le problème. Auparavant, en raison des limitations du serveur pour la taille de requête GET, le problème était rencontré.
+Les limites du serveur pour la taille de requête des identifiants sélectionnés précédemment envoyés ont été négligées en modifiant la requête HTTP de GET à POST afin de résoudre le problème. Auparavant, en raison des limitations du serveur pour la taille de la requête GET, le problème se produisait.
 
 _ACP2E-3033 - [contribution du code GitHub](https://github.com/magento/magento2/commit/93d50f8d)_
 
@@ -399,7 +399,7 @@ _ACP2E-3149 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 #### La DCO n’est pas disponible pour les pays spécifiques autorisés
 
-Désormais, le paiement à la livraison est disponible pour les pays spécifiques autorisés dès que cela est nécessaire et   AC-3216 fonctionne comme prévu.
+Désormais, la livraison contre remboursement est disponible pour les pays spécifiques autorisés dès que cela est nécessaire et l&#39;AC-3216 fonctionne comme prévu.
 
 _ACP2E-3171 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/6f4805f8)_
 
@@ -515,7 +515,7 @@ _ACP2E-3169 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 ### Interface utilisateur d’administration, Expédition
 
-#### Le nombre de codes coupon n’est pas mis à jour dans le   Colonne « Temps utilisé » de l’onglet Gérer les codes coupon si une commande est passée avec une expédition multiple.
+#### Le nombre de codes de coupon n&#39;est pas mis à jour dans la colonne « Durée d&#39;utilisation » de l&#39;onglet Gérer les codes de coupon si une commande est passée avec une expédition multiple.
 
 Auparavant, lorsqu’une commande était passée avec expédition multiple, le nombre de codes coupon n’était pas mis à jour dans la colonne « Durée d’utilisation » de l’onglet Gérer les codes coupon. Désormais, le nombre correct s’affiche à la fois dans le « Temps utilisé », reflétant les valeurs souhaitées avec une expédition multiple.
 
@@ -1997,7 +1997,7 @@ Le système respecte désormais la norme de codage en supprimant la balise `@aut
 
 _AC-8356 - [Problème GitHub](https://github.com/magento/magento2/issues/37250) - [Contribution du code GitHub](https://github.com/magento/magento2/pull/37000)_
 
-#### L’espace dans la syntaxe editorconfig rompt la règle pour les `[&lbrace;composer,auth&rbrace;.json]`
+#### L’espace dans la syntaxe editorconfig rompt la règle pour les `[{composer,auth}.json]`
 
 Le système applique désormais correctement un retrait de 4 espaces aux fichiers composer et auth.json, suite à un correctif apporté à une erreur de syntaxe dans editorconfig. Auparavant, en raison d’un espace dans la syntaxe editorconfig, ces fichiers étaient incorrectement formatés avec un retrait de 2 espaces.
 
@@ -2155,7 +2155,7 @@ Le problème a été corrigé après l’application de la vérification lors de
 
 _ACP2E-2653 - [contribution du code GitHub](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### L’appel aux produits GraphQL contenant le filtre de prix `&lbrace;from:"0"&rbrace;` ne renvoie aucun résultat
+#### L’appel aux produits GraphQL contenant le filtre de prix `{from:"0"}` ne renvoie aucun résultat
 
 Auparavant, la recherche de produits GraphQL avec un filtre à prix nuls ne renvoyait aucun résultat en raison d’une exception levée. Désormais, la recherche renvoie les résultats attendus.
 
@@ -2278,7 +2278,7 @@ Correction du problème lié au champ original_row_total, qui renvoyait des vale
 
 _LYNX-488_
 
-#### Les miniatures de produits regroupées doivent être affichées en fonction de la configuration     .
+#### Les miniatures de produits regroupées doivent être affichées selon la configuration .
 
 Résolution du problème pour s’assurer que la miniature groupée du produit s’affiche en fonction des paramètres de configuration
 
@@ -3262,7 +3262,7 @@ Avant la correction, vous deviez saisir le code de coupon tel qu’il était con
 
 _ACP2E-3342_
 
-#### Règles de panier « Remise de montant fixe pour l’ensemble du panier »  L’action applique incorrectement les remises
+#### Règles de panier L’action « Remise de montant fixe pour l’ensemble du panier » applique incorrectement les remises
 
 Les codes promotionnels seront validés correctement, indépendamment des majuscules ou des minuscules, lorsqu’ils sont utilisés pour la création de la commande à partir de la zone d’administration. Auparavant, le code de coupon n’était pas validé s’il ne correspondait pas à la casse exacte de la lettre du code de règle de panier configuré.
 
