@@ -1,7 +1,7 @@
 ---
 source-git-commit: 3948c3c59a53a023edc16698fcb9ec6150cbca21
 workflow-type: tm+mt
-source-wordcount: '6465'
+source-wordcount: '6818'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Back-office protégé par mot de passe de votre magasin où les commandes, le ca
 Les utilisateurs accèdent à la zone d’administration pour gérer la boutique, notamment les produits, les commandes, les envois, le contenu CMS, la conception de la vitrine, les informations client, etc.
 Les utilisateurs administrateurs disposent d’un rôle associé avec des autorisations qui contrôle l’accès aux fonctionnalités, options et capacités.
 
-En savoir plus : [Guide de l’utilisateur Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=fr)
+En savoir plus : [Guide de l’utilisateur &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=fr)
 
 _Attributs de terme :_
 
@@ -96,7 +96,7 @@ _nom_
 
 Nom de la zone interne attribué à l’administrateur.
 
-En savoir plus : [Guide de l’utilisateur Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=fr)
+En savoir plus : [Guide de l’utilisateur &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=fr)
 
 _Attributs de terme :_
 
@@ -248,7 +248,7 @@ _adjectif_
 
 Une entreprise de vente au détail ayant un emplacement physique permanent, par opposition aux entreprises qui fonctionnent virtuellement ou uniquement par Internet.
 
-Pour [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html?lang=fr) et [Order Management](#oms), ce magasin est une source pour le suivi des quantités de produits, des commandes d’expédition et la prise en charge du retrait en magasin.
+Pour [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html?lang=fr) et [Order Management](#oms), ce magasin est une source pour le suivi des quantités de produits, des commandes d’expédition et la prise en charge du retrait en magasin.
 
 _Attributs de terme :_
 
@@ -673,7 +673,7 @@ Cependant, si des URL Dynamic Media sont incluses dans votre catalogue lorsque v
 Les liens peuvent être restaurés en activant à nouveau les URL Dynamic Media.
 L’utilisation d’URL Dynamic Media peut affecter les performances de la recherche catalogue.
 
-Format de code : media url= »path/to/image.jpg »
+Format de code : media url=« path/to/image.jpg »
 
 _Attributs de terme :_
 
@@ -1397,8 +1397,8 @@ dans les URL d’accès à votre instance Commerce ou dans les détails de l’i
 
 En savoir plus :
 
-[Principes de base d’Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/getting-started#adobe-commerce-as-a-cloud-service-basics)
-[Prise en main de Adobe Commerce Optimizer](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/get-started#manage-instances)
+[Concepts de base d’Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/getting-started#adobe-commerce-as-a-cloud-service-basics)
+[Prise en main de &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/get-started#manage-instances)
 
 _Attributs de terme :_
 
@@ -1446,7 +1446,7 @@ _Attributs de terme :_
 
 _nom_
 
-[PWA Studio](https://github.com/magento/pwa-studio) utilise [UPWARD](https://developer.adobe.com/commerce/pwa-studio/guides/packages/upward/) en développement.
+[&#128279;](https://github.com/magento/pwa-studio) utilise [UPWARD](https://developer.adobe.com/commerce/pwa-studio/guides/packages/upward/) en développement.
 UPWARD est un acronyme de Unified Progressive Web App Response Definition.
 Un fichier de définition UPWARD décrit comment un serveur web diffuse et prend en charge un Progressive Web Application.
 
