@@ -177,7 +177,7 @@ Si vous cherchez un problème depuis trop longtemps, il peut être difficile de 
 
 ## Outils
 
-Les outils de l’interface de ligne de commande n98 magerun ([](https://github.com/netz98/n98-magerun2)) offrent des fonctionnalités utiles pour travailler avec Adobe Commerce à partir de la ligne de commande. En particulier, ces commandes :
+Les outils de l’interface de ligne de commande n98 magerun ([&#128279;](https://github.com/netz98/n98-magerun2)) offrent des fonctionnalités utiles pour travailler avec Adobe Commerce à partir de la ligne de commande. En particulier, ces commandes :
 
 ```shell
 n98-magerun2.phar dev:console
@@ -206,7 +206,7 @@ Si ce fichier est utilisé, il génère une erreur. Si ce n&#39;est pas le cas, 
 
 >[!BEGINTABS]
 
->[!TAB ]
+>[!TAB Tab]
 
 ```php
 \Magento\Framework\App\ObjectManager::getInstance()

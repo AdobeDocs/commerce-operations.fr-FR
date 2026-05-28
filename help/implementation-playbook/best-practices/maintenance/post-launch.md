@@ -102,7 +102,7 @@ Pour surveiller la journalisation des erreurs dans Adobe Commerce Cloud, Adobe p
 
 >[!TIP]
 >
->Pour plus d’informations sur les pratiques de journalisation et de suivi des erreurs dans Adobe Commerce Cloud, voir [Gestion des journaux ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management) et [surveillance des exceptions](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/exceptions).
+>Pour plus d’informations sur les pratiques de journalisation et de suivi des erreurs dans Adobe Commerce Cloud, voir [Gestion des journaux &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management) et [surveillance des exceptions](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/exceptions).
 
 ### Sécurité et mises à jour
 
@@ -166,7 +166,7 @@ Pour garantir la conformité PCI dans Adobe Commerce Cloud, suivez ces pratiques
 
 - **Gestion des révisions** : gérez les révisions et les évaluations des clients sur vos produits. Encouragez les clients satisfaits à laisser des évaluations tout en répondant de manière appropriée aux évaluations négatives.
 
-- **** : implémentez des fonctionnalités de personnalisation telles que des recommandations de produits personnalisées ou des promotions ciblées.
+- **&#x200B;**&#x200B;: implémentez des fonctionnalités de personnalisation telles que des recommandations de produits personnalisées ou des promotions ciblées.
 
 ### Maintenance et optimisation continues des magasins
 
@@ -208,7 +208,7 @@ Pour garantir la conformité PCI dans Adobe Commerce Cloud, suivez ces pratiques
 
 - **Suivi des performances** :
 
-   - Utilisez **** pour surveiller les mesures de performances en temps réel (par exemple, l’utilisation de CPU, les niveaux de trafic) et effectuer des ajustements si nécessaire.
+   - Utilisez **&#x200B;**&#x200B;pour surveiller les mesures de performances en temps réel (par exemple, l’utilisation de CPU, les niveaux de trafic) et effectuer des ajustements si nécessaire.
 
    - Testez les performances dans les environnements d’évaluation avant la mise à l’échelle pour éviter les problèmes de production.
 

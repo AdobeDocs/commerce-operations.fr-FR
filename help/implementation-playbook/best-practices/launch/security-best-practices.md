@@ -59,7 +59,7 @@ Les commandes `lock config` et `lock env` de l’interface de ligne de commande 
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Exécuter des analyses de sécurité**
 
-Utilisez le service d&#39;analyse de sécurité Commerce [](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) pour surveiller tous les sites Adobe Commerce à la recherche de risques de sécurité et de programmes malveillants connus, et abonnez-vous pour recevoir des mises à jour de correctifs et des notifications de sécurité.
+Utilisez le service d&#39;analyse de sécurité Commerce [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) pour surveiller tous les sites Adobe Commerce à la recherche de risques de sécurité et de programmes malveillants connus, et abonnez-vous pour recevoir des mises à jour de correctifs et des notifications de sécurité.
 
 ## Assurer la sécurité des extensions et du code personnalisé
 
@@ -95,7 +95,7 @@ Consultez les ressources suivantes pour plus d’informations sur les versions d
 
 >[!TIP]
 >
->Obtenez les dernières informations de sécurité et atténuez les problèmes de sécurité connus en vous abonnant au service de notification de sécurité [](https://www.adobe.com/subscription/adbeSecurityNotifications.html).
+>Obtenez les dernières informations de sécurité et atténuez les problèmes de sécurité connus en vous abonnant au service de notification de sécurité [&#128279;](https://www.adobe.com/subscription/adbeSecurityNotifications.html).
 
 ## Développement d’un plan de reprise après sinistre
 

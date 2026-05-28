@@ -14,15 +14,15 @@ ht-degree: 0%
 
 Cette rubrique répertorie les chemins de configuration pour les paramètres spécifiques au système et sensibles :
 
-- La commande [`magento app:config:dump` écrit ](../cli/export-configuration.md) paramètres spécifiques au système dans le fichier de configuration spécifique au système, `app/etc/env.php`, qui ne doit _pas_ se trouver dans le contrôle de code source. Il écrit également la configuration partagée pour toutes les instances Commerce à `app/etc/config.php`. Ce fichier _doit_ se trouve dans le contrôle de code source.
-- La commande [`magento config:sensitive:set` écrit ](../cli/set-configuration-values.md) paramètres sensibles à `app/etc/env.php`.
+- La commande [`magento app:config:dump` écrit &#x200B;](../cli/export-configuration.md) paramètres spécifiques au système dans le fichier de configuration spécifique au système, `app/etc/env.php`, qui ne doit _pas_ se trouver dans le contrôle de code source. Il écrit également la configuration partagée pour toutes les instances Commerce à `app/etc/config.php`. Ce fichier _doit_ se trouve dans le contrôle de code source.
+- La commande [`magento config:sensitive:set` écrit &#x200B;](../cli/set-configuration-values.md) paramètres sensibles à `app/etc/env.php`.
 
   Vous pouvez également définir des valeurs sensibles à l’aide de variables de configuration, comme indiqué dans la section [Utiliser des variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).
 
 Pour obtenir la liste des autres chemins de configuration, voir :
 
 - [Tous les chemins de configuration, sauf les paiements](../reference/config-reference-general.md)
-- [ Chemins de configuration des paiements ](../reference/config-reference-payment.md).
+- [&#x200B; Chemins de configuration des paiements &#x200B;](../reference/config-reference-payment.md).
 
 >[!INFO]
 >
