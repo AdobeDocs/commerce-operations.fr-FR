@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: f02a13ca-c851-4508-a2bd-e5bc196a330c
 source-git-commit: 60444d3ef7208d12af3f06af6e3cab2cae93700b
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2382'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ Pour surveiller la journalisation des erreurs dans Adobe Commerce Cloud, Adobe p
 
 >[!TIP]
 >
->Pour plus d’informations sur les pratiques de journalisation et de suivi des erreurs dans Adobe Commerce Cloud, voir [Gestion des journaux New Relic](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management) et [surveillance des exceptions](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/site-wide-analysis-tool/exceptions).
+>Pour plus d’informations sur les pratiques de journalisation et de suivi des erreurs dans Adobe Commerce Cloud, voir [Gestion des journaux &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management) et [surveillance des exceptions](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/site-wide-analysis-tool/exceptions).
 
 ### Sécurité et mises à jour
 
@@ -166,7 +166,7 @@ Pour garantir la conformité PCI dans Adobe Commerce Cloud, suivez ces pratiques
 
 - **Gestion des révisions** : gérez les révisions et les évaluations des clients sur vos produits. Encouragez les clients satisfaits à laisser des évaluations tout en répondant de manière appropriée aux évaluations négatives.
 
-- **Personalization** : implémentez des fonctionnalités de personnalisation telles que des recommandations de produits personnalisées ou des promotions ciblées.
+- **&#x200B;**&#x200B;: implémentez des fonctionnalités de personnalisation telles que des recommandations de produits personnalisées ou des promotions ciblées.
 
 ### Maintenance et optimisation continues des magasins
 
@@ -208,7 +208,7 @@ Pour garantir la conformité PCI dans Adobe Commerce Cloud, suivez ces pratiques
 
 - **Suivi des performances** :
 
-   - Utilisez **New Relic** pour surveiller les mesures de performances en temps réel (par exemple, l’utilisation de CPU, les niveaux de trafic) et effectuer des ajustements si nécessaire.
+   - Utilisez **&#x200B;**&#x200B;pour surveiller les mesures de performances en temps réel (par exemple, l’utilisation de CPU, les niveaux de trafic) et effectuer des ajustements si nécessaire.
 
    - Testez les performances dans les environnements d’évaluation avant la mise à l’échelle pour éviter les problèmes de production.
 
@@ -230,7 +230,7 @@ Pour garantir la conformité PCI dans Adobe Commerce Cloud, suivez ces pratiques
 
 ### Rapports et analyses
 
-- **Adobe Commerce Intelligence:** Commerce Intelligence, une fonctionnalité clé d’Adobe Commerce, fournit des informations sur les bonnes pratiques pour plusieurs sources de données, ce qui permet aux commerçants de prendre des décisions scientifiques basées sur les données et de prendre des actions claires et informées. Voir le [_Guide de l’utilisateur de Commerce Intelligence_](https://experienceleague.adobe.com/fr/docs/commerce-business-intelligence/mbi/getting-started).
+- **Adobe Commerce Intelligence:** Commerce Intelligence, une fonctionnalité clé d’Adobe Commerce, fournit des informations sur les bonnes pratiques pour plusieurs sources de données, ce qui permet aux commerçants de prendre des décisions scientifiques basées sur les données et de prendre des actions claires et informées. Voir le [_Guide de l’utilisateur de_](https://experienceleague.adobe.com/fr/docs/commerce-business-intelligence/mbi/getting-started).
 
 - **Adobe Analytics:** Adobe Analytics offre une solution puissante pour suivre, analyser et optimiser les performances de votre boutique en ligne. Adobe Analytics aide les entreprises d’e-commerce à obtenir des informations plus précises sur le comportement des clients, les performances des produits, les taux de conversion et d’autres mesures clés, ce qui permet une prise de décision axée sur les données.
 
