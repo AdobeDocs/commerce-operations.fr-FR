@@ -2,7 +2,7 @@
 title: Installation de Nginx pour les déploiements On-Premise
 description: Découvrez comment installer et configurer le serveur web Nginx pour les déploiements d’Adobe Commerce sur site. Configurez PHP-FPM et votre hôte virtuel.
 feature: Install, Configuration
-badgePaas: label="On-premise" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
+badgePaas: label="On-premise" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
 source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
@@ -107,13 +107,13 @@ Cet exemple illustre une installation basée sur le compositeur à l’aide de l
 
 1. Créez un projet Composer à l’aide du métapaquet Adobe Commerce.
 
-   **&#x200B;**
+   ****
 
    ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
    ```
 
-   **&#x200B;**
+   ****
 
    ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
@@ -283,7 +283,7 @@ Adobe Commerce requiert plusieurs extensions [PHP](../php-settings.md) pour fonc
 
    >[!NOTE]
    >
-   >Installez le package qui fournit les `php-fpm` pour la version PHP prise en charge par la version Adobe Commerce que vous installez. Les noms de packages varient selon le référentiel et le système d’exploitation. Voir [&#x200B; Configuration requise &#x200B;](../../system-requirements.md).
+   >Installez le package qui fournit les `php-fpm` pour la version PHP prise en charge par la version Adobe Commerce que vous installez. Les noms de packages varient selon le référentiel et le système d’exploitation. Voir [ Configuration requise ](../../system-requirements.md).
 
 1. Supprimez les commentaires de la ligne de `cgi.fix_pathinfo` et définissez la valeur sur `0`.
 
@@ -398,13 +398,13 @@ Cet exemple illustre une installation basée sur le compositeur à l’aide de l
 
 1. Créez un projet Composer à l’aide du métapaquet Adobe Commerce.
 
-   **&#x200B;**
+   ****
 
    ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
    ```
 
-   **&#x200B;**
+   ****
 
    ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
