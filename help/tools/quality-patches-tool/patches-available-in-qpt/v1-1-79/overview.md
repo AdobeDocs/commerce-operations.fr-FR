@@ -4,7 +4,7 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f19aeff354345c1635c7f692671c24118551a707
+source-git-commit: a6ba029b8bfe0fc3cfe8bd18074145d603ad31ec
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -22,7 +22,7 @@ QPT v1.1.79 comprend les correctifs suivants :
 1. **[ACP2E-4603](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)** : correction d’un problème en raison duquel l’exécution de la réindexation du produit [!UICONTROL Catalog Permissions] laissait inchangées les lignes d’index d’autorisation existantes, empêchant la répercussion fiable des autorisations de catégorie mises à jour sur les produits.
 1. **[ACP2E-4601](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)** : corrige le problème en raison duquel le traitement des transactions de paiement pouvait se comporter de manière inefficace sous certaines conditions.
 1. **ACP2E-4706** : correction d’un problème en raison duquel les produits non activés dans l’étendue [!UICONTROL Admin] étaient ignorés par l’indexeur de [!UICONTROL Target Rule].
-1. **ACP2E-4720** : correction d’un problème en raison duquel la livraison gratuite n’était pas correctement appliquée ni supprimée pour les produits groupés avec des règles de remise sur le panier.
+1. **[ACP2E-4720](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)** : correction d’un problème en raison duquel la livraison gratuite n’était pas correctement appliquée ni supprimée pour les produits groupés avec des règles de remise sur le panier.
 1. **ACP2E-4411** : correction d’un problème en raison duquel un prix incorrect était affiché pour un produit groupé sur la page du panier et dans le mini-panier pour les magasins multidevises.
 1. **[ACP2E-4475](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)** : correction d’un problème en raison duquel la page de liste des produits filtre et trie incorrectement les produits en rupture de stock par prix lorsque l’option [!UICONTROL Display Out of Stock Products] est activée.
 1. **ACP2E-4110** : correction du problème en raison duquel les produits groupés à un prix spécial affichaient des montants incorrects sur PDP et PLP dans une devise autre que la devise par défaut.
