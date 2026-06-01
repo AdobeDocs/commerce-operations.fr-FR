@@ -5,9 +5,13 @@ exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
 autotag-review: '2026-05-29T17:40:45.034Z'
 TQID: 'https://experienceleague.adobe.com/HHiR-UPHRK-dZCKE9L6H1bfm4hykrOgYsBm-XJv8zyE'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 source-git-commit: c7b05a4b636b1d4f67e1d3db40dce7fab1cb1b6b
 workflow-type: tm+mt
 source-wordcount: 30977
@@ -45,7 +49,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACP2E-4156** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème en raison duquel la validation de l’adresse de livraison dans l’API REST n’est pas conforme à la configuration d’attribut définie dans Admin.
 * **ACP2E-4813** (pour Adobe Commerce et Magento Open Source >=2.4.6-p3 &lt;2.4.6-p15 || >=2.4.7 &lt;2.4.7-p10 || >=2.4.8 &lt;2.4.8-p5) - Correction du problème en raison duquel les méthodes d’expédition USPS ne sont pas disponibles au moment du passage en caisse et les estimations d’expédition sont incorrectes pour certains produits, y compris les commandes fractionnées en plusieurs packages.
 * **ACSD-53502** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Correction du problème en raison duquel l’option Ajouter au panier échoue par intermittence sur le storefront dans iOS Safari en raison d’appels récursifs au script de surveillance New Relic, ce qui entraîne des rechargements de page.
-* Versions mises à jour : **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD-61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477** **ACSD-58108**, **ACSD-66149**, **ACSD-66404**, **ACSD-67250**, ****-440267686 **,****-450568925**, **ACP2E-4603**, **ACP2E-4706** ACP2E **ACP2E**
+* Versions mises à jour : **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD-61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477** **ACSD-58108**, **ACSD-66149**, **ACSD-66404**, **ACSD-67250**, **&#x200B;**-440267686 **,**&#x200B;**-450568925**, **ACP2E-4603**, **ACP2E-4706** ACP2E **ACP2E**
 * Correctifs remplacés : **AC-15210**, **ACSD-58108**
 
 ## v1.1.79 {#v1-1-79}
@@ -89,7 +93,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACP2E-4732** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction d’un problème en raison duquel l’indexation partielle s’arrêtait pour les clients avec un grand nombre de mises à jour lorsque la colonne version_id de la table changelog atteignait sa valeur maximale.
 * **ACP2E-4763** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème en raison duquel la requête customerOrders de GraphQL renvoie des valeurs original_price_include_tax et original_row_total_include_tax gonflées lorsque les prix du catalogue sont définis sur Taxe incluse, en raison d’une application double de la taxe.
 * **ACSD-60989** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel la modification d’une colonne avec une clé étrangère par le biais d’un schéma déclaratif provoque des erreurs sur MariaDB.
-* Versions mises à jour : **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-55031**, **ACSD-51819**, **ACSD-55628**, **ACSD-54965,** ACSD-**, 56546** ACSD-**, 61756** ACSD-**, 68040** ACSD-**, 62708** ACSD-**, 63283** ACSD-**, 64732** ACSD-**, 65775** ACSD-**, 66965** ACSD-ACP2E, ****-4050
+* Versions mises à jour : **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-55031**, **ACSD-51819**, **ACSD-55628**, **ACSD-54965,** ACSD-**, 56546** ACSD-**, 61756** ACSD-**, 68040** ACSD-**, 62708** ACSD-**, 63283** ACSD-**, 64732** ACSD-**, 65775** ACSD-**, 66965** ACSD-ACP2E, **&#x200B;**-4050
 * Correctifs remplacés : **ACSD-58446**, **ACSD-67904**
 
 ## v1.1.77 {#v1-1-77}
