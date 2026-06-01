@@ -2,9 +2,9 @@
 title: Configuration requise
 description: Découvrez les dépendances logicielles et la configuration requise pour Adobe Commerce. Voir les configurations testées pour assurer la compatibilité avec votre environnement de déploiement.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: f5d0b6943b1b5ca41967c61842b73734ed41f26f
+source-git-commit: dc0a70a11f332dabf8f09e528c355f2bcb7910bc
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1249'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,9 @@ Le modèle [Commerce sur le cloud](https://github.com/magento/magento-cloud) fou
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
+**<sup>1</sup>Compatibilité entre MariaDB 12.3 et Adobe Commerce 2.4.9**
+La compatibilité entre MariaDB 12.3 et Adobe Commerce 2.4.9 sera confirmée suite à la publication officielle de MariaDB 12.3, prévue pour mai et juin.
+
 Pour la configuration par défaut, les services et versions sont définis dans [le fichier `services.yaml`](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
 Pour plus d’informations, consultez la section [Configurer les services](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) dans le guide *Commerce sur les infrastructures cloud*.
 
@@ -62,10 +65,6 @@ Tous les clients et clientes Adobe Commerce On-Premise exécutant les versions 2
 Il est conseillé de migrer leur infrastructure de recherche vers une version OpenSearch compatible.
 
 >[!ENDTABS]
-
->[!AVAILABILITY]
->
-><sup>1</sup> La compatibilité entre MariaDB 12.3 et Adobe Commerce 2.4.9 sera confirmée suite à la publication officielle de MariaDB 12.3, prévue pour mai et juin.
 
 ## Configuration requise pour les versions antérieures de Commerce
 
@@ -225,4 +224,4 @@ Pour Adobe Commerce sur le cloud, consultez [Configuration de Xdebug](https://ex
 >
 >Il existe un problème connu avec `xdebug` qui peut affecter les installations d’Adobe Commerce ou l’accès au storefront ou à l’administrateur après l’installation. Voir [Problème connu affectant `xdebug` installation](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) dans la base de connaissances de la prise en charge de _Commerce_.
 
-<!-- Last updated from includes: 2026-05-13 16:20:40 -->
+<!-- Last updated from includes: 2026-06-01 11:19:57 -->

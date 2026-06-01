@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: b5c120d34b84229c006fbeb9ba8d0f93f558aec1
+source-git-commit: 7625ecbebf7c8ca227f3817a0f4f21bba1bb253a
 workflow-type: tm+mt
-source-wordcount: '10074'
+source-wordcount: '10121'
 ht-degree: 0%
 
 ---
@@ -900,7 +900,7 @@ ht-degree: 0%
          - [ACSD-67459 : impossible d’importer des produits dont les descriptions dépassent 65 536 caractères](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
-         - [ACSD-67424 : la valeur updated_at dans la réponse GET /carts/search de l’API REST ne correspond pas à la valeur dans [!UICONTROL Admin Panel] pour [!UICONTROL Negotiable Quotes]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
+         - [ACSD-67424 : la valeur updated_at dans la réponse de l’API REST GET /carts/search ne correspond pas à la valeur dans [!UICONTROL Admin Panel] pour [!UICONTROL Negotiable Quotes]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
          - [ACSD-67383 : erreur lors de la connexion en tant que client avec deux comptes d’administration d’entreprise dans la même session](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383.md)
          - [ACSD-68064 : entrées en double créées lors des mises à jour planifiées dans les environnements comportant des catégories profondément imbriquées](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064.md)
          - [ACSD-67946 : la mise à jour du panier affiche les bannières d’erreur en double](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946.md)
@@ -972,6 +972,7 @@ ht-degree: 0%
          - [ACSD-68341 : plusieurs mises à jour des cookies X-Magento-Vary se produisent au chargement du PDP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
       - v1.1.78 {#v1-1-78}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
+         - [ACP2E-4513 : les images de CAPTCHA expirées ne sont pas supprimées du système](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513.md)
          - [ACP2E-4528 : la validation de la ville de l’adresse du client gère mal les barres obliques (/) et les caractères non valides tels que !,  », # et ?](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528.md)
          - [ACP2E-4628 : l’importation de clients avec des adresses e-mail en majuscules déclenche une erreur de clé de tableau indéfinie lorsque le Partage de compte est défini sur Global](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4628.md)
          - [ACSD-60989 : la modification d’une colonne avec une clé étrangère par le biais d’un schéma déclaratif entraîne des erreurs sur  [!DNL MariaDB]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acsd-60989.md)
@@ -995,6 +996,8 @@ ht-degree: 0%
          - [ACP2E-4419 : les cartes-cadeaux ne s’appliquent pas correctement lors du passage en caisse après la validation réussie de reCAPTCHA v2 sur le storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4505 : dépendance de catégorie circulaire lors de l’enregistrement d’une catégorie avec des données obsolètes dans un onglet de navigateur en double](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
+         - [ACP2E-4720 : les règles de prix de panier d&#39;expédition gratuit ne sont pas réinitialisées pour les produits groupés à prix fixe avec des articles d&#39;expédition séparément](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
          - [AC-10698 : les prix et totaux des transactions ne sont pas envoyés à Google Tag](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
          - [ACP2E-4475 : l’ordre ou le filtrage par prix ne fonctionne pas pour les produits groupés en rupture de stock.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)
          - [ACP2E-4411 : les prix de produits groupés affichent des valeurs de taxe et de devise incorrectes entre la page Détails du produit et le panier dans une configuration multidevise](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)
