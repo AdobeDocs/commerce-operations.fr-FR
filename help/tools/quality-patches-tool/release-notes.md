@@ -3,9 +3,14 @@ title: Notes de mise à jour
 description: Découvrez les correctifs disponibles pour Adobe Commerce et les problèmes qu’ils résolvent.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 26f4a5c5a23e3df9448898b57495e60e2e51133a
+autotag-review: '2026-05-29T17:40:45.034Z'
+TQID: 'https://experienceleague.adobe.com/HHiR-UPHRK-dZCKE9L6H1bfm4hykrOgYsBm-XJv8zyE'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: c7b05a4b636b1d4f67e1d3db40dce7fab1cb1b6b
 workflow-type: tm+mt
-source-wordcount: '30379'
+source-wordcount: 30977
 ht-degree: 0%
 
 ---
@@ -16,11 +21,32 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 >[!INFO]
 >
->Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=fr#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
+>Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
 
 >[!INFO]
 >
 >Pour plus d’informations sur les [!DNL quality patches] créées par la communauté pour Magento Open Source, consultez les [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.80 {#v1-1-80}
+
+* **ACP2E-4239** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.9) - Correction du problème où les filtres de grille d’administration qui utilisent des attributs de date renvoient des résultats incorrects en raison de différences de fuseau horaire entre la date sélectionnée, les valeurs UTC stockées et le fuseau horaire du magasin configuré.
+* **ACP2E-4472** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Correction du problème de création d’un devis nul pendant le flux « Se connecter en tant que client ».
+* **ACP2E-4481** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.9) - Correction d’un problème en raison duquel la valeur de vente du bundle de produits n’est pas recalculée correctement après l’annulation d’une commande.
+* **ACP2E-4488** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Correction du problème en raison duquel l’enregistrement ou la modification des produits dans Admin est lent pour les produits dotés de jeux d’attributs volumineux.
+* **ACP2E-4493** (pour Adobe Commerce >=2.4.4 &lt;2.4.9) - Correction du problème en raison duquel la grille d&#39;archivage des commandes client affiche un statut de commande incorrect lorsque l&#39;indexation asynchrone est activée.
+* **ACP2E-4496** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème en raison duquel la tâche cron Analytics entraîne une dégradation des performances pendant l’exécution, ce qui entraîne une amélioration des performances globales du système.
+* **ACP2E-4533** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel les images d’espace réservé ne se chargent pas sur le storefront lorsqu’un code de magasin est inclus dans l’URL.
+* **ACP2E-4552** (pour Adobe Commerce, B2B >=1.5.0 &lt;1.5.3) - Corrige le problème en raison duquel le statut de la société n’est pas renvoyé dans la réponse GraphQL.
+* **ACP2E-4610** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.9) - Correction d’un problème en raison duquel la tâche cron sales_clean_quotes présentait des problèmes de performances.
+* **ACP2E-4615** (pour Adobe Commerce >=2.4.4-p13 &lt;2.4.4-p17 || >=2.4.4-p18 &lt;2.4.5 || >=2.4.5-p12 &lt;2.4.6 || >=2.4.6-p10 &lt;2.4.7 || >=2.4.7-p5 &lt;2.4.9) - Résout le problème où les remboursements de commande en ligne échouent avec une erreur PayPal indiquant « PayPal gateway » rejette la demande. Erreur interne. ».
+* **ACP2E-4626** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.9) - Correction du problème en raison duquel certains fichiers JavaScript de Storefront sont demandés et exécutés deux fois, provoquant des chargements en double intermittents et un comportement instable.
+* **ACP2E-4653** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème en raison duquel la portée de l’attribut de condition de règle de prix du panier pour « Catégorie (parent uniquement) » et « Catégorie (enfants uniquement) » n’est pas exposée lors de la récupération ou de la mise à jour de règles via l’API REST.
+* **ACP2E-4808** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.10) - Correction du problème en raison duquel l’attribut Poids sur la page produit du storefront n’affiche qu’une valeur numérique brute dans la section « Informations supplémentaires » ou « Informations supplémentaires » sans l’unité de mesure configurée (livres ou kg).
+* **ACP2E-4156** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème en raison duquel la validation de l’adresse de livraison dans l’API REST n’est pas conforme à la configuration d’attribut définie dans Admin.
+* **ACP2E-4813** (pour Adobe Commerce et Magento Open Source >=2.4.6-p3 &lt;2.4.6-p15 || >=2.4.7 &lt;2.4.7-p10 || >=2.4.8 &lt;2.4.8-p5) - Correction du problème en raison duquel les méthodes d’expédition USPS ne sont pas disponibles au moment du passage en caisse et les estimations d’expédition sont incorrectes pour certains produits, y compris les commandes fractionnées en plusieurs packages.
+* **ACSD-53502** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Correction du problème en raison duquel l’option Ajouter au panier échoue par intermittence sur le storefront dans iOS Safari en raison d’appels récursifs au script de surveillance New Relic, ce qui entraîne des rechargements de page.
+* Versions mises à jour : **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD-61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477** **ACSD-58108**, **ACSD-66149**, **ACSD-66404**, **ACSD-67250**, ****-440267686 **,****-450568925**, **ACP2E-4603**, **ACP2E-4706** ACP2E **ACP2E**
+* Correctifs remplacés : **AC-15210**, **ACSD-58108**
 
 ## v1.1.79 {#v1-1-79}
 
@@ -63,7 +89,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACP2E-4732** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction d’un problème en raison duquel l’indexation partielle s’arrêtait pour les clients avec un grand nombre de mises à jour lorsque la colonne version_id de la table changelog atteignait sa valeur maximale.
 * **ACP2E-4763** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème en raison duquel la requête customerOrders de GraphQL renvoie des valeurs original_price_include_tax et original_row_total_include_tax gonflées lorsque les prix du catalogue sont définis sur Taxe incluse, en raison d’une application double de la taxe.
 * **ACSD-60989** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel la modification d’une colonne avec une clé étrangère par le biais d’un schéma déclaratif provoque des erreurs sur MariaDB.
-* Versions mises à jour : **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-55031**, **ACSD-51819**, **ACSD-55628**, **ACSD-54965,** ACSD-**, 56546** ACSD-**, 61756** ACSD-**, 68040** ACSD-**, 62708** ACSD-**, 63283** ACSD-**, 64732** ACSD-**, 65775** ACSD-**, 66965** ACSD-ACP2E, **&#x200B;**-4050
+* Versions mises à jour : **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-55031**, **ACSD-51819**, **ACSD-55628**, **ACSD-54965,** ACSD-**, 56546** ACSD-**, 61756** ACSD-**, 68040** ACSD-**, 62708** ACSD-**, 63283** ACSD-**, 64732** ACSD-**, 65775** ACSD-**, 66965** ACSD-ACP2E, ****-4050
 * Correctifs remplacés : **ACSD-58446**, **ACSD-67904**
 
 ## v1.1.77 {#v1-1-77}
