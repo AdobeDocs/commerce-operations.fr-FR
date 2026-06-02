@@ -1,8 +1,8 @@
 ---
-source-git-commit: 96a30744d05e5220b60a6a56a9d64d92e1dfd9ce
+source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
 workflow-type: tm+mt
-source-wordcount: '2070'
-ht-degree: 62%
+source-wordcount: '2046'
+ht-degree: 63%
 
 ---
 # Versions publiées
@@ -275,6 +275,7 @@ La prise en charge régulière de la version 2.4.6 de se termine le 11 août 202
 
 La prise en charge régulière de la version 2.4.5 de a pris fin le 12 août 2025.
 La prise en charge étendue de la version 2.4.5 de prend fin le 11 août 2026.
+La mise en service des correctifs de sécurité supplémentaires pour la version 2.4.5 de se termine en mai 2027.
 
 <table>
   <thead>
@@ -399,6 +400,7 @@ La prise en charge étendue de la version 2.4.5 de prend fin le 11 août 2026.
 
 La prise en charge régulière de la version 2.4.4 de a pris fin le 12 avril 2025.
 La prise en charge étendue de la version 2.4.4 de a pris fin le 14 avril 2026.
+La mise en service des correctifs de sécurité supplémentaires pour la version 2.4.4 de se termine en mai 2027.
 
 <table>
   <thead>
