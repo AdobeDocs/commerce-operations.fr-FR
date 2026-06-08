@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 9de5006ef5231f1009e3b6b44a365e151d56e998
+source-git-commit: bbe7d69e0cf7a1cdfdbf6ed60b853ace38ae227a
 workflow-type: tm+mt
-source-wordcount: '10131'
+source-wordcount: '10146'
 ht-degree: 0%
 
 ---
@@ -996,6 +996,7 @@ ht-degree: 0%
          - [ACP2E-4419 : les cartes-cadeaux ne s’appliquent pas correctement lors du passage en caisse après la validation réussie de reCAPTCHA v2 sur le storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4706 : l’indexeur de règles de Target cron ne sélectionne pas les produits activés uniquement à la portée d’affichage du magasin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706.md)
          - [ACP2E-4402 : l’indexeur incrémentiel de la règle cible ne sélectionne pas les produits désactivés](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402.md)
          - [ACP2E-4505 : dépendance de catégorie circulaire lors de l’enregistrement d’une catégorie avec des données obsolètes dans un onglet de navigateur en double](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
          - [ACP2E-4720 : les règles de prix de panier d&#39;expédition gratuit ne sont pas réinitialisées pour les produits groupés à prix fixe avec des articles d&#39;expédition séparément](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
