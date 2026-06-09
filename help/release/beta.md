@@ -4,9 +4,9 @@ description: Découvrez les versions bêta d’Adobe Commerce et comment y parti
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 3411fb1d4c89bd4dd576f58b98dcf19ddafa00bf
+source-git-commit: 300ed6b9123701244042abccf70ff774ac05b0fa
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1894'
 ht-degree: 0%
 
 ---
@@ -91,6 +91,25 @@ Le marchandisage des catégories Adobe Commerce Optimizer permet aux commerçant
 - Portée des règles par vue de catalogue lorsque votre configuration utilise plusieurs vues de catalogue.
 
 Pour en savoir plus, voir [Marchandisage de catégorie](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/add).
+
+Pour partager vos commentaires pendant que vous utilisez cette fonctionnalité bêta, envoyez un e-mail à [&#128279;](mailto:commerce-storefront-services@adobe.com).
+
+### Filtres de prix recommandés (Beta publique) {#recommendation-price-filters-public-beta}
+
+[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."}
+
+[!DNL Adobe Commerce Optimizer] ajoute des **filtres de prix** aux recommandations de produits afin que vous puissiez inclure ou exclure des produits recommandés en fonction du prix lorsque vous créez ou modifiez une unité de recommandation. Les filtres utilisent le **prix calculé final** de chaque produit du **catalogue des prix actifs** du storefront, y compris les remises et les promotions de ce catalogue des prix (pas le prix catalogue seul). Les règles de prix affinent le jeu de candidats ; elles ne reclassent pas les produits.
+
+Vous pouvez définir des plages **statiques** avec des valeurs minimales et maximales fixes dans la devise de base de votre magasin ou des règles **dynamiques** sur les pages de détails du produit qui comparent les produits recommandés au **produit actuellement consulté** à l’aide d’opérateurs tels que inférieur ou égal à, supérieur ou égal à, ou dans une plage de valeurs ou de pourcentages du prix d’ancrage. Des filtres dynamiques sont disponibles pour les types de recommandation liés au SKU qui s’exécutent dans le contexte du produit (par exemple, *Affiché ceci* affiché cela et *Plus comme ceci*).
+
+**Principaux avantages**
+
+- Incluez ou excluez des candidats de recommandation par prix à l’aide des règles d’inclusion et d’exclusion de l’étape **Filtrer les produits**.
+- Utilisez des fourchettes de prix statiques pour des objectifs de marchandisage fixes (par exemple, des modules complémentaires économiques ou des ventes incitatives).
+- Utilisez des règles de prix dynamiques sur la page des détails du produit pour afficher les alternatives à l’intérieur d’une fourchette de prix comparable par rapport au produit affiché.
+- Alignez le filtrage sur le prix affiché par les acheteurs, qui est le même prix final du catalogue des prix actifs utilisé pour le filtrage et l’affichage.
+
+Pour en savoir plus, consultez les sections [Filtres de recommandation — Prix](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/recommendations/filters#price) dans le guide destiné aux commerçants et [Configuration des recommandations de produit](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/?lang=fr) dans le guide de storefront.
 
 Pour partager vos commentaires pendant que vous utilisez cette fonctionnalité bêta, envoyez un e-mail à [&#128279;](mailto:commerce-storefront-services@adobe.com).
 
