@@ -21,7 +21,7 @@ Les programmes Beta pour les [solutions de produits Adobe Commerce](https://expe
 >[!IMPORTANT]
 >
 >**Clause de non-responsabilité**<br/>
-Les versions de >Beta incluent des fonctionnalités de version préliminaire et du code pouvant contenir des défauts et sont fournies « EN L’ÉTAT » sans garantie d’aucune sorte. Adobe dispose de la seule discrétion nécessaire pour rendre les versions bêta généralement disponibles. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, prendre en charge (via les services d’assistance Adobe ou autre), ou de diffuser ces versions bêta à une date spécifique. Si une version Beta est disponible, elle peut être soumise à des conditions générales supplémentaires, y compris les frais applicables. Les versions de Beta peuvent être modifiées sans préavis, y compris en cas d’interruption. Il est conseillé aux clients d’être prudents et de ne pas se fier, de quelque manière que ce soit, au fonctionnement ou aux performances ininterrompus ou sans erreur des versions bêta.  Par conséquent, toute utilisation des versions bêta s’effectue entièrement aux risques et périls du client.
+>Les versions de >Beta incluent des fonctionnalités de version préliminaire et du code pouvant contenir des défauts et sont fournies « EN L’ÉTAT » sans garantie d’aucune sorte. Adobe dispose de la seule discrétion nécessaire pour rendre les versions bêta généralement disponibles. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, prendre en charge (via les services d’assistance Adobe ou autre), ou de diffuser ces versions bêta à une date spécifique. Si une version Beta est disponible, elle peut être soumise à des conditions générales supplémentaires, y compris les frais applicables. Les versions de Beta peuvent être modifiées sans préavis, y compris en cas d’interruption. Il est conseillé aux clients d’être prudents et de ne pas se fier, de quelque manière que ce soit, au fonctionnement ou aux performances ininterrompus ou sans erreur des versions bêta.  Par conséquent, toute utilisation des versions bêta s’effectue entièrement aux risques et périls du client.
 
 ## Avantages de la participation
 
@@ -50,7 +50,7 @@ Cette fonctionnalité améliore la flexibilité du marchandisage et l’efficaci
 >
 >Les participants de Beta devront recréer toutes les règles de marchandisage existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
 
-Pour partager vos commentaires pendant que vous utilisez cette fonctionnalité bêta, envoyez un e-mail à [](mailto:commerce-storefront-services@adobe.com).
+Pour partager vos commentaires pendant que vous utilisez cette fonctionnalité bêta, envoyez un e-mail à [&#128279;](mailto:commerce-storefront-services@adobe.com).
 
 ### Recommandations de produits à l’échelle mondiale et par vue de catalogue (Beta publique)
 
@@ -75,7 +75,7 @@ Cette amélioration permet aux commerçants de proposer des expériences de déc
 >
 >Les participants de Beta devront recréer toutes les unités de recommandation existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
 
-Pour partager vos commentaires pendant que vous utilisez cette fonctionnalité bêta, envoyez un e-mail à [](mailto:commerce-storefront-services@adobe.com).
+Pour partager vos commentaires pendant que vous utilisez cette fonctionnalité bêta, envoyez un e-mail à [&#128279;](mailto:commerce-storefront-services@adobe.com).
 
 ### Marchandisage de catégorie (Beta publique)
 
@@ -92,7 +92,7 @@ Le marchandisage des catégories Adobe Commerce Optimizer permet aux commerçant
 
 Pour en savoir plus, voir [Marchandisage de catégorie](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
 
-Pour partager vos commentaires pendant que vous utilisez cette fonctionnalité bêta, envoyez un e-mail à [](mailto:commerce-storefront-services@adobe.com).
+Pour partager vos commentaires pendant que vous utilisez cette fonctionnalité bêta, envoyez un e-mail à [&#128279;](mailto:commerce-storefront-services@adobe.com).
 
 ### Service de correctifs de Cloud Automation (Private Beta)
 
@@ -130,7 +130,7 @@ Merchant Productivity AI Assistant est une interface conversationnelle intégré
 - Interroger les données de magasin actives à la demande ; par exemple, récupérer les 10 dernières commandes, afficher les promotions actuellement actives ou vérifier l’état de l’inventaire.
 - Réduisez le temps consacré aux tâches d’administration répétitives, ce qui permet aux commerçants de se concentrer sur la stratégie et la croissance.
 
-Pour participer à cette version bêta, envoyez un e-mail à [](mailto:commerce-storefront-services@adobe.com).
+Pour participer à cette version bêta, envoyez un e-mail à [&#128279;](mailto:commerce-storefront-services@adobe.com).
 
 ### Adobe Commerce Foundation (Alpha public/Beta)
 
@@ -143,7 +143,7 @@ Chaque version alpha et bêta d’Adobe Commerce Foundation comprend toutes les 
 - Améliorations de GraphQL
 - Correctifs de qualité générale
 - Contributions de la Communauté
-- Modifications requises pour prendre en charge la compatibilité avec les [services ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- Modifications requises pour prendre en charge la compatibilité avec les [services &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### Convention et planning d’affectation des noms
 
@@ -165,7 +165,7 @@ Consultez le [calendrier des versions](schedule.md) pour obtenir la liste des da
 
 Les versions alpha et bêta d’Adobe Commerce sont distribuées de la même manière que toute autre version de correctif Adobe Commerce : en tant que métapaquets du compositeur sur `https://repo.magento.com`. Le code source est disponible sur [GitHub](https://github.com/magento/magento2).
 
-Voir [ Démarrage rapide de l’installation du compositeur](../installation/composer.md) pour plus d’informations.
+Voir [&#x200B; Démarrage rapide de l’installation du compositeur](../installation/composer.md) pour plus d’informations.
 
 #### Rapports sur les événements
 
