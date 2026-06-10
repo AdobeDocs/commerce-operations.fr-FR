@@ -151,7 +151,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.78 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528">ACP2E-4528 : la validation de la ville de l’adresse du client gère mal les barres obliques (/) et les caractères non valides tels que !,  », # et ?</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.78 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528">ACP2E-4528 : la validation de la ville de l’adresse du client gère mal les barres obliques (/) et les caractères non valides tels que !,  », # et ?</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
