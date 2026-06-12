@@ -4,9 +4,9 @@ description: Découvrez les versions bêta d’Adobe Commerce et comment y parti
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 300ed6b9123701244042abccf70ff774ac05b0fa
+source-git-commit: 41e4aa725848fd7fa4910eaea09a802326fa3995
 workflow-type: tm+mt
-source-wordcount: '1894'
+source-wordcount: '1451'
 ht-degree: 0%
 
 ---
@@ -31,68 +31,26 @@ L’accès anticipé aux fonctionnalités développées par Adobe permet aux cli
 
 Consultez les sections suivantes pour obtenir la liste des programmes bêta actifs.
 
-### Règles de marchandisage globales et par vue de catalogue (Beta publique)
+### Correspondance de recherche et classement (Private Beta)
 
 [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."}
 
-Adobe Commerce Optimizer offre la possibilité de définir des règles de marchandisage avec une portée flexible, ce qui permet aux commerçants d’appliquer des règles dans toutes les vues de catalogue ou de les appliquer à une vue de catalogue spécifique. Cette fonctionnalité simplifie la gestion des règles de marchandisage pour les commerçants qui exploitent plusieurs vitrines, marques ou langues. Les règles spécifiques à la vue Catalogue permettent aux commerçants de personnaliser les résultats de recherche et la logique de marchandisage pour des canaux individuels lorsqu’ils ont besoin d’expériences localisées ou spécifiques à une marque. S’il existe des règles spécifiques aux vues de catalogue, elles remplacent la règle globale de cette vue, fournissant un contrôle précis tout en maintenant une gestion de configuration efficace.
+[!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."}
+
+Adobe améliore la façon dont la découverte de produits classe les résultats de recherche pour les [!DNL Live Search] sur les [!DNL Adobe Commerce] et les [!DNL Adobe Commerce Optimizer]. La mise à jour donne la priorité aux **correspondances exactes et de quasi-expressions**, puis aux correspondances où **tous les termes de requête apparaissent dans le même attribut consultable** et enfin aux correspondances **entre champs** (y compris les comportements qui prennent en charge les suggestions de style de saisie semi-automatique). Ce modèle en couches permet aux requêtes à haute intention de faire apparaître d’abord les produits les plus pertinents tout en renvoyant des alternatives utiles.
+
+Le même modèle de pertinence interagit avec **poids de recherche**, **classement intelligent**, **synonymes** et **règles de marchandisage** (épingler, booster, enterrer). Les vitrines allemandes peuvent utiliser la **décomposition** pour les mots composés, avec la même approche globale de hiérarchisation.
 
 **Principaux avantages**
 
-- Définissez des règles de marchandisage globalement pour toutes les vues de catalogue.
-- Règles de remplacement pour des vues de catalogue spécifiques lorsque des expériences localisées sont requises.
-- Réduisez la duplication des configurations entre les storefronts.
-- Améliorez l’évolutivité pour les implémentations commerciales multimarques et multilingues.
+- Boostez plus fortement les correspondances exactes et proches des expressions (y compris les formes normalisées telles que le singulier et le plural).
+- Classement supérieur lorsque tous les mots de requête apparaissent ensemble dans un champ consultable.
+- Des attentes plus claires quant à la façon dont les poids, le classement intelligent et les règles manuelles se combinent au moment de la requête.
+- Conseils pour valider les requêtes à forte valeur ajoutée et optimiser les règles d’amplification après la modification.
 
-Cette fonctionnalité améliore la flexibilité du marchandisage et l’efficacité opérationnelle, ce qui permet aux commerçants de proposer des expériences de découverte de produits plus pertinentes à grande échelle. Pour en savoir plus, voir [règles de marchandisage](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/add).
+En savoir plus sur la correspondance de recherche et la stratégie de classement dans [Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/en/docs/commerce/optimizer/search-relevance-matching) et [Live Search (PaaS)](https://experienceleague.adobe.com/en/docs/commerce/live-search/search-relevance-matching).
 
->[!NOTE]
->
->Les participants de Beta devront recréer toutes les règles de marchandisage existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
-
-Pour partager vos commentaires pendant que vous utilisez cette fonctionnalité bêta, envoyez un e-mail à [&#128279;](mailto:commerce-storefront-services@adobe.com).
-
-### Recommandations de produits à l’échelle mondiale et par vue de catalogue (Beta publique)
-
-[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."}
-
-Adobe Commerce Optimizer offre un meilleur contrôle sur la configuration des recommandations de produits, ce qui permet aux commerçants de définir des unités de recommandation globalement sur toutes les vues de catalogue ou spécifiquement pour des vues de catalogue individuelles.
-
-Cette fonctionnalité simplifie la gestion des recommandations pour les entreprises qui exploitent plusieurs storefronts, marques, régions ou langues. Les commerçants peuvent créer une unité de recommandation une fois à l’échelle mondiale. Elle s’appliquera à toutes les vues de catalogue, assurant ainsi des stratégies de découverte de produits cohérentes sur l’ensemble des canaux. Dans le même temps, les unités de recommandation spécifiques aux vues du catalogue permettent aux commerçants de personnaliser leurs expériences en fonction de leurs vitrines, le cas échéant.
-
-Les événements d’engagement du storefront et les mesures de recommandations sont suivis au niveau de la vue du catalogue, fournissant des informations plus précises sur le comportement de l’acheteur dans différents storefronts.
-
-**Principaux avantages**
-
-- Configurez les unités de recommandation de produit globalement pour toutes les vues de catalogue.
-- Créez des recommandations spécifiques aux vues de catalogue pour les expériences storefront localisées.
-- Réduire les configurations dupliquées sur les storefronts multi-marques ou multi-langues.
-- Obtenez des informations plus précises grâce aux mesures et aux événements suivis par vue de catalogue.
-
-Cette amélioration permet aux commerçants de proposer des expériences de découverte de produits plus pertinentes tout en simplifiant la gestion des recommandations dans les environnements commerciaux complexes. Pour en savoir plus, voir [recommandations](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/manage-results/recommendation-performance)
-
->[!NOTE]
->
->Les participants de Beta devront recréer toutes les unités de recommandation existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
-
-Pour partager vos commentaires pendant que vous utilisez cette fonctionnalité bêta, envoyez un e-mail à [&#128279;](mailto:commerce-storefront-services@adobe.com).
-
-### Marchandisage de catégorie (Beta publique)
-
-[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."}
-
-Le marchandisage des catégories Adobe Commerce Optimizer permet aux commerçants de contrôler la manière dont les produits sont commandés sur les pages de catégorie. Les commerçants configurent le comportement en tant que **règle de catégorie** dans le workflow des règles de marchandisage, ainsi que les [règles de recherche et les règles de liste de produits par défaut](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/overview). Chaque règle peut combiner **classement intelligent** (signaux comportementaux et IA le cas échéant), **tri basé sur les prix** et **manuel** des actions telles que épingler, booster et enterrer, afin que les équipes puissent traiter les découvertes, exécuter des promotions et aligner les pages de catégorie avec la stratégie sans outils externes.
-
-**Principaux avantages**
-
-- Ciblez une ou plusieurs catégories avec le même workflow basé sur des règles utilisé pour les listes de recherche et par défaut.
-- Commandez les annonces de catégories à l’aide de stratégies de classement intelligentes (par exemple, les plus consultés, les plus achetés, l’ajout au panier, les recommandations personnalisées, les tendances) ainsi qu’un tri facultatif des prix.
-- Épinglez, boostez et enfouissez manuellement les actions en plus d&#39;un classement intelligent lorsque vous avez besoin d&#39;un positionnement précis.
-- Portée des règles par vue de catalogue lorsque votre configuration utilise plusieurs vues de catalogue.
-
-Pour en savoir plus, voir [Marchandisage de catégorie](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/add).
-
-Pour partager vos commentaires pendant que vous utilisez cette fonctionnalité bêta, envoyez un e-mail à [&#128279;](mailto:commerce-storefront-services@adobe.com).
+Pour demander une invitation à cette version bêta privée, envoyez un e-mail à [&#128279;](mailto:commerce-storefront-services@adobe.com). L’équipe d’Adobe répondra avec les étapes suivantes et les conditions d’éligibilité.
 
 ### Filtres de prix recommandés (Beta publique) {#recommendation-price-filters-public-beta}
 
