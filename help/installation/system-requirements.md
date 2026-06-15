@@ -2,9 +2,9 @@
 title: Configuration requise
 description: Découvrez les dépendances logicielles et la configuration requise pour Adobe Commerce. Voir les configurations testées pour assurer la compatibilité avec votre environnement de déploiement.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
+source-git-commit: 4ffbd0ab5109fb242d3d83c8f6c19c58d1bcb822
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Les tableaux ci-dessous résument la configuration requise pour la dernière ver
 
 >[!TAB Commerce sur le cloud]
 
-Le modèle [Commerce sur le cloud](https://github.com/magento/magento-cloud) fournit une configuration par défaut pour les services compatibles avec une version spécifique de Commerce.
+Le modèle [Commerce on Cloud](https://github.com/magento/magento-cloud) fournit une configuration par défaut pour les services compatibles avec la dernière version de Commerce pour chaque ligne de version.
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
