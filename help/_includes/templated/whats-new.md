@@ -1,7 +1,7 @@
 ---
-source-git-commit: b552c5e9aa33c33efe962f5f3661ca26b29ef0b6
+source-git-commit: b8c97f7a7d92a75ce54d323344460e2e71e8f548
 workflow-type: tm+mt
-source-wordcount: '3380'
+source-wordcount: '3441'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,58 @@ ht-degree: 0%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### 12 Juin 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview">Présentation : Outil de correctifs de qualité (QPT) version 1.1.80</a>.</p>
+</td>
+      <td>
+        Nouvelle rubrique, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6e585cb2150ca7dc2ae6ae883339ef9b894741f0">validation</a></td>
+    </tr>
+    <tr>
+      <td><p>Ajout du programme de correspondance et de classement (Private Beta) de recherche aux <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/beta#search-matching-and-ranking-private-beta">versions de Beta</a>, y compris le modèle de correspondance superposée, l’interaction avec les poids et les règles de marchandisage, ainsi que les instructions d’invitation.</p>
+</td>
+      <td>
+        Mise à jour majeure
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b364a26b6ad3e36652b8309dcb87268d522fa31c">validation</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 8 Juin 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.79 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706">ACP2E-4706 : l’indexeur de règle Target cron ne sélectionne pas les produits activés uniquement dans la portée d’affichage du magasin</a>.</p>
+</td>
+      <td>
+        Nouvelle rubrique, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f1f9890a2a2b7dbe501037ca8dbe919865012b6f">validation</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 5 Juin 2026
 
@@ -701,36 +753,6 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
         Mise à jour technique, majeure
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0bc6807d7f4bfd84ac698de81f8cf6f56d849af7">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 8 avril 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements">Configuration requise</a> avec les versions prises en charge par New Relic (APM) pour Commerce sur Cloud by.</p>
-</td>
-      <td>
-        Technique, commentaires
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f82d05cf0f7d2749b313ef5f7e89e1e36248bf30">validation</a></td>
-    </tr>
-    <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/beta">versions de </a> avec un programme de marchandisage de catégorie (Beta publique) pour les projets SaaS, y compris des liens vers les rubriques <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/add">marchandisage de catégorie</a> et règles de marchandisage associées.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a9f3594a0ccf4326b0541a4f2b07fdf49cde7148">validation</a></td>
     </tr>
   </tbody>
 </table>
