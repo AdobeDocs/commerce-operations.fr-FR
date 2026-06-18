@@ -1,8 +1,8 @@
 ---
 title: Politique d’application de la mise à niveau de la version cloud
 description: 'Découvrez l’application des mises à niveau de version pour Adobe Commerce sur le cloud : pourquoi Adobe applique-t-il les mises à niveau, les dates d’application, le déclassement et les actions requises ? Consultez la politique relative au cycle de vie pour connaître les dispositions transitoires et les chemins de migration.'
-nudge: true
-source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
+nudge: false
+source-git-commit: 797f067de451c8b1b4d735e82de66a3fd9b56563
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
