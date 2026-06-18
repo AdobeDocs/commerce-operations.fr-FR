@@ -37,7 +37,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Toutes les commandes de l’interface de ligne de commande Magento doivent être exécutées par le [ propriétaire du système de fichiers](/help/configuration/cli/config-cli.md#prerequisites).
+>Toutes les commandes de l’interface de ligne de commande Magento doivent être exécutées par le [&#x200B; propriétaire du système de fichiers](/help/configuration/cli/config-cli.md#prerequisites).
 
 ## Commandes de sauvegarde {#tip-backup-command}
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Les versions d’[](/help/release/versioning-policy.md#alpha-patch-release) peuvent être incomplètes et risquent de contenir des défauts. Ils sont fournis « EN L&#39;ÉTAT » sans garantie d&#39;aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge d’une autre manière (via les services d’assistance Adobe ou autre) les versions d’Alpha. Les clients ne doivent pas s’appuyer sur le bon fonctionnement ou les performances des versions d’Alpha ou de toute documentation ou documentation d’accompagnement. L’utilisation des versions d’Alpha s’effectue entièrement aux risques et périls du client.
+>Les versions d’[&#128279;](/help/release/versioning-policy.md#alpha-patch-release) peuvent être incomplètes et risquent de contenir des défauts. Ils sont fournis « EN L&#39;ÉTAT » sans garantie d&#39;aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge d’une autre manière (via les services d’assistance Adobe ou autre) les versions d’Alpha. Les clients ne doivent pas s’appuyer sur le bon fonctionnement ou les performances des versions d’Alpha ou de toute documentation ou documentation d’accompagnement. L’utilisation des versions d’Alpha s’effectue entièrement aux risques et périls du client.
 
 ## Clause de non-responsabilité Beta {#beta}
 
@@ -134,7 +134,7 @@ Après les récentes modifications apportées à CSP/SRI, la page de passage en 
 
 **Correctif** :
 
-Un correctif est disponible. Pour plus d’informations sur les correctifs](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) consultez la section [L’extraction échoue lorsque la minimisation et le regroupement JS sont activés dans la base de connaissances.
+Un correctif est disponible. Pour plus d’informations sur les correctifs[&#128279;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) consultez la section L’extraction échoue lorsque la minimisation et le regroupement JS sont activés dans la base de connaissances.
 
 ## Valkey Redis CLI note {#valkey-redis-cli-note}
 
