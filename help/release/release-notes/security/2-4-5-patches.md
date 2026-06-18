@@ -2,9 +2,9 @@
 title: Notes De Mise À Jour Du Correctif De Sécurité D’Adobe Commerce 2.4.5
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.5.
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-source-git-commit: 95333e271e6f7a8e782d6a40b754fe29ac280414
+source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2006'
 ht-degree: 0%
 
 ---
@@ -18,15 +18,15 @@ ht-degree: 0%
 >
 >MySQL 8.0 atteindra la fin de la prise en charge (EOS) à partir du 30 avril 2026.
 >
->À compter de cette date, Adobe Commerce version 2.4.5 ne fournira plus de compatibilité ou>Prise en charge de toutes les versions de MySQL publiées après MySQL 8.0. Adobe ne le fera pas>valider ou fournir la prise en charge des versions majeures MySQL plus récentes sur cette Adobe>Ligne de version de Commerce.
+>À compter de cette date, Adobe Commerce 2.4.5 ne fournira ni compatibilité ni prise > charge des versions de MySQL publiées après MySQL 8.0. Adobe ne > pas valider ni fournir de prise en charge des versions majeures MySQL plus récentes sur cette ligne de version d’Adobe>Commerce.
 >
->Tous les clients et clientes Adobe Commerce On-Premise exécutant la version 2.4.5 ont un niveau de sécurité élevé>a conseillé de migrer ses serveurs de base de données vers une version MariaDB compatible.
-
-## 2.4.5-p17
+>Il est vivement conseillé à tous les clients sur site Adobe Commerce exécutant la version 2.4>5 de migrer leurs serveurs de base de données vers une version MariaDB compatible.
 
 {{extended-support}}
 
-La version de sécurité 2.4.5-p17 d’Adobe Commerce fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.5.
+## 2.4.5-p17
+
+Adobe Commerce version 2.4.5-p17 est une version de sécurité [prise en charge étendue](../../lifecycle-policy.md#security-only-transitional-period) qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de la version 2.4.5.
 
 Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB26-49](https://helpx.adobe.com/fr/security/products/magento/apsb26-49.html).
 
@@ -44,15 +44,9 @@ Adobe Commerce 2.4.5 est désormais compatible avec Valkey 8.1 LTS, fournissant 
 
 Adobe Commerce 2.4.5 est désormais compatible avec RabbitMQ 4.2, qui tient compte de la date de fin de prise en charge de RabbitMQ 4.1 prévue pour février 2026. La compatibilité avec les artéfacts Apache ActiveMQ est conservée et ActiveMQ reste le service de file d’attente de messages par défaut pour cette ligne de mise à jour de sécurité uniquement.
 
->[!NOTE]
->
->Les correctifs de sécurité de prise en charge étendue pour la version 2.4.5 sont disponibles uniquement pour les clients Adobe Commerce. Ces correctifs ne sont pas disponibles pour la base de code Magento Open Source. Voir [&#x200B; Prise en charge étendue &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
-
 ## 2.4.5-p16
 
-{{extended-support}}
-
-La version de sécurité 2.4.5-p16 d’Adobe Commerce fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.5.
+Adobe Commerce version 2.4.5-p16 est une version de sécurité [prise en charge étendue](../../lifecycle-policy.md#security-only-transitional-period) qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de la version 2.4.5.
 
 Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB26-05](https://helpx.adobe.com/fr/security/products/magento/apsb26-05.html).
 
@@ -76,9 +70,7 @@ La compatibilité d’Adobe Commerce 2.4.5-p16 avec MariaDB 10.11 a été vérif
 
 ## 2.4.5-p15
 
-{{extended-support}}
-
-La version de sécurité 2.4.5-p15 d’Adobe Commerce fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.5.
+Adobe Commerce version 2.4.5-p15 est une version de sécurité [prise en charge étendue](../../lifecycle-policy.md#security-only-transitional-period) qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de la version 2.4.5.
 
 Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB25-94](https://helpx.adobe.com/fr/security/products/magento/apsb25-94.html).
 
@@ -87,10 +79,6 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 ### Faits saillants
 
 {{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
-
->[!NOTE]
->
->Les correctifs de sécurité de prise en charge étendue pour la version 2.4.5 sont disponibles uniquement pour les clients Adobe Commerce. Ces correctifs ne sont pas disponibles pour la base de code Magento Open Source. Voir [&#x200B; Prise en charge étendue &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
 
 ### Problèmes connus
 

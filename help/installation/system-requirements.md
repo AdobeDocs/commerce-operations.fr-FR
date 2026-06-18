@@ -2,9 +2,9 @@
 title: Configuration requise
 description: Découvrez les dépendances logicielles et la configuration requise pour Adobe Commerce. Voir les configurations testées pour assurer la compatibilité avec votre environnement de déploiement.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 4ffbd0ab5109fb242d3d83c8f6c19c58d1bcb822
+source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1371'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,8 @@ Ligne de version de Commerce.
 Tous les clients et clientes Adobe Commerce On-Premise exécutant les versions 2.4.7, 2.4.6, 2.4.5 et 2.4.4 ont un niveau de sécurité élevé
 a conseillé de migrer ses serveurs de base de données vers une version MariaDB compatible.
 
+Les clients Adobe Commerce on Cloud doivent conserver les dépendances de la plateforme sur les versions prises en charge. Voir [Dépendances de Platform](../release/lifecycle-policy.md#platform-dependencies) dans la politique de cycle de vie.
+
 **Elasticsearch 7.17 a atteint la fin de la prise en charge (EOS) le 15 janvier 2026.**
 À compter de cette date, Adobe Commerce 2.4.6, 2.4.5 et 2.4.4 ne fournira pas de compatibilité ou
 la prise en charge de toutes les versions d’Elasticsearch publiées après Elasticsearch 7. Adobe ne le fera pas
@@ -71,6 +73,10 @@ Il est conseillé de migrer leur infrastructure de recherche vers une version Op
 Les tableaux suivants répertorient la configuration requise pour les versions d’Adobe Commerce, y compris celles avec prise en charge étendue. Ces tableaux sont fournis à titre de référence uniquement. Adobe ne recommande pas d’utiliser des versions non prises en charge des dépendances logicielles. En outre, l’assistance nécessite d’aligner votre environnement sur une configuration prise en charge avant que nous puissions étudier, résoudre les problèmes ou valider les comportements signalés.
 
 >[!NOTE]
+>
+>Adobe Commerce 2.4.6 bénéficie d’une [prise en charge étendue](../release/lifecycle-policy.md#extended-support) jusqu’au **30 août 2027**, suivie d’une [période de transition axée uniquement sur la sécurité](../release/lifecycle-policy.md#security-only-transitional-period) jusqu’au **31 mai 2028**. Ces fonctions ne sont disponibles que pour les clients Adobe Commerce. Ils n’étendent pas la prise en charge des dépendances tierces telles que MySQL.
+>
+>Si vous exécutez Adobe Commerce sur le cloud, vous devez effectuer une mise à niveau vers une version prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant la **date d’application de la mise à niveau du 1er juin 2028** [version](../release/version-upgrade-enforcement-policy.md). Consultez le tableau [dates de fin de prise en charge](../release/lifecycle-policy.md#end-of-support-dates) pour connaître les dates de cycle de vie complet.
 >
 >Le tableau est réduit afin de réduire la longueur de cet article. Sélectionnez l’en-tête pour le développer.
 
@@ -98,6 +104,8 @@ valider ou fournir la prise en charge des versions majeures MySQL plus récentes
 Ligne de version de Commerce.
 Tous les clients et clientes Adobe Commerce On-Premise exécutant les versions 2.4.7, 2.4.6, 2.4.5 et 2.4.4 ont un niveau de sécurité élevé
 a conseillé de migrer ses serveurs de base de données vers une version MariaDB compatible.
+
+Les clients Adobe Commerce on Cloud doivent conserver les dépendances de la plateforme sur les versions prises en charge. Voir [Dépendances de Platform](../release/lifecycle-policy.md#platform-dependencies) dans la politique de cycle de vie.
 
 **Elasticsearch 7.17 a atteint la fin de la prise en charge (EOS) le 15 janvier 2026.**
 À compter de cette date, Adobe Commerce 2.4.6, 2.4.5 et 2.4.4 ne fournira pas de compatibilité ou

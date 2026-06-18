@@ -1,7 +1,7 @@
 ---
-source-git-commit: 52c330f62d722a4cae7f7f360ca61eca0f04b961
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,7 @@ Chaque version de correctif de sécurité est basée sur la version complète an
 
 Pour obtenir des instructions sur le téléchargement et l’application de correctifs de sécurité, consultez [Comment obtenir et appliquer des correctifs de sécurité](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) dans la _base de connaissances Adobe Commerce_.
 
->[!NOTE]
->
->Les correctifs de sécurité de prise en charge étendue sont disponibles uniquement pour les clients Adobe Commerce et ne sont pas disponibles pour la base de code Magento Open Source. Voir [&#x200B; Prise en charge étendue &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 
 ## Fichier de correctif de sécurité isolé
 

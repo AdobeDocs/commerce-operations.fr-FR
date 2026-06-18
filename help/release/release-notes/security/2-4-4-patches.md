@@ -2,9 +2,9 @@
 title: Notes De Mise À Jour Du Correctif De Sécurité D’Adobe Commerce 2.4.4
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: 16f70659db62f72df534561c174fde523ed5a434
+source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2182'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
-## 2.4.4-p18
-
 {{extended-support}}
 
-Adobe Commerce 2.4.4-p18 est une version de sécurité de prise en charge étendue qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.4. Il est disponible uniquement pour les clients Adobe Commerce.
+## 2.4.4-p18
+
+Adobe Commerce 2.4.4-p18 est une version de sécurité [prise en charge étendue](../../lifecycle-policy.md#security-only-transitional-period) qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.4. Il est disponible uniquement pour les clients Adobe Commerce.
 
 Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB26-49](https://helpx.adobe.com/fr/security/products/magento/apsb26-49.html).
 
@@ -26,9 +26,7 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 ## 2.4.4-p17
 
-{{extended-support}}
-
-Adobe Commerce 2.4.4-p17 est une version de sécurité de prise en charge étendue qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.4. Il est disponible uniquement pour les clients Adobe Commerce.
+Adobe Commerce 2.4.4-p17 est une version de sécurité [prise en charge étendue](../../lifecycle-policy.md#security-only-transitional-period) qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.4. Il est disponible uniquement pour les clients Adobe Commerce.
 
 Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB26-05](https://helpx.adobe.com/fr/security/products/magento/apsb26-05.html).
 
@@ -36,9 +34,7 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 ## 2.4.4-p16
 
-{{extended-support}}
-
-Adobe Commerce 2.4.4-p16 est une version de sécurité de prise en charge étendue qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.4. Il est disponible uniquement pour les clients Adobe Commerce.
+Adobe Commerce 2.4.4-p16 est une version de sécurité [prise en charge étendue](../../lifecycle-policy.md#security-only-transitional-period) qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.4. Il est disponible uniquement pour les clients Adobe Commerce.
 
 Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB25-94](https://helpx.adobe.com/fr/security/products/magento/apsb25-94.html).
 
@@ -48,10 +44,6 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 {{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
 
->[!NOTE]
->
->Les correctifs de sécurité de prise en charge étendue pour la version 2.4.4 sont disponibles uniquement pour les clients Adobe Commerce. Ces correctifs ne sont pas disponibles pour la base de code Magento Open Source. Voir [&#x200B; Prise en charge étendue &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
-
 ### Problèmes connus
 
 #### La page d’extraction ne parvient pas à charger static.min.js et mixins.min.js.
@@ -60,9 +52,7 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 ## 2.4.4-p15
 
-{{extended-support}}
-
-Adobe Commerce 2.4.4-p15 est une version de sécurité de prise en charge étendue qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.4. Il est disponible uniquement pour les clients Adobe Commerce.
+Adobe Commerce 2.4.4-p15 est une version de sécurité [prise en charge étendue](../../lifecycle-policy.md#security-only-transitional-period) qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.4. Il est disponible uniquement pour les clients Adobe Commerce.
 
 Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB25-71](https://helpx.adobe.com/fr/security/products/magento/apsb25-71.html).
 
@@ -70,9 +60,7 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 ## 2.4.4-p14
 
-{{extended-support}}
-
-Adobe Commerce 2.4.4-p14 est une version de sécurité de prise en charge étendue qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.4. Il est disponible uniquement pour les clients Adobe Commerce.
+Adobe Commerce 2.4.4-p14 est une version de sécurité [prise en charge étendue](../../lifecycle-policy.md#security-only-transitional-period) qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.4. Il est disponible uniquement pour les clients Adobe Commerce.
 
 Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB25-50](https://helpx.adobe.com/fr/security/products/magento/apsb25-50.html).
 
@@ -93,8 +81,6 @@ Les points forts de cette version sont les suivants :
 * **Opérations asynchrones** : opérations asynchrones restreintes pour remplacer les commandes précédentes de clients.<!-- AC-13917 -->
 
 ## 2.4.4-p13
-
-{{extended-support}}
 
 La version de sécurité 2.4.4-p13 d’Adobe Commerce fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.4.
 

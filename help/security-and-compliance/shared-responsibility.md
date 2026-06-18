@@ -2,9 +2,9 @@
 title: Responsabilité partagée Sécurité et modèle opérationnel
 description: Découvrez les responsabilités de sécurité de chaque partie impliquée dans votre projet d’infrastructure cloud Adobe Commerce.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 4e5477a247b272dc17863a84bd3b9a55bf36d688
+source-git-commit: 7dcd7f79417df28402a29e1e52d99eb288e8c6b9
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3253'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,13 @@ Les commerçants sont responsables des éléments suivants :
 * Obtention de la certification PCI si demandé par le responsable du traitement des paiements du commerçant
 * Réagir et répondre aux incidents de sécurité
 * En conservant toutes les dépendances tierces, les services de plateforme et les extensions des services Adobe Commerce sur les versions activement prises en charge. Adobe ne fournit pas de prise en charge ni d’assistance en matière de sécurité pour les déploiements exécutant des versions dépendantes non prises en charge. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) et la [Matrice de disponibilité du produit](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability) pour connaître les versions prises en charge.
+
+>[!NOTE]
+>
+>Voir également :
+>
+>* [Politique relative au cycle de vie des logiciels](../release/lifecycle-policy.md) — dates de fin de prise en charge, prise en charge étendue et dispositions transitoires concernant uniquement la sécurité
+>* [Politique d’application de la mise à niveau de la version cloud](../release/version-upgrade-enforcement-policy.md) — dates d’application et actions requises
 
 {{supported-versions-only}}
 
@@ -813,8 +820,6 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 | Configuration de la synchronisation des données MBI vers Adobe Commerce Cloud Pro<br> (configuration de la base de données Adobe Commerce Cloud) | R |   |
 
 {style="table-layout:auto"}
-
-{{supported-versions-only}}
 
 #### Recommandations de produit
 

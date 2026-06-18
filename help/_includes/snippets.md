@@ -1,7 +1,7 @@
 ---
-source-git-commit: d22f1c660ba2b6bdc507fa8ba728e0a4269bef8d
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,7 @@ ht-degree: 0%
 
 ## Correctifs de sécurité pour une prise en charge étendue {#extended-support}
 
->[!NOTE]
->
->Les correctifs de sécurité de prise en charge étendue pour la version 2.4.5 sont disponibles uniquement pour les clients Adobe Commerce. Ces correctifs ne sont pas disponibles pour la base de code Magento Open Source. Voir [&#x200B; Prise en charge étendue &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 
 ## Commerce uniquement {#commerce-only}
 

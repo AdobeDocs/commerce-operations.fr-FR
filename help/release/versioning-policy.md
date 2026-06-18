@@ -2,9 +2,9 @@
 title: Politique de version
 description: Découvrez les types de versions d’Adobe Commerce, le marketing par rapport au contrôle de version des modules, les versions de correctif et de sécurité, les versions bêta, les correctifs et la politique de version globale.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Les correctifs sont des correctifs de sécurité ou de qualité à fort impact, 
 
 ## Patch individuel
 
-Les correctifs individuels contiennent des correctifs de qualité à faible impact pour un problème spécifique. Ces correctifs sont appliqués aux versions mineures prises en charge d’Adobe Commerce. Adobe publie les correctifs individuels selon les besoins pour Adobe Commerce conformément à la [politique de cycle de vie des logiciels](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Elles sont fournies par le biais de l’outil [Correctifs de qualité](../tools/quality-patches-tool/usage.md).
+Les correctifs individuels contiennent des correctifs de qualité à faible impact pour un problème spécifique. Ces correctifs sont appliqués aux versions mineures prises en charge d’Adobe Commerce. Adobe publie les correctifs individuels selon les besoins pour Adobe Commerce conformément à la [politique de cycle de vie des logiciels](lifecycle-policy.md). Pour les termes juridiques, consultez la [Politique relative au cycle de vie du logiciel Adobe Commerce (PDF)](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Elles sont fournies par le biais de l’outil [Correctifs de qualité](../tools/quality-patches-tool/usage.md).
 
 >[!NOTE]
 >

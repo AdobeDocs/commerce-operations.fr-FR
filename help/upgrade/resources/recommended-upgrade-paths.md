@@ -2,9 +2,9 @@
 title: Moderniser votre plateforme avec Adobe Commerce
 description: Consultez les recommandations relatives à la planification de la mise à niveau d’Adobe Commerce.
 exl-id: f776b000-0085-4b77-860f-623837c3c902
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,6 @@ Une implémentation eCommerce est une évolution, elle n&#39;est jamais vraiment
 - Amélioration significative des performances et de l’évolutivité
 - Meilleure expérience et meilleurs outils pour les développeurs
 - Possibilité d’intégrer plus profondément à d’autres applications Adobe Experience Cloud
-
-Pour offrir à nos commerçants plus de flexibilité lors de la planification des mises à niveau, nous avons récemment mis à jour le calendrier de publication d’Adobe Commerce [release schedule](../../release/schedule.md), étendu la date de fin de prise en charge (EOS) 2.3 et annoncé de nouvelles options de prise en charge étendue pour certaines versions de notre logiciel. Pour plus d’informations sur ces mises à jour, voir [Prise en charge étendue d’Adobe Commerce](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support).
 
 Vous trouverez ci-dessous les chemins de mise à niveau recommandés par Adobe Commerce pour garantir la sécurité et les performances de votre site lors de la mise à niveau vers l’une des dernières versions.
 

@@ -2,9 +2,9 @@
 title: Notes De Mise À Jour Du Correctif De Sécurité D’Adobe Commerce 2.4.6
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.6.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: 95333e271e6f7a8e782d6a40b754fe29ac280414
+source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2398'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,15 @@ ht-degree: 0%
 >
 >MySQL 8.0 atteindra la fin de la prise en charge (EOS) à partir du 30 avril 2026.
 >
->À compter de cette date, Adobe Commerce version 2.4.6 ne fournira plus de compatibilité ou>Prise en charge de toutes les versions de MySQL publiées après MySQL 8.0. Adobe ne le fera pas>valider ou fournir la prise en charge des versions majeures MySQL plus récentes sur cette Adobe>Ligne de version de Commerce.
+>À compter de cette date, Adobe Commerce 2.4.6 ne fournira ni compatibilité ni prise > charge des versions de MySQL publiées après MySQL 8.0. Adobe ne > pas valider ni fournir de prise en charge des versions majeures MySQL plus récentes sur cette ligne de version d’Adobe>Commerce.
 >
->Tous les clients et clientes Adobe Commerce On-Premise exécutant la version 2.4.6 ont un niveau de sécurité élevé>a conseillé de migrer ses serveurs de base de données vers une version MariaDB compatible.
+>Il est vivement conseillé à tous les clients sur site Adobe Commerce exécutant la version 2.4>6 de migrer leurs serveurs de base de données vers une version MariaDB compatible.
+>
+>Les clients Adobe Commerce on Cloud doivent conserver les dépendances de la plateforme sur les versions prises en charge. Voir [Dépendances de Platform](../../lifecycle-policy.md#platform-dependencies) dans la politique de cycle de vie.
+>
+>Adobe Commerce 2.4.6 bénéficie d’une [prise en charge étendue](../../lifecycle-policy.md#extended-support) jusqu’au **30 août 2027**, suivie d’une [période de transition axée uniquement sur la sécurité](../../lifecycle-policy.md#security-only-transitional-period) jusqu’au **31 mai 2028**. Ces fonctions ne sont disponibles que pour les clients Adobe Commerce. Ils n’étendent pas la prise en charge des dépendances tierces telles que MySQL.
+>
+>Si vous exécutez Adobe Commerce sur le cloud, vous devez effectuer une mise à niveau vers une version prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant la **date d’application de la mise à niveau du 1er juin 2028** [version](../../version-upgrade-enforcement-policy.md). Consultez le tableau [dates de fin de prise en charge](../../lifecycle-policy.md#end-of-support-dates) pour connaître les dates de cycle de vie complet.
 
 ## 2.4.6-p15
 
