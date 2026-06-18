@@ -4,10 +4,10 @@ user-guide-description: Accédez à toutes les informations de mise à jour rela
 feature: Release Notes
 recommendations: noDisplay, noCatalog
 nudge: true
-source-git-commit: c8fa72ef4b5bb6f9a2d82e4e9840f683afb8ca54
+source-git-commit: 34c15beb4ddf0f6624295b0ec835de013dd36315
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 36%
+source-wordcount: '101'
+ht-degree: 34%
 
 ---
 
@@ -54,6 +54,7 @@ ht-degree: 36%
 - [Versions de Beta](beta.md)
 - Planification et politiques {#planning}
    - [Politique relative au cycle de vie](lifecycle-policy.md)
+   - [Politique d’application de la mise à niveau de version](version-upgrade-enforcement-policy.md)
    - [Politique de version](versioning-policy.md)
    - [Calendrier des versions](schedule.md)
 - [Fonctionnalités par version](features.md)
@@ -61,4 +62,4 @@ ht-degree: 36%
 - Packages {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Magento Open Source](packages/magento-open-source.md)
-- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=fr)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
