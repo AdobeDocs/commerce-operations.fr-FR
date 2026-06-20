@@ -53,7 +53,7 @@ Utilisez le tableau suivant pour trouver des notes de mise à jour et des inform
             <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html?lang=fr">Service de catalogue</a></li>
             <li><a href="https://experienceleague.adobe.com/fr/docs/commerce/data-connection/release-notes">Connecteur Experience Platform</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=fr">Recherche en direct</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html">Services de paiement</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html?lang=fr">Services de paiement</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html?lang=fr">Recommandations de produit</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=fr">Connecteur de services</a></li>
           </ul>
