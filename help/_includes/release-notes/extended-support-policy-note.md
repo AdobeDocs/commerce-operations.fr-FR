@@ -16,4 +16,4 @@ ht-degree: 0%
 >Voir également :
 >
 >- [Politique relative au cycle de vie des logiciels](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/lifecycle-policy) — dates de fin de prise en charge, prise en charge étendue et dispositions transitoires concernant uniquement la sécurité
->- [Politique d’application de la mise à niveau de la version cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/version-upgrade-enforcement-policy) — dates d’application et actions requises
+>- [Politique d’application de la mise à niveau de la version cloud](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/version-upgrade-enforcement-policy) — dates d’application et actions requises
