@@ -2,9 +2,9 @@
 title: Notes de mise à jour d’Adobe Commerce
 description: Découvrez où trouver des informations pour des versions spécifiques d’Adobe Commerce.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: 3373f83b5c03e9e81c26376f299014e8bf63a6e9
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '493'
 ht-degree: 2%
 
 ---
@@ -12,7 +12,16 @@ ht-degree: 2%
 
 # Notes de mise à jour d’Adobe Commerce
 
-Utilisez le tableau suivant pour trouver des notes de mise à jour et des informations importantes relatives à des versions spécifiques de tous les produits, services et outils Adobe Commerce.
+Le tableau ci-dessous contient des notes de mise à jour et des informations importantes pour Adobe Commerce On-Premises et Adobe Commerce sur les produits, services et outils Cloud.
+
+>[!BEGINSHADEBOX]
+
+**Notes de mise à jour pour d’autres produits :**
+
+- [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes)
+- [Adobe Commerce Optimizer](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/release-notes)
+
+>[!ENDSHADEBOX]
 
 >[!TIP]
 >
