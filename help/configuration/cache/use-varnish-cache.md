@@ -3,7 +3,7 @@ title: Effacement du cache avec vernis
 description: Découvrez comment l’effacement du cache fonctionne avec l’accélérateur de mise en cache web Varnish pour Adobe Commerce. Découvrez les techniques de gestion et d’optimisation du cache.
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
+badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
 autotag-review: '2026-06-22T22:18:33.462Z'
 TQID: 'https://experienceleague.adobe.com/ePhbVWjx-hX99p8OKiKqzT-w2KZu-XjS1XieuStKqc4'
 product_v2:
@@ -61,7 +61,7 @@ Après avoir installé et configuré le vernis pour qu’il fonctionne avec Comm
 
 ## Configuration de Commerce pour purger le vernis
 
-Commerce purge les hôtes Varnish après avoir configuré les hôtes Varnish à l’aide de la commande [`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset).
+Commerce purge les hôtes Varnish après avoir configuré les hôtes Varnish à l’aide de la commande [`magento setup:config:set`](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset).
 
 Vous pouvez utiliser le paramètre facultatif `--http-cache-hosts` pour spécifier une liste séparée par des virgules d&#39;hôtes et de ports d&#39;écoute de vernis. Configurez tous les hôtes Varnish, que vous en ayez un ou plusieurs. (Ne séparez pas les hôtes avec un espace.)
 

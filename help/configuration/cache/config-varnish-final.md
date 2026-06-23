@@ -3,7 +3,7 @@ title: Vérifier la configuration du vernis
 description: Découvrez comment effectuer la vérification finale de la configuration de votre vernis avec Adobe Commerce. Découvrez les étapes de test et les techniques de dépannage.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
+badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -98,4 +98,4 @@ Vérifiez que le répertoire `<magento_root>/var/page_cache` est vide :
 
 >[!TIP]
 >
->Si vous rencontrez des erreurs 503 (échec de la récupération du serveur principal), consultez [Dépannage des erreurs 503 (service indisponible)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) dans le Centre d’aide d’_Adobe Commerce_.
+>Si vous rencontrez des erreurs 503 (échec de la récupération du serveur principal), consultez [Dépannage des erreurs 503 (service indisponible)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=fr) dans le Centre d’aide d’_Adobe Commerce_.

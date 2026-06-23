@@ -3,7 +3,7 @@ title: Configuration de Valkey pour le stockage de session
 description: Découvrez comment configurer Valkey pour le stockage de session dans Adobe Commerce. Découvrez la configuration de l’interface en ligne de commande, les paramètres de session et les techniques de vérification de connexion.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
+badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
 autotag-review: '2026-06-22T21:59:49.664Z'
 TQID: 'https://experienceleague.adobe.com/Cc9-5afIU1qJ0-4gxtUWo4tRFPtTMD3l1uzpyNBX7p0'
 product_v2:

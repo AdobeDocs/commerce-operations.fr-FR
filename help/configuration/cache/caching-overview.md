@@ -40,7 +40,7 @@ Un serveur principal de cache est le mécanisme de stockage sous-jacent pour les
 
 ## Mise en cache de toutes les pages avec vernis
 
-[Varnish Cache](config-varnish.md) est un accélérateur HTTP qui met en cache des pages complètes en mémoire. Pour les environnements de production sur site, Adobe recommande vivement Varnish, car il est beaucoup plus rapide que le cache de pleine page intégré. Commerce dans les environnements cloud utilise [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) pour la mise en cache de toutes les pages au lieu de Varnish.
+[Varnish Cache](config-varnish.md) est un accélérateur HTTP qui met en cache des pages complètes en mémoire. Pour les environnements de production sur site, Adobe recommande vivement Varnish, car il est beaucoup plus rapide que le cache de pleine page intégré. Commerce dans les environnements cloud utilise [Fastly](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/fastly) pour la mise en cache de toutes les pages au lieu de Varnish.
 
 >[!NOTE]
 >
