@@ -1,11 +1,23 @@
 ---
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: f08c48c7e39c506a71bf9e13d0adc06315013d69
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '1059'
 ht-degree: 0%
 
 ---
 # Fragments de code
+
+## Remarque sur la configuration du cache de Commerce on Cloud avec référence {#cloud-cache-config}
+
+>[!NOTE]
+>
+>Pour les projets Adobe Commerce on Cloud, consultez [Bonnes pratiques relatives à la configuration du service Redis and Valkey](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) pour obtenir des instructions sur la configuration du cache.
+
+## Note de configuration de Commerce sur le vernis cloud avec référence {#varnish-config-cloud}
+
+>[!NOTE]
+>
+>Si votre projet Commerce est déployé sur le cloud, la mise en cache complète des pages utilise [Fastly](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/fastly) au lieu de Varnish. Les rubriques de cette section s’appliquent uniquement aux installations sur site.
 
 ## Prise en charge des versions du service Adobe {#supported-versions-only}
 
@@ -13,7 +25,7 @@ ht-degree: 0%
 >
 >Adobe ne prend en charge que les déploiements exécutant des versions prises en charge de tous les services et dépendances. Cela s’applique :
 >
->* **Services Platform** (y compris, mais sans s’y limiter, PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ et Nginx) - les commerçants doivent conserver des versions compatibles avec leur version d’Adobe Commerce déployée. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr).
+>* **Services Platform** (y compris, mais sans s’y limiter, PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ et Nginx) - les commerçants doivent conserver des versions compatibles avec leur version d’Adobe Commerce déployée. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
 >* **Extensions des services** (y compris, mais sans s’y limiter, Live Search, Product Recommendations et Payment Services) — seule la dernière version publiée est prise en charge.
 >* **Extensions personnalisées et intégrations tierces** — Les commerçants sont chargés de s’assurer qu’elles restent sur les versions prises en charge par le fournisseur.
 >

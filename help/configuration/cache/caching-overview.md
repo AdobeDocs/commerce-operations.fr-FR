@@ -3,16 +3,30 @@ title: Présentation de la mise en cache et options de configuration
 description: Découvrez la mise en cache dans Adobe Commerce, notamment le stockage principal, la configuration frontale et la mise en cache de pages complètes avec les caches Varnish, Redis, Valkey et L2.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
-source-git-commit: 9cd0f2a84772e2d68fd15a00651216abfa9ec91c
+autotag-review: '2026-06-22T20:28:12.484Z'
+TQID: 'https://experienceleague.adobe.com/oDoZ1o2IWXsDTo84XQygWZYVmfVHWbk-CuqaU47laU4'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: dbc1f6d0edff87130604d4762477ee5892a7aafc
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: 589
 ht-degree: 0%
 
 ---
 
 # Présentation de la mise en cache et options de configuration
 
-Adobe Commerce repose sur une architecture de mise en cache à plusieurs couches pour réduire la charge de la base de données, minimiser le traitement redondant et accélérer la diffusion des pages. Au niveau de l’application, Commerce gère plus d’une douzaine [types de cache](../cli/manage-cache.md#clean-and-flush-cache-types) tels que la configuration, la disposition, le blocage d’HTML et les collections, que vous pouvez acheminer vers un serveur principal de stockage dédié tel que [Redis](config-redis.md) ou [Valkey](config-valkey.md). Pour la mise en cache de pages entières, Adobe recommande vivement d’utiliser [Varnish](config-varnish.md), un accélérateur HTTP qui sert les pages mises en cache directement depuis la mémoire. D’autres couches, telles que la mise en cache L2 [&#128279;](level-two-cache.md)&#x200B; et la signature de contenu statique [&#128279;](static-content-signing.md) L2 améliorent encore les performances pour les déploiements à trafic élevé et à plusieurs nœuds.
+Adobe Commerce repose sur une architecture de mise en cache à plusieurs couches pour réduire la charge de la base de données, minimiser le traitement redondant et accélérer la diffusion des pages. Au niveau de l’application, Commerce gère plus d’une douzaine [types de cache](../cli/manage-cache.md#clean-and-flush-cache-types) tels que la configuration, la disposition, le blocage d’HTML et les collections, que vous pouvez acheminer vers un serveur principal de stockage dédié tel que [Redis](config-redis.md) ou [Valkey](config-valkey.md). Pour la mise en cache de toutes les pages dans les déploiements sur site, Adobe recommande vivement d’utiliser [Varnish](config-varnish.md). Commerce sur les déploiements cloud utilisent Fastly. D’autres couches, telles que la mise en cache L2 [&#128279;](level-two-cache.md)&#x200B; et la signature de contenu statique [&#128279;](static-content-signing.md) L2 améliorent encore les performances pour les déploiements à trafic élevé et à plusieurs nœuds.
 
 Ce guide explique le fonctionnement de chaque couche de mise en cache et vous explique comment configurer les options frontales, principales et avancées en fonction de vos exigences de déploiement.
 
@@ -26,7 +40,7 @@ Un serveur principal de cache est le mécanisme de stockage sous-jacent pour les
 
 ## Mise en cache de toutes les pages avec vernis
 
-[Varnish Cache](config-varnish.md) est un accélérateur HTTP qui met en cache des pages complètes en mémoire. Adobe recommande vivement Varnish pour les environnements de production, car il est beaucoup plus rapide que le cache de pleine page intégré.
+[Varnish Cache](config-varnish.md) est un accélérateur HTTP qui met en cache des pages complètes en mémoire. Pour les environnements de production sur site, Adobe recommande vivement Varnish, car il est beaucoup plus rapide que le cache de pleine page intégré. Commerce dans les environnements cloud utilise [Fastly](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/fastly) pour la mise en cache de toutes les pages au lieu de Varnish.
 
 >[!NOTE]
 >
@@ -51,12 +65,16 @@ La [signature de contenu statique](static-content-signing.md) invalide le cache 
 
 ## Options de configuration
 
-La configuration du cache est stockée dans deux fichiers :
+Pour le mappage front-end-à-type et la syntaxe de configuration du cache :
+
+**On-premise** : la configuration du cache est stockée dans deux fichiers :
 
 - `<magento_root>/app/etc/di.xml` — Configuration de l&#39;injection de dépendance globale. Modifiez ce fichier pour modifier le paramètre frontal de cache `default` fourni.
 - `<magento_root>/app/etc/env.php` : configuration spécifique à un environnement. Modifiez ce fichier pour configurer les fronts de cache personnalisés. Ce fichier remplace la configuration équivalente dans `di.xml`.
 
-Pour plus d’informations sur le mappage frontal à type et la syntaxe de configuration du cache, voir :
+Pour plus d’informations, voir :
 
-- [Configurer les interfaces frontales du cache](cache-types.md) — Associer une interface frontale du cache à des types de cache spécifiques
-- [Options du serveur principal de mise en cache](cache-options.md) — Référence des options du serveur principal
+- [Configurer les fronts du cache](cache-types.md) : associez un front-end du cache à des types de cache spécifiques.
+- [Options du serveur principal de mise en cache](cache-options.md)—Référence des options du serveur principal
+
+**Adobe Commerce sur le cloud** : configurez la mise en cache avec les `CACHE_CONFIGURATION` dans le `.magento.env.yaml`. Voir [Bonnes pratiques pour la configuration du service Redis et Valkey](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md).

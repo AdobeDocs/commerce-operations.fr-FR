@@ -3,14 +3,29 @@ title: Configuration avancée du vernis
 description: Découvrez comment configurer des fonctionnalités de vernis avancées pour Adobe Commerce, notamment les contrôles d’intégrité, la grâce et les modes saint. Découvrez les techniques d’optimisation VCL.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: 927
 ht-degree: 0%
 
 ---
 
 # Configuration avancée du vernis
+
+{{varnish-config-cloud}}
 
 Le vernis offre plusieurs fonctionnalités qui empêchent les clients de subir de longs retards et des délais d’expiration lorsque le serveur Commerce ne fonctionne pas correctement. Ces fonctionnalités peuvent être configurées dans le fichier `default.vcl`. Cette rubrique décrit les ajouts que Commerce fournit dans le fichier VCL (Varnish Configuration Language) que vous téléchargez à partir de l’interface d’administration.
 

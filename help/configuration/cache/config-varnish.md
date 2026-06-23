@@ -3,16 +3,31 @@ title: Configurer et utiliser le vernis
 description: Découvrez comment configurer et utiliser la mise en cache de vernis pour Adobe Commerce. Découvrez les techniques d’accélération HTTP, de stockage de fichiers et d’optimisation des performances.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+autotag-review: '2026-06-22T21:50:49.341Z'
+TQID: 'https://experienceleague.adobe.com/BsUTkhb2QhntUOT3EC181zdsQjqk8Dw0T5Iac0LS318'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 8cbff72c3b765c6ff85a34a3ec3d2f58b52bb9c3
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: 1077
 ht-degree: 0%
 
 ---
 
 # Configurer et utiliser le vernis
 
-[Varnish Cache](https://www.varnish.org/) est un accélérateur d’applications web open source (également appelé _accélérateur HTTP_ ou _proxy inverse HTTP de mise en cache_). Varnish stocke (ou met en cache) des fichiers ou des fragments de fichiers en mémoire, ce qui permet à Varnish de réduire le temps de réponse et la consommation de bande passante du réseau pour les futures demandes équivalentes. Contrairement aux serveurs web Apache et Nginx, Varnish a été conçu pour être utilisé exclusivement avec le protocole HTTP.
+[Varnish Cache](https://www.varnish.org/) est un accélérateur d’applications web open source (également appelé _accélérateur HTTP_ ou _proxy inverse HTTP de mise en cache_). Varnish stocke (ou met en cache) des fichiers ou des fragments de fichiers en mémoire, ce qui permet à Varnish de réduire le temps de réponse et la consommation de bande passante du réseau pour les futures demandes équivalentes. Contrairement aux serveurs web tels que nginx, Varnish a été conçu pour être utilisé exclusivement avec le protocole HTTP.
 
 [Configuration requise](../../installation/system-requirements.md) répertorie les versions prises en charge de Vernis.
 
@@ -53,9 +68,7 @@ Le processus peut être résumé comme suit :
 
 >[!NOTE]
 >
->- Sauf indication contraire, vous devez saisir toutes les commandes décrites dans cette rubrique en tant qu’utilisateur disposant de droits d’`root`.
->
->- Cette rubrique a été écrite pour Varnish sur CentOS et Apache 2.4. Si vous configurez le vernis dans un environnement différent, certaines commandes peuvent être différentes. Consultez la documentation de Varnish pour plus d’informations.
+>Sauf indication contraire, vous devez saisir toutes les commandes décrites dans cette rubrique en tant qu’utilisateur disposant de droits d’`root`.
 
 ## Problèmes connus
 
@@ -88,11 +101,10 @@ Nous connaissons les problèmes suivants avec le vernis :
 
 ## Présentation de la mise en cache du vernis
 
-La mise en cache des vernis fonctionne avec Commerce à l’aide des éléments suivants :
+Dans un déploiement type basé sur nginx, Varnish accepte le trafic HTTP entrant sur le port 80 et transfère les requêtes à nginx sur un port principal tel que 8080. Adobe Commerce fournit des `nginx.conf.sample` pour le serveur web d’origine et génère le `default.vcl` de vernis à partir de l’administrateur.
 
-- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) du référentiel GitHub de Magento 2
-- `.htaccess` fichier de configuration distribué pour Apache fourni avec Commerce
-- Configuration `default.vcl` pour le vernis générée à l’aide de l’[Admin](../cache/configure-varnish-commerce.md)
+- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) fournis avec Adobe Commerce
+- `default.vcl` générée à partir du [Admin](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
 >
@@ -114,7 +126,7 @@ Cette section utilise un inspecteur de navigateur pour afficher la manière dont
 
 La figure suivante illustre un exemple d’utilisation d’un inspecteur de navigateur :
 
-![La première fois qu’une demande est envoyée pour un objet pouvant être mis en cache, Varnish la transmet au navigateur](../../assets/configuration/varnish-apache-first-visit.png)
+![La première fois qu’une demande est envoyée pour un objet pouvant être mis en cache, Varnish la transmet au navigateur](../../assets/configuration/varnish-webserver-first-visit.png)
 
 L’exemple précédent illustre une requête pour la page principale de storefront (`m2_ce_my`). Les ressources CSS et JavaScript sont mises en cache dans le navigateur client.
 
@@ -126,7 +138,7 @@ L’exemple précédent illustre une requête pour la page principale de storefr
 
 Si le même navigateur demande à nouveau la même page, ces ressources sont diffusées à partir du cache du navigateur local, comme le montre la figure suivante.
 
-![La prochaine fois que le même objet est demandé, les ressources se chargent à partir du cache du navigateur local](../../assets/configuration/varnish-apache-second-visit.png)
+![La prochaine fois que le même objet est demandé, les ressources se chargent à partir du cache du navigateur local](../../assets/configuration/varnish-webserver-second-visit.png)
 
 Notez la différence de temps de réponse entre la première et la seconde requête. Là encore, les ressources statiques ont un code de réponse 200 (OK), car elles sont diffusées à partir du cache local pour la première fois.
 
