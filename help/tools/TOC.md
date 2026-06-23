@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 7e0a7479cd988b678c95b0ee9ec4c5371d0a62d9
+source-git-commit: bcdc7ec2789358b58f137d622ddbf250acf28c2c
 workflow-type: tm+mt
-source-wordcount: '10150'
+source-wordcount: '10160'
 ht-degree: 0%
 
 ---
@@ -423,7 +423,7 @@ ht-degree: 0%
          - [ACSD-50512 : erreur lors de la mise à jour de la date de début d’une mise à jour d’évaluation de produit téléchargeable](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50512-error-when-updating-the-start-date-for-a-downloadable-product-staging-update.md)
          - [ACSD-50895 : les balises Google Analytics 3 GTM ne sont pas déclenchées si Google Analytics 4 GTM n’est pas configuré](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50895-google-analytics-3-gtm-tags-are-not-fired-if-google-analytics-4-gtm-is-not-configured.md)
          - [ACSD-51471 : l’utilisateur administrateur ne peut pas enregistrer la mise à jour planifiée pour le produit groupé](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51471-admin-user-cannot-save-scheduled-update-for-bundled-product.md)
-         - [ACSD-51120 : le cache des demandes GET de GraphQL n’est pas effacé pour les pages CMS qui contiennent des blocs CMS](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
+         - [ACSD-51120 : le cache des demandes GraphQL GET n’est pas effacé pour les pages CMS qui contiennent des blocs CMS](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
          - [ACSD-51700 : erreur lors du changement d’affichage de la boutique sur la page d’édition de produit téléchargeable](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51700-downloadable-product-error-when-switching-storeviews.md)
          - [ACSD-51735 : le statut de l&#39;article de commande est incorrectement défini sur [!UICONTROL Ordered] lorsque le stock de produits est de 0](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
          - [ACSD-51497 : impossible de trier la page du catalogue par attribut personnalisé de type Liste déroulante](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51497-cannot-sort-catalog-page-by-custom-attribute-of-dropdown-type.md)
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601 : la réenregistrement d&#39;une transaction d&#39;autorisation de paiement utilise l&#39;auto-référence parent_id et déclenche une boucle infinie/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4156: [!DNL REST] La validation de l’adresse d’expédition de l’API ignore la configuration des attributs d’administration](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
    - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Référence des outils de ligne de commande {#cli-reference}
    - [Adobe Commerce (sur site)](reference/commerce-on-premises.md)
