@@ -3,9 +3,17 @@ title: Configurer la clé de valeur pour le cache de page et par défaut
 description: Découvrez comment configurer Valkey comme serveur principal par défaut et du cache de page pour Adobe Commerce. Découvrez les commandes de l’interface de ligne de commande, les paramètres env.php et la vérification de la connexion.
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
+autotag-review: '2026-06-22T22:00:55.389Z'
+TQID: 'https://experienceleague.adobe.com/AjJ86dYGRVFuY1T73ct1Gpcf6iDbb4ewP8OiGX8otQs'
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: 1281
 ht-degree: 0%
 
 ---
@@ -15,12 +23,13 @@ ht-degree: 0%
 
 Commerce fournit des options de ligne de commande pour configurer la valeur par défaut de Valkey et la mise en cache des pages. Bien que vous puissiez configurer la mise en cache en modifiant le fichier `<Commerce-install-dir>app/etc/env.php`, il est recommandé d’utiliser la ligne de commande, en particulier pour les configurations initiales. La ligne de commande permet de valider en s’assurant que la configuration est correcte sur le plan syntaxique.
 
+{{cloud-cache-config}}
+
 **Prérequis :**
 
 [Installez Valkey](config-valkey.md#install-valkey) avant de continuer.
 
 ## Structures prises en charge
-
 
 >[!BEGINTABS]
 
@@ -399,7 +408,7 @@ php -m | grep redis
 
 | Fonctionnement | Predis | phpredis | Amélioration |
 |-----------|--------|----------|-------------|
-| GET du cache | 1-5ms | 0,5 à 2 ms | 2 à 3 fois plus rapide |
+| Cache GET | 1-5ms | 0,5 à 2 ms | 2 à 3 fois plus rapide |
 | Cache SET | 2-6 ms | 0,8 à 2,5 ms | 2 à 3 fois plus rapide |
 | Opérations de balisage | 10-30ms | 3 à 10 ms | 3 à 4 fois plus rapide |
 

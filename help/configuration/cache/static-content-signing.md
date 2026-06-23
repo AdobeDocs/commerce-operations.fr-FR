@@ -3,9 +3,17 @@ title: Signature de contenu statique et invalidation du cache du navigateur
 description: Découvrez comment fonctionne la signature de contenu statique dans Adobe Commerce pour invalider le cache du navigateur pour les ressources statiques. Découvrez comment activer et configurer cette fonctionnalité.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud et On-premise."
+autotag-review: '2026-06-22T21:48:08.334Z'
+TQID: 'https://experienceleague.adobe.com/vagWBVnjIS7tjnwVE5Dk56VDmPtbPgjsNVLBHSlOc-s'
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: 372
 ht-degree: 0%
 
 ---
@@ -35,7 +43,7 @@ Cela modifie l’URL des fichiers statiques et force le navigateur à charger la
 
 Commerce active cette fonctionnalité par défaut et Adobe recommande de la conserver pour éviter les problèmes liés aux navigateurs qui diffusent d’anciennes ressources statiques.
 
-La configuration de la signature de contenu statique se trouve dans [**[!UICONTROL Stores]**> Paramètres > Configuration >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
+La configuration de la signature de contenu statique se trouve dans [**[!UICONTROL Stores]**> Paramètres > Configuration >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
 
 - **On-Premise uniquement** : cette configuration est disponible si votre site n’est **pas** en [mode de production](../bootstrap/application-modes.md#production-mode).
 - **Cloud** : cette configuration est masquée, car le mode de production est strictement appliqué. Vous devez donc utiliser la ligne de commande, comme illustré ci-dessous.

@@ -3,14 +3,24 @@ title: Configurer le vernis pour Commerce
 description: Découvrez comment configurer le vernis spécifiquement pour les applications Adobe Commerce. Découvrez les mises à jour des fichiers de configuration et les techniques de gestion.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
+autotag-review: '2026-06-22T21:51:51.247Z'
+TQID: 'https://experienceleague.adobe.com/6j-emNa41YXE1LLlpRypywTo8J95gI5aB4smuGnUj04'
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: 455
 ht-degree: 0%
 
 ---
 
 # Configurer le vernis pour Commerce
+
+{{varnish-config-cloud}}
 
 Pour configurer Commerce afin d’utiliser le vernis :
 
@@ -22,7 +32,7 @@ Pour configurer Commerce afin d’utiliser le vernis :
 
    | Champ | Description |
    | ----- | ----------- |
-   | Accéder à la liste | Entrez le nom d’hôte complet, l’adresse IP ou la plage d’adresses IP de notation [CIDR (Classless Inter-domain Routing)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) pour laquelle invalider le contenu. Voir [&#x200B; Purge du cache de vernis &#x200B;](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
+   | Accéder à la liste | Entrez le nom d’hôte complet, l’adresse IP ou la plage d’adresses IP de notation [CIDR (Classless Inter-domain Routing)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) pour laquelle invalider le contenu. Voir [ Purge du cache de vernis ](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
    | Hôte principal | Saisissez le nom d’hôte complet ou l’adresse IP et le port d’écoute du Varnish _serveur principal_ ou _serveur d’origine_ ; c’est-à-dire le serveur qui fournit le contenu que Varnish accélère. En règle générale, il s’agit de votre serveur web. Voir [Serveurs principaux de cache vernis](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Port du serveur principal | Port d’écoute du serveur d’origine. |
    | Délai de grâce | Détermine la durée pendant laquelle le vernis diffuse du contenu obsolète si le serveur principal ne répond pas. La valeur par défaut est de 300 secondes. |
@@ -81,7 +91,7 @@ Pour exporter un fichier de configuration de vernis à partir de l’administrat
    ```
 
    ```shell
-   service httpd restart
+   systemctl restart nginx
    ```
 
 ## Mettre en cache les fichiers statiques
