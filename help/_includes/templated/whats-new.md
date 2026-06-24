@@ -97,7 +97,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview">Présentation : Outil de correctifs de qualité (QPT) version 1.1.80</a>.</p>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview">Présentation : Outil de correctifs de qualité (QPT) version 1.1.80</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
