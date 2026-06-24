@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 08101f36665d77f807386f261d39dee1e379a8b1
+source-git-commit: 016a56af24e8e4ff127c54713e5fa45ab9fca826
 workflow-type: tm+mt
-source-wordcount: 465
+source-wordcount: 470
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 QPT v1.1.80 comprend les correctifs suivants :
 
 1. **ACP2E-4239** : correction d’un problème en raison duquel les filtres de grille d’administration utilisant des attributs de date renvoyaient des résultats incorrects en raison de différences de fuseau horaire entre la date sélectionnée, les valeurs UTC stockées et le fuseau horaire du magasin configuré.
-1. **ACP2E-4472** : corrige le problème de création d’un guillemet nul pendant le flux de **[!UICONTROL Login as Customer]**.
+1. **[ACP2E-4472](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)** : corrige le problème où un enregistrement de guillemet nul est créé dans la table de base de données `quote` pendant le flux de **[!UICONTROL Login as Customer]**.
 1. **ACP2E-4481** : correction d’un problème en raison duquel la vendabilité du bundle du produit n’est pas recalculée correctement après l’annulation d’une commande.
 1. **ACP2E-4488** : corrige le problème en raison duquel l’enregistrement ou la modification des produits dans [!UICONTROL Admin] est lent pour les produits dotés de jeux d’attributs volumineux.
 1. **ACP2E-4493** : correction du problème en raison duquel la grille d&#39;archivage des commandes client affiche un statut de commande incorrect lorsque l&#39;indexation asynchrone est activée.
