@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 >Adobe ne prend en charge que les déploiements exécutant des versions prises en charge de tous les services et dépendances. Cela s’applique :
 >
->* **Services Platform** (y compris, mais sans s’y limiter, PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ et Nginx) - les commerçants doivent conserver des versions compatibles avec leur version d’Adobe Commerce déployée. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
+>* **Services Platform** (y compris, mais sans s’y limiter, PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ et Nginx) - les commerçants doivent conserver des versions compatibles avec leur version d’Adobe Commerce déployée. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr).
 >* **Extensions des services** (y compris, mais sans s’y limiter, Live Search, Product Recommendations et Payment Services) — seule la dernière version publiée est prise en charge.
 >* **Extensions personnalisées et intégrations tierces** — Les commerçants sont chargés de s’assurer qu’elles restent sur les versions prises en charge par le fournisseur.
 >
