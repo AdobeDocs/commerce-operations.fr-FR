@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 016a56af24e8e4ff127c54713e5fa45ab9fca826
+source-git-commit: f1c04fe69abdcdbb425d4488e3095baa2debc274
 workflow-type: tm+mt
-source-wordcount: '10196'
+source-wordcount: '10206'
 ht-degree: 0%
 
 ---
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601 : la réenregistrement d&#39;une transaction d&#39;autorisation de paiement utilise l&#39;auto-référence parent_id et déclenche une boucle infinie/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4653 : conditions de portée de catégorie de règle de prix de panier manquantes dans l’API  [!DNL REST] &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)
          - [ACP2E-4472 : devis nul créé à l’aide du flux Se connecter en tant que client](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)
          - [ACP2E-4808 : Affichage du poids du produit sans unité de mesure sur le storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
          - [ACP2E-4533 : le chargement des images d’espace réservé échoue sur le storefront lorsque l’URL inclut le code du magasin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
