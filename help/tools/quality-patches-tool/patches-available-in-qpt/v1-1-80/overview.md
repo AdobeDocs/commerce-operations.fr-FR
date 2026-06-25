@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-06-11T01:10:37.916Z'
 TQID: 'https://experienceleague.adobe.com/q2sNWUJQCm4eRUP8RusytBAqQoscU4F9qDtDIeNmm6E'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 016a56af24e8e4ff127c54713e5fa45ab9fca826
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 54099d0e9607799ea1ea17d8b5b0ea3c38c2d513
 workflow-type: tm+mt
-source-wordcount: 470
+source-wordcount: 418
 ht-degree: 0%
 
 ---
@@ -38,10 +33,8 @@ QPT v1.1.80 comprend les correctifs suivants :
 1. **ACP2E-4610** : corrige le problème en raison duquel la tâche cron `sales_clean_quotes` présente des problèmes de performances.
 1. **ACP2E-4615** : corrige le problème d&#39;échec des remboursements des commandes en ligne avec une erreur PayPal indiquant *la passerelle PayPal rejette la demande. Erreur interne.*.
 1. **ACP2E-4626** : correction d&#39;un problème en raison duquel certains fichiers de JavaScript Storefront étaient demandés et exécutés deux fois, provoquant des chargements en double intermittents et un comportement instable.
-1. **ACP2E-4653** : correction d’un problème en raison duquel la portée de l’attribut de condition **[!UICONTROL Cart Price Rule]** pour **[!UICONTROL Category (Parent Only)]** et **[!UICONTROL Category (Children Only)]** n’est pas exposée lors de la récupération ou de la mise à jour de règles via l’API REST.
+1. **[ACP2E-4653](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)** : correction d’un problème en raison duquel la portée de l’attribut de condition de règle de prix de panier pour **[!UICONTROL Category (Parent Only)]** et **[!UICONTROL Category (Children Only)]** n’est pas exposée lors de la récupération ou de la mise à jour de règles via l’API [!DNL REST].
 1. **[ACP2E-4808](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)** : correction du problème en raison duquel l’attribut Poids de la page produit du storefront n’affiche qu’une valeur numérique brute dans la section **[!UICONTROL Additional Information]** ou **[!UICONTROL More Information]** sans l’unité de mesure configurée (lb ou kg).
-1. **ACP2E-4156** : correction d’un problème en raison duquel la validation de l’adresse d’expédition dans l’API REST n’adhère pas à la configuration d’attribut définie dans le [!UICONTROL Admin].
-1. **ACP2E-4808** : correction du problème en raison duquel l’attribut Poids de la page produit du storefront n’affiche qu’une valeur numérique brute dans la section **[!UICONTROL Additional Information]** ou **[!UICONTROL More Information]** sans l’unité de mesure configurée (lb ou kg).
 1. **[ACP2E-4156](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)** : correction d’un problème en raison duquel la validation de l’adresse d’expédition dans l’API [!DNL REST] n’adhère pas à la configuration d’attribut définie dans Admin.
 1. **ACP2E-4813** : corrige le problème en raison duquel les méthodes d&#39;expédition USPS ne sont pas disponibles au moment du passage en caisse et les estimations d&#39;expédition sont incorrectes pour certains produits, y compris les commandes fractionnées en plusieurs packages.
 1. **ACSD-53502** : corrige le problème d’échec intermittent du **[!UICONTROL Add to Cart]** sur le storefront dans iOS [!DNL Safari] en raison d’appels récursifs au script de surveillance New Relic, ce qui entraîne des rechargements de page.
