@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 1816dfaa5145de416decf64482ed81ee82c7448d
+source-git-commit: 9c0c1b7124793e2f8b9b9e4296ba42315557ac61
 workflow-type: tm+mt
-source-wordcount: 463
+source-wordcount: 541
 ht-degree: 0%
 
 ---
@@ -39,6 +39,9 @@ QPT v1.1.80 comprend les correctifs suivants :
 1. **[ACP2E-4533](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)** : correction du problème en raison duquel les images d’espace réservé ne se chargent pas sur le storefront lorsqu’un code de magasin est inclus dans l’URL.
 1. **ACP2E-4610** : corrige le problème en raison duquel la tâche cron `sales_clean_quotes` présente des problèmes de performances.
 1. **ACP2E-4615** : corrige le problème d&#39;échec des remboursements des commandes en ligne avec une erreur PayPal indiquant *la passerelle PayPal rejette la demande. Erreur interne.*.
+1. **[ACP2E-4626](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)** : correction d&#39;un problème en raison duquel certains fichiers de JavaScript Storefront étaient demandés et exécutés deux fois, provoquant des chargements en double intermittents et un comportement instable.
+1. **ACP2E-4653** : correction d’un problème en raison duquel la portée de l’attribut de condition **[!UICONTROL Cart Price Rule]** pour **[!UICONTROL Category (Parent Only)]** et **[!UICONTROL Category (Children Only)]** n’est pas exposée lors de la récupération ou de la mise à jour de règles via l’API REST.
+1. **ACP2E-4808** : correction du problème en raison duquel l’attribut Poids de la page produit du storefront n’affiche qu’une valeur numérique brute dans la section **[!UICONTROL Additional Information]** ou **[!UICONTROL More Information]** sans l’unité de mesure configurée (lb ou kg).
 1. **ACP2E-4626** : correction d&#39;un problème en raison duquel certains fichiers de JavaScript Storefront étaient demandés et exécutés deux fois, provoquant des chargements en double intermittents et un comportement instable.
 1. **[ACP2E-4653](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)** : correction d’un problème en raison duquel la portée de l’attribut de condition de règle de prix de panier pour **[!UICONTROL Category (Parent Only)]** et **[!UICONTROL Category (Children Only)]** n’est pas exposée lors de la récupération ou de la mise à jour de règles via l’API [!DNL REST].
 1. **[ACP2E-4808](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)** : correction du problème en raison duquel l’attribut Poids de la page produit du storefront n’affiche qu’une valeur numérique brute dans la section **[!UICONTROL Additional Information]** ou **[!UICONTROL More Information]** sans l’unité de mesure configurée (lb ou kg).
