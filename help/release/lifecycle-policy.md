@@ -15,7 +15,7 @@ ht-degree: 3%
 
 Afin de rationaliser la politique de cycle de vie d’Adobe Commerce et de répondre aux besoins critiques des clients, Adobe propose une période de prise en charge standard de trois ans à compter de la date de disponibilité générale (DG) pour chaque version. Elle publie également les correctifs de qualité au cours de cette période. Pour connaître les dates et les détails relatifs à la fin de la prise en charge logicielle pour chaque version, reportez-vous au tableau [Fin de la prise en charge logicielle](#end-of-software-support).
 
-Adobe ne fournit pas de correctifs de sécurité et de qualité pour les services tiers et les dépendances logicielles (telles que PHP et MySQL) qui peuvent arriver en fin de vie lorsque les clients sont dans la période de prise en charge de trois ans ou prolongée d’Adobe Commerce. Pour obtenir une liste complète des technologies tierces testées et prises en charge](../installation/system-requirements.md) consultez la section [Configuration requise.
+Adobe ne fournit pas de correctifs de sécurité et de qualité pour les services tiers et les dépendances logicielles (telles que PHP et MySQL) qui peuvent arriver en fin de vie lorsque les clients sont dans la période de prise en charge de trois ans ou prolongée d’Adobe Commerce. Pour obtenir une liste complète des technologies tierces testées et prises en charge[&#128279;](../installation/system-requirements.md) consultez la section Configuration requise.
 
 ## Prise en charge standard
 
