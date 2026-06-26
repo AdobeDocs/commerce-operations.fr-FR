@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 9c0c1b7124793e2f8b9b9e4296ba42315557ac61
+source-git-commit: efdf109d1637bf48f32b7730b4f54c6f060b6e54
 workflow-type: tm+mt
-source-wordcount: '10248'
+source-wordcount: '10270'
 ht-degree: 0%
 
 ---
@@ -1009,6 +1009,8 @@ ht-degree: 0%
          - [ACP2E-4601 : la réenregistrement d&#39;une transaction d&#39;autorisation de paiement utilise l&#39;auto-référence parent_id et déclenche une boucle infinie/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4615 : Les remboursements des commandes en ligne PayPal échouent avec l&#39;erreur *La passerelle PayPal rejette la demande. Erreur interne.*](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615.md)
+         - [ACP2E-4610 : exécution lente de `/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md2` cron](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md)
          - [ACP2E-4626 : chargement double des fichiers JavaScript Storefront provoquant des chargements en double et un comportement instable](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)
          - [ACP2E-4552 : la réponse GraphQL ne renvoie pas le statut de la société](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552.md)
          - [ACP2E-4496 : le traitement cron Analytics dégrade les performances pendant l’exécution](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)
