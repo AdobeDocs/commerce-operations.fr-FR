@@ -3,9 +3,9 @@ title: Politique relative au cycle de vie des logiciels
 description: Découvrez les dates clés de fin de prise en charge logicielle des versions d’Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: 5846c83cd31e3d253a5ae0b0064b860e5c7af286
+source-git-commit: ed2757282c079ea7399d4df92000f346aecfbdd8
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1376'
 ht-degree: 3%
 
 ---
@@ -170,6 +170,10 @@ La chronologie de prise en charge mappe les périodes de prise en charge trimest
 La conservation d’une version de Commerce prise en charge nécessite également des dépendances de plateforme prises en charge. Adobe ne fournit pas de correctifs de sécurité et de qualité pour les services tiers et les dépendances logicielles, telles que MariaDB, OpenSearch, Redis, Valkey, RabbitMQ, etc., qui peuvent atteindre la fin de vie pendant que vous bénéficiez de la période de prise en charge de trois ans ou prolongée d’Adobe Commerce. Voir [Sécurité de la responsabilité partagée et modèle opérationnel](../security-and-compliance/shared-responsibility.md) pour plus de détails.
 
 Il vous incombe de gérer toutes les dépendances tierces et tous les services Platform sur les versions qui sont activement prises en charge. Consultez [Configuration requise](../installation/system-requirements.md) pour obtenir la liste complète des technologies tierces testées et prises en charge.
+
+>[!IMPORTANT]
+>
+>L’exécution de versions de dépendance non prises en charge peut entraîner une vulnérabilité de sécurité sur votre instance cloud qu’Adobe ne peut pas résoudre. Dans ce cas, Adobe se réserve le droit d’imposer une mise à niveau de la dépendance logicielle concernée ou de mettre hors service l’instance si une mise à niveau n’est pas possible, quel que soit votre statut de prise en charge de la version d’Adobe Commerce.
 
 ## Fin de vie de PHP et conformité PCI
 
