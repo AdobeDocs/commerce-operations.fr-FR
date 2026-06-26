@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-06-11T01:10:37.916Z'
 TQID: 'https://experienceleague.adobe.com/q2sNWUJQCm4eRUP8RusytBAqQoscU4F9qDtDIeNmm6E'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 9c0c1b7124793e2f8b9b9e4296ba42315557ac61
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: efdf109d1637bf48f32b7730b4f54c6f060b6e54
 workflow-type: tm+mt
-source-wordcount: 541
+source-wordcount: 568
 ht-degree: 0%
 
 ---
@@ -34,11 +29,13 @@ QPT v1.1.80 comprend les correctifs suivants :
 1. **ACP2E-4493** : correction du problème en raison duquel la grille d&#39;archivage des commandes client affiche un statut de commande incorrect lorsque l&#39;indexation asynchrone est activée.
 1. **ACP2E-4496** : corrige le problème en raison duquel la tâche Analytics cron entraîne une dégradation des performances pendant l’exécution, ce qui entraîne une amélioration des performances globales du système.
 1. **ACP2E-4533** : correction du problème en raison duquel les images d’espace réservé ne se chargent pas sur le storefront lorsqu’un code de magasin est inclus dans l’URL.
+1. **ACP2E-4552** : corrige le problème en raison duquel le statut de la société n’est pas renvoyé dans la réponse GraphQL.
+1. **[ACP2E-4610](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md)** : corrige le problème en raison duquel la tâche cron `sales_clean_quotes` présente des problèmes de performances.
 1. **[ACP2E-4552](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552.md)** : corrige le problème en raison duquel le statut de la société n’est pas renvoyé dans la réponse GraphQL.
 1. **[ACP2E-4496](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)** : corrige le problème en raison duquel la tâche Analytics cron entraîne une dégradation des performances pendant l’exécution, ce qui entraîne une amélioration des performances globales du système.
 1. **[ACP2E-4533](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)** : correction du problème en raison duquel les images d’espace réservé ne se chargent pas sur le storefront lorsqu’un code de magasin est inclus dans l’URL.
 1. **ACP2E-4610** : corrige le problème en raison duquel la tâche cron `sales_clean_quotes` présente des problèmes de performances.
-1. **ACP2E-4615** : corrige le problème d&#39;échec des remboursements des commandes en ligne avec une erreur PayPal indiquant *la passerelle PayPal rejette la demande. Erreur interne.*.
+1. **[ACP2E-4615](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615.md)** : corrige le problème d&#39;échec des remboursements de commande en ligne avec une erreur PayPal indiquant *la passerelle PayPal rejette la demande. Erreur interne.*.
 1. **[ACP2E-4626](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)** : correction d&#39;un problème en raison duquel certains fichiers de JavaScript Storefront étaient demandés et exécutés deux fois, provoquant des chargements en double intermittents et un comportement instable.
 1. **ACP2E-4653** : correction d’un problème en raison duquel la portée de l’attribut de condition **[!UICONTROL Cart Price Rule]** pour **[!UICONTROL Category (Parent Only)]** et **[!UICONTROL Category (Children Only)]** n’est pas exposée lors de la récupération ou de la mise à jour de règles via l’API REST.
 1. **ACP2E-4808** : correction du problème en raison duquel l’attribut Poids de la page produit du storefront n’affiche qu’une valeur numérique brute dans la section **[!UICONTROL Additional Information]** ou **[!UICONTROL More Information]** sans l’unité de mesure configurée (lb ou kg).
