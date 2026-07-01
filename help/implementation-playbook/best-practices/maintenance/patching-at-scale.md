@@ -7,7 +7,7 @@ badge: label="Contribution de Tony Evers, architecte technique principal, Adobe"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
 source-git-commit: 2c9f827326315bc4ef77d511dddce81e059a1092
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -365,12 +365,12 @@ Comme avec Adobe Commerce sur les infrastructures cloud, cet article suppose que
 
 Vous pouvez ainsi gérer de manière centralisée tous vos correctifs pour toutes vos installations et mieux garantir la sécurité et la stabilité de vos magasins Adobe Commerce. Utilisez les méthodes suivantes pour vérifier le statut du correctif :
 
-- [&#x200B; Projets d’infrastructure cloud &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr#view-available-patches-and-status)
+- [Projets d’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr#view-available-patches-and-status)
 - [Projets sur site](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## Exemples de code
 
 - [Correctifs centralisés dans Magento Open Source](https://github.com/AntonEvers/centralized-patches-on-magento-open-source)
 - [Correctifs centralisés dans Adobe Commerce sur les infrastructures cloud](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
-- [Module externe du compositeur de correctif centralisé](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
+- [Plug-in du compositeur de correctif centralisé](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
 - [Composant de correctif centralisé](https://github.com/AntonEvers/centralized-patcher)
