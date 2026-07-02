@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
 source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Utilisez cette liste de contrôle lors de vos conversations annuelles et trimest
 
 ▢ Activités en accès anticipé
 
-- Le partenaire participe à [Beta](../../../release/beta.md)
+- Le partenaire participe à [](../../../release/beta.md)
 - Révision des notes de mise à jour de Beta.
 
 ▢ Convenir du budget, du calendrier et de la portée.
