@@ -60,7 +60,7 @@ Utilisez cette liste de contrôle lors de vos conversations annuelles et trimest
 
 ▢ Activités en accès anticipé
 
-- Le partenaire participe à [](../../../release/beta.md)
+- Le partenaire participe à [&#128279;](../../../release/beta.md)
 - Révision des notes de mise à jour de Beta.
 
 ▢ Convenir du budget, du calendrier et de la portée.
