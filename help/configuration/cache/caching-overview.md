@@ -17,9 +17,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: dbc1f6d0edff87130604d4762477ee5892a7aafc
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: 589
+source-wordcount: 593
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Ce guide explique le fonctionnement de chaque couche de mise en cache et vous ex
 
 ## Mise en cache des fronts
 
-Un cache frontal est une interface entre Commerce et le serveur principal de stockage du cache. Vous pouvez définir plusieurs fronts, chacun avec des paramètres de serveur principal différents, puis attribuer des [types de cache](../cli/manage-cache.md#clean-and-flush-cache-types) spécifiques à chaque front-end.  Pour plus d’informations sur la configuration, voir [Configuration des fronts de cache](cache-types.md).
+Un cache frontal est une interface entre Commerce et le serveur principal de stockage du cache. Vous pouvez définir plusieurs fronts, chacun avec des paramètres de serveur principal différents, puis attribuer des [types de cache](../cli/manage-cache.md#clean-and-flush-cache-types) spécifiques à chaque front-end. Pour plus d’informations sur la configuration, voir [Configuration des types et fronts de cache](cache-types.md).
 
 ## Mise en cache des serveurs principaux
 
@@ -74,7 +74,7 @@ Pour le mappage front-end-à-type et la syntaxe de configuration du cache :
 
 Pour plus d’informations, voir :
 
-- [Configurer les fronts du cache](cache-types.md) : associez un front-end du cache à des types de cache spécifiques.
+- [Configurer les fronts et les types de cache](cache-types.md)—Associer un front-end de cache à des types de cache spécifiques
 - [Options du serveur principal de mise en cache](cache-options.md)—Référence des options du serveur principal
 
 **Adobe Commerce sur le cloud** : configurez la mise en cache avec les `CACHE_CONFIGURATION` dans le `.magento.env.yaml`. Voir [Bonnes pratiques pour la configuration du service Redis et Valkey](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md).

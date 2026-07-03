@@ -1,5 +1,5 @@
 ---
-title: Configurer les fronts du cache
+title: Configuration des types et des fronts de cache
 description: Découvrez comment définir des fronts de cache et les associer à des types de cache dans Adobe Commerce. Découvrez la syntaxe de configuration pour env.php et di.xml.
 feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
@@ -16,18 +16,22 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ae31702797c8754a719e5a5eb39a3924e723c87a
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: 454
-ht-degree: 0%
+source-wordcount: 507
+ht-degree: 1%
 
 ---
 
-# Configurer les fronts du cache
+# Configuration des fronts et des types du cache
 
-Un cache frontal est une interface entre Commerce et le serveur principal de stockage du cache. Vous pouvez définir plusieurs fronts, chacun avec des paramètres de serveur principal différents, puis attribuer des [types de cache](../cli/manage-cache.md#clean-and-flush-cache-types) spécifiques à chaque front-end.
+Un cache frontal est une interface entre les types de cache Commerce et le serveur principal de stockage du cache. Vous pouvez définir plusieurs fronts, chacun avec des paramètres de serveur principal différents, puis attribuer des [types de cache](../cli/manage-cache.md#clean-and-flush-cache-types) spécifiques à chaque front-end.
 
-Cela s’avère utile lorsque vous souhaitez utiliser différents serveurs principaux de cache ou des configurations pour différents types de données mises en cache. Par exemple, vous pouvez `full_page` la mise en cache sur une base de données Redis dédiée lors de l’utilisation d’une base de données distincte pour la mise en cache `default`.
+Utilisez cette relation pour décider où chaque type de cache stocke les données :
+
+`cache type` -> `cache frontend` -> `cache backend`
+
+Cela s’avère utile lorsque vous souhaitez utiliser différents serveurs principaux de cache ou des configurations pour différents types de données mises en cache. Par exemple, vous pouvez attribuer le type de cache `full_page` à un front-end `page_cache` qui utilise une base de données Valkey dédiée, tandis que d’autres types de cache utilisent le front-end `default`.
 
 {{cloud-cache-config}}
 
@@ -71,7 +75,8 @@ Où :
 
 >[!TIP]
 >
->**Implémentation moderne de Symfony Cache (version 2.4.9+) :** à partir de la version 2.4.9 de Commerce, vous pouvez utiliser des types principaux simplifiés tels que `redis`, `valkey` ou `file` avec l’implémentation moderne de Symfony Cache. Voir [Utiliser Redis pour le cache par défaut](redis-pg-cache.md) et [Utiliser Valkey pour le cache par défaut](valkey-pg-cache.md) pour plus d’informations.
+>Adobe Commerce 2.4.9 et les versions ultérieures utilisent des noms de type back-end simplifiés, tels que `valkey` ou `file`, avec l’implémentation de Symfony Cache. Consultez [Options de cache du serveur principal](cache-options.md) pour obtenir des exemples de serveur principal et des conseils spécifiques à la version.
+
 
 ### Étape 2 : configurer les options frontales et principales
 
@@ -94,8 +99,7 @@ Vous pouvez spécifier les options de configuration du cache front-end et back-e
 
 Où :
 
-- `<frontend_type>` : type de cache front-end de bas niveau. Spécifiez un nom de classe compatible avec `Zend\Cache\Core`.
-Si cet attribut est omis, [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) est utilisé.
+- `<frontend_type>` : type de cache front-end de bas niveau. Spécifiez un nom de classe compatible avec `Zend\Cache\Core`.Si cet attribut est omis, [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) est utilisé.
 
 - `<frontend_option>`, `<frontend_option_value>` : nom et valeur des options que le framework Commerce transmet sous forme de tableau associatif au cache front-end lors de la création.
 
@@ -110,7 +114,7 @@ Si cet attribut est omis, [&#128279;](https://github.com/magento/magento2/blob/2
 >**Implémentation héritée ou moderne :**
 >
 >- **Hérité (basé sur Zend)** : `'backend' => 'Magento\\Framework\\Cache\\Backend\\Redis'`
->- **Moderne (cache Symfony)** : `'backend' => 'redis'` (recommandé pour Commerce 2.4.9+)
+>- **Modern (Symfony Cache)** : `'backend' => 'valkey'` pour les versions 2.4.9 et ultérieures de Commerce et les versions de correctifs actuelles pour les lignes de version 2.4.5 à 2.4.8, où Valkey est le serveur principal de cache pris en charge.
 >
 >L’implémentation moderne de Symfony Cache offre de meilleures performances grâce à la conformité PSR-6, la sérialisation Igbinary, la compression gzip, les scripts Lua et les connexions persistantes.
 

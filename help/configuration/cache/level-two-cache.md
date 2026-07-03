@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 7f3767864abdc38fcc0978f174f16632190112cf
 workflow-type: tm+mt
-source-wordcount: 738
+source-wordcount: 764
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Deux implémentations du cache L2 sont disponibles :
 
 >[!NOTE]
 >
->Pour Adobe Commerce sur le cloud, configurez le cache L2 en définissant la variable de déploiement [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#redis_backend) ou [`VALKEY_BACKEND`](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) dans `.magento.env.yaml`. Consultez [Configuration du cache L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) pour obtenir des exemples de configuration.
+>Pour Adobe Commerce on Cloud, configurez le cache L2 en définissant la variable de déploiement [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#redis_backend) ou [`VALKEY_BACKEND`](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) dans `.magento.env.yaml`. Consultez [Configuration du cache L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) pour obtenir des exemples de configuration.
 
 ## Configuration de cache L2 héritée (RemoteSynchronizedCache)
 
@@ -185,6 +185,10 @@ Le code suivant illustre un exemple de configuration :
 ## Implémentation du cache moderne Symfony L2
 
 À partir de la version 2.4.9 de Commerce, vous pouvez utiliser l’implémentation du cache L2 basée sur le cache Symfony (serveur principal de `symfony_l2`) qui fournit une implémentation de mise en cache moderne et conforme à la norme PSR-6, avec des améliorations significatives des performances par rapport aux `RemoteSynchronizedCache` traditionnels.
+
+>[!NOTE]
+>
+>Cette fonctionnalité est actuellement disponible uniquement pour les clients Adobe Commerce On Premises 2.4.9. Et sera activé pour Adobe Commerce On Cloud ultérieurement en juillet 2026. »
 
 ### Avantages du cache Symfony L2
 
