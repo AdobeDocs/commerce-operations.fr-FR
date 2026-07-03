@@ -5,34 +5,27 @@ feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
 autotag-review: '2026-06-22T20:28:12.484Z'
 TQID: 'https://experienceleague.adobe.com/oDoZ1o2IWXsDTo84XQygWZYVmfVHWbk-CuqaU47laU4'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: dbc1f6d0edff87130604d4762477ee5892a7aafc
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: 589
+source-wordcount: 593
 ht-degree: 0%
 
 ---
 
 # Présentation de la mise en cache et options de configuration
 
-Adobe Commerce repose sur une architecture de mise en cache à plusieurs couches pour réduire la charge de la base de données, minimiser le traitement redondant et accélérer la diffusion des pages. Au niveau de l’application, Commerce gère plus d’une douzaine [types de cache](../cli/manage-cache.md#clean-and-flush-cache-types) tels que la configuration, la disposition, le blocage d’HTML et les collections, que vous pouvez acheminer vers un serveur principal de stockage dédié tel que [Redis](config-redis.md) ou [Valkey](config-valkey.md). Pour la mise en cache de toutes les pages dans les déploiements sur site, Adobe recommande vivement d’utiliser [Varnish](config-varnish.md). Commerce sur les déploiements cloud utilisent Fastly. D’autres couches, telles que la mise en cache L2 [&#128279;](level-two-cache.md)&#x200B; et la signature de contenu statique [&#128279;](static-content-signing.md) L2 améliorent encore les performances pour les déploiements à trafic élevé et à plusieurs nœuds.
+Adobe Commerce repose sur une architecture de mise en cache à plusieurs couches pour réduire la charge de la base de données, minimiser le traitement redondant et accélérer la diffusion des pages. Au niveau de l’application, Commerce gère plus d’une douzaine [types de cache](../cli/manage-cache.md#clean-and-flush-cache-types) tels que la configuration, la disposition, le blocage d’HTML et les collections, que vous pouvez acheminer vers un serveur principal de stockage dédié tel que [Redis](config-redis.md) ou [Valkey](config-valkey.md). Pour la mise en cache de toutes les pages dans les déploiements sur site, Adobe recommande vivement d’utiliser [Varnish](config-varnish.md). Commerce sur les déploiements cloud utilisent Fastly. D’autres couches, telles que la mise en cache L2 [ et la signature de contenu statique [](static-content-signing.md) L2](level-two-cache.md) améliorent encore les performances pour les déploiements à trafic élevé et à plusieurs nœuds.
 
 Ce guide explique le fonctionnement de chaque couche de mise en cache et vous explique comment configurer les options frontales, principales et avancées en fonction de vos exigences de déploiement.
 
 ## Mise en cache des fronts
 
-Un cache frontal est une interface entre Commerce et le serveur principal de stockage du cache. Vous pouvez définir plusieurs fronts, chacun avec des paramètres de serveur principal différents, puis attribuer des [types de cache](../cli/manage-cache.md#clean-and-flush-cache-types) spécifiques à chaque front-end.  Pour plus d’informations sur la configuration, voir [Configuration des fronts de cache](cache-types.md).
+Un cache frontal est une interface entre Commerce et le serveur principal de stockage du cache. Vous pouvez définir plusieurs fronts, chacun avec des paramètres de serveur principal différents, puis attribuer des [types de cache](../cli/manage-cache.md#clean-and-flush-cache-types) spécifiques à chaque front-end. Pour plus d’informations sur la configuration, voir [Configuration des types et fronts de cache](cache-types.md).
 
 ## Mise en cache des serveurs principaux
 
@@ -40,7 +33,7 @@ Un serveur principal de cache est le mécanisme de stockage sous-jacent pour les
 
 ## Mise en cache de toutes les pages avec vernis
 
-[Varnish Cache](config-varnish.md) est un accélérateur HTTP qui met en cache des pages complètes en mémoire. Pour les environnements de production sur site, Adobe recommande vivement Varnish, car il est beaucoup plus rapide que le cache de pleine page intégré. Commerce dans les environnements cloud utilise [Fastly](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/fastly) pour la mise en cache de toutes les pages au lieu de Varnish.
+[Varnish Cache](config-varnish.md) est un accélérateur HTTP qui met en cache des pages complètes en mémoire. Pour les environnements de production sur site, Adobe recommande vivement Varnish, car il est beaucoup plus rapide que le cache de pleine page intégré. Commerce dans les environnements cloud utilise [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) pour la mise en cache de toutes les pages au lieu de Varnish.
 
 >[!NOTE]
 >
@@ -61,7 +54,7 @@ La [signature de contenu statique](static-content-signing.md) invalide le cache 
 - **Frontend** — Interface ou passerelle de stockage en cache, implémentée par [Magento\Framework\Cache\Frontend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend).
 - **Types de cache** — L&#39;un des types intégrés fournis avec [!DNL Commerce] (comme `config`, `layout`, `block_html`, `full_page`) ou un [type personnalisé](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/).
 - **Serveur principal** — Spécifie les détails du [stockage en cache](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), implémenté par [Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend).
-- **Serveur principal à deux niveaux** — Stocke les enregistrements de cache sur deux serveurs principaux : un cache local (rapide) et un cache distant (partagé). Voir la section Configuration du cache L2 [&#128279;](level-two-cache.md).
+- **Serveur principal à deux niveaux** — Stocke les enregistrements de cache sur deux serveurs principaux : un cache local (rapide) et un cache distant (partagé). Voir la section Configuration du cache L2 ](level-two-cache.md).[
 
 ## Options de configuration
 
@@ -74,7 +67,7 @@ Pour le mappage front-end-à-type et la syntaxe de configuration du cache :
 
 Pour plus d’informations, voir :
 
-- [Configurer les fronts du cache](cache-types.md) : associez un front-end du cache à des types de cache spécifiques.
+- [Configurer les fronts et les types de cache](cache-types.md)—Associer un front-end de cache à des types de cache spécifiques
 - [Options du serveur principal de mise en cache](cache-options.md)—Référence des options du serveur principal
 
 **Adobe Commerce sur le cloud** : configurez la mise en cache avec les `CACHE_CONFIGURATION` dans le `.magento.env.yaml`. Voir [Bonnes pratiques pour la configuration du service Redis et Valkey](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md).

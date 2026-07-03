@@ -1,6 +1,6 @@
 ---
-title: Bonnes pratiques pour la configuration du service Redis et Valkey
-description: Découvrez comment configurer les services Redis et Valkey pour Adobe Commerce. Améliorez les performances de mise en cache avec le cache L2, les connexions esclaves, le cache obsolète et la séparation de session.
+title: Bonnes pratiques relatives à la configuration des services Valkey et Redis
+description: Découvrez comment configurer les services Valkey et Redis pour Adobe Commerce. Améliorez les performances du cache avec le cache L2, les connexions de réplication, le cache obsolète et les sessions.
 solution: Commerce
 role: Developer, Admin
 level: Intermediate
@@ -8,50 +8,45 @@ feature: Best Practices, Cache
 feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-badgePaas: label="Commerce sur le cloud" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud."
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+badgePaas: label="Commerce sur le cloud" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud."
+source-git-commit: e8e8471313a4e9f7a595b1222d7a246bce63f097
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2311'
 ht-degree: 0%
 
 ---
 
 
-# Bonnes pratiques pour la configuration du service Redis et Valkey
+# Bonnes pratiques pour la configuration des services Valkey et Redis
 
-Utilisez ces recommandations pour configurer la mise en cache Redis ou Valkey et les sessions pour Adobe Commerce sur Cloud. Pour la configuration du cache sur site, voir [Options de cache et référence de stockage](../../../configuration/cache/cache-options.md).
+Utilisez ces recommandations pour configurer la mise en cache et les sessions Valkey ou Redis pour Adobe Commerce sur l’infrastructure cloud. Pour la configuration du cache sur site, voir [Options de cache et référence de stockage](../../../configuration/cache/cache-options.md).
 
-- Configurer le cache L2
-- Activer la connexion esclave
+- Configuration du cache L2, y compris [!DNL Symfony] cache L2
+- Activer la connexion de réplication en lecture seule
 - Précharger les clés
 - Activer le cache obsolète
 - Séparer le cache et la session
 - Compresser le cache
-- Exemples de configurations
+- Consulter les exemples de configuration
 
 >[!NOTE]
 >
->Vérifiez que vous utilisez la dernière version du package `ece-tools`. Sinon, [effectuez une mise à niveau vers la dernière version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=fr). Vous pouvez vérifier la version installée dans votre environnement local à l’aide de la commande de l’interface de ligne de commande `composer show magento/ece-tools`.
+>Vérifiez que vous utilisez la dernière version du package `ece-tools`. Sinon, [effectuez une mise à niveau vers la dernière version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). Vous pouvez vérifier la version installée dans votre environnement local à l’aide de la commande de l’interface de ligne de commande `composer show magento/ece-tools`.
 
 ## Configurer le cache L2
 
-Configurez le cache L2 en définissant la variable de déploiement `REDIS_BACKEND` ou `VALKEY_BACKEND` dans le fichier de configuration `.magento.env.yaml`.
+Configurez le cache L2 en définissant la variable de déploiement `VALKEY_BACKEND` ou `REDIS_BACKEND` dans le fichier de configuration `.magento.env.yaml`.
 
-Pour obtenir des détails d’implémentation, des exemples de configuration et des conseils spécifiques au déploiement, consultez [Configuration du cache L2 pour l’optimisation des performances](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/level-two-cache).
+Pour Adobe Commerce 2.4.9 et les versions ultérieures aux versions 2.4.8-p4, 2.4.7-p9, 2.4.6-p14 et 2.4.5-p16, configurez le cache L2 avec Valkey. Les exemples de configuration Redis de cette page s’appliquent uniquement aux versions d’Adobe Commerce prises en charge qui utilisent Redis. Consultez [Configuration requise](../../../installation/system-requirements.md) pour connaître les services de cache pris en charge par version.
+
+Pour obtenir des détails d’implémentation, des exemples de configuration et des conseils spécifiques au déploiement, consultez [Configuration du cache L2 pour l’optimisation des performances](../../../configuration/cache/level-two-cache.md).
+
+
+>[!IMPORTANT]
+>
+>Le cache Redis n’est pas pris en charge pour Adobe Commerce 2.4.9 ou pour les versions de correctif ultérieures à 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 et 2.4.8-p4. Utilisez Valkey pour la configuration du cache lorsque Redis n’est pas pris en charge. Consultez [Configuration requise](../../../installation/system-requirements.md) pour connaître les services de cache pris en charge par version.
 
 >[!BEGINTABS]
-
->[!TAB Configuration Redis]
-
-Pour Redis, utilisez :
-
-```yaml
-stage:
-  deploy:
-    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-```
-
-Pour plus d’informations sur la configuration de l’environnement, consultez la [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#redis_backend) dans le guide _Commerce sur les infrastructures cloud_.
 
 >[!TAB Configuration Valkey]
 
@@ -63,20 +58,119 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Pour plus d’informations sur la configuration de l’environnement, consultez [`VALKEY_BACKEND`](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) variables de configuration dans le guide _Commerce sur les infrastructures cloud_.
+Pour plus d’informations sur la configuration de l’environnement, consultez [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) variables de configuration dans le guide _Commerce sur les infrastructures cloud_.
+
+>[!TAB Configuration Redis]
+
+Pour Redis, utilisez :
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+```
+
+Pour plus d’informations sur la configuration de l’environnement, consultez la [`REDIS_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend) dans le guide _Commerce sur les infrastructures cloud_.
 
 >[!ENDTABS]
+
+### Configurer [!DNL Symfony] cache L2
+
+Adobe Commerce 2.4.9 et versions ultérieures prennent en charge le serveur principal de cache `symfony_l2`. Sur Adobe Commerce sur l’infrastructure cloud, configurez ce serveur principal uniquement une fois que votre projet utilise une version `ece-tools` qui prend en charge le `symfony_l2` dans `.magento.env.yaml`.
+
+Le serveur principal `symfony_l2` est l’implémentation du cache qu’Adobe Commerce utilise pour gérer le comportement du cache L1 et L2. Il ne remplace pas Redis ou Valkey comme service de cache à distance. Pour Adobe Commerce 2.4.9, configurez `symfony_l2` avec Valkey comme serveur principal distant.
+
+>[!IMPORTANT]
+>
+>Tant que `ece-tools` prise en charge n’est pas disponible pour votre projet, ne configurez pas `symfony_l2` manuellement dans `app/etc/env.php` en tant que configuration persistante pour Adobe Commerce sur l’infrastructure cloud. Le déploiement peut remplacer les modifications de `env.php` manuelles. Si `ece-tools` ne s’applique pas `symfony_l2`, Commerce peut revenir au cache basé sur les fichiers. Cette solution de secours peut augmenter les E/S de disque, augmenter la surcharge de réplication du système de fichiers sur les environnements à plusieurs nœuds et dégrader les performances.
+
+Lorsque `ece-tools` prise en charge est disponible, définissez la variable principale Valkey sur `symfony_l2` et définissez les options principales L2 dans `CACHE_CONFIGURATION`.
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: symfony_l2
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            remote_backend: valkey
+            remote_backend_options:
+              server: localhost
+              database: 1
+              port: 6370
+              serializer: igbinary
+              compression_lib: gzip
+              persistent_id: magento_l2_default
+            local_backend: file
+            local_backend_options:
+              cache_dir: /dev/shm/magento_l1
+```
+
+Pour activer le cache obsolète pour les types de cache sélectionnés avec `symfony_l2`, définissez un second front-end avec `use_stale_cache: true`, puis mappez les types de cache sélectionnés à ce front-end. Utilisez des répertoires de cache locaux distincts et des identifiants persistants pour chaque serveur frontal.
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: symfony_l2
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            remote_backend: valkey
+            remote_backend_options:
+              server: localhost
+              database: 0
+              port: 6370
+              serializer: igbinary
+              compression_lib: gzip
+              persistent_id: magento_l2_default
+            local_backend: file
+            local_backend_options:
+              cache_dir: /dev/shm/magento_l1
+        stale_cache_enabled:
+          backend: symfony_l2
+          backend_options:
+            remote_backend: valkey
+            remote_backend_options:
+              server: localhost
+              database: 0
+              port: 6370
+              serializer: igbinary
+              compression_lib: gzip
+              persistent_id: magento_l2_stale
+            local_backend: file
+            local_backend_options:
+              cache_dir: /dev/shm/magento_l1_stale
+            use_stale_cache: true
+      type:
+        default:
+          frontend: default
+        layout:
+          frontend: stale_cache_enabled
+        block_html:
+          frontend: stale_cache_enabled
+        reflection:
+          frontend: stale_cache_enabled
+        config_integration:
+          frontend: stale_cache_enabled
+        config_integration_api:
+          frontend: stale_cache_enabled
+        translate:
+          frontend: stale_cache_enabled
+```
 
 
 ### Dimensionnement de la mémoire cache L2 pour Adobe Commerce Cloud
 
-Le cache L2 utilise un [&#x200B; système de fichiers temporaire &#x200B;](https://en.wikipedia.org/wiki/Tmpfs) (`/dev/shm`) comme mécanisme de stockage. Contrairement aux magasins de valeur-clé spécialisés, tmpfs n’a pas de politique d’éviction des clés, de sorte que l’utilisation de la mémoire peut augmenter sans limite. Pour éviter l’épuisement, Adobe Commerce efface automatiquement le stockage L2 lorsque l’utilisation atteint un seuil configurable (95 % par défaut). Vous pouvez contrôler la consommation de mémoire en demandant un montage `/dev/shm` plus important ou en abaissant le seuil de nettoyage.
+Le cache L2 utilise un [ système de fichiers temporaire ](https://en.wikipedia.org/wiki/Tmpfs) (`/dev/shm`) comme mécanisme de stockage. Contrairement aux magasins de valeur-clé spécialisés, tmpfs n’a pas de politique d’éviction des clés, de sorte que l’utilisation de la mémoire peut augmenter sans limite. Pour éviter l’épuisement, Adobe Commerce efface automatiquement le stockage L2 lorsque l’utilisation atteint un seuil configurable (95 % par défaut). Vous pouvez contrôler la consommation de mémoire en demandant un montage `/dev/shm` plus important ou en abaissant le seuil de nettoyage.
 
 Ajustez l’utilisation maximale de la mémoire cache L2 en fonction des besoins de votre projet. Utilisez l’une des méthodes suivantes :
 
 - Créez un ticket d’assistance pour ajuster la taille du montage `/dev/shm`. Pour ce scénario, Adobe recommande de définir la taille de montage `/dev/shm` sur 15 Go.
-- Ajustez la propriété `cleanup_percentage` au niveau de l’application pour limiter l’utilisation du stockage et la mémoire disponible pour d’autres services.
-Vous pouvez ajuster la configuration dans la configuration de déploiement sous le groupe de configuration du cache `cache/frontend/default/backend_options/cleanup_percentage`.
+- Ajustez la propriété `cleanup_percentage` au niveau de l’application pour limiter l’utilisation du stockage et la mémoire disponible pour d’autres services.Vous pouvez ajuster la configuration dans la configuration de déploiement sous le groupe de configuration du cache `cache/frontend/default/backend_options/cleanup_percentage`.
 
 >[!NOTE]
 >
@@ -86,12 +180,12 @@ Les exemples suivants montrent le code de configuration dans le fichier `.magent
 
 >[!BEGINTABS]
 
->[!TAB Configuration Redis]
+>[!TAB Configuration Valkey]
 
 ```yaml
 stage:
   deploy:
-    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
     CACHE_CONFIGURATION:
       _merge: true
       frontend:
@@ -100,12 +194,12 @@ stage:
             cleanup_percentage: 90
 ```
 
->[!TAB Configuration Valkey]
+>[!TAB Configuration Redis]
 
 ```yaml
 stage:
   deploy:
-    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
     CACHE_CONFIGURATION:
       _merge: true
       frontend:
@@ -130,21 +224,9 @@ L’utilisation peut varier d’un nœud à l’autre, mais elle doit converger 
 
 ## Activer la connexion esclave
 
-Activez la connexion esclave dans le fichier `.magento.env.yaml` pour permettre à Adobe Commerce d’utiliser une connexion de cache en lecture seule supplémentaire pour les lectures tout en continuant à utiliser le point d’entrée principal pour les écritures. Cette configuration peut réduire la charge de lecture sur le service de cache principal et distribuer le trafic de lecture plus efficacement.
+Activez la connexion de réplica en lecture seule dans le fichier `.magento.env.yaml` pour permettre à Adobe Commerce d’utiliser une connexion de cache supplémentaire pour les lectures tout en continuant à utiliser le point d’entrée principal pour les écritures. Cette configuration peut réduire la charge de lecture sur le service de cache principal et distribuer le trafic de lecture plus efficacement.
 
 >[!BEGINTABS]
-
->[!TAB Configuration Redis]
-
-Pour Redis, utilisez :
-
-```yaml
-stage:
-  deploy:
-    REDIS_USE_SLAVE_CONNECTION: true
-```
-
-Pour plus d’informations sur la configuration des variables d’environnement, consultez [REDIS _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#redis_use_slave_connection) dans le guide _Commerce sur les infrastructures cloud_.
 
 >[!TAB Configuration Valkey]
 
@@ -156,7 +238,19 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Pour plus d’informations sur la configuration des variables d’environnement, consultez [VALKEY _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#valkey_use_slave_connection) dans le guide _Commerce sur les infrastructures cloud_.
+Pour plus d’informations sur la configuration des variables d’environnement, consultez [VALKEY _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) dans le guide _Commerce sur les infrastructures cloud_.
+
+>[!TAB Configuration Redis]
+
+Pour Redis, utilisez :
+
+```yaml
+stage:
+  deploy:
+    REDIS_USE_SLAVE_CONNECTION: true
+```
+
+Pour plus d’informations sur la configuration des variables d’environnement, consultez [REDIS _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) dans le guide _Commerce sur les infrastructures cloud_.
 
 >[!ENDTABS]
 
@@ -167,45 +261,6 @@ Magento charge généralement les entrées de cache de Redis ou de Valkey une cl
 Vous pouvez identifier les clés fréquemment utilisées en surveillant les commandes actives sur Redis ou Valkey :
 
 >[!BEGINTABS]
-
->[!TAB Configuration de la clé de préchargement Redis]
-
-Les clés de préchargement sont configurées dans le fichier de configuration `.magento.env.yaml`.
-
-```yaml
-stage:
-  deploy:
-    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          id_prefix: '061_' # Prefix for keys to be preloaded, it can be any random string
-          backend_options:
-            preload_keys: # List the keys to be preloaded
-              - '061_EAV_ENTITY_TYPES:hash' # The key name must start with the id_prefix set above
-              - '061_GLOBAL_PLUGIN_LIST:hash'
-              - '061_DB_IS_UP_TO_DATE:hash'
-              - '061_SYSTEM_DEFAULT:hash'
-```
-
-Pour répertorier les clés, exécutez la commande suivante :
-
-```terminal
-redis-cli -p 6370 -n 1 MONITOR > /tmp/list.keys
-```
-
-Au bout de 10 secondes, appuyez sur **[!UICONTROL Ctrl+C]**. Exécutez ensuite la commande suivante :
-
-```terminal
-cat /tmp/list.keys | grep "HGET" | awk '{print $5}' | sort | uniq -c | sort -nr | head -n 50
-```
-
-Ce journal répertorie les clés que vous pouvez précharger. Pour afficher le contenu d’une clé, exécutez la commande suivante :
-
-```terminal
-redis-cli -p 6370 -n 1 hgetall "<key_name>"
-```
 
 >[!TAB Configuration de la clé de préchargement Valkey]
 
@@ -246,6 +301,45 @@ Ce journal répertorie les clés que vous pouvez précharger. Pour afficher le c
 valkey-cli -p 6370 -n 1 hgetall "<key_name>"
 ```
 
+>[!TAB Configuration de la clé de préchargement Redis]
+
+Les clés de préchargement sont configurées dans le fichier de configuration `.magento.env.yaml`.
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          id_prefix: '061_' # Prefix for keys to be preloaded, it can be any random string
+          backend_options:
+            preload_keys: # List the keys to be preloaded
+              - '061_EAV_ENTITY_TYPES:hash' # The key name must start with the id_prefix set above
+              - '061_GLOBAL_PLUGIN_LIST:hash'
+              - '061_DB_IS_UP_TO_DATE:hash'
+              - '061_SYSTEM_DEFAULT:hash'
+```
+
+Pour répertorier les clés, exécutez la commande suivante :
+
+```terminal
+redis-cli -p 6370 -n 1 MONITOR > /tmp/list.keys
+```
+
+Au bout de 10 secondes, appuyez sur **[!UICONTROL Ctrl+C]**. Exécutez ensuite la commande suivante :
+
+```terminal
+cat /tmp/list.keys | grep "HGET" | awk '{print $5}' | sort | uniq -c | sort -nr | head -n 50
+```
+
+Ce journal répertorie les clés que vous pouvez précharger. Pour afficher le contenu d’une clé, exécutez la commande suivante :
+
+```terminal
+redis-cli -p 6370 -n 1 hgetall "<key_name>"
+```
+
 >[!ENDTABS]
 
 ## Activer le cache obsolète
@@ -260,21 +354,6 @@ Pour activer le cache obsolète, configurez-le dans le fichier `.magento.env.yam
 
 >[!BEGINTABS]
 
->[!TAB Configurer le cache obsolète pour Redis]
-
-Pour Redis :
-
-```yaml
-stage:
-  deploy:
-    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          backend_options:
-            use_stale_cache: true
-```
 
 >[!TAB Configurer le cache obsolète pour Valkey]
 
@@ -292,11 +371,27 @@ stage:
             use_stale_cache: true
 ```
 
+>[!TAB Configurer le cache obsolète pour Redis]
+
+Pour Redis :
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            use_stale_cache: true
+```
+
 >[!ENDTABS]
 
 >[!NOTE]
 >
->Le type de cache `full_page` n’est pas pertinent pour Adobe Commerce dans les projets d’infrastructure cloud, car ils utilisent [Fastly](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/fastly).
+>Le type de cache `full_page` n’est pas pertinent pour Adobe Commerce dans les projets d’infrastructure cloud, car ils utilisent [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly).
 
 >[!WARNING]
 >
@@ -315,14 +410,14 @@ Pour fonctionner correctement, le front-end personnalisé doit être défini com
 
 >[!BEGINTABS]
 
->[!TAB Configurer le cache obsolète pour Redis]
+>[!TAB Configurer le cache obsolète pour Valkey]
 
-Pour Redis :
+Pour Valkey :
 
 ```yaml
 stage:
   deploy:
-    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
     CACHE_CONFIGURATION:
       _merge: true
       frontend:
@@ -333,12 +428,12 @@ stage:
 
         # Now, create a new frontend called 'stale_cache_enabled'.
         # It must contain the same backend connection settings as the frontend 'default':
-
+ 
         stale_cache_enabled:
           id_prefix: '001_'
           backend: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
           backend_options:
-            remote_backend: '\Magento\Framework\Cache\Backend\Redis'
+            remote_backend: '\Magento\Framework\Cache\Backend\Valkey'
             remote_backend_options:
               server: localhost
               port: 6370 # Use the same port used by the frontend 'default' in env.php
@@ -371,14 +466,14 @@ stage:
         # add other cache types as needed...
 ```
 
->[!TAB Configurer le cache obsolète pour Valkey]
+>[!TAB Configurer le cache obsolète pour Redis]
 
-Pour Valkey :
+Pour Redis :
 
 ```yaml
 stage:
   deploy:
-    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
     CACHE_CONFIGURATION:
       _merge: true
       frontend:
@@ -389,7 +484,7 @@ stage:
 
         # Now, create a new frontend called 'stale_cache_enabled'.
         # It must contain the same backend connection settings as the frontend 'default':
- 
+
         stale_cache_enabled:
           id_prefix: '001_'
           backend: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
@@ -442,80 +537,6 @@ Suivez les étapes ci-dessous pour configurer une instance dédiée pour les ses
 
 >[!BEGINTABS]
 
->[!TAB Redis ]
-
-1. Mettez à jour le fichier de configuration `.magento/services.yaml`.
-
-   ```yaml
-   mysql:
-     type: mysql:10.4
-     disk: 35000
-   
-   redis:
-     type: redis:6.0
-   
-   redis-session: # This is for the new Redis instance
-     type: redis:6.0
-   
-   search:
-     type: elasticsearch:7.9
-     disk: 5000
-   
-   rabbitmq:
-     type: rabbitmq:3.8
-     disk: 2048
-   ```
-
-1. Mettez à jour le fichier de configuration `.magento.app.yaml`.
-
-   ```yaml
-      relationships:
-        database: "mysql:mysql"
-        redis: "redis:redis"
-        redis-session: "redis-session:redis"   # Relationship of the new Redis instance
-        search: "search:elasticsearch"
-        rabbitmq: "rabbitmq:rabbitmq"
-   ```
-
-1. Demandez une nouvelle instance Redis dédiée aux sessions sur les environnements de production et d’évaluation.
-
-   Envoyez un [ticket d’assistance &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket). Incluez les fichiers de configuration `.magento/services.yaml` et `.magento.app.yaml` mis à jour.
-
-   Cette mise à jour n’entraîne pas d’interruption, mais un déploiement est nécessaire pour activer le nouveau service.
-
-1. Vérifiez que la nouvelle instance est en cours d’exécution et notez le numéro de port.
-
-   ```shell
-   echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
-   ```
-
-1. Ajoutez le numéro de port au fichier de configuration `.magento.env.yaml`.
-
-   >[!IMPORTANT]
-   >
-   >Configurez le port de session Redis uniquement si `ece-tools` ne parvient pas à le détecter automatiquement à partir de la définition du service de session Redis `MAGENTO_CLOUD_RELATIONSHIPS`.
-
-   >[!NOTE]
-   >
-   >Définissez `disable_locking` sur `1` pour de meilleures performances. Dans de rares cas où des conditions de concurrence se produisent en raison d’une activité de session simultanée élevée, définissez-la sur `0` pour activer le verrouillage.
-
-   ```yaml
-   SESSION_CONFIGURATION:
-     _merge: true
-     redis:
-       timeout: 5
-       disable_locking: 1
-       bot_first_lifetime: 60
-       bot_lifetime: 7200
-       max_lifetime: 2592000
-       min_lifetime: 60
-   ```
-
-1. Supprimez les sessions de la [base de données par défaut](../../../configuration/cache/redis-pg-cache.md) (`db 0`) sur l’instance de cache Redis.
-
-   ```terminal
-   redis-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
-   ```
 
 >[!TAB  Valkey ]
 
@@ -554,7 +575,7 @@ Suivez les étapes ci-dessous pour configurer une instance dédiée pour les ses
 
 1. Demandez une nouvelle instance Valkey dédiée aux sessions sur les environnements de production et d’évaluation.
 
-   Envoyez un [ticket d’assistance &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket). Incluez les fichiers de configuration `.magento/services.yaml` et `.magento.app.yaml` mis à jour.
+   Envoyez un [ticket d’assistance ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Incluez les fichiers de configuration `.magento/services.yaml` et `.magento.app.yaml` mis à jour.
 
    Cette mise à jour n’entraîne pas d’interruption, mais un déploiement est nécessaire pour activer le nouveau service.
 
@@ -592,6 +613,81 @@ Suivez les étapes ci-dessous pour configurer une instance dédiée pour les ses
    valkey-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
    ```
 
+>[!TAB Redis ]
+
+1. Mettez à jour le fichier de configuration `.magento/services.yaml`.
+
+   ```yaml
+   mysql:
+     type: mysql:10.4
+     disk: 35000
+   
+   redis:
+     type: redis:6.0
+   
+   redis-session: # This is for the new Redis instance
+     type: redis:6.0
+   
+   search:
+     type: elasticsearch:7.9
+     disk: 5000
+   
+   rabbitmq:
+     type: rabbitmq:3.8
+     disk: 2048
+   ```
+
+1. Mettez à jour le fichier de configuration `.magento.app.yaml`.
+
+   ```yaml
+      relationships:
+        database: "mysql:mysql"
+        redis: "redis:redis"
+        redis-session: "redis-session:redis"   # Relationship of the new Redis instance
+        search: "search:elasticsearch"
+        rabbitmq: "rabbitmq:rabbitmq"
+   ```
+
+1. Demandez une nouvelle instance Redis dédiée aux sessions sur les environnements de production et d’évaluation.
+
+   Envoyez un [ticket d’assistance ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Incluez les fichiers de configuration `.magento/services.yaml` et `.magento.app.yaml` mis à jour.
+
+   Cette mise à jour n’entraîne pas d’interruption, mais un déploiement est nécessaire pour activer le nouveau service.
+
+1. Vérifiez que la nouvelle instance est en cours d’exécution et notez le numéro de port.
+
+   ```shell
+   echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
+   ```
+
+1. Ajoutez le numéro de port au fichier de configuration `.magento.env.yaml`.
+
+   >[!IMPORTANT]
+   >
+   >Configurez le port de session Redis uniquement si `ece-tools` ne parvient pas à le détecter automatiquement à partir de la définition du service de session Redis `MAGENTO_CLOUD_RELATIONSHIPS`.
+
+   >[!NOTE]
+   >
+   >Définissez `disable_locking` sur `1` pour de meilleures performances. Dans de rares cas où des conditions de concurrence se produisent en raison d’une activité de session simultanée élevée, définissez-la sur `0` pour activer le verrouillage.
+
+   ```yaml
+   SESSION_CONFIGURATION:
+     _merge: true
+     redis:
+       timeout: 5
+       disable_locking: 1
+       bot_first_lifetime: 60
+       bot_lifetime: 7200
+       max_lifetime: 2592000
+       min_lifetime: 60
+   ```
+
+1. Supprimez les sessions de la [base de données par défaut](../../../configuration/cache/redis-pg-cache.md) (`db 0`) sur l’instance de cache Redis.
+
+   ```terminal
+   redis-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
+   ```
+
 >[!ENDTABS]
 
 ## Compression du cache
@@ -614,7 +710,7 @@ stage:
 
 ## Activer la libération asynchrone
 
-Pour activer le `lazyfree` sur Adobe Commerce sur les infrastructures cloud, envoyez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) en demandant que la configuration Redis ou Valkey suivante soit appliquée à vos environnements :
+Pour activer le `lazyfree` sur Adobe Commerce sur les infrastructures cloud, envoyez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) en demandant que la configuration Redis ou Valkey suivante soit appliquée à vos environnements :
 
 ```text
 lazyfree-lazy-eviction yes
@@ -636,7 +732,7 @@ Lorsque `lazyfree` est activé, Redis ou Valkey décharge la récupération de l
 
 ## Activer les E/S multithreads
 
-Pour activer le threading d’E/S Redis sur Adobe Commerce sur l’infrastructure cloud, envoyez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) en demandant la configuration de threading d’E/S ci-dessous. Cette configuration peut améliorer le débit en déchargeant les lectures et écritures de socket ainsi que l’analyse des commandes du thread principal, au détriment d’une utilisation plus élevée de CPU. Validez sous charge et surveillez vos hôtes.
+Pour activer le threading d’E/S Redis sur Adobe Commerce sur l’infrastructure cloud, envoyez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) en demandant la configuration de threading d’E/S ci-dessous. Cette configuration peut améliorer le débit en déchargeant les lectures et écritures de socket ainsi que l’analyse des commandes du thread principal, au détriment d’une utilisation plus élevée de CPU. Validez sous charge et surveillez vos hôtes.
 
 >[!BEGINTABS]
 
@@ -703,13 +799,56 @@ Utilisez les exemples suivants comme point de départ pour vos configurations de
 
 >[!BEGINTABS]
 
+>[!TAB Exemple de configuration Valkey]
+
+```yaml
+stage:
+  deploy:
+    MYSQL_USE_SLAVE_CONNECTION: true
+    VALKEY_USE_SLAVE_CONNECTION: true # Enables read-only replica connection logic in Magento. It also works in a split architecture.
+    VALKEY_BACKEND: \Magento\Framework\Cache\Backend\RemoteSynchronizedCache
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          id_prefix: '001_' # any prefix is fine, but keep it consistent.
+          backend_options:
+            use_stale_cache: true             # Enables stale cache feature for all cache types
+            connect_retries: 3                # Number of connection retries
+            preload_keys:                     # Preload keys at backend_options level (official Adobe placement)
+              - '001_EAV_ENTITY_TYPES:hash'   # Bootstrap: entity types
+              - '001_GLOBAL_PLUGIN_LIST:hash' # Bootstrap: DI plugin list
+              - '001_DB_IS_UP_TO_DATE:hash'   # Bootstrap: schema version
+              - '001_SYSTEM_DEFAULT:hash'     # Config: system defaults
+              - '001_EXTENSION_ATTRIBUTES_CONFIG:hash'
+            remote_backend_options:
+              read_timeout: 10
+              retry_reads_on_master: 1        # Required for split architecture
+            # Keep compression disabled for maximum performance. Only enable it if the cache usage is approaching the limit defined in maxmemory:
+            # compress_data: 4              # 0-9
+            # compress_tags: 4              # 0-9
+            # compress_threshold: 20480     # don't compress files smaller than this value
+            # compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~69%)
+
+    SESSION_CONFIGURATION:
+      _merge: true
+      redis:
+        # port: 6372 # ece-tools should detect the port automatically, but if not, set here.
+        timeout: 5
+        disable_locking: 1 # true for max performance. If racing conditions happen when the server has an excessively high number of simultaneous session activities, set it to false.
+        bot_first_lifetime: 60
+        bot_lifetime: 7200
+        max_lifetime: 2592000
+        min_lifetime: 60
+```
+
 >[!TAB Redis ]
 
 ```yaml
 stage:
   deploy:
     MYSQL_USE_SLAVE_CONNECTION: true
-    REDIS_USE_SLAVE_CONNECTION: true # Enables the slave connection logic in Magento. It also works in a split architecture
+    REDIS_USE_SLAVE_CONNECTION: true # Enables read-only replica connection logic in Magento. It also works in a split architecture
     REDIS_BACKEND: \Magento\Framework\Cache\Backend\RemoteSynchronizedCache
     CACHE_CONFIGURATION:
       _merge: true
@@ -748,145 +887,11 @@ stage:
         min_lifetime: 60
 ```
 
->[!TAB Exemple de configuration Valkey]
-
-```yaml
-stage:
-  deploy:
-    MYSQL_USE_SLAVE_CONNECTION: true
-    VALKEY_USE_SLAVE_CONNECTION: true # Enables the slave connection logic in Magento. It also works in a split architecture
-    VALKEY_BACKEND: \Magento\Framework\Cache\Backend\RemoteSynchronizedCache
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          id_prefix: '001_' # any prefix is fine, but keep it consistent.
-          backend_options:
-            use_stale_cache: true             # Enables stale cache feature for all cache types
-            connect_retries: 3                # Number of connection retries
-            preload_keys:                     # Preload keys at backend_options level (official Adobe placement)
-              - '001_EAV_ENTITY_TYPES:hash'   # Bootstrap: entity types
-              - '001_GLOBAL_PLUGIN_LIST:hash' # Bootstrap: DI plugin list
-              - '001_DB_IS_UP_TO_DATE:hash'   # Bootstrap: schema version
-              - '001_SYSTEM_DEFAULT:hash'     # Config: system defaults
-              - '001_EXTENSION_ATTRIBUTES_CONFIG:hash'
-            remote_backend_options:
-              read_timeout: 10
-              retry_reads_on_master: 1        # Required for split architecture
-            # Keep compression disabled for maximum performance. Only enable it if the cache usage is approaching the limit defined in maxmemory:
-            # compress_data: 4              # 0-9
-            # compress_tags: 4              # 0-9
-            # compress_threshold: 20480     # don't compress files smaller than this value
-            # compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~69%)
-
-    SESSION_CONFIGURATION:
-      _merge: true
-      redis:
-        # port: 6372 # ece-tools should detect the port automatically, but if not, set here.
-        timeout: 5
-        disable_locking: 1 # true for max performance. If racing conditions happen when the server has an excessively high number of simultaneous session activities, set it to false.
-        bot_first_lifetime: 60
-        bot_lifetime: 7200
-        max_lifetime: 2592000
-        min_lifetime: 60
-```
-
 >[!ENDTABS]
 
 ### Appliquer toutes les recommandations de bonnes pratiques et séparer le cache obsolète par type de cache
 
 >[!BEGINTABS]
-
->[!TAB Redis ]
-
-```yaml
-stage:
-  deploy:
-    MYSQL_USE_SLAVE_CONNECTION: true
-    REDIS_USE_SLAVE_CONNECTION: true # Enables the slave connection logic in Magento. It also works in a split architecture
-    REDIS_BACKEND: \Magento\Framework\Cache\Backend\RemoteSynchronizedCache
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default: # Keep stale cache disabled on the broad default frontend.
-          id_prefix: '001_' # Keep this prefix consistent with the frontend configuration generated in env.php
-          backend_options:
-            use_stale_cache: false # stale cache false here
-            connect_retries: 3
-            preload_keys:
-              - '001_EAV_ENTITY_TYPES:hash'
-              - '001_GLOBAL_PLUGIN_LIST:hash'
-              - '001_DB_IS_UP_TO_DATE:hash'
-              - '001_SYSTEM_DEFAULT:hash'
-              - '001_EXTENSION_ATTRIBUTES_CONFIG:hash'
-            remote_backend_options:
-              read_timeout: 10
-              retry_reads_on_master: 1
-            # Keep compression disabled for maximum performance. Only enable it if the cache usage is approaching the limit defined in maxmemory:
-            # compress_data: 4
-            # compress_tags: 4
-            # compress_threshold: 20480
-            # compression_lib: 'gzip'
-
-        stale_cache_enabled: # New frontend with stale cache enabled only for selected cache types.
-          id_prefix: '001_' # Use the same id_prefix used by the source frontend in env.php
-          backend: \Magento\Framework\Cache\Backend\RemoteSynchronizedCache
-          backend_options:
-            remote_backend: \Magento\Framework\Cache\Backend\Redis
-            remote_backend_options:
-              server: localhost
-              port: 6370   # Use the same port used by the source frontend in env.php
-              database: 1
-              load_from_slave:
-                server: localhost
-                port: 26370 # Use the same slave connection/read port used by the source frontend in env.php
-              retry_reads_on_master: 1
-              read_timeout: 10
-            local_backend: Cm_Cache_Backend_File
-            local_backend_options:
-              cache_dir: /dev/shm/
-            use_stale_cache: true
-            connect_retries: 3
-            preload_keys:
-              - '001_EAV_ENTITY_TYPES:hash'
-              - '001_GLOBAL_PLUGIN_LIST:hash'
-              - '001_DB_IS_UP_TO_DATE:hash'
-              - '001_SYSTEM_DEFAULT:hash'
-              - '001_EXTENSION_ATTRIBUTES_CONFIG:hash'
-            # Keep compression disabled for maximum performance. Only enable it if the cache usage is approaching the limit defined in maxmemory:
-            # compress_data: 4
-            # compress_tags: 4
-            # compress_threshold: 20480
-            # compression_lib: 'gzip'
-
-      type:
-        default:
-          frontend: default # Keeps stale cache disabled on the broad default frontend, including generic cache writes that use \Magento\Framework\App\Cache, such as $this->cache->save().
-        block_html:
-          frontend: stale_cache_enabled # This is often one of the cache types that benefits the most from stale cache, because it is heavily used and can contribute significantly to lock contention during regeneration. In most cases, it can remain enabled. Exclude it only if the project has customization-specific issues caused by stale block output.
-        layout:
-          frontend: stale_cache_enabled
-        reflection:
-          frontend: stale_cache_enabled
-        config_integration:
-          frontend: stale_cache_enabled
-        config_integration_api:
-          frontend: stale_cache_enabled
-        translate:
-          frontend: stale_cache_enabled
-        # add other cache types as needed...
-
-    SESSION_CONFIGURATION:
-      _merge: true
-      redis:
-        # port: 6372 # ece-tools should detect the port automatically, but if not, set here.
-        timeout: 5
-        disable_locking: 1 # true for max performance. If racing conditions happen when the server has an excessively high number of simultaneous session activities, set it to false.
-        bot_first_lifetime: 60
-        bot_lifetime: 7200
-        max_lifetime: 2592000
-        min_lifetime: 60
-```
 
 >[!TAB  Valkey ]
 
@@ -894,7 +899,7 @@ stage:
 stage:
   deploy:
     MYSQL_USE_SLAVE_CONNECTION: true
-    VALKEY_USE_SLAVE_CONNECTION: true # Enables the slave connection logic in Magento. It also works in a split architecture
+    VALKEY_USE_SLAVE_CONNECTION: true # Enables read-only replica connection logic in Magento. It also works in a split architecture
     VALKEY_BACKEND: \Magento\Framework\Cache\Backend\RemoteSynchronizedCache
     CACHE_CONFIGURATION:
       _merge: true
@@ -923,14 +928,14 @@ stage:
           id_prefix: '001_' # Use the same id_prefix used by the source frontend in env.php
           backend: \Magento\Framework\Cache\Backend\RemoteSynchronizedCache
           backend_options:
-            remote_backend: \Magento\Framework\Cache\Backend\Redis
+            remote_backend: \Magento\Framework\Cache\Backend\Valkey
             remote_backend_options:
               server: localhost
               port: 6370   # Use the same port used by the source frontend in env.php
               database: 1
               load_from_slave:
                 server: localhost
-                port: 26370 # Use the same slave connection/read port used by the source frontend in env.php
+                port: 26370 # Use the same read-only replica connection/read port used by the source frontend in env.php
               retry_reads_on_master: 1
               read_timeout: 10
             local_backend: Cm_Cache_Backend_File
@@ -979,12 +984,104 @@ stage:
         min_lifetime: 60
 ```
 
+>[!TAB Redis ]
+
+```yaml
+stage:
+  deploy:
+    MYSQL_USE_SLAVE_CONNECTION: true
+    REDIS_USE_SLAVE_CONNECTION: true # Enables the slave connection logic in Magento. It also works in a split architecture
+    REDIS_BACKEND: \Magento\Framework\Cache\Backend\RemoteSynchronizedCache
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default: # Keep stale cache disabled on the broad default frontend.
+          id_prefix: '001_' # Keep this prefix consistent with the frontend configuration generated in env.php
+          backend_options:
+            use_stale_cache: false # stale cache false here
+            connect_retries: 3
+            preload_keys:
+              - '001_EAV_ENTITY_TYPES:hash'
+              - '001_GLOBAL_PLUGIN_LIST:hash'
+              - '001_DB_IS_UP_TO_DATE:hash'
+              - '001_SYSTEM_DEFAULT:hash'
+              - '001_EXTENSION_ATTRIBUTES_CONFIG:hash'
+            remote_backend_options:
+              read_timeout: 10
+              retry_reads_on_master: 1
+            # Keep compression disabled for maximum performance. Only enable it if the cache usage is approaching the limit defined in maxmemory:
+            # compress_data: 4
+            # compress_tags: 4
+            # compress_threshold: 20480
+            # compression_lib: 'gzip'
+
+        stale_cache_enabled: # New frontend with stale cache enabled only for selected cache types.
+          id_prefix: '001_' # Use the same id_prefix used by the source frontend in env.php
+          backend: \Magento\Framework\Cache\Backend\RemoteSynchronizedCache
+          backend_options:
+            remote_backend: \Magento\Framework\Cache\Backend\Redis
+            remote_backend_options:
+              server: localhost
+              port: 6370   # Use the same port used by the source frontend in env.php
+              database: 1
+              load_from_slave:
+                server: localhost
+                port: 26370 # Use the same read-only replica connection/read port used by the source frontend in env.php
+              retry_reads_on_master: 1
+              read_timeout: 10
+            local_backend: Cm_Cache_Backend_File
+            local_backend_options:
+              cache_dir: /dev/shm/
+            use_stale_cache: true
+            connect_retries: 3
+            preload_keys:
+              - '001_EAV_ENTITY_TYPES:hash'
+              - '001_GLOBAL_PLUGIN_LIST:hash'
+              - '001_DB_IS_UP_TO_DATE:hash'
+              - '001_SYSTEM_DEFAULT:hash'
+              - '001_EXTENSION_ATTRIBUTES_CONFIG:hash'
+            # Keep compression disabled for maximum performance. Only enable it if the cache usage is approaching the limit defined in maxmemory:
+            # compress_data: 4
+            # compress_tags: 4
+            # compress_threshold: 20480
+            # compression_lib: 'gzip'
+
+      type:
+        default:
+          frontend: default # Keeps stale cache disabled on the broad default frontend, including generic cache writes that use \Magento\Framework\App\Cache, such as $this->cache->save().
+        block_html:
+          frontend: stale_cache_enabled # This is often one of the cache types that benefits the most from stale cache, because it is heavily used and can contribute significantly to lock contention during regeneration. In most cases, it can remain enabled. Exclude it only if the project has customization-specific issues caused by stale block output.
+        layout:
+          frontend: stale_cache_enabled
+        reflection:
+          frontend: stale_cache_enabled
+        config_integration:
+          frontend: stale_cache_enabled
+        config_integration_api:
+          frontend: stale_cache_enabled
+        translate:
+          frontend: stale_cache_enabled
+        # add other cache types as needed...
+
+    SESSION_CONFIGURATION:
+      _merge: true
+      redis:
+        # port: 6372 # ece-tools should detect the port automatically, but if not, set here.
+        timeout: 5
+        disable_locking: 1 # true for max performance. If racing conditions happen when the server has an excessively high number of simultaneous session activities, set it to false.
+        bot_first_lifetime: 60
+        bot_lifetime: 7200
+        max_lifetime: 2592000
+        min_lifetime: 60
+```
+
 >[!ENDTABS]
 
 ## Informations supplémentaires
 
 Consultez les rubriques connexes suivantes :
 
-- [Configuration du service Redis](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/redis)
-- [Déployer les variables](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
+- [Configuration du service Valkey](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey)
+- [Configuration du service Redis](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/redis)
+- [Déployer les variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
 
