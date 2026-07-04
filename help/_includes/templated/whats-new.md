@@ -47,7 +47,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/55fad95c3110f8150097f410115d89299b9e681b">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d'une description détaillée du correctif QPT 1.1.80 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813 : méthodes d'expédition USPS indisponibles ou incorrectes pour les commandes multi-packages</a>.</p>
+      <td><p>Ajout d'une description détaillée du correctif QPT 1.1.80 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813 : méthodes d'expédition USPS indisponibles ou incorrectes pour les commandes multi-packages</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
