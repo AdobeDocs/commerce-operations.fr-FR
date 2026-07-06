@@ -14,7 +14,7 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 82ff85d4d1e1f86d5640a9dcdaa565b01e928091
+source-git-commit: 1924e1d193461fc96851fb478bbfde8a8232f852
 workflow-type: tm+mt
 source-wordcount: 593
 ht-degree: 0%
@@ -27,11 +27,11 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 
 QPT v1.1.80 comprend les correctifs suivants :
 
+1. **[ACP2E-4493](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493.md)** : correction du problème en raison duquel la grille d&#39;archivage des commandes client affiche un statut de commande incorrect lorsque l&#39;indexation asynchrone est activée.
 1. **[ACP2E-4239](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)** : correction du problème en raison duquel les filtres de grille d’administration utilisant les attributs de date ne renvoient aucun résultat en raison d’une incohérence du fuseau horaire entre la date sélectionnée, les valeurs de [!DNL UTC] stockées et le fuseau horaire du magasin configuré.
 1. **[ACP2E-4481](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)** : correction d’un problème en raison duquel la valeur de vente du lot n’est pas recalculée correctement après l’annulation de la commande.
 1. **[ACP2E-4472](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)** : corrige le problème où un enregistrement de guillemet nul est créé dans la table de base de données `quote` pendant le flux de **[!UICONTROL Login as Customer]**.
 1. **[ACP2E-4488](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)** : correction d’un problème en raison duquel l’enregistrement ou la modification des produits dans Admin était lent pour les produits dotés de jeux d’attributs volumineux.
-1. **ACP2E-4493** : correction du problème en raison duquel la grille d&#39;archivage des commandes client affiche un statut de commande incorrect lorsque l&#39;indexation asynchrone est activée.
 1. **ACP2E-4496** : corrige le problème en raison duquel la tâche Analytics cron entraîne une dégradation des performances pendant l’exécution, ce qui entraîne une amélioration des performances globales du système.
 1. **ACP2E-4533** : correction du problème en raison duquel les images d’espace réservé ne se chargent pas sur le storefront lorsqu’un code de magasin est inclus dans l’URL.
 1. **ACP2E-4552** : corrige le problème en raison duquel le statut de la société n’est pas renvoyé dans la réponse GraphQL.

@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 82ff85d4d1e1f86d5640a9dcdaa565b01e928091
+source-git-commit: 1924e1d193461fc96851fb478bbfde8a8232f852
 workflow-type: tm+mt
-source-wordcount: '10316'
+source-wordcount: '10330'
 ht-degree: 0%
 
 ---
@@ -423,7 +423,7 @@ ht-degree: 0%
          - [ACSD-50512 : erreur lors de la mise à jour de la date de début d’une mise à jour d’évaluation de produit téléchargeable](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50512-error-when-updating-the-start-date-for-a-downloadable-product-staging-update.md)
          - [ACSD-50895 : les balises Google Analytics 3 GTM ne sont pas déclenchées si Google Analytics 4 GTM n’est pas configuré](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50895-google-analytics-3-gtm-tags-are-not-fired-if-google-analytics-4-gtm-is-not-configured.md)
          - [ACSD-51471 : l’utilisateur administrateur ne peut pas enregistrer la mise à jour planifiée pour le produit groupé](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51471-admin-user-cannot-save-scheduled-update-for-bundled-product.md)
-         - [ACSD-51120 : le cache des demandes GraphQL GET n’est pas effacé pour les pages CMS qui contiennent des blocs CMS](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
+         - [ACSD-51120 : le cache des demandes GET de GraphQL n’est pas effacé pour les pages CMS qui contiennent des blocs CMS](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
          - [ACSD-51700 : erreur lors du changement d’affichage de la boutique sur la page d’édition de produit téléchargeable](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51700-downloadable-product-error-when-switching-storeviews.md)
          - [ACSD-51735 : le statut de l&#39;article de commande est incorrectement défini sur [!UICONTROL Ordered] lorsque le stock de produits est de 0](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
          - [ACSD-51497 : impossible de trier la page du catalogue par attribut personnalisé de type Liste déroulante](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51497-cannot-sort-catalog-page-by-custom-attribute-of-dropdown-type.md)
@@ -1009,7 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601 : la réenregistrement d&#39;une transaction d&#39;autorisation de paiement utilise l&#39;auto-référence parent_id et déclenche une boucle infinie/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
-         - [ACP2E-4239 : les filtres de date de la grille d’administration ne renvoient aucun résultat en raison d’une incohérence du fuseau horaire](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)
+         - [ACP2E-4493 : la grille d&#39;archivage des commandes client affiche un statut de commande incorrect lorsque l&#39;indexation asynchrone est activée](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493.md) - [ACP2E-4239 : les filtres de date de la grille d&#39;administration ne renvoient aucun résultat en raison d&#39;une incohérence du fuseau horaire](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)
          - [ACP2E-4481 : La vendabilité du bundle du produit a été recalculée de manière incorrecte après annulation de la commande](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)
          - [ACSD-53502 : **[!UICONTROL Add to Cart]** échoue par intermittence sur iOS [!DNL Safari] en raison de la récursivité du script New Relic](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)
          - [ACP2E-4813 : méthodes d&#39;expédition USPS indisponibles ou incorrectes pour les commandes multi-colis](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813.md)
