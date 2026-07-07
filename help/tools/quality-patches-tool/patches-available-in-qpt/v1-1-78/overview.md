@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 24a6d3e2da8666278b0f491e3caaf6b2509c31d8
+source-git-commit: a26830c032f09a41f857afe2f10b8886fbe495e5
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -16,45 +16,28 @@ ht-degree: 0%
 Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.78.
 
 QPT v1.1.78 comprend les correctifs suivants :
-1. **ACP2E-4416** : correction d’un problème en raison duquel les points de récompense client ne sont pas initialisés lors de leur création dans l’administration.
-1. **ACP2E-4419** : correction d’un problème en raison duquel les cartes-cadeaux ne sont pas appliquées correctement lors du passage en caisse après la validation réussie de reCAPTCHA v2 (« Je ne suis pas un robot ») sur le storefront.
-1. **ACP2E-4431** : correction d’un problème en raison duquel les produits associés correspondant aux règles cible étaient supprimés lors du processus de réindexation.
-1. **ACP2E-4448** : correction d’un problème en raison duquel les modifications de configuration effectuées lors des pannes de Redis ne sont pas prises en compte après la récupération de Redis, ce qui entraîne la persistance de valeurs obsolètes.
+
 1. **[ACP2E-4456](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4456.md)** : correction d’un problème en raison duquel l’annulation d’une commande à l’aide d’une mutation GraphQL ne fait pas passer une commande payée entièrement avec des cartes-cadeaux au statut Fermé.
 1. **[ACP2E-4452](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4452.md)** : correction du problème en raison duquel les prix des produits sur la page [!UICONTROL Quick Order] incluent la taxe, quelle que soit la configuration de l’affichage de la taxe.
-1. **ACP2E-4507** : correction d’un problème en raison duquel la configuration des options de mot de passe n’était pas appliquée aux demandes de réinitialisation de mot de passe client effectuées par des mutations de GraphQL.
-1. **ACP2E-4513** : corrige le problème en raison duquel les images CAPTCHA expirées ne sont pas supprimées du système.
-1. **ACP2E-4522** : correction d’une erreur de clé en double intermittente qui se produit dans la table quote_coupons lorsque plusieurs demandes de fusion de panier ou d’enregistrement de devis s’exécutent simultanément.
+1. **[ACP2E-4513](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513.md)** : correction d’un problème en raison duquel les images CAPTCHA expirées ne sont pas supprimées du système.
 1. **[ACP2E-4448](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4448.md)** : correction d’un problème en raison duquel les modifications de configuration effectuées lors des pannes de Redis ne sont pas prises en compte après la récupération de Redis, ce qui entraîne la persistance de valeurs obsolètes.
 1. **[ACP2E-4416](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416.md)** : correction d’un problème en raison duquel les points de récompense client ne sont pas initialisés lors de leur création dans l’administration.
 1. **[ACP2E-4431](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431.md)** : correction du problème en raison duquel les [!UICONTROL Related Products] correspondant aux règles de la cible sont supprimés pendant le processus de réindexation.
 1. **[ACP2E-4419](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)** : correction d’un problème en raison duquel les cartes-cadeaux ne sont pas correctement appliquées lors du passage en caisse après la validation réussie de reCAPTCHA v2 (« Je ne suis pas un robot ») sur le storefront.
-1. **ACP2E-4448** : correction d’un problème en raison duquel les modifications de configuration effectuées lors des pannes de Redis ne sont pas prises en compte après la récupération de Redis, ce qui entraîne la persistance de valeurs obsolètes.
-1. **ACP2E-4452** : correction du problème en raison duquel les prix des produits sur la page Commande rapide incluent la taxe, quelle que soit la configuration de l’affichage de la taxe.
-1. **ACP2E-4456** : correction d’un problème en raison duquel l’annulation d’une commande à l’aide d’une mutation GraphQL ne fait pas passer une commande payée entièrement avec des cartes-cadeaux au statut Fermé.
 1. **[ACP2E-4507](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507.md)** : correction d’un problème en raison duquel [!UICONTROL Password Options] configuration n’était pas appliquée aux demandes de réinitialisation de mot de passe client effectuées par le biais de mutations de GraphQL.
-1. **ACP2E-4513** : correction d’un problème en raison duquel les images CAPTCHA expirées ne sont pas supprimées du système.
-1. **[ACP2E-4522](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4522.md)** : correction d’une erreur de clé en double intermittente qui se produit dans la table quote_coupons lorsque plusieurs demandes de fusion de panier ou d’enregistrement de devis s’exécutent simultanément.
-1. **ACP2E-4528** : corrige le problème de validation de la ville dans les adresses des clients, qui autorise désormais une barre oblique (/) et rejette les caractères non valides tels que !,  », # et ?.
+1. **[ACP2E-4522](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4522.md)** : correction d’une erreur intermittente de clé en double qui se produit sur la table `quote_coupons` lorsque plusieurs demandes de fusion de panier ou d’enregistrement de devis s’exécutent simultanément.
+1. **[ACP2E-4528](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528.md)** : corrige le problème de validation de la ville dans les adresses des clients, qui autorise désormais une barre oblique (/) et rejette les caractères non valides tels que !,  », # et ?.
 1. **[ACP2E-4535](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535.md)** : correction d’un problème en raison duquel l’envoi du formulaire de mot de passe oublié entraîne la destruction ou la régénération de la session (modifications de PHPSESSID) et l’effacement du panier d’invités.
-1. **ACP2E-4540** : correction d’un problème en raison duquel la bibliothèque Fotorama ne se chargeait pas correctement, ce qui rendait visible uniquement la première image jointe.
-1. **ACP2E-4555** : corrige le problème des numéros de téléphone modernes contenant « . » ou « / » ne sont pas validés correctement.
-1. **ACP2E-4565** : corrige le problème en raison duquel la requête GraphQL d’entreprise renvoie « Le client actuel n’est pas autorisé » lorsque l’en-tête X-Adobe-Company est utilisé.
 1. **[ACP2E-4591](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4591.md)** : correction d’un problème en raison duquel les segments de clients basés sur le nombre de commandes, tels que « Nouveaux acheteurs », n’étaient pas mis à jour lorsque des commandes étaient passées via l’API REST.
 1. **[ACP2E-4540](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4540.md)** : corrige le problème de chargement incorrect de la bibliothèque Fotorama, qui rendait visible uniquement la première image jointe.
 1. **[ACP2E-4555](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4555.md)** : corrige le problème des numéros de téléphone modernes contenant « . » ou « / » ne sont pas validés correctement.
 1. **[ACP2E-4565](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565.md)** : corrige le problème en raison duquel la requête GraphQL d’entreprise renvoie « Le client actuel n’est pas autorisé » lorsque l’en-tête X-Adobe-Company est utilisé.
 1. **[ACP2E-4609](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609.md)** : correction du problème en raison duquel la page Mes devis n&#39;affiche aucun devis lorsque certains devis contiennent des produits supprimés.
-1. **ACP2E-4609** : correction du problème en raison duquel la page Mes devis n&#39;affiche aucun devis lorsque certains devis contiennent des produits supprimés.
 1. **[ACP2E-4613](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613.md)** : correction d&#39;un problème en raison duquel les structures de répertoires multimédia volumineuses provoquaient des réponses gettree lentes, ce qui entraînait des temps de chargement étendus pour l&#39;arborescence de répertoires **[!UICONTROL Media Gallery]**.
-1. **ACP2E-4628** : correction d’un problème en raison duquel l’importation de clients avec des adresses e-mail en majuscules entraînait l’erreur de clé de tableau indéfinie, lorsque le Partage de compte était défini sur Global.
-1. **ACP2E-4665** : corrige le problème où les produits enfants de produits configurables contenant des vidéos dans les galeries de produits ne sont pas répertoriés lorsqu’ils sont demandés via l’API REST.
-1. **ACP2E-4732** : correction d&#39;un problème en raison duquel l&#39;indexation partielle s&#39;arrêtait pour les clients avec un grand nombre de mises à jour lorsque la colonne version_id de la table changelog atteignait sa valeur maximale.
-1. **[ACP2E-4763](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4763.md)** : correction du problème en raison duquel la requête customerOrders de GraphQL renvoie des valeurs original_price_include_tax et original_row_total_include_tax gonflées lorsque les prix du catalogue sont définis sur Taxe incluse, en raison d’une application double de la taxe.
-1. **[ACP2E-4732](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4732.md)** : correction d&#39;un problème en raison duquel l&#39;indexation partielle s&#39;arrêtait pour les clients avec un grand nombre de mises à jour lorsque la colonne version_id de la table changelog atteignait sa valeur maximale.
+1. **[ACP2E-4628](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4628.md)** : correction d’un problème en raison duquel l’importation de clients avec des adresses e-mail en majuscules entraînait l’erreur de clé de tableau indéfinie, lorsque le Partage de compte était défini sur Global.
+1. **[ACP2E-4763](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4763.md)** : correction du problème en raison duquel la requête customerOrders de GraphQL renvoie des valeurs `original_price_including_tax` et `original_row_total_including_tax` gonflées lorsque les prix de catalogue sont définis sur TTC en raison d’une application double de la taxe.
+1. **[ACP2E-4732](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4732.md)** : correction d’un problème en raison duquel l’indexation partielle s’arrêtait pour les clients avec un grand nombre de mises à jour lorsque la colonne `version_id` de la table du journal des modifications atteignait sa valeur maximale.
 1. **[ACP2E-4665](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665.md)** : corrige le problème où les produits enfants de produits configurables contenant des vidéos dans les galeries de produits ne sont pas répertoriés lorsqu’ils sont demandés via l’API REST.
-1. **ACP2E-4665** : corrige le problème où les produits enfants de produits configurables contenant des vidéos dans les galeries de produits ne sont pas répertoriés lorsqu’ils sont demandés via l’API REST.
-1. **ACP2E-4763** : correction du problème en raison duquel la requête customerOrders de GraphQL renvoie des valeurs original_price_include_tax et original_row_total_include_tax gonflées lorsque les prix du catalogue sont définis sur Taxe incluse, en raison d’une application double de la taxe.
-1. **ACSD-60989** : correction d’un problème en raison duquel la modification d’une colonne avec une clé étrangère par le biais d’un schéma déclaratif entraînait des erreurs sur MariaDB.
+1. **[ACSD-60989](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acsd-60989.md)** : correction d’un problème en raison duquel la modification d’une colonne avec une clé étrangère par le biais d’un schéma déclaratif entraînait des erreurs sur MariaDB.
 
 Utilisez le menu à gauche pour accéder à une page de correctif spécifique.
