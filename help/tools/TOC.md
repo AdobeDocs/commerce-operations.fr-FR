@@ -2,9 +2,9 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 1924e1d193461fc96851fb478bbfde8a8232f852
+source-git-commit: 5775ba3b4486899bccd59638db6d54f39aed090b
 workflow-type: tm+mt
-source-wordcount: '10330'
+source-wordcount: '10334'
 ht-degree: 0%
 
 ---
@@ -1024,6 +1024,8 @@ ht-degree: 0%
          - [ACP2E-4808 : Affichage du poids du produit sans unité de mesure sur le storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
          - [ACP2E-4533 : le chargement des images d’espace réservé échoue sur le storefront lorsque l’URL inclut le code du magasin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
          - [ACP2E-4156: [!DNL REST] La validation de l’adresse d’expédition de l’API ignore la configuration des attributs d’administration](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
+      - v1.1.81 {#v1-1-81}
+         - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
    - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Référence des outils de ligne de commande {#cli-reference}
    - [Adobe Commerce (sur site)](reference/commerce-on-premises.md)
