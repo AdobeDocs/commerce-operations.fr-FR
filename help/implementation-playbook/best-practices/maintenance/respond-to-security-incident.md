@@ -5,7 +5,7 @@ feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
 source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -73,12 +73,12 @@ La première étape de l’analyse des incidents consiste à rassembler autant d
 
   Utilisez l’onglet **Sécurité** de l’outil pour obtenir une vue claire des problèmes de sécurité potentiels afin d’identifier les causes premières et de garantir des performances optimales des sites.
 
-- Analysez les journaux avec [Journaux New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=fr)
+- Analysez les journaux avec [Journaux &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=fr)
 
   Les projets Pro d’Adobe Commerce sur les infrastructures cloud incluent le service [Journaux New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=fr). Le service est préconfiguré pour agréger toutes les données de journal de vos environnements d’évaluation et de production afin de les afficher dans un tableau de bord de gestion des journaux centralisé où vous pouvez rechercher et visualiser des données agrégées.
 
   Pour d’autres projets Commerce, vous pouvez configurer et utiliser le service [Journaux New Relic](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) pour effectuer les tâches suivantes :
-   - Utilisez [Requêtes New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) pour rechercher des données de journal agrégées.
+   - Utilisez [Requêtes &#x200B;](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) pour rechercher des données de journal agrégées.
    - Visualisez les données de journal via l’application Journaux New Relic.
 
 ## Comptes, code et base de données d’audit
@@ -99,7 +99,7 @@ Continuez à surveiller de près le site après l&#39;incident, car de nombreux 
 
 ### Code audit
 
-- Depuis l’administration, passez en revue la configuration [En-tête et pied de page HTML](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=fr) à tous les niveaux de l’étendue, y compris `website` et `store view`. Supprimez tout code JavaScript inconnu des scripts et des feuilles de style, ainsi que divers paramètres d’HTML. Conserver uniquement le code reconnu tel que les fragments de code de suivi.
+- Depuis l’administration, passez en revue la configuration [En-tête et pied de page &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=fr) à tous les niveaux de l’étendue, y compris `website` et `store view`. Supprimez tout code JavaScript inconnu des scripts et des feuilles de style, ainsi que divers paramètres d’HTML. Conserver uniquement le code reconnu tel que les fragments de code de suivi.
 
 - Comparez la base de code de production actuelle à la base de code stockée dans le système de contrôle de version (VCS).
 

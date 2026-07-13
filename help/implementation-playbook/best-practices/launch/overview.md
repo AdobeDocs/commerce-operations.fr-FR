@@ -5,7 +5,7 @@ exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
 feature: Best Practices
 source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '180'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques pou
 | [Service Adobe Security Notification](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Abonnez-vous aux notifications de sécurité d’Adobe. |
 | [Sécurisez votre site et votre infrastructure Commerce](security-best-practices.md) | Renforcez la position de sécurité des installations Commerce pour protéger le storefront, l’administration, l’infrastructure et les données Commerce contre les accès non autorisés et les cyber-attaques. |
 | [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=fr) | Configurez Google reCAPTCHA pour l’accès administrateur et diverses actions de storefront initiées par les clients enregistrés. |
-| [Configuration des robots d’exploration web](robots-txt.md) | Transmettez les instructions relatives à votre site Adobe Commerce aux robots d’exploration web. |
+| [Configurer des robots d&#39;exploration web](robots-txt.md) | Transmettez les instructions relatives à votre site Adobe Commerce aux robots d&#39;exploration web. |
 | [Vérifier la configuration de la sécurité](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=fr) | Consultez les éléments de la liste de contrôle avant de lancer un site d’infrastructure cloud Adobe Commerce. |
 
 ## Surveillance des performances

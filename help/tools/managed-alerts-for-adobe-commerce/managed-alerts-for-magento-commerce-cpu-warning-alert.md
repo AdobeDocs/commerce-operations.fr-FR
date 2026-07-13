@@ -6,7 +6,7 @@ role: Admin
 exl-id: 0abcf21b-2ccf-42f5-8823-99282fccadcf
 source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Cet article décrit les étapes de dépannage à suivre lorsque vous recevez une alerte CPU pour Adobe Commerce dans [!DNL New Relic]. Une action immédiate est nécessaire pour remédier au problème. L’alerte se présente comme suit, selon le canal de notification d’alerte que vous avez sélectionné.
 
-![Alerte CPU](../../assets/managed-alerts/cpu-warning-magento-managed.png){width="500"}
+![Alerte &#x200B;](../../assets/managed-alerts/cpu-warning-magento-managed.png){width="500"}
 
 ## Produits et versions concernés
 
