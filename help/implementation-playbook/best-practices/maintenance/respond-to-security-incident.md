@@ -18,7 +18,7 @@ Le respect de ces bonnes pratiques peut contribuer à prévenir les accès non a
 
 >[!TIP]
 >
->Adobe a constaté que la plupart des incidents de sécurité se produisent lorsque des acteurs malveillants tirent parti de vulnérabilités existantes non corrigées, de mots de passe inappropriés ainsi que de paramètres de propriété et d’autorisation faibles dans la configuration de l’application et de l’infrastructure Commerce. Minimisez l’occurrence des incidents de sécurité en examinant et en suivant les bonnes pratiques de sécurité d’Adobe lors de la configuration, de la configuration et de la mise à jour des installations d’Adobe Commerce. Voir [ Sécurisation de votre site et de votre infrastructure Commerce](../launch/security-best-practices.md).
+>Adobe a constaté que la plupart des incidents de sécurité se produisent lorsque des acteurs malveillants tirent parti de vulnérabilités existantes non corrigées, de mots de passe inappropriés ainsi que de paramètres de propriété et d’autorisation faibles dans la configuration de l’application et de l’infrastructure Commerce. Minimisez l’occurrence des incidents de sécurité en examinant et en suivant les bonnes pratiques de sécurité d’Adobe lors de la configuration, de la configuration et de la mise à jour des installations d’Adobe Commerce. Voir [&#x200B; Sécurisation de votre site et de votre infrastructure Commerce](../launch/security-best-practices.md).
 
 
 ## Produits et versions concernés
@@ -73,12 +73,12 @@ La première étape de l’analyse des incidents consiste à rassembler autant d
 
   Utilisez l’onglet **Sécurité** de l’outil pour obtenir une vue claire des problèmes de sécurité potentiels afin d’identifier les causes premières et de garantir des performances optimales des sites.
 
-- Analysez les journaux avec [Journaux ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html)
+- Analysez les journaux avec [Journaux &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html)
 
   Les projets Pro d’Adobe Commerce sur les infrastructures cloud incluent le service [Journaux New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html). Le service est préconfiguré pour agréger toutes les données de journal de vos environnements d’évaluation et de production afin de les afficher dans un tableau de bord de gestion des journaux centralisé où vous pouvez rechercher et visualiser des données agrégées.
 
   Pour d’autres projets Commerce, vous pouvez configurer et utiliser le service [Journaux New Relic](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) pour effectuer les tâches suivantes :
-   - Utilisez [Requêtes ](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) pour rechercher des données de journal agrégées.
+   - Utilisez [Requêtes &#x200B;](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) pour rechercher des données de journal agrégées.
    - Visualisez les données de journal via l’application Journaux New Relic.
 
 ## Comptes, code et base de données d’audit
@@ -99,7 +99,7 @@ Continuez à surveiller de près le site après l&#39;incident, car de nombreux 
 
 ### Code audit
 
-- Depuis l’administration, passez en revue la configuration [En-tête et pied de page ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) à tous les niveaux de l’étendue, y compris `website` et `store view`. Supprimez tout code JavaScript inconnu des scripts et des feuilles de style, ainsi que divers paramètres d’HTML. Conserver uniquement le code reconnu tel que les fragments de code de suivi.
+- Depuis l’administration, passez en revue la configuration [En-tête et pied de page &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) à tous les niveaux de l’étendue, y compris `website` et `store view`. Supprimez tout code JavaScript inconnu des scripts et des feuilles de style, ainsi que divers paramètres d’HTML. Conserver uniquement le code reconnu tel que les fragments de code de suivi.
 
 - Comparez la base de code de production actuelle à la base de code stockée dans le système de contrôle de version (VCS).
 
