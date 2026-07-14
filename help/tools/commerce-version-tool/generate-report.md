@@ -2,16 +2,10 @@
 title: Génération d’un rapport d’état des correctifs
 description: Découvrez comment utiliser pour générer  [!DNL Commerce Version Tool]  rapports d’état des correctifs Adobe Commerce au format JSON ou CSV.
 TQID: 'https://experienceleague.adobe.com/-lC-20YMpbTM3tTZjbBO5zD5gb9n7cRah5Ycy8wQoyw'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: eafe79321da03f4778dd9e1b290141ef082a5eaf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: cb0391ae368b53a795535f3adb636628a339b963
 workflow-type: tm+mt
 source-wordcount: 590
 ht-degree: 2%
@@ -40,13 +34,13 @@ L’outil [!DNL CVT] vérifie les informations d’identification de correctif `
 À partir de la racine du projet Adobe Commerce, exécutez :
 
 ```bash
-vendor/bin/patch-status
+php vendor/bin/patch-status
 ```
 
 Pour vérifier une autre installation d’Adobe Commerce, utilisez l’option `--root` :
 
 ```bash
-vendor/bin/patch-status --root=/path/to/commerce
+php vendor/bin/patch-status --root=/path/to/commerce
 ```
 
 ## Options des commandes
@@ -68,7 +62,7 @@ JSON est le format de sortie par défaut. La sortie CSV est prise en charge pour
 L’exemple suivant affiche la sortie JSON par défaut.
 
 ```bash
-vendor/bin/patch-status
+php vendor/bin/patch-status
 ```
 
 ```json
@@ -100,7 +94,7 @@ vendor/bin/patch-status
 Pour générer une sortie CSV, utilisez l’option `--format=csv` :
 
 ```bash
-vendor/bin/patch-status --format=csv
+php vendor/bin/patch-status --format=csv
 ```
 
 La sortie CSV produit une ligne par CVE et convient aux feuilles de calcul, aux scanners, aux tableaux de bord et aux outils de conformité.
