@@ -2,9 +2,11 @@
 user-guide-title: Outils
 user-guide-description: Découvrez les différents outils que vous pouvez utiliser avec Adobe Commerce, leur utilisation, le processus d’installation et comment y accéder.
 feature: Configuration
-source-git-commit: 5775ba3b4486899bccd59638db6d54f39aed090b
+nduge: true
+color: red
+source-git-commit: 79b40bed0a39ad7dd0632a8004d568892227be09
 workflow-type: tm+mt
-source-wordcount: '10334'
+source-wordcount: '10355'
 ht-degree: 0%
 
 ---
@@ -26,6 +28,11 @@ ht-degree: 0%
    - [Extensions](site-wide-analysis-tool/extensions.md)
    - [Alertes](site-wide-analysis-tool/alerts.md)
    - [Correctifs](site-wide-analysis-tool/patches.md)
+- [!DNL Commerce Version Tool] {#commerce-version-tool}
+   - [Introduction](commerce-version-tool/intro.md)
+   - [Génération d’un rapport d’état des correctifs](commerce-version-tool/generate-report.md)
+   - [Dépannage](commerce-version-tool/troubleshooting.md)
+   - [Notes de mise à jour](commerce-version-tool/release-notes.md)
 - MAJUSCULES {#caps-tool}
    - {hide-from-toc}[Introduction](caps-tool/intro.md)
    - {hide-from-toc}[Accès](caps-tool/access.md)
@@ -1026,6 +1033,7 @@ ht-degree: 0%
          - [ACP2E-4156: [!DNL REST] La validation de l’adresse d’expédition de l’API ignore la configuration des attributs d’administration](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
       - v1.1.81 {#v1-1-81}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+         - [ACP2E-4300 : les autorisations du catalogue Storefront ne sont pas mises à jour après le changement du groupe de clients administrateurs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
    - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Référence des outils de ligne de commande {#cli-reference}
    - [Adobe Commerce (sur site)](reference/commerce-on-premises.md)
