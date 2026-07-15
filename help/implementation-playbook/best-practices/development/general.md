@@ -6,7 +6,7 @@ role: Developer
 exl-id: 35de9849-2d19-4bb6-b920-9ce3838bc8bc
 source-git-commit: 68dc4635df9fc411925fe0d48a578edece8895dc
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -61,4 +61,4 @@ Les validations DOIVENT être accompagnées de messages de validation significat
 1. [Fonctions non sécurisées](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/) NE DOIVENT PAS être utilisées.
 1. [Stratégies de prévention XSS](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) DOIVENT être appliquées.
 1. [Politiques de sécurité du contenu](https://developer.adobe.com/commerce/php/development/security/content-security-policies/) DOIT être appliqué.
-1. Les nouvelles instances d’Adobe Commerce DOIVENT être diffusées à la version de sécurité la plus récente d’une version qui n’a pas encore atteint la date de « Fin des correctifs de sécurité ». Voir [Politique relative au cycle de vie du logiciel Adobe Commerce](../../../release/lifecycle-policy.md).
+1. Les nouvelles instances d’Adobe Commerce DOIVENT être diffusées à la version de sécurité la plus récente d’une version qui n’a pas encore atteint la date de « Fin des correctifs de sécurité ». Voir [Politique relative au cycle de vie du logiciel &#x200B;](../../../release/lifecycle-policy.md).
