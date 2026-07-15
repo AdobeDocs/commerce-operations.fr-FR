@@ -61,4 +61,4 @@ Les validations DOIVENT être accompagnées de messages de validation significat
 1. [Fonctions non sécurisées](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/) NE DOIVENT PAS être utilisées.
 1. [Stratégies de prévention XSS](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) DOIVENT être appliquées.
 1. [Politiques de sécurité du contenu](https://developer.adobe.com/commerce/php/development/security/content-security-policies/) DOIT être appliqué.
-1. Les nouvelles instances d’Adobe Commerce DOIVENT être diffusées à la version de sécurité la plus récente d’une version qui n’a pas encore atteint la date de « Fin des correctifs de sécurité ». Voir [Politique relative au cycle de vie du logiciel ](../../../release/lifecycle-policy.md).
+1. Les nouvelles instances d’Adobe Commerce DOIVENT être diffusées à la version de sécurité la plus récente d’une version qui n’a pas encore atteint la date de « Fin des correctifs de sécurité ». Voir [Politique relative au cycle de vie du logiciel &#x200B;](../../../release/lifecycle-policy.md).
