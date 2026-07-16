@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 11f63d811ab907de5e93c121ef8fdf0de294b25f
+source-git-commit: af9c1cd1091aa70aa247064f076817895286c4b8
 workflow-type: tm+mt
-source-wordcount: '10381'
+source-wordcount: '10408'
 ht-degree: 0%
 
 ---
@@ -1033,6 +1033,8 @@ ht-degree: 0%
          - [ACP2E-4156: [!DNL REST] La validation de l’adresse d’expédition de l’API ignore la configuration des attributs d’administration](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
       - v1.1.81 {#v1-1-81}
          - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+         - [ACP2E-4786 : l’exportation du produit échoue lorsque le stockage distant AWS S3 est configuré](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786.md)
+         - [ACP2E-4801 : Les quantités d&#39;option de produit groupé ne sont pas mises à jour lors de la reconfiguration d&#39;un devis négociable dans Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801.md)
          - [ACP2E-4630 : les noms de produits longs chevauchent des colonnes adjacentes dans des PDF de vente de plusieurs pages après les sauts de page](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)
          - [ACP2E-4680 : Les produits non vendables disparaissent des cotations négociables finalisées](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
          - [ACP2E-4300 : les autorisations du catalogue Storefront ne sont pas mises à jour après le changement du groupe de clients administrateurs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
