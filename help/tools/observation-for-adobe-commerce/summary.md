@@ -3,9 +3,9 @@ title: Onglet [!UICONTROL Summary]
 description: En savoir plus sur l’onglet [!UICONTROL Summary] de  [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 5a0455b61824cb1946e29dba3ff7bfd9d225b110
+source-git-commit: 818c25db0442f5288191ee414b7e2ab07c4cbedf
 workflow-type: tm+mt
-source-wordcount: '2494'
+source-wordcount: '2636'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,8 @@ L’onglet [!UICONTROL Summary] de [!DNL Observation for Adobe Commerce] est des
 ![Présentation des transactions](../../assets/tools/transaction-overview.jpg)
 
 ### Qu&#39;est-ce qu&#39;une transaction ?
+
+[Qu&#39;est-ce qu&#39;une transaction ?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often,when%20the%20response%20is%20sent)
 
 « Au [!DNL New Relic], une transaction est définie comme une unité logique de travail dans une application logicielle. Plus précisément, il fait référence aux appels de fonction et aux appels de méthode qui constituent cette unité de travail. Il fait souvent référence à une transaction web, qui représente une activité qui se produit entre le moment où l’application reçoit une requête web et le moment où la réponse est envoyée. »
 
@@ -68,7 +70,7 @@ Le **[!UICONTROL Alerts during timeframe]** affiche toutes les alertes, y compri
 
 ## [!UICONTROL CPU Usage]
 
-![Utilisation de CPU](../../assets/tools/cpu-usage.jpg)
+![Utilisation de &#x200B;](../../assets/tools/cpu-usage.jpg)
 
 Si la trame de **[!UICONTROL CPU Usage]** est vide, cela indique que l’application d’infrastructure de [!DNL New Relic] n’est pas activée. Si votre site est en version Starter, vous ne voyez pas ces informations. Si votre site est en version Pro, ouvrez un ticket d’assistance [support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr) pour que les [!DNL New Relic Infrastructure] soient activées pour votre site.
 
@@ -115,7 +117,7 @@ Le cadre de **[!UICONTROL Deployment State]** facette des phases de déploiement
 * &#39;%Set flag: .static_content_deploy%&#39;) as &#39;SCD&#39;
 * &#39;%REMARQUE : commande Generate terminée%&#39;) en tant que &#39;gen_compl&#39;
 * &#39;%REMARQUE : déploiement terminé%&#39;) comme &#39;deploy_compl&#39;
-* &#39;%REMARQUE : démarrage après le déploiement.%&#39;) comme &#39;start_deploy&#39;
+* &#39;%REMARQUE : démarrage après le déploiement.%&#39;) en tant que &#39;start_deploy&#39;
 * &#39;%REMARQUE : le post-déploiement est terminé%&#39;) comme &#39;déploiement&#39;
 * &#39;%deploy-complete%&#39;) comme &#39;cl_deploy_compl&#39;
 
@@ -264,7 +266,7 @@ Le cadre de **[!UICONTROL Database mysql-slow.log]** compte les entrées du fich
 * &#39;%SLAVE synchronization: No space left on device%&#39;) as &#39;space&#39;
 * &#39;%Server started, Redis version%&#39;) as &#39;serv_start&#39;
 * &#39;%Le serveur est maintenant prêt à accepter les connexions%&#39;) comme &#39;prêt&#39;
-* &#39;%Connexion avec le maître perdue.%&#39;) as &#39;mstr_loss&#39;
+* &#39;%Connexion avec maître perdue.%&#39;) comme &#39;mstr_loss&#39;
 * &#39;%+sentinelle descendante%&#39;) comme &#39;+sentinelle&#39;
 * &#39;%-sentinel%&#39;) as &#39;-sentinal&#39;
 * &#39;%-slave%&#39;) comme &#39;-slave&#39;, &#39;%+slave%&#39;) comme &#39;+slave&#39;
@@ -295,7 +297,7 @@ Le cadre **[!UICONTROL PHP errors]** montre le nombre d&#39;erreurs PHP avec des
 **Erreurs et messages PHP :**
 
 * &#39;%worker_connections are not enough%&#39;) as &#39;worker&#39;
-* &#39;%Erreur fatale PHP : taille de la mémoire autorisée !%&#39;) as &#39;mem_size&#39;
+* &#39;%Erreur fatale PHP : taille de la mémoire autorisée !%&#39;) en tant que &#39;mem_size&#39;
 * &#39;%exited on signal 11 (SIGSEGV)%&#39;) as &#39;sig_11&#39;
 * &#39;%exited on signal 7 (SIGBUS)%&#39;) as &#39;sig_7&#39;
 * &#39;%increased pm.start_servers%&#39;) as &#39;pmstart_serv&#39;
