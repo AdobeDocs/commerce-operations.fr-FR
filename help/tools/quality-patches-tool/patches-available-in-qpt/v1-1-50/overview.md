@@ -7,7 +7,7 @@ exl-id: 4e136531-6bd4-4294-9a5a-66d19eb136db
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ QPT v1.1.50 comprend les correctifs suivants :
 1. **ACSD-59036** : corrige une exception qui se produit lors du chargement des prix des produits avec des limites inférieure et supérieure égales à *$0*.
 1. **ACSD-59229** : corrige le problème d’enregistrement des informations relatives au groupe de clients dans un segment incorrect en raison de l’ancienne valeur du [!UICONTROL X-Magento-Vary] dans la requête.
 1. **ACSD-59378** : correction d’un problème en raison duquel les réécritures d’URL au niveau du magasin ne sont pas correctement mises à jour lors de l’importation.
-1. **ACSD-59514** : corrige le problème de rendu des formulaires dans la zone d’administration avec [!DNL Page Builder] lancez le *[!DNL Page Builder]pendant 5 secondes sans libérer les verrous.* erreur dans la console du navigateur après l’envoi du formulaire et les modifications ne peuvent pas être enregistrées.
+1. **ACSD-59514** : corrige le problème de rendu des formulaires dans la zone d’administration avec [!DNL Page Builder] lancez le *[!DNL Page Builder]pendant 5 secondes sans libérer les verrous.* erreur dans la console du navigateur après l’envoi du formulaire. les modifications ne peuvent pas être enregistrées.
 1. **ACSD-60303** : corrige le problème en raison duquel une commande de l’administrateur ne peut pas être passée si la minimisation d’HTML est activée.
 1. **ACSD-60441** : corrige le problème de mise à jour des clients via `V1/customers REST API` point d’entrée lors de l’utilisation du jeton d’accès à l’intégration généré à partir du serveur principal.
 
