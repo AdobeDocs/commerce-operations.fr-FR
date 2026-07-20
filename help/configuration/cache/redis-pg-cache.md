@@ -3,27 +3,17 @@ title: Configuration de Redis pour le cache de page et par défaut
 description: Découvrez comment configurer Redis en tant que serveur principal par défaut et du cache de page pour Adobe Commerce. Découvrez les commandes de l’interface de ligne de commande, les paramètres env.php et la vérification de la connexion.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
+badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
 autotag-review: '2026-06-22T21:55:53.227Z'
 TQID: 'https://experienceleague.adobe.com/2KjWE19ud32PUdvJQWNWkK338ysaa5vt0mA4EyyP66I'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: ec95c99d060f3c45095236d41729648abf389dd1
 workflow-type: tm+mt
-source-wordcount: 1261
+source-wordcount: 1411
 ht-degree: 0%
 
 ---
@@ -235,6 +225,59 @@ Comme il s’agit d’un indicateur , vous ne pouvez pas le désactiver avec une
     ],
 ```
 
+## Optimisation des performances
+
+Si vous utilisez Symfony Cache, vous pouvez optimiser davantage les performances en configurant le sérialiseur Igbinary, en installant l&#39;extension PHP igbinary et l&#39;extension phpredis, et en activant les connexions persistantes.
+
+### Sérialiseur Igbinaire
+
+Le sérialiseur Igbinary offre des améliorations de performances significatives par rapport à la sérialisation par défaut de PHP. Il doit être configuré manuellement dans `app/etc/env.php` :
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '0',
+                'port' => '6379',
+                'serializer' => 'igbinary',  // Enable Igbinary serialization
+            ]
+        ],
+        'page_cache' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '1',
+                'port' => '6379',
+                'serializer' => 'igbinary',  // Enable Igbinary for page cache too
+            ]
+        ]
+    ]
+]
+```
+
+### Installer l&#39;extension PHP Igbinary
+
+Pour utiliser la sérialisation igbinary, vous devez installer l&#39;extension PHP Igbinary.
+
+**Utilisation d’apt (recommandé pour Debian/Ubuntu)** :
+
+```bash
+sudo apt-get install php-igbinary
+sudo systemctl restart php-fpm
+php -m | grep igbinary
+```
+
+**Utilisation de pecl (méthode alternative)** :
+
+```bash
+sudo pecl install igbinary
+echo "extension=igbinary.so" | sudo tee /etc/php/8.3/mods-available/igbinary.ini
+sudo phpenmod igbinary
+sudo systemctl restart php-fpm
+php -m | grep igbinary
+```
+
 ### Extension PHP Redis
 
 Utilisez l&#39;extension native PHP Redis (`phpredis`) lorsque votre environnement la supporte :
@@ -259,6 +302,98 @@ echo "extension=redis.so" | sudo tee /etc/php/<version>/mods-available/redis.ini
 sudo phpenmod redis
 sudo systemctl restart php-fpm
 php -m | grep redis
+```
+
+**Comparaison des performances** :
+
+| Fonctionnement | Predis | phpredis | Amélioration |
+|-----------|--------|----------|-------------|
+| Cache GET | 1-5ms | 0,5 à 2 ms | 2 à 3 fois plus rapide |
+| Cache SET | 2-6 ms | 0,8 à 2,5 ms | 2 à 3 fois plus rapide |
+| Opérations de balisage | 10-30ms | 3 à 10 ms | 3 à 4 fois plus rapide |
+
+### Connexions persistantes
+
+Les connexions persistantes réutilisent les connexions Redis existantes entre les requêtes, ce qui accélère les opérations de mise en cache de 5 à 15 %. Configurez dans `app/etc/env.php` :
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '0',
+                'port' => '6379',
+                'persistent' => '1',
+                'persistent_id' => 'cache_default',
+                'timeout' => '2.5',
+                'read_timeout' => '2.0',
+            ]
+        ],
+        'page_cache' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '1',
+                'port' => '6379',
+                'persistent' => '1',
+                'persistent_id' => 'cache_fpc',
+            ]
+        ]
+    ]
+]
+```
+
+>[!IMPORTANT]
+>
+>Utilisez un `persistent_id` unique pour chaque type de cache afin d’éviter les conflits de connexion.
+
+### Configuration optimisée complète
+
+Voici une configuration Redis prête pour l’exploitation combinant toutes les optimisations de performances :
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'id_prefix' => 'b0b_',
+            'backend' => 'redis',
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '0',
+                'port' => '6379',
+                'serializer' => 'igbinary',
+                'compress_data' => '1',
+                'compression_lib' => 'gzip',
+                'persistent' => '1',
+                'persistent_id' => 'cache_default',
+                'timeout' => '2.5',
+                'read_timeout' => '2.0',
+                'use_lua' => '1',
+                'use_lua_on_gc' => '1',
+                'preload_keys' => [
+                    'b0b_EAV_ENTITY_TYPES',
+                    'b0b_GLOBAL_PLUGIN_LIST',
+                    'b0b_DB_IS_UP_TO_DATE',
+                    'b0b_SYSTEM_DEFAULT',
+                ],
+            ]
+        ],
+        'page_cache' => [
+            'id_prefix' => 'b0b_',
+            'backend' => 'redis',
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '1',
+                'port' => '6379',
+                'serializer' => 'igbinary',
+                'compress_data' => '0',
+                'persistent' => '1',
+                'persistent_id' => 'cache_fpc',
+            ]
+        ]
+    ],
+    'allow_parallel_generation' => false
+]
 ```
 
 ## Vérifier la connexion Redis
