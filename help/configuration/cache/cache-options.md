@@ -18,7 +18,7 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 3d64249bf778a5aa73db22a532a454bb37d6dd37
 workflow-type: tm+mt
 source-wordcount: 309
 ht-degree: 0%
@@ -31,6 +31,10 @@ ht-degree: 0%
 
 L’application Commerce utilise un cache de bas niveau frontal et principal pour permettre l’accès au stockage du cache. Commerce prend en charge plusieurs stratégies et back-ends de mise en cache, chacun adapté à différents cas d’utilisation. Cette page décrit les serveurs principaux disponibles et leurs différences.
 
+>[!NOTE]
+>
+>[Vernis](config-varnish.md) gère la mise en cache de pleine page au niveau HTTP et n’utilise pas le serveur principal du cache de bas niveau.
+
 ## Options de cache du serveur principal
 
 Le tableau suivant résume les caches principaux disponibles :
@@ -42,9 +46,9 @@ Le tableau suivant résume les caches principaux disponibles :
 | [&#x200B; Valkey &#x200B;](config-valkey.md) | Alternative open source compatible avec Redis. | [Utiliser Valkey pour le cache par défaut](valkey-pg-cache.md) |
 | [&#x200B; Base de données &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) | Mise en cache de base de données. | [Création de moteurs de cache personnalisés](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/){target="_blank"} (documentation Adobe destinée aux développeurs) |
 
->[!NOTE]
+>[!IMPORTANT]
 >
->[Vernis](config-varnish.md) gère la mise en cache de pleine page au niveau HTTP et n’utilise pas le serveur principal du cache de bas niveau.
+>{{redis-cache-support}}
 
 ## Approches de mise en œuvre
 
