@@ -2,7 +2,7 @@
 title: Politique de version
 description: Découvrez les types de versions d’Adobe Commerce, le marketing par rapport au contrôle de version des modules, les versions de correctif et de sécurité, les versions bêta, les correctifs et la politique de version globale.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: 48fc318078cbf1800522aeb43d8927b72727e7ed
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -16,9 +16,9 @@ Adobe Commerce utilise le [contrôle de version sémantique](https://semver.org/
 - **Version majeure**—2
 - **version MINEURE**—2.4
 - **Version de PATCH**—2.4.8
-   - **Mise à jour du correctif de SÉCURITÉ**-2.4.8-p1
-      - Correctif de sécurité
-      - Amélioration de la sécurité
+  - **Mise à jour du correctif de SÉCURITÉ**-2.4.8-p1
+    - Correctif de sécurité
+    - Amélioration de la sécurité
 - **version du correctif ALPHA**-2.4.8-alpha1
 - **version du correctif BETA**—2.4.8-beta1
 - **Version Extensibilité, Infrastructure et Services**
@@ -81,4 +81,4 @@ Les correctifs individuels contiennent des correctifs de qualité à faible impa
 
 Créé par du personnel non Adobe pour résoudre un problème ou modifier le code Adobe Commerce pour diverses raisons.
 
-<!-- Last updated from includes: 2026-04-20 10:12:04 -->
+<!-- Last updated from includes: 2026-06-16 17:36:23 -->
