@@ -1,7 +1,7 @@
 ---
-source-git-commit: 44c3c7eaf57d858b5810e6ba6f510e9fea4e1a1a
+source-git-commit: 73d9b59320fac5ad73e893e87aea1edb4bb72a06
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -76,11 +76,14 @@ Pour obtenir des instructions détaillées sur la configuration, le dépannage e
 
 ## Tâches de classement disponibles
 
-Ce référentiel utilise les tâches rake fournies par `adobe-comdox-exl-rake-tasks` gem. Pour afficher toutes les tâches disponibles, exécutez :
+Ce référentiel utilise les tâches principales fournies par le
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+gem. Pour afficher toutes les tâches disponibles, exécutez :
 
 ```bash
 cd _jekyll
 bundle exec rake --tasks
 ```
 
-
+Pour les tâches spécifiques au référentiel, le format de fichier et la configuration des relations d’inclusion
+pour plus d’informations, consultez la section [`_jekyll/ReadMe.md`](_jekyll/ReadMe.md).

@@ -14,9 +14,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: af9c1cd1091aa70aa247064f076817895286c4b8
+source-git-commit: db5e09759abee078ed36e097b397f2dacbc2fef7
 workflow-type: tm+mt
-source-wordcount: 273
+source-wordcount: 270
 ht-degree: 0%
 
 ---
@@ -27,10 +27,11 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 
 QPT v1.1.81 comprend les correctifs suivants :
 
+
+1. **[ACP2E-4401](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401.md)** : correction du problème en raison duquel le [!UICONTROL Scheduled Update Preview] du lien [!UICONTROL Home Page] avec les produits configurables redirige vers le [!UICONTROL maintenance page] au lieu d’afficher la liste des produits.
 1. **[ACP2E-4300](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)** : correction d’un problème en raison duquel la modification d’un groupe de clients dans l’administrateur ne met pas à jour les autorisations de catalogue sur le storefront, ce qui fait que le catalogue et le panier reflètent des autorisations obsolètes.
-1. **ACP2E-4401** : correction du problème en raison duquel le [!UICONTROL Scheduled Update Preview] du lien de la page d’accueil vers les produits configurables redirige vers la page de maintenance au lieu d’afficher la liste des produits.
 1. **ACP2E-4395** : la création du produit API Giftcard affichera désormais une erreur si aucun montant n&#39;est spécifié pour la portée globale.
-1. **ACP2E-4468** : correction d’un problème en raison duquel les utilisateurs [!UICONTROL Admin] disposant d’autorisations d’étendue de site web ne pouvaient pas modifier le contenu des bannières.
+1. **[ACP2E-4468](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468.md)** : correction d’un problème en raison duquel les utilisateurs administrateurs disposant d’autorisations d’étendue de site web ne pouvaient pas modifier le contenu des bannières.
 1. **[ACP2E-4630](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)** : correction du problème en raison duquel les noms de produits longs avec des options personnalisées chevauchent des colonnes ou des éléments adjacents dans des PDF de plusieurs pages Facture, Expédition, Avoir et Retour après les sauts de page, rendant les éléments de ligne illisibles.
 1. **[ACP2E-4680](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)** : correction du problème en raison duquel les produits non vendables ou supprimés disparaissent des devis négociables finalisés.
 1. **ACP2E-4709** : correction d’un problème en raison duquel l’enregistrement des pages CMS échouait lors de l’utilisation de Page Builder.
