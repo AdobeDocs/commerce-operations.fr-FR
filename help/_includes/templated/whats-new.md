@@ -1,7 +1,7 @@
 ---
-source-git-commit: 970dcea74edf889a6cb5abf1449d63dfe2d7d654
+source-git-commit: 06df92107c98f188a5dcb4b56aa6d61d3c594a7e
 workflow-type: tm+mt
-source-wordcount: '2772'
+source-wordcount: '2460'
 ht-degree: 0%
 
 ---
@@ -683,88 +683,6 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
         Nouvelle rubrique, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21979ca7c9dd21a871c22271603bcd09b9dfd29a">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 23 Mai 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout de correctifs de faute de frappe et d’URL pour le correctif QPT 1.1.30 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2598-add-caching-capability">B2B-2598 : ajoute une fonctionnalité de mise en cache aux requêtes storeConfig, currency, country, country, availableStores GraphQl</a>.</p>
-</td>
-      <td>
-        Qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07202bf339331adb7b4103cdd123b0a194b72bf4">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 22 Mai 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">notes de mise à jour d’Adobe Commerce 2.4.9</a> et des <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/magento-open-source/2-4-9">notes de mise à jour de Magento Open Source 2.4.9</a> : clarification du correctif <code>setup:di:compile</code> AC-10933, suppression du correctif AC-14519 annulé et ajustement des nombres de problèmes fixes.<br /><em>Crédit : <a href="https://github.com/hostep">hostep</a></em></p>
-</td>
-      <td>
-        Commentaires, technique
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e5a69a282839a393d6eb873af9938208706af50">validation</a></td>
-    </tr>
-    <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.79 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737">AC-10737 : la commande Bin/magento <code>setup:db:status</code> ne reconnaît pas le type de données JSON</a>.</p>
-</td>
-      <td>
-        Nouvelle rubrique, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9aad978f42697f74ebd7c8f401e45b4780bd5038">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 20 Mai 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout d'une description détaillée du correctif QPT 1.1.79 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601">ACP2E-4601 : la réenregistrement d'un parent auto-référencé de transaction d'autorisation de paiement et le déclenchement d'une boucle infinie/OOM</a>.</p>
-</td>
-      <td>
-        Nouvelle rubrique, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3fe9730b1954a07d9ef4a405ee75fcde9511e09d">validation</a></td>
-    </tr>
-    <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/lifecycle-policy">politique relative au cycle de vie des logiciels</a> avec des dates d’application de la mise à niveau vers le cloud, des définitions de période de prise en charge (y compris une période de transition de sécurité uniquement), un tableau de fin de prise en charge étendu pour les versions 2.4.4 à 2.4.9, des conseils sur l’interface PCI PHP et des chemins d’accès pour migrer vers Adobe Commerce as a Cloud Service ou effectuer une mise à niveau sur PaaS.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cd0f27ae6a8dcec9b25af15386d8350c22d2fb95">validation</a></td>
     </tr>
   </tbody>
 </table>
