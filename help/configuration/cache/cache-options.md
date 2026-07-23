@@ -3,24 +3,17 @@ title: Options du serveur principal de mise en cache et référence de stockage
 description: Découvrez les options du serveur principal de cache dans Adobe Commerce, notamment le système de fichiers, Redis, Valkey et le stockage dans la base de données. Découvrez les approches héritées et modernes.
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
+badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
 autotag-review: '2026-06-22T18:37:32.504Z'
 TQID: 'https://experienceleague.adobe.com/m7eUBNrt8UF43iJq9Tpl0Y1WcmR-dlt7Z4PoHvXVNnA'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 3d64249bf778a5aa73db22a532a454bb37d6dd37
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d3c3e48c7627b932d1e46a7d2a99fa77b8b75b4c
 workflow-type: tm+mt
-source-wordcount: 309
+source-wordcount: 331
 ht-degree: 0%
 
 ---
@@ -42,9 +35,9 @@ Le tableau suivant résume les caches principaux disponibles :
 | Serveur principal | Description | Guide de configuration |
 | ------- | ----------- | ------------------- |
 | Système de fichiers | Valeur par défaut. Stocke les données de cache dans des fichiers sous `var/cache/`. Aucune configuration requise. | S.O. |
-| [Redis &#x200B;](config-redis.md) | Magasin de données en mémoire pour une mise en cache hautes performances. | [Utiliser Redis pour le cache par défaut](redis-pg-cache.md) |
-| [&#x200B; Valkey &#x200B;](config-valkey.md) | Alternative open source compatible avec Redis. | [Utiliser Valkey pour le cache par défaut](valkey-pg-cache.md) |
-| [&#x200B; Base de données &#x200B;](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) | Mise en cache de base de données. | [Création de moteurs de cache personnalisés](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/){target="_blank"} (documentation Adobe destinée aux développeurs) |
+| [Redis ](config-redis.md) | Magasin de données en mémoire pour une mise en cache hautes performances. | [Utiliser Redis pour le cache par défaut](redis-pg-cache.md) |
+| [ Valkey ](config-valkey.md) | Alternative open source compatible avec Redis. | [Utiliser Valkey pour le cache par défaut](valkey-pg-cache.md) |
+| [ Base de données ](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) | Mise en cache de base de données. | [Création de moteurs de cache personnalisés](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/){target="_blank"} (documentation Adobe destinée aux développeurs) |
 
 >[!IMPORTANT]
 >
@@ -88,14 +81,17 @@ Utilise des noms de type back-end simplifiés :
 
 | Serveur principal | Saisir le nom |
 | ------- | --------- |
-| Redis | `redis` |
 | Valkey | `valkey` |
 | Système de fichiers | `file` |
+
+>[!NOTE]
+>
+>Le nom du type de `redis` est également accepté, mais Redis n’est pas un service de cache officiellement pris en charge pour Adobe Commerce 2.4.9 et les versions ultérieures. Utilisez `valkey` à la place.
 
 **Exemple de configuration :**
 
 ```php?start_inline=1
-'backend' => 'redis',
+'backend' => 'valkey',
 'backend_options' => [
     'server' => '127.0.0.1',
     'database' => '0',
