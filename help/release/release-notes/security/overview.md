@@ -2,7 +2,7 @@
 title: Notes de mise à jour du correctif de sécurité
 description: Consultez les notes de mise à jour du correctif de sécurité d’Adobe Commerce pour les versions prises en charge, y compris les améliorations de sécurité, les correctifs et le contenu de chaque version de correctif.
 exl-id: a3d78211-41ff-4df2-ad29-21465c096027
-source-git-commit: 48fc318078cbf1800522aeb43d8927b72727e7ed
+source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%
@@ -19,3 +19,4 @@ Les notes de mise à jour du correctif de sécurité Adobe Commerce fournissent 
 {{$include /help/_includes/release-notes/security-patch-overview.md}}
 
 <!-- Last updated from includes: 2026-06-16 17:36:23 -->
+
