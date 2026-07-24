@@ -2,7 +2,7 @@
 title: Politique de version
 description: Découvrez les types de versions d’Adobe Commerce, le marketing par rapport au contrôle de version des modules, les versions de correctif et de sécurité, les versions bêta, les correctifs et la politique de version globale.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 48fc318078cbf1800522aeb43d8927b72727e7ed
+source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -82,3 +82,4 @@ Les correctifs individuels contiennent des correctifs de qualité à faible impa
 Créé par du personnel non Adobe pour résoudre un problème ou modifier le code Adobe Commerce pour diverses raisons.
 
 <!-- Last updated from includes: 2026-06-16 17:36:23 -->
+

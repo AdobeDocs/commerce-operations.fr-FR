@@ -16,10 +16,10 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
+source-git-commit: d3c3e48c7627b932d1e46a7d2a99fa77b8b75b4c
 workflow-type: tm+mt
-source-wordcount: 507
-ht-degree: 1%
+source-wordcount: 486
+ht-degree: 0%
 
 ---
 
@@ -99,13 +99,14 @@ Vous pouvez spécifier les options de configuration du cache front-end et back-e
 
 Où :
 
-- `<frontend_type>` : type de cache front-end de bas niveau. Spécifiez un nom de classe compatible avec `Zend\Cache\Core`.Si cet attribut est omis, [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) est utilisé.
+- `<frontend_type>` : type de cache front-end de bas niveau. Spécifiez un nom de classe compatible avec `Zend\Cache\Core`.
+Si cet attribut est omis, [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) est utilisé.
 
 - `<frontend_option>`, `<frontend_option_value>` : nom et valeur des options que le framework Commerce transmet sous forme de tableau associatif au cache front-end lors de la création.
 
 - `<backend_type>` : type de cache du serveur principal de bas niveau. Vous pouvez spécifier les éléments suivants :
-   - **Modern Symfony Cache (2.4.9+, recommandé)** : noms simplifiés tels que `redis`, `valkey` ou `file`
-   - **Hérité (basé sur Zend)** : nom de classe complet compatible avec les `Zend_Cache_Backend` qui implémentent `Zend_Cache_Backend_Interface`
+  - **Modern Symfony Cache (2.4.9+, recommandé)** : noms simplifiés comme `valkey` ou `file`
+  - **Hérité (basé sur Zend)** : nom de classe complet compatible avec les `Zend_Cache_Backend` qui implémentent `Zend_Cache_Backend_Interface`
 
 - `<backend_option>`, `<backend_option_value>` : le nom et la valeur des options que le framework Commerce transmet sous forme de tableau associatif au cache du serveur principal lors de la création.
 
