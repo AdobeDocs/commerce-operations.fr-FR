@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 5dec405e9f116622903e9b0e2fbbd255ca28a8e8
+source-git-commit: e52becee703b046f5ffb00b01ca780311d711ec8
 workflow-type: tm+mt
-source-wordcount: '10469'
+source-wordcount: '10516'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,9 @@ ht-degree: 0%
       - [ACP2E-4709 : les pages CMS ne sont pas enregistrées dans le générateur de page lorsque la hiérarchie de page comprend des guillemets doubles](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4805 : les demandes de passage en caisse ralentissent pour les produits configurables lorsque le premier enfant vendable apparaît plus loin dans la liste](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
+      - [ACP2E-4748 : l’expiration des points de récompense s’exécute lentement sur les magasins avec un historique de points de récompense important](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)
+      - [ACP2E-4875 : les utilisateurs administrateurs se sont déconnectés lors de l’ouverture de comptes clients avec des carnets d’adresses volumineux](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
   - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Référence des outils de ligne de commande {#cli-reference}
   - [Adobe Commerce (sur site)](reference/commerce-on-premises.md)
