@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: f28140efde87efac04d64121ecbc603dbe87e6b6
+source-git-commit: 5dec405e9f116622903e9b0e2fbbd255ca28a8e8
 workflow-type: tm+mt
-source-wordcount: '10465'
+source-wordcount: '10469'
 ht-degree: 0%
 
 ---
@@ -1042,6 +1042,8 @@ ht-degree: 0%
       - [ACP2E-4680 : Les produits non vendables disparaissent des cotations négociables finalisées](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
       - [ACP2E-4300 : les autorisations du catalogue Storefront ne sont pas mises à jour après le changement du groupe de clients administrateurs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
       - [ACP2E-4709 : les pages CMS ne sont pas enregistrées dans le générateur de page lorsque la hiérarchie de page comprend des guillemets doubles](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
+    - v1.1.82 {#v1-1-82}
+      - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
   - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Référence des outils de ligne de commande {#cli-reference}
   - [Adobe Commerce (sur site)](reference/commerce-on-premises.md)
