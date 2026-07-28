@@ -6,15 +6,10 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-24T20:44:59.025Z'
 TQID: 'https://experienceleague.adobe.com/Qoz-3w1ddXeHyDsyfsM0gD1kwi-Z6dc-C6P9Q-nYrUo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 6b7e2463ee1f743fb5e8451a7f9832309aa68ab0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 4358eb2865fbd8a66716ffc6b7a7b133a7e10e5d
 workflow-type: tm+mt
 source-wordcount: 485
 ht-degree: 0%
@@ -34,7 +29,7 @@ QPT v1.1.82 comprend les correctifs suivants :
 1. **ACP2E-4682** : correction d’un problème en raison duquel la visite d’une page de Storefront qui vérifie le statut du devis `isActive` crée des enregistrements de devis vides chaque fois que la page est chargée.
 1. **ACP2E-4695** : correction d’un problème en raison duquel l’indexeur de règles de catalogue consomme trop de mémoire et ne parvient pas à se terminer, provoquant une instabilité et des erreurs de mémoire insuffisante.
 1. **ACP2E-4698** : correction d’un problème en raison duquel la modification d’une image dans le contenu texte de Page Builder enregistre une URL de média absolue au lieu de conserver une directive de média portable.
-1. **ACP2E-4748** : correction d’un problème en raison duquel l’expiration des points de récompense est lente dans les magasins dont l’historique de points de récompense est volumineux, ce qui entraîne des retards dans l’expiration des points de récompense.
+1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)** : corrige le problème où l’expiration des points de récompense s’exécute lentement sur les magasins ayant un historique de points de récompense important, ce qui entraîne des retards dans l’expiration des points de récompense.
 1. **ACP2E-4797** : correction d’un problème en raison duquel la saisie de caractères Unicode à 4 octets dans l’éditeur WYSIWYG ou le contenu du Créateur de page dans l’administrateur était incorrectement bloquée, même si la base de données était configurée pour prendre en charge `utf8mb4`.
 1. **ACP2E-4799** : correction du problème en raison duquel la requête `requisition_lists` GraphQL renvoie une valeur `total_count` qui reflète uniquement le nombre d’éléments sur la page active au lieu du nombre total de listes de demandes d’approvisionnement qui correspondent aux critères de requête.
 1. **ACP2E-4805** : correction d’un problème en raison duquel les requêtes d’API de passage en caisse étaient considérablement plus lentes pour les produits configurables comportant de nombreux produits enfants lorsque le premier produit enfant vendable apparaissait en fin de liste.
