@@ -18,9 +18,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
+source-git-commit: 37196b2d34951dd2df4d1e459cc9e29480f4f6e1
 workflow-type: tm+mt
-source-wordcount: 331
+source-wordcount: 395
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Le tableau suivant résume les caches principaux disponibles :
 
 >[!IMPORTANT]
 >
->{{redis-cache-support}}
+>Le cache Redis n’est pas pris en charge pour Adobe Commerce 2.4.9 ou pour les versions de correctif ultérieures à 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 et 2.4.8-p5. Si vous effectuez une mise à niveau vers une version qui ne prend pas en charge Redis, vous devez configurer Valkey et mettre à jour la configuration du cache pour l’utiliser. Pour Commerce On-Premise, voir [Configuration de Valkey](config-valkey.md). Pour Commerce on Cloud, voir [Configuration de Valkey](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md){target="_blank"}.
 
 ## Approches de mise en œuvre
 
