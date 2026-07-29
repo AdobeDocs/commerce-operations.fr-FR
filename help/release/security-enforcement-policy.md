@@ -2,12 +2,25 @@
 title: 'Politique d''application de la sécurité : Mesures et délais requis'
 description: Découvrez l’application de la sécurité pour les versions d’Adobe Commerce on Cloud non prises en charge et les dépendances logicielles, y compris les échéances, les actions requises et les risques.
 TQID: 'https://experienceleague.adobe.com/0JX-Z-dRjsiQk5jO-LLRi-J4GWdylTh4pOfXRPOabxs'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c32adafa-ed01-4b31-997e-2413013911b0id: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2: id: f2261633-201d-46c5-8a66-999e70527a83
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: f2261633-201d-46c5-8a66-999e70527a83
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Adobe Commerce on Cloud uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud."
 hide: true
 source-git-commit: 93446d5be993e53e94f714a592d519a945dfbebd
@@ -43,7 +56,7 @@ Dans le tableau suivant, recherchez votre version d’Adobe Commerce on Cloud ci
 
 **Tableau 1 : Actions requises et délais par version**
 
-| **Votre version** | **[Action 1:<br>Mettre à niveau les dépendances de logiciels tiers](#action-1-upgrade-third-party-software-dependencies)** | **Action 2:<br>[mettre à niveau ou migrer votre version d’Adobe Commerce](#action-2-upgrade-to-a-supported-adobe-commerce-version)** |
+| **Votre version** | **[Action 1:<br>Mettre à niveau les dépendances de logiciels tiers](#action-1-upgrade-third-party-software-dependencies)**&#x200B; | &#x200B;** Action 2:<br>[mettre à niveau ou migrer votre version d’Adobe Commerce](#action-2-upgrade-to-a-supported-adobe-commerce-version)** |
 | --- | --- | --- |
 | 2.4.4 ou 2.4.5 | Action requise avant le 30 octobre 2026. | Action requise avant le 1er juin 2027 |
 | 2.4.6 ou 2.4.7 | Action requise avant le 30 octobre 2026 ou le 31 mai 2027, selon le logiciel. | Action requise avant le 1er juin 2028 |
@@ -66,7 +79,7 @@ Vous avez besoin de l’aide de votre administrateur eCommerce pour passer en re
 
    La version actuelle doit s’afficher dans le coin inférieur droit de toute page d’administration.
 
-1. Si la version ne s’affiche pas dans Admin, utilisez l’outil de ligne de commande [](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli){target="_blank"} pour exécuter la commande version :
+1. Si la version ne s’affiche pas dans Admin, utilisez l’outil de ligne de commande [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli){target="_blank"} pour exécuter la commande version :
 
    ```shell
    bin/magento --version
@@ -81,7 +94,7 @@ Pour obtenir des instructions détaillées, voir la documentation [Configurer le
 
 ## Pourquoi ce mandat en matière de sécurité est important
 
-Les logiciels qui ne sont plus pris en charge par les fournisseurs ne reçoivent plus de correctifs de sécurité, ce qui signifie que les problèmes de sécurité connus de ces logiciels ne peuvent pas être corrigés. En outre, conformément à la politique de cycle de vie [Adobe ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy) :
+Les logiciels qui ne sont plus pris en charge par les fournisseurs ne reçoivent plus de correctifs de sécurité, ce qui signifie que les problèmes de sécurité connus de ces logiciels ne peuvent pas être corrigés. En outre, conformément à la politique de cycle de vie [Adobe &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy) :
 
 * **Les versions 2.4.4 et 2.4.5 d’** ne reçoivent désormais que des correctifs de sécurité limités et isolés pour l’application principale jusqu’au 31 mai 2027. Cette prise en charge limitée n’inclut pas les correctifs de qualité, la prise en charge de la compatibilité pour les dépendances d’applications (par exemple, PHP) ou les mises à jour des dépendances de plateformes
 
@@ -182,7 +195,7 @@ Adobe propose des outils et une assistance pour rendre votre transition aussi fl
 
 Adobe fournit des outils qui réduisent le coût et le temps de migration vers Adobe Commerce as a Cloud Service. Ces outils s’appliquent uniquement à la migration. Ils ne sont pas utilisés pour une mise à niveau de version sur Adobe Commerce on Cloud. Consultez la [présentation de la migration](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview) pour obtenir un guide de migration complet, y compris les chemins et les phases de migration.
 
-* **Évaluation de la migration :** évalue la complexité de migration de vos personnalisations. Consultez la [ Présentation de l’outil d’évaluation de la migration ](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/assessment).
+* **Évaluation de la migration :** évalue la complexité de migration de vos personnalisations. Consultez la [&#x200B; Présentation de l’outil d’évaluation de la migration &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/assessment).
 
 * **Migration des données :** l’outil [migration de données en bloc et incrémentielle](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data) déplace vos données vers votre nouvel environnement Adobe Commerce as a Cloud Service.
 
