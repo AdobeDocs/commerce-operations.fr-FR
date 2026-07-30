@@ -10,9 +10,9 @@ topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 badgePaas: label="Commerce sur le cloud" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud."
 nudge: true
-source-git-commit: 5f0b6f7a04ee96b2aa650ee242e31d383bd7512b
+source-git-commit: 0c69ccdfcb3592a717b8b3a5a59762c8daeceec7
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2524'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,9 @@ La définition de la variable de déploiement `VALKEY_BACKEND` sur `symfony_l2` 
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.9 comprend des améliorations du cache Symfony L2 (notamment le stockage, l’invalidation et la compression des balises de cache) avec le correctif ACP2E-5132, ce qui réduit les E/S de disque, élimine les entrées de cache obsolètes et réduit la mémoire et la surcharge réseau. Voir [Performances et fiabilité améliorées du cache Symfony L2](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability.md) dans le _Guide de configuration d’Adobe Commerce_. Le correctif ACP2E-5132 est inclus dans les correctifs Cloud et appliqué automatiquement via ece-tools.
+>Le correctif ACP2E-5132 pour Adobe Commerce 2.4.9 améliore les performances et la fiabilité du cache Symfony L2 : stockage des balises optimisé, verrouillage de la régénération du cache obsolète et correctifs pour les abonnements aux balises obsolètes après rebalisage, écritures distantes redondantes sur des enregistrements inchangés et éviction de taille L1 (`cleanup_percentage`). Cela réduit les E/S de disque et la charge du serveur principal tout en améliorant la cohérence du cache. Voir [Performances et fiabilité améliorées du cache Symfony L2](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability) dans le _Guide de configuration d’Adobe Commerce_.
+>
+>Le correctif est inclus dans le package [Correctifs cloud pour Commerce](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) (une dépendance de `ece-tools`) et est appliqué automatiquement lors du déploiement lorsque vous effectuez une mise à jour vers la dernière version de `ece-tools`. Effectuez une mise à jour vers la dernière version de `ece-tools` pour recevoir le correctif.
 
 #### Personnalisation de la configuration du cache Symfony L2
 
