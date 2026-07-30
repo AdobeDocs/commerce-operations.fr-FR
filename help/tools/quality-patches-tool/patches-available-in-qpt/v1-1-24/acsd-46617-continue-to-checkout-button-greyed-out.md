@@ -7,7 +7,7 @@ exl-id: 8e808fce-d31c-49ef-94e5-f5c89fffaa73
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -37,18 +37,18 @@ Le bouton **[!UICONTROL Continue to Checkout]** est grisé même si le sous-tota
 <u>Procédure à suivre </u> :
 
 1. Accédez à Admin Adobe Commerce > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Minimum Order Amount]** et définissez les éléments suivants :
-   * [!UICONTROL Enable] : *[!UICONTROL Yes]*
+   * [!UICONTROL Enable]: *[!UICONTROL Yes]*
    * &#x200B;
      [!UICONTROL Minimum Amount]: *2*
 
 1. Créez un [!UICONTROL Cart Price Rule].
-   * [!UICONTROL Coupon Code] : *[!UICONTROL TEST (optional)]*
-   * [!UICONTROL Conditions] : *[!UICONTROL Keep empty]*
-   * [!UICONTROL Actions] :
-      * [!UICONTROL Apply] : *[!UICONTROL Percent of product price discount]*
-      * &#x200B;
-        [!UICONTROL Discount Amount]: *92*
-      * [!UICONTROL Apply to Shipping Amount] : *[!UICONTROL Yes]*
+   * [!UICONTROL Coupon Code]: *[!UICONTROL TEST (optional)]*
+   * [!UICONTROL Conditions]: *[!UICONTROL Keep empty]*
+   * [!UICONTROL Actions]:
+     * [!UICONTROL Apply]: *[!UICONTROL Percent of product price discount]*
+     * &#x200B;
+       [!UICONTROL Discount Amount]: *92*
+     * [!UICONTROL Apply to Shipping Amount]: *[!UICONTROL Yes]*
 1. Créez un produit au prix de 25 $.
 1. Ajoutez le produit au panier.
 1. Accédez au panier, sélectionnez la méthode $5 **[!UICONTROL Flat Rate shipping]** et appliquez le code de coupon.

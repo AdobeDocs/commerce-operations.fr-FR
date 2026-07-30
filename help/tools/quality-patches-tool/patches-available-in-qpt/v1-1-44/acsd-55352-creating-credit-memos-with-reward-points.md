@@ -7,7 +7,7 @@ exl-id: bee0c4be-11ec-4dcb-9b3c-7af26676cee9
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -39,14 +39,14 @@ Après avoir créé un avoir partiel avec des points de récompense client, le s
 1. Connectez-vous à l’administration Adobe Commerce.
 2. Accédez à **[!UICONTROL Stores]** > **[!UICONTROL Other Setting]** > **[!UICONTROL Reward Exchange Rates]** > **[!UICONTROL Add New Rate]**.
 3. Ajoutez deux taux :
-   * *[!UICONTROL First]* :
-      * *[!UICONTROL Direction]* = *Points dans la devise*
-      * *[!UICONTROL Rate]* = *100*
-      * *[!UICONTROL Upper Boundary]* = *100*
-   * *[!UICONTROL Second]* :
-      * *[!UICONTROL Direction]* = *Devise en points*
-      * *[!UICONTROL Rate]* = *100*
-      * *[!UICONTROL Upper Boundary]* = *100*
+   * *[!UICONTROL First]*:
+     * *[!UICONTROL Direction]* = *Points dans la devise*
+     * *[!UICONTROL Rate]* = *100*
+     * *[!UICONTROL Upper Boundary]* = *100*
+   * *[!UICONTROL Second]*:
+     * *[!UICONTROL Direction]* = *Devise en points*
+     * *[!UICONTROL Rate]* = *100*
+     * *[!UICONTROL Upper Boundary]* = *100*
 4. Créez un produit simple au prix de *$100* et avec *Qté* : *100*.
 5. Créez un client à partir du storefront.
 6. Revenez sur le serveur principal : **[!UICONTROL Customers]** > **[!UICONTROL All Customers]** > **[!UICONTROL Edit]** > **[!UICONTROL Reward Points]** > **[!UICONTROL Update Points]** > Ajouter *100* et enregistrez le client.

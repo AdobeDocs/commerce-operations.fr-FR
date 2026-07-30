@@ -7,7 +7,7 @@ exl-id: 5838a740-018d-44c2-8135-54426ea08627
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---
@@ -42,11 +42,11 @@ La [!UICONTROL Cart Price Rule] ne parvient pas à annuler les règles précéde
    * Sélectionnez tous les *Sites web* et *Groupes de clients*.
    * Définir **[!UICONTROL Priority]** = *0*
    * Accédez à la section **[!UICONTROL Actions]** :
-      * Définir **[!UICONTROL Apply]** = *pourcentage de remise sur le prix du produit*
-      * Définir **[!UICONTROL Discount amount]** = *10*
-      * Définir **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
-      * Définir **[!UICONTROL Discount Qty Step (Buy X)]** = *0*
-      * Définissez **[!UICONTROL Discard subsequent rules]** sur *Non*
+     * Définir **[!UICONTROL Apply]** = *pourcentage de remise sur le prix du produit*
+     * Définir **[!UICONTROL Discount amount]** = *10*
+     * Définir **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
+     * Définir **[!UICONTROL Discount Qty Step (Buy X)]** = *0*
+     * Définissez **[!UICONTROL Discard subsequent rules]** sur *Non*
 1. Effacez le cache.
 1. Accédez à la vitrine , ajoutez un article au panier, puis passez à *passage en caisse/panier*.
 1. Vérifiez que la remise de *10 %* est appliquée à votre panier.
@@ -55,10 +55,10 @@ La [!UICONTROL Cart Price Rule] ne parvient pas à annuler les règles précéde
    * Sélectionner tous les **[!UICONTROL Websites]** et **[!UICONTROL Customer Groups]**
    * Définir **[!UICONTROL Priority]** = *2*
    * Accédez à la section **[!UICONTROL Actions]** :
-      * Définir **[!UICONTROL Apply]** = *pourcentage de remise sur le prix du produit*
-      * Définir **[!UICONTROL Discount amount]** = *20*
-      * Définir **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
-      * Définir **[!UICONTROL Discount Qty Step (Buy X)]** = *3*
+     * Définir **[!UICONTROL Apply]** = *pourcentage de remise sur le prix du produit*
+     * Définir **[!UICONTROL Discount amount]** = *20*
+     * Définir **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
+     * Définir **[!UICONTROL Discount Qty Step (Buy X)]** = *3*
 1. Effacez le cache.
 1. Retournez sur la vitrine.
 1. Mettez à jour le panier pour actualiser les règles. Vérifiez que la remise de *10 %* n&#39;est plus appliquée.

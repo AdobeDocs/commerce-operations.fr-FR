@@ -7,7 +7,7 @@ exl-id: a156f03c-c939-4ea7-bd34-03c2234edbff
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Les attributs **Used** et **Times Used** affichent des valeurs incorrectes pour 
    * Réindexez et nettoyez le cache.
 
 1. Créez un **[!UICONTROL customer account]** et connectez-vous au serveur frontal.
-1. Ajoutez un produit avec plus de 2 ** de quantités dans le panier et appliquez un coupon.
+1. Ajoutez un produit avec plus de 2 *de quantités dans le panier et appliquez un coupon.*
 1. Cliquez sur **[!UICONTROL Check Out with Multiple Addresses]**.
 1. Sélectionnez une adresse distincte pour chaque quantité, passez la commande et terminez le processus de passage en caisse.
 1. Observez le total des commandes de l’administrateur et la remise appliquée.

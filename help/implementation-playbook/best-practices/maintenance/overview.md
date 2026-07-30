@@ -5,7 +5,7 @@ exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
 source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '428'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ Les sections suivantes contiennent des informations relatives aux bonnes pratiqu
 
 | Bonne pratique | Description |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Personalization](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL) | Enregistrement Commerce &amp; Coffee qui décrit les stratégies de personnalisation. |
+| [&#128279;](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL) | Enregistrement Commerce &amp; Coffee qui décrit les stratégies de personnalisation. |
 | [Tendances E-Commerce](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL) | Enregistrement Commerce &amp; Coffee qui décrit les tendances du commerce électronique. |
 | [Automatisation de l’IA](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL) | Enregistrement Commerce &amp; Coffee qui décrit les possibilités de personnalisation avec l’intelligence artificielle et l’automatisation. |
 

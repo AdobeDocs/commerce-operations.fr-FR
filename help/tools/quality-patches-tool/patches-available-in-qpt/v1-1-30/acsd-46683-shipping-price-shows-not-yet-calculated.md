@@ -7,7 +7,7 @@ exl-id: ebd79187-2835-403b-945d-80ac34d6fb9c
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -49,20 +49,20 @@ Les modules Adobe Commerce Inventory management (MSI) sont installés.
    * Priorité = 1
    * Conditions : le sous-total est égal ou supérieur à *$75*
    * Actions :
-      * Appliquer au montant d&#39;expédition = Oui
-      * Ignorer les règles suivantes = Non
-      * Livraison gratuite = pour les envois avec articles correspondants
+     * Appliquer au montant d&#39;expédition = Oui
+     * Ignorer les règles suivantes = Non
+     * Livraison gratuite = pour les envois avec articles correspondants
 1. Créez une autre règle de prix de panier :
    * Nom = *35off*
    * Priorité = 0
    * Coupon = Coupon Spécifique
    * Code de coupon = 35off
    * Actions :
-      * Appliquer = pourcentage de la remise sur le prix du produit
-      * Montant de remise = 35
-      * Appliquer au montant d&#39;expédition = Non
-      * Ignorer les règles suivantes = Oui
-      * Livraison gratuite = Non
+     * Appliquer = pourcentage de la remise sur le prix du produit
+     * Montant de remise = 35
+     * Appliquer au montant d&#39;expédition = Non
+     * Ignorer les règles suivantes = Oui
+     * Livraison gratuite = Non
 1. Ouvrez le storefront et ajoutez trois produits au panier afin que le sous-total dépasse 75 $.
 1. Passez en caisse en tant qu’invité.
 1. À l’étape d’expédition, sélectionnez **0 $ - expédition gratuite** puis passez à l’étape de paiement.

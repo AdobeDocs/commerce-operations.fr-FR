@@ -7,7 +7,7 @@ exl-id: 13830361-dd0c-486f-b07f-34280a17ab76
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Installez les modules [!DNL B2B].
 
 <u>Procédure à suivre </u> :
 
-1. Activez la société et laissez [!UICONTROL **Order Approval Configuration]** > **[!UICONTROL Purchase Order**] = *Non*.
+1. Activez la société et laissez ** > **[!UICONTROL Purchase Order**] = *Non*.[!UICONTROL **Order Approval Configuration]
 1. Créez un produit simple au prix de 100.
 1. Créez une nouvelle entreprise via l’Administration.
 1. Définissez [!UICONTROL **Activer les commandes fournisseur**] sur *Oui*.
