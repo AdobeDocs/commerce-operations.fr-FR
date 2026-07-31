@@ -2,7 +2,8 @@
 title: Installation sur site avancée
 description: Découvrez les scénarios d’installation avancés pour les déploiements sur site d’Adobe Commerce. Découvrez des configurations complexes et des options de configuration personnalisées.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '2527'
 ht-degree: 0%
@@ -53,7 +54,7 @@ Le programme d’installation peut être exécuté plusieurs fois si nécessaire
 
 Avant de commencer, effectuez les étapes suivantes :
 
-* Vérifiez que votre système répond à la configuration requise décrite dans la section [&#x200B; Configuration requise &#x200B;](system-requirements.md).
+* Vérifiez que votre système répond à la configuration requise décrite dans la section [ Configuration requise ](system-requirements.md).
 
 * Effectuez toutes les tâches [prérequises](prerequisites/overview.md).
 
@@ -119,7 +120,7 @@ Les options suivantes spécifient les informations d’identification et d’ide
 
 Vous pouvez créer l’utilisateur administrateur pendant ou après l’installation. Si vous créez l’utilisateur lors de l’installation, toutes les variables d’informations d’identification d’administrateur sont requises. Voir [Exemples d’installations localhost](#sample-localhost-installations).
 
-Les tableaux suivants fournissent de nombreux paramètres d’installation, mais pas tous. Pour obtenir une liste complète, voir [Référence des outils de ligne de commande](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+Les tableaux suivants fournissent de nombreux paramètres d’installation, mais pas tous. Pour obtenir une liste complète, voir [Référence des outils de ligne de commande](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Nom | Valeur | Obligatoire ? |
 |--- |--- |--- |
@@ -220,7 +221,7 @@ Les tableaux suivants fournissent de nombreux paramètres d’installation, mais
 
 >[!NOTE]
 >
->Pour activer ou désactiver les modules après l’installation d’Adobe Commerce, voir [&#x200B; Activer et désactiver les modules](tutorials/manage-modules.md).
+>Pour activer ou désactiver les modules après l’installation d’Adobe Commerce, voir [ Activer et désactiver les modules](tutorials/manage-modules.md).
 
 **Données sensibles :**
 
@@ -246,9 +247,9 @@ L’exemple suivant installe Adobe Commerce avec les options suivantes :
 
 * L’administrateur possède les propriétés suivantes :
 
-   * Les prénoms et noms sont `Magento User`
-   * Le nom d’utilisateur est `admin` et le mot de passe est `admin123`
-   * Adresse e-mail `user@example.com`
+  * Les prénoms et noms sont `Magento User`
+  * Le nom d’utilisateur est `admin` et le mot de passe est `admin123`
+  * Adresse e-mail `user@example.com`
 
 * La langue par défaut est le `en_US` (anglais (États-Unis)
 * La devise par défaut est le dollar américain
@@ -314,9 +315,9 @@ L’exemple suivant installe Adobe Commerce avec les options suivantes :
 
 * L’administrateur possède les propriétés suivantes :
 
-   * Les prénoms et noms sont `Magento User`
-   * Le nom d’utilisateur est `admin` et le mot de passe est `admin123`
-   * Adresse e-mail `user@example.com`
+  * Les prénoms et noms sont `Magento User`
+  * Le nom d’utilisateur est `admin` et le mot de passe est `admin123`
+  * Adresse e-mail `user@example.com`
 
 * La langue par défaut est le `en_US` (anglais (États-Unis)
 * La devise par défaut est le dollar américain

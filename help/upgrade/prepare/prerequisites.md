@@ -2,9 +2,10 @@
 title: Remplir les prérequis
 description: Préparez votre projet Adobe Commerce pour une mise à niveau en suivant ces étapes préalables.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '1985'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ Assurez-vous d’avoir mis à jour toutes les exigences système et dépendances
 
 >[!NOTE]
 >
->Pour les projets Pro d’Adobe Commerce sur les infrastructures cloud, vous devez créer un ticket [Support](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour installer ou mettre à jour les services dans les environnements d’évaluation et de production. Indiquez les changements de service nécessaires et incluez vos fichiers `.magento.app.yaml` et `services.yaml` mis à jour ainsi que la version PHP dans le ticket. La mise à jour de votre projet par l’équipe en charge de l’infrastructure cloud peut prendre jusqu’à 48 heures. Voir [Logiciels et services pris en charge](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
+>Pour les projets Pro d’Adobe Commerce sur les infrastructures cloud, vous devez créer un ticket [Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour installer ou mettre à jour les services dans les environnements d’évaluation et de production. Indiquez les changements de service nécessaires et incluez vos fichiers `.magento.app.yaml` et `services.yaml` mis à jour ainsi que la version PHP dans le ticket. La mise à jour de votre projet par l’équipe en charge de l’infrastructure cloud peut prendre jusqu’à 48 heures. Voir [Logiciels et services pris en charge](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
 
 ## Vérifier qu’un moteur de recherche pris en charge est installé
 
@@ -153,7 +154,7 @@ La prise en charge d’Elasticsearch 8.x a été introduite dans Adobe Commerce 
 >
 >Ces étapes s’appliquent uniquement à Adobe Commerce 2.4.6 et 2.4.7. Adobe Commerce 2.4.8 et versions ultérieures ne prennent plus en charge Elasticsearch ; utilisez OpenSearch à la place.
 
-1. Mettez à niveau le serveur Elasticsearch 7.x vers la version 8.x et assurez-vous que est en cours d’exécution. Voir la [documentation &#x200B;](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch).
+1. Mettez à niveau le serveur Elasticsearch 7.x vers la version 8.x et assurez-vous que est en cours d’exécution. Voir la [documentation ](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch).
 
 1. Activez le champ `id_field_data` en ajoutant la configuration suivante à votre fichier `elasticsearch.yml` et en redémarrant le service Elasticsearch 8.x.
 
@@ -219,7 +220,7 @@ La prise en charge d’Elasticsearch 8.x a été introduite dans Adobe Commerce 
 
 Si vous mettez par inadvertance à niveau la version d’Elasticsearch sur votre serveur ou déterminez que vous devez la rétrograder pour toute autre raison, vous devez également mettre à jour les dépendances de vos projets Adobe Commerce. Par exemple, pour rétrograder d’Elasticsearch 8.x vers 7.x
 
-1. Rétrogradez le serveur Elasticsearch 8.x vers la version 7.x et assurez-vous que est en cours d’exécution. Voir la [documentation &#x200B;](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch).
+1. Rétrogradez le serveur Elasticsearch 8.x vers la version 7.x et assurez-vous que est en cours d’exécution. Voir la [documentation ](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch).
 
 1. Dans le répertoire racine de votre projet Adobe Commerce, mettez à jour les dépendances du compositeur pour supprimer le module `Magento_Elasticsearch8` et ses dépendances du compositeur et installer le module `Magento_Elasticsearch7`.
 
