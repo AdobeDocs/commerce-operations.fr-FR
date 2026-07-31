@@ -12,9 +12,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 09557adb586946f1a7c4f94cb7675dc2aa83551d
+source-git-commit: 7e9ebf390ec8fa458b3f55dcc5bd17b962702900
 workflow-type: tm+mt
-source-wordcount: 31872
+source-wordcount: 31846
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 ## v1.1.82 {#v1-1-82}
 
 * **ACP2E-4194** (pour Adobe Commerce et Magento Open Source >=2.4.7-p10 &lt;2.4.8 || >=2.4.8-p5 &lt;2.4.9) - Correction du problème où les réponses de GraphQL renvoient des codes d’état HTTP incorrects pour les requêtes non valides, non autorisées ou malformées.
-* **ACP2E-4547** (pour Adobe Commerce, B2B >=1.5.0 &lt;1.5.3) - Correction du problème en raison duquel un utilisateur administrateur ne peut pas utiliser « Ajouter des produits par SKU » dans l’administration pour ajouter des produits du catalogue standard à un devis négociable pour une société affectée à un groupe de clients qui n’est pas lié à un catalogue partagé.
+* **ACP2E-4547** (pour Adobe Commerce, B2B >=1.5.0 &lt;1.5.3) - Correction du problème en raison duquel un utilisateur administrateur ne peut pas utiliser « Ajouter des produits par SKU » dans l’administration pour ajouter des produits du catalogue par défaut à une commande pour une société affectée à un groupe de clients qui n’est pas lié à un catalogue partagé.
 * **ACP2E-4593** (pour Adobe Commerce >=2.4.5 &lt;2.4.10) - Correction du problème en raison duquel la page CMS affichée pour les restrictions de site web peut être incorrecte sur les sites web secondaires dans les déploiements multi-sites web.
 * **ACP2E-4682** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.10) - Correction du problème en raison duquel la visite d’une page storefront qui vérifie le statut du devis `isActive` crée des enregistrements de devis vides chaque fois que la page est chargée.
 * **ACP2E-4695** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel l’indexeur de règles de catalogue consomme trop de mémoire et ne parvient pas à s’exécuter, provoquant une instabilité et des erreurs de mémoire insuffisante.
@@ -456,7 +456,8 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACSD-61805** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige le problème où les produits restent en rupture de stock sur le storefront après la mise à jour du statut de la commande en attente via le [!DNL REST API].
 * **ACSD-60811** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.8) - Correction du problème en raison duquel la mise à jour du statut de la commande avec une valeur ou un commentaire personnalisé n’est possible que si le statut actuel est *traitement* ou *fraude*.
 * **ACSD-62952** (pour Adobe Commerce >=2.4.4 &lt;2.4.8) - Correction du problème d’affichage inexact de la date de [!UICONTROL Gift Registry] sur le storefront.
-* **ACSD-55339** (pour Adobe Commerce >=2.4.4 &lt;2.4.8) - Correction du problème où un produit [!DNL SKU] commençant par « 0 » (zéro) supprime le « 0 », empêchant la mise à jour du devis.**
+* **ACSD-55339** (pour Adobe Commerce >=2.4.4 &lt;2.4.8) - Correction du problème où un produit [!DNL SKU] commençant par « 0 » (zéro) supprime le « 0 », empêchant la mise à jour du devis.
+**
 * Correctifs mis à jour : **ACSD-59514**
 * Versions mises à jour : **ACSD-60816**
 * Correctifs remplacés : **ACSD-59967**
@@ -1457,7 +1458,7 @@ Correctifs mineurs pour les versions de correctifs
 * **MDVA-30782** (*pour Adobe Commerce >=2.3.5 &lt;2.4.2*) - Corrige le problème d’affichage du bloc dynamique quelle que soit la règle du panier.
 * **MDVA-31021** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corrige le problème lié aux problèmes de performances dans `module-catalog-import-export/Model/Import/Product/Option.php`. S’il y a plus de 100 000 enregistrements dans `catalog_product_option` tableau, la validation d’un nouveau fichier CSV avec un seul produit prend moins de 10 secondes.
 * **MDVA-31007** (*pour Adobe Commerce >=2.4.0 &lt;2.4.1*) - Corrige le problème d’affichage incorrect des attributs d’adresse personnalisée dans la page des détails de commande dans la zone Mon compte et sur le serveur principal.
-* **MDVA-29389** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2*) - Correction du problème lié aux rapports avancés où la tâche cronjob `analytics_collect_data` indique : *Le port doit être configuré dans le paramètre de l’hôte (comme localhost:3306)*
+* **MDVA-29389** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corrige le problème lié aux rapports avancés où la tâche cronjob `analytics_collect_data` indique : *Le port doit être configuré dans le paramètre de l’hôte (comme localhost:3306)*.
 * **MDVA-31343** (*pour Adobe Commerce >=2.3.4 &lt;2.3.6*) - Corrige le problème lié au `page-layout-category-full-width` de classe de corps supprimé lorsqu’une catégorie est planifiée.
 * **MDVA-30945** (*pour Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corrige le problème en raison duquel vous recevez un message d’erreur irrécupérable lors de la mise à jour des `Call to a member function getValue() on null in module-configurable-product CartItemProcessor.php` de panier.
 
