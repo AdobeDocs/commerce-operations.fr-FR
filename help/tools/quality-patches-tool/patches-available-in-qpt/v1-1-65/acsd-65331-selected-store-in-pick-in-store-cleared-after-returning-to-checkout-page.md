@@ -7,7 +7,7 @@ type: Troubleshooting
 exl-id: 10aaf898-feca-4485-90f6-6b3a9ea013b2
 source-git-commit: dc5df9e918adffe8d6901478a676d9da36b33bcc
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -40,14 +40,14 @@ Le magasin sélectionné sous l’option **[!UICONTROL Pick In Store]** est effa
 1. Configurez une clé API [!DNL Google] valide à [!UICONTROL Google Distance Provider] en accédant à **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Google Distance Provider]**.
 1. Accédez à **[!UICONTROL Stores]** > **[!UICONTROL Sources]** > **[!UICONTROL Add New Source]** pour ajouter une nouvelle source avec les détails suivants :
 
-   * **[!UICONTROL Latitude]** : 41,917344 **
-   * **[!UICONTROL Longitude]** : *-88.102569*
+   * **[!UICONTROL Latitude]**: *41.917344*
+   * **[!UICONTROL Longitude]**: *-88.102569*
    * **[!UICONTROL Use as Pickup Location]** : *Oui*
    * **[!UICONTROL Country]** : *États-Unis*
    * **[!UICONTROL State]** : *Illinois*
    * **[!UICONTROL City]** : *Carol Stream*
    * **[!UICONTROL Street]** : *565 E. Fullerton Ave.*
-   * **[!UICONTROL Postcode]** : *60188*
+   * **[!UICONTROL Postcode]**: *60188*
 
 1. Accédez à **[!UICONTROL Stores]** > **[!UICONTROL Stocks]** > **[!UICONTROL Add New Stock]** pour créer un nouveau stock.
 

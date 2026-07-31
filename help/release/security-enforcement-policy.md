@@ -23,9 +23,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Adobe Commerce on Cloud uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement à Adobe Commerce on Cloud version 2.4.4 - 2.4.9"
 nudge: true
-source-git-commit: 85ff49e8a7dbf4ee8c2eef801bd44f45db0a21a5
+source-git-commit: 7512d5cd3fa1917c87b53e25ca69a3dc3c813727
 workflow-type: tm+mt
-source-wordcount: 1983
+source-wordcount: 1985
 ht-degree: 0%
 
 ---
@@ -195,7 +195,7 @@ Adobe fournit des outils qui réduisent le coût et le temps de migration vers A
 
 * **Évaluation de la migration :** évalue la complexité de migration de vos personnalisations. Consultez la [&#x200B; Présentation de l’outil d’évaluation de la migration &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/migration/migration-tools/assessment).
 
-* **Migration des données :** l’outil [migration de données en bloc et incrémentielle](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data) déplace vos données vers votre nouvel environnement Adobe Commerce as a Cloud Service.
+* **Migration des données :** l’outil [migration de données en bloc et incrémentielle](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool) déplace vos données vers votre nouvel environnement Adobe Commerce as a Cloud Service.
 
 * Adobe [migration assistée par l’IA et outils de développement](https://developer.adobe.com/commerce/extensibility/developer-agent/), notamment **[!DNL Adobe Developer App Builder]** et **[!DNL Commerce Storefront powered by Edge Delivery Services]**, permet d’accélérer la modernisation du storefront et la reconfiguration des extensions de plateformes.
 

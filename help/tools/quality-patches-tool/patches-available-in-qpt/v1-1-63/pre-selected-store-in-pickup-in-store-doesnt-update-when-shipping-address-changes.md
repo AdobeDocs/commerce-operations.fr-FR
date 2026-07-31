@@ -7,7 +7,7 @@ exl-id: 4efc99d6-88a3-43f9-88d4-dedb9d8a269e
 type: Troubleshooting
 source-git-commit: 036c1b81d9ec8f55f002446a8ea6078c6f8014d9
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -39,13 +39,13 @@ Le magasin présélectionné n&#39;a pas été mis à jour lorsqu&#39;une nouvel
 1. Activez **[!UICONTROL In-Store Delivery]** en accédant à **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL In-Store Delivery]**.
 1. Fournissez une clé API [!DNL Google] valide pour [!DNL Google Distance Provider]. Pour ce faire, accédez à **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Google Distance Provider]**.
 1. Ajoutez une nouvelle source (**[!UICONTROL Stores]** > **[!UICONTROL Sources]** > **[!UICONTROL Add New Source]**) et définissez les valeurs suivantes :
-   * **[!UICONTROL Latitude]** : *-41.917344*
-   * **[!UICONTROL Longitude]** : *-88.102569*
+   * **[!UICONTROL Latitude]**: *-41.917344*
+   * **[!UICONTROL Longitude]**: *-88.102569*
    * **[!UICONTROL Use as Pickup Location]** : *Oui*
    * **[!UICONTROL Country United]** : *États*
    * **[!UICONTROL State]** : *Illinois*
    * **[!UICONTROL City]** : *Carol Stream*
-   * **[!UICONTROL Postcode]** : *60188*
+   * **[!UICONTROL Postcode]**: *60188*
 1. Ajoutez un nouveau stock (**[!UICONTROL Stores]** > **[!UICONTROL Inventory]** > **[!UICONTROL Stock]** > **[!UICONTROL Add New Stock]**), attribuez-lui la nouvelle source et le site web principal.
 1. Modifiez un produit, attribuez-le au nouveau Source, En stock et qté > *0*.
 1. Patientez jusqu’à ce que la réindexation soit terminée.

@@ -7,7 +7,7 @@ exl-id: 79fb3161-f56e-45f3-9933-cf95703f1554
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -40,12 +40,12 @@ La fonctionnalité de panier persistant échoue lors de l’utilisation du pop-u
 
    * Accédez à **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Checkout]** > **[!UICONTROL Checkout Options]** et définissez *[!UICONTROL Allow Guest Checkout]* sur *Non*.
 
-      * Cliquez sur **[!UICONTROL Save Config]**.
+     * Cliquez sur **[!UICONTROL Save Config]**.
 
    * Accédez à **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Persistent Shopping Cart]** > **[!UICONTROL General Options]** et définissez *[!UICONTROL Enable Persistence]* sur *Oui*.
    * Laissez tous les autres paramètres par défaut, mais remplacez *[!UICONTROL Clear Persistence on Sign Out]* par *Non*.
 
-      * Cliquez sur **[!UICONTROL Save Config]**.
+     * Cliquez sur **[!UICONTROL Save Config]**.
 
 1. Accédez à **[!UICONTROL Catalog]** > **[!UICONTROL Products]** > **[!UICONTROL Add product]** pour ajouter un produit simple au catalogue.
 
