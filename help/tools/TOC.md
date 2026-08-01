@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: d8ad9344c866eeffeda81e45ebe7de9376905638
+source-git-commit: 989662bcb4c1a3cc50cffae1d706501409898c64
 workflow-type: tm+mt
-source-wordcount: '10538'
+source-wordcount: '10533'
 ht-degree: 0%
 
 ---
@@ -1051,7 +1051,6 @@ ht-degree: 0%
   - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Référence des outils de ligne de commande {#cli-reference}
   - [Adobe Commerce (sur site)](reference/commerce-on-premises.md)
-  - [Adobe Commerce Beta (sur site)](reference/commerce-on-premises-beta.md)
   - [Outil de compatibilité de mise à niveau](reference/uct.md)
 - Observation pour Adobe Commerce {#observation-for-adobe-commerce}
   - [Introduction](observation-for-adobe-commerce/intro.md)

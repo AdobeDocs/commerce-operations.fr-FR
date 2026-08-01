@@ -23,9 +23,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Adobe Commerce on Cloud uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement à Adobe Commerce on Cloud version 2.4.4 - 2.4.9"
 nudge: true
-source-git-commit: 7512d5cd3fa1917c87b53e25ca69a3dc3c813727
+source-git-commit: 6ecb6002982432b8d67c122569043da55939d915
 workflow-type: tm+mt
-source-wordcount: 1985
+source-wordcount: 1981
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Continuer à exécuter votre storefront e-commerce sur des logiciels non pris en
 
 ### Action 1 : mise à niveau des dépendances logicielles tierces
 
-En fonction du logiciel, toutes les dépendances de logiciels non prises en charge doivent être mises à niveau selon les chronologies partagées dans le tableau ci-dessous. Vous pouvez afficher vos environnements dans la [console cloud](https://console.adobecommerce.com/) et vérifier les versions dépendantes en cours d’exécution à l’aide de ces [instructions](#check-software-dependency-versions). Les mises à niveau des dépendances logicielles s’appliquent à toutes les versions d’Adobe Commerce on Cloud 2.4.4 à 2.4.9.
+En fonction du logiciel, toutes les dépendances de logiciels non prises en charge doivent être mises à niveau selon les chronologies partagées dans le tableau ci-dessous. Vous pouvez afficher vos environnements dans la [console cloud](https://console.adobecommerce.com/) et vérifier les versions dépendantes en cours d’exécution à l’aide de ces [instructions](#how-to-check-the-versions-you-are-running). Les mises à niveau des dépendances logicielles s’appliquent à toutes les versions d’Adobe Commerce on Cloud 2.4.4 à 2.4.9.
 
 | Dépendance | Version | Doit mettre à niveau vers | Date d’application |
 | --- | --- | --- | --- |
@@ -136,7 +136,7 @@ En fonction du logiciel, toutes les dépendances de logiciels non prises en char
 
 Adobe vous aidera à mettre à niveau directement ces dépendances logicielles.
 
-* **Prise en main :** ouvrez un [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) répertoriant les environnements à mettre à niveau et les dépendances impliquées. Ouvrez votre ticket au moins 30 jours avant votre date d&#39;application afin que notre équipe puisse planifier le travail.
+* **Prise en main :** ouvrez un [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) répertoriant les environnements à mettre à niveau et les dépendances impliquées. Ouvrez votre ticket au moins 30 jours avant votre date d&#39;application afin que notre équipe puisse planifier le travail.
 
 * **Temps d’arrêt :** Adobe vous confirmera la fenêtre attendue lors de la planification.
 
@@ -187,7 +187,7 @@ Adobe propose des outils et une assistance pour rendre votre transition aussi fl
 
 * **Rapport de compatibilité de mise à niveau :** Adobe fournit un rapport détaillé identifiant exactement ce dont votre mise à niveau vers Adobe Commerce version 2.4.9 a besoin, y compris la durée et la portée des coûts. [Générez votre rapport de compatibilité de mise à niveau](https://supportinsights.adobe.com/commerce/tab/main).
 
-* **Mise à niveau des dépendances logicielles :** comme vous ne pouvez pas mettre à niveau directement les dépendances logicielles, [ouvrez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket){target="_blank"} pour qu’Adobe gère la mise à niveau pour vous. Pour plus d’informations, voir [Configuration des services](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}.
+* **Mise à niveau des dépendances logicielles :** comme vous ne pouvez pas mettre à niveau directement les dépendances logicielles, [ouvrez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"} pour qu’Adobe gère la mise à niveau pour vous. Pour plus d’informations, voir [Configuration des services](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}.
 
 **Si vous choisissez de migrer vers Adobe Commerce as a Cloud Service**
 

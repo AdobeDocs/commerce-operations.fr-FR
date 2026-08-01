@@ -2,7 +2,8 @@
 title: Notes De Mise À Jour Du Correctif De Sécurité D’Adobe Commerce 2.4.2
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.2.
 exl-id: e6058e96-b810-4a78-8804-15783afef951
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-05-12T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
