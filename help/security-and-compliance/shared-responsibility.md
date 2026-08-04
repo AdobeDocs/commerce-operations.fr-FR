@@ -2,9 +2,9 @@
 title: Responsabilité partagée Sécurité et modèle opérationnel
 description: Découvrez les responsabilités de sécurité de chaque partie impliquée dans votre projet d’infrastructure cloud Adobe Commerce.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 7dcd7f79417df28402a29e1e52d99eb288e8c6b9
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '3253'
+source-wordcount: '3270'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Les commerçants sont responsables des éléments suivants :
 * Assurer le développement sécurisé des applications
 * Obtention de la certification PCI si demandé par le responsable du traitement des paiements du commerçant
 * Réagir et répondre aux incidents de sécurité
-* En conservant toutes les dépendances tierces, les services de plateforme et les extensions des services Adobe Commerce sur les versions activement prises en charge. Adobe ne fournit pas de prise en charge ni d’assistance en matière de sécurité pour les déploiements exécutant des versions dépendantes non prises en charge. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) et la [Matrice de disponibilité du produit](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability) pour connaître les versions prises en charge.
+* En conservant toutes les dépendances tierces, les services de plateforme et les extensions des services Adobe Commerce sur les versions activement prises en charge. Adobe ne fournit pas de prise en charge ni d’assistance en matière de sécurité pour les déploiements exécutant des versions dépendantes non prises en charge. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) et la [Matrice de disponibilité du produit](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) pour connaître les versions prises en charge.
 
 >[!NOTE]
 >
@@ -39,6 +39,7 @@ Les commerçants sont responsables des éléments suivants :
 >
 >* [Politique relative au cycle de vie des logiciels](../release/lifecycle-policy.md) — dates de fin de prise en charge, prise en charge étendue et dispositions transitoires concernant uniquement la sécurité
 >* [Politique d’application de la mise à niveau de la version cloud](../release/version-upgrade-enforcement-policy.md) — dates d’application et actions requises
+>* [Avis de sécurité et de conformité](../release/security-enforcement-policy.md) — actions requises et délais pour Adobe Commerce sur les versions cloud 2.4.4 à 2.4.9
 
 {{supported-versions-only}}
 
@@ -99,11 +100,11 @@ Le commerçant est chargé de suivre les bonnes pratiques de sécurité pour son
 * Maintien de la sécurité de tous les systèmes ou réseaux que le commerçant connecte à l’application Adobe Commerce sur l’infrastructure cloud
 * La maintenance de tous les services de plateforme, des dépendances tierces et des extensions des services Adobe Commerce sur des versions activement prises en charge par leurs fournisseurs respectifs ou par Adobe. Cela inclut :
 
-   * Services d’infrastructure tels que la base de données, le cache, la recherche, l’exécution PHP et le serveur web
-   * Extensions des services Adobe Commerce
-   * Toutes les extensions tierces et les intégrations personnalisées
+  * Services d’infrastructure tels que la base de données, le cache, la recherche, l’exécution PHP et le serveur web
+  * Extensions des services Adobe Commerce
+  * Toutes les extensions tierces et les intégrations personnalisées
 
-  Adobe ne prend pas en charge les déploiements exécutant des versions non prises en charge. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) et la [Matrice de disponibilité du produit](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability) pour connaître les versions prises en charge.
+  Adobe ne prend pas en charge les déploiements exécutant des versions non prises en charge. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) et la [Matrice de disponibilité du produit](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) pour connaître les versions prises en charge.
 
 ## Responsabilités des fournisseurs de services cloud
 

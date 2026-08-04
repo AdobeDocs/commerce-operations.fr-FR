@@ -3,22 +3,22 @@ title: Sécurisation de votre site et de votre infrastructure Commerce
 description: Maintenez la sécurité en implémentant les bonnes pratiques de sécurité lors de la configuration et de la mise à jour des installations d’Adobe Commerce.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '2173'
+source-wordcount: '2099'
 ht-degree: 0%
 
 ---
 
 # Sécurisation de votre site et de votre infrastructure Commerce
 
-L’établissement et la maintenance d’un environnement sécurisé pour les projets Adobe Commerce déployés sur l’infrastructure cloud sont une responsabilité partagée entre la clientèle d’Adobe Commerce, les partenaires en solutions et Adobe. L’objectif de ce guide est de fournir les bonnes pratiques pour le côté client de l’équation.
+L’établissement et la maintenance d’un environnement sécurisé pour les projets Adobe Commerce déployés sur l’infrastructure cloud sont une responsabilité partagée entre la clientèle d’Adobe Commerce, les partenaires en solutions et Adobe. Ce guide a pour but de fournir les bonnes pratiques pour les responsabilités du client.
 
-Bien que vous ne puissiez pas éliminer tous les risques de sécurité, l’application de ces bonnes pratiques renforce la position de sécurité des installations Commerce. Un site et une infrastructure sécurisés constituent une cible moins attrayante pour les attaques malveillantes, garantissent la sécurité de la solution et des informations sensibles des clients et contribuent à réduire au minimum les incidents liés à la sécurité qui peuvent entraîner des perturbations du site et des enquêtes coûteuses.
+Bien que vous ne puissiez pas éliminer tous les risques de sécurité, l’application de ces bonnes pratiques renforce la position de sécurité des installations Commerce. Un site et une infrastructure sécurisés réduisent le risque d&#39;attaques malveillantes, protègent les informations sensibles et minimisent les incidents de sécurité coûteux.
 
 >[!NOTE]
 >
->Pour plus d’informations sur les rôles et les responsabilités en matière de sécurisation et de maintenance des projets Adobe Commerce sur les infrastructures cloud, voir [Modèle de responsabilité partagée](https://experienceleague.adobe.com/fr/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)) dans le _Guide de sécurité et de conformité d’Adobe Commerce_.
+>Pour plus d’informations sur les rôles et les responsabilités en matière de sécurisation et de maintenance des projets Adobe Commerce sur les infrastructures cloud, voir [Modèle de responsabilité partagée](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart) dans le _Guide de sécurité et de conformité d’Adobe Commerce_.
 
 [Toutes les versions prises en charge](../../../release/versions.md) de :
 
@@ -31,21 +31,21 @@ Adobe considère que les recommandations suivantes sont de la plus haute priorit
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Activez l’authentification à deux facteurs pour votre administrateur et toutes les connexions SSH**
 
-- [Sécurité pour l’administrateur Commerce](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html)
+- [Sécurité pour l’administrateur Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)
 
-- [Connexions SSH sécurisées](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html?lang=fr) (infrastructure cloud)
+- [Connexions SSH sécurisées](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/multi-factor-authentication) (infrastructure cloud)
 
 Lorsque MFA est activé sur un projet, tous les comptes d’infrastructure cloud Adobe Commerce dotés d’un accès SSH doivent suivre un workflow d’authentification. Ce workflow nécessite un code d’authentification à deux facteurs (2FA) ou un jeton API et un certificat SSH pour accéder à l’environnement.
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Sécuriser l’administrateur**
 
-- [Configurez une URL d’administration autre que celle par défaut](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=fr#use-a-custom-admin-url) au lieu d’utiliser le `admin` par défaut ou un terme courant tel que `backend`. Cette configuration réduit l’exposition aux scripts qui tentent d’obtenir un accès non autorisé à votre site.
+- [Configurez une URL d’administration autre que celle par défaut](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url) au lieu d’utiliser le `admin` par défaut ou un terme courant tel que `backend`. Cette configuration réduit l’exposition aux scripts qui tentent d’obtenir un accès non autorisé à votre site.
 
-- [Configurer des paramètres de sécurité avancés](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=fr)—Ajoutez une clé secrète aux URL, faites en sorte que les mots de passe soient sensibles à la casse et limitez la durée de la session d&#39;administrateur, l&#39;intervalle de durée de vie des mots de passe et le nombre de tentatives de connexion autorisées avant de verrouiller un compte utilisateur d&#39;administrateur. Pour une sécurité renforcée, configurez la durée d’inactivité du clavier avant l’expiration de la session en cours et assurez-vous que le nom d’utilisateur et le mot de passe soient sensibles à la casse.
+- [Configurer les paramètres de sécurité avancés](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)—Ajoutez une clé secrète aux URL, exigez des mots de passe sensibles à la casse et limitez la durée de la session d&#39;administrateur, la durée de vie du mot de passe et les tentatives de connexion. Pour une sécurité renforcée, configurez la durée d’inactivité du clavier avant l’expiration de la session en cours et assurez-vous que le nom d’utilisateur et le mot de passe soient sensibles à la casse.
 
-- [Activez ReCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=fr) pour protéger l’administrateur contre les attaques automatisées par force brute.
+- [Activez reCAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) pour protéger l’administrateur contre les attaques automatisées par force brute.
 
-- Appliquez le principe de moindre privilège lors de l’attribution d’[autorisations d’administrateur](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html?lang=fr) aux rôles et rôles aux comptes utilisateur d’administrateur.
+- Appliquez le principe de moindre privilège lors de l’attribution d’[autorisations d’administrateur](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions) aux rôles et rôles aux comptes utilisateur d’administrateur.
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Effectuez la mise à niveau vers la dernière version d’Adobe Commerce**
 
@@ -55,17 +55,17 @@ Gardez votre code à jour en [mettant à niveau votre projet Commerce vers la de
 
 Utilisez [gestion de la configuration](../../../configuration/cli/set-configuration-values.md) pour verrouiller les valeurs de configuration critiques.
 
-Les commandes `lock config` et `lock env` de l’interface de ligne de commande configurent les variables d’environnement pour les empêcher d’être mises à jour par l’administrateur. La commande écrit la valeur dans le fichier `<Commerce base dir>/app/etc/env.php`. (Pour Commerce sur les projets d’infrastructure cloud, voir [Gestion de la configuration du magasin](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=fr#sensitive-data).)
+Les commandes `lock config` et `lock env` de l’interface de ligne de commande configurent les variables d’environnement pour les empêcher d’être mises à jour par l’administrateur. La commande écrit la valeur dans le fichier `<Commerce base dir>/app/etc/env.php`. (Pour Commerce sur les projets d’infrastructure cloud, voir [Gestion de la configuration du magasin](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/store-settings#sensitive-data).)
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Exécuter des analyses de sécurité**
 
-Utilisez le service d&#39;analyse de sécurité Commerce [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html?lang=fr) pour surveiller tous les sites Adobe Commerce à la recherche de risques de sécurité et de programmes malveillants connus, et abonnez-vous pour recevoir des mises à jour de correctifs et des notifications de sécurité.
+Utilisez le service d&#39;analyse de sécurité Commerce [](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) pour surveiller tous les sites Adobe Commerce à la recherche de risques de sécurité et de programmes malveillants connus, et abonnez-vous pour recevoir des mises à jour de correctifs et des notifications de sécurité.
 
 ## Assurer la sécurité des extensions et du code personnalisé
 
 Lorsque vous étendez Adobe Commerce en ajoutant des extensions tierces à partir de la Marketplace Adobe Commerce ou que vous ajoutez du code personnalisé, assurez la sécurité de ces personnalisations en appliquant les bonnes pratiques suivantes :
 
-![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Choisissez un partenaire ou un intégrateur de solution (SI) qui maîtrise parfaitement la sécurité**—Assurez des intégrations sécurisées et la diffusion sécurisée du code personnalisé en sélectionnant des organisations qui appliquent des pratiques de développement sécurisées et qui ont une solide expérience en matière de prévention et de résolution des problèmes de sécurité.
+![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Choisissez un partenaire soucieux de la sécurité ou un intégrateur de solution (SI)**—Assurez des intégrations sécurisées et du code personnalisé en sélectionnant les organisations ayant des antécédents de développement sécurisé.
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Utiliser des extensions sécurisées**—Identifiez les extensions les plus appropriées et les plus sécurisées pour les déploiements de Commerce en consultant votre intégrateur de solution ou votre développeur et en suivant les [bonnes pratiques relatives aux extensions Adobe](../planning/extensions.md).
 
@@ -77,11 +77,11 @@ Lorsque vous étendez Adobe Commerce en ajoutant des extensions tierces à parti
 
 - Assurez-vous que les développeurs d’extensions PHP suivent les directives de développement, les processus et les bonnes pratiques de sécurité d’Adobe Commerce. Plus précisément, les développeurs doivent éviter d&#39;utiliser les fonctionnalités PHP qui peuvent conduire à l&#39;exécution de code à distance ou à une cryptographie faible. Voir [Sécurité](https://developer.adobe.com/commerce/php/best-practices/security/) dans le *Guide des bonnes pratiques pour les développeurs d’extensions*.
 
-![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Code d’audit** : consultez votre serveur et votre référentiel de code source pour identifier les restes de développement. Assurez-vous qu&#39;aucun fichier journal accessible, aucun répertoire .git visible publiquement, aucun tunnel pour exécuter des instructions SQL, aucun vidage de base de données, aucun fichier d&#39;informations php ou aucun autre fichier non protégé qui ne soit pas requis et qui puisse être utilisé lors d&#39;une attaque n&#39;est disponible.
+![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Code d’audit** : consultez votre serveur et votre référentiel de code source pour identifier les restes de développement. Assurez-vous qu&#39;aucun fichier journal, répertoire .git, tunnel SQL, vidage de base de données ou fichier d&#39;informations php n&#39;est accessible.
 
 ## Mettre à niveau vers la dernière version
 
-Adobe publie en permanence des composants de solution mis à jour pour améliorer la sécurité et mieux protéger les clients contre d’éventuels compromis. La mise à niveau vers la dernière version de l’application Adobe Commerce, des services installés et des extensions, ainsi que l’application des correctifs actuels constituent la première et la meilleure ligne de défense contre les menaces de sécurité.
+Adobe publie en permanence des composants de solution mis à jour pour améliorer la sécurité et mieux protéger les clients contre d’éventuels compromis. La mise à niveau vers la dernière version de l’application Adobe Commerce, des services installés et des extensions, ainsi que l’application des correctifs actuels constituent la principale méthode de protection contre les menaces de sécurité.
 
 Commerce publie généralement des mises à jour de sécurité tous les trimestres, mais se réserve le droit de publier des correctifs pour les menaces de sécurité majeures en fonction de la priorité et d’autres facteurs.
 
@@ -90,12 +90,13 @@ Consultez les ressources suivantes pour plus d’informations sur les versions d
 - [Versions publiées](../../../release/versions.md)
 - [Disponibilité du produit](../../../release/product-availability.md) (services Adobe Commerce et extensions créées par Adobe)
 - [Politique relative au cycle de vie d’Adobe Commerce](../../../release/lifecycle-policy.md)
+- [Avis de sécurité et de conformité](../../../release/security-enforcement-policy.md) (Adobe Commerce sur Cloud versions 2.4.4 à 2.4.9)
 - [Guide de mise à niveau](../../../upgrade/overview.md)
 - [Application de correctifs](../../../upgrade/patches/overview.md)
 
 >[!TIP]
 >
->Obtenez les dernières informations de sécurité et atténuez les problèmes de sécurité connus en vous abonnant au service de notification de sécurité [&#128279;](https://www.adobe.com/subscription/adbeSecurityNotifications.html).
+>Obtenez les dernières informations de sécurité et atténuez les problèmes de sécurité connus en vous abonnant au service de notification de sécurité [](https://www.adobe.com/subscription/adobesecuritynotifications.html).
 
 ## Développement d’un plan de reprise après sinistre
 
@@ -109,37 +110,37 @@ Dans le cadre d’un plan de reprise après sinistre, Adobe recommande vivement 
 
 **Adobe Commerce déployé sur une infrastructure cloud**
 
-- [Sauvegarde et reprise après sinistre](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=fr#backup-and-disaster-recovery)
+- [Sauvegarde et reprise après sinistre](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
 
-- [Gestion de la configuration des magasins pour Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=fr)
+- [Gestion de la configuration des magasins pour Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/store-settings)
 
 **Adobe Commerce déployé sur site**
 
 - [Exporter les paramètres de configuration](../../../configuration/cli/export-configuration.md)
 
-   - [Importer les paramètres de configuration](../../../configuration/cli/import-configuration.md)
+  - [Importer les paramètres de configuration](../../../configuration/cli/import-configuration.md)
 
-   - [Sauvegarde et restauration du système de fichiers, du support et de la base de données](../../../installation/tutorials/backup.md)
+  - [Sauvegarde et restauration du système de fichiers, du support et de la base de données](../../../installation/tutorials/backup.md)
 
 ## Maintenir un site et une infrastructure sécurisés
 
-Cette section résume les bonnes pratiques de maintenance de la sécurité du site et de l’infrastructure pour une installation Adobe Commerce. Bon nombre de ces pratiques exemplaires visent à sécuriser l&#39;infrastructure informatique en général, de sorte que certaines des recommandations peuvent déjà être mises en œuvre.
+Cette section résume les bonnes pratiques de maintenance de la sécurité du site et de l’infrastructure pour une installation Adobe Commerce. Bon nombre de ces pratiques exemplaires visent à sécuriser l&#39;infrastructure informatique en général, de sorte que certaines des recommandations sont déjà mises en œuvre.
 
-![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Bloquer l’accès non autorisé**—Contactez votre partenaire d’hébergement pour configurer un tunnel VPN afin de bloquer l’accès non autorisé au site Commerce et aux données client. Configurez un tunnel SSH pour bloquer tout accès non autorisé à l’application Commerce.
+![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Bloquer l’accès non autorisé**—Pour bloquer l’accès non autorisé au site Commerce et aux données client, collaborez avec votre partenaire d’hébergement pour configurer un tunnel VPN. Pour bloquer tout accès non autorisé à l’application Commerce, configurez un tunnel SSH.
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Utiliser un pare-feu d&#39;application web**—Analysez le trafic et découvrez des schémas suspects, tels que l&#39;envoi d&#39;informations de carte de crédit à une adresse IP inconnue à l&#39;aide d&#39;un pare-feu d&#39;application web.
 
-Les installations Adobe Commerce déployées sur des infrastructures cloud peuvent utiliser les services WAF intégrés disponibles avec l’intégration [Fastly services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=fr)
+Les installations Adobe Commerce déployées sur des infrastructures cloud peuvent utiliser les services WAF intégrés disponibles avec l’intégration [Fastly services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)
 
-![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Configurer des paramètres de sécurité de mot de passe avancés**—Configurez des mots de passe sécurisés et modifiez-les au moins tous les 90 jours, comme recommandé par la norme PCI Data Security dans la section 8.2.4. Voir [Configurer les paramètres de sécurité d’administration](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=fr).
+![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Configurer des paramètres de sécurité de mot de passe avancés**—Configurez des mots de passe sécurisés et modifiez-les au moins tous les 90 jours, comme recommandé par la norme PCI Data Security dans la section 8.2.4. Voir [Configurer les paramètres de sécurité d’administration](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin).
 
-![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Utiliser HTTPS** : si le site Commerce vient d’être implémenté, lancez l’ensemble du site en utilisant HTTPS. Non seulement Google utilise HTTPS comme facteur de classement, mais de nombreux utilisateurs n’envisagent même pas d’acheter sur un site, sauf s’il est sécurisé par HTTPS.
+![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Utiliser HTTPS** : si le site Commerce vient d’être implémenté, lancez l’ensemble du site en utilisant HTTPS. Google utilise HTTPS comme facteur de classement, et de nombreux utilisateurs n’envisagent d’acheter sur un site que s’il est sécurisé par HTTPS.
 
 ## Protection contre les programmes malveillants
 
-Les attaques de logiciels malveillants ciblant les sites d&#39;e-commerce sont bien trop courantes, et les acteurs de la menace développent continuellement de nouvelles façons de récupérer les informations de carte de crédit et les informations personnelles des transactions.
+Les attaques de logiciels malveillants ciblant les sites d&#39;e-commerce sont fréquentes, et les acteurs de la menace développent continuellement de nouvelles façons de récupérer les informations de carte de crédit et les informations personnelles des transactions.
 
-Cependant, Adobe a constaté que la plupart des compromis de site ne sont pas dus à un hacker innovant. Les acteurs de la menace profitent plutôt des vulnérabilités existantes non corrigées, des mots de passe inadéquats et des paramètres de propriété et d&#39;autorisation faibles du système de fichiers.
+Cependant, Adobe a constaté que la plupart des compromis de site ne sont pas dus à un attaquant innovant. Les acteurs de la menace profitent plutôt des vulnérabilités existantes non corrigées, des mots de passe inadéquats et des paramètres de propriété et d&#39;autorisation faibles du système de fichiers.
 
 Dans les attaques les plus courantes, du code malveillant est injecté dans l’en-tête absolu ou le pied de page absolu d’un magasin client. Là, le code collecte les données de formulaire saisies par un client dans le storefront, y compris les informations de connexion du client et les données du formulaire de passage en caisse. Ensuite, ces données sont envoyées à un autre emplacement à des fins malveillantes plutôt qu’au serveur principal de Commerce. En outre, les logiciels malveillants peuvent empêcher l&#39;administrateur d&#39;exécuter du code qui remplace le formulaire de paiement d&#39;origine par un faux formulaire qui remplace toutes les protections définies par le fournisseur de paiement.
 
@@ -147,12 +148,12 @@ Les fraudeurs de cartes de crédit côté client sont un type de programme malve
 
 ![Flux de données pour les attaques de logiciels malveillants ciblant les sites d’e-commerce](../../../assets/playbooks/malware-data-flow.png)
 
-Après certaines actions, telles que l’envoi d’un formulaire par un utilisateur ou la modification d’une valeur de champ, l’émulateur sérialise les données et les envoie à des points d’entrée tiers. Ces points d’entrée sont généralement d’autres sites web compromis qui servent de relais pour envoyer les données à leur destination finale.
+Après des actions telles que l’envoi d’un formulaire ou la modification d’un champ, l’émulateur sérialise les données et les envoie vers des points d’entrée tiers. Ces points d’entrée sont généralement d’autres sites web compromis qui servent de relais pour envoyer les données à leur destination finale.
 
 
 >[!TIP]
 >
->Si un site Commerce est affecté par une attaque par programme malveillant, suivez les bonnes pratiques d’Adobe Commerce pour [répondre à un incident de sécurité](../maintenance/respond-to-security-incident.md).
+>Si une attaque par programme malveillant affecte un site Commerce, suivez les bonnes pratiques d’Adobe Commerce pour [répondre à un incident de sécurité](../maintenance/respond-to-security-incident.md).
 
 ### Connaître les attaques les plus courantes
 
@@ -160,7 +161,7 @@ Vous trouverez ci-dessous une liste des catégories courantes d’attaques qu’
 
 - **Endommagement du site** : un attaquant endommage un site web en modifiant l’aspect visuel du site ou en ajoutant ses propres messages. Bien que l&#39;accès au site et aux comptes d&#39;utilisateurs ait été compromis, les informations de paiement restent souvent sécurisées.
 
-- **Réseaux de zombies** : le serveur Commerce du client fait partie d&#39;un réseau de zombies qui envoie des courriers indésirables. Bien que les données utilisateur ne soient généralement pas compromises, le nom de domaine du client peut être limité par des filtres de spam, empêchant la diffusion de tout e-mail provenant du domaine. Le site du client peut également faire partie d’un réseau de robots, ce qui entraîne une attaque par déni de service distribué (DDoS) sur un ou plusieurs autres sites. Le réseau de zombies peut bloquer le trafic IP entrant vers le serveur Commerce et empêcher les clients d’effectuer des achats.
+- **Réseaux de zombies** : le serveur Commerce du client fait partie d&#39;un réseau de zombies qui envoie des courriers indésirables. Bien que les données utilisateur ne soient généralement pas compromises, les filtres anti-spam placent sur la liste bloquée le nom de domaine du client ou de la cliente, empêchant la diffusion de tout e-mail provenant du domaine. Le site du client peut également faire partie d’un réseau de zombies, ce qui entraîne une attaque par déni de service distribué (DDoS) sur d’autres sites. Le réseau de zombies bloque le trafic IP entrant vers le serveur Commerce, empêchant les clients de faire des achats.
 
 - **Attaques directes du serveur**—Les données sont compromises, des portes dérobées et des logiciels malveillants sont installés et les opérations du site sont affectées. Les informations de paiement qui ne sont pas stockées sur le serveur sont moins susceptibles d&#39;être compromises par ces attaques.
 
@@ -174,11 +175,11 @@ Les attaques par recherche de mot de passe forcée peuvent entraîner un accès 
 
 - Identifiez et protégez tous les points d’accès externes à l’installation de Commerce.
 
-  Vous pouvez sécuriser l’accès à l’administrateur, qui nécessite généralement le plus de protection, en suivant les [recommandations de priorité](#priority-recommendations) d’Adobe lors de la configuration de votre projet Commerce.
+  Vous pouvez sécuriser l’accès à l’administration, qui nécessite la protection la plus importante, en suivant les [recommandations de priorité](#priority-recommendations) d’Adobe lors de la configuration de votre projet Commerce.
 
 - Contrôlez l’accès au site Commerce en configurant une liste de contrôle d’accès qui autorise uniquement l’accès aux utilisateurs provenant d’une adresse IP ou d’un réseau spécifié.
 
-  Vous pouvez utiliser une liste de contrôle d’accès Fastly Edge avec un fragment de code VCL personnalisé pour filtrer les requêtes entrantes et autoriser l’accès par adresse IP. Voir [Custom VCL for allow requests](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html?lang=fr).
+  Vous pouvez utiliser une liste de contrôle d’accès Fastly Edge avec un fragment de code VCL personnalisé pour filtrer les requêtes entrantes et autoriser l’accès par adresse IP. Voir [Custom VCL for allow requests](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist).
 
 
   >[!TIP]
