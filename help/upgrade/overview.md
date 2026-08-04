@@ -39,7 +39,7 @@ La mise à niveau permet à votre entreprise de rester agile dans un secteur du 
 
 ### Sécurité
 
-La sécurité est l’une des principales raisons de la mise à niveau, car 83 % des incidents de sécurité se produisent sur des logiciels obsolètes. Selon [](https://www.ibm.com/reports/data-breach), le coût moyen d&#39;une violation de données est de 3,86 millions de dollars, soit bien plus que ce qu&#39;il en coûte pour atténuer ce risque par la mise à niveau. Adobe propose deux méthodes pour assurer la sécurité de votre boutique tout au long de l’année :
+La sécurité est l’une des principales raisons de la mise à niveau, car 83 % des incidents de sécurité se produisent sur des logiciels obsolètes. Selon [&#128279;](https://www.ibm.com/reports/data-breach), le coût moyen d&#39;une violation de données est de 3,86 millions de dollars, soit bien plus que ce qu&#39;il en coûte pour atténuer ce risque par la mise à niveau. Adobe propose deux méthodes pour assurer la sécurité de votre boutique tout au long de l’année :
 
 - **Versions des correctifs** : incluez la sécurité, les performances, la qualité et des correctifs de priorité élevée.
 - **Mises à jour des correctifs de sécurité** : incluez des correctifs et des améliorations pour garantir la sécurité de votre site et faciliter sa mise en œuvre.
