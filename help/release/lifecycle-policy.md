@@ -15,7 +15,7 @@ ht-degree: 3%
 
 Afin de rationaliser la politique de cycle de vie d’Adobe Commerce et de répondre aux besoins critiques des clients, Adobe propose une période de prise en charge standard de trois ans à compter de la date de disponibilité générale (DG) pour chaque version. Elle publie également les correctifs de qualité au cours de cette période. Pour connaître les dates et informations concernant la fin de la prise en charge logicielle pour chaque version, reportez-vous au tableau [Dates de fin de prise en charge](#end-of-support-dates).
 
-Adobe ne fournit pas de correctifs de sécurité et de qualité pour les services tiers et les dépendances logicielles (telles que PHP et MySQL) qui peuvent arriver en fin de vie lorsque les clients sont dans la période de prise en charge de trois ans ou prolongée d’Adobe Commerce. Pour obtenir une liste complète des technologies tierces testées et prises en charge](../installation/system-requirements.md) consultez la section [Configuration requise.
+Adobe ne fournit pas de correctifs de sécurité et de qualité pour les services tiers et les dépendances logicielles (telles que PHP et MySQL) qui peuvent arriver en fin de vie lorsque les clients sont dans la période de prise en charge de trois ans ou prolongée d’Adobe Commerce. Pour obtenir une liste complète des technologies tierces testées et prises en charge[&#128279;](../installation/system-requirements.md) consultez la section Configuration requise.
 
 ## Prise en charge standard
 
@@ -175,7 +175,7 @@ Il vous incombe de gérer toutes les dépendances tierces et tous les services P
 >
 >L’exécution de versions de dépendance non prises en charge peut entraîner une vulnérabilité de sécurité sur votre instance cloud qu’Adobe ne peut pas résoudre. Dans ce cas, Adobe sera forcée de prendre les mesures appropriées pour assurer la sécurité de la plateforme Adobe Commerce et de ses clients. Cela comprend la suspension du trafic vers les infrastructures touchées. Par conséquent, votre storefront d’e-commerce se déconnectera.
 >
->Si un environnement reste non conforme à la suite de la suspension du trafic, Adobe peut mettre fin aux services cloud et lancer le processus de désaffectation. À la suite de la mise hors service, toutes les données et ressources de l’environnement d’e-commerce hébergé, y compris toutes les instances, tous les environnements et toutes les branches, seront définitivement supprimées et ne pourront pas être restaurées. Pour connaître la planification des mises à niveau et le support technique disponible tout au long du processus](security-enforcement-policy.md) reportez-vous à la section [Actions et délais requis pour sécuriser les environnements Commerce.
+>Si un environnement reste non conforme à la suite de la suspension du trafic, Adobe peut mettre fin aux services cloud et lancer le processus de désaffectation. À la suite de la mise hors service, toutes les données et ressources de l’environnement d’e-commerce hébergé, y compris toutes les instances, tous les environnements et toutes les branches, seront définitivement supprimées et ne pourront pas être restaurées. Pour connaître la planification des mises à niveau et le support technique disponible tout au long du processus[&#128279;](security-enforcement-policy.md) reportez-vous à la section Actions et délais requis pour sécuriser les environnements Commerce.
 
 ## Fin de vie de PHP et conformité PCI
 
