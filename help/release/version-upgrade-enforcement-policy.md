@@ -2,9 +2,9 @@
 title: Politique d’application de la mise à niveau de la version cloud
 description: 'Découvrez l’application des mises à niveau de version pour Adobe Commerce sur le cloud : pourquoi Adobe applique-t-il les mises à niveau, les dates d’application, le déclassement et les actions requises ? Consultez la politique relative au cycle de vie pour connaître les dispositions transitoires et les chemins de migration.'
 nudge: false
-source-git-commit: 797f067de451c8b1b4d735e82de66a3fd9b56563
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Politique d’application de la mise à niveau de version pour Adobe Commerce on Cloud
 
-Lorsque la prise en charge régulière et la prise en charge étendue d’une version d’Adobe Commerce prennent fin, Adobe se réserve le droit de mettre hors service Adobe Commerce sur les environnements cloud qui exécutent toujours cette version non prise en charge. L’application de la mise à niveau de version s’applique uniquement aux environnements Adobe Commerce sur le cloud ; les clients sur site gèrent leur propre infrastructure.
+Lorsque la prise en charge régulière et la prise en charge étendue d’une version d’Adobe Commerce prennent fin, Adobe se réserve le droit de mettre hors service Adobe Commerce sur les environnements cloud qui exécutent toujours cette version non prise en charge. L’application de la mise à niveau de version s’applique uniquement à Adobe Commerce sur les environnements cloud. Les clients sur site gèrent leur propre infrastructure. Adobe vous informe à l’avance et fournit des ressources d’assistance bien avant ces dates afin de vous aider à planifier la mise à niveau ou la migration.
 
 Vous devez passer à une version d’Adobe Commerce prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant la date de publication [fin de la prise en charge étendue](lifecycle-policy.md#end-of-support-dates) pour votre ligne de mise à jour.
 
@@ -20,13 +20,13 @@ Les sections suivantes expliquent pourquoi Adobe applique les mises à niveau, c
 
 >[!NOTE]
 >
->Cette rubrique traite uniquement de l’application des mises à niveau vers Cloud . Pour les définitions du niveau de prise en charge, le tableau [dates de fin de prise en charge](lifecycle-policy.md#end-of-support-dates), les [dispositions transitoires réservées à la sécurité](lifecycle-policy.md#security-only-transitional-period), les [dépendances de logiciels tiers](lifecycle-policy.md#platform-dependencies), les [fin de vie de PHP et conformité PCI](lifecycle-policy.md#php-end-of-life-and-pci-compliance) et les [options de mise à niveau et de migration](lifecycle-policy.md#upgrade-and-migration-options), consultez la politique [cycle de vie](lifecycle-policy.md). En plus de la mise à niveau vers une version d’Adobe Commerce prise en charge, Adobe exige également que vous conserviez les dépendances de logiciels tiers sur les versions activement prises en charge.
+>Cette rubrique traite uniquement de l’application des mises à niveau vers Cloud . Consultez la [politique de cycle de vie](lifecycle-policy.md) pour obtenir des définitions de niveau de prise en charge, [dates de fin de prise en charge](lifecycle-policy.md#end-of-support-dates), [dispositions transitoires de sécurité uniquement](lifecycle-policy.md#security-only-transitional-period), [dépendances de logiciels tiers](lifecycle-policy.md#platform-dependencies), [fin de vie PHP et conformité PCI](lifecycle-policy.md#php-end-of-life-and-pci-compliance) et [options de mise à niveau et de migration](lifecycle-policy.md#upgrade-and-migration-options). En plus de la mise à niveau vers une [!DNL Adobe Commerce version] prise en charge, Adobe exige également que vous conserviez les dépendances de logiciels tiers sur les versions activement prises en charge. Pour connaître les actions et les délais spécifiques requis qui s’appliquent aux versions [!DNL Adobe Commerce on Cloud] 2.4.4 à 2.4.9, consultez l’[avis de sécurité et de conformité](security-enforcement-policy.md).
 
 ## Pourquoi Adobe introduit-il cette politique ?
 
 Adobe est responsable de la sécurité et de la conformité de l’infrastructure de plateforme hébergée sur laquelle s’exécutent les clients Adobe Commerce on Cloud. Cela inclut la mise à jour de toutes les dépendances logicielles sous-jacentes, l’application de correctifs de sécurité et le respect des normes de conformité, telles que PCI, sur lesquelles les clients comptent.
 
-Lorsque la prise en charge de la sécurité des dépendances logicielles sous-jacentes est officiellement arrêtée par les fournisseurs, Adobe ne peut plus fournir le niveau de couverture de sécurité et de prise en charge de la plateforme requis. Continuer à gérer des magasins sur des infrastructures non prises en charge expose les clients, leurs acheteurs et Adobe à des risques inacceptables. Adobe introduit donc une politique d’application de mise à niveau de version formelle qui définit le moment où Adobe Commerce sur les environnements cloud exécutant des versions Commerce non prises en charge sera désactivé.
+Lorsque les fournisseurs mettent officiellement fin à la prise en charge de la sécurité des dépendances logicielles sous-jacentes, Adobe ne peut plus fournir le niveau de sécurité requis ni la prise en charge de la plateforme. Continuer à gérer des magasins sur des infrastructures non prises en charge expose les clients, leurs acheteurs et Adobe à des risques inacceptables. Adobe introduit donc une politique d’application de mise à niveau formelle qui définit le moment où Adobe Commerce sur les environnements cloud exécutant des versions de Commerce non prises en charge sont désactivées, ainsi que la prise en charge fournie par Adobe pour vous aider à planifier votre mise à niveau ou migration. Pour plus d’informations, consultez l’[avis de sécurité et de conformité].
 
 ## Calcul des dates d’application de la mise à niveau
 

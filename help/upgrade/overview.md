@@ -2,9 +2,9 @@
 title: Présentation du processus de mise à niveau
 description: Découvrez comment la mise à niveau de votre projet Adobe Commerce garantit la sécurité et l’efficacité de votre storefront. Découvrez les bonnes pratiques de planification et d’exécution de mises à niveau réussies.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '960'
 ht-degree: 2%
 
 ---
@@ -43,6 +43,8 @@ La sécurité est l’une des principales raisons de la mise à niveau, car 83 %
 
 - **Versions des correctifs** : incluez la sécurité, les performances, la qualité et des correctifs de priorité élevée.
 - **Mises à jour des correctifs de sécurité** : incluez des correctifs et des améliorations pour garantir la sécurité de votre site et faciliter sa mise en œuvre.
+
+Si vous utilisez Adobe Commerce on Cloud versions 2.4.4 à 2.4.9, reportez-vous à l’avis de sécurité et de conformité [Security and Compliance Notice](../release/security-enforcement-policy.md) pour connaître les actions et délais requis afin de garantir la sécurité et la conformité de votre environnement.
 
 ### Performances
 

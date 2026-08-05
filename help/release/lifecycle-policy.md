@@ -3,9 +3,9 @@ title: Politique relative au cycle de vie des logiciels
 description: Découvrez les dates clés de fin de prise en charge logicielle des versions d’Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: ed2757282c079ea7399d4df92000f346aecfbdd8
+source-git-commit: 79afa4fa95c425dfd4bc0fd894abc24db2d1b33b
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1390'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Politique relative au cycle de vie d’Adobe Commerce
 
-Afin de rationaliser la politique de cycle de vie d’Adobe Commerce et de répondre aux besoins critiques des clients, Adobe propose une période de prise en charge standard de trois ans à compter de la date de disponibilité générale (DG) pour chaque version. Elle publie également les correctifs de qualité au cours de cette période. Pour connaître les dates et les détails relatifs à la fin de la prise en charge logicielle pour chaque version, reportez-vous au tableau [Fin de la prise en charge logicielle](#end-of-software-support).
+Afin de rationaliser la politique de cycle de vie d’Adobe Commerce et de répondre aux besoins critiques des clients, Adobe propose une période de prise en charge standard de trois ans à compter de la date de disponibilité générale (DG) pour chaque version. Elle publie également les correctifs de qualité au cours de cette période. Pour connaître les dates et informations concernant la fin de la prise en charge logicielle pour chaque version, reportez-vous au tableau [Dates de fin de prise en charge](#end-of-support-dates).
 
 Adobe ne fournit pas de correctifs de sécurité et de qualité pour les services tiers et les dépendances logicielles (telles que PHP et MySQL) qui peuvent arriver en fin de vie lorsque les clients sont dans la période de prise en charge de trois ans ou prolongée d’Adobe Commerce. Pour obtenir une liste complète des technologies tierces testées et prises en charge[&#128279;](../installation/system-requirements.md) consultez la section Configuration requise.
 
@@ -33,15 +33,15 @@ Adobe incite les clients à effectuer la mise à niveau dès que possible. Toute
 
 >[!NOTE]
 >
->Adobe introduit une politique de mise à niveau de version forcée pour Adobe Commerce on Cloud. À compter du **1er juin 2027**, Adobe ne gérera plus les environnements cloud exécutant des versions de Commerce non prises en charge et se réserve le droit de les mettre hors service. Si vous exécutez sur le cloud, vous devez passer à une version d’Adobe Commerce prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant la date [fin de la prise en charge étendue](lifecycle-policy.md#end-of-support-dates) publiée pour votre ligne de mise à jour. Consultez [Politique d’application de la mise à niveau des versions du cloud](version-upgrade-enforcement-policy.md) pour connaître les dates d’application, les versions affectées et ce qui se passe si vous utilisez une version non prise en charge.
+>Adobe introduit une politique de mise à niveau de version forcée pour Adobe Commerce on Cloud afin d’aider chaque client à rester sur une plateforme sécurisée et prise en charge. À compter du **1er juin 2027**, Adobe ne gérera plus les environnements cloud exécutant des versions de Commerce non prises en charge et se réserve le droit de les mettre hors service. Si vous exécutez sur le cloud, vous devez passer à une version d’Adobe Commerce prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant la date [fin de la prise en charge étendue](lifecycle-policy.md#end-of-support-dates) publiée pour votre ligne de mise à jour. Si vous utilisez les versions 2.4.4 à 2.4.9, consultez l’[avis de sécurité et de conformité](security-enforcement-policy.md) pour connaître les actions spécifiques et les dates limites qui s’appliquent à votre environnement.
 
 ## Période transitoire réservée à la sécurité
 
-Une période transitoire unique et limitée dans le temps disponible uniquement pour les versions 2.4.4, 2.4.5 et 2.4.6 dont le support étendu a pris fin en 2025 ou 2026. La période de transition de sécurité uniquement fournit uniquement des correctifs de sécurité isolés limités. Les correctifs de qualité d’Adobe Commerce ne sont pas fournis. Cette période n’est pas équivalente à la prise en charge standard ou étendue et ne sera pas prolongée davantage. Traitez-la comme une période de migration et non comme un niveau d’assistance à long terme.
+Une période transitoire unique et limitée dans le temps disponible uniquement pour les versions 2.4.4, 2.4.5 et 2.4.6 dont le support étendu a pris fin en 2025 ou 2026. La période transitoire réservée à la sécurité fournit uniquement des correctifs de sécurité isolés limités (aucun correctif de qualité).
 
 >[!IMPORTANT]
 >
->La période transitoire réservée à la sécurité est une exception ponctuelle. Il ne sera pas prolongé au-delà des dates publiées. Traitez la période de sécurité uniquement comme une période de migration et non comme un niveau d’assistance à long terme.
+>La période transitoire réservée à la sécurité est une exception ponctuelle. Il ne sera pas prolongé au-delà des dates publiées. Traitez la période de sécurité uniquement comme une période de migration et non comme un niveau d’assistance à long terme. Contactez votre équipe de compte si vous souhaitez obtenir de l’aide pour créer un plan de migration.
 
 ## Dates de fin de prise en charge
 
@@ -173,7 +173,7 @@ Il vous incombe de gérer toutes les dépendances tierces et tous les services P
 
 >[!IMPORTANT]
 >
->L’exécution de versions de dépendance non prises en charge peut entraîner une vulnérabilité de sécurité sur votre instance cloud qu’Adobe ne peut pas résoudre. Dans ce cas, Adobe se réserve le droit d’imposer une mise à niveau de la dépendance logicielle concernée ou de mettre hors service l’instance si une mise à niveau n’est pas possible, quel que soit votre statut de prise en charge de la version d’Adobe Commerce.
+>L’exécution de versions de dépendance non prises en charge peut entraîner une vulnérabilité de sécurité sur votre instance cloud qu’Adobe ne peut pas résoudre. Dans ce cas, Adobe se réserve le droit d’imposer une mise à niveau de la dépendance logicielle concernée ou de mettre hors service l’instance si une mise à niveau n’est pas possible, quel que soit votre statut de prise en charge de la version d’Adobe Commerce. Consultez l’[avis de sécurité et de conformité](security-enforcement-policy.md) pour savoir comment ces mises à niveau sont planifiées et connaître l’assistance disponible tout au long du processus.
 
 ## Fin de vie de PHP et conformité PCI
 
