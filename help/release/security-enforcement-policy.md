@@ -21,10 +21,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Adobe Commerce on Cloud uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement à Adobe Commerce sur Cloud versions 2.4.4 à 2.4.9"
-color: blue
-source-git-commit: 79afa4fa95c425dfd4bc0fd894abc24db2d1b33b
+nudge: true
+source-git-commit: 582016bc43802ed71563eaf033167e0a4bb0191b
 workflow-type: tm+mt
-source-wordcount: 2040
+source-wordcount: 2108
 ht-degree: 0%
 
 ---
@@ -38,27 +38,34 @@ ht-degree: 0%
 >
 > Ces conseils ne s’appliquent pas aux environnements [!DNL Adobe Commerce as a Cloud Service] (SaaS) ni aux déploiements sur site d’Adobe Commerce.
 
-Le paysage de la cybersécurité évolue fondamentalement, et les mécanismes de défense mis en place par les entreprises doivent évoluer rapidement. La sécurité est essentielle pour les entreprises de commerce électronique, car les transactions en ligne exigent qu&#39;elles traitent des données personnelles et commerciales sensibles, les exposant ainsi à des risques financiers et d&#39;identité en cas de violation. Les environnements de commerce électronique PaaS ont un modèle de responsabilité de sécurité partagée entre Adobe et nos clients, où les clients sont responsables de la maintenance des dépendances de la couche d’application, des intégrations à des logiciels tiers et des pipelines de déploiement.
+Le paysage de la cybersécurité évolue fondamentalement, et les mécanismes de défense mis en place par les entreprises doivent évoluer rapidement. La sécurité est essentielle pour les entreprises de commerce électronique, car les transactions en ligne exigent qu&#39;elles traitent des données personnelles et commerciales sensibles, les exposant ainsi à des risques financiers et d&#39;identité en cas de violation. Les environnements de commerce électronique PaaS ont un modèle de responsabilité partagée où le client est responsable de la sécurité et de la maintenance des dépendances de la couche d’application, des intégrations à des logiciels tiers et des pipelines de déploiement.
 
-Chez Adobe, nous réagissons de manière proactive à l’évolution des risques et nous nous assurons de configurer nos clients Adobe Commerce sur le cloud selon les normes de sécurité les plus élevées. Cela inclut :
+Chez Adobe, nous restons déterminés à gérer l’évolution des risques et à nous assurer que nous configurons nos clients Adobe Commerce sur Cloud selon les normes de sécurité les plus élevées. Cela inclut :
 
-* Correctifs de sécurité mensuels et isolés pour une protection plus rapide et prévisible contre les vulnérabilités critiques
-* Versions annuelles des correctifs avec prise en charge à long terme
-* Politiques de cycle de vie rationalisées pour chaque version avec un intervalle de prise en charge de 3 ans
+1. Correctifs de sécurité isolés mensuels pour une protection plus rapide et prévisible contre les vulnérabilités critiques
 
-Alors qu’Adobe prend les mesures nécessaires pour assurer la sécurité de ses clients, le [modèle de responsabilité partagée](../security-and-compliance/shared-responsibility.md) pour Adobe Commerce on Cloud exige que ses clients soient toujours sur une version prise en charge d’Adobe Commerce on Cloud et de logiciels tiers, qu’ils appliquent des correctifs d’application, qu’ils auditent les extensions tierces et qu’ils sécurisent le code personnalisé. Les logiciels qui ne sont plus pris en charge par les fournisseurs ne reçoivent plus de correctifs de sécurité, ce qui ne résout pas les problèmes de sécurité. Continuer à exécuter votre storefront e-commerce sur des logiciels non pris en charge crée un risque de sécurité réel et croissant.
+2. Correctifs cloud pour le package Commerce afin de garantir la diffusion de correctifs Adobe et de correctifs logiciels qui améliorent l’intégration aux environnements cloud et permettent de résoudre rapidement les problèmes critiques
 
-Cette page décrit les actions que tous les clients et clientes d’Adobe Commerce on Cloud (versions 2.4.4 à 2.4.9) doivent entreprendre pour s’assurer que leurs environnements d’e-commerce restent sécurisés, ainsi que les dates d’application et ce à quoi s’attendre lorsque les exigences de sécurité ne sont pas remplies.
+3. Politiques d’application du cycle de vie
+
+4. Correctifs hors cycle, si nécessaire
+
+5. Versions annuelles des correctifs avec prise en charge à long terme
+
+
+Alors qu’Adobe prend les mesures nécessaires pour assurer la sécurité de ses clients, le modèle de responsabilité partagée pour Adobe Commerce sur le cloud exige que ses clients disposent toujours d’une version prise en charge d’Adobe Commerce sur le cloud et de logiciels tiers, appliquent des correctifs d’application, auditent les extensions tierces et sécurisent le code personnalisé. Les logiciels dont la prise en charge par le fournisseur est terminée ne reçoivent plus de correctifs de sécurité, ce qui laisse sans solution les problèmes de sécurité dans les logiciels. Continuer à exécuter votre storefront eCommerce sur des logiciels non pris en charge crée un risque de sécurité réel et croissant.
+
+Cette page décrit les actions que tous les clients et clientes d’Adobe Commerce on Cloud (versions 2.4.4 à 2.4.9) doivent entreprendre pour s’assurer que leur environnement d’e-commerce reste sécurisé, ainsi que les dates d’application et ce à quoi s’attendre lorsque les exigences de sécurité ne sont pas remplies.
 
 ## Actions requises pour maintenir un environnement sécurisé et conforme
 
-Pour que votre environnement d’e-commerce reste sécurisé et conforme, tous les clients d’Adobe Commerce on Cloud doivent utiliser :
+Pour garantir la sécurité de votre environnement e-commerce et atténuer les risques, tous les clients d’Adobe Commerce on Cloud (versions 2.4.4 à 2.4.9) doivent utiliser :
 
-1. Versions prises en charge de toutes les dépendances logicielles tierces : PHP, MariaDB, Elasticsearch/OpenSearch, Redis et RabbitMQ
+1. Versions prises en charge de toutes les dépendances logicielles tierces (PHP, MariaDB, Elasticsearch, OpenSearch, Redis, RabbitMQ)
 
-1. Une version sécurisée et prise en charge d’Adobe Commerce sur le cloud
+1. Une version sécurisée et prise en charge d’Adobe Commerce sur le cloud. Les versions entièrement prises en charge sont les versions 2.4.8 et 2.4.9, ou la dernière version disponible. Voir la politique de cycle de vie [ici](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/lifecycle-policy).
 
-Suivez les instructions ci-dessous pour vérifier si vous devez prendre des mesures afin de sécuriser votre Adobe Commerce sur les environnements cloud. Dans les environnements qui ne respectent pas les exigences de sécurité dans les délais indiqués dans le tableau 1 ci-dessous, le trafic entrant sera suspendu, ce qui mettra le storefront hors ligne. Si vous avez des doutes quant au respect de l’échéance et si vous avez besoin d’une courte prolongation, veuillez contacter votre équipe de compte ou l’assistance Adobe [Assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
+Suivez les instructions ci-dessous pour vérifier si vous devez prendre des mesures pour sécuriser votre environnement Adobe Commerce sur le cloud. Dans les environnements qui ne respectent pas les exigences de sécurité dans les délais indiqués dans le tableau 1 ci-dessous, le trafic entrant sera suspendu, ce qui mettra le storefront hors ligne. Si vous avez des doutes quant au respect de l’échéance et si vous avez besoin d’une courte prolongation, contactez votre équipe de compte ou l’assistance Adobe.
 
 **Tableau 1 : Exigences de sécurité et délais**
 
@@ -70,19 +77,20 @@ Suivez les instructions ci-dessous pour vérifier si vous devez prendre des mesu
 
 ## Étapes détaillées pour sécuriser votre environnement
 
+Contactez votre administrateur eCommerce pour qu’il effectue les étapes suivantes.
+
 ### Action 1 : vérification et mise à niveau des dépendances logicielles tierces
 
-Vérifiez que votre environnement exécute des versions prises en charge par des fournisseurs des dépendances logicielles tierces suivantes : PHP, MariaDB, Elasticsearch/OpenSearch, Redis, RabbitMQ. Dans le cas contraire, mettez à niveau la dépendance logicielle vers une version prise en charge.
+Vérifiez que votre environnement exécute des versions prises en charge par des fournisseurs des dépendances logicielles tierces suivantes : PHP, MariaDB, Elasticsearch, OpenSearch, Redis, RabbitMQ. Dans le cas contraire, mettez à niveau la dépendance logicielle vers une version prise en charge.
 
 #### Étape 1 : vérifier les versions de dépendance de logiciels tiers
 
 1. Connectez-vous à [Cloud Console](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/start/cloud-console).
 2. Ouvrez le projet approprié, puis sélectionnez l’environnement à réviser.
 3. Vérifiez la configuration du service pour cet environnement dans le fichier `.magento/services.yaml`, qui définit les noms de service et les versions pris en charge utilisés par Adobe Commerce sur le cloud.
+4. Vérifiez les versions dépendantes exécutées par chaque environnement à l’aide des instructions de la section [Configurer les services](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
 
-Pour obtenir des instructions détaillées, voir [Configuration des services](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
-
-Toutes les dépendances logicielles non prises en charge doivent être mises à niveau vers les versions indiquées dans le tableau 2 ci-dessous.
+Toutes les dépendances logicielles non prises en charge doivent être mises à niveau vers les versions indiquées dans les délais indiqués dans le tableau 2 ci-dessous.
 
 **Tableau 2 : mises à niveau des dépendances requises**
 
@@ -90,7 +98,7 @@ Toutes les dépendances logicielles non prises en charge doivent être mises à 
 | --- | --- | --- | --- |
 | PHP | 8.1 et versions ultérieures | 8.2 ou version ultérieure | 31 Mai 2027 |
 | MariaDB/Galera | 10.5 et versions ultérieures | 10.6 ou version ultérieure | 30 Octobre 2026 |
-| MariaDB/Galera | Supérieur à 10,5 mais inférieur à 10,11 | Version 10.11 ou ultérieure | 31 Mai 2027 |
+| MariaDB/Galera | Supérieur à 10,5 mais inférieur à 10,11 | 10.11 ou version ultérieure | 31 Mai 2027 |
 | Elasticsearch | n’importe quelle version | OpenSearch : version 2.19 pour les clients 2.4.4 et 2.4.5. Version 3 pour les clients disposant de la version 2.4.6 ou ultérieure. | 30 Octobre 2026 |
 | OpenSearch | 1.x | Version 2.19 pour les clients des versions 2.4.4 et 2.4.5. Version 3 pour les clients disposant de la version 2.4.6 ou ultérieure. | 31 Mai 2027 |
 | Redis | 5 et moins | Valkey version 8 ou ultérieure | 31 Mai 2027 |
@@ -103,45 +111,40 @@ Adobe vous aidera à mettre à niveau directement ces dépendances logicielles.
 
 * **Prise en main :** ouvrez un [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) répertoriant les environnements à mettre à niveau et les dépendances impliquées. Ouvrez votre ticket au moins 30 jours avant la date d’application afin qu’Adobe puisse planifier le travail.
 
-* **Temps d’arrêt :** Adobe confirme la fenêtre attendue avec vous lors de la planification.
+* **Temps d’arrêt :** Adobe vous confirmera la fenêtre attendue lors de la planification.
 
 * **Tests :** mettre à niveau et valider un environnement hors production avant la production. Validez au minimum le passage en caisse, la recherche, le panier et toutes les intégrations personnalisées. Les exigences s’appliquent à tous vos environnements. Prévoyez donc de mettre à niveau chaque environnement plutôt que de vous concentrer uniquement sur la production.
 
 * **Compatibilité :** la plupart de ces modifications sont des mises à niveau de version au sein du même logiciel et comportent peu de risques. Les changements suivants méritent une attention particulière :
 
-  * **Elasticsearch vers OpenSearch** et **Redis vers Valkey** sont des migrations vers différents logiciels plutôt que des mises à niveau de version. Le code personnalisé, les extensions ou la configuration référençant le service d’origine peuvent nécessiter une mise à jour.
-  * La mise à niveau de **PHP 8.1 vers 8.2** peut faire apparaître des avertissements d’obsolescence dans le code personnalisé et les extensions tierces.
+  * **Elasticsearch vers OpenSearch** et **Redis vers Valkey** sont des migrations vers différents logiciels plutôt que des mises à niveau de version. Le code personnalisé, les extensions ou la configuration faisant référence au service d’origine peuvent nécessiter une mise à jour.
+  * La mise à niveau de **PHP 8.1 vers 8.2** peut faire apparaître des éléments obsolètes dans le code personnalisé et les extensions tierces.
 
-Si vous utilisez des extensions tierces, vérifiez auprès de vos fournisseurs que leurs versions actuelles prennent en charge vos versions logicielles cibles. Si vous travaillez avec un intégrateur de solution, associez-le dès le début de la planification, des tests et de la validation de la mise à niveau.
+Si vous utilisez des extensions tierces, vérifiez auprès de vos fournisseurs que leurs versions actuelles prennent en charge vos versions cibles. Si vous travaillez avec un intégrateur de solutions, associez-le à la planification et à la validation.
 
-### Action 2 : vérifier la version de Commerce on Cloud et effectuer la mise à niveau vers une version prise en charge
-
-Vérifiez la version d’Adobe Commerce sur le cloud que vos environnements exécutent. Si aucun environnement ne dispose d’une version prise en charge, vous pouvez effectuer une mise à niveau vers la version 2.4.9 ou la dernière version prise en charge, ou migrer vers [!DNL Adobe Commerce as a Cloud Service].
+### Action 2 : vérifiez votre version d’Adobe Commerce on Cloud et effectuez la mise à niveau vers une version prise en charge
 
 #### Étape 1 : vérifier la version d’Adobe Commerce on Cloud et l’action requise
 
-1. Connectez-vous à votre panneau d’administration Adobe Commerce.
+1. Connectez-vous au panneau d’administration d’Adobe Commerce.
 
    La version actuelle s’affiche dans le coin inférieur droit de toute page d’administration.
 
-1. Si la version est masquée dans le panneau d’administration :
+1. Si la version est masquée dans le panneau d’administration, utilisez l’Adobe Commerce [outil de ligne de commande](../configuration/cli/config-cli.md) pour afficher la version en exécutant la commande suivante :
 
-   * Connectez-vous à l’environnement [&#x200B; distant &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/secure-connections#connect-to-a-remote-environment).
-   * Utilisez l’Adobe Commerce [outil de ligne de commande](../configuration/cli/config-cli.md) pour vérifier la version.
-
-     ```shell
-     bin/magento --version
-     ```
+   ```shell
+   bin/magento --version
+   ```
 
 Vérifiez les actions requises pour votre version d’Adobe Commerce dans le tableau ci-dessous.
 
 **Tableau 3 : exigences de mise à niveau de la version d’Adobe Commerce on Cloud**
 
 | Version actuelle d’Adobe Commerce sur le cloud | Action requise | Deadline |
-|---|---|---|
-| Version 2.4.4 ou 2.4.5 | Effectuez la mise à niveau vers Adobe Commerce sur Cloud version 2.4.9 (ou la dernière version) ou migrez vers [!DNL Adobe Commerce as a Cloud Service].<br>Raison : les versions v2.4.4 et 2.4.5 ne reçoivent que des correctifs de sécurité limités et isolés pour l’application principale jusqu’au 31 mai 2027 - cela n’inclut pas les correctifs de qualité, la prise en charge de la compatibilité pour les dépendances d’application (par exemple, PHP) ou les mises à jour des dépendances de plateforme. Voir Adobe [&#x200B; Politique de cycle de vie &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/lifecycle-policy). | 1er juin 2027 |
-| Version 2.4.6 ou 2.4.7 | Mise à niveau vers Adobe Commerce sur Cloud version 2.4.9 (ou la dernière version) ou migration vers [!DNL Adobe Commerce as a Cloud Service].<br>Raison : la version 2.4.6 bénéficie d’une prise en charge étendue jusqu’au 30 août 2027 et ne reçoit que des correctifs de sécurité limités et isolés pour l’application principale jusqu’au 31 mai 2028. La version 2.4.7 reçoit la prise en charge standard jusqu’au 31 mai 2027 et la prise en charge étendue jusqu’au 31 mai 2028. Voir Adobe [&#x200B; Politique de cycle de vie &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/lifecycle-policy). | 1er juin 2028 |
-| Version 2.4.8 ou 2.4.9 | Aucune action de mise à niveau de la version d’Adobe Commerce on Cloud n’est nécessaire. Les dates limites de dépendance vis-à-vis des logiciels tiers de l’action 1 s’appliquent toujours.<br>Motif : aucune date limite n’a été fixée. | Non requis pour le moment |
+| --- |--- |--- |
+| Version 2.4.4 ou 2.4.5 | Effectuez la mise à niveau vers Adobe Commerce sur Cloud version 2.4.9 (ou la dernière version) ou migrez vers [!DNL Adobe Commerce as a Cloud Service].<br>Raison : les versions v2.4.4 et 2.4.5 ne recevront que des correctifs de sécurité limités et isolés pour l’application principale jusqu’au 31 mai 2027 - cela n’inclut pas les correctifs de qualité, la prise en charge de la compatibilité pour les dépendances d’application (par exemple, PHP) ou les mises à jour des dépendances de plateforme. Voir Adobe [&#x200B; Politique de cycle de vie &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/lifecycle-policy). | 1er juin 2027 |
+| Version 2.4.6 ou 2.4.7 | Mise à niveau vers Adobe Commerce sur Cloud version 2.4.9 (ou la dernière version) ou migration vers [!DNL Adobe Commerce as a Cloud Service].<br>Raison : la version 2.4.6 bénéficiera d’une prise en charge étendue jusqu’au 30 août 2027 et ne recevra que des correctifs de sécurité limités et isolés pour l’application principale jusqu’au 31 mai 2028. La version 2.4.7 recevra une prise en charge standard jusqu’au 31 mai 2027 et une prise en charge étendue jusqu’au 31 mai 2028. Voir Adobe [&#x200B; Politique de cycle de vie &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/lifecycle-policy). | 1er juin 2028 |
+| Version 2.4.8 ou 2.4.9 | Aucune action de mise à niveau de la version d’Adobe Commerce on Cloud n’est nécessaire. Les dates limites de dépendance vis-à-vis des logiciels tiers de l’action 1 s’appliquent toujours.<br>Motif : aucune date limite n’a été fixée. | Sans objet |
 
 #### Étape 2 : déterminer le chemin de mise à niveau ou de migration
 
@@ -150,7 +153,7 @@ Si vous devez mettre à niveau votre version d’Adobe Commerce on Cloud, vous d
 1. Mise à niveau vers une version d’Adobe Commerce on Cloud prise en charge
 1. Migration vers [!DNL Adobe Commerce as a Cloud Service] (SaaS)
 
-Pour vous aider à choisir le meilleur chemin, comparez vos options à l’aide du tableau suivant :
+Le tableau suivant vous aide à comparer vos options et à déterminer le meilleur chemin pour vous.
 
 **Tableau 4 : comparaison d’Adobe Commerce sur le cloud et[!DNL Adobe Commerce as a Cloud Service]**
 
@@ -162,17 +165,17 @@ Pour vous aider à choisir le meilleur chemin, comparez vos options à l’aide 
 
 ## Que se passera-t-il si aucune mesure n&#39;est prise dans le délai imparti ?
 
-Adobe reste engagé à vous aider à prendre les mesures nécessaires pour effectuer la mise à niveau vers les versions prises en charge d’Adobe Commerce sur le cloud et les logiciels tiers.
+Adobe reste engagé à vous aider à exécuter les étapes que vous devez suivre pour adopter une version prise en charge d’un logiciel tiers, effectuer une mise à niveau vers la dernière version d’Adobe Commerce sur le cloud ou migrer vers Adobe Commerce as a Cloud Service.  Si vous avez des doutes quant au respect de l’échéance et si vous avez besoin d’une courte prolongation, contactez votre équipe de compte ou l’[assistance &#x200B;](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
 
-Si un environnement ne répond pas aux exigences de sécurité aux dates d’application partagées ci-dessus, Adobe sera forcé de prendre les mesures appropriées pour garantir la sécurité de la base d’installation la plus large. Cela inclut la suspension du trafic vers l’infrastructure affectée, ce qui entraîne la déconnexion de votre storefront d’e-commerce.
+Si un environnement n’a pas répondu aux exigences de sécurité aux dates d’application partagées ci-dessus, Adobe sera forcée de prendre les mesures appropriées pour garantir la sécurité de la plateforme Adobe Commerce et de ses clients. Cela inclut la suspension du trafic vers l’infrastructure affectée, ce qui entraîne la déconnexion de votre storefront d’e-commerce.
 
-Si un environnement reste non conforme à la suite de la suspension du trafic, Adobe peut mettre fin aux services cloud et lancer le processus de désaffectation. À la suite de la mise hors service, toutes les données et ressources de l’environnement d’e-commerce hébergé, y compris toutes les instances, tous les environnements et toutes les branches, seront définitivement supprimées et ne pourront pas être restaurées.
+Si un environnement reste non conforme à la suite de la suspension du trafic, Adobe peut mettre fin aux services cloud et lancer le processus de désaffectation. Suite à la mise hors service, toutes les données et ressources de l’environnement eCommerce hébergé, y compris toutes les instances, tous les environnements et toutes les branches, seront définitivement supprimées et ne pourront pas être restaurées.
 
-## Ressources pour prendre en charge la mise à niveau ou la migration
+## Ressources pour vous aider lors de la mise à niveau ou de la migration
 
 **Si vous choisissez d’effectuer une mise à niveau vers Adobe Commerce sur le cloud version 2.4.9:**
 
-* **Rapport de compatibilité de mise à niveau :** Adobe fournit un rapport détaillé identifiant exactement ce dont votre mise à niveau vers Adobe Commerce version 2.4.9 a besoin, y compris la portée des coûts. [Générez votre rapport de compatibilité de mise à niveau](https://supportinsights.adobe.com/commerce/tab/main).
+* **Rapport de compatibilité de mise à niveau :** Adobe fournit un rapport détaillé identifiant exactement ce que nécessite votre mise à niveau vers Adobe Commerce version 2.4.9, y compris l’identification des modules et fichiers nécessitant des mises à jour, le nombre de problèmes critiques, etc. [Générez votre rapport de compatibilité de mise à niveau](https://supportinsights.adobe.com/commerce/tab/main).
 
 * **Mise à niveau des dépendances logicielles :** comme vous ne pouvez pas mettre à niveau directement les dépendances logicielles, ouvrez un [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) afin qu’Adobe gère la mise à niveau pour vous. Pour plus d’informations, voir [Configuration des services](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
 
@@ -186,7 +189,7 @@ Adobe fournit des outils qui réduisent le coût et le temps de migration vers [
 
 * **Migration et outils de développement assistés par l’IA :** le storefront Adobe Developer App Builder et Commerce optimisé par Edge Delivery Services permet d’accélérer la modernisation du storefront et la reconfiguration des extensions.
 
-Si vous avez des questions, contactez votre équipe de compte ou contactez [les services d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
+Pour toute question, contactez l’équipe chargée de votre compte ou les [services d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
 
 >[!MORELIKETHIS]
 >
