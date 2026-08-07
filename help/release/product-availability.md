@@ -2,8 +2,8 @@
 title: Disponibilité du produit
 description: Découvrez les fonctionnalités d’Adobe Commerce actuellement prises en charge et vérifiez leur compatibilité avec des versions d’Adobe Commerce spécifiques.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-last-update: 2026-06-15T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-08-06T00:00:00Z
+source-git-commit: 356d4252bb21e3be9108eb8646a41b4a542aacdd
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Le tableau ci-dessous indique la prise en charge des versions pour chaque extens
 
 ## Services Commerce
 
-Les [services &#x200B;](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=fr) sont une suite de fonctionnalités hébergées dans Adobe qui offrent des fonctionnalités robustes et des temps de réponse rapides, conjointement avec votre instance Commerce.
+Les [services ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html) sont une suite de fonctionnalités hébergées dans Adobe qui offrent des fonctionnalités robustes et des temps de réponse rapides, conjointement avec votre instance Commerce.
 
 Il est recommandé aux commerçants d’utiliser la version la plus récente d’un service afin d’assurer une stabilité et une fonctionnalité optimales. La documentation décrit la version actuellement publiée.
 
