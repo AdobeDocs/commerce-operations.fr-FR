@@ -1,7 +1,7 @@
 ---
-source-git-commit: 05769de0613c19ab0b0a008db523a380d0b62d5b
+source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: '2220'
 ht-degree: 1%
 
 ---
@@ -657,28 +657,6 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
         Nouvelle rubrique, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f1f9890a2a2b7dbe501037ca8dbe919865012b6f">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 5 Juin 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.79 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402">ACP2E-4402 : l’indexeur incrémentiel de la règle cible ne sélectionne pas les produits désactivés</a>.</p>
-</td>
-      <td>
-        Nouvelle rubrique, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e5aa6a001b0c96b2d0489a444c227a8f0d406675">validation</a></td>
     </tr>
   </tbody>
 </table>

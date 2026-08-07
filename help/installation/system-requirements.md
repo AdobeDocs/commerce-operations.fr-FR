@@ -3,9 +3,9 @@ title: Configuration requise
 description: Découvrez les dépendances logicielles et la configuration requise pour Adobe Commerce. Voir les configurations testées pour assurer la compatibilité avec votre environnement de déploiement.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 last-update: 2026-07-23T00:00:00Z
-source-git-commit: 6da5a8645b46807eed654f6958f19f10d0095945
+source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
@@ -230,5 +230,4 @@ Pour Adobe Commerce sur le cloud, consultez [Configuration de Xdebug](https://ex
 >
 >Il existe un problème connu avec `xdebug` qui peut affecter les installations d’Adobe Commerce ou l’accès au storefront ou à l’administrateur après l’installation. Voir [Problème connu affectant `xdebug` installation](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) dans la base de connaissances de la prise en charge de _Commerce_.
 
-<!-- Last updated from includes: 2026-07-22 16:57:39 -->
-
+<!-- Last updated from includes: 2026-07-23 16:17:19 -->

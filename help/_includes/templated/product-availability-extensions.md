@@ -1,8 +1,8 @@
 ---
-source-git-commit: 287be6576d85b403982a50d462b41ace79f697da
+source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 6%
+source-wordcount: '249'
+ht-degree: 17%
 
 ---
 # Disponibilité du produit des extensions créées par Adobe
@@ -23,11 +23,11 @@ ht-degree: 6%
   <tbody>
       <tr>
           <td>Adobe I/O Events pour Adobe Commerce</td>
-          <td>1,8+</td>
-          <td>1,5+</td>
-          <td>1,5+</td>
-          <td>1,5+</td>
-          <td>1,5+</td>
+          <td>1.8+</td>
+          <td>1.5+</td>
+          <td>1.5+</td>
+          <td>1.5+</td>
+          <td>1.5+</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/events/installation/">Compositeur</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/events/release-notes/">Notes de mise à jour</a><br/>
@@ -36,9 +36,9 @@ ht-degree: 6%
       <tr>
           <td>SDK de l’interface utilisateur d’administration d’Adobe Commerce</td>
           <td>2.0+</td>
-          <td>1,3+</td>
-          <td>1,3+</td>
-          <td>1,3+</td>
+          <td>1.3+</td>
+          <td>1.3+</td>
+          <td>1.3+</td>
           <td>-</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/">Compositeur</a><br/>
@@ -47,11 +47,11 @@ ht-degree: 6%
       </tr>
       <tr>
           <td>Webhooks Adobe Commerce</td>
-          <td>1,5+</td>
-          <td>1,2+</td>
-          <td>1,2+</td>
-          <td>1,2+</td>
-          <td>1,2+</td>
+          <td>1.5+</td>
+          <td>1.2+</td>
+          <td>1.2+</td>
+          <td>1.2+</td>
+          <td>1.2+</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/">Compositeur</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/">Notes de mise à jour</a><br/>
@@ -83,10 +83,10 @@ ht-degree: 6%
       </tr>
       <tr>
           <td>B2B</td>
-          <td>1.5.2</td>
-          <td>1,5+<br /> 1,4+</td>
-          <td>1,5+<br /> 1,4+<br /> 1,3,5+</td>
-          <td>1,3,4</td>
+          <td>1.5.3</td>
+          <td>1.5.3</td>
+          <td>1.5.2<br /> 1.4.2</td>
+          <td>1.3.4</td>
           <td>1.3.3</td>
           <td>
               <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/install">Compositeur</a><br/>
@@ -109,9 +109,9 @@ ht-degree: 6%
           <td>Page Builder</td>
           <td>-</td>
           <td>-</td>
-          <td>1,7,3</td>
-          <td>1,7,2</td>
-          <td>1,7,1</td>
+          <td>1.7.3</td>
+          <td>1.7.2</td>
+          <td>1.7.1</td>
           <td>
               <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/page-builder/guide-overview"> Guide de l’utilisateur </a><br/>
               <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/page-builder/release-notes">Notes de mise à jour</a><br/>
