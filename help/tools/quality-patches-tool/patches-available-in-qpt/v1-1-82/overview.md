@@ -14,9 +14,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 9ea2dec8843119280f9ee291a89590024ddd2973
+source-git-commit: f9962ead84372461e69df158f17456d5cdf0d89e
 workflow-type: tm+mt
-source-wordcount: 484
+source-wordcount: 485
 ht-degree: 0%
 
 ---
@@ -29,8 +29,8 @@ QPT v1.1.82 comprend les correctifs suivants :
 
 1. **ACP2E-4815** : correction de plusieurs problèmes GraphQL qui provoquaient des exceptions PHP dans les journaux, une association correcte des commandes avec les comptes clients créés après la commande via GraphQL et l’alignement des réponses avec les spécifications GraphQL sur HTTP.
 1. **ACP2E-4194** : correction d’un problème en raison duquel les réponses de GraphQL renvoyaient des codes d’état HTTP incorrects pour les requêtes non valides, non autorisées ou malformées.
+1. **[ACP2E-4593](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)** : corrige le problème en raison duquel la page CMS affichée pour les restrictions de site web peut être incorrecte sur les sites web secondaires dans les déploiements multi-sites web.
 1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)** : correction d’un problème en raison duquel un utilisateur administrateur ne peut pas utiliser les **[!UICONTROL Add Products By SKU]** de l’administrateur pour ajouter des produits du catalogue par défaut à une commande pour une société affectée à un groupe de clients qui n’est pas lié à un catalogue partagé.
-1. **ACP2E-4593** : correction d’un problème en raison duquel la page CMS affichée pour les restrictions de site web était incorrecte sur les sites web secondaires dans les déploiements multi-sites web.
 1. **ACP2E-4682** : correction d’un problème en raison duquel la visite d’une page de Storefront qui vérifie le statut du devis `isActive` crée des enregistrements de devis vides chaque fois que la page est chargée.
 1. **ACP2E-4695** : correction d’un problème en raison duquel l’indexeur de règles de catalogue consomme trop de mémoire et ne parvient pas à se terminer, provoquant une instabilité et des erreurs de mémoire insuffisante.
 1. **ACP2E-4698** : correction d’un problème en raison duquel la modification d’une image dans le contenu texte de Page Builder enregistre une URL de média absolue au lieu de conserver une directive de média portable.
