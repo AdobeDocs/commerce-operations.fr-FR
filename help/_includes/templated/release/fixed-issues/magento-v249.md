@@ -1,7 +1,7 @@
 ---
 source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '32399'
+source-wordcount: '32815'
 ht-degree: 0%
 
 ---
@@ -3529,7 +3529,7 @@ _ACP2E-4285 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 #### Erreur de serveur interne
 
-Magento ajoute désormais avec succès des produits au panier d’un client lors de l’utilisation du point d’entrée REST asynchrone POST /rest/default/async/V1/carts/mine/items. Auparavant, cette requête asynchrone « ajouter au panier » entraînait une erreur de serveur interne, et Magento consignait l’erreur suivante : Erreur : appel à une fonction membre setFinalPrice() sur null dans app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162.
+Magento ajoute désormais avec succès des produits au panier d’un client lors de l’utilisation du point d’entrée REST asynchrone POST /rest/default/async/V1/carts/mine/items. Auparavant, cette demande asynchrone d’« ajout au panier » entraînait une erreur de serveur interne, et Magento consignait l’erreur suivante : Erreur : appel à une fonction membre setFinalPrice() sur null dans app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162.
 
 _AC-16344 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/8670a2b4)_
 
@@ -3648,7 +3648,7 @@ _ACP2E-4212 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 #### Impossible de naviguer entre les sites web dans l’aperçu de la planification de mise à jour
 
-Avant cette correction, l’aperçu de la mise à jour planifiée était interrompu lors de la tentative de prévisualisation du contenu pour les magasins avec des domaines personnalisés. Après ce correctif, les domaines de magasin personnalisés peuvent être prévisualisés en l’état et navigués dans le cadre de prévisualisation. Le correctif couvre les produits, les catégories, les pages CMS et les blocs CMS, et prend en charge les liens de navigation à l’aide de balises de balisage `{{store url}}`, comme indiqué dans [Variables Adobe Commerce et balises de balisage](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/variables/markup-tags).
+Avant cette correction, l’aperçu de la mise à jour planifiée était interrompu lors de la tentative de prévisualisation du contenu pour les magasins avec des domaines personnalisés. Après ce correctif, les domaines de magasin personnalisés peuvent être prévisualisés en l’état et navigués dans le cadre de prévisualisation. Le correctif couvre les produits, les catégories, les pages CMS et les blocs CMS, et prend en charge les liens de navigation à l’aide de balises de balisage `{{store url}}`, comme indiqué dans [Variables Adobe Commerce et balises de balisage](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags).
 
 _ACP2E-4308 - [contribution du code GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 
