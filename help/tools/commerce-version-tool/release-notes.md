@@ -13,10 +13,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: eafe79321da03f4778dd9e1b290141ef082a5eaf
+source-git-commit: 6b3a77ca95f7de23f044e531f1639c1aee1bbcef
 workflow-type: tm+mt
-source-wordcount: 180
-ht-degree: 2%
+source-wordcount: 236
+ht-degree: 1%
 
 ---
 
@@ -24,10 +24,22 @@ ht-degree: 2%
 
 Ces notes de mise à jour décrivent les mises à jour d’[!DNL Commerce Version Tool] ([!DNL CVT]).
 
-## Version 1.0.0 — Juin 2026 {#version-1-0-0}
+La prise en charge des dernières versions est assurée. Les notes de mise à jour des anciennes versions sont fournies à titre de référence.
+Les mises à jour incluent :
+
+![Nouveau](../../assets/new.svg) Nouvelles fonctionnalités
+![Correctifs](../../assets/fix.svg) Correctifs et améliorations
+![Bogue](../../assets/bug.svg) Problèmes connus
+
+## Version 1.0.2 — Août 2026 {#version-1-0-2}
 
 ### Nouvelles fonctionnalités
 
+![Nouveau](../../assets/new.svg) **Prise en charge de la `replace` du compositeur** : prise en charge ajoutée des installations qui suppriment les modules principaux par le biais de la `replace` du compositeur, avec une meilleure précision de détection des correctifs pour ces modules. <!-- ACSEC-527 -->
+
+## Version 1.0.0 — Juin 2026 {#version-1-0-0}
+
+![Nouvelles](../../assets/new.svg) les mises à jour incluent :
 - **Rapports de statut des correctifs** - Indique quels correctifs de sécurité Adobe Commerce mensuels sont appliqués, manquants ou ne peuvent pas être classés pour une installation Adobe Commerce.
 - **Statut de protection CVE** - Mappe les résultats du correctif aux valeurs de statut de protection par CVE : `PROTECTED`, `VULNERABLE`, `UNKNOWN` et `NOT_APPLICABLE`.
 - **Prise en charge de plusieurs composants** - Détecte les composants Adobe Commerce installés à partir d’`composer.lock`, y compris Adobe Commerce business-to-business (B2B), Adobe Commerce Page Builder, Adobe Commerce Inventory et d’autres composants représentés dans le fichier de registre des correctifs.

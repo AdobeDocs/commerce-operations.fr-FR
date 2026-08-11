@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: f9962ead84372461e69df158f17456d5cdf0d89e
+source-git-commit: b5b0f88fa2b7c168ab51f457994e4ed0578794a2
 workflow-type: tm+mt
-source-wordcount: '10549'
+source-wordcount: '10598'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,10 @@ ht-degree: 0%
       - [ACP2E-4709 : les pages CMS ne sont pas enregistrées dans le générateur de page lorsque la hiérarchie de page comprend des guillemets doubles](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4870 : les e-mails d’alerte de produit ignorent les paramètres d’e-mail de vue de magasin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)
+      - [ACP2E-4799 : la requête GraphQL requisition_lists renvoie un total_count incorrect avec pagination](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)
+      - [ACP2E-4797 : l’éditeur WYSIWYG d’administration et Page Builder bloquent les caractères Unicode 4 octets lorsque l’utf8mb4 est pris en charge](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)
+      - [ACP2E-4682 : les pages de storefront qui vérifient la citation sont actives créent des enregistrements de citation vides](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682.md)
       - [ACP2E-4593 : page CMS de restriction de site web incorrecte diffusée sur le site web secondaire dans les storefronts multi-sites](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)
       - [ACP2E-4547 : l’administrateur ne peut pas ajouter un produit de catalogue par défaut à un devis s’il n’est pas affecté au catalogue partagé de l’utilisateur](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)
       - [ACP2E-4805 : les demandes de passage en caisse ralentissent pour les produits configurables lorsque le premier enfant vendable apparaît plus loin dans la liste](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)

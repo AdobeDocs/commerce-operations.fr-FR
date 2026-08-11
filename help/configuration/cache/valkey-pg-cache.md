@@ -50,19 +50,19 @@ Commerce fournit des options de ligne de commande pour configurer la valeur par 
 >[!TAB Zend Cache (2.4.8 et versions antérieures)]
 
 - **Zend Cache (2.4.8 et versions antérieures)** — Serveur principal Valkey hérité pour Commerce 2.4.8 et versions antérieures :
-   - **Serveur principal Valkey hérité** — Utilise le chemin de classe complet (`Magento\Framework\Cache\Backend\Valkey`)
-   - **Précharger les clés** — Prend en charge le préchargement des clés de cache fréquemment utilisées
-   - **Scripts Lua** — Lua pour la récupération de l&#39;espace mémoire
-   - **Compression** — Prend en charge la compression des données
+  - **Serveur principal Valkey hérité** — Utilise le chemin de classe complet (`Magento\Framework\Cache\Backend\Valkey`)
+  - **Précharger les clés** — Prend en charge le préchargement des clés de cache fréquemment utilisées
+  - **Scripts Lua** — Lua pour la récupération de l&#39;espace mémoire
+  - **Compression** — Prend en charge la compression des données
 
 >[!TAB Cache Symfony (2.4.9+)]
 
 - **Symfony Cache (2.4.9+)** — À partir de Commerce 2.4.9, Symfony Cache fournit une mise en cache moderne, conforme à la norme PSR-6, pour Valkey, avec des améliorations de performances significatives :
-   - **Pipeline Valkey automatique** — Regroupe plusieurs opérations en une seule demande, ce qui réduit la latence
-   - **PSR-6 TagAwareAdapter** — Invalidation efficace du cache basé sur les balises avec des opérations atomiques
-   - **Sérialisation igbinary** — La sérialisation binaire réduit la taille de l&#39;entrée du cache de 45 % et améliore la vitesse de 5 à 10 %
-   - **Connexions persistantes améliorées** — Pool de connexions plus stable avec une meilleure gestion des processus dupliqués
-   - **Scripts Lua optimisés** : exécution côté serveur combinée à la création de pipelines pour une efficacité maximale
+  - **Pipeline Valkey automatique** — Regroupe plusieurs opérations en une seule demande, ce qui réduit la latence
+  - **PSR-6 TagAwareAdapter** — Invalidation efficace du cache basé sur les balises avec des opérations atomiques
+  - **Sérialisation igbinary** — La sérialisation binaire réduit la taille de l&#39;entrée du cache de 45 % et améliore la vitesse de 5 à 10 %
+  - **Connexions persistantes améliorées** — Pool de connexions plus stable avec une meilleure gestion des processus dupliqués
+  - **Scripts Lua optimisés** : exécution côté serveur combinée à la création de pipelines pour une efficacité maximale
 
 >[!ENDTABS]
 

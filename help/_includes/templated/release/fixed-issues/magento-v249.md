@@ -1,7 +1,7 @@
 ---
 source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '32399'
+source-wordcount: '32815'
 ht-degree: 0%
 
 ---
@@ -3529,7 +3529,7 @@ _ACP2E-4285 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 #### Erreur de serveur interne
 
-Magento ajoute désormais avec succès des produits au panier d’un client lors de l’utilisation du point d’entrée REST asynchrone POST /rest/default/async/V1/carts/mine/items. Auparavant, cette requête asynchrone « ajouter au panier » entraînait une erreur de serveur interne, et Magento consignait l’erreur suivante : Erreur : appel à une fonction membre setFinalPrice() sur null dans app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162.
+Magento ajoute désormais avec succès des produits au panier d’un client lors de l’utilisation du point d’entrée REST asynchrone POST /rest/default/async/V1/carts/mine/items. Auparavant, cette demande asynchrone d’« ajout au panier » entraînait une erreur de serveur interne, et Magento consignait l’erreur suivante : Erreur : appel à une fonction membre setFinalPrice() sur null dans app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162.
 
 _AC-16344 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/8670a2b4)_
 
