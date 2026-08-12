@@ -6,15 +6,10 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-24T20:44:59.025Z'
 TQID: 'https://experienceleague.adobe.com/Qoz-3w1ddXeHyDsyfsM0gD1kwi-Z6dc-C6P9Q-nYrUo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: b5b0f88fa2b7c168ab51f457994e4ed0578794a2
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: e8b1a5c1161eab0a0e76e1cca6a4b8b528124b45
 workflow-type: tm+mt
 source-wordcount: 488
 ht-degree: 0%
@@ -41,7 +36,7 @@ QPT v1.1.82 comprend les correctifs suivants :
 1. **ACP2E-4840** : corrige le problème en raison duquel la valeur de quantité demandée dans la requête `products` GraphQL renvoie *null*.
 1. **[ACP2E-4870](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)** : correction du problème en raison duquel les notifications par e-mail des alertes de produit ignoraient les paramètres d’e-mail de la vue de magasin.
 1. **[ACP2E-4875](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)** : correction d’un problème en raison duquel l’affichage de comptes clients avec des carnets d’adresses volumineux dans l’administration déconnectait de manière inattendue les utilisateurs administrateurs.
-1. **ACP2E-4894** : correction du problème en raison duquel les nouvelles commandes apparaissent tardivement dans les grilles de gestion des commandes d’administration lorsque la **[!UICONTROL Asynchronous Indexing]** est activée sur les magasins à volume élevé.
+1. **[ACP2E-4894](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)** : correction du problème en raison duquel les nouvelles commandes apparaissent tardivement dans les grilles de gestion des commandes d’administration lorsque la **[!UICONTROL Asynchronous Indexing]** est activée sur les magasins à volume élevé.
 1. **ACP2E-4981** : correction d’un problème en raison duquel les carrousels de produits Page Builder affichent les produits dans un ordre qui ne reflète pas la position définie dans l’administration et incluent des produits configurables lorsque les produits enfants correspondants sont individuellement visibles.
 
 Utilisez le menu à gauche pour accéder à une page de correctif spécifique.
