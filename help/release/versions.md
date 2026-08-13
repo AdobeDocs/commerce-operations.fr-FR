@@ -3,8 +3,8 @@ title: Versions publiées
 description: Découvrez quand des versions spécifiques d’Adobe Commerce ont été publiées.
 recommendations: noCatalog
 exl-id: 9b03900c-39ba-4757-ab7e-8bc832277192
-last-update: 2026-06-02T00:00:00Z
-source-git-commit: 90f54aef167dd29ec6bdc0639cf3eb6c5d7244ce
+last-update: 2026-08-12T00:00:00Z
+source-git-commit: 74ce0344595bdf33e84840a1d7ba7a3835b203b2
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 3%
@@ -24,8 +24,8 @@ Adobe offre une prolongation de prise en charge d’un an sans frais supplément
 >[!NOTE]
 >
 >- Adobe recommande d’installer ou de mettre à niveau Adobe Commerce vers le dernier correctif de sécurité disponible pour chaque version.
->- Pour connaître les autres mises à jour de sécurité, voir [Mises à jour de sécurité pour Magento/Adobe Commerce](https://helpx.adobe.com/fr/security/products/magento.html).
->- Pour connaître les tarifs, voir Tarification [&#128279;](https://business.adobe.com/fr/products/magento/pricing.html).
+>- Pour connaître les autres mises à jour de sécurité, voir [Mises à jour de sécurité pour Magento/Adobe Commerce](https://helpx.adobe.com/security/products/magento.html).
+>- Pour connaître les tarifs, voir Tarification [](https://business.adobe.com/products/magento/pricing.html).
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 
