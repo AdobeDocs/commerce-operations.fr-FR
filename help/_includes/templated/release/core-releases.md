@@ -1,15 +1,15 @@
 ---
-source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
+source-git-commit: 420e4af6778d3f493e9ad4fcc4ae175446d31243
 workflow-type: tm+mt
-source-wordcount: '2046'
-ht-degree: 63%
+source-wordcount: '2131'
+ht-degree: 60%
 
 ---
 # Versions publiées
 
 ## 2.4.9
 
-La prise en charge régulière de la version 2.4.9 de se termine en mai 2029.
+La prise en charge régulière de la version 2.4.9 de prend fin le 31 mai 2029.
 
 <table>
   <thead>
@@ -30,7 +30,7 @@ La prise en charge régulière de la version 2.4.9 de se termine en mai 2029.
 
 ## 2.4.8
 
-La prise en charge régulière de la version 2.4.8 de se termine le 11 avril 2028.
+La prise en charge régulière de la version 2.4.8 de se termine le 31 mai 2028.
 
 <table>
   <thead>
@@ -81,7 +81,8 @@ La prise en charge régulière de la version 2.4.8 de se termine le 11 avril 202
 
 ## 2.4.7
 
-La prise en charge régulière de la version 2.4.7 de se termine le 9 avril 2027.
+La prise en charge régulière de la version 2.4.7 de se termine le 31 mai 2027.
+La prise en charge étendue de la version 2.4.7 de prend fin le 31 mai 2028.
 
 <table>
   <thead>
@@ -162,7 +163,9 @@ La prise en charge régulière de la version 2.4.7 de se termine le 9 avril 2027
 
 ## 2.4.6
 
-La prise en charge régulière de la version 2.4.6 de se termine le 11 août 2026.
+La prise en charge régulière de la version 2.4.6 de a pris fin le 11 août 2026.
+La prise en charge étendue de la version 2.4.6 de prend fin le 31 août 2027.
+La mise en service des correctifs de sécurité supplémentaires pour la version 2.4.6 de se termine le 31 mai 2028.
 
 <table>
   <thead>
@@ -274,8 +277,8 @@ La prise en charge régulière de la version 2.4.6 de se termine le 11 août 202
 ## 2.4.5
 
 La prise en charge régulière de la version 2.4.5 de a pris fin le 12 août 2025.
-La prise en charge étendue de la version 2.4.5 de prend fin le 11 août 2026.
-La mise en service des correctifs de sécurité supplémentaires pour la version 2.4.5 de se termine en mai 2027.
+La prise en charge étendue de la version 2.4.5 de a pris fin le 11 août 2026.
+La mise en service des correctifs de sécurité supplémentaires pour la version 2.4.5 de se termine le 31 mai 2027.
 
 <table>
   <thead>
@@ -400,7 +403,7 @@ La mise en service des correctifs de sécurité supplémentaires pour la version
 
 La prise en charge régulière de la version 2.4.4 de a pris fin le 12 avril 2025.
 La prise en charge étendue de la version 2.4.4 de a pris fin le 14 avril 2026.
-La mise en service des correctifs de sécurité supplémentaires pour la version 2.4.4 de se termine en mai 2027.
+La mise en service des correctifs de sécurité supplémentaires pour la version 2.4.4 de se termine le 31 mai 2027.
 
 <table>
   <thead>

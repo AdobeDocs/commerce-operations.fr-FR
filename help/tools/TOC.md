@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: b5b0f88fa2b7c168ab51f457994e4ed0578794a2
+source-git-commit: 2864bda142df307248f5e29524eaf42441538f5b
 workflow-type: tm+mt
-source-wordcount: '10598'
+source-wordcount: '10632'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,8 @@ ht-degree: 0%
       - [ACP2E-4709 : les pages CMS ne sont pas enregistrées dans le générateur de page lorsque la hiérarchie de page comprend des guillemets doubles](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4698 : la modification en ligne de texte Page Builder enregistre les URL de médias absolus au lieu de la directive portable](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)
+      - [ACP2E-4894 : les nouvelles commandes apparaissent dans la grille Commandes d’administration avec un délai lorsque l’indexation asynchrone est activée](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)
       - [ACP2E-4870 : les e-mails d’alerte de produit ignorent les paramètres d’e-mail de vue de magasin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)
       - [ACP2E-4799 : la requête GraphQL requisition_lists renvoie un total_count incorrect avec pagination](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)
       - [ACP2E-4797 : l’éditeur WYSIWYG d’administration et Page Builder bloquent les caractères Unicode 4 octets lorsque l’utf8mb4 est pris en charge](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)

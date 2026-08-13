@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2c9dd65bbfff402767450508d3760d0281cb3296
+source-git-commit: 81442a33c3dabcaa3b9eda56a2132bf7b7432ba2
 workflow-type: tm+mt
-source-wordcount: '2201'
+source-wordcount: '2109'
 ht-degree: 1%
 
 ---
@@ -627,36 +627,6 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
         Commentaires, technique
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aaa05baf7a213a2f949e2eadbf72bc13e1ed247a">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 12 Juin 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview">Présentation : Outil de correctifs de qualité (QPT) version 1.1.80</a>.</p>
-</td>
-      <td>
-        Nouvelle rubrique, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6e585cb2150ca7dc2ae6ae883339ef9b894741f0">validation</a></td>
-    </tr>
-    <tr>
-      <td><p>Ajout du programme de correspondance et de classement (Private Beta) de recherche aux <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/beta#search-matching-and-ranking-private-beta">versions de Beta</a>, y compris le modèle de correspondance superposée, l’interaction avec les poids et les règles de marchandisage, ainsi que les instructions d’invitation.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b364a26b6ad3e36652b8309dcb87268d522fa31c">validation</a></td>
     </tr>
   </tbody>
 </table>

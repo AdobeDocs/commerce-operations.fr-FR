@@ -1,7 +1,7 @@
 ---
-source-git-commit: b829cf3685457f9f9ad3dfca2d294b6167accb82
+source-git-commit: 332c042213d3ee25cc5d60c35570a41543e24bfc
 workflow-type: tm+mt
-source-wordcount: '3479'
+source-wordcount: '3474'
 ht-degree: 0%
 
 ---
@@ -276,17 +276,17 @@ _AC-16533_
 
 #### Compatibilité PHP 8.5
 
-Adobe Commerce 2.4.9 prend désormais en charge PHP 8.5 et PHP 8.4, ce qui vous permet d’exécuter votre boutique sur les dernières versions PHP sécurisées et conformes. Toutes les fonctions principales, les extensions groupées (y compris Page Builder, B2B, Braintree, etc.) et les services SaaS Adobe sont compatibles avec PHP 8.5.
+Adobe Commerce 2.4.9 prend désormais en charge PHP 8.5, ce qui vous permet d’exécuter votre boutique sur les dernières versions PHP sécurisées et conformes. Toutes les fonctions principales, les extensions groupées (y compris Page Builder, B2B, Braintree, etc.) et les services SaaS Adobe sont compatibles avec PHP 8.5.
 
-- PHP 8.5 et 8.4 sont entièrement pris en charge.
-- PHP 8.3 est autorisé pour la mise à niveau uniquement (non recommandé pour la production).
+- PHP 8.5 est entièrement pris en charge.
+- PHP 8.4 est autorisé pour la mise à niveau uniquement (non recommandé pour la production).
 - Garantit la conformité PCI et la pérennisation de votre installation Adobe Commerce.
 
 _AC-15615_
 
 #### Prise en charge de PHP 8.2 supprimée
 
-Depuis Adobe Commerce 2.4.9, PHP 8.2 n&#39;est plus pris en charge. La plateforme cible désormais PHP 8.3 et versions ultérieures, avec le code de base, les dépendances et les outils mis à jour pour fonctionner de manière propre et fiable sur PHP 8.4 et 8.5.
+À partir d’Adobe Commerce 2.4.9, PHP 8.2 et PHP 8.3 ne sont plus pris en charge. La plateforme cible désormais PHP 8.4 et versions ultérieures, avec le code de base, les dépendances et les outils mis à jour pour fonctionner de manière propre et fiable sur 8.5.
 
 _AC-15758_
 
@@ -428,12 +428,12 @@ Améliorations clés :
 - Mise à niveau de l’authentification : utilise OAuth 2.0 pour un accès sécurisé à l’API.
 - Format de données amélioré : utilise JSON au lieu de XML pour une communication plus épurée et plus efficace.
 - Nouveaux champs d’administration :
-   - URL REST de la passerelle (en fonction du mode : En développement ou En direct)
-   - ID client et secret
-   - Type de compte, Numéro de compte
-   - CRID, MID, code d&#39;identification de l&#39;expéditeur
-   - AES/ITN pour les expéditions internationales
-   - Modes d’expédition autorisés spécifiques à REST
+  - URL REST de la passerelle (en fonction du mode : En développement ou En direct)
+  - ID client et secret
+  - Type de compte, Numéro de compte
+  - CRID, MID, code d&#39;identification de l&#39;expéditeur
+  - AES/ITN pour les expéditions internationales
+  - Modes d’expédition autorisés spécifiques à REST
 
 Cette migration garantit qu’Adobe Commerce reste conforme aux normes USPS, améliore la fiabilité du système et garantit aux commerçants des intégrations d’expédition pérennes.
 
