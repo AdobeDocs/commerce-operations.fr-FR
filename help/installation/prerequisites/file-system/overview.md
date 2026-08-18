@@ -4,7 +4,7 @@ description: Découvrez l’importance des autorisations de système de fichiers
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,9 @@ Il existe deux types de propriétaires de système de fichiers :
 
   L’hébergement privé est utile si vous gérez un serveur d’applications. Chaque utilisateur a une responsabilité spécifique :
 
-   - L’_utilisateur du serveur web_ exécute l’administration et le storefront.
+  - L’_utilisateur du serveur web_ exécute l’administration et le storefront.
 
-   - Le _utilisateur de ligne de commande_ exécute les tâches cron et les utilitaires de ligne de commande.
+  - Le _utilisateur de ligne de commande_ exécute les tâches cron et les utilitaires de ligne de commande.
 
   Les deux utilisateurs requièrent les mêmes autorisations pour le système de fichiers. Il est donc préférable d’utiliser un [groupe partagé](configure-permissions.md#set-ownership-and-permissions-for-two-users) et de définir un [`umask`](#restrict-access-with-a-umask).
 

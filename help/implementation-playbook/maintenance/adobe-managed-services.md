@@ -5,7 +5,7 @@ exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
 source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -28,12 +28,12 @@ Adobe Managed Services offre des avantages clés par rapport aux implémentation
 - **Cibles de niveau de service (SLT) améliorées** avec des temps de réponse plus rapides que la prise en charge standard d’Adobe Commerce.
 - **Contrats de niveau de service (SLA) améliorés** niveau d’application de 99,9 % permettant aux clients Adobe Commerce standard sur les infrastructures cloud d’atteindre un niveau d’infrastructure de 99,99 %.
 - **Expertise cloud désignée** : Managed Services met à la disposition des clients une ingénieure ou un ingénieur du succès client désigné qui fait office d’experte ou d’expert en applications et en infrastructures cloud. Le CSE travaille avec les clients et leurs partenaires, en leur fournissant les bonnes pratiques et des conseils pour accélérer le délai de mise sur le marché, notamment :
-   - Guide et assistance tout au long du processus d’intégration
-   - Gestion du provisionnement et de la configuration de la plateforme
-   - Conseils sur les principes architecturaux des intégrations et des personnalisations
-   - Favoriser la gestion des incidents et la continuité d&#39;activité
-   - Prise en charge des événements par la planification, l’exécution et la surveillance
-   - Assistance et expertise Cloud (optimisation proactive, création de rapports et bonnes pratiques)
+  - Guide et assistance tout au long du processus d’intégration
+  - Gestion du provisionnement et de la configuration de la plateforme
+  - Conseils sur les principes architecturaux des intégrations et des personnalisations
+  - Favoriser la gestion des incidents et la continuité d&#39;activité
+  - Prise en charge des événements par la planification, l’exécution et la surveillance
+  - Assistance et expertise Cloud (optimisation proactive, création de rapports et bonnes pratiques)
 
 Consultez le tableau suivant pour une comparaison plus détaillée des principaux avantages de Managed Services :
 
@@ -388,7 +388,7 @@ Adobe fournit un ensemble de services concernant la configuration, le développe
 
 La pile de sécurité Adobe pour Managed Services renforce la sécurité dans à chaque niveau en utilisant l’automatisation et la cohérence pour réduire les erreurs humaines. Les équipes de développement et d’exploitation héritent automatiquement des contrôles de sécurité de différents niveaux de la pile.
 
-Les partenaires de Platform, tels que Amazon Web Services et Microsoft Azure, assurent une couverture de sécurité maximale lors de l’application des personnalisations de la plateforme. L’équipe d’Adobe Managed Services fournit des services de sécurité de base, tels que la conformité, la journalisation, l’authentification, l’analyse et la surveillance, ainsi que la sécurité du serveur et la configuration sécurisée des applications. Voir [Sécurité Adobe Commerce](https://business.adobe.com/fr/products/magento/secure-ecommerce.html) pour plus d’informations.
+Les partenaires de Platform, tels que Amazon Web Services et Microsoft Azure, assurent une couverture de sécurité maximale lors de l’application des personnalisations de la plateforme. L’équipe d’Adobe Managed Services fournit des services de sécurité de base, tels que la conformité, la journalisation, l’authentification, l’analyse et la surveillance, ainsi que la sécurité du serveur et la configuration sécurisée des applications. Voir [Sécurité &#x200B;](https://business.adobe.com/fr/products/magento/secure-ecommerce.html) pour plus d’informations.
 
 Le diagramme suivant montre la pile technologique de sécurité d’Adobe Managed Services :
 
@@ -437,7 +437,7 @@ Adobe fournit un ensemble de services concernant la configuration, le développe
     <td>Mise à niveau des services d’infrastructure <br />[MariaDB, Redis, Open Search et Rabbit MQ] (évaluation et production)</td>
     <td></td>
     <td></td>
-    <td>Le propriétaire<br />CSE coordonne les mises à niveau des services d’infrastructure.<br />Le CSE planifie une réunion de conférence pour les mises à niveau.<br /> Le CSE aide à la migration des données de la production à l’évaluation.</td>
+    <td>Le propriétaire<br />CSE coordonne les mises à niveau des services d’infrastructure.<br />CSE planifie une réunion de conférence pour les mises à niveau.<br />CSE aide à la migration des données de la production à l’évaluation.</td>
   </tr>
   <tr>
     <td>Mise à jour de la base de code et des personnalisations de Commerce ; recompilation et refactorisation du code</td>
@@ -456,7 +456,7 @@ Adobe fournit un ensemble de services concernant la configuration, le développe
     <td>Exécuter des tests de performance et de sécurité</td>
     <td>Contributeur</td>
     <td>Propriétaire</td>
-    <td>Le contributeur<br />CSE aide à tester la charge en surveillant les performances de l’application et de l’infrastructure.<br />Le CSE vous aide à configurer l’outil d’analyse de sécurité Commerce.</td>
+    <td>Le contributeur<br />CSE aide à tester le chargement en surveillant les performances de l’application et de l’infrastructure. Le <br />CSE aide à configurer l’outil d’analyse de sécurité Commerce.</td>
   </tr>
   <tr>
     <td>Test d’acceptation utilisateur lors de l’évaluation</td>

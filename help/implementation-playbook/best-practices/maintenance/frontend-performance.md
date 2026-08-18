@@ -6,8 +6,8 @@ feature: Best Practices
 exl-id: bafae565-9d09-4cc0-8507-e89a11dbd915
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 1%
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
@@ -38,4 +38,4 @@ Pour vérifier les performances frontales de la boutique de votre site web :
 
 - [Gestion des index pour les utilisateurs administrateurs](../../../configuration/cli/manage-indexers.md#configure-indexers)
 - [Gestion des index à l’aide de l’interface de ligne de commande](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=fr)
-- [Présentation de l’indexation pour les développeurs](https://developer.adobe.com/commerce/php/development/components/indexing/)
+- [Présentation de l’indexation pour les développeurs et développeuses](https://developer.adobe.com/commerce/php/development/components/indexing/)

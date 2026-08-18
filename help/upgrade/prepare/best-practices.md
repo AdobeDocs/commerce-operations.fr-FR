@@ -5,7 +5,7 @@ feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
 source-git-commit: 6b3afb93770c1d976dd975a484070e0aee730a98
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Le niveau d’effort pour mettre à niveau votre instance Adobe Commerce dépend
 
 - **Comment avez-vous construit votre site ?** La quantité de travail personnalisé et le nombre de modules tiers installés affectent considérablement la complexité d’une mise à niveau. La qualité du travail et des modules personnalisés peut déterminer le bon déroulement d’une mise à niveau.
 
-- **Êtes-vous en train d’ignorer plusieurs versions ?** l’omission de versions rend la prochaine mise à niveau plus complexe, la mise à niveau à partir des versions ultérieures rend le processus plus facile et moins coûteux.
+- **Ignorez-vous plusieurs versions ?** Ignorer des versions rend la prochaine mise à niveau plus complexe. Effectuer une mise à niveau à partir des versions suivantes rend le processus plus facile et moins coûteux.
 
 - **Quel type de mise à niveau effectuez-vous ?** Une mise à niveau vers une version mineure (de 2.3.x à 2.4.0, par exemple) est plus étendue qu’une mise à niveau entre les versions de correctif (de 2.4.2 à 2.4.3, par exemple). Les mises à niveau de sécurité sont le type le plus facile à implémenter.
 
@@ -42,16 +42,16 @@ Si votre projet est actif, nous vous suggérons d’effectuer un audit pour dét
 
 Dès que vous commencez à travailler sur un projet, vous devez tenir compte de l’impact de votre travail actuel sur les futures mises à niveau. Respectez toujours les bonnes pratiques de développement d’Adobe Commerce, comme décrit ici :
 
-- [&#x200B; Bonnes pratiques de développement &#x200B;](https://developer.adobe.com/commerce/php/best-practices/)
+- [Bonnes pratiques de développement](https://developer.adobe.com/commerce/php/best-practices/)
 - [Normes de codage](https://developer.adobe.com/commerce/php/coding-standards/)
 
 Commencez à adopter la plateforme d’extensibilité d’Adobe Commerce, si vous ne l’avez pas déjà fait. La plateforme vous permet de personnaliser efficacement les processus, d’intégrer les systèmes et de déployer de nouvelles fonctionnalités tout en conservant une évolutivité de type SaaS. Ses fonctionnalités sont les suivantes :
 
-- **Extensibilité de l’interface utilisateur**. Étendez et faites évoluer votre storefront indépendamment de votre serveur principal et du middleware en utilisant [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/).
+- **Extensibilité de l’interface utilisateur**. Étendez et faites évoluer votre storefront indépendamment de votre serveur principal et du middleware en utilisant [&#128279;](https://developer.adobe.com/commerce/pwa-studio/).
 
-- **Extensibilité de l’API**. Utilisez [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/index.html) pour étendre la couche API Web en faisant évoluer le modèle de données graphique et en exécutant les fonctions lambda directement à partir de la couche graphique.
+- **Extensibilité de l’API**. Utilisez [&#128279;](https://developer.adobe.com/commerce/webapi/graphql/index.html) pour étendre la couche API Web en faisant évoluer le modèle de données graphique et en exécutant les fonctions lambda directement à partir de la couche graphique.
 
-- **Intergiciel et services Adobe I/O**. Connectez vos systèmes à Adobe Commerce à l’aide du middleware Adobe et d’une suite de connexions d’applications reposant sur [Adobe I/O](https://www.adobe.io/). En outre, vous pouvez étendre les fonctionnalités de base de Platform en remplaçant le comportement par défaut par votre propre logique commerciale qui s’exécute sur Adobe I/O.
+- **Intergiciel et services**. Connectez vos systèmes à Adobe Commerce à l’aide du middleware Adobe et d’une suite de connexions d’applications reposant sur [Adobe I/O](https://www.adobe.io/). En outre, vous pouvez étendre les fonctionnalités de base de Platform en remplaçant le comportement par défaut par votre propre logique commerciale qui s’exécute sur Adobe I/O.
 
 ### Planification des mises à niveau
 

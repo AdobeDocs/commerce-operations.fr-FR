@@ -4,7 +4,7 @@ description: Découvrez l’architecture de référence dans Adobe Commerce. Dé
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
 source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ La couleur de chaque élément du diagramme indique si l’élément fait partie
 * Les éléments gris sont facultatifs pour Magento Open Source
 * Les éléments bleus sont facultatifs pour Adobe Commerce
 
-![Diagramme d’architecture de référence Commerce](../assets/performance/images/ref-architecture-2.3.png)
+![Diagramme d’architecture de référence &#x200B;](../assets/performance/images/ref-architecture-2.3.png)
 
 Les sections suivantes fournissent des recommandations et des considérations pour chaque section du diagramme d’architecture de référence de Commerce.
 

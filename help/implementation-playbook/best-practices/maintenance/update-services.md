@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
 source-git-commit: 5e3289b328b51eb50354efdc1571283791175b9a
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Les clients avec forfaits Pro ne peuvent se servir que des mises à niveau de se
 >
 >Les mises à niveau de service ne peuvent pas être envoyées à un environnement de production sans préavis de 48 heures ouvrables à l’équipe d’infrastructure d’Adobe. Cela est nécessaire afin qu’Adobe puisse s’assurer qu’un ingénieur d’assistance en infrastructure est disponible pour mettre à jour votre configuration dans le délai souhaité avec un temps d’arrêt minimal pour votre environnement de production. Adobe recommande de mettre votre site en mode de maintenance pendant la mise à niveau du service.
 
-Vous pouvez consulter la liste des versions de service et des dates de fin de vie dans le fichier suivant : [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
+Vous pouvez consulter la liste des versions de service et des dates de fin de vie dans le fichier suivant : [&#128279;](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
 >[!NOTE]
 >
