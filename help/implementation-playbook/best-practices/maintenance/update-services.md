@@ -23,9 +23,9 @@ Adobe Commerce sur les infrastructures cloud 2.4.x et ultérieures
 
 Mettez à niveau les services et les composants utilisés par Adobe Commerce avant qu’ils n’atteignent leur date de fin de vie ou qu’ils n’en soient proches. Cela permet de respecter la conformité PCI et de réduire les vulnérabilités de sécurité.
 
-Les clients disposant de plans de démarrage peuvent se servir des mises à niveau des services. Pour plus d’informations sur la procédure à suivre, voir [Modifier la version du service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version).
+Les clients disposant de plans de démarrage peuvent se servir des mises à niveau des services. Pour plus d’informations sur la procédure à suivre, voir [Modifier la version du service](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version).
 
-Les clients avec forfaits Pro ne peuvent se servir que des mises à niveau de services dans leur [environnement d’intégration](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Pour les mises à niveau des services en production, vous devez [soumettre un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) demander la mise à niveau.
+Les clients avec forfaits Pro ne peuvent se servir que des mises à niveau de services dans leur [environnement d’intégration](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=fr). Pour les mises à niveau des services en production, vous devez [soumettre un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) demander la mise à niveau.
 
 >[!WARNING]
 >
