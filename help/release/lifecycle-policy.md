@@ -3,10 +3,11 @@ title: Politique relative au cycle de vie des logiciels
 description: Découvrez les dates clés de fin de prise en charge logicielle des versions d’Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: bde0fd61b02eaf5a962cc9b79cf39a08199e83c8
+last-update: 2026-08-13T00:00:00Z
+source-git-commit: dd6d284c1761248515bae5324a90e330b6aabf9b
 workflow-type: tm+mt
-source-wordcount: '1469'
-ht-degree: 3%
+source-wordcount: '1350'
+ht-degree: 1%
 
 ---
 
@@ -47,16 +48,7 @@ Une période transitoire unique et limitée dans le temps disponible uniquement 
 
 Le tableau suivant présente le cycle de vie complet de chaque version d’Adobe Commerce, y compris les nouvelles dates d’application de la mise à niveau des versions d’Adobe Commerce dans les environnements cloud.
 
-| Libération | Disponibilité générale | Fin de la prise en charge standard | Fin de la prise en charge étendue | Fin de la période réservée à la sécurité | [Date d’application de la mise à niveau de la version (cloud uniquement)](version-upgrade-enforcement-policy.md) |
-| --------- | ---------------------- | ------------------------ | ------------------------- |-----------------------------| ----------------------------------------------- |
-| Adobe Commerce 2.4.9 | 12 Mai 2026 | 31 Mai 2029 | À déterminer | S.O. | À déterminer |
-| Adobe Commerce 2.4.8 | mercredi 8 avril 2025 | 31 Mai 2028 | À déterminer | S.O. | À déterminer |
-| Adobe Commerce 2.4.7 | mercredi 9 avril 2024 | 31 Mai 2027 | 31 Mai 2028 | S.O. | 1er juin 2028 |
-| Adobe Commerce 2.4.6 | mercredi 14 mars 2023 | mercredi 11 août 2026 | 31 août 2027 | 31 Mai 2028 | 1er juin 2028 |
-| Adobe Commerce 2.4.5 | mercredi 9 août 2022 | mercredi 12 août 2025 | mercredi 11 août 2026 | 31 Mai 2027 | 1er juin 2027 |
-| Adobe Commerce 2.4.4 | mercredi 12 avril 2022 | 12 avril 2022 | mercredi 14 avril 2026 | 31 Mai 2027 | 1er juin 2027 |
-
-{style="table-layout:auto"}
+{{$include /help/_includes/templated/release/end-of-support-dates.md}}
 
 ## Chronologie de la prise en charge
 

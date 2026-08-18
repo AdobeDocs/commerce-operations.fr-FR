@@ -1,7 +1,7 @@
 ---
-source-git-commit: b14e0f2c4656ec9afa79545a9e8db83cc2e0d4d4
+source-git-commit: 0537a7cf89e2c427c5c525f2d510d29eb8bb8aa6
 workflow-type: tm+mt
-source-wordcount: '2809'
+source-wordcount: '2690'
 ht-degree: 1%
 
 ---
@@ -757,50 +757,6 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
         Nouvelle rubrique, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eb7012dd29323ae70a19c7b37ab82dac5215c705">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 18 Juin 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/lifecycle-policy">politique relative au cycle de vie des logiciels</a> avec des dates d’application de la mise à niveau vers le cloud, des définitions de période de prise en charge (y compris une période de transition de sécurité uniquement), un tableau de fin de prise en charge étendu pour les versions 2.4.4 à 2.4.9, des conseils sur l’interface PCI PHP et des chemins d’accès pour migrer vers Adobe Commerce as a Cloud Service ou effectuer une mise à niveau sur PaaS.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dc8326755ceee435f9980d7ea8003a6692ba1e92">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 16 Juin 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Mise à jour de la version de Composer vers la version 2.10 dans les tableaux <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements">Configuration requise</a> pour Cloud Manager et On-Prem pour Adobe Commerce 2.4.9, 2.4.8 et 2.4.7.</p>
-</td>
-      <td>
-        Technique
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/23f2234eb2b9e11e36e49607b21c3c092266fec4">validation</a></td>
     </tr>
   </tbody>
 </table>
