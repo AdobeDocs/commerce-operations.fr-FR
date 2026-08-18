@@ -1,27 +1,27 @@
 ---
-title: Fonctionnement  [!DNL Cloud Automation Patching Service (CAPS)]  workflow
+title: Présentation du workflow [!DNL Cloud Automation Patching Service (CAPS)]
 description: Découvrez le processus  [!DNL Cloud Automation Patching Service (CAPS)]  workflow, notamment la terminologie, les phases de workflow et les opérations pour une gestion automatisée des correctifs.
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '854'
 ht-degree: 0%
 
 ---
 
-# Fonctionnement du workflow [!DNL Cloud Automation Patching Service (CAPS)]
+# Présentation du workflow [!DNL Cloud Automation Patching Service (CAPS)]
 
 Cette rubrique présente de manière générale le fonctionnement des opérations de correctifs à l’aide de [!DNL CAPS (Cloud Automation Patching Service)].
 
 ## Terminologie
 
 * **Opérations** - principales actions effectuées par [!DNL CAPS] :
-   * Appliquer
-   * Rétablir
+  * Appliquer
+  * Rétablir
 * **Phases** - les trois phases du workflow :
-   * Vérification préliminaire
-   * Application de correctifs
-   * Validation
+  * Vérification préliminaire
+  * Application de correctifs
+  * Validation
 * **Environnement** : environnement Adobe Commerce Cloud dans lequel les correctifs sont appliqués.
 
 ## Opérations
@@ -53,10 +53,10 @@ La phase de vérification préliminaire confirme que le correctif peut être app
 **Que se passe-t-il**
 
 * **Protection de l’environnement de production** (environnements de production uniquement) :
-   * Vérifie si le magasin est en mode de maintenance
-   * Vérifie que les tâches cron sont désactivées.
-   * Bloque l’application de correctifs si les conditions ne sont pas remplies
-   * Affiche la boîte de dialogue de confirmation si les conditions sont remplies
+  * Vérifie si le magasin est en mode de maintenance
+  * Vérifie que les tâches cron sont désactivées.
+  * Bloque l’application de correctifs si les conditions ne sont pas remplies
+  * Affiche la boîte de dialogue de confirmation si les conditions sont remplies
 * **Validation du correctif** - vérifie que le fichier correctif est valide et compatible
 * **Évaluation environnementale** - vérifie la préparation et les ressources en matière d&#39;environnement
 * **Détection des conflits** - identifie les conflits potentiels avec le code existant
@@ -92,6 +92,10 @@ Cette approche permet d’obtenir les éléments suivants :
 **Opérations Git** - Les modifications sont validées et transmises à la branche de l’environnement d’intégration
 
 **Activation de l’environnement** - L’environnement d’intégration est activé pour déployer le code corrigé
+
+>[!NOTE]
+>
+>Si votre projet utilise un référentiel GitHub externe, [!DNL CAPS] gère automatiquement l’authentification à l’aide de l’application [[!DNL CAPS] GitHub](github-integration.md). Aucune information d’identification supplémentaire n’est requise.
 
 #### Étape 2c : fusion vers l’environnement cible
 
@@ -159,5 +163,6 @@ Si l’une de ces conditions n’est pas remplie, l’application du correctif e
 
 * [Présentation de CAPS](intro.md)
 * [Accès](access.md)
+* [Intégration de GitHub](github-integration.md)
 * [Bonnes pratiques](best-practices.md)
 * [Dépannage](troubleshooting.md)

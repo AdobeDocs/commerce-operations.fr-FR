@@ -2,9 +2,9 @@
 title: '[!DNL Cloud Automation Patching Service (CAPS)]'
 description: Découvrez  [!DNL Cloud Automation Patching Service (CAPS)], ses utilisations, comment y accéder et les bonnes pratiques pour appliquer des correctifs automatisés
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -18,31 +18,32 @@ Ce guide est destiné aux commerçants et partenaires Adobe Commerce Cloud qui s
 ## [!DNL CAPS] les rubriques
 
 * **[Accès](access.md)**
-* **[Workflow](workflow.md)**
+* **[Présentation des workflows](workflow.md)**
+* **[Intégration de GitHub](github-integration.md)**
 * **[Bonnes pratiques](best-practices.md)**
 * **[Dépannage](troubleshooting.md)**
 
 ## Présentation de l’outil
 
 * **Interface utilisateur**
-   * Affichage de la disponibilité et du statut des correctifs en temps réel pour des combinaisons de projet et d’environnement spécifiques
-   * Informations complètes sur le statut de l&#39;application de correctifs indiquant la progression, les erreurs et tout autre message pertinent
-   * [!UICONTROL Patch Management Dashboard] pour :
-      * Affichage des correctifs disponibles
-      * Application de correctifs en un clic
-      * Rétablissement des correctifs précédemment appliqués
-      * Surveillance du statut et des résultats de l’opération de correctif
+  * Affichage de la disponibilité et du statut des correctifs en temps réel pour des combinaisons de projet et d’environnement spécifiques
+  * Informations complètes sur le statut de l&#39;application de correctifs indiquant la progression, les erreurs et tout autre message pertinent
+  * [!UICONTROL Patch Management Dashboard] pour :
+    * Affichage des correctifs disponibles
+    * Application de correctifs en un clic
+    * Rétablissement des correctifs précédemment appliqués
+    * Surveillance du statut et des résultats de l’opération de correctif
 
 * **Service de correctifs automatisés avec workflow structuré**
-   * **Vérification préliminaire** - Valide la compatibilité des correctifs et la préparation de l’environnement.
-   * **Application de correctifs** - Applique ou rétablit automatiquement les correctifs dans les environnements d’intégration
-   * **Validation** - Effectue des contrôles d’intégrité et s’assure que les fonctionnalités critiques ne sont pas affectées
+  * **Vérification préliminaire** - Valide la compatibilité des correctifs et la préparation de l’environnement.
+  * **Application de correctifs** - Applique ou rétablit automatiquement les correctifs dans les environnements d’intégration
+  * **Validation** - Effectue des contrôles d’intégrité et s’assure que les fonctionnalités critiques ne sont pas affectées
 
 * **Caractéristiques de sécurité**
-   * Crée des environnements d’intégration temporaires pour les tests.
-   * Valide la compatibilité des correctifs avant application
-   * Restauration automatique en cas d’échec de la validation
-   * Applique des correctifs au dossier `m2-hotfixes` avec suppression automatique lors de la réversion
+  * Crée des environnements d’intégration temporaires pour les tests.
+  * Valide la compatibilité des correctifs avant application
+  * Maintient votre environnement cible inchangé jusqu’à ce que le correctif soit validé dans l’environnement temporaire
+  * Applique des correctifs au dossier `m2-hotfixes` avec suppression automatique lors de la réversion
 
 ## Intégrations avec Adobe Commerce Cloud
 
@@ -52,7 +53,7 @@ Ce guide est destiné aux commerçants et partenaires Adobe Commerce Cloud qui s
 
 Découvrez le service d’application automatisée de correctifs d’Adobe Cloud et comment cet outil aide les utilisateurs et utilisatrices à rechercher et à appliquer rapidement des correctifs de sécurité. La vidéo suivante explique comment y accéder via le tableau de bord SWAT, choisir votre projet et votre environnement, et appliquer des correctifs en un seul clic.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476249/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
 
 ## Cas d’utilisation courants
 
