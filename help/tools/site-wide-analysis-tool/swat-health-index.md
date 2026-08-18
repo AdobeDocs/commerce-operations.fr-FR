@@ -3,7 +3,7 @@ title: Présentation des scores et des recommandations de l’index de santé SW
 description: Découvrez ce que l’index d’intégrité de l’outil d’analyse à l’échelle du site signifie pour votre site Adobe Commerce. Découvrez comment interpréter les scores et utiliser efficacement les recommandations.
 source-git-commit: d9b598e9399c26c8fb7c52e9f211029689343ce9
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---

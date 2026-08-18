@@ -1,7 +1,7 @@
 ---
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -35,12 +35,12 @@ Consultez l’une des ressources suivantes :
 
 * Apache
 
-   * [Tutoriel sur le chiffrement fort Apache 2.4](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html)
-   * [Comment créer un certificat SSL sur Apache pour Ubuntu 14.04 (tutoriel Digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-create-a-ssl-certificate-on-apache-for-ubuntu-14-04)
-   * [Configuration d’un serveur web sécurisé SSL avec CentOS (wiki CentOS)](https://wiki.centos.org/HowTos/Https)
+  * [Tutoriel sur le chiffrement fort Apache 2.4](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html)
+  * [Comment créer un certificat SSL sur Apache pour Ubuntu 14.04 (tutoriel Digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-create-a-ssl-certificate-on-apache-for-ubuntu-14-04)
+  * [Configuration d’un serveur web sécurisé SSL avec CentOS (wiki CentOS)](https://wiki.centos.org/HowTos/Https)
 
 * Nginx
 
-   * [Terminaison SSL Nginx](https://www.nginx.com/resources/admin-guide/nginx-ssl-termination/)
-   * [Comment créer un certificat SSL sur Nginx pour Ubuntu 14.04 (tutoriel Digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04)
-   * [Installation du certificat SSL Nginx (digicert)](https://www.digicert.com/ssl-certificate-installation-nginx.htm)
+  * [Terminaison SSL Nginx](https://www.nginx.com/resources/admin-guide/nginx-ssl-termination/)
+  * [Comment créer un certificat SSL sur Nginx pour Ubuntu 14.04 (tutoriel Digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04)
+  * [Installation du certificat SSL Nginx (digicert)](https://www.digicert.com/ssl-certificate-installation-nginx.htm)

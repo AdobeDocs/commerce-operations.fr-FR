@@ -4,7 +4,7 @@ description: Découvrez l’architecture de référence dans Adobe Commerce. Dé
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
 source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Cette rubrique décrit une configuration générique recommandée pour les instances Adobe Commerce utilisant des serveurs simples hébergés physiquement dans un centre de données (non virtualisé) dans lequel les ressources ne sont pas partagées avec d’autres utilisateurs. Votre fournisseur d’hébergement, en particulier s’il est spécialisé dans l’hébergement haute performance de Commerce, peut recommander une configuration différente qui est également ou plus efficace pour vos besoins.
 
-Pour Adobe Commerce sur les environnements d’infrastructure cloud, voir [Architecture de démarrage](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
+Pour Adobe Commerce sur les environnements d’infrastructure cloud, voir [Architecture de démarrage](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
 
 ## Diagramme d’architecture de référence [!DNL Commerce]
 
@@ -25,7 +25,7 @@ La couleur de chaque élément du diagramme indique si l’élément fait partie
 * Les éléments gris sont facultatifs pour Magento Open Source
 * Les éléments bleus sont facultatifs pour Adobe Commerce
 
-![Diagramme d’architecture de référence Commerce](../assets/performance/images/ref-architecture-2.3.png)
+![Diagramme d’architecture de référence ](../assets/performance/images/ref-architecture-2.3.png)
 
 Les sections suivantes fournissent des recommandations et des considérations pour chaque section du diagramme d’architecture de référence de Commerce.
 
