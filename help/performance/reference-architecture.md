@@ -25,7 +25,7 @@ La couleur de chaque élément du diagramme indique si l’élément fait partie
 * Les éléments gris sont facultatifs pour Magento Open Source
 * Les éléments bleus sont facultatifs pour Adobe Commerce
 
-![Diagramme d’architecture de référence ](../assets/performance/images/ref-architecture-2.3.png)
+![Diagramme d’architecture de référence &#x200B;](../assets/performance/images/ref-architecture-2.3.png)
 
 Les sections suivantes fournissent des recommandations et des considérations pour chaque section du diagramme d’architecture de référence de Commerce.
 

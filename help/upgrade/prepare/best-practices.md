@@ -47,9 +47,9 @@ Dès que vous commencez à travailler sur un projet, vous devez tenir compte de 
 
 Commencez à adopter la plateforme d’extensibilité d’Adobe Commerce, si vous ne l’avez pas déjà fait. La plateforme vous permet de personnaliser efficacement les processus, d’intégrer les systèmes et de déployer de nouvelles fonctionnalités tout en conservant une évolutivité de type SaaS. Ses fonctionnalités sont les suivantes :
 
-- **Extensibilité de l’interface utilisateur**. Étendez et faites évoluer votre storefront indépendamment de votre serveur principal et du middleware en utilisant [](https://developer.adobe.com/commerce/pwa-studio/).
+- **Extensibilité de l’interface utilisateur**. Étendez et faites évoluer votre storefront indépendamment de votre serveur principal et du middleware en utilisant [&#128279;](https://developer.adobe.com/commerce/pwa-studio/).
 
-- **Extensibilité de l’API**. Utilisez [](https://developer.adobe.com/commerce/webapi/graphql/index.html) pour étendre la couche API Web en faisant évoluer le modèle de données graphique et en exécutant les fonctions lambda directement à partir de la couche graphique.
+- **Extensibilité de l’API**. Utilisez [&#128279;](https://developer.adobe.com/commerce/webapi/graphql/index.html) pour étendre la couche API Web en faisant évoluer le modèle de données graphique et en exécutant les fonctions lambda directement à partir de la couche graphique.
 
 - **Intergiciel et services**. Connectez vos systèmes à Adobe Commerce à l’aide du middleware Adobe et d’une suite de connexions d’applications reposant sur [Adobe I/O](https://www.adobe.io/). En outre, vous pouvez étendre les fonctionnalités de base de Platform en remplaçant le comportement par défaut par votre propre logique commerciale qui s’exécute sur Adobe I/O.
 
@@ -81,7 +81,7 @@ Les mises à niveau doivent être effectuées régulièrement et dans le cadre d
 
 ### Test après la mise à niveau
 
-Les tests sont la phase d’une mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. L’utilisation des outils de test principaux peut vous être bénéfique. Le [ Guide de test d’application ](https://developer.adobe.com/commerce/testing/guide/) fournit des détails.
+Les tests sont la phase d’une mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. L’utilisation des outils de test principaux peut vous être bénéfique. Le [&#x200B; Guide de test d’application &#x200B;](https://developer.adobe.com/commerce/testing/guide/) fournit des détails.
 
 Utilisez un environnement d’évaluation pour tester et valider votre mise à niveau avant de passer en production.
 
