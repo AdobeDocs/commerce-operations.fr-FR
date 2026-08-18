@@ -180,7 +180,7 @@ Si l’option 1 ne résout pas votre problème, passez à l’option 2.
 
 **Cause :** l’option `fetch-branches` est désactivée pour l’intégration GitHub du projet, de sorte que les branches temporaires [!DNL CAPS] les notifications push ne sont pas synchronisées et que l’environnement d’intégration n’est jamais créé.
 
-**Solution :** activez l’option [`fetch-branches` de l’intégration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) puis relancez l’opération. Voir [ Configuration de l’intégration GitHub pour  [!DNL CAPS]](github-integration.md).
+**Solution :** activez l’option [`fetch-branches` de l’intégration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) puis relancez l’opération. Voir [&#x200B; Configuration de l’intégration GitHub pour  [!DNL CAPS]](github-integration.md).
 
 ### Erreurs de ressource et de quota
 
