@@ -41,7 +41,7 @@ Le correctif ACSD-44938 corrige le problème en raison duquel le `VAT_ID` ne peu
 
 <u>Résultats attendus</u> :
 
-`VAT_ID` peut être appliqué de la même manière que pour un client enregistré. Voir [`createCustomerAddress` article sur la mutation ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/create-address/) dans notre documentation destinée aux développeurs et développeuses.
+`VAT_ID` peut être appliqué de la même manière que pour un client enregistré. Voir [`createCustomerAddress` article sur la mutation &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/create-address/) dans notre documentation destinée aux développeurs et développeuses.
 
 <u>Résultats réels</u> :
 

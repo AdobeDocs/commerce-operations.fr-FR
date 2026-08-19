@@ -54,7 +54,7 @@ Les sections suivantes contiennent des informations relatives aux bonnes pratiqu
 
 | Bonne pratique | Description |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL) | Enregistrement Commerce &amp; Coffee qui décrit les stratégies de personnalisation. |
+| [&#128279;](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL) | Enregistrement Commerce &amp; Coffee qui décrit les stratégies de personnalisation. |
 | [Tendances E-Commerce](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL) | Enregistrement Commerce &amp; Coffee qui décrit les tendances du commerce électronique. |
 | [Automatisation de l’IA](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL) | Enregistrement Commerce &amp; Coffee qui décrit les possibilités de personnalisation avec l’intelligence artificielle et l’automatisation. |
 
@@ -62,7 +62,7 @@ Les sections suivantes contiennent des informations relatives aux bonnes pratiqu
 
 | Bonne pratique | Description |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [Comment réindexer ](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) | Utilisez les tâches cron ou l’outil d’interface de ligne de commande pour exécuter la réindexation. |
+| [Comment réindexer &#x200B;](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) | Utilisez les tâches cron ou l’outil d’interface de ligne de commande pour exécuter la réindexation. |
 | [Configuration des indexeurs&#x200B;](indexer-configuration.md) | Optimisez les performances du site en suivant les bonnes pratiques pour la configuration de l’indexeur. |
 | [Traitement des commandes](order-processing-configuration.md) | Améliorez les performances de passage en caisse et de traitement des commandes. |
 
@@ -82,4 +82,4 @@ Les sections suivantes contiennent des informations relatives aux bonnes pratiqu
 |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | [Correctif à grande échelle](patching-at-scale.md) | Découvrez comment les correctifs centralisés pour Adobe Commerce peuvent vous aider à gérer les projets d’entreprise. |
 | [Mettre à jour les services et composants vers la dernière version&#x200B;](update-services.md) | mettez à jour votre pile technologique Adobe Commerce on cloud infrastructure. |
-| [ Liste de contrôle de mise à niveau pour Adobe Commerce &#x200B;](upgrade-checklist.md) | Créez et utilisez une liste de contrôle de mise à niveau pour planifier votre stratégie de mise à niveau Adobe Commerce. |
+| [&#x200B; Liste de contrôle de mise à niveau pour Adobe Commerce &#x200B;](upgrade-checklist.md) | Créez et utilisez une liste de contrôle de mise à niveau pour planifier votre stratégie de mise à niveau Adobe Commerce. |

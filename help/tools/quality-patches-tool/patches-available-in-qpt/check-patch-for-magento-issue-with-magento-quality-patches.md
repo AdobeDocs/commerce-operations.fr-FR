@@ -39,7 +39,7 @@ L’outil a pour but de vous permettre d’utiliser des correctifs en libre-serv
 
 >[!NOTE]
 >
->QPT est réservé aux correctifs de qualité uniquement. Les correctifs de sécurité sont disponibles dans le Centre de sécurité [](/help/release/release-notes/overview.md).
+>QPT est réservé aux correctifs de qualité uniquement. Les correctifs de sécurité sont disponibles dans le Centre de sécurité [&#128279;](/help/release/release-notes/overview.md).
 
 ## Correctifs disponibles dans l’outil de correctifs de la qualité
 

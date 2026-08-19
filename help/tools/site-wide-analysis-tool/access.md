@@ -50,7 +50,7 @@ Pour le rôle personnalisé nécessitant un accès [!DNL Site-Wide Analysis Tool
 
 >[!NOTE]
 >
->Si vous avez vérifié que le compte utilisateur dispose de l’autorisation d’accéder au [!DNL Site-Wide Analysis Tool] et que l’utilisateur ou l’utilisatrice reçoit une erreur 403 lors de la tentative d’accès à l’outil à partir du [!UICONTROL Admin] , le contrôle d’accès HTTP peut être activé pour votre instance d’Adobe Commerce sur l’infrastructure cloud. Le tableau de bord [!DNL Site-Wide Analysis Tool] n’est PAS pris en charge si vous avez activé l’authentification HTTP. Pour plus d’informations sur la résolution de ce problème, consultez notre article d’assistance ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26852).[
+>Si vous avez vérifié que le compte utilisateur dispose de l’autorisation d’accéder au [!DNL Site-Wide Analysis Tool] et que l’utilisateur ou l’utilisatrice reçoit une erreur 403 lors de la tentative d’accès à l’outil à partir du [!UICONTROL Admin] , le contrôle d’accès HTTP peut être activé pour votre instance d’Adobe Commerce sur l’infrastructure cloud. Le tableau de bord [!DNL Site-Wide Analysis Tool] n’est PAS pris en charge si vous avez activé l’authentification HTTP. Pour plus d’informations sur la résolution de ce problème, consultez notre article d’assistance [&#128279;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26852).
 
 ### Etape 2 : Accès aux [!DNL Site-Wide Analysis Tool]
 

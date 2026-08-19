@@ -63,7 +63,7 @@ Pour créer un correctif personnalisé :
 
 1. Créez un répertoire `patches/composer` dans votre projet local.
 1. Identifiez la requête de validation ou d’extraction GitHub à utiliser pour le correctif. Cet exemple utilise la validation [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede), liée au problème GitHub [#6474](https://github.com/magento/magento2/issues/6474).
-1. Ajoutez les extensions `.patch` ou `.diff` à l’URL de validation. Utilisez `.diff` pour une taille de fichier plus petite. Par exemple : [](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
+1. Ajoutez les extensions `.patch` ou `.diff` à l’URL de validation. Utilisez `.diff` pour une taille de fichier plus petite. Par exemple : [&#128279;](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
 1. Enregistrez la page en tant que fichier dans le répertoire `patches/composer`. Par exemple, `github-issue-6474.diff`.
 1. Modifiez le fichier et supprimez les `app/code/<VENDOR>/<PACKAGE>` de tous les chemins d’accès afin qu’ils soient relatifs au répertoire `vendor/<VENDOR>/<PACKAGE>`.
 

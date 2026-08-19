@@ -41,15 +41,15 @@ Les performances de [!UICONTROL Partial Price Indexing] sont ralenties en raison
 1. Créez *10 groupes de clients*.
 1. Exécutez la requête ci-dessous pour ajouter des produits à la table `_cl` :
 
-   ``
+   &grave;&grave;
     insert into catalog_product_price_cl (entity_id) select entity_id from catalog_product_entity
- ``
+ &grave;&grave;
 
 1. Exécutez la commande ci-dessous pour déclencher le processus d’indexation partielle des prix :
 
-   ``
+   &grave;&grave;
     bin/magento cron:run --group=index --bootstrap=standaloneProcessStarted=1
- ``
+ &grave;&grave;
 
 <u>Résultats attendus</u> :
 
@@ -64,7 +64,7 @@ La requête SQL DELETE `main_table` FROM `catalog_product_index_price` est exéc
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool]
-* Adobe Commerce sur les infrastructures cloud : [ Mises à niveau et correctifs > Appliquer des correctifs ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [&#x200B; Mises à niveau et correctifs > Appliquer des correctifs &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

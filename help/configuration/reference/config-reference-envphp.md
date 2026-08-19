@@ -27,7 +27,7 @@ Le fichier `env.php` contient les sections suivantes :
 | `downloadable_domains` | Liste des domaines téléchargeables |
 | `install` | La date d&#39;installation |
 | `lock` | Verrouiller les paramètres du fournisseur |
-| `MAGE_MODE` | Le [ mode d’application ](../bootstrap/application-modes.md) |
+| `MAGE_MODE` | Le [&#x200B; mode d’application &#x200B;](../bootstrap/application-modes.md) |
 | `queue` | [Files d’attente des messages](../queues/manage-message-queues.md) paramètres |
 | `resource` | Mappage du nom d’une ressource sur une connexion |
 | `session` | Données de stockage de la session |
@@ -98,7 +98,7 @@ Toutes les configurations de types de cache sont disponibles à partir de ce nœ
 ]
 ```
 
-En savoir plus sur les différents [ types de cache ](../cli/manage-cache.md).
+En savoir plus sur les différents [&#x200B; types de cache &#x200B;](../cli/manage-cache.md).
 
 ## consumer_wait_for_messages
 
