@@ -5,11 +5,18 @@ feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
 autotag-review: '2026-06-22T20:28:12.484Z'
 TQID: 'https://experienceleague.adobe.com/oDoZ1o2IWXsDTo84XQygWZYVmfVHWbk-CuqaU47laU4'
-product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 8c5dc151b00fd73e939c32fdc083fb0e8fc41dc8
 workflow-type: tm+mt
 source-wordcount: 536
@@ -59,7 +66,7 @@ La mise en cache pleine page HTTP stocke les réponses complètes sur la couche 
 
 La mise en cache L2, ou à deux niveaux, ajoute un cache local sur chaque nœud web de Commerce tout en conservant le stockage de cache distant partagé. Les données fréquemment consultées peuvent être diffusées localement, ce qui réduit la communication avec le cache distant dans les déploiements multi-nœuds.
 
-La configuration et les implémentations prises en charge de L2 varient selon la version et le type de déploiement de Commerce. Pour plus d’informations, consultez la configuration du cache L2 ](level-two-cache.md).[
+La configuration et les implémentations prises en charge de L2 varient selon la version et le type de déploiement de Commerce. Pour plus d’informations, consultez la configuration du cache L2 [&#128279;](level-two-cache.md).
 
 ### Mise en cache de contenu statique
 
