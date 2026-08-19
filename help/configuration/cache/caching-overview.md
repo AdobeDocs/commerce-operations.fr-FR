@@ -56,7 +56,7 @@ Vous pouvez affecter différents types de cache à différents fronts lorsque de
 La mise en cache pleine page HTTP stocke les réponses complètes sur la couche HTTP ou CDN. Pour les déploiements en production :
 
 - **Adobe Commerce On-premise**—Adobe recommande [Varnish](config-varnish.md) pour la mise en cache de toutes les pages. Varnish fonctionne comme un proxy inverse devant le serveur web.
-- **Adobe Commerce sur l’infrastructure cloud** utilise [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"} pour la couche de mise en cache Edge et full-page. L’infrastructure cloud n’utilise pas de service Varnish géré séparément.
+- **Adobe Commerce sur l’infrastructure cloud** utilise [Fastly](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"} pour la couche de mise en cache Edge et full-page. L’infrastructure cloud n’utilise pas de service Varnish géré séparément.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Les tâches de configuration suivantes varient selon le type de déploiement.
 | Tâche | On-premise | Infrastructure cloud |
 | --- | --- | --- |
 | Serveurs principaux du cache d’applications | [Options de cache du serveur principal et référence de stockage](cache-options.md) | [Bonnes pratiques relatives à la configuration des services Valkey et Redis](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) |
-| Mise en cache pleine page HTTP | [Configurer le vernis](config-varnish.md) | [Présentation des services Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) |
+| Mise en cache pleine page HTTP | [Configurer le vernis](config-varnish.md) | [Présentation des services Fastly](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/fastly) |
 
 Les tâches suivantes s’appliquent à tous les types de déploiement :
 

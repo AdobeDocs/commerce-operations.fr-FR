@@ -3,7 +3,7 @@ title: Configuration du cache L2 pour l’optimisation des performances
 description: Découvrez comment configurer le cache L2 dans Adobe Commerce pour réduire le trafic réseau et améliorer les performances. Découvrez les options d’implémentation héritées et Symfony.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on-Premise."
+badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on-Premise."
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -361,7 +361,7 @@ Utilisez l’exemple suivant pour configurer des fronts distincts pour `symfony_
 
 >[!NOTE]
 >
->Ces améliorations s’appliquent aux déploiements d’Adobe Commerce 2.4.9 à l’aide de `symfony_l2` et sont disponibles dans le correctif ACP2E-5132. Pour Adobe Commerce On-Premise, appliquez ce correctif à l’aide de l’outil de correctifs de la qualité (QPT). Pour Adobe Commerce on Cloud, ce correctif est distribué automatiquement via [Correctifs cloud pour Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest).
+>Ces améliorations s’appliquent aux déploiements d’Adobe Commerce 2.4.9 à l’aide de `symfony_l2` et sont disponibles dans le correctif ACP2E-5132. Pour Adobe Commerce On-Premise, appliquez ce correctif à l’aide de l’outil de correctifs de la qualité (QPT). Pour Adobe Commerce on Cloud, ce correctif est distribué automatiquement via [Correctifs cloud pour Commerce](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest).
 
 Les mises à jour les plus récentes améliorent l’évolutivité du cache Symfony L2, réduisent les E/S inutiles du système de fichiers et améliorent la cohérence et la fiabilité du cache.
 

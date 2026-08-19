@@ -39,7 +39,7 @@ Pour une présentation de l’architecture de mise en cache du Commerce, voir [&
 
 >[!NOTE]
 >
->Pour Adobe Commerce sur les infrastructures cloud, utilisez la [configuration du déploiement cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml) décrite dans le guide sur le cloud. Ne modifiez pas `app/etc/env.php` directement. Les outils de déploiement génèrent ce fichier et peuvent remplacer les modifications manuelles.
+>Pour Adobe Commerce sur les infrastructures cloud, utilisez la [configuration du déploiement cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml) décrite dans le guide sur le cloud. Ne modifiez pas `app/etc/env.php` directement. Les outils de déploiement génèrent ce fichier et peuvent remplacer les modifications manuelles.
 
 ## Utiliser le serveur frontal par défaut
 
