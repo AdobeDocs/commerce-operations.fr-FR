@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43167 : l’action de masse de la grille de commande de l’administrateur ne s’applique pas à plusieurs pages'
-description: Le correctif MDVA-43167 corrige le problème en raison duquel l’action de masse de la grille de commandes de l’administrateur ne s’applique pas à plusieurs pages lorsque l’utilisateur administrateur sélectionne toutes les commandes. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.16 est installé. L’ID du correctif est MDVA-43167. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
+description: Le correctif MDVA-43167 corrige le problème en raison duquel l’action de masse de la grille de commandes de l’administrateur ne s’applique pas à plusieurs pages lorsque l’utilisateur administrateur sélectionne toutes les commandes. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.16 est installé. L’ID du correctif est MDVA-43167. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
 feature: Admin Workspace, Orders
 role: Admin
 exl-id: 992f8a90-300e-41aa-b03d-b8a647dddd51
@@ -55,7 +55,7 @@ Seules les deux commandes visibles sont mises en attente.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

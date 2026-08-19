@@ -23,6 +23,6 @@ Les rubriques de la section Sécurité du guide de configuration ne sont pas exh
 
 Plusieurs rubriques relatives à la sécurité qui ont été incluses à la fois dans le guide de configuration de se trouvent désormais dans les guides suivants :
 
-- [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) dans le guide _Extension_.
+- [Google reCAPTCHA](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) dans le guide _Extension_.
 - [Authentification à deux facteurs](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication) dans le guide _Extension_.
 - [Conformité au Règlement général sur la protection des données (RGPD)](/help/security-and-compliance/privacy/gdpr.md) dans le guide _Sécurité et conformité_.

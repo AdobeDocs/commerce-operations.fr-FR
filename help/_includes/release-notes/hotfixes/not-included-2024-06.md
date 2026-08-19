@@ -25,22 +25,22 @@ Option 1 :
 
    * [2.4.4-p9](/help/release/release-notes/security/2-4-4-patches.md#adobe-commerce-244-p9)
 
-1. Appliquez le [correctif](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) publié le 17 juillet 2024.
+1. Appliquez le [correctif](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27136) publié le 17 juillet 2024.
 
-1. Clés de chiffrement [rotation](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key).
+1. Clés de chiffrement [rotation](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/encryption-key).
 
 Option 2 :
 
-1. Appliquez le [patch isolé](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136).
+1. Appliquez le [patch isolé](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27136).
 
-1. Clés de chiffrement [rotation](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key).
+1. Clés de chiffrement [rotation](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/encryption-key).
 
 **Pour les clients et clientes qui ont déjà appliqué un correctif de sécurité publié le 11 juin 2024 ou le correctif isolé publié le 28 juin 2024:**
 
-1. Appliquez le [correctif](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) publié le 17 juillet 2024.
+1. Appliquez le [correctif](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27136) publié le 17 juillet 2024.
 
-1. Clés de chiffrement [rotation](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key).
+1. Clés de chiffrement [rotation](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/encryption-key).
 
 **Pour les clients qui ont déjà 1) appliqué un correctif de sécurité publié le 11 juin 2024 ou 2) le correctif isolé publié le 28 juin 2024 et 3) fait pivoter leurs clés de chiffrement :**
  
-1. Appliquez le [correctif](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) publié le 17 juillet 2024.
+1. Appliquez le [correctif](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27136) publié le 17 juillet 2024.

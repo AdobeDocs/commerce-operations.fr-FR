@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-42584 : statut des stocks du produit configurable non mis à jour automatiquement'
-description: Le correctif MDVA-42584 résout le problème où l'état du stock du produit configurable n'est pas mis à jour automatiquement lorsque son produit simple est mis à jour. Ce correctif est disponible lorsque l’[Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 est installé. L’ID du correctif est MDVA-42584. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
+description: Le correctif MDVA-42584 résout le problème où l'état du stock du produit configurable n'est pas mis à jour automatiquement lorsque son produit simple est mis à jour. Ce correctif est disponible lorsque l’[Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 est installé. L’ID du correctif est MDVA-42584. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 feature: Configuration, Orders, Products
 role: Admin
 exl-id: 6311f069-f08f-4d58-9f4b-fa1246c02640
@@ -78,7 +78,7 @@ Le statut de stock du produit configurable est toujours **En rupture de stock**.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

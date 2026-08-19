@@ -56,4 +56,4 @@ Si vous recevez une alerte critique de requêtes DML, commencez à l’étape 1.
    1. Recherchez des optimisations de code ou des optimisations opérationnelles :
       * Optimisations du code : cherchez à optimiser les requêtes avec des insertions/mises à jour en bloc, en réduisant l’utilisation de l’index ou en limitant le code.
       * Optimisations opérationnelles : déchargez les modifications de données gourmandes en ressources pour réduire les temps de trafic.
-      * Optimisations supplémentaires : Assurez-vous d&#39;utiliser la dernière version des outils ECE. Pour connaître les étapes, reportez-vous à la section [Mise à jour de la version des outils](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) dans le guide Commerce sur le cloud .
+      * Optimisations supplémentaires : Assurez-vous d&#39;utiliser la dernière version des outils ECE. Pour connaître les étapes, reportez-vous à la section [Mise à jour de la version des outils](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) dans le guide Commerce sur le cloud .

@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-45424 : compensation de réservation incorrecte créée après un remboursement partiel'
-description: Le correctif ACSD-45424 corrige le problème où une compensation de réservation incorrecte est créée après un remboursement partiel. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.17 est installé. L’ID du correctif est ACSD-45424. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
+description: Le correctif ACSD-45424 corrige le problème où une compensation de réservation incorrecte est créée après un remboursement partiel. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.17 est installé. L’ID du correctif est ACSD-45424. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
 feature: Orders
 role: Admin
 exl-id: 94435816-9f4a-40f9-be80-05836ed7781f
@@ -81,4 +81,4 @@ Pour en savoir plus sur l’outil de correctifs de la qualité, voir :
 * Publication de l’outil [Correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!DNL Quality Patches Tool].
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide de [!DNL Quality Patches Tool].

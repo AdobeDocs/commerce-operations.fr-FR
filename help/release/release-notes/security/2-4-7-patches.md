@@ -149,7 +149,7 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 >[!BEGINSHADEBOX]
 
-Cette version introduit également la prise en charge de l’extension Adobe Commerce [conforme à la norme HIPAA](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview).
+Cette version introduit également la prise en charge de l’extension Adobe Commerce [conforme à la norme HIPAA](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/compliance/hipaa-ready-service/overview).
 
 >[!ENDSHADEBOX]
 
@@ -217,9 +217,9 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 Les points forts de cette version sont les suivants :
 
-* **Mise à jour [paramètres de mot de passe à usage unique (OTP)](https://experienceleague.adobe.com/en/docs/commerce-admin/config/security/2fa) pour l’authentificateur Google**-Cette mise à jour est nécessaire pour résoudre une erreur introduite par une [modification rétrocompatible](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) dans la version 2.4.7. La description du champ **[!UICONTROL OTP Window]** fournit désormais une explication précise du paramètre et la valeur par défaut a été modifiée de `1` en `29`.
+* **Mise à jour [paramètres de mot de passe à usage unique (OTP)](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/security/2fa) pour l’authentificateur Google**-Cette mise à jour est nécessaire pour résoudre une erreur introduite par une [modification rétrocompatible](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) dans la version 2.4.7. La description du champ **[!UICONTROL OTP Window]** fournit désormais une explication précise du paramètre et la valeur par défaut a été modifiée de `1` en `29`.
 
-* **Compatibilité des versions B2B** : pour des raisons de compatibilité avec la version 2.4.7-p1 de Commerce, les commerçants qui disposent de l’extension Adobe Commerce B2B doivent effectuer la mise à niveau vers la version 1.4.2-p1 de [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
+* **Compatibilité des versions B2B** : pour des raisons de compatibilité avec la version 2.4.7-p1 de Commerce, les commerçants qui disposent de l’extension Adobe Commerce B2B doivent effectuer la mise à niveau vers la version 1.4.2-p1 de [B2B](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
 
 ### Correctifs inclus dans cette version
 

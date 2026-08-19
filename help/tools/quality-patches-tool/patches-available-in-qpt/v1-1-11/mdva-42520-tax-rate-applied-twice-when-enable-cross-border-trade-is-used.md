@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-42520 : taux de taxe appliqué deux fois lorsque l''option « Activer le commerce transfrontalier » est utilisée'
-description: Le correctif MDVA-42520 corrige le problème en raison duquel le taux de taxe est appliqué deux fois lorsque le **Activer le commerce transfrontalier** est utilisé. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.11 est installé. L’ID du correctif est MDVA-42520. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
+description: Le correctif MDVA-42520 corrige le problème en raison duquel le taux de taxe est appliqué deux fois lorsque le **Activer le commerce transfrontalier** est utilisé. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.11 est installé. L’ID du correctif est MDVA-42520. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 feature: Catalog Management, Orders, Taxes
 role: Admin
 exl-id: 34c101fd-3a47-4877-8a41-ccaeaa010969
@@ -63,7 +63,7 @@ Sous-total du devis (taxes comprises) et total général du devis (taxes compris
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

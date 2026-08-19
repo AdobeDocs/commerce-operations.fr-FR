@@ -3,7 +3,7 @@ title: Effacement du cache avec vernis
 description: Découvrez comment l’effacement du cache fonctionne avec l’accélérateur de mise en cache web Varnish pour Adobe Commerce. Découvrez les techniques de gestion et d’optimisation du cache.
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
+badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
 autotag-review: '2026-06-22T22:18:33.462Z'
 TQID: 'https://experienceleague.adobe.com/ePhbVWjx-hX99p8OKiKqzT-w2KZu-XjS1XieuStKqc4'
 product_v2:

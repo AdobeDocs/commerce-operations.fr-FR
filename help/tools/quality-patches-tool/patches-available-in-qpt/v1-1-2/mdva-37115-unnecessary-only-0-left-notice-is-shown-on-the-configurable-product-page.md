@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-37115 : l’avis « Il n’y a que 0 à gauche » s’affiche sur la page du produit'
-description: 'Le correctif MDVA-37115 résout le problème suivant : l’avertissement inutile « Il ne reste que 0 » s’affiche sur la page des produits configurables. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2 est installé. L’ID du correctif est MDVA-37115. Notez que le problème a été résolu dans Adobe Commerce 2.4.3.'
+description: 'Le correctif MDVA-37115 résout le problème suivant : l’avertissement inutile « Il ne reste que 0 » s’affiche sur la page des produits configurables. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2 est installé. L’ID du correctif est MDVA-37115. Notez que le problème a été résolu dans Adobe Commerce 2.4.3.'
 feature: Configuration, Products, Orders
 role: Admin
 exl-id: ba94b2fd-6a7d-4194-afd8-798854431b57
@@ -57,7 +57,7 @@ Aucun avis *Il ne reste que 0* n’apparaît sur la page du produit.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre type de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

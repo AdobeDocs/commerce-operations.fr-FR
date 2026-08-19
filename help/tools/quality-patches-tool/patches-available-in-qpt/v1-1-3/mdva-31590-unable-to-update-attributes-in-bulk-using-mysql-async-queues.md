@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-31590 : impossible de mettre à jour les attributs en bloc à l’aide des files d’attente asynchrones MySQL'
-description: Le correctif MDVA-31590 résout le problème où les utilisateurs ne peuvent pas mettre à jour les attributs en bloc à l’aide des files d’attente asynchrones MySQL. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3 est installé. L’ID du correctif est MDVA-31590. Notez que le problème a été résolu dans Adobe Commerce 2.4.2.
+description: Le correctif MDVA-31590 résout le problème où les utilisateurs ne peuvent pas mettre à jour les attributs en bloc à l’aide des files d’attente asynchrones MySQL. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3 est installé. L’ID du correctif est MDVA-31590. Notez que le problème a été résolu dans Adobe Commerce 2.4.2.
 feature: Attributes, Services
 role: Admin
 exl-id: f8d1c3bd-e995-41ef-89e1-93eec6e8b1f1
@@ -71,7 +71,7 @@ Les utilisateurs ne peuvent pas mettre à jour les attributs en bloc à l’aide
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

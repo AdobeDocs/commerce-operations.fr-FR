@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-37592 : Le tri par prix ne fonctionne pas pour les produits dont le prix est égal à zéro'
-description: Le correctif Adobe Commerce MDVA-37592 résout le problème où le tri par prix ne fonctionne pas correctement pour les produits dont le prix zéro est affecté à un catalogue partagé. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.0 est installé. L’ID du correctif est MDVA-37592. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
+description: Le correctif Adobe Commerce MDVA-37592 résout le problème où le tri par prix ne fonctionne pas correctement pour les produits dont le prix zéro est affecté à un catalogue partagé. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.0 est installé. L’ID du correctif est MDVA-37592. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
 feature: B2B, Catalog Management, Categories, Orders, Products
 role: Admin
 exl-id: 4d4a158c-2020-42a4-9b8b-14c9b48b4107

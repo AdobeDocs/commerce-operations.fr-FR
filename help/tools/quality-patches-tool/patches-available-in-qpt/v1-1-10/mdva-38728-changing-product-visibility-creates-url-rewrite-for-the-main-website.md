@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-38728 : la modification de la visibilité du produit crée une réécriture d’URL pour le site web principal.'
-description: Le correctif MDVA-38728 résout le problème où la modification de la visibilité du produit sur le deuxième site web crée une réécriture d’URL pour le site web principal. Ce correctif est disponible lorsque l’[Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 est installé. L’ID du correctif est MDVA-38728. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
+description: Le correctif MDVA-38728 résout le problème où la modification de la visibilité du produit sur le deuxième site web crée une réécriture d’URL pour le site web principal. Ce correctif est disponible lorsque l’[Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 est installé. L’ID du correctif est MDVA-38728. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 feature: Products
 role: Admin
 exl-id: c9dfa386-6327-43b6-a977-a29178c64b89

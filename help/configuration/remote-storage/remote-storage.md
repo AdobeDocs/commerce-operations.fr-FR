@@ -91,5 +91,5 @@ Après avoir activé le stockage distant pour une carte spécifique, vous pouvez
 
 >[!INFO]
 >
->La commande sync migre uniquement les fichiers du répertoire `pub/media`, _pas_ les fichiers d’import/export du répertoire `var`. Voir [Importation/exportation planifiée](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) dans le Guide de l’utilisateur de _Commerce 2.4_.
+>La commande sync migre uniquement les fichiers du répertoire `pub/media`, _pas_ les fichiers d’import/export du répertoire `var`. Voir [Importation/exportation planifiée](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=fr) dans le Guide de l’utilisateur de _Commerce 2.4_.
 

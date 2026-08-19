@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-37364 : l’attribut client personnalisé de type date rompt l’interface utilisateur de la grille.'
-description: Le correctif MDVA-37364 résout le problème en raison duquel l’attribut client personnalisé de type date rompt l’interface utilisateur de la grille client. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2 est installé. L’ID du correctif est MDVA-37364. Notez que le problème est planifié pour être corrigé dans la version 2.4.4 d’Adobe Commerce.
+description: Le correctif MDVA-37364 résout le problème en raison duquel l’attribut client personnalisé de type date rompt l’interface utilisateur de la grille client. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2 est installé. L’ID du correctif est MDVA-37364. Notez que le problème est planifié pour être corrigé dans la version 2.4.4 d’Adobe Commerce.
 feature: Attributes, Cache
 role: Developer
 exl-id: 5bd64004-06c4-49fd-8e56-e2c44008ca82
@@ -61,7 +61,7 @@ L’interface utilisateur de la grille cliente d’administration est endommagé
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre type de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

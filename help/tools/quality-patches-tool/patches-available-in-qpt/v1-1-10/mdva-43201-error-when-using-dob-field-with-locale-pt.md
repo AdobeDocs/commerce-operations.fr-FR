@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43201 : erreur lors de l’utilisation du champ DOB avec le paramètre régional PT'
-description: Le correctif MDVA-43201 résout le problème où une erreur se produit lors de l’utilisation de l’attribut client DOB dans le formulaire d’enregistrement du client pour les paramètres régionaux portugais. Ce correctif est disponible lorsque l’[Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 est installé. L’ID du correctif est MDVA-43201. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
+description: Le correctif MDVA-43201 résout le problème où une erreur se produit lors de l’utilisation de l’attribut client DOB dans le formulaire d’enregistrement du client pour les paramètres régionaux portugais. Ce correctif est disponible lorsque l’[Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 est installé. L’ID du correctif est MDVA-43201. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
 feature: B2B, Cache
 role: Admin
 exl-id: be087420-1ee3-40cc-8ff7-62c5641609cc

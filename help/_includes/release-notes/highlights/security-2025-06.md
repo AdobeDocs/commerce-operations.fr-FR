@@ -23,6 +23,6 @@ Les points forts de cette version sont les suivants :
 
 >[!BEGINSHADEBOX]
 
-Le correctif pour CVE-2025-47110 est également disponible sous la forme d’un correctif isolé. Pour plus d’informations, consultez l’article [Base de connaissances](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27181).
+Le correctif pour CVE-2025-47110 est également disponible sous la forme d’un correctif isolé. Pour plus d’informations, consultez l’article [Base de connaissances](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27181).
 
 >[!ENDSHADEBOX]

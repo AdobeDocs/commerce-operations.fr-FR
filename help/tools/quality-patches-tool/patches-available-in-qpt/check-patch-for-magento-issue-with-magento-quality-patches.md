@@ -43,7 +43,7 @@ L’outil a pour but de vous permettre d’utiliser des correctifs en libre-serv
 
 ## Correctifs disponibles dans l’outil de correctifs de la qualité
 
-Reportez-vous à [Outil de correctifs de qualité](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans notre documentation destinée aux développeurs pour obtenir la liste des correctifs disponibles.
+Reportez-vous à [Outil de correctifs de qualité](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans notre documentation destinée aux développeurs pour obtenir la liste des correctifs disponibles.
 
 ## Installation et utilisation de l’outil de correctifs de qualité
 
@@ -55,7 +55,7 @@ Consultez le [Guide de mise à jour logicielle > Correctifs](/help/tools/quality
 
 ### Installation et utilisation de QPT pour Adobe Commerce sur une infrastructure cloud
 
-Consultez [Cloud for Adobe Commerce > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans notre documentation destinée aux développeurs pour plus d’informations sur l’installation et l’utilisation de QPT pour appliquer et rétablir des correctifs sur Adobe Commerce sur les infrastructures cloud.
+Consultez [Cloud for Adobe Commerce > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans notre documentation destinée aux développeurs pour plus d’informations sur l’installation et l’utilisation de QPT pour appliquer et rétablir des correctifs sur Adobe Commerce sur les infrastructures cloud.
 
 ## Lecture connexe
 

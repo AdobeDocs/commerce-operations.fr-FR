@@ -146,7 +146,7 @@ Commerce utilise une clé de chiffrement pour protéger les mots de passe et d�
 ]
 ```
 
-Apprenez-en davantage sur la [clé de chiffrement](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) dans le guide d’utilisation de _Commerce_.
+Apprenez-en davantage sur la [clé de chiffrement](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/encryption-key) dans le guide d’utilisation de _Commerce_.
 
 ## db
 
