@@ -2,9 +2,9 @@
 title: Accès [!DNL Cloud Automation Patching Service (CAPS)]
 description: Découvrez comment accéder à et utiliser  [!DNL Cloud Automation Patching Service (CAPS)]
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '279'
 ht-degree: 1%
 
 ---
@@ -58,6 +58,7 @@ Pour les environnements de production, des mesures de protection supplémentaire
 ## Rubriques connexes
 
 * [Présentation de CAPS](intro.md)
-* [Workflow](workflow.md)
+* [Présentation des workflows](workflow.md)
+* [Intégration de GitHub](github-integration.md)
 * [Bonnes pratiques](best-practices.md)
 * [Dépannage](troubleshooting.md)

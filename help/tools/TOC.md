@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 3bb6679e2a5e254ef066b47816e527123ca8dcb3
+source-git-commit: 2fce4e7794a3defe46c03b3795df3e62f96dbf73
 workflow-type: tm+mt
-source-wordcount: '10658'
+source-wordcount: '10661'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,8 @@ ht-degree: 0%
 - MAJUSCULES {#caps-tool}
   - {hide-from-toc}[Introduction](caps-tool/intro.md)
   - {hide-from-toc}[Accès](caps-tool/access.md)
-  - {hide-from-toc}[&#x200B; Workflow &#x200B;](caps-tool/workflow.md)
+  - {hide-from-toc}[Présentation des workflows](caps-tool/workflow.md)
+  - {hide-from-toc}[Intégration de GitHub](caps-tool/github-integration.md)
   - {hide-from-toc}[Bonnes pratiques](caps-tool/best-practices.md)
   - {hide-from-toc}[Dépannage](caps-tool/troubleshooting.md)
 - Alertes gérées sur Adobe Commerce {#managed-alerts-for-adobe-commerce}

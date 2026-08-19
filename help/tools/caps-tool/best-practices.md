@@ -2,9 +2,9 @@
 title: Guide des bonnes pratiques [!DNL Cloud Automation Patching Service (CAPS)]
 description: Découvrez les bonnes pratiques pour une utilisation efficace et  [!DNL Cloud Automation Patching Service (CAPS)]  sécurité.
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -22,23 +22,23 @@ Le respect des bonnes pratiques est essentiel pour la réussite et la sécurité
 Avant d’appliquer les correctifs, assurez-vous que votre environnement est correctement préparé :
 
 * **Compte Adobe Commerce Cloud**
-   * Abonnement Adobe Commerce Cloud actif
-   * Licence Adobe Commerce valide
-   * Identifiants d’accès au référentiel configurés
-   * Autorisations de projet et d’environnement
+  * Abonnement Adobe Commerce Cloud actif
+  * Licence Adobe Commerce valide
+  * Identifiants d’accès au référentiel configurés
+  * Autorisations de projet et d’environnement
 
 * **Ressources d’environnement**
-   * Emplacements d’environnement disponibles pour les tests temporaires
-   * Stockage, CPU et mémoire suffisants
-   * Accès réseau aux référentiels Adobe
-   * Environnement parent stable pour la synchronisation
+  * Emplacements d’environnement disponibles pour les tests temporaires
+  * Stockage, CPU et mémoire suffisants
+  * Accès réseau aux référentiels Adobe
+  * Environnement parent stable pour la synchronisation
 
 * **Préparation de l’environnement de production** (pour l’application de correctifs en production)
-   * Le mode de maintenance peut être activé.
-   * Les tâches cron peuvent être désactivées
-   * Procédures relatives aux fenêtres de maintenance établies
-   * Procédures de restauration documentées
-   * Plan de communication des parties prenantes prêt
+  * Le mode de maintenance peut être activé.
+  * Les tâches cron peuvent être désactivées
+  * Procédures relatives aux fenêtres de maintenance établies
+  * Procédures de restauration documentées
+  * Plan de communication des parties prenantes prêt
 
 ## Bonnes pratiques relatives aux applications de correctifs
 
@@ -49,29 +49,29 @@ Avant d’appliquer les correctifs, assurez-vous que votre environnement est cor
 **Choisir l’heure appropriée pour l’application de correctif :**
 
 * **Période de faible trafic**
-   * Planification des correctifs pendant les heures creuses
-   * Évitez d’appliquer des correctifs lors d’événements à trafic élevé
-   * Planifier les temps d’arrêt potentiels pendant la validation
+  * Planification des correctifs pendant les heures creuses
+  * Évitez d’appliquer des correctifs lors d’événements à trafic élevé
+  * Planifier les temps d’arrêt potentiels pendant la validation
 
 * **Considérations relatives à l’environnement de production**
-   * **Fenêtres de maintenance** - Planification des correctifs de production pendant les fenêtres de maintenance planifiées
-   * **Communication client** - Informer les clients du mode de maintenance et du temps d’arrêt prévu
-   * **Coordination de l’équipe** - Assurez-vous que tous les membres de l’équipe connaissent le calendrier de maintenance
-   * **Préparation de la restauration** - Mettez des membres de l’équipe à disposition pour une restauration immédiate si nécessaire.
+  * **Fenêtres de maintenance** - Planification des correctifs de production pendant les fenêtres de maintenance planifiées
+  * **Communication client** - Informer les clients du mode de maintenance et du temps d’arrêt prévu
+  * **Coordination de l’équipe** - Assurez-vous que tous les membres de l’équipe connaissent le calendrier de maintenance
+  * **Préparation de la restauration** - Mettez des membres de l’équipe à disposition pour une restauration immédiate si nécessaire.
 
 ### Surveillance et validation
 
 **Pendant les opérations de correctif :**
 
 * **Suivre la progression**
-   * Observer le statut des opérations en temps réel
-   * Prêtez attention aux avertissements ou aux erreurs
-   * N’interrompez pas le processus une fois qu’il a été lancé
+  * Observer le statut des opérations en temps réel
+  * Prêtez attention aux avertissements ou aux erreurs
+  * N’interrompez pas le processus une fois qu’il a été lancé
 
 * **Validation des résultats**
-   * Tester les fonctionnalités critiques après une application réussie
-   * Vérifiez les mesures de performances pour détecter toute dégradation.
-   * Vérifier que les mesures de sécurité restent intactes
+  * Tester les fonctionnalités critiques après une application réussie
+  * Vérifiez les mesures de performances pour détecter toute dégradation.
+  * Vérifier que les mesures de sécurité restent intactes
 
 ## Bonnes pratiques après l’application du correctif
 
@@ -82,19 +82,19 @@ Avant d’appliquer les correctifs, assurez-vous que votre environnement est cor
 **Après une application de correctif réussie :**
 
 * **Tests fonctionnels**
-   * Tester tous les processus d’entreprise critiques
-   * Vérifier le passage en caisse et les flux de paiement
-   * Vérifier les fonctionnalités du panneau d’administration
+  * Tester tous les processus d’entreprise critiques
+  * Vérifier le passage en caisse et les flux de paiement
+  * Vérifier les fonctionnalités du panneau d’administration
 
 * **Surveillance des performances**
-   * Surveiller les temps de chargement des pages
-   * Vérifier les performances de la base de données
-   * Surveillez tous les pics d’utilisation des ressources
+  * Surveiller les temps de chargement des pages
+  * Vérifier les performances de la base de données
+  * Surveillez tous les pics d’utilisation des ressources
 
 * **Validation de la sécurité**
-   * Vérifier que les fonctionnalités de sécurité fonctionnent
-   * Recherchez d&#39;éventuelles nouvelles vulnérabilités de sécurité
-   * Authentification et autorisation des tests
+  * Vérifier que les fonctionnalités de sécurité fonctionnent
+  * Recherchez d&#39;éventuelles nouvelles vulnérabilités de sécurité
+  * Authentification et autorisation des tests
 
 ## Bonnes pratiques relatives à l’environnement de production
 
@@ -105,39 +105,39 @@ Avant d’appliquer les correctifs, assurez-vous que votre environnement est cor
 **Testez toujours les correctifs avant le déploiement en production :**
 
 * **Configuration de l’environnement de test**
-   * Utiliser des environnements d’évaluation ou d’intégration pour les tests
-   * Assurez-vous que l’environnement de test reflète la configuration de production.
-   * Testez si possible avec des données de type production.
+  * Utiliser des environnements d’évaluation ou d’intégration pour les tests
+  * Assurez-vous que l’environnement de test reflète la configuration de production.
+  * Testez si possible avec des données de type production.
 
 * **Tests complets**
-   * Tester tous les processus d’entreprise critiques
-   * Vérifier le passage en caisse et les flux de paiement
-   * Vérifier les fonctionnalités du panneau d’administration
-   * Tester toutes les intégrations personnalisées
+  * Tester tous les processus d’entreprise critiques
+  * Vérifier le passage en caisse et les flux de paiement
+  * Vérifier les fonctionnalités du panneau d’administration
+  * Tester toutes les intégrations personnalisées
 
 * **Test de performance**
-   * Surveillance de l’impact des correctifs sur les performances
-   * Recherchez toute dégradation des performances
-   * Vérifier que l’utilisation des ressources reste acceptable
+  * Surveillance de l’impact des correctifs sur les performances
+  * Recherchez toute dégradation des performances
+  * Vérifier que l’utilisation des ressources reste acceptable
 
 ### Atténuation des risques
 
 **Réduire les risques lors de l’application des correctifs en production :**
 
 * **Plan de communication**
-   * Informer les clients des fenêtres de maintenance
-   * Tenir les parties prenantes informées des progrès
-   * Préparer les procédures d’escalade
+  * Informer les clients des fenêtres de maintenance
+  * Tenir les parties prenantes informées des progrès
+  * Préparer les procédures d’escalade
 
 * **Stratégie de restauration**
-   * Savoir comment rétablir rapidement les correctifs si nécessaire
-   * Disposer de membres de l’équipe pour une réponse immédiate
-   * Procédures de restauration de documents
+  * Savoir comment rétablir rapidement les correctifs si nécessaire
+  * Disposer de membres de l’équipe pour une réponse immédiate
+  * Procédures de restauration de documents
 
 * **Surveillance et alertes**
-   * Configurer la surveillance des problèmes postérieurs à l’application du correctif
-   * disposer d’alertes pour les échecs critiques ;
-   * Surveiller de près les mesures de performances
+  * Configurer la surveillance des problèmes postérieurs à l’application du correctif
+  * disposer d’alertes pour les échecs critiques ;
+  * Surveiller de près les mesures de performances
 
 ## Résumé des bonnes pratiques clés
 
@@ -156,5 +156,6 @@ Avant d’appliquer les correctifs, assurez-vous que votre environnement est cor
 
 * [Présentation de CAPS](intro.md)
 * [Accès](access.md)
-* [Workflow](workflow.md)
+* [Présentation des workflows](workflow.md)
+* [Intégration de GitHub](github-integration.md)
 * [Dépannage](troubleshooting.md)
