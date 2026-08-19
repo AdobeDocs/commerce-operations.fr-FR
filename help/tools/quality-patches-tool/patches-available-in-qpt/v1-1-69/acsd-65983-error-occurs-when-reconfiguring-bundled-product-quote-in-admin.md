@@ -1,16 +1,16 @@
 ---
 title: 'ACSD-65983 : une erreur se produit lors de la reconfiguration du devis de produit groupé dans Admin'
-description: Appliquez le correctif ACSD-65983 pour résoudre le problème d’Adobe Commerce où une erreur s’affiche lors de la tentative de configuration d’un produit groupé dans l’écran [!UICONTROL Sales] > [!UICONTROL Quotes] > [!UICONTROL Edit] sur le serveur principal.
+description: Appliquez le correctif ACSD-65983 pour résoudre le problème d’Adobe Commerce où une erreur s’affiche lors de la tentative de configuration d’un produit groupé dans l’écran de [!UICONTROL Edit] > [!UICONTROL Quotes] > [!UICONTROL Sales] sur le serveur principal.
 feature: B2B, Quotes
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8a8f2b273bcbcf135677ad7ca289398bf660e02e
+exl-id: d03d09bc-a444-486f-ad6b-fddbbf795d8a
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65983 : une erreur se produit lors de la reconfiguration du devis de produit groupé dans Admin
 
@@ -28,7 +28,7 @@ Le correctif ACSD-65983 corrige le problème où la reconfiguration d’un devis
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -62,7 +62,7 @@ Le message d’erreur suivant s’affiche :
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool]
-* Adobe Commerce sur les infrastructures cloud : [&#x200B; Mises à niveau et correctifs > Appliquer des correctifs &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [ Mises à niveau et correctifs > Appliquer des correctifs ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

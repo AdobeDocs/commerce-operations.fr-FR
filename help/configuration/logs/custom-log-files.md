@@ -4,7 +4,7 @@ description: Découvrez comment créer et configurer des fichiers journaux perso
 feature: Configuration, Logs
 badge: label="Contribution Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -17,11 +17,11 @@ Le module `Magento\Framework\Logger` contient les classes de gestionnaire suivan
 
 | Classe | Fichier journal |
 | ----- | -------- |
-| [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Base.php) | - |
-| [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Debug.php) | `/var/log/debug.log` |
-| [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Exception.php) | `/var/log/exception.log` |
-| [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Syslog.php) | - |
-| [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/System.php) | `/var/log/system.log` |
+| [](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Base.php) | - |
+| [](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Debug.php) | `/var/log/debug.log` |
+| [](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Exception.php) | `/var/log/exception.log` |
+| [](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Syslog.php) | - |
+| [](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/System.php) | `/var/log/system.log` |
 
 Vous pouvez les trouver dans le répertoire `lib/internal/Magento/Framework/Logger/Handler`.
 
@@ -32,9 +32,9 @@ Vous pouvez utiliser l’une des méthodes suivantes pour vous connecter à un f
 
 ## Configurer un fichier journal personnalisé dans le `di.xml`
 
-Cet exemple montre comment utiliser [les types virtuels](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) pour consigner des messages `debug` dans un fichier journal personnalisé au lieu d&#39;un `/var/log/debug.log` standard.
+Cet exemple montre comment utiliser [les types virtuels](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types) pour consigner des messages `debug` dans un fichier journal personnalisé au lieu d&#39;un `/var/log/debug.log` standard.
 
-1. Dans le fichier `di.xml` de votre module, définissez un fichier journal personnalisé en tant que [type virtuel](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
+1. Dans le fichier `di.xml` de votre module, définissez un fichier journal personnalisé en tant que [type virtuel](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types).
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomDebug" type="Magento\Framework\Logger\Handler\Base">
@@ -46,7 +46,7 @@ Cet exemple montre comment utiliser [les types virtuels](https://developer.adobe
 
    La valeur `name` de `Magento\Payment\Model\Method\MyCustomDebug` doit être unique.
 
-1. Définissez le gestionnaire dans un autre [type virtuel](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) avec un `name` unique :
+1. Définissez le gestionnaire dans un autre [type virtuel](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types) avec un `name` unique :
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -58,7 +58,7 @@ Cet exemple montre comment utiliser [les types virtuels](https://developer.adobe
    </virtualType>
    ```
 
-1. Insérez le `MyCustomLogger` [type virtuel](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) dans l’objet `Magento\Payment\Model\Method\Logger` :
+1. Insérez le `MyCustomLogger` [type virtuel](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types) dans l’objet `Magento\Payment\Model\Method\Logger` :
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -117,7 +117,7 @@ Cet exemple montre comment utiliser une classe de gestionnaire d’enregistreur 
    }
    ```
 
-1. Définissez le gestionnaire de cette classe en tant que [type virtuel](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) dans le fichier `di.xml` du module.
+1. Définissez le gestionnaire de cette classe en tant que [type virtuel](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types) dans le fichier `di.xml` du module.
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">

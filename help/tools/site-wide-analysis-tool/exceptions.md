@@ -2,9 +2,9 @@
 title: '[!DNL Exceptions]'
 description: Découvrez l’onglet [!UICONTROL Exceptions] dans le  [!DNL Site-Wide Analysis Tool], quand l’utiliser, ses avantages et les bonnes pratiques.
 exl-id: bd793536-b95c-47db-9372-33c00be8e144
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -27,4 +27,4 @@ Utilisez la page [!UICONTROL Exceptions] pour afficher les journaux des erreurs/
 
 ## Bonnes pratiques
 
-Surveillez la page [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] pour voir quelles exceptions se produisent. Pour plus d’informations, voir [Afficher et gérer les journaux](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/test/log-locations) dans notre documentation destinée aux développeurs.
+Surveillez la page [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] pour voir quelles exceptions se produisent. Pour plus d’informations, voir [Afficher et gérer les journaux](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations) dans notre documentation destinée aux développeurs.

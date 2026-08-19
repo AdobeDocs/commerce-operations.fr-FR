@@ -2,9 +2,9 @@
 title: Configuration de plusieurs sites web avec Nginx
 description: Suivez ce tutoriel pour configurer plusieurs sites web avec Nginx.
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '974'
 ht-degree: 0%
 
 ---
@@ -17,16 +17,16 @@ Nous supposons que :
 
   Des tâches supplémentaires peuvent être nécessaires pour déployer plusieurs sites web dans un environnement hébergé. Pour plus d’informations, contactez votre fournisseur d’hébergement.
 
-  Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Une fois les tâches décrites dans cette rubrique terminées, consultez [Configuration de plusieurs sites web ou magasins](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=fr) dans le guide _Commerce sur les infrastructures cloud_.
+  Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Une fois les tâches décrites dans cette rubrique terminées, consultez [Configuration de plusieurs sites web ou magasins](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) dans le guide _Commerce sur les infrastructures cloud_.
 
 - Vous acceptez plusieurs domaines dans un fichier hôte virtuel ou utilisez un hôte virtuel par site web ; les fichiers de configuration de l&#39;hôte virtuel se trouvent dans `/etc/nginx/sites-available`.
 - Vous utilisez le `nginx.conf.sample` fourni par Commerce avec uniquement les modifications abordées dans ce tutoriel.
 - Le logiciel Commerce est installé dans `/var/www/html/magento2`.
 - Vous disposez de deux sites web autres que le site par défaut :
 
-   - `french.mysite.mg` avec le code du site web `french` et le code d’affichage du magasin `fr`
-   - `german.mysite.mg` avec le code du site web `german` et le code d’affichage du magasin `de`
-   - `mysite.mg` est le site web et la vue de magasin par défaut
+  - `french.mysite.mg` avec le code du site web `french` et le code d’affichage du magasin `fr`
+  - `german.mysite.mg` avec le code du site web `german` et le code d’affichage du magasin `de`
+  - `mysite.mg` est le site web et la vue de magasin par défaut
 
 >[!TIP]
 >
@@ -40,8 +40,8 @@ Voici une feuille de route pour configurer plusieurs sites web avec des onglets 
 
    - `$MAGE_RUN_TYPE` peut être `store` ou `website` :
 
-      - Utilisez `website` pour charger votre site web dans votre storefront.
-      - Utilisez `store` pour charger n’importe quelle vue de magasin dans votre storefront.
+     - Utilisez `website` pour charger votre site web dans votre storefront.
+     - Utilisez `store` pour charger n’importe quelle vue de magasin dans votre storefront.
 
    - `$MAGE_RUN_CODE` est le code d’affichage unique du site web ou du magasin qui correspond à `$MAGE_RUN_TYPE`.
 
@@ -280,7 +280,7 @@ bin/magento cache:clean config full_page
 >[!INFO]
 >
 >- Des tâches supplémentaires peuvent être nécessaires pour déployer plusieurs sites web dans un environnement hébergé. Pour plus d’informations, contactez votre fournisseur d’hébergement.
->- Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de plusieurs sites web ou magasins cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=fr) dans le guide _Commerce sur l’infrastructure cloud_.
+>- Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de plusieurs sites web ou magasins cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) dans le guide _Commerce sur l’infrastructure cloud_.
 
 ### Dépannage
 

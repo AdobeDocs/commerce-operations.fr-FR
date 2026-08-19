@@ -2,9 +2,9 @@
 title: Serveur d’applications GraphQL
 description: Découvrez le serveur d’applications GraphQL dans Adobe Commerce. Découvrez les conseils d’implémentation et les stratégies d’optimisation.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2467'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Le serveur d’applications Commerce GraphQL permet à Adobe Commerce de conserver l’état des requêtes d’API Commerce GraphQL. GraphQL Application Server, qui repose sur l’extension Swoole, fonctionne comme un processus avec des threads de traitement qui gèrent le traitement des requêtes. En préservant un état d’application amorcé parmi les requêtes d’API GraphQL, le serveur d’applications GraphQL améliore la gestion des requêtes et les performances globales du produit. Les requêtes d’API deviennent beaucoup plus efficaces.
 
-GraphQL Application Server est disponible uniquement pour Adobe Commerce. Il n’est pas disponible pour Magento Open Source. Pour les projets Cloud Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) pour activer le serveur d’applications GraphQL.
+GraphQL Application Server est disponible uniquement pour Adobe Commerce. Il n’est pas disponible pour Magento Open Source. Pour les projets Cloud Pro, vous devez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) pour activer le serveur d’applications GraphQL.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ L’exécution du serveur d’applications GraphQL requiert les éléments suiva
 
 ### Projets cloud
 
-Adobe Commerce sur les projets d’infrastructure cloud inclut l’extension Swoole par défaut. Vous pouvez l’[activer](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) dans la propriété `runtime` du fichier `.magento.app.yaml`. Par exemple :
+Adobe Commerce sur les projets d’infrastructure cloud inclut l’extension Swoole par défaut. Vous pouvez l’[activer](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) dans la propriété `runtime` du fichier `.magento.app.yaml`. Par exemple :
 
 ```yaml
 runtime:
@@ -68,7 +68,7 @@ Le module `ApplicationServer` (`Magento/ApplicationServer/`) active GraphQL Appl
 Une fois que la fonction Serveur d’applications est activée sur votre projet Pro, effectuez les étapes suivantes avant de déployer GraphQL Application Server :
 
 1. Déployez Adobe Commerce sur l’infrastructure cloud à l’aide du modèle cloud de la branche [2.4.7-appserver](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
-1. Assurez-vous que toutes les personnalisations et extensions de Commerce sont [compatibles](https://developer.adobe.com/commerce/php/development/components/app-server/) avec GraphQL Application Server.
+1. Assurez-vous que toutes les personnalisations et extensions de Commerce sont [compatibles](https://developer.adobe.com/commerce/php/development/components/app-server) avec GraphQL Application Server.
 1. Clonez votre projet Commerce Cloud.
 1. Ajustez les paramètres du fichier « application-server/nginx.conf.sample » si nécessaire.
 1. Commentez entièrement la section « web » active dans `project_root/.magento.app.yaml` fichier .
@@ -273,7 +273,7 @@ Procédez comme suit avant de déployer GraphQL Application Server sur des proje
 
 >[!NOTE]
 >
->Assurez-vous que tous les paramètres personnalisés de votre fichier de `.magento.app.yaml` racine sont migrés de manière appropriée vers le fichier `application-server/.magento/.magento.app.yaml`. Une fois le fichier `application-server/.magento/.magento.app.yaml` ajouté à votre projet, vous devez le gérer en plus du fichier racine `.magento.app.yaml`. Par exemple, si vous devez [configurer le service RabbitMQ](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) ou [gérer les propriétés web](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) vous devez également ajouter la même configuration à `application-server/.magento/.magento.app.yaml`.
+>Assurez-vous que tous les paramètres personnalisés de votre fichier de `.magento.app.yaml` racine sont migrés de manière appropriée vers le fichier `application-server/.magento/.magento.app.yaml`. Une fois le fichier `application-server/.magento/.magento.app.yaml` ajouté à votre projet, vous devez le gérer en plus du fichier racine `.magento.app.yaml`. Par exemple, si vous devez [configurer le service RabbitMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) ou [gérer les propriétés web](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) vous devez également ajouter la même configuration à `application-server/.magento/.magento.app.yaml`.
 
 ### Vérifier l’activation sur les projets cloud
 
@@ -432,7 +432,7 @@ GraphQL Application Server ajoute l’en-tête de réponse `X-Backend` avec la v
 
 ### Confirmation de la compatibilité des extensions et des personnalisations
 
-Les développeurs d’extensions et les commerçants doivent d’abord vérifier que leur code d’extension et de personnalisation respecte les directives décrites dans la section _[Directives techniques](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/)_.
+Les développeurs d’extensions et les commerçants doivent d’abord vérifier que leur code d’extension et de personnalisation respecte les directives décrites dans la section _[Directives techniques](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines)_.
 
 Tenez compte des recommandations suivantes lors de l’évaluation du code :
 

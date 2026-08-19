@@ -2,9 +2,9 @@
 title: Intégrez le  [!DNL Site-Wide Analysis Tool]
 description: Pour récupérer le rapport  [!DNL Upgrade Compatibility Tool]  partir du tableau de bord  [!DNL Site-Wide Analysis Tool]  votre projet Adobe Commerce, procédez comme suit.
 exl-id: 1ef37294-a837-47a4-841c-4027087acf12
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Le [!DNL Site-Wide Analysis Tool] fournit une surveillance des performances en t
 
 Le [!DNL Upgrade Compatibility Tool] est désormais intégré au [!DNL Site-Wide Analysis Tool] afin de permettre à des personnes n’ayant pas de connaissances techniques d’exécuter le [!DNL Upgrade Compatibility Tool] et d’obtenir un [rapport](../upgrade-compatibility-tool/reports.md) contenant une liste des problèmes pour chaque fichier.
 
-Pour plus d’informations, consultez le [[!DNL Site-Wide Analysis Tool] guide d’utilisation](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/site-wide-analysis-tool/access).
+Pour plus d’informations, consultez le [[!DNL Site-Wide Analysis Tool] guide d’utilisation](/help/tools/site-wide-analysis-tool/access.md).
 
 ## Exécuter le [!DNL Upgrade Compatibility Tool] à partir de l’[!DNL Site-Wide Analysis Tool]
 
@@ -31,7 +31,7 @@ Une fois l’analyse terminée, les résultats de haut niveau s’affichent dans
 
 ![Widget SWAT UCT - Résultats](../../assets/upgrade-guide/uct-swat-results.png)
 
-Cliquez sur **[!UICONTROL Download Report]** pour récupérer le [!DNL Upgrade Compatibility Tool] rapport HTML [&#128279;](../upgrade-compatibility-tool/reports.md#html-report) et consulter les détails.
+Cliquez sur **[!UICONTROL Download Report]** pour récupérer le [!DNL Upgrade Compatibility Tool] rapport HTML [](../upgrade-compatibility-tool/reports.md#html-report) et consulter les détails.
 
 
 >[!NOTE]

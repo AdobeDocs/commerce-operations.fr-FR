@@ -2,9 +2,9 @@
 title: Remplacer les paramètres de configuration
 description: Découvrez comment utiliser les variables d’environnement pour remplacer les paramètres de configuration Adobe Commerce. Découvrez les bonnes pratiques de déploiement et de gestion de la configuration.
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1277'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Vous pouvez remplacer la valeur du paramètre de configuration _any_ à l’aide
 
 >[!TIP]
 >
->Consultez la rubrique [&#x200B; Configurer les environnements &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=fr) dans le guide _Commerce sur les infrastructures cloud_.
+>Consultez la rubrique [ Configurer les environnements ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-intro) dans le guide _Commerce sur les infrastructures cloud_.
 
 ## Variables d’environnement
 
@@ -28,9 +28,9 @@ Vous pouvez utiliser des variables pour l’un des éléments suivants :
 - [Valeurs sensibles](config-reference-sens.md) doivent être définies à l’aide de variables d’environnement ou de la commande [`magento config:sensitive:set`](../cli/set-configuration-values.md).
 - Les valeurs spécifiques au système doivent être définies à l’aide des éléments suivants :
 
-   - Variables d’environnement
-   - La commande [`magento config:set`](../cli/set-configuration-values.md)
-   - Admin suivi de la commande [&#128279;](../cli/export-configuration.md)`magento app:config:dump`
+  - Variables d’environnement
+  - La commande [`magento config:set`](../cli/set-configuration-values.md)
+  - Admin suivi de la commande ](../cli/export-configuration.md)[`magento app:config:dump`
 
 Les chemins de configuration se trouvent dans :
 
@@ -61,9 +61,9 @@ Le format général des noms de variables des paramètres système est le suivan
 
   Pour plus d’informations sur les portées, voir :
 
-   - [Étape 1 : rechercher la valeur de la portée de l’affichage du site web ou du magasin](#step-1-find-the-website-or-store-view-scope-value)
-   - [Rubrique du guide de l’utilisateur de Commerce sur la portée](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
-   - [Référence rapide de la portée](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/scope-change#scope-quick-reference)
+  - [Étape 1 : rechercher la valeur de la portée de l’affichage du site web ou du magasin](#step-1-find-the-website-or-store-view-scope-value)
+  - [Rubrique du guide de l’utilisateur de Commerce sur la portée](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+  - [Référence rapide de la portée](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` est le chemin de configuration avec des caractères de soulignement doubles substitués à `/`. Pour plus d’informations, voir [Étape 2 : définition des variables système](#step-2-set-global-website-or-store-view-variables).
 
@@ -103,10 +103,10 @@ Comment lire le tableau :
 
   Vous avez la possibilité de spécifier des valeurs système pour ces paramètres de configuration en tant que variables d’environnement si vous le souhaitez.
 
-   - Le nom de variable entier est toujours en MAJUSCULES
-   - Commencez un nom de variable par `CONFIG__` (notez deux caractères de soulignement)
-   - La partie `<STORE_VIEW_CODE>` ou `<WEBSITE_CODE>` d’un nom de variable se trouve dans la base de données Admin ou Commerce, comme indiqué dans les sections suivantes.
-   - Vous pouvez trouver des `<SYSTEM__VARIABLE__NAME>` comme indiqué à l’[Étape 2 : définir des variables d’affichage globales, de site web ou de magasin](#step-2-set-global-website-or-store-view-variables).
+  - Le nom de variable entier est toujours en MAJUSCULES
+  - Commencez un nom de variable par `CONFIG__` (notez deux caractères de soulignement)
+  - La partie `<STORE_VIEW_CODE>` ou `<WEBSITE_CODE>` d’un nom de variable se trouve dans la base de données Admin ou Commerce, comme indiqué dans les sections suivantes.
+  - Vous pouvez trouver des `<SYSTEM__VARIABLE__NAME>` comme indiqué à l’[Étape 2 : définir des variables d’affichage globales, de site web ou de magasin](#step-2-set-global-website-or-store-view-variables).
 
 ### Recherche d’un site web ou d’une étendue d’affichage de magasin dans l’Admin
 
@@ -183,10 +183,10 @@ Cette section explique comment définir des variables système.
 
 - Pour définir des valeurs pour la portée globale (c’est-à-dire tous les sites web, magasins et vues de magasin), commencez le nom de la variable par `CONFIG__DEFAULT__`.
 
-- Pour définir une valeur pour une vue de magasin ou un site web spécifique, commencez par définir le nom de la variable comme décrit dans la section [Étape 1 : Rechercher la valeur de la portée &#x200B;](#step-1-find-the-website-or-store-view-scope-value) :
+- Pour définir une valeur pour une vue de magasin ou un site web spécifique, commencez par définir le nom de la variable comme décrit dans la section [Étape 1 : Rechercher la valeur de la portée ](#step-1-find-the-website-or-store-view-scope-value) :
 
-   - `CONFIG__WEBSITES`
-   - `CONFIG__STORES`
+  - `CONFIG__WEBSITES`
+  - `CONFIG__STORES`
 
 - La dernière partie du nom de la variable est le chemin de configuration, qui est unique pour chaque paramètre de configuration.
 
@@ -253,6 +253,6 @@ Un exemple détaillé est présenté dans [Définir des valeurs de configuration
 >
 >- Pour utiliser les valeurs que vous définissez dans le tableau `$_ENV`, vous devez définir `variables_order = "EGPCS"`(Environnement, Get, Post, Cookie et Server) dans votre fichier `php.ini`. Pour plus de détails, voir [Documentation PHP](https://www.php.net/manual/en/ini.core.php).
 >
->- Pour Adobe Commerce sur les infrastructures cloud, si vous tentez de remplacer les paramètres de configuration à l’aide de l’[interface web de projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=fr#configure-the-project), vous devez ajouter le préfixe `env:` au nom de la variable. Par exemple :
+>- Pour Adobe Commerce sur les infrastructures cloud, si vous tentez de remplacer les paramètres de configuration à l’aide de l’[interface web de projet](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#configure-the-project), vous devez ajouter le préfixe `env:` au nom de la variable. Par exemple :
 >
->![&#x200B; Exemple de variable d’environnement &#x200B;](../../assets/configuration/cloud-console-envvariable.png)
+>![ Exemple de variable d’environnement ](../../assets/configuration/cloud-console-envvariable.png)

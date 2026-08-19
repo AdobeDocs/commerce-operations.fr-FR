@@ -1,7 +1,7 @@
 ---
-source-git-commit: c71367c553dce66c146540389461f36eaa529bfc
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,6 @@ Les points forts de cette version sont les suivants :
 
 >[!BEGINSHADEBOX]
 
-Le correctif pour CVE-2025-47110 est également disponible sous la forme d’un correctif isolé. Pour plus d’informations, consultez l’article [Base de connaissances](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50).
+Le correctif pour CVE-2025-47110 est également disponible sous la forme d’un correctif isolé. Pour plus d’informations, consultez l’article [Base de connaissances](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27181).
 
 >[!ENDSHADEBOX]

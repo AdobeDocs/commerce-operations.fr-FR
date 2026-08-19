@@ -5,9 +5,9 @@ feature: Data Import/Export
 role: Admin, Developer
 exl-id: f6bed4c4-5ea2-47e7-97fa-d7717470297f
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Le correctif ACSD-63793 corrige le problème d’interférence des processus d�
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -37,7 +37,7 @@ L’importation de données par le biais de l’interface utilisateur d’admini
 <u>Procédure à suivre </u> :
 
 1. Accédez à **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Import]**.
-1. Définissez **[!UICONTROL Entity Type]** sur *[!UICONTROL Customers and Addresses] (fichier unique)*.
+1. Définissez **[!UICONTROL Entity Type]** sur *[!UICONTROL Customers and Addresses](fichier unique)*.
 1. Définissez **[!UICONTROL Import Behavior]** sur *[!UICONTROL Add/Update]*.
 1. Sélectionnez un fichier valide à importer.
 1. Cliquez sur le bouton **[!UICONTROL Check Data]** .
@@ -59,7 +59,7 @@ Le processus d’importation est terminé et le fichier de rapport peut être t�
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

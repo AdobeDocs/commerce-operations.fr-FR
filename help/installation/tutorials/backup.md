@@ -2,7 +2,7 @@
 title: Sauvegarde et restauration du système de fichiers, du support et de la base de données
 description: Pour sauvegarder et restaurer votre application Adobe Commerce, procédez comme suit.
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Après la sauvegarde, vous pouvez [restaurer](#rollback) plus tard.
 
 >[!TIP]
 >
->Pour les projets d’infrastructure cloud d’Adobe Commerce, voir [Snapshots et gestion des sauvegardes](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) dans le guide _Cloud_.
+>Pour les projets d’infrastructure cloud d’Adobe Commerce, voir [Snapshots et gestion des sauvegardes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) dans le guide _Cloud_.
 
 ## Activer les sauvegardes
 

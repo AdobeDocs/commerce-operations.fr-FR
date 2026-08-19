@@ -3,9 +3,9 @@ title: Phase de maintenance de l’implémentation
 description: Découvrez les bonnes pratiques d’implémentation pour la phase de maintenance des projets Adobe Commerce.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '429'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ Les sections suivantes contiennent des informations relatives aux bonnes pratiqu
 
 | Bonne pratique | Description |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [&#128279;](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL) | Enregistrement Commerce &amp; Coffee qui décrit les stratégies de personnalisation. |
+| [](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL) | Enregistrement Commerce &amp; Coffee qui décrit les stratégies de personnalisation. |
 | [Tendances E-Commerce](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL) | Enregistrement Commerce &amp; Coffee qui décrit les tendances du commerce électronique. |
 | [Automatisation de l’IA](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL) | Enregistrement Commerce &amp; Coffee qui décrit les possibilités de personnalisation avec l’intelligence artificielle et l’automatisation. |
 
@@ -62,7 +62,7 @@ Les sections suivantes contiennent des informations relatives aux bonnes pratiqu
 
 | Bonne pratique | Description |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [Comment réindexer &#x200B;](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) | Utilisez les tâches cron ou l’outil d’interface de ligne de commande pour exécuter la réindexation. |
+| [Comment réindexer ](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) | Utilisez les tâches cron ou l’outil d’interface de ligne de commande pour exécuter la réindexation. |
 | [Configuration des indexeurs&#x200B;](indexer-configuration.md) | Optimisez les performances du site en suivant les bonnes pratiques pour la configuration de l’indexeur. |
 | [Traitement des commandes](order-processing-configuration.md) | Améliorez les performances de passage en caisse et de traitement des commandes. |
 
@@ -73,7 +73,7 @@ Les sections suivantes contiennent des informations relatives aux bonnes pratiqu
 | [Audit des performances frontales](frontend-performance.md) | Identifiez et résolvez les problèmes qui affectent négativement les performances du site à l’aide d’outils de performances web. |
 | [Prêt, prêt, maintenance](https://business.adobe.com/blog/basics/ready-set-maintain) | Conseils pour maintenir vos sites Adobe Commerce afin d’optimiser la valeur commerciale et la disponibilité. |
 | [Utiliser  [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Affichez des informations importantes sur votre site Adobe Commerce au même endroit. |
-| [Surveillance des performances, de l’espace disque et des journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html?lang=fr) | Utilisez New Relic pour surveiller les informations clés de performances de votre site d’infrastructure cloud Adobe Commerce. |
+| [Surveillance des performances, de l’espace disque et des journaux](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance) | Utilisez New Relic pour surveiller les informations clés de performances de votre site d’infrastructure cloud Adobe Commerce. |
 | [Réagir aux incidents de sécurité](respond-to-security-incident.md) | Utilisez New Relic pour surveiller les informations clés de performances de votre site d’infrastructure cloud Adobe Commerce. |
 
 ### Mises à niveau
@@ -82,4 +82,4 @@ Les sections suivantes contiennent des informations relatives aux bonnes pratiqu
 |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | [Correctif à grande échelle](patching-at-scale.md) | Découvrez comment les correctifs centralisés pour Adobe Commerce peuvent vous aider à gérer les projets d’entreprise. |
 | [Mettre à jour les services et composants vers la dernière version&#x200B;](update-services.md) | mettez à jour votre pile technologique Adobe Commerce on cloud infrastructure. |
-| [&#x200B; Liste de contrôle de mise à niveau pour Adobe Commerce &#x200B;](upgrade-checklist.md) | Créez et utilisez une liste de contrôle de mise à niveau pour planifier votre stratégie de mise à niveau Adobe Commerce. |
+| [ Liste de contrôle de mise à niveau pour Adobe Commerce &#x200B;](upgrade-checklist.md) | Créez et utilisez une liste de contrôle de mise à niveau pour planifier votre stratégie de mise à niveau Adobe Commerce. |
