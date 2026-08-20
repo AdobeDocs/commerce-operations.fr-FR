@@ -25,7 +25,7 @@ Le tableau ci-dessous contient des notes de mise à jour et des informations imp
 
 >[!TIP]
 >
->- Si vous découvrez Adobe Commerce, consultez les rubriques [ Architecture d’entreprise ](../../implementation-playbook/architecture/enterprise-blueprint.md) et [ À propos d’Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) pour obtenir des informations détaillées.
+>- Si vous découvrez Adobe Commerce, consultez les rubriques [&#x200B; Architecture d’entreprise &#x200B;](../../implementation-playbook/architecture/enterprise-blueprint.md) et [&#x200B; À propos d’Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) pour obtenir des informations détaillées.
 >- Pour plus d’informations sur les mises à niveau, voir [lecture recommandée](../../upgrade/resources/recommended-reading.md).
 
 <table>

@@ -35,7 +35,7 @@ Contrairement aux autres [fichiers de configuration de module](../reference/modu
 
 Au niveau supérieur de ce tableau se trouvent des _segments de configuration_. Un segment comporte du contenu arbitraire (une valeur scalaire ou un tableau imbriqué), se distinguant par une clé arbitraire, où la paire clé-valeur est définie par le framework Commerce.
 
-[](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) donne simplement accès à ces sections, mais ne vous permet pas de les étendre.
+[&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) donne simplement accès à ces sections, mais ne vous permet pas de les étendre.
 
 Au niveau de la hiérarchie suivante, les éléments de chaque segment sont triés en fonction de la définition de séquence de module, obtenue en fusionnant tous les fichiers de configuration des modules, à l’exception des modules désactivés.
 

@@ -70,7 +70,7 @@ Le **[!UICONTROL Alerts during timeframe]** affiche toutes les alertes, y compri
 
 ## [!UICONTROL CPU Usage]
 
-![Utilisation de ](../../assets/tools/cpu-usage.jpg)
+![Utilisation de &#x200B;](../../assets/tools/cpu-usage.jpg)
 
 Si la trame de **[!UICONTROL CPU Usage]** est vide, cela indique que l’application d’infrastructure de [!DNL New Relic] n’est pas activée. Si votre site est en version Starter, vous ne voyez pas ces informations. Si votre site est en version Pro, ouvrez un ticket d’assistance [support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) pour que les [!DNL New Relic Infrastructure] soient activées pour votre site.
 
@@ -88,7 +88,7 @@ Le tableau **[!UICONTROL cron_schedule]** est écrit au début et à la fin des 
 
 ## [!UICONTROL Response Code]
 
-![ code de réponse ](../../assets/tools/response-code.jpg)
+![&#x200B; code de réponse &#x200B;](../../assets/tools/response-code.jpg)
 
 La trame **[!UICONTROL Response Code]** est une bonne indication du trafic web et du code de réponse des requêtes. Il s’agit de données de transaction [!DNL New Relic's], qui sont facettisées par les `httpResponseCode` renvoyées.
 
@@ -141,7 +141,7 @@ La trame **[!UICONTROL API Calls by IP]** permet d’identifier le trafic élev�
 
 ## [!UICONTROL API Calls by IP, details by URL]
 
-![ Analyse des requêtes d’API présentant les appels regroupés par adresse IP et URL de point d’entrée](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
+![&#x200B; Analyse des requêtes d’API présentant les appels regroupés par adresse IP et URL de point d’entrée](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
 
 Le cadre de **[!UICONTROL API Calls by IP, details by URL]** fournit des détails sur le trafic élevé par rapport aux API et les détails des URL effectuant les requêtes.
 
@@ -290,7 +290,7 @@ La façon dont les processus PHP se comportent dépend de la [configuration](htt
 
 ### [!UICONTROL PHP errors]
 
-![erreurs php ](../../assets/tools/php-errors.jpg)
+![erreurs php &#x200B;](../../assets/tools/php-errors.jpg)
 
 Le cadre **[!UICONTROL PHP errors]** montre le nombre d&#39;erreurs PHP avec des programmes de travail sur la période sélectionnée. Pour plus d&#39;informations, consultez la section [Paramètres Adobe Commerce PHP](../../installation/prerequisites/php-settings.md).
 
@@ -360,7 +360,7 @@ Le cadre **[!UICONTROL Admin Activities]** identifie les transactions avec un ut
 
 ## [!UICONTROL Order transactions (default?)]
 
-![ Transactions de commande par défaut ](../../assets/tools/order-transactions-default.jpg)
+![&#x200B; Transactions de commande par défaut &#x200B;](../../assets/tools/order-transactions-default.jpg)
 
 Le cadre de **[!UICONTROL Order transactions (default?)]** recherche les transactions `request.headers.host` à partir des transactions, où le nom = `WebTransaction/Action/checkout/onepage/success`. Si l’URL de réussite de la commande est différente, ce cadre ne contient pas de données.
 
@@ -386,7 +386,7 @@ Le cadre de **[!UICONTROL Order transactions (default?)]** recherche les transac
 * « %Vous pouvez résoudre ce problème en mettant à niveau le service Elasticsearch de votre infrastructure cloud Magento vers la version % » en tant que « ver_err »
 * &#39;%cluster health status changed from \[YELLOW\] to \[RED\] (reason:%&#39; as &#39;yel_red&#39;
 * &#39;%Aucun espace restant sur l’appareil%&#39; en tant que &#39;no_space&#39;
-* &#39;% n&#39;a pas réussi à exécuter [SearchRequest{searchType=%&#39; en tant que &#39;failed_query&#39;
+* &#39;% n&#39;a pas réussi à exécuter &lbrack;SearchRequest&lbrace;searchType=%&#39; en tant que &#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 

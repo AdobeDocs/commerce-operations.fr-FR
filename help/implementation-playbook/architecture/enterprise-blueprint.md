@@ -22,7 +22,7 @@ Le diagramme d’architecture suivant illustre le flux de données entre Adobe C
 
 >[!NOTE]
 >
->Les flux de données de haut niveau présentés dans le diagramme sont cohérents entre la plupart des implémentations d’entreprise. Le composant clé qui peut rendre les implémentations uniques est la manière dont vous créez votre catalogue (en particulier pour B2B). Mappez soigneusement l’architecture de votre catalogue aux [API web de ](https://developer.adobe.com/commerce/webapi/get-started/).
+>Les flux de données de haut niveau présentés dans le diagramme sont cohérents entre la plupart des implémentations d’entreprise. Le composant clé qui peut rendre les implémentations uniques est la manière dont vous créez votre catalogue (en particulier pour B2B). Mappez soigneusement l’architecture de votre catalogue aux [API web de &#x200B;](https://developer.adobe.com/commerce/webapi/get-started/).
 
 ## Cloud Foundation
 
@@ -48,7 +48,7 @@ Adobe Commerce s’intègre à toutes les solutions Experience Cloud pour offrir
 >Consultez les ressources suivantes pour plus d’informations :
 >
 >- [Plans directeurs d’expérience digitale](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) pour plus de détails techniques.
->- Voir [ Personnaliser l’expérience client ](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
+>- Voir [&#x200B; Personnaliser l’expérience client &#x200B;](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
 
 
 ## Intégration à des systèmes tiers
@@ -62,7 +62,7 @@ Adobe fournit aux développeurs des points d’extension et des outils complets 
 Adobe fournit les outils de développement suivants pour créer des intégrations et des personnalisations :
 
 - [**Maillage API pour Adobe Developer App Builder**](https://developer.adobe.com/graphql-mesh-gateway/) : coordonnez et combinez plusieurs API, GraphQL, REST et d’autres sources en un seul point d’entrée GraphQL interrogeable.
-- [****](https://developer.adobe.com/app-builder/docs/overview/) : créez et déployez des applications web sécurisées et évolutives qui étendent les fonctionnalités de Commerce et s’intègrent à des solutions tierces.
+- [**&#128279;**](https://developer.adobe.com/app-builder/docs/overview/) : créez et déployez des applications web sécurisées et évolutives qui étendent les fonctionnalités de Commerce et s’intègrent à des solutions tierces.
 - [**Événements**](https://developer.adobe.com/commerce/extensibility/events/) : utilisez des déclencheurs d&#39;événement personnalisés pour interagir avec d&#39;autres outils de développement extensibles.
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/) : utilisez les webhooks pour déclencher automatiquement les interactions entre Commerce et les systèmes tiers.
 - [**Admin UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/) : personnalisez et améliorez l’administration Commerce avec de nouvelles pages et fonctionnalités pour vos commerçants.

@@ -38,16 +38,16 @@ Le bouton **[!UICONTROL Continue to Checkout]** est grisé même si le sous-tota
 
 1. Accédez à Admin Adobe Commerce > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Minimum Order Amount]** et définissez les éléments suivants :
    * [!UICONTROL Enable]: *[!UICONTROL Yes]*
-   * 
-     [!UICONTROL Minimum Amount]: *2*
+   * &#x200B;
+     [!UICONTROL Minimum Amount]&#x200B;: *2*
 
 1. Créez un [!UICONTROL Cart Price Rule].
    * [!UICONTROL Coupon Code]: *[!UICONTROL TEST (optional)]*
    * [!UICONTROL Conditions]: *[!UICONTROL Keep empty]*
    * [!UICONTROL Actions]:
      * [!UICONTROL Apply]: *[!UICONTROL Percent of product price discount]*
-     * 
-       [!UICONTROL Discount Amount]: *92*
+     * &#x200B;
+       [!UICONTROL Discount Amount]&#x200B;: *92*
      * [!UICONTROL Apply to Shipping Amount]: *[!UICONTROL Yes]*
 1. Créez un produit au prix de 25 $.
 1. Ajoutez le produit au panier.

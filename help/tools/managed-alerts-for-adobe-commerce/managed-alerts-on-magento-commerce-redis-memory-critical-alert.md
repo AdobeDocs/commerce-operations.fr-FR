@@ -28,7 +28,7 @@ Vous recevrez une alerte en [!DNL New Relic] si vous vous êtes inscrit aux aler
 **<u>Faites !</u>**
 
 * Abandonner tout déploiement planifié jusqu’à ce que cette alerte soit effacée.
-* Mettez immédiatement votre site en mode de maintenance s’il ne répond plus du tout. Pour connaître les étapes à suivre, reportez-vous à la section [ Activer ou désactiver le mode de maintenance ](/help/installation/tutorials/maintenance-mode.md) du Guide d’installation de Commerce. Veillez à ajouter votre adresse IP à la liste des adresses IP exemptées pour vous assurer que vous pouvez toujours accéder à votre site à des fins de dépannage. Pour connaître les étapes, reportez-vous à la section [Tenir à jour la liste des adresses IP exemptées](/help/installation/tutorials/maintenance-mode.md#maintain-the-list-of-exempt-ip-addresses) du Guide d’installation de Commerce.
+* Mettez immédiatement votre site en mode de maintenance s’il ne répond plus du tout. Pour connaître les étapes à suivre, reportez-vous à la section [&#x200B; Activer ou désactiver le mode de maintenance &#x200B;](/help/installation/tutorials/maintenance-mode.md) du Guide d’installation de Commerce. Veillez à ajouter votre adresse IP à la liste des adresses IP exemptées pour vous assurer que vous pouvez toujours accéder à votre site à des fins de dépannage. Pour connaître les étapes, reportez-vous à la section [Tenir à jour la liste des adresses IP exemptées](/help/installation/tutorials/maintenance-mode.md#maintain-the-list-of-exempt-ip-addresses) du Guide d’installation de Commerce.
 
 **<u>Non !</u>**
 

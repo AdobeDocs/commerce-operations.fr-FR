@@ -18,7 +18,7 @@ ACP2E-3158
 ACP2E-3159
 -->
 
-* Correctif pour résoudre un problème de validation de jeton web JSON (JWT) lié à CVE-2024-34102. Pour plus d’informations, consultez l’article [ Mise à jour de sécurité disponible pour Adobe Commerce-APSB24-40 ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) de la base de connaissances .
+* Correctif pour résoudre un problème de validation de jeton web JSON (JWT) lié à CVE-2024-34102. Pour plus d’informations, consultez l’article [&#x200B; Mise à jour de sécurité disponible pour Adobe Commerce-APSB24-40 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) de la base de connaissances .
 
 <!--
 AC-12486

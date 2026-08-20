@@ -203,7 +203,7 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 ### Appliquer un correctif pour CVE-2022-31160
 
-`jQuery-UI` version 1.13.1 de la bibliothèque comporte une vulnérabilité de sécurité connue (CVE-2022-31160) qui affecte plusieurs versions d’Adobe Commerce et de Magento Open Source. Cette bibliothèque est une dépendance d’Adobe Commerce et Magento Open Source 2.4.4, 2.4.5 et 2.4.6. Les commerçants exécutant les déploiements affectés doivent appliquer le correctif spécifié dans l’article de la base de connaissances [ Vulnérabilité de sécurité de l’interface utilisateur jQuery CVE-2022-31160 pour les versions 2.4.4, 2.4.5 et 2.4.6 ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176) .
+`jQuery-UI` version 1.13.1 de la bibliothèque comporte une vulnérabilité de sécurité connue (CVE-2022-31160) qui affecte plusieurs versions d’Adobe Commerce et de Magento Open Source. Cette bibliothèque est une dépendance d’Adobe Commerce et Magento Open Source 2.4.4, 2.4.5 et 2.4.6. Les commerçants exécutant les déploiements affectés doivent appliquer le correctif spécifié dans l’article de la base de connaissances [&#x200B; Vulnérabilité de sécurité de l’interface utilisateur jQuery CVE-2022-31160 pour les versions 2.4.4, 2.4.5 et 2.4.6 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176) .
 
 ## 2.4.4-p4
 
@@ -213,7 +213,7 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 ### Appliquer un correctif pour CVE-2022-31160
 
-`jQuery-UI` version 1.13.1 de la bibliothèque comporte une vulnérabilité de sécurité connue (CVE-2022-31160) qui affecte plusieurs versions d’Adobe Commerce et de Magento Open Source. Cette bibliothèque est une dépendance d’Adobe Commerce et Magento Open Source 2.4.4, 2.4.5 et 2.4.6. Les commerçants exécutant les déploiements affectés doivent appliquer le correctif spécifié dans l’article de la base de connaissances [ Vulnérabilité de sécurité de l’interface utilisateur jQuery CVE-2022-31160 pour les versions 2.4.4, 2.4.5 et 2.4.6 ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176) .
+`jQuery-UI` version 1.13.1 de la bibliothèque comporte une vulnérabilité de sécurité connue (CVE-2022-31160) qui affecte plusieurs versions d’Adobe Commerce et de Magento Open Source. Cette bibliothèque est une dépendance d’Adobe Commerce et Magento Open Source 2.4.4, 2.4.5 et 2.4.6. Les commerçants exécutant les déploiements affectés doivent appliquer le correctif spécifié dans l’article de la base de connaissances [&#x200B; Vulnérabilité de sécurité de l’interface utilisateur jQuery CVE-2022-31160 pour les versions 2.4.4, 2.4.5 et 2.4.6 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176) .
 
 ### Faits saillants
 

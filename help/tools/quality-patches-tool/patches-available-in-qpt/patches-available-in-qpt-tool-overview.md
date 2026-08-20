@@ -39,7 +39,7 @@ L’outil a pour but de vous permettre d’utiliser des correctifs en libre-serv
 
 >[!NOTE]
 >
->QPT est réservé aux correctifs de qualité uniquement. Les correctifs de sécurité sont disponibles dans les [ Notes de mise à jour d’Adobe Commerce et de Magento Open Source ](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+>QPT est réservé aux correctifs de qualité uniquement. Les correctifs de sécurité sont disponibles dans les [&#x200B; Notes de mise à jour d’Adobe Commerce et de Magento Open Source &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
 
 ## Correctifs disponibles dans le [!DNL Quality Patches Tool]
 
