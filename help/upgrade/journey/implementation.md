@@ -2,9 +2,9 @@
 title: Mise à niveau de l’implémentation
 description: Découvrez les différentes phases de la mise en œuvre de la mise à niveau pour les projets Adobe Commerce.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 3c54a3c429a3dadc826bffcb91f99a5a3a31b42c
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '857'
 ht-degree: 1%
 
 ---
@@ -29,13 +29,13 @@ Voici des éléments que vous pouvez inclure dans une analyse approfondie :
 
 - **[!DNL Upgrade Compatibility Tool]des résultats** : cet outil accélère et facilite toute mise à niveau en comparant votre code actuel au code de la version cible et en générant un rapport sur tous les problèmes à résoudre. Voir la [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Les principaux détails du rapport sont les suivants :
 
-   - Version installée actuelle
-   - Mettre à niveau la version cible
-   - Nombre et détails des erreurs critiques détectées
+  - Version installée actuelle
+  - Mettre à niveau la version cible
+  - Nombre et détails des erreurs critiques détectées
 
   >[!TIP]
   >
-  >Toutes ces informations (et d’autres encore) sont disponibles dans le tableau de bord de l’outil d’analyse à l’échelle du site [&#128279;](../../tools/site-wide-analysis-tool/dashboard.md).
+  >Toutes ces informations (et d’autres encore) sont disponibles dans le tableau de bord de l’outil d’analyse à l’échelle du site ](../../tools/site-wide-analysis-tool/dashboard.md).[
 
 - Mise à niveau des services pour la prise en charge de la version cible. Utilisez le modèle de tableau suivant pour indiquer les services à mettre à niveau. Utilisez la [configuration requise](../../installation/system-requirements.md) pour déterminer les éléments à ajouter à la colonne _Mettre à niveau vers_.
 
@@ -68,7 +68,7 @@ En outre, les partenaires peuvent participer aux [versions bêta d’](../../rel
 
 ## Développement et assurance qualité
 
-Les tests sont la phase d’une mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. Le _[Guide de test de l’application &#x200B;](https://developer.adobe.com/commerce/testing/guide/)_ fournit des détails sur la configuration et l’utilisation des outils de test de plateforme et de système pour accélérer l’assurance qualité. Utilisez un environnement d’évaluation pour tester et valider votre mise à niveau avant de passer en production.
+Les tests sont la phase d’une mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. Le _[Guide de test de l’application ](https://developer.adobe.com/commerce/testing/guide/)_ fournit des détails sur la configuration et l’utilisation des outils de test de plateforme et de système pour accélérer l’assurance qualité. Utilisez un environnement d’évaluation pour tester et valider votre mise à niveau avant de passer en production.
 
 ## UAT et préparation du lancement
 
@@ -88,4 +88,4 @@ Enfin, faites le point avec votre équipe pour déterminer les leçons apprises 
 
 Une fois votre site lancé, vérifiez vos données d’analyse, la console de recherche Google et d’autres ressources pour vous assurer qu’il n’y a aucun problème inattendu et que tout fonctionne comme prévu.
 
-Il est toujours préférable de surveiller les performances à l’aide d’outils de surveillance bien conçus. Il existe de nombreux outils et moyens de surveiller les performances de votre site. Veillez donc à en choisir un qui correspond bien à votre organisation. Nous recommandons aux clients Adobe Commerce qui utilisent notre système de gestion de l’infrastructure cloud de tirer parti de services tels que [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=fr) pour surveiller les performances du site.
+Il est toujours préférable de surveiller les performances à l’aide d’outils de surveillance bien conçus. Il existe de nombreux outils et moyens de surveiller les performances de votre site. Veillez donc à en choisir un qui correspond bien à votre organisation. Nous recommandons aux clients Adobe Commerce qui utilisent notre système de gestion de l’infrastructure cloud de tirer parti de services tels que [New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) pour surveiller les performances du site.

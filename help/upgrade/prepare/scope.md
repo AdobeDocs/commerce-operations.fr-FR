@@ -2,23 +2,23 @@
 title: Présentation de la portée de la mise à niveau
 description: Découvrez les modifications rétrocompatibles dans une version qui peuvent avoir un impact sur les modules personnalisés Adobe Commerce ou les extensions tierces.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
 
 # Présentation de la portée de la mise à niveau
 
-Consultez les [notes de mise à jour](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/overview) pour comprendre la portée d’une version, y compris les améliorations, les correctifs et les problèmes connus qui peuvent avoir un impact sur les modules tiers et personnalisés.
+Consultez les [notes de mise à jour](/help/release/release-notes/overview.md) pour comprendre la portée d’une version, y compris les améliorations, les correctifs et les problèmes connus qui peuvent avoir un impact sur les modules tiers et personnalisés.
 
 ## Modifications non rétrocompatibles
 
 Les versions d’Adobe Commerce peuvent contenir des modifications non rétrocompatibles. Consultez la documentation relative aux modifications non rétrocompatibles , consultez les éléments suivants :
 
 - **[Principales modifications mises en évidence](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)**—Modifications ayant un impact majeur et nécessitant une explication détaillée et des instructions spéciales pour s’assurer que les modules tiers continuent à fonctionner.
-- **[Référence de modification mineure](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)** : documentation de référence générée à partir de la base de code qui décrit les modifications mineures apportées aux classes, à l’appartenance à une API, à la base de données, à l’injection de dépendance, aux interfaces, aux mises en page, au système et au schéma XSD.
+- **[Référence de modification mineure](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference)** : documentation de référence générée à partir de la base de code qui décrit les modifications mineures apportées aux classes, à l’appartenance à une API, à la base de données, à l’injection de dépendance, aux interfaces, aux mises en page, au système et au schéma XSD.
 
 ## Extensions tierces
 
@@ -26,7 +26,7 @@ La nouvelle politique de compatibilité d’Adobe Commerce Marketplace garantit 
 
 ## Modules personnalisés
 
-Tous les modules personnalisés doivent être comparés à la version cible vers laquelle vous souhaitez effectuer la mise à niveau. Il s’agit du processus de mise à niveau qui nécessite le plus de temps et de ressources. Lors de l’évaluation de vos modules personnalisés, vous devez rechercher les modifications non rétrocompatibles et tenir compte des nouvelles pratiques, telles que la décomposition du contrôleur. Pour en savoir plus à ce sujet, consultez les [notes de mise à jour](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/overview). Veillez également à suivre les [bonnes pratiques](https://developer.adobe.com/commerce/php/best-practices/extensions/) en matière de développement de modules.
+Tous les modules personnalisés doivent être comparés à la version cible vers laquelle vous souhaitez effectuer la mise à niveau. Il s’agit du processus de mise à niveau qui nécessite le plus de temps et de ressources. Lors de l’évaluation de vos modules personnalisés, vous devez rechercher les modifications non rétrocompatibles et tenir compte des nouvelles pratiques, telles que la décomposition du contrôleur. Pour en savoir plus à ce sujet, consultez les [notes de mise à jour](/help/release/release-notes/overview.md). Veillez également à suivre les [bonnes pratiques](https://developer.adobe.com/commerce/php/best-practices/extensions/) en matière de développement de modules.
 
 ## [!DNL Upgrade Compatibility Tool]
 

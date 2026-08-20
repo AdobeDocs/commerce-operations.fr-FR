@@ -4,7 +4,7 @@ description: Découvrez les bonnes pratiques de configuration des blocs de conte
 role: Developer
 feature: Best Practices
 exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Lorsqu’un bloc de contenu privé contient la variable `_isScopePrivate`, il n’est pas possible de le mettre en cache. Comme le bloc privé n’est pas mis en cache, Adobe Commerce doit récupérer les mêmes données pour chaque demande du client, ce qui augmente la charge du serveur.
 
-Au lieu d’utiliser la variable `_isScopePrivate` pour le contenu privé, créez un bloc et un modèle pour afficher les données agnostiques de l’utilisateur. Ces données sont remplacées par des données spécifiques à l’utilisateur par le composant de l’interface utilisateur d’Adobe Commerce, qui gère plus efficacement les données de pré-rendu. Pour obtenir des instructions, consultez [Contenu privé](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) dans la _[!DNL Commerce PHP Extensions Guide]_.
+Au lieu d’utiliser la variable `_isScopePrivate` pour le contenu privé, créez un bloc et un modèle pour afficher les données agnostiques de l’utilisateur. Ces données sont remplacées par des données spécifiques à l’utilisateur par le composant de l’interface utilisateur d’Adobe Commerce, qui gère plus efficacement les données de pré-rendu. Pour obtenir des instructions, consultez [Contenu privé](https://developer.adobe.com/commerce/php/development/cache/page/private-content) dans la _[!DNL Commerce PHP Extensions Guide]_.
 
 ## Produits et versions concernés
 
@@ -31,4 +31,4 @@ Les sites dont les blocs de contenu privés contiennent les variables `_isScopeP
 ## Informations supplémentaires
 
 - [Contenu privé](../../../performance/configuration.md#client-side-optimization-settings)
-- [blocs pouvant être mis en cache et privés](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#cacheable-and-private-blocks) dans le _[!DNL Commerce PHP Extensions Guide]_
+- [blocs pouvant être mis en cache et privés](https://developer.adobe.com/commerce/php/development/cache/page/private-content#cacheable-and-private-blocks) dans le _[!DNL Commerce PHP Extensions Guide]_

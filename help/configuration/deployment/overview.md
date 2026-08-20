@@ -3,7 +3,7 @@ title: Présentation du déploiement
 description: Découvrez les stratégies de déploiement de l’application Commerce.
 feature: Configuration, Deploy
 exl-id: d5ed6fb3-2dd2-49df-802b-6d712ecd9ccf
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Nous utilisons les termes suivants pour décrire les systèmes impliqués dans l
 
 - **Système d&#39;évaluation**—_facultatif_. Vous pouvez éventuellement configurer un système d’évaluation à utiliser pour les tests finaux de tout le code intégré, y compris les tests d’acceptation utilisateur (UAT). Configurez un système d’évaluation de la même manière que vous configurez un système de production. À l’exception du fait que l’évaluation n’est pas votre boutique en ligne et ne traite pas les commandes des clients, elle est identique à la production.
 
-- **Système de production**—Votre boutique en ligne. Vous devez apporter ici un minimum de modifications directes à la configuration, et certainement rien qui n’ait été testé sur une instance d’évaluation. Si possible, apportez des modifications à la configuration avec les [correctifs de données](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) qui ont été testés sur une instance d’évaluation/de développement.
+- **Système de production**—Votre boutique en ligne. Vous devez apporter ici un minimum de modifications directes à la configuration, et certainement rien qui n’ait été testé sur une instance d’évaluation. Si possible, apportez des modifications à la configuration avec les [correctifs de données](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches) qui ont été testés sur une instance d’évaluation/de développement.
 
 ## Autres méthodes de déploiement
 
@@ -76,6 +76,6 @@ Nous proposons un moyen de synchroniser la configuration de vos systèmes :
 >
 >Ces nouvelles méthodes de gestion de la configuration sont facultatives. Pas besoin, mais il est fortement recommandé de les utiliser.
 
-La plupart du temps, les options de configuration que vous définissez dans la configuration partagée, spécifique au système ou sensible ne peuvent pas être modifiées dans l’administration. Cela permet de garantir la cohérence de vos paramètres sur tous les systèmes. (Vous pouvez éventuellement utiliser la commande [&#128279;](../cli/set-configuration-values.md) sans l’option `--lock` pour configurer les paramètres modifiables dans l’Administration.)`magento config:set`
+La plupart du temps, les options de configuration que vous définissez dans la configuration partagée, spécifique au système ou sensible ne peuvent pas être modifiées dans l’administration. Cela permet de garantir la cohérence de vos paramètres sur tous les systèmes. (Vous pouvez éventuellement utiliser la commande ](../cli/set-configuration-values.md) sans l’option `--lock` pour configurer les paramètres modifiables dans l’Administration.)[`magento config:set`
 
 Chaque option de configuration Commerce comporte un _chemin de configuration_ unique. Pour définir une valeur pour une option de configuration, vous pouvez utiliser une commande d’interface de ligne de commande ou une variable d’environnement pour définir la valeur de ce chemin de configuration sur un système spécifique.

@@ -4,9 +4,9 @@ description: Découvrez les bonnes pratiques d’implémentation pour la phase d
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 28ca422543728123edcaa41dedca6e3cc53536b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -46,11 +46,11 @@ Les sections suivantes contiennent des informations relatives aux bonnes pratiqu
     <td>Corrigez et évitez les cinq problèmes de configuration les plus courants pour les sites Adobe Commerce.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=fr">Mise en cache</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html">Mise en cache</a></td>
     <td>Utilisez les outils de gestion du cache pour améliorer les performances de votre site.</td>
   </tr>
   <tr>
-    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">Mise en cache de toutes les pages</a></td>
+    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content">Mise en cache de toutes les pages</a></td>
     <td>Découvrez comment utiliser les données publiques lors de l’implémentation de la mise en cache dans votre extension Adobe Commerce.</td>
   </tr>
   <tr>
@@ -76,11 +76,11 @@ Les sections suivantes contiennent des informations relatives aux bonnes pratiqu
     <td colspan="2"><em>Configuration des services</em></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=fr">Configuration rapide</a></td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration">Configuration rapide</a></td>
     <td>Configurez les services Fastly pour votre projet d’infrastructure cloud Adobe Commerce.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html?lang=fr">Configuration des canaux de notification pour New Relic</a></td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic">Configuration des canaux de notification pour New Relic</a></td>
     <td>Accédez à votre tableau de bord New Relic et analysez les données de votre projet d’infrastructure cloud Adobe Commerce.</td>
   </tr>
   <tr>

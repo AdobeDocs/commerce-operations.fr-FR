@@ -4,9 +4,9 @@ description: Découvrez comment mettre à jour votre pile technologique Adobe Co
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
-source-git-commit: 5e3289b328b51eb50354efdc1571283791175b9a
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -23,15 +23,15 @@ Adobe Commerce sur les infrastructures cloud 2.4.x et ultérieures
 
 Mettez à niveau les services et les composants utilisés par Adobe Commerce avant qu’ils n’atteignent leur date de fin de vie ou qu’ils n’en soient proches. Cela permet de respecter la conformité PCI et de réduire les vulnérabilités de sécurité.
 
-Les clients disposant de plans de démarrage peuvent se servir des mises à niveau des services. Pour plus d’informations sur la procédure à suivre, voir [Modifier la version du service](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version).
+Les clients disposant de plans de démarrage peuvent se servir des mises à niveau des services. Pour plus d’informations sur la procédure à suivre, voir [Modifier la version du service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).
 
-Les clients avec forfaits Pro ne peuvent se servir que des mises à niveau de services dans leur [environnement d’intégration](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=fr). Pour les mises à niveau des services en production, vous devez [soumettre un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) demander la mise à niveau.
+Les clients avec forfaits Pro ne peuvent se servir que des mises à niveau de services dans leur [environnement d’intégration](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242). Pour les mises à niveau des services en production, vous devez [soumettre un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) demander la mise à niveau.
 
 >[!WARNING]
 >
 >Les mises à niveau de service ne peuvent pas être envoyées à un environnement de production sans préavis de 48 heures ouvrables à l’équipe d’infrastructure d’Adobe. Cela est nécessaire afin qu’Adobe puisse s’assurer qu’un ingénieur d’assistance en infrastructure est disponible pour mettre à jour votre configuration dans le délai souhaité avec un temps d’arrêt minimal pour votre environnement de production. Adobe recommande de mettre votre site en mode de maintenance pendant la mise à niveau du service.
 
-Vous pouvez consulter la liste des versions de service et des dates de fin de vie dans le fichier suivant : [&#128279;](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
+Vous pouvez consulter la liste des versions de service et des dates de fin de vie dans le fichier suivant : [](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
 >[!NOTE]
 >
