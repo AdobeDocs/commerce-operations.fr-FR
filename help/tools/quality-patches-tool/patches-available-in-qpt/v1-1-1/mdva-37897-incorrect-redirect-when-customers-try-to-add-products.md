@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-37897 : redirection incorrecte lors de l’ajout de produits provenant de la section Récemment consultés'
-description: Le correctif MDVA-37897 résout le problème de redirection incorrecte lorsque les utilisateurs et utilisatrices tentent d’ajouter des produits avec des options du widget Récemment consultés . Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.1 est installé. L’ID du correctif est MDVA-37897. Notez que le problème est planifié pour être corrigé dans la version 2.4.4 d’Adobe Commerce.
+description: Le correctif MDVA-37897 résout le problème de redirection incorrecte lorsque les utilisateurs et utilisatrices tentent d’ajouter des produits avec des options du widget Récemment consultés . Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.1 est installé. L’ID du correctif est MDVA-37897. Notez que le problème est planifié pour être corrigé dans la version 2.4.4 d’Adobe Commerce.
 feature: Products
 role: Admin
 exl-id: d4d1d735-38e4-455e-9045-a2443ce33851
@@ -54,7 +54,7 @@ Vous êtes redirigé vers la page de liste des produits.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre type de déploiement :
 
 * Adobe Commerce on-premise : [Guide de mise à jour logicielle > Application de correctifs](/help/tools/quality-patches-tool/usage.md) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur notre infrastructure cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans notre documentation destinée aux développeurs et développeuses.
+* Adobe Commerce sur notre infrastructure cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans notre documentation destinée aux développeurs et développeuses.
 
 ## Lecture connexe
 
@@ -63,4 +63,4 @@ Pour en savoir plus sur les correctifs de qualité pour Adobe Commerce, consulte
 * Publication de l’outil [Correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!DNL Quality Patches Tool].
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr).

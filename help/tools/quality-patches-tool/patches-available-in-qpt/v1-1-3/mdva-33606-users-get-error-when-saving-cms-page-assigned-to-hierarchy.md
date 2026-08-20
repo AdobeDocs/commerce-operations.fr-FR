@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-33606 : les utilisateurs rencontrent une erreur lors de l’enregistrement de la page CMS affectée à la hiérarchie'
-description: Le correctif MDVA-33606 résout le problème où les utilisateurs obtiennent l’erreur *Violation de contrainte unique détectée* lors de l’enregistrement d’une page CMS affectée à l’arborescence. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3 est installé. L’ID du correctif est MDVA-33606. Notez que le problème a été résolu dans Adobe Commerce 2.4.3.
+description: Le correctif MDVA-33606 résout le problème où les utilisateurs obtiennent l’erreur *Violation de contrainte unique détectée* lors de l’enregistrement d’une page CMS affectée à l’arborescence. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3 est installé. L’ID du correctif est MDVA-33606. Notez que le problème a été résolu dans Adobe Commerce 2.4.3.
 feature: CMS
 role: Admin
 exl-id: 19aaa13f-7ee6-49bc-b1d9-c288dc93b951
@@ -64,7 +64,7 @@ Vous obtenez l’erreur suivante : *Violation de contrainte unique trouvée*.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

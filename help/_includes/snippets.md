@@ -21,7 +21,7 @@ Le cache Redis n’est pas pris en charge pour Adobe Commerce 2.4.9 ou pour les 
 
 >[!NOTE]
 >
->Si votre projet Commerce est déployé sur le cloud, la mise en cache complète des pages utilise [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) au lieu de Varnish. Les rubriques de cette section s’appliquent uniquement aux installations sur site.
+>Si votre projet Commerce est déployé sur le cloud, la mise en cache complète des pages utilise [Fastly](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/fastly) au lieu de Varnish. Les rubriques de cette section s’appliquent uniquement aux installations sur site.
 
 ## Prise en charge des versions du service Adobe {#supported-versions-only}
 
@@ -29,7 +29,7 @@ Le cache Redis n’est pas pris en charge pour Adobe Commerce 2.4.9 ou pour les 
 >
 >Adobe ne prend en charge que les déploiements exécutant des versions prises en charge de tous les services et dépendances. Cela s’applique :
 >
->* **Services Platform** (y compris, mais sans s’y limiter, PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ et Nginx) - les commerçants doivent conserver des versions compatibles avec leur version d’Adobe Commerce déployée. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
+>* **Services Platform** (y compris, mais sans s’y limiter, PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ et Nginx) - les commerçants doivent conserver des versions compatibles avec leur version d’Adobe Commerce déployée. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr).
 >* **Extensions des services** (y compris, mais sans s’y limiter, Live Search, Product Recommendations et Payment Services) — seule la dernière version publiée est prise en charge.
 >* **Extensions personnalisées et intégrations tierces** — Les commerçants sont chargés de s’assurer qu’elles restent sur les versions prises en charge par le fournisseur.
 >
@@ -65,7 +65,7 @@ Le cache Redis n’est pas pris en charge pour Adobe Commerce 2.4.9 ou pour les 
 
 >[!NOTE]
 >
->Après avoir installé ce correctif de sécurité, les commerçants B2B d’Adobe Commerce doivent également effectuer la mise à jour vers la dernière version du correctif de sécurité B2B compatible. Voir les notes de mise à jour [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
+>Après avoir installé ce correctif de sécurité, les commerçants B2B d’Adobe Commerce doivent également effectuer la mise à jour vers la dernière version du correctif de sécurité B2B compatible. Voir les notes de mise à jour [B2B](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/release-notes).
 
 ## Adobe Commerce uniquement {#ee-only}
 
@@ -119,7 +119,7 @@ Avant de pouvoir exécuter des indexeurs en mode parallèle, vous devez activer 
 
 >[!IMPORTANT]
 >
->Adobe ne prend pas en charge l’application de correctifs officiels fournis par Adobe à l’aide de cette méthode. Utilisez la méthode suivante à vos risques et périls. Pour appliquer les correctifs officiels, utilisez le [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} . Effectuez toujours des tests complets avant de déployer un correctif personnalisé.
+>Adobe ne prend pas en charge l’application de correctifs officiels fournis par Adobe à l’aide de cette méthode. Utilisez la méthode suivante à vos risques et périls. Pour appliquer les correctifs officiels, utilisez le [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr){target="_blank"} . Effectuez toujours des tests complets avant de déployer un correctif personnalisé.
 
 ## Rétroportages de correctif de sécurité d’octobre 2025 {#oct-2025-backports}
 
@@ -150,7 +150,7 @@ Après les récentes modifications apportées à CSP/SRI, la page de passage en 
 
 **Correctif** :
 
-Un correctif est disponible. Pour plus d’informations sur les correctifs[&#128279;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) consultez la section L’extraction échoue lorsque la minimisation et le regroupement JS sont activés dans la base de connaissances.
+Un correctif est disponible. Pour plus d’informations sur les correctifs[&#128279;](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27997) consultez la section L’extraction échoue lorsque la minimisation et le regroupement JS sont activés dans la base de connaissances.
 
 ## Valkey Redis CLI note {#valkey-redis-cli-note}
 

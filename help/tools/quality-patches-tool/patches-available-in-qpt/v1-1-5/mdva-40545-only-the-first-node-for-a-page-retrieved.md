@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40545 : seul le premier nœud d’une page est récupéré'
-description: Le correctif MDVA-40545 résout le problème où seul le premier nœud d’une page est récupéré, même s’il existe plusieurs nœuds pour la même page. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5 est installé. L’ID du correctif est MDVA-40545. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
+description: Le correctif MDVA-40545 résout le problème où seul le premier nœud d’une page est récupéré, même s’il existe plusieurs nœuds pour la même page. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5 est installé. L’ID du correctif est MDVA-40545. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
 feature: CMS, Cache
 role: Admin
 exl-id: f87344e9-5a63-4c38-af2b-1500ef053dec
@@ -55,7 +55,7 @@ Les chemins de navigation et les liens du deuxième sous-menu sont identiques à
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

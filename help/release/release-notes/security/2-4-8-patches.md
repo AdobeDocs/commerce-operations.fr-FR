@@ -132,7 +132,7 @@ Les points forts de cette version sont les suivants :
 
 >[!BEGINSHADEBOX]
 
-Les correctifs pour CVE-2025-47110 et VULN-31547 sont également disponibles en tant que correctif isolé. Pour plus d’informations, consultez l’article [Base de connaissances](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27181).
+Les correctifs pour CVE-2025-47110 et VULN-31547 sont également disponibles en tant que correctif isolé. Pour plus d’informations, consultez l’article [Base de connaissances](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27181).
 
 >[!ENDSHADEBOX]
 

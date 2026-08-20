@@ -23,9 +23,9 @@ Adobe Commerce sur les infrastructures cloud 2.4.x et ultérieures
 
 Mettez à niveau les services et les composants utilisés par Adobe Commerce avant qu’ils n’atteignent leur date de fin de vie ou qu’ils n’en soient proches. Cela permet de respecter la conformité PCI et de réduire les vulnérabilités de sécurité.
 
-Les clients disposant de plans de démarrage peuvent se servir des mises à niveau des services. Pour plus d’informations sur la procédure à suivre, voir [Modifier la version du service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).
+Les clients disposant de plans de démarrage peuvent se servir des mises à niveau des services. Pour plus d’informations sur la procédure à suivre, voir [Modifier la version du service](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).
 
-Les clients avec forfaits Pro ne peuvent se servir que des mises à niveau de services dans leur [environnement d’intégration](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242). Pour les mises à niveau des services en production, vous devez [soumettre un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) demander la mise à niveau.
+Les clients avec forfaits Pro ne peuvent se servir que des mises à niveau de services dans leur [environnement d’intégration](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27242). Pour les mises à niveau des services en production, vous devez [soumettre un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) demander la mise à niveau.
 
 >[!WARNING]
 >

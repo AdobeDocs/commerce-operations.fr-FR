@@ -43,7 +43,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> Les commerçants Adobe Commerce qui utilisent Live Search, Catalog Service ou Product Recommendations ont la possibilité d’utiliser l’indexation de prix [basée sur SaaS](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing).
+> Les commerçants Adobe Commerce qui utilisent Live Search, Catalog Service ou Product Recommendations ont la possibilité d’utiliser l’indexation de prix [basée sur SaaS](https://experienceleague.adobe.com/fr/docs/commerce/price-indexer/price-indexing).
 
 ## Afficher le statut de l’indexeur
 
@@ -273,7 +273,7 @@ Stores Feed:                                       Update by Schedule
 
 >[!INFO]
 >
->Avant de changer de mode d’indexation, définissez votre site web sur le mode [maintenance](../../installation/tutorials/maintenance-mode.md) et [désactivez les tâches cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property). Vous éviterez ainsi les verrous de base de données.
+>Avant de changer de mode d’indexation, définissez votre site web sur le mode [maintenance](../../installation/tutorials/maintenance-mode.md) et [désactivez les tâches cron](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property). Vous éviterez ainsi les verrous de base de données.
 
 Pour spécifier la configuration de l’indexeur :
 

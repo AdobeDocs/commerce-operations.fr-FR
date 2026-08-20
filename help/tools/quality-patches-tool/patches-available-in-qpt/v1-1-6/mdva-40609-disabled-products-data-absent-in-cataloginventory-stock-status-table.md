@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40609 : données de produits désactivés absentes de la table cataloginventory_stock_status'
-description: Le correctif MDVA-40609 résout le problème où les données des produits désactivés ne sont pas affichées dans la table d’index « cataloginventory_stock_status », ce qui entraîne l’affichage de quantités de produits incorrectes. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6 est installé. L’ID du correctif est MDVA-40609. Notez que le problème a été résolu dans Adobe Commerce 2.4.3.
+description: Le correctif MDVA-40609 résout le problème où les données des produits désactivés ne sont pas affichées dans la table d’index « cataloginventory_stock_status », ce qui entraîne l’affichage de quantités de produits incorrectes. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6 est installé. L’ID du correctif est MDVA-40609. Notez que le problème a été résolu dans Adobe Commerce 2.4.3.
 feature: Catalog Management, Inventory, Orders, Products
 role: Admin
 exl-id: e207ee55-b6ce-4065-bae1-2be89dcf5092
@@ -61,7 +61,7 @@ Un stock a une valeur nulle.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

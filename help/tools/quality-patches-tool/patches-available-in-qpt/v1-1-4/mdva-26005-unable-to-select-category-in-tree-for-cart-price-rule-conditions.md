@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-26005 : impossible de sélectionner une catégorie dans l’arborescence pour les conditions de règle Prix du panier.'
-description: Le correctif MDVA-26005 résout le problème en raison duquel les utilisateurs ne peuvent pas sélectionner de catégorie dans l’arborescence des catégories pour les conditions de la règle Prix du panier. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4 est installé. L’ID du correctif est MDVA-26005. Notez que le problème a été résolu dans Adobe Commerce 2.3.6.
+description: Le correctif MDVA-26005 résout le problème en raison duquel les utilisateurs ne peuvent pas sélectionner de catégorie dans l’arborescence des catégories pour les conditions de la règle Prix du panier. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4 est installé. L’ID du correctif est MDVA-26005. Notez que le problème a été résolu dans Adobe Commerce 2.3.6.
 feature: Categories, Orders, Price Rules, Shopping Cart
 role: Admin
 exl-id: 02d9eef4-89f0-48be-8bb9-c62bbdad76a5
@@ -53,7 +53,7 @@ Vous ne pouvez pas sélectionner de catégorie en raison d’une erreur JS.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

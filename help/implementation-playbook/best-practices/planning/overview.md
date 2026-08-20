@@ -46,7 +46,7 @@ Les sections suivantes contiennent des informations relatives aux bonnes pratiqu
     <td>Corrigez et évitez les cinq problèmes de configuration les plus courants pour les sites Adobe Commerce.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html">Mise en cache</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=fr">Mise en cache</a></td>
     <td>Utilisez les outils de gestion du cache pour améliorer les performances de votre site.</td>
   </tr>
   <tr>
@@ -76,7 +76,7 @@ Les sections suivantes contiennent des informations relatives aux bonnes pratiqu
     <td colspan="2"><em>Configuration des services</em></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration">Configuration rapide</a></td>
+    <td><a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration">Configuration rapide</a></td>
     <td>Configurez les services Fastly pour votre projet d’infrastructure cloud Adobe Commerce.</td>
   </tr>
   <tr>
