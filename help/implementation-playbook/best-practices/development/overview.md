@@ -4,9 +4,9 @@ description: Découvrez les bonnes pratiques de mise en œuvre pour la phase de 
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques pou
 
 | Bonne pratique | Description |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Versions et déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=fr){target="_blank"} | Décrit les bonnes pratiques pour les étapes de création et de déploiement d’Adobe Commerce sur les projets d’infrastructure cloud |
+| [Versions et déploiement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices){target="_blank"} | Décrit les bonnes pratiques pour les étapes de création et de déploiement d’Adobe Commerce sur les projets d’infrastructure cloud |
 | Débogage | Déboguer systématiquement et efficacement le framework Adobe Commerce |
 | [Déploiement de contenu statique](static-content-deployment.md) | Évitez les problèmes liés au contenu statique qui n’apparaît pas sur votre storefront |
 | [Dépannage](troubleshooting.md) | Résolution des problèmes courants d’implémentation d’Adobe Commerce |

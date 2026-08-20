@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3948c3c59a53a023edc16698fcb9ec6150cbca21
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '6818'
+source-wordcount: '6806'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ _nom_
 
 Les variables ADMIN sont des variables d’environnement de projet qui remplacent les paramètres de configuration permettant au compte utilisateur administrateur d’accéder à l’interface utilisateur d’administration.
 
-En savoir plus : [variables ADMIN](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html?lang=fr)
+En savoir plus : [variables ADMIN](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin)
 
 _Attributs de terme :_
 
@@ -136,7 +136,7 @@ Les attributs personnalisés sont un type d’attribut Entity-Attribute-Value (E
 
 Pour les intégrations telles que le canal des annonces d’achats Google et Amazon Sales Channel, vous mappez les attributs Commerce aux attributs du tiers pour afficher et vendre correctement les produits et les annonces.
 
-En savoir plus : [EAV et extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+En savoir plus : [EAV et extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes)
 
 _Attributs de terme :_
 
@@ -261,7 +261,7 @@ _nom_
 Les opérations en bloc sont des actions qui sont effectuées à grande échelle.
 Exemples de tâches d&#39;opérations en masse : importation ou exportation d&#39;articles, modification des prix en masse et affectation de produits à un entrepôt.
 
-En savoir plus : [Opérations en bloc DevDocs](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
+En savoir plus : [Opérations en bloc DevDocs](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations)
 
 _Attributs de terme :_
 
@@ -448,7 +448,7 @@ _nom_
 
 Les variables cloud sont des variables d’environnement spécifiques à Adobe Commerce sur l’infrastructure cloud et utilisent le préfixe **`MAGENTO_CLOUD`** .
 
-En savoir plus : [Variables cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=fr)
+En savoir plus : [Variables cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud)
 
 _Attributs de terme :_
 
@@ -619,7 +619,7 @@ _nom_
 
 Une clé de déploiement est la clé publique SSH de votre projet et permet un accès en lecture seule ou en lecture-écriture (si activé) à un référentiel Git.
 
-En savoir plus : [&#x200B; Connexions sécurisées &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr)
+En savoir plus : [&#x200B; Connexions sécurisées &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/secure-connections)
 
 _Attributs de terme :_
 
@@ -688,7 +688,7 @@ _nom_
 
 Ensemble de scripts et d’outils conçu pour gérer et déployer l’application Commerce. Ce package simplifie de nombreux processus Adobe Commerce sur les infrastructures cloud, notamment le déploiement dans un environnement Docker, la gestion des crons, la vérification de la configuration du projet et l’application de correctifs Adobe.
 
-En savoir plus : [package ece-tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html?lang=fr)
+En savoir plus : [package ece-tools](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/package-overview)
 
 _Attributs de terme :_
 
@@ -716,7 +716,7 @@ Stocke l’ID d’entité, le nom d’attribut et la valeur sous la forme d’un
 Dans le codage, le nombre d’attributs pouvant être utilisés pour décrire des entités peut être mis à l’échelle de manière étendue, mais le nombre qui s’applique à une entité donnée est réduit au minimum.
 Ce modèle de données est flexible, mais peut être lent.
 
-En savoir plus : [EAV et extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+En savoir plus : [EAV et extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes)
 
 _Attributs de terme :_
 
@@ -752,7 +752,7 @@ _nom_
 
 Étendez les fonctionnalités et utilisez souvent des types de données plus complexes que les attributs personnalisés. Ces attributs n’apparaissent pas sur l’interface utilisateur graphique.
 
-En savoir plus : [Ajout d’attributs d’extension à une entité](https://developer.adobe.com/commerce/php/development/components/add-attributes/)
+En savoir plus : [Ajout d’attributs d’extension à une entité](https://developer.adobe.com/commerce/php/development/components/add-attributes)
 
 _Attributs de terme :_
 
@@ -1087,7 +1087,7 @@ _nom_
 
 Le cloaking d&#39;origine est une fonctionnalité de sécurité qui permet à Adobe Commerce sur les infrastructures cloud de bloquer tout trafic non Fastly pour empêcher les attaques DDoS, vers les infrastructures cloud (origine).
 
-En savoir plus : [Fastly origin cloaking](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=fr)
+En savoir plus : [Fastly origin cloaking](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/fastly)
 
 _Attributs de terme :_
 
@@ -1391,7 +1391,7 @@ _Attributs de terme :_
 
 _nom_
 
-Un identifiant client Adobe Commerce est un identifiant unique pour votre instance Adobe Commerce spécifique dans le Adobe Experience Cloud.
+Un identifiant client Adobe Commerce est un identifiant unique pour votre instance Adobe Commerce spécifique dans Adobe Experience Cloud.
 permet d’acheminer les données et de s’assurer que les ressources ont un espace de noms correct, en particulier pour les intégrations et les API. Vous pouvez trouver l’identifiant du client
 dans les URL d’accès à votre instance Commerce ou dans les détails de l’instance Commerce Cloud Manager.
 

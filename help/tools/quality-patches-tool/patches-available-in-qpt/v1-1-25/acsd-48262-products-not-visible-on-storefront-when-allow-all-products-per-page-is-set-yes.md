@@ -5,16 +5,16 @@ feature: Admin Workspace, Cache, Categories, Orders, Products, Storefront
 role: Admin
 exl-id: 733ac476-5c3c-4cbe-88b7-f436d15f1c7d
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
 
 # ACSD-48262 : produits non visibles sur le storefront lorsque [!UICONTROL Allow All Products Per Page] est défini *[!UICONTROL Yes]*
 
-Le correctif ACSD-48262 corrige le problème où les produits ne sont pas visibles sur le storefront lorsque le paramètre [!UICONTROL Allow All Products Per Page] est défini sur *[!UICONTROL Yes]*. Ce correctif est disponible lorsque la version 1.1.25 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-48262. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-48262 corrige le problème où les produits ne sont pas visibles sur le storefront lorsque le paramètre [!UICONTROL Allow All Products Per Page] est défini sur *[!UICONTROL Yes]*. Ce correctif est disponible lorsque la version 1.1.25 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-48262. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -56,14 +56,14 @@ Le produit n’est pas visible.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 

@@ -5,16 +5,16 @@ feature: Marketing Tools, Products, Roles/Permissions
 role: Admin
 exl-id: 7131ee47-fadc-4e93-b8b2-5b2e0521ad97
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
 
 # ACSD-47179 : la suppression en masse de révisions de produits ne fonctionne pas lorsque vous êtes connecté en tant que rôle d’utilisateur limité
 
-Le correctif ACSD-47179 corrige le problème en raison duquel la suppression en masse des révisions de produits ne fonctionne pas lorsque vous êtes connecté en tant que rôle d’utilisateur limité. Ce correctif est disponible lorsque la version 1.1.23 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-47179. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-47179 corrige le problème en raison duquel la suppression en masse des révisions de produits ne fonctionne pas lorsque vous êtes connecté en tant que rôle d’utilisateur limité. Ce correctif est disponible lorsque la version 1.1.23 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-47179. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -52,20 +52,20 @@ Un administrateur disposant des autorisations suffisantes peut effectuer une sup
 
 <u>Résultats réels</u> :
 
-Vous obtenez l’erreur suivante : _Un problème est survenu. Exception générée dans support_report.log_
+Vous obtenez l’erreur suivante : _Un problème est survenu. Exception générée dans support_ report.log_
 
 ## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 

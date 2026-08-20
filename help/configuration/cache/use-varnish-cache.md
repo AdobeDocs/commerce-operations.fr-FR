@@ -20,9 +20,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: 405
+source-wordcount: 392
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ Après avoir installé et configuré le vernis pour qu’il fonctionne avec Comm
 
   Par exemple, toutes les actions effectuées dans l’Administration dans :
 
-   - **MAGASINS** > **Paramètres** > **Configuration** > GÉNÉRAL > **Général**
-   - **MAGASINS** > **Paramètres** > **Configuration** > GÉNÉRAL > **Configuration de la devise**
-   - **MAGASINS** > **Paramètres** > **Configuration** > GÉNÉRAL > **Adresses e-mail du magasin**
+  - **MAGASINS** > **Paramètres** > **Configuration** > GÉNÉRAL > **Général**
+  - **MAGASINS** > **Paramètres** > **Configuration** > GÉNÉRAL > **Configuration de la devise**
+  - **MAGASINS** > **Paramètres** > **Configuration** > GÉNÉRAL > **Adresses e-mail du magasin**
 
   Lorsque Commerce détecte une telle modification, un message s’affiche pour vous informer d’actualiser le cache.
 
@@ -61,7 +61,7 @@ Après avoir installé et configuré le vernis pour qu’il fonctionne avec Comm
 
 ## Configuration de Commerce pour purger le vernis
 
-Commerce purge les hôtes Varnish après avoir configuré les hôtes Varnish à l’aide de la commande [`magento setup:config:set`](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset).
+Commerce purge les hôtes Varnish après avoir configuré les hôtes Varnish à l’aide de la commande [`magento setup:config:set`](/help/tools/reference/commerce-on-premises.md#setupconfigset).
 
 Vous pouvez utiliser le paramètre facultatif `--http-cache-hosts` pour spécifier une liste séparée par des virgules d&#39;hôtes et de ports d&#39;écoute de vernis. Configurez tous les hôtes Varnish, que vous en ayez un ou plusieurs. (Ne séparez pas les hôtes avec un espace.)
 

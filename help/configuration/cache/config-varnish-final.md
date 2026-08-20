@@ -16,9 +16,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: 379
+source-wordcount: 380
 ht-degree: 0%
 
 ---
@@ -98,4 +98,4 @@ Vérifiez que le répertoire `<magento_root>/var/page_cache` est vide :
 
 >[!TIP]
 >
->Si vous rencontrez des erreurs 503 (échec de la récupération du serveur principal), consultez [Dépannage des erreurs 503 (service indisponible)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=fr) dans le Centre d’aide d’_Adobe Commerce_.
+>Si vous rencontrez des erreurs 503 (échec de la récupération du serveur principal), consultez [Dépannage des erreurs 503 (service indisponible)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors) dans le Centre d’aide d’_Adobe Commerce_.

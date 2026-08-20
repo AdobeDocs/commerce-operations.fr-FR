@@ -5,9 +5,9 @@ feature: Catalog Management, Search
 role: Admin, Developer
 type: Troubleshooting
 exl-id: d61c6b9e-bbcf-4285-b97b-b1fee67048e5
-source-git-commit: 515e6d1f00c910455a2ffddf70c4a450184e7e81
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ La navigation superposée affiche les options d’attribut (tailles) des produit
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

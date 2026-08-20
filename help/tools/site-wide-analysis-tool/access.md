@@ -2,9 +2,9 @@
 title: Accès [!DNL Site-Wide Analysis Tool]
 description: Découvrez comment accéder au tableau de bord de l’outil d’analyse à l’échelle du site à partir du panneau d’administration Adobe Commerce. Découvrez les autorisations utilisateur et les exigences des rôles.
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: d75d8fe87b5bf5cf5cd1d5a15371a456b82f18db
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Pour le rôle personnalisé nécessitant un accès [!DNL Site-Wide Analysis Tool
 
 >[!NOTE]
 >
->Si vous avez vérifié que le compte utilisateur dispose de l’autorisation d’accéder au [!DNL Site-Wide Analysis Tool] et que l’utilisateur ou l’utilisatrice reçoit une erreur 403 lors de la tentative d’accès à l’outil à partir du [!UICONTROL Admin] , le contrôle d’accès HTTP peut être activé pour votre instance d’Adobe Commerce sur l’infrastructure cloud. Le tableau de bord [!DNL Site-Wide Analysis Tool] n’est PAS pris en charge si vous avez activé l’authentification HTTP. Pour plus d’informations sur la résolution de ce problème, consultez notre article d’assistance [&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento).
+>Si vous avez vérifié que le compte utilisateur dispose de l’autorisation d’accéder au [!DNL Site-Wide Analysis Tool] et que l’utilisateur ou l’utilisatrice reçoit une erreur 403 lors de la tentative d’accès à l’outil à partir du [!UICONTROL Admin] , le contrôle d’accès HTTP peut être activé pour votre instance d’Adobe Commerce sur l’infrastructure cloud. Le tableau de bord [!DNL Site-Wide Analysis Tool] n’est PAS pris en charge si vous avez activé l’authentification HTTP. Pour plus d’informations sur la résolution de ce problème, consultez notre article d’assistance [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26852).
 
 ### Etape 2 : Accès aux [!DNL Site-Wide Analysis Tool]
 

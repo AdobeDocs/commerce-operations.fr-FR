@@ -4,7 +4,7 @@ description: Découvrez les bonnes pratiques pour planifier des mises à jour cr
 role: Admin, User
 feature: Best Practices
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 1%
@@ -32,6 +32,6 @@ Les actions critiques entraînent l’invalidation du cache et les opérations d
 ## Informations supplémentaires
 
 - [Bonnes pratiques de mise en cache](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
-- [Contenu privé : invalidation du contenu privé](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
+- [Contenu privé : invalidation du contenu privé](https://developer.adobe.com/commerce/php/development/cache/page/private-content#invalidate-private-content)
 - [Recommandations matérielles : caches](../../../performance/hardware.md#caches)
 - [Configuration avancée : configurer Redis](../../../performance/advanced-setup.md#set-up-redis)

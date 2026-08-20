@@ -2,9 +2,9 @@
 title: env.php référence
 description: Découvrez les valeurs et les sections de configuration du fichier env.php dans Adobe Commerce. Découvrez les paramètres d’environnement et les options de configuration.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -211,7 +211,7 @@ Liste des domaines téléchargeables disponibles dans ce nœud. D’autres domai
 ]
 ```
 
-En savoir plus sur les [domaines téléchargeables](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+En savoir plus sur les [domaines téléchargeables](/help/tools/reference/commerce-on-premises.md#downloadabledomainsadd).
 
 ## installer
 

@@ -2,7 +2,7 @@
 title: Fichiers de configuration du module
 description: Découvrez comment personnaliser des modules à l’aide de types de configuration dans Adobe Commerce. Découvrez les bonnes pratiques en matière de gestion des fichiers de configuration et de personnalisation des modules.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '2121'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Voici les termes courants utilisés dans cette rubrique :
 
 - **Étape de configuration** : les étapes sont définies comme _principale_, _globale_ et _zone_. Chaque étape détermine à quel moment le type de configuration est chargé et fusionné avec des types de configuration portant le même nom. Par exemple, les fichiers `module.xml` sont fusionnés avec d’autres fichiers `module.xml`.
 
-- **Portée de la configuration** : en complément des étapes de configuration, une portée définit le modèle de type de configuration. Par exemple, `adminhtml` est une étendue de zone qui est chargée avec à l’étape avec les configurations de `adminhtml` d’autres modules. Pour plus d’informations, voir [Modules et zones](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
+- **Portée de la configuration** : en complément des étapes de configuration, une portée définit le modèle de type de configuration. Par exemple, `adminhtml` est une étendue de zone qui est chargée avec à l’étape avec les configurations de `adminhtml` d’autres modules. Pour plus d’informations, voir [Modules et zones](https://developer.adobe.com/commerce/php/architecture/modules/areas).
 
 ## Chargement et fusion de la configuration
 
@@ -43,9 +43,9 @@ où
 - `<vendorname>` est le nom du fournisseur du composant ; par exemple, le nom du fournisseur du Commerce est `magento`.
 - `<component-type>` est l’un des éléments suivants :
 
-   - `module-` : une extension ou un module.
-   - `theme-` : thème.
-   - `language-` : package de langue.
+  - `module-` : une extension ou un module.
+  - `theme-` : thème.
+  - `language-` : package de langue.
 
 >[!INFO]
 >
@@ -81,39 +81,39 @@ Le tableau ci-dessous présente chaque type de configuration et l’objet de con
 | --- | --- | --- | --- |
 | `address_formats.xml` | Déclaration du format de l’adresse | principal, global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Address/Config.php) |
 | `acl.xml` | [&#x200B; Liste de contrôle d’accès &#x200B;](https://developer.adobe.com/commerce/webapi/get-started/authentication/#relationship-between-aclxml-and-webapixml) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Acl/AclResource/Provider.php) |
-| `analytics.xml` | [Rapports avancés](https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/) | principal, global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
+| `analytics.xml` | [Rapports avancés](https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection) | principal, global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
 | `cache.xml` | Déclaration de type de cache | principal, global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Config/Data.php) |
 | `catalog_attributes.xml` | Configuration des attributs de catalogue | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Attribute/Config/Data.php) |
 | `config.php` et `env.php` | [Configuration du déploiement](../reference/deployment-files.md) | Ces fichiers sont lisibles/inscriptibles par le processeur de configuration interne. | N’a aucun objet, ne peut pas être personnalisé |
 | `config.xml` | Configuration du système | principal, global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config.php) |
-| `communication.xml` | [Définit les aspects du système de file d’attente des messages](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#communicationxml) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/WebapiAsync/Code/Generator/Config/RemoteServiceReader/Communication.php) |
+| `communication.xml` | [Définit les aspects du système de file d’attente des messages](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration#communicationxml) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/WebapiAsync/Code/Generator/Config/RemoteServiceReader/Communication.php) |
 | `crontab.xml` | [Configure les groupes cron](../cron/custom-cron-reference.md#configure-cron-groups) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Cron/Model/Config/Data.php) |
 | `cron_groups.xml` | [Spécifie les options du groupe cron](../cron/custom-cron-reference.md) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Cron/Model/Groups/Config/Data.php) |
-| `db_schema.xml` | [Schéma déclaratif](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/Declaration/Schema/SchemaConfig.php) |
-| `di.xml` | [Injection de dépendance](https://developer.adobe.com/commerce/php/development/components/dependency-injection/) configuration | principal, global, area | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/ObjectManager/Config/Config.php) |
+| `db_schema.xml` | [Schéma déclaratif](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/Declaration/Schema/SchemaConfig.php) |
+| `di.xml` | [Injection de dépendance](https://developer.adobe.com/commerce/php/development/components/dependency-injection) configuration | principal, global, area | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/ObjectManager/Config/Config.php) |
 | `eav_attributes.xml` | Fournit la configuration des attributs EAV | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Eav/Model/Entity/Attribute/Config.php) |
 | `email_templates.xml` | Configuration des modèles d’e-mail | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Email/Model/Template/Config/Data.php) |
 | `esconfig.xml` | [Configuration des mots vides du paramètre régional du moteur de recherche](../search/search-stopwords.md#create-stopwords-for-a-new-locale) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Elasticsearch/Model/Adapter/Index/Config/EsConfig.php) |
 | `events.xml` | Configuration d’événement/observateur | global, area | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Event.php) |
 | `export.xml` | Exporter la configuration des entités | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/ImportExport/Model/Export/Config.php) |
-| `extension_attributes.xml` | [&#x200B; Attributs d’extension &#x200B;](https://developer.adobe.com/commerce/php/development/components/attributes/#extension-attributes) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/ExtensionAttribute/Config.php) |
+| `extension_attributes.xml` | [&#x200B; Attributs d’extension &#x200B;](https://developer.adobe.com/commerce/php/development/components/attributes#extension-attributes) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/ExtensionAttribute/Config.php) |
 | `fieldset.xml` | Définit des jeux de champs | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DataObject/Copy/Config/Reader.php) |
-| `indexer.xml` | [déclare les indexeurs](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer/) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Indexer/Config/Reader.php) |
+| `indexer.xml` | [déclare les indexeurs](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Indexer/Config/Reader.php) |
 | `import.xml` | Déclare les entités d&#39;import | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/ImportExport/Model/Import/Config.php) |
 | `menu.xml` | Définit les éléments de menu pour l’administrateur | adminhtml | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Backend/Model/Menu/Config/Reader.php) |
 | `module.xml` | Définit les données de configuration du module et la dépendance conditionnelle | principal, global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Module/ModuleList/Loader.php) |
-| `mview.xml` | [Configuration de MView](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer/#mview-configuration) | principal, global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Mview/Config/Data.php) |
+| `mview.xml` | [Configuration de MView](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer#mview-configuration) | principal, global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Mview/Config/Data.php) |
 | `payment.xml` | Configuration du module de paiement | principal, global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Model/Config.php) |
-| `persistent.xml` | Fichier de configuration [Magento_Persistent](https://developer.adobe.com/commerce/php/module-reference/module-persistent/) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Persistent/Helper/Data.php) |
+| `persistent.xml` | Fichier de configuration [Magento_Persistent](https://developer.adobe.com/commerce/php/module-reference/module-persistent) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Persistent/Helper/Data.php) |
 | `pdf.xml` | Paramètres de PDF | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config/Reader.php) |
 | `product_options.xml` | Fournit la configuration des options de produit | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductOptions/Config.php) |
 | `product_types.xml` | Définit le type de produit | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductTypes/Config.php) |
-| `queue_consumer.xml` | [&#x200B; Définit la relation entre une file d’attente existante et son client](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#queue_consumerxml) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/MessageQueue/Consumer/Config/Xml/Reader.php) |
-| `queue_publisher.xml` | [Définit l’échange où une rubrique est publiée.](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#queue_publisherxml) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/WebapiAsync/Code/Generator/Config/RemoteServiceReader/Publisher.php) |
-| `queue_topology.xml` | [&#x200B; Définit les règles de routage des messages, déclare les files d&#39;attente et les échanges](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#queue_topologyxml) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/MessageQueue/Topology/Config/Xml/Reader.php) |
-| `reports.xml` | [Rapports avancés](https://developer.adobe.com/commerce/php/development/advanced-reporting/report-xml/) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config.php) |
+| `queue_consumer.xml` | [&#x200B; Définit la relation entre une file d’attente existante et son client](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration#queue_consumerxml) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/MessageQueue/Consumer/Config/Xml/Reader.php) |
+| `queue_publisher.xml` | [Définit l’échange où une rubrique est publiée.](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration#queue_publisherxml) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/WebapiAsync/Code/Generator/Config/RemoteServiceReader/Publisher.php) |
+| `queue_topology.xml` | [&#x200B; Définit les règles de routage des messages, déclare les files d&#39;attente et les échanges](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration#queue_topologyxml) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/MessageQueue/Topology/Config/Xml/Reader.php) |
+| `reports.xml` | [Rapports avancés](https://developer.adobe.com/commerce/php/development/advanced-reporting/report-xml) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config.php) |
 | `resources.xml` | Définit la ressource du module | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/ResourceConnection/Config/Reader.php) |
-| `routes.xml` | Configuration [Route](https://developer.adobe.com/commerce/php/development/components/routing/) | zone | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Route/Config.php) |
+| `routes.xml` | Configuration [Route](https://developer.adobe.com/commerce/php/development/components/routing) | zone | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Route/Config.php) |
 | `sales.xml` | Définit la configuration du total des ventes | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Config/Data.php) |
 | `search_engine.xml` | Fournit la configuration du moteur de recherche | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Search/Model/SearchEngine/Config.php) |
 | `search_request.xml` | Définit la configuration de la recherche catalogue | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Search/Request/Config.php) |
@@ -121,8 +121,8 @@ Le tableau ci-dessous présente chaque type de configuration et l’objet de con
 | `system.xml` | Définit les options de la page de configuration du système | adminhtml | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config.php) |
 | `validation.xml` | Fichier de configuration de validation du module | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Validator/Factory.php) |
 | `view.xml` | Définit les valeurs de configuration de la vue Vendor_Module | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Config.php) |
-| `webapi.xml` | [Configure une API web](https://developer.adobe.com/commerce/php/development/components/web-api/services/) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Webapi/Model/Config.php) |
-| `webapi_async.xml` | [Définit les itinéraires personnalisés REST](https://developer.adobe.com/commerce/php/development/components/web-api/custom-routes/) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/WebapiAsync/Model/ServiceConfig.php) |
+| `webapi.xml` | [Configure une API web](https://developer.adobe.com/commerce/php/development/components/web-api/services) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Webapi/Model/Config.php) |
+| `webapi_async.xml` | [Définit les itinéraires personnalisés REST](https://developer.adobe.com/commerce/php/development/components/web-api/custom-routes) | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/WebapiAsync/Model/ServiceConfig.php) |
 | `widget.xml` | Définit des widgets | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Widget/Model/Config/Reader.php) |
 | `zip_codes.xml` | Définit le format du code postal de chaque pays | global | [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Directory/Model/Country/Postcode/Config/Data.php) |
 

@@ -5,16 +5,16 @@ feature: Admin Workspace, Orders
 role: Admin
 exl-id: b10653ef-c4b1-40df-8bfe-7da755db621b
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 0%
+source-wordcount: '519'
+ht-degree: 4%
 
 ---
 
 # ACSD-49179 : le rapport Commandes affiche des montants incorrects pour différents magasins
 
-Le correctif ACSD-49179 corrige le problème où le rapport des commandes affiche des montants incorrects en cas de différentes devises pour différents magasins. Ce correctif est disponible lorsque la version 1.1.28 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-49179. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-49179 corrige le problème où le rapport des commandes affiche des montants incorrects en cas de différentes devises pour différents magasins. Ce correctif est disponible lorsque la version 1.1.28 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-49179. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -40,29 +40,29 @@ L&#39;état des commandes affiche des montants incorrects en cas de devises diff
 1. Créez un site web, un magasin et une vue de magasin supplémentaires.
 1. Accédez à **[!UICONTROL Stores]** > **[!UICONTROL Config]** > **[!UICONTROL General]** > **[!UICONTROL Currency Setup]** > **[!UICONTROL Currency Options]** et définissez :
    * Configuration par défaut :
-      * Devise de base : USD
-      * Devise d’affichage par défaut : USD
-      * Devises autorisées : EUR, USD et THB (Baht thaïlandais)
+     * Devise de base : USD
+     * Devise d’affichage par défaut : USD
+     * Devises autorisées : EUR, USD et THB (Baht thaïlandais)
    * Site Internet Principal :
-      * Devise de base : EUR
-      * Devise d&#39;affichage par défaut : EUR
-      * Devises autorisées : EUR
+     * Devise de base : EUR
+     * Devise d&#39;affichage par défaut : EUR
+     * Devises autorisées : EUR
    * Nouveau site Web supplémentaire :
-      * Devise de base : THB (Baht thaïlandais)
-      * Devise d’affichage par défaut : THB (Baht thaïlandais)
-      * Devises autorisées : THB (Baht thaïlandais)
+     * Devise de base : THB (Baht thaïlandais)
+     * Devise d’affichage par défaut : THB (Baht thaïlandais)
+     * Devises autorisées : THB (Baht thaïlandais)
 1. Accédez à **[!UICONTROL Stores]** > **[!UICONTROL Currency]** > **[!UICONTROL Currency Rates]** et définissez les taux de conversion vides pour le THB (définissez les taux sur 1,0000).
 1. Créez un produit, affectez-le aux deux sites Web et passez une commande avec ce produit sur le site Web supplémentaire précédemment créé.
 1. Assurez-vous que la commande a le statut *En cours de traitement* (facturez-la).
 1. Sur le serveur principal, accédez à **[!UICONTROL Reports]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
 1. Cliquez sur l’avertissement **[!UICONTROL Yellow]** pour actualiser les statistiques.
 1. Définissez la portée du rapport sur le site web supplémentaire créé précédemment et définissez le filtre comme suit :
-   * [!UICONTROL Date Used] : [!UICONTROL Created]
-   * [!UICONTROL Period] : [!UICONTROL Day]
+   * [!UICONTROL Date Used]: [!UICONTROL Created]
+   * [!UICONTROL Period]: [!UICONTROL Day]
    * [!UICONTROL From and To] : le jour même où la commande de test a été passée
-   * [!UICONTROL Order Status] : [!UICONTROL Any]
-   * [!UICONTROL Empty rows] : [!UICONTROL No]
-   * [!UICONTROL Show Actual Values] : [!UICONTROL No]
+   * [!UICONTROL Order Status]: [!UICONTROL Any]
+   * [!UICONTROL Empty rows]: [!UICONTROL No]
+   * [!UICONTROL Show Actual Values]: [!UICONTROL No]
 
 <u>Résultats attendus</u> :
 
@@ -77,13 +77,13 @@ Le total est zéro.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 

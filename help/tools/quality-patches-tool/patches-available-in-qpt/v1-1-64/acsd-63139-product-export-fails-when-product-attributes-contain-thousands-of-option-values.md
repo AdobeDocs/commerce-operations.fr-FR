@@ -5,9 +5,9 @@ feature: Data Import/Export
 role: Admin, Developer
 exl-id: 785907dc-aa3f-49e2-bd52-c3afe4393456
 type: Troubleshooting
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ L’exportation du produit échoue lorsque les attributs du produit contiennent 
    bin/magento cron:install
    ```
 
-1. Configurez [!DNL RabbitMQ] en suivant les instructions de la section [[!DNL RabbitMQ] Conditions préalables](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/message-brokers/rabbitmq).
+1. Configurez [!DNL RabbitMQ] en suivant les instructions de la section [[!DNL RabbitMQ] Conditions préalables](/help/installation/prerequisites/rabbitmq.md).
 1. Ouvrez le fichier `php.ini`, définissez la limite de mémoire sur 4G, puis redémarrez le service PHP.
 1. Dans le panneau d’administration, accédez à **[!UICONTROL System]** > *[!UICONTROL Data Transfer]* > **[!UICONTROL Export]**.
 1. Dans la section *[!UICONTROL Export Settings]*, définissez **[!UICONTROL Entity Type]** sur *Produits*, faites défiler la page vers le bas et cliquez sur **[!UICONTROL Continue]**.
@@ -74,7 +74,7 @@ Fatal error: Allowed memory size of 4294967296 bytes exhausted (tried to allocat
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

@@ -2,9 +2,9 @@
 title: Fonctionnement des correctifs
 description: Découvrez les différents types de correctifs d’Adobe Commerce et leur fonctionnement.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Pour créer un correctif personnalisé :
 
 1. Créez un répertoire `patches/composer` dans votre projet local.
 1. Identifiez la requête de validation ou d’extraction GitHub à utiliser pour le correctif. Cet exemple utilise la validation [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede), liée au problème GitHub [#6474](https://github.com/magento/magento2/issues/6474).
-1. Ajoutez les extensions `.patch` ou `.diff` à l’URL de validation. Utilisez `.diff` pour une taille de fichier plus petite. Par exemple : [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
+1. Ajoutez les extensions `.patch` ou `.diff` à l’URL de validation. Utilisez `.diff` pour une taille de fichier plus petite. Par exemple : [&#128279;](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
 1. Enregistrez la page en tant que fichier dans le répertoire `patches/composer`. Par exemple, `github-issue-6474.diff`.
 1. Modifiez le fichier et supprimez les `app/code/<VENDOR>/<PACKAGE>` de tous les chemins d’accès afin qu’ils soient relatifs au répertoire `vendor/<VENDOR>/<PACKAGE>`.
 
@@ -98,4 +98,4 @@ Vous pouvez appliquer des correctifs à l’aide de l’une des méthodes suivan
 
 >[!NOTE]
 >
->Pour appliquer un correctif à un projet d’infrastructure cloud d’Adobe Commerce, voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide _Commerce sur le cloud_.
+>Pour appliquer un correctif à un projet d’infrastructure cloud d’Adobe Commerce, voir [Application de correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide _Commerce sur le cloud_.

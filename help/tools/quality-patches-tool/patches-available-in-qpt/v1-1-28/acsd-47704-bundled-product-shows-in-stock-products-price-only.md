@@ -5,16 +5,16 @@ feature: Admin Workspace, Customer Service, Orders, Products
 role: Admin
 exl-id: 7f05ceed-869c-4d1a-91fd-0122dc98e65e
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 0%
+source-wordcount: '645'
+ht-degree: 2%
 
 ---
 
 # ACSD-47704 : Le produit groupé affiche uniquement le prix des produits en stock
 
-Le correctif ACSD-47704 corrige le problème de mise en cache incorrecte des prix des segments clients entre les groupes de clients. Ce correctif est disponible lorsque la version 1.1.28 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-47704. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-47704 corrige le problème de mise en cache incorrecte des prix des segments clients entre les groupes de clients. Ce correctif est disponible lorsque la version 1.1.28 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-47704. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -42,17 +42,17 @@ Le prix d’un produit groupé avec la tarification dynamique activée est incor
 1. Éléments groupés :
    * Définir **[!UICONTROL Ship bundle items]** sur **[!UICONTROL Together]**
    * Sélectionner un **[!UICONTROL Add Option]**
-      * **[!UICONTROL Title]** = o1
-      * **[!UICONTROL Input type]** = **[!UICONTROL Dropdown]**
-      * Cocher la case obligatoire
-      * Ajoutez tout produit simple en stock, par exemple, Joust Duffle Bag SKU 24-MB01. Avant d&#39;ajouter le produit, notez son prix - 34 $
+     * **[!UICONTROL Title]** = o1
+     * **[!UICONTROL Input type]** = **[!UICONTROL Dropdown]**
+     * Cocher la case obligatoire
+     * Ajoutez tout produit simple en stock, par exemple, Joust Duffle Bag SKU 24-MB01. Avant d&#39;ajouter le produit, notez son prix - 34 $
    * Quantité par défaut : 1
    * Sélectionner un **[!UICONTROL Add Option]**
-      * **[!UICONTROL Option Title]** = o2
-      * **[!UICONTROL Input type]** = **[!UICONTROL Dropdown]**
-      * Cocher la case obligatoire
-      * Ajoutez tout produit simple en stock, différent du produit ajouté à l&#39;étape précédente ; par exemple - Strive Shoulder Pack 24-MB04. Avant d&#39;ajouter le produit, notez son prix - 32 $
-      * Quantité par défaut : 1
+     * **[!UICONTROL Option Title]** = o2
+     * **[!UICONTROL Input type]** = **[!UICONTROL Dropdown]**
+     * Cocher la case obligatoire
+     * Ajoutez tout produit simple en stock, différent du produit ajouté à l&#39;étape précédente ; par exemple - Strive Shoulder Pack 24-MB04. Avant d&#39;ajouter le produit, notez son prix - 32 $
+     * Quantité par défaut : 1
 1. Enregistrer le produit.
 1. Accédez à la vitrine et recherchez le produit créé lors des étapes précédentes. Notez son prix - 66 $
 (66 = 32 + 34).
@@ -77,13 +77,13 @@ Le prix du lot de produits pour lequel la tarification dynamique est activée es
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 

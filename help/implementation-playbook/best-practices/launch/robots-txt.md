@@ -1,20 +1,20 @@
 ---
-title: Bonnes pratiques de configuration des robots d’exploration web
-description: Découvrez comment transmettre des instructions sur votre site Adobe Commerce à des robots d’exploration web à l’aide de fichiers « robots.txt » et « sitemap.xml ».
+title: Bonnes pratiques relatives à la configuration des robots d'exploration web
+description: Découvrez comment transmettre des instructions sur votre site Adobe Commerce à des robots d'exploration web à l’aide de fichiers « robots.txt » et « sitemap.xml ».
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
 
 
-# Bonnes pratiques de configuration des robots d’exploration web
+# Bonnes pratiques relatives à la configuration des robots d&#39;exploration web
 
-Cet article fournit les bonnes pratiques relatives à l’utilisation des fichiers `robots.txt` et `sitemap.xml` dans Adobe Commerce, y compris la configuration et la sécurité. Ces fichiers indiquent aux robots d’exploration web (généralement des robots de moteurs de recherche) comment analyser les pages d’un site web. La configuration de ces fichiers peut améliorer les performances du site et l’optimisation du moteur de recherche.
+Cet article fournit les bonnes pratiques relatives à l’utilisation des fichiers `robots.txt` et `sitemap.xml` dans Adobe Commerce, y compris la configuration et la sécurité. Ces fichiers indiquent aux robots d&#39;exploration web (généralement des robots de moteurs de recherche) comment explorer aux pages d’un site web. La configuration de ces fichiers peut améliorer les performances du site et l’optimisation du moteur de recherche.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Un projet Adobe Commerce par défaut contient une hiérarchie qui comprend un se
 
 Suivez ces bonnes pratiques lors de la configuration des fichiers `robots.txt` et `sitemap.xml` pour les storefronts à site unique :
 
-- Assurez-vous que votre projet utilise [`ece-tools`](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package) version 2002.0.12 ou ultérieure.
+- Assurez-vous que votre projet utilise [`ece-tools`](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package) version 2002.0.12 ou ultérieure.
 - Utilisez l’application d’administration pour ajouter du contenu au fichier `robots.txt`.
 
   >[!TIP]
@@ -64,20 +64,20 @@ Suivez ces bonnes pratiques lors de la configuration des fichiers `robots.txt` e
 
 >[!INFO]
 >
->Voir [Ajouter un plan du site et des robots de moteurs de recherche](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) pour obtenir des instructions détaillées.
+>Voir [Ajouter un plan du site et des robots de moteurs de recherche](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure-store/robots-sitemap) pour obtenir des instructions détaillées.
 
 
 ### Storefronts multisites
 
-Vous pouvez configurer et exécuter plusieurs magasins avec une seule implémentation d’Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de plusieurs sites web ou magasins](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites).
+Vous pouvez configurer et exécuter plusieurs magasins avec une seule implémentation d’Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de plusieurs sites web ou magasins](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites).
 
 Les mêmes bonnes pratiques pour la configuration des fichiers `robots.txt` et `sitemap.xml` pour les [storefronts à site unique](#single-site-storefronts) s’appliquent aux storefronts multisites avec deux différences importantes :
 
 - Assurez-vous que les noms de fichier `robots.txt` et `sitemap.xml` contiennent les noms des sites correspondants. Par exemple :
-   - `domaineone_robots.txt`
-   - `domaintwo_robots.txt`
-   - `domainone_sitemap.xml`
-   - `domaintwo_sitemap.xml`
+  - `domaineone_robots.txt`
+  - `domaintwo_robots.txt`
+  - `domainone_sitemap.xml`
+  - `domaintwo_sitemap.xml`
 
 - Utilisez un fragment de code VCL Fastly personnalisé légèrement modifié pour rediriger de la racine de vos sites vers l’emplacement `pub/media` pour les deux fichiers de vos sites :
 
@@ -107,11 +107,11 @@ Pour connaître la procédure de modification du fichier `robots.txt` et de supp
 
 >[!TIP]
 >
->Si vous avez besoin d’aide, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket).
+>Si vous avez besoin d’aide, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ## Informations supplémentaires
 
-- [Présentation des sites web, des boutiques et des affichages de boutique](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [Ajout de sites web](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [Utilisez Fastly pour bloquer le trafic malveillant sur vos sites Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
-- [robots.txt renvoie une erreur 404 dans Adobe Commerce sur cloud infrastructure 2.3.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html?lang=fr)
+- [Présentation des sites web, des boutiques et des affichages de boutique](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
+- [Ajouter des sites web](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Utilisez Fastly pour bloquer le trafic malveillant sur vos sites Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
+- [robots.txt renvoie une erreur 404 dans Adobe Commerce sur cloud infrastructure 2.3.x](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26885)

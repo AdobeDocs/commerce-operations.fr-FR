@@ -5,10 +5,10 @@ feature: Shopping Cart, Price Rules
 role: Admin, Developer
 exl-id: 73979b71-9b15-4a4b-a1c9-37d3213c177f
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 0%
+source-wordcount: '467'
+ht-degree: 2%
 
 ---
 
@@ -63,8 +63,8 @@ Connectez-vous en tant qu’administrateur et accédez à **[!UICONTROL Marketin
 1. **[!UICONTROL Websites]** : *Site web principal*
 1. **[!UICONTROL Customer Groups]** : *NON CONNECTÉ, Général, Vente en gros, Retailer*
 1. **[!UICONTROL Coupon]** : *Aucun Coupon*
-1. **[!UICONTROL Uses per Customer]** : *0*
-1. **[!UICONTROL Priority]** : *1*
+1. **[!UICONTROL Uses per Customer]**: *0*
+1. **[!UICONTROL Priority]**: *1*
 
 **[!UICONTROL Conditions]:**
 
@@ -74,7 +74,7 @@ Connectez-vous en tant qu’administrateur et accédez à **[!UICONTROL Marketin
 **[!UICONTROL If total amount (incl. tax) equals or greater than 100 for a subselection of items in cart matching ALL of these conditions:]**
 
 
-**[!UICONTROL Category is]** 5 12 13 **
+**[!UICONTROL Category is]** *5,12,13*
 
 Actions :
 
@@ -103,7 +103,7 @@ Erreur *500*
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

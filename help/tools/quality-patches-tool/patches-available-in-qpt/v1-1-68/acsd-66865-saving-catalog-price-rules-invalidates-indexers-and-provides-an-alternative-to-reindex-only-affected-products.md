@@ -1,16 +1,16 @@
 ---
 title: 'ACSD-66865 : l’enregistrement d’un [!UICONTROL Catalog Price Rule] invalide les indexeurs et offre une alternative à la réindexation des produits affectés uniquement'
-description: Appliquez le correctif ACSD-66865 pour résoudre le problème Adobe Commerce où  l’enregistrement d’un [!UICONTROL Catalog Price Rules] invalide les indexeurs et fournit une alternative à la réindexation uniquement des produits affectés.
+description: Appliquez le correctif ACSD-66865 pour résoudre le problème d’Adobe Commerce où l’enregistrement d’un [!UICONTROL Catalog Price Rules] invalide les indexeurs et fournit une alternative à la réindexation des produits affectés uniquement.
 feature: Price Rules, Price Indexer
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: fe36522b99ec3fe7189d164cfca6127c9119e06e
+exl-id: 68baf176-ee6e-4ba8-8a34-8adb8d1e16fe
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66865 : l’enregistrement d’un **[!UICONTROL Catalog Price Rule]** invalide les indexeurs et offre une alternative à la réindexation des produits affectés uniquement
 
@@ -56,7 +56,7 @@ Une réindexation complète est déclenchée pour tous les indexeurs, même lors
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

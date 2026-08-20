@@ -4,13 +4,13 @@ description: Appliquez le correctif ACSD-66404 pour résoudre le problème d'Ado
 feature: System
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 42bd5934782ca65b891a36f61102083356c92e59
+exl-id: d7ad3b11-aee6-4a26-8892-369fbfe6932e
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66404 : la tâche Cron ne parvient pas à effacer les tables de journal des modifications en raison des limites de taille de transaction [!DNL Galera Cluster]
 
@@ -53,7 +53,7 @@ La tâche cron `indexer_clean_all_changelogs` effectue un nettoyage du journal d
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool]
-* Adobe Commerce sur les infrastructures cloud : [&#x200B; Mises à niveau et correctifs > Appliquer des correctifs &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [&#x200B; Mises à niveau et correctifs > Appliquer des correctifs &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

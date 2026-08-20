@@ -1,16 +1,16 @@
 ---
 title: '[!DNL ACSD-47280] : la désactivation du catalogue partagé donne des résultats de recherche de produit incorrects'
 description: Appliquez le correctif  [!DNL ACSD-47280]  corriger l’affichage des résultats de recherche corrects lorsque la fonctionnalité de catalogue partagé est désactivée.
-source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
 
 # [!DNL ACSD-47280] : la désactivation du catalogue partagé donne des résultats de recherche de produit incorrects
 
-Le correctif [!DNL ACSD-47280] corrige l’affichage des résultats de recherche corrects lorsque la fonction [!DNL shared catalog] est désactivée. Ce correctif est disponible lorsque la version 1.1.22 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. La [!DNL patch ID] est [!DNL ACSD-47280]. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
+Le correctif [!DNL ACSD-47280] corrige l’affichage des résultats de recherche corrects lorsque la fonction [!DNL shared catalog] est désactivée. Ce correctif est disponible lorsque la version 1.1.22 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. La [!DNL patch ID] est [!DNL ACSD-47280]. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -71,13 +71,13 @@ La requête [!DNL GraphQL] n’affiche aucun produit pour le deuxième site web.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 

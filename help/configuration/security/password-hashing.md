@@ -3,9 +3,9 @@ title: Hachage du mot de passe
 description: Découvrez le hachage de mot de passe dans Adobe Commerce, les algorithmes pris en charge tels qu’Argon2 et SHA256, et comment les hachages hérités sont mis à niveau sans modifier les mots de passe.
 feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -61,4 +61,4 @@ Comme Commerce stocke toutes les versions de hachage de mot de passe utilisées 
 
 ## Mise en œuvre
 
-La classe `\Magento\Framework\Encryption\Encryptor` est responsable de la génération et de la vérification du hachage du mot de passe. La commande [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) met à niveau un hachage de mot de passe client vers le dernier algorithme de hachage.
+La classe `\Magento\Framework\Encryption\Encryptor` est responsable de la génération et de la vérification du hachage du mot de passe. La commande [`bin/magento customer:hash:upgrade`](/help/tools/reference/commerce-on-premises.md#customerhashupgrade) met à niveau un hachage de mot de passe client vers le dernier algorithme de hachage.

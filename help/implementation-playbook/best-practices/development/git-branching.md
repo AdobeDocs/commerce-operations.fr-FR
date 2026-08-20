@@ -4,9 +4,9 @@ description: Découvrez les différentes stratégies d’embranchement pour la g
 feature: Best Practices
 role: Developer
 exl-id: 7d7736e8-7023-4315-9965-71866b0be5c3
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Chaque phase de développement doit comporter une branche correspondante dans Gi
 
 >[!TIP]
 >
->Les projets d’infrastructure cloud d’Adobe Commerce contiennent des branches spécifiques qui correspondent à différents environnements. Reportez-vous aux sections [Workflow de projet Pro](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=fr) et [Workflow de projet Starter](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html?lang=fr) du _Guide cloud_.
+>Les projets d’infrastructure cloud d’Adobe Commerce contiennent des branches spécifiques qui correspondent à différents environnements. Reportez-vous aux sections [Workflow de projet Pro](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow) et [Workflow de projet Starter](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow) du _Guide cloud_.
 
 ## Stratégies des branches
 

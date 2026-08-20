@@ -5,9 +5,9 @@ feature: Price Rules
 role: Admin, Developer
 exl-id: fb6dee57-281e-4165-8b70-7ff5949eb677
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ Lorsque plusieurs règles de **[!UICONTROL Fixed amount discount for whole cart]
 1. Créez deux produits au prix de 850 $ et 85 $, et définissez leurs prix spéciaux à 765 $ et 68 $, respectivement.
 1. Créez deux **[!UICONTROL Cart Price Rules]** comme suit :
    * Règle 1
-      * **[!UICONTROL Conditions]** : pour le produit de 850 $, définissez *Qté* sur *égal ou supérieur à 2*
-      * **[!UICONTROL Actions]** : Appliquer une **[!UICONTROL Fixed amount discount for whole cart]** de *$153*
+     * **[!UICONTROL Conditions]** : pour le produit de 850 $, définissez *Qté* sur *égal ou supérieur à 2*
+     * **[!UICONTROL Actions]** : Appliquer une **[!UICONTROL Fixed amount discount for whole cart]** de *$153*
    * Règle 2
-      * **[!UICONTROL Conditions]** : pour le produit à 85 $, définissez *Qté* sur *égal ou supérieur à 2*
-      * **[!UICONTROL Actions]** : Appliquer une **[!UICONTROL Fixed amount discount for whole cart]** de *$14*
+     * **[!UICONTROL Conditions]** : pour le produit à 85 $, définissez *Qté* sur *égal ou supérieur à 2*
+     * **[!UICONTROL Actions]** : Appliquer une **[!UICONTROL Fixed amount discount for whole cart]** de *$14*
 1. Ajoutez les deux produits au panier, chacun avec une quantité de 2.
 
 <u>Résultats attendus</u> :
@@ -59,7 +59,7 @@ La remise appliquée dans le panier est de 41 $.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Étapes supplémentaires requises après l’installation du correctif
 

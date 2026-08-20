@@ -4,9 +4,9 @@ description: Cet article décrit les étapes de dépannage à suivre lorsque vou
 feature: Cache, Observability, Support, Tools and External Services
 role: Admin
 exl-id: d85af2e1-090c-4ad7-a898-3a3c4a5efe3b
-source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Vous recevrez une alerte gérée en [!DNL New Relic] si vous vous êtes inscrit 
 **Faites !**
 
 * Abandonner tout déploiement planifié jusqu’à ce que cette alerte soit effacée.
-* Mettez immédiatement votre site en mode de maintenance s’il ne répond plus du tout. Pour connaître les étapes, reportez-vous à la section [Activation ou désactivation du mode de maintenance](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) dans le Guide d’installation de Commerce. Veillez à ajouter votre adresse IP à la liste des adresses IP exemptées pour vous assurer que vous pouvez toujours accéder à votre site à des fins de dépannage. Pour connaître les étapes, voir [Tenir à jour la liste des adresses IP exemptées](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses).
+* Mettez immédiatement votre site en mode de maintenance s’il ne répond plus du tout. Pour connaître les étapes, reportez-vous à la section [Activation ou désactivation du mode de maintenance](/help/installation/tutorials/maintenance-mode.md) dans le Guide d’installation de Commerce. Veillez à ajouter votre adresse IP à la liste des adresses IP exemptées pour vous assurer que vous pouvez toujours accéder à votre site à des fins de dépannage. Pour connaître les étapes, voir [Tenir à jour la liste des adresses IP exemptées](/help/installation/tutorials/maintenance-mode.md#maintain-the-list-of-exempt-ip-addresses).
 * Arrêtez tous les scripts tels que les imports qui peuvent être à l’origine de l’alerte en cas d’impact sur les performances du site.
 
 **Non !**
@@ -44,7 +44,7 @@ Vous recevrez une alerte gérée en [!DNL New Relic] si vous vous êtes inscrit 
 
 Si vous recevez une alerte critique de requêtes DML, commencez à l’étape 1. Si vous recevez une alerte d’avertissement de requêtes DML, commencez à l’étape 2.
 
-1. Vérifiez si un ticket d’assistance Adobe Commerce existe. Pour connaître les étapes à suivre, consultez notre base de connaissances [Suivre vos tickets d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case). L’assistance peut avoir reçu une alerte de seuil [!DNL New Relic], créé un ticket et commencé à travailler sur le problème. S’il n’existe aucun ticket, créez-en un. Le ticket doit contenir les informations suivantes :
+1. Vérifiez si un ticket d’assistance Adobe Commerce existe. Pour connaître les étapes à suivre, consultez notre base de connaissances [Suivre vos tickets d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case). L’assistance peut avoir reçu une alerte de seuil [!DNL New Relic], créé un ticket et commencé à travailler sur le problème. S’il n’existe aucun ticket, créez-en un. Le ticket doit contenir les informations suivantes :
    * Motif du contact : sélectionnez **[!UICONTROL New Relic MariaDB alert received]**.
    * Description de l’alerte.
    * [[!DNL New Relic] Lien de l’incident](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). Cela est inclus dans vos [alertes gérées pour Adobe Commerce](managed-alerts-for-magento-commerce.md).

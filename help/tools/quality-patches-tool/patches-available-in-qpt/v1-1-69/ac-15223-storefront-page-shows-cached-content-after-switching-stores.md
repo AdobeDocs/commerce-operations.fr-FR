@@ -4,13 +4,13 @@ description: Appliquez le correctif AC-15223 pour résoudre le problème Adobe C
 feature: Cache
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: ea3584e180acad1765f5b8105c45170725c71269
+exl-id: 22257e94-8d59-4221-bf79-1d63b5600498
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
-
 
 # AC-15223 : la page Storefront affiche le contenu mis en cache après le changement de magasin
 
@@ -53,7 +53,7 @@ Le nom de la vue du magasin n’est pas modifié dans l’en-tête tant que le c
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

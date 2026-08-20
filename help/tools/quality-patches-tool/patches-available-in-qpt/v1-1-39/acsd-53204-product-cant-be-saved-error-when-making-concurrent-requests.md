@@ -1,13 +1,13 @@
 ---
 title: 'ACSD-53204 : erreur « Impossible d’enregistrer le produit » sur les demandes simultanées d’ajout d’images à la galerie'
-description: Appliquez le correctif ACSD-53204 pour résoudre le problème Adobe Commerce où *Le produit ne peut pas être enregistré* une erreur est générée lors de requêtes simultanées pour ajouter des images à la galerie de produits à l’aide du point d’entrée rest/V1/products/&lt;sku&gt;/media.
+description: Appliquez le correctif ACSD-53204 pour résoudre le problème Adobe Commerce où *L’erreur « Le produit ne peut pas être enregistré » est générée lors de requêtes simultanées d’ajout d’images à la galerie de produits à l’aide du point d’entrée rest/V1/products/<sku>/media.
 feature: Catalog Management, Media, Products, REST
 role: Admin, Developer
 exl-id: 7fdf41e5-46ef-4505-b8ce-c330bd899fa1
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -53,13 +53,13 @@ L’erreur « *Le produit ne peut pas être enregistré* » est renvoyée de tem
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
