@@ -37,7 +37,7 @@ Le diagramme suivant montre les workflows possibles lors de l’exécution du [!
 
 Regardez cette vidéo pour en savoir plus sur le [!DNL Upgrade Compatibility Tool] :
 
->[!VIDEO](https://video.tv.adobe.com/v/341245?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/344383?captions=fre_fr&quality=12)
 
 ## Contribuez à améliorer l’[!DNL Upgrade Compatibility Tool]
 
