@@ -4,13 +4,13 @@ description: Appliquez le correctif ACSD-58108 pour résoudre le problème d’A
 feature: Orders, System
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 26009fee51fb81e2517ad09319bac1190d127564
+exl-id: 1195e1c3-575c-48d6-8a10-c300f9bbb84a
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58108 : des erreurs SQL se produisent dans l’extension du module personnalisé de la grille de commande en raison d’un nom de table de jointure manquant
 
@@ -56,7 +56,7 @@ Une erreur se produit lors de l’application de filtres dans la grille de comma
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

@@ -4,9 +4,9 @@ description: Cet article décrit les étapes de dépannage à suivre lorsque vou
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
 exl-id: 0910a431-bf2c-469e-81e2-92c8d9be3249
-source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Vous recevrez une alerte en [!DNL New Relic] si vous vous êtes inscrit aux aler
 <u>**Do!**</u> :
 
 * Il est recommandé d’abandonner tout déploiement planifié jusqu’à ce que cette alerte soit effacée.
-* Mettez immédiatement votre site en mode de maintenance s’il ne répond plus du tout. Pour connaître les étapes, reportez-vous à la section [Activation ou désactivation du mode de maintenance](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) dans le Guide d’installation de Commerce. Veillez à ajouter votre adresse IP à la liste des adresses IP exemptées pour vous assurer que vous pouvez toujours accéder à votre site à des fins de dépannage. Pour connaître les étapes, reportez-vous à la section [Tenir à jour la liste des adresses IP exemptées](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses) du Guide d’installation de Commerce.
+* Mettez immédiatement votre site en mode de maintenance s’il ne répond plus du tout. Pour connaître les étapes, reportez-vous à la section [Activation ou désactivation du mode de maintenance](/help/installation/tutorials/maintenance-mode.md) dans le Guide d’installation de Commerce. Veillez à ajouter votre adresse IP à la liste des adresses IP exemptées pour vous assurer que vous pouvez toujours accéder à votre site à des fins de dépannage. Pour connaître les étapes, reportez-vous à la section [Tenir à jour la liste des adresses IP exemptées](/help/installation/tutorials/maintenance-mode.md#maintain-the-list-of-exempt-ip-addresses) du Guide d’installation de Commerce.
 
 <u>**Ne fais pas ça !**</u> :
 
@@ -54,6 +54,6 @@ Pour identifier et résoudre les problèmes, procédez comme suit.
 
 1. Si vous ne pouvez pas identifier la cause de l’augmentation de la consommation de mémoire, passez en revue les tendances récentes pour identifier les problèmes liés aux récents déploiements de code ou aux modifications de configuration (par exemple, nouveaux groupes de clients et modifications importantes du catalogue). Il est recommandé de passer en revue les sept derniers jours d’activité pour toutes les corrélations dans les déploiements ou modifications de code.
 
-1. Si les méthodes ci-dessus ne vous aident pas à trouver la cause et/ou la solution dans un délai raisonnable, demandez un upsize ou placez le site en mode de maintenance si vous ne l&#39;avez pas déjà fait. Pour connaître les étapes, reportez-vous aux sections [Comment demander un redimensionnement temporaire](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize) dans la base de connaissances de la prise en charge de Commerce et [Activer ou désactiver le mode de maintenance](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) dans le guide d’installation de Commerce.
+1. Si les méthodes ci-dessus ne vous aident pas à trouver la cause et/ou la solution dans un délai raisonnable, demandez un upsize ou placez le site en mode de maintenance si vous ne l&#39;avez pas déjà fait. Pour connaître les étapes, reportez-vous aux sections [Comment demander un redimensionnement temporaire](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize) dans la base de connaissances de la prise en charge de Commerce et [Activer ou désactiver le mode de maintenance](/help/installation/tutorials/maintenance-mode.md) dans le guide d’installation de Commerce.
 
-1. Si la mise à niveau revient au fonctionnement normal du site, envisagez de demander une mise à niveau permanente (contactez l’équipe de votre compte Adobe) ou essayez de reproduire le problème dans votre évaluation dédiée en exécutant un test de charge et en optimisant les requêtes, ou un code qui réduit la pression sur les services. Reportez-vous à la section [Tests de charge et de contrainte](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/test/staging-and-production#load-and-stress-testing) du guide Commerce sur le cloud .
+1. Si la mise à niveau revient au fonctionnement normal du site, envisagez de demander une mise à niveau permanente (contactez l’équipe de votre compte Adobe) ou essayez de reproduire le problème dans votre évaluation dédiée en exécutant un test de charge et en optimisant les requêtes, ou un code qui réduit la pression sur les services. Reportez-vous à la section [Tests de charge et de contrainte](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/test/staging-and-production#load-and-stress-testing) du guide Commerce sur le cloud .

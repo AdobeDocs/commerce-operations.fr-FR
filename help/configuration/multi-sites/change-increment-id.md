@@ -2,9 +2,9 @@
 title: Modifier l’ID d’incrément
 description: Découvrez comment modifier les identifiants d’incrément pour les commandes, les factures, les avoirs et d’autres entités de base de données Commerce à l’aide de SQL lors de la fusion ou de la restauration de sites.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Vous devrez peut-être modifier l’ID d’incrément pour les nouvelles entité
 
 >[!INFO]
 >
->Vous pouvez également résoudre le problème de passerelle de paiement pour PayPal en autorisant plusieurs paiements par ID de facture dans les Préférences de réception des paiements de PayPal. Voir [Demande rejetée de la passerelle PayPal - Émission de facture en double](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=fr) dans la _Base de connaissances_.
+>Vous pouvez également résoudre le problème de passerelle de paiement pour PayPal en autorisant plusieurs paiements par ID de facture dans les Préférences de réception des paiements de PayPal. Voir [Demande rejetée de la passerelle PayPal - Émission de facture en double](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26838) dans la _Base de connaissances_.
 
 ## Étapes préalables
 

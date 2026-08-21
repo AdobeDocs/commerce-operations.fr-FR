@@ -5,16 +5,16 @@ feature: Products
 role: Developer
 exl-id: 38b9490a-c9d4-4f8e-b90f-69bf50a6b571
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
 # ACSD-46703 : le glisser-déposer de la personnalisation du produit ne fonctionne pas
 
-Le correctif ACSD-46703 corrige le problème en raison duquel les options personnalisables du produit (glisser-déposer) ne fonctionnent pas comme prévu. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) version 1.1.20 est installé. L’ID du correctif est ACSD-46703. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-46703 corrige le problème en raison duquel les options personnalisables du produit (glisser-déposer) ne fonctionnent pas comme prévu. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) version 1.1.20 est installé. L’ID du correctif est ACSD-46703. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -55,7 +55,7 @@ Vous ne pouvez déplacer aucune valeur vers une autre page à l’aide de la fon
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [Outils de correctifs de qualité > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de l’outil de correctifs de qualité.
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

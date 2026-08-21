@@ -5,16 +5,16 @@ feature: Attributes, Cache, Catalog Management, Categories
 role: Developer
 exl-id: c66a7e04-fd2a-47be-8f7a-7982780a5414
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
 
 # ACSD-51497 : impossible de trier la page du catalogue par attribut personnalisé de type *Liste déroulante*
 
-Le correctif ACSD-51497 corrige le problème en raison duquel un client ne peut pas trier une page de catalogue en fonction d’un attribut personnalisé du type *Liste déroulante*. Ce correctif est disponible lorsque la version 1.1.33 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-51497. Notez que le problème a été résolu dans Adobe Commerce 2.4.7.
+Le correctif ACSD-51497 corrige le problème en raison duquel un client ne peut pas trier une page de catalogue en fonction d’un attribut personnalisé du type *Liste déroulante*. Ce correctif est disponible lorsque la version 1.1.33 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-51497. Notez que le problème a été résolu dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -42,19 +42,19 @@ Un client ne peut pas trier une page de catalogue en fonction d’un attribut pe
    * Accédez à **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Attributes]** > **[!UICONTROL Add New Attribute]**.
    * Dans l’onglet **[!UICONTROL Properties]** , définissez les éléments suivants :
 
-      * *[!UICONTROL Default Label]* = *test*
-      * *[!UICONTROL Catalog Input Type]* pour Propriétaire de la boutique = *Liste déroulante*
-      * *[!UICONTROL Options]* :
+     * *[!UICONTROL Default Label]* = *test*
+     * *[!UICONTROL Catalog Input Type]* pour Propriétaire de la boutique = *Liste déroulante*
+     * *[!UICONTROL Options]*:
 
-         * *premier*
-         * *seconde*
-         * *troisième*
-         * *quatrième*
+       * *premier*
+       * *seconde*
+       * *troisième*
+       * *quatrième*
 
    * Dans l’onglet **[!UICONTROL Storefront Properties]** , définissez les éléments suivants :
 
-      * *[!UICONTROL Used for sorting in product listing]* = *Oui*
-      * Laissez toutes les autres options sur *Par défaut*.
+     * *[!UICONTROL Used for sorting in product listing]* = *Oui*
+     * Laissez toutes les autres options sur *Par défaut*.
 
 1. Attribuez l’attribut *test* à l’attribut *Default* défini dans **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Attributes]** > **[!UICONTROL Attribute Set]**.
 1. Configurez les produits pour qu’ils aient des valeurs d’attribut *test*.
@@ -83,13 +83,13 @@ Les produits ne sont pas triés par l’attribut *test*.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 

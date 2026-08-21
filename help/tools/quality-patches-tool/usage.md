@@ -4,9 +4,9 @@ description: Découvrez comment utiliser l’outil de correctifs de la qualité 
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '940'
 ht-degree: 0%
 
 ---
@@ -62,18 +62,18 @@ Adobe Commerce 2.3.5.
 Le tableau de statut comprend les éléments suivants :
 
 - **Type** :
-   - `Optional` — Tous les correctifs du [!DNL Quality Patches Tool] et du package [Guide de Commerce sur les infrastructures cloud > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) sont facultatifs pour les installations Adobe Commerce.
-   - `Deprecated` — Adobe a rendu obsolète le correctif individuel. Si vous avez appliqué le correctif, nous vous recommandons de le rétablir. L’opération de rétablissement supprime également le correctif de la table des statuts.
+  - `Optional` — Tous les correctifs du [!DNL Quality Patches Tool] et du package [Guide de Commerce sur les infrastructures cloud > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) sont facultatifs pour les installations Adobe Commerce.
+  - `Deprecated` — Adobe a rendu obsolète le correctif individuel. Si vous avez appliqué le correctif, nous vous recommandons de le rétablir. L’opération de rétablissement supprime également le correctif de la table des statuts.
 
 - **Statut** :
-   - `Applied` — Le correctif a été appliqué.
-   - `Not applied` — Le correctif n&#39;a pas été appliqué.
-   - `N/A` — Impossible de définir l&#39;état du correctif en raison de conflits.
+  - `Applied` — Le correctif a été appliqué.
+  - `Not applied` — Le correctif n&#39;a pas été appliqué.
+  - `N/A` — Impossible de définir l&#39;état du correctif en raison de conflits.
 
 - **Détails** :
-   - `Affected components` — Liste des modules concernés.
-   - `Required patches` : liste des patchs à appliquer pour qu&#39;un patch indiqué fonctionne correctement (dépendances).
-   - `Recommended replacement` — Correctif qui est un remplacement recommandé pour un correctif obsolète.
+  - `Affected components` — Liste des modules concernés.
+  - `Required patches` : liste des patchs à appliquer pour qu&#39;un patch indiqué fonctionne correctement (dépendances).
+  - `Recommended replacement` — Correctif qui est un remplacement recommandé pour un correctif obsolète.
 
 >[!INFO]
 >

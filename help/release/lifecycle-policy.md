@@ -3,10 +3,10 @@ title: Politique relative au cycle de vie des logiciels
 description: Découvrez les dates clés de fin de prise en charge logicielle des versions d’Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-last-update: 2026-08-17T00:00:00Z
-source-git-commit: 7ba189685721799de047bc8d0e7108fa512f7120
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1353'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Adobe ne fournit pas de correctifs de sécurité et de qualité pour les service
 
 Période d’assistance standard de trois ans à compter de la date de disponibilité générale (GA). La prise en charge standard inclut des correctifs de qualité, des correctifs de sécurité et une prise en charge complète d’Adobe Commerce sur appel.
 
-- **Correctifs de qualité** - Les clients peuvent accéder aux correctifs de qualité en contactant le [support d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) ou par l’intermédiaire du [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) en libre-service.
+- **Correctifs de qualité** - Les clients peuvent accéder aux correctifs de qualité en contactant le [support d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) ou par l’intermédiaire du [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) en libre-service.
 
 - **Correctifs de sécurité** - Adobe fournit des correctifs de sécurité par le biais de correctifs de sécurité cumulatifs et de fichiers de correctifs de sécurité non cumulatifs [isolés](versioning-policy.md#isolated-security-patch-file) pendant la période de prise en charge de trois ans.
 

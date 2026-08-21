@@ -2,7 +2,7 @@
 title: Dictionnaires de traduction et packages de langue
 description: Découvrez comment générer des dictionnaires de traduction et créer des packages de langue pour Adobe Commerce. Découvrez la localisation et la configuration de la boutique multilingue.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
@@ -117,7 +117,7 @@ Les packages de langue se trouvent dans un répertoire sous `app/i18n/<VendorNam
 
 - Fichiers de licence requis
 - `composer.json`
-- `registration.php` qui [enregistre](https://developer.adobe.com/commerce/php/development/build/component-registration/) le package de langue
+- `registration.php` qui [enregistre](https://developer.adobe.com/commerce/php/development/build/component-registration) le package de langue
 - [`language.xml`](#language-package-languagexml) le fichier de méta-informations
 
 >[!INFO]
@@ -131,8 +131,8 @@ Pour créer ces fichiers :
    Par exemple, les packages de langue Commerce se trouvent dans `app/i18n/magento`
 
 1. Ajoutez les fichiers de licence requis.
-1. Ajoutez des [`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration/) qui spécifient les dépendances de votre package de langue.
-1. Enregistrez le package de langue avec [`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration/)
+1. Ajoutez des [`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration) qui spécifient les dépendances de votre package de langue.
+1. Enregistrez le package de langue avec [`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration)
 1. Ajoutez `language.xml` fichier de méta-informations comme décrit dans la section suivante.
 
 #### Package de langue language.xml

@@ -5,16 +5,16 @@ feature: GraphQL, B2B, Products
 role: Admin, Developer
 exl-id: 573d33bc-c7b6-49ce-9ad1-926548f4c952
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
 # ACSD-55381 : résolution d&#39;une erreur lors de la demande d&#39;UID d&#39;option de produit configurable depuis la liste de demandes B2B
 
-Le correctif ACSD-55381 corrige le problème où une erreur de serveur interne se produit lors des requêtes GraphQL pour les champs `configurable_product_option_uid` et `configurable_product_option_value_uid` d’une liste de demandes B2B. Ce correctif est disponible lorsque la version 1.1.42 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-55381. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-55381 corrige le problème où une erreur de serveur interne se produit lors des requêtes GraphQL pour les champs `configurable_product_option_uid` et `configurable_product_option_value_uid` d’une liste de demandes B2B. Ce correctif est disponible lorsque la version 1.1.42 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-55381. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -114,13 +114,13 @@ Une erreur se produit.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 

@@ -2,7 +2,7 @@
 title: Gestion des extensions tierces
 description: Pour installer, activer, mettre à niveau et désinstaller des extensions Adobe Commerce, procédez comme suit.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Les extensions incluent :
 - Thèmes (modifier l’aspect de votre storefront et de votre administrateur)
 - Packages de langue (localiser le storefront et l’administrateur)
 
-Cette rubrique explique comment utiliser l’interface de ligne de commande pour gérer les extensions tierces que vous achetez auprès de Commerce Marketplace pour les projets _On-premise_. Pour les projets d’infrastructure cloud, voir [Gestion des extensions](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+Cette rubrique explique comment utiliser l’interface de ligne de commande pour gérer les extensions tierces que vous achetez auprès de Commerce Marketplace pour les projets _On-premise_. Pour les projets d’infrastructure cloud, voir [Gestion des extensions](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure-store/extensions).
 
 Vous pouvez utiliser la même procédure pour installer l’extension _any_ ; tout ce dont vous avez besoin est le nom et la version du compositeur de l’extension. Pour le trouver, ouvrez le fichier `composer.json` de l’extension et notez les valeurs de `"name"` et `"version"`.
 

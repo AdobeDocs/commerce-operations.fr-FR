@@ -2,7 +2,7 @@
 title: Configuration avancée
 description: Découvrez comment effectuer une configuration avancée pour Adobe Commerce. Découvrez les instructions détaillées et les exigences de configuration.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Par exemple, si vous exécutez un profil similaire à B2B Medium, vous pouvez re
 
 Un grand nombre de SKU de produit, de sites web, de groupes de clients ou de catalogues partagés aura un impact sur le temps d’exécution des indexeurs de prix de produit et de règles de catalogue. En effet, par défaut, tous les sites web sont affectés à tous les groupes de clients (catalogues partagés).
 
-Pour réduire le temps d’indexation, vous pouvez [exclure certains sites web des groupes de clients (catalogues partagés)](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
+Pour réduire le temps d’indexation, vous pouvez [exclure certains sites web des groupes de clients (catalogues partagés)](https://developer.adobe.com/commerce/php/development/components/indexing/optimization#customer-group-limitations-by-websites).
 
 ## Configuration de Redis
 
@@ -92,7 +92,7 @@ bin/magento setup:db-schema:add-slave
 
 Cette commande effectue des modifications de configuration, mais ne configure pas la réplication elle-même. Cela doit être fait manuellement.
 
-Après avoir fractionné votre base de données principale et défini des bases de données esclaves, [!DNL Commerce] règle automatiquement les connexions à une base de données spécifique, en prenant des décisions en fonction du type de requête (POST, PUT, GET, etc.) et de la ressource de données. Si [!DNL Commerce] ou ses extensions effectuent des opérations d’écriture sur une requête GET, le système bascule automatiquement la connexion de la base de données esclave vers la base de données maître. Le fonctionnement est le même avec les bases de données principales : dès que vous utilisez une table liée au passage en caisse, le système redirige toutes les requêtes vers une base de données spécifique. Pendant ce temps, toutes les requêtes liées au catalogue sont dirigées vers la base de données principale.
+Après avoir divisé votre base de données principale et défini des bases de données esclaves, [!DNL Commerce] règle automatiquement les connexions à une base de données spécifique, en prenant des décisions basées sur le type de requête (POST, PUT, GET, etc.) et la ressource de données. Si [!DNL Commerce] ou ses extensions effectuent des opérations d&#39;écriture sur une requête GET, le système bascule automatiquement la connexion de la base de données esclave vers la base de données maître. Le fonctionnement est le même avec les bases de données principales : dès que vous utilisez une table liée au passage en caisse, le système redirige toutes les requêtes vers une base de données spécifique. Pendant ce temps, toutes les requêtes liées au catalogue sont dirigées vers la base de données principale.
 
 Pour plus d’informations sur la configuration et les avantages d’une configuration maître/esclave multiple, voir
 [Solution de performances de base de données partagée](../configuration/storage/multi-master.md).
