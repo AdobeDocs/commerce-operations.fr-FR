@@ -2,9 +2,9 @@
 title: Guide de dépannage d’[!DNL Cloud Automation Patching Service (CAPS)]
 description: Résolution des problèmes courants et des messages d’erreur dans  [!DNL Cloud Automation Patching Service (CAPS)]
 hide: true
-source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ Si l’option 1 ne résout pas votre problème, passez à l’option 2.
 
 **Cause :** un problème temporaire a empêché [!DNL CAPS] de se connecter à GitHub
 
-**Solution :** patientez quelques minutes et recommencez l’opération. Si l’erreur persiste, contactez l’[assistance d’Adobe Commerce Cloud](https://experienceleague.adobe.com/home?lang=fr#support)
+**Solution :** patientez quelques minutes et recommencez l’opération. Si l’erreur persiste, contactez l’[assistance d’Adobe Commerce Cloud](https://experienceleague.adobe.com/home#support)
 
 #### « Environnement non créé pendant la temporisation » (projet connecté à GitHub)
 
@@ -180,7 +180,7 @@ Si l’option 1 ne résout pas votre problème, passez à l’option 2.
 
 **Cause :** l’option `fetch-branches` est désactivée pour l’intégration GitHub du projet, de sorte que les branches temporaires [!DNL CAPS] les notifications push ne sont pas synchronisées et que l’environnement d’intégration n’est jamais créé.
 
-**Solution :** activez l’option [`fetch-branches` de l’intégration](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) puis relancez l’opération. Voir [&#x200B; Configuration de l’intégration GitHub pour  [!DNL CAPS]](github-integration.md).
+**Solution :** activez l’option [`fetch-branches` de l’intégration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) puis relancez l’opération. Voir [ Configuration de l’intégration GitHub pour  [!DNL CAPS]](github-integration.md).
 
 ### Erreurs de ressource et de quota
 
@@ -243,8 +243,8 @@ Pour obtenir des informations techniques plus détaillées :
 
 ### Rubriques connexes
 
-* [Documentation Adobe Commerce Cloud](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/overview)
-* [Guide d’installation d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/overview)
+* [Documentation Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+* [Guide d’installation d’Adobe Commerce](/help/installation/overview.md)
 * [Présentation de CAPS](intro.md)
 * [Accès](access.md)
 * [Présentation des workflows](workflow.md)

@@ -4,9 +4,9 @@ description: Découvrez les bonnes pratiques de configuration des sites, des bou
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -41,5 +41,5 @@ Les sites web et les magasins sont des multiplicateurs pour les données de cata
 
 ## Informations supplémentaires
 
-- [Présentation des sites web, des boutiques et des affichages de boutique](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [Configurer plusieurs sites web ou magasins](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [Présentation des sites web, des boutiques et des affichages de boutique](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
+- [Configurer plusieurs sites web ou magasins](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)

@@ -4,7 +4,7 @@ description: Découvrez les recommandations relatives à la configuration des li
 role: Developer
 feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 0%
@@ -100,7 +100,7 @@ Supprimer les jeux d’attributs de produit inutilisés à l’aide de MySQL.
 
 #### Vérifier la configuration du jeu d’attributs
 
-1. [Connexion à la base de données du site](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
+1. [Connexion à la base de données du site](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database).
 
 1. Rechercher le nombre de jeux d’attributs à l’aide de MySQL
 
@@ -179,7 +179,7 @@ L’affichage d’un trop grand nombre de produits par page peut affecter les pe
 
 Si une catégorie contient trop de produits, mettez à jour la configuration du catalogue storefront pour désactiver l’option **Autoriser tous les produits par page**.
 
-Après avoir désactivé cette option, Adobe Commerce utilise les contrôles de pagination du storefront de la liste de produits pour gérer le nombre de produits qui s’affichent dans les composants du storefront. Pour obtenir des instructions, voir [Configurer les contrôles de pagination](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=fr#configure-the-pagination-controls).
+Après avoir désactivé cette option, Adobe Commerce utilise les contrôles de pagination du storefront de la liste de produits pour gérer le nombre de produits qui s’affichent dans les composants du storefront. Pour obtenir des instructions, voir [Configurer les contrôles de pagination](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
 ## Limites SKU du produit
 
@@ -197,12 +197,12 @@ La configuration d’un trop grand nombre de SKU de produit peut affecter les pe
 Utilisez les stratégies suivantes pour réduire le nombre de produits (SKU) :
 
 - Minimiser les multiplicateurs -
-   - La consolidation des sites web réduit le multiplicateur.
-   - Utilisez d’autres fonctionnalités de produit pour la tarification personnalisée afin de remplacer les multiplicateurs de catalogue partagé et de groupes de clients.
-   - Les groupes de clients et les catalogues partagés servent de multiplicateurs pour le nombre de SKU en vigueur dans un magasin.
+  - La consolidation des sites web réduit le multiplicateur.
+  - Utilisez d’autres fonctionnalités de produit pour la tarification personnalisée afin de remplacer les multiplicateurs de catalogue partagé et de groupes de clients.
+  - Les groupes de clients et les catalogues partagés servent de multiplicateurs pour le nombre de SKU en vigueur dans un magasin.
 - Restructurez le catalogue...
-   - Réduisez le nombre de produits affectés aux catégories.
-   - Réduisez le nombre de SKU en diminuant le nombre de sites web, de groupes de clients, de catalogues partagés, de produits ou d’options de produit configurables
+  - Réduisez le nombre de produits affectés aux catégories.
+  - Réduisez le nombre de SKU en diminuant le nombre de sites web, de groupes de clients, de catalogues partagés, de produits ou d’options de produit configurables
 - Fournissez d’autres variations de produit en utilisant des options personnalisées au lieu de créer des produits distincts.
 - En tenant compte du fait qu’un SKU effectif pourrait inclure un certain nombre de permutations potentielles des prix, car les prix peuvent être spécifiés différemment par chaque magasin ou groupe de clients.
 - Désactivez ou supprimez les composants système inutilisés, tels que les modules. Voir [Désinstaller les modules](../../../installation/tutorials/uninstall-modules.md).
@@ -241,11 +241,11 @@ Le dépassement du nombre recommandé de variations de produit peut affecter les
 Suivez ces bonnes pratiques pour configurer les ventes et les promotions pour les articles d’un panier :
 
 - **Règles de vente (règles de prix de panier)**
-   - Gérez et supprimez les règles inutilisées.
-   - Ajoutez des conditions de règle strictes (comme un filtre d’attribut ou de catégorie) pour une correspondance plus efficace.
+  - Gérez et supprimez les règles inutilisées.
+  - Ajoutez des conditions de règle strictes (comme un filtre d’attribut ou de catégorie) pour une correspondance plus efficace.
 - **Coupons**
-   - Supprimez les coupons inutilisés et expirés.
-   - Générer uniquement le nombre de coupons nécessaires pour répondre aux besoins de la campagne.
+  - Supprimez les coupons inutilisés et expirés.
+  - Générer uniquement le nombre de coupons nécessaires pour répondre aux besoins de la campagne.
 
 ### Produits et versions concernés
 

@@ -4,7 +4,7 @@ description: Découvrez comment résoudre les problèmes de base de données qui
 role: Developer, Admin
 feature: Best Practices
 exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Vous pouvez utiliser MySQL pour identifier et résoudre les requêtes à long te
 Si votre projet Adobe Commerce est déployé sur une architecture Pro, vous pouvez utiliser la boîte à outils Percona pour analyser les requêtes.
 
 1. Exécutez la commande `pt-query-digest --type=slowlog` sur les journaux de requêtes lentes MySQL.
-   * Pour trouver l’emplacement des journaux de requêtes lentes, voir **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs) dans notre documentation destinée aux développeurs.
+   * Pour trouver l’emplacement des journaux de requêtes lentes, voir **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#service-logs) dans notre documentation destinée aux développeurs.
    * Consultez la documentation [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) .
 1. En fonction des problèmes détectés, prenez les mesures nécessaires pour corriger la requête afin qu’elle s’exécute plus rapidement.
 
@@ -66,7 +66,7 @@ Pour éviter ces problèmes, définissez une clé primaire pour toutes les table
 
    Lorsque vous ajoutez le nœud , remplacez les variables `referenceID` et `column name` par vos valeurs personnalisées.
 
-Pour plus d’informations, consultez [Configuration du schéma déclaratif](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) dans notre documentation destinée aux développeurs.
+Pour plus d’informations, consultez [Configuration du schéma déclaratif](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration) dans notre documentation destinée aux développeurs.
 
 ## Identification et suppression des index en double
 
