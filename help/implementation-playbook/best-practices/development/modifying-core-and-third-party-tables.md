@@ -73,7 +73,7 @@ Adobe recommande de suivre les étapes suivantes lorsque vous ajoutez une colonn
 
    Par exemple : `app/code/YourCompany/Customer`
 
-1. Créez les fichiers appropriés pour activer le module (voir [Création d’un module](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
+1. Créez les fichiers appropriés pour activer le module (voir [Création d’un module](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=fr){target="_blank"}.
 
 1. Créez un fichier appelé `db_schema.xml` dans le dossier `etc` et apportez les modifications appropriées.
 
@@ -155,7 +155,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## Recherche de tables MySQL volumineuses
 
-Pour identifier les tables volumineuses, connectez-vous à la base de données comme décrit dans l&#39;article [Connexion à la base de données](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) et exécutez la commande suivante. Utilisez `project_id` pour l’environnement de production. Pour les environnements d’évaluation, utilisez `[project_id]_stg`, `[project_id]_stg2`.
+Pour identifier les tables volumineuses, connectez-vous à la base de données comme décrit dans l&#39;article [Connexion à la base de données](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) et exécutez la commande suivante. Utilisez `project_id` pour l’environnement de production. Pour les environnements d’évaluation, utilisez `[project_id]_stg`, `[project_id]_stg2`.
 
 ```sql
 SELECT TABLE_NAME AS `Table`,

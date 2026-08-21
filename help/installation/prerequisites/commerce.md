@@ -21,7 +21,7 @@ Vérifiez la disponibilité et la compatibilité des extensions créées par Ado
 >
 >Les bases de code Adobe Commerce sont désormais exclusivement distribuées via le compositeur en raison de modifications de la politique. Utilisez le compositeur pour télécharger l’une des versions d’Adobe Commerce répertoriées, car la base de code n’est plus disponible dans la section Téléchargements .
 >
->Pour plus d’informations, voir [Impossible d’accéder au relevé de facturation et de télécharger la base de code sur Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)
+>Pour plus d’informations, voir [Impossible d’accéder au relevé de facturation et de télécharger la base de code sur Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26611)
 
 Consultez le tableau suivant pour commencer à installer Adobe Commerce.
 

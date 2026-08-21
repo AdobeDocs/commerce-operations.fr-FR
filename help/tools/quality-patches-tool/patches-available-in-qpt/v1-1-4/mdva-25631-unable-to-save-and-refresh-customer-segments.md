@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-25631 : impossible d’enregistrer et d’actualiser les segments de clients'
-description: Le correctif MDVA-25631 résout le problème en raison duquel les utilisateurs et utilisatrices ne peuvent pas enregistrer ni actualiser les segments de clients et clientes contenant un grand nombre de clients et clientes. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4 est installé. L’ID du correctif est MDVA-25631. Notez que le problème a été résolu dans Adobe Commerce 2.4.2.
+description: Le correctif MDVA-25631 résout le problème en raison duquel les utilisateurs et utilisatrices ne peuvent pas enregistrer ni actualiser les segments de clients et clientes contenant un grand nombre de clients et clientes. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4 est installé. L’ID du correctif est MDVA-25631. Notez que le problème a été résolu dans Adobe Commerce 2.4.2.
 feature: Customer Service
 role: Admin
 exl-id: 3cf40538-822a-4d3e-b8fa-20f9ef9228ae
@@ -55,7 +55,7 @@ Vous obtenez une erreur *500* car la taille de mémoire autorisée est en cours 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
