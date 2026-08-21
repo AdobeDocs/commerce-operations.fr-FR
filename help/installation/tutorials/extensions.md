@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Gestion des extensions tierces
 
-Le code qui étend ou personnalise le comportement d’Adobe Commerce est appelé extension. Vous pouvez éventuellement regrouper et distribuer des extensions sur [](https://commercemarketplace.adobe.com/) ou sur un autre système de distribution d’extensions.
+Le code qui étend ou personnalise le comportement d’Adobe Commerce est appelé extension. Vous pouvez éventuellement regrouper et distribuer des extensions sur [&#128279;](https://commercemarketplace.adobe.com/) ou sur un autre système de distribution d’extensions.
 
 Les extensions incluent :
 
@@ -60,7 +60,7 @@ Si vous connaissez déjà le nom et la version du compositeur de l’extension, 
 
 Pour obtenir le nom et la version du compositeur de l’extension à partir du Commerce Marketplace :
 
-1. Connectez-vous à [](https://commercemarketplace.adobe.com/) avec le nom d&#39;utilisateur et le mot de passe que vous avez utilisés pour acheter l&#39;extension.
+1. Connectez-vous à [&#128279;](https://commercemarketplace.adobe.com/) avec le nom d&#39;utilisateur et le mot de passe que vous avez utilisés pour acheter l&#39;extension.
 
 1. Dans le coin supérieur droit, cliquez sur **Votre nom** > **Mon profil**.
 
@@ -94,7 +94,7 @@ Ajoutez le nom et la version de l’extension à votre fichier `composer.json` :
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. Saisissez vos [ clés d’authentification ](../prerequisites/authentication-keys.md). Votre clé publique est votre nom d&#39;utilisateur ; votre clé privée est votre mot de passe.
+1. Saisissez vos [&#x200B; clés d’authentification &#x200B;](../prerequisites/authentication-keys.md). Votre clé publique est votre nom d&#39;utilisateur ; votre clé privée est votre mot de passe.
 
 1. Attendez que le compositeur ait terminé la mise à jour des dépendances de votre projet et vérifiez qu’il n’y a aucune erreur :
 

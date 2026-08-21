@@ -36,12 +36,12 @@ Le nom de la table de jointure manquant dans la table de récupération d&#39;or
 
 <u>Procédure à suivre </u> :
 
-01. Installez une instance de développement 2.4.
-02. Créez une commande.
-03. Installez un module personnalisé avec une extension SQL.
-04. Accédez à **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
-05. Appliquez le filtre **[!UICONTROL Purchase Date]** et attendez le résultat.
-06. Appliquez **[!UICONTROL Product SKU]** filtre .
+&#x200B;01. Installez une instance de développement 2.4.
+&#x200B;02. Créez une commande.
+&#x200B;03. Installez un module personnalisé avec une extension SQL.
+&#x200B;04. Accédez à **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
+&#x200B;05. Appliquez le filtre **[!UICONTROL Purchase Date]** et attendez le résultat.
+&#x200B;06. Appliquez **[!UICONTROL Product SKU]** filtre .
 
 <u>Résultats attendus</u> :
 

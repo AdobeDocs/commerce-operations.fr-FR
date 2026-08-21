@@ -47,7 +47,7 @@ Où
 
 * `<module-list>` est une liste délimitée par des espaces de modules à activer ou désactiver. Si un nom de module contient des caractères spéciaux, placez-le entre guillemets simples ou doubles.
 * `--all` d’activer ou de désactiver tous les modules en même temps.
-* `-f` ou `--force` de forcer l&#39;activation ou la désactivation d&#39;un module malgré les dépendances. Avant d’utiliser cette option, voir [ À propos de l’activation et de la désactivation des modules ](#about-enabling-and-disabling-modules).
+* `-f` ou `--force` de forcer l&#39;activation ou la désactivation d&#39;un module malgré les dépendances. Avant d’utiliser cette option, voir [&#x200B; À propos de l’activation et de la désactivation des modules &#x200B;](#about-enabling-and-disabling-modules).
 * `-c` ou `--clear-static-content` nettoie [les fichiers d’affichage statiques générés](../../configuration/cli/static-view-file-deployment.md).
 
   Si vous ne parvenez pas à effacer les fichiers d’affichage statique, des problèmes peuvent se produire si plusieurs fichiers portent le même nom et que vous ne les effacez pas tous.
@@ -60,7 +60,7 @@ Par exemple, pour désactiver le module `Magento_Weee`, saisissez :
 bin/magento module:disable Magento_Weee
 ```
 
-Pour obtenir des informations importantes sur l’activation et la désactivation des modules, voir [ À propos de l’activation et de la désactivation des modules](#about-enabling-and-disabling-modules).
+Pour obtenir des informations importantes sur l’activation et la désactivation des modules, voir [&#x200B; À propos de l’activation et de la désactivation des modules](#about-enabling-and-disabling-modules).
 
 ## Mise à jour de la base de données
 
