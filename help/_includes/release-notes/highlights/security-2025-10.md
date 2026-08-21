@@ -1,7 +1,7 @@
 ---
-source-git-commit: bce929b7435b722b91caf6123d06cb4690abd7bd
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '67'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---
@@ -9,4 +9,4 @@ ht-degree: 0%
 
 * Correctif pour CVE-2025-54236 pour résoudre une vulnérabilité de l’API REST. Adobe a publié un correctif pour ce problème en septembre 2025. Consultez l’article [Action requise : mise à jour de sécurité critique disponible pour Adobe Commerce (APSB25-88)](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27397) de la base de connaissances pour plus d’informations.<!-- AC-15379 -->
 
-* Les développeurs doivent passer en revue la [validation des paramètres du constructeur de l’API REST](https://developer.adobe.com/commerce/php/development/components/web-api/services/#rest-api-constructor-parameter-validation) pour savoir comment mettre à jour les extensions afin qu’elles soient conformes à ces modifications de sécurité.
+* Les développeurs doivent passer en revue la [validation des paramètres du constructeur de l’API REST](https://developer.adobe.com/commerce/php/development/components/web-api/services#rest-api-constructor-parameter-validation) pour savoir comment mettre à jour les extensions afin qu’elles soient conformes à ces modifications de sécurité.

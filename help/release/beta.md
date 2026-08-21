@@ -4,9 +4,9 @@ description: Découvrez les versions bêta d’Adobe Commerce et comment y parti
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: bf0f269900468870a1da7b5360548d49e009097c
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,8 @@ Les programmes Beta pour les [solutions de produits Adobe Commerce](https://expe
 
 >[!IMPORTANT]
 >
->**Clause de non-responsabilité**<br/>
->Les versions de >Beta incluent des fonctionnalités de version préliminaire et du code pouvant contenir des défauts et sont fournies « EN L’ÉTAT » sans garantie d’aucune sorte. Adobe dispose de la seule discrétion nécessaire pour rendre les versions bêta généralement disponibles. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, prendre en charge (via les services d’assistance Adobe ou autre), ou de diffuser ces versions bêta à une date spécifique. Si une version Beta est disponible, elle peut être soumise à des conditions générales supplémentaires, y compris les frais applicables. Les versions de Beta peuvent être modifiées sans préavis, y compris en cas d’interruption. Il est conseillé aux clients d’être prudents et de ne pas se fier, de quelque manière que ce soit, au fonctionnement ou aux performances ininterrompus ou sans erreur des versions bêta.  Par conséquent, toute utilisation des versions bêta s’effectue entièrement aux risques et périls du client.
+>**Avertissement légal**<br/>
+>Les versions de Beta incluent des fonctionnalités en version préliminaire et du code susceptible de contenir des défauts. Elles sont fournies « EN L’ÉTAT », sans garantie d’aucune sorte. Adobe dispose de la seule discrétion nécessaire pour rendre les versions bêta généralement disponibles. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, prendre en charge (via les services d’assistance Adobe ou autre), ou de diffuser ces versions bêta à une date spécifique. Si une version Beta est disponible, elle peut être soumise à des conditions générales supplémentaires, y compris les frais applicables. Les versions de Beta peuvent être modifiées sans préavis, y compris en cas d’interruption. Il est conseillé aux clients d’être prudents et de ne pas se fier, de quelque manière que ce soit, au fonctionnement ou aux performances ininterrompus ou sans erreur des versions bêta.  Par conséquent, toute utilisation des versions bêta s’effectue entièrement aux risques et périls du client.
 
 ## Avantages de la participation
 
@@ -73,7 +73,7 @@ Pour partager vos commentaires pendant que vous utilisez cette fonctionnalité b
 
 Le [service d’application de correctifs de Cloud Automation](../tools/caps-tool/intro.md) automatise le processus d’application de correctifs de sécurité isolés à vos environnements [Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/overview).
 
-En octobre 2025, la version bêta du service de correctifs de Cloud Automation sera ajoutée au tableau de bord de l’outil [Analyse à l’échelle du site](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). Ce service prend en charge les administrateurs de projet Commerce grâce à un workflow d’application de correctifs simplifié qui inclut :
+En octobre 2025, la version bêta du service de correctifs de Cloud Automation sera ajoutée au tableau de bord de l’outil [Analyse à l’échelle du site](/help/tools/site-wide-analysis-tool/dashboard.md). Ce service prend en charge les administrateurs de projet Commerce grâce à un workflow d’application de correctifs simplifié qui inclut :
 
 - Installation automatisée de correctifs
 - Restauration

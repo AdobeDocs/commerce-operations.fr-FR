@@ -2,9 +2,9 @@
 title: Vue d’ensemble du  [!DNL Upgrade Compatibility Tool]
 description: Découvrez le  [!DNL Upgrade Compatibility Tool]  et comment il peut vous aider à réaliser votre projet Adobe Commerce.
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -47,13 +47,13 @@ Pour entrer en contact avec l&#39;équipe [!DNL Upgrade Compatibility Tool], con
 
 Le [!DNL Upgrade Compatibility Tool] utilise les règles définies dans nos [normes de codage](https://developer.adobe.com/commerce/php/coding-standards/) pour vous assurer que votre projet respecte les bonnes pratiques d’Adobe Commerce et pour vous aider à améliorer et à étendre l’[!DNL Upgrade Compatibility Tool].
 
-Reportez-vous à la rubrique [Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing/) pour plus d’informations sur les normes de codage contributives.
+Reportez-vous à la rubrique [Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing) pour plus d’informations sur les normes de codage contributives.
 
 ## Ressources
 
 Consultez les ressources suivantes pour mieux comprendre les mises à niveau d’Adobe Commerce :
 
 - Le [&#x200B; guide de mise à niveau &#x200B;](../overview.md) présente un aperçu du parcours de mise à niveau d’Adobe Commerce type et des bonnes pratiques à suivre le long de ce parcours.
-- La page [prochaines versions](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/schedule) indique les dates des versions planifiées et à venir.
+- La page [prochaines versions](/help/release/schedule.md) indique les dates des versions planifiées et à venir.
 - La page [Ressources de la communauté](https://developer.adobe.com/commerce/contributor/community/) est un endroit où commencer les discussions ou trouver plus d’informations.
 - Consultez la page [Outils associés](../upgrade-compatibility-tool/related-tools.md) pour découvrir des outils utiles dans votre parcours de mise à niveau standard.

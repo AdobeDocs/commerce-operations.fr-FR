@@ -5,16 +5,16 @@ feature: Customers, Personalization, Marketing Tools
 role: Admin, Developer
 exl-id: c039c114-d920-4b05-b5e9-3e9b73490ee0
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 0%
+source-wordcount: '496'
+ht-degree: 1%
 
 ---
 
 # ACSD-59229 : mauvaise affectation des données du groupe client en raison d’une valeur X-Magento-Vary obsolète
 
-Le correctif ACSD-59229 corrige le problème d’enregistrement des informations relatives au groupe de clients dans le mauvais segment en raison d’une valeur X-Magento-Vary obsolète dans la requête. Ce correctif est disponible lorsque la version 1.1.50 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-59229. Notez que le problème a été résolu dans la version 2.4.7.
+Le correctif ACSD-59229 corrige le problème d’enregistrement des informations relatives au groupe de clients dans le mauvais segment en raison d’une valeur X-Magento-Vary obsolète dans la requête. Ce correctif est disponible lorsque la version 1.1.50 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-59229. Notez que le problème a été résolu dans la version 2.4.7.
 
 ## Produits et versions concernés
 
@@ -42,9 +42,9 @@ Assurez-vous qu’Adobe Commerce B2B avec des exemples de données est installé
 
 1. Configurez une tarification avancée pour le [!DNL SKU 24-MB01] :
    1. [!UICONTROL Regular price] = *9999$*
-   1. [!UICONTROL Catalog and Tier Price] :
+   1. [!UICONTROL Catalog and Tier Price]:
       * *En gros* = *200 $*
-      * *Retailer* = *$30*
+      * ** = *$30*
 
 1. Créez deux comptes client.
 1. Affectez les deux clients au groupe **en gros**.
@@ -69,13 +69,13 @@ Assurez-vous qu’Adobe Commerce B2B avec des exemples de données est installé
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 

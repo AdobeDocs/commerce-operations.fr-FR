@@ -1,18 +1,18 @@
 ---
-title: 'ACSD-51120 : le cache de demandes du GET GraphQL n’est pas effacé pour les pages CMS qui contiennent des blocs CMS'
-description: Appliquez le correctif ACSD-51120 pour résoudre le problème d’Adobe Commerce où le cache de requête GraphQL GET n’est pas effacé pour les pages CMS qui contiennent des blocs CMS.
+title: 'ACSD-51120 : le cache de requête GET de GraphQL n’est pas effacé pour les pages CMS qui contiennent des blocs CMS'
+description: Appliquez le correctif ACSD-51120 pour résoudre le problème d’Adobe Commerce où le cache de requête GET de GraphQL n’est pas effacé pour les pages CMS qui contiennent des blocs CMS.
 exl-id: e1b84db0-2441-4729-aeeb-8486a623aebf
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
-# ACSD-51120 : le cache de demandes du GET GraphQL n’est pas effacé pour les pages CMS qui contiennent des blocs CMS
+# ACSD-51120 : le cache de requête GET de GraphQL n’est pas effacé pour les pages CMS qui contiennent des blocs CMS
 
-Le correctif ACSD-51120 corrige le problème en raison duquel le cache de requête GraphQL GET n’est pas effacé pour les pages CMS qui contiennent des blocs CMS mis à jour par le biais d’une mise à jour d’évaluation. Ce correctif est disponible lorsque la version 1.1.33 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-51120. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-51120 corrige le problème où le cache de requête GET de GraphQL n’est pas effacé pour les pages CMS qui contiennent des blocs CMS mis à jour via une mise à jour d’évaluation. Ce correctif est disponible lorsque la version 1.1.33 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-51120. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -30,7 +30,7 @@ Le correctif ACSD-51120 corrige le problème en raison duquel le cache de requê
 
 ## Problème
 
-Le cache de requêtes de GET GraphQL n’est pas effacé pour les pages CMS qui contiennent des blocs CMS mis à jour par le biais d’une mise à jour d’évaluation.
+Le cache de requête GET GraphQL n’est pas effacé pour les pages CMS qui contiennent des blocs CMS mis à jour via une mise à jour d’évaluation.
 
 <u>Procédure à suivre </u> :
 
@@ -72,14 +72,14 @@ La réponse affiche toujours l’ancien contenu.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 

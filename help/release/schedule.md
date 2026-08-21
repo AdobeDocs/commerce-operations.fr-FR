@@ -2,9 +2,9 @@
 title: Calendrier de publication des correctifs
 description: Découvrez quand Adobe prévoit d’annoncer la publication de nouveaux patchs et correctifs de sécurité pour Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 0f46bdfd0afbca07e0d60e995ee9426f5408671d
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '402'
 ht-degree: 4%
 
 ---
@@ -51,4 +51,4 @@ Adobe informe ses clients des nouvelles versions de correctifs par le biais des 
 
 >[!NOTE]
 >
-> Pour connaître les dates de publication de chaque version mineure, correctif ou de sécurité, ainsi que les dates de fin de la prise en charge standard, consultez [Versions publiées](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/versions).
+> Pour connaître les dates de publication de chaque version mineure, correctif ou de sécurité, ainsi que les dates de fin de la prise en charge standard, consultez [Versions publiées](/help/release/versions.md).

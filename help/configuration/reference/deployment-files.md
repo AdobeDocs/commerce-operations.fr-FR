@@ -3,9 +3,9 @@ title: Fichiers de configuration pour le déploiement
 description: Découvrez le fonctionnement des fichiers de configuration pour le déploiement de l’application Adobe Commerce. Découvrez les bonnes pratiques de gestion des configurations partagées et spécifiques au système.
 feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Contrairement aux autres [fichiers de configuration de module](../reference/modu
 
 Au niveau supérieur de ce tableau se trouvent des _segments de configuration_. Un segment comporte du contenu arbitraire (une valeur scalaire ou un tableau imbriqué), se distinguant par une clé arbitraire, où la paire clé-valeur est définie par le framework Commerce.
 
-[Magento\Framework\App\DeploymentConfig](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) donne simplement accès à ces sections, mais ne vous permet pas de les étendre.
+[&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) donne simplement accès à ces sections, mais ne vous permet pas de les étendre.
 
 Au niveau de la hiérarchie suivante, les éléments de chaque segment sont triés en fonction de la définition de séquence de module, obtenue en fusionnant tous les fichiers de configuration des modules, à l’exception des modules désactivés.
 
@@ -51,7 +51,7 @@ Le fichier `config.php` contient la liste des modules installés. Adobe Commerce
 Exemples :
 
 - Désinstaller les composants : [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- Vérification du statut des composants : [`bin/magento module:status`](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
+- Vérification du statut des composants : [`bin/magento module:status`](/help/tools/reference/commerce-on-premises.md#modulestatus)
 - Activation ou désactivation de composants : [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md), [`bin/magento module:enable`](../../installation/tutorials/manage-modules.md).
 
 > _config.php_

@@ -2,9 +2,9 @@
 title: Configuration de plusieurs sites web avec Apache
 description: Suivez ce tutoriel pour configurer plusieurs sites web avec Apache.
 exl-id: 4c6890b3-f15a-46f2-a3e8-6f2a9b57a6ad
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Si nécessaire, copiez le script du point d’entrée `index.php` existant pour 
 
   Des tâches supplémentaires peuvent être nécessaires pour déployer plusieurs sites web dans un environnement hébergé. Pour plus d’informations, contactez votre fournisseur d’hébergement.
 
-  Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Une fois les tâches décrites dans cette rubrique terminées, consultez [Configuration de plusieurs sites web ou magasins](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=fr) dans le guide _Commerce sur les infrastructures cloud_.
+  Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Une fois les tâches décrites dans cette rubrique terminées, consultez [Configuration de plusieurs sites web ou magasins](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) dans le guide _Commerce sur les infrastructures cloud_.
 
 - Vous utilisez un hôte virtuel par site Web ; le fichier de configuration de l&#39;hôte virtuel est `/etc/httpd/httpd.conf`
 
@@ -28,8 +28,8 @@ Si nécessaire, copiez le script du point d’entrée `index.php` existant pour 
 - Le logiciel Commerce est installé dans `/var/www/html/magento2`
 - Vous disposez de deux sites web autres que le site par défaut :
 
-   - `french.mysite.mg` avec le code du site web `french` et le code d’affichage du magasin `fr`
-   - `german.mysite.mg` avec le code du site web `german` et le code d’affichage du magasin `de`
+  - `french.mysite.mg` avec le code du site web `french` et le code d’affichage du magasin `fr`
+  - `german.mysite.mg` avec le code du site web `german` et le code d’affichage du magasin `de`
 
 ## Feuille de route pour la configuration de plusieurs sites web avec Apache
 
@@ -110,7 +110,7 @@ Pour plus d’informations sur `SetEnvIf`, voir :
 >[!INFO]
 >
 >- Des tâches supplémentaires peuvent être nécessaires pour déployer plusieurs sites web dans un environnement hébergé. Pour plus d’informations, contactez votre fournisseur d’hébergement.
->- Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de plusieurs sites web ou magasins cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=fr) dans le guide _Commerce sur l’infrastructure cloud_.
+>- Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de plusieurs sites web ou magasins cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) dans le guide _Commerce sur l’infrastructure cloud_.
 
 ### Dépannage
 

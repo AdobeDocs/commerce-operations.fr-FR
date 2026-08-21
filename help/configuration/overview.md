@@ -2,9 +2,9 @@
 title: Présentation du guide de configuration
 description: Découvrez les fonctionnalités et services configurables de votre application Adobe Commerce. Découvrez comment gérer le déploiement, la mise en cache, la sécurité et d’autres paramètres critiques.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '182'
 ht-degree: 12%
 
 ---
@@ -29,4 +29,4 @@ Le guide d’utilisation de [Commerce contient les rubriques correspondantes](ht
 
 ## Configuration du cloud
 
-[!DNL Commerce on cloud infrastructure] utilise un [ensemble de fichiers de configuration](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html?lang=fr) pour mettre à jour les fonctionnalités et services de l’application Commerce dans les environnements hébergés. En raison de la nature unique des environnements hébergés dans le cloud d’Adobe, vous devez toujours consulter le [&#x200B; guide sur le cloud &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html?lang=fr) pour connaître les autres exigences de configuration.
+[!DNL Commerce on cloud infrastructure] utilise un [ensemble de fichiers de configuration](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/overview) pour mettre à jour les fonctionnalités et services de l’application Commerce dans les environnements hébergés. En raison de la nature unique des environnements hébergés dans le cloud d’Adobe, vous devez toujours consulter le [&#x200B; guide sur le cloud &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/overview) pour connaître les autres exigences de configuration.

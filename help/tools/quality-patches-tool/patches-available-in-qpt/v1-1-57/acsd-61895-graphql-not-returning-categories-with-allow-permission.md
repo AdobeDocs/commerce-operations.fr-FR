@@ -5,9 +5,9 @@ feature: Categories, GraphQL, Roles/Permissions
 role: Admin, Developer
 exl-id: ef986fa6-e8bc-4322-80f2-fa0c5d5e8d40
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -46,12 +46,12 @@ Les réponses [!DNL GraphQL] pour les clients invités (utilisant un catalogue p
 
    * Catalogue Public Partagé :
 
-      * Affectez toutes les catégories au catalogue public.
+     * Affectez toutes les catégories au catalogue public.
 
    * Catalogue partagé privé :
 
-      * Attribuez uniquement la catégorie `Gear` et ses catégories enfants au catalogue privé.
-      * Affectez le catalogue privé à une société de test.
+     * Attribuez uniquement la catégorie `Gear` et ses catégories enfants au catalogue privé.
+     * Affectez le catalogue privé à une société de test.
 
 1. Créez un utilisateur d’entreprise :
 
@@ -102,7 +102,7 @@ La réponse de la requête `categories` n’affiche aucune catégorie.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 
 ## Lecture connexe

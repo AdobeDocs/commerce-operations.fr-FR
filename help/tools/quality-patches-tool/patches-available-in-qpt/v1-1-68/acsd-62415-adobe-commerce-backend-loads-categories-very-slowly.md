@@ -4,13 +4,13 @@ description: Appliquez le correctif ACSD-62415 pour résoudre le problème d’A
 feature: Admin Workspace
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8040414630cf3c992e0d68d5693990f8f50fdbcb
+exl-id: 3101723d-dcc0-49fa-a823-2a2d37037534
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62415 : le serveur principal d’Adobe Commerce se charge **[!UICONTROL Categories]** très lentement lorsque des catégories d’ancrage sont présentes
 
@@ -52,7 +52,7 @@ Le chargement prend entre 7 et 20 secondes et la requête est exécutée plus de
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

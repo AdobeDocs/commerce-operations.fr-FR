@@ -3,7 +3,7 @@ title: Architecture de référence d’entreprise
 description: Découvrez comment mettre en œuvre Adobe Commerce à l’aide de la dernière technologie de commerce composable d’Adobe.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: dc4747d96e6f226e90ed95c93512c3e879d408ab
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -26,15 +26,15 @@ Le diagramme d’architecture suivant illustre le flux de données entre Adobe C
 
 ## Cloud Foundation
 
-[Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/overview) est la base de votre implémentation Commerce. Il fournit une plateforme d’hébergement automatisée [sécurisée](../../security-and-compliance/shared-responsibility.md) avec une approche en libre-service pour créer, déployer, surveiller et gérer votre application Commerce dans un environnement conçu pour le cloud.
+[Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/overview) est la base de votre implémentation Commerce. Il fournit une plateforme d’hébergement automatisée [sécurisée](../../security-and-compliance/shared-responsibility.md) avec une approche en libre-service pour créer, déployer, surveiller et gérer votre application Commerce dans un environnement conçu pour le cloud.
 
 Consultez les détails techniques de Cloud Foundation suivants :
 
-- [**Architecture évolutive**](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture) : capacité ajustée automatiquement pour maintenir des performances stables et prévisibles
-- [**Plusieurs environnements**](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/architecture/pro-architecture) : préconfigurés avec PHP, MySQL (MariaDB), Redis, RabbitMQ et les technologies de moteurs de recherche prises en charge pour développer, tester et déployer votre site
-- [**Gestion de la configuration**](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/overview) : fichiers de configuration d’environnement personnalisables et interface de ligne de commande (CLI) pour gérer les paramètres, les itinéraires, les actions de génération et de déploiement et les notifications de l’application.
-- [**Workflow basé sur Git**](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow) : créez et déployez automatiquement après avoir envoyé les modifications de code pour un développement rapide et un déploiement continu
-- [**Observabilité intégrée**](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/monitor/performance) : outils qui combinent des données de journal provenant de plusieurs sources pour vous aider à gérer les performances de votre site et à diagnostiquer les problèmes
+- [**Architecture évolutive**](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture) : capacité ajustée automatiquement pour maintenir des performances stables et prévisibles
+- [**Plusieurs environnements**](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/pro-architecture) : préconfigurés avec PHP, MySQL (MariaDB), Redis, RabbitMQ et les technologies de moteurs de recherche prises en charge pour développer, tester et déployer votre site
+- [**Gestion de la configuration**](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/overview) : fichiers de configuration d’environnement personnalisables et interface de ligne de commande (CLI) pour gérer les paramètres, les itinéraires, les actions de génération et de déploiement et les notifications de l’application.
+- [**Workflow basé sur Git**](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow) : créez et déployez automatiquement après avoir envoyé les modifications de code pour un développement rapide et un déploiement continu
+- [**Observabilité intégrée**](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/monitor/performance) : outils qui combinent des données de journal provenant de plusieurs sources pour vous aider à gérer les performances de votre site et à diagnostiquer les problèmes
 - [**Couverture d’API complète**](https://developer.adobe.com/commerce/webapi/get-started/)—[API GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) et [REST](https://developer.adobe.com/commerce/webapi/rest) pour intégrer l’application Commerce principale à des systèmes tiers et étendre les fonctionnalités de Commerce
 
 ## Intégration avec Experience Cloud
@@ -48,7 +48,7 @@ Adobe Commerce s’intègre à toutes les solutions Experience Cloud pour offrir
 >Consultez les ressources suivantes pour plus d’informations :
 >
 >- [Plans directeurs d’expérience digitale](https://experienceleague.adobe.com/fr/docs/blueprints-learn/architecture/overview) pour plus de détails techniques.
->- Voir [&#x200B; Personnaliser l’expérience client &#x200B;](https://experienceleague.adobe.com/fr/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
+>- Voir [&#x200B; Personnaliser l’expérience client &#x200B;](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
 
 
 ## Intégration à des systèmes tiers
@@ -70,7 +70,7 @@ Adobe fournit les outils de développement suivants pour créer des intégration
 
 >[!NOTE]
 >
->Voir [L’approche moderne : une extensibilité efficace dans Adobe Commerce](https://experienceleague.adobe.com/fr/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility).
+>Voir [L’approche moderne : une extensibilité efficace dans Adobe Commerce](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility).
 
 ## Services Storefront
 

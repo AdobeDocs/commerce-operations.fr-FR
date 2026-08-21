@@ -5,16 +5,16 @@ feature: Categories, Products, Storefront, Search
 role: Admin, Developer
 exl-id: a7d05108-0b03-4eb4-84ab-0dc5601530cb
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
 
 # ACSD-59036 : une exception se produit lors du chargement des prix de produit avec des limites inférieure et supérieure définies sur *$0*
 
-Le correctif ACSD-59036 corrige le problème où une exception se produit lors du chargement des prix de produits avec des limites inférieure et supérieure définies sur *$0*. Ce correctif est disponible lorsque la version 1.1.50 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-59036. Notez que ce problème doit être résolu dans Adobe Commerce 2.4.8.
+Le correctif ACSD-59036 corrige le problème où une exception se produit lors du chargement des prix de produits avec des limites inférieure et supérieure définies sur *$0*. Ce correctif est disponible lorsque la version 1.1.50 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-59036. Notez que ce problème doit être résolu dans Adobe Commerce 2.4.8.
 
 ## Produits et versions concernés
 
@@ -40,7 +40,7 @@ Le problème se produit car l’algorithme ne tient pas compte des valeurs NULL 
 
 1. Créez des produits simples *13*.
 1. Affectez tous les produits *13* à une catégorie.
-1. Fixez le prix d&#39;un produit à 1322,94 $**.
+1. Fixez le prix d&#39;un produit à 1322,94 $*.*
 1. Fixez le prix de tous les autres produits à *$0*.
 1. Configurez [!DNL OpenSearch] comme moteur de recherche.
 1. Accédez à **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Storefront]** et définissez le nombre de **[!UICONTROL PLP]** sur *16*.
@@ -65,13 +65,13 @@ report.CRITICAL: OpenSearch\Common\Exceptions\BadRequest400Exception: {"error":{
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 

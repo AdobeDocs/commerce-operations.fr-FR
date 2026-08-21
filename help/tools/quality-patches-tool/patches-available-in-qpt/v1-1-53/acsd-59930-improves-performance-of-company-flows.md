@@ -5,16 +5,16 @@ feature: Customers, B2B
 role: Admin, Developer
 exl-id: eaa6c78d-13e3-439d-90f7-70c1c96c3197
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
 # ACSD-59930 : améliore la performance des flux de l&#39;entreprise
 
-Le correctif ACSD-59930 corrige le problème d’affichage d’une erreur *Temporisation* dans le panneau d’administration lors de la création, de l’enregistrement ou de la suppression d’une entreprise avec un administrateur dont le carnet d’adresses contient des adresses *1 000+*. Ce correctif est disponible lorsque la version 1.1.53 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-59930. Notez que ce problème doit être résolu dans la version B2B-1.5.0 d’Adobe Commerce.
+Le correctif ACSD-59930 corrige le problème d’affichage d’une erreur *Temporisation* dans le panneau d’administration lors de la création, de l’enregistrement ou de la suppression d’une entreprise avec un administrateur dont le carnet d’adresses contient des adresses *1 000+*. Ce correctif est disponible lorsque la version 1.1.53 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-59930. Notez que ce problème doit être résolu dans la version B2B-1.5.0 d’Adobe Commerce.
 
 ## Produits et versions concernés
 
@@ -40,7 +40,7 @@ Installation et activation des modules B2B Adobe Commerce.
 
 <u>Procédure à suivre </u> :
 
-1. Créez un client avec plus de 1 000 adresses ** dans le *[!UICONTROL Address Book]*.
+1. Créez un client avec plus de 1 000 adresses *dans le *[!UICONTROL Address Book]*.*
 1. Créez une entreprise et utilisez le client ci-dessus en tant qu’administrateur.
 1. Sauve la société.
 
@@ -57,13 +57,13 @@ Une erreur de temporisation s’affiche.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 

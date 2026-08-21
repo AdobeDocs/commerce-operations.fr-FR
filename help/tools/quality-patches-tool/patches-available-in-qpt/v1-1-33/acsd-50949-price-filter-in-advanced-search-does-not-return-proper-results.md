@@ -5,16 +5,16 @@ feature: Orders, Search
 role: Admin
 exl-id: 89e54940-e763-4554-8641-a162516bcabd
 type: Troubleshooting
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 1%
+source-wordcount: '448'
+ht-degree: 3%
 
 ---
 
 # ACSD-50949 : le filtre Prix dans la recherche avancée ne renvoie pas les bons résultats lorsqu’il est utilisé avec le filtre SKU
 
-Le correctif ACSD-50949 corrige le problème où le filtre de prix dans la recherche avancée ne renvoie pas les bons résultats lorsqu’il est utilisé avec le filtre de SKU. Ce correctif est disponible lorsque la version 1.1.33 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-50949. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-50949 corrige le problème où le filtre de prix dans la recherche avancée ne renvoie pas les bons résultats lorsqu’il est utilisé avec le filtre de SKU. Ce correctif est disponible lorsque la version 1.1.33 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-50949. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -40,13 +40,13 @@ Le filtre de prix dans la recherche avancée ne renvoie pas les bons résultats 
 
    | SKU | Nom | Prix | Quantité |
    |-----|-----------|-------|----------|
-   | MJ1 | Produit 1 | 10 $ | 10 |
-   | MJ2 | Produit 2 | 15 $ | 10 |
-   | MJ3 | Produit 3 | 21 $ | 10 |
-   | MJ4 | Produit 4 | 32 $ | 10 |
-   | MJ5 | Produit 5 | 33 $ | 10 |
-   | MJ6 | Produit 6 | 34 $ | 10 |
-   | MJ7 | Produit 7 | 44 $ | 10 |
+   | MJ1 | Produit 1 | $10 | 10 |
+   | MJ2 | Produit 2 | $15 | 10 |
+   | MJ3 | Produit 3 | $21 | 10 |
+   | MJ4 | Produit 4 | $32 | 10 |
+   | MJ5 | Produit 5 | $33 | 10 |
+   | MJ6 | Produit 6 | $34 | 10 |
+   | MJ7 | Produit 7 | $44 | 10 |
 
 1. Ouvrez le **[!UICONTROL Advanced Search]** sur la vitrine et effectuez une recherche par SKU : « MJ ».
 1. Cliquez sur le lien **[!UICONTROL Modify your search]**.
@@ -65,13 +65,13 @@ Les produits dont les prix sont supérieurs à 21 $*sont retournés.*
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 

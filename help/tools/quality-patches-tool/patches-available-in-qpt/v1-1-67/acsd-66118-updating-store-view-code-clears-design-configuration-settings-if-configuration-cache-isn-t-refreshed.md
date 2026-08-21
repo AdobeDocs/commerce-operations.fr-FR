@@ -5,9 +5,9 @@ feature: Cache, Configuration, Themes
 role: Admin, Developer
 type: Troubleshooting
 exl-id: ecfdff54-99e0-4dbe-a0bb-80f60aafc7b6
-source-git-commit: 468c780f355c99cf06d557e530e81c414a01961e
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Le **[!UICONTROL Design Configuration]** est effacé. Le thème revient aux vale
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

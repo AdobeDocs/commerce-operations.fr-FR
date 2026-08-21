@@ -2,9 +2,9 @@
 title: Exécutez  [!DNL Upgrade Compatibility Tool]
 description: Pour exécuter le dans une interface  [!DNL Upgrade Compatibility Tool]  ligne de commande pour votre projet Adobe Commerce, procédez comme suit.
 exl-id: ea467a74-18eb-476b-96e2-23f4fc257d73
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -258,9 +258,9 @@ Cette opération renvoie des options spécifiques qui peuvent être exécutées 
 ## Respect Des Bonnes Pratiques D’Adobe Commerce
 
 - Évitez d’avoir deux modules portant le même nom.
-- Respectez les normes de codage Adobe Commerce[&#128279;](https://developer.adobe.com/commerce/php/coding-standards).
+- Respectez les normes de codage Adobe Commerce[&#128279;](https://developer.adobe.com/commerce/php/coding-standards/).
 - Bonnes pratiques relatives au [&#x200B; guide de mise à niveau d’Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=fr)
-- Exécutez le [!DNL Upgrade Compatibility Tool] à partir du [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=fr) pour les projets [Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=fr){target=_blank}.
+- Exécutez le [!DNL Upgrade Compatibility Tool] à partir du [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=fr) pour les projets [Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/overview){target=_blank}.
 
 ## Optimisation des résultats
 

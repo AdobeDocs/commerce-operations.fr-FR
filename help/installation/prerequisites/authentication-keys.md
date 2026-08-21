@@ -2,9 +2,9 @@
 title: Obtention de vos clés d’authentification
 description: Pour récupérer les informations d’identification et accéder aux packages du compositeur Adobe Commerce sur repo.magento.com, procédez comme suit.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,10 @@ Pour obtenir le droit d’accès aux packages Adobe Commerce, vous devez utilise
 
 >[!TIP]
 >
->Si vous rencontrez des [erreurs](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=fr) ou ne voyez pas la section [!UICONTROL Access Keys] dans l’onglet Marketplace , il se peut que vous ne soyez pas autorisé à accéder au package ou que le droit d’accès ait expiré en raison d’une facture en suspens sur votre compte.
+>Si vous rencontrez des [erreurs](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-25968) ou ne voyez pas la section [!UICONTROL Access Keys] dans l’onglet Marketplace , il se peut que vous ne soyez pas autorisé à accéder au package ou que le droit d’accès ait expiré en raison d’une facture en suspens sur votre compte.
 >
 >* Si vous êtes la personne de contact de Principal sur le compte, assurez-vous qu&#39;aucune facture en souffrance n&#39;est répertoriée sur le compte.
->* Si les clés fournies par le contact de Principal ne fonctionnent pas et qu&#39;il n&#39;y a aucune facture en suspens sur le compte, le contact de Principal doit contacter [l&#39;assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour obtenir de l&#39;aide.
+>* Si les clés fournies par le contact de Principal ne fonctionnent pas et qu&#39;il n&#39;y a aucune facture en suspens sur le compte, le contact de Principal doit contacter [l&#39;assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour obtenir de l&#39;aide.
 
 Pour créer des clés d’authentification :
 

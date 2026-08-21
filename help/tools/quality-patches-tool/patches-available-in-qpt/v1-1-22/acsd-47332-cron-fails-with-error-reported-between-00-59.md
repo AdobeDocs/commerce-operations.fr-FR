@@ -5,16 +5,16 @@ feature: Configuration
 role: Admin
 exl-id: ffe6c8f7-0e4c-4a22-853a-45d708bf8164
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
 
-# ACSD-47332 : échec de cron avec une erreur signalée uniquement lors de l’exécution entre 00 :00 et 00 :59 UTC
+# ACSD-47332 : échec de cron avec une erreur signalée uniquement lors de l’exécution entre 00:00 et 00:59 UTC
 
-Le correctif ACSD-47332 corrige le problème d’échec de cron avec une erreur qui n’est signalée que lorsqu’elle est exécutée entre 00:00 et 00:59 UTC. Ce correctif est disponible lorsque la version 1.1.22 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-47332. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-47332 corrige le problème d’échec de cron avec une erreur qui n’est signalée que lorsqu’il est exécuté entre 00:00 et 00:59 UTC. Ce correctif est disponible lorsque la version 1.1.22 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-47332. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -36,7 +36,7 @@ La commande Cron échoue avec une erreur qui est signalée uniquement lors de l�
 
 <u>Procédure à suivre </u> :
 
-1. Exécutez le CRON `catalog_index_refresh_price` entre 00 :00 et 00 :59 UTC.
+1. Exécutez le CRON `catalog_index_refresh_price` entre 00:00 et 00:59 UTC.
 
 <u>Résultats attendus</u> :
 
@@ -58,13 +58,13 @@ SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not ma
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 

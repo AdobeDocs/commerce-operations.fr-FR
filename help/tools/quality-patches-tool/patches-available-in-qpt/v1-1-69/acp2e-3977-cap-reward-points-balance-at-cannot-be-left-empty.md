@@ -5,9 +5,9 @@ feature: Configuration, Rewards
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 5275911f-4f8c-4b37-af11-24ceb69406c9
-source-git-commit: 83ce590c5078d70f0414276e2f03a71bdcdad321
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -47,14 +47,14 @@ Une valeur vide pour **[!UICONTROL Cap Reward Points Balance At]** est autorisé
 
 <u>Résultats réels</u> :
 
-*Le solde des points de récompense plafonnés n&#39;est pas valide. Le solde doit être un nombre positif ou laissé vide. Vérifiez et réessayez.* erreur s’affiche.
+*Le solde des points de récompense plafonnés n&#39;est pas valide. Le solde doit être un nombre positif ou laissé vide. Vérifiez et réessayez.* L’erreur s’affiche.
 
 ## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

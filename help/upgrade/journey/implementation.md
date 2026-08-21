@@ -2,9 +2,9 @@
 title: Mise à niveau de l’implémentation
 description: Découvrez les différentes phases de la mise en œuvre de la mise à niveau pour les projets Adobe Commerce.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 3c54a3c429a3dadc826bffcb91f99a5a3a31b42c
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '857'
 ht-degree: 1%
 
 ---
@@ -29,9 +29,9 @@ Voici des éléments que vous pouvez inclure dans une analyse approfondie :
 
 - **[!DNL Upgrade Compatibility Tool]des résultats** : cet outil accélère et facilite toute mise à niveau en comparant votre code actuel au code de la version cible et en générant un rapport sur tous les problèmes à résoudre. Voir la [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Les principaux détails du rapport sont les suivants :
 
-   - Version installée actuelle
-   - Mettre à niveau la version cible
-   - Nombre et détails des erreurs critiques détectées
+  - Version installée actuelle
+  - Mettre à niveau la version cible
+  - Nombre et détails des erreurs critiques détectées
 
   >[!TIP]
   >
@@ -88,4 +88,4 @@ Enfin, faites le point avec votre équipe pour déterminer les leçons apprises 
 
 Une fois votre site lancé, vérifiez vos données d’analyse, la console de recherche Google et d’autres ressources pour vous assurer qu’il n’y a aucun problème inattendu et que tout fonctionne comme prévu.
 
-Il est toujours préférable de surveiller les performances à l’aide d’outils de surveillance bien conçus. Il existe de nombreux outils et moyens de surveiller les performances de votre site. Veillez donc à en choisir un qui correspond bien à votre organisation. Nous recommandons aux clients Adobe Commerce qui utilisent notre système de gestion de l’infrastructure cloud de tirer parti de services tels que [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=fr) pour surveiller les performances du site.
+Il est toujours préférable de surveiller les performances à l’aide d’outils de surveillance bien conçus. Il existe de nombreux outils et moyens de surveiller les performances de votre site. Veillez donc à en choisir un qui correspond bien à votre organisation. Nous recommandons aux clients Adobe Commerce qui utilisent notre système de gestion de l’infrastructure cloud de tirer parti de services tels que [New Relic](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) pour surveiller les performances du site.

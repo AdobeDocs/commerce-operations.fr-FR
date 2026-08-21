@@ -5,9 +5,9 @@ role: Developer
 feature: Best Practices
 badge: label="Contribution de Tony Evers, architecte technique principal, Adobe" type="Informative" url="https://www.linkedin.com/in/evers-tony/" tooltip="Contribution Tony Evers"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: 2c9f827326315bc4ef77d511dddce81e059a1092
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1361'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Comme il existe de nombreux types de correctifs et de nombreuses façons de les 
 
 1. Les **correctifs de sécurité** font partie de la base de code statique d’une version d’Adobe Commerce.
 1. **Correctifs du compositeur** via des modules externes `composer install` et `composer update` tels que [cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches).
-1. Tous les **correctifs requis** inclus dans le package [Correctifs cloud pour Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html?lang=fr).
+1. Tous les **correctifs requis** inclus dans le package [Correctifs cloud pour Commerce](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches).
 1. Sélection **correctifs de qualité** inclus dans le [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md).
 1. **Correctifs personnalisés** et les correctifs Adobe Commerce prennent en charge les correctifs du répertoire `/m2-hotfixes` dans l’ordre alphabétique par nom de correctif.
 
@@ -61,13 +61,13 @@ En résumé, cet exemple de correctif centralisé nécessite que vous créiez de
 
 - **Package de composants :** `centralized-patcher`
 
-   - Définit la liste des correctifs de qualité et des `m2-hotfixes` à installer
-   - Nécessite le package `centralized-patcher-composer-plugin`, qui exécute la commande `vendor/bin/magento-patches apply` après `composer install` opérations
+  - Définit la liste des correctifs de qualité et des `m2-hotfixes` à installer
+  - Nécessite le package `centralized-patcher-composer-plugin`, qui exécute la commande `vendor/bin/magento-patches apply` après `composer install` opérations
 
 - **Package de plug-in :** `centralized-patcher-composer-plugin`
 
-   - Définit une classe PHP `CentralizedPatcher` qui lit la liste des patchs de qualité à partir du package `centralized-patcher`
-   - Exécute la commande `vendor/bin/magento-patches apply` pour installer la liste des correctifs de qualité après `composer install` opérations
+  - Définit une classe PHP `CentralizedPatcher` qui lit la liste des patchs de qualité à partir du package `centralized-patcher`
+  - Exécute la commande `vendor/bin/magento-patches apply` pour installer la liste des correctifs de qualité après `composer install` opérations
 
 ### `centralized-patcher`
 
@@ -365,7 +365,7 @@ Comme avec Adobe Commerce sur les infrastructures cloud, cet article suppose que
 
 Vous pouvez ainsi gérer de manière centralisée tous vos correctifs pour toutes vos installations et mieux garantir la sécurité et la stabilité de vos magasins Adobe Commerce. Utilisez les méthodes suivantes pour vérifier le statut du correctif :
 
-- [Projets d’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr#view-available-patches-and-status)
+- [Projets d’infrastructure cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 - [Projets sur site](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## Exemples de code

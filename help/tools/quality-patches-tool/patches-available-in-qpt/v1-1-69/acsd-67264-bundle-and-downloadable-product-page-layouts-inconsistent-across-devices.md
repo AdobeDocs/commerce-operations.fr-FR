@@ -4,13 +4,13 @@ description: Appliquez le correctif ACSD-67264 pour corriger le bundle Adobe Com
 feature: Page Content, Products
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 9b6794366ba552d86cdfc6a3d6f699c307fcd8f6
+exl-id: 783271ba-176c-4542-8dd8-82bc029ea453
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-67264 : offres groupées et mises en page de produits téléchargeables incohérentes entre les appareils
 
@@ -54,7 +54,7 @@ La PDP du produit groupé est rendue avec des espaces aléatoires.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool]
-* Adobe Commerce sur les infrastructures cloud : [&#x200B; Mises à niveau et correctifs > Appliquer des correctifs &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [&#x200B; Mises à niveau et correctifs > Appliquer des correctifs &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

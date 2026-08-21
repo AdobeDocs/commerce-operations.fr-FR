@@ -4,7 +4,7 @@ description: Découvrez comment configurer les paramètres de la base de donnée
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### Remplacer le moteur de stockage par InnoDB
 
-Dans le fichier `db_schema.xml` qui déclare la table, définissez la valeur de l’attribut `engine` pour le nœud `table` correspondant sur `innodb`. Pour référence, consultez [Configuration du schéma déclaratif > nœud de tableau](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) dans notre documentation destinée aux développeurs.
+Dans le fichier `db_schema.xml` qui déclare la table, définissez la valeur de l’attribut `engine` pour le nœud `table` correspondant sur `innodb`. Pour référence, consultez [Configuration du schéma déclaratif > nœud de tableau](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration) dans notre documentation destinée aux développeurs.
 
 Le schéma déclaratif a été introduit dans Adobe Commerce sur l’infrastructure cloud version 2.3.
 
@@ -59,9 +59,9 @@ Pour déterminer le moteur de recherche actuellement utilisé, exécutez la comm
 
 Pour obtenir des instructions de configuration, consultez le Guide du développeur pour Adobe Commerce sur le cloud :
 
-- [Configuration du service OpenSearch](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+- [Configuration du service OpenSearch](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/opensearch)
 
-- [Configuration du service Elasticsearch](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
+- [Configuration du service Elasticsearch](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/elasticsearch)
 
 ## Éviter les déclencheurs personnalisés
 
@@ -76,7 +76,7 @@ Pour en savoir plus sur les alternatives à l’utilisation de déclencheurs per
 
 ## Mettre à niveau [!DNL ECE-Tools] vers la version 2002.0.21 ou ultérieure {#ece-tools-version}
 
-Pour éviter des problèmes potentiels avec les blocages cron, mettez à niveau ECE-Tools vers la version 2002.0.21 ou supérieure. Pour obtenir des instructions, consultez [Mise à jour de `ece-tools` version](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) dans notre documentation destinée aux développeurs.
+Pour éviter des problèmes potentiels avec les blocages cron, mettez à niveau ECE-Tools vers la version 2002.0.21 ou supérieure. Pour obtenir des instructions, consultez [Mise à jour de `ece-tools` version](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) dans notre documentation destinée aux développeurs.
 
 ## Basculer en mode indexeur en toute sécurité
 

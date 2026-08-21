@@ -5,16 +5,16 @@ feature: Admin Workspace, Gift, Orders
 role: Admin
 exl-id: c7b72b1f-2f1b-4445-b842-5847d05d5ae9
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
 
 # ACSD-48044 : l&#39;application de plusieurs cartes-cadeaux empêche de passer des commandes
 
-Le correctif ACSD-48044 corrige le problème où l&#39;application de plusieurs cartes-cadeaux à une seule commande avec expédition multiple empêche de passer des commandes. Ce correctif est disponible lorsque la version 1.1.25 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) est installée. L’ID du correctif est ACSD-48044. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-48044 corrige le problème où l&#39;application de plusieurs cartes-cadeaux à une seule commande avec expédition multiple empêche de passer des commandes. Ce correctif est disponible lorsque la version 1.1.25 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-48044. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -63,30 +63,30 @@ L’application de plusieurs cartes-cadeaux à une seule commande avec expéditi
 
 <u>Résultats réels</u> :
 
-Les montants des cartes-cadeaux sont mélangés avec une erreur *« Veuillez corriger le code de la carte-cadeau. »* lors de la commande.
+Les montants des cartes-cadeaux sont mélangés avec une erreur *« Veuillez corriger le code de la carte-cadeau.«* lors de la commande.
 
 * Premier produit :
 
-   * Supprimer Carte Cadeau (00GXM6SUGBLW) - 15,00 $
-   * Supprimer Carte Cadeau (02KB8M0H0GRD) - 0,00 $
+  * Supprimer Carte Cadeau (00GXM6SUGBLW) - 15,00 $
+  * Supprimer Carte Cadeau (02KB8M0H0GRD) - 0,00 $
 
 * Deuxième produit :
 
-   * Supprimer Carte Cadeau (00GXM6SUGBLW) - 25,00 $
-   * Supprimer la carte-cadeau (02KB8M0H0GRD) - 35,00 $
+  * Supprimer Carte Cadeau (00GXM6SUGBLW) - 25,00 $
+  * Supprimer la carte-cadeau (02KB8M0H0GRD) - 35,00 $
 
 ## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], consultez :
 
-* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans la base de connaissances du support.
+* [[!DNL Quality Patches Tool] sortie : un nouvel outil permettant de mettre en libre-service des correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce en utilisant [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!UICONTROL Quality Patches Tool].
 
 
