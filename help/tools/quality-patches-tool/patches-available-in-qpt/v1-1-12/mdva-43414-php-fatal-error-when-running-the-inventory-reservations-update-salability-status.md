@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43414 : erreur fatale PHP lors de l''exécution de « inventory.reservations.updateSalabilityStatus »'
-description: Le correctif MDVA-43414 résout l’erreur fatale PHP qui se produit lors de l’exécution du client de file d’attente « inventory.reservations.updateSalabilityStatus » sur les SKU numériques. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12 est installé. L’ID du correctif est MDVA-43414. Notez que le problème a été résolu dans Adobe Commerce 2.4.2.
+description: Le correctif MDVA-43414 résout l’erreur fatale PHP qui se produit lors de l’exécution du client de file d’attente « inventory.reservations.updateSalabilityStatus » sur les SKU numériques. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12 est installé. L’ID du correctif est MDVA-43414. Notez que le problème a été résolu dans Adobe Commerce 2.4.2.
 feature: Inventory, Orders
 role: Admin
 exl-id: 893a5665-ff1b-4862-a984-d9abf642fba3

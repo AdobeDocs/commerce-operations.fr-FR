@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-39181 : les règles de produits associés affichent les produits de la catégorie non définie dans la règle'
-description: Le correctif MDVA-39181 résout le problème où les règles de produit associées affichent des produits d’une catégorie non définie dans la règle. Ce correctif est disponible lorsque l’[Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 est installé. L’ID du correctif est MDVA-39181. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
+description: Le correctif MDVA-39181 résout le problème où les règles de produit associées affichent des produits d’une catégorie non définie dans la règle. Ce correctif est disponible lorsque l’[Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 est installé. L’ID du correctif est MDVA-39181. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 feature: Categories, Products
 role: Admin
 exl-id: 98f65b7d-2cb3-49ff-95ef-c23a922e49f2
