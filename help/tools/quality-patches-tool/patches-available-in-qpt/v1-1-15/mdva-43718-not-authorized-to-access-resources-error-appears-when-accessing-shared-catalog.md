@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43718 : l’erreur « le client n’est pas autorisé à accéder aux ressources » s’affiche lors de l’accès au catalogue partagé'
-description: Le correctif MDVA-43718 résout le problème où le client d’erreur *n’est pas autorisé à accéder à %resources.* apparaît lors de l’accès à un catalogue partagé à partir d’une intégration personnalisée. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15 est installé. L’ID du correctif est MDVA-43718. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
+description: Le correctif MDVA-43718 résout le problème où le client d’erreur *n’est pas autorisé à accéder à %resources.* apparaît lors de l’accès à un catalogue partagé à partir d’une intégration personnalisée. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15 est installé. L’ID du correctif est MDVA-43718. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 feature: Catalog Management
 role: Admin
 exl-id: 2ced2177-aeff-4c36-8d34-6028539b66bd

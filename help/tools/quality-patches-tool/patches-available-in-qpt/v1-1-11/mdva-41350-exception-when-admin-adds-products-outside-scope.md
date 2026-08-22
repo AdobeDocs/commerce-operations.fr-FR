@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-41350 : exception lorsque l’administrateur ajoute des produits en dehors de son accès'
-description: Le correctif MDVA-41350 corrige le problème où une erreur d’exception est déclenchée au lieu d’une notification d’accès limité lorsqu’un utilisateur administrateur ajoute un produit dans la commande par SKU qui n’est pas accessible. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.11 est installé. L’ID du correctif est MDVA-41350. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
+description: Le correctif MDVA-41350 corrige le problème où une erreur d’exception est déclenchée au lieu d’une notification d’accès limité lorsqu’un utilisateur administrateur ajoute un produit dans la commande par SKU qui n’est pas accessible. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.11 est installé. L’ID du correctif est MDVA-41350. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 feature: Admin Workspace, Products
 role: Admin
 exl-id: 4dc5ee5c-bd93-42e1-9c63-93ffb8e5f21c
@@ -56,7 +56,7 @@ Une exception se produit.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

@@ -60,4 +60,4 @@ Consultez [Cloud for Adobe Commerce > Appliquer des correctifs](https://experien
 ## Lecture connexe
 
 * [Notes de mise à jour de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/release-notes.md) dans notre documentation destinée aux développeurs.
-* [Application des correctifs de compositeur fournis par Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) dans la base de connaissances d’assistance.
+* [Application des correctifs de compositeur fournis par Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) dans la base de connaissances d’assistance.

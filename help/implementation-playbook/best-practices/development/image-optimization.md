@@ -37,4 +37,4 @@ Une fois que vous avez configuré le service Fastly pour votre projet Adobe Comm
 ## Informations supplémentaires
 
 - [Configuration rapide](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration)
-- [Des images mal optimisées peuvent entraîner des problèmes de performances](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow)
+- [Des images mal optimisées peuvent entraîner des problèmes de performances](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow)

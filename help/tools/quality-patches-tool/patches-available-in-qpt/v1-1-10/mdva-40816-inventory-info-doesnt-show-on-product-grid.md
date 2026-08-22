@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40816 : données d’inventaire non affichées sur la grille de produits'
-description: Le correctif MDVA-40816 résout le problème où les informations d’inventaire ne s’affichent pas sur la grille de produits si un SKU de produit contient des caractères spéciaux. Ce correctif est disponible lorsque l’[Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 est installé. L’ID du correctif est MDVA-40816. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
+description: Le correctif MDVA-40816 résout le problème où les informations d’inventaire ne s’affichent pas sur la grille de produits si un SKU de produit contient des caractères spéciaux. Ce correctif est disponible lorsque l’[Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 est installé. L’ID du correctif est MDVA-40816. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 feature: Admin Workspace, Inventory, Orders, Products
 role: Admin
 exl-id: be1dbf75-389d-4bb2-847f-56afb746e4ce

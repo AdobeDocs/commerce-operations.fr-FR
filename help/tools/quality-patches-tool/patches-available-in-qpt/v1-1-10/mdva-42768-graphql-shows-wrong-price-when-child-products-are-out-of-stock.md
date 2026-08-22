@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-42768 : GraphQL affiche un prix incorrect lorsque les produits enfants sont en rupture de stock'
-description: Le correctif MDVA-42768 corrige le problème en raison duquel GraphQL affiche un prix incorrect lorsque les produits enfants qu’un produit configurable est en rupture de stock. Ce correctif est disponible lorsque l’[Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 est installé. L’ID du correctif est MDVA-42768. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
+description: Le correctif MDVA-42768 corrige le problème en raison duquel GraphQL affiche un prix incorrect lorsque les produits enfants qu’un produit configurable est en rupture de stock. Ce correctif est disponible lorsque l’[Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 est installé. L’ID du correctif est MDVA-42768. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 feature: GraphQL, Orders, Products
 role: Admin
 exl-id: 9f6ab418-2267-4548-952a-17dc8295f632

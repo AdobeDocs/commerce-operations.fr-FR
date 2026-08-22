@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-39993 : les modifications d’inventaire effectuées par le biais de l’API ne sont pas répercutées sur le storefront'
-description: Le correctif MDVA-39993 résout le problème où les modifications d’inventaire effectuées via l’API ne sont pas répercutées sur le storefront. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12 est installé. L’ID du correctif est MDVA-39993. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
+description: Le correctif MDVA-39993 résout le problème où les modifications d’inventaire effectuées via l’API ne sont pas répercutées sur le storefront. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12 est installé. L’ID du correctif est MDVA-39993. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 feature: REST, Inventory, Orders, Storefront
 role: Admin
 exl-id: 5fa13635-bd58-470b-a4d5-e50cda8a46e3

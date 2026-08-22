@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-34948 : Ralentissement du site web'
-description: Le correctif MDVA-34948 Adobe Commerce corrige le problème de ralentissement du site web. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.1 est installé. L’ID du correctif est MDVA-34948. Notez que le problème a été résolu dans la version 2.4.1 d’Adobe Commerce.
+description: Le correctif MDVA-34948 Adobe Commerce corrige le problème de ralentissement du site web. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.1 est installé. L’ID du correctif est MDVA-34948. Notez que le problème a été résolu dans la version 2.4.1 d’Adobe Commerce.
 feature: Observability, Configuration
 role: Admin
 exl-id: 3c2a2d44-7d60-42da-a0a3-785fb61d571e
@@ -55,7 +55,7 @@ Plusieurs requêtes `GET_LOCK` sont bloquées pendant 10 secondes maximum chacun
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
