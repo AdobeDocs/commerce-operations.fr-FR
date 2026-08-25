@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0537a7cf89e2c427c5c525f2d510d29eb8bb8aa6
+source-git-commit: 9f9c38163d91b655bf44cac81875dab59ee2c77d
 workflow-type: tm+mt
-source-wordcount: '2690'
+source-wordcount: '2845'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### 19 Août 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Mise à jour de la documentation sur la mise en cache de Commerce avec des conseils plus clairs sur site par rapport au cloud et de nouveaux conseils de migration pour passer à Valkey avec le cache Symfony L2 :<br />- Mise à jour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/caching-overview">Présentation de la mise en cache et options de configuration</a>.<br />- Mise à jour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/cache-types">Configuration des fronts et des types de cache</a>.<br />- Mise à jour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/cache-options">Options de serveur principal et référence de stockage du cache</a>.<br />- Mise à jour de la configuration du cache <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/level-two-cache"> L2 pour l’optimisation des performances</a> avec des conseils pour migrer de <code>RemoteSynchronizedCache</code> vers le cache Symfony L2.<br />- Mise à jour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Bonnes pratiques pour la configuration de Valkey et Redis Service</a> avec des étapes de migration spécifiques au cloud vers le cache L2.</p>
+</td>
+      <td>
+        Mise à jour majeure
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a840b544de95a4bb17ef49d0325b16d461aecaa">validation</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 14 Août 2026
 
