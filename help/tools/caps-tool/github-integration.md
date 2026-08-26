@@ -17,7 +17,7 @@ Si votre projet Adobe Commerce Cloud est connecté à un référentiel GitHub, v
 ## Conditions préalables
 
 * Un abonnement Adobe Commerce Cloud actif
-* Une [&#x200B; intégration GitHub &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github) déjà configurée pour votre projet Adobe Commerce Cloud, avec son option [`fetch-branches` activée](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration). [!DNL Patching Automation] crée et envoie les branches temporaires d’environnement d’intégration. Les opérations de correctif ne parviennent donc pas à créer l’environnement lorsque cette option est désactivée.
+* Une [&#x200B; intégration GitHub &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github) déjà configurée pour votre projet Adobe Commerce Cloud, avec son option [`fetch-branches` activée](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration). [!DNL Patching Automation] crée et envoie les branches temporaires d’environnement d’intégration. Les opérations de correctif ne parviennent donc pas à créer l’environnement lorsque cette option est désactivée.
 * Référentiel hébergé sur [!DNL github.com]. Les intégrations GitHub configurées avec un domaine personnalisé ne sont pas prises en charge.
 * Accès du propriétaire ou de l’administrateur à l’organisation ou au référentiel GitHub
 
