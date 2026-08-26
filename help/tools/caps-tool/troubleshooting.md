@@ -1,17 +1,17 @@
 ---
-title: Guide de dépannage d’[!DNL Cloud Automation Patching Service (CAPS)]
-description: Résolution des problèmes courants et des messages d’erreur dans  [!DNL Cloud Automation Patching Service (CAPS)]
+title: Guide de dépannage d’[!DNL Adobe Commerce Patching Automation]
+description: Résolution des problèmes courants et des messages d’erreur dans  [!DNL Adobe Commerce Patching Automation]
 hide: true
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1710'
 ht-degree: 0%
 
 ---
 
-# Guide de dépannage d’[!DNL Cloud Automation Patching Service (CAPS)]
+# Guide de dépannage d’[!DNL Adobe Commerce Patching Automation]
 
-Lors de l’utilisation de [!DNL CAPS] pour les opérations d’application de correctifs, vous pouvez rencontrer des messages d’erreur et des problèmes qui peuvent empêcher la réussite de l’application de correctifs ou la réversion. Ce guide fournit des solutions aux problèmes les plus courants.
+Lors de l’utilisation de [!DNL Patching Automation] pour les opérations d’application de correctifs, vous pouvez rencontrer des messages d’erreur et des problèmes qui peuvent empêcher la réussite de l’application de correctifs ou la réversion. Ce guide fournit des solutions aux problèmes les plus courants.
 
 ## Étapes de dépannage rapide
 
@@ -22,6 +22,10 @@ Lors de l’utilisation de [!DNL CAPS] pour les opérations d’application de c
 * Consultez les journaux d’erreurs pour obtenir des détails techniques
 * Suivez les solutions fournies dans ce guide
 
+>[!TIP]
+>
+>Dans la console cloud, les journaux de déploiement sont disponibles à partir du flux d’activités de votre projet, même après la suppression d’un environnement d’intégration temporaire.
+
 ### Durée des opérations de correctif
 
 Pour la plupart des environnements, la chronologie suivante décrit la durée des opérations d’application de correctifs, mais elle peut être plus longue en fonction de la taille et de la complexité de l’environnement :
@@ -30,6 +34,10 @@ Pour la plupart des environnements, la chronologie suivante décrit la durée de
 * **Application d’un correctif :** 5 à 15 minutes
 * **Post-traitement :** 10 à 40 minutes
 * **Total:** 15-60 minutes
+
+>[!NOTE]
+>
+>Le temps de post-traitement est estimé à partir de l’historique de déploiement de votre environnement. Il peut donc se situer en dehors de la plage ci-dessus pour les environnements à déploiement inhabituellement rapide ou lent.
 
 ### Annulation d’un correctif en cours
 
@@ -47,9 +55,23 @@ Pour la plupart des environnements, la chronologie suivante décrit la durée de
 
 ## Messages d’erreur courants et solutions
 
+>[!NOTE]
+>
+>Toutes les erreurs possibles ne sont pas répertoriées ci-dessous. Un échec non répertorié lors de la vérification préliminaire apparaît comme une « Erreur lors de la vérification préliminaire » générique ; un échec non répertorié lors de la validation apparaît comme une « Erreur lors du post-traitement » générique ; contactez l’assistance avec le texte exact de l’erreur dans les deux sens. Lors de l&#39;application de correctifs, un échec inattendu affiche directement le message d&#39;erreur sous-jacent brut au lieu de l&#39;un des secours génériques.
+
+### Erreurs de préparation à l’environnement
+
+#### « Le dernier déploiement n’a pas réussi. Assurez-vous que l’environnement est stable avant d’appliquer ou de rétablir les correctifs. »
+
+**Le cas échéant :** au début de la vérification préliminaire, avant toute validation spécifique au correctif
+
+**Cause :** le déploiement le plus récent de votre environnement cible ne s’est pas terminé correctement
+
+**Solution :** redéployez votre environnement cible et vérifiez que le déploiement est terminé (vérifiez son journal de déploiement dans la console Cloud) avant de retenter l’opération de correctif.
+
 ### Erreurs d’application de correctif
 
-#### « Impossible d’appliquer le correctif, car [!DNL CAPS] a détecté ces problèmes avec votre base de code ou le fichier correctif. »
+#### « Impossible d’appliquer le correctif, car [!DNL Patching Automation] a détecté ces problèmes avec votre base de code ou le fichier correctif. »
 
 **Le cas échéant :** lors de la vérification préliminaire
 
@@ -62,11 +84,11 @@ Pour la plupart des environnements, la chronologie suivante décrit la durée de
 * Vérifiez que le correctif est compatible avec votre version d’Adobe Commerce
 * Pensez à résoudre les conflits manuellement ou contactez l’assistance
 
-#### « Ce correctif n’a pas été géré par [!DNL CAPS]. Impossible d’annuler »
+#### « Vous essayez d’annuler un correctif qui n’a pas été appliqué via [!DNL Patching Automation]. Il est probable que le correctif ait été appliqué manuellement. »
 
 **Lorsque cela se produit :** pendant les opérations de restauration
 
-**Cause :** vous essayez d’annuler un correctif qui n’a pas été appliqué via [!DNL CAPS]
+**Cause :** vous essayez d’annuler un correctif qui n’a pas été appliqué via [!DNL Patching Automation]
 
 **Solution :** utilisez la même méthode que celle utilisée pour appliquer le correctif à l’origine, ou contactez le support pour obtenir une assistance manuelle
 
@@ -74,17 +96,28 @@ Pour la plupart des environnements, la chronologie suivante décrit la durée de
 
 #### « L’environnement n’est pas synchronisé avec le parent »
 
-**Lorsque cela se produit :** lors de la validation
+**Le cas échéant :** lors de la validation, dans la vérification de la synchronisation avant la fusion, avant la fusion de l’environnement d’intégration dans votre environnement cible
 
-**Cause :** votre environnement d’intégration diffère de l’environnement parent
+**Cause :** votre environnement d&#39;intégration diffère de l&#39;environnement parent, généralement parce que l&#39;environnement cible a changé pendant le test du correctif
 
 **Solutions:**
 
-* Synchroniser votre environnement avec la branche parent
-* Relancez l’opération de correctif
+* Réessayez l’opération de correctif une fois que l’environnement cible est stable
+* Évitez d’apporter des modifications à l’environnement cible lorsqu’une opération de correction est en cours
 * Contactez l’assistance si les problèmes de synchronisation persistent
 
-#### « Les mesures de protection de l’environnement de production ne sont pas respectées »
+#### « Échec de la vérification après fusion : les environnements ne sont pas synchronisés après la fusion. »
+
+**Le cas échéant :** lors de la validation, une fois que l’environnement d’intégration a déjà été fusionné dans votre environnement cible
+
+**Cause :** le code des deux environnements ne correspond pas après la fusion, généralement un délai de propagation temporaire de l’API Platform.sh plutôt qu’un véritable conflit
+
+**Solutions:**
+
+* Patientez quelques minutes et vérifiez à nouveau le statut de l’environnement. Ce problème se résout souvent tout seul
+* Si les environnements ne correspondent toujours pas après quelques minutes, contactez l’assistance Adobe.
+
+#### « Impossible de créer une tâche de correction dans un environnement de production lorsque cron est activé et que le mode de maintenance est désactivé. Veuillez activer le mode de maintenance et désactiver les tâches cron avant d’appliquer les correctifs. »
 
 **Le cas échéant :** lors de la vérification préliminaire des environnements de production.
 
@@ -95,57 +128,31 @@ Pour la plupart des environnements, la chronologie suivante décrit la durée de
 * Activation du mode de maintenance pour votre magasin de production
 * Désactivation des tâches cron dans votre environnement de production
 * Vérifiez que les deux conditions sont remplies avant de réessayer
+* Vous pouvez également cocher la case de remplacement dans l’interface utilisateur pour ignorer ces vérifications et continuer quand même. N’utilisez l’option de remplacement que si vous comprenez le risque lié à l’application de correctifs à la production sans ces mesures de protection en place
 
 >[!IMPORTANT]
 >
-> [!DNL CAPS] n’active pas automatiquement le mode de maintenance ou ne désactive pas les tâches cron. Vous devez effectuer ces tâches en externe
+> [!DNL Patching Automation] n’active pas automatiquement le mode de maintenance ou ne désactive pas les tâches cron. Vous devez effectuer ces tâches en externe
 
-#### « Le correctif a été appliqué, mais le contrôle d’intégrité a échoué. Envisagez de revenir en arrière. »
+#### « L’opération de correction est terminée, mais le contrôle de l’intégrité de l’environnement a échoué. Cela indique des problèmes potentiels liés au déploiement d’. Vérifiez le statut de l’environnement et envisagez d’annuler la modification. »
 
-**Le cas échéant :** après l’application du correctif pendant la validation
+**Le cas échéant :** après l’application du correctif ou la réversion, pendant la validation
 
-**Cause :** le correctif a été appliqué avec succès, mais les contrôles d’intégrité ont échoué
+**Cause :** le correctif a été appliqué ou annulé avec succès, mais la vérification d’intégrité suivante a échoué
 
 **Solutions:**
 
-* Vérification des journaux d’application pour identifier les erreurs spécifiques
-* Tester manuellement les fonctionnalités critiques
-* Pensez à rétablir le correctif si les problèmes persistent
-* Contactez l’assistance si vous avez besoin d’aide
+* Testez les workflows d’extraction et d’administration de storefront et critical pour vérifier si les clients sont réellement affectés
+* Dans la console cloud, examinez le statut de l’environnement et examinez les journaux d’application et de déploiement dans le flux de projets **Activité**. Recherchez les erreurs associées à l’opération ou au déploiement des correctifs.
+* Déclenchez un redéploiement manuel pour déterminer si l’échec du contrôle de l’intégrité a été causé par un problème transitoire de déploiement ou d’infrastructure.
+* Si le problème persiste, rétablissez le correctif. Si le correctif est géré par [!DNL Patching Automation] et que l’opération est disponible, sélectionnez [!UICONTROL Revert]. Si le correctif est un correctif personnalisé du répertoire `m2-hotfixes`, supprimez le fichier de correctif du référentiel du projet. Validez et envoyez la modification, puis redéployez l’environnement.
+* Si le problème persiste, contactez l’assistance Adobe. Incluez les informations suivantes dans votre demande d’assistance : ID du projet d’assistance, ID de l’environnement et ce message exact : la dernière opération ne s’est pas correctement terminée. L’assistance devra donc peut-être confirmer l’état de l’environnement.
 
 ### Erreurs d’authentification et d’accès
 
-#### « Échec de l’authentification pour le référentiel Adobe Commerce »
+#### « Accès refusé »
 
-**Le cas échéant :** à n’importe quelle étape
-
-**Cause :** informations d’identification de référentiel Adobe Commerce non valides ou expirées
-
-**Solutions:**
-
-Il existe deux options recommandées pour résoudre ce problème :
-
-**Option 1 : Correction de `env:COMPOSER_AUTH` variable au niveau de l’environnement (recommandée)**
-
-* Vérifiez que vous avez configuré les informations d’identification appropriées pour `env:COMPOSER_AUTH`.
-* Accédez à la configuration globale en cliquant sur l’icône d’engrenage en haut à gauche de l’interface utilisateur de votre projet cloud, puis sélectionnez l’onglet **Variables**.
-* Veillez à sélectionner _Disponible au moment de la création_ et désélectionnez _Disponible au moment de l’exécution_.
-
-Si l’option 1 ne résout pas votre problème, passez à l’option 2.
-
-**Option 2 : créer et déployer `auth.json` fichier manuellement**
-
-* SSH dans votre serveur.
-* Récupérez le contenu de la variable de `env:COMPOSER_AUTH` actuelle à l’aide de :\
-  `echo $COMPOSER_AUTH`
-* Copiez tout le contenu de l’étape ci-dessus (au format JSON).
-* Créez un fichier nommé `auth.json` avec ces contenus.
-* Validez ce fichier `auth.json` nouvellement créé dans le répertoire racine de votre référentiel.
-* Déclenchez un nouveau déploiement .
-
-#### « Autorisations insuffisantes pour l’accès à l’environnement »
-
-**Lorsque cela se produit :** lors de la création ou de l’accès à l’environnement
+**Le cas échéant :** lorsque votre compte ne dispose pas des autorisations requises lors de la création ou de l’accès à l’environnement
 
 **Cause :** votre compte utilisateur ne dispose pas des autorisations nécessaires
 
@@ -158,57 +165,56 @@ Si l’option 1 ne résout pas votre problème, passez à l’option 2.
 
 ### Erreurs d’intégration GitHub
 
-#### « Aucune information d’identification Git disponible pour le fournisseur github. Installez l’application CAPS GitHub pour ce référentiel. »
+#### « Aucune information d’identification Git disponible pour le fournisseur « github ». Installez l’application GitHub d’automatisation des correctifs pour ce référentiel. »
 
 **Le cas échéant :** lors des opérations de correctif pour les projets connectés à GitHub.
 
-**Cause :** l’application [!DNL CAPS] GitHub n’est pas installée sur votre référentiel
+**Cause :** l’application [!DNL Patching Automation] GitHub n’est pas installée sur votre référentiel
 
-**Solution :** suivez les étapes de la section [Configurer l’intégration GitHub pour [!DNL CAPS]](github-integration.md)
+**Solution :** suivez les étapes de la section [Configurer l’intégration GitHub pour [!DNL Patching Automation]](github-integration.md)
 
 #### « Échec de la requête d’API GitHub »
 
 **Lorsque cela se produit :** lors des opérations de correctif pour les projets connectés à GitHub
 
-**Cause :** un problème temporaire a empêché [!DNL CAPS] de se connecter à GitHub
+**Cause :** un problème temporaire a empêché le service de se connecter à GitHub
 
-**Solution :** patientez quelques minutes et recommencez l’opération. Si l’erreur persiste, contactez l’[assistance d’Adobe Commerce Cloud](https://experienceleague.adobe.com/home?lang=fr#support)
+**Solution :** patientez quelques minutes et recommencez l’opération. Si l’erreur persiste, contactez l’[assistance d’Adobe Commerce Cloud](https://experienceleague.adobe.com/home#support)
 
 #### « Environnement non créé pendant la temporisation » (projet connecté à GitHub)
 
 **Lorsque cela se produit :** lors de la création de l’environnement d’intégration
 
-**Cause :** l’option `fetch-branches` est désactivée pour l’intégration GitHub du projet, de sorte que les branches temporaires [!DNL CAPS] les notifications push ne sont pas synchronisées et que l’environnement d’intégration n’est jamais créé.
+**Cause :** l’option `fetch-branches` est désactivée pour l’intégration GitHub du projet. Par conséquent, les branches temporaires transmises par le service ne sont pas synchronisées et l’environnement d’intégration n’est jamais créé.
 
-**Solution :** activez l’option [`fetch-branches` de l’intégration](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) puis relancez l’opération. Voir [&#x200B; Configuration de l’intégration GitHub pour  [!DNL CAPS]](github-integration.md).
+**Solution :** activez l’option [`fetch-branches` de l’intégration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) puis relancez l’opération. Voir [ Configuration de l’intégration GitHub pour  [!DNL Patching Automation]](github-integration.md).
 
-### Erreurs de ressource et de quota
+### Erreurs d’activation de l’environnement
 
-#### « Quota d’environnement dépassé »
+#### « Impossible d’activer l’environnement d’intégration. »
 
-**Lorsque cela se produit :** lors de la création de l’environnement
+**Le cas échéant :** lorsque [!DNL Patching Automation] ne pouvez pas activer l’environnement d’intégration temporaire requis pour tester le correctif en toute sécurité.
 
-**Cause :** vous avez atteint la limite de votre environnement.
+**Cause :** dépend des détails supplémentaires affichés à côté de l’erreur :
 
-**Solutions:**
+**Si les détails mentionnent le compositeur ou les packages Adobe Commerce :**
 
-* Désactiver les environnements inutilisés
-* Nettoyage des anciennes branches et des anciens déploiements
-* Contacter l’assistance pour demander une augmentation de quota
-* Envisagez de mettre à niveau votre plan
+* Connectez-vous à [](https://account.magento.com/) (ou demandez au propriétaire de votre compte de le faire) et vérifiez que votre compte a accès à la base de code Commerce Enterprise.
+* Vérifiez que la paire de clés publique/privée du compositeur de votre projet est correcte — voir [Clés d’authentification](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+* Connectez-vous à [](https://account.magento.com/) (ou demandez au propriétaire de votre compte de le faire) et vérifiez que votre compte a accès à la base de code Commerce Enterprise.
+* Vérifiez que les clés d’authentification publique et privée du compositeur de votre projet sont correctes. Voir [Clés d’authentification](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+* Vérifiez que le package nommé dans le message d’erreur est disponible pour votre version de Commerce. Voir [Packages ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce).
 
-#### « Ressources insuffisantes pour l’opération »
+**Si les détails mentionnent des emplacements ou des ressources d’environnement :**
 
-**Le cas échéant :** à n’importe quelle étape
+* Dans la console cloud, ouvrez la présentation du projet et passez en revue les environnements et leurs statuts. Désactivez ou supprimez les environnements d’intégration inutilisés : sélectionnez l’environnement. Accédez à **[!UICONTROL Settings]>[!UICONTROL General]**. Définissez le statut de l’environnement sur inactif.
 
-**Cause :** votre environnement manque de CPU, de mémoire ou de stockage
+  Vous pouvez également utiliser l’interface en ligne de commande : `magento-cloud environment:list` / `magento-cloud environment:deactivate <environment-name>`
+* Vérifiez que votre projet dispose de suffisamment de ressources, par exemple d’espace disque.
+* Assurez-vous que l’environnement parent est stable (aucun déploiement actif) au moment de l’opération.
+* Contactez l’assistance Adobe si vous devez augmenter la limite de votre environnement.
 
-**Solutions:**
-
-* Vérifier l’utilisation des ressources de votre environnement
-* Libérez des ressources en nettoyant les fichiers
-* Attendre que les ressources soient disponibles
-* Contactez l’assistance si les problèmes de ressources persistent
+**Pour toute autre cause :** consultez les journaux d&#39;erreurs détaillés dans l&#39;interface utilisateur d&#39;automatisation des correctifs ou contactez l&#39;assistance avec le texte exact de l&#39;erreur.
 
 ## Obtention d’aide
 
@@ -228,7 +234,7 @@ Lorsque vous contactez l’assistance, fournissez les informations suivantes :
 
 * **Identifiant de projet** - Identifiant de votre projet Adobe Commerce Cloud
 * **Identifiant d’environnement** - Environnement spécifique dans lequel le problème s’est produit
-* **Identifiant de l’opération** - Identifiant de l’opération [!DNL CAPS]
+* **Identifiant de l’opération** - Identifiant de l’opération [!DNL Patching Automation]
 * **Détails de l’erreur** - Messages d’erreur complets et journaux
 * **Procédure à suivre** - Que faisiez-vous lorsque l’erreur s’est produite ?
 * **Tentatives précédentes** - Ce que vous avez déjà essayé de résoudre le problème
@@ -243,9 +249,9 @@ Pour obtenir des informations techniques plus détaillées :
 
 ### Rubriques connexes
 
-* [Documentation Adobe Commerce Cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/overview)
+* [Documentation Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
 * [Guide d’installation d’Adobe Commerce](/help/installation/overview.md)
-* [Présentation de CAPS](intro.md)
+* [Présentation de l&#39;automatisation des correctifs](intro.md)
 * [Accès](access.md)
 * [Présentation des workflows](workflow.md)
 * [Intégration de GitHub](github-integration.md)

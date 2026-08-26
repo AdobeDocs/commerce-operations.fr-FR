@@ -1,19 +1,19 @@
 ---
-title: Guide des bonnes pratiques [!DNL Cloud Automation Patching Service (CAPS)]
-description: Découvrez les bonnes pratiques pour une utilisation efficace et  [!DNL Cloud Automation Patching Service (CAPS)]  sécurité.
+title: Guide des bonnes pratiques [!DNL Adobe Commerce Patching Automation]
+description: Découvrez comment utiliser pour planifier [!DNL Adobe Commerce Patching Automation]  valider et appliquer des correctifs en toute sécurité, ce qui réduit les risques de déploiement et les interruptions de service.
 hide: true
-source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
+source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
-# Guide [!DNL Cloud Automation Patching Service (CAPS)] bonnes pratiques
+# Guide [!DNL Adobe Commerce Patching Automation] bonnes pratiques
 
-Le respect des bonnes pratiques est essentiel pour la réussite et la sécurité des opérations d’application de correctifs avec [!DNL Cloud Automation Patching Service] ([!DNL CAPS]). Ce guide fournit les bonnes pratiques complètes pour des opérations de correctifs efficaces, la gestion de l’environnement et l’excellence opérationnelle.
+Le respect des bonnes pratiques est essentiel à la réussite et à la sécurité des opérations de correctifs avec [!DNL Adobe Commerce Patching Automation]. Ce guide fournit les bonnes pratiques complètes pour des opérations de correctifs efficaces, la gestion de l’environnement et l’excellence opérationnelle.
 
-## Bonnes Pratiques Relatives Aux Correctifs Préalables
+## Bonnes pratiques en matière de pré-patch
 
 ### Préparation à l’environnement
 
@@ -24,21 +24,21 @@ Avant d’appliquer les correctifs, assurez-vous que votre environnement est cor
 * **Compte Adobe Commerce Cloud**
   * Abonnement Adobe Commerce Cloud actif
   * Licence Adobe Commerce valide
-  * Identifiants d’accès au référentiel configurés
+  * [Clés d’authentification du compositeur](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys) configurées pour accéder au référentiel Adobe Commerce
   * Autorisations de projet et d’environnement
 
 * **Ressources d’environnement**
-  * Emplacements d’environnement disponibles pour les tests temporaires
+  * Le projet a la capacité de créer un environnement d’intégration actif supplémentaire pour l’opération de correctif — voir [Gérer les branches avec la console cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches) pour plus d’informations sur les limites de l’environnement actif
   * Stockage, CPU et mémoire suffisants
   * Accès réseau aux référentiels Adobe
   * Environnement parent stable pour la synchronisation
 
 * **Préparation de l’environnement de production** (pour l’application de correctifs en production)
-  * Le mode de maintenance peut être activé.
-  * Les tâches cron peuvent être désactivées
-  * Procédures relatives aux fenêtres de maintenance établies
-  * Procédures de restauration documentées
-  * Plan de communication des parties prenantes prêt
+  * Activer le mode de maintenance
+  * Désactiver les tâches cron
+  * Définir des procédures relatives aux fenêtres de maintenance
+  * Procédures de restauration de documents
+  * Préparer le plan de communication des parties prenantes
 
 ## Bonnes pratiques relatives aux applications de correctifs
 
@@ -141,7 +141,7 @@ Avant d’appliquer les correctifs, assurez-vous que votre environnement est cor
 
 ## Résumé des bonnes pratiques clés
 
-### Bonnes pratiques essentielles pour le succès [!DNL CAPS]
+### Bonnes pratiques essentielles pour le succès [!DNL Patching Automation]
 
 * Effectuez toujours des tests de pré-production avant d’appliquer des correctifs aux environnements de production
 * Activez le mode de maintenance et désactivez les tâches cron pour les opérations de correctifs d’exploitation.
@@ -154,7 +154,7 @@ Avant d’appliquer les correctifs, assurez-vous que votre environnement est cor
 
 ## Rubriques connexes
 
-* [Présentation de CAPS](intro.md)
+* [Présentation de l&#39;automatisation des correctifs](intro.md)
 * [Accès](access.md)
 * [Présentation des workflows](workflow.md)
 * [Intégration de GitHub](github-integration.md)
