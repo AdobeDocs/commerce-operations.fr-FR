@@ -187,7 +187,7 @@ Pour la plupart des environnements, la chronologie suivante décrit la durée de
 
 **Cause :** l’option `fetch-branches` est désactivée pour l’intégration GitHub du projet. Par conséquent, les branches temporaires transmises par le service ne sont pas synchronisées et l’environnement d’intégration n’est jamais créé.
 
-**Solution :** activez l’option [`fetch-branches` de l’intégration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) puis relancez l’opération. Voir [ Configuration de l’intégration GitHub pour  [!DNL Patching Automation]](github-integration.md).
+**Solution :** activez l’option [`fetch-branches` de l’intégration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) puis relancez l’opération. Voir [&#x200B; Configuration de l’intégration GitHub pour  [!DNL Patching Automation]](github-integration.md).
 
 ### Erreurs d’activation de l’environnement
 
@@ -199,11 +199,11 @@ Pour la plupart des environnements, la chronologie suivante décrit la durée de
 
 **Si les détails mentionnent le compositeur ou les packages Adobe Commerce :**
 
-* Connectez-vous à [](https://account.magento.com/) (ou demandez au propriétaire de votre compte de le faire) et vérifiez que votre compte a accès à la base de code Commerce Enterprise.
+* Connectez-vous à [&#128279;](https://account.magento.com/) (ou demandez au propriétaire de votre compte de le faire) et vérifiez que votre compte a accès à la base de code Commerce Enterprise.
 * Vérifiez que la paire de clés publique/privée du compositeur de votre projet est correcte — voir [Clés d’authentification](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
-* Connectez-vous à [](https://account.magento.com/) (ou demandez au propriétaire de votre compte de le faire) et vérifiez que votre compte a accès à la base de code Commerce Enterprise.
+* Connectez-vous à [&#128279;](https://account.magento.com/) (ou demandez au propriétaire de votre compte de le faire) et vérifiez que votre compte a accès à la base de code Commerce Enterprise.
 * Vérifiez que les clés d’authentification publique et privée du compositeur de votre projet sont correctes. Voir [Clés d’authentification](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
-* Vérifiez que le package nommé dans le message d’erreur est disponible pour votre version de Commerce. Voir [Packages ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce).
+* Vérifiez que le package nommé dans le message d’erreur est disponible pour votre version de Commerce. Voir [Packages &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce).
 
 **Si les détails mentionnent des emplacements ou des ressources d’environnement :**
 
