@@ -1,21 +1,21 @@
 ---
-title: Présentation du workflow [!DNL Cloud Automation Patching Service (CAPS)]
-description: Découvrez le processus  [!DNL Cloud Automation Patching Service (CAPS)]  workflow, notamment la terminologie, les phases de workflow et les opérations pour une gestion automatisée des correctifs.
+title: Présentation du workflow [!DNL Adobe Commerce Patching Automation]
+description: Découvrez le processus  [!DNL Adobe Commerce Patching Automation]  workflow, notamment la terminologie, les phases de workflow et les opérations pour une gestion automatisée des correctifs.
 hide: true
-source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
+source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '1127'
 ht-degree: 0%
 
 ---
 
-# Présentation du workflow [!DNL Cloud Automation Patching Service (CAPS)]
+# Présentation du workflow [!DNL Adobe Commerce Patching Automation]
 
-Cette rubrique présente de manière générale le fonctionnement des opérations de correctifs à l’aide de [!DNL CAPS (Cloud Automation Patching Service)].
+Cette rubrique présente de manière générale le fonctionnement des opérations de correctifs à l’aide de [!DNL Adobe Commerce Patching Automation].
 
 ## Terminologie
 
-* **Opérations** - principales actions effectuées par [!DNL CAPS] :
+* **Opérations** - les principales actions effectuées par le service :
   * Appliquer
   * Rétablir
 * **Phases** - les trois phases du workflow :
@@ -26,19 +26,19 @@ Cette rubrique présente de manière générale le fonctionnement des opération
 
 ## Opérations
 
-[!DNL CAPS] prend en charge deux principales *opérations* pour gérer les correctifs dans votre environnement Adobe Commerce Cloud :
+[!DNL Patching Automation] prend en charge deux principales *opérations* pour gérer les correctifs dans votre environnement Adobe Commerce Cloud :
 
-* **Opération d’application** - ajoute les modifications de correctif à votre base de code via un processus sécurisé et validé. Les correctifs sont appliqués en plaçant les fichiers de correctifs dans le dossier « m2-hotfix ».
+* **Opération d’application** - ajoute les modifications de correctif à votre base de code via un processus sécurisé et validé. Les correctifs sont appliqués en plaçant les fichiers de correctifs dans le dossier `m2-hotfixes`.
 
-* **Rétablir l’opération** - supprime les correctifs précédemment appliqués de votre base de code en supprimant les fichiers de correctifs du dossier « m2-hotfixes ».
+* **Rétablir l’opération** - supprime les correctifs précédemment appliqués de votre base de code en supprimant les fichiers de correctifs du dossier `m2-hotfixes`.
 
 >[!IMPORTANT]
 >
->Les opérations de restauration ne sont disponibles que pour les correctifs appliqués à l’origine via [!DNL CAPS]. Les correctifs appliqués manuellement ou par d’autres méthodes ne peuvent pas être rétablis à l’aide de ce service.
+>Les opérations de restauration ne sont disponibles que pour les correctifs appliqués à l’origine via [!DNL Patching Automation]. Les correctifs appliqués manuellement ou par d’autres méthodes ne peuvent pas être rétablis à l’aide de ce service.
 
 ## Phases
 
-Le workflow [!DNL CAPS] utilise trois *phases* qui sont toujours exécutées dans cet ordre pour s’assurer que les correctifs sont appliqués de manière sûre et fiable :
+Le workflow [!DNL Patching Automation] utilise trois *phases* qui sont toujours exécutées dans cet ordre pour s’assurer que les correctifs sont appliqués de manière sûre et fiable :
 
 * **Vérification préliminaire** - Valide la compatibilité des correctifs et la préparation de l’environnement.
 * **Application de correctifs** - applique ou rétablit le correctif dans un environnement d’intégration.
@@ -64,69 +64,76 @@ La phase de vérification préliminaire confirme que le correctif peut être app
 
 ### Phase 2 : application de correctifs
 
-La phase d&#39;application du correctif applique ou rétablit le correctif dans un environnement d&#39;intégration temporaire à des fins de test. Au cours de cette étape, [!DNL CAPS] crée un environnement de test temporaire pour appliquer et tester en toute sécurité le correctif avant d’apporter des modifications à votre environnement réel.
+La phase d&#39;application du correctif applique ou rétablit le correctif dans un environnement d&#39;intégration temporaire. Au cours de cette étape, le service crée un environnement d’intégration temporaire pour appliquer le correctif en toute sécurité, confirmer qu’il se déploie correctement et vérifier qu’il réussit un contrôle d’intégrité avant d’apporter des modifications à votre environnement réel.
 
 Cette approche permet d’obtenir les éléments suivants :
 
-* **Sécurité** - maintient votre environnement cible intact jusqu’à ce que le patch soit validé
-* **Tests** - dans un environnement réel avant d’affecter la production
+* **Sécurité** : conserve votre environnement cible intact jusqu’à ce que l’environnement d’intégration se déploie avec succès et passe son contrôle d’intégrité
 * **Fonction de restauration** - si des problèmes sont détectés
 * **Isolation** - pour chaque opération de correctif
 
 #### Étape 2a : création de l’environnement d’intégration
 
-**Création de branche** - [!DNL CAPS] crée une branche d’environnement d’intégration temporaire nommée `{target-environment}-CAPS-{patch-id}`
+**Création de branche** - [!DNL Patching Automation] crée une branche d’environnement d’intégration temporaire nommée `{target-environment}-CAPS-{patch-id}`
 
 **Configuration de l’environnement** - L’environnement d’intégration est créé en tant qu’enfant de votre environnement cible
 
-**Synchronisation du code** - L’environnement d’intégration hérite de l’état exact de votre environnement cible
+**Synchronisation du code** - L’environnement d’intégration hérite de l’état exact du code de votre environnement cible (même base de code)
 
-**Besoins en ressources** - [!DNL CAPS] crée un environnement temporaire à l’aide de la base de code de votre environnement cible. Selon la documentation Adobe Commerce Cloud, chaque environnement (y compris les environnements d’intégration) dispose d’une allocation de stockage distincte en fonction de votre plan de stockage sous-traité. La quantité de stockage sous-traitée représente le stockage total pour chaque environnement. Dans la plupart des cas, vous ne rencontrerez aucun problème lié aux limitations de ressources. Si vous rencontrez une erreur liée aux limitations de ressources, vérifiez la taille de votre application et le stockage sous contrat dans votre forfait.
+**Pas de clonage de données** - L’environnement d’intégration ne reçoit pas de copie des données de l’environnement cible (base de données, média ou autre contenu stocké). Seule la base de code est utilisée pour appliquer et vérifier le correctif
+
+**Besoins en ressources** - La capacité de stockage totale de votre projet cloud est définie dans votre contrat. (Vérifiez sur la page ou la `magento-cloud subscription:info` de votre compte). L’allocation de disque de chaque environnement est configurée séparément, via la propriété `disk` dans `.magento.app.yaml`/`.magento/services.yaml`. Voir [Gérer l’espace disque](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) pour plus d’informations. Si une opération de correctif échoue en raison de limitations de stockage, comparez l’utilisation du disque de votre environnement d’intégration (`magento-cloud db:size`/`magento-cloud mount:size`) à son allocation configurée.
 
 #### Étape 2b : application de correctifs dans l’environnement d’intégration
 
 **Test sécurisé** - Le correctif est appliqué à l’environnement d’intégration et non directement à votre environnement cible
 
-**Gestion des fichiers** - Les fichiers correctifs sont placés dans le répertoire `m2-hotfixes/`
+**Gestion des fichiers** - Les fichiers correctifs sont placés dans le dossier `m2-hotfixes`
 
 **Opérations Git** - Les modifications sont validées et transmises à la branche de l’environnement d’intégration
 
 **Activation de l’environnement** - L’environnement d’intégration est activé pour déployer le code corrigé
 
+**Contrôle de l’intégrité** - Une fois activé, [!DNL Patching Automation] confirme ce qui suit avant de poursuivre la fusion : l’environnement d’intégration déployé avec succès et est intègre, l’application démarre et ses connexions de base de données et de cache sont accessibles.
+
 >[!NOTE]
 >
->Si votre projet utilise un référentiel GitHub externe, [!DNL CAPS] gère automatiquement l’authentification à l’aide de l’application [[!DNL CAPS] GitHub](github-integration.md). Aucune information d’identification supplémentaire n’est requise.
+>Si votre projet utilise un référentiel GitHub externe, le service gère automatiquement l’authentification à l’aide de l’application [[!DNL Patching Automation] GitHub](github-integration.md). Aucune information d’identification supplémentaire n’est requise, hormis l’installation de l’application.
 
 #### Étape 2c : fusion vers l’environnement cible
 
-**Extraction de l’environnement** - Extrait [!DNL CAPS] votre environnement cible localement
+**Vérification de la synchronisation** - Avant la fusion, le service confirme que l’environnement d’intégration est toujours actif, synchronisé avec l’environnement cible et intègre. Si la cible a changé lors de l&#39;application du correctif, l&#39;opération s&#39;arrête ici au lieu de fusionner
+
+**Extraction d’environnement** - Le service extrait votre environnement cible localement
 
 **Opération de fusion** - La branche d’environnement d’intégration est fusionnée dans l’environnement cible
 
-**Résolution des conflits** - Si des conflits se produisent, ils sont résolus automatiquement lorsque cela est possible
+**Gestion des conflits** - Si un conflit de fusion se produit, l’opération échoue et est signalée comme une erreur - elle n’est pas résolue automatiquement
 
 **Déploiement** - Les modifications fusionnées sont déployées dans votre environnement cible
 
-**Vérification** - [!DNL CAPS] vérifie que la fusion a réussi et que les environnements sont synchronisés
+**Vérification** - Le service vérifie que la fusion a réussi et que les environnements sont synchronisés
 
-**Nettoyage de l’environnement** - L’environnement d’intégration temporaire est supprimé pour libérer des ressources
-
-## Cycle de vie de l’environnement d’intégration
+### Cycle de vie de l’environnement d’intégration
 
 Les environnements d’intégration ont un cycle de vie spécifique pendant l’étape d’application des correctifs :
 
 * **Création** - Créé au début de l’étape d’application des correctifs
 * **Période d’activité** - Restez actif pendant l’application du correctif et les tests
-* **Nettoyage** - Supprimé automatiquement après une fusion réussie ou si l’opération échoue
+* **Nettoyage** - Supprimé immédiatement si l’opération échoue pendant la phase d’application du correctif, avant la fusion. Sinon, supprimé pendant la phase de validation, après la fusion, que la validation soit réussie ou non
 
 ### Phase 3 : validation
 
-La phase de validation garantit le bon fonctionnement de l’application de correctifs et effectue des contrôles d’intégrité.
+La phase de validation confirme que l’application corrigée démarre correctement et passe avec succès un contrôle d’intégrité.
 
 **Que se passe-t-il**
 
-* **Contrôle de l’intégrité de l’application** - vérifie que l’application démarre et s’exécute correctement
-* **Nettoyage** - supprime l’environnement temporaire, met à jour les journaux et notifie l’achèvement de l’opération.
+* **Contrôle de l’intégrité de l’application** : vérifie que l’application démarre et s’exécute correctement, et que ses connexions de base de données et de cache sont accessibles
+* **Nettoyage** - supprime l’environnement d’intégration temporaire et met à jour le statut de la tâche pour refléter l’achèvement de la tâche. L’activité de l’environnement reste visible dans le flux d’activités de votre projet.
+
+>[!IMPORTANT]
+>
+>Contrairement aux phases 1 et 2, ce contrôle d’intégrité s’exécute *après* la fusion du correctif dans votre environnement cible. En cas d’échec, la fusion n’est pas automatiquement restaurée. Votre environnement cible peut rester dans un état endommagé et une intervention manuelle (comme la restauration du correctif) est nécessaire pour le restaurer. Voir [Dépannage](troubleshooting.md) pour savoir comment procéder si cela se produit.
 
 ## Indicateurs de succès
 
@@ -134,7 +141,7 @@ La phase de validation garantit le bon fonctionnement de l’application de corr
 
 * « Traitement terminé avec succès » - Correctif appliqué sans problème
 * « Correctif appliqué » - Le correctif était déjà présent (aucune action n’est nécessaire).
-* Le fichier correctif a été placé dans le dossier « m2-hotfixes ».
+* Fichier de correctif placé dans `m2-hotfixes` dossier
 * Tous les contrôles de validation réussissent
 * Vérification de l’intégrité de l’application réussie
 
@@ -142,26 +149,28 @@ La phase de validation garantit le bon fonctionnement de l’application de corr
 
 * « Traitement terminé avec succès » - Correctif rétabli sans problème
 * « Le correctif a été rétabli » - Le correctif a déjà été rétabli (aucune action nécessaire)
-* Fichier de correctif supprimé avec succès du dossier « m2-hotfix »
+* Fichier de correctif supprimé du dossier `m2-hotfixes`
 * Tous les contrôles de validation réussissent
 * Vérification de l’intégrité de l’application réussie
 
 ## Sauvegardes de l’environnement de production
 
-[!DNL CAPS] comprend des mesures de protection spécifiques pour les environnements de production afin d&#39;éviter les interruptions accidentelles et de s&#39;assurer que les correctifs sont validés en toute sécurité au préalable.
+L’application ou la restauration de correctifs sur un environnement de production comporte plus de risques que sur d’autres environnements. Par conséquent, [!DNL Patching Automation] comprend deux mesures de protection spécifiques à la production.
 
-### Conditions préalables pour l’application de correctifs en production
+### Confirmation avant de commencer
 
-Avant d’appliquer des correctifs aux environnements de production, [!DNL CAPS] vérifie deux conditions critiques :
+Avant qu’une opération d’application ou de restauration ne commence dans un environnement de production, vous êtes invité à confirmer l’opération dans une boîte de dialogue. Cette étape de confirmation vous protège contre le démarrage accidentel d’une tâche en production.
 
-* **Mode de maintenance** - Le magasin doit être en mode de maintenance.
-* **Tâches Cron désactivées** - Les tâches Cron doivent être désactivées
+### Conditions préalables recommandées
 
-Si l’une de ces conditions n’est pas remplie, l’application du correctif est bloquée et l’utilisateur en est informé.
+Adobe recommande d’activer le mode de maintenance et de désactiver les tâches cron avant d’appliquer les correctifs à un environnement de production. Par défaut, [!DNL Patching Automation] vérifie que les deux conditions sont remplies et bloque l’opération avec une notification si l’une des conditions n’est pas remplie. Si vous comprenez les risques de continuer sans le mode de maintenance ou avec les tâches cron activées, cochez la case de remplacement dans l’interface utilisateur pour contourner cette vérification.
+
+* **Mode de maintenance** - Activation recommandée
+* **Tâches cron** - Désactivation recommandée
 
 ## Rubriques connexes
 
-* [Présentation de CAPS](intro.md)
+* [Présentation de l&#39;automatisation des correctifs](intro.md)
 * [Accès](access.md)
 * [Intégration de GitHub](github-integration.md)
 * [Bonnes pratiques](best-practices.md)

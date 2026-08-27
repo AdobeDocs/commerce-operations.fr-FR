@@ -1,21 +1,21 @@
 ---
-title: '[!DNL Cloud Automation Patching Service (CAPS)]'
-description: Découvrez  [!DNL Cloud Automation Patching Service (CAPS)], ses utilisations, comment y accéder et les bonnes pratiques pour appliquer des correctifs automatisés
+title: '[!DNL Adobe Commerce Patching Automation]'
+description: Découvrez  [!DNL Adobe Commerce Patching Automation], ses utilisations, comment y accéder et les bonnes pratiques pour appliquer des correctifs automatisés
 hide: true
-source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
+source-git-commit: f70924d6f0d1777104c59f3f9e776360308abceb
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
 
-# [!DNL Cloud Automation Patching Service (CAPS)]
+# [!DNL Adobe Commerce Patching Automation]
 
-Le [!DNL Cloud Automation Patching Service] ([!DNL CAPS]) est un outil qui automatise le processus d’application et de restauration des correctifs pour Adobe Commerce dans les environnements cloud. Il offre aux administrateurs de projet Commerce un workflow rationalisé permettant d’appliquer et d’annuler les correctifs. Ce workflow inclut une validation intégrée et des contrôles d’intégrité pour garantir la stabilité et la sécurité des environnements cloud.
+[!DNL Adobe Commerce Patching Automation] est un outil qui automatise le processus d’application et de rétablissement des correctifs pour Adobe Commerce dans les environnements cloud. Il offre aux administrateurs de projet Commerce un workflow rationalisé pour appliquer et rétablir les correctifs. La validation et les contrôles d’intégrité intégrés permettent de garantir la stabilité et la sécurité des environnements cloud.
 
 Ce guide est destiné aux commerçants et partenaires Adobe Commerce Cloud qui souhaitent rationaliser leur processus d’application de correctifs, réduire le risque de problèmes liés aux correctifs, améliorer la sécurité et la stabilité de leur environnement et automatiser les opérations d’application de correctifs de routine.
 
-## [!DNL CAPS] les rubriques
+## [!DNL Patching Automation] les rubriques
 
 * **[Accès](access.md)**
 * **[Présentation des workflows](workflow.md)**
@@ -37,27 +37,26 @@ Ce guide est destiné aux commerçants et partenaires Adobe Commerce Cloud qui s
 * **Service de correctifs automatisés avec workflow structuré**
   * **Vérification préliminaire** - Valide la compatibilité des correctifs et la préparation de l’environnement.
   * **Application de correctifs** - Applique ou rétablit automatiquement les correctifs dans les environnements d’intégration
-  * **Validation** - Effectue des contrôles d’intégrité et s’assure que les fonctionnalités critiques ne sont pas affectées
+  * **Validation** - Effectue un contrôle d’intégrité pour confirmer le démarrage de l’application et l’accessibilité de ses connexions de base de données et de cache
 
 * **Caractéristiques de sécurité**
-  * Crée des environnements d’intégration temporaires pour les tests.
   * Valide la compatibilité des correctifs avant application
-  * Maintient votre environnement cible inchangé jusqu’à ce que le correctif soit validé dans l’environnement temporaire
+  * Applique d’abord le correctif dans un environnement d’intégration temporaire (en confirmant qu’il se déploie correctement et qu’il réussit le contrôle de l’intégrité) avant de le fusionner dans votre environnement cible, puis effectue un contrôle de l’intégrité final immédiatement après le déploiement
   * Applique des correctifs au dossier `m2-hotfixes` avec suppression automatique lors de la réversion
 
 ## Intégrations avec Adobe Commerce Cloud
 
-[!DNL CAPS] est entièrement intégré à l’infrastructure cloud d’Adobe Commerce et fonctionne en toute transparence avec vos environnements cloud existants. Il tire parti des fonctionnalités natives du cloud d’pour des performances optimales, fournit une journalisation et une surveillance détaillées et s’intègre aux outils de support cloud d’Adobe Commerce.
+[!DNL Patching Automation] est entièrement intégré à l’infrastructure cloud d’Adobe Commerce et fonctionne en toute transparence avec vos environnements cloud existants. Il tire parti des fonctionnalités natives du cloud d’pour des performances optimales, fournit une journalisation et une surveillance détaillées et s’intègre aux outils de support cloud d’Adobe Commerce.
 
 ## Tutoriel vidéo
 
-Découvrez le service d’application automatisée de correctifs d’Adobe Cloud et comment cet outil aide les utilisateurs et utilisatrices à rechercher et à appliquer rapidement des correctifs de sécurité. La vidéo suivante explique comment y accéder via le tableau de bord SWAT, choisir votre projet et votre environnement, et appliquer des correctifs en un seul clic.
+Découvrez [!DNL Adobe Commerce Patching Automation] et comment cet outil permet aux utilisateurs et utilisatrices de trouver et d’appliquer rapidement des correctifs de sécurité. La vidéo suivante explique comment y accéder via le tableau de bord de l’outil d’analyse à l’échelle du site (SWAT), choisir votre projet et votre environnement, et appliquer des correctifs en un seul clic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3476249/?captions=fre_fr&learn=on&enablevpops)
 
 ## Cas d’utilisation courants
 
 * **Correctifs de sécurité** - Appliquez rapidement des mises à jour de sécurité critiques
-* **Restauration des correctifs** - Annulez en toute sécurité les correctifs problématiques appliqués via [!DNL CAPS]
+* **Restauration des correctifs** - Annulez en toute sécurité les correctifs problématiques appliqués par le service
 * **Conformité en matière de sécurité** - Maintenir les normes de sécurité grâce à l&#39;application automatique de correctifs
-* **Stabilité opérationnelle** - Assurer la stabilité de l’environnement par une validation automatisée
+* **Stabilité opérationnelle** - Confirme que l’application démarre et passe un contrôle d’intégrité après chaque opération de correctif

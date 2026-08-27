@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: e1ac67f8533c6a9f7948e982c3ddbd79f4e02855
+source-git-commit: c1fe8b4c04514603b6625f4b3cae5a9fac039cb1
 workflow-type: tm+mt
-source-wordcount: '10694'
+source-wordcount: '10695'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
   - [Génération d’un rapport d’état des correctifs](commerce-version-tool/generate-report.md)
   - [Dépannage](commerce-version-tool/troubleshooting.md)
   - [Notes de mise à jour](commerce-version-tool/release-notes.md)
-- MAJUSCULES {#caps-tool}
+- Automatisation de l&#39;application de correctifs {#caps-tool}
   - {hide-from-toc}[Introduction](caps-tool/intro.md)
   - {hide-from-toc}[Accès](caps-tool/access.md)
   - {hide-from-toc}[Présentation des workflows](caps-tool/workflow.md)
@@ -1107,6 +1107,6 @@ ht-degree: 0%
     - [Données nécessitant une migration manuelle](data-migration-tool/migrate-data/manual.md)
     - [Étapes suivant la migration des données](data-migration-tool/migrate-data/post-migration.md)
   - Ressources {#resources}
-    - [Dépannage](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
+    - [Dépannage](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
     - [Journal des modifications](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=fr)
