@@ -4,9 +4,9 @@ description: Découvrez les versions bêta d’Adobe Commerce et comment y parti
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: ba69e06096892027bd50485eaf69cef94b40d6ce
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,23 @@ L’accès anticipé aux fonctionnalités développées par Adobe permet aux cli
 ## Programmes Beta actuels
 
 Consultez les sections suivantes pour obtenir la liste des programmes bêta actifs.
+
+### Classement des attributs (Public Beta) {#attribute-ranking-public-beta}
+
+[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."}
+
+[!DNL Adobe Commerce Optimizer] règles de marchandisage prennent désormais en charge le **classement des attributs**, qui applique automatiquement une action **Boost**, **Bury** ou **Hide** aux produits qui correspondent à une ou plusieurs conditions d’attribut (comme la marque, la catégorie ou le fabricant) sans nécessiter de sélection de SKU individuelle. Le classement des attributs apparaît dans l’éditeur de règles avec le classement intelligent et le classement manuel. Utilisez-le avec **Toutes les listes de produits**, **règles de catégorie** et **règles de recherche**.
+
+**Principaux avantages**
+
+- Mettez à l’échelle le marchandisage sur de grands catalogues en ciblant les valeurs d’attribut au lieu des SKU individuels.
+- Booster, enterrer ou masquer chaque produit correspondant avec une seule règle, par exemple pour promouvoir une marque entière ou supprimer une couleur abandonnée.
+- Combinez des conditions d’attribut avec un classement intelligent : les produits appariés sont prioritaires et les produits non appariés continuent à être triés selon votre stratégie de classement.
+- Définissez la force d&#39;amplification ou d&#39;enterrement par condition pour affiner la façon dont la règle affecte les produits correspondants.
+
+Pour en savoir plus, consultez [Classement des attributs](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking) dans le guide des règles de marchandisage.
+
+Pour partager vos commentaires sur cette fonctionnalité bêta, envoyez un e-mail à [&#128279;](mailto:commerce-storefront-services@adobe.com).
 
 ### Correspondance de recherche et classement (Private Beta)
 
