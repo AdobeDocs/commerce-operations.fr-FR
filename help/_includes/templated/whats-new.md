@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3d85f2181ca7d234ceb181583533b25884b12fe1
+source-git-commit: 1459bd6961b08d778d43a87b380e23c3041c89bb
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: '1988'
 ht-degree: 1%
 
 ---
@@ -567,28 +567,6 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
         Nouvelle rubrique, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2cc434ac8efd0d9344140ad07f2f68d2d48b1fb4">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 6 juillet 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.80 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493">ACP2E-4493 : la grille d’archivage des commandes client affiche un statut de commande incorrect lorsque l’indexation asynchrone est activée</a>.</p>
-</td>
-      <td>
-        Nouvelle rubrique, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2fdbf6a4fd4924947a2cb2a508e067b8bb0d694c">validation</a></td>
     </tr>
   </tbody>
 </table>
