@@ -1,8 +1,7 @@
 ---
 title: Guide des bonnes pratiques [!DNL Adobe Commerce Patching Automation]
 description: Découvrez comment utiliser pour planifier [!DNL Adobe Commerce Patching Automation]  valider et appliquer des correctifs en toute sécurité, ce qui réduit les risques de déploiement et les interruptions de service.
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -24,11 +23,11 @@ Avant d’appliquer les correctifs, assurez-vous que votre environnement est cor
 * **Compte Adobe Commerce Cloud**
   * Abonnement Adobe Commerce Cloud actif
   * Licence Adobe Commerce valide
-  * [Clés d’authentification du compositeur](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/authentication-keys) configurées pour accéder au référentiel Adobe Commerce
+  * [Clés d’authentification du compositeur](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys) configurées pour accéder au référentiel Adobe Commerce
   * Autorisations de projet et d’environnement
 
 * **Ressources d’environnement**
-  * Le projet a la capacité de créer un environnement d’intégration actif supplémentaire pour l’opération de correctif — voir [Gérer les branches avec la console cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/console-branches) pour plus d’informations sur les limites de l’environnement actif
+  * Le projet a la capacité de créer un environnement d’intégration actif supplémentaire pour l’opération de correctif — voir [Gérer les branches avec la console cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches) pour plus d’informations sur les limites de l’environnement actif
   * Stockage, CPU et mémoire suffisants
   * Accès réseau aux référentiels Adobe
   * Environnement parent stable pour la synchronisation

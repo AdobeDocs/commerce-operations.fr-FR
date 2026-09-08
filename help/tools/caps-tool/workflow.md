@@ -1,8 +1,7 @@
 ---
 title: Présentation du workflow [!DNL Adobe Commerce Patching Automation]
 description: Découvrez le processus  [!DNL Adobe Commerce Patching Automation]  workflow, notamment la terminologie, les phases de workflow et les opérations pour une gestion automatisée des correctifs.
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 0%
@@ -82,7 +81,7 @@ Cette approche permet d’obtenir les éléments suivants :
 
 **Pas de clonage de données** - L’environnement d’intégration ne reçoit pas de copie des données de l’environnement cible (base de données, média ou autre contenu stocké). Seule la base de code est utilisée pour appliquer et vérifier le correctif
 
-**Besoins en ressources** - La capacité de stockage totale de votre projet cloud est définie dans votre contrat. (Vérifiez sur la page ou la `magento-cloud subscription:info` de votre compte). L’allocation de disque de chaque environnement est configurée séparément, via la propriété `disk` dans `.magento.app.yaml`/`.magento/services.yaml`. Voir [Gérer l’espace disque](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) pour plus d’informations. Si une opération de correctif échoue en raison de limitations de stockage, comparez l’utilisation du disque de votre environnement d’intégration (`magento-cloud db:size`/`magento-cloud mount:size`) à son allocation configurée.
+**Besoins en ressources** - La capacité de stockage totale de votre projet cloud est définie dans votre contrat. (Vérifiez sur la page ou la `magento-cloud subscription:info` de votre compte). L’allocation de disque de chaque environnement est configurée séparément, via la propriété `disk` dans `.magento.app.yaml`/`.magento/services.yaml`. Voir [Gérer l’espace disque](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) pour plus d’informations. Si une opération de correctif échoue en raison de limitations de stockage, comparez l’utilisation du disque de votre environnement d’intégration (`magento-cloud db:size`/`magento-cloud mount:size`) à son allocation configurée.
 
 #### Étape 2b : application de correctifs dans l’environnement d’intégration
 

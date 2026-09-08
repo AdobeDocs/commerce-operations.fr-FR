@@ -1,8 +1,7 @@
 ---
 title: Configurez l’intégration GitHub pour  [!DNL Adobe Commerce Patching Automation]
 description: Découvrez comment installer l’application  [!DNL Adobe Commerce Patching Automation]  pour activer les opérations de correctif pour les projets Adobe Commerce Cloud connectés à GitHub.
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 1%
@@ -17,7 +16,7 @@ Si votre projet Adobe Commerce Cloud est connecté à un référentiel GitHub, v
 ## Conditions préalables
 
 * Un abonnement Adobe Commerce Cloud actif
-* Une [&#x200B; intégration GitHub &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github) déjà configurée pour votre projet Adobe Commerce Cloud, avec son option [`fetch-branches` activée](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration). [!DNL Patching Automation] crée et envoie les branches temporaires d’environnement d’intégration. Les opérations de correctif ne parviennent donc pas à créer l’environnement lorsque cette option est désactivée.
+* Une [ intégration GitHub ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github) déjà configurée pour votre projet Adobe Commerce Cloud, avec son option [`fetch-branches` activée](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration). [!DNL Patching Automation] crée et envoie les branches temporaires d’environnement d’intégration. Les opérations de correctif ne parviennent donc pas à créer l’environnement lorsque cette option est désactivée.
 * Référentiel hébergé sur [!DNL github.com]. Les intégrations GitHub configurées avec un domaine personnalisé ne sont pas prises en charge.
 * Accès du propriétaire ou de l’administrateur à l’organisation ou au référentiel GitHub
 
@@ -25,7 +24,7 @@ Si votre projet Adobe Commerce Cloud est connecté à un référentiel GitHub, v
 
 Vous pouvez démarrer l’installation à partir de [!DNL Patching Automation] en cliquant sur **[!UICONTROL Install GitHub App]** dans l’interface utilisateur, ce qui vous redirige vers la page d’installation, ou en accédant directement à la page d’installation.
 
-1. Ouvrez la page [&#x200B; Installation de l’application GitHub d’automatisation des correctifs &#x200B;](https://github.com/apps/adobe-commerce-patching-automation).
+1. Ouvrez la page [ Installation de l’application GitHub d’automatisation des correctifs ](https://github.com/apps/adobe-commerce-patching-automation).
 1. Cliquez sur **[!UICONTROL Install]**.
 1. Sélectionnez l’organisation GitHub propriétaire de votre référentiel Adobe Commerce.
 1. Sous **[!UICONTROL Repository access]**, sélectionnez **[!UICONTROL Only select repositories]** et choisissez le référentiel de votre projet Adobe Commerce.
