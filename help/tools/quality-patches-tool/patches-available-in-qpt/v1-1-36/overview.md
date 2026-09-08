@@ -7,7 +7,7 @@ exl-id: ce2ee50b-246a-43b7-b520-d7a42749e0ee
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,6 @@ QPT v1.1.36 comprend les correctifs suivants :
 1. **ACSD-52736** : correction d’un problème en raison duquel un [!UICONTROL Cart Price Rule] qui inclut des exigences relatives à la quantité de produits configurable ne fonctionne pas comme prévu.
 1. **ACSD-47875** : corrige le problème en raison duquel les utilisateurs administrateurs ne sont pas en mesure d’ajouter un produit à un panier client à partir de l’administrateur pour une portée d’affichage de magasin spécifique avec la gestion des stocks.
 1. **ACSD-53176** : corrige le problème en raison duquel les *[!UICONTROL Related Product Rule]* avec *[!UICONTROL is one of]* condition ne correspondent pas aux produits.
-1. **ACSD-51666** : corrige l’erreur : *La session a expiré, veuillez vous reconnecter.* qui se produit lorsqu’un client tente de se connecter.
+1. **ACSD-51666** : corrige l’erreur : *La session a expiré, veuillez vous reconnecter.* cela se produit lorsqu’un client tente de se connecter.
 
 Utilisez le menu à gauche pour accéder à une page de correctif spécifique.
