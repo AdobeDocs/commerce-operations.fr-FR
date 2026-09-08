@@ -1,9 +1,9 @@
 ---
 title: Guide de dépannage d’[!DNL Adobe Commerce Patching Automation]
 description: Résolution des problèmes courants et des messages d’erreur dans  [!DNL Adobe Commerce Patching Automation]
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: f2b9ba118bfe4982a67ec5041141e5ee7548fc4d
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1639'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Lors de l’utilisation de [!DNL Patching Automation] pour les opérations d’a
 
 ### Durée des opérations de correctif
 
-Pour la plupart des environnements, la chronologie suivante décrit la durée des opérations d’application de correctifs, mais elle peut être plus longue en fonction de la taille et de la complexité de l’environnement :
+Pour la plupart des environnements, la chronologie suivante décrit la durée des opérations d’application de correctifs, mais elle peut prendre plus de temps en fonction de la taille et de la complexité de l’environnement :
 
 * **Pré-traitement :** 2-5 minutes
 * **Application d’un correctif :** 5 à 15 minutes
@@ -56,7 +56,7 @@ Pour la plupart des environnements, la chronologie suivante décrit la durée de
 
 >[!NOTE]
 >
->Toutes les erreurs possibles ne sont pas répertoriées ci-dessous. Un échec non répertorié lors de la vérification préliminaire apparaît comme une « Erreur lors de la vérification préliminaire » générique ; un échec non répertorié lors de la validation apparaît comme une « Erreur lors du post-traitement » générique ; contactez l’assistance avec le texte exact de l’erreur dans les deux sens. Lors de l&#39;application de correctifs, un échec inattendu affiche directement le message d&#39;erreur sous-jacent brut au lieu de l&#39;un des secours génériques.
+>Toutes les erreurs possibles ne sont pas répertoriées ci-dessous. Les échecs non répertoriés lors de la vérification ou de la validation préliminaire apparaissent comme des erreurs génériques. Contactez l’assistance avec le texte d’erreur exact. Lors de l&#39;application de correctifs, un échec inattendu affiche directement le message d&#39;erreur sous-jacent brut au lieu de l&#39;un des secours génériques.
 
 ### Erreurs de préparation à l’environnement
 
@@ -113,7 +113,7 @@ Pour la plupart des environnements, la chronologie suivante décrit la durée de
 
 **Solutions:**
 
-* Patientez quelques minutes et vérifiez à nouveau le statut de l’environnement. Ce problème se résout souvent tout seul
+* Patientez quelques minutes et vérifiez à nouveau le statut de l’environnement. Ce problème est souvent résolu automatiquement
 * Si les environnements ne correspondent toujours pas après quelques minutes, contactez l’assistance Adobe.
 
 #### « Impossible de créer une tâche de correction dans un environnement de production lorsque cron est activé et que le mode de maintenance est désactivé. Veuillez activer le mode de maintenance et désactiver les tâches cron avant d’appliquer les correctifs. »
@@ -131,7 +131,7 @@ Pour la plupart des environnements, la chronologie suivante décrit la durée de
 
 >[!IMPORTANT]
 >
-> [!DNL Patching Automation] n’active pas automatiquement le mode de maintenance ou ne désactive pas les tâches cron. Vous devez effectuer ces tâches en externe
+> [!DNL Patching Automation] n’active pas automatiquement le mode de maintenance et ne désactive pas les tâches cron. Effectuez ces procédures manuellement.
 
 #### « L’opération de correction est terminée, mais le contrôle de l’intégrité de l’environnement a échoué. Cela indique des problèmes potentiels liés au déploiement d’. Vérifiez le statut de l’environnement et envisagez d’annuler la modification. »
 
@@ -141,11 +141,11 @@ Pour la plupart des environnements, la chronologie suivante décrit la durée de
 
 **Solutions:**
 
-* Testez les workflows d’extraction et d’administration de storefront et critical pour vérifier si les clients sont réellement affectés
+* Testez les workflows storefront et critical checkout and Admin pour vérifier si les clients sont affectés
 * Dans la console cloud, examinez le statut de l’environnement et examinez les journaux d’application et de déploiement dans le flux de projets **Activité**. Recherchez les erreurs associées à l’opération ou au déploiement des correctifs.
-* Déclenchez un redéploiement manuel pour déterminer si l’échec du contrôle de l’intégrité a été causé par un problème transitoire de déploiement ou d’infrastructure.
-* Si le problème persiste, rétablissez le correctif. Si le correctif est géré par [!DNL Patching Automation] et que l’opération est disponible, sélectionnez [!UICONTROL Revert]. Si le correctif est un correctif personnalisé du répertoire `m2-hotfixes`, supprimez le fichier de correctif du référentiel du projet. Validez et envoyez la modification, puis redéployez l’environnement.
-* Si le problème persiste, contactez l’assistance Adobe. Incluez les informations suivantes dans votre demande d’assistance : ID du projet d’assistance, ID de l’environnement et ce message exact : la dernière opération ne s’est pas correctement terminée. L’assistance devra donc peut-être confirmer l’état de l’environnement.
+* Déclenchez un redéploiement manuel pour déterminer si un déploiement transitoire ou un problème d’infrastructure a provoqué l’échec du contrôle de l’intégrité.
+* Si le problème persiste, rétablissez le correctif. Si [!DNL Patching Automation] gère le correctif et que l’opération est disponible, sélectionnez [!UICONTROL Revert]. Si le correctif est un correctif personnalisé du répertoire `m2-hotfixes`, supprimez le fichier de correctif du référentiel du projet. Validez et envoyez la modification, puis redéployez l’environnement.
+* Si le problème persiste, contactez l’assistance Adobe. Incluez les informations suivantes dans votre demande d’assistance : ID du projet d’assistance, ID de l’environnement et ce message exact : la dernière opération ne s’est pas terminée correctement. L’assistance doit donc confirmer l’état de l’environnement.
 
 ### Erreurs d’authentification et d’accès
 
@@ -178,7 +178,7 @@ Pour la plupart des environnements, la chronologie suivante décrit la durée de
 
 **Cause :** un problème temporaire a empêché le service de se connecter à GitHub
 
-**Solution :** patientez quelques minutes et recommencez l’opération. Si l’erreur persiste, contactez l’[assistance d’Adobe Commerce Cloud](https://experienceleague.adobe.com/home?lang=fr#support)
+**Solution :** patientez quelques minutes et recommencez l’opération. Si l’erreur persiste, contactez l’[assistance d’Adobe Commerce Cloud](https://experienceleague.adobe.com/home#support)
 
 #### « Environnement non créé pendant la temporisation » (projet connecté à GitHub)
 
@@ -186,7 +186,7 @@ Pour la plupart des environnements, la chronologie suivante décrit la durée de
 
 **Cause :** l’option `fetch-branches` est désactivée pour l’intégration GitHub du projet. Par conséquent, les branches temporaires transmises par le service ne sont pas synchronisées et l’environnement d’intégration n’est jamais créé.
 
-**Solution :** activez l’option [`fetch-branches` de l’intégration](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) puis relancez l’opération. Voir [&#x200B; Configuration de l’intégration GitHub pour  [!DNL Patching Automation]](github-integration.md).
+**Solution :** activez l’option [`fetch-branches` de l’intégration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) puis relancez l’opération. Voir [ Configuration de l’intégration GitHub pour  [!DNL Patching Automation]](github-integration.md).
 
 ### Erreurs d’activation de l’environnement
 
@@ -198,18 +198,16 @@ Pour la plupart des environnements, la chronologie suivante décrit la durée de
 
 **Si les détails mentionnent le compositeur ou les packages Adobe Commerce :**
 
-* Connectez-vous à [&#128279;](https://account.magento.com/) (ou demandez au propriétaire de votre compte de le faire) et vérifiez que votre compte a accès à la base de code Commerce Enterprise.
-* Vérifiez que la paire de clés publique/privée du compositeur de votre projet est correcte — voir [Clés d’authentification](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
-* Connectez-vous à [&#128279;](https://account.magento.com/) (ou demandez au propriétaire de votre compte de le faire) et vérifiez que votre compte a accès à la base de code Commerce Enterprise.
-* Vérifiez que les clés d’authentification publique et privée du compositeur de votre projet sont correctes. Voir [Clés d’authentification](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
-* Vérifiez que le package nommé dans le message d’erreur est disponible pour votre version de Commerce. Voir [Packages &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/packages/adobe-commerce).
+* Connectez-vous à [](https://account.magento.com/customer/account/login) (ou demandez au propriétaire de votre compte de le faire) et vérifiez que votre compte a accès à la base de code Commerce Enterprise.
+* Vérifiez que les clés d’authentification publique et privée du compositeur de votre projet sont correctes. Voir [Clés d’authentification](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+* Vérifiez que le package nommé dans le message d’erreur est disponible pour votre version de Commerce. Voir [Packages ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce).
 
 **Si les détails mentionnent des emplacements ou des ressources d’environnement :**
 
-* Dans la console cloud, ouvrez la présentation du projet et passez en revue les environnements et leurs statuts. Désactivez ou supprimez les environnements d’intégration inutilisés : sélectionnez l’environnement. Accédez à **[!UICONTROL Settings]>[!UICONTROL General]**. Définissez le statut de l’environnement sur inactif.
+* Dans la console cloud, ouvrez la présentation du projet et passez en revue les environnements et leurs statuts. Désactivez ou supprimez les environnements d’intégration inutilisés : sélectionnez l’environnement. Accédez à **[!UICONTROL Settings]>[!UICONTROL General]**. Pour désactiver l’environnement, définissez son statut sur inactif.
 
   Vous pouvez également utiliser l’interface en ligne de commande : `magento-cloud environment:list` / `magento-cloud environment:deactivate <environment-name>`
-* Vérifiez que votre projet dispose de suffisamment de ressources, par exemple d’espace disque.
+* Vérifiez que le projet dispose de suffisamment de ressources, par exemple d’espace disque.
 * Assurez-vous que l’environnement parent est stable (aucun déploiement actif) au moment de l’opération.
 * Contactez l’assistance Adobe si vous devez augmenter la limite de votre environnement.
 
@@ -248,7 +246,7 @@ Pour obtenir des informations techniques plus détaillées :
 
 ### Rubriques connexes
 
-* [Documentation Adobe Commerce Cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/overview)
+* [Documentation Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
 * [Guide d’installation d’Adobe Commerce](/help/installation/overview.md)
 * [Présentation de l&#39;automatisation des correctifs](intro.md)
 * [Accès](access.md)
