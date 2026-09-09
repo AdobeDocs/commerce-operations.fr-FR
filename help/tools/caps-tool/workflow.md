@@ -1,8 +1,7 @@
 ---
 title: Présentation du workflow [!DNL Adobe Commerce Patching Automation]
 description: Découvrez le processus  [!DNL Adobe Commerce Patching Automation]  workflow, notamment la terminologie, les phases de workflow et les opérations pour une gestion automatisée des correctifs.
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: a56211744d35006924bd4ffd35c76ddb77118ed4
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 0%
@@ -74,27 +73,27 @@ Cette approche permet d’obtenir les éléments suivants :
 
 #### Étape 2a : création de l’environnement d’intégration
 
-**Création de branche** - [!DNL Patching Automation] crée une branche d’environnement d’intégration temporaire nommée `{target-environment}-CAPS-{patch-id}`
+**Création de branche** — [!DNL Patching Automation] crée une branche d&#39;environnement d&#39;intégration temporaire nommée `{target-environment}-CAPS-{patch-id}`
 
-**Configuration de l’environnement** - L’environnement d’intégration est créé en tant qu’enfant de votre environnement cible
+**Configuration de l&#39;environnement** — L&#39;environnement d&#39;intégration est créé en tant qu&#39;enfant de votre environnement cible
 
-**Synchronisation du code** - L’environnement d’intégration hérite de l’état exact du code de votre environnement cible (même base de code)
+**Synchronisation du code** — L&#39;environnement d&#39;intégration hérite de l&#39;état exact du code de votre environnement cible (la même base de code)
 
-**Pas de clonage de données** - L’environnement d’intégration ne reçoit pas de copie des données de l’environnement cible (base de données, média ou autre contenu stocké). Seule la base de code est utilisée pour appliquer et vérifier le correctif
+**Pas de clonage de données** — L&#39;environnement d&#39;intégration ne reçoit pas de copie des données de l&#39;environnement cible (base de données, média ou autre contenu stocké) — seule la base de code est utilisée pour appliquer et vérifier le correctif
 
-**Besoins en ressources** - La capacité de stockage totale de votre projet cloud est définie dans votre contrat. (Vérifiez sur la page ou la `magento-cloud subscription:info` de votre compte). L’allocation de disque de chaque environnement est configurée séparément, via la propriété `disk` dans `.magento.app.yaml`/`.magento/services.yaml`. Voir [Gérer l’espace disque](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) pour plus d’informations. Si une opération de correctif échoue en raison de limitations de stockage, comparez l’utilisation du disque de votre environnement d’intégration (`magento-cloud db:size`/`magento-cloud mount:size`) à son allocation configurée.
+**Besoins en ressources** — La capacité de stockage totale de votre projet Cloud est définie dans votre contrat. (Vérifiez sur la page ou la `magento-cloud subscription:info` de votre compte). L’allocation de disque de chaque environnement est configurée séparément, via la propriété `disk` dans `.magento.app.yaml`/`.magento/services.yaml`. Voir [Gérer l’espace disque](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) pour plus d’informations. Si une opération de correctif échoue en raison de limitations de stockage, comparez l’utilisation du disque de votre environnement d’intégration (`magento-cloud db:size`/`magento-cloud mount:size`) à son allocation configurée.
 
 #### Étape 2b : application de correctifs dans l’environnement d’intégration
 
-**Test sécurisé** - Le correctif est appliqué à l’environnement d’intégration et non directement à votre environnement cible
+**Test sécurisé** — Le correctif est appliqué à l’environnement d’intégration et non directement à votre environnement cible
 
-**Gestion des fichiers** - Les fichiers correctifs sont placés dans le dossier `m2-hotfixes`
+**Gestion des fichiers** — Les fichiers de correctifs sont placés dans le dossier `m2-hotfixes`
 
-**Opérations Git** - Les modifications sont validées et transmises à la branche de l’environnement d’intégration
+**Opérations Git** — Les modifications sont validées et transmises à la branche de l’environnement d’intégration
 
-**Activation de l’environnement** - L’environnement d’intégration est activé pour déployer le code corrigé
+**Activation de l’environnement** — L’environnement d’intégration est activé pour déployer le code corrigé
 
-**Contrôle de l’intégrité** - Une fois activé, [!DNL Patching Automation] confirme ce qui suit avant de poursuivre la fusion : l’environnement d’intégration déployé avec succès et est intègre, l’application démarre et ses connexions de base de données et de cache sont accessibles.
+**Vérification de l’intégrité** — Une fois activé, [!DNL Patching Automation] confirme ce qui suit avant de poursuivre la fusion : l’environnement d’intégration déployé avec succès et est intègre, l’application démarre et ses connexions de base de données et de cache sont accessibles.
 
 >[!NOTE]
 >
@@ -102,17 +101,17 @@ Cette approche permet d’obtenir les éléments suivants :
 
 #### Étape 2c : fusion vers l’environnement cible
 
-**Vérification de la synchronisation** - Avant la fusion, le service confirme que l’environnement d’intégration est toujours actif, synchronisé avec l’environnement cible et intègre. Si la cible a changé lors de l&#39;application du correctif, l&#39;opération s&#39;arrête ici au lieu de fusionner
+**Vérification de la synchronisation** — Avant la fusion, le service confirme que l’environnement d’intégration est toujours actif, synchronisé avec l’environnement cible et intègre. Si la cible a changé lors de l&#39;application du correctif, l&#39;opération s&#39;arrête ici au lieu de fusionner
 
-**Extraction d’environnement** - Le service extrait votre environnement cible localement
+**Extraction d’environnement** — Le service extrait votre environnement cible localement
 
-**Opération de fusion** - La branche d’environnement d’intégration est fusionnée dans l’environnement cible
+**Opération de fusion** — La branche de l&#39;environnement d&#39;intégration est fusionnée dans l&#39;environnement cible
 
-**Gestion des conflits** - Si un conflit de fusion se produit, l’opération échoue et est signalée comme une erreur - elle n’est pas résolue automatiquement
+**Gestion des conflits** — Si un conflit de fusion se produit, l&#39;opération échoue et est signalée comme une erreur — elle n&#39;est pas résolue automatiquement
 
-**Déploiement** - Les modifications fusionnées sont déployées dans votre environnement cible
+**Déploiement** — Les modifications fusionnées sont déployées dans votre environnement cible
 
-**Vérification** - Le service vérifie que la fusion a réussi et que les environnements sont synchronisés
+**Vérification** — Le service vérifie que la fusion a réussi et que les environnements sont synchronisés
 
 ### Cycle de vie de l’environnement d’intégration
 

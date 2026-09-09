@@ -1,10 +1,9 @@
 ---
 title: Accès [!DNL Adobe Commerce Patching Automation]
 description: Découvrez comment accéder à et utiliser  [!DNL Adobe Commerce Patching Automation]
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: e7e2cb120377e73f2a6f80edcacfcf644b48be84
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
@@ -26,7 +25,7 @@ ht-degree: 1%
 Si vous ne voyez aucun projet dans l’interface utilisateur d’[!DNL Patching Automation], demandez l’accès à la personne appropriée :
 
 * Contactez le propriétaire du compte ou l’administrateur du projet
-* Ils vous accorderont le rôle approprié via la console cloud
+* Ils peuvent vous accorder le rôle approprié par le biais de la console cloud
 * Une fois l’accès accordé, vous pouvez vous connecter à la console cloud pour utiliser le service
 
 >[!NOTE]
@@ -35,7 +34,7 @@ Si vous ne voyez aucun projet dans l’interface utilisateur d’[!DNL Patching 
 
 ## Accès aux [!DNL Patching Automation]
 
-[!DNL Patching Automation] est disponible sous la forme d’un onglet dans le tableau de bord [!DNL Site-Wide Analysis Tool]. Vous pouvez y accéder à partir de votre panneau d’administration en accédant à **Rapports** > **Informations système** > **Outil d’analyse à l’échelle du site** sur la barre latérale d’administration. Consultez [Accès à l’outil d’analyse à l’échelle du site](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/site-wide-analysis-tool/access) pour connaître les conditions préalables et la configuration des autorisations.
+[!DNL Patching Automation] est disponible sous la forme d’un onglet dans le tableau de bord [!DNL Site-Wide Analysis Tool]. Pour y accéder à partir du panneau d’administration, sélectionnez **Rapports** > **Informations système** > **Outil d’analyse à l’échelle du site** dans la barre latérale d’administration. Consultez [Accès à l’outil d’analyse à l’échelle du site](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/site-wide-analysis-tool/access) pour connaître les conditions préalables et la configuration des autorisations.
 
 Une fois que vous êtes dans le tableau de bord :
 
