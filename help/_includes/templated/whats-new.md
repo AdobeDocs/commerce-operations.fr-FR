@@ -1,5 +1,5 @@
 ---
-source-git-commit: 1459bd6961b08d778d43a87b380e23c3041c89bb
+source-git-commit: 526e20111bfbdf299b18c39879ccbffc1550b22a
 workflow-type: tm+mt
 source-wordcount: '1988'
 ht-degree: 1%
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### 8 septembre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>L’automatisation des correctifs d’Adobe Commerce est désormais disponible. Voir la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/caps-tool/intro">documentation</a> pour en savoir plus.</p>
+</td>
+      <td>
+        Mise à jour majeure, nouvelle rubrique
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a88bfea449616c0b79c5bd3380bec74c68687052">validation</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 26 Août 2026
 
@@ -545,28 +567,6 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
         Nouvelle rubrique
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/43571d84d9a27ffa113ba4f3a8a08883602211f6">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 10 Juillet 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview">Présentation : Outil de correctifs de qualité (QPT) version 1.1.81</a>.</p>
-</td>
-      <td>
-        Nouvelle rubrique, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2cc434ac8efd0d9344140ad07f2f68d2d48b1fb4">validation</a></td>
     </tr>
   </tbody>
 </table>
