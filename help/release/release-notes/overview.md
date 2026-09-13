@@ -40,7 +40,7 @@ Le tableau ci-dessous contient des notes de mise à jour et des informations imp
             <li><a href="../lifecycle-policy.md">Politique relative au cycle de vie des logiciels</a></li>
             <li><a href="../version-upgrade-enforcement-policy.md">Politique d’application de la mise à niveau des versions du cloud</a></li>
             <li><a href="../security-enforcement-policy.md">Avis de sécurité et de conformité</a></li>
-            <li><a href="https://helpx.adobe.com/security/products/magento.html">Bulletin de sécurité d’Adobe</a></li>
+            <li><a href="https://helpx.adobe.com/fr/security/products/magento.html">Bulletin de sécurité d’Adobe</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=fr">B2B pour Adobe Commerce</a></li>
           </ul>
         </td>

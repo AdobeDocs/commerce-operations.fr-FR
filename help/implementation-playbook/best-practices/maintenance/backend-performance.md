@@ -39,7 +39,7 @@ GTmetrix est un outil que vous pouvez utiliser pour les tests de résistance. É
 
 En savoir plus sur la préparation des projets Commerce pour les périodes de trafic élevé :
 
-- [Préparation des vacances](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
+- [Préparation des vacances](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=fr)
 - [Analyse des achats de vacances](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=fr)
 - [Augmentation de la capacité de pointe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/holiday-surge-capacity-requests-for-magento-commerce-cloud)
 
