@@ -27,5 +27,5 @@ Les fichiers de correctifs de sécurité isolés sont des fichiers de correctifs
 
 Pour appliquer un fichier de correctif de sécurité isolé, les clients doivent disposer de la dernière version du correctif de sécurité uniquement (la dernière version -p) pour leur ligne de version prise en charge, car les fichiers de correctif de sécurité isolés sont testés exclusivement par rapport à cette version.
 
-Consultez le [Centre de sécurité](https://helpx.adobe.com/security/products/magento.html) pour connaître les dernières mises à jour de sécurité disponibles pour Adobe Commerce.
+Consultez le [Centre de sécurité](https://helpx.adobe.com/fr/security/products/magento.html) pour connaître les dernières mises à jour de sécurité disponibles pour Adobe Commerce.
 
