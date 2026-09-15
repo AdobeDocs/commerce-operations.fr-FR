@@ -3,7 +3,7 @@ title: Options du serveur principal de mise en cache et référence de stockage
 description: Découvrez les options du serveur principal de cache dans Adobe Commerce, notamment le système de fichiers, Redis, Valkey et le stockage dans la base de données. Découvrez les options Zend-based (RemoteSynchronizedCache) et Symfony Cache.
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
+badgePaas: label="Sur Site" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
 autotag-review: '2026-06-22T18:37:32.504Z'
 TQID: 'https://experienceleague.adobe.com/m7eUBNrt8UF43iJq9Tpl0Y1WcmR-dlt7Z4PoHvXVNnA'
 product_v2:
@@ -36,13 +36,13 @@ ht-degree: 0%
 >
 >Cette page documente la configuration `app/etc/env.php` locale.
 >
->Pour les projets [!DNL Adobe Commerce on Cloud], le package de `ece-tools` génère la configuration de `app/etc/env.php` résultante pendant le déploiement en fonction de la configuration de la variable de déploiement dans `.magento.env.yaml`. Vous ne modifiez pas le fichier `env.php`.  Voir [Bonnes pratiques pour la configuration des services Valkey et Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) et [Déployer des variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy).
+>Pour les projets [!DNL Adobe Commerce on Cloud], le package de `ece-tools` génère la configuration de `app/etc/env.php` résultante pendant le déploiement en fonction de la configuration de la variable de déploiement dans `.magento.env.yaml`. Vous ne modifiez pas le fichier `env.php`.  Voir [Bonnes pratiques pour la configuration des services Valkey et Redis](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) et [Déployer des variables](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy).
 
 L’application Commerce utilise un cache de bas niveau frontal et principal pour permettre l’accès au stockage du cache. Commerce prend en charge plusieurs stratégies et back-ends de mise en cache, chacun adapté à différents cas d’utilisation. Cette page décrit les serveurs principaux disponibles et leurs différences.
 
 >[!NOTE]
 >
->[Vernis](config-varnish-install.md) gère la mise en cache complète des pages au niveau HTTP pour les déploiements sur site. Le [service Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) s’en charge pour les déploiements dans le cloud. Aucune solution n’utilise le serveur principal de cache de bas niveau.
+>[Vernis](config-varnish-install.md) gère la mise en cache complète des pages au niveau HTTP pour les déploiements sur site. Le [service Fastly](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/fastly) s’en charge pour les déploiements dans le cloud. Aucune solution n’utilise le serveur principal de cache de bas niveau.
 
 ## Options de cache du serveur principal
 
@@ -127,7 +127,7 @@ Utilisez le nom de classe Redis complet uniquement sur les versions où Redis es
 
 La mise en cache L2 (à deux niveaux) ajoute une couche de cache locale sur chaque nœud web devant le stockage de cache distant partagé, réduisant ainsi le trafic réseau entre Commerce et le cache distant. Pour connaître les options d’implémentation, la prise en charge des versions et les étapes de configuration, consultez [Configuration du cache L2](level-two-cache.md).
 
-Pour les projets cloud, configurez la mise en cache L2 par le biais des variables de déploiement décrites dans [Déployer les variables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}.
+Pour les projets cloud, configurez la mise en cache L2 par le biais des variables de déploiement décrites dans [Déployer les variables](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}.
 
 - [Utiliser Redis pour le cache par défaut](redis-pg-cache.md)
 - [Utiliser Valkey pour le cache par défaut](valkey-pg-cache.md)
