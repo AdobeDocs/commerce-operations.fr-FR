@@ -500,7 +500,7 @@ Le cache et la configuration de session sont indépendants. `SESSION_CONFIGURATI
 
 >[!IMPORTANT]
 >
->Pour configurer une instance de session dédiée sur des environnements de production et d’évaluation, vous devez envoyer un [ticket d’assistance ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) avec vos fichiers `.magento/services.yaml` et `.magento.app.yaml` mis à jour, comme décrit à l’étape 3 ci-dessous.
+>Pour configurer une instance de session dédiée sur des environnements de production et d’évaluation, vous devez envoyer un [ticket d’assistance &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) avec vos fichiers `.magento/services.yaml` et `.magento.app.yaml` mis à jour, comme décrit à l’étape 3 ci-dessous.
 
 Pour configurer une instance dédiée pour les sessions , procédez comme suit :
 
@@ -543,7 +543,7 @@ Pour configurer une instance dédiée pour les sessions , procédez comme suit :
 
 1. Demandez une nouvelle instance Valkey dédiée aux sessions sur les environnements de production et d’évaluation.
 
-   Envoyez un [ticket d’assistance ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket). Incluez les fichiers de configuration `.magento/services.yaml` et `.magento.app.yaml` mis à jour.
+   Envoyez un [ticket d’assistance &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket). Incluez les fichiers de configuration `.magento/services.yaml` et `.magento.app.yaml` mis à jour.
 
    Cette mise à jour n’entraîne pas d’interruption, mais un déploiement est nécessaire pour activer le nouveau service.
 
@@ -618,7 +618,7 @@ Pour configurer une instance dédiée pour les sessions , procédez comme suit :
 
 1. Demandez une nouvelle instance Redis dédiée aux sessions sur les environnements de production et d’évaluation.
 
-   Envoyez un [ticket d’assistance ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket). Incluez les fichiers de configuration `.magento/services.yaml` et `.magento.app.yaml` mis à jour.
+   Envoyez un [ticket d’assistance &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket). Incluez les fichiers de configuration `.magento/services.yaml` et `.magento.app.yaml` mis à jour.
 
    Cette mise à jour n’entraîne pas d’interruption, mais un déploiement est nécessaire pour activer le nouveau service.
 
@@ -817,9 +817,9 @@ Si vous migrez un projet Adobe Commerce on Cloud existant de `RemoteSynchronized
 
 - **Le comportement du cache obsolète change automatiquement.** Sous `symfony_l2`, `ece-tools` active automatiquement le cache obsolète pour les types de cache courants (tels que `layout`, `block_html`, `full_page` et `translate`) sans nécessiter la configuration manuelle frontale qui `RemoteSynchronizedCache` nécessaire. Si vous avez précédemment configuré manuellement le cache obsolète et souhaitez conserver votre comportement précédent exact, consultez la section [Activer le cache obsolète](#enable-stale-cache) avant de migrer.
 
-- **La compression nécessite un indicateur explicite.** Si vous personnalisez `symfony_l2` compression par `CACHE_CONFIGURATION`, la définition de `compression_lib` seule n’active pas la compression ; `compress_data` doit également être définie. Voir [ Compression du cache ](#cache-compression).
+- **La compression nécessite un indicateur explicite.** Si vous personnalisez `symfony_l2` compression par `CACHE_CONFIGURATION`, la définition de `compression_lib` seule n’active pas la compression ; `compress_data` doit également être définie. Voir [&#x200B; Compression du cache &#x200B;](#cache-compression).
 
-- **Redis n’est pas un serveur principal distant pris en charge pour `symfony_l2`.** Migrer vers Valkey dans le cadre de cette modification. Voir [ Configuration du service Valkey ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey).
+- **Redis n’est pas un serveur principal distant pris en charge pour `symfony_l2`.** Migrer vers Valkey dans le cadre de cette modification. Voir [&#x200B; Configuration du service Valkey &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey).
 
 - **La configuration de session n’est pas affectée par cette migration.** `SESSION_CONFIGURATION` est indépendant du serveur principal du cache et n’a pas besoin d’être modifié lors du déplacement vers `symfony_l2`. Voir [Séparer les instances de cache et de session](#separate-cache-and-session-instances).
 
@@ -993,7 +993,7 @@ Adobe Commerce 2.4.9 et versions ultérieures prennent en charge le serveur prin
 
 Pour utiliser `symfony_l2` cache pour Adobe Commerce 2.4.9, procédez comme suit :
 
-- Effectuez une mise à jour vers la dernière version du package ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). [`ece-tools`Vous devez utiliser le package Outils ECE v2002.2.13 ou une version ultérieure.
+- Effectuez une mise à jour vers la dernière version du package [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). `ece-tools`Vous devez utiliser le package Outils ECE v2002.2.13 ou une version ultérieure.
 
 - Définissez la variable de déploiement dans le fichier `.magento.env.yaml` : `VALKEY_BACKEND`=`symfony_l2`.
 
@@ -1046,7 +1046,7 @@ stage:
 
 ### Dimensionnement de la mémoire cache L2 pour Adobe Commerce Cloud
 
-Le cache L2 utilise un [ système de fichiers temporaire ](https://en.wikipedia.org/wiki/Tmpfs) (`/dev/shm`) comme mécanisme de stockage. Contrairement aux magasins de valeur-clé spécialisés, tmpfs n’a pas de politique d’éviction des clés, de sorte que l’utilisation de la mémoire peut augmenter sans limite. Pour éviter l’épuisement, Adobe Commerce efface automatiquement le stockage L2 lorsque l’utilisation atteint un seuil configurable (95 % par défaut). Vous pouvez contrôler la consommation de mémoire en demandant un montage `/dev/shm` plus important ou en abaissant le seuil de nettoyage.
+Le cache L2 utilise un [&#x200B; système de fichiers temporaire &#x200B;](https://en.wikipedia.org/wiki/Tmpfs) (`/dev/shm`) comme mécanisme de stockage. Contrairement aux magasins de valeur-clé spécialisés, tmpfs n’a pas de politique d’éviction des clés, de sorte que l’utilisation de la mémoire peut augmenter sans limite. Pour éviter l’épuisement, Adobe Commerce efface automatiquement le stockage L2 lorsque l’utilisation atteint un seuil configurable (95 % par défaut). Vous pouvez contrôler la consommation de mémoire en demandant un montage `/dev/shm` plus important ou en abaissant le seuil de nettoyage.
 
 Ajustez l’utilisation maximale de la mémoire cache L2 en fonction des besoins de votre projet. Utilisez l’une des méthodes suivantes :
 

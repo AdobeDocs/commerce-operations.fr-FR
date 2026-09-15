@@ -71,7 +71,7 @@ Pour l’instance de cache, configurez-la de sorte qu’elle soit suffisamment g
 
 - La persistance n’est pas requise pour l’instance de cache, car le cache de Commerce peut être restauré.
 
-  Pour plus d’informations](https://redis.io/docs/latest/develop/use/) consultez le [ Guide du cache Redis .
+  Pour plus d’informations[&#128279;](https://redis.io/docs/latest/develop/use/) consultez le  Guide du cache Redis .
 
 Pour l’optimisation des performances, vous pouvez activer les paramètres suivants pour la suppression asynchrone. Ces paramètres ne modifient pas le comportement de Redis.
 
