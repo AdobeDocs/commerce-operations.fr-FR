@@ -3,20 +3,18 @@ user-guide-title: Manuel d’implémentation
 user-guide-description: Découvrez les stratégies de planification et d’implémentation d’un site Adobe Commerce performant.
 mini-toc-levels: 3
 nudge: true
-source-git-commit: 9343b1fb2832ea0865614e8fb58e5283a72c990d
+source-git-commit: d891254482ae9d0fa5b154f56de83a4a483feef7
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 14%
-
 ---
-
 
 # Manuel d’implémentation {#implementation-playbook}
 
 - [Vue d’ensemble](overview.md)
 - Architecture et intégrations {#architecture}
   - [Référence d’entreprise](architecture/enterprise-blueprint.md)
-- Maintenance et assistance {#maintenance}
+- Maintenance et assistance {#maintenance-and-support}
   - [Vue d’ensemble](maintenance/overview.md)
   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - Bonnes pratiques {#best-practices}
@@ -49,7 +47,7 @@ ht-degree: 14%
     - [Blocs de contenu privés](best-practices/development/private-content-block-configuration.md)
     - [Déploiement de contenu statique](best-practices/development/static-content-deployment.md)
     - [Modification des tables de la base de données](best-practices/development/modifying-core-and-third-party-tables.md)
-    - [Modification du code principal et tiers](best-practices/development/modifying-core-and-third-party-code.md)
+    - [Modification du code principal et du code tiers](best-practices/development/modifying-core-and-third-party-code.md)
   - Launch {#launch}
     - [Vue d’ensemble](best-practices/launch/overview.md)
     - [Configuration de robots d&#39;exploration web](best-practices/launch/robots-txt.md)
@@ -69,4 +67,4 @@ ht-degree: 14%
     - [Liste de contrôle de mise à niveau](best-practices/maintenance/upgrade-checklist.md)
     - [Conditions préalables à la mise à niveau pour MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Glossaire](glossary.md)
-- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=fr)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
