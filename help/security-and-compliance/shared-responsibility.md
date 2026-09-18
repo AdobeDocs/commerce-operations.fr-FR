@@ -2,13 +2,11 @@
 title: Responsabilité partagée Sécurité et modèle opérationnel
 description: Découvrez les responsabilités de sécurité de chaque partie impliquée dans votre projet d’infrastructure cloud Adobe Commerce.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3242'
 ht-degree: 0%
-
 ---
-
 # Sécurité à responsabilité partagée et modèle opérationnel
 
 Adobe Commerce sur les infrastructures cloud est une offre PaaS (platform-as-a-service) qui repose sur un modèle opérationnel et de sécurité à responsabilité partagée. Adobe, le commerçant, le fournisseur de services cloud et le fournisseur de réseau de diffusion de contenu (CDN) partagent ces responsabilités. Chaque partie assume la responsabilité distincte de la sécurisation et de l’exploitation de l’application Adobe Commerce, ainsi que du code et des extensions spécifiques aux commerçants déployés sur l’infrastructure cloud.
@@ -31,14 +29,13 @@ Les commerçants sont responsables des éléments suivants :
 * Assurer le développement sécurisé des applications
 * Obtention de la certification PCI si demandé par le responsable du traitement des paiements du commerçant
 * Réagir et répondre aux incidents de sécurité
-* En conservant toutes les dépendances tierces, les services de plateforme et les extensions des services Adobe Commerce sur les versions activement prises en charge. Adobe ne fournit pas de prise en charge ni d’assistance en matière de sécurité pour les déploiements exécutant des versions dépendantes non prises en charge. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) et la [Matrice de disponibilité du produit](/help/release/product-availability.md) pour connaître les versions prises en charge.
+* En conservant toutes les dépendances tierces, les services de plateforme et les extensions des services Adobe Commerce sur les versions activement prises en charge. Adobe ne fournit pas de prise en charge ni d’assistance en matière de sécurité pour les déploiements exécutant des versions dépendantes non prises en charge. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) et la [Matrice de disponibilité du produit](/help/release/product-availability.md) pour connaître les versions prises en charge.
 
 >[!NOTE]
 >
 >Voir également :
 >
 >* [Politique relative au cycle de vie des logiciels](../release/lifecycle-policy.md) — dates de fin de prise en charge, prise en charge étendue et dispositions transitoires concernant uniquement la sécurité
->* [Politique d’application de la mise à niveau de la version cloud](../release/version-upgrade-enforcement-policy.md) — dates d’application et actions requises
 >* [Avis de sécurité et de conformité](../release/security-enforcement-policy.md) — actions requises et délais pour Adobe Commerce sur les versions cloud 2.4.4 à 2.4.9
 
 {{supported-versions-only}}
@@ -104,7 +101,7 @@ Le commerçant est chargé de suivre les bonnes pratiques de sécurité pour son
   * Extensions des services Adobe Commerce
   * Toutes les extensions tierces et les intégrations personnalisées
 
-  Adobe ne prend pas en charge les déploiements exécutant des versions non prises en charge. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) et la [Matrice de disponibilité du produit](/help/release/product-availability.md) pour connaître les versions prises en charge.
+  Adobe ne prend pas en charge les déploiements exécutant des versions non prises en charge. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) et la [Matrice de disponibilité du produit](/help/release/product-availability.md) pour connaître les versions prises en charge.
 
 ## Responsabilités des fournisseurs de services cloud
 
