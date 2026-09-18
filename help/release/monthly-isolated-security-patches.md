@@ -106,7 +106,7 @@ Pour appliquer le fichier de correctif de sécurité isolé mensuel et rester à
 
    Validez dans l’évaluation avant de passer en production, conformément à votre processus de modification normal.
 
-Les clients Cloud peuvent également utiliser l’[automatisation des correctifs ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/caps-tool/intro) pour appliquer ou annuler des correctifs par le biais du panneau d’administration au lieu des étapes manuelles Git et Compositeur ci-dessus.
+Les clients Cloud peuvent également utiliser l’[automatisation des correctifs &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/caps-tool/intro) pour appliquer ou annuler des correctifs par le biais du panneau d’administration au lieu des étapes manuelles Git et Compositeur ci-dessus.
 
 ## Actions Patch par type de déploiement
 
@@ -148,5 +148,5 @@ Non. Le mécanisme de diffusion n’affecte pas les résultats de sécurité du 
 >* [Politique relative au cycle de vie des logiciels](lifecycle-policy.md)
 >* [Politique de version](versioning-policy.md)
 >* [Calendrier de publication des correctifs](schedule.md)
->* [Outil de version ](../tools/commerce-version-tool/intro.md)
->* [Bulletins et conseils de sécurité ](https://helpx.adobe.com/security/security-bulletin.html)
+>* [Outil de version &#x200B;](../tools/commerce-version-tool/intro.md)
+>* [Bulletins et conseils de sécurité &#x200B;](https://helpx.adobe.com/security/security-bulletin.html)
