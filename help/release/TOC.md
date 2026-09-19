@@ -4,13 +4,11 @@ user-guide-description: Accédez à toutes les informations de mise à jour rela
 feature: Release Notes
 recommendations: noDisplay, noCatalog
 nudge: true
-source-git-commit: 5e0e4b0dc59aa2d8bd08d2d4af1176d14577f063
+source-git-commit: 7f611e9d05ddc53c853839d33bcacf48a59c126e
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 32%
-
+source-wordcount: '110'
+ht-degree: 31%
 ---
-
 
 # Informations sur la version {#release}
 
@@ -55,7 +53,7 @@ ht-degree: 32%
 - Planification et politiques {#planning}
   - [Politique relative au cycle de vie](lifecycle-policy.md)
   - [Actions et délais requis pour sécuriser les environnements Commerce](security-enforcement-policy.md)
-  - [Politique d’application de la mise à niveau de version](version-upgrade-enforcement-policy.md)
+  - [Politique de correctifs de sécurité isolés mensuels](monthly-isolated-security-patches.md)
   - [Politique de version](versioning-policy.md)
   - [Calendrier des versions](schedule.md)
 - [Fonctionnalités par version](features.md)

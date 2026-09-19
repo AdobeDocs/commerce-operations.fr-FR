@@ -2,13 +2,11 @@
 title: Notes de mise à jour d’Adobe Commerce
 description: Découvrez où trouver des informations pour des versions spécifiques d’Adobe Commerce.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '492'
 ht-degree: 2%
-
 ---
-
 
 # Notes de mise à jour d’Adobe Commerce
 
@@ -38,7 +36,6 @@ Le tableau ci-dessous contient des notes de mise à jour et des informations imp
             <li><a href="commerce/overview.md">Adobe Commerce</a></li>
             <li><a href="security/overview.md">Correctifs de sécurité</a></li>
             <li><a href="../lifecycle-policy.md">Politique relative au cycle de vie des logiciels</a></li>
-            <li><a href="../version-upgrade-enforcement-policy.md">Politique d’application de la mise à niveau des versions du cloud</a></li>
             <li><a href="../security-enforcement-policy.md">Avis de sécurité et de conformité</a></li>
             <li><a href="https://helpx.adobe.com/fr/security/products/magento.html">Bulletin de sécurité d’Adobe</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=fr">B2B pour Adobe Commerce</a></li>

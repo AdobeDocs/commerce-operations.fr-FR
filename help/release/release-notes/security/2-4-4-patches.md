@@ -2,14 +2,12 @@
 title: Notes De Mise À Jour Du Correctif De Sécurité D’Adobe Commerce 2.4.4
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '2160'
 ht-degree: 0%
-
 ---
-
 
 # Notes de mise à jour des correctifs de sécurité d’Adobe Commerce 2.4.4
 
@@ -268,4 +266,4 @@ Les améliorations apportées à la sécurité dans cette version améliorent la
 
 **Problème** : les commerçants peuvent remarquer des avis de rétrogradation de version de package lors d’une mise à niveau d’Adobe Commerce 2.4.4 vers Adobe Commerce 2.4.4-p1. Ces messages peuvent être ignorés. La différence dans les versions de package résulte d’anomalies lors de la génération du package. Aucune fonctionnalité du produit n’a été affectée. Consultez l’article de la base de connaissances [Packages rétrogradés après la mise à niveau de la version 2.4.4 vers la version 2.4.4-p1](https://support.magento.com/hc/en-us/articles/8214752983949) pour une discussion sur les scénarios et solutions de contournement concernés.
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->

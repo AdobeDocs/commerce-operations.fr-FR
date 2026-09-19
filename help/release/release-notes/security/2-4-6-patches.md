@@ -2,14 +2,12 @@
 title: Notes De Mise À Jour Du Correctif De Sécurité D’Adobe Commerce 2.4.6
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.6.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '2365'
 ht-degree: 0%
-
 ---
-
 
 # Notes de mise à jour des correctifs de sécurité d’Adobe Commerce 2.4.6
 
@@ -31,7 +29,7 @@ ht-degree: 0%
 >
 >Adobe Commerce 2.4.6 bénéficie d’une [prise en charge étendue](../../lifecycle-policy.md#extended-support) jusqu’au **30 août 2027**, suivie d’une [période de transition axée uniquement sur la sécurité](../../lifecycle-policy.md#security-only-transitional-period) jusqu’au **31 mai 2028**. Ces fonctions ne sont disponibles que pour les clients Adobe Commerce. Ils n’étendent pas la prise en charge des dépendances tierces telles que MySQL.
 >
->Si vous exécutez Adobe Commerce sur le cloud, vous devez effectuer une mise à niveau vers une version prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant la **date d’application de la mise à niveau du 1er juin 2028** [version](../../version-upgrade-enforcement-policy.md). Consultez le tableau [dates de fin de prise en charge](../../lifecycle-policy.md#end-of-support-dates) pour connaître les dates de cycle de vie complet.
+>Si vous exécutez Adobe Commerce sur le cloud, vous devez effectuer une mise à niveau vers une version prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant la **date d’application de la mise à niveau du 1er juin 2028** [version](../../security-enforcement-policy.md). Consultez le tableau [dates de fin de prise en charge](../../lifecycle-policy.md#end-of-support-dates) pour connaître les dates de cycle de vie complet.
 
 ## 2.4.6-p15
 
@@ -63,7 +61,7 @@ L’intégration d’expédition USPS prend désormais en charge les API RESTful
 
 #### Branchement MVC Laminas appartenant à Magento
 
-Pour gérer la mise hors service de Laminas MVC, Adobe Commerce utilise désormais un formulaire de `laminas-mvc` détenu par Magento (publié en tant que `magento/magento-zf-mvc`). Ce branchement assure la conformité continue des correctifs et de la sécurité à long terme pour Adobe Commerce 2.4.6.
+Pour faire face à la mise hors service de Laminas MVC, Adobe Commerce utilise désormais un formulaire de `laminas-mvc` détenu par Magento (publié sous la forme `magento/magento-zf-mvc`). Ce branchement assure la conformité continue des correctifs et de la sécurité à long terme pour Adobe Commerce 2.4.6.
 
 ## 2.4.6-p14
 
@@ -331,4 +329,4 @@ Les mises à niveau de Platform pour cette version améliorent la conformité au
 
   Ce problème peut être résolu en ajoutant des dépendances manuelles pour le package de sécurité B2B avec une [&#x200B; balise de stabilité &#x200B;](https://getcomposer.org/doc/04-schema.md#package-links). Pour plus d’informations, consultez les notes de mise à jour de [B2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=fr#known-issue).
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->

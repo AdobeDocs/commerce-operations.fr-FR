@@ -2,14 +2,12 @@
 title: Notes De Mise À Jour Du Correctif De Sécurité D’Adobe Commerce 2.4.5
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.5.
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '2007'
 ht-degree: 0%
-
 ---
-
 
 # Notes de mise à jour des correctifs de sécurité d’Adobe Commerce 2.4.5
 
@@ -285,4 +283,4 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 L’un des correctifs de sécurité incluait la création d’un nouveau paramètre de configuration. Le paramètre de configuration [!UICONTROL **Exiger une confirmation par e-mail si l’e-mail a été modifié**] permet aux administrateurs d’exiger une confirmation par e-mail lorsqu’un utilisateur administrateur modifie son adresse e-mail. <!-- AC-6292-->
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->

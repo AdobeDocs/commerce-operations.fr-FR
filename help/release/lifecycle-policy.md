@@ -3,14 +3,12 @@ title: Politique relative au cycle de vie des logiciels
 description: Découvrez les dates clés de fin de prise en charge logicielle des versions d’Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
-
 ---
-
 
 # Politique relative au cycle de vie d’Adobe Commerce
 
@@ -206,3 +204,5 @@ Contactez l’équipe de votre compte Adobe pour commencer une évaluation de la
 Si vous ne pouvez pas migrer vers [!DNL Adobe Commerce as a Cloud Service] immédiatement, vous pouvez effectuer une mise à niveau vers la dernière version d’Adobe Commerce on Cloud actuellement prise en charge. Vous passez ainsi à une pile d’infrastructure moderne entièrement prise en charge, tout en préservant votre modèle de déploiement Commerce on Cloud existant.
 
 Notez que ce chemin d’accès n’élimine pas les futures obligations de mise à niveau. Les clients disposant d’Adobe Commerce sur des déploiements cloud doivent continuer la mise à niveau lorsque les lignes de version atteignent leurs dates d’application de mise à niveau.
+
+<!-- Last updated from includes: 2026-09-17 13:05:40 -->

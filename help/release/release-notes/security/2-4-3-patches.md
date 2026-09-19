@@ -2,14 +2,12 @@
 title: Notes de mise à jour des correctifs de sécurité d’Adobe Commerce 2.4.3
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 0%
-
 ---
-
 
 # Notes de mise à jour des correctifs de sécurité d’Adobe Commerce 2.4.3
 
@@ -89,4 +87,4 @@ Cette version comprend le correctif suivant et tous les correctifs publiés pour
 
 L’expression source non prise en charge `unsafe-inline` a été supprimée de la directive `frame-ancestors` de la politique de sécurité du contenu. [GitHub-33101](https://github.com/magento/magento2/issues/33101)<!-- MC-42632-->
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->

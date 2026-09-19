@@ -1,17 +1,15 @@
 ---
-title: Utilisation
+title: Installation et utilisation
 description: Découvrez comment utiliser l’outil de correctifs de la qualité pour appliquer et gérer des correctifs pour Adobe Commerce. Découvrez les techniques de test, d’application et de gestion des correctifs.
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+source-git-commit: 2b2ac06c54af242407ae4f3fbfb23180e6ec3ae8
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '944'
 ht-degree: 0%
-
 ---
-
-# Utilisation
+# Installation et utilisation
 
 Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fournit des correctifs individuels développés par Adobe et la communauté Magento Open Source. Il vous permet d’appliquer, d’annuler et d’afficher des informations générales sur tous les correctifs individuels disponibles pour la version installée d’Adobe Commerce. Vous pouvez appliquer des correctifs à des projets Adobe Commerce, quelle que soit la personne qui les a développés. Par exemple, vous pouvez appliquer un correctif développé par la communauté aux projets Adobe Commerce.
 

@@ -2,14 +2,12 @@
 title: Notes De Mise À Jour Du Correctif De Sécurité D’Adobe Commerce 2.4.2
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.2.
 exl-id: e6058e96-b810-4a78-8804-15783afef951
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
-
 ---
-
 
 # Notes de mise à jour des correctifs de sécurité d’Adobe Commerce 2.4.2
 
@@ -25,4 +23,4 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 DHL a introduit la version 6.2 du schéma et abandonnera la version 6.0 dans un avenir proche. Adobe Commerce 2.4.4 et les versions antérieures qui prennent en charge l’intégration DHL ne prennent en charge que la version 6.0. Les commerçants qui déploient ces mainlevées devraient appliquer `AC-3022.patch` dès que possible pour continuer à offrir DHL en tant que transporteur. Consultez l’article de la base de connaissances [Appliquer un correctif pour continuer à proposer DHL en tant que transporteur](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) pour plus d’informations sur le téléchargement et l’installation du correctif.
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->

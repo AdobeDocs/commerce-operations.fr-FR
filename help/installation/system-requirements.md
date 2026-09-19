@@ -2,14 +2,12 @@
 title: Configuration requise
 description: Découvrez les dépendances logicielles et la configuration requise pour Adobe Commerce. Voir les configurations testées pour assurer la compatibilité avec votre environnement de déploiement.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-last-update: 2026-08-11T00:00:00Z
-source-git-commit: 81442a33c3dabcaa3b9eda56a2132bf7b7432ba2
+last-update: 2026-08-11
+source-git-commit: 0e218207eb48d6c93139bd05215f5804b21ee216
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 0%
-
 ---
-
 # Configuration requise
 
 Les informations suivantes résument les dépendances logicielles et les services testés pour Adobe Commerce.
@@ -74,7 +72,7 @@ Les tableaux suivants répertorient la configuration requise pour les versions d
 >
 >Adobe Commerce 2.4.6 bénéficie d’une [prise en charge étendue](../release/lifecycle-policy.md#extended-support) jusqu’au **30 août 2027**, suivie d’une [période de transition axée uniquement sur la sécurité](../release/lifecycle-policy.md#security-only-transitional-period) jusqu’au **31 mai 2028**. Ces fonctions ne sont disponibles que pour les clients Adobe Commerce. Ils n’étendent pas la prise en charge des dépendances tierces telles que MySQL.
 >
->Si vous exécutez Adobe Commerce sur le cloud, vous devez effectuer une mise à niveau vers une version prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant la **date d’application de la mise à niveau du 1er juin 2028** [version](../release/version-upgrade-enforcement-policy.md). Consultez le tableau [dates de fin de prise en charge](../release/lifecycle-policy.md#end-of-support-dates) pour connaître les dates de cycle de vie complet.
+>Si vous exécutez Adobe Commerce sur le cloud, vous devez effectuer une mise à niveau vers une version prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant les **exigences et échéances de sécurité du 1er juin 2028** [&#128279;](../release/security-enforcement-policy.md). Consultez le tableau [dates de fin de prise en charge](../release/lifecycle-policy.md#end-of-support-dates) pour connaître les dates de cycle de vie complet.
 >
 >Le tableau est réduit afin de réduire la longueur de cet article. Sélectionnez l’en-tête pour le développer.
 

@@ -2,14 +2,12 @@
 title: Notes De Mise À Jour Du Correctif De Sécurité D’Adobe Commerce 2.4.8
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.8.
 exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
-
 ---
-
 # Notes de mise à jour des correctifs de sécurité d’Adobe Commerce 2.4.8
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
@@ -48,7 +46,7 @@ L’intégration d’expédition USPS prend désormais en charge les API RESTful
 
 #### Branchement MVC Laminas appartenant à Magento
 
-Pour gérer la mise hors service de Laminas MVC, Adobe Commerce utilise désormais un formulaire de `laminas-mvc` détenu par Magento (publié en tant que `magento/magento-zf-mvc`). Ce branchement assure la conformité continue des correctifs et de la sécurité à long terme pour Adobe Commerce 2.4.8.
+Pour faire face à la mise hors service de Laminas MVC, Adobe Commerce utilise désormais un formulaire de `laminas-mvc` détenu par Magento (publié sous la forme `magento/magento-zf-mvc`). Ce branchement assure la conformité continue des correctifs et de la sécurité à long terme pour Adobe Commerce 2.4.8.
 
 ## 2.4.8-p4
 
@@ -136,4 +134,4 @@ Les correctifs pour CVE-2025-47110 et VULN-31547 sont également disponibles en 
 
 >[!ENDSHADEBOX]
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->

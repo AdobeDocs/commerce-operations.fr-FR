@@ -1,9 +1,8 @@
 ---
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '86'
 ht-degree: 0%
-
 ---
 # Remarque sur la politique de prise en charge étendue
 
@@ -16,4 +15,4 @@ ht-degree: 0%
 >Voir également :
 >
 >- [Politique relative au cycle de vie des logiciels](/help/release/lifecycle-policy.md) — dates de fin de prise en charge, prise en charge étendue et dispositions transitoires concernant uniquement la sécurité
->- [Politique d’application de la mise à niveau de la version cloud](/help/release/version-upgrade-enforcement-policy.md) — dates d’application et actions requises
+>- [Actions requises et délais pour sécuriser les environnements Commerce](/help/release/security-enforcement-policy.md) — dates d’application et actions requises
