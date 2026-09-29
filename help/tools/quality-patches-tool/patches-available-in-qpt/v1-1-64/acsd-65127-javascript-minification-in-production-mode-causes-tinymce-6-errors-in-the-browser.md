@@ -1,17 +1,15 @@
 ---
-title: 'ACSD-65127 : la minimisation de JavaScript en mode de production provoque des erreurs  [!DNL TinyMCE] 6 dans le navigateur'
-description: Appliquez le correctif ACSD-65127 pour résoudre le problème d’Adobe Commerce où l’activation de la minimisation de JavaScript en mode production provoquait des erreurs dans la console du navigateur [!DNL TinyMCE] 6, ce qui affectait les fonctionnalités et l’expérience utilisateur.
+title: 'ACSD-65127 : la minimisation de JavaScript en mode de production provoque des erreurs [!DNL TinyMCE] 6 dans le navigateur'
+description: Appliquez le correctif ACSD-65127 pour résoudre le problème d’Adobe Commerce où l’activation de la minimisation JavaScript en mode de production entraînait des erreurs dans la console du navigateur [!DNL TinyMCE] 6, ce qui affectait les fonctionnalités et l’expérience utilisateur.
 feature: Page Builder, Page Content
 role: Admin, Developer
 exl-id: c878d5a4-8059-4bfc-93a8-0a9606e866fc
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 2465ecf45a0990ac40c3ba8c243381ce5484adaa
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '363'
 ht-degree: 0%
-
 ---
-
 # ACSD-65127 : la minimisation de JavaScript en mode de production provoque des erreurs [!DNL TinyMCE] 6 dans le navigateur
 
 Le correctif ACSD-65127 corrige le problème en raison duquel l’activation de la minimisation de JavaScript en mode de production entraînait des erreurs dans la console du navigateur [!DNL TinyMCE] 6, ce qui affectait les fonctionnalités et l’expérience utilisateur. Ce correctif est disponible lorsque la version 1.1.64 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-65127. Ce problème a été résolu dans Adobe Commerce 2.4.8.
@@ -28,7 +26,7 @@ Le correctif ACSD-65127 corrige le problème en raison duquel l’activation de 
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -38,15 +36,15 @@ L’activation de la minimisation de JavaScript en mode production a provoqué l
 
 1. Définissez la configuration en exécutant les commandes ci-dessous :
 
-```shell
-bin/magento config:set --lock-config dev/js/minify_files 1
-bin/magento config:set --lock-config dev/js/enable_js_bundling 1
-bin/magento config:set --lock-config dev/js/merge_files 1
-```
+   ```shell
+   bin/magento config:set --lock-config dev/js/minify_files 1
+   bin/magento config:set --lock-config dev/js/enable_js_bundling 1
+   bin/magento config:set --lock-config dev/js/merge_files 1
+   ```
 
->[!NOTE]
->
->Adobe déconseille d’activer **[!UICONTROL Merge JavaScript Files]**. Voir [&#x200B; Fusion de fichiers JS (non recommandée)](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files).
+   >[!NOTE]
+   >
+   >Adobe déconseille d’activer **[!UICONTROL Merge JavaScript Files]**. Voir [ Fusion de fichiers JS (non recommandée)](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files).
 
 1. Activez le mode de production.
 
@@ -69,7 +67,7 @@ Erreurs *404* dans la console du navigateur pour le `tiny_mce_6/plugins/help/js/
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool]
-* Adobe Commerce sur les infrastructures cloud : [&#x200B; Mises à niveau et correctifs > Appliquer des correctifs &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [ Mises à niveau et correctifs > Appliquer des correctifs ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

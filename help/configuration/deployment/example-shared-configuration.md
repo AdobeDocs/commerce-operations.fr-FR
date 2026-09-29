@@ -2,14 +2,12 @@
 title: Exemple avec une configuration partagée
 description: Consultez un exemple de modification des paramètres dans un système de développement avec un fichier de configuration partagé.
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-04-28
+source-git-commit: 2465ecf45a0990ac40c3ba8c243381ce5484adaa
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%
-
 ---
-
 # Exemple avec une configuration partagée
 
 Cet exemple montre comment modifier les paramètres suivants dans votre système de développement, mettre à jour le fichier de configuration partagé, `config.php`, dans votre système de génération et implémenter les mêmes paramètres dans votre système de production :
@@ -87,8 +85,8 @@ La dernière étape du processus consiste à mettre à jour votre système de pr
 
    ![Les options de configuration ne peuvent pas être modifiées dans l’administration](../../assets/configuration/split-deploy-not-editable.png)
 
->[!INFO]
->
->Pour modifier un paramètre verrouillé dans Admin, utilisez la commande [&#128279;](../cli/set-configuration-values.md).`magento config:set --lock`
+   >[!INFO]
+   >
+   >Pour modifier un paramètre verrouillé dans Admin, utilisez la commande ](../cli/set-configuration-values.md).[`magento config:set --lock`
 
 <!-- Last updated from includes: 2026-04-17 13:49:36 -->
