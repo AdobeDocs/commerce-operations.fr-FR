@@ -2,8 +2,8 @@
 title: Page de départ Guides opérationnels
 description: Découvrez l’administration du système Adobe Commerce et les concepts opérationnels. Parcourez des guides complets pour planifier, configurer et gérer votre déploiement de Commerce.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-last-update: 2026-09-18
-source-git-commit: 7e982102bc8c3b13a67a0ca4b0a8b21ada1a5825
+last-update: 2026-09-25
+source-git-commit: 0f12b21c2182de194961a58a49cb9d85508f950d
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 6%
