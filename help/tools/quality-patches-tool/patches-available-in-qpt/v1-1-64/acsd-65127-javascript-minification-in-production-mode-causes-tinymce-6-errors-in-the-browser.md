@@ -1,17 +1,15 @@
 ---
-title: 'ACSD-65127 : la minimisation de JavaScript en mode de production provoque des erreurs  [!DNL TinyMCE] 6 dans le navigateur'
-description: Appliquez le correctif ACSD-65127 pour résoudre le problème d’Adobe Commerce où l’activation de la minimisation de JavaScript en mode production provoquait des erreurs dans la console du navigateur [!DNL TinyMCE] 6, ce qui affectait les fonctionnalités et l’expérience utilisateur.
+title: 'ACSD-65127 : la minimisation de JavaScript en mode de production provoque des erreurs [!DNL TinyMCE] 6 dans le navigateur'
+description: Appliquez le correctif ACSD-65127 pour résoudre le problème d’Adobe Commerce où l’activation de la minimisation JavaScript en mode de production entraînait des erreurs dans la console du navigateur [!DNL TinyMCE] 6, ce qui affectait les fonctionnalités et l’expérience utilisateur.
 feature: Page Builder, Page Content
 role: Admin, Developer
 exl-id: c878d5a4-8059-4bfc-93a8-0a9606e866fc
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 2465ecf45a0990ac40c3ba8c243381ce5484adaa
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '363'
 ht-degree: 0%
-
 ---
-
 # ACSD-65127 : la minimisation de JavaScript en mode de production provoque des erreurs [!DNL TinyMCE] 6 dans le navigateur
 
 Le correctif ACSD-65127 corrige le problème en raison duquel l’activation de la minimisation de JavaScript en mode de production entraînait des erreurs dans la console du navigateur [!DNL TinyMCE] 6, ce qui affectait les fonctionnalités et l’expérience utilisateur. Ce correctif est disponible lorsque la version 1.1.64 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-65127. Ce problème a été résolu dans Adobe Commerce 2.4.8.
@@ -38,15 +36,15 @@ L’activation de la minimisation de JavaScript en mode production a provoqué l
 
 1. Définissez la configuration en exécutant les commandes ci-dessous :
 
-```shell
-bin/magento config:set --lock-config dev/js/minify_files 1
-bin/magento config:set --lock-config dev/js/enable_js_bundling 1
-bin/magento config:set --lock-config dev/js/merge_files 1
-```
+   ```shell
+   bin/magento config:set --lock-config dev/js/minify_files 1
+   bin/magento config:set --lock-config dev/js/enable_js_bundling 1
+   bin/magento config:set --lock-config dev/js/merge_files 1
+   ```
 
->[!NOTE]
->
->Adobe déconseille d’activer **[!UICONTROL Merge JavaScript Files]**. Voir [&#x200B; Fusion de fichiers JS (non recommandée)](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files).
+   >[!NOTE]
+   >
+   >Adobe déconseille d’activer **[!UICONTROL Merge JavaScript Files]**. Voir [&#x200B; Fusion de fichiers JS (non recommandée)](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files).
 
 1. Activez le mode de production.
 
