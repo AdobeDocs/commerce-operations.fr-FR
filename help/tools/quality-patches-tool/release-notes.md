@@ -16,9 +16,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: ed51278b96a445aab6d1194e473e55d85ce6ef1d
+source-git-commit: ec5bfb45c2c170168c0e30a8c2197ba3ab58ccfe
 workflow-type: tm+mt
-source-wordcount: '32496'
+source-wordcount: '33143'
 ht-degree: 0%
 ---
 # Notes de mise à jour
@@ -27,11 +27,35 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 >[!INFO]
 >
->Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=fr#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
+>Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
 
 >[!INFO]
 >
 >Pour plus d’informations sur les [!DNL quality patches] créées par la communauté pour Magento Open Source, consultez les [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.84 {#v1-1-84}
+
+* **ACP2E-4913** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.9) - Correction du problème en raison duquel les opérations d’expédition et de facturation échouent en raison d’un blocage.
+* **ACP2E-5005** (pour Adobe Commerce, B2B >=1.5.0 &lt;1.5.4) - Correction du problème où la quantité d’une option de produit groupé dans un devis négociable revient à sa valeur précédente lorsque le produit groupé est reconfiguré dans l’administrateur et que la quantité est modifiée.
+* **ACP2E-5009** (pour Adobe Commerce >=2.4.5 &lt;2.4.10) - Correction du problème en raison duquel la migration des données de Magento Open Source vers Adobe Commerce ne migre pas correctement les modifications de conception planifiées de la catégorie et les mises à jour planifiées des prix spéciaux du produit, ce qui entraîne l’absence ou l’omission de certaines mises à jour planifiées lors de la migration et améliore les performances de la migration.
+* **ACP2E-5017** (pour Adobe Commerce, B2B >=1.5.0 &lt;1.5.4) - Correction du problème où l’interrogation du rôle du client via GraphQL renvoie une *erreur de serveur interne* lorsque le client n’est pas affecté à une société.
+* **ACP2E-5027** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.10) - Corrige le problème où les indexeurs restent bloqués dans une boucle et où la réindexation ne se termine pas lorsque le verrouillage de fichier est activé.
+* **ACP2E-5029** (pour Adobe Commerce et Magento Open Source >=2.4.7 &lt;2.4.10) - Correction du problème en raison duquel les modifications apportées aux règles de prix de catalogue n’apparaissent pas dans [!DNL Live Search] tant qu’une resynchronisation manuelle n’a pas été effectuée.
+* **ACP2E-5041** (pour Adobe Commerce >=2.4.5 &lt;2.4.9) - Correction d’un problème en raison duquel l’enregistrement d’un produit lors d’une mise à jour planifiée entraînait l’affichage du prix normal par le storefront au lieu du [!UICONTROL Special Price] une fois la mise à jour terminée.
+* **ACP2E-5059** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.10) - Correction du problème en raison duquel les clients reçoivent des e-mails de confirmation de commande en double pour la même commande.
+* **ACP2E-5122** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.10) - Correction du problème en raison duquel les erreurs gérées à partir des requêtes GraphQL pour le panier étaient incorrectement enregistrées dans les journaux d’exceptions en tant qu’erreurs d’application.
+* **ACP2E-5143** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel la requête d’itinéraire GraphQL effectue le rendu de l’intégralité du contenu des pages CMS lorsque seules les métadonnées de routage sont demandées, ce qui augmente les requêtes de base de données pour les pages CMS contenant des widgets Page Builder.
+* **ACP2E-5183** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.10) - Correction du problème en raison duquel le déploiement du contenu statique échoue sur PHP 8.5 lors de la compilation d’un fichier `LESS` qui utilise la directive `@magento_import`.
+* **ACP2E-5242** (pour Adobe Commerce et Magento Open Source >=2.4.9 &lt;2.4.10) - Correction d’un problème en raison duquel la vérification de la disponibilité du produit lors de l’ajout d’articles au panier affiche une erreur indiquant que le site web est introuvable.
+* **ACP2E-5263** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.9) - Correction d’un problème en raison duquel l’exportation de produits dans un fichier CSV peut s’arrêter avant que tous les produits ne soient inclus, ce qui entraîne la création d’un fichier incomplet.
+* **ACP2E-5034** (pour Adobe Commerce, B2B >=1.5.0 &lt;1.5.3) - Correction du problème en raison duquel la gestion des devis négociables réinitialise incorrectement les totaux à *zéro* lors du recalcul d&#39;un devis après avoir sélectionné un mode d&#39;expédition, ignore les mises à jour des quantités d&#39;option de produit groupé effectuées via l&#39;action [!UICONTROL Configure] dans l&#39;administrateur et ne reflète pas correctement les remises au niveau article appliquées aux produits groupés à prix dynamique dans les sous-totaux de devis.
+* **ACP2E-4741** (pour Adobe Commerce et Magento Open Source >=2.4.9 &lt;2.4.10) - Correction du problème où un produit disparaît du storefront après qu’un produit qui lui est lié en tant que [!UICONTROL Related Product], [!UICONTROL Up-Sell] ou vente croisée a été enregistré alors qu’un stock et une source hors défaut sont en cours d’utilisation.
+* **ACP2E-5079** (pour Adobe Commerce >=2.4.4 &lt;2.4.10) - Correction du problème en raison duquel l’évaluation d’un segment client affecté à plusieurs sites web renvoie les clients correspondants uniquement à partir du premier site web lorsque les comptes clients sont partagés globalement.
+* **ACP2E-5127** (pour Adobe Commerce, B2B >=1.3.3 &lt;1.5.4) - Correction du problème en raison duquel la modification d’un compte de société dans le panneau d’administration avec des paramètres régionaux autres que ceux par défaut réinitialise son [!UICONTROL Credit Limit] sur *0*.
+* **AC-15494** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème où la requête products renvoie des noms de produits avec des caractères spéciaux dans l’échappement HTML au lieu de leurs caractères d’origine.
+* Versions mises à jour : **AC-18096**, **ACSD-60584**, **ACSD-65775**
+* Correctifs remplacés : **ACP2E-4801**, **ACP2E-4194**
+* Correctifs mis à jour : **ACP2E-4815**
 
 ## v1.1.83 {#v1-1-83}
 
@@ -110,7 +134,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACP2E-4156** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème en raison duquel la validation de l’adresse de livraison dans l’API REST n’est pas conforme à la configuration d’attribut définie dans Admin.
 * **ACP2E-4813** (pour Adobe Commerce et Magento Open Source >=2.4.6-p3 &lt;2.4.6-p15 || >=2.4.7 &lt;2.4.7-p10 || >=2.4.8 &lt;2.4.8-p5) - Correction du problème en raison duquel les méthodes d’expédition USPS ne sont pas disponibles au moment du passage en caisse et les estimations d’expédition sont incorrectes pour certains produits, y compris les commandes fractionnées en plusieurs packages.
 * **ACSD-53502** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Correction du problème en raison duquel l’option Ajouter au panier échoue par intermittence sur le storefront dans iOS Safari en raison d’appels récursifs au script de surveillance New Relic, ce qui entraîne des rechargements de page.
-* Versions mises à jour : **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD-61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477** **ACSD-58108**, **ACSD-66149**, **ACSD-66404**, **ACSD-67250**, **&#x200B;**-440267686 **,**&#x200B;**-450568925**, **ACP2E-4603**, **ACP2E-4706** ACP2E **ACP2E**
+* Versions mises à jour : **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD-61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477** **ACSD-58108**, **ACSD-66149**, **ACSD-66404**, **ACSD-67250**, ****-440267686 **,****-450568925**, **ACP2E-4603**, **ACP2E-4706** ACP2E **ACP2E**
 * Correctifs remplacés : **AC-15210**, **ACSD-58108**
 
 ## v1.1.79 {#v1-1-79}
@@ -154,7 +178,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACP2E-4732** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction d’un problème en raison duquel l’indexation partielle s’arrêtait pour les clients avec un grand nombre de mises à jour lorsque la colonne version_id de la table changelog atteignait sa valeur maximale.
 * **ACP2E-4763** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème en raison duquel la requête customerOrders de GraphQL renvoie des valeurs original_price_include_tax et original_row_total_include_tax gonflées lorsque les prix du catalogue sont définis sur Taxe incluse, en raison d’une application double de la taxe.
 * **ACSD-60989** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel la modification d’une colonne avec une clé étrangère par le biais d’un schéma déclaratif provoque des erreurs sur MariaDB.
-* Versions mises à jour : **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-55031**, **ACSD-51819**, **ACSD-55628**, **ACSD-54965,** ACSD-**, 56546** ACSD-**, 61756** ACSD-**, 68040** ACSD-**, 62708** ACSD-**, 63283** ACSD-**, 64732** ACSD-**, 65775** ACSD-**, 66965** ACSD-ACP2E, **&#x200B;**-4050
+* Versions mises à jour : **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-55031**, **ACSD-51819**, **ACSD-55628**, **ACSD-54965,** ACSD-**, 56546** ACSD-**, 61756** ACSD-**, 68040** ACSD-**, 62708** ACSD-**, 63283** ACSD-**, 64732** ACSD-**, 65775** ACSD-**, 66965** ACSD-ACP2E, ****-4050
 * Correctifs remplacés : **ACSD-58446**, **ACSD-67904**
 
 ## v1.1.77 {#v1-1-77}
@@ -733,7 +757,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACSD-54776** (pour Adobe Commerce >=2.4.5 &lt;2.4.7) - Correction du problème en raison duquel les valeurs non cochées *[!UICONTROL Use Default Value]* et les valeurs non par défaut des champs du produit ne sont pas enregistrées pour la deuxième vue de site web, de magasin et de magasin.
 * **ACSD-53998** (pour Adobe Commerce et Magento Open Source >=2.4.4-p2 &lt;2.4.5 || >=2.4.5-p1 &lt;2.4.7) - Corrige le problème en raison duquel un **[!UICONTROL Dynamic Block]** basé sur un **[!UICONTROL Customer Segment]** ne fonctionne pas correctement après s’être déconnecté d’un compte client.
 * **ACSD-53204** (pour Adobe Commerce et Magento Open Source >=2.4.6 &lt;2.4.7) - Correctifs *Le produit ne peut pas être enregistré.* erreur lors de requêtes simultanées pour ajouter des images à la galerie de produits à l’aide du point d’entrée `rest/V1/products/<sku>/media`.
-* **ACSD-47657** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Ajout d’un mécanisme de mise en cache pour les informations d’identification AWS. Un fournisseur d’informations d’identification utilise désormais le cache Magento pour mettre en cache les informations d’identification récupérées d’AWS pour la configuration EC2.
+* **ACSD-47657** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.7) - Ajout d’un mécanisme de mise en cache pour les informations d’identification AWS. Un fournisseur d’informations d’identification utilise désormais le cache de Magento pour mettre en cache les informations d’identification récupérées d’AWS pour la configuration EC2.
 * Correctifs mis à jour : ACSD-51984, ACSD-51574.
 
 ## v1.1.38 {#v1-1-38}
