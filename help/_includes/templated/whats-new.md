@@ -44,7 +44,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la section <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/monthly-isolated-security-patches">Politique mensuelle d’application de correctifs de sécurité isolés</a>, expliquant comment Adobe Commerce fournit des correctifs CVE ciblés et isolés le mardi des correctifs entre les versions complètes des correctifs de sécurité, ainsi que la manière de les appliquer et de les vérifier.</p>
+      <td><p>Ajout de la section <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/monthly-isolated-security-patches">Politique mensuelle d’application de correctifs de sécurité isolés</a>, expliquant comment Adobe Commerce fournit des correctifs CVE ciblés et isolés le mardi des correctifs entre les versions complètes des correctifs de sécurité, ainsi que la manière de les appliquer et de les vérifier.</p>
 </td>
       <td>
         Nouvelle rubrique
@@ -66,7 +66,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Correction du guide <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Configuration du service Redis/Valkey</a> afin de clarifier le fait que les variables de déploiement <code>VALKEY_BACKEND</code> et <code>REDIS_BACKEND</code> ne déterminent pas le service de cache qu’Adobe Commerce utilise réellement et que <code>VALKEY_USE_SLAVE_CONNECTION</code>/<code>REDIS_USE_SLAVE_CONNECTION</code> doit correspondre au service réellement disponible dans l’environnement.</p>
+      <td><p>Correction du guide <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Configuration du service Redis/Valkey</a> afin de clarifier le fait que les variables de déploiement <code>VALKEY_BACKEND</code> et <code>REDIS_BACKEND</code> ne déterminent pas le service de cache qu’Adobe Commerce utilise réellement et que <code>VALKEY_USE_SLAVE_CONNECTION</code>/<code>REDIS_USE_SLAVE_CONNECTION</code> doit correspondre au service réellement disponible dans l’environnement.</p>
 </td>
       <td>
         Technique
@@ -88,7 +88,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>L’automatisation des correctifs d’Adobe Commerce est désormais disponible. Voir la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/caps-tool/intro">documentation</a> pour en savoir plus.</p>
+      <td><p>L’automatisation des correctifs d’Adobe Commerce est désormais disponible. Voir la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/caps-tool/intro">documentation</a> pour en savoir plus.</p>
 </td>
       <td>
         Mise à jour majeure, nouvelle rubrique
@@ -110,7 +110,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840">ACP2E-4840 : la requête de produits GraphQL renvoie une quantité nulle pour les produits en stock sur les stocks d’inventaire personnalisés</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840">ACP2E-4840 : la requête de produits GraphQL renvoie une quantité nulle pour les produits en stock sur les stocks d’inventaire personnalisés</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -132,7 +132,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la documentation sur la mise en cache de Commerce avec des conseils plus clairs sur site par rapport au cloud et de nouveaux conseils de migration pour passer à Valkey avec le cache Symfony L2 :<br />- Mise à jour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/caching-overview">Présentation de la mise en cache et options de configuration</a>.<br />- Mise à jour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-types">Configuration des fronts et des types de cache</a>.<br />- Mise à jour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-options">Options de serveur principal et référence de stockage du cache</a>.<br />- Mise à jour de la configuration du cache <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache"> L2 pour l’optimisation des performances</a> avec des conseils pour migrer de <code>RemoteSynchronizedCache</code> vers le cache Symfony L2.<br />- Mise à jour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Bonnes pratiques pour la configuration de Valkey et Redis Service</a> avec des étapes de migration spécifiques au cloud vers le cache L2.</p>
+      <td><p>Mise à jour de la documentation sur la mise en cache de Commerce avec des conseils plus clairs sur site par rapport au cloud et de nouveaux conseils de migration pour passer à Valkey avec le cache Symfony L2 :<br />- Mise à jour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/caching-overview">Présentation de la mise en cache et options de configuration</a>.<br />- Mise à jour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/cache-types">Configuration des fronts et des types de cache</a>.<br />- Mise à jour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/cache-options">Options de serveur principal et référence de stockage du cache</a>.<br />- Mise à jour de la configuration du cache <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/level-two-cache"> L2 pour l’optimisation des performances</a> avec des conseils pour migrer de <code>RemoteSynchronizedCache</code> vers le cache Symfony L2.<br />- Mise à jour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Bonnes pratiques pour la configuration de Valkey et Redis Service</a> avec des étapes de migration spécifiques au cloud vers le cache L2.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -154,7 +154,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des étapes permettant aux clients de vérifier la version de leurs dépendances de service dans l’interface utilisateur de Cloud et mise à jour du lien vers le guide expliquant comment les clients peuvent générer un rapport de compatibilité de mise à niveau pour leur magasin, dans <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/security-enforcement-policy#action-1-verify-and-upgrade-third-party-software-dependencies">Vérification et mise à niveau des dépendances de logiciels tiers</a>.</p>
+      <td><p>Mise à jour des étapes permettant aux clients de vérifier la version de leurs dépendances de service dans l’interface utilisateur de Cloud et mise à jour du lien vers le guide expliquant comment les clients peuvent générer un rapport de compatibilité de mise à niveau pour leur magasin, dans <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/security-enforcement-policy#action-1-verify-and-upgrade-third-party-software-dependencies">Vérification et mise à niveau des dépendances de logiciels tiers</a>.</p>
 </td>
       <td>
         Technique
@@ -176,7 +176,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194">ACP2E-4194 : les requêtes GraphQL avec des noms de filtre inconnus provoquent des journaux d’exceptions PHP</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194">ACP2E-4194 : les requêtes GraphQL avec des noms de filtre inconnus provoquent des journaux d’exceptions PHP</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -184,7 +184,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d4202395c5b7bb5e8c4a95d8fb353ec0fc523fcb">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695">ACP2E-4695 : l’indexeur de règles de catalogue manque de mémoire en raison d’une utilisation excessive de la mémoire</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695">ACP2E-4695 : l’indexeur de règles de catalogue manque de mémoire en raison d’une utilisation excessive de la mémoire</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -214,7 +214,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Suppression de PHP 8.4 en tant que version PHP prise en charge dans les notes de mise à jour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9#php-and-composer">2.4.9</a>, car il n'est pas recommandé pour l'utilisation en production et est uniquement présent pour la compatibilité de mise à niveau.</p>
+      <td><p>Suppression de PHP 8.4 en tant que version PHP prise en charge dans les notes de mise à jour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/adobe-commerce/2-4-9#php-and-composer">2.4.9</a>, car il n'est pas recommandé pour l'utilisation en production et est uniquement présent pour la compatibilité de mise à niveau.</p>
 </td>
       <td>
         Notes de mise à jour, techniques
@@ -222,7 +222,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/603bb70012a2f92ceeaad644d5252c4677a1a47c">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894">ACP2E-4894 : de nouvelles commandes apparaissent dans la grille Commandes d’administration avec un délai lorsque l’indexation asynchrone est activée</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894">ACP2E-4894 : de nouvelles commandes apparaissent dans la grille Commandes d’administration avec un délai lorsque l’indexation asynchrone est activée</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -230,7 +230,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ad40d94c1618f7e423fd6a773185b8fba48c2c72">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698">ACP2E-4698 : la modification en ligne de texte Page Builder enregistre les URL de médias absolus au lieu de la directive portable</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698">ACP2E-4698 : la modification en ligne de texte Page Builder enregistre les URL de médias absolus au lieu de la directive portable</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -238,7 +238,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/68e5e99ac0717b0e358acd6acf9934044a917a82">validation</a></td>
     </tr>
     <tr>
-      <td><p>Correction et achèvement des dates de mise en service de la fin de la prise en charge, de la prise en charge étendue et des correctifs de sécurité supplémentaires pour plusieurs lignes de version d’Adobe Commerce sur la page <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions">Versions publiées</a>.</p>
+      <td><p>Correction et achèvement des dates de mise en service de la fin de la prise en charge, de la prise en charge étendue et des correctifs de sécurité supplémentaires pour plusieurs lignes de version d’Adobe Commerce sur la page <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/versions">Versions publiées</a>.</p>
 </td>
       <td>
         Technique
@@ -260,7 +260,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">Configuration requise</a> pour ajouter RabbitMQ 3.13 en tant que version prise en charge pour Adobe Commerce 2.4.4-p18 (la plus récente), résolvant un bloqueur pour le chemin de mise à niveau du système d’exploitation Debian.</p>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements">Configuration requise</a> pour ajouter RabbitMQ 3.13 en tant que version prise en charge pour Adobe Commerce 2.4.4-p18 (la plus récente), résolvant un bloqueur pour le chemin de mise à niveau du système d’exploitation Debian.</p>
 </td>
       <td>
         Technique
@@ -282,7 +282,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797">ACP2E-4797 : l’éditeur WYSIWYG d’administration et le Page Builder bloquent les caractères Unicode à 4 octets lorsque l’utf8mb4 est pris en charge</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797">ACP2E-4797 : l’éditeur WYSIWYG d’administration et le Page Builder bloquent les caractères Unicode à 4 octets lorsque l’utf8mb4 est pris en charge</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -290,7 +290,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c97bb9c77eb0ec4bbc92d042cfa9fd440e970ca7">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682">ACP2E-4682 : les pages de storefront qui vérifient la citation est actif créent des enregistrements de citation vides</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682">ACP2E-4682 : les pages de storefront qui vérifient la citation est actif créent des enregistrements de citation vides</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -298,7 +298,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ceac870e3ccb9eeee64e3b574aaccd33c6ab69d0">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799">ACP2E-4799 : la requête GraphQL requisition_lists renvoie un total_count incorrect avec pagination</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799">ACP2E-4799 : la requête GraphQL requisition_lists renvoie un total_count incorrect avec pagination</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -306,7 +306,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/19f854db1a0ff78d0a6dca070b4b6db09d3de83e">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870">ACP2E-4870 : les e-mails d’alertes de produit ignorent les paramètres d’e-mail de vue de magasin</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870">ACP2E-4870 : les e-mails d’alertes de produit ignorent les paramètres d’e-mail de vue de magasin</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -314,7 +314,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/907df07e641ab7124353f89ca799f92d097aa54f">validation</a></td>
     </tr>
     <tr>
-      <td><p>Mise à jour du tableau <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability">Disponibilité du produit</a> avec la prise en charge d’Adobe Commerce 2.4.9 et suppression de l’entrée Page Builder, qui fait partie du produit principal depuis la version 2.4.3.</p>
+      <td><p>Mise à jour du tableau <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability">Disponibilité du produit</a> avec la prise en charge d’Adobe Commerce 2.4.9 et suppression de l’entrée Page Builder, qui fait partie du produit principal depuis la version 2.4.3.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -336,7 +336,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593">ACP2E-4593 : page CMS de restriction de site web incorrecte diffusée sur le site web secondaire dans les storefronts multi-sites</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.82 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593">ACP2E-4593 : page CMS de restriction de site web incorrecte diffusée sur le site web secondaire dans les storefronts multi-sites</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -358,7 +358,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Correction de la matrice de prise en charge des versions de l’extension B2B dans <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability">Disponibilité du produit</a> pour Adobe Commerce 2.4.6, 2.4.7 et 2.4.8.</p>
+      <td><p>Correction de la matrice de prise en charge des versions de l’extension B2B dans <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability">Disponibilité du produit</a> pour Adobe Commerce 2.4.6, 2.4.7 et 2.4.8.</p>
 </td>
       <td>
         Technique
