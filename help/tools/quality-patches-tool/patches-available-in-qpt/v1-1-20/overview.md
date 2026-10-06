@@ -1,17 +1,15 @@
 ---
-title: Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.20
-description: Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans  [!DNL Quality Patches Tool] (QPT) v1.1.20.
+title: 'Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.20'
+description: Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.20.
 feature: Tools and External Services
 role: Admin
 exl-id: 224b57b8-89c4-43b7-835f-d62c2e5b6201
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '175'
 ht-degree: 0%
-
 ---
-
 # Présentation d’[!DNL Quality Patches Tool] (QPT) v1.1.20
 
 Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.20.

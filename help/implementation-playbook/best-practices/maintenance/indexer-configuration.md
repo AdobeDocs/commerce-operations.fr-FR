@@ -6,11 +6,9 @@ feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
 source-git-commit: 29168544e3a33b874b104f308bd53cb475ac2638
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '346'
 ht-degree: 0%
-
 ---
-
 # Bonnes pratiques relatives à la configuration de l’indexeur
 
 Pour optimiser et maintenir les performances du site, passez en revue et mettez à jour la configuration de l’indexeur à l’aide des bonnes pratiques de performances décrites dans cet article.
@@ -49,4 +47,4 @@ Pour optimiser les performances du site, suivez ces bonnes pratiques d’indexat
 
 - [Gestion des index pour les utilisateurs administrateurs](../../../configuration/cli/manage-indexers.md#configure-indexers)
 - [Gestion des index à l’aide de l’interface de ligne de commande Magento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=fr)
-- [Présentation de l’indexation pour les développeurs](https://developer.adobe.com/commerce/php/development/components/indexing/)
+- [Présentation de l’indexation pour les développeurs et développeuses](https://developer.adobe.com/commerce/php/development/components/indexing/)
