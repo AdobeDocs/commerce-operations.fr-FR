@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 9c17eea494812648e488f181d025e0eb78eda0ff
+source-git-commit: 9e2d11d7a383434670c4cb45e3764ed2b8974e9c
 workflow-type: tm+mt
-source-wordcount: '10699'
+source-wordcount: '10703'
 ht-degree: 0%
 ---
 
@@ -1060,6 +1060,8 @@ ht-degree: 0%
       - [ACP2E-4875 : les utilisateurs administrateurs se sont déconnectés lors de l’ouverture de comptes clients avec des carnets d’adresses volumineux](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+    - v1.1.84 {#v1-1-84}
+      - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
   - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Référence des outils de ligne de commande {#cli-reference}
   - [Adobe Commerce (sur site)](reference/commerce-on-premises.md)
