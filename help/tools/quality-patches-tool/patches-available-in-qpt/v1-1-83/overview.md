@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 6fedf98a6936fe842230003e0c2d52598bcf999d
+source-git-commit: 58221418f5aca814cda2d72a1cd83099bbb53a0c
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '519'
 ht-degree: 0%
 ---
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -22,7 +22,7 @@ QPT v1.1.83 comprend les correctifs suivants :
 1. **ACP2E-4838** : correction du problème en raison duquel un utilisateur administrateur disposant d’autorisations limitées ne peut pas supprimer les clients de la grille Clients .
 1. **ACP2E-4877** : correction du problème en raison duquel les commandes passées à l’aide de **[!UICONTROL Payment on Account]** ne pouvaient pas être modifiées dans l’administration lorsqu’elles avaient le statut *En attente*.
 1. **ACP2E-4908** : correction du problème en raison duquel les catalogues volumineux entraînent une utilisation excessive de la mémoire dans Redis ou Valkey, car des entrées de cache de mise en page distinctes ont été créées pour chaque produit dans chaque vue de magasin.
-1. **AC-12854** : correction du problème en raison duquel la réorganisation d’une commande dans l’administration crée un nouveau numéro de commande avec un suffixe *-1* au lieu d’attribuer le numéro de commande séquentiel suivant.
+1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)** : correction du problème en raison duquel la réorganisation d’une commande dans l’administration crée un nouveau numéro de commande avec un suffixe `-1` au lieu d’attribuer le numéro de commande séquentiel suivant.
 1. **ACP2E-4977** : correction du problème en raison duquel les totaux généraux des factures et des avoirs pour les produits configurables n&#39;incluent pas les **[!UICONTROL Fixed Product Tax]** (FPT), ce qui entraîne des totaux inférieurs au total de la commande.
 1. **AC-16530** : correction d’un problème en raison duquel le panier ne reflétait pas de manière cohérente les mises à jour planifiées des règles de prix de catalogue.
 1. **AC-11389** : correction d’un problème en raison duquel les remises, les taxes et les totaux des commandes ne sont pas calculés correctement dans certains scénarios d’arrondi.
