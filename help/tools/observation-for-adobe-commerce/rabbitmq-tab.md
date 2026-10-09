@@ -30,7 +30,7 @@ L’onglet **[!UICONTROL [!DNL RabbitMQ]]** contient des informations axées sur
 
 ## [!UICONTROL [!DNL RabbitMQ] Infrastructure events]
 
-Événements d’infrastructure ](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)![[!DNL RabbitMQ]
+Événements d’infrastructure ![&#128279;](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg) [!DNL RabbitMQ]
 
 La période **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** affiche les événements d’infrastructure impliquant des [!DNL RabbitMQ] qui se sont produits au cours de la période sélectionnée :
 
@@ -76,7 +76,7 @@ Ce cadre affiche [!DNL RabbitMQ] erreurs qui se sont produites au cours du déla
 
 ## [!UICONTROL [!DNL RabbitMQ] node status]
 
-![[!DNL RabbitMQ] le statut du nœud ](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
+![[!DNL RabbitMQ] le statut du nœud &#x200B;](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
 
 * `%rabbit on node rabbit@host1 down%`) comme `rmq_node1_down`
 * `%rabbit on node rabbit@host2 down%`) comme `rmq_node2_down`
@@ -93,7 +93,7 @@ Le graphique **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by 
 
 ## [!UICONTROL [!DNL RabbitMQ] Message Detail Summary]
 
-Résumé des détails du message ](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)![[!DNL RabbitMQ]
+Résumé des détails du message ![&#128279;](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg) [!DNL RabbitMQ]
 
 * `%report.ERROR: Cron Job consumers_runner has an error: NOT_FOUND - no queue%`) comme `queue_err`
 * `%report.ERROR: Cron Job consumers_runner has an error: NOT_FOUND - no queue%`) comme `queue_err`

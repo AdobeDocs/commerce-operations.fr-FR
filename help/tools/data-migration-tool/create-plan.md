@@ -33,7 +33,7 @@ La migration est un bon moment pour effectuer des changements importants et pré
 
 * Avez-vous déterminé si vous avez besoin de toutes ces extensions sur votre nouveau site ? Il peut y en avoir d’anciennes que vous pouvez supprimer en toute sécurité.
 
-* Avez-vous déterminé si les versions Magento 2 de vos extensions existent ? Rendez-vous sur [](https://commercemarketplace.adobe.com/) pour obtenir les dernières versions ou contactez votre fournisseur d’extensions.
+* Avez-vous déterminé si les versions Magento 2 de vos extensions existent ? Rendez-vous sur [&#128279;](https://commercemarketplace.adobe.com/) pour obtenir les dernières versions ou contactez votre fournisseur d’extensions.
 
 * Quelles ressources de base de données de vos extensions souhaitez-vous migrer ?
 

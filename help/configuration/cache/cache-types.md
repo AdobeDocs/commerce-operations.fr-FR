@@ -48,7 +48,7 @@ type de cache → cache frontal → principal du cache
 
 >[!ENDSHADEBOX]
 
-Pour une présentation de l’architecture de mise en cache du Commerce, voir [ Présentation de la mise en cache et options de configuration](caching-overview.md).
+Pour une présentation de l’architecture de mise en cache du Commerce, voir [&#x200B; Présentation de la mise en cache et options de configuration](caching-overview.md).
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ La configuration `type` mappe un type de cache à un front-end :
 Où :
 
 - `<frontend_type>` : type de cache front-end de bas niveau. Spécifiez un nom de classe compatible avec `Zend_Cache_Core`.
-Si cet attribut est omis, [](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) est utilisé.
+Si cet attribut est omis, [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) est utilisé.
 
 - `<frontend_option>`, `<frontend_option_value>` : nom et valeur des options que le framework Commerce transmet sous forme de tableau associatif au cache front-end lors de la création.
 
@@ -127,5 +127,5 @@ Si cet attribut est omis, [](https://github.com/magento/magento2/blob/2.4/lib/in
 
 >[!MORELIKETHIS]
 >
->- Configuration du cache L2 [ pour l’optimisation des performances](level-two-cache.md)
->- [ Gérer le cache ](../cli/manage-cache.md)
+>- Configuration du cache L2 [&#x200B; pour l’optimisation des performances](level-two-cache.md)
+>- [&#x200B; Gérer le cache &#x200B;](../cli/manage-cache.md)

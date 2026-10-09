@@ -87,9 +87,9 @@ Pour créer un type de configuration :
 
    - Le premier nœud de type définit le nom du fichier Reader, les classes `Converter` et `SchemaLocator` associées.
    - Ensuite, le nœud de type virtuel `pdfConfigDataStorage` associe la classe reader à une instance de [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php).
-   - Enfin, le dernier nœud de type associe ce type virtuel de données de configuration à la classe [](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php), qui est utilisée pour lire réellement les valeurs dans à partir de ces fichiers [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml).
+   - Enfin, le dernier nœud de type associe ce type virtuel de données de configuration à la classe [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php), qui est utilisée pour lire réellement les valeurs dans à partir de ces fichiers [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml).
 
-1. Définissez un lecteur en étendant la classe [](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) et réécrivez les paramètres suivants :
+1. Définissez un lecteur en étendant la classe [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) et réécrivez les paramètres suivants :
 
    ```php
    $_idAttributes // Array of node attribute IDs.

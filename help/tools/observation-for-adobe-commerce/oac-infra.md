@@ -30,7 +30,7 @@ L’onglet **[!DNL Infra]** isole les problèmes et les causes des problèmes d�
 
 ## [!UICONTROL Service Alerts – Infrastructure Alerts by Application name]
 
-![ Alertes de service ](../../assets/tools/observation-for-adobe-commerce/service-alerts.jpg)
+![&#x200B; Alertes de service &#x200B;](../../assets/tools/observation-for-adobe-commerce/service-alerts.jpg)
 
 Le graphique **[!UICONTROL Service Alerts – Infrastructure Alerts by Application name]** affiche les alertes de service collectées par l’agent d’infrastructure [!DNL New Relic]. Elle affiche les redémarrages du service, dont beaucoup sont associés aux déploiements.
 

@@ -80,7 +80,7 @@ La mise en cache pleine page HTTP stocke les réponses complètes sur la couche 
 
 La mise en cache L2, ou à deux niveaux, ajoute un cache local sur chaque nœud web de Commerce tout en conservant le stockage de cache distant partagé. Les données fréquemment consultées peuvent être diffusées localement, ce qui réduit la communication avec le cache distant dans les déploiements multi-nœuds.
 
-La configuration et les implémentations prises en charge de L2 varient selon la version et le type de déploiement de Commerce. Pour plus d’informations, consultez la configuration du cache L2 ](level-two-cache.md).[
+La configuration et les implémentations prises en charge de L2 varient selon la version et le type de déploiement de Commerce. Pour plus d’informations, consultez la configuration du cache L2 [&#128279;](level-two-cache.md).
 
 ### Mise en cache de contenu statique
 

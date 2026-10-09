@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 # [!DNL Extensions]
 
-Un [!DNL extension] est un module personnalisé, un module linguistique ou une combinaison de modules personnalisés et de modules linguistiques qui ajoutent de nouvelles fonctionnalités au produit Adobe Commerce de base. [](https://commercemarketplace.adobe.com//extensions.html) propose une sélection de [!DNL extensions] disponibles gratuitement et celles qui sont à vendre. La liste des [!DNL extensions] installés sur votre instance Adobe Commerce figure dans le [!DNL Site-Wide Analysis Tool] .
+Un [!DNL extension] est un module personnalisé, un module linguistique ou une combinaison de modules personnalisés et de modules linguistiques qui ajoutent de nouvelles fonctionnalités au produit Adobe Commerce de base. [&#128279;](https://commercemarketplace.adobe.com//extensions.html) propose une sélection de [!DNL extensions] disponibles gratuitement et celles qui sont à vendre. La liste des [!DNL extensions] installés sur votre instance Adobe Commerce figure dans le [!DNL Site-Wide Analysis Tool] .
 
 ## Quand l’utiliser
 

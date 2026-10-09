@@ -24,7 +24,7 @@ La variable d’environnement `MAGE_DIRS` vous permet de spécifier des chemins 
 
 ## Définir MAGE_DIRS
 
-Spécifiez un tableau associatif où les clés sont des constantes de [](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php) et les valeurs sont des chemins absolus d’accès aux répertoires ou à leurs chemins d’accès aux URL, respectivement.
+Spécifiez un tableau associatif où les clés sont des constantes de [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php) et les valeurs sont des chemins absolus d’accès aux répertoires ou à leurs chemins d’accès aux URL, respectivement.
 
 Vous pouvez définir `MAGE_DIRS` de l’une des manières suivantes :
 

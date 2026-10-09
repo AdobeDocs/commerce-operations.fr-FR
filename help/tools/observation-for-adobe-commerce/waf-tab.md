@@ -30,13 +30,13 @@ L’onglet **[!DNL WAF]** affiche le trafic transmis et bloqué par le [!DNL fir
 
 ## [!DNL WAF traffic summary]
 
-![Résumé du trafic ](../../assets/tools/observation-for-adobe-commerce/waf-1.png)
+![Résumé du trafic &#x200B;](../../assets/tools/observation-for-adobe-commerce/waf-1.png)
 
 L’image **[!DNL WAF traffic summary]** affiche le nombre de trafic transmis, consignés, bloqués et en échec par le [!DNL firewall].
 
 ## [!DNL WAF Top 10 blocked IP Addresses]
 
-![Les 10 adresses IP les plus bloquées dans ](../../assets/tools/observation-for-adobe-commerce/waf-2.png)
+![Les 10 adresses IP les plus bloquées dans &#x200B;](../../assets/tools/observation-for-adobe-commerce/waf-2.png)
 
 La trame **[!DNL WAF Top 10 blocked IP Addresses]** affiche les 10 adresses IP les plus bloquées par le [!DNL firewall].
 
@@ -60,7 +60,7 @@ L’image **[!DNL Top 10 WAF Rules Executed and Logged by IP address]** affiche 
 
 ## [!DNL WAF Logged Details]
 
-![Détails consignés dans ](../../assets/tools/observation-for-adobe-commerce/waf-6.jpg)
+![Détails consignés dans &#x200B;](../../assets/tools/observation-for-adobe-commerce/waf-6.jpg)
 
 Le cadre **[!DNL WAF Logged Details]** affiche les requêtes enregistrées par le [!DNL firewall], y compris des détails tels que l’horodatage, la ville, la région et le centre de données.
 

@@ -30,7 +30,7 @@ L’onglet **[!UICONTROL QuickView]** décrit les différents types d’alertes 
 
 ## [!UICONTROL Alerts]
 
-![Alertes ](../../assets/tools/observation-for-adobe-commerce/quickview_alerts.jpg)
+![Alertes &#x200B;](../../assets/tools/observation-for-adobe-commerce/quickview_alerts.jpg)
 
 Le cadre **[!UICONTROL Alerts]** affiche différentes alertes, y compris des avertissements d’espace disque et des alertes d’utilisation du serveur pendant une période sélectionnée. Ce cadre examine les opérations des tables de base de données, y compris les `SELECT`, les `DELETE` et les `UPDATE` sur une période sélectionnée.
 
@@ -42,6 +42,6 @@ Le cadre **[!UICONTROL Upsize / Downsize by node]** affiche les hausses et les b
 
 ## [!UICONTROL CPU Utilization]
 
-![Utilisation de ](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
+![Utilisation de &#x200B;](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
 
 Le cadre **[!UICONTROL CPU Utilization]** affiche l’utilisation du CPU par les nœuds sur la période sélectionnée.

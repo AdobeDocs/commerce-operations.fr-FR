@@ -82,11 +82,11 @@ La migration vers Magento 2 implique quatre composants : les données, les exten
 
 ### Données
 
-Nous avons développé l’[!DNL Data Migration Tool]**** Magento 2 pour vous aider à transférer efficacement vers Magento 2 l’ensemble de vos produits, clients, données de commande, configurations de magasin, promotions, etc. Ce guide fournit des informations sur l’outil et les bonnes pratiques pour l’utiliser afin de migrer vos données.
+Nous avons développé l’[!DNL Data Migration Tool]&#x200B;**&#x200B;** Magento 2 pour vous aider à transférer efficacement vers Magento 2 l’ensemble de vos produits, clients, données de commande, configurations de magasin, promotions, etc. Ce guide fournit des informations sur l’outil et les bonnes pratiques pour l’utiliser afin de migrer vos données.
 
 ### Extensions et code personnalisé
 
-Nous avons travaillé dur avec la communauté de développement pour vous aider à utiliser vos extensions Magento 1 dans Magento 2. Nous sommes maintenant fiers de présenter le [](https://commercemarketplace.adobe.com//), où vous pouvez télécharger ou acheter les dernières versions de vos extensions préférées.
+Nous avons travaillé dur avec la communauté de développement pour vous aider à utiliser vos extensions Magento 1 dans Magento 2. Nous sommes maintenant fiers de présenter le [&#128279;](https://commercemarketplace.adobe.com//), où vous pouvez télécharger ou acheter les dernières versions de vos extensions préférées.
 
 Vous trouverez plus d’informations sur le développement d’extensions pour Magento 2 dans le [PHP Developer Guide](https://developer.adobe.com/commerce/php/development/).
 

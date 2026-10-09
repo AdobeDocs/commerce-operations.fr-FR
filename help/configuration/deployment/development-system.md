@@ -35,4 +35,4 @@ Vous pouvez avoir un nombre illimité de systèmes de développement, à conditi
 
 - Vérifiez que `app/etc/config.php` est _inclus_ dans le contrôle de code source
 
-Si vous utilisez Git, le fichier `.gitignore` fournit la plupart des éléments précédents. Voir la référence ](../reference/config-reference-gitignore.md).[`.gitignore`
+Si vous utilisez Git, le fichier `.gitignore` fournit la plupart des éléments précédents. Voir la référence [&#128279;](../reference/config-reference-gitignore.md).`.gitignore`

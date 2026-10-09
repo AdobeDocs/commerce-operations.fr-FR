@@ -58,13 +58,13 @@ Ce cadre affiche le nom de l’index et le nombre de statuts de couleur de l’i
 
 ## [!UICONTROL Elasticsearch Status by node information]
 
-![Statut ](../../assets/tools/elasticsearch-status-by-node.jpg)
+![Statut &#x200B;](../../assets/tools/elasticsearch-status-by-node.jpg)
 
 Le cadre **[!UICONTROL Elasticsearch Status by node information]** affiche l’état du cluster [!DNL Elasticsearch] par couleur et par nœud. Cela permet d’indiquer quel nœud du cluster [!DNL Elasticsearch] renvoie quel statut au cours de la période sélectionnée.
 
 ## [!UICONTROL Elasticsearch index information]
 
-![Informations sur l’index ](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
+![Informations sur l’index &#x200B;](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
 Le tableau **[!UICONTROL Elasticsearch index information]** indique le nom de l’index, le nœud sur lequel il se trouve, le nombre de documents indexés, l’intégrité de l’index et la taille de l’index en Mo à un moment donné.
 
@@ -82,19 +82,19 @@ L’image **[!UICONTROL Elasticsearch process CPU %]** affiche le pourcentage de
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![Informations sur l’index ](../../assets/tools/elasticsearch-index-information-2.jpg)
+![Informations sur l’index &#x200B;](../../assets/tools/elasticsearch-index-information-2.jpg)
 
 L’intégrité de l’index peut changer à mesure que les index sont créés et mis à jour.
 
 ## [!UICONTROL Elasticsearch Index Size]
 
-![Taille de l’index ](../../assets/tools/elasticsearch-index-size.jpg)
+![Taille de l’index &#x200B;](../../assets/tools/elasticsearch-index-size.jpg)
 
 Le cadre **[!UICONTROL Elasticsearch Index Size]** indique le nom et la taille de l’index sur la période sélectionnée. Cela peut indiquer des problèmes liés à l’indexation d’un site.
 
 ## [!UICONTROL Elasticsearch Errors]
 
-![Erreurs ](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
+![Erreurs &#x200B;](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
 
 L’image **[!UICONTROL Elasticsearch Errors]** affiche des erreurs avec des [!DNL Elasticsearch] telles que le manque d’espace, le passage du statut Jaune au statut Rouge, lorsque toutes les partitions échouent, lorsqu’il existe des problèmes de paramètres avec les recherches, des erreurs de version et lorsque tous les nœuds sont indisponibles.
 

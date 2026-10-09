@@ -32,4 +32,4 @@ Pour utiliser l’applet de commande [!DNL New Relic Observation for Adobe Comme
 
 Ensuite, sur la page d’accueil de [!DNL New Relic], sélectionnez l’élément de menu Applications .
 
-![Page d&#39;accueil de ](../../assets/tools/observation-for-adobe-commerce/new-relic-homepage.jpeg)
+![Page d&#39;accueil de &#x200B;](../../assets/tools/observation-for-adobe-commerce/new-relic-homepage.jpeg)
