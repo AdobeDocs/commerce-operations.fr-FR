@@ -25,7 +25,7 @@ ht-degree: 1%
 ---
 # Bonne pratique pour la configuration des rapports
 
-Si votre entreprise n’a pas besoin de la fonctionnalité de création de rapports ou de segments dynamiques de clients, désactivez la fonctionnalité [Rapports](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/reports) pour améliorer les performances de la boutique.
+Si votre entreprise n’a pas besoin de la fonctionnalité de création de rapports ou de segments dynamiques de clients, désactivez la fonctionnalité [Rapports](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/general/reports) pour améliorer les performances de la boutique.
 
 ## Produits et versions concernés
 
@@ -44,5 +44,5 @@ Si vous n’utilisez pas les rapports ou les segments clients dynamiques, désac
 
 ## Informations supplémentaires
 
-- [Génération de rapports dans Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/reports-menu)
-- [Segments dynamiques client](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments)
+- [Génération de rapports dans Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/reporting/reports-menu)
+- [Segments dynamiques client](https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/segments/customer-segments)

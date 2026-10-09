@@ -209,7 +209,7 @@ Pour la plupart des environnements, la chronologie suivante décrit la durée de
 
 * Connectez-vous à [&#128279;](https://account.magento.com/customer/account/login) (ou demandez au propriétaire de votre compte de le faire) et vérifiez que votre compte a accès à la base de code Commerce Enterprise.
 * Vérifiez que les clés d’authentification publique et privée du compositeur de votre projet sont correctes. Voir [Clés d’authentification](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
-* Vérifiez que le package nommé dans le message d’erreur est disponible pour votre version de Commerce. Voir [Packages &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce).
+* Vérifiez que le package nommé dans le message d’erreur est disponible pour votre version de Commerce. Voir [Packages &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/packages/adobe-commerce).
 
 **Si les détails mentionnent des emplacements ou des ressources d’environnement :**
 
