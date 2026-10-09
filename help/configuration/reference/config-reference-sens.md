@@ -3,26 +3,40 @@ title: Chemins sensibles et spécifiques au système
 description: Découvrez les chemins de configuration sensibles et spécifiques au système pour Adobe Commerce. Découvrez la configuration sécurisée et la gestion des variables d’environnement.
 feature: Configuration, System
 exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '4570'
 ht-degree: 0%
-
 ---
-
 # Paramètres sensibles et spécifiques au système
 
 Cette rubrique répertorie les chemins de configuration pour les paramètres spécifiques au système et sensibles :
 
-- La commande [`magento app:config:dump` écrit &#x200B;](../cli/export-configuration.md) paramètres spécifiques au système dans le fichier de configuration spécifique au système, `app/etc/env.php`, qui ne doit _pas_ se trouver dans le contrôle de code source. Il écrit également la configuration partagée pour toutes les instances Commerce à `app/etc/config.php`. Ce fichier _doit_ se trouve dans le contrôle de code source.
-- La commande [`magento config:sensitive:set` écrit &#x200B;](../cli/set-configuration-values.md) paramètres sensibles à `app/etc/env.php`.
+- La commande [`magento app:config:dump` écrit ](../cli/export-configuration.md) paramètres spécifiques au système dans le fichier de configuration spécifique au système, `app/etc/env.php`, qui ne doit _pas_ se trouver dans le contrôle de code source. Il écrit également la configuration partagée pour toutes les instances Commerce à `app/etc/config.php`. Ce fichier _doit_ se trouve dans le contrôle de code source.
+- La commande [`magento config:sensitive:set` écrit ](../cli/set-configuration-values.md) paramètres sensibles à `app/etc/env.php`.
 
   Vous pouvez également définir des valeurs sensibles à l’aide de variables de configuration, comme indiqué dans la section [Utiliser des variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).
 
 Pour obtenir la liste des autres chemins de configuration, voir :
 
 - [Tous les chemins de configuration, sauf les paiements](../reference/config-reference-general.md)
-- [&#x200B; Chemins de configuration des paiements &#x200B;](../reference/config-reference-payment.md).
+- [ Chemins de configuration des paiements ](../reference/config-reference-payment.md).
 
 >[!INFO]
 >

@@ -1,13 +1,22 @@
 ---
 title: Courtier en messages (Artéfacts ActiveMQ)
 description: Pour installer et configurer le courtier de messages Apache ActiveMQ Artemis pour les installations sur site d’Adobe Commerce, procédez comme suit.
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '938'
 ht-degree: 0%
-
 ---
-
 # Courtier en messages (Artéfacts ActiveMQ)
 
 Adobe Commerce prend également en charge le courtier de messages open source ActiveMQ Artemis via le protocole STOMP (Simple Text Oriented Messaging Protocol). Il fournit un système de messagerie fiable et évolutif, offrant une flexibilité pour les intégrations STOMP.
@@ -15,7 +24,7 @@ Adobe Commerce prend également en charge le courtier de messages open source Ac
 
 >[!NOTE]
 >
->ActiveMQ Artemis a été introduit dans Adobe Commerce 2.4.5 et les versions ultérieures. Pour plus d’informations sur l’installation d’ActiveMQ Artemis dans Adobe Commerce sur des projets d’infrastructure cloud, voir [Configuration du service ActiveMQ](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/activemq) dans le *Guide de Commerce sur le cloud*.
+>ActiveMQ Artemis a été introduit dans Adobe Commerce 2.4.5 et les versions ultérieures. Pour plus d’informations sur l’installation d’ActiveMQ Artemis dans Adobe Commerce sur des projets d’infrastructure cloud, voir [Configuration du service ActiveMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq) dans le *Guide de Commerce sur le cloud*.
 
 Les files d&#39;attente de messages fournissent un mécanisme de communication asynchrone dans lequel l&#39;expéditeur et le destinataire d&#39;un message ne se contactent pas. Ils n’ont pas non plus besoin de communiquer avec la file d’attente de messages en même temps. Lorsqu&#39;un expéditeur place un message dans une file d&#39;attente, il est stocké jusqu&#39;à ce que le destinataire le reçoive.
 
@@ -30,7 +39,7 @@ Le système de file d’attente des messages doit être établi avant d’instal
 
 >[!TIP]
 >
->[&#x200B; Consultez toujours la page de téléchargement d’Apache ActiveMQ Artemis &#x200B;](https://activemq.apache.org/components/artemis/download/) la dernière version stable avant l’installation. Les exemples de ce document utilisent la version 2.42.0, qui est la dernière version stable en date de septembre 2025.
+>[ Consultez toujours la page de téléchargement d’Apache ActiveMQ Artemis ](https://activemq.apache.org/components/artemis/download/) la dernière version stable avant l’installation. Les exemples de ce document utilisent la version 2.42.0, qui est la dernière version stable en date de septembre 2025.
 
 
 ## Installation des artéfacts Apache ActiveMQ
@@ -99,7 +108,7 @@ docker rm artemis
 Une fois le conteneur Docker en cours d’exécution, vous pouvez accéder aux éléments suivants :
 
 - **Console web** : http://localhost:8161/console (informations d’identification par défaut : artemis/artemis)
-- **Port STOMP** : localhost:61613 (pour la connexion Adobe Commerce)
+- **Port STOMP** : localhost :61613 (pour la connexion Adobe Commerce)
 
 >[!NOTE]
 >

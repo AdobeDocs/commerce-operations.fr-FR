@@ -3,29 +3,44 @@ title: Configuration du moteur de recherche
 description: Configurez un moteur de recherche pour les déploiements sur site d’Adobe Commerce.
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
-
 ---
-
 # Configuration du moteur de recherche
 
 Cette section décrit les paramètres minimaux que vous devez choisir pour tester Elasticsearch ou OpenSearch avec des déploiements sur site d’Adobe Commerce.
 
 >[!TIP]
 >
->Dans les versions 2.4.4 et 2.4.3-p2, tous les champs libellés **&#x200B;**&#x200B;s’appliquent également à OpenSearch.
+>Dans les versions 2.4.4 et 2.4.3-p2, tous les champs libellés **** s’appliquent également à OpenSearch.
 >Lorsque la prise en charge d’Elasticsearch 8.x a été introduite dans la version 2.4.6, de nouveaux libellés ont été créés pour faire la distinction entre les configurations Elasticsearch et OpenSearch.
 
-Pour plus d’informations sur la configuration de votre moteur de recherche, consultez le [Guide de l’utilisateur](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=fr).
+Pour plus d’informations sur la configuration de votre moteur de recherche, consultez le [Guide de l’utilisateur](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## Configuration de votre moteur de recherche à partir de l’Administration
 
 >[!TIP]
 >
->Pour obtenir des instructions sur la mise à niveau vers une nouvelle version du moteur de recherche, voir [&#x200B; Conditions préalables à la mise à niveau &#x200B;](../../upgrade/prepare/prerequisites.md).
+>Pour obtenir des instructions sur la mise à niveau vers une nouvelle version du moteur de recherche, voir [ Conditions préalables à la mise à niveau ](../../upgrade/prepare/prerequisites.md).
 
 Pour configurer votre système afin d’utiliser Elasticsearch ou OpenSearch :
 

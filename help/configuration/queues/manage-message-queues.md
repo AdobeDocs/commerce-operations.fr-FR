@@ -2,13 +2,22 @@
 title: Gérer les files d'attente de messages
 description: Découvrez comment gérer les files d’attente de messages à partir de la ligne de commande pour Adobe Commerce.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
-
 ---
-
 # Gérer les files d&#39;attente de messages
 
 Vous pouvez gérer les files d’attente de messages à partir de la ligne de commande à l’aide de tâches cron ou d’un gestionnaire de processus externe pour vous assurer que les consommateurs récupèrent les messages. Cela s&#39;applique à tous les courtiers de messages pris en charge, y compris RabbitMQ (AMQP), Apache ActiveMQ Artemis (STOMP) et l&#39;adaptateur MySQL.
@@ -49,7 +58,7 @@ Vous pouvez également utiliser un gestionnaire de processus tel que [Superviseu
 
 >[!INFO]
 >
->Si votre magasin Adobe Commerce est hébergé sur la plateforme cloud, utilisez l’[`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner) pour configurer la tâche cron `consumers_runner`.
+>Si votre magasin Adobe Commerce est hébergé sur la plateforme cloud, utilisez l’[`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner) pour configurer la tâche cron `consumers_runner`.
 
 ### Configuration spécifique
 
@@ -82,7 +91,7 @@ Modifiez le fichier `/app/etc/env.php` pour configurer le `consumers_runner` de 
 
   >[!INFO]
   >
-  >Si votre boutique Adobe Commerce est hébergée sur la plateforme cloud, utilisez le [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#consumers_wait_for_max_messages) pour configurer la manière dont les consommateurs et consommatrices traitent les messages de la file d’attente des messages.
+  >Si votre boutique Adobe Commerce est hébergée sur la plateforme cloud, utilisez le [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#consumers_wait_for_max_messages) pour configurer la manière dont les consommateurs et consommatrices traitent les messages de la file d’attente des messages.
 
   >[!NOTE]
   >

@@ -3,13 +3,25 @@ title: Intervention en cas d’incident de sécurité
 description: Gérer les incidents de sécurité en suivant les bonnes pratiques pour répondre et résoudre les problèmes de sécurité qui affectent la disponibilité et les performances du site.
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 0%
-
 ---
-
 # Bonnes pratiques pour répondre à un incident de sécurité
 
 L’article suivant résume les bonnes pratiques pour répondre à un incident de sécurité et résoudre les problèmes qui affectent la disponibilité, la fiabilité et les performances du site Adobe Commerce.
@@ -18,7 +30,7 @@ Le respect de ces bonnes pratiques peut contribuer à prévenir les accès non a
 
 >[!TIP]
 >
->Adobe a constaté que la plupart des incidents de sécurité se produisent lorsque des acteurs malveillants tirent parti de vulnérabilités existantes non corrigées, de mots de passe inappropriés ainsi que de paramètres de propriété et d’autorisation faibles dans la configuration de l’application et de l’infrastructure Commerce. Minimisez l’occurrence des incidents de sécurité en examinant et en suivant les bonnes pratiques de sécurité d’Adobe lors de la configuration, de la configuration et de la mise à jour des installations d’Adobe Commerce. Voir [&#x200B; Sécurisation de votre site et de votre infrastructure Commerce](../launch/security-best-practices.md).
+>Adobe a constaté que la plupart des incidents de sécurité se produisent lorsque des acteurs malveillants tirent parti de vulnérabilités existantes non corrigées, de mots de passe inappropriés ainsi que de paramètres de propriété et d’autorisation faibles dans la configuration de l’application et de l’infrastructure Commerce. Minimisez l’occurrence des incidents de sécurité en examinant et en suivant les bonnes pratiques de sécurité d’Adobe lors de la configuration, de la configuration et de la mise à jour des installations d’Adobe Commerce. Voir [ Sécurisation de votre site et de votre infrastructure Commerce](../launch/security-best-practices.md).
 
 
 ## Produits et versions concernés
@@ -63,7 +75,7 @@ Dans le cas malheureux d’un compromis sur le site, voici quelques recommandati
 
 La première étape de l’analyse des incidents consiste à rassembler autant de faits que possible, aussi rapidement que possible. La collecte d&#39;informations sur l&#39;incident peut aider à déterminer la cause potentielle de l&#39;incident. Adobe Commerce fournit les outils ci-dessous pour vous aider à analyser les incidents.
 
-- [Journaux des actions d’administration d’audit](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html?lang=fr).
+- [Journaux des actions d’administration d’audit](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html).
 
   Le rapport Journaux d’actions affiche un enregistrement détaillé de toutes les actions d’administration activées pour la journalisation. Chaque enregistrement est horodaté et enregistre l’adresse IP et le nom de l’utilisateur. Les détails du journal incluent les données utilisateur de l’administrateur et les modifications associées qui ont été effectuées lors de l’action.
 
@@ -73,12 +85,12 @@ La première étape de l’analyse des incidents consiste à rassembler autant d
 
   Utilisez l’onglet **Sécurité** de l’outil pour obtenir une vue claire des problèmes de sécurité potentiels afin d’identifier les causes premières et de garantir des performances optimales des sites.
 
-- Analysez les journaux avec [Journaux &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)
+- Analysez les journaux avec [Journaux ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)
 
-  Les projets Pro d’Adobe Commerce sur les infrastructures cloud incluent le service [Journaux New Relic](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management). Le service est préconfiguré pour agréger toutes les données de journal de vos environnements d’évaluation et de production afin de les afficher dans un tableau de bord de gestion des journaux centralisé où vous pouvez rechercher et visualiser des données agrégées.
+  Les projets Pro d’Adobe Commerce sur les infrastructures cloud incluent le service [Journaux New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management). Le service est préconfiguré pour agréger toutes les données de journal de vos environnements d’évaluation et de production afin de les afficher dans un tableau de bord de gestion des journaux centralisé où vous pouvez rechercher et visualiser des données agrégées.
 
   Pour d’autres projets Commerce, vous pouvez configurer et utiliser le service [Journaux New Relic](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) pour effectuer les tâches suivantes :
-  - Utilisez [Requêtes &#x200B;](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) pour rechercher des données de journal agrégées.
+  - Utilisez [Requêtes ](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) pour rechercher des données de journal agrégées.
   - Visualisez les données de journal via l’application Journaux New Relic.
 
 ## Comptes, code et base de données d’audit
@@ -89,17 +101,17 @@ Continuez à surveiller de près le site après l&#39;incident, car de nombreux 
 
 ### Comptes utilisateur Audit Admin
 
-- [Vérifier l&#39;accès des utilisateurs administrateurs](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=fr)—Supprimez les anciens comptes inutilisés ou suspects et faites pivoter les mots de passe pour tous les utilisateurs administrateurs.
+- [Vérifier l&#39;accès des utilisateurs administrateurs](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)—Supprimez les anciens comptes inutilisés ou suspects et faites pivoter les mots de passe pour tous les utilisateurs administrateurs.
 
-- [Vérification des paramètres de sécurité d&#39;administration](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=fr)—Vérifiez que les paramètres de sécurité d&#39;administration suivent les bonnes pratiques de sécurité.
+- [Vérification des paramètres de sécurité d&#39;administration](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html)—Vérifiez que les paramètres de sécurité d&#39;administration suivent les bonnes pratiques de sécurité.
 
-- [Vérification des comptes utilisateur pour Adobe Commerce dans les projets d’infrastructure cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/user-access)—Supprimez les anciens comptes inutilisés ou suspects et faites pivoter les mots de passe pour tous les utilisateurs administrateurs de projets cloud. Vérifiez que les paramètres de sécurité du compte sont correctement configurés.
+- [Vérification des comptes utilisateur pour Adobe Commerce dans les projets d’infrastructure cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)—Supprimez les anciens comptes inutilisés ou suspects et faites pivoter les mots de passe pour tous les utilisateurs administrateurs de projets cloud. Vérifiez que les paramètres de sécurité du compte sont correctement configurés.
 
-- [Vérification des clés SSH](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/secure-connections) pour Adobe Commerce sur les infrastructures cloud : révision, suppression et rotation des clés SSH.
+- [Vérification des clés SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) pour Adobe Commerce sur les infrastructures cloud : révision, suppression et rotation des clés SSH.
 
 ### Code audit
 
-- Depuis l’administration, passez en revue la configuration [En-tête et pied de page &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=fr) à tous les niveaux de l’étendue, y compris `website` et `store view`. Supprimez tout code JavaScript inconnu des scripts et des feuilles de style, ainsi que divers paramètres d’HTML. Conserver uniquement le code reconnu tel que les fragments de code de suivi.
+- Depuis l’administration, passez en revue la configuration [En-tête et pied de page ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) à tous les niveaux de l’étendue, y compris `website` et `store view`. Supprimez tout code JavaScript inconnu des scripts et des feuilles de style, ainsi que divers paramètres d’HTML. Conserver uniquement le code reconnu tel que les fragments de code de suivi.
 
 - Comparez la base de code de production actuelle à la base de code stockée dans le système de contrôle de version (VCS).
 

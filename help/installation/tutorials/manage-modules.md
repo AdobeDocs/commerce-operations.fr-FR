@@ -2,13 +2,22 @@
 title: Activation ou désactivation de modules
 description: Découvrez comment activer, désactiver et vérifier l’état des modules Adobe Commerce à partir de la ligne de commande à l’aide du statut du module et des options associées.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 0%
-
 ---
-
 # Activation ou désactivation de modules
 
 Cette commande n&#39;a pas de prérequis.
@@ -29,7 +38,7 @@ Où
 
 >[!NOTE]
 >
->Vous ne pouvez pas activer ni désactiver les modules directement dans les projets cloud. Vous devez exécuter ces commandes localement, puis pousser les modifications vers le fichier `app/etc/config.php` pour un environnement. Voir [Workflow de projet Pro : Workflow de déploiement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow).
+>Vous ne pouvez pas activer ni désactiver les modules directement dans les projets cloud. Vous devez exécuter ces commandes localement, puis pousser les modifications vers le fichier `app/etc/config.php` pour un environnement. Voir [Workflow de projet Pro : Workflow de déploiement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow).
 
 ## Activation et désactivation du module
 
@@ -47,7 +56,7 @@ Où
 
 * `<module-list>` est une liste délimitée par des espaces de modules à activer ou désactiver. Si un nom de module contient des caractères spéciaux, placez-le entre guillemets simples ou doubles.
 * `--all` d’activer ou de désactiver tous les modules en même temps.
-* `-f` ou `--force` de forcer l&#39;activation ou la désactivation d&#39;un module malgré les dépendances. Avant d’utiliser cette option, voir [&#x200B; À propos de l’activation et de la désactivation des modules &#x200B;](#about-enabling-and-disabling-modules).
+* `-f` ou `--force` de forcer l&#39;activation ou la désactivation d&#39;un module malgré les dépendances. Avant d’utiliser cette option, voir [ À propos de l’activation et de la désactivation des modules ](#about-enabling-and-disabling-modules).
 * `-c` ou `--clear-static-content` nettoie [les fichiers d’affichage statiques générés](../../configuration/cli/static-view-file-deployment.md).
 
   Si vous ne parvenez pas à effacer les fichiers d’affichage statique, des problèmes peuvent se produire si plusieurs fichiers portent le même nom et que vous ne les effacez pas tous.
@@ -60,7 +69,7 @@ Par exemple, pour désactiver le module `Magento_Weee`, saisissez :
 bin/magento module:disable Magento_Weee
 ```
 
-Pour obtenir des informations importantes sur l’activation et la désactivation des modules, voir [&#x200B; À propos de l’activation et de la désactivation des modules](#about-enabling-and-disabling-modules).
+Pour obtenir des informations importantes sur l’activation et la désactivation des modules, voir [ À propos de l’activation et de la désactivation des modules](#about-enabling-and-disabling-modules).
 
 ## Mise à jour de la base de données
 

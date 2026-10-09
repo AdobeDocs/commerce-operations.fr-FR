@@ -2,18 +2,27 @@
 title: Désinstallation des modules
 description: Découvrez comment désinstaller les modules Adobe Commerce avec la suppression facultative du code, du schéma et des données, et quand désactiver les modules au lieu de les désinstaller.
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 0%
-
 ---
-
 # Désinstallation des modules
 
 Cette section explique comment désinstaller un ou plusieurs modules. Lors de la désinstallation, vous avez la possibilité de supprimer le code, le schéma de base de données et les données de la base de données des modules. Vous pouvez d’abord créer des sauvegardes afin de pouvoir récupérer les données ultérieurement.
 
-Vous ne devez désinstaller un module que si vous êtes certain de ne pas l&#39;utiliser. Au lieu de désinstaller un module, vous pouvez le désactiver comme indiqué dans la section [&#x200B; Activer ou désactiver des modules](manage-modules.md).
+Vous ne devez désinstaller un module que si vous êtes certain de ne pas l&#39;utiliser. Au lieu de désinstaller un module, vous pouvez le désactiver comme indiqué dans la section [ Activer ou désactiver des modules](manage-modules.md).
 
 >[!NOTE]
 >
@@ -50,7 +59,7 @@ La commande de désinstallation du module effectue les tâches suivantes :
 
 1. Si `--remove-data` est spécifié, supprimez le schéma de base de données et les données définies dans les classes `Uninstall` du module.
 
-   Pour chaque module spécifié à désinstaller, appelle la méthode `uninstall` dans sa classe `Uninstall`. Cette classe doit hériter de [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php).
+   Pour chaque module spécifié à désinstaller, appelle la méthode `uninstall` dans sa classe `Uninstall`. Cette classe doit hériter de [](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php).
 
 1. Supprime les modules spécifiés de la table de base de données `setup_module`.
 1. Supprime les modules spécifiés de la liste des modules dans la [configuration de déploiement](../../configuration/reference/deployment-files.md).

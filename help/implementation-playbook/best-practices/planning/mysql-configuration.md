@@ -4,13 +4,23 @@ description: Découvrez comment les déclencheurs MySQL et les connexions esclav
 role: Developer
 feature: Best Practices
 exl-id: 7c2f51fd-9333-4954-bd35-79c2de3cb2ff
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
-
 ---
-
 # Bonnes pratiques de configuration de MySQL
 
 >[!NOTE]
@@ -47,8 +57,8 @@ Cette surcharge supplémentaire peut avoir un impact négatif sur les performanc
 Pour éviter des problèmes de performances lors de l’utilisation de déclencheurs, suivez ces instructions :
 
 - Si des déclencheurs personnalisés écrivent des données lors de l’exécution du déclencheur, déplacez cette logique pour écrire directement dans les tables d’audit à la place. Par exemple, en ajoutant une requête supplémentaire dans le code de l’application, après la requête pour laquelle vous souhaitiez créer le déclencheur.
-- Passez en revue les déclencheurs personnalisés existants et envisagez de les supprimer et d’écrire directement dans les tableaux du côté de l’application. Recherchez les déclencheurs existants dans votre base de données à l’aide de l’instruction SQL [&#128279;](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).`SHOW TRIGGERS`
-- Pour toute assistance supplémentaire, toute question ou préoccupation, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+- Passez en revue les déclencheurs personnalisés existants et envisagez de les supprimer et d’écrire directement dans les tableaux du côté de l’application. Recherchez les déclencheurs existants dans votre base de données à l’aide de l’instruction SQL ](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).[`SHOW TRIGGERS`
+- Pour toute assistance supplémentaire, toute question ou préoccupation, [envoyez un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ## Connexions esclaves
 
@@ -62,7 +72,7 @@ Adobe Commerce sur les infrastructures cloud, architecture Pro uniquement
 
 ### Configuration
 
-Dans Adobe Commerce sur l’infrastructure cloud, vous pouvez remplacer la configuration par défaut de la connexion esclave MYSQL en définissant la variable [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection). Définissez cette variable sur `true` pour utiliser automatiquement une connexion en lecture seule à la base de données.
+Dans Adobe Commerce sur l’infrastructure cloud, vous pouvez remplacer la configuration par défaut de la connexion esclave MYSQL en définissant la variable [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection). Définissez cette variable sur `true` pour utiliser automatiquement une connexion en lecture seule à la base de données.
 
 **Pour activer la connexion esclave MySQL** :
 

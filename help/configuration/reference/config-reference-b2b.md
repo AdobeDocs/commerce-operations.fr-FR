@@ -3,18 +3,41 @@ title: Référence des chemins de configuration de l’extension B2B
 description: Découvrez les chemins et les valeurs de configuration de l’extension B2B pour Adobe Commerce. Découvrez les options de configuration spécifiques à l’entreprise, au paiement, au devis et au B2B.
 feature: Configuration, B2B, Companies, Payments, Quotes
 exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e9004f3c-09ae-5d24-acd2-fa0987fdb66e
+    internal-label: Companies
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 792a7e9b-6519-5e99-a913-56c3dd2408da
+    internal-label: Quotes
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 0%
-
 ---
-
 # Référence des chemins de configuration de l’extension B2B
 
 _Cette option est disponible pour les instances où le B2B pour Adobe Commerce est installé._
 
-Cette rubrique répertorie les chemins de configuration pour l’extension Commerce Enterprise B2B. La commande [`magento app:config:dump` écrit &#x200B;](../cli/export-configuration.md) ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit se trouver dans le contrôle de code source.
+Cette rubrique répertorie les chemins de configuration pour l’extension Commerce Enterprise B2B. La commande [`magento app:config:dump` écrit ](../cli/export-configuration.md) ces valeurs dans le fichier de configuration partagé, `app/etc/config.php`, qui doit se trouver dans le contrôle de code source.
 
 >[!INFO]
 >
@@ -58,8 +81,8 @@ Ces valeurs de configuration sont disponibles dans Admin dans **[!UICONTROL Stor
 | Nom | Chemin de configuration | Chiffré ? | Spécifique au système ? | Sensible ? |
 |--------------|--------------|--------------|--------------|--------------|
 | Autoriser l’enregistrement d’entreprise à partir du storefront | `company/general/allow_company_registration` | | | |
-| Destinataire de l&#39;e-mail d&#39;enregistrement de l&#39;entreprise | `company/email/company_registration` | | | ![&#x200B; Sensible &#x200B;](/help/assets/configuration/cloud-sens.png) |
-| Envoyer La Copie De L&#39;E-Mail D&#39;Enregistrement De L&#39;Entreprise À | `company/email/company_registration_copy` | | | ![&#x200B; Sensible &#x200B;](/help/assets/configuration/cloud-sens.png) |
+| Destinataire de l&#39;e-mail d&#39;enregistrement de l&#39;entreprise | `company/email/company_registration` | | | ![ Sensible ](/help/assets/configuration/cloud-sens.png) |
+| Envoyer La Copie De L&#39;E-Mail D&#39;Enregistrement De L&#39;Entreprise À | `company/email/company_registration_copy` | | | ![ Sensible ](/help/assets/configuration/cloud-sens.png) |
 | Méthode envoi de copie d’e-mail | `company/email/company_copy_method` | | | |
 | E-mail d&#39;enregistrement d&#39;entreprise par défaut | `company/email/company_notify_admin_template` | | | |
 | E-Mails Relatifs Aux Clients | `company/email/heading_customer` | | | |
@@ -72,7 +95,7 @@ Ces valeurs de configuration sont disponibles dans Admin dans **[!UICONTROL Stor
 | E-mail de statut client par défaut inactif | `company/email/customer_account_locked_template` | | | |
 | Changement de statut de l&#39;entreprise | `company/email/heading_company_status` | | | |
 | Destinataire de l&#39;e-mail de changement de statut de l&#39;entreprise | `company/email/company_status_change` | | | |
-| Envoyer La Copie D&#39;E-Mail De Changement De Statut De La Société À | `company/email/company_status_change_copy` | | | ![&#x200B; Sensible &#x200B;](/help/assets/configuration/cloud-sens.png) |
+| Envoyer La Copie D&#39;E-Mail De Changement De Statut De La Société À | `company/email/company_status_change_copy` | | | ![ Sensible ](/help/assets/configuration/cloud-sens.png) |
 | Méthode envoi de copie d’e-mail | `company/email/company_status_copy_method` | | | |
 | Le Statut Par Défaut De La Société Est Remplacé Par Actif 1 E-Mail | `company/email/company_status_pending_approval_to_active_template` | | | |
 | Le Statut D&#39;Entreprise Par Défaut Est Remplacé Par Actif 2 E-Mail | `company/email/company_status_rejected_blocked_to_active_template` | | | |
@@ -80,7 +103,7 @@ Ces valeurs de configuration sont disponibles dans Admin dans **[!UICONTROL Stor
 | Le Statut Par Défaut De L’Entreprise Est Remplacé Par E-Mail Bloqué | `company/email/company_status_blocked_template` | | | |
 | Le Statut Par Défaut De La Société A Été Remplacé Par E-Mail En Attente D&#39;Approbation | `company/email/company_status_pending_approval_template` | | | |
 | Crédit d&#39;entreprise | `company/email/heading_company_credit` | | | |
-| Modifier le crédit de la société pour l&#39;expéditeur de l&#39;e-mail | `company/email/company_credit_change` |  | | ![&#x200B; Sensible &#x200B;](/help/assets/configuration/cloud-sens.png) |
+| Modifier le crédit de la société pour l&#39;expéditeur de l&#39;e-mail | `company/email/company_credit_change` |  | | ![ Sensible ](/help/assets/configuration/cloud-sens.png) |
 | Envoyer La Copie D&#39;E-Mail De Modification Du Crédit De La Société À | `company/email/company_credit_change_copy` | | | |
 | Méthode envoi de copie d’e-mail | `company/email/company_credit_copy_method` | | | |
 | Modèle d’e-mail alloué | `company/email/credit_allocated_email_template` | | | |
@@ -119,7 +142,7 @@ Ces valeurs de configuration sont disponibles dans Admin dans **Magasins** > Par
 | Expiration du devis (dans 48 heures) | `sales_email/quote/expire_two_days_template` | | | |
 | Expiration du devis (dans 24 heures) | `sales_email/quote/expire_one_day_template` | | | |
 | Date d’expiration réinitialisée | `sales_email/quote/expire_reset_template` | | | |
-| Envoyer La Copie De L&#39;E-Mail Du Devis À | `sales_email/quote/copy_to` | | | ![&#x200B; Sensible &#x200B;](/help/assets/configuration/cloud-sens.png) |
+| Envoyer La Copie De L&#39;E-Mail Du Devis À | `sales_email/quote/copy_to` | | | ![ Sensible ](/help/assets/configuration/cloud-sens.png) |
 | Méthode de copie d&#39;e-mail de devis d&#39;envoi | `sales_email/quote/copy_method` | | | |
 
 {style="table-layout:auto"}

@@ -2,13 +2,22 @@
 title: California Consumer Privacy Act (CCPA)
 description: Découvrez le California Consumer Privacy Act (CCPA), qui étend les droits des consommateurs californiens quant à la manière dont leurs informations personnelles sont collectées, stockées et utilisées.
 exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%
-
 ---
-
 # California Consumer Privacy Act (CCPA)
 
 >[!NOTE]
@@ -26,7 +35,7 @@ Le CCPA accorde aux consommateurs les nouveaux droits suivants :
 
 ## Conformité au CCPA
 
-L&#39;élaboration et la mise en œuvre d&#39;un plan de conformité au CCPA exigent un effort coordonné. Nous encourageons les commerçants à constituer une équipe transversale et à suivre la feuille de route décrite dans le [Guide de conformité du CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=fr) pour mettre leur entreprise en conformité avec la réglementation. En tant que développeur, vous pouvez être invité à participer en tant que partie prenante en mettant l’accent sur les étapes 2 à 5 du processus. Pour plus d’informations, consultez le [Guide de conformité du CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=fr).
+L&#39;élaboration et la mise en œuvre d&#39;un plan de conformité au CCPA exigent un effort coordonné. Nous encourageons les commerçants à constituer une équipe transversale et à suivre la feuille de route décrite dans le [Guide de conformité du CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) pour mettre leur entreprise en conformité avec la réglementation. En tant que développeur, vous pouvez être invité à participer en tant que partie prenante en mettant l’accent sur les étapes 2 à 5 du processus. Pour plus d’informations, consultez le [Guide de conformité du CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html).
 
 1. Constituer une équipe transversale pour assurer la conformité au CCPA.
 

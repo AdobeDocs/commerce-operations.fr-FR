@@ -3,13 +3,27 @@ title: Fichiers de configuration pour le déploiement
 description: Découvrez le fonctionnement des fichiers de configuration pour le déploiement de l’application Adobe Commerce. Découvrez les bonnes pratiques de gestion des configurations partagées et spécifiques au système.
 feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 0%
-
 ---
-
 # Fichiers de configuration pour le déploiement
 
 Adobe Commerce fournit des fichiers de configuration qui vous permettent de personnaliser facilement un composant et de créer des types de configuration pour étendre les fonctionnalités par défaut. Le processus de configuration du déploiement correspond à la configuration partagée et spécifique au système pour votre installation. La configuration du déploiement de Commerce est divisée entre [`app/etc/config.php`](../reference/config-reference-configphp.md) et [`app/etc/env.php`](../reference/config-reference-envphp.md).
@@ -35,7 +49,7 @@ Contrairement aux autres [fichiers de configuration de module](../reference/modu
 
 Au niveau supérieur de ce tableau se trouvent des _segments de configuration_. Un segment comporte du contenu arbitraire (une valeur scalaire ou un tableau imbriqué), se distinguant par une clé arbitraire, où la paire clé-valeur est définie par le framework Commerce.
 
-[&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) donne simplement accès à ces sections, mais ne vous permet pas de les étendre.
+[](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) donne simplement accès à ces sections, mais ne vous permet pas de les étendre.
 
 Au niveau de la hiérarchie suivante, les éléments de chaque segment sont triés en fonction de la définition de séquence de module, obtenue en fusionnant tous les fichiers de configuration des modules, à l’exception des modules désactivés.
 

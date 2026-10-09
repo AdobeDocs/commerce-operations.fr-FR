@@ -1,16 +1,37 @@
 ---
 title: 'Alertes gérées sur Adobe Commerce : alertes MariaDB'
-description: Cet article décrit les étapes de dépannage à suivre lorsque vous recevez des alertes MariaDB pour Adobe Commerce dans  [!DNL New Relic]. Les alertes MariaDB surveillent une charge de requête élevée ainsi que des requêtes DML (Data Manipulation Language) excessives. Ces deux éléments peuvent dégrader l’expérience utilisateur, voire entraîner des temps d’arrêt. Vous pouvez recevoir deux types d’alertes.
+description: Cet article décrit les étapes de dépannage à suivre lorsque vous recevez des alertes MariaDB pour Adobe Commerce dans [!DNL New Relic]. Les alertes MariaDB surveillent une charge de requête élevée ainsi que des requêtes DML (Data Manipulation Language) excessives. Ces deux éléments peuvent dégrader l’expérience utilisateur, voire entraîner des temps d’arrêt. Vous pouvez recevoir deux types d’alertes.
 feature: Cache, Observability, Support, Tools and External Services
 role: Admin
 exl-id: d85af2e1-090c-4ad7-a898-3a3c4a5efe3b
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
-
 ---
-
 # Alertes gérées sur Adobe Commerce : alertes MariaDB
 
 Cet article décrit les étapes de dépannage à suivre lorsque vous recevez des alertes MariaDB pour Adobe Commerce dans [!DNL New Relic]. Les alertes MariaDB surveillent une charge de requête élevée ainsi que des requêtes DML (Data Manipulation Language) excessives. Ces deux éléments peuvent dégrader l’expérience utilisateur, voire entraîner des temps d’arrêt. Vous pouvez recevoir deux types d’alertes :
@@ -44,7 +65,7 @@ Vous recevrez une alerte gérée en [!DNL New Relic] si vous vous êtes inscrit 
 
 Si vous recevez une alerte critique de requêtes DML, commencez à l’étape 1. Si vous recevez une alerte d’avertissement de requêtes DML, commencez à l’étape 2.
 
-1. Vérifiez si un ticket d’assistance Adobe Commerce existe. Pour connaître les étapes à suivre, consultez notre base de connaissances [Suivre vos tickets d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case). L’assistance peut avoir reçu une alerte de seuil [!DNL New Relic], créé un ticket et commencé à travailler sur le problème. S’il n’existe aucun ticket, créez-en un. Le ticket doit contenir les informations suivantes :
+1. Vérifiez si un ticket d’assistance Adobe Commerce existe. Pour connaître les étapes à suivre, consultez notre base de connaissances [Suivre vos tickets d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case). L’assistance peut avoir reçu une alerte de seuil [!DNL New Relic], créé un ticket et commencé à travailler sur le problème. S’il n’existe aucun ticket, créez-en un. Le ticket doit contenir les informations suivantes :
    * Motif du contact : sélectionnez **[!UICONTROL New Relic MariaDB alert received]**.
    * Description de l’alerte.
    * [[!DNL New Relic] Lien de l’incident](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). Cela est inclus dans vos [alertes gérées pour Adobe Commerce](managed-alerts-for-magento-commerce.md).
@@ -56,4 +77,4 @@ Si vous recevez une alerte critique de requêtes DML, commencez à l’étape 1.
    1. Recherchez des optimisations de code ou des optimisations opérationnelles :
       * Optimisations du code : cherchez à optimiser les requêtes avec des insertions/mises à jour en bloc, en réduisant l’utilisation de l’index ou en limitant le code.
       * Optimisations opérationnelles : déchargez les modifications de données gourmandes en ressources pour réduire les temps de trafic.
-      * Optimisations supplémentaires : Assurez-vous d&#39;utiliser la dernière version des outils ECE. Pour connaître les étapes, reportez-vous à la section [Mise à jour de la version des outils](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) dans le guide Commerce sur le cloud .
+      * Optimisations supplémentaires : Assurez-vous d&#39;utiliser la dernière version des outils ECE. Pour connaître les étapes, reportez-vous à la section [Mise à jour de la version des outils](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) dans le guide Commerce sur le cloud .

@@ -4,20 +4,30 @@ description: Découvrez comment traiter et stocker en toute sécurité les infor
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
-
 ---
-
 # Bonnes pratiques de traitement et de stockage des paiements
 
-L’un des principes clés du maintien de la conformité [PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html?lang=fr) est d’avoir une stratégie pour traiter et stocker correctement les paiements par carte de crédit.
+L’un des principes clés du maintien de la conformité [PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) est d’avoir une stratégie pour traiter et stocker correctement les paiements par carte de crédit.
 
 Le stockage des données des titulaires de carte dans Adobe Commerce est **strictement interdit** et cela pourrait constituer une violation de vos obligations en tant que commerçant en vertu de la norme PCI-DSS (Payment Card Industry Data Security Standard). Pour plus d’informations sur le modèle de responsabilité partagée et les directives relatives aux obligations des commerçants, consultez le [Guide du modèle de responsabilité partagée d’](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) dans le Centre de gestion de la confidentialité d’Adobe.
 
-Suivez les bonnes pratiques ci-dessous pour vous assurer que vous traitez correctement les informations de paiement sur votre site d’e-commerce. Pour obtenir des conseils supplémentaires sur les bonnes pratiques de sécurité, voir [&#x200B; Sécurisation de votre site et de votre infrastructure &#x200B;](../launch/security-best-practices.md).
+Suivez les bonnes pratiques ci-dessous pour vous assurer que vous traitez correctement les informations de paiement sur votre site d’e-commerce. Pour obtenir des conseils supplémentaires sur les bonnes pratiques de sécurité, voir [ Sécurisation de votre site et de votre infrastructure ](../launch/security-best-practices.md).
 
 ## Produits et versions concernés
 
@@ -53,4 +63,4 @@ La méthode recommandée pour gérer les données du titulaire de carte consiste
 
 ## Informations supplémentaires
 
-Si vous recherchez des solutions de paiement recommandées par Adobe, pensez à [Adobe Payment Services](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html?lang=fr).
+Si vous recherchez des solutions de paiement recommandées par Adobe, pensez à [Adobe Payment Services](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html).

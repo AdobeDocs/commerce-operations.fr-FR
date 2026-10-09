@@ -3,18 +3,27 @@ title: Fonctionnement de la migration des données
 description: Découvrez le processus de migration des données entre Magento 1 et Magento 2, notamment la terminologie, les diagrammes de workflow et les étapes.
 exl-id: 821492dc-ee5b-4c4a-9479-680ee8c5756d
 topic: Commerce, Migration
-source-git-commit: 65ee7e84800c781577b1e210971a62b430d6300a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 0%
-
 ---
-
 # Fonctionnement de la migration des données
 
 Cette rubrique fournit une présentation détaillée de la migration des données de Magento 1 vers Magento 2 à l’aide de l’[!DNL Data Migration Tool] .
 
-Le [!DNL Data Migration Tool] est un outil d’interface de ligne de commande (CLI) utilisé pour transférer des données de Magento 1 vers Magento 2. L’outil vérifie la cohérence entre les structures de base de données Magento 1 et 2 (tables et champs), suit la progression du transfert de données, crée des journaux et exécute des tests de vérification des données.
+Le [!DNL Data Migration Tool] est un outil d’interface de ligne de commande (CLI) utilisé pour transférer des données de Magento 1 à Magento 2. L’outil vérifie la cohérence entre les structures de base de données Magento 1 et 2 (tables et champs), suit la progression du transfert de données, crée des journaux et exécute des tests de vérification des données.
 
 ## Terminologie
 
@@ -43,8 +52,8 @@ Le [!DNL Data Migration Tool] utilise une liste d’*étapes* dans chaque mode p
 
 Au sein de chaque étape se trouvent trois *étapes* qui sont toujours exécutées dans cet ordre pour s’assurer que les données sont correctement migrées :
 
-1. **Vérification de l’intégrité** : compare les noms, types et autres informations des champs de la table afin de vérifier la compatibilité entre les structures de données Magento 1 et 2.
-1. **Transfert de données** : transfère la table de données par table depuis Magento 1 et 2.
+1. **Vérification de l’intégrité** : compare les noms, les types et d’autres informations des champs de la table afin de vérifier la compatibilité entre les structures de données Magento 1 et 2.
+1. **Transfert de données** : transfère la table de données par table de Magento 1 et 2.
 1. **Vérification du volume** : compare le nombre d’enregistrements entre les tables pour vérifier que le transfert a réussi.
 
 ![Étapes de migration](../../assets/data-migration/MigrationSteps2.png)
@@ -65,26 +74,27 @@ Les fichiers de mappage sont traités plus en détail dans la [Spécification te
 
 [Spécification technique [!DNL Data Migration Tool]](technical-specification.md)
 
-Nous sommes ravis que vous envisagiez de passer de la plateforme de commerce #1 mondiale (Magento 1.x) à la plateforme de l’avenir, Magento 2. Nous sommes ravis de vous communiquer les détails de ce processus, que nous appelons la migration.
+Nous sommes ravis que vous envisagiez de passer de la plateforme de commerce #1 mondiale Magento 1.x à la plateforme du futur, Magento 2. Nous sommes ravis de vous communiquer les détails de ce processus, que nous appelons la migration.
 
 ## Composants de migration
 
-La migration de Magento 2 implique quatre composants : les données, les extensions et le code personnalisé, les thèmes et les personnalisations.
+La migration vers Magento 2 implique quatre composants : les données, les extensions et le code personnalisé, les thèmes et les personnalisations.
 
 ### Données
 
-Nous avons développé le [!DNL Data Migration Tool]&#x200B;**&#x200B;** Magento 2 pour vous aider à déplacer efficacement vers Magento 2 l’ensemble de vos données de produits, de clients et de commandes, les configurations de magasin, les promotions, etc. Ce guide fournit des informations sur l’outil et les bonnes pratiques pour l’utiliser afin de migrer vos données.
+Nous avons développé l’[!DNL Data Migration Tool]**** Magento 2 pour vous aider à transférer efficacement vers Magento 2 l’ensemble de vos produits, clients, données de commande, configurations de magasin, promotions, etc. Ce guide fournit des informations sur l’outil et les bonnes pratiques pour l’utiliser afin de migrer vos données.
 
 ### Extensions et code personnalisé
 
-Nous avons travaillé dur avec la communauté de développement pour vous aider à utiliser vos extensions Magento 1 dans Magento 2. Nous sommes maintenant fiers de présenter le [&#128279;](https://commercemarketplace.adobe.com//), où vous pouvez télécharger ou acheter les dernières versions de vos extensions préférées.
+Nous avons travaillé dur avec la communauté de développement pour vous aider à utiliser vos extensions Magento 1 dans Magento 2. Nous sommes maintenant fiers de présenter le [](https://commercemarketplace.adobe.com//), où vous pouvez télécharger ou acheter les dernières versions de vos extensions préférées.
 
-Vous trouverez plus d’informations sur le développement d’extensions pour Magento 2 dans le [Guide du développeur de PHP](https://developer.adobe.com/commerce/php/development/).
+Vous trouverez plus d’informations sur le développement d’extensions pour Magento 2 dans le [PHP Developer Guide](https://developer.adobe.com/commerce/php/development/).
 
 ### Thèmes et personnalisations
 
-Magento 2 utilise de nouvelles approches et technologies qui donnent aux commerçants une capacité inégalée à créer des expériences d’achat innovantes et à passer à de nouveaux niveaux. Pour tirer parti de ces avancées, les développeurs doivent apporter des modifications à leurs thèmes et personnalisations. La documentation relative à la création de Magento 2 [thèmes](https://developer.adobe.com/commerce/frontend-core/guide/themes/), [mises en page](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) et [personnalisations](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage) est disponible en ligne.
+Magento 2 utilise de nouvelles approches et technologies qui donnent aux commerçants une capacité inégalée à créer des expériences d&#39;achat innovantes et à passer à de nouveaux niveaux. Pour tirer parti de ces avancées, les développeurs doivent apporter des modifications à leurs thèmes et personnalisations. La documentation relative à la création de Magento 2 [thèmes](https://developer.adobe.com/commerce/frontend-core/guide/themes/), [mises en page](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) et [personnalisations](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage) est disponible en ligne.
 
 ## Efforts de migration
 
-Tout comme une mise à niveau entre les versions 1.x (par exemple, de v1.12 à v1.14), le niveau d’effort pour migrer de Magento 1 à Magento 2 dépend de la manière dont vous avez créé votre site et de son niveau de personnalisation.Cependant, nous améliorons constamment la [!DNL Data Migration Tool] (voir le [Journal des modifications](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md) pour plus de détails) ; les efforts de migration diminuent donc continuellement.
+Tout comme une mise à niveau entre les versions 1.x (par exemple, de v1.12 à v1.14), le niveau d’effort pour migrer de Magento 1 à Magento 2 dépend de la manière dont vous avez créé votre site et de son niveau de personnalisation.
+Cependant, nous améliorons constamment la [!DNL Data Migration Tool] (voir le [Journal des modifications](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md) pour plus de détails) ; les efforts de migration diminuent donc continuellement.

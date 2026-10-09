@@ -2,13 +2,22 @@
 title: Dictionnaires de traduction et packages de langue
 description: Découvrez comment générer des dictionnaires de traduction et créer des packages de langue pour Adobe Commerce. Découvrez la localisation et la configuration de la boutique multilingue.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
-
 ---
-
 # Localisation
 
 {{file-system-owner}}
@@ -18,7 +27,7 @@ Les traductions Commerce vous permettent de personnaliser et de localiser votre 
 - **Dictionnaires de traduction**, qui sont un moyen pratique de personnaliser ou de traduire _certains_ mots et expressions, tels que ceux d’un module ou d’un thème personnalisé.
 - **Packages de langues** qui permettent de traduire _tout ou partie_ des mots et expressions dans l’application Commerce.
 
-Voir [&#x200B; Présentation des traductions &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/translations/).
+Voir [ Présentation des traductions ](https://developer.adobe.com/commerce/frontend-core/guide/translations/).
 
 ## Génération d’un dictionnaire de traduction
 
@@ -35,7 +44,7 @@ Pour générer le dictionnaire et commencer la traduction :
 
 1. Vous pouvez regrouper les dictionnaires de traduction dans un package de langue et fournir le package à l’administrateur du magasin Commerce.
 
-1. Dans Admin, l’administrateur de magasin [configure les traductions](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-localize).
+1. Dans Admin, l’administrateur de magasin [configure les traductions](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize).
 
 Options de commande :
 
@@ -48,7 +57,7 @@ Le tableau suivant explique les paramètres et valeurs :
 | Paramètre | Valeur | Obligatoire ? |
 |--- |--- |--- |
 | `<path to directory to translate>` | Chemin d’accès à un répertoire contenant du code traduisible ; en d’autres termes, des fichiers PHP, PHTML ou XML contenant des expressions à traduire.<br><br>L’outil commence à rechercher le chemin d’accès que vous avez saisi et recherche tous les fichiers et sous-répertoires qu’il contient.<br><br>N’utilisez pas ce paramètre si vous utilisez `-m --magento`. | Oui (dictionnaires), non (packages). |
-| `-m --magento` | Obligatoire pour créer un package de langue à partir de ce dictionnaire de traduction. S’il est utilisé, recherche les répertoires contenant bin/magento. Cette option ajoute des thèmes ou des modules à chaque ligne du dictionnaire.<br><br>Voici un exemple :<br><br>« Aucun élément trouvé »,« Aucun élément trouvé »,module,Magento_Wishlist | Non |
+| `-m --magento` | Obligatoire pour créer un package de langue à partir de ce dictionnaire de traduction. S’il est utilisé, recherche les répertoires contenant bin/magento. Cette option ajoute des thèmes ou des modules à chaque ligne du dictionnaire.<br><br>Voici un exemple : <br><br>« Aucun élément trouvé »,« Aucun élément trouvé »,module,Magento_Wishlist | Non |
 | `-o --output="<path>"` | Indique le chemin d’accès absolu au système de fichiers et le nom de fichier du fichier CSV du dictionnaire de traduction à créer. La valeur saisie est sensible à la casse. Le nom du fichier CSV doit correspondre exactement au nom du paramètre régional, y compris la casse des caractères.<br><br>Si vous omettez ce paramètre, la sortie est redirigée vers stdout. | Non |
 
 >[!INFO]
@@ -139,7 +148,7 @@ Pour créer ces fichiers :
 
 Lors de la déclaration d’un package de langue dans le fichier de configuration `language.xml`, vous devez spécifier la séquence d’héritage de langue de ce package.
 
-L’héritage de langue vous permet de créer une traduction appelée _enfant_ basée sur une traduction existante appelée _parent_. Les traductions enfants remplacent les traductions parents. Cependant, si le chargement ou l’affichage de la traduction enfant échoue ou si une expression ou un mot est manquant, Commerce utilise le paramètre régional parent. [&#x200B; Exemples d’héritage de package de langue &#x200B;](#example-of-language-inheritance).
+L’héritage de langue vous permet de créer une traduction appelée _enfant_ basée sur une traduction existante appelée _parent_. Les traductions enfants remplacent les traductions parents. Cependant, si le chargement ou l’affichage de la traduction enfant échoue ou si une expression ou un mot est manquant, Commerce utilise le paramètre régional parent. [ Exemples d’héritage de package de langue ](#example-of-language-inheritance).
 
 Pour déclarer un package, spécifiez les informations suivantes :
 
@@ -195,7 +204,7 @@ Si l’application Commerce ne trouve pas de mot ou d’expression dans le packa
 1. `<vendorname>/en_ca_package`
 1. `<vendorname>/en_us_package`
 
-La spécification de tous les héritages entre les packages de langue peut entraîner la création de chaînes d’héritage circulaires. Utilisez le test [&#128279;](https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php) pour localiser et corriger ces chaînes.
+La spécification de tous les héritages entre les packages de langue peut entraîner la création de chaînes d’héritage circulaires. Utilisez le test [](https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php) pour localiser et corriger ces chaînes.
 
 ### Configuration de plusieurs packages pour une langue
 

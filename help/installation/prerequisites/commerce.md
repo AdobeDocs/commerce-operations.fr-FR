@@ -2,13 +2,22 @@
 title: Procurez-vous le logiciel Adobe Commerce.
 description: Découvrez comment obtenir le logiciel Adobe Commerce à l’aide du compositeur, vérifier la compatibilité des extensions et choisir la distribution appropriée pour l’installation.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
-
 ---
-
 # Procurez-vous le logiciel Adobe Commerce.
 
 Vous faites partie des 240 000 commerçants du monde entier qui font confiance à notre logiciel de commerce électronique. Nous avons rassemblé quelques informations pour vous aider à commencer votre installation.
@@ -21,7 +30,7 @@ Vérifiez la disponibilité et la compatibilité des extensions créées par Ado
 >
 >Les bases de code Adobe Commerce sont désormais exclusivement distribuées via le compositeur en raison de modifications de la politique. Utilisez le compositeur pour télécharger l’une des versions d’Adobe Commerce répertoriées, car la base de code n’est plus disponible dans la section Téléchargements .
 >
->Pour plus d’informations, voir [Impossible d’accéder au relevé de facturation et de télécharger la base de code sur Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26611)
+>Pour plus d’informations, voir [Impossible d’accéder au relevé de facturation et de télécharger la base de code sur Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)
 
 Consultez le tableau suivant pour commencer à installer Adobe Commerce.
 

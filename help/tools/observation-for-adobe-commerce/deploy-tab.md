@@ -1,15 +1,29 @@
 ---
 title: Onglet [!UICONTROL Deploy]
-description: En savoir plus sur l’onglet [!UICONTROL Deploy] de  [!DNL Observation for Adobe Commerce].
+description: En savoir plus sur l’onglet [!UICONTROL Deploy] de [!DNL Observation for Adobe Commerce].
 exl-id: 3e33f7b0-7a40-4598-ae2e-436118e8d99a
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '323'
 ht-degree: 0%
-
 ---
-
 # Onglet [!UICONTROL Deploy]
 
 Cet onglet permet d’isoler rapidement les problèmes et les causes des problèmes de déploiement.
@@ -157,6 +171,6 @@ Le cadre **[!UICONTROL Count of modules imported during deploy]** indique le nom
 
 ## [!UICONTROL Deployed module list]
 
-![&#x200B; Liste des modules déployés &#x200B;](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
+![ Liste des modules déployés ](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
 
 La période **[!UICONTROL Deployed module list]** affiche les modules déployés sur la période sélectionnée.

@@ -1,17 +1,30 @@
 ---
-title: 'MDVA-39305-V3 : problème de connexion avec activé [!DNL Google reCAPTCHA]'
-description: Appliquez le correctif MDVA-39305-V3 pour résoudre le problème d’Adobe Commerce en raison duquel les clients enregistrés ne peuvent pas se connecter lorsque  [!DNL Google reCAPTCHA]  est activé. Ce correctif corrige également le problème en raison duquel un formulaire peut être envoyé avant  [!DNL Google reCAPTCHA]  chargement complet. En outre, il corrige l’erreur *L’appel à une fonction membre isDisabled() sur null* lorsque des blocs sont utilisés à des emplacements autres que ceux par défaut sur une page CMS.
+title: 'MDVA-39305-V3 : problème de connexion avec le [!DNL Google reCAPTCHA] activé'
+description: Appliquez le correctif MDVA-39305-V3 pour résoudre le problème d’Adobe Commerce en raison duquel les clients enregistrés ne peuvent pas se connecter lorsque le [!DNL Google reCAPTCHA] est activé. Ce correctif corrige également le problème où un formulaire peut être envoyé avant le chargement complet de l’[!DNL Google reCAPTCHA]. En outre, il corrige l’erreur *L’appel à une fonction membre isDisabled() sur null* lorsque des blocs sont utilisés à des emplacements autres que ceux par défaut sur une page CMS.
 feature: Console
 role: Admin
 exl-id: 63e880aa-9a2e-4c34-9ead-20bfc5204f2c
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '489'
 ht-degree: 0%
-
 ---
-
 # MDVA-39305-V3 : problème de connexion avec le [!DNL Google reCAPTCHA] activé
 
 >[!NOTE]
@@ -86,7 +99,7 @@ Une erreur 500 se produit sur la page du storefront.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 

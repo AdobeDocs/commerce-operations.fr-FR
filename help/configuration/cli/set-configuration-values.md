@@ -2,13 +2,22 @@
 title: Définir les valeurs de configuration
 description: Découvrez comment définir des valeurs de configuration et modifier les valeurs d’administration verrouillées dans Adobe Commerce. Découvrez les commandes et techniques de configuration avancées.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 0%
-
 ---
-
 # Définir les valeurs de configuration
 
 {{file-system-owner}}
@@ -219,7 +228,7 @@ où
 
 >[!INFO]
 >
->La commande `bin/magento config:show` affiche les valeurs de toutes les [&#x200B; valeurs chiffrées &#x200B;](../reference/config-reference-sens.md) sous la forme d’une série d’astérisques : `**&#x200B;**&#x200B;**`.
+>La commande `bin/magento config:show` affiche les valeurs de toutes les [ valeurs chiffrées ](../reference/config-reference-sens.md) sous la forme d’une série d’astérisques : `******`.
 
 ### Exemples
 
@@ -290,5 +299,5 @@ web/unsecure/base_url - http://example-for-store.com/
 
 >[!INFO]
 >
->Le code d’étendue peut uniquement inclure des lettres (a-z ou A-Z), des chiffres (0-9) et des traits de soulignement (_). En outre, le premier caractère doit être une lettre. Si des majuscules ou des majuscules sont utilisées lors de la création d’une vue de site web ou de boutique, en interne, la correspondance est insensible à la casse pour s’adapter au remplacement des paramètres de configuration par le biais de variables d’environnement. Voir [&#x200B; Utilisation de variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).
+>Le code d’étendue peut uniquement inclure des lettres (a-z ou A-Z), des chiffres (0-9) et des traits de soulignement (_). En outre, le premier caractère doit être une lettre. Si des majuscules ou des majuscules sont utilisées lors de la création d’une vue de site web ou de boutique, en interne, la correspondance est insensible à la casse pour s’adapter au remplacement des paramètres de configuration par le biais de variables d’environnement. Voir [ Utilisation de variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).
 

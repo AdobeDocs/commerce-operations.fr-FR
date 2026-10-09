@@ -1,19 +1,28 @@
 ---
 title: '[!DNL Upgrade Compatibility Tool] requises'
-description: Vérifiez que votre système répond à la configuration requise pour exécuter dans une interface  [!DNL Upgrade Compatibility Tool]  ligne de commande pour votre projet Adobe Commerce.
+description: Vérifiez que votre système répond à la configuration requise pour exécuter le [!DNL Upgrade Compatibility Tool] dans une interface de ligne de commande pour votre projet Adobe Commerce.
 exl-id: b8af2e07-3d28-4937-bb88-b0a1c88a2938
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '317'
 ht-degree: 0%
-
 ---
-
 # Clés d’accès Adobe Commerce
 
 {{commerce-only}}
 
-Vous devez disposer de [clés d’accès &#x200B;](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information#access-keys) pour télécharger et utiliser le [!DNL Upgrade Compatibility Tool]. Ajoutez vos clés d’accès Adobe Commerce à votre fichier `auth.json`, qui se trouve par défaut à l’emplacement `~/.composer`.
+Vous devez disposer de [clés d’accès ](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information#access-keys) pour télécharger et utiliser le [!DNL Upgrade Compatibility Tool]. Ajoutez vos clés d’accès Adobe Commerce à votre fichier `auth.json`, qui se trouve par défaut à l’emplacement `~/.composer`.
 
 >[!NOTE]
 >
@@ -34,7 +43,7 @@ La **clé publique** correspond au _nom d&#39;utilisateur_ tandis que la **clé 
 
 >[!NOTE]
 >
-> Si vous ne configurez pas correctement vos clés d&#39;accès **&#x200B;**, vous ne pouvez pas télécharger le [!DNL Upgrade Compatibility Tool] et la commande `composer create-project` échouera.
+> Si vous ne configurez pas correctement vos clés d&#39;accès ****, vous ne pouvez pas télécharger le [!DNL Upgrade Compatibility Tool] et la commande `composer create-project` échouera.
 
 Exécutez `composer install` dans votre terminal pour installer des dépendances.
 
@@ -80,4 +89,4 @@ Il est nécessaire que le [!DNL Upgrade Compatibility Tool] ait accès au code s
 
 Si vous exécutez le [!DNL Upgrade Compatibility Tool] sur une instance Adobe Commerce avec des modules et des fichiers volumineux, l’outil peut nécessiter une quantité de RAM élevée (au moins 2 Go).
 
-Exécutez le [!DNL Upgrade Compatibility Tool] à partir du [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=fr) pour les projets [Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/overview){target=_blank}.
+Exécutez le [!DNL Upgrade Compatibility Tool] à partir du [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) pour les projets [Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview){target=_blank}.

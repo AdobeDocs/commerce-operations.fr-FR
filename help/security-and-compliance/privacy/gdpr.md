@@ -2,13 +2,22 @@
 title: Règlement général sur la protection des données (RGPD)
 description: Découvrez le Règlement général sur la protection des données (RGPD), qui réglemente la protection et la confidentialité des données pour tous les individus dans l’Union européenne et l’Espace économique européen.
 exl-id: 30e60601-f4f7-419e-b2dd-8c82c8a2ed33
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '288'
 ht-degree: 0%
-
 ---
-
 # Règlement général sur la protection des données (RGPD)
 
 >[!NOTE]
@@ -31,5 +40,5 @@ Pour plus d’informations techniques, reportez-vous aux diagrammes de flux de d
 
 Pour plus d’informations sur la manière dont Adobe Commerce aide les commerçants à se conformer au RGPD, consultez les sections suivantes :
 
-- [Conformité au RGPD](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html?lang=fr)
-- [Adobe Commerce est prêt pour le RGPD](https://business.adobe.com/fr/privacy/general-data-protection-regulation.html)
+- [Conformité au RGPD](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
+- [Adobe Commerce est prêt pour le RGPD](https://business.adobe.com/privacy/general-data-protection-regulation.html)

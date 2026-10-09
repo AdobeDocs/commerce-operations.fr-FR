@@ -2,17 +2,26 @@
 title: Gestion des extensions tierces
 description: Pour installer, activer, mettre à niveau et désinstaller des extensions Adobe Commerce, procédez comme suit.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 0%
-
 ---
-
 
 # Gestion des extensions tierces
 
-Le code qui étend ou personnalise le comportement d’Adobe Commerce est appelé extension. Vous pouvez éventuellement regrouper et distribuer des extensions sur [&#128279;](https://commercemarketplace.adobe.com/) ou sur un autre système de distribution d’extensions.
+Le code qui étend ou personnalise le comportement d’Adobe Commerce est appelé extension. Vous pouvez éventuellement regrouper et distribuer des extensions sur [](https://commercemarketplace.adobe.com/) ou sur un autre système de distribution d’extensions.
 
 Les extensions incluent :
 
@@ -20,7 +29,7 @@ Les extensions incluent :
 - Thèmes (modifier l’aspect de votre storefront et de votre administrateur)
 - Packages de langue (localiser le storefront et l’administrateur)
 
-Cette rubrique explique comment utiliser l’interface de ligne de commande pour gérer les extensions tierces que vous achetez auprès de Commerce Marketplace pour les projets _On-premise_. Pour les projets d’infrastructure cloud, voir [Gestion des extensions](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure-store/extensions).
+Cette rubrique explique comment utiliser l’interface de ligne de commande pour gérer les extensions tierces que vous achetez auprès de Commerce Marketplace pour les projets _On-premise_. Pour les projets d’infrastructure cloud, voir [Gestion des extensions](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions).
 
 Vous pouvez utiliser la même procédure pour installer l’extension _any_ ; tout ce dont vous avez besoin est le nom et la version du compositeur de l’extension. Pour le trouver, ouvrez le fichier `composer.json` de l’extension et notez les valeurs de `"name"` et `"version"`.
 
@@ -60,7 +69,7 @@ Si vous connaissez déjà le nom et la version du compositeur de l’extension, 
 
 Pour obtenir le nom et la version du compositeur de l’extension à partir du Commerce Marketplace :
 
-1. Connectez-vous à [&#128279;](https://commercemarketplace.adobe.com/) avec le nom d&#39;utilisateur et le mot de passe que vous avez utilisés pour acheter l&#39;extension.
+1. Connectez-vous à [](https://commercemarketplace.adobe.com/) avec le nom d&#39;utilisateur et le mot de passe que vous avez utilisés pour acheter l&#39;extension.
 
 1. Dans le coin supérieur droit, cliquez sur **Votre nom** > **Mon profil**.
 
@@ -94,7 +103,7 @@ Ajoutez le nom et la version de l’extension à votre fichier `composer.json` :
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. Saisissez vos [&#x200B; clés d’authentification &#x200B;](../prerequisites/authentication-keys.md). Votre clé publique est votre nom d&#39;utilisateur ; votre clé privée est votre mot de passe.
+1. Saisissez vos [ clés d’authentification ](../prerequisites/authentication-keys.md). Votre clé publique est votre nom d&#39;utilisateur ; votre clé privée est votre mot de passe.
 
 1. Attendez que le compositeur ait terminé la mise à jour des dépendances de votre projet et vérifiez qu’il n’y a aucune erreur :
 

@@ -2,13 +2,22 @@
 title: Modifier l’ID d’incrément
 description: Découvrez comment modifier les identifiants d’incrément pour les commandes, les factures, les avoirs et d’autres entités de base de données Commerce à l’aide de SQL lors de la fusion ou de la restauration de sites.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
-
 ---
-
 # Modifier l’ID d’incrément
 
 Cet article explique comment modifier l’ID d’incrément d’une entité de base de données (DB) Commerce (commande, facture, avoir, etc.) sur une boutique Commerce spécifique à l’aide de l’instruction SQL `ALTER TABLE`.
@@ -17,7 +26,7 @@ Cet article explique comment modifier l’ID d’incrément d’une entité de b
 
 - Adobe Commerce (sur site) : 2.x.x
 - Adobe Commerce sur l’infrastructure cloud : 2.x.x
-- MySQL : [&#x200B; toute version prise en charge &#x200B;](../../installation/prerequisites/database/mysql.md)
+- MySQL : [ toute version prise en charge ](../../installation/prerequisites/database/mysql.md)
 
 ## Quand devez-vous modifier l’ID d’incrément ?
 
@@ -28,7 +37,7 @@ Vous devrez peut-être modifier l’ID d’incrément pour les nouvelles entité
 
 >[!INFO]
 >
->Vous pouvez également résoudre le problème de passerelle de paiement pour PayPal en autorisant plusieurs paiements par ID de facture dans les Préférences de réception des paiements de PayPal. Voir [Demande rejetée de la passerelle PayPal - Émission de facture en double](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26838) dans la _Base de connaissances_.
+>Vous pouvez également résoudre le problème de passerelle de paiement pour PayPal en autorisant plusieurs paiements par ID de facture dans les Préférences de réception des paiements de PayPal. Voir [Demande rejetée de la passerelle PayPal - Émission de facture en double](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) dans la _Base de connaissances_.
 
 ## Étapes préalables
 

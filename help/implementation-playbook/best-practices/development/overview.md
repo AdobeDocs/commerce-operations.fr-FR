@@ -4,13 +4,23 @@ description: Découvrez les bonnes pratiques de mise en œuvre pour la phase de 
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 1%
-
 ---
-
 
 # Phase de développement
 
@@ -34,7 +44,7 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques pou
 
 | Bonne pratique | Description |
 |-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| [&#x200B; Révision du code &#x200B;](code-review.md) | Processus de validation recommandé pour s’assurer que la fonctionnalité implémentée répond aux exigences |
+| [ Révision du code ](code-review.md) | Processus de validation recommandé pour s’assurer que la fonctionnalité implémentée répond aux exigences |
 | [Compositeur et Git](code-management.md) | Déterminez comment distribuer le code personnalisé en prenant en compte la gestion des versions, la complexité du code et la gestion des dépendances |
 | [Stratégie d’embranchement](git-branching.md) | Gestion du code source dans les référentiels Git |
 
@@ -42,7 +52,7 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques pou
 
 | Bonne pratique | Description |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Versions et déploiement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices){target="_blank"} | Décrit les bonnes pratiques pour les étapes de création et de déploiement d’Adobe Commerce sur les projets d’infrastructure cloud |
+| [Versions et déploiement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices){target="_blank"} | Décrit les bonnes pratiques pour les étapes de création et de déploiement d’Adobe Commerce sur les projets d’infrastructure cloud |
 | Débogage | Déboguer systématiquement et efficacement le framework Adobe Commerce |
 | [Déploiement de contenu statique](static-content-deployment.md) | Évitez les problèmes liés au contenu statique qui n’apparaît pas sur votre storefront |
 | [Dépannage](troubleshooting.md) | Résolution des problèmes courants d’implémentation d’Adobe Commerce |
@@ -58,7 +68,7 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques pou
 | Bonne pratique | Description |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [Redimensionnement de l’image du catalogue](catalog-image-resizing.md) | Fournit des conseils sur le redimensionnement des images avant le démarrage en production d’un magasin pour garantir des performances optimales |
-| [&#x200B; CSS et JS &#x200B;](optimize-css-js-files.md) | Fusionner et réduire les fichiers de feuille de style en cascade (CSS) et JavaScript (JS) depuis Admin ou la ligne de commande |
+| [ CSS et JS ](optimize-css-js-files.md) | Fusionner et réduire les fichiers de feuille de style en cascade (CSS) et JavaScript (JS) depuis Admin ou la ligne de commande |
 | [Images](image-optimization.md) | Optimisez les images et utilisez Fastly pour optimiser le temps de réponse |
 
 ## Développement frontal
@@ -72,6 +82,6 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques pou
 | Bonne pratique | Description |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Gestion des exceptions](exception-handling.md) | Décrit les méthodes recommandées pour la journalisation des exceptions |
-| [&#x200B; Extensions &#x200B;](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Décrit les modèles de développement pour garantir la compatibilité entre votre extension, les futures versions d’Adobe Commerce et d’autres extensions personnalisées |
+| [ Extensions ](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Décrit les modèles de développement pour garantir la compatibilité entre votre extension, les futures versions d’Adobe Commerce et d’autres extensions personnalisées |
 | [Blocs de contenu privés](private-content-block-configuration.md) | Configurer des blocs de contenu privés pour optimiser les performances du storefront |
 | [Modification du code PHP principal et tiers](modifying-core-and-third-party-code.md) | Modifier la fonctionnalité, le résultat ou l’entrée d’un code que vous n’avez pas créé ou que vous ne contrôlez pas directement |

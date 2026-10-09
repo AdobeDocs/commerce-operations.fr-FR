@@ -2,13 +2,22 @@
 title: Configuration de plusieurs sites web avec Apache
 description: Suivez ce tutoriel pour configurer plusieurs sites web avec Apache.
 exl-id: 4c6890b3-f15a-46f2-a3e8-6f2a9b57a6ad
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 0%
-
 ---
-
 # Configuration de plusieurs sites web avec Apache
 
 Nous supposons que :
@@ -19,7 +28,7 @@ Si nécessaire, copiez le script du point d’entrée `index.php` existant pour 
 
   Des tâches supplémentaires peuvent être nécessaires pour déployer plusieurs sites web dans un environnement hébergé. Pour plus d’informations, contactez votre fournisseur d’hébergement.
 
-  Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Une fois les tâches décrites dans cette rubrique terminées, consultez [Configuration de plusieurs sites web ou magasins](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) dans le guide _Commerce sur les infrastructures cloud_.
+  Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Une fois les tâches décrites dans cette rubrique terminées, consultez [Configuration de plusieurs sites web ou magasins](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) dans le guide _Commerce sur les infrastructures cloud_.
 
 - Vous utilisez un hôte virtuel par site Web ; le fichier de configuration de l&#39;hôte virtuel est `/etc/httpd/httpd.conf`
 
@@ -110,7 +119,7 @@ Pour plus d’informations sur `SetEnvIf`, voir :
 >[!INFO]
 >
 >- Des tâches supplémentaires peuvent être nécessaires pour déployer plusieurs sites web dans un environnement hébergé. Pour plus d’informations, contactez votre fournisseur d’hébergement.
->- Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de plusieurs sites web ou magasins cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) dans le guide _Commerce sur l’infrastructure cloud_.
+>- Des tâches supplémentaires sont nécessaires pour configurer Adobe Commerce sur l’infrastructure cloud. Voir [Configuration de plusieurs sites web ou magasins cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) dans le guide _Commerce sur l’infrastructure cloud_.
 
 ### Dépannage
 

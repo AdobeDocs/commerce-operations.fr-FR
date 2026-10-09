@@ -2,13 +2,22 @@
 title: Outil de ligne de commande
 description: Découvrez comment utiliser l’outil de ligne de commande Adobe Commerce pour les tâches d’installation et de configuration. Découvrez les commandes de l’interface de ligne de commande et les fonctions administratives.
 exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 0%
-
 ---
-
 # Outil de ligne de commande
 
 Commerce dispose d’une interface de ligne de commande (CLI), `<magento_root>/bin/magento`, qui exécute les tâches d’installation et de configuration, notamment :
@@ -34,7 +43,7 @@ Cette rubrique aborde la configuration du logiciel Adobe Commerce à l’aide de
 
 Avant de commencer à utiliser l’interface en ligne de commande, vérifiez les points suivants :
 
-1. Votre système répond à la configuration requise décrite dans la section [&#x200B; Configuration requise &#x200B;](../../installation/system-requirements.md) dans le _Guide d’installation_.
+1. Votre système répond à la configuration requise décrite dans la section [ Configuration requise ](../../installation/system-requirements.md) dans le _Guide d’installation_.
 1. Vous avez terminé toutes les tâches préalables décrites dans [Conditions préalables](../../installation/prerequisites/overview.md) dans le _Guide d’installation_.
 1. Après vous être connecté au serveur Commerce, passez à un utilisateur disposant des autorisations d’écriture sur le système de fichiers Commerce. Voir [passer au propriétaire du système de fichiers](../../installation/prerequisites/file-system/overview.md) dans le _Guide d’installation_.
 

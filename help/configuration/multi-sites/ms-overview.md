@@ -2,13 +2,22 @@
 title: Plusieurs sites web ou magasins
 description: Découvrez comment démarrer plusieurs sites web ou implémenter des affichages de boutique avec différents domaines, options et contenus.
 exl-id: 724d75d9-13fc-40f9-951a-69aa407adb6f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
-
 ---
-
 # Plusieurs sites web ou magasins
 
 Une seule instance du logiciel Adobe Commerce vous permet de démarrer plusieurs sites web ou de stocker des vues qui utilisent différents attributs et contenus, par exemple :
@@ -43,8 +52,8 @@ Tenez compte des termes suivants :
 
 - `MAGE_RUN_TYPE` peut être `store` ou `website`
 
-   - Utilisez `website` pour charger un site web dans votre storefront.
-   - Utilisez `store` pour charger n’importe quelle vue de magasin dans votre storefront.
+  - Utilisez `website` pour charger un site web dans votre storefront.
+  - Utilisez `store` pour charger n’importe quelle vue de magasin dans votre storefront.
 
 - `MAGE_RUN_CODE` est le code d’affichage unique du site web ou du magasin qui correspond à `MAGE_RUN_TYPE`
 

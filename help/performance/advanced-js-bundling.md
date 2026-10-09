@@ -2,13 +2,22 @@
 title: Regroupement Avancé De JavaScript
 description: Découvrez le regroupement JavaScript avancé dans Adobe Commerce. Découvrez les conseils d’implémentation et les stratégies d’optimisation.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2301'
 ht-degree: 0%
-
 ---
-
 # Groupement JavaScript avancé
 
 Regrouper des modules JavaScript pour améliorer les performances revient à réduire deux choses :
@@ -38,7 +47,7 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 
 Il s’agit d’un mécanisme Commerce natif qui combine toutes les ressources présentes dans le système et les répartit entre des lots de même taille (bundle_0.js, bundle_1.js ... bundle_x.js) :
 
-![Regroupement &#x200B;](../assets/performance/images/magentoBundling.png)
+![Regroupement ](../assets/performance/images/magentoBundling.png)
 
 Mieux, mais le navigateur charge toujours TOUS les lots JavaScript, pas seulement ceux nécessaires.
 
@@ -314,7 +323,7 @@ awk 'END {
 }' bundle/*.txt
 ```
 
-Vous pouvez également trouver le script à l’adresse [&#128279;](https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html)
+Vous pouvez également trouver le script à l’adresse [](https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html)
 
 Ouvrez un terminal dans le répertoire racine Commerce et exécutez le fichier :
 

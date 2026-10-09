@@ -4,13 +4,23 @@ description: Découvrez les méthodes recommandées pour la journalisation des e
 feature: Best Practices
 role: Developer
 exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
-source-git-commit: 4bf8dd5c5320cc9a34cfaa552ec5e91d517d3617
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '589'
 ht-degree: 0%
-
 ---
-
 # Bonnes pratiques en matière de gestion des exceptions
 
 Si une exception n’est pas écrite dans le fichier `exception.log` avec le modèle d’exception comme contexte, elle n’est pas reconnue et analysée correctement dans New Relic ou tout autre stockage de journal compatible avec un monologue PSR-3. La journalisation d’une partie seulement de l’exception (ou de l’enregistrer dans le mauvais fichier) entraîne des bogues en production lorsque les exceptions sont ignorées.
@@ -101,7 +111,7 @@ try {
 
 ### ![incorrect](../../../assets/no.svg) `catch` vide
 
-Les blocs de `catch` vides peuvent être un signe de désactivation involontaire et doivent être remplacés par l’exemple [&#x200B; correct](#mute-signals).
+Les blocs de `catch` vides peuvent être un signe de désactivation involontaire et doivent être remplacés par l’exemple [ correct](#mute-signals).
 
 ```php
 try {

@@ -2,13 +2,22 @@
 title: Gestion des indexeurs
 description: Découvrez comment afficher et gérer les indexeurs Adobe Commerce à l’aide d’outils de ligne de commande. Découvrez les commandes de l’indexeur, la vérification de l’état et les techniques de réindexation.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 0%
-
 ---
-
 # Gestion des indexeurs
 
 {{file-system-owner}}
@@ -43,7 +52,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> Les commerçants Adobe Commerce qui utilisent Live Search, Catalog Service ou Product Recommendations ont la possibilité d’utiliser l’indexation de prix [basée sur SaaS](https://experienceleague.adobe.com/fr/docs/commerce/price-indexer/price-indexing).
+> Les commerçants Adobe Commerce qui utilisent Live Search, Catalog Service ou Product Recommendations ont la possibilité d’utiliser l’indexation de prix [basée sur SaaS](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing).
 
 ## Afficher le statut de l’indexeur
 
@@ -273,7 +282,7 @@ Stores Feed:                                       Update by Schedule
 
 >[!INFO]
 >
->Avant de changer de mode d’indexation, définissez votre site web sur le mode [maintenance](../../installation/tutorials/maintenance-mode.md) et [désactivez les tâches cron](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property). Vous éviterez ainsi les verrous de base de données.
+>Avant de changer de mode d’indexation, définissez votre site web sur le mode [maintenance](../../installation/tutorials/maintenance-mode.md) et [désactivez les tâches cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property). Vous éviterez ainsi les verrous de base de données.
 
 Pour spécifier la configuration de l’indexeur :
 

@@ -3,19 +3,35 @@ title: Initialisation et amorçage de l'application
 description: Découvrez la logique d’initialisation et de bootstrap de l’application Commerce.
 feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 0%
-
 ---
-
 # Présentation de l&#39;initialisation et du bootstrap
 
 Pour exécuter l’application Commerce, les actions suivantes sont implémentées dans [pub/index.php](https://github.com/magento/magento2/tree/2.4.8/pub/index.php) :
 
-- Incluez le fichier [&#128279;](https://github.com/magento/magento2/blob/2.4.8/app/bootstrap.php) pour la version Commerce déployée dans votre environnement. Ce fichier exécute les routines d&#39;initialisation essentielles, telles que le traitement des erreurs, l&#39;initialisation du chargeur automatique, la définition des options de profilage et la définition du fuseau horaire par défaut.
-- Créez une instance de [&#128279;](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Bootstrap.php) <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. -->
+- Incluez le fichier [](https://github.com/magento/magento2/blob/2.4.8/app/bootstrap.php) pour la version Commerce déployée dans votre environnement. Ce fichier exécute les routines d&#39;initialisation essentielles, telles que le traitement des erreurs, l&#39;initialisation du chargeur automatique, la définition des options de profilage et la définition du fuseau horaire par défaut.
+- Créez une instance de [](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Bootstrap.php) <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. -->
 - Créez une instance d’application Commerce : [\Magento\Framework\AppInterface](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/AppInterface.php)
 - Exécuter Commerce
 
@@ -71,7 +87,7 @@ Nous disposons des applications de point d’entrée suivantes (c’est-à-dire 
 
 ### Point d’entrée HTTP
 
-[&#128279;](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Http) fonctionne comme suit :
+[](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Http) fonctionne comme suit :
 
 1. Détermine la [zone d&#39;application](https://developer.adobe.com/commerce/php/architecture/modules/areas).
 1. Démarre le contrôleur avant et les systèmes de routage afin de trouver et d&#39;exécuter une action du contrôleur.
@@ -89,7 +105,7 @@ Nous disposons des applications de point d’entrée suivantes (c’est-à-dire 
 
 ### Point d’entrée de ressource statique
 
-[&#128279;](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/StaticResource.php) est une application permettant de récupérer des ressources statiques (par exemple, CSS, JavaScript et images). Cela reporte toutes les actions avec une ressource statique jusqu’à ce que la ressource soit demandée.
+[](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/StaticResource.php) est une application permettant de récupérer des ressources statiques (par exemple, CSS, JavaScript et images). Cela reporte toutes les actions avec une ressource statique jusqu’à ce que la ressource soit demandée.
 
 >[!INFO]
 >
@@ -105,7 +121,7 @@ Lorsque la requête est redirigée vers le point d’entrée, l’application Co
 
 ### Point d’entrée des ressources multimédia
 
-[&#128279;](https://github.com/magento/magento2/tree/2.4.8/app/code/Magento/MediaStorage/App/Media.php) récupère les ressources multimédias (c’est-à-dire tous les fichiers chargés dans le stockage multimédia) de la base de données. Il est utilisé chaque fois que la base de données est configurée en tant que stockage multimédia.
+[](https://github.com/magento/magento2/tree/2.4.8/app/code/Magento/MediaStorage/App/Media.php) récupère les ressources multimédias (c’est-à-dire tous les fichiers chargés dans le stockage multimédia) de la base de données. Il est utilisé chaque fois que la base de données est configurée en tant que stockage multimédia.
 
 `\Magento\Core\App\Media` tente de trouver le fichier multimédia dans le stockage de base de données configuré et de l&#39;écrire dans le répertoire `pub/static`, puis de renvoyer son contenu. En cas d’erreur, il renvoie un code d’état HTTP 404 (Introuvable) dans l’en-tête sans contenu.
 

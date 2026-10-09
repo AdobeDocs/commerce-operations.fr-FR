@@ -4,20 +4,32 @@ description: Découvrez les bonnes pratiques de configuration pour améliorer le
 role: Admin, User
 feature: Best Practices
 exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
-
 ---
-
 # Bonnes pratiques de configuration pour le traitement des commandes
 
 À mesure que le volume des commandes augmente sur vos sites Commerce, vous pouvez optimiser les performances de passage en caisse et le traitement des commandes en activant les options de configuration de magasin suivantes :
 
 - **[!UICONTROL Asynchronous indexing]** : activez cette option pour éviter les verrous de base de données et le ralentissement du traitement qui peuvent survenir lorsqu&#39;un grand nombre de commandes sont passées simultanément.
 - **[!UICONTROL Asynchronous email notifications]** : activez cette option pour accélérer les performances de passage en caisse en envoyant des notifications par e-mail de passage en caisse et de traitement de commande à des intervalles spécifiés au lieu de les envoyer immédiatement.
-- **[!UICONTROL Enable Archiving]** : activez cette option pour améliorer les performances des commandes, des factures, des livraisons et des avoirs et préserver votre espace de travail des informations inutiles, afin que vous puissiez vous concentrer sur l&#39;activité actuelle. Voir [&#x200B; Activer l’archivage &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
+- **[!UICONTROL Enable Archiving]** : activez cette option pour améliorer les performances des commandes, des factures, des livraisons et des avoirs et préserver votre espace de travail des informations inutiles, afin que vous puissiez vous concentrer sur l&#39;activité actuelle. Voir [ Activer l’archivage ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 ## Produits et versions concernés
 
@@ -38,7 +50,7 @@ Les étapes permettant d&#39;activer le traitement asynchrone des commandes dép
 
 - Pour les sites locaux Adobe Commerce en mode par défaut ou de production, activez l’indexation asynchrone en mettant à jour la configuration des paramètres de grille dans l’Administration.
 
-  Voir [Activer les mises à jour de grille planifiées et la réindexation](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html?lang=fr#enable-scheduled-grid-updates-and-reindexing)
+  Voir [Activer les mises à jour de grille planifiées et la réindexation](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
 
   >[!WARNING]
   >

@@ -3,20 +3,36 @@ title: Stockage à distance pour Commerce sur les infrastructures cloud
 description: Consultez les conseils sur la configuration du stockage distant pour Adobe Commerce sur l’infrastructure cloud.
 feature: Configuration, Cloud, Storage
 exl-id: da352466-13f2-42e4-a589-3b0a89728467
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
-
 ---
-
 # Configuration du stockage distant pour Commerce sur les infrastructures cloud
 
 À partir du package `ece-tools` 2002.1.5, vous pouvez utiliser une variable d’environnement pour activer le module de stockage distant ; toutefois, le module de stockage distant offre une prise en charge _limitée_ d’Adobe Commerce sur les infrastructures cloud. Adobe ne peut pas résoudre entièrement les problèmes liés au service de carte de stockage tiers.
 
 ## Variable d’environnement
 
-La variable `REMOTE_STORAGE` est utilisée pendant la [phase de déploiement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/deploy/process) d’un projet d’infrastructure cloud.
+La variable `REMOTE_STORAGE` est utilisée pendant la [phase de déploiement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process) d’un projet d’infrastructure cloud.
 
 ### `REMOTE_STORAGE`
 
@@ -40,7 +56,7 @@ stage:
 
 ### Définition d’une variable avec l’interface de ligne de commande Cloud
 
-Définissez la variable `REMOTE_STORAGE` en tant que [variable au niveau de l’environnement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/variable-levels) de sorte que les fichiers ne soient pas partagés entre les environnements de production, d’évaluation et d’intégration. La définition des variables au niveau de l’environnement offre la possibilité d’utiliser uniquement le stockage distant sur certains environnements, par exemple en excluant l’utilisation du stockage distant dans l’environnement d’intégration.
+Définissez la variable `REMOTE_STORAGE` en tant que [variable au niveau de l’environnement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/variable-levels) de sorte que les fichiers ne soient pas partagés entre les environnements de production, d’évaluation et d’intégration. La définition des variables au niveau de l’environnement offre la possibilité d’utiliser uniquement le stockage distant sur certains environnements, par exemple en excluant l’utilisation du stockage distant dans l’environnement d’intégration.
 
 **Pour ajouter la variable de stockage distant à l’aide de l’interface de ligne de commande Cloud** :
 
@@ -89,7 +105,7 @@ Vous pouvez également utiliser l&#39;interface Web de Project pour ajouter la v
 
 ### Utiliser l’authentification facultative
 
-Les `key` et `secret` sont facultatifs. Lorsque vous créez la variable, vous pouvez masquer les `key` et les `secret` en sélectionnant l’option `sensitive` . Avec ce paramètre, les valeurs ne sont pas visibles dans l’interface web. Voir [&#x200B; Visibilité des variables &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/variable-levels#visibility) dans le guide _Commerce sur les infrastructures cloud_.
+Les `key` et `secret` sont facultatifs. Lorsque vous créez la variable, vous pouvez masquer les `key` et les `secret` en sélectionnant l’option `sensitive` . Avec ce paramètre, les valeurs ne sont pas visibles dans l’interface web. Voir [ Visibilité des variables ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/variable-levels#visibility) dans le guide _Commerce sur les infrastructures cloud_.
 
 Si vous souhaitez utiliser une autre méthode d’authentification, omettez les `key` et `secret` de la configuration JSON,. Configurez la méthode d’authentification alternative et vérifiez que le serveur est autorisé dans le compartiment S3.
 
@@ -111,7 +127,7 @@ bin/magento remote-storage:sync
 
 Si vous choisissez d’utiliser la solution de stockage à distance avec un projet d’infrastructure cloud Adobe Commerce, suivez les conseils de [Amazon S3](https://docs.fastly.com/en/guides/amazon-s3) dans la documentation _Fastly_ pour vous assurer que l’optimisation des images Fastly fonctionne avec AWS S3.
 
-Préparez-vous à utiliser vos [informations d’identification Fastly](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration#get-fastly-credentials). Sur les projets Pro, utilisez SSH pour vous connecter à votre serveur et obtenir les informations d’identification Fastly à partir du fichier `/mnt/shared/fastly_tokens.txt`. Les environnements d’évaluation et de production disposent d’informations d’identification uniques. Vous devez obtenir les informations d’identification pour chaque environnement.
+Préparez-vous à utiliser vos [informations d’identification Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration#get-fastly-credentials). Sur les projets Pro, utilisez SSH pour vous connecter à votre serveur et obtenir les informations d’identification Fastly à partir du fichier `/mnt/shared/fastly_tokens.txt`. Les environnements d’évaluation et de production disposent d’informations d’identification uniques. Vous devez obtenir les informations d’identification pour chaque environnement.
 
 Continuez à configurer le stockage distant pour les projets cloud avec les tâches suivantes :
 

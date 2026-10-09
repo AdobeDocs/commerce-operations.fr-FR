@@ -1,15 +1,29 @@
 ---
 title: Onglet [!UICONTROL CDN]
-description: En savoir plus sur l’onglet [!UICONTROL CDN] de  [!DNL Observation for Adobe Commerce].
+description: En savoir plus sur l’onglet [!UICONTROL CDN] de [!DNL Observation for Adobe Commerce].
 exl-id: db22bbca-2033-4e9a-8799-b47d84bdd720
 feature: Configuration, Observability
-source-git-commit: e753528a1d74eda0a1393e2cc455f33f529db739
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '743'
 ht-degree: 0%
-
 ---
-
 # Onglet [!UICONTROL CDN]
 
 Cet onglet contient des informations sur le [!DNL content delivery network (CDN)]. Dans le cas d’Adobe Commerce Cloud, il s’agit du service [!DNL Fastly].
@@ -64,7 +78,7 @@ Ce cadre affiche la durée en secondes des requêtes pouvant être mises en cach
 
 ![Réponse moyenne du cache rapide pour la période sélectionnée en secondes facettisée par POP](../../assets/tools/observation-for-adobe-commerce/cdn-tab-10.png)
 
-*POP* dans ce contexte fait référence à un point de présence (POP) configuré pour fonctionner en tant que pool pour le stockage du cache. Voir [&#x200B; Points de présence &#x200B;](https://developer.fastly.com/learning/concepts/pop/).
+*POP* dans ce contexte fait référence à un point de présence (POP) configuré pour fonctionner en tant que pool pour le stockage du cache. Voir [ Points de présence ](https://developer.fastly.com/learning/concepts/pop/).
 
 ## [!UICONTROL Total Bandwidth (All POPs) during the selected timeframe, compared with 1 week ago (% increase/decrease)]
 
@@ -78,7 +92,7 @@ Ce cadre est similaire à la zone de résumé pour les [!UICONTROL Total Request
 
 ## [!UICONTROL Response Count]
 
-![&#x200B; Nombre de réponses &#x200B;](../../assets/tools/observation-for-adobe-commerce/cdn-tab-13.png)
+![ Nombre de réponses ](../../assets/tools/observation-for-adobe-commerce/cdn-tab-13.png)
 
 ## [!UICONTROL Bandwidth by POP]
 
@@ -98,7 +112,7 @@ Le cadre **[!UICONTROL Top 25 URLs]** affiche les URL qui ont renvoyé un statut
 
 ## [!UICONTROL Duration by Response Status]
 
-![&#x200B; Durée par statut de réponse &#x200B;](../../assets/tools/observation-for-adobe-commerce/cdn-tab-17.png)
+![ Durée par statut de réponse ](../../assets/tools/observation-for-adobe-commerce/cdn-tab-17.png)
 
 Le graphique **[!UICONTROL Duration by Response Status]** affiche les réponses d’erreur par nombre au cours de la période sélectionnée, à la facette du code de statut d’erreur.
 

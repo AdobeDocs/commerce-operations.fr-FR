@@ -4,13 +4,23 @@ description: Découvrez les bonnes pratiques de configuration des sites, des bou
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
-
 ---
-
 # Bonne pratique pour la configuration des sites, des boutiques et de la vue de boutique
 
 Pour Adobe Commerce sur les infrastructures cloud, les bonnes pratiques s’appliquent spécifiquement à l’environnement de production (et éventuellement à l’architecture Staging on Pro, soumise à des contraintes de ressources) qui disposerait de davantage de ressources que les environnements d’intégration et de développement.
@@ -41,5 +51,5 @@ Les sites web et les magasins sont des multiplicateurs pour les données de cata
 
 ## Informations supplémentaires
 
-- [Présentation des sites web, des boutiques et des affichages de boutique](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
-- [Configurer plusieurs sites web ou magasins](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)
+- [Présentation des sites web, des boutiques et des affichages de boutique](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
+- [Configurer plusieurs sites web ou magasins](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)

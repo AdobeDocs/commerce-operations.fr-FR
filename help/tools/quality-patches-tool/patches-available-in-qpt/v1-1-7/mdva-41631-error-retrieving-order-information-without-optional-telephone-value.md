@@ -1,17 +1,27 @@
 ---
 title: 'MDVA-41631 : erreur lors de la récupération des informations de commande sans la valeur facultative « téléphone »'
-description: Le correctif MDVA-41631 corrige le problème où les utilisateurs et utilisatrices obtiennent une erreur lors de la récupération des informations de commande sans valeur « téléphone » facultative via  [!DNL GraphQL]. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.7 est installé. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
+description: Le correctif MDVA-41631 corrige le problème où les utilisateurs et utilisatrices obtiennent une erreur lors de la récupération des informations de commande sans valeur « téléphone » facultative via [!DNL GraphQL]. Ce correctif est disponible lorsque l’outil [Outil de correctifs de la qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.7 est installé. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
 feature: Orders
 role: Admin
 exl-id: e56cea59-ffc1-4520-85ca-136cda613884
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 0%
-
 ---
-
 # MDVA-41631 : erreur lors de la récupération des informations de commande sans la valeur facultative « téléphone »
 
 Le correctif MDVA-41631 corrige le problème où les utilisateurs et utilisatrices obtiennent une erreur lors de la récupération des informations de commande sans valeur « téléphone » facultative via [!DNL GraphQL]. Ce correctif est disponible lorsque la version 1.1.7 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
@@ -43,16 +53,16 @@ Les utilisateurs obtiennent une erreur lors de la récupération des information
 
 <pre>
 <code class="language-graphql">
-&lbrace;
-  customer &lbrace;
+{
+  customer {
     firstname
     lastname
     suffix
     email
 
-    orders(filter:{number:{eq:"000000001"}&#x200B;})&lbrace;
-        items&lbrace;
-          billing_address &lbrace;
+    orders(filter:{number:{eq:"000000001"}}){
+        items{
+          billing_address {
 firstname
 lastname
 street
@@ -62,8 +72,8 @@ region_id
 postcode
 telephone
 country_code
-&rbrace;
-shipping_address &lbrace;
+}
+shipping_address {
 firstname
 lastname
 street
@@ -73,11 +83,11 @@ region_id
 postcode
 telephone
 country_code
-&rbrace;
-        &rbrace;
-    &rbrace;
-  &rbrace;
-&rbrace;
+}
+        }
+    }
+  }
+}
 </code>
 </pre>
 
@@ -94,7 +104,7 @@ Les utilisateurs reçoivent l&#39;erreur suivante : *« message »: « Erreur de
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 ## Lecture connexe
 
@@ -103,4 +113,4 @@ Pour en savoir plus sur le [!DNL Quality Patches Tool], voir :
 * Publication de l’outil [Correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans la base de connaissances du support.
 * [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) dans le guide de [!DNL Quality Patches Tool].
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide de [!DNL Quality Patches Tool].
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de [!DNL Quality Patches Tool].

@@ -3,13 +3,27 @@ title: Emplacement de stockage de la session
 description: Découvrez les emplacements de stockage de session et la gestion des fichiers dans Adobe Commerce. Découvrez la logique de stockage et les options de configuration.
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '279'
 ht-degree: 0%
-
 ---
-
 # Emplacement de stockage de la session
 
 Cette rubrique explique comment localiser l’emplacement de stockage de vos fichiers de session. Le système utilise la logique suivante pour stocker les fichiers de session :
@@ -18,9 +32,9 @@ Cette rubrique explique comment localiser l’emplacement de stockage de vos fic
 - Si vous avez configuré Redis, les sessions sont stockées sur le serveur Redis ; voir [Utiliser Redis pour le stockage de session](../cache/redis-session.md).
 - Si vous utilisez l’espace de stockage de session basé sur des fichiers par défaut, les sessions sont stockées aux emplacements suivants dans l’ordre indiqué :
 
-   1. Répertoire défini dans [`env.php`](#example-in-envphp)
-   1. Répertoire défini dans [`php.ini`](#example-in-phpini)
-   1. répertoire `<magento_root>/var/session`
+  1. Répertoire défini dans [`env.php`](#example-in-envphp)
+  1. Répertoire défini dans [`php.ini`](#example-in-phpini)
+  1. répertoire `<magento_root>/var/session`
 
 ## Exemple dans `env.php`
 
@@ -41,7 +55,7 @@ En tant qu’utilisateur disposant de droits d’`root`, ouvrez votre fichier `p
 
 ## Gérer la taille de session
 
-Voir la [Gestion des sessions](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-session-management) dans le _Guide de l’utilisateur_.
+Voir la [Gestion des sessions](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) dans le _Guide de l’utilisateur_.
 
 ## Configuration du nettoyage de la mémoire
 

@@ -1,17 +1,32 @@
 ---
-title: Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.57
-description: Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans  [!DNL Quality Patches Tool] (QPT) v1.1.57.
+title: 'Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.57'
+description: Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.57.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 3e252a71-f35f-4046-9353-169060451ffe
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%
-
 ---
-
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.57
 
 Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.57.
@@ -21,7 +36,7 @@ QPT v1.1.57 comprend les correctifs suivants :
 1. **ACSD-57570** : corrige le problème en raison duquel un utilisateur administrateur restreint ayant accès à un magasin particulier ne peut pas toujours voir tous les catalogues partagés auxquels les produits sont affectés ou peut voir les clients qui ne peuvent pas les enregistrer, ce qui entraîne des incohérences dans le système.
 1. **ACSD-58325** : corrige le problème en raison duquel le bouton [!UICONTROL Import] est disponible même après une erreur de validation.
 1. **ACSD-59083** : correction du problème en raison duquel certaines opérations de mise à jour de la base de données entraînent l’erreur _Table ou vue de base introuvable_ si la mise à jour de la [!DNL mview] est exécutée en même temps.
-1. **ACSD-61622** : corrige le problème en raison duquel des taux spécifiques au compte [!DNL FedEx] sont manquants dans la réponse. ACSD-61622 remplace le correctif documenté dans [[!DNL FedEx] migration de l’intégration de la méthode d’expédition de [!DNL SOAP] vers [!DNL RESTful API]](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27131).
+1. **ACSD-61622** : corrige le problème en raison duquel des taux spécifiques au compte [!DNL FedEx] sont manquants dans la réponse. ACSD-61622 remplace le correctif documenté dans [[!DNL FedEx] migration de l’intégration de la méthode d’expédition de [!DNL SOAP] vers [!DNL RESTful API]](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27131).
 1. **ACSD-61895** : corrige le problème où les catégories [!DNL GraphQL] la requête renvoient des catégories avec l’autorisation *allow* même si la catégorie racine ne dispose pas de l’autorisation *allow*.
 1. **ACSD-62212** : corrige le problème en raison duquel le contenu de l’e-mail [!UICONTROL Forgot Password] n’est pas traduit dans la langue de la vue du magasin.
 1. **ACSD-62481** : corrige le problème en raison duquel le panier du client est vide même si [!UICONTROL Persistence] est activé.

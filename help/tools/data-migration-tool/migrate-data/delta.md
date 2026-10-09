@@ -1,18 +1,27 @@
 ---
 title: Migrer les modifications
-description: Découvrez comment migrer uniquement les données qui ont été modifiées depuis votre dernière migration de données Magento 1 avec  [!DNL Data Migration Tool].
+description: Découvrez comment migrer uniquement les données qui ont changé depuis votre dernière migration de données Magento 1 avec le [!DNL Data Migration Tool].
 exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
-
 ---
-
 # Migrer les modifications
 
-L’outil de migration incrémentielle installe les tables deltalog (avec le préfixe `m2_cl_*`) et les déclencheurs (pour le suivi des modifications) dans la base de données Magento 1 lors de la [&#x200B; migration des données &#x200B;](data.md). Ces tables et triggers deltalog sont essentiels pour vous assurer de ne migrer que les modifications apportées dans Magento 1 depuis la dernière migration des données. Ces modifications sont les suivantes :
+L’outil de migration incrémentielle installe les tables deltalog (avec le préfixe `m2_cl_*`) et les déclencheurs (pour le suivi des modifications) dans la base de données Magento 1 lors de la [ migration des données ](data.md). Ces tables et triggers deltalog sont essentiels pour vous assurer de ne migrer que les modifications apportées dans Magento 1 depuis la dernière migration des données. Ces modifications sont les suivantes :
 
 * Données ajoutées par les clients via storefront (commandes, révisions et modifications créées dans les profils de clients)
 
@@ -25,7 +34,7 @@ L’outil de migration incrémentielle installe les tables deltalog (avec le pr�
 
 Avant de commencer, effectuez les étapes de préparation suivantes :
 
-1. Connectez-vous au serveur d’applications en tant que [&#x200B; propriétaire du système de fichiers &#x200B;](../../../installation/prerequisites/file-system/overview.md).
+1. Connectez-vous au serveur d’applications en tant que [ propriétaire du système de fichiers ](../../../installation/prerequisites/file-system/overview.md).
 1. Accédez au répertoire `/bin` ou assurez-vous qu’il est ajouté à votre `PATH` système.
 
 Voir la section [premières étapes](overview.md#first-steps) pour plus d’informations.
@@ -53,7 +62,7 @@ Où :
 
 ## Migration des données créées par des extensions tierces
 
-En mode `Delta`, le [!DNL Data Migration Tool] migre les données créées uniquement par les modules Magento qui lui sont propres et n’est pas responsable du code ou des extensions créés par les développeurs tiers. Si ces extensions ont créé des données dans la base de données du storefront et que le commerçant souhaite avoir ces données dans Magento 2, les fichiers de configuration du [!DNL Data Migration Tool] doivent être créés et modifiés en conséquence.
+En mode `Delta`, le [!DNL Data Migration Tool] migre les données créées uniquement par les modules de Magento et n’est pas responsable du code ou des extensions créés par les développeurs tiers. Si ces extensions ont créé des données dans la base de données du storefront et que le commerçant souhaite avoir ces données dans Magento 2, les fichiers de configuration du [!DNL Data Migration Tool] doivent être créés et modifiés en conséquence.
 
 Si une extension possède ses propres tables et que vous devez effectuer le suivi de leurs modifications pour la migration delta, procédez comme suit :
 

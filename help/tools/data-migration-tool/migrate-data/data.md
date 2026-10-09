@@ -1,15 +1,24 @@
 ---
 title: Migrer les données
-description: Découvrez comment commencer à migrer des données de Magento 1 vers Magento 2 avec l’ [!DNL Data Migration Tool].
+description: Découvrez comment commencer à migrer des données de Magento 1 vers Magento 2 avec le [!DNL Data Migration Tool].
 exl-id: f4ea8f6a-21f8-4db6-b598-c5efecec254f
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
-
 ---
-
 # Migrer les données
 
 Avant de commencer, effectuez les étapes de préparation suivantes :
@@ -85,7 +94,7 @@ Par exemple, pour le `sales_flat_order` créé par le [!DNL Data Migration Tool]
 
 >[!NOTE]
 >
->La [!DNL Data Migration Tool] enregistre sa progression en cours pendant son exécution. Si des erreurs ou une intervention de l’utilisateur l’arrêtent, l’outil reprend la progression au dernier état de fonctionnement connu. Pour forcer l’[!DNL Data Migration Tool] à s’exécuter depuis le début, utilisez l’argument `--reset` . Dans ce cas, nous vous recommandons de restaurer votre image mémoire de la base de données Magento 2 pour éviter de dupliquer les données précédemment migrées.
+>La [!DNL Data Migration Tool] enregistre sa progression en cours pendant son exécution. Si des erreurs ou une intervention de l’utilisateur l’arrêtent, l’outil reprend la progression au dernier état de fonctionnement connu. Pour forcer l’[!DNL Data Migration Tool] à s’exécuter depuis le début, utilisez l’argument `--reset` . Dans ce cas, nous vous recommandons de restaurer l’image mémoire de votre base de données Magento 2 pour éviter de dupliquer les données précédemment migrées.
 
 
 ## Erreurs de cohérence possibles
@@ -105,7 +114,7 @@ Lors de l’exécution, le [!DNL Data Migration Tool] peut signaler des incohér
 * `Incompatibility in data. Source document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 * `Incompatibility in data. Destination document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 
-Voir la section [&#x200B; Dépannage &#x200B;](https://support.magento.com/hc/en-us/articles/360033020451) de ce guide pour plus d’informations et de recommandations.
+Voir la section [ Dépannage ](https://support.magento.com/hc/en-us/articles/360033020451) de ce guide pour plus d’informations et de recommandations.
 
 ## Étape de migration suivante
 

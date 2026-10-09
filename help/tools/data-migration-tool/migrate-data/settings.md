@@ -1,22 +1,31 @@
 ---
 title: Paramètres de migration des données
-description: Découvrez comment commencer à migrer les paramètres de Magento 1 vers Magento 2 avec l’ [!DNL Data Migration Tool].
+description: Découvrez comment commencer à migrer les paramètres de Magento 1 vers Magento 2 avec le [!DNL Data Migration Tool].
 exl-id: 6fc8285a-9f26-48a5-9034-49a6a1b66b40
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
-
 ---
-
 # Paramètres de migration des données
 
 Le mode `Settings` migre les magasins, les sites web et la configuration du système comme les paramètres d’expédition, de paiement et de taxe. Selon notre [ordre](overview.md#migration-order) de migration des données, vous devez d’abord migrer les paramètres.
 
 Avant de commencer, effectuez les étapes de préparation suivantes :
 
-1. Connectez-vous au serveur d’applications en tant que [&#x200B; propriétaire du système de fichiers &#x200B;](../../../installation/prerequisites/file-system/overview.md).
+1. Connectez-vous au serveur d’applications en tant que [ propriétaire du système de fichiers ](../../../installation/prerequisites/file-system/overview.md).
 
 1. Accédez au répertoire `/bin` ou assurez-vous qu’il est ajouté à votre `PATH` système.
 
@@ -45,7 +54,7 @@ Où :
 
 >[!NOTE]
 >
->Cette commande ne migre pas tous les paramètres de configuration. Vérifiez tous les paramètres d’administration de Magento 2 avant de continuer.
+>Cette commande ne migre pas tous les paramètres de configuration. Vérifiez tous les paramètres dans l’administration de Magento 2 avant de continuer.
 
 
 Le message `Migration completed` s’affiche une fois les paramètres transférés avec succès.

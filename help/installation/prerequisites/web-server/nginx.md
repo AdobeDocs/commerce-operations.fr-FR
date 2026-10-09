@@ -2,15 +2,29 @@
 title: Installation de Nginx pour les déploiements On-Premise
 description: Découvrez comment installer et configurer le serveur web Nginx pour les déploiements d’Adobe Commerce sur site. Configurez PHP-FPM et votre hôte virtuel.
 feature: Install, Configuration
-badgePaas: label="On-premise" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
+badgePaas: label="On-premise" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets sur site Adobe Commerce."
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1477'
 ht-degree: 0%
-
 ---
-
 # Installation de Nginx pour les déploiements sur site {#nginx}
 
 Ce guide vous guide tout au long de l’installation de Nginx pour les déploiements sur site d’Adobe Commerce et de la configuration des paramètres Nginx requis par Commerce. Il comprend des procédures spécifiques au système d&#39;exploitation pour Ubuntu et CentOS, ainsi que des conseils pour la configuration de PHP-FPM. Adobe recommande de suivre les instructions de configuration fournies dans ce guide afin de préserver les fonctionnalités et la sécurité de l’application Commerce.
@@ -107,13 +121,13 @@ Cet exemple illustre une installation basée sur le compositeur à l’aide de l
 
 1. Créez un projet Composer à l’aide du métapaquet Adobe Commerce.
 
-   **&#x200B;**
+   ****
 
    ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
    ```
 
-   **&#x200B;**
+   ****
 
    ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
@@ -283,7 +297,7 @@ Adobe Commerce requiert plusieurs extensions [PHP](../php-settings.md) pour fonc
 
    >[!NOTE]
    >
-   >Installez le package qui fournit les `php-fpm` pour la version PHP prise en charge par la version Adobe Commerce que vous installez. Les noms de packages varient selon le référentiel et le système d’exploitation. Voir [&#x200B; Configuration requise &#x200B;](../../system-requirements.md).
+   >Installez le package qui fournit les `php-fpm` pour la version PHP prise en charge par la version Adobe Commerce que vous installez. Les noms de packages varient selon le référentiel et le système d’exploitation. Voir [ Configuration requise ](../../system-requirements.md).
 
 1. Supprimez les commentaires de la ligne de `cgi.fix_pathinfo` et définissez la valeur sur `0`.
 
@@ -398,13 +412,13 @@ Cet exemple illustre une installation basée sur le compositeur à l’aide de l
 
 1. Créez un projet Composer à l’aide du métapaquet Adobe Commerce.
 
-   **&#x200B;**
+   ****
 
    ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
    ```
 
-   **&#x200B;**
+   ****
 
    ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>

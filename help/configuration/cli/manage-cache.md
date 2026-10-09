@@ -2,13 +2,22 @@
 title: Gérer le cache
 description: Découvrez comment gérer les types de cache et afficher l’état du cache à l’aide des commandes de l’interface de ligne de commande Adobe Commerce. Découvrez les techniques de gestion et d’optimisation du cache.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 0%
-
 ---
-
 # Gérer le cache
 
 {{file-system-owner}}
@@ -20,7 +29,7 @@ Vous pouvez utiliser le système de gestion du cache d’Adobe Commerce pour am�
 >[!NOTE]
 >
 >
->Les administrateurs du site Commerce peuvent gérer le cache à partir de l’Administration à l’aide de l’outil Système de gestion du cache. Voir [&#x200B; Gestion du cache &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management) dans le _Guide des systèmes d’administration_.
+>Les administrateurs du site Commerce peuvent gérer le cache à partir de l’Administration à l’aide de l’outil Système de gestion du cache. Voir [ Gestion du cache ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) dans le _Guide des systèmes d’administration_.
 
 
 ## Affichage de l’état du cache
@@ -59,7 +68,7 @@ Current status:
 
 >[!TIP]
 >
->Pour obtenir une description détaillée des types de cache par défaut pris en charge par Adobe Commerce, reportez-vous à la section [Caches](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management#caches) du _Guide des systèmes d’administration_.
+>Pour obtenir une description détaillée des types de cache par défaut pris en charge par Adobe Commerce, reportez-vous à la section [Caches](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) du _Guide des systèmes d’administration_.
 
 
 ## Activation ou désactivation des types de cache

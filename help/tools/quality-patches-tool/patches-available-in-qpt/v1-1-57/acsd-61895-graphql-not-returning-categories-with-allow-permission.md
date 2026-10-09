@@ -1,17 +1,38 @@
 ---
-title: 'La requête ACSD-61895: [!DNL GraphQL] categories échoue pour le catalogue partagé privé avec une vue restreinte'
-description: Appliquez le correctif ACSD-61895 pour résoudre le problème d’Adobe Commerce où les réponses  [!DNL GraphQL]  clients invités (utilisant un catalogue public partagé avec toutes les catégories autorisées) ne renvoyaient aucune catégorie lorsqu’un catalogue privé partagé avec des restrictions était créé pour les mêmes catégories.
+title: 'ACSD-61895 : la requête de catégories [!DNL GraphQL] échoue pour le catalogue partagé privé avec une vue restreinte'
+description: Appliquez le correctif ACSD-61895 pour résoudre le problème d’Adobe Commerce où les réponses [!DNL GraphQL] pour les clients invités (à l’aide d’un catalogue public partagé avec toutes les catégories autorisées) ne renvoyaient aucune catégorie lorsqu’un catalogue privé partagé avec des restrictions était créé pour les mêmes catégories.
 feature: Categories, GraphQL, Roles/Permissions
 role: Admin, Developer
 exl-id: ef986fa6-e8bc-4322-80f2-fa0c5d5e8d40
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+subfeature_v2:
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '564'
 ht-degree: 0%
-
 ---
-
 # ACSD-61895 : [!DNL GraphQL] requête `categories` échoue pour le catalogue partagé privé avec une vue restreinte
 
 Le correctif ACSD-61895 corrige le problème où les réponses [!DNL GraphQL] pour les clients invités (utilisant un catalogue public partagé avec toutes les catégories autorisées) ne renvoyaient aucune catégorie lorsqu’un catalogue privé partagé avec des restrictions était créé pour les mêmes catégories.
@@ -32,7 +53,7 @@ Ce correctif est disponible lorsque la version 1.1.57 de [[!DNL Quality Patches 
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -102,7 +123,7 @@ La réponse de la requête `categories` n’affiche aucune catégorie.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source On-premise : [[!DNL Quality Patches Tool] > Utilisation](/help/tools/quality-patches-tool/usage.md) dans le guide de [!DNL Quality Patches Tool].
-* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans le guide Commerce sur les infrastructures cloud .
 
 
 ## Lecture connexe

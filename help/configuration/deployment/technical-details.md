@@ -2,13 +2,22 @@
 title: Détails techniques
 description: Découvrez les détails techniques du déploiement du pipeline, les types de configurations et les workflows recommandés.
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1282'
 ht-degree: 0%
-
 ---
-
 # Détails techniques
 
 Cette rubrique présente les détails techniques d’implémentation du déploiement de pipeline dans Commerce 2.2 et versions ultérieures. Les améliorations peuvent être divisées en plusieurs domaines :
@@ -19,13 +28,13 @@ Cette rubrique présente les détails techniques d’implémentation du déploie
 
 Cette rubrique présente également le [workflow recommandé](#recommended-pipeline-deployment-workflow) pour le déploiement de pipeline et fournit quelques exemples pour vous aider à comprendre son fonctionnement.
 
-Avant de commencer, passez en revue les [&#x200B; Conditions préalables pour les systèmes de développement, de version et de production](../deployment/prerequisites.md).
+Avant de commencer, passez en revue les [ Conditions préalables pour les systèmes de développement, de version et de production](../deployment/prerequisites.md).
 
 ## Gestion de la configuration
 
 Pour vous permettre de synchroniser et de gérer la configuration de vos systèmes de développement et de production, utilisez le schéma de remplacement suivant.
 
-![Comment les valeurs des variables de configuration sont déterminées &#x200B;](../../assets/configuration/override-flow-diagram.png)
+![Comment les valeurs des variables de configuration sont déterminées ](../../assets/configuration/override-flow-diagram.png)
 
 Comme le montre le diagramme, les valeurs de configuration sont utilisées dans l&#39;ordre suivant :
 
@@ -69,16 +78,16 @@ L’administrateur présente le comportement suivant en mode de production :
 - Vous ne pouvez pas activer ni désactiver les types de cache dans l’Administration
 - Les paramètres du développeur ne sont pas disponibles (**Magasins** > Paramètres > **Configuration** > Avancé > **Développeur**), notamment :
 
-   - Minimiser CSS, JavaScript et HTML
-   - Fusion de CSS et JavaScript
-   - Compilation LESS côté serveur ou côté client
-   - Traductions intégrées
-   - Comme nous l’avons vu précédemment, tout paramètre de configuration dans `config.php` ou `env.php` est verrouillé et ne peut pas être modifié dans Admin.
-   - Vous pouvez modifier les paramètres régionaux d’administration uniquement pour les langues utilisées par les thèmes déployés
+  - Minimiser CSS, JavaScript et HTML
+  - Fusion de CSS et JavaScript
+  - Compilation LESS côté serveur ou côté client
+  - Traductions intégrées
+  - Comme nous l’avons vu précédemment, tout paramètre de configuration dans `config.php` ou `env.php` est verrouillé et ne peut pas être modifié dans Admin.
+  - Vous pouvez modifier les paramètres régionaux d’administration uniquement pour les langues utilisées par les thèmes déployés
 
-     La figure suivante présente un exemple de la liste **Paramètres du compte** > **Paramètres régionaux de l’interface** dans l’interface d’administration, qui n’affiche que deux paramètres régionaux déployés :
+    La figure suivante présente un exemple de la liste **Paramètres du compte** > **Paramètres régionaux de l’interface** dans l’interface d’administration, qui n’affiche que deux paramètres régionaux déployés :
 
-     ![Vous pouvez modifier les paramètres régionaux d’administration uniquement pour les paramètres régionaux déployés](../../assets/configuration/split-deploy-admin-locale.png)
+    ![Vous pouvez modifier les paramètres régionaux d’administration uniquement pour les paramètres régionaux déployés](../../assets/configuration/split-deploy-admin-locale.png)
 
 - Vous ne pouvez pas modifier les configurations des paramètres régionaux pour une étendue à l’aide de l’administrateur.
 
@@ -88,7 +97,7 @@ L’administrateur présente le comportement suivant en mode de production :
 
 ## Installation et suppression de cron
 
-Dans la version 2.2, pour la première fois, nous vous aidons à configurer votre tâche cron en fournissant la commande [&#128279;](../cli/configure-cron-jobs.md). `magento cron:install`Cette commande configure un crontab en tant qu’utilisateur exécutant la commande.
+Dans la version 2.2, pour la première fois, nous vous aidons à configurer votre tâche cron en fournissant la commande ](../cli/configure-cron-jobs.md). [`magento cron:install`Cette commande configure un crontab en tant qu’utilisateur exécutant la commande.
 
 Vous pouvez également supprimer crontab à l’aide de la commande `magento cron:remove`.
 

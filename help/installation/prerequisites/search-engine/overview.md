@@ -3,13 +3,30 @@ title: Conditions préalables relatives aux moteurs de recherche
 description: Pour installer et configurer le logiciel de moteur de recherche pris en charge pour les installations sur site d’Adobe Commerce, procédez comme suit.
 feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 0%
-
 ---
-
 # Conditions préalables relatives aux moteurs de recherche
 
 Depuis Adobe Commerce 2.4, toutes les installations doivent être configurées pour utiliser [Elasticsearch](https://www.elastic.co) ou [OpenSearch](https://opensearch.org/) comme solution de recherche de catalogue.
@@ -128,7 +145,7 @@ apt-get -y update
 apt-get install -y openjdk-8-jdk
 ```
 
-Pour d’autres options, consultez la [documentation &#x200B;](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
+Pour d’autres options, consultez la [documentation ](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
 
 ### Installation du moteur de recherche
 
@@ -165,4 +182,4 @@ Elasticsearch nécessite JDK 1.8 ou une version ultérieure. Consultez [Installa
 
 ## Ressources supplémentaires
 
-Voir la documentation [&#128279;](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) ou [OpenSearch](https://opensearch.org/docs/latest/).
+Voir la documentation [](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) ou [OpenSearch](https://opensearch.org/docs/latest/).

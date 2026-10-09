@@ -3,13 +3,27 @@ title: Configuration de l’application
 description: Découvrez la configuration post-installation requise pour les déploiements sur site d’Adobe Commerce.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 0%
-
 ---
-
 # Configuration de l’application
 
 Maintenant que vous avez terminé l’installation d’Adobe Commerce, vous devez le configurer. Cette rubrique fournit quelques paramètres de configuration recommandés.
@@ -26,10 +40,10 @@ Pour plus d’informations sur cron, notamment sur la suppression d’un cron ta
 
 Après l’installation, nous recommandons ce qui suit :
 
-* Assurez-vous que la propriété et les autorisations des fichiers sont correctement définies [&#128279;](../prerequisites/file-system/configure-permissions.md)
+* Assurez-vous que la propriété et les autorisations des fichiers sont correctement définies ](../prerequisites/file-system/configure-permissions.md)[
 * Nous vous recommandons vivement de [modifier l’URI d’administration par défaut](../tutorials/admin-uri.md) de `admin` à autre chose
-* Assurez-vous que l’en-tête HTTP [&#128279;](../../configuration/security/xframe-options.md) est correctement défini.`X-Frame-Option`
-* Prenez des précautions contre le cross-site scripting (XSS) en [&#x200B; sécurisant vos modèles &#x200B;](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting)
+* Assurez-vous que l’en-tête HTTP ](../../configuration/security/xframe-options.md) est correctement défini.[`X-Frame-Option`
+* Prenez des précautions contre le cross-site scripting (XSS) en [ sécurisant vos modèles ](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting)
 
 Si vous avez installé en [clonant le référentiel GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository), assurez-vous, lors du déploiement de l’application, d’inclure uniquement les fichiers et les dossiers requis pour l’environnement de production. Les fichiers et les dossiers qui ne sont pas requis peuvent présenter des risques de sécurité.
 
@@ -65,7 +79,7 @@ Pour plus d’informations, voir l’une des rubriques suivantes :
 >
 >* Les environnements de démarrage n’ont pas de rotation de journal.
 >
->* Vous ne pouvez pas configurer la rotation du journal sur les environnements d’intégration Pro. Vous devez implémenter une solution/un script personnalisé(e) et [configurer votre cron](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) pour exécuter le script selon vos besoins.
+>* Vous ne pouvez pas configurer la rotation du journal sur les environnements d’intégration Pro. Vous devez implémenter une solution/un script personnalisé(e) et [configurer votre cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) pour exécuter le script selon vos besoins.
 
 ### Configurez les règles iptables pour permettre à divers services de communiquer
 
@@ -82,7 +96,7 @@ Nous n&#39;avons pas de recommandation pour savoir si vous utilisez SELinux ; ce
 
 Plus d’informations :
 
-* Ubuntu : [&#x200B; Manuel Debian &#x200B;](https://debian-handbook.info/browse/stable/sect.selinux.html)
+* Ubuntu : [ Manuel Debian ](https://debian-handbook.info/browse/stable/sect.selinux.html)
 * CentOS : [wiki CentOS](https://wiki.centos.org/HowTos/SELinux)
 
 ### Configuration d&#39;un serveur de messagerie

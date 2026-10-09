@@ -1,15 +1,24 @@
 ---
 title: spécification technique [!DNL Data Migration Tool]
-description: Découvrez les détails d’implémentation de et comment optimiser l’extension lors  [!DNL Data Migration Tool]  transfert de données entre Magento 1 et Magento 2.
+description: Découvrez les détails d’implémentation du [!DNL Data Migration Tool] et comment l’étendre lors du transfert de données entre Magento 1 et Magento 2.
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2114'
 ht-degree: 0%
-
 ---
-
 # spécification technique [!DNL Data Migration Tool]
 
 Cette section décrit [!DNL Data Migration Tool] détails d’implémentation et comment étendre ses fonctionnalités.
@@ -162,7 +171,7 @@ Le fichier de configuration présente la structure suivante :
 
 * options - liste des paramètres. Contient des paramètres obligatoires (map_file, settings_map_file, bulk_size) et facultatifs (custom_option, resource_adapter_class_name, prefix_source, prefix_dest, log_file)
 
-Modifiez l’option de préfixe au cas où Magento aurait été installé avec le préfixe dans les tables de la base de données. Elle peut être définie pour les bases de données Magento 1 et Magento 2. Utilisez les options de configuration « source_prefix » et « dest_prefix » en conséquence.
+Modifiez l’option de préfixe si Magento a été installé avec le préfixe dans les tables de la base de données. Il peut être défini pour les bases de données Magento 1 et Magento 2. Utilisez les options de configuration « source_prefix » et « dest_prefix » en conséquence.
 
 Les données de configuration sont accessibles avec la classe `\Migration\Config`.
 
@@ -171,8 +180,8 @@ Les données de configuration sont accessibles avec la classe `\Migration\Config
 | Document | Champ |
 |---|---|
 | `step` | Nœud de deuxième niveau à l’intérieur du nœud Étapes. La description de l’étape concernée doit être spécifiée dans l’attribut `title`. |
-| `integrity` | Spécifie la classe PHP responsable de la vérification d&#39;intégrité. Compare les noms, types et autres informations des champs de la table afin de vérifier la compatibilité entre les structures de données Magento 1 et 2. |
-| `data` | Spécifie la classe PHP responsable de la vérification des données. Transfère les données, tableau par tableau, de Magento 1 vers Magento 2. |
+| `integrity` | Spécifie la classe PHP responsable de la vérification d&#39;intégrité. Compare les noms, types et autres informations des champs de la table pour vérifier la compatibilité entre les structures de données Magento 1 et 2. |
+| `data` | Spécifie la classe PHP responsable de la vérification des données. Transfère les données, tableau par tableau, de Magento 1 à Magento 2. |
 | `volume` | Spécifie la classe PHP responsable de la vérification du volume. Compare le nombre d&#39;enregistrements entre les tables pour vérifier que le transfert a réussi. |
 | `delta` | Spécifie la classe PHP responsable de la vérification delta. Transfère le delta de Magento 1 vers Magento 2 après la migration complète des données. |
 
@@ -181,10 +190,10 @@ Les données de configuration sont accessibles avec la classe `\Migration\Config
 | Document | Champ | Obligatoire ? |
 |---|---|---|
 | `name` | Nom de base de données du serveur Magento 1. | oui |
-| `host` | Adresse IP de l’hôte du serveur Magento 1. | oui |
+| `host` | Adresse IP hôte du serveur Magento 1. | oui |
 | `port` | Numéro de port du serveur Magento 1. | non |
-| `user` | Nom d’utilisateur du serveur de la base de données Magento 1. | oui |
-| `password` | Mot de passe du serveur de la base de données Magento 1. | oui |
+| `user` | Nom d’utilisateur du serveur de base de données Magento 1. | oui |
+| `password` | Mot de passe du serveur de base de données Magento 1. | oui |
 | `ssl_ca` | Chemin d’accès au fichier d’autorité de certification SSL. | non |
 | `ssl_cert` | Chemin d’accès au fichier de certificat SSL. | non |
 | `ssl_key` | Chemin d’accès au fichier de clé SSL. | non |
@@ -194,10 +203,10 @@ Les données de configuration sont accessibles avec la classe `\Migration\Config
 | Document | Champ | Obligatoire ? |
 |---|---|---|
 | `name` | Nom de base de données du serveur Magento 2. | oui |
-| `host` | Adresse IP de l’hôte du serveur Magento 2. | oui |
+| `host` | Adresse IP hôte du serveur Magento 2. | oui |
 | `port` | Numéro de port du serveur Magento 2. | non |
-| `user` | Nom d’utilisateur du serveur de la base de données Magento 2. | oui |
-| `password` | Mot de passe du serveur de la base de données Magento 2. | oui |
+| `user` | Nom d’utilisateur du serveur de base de données Magento 2. | oui |
+| `password` | Mot de passe du serveur de base de données Magento 2. | oui |
 | `ssl_ca` | Chemin d’accès au fichier d’autorité de certification SSL. | non |
 | `ssl_cert` | Chemin d’accès au fichier de certificat SSL. | non |
 | `ssl_key` | Chemin d’accès au fichier de clé SSL. | non |
@@ -279,7 +288,7 @@ $this->progress->finish();
 
 ### Vérification de l&#39;intégrité
 
-Chaque étape doit vérifier que la structure de la source de données (Magento 1 par défaut) et la structure de la destination des données (Magento 2) sont compatibles. Si ce n’est pas le cas, une erreur s’affiche avec les entités non compatibles. Si des champs ont des types de données différents (le même champ a un type de données décimal dans Magento 1 et un entier dans Magento 2), un message d’avertissement s’affiche (sauf lorsqu’il a été couvert dans le fichier de mappage).
+Chaque étape doit vérifier que la structure de la source de données (Magento 1 par défaut) et la structure de la destination des données (Magento 2) sont compatibles. Si ce n’est pas le cas, une erreur s’affiche avec les entités non compatibles. Si des champs ont des types de données différents (le même champ a un type de données décimal dans Magento 1 et un entier dans Magento 2), un message d’avertissement s’affiche (sauf lorsqu’il a été couvert dans le fichier Map).
 
 ### Transfert de données
 
@@ -343,7 +352,7 @@ Dans ce mode, la plupart des données sont migrées. Avant la migration des donn
 
 #### Étape de mappage
 
-L’étape de mappage est chargée de transférer la plupart des données de Magento 1 vers Magento 2. Cette étape lit les instructions du fichier map.xml (situé dans le répertoire `etc/`). Le fichier décrit les différences entre les structures de données de la source (Magento 1) et de la destination (Magento 2). Si Magento 1 contient des tables ou des champs qui appartiennent à une extension qui n’existe pas dans Magento 2, ces entités peuvent être placées ici pour les ignorer par l’étape de mappage. Sinon, elle affiche un message d’erreur.
+L’étape de mappage est chargée du transfert de la plupart des données de Magento 1 vers Magento 2. Cette étape lit les instructions du fichier map.xml (situé dans le répertoire `etc/`). Le fichier décrit les différences entre les structures de données de la source (Magento 1) et de la destination (Magento 2). Si Magento 1 contient des tables ou des champs qui appartiennent à une extension qui n’existe pas dans Magento 2, ces entités peuvent être placées ici pour les ignorer par Étape de mappage. Sinon, elle affiche un message d’erreur.
 
 Le fichier de mappage présente le format suivant :
 
@@ -417,7 +426,7 @@ Options :
 
 * *handler* - Décrit le comportement de transformation des champs. Pour appeler le gestionnaire, vous devez spécifier un nom de classe de gestionnaire dans une balise `<handler>`. Utilisez la balise `<param>` avec le nom du paramètre et les données de valeur pour les transmettre au gestionnaire .
 
-**&#x200B;**&#x200B;opérations disponibles :
+**** opérations disponibles :
 
 | Document | Champ |
 |--- |--- |
@@ -435,11 +444,11 @@ Pour ignorer les documents comportant des parties similaires (`document_name_1`,
 
 #### Étape de réécriture d’URL
 
-Cette étape est complexe, car de nombreux algorithmes différents développés dans Magento 1 ne sont pas compatibles avec Magento 2. Pour différentes versions de Magento 1, il peut y avoir différents algorithmes. Ainsi, sous le dossier Step/UrlRewrite , il existe des classes qui ont été développées pour certaines versions spécifiques de Magento et Migration\Step\UrlRewrite\Version191to2000 en fait partie. Il peut transférer les données de réécriture d’URL de Magento 1.9.1 vers Magento 2.
+Cette étape est complexe car il existe de nombreux algorithmes différents développés dans Magento 1 qui ne sont pas compatibles avec Magento 2. Pour différentes versions de Magento 1, il peut y avoir différents algorithmes. Ainsi, sous le dossier Step/UrlRewrite , il existe des classes qui ont été développées pour certaines versions spécifiques de Magento et Migration\Step\UrlRewrite\Version191to2000 est l’une d’elles. Il peut transférer les données de réécriture d’URL de Magento 1.9.1 vers Magento 2.
 
 #### EAV step
 
-Cette étape transfère tous les attributs (produit, client, RMA) de Magento 1 vers Magento 2. Il utilise le fichier map-eav.xml qui contient des règles similaires à celles du fichier map.xml pour des cas spécifiques de traitement des données.
+Cette étape transfère tous les attributs (produit, client, RMA) de Magento 1 à Magento 2. Il utilise le fichier map-eav.xml qui contient des règles similaires à celles du fichier map.xml pour des cas spécifiques de traitement des données.
 
 Certaines des tables traitées à l’étape :
 
@@ -457,7 +466,7 @@ Après la migration principale, des données supplémentaires auraient pu être 
 
 ## Sources de données
 
-Pour accéder aux sources de données de Magento 1 et Magento 2 et utiliser leurs données (sélectionner, mettre à jour, insérer, supprimer), le dossier Ressource contient de nombreuses classes. Migration\ResourceModel\Source et Migration\ResourceModel\Destination sont des classes principales. Toutes les étapes de migration l’utilisent pour fonctionner avec les données. Ces données sont contenues dans des classes telles que Migration\ResourceModel\Document, Migration\ResourceModel\Record, Migration\ResourceModel\Structure, etc.
+Pour accéder aux sources de données de Magento 1 et de Magento 2 et utiliser leurs données (sélectionner, mettre à jour, insérer, supprimer), le dossier Ressource comporte de nombreuses classes. Migration\ResourceModel\Source et Migration\ResourceModel\Destination sont des classes principales. Toutes les étapes de migration l’utilisent pour fonctionner avec les données. Ces données sont contenues dans des classes telles que Migration\ResourceModel\Document, Migration\ResourceModel\Record, Migration\ResourceModel\Structure, etc.
 
 Voici un diagramme de classes de ces classes :
 

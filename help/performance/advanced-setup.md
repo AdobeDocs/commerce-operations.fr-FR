@@ -2,13 +2,22 @@
 title: Configuration avancée
 description: Découvrez comment effectuer une configuration avancée pour Adobe Commerce. Découvrez les instructions détaillées et les exigences de configuration.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
-
 ---
-
 # Configuration avancée
 
 [!DNL Commerce] est un produit très flexible et évolutif contenant des solutions pour les commerçants de toutes tailles. Cette section présente les bonnes pratiques et les recommandations relatives à la configuration des [!DNL Commerce] pour qu’ils fonctionnent avec de grands volumes de données, une charge extrême et d’autres cas d’entreprise.

@@ -4,7 +4,21 @@ description: Maintenez et optimisez les performances du site en suivant les bonn
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 29168544e3a33b874b104f308bd53cb475ac2638
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
@@ -33,7 +47,7 @@ Un magasin volumineux avec plusieurs administrateurs travaillant en arrière-pla
 Pour optimiser les performances du site, suivez ces bonnes pratiques d’indexation :
 
 - Vérifiez la configuration de l’index.
-- Définissez les indexeurs sur _[!UICONTROL Update on Schedule]_&#x200B;pour les sites volumineux et les sites comportant des mises à jour fréquentes et un trafic important. Voir [Gestion des index](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+- Définissez les indexeurs sur _[!UICONTROL Update on Schedule]_pour les sites volumineux et les sites comportant des mises à jour fréquentes et un trafic important. Voir [Gestion des index](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 - Appliquez les [bonnes pratiques en matière de performances](../../../performance/configuration.md) pour gérer les index.
 
 >[!IMPORTANT]
@@ -46,5 +60,5 @@ Pour optimiser les performances du site, suivez ces bonnes pratiques d’indexat
 ## Informations supplémentaires
 
 - [Gestion des index pour les utilisateurs administrateurs](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Gestion des index à l’aide de l’interface de ligne de commande Magento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=fr)
+- [Gestion des index à l’aide de l’interface de ligne de commande Magento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [Présentation de l’indexation pour les développeurs et développeuses](https://developer.adobe.com/commerce/php/development/components/indexing/)

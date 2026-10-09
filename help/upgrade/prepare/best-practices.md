@@ -3,13 +3,27 @@ title: Bonnes pratiques
 description: Appliquez les bonnes pratiques recommandées par Adobe pour gérer le processus de mise à niveau de vos projets Adobe Commerce.
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1086'
 ht-degree: 0%
-
 ---
-
 # Bonnes pratiques de mise à niveau
 
 Cette rubrique répertorie les actions à entreprendre pour gérer la complexité de la mise à niveau des projets Adobe Commerce. Votre équipe doit réfléchir aux mises à niveau à partir du moment où le développement de votre projet commence, et jusqu’à la fin de chaque version. En suivant ces bonnes pratiques, le processus de mise à niveau sera beaucoup plus facile, plus rapide et moins coûteux.
@@ -47,9 +61,9 @@ Dès que vous commencez à travailler sur un projet, vous devez tenir compte de 
 
 Commencez à adopter la plateforme d’extensibilité d’Adobe Commerce, si vous ne l’avez pas déjà fait. La plateforme vous permet de personnaliser efficacement les processus, d’intégrer les systèmes et de déployer de nouvelles fonctionnalités tout en conservant une évolutivité de type SaaS. Ses fonctionnalités sont les suivantes :
 
-- **Extensibilité de l’interface utilisateur**. Étendez et faites évoluer votre storefront indépendamment de votre serveur principal et du middleware en utilisant [&#128279;](https://developer.adobe.com/commerce/pwa-studio/).
+- **Extensibilité de l’interface utilisateur**. Étendez et faites évoluer votre storefront indépendamment de votre serveur principal et du middleware en utilisant [](https://developer.adobe.com/commerce/pwa-studio/).
 
-- **Extensibilité de l’API**. Utilisez [&#128279;](https://developer.adobe.com/commerce/webapi/graphql/) pour étendre la couche API Web en faisant évoluer le modèle de données graphique et en exécutant les fonctions lambda directement à partir de la couche graphique.
+- **Extensibilité de l’API**. Utilisez [](https://developer.adobe.com/commerce/webapi/graphql/) pour étendre la couche API Web en faisant évoluer le modèle de données graphique et en exécutant les fonctions lambda directement à partir de la couche graphique.
 
 - **Intergiciel et services**. Connectez vos systèmes à Adobe Commerce à l’aide du middleware Adobe et d’une suite de connexions d’applications reposant sur [Adobe I/O](https://www.adobe.io/). En outre, vous pouvez étendre les fonctionnalités de base de Platform en remplaçant le comportement par défaut par votre propre logique commerciale qui s’exécute sur Adobe I/O.
 
@@ -81,7 +95,7 @@ Les mises à niveau doivent être effectuées régulièrement et dans le cadre d
 
 ### Test après la mise à niveau
 
-Les tests sont la phase d’une mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. L’utilisation des outils de test principaux peut vous être bénéfique. Le [&#x200B; Guide de test d’application &#x200B;](https://developer.adobe.com/commerce/testing/guide/) fournit des détails.
+Les tests sont la phase d’une mise à niveau qui nécessite le plus de temps. Par conséquent, ce processus doit être aussi automatisé que possible. L’utilisation des outils de test principaux peut vous être bénéfique. Le [ Guide de test d’application ](https://developer.adobe.com/commerce/testing/guide/) fournit des détails.
 
 Utilisez un environnement d’évaluation pour tester et valider votre mise à niveau avant de passer en production.
 

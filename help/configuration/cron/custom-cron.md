@@ -2,13 +2,22 @@
 title: Traitements cron
 description: Découvrez les groupes cron et comment créer des tâches cron personnalisées dans Adobe Commerce. Découvrez la configuration des tâches planifiées et la configuration du groupe cron.
 exl-id: a9d83af7-9979-4653-adc9-30ffeb13a5ce
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '179'
 ht-degree: 0%
-
 ---
-
 # Traitements cron
 
 Ces rubriques expliquent comment configurer une tâche cron personnalisée et, éventuellement, un groupe cron personnalisé. Si votre extension Commerce nécessite l’exécution périodique de tâches planifiées, vous pouvez utiliser ces rubriques pour configurer un cron _job_ (la tâche planifiée) et éventuellement un cron _group_, qui exécute des tâches personnalisées en même temps.
@@ -21,5 +30,5 @@ L’application Commerce fournit les groupes cron suivants :
 - `index`, qui actualise les [indexeurs](../cli/manage-indexers.md)
 - `consumers`, qui exécute la file d’attente de messages [consommateurs](../cli/start-message-queues.md)
 - Ces rubriques sont disponibles dans Adobe Commerce uniquement
-   - `staging`, qui exécute [&#x200B; tâches liées à l’évaluation &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/staging/content-staging)
-   - `catalog_event`, qui exécute des tâches pour les règles de cible et de panier
+  - `staging`, qui exécute [ tâches liées à l’évaluation ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging)
+  - `catalog_event`, qui exécute des tâches pour les règles de cible et de panier

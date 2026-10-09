@@ -1,16 +1,47 @@
 ---
-title: 'Alertes gérées sur Adobe Commerce : alerte critique  [!DNL Redis]  mémoire'
-description: Cet article décrit les étapes de dépannage à suivre lorsque vous recevez une alerte critique  [!DNL Redis]  mémoire pour Adobe Commerce dans  [!DNL New Relic]. Une action immédiate est nécessaire pour résoudre le problème.
+title: 'Alertes gérées sur Adobe Commerce : alerte critique de mémoire [!DNL Redis]'
+description: Cet article décrit les étapes de dépannage à suivre lorsque vous recevez une alerte critique de mémoire [!DNL Redis] pour Adobe Commerce dans [!DNL New Relic]. Une action immédiate est nécessaire pour résoudre le problème.
 feature: Cache, Categories, Observability, Services, Support, Tools and External Services, Variables
 role: Admin
 exl-id: 1233889e-8c02-4ad6-b12c-683010b7bf35
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+  - id: 2191e157-828a-5358-ad69-ebcaa8402915
+    internal-label: Variables
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '703'
 ht-degree: 0%
-
 ---
-
 # Alertes gérées sur Adobe Commerce : alerte critique de mémoire [!DNL Redis]
 
 Cet article décrit les étapes de dépannage à suivre lorsque vous recevez une alerte critique de mémoire [!DNL Redis] pour Adobe Commerce dans [!DNL New Relic]. Une action immédiate est nécessaire pour résoudre le problème. L’alerte se présente comme suit, selon le canal de notification d’alerte que vous avez sélectionné.
@@ -28,7 +59,7 @@ Vous recevrez une alerte en [!DNL New Relic] si vous vous êtes inscrit aux aler
 **<u>Faites !</u>**
 
 * Abandonner tout déploiement planifié jusqu’à ce que cette alerte soit effacée.
-* Mettez immédiatement votre site en mode de maintenance s’il ne répond plus du tout. Pour connaître les étapes à suivre, reportez-vous à la section [&#x200B; Activer ou désactiver le mode de maintenance &#x200B;](/help/installation/tutorials/maintenance-mode.md) du Guide d’installation de Commerce. Veillez à ajouter votre adresse IP à la liste des adresses IP exemptées pour vous assurer que vous pouvez toujours accéder à votre site à des fins de dépannage. Pour connaître les étapes, reportez-vous à la section [Tenir à jour la liste des adresses IP exemptées](/help/installation/tutorials/maintenance-mode.md#maintain-the-list-of-exempt-ip-addresses) du Guide d’installation de Commerce.
+* Mettez immédiatement votre site en mode de maintenance s’il ne répond plus du tout. Pour connaître les étapes à suivre, reportez-vous à la section [ Activer ou désactiver le mode de maintenance ](/help/installation/tutorials/maintenance-mode.md) du Guide d’installation de Commerce. Veillez à ajouter votre adresse IP à la liste des adresses IP exemptées pour vous assurer que vous pouvez toujours accéder à votre site à des fins de dépannage. Pour connaître les étapes, reportez-vous à la section [Tenir à jour la liste des adresses IP exemptées](/help/installation/tutorials/maintenance-mode.md#maintain-the-list-of-exempt-ip-addresses) du Guide d’installation de Commerce.
 
 **<u>Non !</u>**
 
@@ -43,13 +74,13 @@ Pour identifier et résoudre les problèmes, procédez comme suit.
 
 **Comme il s’agit d’une alerte critique, il est vivement recommandé d’effectuer l’étape 1 avant d’essayer de résoudre le problème (étape 2 et suivantes).**
 
-1. Vérifiez si un ticket d’assistance Adobe Commerce existe. Pour connaître les étapes à suivre, reportez-vous à la section [Tracker vos tickets d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case) dans la base de connaissances de l’assistance Commerce. L’assistance peut avoir déjà reçu une alerte de seuil de [!DNL New Relic], créé un ticket et commencé à travailler sur le problème. S’il n’existe aucun ticket, créez-en un. Le ticket doit contenir les informations suivantes :
+1. Vérifiez si un ticket d’assistance Adobe Commerce existe. Pour connaître les étapes à suivre, reportez-vous à la section [Tracker vos tickets d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case) dans la base de connaissances de l’assistance Commerce. L’assistance peut avoir déjà reçu une alerte de seuil de [!DNL New Relic], créé un ticket et commencé à travailler sur le problème. S’il n’existe aucun ticket, créez-en un. Le ticket doit contenir les informations suivantes :
 
    * Motif du contact : sélectionnez **[!UICONTROL New Relic CRITICAL alert received]**.
    * Description de l’alerte.
    * [[!DNL New Relic] lien incident](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents/). Elle est incluse dans votre [Alertes gérées pour Adobe Commerce](managed-alerts-for-magento-commerce.md).
 
-1. S’il n’existe aucun ticket de support, vérifiez si [!DNL Redis] mémoire utilisée augmente ou diminue en accédant à la page [one.newrelic.com](https://login.newrelic.com) > **[!UICONTROL Infrastructure]** > **[!UICONTROL Third-party services]** , puis sélectionnez le tableau de bord [!DNL Redis]. S’il est stable ou en augmentation, [soumettez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) pour que votre cluster soit mis à niveau, ou augmentez la limite de `maxmemory` au niveau suivant.
+1. S’il n’existe aucun ticket de support, vérifiez si [!DNL Redis] mémoire utilisée augmente ou diminue en accédant à la page [one.newrelic.com](https://login.newrelic.com) > **[!UICONTROL Infrastructure]** > **[!UICONTROL Third-party services]** , puis sélectionnez le tableau de bord [!DNL Redis]. S’il est stable ou en augmentation, [soumettez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) pour que votre cluster soit mis à niveau, ou augmentez la limite de `maxmemory` au niveau suivant.
 1. Si vous ne pouvez pas identifier la cause de l’augmentation de la consommation de mémoire [!DNL Redis], passez en revue les tendances récentes pour identifier les problèmes liés aux récents déploiements de code ou aux modifications de configuration (par exemple, nouveaux groupes de clients et modifications importantes du catalogue). Il est recommandé de passer en revue les sept derniers jours d’activité pour toutes les corrélations dans les déploiements ou modifications de code.
 1. Recherchez les extensions tierces qui se comportent mal :
 
@@ -59,7 +90,7 @@ Pour identifier et résoudre les problèmes, procédez comme suit.
 1. Si les étapes ci-dessus ne vous aident pas à identifier ou à résoudre le problème à la source, envisagez d’activer le cache L2 pour réduire le trafic réseau entre l’application et [!DNL Redis]. Pour obtenir des informations générales sur ce qu’est le cache L2, reportez-vous à la mise en cache [L2 dans l’application Adobe Commerce](/help/configuration/cache/level-two-cache.md) dans le guide de configuration de Commerce. Pour activer le cache L2 pour l’infrastructure cloud, essayez les méthodes suivantes :
 
    * Mettre à niveau les outils de l&#39;ECE si la version 2002.1.2 est inférieure.
-   * Configurez le cache L2 en utilisant [utiliser la variable REDIS\_BACKEND](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend) et en mettant à jour le fichier `.magento.env.yaml` :
+   * Configurez le cache L2 en utilisant [utiliser la variable REDIS\_BACKEND](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend) et en mettant à jour le fichier `.magento.env.yaml` :
 
    ```yaml
    stage:

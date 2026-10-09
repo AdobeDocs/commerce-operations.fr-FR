@@ -2,13 +2,22 @@
 title: config.php référence
 description: Découvrez les valeurs du fichier config.php et les sections pour la configuration d’Adobe Commerce. Découvrez les modules, les portées, les paramètres système et les bonnes pratiques de déploiement.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '185'
-ht-degree: 1%
-
+ht-degree: 2%
 ---
-
 # config.php référence
 
 Le fichier `config.php` contient les sections suivantes :
@@ -34,7 +43,7 @@ Contient un tableau de modules et leurs états. Si le module est activé, la val
 ]
 ```
 
-En savoir plus sur les [modules](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=fr).
+En savoir plus sur les [modules](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html).
 
 ## portées
 
@@ -82,7 +91,7 @@ Contient un tableau de valeurs de configuration de l’étendue. Il comporte les
 ]
 ```
 
-En savoir plus sur les [étendues de &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr#scope-settings).
+En savoir plus sur les [étendues de ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings).
 
 ## système
 
@@ -100,7 +109,7 @@ Contient un tableau de valeurs de configuration des champs système.
 ]
 ```
 
-En savoir plus sur les [&#x200B; configurations spécifiques au système &#x200B;](config-reference-sens.md).
+En savoir plus sur les [ configurations spécifiques au système ](config-reference-sens.md).
 
 ## thèmes
 

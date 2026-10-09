@@ -2,13 +2,22 @@
 title: Calendrier de publication des correctifs
 description: Découvrez quand Adobe prévoit d’annoncer la publication de nouveaux patchs et correctifs de sécurité pour Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 4%
-
 ---
-
 
 # Calendrier de publication des correctifs
 
@@ -18,7 +27,7 @@ L’objectif de ce planning est de fournir les dates auxquelles Adobe prévoit d
 
 >[!NOTE]
 >
->Pour en savoir plus sur les nouvelles fonctionnalités, l’infrastructure cloud et les versions d’extensibilité, consultez la documentation de la version [Adobe Commerce Services](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/release-information/release-notes-all).
+>Pour en savoir plus sur les nouvelles fonctionnalités, l’infrastructure cloud et les versions d’extensibilité, consultez la documentation de la version [Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
 
 Outre les correctifs de qualité, de sécurité et Beta planifiés répertoriés sur cette page, Adobe permet d’accéder à des [correctifs individuels](versioning-policy.md#individual-patch) via l’[outil de correctifs de qualité](../tools/quality-patches-tool/usage.md). Cet outil vous permet d’appliquer, d’annuler et d’afficher des informations générales sur tous les correctifs individuels disponibles pour la version installée d’Adobe Commerce.
 
@@ -45,7 +54,7 @@ Voir l’image suivante pour plus de détails :
 
 Adobe informe ses clients des nouvelles versions de correctifs par le biais des canaux suivants :
 
-- [Bulletins et conseils de sécurité Adobe](https://helpx.adobe.com/fr/security/security-bulletin.html#magento)
+- [Bulletins et conseils de sécurité Adobe](https://helpx.adobe.com/security/security-bulletin.html#magento)
 - E-mail
 - Alertes intégrées au produit
 

@@ -2,13 +2,27 @@
 title: Migration de RabbitMQ vers ActiveMQ
 description: Découvrez comment remplacer le courtier de file d’attente des messages utilisé pour les installations sur site d’Adobe Commerce.
 feature: Services, Configuration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
-
 ---
-
 # Migration vers ActiveMQ
 
 ActiveMQ (Apache ActiveMQ Artemis) est un courtier de messages multiprotocole haute performance qui fournit une alternative à RabbitMQ pour la gestion des files d’attente de messages dans Adobe Commerce.
@@ -168,7 +182,7 @@ Vous pouvez désinstaller RabbitMQ s’il n’est plus nécessaire.
 
 ### Étape 8 : installer et configurer ActiveMQ dans Adobe Commerce
 
-Pour effectuer les tâches d&#39;installation et de configuration d&#39;ActiveMQ telles que la configuration du protocole STOMP et la vérification de la connexion, consultez le [&#x200B; Guide d&#39;installation et de configuration](../../installation/prerequisites/activemq.md).
+Pour effectuer les tâches d&#39;installation et de configuration d&#39;ActiveMQ telles que la configuration du protocole STOMP et la vérification de la connexion, consultez le [ Guide d&#39;installation et de configuration](../../installation/prerequisites/activemq.md).
 
 ### Étape 9 : réinstaller les tâches cron
 

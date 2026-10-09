@@ -3,15 +3,25 @@ title: Bonnes pratiques relatives à la modification des tables de base de donn�
 description: Découvrez comment et à quel moment modifier Adobe Commerce et les tables de bases de données tierces.
 role: Developer
 feature: Best Practices
-last-substantial-update: 2022-11-15T00:00:00Z
+last-substantial-update: 2022-11-15T00:00:00.000Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1591'
 ht-degree: 0%
-
 ---
-
 # Bonnes pratiques relatives à la modification des tables de base de données
 
 Cet article présente les bonnes pratiques pour modifier les tables de base de données créées par des modules [!DNL Adobe Commerce] ou tiers. Comprendre quand et comment modifier efficacement les tableaux permet d’assurer la viabilité et la stabilité à long terme de votre plateforme commerciale.
@@ -36,9 +46,9 @@ Dans ce cas, la base de données doit être migrée vers un serveur, offrant soi
 
 Une autre option permettant de conserver les données externes à Commerce, mais de les utiliser en temps réel, consisterait à utiliser d’autres outils, tels que le maillage GraphQL. Cette option combine différentes sources de données et les renvoie sous la forme d’une réponse unique.
 
-Par exemple, vous pouvez `stitch` d’anciennes commandes à partir d’une base de données externe, par exemple l’ancien site Magento 1 qui est mis hors service. Ensuite, à l’aide du maillage GraphQL, affichez-les dans l’historique des commandes des clients. Ces anciennes commandes peuvent être combinées avec les commandes de votre environnement de [!DNL Adobe Commerce] actuel.
+Par exemple, vous pouvez `stitch` d’anciennes commandes à partir d’une base de données externe, par exemple l’ancien site Magento 1 mis hors service. Ensuite, à l’aide du maillage GraphQL, affichez-les dans l’historique des commandes des clients. Ces anciennes commandes peuvent être combinées avec les commandes de votre environnement de [!DNL Adobe Commerce] actuel.
 
-Pour plus d’informations sur l’utilisation du maillage API avec GraphQL, voir [En quoi consiste le maillage API &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/){target="_blank"}) et [Passerelle du maillage GraphQL](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
+Pour plus d’informations sur l’utilisation du maillage API avec GraphQL, voir [En quoi consiste le maillage API ](https://developer.adobe.com/graphql-mesh-gateway/mesh/){target="_blank"}) et [Passerelle du maillage GraphQL](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
 ## Migration des données héritées avec des attributs d’extension
 
@@ -54,7 +64,7 @@ Deux exemples d’emplacements de stockage sont les tables de base de données e
 
 En tant que développeur, il est essentiel de toujours envisager d’utiliser des outils en dehors de votre environnement de [!DNL Adobe Commerce], tels que le maillage GraphQL et Adobe App Builder. Ces outils peuvent vous aider à conserver l’accès aux données, mais n’ont aucun impact sur l’application commerciale principale ou ses tables de base de données sous-jacentes. Grâce à cette approche, vous exposez vos données par le biais d’une API. Ajoutez ensuite une source de données à votre configuration App Builder. À l’aide du maillage GraphQL, vous pouvez combiner ces sources de données et produire une seule réponse, comme indiqué dans [données héritées](#legacy-data).
 
-Pour plus d’informations sur le maillage GraphQL, voir [Passerelle du maillage GraphQL](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Pour plus d’informations sur Adobe App Builder, voir [Présentation d’App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=fr){target="_blank"}.
+Pour plus d’informations sur le maillage GraphQL, voir [Passerelle du maillage GraphQL](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Pour plus d’informations sur Adobe App Builder, voir [Présentation d’App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}.
 
 ## Modifier une table principale ou une table tierce
 
@@ -73,7 +83,7 @@ Adobe recommande de suivre les étapes suivantes lorsque vous ajoutez une colonn
 
    Par exemple : `app/code/YourCompany/Customer`
 
-1. Créez les fichiers appropriés pour activer le module (voir [Création d’un module](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=fr){target="_blank"}.
+1. Créez les fichiers appropriés pour activer le module (voir [Création d’un module](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 
 1. Créez un fichier appelé `db_schema.xml` dans le dossier `etc` et apportez les modifications appropriées.
 
@@ -155,7 +165,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## Recherche de tables MySQL volumineuses
 
-Pour identifier les tables volumineuses, connectez-vous à la base de données comme décrit dans l&#39;article [Connexion à la base de données](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) et exécutez la commande suivante. Utilisez `project_id` pour l’environnement de production. Pour les environnements d’évaluation, utilisez `[project_id]_stg`, `[project_id]_stg2`.
+Pour identifier les tables volumineuses, connectez-vous à la base de données comme décrit dans l&#39;article [Connexion à la base de données](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) et exécutez la commande suivante. Utilisez `project_id` pour l’environnement de production. Pour les environnements d’évaluation, utilisez `[project_id]_stg`, `[project_id]_stg2`.
 
 ```sql
 SELECT TABLE_NAME AS `Table`,

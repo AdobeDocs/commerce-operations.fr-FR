@@ -3,13 +3,28 @@ title: Configuration des mots vides de recherche
 description: Découvrez comment gérer les mots vides pour Adobe Commerce à l’aide de fichiers CSV.
 feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 0%
-
 ---
-
 # Configuration des mots vides de recherche
 
 En général, les _mots vides_ sont des mots courants que les moteurs de recherche filtrent après traitement du texte. À l&#39;origine, lorsque l&#39;espace disque et la mémoire étaient extrêmement limités, chaque kilo-octet économisé signifiait une amélioration significative des performances. Par conséquent, les moteurs de recherche ont réalisé des gains de performances en ignorant certains mots et en gardant l’index petit.
@@ -35,7 +50,7 @@ La durée de vie par défaut du cache de fichier de mots vides est de 15 minutes
 
 **Pour modifier des mots vides** :
 
-1. Connectez-vous à votre serveur Commerce ou passez au [&#x200B; propriétaire du système de fichiers &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Connectez-vous à votre serveur Commerce ou passez au [ propriétaire du système de fichiers ](../../installation/prerequisites/file-system/overview.md).
 1. Utilisez un éditeur de texte pour ouvrir un fichier de mots vides dans le répertoire `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`.
 
    Les fichiers CSV utilisent la convention de nommage `stopwords_<locale_code>.csv`. Par exemple, le fichier de mots vides allemand est nommé `stopwords_de_DE.csv`.
@@ -61,7 +76,7 @@ La durée de vie par défaut du cache de fichier de mots vides est de 15 minutes
 
 **Pour ajouter des mots vides pour un paramètre régional** :
 
-1. Connectez-vous à votre serveur Commerce ou passez au [&#x200B; propriétaire du système de fichiers &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Connectez-vous à votre serveur Commerce ou passez au [ propriétaire du système de fichiers ](../../installation/prerequisites/file-system/overview.md).
 
 1. Utilisez un éditeur de texte pour créer un fichier de mots vides nommé `stopwords_<locale_code>.csv` dans le répertoire `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`.
 

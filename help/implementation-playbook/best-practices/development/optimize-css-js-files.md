@@ -4,13 +4,23 @@ description: Découvrez comment fusionner et réduire les fichiers CSS et JavaSc
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 0%
-
 ---
-
 # Optimisation des fichiers de ressources
 
 Pour un site Commerce plus réactif, optimisez les fichiers de ressources CSS et JavaScript (JS) et éliminez les ressources bloquant le rendu.
@@ -105,6 +115,6 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 
 - [Paramètres d’optimisation côté client](../../../performance/configuration.md#client-side-optimization-settings)
 - [Conseils sur le regroupement](../../../performance/configuration.md#bundling-tips) dans *Bonnes pratiques de configuration* : outils de regroupement tiers, HTTP/2, et conseils sur la fusion JS et CSS obsolète
-- [Guide de l’utilisateur : Optimisation des fichiers de ressources](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [Guide de l’utilisateur : Optimisation des fichiers de ressources](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
 - [Guide de développement de Frontend : fusion CSS, minimisation et performances du site](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Groupement JavaScript avancé](../../../performance/advanced-js-bundling.md)

@@ -2,13 +2,22 @@
 title: Présentation de l’installation sur site
 description: Découvrez le processus d’installation sur site d’Adobe Commerce. Découvrez la configuration requise pour le serveur, les étapes de configuration et les bonnes pratiques de déploiement.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 3%
-
 ---
-
 
 # Présentation de l’installation sur site
 
@@ -20,7 +29,7 @@ Vous pouvez installer le logiciel sur site Adobe Commerce en 30 à 60 minutes en
 >
 >Vous devez disposer de connaissances techniques intermédiaires et d’un accès au serveur pour continuer avec succès.
 
-L’installation permet de créer un magasin Adobe Commerce entièrement fonctionnel avec une [vitrine orientée client](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/storefront/storefront) et un [panneau d’administration](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/admin/admin). Vos informations d’identification de base de données, informations de domaine et clés d’authentification doivent être prêtes avant de commencer le processus.
+L’installation permet de créer un magasin Adobe Commerce entièrement fonctionnel avec une [vitrine orientée client](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) et un [panneau d’administration](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). Vos informations d’identification de base de données, informations de domaine et clés d’authentification doivent être prêtes avant de commencer le processus.
 
 ## Responsabilités du commerçant
 
@@ -33,7 +42,7 @@ Avec Adobe Commerce On-Premise, vous pouvez héberger et gérer votre propre inf
 Vous avez un contrôle total sur votre environnement, ce qui vous permet d’offrir une personnalisation et une flexibilité accrues, mais vous êtes tenu de garantir les performances, la sécurité et l’évolutivité de l’infrastructure. Par exemple, vous êtes responsable des éléments suivants :
 
 - La conception, l’implémentation, la configuration, la maintenance, le dépannage et les tests de performance de tous les systèmes Adobe Commerce On-Premise.
-   - Serveurs, système d’exploitation, bases de données, [!DNL PHP], recherche, mise en cache, cache de page complète et réseau de diffusion de contenu. Les thèmes communs peuvent inclure (sans s’y limiter) [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates] et tout [!DNL CDN] utilisé.
+  - Serveurs, système d’exploitation, bases de données, [!DNL PHP], recherche, mise en cache, cache de page complète et réseau de diffusion de contenu. Les thèmes communs peuvent inclure (sans s’y limiter) [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates] et tout [!DNL CDN] utilisé.
 - Planification des capacités, mise à l’échelle automatique, mise en grappe, sauvegardes, reprise après sinistre
 - Toutes les données sur les produits et les clients, la conception, la configuration et la configuration, la maintenance des applications et des bases de données, le déploiement du code, les mises à niveau de version et l&#39;application de correctifs
 - Surveillance et alertes via APM/journalisation/alertes (par exemple, [!DNL New Relic], [!DNL Datadog], [!DNL ELK])

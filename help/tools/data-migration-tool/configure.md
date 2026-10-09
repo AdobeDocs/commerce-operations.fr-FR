@@ -1,25 +1,34 @@
 ---
-title: Configurez le  [!DNL Data Migration Tool]
-description: Découvrez les deux méthodes de configuration de pour transférer  [!DNL Data Migration Tool]  données entre Magento 1 et Magento 2.
+title: Configuration du [!DNL Data Migration Tool]
+description: Découvrez les deux méthodes de configuration du [!DNL Data Migration Tool] pour transférer des données entre Magento 1 et Magento 2.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '826'
 ht-degree: 0%
-
 ---
-
 # Configuration du [!DNL Data Migration Tool]
 
 Après avoir installé le [!DNL Data Migration Tool], le répertoire suivant contient les fichiers de mappage et de configuration :
 
 * MAGENTO OPEN SOURCE :
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource` : configuration et scripts pour la migration de Magento Open Source 1 vers Magento Open Source 2
+  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource` : configuration et scripts pour la migration de Magento Open Source 1 vers Magento Open Source 2
 
 * ADOBE COMMERCE :
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce` : configuration et scripts pour la migration de Magento Open Source 1 vers Adobe Commerce 2
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce` : configuration et scripts pour la migration d’Adobe Commerce 1 vers Adobe Commerce 2
+  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce` : configuration et scripts pour la migration de Magento Open Source 1 vers Adobe Commerce 2
+  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce` : configuration et scripts pour la migration d’Adobe Commerce 1 vers Adobe Commerce 2
 
 Les répertoires précédents contiennent des sous-répertoires pour chaque version prise en charge.
 
@@ -106,7 +115,7 @@ Avant de migrer des données, vous devez créer un module Magento 2.
 
 1. Dans le fichier `config.xml`, vous devez définir les informations d&#39;accès aux bases de données M1 et M2 et à la clé de chiffrement.
 
-1. Si votre magasin M1 comporte des modifications personnalisées, vous devez mapper le reste de vos fichiers de configuration aux personnalisations de votre magasin Magento 1. Voir [&#x200B; Utilisation des fichiers de configuration et de mappage](#work-with-configuration-and-mapping-files).
+1. Si votre magasin M1 comporte des modifications personnalisées, vous devez mapper le reste de vos fichiers de configuration aux personnalisations de votre magasin Magento 1. Voir [ Utilisation des fichiers de configuration et de mappage](#work-with-configuration-and-mapping-files).
 
 ### Configuration de la migration dans `vendor` dossier
 
@@ -144,7 +153,7 @@ Pour configurer le [!DNL Data Migration Tool] pour la migration :
    </options>
    ```
 
-   La balise &lt;crypt_key> doit contenir une valeur. Vous pouvez le retrouver dans la balise `<key>`, qui se trouve dans le fichier app/etc/local.xml sur votre instance Magento 1.
+   La balise &lt;crypt_key> doit contenir une valeur. Vous pouvez le trouver dans la balise `<key>`, qui se trouve dans le fichier app/etc/local.xml sur votre instance Magento 1.
 
    Paramètres facultatifs :
 
@@ -200,7 +209,7 @@ Le [!DNL Data Migration Tool] utilise des *fichiers de mappage* pour vous permet
 
 * Adapter le transfert des données d’un champ au format Magento 2
 
-Les fichiers de mappage pour les versions Magento prises en charge se trouvent dans les sous-répertoires de `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
+Les fichiers de mappage pour les versions de Magento prises en charge se trouvent dans les sous-répertoires de `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
 
 Pour utiliser les fichiers de mappage :
 

@@ -2,13 +2,22 @@
 title: Modes d’application
 description: L’application Commerce peut fonctionner dans différents modes en fonction de vos besoins. Consultez une liste détaillée des modes d’application disponibles.
 exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%
-
 ---
-
 # Modes d’application
 
 Vous pouvez exécuter l’application Commerce dans l’un des _modes_ suivants :
@@ -20,13 +29,13 @@ Vous pouvez exécuter l’application Commerce dans l’un des _modes_ suivants 
 | [production](#production-mode) | Déployez et exécutez l’application Commerce sur un système d’exploitation. | Oui |
 | [maintenance](#maintenance-mode) | Empêcher l’accès à un site lors des mises à jour et des configurations. | Oui |
 
-Voir [&#x200B; Définir le mode de fonctionnement &#x200B;](../cli/set-mode.md) pour savoir comment modifier manuellement les modes de fonctionnement d’Adobe Commerce.
+Voir [ Définir le mode de fonctionnement ](../cli/set-mode.md) pour savoir comment modifier manuellement les modes de fonctionnement d’Adobe Commerce.
 
 ## Prise en charge du cloud
 
 En raison du système de fichiers en lecture seule, il existe une restriction stricte empêchant de modifier les modes dans les environnements cloud distants et elle ne peut pas être remplacée par l’assistance Adobe Commerce. N’essayez pas de changer de mode en modifiant le fichier `app/etc/env.php`, car le package `ece-tools` remplace le fichier basé sur plusieurs sources de configuration.
 
-Adobe Commerce sur l’infrastructure cloud exécute automatiquement l’application en mode _maintenance_ au cours d’un déploiement, ce qui met votre site hors ligne jusqu’à ce que le déploiement soit terminé. Dans le cas contraire, l’application reste en mode _production_. Voir [&#x200B; Processus de déploiement &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/deploy/process#deploy-phase) dans le guide _Commerce sur les infrastructures cloud_.
+Adobe Commerce sur l’infrastructure cloud exécute automatiquement l’application en mode _maintenance_ au cours d’un déploiement, ce qui met votre site hors ligne jusqu’à ce que le déploiement soit terminé. Dans le cas contraire, l’application reste en mode _production_. Voir [ Processus de déploiement ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process#deploy-phase) dans le guide _Commerce sur les infrastructures cloud_.
 
 Si vous utilisez Cloud Docker pour Commerce en tant qu’outil de développement, vous pouvez déployer votre projet d’infrastructure cloud dans un environnement Docker en mode _développeur_, mais les performances sont plus lentes en raison d’opérations de synchronisation de fichiers supplémentaires. Voir [Déploiement de l’environnement Docker](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) dans le guide _Cloud Docker pour Commerce_.
 
@@ -78,7 +87,7 @@ Le mode _maintenance_ limite ou empêche l’accès à un site lors des tâches 
 
 Vous pouvez créer une [page de maintenance personnalisée](../../upgrade/troubleshooting/maintenance-mode-options.md), activer et désactiver manuellement le mode de maintenance et configurer le mode de maintenance pour permettre aux visiteurs utilisant des adresses IP autorisées de consulter normalement le magasin. Voir [activation et désactivation du mode de maintenance](../../installation/tutorials/maintenance-mode.md) dans le _Guide d’installation_.
 
-Si vous utilisez Commerce sur une infrastructure cloud, l’application Commerce s’exécute en mode de maintenance pendant la phase de déploiement. Une fois le déploiement terminé, l’application Commerce revient en mode d’exécution. Voir [Hooks de déploiement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices#phase-5%3A-deployment-hooks) dans le guide _Commerce sur les infrastructures cloud_.
+Si vous utilisez Commerce sur une infrastructure cloud, l’application Commerce s’exécute en mode de maintenance pendant la phase de déploiement. Une fois le déploiement terminé, l’application Commerce revient en mode d’exécution. Voir [Hooks de déploiement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices#phase-5%3A-deployment-hooks) dans le guide _Commerce sur les infrastructures cloud_.
 
 En mode de maintenance :
 

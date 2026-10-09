@@ -2,13 +2,22 @@
 title: Effectuer une mise à niveau
 description: Pour mettre à niveau les déploiements sur site d’Adobe Commerce, procédez comme suit.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
-
 ---
-
 
 # Effectuer une mise à niveau
 
@@ -19,7 +28,7 @@ Vous pouvez mettre à niveau _sur site_ les déploiements de l’application Ado
 
 >[!NOTE]
 >
->- Pour les projets d’infrastructure cloud d’Adobe Commerce, consultez [Mise à niveau de la version de Commerce](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version) dans le guide cloud.
+>- Pour les projets d’infrastructure cloud d’Adobe Commerce, consultez [Mise à niveau de la version de Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version) dans le guide cloud.
 >- N’utilisez pas cette méthode pour effectuer la mise à niveau si vous avez cloné le référentiel GitHub. Voir [Mise à niveau d’une installation basée sur Git](../developer/git-installs.md).
 
 Les instructions suivantes vous montrent comment effectuer une mise à niveau à l’aide du gestionnaire de packages du compositeur. Adobe Commerce 2.4.2 a introduit la prise en charge du compositeur 2. Si vous tentez d’effectuer une mise à niveau à partir de la version &lt;2.4.1, vous devez d’abord effectuer la mise à niveau vers une version compatible avec le compositeur 2 (par exemple, 2.4.2) à l’aide du compositeur 1 _avant_ de mettre à niveau vers le compositeur 2 pour les mises à niveau >2.4.2. En outre, vous devez exécuter une [version prise en charge](../../installation/system-requirements.md) de PHP.
@@ -30,7 +39,7 @@ Les instructions suivantes vous montrent comment effectuer une mise à niveau à
 
 ## Avant de commencer
 
-Vous devez remplir les [&#x200B; conditions préalables à la mise à niveau &#x200B;](../prepare/prerequisites.md) pour préparer votre environnement avant de démarrer le processus de mise à niveau.
+Vous devez remplir les [ conditions préalables à la mise à niveau ](../prepare/prerequisites.md) pour préparer votre environnement avant de démarrer le processus de mise à niveau.
 
 >[!IMPORTANT]
 >
