@@ -2,7 +2,7 @@
 title: Instructions MySQL
 description: Pour installer et configurer MySQL et MariaDB pour les installations sur site d’Adobe Commerce, procédez comme suit.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-last-update: 2026-04-28T00:00:00.000Z
+last-update: 2026-04-28
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Pour vérifier éventuellement la valeur que vous définissez, saisissez la comm
 SHOW VARIABLES LIKE 'max_allowed_packet';
 ```
 
-Ensuite, [&#x200B; Configurer l’instance de base de données &#x200B;](#configuring-the-database-instance).
+Ensuite, [ Configurer l’instance de base de données ](#configuring-the-database-instance).
 
 ## Modifications de MySQL 8
 
@@ -89,7 +89,7 @@ Décrire admin_user dans mysql 8.19
 
 À l&#39;exception de _TINYINT(1)_, toute marge intérieure entière (TINYINT > 1, SMALLINT, MEDIUMINT, INT, BIGINT) doit être supprimée du fichier `db_schema.xml`.
 
-Pour plus d’informations, voir [&#128279;](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature).
+Pour plus d’informations, voir [](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature).
 
 ### Comportement par défaut d’ORDER BY
 
@@ -186,11 +186,11 @@ Pour configurer une instance de base de données MySQL, procédez comme suit :
 
    Nous vous recommandons de configurer votre instance de base de données en fonction de votre activité. Lors de la configuration de votre base de données, tenez compte des points suivants :
 
-   * Les indexeurs nécessitent des valeurs de `tmp_table_size` et de `max_heap_table_size` plus élevées (par exemple, 64 millions). Si vous configurez le paramètre `batch_size`, vous pouvez ajuster cette valeur ainsi que les paramètres de taille de la table pour améliorer les performances de l’indexeur. Pour plus d’informations[&#128279;](../../../performance/configuration.md) consultez le  Guide d’optimisation .
+   * Les indexeurs nécessitent des valeurs de `tmp_table_size` et de `max_heap_table_size` plus élevées (par exemple, 64 millions). Si vous configurez le paramètre `batch_size`, vous pouvez ajuster cette valeur ainsi que les paramètres de taille de la table pour améliorer les performances de l’indexeur. Pour plus d’informations](../../../performance/configuration.md) consultez le [ Guide d’optimisation .
 
    * Pour des performances optimales, assurez-vous que toutes les tables d’index MySQL et Adobe Commerce peuvent être conservées en mémoire (par exemple, configurez `innodb_buffer_pool_size`).
 
-   * La réindexation sur MariaDB 10.4 prend plus de temps que les autres versions de MariaDB ou MySQL. Voir [&#x200B; Bonnes pratiques de configuration &#x200B;](../../../performance/configuration.md#indexers).
+   * La réindexation sur MariaDB 10.4 prend plus de temps que les autres versions de MariaDB ou MySQL. Voir [ Bonnes pratiques de configuration ](../../../performance/configuration.md#indexers).
 
 1. Pour que les champs de `TIMESTAMP` MySQL suivent les préférences et la composition attendues par l’architecture de schéma déclaratif de l’application, la variable système `explicit_defaults_for_timestamp` doit être définie sur `on`.
 

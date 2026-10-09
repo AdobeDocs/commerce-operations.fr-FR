@@ -2,7 +2,7 @@
 title: Notes De Mise À Jour Du Correctif De Sécurité D’Adobe Commerce 2.4.6
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.6.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-last-update: 2026-09-18T00:00:00.000Z
+last-update: 2026-09-18
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '2365'
 ht-degree: 0%
@@ -100,7 +100,7 @@ L&#39;intégration d&#39;expédition DHL prend désormais en charge les API REST
 
 La version de sécurité 2.4.6-p13 d’Adobe Commerce fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.6.
 
-Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB25-94](https://helpx.adobe.com/fr/security/products/magento/apsb25-94.html).
+Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
 
 {{b2b-patches}}
 
@@ -132,7 +132,7 @@ composer require magento/inventory-composer-installer
 
 La version de sécurité 2.4.6-p12 d’Adobe Commerce fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.6.
 
-Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB25-71](https://helpx.adobe.com/fr/security/products/magento/apsb25-71.html).
+Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
 
 {{b2b-patches}}
 
@@ -220,13 +220,13 @@ La version de sécurité 2.4.6-p6 d’Adobe Commerce fournit des correctifs de s
 
 Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
-Pour des raisons de compatibilité avec Commerce version 2.4.6-p6, les commerçants qui disposent de l’extension Adobe Commerce B2B doivent effectuer la mise à niveau vers [B2B version 1.4.2-p1](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
+Pour des raisons de compatibilité avec Commerce version 2.4.6-p6, les commerçants qui disposent de l’extension Adobe Commerce B2B doivent effectuer la mise à niveau vers [B2B version 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
 
 ### Appliquer un correctif pour CVE-2024-34102
 
 {{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
-Pour des raisons de compatibilité avec Commerce version 2.4.6-p6, les commerçants qui disposent de l’extension Adobe Commerce B2B doivent effectuer la mise à niveau vers [B2B version 1.4.2-p1](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
+Pour des raisons de compatibilité avec Commerce version 2.4.6-p6, les commerçants qui disposent de l’extension Adobe Commerce B2B doivent effectuer la mise à niveau vers [B2B version 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
 
 ### Faits saillants
 
@@ -288,7 +288,7 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 ### Appliquer un correctif pour CVE-2022-31160
 
-`jQuery-UI` version 1.13.1 de la bibliothèque comporte une vulnérabilité de sécurité connue (CVE-2022-31160) qui affecte plusieurs versions d’Adobe Commerce et de Magento Open Source. Cette bibliothèque est une dépendance d’Adobe Commerce et Magento Open Source 2.4.4, 2.4.5 et 2.4.6. Les commerçants exécutant les déploiements affectés doivent appliquer le correctif spécifié dans l’article de la base de connaissances [&#x200B; Vulnérabilité de sécurité de l’interface utilisateur jQuery CVE-2022-31160 pour les versions 2.4.4, 2.4.5 et 2.4.6 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176) .
+`jQuery-UI` version 1.13.1 de la bibliothèque comporte une vulnérabilité de sécurité connue (CVE-2022-31160) qui affecte plusieurs versions d’Adobe Commerce et de Magento Open Source. Cette bibliothèque est une dépendance d’Adobe Commerce et Magento Open Source 2.4.4, 2.4.5 et 2.4.6. Les commerçants exécutant les déploiements affectés doivent appliquer le correctif spécifié dans l’article de la base de connaissances [ Vulnérabilité de sécurité de l’interface utilisateur jQuery CVE-2022-31160 pour les versions 2.4.4, 2.4.5 et 2.4.6 ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176) .
 
 ### Faits saillants
 
@@ -338,6 +338,6 @@ Les mises à niveau de Platform pour cette version améliorent la conformité au
   Installation failed, reverting ./composer.json and ./composer.lock to their original content.
   ```
 
-  Ce problème peut être résolu en ajoutant des dépendances manuelles pour le package de sécurité B2B avec une [&#x200B; balise de stabilité &#x200B;](https://getcomposer.org/doc/04-schema.md#package-links). Pour plus d’informations, consultez les notes de mise à jour de [B2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html#known-issue).
+  Ce problème peut être résolu en ajoutant des dépendances manuelles pour le package de sécurité B2B avec une [ balise de stabilité ](https://getcomposer.org/doc/04-schema.md#package-links). Pour plus d’informations, consultez les notes de mise à jour de [B2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html#known-issue).
 
 <!-- Last updated from includes: 2026-08-19 13:47:15 -->

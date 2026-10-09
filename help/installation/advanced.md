@@ -2,7 +2,7 @@
 title: Installation sur site avancée
 description: Découvrez les scénarios d’installation avancés pour les déploiements sur site d’Adobe Commerce. Découvrez des configurations complexes et des options de configuration personnalisées.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-last-update: 2026-08-19T00:00:00.000Z
+last-update: 2026-08-19
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '2515'
 ht-degree: 0%
@@ -63,7 +63,7 @@ Le programme d’installation peut être exécuté plusieurs fois si nécessaire
 
 Avant de commencer, effectuez les étapes suivantes :
 
-* Vérifiez que votre système répond à la configuration requise décrite dans la section [&#x200B; Configuration requise &#x200B;](system-requirements.md).
+* Vérifiez que votre système répond à la configuration requise décrite dans la section [ Configuration requise ](system-requirements.md).
 
 * Effectuez toutes les tâches [prérequises](prerequisites/overview.md).
 
@@ -230,7 +230,7 @@ Les tableaux suivants fournissent de nombreux paramètres d’installation, mais
 
 >[!NOTE]
 >
->Pour activer ou désactiver les modules après l’installation d’Adobe Commerce, voir [&#x200B; Activer et désactiver les modules](tutorials/manage-modules.md).
+>Pour activer ou désactiver les modules après l’installation d’Adobe Commerce, voir [ Activer et désactiver les modules](tutorials/manage-modules.md).
 
 **Données sensibles :**
 

@@ -2,7 +2,7 @@
 title: Clonage de référentiels Git de données d’exemple
 description: Pour installer les données d’exemple d’Adobe Commerce en clonant les référentiels Git, procédez comme suit.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-last-update: 2026-04-28T00:00:00.000Z
+last-update: 2026-04-28
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Si vous n’êtes pas un développeur participant, choisissez l’une des autres
 Les développeurs contributeurs peuvent utiliser cette méthode d’installation des données d’exemple *uniquement* si ce qui suit est vrai :
 
 * Vous utilisez Magento Open Source
-* Vous [&#x200B; cloné le référentiel GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
+* Vous [ cloné le référentiel GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 >[!WARNING]
 >
@@ -98,7 +98,7 @@ Pour cloner le référentiel GitHub de données d’exemple à l’aide du proto
 
 1. Attendez que la commande soit terminée.
 
-1. Voir [&#x200B; Définir les autorisations et la propriété du système de fichiers](#set-file-system-ownership-and-permissions).
+1. Voir [ Définir les autorisations et la propriété du système de fichiers](#set-file-system-ownership-and-permissions).
 
 1. Exécutez la commande suivante :
 

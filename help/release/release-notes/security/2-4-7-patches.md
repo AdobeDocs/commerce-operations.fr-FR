@@ -2,7 +2,7 @@
 title: Notes De Mise À Jour Du Correctif De Sécurité D’Adobe Commerce 2.4.7
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-last-update: 2026-08-19T00:00:00.000Z
+last-update: 2026-08-19
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 0%
@@ -96,7 +96,7 @@ Adobe Commerce 2.4.7 a été mis à jour pour prendre en charge le compositeur 2
 
 La version de sécurité 2.4.7-p8 d’Adobe Commerce fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.7.
 
-Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB25-94](https://helpx.adobe.com/fr/security/products/magento/apsb25-94.html).
+Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
 
 {{b2b-patches}}
 
@@ -232,6 +232,6 @@ Les points forts de cette version sont les suivants :
 
 ### Correctifs inclus dans cette version
 
-Adobe Commerce 2.4.7-p1 résout un problème introduit dans le cadre de la migration de l’intégration UPS de SOAP vers l’API REST. Ce problème affectait les clients qui expédiaient à l&#39;extérieur des États-Unis et les empêchait d&#39;utiliser les mesures du système métrique/SI de kilogrammes et de centimètres pour les colis afin de créer des expéditions avec UPS. Consultez l’article de la base de connaissances [&#x200B; Migration de l’intégration de la méthode d’expédition UPS de l’API SOAP vers l’API RESTful &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27146) pour plus d’informations.
+Adobe Commerce 2.4.7-p1 résout un problème introduit dans le cadre de la migration de l’intégration UPS de SOAP vers l’API REST. Ce problème affectait les clients qui expédiaient à l&#39;extérieur des États-Unis et les empêchait d&#39;utiliser les mesures du système métrique/SI de kilogrammes et de centimètres pour les colis afin de créer des expéditions avec UPS. Consultez l’article de la base de connaissances [ Migration de l’intégration de la méthode d’expédition UPS de l’API SOAP vers l’API RESTful ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27146) pour plus d’informations.
 
 <!-- Last updated from includes: 2026-08-19 13:47:15 -->
