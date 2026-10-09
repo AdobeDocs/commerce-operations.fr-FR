@@ -3,18 +3,27 @@ title: Bibliothèque JavaScript d’Adobe Privacy
 description: Découvrez comment utiliser des outils personnalisés pour accéder aux informations personnelles des clients collectées par Adobe Commerce et les supprimer.
 hide: true
 exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '341'
 ht-degree: 0%
-
 ---
-
 # Bibliothèque JavaScript d’Adobe Privacy
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-La bibliothèque Adobe Privacy JavaScript [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=fr) est un ensemble d’outils permettant de créer un processus d’accès et de suppression des données privées.
+La bibliothèque Adobe Privacy JavaScript [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) est un ensemble d’outils permettant de créer un processus d’accès et de suppression des données privées.
 
 Les services de suivi des données d’Adobe Commerce peuvent stocker des informations privées applicables aux réglementations de confidentialité telles que le [&#x200B; Règlement général sur la protection des données (RGPD)](gdpr.md) et le [California Consumer Privacy Act (CCPA)](ccpa.md).
 
@@ -42,7 +51,7 @@ La bibliothèque JS d’Adobe Privacy fournit diverses fonctions de gestion des 
 `retrieveThenRemoveIdentities()`
 : cette fonction est similaire à `removeIdentities()` dans la mesure où elle récupère un tableau d’identités et les supprime du navigateur.
 
-Pour plus d’informations et d’exemples d’utilisation de ces fonctions, consultez la [documentation de la bibliothèque officielle](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=fr).
+Pour plus d’informations et d’exemples d’utilisation de ces fonctions, consultez la [documentation de la bibliothèque officielle](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
 
 ### Initialisation
 
@@ -53,4 +62,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 Le constructeur accepte un objet de configuration avec des paramètres lors de l’instanciation.
-Reportez-vous à la [documentation officielle de la bibliothèque](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=fr) pour obtenir la liste de ces paramètres de configuration.
+Reportez-vous à la [documentation officielle de la bibliothèque](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) pour obtenir la liste de ces paramètres de configuration.

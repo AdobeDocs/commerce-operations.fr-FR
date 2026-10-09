@@ -1,17 +1,34 @@
 ---
-title: 'ACSD-51294 : prix, quantité, taxe, expédition, chiffre d’affaires envoyé en tant que chaîne à et  [!DNL Google Analytics] '
-description: Appliquez le correctif ACSD-51294 pour résoudre le problème d’Adobe Commerce où le prix, la quantité, les taxes, l’expédition et le chiffre d’affaires sont envoyés sous forme de chaîne à et  [!DNL Google Analytics]  GTM.
+title: 'ACSD-51294 : prix, quantité, taxe, expédition, chiffre d''affaires envoyé en tant que chaîne à [!DNL Google Analytics] et GTM'
+description: Appliquez le correctif ACSD-51294 pour résoudre le problème d’Adobe Commerce où le prix, la quantité, les taxes, l’expédition et le chiffre d’affaires sont envoyés sous forme de chaîne à [!DNL Google Analytics] et GTM.
 feature: Orders, Shipping/Delivery, Variables
 role: Admin
 exl-id: 99d2a311-2543-4007-99fd-6c34a2950773
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 04d3134c-2afb-5bd7-ac14-e19fa935e848
+    internal-label: Shipping/Delivery
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+subfeature_v2:
+  - id: 2191e157-828a-5358-ad69-ebcaa8402915
+    internal-label: Variables
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '368'
 ht-degree: 0%
-
 ---
-
 # ACSD-51294 : prix, quantité, taxe, expédition, chiffre d&#39;affaires envoyé en tant que chaîne à [!DNL Google Analytics] et GTM
 
 Le correctif ACSD-51294 corrige le problème en raison duquel le prix, la quantité, la taxe, l’expédition et le chiffre d’affaires sont envoyés sous forme de chaîne à [!DNL Google Analytics] et GTM. Ce correctif est disponible lorsque la version 1.1.32 de [!DNL Quality Patches Tool (QPT)] est installée. L’ID du correctif est ACSD-51294. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.

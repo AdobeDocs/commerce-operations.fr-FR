@@ -3,15 +3,25 @@ title: Bonnes pratiques relatives à la modification des tables de base de donn�
 description: Découvrez comment et à quel moment modifier Adobe Commerce et les tables de bases de données tierces.
 role: Developer
 feature: Best Practices
-last-substantial-update: 2022-11-15T00:00:00Z
+last-substantial-update: 2022-11-15T00:00:00.000Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1591'
 ht-degree: 0%
-
 ---
-
 # Bonnes pratiques relatives à la modification des tables de base de données
 
 Cet article présente les bonnes pratiques pour modifier les tables de base de données créées par des modules [!DNL Adobe Commerce] ou tiers. Comprendre quand et comment modifier efficacement les tableaux permet d’assurer la viabilité et la stabilité à long terme de votre plateforme commerciale.
@@ -36,7 +46,7 @@ Dans ce cas, la base de données doit être migrée vers un serveur, offrant soi
 
 Une autre option permettant de conserver les données externes à Commerce, mais de les utiliser en temps réel, consisterait à utiliser d’autres outils, tels que le maillage GraphQL. Cette option combine différentes sources de données et les renvoie sous la forme d’une réponse unique.
 
-Par exemple, vous pouvez `stitch` d’anciennes commandes à partir d’une base de données externe, par exemple l’ancien site Magento 1 qui est mis hors service. Ensuite, à l’aide du maillage GraphQL, affichez-les dans l’historique des commandes des clients. Ces anciennes commandes peuvent être combinées avec les commandes de votre environnement de [!DNL Adobe Commerce] actuel.
+Par exemple, vous pouvez `stitch` d’anciennes commandes à partir d’une base de données externe, par exemple l’ancien site Magento 1 mis hors service. Ensuite, à l’aide du maillage GraphQL, affichez-les dans l’historique des commandes des clients. Ces anciennes commandes peuvent être combinées avec les commandes de votre environnement de [!DNL Adobe Commerce] actuel.
 
 Pour plus d’informations sur l’utilisation du maillage API avec GraphQL, voir [En quoi consiste le maillage API &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/){target="_blank"}) et [Passerelle du maillage GraphQL](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 

@@ -1,17 +1,29 @@
 ---
-title: 'ACSD-58790 : corrige la fonctionnalité de pincement pour zoomer sur les images de la page des détails du produit en mode mobile sur  [!DNL Chrome]'
-description: ACSD-58790 corrige le problème d’Adobe Commerce en raison duquel l’image en mode mobile on [!DNL Chrome] n’a pas effectué le zoom avant prévu sur l’image.
+title: 'ACSD-58790 : corrige la fonctionnalité de pincement pour zoomer sur les images de la page des détails du produit en mode mobile sur [!DNL Chrome]'
+description: ACSD-58790 corrige le problème d’Adobe Commerce en raison duquel l’image en mode mobile sur [!DNL Chrome] n’a pas effectué le zoom avant prévu sur l’image.
 feature: Storefront
 role: Admin, Developer
 exl-id: 46b324bf-c2a0-4086-87ee-96e8c4883494
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '416'
 ht-degree: 0%
-
 ---
-
 # ACSD-58790 : corrige la fonctionnalité de pincement pour zoomer sur les images de la page des détails du produit en mode mobile sur [!DNL Chrome]
 
 Le correctif ACSD-58790 corrige le problème d’Adobe Commerce en raison duquel l’image en mode mobile sur [!DNL Chrome] n’a pas effectué le zoom avant prévu sur l’image. Ce correctif est disponible lorsque la version 1.1.50 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-58790. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.8.

@@ -2,13 +2,22 @@
 title: Configuration du système de production
 description: Découvrez comment configurer un système de production pour l’application Commerce.
 exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
-
 ---
-
 # Configuration du système de production
 
 Vous pouvez avoir un seul système de production. Tout ce qui suit doit être vrai :
@@ -16,11 +25,11 @@ Vous pouvez avoir un seul système de production. Tout ce qui suit doit être vr
 - Tout le code Commerce se trouve dans le contrôle de code source dans le même référentiel que les systèmes de développement et de création
 - Assurez-vous que tous les éléments suivants sont _inclus_ dans le contrôle de code source :
 
-   - `app/etc/config.php`
-   - Répertoire `generated` (et sous-répertoires)
-   - répertoire `pub/media`
-   - Répertoire `pub/media/wysiwyg` (et sous-répertoires)
-   - Répertoire `pub/static` (et sous-répertoires)
+  - `app/etc/config.php`
+  - Répertoire `generated` (et sous-répertoires)
+  - répertoire `pub/media`
+  - Répertoire `pub/media/wysiwyg` (et sous-répertoires)
+  - Répertoire `pub/static` (et sous-répertoires)
 
 - Commerce 2.2 ou une version ultérieure doit être installé et défini pour le [mode de production](../bootstrap/application-modes.md#production-mode)
 - La propriété et les autorisations du système de fichiers sont définies, comme indiqué dans la section [Prérequis pour les systèmes de développement, de version et de production](../deployment/prerequisites.md).

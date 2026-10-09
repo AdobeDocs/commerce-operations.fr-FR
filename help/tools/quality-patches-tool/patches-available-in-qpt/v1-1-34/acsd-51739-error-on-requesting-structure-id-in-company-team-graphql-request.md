@@ -3,13 +3,22 @@ title: 'ACSD-51739 : erreur lors de la demande de « structure_id » dans la req
 description: Appliquez le correctif ACSD-51739 pour résoudre le problème d’Adobe Commerce où une erreur est renvoyée lorsque « structure_id » est demandé dans une requête GraphQL « CompanyTeam ».
 exl-id: 74c78278-779d-4fb6-ba10-501b25b9f1fe
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 0%
-
 ---
-
 # ACSD-51739 : erreur lors de la demande de `structure_id` dans `CompanyTeam` demande GraphQL
 
 Le correctif ACSD-51739 corrige le problème où une erreur est renvoyée lorsque le `structure_id` est demandé dans une requête GraphQL `CompanyTeam`. Ce correctif est disponible lorsque la version 1.1.34 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-51739. Notez que le problème a été résolu dans Adobe Commerce 2.4.7.

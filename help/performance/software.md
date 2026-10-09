@@ -3,13 +3,27 @@ title: Recommandations logicielles
 description: Découvrez la configuration logicielle requise et les recommandations relatives à Adobe Commerce. Découvrez les versions prises en charge et les bonnes pratiques de configuration pour la production.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1488'
 ht-degree: 0%
-
 ---
-
 # Recommandations logicielles
 
 Nous avons besoin des logiciels suivants pour les instances de production de [!DNL Commerce] :
@@ -151,7 +165,7 @@ opcache.validate_timestamps=0
 opcache.enable_cli=1
 ```
 
-Lorsque vous ajustez l’allocation de mémoire pour opcache, tenez compte de la taille de la base de code Magento et de toutes vos extensions. L’équipe de performances de Magento utilise les valeurs de l’exemple précédent pour les tests, car elle fournit suffisamment d’espace dans opcache pour le nombre moyen d’extensions installées.
+Lorsque vous ajustez l’allocation de mémoire pour opcache, tenez compte de la taille de la base de code de Magento et de toutes vos extensions. L’équipe de performance de Magento utilise les valeurs de l’exemple précédent pour les tests, car elle fournit suffisamment d’espace dans opcache pour le nombre moyen d’extensions installées.
 
 Si vous disposez d’une machine à faible mémoire et que peu d’extensions ou de personnalisations sont installées, utilisez les paramètres suivants pour obtenir un résultat similaire :
 

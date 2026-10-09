@@ -5,13 +5,27 @@ feature: Orders, System
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 1195e1c3-575c-48d6-8a10-c300f9bbb84a
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
-
 ---
-
 # ACSD-58108 : des erreurs SQL se produisent dans l’extension du module personnalisé de la grille de commande en raison d’un nom de table de jointure manquant
 
 Le correctif ACSD-58108 corrige le problème où un nom de table de jointure manquant dans l’extension du module personnalisé de grille de commande provoque des erreurs SQL lors du filtrage de certaines colonnes. Ce correctif est disponible lorsque la version 1.1.69 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-58108. Notez que ce problème doit être résolu dans Adobe Commerce 2.5.0.

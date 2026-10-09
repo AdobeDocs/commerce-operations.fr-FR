@@ -3,14 +3,26 @@ title: Phases de mise en œuvre
 description: Découvrez les bonnes pratiques pour les phases de mise en œuvre des projets Adobe Commerce.
 exl-id: c5272f79-7315-46dc-a191-a40004aaa812
 feature: Best Practices
-last-update: 2026-01-20T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-01-20T00:00:00.000Z
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 7%
-
 ---
-
 # Bonnes pratiques d’implémentation
 
 Il existe de nombreuses façons de mettre en œuvre un projet Adobe Commerce. Les bonnes pratiques fournies dans cette section décrivent la manière dont Adobe s’attend à ce que les clients et les partenaires mettent en œuvre des cas d’utilisation spécifiques. Ces recommandations sont conçues pour éviter les problèmes courants et les problèmes potentiels liés à la configuration et à la personnalisation du site, au déploiement, aux opérations, aux performances et aux mises à niveau.

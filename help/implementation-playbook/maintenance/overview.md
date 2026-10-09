@@ -3,13 +3,25 @@ title: Présentation de la maintenance et du support
 description: Maintenez et prenez en charge correctement votre nouvelle implémentation d’Adobe Commerce.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '531'
 ht-degree: 0%
-
 ---
-
 # Présentation de la maintenance et du support
 
 Les consommateurs ont déjà plus d&#39;options à portée de main que jamais auparavant. Comme il n&#39;y a pas de pénurie de marques qui rivalisent pour attirer l&#39;attention, vous ne pouvez donner aux consommateurs aucune raison de regarder vos concurrents. Comme nous l&#39;avons vu, la loyauté et la patience envers les consommateurs sont minces. Il n&#39;en faut pas beaucoup pour qu&#39;ils abandonnent votre marque et avoir une mauvaise expérience d&#39;e-commerce est un moyen facile pour eux d&#39;abandonner.
@@ -34,4 +46,4 @@ L’identification du modèle d’assistance approprié pour votre entreprise af
 
 Lors du déploiement d’Adobe Commerce, il est essentiel de réfléchir aux éléments à inclure dans votre stratégie de maintenance et d’assistance.
 L’assistance d’experts est incluse dans une licence Adobe Commerce. Pour plus d’informations sur l’assistance d’experts et les programmes d’assistance Adobe, consultez les [programmes d’assistance Adobe](https://business.adobe.com/fr/customers/consulting-services/premier-support.html).
-Outre les programmes d’assistance Adobe, il existe des conditions d’assistance Magento héritées. Pour connaître les services d’assistance qui vous concernent, veuillez consulter votre contrat afin de connaître le contrat d’assistance dont vous disposez ou adressez-vous à l’équipe chargée de votre compte Adobe.
+Outre les programmes d’assistance Adobe, il existe d’anciennes conditions d’assistance pour Magento. Pour connaître les services d’assistance qui vous concernent, veuillez consulter votre contrat afin de connaître le contrat d’assistance dont vous disposez ou adressez-vous à l’équipe chargée de votre compte Adobe.

@@ -5,13 +5,27 @@ feature: Checkout, Orders
 role: Admin, Developer
 exl-id: bee0c4be-11ec-4dcb-9b3c-7af26676cee9
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 1%
-
 ---
-
 # ACSD-55352 : Création d&#39;avoirs avec des points de récompense
 
 Le correctif ACSD-55352 corrige le problème suivant : après la création d&#39;un avoir partiel avec des points de récompense client, le statut de la commande passe à *fermé* et les options d&#39;avoir disparaissent de la page de commande de l&#39;administrateur. Ce correctif est disponible lorsque la version 1.1.44 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-55352. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.

@@ -5,13 +5,25 @@ feature: Orders, Shopping Cart
 role: Admin
 exl-id: d4e9fca1-7fba-4a33-9c5e-c9695cbfc61c
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: df8eaa0e-dd74-553a-8ad5-28129f8e8d3d
+    internal-label: Shopping Cart
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 0%
-
 ---
-
 # MDVA-37234 : l’ajout multiple d’articles au panier crée des lignes en double
 
 Le correctif MDVA-37234 corrige le problème en raison duquel l’ajout multiple d’un article au panier (requête parallèle) pour le même SKU crée un élément de ligne en double pour le même ID de panier. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.3 est installé. L’ID du correctif est MDVA-37234. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.

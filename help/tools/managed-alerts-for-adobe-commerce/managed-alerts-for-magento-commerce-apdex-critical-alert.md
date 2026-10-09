@@ -1,16 +1,37 @@
 ---
-title: 'Alertes gérées pour Adobe Commerce : alerte critique [!DNL Apdex] '
-description: Cet article décrit les étapes de dépannage à suivre lorsque vous recevez une alerte  [!DNL Apdex]  critique pour Adobe Commerce in [!DNL New Relic]. The [!DNL Apdex] score qui évalue la satisfaction des utilisateurs quant au temps de réponse des applications et services web. Une action immédiate est nécessaire pour remédier au problème.
+title: 'Alertes gérées pour Adobe Commerce : alerte critique [!DNL Apdex]'
+description: Cet article décrit les étapes de dépannage à suivre lorsque vous recevez une alerte critique [!DNL Apdex] pour Adobe Commerce dans [!DNL New Relic]. Le score [!DNL Apdex] mesure la satisfaction des utilisateurs quant au temps de réponse des applications et services web. Une action immédiate est nécessaire pour remédier au problème.
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
 exl-id: 00e29611-fd4b-45c8-a1e0-56fc3cbe90e0
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1148'
 ht-degree: 0%
-
 ---
-
 # Alertes gérées pour Adobe Commerce : alerte critique [!DNL Apdex]
 
 Cet article décrit les étapes de dépannage à suivre lorsque vous recevez une alerte critique [!DNL Apdex] pour Adobe Commerce dans [!DNL New Relic]. Le score [!DNL Apdex] mesure la satisfaction des utilisateurs quant au temps de réponse des applications et services web. Une action immédiate est nécessaire pour remédier au problème. L’alerte se présente comme suit, selon le canal de notification d’alerte que vous avez sélectionné.
@@ -48,7 +69,7 @@ Pour identifier et résoudre les problèmes, procédez comme suit.
 >
 >Comme il s’agit d’une alerte critique, il est vivement recommandé d’effectuer l’**étape 1** avant d’essayer de résoudre le problème (étape 2 et suivantes).
 
-1. Vérifiez si un ticket d’assistance Adobe Commerce existe. Pour connaître les étapes à suivre, reportez-vous à la section [Tracker vos tickets d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case) dans la base de connaissances de l’assistance Commerce. L’assistance peut avoir reçu une alerte de seuil [!DNL New Relic], créé un ticket et commencé à travailler sur le problème. S’il n’existe aucun ticket, créez-en un. Le ticket doit contenir les informations suivantes :
+1. Vérifiez si un ticket d’assistance Adobe Commerce existe. Pour connaître les étapes à suivre, reportez-vous à la section [Tracker vos tickets d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case) dans la base de connaissances de l’assistance Commerce. L’assistance peut avoir reçu une alerte de seuil [!DNL New Relic], créé un ticket et commencé à travailler sur le problème. S’il n’existe aucun ticket, créez-en un. Le ticket doit contenir les informations suivantes :
    * Motif du contact : sélectionnez **[!UICONTROL New Relic CRITICAL alert received]**.
    * Description de l’alerte.
    * [[!DNL New Relic] Lien de l’incident](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). Cela est inclus dans vos [alertes gérées pour Adobe Commerce](managed-alerts-for-magento-commerce.md).
@@ -57,11 +78,11 @@ Pour identifier et résoudre les problèmes, procédez comme suit.
    * Triez les transactions en fonction du débit le plus élevé, du temps de réponse moyen le plus lent, du temps le plus long et d’autres seuils. Pour connaître les étapes, reportez-vous à la section [[!DNL New Relic] Rechercher des problèmes de performances spécifiques](https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems). Si vous avez toujours du mal à identifier le problème, utilisez [[!DNL New Relic] la page Infrastructure d’APM](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/).
 1. Utilisez la page Infrastructure d’[[!DNL New Relic] APM](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/) pour identifier les processus gourmands en ressources. Pour connaître les étapes, reportez-vous à la page [[!DNL New Relic] Hôtes de surveillance de l’infrastructure : [!UICONTROL Processes tab]](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#processes).
 1. Si des services tels que [!DNL Redis] ou MySQL sont la principale source de consommation de mémoire, essayez les méthodes suivantes :
-   * Vérifiez que vous utilisez la dernière version. Les versions plus récentes peuvent parfois corriger les fuites de mémoire. Si vous n’utilisez pas la dernière version, envisagez d’effectuer une mise à niveau. Pour connaître les étapes, reportez-vous à la section [Services de modification](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) dans le guide de Commerce sur le cloud.
-   * Recherchez les problèmes MySQL tels que les requêtes à exécution longue, les clés de Principal non définies et les index en double. Pour connaître les étapes, reportez-vous à la section [Problèmes de base de données les plus courants dans Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=fr) dans le guide d’implémentation de Commerce.
-   * Recherchez les problèmes PHP. Examinez les processus en cours d’exécution en exécutant `ps aufx` dans l’interface de ligne de commande/Terminal. Dans la sortie du terminal, vous verrez les tâches et processus cron en cours d’exécution. Vérifiez la sortie pour le temps d’exécution des processus. S’il existe un fichier cron dont la durée d’exécution est longue, il est possible qu’il soit suspendu. Pour connaître les étapes de dépannage, reportez-vous aux sections [Performances lentes, crons à exécution lente et longue](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons) et [Traitement Cron bloqué au statut « en cours d’exécution »](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status) de la base de connaissances du support Commerce.
+   * Vérifiez que vous utilisez la dernière version. Les versions plus récentes peuvent parfois corriger les fuites de mémoire. Si vous n’utilisez pas la dernière version, envisagez d’effectuer une mise à niveau. Pour connaître les étapes, reportez-vous à la section [Services de modification](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) dans le guide de Commerce sur le cloud.
+   * Recherchez les problèmes MySQL tels que les requêtes à exécution longue, les clés de Principal non définies et les index en double. Pour connaître les étapes, reportez-vous à la section [Problèmes de base de données les plus courants dans Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html) dans le guide d’implémentation de Commerce.
+   * Recherchez les problèmes PHP. Examinez les processus en cours d’exécution en exécutant `ps aufx` dans l’interface de ligne de commande/Terminal. Dans la sortie du terminal, vous verrez les tâches et processus cron en cours d’exécution. Vérifiez la sortie pour le temps d’exécution des processus. S’il existe un fichier cron dont la durée d’exécution est longue, il est possible qu’il soit suspendu. Pour connaître les étapes de dépannage, reportez-vous aux sections [Performances lentes, crons à exécution lente et longue](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons) et [Traitement Cron bloqué au statut « en cours d’exécution »](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status) de la base de connaissances du support Commerce.
 
-1. Une fois la source identifiée, SSH dans l’environnement pour en savoir plus. Pour connaître les étapes, reportez-vous à la section [SSH dans votre environnement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/secure-connections#ssh) dans le guide de Commerce sur le cloud.
+1. Une fois la source identifiée, SSH dans l’environnement pour en savoir plus. Pour connaître les étapes, reportez-vous à la section [SSH dans votre environnement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections#ssh) dans le guide de Commerce sur le cloud.
 1. Si vous avez toujours du mal à identifier la source, passez en revue les tendances récentes pour identifier les problèmes liés aux récents déploiements de code ou aux modifications de configuration (par exemple, nouveaux groupes de clients et modifications importantes du catalogue). Il est recommandé de passer en revue les sept derniers jours d’activité pour toutes les corrélations dans les déploiements ou modifications de code.
-1. Si vous ne parvenez pas à trouver une solution dans un délai raisonnable, demandez un upsize ou placez le site en mode de maintenance si vous ne l&#39;avez pas déjà fait. Pour connaître les étapes, reportez-vous aux sections [Comment demander un redimensionnement temporaire](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize) dans notre Base de connaissances de prise en charge de Commerce et [Activer ou désactiver le mode de maintenance](/help/installation/tutorials/maintenance-mode.md) dans le Guide d’installation de Commerce.
-1. Si la mise à niveau revient au fonctionnement normal du site, envisagez de demander une mise à niveau permanente (contactez l’équipe de votre compte Adobe) ou essayez de reproduire le problème dans votre évaluation dédiée en exécutant un test de charge et en optimisant les requêtes, ou un code qui réduit la pression sur les services. Reportez-vous à la section [Tests de charge et de contrainte](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/test/staging-and-production#load-and-stress-testing) du guide Commerce sur le cloud .
+1. Si vous ne parvenez pas à trouver une solution dans un délai raisonnable, demandez un upsize ou placez le site en mode de maintenance si vous ne l&#39;avez pas déjà fait. Pour connaître les étapes, reportez-vous aux sections [Comment demander un redimensionnement temporaire](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize) dans notre Base de connaissances de prise en charge de Commerce et [Activer ou désactiver le mode de maintenance](/help/installation/tutorials/maintenance-mode.md) dans le Guide d’installation de Commerce.
+1. Si la mise à niveau revient au fonctionnement normal du site, envisagez de demander une mise à niveau permanente (contactez l’équipe de votre compte Adobe) ou essayez de reproduire le problème dans votre évaluation dédiée en exécutant un test de charge et en optimisant les requêtes, ou un code qui réduit la pression sur les services. Reportez-vous à la section [Tests de charge et de contrainte](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/staging-and-production#load-and-stress-testing) du guide Commerce sur le cloud .

@@ -2,13 +2,22 @@
 title: Recommandations relatives à l’environnement de développement
 description: Découvrez les recommandations relatives à l’environnement de développement dans Adobe Commerce. Découvrez les conseils d’implémentation et les stratégies d’optimisation.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
-
 ---
-
 # Recommandations relatives à l’environnement de développement
 
 Cette page fournit des recommandations pour les environnements de développement Commerce.
@@ -39,8 +48,8 @@ En mode de développement, n’exécutez pas de commandes pour la compilation, l
   bin/magento setup:static-content:deploy
   ```
 
-  En mode de développement, Magento l’exécute à la demande ; vous n’avez pas besoin de l’exécuter.
+  En mode développement, Magento l’exécute à la demande ; vous n’avez pas besoin de l’exécuter.
 
 ## Temps normal de chargement des pages sur un ordinateur virtuel
 
-Si vous développez sur une machine virtuelle et que le chargement d’une page Magento prend plus de 2 secondes, vérifiez les paramètres de votre environnement.
+Si vous développez sur une machine virtuelle et que le chargement d’une page Magento prend plus de 2 secondes, passez en revue les paramètres de votre environnement.

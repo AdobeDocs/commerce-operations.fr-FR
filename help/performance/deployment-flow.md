@@ -3,13 +3,27 @@ title: Flux de déploiement
 description: Découvrez le processus de flux de déploiement pour les environnements de production Adobe Commerce. Découvrez les étapes permettant d’obtenir des performances et une fiabilité optimales.
 feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
-
 ---
-
 # Flux de déploiement
 
 Le flux de déploiement en production [!DNL Commerce] permet à un magasin d’atteindre des performances maximales.
@@ -26,7 +40,7 @@ composer install --no-dev
 
 ## Instructions d’injection de dépendance de prétraitement
 
-Lorsque vous prétraitez et compilez des instructions d’injection de dépendance (ID), Magento :
+Lorsque vous prétraitez et compilez des instructions d’injection dépendante (ID), Magento :
 
 * Lit et traite toutes les configurations présentes.
 * Analyse les dépendances entre les classes

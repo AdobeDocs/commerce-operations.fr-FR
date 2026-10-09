@@ -2,13 +2,22 @@
 title: Configuration d’une tâche cron personnalisée et d’un groupe cron (tutoriel)
 description: Découvrez comment créer des tâches cron personnalisées à l’aide de ce tutoriel détaillé pour Adobe Commerce. Découvrez la configuration du module et la configuration du groupe cron.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '850'
 ht-degree: 0%
-
 ---
-
 # Configuration d’une tâche cron personnalisée
 
 Ce tutoriel détaillé explique comment créer une tâche cron personnalisée et éventuellement un groupe cron dans un exemple de module. Vous pouvez utiliser un module que vous avez déjà ou vous pouvez utiliser un exemple de module de notre référentiel de [&#128279;](https://github.com/magento/magento2-samples).`magento2-samples`

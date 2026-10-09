@@ -1,15 +1,29 @@
 ---
 title: Onglet [!UICONTROL Summary]
-description: En savoir plus sur l’onglet [!UICONTROL Summary] de  [!DNL Observation for Adobe Commerce].
+description: En savoir plus sur l’onglet [!UICONTROL Summary] de [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '2640'
 ht-degree: 0%
-
 ---
-
 # Onglet [!UICONTROL Summary]
 
 L’onglet [!UICONTROL Summary] de [!DNL Observation for Adobe Commerce] est destiné à afficher rapidement certains des problèmes rencontrés par les sites afin de vous aider à résoudre automatiquement ou à identifier les causes profondes potentielles des problèmes de site. Les onglets supplémentaires fournissent des informations plus détaillées sur les services de composants, la base de données, l’infrastructure et les états de processus.
@@ -60,7 +74,7 @@ L’image **[!UICONTROL Swap memory free in bytes]** affiche, par nœud, la quan
 
 ![CPU % par hôte](../../assets/tools/cpu-percent-by-host.jpg)
 
-L’agrégat de tous les environnements et nœuds s’affiche dans le cadre **[!UICONTROL CPU % by host]**. Vous devez désélectionner les environnements hors production. Notez également les instances où tous les nœuds de l’environnement de production ne sont pas présents. Pour plus d’informations sur l’utilisation élevée de CPU, voir [Résolution des problèmes de performances à l’aide de New Relic sur Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=fr).
+L’agrégat de tous les environnements et nœuds s’affiche dans le cadre **[!UICONTROL CPU % by host]**. Vous devez désélectionner les environnements hors production. Notez également les instances où tous les nœuds de l’environnement de production ne sont pas présents. Pour plus d’informations sur l’utilisation élevée de CPU, voir [Résolution des problèmes de performances à l’aide de New Relic sur Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -72,7 +86,7 @@ Le **[!UICONTROL Alerts during timeframe]** affiche toutes les alertes, y compri
 
 ![Utilisation de &#x200B;](../../assets/tools/cpu-usage.jpg)
 
-Si la trame de **[!UICONTROL CPU Usage]** est vide, cela indique que l’application d’infrastructure de [!DNL New Relic] n’est pas activée. Si votre site est en version Starter, vous ne voyez pas ces informations. Si votre site est en version Pro, ouvrez un ticket d’assistance [support](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) pour que les [!DNL New Relic Infrastructure] soient activées pour votre site.
+Si la trame de **[!UICONTROL CPU Usage]** est vide, cela indique que l’application d’infrastructure de [!DNL New Relic] n’est pas activée. Si votre site est en version Starter, vous ne voyez pas ces informations. Si votre site est en version Pro, ouvrez un ticket d’assistance [support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) pour que les [!DNL New Relic Infrastructure] soient activées pour votre site.
 
 ## [!UICONTROL Average Response Time]
 

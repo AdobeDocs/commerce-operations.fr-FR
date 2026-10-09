@@ -2,13 +2,22 @@
 title: Compilateur de code
 description: Découvrez comment exécuter le compilateur de code Adobe Commerce à partir de la ligne de commande. Découvrez les processus de compilation et les techniques d’optimisation.
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
-
 ---
-
 # Compilateur de code
 
 {{file-system-owner}}
@@ -58,5 +67,5 @@ Dans certains cas, il se peut que vous souhaitiez compiler le code avant d’ins
    Generated code and dependency injection configuration successfully.
    ```
 
-Pour compiler le code sans base de données, voir [Déployer des fichiers d’affichage statiques sans installer Magento](../cli/static-view-file-deployment.md).
+Pour compiler le code sans base de données, voir [Déployer des fichiers de vue statiques sans installer Magento](../cli/static-view-file-deployment.md).
 

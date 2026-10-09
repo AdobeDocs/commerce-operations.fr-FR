@@ -3,13 +3,22 @@ title: Suivi de la migration des données
 description: Découvrez comment vérifier que la migration de vos données Magento 1 vers Magento 2 a réussi et que toutes les fonctionnalités fonctionnent comme prévu.
 exl-id: a55f357b-6c95-49d6-b2f1-c2e403a8c85f
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '315'
 ht-degree: 0%
-
 ---
-
 # Suivi de la migration des données
 
 Certains comportements et logiques de Magento 1 ont été implémentés différemment dans Magento 2. Le [!DNL Data Migration Tool] s&#39;en occupe. Vous devez connaître certains aspects de la migration et parfois, vous devez prendre des mesures mineures pour que certaines fonctionnalités fonctionnent correctement après la migration.
@@ -38,7 +47,7 @@ Après la migration, les segments de clients doivent être enregistrés à parti
 
 L’outil ne migre pas les paramètres de fuseau horaire. Vous devez donc configurer manuellement le fuseau horaire après la migration sur **Magasins** > **Configuration** > **Options de paramètres régionaux** > **Fuseau horaire**.
 
-Par défaut, Magento stocke les données horaires dans le fuseau UTC-0 dans la base de données et les affiche en fonction des paramètres de fuseau horaire actuels. Si les données de temps ont déjà été enregistrées dans la base de données dans une zone autre que UTC-0, vous devez convertir l’heure existante en UTC-0 à l’aide du gestionnaire de [!DNL Data Migration Tool] de l’`\Migration\Handler\Timezone`.
+Par défaut, Magento stocke les données horaires dans le fuseau UTC-0 dans la base de données et les affiche en fonction des paramètres de fuseau horaire actuels. Si les données de temps ont déjà été enregistrées dans la base de données dans une zone autre que UTC-0, vous devez convertir l’heure existante en UTC-0 à l’aide du gestionnaire de `\Migration\Handler\Timezone` de l’[!DNL Data Migration Tool].
 
 Dans l’exemple suivant, Magento 1 a enregistré un gain de temps incorrect dans la zone UTC-7 de la base de données (en raison, par exemple, d’une extension tierce défectueuse). Pour convertir correctement l’heure de création du compte client dans la zone UTC-0 lors de la migration, procédez comme suit :
 

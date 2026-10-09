@@ -2,13 +2,22 @@
 title: Types de configuration
 description: Découvrez comment créer et étendre des types de configuration dans Adobe Commerce. Découvrez les techniques de configuration et de personnalisation des modules.
 exl-id: 4390c310-b35a-431a-859f-3fd46d8ba6bf
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '603'
 ht-degree: 0%
-
 ---
-
 # Types de configuration
 
 ## Extension des types de configuration
@@ -48,7 +57,7 @@ Pour créer un type de configuration :
 1. Créez votre fichier XML.
 1. Définissez votre objet de configuration dans votre `di.xml`.
 
-   L’exemple suivant, extrait du fichier [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) du module Magento_Sales, illustre l’apparence d’un objet de configuration.
+   L’exemple suivant extrait du fichier [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) du module Magento_Sales illustre l’apparence d’un objet de configuration.
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
@@ -78,9 +87,9 @@ Pour créer un type de configuration :
 
    - Le premier nœud de type définit le nom du fichier Reader, les classes `Converter` et `SchemaLocator` associées.
    - Ensuite, le nœud de type virtuel `pdfConfigDataStorage` associe la classe reader à une instance de [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php).
-   - Enfin, le dernier nœud de type associe ce type virtuel de données de configuration à la classe [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php), qui est utilisée pour lire réellement les valeurs dans à partir de ces fichiers [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml).
+   - Enfin, le dernier nœud de type associe ce type virtuel de données de configuration à la classe [&#128279;](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php), qui est utilisée pour lire réellement les valeurs dans à partir de ces fichiers [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml).
 
-1. Définissez un lecteur en étendant la classe [Magento\Framework\Config\Reader\Filesystem](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) et réécrivez les paramètres suivants :
+1. Définissez un lecteur en étendant la classe [&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) et réécrivez les paramètres suivants :
 
    ```php
    $_idAttributes // Array of node attribute IDs.
@@ -115,7 +124,7 @@ class Reader extends Filesystem
 
 >[!INFO]
 >
->Si vous préférez créer votre propre version du lecteur, vous pouvez le faire en implémentant `\Magento\Framework\Config\ReaderInterface`. Voir le lecteur de configuration [Magento_Analytics](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
+>Si vous préférez créer votre propre version du lecteur, vous pouvez le faire en implémentant `\Magento\Framework\Config\ReaderInterface`. Voir [Lecteur de configuration Magento_Analytics](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
 
 Après avoir défini votre lecteur, utilisez-le pour collecter, fusionner, valider et convertir les fichiers de configuration en représentation de tableau interne.
 

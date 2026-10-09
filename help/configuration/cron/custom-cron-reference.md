@@ -2,13 +2,22 @@
 title: Tâche cron personnalisée et référence de groupe cron
 description: Découvrez comment personnaliser les crons à l’aide des groupes cron et des onglets cron dans Adobe Commerce. Découvrez la configuration des modules personnalisés et la configuration des tâches planifiées.
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '549'
 ht-degree: 0%
-
 ---
-
 # Personnalisation de la référence crons
 
 Cette rubrique vous aide à configurer des onglets cron et éventuellement des groupes cron pour les modules personnalisés. Si votre module personnalisé doit planifier des tâches de manière périodique, vous devez configurer un crontab pour ce module. Un _crontab_ est une configuration de tâche cron.
@@ -82,7 +91,7 @@ Le résultat `crontab.xml` deux groupes peuvent ressembler à ceci :
 </config>
 ```
 
-Par exemple, consultez [Magento_Customer crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml).
+Par exemple, consultez [Magento_Customer.crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml).
 
 ### Définition des options du groupe cron
 
@@ -149,4 +158,4 @@ Pour désactiver la tâche cron `visitor_clean`, créez un module personnalisé 
 ...
 ```
 
-Maintenant, la tâche cron `visitor_clean` a été définie pour s’exécuter à 00:00 le 30 février, à une date qui ne se produira jamais.
+Désormais, la tâche cron `visitor_clean` a été configurée pour s’exécuter à 00:00 le 30 février, à une date qui ne se produira jamais.

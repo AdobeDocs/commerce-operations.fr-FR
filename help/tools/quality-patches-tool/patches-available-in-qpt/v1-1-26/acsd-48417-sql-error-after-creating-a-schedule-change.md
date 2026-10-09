@@ -5,13 +5,23 @@ feature: Storage
 role: Admin
 exl-id: c8e7c7aa-ac53-4218-8c3c-ea2240af17c9
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
-
 ---
-
 # ACSD-48417 : erreur SQL après la création d’une modification de planning
 
 Le correctif ACSD-48417 corrige le problème d’apparition d’une erreur SQL après la création d’une modification de planification pour un produit et l’enregistrement d’un autre produit. Ce correctif est disponible lorsque la version 1.1.26 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-48417. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.
@@ -36,7 +46,7 @@ Une erreur SQL apparaît après la création d’une modification de planificati
 
 <u>Procédure à suivre </u> :
 
-1. Installer Magento 2.4-développer EE + Données d’exemple.
+1. Installez Magento 2.4-development EE + exemples de données.
 1. Accédez au panneau d’administration > **[!UICONTROL Catalog]** > **[!UICONTROL Products]**.
 1. Modifiez n&#39;importe quel produit (par exemple, Joust Duffle Bag [SKU : 24-MB01]).
 1. Planifier une nouvelle mise à jour :

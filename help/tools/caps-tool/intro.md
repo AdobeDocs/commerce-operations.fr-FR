@@ -1,13 +1,22 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation]'
-description: Découvrez  [!DNL Adobe Commerce Patching Automation], ses utilisations, comment y accéder et les bonnes pratiques pour appliquer des correctifs automatisés
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+description: Découvrez [!DNL Adobe Commerce Patching Automation], ses utilisations, comment y accéder et les bonnes pratiques d'application automatique de correctifs
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
-
 ---
-
 # [!DNL Adobe Commerce Patching Automation]
 
 [!DNL Adobe Commerce Patching Automation] est un outil qui automatise le processus d’application et de rétablissement des correctifs pour Adobe Commerce dans les environnements cloud. Il offre aux administrateurs de projet Commerce un workflow rationalisé pour appliquer et rétablir les correctifs. La validation et les contrôles d’intégrité intégrés permettent de garantir la stabilité et la sécurité des environnements cloud.

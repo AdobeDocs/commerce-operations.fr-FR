@@ -5,13 +5,25 @@ feature: Page Content
 role: Admin, Developer
 exl-id: f541d001-9680-431a-9a62-816c2d10b6d5
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 17d326fa-534a-55a5-b46f-8ae1de1e2f75
+    internal-label: Page Content
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
-
 ---
-
 # ACSD-61199 : l’onglet [!UICONTROL Hierarchy] de la page CMS n’affiche pas la structure d’arborescence appropriée
 
 Le correctif ACSD-61199 corrige le problème en raison duquel l’onglet *[!UICONTROL Hierarchy]* de la page CMS n’affiche pas une arborescence appropriée lors de la modification d’une page CMS avec un *[!UICONTROL Hierarchy]* existant. Ce correctif est disponible lorsque la version 1.1.54 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-61199. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.8.

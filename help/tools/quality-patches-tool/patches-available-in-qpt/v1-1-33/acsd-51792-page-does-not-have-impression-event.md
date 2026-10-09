@@ -3,13 +3,22 @@ title: 'ACSD-51792 : la page ne comporte pas d’événement d’impression'
 description: Appliquez le correctif ACSD-51792 pour résoudre le problème de performances d’Adobe Commerce en raison duquel une page ne comporte pas d’événement d’impression lorsque le gestionnaire de balises Google 4 est activé.
 exl-id: f9465a44-2c65-4af0-b949-1fe1f4a942ae
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
-
 ---
-
 # ACSD-51792 : la page ne comporte pas d’événement d’impression
 
 Le correctif ACSD-51792 corrige le problème de performances en raison duquel une page n’a pas l’événement d’impression lorsque la [!DNL Google Tag Manager] 4 est activée. Ce correctif est disponible lorsque la version 1.1.33 de [!DNL Quality Patches Tool (QPT)] est installée. L’ID du correctif est ACSD-51792. Notez que le problème a été résolu dans Adobe Commerce 2.4.6.

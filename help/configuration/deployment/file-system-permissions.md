@@ -3,13 +3,27 @@ title: Autorisations d’accès aux systèmes de fichiers
 description: Découvrez comment configurer le ou les propriétaires du système de fichiers d’application Commerce pour un système de développement et de production.
 feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 0%
-
 ---
-
 # Autorisations d’accès aux systèmes de fichiers
 
 Cette section explique comment configurer le ou les propriétaires du système de fichiers Commerce pour un système de développement et de production. Avant de poursuivre, passez en revue les concepts abordés dans [Présentation de la propriété et des autorisations du système de fichiers](../../installation/prerequisites/file-system/overview.md).
@@ -24,9 +38,9 @@ Les sections suivantes traitent des exigences applicables à un ou deux proprié
 
   Au lieu de cela, vous disposez d’utilisateurs distincts :
 
-   - L’utilisateur du serveur web qui exécute l’administrateur et le storefront.
+  - L’utilisateur du serveur web qui exécute l’administrateur et le storefront.
 
-   - Un _utilisateur de ligne de commande_, qui est un compte utilisateur local que vous pouvez utiliser pour vous connecter au serveur. Cet utilisateur exécute les tâches cron et les utilitaires de ligne de commande de Commerce.
+  - Un _utilisateur de ligne de commande_, qui est un compte utilisateur local que vous pouvez utiliser pour vous connecter au serveur. Cet utilisateur exécute les tâches cron et les utilitaires de ligne de commande de Commerce.
 
 ## Propriété du système de fichiers de production pour l’hébergement partagé (un utilisateur)
 

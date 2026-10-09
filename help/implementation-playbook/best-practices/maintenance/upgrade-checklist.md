@@ -4,13 +4,23 @@ description: Découvrez comment créer et utiliser une liste de contrôle de mis
 role: Leader
 feature: Best Practices
 exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
-
 ---
-
 # Bonnes pratiques relatives à la liste de contrôle de mise à niveau
 
 Utilisez cette liste de contrôle lors de vos conversations annuelles et trimestrielles avec votre équipe eCommerce. De nombreuses entreprises travaillent à partir de budgets annuels et de feuilles de route. Au cours de ces discussions annuelles, il est impératif de parler de la stratégie de santé, d’orientation et de mise à niveau de votre plateforme pour l’année, ainsi que de sa compatibilité avec les objectifs généraux et les indicateurs de performance clés de l’entreprise. Au cours des conversations trimestrielles, assurez-vous que le plan annuel que vous avez créé est toujours aligné avec votre situation actuelle ou, dans le cas contraire, modifiez-le. L’objectif de cette liste de contrôle du plan de mise à niveau est de vous aider à planifier et à planifier les mises à niveau d’Adobe Commerce afin de garantir la réussite du processus de mise à niveau au cours de l’année. Cette liste de contrôle est destinée aux publics suivants pour la planification annuelle et l’examen trimestriel :

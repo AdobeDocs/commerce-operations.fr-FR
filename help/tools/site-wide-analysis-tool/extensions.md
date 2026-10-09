@@ -1,17 +1,26 @@
 ---
 title: '[!DNL Extensions]'
-description: Découvrez l’onglet  [!DNL Extensions]  dans le  [!DNL Site-Wide Analysis Tool], quand l’utiliser, ses avantages et les bonnes pratiques.
+description: Découvrez l’onglet [!DNL Extensions] dans la [!DNL Site-Wide Analysis Tool], quand l’utiliser, ses avantages et les bonnes pratiques.
 exl-id: e0ddc158-b268-44cc-8998-6b853d92b835
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '206'
 ht-degree: 0%
-
 ---
-
 # [!DNL Extensions]
 
-Un [!DNL extension] est un module personnalisé, un module linguistique ou une combinaison de modules personnalisés et de modules linguistiques qui ajoutent de nouvelles fonctionnalités au produit Adobe Commerce de base. [Commerce Marketplace](https://commercemarketplace.adobe.com//extensions.html) propose une sélection de [!DNL extensions] disponibles gratuitement et celles qui sont à vendre. La liste des [!DNL extensions] installés sur votre instance Adobe Commerce figure dans le [!DNL Site-Wide Analysis Tool] .
+Un [!DNL extension] est un module personnalisé, un module linguistique ou une combinaison de modules personnalisés et de modules linguistiques qui ajoutent de nouvelles fonctionnalités au produit Adobe Commerce de base. [&#128279;](https://commercemarketplace.adobe.com//extensions.html) propose une sélection de [!DNL extensions] disponibles gratuitement et celles qui sont à vendre. La liste des [!DNL extensions] installés sur votre instance Adobe Commerce figure dans le [!DNL Site-Wide Analysis Tool] .
 
 ## Quand l’utiliser
 

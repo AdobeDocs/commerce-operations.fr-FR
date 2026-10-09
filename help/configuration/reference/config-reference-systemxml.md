@@ -4,13 +4,27 @@ description: Découvrez comment le fichier system.xml gère la configuration de 
 feature: Configuration, System
 badge: label="Contribution David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '2740'
+source-wordcount: '2751'
 ht-degree: 0%
-
 ---
-
 # référence system.xml
 
 Le fichier `system.xml` vous permet de gérer la configuration du système Commerce. Utilisez cette rubrique comme référence générale pour le fichier `system.xml`. Le fichier `system.xml` se trouve sous `etc/adminhtml/system.xml` dans une extension Commerce 2 donnée.
@@ -262,7 +276,7 @@ Il est également possible de créer un type de champ personnalisé. Cela est so
 - Création d&#39;un bloc dans la zone `adminhtml`
 - Définition du `type=""` sur le chemin d’accès à ce bloc
 
-Le bloc lui-même nécessite au minimum un procédé de `__construct` et un procédé de `getElementHtml()`. [Magento_OfflineShipping](https://github.com/magento/magento2/blob/2.4/app/code/Magento/OfflineShipping) est un exemple simple de type personnalisé.
+Le bloc lui-même nécessite au minimum un procédé de `__construct` et un procédé de `getElementHtml()`. Le [Magento_OfflineShipping](https://github.com/magento/magento2/blob/2.4/app/code/Magento/OfflineShipping) est un exemple simple de type personnalisé.
 
 Par exemple, dans le module OfflineShipping , le bouton Exporter est défini dans `Magento\OfflineShipping\Block\Adminhtml\Form\Field\Export` et la définition du champ se présente comme suit :
 
@@ -393,7 +407,7 @@ Les règles de validation disponibles sont les suivantes :
 | `phoneUS` | Autorise un numéro de téléphone (États-Unis). |
 | `required-entry` | Interdit une valeur vide (validation équivalente à `validate-no-empty`).<br>Message d’échec de validation : « Ce champ est obligatoire. » |
 | `time` | Autorise une heure valide au format 24 heures, entre 00:00 et 23:59. Par exemple, `15`, `15:05` ou `15:05:48`. |
-| `time12h` | Permet une heure valide au format 12 heures, entre 12:00h et 23:59:59. Par exemple, `3 am`, `11:30 pm`, `02:15:00 pm`. |
+| `time12h` | Permet une heure valide au format 12 heures, entre 12 h et 23 :59: 59. Par exemple, `3 am`, `11:30 pm`, `02:15:00 pm`. |
 | `validate-admin-password` | Permet 7 caractères ou plus, à la fois numériques et alphabétiques. |
 | `validate-alphanum-with-spaces` | Permet l’utilisation de lettres (a-z ou A-Z), de chiffres (0-9) ou d’espaces uniquement. |
 | `validate-clean-url` | Autorise une URL valide. Par exemple, `https://www.example.com` ou `www.example.com`. |

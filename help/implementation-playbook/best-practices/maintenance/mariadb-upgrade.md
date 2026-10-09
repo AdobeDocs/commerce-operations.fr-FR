@@ -4,13 +4,23 @@ description: Découvrez comment préparer votre base de données Adobe Commerce 
 role: Developer
 feature: Best Practices
 exl-id: b86e471f-e81f-416b-a321-7aa1ac73d27c
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '863'
 ht-degree: 0%
-
 ---
-
 
 # Conditions préalables à la mise à niveau pour MariaDB
 
@@ -51,7 +61,7 @@ SELECT CONCAT( 'ALTER TABLE `', COALESCE(TABLE_NAME), '`', ' MODIFY ', '`', COAL
 
 ## Adobe Commerce 2.3.5
 
-La mise à niveau du service MariaDB sur l’infrastructure cloud de la version 10.0 ou 10.2 vers la version 10.3, 10.4 ou 10.5. MariaDB version 10.3 et ultérieure nécessite que la base de données utilise le format de ligne de tableau dynamique et Adobe Commerce nécessite l’utilisation du moteur de stockage InnoDB pour les tableaux. Cet article explique comment mettre à jour votre base de données pour qu’elle soit conforme à ces exigences MariaDB.
+Mise à niveau du service MariaDB sur l’infrastructure cloud de la version 10.0 ou 10.2 vers la version 10.3, 10.4 ou 10.5. Les versions 10.3 et ultérieures de MariaDB requièrent que la base de données utilise le format de ligne de tableau dynamique et Adobe Commerce requiert l’utilisation du moteur de stockage InnoDB pour les tableaux. Cet article explique comment mettre à jour votre base de données pour qu’elle soit conforme à ces exigences MariaDB.
 
 Après avoir préparé la base de données, envoyez un ticket d’assistance Adobe Commerce pour mettre à jour la version du service MariaDB sur votre infrastructure cloud avant de poursuivre le processus de mise à niveau d’Adobe Commerce.
 

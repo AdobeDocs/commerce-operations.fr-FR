@@ -1,13 +1,22 @@
 ---
 title: Présentation du workflow [!DNL Adobe Commerce Patching Automation]
-description: Découvrez le processus  [!DNL Adobe Commerce Patching Automation]  workflow, notamment la terminologie, les phases de workflow et les opérations pour une gestion automatisée des correctifs.
-source-git-commit: a56211744d35006924bd4ffd35c76ddb77118ed4
+description: Découvrez le processus de workflow [!DNL Adobe Commerce Patching Automation], notamment la terminologie, les phases de workflow et les opérations pour la gestion automatisée des correctifs.
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1128'
 ht-degree: 0%
-
 ---
-
 # Présentation du workflow [!DNL Adobe Commerce Patching Automation]
 
 Cette rubrique présente de manière générale le fonctionnement des opérations de correctifs à l’aide de [!DNL Adobe Commerce Patching Automation].
@@ -81,7 +90,7 @@ Cette approche permet d’obtenir les éléments suivants :
 
 **Pas de clonage de données** — L&#39;environnement d&#39;intégration ne reçoit pas de copie des données de l&#39;environnement cible (base de données, média ou autre contenu stocké) — seule la base de code est utilisée pour appliquer et vérifier le correctif
 
-**Besoins en ressources** — La capacité de stockage totale de votre projet Cloud est définie dans votre contrat. (Vérifiez sur la page ou la `magento-cloud subscription:info` de votre compte). L’allocation de disque de chaque environnement est configurée séparément, via la propriété `disk` dans `.magento.app.yaml`/`.magento/services.yaml`. Voir [Gérer l’espace disque](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) pour plus d’informations. Si une opération de correctif échoue en raison de limitations de stockage, comparez l’utilisation du disque de votre environnement d’intégration (`magento-cloud db:size`/`magento-cloud mount:size`) à son allocation configurée.
+**Besoins en ressources** — La capacité de stockage totale de votre projet Cloud est définie dans votre contrat. (Vérifiez sur la page ou la `magento-cloud subscription:info` de votre compte). L’allocation de disque de chaque environnement est configurée séparément, via la propriété `disk` dans `.magento.app.yaml`/`.magento/services.yaml`. Voir [Gérer l’espace disque](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) pour plus d’informations. Si une opération de correctif échoue en raison de limitations de stockage, comparez l’utilisation du disque de votre environnement d’intégration (`magento-cloud db:size`/`magento-cloud mount:size`) à son allocation configurée.
 
 #### Étape 2b : application de correctifs dans l’environnement d’intégration
 

@@ -1,17 +1,36 @@
 ---
-title: 'ACSD-48634: [!DNL JS] errors when [!DNL Google Analytics Content Experiments] enabled'
-description: Appliquez le correctif ACSD-48634 pour corriger  [!DNL JS]  erreurs sur une page  [!DNL staging]  mise à jour lorsque  [!DNL Google Analytics Content Experiments]  est activé.
+title: 'ACSD-48634 : [!DNL JS] des erreurs lorsqu’[!DNL Google Analytics Content Experiments] est activé'
+description: Appliquez le correctif ACSD-48634 pour corriger [!DNL JS] erreurs sur une page de mise à jour [!DNL staging] lorsque [!DNL Google Analytics Content Experiments] est activé.
 feature: Catalog Management, Categories, Console, Page Content
 role: Admin
 exl-id: 99368346-157f-4283-bb8c-192a62501717
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: 17d326fa-534a-55a5-b46f-8ae1de1e2f75
+    internal-label: Page Content
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '452'
 ht-degree: 12%
-
 ---
-
 # ACSD-48634 : [!DNL JS] des erreurs lorsqu’[!DNL Google Analytics Content Experiments] est activé
 
 Le correctif ACSD-48634 corrige [!DNL JS] erreurs sur une page de mise à jour [!DNL staging] lorsque [!DNL Google Analytics Content Experiments] est activé. Ce correctif est disponible lorsque la version 1.1.27 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-48634. Notez que le problème a été résolu dans Adobe Commerce 2.4.7.

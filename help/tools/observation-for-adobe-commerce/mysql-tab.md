@@ -1,15 +1,29 @@
 ---
 title: Onglet [!UICONTROL MySQL]
-description: En savoir plus sur l’onglet [!UICONTROL MySQL] de  [!DNL Observation for Adobe Commerce].
+description: En savoir plus sur l’onglet [!UICONTROL MySQL] de [!DNL Observation for Adobe Commerce].
 exl-id: 1d8dd07c-15fd-4ffd-ad10-0d886bf1579e
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1640'
 ht-degree: 0%
-
 ---
-
 # Onglet [!UICONTROL MySQL]
 
 ## [!UICONTROL MySQL% free storage by node]
@@ -208,23 +222,23 @@ Le cadre de **[!UICONTROL Database Errors]** présente diverses [avertissements 
 * &#39;%Error number 28%&#39;) as &#39;err_28&#39;
 * &#39;%rollback%&#39;) comme &#39;rollback&#39;
 * &#39;%Foreign key_constraint échoue pour la table%&#39;) en tant que &#39;foreign_key_constraint&#39;
-* &#39;%Error_code: 1114%&#39;) as &#39;sql_1114_full&#39;&#39;%CRITICAL: SQLSTATE[HY000] [2006] MySQL server has gone%&#39;) as &#39;sql_gone&#39;
-* &#39;%SQLSTATE[HY000] [1040] Trop de connexions%&#39;) comme &#39;sql_1040&#39;
-* &#39;%CRITICAL : SQLSTATE[HY000] [2002]%&#39;) as &#39;sql_2002&#39;
-* &#39;%SQLSTATE[08S01]:%&#39;) as &#39;sql_1047&#39;
+* &#39;%Error_code: 1114%&#39;) as &#39;sql_1114_full&#39;&#39;%CRITICAL: SQLSTATE[] [2006] MySQL server has gone%&#39;) as &#39;sql_gone&#39;
+* &#39;%SQLSTATE[] [1040] Trop de connexions%&#39;) comme &#39;sql_1040&#39;
+* &#39;%CRITICAL : SQLSTATE[] [2002]%&#39;) as &#39;sql_2002&#39;
+* &#39;%SQLSTATE[]:%&#39;) as &#39;sql_1047&#39;
 * &#39;%[Warning] Abandon de la connexion%&#39;) comme &#39;aborted_conn&#39;
 * &#39;%SQLSTATE[23000] : violation de contrainte d&#39;intégrité :%&#39;) as &#39;sql_23000&#39;
 * &#39;%1205 Verrouiller le délai d&#39;attente%&#39;) comme &#39;sql_1205&#39;
-* &#39;%SQLSTATE[HY000] [1049] Base de données inconnue%&#39;) en tant que &#39;sql_1049&#39;
-* &#39;%SQLSTATE[42S02] : table ou vue de base introuvable :%&#39;) comme &#39;sql_42S02&#39;
+* &#39;%SQLSTATE[] [1049] Base de données inconnue%&#39;) en tant que &#39;sql_1049&#39;
+* &#39;%SQLSTATE[] : table ou vue de base introuvable :%&#39;) comme &#39;sql_42S02&#39;
 * « %Erreur générale : 1114 % ») comme « sql_1114 »
 * &#39;%SQLSTATE[40001]%&#39;) comme &#39;sql_1213&#39;
-* &#39;%SQLSTATE[42S22] : colonne introuvable : 1054 colonne inconnue (%) en tant que &#39;sq1_1054&#39;
+* &#39;%SQLSTATE[] : colonne introuvable : 1054 colonne inconnue (%) en tant que &#39;sq1_1054&#39;
 * &#39;%SQLSTATE[42000] : erreur de syntaxe ou violation d&#39;accès :%&#39;) as&#39;sql_42000&#39;
 * &#39;%SQLSTATE[21000] : violation de cardinalité :%&#39;) as &#39;sql_1241&#39;
 * &#39;%SQLSTATE[22003]:%&#39;) comme &#39;sql_22003&#39;
-* &#39;%SQLSTATE[HY000] [9000] Client avec adresse IP%&#39;) sous la forme &#39;sql_9000&#39;
-* &#39;%SQLSTATE[HY000] : erreur générale : 2014%&#39;) en tant que &#39;sql_2014&#39;
+* &#39;%SQLSTATE[] [9000] Client avec adresse IP%&#39;) sous la forme &#39;sql_9000&#39;
+* &#39;%SQLSTATE[] : erreur générale : 2014%&#39;) en tant que &#39;sql_2014&#39;
 * &#39;%1927 Connexion interrompue%&#39;) en tant que &#39;sql_1927&#39;
 * &#39;%1062 \[ERROR\] InnoDB:%&#39;) as &#39;sql_1062_e&#39;
 * &#39;&#39;%[Remarque ] WSREP : vidage du mappage de mémoire sur le disque...%&#39;) en tant que &#39;mem_map_flush&#39;
@@ -236,7 +250,7 @@ Le cadre de **[!UICONTROL Database Errors]** présente diverses [avertissements 
 * &#39;%\[ERROR\] mysqld a obtenu le signal%&#39;) en tant que &#39;mysql_sigterm&#39;
 * &#39;%1452 Impossible d&#39;ajouter%&#39;) en tant que &#39;sql_1452&#39;
 * &#39;%ERROR 1698%&#39;) as &#39;sql_1698&#39;
-* &#39;%SQLSTATE[HY000] : erreur générale : 3%&#39;) en tant que &#39;cnt_write_tmp&#39;
+* &#39;%SQLSTATE[] : erreur générale : 3%&#39;) en tant que &#39;cnt_write_tmp&#39;
 * &#39;%Erreur générale : 1 %&#39;) comme &#39;sql_syntax&#39;
 * &#39;%42S22%&#39;) comme &#39;sql_42S22&#39;
 * &#39;%InnoDB : erreur (clé en double)%&#39;) en tant que &#39;innodb_dup_key&#39; À PARTIR DES SÉRIES CHRONOLOGIQUES du journal
@@ -261,7 +275,7 @@ Le cadre **[!UICONTROL Database processes]** affiche les processus de base de do
 
 ## [!UICONTROL MySQL Non-Sleeping Threads by Node]
 
-![Threads MySQL non mise en veille par nœud](../../assets/tools/observation-for-adobe-commerce/mysql-tab-21.jpg)
+Threads MySQL non mise en veille par nœud![&#128279;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-21.jpg)
 
 Le cadre **[!UICONTROL MySQL Non-Sleeping Threads by Node]** affiche les threads de connexion à la base de données. Cette image présente les threads actifs.
 

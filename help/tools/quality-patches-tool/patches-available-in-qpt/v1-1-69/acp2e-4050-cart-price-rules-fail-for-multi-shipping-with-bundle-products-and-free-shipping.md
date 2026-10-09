@@ -5,13 +5,27 @@ feature: Shopping Cart, Shipping/Delivery
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 447d2460-5c29-4849-81d0-a9aaf0a758b4
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: df8eaa0e-dd74-553a-8ad5-28129f8e8d3d
+    internal-label: Shopping Cart
+  - id: 04d3134c-2afb-5bd7-ac14-e19fa935e848
+    internal-label: Shipping/Delivery
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%
-
 ---
-
 # ACP2E-4050 : **[!UICONTROL Free Shipping]** non appliqué avec la commande avec expédition multiple
 
 Le correctif ACP2E-4050 corrige le problème où **[!UICONTROL Free Shipping]** n’est pas appliqué lors d’une commande avec expédition multiple lorsque **[!UICONTROL Cart Price Rules]** incluez des conditions de sous-sélection et des produits à des prix spécifiques. Ce correctif est disponible lorsque la version 1.1.69 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACP2E-4050. Notez que ce problème doit être résolu dans Adobe Commerce 2.4.9.

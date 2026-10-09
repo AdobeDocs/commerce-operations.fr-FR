@@ -3,13 +3,22 @@ title: 'ACSD-52277 : redirection incorrecte de l’utilisateur administrateur lo
 description: Appliquez le correctif ACSD-52277 pour résoudre le problème d’Adobe Commerce en raison duquel un utilisateur administrateur n’est pas correctement redirigé après avoir sélectionné la vue du magasin lors de la création d’une nouvelle commande dans Admin.
 exl-id: 61ef59a9-7a31-441f-a763-2d8016498fa7
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%
-
 ---
-
 # ACSD-52277 : redirection incorrecte de l’utilisateur administrateur lors de la sélection de la vue de magasin lors de la création d’une commande
 
 Le correctif ACSD-52277 corrige le problème où un utilisateur administrateur n’est pas redirigé correctement après avoir sélectionné la vue de magasin lors de la création d’une nouvelle commande dans Admin. Ce correctif est disponible lorsque la version 1.1.34 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-52277. Notez que le problème a été résolu dans Adobe Commerce 2.4.7.

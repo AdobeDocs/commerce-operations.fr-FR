@@ -1,17 +1,32 @@
 ---
 title: Correctifs disponibles dans la présentation de l’outil QPT
-description: Cet article présente  [!DNL Quality Patches Tool] (QPT) et fournit des liens vers des ressources expliquant comment l’utiliser.
+description: Cet article présente un aperçu de [!DNL Quality Patches Tool] (QPT) et des liens vers des ressources expliquant comment l’utiliser.
 feature: Support, Tools and External Services
 role: Admin
 exl-id: e67e5823-d878-4efc-90af-c7bb8c59d654
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 0%
-
 ---
-
 # Correctifs disponibles dans la présentation de l’outil QPT
 
 Cet article présente un aperçu de [!DNL Quality Patches Tool] (QPT) et des liens vers des ressources expliquant comment l’utiliser.
@@ -39,12 +54,12 @@ L’outil a pour but de vous permettre d’utiliser des correctifs en libre-serv
 
 >[!NOTE]
 >
->QPT est réservé aux correctifs de qualité uniquement. Les correctifs de sécurité sont disponibles dans les [&#x200B; Notes de mise à jour d’Adobe Commerce et de Magento Open Source &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html?lang=fr).
+>QPT est réservé aux correctifs de qualité uniquement. Les correctifs de sécurité sont disponibles dans les [&#x200B; Notes de mise à jour d’Adobe Commerce et de Magento Open Source &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
 
 ## Correctifs disponibles dans le [!DNL Quality Patches Tool]
 
 Dans cette section de la base de connaissances de l’assistance Adobe Commerce, vous trouverez des descriptions détaillées des problèmes, résolus par des correctifs QPT, regroupés par version de QPT.
-Vous pouvez également afficher la liste des correctifs QPT disponibles et filtrer le composant par, à l’aide du tableau généré dynamiquement sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans notre base de connaissances d’assistance.
+Vous pouvez également afficher la liste des correctifs QPT disponibles et filtrer le composant par, à l’aide du tableau généré dynamiquement sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans notre base de connaissances d’assistance.
 
 ## Installation et utilisation du [!DNL Quality Patches Tool]
 
@@ -56,8 +71,8 @@ Consultez [Commerce > Outils > Utilisation](../usage.md) dans la documentation d
 
 ### Installation et utilisation de QPT pour Adobe Commerce sur une infrastructure cloud
 
-Consultez le [Guide de Commerce sur les infrastructures cloud > Application de correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans notre documentation destinée aux développeurs, pour plus d’informations sur l’installation et l’utilisation de QPT pour appliquer et rétablir des correctifs sur Adobe Commerce sur les infrastructures cloud.
+Consultez le [Guide de Commerce sur les infrastructures cloud > Application de correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) dans notre documentation destinée aux développeurs, pour plus d’informations sur l’installation et l’utilisation de QPT pour appliquer et rétablir des correctifs sur Adobe Commerce sur les infrastructures cloud.
 
 ## Lecture connexe
 
-* [[!DNL Quality Patches Tool] notes de mise à jour](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=fr) dans notre documentation destinée aux développeurs et développeuses.
+* [[!DNL Quality Patches Tool] notes de mise à jour](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) dans notre documentation destinée aux développeurs et développeuses.

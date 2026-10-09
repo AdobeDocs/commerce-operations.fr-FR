@@ -5,13 +5,25 @@ feature: Orders, Checkout
 role: Admin
 exl-id: c1905b60-4607-454c-975b-77b0056661ad
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%
-
 ---
-
 # ACSD-48448 : problème de condition de *[!UICONTROL Race]* lors des annulations de commande provoquant une entrée dupliquée dans `inventory_reservation` table
 
 Le correctif ACSD-48448 corrige le problème où le problème de condition de *[!UICONTROL Race]* se produit lors des annulations de commande, ce qui entraîne des entrées dupliquées dans la table `inventory_reservation`. Ce correctif est disponible lorsque la version 1.1.34 de [!DNL Quality Patches Tool (QPT)] est installée. L’ID du correctif est ACSD-48448. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.

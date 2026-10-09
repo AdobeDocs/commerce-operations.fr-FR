@@ -3,13 +3,27 @@ title: Hachage du mot de passe
 description: Découvrez le hachage de mot de passe dans Adobe Commerce, les algorithmes pris en charge tels qu’Argon2 et SHA256, et comment les hachages hérités sont mis à niveau sans modifier les mots de passe.
 feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%
-
 ---
-
 # Hachage du mot de passe
 
 Actuellement, Commerce utilise sa propre stratégie de hachage de mot de passe, basée sur différents algorithmes de hachage PHP natifs. Commerce prend en charge plusieurs algorithmes tels que `MD5`, `SHA256` ou `Argon 2ID13`. Si l&#39;extension Sodium est installée (installée par défaut en PHP 7.3), alors `Argon 2ID13` est choisi comme algorithme de hachage par défaut. Dans le cas contraire, `SHA256` est la valeur par défaut. Commerce peut utiliser la fonction native PHP `password_hash` avec la prise en charge de l&#39;algorithme Argon 2i.

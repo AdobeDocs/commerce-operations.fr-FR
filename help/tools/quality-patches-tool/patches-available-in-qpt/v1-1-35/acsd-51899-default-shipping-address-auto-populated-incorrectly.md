@@ -5,13 +5,23 @@ feature: Checkout
 role: Admin
 exl-id: 14e48613-6af8-476c-978d-87c27a0b0d15
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%
-
 ---
-
 # ACSD-51899 : l’adresse d’expédition par défaut n’est pas correctement renseignée
 
 Le correctif ACSD-51899 corrige le problème en raison duquel l’adresse d’expédition par défaut est automatiquement renseignée avec une adresse incorrecte. Ce correctif est disponible lorsque la version 1.1.35 de [!DNL Quality Patches Tool (QPT)] est installée. L’ID du correctif est ACSD-51899. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.

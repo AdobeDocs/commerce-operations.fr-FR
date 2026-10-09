@@ -5,13 +5,29 @@ feature: Configuration, Inventory, Orders, Products
 role: Admin
 exl-id: 785f012f-e064-4ac6-b559-9e9aa42c679c
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 8dc0e58b-adf0-51bb-8db5-bb36e3e656fb
+    internal-label: Inventory
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 0%
-
 ---
-
 # ACSD-51238 : la source de stock est supprimée lors de la mise à jour d&#39;un produit configurable et de la modification du prix
 
 Le correctif ACSD-51238 corrige le problème de suppression de la source d&#39;inventaire lors de la mise à jour d&#39;un produit configurable et de la modification du prix. Ce correctif est disponible lorsque la version 1.1.32 de [!DNL Quality Patches Tool (QPT)] est installée. L’ID du correctif est ACSD-51238. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.

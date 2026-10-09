@@ -5,13 +5,27 @@ badge: label="Contribué par objectsource" type="Informative" url="https://objec
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 0%
-
 ---
-
 # Bonnes pratiques d’optimisation des performances du serveur principal
 
 Cette rubrique présente les bonnes pratiques pour étudier et optimiser les performances du serveur principal des sites Adobe Commerce, en mettant l’accent sur l’optimisation et les tests des bases de données. L’équipe de développement peut utiliser ces informations pour étudier le contexte unique de chaque projet Commerce et identifier les opportunités d’optimisation de la configuration et des opérations du serveur principal afin d’améliorer les performances du site.

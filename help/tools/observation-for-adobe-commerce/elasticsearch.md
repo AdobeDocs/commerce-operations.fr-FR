@@ -1,18 +1,32 @@
 ---
 title: Onglet [!UICONTROL Elasticsearch]
-description: En savoir plus sur l’onglet [!UICONTROL Elasticsearch] de  [!DNL Observation for Adobe Commerce].
+description: En savoir plus sur l’onglet [!UICONTROL Elasticsearch] de [!DNL Observation for Adobe Commerce].
 exl-id: e98d351d-b3b1-47bc-bc0d-f96ba9ec2b80
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 0%
-
+source-wordcount: '548'
+ht-degree: 1%
 ---
-
 # Onglet [!UICONTROL Elasticsearch]
 
-## [!UICONTROL Cluster Status Summary] :
+## [!UICONTROL Cluster Status Summary]:
 
 ![Résumé du statut du cluster](../../assets/tools/cluster-status-summary.jpg)
 
@@ -44,13 +58,13 @@ Ce cadre affiche le nom de l’index et le nombre de statuts de couleur de l’i
 
 ## [!UICONTROL Elasticsearch Status by node information]
 
-![Statut Elasticsearch](../../assets/tools/elasticsearch-status-by-node.jpg)
+![Statut &#x200B;](../../assets/tools/elasticsearch-status-by-node.jpg)
 
 Le cadre **[!UICONTROL Elasticsearch Status by node information]** affiche l’état du cluster [!DNL Elasticsearch] par couleur et par nœud. Cela permet d’indiquer quel nœud du cluster [!DNL Elasticsearch] renvoie quel statut au cours de la période sélectionnée.
 
 ## [!UICONTROL Elasticsearch index information]
 
-![Informations sur l’index Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
+![Informations sur l’index &#x200B;](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
 Le tableau **[!UICONTROL Elasticsearch index information]** indique le nom de l’index, le nœud sur lequel il se trouve, le nombre de documents indexés, l’intégrité de l’index et la taille de l’index en Mo à un moment donné.
 
@@ -62,29 +76,29 @@ L’image **[!UICONTROL Elasticsearch process CPU %]** affiche le pourcentage de
 
 ## [!UICONTROL Elasticsearch Memory garbage collection]
 
-![Espace mémoire d’Elasticsearch](../../assets/tools/elasticsearch-memory-garbage.jpg)
+![Espace mémoire d’](../../assets/tools/elasticsearch-memory-garbage.jpg)
 
 [!DNL Elasticsearch] est un processus Java. S’il manque de mémoire allouée, il lance le nettoyage pour libérer de la mémoire. Si le nettoyage est fréquent, cela indique qu’il peut y avoir trop d’index ou de partitions pour la mémoire allouée. Il peut y avoir une opportunité de nettoyer les index et les partitions ou [!DNL Elasticsearch] peut avoir besoin de plus de mémoire.
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![Informations sur l’index Elasticsearch](../../assets/tools/elasticsearch-index-information-2.jpg)
+![Informations sur l’index &#x200B;](../../assets/tools/elasticsearch-index-information-2.jpg)
 
 L’intégrité de l’index peut changer à mesure que les index sont créés et mis à jour.
 
 ## [!UICONTROL Elasticsearch Index Size]
 
-![Taille de l’index Elasticsearch](../../assets/tools/elasticsearch-index-size.jpg)
+![Taille de l’index &#x200B;](../../assets/tools/elasticsearch-index-size.jpg)
 
 Le cadre **[!UICONTROL Elasticsearch Index Size]** indique le nom et la taille de l’index sur la période sélectionnée. Cela peut indiquer des problèmes liés à l’indexation d’un site.
 
 ## [!UICONTROL Elasticsearch Errors]
 
-![Erreurs Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
+![Erreurs &#x200B;](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
 
 L’image **[!UICONTROL Elasticsearch Errors]** affiche des erreurs avec des [!DNL Elasticsearch] telles que le manque d’espace, le passage du statut Jaune au statut Rouge, lorsque toutes les partitions échouent, lorsqu’il existe des problèmes de paramètres avec les recherches, des erreurs de version et lorsque tous les nœuds sont indisponibles.
 
-## [!UICONTROL Elasticsearch Unassigned Shards] :
+## [!UICONTROL Elasticsearch Unassigned Shards]:
 
 ![Partages Elasticsearch non affectés](../../assets/tools/elasticsearch-unassigned-shards.jpg)
 

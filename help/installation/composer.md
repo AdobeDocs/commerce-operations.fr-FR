@@ -2,13 +2,22 @@
 title: Démarrage rapide de l’installation locale
 description: Découvrez comment installer Adobe Commerce sur votre propre infrastructure à l’aide du compositeur. Découvrez les étapes de démarrage rapide et les exigences de configuration.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 0%
-
 ---
-
 # Démarrage rapide de l’installation locale
 
 Les instructions de cette page décrivent comment installer Adobe Commerce sur une infrastructure auto-hébergée. Pour obtenir des conseils sur la mise à niveau d’une installation existante, consultez le [_Guide de mise à niveau_](../upgrade/overview.md).

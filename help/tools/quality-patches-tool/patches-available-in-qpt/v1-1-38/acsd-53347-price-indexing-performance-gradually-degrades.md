@@ -5,13 +5,26 @@ feature: Price Indexer
 role: Admin
 exl-id: 8986b685-55e4-47c7-852c-aca18e3b02e9
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: b0d35b91-b9b0-5983-b37c-f35bd2650b53
+    internal-label: Price Indexer
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
-
 ---
-
 # ACSD-53347 : Les performances d&#39;indexation des prix se dégradent progressivement au fil du temps
 
 Le correctif ACSD-53347 corrige le problème en raison duquel les performances se dégradent progressivement lors de la réindexation des prix pour un catalogue de produits volumineux. Ce correctif est disponible lorsque la version 1.1.38 de [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) est installée. L’ID du correctif est ACSD-53347. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.7.

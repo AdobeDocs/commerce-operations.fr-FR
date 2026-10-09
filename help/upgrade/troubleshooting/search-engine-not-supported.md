@@ -3,13 +3,30 @@ title: Moteur de recherche actuel non pris en charge
 description: Résolvez les problèmes liés à la mise à niveau d’Adobe Commerce après avoir rencontré une erreur sur un moteur de recherche non pris en charge.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
-
 ---
-
 # Moteur de recherche actuel non pris en charge
 
 Le message d’erreur suivant indique que la version d’Adobe Commerce à partir de laquelle vous effectuez la mise à niveau est configurée pour utiliser un moteur de recherche catalogue qui n’est pas pris en charge dans la version vers laquelle vous effectuez la mise à niveau :

@@ -5,13 +5,30 @@ feature: Admin Workspace, Compliance, Security
 role: Admin
 exl-id: dce4914b-e32e-4af0-be24-e55680191fa3
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
-
 ---
-
 # MDVA-40311 : erreur « Clé de formulaire ou sécurité non valide » après la connexion à Admin si le chemin d’accès d’administration personnalisé est configuré
 
 Le correctif MDVA-40311 corrige le problème en raison duquel l’utilisateur administrateur reçoit un message d’erreur : *Sécurité non valide ou clé de formulaire. Actualisez la page* après vous être connecté à Admin si le chemin d’accès administrateur personnalisé est configuré et la clé secrète activée. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.7 est installé. L’ID du correctif est MDVA-40311. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.4.
