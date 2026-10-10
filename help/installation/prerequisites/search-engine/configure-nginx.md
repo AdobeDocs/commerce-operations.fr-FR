@@ -3,7 +3,7 @@ title: Configuration de Nginx pour votre moteur de recherche
 description: Pour configurer un moteur de recherche avec le serveur web Nginx pour les installations sur site d’Adobe Commerce, procédez comme suit.
 feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-last-update: 2026-04-28T00:00:00.000Z
+last-update: 2026-04-28
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -23,7 +23,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%

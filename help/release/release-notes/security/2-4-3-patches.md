@@ -2,7 +2,7 @@
 title: Notes de mise à jour des correctifs de sécurité d’Adobe Commerce 2.4.3
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-last-update: 2026-08-19T00:00:00.000Z
+last-update: 2026-08-19
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 0%
@@ -45,7 +45,7 @@ DHL a introduit la version 6.2 du schéma et abandonnera la version 6.0 dans un 
 
 La version de sécurité 2.4.3-p2 d’Adobe Commerce fournit des correctifs de sécurité pour les vulnérabilités qui ont été identifiées dans les versions précédentes. Cette version comprend également des améliorations de sécurité qui améliorent la conformité aux dernières bonnes pratiques de sécurité.
 
-Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB22-13](https://helpx.adobe.com/security/products/magento/apsb22-13.html).  La version de correctif résout également la vulnérabilité corrigée par `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` et `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`.
+Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB22-13](https://helpx.adobe.com/fr/security/products/magento/apsb22-13.html).  La version de correctif résout également la vulnérabilité corrigée par `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` et `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`.
 
 
 ### Appliquer AC-3022.patch pour continuer à offrir DHL comme transporteur
@@ -56,7 +56,7 @@ DHL a introduit la version 6.2 du schéma et abandonnera la version 6.0 dans un 
 
 * L’utilisation des variables d’e-mail a été abandonnée dans la version 2.3.4 dans le cadre d’une réduction des risques de sécurité au profit d’une syntaxe de variable plus stricte. Ce comportement hérité a été entièrement supprimé dans cette version dans le cadre de la réduction des risques de sécurité.
 
-  Par conséquent, les modèles d’e-mail ou de newsletter qui fonctionnaient dans les versions précédentes peuvent ne pas fonctionner correctement après la mise à niveau vers Adobe Commerce 2.4.3-p2. Les modèles concernés sont les remplacements administrateur, les thèmes, les thèmes enfants et les modèles provenant de modules personnalisés ou d’extensions tierces. Votre déploiement peut toujours être affecté, même après avoir utilisé l’outil de compatibilité de mise à niveau [Upgrade](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) pour corriger les utilisations obsolètes. Voir [Migration de modèles d’e-mail personnalisés](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration) pour plus d’informations sur les effets potentiels et des instructions pour migrer les modèles affectés.
+  Par conséquent, les modèles d’e-mail ou de newsletter qui fonctionnaient dans les versions précédentes peuvent ne pas fonctionner correctement après la mise à niveau vers Adobe Commerce 2.4.3-p2. Les modèles concernés sont les remplacements administrateur, les thèmes, les thèmes enfants et les modèles provenant de modules personnalisés ou d’extensions tierces. Votre déploiement peut toujours être affecté, même après avoir utilisé l’outil de compatibilité de mise à niveau [Upgrade](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=fr) pour corriger les utilisations obsolètes. Voir [Migration de modèles d’e-mail personnalisés](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration) pour plus d’informations sur les effets potentiels et des instructions pour migrer les modèles affectés.
 
 * Les jetons d’accès OAuth et les jetons de réinitialisation de mot de passe sont désormais chiffrés lorsqu’ils sont stockés dans la base de données. <!-- AC-520 1323-->
 
