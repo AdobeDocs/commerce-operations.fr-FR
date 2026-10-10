@@ -28,7 +28,7 @@ ht-degree: 0%
 ---
 # ACSD-47559 : aperçu du modèle d’e-mail pas entièrement visible
 
-Le correctif ACSD-47559 corrige le problème en raison duquel l’aperçu du modèle d’e-mail n’est pas entièrement visible. Ce correctif est disponible lorsque la version 1.1.24 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html) est installée. L’ID du correctif est ACSD-47559. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-47559 corrige le problème en raison duquel l’aperçu du modèle d’e-mail n’est pas entièrement visible. Ce correctif est disponible lorsque la version 1.1.24 de [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html?lang=fr) est installée. L’ID du correctif est ACSD-47559. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 

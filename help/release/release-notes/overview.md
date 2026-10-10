@@ -34,7 +34,7 @@ Le tableau ci-dessous contient des notes de mise à jour et des informations imp
 
 >[!TIP]
 >
->- Si vous découvrez Adobe Commerce, consultez les rubriques [&#x200B; Architecture d’entreprise &#x200B;](../../implementation-playbook/architecture/enterprise-blueprint.md) et [&#x200B; À propos d’Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) pour obtenir des informations détaillées.
+>- Si vous découvrez Adobe Commerce, consultez les rubriques [&#x200B; Architecture d’entreprise &#x200B;](../../implementation-playbook/architecture/enterprise-blueprint.md) et [&#x200B; À propos d’Adobe Commerce &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/about) pour obtenir des informations détaillées.
 >- Pour plus d’informations sur les mises à niveau, voir [lecture recommandée](../../upgrade/resources/recommended-reading.md).
 
 <table>
@@ -49,7 +49,7 @@ Le tableau ci-dessous contient des notes de mise à jour et des informations imp
             <li><a href="../lifecycle-policy.md">Politique relative au cycle de vie des logiciels</a></li>
             <li><a href="../security-enforcement-policy.md">Avis de sécurité et de conformité</a></li>
             <li><a href="https://helpx.adobe.com/fr/security/products/magento.html">Bulletin de sécurité d’Adobe</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B pour Adobe Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=fr">B2B pour Adobe Commerce</a></li>
           </ul>
         </td>
       <td><strong>Adobe Commerce sur les infrastructures cloud</strong>
