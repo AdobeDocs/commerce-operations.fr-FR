@@ -19,7 +19,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 06034766e0c2e09e414e1ebc7a5b388a07593406
 workflow-type: tm+mt
 source-wordcount: '4570'
 ht-degree: 0%
@@ -28,15 +28,15 @@ ht-degree: 0%
 
 Cette rubrique répertorie les chemins de configuration pour les paramètres spécifiques au système et sensibles :
 
-- La commande [`magento app:config:dump` écrit &#x200B;](../cli/export-configuration.md) paramètres spécifiques au système dans le fichier de configuration spécifique au système, `app/etc/env.php`, qui ne doit _pas_ se trouver dans le contrôle de code source. Il écrit également la configuration partagée pour toutes les instances Commerce à `app/etc/config.php`. Ce fichier _doit_ se trouve dans le contrôle de code source.
-- La commande [`magento config:sensitive:set` écrit &#x200B;](../cli/set-configuration-values.md) paramètres sensibles à `app/etc/env.php`.
+- La commande [`magento app:config:dump` écrit ](../cli/export-configuration.md) paramètres spécifiques au système dans le fichier de configuration spécifique au système, `app/etc/env.php`, qui ne doit _pas_ se trouver dans le contrôle de code source. Il écrit également la configuration partagée pour toutes les instances Commerce à `app/etc/config.php`. Ce fichier _doit_ se trouve dans le contrôle de code source.
+- La commande [`magento config:sensitive:set` écrit ](../cli/set-configuration-values.md) paramètres sensibles à `app/etc/env.php`.
 
   Vous pouvez également définir des valeurs sensibles à l’aide de variables de configuration, comme indiqué dans la section [Utiliser des variables d’environnement pour remplacer les paramètres de configuration](../reference/override-config-settings.md#environment-variables).
 
 Pour obtenir la liste des autres chemins de configuration, voir :
 
 - [Tous les chemins de configuration, sauf les paiements](../reference/config-reference-general.md)
-- [&#x200B; Chemins de configuration des paiements &#x200B;](../reference/config-reference-payment.md).
+- [ Chemins de configuration des paiements ](../reference/config-reference-payment.md).
 
 >[!INFO]
 >
@@ -185,9 +185,9 @@ Ces valeurs de configuration sont disponibles dans Admin dans **Magasins** > Par
 
 Ces valeurs de configuration sont disponibles dans Admin dans **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Inventaire**.
 
-| Nom | Chemin de configuration | Prise en charge des versions de Commerce| Chiffré ? | Spécifique au système ? | Sensible ? | |
-|--------------|--------------|--------------|--------------|--------------|--------------| |
-| Clé API Google | `cataloginventory/source_selection_distance_based_google/api_key` | Chiffrée | Sensible |
+| Nom | Chemin de configuration | Prise en charge des versions de Commerce | Chiffré ? | Spécifique au système ? | Sensible ? |
+|--------------|--------------|--------------|--------------|--------------|--------------|
+| Clé API Google | `cataloginventory/source_selection_distance_based_google/api_key` |  | Chiffré | | Sensible |
 
 ### Chemins d’accès sensibles au plan de site XML et spécifiques au système
 
