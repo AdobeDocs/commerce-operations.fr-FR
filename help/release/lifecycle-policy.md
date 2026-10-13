@@ -15,7 +15,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
@@ -216,4 +216,4 @@ Si vous ne pouvez pas migrer vers [!DNL Adobe Commerce as a Cloud Service] immé
 
 Notez que ce chemin d’accès n’élimine pas les futures obligations de mise à niveau. Les clients disposant d’Adobe Commerce sur des déploiements cloud doivent continuer la mise à niveau lorsque les lignes de version atteignent leurs dates d’application de mise à niveau.
 
-<!-- Last updated from includes: 2026-09-17 13:05:40 -->
+<!-- Last updated from includes: 2026-09-17 14:58:18 -->

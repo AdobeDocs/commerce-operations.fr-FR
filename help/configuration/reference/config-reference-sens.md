@@ -19,7 +19,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 06034766e0c2e09e414e1ebc7a5b388a07593406
 workflow-type: tm+mt
 source-wordcount: '4570'
 ht-degree: 0%
@@ -185,9 +185,9 @@ Ces valeurs de configuration sont disponibles dans Admin dans **Magasins** > Par
 
 Ces valeurs de configuration sont disponibles dans Admin dans **Magasins** > Paramètres > **Configuration** > **Catalogue** > **Inventaire**.
 
-| Nom | Chemin de configuration | Prise en charge des versions de Commerce| Chiffré ? | Spécifique au système ? | Sensible ? | |
-|--------------|--------------|--------------|--------------|--------------|--------------| |
-| Clé API Google | `cataloginventory/source_selection_distance_based_google/api_key` | Chiffrée | Sensible |
+| Nom | Chemin de configuration | Prise en charge des versions de Commerce | Chiffré ? | Spécifique au système ? | Sensible ? |
+|--------------|--------------|--------------|--------------|--------------|--------------|
+| Clé API Google | `cataloginventory/source_selection_distance_based_google/api_key` |  | Chiffré | | Sensible |
 
 ### Chemins d’accès sensibles au plan de site XML et spécifiques au système
 

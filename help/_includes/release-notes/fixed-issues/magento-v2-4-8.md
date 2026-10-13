@@ -1,9 +1,8 @@
 ---
-source-git-commit: 1dcfbd53f79c83dbf6c44ffce952de101f7e01f1
+source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
 workflow-type: tm+mt
-source-wordcount: '29235'
+source-wordcount: '29236'
 ht-degree: 0%
-
 ---
 # Notes de mise à jour de Magento Open Source (v2.4.8)
 
@@ -150,11 +149,11 @@ _ACP2E-2709 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 #### Les indexeurs définis apparaissent par défaut avec le statut Prêt lorsqu’une nouvelle version d’Adobe Commerce est installée
 
-Après l&#39;installation de Magento, le statut de l&#39;indexeur doit être défini par défaut sur *Prêt*.
+Après l’installation de Magento, l’état de l’indexeur doit être défini par défaut sur *Prêt*.
 
 _AC-11420 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/71432aeb)_
 
-#### Dans l’installation Magento existante, lors de l’installation du module d’indexeur tiers, définissez les indexeurs dans mise à jour par planning par défaut.
+#### Dans l’installation de Magento existante, lors de l’installation du module d’indexeur tiers, définissez les indexeurs dans la mise à jour par planning par défaut.
 
 Tous les nouveaux indexeurs sont activés par défaut en mode [Mise à jour par planification]. Auparavant, le mode par défaut était [ Mise à jour lors de l’enregistrement ]. Il en va de même pour les indexeurs personnalisés.
 
@@ -428,7 +427,7 @@ Le système valide désormais correctement les données et masque le bouton « I
 
 _AC-11588 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/0574ac23)_
 
-#### [Bug] Magento 2.4.7 n’autorise pas les photos de produit avec extension de fichier majuscule.
+#### [Bug] Magento 2.4.7 n’autorise pas les photos de produit avec extension de fichier en majuscule.
 
 Le système accepte désormais les chargements d’images de produit avec des extensions de fichier de lettre majuscule, ce qui garantit un processus de création de produit fluide. Auparavant, les chargements d’images avec des extensions de fichier en majuscules étaient refusés, ce qui forçait les utilisateurs à modifier l’extension de fichier en minuscules.
 
@@ -560,7 +559,7 @@ Auparavant, le bouton Réinitialiser ne fonctionnait pas sur la page Ajouter/mod
 
 _ACP2E-3364 - [contribution du code GitHub](https://github.com/magento/magento2/commit/5184c067)_
 
-#### Détection des erreurs de routage des URL d’administration Magento et erreurs CORS
+#### Détection incorrecte du routage des URL d’administration Magento et erreurs CORS
 
 Après le correctif, si le domaine d’administration personnalisé est un sous-domaine du domaine principal, l’administrateur n’est accessible qu’à partir du sous-domaine configuré.
 
@@ -622,9 +621,9 @@ _ACP2E-3559 - [Contribution du code GitHub](https://github.com/magento/magento2/
 
 ### Interface utilisateur d’administration, B2B
 
-#### La connexion B2B en tant qu’en-tête client comporte toujours l’identité de marque Magento
+#### La connexion B2B en tant qu’en-tête client possède toujours la marque Magento
 
-Auparavant, l’en-tête du storefront affichait « Vous êtes désormais connecté en tant que &lt;nom du client> sur &lt;nom du magasin> » avec l’identité graphique de Magento. Ce problème est maintenant résolu et l’en-tête s’affiche avec le branding ADOBE.
+Auparavant, l’en-tête du storefront affichait « Vous êtes désormais connecté en tant que &lt;nom du client> sur &lt;nom du magasin> » avec la marque Magento. Ce problème est maintenant résolu et l’en-tête s’affiche avec le branding ADOBE.
 
 _AC-13628 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/96dec499)_
 
@@ -794,7 +793,7 @@ Le système omet désormais correctement l’adresse et le mode d’expédition 
 
 _AC-11641 - [Problème GitHub](https://github.com/magento/magento2/issues/32781) - [Contribution du code GitHub](https://github.com/magento/magento2/pull/32511)_
 
-#### La connexion à Magento 2 lors du passage en caisse avec l’erreur de console de dons client existant dans le navigateur Firefox
+#### Magento 2 se connecte à l’étape de passage en caisse avec l’erreur de console de dons client existante dans le navigateur Firefox
 
 Le système permet désormais aux utilisateurs de se connecter pendant le processus de passage en caisse sans rencontrer d&#39;erreur de console dans le navigateur Firefox. Auparavant, toute tentative de connexion en tant que client existant lors du passage en caisse entraînait une erreur de console dans Firefox.
 
@@ -1192,7 +1191,7 @@ Auparavant, une architecture multi-sites web avec différentes devises et groupe
 
 _ACP2E-2905 - [Problème GitHub](https://github.com/magento/magento2/issues/38506) - [Contribution du code GitHub](https://github.com/magento/magento2/commit/a4fbf702)_
 
-#### dynamic-rows.js :658 erreur de type non interceptée : dataRecord.slice lors de la modification des produits groupés
+#### dynamic-rows.js:658 TypeError non intercepté : dataRecord.slice lors de la modification des produits groupés
 
 Il n’y a aucune erreur JavaScript dans la console du navigateur lors de la suppression de l’option du produit groupé.
 
@@ -1988,7 +1987,7 @@ Le mode LUA est désormais activé par défaut pour le nettoyeur de la mémoire 
 
 _ACP2E-3537 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/a52ff98f)_
 
-#### La valeur Magento_DC_INDEXER__USE_APPLICATION_LOCK est ignorée
+#### La valeur MAGENTO_DC_INDEXER__USE_APPLICATION_LOCK est ignorée
 
 Après le correctif, une variable ENV définie sur « false » sera traitée comme bool false, et non comme chaîne « false ».
 
@@ -2012,7 +2011,7 @@ _ACP2E-3324 - [contribution du code GitHub](https://github.com/magento/magento2/
 
 ### GraphQL
 
-#### Magento_GraphQl exécute le traitement des en-têtes même si la valeur de l’en-tête n’est pas validée
+#### Magento_GraphQl exécute le traitement des en-têtes même si la valeur de l’en-tête ne transmet pas la validation
 
 Le système garantit désormais que le traitement de l’en-tête n’est exécuté qu’une seule fois et uniquement si la valeur de l’en-tête réussit la validation, ce qui renforce la sécurité et empêche les vulnérabilités potentielles. Auparavant, le traitement de l’en-tête était exécuté même si la valeur de l’en-tête n’était pas validée, ce qui entraînait des vulnérabilités potentielles et un comportement inattendu en raison du double traitement des valeurs d’en-tête.
 
@@ -2763,7 +2762,7 @@ Correction de la requête cart.rules pour renvoyer un tableau vide au lieu d’u
 
 _LYNX-757_
 
-#### les appels GraphQL avec la méthode OPTIONS renvoient un code de réponse 500 lors de l’installation du package de compatibilité adobe-commerce/storefront
+#### Les appels GraphQL avec la méthode OPTIONS renvoient un code de réponse 500 lorsque le package de compatibilité adobe-commerce/storefront est installé
 
 Correction d’un problème en raison duquel les appels GraphQL à l’aide de la méthode OPTIONS renvoyaient une erreur de serveur interne 500 lors de l’installation du package de compatibilité adobe-commerce/storefront. Le point d’entrée renvoie désormais correctement une réponse 200/204 comme prévu.
 
@@ -2873,7 +2872,7 @@ Le système gère désormais correctement la configuration de l’hôte MySQL qu
 
 _AC-12176 - [Problème GitHub](https://github.com/magento/magento2/issues/38799) - [Contribution du code GitHub](https://github.com/magento/magento2/pull/38842)_
 
-#### Prise en charge de l’interface CommandLoaderInterface de Symfony dans l’interface de ligne de commande Magento
+#### Prise en charge de l’interface CommandLoader de Symfony dans l’interface de ligne de commande Magento
 
 Cette modification réduit le temps d’initialisation de l’application de ligne de commande Magento en permettant l’initialisation différée des commandes jusqu’à ce qu’elles soient nécessaires.
 
@@ -2906,7 +2905,7 @@ _ACP2E-2910 - [Contribution du code GitHub](https://github.com/magento/magento2/
 
 ### Tarification
 
-#### Magento2.4.6-p4 Order API Simple Item Prix manquant
+#### Magento2.4.6-p4 Order API Simple Article manquant Prix
 
 Le système affiche désormais correctement le prix des produits simples lorsqu’ils sont interrogés via l’API de commande, garantissant ainsi une représentation précise des données. Auparavant, le prix de produits simples s’affichait incorrectement comme zéro dans la réponse de l’API.
 
