@@ -48,7 +48,7 @@ Le modèle [Commerce on Cloud](https://github.com/magento/magento-cloud) fournit
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
-Le fichier [`services.yaml` définit ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) services et versions par défaut.
+Le fichier [`services.yaml` définit &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) services et versions par défaut.
 Voir [Configuration des services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) dans le guide *Commerce sur les infrastructures cloud*.
 
 >[!TAB Commerce local]
@@ -91,7 +91,7 @@ Les tableaux suivants répertorient la configuration requise pour les versions d
 >
 >Adobe Commerce 2.4.6 bénéficie d’une [prise en charge étendue](../release/lifecycle-policy.md#extended-support) jusqu’au **30 août 2027**, suivie d’une [période de transition axée uniquement sur la sécurité](../release/lifecycle-policy.md#security-only-transitional-period) jusqu’au **31 mai 2028**. Ces fonctions ne sont disponibles que pour les clients Adobe Commerce. Ils n’étendent pas la prise en charge des dépendances tierces telles que MySQL.
 >
->Si vous exécutez Adobe Commerce sur le cloud, vous devez effectuer une mise à niveau vers une version prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant les **exigences et échéances de sécurité du 1er juin 2028** [](../release/security-enforcement-policy.md). Consultez le tableau [dates de fin de prise en charge](../release/lifecycle-policy.md#end-of-support-dates) pour connaître les dates de cycle de vie complet.
+>Si vous exécutez Adobe Commerce sur le cloud, vous devez effectuer une mise à niveau vers une version prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant les **exigences et échéances de sécurité du 1er juin 2028** [&#128279;](../release/security-enforcement-policy.md). Consultez le tableau [dates de fin de prise en charge](../release/lifecycle-policy.md#end-of-support-dates) pour connaître les dates de cycle de vie complet.
 >
 >Le tableau est réduit afin de réduire la longueur de cet article. Sélectionnez l’en-tête pour le développer.
 
@@ -105,7 +105,7 @@ Le modèle [Commerce sur le cloud](https://github.com/magento/magento-cloud) fou
 
 {{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
 
-Le fichier [`services.yaml` définit ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) services et versions par défaut.
+Le fichier [`services.yaml` définit &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) services et versions par défaut.
 Voir [Configuration des services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) dans le guide *Commerce sur les infrastructures cloud*.
 
 >[!TAB Commerce local]
