@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a6c0c808ce57bf00b1ee0cfac6a17008df4d4e22
+source-git-commit: 2456f0e28fa24e23eb7692a905c708007a00bd96
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Le tableau ci-dessous indique la prise en charge des versions pour chaque extens
 
 ## Services Commerce
 
-Les [services &#x200B;](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=fr) sont une suite de fonctionnalités hébergées dans Adobe qui offrent des fonctionnalités robustes et des temps de réponse rapides, conjointement avec votre instance Commerce.
+Les [services ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html) sont une suite de fonctionnalités hébergées dans Adobe qui offrent des fonctionnalités robustes et des temps de réponse rapides, conjointement avec votre instance Commerce.
 
 Il est recommandé aux commerçants d’utiliser la version la plus récente d’un service afin d’assurer une stabilité et une fonctionnalité optimales. La documentation décrit la version actuellement publiée.
 
@@ -54,4 +54,4 @@ Le tableau ci-dessous présente la prise en charge des versions pour chaque serv
 
 {{$include /help/_includes/templated/product-availability-services.md}}
 
-<!-- Last updated from includes: 2026-10-07 07:57:15 -->
+<!-- Last updated from includes: 2026-10-12 21:19:44 -->

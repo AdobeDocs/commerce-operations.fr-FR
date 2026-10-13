@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
+source-git-commit: 2456f0e28fa24e23eb7692a905c708007a00bd96
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 0%
@@ -48,8 +48,8 @@ Le modèle [Commerce on Cloud](https://github.com/magento/magento-cloud) fournit
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
-Le fichier [`services.yaml` définit &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) services et versions par défaut.
-Voir [Configuration des services](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) dans le guide *Commerce sur les infrastructures cloud*.
+Le fichier [`services.yaml` définit ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) services et versions par défaut.
+Voir [Configuration des services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) dans le guide *Commerce sur les infrastructures cloud*.
 
 >[!TAB Commerce local]
 
@@ -91,7 +91,7 @@ Les tableaux suivants répertorient la configuration requise pour les versions d
 >
 >Adobe Commerce 2.4.6 bénéficie d’une [prise en charge étendue](../release/lifecycle-policy.md#extended-support) jusqu’au **30 août 2027**, suivie d’une [période de transition axée uniquement sur la sécurité](../release/lifecycle-policy.md#security-only-transitional-period) jusqu’au **31 mai 2028**. Ces fonctions ne sont disponibles que pour les clients Adobe Commerce. Ils n’étendent pas la prise en charge des dépendances tierces telles que MySQL.
 >
->Si vous exécutez Adobe Commerce sur le cloud, vous devez effectuer une mise à niveau vers une version prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant les **exigences et échéances de sécurité du 1er juin 2028** [&#128279;](../release/security-enforcement-policy.md). Consultez le tableau [dates de fin de prise en charge](../release/lifecycle-policy.md#end-of-support-dates) pour connaître les dates de cycle de vie complet.
+>Si vous exécutez Adobe Commerce sur le cloud, vous devez effectuer une mise à niveau vers une version prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant les **exigences et échéances de sécurité du 1er juin 2028** [](../release/security-enforcement-policy.md). Consultez le tableau [dates de fin de prise en charge](../release/lifecycle-policy.md#end-of-support-dates) pour connaître les dates de cycle de vie complet.
 >
 >Le tableau est réduit afin de réduire la longueur de cet article. Sélectionnez l’en-tête pour le développer.
 
@@ -105,8 +105,8 @@ Le modèle [Commerce sur le cloud](https://github.com/magento/magento-cloud) fou
 
 {{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
 
-Le fichier [`services.yaml` définit &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) services et versions par défaut.
-Voir [Configuration des services](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) dans le guide *Commerce sur les infrastructures cloud*.
+Le fichier [`services.yaml` définit ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) services et versions par défaut.
+Voir [Configuration des services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) dans le guide *Commerce sur les infrastructures cloud*.
 
 >[!TAB Commerce local]
 
@@ -132,7 +132,7 @@ Si vous exécutez les versions 2.4.6, 2.4.5 ou 2.4.4 d’Adobe Commerce On-Premi
 
 Configurez les paramètres PHP, tels que `memory_limit`, pour éviter les problèmes courants lors de l&#39;utilisation d&#39;Adobe Commerce. Voir [Paramètres PHP requis](prerequisites/php-settings.md).
 
-Pour obtenir des conseils sur la configuration du cloud, consultez [Paramètres PHP](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/php-settings) dans le guide *Commerce sur les infrastructures cloud*.
+Pour obtenir des conseils sur la configuration du cloud, consultez [Paramètres PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) dans le guide *Commerce sur les infrastructures cloud*.
 
 ### PHP OPcache
 
@@ -160,7 +160,7 @@ Les [instructions d’installation de PHP](prerequisites/php-settings.md) inclue
 
 >[!TIP]
 >
->Pour les extensions PHP dans l’infrastructure cloud, voir [Activer les extensions PHP](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) dans le guide _Commerce sur l’infrastructure cloud_.
+>Pour les extensions PHP dans l’infrastructure cloud, voir [Activer les extensions PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) dans le guide _Commerce sur l’infrastructure cloud_.
 
 >[!BEGINTABS]
 
@@ -199,11 +199,11 @@ Adobe Commerce prend en charge les versions majeures les plus récentes et préc
 
 ### Serveur de messagerie
 
-Mail Transfer Agent (MTA) ou un serveur SMTP. L’infrastructure de Commerce sur le cloud utilise le service de messagerie [SendGrid](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/sendgrid).
+Mail Transfer Agent (MTA) ou un serveur SMTP. L’infrastructure de Commerce sur le cloud utilise le service de messagerie [SendGrid](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/sendgrid).
 
 ### Mémoire
 
-La mise à niveau des applications et des extensions à partir de Commerce Marketplace et d’autres sources peut nécessiter jusqu’à 2 Go de RAM. Si votre système dispose de moins de 2 Go de RAM, créez un fichier [swap](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade). Sans fichier d’échange, la mise à niveau peut échouer.
+La mise à niveau des applications et des extensions à partir de Commerce Marketplace et d’autres sources peut nécessiter jusqu’à 2 Go de RAM. Si votre système dispose de moins de 2 Go de RAM, créez un fichier [swap](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade). Sans fichier d’échange, la mise à niveau peut échouer.
 
 ### Systèmes d&#39;exploitation (Linux x86-64)
 
@@ -229,16 +229,16 @@ Adobe Commerce requiert les outils système suivants pour certaines opérations 
 - Les certificats SSL auto-signés ne sont pas pris en charge.
 - Exigence de TLS (Transport Layer Security) - PayPal et `repo.magento.com` nécessitent tous deux TLS 1.2 ou une version ultérieure.
 
-Pour Commerce sur les infrastructures cloud, consultez la section [Configuration Fastly](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration) dans le guide *Commerce sur les infrastructures cloud*.
+Pour Commerce sur les infrastructures cloud, consultez la section [Configuration Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration) dans le guide *Commerce sur les infrastructures cloud*.
 
 ### Xdebug
 
 Pour les environnements de développement Adobe Commerce uniquement, utilisez [php_xdebug 2.5.x](https://xdebug.org/download) ou une version ultérieure. Xdebug peut nuire aux performances.
 
-Pour Adobe Commerce sur le cloud, consultez [Configuration de Xdebug](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/test/debug) dans le guide *Commerce sur les infrastructures cloud*.
+Pour Adobe Commerce sur le cloud, consultez [Configuration de Xdebug](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/debug) dans le guide *Commerce sur les infrastructures cloud*.
 
 >[!NOTE]
 >
->Un problème connu avec Xdebug peut affecter les installations d’Adobe Commerce ou l’accès au storefront ou à l’administrateur après l’installation. Voir [Problème connu affectant `xdebug` installation](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) dans la base de connaissances de la prise en charge de _Commerce_.
+>Un problème connu avec Xdebug peut affecter les installations d’Adobe Commerce ou l’accès au storefront ou à l’administrateur après l’installation. Voir [Problème connu affectant `xdebug` installation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) dans la base de connaissances de la prise en charge de _Commerce_.
 
-<!-- Last updated from includes: 2026-10-07 13:03:29 -->
+<!-- Last updated from includes: 2026-10-13 09:11:06 -->
