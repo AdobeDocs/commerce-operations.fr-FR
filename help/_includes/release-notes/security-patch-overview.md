@@ -26,4 +26,4 @@ Les fichiers de correctifs de sécurité isolés sont des fichiers de correctifs
 
 Pour appliquer un fichier de correctif de sécurité isolé, les clients doivent disposer de la dernière version du correctif de sécurité uniquement (la dernière version -p) pour leur ligne de version prise en charge, car les fichiers de correctif de sécurité isolés sont testés exclusivement par rapport à cette version.
 
-Consultez [Bulletins et conseils de sécurité ](https://www.adobe.com/trust/security/bulletins-and-advisories.html) pour connaître les dernières mises à jour de sécurité disponibles pour Adobe Commerce.
+Consultez [Bulletins et conseils de sécurité &#x200B;](https://www.adobe.com/trust/security/bulletins-and-advisories.html) pour connaître les dernières mises à jour de sécurité disponibles pour Adobe Commerce.
