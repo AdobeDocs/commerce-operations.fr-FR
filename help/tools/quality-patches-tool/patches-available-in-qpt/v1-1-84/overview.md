@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 4fcf88b6e7e67204ac07a82d756c068ac715d120
+source-git-commit: b3e370d4d133d52fd97a4cd82ea9243cbd679c0e
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '555'
 ht-degree: 0%
 ---
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -41,7 +41,7 @@ QPT v1.1.84 comprend les correctifs suivants :
 1. **ACP2E-5041** : correction d’un problème en raison duquel l’enregistrement d’un produit lors d’une mise à jour planifiée entraînait l’affichage par le storefront du prix normal au lieu du **[!UICONTROL Special Price]** une fois la mise à jour terminée.
 1. **ACP2E-5059** : correction du problème en raison duquel les clients reçoivent des e-mails de confirmation de commande en double pour la même commande.
 1. **ACP2E-5122** : correction d’un problème en raison duquel les erreurs gérées à partir des requêtes GraphQL pour le panier étaient incorrectement enregistrées dans les journaux d’exceptions en tant qu’erreurs d’application.
-1. **ACP2E-5143** : correction du problème en raison duquel la requête d’itinéraire GraphQL effectue le rendu de l’intégralité du contenu des pages CMS lorsque seules les métadonnées de routage sont demandées, ce qui augmente les requêtes de base de données pour les pages CMS contenant des widgets Page Builder.
+1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)** : correction d’un problème en raison duquel la requête `route` de GraphQL effectue le rendu de l’intégralité du contenu des pages CMS lorsque seules les métadonnées de routage sont demandées, ce qui augmente le nombre de requêtes de base de données pour les pages CMS contenant des widgets Page Builder.
 1. **ACP2E-5183** : corrige le problème en raison duquel le déploiement du contenu statique échoue sur PHP 8.5 lors de la compilation d&#39;un fichier `LESS` qui utilise la directive `@magento_import`.
 1. **ACP2E-5242** : correction d’un problème en raison duquel la vérification de la disponibilité du produit lors de l’ajout d’articles au panier affichait une erreur indiquant que le site web est introuvable.
 1. **ACP2E-5263** : correction d’un problème en raison duquel l’exportation de produits dans un fichier CSV peut s’arrêter avant que tous les produits ne soient inclus, ce qui entraîne la création d’un fichier incomplet.
