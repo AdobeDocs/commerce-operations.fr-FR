@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
+source-git-commit: 2456f0e28fa24e23eb7692a905c708007a00bd96
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 0%
@@ -241,4 +241,4 @@ Pour Adobe Commerce sur le cloud, consultez [Configuration de Xdebug](https://ex
 >
 >Un problème connu avec Xdebug peut affecter les installations d’Adobe Commerce ou l’accès au storefront ou à l’administrateur après l’installation. Voir [Problème connu affectant `xdebug` installation](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) dans la base de connaissances de la prise en charge de _Commerce_.
 
-<!-- Last updated from includes: 2026-10-07 13:03:29 -->
+<!-- Last updated from includes: 2026-10-13 09:11:06 -->
