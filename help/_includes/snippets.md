@@ -1,9 +1,8 @@
 ---
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1188'
 ht-degree: 0%
-
 ---
 # Fragments de code
 
@@ -21,7 +20,7 @@ Le cache Redis n’est pas pris en charge pour Adobe Commerce 2.4.9 ou pour les 
 
 >[!NOTE]
 >
->Si votre projet Commerce est déployé sur le cloud, la mise en cache complète des pages utilise [Fastly](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/fastly) au lieu de Varnish. Les rubriques de cette section s’appliquent uniquement aux installations sur site.
+>Si votre projet Commerce est déployé sur le cloud, la mise en cache complète des pages utilise [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) au lieu de Varnish. Les rubriques de cette section s’appliquent uniquement aux installations sur site.
 
 ## Prise en charge des versions du service Adobe {#supported-versions-only}
 
@@ -29,7 +28,7 @@ Le cache Redis n’est pas pris en charge pour Adobe Commerce 2.4.9 ou pour les 
 >
 >Adobe ne prend en charge que les déploiements exécutant des versions prises en charge de tous les services et dépendances. Cela s’applique :
 >
->* **Services Platform** (y compris, mais sans s’y limiter, PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ et Nginx) - les commerçants doivent conserver des versions compatibles avec leur version d’Adobe Commerce déployée. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr).
+>* **Services Platform** (y compris, mais sans s’y limiter, PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ et Nginx) - les commerçants doivent conserver des versions compatibles avec leur version d’Adobe Commerce déployée. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
 >* **Extensions des services** (y compris, mais sans s’y limiter, Live Search, Product Recommendations et Payment Services) — seule la dernière version publiée est prise en charge.
 >* **Extensions personnalisées et intégrations tierces** — Les commerçants sont chargés de s’assurer qu’elles restent sur les versions prises en charge par le fournisseur.
 >
@@ -39,7 +38,20 @@ Le cache Redis n’est pas pris en charge pour Adobe Commerce 2.4.9 ou pour les 
 
 ## Correctifs de sécurité pour une prise en charge étendue {#extended-support}
 
-{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
+>[!NOTE]
+>
+>**Prise en charge étendue** les correctifs de sécurité ne sont disponibles que pour les clients Adobe Commerce. Ils ne sont pas disponibles pour la base de code Magento Open Source.
+>
+>**Adobe Commerce on Cloud (lignes de version 2.4.4 à 2.4.6)** — Effectuez une mise à niveau vers une version prise en charge ou migrez vers [!DNL Adobe Commerce as a Cloud Service] avant la date d’application de la mise à niveau de votre version. Les dispositions de prise en charge transitoire ne remplacent pas l’application de la mise à niveau cloud.
+>
+>Voir également :
+>
+>- [Politique relative au cycle de vie des logiciels](/help/release/lifecycle-policy.md) — dates de fin de prise en charge, prise en charge étendue et dispositions transitoires concernant uniquement la sécurité
+>- [Actions requises et délais pour sécuriser les environnements Commerce](/help/release/security-enforcement-policy.md) — dates d’application et actions requises
+
+## Bulletin de sécurité Adobe APSB26-49 {#security-bulletin-apsb26-49}
+
+Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB26-49](https://www.adobe.com/trust/security/products/commerce/apsb26-49.html).
 
 ## Commerce uniquement {#commerce-only}
 
@@ -53,7 +65,7 @@ Le cache Redis n’est pas pris en charge pour Adobe Commerce 2.4.9 ou pour les 
 
 >[!WARNING]
 >
->Toutes les commandes de l’interface de ligne de commande Magento doivent être exécutées par le [&#x200B; propriétaire du système de fichiers](/help/configuration/cli/config-cli.md#prerequisites).
+>Toutes les commandes de l’interface de ligne de commande Magento doivent être exécutées par le [ propriétaire du système de fichiers](/help/configuration/cli/config-cli.md#prerequisites).
 
 ## Commandes de sauvegarde {#tip-backup-command}
 
@@ -65,7 +77,7 @@ Le cache Redis n’est pas pris en charge pour Adobe Commerce 2.4.9 ou pour les 
 
 >[!NOTE]
 >
->Après avoir installé ce correctif de sécurité, les commerçants B2B d’Adobe Commerce doivent également effectuer la mise à jour vers la dernière version du correctif de sécurité B2B compatible. Voir les notes de mise à jour [B2B](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/release-notes).
+>Après avoir installé ce correctif de sécurité, les commerçants B2B d’Adobe Commerce doivent également effectuer la mise à jour vers la dernière version du correctif de sécurité B2B compatible. Voir les notes de mise à jour [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Adobe Commerce uniquement {#ee-only}
 
@@ -91,7 +103,7 @@ Le cache Redis n’est pas pris en charge pour Adobe Commerce 2.4.9 ou pour les 
 
 >[!IMPORTANT]
 >
->Les versions d’[&#128279;](/help/release/versioning-policy.md#alpha-patch-release) peuvent être incomplètes et risquent de contenir des défauts. Ils sont fournis « EN L&#39;ÉTAT » sans garantie d&#39;aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge d’une autre manière (via les services d’assistance Adobe ou autre) les versions d’Alpha. Les clients ne doivent pas s’appuyer sur le bon fonctionnement ou les performances des versions d’Alpha ou de toute documentation ou documentation d’accompagnement. L’utilisation des versions d’Alpha s’effectue entièrement aux risques et périls du client.
+>Les versions d’[](/help/release/versioning-policy.md#alpha-patch-release) peuvent être incomplètes et risquent de contenir des défauts. Ils sont fournis « EN L&#39;ÉTAT » sans garantie d&#39;aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge d’une autre manière (via les services d’assistance Adobe ou autre) les versions d’Alpha. Les clients ne doivent pas s’appuyer sur le bon fonctionnement ou les performances des versions d’Alpha ou de toute documentation ou documentation d’accompagnement. L’utilisation des versions d’Alpha s’effectue entièrement aux risques et périls du client.
 
 ## Clause de non-responsabilité Beta {#beta}
 
@@ -119,7 +131,7 @@ Avant de pouvoir exécuter des indexeurs en mode parallèle, vous devez activer 
 
 >[!IMPORTANT]
 >
->Adobe ne prend pas en charge l’application de correctifs officiels fournis par Adobe à l’aide de cette méthode. Utilisez la méthode suivante à vos risques et périls. Pour appliquer les correctifs officiels, utilisez le [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr){target="_blank"} . Effectuez toujours des tests complets avant de déployer un correctif personnalisé.
+>Adobe ne prend pas en charge l’application de correctifs officiels fournis par Adobe à l’aide de cette méthode. Utilisez la méthode suivante à vos risques et périls. Pour appliquer les correctifs officiels, utilisez le [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} . Effectuez toujours des tests complets avant de déployer un correctif personnalisé.
 
 ## Rétroportages de correctif de sécurité d’octobre 2025 {#oct-2025-backports}
 
@@ -150,7 +162,7 @@ Après les récentes modifications apportées à CSP/SRI, la page de passage en 
 
 **Correctif** :
 
-Un correctif est disponible. Pour plus d’informations sur les correctifs[&#128279;](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27997) consultez la section L’extraction échoue lorsque la minimisation et le regroupement JS sont activés dans la base de connaissances.
+Un correctif est disponible. Pour plus d’informations sur les correctifs](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) consultez la section [L’extraction échoue lorsque la minimisation et le regroupement JS sont activés dans la base de connaissances.
 
 ## Valkey Redis CLI note {#valkey-redis-cli-note}
 

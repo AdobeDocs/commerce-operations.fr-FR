@@ -15,9 +15,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 37a993a1f9b187dcfa74ecde581cf705eb66570d
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '133'
 ht-degree: 3%
 ---
 # Versions publiées
@@ -33,8 +33,8 @@ Adobe offre une prolongation de prise en charge d’un an sans frais supplément
 >[!NOTE]
 >
 >- Adobe recommande d’installer ou de mettre à niveau Adobe Commerce vers le dernier correctif de sécurité disponible pour chaque version.
->- Pour connaître les autres mises à jour de sécurité, voir [Mises à jour de sécurité pour Magento/Adobe Commerce](https://helpx.adobe.com/fr/security/products/magento.html).
->- Pour connaître les tarifs, voir Tarification [&#128279;](https://business.adobe.com/fr/products/magento/pricing.html).
+>- Pour obtenir d&#39;autres mises à jour de sécurité, consultez [Bulletins et conseils de sécurité ](https://www.adobe.com/trust/security/bulletins-and-advisories.html) dans le Centre de gestion de la confidentialité.
+>- Pour connaître les tarifs, voir Tarification [](https://business.adobe.com/products/magento/pricing.html).
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 
