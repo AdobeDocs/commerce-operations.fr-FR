@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 42ccea80dbbf503f58ba7d63d4731687b3c310a8
+source-git-commit: e7d4ea592892d77cea7891773645a8381870f80a
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '514'
 ht-degree: 0%
 ---
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -33,7 +33,7 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 QPT v1.1.83 comprend les correctifs suivants :
 
 1. **AC-17975** : corrige plusieurs problèmes de compatibilité PHP 8.5 affectant les workflows d’administration, l’authentification de passage en caisse, le traitement CAPTCHA, la gestion des catégories, les pages de configuration et les opérations de ligne de commande dans certains environnements PHP.
-1. **AC-18128** : correction du problème en raison duquel les dates de commande et les horodatages des commentaires de commande renvoyés par GraphQL affichent des dates de calendrier incorrectes dans des paramètres régionaux non anglais.
+1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)** : correction du problème en raison duquel les dates de commande et les horodatages des commentaires de commande renvoyés par GraphQL peuvent afficher des dates de calendrier incorrectes dans des paramètres régionaux non anglais.
 1. **AC-18096** : correction du problème en raison duquel les champs de date de Sales GraphQL renvoient des dates dans un format différent des versions précédentes en rétablissant le format de date de slash-separée (`/`) à dash-separée (`-`).
 1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)** : correction du problème en raison duquel un utilisateur administrateur disposant d’autorisations limitées ne peut pas supprimer les clients de la grille Clients .
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)** : correction du problème en raison duquel le type d&#39;éléments de la liste de demandes est mal orthographié dans le schéma GraphQL. L’ancien champ de `items` et le type de `RequistionListItems` restent disponibles, mais sont obsolètes.
