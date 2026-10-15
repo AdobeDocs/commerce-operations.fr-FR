@@ -35,9 +35,9 @@ level_v2:
     internal-label: Experienced
 badgePaas: label="Adobe Commerce on Cloud 2.4.4 - 2.4.9 uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement à Adobe Commerce sur Cloud versions 2.4.4 à 2.4.9"
 nudge: true
-source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
+source-git-commit: 5cfbac0f93bc8f82c1af04057c0d9ac3b1f3abb4
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2181'
 ht-degree: 0%
 ---
 
@@ -74,7 +74,7 @@ Pour garantir la sécurité de votre environnement e-commerce et atténuer les r
 
 1. Une version sécurisée et prise en charge d’Adobe Commerce sur le cloud. Les versions entièrement prises en charge sont les versions 2.4.8 et 2.4.9, ou la dernière version disponible. Voir la documentation [Politique de cycle de vie](/help/release/lifecycle-policy.md).
 
-Suivez les instructions ci-dessous pour vérifier si vous devez prendre des mesures pour sécuriser votre environnement Adobe Commerce sur le cloud. Dans les environnements qui ne respectent pas les exigences de sécurité dans les délais indiqués dans le tableau 1 ci-dessous, le trafic entrant sera suspendu, ce qui mettra le storefront hors ligne. Si vous avez des doutes quant au respect de l’échéance, veuillez contacter votre équipe de compte ou [l’assistance &#x200B;](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) dès que possible.
+Suivez les instructions ci-dessous pour vérifier si vous devez prendre des mesures pour sécuriser votre environnement Adobe Commerce sur le cloud. Dans les environnements qui ne respectent pas les exigences de sécurité dans les délais indiqués dans le Tableau 1 ci-dessous, l’accès administrateur peut être suspendu, tandis que le storefront reste en ligne, et/ou le trafic entrant peut être suspendu, ce qui met le storefront hors ligne. Si vous avez des doutes quant au respect de l’échéance, veuillez contacter votre équipe de compte ou [l’assistance &#x200B;](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) dès que possible.
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ Le tableau suivant vous aide à comparer vos options et à déterminer le meille
 
 Adobe reste engagé à vous aider à exécuter les étapes que vous devez suivre pour adopter une version prise en charge d’un logiciel tiers, effectuer une mise à niveau vers la dernière version d’Adobe Commerce sur le cloud ou migrer vers Adobe Commerce as a Cloud Service.  Si vous avez des doutes quant au respect de l’échéance et si vous avez besoin d’une courte prolongation, veuillez contacter votre équipe de compte ou [l’assistance &#x200B;](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) dès que possible.
 
-Si un environnement ne répond pas aux exigences de sécurité aux dates d’application partagées ci-dessus, Adobe sera forcé de prendre les mesures appropriées pour maintenir la sécurité de la plateforme Adobe Commerce et de ses clients. Cela inclut la suspension du trafic vers l’infrastructure affectée, et par conséquent votre storefront Commerce sera hors ligne.
+Si un environnement ne répond pas aux exigences de sécurité aux dates d’application partagées ci-dessus, Adobe sera forcé de prendre les mesures appropriées pour maintenir la sécurité de la plateforme Adobe Commerce et de ses clients. Cela peut inclure la suspension de l’accès à l’administrateur Adobe Commerce pour tous les utilisateurs sur l’environnement affecté, pendant que le storefront reste en ligne, et/ou la suspension du trafic vers l’infrastructure affectée, ce qui aura pour conséquence que votre storefront Commerce sera déconnecté.
 
 Si un environnement reste non conforme à la suite de la suspension du trafic, Adobe peut mettre fin aux services cloud et lancer le processus de désaffectation. Après la mise hors service, toutes les données et ressources de l’environnement commercial hébergé, y compris toutes les instances, tous les environnements et toutes les branches, seront définitivement supprimés et ne pourront pas être restaurés.
 

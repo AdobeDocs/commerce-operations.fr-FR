@@ -14,9 +14,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '2365'
+source-wordcount: '2342'
 ht-degree: 0%
 ---
 
@@ -36,17 +36,17 @@ ht-degree: 0%
 >Tous les clients et clientes Adobe Commerce On-Premise exécutant la version 2.4.6 ont un niveau de sécurité élevé
 >a conseillé de migrer ses serveurs de base de données vers une version MariaDB compatible.
 >
->Les clients Adobe Commerce on Cloud doivent conserver les dépendances de la plateforme sur les versions prises en charge. Voir [Dépendances de Platform](../../lifecycle-policy.md#platform-dependencies) dans la politique de cycle de vie.
+>Les clients Adobe Commerce on Cloud doivent conserver les dépendances de la plateforme sur les versions prises en charge. Voir [Dépendances de Platform](/help/release/lifecycle-policy.md#platform-dependencies) dans la politique de cycle de vie.
 >
->Adobe Commerce 2.4.6 bénéficie d’une [prise en charge étendue](../../lifecycle-policy.md#extended-support) jusqu’au **30 août 2027**, suivie d’une [période de transition axée uniquement sur la sécurité](../../lifecycle-policy.md#security-only-transitional-period) jusqu’au **31 mai 2028**. Ces fonctions ne sont disponibles que pour les clients Adobe Commerce. Ils n’étendent pas la prise en charge des dépendances tierces telles que MySQL.
+>Adobe Commerce 2.4.6 bénéficie d’une [prise en charge étendue](/help/release/lifecycle-policy.md#extended-support) jusqu’au **30 août 2027**, suivie d’une [période de transition axée uniquement sur la sécurité](/help/release/lifecycle-policy.md#security-only-transitional-period) jusqu’au **31 mai 2028**. Ces fonctions ne sont disponibles que pour les clients Adobe Commerce. Ils n’étendent pas la prise en charge des dépendances tierces telles que MySQL.
 >
->Si vous exécutez Adobe Commerce sur le cloud, vous devez effectuer une mise à niveau vers une version prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant la **date d’application de la mise à niveau du 1er juin 2028** [version](../../security-enforcement-policy.md). Consultez le tableau [dates de fin de prise en charge](../../lifecycle-policy.md#end-of-support-dates) pour connaître les dates de cycle de vie complet.
+>Si vous exécutez Adobe Commerce sur le cloud, vous devez effectuer une mise à niveau vers une version prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant la **date d’application de la mise à niveau du 1er juin 2028** [version](../../security-enforcement-policy.md). Consultez le tableau [dates de fin de prise en charge](/help/release/lifecycle-policy.md#end-of-support-dates) pour connaître les dates de cycle de vie complet.
 
 ## 2.4.6-p15
 
 La version de sécurité 2.4.6-p15 d’Adobe Commerce fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de 2.4.6.
 
-Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB26-49](https://helpx.adobe.com/fr/security/products/magento/apsb26-49.html).
+{{security-bulletin-apsb26-49}}
 
 {{b2b-patches}}
 
