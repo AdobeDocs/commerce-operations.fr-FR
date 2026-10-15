@@ -3,7 +3,6 @@ source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
 source-wordcount: '37133'
 ht-degree: 0%
-
 ---
 # Problèmes résolus dans Adobe Commerce (v2.4.9)
 
@@ -3397,7 +3396,7 @@ _ACP2E-4525_
 
 #### L’administrateur affiche un symbole de devise incorrect lors de la création du retour
 
-Dans une configuration multi-site avec différentes devises (EUR/USD/GBP), la page de sélection de produit de retour dans l’administration affiche désormais le symbole de devise correct. Auparavant, il affichait le symbole de devise par défaut.
+Dans une configuration multi-site avec différentes devises (EUR/USD/GBP), la page de sélection de produit de retour dans admin affiche désormais le symbole de devise correct. Auparavant, il affichait le symbole de devise par défaut.
 
 _ACP2E-3658 - [contribution du code GitHub](https://github.com/magento/magento2/commit/df92debe)_
 

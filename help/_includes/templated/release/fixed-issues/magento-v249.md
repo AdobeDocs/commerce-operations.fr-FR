@@ -3,7 +3,6 @@ source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
 source-wordcount: '32815'
 ht-degree: 0%
-
 ---
 # Problèmes résolus dans Magento Open Source (v2.4.9)
 
@@ -669,9 +668,9 @@ _ACP2E-4698 - [contribution du code GitHub](https://github.com/magento/magento2-
 
 ### Interface utilisateur d’administration, B2B
 
-#### La connexion B2B en tant qu’en-tête client comporte toujours l’identité de marque Magento
+#### La connexion B2B en tant qu’en-tête client possède toujours la marque Magento
 
-Auparavant, l’en-tête du storefront affichait « Vous êtes désormais connecté en tant que &lt;nom du client> sur &lt;nom du magasin> » avec l’identité graphique de Magento. Ce problème est maintenant résolu et l’en-tête s’affiche avec le branding ADOBE.
+Auparavant, l’en-tête du storefront affichait « Vous êtes désormais connecté en tant que &lt;nom du client> sur &lt;nom du magasin> » avec la marque Magento. Ce problème est maintenant résolu et l’en-tête s’affiche avec le branding ADOBE.
 
 _AC-14361 - [Contribution du code GitHub](https://github.com/magento/magento2/commit/fadcfa8b)_
 
@@ -3033,7 +3032,7 @@ _ACP2E-4455 - [Contribution du code GitHub](https://github.com/magento/magento2/
 
 #### L’administrateur affiche un symbole de devise incorrect lors de la création du retour
 
-Dans une configuration multi-site avec différentes devises (EUR/USD/GBP), la page de sélection de produit de retour dans l’administration affiche désormais le symbole de devise correct. Auparavant, il affichait le symbole de devise par défaut.
+Dans une configuration multi-site avec différentes devises (EUR/USD/GBP), la page de sélection de produit de retour dans admin affiche désormais le symbole de devise correct. Auparavant, il affichait le symbole de devise par défaut.
 
 _ACP2E-3658 - [contribution du code GitHub](https://github.com/magento/magento2/commit/df92debe)_
 
