@@ -3,7 +3,6 @@ source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
 source-wordcount: '37133'
 ht-degree: 0%
-
 ---
 # Problèmes résolus dans Adobe Commerce (v2.4.9)
 
@@ -3397,7 +3396,7 @@ _ACP2E-4525_
 
 #### L’administrateur affiche un symbole de devise incorrect lors de la création du retour
 
-Dans une configuration multi-site avec différentes devises (EUR/USD/GBP), la page de sélection de produit de retour dans l’administration affiche désormais le symbole de devise correct. Auparavant, il affichait le symbole de devise par défaut.
+Dans une configuration multi-site avec différentes devises (EUR/USD/GBP), la page de sélection de produit de retour dans admin affiche désormais le symbole de devise correct. Auparavant, il affichait le symbole de devise par défaut.
 
 _ACP2E-3658 - [contribution du code GitHub](https://github.com/magento/magento2/commit/df92debe)_
 
@@ -4158,7 +4157,7 @@ _ACP2E-4226_
 
 #### Impossible de naviguer entre les sites web dans l’aperçu de la planification de mise à jour
 
-Avant cette correction, l’aperçu de la mise à jour planifiée était interrompu lors de la tentative de prévisualisation du contenu pour les magasins avec des domaines personnalisés. Après ce correctif, les domaines de magasin personnalisés peuvent être prévisualisés en l’état et navigués dans le cadre de prévisualisation. Le correctif couvre les produits, les catégories, les pages CMS et les blocs CMS, et prend en charge les liens de navigation à l’aide de balises de balisage `{{store url}}`, comme indiqué dans [Variables Adobe Commerce et balises de balisage](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/variables/markup-tags).
+Avant cette correction, l’aperçu de la mise à jour planifiée était interrompu lors de la tentative de prévisualisation du contenu pour les magasins avec des domaines personnalisés. Après ce correctif, les domaines de magasin personnalisés peuvent être prévisualisés en l’état et navigués dans le cadre de prévisualisation. Le correctif couvre les produits, les catégories, les pages CMS et les blocs CMS, et prend en charge les liens de navigation à l’aide de balises de balisage `{{store url}}`, comme indiqué dans [Variables Adobe Commerce et balises de balisage](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags).
 
 _ACP2E-4308 - [contribution du code GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 
