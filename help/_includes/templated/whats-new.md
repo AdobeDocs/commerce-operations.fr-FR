@@ -22,7 +22,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.83 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015">ACP2E-5015 : l’enregistrement de catalogue partagé supprime les affectations de produits et les prix après une erreur de lecture de session</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.83 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015">ACP2E-5015 : l’enregistrement de catalogue partagé supprime les affectations de produits et les prix après une erreur de lecture de session</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
@@ -30,7 +30,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5277785149087405dfe01a3e059d7f617869fbf2">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.83 pour <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211">ACP2E-3211 : les requêtes d’ajout au panier parallèles créent des éléments distincts pour le même SKU</a>.</p>
+      <td><p>Ajout d’une description détaillée du correctif QPT 1.1.83 pour <a href="https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211">ACP2E-3211 : les requêtes d’ajout au panier parallèles créent des éléments distincts pour le même SKU</a>.</p>
 </td>
       <td>
         Nouvelle rubrique, qpt
