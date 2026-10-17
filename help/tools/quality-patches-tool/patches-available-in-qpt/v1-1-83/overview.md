@@ -21,7 +21,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0e4d8845da584cd8a58b49d1adf892df80155734
+source-git-commit: 9c67720bcc00fe0b3e783e6c5cc77dea59ee007a
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 0%
@@ -43,12 +43,12 @@ QPT v1.1.83 comprend les correctifs suivants :
 1. **ACP2E-4977** : correction du problème en raison duquel les totaux généraux des factures et des avoirs pour les produits configurables n&#39;incluent pas les **[!UICONTROL Fixed Product Tax]** (FPT), ce qui entraîne des totaux inférieurs au total de la commande.
 1. **AC-16530** : correction d’un problème en raison duquel le panier ne reflétait pas de manière cohérente les mises à jour planifiées des règles de prix de catalogue.
 1. **AC-11389** : correction d’un problème en raison duquel les remises, les taxes et les totaux des commandes ne sont pas calculés correctement dans certains scénarios d’arrondi.
+1. **[ACP2E-5015](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)** : correction d’un problème en raison duquel l’enregistrement d’un catalogue partagé dans l’administration peut involontairement supprimer les produits affectés et le prix lorsque les données de catalogue requises ne sont pas disponibles.
 1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)** : correction d’un problème en raison duquel la requête `POST /V1/products/tier-prices` de l’API REST échouait entièrement lorsqu’un SKU n’existait pas dans la payload, empêchant la mise à jour des SKU valides.
-1. **ACP2E-5015** : correction d’un problème en raison duquel l’enregistrement d’un catalogue partagé dans l’administration peut involontairement supprimer les produits affectés et le prix lorsque les données de catalogue requises ne sont pas disponibles.
 1. **AC-14940** : correction d’un problème en raison duquel un clic sur **[!UICONTROL Reset Password]** pour un compte client dans l’administrateur n’envoyait pas l’e-mail de réinitialisation de mot de passe dans certains cas liés au magasin .
 1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)** : correction d’un problème en raison duquel l’installation du module B2B échouait lorsque les indexeurs étaient définis sur **[!UICONTROL Update by Schedule]**.
 1. **ACP2E-5205** : corrige le problème lorsque le chargement d’une catégorie prend beaucoup de temps ou entraîne un délai d’expiration lorsqu’un grand nombre de catégories et de produits est impliqué. En outre, le nombre de produits est désormais correctement affiché pour chaque feuille de catégorie.
-1. **ACP2E-3211** : correction d’un problème en raison duquel l’ajout d’un même produit au panier en même temps sur la vitrine crée des articles distincts dans le panier pour le même SKU au lieu de les combiner en un seul article.
+1. **[ACP2E-3211](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)** : correction d’un problème en raison duquel l’ajout d’un même produit au panier en même temps sur le storefront crée des articles distincts dans le panier pour le même SKU au lieu de les combiner en un seul article.
 1. **[ACP2E-5223](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)** : correction du problème en raison duquel l’index **[!UICONTROL Catalog Permissions]** inclut les sites web exclus d’un groupe de clients.
 
 Utilisez le menu à gauche pour accéder à une page de correctif spécifique.

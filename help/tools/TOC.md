@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: b3e370d4d133d52fd97a4cd82ea9243cbd679c0e
+source-git-commit: 9c67720bcc00fe0b3e783e6c5cc77dea59ee007a
 workflow-type: tm+mt
-source-wordcount: '10826'
+source-wordcount: '10855'
 ht-degree: 0%
 ---
 
@@ -1060,6 +1060,8 @@ ht-degree: 0%
       - [ACP2E-4875 : les utilisateurs administrateurs se sont déconnectés lors de l’ouverture de comptes clients avec des carnets d’adresses volumineux](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-3211 : les requêtes d’ajout au panier parallèles créent des éléments distincts pour le même SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)
+      - [ACP2E-5015 : l’enregistrement de catalogue partagé supprime les affectations de produit et le prix après une erreur de lecture de session](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)
       - [AC-18096 : les champs de date de GraphQL Sales renvoient un format localisé incorrect](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)
       - [AC-18128 : les dates de commande et les horodatages des commentaires de GraphQL sont incorrects pour les langues autres que l’anglais](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)
       - [ACP2E-4838 : l’utilisateur avec accès restreint à l’administration ne peut pas supprimer les clients d’un site web autorisé](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)
