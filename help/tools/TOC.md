@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 9c67720bcc00fe0b3e783e6c5cc77dea59ee007a
+source-git-commit: a844e4f16c931370aa77a3b92ac770f6221b60d0
 workflow-type: tm+mt
-source-wordcount: '10855'
+source-wordcount: '10898'
 ht-degree: 0%
 ---
 
@@ -417,7 +417,7 @@ ht-degree: 0%
     - v1.1.33 {#v1-1-33}
       - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.33](quality-patches-tool/patches-available-in-qpt/v1-1-33/overview.md)
       - [ACSD-51792 : la page ne comporte pas d’événement d’impression](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51792-page-does-not-have-impression-event.md)
-      - [ACSD-51645 : enregistrer une nouvelle règle de prix de panier si l’extension Magento_OfflineShipping est désactivée](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
+      - [ACSD-51645 : enregistrement d’une nouvelle règle de prix de panier si l’extension Magento_OfflineShipping est désactivée](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
       - [ACSD-51240 : fichier chargé manquant lors de l&#39;enregistrement via le formulaire d&#39;enregistrement de l&#39;entreprise](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51240-uploaded-file-missing-while-registering-via-company-registration-form.md)
       - [ACSD-51907 : l&#39;utilisateur administrateur restreint ne peut pas créer d&#39;avoir pour le remboursement hors ligne](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51907-restricted-admin-user-cannot-create-a-credit-memo-with-an-offline-refund.md)
       - [ACSD-51892 : problème de performances lorsque les fichiers de configuration se chargent plusieurs fois](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.md)
@@ -1060,6 +1060,9 @@ ht-degree: 0%
       - [ACP2E-4875 : les utilisateurs administrateurs se sont déconnectés lors de l’ouverture de comptes clients avec des carnets d’adresses volumineux](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [AC-11389 : Les totaux des commandes varient en fonction des commandes auxquelles les produits sont ajoutés au panier](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)
+      - [ACP2E-4877 : bouton Modifier manquant pour les paiements en attente sur les commandes de compte dans Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)
+      - [AC-14940 : l’e-mail de réinitialisation de mot de passe n’est pas envoyé après la suppression de la vue du magasin d’un client](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)
       - [ACP2E-3211 : les requêtes d’ajout au panier parallèles créent des éléments distincts pour le même SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)
       - [ACP2E-5015 : l’enregistrement de catalogue partagé supprime les affectations de produit et le prix après une erreur de lecture de session](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)
       - [AC-18096 : les champs de date de GraphQL Sales renvoient un format localisé incorrect](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)
