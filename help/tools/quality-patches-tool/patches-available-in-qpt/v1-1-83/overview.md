@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a844e4f16c931370aa77a3b92ac770f6221b60d0
+source-git-commit: 827148df3d53885c24ee333b9a0e8c5eb8d95216
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '523'
 ht-degree: 0%
 ---
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -39,8 +39,8 @@ QPT v1.1.83 comprend les correctifs suivants :
 1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)** : correction du problème en raison duquel un utilisateur administrateur disposant d’autorisations limitées ne peut pas supprimer les clients de la grille Clients .
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)** : correction du problème en raison duquel le type d&#39;éléments de la liste de demandes est mal orthographié dans le schéma GraphQL. L’ancien champ de `items` et le type de `RequistionListItems` restent disponibles, mais sont obsolètes.
 1. **ACP2E-4908** : correction du problème en raison duquel les catalogues volumineux entraînent une utilisation excessive de la mémoire dans Redis ou Valkey, car des entrées de cache de mise en page distinctes ont été créées pour chaque produit dans chaque vue de magasin.
+1. **[ACP2E-4977](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)** : correction du problème en raison duquel les totaux généraux des factures et des avoirs pour les produits configurables n&#39;incluent pas la taxe sur les produits fixes (FPT), ce qui entraîne des totaux inférieurs au total de la commande.
 1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)** : correction du problème en raison duquel la réorganisation d’une commande dans l’administration crée un nouveau numéro de commande avec un suffixe `-1` au lieu d’attribuer le numéro de commande séquentiel suivant.
-1. **ACP2E-4977** : correction du problème en raison duquel les totaux généraux des factures et des avoirs pour les produits configurables n&#39;incluent pas les **[!UICONTROL Fixed Product Tax]** (FPT), ce qui entraîne des totaux inférieurs au total de la commande.
 1. **AC-16530** : correction d’un problème en raison duquel le panier ne reflétait pas de manière cohérente les mises à jour planifiées des règles de prix de catalogue.
 1. **[AC-11389](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)** : correction d’un problème en raison duquel les remises, les taxes et les totaux des commandes ne sont pas calculés correctement dans certains scénarios d’arrondi.
 1. **[ACP2E-5015](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)** : correction d’un problème en raison duquel l’enregistrement d’un catalogue partagé dans l’administration peut involontairement supprimer les produits affectés et le prix lorsque les données de catalogue requises ne sont pas disponibles.
