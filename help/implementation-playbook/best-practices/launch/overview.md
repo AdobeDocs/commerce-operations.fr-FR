@@ -38,7 +38,7 @@ Les sections suivantes contiennent des informations sur les bonnes pratiques pou
 
 | Bonne pratique | Description |
 |------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Service Adobe Security Notification](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Abonnez-vous aux notifications de sécurité d’Adobe. |
+| [Service Adobe Security Notification](https://www.adobe.com/fr/subscription/adbeSecurityNotifications.html) | Abonnez-vous aux notifications de sécurité d’Adobe. |
 | [Sécurisez votre site et votre infrastructure Commerce](security-best-practices.md) | Renforcez la position de sécurité des installations Commerce pour protéger le storefront, l’administration, l’infrastructure et les données Commerce contre les accès non autorisés et les cyber-attaques. |
 | [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=fr) | Configurez Google reCAPTCHA pour l’accès administrateur et diverses actions de storefront initiées par les clients enregistrés. |
 | [Configurer des robots d&#39;exploration web](robots-txt.md) | Transmettez les instructions relatives à votre site Adobe Commerce aux robots d&#39;exploration web. |
