@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 827148df3d53885c24ee333b9a0e8c5eb8d95216
+source-git-commit: baa1eb193d1cda28ee9891324b616ddee5f23f53
 workflow-type: tm+mt
-source-wordcount: '10911'
+source-wordcount: '10961'
 ht-degree: 0%
 ---
 
@@ -1076,6 +1076,10 @@ ht-degree: 0%
       - [AC-12854 : la réorganisation de l’administrateur utilise le numéro de commande d’origine avec un suffixe -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5059 : les tâches cron simultanées envoient des e-mails de confirmation de commande en double](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)
+      - [ACP2E-5122 : les erreurs de panier GraphQL gérées sont incorrectement écrites dans le journal des exceptions](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)
+      - [ACP2E-4913 : l’expédition de l’API REST et la création de factures ne sont pas retentées après un blocage de la base de données](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)
+      - [ACP2E-5017 : la requête de rôle de client GraphQL échoue pour les clients sans entreprise](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)
       - [ACP2E-5143 : la requête d’itinéraire GraphQL effectue le rendu du contenu de page CMS non demandé](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)
       - [ACP2E-4741 : l’enregistrement d’un produit lié masque un autre produit du storefront avec un stock personnalisé](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
   - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
