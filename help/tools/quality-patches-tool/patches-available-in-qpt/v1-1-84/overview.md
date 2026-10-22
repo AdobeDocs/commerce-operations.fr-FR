@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: baa1eb193d1cda28ee9891324b616ddee5f23f53
+source-git-commit: bbbc64cec77399dcff1a28326227858e7bf1f3a4
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '551'
 ht-degree: 0%
 ---
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -46,8 +46,8 @@ QPT v1.1.84 comprend les correctifs suivants :
 1. **ACP2E-5242** : correction d’un problème en raison duquel la vérification de la disponibilité du produit lors de l’ajout d’articles au panier affichait une erreur indiquant que le site web est introuvable.
 1. **ACP2E-5263** : correction d’un problème en raison duquel l’exportation de produits dans un fichier CSV peut s’arrêter avant que tous les produits ne soient inclus, ce qui entraîne la création d’un fichier incomplet.
 1. **ACP2E-5034** : Correction du problème en raison duquel la gestion des devis négociables réinitialise incorrectement les totaux sur *zéro* lors du recalcul d&#39;un devis après la sélection d&#39;un mode d&#39;expédition, ignore les mises à jour des quantités d&#39;option de produit groupé effectuées via l&#39;action **[!UICONTROL Configure]** dans l&#39;administrateur et ne reflète pas correctement les remises au niveau article appliquées aux produits groupés à prix dynamique dans les sous-totaux de devis.
-1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)** : correction d&#39;un problème en raison duquel un produit disparaît du storefront après qu&#39;un produit qui lui est associé en tant que produit associé, vente incitative ou vente croisée a été enregistré alors qu&#39;un stock et une source autres que ceux par défaut sont en cours d&#39;utilisation.
-1. **ACP2E-5079** : correction d’un problème en raison duquel l’évaluation d’un segment client affecté à plusieurs sites web renvoie les clients correspondants uniquement à partir du premier site web lorsque les comptes clients sont partagés globalement.
+1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)** : correction d’un problème en raison duquel un produit disparaît du storefront après l’enregistrement d’un produit qui lui est associé en tant que [!UICONTROL Related Product], [!UICONTROL Up-Sell] ou [!UICONTROL Cross-Sell], alors qu’un stock et une source autres que ceux par défaut sont en cours d’utilisation.
+1. **[ACP2E-5079](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)** : correction d’un problème en raison duquel un segment client affecté à plusieurs sites web renvoie les clients correspondants uniquement à partir du premier site web lorsque les comptes clients sont partagés dans le monde entier.
 1. **ACP2E-5127** : correction d’un problème en raison duquel la modification d’un compte d’entreprise dans le panneau d’administration avec des paramètres régionaux autres que ceux par défaut réinitialise son **[!UICONTROL Credit Limit]** sur *zéro*.
 1. **AC-15494** : correction du problème en raison duquel la requête products renvoie des noms de produit avec des caractères spéciaux d’échappement HTML au lieu de leurs caractères d’origine.
 
