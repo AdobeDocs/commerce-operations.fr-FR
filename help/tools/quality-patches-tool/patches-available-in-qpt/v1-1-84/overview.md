@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ea739d12f02672cf585925b90860bca3b44de02a
+source-git-commit: 9d7a2fd125245848466442b66f53fd9b0476da4e
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '556'
 ht-degree: 0%
 ---
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -34,7 +34,7 @@ QPT v1.1.84 comprend les correctifs suivants :
 
 1. **[ACP2E-5005](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)** : corrige le problème où la quantité d&#39;une option de produit groupé dans un devis négociable revient à sa valeur précédente lorsque le produit groupé est reconfiguré dans l&#39;administrateur et que la quantité est modifiée.
 1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)** : correction d’un problème en raison duquel l’expédition de l’API REST et la création de factures échouaient définitivement après un blocage de la base de données.
-1. **ACP2E-5009** : correction d’un problème en raison duquel la migration des données de Magento Open Source vers Adobe Commerce ne migre pas correctement les modifications de conception planifiées des catégories et les mises à jour planifiées des **[!UICONTROL Special Price]** de produits, ce qui entraîne l’absence ou l’omission de certaines mises à jour planifiées lors de la migration et améliore les performances de la migration.
+1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)** : correction d’un problème en raison duquel la migration des données de Magento Open Source vers Adobe Commerce ne migre pas correctement les modifications de conception planifiées des catégories et les mises à jour planifiées des **[!UICONTROL Special Price]** de produits, ce qui entraîne l’absence ou l’omission de certaines mises à jour planifiées lors de la migration et améliore les performances de la migration.
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)** : correction d&#39;un problème en raison duquel l&#39;interrogation du `role` client via GraphQL renvoie *erreur de serveur interne* lorsque le client n&#39;est pas affecté à une société.
 1. **ACP2E-5027** : correction du problème où les indexeurs restent bloqués dans une boucle et où la réindexation ne se termine pas lorsque le verrouillage des fichiers est activé.
 1. **ACP2E-5029** : correction d’un problème en raison duquel les modifications apportées aux règles de prix de catalogue n’apparaissent dans **[!DNL Live Search]** qu’après une resynchronisation manuelle.
