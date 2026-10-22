@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 422a6e38f4e2298baa02090ee71d4f0fdfc95e3b
+source-git-commit: ea739d12f02672cf585925b90860bca3b44de02a
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '555'
 ht-degree: 0%
 ---
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -32,8 +32,8 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 
 QPT v1.1.84 comprend les correctifs suivants :
 
+1. **[ACP2E-5005](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)** : corrige le problème où la quantité d&#39;une option de produit groupé dans un devis négociable revient à sa valeur précédente lorsque le produit groupé est reconfiguré dans l&#39;administrateur et que la quantité est modifiée.
 1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)** : correction d’un problème en raison duquel l’expédition de l’API REST et la création de factures échouaient définitivement après un blocage de la base de données.
-1. **ACP2E-5005** : corrige le problème où la quantité d&#39;une option de produit groupé dans un devis négociable revient à sa valeur précédente lorsque le produit groupé est reconfiguré dans l&#39;administrateur et que la quantité est modifiée.
 1. **ACP2E-5009** : correction d’un problème en raison duquel la migration des données de Magento Open Source vers Adobe Commerce ne migre pas correctement les modifications de conception planifiées des catégories et les mises à jour planifiées des **[!UICONTROL Special Price]** de produits, ce qui entraîne l’absence ou l’omission de certaines mises à jour planifiées lors de la migration et améliore les performances de la migration.
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)** : correction d&#39;un problème en raison duquel l&#39;interrogation du `role` client via GraphQL renvoie *erreur de serveur interne* lorsque le client n&#39;est pas affecté à une société.
 1. **ACP2E-5027** : correction du problème où les indexeurs restent bloqués dans une boucle et où la réindexation ne se termine pas lorsque le verrouillage des fichiers est activé.
@@ -48,7 +48,6 @@ QPT v1.1.84 comprend les correctifs suivants :
 1. **ACP2E-5034** : Correction du problème en raison duquel la gestion des devis négociables réinitialise incorrectement les totaux sur *zéro* lors du recalcul d&#39;un devis après la sélection d&#39;un mode d&#39;expédition, ignore les mises à jour des quantités d&#39;option de produit groupé effectuées via l&#39;action **[!UICONTROL Configure]** dans l&#39;administrateur et ne reflète pas correctement les remises au niveau article appliquées aux produits groupés à prix dynamique dans les sous-totaux de devis.
 1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)** : correction d&#39;un problème en raison duquel un produit disparaît du storefront après qu&#39;un produit qui lui est associé en tant que produit associé, vente incitative ou vente croisée a été enregistré alors qu&#39;un stock et une source autres que ceux par défaut sont en cours d&#39;utilisation.
 1. **[ACP2E-5127](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)** : correction d’un problème en raison duquel la modification d’un compte d’entreprise dans l’administration avec des paramètres régionaux autres que ceux par défaut réinitialise son **[!UICONTROL Credit Limit]** sur `0`.
-1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)** : correction d’un problème en raison duquel un produit disparaît du storefront après l’enregistrement d’un produit qui lui est associé en tant que [!UICONTROL Related Product], [!UICONTROL Up-Sell] ou [!UICONTROL Cross-Sell], alors qu’un stock et une source autres que ceux par défaut sont en cours d’utilisation.
 1. **[ACP2E-5079](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)** : correction d’un problème en raison duquel un segment client affecté à plusieurs sites web renvoie les clients correspondants uniquement à partir du premier site web lorsque les comptes clients sont partagés dans le monde entier.
 1. **AC-15494** : correction du problème en raison duquel la requête products renvoie des noms de produit avec des caractères spéciaux d’échappement HTML au lieu de leurs caractères d’origine.
 
