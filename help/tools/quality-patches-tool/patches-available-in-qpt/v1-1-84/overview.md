@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 9d7a2fd125245848466442b66f53fd9b0476da4e
+source-git-commit: b9ce2de42db0056d16d8df5e650231ae2b013653
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '558'
 ht-degree: 0%
 ---
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -44,7 +44,7 @@ QPT v1.1.84 comprend les correctifs suivants :
 1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)** : correction d’un problème en raison duquel la requête `route` de GraphQL effectue le rendu de l’intégralité du contenu des pages CMS lorsque seules les métadonnées de routage sont demandées, ce qui augmente le nombre de requêtes de base de données pour les pages CMS contenant des widgets Page Builder.
 1. **ACP2E-5183** : corrige le problème en raison duquel le déploiement du contenu statique échoue sur PHP 8.5 lors de la compilation d&#39;un fichier `LESS` qui utilise la directive `@magento_import`.
 1. **ACP2E-5242** : correction d’un problème en raison duquel la vérification de la disponibilité du produit lors de l’ajout d’articles au panier affichait une erreur indiquant que le site web est introuvable.
-1. **ACP2E-5263** : correction d’un problème en raison duquel l’exportation de produits dans un fichier CSV peut s’arrêter avant que tous les produits ne soient inclus, ce qui entraîne la création d’un fichier incomplet.
+1. **[ACP2E-5263](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)** : correction d’un problème en raison duquel des produits sont absents du fichier CSV d’exportation de produits après l’interruption d’une exportation en raison d’une erreur due à des données incohérentes.
 1. **ACP2E-5034** : Correction du problème en raison duquel la gestion des devis négociables réinitialise incorrectement les totaux sur *zéro* lors du recalcul d&#39;un devis après la sélection d&#39;un mode d&#39;expédition, ignore les mises à jour des quantités d&#39;option de produit groupé effectuées via l&#39;action **[!UICONTROL Configure]** dans l&#39;administrateur et ne reflète pas correctement les remises au niveau article appliquées aux produits groupés à prix dynamique dans les sous-totaux de devis.
 1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)** : correction d&#39;un problème en raison duquel un produit disparaît du storefront après qu&#39;un produit qui lui est associé en tant que produit associé, vente incitative ou vente croisée a été enregistré alors qu&#39;un stock et une source autres que ceux par défaut sont en cours d&#39;utilisation.
 1. **[ACP2E-5127](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)** : correction d’un problème en raison duquel la modification d’un compte d’entreprise dans l’administration avec des paramètres régionaux autres que ceux par défaut réinitialise son **[!UICONTROL Credit Limit]** sur `0`.
