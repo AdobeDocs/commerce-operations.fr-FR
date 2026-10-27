@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: e3fec5eba866e1d0ae4c7285667f41b289edf21b
+source-git-commit: d83b72ab0780e56af7cf7732de2bfe8de7d7b9c5
 workflow-type: tm+mt
-source-wordcount: '11035'
+source-wordcount: '11051'
 ht-degree: 0%
 ---
 
@@ -1076,6 +1076,7 @@ ht-degree: 0%
       - [AC-12854 : la réorganisation de l’administrateur utilise le numéro de commande d’origine avec un suffixe -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5242 : GraphQL utilise l’ID de magasin comme ID de site web lors des demandes d’ajout au panier](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)
       - [ACP2E-5027 : les indexeurs ne se terminent pas lorsque le verrouillage de l’application utilise le fournisseur de verrouillage de fichiers](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)
       - [ACP2E-5263 : l’exportation du produit CSV s’arrête tôt et omet les produits](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)
       - [ACP2E-5009 : la migration de l’évaluation de contenu crée des mises à jour non valides et ralentit la configuration:upgrade](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)

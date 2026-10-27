@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: e3fec5eba866e1d0ae4c7285667f41b289edf21b
+source-git-commit: d83b72ab0780e56af7cf7732de2bfe8de7d7b9c5
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '616'
 ht-degree: 0%
 ---
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -43,6 +43,8 @@ QPT v1.1.84 comprend les correctifs suivants :
 1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)** : correction d’un problème en raison duquel les erreurs gérées à partir des requêtes GraphQL pour le panier étaient incorrectement enregistrées dans les journaux d’exceptions en tant qu’erreurs d’application.
 1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)** : correction d’un problème en raison duquel la requête `route` de GraphQL effectue le rendu de l’intégralité du contenu des pages CMS lorsque seules les métadonnées de routage sont demandées, ce qui augmente le nombre de requêtes de base de données pour les pages CMS contenant des widgets Page Builder.
 1. **ACP2E-5183** : corrige le problème en raison duquel le déploiement du contenu statique échoue sur PHP 8.5 lors de la compilation d&#39;un fichier `LESS` qui utilise la directive `@magento_import`.
+1. **[ACP2E-5242](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)** : correction d’un problème en raison duquel la vérification de la disponibilité du produit lors de l’ajout d’articles au panier affiche une erreur indiquant que le site web est introuvable.
+1. **ACP2E-5263** : correction d’un problème en raison duquel l’exportation de produits dans un fichier CSV peut s’arrêter avant que tous les produits ne soient inclus, ce qui entraîne la création d’un fichier incomplet.
 1. **ACP2E-5242** : correction d’un problème en raison duquel la vérification de la disponibilité du produit lors de l’ajout d’articles au panier affichait une erreur indiquant que le site web est introuvable.
 1. **[ACP2E-5263](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)** : correction d’un problème en raison duquel des produits sont absents du fichier CSV d’exportation de produits après l’interruption d’une exportation en raison d’une erreur due à des données incohérentes.
 1. **ACP2E-5034** : Correction du problème en raison duquel la gestion des devis négociables réinitialise incorrectement les totaux sur *zéro* lors du recalcul d&#39;un devis après la sélection d&#39;un mode d&#39;expédition, ignore les mises à jour des quantités d&#39;option de produit groupé effectuées via l&#39;action **[!UICONTROL Configure]** dans l&#39;administrateur et ne reflète pas correctement les remises au niveau article appliquées aux produits groupés à prix dynamique dans les sous-totaux de devis.
