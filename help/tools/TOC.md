@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: b9ce2de42db0056d16d8df5e650231ae2b013653
+source-git-commit: e3fec5eba866e1d0ae4c7285667f41b289edf21b
 workflow-type: tm+mt
-source-wordcount: '11022'
+source-wordcount: '11035'
 ht-degree: 0%
 ---
 
@@ -417,7 +417,7 @@ ht-degree: 0%
     - v1.1.33 {#v1-1-33}
       - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.33](quality-patches-tool/patches-available-in-qpt/v1-1-33/overview.md)
       - [ACSD-51792 : la page ne comporte pas d’événement d’impression](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51792-page-does-not-have-impression-event.md)
-      - [ACSD-51645 : enregistrement d’une nouvelle règle de prix de panier si l’extension Magento_OfflineShipping est désactivée](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
+      - [ACSD-51645 : enregistrer une nouvelle règle de prix de panier si l’extension Magento_OfflineShipping est désactivée](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
       - [ACSD-51240 : fichier chargé manquant lors de l&#39;enregistrement via le formulaire d&#39;enregistrement de l&#39;entreprise](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51240-uploaded-file-missing-while-registering-via-company-registration-form.md)
       - [ACSD-51907 : l&#39;utilisateur administrateur restreint ne peut pas créer d&#39;avoir pour le remboursement hors ligne](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51907-restricted-admin-user-cannot-create-a-credit-memo-with-an-offline-refund.md)
       - [ACSD-51892 : problème de performances lorsque les fichiers de configuration se chargent plusieurs fois](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.md)
@@ -1076,6 +1076,7 @@ ht-degree: 0%
       - [AC-12854 : la réorganisation de l’administrateur utilise le numéro de commande d’origine avec un suffixe -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5027 : les indexeurs ne se terminent pas lorsque le verrouillage de l’application utilise le fournisseur de verrouillage de fichiers](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)
       - [ACP2E-5263 : l’exportation du produit CSV s’arrête tôt et omet les produits](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)
       - [ACP2E-5009 : la migration de l’évaluation de contenu crée des mises à jour non valides et ralentit la configuration:upgrade](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)
       - [ACP2E-5005 : Les quantités de produits groupés ne sont pas mises à jour dans les devis négociables par l&#39;administrateur](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)
