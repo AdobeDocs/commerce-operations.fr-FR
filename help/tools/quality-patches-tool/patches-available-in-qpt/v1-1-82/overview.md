@@ -32,9 +32,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 889cab9f0f353242319e1feaa090e74819f53027
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '704'
 ht-degree: 0%
 ---
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.82
@@ -61,9 +61,9 @@ QPT v1.1.82 comprend les correctifs suivants :
 1. **[ACP2E-4797](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)** : correction d’un problème en raison duquel la saisie de caractères Unicode 4 octets dans l’éditeur WYSIWYG ou le contenu Page Builder de l’administrateur était incorrectement bloquée, même si la base de données était configurée pour prendre en charge utf8mb4.
 1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)** : corrige le problème où l’expiration des points de récompense s’exécute lentement sur les magasins ayant un historique de points de récompense important, ce qui entraîne des retards dans l’expiration des points de récompense.
 1. **[ACP2E-4840](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840.md)** : corrige le problème en raison duquel la valeur de quantité demandée dans la requête `products` GraphQL renvoie la valeur null.
-1. **[ACP2E-4799](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)** : correction du problème en raison duquel la requête `requisition_lists GraphQL` renvoie une valeur `total_count` qui reflète uniquement le nombre d&#39;éléments sur la page active au lieu du nombre total de listes de demandes d&#39;approvisionnement qui correspondent aux critères de la requête.
+1. **[ACP2E-4799](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)** : correction du problème en raison duquel la requête `requisition_lists` GraphQL renvoie une valeur `total_count` qui reflète uniquement le nombre d’éléments sur la page active au lieu du nombre total de listes de demandes d’approvisionnement qui correspondent aux critères de requête.
 1. **[ACP2E-4805](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)** : correction d’un problème en raison duquel les requêtes d’API de passage en caisse étaient considérablement plus lentes pour les produits configurables comportant de nombreux produits enfants lorsque le premier produit enfant vendable apparaissait en fin de liste.
-1. **[ACP2E-4870](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)** : correction du problème en raison duquel les notifications par e-mail des alertes de produit ignoraient les paramètres d’e-mail de la vue de magasin.
+1. **[ACP2E-4870](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)** : correction du problème en raison duquel les notifications par e-mail des alertes de produit ignoraient les paramètres d’e-mail de vue du magasin.
 1. **[ACP2E-4875](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)** : correction d’un problème en raison duquel l’affichage de comptes clients avec des carnets d’adresses volumineux dans l’administration déconnectait de manière inattendue les utilisateurs administrateurs.
 1. **[ACP2E-4894](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)** : correction du problème en raison duquel les nouvelles commandes apparaissent tardivement dans les grilles de gestion des commandes d’administration lorsque la **[!UICONTROL Asynchronous Indexing]** est activée sur les magasins à volume élevé.
 1. **ACP2E-4981** : correction d’un problème en raison duquel les carrousels de produits Page Builder affichent les produits dans un ordre qui ne reflète pas la position définie dans l’administration et incluent des produits configurables lorsque les produits enfants correspondants sont individuellement visibles.
