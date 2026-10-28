@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: a257144a94d94d7eb572031e2a188809cbff6ea8
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '267'
 ht-degree: 0%
 ---
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.68
@@ -44,7 +44,6 @@ QPT v1.1.68 comprend les correctifs suivants :
 1. **ACSD-66865** : l’enregistrement d’un **[!UICONTROL Catalog Price Rule]** invalide les indexeurs et fournit une alternative à la réindexation des produits affectés uniquement.
 1. **ACSD-66889** : erreur lors de la réindexation de l’inventaire dans l’interface de ligne de commande.
 1. **ACSD-66963** : `estimateTotals` mutation renvoie *null* pour les remises lorsqu’un code de remise est appliqué à un panier avec des produits virtuels.
-1. **ACSD-66965** : L&#39;option Imprimer de la page Liste des demandes d&#39;approvisionnement provoque une erreur.
 1. **ACSD-66965** : **[!UICONTROL Print]** option sur **[!UICONTROL Requisition List]** page provoque une erreur.
 1. **ACSD-67039** : les enregistrements du client n’ont pas été enregistrés en raison de la validation de l’attribut système `rp_token`.
 
