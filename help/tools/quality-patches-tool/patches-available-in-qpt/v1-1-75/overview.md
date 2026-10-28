@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 5c33cd529bff9208d640cec3c4068f578a9e376c
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '276'
 ht-degree: 0%
 ---
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.75
@@ -36,7 +36,7 @@ QPT v1.1.75 comprend les correctifs suivants :
 1. **ACSD-68451** : corrige un problème lié à plusieurs sites web en raison duquel l’administrateur d’une société se connecte à un site web, crée une société non liée sur un autre site web, mais est lié par erreur à cette société non liée.
 1. **ACSD-68517** : corrige une erreur de nouvel envoi de formulaire sur les pages **[!UICONTROL Catalog]** et **[!UICONTROL Catalog Search]**.
 1. **ACSD-68490** : bouton **[!UICONTROL Add New Attribute]** visible par l’administrateur restreint lors de la création du produit configurable.
-1. **ACSD-68573** : les autorisations de catégorie n’ont pas été appliquées aux éléments de la liste de souhaits du client, ce qui a entraîné un affichage et une pagination incorrects sur le storefront web et dans [!DNL GraphQL].
+1. **ACSD-68573** : correction d’un problème en raison duquel les autorisations de catégorie n’étaient pas correctement appliquées aux éléments de la liste de souhaits du client. Après la correction, les éléments de liste de souhaits sont correctement affichés et paginés sur le web et dans GraphQL.
 1. **ACSD-68615** : corrige le problème en raison duquel l’interface de ligne de commande de compensation de réservation de stock affichait une exception si la combinaison traitée avait un ID de commande manquant.
 1. **ACSD-68793** : correction d’un problème en raison duquel des produits valides étaient incorrectement rejetés lors de leur affectation à un catalogue partagé.
 1. **ACSD-68925** : correction d’un problème en raison duquel les réponses aux requêtes GraphQL étaient désormais alignées sur les spécifications GraphQL via HTTP. Un code de réponse 4XX est renvoyé lorsque la requête ne peut pas être analysée, n’est pas autorisée ou rencontre un problème général si la requête est analysée.
