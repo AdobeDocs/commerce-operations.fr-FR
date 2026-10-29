@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 5c33cd529bff9208d640cec3c4068f578a9e376c
+source-git-commit: d864a5fb8d9093a14575f017e7b66a19219d503f
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '526'
 ht-degree: 0%
 ---
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -39,14 +39,14 @@ QPT v1.1.83 comprend les correctifs suivants :
 1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)** : correction du problème en raison duquel un utilisateur administrateur disposant d’autorisations limitées ne peut pas supprimer les clients de la grille Clients .
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)** : correction du problème en raison duquel le type d&#39;éléments de la liste de demandes est mal orthographié dans le schéma GraphQL. L’ancien champ de `items` et le type de `RequistionListItems` restent disponibles, mais sont obsolètes.
 1. **ACP2E-4908** : correction du problème en raison duquel les catalogues volumineux entraînent une utilisation excessive de la mémoire dans Redis ou Valkey, car des entrées de cache de mise en page distinctes ont été créées pour chaque produit dans chaque vue de magasin.
+1. **[AC-16530](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530.md)** : correction d’un problème en raison duquel le panier ne reflétait pas de manière cohérente les mises à jour planifiées des règles de prix de catalogue.
 1. **[ACP2E-4977](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)** : correction du problème en raison duquel les totaux généraux des factures et des avoirs pour les produits configurables n&#39;incluent pas la taxe sur les produits fixes (FPT), ce qui entraîne des totaux inférieurs au total de la commande.
 1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)** : correction du problème en raison duquel la réorganisation d’une commande dans l’administration crée un nouveau numéro de commande avec un suffixe `-1` au lieu d’attribuer le numéro de commande séquentiel suivant.
-1. **AC-16530** : correction d’un problème en raison duquel le panier ne reflétait pas de manière cohérente les mises à jour planifiées des règles de prix de catalogue.
 1. **[AC-11389](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)** : correction d’un problème en raison duquel les remises, les taxes et les totaux des commandes ne sont pas calculés correctement dans certains scénarios d’arrondi.
 1. **[ACP2E-5015](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)** : correction d’un problème en raison duquel l’enregistrement d’un catalogue partagé dans l’administration peut involontairement supprimer les produits affectés et le prix lorsque les données de catalogue requises ne sont pas disponibles.
 1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)** : correction d’un problème en raison duquel la requête `POST /V1/products/tier-prices` de l’API REST échouait pour l’ensemble de la requête alors qu’il n’existait pas de SKU dans la payload, empêchant la mise à jour des SKU valides.
 1. **[AC-14940](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)** : correction d’un problème en raison duquel cliquer sur [!UICONTROL Reset Password] pour un compte client dans l’administrateur n’envoie pas l’e-mail de réinitialisation de mot de passe dans certains cas liés au magasin .
-1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)** : correction d’un problème en raison duquel l’installation du module B2B échouait lorsque les indexeurs étaient définis sur **[!UICONTROL Update by Schedule]**.
+1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)** : correction d’un problème en raison duquel l’installation du module B2B échouait lorsque les indexeurs étaient définis sur **[!UICONTROL Update on Schedule]**.
 1. **ACP2E-5205** : corrige le problème lorsque le chargement d’une catégorie prend beaucoup de temps ou entraîne un délai d’expiration lorsqu’un grand nombre de catégories et de produits est impliqué. En outre, le nombre de produits est désormais correctement affiché pour chaque feuille de catégorie.
 1. **[ACP2E-3211](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)** : correction d’un problème en raison duquel l’ajout d’un même produit au panier en même temps sur le storefront crée des articles distincts dans le panier pour le même SKU au lieu de les combiner en un seul article.
 1. **[ACP2E-5223](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)** : correction du problème en raison duquel l’index **[!UICONTROL Catalog Permissions]** inclut les sites web exclus d’un groupe de clients.
