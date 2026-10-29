@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d864a5fb8d9093a14575f017e7b66a19219d503f
+source-git-commit: cbba2086ee177da6a26da84984153b54c725e1a8
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '525'
 ht-degree: 0%
 ---
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -32,7 +32,7 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 
 QPT v1.1.83 comprend les correctifs suivants :
 
-1. **AC-17975** : corrige plusieurs problèmes de compatibilité PHP 8.5 affectant les workflows d’administration, l’authentification de passage en caisse, le traitement CAPTCHA, la gestion des catégories, les pages de configuration et les opérations de ligne de commande dans certains environnements PHP.
+1. **[AC-17975](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)** : corrige le problème d’échec des commandes d’interface de ligne de commande, de modification de catégorie, de configuration de conception et de connexion client AJAX dans Adobe Commerce 2.4.9 lorsque PHP 8.5 est utilisé.
 1. **[ACP2E-4877](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)** : correction du problème en raison duquel les commandes passées à l&#39;aide du paiement sur le compte n&#39;ont pas pu être modifiées dans Admin lorsque le statut était *En attente*.
 1. **[AC-18096](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)** : correction du problème en raison duquel les champs de date de Sales GraphQL renvoient des dates dans un format différent des versions précédentes en rétablissant le format de date de la barre oblique (/) à la barre oblique (-).
 1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)** : correction du problème en raison duquel les dates de commande et les horodatages des commentaires de commande renvoyés par GraphQL peuvent afficher des dates de calendrier incorrectes dans des paramètres régionaux non anglais.
