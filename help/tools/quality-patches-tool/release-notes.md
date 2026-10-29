@@ -18,9 +18,9 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 244ff697888c6feed99861b3e7b63c8cccc3676c
 workflow-type: tm+mt
-source-wordcount: '33143'
+source-wordcount: '33534'
 ht-degree: 0%
 ---
 # Notes de mise à jour
@@ -29,11 +29,28 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 
 >[!INFO]
 >
->Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=fr#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
+>Voir [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) pour obtenir des instructions sur l’application de correctifs à vos projets Adobe Commerce. Voir [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le Guide de mise à jour logicielle pour consulter la liste complète des correctifs publiés.
 
 >[!INFO]
 >
 >Pour plus d’informations sur les [!DNL quality patches] créées par la communauté pour Magento Open Source, consultez les [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.85 {#v1-1-85}
+
+* **ACP2E-4929** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.10) - Correction du problème en raison duquel les libellés d’attribut sur la page [!UICONTROL Compare Products] affichaient les traductions à partir d’une vue de magasin différente de la vue de magasin actuelle.
+* **ACP2E-5075** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.10) - Correction du problème où une règle de prix de panier à montant fixe avec une condition de catégorie appliquait incorrectement une remise à tous les enfants d’un produit groupé à prix dynamique lorsque la règle ne correspondait qu’au produit parent du lot.
+* **ACP2E-5077** (pour Adobe Commerce et Magento Open Source >=2.4.7-p7 &lt;2.4.10) - Correction du problème en raison duquel des requêtes `customerCart` GraphQL ou des requêtes `POST /V1/carts/mine REST` simultanées créent des paniers actifs en double pour les clients qui n’en ont pas déjà un.
+* **ACP2E-5088** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.10) - Correction du problème en raison duquel le panier persistant d’un client est effacé à l’expiration de sa session.
+* **ACP2E-3991** (pour Adobe Commerce >=2.4.7 &lt;2.4.9) - Correction d’un problème en raison duquel l’adresse IP du client n’est pas déterminée correctement.
+* **ACP2E-5092** (pour Adobe Commerce, B2B >=1.3.4 &lt;1.5.4) - Correction du problème en raison duquel la page [!UICONTROL Company Profile] et la page Admin [!UICONTROL Customer Edit] affichaient une erreur lorsqu’une adresse de société enregistrée sans zone géographique était associée ultérieurement à une zone géographique.
+* **ACP2E-5124** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.10) - Correction du problème en raison duquel le bouton [!UICONTROL Import] reste disponible dans les résultats de validation après l’échec de la validation lorsque le [!UICONTROL Validation Strategy] est défini sur *Arrêter en cas d’erreur*.
+* **AC-17456** (pour Adobe Commerce et Magento Open Source >=2.4.9 &lt;2.4.10) - Correction du problème en raison duquel la modification de la portée *[!UICONTROL Global]* sur la page [!UICONTROL Design Configuration] du panneau d’administration renvoie une erreur *HTTP 500* sur PHP 8.4 et 8.5.
+* **ACP2E-5212** (pour Adobe Commerce, B2B >=1.3.4 &lt;1.5.4) - Correction du problème en raison duquel [!UICONTROL Quick Order] accepte les fichiers non-CSV renommés avec une extension `.csv`.
+* **ACP2E-5300** (pour Adobe Commerce et Magento Open Source >=2.4.9 &lt;2.4.10) - Correction du problème en raison duquel les mots-clés recherchent plusieurs numéros de commande séparés par des espaces ou des virgules dans la grille du Panneau d’administration [!UICONTROL Orders] ne renvoient aucun ordre correspondant.
+* **ACP2E-5354** (pour Adobe Commerce, B2B >=1.5.3 &lt;1.5.4) - Correction du problème en raison duquel la mise à jour d’un client par le biais de l’API REST entraîne l’affichage multiple d’un client associé à un compte de société dans la grille [!UICONTROL Customers] d’administration.
+* **ACP2E-5208** (pour Adobe Commerce, B2B >=1.5.1 &lt;1.5.4) - Correction du problème en raison duquel la section [!UICONTROL Requisition List] se recharge sur chaque navigation de page Storefront, même si aucune modification n’a été apportée.
+* Versions mises à jour : **ACP2E-4894**
+* Correctifs remplacés : **ACP2E-4626**
 
 ## v1.1.84 {#v1-1-84}
 
@@ -136,7 +153,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACP2E-4156** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème en raison duquel la validation de l’adresse de livraison dans l’API REST n’est pas conforme à la configuration d’attribut définie dans Admin.
 * **ACP2E-4813** (pour Adobe Commerce et Magento Open Source >=2.4.6-p3 &lt;2.4.6-p15 || >=2.4.7 &lt;2.4.7-p10 || >=2.4.8 &lt;2.4.8-p5) - Correction du problème en raison duquel les méthodes d’expédition USPS ne sont pas disponibles au moment du passage en caisse et les estimations d’expédition sont incorrectes pour certains produits, y compris les commandes fractionnées en plusieurs packages.
 * **ACSD-53502** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.6) - Correction du problème en raison duquel l’option Ajouter au panier échoue par intermittence sur le storefront dans iOS Safari en raison d’appels récursifs au script de surveillance New Relic, ce qui entraîne des rechargements de page.
-* Versions mises à jour : **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD-61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477** **ACSD-58108**, **ACSD-66149**, **ACSD-66404**, **ACSD-67250**, **&#x200B;**-440267686 **,**&#x200B;**-450568925**, **ACP2E-4603**, **ACP2E-4706** ACP2E **ACP2E**
+* Versions mises à jour : **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD-61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477** **ACSD-58108**, **ACSD-66149**, **ACSD-66404**, **ACSD-67250**, ****-440267686 **,****-450568925**, **ACP2E-4603**, **ACP2E-4706** ACP2E **ACP2E**
 * Correctifs remplacés : **AC-15210**, **ACSD-58108**
 
 ## v1.1.79 {#v1-1-79}
@@ -180,7 +197,7 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 * **ACP2E-4732** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction d’un problème en raison duquel l’indexation partielle s’arrêtait pour les clients avec un grand nombre de mises à jour lorsque la colonne version_id de la table changelog atteignait sa valeur maximale.
 * **ACP2E-4763** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.9) - Correction du problème en raison duquel la requête customerOrders de GraphQL renvoie des valeurs original_price_include_tax et original_row_total_include_tax gonflées lorsque les prix du catalogue sont définis sur Taxe incluse, en raison d’une application double de la taxe.
 * **ACSD-60989** (pour Adobe Commerce et Magento Open Source >=2.4.4 &lt;2.4.8) - Correction du problème en raison duquel la modification d’une colonne avec une clé étrangère par le biais d’un schéma déclaratif provoque des erreurs sur MariaDB.
-* Versions mises à jour : **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-55031**, **ACSD-51819**, **ACSD-55628**, **ACSD-54965,** ACSD-**, 56546** ACSD-**, 61756** ACSD-**, 68040** ACSD-**, 62708** ACSD-**, 63283** ACSD-**, 64732** ACSD-**, 65775** ACSD-**, 66965** ACSD-ACP2E, **&#x200B;**-4050
+* Versions mises à jour : **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-55031**, **ACSD-51819**, **ACSD-55628**, **ACSD-54965,** ACSD-**, 56546** ACSD-**, 61756** ACSD-**, 68040** ACSD-**, 62708** ACSD-**, 63283** ACSD-**, 64732** ACSD-**, 65775** ACSD-**, 66965** ACSD-ACP2E, ****-4050
 * Correctifs remplacés : **ACSD-58446**, **ACSD-67904**
 
 ## v1.1.77 {#v1-1-77}
