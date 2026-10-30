@@ -18,9 +18,9 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 244ff697888c6feed99861b3e7b63c8cccc3676c
 workflow-type: tm+mt
-source-wordcount: '33143'
+source-wordcount: '33534'
 ht-degree: 0%
 ---
 # Notes de mise à jour
@@ -34,6 +34,23 @@ Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fou
 >[!INFO]
 >
 >Pour plus d’informations sur les [!DNL quality patches] créées par la communauté pour Magento Open Source, consultez les [notes de mise à jour](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.85 {#v1-1-85}
+
+* **ACP2E-4929** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.10) - Correction du problème en raison duquel les libellés d’attribut sur la page [!UICONTROL Compare Products] affichaient les traductions à partir d’une vue de magasin différente de la vue de magasin actuelle.
+* **ACP2E-5075** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.10) - Correction du problème où une règle de prix de panier à montant fixe avec une condition de catégorie appliquait incorrectement une remise à tous les enfants d’un produit groupé à prix dynamique lorsque la règle ne correspondait qu’au produit parent du lot.
+* **ACP2E-5077** (pour Adobe Commerce et Magento Open Source >=2.4.7-p7 &lt;2.4.10) - Correction du problème en raison duquel des requêtes `customerCart` GraphQL ou des requêtes `POST /V1/carts/mine REST` simultanées créent des paniers actifs en double pour les clients qui n’en ont pas déjà un.
+* **ACP2E-5088** (pour Adobe Commerce et Magento Open Source >=2.4.8 &lt;2.4.10) - Correction du problème en raison duquel le panier persistant d’un client est effacé à l’expiration de sa session.
+* **ACP2E-3991** (pour Adobe Commerce >=2.4.7 &lt;2.4.9) - Correction d’un problème en raison duquel l’adresse IP du client n’est pas déterminée correctement.
+* **ACP2E-5092** (pour Adobe Commerce, B2B >=1.3.4 &lt;1.5.4) - Correction du problème en raison duquel la page [!UICONTROL Company Profile] et la page Admin [!UICONTROL Customer Edit] affichaient une erreur lorsqu’une adresse de société enregistrée sans zone géographique était associée ultérieurement à une zone géographique.
+* **ACP2E-5124** (pour Adobe Commerce et Magento Open Source >=2.4.5 &lt;2.4.10) - Correction du problème en raison duquel le bouton [!UICONTROL Import] reste disponible dans les résultats de validation après l’échec de la validation lorsque le [!UICONTROL Validation Strategy] est défini sur *Arrêter en cas d’erreur*.
+* **AC-17456** (pour Adobe Commerce et Magento Open Source >=2.4.9 &lt;2.4.10) - Correction du problème en raison duquel la modification de la portée *[!UICONTROL Global]* sur la page [!UICONTROL Design Configuration] du panneau d’administration renvoie une erreur *HTTP 500* sur PHP 8.4 et 8.5.
+* **ACP2E-5212** (pour Adobe Commerce, B2B >=1.3.4 &lt;1.5.4) - Correction du problème en raison duquel [!UICONTROL Quick Order] accepte les fichiers non-CSV renommés avec une extension `.csv`.
+* **ACP2E-5300** (pour Adobe Commerce et Magento Open Source >=2.4.9 &lt;2.4.10) - Correction du problème en raison duquel les mots-clés recherchent plusieurs numéros de commande séparés par des espaces ou des virgules dans la grille du Panneau d’administration [!UICONTROL Orders] ne renvoient aucun ordre correspondant.
+* **ACP2E-5354** (pour Adobe Commerce, B2B >=1.5.3 &lt;1.5.4) - Correction du problème en raison duquel la mise à jour d’un client par le biais de l’API REST entraîne l’affichage multiple d’un client associé à un compte de société dans la grille [!UICONTROL Customers] d’administration.
+* **ACP2E-5208** (pour Adobe Commerce, B2B >=1.5.1 &lt;1.5.4) - Correction du problème en raison duquel la section [!UICONTROL Requisition List] se recharge sur chaque navigation de page Storefront, même si aucune modification n’a été apportée.
+* Versions mises à jour : **ACP2E-4894**
+* Correctifs remplacés : **ACP2E-4626**
 
 ## v1.1.84 {#v1-1-84}
 
