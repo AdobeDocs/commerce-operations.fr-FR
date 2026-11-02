@@ -21,7 +21,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 04e36db108c59bd9be2431a5b1a9ee86891b6268
+source-git-commit: c97df849a9fba077fc75b194298ab759e3129ad5
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -39,10 +39,10 @@ QPT v1.1.84 comprend les correctifs suivants :
 1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)** : correction du problème où les indexeurs restent bloqués dans une boucle et où la réindexation ne se termine pas lorsque le verrouillage des fichiers est activé.
 1. **ACP2E-5029** : correction d’un problème en raison duquel les modifications apportées aux règles de prix de catalogue n’apparaissent dans **[!DNL Live Search]** qu’après une resynchronisation manuelle.
 1. **ACP2E-5041** : correction d’un problème en raison duquel l’enregistrement d’un produit lors d’une mise à jour planifiée entraînait l’affichage par le storefront du prix normal au lieu du **[!UICONTROL Special Price]** une fois la mise à jour terminée.
+1. **[ACP2E-5183](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)** : corrige le problème en raison duquel le déploiement du contenu statique échoue sur PHP 8.5 lors de la compilation d&#39;un fichier `LESS` qui utilise la directive `@magento_import`.
 1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)** : correction du problème en raison duquel les clients reçoivent des e-mails de confirmation de commande en double pour la même commande.
 1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)** : correction d’un problème en raison duquel les erreurs gérées à partir des requêtes GraphQL pour le panier étaient incorrectement enregistrées dans les journaux d’exceptions en tant qu’erreurs d’application.
 1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)** : correction d’un problème en raison duquel la requête `route` de GraphQL effectue le rendu de l’intégralité du contenu des pages CMS lorsque seules les métadonnées de routage sont demandées, ce qui augmente les requêtes de base de données pour les pages CMS contenant des widgets [!DNL Page Builder].
-1. **ACP2E-5183** : corrige le problème en raison duquel le déploiement du contenu statique échoue sur PHP 8.5 lors de la compilation d&#39;un fichier `LESS` qui utilise la directive `@magento_import`.
 1. **[ACP2E-5242](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)** : correction d’un problème en raison duquel la vérification de la disponibilité du produit lors de l’ajout d’articles au panier affiche une erreur indiquant que le site web est introuvable.
 1. **[ACP2E-5263](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)** : correction d’un problème en raison duquel l’exportation de produits dans un fichier CSV peut s’arrêter avant que tous les produits ne soient inclus, ce qui entraîne la création d’un fichier incomplet.
 1. **ACP2E-5034** : Correction du problème en raison duquel la gestion des devis négociables réinitialise incorrectement les totaux sur *zéro* lors du recalcul d&#39;un devis après la sélection d&#39;un mode d&#39;expédition, ignore les mises à jour des quantités d&#39;option de produit groupé effectuées via l&#39;action **[!UICONTROL Configure]** dans l&#39;administrateur et ne reflète pas correctement les remises au niveau article appliquées aux produits groupés à prix dynamique dans les sous-totaux de devis.
