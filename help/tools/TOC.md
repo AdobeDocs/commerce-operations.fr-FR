@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: cbba2086ee177da6a26da84984153b54c725e1a8
+source-git-commit: c97df849a9fba077fc75b194298ab759e3129ad5
 workflow-type: tm+mt
-source-wordcount: '11091'
+source-wordcount: '11112'
 ht-degree: 0%
 ---
 
@@ -417,7 +417,7 @@ ht-degree: 0%
     - v1.1.33 {#v1-1-33}
       - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.33](quality-patches-tool/patches-available-in-qpt/v1-1-33/overview.md)
       - [ACSD-51792 : la page ne comporte pas d’événement d’impression](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51792-page-does-not-have-impression-event.md)
-      - [ACSD-51645 : enregistrer une nouvelle règle de prix de panier si l’extension Magento_OfflineShipping est désactivée](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
+      - [ACSD-51645 : enregistrement d’une nouvelle règle de prix de panier si l’extension Magento_OfflineShipping est désactivée](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
       - [ACSD-51240 : fichier chargé manquant lors de l&#39;enregistrement via le formulaire d&#39;enregistrement de l&#39;entreprise](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51240-uploaded-file-missing-while-registering-via-company-registration-form.md)
       - [ACSD-51907 : l&#39;utilisateur administrateur restreint ne peut pas créer d&#39;avoir pour le remboursement hors ligne](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51907-restricted-admin-user-cannot-create-a-credit-memo-with-an-offline-refund.md)
       - [ACSD-51892 : problème de performances lorsque les fichiers de configuration se chargent plusieurs fois](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.md)
@@ -1060,6 +1060,7 @@ ht-degree: 0%
       - [ACP2E-4875 : les utilisateurs administrateurs se sont déconnectés lors de l’ouverture de comptes clients avec des carnets d’adresses volumineux](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-4908 : les catalogues volumineux entraînent une utilisation excessive de la mémoire Redis ou Valkey](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4908.md)
       - [AC-17975 : les problèmes de compatibilité PHP 8.5 affectent les commandes d&#39;interface de ligne de commande, l&#39;édition de catégories, la configuration de conception et la connexion client](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)
       - [AC-16530 : le panier affiche des prix incohérents après une mise à jour planifiée des règles de prix de catalogue](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530.md)
       - [ACP2E-4977 : Les totaux configurables de facture de produit et d&#39;avoir excluent la taxe sur le produit fixe](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)
@@ -1078,6 +1079,7 @@ ht-degree: 0%
       - [AC-12854 : la réorganisation de l’administrateur utilise le numéro de commande d’origine avec un suffixe -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5183 : Le déploiement de contenu statique échoue sur PHP 8.5 avec `@magento_import`](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)
       - [AC-15494 : la requête de produits GraphQL renvoie des noms de produits avec échappement HTML](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)
       - [ACP2E-5242 : GraphQL utilise l’ID de magasin comme ID de site web lors des demandes d’ajout au panier](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)
       - [ACP2E-5027 : les indexeurs ne se terminent pas lorsque le verrouillage de l’application utilise le fournisseur de verrouillage de fichiers](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)
