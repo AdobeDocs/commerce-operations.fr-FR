@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: a6400a85be93c8576f5bb2866f4f5107acb5ec1d
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '420'
 ht-degree: 0%
 ---
 # Définir le mode de fonctionnement
@@ -135,6 +135,10 @@ Enabled production mode.
 ```
 
 ### Passer en mode Développeur
+
+>[!NOTE]
+>
+>Le mode Développeur n’est pas pris en charge dans l’environnement Adobe Commerce Cloud et la prise en charge d’Adobe Commerce ne peut pas faciliter le changement de mode d’application.
 
 Lorsque vous passez du mode de production au mode de développement, vous devez effacer les classes générées et les entités Object Manager telles que les proxies pour éviter les erreurs inattendues. Après cela, vous pouvez changer de mode. Procédez comme suit :
 
