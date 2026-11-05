@@ -34,7 +34,7 @@ Le tableau ci-dessous contient des notes de mise à jour et des informations imp
 
 >[!TIP]
 >
->- Si vous découvrez Adobe Commerce, consultez les rubriques [ Architecture d’entreprise ](../../implementation-playbook/architecture/enterprise-blueprint.md) et [ À propos d’Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) pour obtenir des informations détaillées.
+>- Si vous découvrez Adobe Commerce, consultez les rubriques [&#x200B; Architecture d’entreprise &#x200B;](../../implementation-playbook/architecture/enterprise-blueprint.md) et [&#x200B; À propos d’Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) pour obtenir des informations détaillées.
 >- Pour plus d’informations sur les mises à niveau, voir [lecture recommandée](../../upgrade/resources/recommended-reading.md).
 
 <table>
@@ -96,7 +96,7 @@ Le tableau ci-dessous contient des notes de mise à jour et des informations imp
        <td><strong>Expérience Storefront</strong>
         <p>Découvrez les dernières améliorations apportées à la technologie storefront que vous pouvez utiliser pour créer des expériences uniques pour vos clients.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/ »">Adobe Commerce Storefront</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/»">Adobe Commerce Storefront</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Page Builder</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
