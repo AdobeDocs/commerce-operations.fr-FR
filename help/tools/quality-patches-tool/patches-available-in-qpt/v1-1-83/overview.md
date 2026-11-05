@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a376b03617703097396bef92f8174bfe1da34c52
+source-git-commit: ea5f12bca7e8a3969ffa775d6a675a224f08155f
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '523'
 ht-degree: 0%
 ---
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -47,7 +47,7 @@ QPT v1.1.83 comprend les correctifs suivants :
 1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)** : correction d’un problème en raison duquel la requête `POST /V1/products/tier-prices` de l’API REST échouait pour l’ensemble de la requête alors qu’il n’existait pas de SKU dans la payload, empêchant la mise à jour des SKU valides.
 1. **[AC-14940](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)** : correction d’un problème en raison duquel cliquer sur [!UICONTROL Reset Password] pour un compte client dans l’administrateur n’envoie pas l’e-mail de réinitialisation de mot de passe dans certains cas liés au magasin .
 1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)** : correction d’un problème en raison duquel l’installation du module B2B échouait lorsque les indexeurs étaient définis sur **[!UICONTROL Update on Schedule]**.
-1. **ACP2E-5205** : corrige le problème lorsque le chargement d’une catégorie prend beaucoup de temps ou entraîne un délai d’expiration lorsqu’un grand nombre de catégories et de produits est impliqué. En outre, le nombre de produits est désormais correctement affiché pour chaque feuille de catégorie.
+1. **[ACP2E-5205](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5205.md)** : corrige le problème lorsque le chargement d’une catégorie prend beaucoup de temps ou entraîne un délai d’expiration lorsqu’un grand nombre de catégories et de produits est impliqué. En outre, le nombre de produits s’affiche correctement pour chaque feuille de catégorie.
 1. **[ACP2E-3211](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)** : correction d’un problème en raison duquel l’ajout d’un même produit au panier en même temps sur le storefront crée des articles distincts dans le panier pour le même SKU au lieu de les combiner en un seul article.
 1. **[ACP2E-5223](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)** : correction du problème en raison duquel l’index **[!UICONTROL Catalog Permissions]** inclut les sites web exclus d’un groupe de clients.
 

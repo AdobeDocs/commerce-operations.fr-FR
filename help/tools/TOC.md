@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: c97df849a9fba077fc75b194298ab759e3129ad5
+source-git-commit: ea5f12bca7e8a3969ffa775d6a675a224f08155f
 workflow-type: tm+mt
-source-wordcount: '11112'
+source-wordcount: '11124'
 ht-degree: 0%
 ---
 
@@ -1060,6 +1060,7 @@ ht-degree: 0%
       - [ACP2E-4875 : les utilisateurs administrateurs se sont déconnectés lors de l’ouverture de comptes clients avec des carnets d’adresses volumineux](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-5205 : les catalogues volumineux ralentissent le chargement des catégories et les délais d’expiration dans Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5205.md)
       - [ACP2E-4908 : les catalogues volumineux entraînent une utilisation excessive de la mémoire Redis ou Valkey](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4908.md)
       - [AC-17975 : les problèmes de compatibilité PHP 8.5 affectent les commandes d&#39;interface de ligne de commande, l&#39;édition de catégories, la configuration de conception et la connexion client](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)
       - [AC-16530 : le panier affiche des prix incohérents après une mise à jour planifiée des règles de prix de catalogue](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530.md)
