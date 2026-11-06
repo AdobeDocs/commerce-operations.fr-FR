@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 5c33cd529bff9208d640cec3c4068f578a9e376c
+source-git-commit: 49785473e0154e72e675b54f9d8119460c53bd8c
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '284'
 ht-degree: 0%
 ---
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.75
@@ -35,7 +35,7 @@ QPT v1.1.75 comprend les correctifs suivants :
 1. **ACSD-68359** : corrige l’erreur *414* lors de la sélection de **[!UICONTROL Pick in Store]** avec des paniers volumineux.
 1. **ACSD-68451** : corrige un problème lié à plusieurs sites web en raison duquel l’administrateur d’une société se connecte à un site web, crée une société non liée sur un autre site web, mais est lié par erreur à cette société non liée.
 1. **ACSD-68517** : corrige une erreur de nouvel envoi de formulaire sur les pages **[!UICONTROL Catalog]** et **[!UICONTROL Catalog Search]**.
-1. **ACSD-68490** : bouton **[!UICONTROL Add New Attribute]** visible par l’administrateur restreint lors de la création du produit configurable.
+1. **ACSD-68490** : corrige le problème en raison duquel le bouton **[!UICONTROL Add New Attribute]** est visible pour un utilisateur administrateur restreint lors de la création d’un produit configurable.
 1. **ACSD-68573** : correction d’un problème en raison duquel les autorisations de catégorie n’étaient pas correctement appliquées aux éléments de la liste de souhaits du client. Après la correction, les éléments de liste de souhaits sont correctement affichés et paginés sur le web et dans GraphQL.
 1. **ACSD-68615** : corrige le problème en raison duquel l’interface de ligne de commande de compensation de réservation de stock affichait une exception si la combinaison traitée avait un ID de commande manquant.
 1. **ACSD-68793** : correction d’un problème en raison duquel des produits valides étaient incorrectement rejetés lors de leur affectation à un catalogue partagé.
