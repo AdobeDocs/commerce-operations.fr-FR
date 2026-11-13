@@ -3,7 +3,7 @@ title: Phases de mise en œuvre
 description: Découvrez les bonnes pratiques pour les phases de mise en œuvre des projets Adobe Commerce.
 exl-id: c5272f79-7315-46dc-a191-a40004aaa812
 feature: Best Practices
-last-update: 2026-01-20
+last-update: 2026-11-09
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -18,7 +18,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 5a85d42e72f735129cf65a199b94af8f40b8737d
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 7%
@@ -56,7 +56,7 @@ Ces bonnes pratiques sont organisées par phase d’implémentation afin que vou
       <img alt="Launch" src="../../assets/icons/launch.svg" width="80" height="80">
     </a>
     <div>
-    <a href="launch/overview.md"><strong>Launch </strong></a>
+    <a href="launch/overview.md"><strong>Lancement</strong></a>
     </div>
     Examens finaux des listes de contrôle avant et après le lancement, déploiement en production, configuration de la sécurité, vérification des services et surveillance des performances  
     <br>
@@ -66,7 +66,7 @@ Ces bonnes pratiques sont organisées par phase d’implémentation afin que vou
       <img alt="Maintenance" src="../../assets/icons/gauge.svg" width="80" height="80">
     </a>
     <div>
-    <a href="maintenance/overview.md"><strong> Maintenance </strong></a>
+    <a href="maintenance/overview.md"><strong>Maintenance</strong></a>
     </div>
     Surveillance de site, gestion de catalogue, indexation, configuration, améliorations de fonctionnalités, correction de bogues, services gérés, mises à niveau   
     <br>
