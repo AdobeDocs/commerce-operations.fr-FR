@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 25d545e300a0a32f982a41c7d3d82b3ed5daf5ef
+source-git-commit: 8e93fbc0f771dd2b4ca1a5049ef8dd15f947cd82
 workflow-type: tm+mt
-source-wordcount: '11153'
+source-wordcount: '11157'
 ht-degree: 0%
 ---
 
@@ -1097,6 +1097,8 @@ ht-degree: 0%
       - [ACP2E-5017 : la requête de rôle de client GraphQL échoue pour les clients sans entreprise](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)
       - [ACP2E-5143 : la requête d’itinéraire GraphQL effectue le rendu du contenu de page CMS non demandé](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)
       - [ACP2E-4741 : l’enregistrement d’un produit lié masque un autre produit du storefront avec un stock personnalisé](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
+    - v1.1.85 {#v1-1-85}
+      - [Présentation :  [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
   - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Référence des outils de ligne de commande {#cli-reference}
   - [Adobe Commerce (sur site)](reference/commerce-on-premises.md)
