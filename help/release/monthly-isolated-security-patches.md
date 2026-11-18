@@ -78,7 +78,7 @@ Pour appliquer le fichier de correctif de sécurité isolé mensuel et rester à
 
    Les nouveaux fichiers de correctifs isolés mensuels sont expédiés conformément au calendrier de publication. Consultez le bulletin de sécurité correspondant pour les composants et les fichiers CVE concernés. Chaque bulletin contient des liens vers les notes de mise à jour avec des instructions détaillées pour installer le fichier de correctif isolé de ce mois-là.
 
-1. **Vérifiez le statut de sécurité de votre installation Commerce à l&#39;aide de l&#39;outil [Version de Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro).**
+1. **Vérifiez le statut de sécurité de votre installation Commerce à l&#39;aide de l&#39;outil [Version de Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/commerce-version-tool/intro).**
 
    L’outil signale les correctifs mensuels actuellement installés, ceux qui sont manquants et les fichiers CVE auxquels l’installation reste exposée. Cela permet d’évaluer de manière définitive l’action requise, plutôt que de se fier uniquement au numéro de version.
 
@@ -92,7 +92,7 @@ Pour appliquer le fichier de correctif de sécurité isolé mensuel et rester à
 
    >[!NOTE]
    >
-   >**Clients Cloud :** Vérifiez d’abord les correctifs cloud installés pour Commerce [version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest). Le correctif peut déjà être inclus et son application manuelle peut créer un conflit ou dupliquer le correctif.
+   >**Clients Cloud :** Vérifiez d’abord les correctifs cloud installés pour Commerce [version](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest). Le correctif peut déjà être inclus et son application manuelle peut créer un conflit ou dupliquer le correctif.
 
 1. **Associez les fichiers à vos composants installés.**
 
@@ -106,7 +106,7 @@ Pour appliquer le fichier de correctif de sécurité isolé mensuel et rester à
 
    Validez dans l’évaluation avant de passer en production, conformément à votre processus de modification normal.
 
-Les clients Cloud peuvent également utiliser l’[automatisation des correctifs Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/caps-tool/intro) pour appliquer ou annuler des correctifs par le biais du panneau d’administration au lieu des étapes manuelles Git et Composer ci-dessus.
+Les clients Cloud peuvent également utiliser l’[automatisation des correctifs Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/caps-tool/intro) pour appliquer ou annuler des correctifs par le biais du panneau d’administration au lieu des étapes manuelles Git et Composer ci-dessus.
 
 ## Actions Patch par type de déploiement
 
@@ -131,7 +131,7 @@ Dans une installation comportant plusieurs composants (CE, EE, B2B et Page Build
 
 ### Avec des correctifs superposés, comment savoir dans quel état de sécurité se trouve mon installation ?
 
-Avec la publication des correctifs de sécurité mensuels, Adobe Commerce a introduit l’[outil de version de Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro), un utilitaire autonome qui signale les correctifs installés ou manquants et les fichiers CVE contre lesquels votre installation est protégée. Plutôt que de compter sur des numéros de version, l’outil lit les métadonnées des correctifs et fournit une sortie lisible par ordinateur pour la création de rapports et l’intégration continue (CI).
+Avec la publication des correctifs de sécurité mensuels, Adobe Commerce a introduit l’[outil de version de Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/commerce-version-tool/intro), un utilitaire autonome qui signale les correctifs installés ou manquants et les fichiers CVE contre lesquels votre installation est protégée. Plutôt que de compter sur des numéros de version, l’outil lit les métadonnées des correctifs et fournit une sortie lisible par ordinateur pour la création de rapports et l’intégration continue (CI).
 
 ### Cela signifie-t-il qu’Adobe a abandonné les versions de sécurité cumulatives ?
 
@@ -149,4 +149,4 @@ Non. Le mécanisme de diffusion n’affecte pas les résultats de sécurité du 
 >* [Politique de mise à jour](versioning-policy.md)
 >* [Calendrier de publication des correctifs](schedule.md)
 >* [Outil de version Commerce](../tools/commerce-version-tool/intro.md)
->* [Bulletins et conseils de sécurité Adobe](https://helpx.adobe.com/security/security-bulletin.html)
+>* [Bulletins et conseils de sécurité Adobe](https://helpx.adobe.com/fr/security/security-bulletin.html)

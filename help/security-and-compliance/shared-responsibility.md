@@ -40,7 +40,7 @@ Les commerçants sont responsables des éléments suivants :
 * Assurer le développement sécurisé des applications
 * Obtention de la certification PCI si demandé par le responsable du traitement des paiements du commerçant
 * Réagir et répondre aux incidents de sécurité
-* En conservant toutes les dépendances tierces, les services de plateforme et les extensions des services Adobe Commerce sur les versions activement prises en charge. Adobe ne fournit pas de prise en charge ni d’assistance en matière de sécurité pour les déploiements exécutant des versions dépendantes non prises en charge. Consultez la [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) et la [matrice de disponibilité du produit](/help/release/product-availability.md) pour les versions prises en charge.
+* En conservant toutes les dépendances tierces, les services de plateforme et les extensions des services Adobe Commerce sur les versions activement prises en charge. Adobe ne fournit pas de prise en charge ni d’assistance en matière de sécurité pour les déploiements exécutant des versions dépendantes non prises en charge. Consultez la [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) et la [matrice de disponibilité du produit](/help/release/product-availability.md) pour les versions prises en charge.
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Adobe assure également la disponibilité de l’infrastructure du commerçant c
 Le commerçant est chargé de suivre les bonnes pratiques de sécurité pour son instance personnalisée de la solution Adobe Commerce sur les infrastructures cloud :
 
 * Ajout des fichiers de configuration d’Adobe Commerce sur l’infrastructure cloud nécessaires au référentiel
-* Application de correctifs de sécurité et d’autres correctifs à leur solution personnalisée Adobe Commerce sur l’infrastructure cloud immédiatement après leur publication par Adobe. Pour les fichiers de correctif de sécurité individuels, consultez [Comment appliquer un correctif compositeur fourni par Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) dans le _Guide des outils et de l’assistance d’Adobe_.
+* Application de correctifs de sécurité et d’autres correctifs à leur solution personnalisée Adobe Commerce sur l’infrastructure cloud immédiatement après leur publication par Adobe. Pour les fichiers de correctif de sécurité individuels, consultez [Comment appliquer un correctif compositeur fourni par Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) dans le _Guide des outils et de l’assistance d’Adobe_.
 * Application de correctifs de sécurité et autres à toutes les extensions et à tout le code personnalisés immédiatement après leur publication par le fournisseur
 * Création, déploiement et test de fichiers VCL Varnish personnalisés
 * Conception, définition de thèmes, installation, intégration et sécurisation de la solution personnalisée Adobe Commerce sur l’infrastructure cloud d’, y compris toutes les extensions et le code personnalisés
@@ -112,7 +112,7 @@ Le commerçant est chargé de suivre les bonnes pratiques de sécurité pour son
   * Extensions des services Adobe Commerce
   * Toutes les extensions tierces et les intégrations personnalisées
 
-  Adobe ne prend pas en charge les déploiements exécutant des versions non prises en charge. Consultez la [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) et la [matrice de disponibilité du produit](/help/release/product-availability.md) pour les versions prises en charge.
+  Adobe ne prend pas en charge les déploiements exécutant des versions non prises en charge. Consultez la [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) et la [matrice de disponibilité du produit](/help/release/product-availability.md) pour les versions prises en charge.
 
 ## Responsabilités des fournisseurs de services cloud
 
