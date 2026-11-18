@@ -74,7 +74,7 @@ Cette approche fonctionne car les correctifs à usage unique ignorent les tests 
 
 Pour appliquer le fichier de correctif de sécurité isolé mensuel et rester à jour sur les derniers correctifs, procédez comme suit :
 
-1. **Vérifiez le planning de publication de [2}.**](schedule.md)
+1. **Vérifiez le planning de publication de [2&rbrace;.**](schedule.md)
 
    Les nouveaux fichiers de correctifs isolés mensuels sont expédiés conformément au calendrier de publication. Consultez le bulletin de sécurité correspondant pour les composants et les fichiers CVE concernés. Chaque bulletin contient des liens vers les notes de mise à jour avec des instructions détaillées pour installer le fichier de correctif isolé de ce mois-là.
 
