@@ -57,13 +57,13 @@ whatsnew_consolidated:
   projects:
     - repo: commerce-operations.en
       title: Adobe Commerce operational guides
-      website: https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home
+      website: https://experienceleague.adobe.com/fr/docs/commerce-operations/operational-guides/home
     - repo: commerce-webapi
       title: Adobe Commerce web APIs
       website: https://developer.adobe.com/commerce/webapi/
     - repo: commerce.en
       title: Adobe Commerce
-      website: https://experienceleague.adobe.com/en/docs/commerce
+      website: https://experienceleague.adobe.com/fr/docs/commerce
 ```
 
 Déplacez les entrées pour modifier l’ordre des sections. Vous pouvez librement entrelacer des projets depuis les deux plateformes. Les noms de référentiel se terminant par `.en` utilisent le chemin d’accès source ExL, `help/_includes/templated/whats-new.md`. Tous les autres référentiels utilisent le chemin d’accès source DevSite, `src/pages/_includes/templated/whats-new.md`.
