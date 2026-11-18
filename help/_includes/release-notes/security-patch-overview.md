@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
+source-git-commit: 28065887dc2539b1e594792cbbff3bfff146163a
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '338'
 ht-degree: 0%
 ---
 # À propos des versions des correctifs de sécurité Adobe Commerce
@@ -16,7 +16,6 @@ Les versions de correctifs de sécurité peuvent également inclure des modifica
 
 Chaque version de correctif de sécurité est basée sur la version complète antérieure du correctif. Il contient les correctifs de qualité et de sécurité de la version précédente du correctif ainsi que les correctifs de sécurité créés entre la version précédente complète du correctif et la version précédente du correctif de sécurité.
 
-Pour obtenir des instructions sur le téléchargement et l’application de correctifs de sécurité, consultez [Comment obtenir et appliquer des correctifs de sécurité](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches) dans la _base de connaissances Adobe Commerce_.
 
 {{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 
@@ -26,4 +25,4 @@ Les fichiers de correctifs de sécurité isolés sont des fichiers de correctifs
 
 Pour appliquer un fichier de correctif de sécurité isolé, les clients doivent disposer de la dernière version du correctif de sécurité uniquement (la dernière version -p) pour leur ligne de version prise en charge, car les fichiers de correctif de sécurité isolés sont testés exclusivement par rapport à cette version.
 
-Consultez [Bulletins et conseils de sécurité &#x200B;](https://www.adobe.com/trust/security/bulletins-and-advisories.html) pour connaître les dernières mises à jour de sécurité disponibles pour Adobe Commerce.
+Consultez les [Bulletins et conseils de sécurité d’Adobe](https://www.adobe.com/trust/security/bulletins-and-advisories.html) pour consulter les dernières mises à jour de sécurité disponibles pour Adobe Commerce.

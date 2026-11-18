@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3286'
 ht-degree: 0%
 ---
 # Sécurité à responsabilité partagée et modèle opérationnel
@@ -40,7 +40,7 @@ Les commerçants sont responsables des éléments suivants :
 * Assurer le développement sécurisé des applications
 * Obtention de la certification PCI si demandé par le responsable du traitement des paiements du commerçant
 * Réagir et répondre aux incidents de sécurité
-* En conservant toutes les dépendances tierces, les services de plateforme et les extensions des services Adobe Commerce sur les versions activement prises en charge. Adobe ne fournit pas de prise en charge ni d’assistance en matière de sécurité pour les déploiements exécutant des versions dépendantes non prises en charge. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) et la [Matrice de disponibilité du produit](/help/release/product-availability.md) pour connaître les versions prises en charge.
+* En conservant toutes les dépendances tierces, les services de plateforme et les extensions des services Adobe Commerce sur les versions activement prises en charge. Adobe ne fournit pas de prise en charge ni d’assistance en matière de sécurité pour les déploiements exécutant des versions dépendantes non prises en charge. Consultez la [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) et la [matrice de disponibilité du produit](/help/release/product-availability.md) pour les versions prises en charge.
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Adobe assure également la disponibilité de l’infrastructure du commerçant c
 Le commerçant est chargé de suivre les bonnes pratiques de sécurité pour son instance personnalisée de la solution Adobe Commerce sur les infrastructures cloud :
 
 * Ajout des fichiers de configuration d’Adobe Commerce sur l’infrastructure cloud nécessaires au référentiel
-* Application de correctifs de sécurité et d’autres correctifs à leur solution Adobe Commerce on cloud infrastructure personnalisée immédiatement après leur publication par Adobe
+* Application de correctifs de sécurité et d’autres correctifs à leur solution personnalisée Adobe Commerce sur l’infrastructure cloud immédiatement après leur publication par Adobe. Pour les fichiers de correctif de sécurité individuels, consultez [Comment appliquer un correctif compositeur fourni par Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) dans le _Guide des outils et de l’assistance d’Adobe_.
 * Application de correctifs de sécurité et autres à toutes les extensions et à tout le code personnalisés immédiatement après leur publication par le fournisseur
 * Création, déploiement et test de fichiers VCL Varnish personnalisés
 * Conception, définition de thèmes, installation, intégration et sécurisation de la solution personnalisée Adobe Commerce sur l’infrastructure cloud d’, y compris toutes les extensions et le code personnalisés
@@ -112,7 +112,7 @@ Le commerçant est chargé de suivre les bonnes pratiques de sécurité pour son
   * Extensions des services Adobe Commerce
   * Toutes les extensions tierces et les intégrations personnalisées
 
-  Adobe ne prend pas en charge les déploiements exécutant des versions non prises en charge. Voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=fr) et la [Matrice de disponibilité du produit](/help/release/product-availability.md) pour connaître les versions prises en charge.
+  Adobe ne prend pas en charge les déploiements exécutant des versions non prises en charge. Consultez la [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) et la [matrice de disponibilité du produit](/help/release/product-availability.md) pour les versions prises en charge.
 
 ## Responsabilités des fournisseurs de services cloud
 
@@ -135,7 +135,7 @@ La solution d’infrastructure Adobe Commerce sur cloud utilise des fournisseurs
 Le tableau récapitulatif suivant utilise le modèle RACI pour montrer les responsabilités en matière de sécurité partagées entre Adobe, le commerçant et le fournisseur de services cloud :
 
 **R** — Responsable
-**A** — Responsabilité
+**A** — Responsable
 **C** — Consulté
 **I** — Informé
 
@@ -160,7 +160,7 @@ Le tableau récapitulatif suivant utilise le modèle RACI pour montrer les respo
     <td></td>
   </tr>
   <tr>
-    <td>Application de correctifs aux services de prise en charge<br> (par exemple, Nginx ou MySQL).</td>
+    <td>Application de correctifs aux services de prise en charge <br> (par exemple, Nginx ou MySQL).</td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -258,7 +258,7 @@ Le tableau récapitulatif suivant utilise le modèle RACI pour montrer les respo
     <td></td>
   </tr>
   <tr>
-    <td>Configuration du référentiel source <sup>1</sup></td>
+    <td>Configuration du référentiel source<sup>1</sup></td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -356,7 +356,7 @@ Le tableau récapitulatif suivant utilise le modèle RACI pour montrer les respo
     <td></td>
   </tr>
   <tr>
-    <td>Prise en charge de CDN<sup>2</sup></td>
+    <td>Prise en charge du réseau CDN<sup>2</sup></td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -384,7 +384,7 @@ Le tableau récapitulatif suivant utilise le modèle RACI pour montrer les respo
     <td></td>
   </tr>
   <tr>
-    <td>Configuration de Nginx<sup>3</sup></td>
+    <td>Configuration De Nginx<sup>3</sup></td>
     <td>R</td>
     <td>R</td>
     <td></td>
@@ -468,7 +468,7 @@ Le tableau récapitulatif suivant utilise le modèle RACI pour montrer les respo
     <td></td>
   </tr>
   <tr>
-    <td>Correction des analyses PCI Adobe Commerce sur l’infrastructure cloud <sup>4</sup></td>
+    <td>Correction des analyses PCI d’Adobe Commerce sur l’infrastructure cloud<sup>4</sup></td>
     <td>R</td>
     <td>R</td>
     <td></td>
@@ -555,7 +555,7 @@ Le tableau récapitulatif suivant utilise le modèle RACI pour montrer les respo
 <tfoot>
   <tr>
     <td colspan="5">
-      <p><sup>1</sup> Uniquement si le référentiel d’Adobe Commerce sur l’infrastructure cloud est utilisé comme référentiel principal. L'utilisation d'autres référentiels externes relève de la seule responsabilité du commerçant.</p>
+      <p><sup>1</sup> Uniquement si le référentiel Adobe Commerce sur l’infrastructure cloud est utilisé comme référentiel principal. L'utilisation d'autres référentiels externes relève de la seule responsabilité du commerçant.</p>
       <p><sup>2</sup> Adobe fournit une prise en charge de niveau 1 pour les problèmes liés aux fournisseurs de réseau CDN.</p>
       <p><sup>3</sup> Le commerçant est responsable des contrôles Nginx qu'il configure pour ses applications.</p>
       <p><sup>4</sup> Pour PCI, les exigences de test de pénétration sont partagées entre Adobe et le commerçant.</p>
@@ -674,7 +674,7 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 | --- | --- | --- |
 | Rotation des logs | R |   |
 | Application Adobe Commerce personnalisée |   | R |
-| Disponibilité des services New Relic : <br>intégration de l’application APM et de l’agent, application d’infrastructure,<br>journalisation et intégration) | R |   |
+| Disponibilité des services New Relic :<br>intégration de l&#39;application APM et de l&#39;agent, application d&#39;infrastructure,<br>journalisation et intégration | R |   |
 | Configuration des alertes New Relic |     | R |
 | Déploiement de l’agent New Relic sur les serveurs PaaS | R |   |
 
@@ -697,7 +697,7 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 | --- | --- | --- |
 | Configuration de l’application |     | R |
 | Ajout de domaines à l&#39;application Adobe Commerce (URL de base) |     | R |
-| Configuration de PaaS pour utiliser les versions de Services prises en charge par la version d&#39;Adobe Commerce déployée<br><br>Par exemple, différentes versions de Commerce sont compatibles avec des versions spécifiques de PHP, Redis, etc. |     | R |
+| Configuration de PaaS pour utiliser les versions de services prises en charge par la version d&#39;Adobe Commerce déployée<br><br>Par exemple, différentes versions de Commerce sont compatibles avec des versions spécifiques de PHP, Redis, etc. |     | R |
 
 {style="table-layout:auto"}
 
@@ -784,7 +784,7 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 | Disponibilité d’OpenSearch | R |   |
 | Configuration des paramètres OpenSearch par défaut | R |   |
 | Envoyez une demande de service pour installer une version d’OpenSearch compatible avec la version Adobe Commerce installée |   | R |
-| Le commerçant doit conserver OpenSearch sur une version prise en charge. Les déploiements sur des versions non prises en charge ne sont _pas_ éligibles à la prise en charge d’Adobe et peuvent contenir des vulnérabilités de sécurité non corrigées. |     | R |
+| Le commerçant doit conserver OpenSearch sur une version prise en charge. Les déploiements sur des versions non prises en charge _ne sont pas_ éligibles à la prise en charge d’Adobe et peuvent contenir des vulnérabilités de sécurité non corrigées. |     | R |
 
 {style="table-layout:auto"}
 
@@ -825,7 +825,7 @@ Les commerçants sont chargés de synchroniser les données entre les environnem
 | Disponibilité des services Adobe Commerce Business Intelligence | R |   |
 | Processus de synchronisation des données MBI | R |   |
 | Détection des problèmes de synchronisation MBI | R |   |
-| Configuration de la synchronisation des données MBI vers Adobe Commerce Cloud Pro, Starter, On-Premise ou non-<br> <br>(API, qualité et formatage des données, réseau commercial, connexions à la base de données à l’intérieur et à l’extérieur de la base de données Adobe Commerce Cloud, au-delà des seuils de données) |     | R |
+| Configuration de la synchronisation des données MBI vers Adobe Commerce Cloud Pro, Starter, On-Premise ou non-Adobe Commerce<br>(API, qualité et formatage des données, réseau commercial,<br>connexions de base de données à l’intérieur et à l’extérieur de la base de données Adobe Commerce Cloud, au-delà des seuils de données) |     | R |
 | Configuration de la synchronisation des données MBI vers Adobe Commerce Cloud Pro<br> (configuration de la base de données Adobe Commerce Cloud) | R |   |
 
 {style="table-layout:auto"}
@@ -933,7 +933,7 @@ La collecte d’événements Storefront améliore la qualité des sorties de rec
 | Configuration de PrivateLink en entrée du point d’entrée du service VPC du commerçant |     | R |
 | Acceptation du point d’entrée du service VPC de lien privé entrant pour le commerçant | R |   |
 | Configuration des intégrations PrivateLink (point d’entrée vers le compte) |     | R |
-| Configuration du VPC détenu par le commerçant pour le point d’entrée PrivateLink<br><br>(y compris les connexions VPN) |     | R |
+| Configuration du VPC détenu par le commerçant pour le point d’entrée PrivateLink<br><br> (y compris les connexions VPN) |     | R |
 
 {style="table-layout:auto"}
 
@@ -979,4 +979,3 @@ La collecte d’événements Storefront améliore la qualité des sorties de rec
 | Surveillance de l’utilisation du processeur virtuel par rapport aux limites | R |   |
 
 {style="table-layout:auto"}
-

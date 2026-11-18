@@ -33,22 +33,22 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 66d7c9fd19785e791635d8e8bdf3d6ff3aa27a20
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1570'
 ht-degree: 0%
 ---
 # Politique de correctifs de sécurité isolés mensuels
 
-Pour aider les clients Adobe Commerce à appliquer plus rapidement des correctifs de sécurité critiques, Adobe Commerce fournit désormais des correctifs de sécurité isolés mensuels le mardi des correctifs (le deuxième mardi du mois). Consultez le [calendrier de publication d’](schedule.md) pour connaître les dates. Ces correctifs sont disponibles pour les installations Adobe Commerce on Cloud, Adobe Commerce on-premise et Magento Open Source.
+Pour aider les clients Adobe Commerce à appliquer plus rapidement des correctifs de sécurité critiques, Adobe Commerce fournit désormais des correctifs de sécurité isolés mensuels le mardi des correctifs (le deuxième mardi du mois). Consultez le [calendrier de publication d’Adobe Commerce](schedule.md) pour connaître les dates. Ces correctifs sont disponibles pour les installations Adobe Commerce on Cloud, Adobe Commerce on-premise et Magento Open Source.
 
-Un fichier de correctif de sécurité isolé contient uniquement le code nécessaire pour résoudre une ou plusieurs vulnérabilités de sécurité spécifiques. Il est fourni sous la forme d’un fichier code-diff à portée étroite plutôt que d’un package Composer complet. Étant donné que les modifications sont spécifiques aux vulnérabilités de sécurité, elles peuvent être examinées, testées et appliquées plus rapidement qu’une version de correctif de sécurité, sans déclencher la résolution de dépendance et le test de régression plus larges requis par une mise à niveau de la version du correctif de sécurité. Chaque mois, un fichier de correctif de sécurité isolé est intégré à la prochaine version complète du correctif de sécurité. Ainsi, les clients peuvent obtenir tous les fichiers de correctif isolé publiés dans la prochaine version du correctif de sécurité (`-pN`).
+Un fichier de correctif de sécurité isolé contient uniquement le code nécessaire pour résoudre une ou plusieurs vulnérabilités de sécurité spécifiques. Il est fourni sous la forme d’un fichier code-diff à portée étroite plutôt que d’un package Composer complet. Étant donné que les modifications sont spécifiques aux vulnérabilités de sécurité, elles peuvent être examinées, testées et appliquées plus rapidement qu’une version de correctif de sécurité, sans déclencher la résolution de dépendance et le test de régression plus larges requis par une mise à niveau de la version du correctif de sécurité. Chaque fichier de correctif de sécurité isolé mensuel est intégré à la prochaine version complète du correctif de sécurité, afin que les clients puissent obtenir tous les fichiers de correctif isolé publiés via la prochaine version du correctif de sécurité (`-pN`).
 
 ## Adaptation des patchs isolés aux autres types de patchs
 
 Les correctifs de sécurité isolés font partie de plusieurs types de correctifs fournis par Adobe Commerce pour assurer la sécurité et la mise à jour des clients.
 
-| **Type de correctif** | **Objectif** | **Comportement cumulé** | **Diffusion type** | **Rôle** |
+| **Type de correctif** | **Objectif** | **Comportement cumulé** | **Diffusion standard** | **Rôle** |
 | --- | --- | --- | --- | --- |
 | Version du correctif de sécurité (-pN) | Mise à jour de sécurité et de conformité pour une ligne de version prise en charge | Cumulatif : établit la base de sécurité actuelle | Package du compositeur | Base de sécurité prise en charge par le Principal |
 | Fichier de correctif de sécurité isolé | Correctif ciblé pour un ou plusieurs CVE | Non cumulatif : appliquer en séquence | Fichier de correctif autonome, généralement un fichier ZIP. Certains correctifs peuvent également être inclus dans les correctifs cloud pour Commerce | Correction intermédiaire plus rapide entre les versions des correctifs de sécurité |
@@ -74,46 +74,46 @@ Cette approche fonctionne car les correctifs à usage unique ignorent les tests 
 
 Pour appliquer le fichier de correctif de sécurité isolé mensuel et rester à jour sur les derniers correctifs, procédez comme suit :
 
-1. **Vérifiez le [calendrier des versions](schedule.md).**
+1. **Vérifiez le planning de publication de [2}.**](schedule.md)
 
    Les nouveaux fichiers de correctifs isolés mensuels sont expédiés conformément au calendrier de publication. Consultez le bulletin de sécurité correspondant pour les composants et les fichiers CVE concernés. Chaque bulletin contient des liens vers les notes de mise à jour avec des instructions détaillées pour installer le fichier de correctif isolé de ce mois-là.
 
-1. **Vérifiez le statut de sécurité de votre installation Commerce à l’aide de l’outil [Version de Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/commerce-version-tool/intro).**
+1. **Vérifiez le statut de sécurité de votre installation Commerce à l&#39;aide de l&#39;outil [Version de Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro).**
 
    L’outil signale les correctifs mensuels actuellement installés, ceux qui sont manquants et les fichiers CVE auxquels l’installation reste exposée. Cela permet d’évaluer de manière définitive l’action requise, plutôt que de se fier uniquement au numéro de version.
 
-1. **Confirmer votre version de référence.**
+1. **Confirmez votre version de référence.**
 
-   Les correctifs isolés sont testés uniquement par rapport à la dernière version de `-p` de sécurité uniquement pour votre ligne. Si vous êtes en retard sur cette ligne de base, appliquez-la d&#39;abord.
+   Les correctifs isolés ne sont testés que par rapport à la dernière version `-p` de sécurité uniquement pour votre ligne. Si vous êtes en retard sur cette ligne de base, appliquez-la d&#39;abord. Consultez l’[exemple de mise à niveau du correctif de sécurité](../upgrade/implementation/perform-upgrade.md#example---security-patch) pour obtenir des instructions sur la spécification d’une version de correctif de sécurité lors d’une mise à niveau.
 
-1. **Appliquez tous les correctifs manquants dans l’ordre.**
+1. **Appliquez tous les correctifs manquants dans l&#39;ordre.**
 
    Comme ils ne sont pas cumulatifs, vous ne pouvez pas passer au fichier le plus récent.
 
    >[!NOTE]
    >
-   >**Clients Cloud :** d’abord vérifier les correctifs cloud installés pour Commerce [version](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest). Le correctif peut déjà être inclus et son application manuelle peut créer un conflit ou dupliquer le correctif.
+   >**Clients Cloud :** Vérifiez d’abord les correctifs cloud installés pour Commerce [version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest). Le correctif peut déjà être inclus et son application manuelle peut créer un conflit ou dupliquer le correctif.
 
-1. **Faire correspondre les fichiers aux composants installés.**
+1. **Associez les fichiers à vos composants installés.**
 
    Appliquez uniquement le fichier correspondant à votre version CE, EE, B2B ou d’un autre composant.
 
-1. **Réexécutez l’outil de version de Commerce pour confirmer.**
+1. **Réexécutez l’outil de version Commerce pour confirmer.**
 
    Vérifiez que le nouveau correctif s’affiche comme installé et que les fichiers CVE correspondants sont désormais déclarés comme protégés.
 
-1. **Test, puis déploiement.**
+1. **Tester, puis déployer.**
 
    Validez dans l’évaluation avant de passer en production, conformément à votre processus de modification normal.
 
-Les clients Cloud peuvent également utiliser l’[automatisation des correctifs &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/caps-tool/intro) pour appliquer ou annuler des correctifs par le biais du panneau d’administration au lieu des étapes manuelles Git et Compositeur ci-dessus.
+Les clients Cloud peuvent également utiliser l’[automatisation des correctifs Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/caps-tool/intro) pour appliquer ou annuler des correctifs par le biais du panneau d’administration au lieu des étapes manuelles Git et Composer ci-dessus.
 
 ## Actions Patch par type de déploiement
 
-| **Vous exécutez...** | **Qu’est-ce qui change pour vous** |
+| **Vous exécutez...** | **Changements pour vous** |
 | --- | --- |
 | Adobe Commerce on Cloud | Les correctifs cloud pour Commerce, fournis par le biais d&#39;ECE-Tools, appliquent automatiquement les correctifs requis lors de votre prochain déploiement. Vous contrôlez toujours les étapes de branche, de fusion et de validation, et devez vérifier les notes de mise à jour des correctifs cloud pour Commerce avant d’appliquer manuellement le même correctif. |
-| Adobe Commerce On-Premise | Confirmez votre version de `-p` de base, téléchargez le fichier correspondant à chaque composant installé, appliquez-le dans l’ordre et vérifiez avec l’outil de version Commerce. |
+| Adobe Commerce On-Premise | Confirmez votre version de base `-p`, téléchargez le fichier correspondant à chaque composant installé, appliquez-la dans l’ordre et vérifiez avec l’outil de version Commerce. |
 
 ## FAQ
 
@@ -121,9 +121,9 @@ Le correctif de sécurité isolé mensuel est une nouvelle politique de version.
 
 ### Dois-je appliquer chaque correctif isolé précédent ou simplement la dernière version du correctif de sécurité ?
 
-Vous avez besoin des deux. Avant d’appliquer un correctif isolé, effectuez une mise à jour vers la dernière version de base de la version `-p` pour la sécurité uniquement. Chaque dispositif transdermique est testé uniquement par rapport à cette ligne de base. Les patchs isolés ne sont pas cumulatifs, appliquez donc les patchs manqués l’un après l’autre.
+Vous avez besoin des deux. Avant d’appliquer un correctif isolé, effectuez une mise à jour vers la dernière ligne de base de la version `-p` réservée à la sécurité. Chaque dispositif transdermique est testé uniquement par rapport à cette ligne de base. Les patchs isolés ne sont pas cumulatifs, appliquez donc les patchs manqués l’un après l’autre.
 
-Par exemple, si vous êtes sur la base de la version actuelle de `-p` mais que vous avez oublié les correctifs isolés de juillet et août, appliquez juillet, puis août, puis septembre. La prochaine version complète de `-p` réinitialise la séquence, car elle inclut tous les correctifs isolés émis précédemment.
+Par exemple, si vous êtes sur la base de publication actuelle de `-p`, mais que vous avez oublié les correctifs isolés de juillet et d’août, appliquez juillet, puis août, puis septembre. La prochaine version complète de `-p` réinitialise la séquence, car elle inclut tous les correctifs isolés émis précédemment.
 
 ### Pourquoi ne pas simplement livrer un package de compositeur au lieu de fichiers de correctifs distincts ?
 
@@ -131,22 +131,22 @@ Dans une installation comportant plusieurs composants (CE, EE, B2B et Page Build
 
 ### Avec des correctifs superposés, comment savoir dans quel état de sécurité se trouve mon installation ?
 
-Avec la publication mensuelle des correctifs de sécurité, Adobe Commerce a introduit l’[outil de version de Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/commerce-version-tool/intro), un utilitaire autonome qui signale les correctifs installés ou manquants et les fichiers CVE contre lesquels votre installation est protégée. Plutôt que de compter sur des numéros de version, l’outil lit les métadonnées des correctifs et fournit une sortie lisible par ordinateur pour la création de rapports et l’intégration continue (CI).
+Avec la publication des correctifs de sécurité mensuels, Adobe Commerce a introduit l’[outil de version de Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro), un utilitaire autonome qui signale les correctifs installés ou manquants et les fichiers CVE contre lesquels votre installation est protégée. Plutôt que de compter sur des numéros de version, l’outil lit les métadonnées des correctifs et fournit une sortie lisible par ordinateur pour la création de rapports et l’intégration continue (CI).
 
 ### Cela signifie-t-il qu’Adobe a abandonné les versions de sécurité cumulatives ?
 
-Non. La version `-p` annuelle reste le principal point de contrôle de sécurité cumulatif. Les patchs isolés complètent cette cadence pour les EVC qui ne peuvent pas l’attendre en toute sécurité. Elles ne remplacent pas les versions `-p`. Si vous appliquez chaque année la mise à jour de correctif de sécurité prévue pour votre ligne, vous restez sur un chemin d’accès entièrement pris en charge et recevez chaque correctif qui a été émis sous la forme d’un fichier isolé entre les deux.
+Non. La version annuelle de `-p` reste le principal point de contrôle de sécurité cumulatif. Les patchs isolés complètent cette cadence pour les EVC qui ne peuvent pas l’attendre en toute sécurité. Elles ne remplacent pas les versions `-p`. Si vous appliquez chaque année la mise à jour de correctif de sécurité prévue pour votre ligne, vous restez sur un chemin d’accès entièrement pris en charge et recevez chaque correctif qui a été émis sous la forme d’un fichier isolé entre les deux.
 
 ### L’envoi de correctifs en dehors du compositeur ne rend-il pas une installation par défaut moins sécurisée ?
 
-Non. Le mécanisme de diffusion n’affecte pas les résultats de sécurité du correctif. Un correctif isolé applique la même modification de code que celle incluse ultérieurement dans une version complète de correctif (`-p`). Que le correctif soit fourni sous la forme d’un package de compositeur ou d’un fichier autonome n’a aucune incidence sur son efficacité. Les commerçants qui n’appliquent pas le correctif conservent leur base de sécurité existante jusqu’à la prochaine version de sécurité prévue. L&#39;application de correctifs isolés peut réduire l&#39;exposition en fournissant des correctifs plus tôt, plutôt que d&#39;attendre un cycle de publication complet.
+Non. Le mécanisme de diffusion n’affecte pas les résultats de sécurité du correctif. Un correctif isolé applique la même modification de code incluse ultérieurement dans une version complète de correctif (`-p`). Que le correctif soit fourni sous la forme d’un package de compositeur ou d’un fichier autonome n’a aucune incidence sur son efficacité. Les commerçants qui n’appliquent pas le correctif conservent leur base de sécurité existante jusqu’à la prochaine version de sécurité prévue. L&#39;application de correctifs isolés peut réduire l&#39;exposition en fournissant des correctifs plus tôt, plutôt que d&#39;attendre un cycle de publication complet.
 
 ## Plus d’aide sur cette rubrique
 
 >[!MORELIKETHIS]
 >
->* [Politique relative au cycle de vie des logiciels](lifecycle-policy.md)
->* [Politique de version](versioning-policy.md)
+>* [Politique relative au cycle de vie du logiciel](lifecycle-policy.md)
+>* [Politique de mise à jour](versioning-policy.md)
 >* [Calendrier de publication des correctifs](schedule.md)
->* [Outil de version &#x200B;](../tools/commerce-version-tool/intro.md)
->* [Bulletins et conseils de sécurité &#x200B;](https://helpx.adobe.com/fr/security/security-bulletin.html)
+>* [Outil de version Commerce](../tools/commerce-version-tool/intro.md)
+>* [Bulletins et conseils de sécurité Adobe](https://helpx.adobe.com/security/security-bulletin.html)
