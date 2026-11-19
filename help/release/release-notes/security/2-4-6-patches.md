@@ -40,7 +40,7 @@ ht-degree: 0%
 >
 >Adobe Commerce 2.4.6 bénéficie d’une [prise en charge étendue](/help/release/lifecycle-policy.md#extended-support) jusqu’au **30 août 2027**, suivie d’une [période de transition pour la sécurité uniquement](/help/release/lifecycle-policy.md#security-only-transitional-period) jusqu’au **31 mai 2028**. Ces fonctions ne sont disponibles que pour les clients Adobe Commerce. Ils n’étendent pas la prise en charge des dépendances tierces telles que MySQL.
 >
->Si vous exécutez Adobe Commerce sur le cloud, vous devez effectuer une mise à niveau vers une version prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant la date d’application de la mise à niveau de la version](../../security-enforcement-policy.md) du **1er juin 2028**[. Consultez le tableau [dates de fin de prise en charge](/help/release/lifecycle-policy.md#end-of-support-dates) pour connaître les dates de cycle de vie complet.
+>Si vous exécutez Adobe Commerce sur le cloud, vous devez effectuer une mise à niveau vers une version prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant la date d’application de la mise à niveau de la version[&#128279;](../../security-enforcement-policy.md) du **1er juin 2028**. Consultez le tableau [dates de fin de prise en charge](/help/release/lifecycle-policy.md#end-of-support-dates) pour connaître les dates de cycle de vie complet.
 
 ## 2.4.6-p15
 
