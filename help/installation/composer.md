@@ -241,4 +241,4 @@ Les arguments suivants sont communs à toutes les commandes. Ces commandes peuve
 
 >[!NOTE]
 >
->Félicitations ! Vous avez terminé l’installation rapide. Besoin d&#39;une aide plus avancée ? Consultez le guide d’installation avancée de [](advanced.md).
+>Félicitations ! Vous avez terminé l’installation rapide. Besoin d&#39;une aide plus avancée ? Consultez le guide d’installation avancée de [&#128279;](advanced.md).
