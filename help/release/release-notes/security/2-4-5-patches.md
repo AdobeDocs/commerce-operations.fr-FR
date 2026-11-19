@@ -2,7 +2,7 @@
 title: Notes De Mise À Jour Du Correctif De Sécurité D’Adobe Commerce 2.4.5
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.5.
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-last-update: 2026-10-14
+last-update: 2026-11-18
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 8959478d84467d8589a79e908b3f8750cb0a1c8b
+source-git-commit: cc7d3343d4a08e46235eb0c3ef42631907510a1b
 workflow-type: tm+mt
 source-wordcount: '1984'
 ht-degree: 0%
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 ## 2.4.5-p17
 
-Adobe Commerce version 2.4.5-p17 est une version de sécurité [prise en charge étendue](/help/release/lifecycle-policy.md#security-only-transitional-period) qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de la version 2.4.5.
+La version 2.4.5-p17 d’Adobe Commerce est une version de sécurité de [prise en charge étendue](/help/release/lifecycle-policy.md#security-only-transitional-period) qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de la version 2.4.5.
 
 {{security-bulletin-apsb26-49}}
 
@@ -60,7 +60,7 @@ Adobe Commerce 2.4.5 est désormais compatible avec RabbitMQ 4.2, qui tient comp
 
 ## 2.4.5-p16
 
-Adobe Commerce version 2.4.5-p16 est une version de sécurité [prise en charge étendue](/help/release/lifecycle-policy.md#security-only-transitional-period) qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de la version 2.4.5.
+La version 2.4.5-p16 d’Adobe Commerce est une version de sécurité de [prise en charge étendue](/help/release/lifecycle-policy.md#security-only-transitional-period) qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de la version 2.4.5.
 
 Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB26-05](https://helpx.adobe.com/fr/security/products/magento/apsb26-05.html).
 
@@ -84,7 +84,7 @@ La compatibilité d’Adobe Commerce 2.4.5-p16 avec MariaDB 10.11 a été vérif
 
 ## 2.4.5-p15
 
-Adobe Commerce version 2.4.5-p15 est une version de sécurité [prise en charge étendue](/help/release/lifecycle-policy.md#security-only-transitional-period) qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de la version 2.4.5.
+La version 2.4.5-p15 d’Adobe Commerce est une version de sécurité de [prise en charge étendue](/help/release/lifecycle-policy.md#security-only-transitional-period) qui fournit des correctifs de sécurité pour les vulnérabilités identifiées dans les versions précédentes de la version 2.4.5.
 
 Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité Adobe APSB25-94](https://helpx.adobe.com/fr/security/products/magento/apsb25-94.html).
 
@@ -120,15 +120,15 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 Les points forts de cette version sont les suivants :
 
-* **Amélioration des performances de l’API** : résout la dégradation des performances des points d’entrée d’API web asynchrones en bloc introduits après le correctif de sécurité précédent<!-- AC-14078 -->.
+* **Amélioration des performances de l’API** : résout la dégradation des performances des points d’entrée d’API web asynchrones en bloc qui ont été introduits après le correctif de sécurité précédent.<!-- AC-14078 -->
 
-* **Correctif des blocs d’accès CMS**—Résout un problème en raison duquel les utilisateurs administrateurs disposant d’autorisations limitées (comme un accès au marchandisage uniquement) ne pouvaient pas afficher la page de liste [!UICONTROL CMS Blocks].
+* **Correctif du blocage d’accès de CMS** : résout un problème en raison duquel les utilisateurs administrateurs disposant d’autorisations limitées (comme un accès au marchandisage uniquement) ne pouvaient pas afficher la page de liste [!UICONTROL CMS Blocks].
 
-  Auparavant, ces utilisateurs rencontraient une erreur en raison de paramètres de configuration manquants après l’installation des correctifs de sécurité précédents.<!-- AC-14087 -->
+  Ces utilisateurs ont précédemment rencontré une erreur en raison de paramètres de configuration manquants après l&#39;installation des correctifs de sécurité précédents.<!-- AC-14087 -->
 
 * **Compatibilité des limites de cookies** : résout une modification non rétrocompatible impliquant la constante `MAX_NUM_COOKIES` dans le framework. Cette mise à jour restaure le comportement attendu et assure la compatibilité des extensions ou des personnalisations qui interagissent avec les limites de cookies.<!-- AC-14475 -->
 
-* **Opérations asynchrones** : opérations asynchrones restreintes pour remplacer les commandes précédentes de clients.<!-- AC-13917 -->
+* **Opérations asynchrones** : opérations asynchrones restreintes pour remplacer les commandes précédentes des clients.<!-- AC-13917 -->
 
 ## 2.4.5-p12
 
@@ -196,7 +196,7 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 ### Mises à niveau de Platform
 
-* **Prise en charge de MariaDB 10.5**. Cette version de correctif introduit la compatibilité avec la version 10.5 de MariaDB. Adobe Commerce est toujours compatible avec la version 10.4 de MariaDB, mais Adobe recommande d’utiliser Adobe Commerce 2.4.5-p8 et toutes les prochaines versions de correctifs de sécurité uniquement 2.4.5 uniquement avec la version 10.5 de MariaDB, car la maintenance de MariaDB 10.4 se termine le 18 juin 2024. <!--AC-11530-->
+* **Prise en charge de MariaDB 10.5**. Cette version de correctif introduit la compatibilité avec la version 10.5 de MariaDB. Adobe Commerce est toujours compatible avec la version 10.4 de MariaDB, mais Adobe recommande d’utiliser Adobe Commerce 2.4.5-p8 et toutes les versions de correctif de sécurité uniquement 2.4.5 à venir uniquement avec la version 10.5 de MariaDB, car la maintenance de MariaDB 10.4 se termine le 18 juin 2024. <!--AC-11530-->
 
 ### Faits saillants
 
@@ -218,12 +218,12 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 Cette version introduit deux améliorations importantes de la sécurité :
 
-* **Modification du comportement des clés de cache non générées** :
+* **Modifications du comportement des clés de cache non générées** :
 
   * Les clés de cache non générées pour les blocs incluent désormais des préfixes qui diffèrent des préfixes des clés générées automatiquement. (Les clés de cache non générées sont des clés définies par le biais de la syntaxe de la directive du modèle ou des méthodes `setCacheKey` ou `setData`.)
   * Les clés de cache non générées pour les blocs ne doivent désormais contenir que des lettres, des chiffres, des tirets (-) et des traits de soulignement (_). <!-- AC-9831 -->
 
-* **Limitations du nombre de codes de coupon générés automatiquement**. Commerce limite désormais le nombre de codes coupon générés automatiquement. La valeur maximale par défaut est de 250 000. Les commerçants peuvent utiliser la nouvelle option de configuration des **[!UICONTROL Code Quantity Limit]** (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Promotions]**) pour contrôler cette nouvelle limite. <!-- AC-8753 -->
+* **Limitations sur le nombre de codes coupon générés automatiquement**. Commerce limite désormais le nombre de codes coupon générés automatiquement. La valeur maximale par défaut est de 250 000. Les commerçants peuvent utiliser la nouvelle option de configuration **[!UICONTROL Code Quantity Limit]** (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Promotions]**) pour contrôler cette nouvelle limite. <!-- AC-8753 -->
 
 ## 2.4.5-p5
 
@@ -233,15 +233,15 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 ### Faits saillants
 
-Cette version introduit un nouveau paramètre de configuration du cache de page complète qui permet de réduire les risques associés au point d’entrée `{BASE-URL}/page_cache/block/esi HTTP`. Ce point d’entrée prend en charge des fragments de contenu chargés dynamiquement et sans restriction à partir des poignées de disposition et des structures de bloc Commerce. Le nouveau paramètre de configuration de **[!UICONTROL Handles Param]** définit la valeur du paramètre `handles` de ce point d’entrée, qui détermine le nombre maximal autorisé de descripteurs par API. La valeur par défaut de cette propriété est 100. Les commerçants peuvent modifier cette valeur depuis l&#39;Admin (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**). <!-- AC-9113 -->
+Cette version introduit un nouveau paramètre de configuration du cache de page complète qui permet de réduire les risques associés au point d’entrée `{BASE-URL}/page_cache/block/esi HTTP`. Ce point d’entrée prend en charge des fragments de contenu chargés dynamiquement et sans restriction à partir des poignées de disposition et des structures de bloc Commerce. Le nouveau paramètre de configuration **[!UICONTROL Handles Param]** définit la valeur du paramètre `handles` de ce point d’entrée, qui détermine le nombre maximal autorisé de descripteurs par API. La valeur par défaut de cette propriété est 100. Les commerçants peuvent modifier cette valeur à partir de l’Administration (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**). <!-- AC-9113 -->
 
 ### Problèmes connus
 
-**Problème** : Adobe Commerce affiche une erreur **somme de contrôle incorrecte** lors du téléchargement par le compositeur depuis `repo.magento.com`, et le téléchargement du package est interrompu. Ce problème peut se produire lors du téléchargement des packages de version rendus disponibles lors de la version préliminaire et est dû à un reconditionnement du package `magento/module-page-cache`.
+**Problème** : Adobe Commerce affiche une erreur de **somme de contrôle incorrecte** lors du téléchargement par le compositeur depuis `repo.magento.com` et le téléchargement du package est interrompu. Ce problème peut se produire lors du téléchargement des packages de version rendus disponibles lors de la version préliminaire et est dû à un reconditionnement du package `magento/module-page-cache`.
 
-**Solution** : les commerçants qui voient cette erreur lors du téléchargement peuvent suivre les étapes suivantes :
+**Solution** : les commerçants qui voient cette erreur lors du téléchargement peuvent effectuer les opérations suivantes :
 
-1) Supprimez le répertoire `/vendor` dans le projet, le cas échéant.
+1) Supprimez le répertoire `/vendor` du projet, s&#39;il en existe un.
 2) Exécutez la commande `bin/magento composer update magento/module-page-cache`. Cette commande met uniquement à jour le package `page cache`.
 
 Si le problème de somme de contrôle persiste, supprimez le fichier `composer.lock` avant de réexécuter la commande `bin/magento composer update` pour mettre à jour chaque package.
@@ -254,21 +254,21 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 ### Appliquer un correctif pour CVE-2022-31160
 
-`jQuery-UI` version 1.13.1 de la bibliothèque comporte une vulnérabilité de sécurité connue (CVE-2022-31160) qui affecte plusieurs versions d’Adobe Commerce et de Magento Open Source. Cette bibliothèque est une dépendance d’Adobe Commerce et Magento Open Source 2.4.4, 2.4.5 et 2.4.6. Les commerçants exécutant les déploiements affectés doivent appliquer le correctif spécifié dans l’article de la base de connaissances [&#x200B; Vulnérabilité de sécurité de l’interface utilisateur jQuery CVE-2022-31160 pour les versions 2.4.4, 2.4.5 et 2.4.6 &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27176) .
+`jQuery-UI` la bibliothèque version 1.13.1 présente une vulnérabilité de sécurité connue (CVE-2022-31160) qui affecte plusieurs versions d’Adobe Commerce et de Magento Open Source. Cette bibliothèque est une dépendance d’Adobe Commerce et Magento Open Source 2.4.4, 2.4.5 et 2.4.6. Les commerçants qui exécutent les déploiements affectés doivent appliquer le correctif spécifié dans l’article [Vulnérabilité de sécurité de l’interface utilisateur jQuery CVE-2022-31160 pour les versions 2.4.4, 2.4.5 et 2.4.6](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27176) de la base de connaissances.
 
 ## 2.4.5-p3
 
 La version de sécurité 2.4.5-p3 d’Adobe Commerce fournit des correctifs de sécurité pour les vulnérabilités qui ont été identifiées dans les versions précédentes de 2.4.5. Cette version comprend également des améliorations de sécurité qui améliorent la conformité aux dernières bonnes pratiques de sécurité.
 
-Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité d’](https://helpx.adobe.com/fr/security/products/magento/apsb23-35.html).
+Pour obtenir les dernières informations sur les correctifs de sécurité, consultez le [Bulletin de sécurité d’Adobe](https://helpx.adobe.com/fr/security/products/magento/apsb23-35.html).
 
 ### Appliquer un correctif pour CVE-2022-31160
 
-`jQuery-UI` version 1.13.1 de la bibliothèque comporte une vulnérabilité de sécurité connue (CVE-2022-31160) qui affecte plusieurs versions d’Adobe Commerce et de Magento Open Source. Cette bibliothèque est une dépendance d’Adobe Commerce et Magento Open Source 2.4.4, 2.4.5 et 2.4.6. Les commerçants qui exécutent les déploiements affectés doivent appliquer le correctif spécifié dans l’article de la base de connaissances [Vulnérabilité de sécurité de l’interface utilisateur de requête CVE-2022-31160 pour les versions 2.4.4, 2.4.5 et 2.4.6](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27176).
+`jQuery-UI` la bibliothèque version 1.13.1 présente une vulnérabilité de sécurité connue (CVE-2022-31160) qui affecte plusieurs versions d’Adobe Commerce et de Magento Open Source. Cette bibliothèque est une dépendance d’Adobe Commerce et Magento Open Source 2.4.4, 2.4.5 et 2.4.6. Les commerçants qui exécutent les déploiements affectés doivent appliquer le correctif spécifié dans l’article [Correctif de vulnérabilité de sécurité de l’interface utilisateur de requête CVE-2022-31160 pour les versions 2.4.4, 2.4.5 et 2.4.6](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27176) de la base de connaissances.
 
 ### Faits saillants
 
-Le comportement par défaut de la requête [`isEmailAvailable`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/is-email-available/) GraphQL et du point d’entrée REST ([`V1/customers/isEmailAvailable`](https://adobe-commerce.redoc.ly/2.4.6-admin/tag/customersisEmailAvailable/#operation/PostV1CustomersIsEmailAvailable)) a changé. Par défaut, l’API renvoie désormais toujours `true`. Les commerçants peuvent activer le comportement d’origine, qui consiste à renvoyer un `true` si l’e-mail n’existe pas dans la base de données et à `false` s’il existe. <!-- AC-6695 -->
+Le comportement par défaut de la requête GraphQL [`isEmailAvailable`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/is-email-available/) et du point d’entrée REST ([`V1/customers/isEmailAvailable`](https://adobe-commerce.redoc.ly/2.4.6-admin/tag/customersisEmailAvailable/#operation/PostV1CustomersIsEmailAvailable)) a changé. Par défaut, l’API renvoie désormais toujours `true`. Les commerçants peuvent activer le comportement d’origine, à savoir renvoyer `true` si l’e-mail n’existe pas dans la base de données et `false` s’il existe. <!-- AC-6695 -->
 
 ### Mises à niveau de Platform
 
@@ -278,7 +278,7 @@ Les mises à niveau de Platform pour cette version améliorent la conformité au
 
 * **Prise en charge de RabbitMQ 3.11**. Cette version est compatible avec la dernière version de RabbitMQ 3.11. La compatibilité reste avec RabbitMQ 3.9, pris en charge jusqu’en août 2023, mais nous avons recommandé d’utiliser Adobe Commerce 2.4.5-p3 uniquement avec RabbitMQ 3.11.
 
-* **Bibliothèques**. Les bibliothèques JavaScript obsolètes ont été mises à niveau vers les dernières versions mineures ou correctives, y compris la bibliothèque `moment.js` (v2.29.4), la bibliothèque `jQuery UI` (v1.13.2) et la bibliothèque de modules externes de validation `jQuery` (v1.19.5).
+* **Bibliothèques JavaScript**. Les bibliothèques JavaScript obsolètes ont été mises à niveau vers les dernières versions mineures ou de correctif, y compris la bibliothèque `moment.js` (v2.29.4), la bibliothèque `jQuery UI` (v1.13.2) et la bibliothèque de modules externes de validation `jQuery` (v1.19.5).
 
 ## 2.4.5-p2
 

@@ -2,7 +2,7 @@
 title: Notes De Mise À Jour Du Correctif De Sécurité D’Adobe Commerce 2.4.6
 description: Découvrez les correctifs de sécurité, les améliorations de sécurité et les autres mises à jour liées à la sécurité inclus dans les versions des correctifs de sécurité pour Adobe Commerce version 2.4.6.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-last-update: 2026-10-14
+last-update: 2026-11-18
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 8959478d84467d8589a79e908b3f8750cb0a1c8b
+source-git-commit: cc7d3343d4a08e46235eb0c3ef42631907510a1b
 workflow-type: tm+mt
 source-wordcount: '2342'
 ht-degree: 0%
@@ -36,11 +36,11 @@ ht-degree: 0%
 >Tous les clients et clientes Adobe Commerce On-Premise exécutant la version 2.4.6 ont un niveau de sécurité élevé
 >a conseillé de migrer ses serveurs de base de données vers une version MariaDB compatible.
 >
->Les clients Adobe Commerce on Cloud doivent conserver les dépendances de la plateforme sur les versions prises en charge. Voir [Dépendances de Platform](/help/release/lifecycle-policy.md#platform-dependencies) dans la politique de cycle de vie.
+>Les clients Adobe Commerce on Cloud doivent conserver les dépendances de la plateforme sur les versions prises en charge. Voir [Dépendances de plateforme](/help/release/lifecycle-policy.md#platform-dependencies) dans la politique de cycle de vie.
 >
->Adobe Commerce 2.4.6 bénéficie d’une [prise en charge étendue](/help/release/lifecycle-policy.md#extended-support) jusqu’au **30 août 2027**, suivie d’une [période de transition axée uniquement sur la sécurité](/help/release/lifecycle-policy.md#security-only-transitional-period) jusqu’au **31 mai 2028**. Ces fonctions ne sont disponibles que pour les clients Adobe Commerce. Ils n’étendent pas la prise en charge des dépendances tierces telles que MySQL.
+>Adobe Commerce 2.4.6 bénéficie d’une [prise en charge étendue](/help/release/lifecycle-policy.md#extended-support) jusqu’au **30 août 2027**, suivie d’une [période de transition pour la sécurité uniquement](/help/release/lifecycle-policy.md#security-only-transitional-period) jusqu’au **31 mai 2028**. Ces fonctions ne sont disponibles que pour les clients Adobe Commerce. Ils n’étendent pas la prise en charge des dépendances tierces telles que MySQL.
 >
->Si vous exécutez Adobe Commerce sur le cloud, vous devez effectuer une mise à niveau vers une version prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant la **date d’application de la mise à niveau du 1er juin 2028** [version](../../security-enforcement-policy.md). Consultez le tableau [dates de fin de prise en charge](/help/release/lifecycle-policy.md#end-of-support-dates) pour connaître les dates de cycle de vie complet.
+>Si vous exécutez Adobe Commerce sur le cloud, vous devez effectuer une mise à niveau vers une version prise en charge ou migrer vers [!DNL Adobe Commerce as a Cloud Service] avant la date d’application de la mise à niveau de la version[&#128279;](../../security-enforcement-policy.md) du **1er juin 2028**. Consultez le tableau [dates de fin de prise en charge](/help/release/lifecycle-policy.md#end-of-support-dates) pour connaître les dates de cycle de vie complet.
 
 ## 2.4.6-p15
 
@@ -72,7 +72,7 @@ L’intégration d’expédition USPS prend désormais en charge les API RESTful
 
 #### Branchement MVC Laminas appartenant à Magento
 
-Pour faire face à la mise hors service de Laminas MVC, Adobe Commerce utilise désormais un formulaire de `laminas-mvc` détenu par Magento (publié sous la forme `magento/magento-zf-mvc`). Ce branchement assure la conformité continue des correctifs et de la sécurité à long terme pour Adobe Commerce 2.4.6.
+Pour gérer la mise hors service de Laminas MVC, Adobe Commerce utilise désormais un branchement détenu par Magento de `laminas-mvc` (publié sous la forme `magento/magento-zf-mvc`). Ce branchement assure la conformité continue des correctifs et de la sécurité à long terme pour Adobe Commerce 2.4.6.
 
 ## 2.4.6-p14
 
@@ -116,7 +116,7 @@ Les points forts de cette version sont les suivants :
 
 #### Package du programme d’installation du compositeur d’inventaire manquant
 
-Cette version n’inclut pas le package `magento/inventory-composer-installer`, qui est requis pour une mise à niveau fluide à partir de versions mineures plus anciennes avec des modifications rétrocompatibles.
+Cette version n&#39;inclut pas le package `magento/inventory-composer-installer`, qui est requis pour une mise à niveau fluide à partir d&#39;anciennes versions mineures avec des modifications rétrocompatibles.
 
 Si vous effectuez une mise à niveau de la version 2.3 vers la version 2.4.6-p13, exécutez la commande suivante pour installer le package `magento/inventory-composer-installer` avant la mise à niveau :
 
@@ -148,17 +148,17 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 Les points forts de cette version sont les suivants :
 
-* **Prise en charge de MariaDB**—Ajout de la prise en charge de MariaDB 10.11.
+* **Prise en charge de MariaDB** : prise en charge ajoutée de MariaDB 10.11.
 
-* **Amélioration des performances de l’API** : résout la dégradation des performances des points d’entrée d’API web asynchrones en bloc introduits après le correctif de sécurité précédent<!-- AC-14078 -->.
+* **Amélioration des performances de l’API** : résout la dégradation des performances des points d’entrée d’API web asynchrones en bloc qui ont été introduits après le correctif de sécurité précédent.<!-- AC-14078 -->
 
-* **Correctif des blocs d’accès CMS**—Résout un problème en raison duquel les utilisateurs administrateurs disposant d’autorisations limitées (comme un accès au marchandisage uniquement) ne pouvaient pas afficher la page de liste [!UICONTROL CMS Blocks].
+* **Correctif du blocage d’accès de CMS** : résout un problème en raison duquel les utilisateurs administrateurs disposant d’autorisations limitées (comme un accès au marchandisage uniquement) ne pouvaient pas afficher la page de liste [!UICONTROL CMS Blocks].
 
-  Auparavant, ces utilisateurs rencontraient une erreur en raison de paramètres de configuration manquants après l’installation des correctifs de sécurité précédents.<!-- AC-14087 -->
+  Ces utilisateurs ont précédemment rencontré une erreur en raison de paramètres de configuration manquants après l&#39;installation des correctifs de sécurité précédents.<!-- AC-14087 -->
 
 * **Compatibilité des limites de cookies** : résout une modification non rétrocompatible impliquant la constante `MAX_NUM_COOKIES` dans le framework. Cette mise à jour restaure le comportement attendu et assure la compatibilité des extensions ou des personnalisations qui interagissent avec les limites de cookies.<!-- AC-14475 -->
 
-* **Opérations asynchrones** : opérations asynchrones restreintes pour remplacer les commandes précédentes de clients.<!-- AC-13917 -->
+* **Opérations asynchrones** : opérations asynchrones restreintes pour remplacer les commandes précédentes des clients.<!-- AC-13917 -->
 
 ## 2.4.6-p10
 
@@ -248,12 +248,12 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 Cette version introduit deux améliorations importantes de la sécurité :
 
-* **Modification du comportement des clés de cache non générées** :
+* **Modifications du comportement des clés de cache non générées** :
 
   * Les clés de cache non générées pour les blocs incluent désormais des préfixes qui diffèrent des préfixes des clés générées automatiquement. (Les clés de cache non générées sont des clés définies par le biais de la syntaxe de la directive du modèle ou des méthodes `setCacheKey` ou `setData`.)
   * Les clés de cache non générées pour les blocs ne doivent désormais contenir que des lettres, des chiffres, des tirets (-) et des traits de soulignement (_). <!-- AC-9831 -->
 
-* **Limitations du nombre de codes de coupon générés automatiquement**. Commerce limite désormais le nombre de codes coupon générés automatiquement. La valeur maximale par défaut est de 250 000. Les commerçants peuvent utiliser la nouvelle option de configuration des **[!UICONTROL Code Quantity Limit]** (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Promotions]**) pour contrôler cette nouvelle limite. <!-- AC-8753 -->
+* **Limitations sur le nombre de codes coupon générés automatiquement**. Commerce limite désormais le nombre de codes coupon générés automatiquement. La valeur maximale par défaut est de 250 000. Les commerçants peuvent utiliser la nouvelle option de configuration **[!UICONTROL Code Quantity Limit]** (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Promotions]**) pour contrôler cette nouvelle limite. <!-- AC-8753 -->
 
 ## 2.4.6-p3
 
@@ -263,19 +263,19 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 ### Faits saillants
 
-Cette version introduit un nouveau paramètre de configuration du cache de page complète qui permet de réduire les risques associés au point d’entrée `{BASE-URL}/page_cache/block/esi HTTP`. Ce point d’entrée prend en charge des fragments de contenu chargés dynamiquement et sans restriction à partir des poignées de disposition et des structures de bloc Commerce. Le nouveau paramètre de configuration de **[!UICONTROL Handles Param]** définit la valeur du paramètre `handles` de ce point d’entrée, qui détermine le nombre maximal autorisé de descripteurs par API. La valeur par défaut de cette propriété est 100. Les commerçants peuvent modifier cette valeur à partir de Admin (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**. <!-- AC-9113 -->
+Cette version introduit un nouveau paramètre de configuration du cache de page complète qui permet de réduire les risques associés au point d’entrée `{BASE-URL}/page_cache/block/esi HTTP`. Ce point d’entrée prend en charge des fragments de contenu chargés dynamiquement et sans restriction à partir des poignées de disposition et des structures de bloc Commerce. Le nouveau paramètre de configuration **[!UICONTROL Handles Param]** définit la valeur du paramètre `handles` de ce point d’entrée, qui détermine le nombre maximal autorisé de descripteurs par API. La valeur par défaut de cette propriété est 100. Les commerçants peuvent modifier cette valeur à partir de l’Administration (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**. <!-- AC-9113 -->
 
 ### Correctifs inclus dans cette version
 
-Adobe Commerce 2.4.6-p3 inclut la résolution de la dégradation des performances corrigée par le correctif ACSD-51892. Les commerçants ne sont pas affectés par le problème résolu par ce correctif, qui est décrit dans l’article [ACSD-51892 : Problème de performance où les fichiers config se chargent plusieurs fois](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.md) de la base de connaissances.
+Adobe Commerce 2.4.6-p3 inclut la résolution de la dégradation des performances corrigée par le correctif ACSD-51892. Les commerçants ne sont pas affectés par le problème résolu par ce correctif, qui est décrit dans l&#39;article [ACSD-51892 : Problème de performance où les fichiers config se chargent plusieurs fois](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.md) de la base de connaissances.
 
 ### Problèmes connus
 
-**Problème** : Adobe Commerce affiche une erreur `wrong checksum` lors du téléchargement par le compositeur à partir de `repo.magento.com`, et le téléchargement du package est interrompu. Ce problème peut se produire lors du téléchargement des packages de version rendus disponibles pendant la période de version préliminaire et est dû à un reconditionnement du package `magento/module-page-cache`.
+**Problème** : Adobe Commerce affiche une erreur `wrong checksum` lors du téléchargement par le compositeur depuis `repo.magento.com` et le téléchargement du package est interrompu. Ce problème peut se produire lors du téléchargement des packages de version rendus disponibles pendant la période de version préliminaire et est dû à un reconditionnement du package `magento/module-page-cache`.
 
-**Solution** : les commerçants qui voient cette erreur lors du téléchargement peuvent suivre les étapes suivantes :
+**Solution** : les commerçants qui voient cette erreur lors du téléchargement peuvent effectuer les opérations suivantes :
 
-1) Supprimez le répertoire `/vendor` dans le projet, le cas échéant.
+1) Supprimez le répertoire `/vendor` du projet, s&#39;il en existe un.
 2) Exécutez la commande `bin/magento composer update magento/module-page-cache`. Cette commande met uniquement à jour le package `page cache`.
 
 Si le problème de somme de contrôle persiste, supprimez le fichier `composer.lock` avant de réexécuter la commande `bin/magento composer update` pour mettre à jour chaque package.
@@ -288,15 +288,15 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 ### Appliquer un correctif pour CVE-2022-31160
 
-`jQuery-UI` version 1.13.1 de la bibliothèque comporte une vulnérabilité de sécurité connue (CVE-2022-31160) qui affecte plusieurs versions d’Adobe Commerce et de Magento Open Source. Cette bibliothèque est une dépendance d’Adobe Commerce et Magento Open Source 2.4.4, 2.4.5 et 2.4.6. Les commerçants exécutant les déploiements affectés doivent appliquer le correctif spécifié dans l’article de la base de connaissances [&#x200B; Vulnérabilité de sécurité de l’interface utilisateur jQuery CVE-2022-31160 pour les versions 2.4.4, 2.4.5 et 2.4.6 &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27176) .
+`jQuery-UI` la bibliothèque version 1.13.1 présente une vulnérabilité de sécurité connue (CVE-2022-31160) qui affecte plusieurs versions d’Adobe Commerce et de Magento Open Source. Cette bibliothèque est une dépendance d’Adobe Commerce et Magento Open Source 2.4.4, 2.4.5 et 2.4.6. Les commerçants qui exécutent les déploiements affectés doivent appliquer le correctif spécifié dans l’article [Vulnérabilité de sécurité de l’interface utilisateur jQuery CVE-2022-31160 pour les versions 2.4.4, 2.4.5 et 2.4.6](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27176) de la base de connaissances.
 
 ### Faits saillants
 
-La valeur de `fastcgi_pass` dans le fichier `nginx.sample` a été renvoyée à sa valeur précédente (antérieure à 2.4.6-p1) de `fastcgi_backend`. Cette valeur a été modifiée par inadvertance en `php-fpm:9000` dans Adobe Commerce 2.4.6-p1.
+La valeur de `fastcgi_pass` dans le fichier `nginx.sample` est revenue à sa valeur précédente (antérieure à 2.4.6-p1) de `fastcgi_backend`. Cette valeur a été modifiée par inadvertance en `php-fpm:9000` dans Adobe Commerce 2.4.6-p1.
 
 ### Correctifs inclus dans cette version
 
-Adobe Commerce 2.4.6-p2 inclut la résolution de la dégradation des performances qui a été corrigée par le correctif ACSD-51892. Les commerçants ne sont pas affectés par le problème résolu par ce correctif, qui est décrit dans l’article [ACSD-51892 : Problème de performance où les fichiers config se chargent plusieurs fois](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.md) de la base de connaissances.
+Adobe Commerce 2.4.6-p2 inclut la résolution de la dégradation des performances qui a été corrigée par le correctif ACSD-51892. Les commerçants ne sont pas affectés par le problème résolu par ce correctif, qui est décrit dans l&#39;article [ACSD-51892 : Problème de performance où les fichiers config se chargent plusieurs fois](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.md) de la base de connaissances.
 
 ## 2.4.6-p1
 
@@ -306,11 +306,11 @@ Pour obtenir les dernières informations sur les correctifs de sécurité, consu
 
 ### Appliquer un correctif pour CVE-2022-31160
 
-`jQuery-UI` version 1.13.1 de la bibliothèque comporte une vulnérabilité de sécurité connue (CVE-2022-31160) qui affecte plusieurs versions d’Adobe Commerce et de Magento Open Source. Cette bibliothèque est une dépendance d’Adobe Commerce et Magento Open Source 2.4.4, 2.4.5 et 2.4.6. Les commerçants qui exécutent les déploiements affectés doivent appliquer le correctif spécifié dans l’article de la base de connaissances [Vulnérabilité de sécurité de l’interface utilisateur de requête CVE-2022-31160 pour les versions 2.4.4, 2.4.5 et 2.4.6](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27176).
+`jQuery-UI` la bibliothèque version 1.13.1 présente une vulnérabilité de sécurité connue (CVE-2022-31160) qui affecte plusieurs versions d’Adobe Commerce et de Magento Open Source. Cette bibliothèque est une dépendance d’Adobe Commerce et Magento Open Source 2.4.4, 2.4.5 et 2.4.6. Les commerçants qui exécutent les déploiements affectés doivent appliquer le correctif spécifié dans l’article [Correctif de vulnérabilité de sécurité de l’interface utilisateur de requête CVE-2022-31160 pour les versions 2.4.4, 2.4.5 et 2.4.6](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27176) de la base de connaissances.
 
 #### Surbrillance
 
-Le comportement par défaut de la requête [`isEmailAvailable`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/is-email-available/) GraphQL et du point d’entrée REST ([`V1/customers/isEmailAvailable`](https://adobe-commerce.redoc.ly/2.4.6-admin/tag/customersisEmailAvailable/#operation/PostV1CustomersIsEmailAvailable)) a changé. Par défaut, l’API renvoie désormais toujours `true`. Les commerçants peuvent activer le comportement d’origine, qui consiste à renvoyer un `true` si l’e-mail n’existe pas dans la base de données et à `false` s’il existe. <!-- AC-6695 -->
+Le comportement par défaut de la requête GraphQL [`isEmailAvailable`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/is-email-available/) et du point d’entrée REST ([`V1/customers/isEmailAvailable`](https://adobe-commerce.redoc.ly/2.4.6-admin/tag/customersisEmailAvailable/#operation/PostV1CustomersIsEmailAvailable)) a changé. Par défaut, l’API renvoie désormais toujours `true`. Les commerçants peuvent activer le comportement d’origine, à savoir renvoyer `true` si l’e-mail n’existe pas dans la base de données et `false` s’il existe. <!-- AC-6695 -->
 
 ### Mises à niveau de Platform
 
@@ -320,7 +320,7 @@ Les mises à niveau de Platform pour cette version améliorent la conformité au
 
 * **Prise en charge de RabbitMQ 3.11**. Cette version est compatible avec la dernière version de RabbitMQ 3.11. La compatibilité reste avec RabbitMQ 3.9, pris en charge jusqu’en août 2023, mais Adobe a recommandé d’utiliser Adobe Commerce 2.4.6-p1 uniquement avec RabbitMQ 3.11.
 
-* **Bibliothèques**. Les bibliothèques JavaScript obsolètes ont été mises à niveau vers les dernières versions mineures ou correctives, y compris la bibliothèque `moment.js` (v2.29.4), la bibliothèque `jQuery UI` (v1.13.2) et la bibliothèque de modules externes de validation `jQuery` (v1.19.5).
+* **Bibliothèques JavaScript**. Les bibliothèques JavaScript obsolètes ont été mises à niveau vers les dernières versions mineures ou de correctif, y compris la bibliothèque `moment.js` (v2.29.4), la bibliothèque `jQuery UI` (v1.13.2) et la bibliothèque de modules externes de validation `jQuery` (v1.19.5).
 
 ### Problèmes connus
 
@@ -338,6 +338,6 @@ Les mises à niveau de Platform pour cette version améliorent la conformité au
   Installation failed, reverting ./composer.json and ./composer.lock to their original content.
   ```
 
-  Ce problème peut être résolu en ajoutant des dépendances manuelles pour le package de sécurité B2B avec une [&#x200B; balise de stabilité &#x200B;](https://getcomposer.org/doc/04-schema.md#package-links). Pour plus d’informations, consultez les notes de mise à jour de [B2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=fr#known-issue).
+  Ce problème peut être résolu en ajoutant des dépendances manuelles pour le package de sécurité B2B avec une [balise de stabilité](https://getcomposer.org/doc/04-schema.md#package-links). Pour plus d’informations, consultez les [notes de mise à jour B2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=fr#known-issue).
 
 <!-- Last updated from includes: 2026-08-19 13:47:15 -->

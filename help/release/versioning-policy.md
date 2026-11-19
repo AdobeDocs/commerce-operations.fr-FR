@@ -2,7 +2,7 @@
 title: Politique de version
 description: Découvrez les types de versions d’Adobe Commerce, le marketing par rapport au contrôle de version des modules, les versions de correctif et de sécurité, les versions bêta, les correctifs et la politique de version globale.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-last-update: 2026-10-14
+last-update: 2026-11-18
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,26 +14,26 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 8959478d84467d8589a79e908b3f8750cb0a1c8b
+source-git-commit: cc7d3343d4a08e46235eb0c3ef42631907510a1b
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
 ---
 # Politique de mise à jour d’Adobe Commerce
 
-Adobe Commerce utilise le [contrôle de version sémantique](https://semver.org/) au niveau des modules individuels (par exemple, `magento/framework 101.1.1`), mais pas pour le numéro de version marketing. Par exemple :
+Adobe Commerce utilise le [contrôle de version sémantique](https://semver.org/) au niveau du module individuel (par exemple `magento/framework 101.1.1`), mais pas pour le numéro de version marketing. Par exemple :
 
-- **Version majeure**—2
-- **version MINEURE**—2.4
+- **VERSION MAJEURE**—2
+- **VERSION MINEURE**—2.4
 - **Version de PATCH**—2.4.8
-  - **Mise à jour du correctif de SÉCURITÉ**-2.4.8-p1
+  - **Mise à jour du correctif de sécurité**—2.4.8-p1
     - Correctif de sécurité
     - Amélioration de la sécurité
-- **version du correctif ALPHA**-2.4.8-alpha1
-- **version du correctif BETA**—2.4.8-beta1
+- **Version du correctif ALPHA**—2.4.8-alpha1
+- **Version du correctif BETA**—2.4.8-beta1
 - **Version Extensibilité, Infrastructure et Services**
 - **Correctif**
-- **Patch individuel**
+- **Correctif individuel**
 - **Correctif personnalisé**
 
 ## VERSION MINEURE
@@ -73,7 +73,7 @@ Les versions de Beta peuvent contenir des défauts et sont fournies « EN L’É
 
 ## Correctif
 
-Les correctifs sont des correctifs de sécurité ou de qualité à fort impact, tels que les correctifs de vulnérabilités de type « jour zéro », qui affectent de nombreux commerçants. Adobe publie des correctifs (si nécessaire) pour les versions d’Adobe Commerce prises en charge lorsque des problèmes de sécurité ou de qualité critiques les affectent. Les correctifs sont fournis via l’[outil de correctifs de qualité](../tools/quality-patches-tool/usage.md). Ces correctifs sont inclus dans la prochaine version prévue du correctif.
+Les correctifs sont des correctifs de sécurité ou de qualité à fort impact, tels que les correctifs de vulnérabilités de type « jour zéro », qui affectent de nombreux commerçants. Adobe publie des correctifs (si nécessaire) pour les versions d’Adobe Commerce prises en charge lorsque des problèmes de sécurité ou de qualité critiques les affectent. Les correctifs sont fournis via l&#39;outil [Correctifs de qualité](../tools/quality-patches-tool/usage.md). Ces correctifs sont inclus dans la prochaine version prévue du correctif.
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ Les correctifs sont des correctifs de sécurité ou de qualité à fort impact, 
 
 ## Patch individuel
 
-Les correctifs individuels contiennent des correctifs de qualité à faible impact pour un problème spécifique. Ces correctifs sont appliqués aux versions mineures prises en charge d’Adobe Commerce. Adobe publie les correctifs individuels selon les besoins pour Adobe Commerce conformément à la [politique de cycle de vie des logiciels](lifecycle-policy.md). Pour les termes juridiques, consultez la [Politique relative au cycle de vie du logiciel Adobe Commerce (PDF)](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Elles sont fournies par le biais de l’outil [Correctifs de qualité](../tools/quality-patches-tool/usage.md).
+Les correctifs individuels contiennent des correctifs de qualité à faible impact pour un problème spécifique. Ces correctifs sont appliqués aux versions mineures prises en charge d’Adobe Commerce. Adobe publie les correctifs individuels nécessaires pour Adobe Commerce conformément à la [politique de cycle de vie du logiciel](lifecycle-policy.md). Pour les termes juridiques, consultez la [Politique relative au cycle de vie du logiciel Adobe Commerce (PDF)](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Ils sont fournis via l&#39;outil [Correctifs de qualité](../tools/quality-patches-tool/usage.md).
 
 >[!NOTE]
 >
