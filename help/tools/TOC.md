@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 8e93fbc0f771dd2b4ca1a5049ef8dd15f947cd82
+source-git-commit: 73b32dcbf7f306d5b98277ff757e8e9b2eb4f0fa
 workflow-type: tm+mt
-source-wordcount: '11157'
+source-wordcount: '11161'
 ht-degree: 0%
 ---
 
@@ -1099,6 +1099,8 @@ ht-degree: 0%
       - [ACP2E-4741 : l’enregistrement d’un produit lié masque un autre produit du storefront avec un stock personnalisé](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
     - v1.1.85 {#v1-1-85}
       - [Présentation :  [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
+    - v1.1.86 {#v1-1-86}
+      - [Présentation :  [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
   - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Référence des outils de ligne de commande {#cli-reference}
   - [Adobe Commerce (sur site)](reference/commerce-on-premises.md)

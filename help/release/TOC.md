@@ -4,10 +4,10 @@ user-guide-description: Accédez à toutes les informations de mise à jour rela
 feature: Release Notes
 recommendations: noDisplay, noCatalog
 nudge: true
-source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
+source-git-commit: ffc6ecc659b60ec50957942a2102f4b804a8b424
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 33%
+source-wordcount: '114'
+ht-degree: 32%
 ---
 
 # Informations sur la version {#release}
@@ -63,4 +63,5 @@ ht-degree: 33%
 - Packages {#packages}
   - [Adobe Commerce](packages/adobe-commerce.md)
   - [Magento Open Source](packages/magento-open-source.md)
+- [Mises à jour de la documentation](documentation-updates.md)
 - [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=fr)

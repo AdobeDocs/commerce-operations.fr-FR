@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+source-git-commit: 28065887dc2539b1e594792cbbff3bfff146163a
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '138'
 ht-degree: 0%
-
 ---
 # Présentation des notes de mise à jour du correctif de sécurité
 
@@ -18,4 +17,5 @@ Ces notes de mise à jour de correctif de sécurité capturent des mises à jour
 En savoir plus sur les versions des correctifs de sécurité :
 
 * [Présentation des versions du correctif de sécurité d’Adobe Commerce](/help/release/release-notes/security/overview.md#about-security-patch-releases)
-* Les instructions de téléchargement et d’application des correctifs de sécurité sont disponibles dans la section [Comment obtenir et appliquer des correctifs de sécurité](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches) de la _base de connaissances Adobe Commerce_.
+* Pour obtenir des instructions sur la mise à niveau vers une version de correctif de sécurité, consultez [exemple de mise à niveau de correctif de sécurité](/help/upgrade/implementation/perform-upgrade.md#example---security-patch).
+* Pour appliquer des fichiers de correctif de sécurité individuels, consultez [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) dans le _Guide des outils et de l&#39;assistance d&#39;Adobe_.
