@@ -13,20 +13,20 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 22c0b3cac685762f9c0d36f225a418a07ed5e1db
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1015'
 ht-degree: 0%
 ---
 # Démarrage rapide de l’installation locale
 
-Les instructions de cette page décrivent comment installer Adobe Commerce sur une infrastructure auto-hébergée. Pour obtenir des conseils sur la mise à niveau d’une installation existante, consultez le [_Guide de mise à niveau_](../upgrade/overview.md).
+Les instructions de cette page décrivent comment installer Adobe Commerce sur une infrastructure auto-hébergée. Pour obtenir des conseils sur la mise à niveau d&#39;une installation existante, consultez le [_Guide de mise à niveau_](../upgrade/overview.md).
 
-Adobe utilise [Composer](https://getcomposer.org/) pour gérer les composants Adobe Commerce et leurs dépendances. L’utilisation du compositeur pour obtenir le métapaquet Adobe Commerce offre les avantages suivants :
+Adobe utilise le [compositeur](https://getcomposer.org/) pour gérer les composants Adobe Commerce et leurs dépendances. L’utilisation du compositeur pour obtenir le métapaquet Adobe Commerce offre les avantages suivants :
 
 - Réutiliser des bibliothèques tierces sans les regrouper avec du code source
 - Réduisez les conflits d’extension et les problèmes de compatibilité en utilisant une architecture basée sur des composants avec une gestion robuste des dépendances
-- Respectez les normes [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/)
+- Respectez les normes du [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/)
 - Recompressez Magento Open Source avec d’autres composants.
 - Utilisation du logiciel Adobe Commerce dans un environnement de production
 
@@ -39,8 +39,8 @@ Adobe utilise [Composer](https://getcomposer.org/) pour gérer les composants Ad
 Avant de continuer, vous devez effectuer les opérations suivantes :
 
 - Effectuez toutes les [tâches préalables](system-requirements.md).
-- [Installez le compositeur](https://getcomposer.org/download/).
-- Obtenez les [clés d’authentification](prerequisites/authentication-keys.md) dans le référentiel du compositeur Adobe Commerce.
+- [Installer le compositeur](https://getcomposer.org/download/).
+- Obtenez [les clés d’authentification](prerequisites/authentication-keys.md) dans le référentiel du compositeur Adobe Commerce.
 
 ## Connexion en tant que propriétaire du système de fichiers
 
@@ -62,9 +62,9 @@ Pour passer au propriétaire du système de fichiers :
    sudo -u <file system owner>  <command>
    ```
 
-1. Pour exécuter des commandes d’interface de ligne de commande à partir de n’importe quel répertoire, ajoutez `<app_root>/bin` à votre `PATH` système.
+1. Pour exécuter des commandes d’interface de ligne de commande à partir d’un répertoire, ajoutez `<app_root>/bin` à votre système `PATH`.
 
-   Comme les shell ont des syntaxes différentes, consultez une référence comme [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   Comme les shell ont des syntaxes différentes, consultez une référence telle que [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
    Exemple de shell Bash pour CentOS :
 
@@ -74,7 +74,7 @@ Pour passer au propriétaire du système de fichiers :
 
    Vous pouvez éventuellement exécuter les commandes des manières suivantes :
 
-   - `cd <app_root>/bin` et exécutez-les en tant que `./magento <command name>`
+   - `cd <app_root>/bin` et les exécuter en tant que `./magento <command name>`
    - `app_root>/bin/magento <command name>`
    - `<app_root>` est un sous-répertoire de votre serveur web docroot
 
@@ -82,31 +82,31 @@ Pour passer au propriétaire du système de fichiers :
 
 Pour obtenir le métapaquet Adobe Commerce :
 
-1. Connectez-vous au serveur d’applications en tant que [propriétaire du système de fichiers](prerequisites/file-system/overview.md) ou passez à ce serveur.
+1. Connectez-vous à votre serveur d’applications en tant que [propriétaire du système de fichiers](prerequisites/file-system/overview.md) ou passez à celui-ci.
 1. Passez au répertoire docroot du serveur web ou à un répertoire que vous avez configuré en tant qu&#39;hôte virtuel docroot.
 1. Créez un projet Composer à l’aide d’un métapaquet Commerce.
 
-   **&#x200B;**
+   **Magento Open Source**
 
    ```shell
    composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
    ```
 
-   **&#x200B;**
+   **Adobe Commerce**
 
    ```shell
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   A l’invite, saisissez vos clés d’authentification. Les clés publiques et privées sont créées et configurées à partir de [Commerce Marketplace - Access Keys](https://commercemarketplace.adobe.com/customer/account/login/). Pour le `[!UICONTROL username]`, copiez et collez la valeur de la clé publique. Pour le `[!UICONTROL password]`, copiez et collez la valeur de la clé privée.
+   A l’invite, saisissez vos clés d’authentification. Les clés publiques et privées sont créées et configurées à partir de [Commerce Marketplace - Clés d&#39;accès](https://commercemarketplace.adobe.com/customer/account/login/). Pour `[!UICONTROL username]`, copiez et collez la valeur de la clé publique. Pour `[!UICONTROL password]`, copiez et collez la valeur de la clé privée.
 
    >[!NOTE]
    >
-   > Si vous utilisez un fichier `[auth.json](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/authentication-keys)` du compositeur ou une variable d’environnement configurée avec vos clés d’authentification Commerce, vous n’êtes pas invité à saisir les clés d’authentification.
+   > Si vous utilisez un fichier [`auth.json`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys) du compositeur ou une variable d’environnement configurée avec vos clés d’authentification Commerce, vous n’êtes pas invité à saisir les clés d’authentification.
 
-   Si vous rencontrez des erreurs, telles que `Could not find package...` ou `...no matching package found`, assurez-vous qu’il n’y a aucune faute de frappe dans votre commande. Si vous rencontrez toujours des erreurs, il se peut que vous ne soyez pas autorisé à télécharger Adobe Commerce. Contactez [l’assistance &#x200B;](https://support.magento.com/hc/en-us) pour obtenir de l’aide.
+   Si vous rencontrez des erreurs, telles que `Could not find package...` ou `...no matching package found`, assurez-vous qu’il n’y a pas de fautes de frappe dans votre commande. Si vous rencontrez toujours des erreurs, il se peut que vous ne soyez pas autorisé à télécharger Adobe Commerce. Contactez [l’assistance Adobe Commerce](https://support.magento.com/hc/en-us) pour obtenir de l’aide.
 
-   Voir [Dépannage](https://support.magento.com/hc/en-us/articles/360033818091) pour obtenir de l’aide sur d’autres erreurs.
+   Voir [Dépannage](https://support.magento.com/hc/en-us/articles/360033818091) pour obtenir de l&#39;aide sur d&#39;autres erreurs.
 
 ### Exemple - Version mineure
 
@@ -118,7 +118,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 ### Exemple - Correctif de qualité
 
-Les correctifs de qualité contiennent principalement des correctifs de sécurité _et_ fonctionnels. Cependant, ils peuvent également parfois contenir de nouvelles fonctionnalités rétrocompatibles. Utilisez le compositeur pour télécharger un correctif de qualité. Par exemple, pour spécifier le métapaquet Adobe Commerce 2.4.6 :
+Les correctifs de qualité contiennent principalement des correctifs de sécurité fonctionnels _et_. Cependant, ils peuvent également parfois contenir de nouvelles fonctionnalités rétrocompatibles. Utilisez le compositeur pour télécharger un correctif de qualité. Par exemple, pour spécifier le métapaquet Adobe Commerce 2.4.6 :
 
 ```shell
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
@@ -128,7 +128,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 Les correctifs de sécurité contiennent uniquement des correctifs de sécurité. Ils sont conçus pour accélérer et faciliter le processus de mise à niveau.
 
-Les correctifs de sécurité utilisent la `2.4.6-px` de convention de nommage du compositeur. Utilisez le compositeur pour spécifier un correctif. Par exemple, pour télécharger le métapaquet Adobe Commerce 2.4.6-p1 :
+Les correctifs de sécurité utilisent la convention de nommage du compositeur `2.4.6-px`. Utilisez le compositeur pour spécifier un correctif. Par exemple, pour télécharger le métapaquet Adobe Commerce 2.4.6-p1 :
 
 ```shell
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6-p1 <install-directory-name>
@@ -177,11 +177,11 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->Vous pouvez personnaliser l’URI d’administration avec l’option `--backend-frontname` . Cependant, Adobe recommande d’omettre cette option et de permettre à la commande d’installation de générer automatiquement un URI aléatoire. Un URI aléatoire est plus difficile à exploiter pour les pirates ou les logiciels malveillants. L’URI s’affiche dans la console une fois l’installation terminée.
+>Vous pouvez personnaliser l’URI d’administrateur avec l’option `--backend-frontname`. Cependant, Adobe recommande d’omettre cette option et de permettre à la commande d’installation de générer automatiquement un URI aléatoire. Un URI aléatoire est plus difficile à exploiter pour les pirates ou les logiciels malveillants. L’URI s’affiche dans la console une fois l’installation terminée.
 
 >[!TIP]
 >
->Pour obtenir une description complète des options d’installation de l’interface en ligne de commande, voir [&#x200B; Installer l’application à partir de la ligne de commande &#x200B;](advanced.md).
+>Pour obtenir une description complète des options d’installation de l’interface en ligne de commande, consultez [Installation de l’application à partir de la ligne de commande](advanced.md).
 
 ## Résumé des commandes
 
@@ -221,7 +221,7 @@ Le tableau suivant résume les commandes disponibles. Les commandes sont présen
 | `magento setup:db-schema:upgrade` | Met à jour le schéma de la base de données. | Configuration du déploiement |
 | `magento setup:db-data:upgrade` | Met à jour les données de la base. | Configuration du déploiement |
 | `magento setup:db:status` | Vérifie si la base de données est à jour avec le code. | Configuration du déploiement |
-| `magento admin:user:create` | Crée un utilisateur administrateur. | Vous pouvez créer des utilisateurs pour les éléments suivants :<br><br>Configuration du déploiement<br><br>Activez au minimum les modules `Magento_User` et `Magento_Authorization`Base de données<br><br>la façon la plus simple d’utiliser `bin/magento setup:upgrade`) |
+| `magento admin:user:create` | Crée un utilisateur administrateur. | Vous pouvez créer des utilisateurs pour les éléments suivants :<br><br>Configuration du déploiement<br><br>Activez au minimum la base de données `Magento_User` et `Magento_Authorization` modules<br><br>Base de données (la façon la plus simple est d&#39;utiliser `bin/magento setup:upgrade`) |
 | `magento list` | Répertorie toutes les commandes disponibles. | Aucune |
 | `magento help` | Fournit de l’aide pour la commande spécifiée. | Aucune |
 
@@ -241,4 +241,4 @@ Les arguments suivants sont communs à toutes les commandes. Ces commandes peuve
 
 >[!NOTE]
 >
->Félicitations ! Vous avez terminé l’installation rapide. Besoin d&#39;une aide plus avancée ? Consultez le guide [Installation avancée](advanced.md).
+>Félicitations ! Vous avez terminé l’installation rapide. Besoin d&#39;une aide plus avancée ? Consultez le guide d’installation avancée de [](advanced.md).
