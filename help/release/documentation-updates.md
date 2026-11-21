@@ -6,15 +6,15 @@ product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
 last-update: 2026-11-18
-source-git-commit: cc7d3343d4a08e46235eb0c3ef42631907510a1b
+source-git-commit: 3cce5564a443ac7017c907854158910c35916e46
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '294'
 ht-degree: 0%
 ---
 
 # Mises à jour de la documentation
 
-Cette page rassemble les mises à jour de la documentation technique d’Adobe Commerce sur [Experience League](https://experienceleague.adobe.com/fr/docs/commerce) et [Adobe Developer](https://developer.adobe.com/commerce/docs/). Utilisez ces listes pour trouver de nouveaux sujets, des directives révisées et des améliorations apportées en réponse aux commentaires des lecteurs.
+Cette page répertorie les mises à jour de la documentation technique Adobe Commerce sur [Adobe Experience League](https://experienceleague.adobe.com/fr/docs/commerce) et [Adobe Developer](https://developer.adobe.com/commerce/docs/). Utilisez ces listes pour trouver de nouveaux sujets, des directives révisées et des améliorations apportées en réponse aux commentaires des lecteurs.
 
 Les modifications basées sur les commentaires traitent des suggestions ou des problèmes soulevés par les lecteurs, tels que des instructions imprécises, des détails manquants ou des informations inexactes. Par exemple, les commentaires ont conduit à des corrections sur la prise en charge des produits groupés et groupés dans la [documentation sur les recommandations de produits](https://experienceleague.adobe.com/fr/docs/commerce/product-recommendations/boundaries-limits).
 
@@ -22,8 +22,8 @@ Les modifications basées sur les commentaires traitent des suggestions ou des p
 
 Vos commentaires permettent d’améliorer la documentation. Vous pouvez apporter votre contribution des manières suivantes :
 
-* Sur Experience League, utilisez la zone de commentaires située au bas d’une rubrique pour évaluer son utilité et laisser un commentaire. Consultez le [Guide du contributeur aux documents Adobe](https://experienceleague.adobe.com/fr/docs/contributor/contributor-guide/introduction) pour obtenir des instructions sur la manière de signaler des problèmes et de suggérer des modifications.
-* Sur Adobe Developer, utilisez le référentiel GitHub public lié à la rubrique pour signaler un problème de documentation ou proposer une modification.
+* Sur Adobe Experience League, utilisez la zone de commentaires dans la barre latérale droite ou au bas de la page sur des écrans étroits. Cliquez sur le bouton pouces vers le haut ou pouces vers le bas pour évaluer la rubrique et afficher le champ de commentaire facultatif. Pour laisser un commentaire, saisissez vos commentaires et cliquez sur **[!UICONTROL Submit]**. Consultez le [Guide du contributeur aux documents Adobe sur Adobe Experience League](https://experienceleague.adobe.com/fr/docs/contributor/contributor-guide/introduction) pour obtenir des instructions sur le signalement de problèmes et des suggestions de modifications.
+* Sur Adobe Developer, utilisez le référentiel GitHub public lié à la rubrique pour signaler un problème de documentation ou suggérer une modification. Consultez la [Documentation des contributions sur Adobe Developer](https://developer.adobe.com/commerce/contributor/guides/doc-contributions/) pour obtenir des instructions.
 
 Incluez l’URL de la rubrique et décrivez ce qui n’est pas clair, ce qui manque ou ce qui est incorrect afin que l’équipe de documentation puisse comprendre votre suggestion.
 

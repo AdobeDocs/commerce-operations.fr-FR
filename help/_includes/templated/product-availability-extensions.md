@@ -1,5 +1,5 @@
 ---
-source-git-commit: 99cce9bcfa7cb5866274bef9be95ebd2b5f0a9c8
+source-git-commit: 8fb85fe5ae589f4ca3e82b2f3520c4eb7b2e55d8
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 18%
@@ -49,7 +49,7 @@ ht-degree: 18%
       </tr>
       <tr>
           <td>Webhooks Adobe Commerce</td>
-          <td>1.21.0</td>
+          <td>1.22.0</td>
           <td>1.5+</td>
           <td>1.2+</td>
           <td>1.2+</td>
@@ -108,8 +108,8 @@ ht-degree: 18%
           <td>non pris en charge</td>
           <td>non pris en charge</td>
           <td>
-              <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/products/catalog-enrichment#enable-catalog-enrichment">Compositeur</a><br/>
-              <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/products/catalog-enrichment#release-notes">Notes De Mise À Jour</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment#enable-catalog-enrichment">Compositeur</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment#release-notes">Notes De Mise À Jour</a><br/>
           </td>
       </tr>
       <tr>
