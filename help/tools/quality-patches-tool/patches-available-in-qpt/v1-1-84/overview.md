@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d8a15da2f255c5cac40003ea677e49c5d288d36d
+source-git-commit: fba29b291ef0f9319c560507cf5aa1608a05c481
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '659'
 ht-degree: 0%
 ---
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -38,7 +38,7 @@ QPT v1.1.84 comprend les correctifs suivants :
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)** : correction du problème en raison duquel l’interrogation du client `role` via GraphQL renvoie *une erreur de serveur interne* lorsque le client n’est pas affecté à une société.
 1. **[ACP2E-5029](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5029.md)** : correction du problème en raison duquel les modifications apportées aux règles de prix de catalogue n’apparaissent dans **[!DNL Live Search]** qu’après une resynchronisation manuelle.
 1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)** : correction d’un problème en raison duquel les indexeurs restent bloqués dans une boucle et la réindexation ne se termine pas lorsque le verrouillage des fichiers est activé.
-1. **ACP2E-5041** : correction d’un problème en raison duquel l’enregistrement d’un produit lors d’une mise à jour planifiée entraînait l’affichage par le storefront du prix normal au lieu du **[!UICONTROL Special Price]** une fois la mise à jour terminée.
+1. **[ACP2E-5041](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041.md)** : correction d’un problème en raison duquel l’enregistrement d’un produit lors d’une mise à jour planifiée entraînait l’affichage par le storefront du prix normal au lieu du **[!UICONTROL Special Price]** une fois la mise à jour terminée.
 1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)** : correction d’un problème en raison duquel la migration des données de Magento Open Source vers Adobe Commerce ne migre pas correctement les modifications de conception planifiées des catégories et les mises à jour planifiées des produits **[!UICONTROL Special Price]**, ce qui entraîne l’absence ou l’omission de certaines mises à jour planifiées lors de la migration et améliore les performances de la migration.
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)** : correction du problème en raison duquel l’interrogation du client `role` via GraphQL renvoie *une erreur de serveur interne* lorsque le client n’est pas affecté à une société.
 1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)** : correction d’un problème en raison duquel les indexeurs restent bloqués dans une boucle et la réindexation ne se termine pas lorsque le verrouillage des fichiers est activé.
