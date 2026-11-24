@@ -13,7 +13,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: bce83371e9d510552b871005d591981b1d099f80
+source-git-commit: 0266f36925944eeb0e05b1d778b9a32560e16d7f
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
@@ -25,22 +25,22 @@ Le tableau ci-dessous contient des notes de mise à jour et des informations imp
 
 >[!BEGINSHADEBOX]
 
-**Notes de mise à jour pour d’autres produits :**
+**Notes de mise à jour pour d&#39;autres produits :**
 
-- [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes)
-- [Adobe Commerce Optimizer](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/release-notes)
+- [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
+- [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes)
 
 >[!ENDSHADEBOX]
 
 >[!TIP]
 >
->- Si vous découvrez Adobe Commerce, consultez les rubriques [&#x200B; Architecture d’entreprise &#x200B;](../../implementation-playbook/architecture/enterprise-blueprint.md) et [&#x200B; À propos d’Adobe Commerce &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/about) pour obtenir des informations détaillées.
->- Pour plus d’informations sur les mises à niveau, voir [lecture recommandée](../../upgrade/resources/recommended-reading.md).
+>- Si vous découvrez Adobe Commerce, consultez les rubriques [architecture d’entreprise](../../implementation-playbook/architecture/enterprise-blueprint.md) et [à propos d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) pour obtenir une orientation.
+>- Pour plus d&#39;informations sur les mises à niveau, voir [lecture recommandée](../../upgrade/resources/recommended-reading.md).
 
 <table>
   <tbody>
     <tr>
-      <td><strong></strong>
+      <td><strong>Adobe Commerce</strong>
         <p>Découvrez les dernières améliorations apportées à Adobe Commerce, notamment les améliorations, la sécurité, les correctifs de bugs et les problèmes connus.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Modifications non rétrocompatibles</a></li>
@@ -49,37 +49,37 @@ Le tableau ci-dessous contient des notes de mise à jour et des informations imp
             <li><a href="../lifecycle-policy.md">Politique relative au cycle de vie des logiciels</a></li>
             <li><a href="../security-enforcement-policy.md">Avis de sécurité et de conformité</a></li>
             <li><a href="https://www.adobe.com/trust/security/bulletins-and-advisories.html">Bulletins et conseils de sécurité Adobe</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=fr">B2B pour Adobe Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B pour Adobe Commerce</a></li>
           </ul>
         </td>
       <td><strong>Adobe Commerce sur les infrastructures cloud</strong>
         <p>Découvrez les dernières améliorations apportées aux packages Cloud Suite pour Adobe Commerce, qui sont conçus pour déployer et gérer les installations et les mises à niveau d’Adobe Commerce sur la plateforme cloud.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/backward-incompatible-changes">Modifications non rétrocompatibles</a></li>
-            <li><a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Correctifs cloud pour Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/cloud-docker">Cloud Docker pour Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/cloud-components">Composants cloud pour Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package">outils cee</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/backward-incompatible-changes">Modifications non rétrocompatibles</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Correctifs cloud pour Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-docker">Cloud Docker pour Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-components">Composants cloud pour Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package">outils cee</a></li>
           </ul>
       </td>
     </tr>
     <tr>
-      <td><strong> Services pour Adobe Commerce </strong>
+      <td><strong>Services pour Adobe Commerce</strong>
         <p>Découvrez les dernières améliorations et innovations des services Commerce.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation">Audience Activation</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes">Service de catalogue</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes">Recherche en direct</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes">Services de paiement</a></li>
-            <li><a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/release-notes">Intégration d’AEM Assets pour Commerce/a&gt;</li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">Intégration d’AEM Assets pour Commerce/a&gt;</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes">Recommandations de produit</a></li>
-            <li><a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/release-notes">Service d'exportation de données SaaS</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Service d'exportation de données SaaS</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas">Commerce Services Connector</a></li>
-            <li><a href="https://experienceleague.adobe.com/fr/docs/commerce/aco-optimizer-connector/release-notes">Connecteur Commerce Optimizer</a></li>
-            <li><a href="https://experienceleague.adobe.com/fr/docs/commerce/data-connection/release-notes">Connecteur Experience Platform</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes">Connecteur Commerce Optimizer</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">Connecteur Experience Platform</a></li>
           </ul>
         </td>
-      <td><strong> Outils </strong>
+      <td><strong>Outils</strong>
         <p>Découvrez les dernières améliorations apportées aux outils conçus pour faciliter la recherche et l’utilisation des logiciels Adobe Commerce.</p>
           <ul>
             <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Maillage API pour le développeur Adobe App Builder</a></li>
@@ -96,8 +96,8 @@ Le tableau ci-dessous contient des notes de mise à jour et des informations imp
        <td><strong>Expérience Storefront</strong>
         <p>Découvrez les dernières améliorations apportées à la technologie storefront que vous pouvez utiliser pour créer des expériences uniques pour vos clients.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/»">Adobe Commerce Storefront</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html?lang=fr">Page Builder</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/">Adobe Commerce Storefront</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Page Builder</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
       </td>
