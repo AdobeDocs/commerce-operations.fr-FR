@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 50215e62371db397c96f9dbd2ff2b9a26ef3a131
+source-git-commit: f7162ccff3f6011af51e0b32eec4bf405633050b
 workflow-type: tm+mt
-source-wordcount: '11205'
+source-wordcount: '11219'
 ht-degree: 0%
 ---
 
@@ -49,11 +49,11 @@ ht-degree: 0%
   - [Alertes gérées sur Adobe Commerce : alerte critique de la mémoire](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert.md)
   - [Alertes gérées pour Adobe Commerce :  [!DNL Apdex] alerte critique](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert.md)
   - [Alertes gérées sur Adobe Commerce : [!DNL MariaDB] alertes](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
-  - [Alertes gérées pour Adobe Commerce : alerte d&#39;avertissement  [!DNL Apdex] &#x200B;](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
+  - [Alertes gérées pour Adobe Commerce : alerte d&#39;avertissement  [!DNL Apdex] ](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
   - [Alertes gérées pour Adobe Commerce : alerte d’avertissement de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Outil de correctifs de qualité {#quality-patches-tool}
   - [[!DNL Quality Patches Tool] : outil en libre-service pour les correctifs de qualité](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-  - [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr){target="_blank"}
+  - [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
   - [Utilisation](quality-patches-tool/usage.md)
   - [Notes de mise à jour](quality-patches-tool/release-notes.md)
   - Correctifs disponibles dans l’outil de correctifs de la qualité {#patches-available-in-qpt}
@@ -613,7 +613,7 @@ ht-degree: 0%
       - [ACSD-57394 : tri incorrect des produits selon plusieurs champs de tri dans  [!DNL GraphQL]](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57394-incorrect-product-sorting-by-multiple-sort-fields-in-graphql.md)
       - [ACSD-56546 : les produits configurables et groupés s&#39;affichent comme étant en rupture de stock sur le storefront](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56546-configurable-and-bundle-products-display-as-out-of-stock-on-the-storefront.md)
       - [ACSD-56741 : résolution des erreurs de configuration de la base de données avec les déclencheurs MySQL personnalisés](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56741-database-setup-upgrade-error-with-custom-mysql-trigger.md)
-      - [ACSD-55566 : la mutation [!UICONTROL mergeCart] échoue avec une erreur de serveur interne dans la réponse  [!DNL GraphQL] &#x200B;](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-55566-mergecart-mutation-fails-with-an-internal-server-error-in-graphql-response.md)
+      - [ACSD-55566 : la mutation [!UICONTROL mergeCart] échoue avec une erreur de serveur interne dans la réponse  [!DNL GraphQL] ](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-55566-mergecart-mutation-fails-with-an-internal-server-error-in-graphql-response.md)
       - [ACSD-58008 : la modification de la date de fin en tant que date vide entraîne la disparition de la mise à jour du planning](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-58008-editing-the-end-date-as-empty-causes-the-schedule-update-to-disappear.md)
       - [ACSD-57854 : la réponse GraphQL contient des catégories désactivées qui ne doivent pas être répertoriées dans les agrégations de catégories](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57854-graphql-response-contains-disabled-categories.md)
       - [ACSD-57565 : le tableau de bord des commandes affiche des informations de commande incorrectes](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57565-the-order-dashboard-displays-incorrect-order-information.md)
@@ -641,7 +641,7 @@ ht-degree: 0%
       - [ACSD-58141 : PHPSESSID se régénère sur les requêtes POST pour les clients connectés si le cache L2 Redis est activé](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
       - [ACSD-59229 : mauvaise affectation des données du groupe client en raison d’une valeur X-Magento-Vary obsolète](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
       - [ACSD-60441 : la mise à jour des clients via le point d’entrée V1/customers [!DNL REST] API renvoie une erreur](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
-      - [ACSD-58352 : les libellés d’attribut de retour pour le magasin par défaut sont renvoyés via l’API  [!DNL GraphQL] &#x200B;](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
+      - [ACSD-58352 : les libellés d’attribut de retour pour le magasin par défaut sont renvoyés via l’API  [!DNL GraphQL] ](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
       - [ACSD-59514 : Forms dans Admin avec une erreur de renvoi  [!DNL Page Builder]  dans la console du navigateur](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
       - [ACSD-58790 : corrige la fonctionnalité de pincement pour zoomer sur les images de la page des détails du produit en mode mobile sur  [!DNL Chrome]](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58790-fixes-pinch-to-zoom-functionality-on-the-product-detail-page.md)
       - [ACSD-58442 : correction du problème en raison duquel les appareils d’une largeur de 768 pixels étaient traités comme des appareils mobiles, ce qui entraînait le chargement du menu et de l’en-tête dans la vue mobile et non sur le bureau](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58442-fixes-issue-devices-768px-mobile-view-instead-desktop.md)
@@ -756,7 +756,7 @@ ht-degree: 0%
       - [ACSD-63090 : la suppression d’un produit d’Admin vide le panier](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63090-deleting-product-from-admin-empties-the-shopping-cart.md)
       - [ACSD-48570 : correction du problème de lien de réinitialisation du mot de passe de l’administrateur avec le code de magasin dans l’URL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-48570-fixing-admin-reset-password-link-issue-with-store-card-in-url.md)
       - [ACSD-63299 : Le prix spécial d&#39;un produit configurable ne s&#39;affiche pas sur le storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront.md)
-      - [ACSD-63325 : erreur « Erreur de syntaxe : erreur inattendue &lt; EOF > » lors de l’envoi d’une demande vide  [!DNL GraphQL] &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
+      - [ACSD-63325 : erreur « Erreur de syntaxe : erreur inattendue &lt; EOF > » lors de l’envoi d’une demande vide  [!DNL GraphQL] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
       - [ACSD-63578 : cliquer sur l’icône [!UICONTROL Delete] dans [!UICONTROL Add to Order by SKU] ne supprime pas le SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
       - [ACSD-63329 : les valeurs par défaut des champs date et heure ne sont pas définies lors de la création de produits avec l’API REST](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
       - [MDVA-39305-V3 : problème de connexion avec enabled [!DNL Google reCAPTCHA]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/mdva-39305-v3-login-issue-with-enabled-google-recaptcha.md)
@@ -847,7 +847,7 @@ ht-degree: 0%
       - [ACSD-66049 : les vitrines non anglaises affichent un prix incorrect en raison de la version de la bibliothèque ICU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66049-non-english-storefronts-display-incorrect-pricing-due-to-the-icu-library-version.md)
       - [ACSD-66441 : la navigation par couches affiche des options d’attribut incorrectes dans la configuration multi-magasin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66441-layered-navigation-displays-incorrect-attribute-in-multi-store-setup.md)
       - [AC-14985 : erreur lors de l’envoi d’e-mails SMTP à l’aide de TLS](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/ac-14985-error-when-sending-smtp-emails-using-tls.md)
-      - [ACSD-66434 : [!UICONTROL Customer ID] manquant dans les requêtes de l&#39;entreprise  [!DNL GraphQL] &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
+      - [ACSD-66434 : [!UICONTROL Customer ID] manquant dans les requêtes de l&#39;entreprise  [!DNL GraphQL] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
     - v1.1.68 {#v1-1-68}
       - [ACSD-66072 : GraphQL ne parvient pas à renvoyer les produits associés sur la page des détails du produit en raison d&#39;une erreur de serveur interne lors de la configuration de [!UICONTROL Related Products Rule]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66072-graphql-fails-to-return-related-products-due-to-server-error-in-related-product-rules.md)
       - [Présentation :  [!DNL Quality Patches Tool] (QPT) v1.1.68](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/overview.md)
@@ -1026,7 +1026,7 @@ ht-degree: 0%
       - [ACP2E-4552 : la réponse GraphQL ne renvoie pas le statut de la société](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552.md)
       - [ACP2E-4496 : le traitement cron Analytics dégrade les performances pendant l’exécution](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)
       - [ACP2E-4488 : enregistrement/modification lente du produit par l’administration pour les jeux d’attributs volumineux](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)
-      - [ACP2E-4653 : conditions de portée de catégorie de règle de prix de panier manquantes dans l’API  [!DNL REST] &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)
+      - [ACP2E-4653 : conditions de portée de catégorie de règle de prix de panier manquantes dans l’API  [!DNL REST] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)
       - [ACP2E-4472 : devis nul créé à l’aide du flux Se connecter en tant que client](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)
       - [ACP2E-4808 : Affichage du poids du produit sans unité de mesure sur le storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
       - [ACP2E-4533 : le chargement des images d’espace réservé échoue sur le storefront lorsque l’URL inclut le code du magasin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
@@ -1102,6 +1102,7 @@ ht-degree: 0%
       - [Présentation :  [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
     - v1.1.86 {#v1-1-86}
       - [Présentation :  [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5046 : actualisation de la page lors de la création d’une commande dans Admin et ajout multiple du même SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5046.md)
       - [ACP2E-3094 : l’affichage ou la modification des autorisations de catégorie pour une catégorie avec de nombreuses autorisations entraîne un navigateur qui ne répond pas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)
       - [ACP2E-5050 : L&#39;affichage ou l&#39;enregistrement de la RMA dans Admin n&#39;affiche pas le numéro de RMA dans le rapport Journaux d&#39;actions](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)
   - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
@@ -1123,7 +1124,7 @@ ht-degree: 0%
   - [Onglet Alertes](observation-for-adobe-commerce/alerts-tab.md)
   - [Onglet WAF](observation-for-adobe-commerce/waf-tab.md)
   - [Onglet CDN](observation-for-adobe-commerce/cdn-tab.md)
-  - [L&#39;onglet  [!DNL RabbitMQ] &#x200B;](observation-for-adobe-commerce/rabbitmq-tab.md)
+  - [L&#39;onglet  [!DNL RabbitMQ] ](observation-for-adobe-commerce/rabbitmq-tab.md)
   - [Onglet Cron](observation-for-adobe-commerce/cron-tab.md)
   - [Onglet Indexation](observation-for-adobe-commerce/indexing-tab.md)
   - [Onglet Aperçu rapide](observation-for-adobe-commerce/oac-quickview-tab.md)
@@ -1151,6 +1152,6 @@ ht-degree: 0%
     - [Données nécessitant une migration manuelle](data-migration-tool/migrate-data/manual.md)
     - [Étapes suivant la migration des données](data-migration-tool/migrate-data/post-migration.md)
   - Ressources {#resources}
-    - [Dépannage](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
+    - [Dépannage](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
     - [Journal des modifications](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=fr)
+- [Retour aux guides opérationnels](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

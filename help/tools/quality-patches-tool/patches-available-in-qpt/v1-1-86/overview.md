@@ -4,7 +4,7 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 50215e62371db397c96f9dbd2ff2b9a26ef3a131
+source-git-commit: f7162ccff3f6011af51e0b32eec4bf405633050b
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -15,8 +15,9 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 
 QPT v1.1.86 comprend les correctifs suivants :
 
+
+1. **[ACP2E-5046](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5046.md)** : correction d’un problème en raison duquel l’actualisation de la page lors de la création d’une commande dans l’administrateur ajoute le même SKU plusieurs fois.
 1. **[ACP2E-3094](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)** : correction d’un problème en raison duquel l’affichage ou la modification de **[!UICONTROL Category Permissions]** pour une catégorie dotée de nombreuses autorisations peut empêcher le navigateur de répondre.
-1. **ACP2E-5046** : correction d’un problème en raison duquel l’actualisation de la page lors de la création d’une commande dans l’administrateur ajoute le même SKU plusieurs fois.
 1. **[ACP2E-5050](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)** : correction du problème en raison duquel l’affichage ou l’enregistrement d’une autorisation de retour client dans l’administration n’affichait pas le numéro d’autorisation de retour client dans le rapport **[!UICONTROL Action Logs]**.
 1. **ACP2E-5057** : correction du problème en raison duquel les requêtes [!DNL GraphQL] pour les produits groupés renvoient des prix globaux d’option de bundle au lieu de prix spécifiques au site web lorsque **[!UICONTROL Catalog Price Scope]** est défini sur **[!UICONTROL Website]**.
 1. **ACP2E-5061** : correction d’un problème en raison duquel une règle de marchandisage de catégorie ne peut pas combiner les conditions `AND` avec une condition correspondant à l’une des valeurs.
