@@ -13,7 +13,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: bce83371e9d510552b871005d591981b1d099f80
+source-git-commit: 0266f36925944eeb0e05b1d778b9a32560e16d7f
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Le tableau ci-dessous contient des notes de mise à jour et des informations imp
 
 >[!BEGINSHADEBOX]
 
-**Notes de mise à jour pour d’autres produits :**
+**Notes de mise à jour pour d&#39;autres produits :**
 
 - [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes)
 - [Adobe Commerce Optimizer](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/release-notes)
@@ -34,13 +34,13 @@ Le tableau ci-dessous contient des notes de mise à jour et des informations imp
 
 >[!TIP]
 >
->- Si vous découvrez Adobe Commerce, consultez les rubriques [&#x200B; Architecture d’entreprise &#x200B;](../../implementation-playbook/architecture/enterprise-blueprint.md) et [&#x200B; À propos d’Adobe Commerce &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/about) pour obtenir des informations détaillées.
->- Pour plus d’informations sur les mises à niveau, voir [lecture recommandée](../../upgrade/resources/recommended-reading.md).
+>- Si vous découvrez Adobe Commerce, consultez les rubriques [architecture d’entreprise](../../implementation-playbook/architecture/enterprise-blueprint.md) et [à propos d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/about) pour obtenir une orientation.
+>- Pour plus d&#39;informations sur les mises à niveau, voir [lecture recommandée](../../upgrade/resources/recommended-reading.md).
 
 <table>
   <tbody>
     <tr>
-      <td><strong></strong>
+      <td><strong>Adobe Commerce</strong>
         <p>Découvrez les dernières améliorations apportées à Adobe Commerce, notamment les améliorations, la sécurité, les correctifs de bugs et les problèmes connus.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Modifications non rétrocompatibles</a></li>
@@ -64,7 +64,7 @@ Le tableau ci-dessous contient des notes de mise à jour et des informations imp
       </td>
     </tr>
     <tr>
-      <td><strong> Services pour Adobe Commerce </strong>
+      <td><strong>Services pour Adobe Commerce</strong>
         <p>Découvrez les dernières améliorations et innovations des services Commerce.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation">Audience Activation</a></li>
@@ -79,7 +79,7 @@ Le tableau ci-dessous contient des notes de mise à jour et des informations imp
             <li><a href="https://experienceleague.adobe.com/fr/docs/commerce/data-connection/release-notes">Connecteur Experience Platform</a></li>
           </ul>
         </td>
-      <td><strong> Outils </strong>
+      <td><strong>Outils</strong>
         <p>Découvrez les dernières améliorations apportées aux outils conçus pour faciliter la recherche et l’utilisation des logiciels Adobe Commerce.</p>
           <ul>
             <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Maillage API pour le développeur Adobe App Builder</a></li>
@@ -96,7 +96,7 @@ Le tableau ci-dessous contient des notes de mise à jour et des informations imp
        <td><strong>Expérience Storefront</strong>
         <p>Découvrez les dernières améliorations apportées à la technologie storefront que vous pouvez utiliser pour créer des expériences uniques pour vos clients.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/»">Adobe Commerce Storefront</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/">Adobe Commerce Storefront</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html?lang=fr">Page Builder</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
