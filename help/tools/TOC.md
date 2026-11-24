@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: d8a15da2f255c5cac40003ea677e49c5d288d36d
+source-git-commit: 86872648c372158143f5bbe707ba7a3f15552bc3
 workflow-type: tm+mt
-source-wordcount: '11174'
+source-wordcount: '11234'
 ht-degree: 0%
 ---
 
@@ -1102,6 +1102,10 @@ ht-degree: 0%
       - [Présentation :  [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
     - v1.1.86 {#v1-1-86}
       - [Présentation :  [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5061 : la règle de marchandisage de catégorie ne peut pas combiner les conditions ET avec une condition qui correspond à plusieurs valeurs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)
+      - [ACP2E-5046 : actualisation de la page lors de la création d’une commande dans Admin et ajout multiple du même SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5046.md)
+      - [ACP2E-3094 : l’affichage ou la modification des autorisations de catégorie pour une catégorie avec de nombreuses autorisations entraîne un navigateur qui ne répond pas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)
+      - [ACP2E-5050 : L&#39;affichage ou l&#39;enregistrement de la RMA dans Admin n&#39;affiche pas le numéro de RMA dans le rapport Journaux d&#39;actions](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)
   - [Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité d’Adobe Commerce.](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Référence des outils de ligne de commande {#cli-reference}
   - [Adobe Commerce (sur site)](reference/commerce-on-premises.md)
