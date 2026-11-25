@@ -4,9 +4,9 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8070923142c6b28c5e34d47200d2f8995aae5dcb
+source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '631'
 ht-degree: 0%
 ---
 # Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.86
@@ -23,8 +23,8 @@ QPT v1.1.86 comprend les correctifs suivants :
 1. **[ACP2E-5061](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)** : correction d’un problème en raison duquel une règle de marchandisage de catégorie ne peut pas combiner les conditions AND avec une condition correspondant à l’une des valeurs.
 1. **ACP2E-5071** : correction d’un problème en raison duquel le message d’indisponibilité du stock n’était pas toujours affiché sur la page du produit lorsque le panier de l’acheteur contenait déjà la quantité disponible complète.
 1. **ACP2E-5094** : correction d’un problème en raison duquel le chargement des pages est considérablement plus lent lorsqu’une variable d’environnement `MAGENTO_DC_*` est définie.
+1. **[ACP2E-5134](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)** : correction d’un problème en raison duquel la suppression d’un produit inclus dans une offre groupée dans le catalogue partagé d’une entreprise laisse le produit de l’offre groupée dans le panier et provoque une erreur dans le panier et lors du passage en caisse.
 1. **[ACP2E-5118](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)** : correction du problème en raison duquel l’aperçu [!DNL Page Builder] ne s’affiche pas lorsque le cache **[!UICONTROL Translations]** est désactivé.
-1. **ACP2E-5134** : correction d’un problème en raison duquel la suppression du produit composant d’une offre groupée du [!UICONTROL Shared Catalog] d’une entreprise laisse le produit de l’offre groupée dans le panier, provoquant une erreur dans le panier et lors du passage en caisse.
 1. **ACP2E-5146** : correction du problème en raison duquel un utilisateur administrateur limité à des sites web spécifiques ne peut pas supprimer des clients lorsqu’un client d’un autre site web possède le même ID que l’utilisateur administrateur.
 1. **ACP2E-5176** : correction d’un problème en raison duquel les événements e-commerce envoyés à [!DNL Google Analytics 4] via [!DNL Google Tag Manager] utilisent le format [!DNL Universal Analytics] et omettent plusieurs événements de passage en caisse.
 1. **ACP2E-5185** : correction du problème en raison duquel le déplacement d’une catégorie dans l’arborescence des catégories affiche l’erreur `There was a category move error` ou prend plusieurs minutes lorsque le magasin comporte de nombreuses réécritures d’URL.
