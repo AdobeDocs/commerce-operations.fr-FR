@@ -49,9 +49,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4d61208c23f1d1fe38664a838149ba51958eddac
+source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '353'
 ht-degree: 0%
 ---
 
@@ -61,11 +61,11 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 
 QPT v1.1.85 comprend les correctifs suivants :
 
-1. **ACP2E-4929** : correction d’un problème en raison duquel les libellés d’attribut de la page **[!UICONTROL Compare Products]** affichaient les traductions à partir d’une vue de magasin différente de la vue de magasin actuelle.
+1. **[ACP2E-4929](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)** : correction d’un problème en raison duquel les libellés d’attribut de la page Comparer les produits affichaient les traductions à partir d’une vue de magasin différente au lieu de la vue de magasin actuelle.
 1. **ACP2E-5075** : correction d’un problème en raison duquel une règle de prix de panier à montant fixe avec une condition de catégorie appliquait incorrectement une remise à tous les enfants d’un produit groupé à prix dynamique lorsque la règle ne correspondait qu’au produit parent du lot.
 1. **ACP2E-5077** : correction du problème en raison duquel des requêtes GraphQL `customerCart` ou des requêtes REST `POST /V1/carts/mine` simultanées créent des paniers actifs en double pour les clients qui n’en ont pas déjà un.
 1. **ACP2E-5088** : correction d’un problème en raison duquel le panier persistant d’un client est effacé à l’expiration de sa session.
-1. **ACP2E-3991** : correction d’un problème en raison duquel l’adresse IP du client n’est pas déterminée correctement.
+1. **[ACP2E-3991](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-3991.md)** : correction d’un problème en raison duquel l’adresse IP du client n’est pas déterminée correctement.
 1. **ACP2E-5092** : correction d’un problème en raison duquel la page **[!UICONTROL Company Profile]** et la page de modification du client administrateur affichaient une erreur lorsqu’une adresse d’entreprise enregistrée sans région ajoutait ultérieurement une région à son pays.
 1. **ACP2E-5124** : correction du problème en raison duquel le bouton **[!UICONTROL Import]** reste disponible dans les résultats de validation après l’échec de la validation lorsque la valeur **[!UICONTROL Validation Strategy]** est définie sur **[!UICONTROL Stop on Error]**.
 1. **AC-17456** : corrige le problème en raison duquel la modification de l’étendue **[!UICONTROL Global]** sur la page **[!UICONTROL Design Configuration]** dans le panneau d’administration renvoie une erreur *HTTP 500* sur PHP 8.4 et 8.5.

@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
+source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
 workflow-type: tm+mt
-source-wordcount: '11262'
+source-wordcount: '11345'
 ht-degree: 0%
 ---
 
@@ -1100,8 +1100,13 @@ ht-degree: 0%
       - [ACP2E-4741 : l’enregistrement d’un produit lié masque un autre produit du storefront avec un stock personnalisé](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
     - v1.1.85 {#v1-1-85}
       - [Présentation :  [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
+      - [ACP2E-3991 : l&#39;adresse IP du client n&#39;est pas déterminée correctement](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-3991.md)
+      - [ACP2E-4929 : les libellés d’attribut de la page Comparer des produits affichent les traductions à partir d’une vue de magasin différente de la vue actuelle](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
     - v1.1.86 {#v1-1-86}
       - [Présentation :  [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5245 : le nouveau client utilise la même adresse pour l’expédition et la facturation au moment de la première commande voit l’adresse indiquée deux fois au moment du passage en caisse](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)
+      - [ACP2E-3752 : l’importation de produit renvoie une erreur de clé de tableau indéfinie lorsque de nombreuses opérations d’importation s’exécutent](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)
+      - [ACP2E-4973 : passer d’une diffusion en magasin à une autre méthode de diffusion ne supprime pas l’adresse du magasin du panier](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)
       - [ACP2E-5134 : la suppression d’un produit groupé du catalogue partagé laisse le lot dans le panier et entraîne des erreurs lors du passage en caisse](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)
       - [ACP2E-5118 : l’aperçu de Page Builder ne s’affiche pas lorsque le cache de traduction est désactivé](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)
       - [ACP2E-5061 : la règle de marchandisage de catégorie ne peut pas combiner les conditions ET avec une condition qui correspond à plusieurs valeurs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)
