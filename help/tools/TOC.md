@@ -4,9 +4,9 @@ user-guide-description: Découvrez les différents outils que vous pouvez utilis
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
+source-git-commit: 41f455b05b7afecd8a476188c3b723a8e02235a4
 workflow-type: tm+mt
-source-wordcount: '11399'
+source-wordcount: '11424'
 ht-degree: 0%
 ---
 
@@ -1104,6 +1104,8 @@ ht-degree: 0%
       - [ACP2E-4929 : les libellés d’attribut de la page Comparer des produits affichent les traductions à partir d’une vue de magasin différente de la vue actuelle](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
     - v1.1.86 {#v1-1-86}
       - [Présentation :  [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5248 : les utilisateurs administrateurs sans autorisation **[!UICONTROL Edit Product Status]** voient l’erreur d’obsolescence sur la page **[!UICONTROL Add Product]** de PHP 8.5.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5248.md)
+      - [ACP2E-5425 : les clients reçoivent des e-mails de confirmation de commande en double pour la même commande](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5425.md)
       - [ACP2E-5071 : le message d’indisponibilité des stocks n’est pas toujours affiché sur la page des produits lorsque le panier de l’acheteur contient la quantité disponible complète](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5071.md)
       - [ACP2E-5176 : les événements e-commerce envoyés à Google Analytics 4 via Google Tag Manager utilisent le format Universal Analytics et omettent les événements de passage en caisse](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5176.md)
       - [ACP2E-4191 : les requêtes d’API REST entrent en boucle infinie lorsque le cache des types et attributs EAV est désactivé](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4191.md)
