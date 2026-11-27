@@ -4,7 +4,7 @@ description: Cette sous-section fournit une description détaillée des problèm
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
+source-git-commit: 9e453ce98ac552d883469e20e65516be8ef02b4f
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 0%
@@ -44,6 +44,6 @@ QPT v1.1.86 comprend les correctifs suivants :
 1. **ACP2E-5295** : correction d’un problème en raison duquel la réindexation parallèle des prix des produits échouait avec l’erreur `Fail in child process` lors de l’exécution après l’indexeur **[!UICONTROL Inventory]** dans le même processus.
 1. **ACP2E-5298** : correction du problème en raison duquel les utilisateurs administrateurs ayant un accès en lecture seule aux règles de prix des paniers peuvent générer ou supprimer des codes de coupon.
 1. **ACP2E-5333** : correction d’un problème en raison duquel l’actualisation d’un segment client avec une condition **[!UICONTROL Total Number of Orders]** qui utilise l’opérateur **[!UICONTROL is not]** et une valeur d’un ou de plusieurs échoue avec l’erreur `Unknown operator specified`.
-1. **ACP2E-5425** : correction du problème en raison duquel les clients reçoivent des e-mails de confirmation de commande en double pour la même commande.
+1. **[ACP2E-5425](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5425.md)** : correction du problème en raison duquel les clients reçoivent des e-mails de confirmation de commande en double pour la même commande.
 
 Utilisez le menu à gauche pour accéder à une page de correctif spécifique.
